@@ -1238,6 +1238,7 @@ ul#idPginfTabHeadersUl li.clsTabActive a:hover  {
 }
 .clsTreeUl a.clsClicked {
   color: white !important;
+  -webkit-text-fill-color: white !important; /* override clsTocTriHighlight black fill when clicked+highlighted (dark mode) */
 }
 
 /********************************************************/

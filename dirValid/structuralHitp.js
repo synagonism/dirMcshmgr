@@ -123,7 +123,7 @@ function fCheckIdMissing(aoFile) {
           `<${oElmt.sSubtype}> heading without id in section "${oElmt.sIdSect}" — cannot be a link/preview target`,
           oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       } else if (!oElmt.bInDivId) { // <p> inside a <div id="…"> is exempt — the div carries the id
-        aoIssue.push(fIssue('INFO', 'H04', oFile.sNameFile, fSectOf(oElmt),
+        aoIssue.push(fIssue('ERROR', 'H04', oFile.sNameFile, fSectOf(oElmt),
           `<p> without id in section "${oElmt.sIdSect}"`,
           oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       }

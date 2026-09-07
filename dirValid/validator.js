@@ -3,15 +3,14 @@
  * Mcs/Hitp Consistency Checker
  * Checks dirMcsh-worldview for structural and content issues.
  *
- * Every file is validated as generic Hitp (H01–H11). Files whose name starts with
- * "Mcs" additionally get the Mcs concept checks (M01–M12) and, with --ai, the
- * DeepSeek semantic checks (A01–A04). The Hitp-covered checks (version, links,
- * anchors) are NOT repeated in the Mcs layer.
+ * Every file is validated as generic Hitp (H01–H11).
+ * Files whose name starts with "Mcs" additionally get the Mcs concept checks (M01–M12) and,
+ * with --ai, the DeepSeek semantic checks (M01–M04).
  *
  * Usage:
  *   node validator.js <dirMcsh-path>          # fast structural checks only
- *   node validator.js <dirMcsh-path> --ai     # + DeepSeek AI semantic checks (Mcs)
  *   node validator.js <dirMcsh-path> --file McsXxx000001.last.html  # single file
+ *   node validator.js <dirMcsh-path> --ai     # + DeepSeek AI semantic checks (Mcs)
  */
 
 import { fParseFileHitp, fParseFileAllHitp } from './parserHitp.js';
@@ -22,6 +21,9 @@ import { fRunChecksAi } from './ai-checks.js';
 import { fReporter } from './reporter.js';
 import path from 'path';
 import fs from 'fs';
+import { fileURLToPath } from 'url';
+
+const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
@@ -84,7 +86,14 @@ async function fMain() {
   }
 
   oReporter.fPrint();
-  oReporter.fSaveHtml('./dirValid/validator-report.html');
+
+  // ── save the HTML report next to this script (dirMcsmgr/dirValid), ────────
+  //    independent of the caller's cwd. Opening it in VS Code's integrated
+  //    Simple Browser is handled by the mcs-open-local-server extension
+  //    (command "mcs.validateAndReport"), which runs this validator and then
+  //    serves + shows the report when errors/warnings are found.
+  const sPathReport = path.join(sDirScript, 'validator-report.html');
+  oReporter.fSaveHtml(sPathReport);
 }
 
 fMain().catch(oErr => {

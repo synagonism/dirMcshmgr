@@ -39,4 +39,4 @@ if exist "%DST%\.vscode" rmdir /s /q "%DST%\.vscode"
 echo.
 echo Installed to %DST%
 echo Done. Now reload VS Code (Developer: Reload Window).
-pause
+echo pause

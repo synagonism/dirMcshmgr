@@ -90,6 +90,20 @@ function fBlankNonHtml(sHtmlIn) {
 }
 
 /**
+ * DOING: blank out <pre>/<code> example blocks (chars → spaces, newlines kept),
+ *   so an id="…" shown inside a code sample is not scanned as a real page id.
+ *   Length + newlines are preserved, so id line numbers stay exact.
+ *   <pre> is blanked first so a <code> nested inside <pre> is covered too.
+ * OUTPUT: the same-length string, safe for id extraction.
+ */
+function fBlankCodePre(sHtmlIn) {
+  const fBlank = sBlock => sBlock.replace(/[^\n]/g, ' ');
+  return sHtmlIn
+    .replace(/<pre\b[\s\S]*?<\/pre>/gi, fBlank)
+    .replace(/<code\b[\s\S]*?<\/code>/gi, fBlank);
+}
+
+/**
  * DOING: stack-match every container tag and find unclosed opens / stray closes.
  * OUTPUT: [{ sKind:'unclosed'|'stray', sTag, nLine }]
  *   unclosed → line where the tag was OPENED; stray → line of the extra close.
@@ -261,13 +275,17 @@ export function fParseFileHitp(sPathFile) {
   }
 
   // ── line maps + id set + duplicate ids + tag pairs ────────────────────────
-  const oMapIdLine   = fBuildMapLine(sFileRaw, /\bid="([^"]+)"/g);
+  // id extraction ignores <code>/<pre> example blocks (an id="…" shown in a
+  // code sample is not a real page id); blanking keeps length + newlines so
+  // line numbers stay exact.
+  const sHtmlId = fBlankCodePre(sFileRaw);
+  const oMapIdLine   = fBuildMapLine(sHtmlId, /\bid="([^"]+)"/g);
   const oMapLinkLine = fBuildMapLine(sFileRaw, /<a\b[^>]*?\bhref="([^"]+)"/g);
   const aoTagBad = fScanTagPairs(sFileRaw);
   const aoTagCase = fScanTagCase(sFileRaw);
   const aoAttrBad = fScanAttrQuote(sFileRaw);
-  const oSetId  = fExtractId(sFileRaw);
-  const aoIdDup = fFindIdDuplicate(sFileRaw);
+  const oSetId  = fExtractId(sHtmlId);
+  const aoIdDup = fFindIdDuplicate(sHtmlId);
 
   // ── <title> + version ─────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
