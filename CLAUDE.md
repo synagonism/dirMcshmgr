@@ -1,4 +1,4 @@
-# dirMcsmgr — project conventions
+# dirMcshmgr — project conventions
 
 Mcs consistency checker for the `dirMcsh` worldview.
 

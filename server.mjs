@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 // --- config -----------------------------------------------------------------
 
-const sRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // dirMcsmgr's parent = web root C:\dirNodews
+const sRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // dirMcshmgr's parent = web root C:\dirNodews
 const nPort = 80;
 const sHost = '127.0.0.1'; // localhost only
 const bListDirs = true;    // show a directory listing when no index.html
@@ -109,7 +109,7 @@ const fServeFile = (oReq, oRes, sPath, oStat, bHeadOnly) => {
 		'Content-Length': oStat.size,
 	};
 
-	// Editor cache parity (replicates dirMcsmgr/.htaccess): force revalidation
+	// Editor cache parity (replicates dirMcshmgr/.htaccess): force revalidation
 	// of js/mjs/css when the request comes from the VS Code WYSIWYG editor.
 	const sReferer = oReq.headers.referer || '';
 	const sE = fExt(sPath);

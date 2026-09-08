@@ -51,7 +51,7 @@ import {fWriteJsonArray} from './mUtil.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
-    'mNamidx.mjs.0-8-0.2026-08-30: dirMcsmgr',
+    'mNamidx.mjs.0-8-0.2026-08-30: dirMcshmgr',
     'mNamidx.mjs.0-7-1.2026-02-03: lagKhmr',
     'mNamidx.mjs.0-7-0.2025-11-30: only module',
     'mNamidx.mjs.0-6-1.2025-02-23: sFileIdxRest===sLagIn+00_0',

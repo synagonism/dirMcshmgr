@@ -27,7 +27,7 @@
  * DOING: indexes one input-file and uploads changed-files
  * INPUT:
  * OUTPUT:
- * RUN from dirMcsh: node ../dirMcsmgr/mNamidxFile.mjs file pwd
+ * RUN from dirMcsh: node ../dirMcshmgr/mNamidxFile.mjs file pwd
  * process.argv[2] → first argument you provided
  */
 
@@ -46,13 +46,13 @@ import { stdin as input, stdout as output } from 'node:process';
 const
   // contains the-versions of mNamidxFile.mjs
   aVersion = [
-    'mNamidxFile.mjs.0-3-0.2026-08-30: dirMcsmgr',
+    'mNamidxFile.mjs.0-3-0.2026-08-30: dirMcshmgr',
     'mNamidxFile.mjs.0-2-0.2026-04-21: password',
     'mNamidxFile.mjs.0-1-0.2026-04-20: creation'
   ]
 
 if (process.argv.length !== 3) {
-  console.log('run: node ../dirMcsmgr/mNamidxFile.mjs file')
+  console.log('run: node ../dirMcshmgr/mNamidxFile.mjs file')
   process.exit()
 }
 

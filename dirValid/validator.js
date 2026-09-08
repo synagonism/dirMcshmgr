@@ -35,7 +35,7 @@ const
   aArg = process.argv.slice(2);
 
 if (aArg.length === 0) {
-  console.error('Usage dirMcsmgr: node dirValid/validator <dirMcsh-path> [--ai] [--file <filename>]');
+  console.error('Usage dirMcshmgr: node dirValid/validator <dirMcsh-path> [--ai] [--file <filename>]');
   process.exit(1);
 }
 
@@ -87,7 +87,7 @@ async function fMain() {
 
   oReporter.fPrint();
 
-  // ── save the HTML report next to this script (dirMcsmgr/dirValid), ────────
+  // ── save the HTML report next to this script (dirMcshmgr/dirValid), ────────
   //    independent of the caller's cwd. Opening it in VS Code's integrated
   //    Simple Browser is handled by the mcs-open-local-server extension
   //    (command "mcs.validateAndReport"), which runs this validator and then

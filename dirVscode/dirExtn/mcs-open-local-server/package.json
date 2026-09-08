@@ -1,7 +1,7 @@
 {
   "name": "mcs-open-local-server",
   "displayName": "Mcs Open in Local Server",
-  "description": "Open the active file in the integrated Simple Browser via the Node static server (dirMcsmgr/server.mjs, http://localhost/), auto-starting it if needed, and validate the active *.last.html showing validator-report.html the same way.",
+  "description": "Open the active file in the integrated Simple Browser via the Node static server (dirMcshmgr/server.mjs, http://localhost/), auto-starting it if needed, and validate the active *.last.html showing validator-report.html the same way.",
   "version": "1.2.0",
   "publisher": "synagonism",
   "engines": {

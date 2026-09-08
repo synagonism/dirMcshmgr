@@ -428,48 +428,48 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
   sLn = aMcs[n+3] //</p>
   sLn = aMcs[n+4] //<table class="clsTblBorderNo">
   sLn = aMcs[n+5] //<tr><td>η<td>νύφ-η
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+6] //<tr><td>της<td>νύφ-ης
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+7] //<tr><td>την<td>νύφ-η
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+8] //<tr><td><td>νύφ-η
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+9] //<tr><td>οι<td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+10] //<tr><td>των<td>νυφ-άδων
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+11] //<tr><td>τις<td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   sLn = aMcs[n+12] //<tr><td><td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(6, sLn.lastIndexOf('>')+1))
+  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
   aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
   //console.log(aMethod)
   //console.log(aCase)
 
   //find stems
   if (!sMethodIn.endsWith('Bns')) {
-    sStemM = aMethod[1].substr(0, aMethod[1].indexOf('-'))
+    sStemM = aMethod[1].substring(0, aMethod[1].indexOf('-'))
     sStemMRem = omLagUtil.fGreektonosRemove(sStemM)
     sStemMInc = omLagUtil.fGreektonosIncrease(sStemM, bSinizisi)
     sStemMDec = omLagUtil.fGreektonosDecrease(sStemM, bSinizisi)
-    sSufxM = aMethod[1].substr(aMethod[1].lastIndexOf('-')+1)
+    sSufxM = aMethod[1].substring(aMethod[1].lastIndexOf('-')+1)
   } else {
     // no singular
-    sStemM = aMethod[5].substr(0, aMethod[5].indexOf('-'))
+    sStemM = aMethod[5].substring(0, aMethod[5].indexOf('-'))
     sStemMRem = omLagUtil.fGreektonosRemove(sStemM)
     sStemMInc = omLagUtil.fGreektonosIncrease(sStemM, bSinizisi)
     sStemMDec = omLagUtil.fGreektonosDecrease(sStemM, bSinizisi)
-    sSufxM = aMethod[5].substr(aMethod[5].lastIndexOf('-')+1)
+    sSufxM = aMethod[5].substring(aMethod[5].lastIndexOf('-')+1)
   }
-  sStemW = sWord.substr(0, sWord.length-sSufxM.length) //ξαδέρφ
+  sStemW = sWord.substring(0, sWord.length-sSufxM.length) //ξαδέρφ
   sStemWRem = omLagUtil.fGreektonosRemove(sStemW)
   sStemWInc = omLagUtil.fGreektonosIncrease(sStemW, bSinizisi)
   sStemWDec = omLagUtil.fGreektonosDecrease(sStemW, bSinizisi)
@@ -494,8 +494,8 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
    */
   function fFindWordX(sMethexlIn) {
     if (sMethexlIn !== '∅') { //empty-set
-      sStemMx = sMethexlIn.substr(0, sMethexlIn.indexOf('-'))
-      sSufxMx = sMethexlIn.substr(sMethexlIn.indexOf('-')+1)
+      sStemMx = sMethexlIn.substring(0, sMethexlIn.indexOf('-'))
+      sSufxMx = sMethexlIn.substring(sMethexlIn.indexOf('-')+1)
       //we do on wordIn, the-same function with methodX
       if (sStemMx === sStemM) sWordX = sStemW + sSufxMx
       else if (sStemMx === sStemMRem) sWordX = sStemWRem + sSufxMx
@@ -509,7 +509,7 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
       let sPhnm = omLagUtil.fGreekwordFindPhonema(sWordX, bSinizisi)
       if (sPhnm.indexOf('111') !== -1){
         //TODO: fix it from base-form
-        console.log(sPhnm +'/' +sWordΧ)
+        console.log(sPhnm +'/' + sWordX)
       }
       sWordX = sWordX + sPhnm
       if (omLagUtil.fGreekphonemaHasSyllableOne(sWordX) == 1) {
@@ -616,6 +616,7 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
     aCase[7] +
     aCase[8]
 
+  // console.log(sCase)
   return [sCase, aCase[0]]
 }
 

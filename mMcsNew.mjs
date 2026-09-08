@@ -31,7 +31,7 @@
  *     - uploads new and modified files
  * INPUT:
  * OUTPUT: McsDir000000.last.html
- * RUN: cd dirMcsh && node ../dirMcsmgr/mMcsNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false> <sftpPassword>
+ * RUN: cd dirMcsh && node ../dirMcshmgr/mMcsNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false> <sftpPassword>
  *
  * ISSUE: IF you want to recreate the-file,
  * you have to delete IT from aPages.json
@@ -153,7 +153,7 @@ s =
   '  <title>Mcs.' + sNameFormal + '!=' + sNameInformal + '\n' +
   '    (' + sNameFileNaked + '.0-1-0.' + moUtil.fDateYMD() + ' draft)</title>\n' +
   '  <meta name="keywords" content="' + sNameInformal + ', ' + sNameFormal + ', modelConceptSenso, McsHitp, Synagonism">\n' +
-  '  <link rel="stylesheet" href="/dirMcsmgr/mMcsh2.css">\n' +
+  '  <link rel="stylesheet" href="/dirMcshmgr/mMcsh2.css">\n' +
   '</head>\n' +
   '\n' +
   '<body>\n' +
@@ -341,7 +341,7 @@ s = s +
   '  </section>\n' +
   '\n' +
   '  <script type="module">\n' +
-  '    import * as omMcsh from \'/dirMcsmgr/mMcsh2.js\'\n' +
+  '    import * as omMcsh from \'/dirMcshmgr/mMcsh2.js\'\n' +
   '  </script>\n' +
   '  <!-- Global site tag (gtag.js) - Google Analytics -->\n' +
   '  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8T0MHWLS1"></script>\n' +

@@ -59,7 +59,7 @@ const
   // contains the-versions of mMcsh2.js
   aVersion = [
     'mMcsh2.js.25-0-1.2026-09-01: Site-Home',
-    'mMcsh2.js.25-0-0.2026-08-30: dirMcsmgr',
+    'mMcsh2.js.25-0-0.2026-08-30: dirMcshmgr',
     'mMcsh2.js.24-10-0.2026-08-28: dblclick trim',
     'mMcsh2.js.24-9-0.2026-08-21: claude-code eval',
     'mMcsh2.js.24-8-3.2026-08-17: ooFile_cnpt',
@@ -225,7 +225,7 @@ let
   sPathSite,
   sPathSitemenu,
   // worldview-agnostic: the worldview = the first URL path segment (e.g. /dirMcsh/... -> 'dirMcsh').
-  // Shared /dirMcsmgr/mMcsh2.js works for any worldview (dirMcs..., dirHitp...) without editing.
+  // Shared /dirMcshmgr/mMcsh2.js works for any worldview (dirMcs..., dirHitp...) without editing.
   // A SITE-ROOT page (e.g. /index.html) has a file as its first segment, not a worldview folder, so
   // it declares which worldview's name-indexes to use with <meta name="Mcsh-worldview" content="dirMcsh">.
   // pathname "/dirMcsh/dirCor/McsCor000005.last.html" -> "dirMcsh"; "/index.html" -> meta -> "dirMcsh".
@@ -2589,7 +2589,7 @@ if (location.hostname !== '') {
 
 if (sPathSite) {
   // read configMcs
-  await fetch(sPathSite + 'dirMcsmgr/configMcs.json') // nnn HitpConfig
+  await fetch(sPathSite + 'dirMcshmgr/configMcs.json') // nnn HitpConfig
   .then(response => response.json())
   .then(oConfig => {
     if (oConfig.nCfgPageinfoWidth) {

@@ -46,7 +46,7 @@ It only runs with `?mcsv=1` (inside this editor) — **no effect on the public s
 
 ## Run it (development)
 
-1. Open this folder (`/dirMcsmgr/mcs-visual`) in VSCode.
+1. Open this folder (`/dirMcshmgr/mcs-visual`) in VSCode.
 2. `npm install` (installs `parse5`; a copy is already vendored in `node_modules`).
 3. Press **F5** → an *Extension Development Host* opens with `dirMcsh` loaded.
 4. Make sure XAMPP is running. Open any `Mcs*.last.html` or `Hitp*.last.html`, then run **Mcs: Open in Mcs-Visual** (or click the title-bar button). It opens a **vertical split**:

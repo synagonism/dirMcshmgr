@@ -33,7 +33,7 @@
  * INPUT: dirManager/NamidxOnly.txt
  * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcsqnt.json,
            dirManager/SftpOnly.json,
- * RUN: node ../dirMcsmgr/mNamidxOnly.mjs
+ * RUN: node ../dirMcshmgr/mNamidxOnly.mjs
  *
  * PROBLEM:
  * - to compute the-number of concepts, we must set new DIRS at cptqnt.root.json.
@@ -46,7 +46,7 @@ import {fWriteJsonArray} from './mUtil.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
-    'mNamidxOnly.mjs.0-7-0.2026-08-30: dirMcsmgr',
+    'mNamidxOnly.mjs.0-7-0.2026-08-30: dirMcshmgr',
     'mNamidxOnly.mjs.0-6-0.2025-11-30: clear only index',
     'mNamidxOnly.mjs.0-5-0.2022-03-17: only index',
     'mNamidx.mjs.0-4-0.2022-02-09: p-Mcs',

@@ -75,7 +75,7 @@ export function fReporter() {
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
     // Hint about report files
-    console.log('💡 HTML report written to dirMcsmgr/dirValid/validator-report.html\n');
+    console.log('💡 HTML report written to dirMcshmgr/dirValid/validator-report.html\n');
   }
 
   function fSaveHtml(sPathOut) {

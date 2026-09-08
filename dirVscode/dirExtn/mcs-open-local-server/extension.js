@@ -5,13 +5,13 @@ const http = require('http')
 const cp = require('child_process')
 
 /**
- * Two commands, both backed by the Node static server (dirMcsmgr/server.mjs,
+ * Two commands, both backed by the Node static server (dirMcshmgr/server.mjs,
  * web root C:\dirNodews, http://localhost) that replaced XAMPP/Apache:
  *
  *   mcs.openInLocalServer   Map the active file to its http://localhost/… URL
  *                           and show it in the integrated Simple Browser.
  *
- *   mcs.validateAndReport   Run dirMcsmgr/dirValid/validator on the active
+ *   mcs.validateAndReport   Run dirMcshmgr/dirValid/validator on the active
  *                           *.last.html, then — when it reports errors or
  *                           warnings — open validator-report.html in the
  *                           integrated Simple Browser (served by server.mjs).
@@ -41,7 +41,7 @@ function fPageUrl(sFsPath) {
 // ── server discovery + auto-start ────────────────────────────────────────────
 const fDelay = ms => new Promise(r => setTimeout(r, ms))
 
-// Walk up from a directory until dirMcsmgr/<name> turns up.
+// Walk up from a directory until dirMcshmgr/<name> turns up.
 function fFindUp(sFromDir, ...aSeg) {
   let sDir = sFromDir
   for (let n = 0; n < 12; n++) {
@@ -53,8 +53,8 @@ function fFindUp(sFromDir, ...aSeg) {
   }
   return null
 }
-const fFindValidator = sFromDir => fFindUp(sFromDir, 'dirMcsmgr', 'dirValid', 'validator.js')
-const fFindServer = sFromDir => fFindUp(sFromDir, 'dirMcsmgr', 'server.mjs')
+const fFindValidator = sFromDir => fFindUp(sFromDir, 'dirMcshmgr', 'dirValid', 'validator.js')
+const fFindServer = sFromDir => fFindUp(sFromDir, 'dirMcshmgr', 'server.mjs')
 
 // Resolve true when the origin answers (any HTTP response), false otherwise.
 function fPing() {
@@ -171,7 +171,7 @@ function activate(context) {
     const sBase = path.basename(sFile)
     const sValidator = fFindValidator(sDirFile)
     if (!sValidator) {
-      vscode.window.showErrorMessage('Mcs: could not locate dirMcsmgr/dirValid/validator.js above the current file.')
+      vscode.window.showErrorMessage('Mcs: could not locate dirMcshmgr/dirValid/validator.js above the current file.')
       return
     }
     const sReport = path.join(path.dirname(sValidator), 'validator-report.html')

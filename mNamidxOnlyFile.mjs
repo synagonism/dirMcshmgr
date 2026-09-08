@@ -27,7 +27,7 @@
  * DOING: indexes one input-file and uploads changed-files
  * INPUT:
  * OUTPUT:
- * RUN from dirMcsh: node ../dirMcsmgr/mNamidxFile.mjs file pwd
+ * RUN from dirMcsh: node ../dirMcshmgr/mNamidxFile.mjs file pwd
  * process.argv[2] → first argument you provided
  */
 
@@ -43,7 +43,7 @@ const
   ]
 
 if (process.argv.length !== 3) {
-  console.log('run: node ../dirMcsmgr/mNamidxFile.mjs file')
+  console.log('run: node ../dirMcshmgr/mNamidxFile.mjs file')
   process.exit()
 }
 

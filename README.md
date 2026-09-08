@@ -1,4 +1,4 @@
-# synagonism/dirMcsmgr GitHub Repository
+# synagonism/dirMcshmgr GitHub Repository
 
 This repo contains the-manager of 
 [Hitp](https://synagonism.net/dirMcsh/dirTchInf/McsTchInf000008.last.html#idLagHitpwbpg) and
