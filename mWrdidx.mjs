@@ -31,7 +31,7 @@
  * INPUT: Wrdidx.txt
  * OUTPUT: dirWrdidx/dirLang/McsWrdidxLangX.last.html, McsWrdidxLangX.txt aPages, name-idx-files, sftp.json,
  *
- * RUN: node Mcsmgr/mWrdidx.mjs pwd 
+ * RUN: node mWrdidx.mjs pwd 
  *
  * PROBLEM:
  * - ambigous phonemic-notation

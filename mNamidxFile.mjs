@@ -40,7 +40,6 @@ import mfClient from 'ssh2-sftp-client'
 import mfEs6_promise_pool from 'es6-promise-pool'
 import {oSftp, fSftp} from './mSftp.mjs'
 import {fWriteJsonObject} from './mUtil.mjs'
-import readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 
 const
@@ -56,14 +55,40 @@ if (process.argv.length !== 3) {
   process.exit()
 }
 
-async function askHidden(promptText) {
-  const rl = readline.createInterface({ input, output, terminal: true });
-
-  // Fallback simple prompt. This does not fully mask on all terminals.
-  // Best option is to use a proper hidden-input package if you want masking.
-  const answer = await rl.question(promptText);
-  rl.close();
-  return answer;
+// read a line from the terminal in raw mode, echoing '*' for each typed char
+function askHidden(promptText) {
+  return new Promise((resolve) => {
+    output.write(promptText);
+    var bWasRaw = input.isRaw;
+    if (input.isTTY) input.setRawMode(true);
+    input.resume();
+    input.setEncoding('utf8');
+    var sPwd = '';
+    const fOnData = (sChunk) => {
+      for (const sCh of sChunk) {
+        var nCode = sCh.charCodeAt(0);
+        if (nCode === 13 || nCode === 10 || nCode === 4) {          // Enter / Ctrl-D: done
+          if (input.isTTY) input.setRawMode(bWasRaw);
+          input.pause();
+          input.removeListener('data', fOnData);
+          output.write('\n');
+          resolve(sPwd);
+          return;
+        } else if (nCode === 3) {                                   // Ctrl-C: abort
+          output.write('\n');
+          process.exit(1);
+        } else if (nCode === 27) {                                  // Esc: ignore arrow/nav sequences
+          break;
+        } else if (nCode === 127 || nCode === 8) {                  // Backspace / Del
+          if (sPwd.length > 0) { sPwd = sPwd.slice(0, -1); output.write('\b \b'); }
+        } else if (nCode >= 32) {                                   // printable char
+          sPwd += sCh;
+          output.write('*');
+        }
+      }
+    };
+    input.on('data', fOnData);
+  });
 }
 
 let
