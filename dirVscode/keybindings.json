@@ -1,9 +1,9 @@
-// {2026-08-21}
+// {2026-09-03}
 // Place your key bindings in this file to override the defaults
 // ctrl+k ctrl+2 folds them and shows shortcuts
 [
 
-// k m:: maximize/restore editor group (also relayed from the Mcsh-Visual pane)
+// k m:: maximize/restore editor group (also relayed from the Mcs-Visual pane)
 {
   "key": "ctrl+k ctrl+m",
   "command": "workbench.action.toggleMaximizeEditorGroup"
@@ -302,6 +302,12 @@
 {
   "key": "ctrl+alt+p b o",
   "command": "mcs.openInLocalServer",
+  "when": "resourceFilename =~ /\\.last\\.html$/"
+},
+// p b v:: hitP Browser Validate current .last.html & show report in Simple Browser (only if errors/warnings)
+{
+  "key": "ctrl+alt+p b v",
+  "command": "mcs.validateAndReport",
   "when": "resourceFilename =~ /\\.last\\.html$/"
 },
 // HITP COLOR

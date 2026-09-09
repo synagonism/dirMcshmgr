@@ -82,4 +82,11 @@
     "workbench.browser.openLocalhostLinks": true,
     "google-translate.firstLanguage": "en",
     "breadcrumbs.enabled": false,
+    "workbench.colorCustomizations": {
+    "tab.activeBackground": "#2d2d30",
+    "tab.activeForeground": "#ffffff",
+    "tab.activeBorderTop": "#00aaff",
+    "tab.inactiveBackground": "#181818",
+    "tab.inactiveForeground": "#777777"
+    }
 }
