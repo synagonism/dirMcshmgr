@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.25-0-2.2026-09-02: Site-Menu',
     'mMcsh2.js.25-0-1.2026-09-01: Site-Home',
     'mMcsh2.js.25-0-0.2026-08-30: dirMcshmgr',
     'mMcsh2.js.24-10-0.2026-08-28: dblclick trim',
@@ -450,7 +451,7 @@ let fContainersInsert = function () {
   }
 
   // menu-icon
-  oEltCnrTopMenuIcnI.setAttribute('title', 'menu')
+  oEltCnrTopMenuIcnI.setAttribute('title', 'Site-Menu')
   oEltCnrTopMenuIcnI.setAttribute('class', 'clsFa clsFaMenu clsTopIcn clsColorWhite clsFloatLeft')
   oEltCnrTopMenuIcnI.addEventListener('pointerdown', function (oEvtIn) {
     oEvtIn.preventDefault()
