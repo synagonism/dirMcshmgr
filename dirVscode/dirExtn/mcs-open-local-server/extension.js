@@ -17,13 +17,13 @@ const cp = require('child_process')
  *                           integrated Simple Browser (served by server.mjs).
  *
  * Either command starts server.mjs first if http://localhost isn't answering.
- * The path→URL mapping reuses the mcs-visual convention: the mcsv.docRootFolder
- * segment (default "dirNodews") marks the web root; mcsv.serverOrigin (default
+ * The path→URL mapping reuses the mcsh-visual convention: the mcshv.docRootFolder
+ * segment (default "dirNodews") marks the web root; mcshv.serverOrigin (default
  * "http://localhost") is the origin.
  */
 
-// ── url helpers (mirror mcs-visual/extension.js fRelPath/fOrigin/fDisplayUrlForPath) ──
-const fCfg = () => vscode.workspace.getConfiguration('mcsv')
+// ── url helpers (mirror mcsh-visual/extension.js fRelPath/fOrigin/fDisplayUrlForPath) ──
+const fCfg = () => vscode.workspace.getConfiguration('mcshv')
 const fOrigin = () => String(fCfg().get('serverOrigin') || 'http://localhost').replace(/\/+$/, '')
 const fDocRoot = () => String(fCfg().get('docRootFolder') || 'dirNodews')
 
@@ -142,7 +142,7 @@ function activate(context) {
     const sFsPath = oEditor.document.uri.fsPath
     const sUrl = fPageUrl(sFsPath)
     if (!sUrl) {
-      vscode.window.showWarningMessage(`Mcs: file is not under the server doc-root ("${fDocRoot()}", set via mcsv.docRootFolder).`)
+      vscode.window.showWarningMessage(`Mcs: file is not under the server doc-root ("${fDocRoot()}", set via mcshv.docRootFolder).`)
       return
     }
     try {

@@ -3,7 +3,7 @@
 // ctrl+k ctrl+2 folds them and shows shortcuts
 [
 
-// k m:: maximize/restore editor group (also relayed from the Mcs-Visual pane)
+// k m:: maximize/restore editor group (also relayed from the Mcsh-Visual pane)
 {
   "key": "ctrl+k ctrl+m",
   "command": "workbench.action.toggleMaximizeEditorGroup"
@@ -891,7 +891,7 @@
 // p o:: hitP Open McsHitp file by code (prompts a Mcs-code prefilled with the current file, opens dir<Cat>/<code>.last.html)
 {
   "key": "ctrl+alt+p o",
-  "command": "mcsv.openByCode"
+  "command": "mcshv.openByCode"
 },
 
 // p p :: hitP Paragraph

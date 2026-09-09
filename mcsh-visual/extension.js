@@ -6,7 +6,7 @@
  * with back / forward / reload and a "..." overflow menu (File → Save; Format →
  * Bold, Color, Url), hosting an <iframe> that renders the page from the LOCAL
  * SERVER (so it looks exactly like the live site). A bridge served with the page
- * (Mcsmgr/mcs-visual/src/mMcsVisual.js, loaded only when the URL carries ?mcsv=1) makes the
+ * (Mcsmgr/mcsh-visual/src/mMcshVisual.js, loaded only when the URL carries ?mcshv=1) makes the
  * whole page editable and reports each change as (id, ordinal, text/markup).
  *
  * Editing model ("full", not surgical): every reported change is mirrored into
@@ -23,14 +23,14 @@ const omModel = require('./src/mModel');
 const omFormat = require('./src/mFormat');
 const fFormat = omFormat.fFormat;
 
-const sViewType = 'mcsv.editorVisual';
+const sViewType = 'mcshv.editorVisual';
 /** Uris that currently have a Mcsh-Visual editor open (so we reformat on save). */
 const oSetUriManaged = new Set();
 /** Uris mid-save: the canonical-format edit is ours, so don't treat it as external. */
 const oSetUriSaving = new Set();
 /** Cached parse of the user's keybindings.json (re-read when its mtime changes). */
 let oShortcutsCache = { path: '', mtimeMs: -1, list: [] };
-/** fsPath of the file currently shown in the active Mcsh-Visual editor (for ${command:mcsv.currentFile}). */
+/** fsPath of the file currently shown in the active Mcsh-Visual editor (for ${command:mcshv.currentFile}). */
 let sVisualFile = '';
 /** Navigate fn of the most-recently-active open Mcsh-Visual editor (null = none open). */
 let fNavigateVisual = null;
@@ -44,7 +44,7 @@ function fActivate(context) {
     })
   );
   context.subscriptions.push(
-    vscode.commands.registerCommand('mcsv.open', async (uri) => {
+    vscode.commands.registerCommand('mcshv.open', async (uri) => {
       const oTarget = uri || (vscode.window.activeTextEditor && vscode.window.activeTextEditor.document.uri);
       if (!oTarget) return;
       // Left column: the raw source text editor.
@@ -62,7 +62,7 @@ function fActivate(context) {
       } catch (e) { /* layout is best-effort */ }
     })
   );
-  // Task variables: ${command:mcsv.currentFile[Dirname|Basename]} resolve to the file the
+  // Task variables: ${command:mcshv.currentFile[Dirname|Basename]} resolve to the file the
   // Mcsh-Visual editor is currently showing (its navigated activeDoc) — because a task's
   // ${file} resolves from the active editor, which for the custom editor stays the ORIGINAL
   // bound document even after you navigate. Falls back to the active text editor when one
@@ -76,16 +76,16 @@ function fActivate(context) {
     return s.replace(/^([a-z]):/, (sM, sD) => sD.toUpperCase() + ':');
   };
   context.subscriptions.push(
-    vscode.commands.registerCommand('mcsv.currentFile', () => fTaskFile()),
-    vscode.commands.registerCommand('mcsv.currentFileDirname', () => { const s = fTaskFile(); return s ? path.dirname(s) : ''; }),
-    vscode.commands.registerCommand('mcsv.currentFileBasename', () => { const s = fTaskFile(); return s ? path.basename(s) : ''; })
+    vscode.commands.registerCommand('mcshv.currentFile', () => fTaskFile()),
+    vscode.commands.registerCommand('mcshv.currentFileDirname', () => { const s = fTaskFile(); return s ? path.dirname(s) : ''; }),
+    vscode.commands.registerCommand('mcshv.currentFileBasename', () => { const s = fTaskFile(); return s ? path.basename(s) : ''; })
   );
   // Open a McsHitp page BY CODE: prompt a Mcs-code prefilled with the current file's
   // code, resolve it to dir<Cat>/<code>.last.html (Hitp → dir<Cat>/dirHitp/…) and open
   // it in Mcsh-Visual (source + visual). Works from the visual editor and from a raw
   // .last.html text editor (bound to Ctrl+Alt+P O in the user's keybindings).
   context.subscriptions.push(
-    vscode.commands.registerCommand('mcsv.openByCode', async () => {
+    vscode.commands.registerCommand('mcshv.openByCode', async () => {
       // Current McsHitp file (if any) — used only to prefill the prompt and as the
       // first root candidate. Absent when invoked cold (e.g. from index.html), which
       // is fine: the prompt opens empty and the root is inferred from the workspace.
@@ -112,7 +112,7 @@ function fActivate(context) {
       // bridge `nav` retargets the edit doc + source pane). Else open a fresh pair.
       const sUrl = fNavigateVisual ? fDisplayUrlForPath(sPath) : '';
       if (fNavigateVisual && sUrl) fNavigateVisual(sUrl);
-      else await vscode.commands.executeCommand('mcsv.open', vscode.Uri.file(sPath));
+      else await vscode.commands.executeCommand('mcshv.open', vscode.Uri.file(sPath));
     })
   );
   // Source -> Visual: when the active source tab becomes a different editable page
@@ -168,7 +168,7 @@ function fCreateProvider(context) {
     // visual is a browser: navigating (link-icon / URL bar) retargets this to the
     // page now shown, so edits/saves follow. `null` = a view-only page.
     let oActiveDoc = document;
-    sVisualFile = document.uri.fsPath;           // seed ${command:mcsv.currentFile}
+    sVisualFile = document.uri.fsPath;           // seed ${command:mcshv.currentFile}
     panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; fNavigateVisual = fNavigate; } });
     const oSetAddedKeys = new Set();             // docs we added to `oSetUriManaged` (cleanup on dispose)
     const sDocRootBase = fDocRootBase(document);
@@ -178,7 +178,7 @@ function fCreateProvider(context) {
 
     let bSelfEditing = false;
 
-    const fToChrome = (m) => oWebview.postMessage(Object.assign({ source: 'mcsv-host' }, m));
+    const fToChrome = (m) => oWebview.postMessage(Object.assign({ source: 'mcshv-host' }, m));
     const fSendIds = () => fToChrome({ type: 'ids', ids: oActiveDoc ? omModel.fCollectIds(oActiveDoc.getText()) : [] });
     const fStatus = (m) => fToChrome({ type: 'status', message: m });
     const fReloadFrame = () => fToChrome({ type: 'reload' });
@@ -191,7 +191,7 @@ function fCreateProvider(context) {
     fNavigateVisual = fNavigate;                 // this editor is the active one at resolve time
 
     // File → Open (and the Ctrl+Alt+P O chord): open a McsHitp page by code.
-    const fOpenByCode = () => vscode.commands.executeCommand('mcsv.openByCode');
+    const fOpenByCode = () => vscode.commands.executeCommand('mcshv.openByCode');
     // File → Index and upload (and Ctrl+Alt+P X U): run the workspace task that
     // name-indexes the current file and uploads the changed files.
     const fIndexUpload = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names of current-file and upload');
@@ -252,7 +252,7 @@ function fCreateProvider(context) {
         try {
           const oDoc = await vscode.workspace.openTextDocument(oUri);
           oActiveDoc = oDoc;
-          sVisualFile = oUri.fsPath;                           // ${command:mcsv.currentFile} follows navigation
+          sVisualFile = oUri.fsPath;                           // ${command:mcshv.currentFile} follows navigation
           bNavDirty = !!oDoc.isDirty;                          // fresh file's unsaved state
           const k = oUri.toString();
           oSetUriManaged.add(k); oSetAddedKeys.add(k);
@@ -337,7 +337,7 @@ function fCreateProvider(context) {
       if (!msg) return;
       try {
         // --- messages from the browser chrome (address bar / ... menu) --------
-        if (msg.source === 'mcsv-chrome') {
+        if (msg.source === 'mcshv-chrome') {
           switch (msg.type) {
             case 'ready': fToChrome({ type: 'setUrl', url: fDisplayUrl(document) }); fSendMenuKind(); break; // ids come from bridge `nav`
             case 'save': if (oActiveDoc) await oActiveDoc.save(); break;
@@ -352,7 +352,7 @@ function fCreateProvider(context) {
           return;
         }
         // --- messages from the page bridge -----------------------------------
-        if (msg.source !== 'mcsv') return;
+        if (msg.source !== 'mcshv') return;
         switch (msg.type) {
           case 'ready': break;                       // ids are sent from `nav` (below)
           case 'save': if (oActiveDoc) await oActiveDoc.save(); break; // Ctrl+S from the iframe
@@ -402,11 +402,11 @@ function fCreateProvider(context) {
             break;
           }
           case 'openRaw': vscode.commands.executeCommand('vscode.openWith', (oActiveDoc || document).uri, 'default'); break;
-          case 'bridgeError': console.error('[mcsv bridge]', msg.message); break;
+          case 'bridgeError': console.error('[mcshv bridge]', msg.message); break;
         }
       } catch (err) {
         bSelfEditing = false;
-        console.error('[mcsv]', err);
+        console.error('[mcshv]', err);
       }
     });
 
@@ -425,7 +425,7 @@ function fCreateProvider(context) {
 // --- url helpers -----------------------------------------------------------
 
 function fRelPath(document) {
-  const oCfg = vscode.workspace.getConfiguration('mcsv');
+  const oCfg = vscode.workspace.getConfiguration('mcshv');
   const sMarker = String(oCfg.get('docRootFolder') || 'htdocs');
   const sFsPath = document.uri.fsPath.replace(/\\/g, '/');
   const sNeedle = '/' + sMarker.replace(/^\/+|\/+$/g, '') + '/';
@@ -435,7 +435,7 @@ function fRelPath(document) {
 }
 
 function fOrigin() {
-  const oCfg = vscode.workspace.getConfiguration('mcsv');
+  const oCfg = vscode.workspace.getConfiguration('mcshv');
   return String(oCfg.get('serverOrigin') || 'http://localhost').replace(/\/+$/, '');
 }
 
@@ -534,7 +534,7 @@ function fFileKind(doc) {
 
 /** Absolute fs path of the server document-root (up to and incl. the marker). */
 function fDocRootBase(document) {
-  const oCfg = vscode.workspace.getConfiguration('mcsv');
+  const oCfg = vscode.workspace.getConfiguration('mcshv');
   const sMarker = String(oCfg.get('docRootFolder') || 'htdocs');
   const sFsPath = document.uri.fsPath.replace(/\\/g, '/');
   const sNeedle = '/' + sMarker.replace(/^\/+|\/+$/g, '') + '/';
@@ -570,15 +570,15 @@ function fDisplayUrl(document) {
   return `${fOrigin()}/${sRel.split('/').map(encodeURIComponent).join('/')}`;
 }
 
-/** URL actually loaded in the iframe (carries ?mcsv=1 so the bridge loads). */
+/** URL actually loaded in the iframe (carries ?mcshv=1 so the bridge loads). */
 function fLocalhostUrl(document) {
   const sDisp = fDisplayUrl(document);
-  return sDisp ? sDisp + '?mcsv=1' : null;
+  return sDisp ? sDisp + '?mcshv=1' : null;
 }
 
 /** Clean address-bar URL for an arbitrary fs path (like fDisplayUrl, path-based). */
 function fDisplayUrlForPath(sFsPath) {
-  const oCfg = vscode.workspace.getConfiguration('mcsv');
+  const oCfg = vscode.workspace.getConfiguration('mcshv');
   const sMarker = String(oCfg.get('docRootFolder') || 'htdocs');
   const sP = sFsPath.replace(/\\/g, '/');
   const sNeedle = '/' + sMarker.replace(/^\/+|\/+$/g, '') + '/';
@@ -600,11 +600,11 @@ function fBuildShell(webview, url) {
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-${sNonce}';">
 <style>body{font:13px system-ui;padding:20px;color:#ddd;background:#1e1e1e}code{background:#333;padding:1px 5px;border-radius:3px}button{margin-top:8px}</style>
 </head><body>
-<h3>Mcs-Visual</h3>
+<h3>Mcsh-Visual</h3>
 <p>This file isn't under your server document-root, so the live view can't load.</p>
-<p>Expected the path to contain <code>/htdocs/</code> (configurable via <code>mcsv.docRootFolder</code> / <code>mcsv.serverOrigin</code>).</p>
+<p>Expected the path to contain <code>/htdocs/</code> (configurable via <code>mcshv.docRootFolder</code> / <code>mcshv.serverOrigin</code>).</p>
 <button id="idRaw">Open the raw text editor</button>
-<script nonce="${sNonce}">const v=acquireVsCodeApi();document.getElementById('idRaw').onclick=()=>v.postMessage({source:'mcsv-chrome',type:'openRaw'});</script>
+<script nonce="${sNonce}">const v=acquireVsCodeApi();document.getElementById('idRaw').onclick=()=>v.postMessage({source:'mcshv-chrome',type:'openRaw'});</script>
 </body></html>`;
   }
 
@@ -702,9 +702,9 @@ function fBuildShell(webview, url) {
   const oBack = document.getElementById('idBack');
   const oFwd = document.getElementById('idFwd');
   let bReady = false, nStatusT = null, nHintT = null;
-  const sEditFlag = '?mcsv=1';
+  const sEditFlag = '?mcshv=1';
 
-  function fToChrome(m){ m.source='mcsv-chrome'; vscode.postMessage(m); }
+  function fToChrome(m){ m.source='mcshv-chrome'; vscode.postMessage(m); }
   // Show items tagged data-kind only for the matching file-kind (mcs/hitp/none);
   // untagged items always show.
   function fApplyMenuKind(sKind){
@@ -715,10 +715,10 @@ function fBuildShell(webview, url) {
     });
   }
   function fShowStatus(m){ oStatusEl.textContent=m||''; oStatusEl.classList.add('clsShow'); if(nStatusT)clearTimeout(nStatusT); nStatusT=setTimeout(()=>oStatusEl.classList.remove('clsShow'),2600); }
-  function fLoadUrl(u){ if(!u)return; if(!/[?&]mcsv=/.test(u)) u += (u.indexOf('?')<0?'?':'&')+'mcsv=1'; f.src=u; }
-  // Fresh cache-buster (keeps ?mcsv=1, strips old _r, preserves #hash) so a load that
+  function fLoadUrl(u){ if(!u)return; if(!/[?&]mcshv=/.test(u)) u += (u.indexOf('?')<0?'?':'&')+'mcshv=1'; f.src=u; }
+  // Fresh cache-buster (keeps ?mcshv=1, strips old _r, preserves #hash) so a load that
   // failed while the server was down is never re-served from cache.
-  function bust(u){ var h='',i=u.indexOf('#'); if(i>=0){h=u.slice(i);u=u.slice(0,i);} u=u.replace(/[?&]_r=\d+/g,''); if(!/[?&]mcsv=/.test(u)) u+=(u.indexOf('?')<0?'?':'&')+'mcsv=1'; u+=(u.indexOf('?')<0?'?':'&')+'_r='+Date.now(); return u+h; }
+  function bust(u){ var h='',i=u.indexOf('#'); if(i>=0){h=u.slice(i);u=u.slice(0,i);} u=u.replace(/[?&]_r=\d+/g,''); if(!/[?&]mcshv=/.test(u)) u+=(u.indexOf('?')<0?'?':'&')+'mcshv=1'; u+=(u.indexOf('?')<0?'?':'&')+'_r='+Date.now(); return u+h; }
   // Re-armable "server down?" hint (shows only if the bridge hasn't announced itself).
   function armHint(){ if(nHintT)clearTimeout(nHintT); nHintT=setTimeout(function(){ if(bReady) return; oHint.style.display='block'; oHint.innerHTML='The live view did not load. Is your local server (XAMPP) running? <button id="idReloadb">Reload</button> <button id="idRawb">Open raw editor</button>'; var r=document.getElementById('idReloadb'); if(r) r.onclick=hardReload; var b=document.getElementById('idRawb'); if(b) b.onclick=function(){ fToChrome({type:'openRaw'}); }; }, 6000); }
   // Reload the iframe from the chrome (no bridge needed) — recovers after the server
@@ -727,7 +727,7 @@ function fBuildShell(webview, url) {
 
   // history.back()/forward() are cross-origin from here (they throw), so relay to
   // the bridge inside the iframe, which is same-origin and can drive its history.
-  function fToFrame(type, extra){ try{ f.contentWindow.postMessage(Object.assign({source:'mcsv-host', type}, extra||{}), '*'); }catch(_){} }
+  function fToFrame(type, extra){ try{ f.contentWindow.postMessage(Object.assign({source:'mcshv-host', type}, extra||{}), '*'); }catch(_){} }
 
   // address bar
   url.addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); fLoadUrl(url.value.trim()); } });
@@ -768,13 +768,13 @@ function fBuildShell(webview, url) {
   // relay: iframe(bridge) <-> extension
   window.addEventListener('message', (e) => {
     const d = e.data || {};
-    if (d.source === 'mcsv') {
+    if (d.source === 'mcshv') {
       if (d.type === 'closeMenu') { oMenu.classList.remove('clsOpen'); return; }   // iframe click dismisses the ... menu
       if(d.type==='ready'){ bReady=true; oHint.style.display='none'; }              // bridge loaded → clear the server-down hint
       vscode.postMessage(d);
       return;
     }
-    if (d.source === 'mcsv-host') {
+    if (d.source === 'mcshv-host') {
       // Post-save reload: do it inside the bridge (location.replace → no new
       // history entry, so Back still steps through pages, not reload-states). The
       // bridge is always present here (we only reload after editing a loaded page).
@@ -801,7 +801,7 @@ function fBuildShell(webview, url) {
 
 /** Default path of the user's keybindings.json for this OS (overridable by config). */
 function fKeybindingsPath() {
-  const oCfg = vscode.workspace.getConfiguration('mcsv');
+  const oCfg = vscode.workspace.getConfiguration('mcshv');
   const sCustom = oCfg.get('keybindingsPath');
   if (sCustom) return String(sCustom).replace(/\\/g, '/');
   if (process.platform === 'win32' && process.env.APPDATA) {
@@ -865,7 +865,7 @@ function fReadUserShortcuts() {
     oShortcutsCache = { path: sPath, mtimeMs: oStat.mtimeMs, list: aList };
     return aList;
   } catch (err) {
-    console.error('[mcsv] keybindings.json read/parse failed:', err && err.message || err);
+    console.error('[mcshv] keybindings.json read/parse failed:', err && err.message || err);
     return [];   // bridge keeps its built-in default
   }
 }

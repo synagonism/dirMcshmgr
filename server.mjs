@@ -113,7 +113,7 @@ const fServeFile = (oReq, oRes, sPath, oStat, bHeadOnly) => {
 	// of js/mjs/css when the request comes from the VS Code WYSIWYG editor.
 	const sReferer = oReq.headers.referer || '';
 	const sE = fExt(sPath);
-	if ((sReferer.includes('mcsw') || sReferer.includes('mcsv'))
+	if ((sReferer.includes('mcsw') || sReferer.includes('mcshv'))
 		&& (sE === 'js' || sE === 'mjs' || sE === 'css')) {
 		oHeaders['Cache-Control'] = 'no-cache, must-revalidate';
 	}

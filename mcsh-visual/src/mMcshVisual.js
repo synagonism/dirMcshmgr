@@ -1,8 +1,8 @@
-// mcs-visual/src/mMcsVisual.js — edit-bridge for the Mcs-Visual VS Code extension.
+// mcsh-visual/src/mMcshVisual.js — edit-bridge for the Mcsh-Visual VS Code extension.
 //
 // Runs INSIDE the normal, server-rendered page (so it looks exactly like the
 // live site). Served over http and loaded by mMcsh2.js ONLY when the URL carries
-// `?mcsv=1`, i.e. when the page is embedded in the Mcs-Visual editor's iframe. On
+// `?mcshv=1`, i.e. when the page is embedded in the Mcsh-Visual editor's iframe. On
 // the public site it never loads and has zero effect.
 //
 // Unlike mMcshEdit.js (the surgical WYSIWYG bridge), this one is paired with an
@@ -14,10 +14,10 @@
 // menu (Bold / Color / Url) rather than a floating toolbar.
 
 // ES module — NOT self-executing. Importing this file has no side effects; the
-// mMcsh2.js loader calls initMcsvBridge() once the module has loaded (see the
-// ?mcsv=1 guard there). Modules are implicitly strict, so no 'use strict' needed.
+// mMcsh2.js loader calls initMcshvBridge() once the module has loaded (see the
+// ?mcshv=1 guard there). Modules are implicitly strict, so no 'use strict' needed.
 let bStarted = false;
-export function fInitMcsv_bridge() {
+export function fInitMcshv_bridge() {
   if (bStarted) return;               // idempotent within a module instance
   bStarted = true;
 
@@ -26,9 +26,9 @@ export function fInitMcsv_bridge() {
 
   // Mark this iframe's browsing context as "editor mode" so mMcsh2's guarded loader
   // re-loads this bridge on any same-origin navigation (in-page search, ToC, home,
-  // preview…) even when the URL lost ?mcsv=1. sessionStorage is per-context → never
+  // preview…) even when the URL lost ?mcshv=1. sessionStorage is per-context → never
   // leaks to the public site or other tabs.
-  try { sessionStorage.setItem('mcsvEdit', '1'); } catch (e) {}
+  try { sessionStorage.setItem('mcshvEdit', '1'); } catch (e) {}
   var oSetValidIds = null;   // Set of ids present in the source file (host-supplied)
   var oLastSpan = null;
 
@@ -48,7 +48,7 @@ export function fInitMcsv_bridge() {
     while (oEl) { if (oEl.id && /^id/.test(oEl.id)) return oEl.id; oEl = oEl.parentElement; }
     return null;
   }
-  function fPost(msg) { if (!oParent) return; msg.source = 'mcsv'; oParent.postMessage(msg, '*'); }
+  function fPost(msg) { if (!oParent) return; msg.source = 'mcshv'; oParent.postMessage(msg, '*'); }
   function fNotify(m) { fPost({ type: 'status', message: m }); }
 
   // --- annotate every editable text core, ordinals per-id in document order ---
@@ -61,7 +61,7 @@ export function fInitMcsv_bridge() {
     while ((n = oWalker.nextNode())) {
       if (!fTrimPlain(n.nodeValue || '')) continue;
       if (n.parentElement.closest('script,style,noscript,title,textarea')) continue;
-      if (n.parentElement.closest('.clsMcsvT')) continue;
+      if (n.parentElement.closest('.clsMcshvT')) continue;
       var sId = fNearestId(n);
       if (!sId) continue;
       var nOrd = (oCounters[sId] = (oCounters[sId] == null ? 0 : oCounters[sId] + 1));
@@ -74,7 +74,7 @@ export function fInitMcsv_bridge() {
       var sTrail = (sRaw.match(/[\n\r\t ]*$/) || [''])[0];
       var sCore = sRaw.slice(sLead.length, sRaw.length - sTrail.length);
       var oSpan = document.createElement('span');
-      oSpan.className = 'clsMcsvT';
+      oSpan.className = 'clsMcshvT';
       oSpan.setAttribute('contenteditable', 'true');
       oSpan.setAttribute('spellcheck', 'false');
       oSpan.dataset.id = t.id; oSpan.dataset.ord = t.ord;
@@ -88,14 +88,14 @@ export function fInitMcsv_bridge() {
     fWireSpans();
   }
 
-  // Unwrap all .clsMcsvT spans back to plain text nodes, then re-annotate. Used
+  // Unwrap all .clsMcshvT spans back to plain text nodes, then re-annotate. Used
   // after a format command changes a core's inner structure, so ordinals re-sync
   // with the (matching) unsaved document — no server reload needed.
   var bReannotating = false;
   function fReannotate() {
     bReannotating = true;
     try {
-      var oSpans = document.querySelectorAll('.clsMcsvT');
+      var oSpans = document.querySelectorAll('.clsMcshvT');
       for (var i = 0; i < oSpans.length; i++) {
         var s = oSpans[i], oParentNode = s.parentNode;
         if (!oParentNode) continue;
@@ -120,7 +120,7 @@ export function fInitMcsv_bridge() {
     span.dataset.orig = sNow;
   }
   function fWireSpans() {
-    var oSpans = document.querySelectorAll('.clsMcsvT');
+    var oSpans = document.querySelectorAll('.clsMcshvT');
     for (var i = 0; i < oSpans.length; i++) {
       var oSpan = oSpans[i];
       if (oSpan.__wired) continue;
@@ -146,7 +146,7 @@ export function fInitMcsv_bridge() {
     if (oRange.collapsed) return null;
     var oContainer = oRange.commonAncestorContainer;
     var oHost = (oContainer.nodeType === 3 ? oContainer.parentElement : oContainer);
-    oHost = oHost && oHost.closest ? oHost.closest('.clsMcsvT') : null;
+    oHost = oHost && oHost.closest ? oHost.closest('.clsMcshvT') : null;
     if (!oHost) return null;
     var oPre = document.createRange();
     oPre.selectNodeContents(oHost);
@@ -226,7 +226,7 @@ export function fInitMcsv_bridge() {
       var oRange = oSel.getRangeAt(0);
       var oNode = oRange.startContainer;
       var oHost = (oNode.nodeType === 3 ? oNode.parentElement : oNode);
-      oHost = oHost && oHost.closest ? oHost.closest('.clsMcsvT') : null;
+      oHost = oHost && oHost.closest ? oHost.closest('.clsMcshvT') : null;
       if (oHost) {
         var oPre = document.createRange();
         oPre.selectNodeContents(oHost);
@@ -370,8 +370,8 @@ export function fInitMcsv_bridge() {
   // --- caret/scroll survive the reload that follows a structural op ----------
   function fSaveState(host) {
     try {
-      sessionStorage.setItem('mcsvScroll', String(window.scrollY || window.pageYOffset || 0));
-      if (host) sessionStorage.setItem('mcsvAnchor', host.dataset.id + '|' + host.dataset.ord + '|' + Date.now());
+      sessionStorage.setItem('mcshvScroll', String(window.scrollY || window.pageYOffset || 0));
+      if (host) sessionStorage.setItem('mcshvAnchor', host.dataset.id + '|' + host.dataset.ord + '|' + Date.now());
     } catch (e) {}
   }
   function fPlaceCaretEnd(el) {
@@ -392,9 +392,9 @@ export function fInitMcsv_bridge() {
   //  - 'scroll' : hashless nav/reload → restore the saved scroll position.
   var oLanding = null;
   function fDecideLanding() {
-    var a = sessionStorage.getItem('mcsvAnchor'), sSc = sessionStorage.getItem('mcsvScroll');
+    var a = sessionStorage.getItem('mcshvAnchor'), sSc = sessionStorage.getItem('mcshvScroll');
     if (a) {
-      sessionStorage.removeItem('mcsvAnchor');
+      sessionStorage.removeItem('mcshvAnchor');
       var p = a.split('|');
       if (Date.now() - (+p[2]) < 15000) return { kind: 'anchor', id: p[0], ord: p[1] };
     }
@@ -406,7 +406,7 @@ export function fInitMcsv_bridge() {
     try {
       if (!oLanding) return;
       if (oLanding.kind === 'anchor') {
-        var oEl = document.querySelector('.clsMcsvT[data-id="' + oLanding.id + '"][data-ord="' + oLanding.ord + '"]');
+        var oEl = document.querySelector('.clsMcshvT[data-id="' + oLanding.id + '"][data-ord="' + oLanding.ord + '"]');
         if (oEl) { oEl.scrollIntoView({ block: 'center' }); fPlaceCaretEnd(oEl); oEl.focus({ preventScroll: true }); }
       } else if (oLanding.kind === 'hash') { fScrollHash(); }
       else if (oLanding.kind === 'scroll') { window.scrollTo(0, oLanding.y); }
@@ -416,7 +416,7 @@ export function fInitMcsv_bridge() {
   var nScrollT;
   window.addEventListener('scroll', function () {
     if (nScrollT) return;
-    nScrollT = setTimeout(function () { nScrollT = null; try { sessionStorage.setItem('mcsvScroll', String(window.scrollY || 0)); } catch (e) {} }, 150);
+    nScrollT = setTimeout(function () { nScrollT = null; try { sessionStorage.setItem('mcshvScroll', String(window.scrollY || 0)); } catch (e) {} }, 150);
   }, { passive: true });
 
   // --- keep ToC/content split correct for the frame width (from mMcshEdit) ----
@@ -473,7 +473,7 @@ export function fInitMcsv_bridge() {
     if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
       e.preventDefault();
       var oAe = document.activeElement;
-      if (oAe && oAe.classList && oAe.classList.contains('clsMcsvT')) {
+      if (oAe && oAe.classList && oAe.classList.contains('clsMcshvT')) {
         oAe.blur();
         setTimeout(function () { fPost({ type: 'save' }); }, 80);   // let the edit apply first
       } else {
@@ -497,17 +497,17 @@ export function fInitMcsv_bridge() {
     var bInPv = oPv && t && oPv.contains && oPv.contains(t);
     if (!bInLink && !bInPv && oPv && oPv.style.display !== 'none') {
       oPv.style.display = 'none';
-      if (oPrevA) { oPrevA.__mcsvPrev = false; oPrevA = null; }
+      if (oPrevA) { oPrevA.__mcshvPrev = false; oPrevA = null; }
     }
   }, true);
 
-  // Navigation: let link-icons take you to other local pages (carrying ?mcsv=1
+  // Navigation: let link-icons take you to other local pages (carrying ?mcshv=1
   // so the bridge follows), while leaving in-page #hash links to mMcsh2. External
   // links load view-only.
-  function fWithMcsvFlag(absHref) {
+  function fWithMcshvFlag(absHref) {
     var sHash = '', h = absHref.indexOf('#');
     if (h >= 0) { sHash = absHref.slice(h); absHref = absHref.slice(0, h); }
-    if (!/[?&]mcsv=/.test(absHref)) absHref += (absHref.indexOf('?') < 0 ? '?' : '&') + 'mcsv=1';
+    if (!/[?&]mcshv=/.test(absHref)) absHref += (absHref.indexOf('?') < 0 ? '?' : '&') + 'mcshv=1';
     return absHref + sHash;
   }
   // --- cyan preview-links: behave like the public site (mMcsh2 fEvtPreview) ----
@@ -520,13 +520,13 @@ export function fInitMcsv_bridge() {
     var sHref = a.getAttribute('href') || '';
     if (a.origin && a.origin !== location.origin) { location.assign(a.href); return; }               // external
     if (/^#/.test(sHref) || a.href.split('#')[0] === location.href.split('#')[0]) { location.hash = a.href.split('#')[1] || ''; return; } // same page
-    location.assign(fWithMcsvFlag(a.href));                                                           // other local page, keep editing
+    location.assign(fWithMcshvFlag(a.href));                                                           // other local page, keep editing
   }
   function fPreviewLink(a, nPageX) {
-    if (oPrevA && oPrevA !== a) oPrevA.__mcsvPrev = false;
-    if (a.__mcsvPrev) { a.__mcsvPrev = false; oPrevA = null; fHidePreview(); fNavigateLink(a); return; } // 2nd click → navigate
+    if (oPrevA && oPrevA !== a) oPrevA.__mcshvPrev = false;
+    if (a.__mcshvPrev) { a.__mcshvPrev = false; oPrevA = null; fHidePreview(); fNavigateLink(a); return; } // 2nd click → navigate
     if (!(oMcshMod && oMcshMod.fEvtPreview)) { fNavigateLink(a); return; }                              // module not ready → navigate
-    oPrevA = a; a.__mcsvPrev = true;
+    oPrevA = a; a.__mcshvPrev = true;
     var sMode = a.closest('#idCnrMainContentDiv') ? 'sContent' : '';                                    // popup sizing like the site
     oMcshMod.fEvtPreview({ target: a, pageX: nPageX || 0, preventDefault: function () {}, stopPropagation: function () {} }, sMode);
   }
@@ -539,7 +539,7 @@ export function fInitMcsv_bridge() {
     if (!a) return;
     nLpTimer = setTimeout(function () {
       bLongPress = true;                                    // next click edits instead of previewing
-      var oSpan = e.target.closest && e.target.closest('.clsMcsvT');
+      var oSpan = e.target.closest && e.target.closest('.clsMcshvT');
       if (oSpan) { try { oSpan.focus(); } catch (x) {} }
     }, 500);
   }, true);
@@ -565,7 +565,7 @@ export function fInitMcsv_bridge() {
     if (/^#/.test(sHref) || sAbs.split('#')[0] === location.href.split('#')[0]) return;
     if (a.origin && a.origin !== location.origin) return;   // external → default (view-only)
     e.preventDefault();
-    location.assign(fWithMcsvFlag(sAbs));                   // go to the local page, keep editing on
+    location.assign(fWithMcshvFlag(sAbs));                   // go to the local page, keep editing on
   }, true);
 
   // Report our current address to the host (URL bar + retarget the edit file),
@@ -573,7 +573,7 @@ export function fInitMcsv_bridge() {
   function fCleanHref() {
     var sUrl = location.href, sHash = '', h = sUrl.indexOf('#');
     if (h >= 0) { sHash = sUrl.slice(h); sUrl = sUrl.slice(0, h); }
-    sUrl = sUrl.replace(/[?&]mcsv=1\b/g, '').replace(/[?&]_r=\d+/g, '').replace(/[?&]+$/, '');
+    sUrl = sUrl.replace(/[?&]mcshv=1\b/g, '').replace(/[?&]_r=\d+/g, '').replace(/[?&]+$/, '');
     return sUrl + sHash;
   }
   // Add a fresh cache-buster: strip ALL existing _r first (global) and insert
@@ -591,8 +591,8 @@ export function fInitMcsv_bridge() {
 
   // Highlight editable cores.
   var oCss = document.createElement('style');
-  oCss.textContent = '.clsMcsvT:hover{outline:1px dashed #4aa3ff;outline-offset:1px;cursor:text}.clsMcsvT:focus{outline:2px solid #4aa3ff;outline-offset:1px;background:rgba(74,163,255,.12)}'
-    + '.clsMcsvSync{background:rgba(74,163,255,.30);border-radius:2px;box-shadow:0 0 0 2px rgba(74,163,255,.30)}';
+  oCss.textContent = '.clsMcshvT:hover{outline:1px dashed #4aa3ff;outline-offset:1px;cursor:text}.clsMcshvT:focus{outline:2px solid #4aa3ff;outline-offset:1px;background:rgba(74,163,255,.12)}'
+    + '.clsMcshvSync{background:rgba(74,163,255,.30);border-radius:2px;box-shadow:0 0 0 2px rgba(74,163,255,.30)}';
   document.head.appendChild(oCss);
 
   // Scale the document text to 90% (editor-only; no change to the site CSS). The
@@ -623,13 +623,13 @@ export function fInitMcsv_bridge() {
     oSetValidIds = ids;
     if (!bAnnotated) { bAnnotated = true; fAnnotate(); fFixSplit(); fWatchSplit(); setTimeout(fFixSplit, 120); setTimeout(fFixSplit, 400); }
     else { /* ids refreshed after external change / reload */ fReannotate(); }
-    fNotify(document.querySelectorAll('.clsMcsvT').length + ' editable');
+    fNotify(document.querySelectorAll('.clsMcshvT').length + ' editable');
     fRestoreState();                  // decide the landing (edit line / #hash / scroll) and apply it
     setTimeout(fApplyLanding, 60);    // beat mMcsh2's own location.hash scroll
     setTimeout(fApplyLanding, 900);   // re-apply after the 800ms font-scale + split reflow settles
   }
   window.addEventListener('message', function (e) {
-    var d = e.data; if (!d || d.source !== 'mcsv-host') return;
+    var d = e.data; if (!d || d.source !== 'mcshv-host') return;
     if (d.type === 'ids') fDoAnnotate(new Set(d.ids || []));
     else if (d.type === 'shortcuts') { if (Array.isArray(d.list) && d.list.length) fSetChords(d.list); } // auto-synced from keybindings.json
     else if (d.type === 'cmd') { if (oCommands[d.cmd]) oCommands[d.cmd](); }
@@ -648,17 +648,17 @@ export function fInitMcsv_bridge() {
       // Save/structural reload (keepPlace !== false): remember the edit line so we land
       // back on it. The ⟳ button sends keepPlace:false → no anchor, so the URL #hash wins
       // and the reload lands on #name (like a browser reload).
-      if (d.keepPlace !== false) fSaveState(document.querySelector('.clsMcsvT:focus') || oLastSpan);
+      if (d.keepPlace !== false) fSaveState(document.querySelector('.clsMcshvT:focus') || oLastSpan);
       try { location.replace(fBust(location.href)); } catch (e2) { location.reload(); }
     }
     // source -> visual: scroll the matching core into view and flash it.
     else if (d.type === 'syncTo') {
-      var oEl = document.querySelector('.clsMcsvT[data-id="' + d.id + '"][data-ord="' + d.ord + '"]');
+      var oEl = document.querySelector('.clsMcshvT[data-id="' + d.id + '"][data-ord="' + d.ord + '"]');
       if (oEl) {
         oEl.scrollIntoView({ block: 'center' });
-        oEl.classList.add('clsMcsvSync');
+        oEl.classList.add('clsMcshvSync');
         clearTimeout(oEl.__syncT);
-        oEl.__syncT = setTimeout(function () { oEl.classList.remove('clsMcsvSync'); }, 800);
+        oEl.__syncT = setTimeout(function () { oEl.classList.remove('clsMcshvSync'); }, 800);
       }
     }
   });

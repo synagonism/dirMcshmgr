@@ -1,6 +1,6 @@
 {
-  "name": "mcs-visual",
-  "displayName": "Mcs-Visual",
+  "name": "mcsh-visual",
+  "displayName": "Mcsh-Visual",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
   "version": "0.3.0",
   "date": "2026-09-03",
@@ -20,16 +20,16 @@
   ],
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:mcsv.currentFile",
-    "onCommand:mcsv.currentFileDirname",
-    "onCommand:mcsv.currentFileBasename"
+    "onCommand:mcshv.currentFile",
+    "onCommand:mcshv.currentFileDirname",
+    "onCommand:mcshv.currentFileBasename"
   ],
   "main": "./extension.js",
   "contributes": {
     "customEditors": [
       {
-        "viewType": "mcsv.editorVisual",
-        "displayName": "Mcs-Visual",
+        "viewType": "mcshv.editorVisual",
+        "displayName": "Mcsh-Visual",
         "selector": [
           {
             "filenamePattern": "Mcs*.last.html"
@@ -43,13 +43,13 @@
     ],
     "commands": [
       {
-        "command": "mcsv.open",
-        "title": "Open in Mcs-Visual",
+        "command": "mcshv.open",
+        "title": "Open in Mcsh-Visual",
         "category": "Mcs",
         "icon": "media/icon.png"
       },
       {
-        "command": "mcsv.openByCode",
+        "command": "mcshv.openByCode",
         "title": "Open McsHitp file by code",
         "category": "Mcs"
       }
@@ -57,26 +57,26 @@
     "menus": {
       "editor/title": [
         {
-          "command": "mcsv.open",
+          "command": "mcshv.open",
           "when": "resourceExtname == .html && resourceFilename =~ /\\.last\\.html$/",
           "group": "navigation"
         }
       ]
     },
     "configuration": {
-      "title": "Mcs-Visual",
+      "title": "Mcsh-Visual",
       "properties": {
-        "mcsv.serverOrigin": {
+        "mcshv.serverOrigin": {
           "type": "string",
           "default": "http://localhost",
           "description": "Origin of the local web server that renders the pages (e.g. http://localhost)."
         },
-        "mcsv.docRootFolder": {
+        "mcshv.docRootFolder": {
           "type": "string",
           "default": "dirNodews",
           "description": "Folder name in the file path that marks the server document-root. The URL path is everything after it. Defaults to 'dirNodews' to match server.mjs (web root = C:\\dirNodews)."
         },
-        "mcsv.keybindingsPath": {
+        "mcshv.keybindingsPath": {
           "type": "string",
           "default": "",
           "description": "Path to your VS Code keybindings.json. The viewer auto-syncs its wrap/insert chord shortcuts from it. Leave empty to use the default per-OS user path."

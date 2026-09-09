@@ -8,7 +8,7 @@
 # so their caching is completely unaffected.
 <IfModule mod_headers.c>
   SetEnvIf Referer "mcsw" MCSW_EDIT
-  SetEnvIf Referer "mcsv" MCSW_EDIT
+  SetEnvIf Referer "mcshv" MCSW_EDIT
   <FilesMatch "\.(js|mjs|css)$">
     Header set Cache-Control "no-cache, must-revalidate" env=MCSW_EDIT
   </FilesMatch>

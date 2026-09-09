@@ -2645,12 +2645,12 @@ document.getElementById('idCnrMainContentDiv').focus()
 
 // mcsh-visual extension
 // VSCode extension visual-editor: load its edit-bridge only when
-// embedded in the editor (URL flag ?mcsv=1). Never runs on the public site.
+// embedded in the editor (URL flag ?mcshv=1). Never runs on the public site.
 try {
-  if (new URLSearchParams(location.search).has('mcsv') || sessionStorage.getItem('mcsvEdit')) {
-    import('./mcs-visual/src/mMcsVisual.js?v=' + Date.now())
-      .then(function (m) { (m.fInitMcsv_bridge || m.default)() })   // module now exports an init; call it
-      .catch(function (e) { console.error('mcsv bridge load failed:', e) })
+  if (new URLSearchParams(location.search).has('mcshv') || sessionStorage.getItem('mcshvEdit')) {
+    import('./mcsh-visual/src/mMcshVisual.js?v=' + Date.now())
+      .then(function (m) { (m.fInitMcshv_bridge || m.default)() })   // module now exports an init; call it
+      .catch(function (e) { console.error('mcshv bridge load failed:', e) })
   }
 } catch (e) { /* ignore */ }
 

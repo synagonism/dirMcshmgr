@@ -1,4 +1,4 @@
-# Mcs-Visual editor (`Mcs*|Hitp*.last.html`)
+# Mcsh-Visual editor (`Mcs*|Hitp*.last.html`)
 
 A-VSCode-extension that visually edits McsHitp(`Mcs*.last.html`) and Hitp(`Hitp*.last.html`) pages.
 An address-bar has **← → ⟳ ⋯** menu, and the page is-rendered exactly as in a-browser.
@@ -26,7 +26,7 @@ It is idempotent: saving an already-canonical file changes nothing.
 
 ## How editing maps back to the file
 
-The page is rendered by XAMPP with `?mcsv=1`, which makes `mMcsh2.js` load the bridge `Mcsmgr/mcs-visual/src/mMcsVisual.js` (never on the public site).
+The page is rendered by XAMPP with `?mcshv=1`, which makes `mMcsh2.js` load the bridge `Mcsmgr/mcsh-visual/src/mMcshVisual.js` (never on the public site).
 The bridge makes each content text run editable and reports changes as `(id, ordinal, text/markup)`.
 Because the render keeps your source `id`s and text order, the extension maps `(id, ordinal)` back to the exact byte range (via `parse5`) and mirrors the change into the **unsaved** document.
 After a format command the bridge re-annotates locally so ordinals stay in sync without a reload. 
@@ -34,23 +34,23 @@ Only ids that exist in your source are editable — generated chrome (ToC, menu,
 
 ## The one change to your site
 
-`Mcsmgr/mMcsh2.js` has a second guarded loader (next to the `mcsv` one):
+`Mcsmgr/mMcsh2.js` has a second guarded loader (next to the `mcshv` one):
 
 ```js
-if (new URLSearchParams(location.search).has('mcsv')) {
-  import('./mcs-visual/src/mMcsVisual.js?v=' + Date.now()).catch(e => console.error('mcsv bridge load failed:', e))
+if (new URLSearchParams(location.search).has('mcshv')) {
+  import('./mcsh-visual/src/mMcshVisual.js?v=' + Date.now()).catch(e => console.error('mcshv bridge load failed:', e))
 }
 ```
 
-It only runs with `?mcsv=1` (inside this editor) — **no effect on the public site**. Removing the editor = delete `Mcsmgr/mcs-visual/src/mMcsVisual.js` and this block (and the `mcsv` line in `Mcsmgr/.htaccess`).
+It only runs with `?mcshv=1` (inside this editor) — **no effect on the public site**. Removing the editor = delete `Mcsmgr/mcsh-visual/src/mMcshVisual.js` and this block (and the `mcshv` line in `Mcsmgr/.htaccess`).
 
 ## Run it (development)
 
-1. Open this folder (`/dirMcshmgr/mcs-visual`) in VSCode.
+1. Open this folder (`/dirMcshmgr/mcsh-visual`) in VSCode.
 2. `npm install` (installs `parse5`; a copy is already vendored in `node_modules`).
 3. Press **F5** → an *Extension Development Host* opens with `dirMcsh` loaded.
-4. Make sure XAMPP is running. Open any `Mcs*.last.html` or `Hitp*.last.html`, then run **Mcs: Open in Mcs-Visual** (or click the title-bar button). It opens a **vertical split**:
-   the **raw source on the left** and the **visual editor on the right** (focus on the right). It registers as an *option*, so it never overrides the default text editor; **Reopen Editor With… → Mcs-Visual** still opens single-pane.
+4. Make sure XAMPP is running. Open any `Mcs*.last.html` or `Hitp*.last.html`, then run **Mcs: Open in Mcsh-Visual** (or click the title-bar button). It opens a **vertical split**:
+   the **raw source on the left** and the **visual editor on the right** (focus on the right). It registers as an *option*, so it never overrides the default text editor; **Reopen Editor With… → Mcsh-Visual** still opens single-pane.
 
 Both panes back the same document: visual edits show in the source live; saving either pane canonicalises the file and reloads the visual.
 
