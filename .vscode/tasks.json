@@ -1,0 +1,195 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    // Backup Vscode user settings
+    {
+      "label": "Backup Vscode user settings",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "copy /y \"C:\\Users\\synag\\AppData\\Roaming\\Code\\User\\keybindings.json\" \"C:\\dirNodews\\dirMcshmgr\\dirVscode\\keybindings.json\" && copy /y \"C:\\Users\\synag\\AppData\\Roaming\\Code\\User\\settings.json\" \"C:\\dirNodews\\dirMcshmgr\\dirVscode\\settings.json\""
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    // Sync this master .vscode (settings.json + tasks.json) into the subdirs.
+    // Master lives at C:\dirNodews\.vscode ; run this after editing it so the
+    // subdir workspaces (dirMcsh, dirHitp) pick up the same config.
+    {
+      "label": "Sync .vscode to subdirs",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "copy /y \"C:\\dirNodews\\.vscode\\settings.json\" \"C:\\dirNodews\\dirMcsh\\.vscode\\settings.json\" && copy /y \"C:\\dirNodews\\.vscode\\tasks.json\" \"C:\\dirNodews\\dirMcsh\\.vscode\\tasks.json\" && copy /y \"C:\\dirNodews\\.vscode\\settings.json\" \"C:\\dirNodews\\dirHitp\\.vscode\\settings.json\" && copy /y \"C:\\dirNodews\\.vscode\\tasks.json\" \"C:\\dirNodews\\dirHitp\\.vscode\\tasks.json\""
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    // Index names of current-file and upload
+    {
+      "label": "Index names of current-file and upload",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxFile.mjs",
+        "${command:mcshv.currentFile}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Index names ONLY of current-file
+    {
+      "label": "Index names ONLY of current-file",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxOnlyFile.mjs",
+        "${command:mcshv.currentFile}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Sftp only current worldview: upload the files listed in
+    // <worldview>/dirManager/sftp.json (no re-indexing). cwd is the current
+    // worldview, so mSftpOnly.mjs uploads to httpdocs/<worldview>/.
+    {
+      "label": "Sftp only current worldview",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mSftpOnly.mjs",
+        "${input:sftpPassword}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Validate current-file
+    {
+      "label": "validate current-file",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/dirValid/validator",
+        "${command:mcshv.currentFileDirname}",
+        "--file",
+        "${command:mcshv.currentFileBasename}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Create new McsHitp file
+    {
+      "label": "Create new McsHitp file",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mMcsNew.mjs",
+        "${input:sDir}",
+        "${input:sNameInformal}",
+        "${input:sNameFormal}",
+        "${input:sNameId}",
+        "${input:bCounter}",
+        "${input:sftpPassword}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "sDir",
+      "type": "pickString",
+      "description": "Concept directory",
+      "options": [
+        "dirCor",
+        "dirEdu",
+        "dirHlth",
+        "dirHmn",
+        "dirLag",
+        "dirNtr",
+        "dirOgm",
+        "dirStn",
+        "dirStnlaw",
+        "dirTch",
+        "dirTchPrgm",
+        "dirTchInf"
+      ],
+      "default": "dirTchInf"
+    },
+    {
+      "id": "sNameInformal",
+      "type": "promptString",
+      "description": "Informal title, e.g. Ethereum--blockchain-net"
+    },
+    {
+      "id": "sNameFormal",
+      "type": "promptString",
+      "description": "Formal short-name, e.g. Mcsmgr"
+    },
+    {
+      "id": "sNameId",
+      "type": "promptString",
+      "description": "ID stem, e.g. idLZhon, idSocChna"
+    },
+    {
+      "id": "bCounter",
+      "type": "pickString",
+      "description": "Add visit counter?",
+      "options": [
+        "true",
+        "false"
+      ],
+      "default": "true"
+    },
+    {
+      "id": "sftpPassword",
+      "type": "promptString",
+      "description": "SFTP password (for upload to synagonism.net)",
+      "password": true
+    }
+  ]
+}

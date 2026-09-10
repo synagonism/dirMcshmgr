@@ -508,8 +508,10 @@ function fNamidx(fileIn, fSftpIn) {
       }
     } else {
       // lagNam03si_0 is a-reference
-      let aNi = JSON.parse(moFs.readFileSync('dirNamidx/dirLag' + sLagIn.substring(3)
-        +'/namidx.' +sFileIdxIn +'.json'))
+      let sRef = 'dirNamidx/dirLag' + sLagIn.substring(3) +'/namidx.' +sFileIdxIn +'.json'
+      // the-reference-tree is a-manual split: if its file is-missing, skip (don't crash)
+      if (!moFs.existsSync(sRef)) { console.log('>> missing index-file: ' + sRef); return }
+      let aNi = JSON.parse(moFs.readFileSync(sRef))
       fStoreNamUrlReference(aNi, aNUIn, sLagIn)
     }
   }
@@ -551,8 +553,10 @@ function fNamidx(fileIn, fSftpIn) {
           }
         } else {
           // index-file is a-reference
-          let aNi = JSON.parse(moFs.readFileSync('dirNamidx/dirLag' + sLagIn.substring(3)
-              +'/namidx.' +aFileIdxRefIn[n][0] +'.json'))
+          let sRef = 'dirNamidx/dirLag' + sLagIn.substring(3) +'/namidx.' +aFileIdxRefIn[n][0] +'.json'
+          // the-reference-tree is a-manual split: if its file is-missing, skip (don't crash)
+          if (!moFs.existsSync(sRef)) { console.log('>> missing index-file: ' + sRef); break }
+          let aNi = JSON.parse(moFs.readFileSync(sRef))
           fStoreNamUrlReference(aNi, aNUIn, sLagIn)
         }
         break
@@ -653,6 +657,9 @@ function fNamidx(fileIn, fSftpIn) {
     }
 
     s = s + ']'
+    // create the-parent-dir (dirNamidx/dirLag<Lag>) on demand for a-fresh-worldview
+    let sDir = sFilIn.substring(0, sFilIn.lastIndexOf('/'))
+    if (sDir) moFs.mkdirSync(sDir, { recursive: true })
     moFs.writeFileSync(sFilIn, s)
   }
 
@@ -873,7 +880,10 @@ function fNamidx(fileIn, fSftpIn) {
       sMcsqnt = sDir + '/Mcsqnt.json'
     }
 
-    aMcsqnt = JSON.parse(moFs.readFileSync(sMcsqnt))
+    // read the-Mcsqnt-file, or start a-meta-only skeleton on demand (fresh worldview)
+    aMcsqnt = moFs.existsSync(sMcsqnt)
+      ? JSON.parse(moFs.readFileSync(sMcsqnt))
+      : [[sDir === '' ? ';qntAGG' : ';' + sDir, 0, fDateYMD()]]
     for (n = 1; n < aMcsqnt.length; n++) {
       // [";dirDIR",115,"2018-10-06"],
       // ["dirDIR/filMcsNAME.last.html",112],
@@ -919,19 +929,29 @@ function fNamidx(fileIn, fSftpIn) {
     function fUpdate_root(sDfIn, nQIn) {
       let
         aMcsqntRt,
+        bFound = false,
         nMcsqntRtSum = 0,
         sMcsqntRt = 'Mcsqnt.root.json'
 
-      aMcsqntRt = JSON.parse(moFs.readFileSync(sMcsqntRt))
+      // read Mcsqnt.root.json, or start a-meta-only skeleton on demand (fresh worldview)
+      aMcsqntRt = moFs.existsSync(sMcsqntRt)
+        ? JSON.parse(moFs.readFileSync(sMcsqntRt))
+        : [[';qntAGG', 0, fDateYMD()]]
       for (n = 1; n < aMcsqntRt.length; n++) {
         // [";qntAGG",179925,"2018-10-05"],
         // ["dirCor",10],
         if (aMcsqntRt[n][0] === sDfIn) {
           aMcsqntRt[n][1] = nQIn
           nMcsqntRtSum = nMcsqntRtSum + nQIn
+          bFound = true
         } else {
           nMcsqntRtSum = nMcsqntRtSum + aMcsqntRt[n][1]
         }
+      }
+      // on a-fresh-root the dir is not listed yet: add it, so it is recorded
+      if (!bFound) {
+        aMcsqntRt.push([sDfIn, nQIn])
+        nMcsqntRtSum = nMcsqntRtSum + nQIn
       }
       aMcsqntRt[0] = [';qntAGG', nMcsqntRtSum, fDateYMD()]
       fWriteJsonArray(sMcsqntRt, aMcsqntRt)

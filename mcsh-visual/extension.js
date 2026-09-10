@@ -75,10 +75,29 @@ function fActivate(context) {
     // 'C:/…/dirMcsh/' prefix case-sensitively, so uppercase the drive to stay a drop-in.
     return s.replace(/^([a-z]):/, (sM, sD) => sD.toUpperCase() + ':');
   };
+  // ${command:mcshv.currentWorldview}: worldview ROOT of the current file — the
+  // nearest ancestor folder holding a `dirNamidx` (every worldview has one). Lets a
+  // task's cwd track the open file's worldview instead of ${workspaceFolder}, so the
+  // manager scripts (which read/write dirNamidx/, dirManager/, Mcsqnt.root.json
+  // relative to process.cwd()) work from any worldview in a multi-root workspace.
+  const fTaskWorldview = () => {
+    const s = fTaskFile();
+    if (!s) return '';
+    let sDir = path.dirname(s);
+    const sStop = path.parse(sDir).root;
+    for (;;) {
+      try { if (fs.existsSync(path.join(sDir, 'dirNamidx'))) return sDir; } catch (e) { /* skip */ }
+      const sUp = path.dirname(sDir);
+      if (sUp === sDir || sDir === sStop) break;
+      sDir = sUp;
+    }
+    return fWorldviewRoot(s, path.basename(s).replace(/\.last\.html$/i, ''));  // heuristic fallback
+  };
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.currentFile', () => fTaskFile()),
     vscode.commands.registerCommand('mcshv.currentFileDirname', () => { const s = fTaskFile(); return s ? path.dirname(s) : ''; }),
-    vscode.commands.registerCommand('mcshv.currentFileBasename', () => { const s = fTaskFile(); return s ? path.basename(s) : ''; })
+    vscode.commands.registerCommand('mcshv.currentFileBasename', () => { const s = fTaskFile(); return s ? path.basename(s) : ''; }),
+    vscode.commands.registerCommand('mcshv.currentWorldview', () => fTaskWorldview())
   );
   // Open a McsHitp page BY CODE: prompt a Mcs-code prefilled with the current file's
   // code, resolve it to dir<Cat>/<code>.last.html (Hitp → dir<Cat>/dirHitp/…) and open

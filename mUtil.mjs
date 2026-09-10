@@ -133,6 +133,9 @@ function fWriteJsonArray(sFilIn, aIn) {
   }
   s = s + '  ' + JSON.stringify(aIn[aIn.length-1]) + '\n'
   s = s + ']'
+  // create the-parent-dir on demand, so a-fresh-worldview needs no pre-created dirs
+  let sDir = sFilIn.substring(0, sFilIn.lastIndexOf('/'))
+  if (sDir) moFs.mkdirSync(sDir, { recursive: true })
   moFs.writeFileSync(sFilIn, s)
 }
 
@@ -150,6 +153,9 @@ function fWriteJsonObject(sFilIn, oIn) {
     s = s +'  "' + k + '":"' +oIn[k] + '",\n'
   }
   s = s.substring(0, s.length-2) + '\n}'
+  // create the-parent-dir on demand, so a-fresh-worldview needs no pre-created dirs
+  let sDir = sFilIn.substring(0, sFilIn.lastIndexOf('/'))
+  if (sDir) moFs.mkdirSync(sDir, { recursive: true })
   moFs.writeFileSync(sFilIn, s)
 }
 

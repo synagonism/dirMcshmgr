@@ -1,0 +1,67 @@
+{
+    "chat.checkpoints.enabled": true,
+    "editor.showFoldingControls": "always",
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "htmlhint.ignoreGitignore": true,
+    "search.searchView.semanticSearchBehavior": "manual",
+    "vscode-edge-devtools.webhint": false,
+    "workbench.browser.enableChatTools": true,
+    "workbench.colorCustomizations": {
+        // This adds a border to the current find match
+        "editor.findMatchBorder": "#FFA500",  // Orange border
+        // Border for the word under the cursor (multi-cursor, find match, etc.)
+        // "editor.wordHighlightBorder": "#FFD700",  // Gold color, change as you like
+        // "editor.wordHighlightBackground": "#00000000", // Fully transparent background
+        // Border for text selected by mouse drag or Shift+arrow keys
+        // "editor.selectionHighlightBorder": "#FFA500", // Orange border
+        // "editor.selectionHighlightBackground": "#00000000",
+    },
+    "cSpell.words": [
+        "browserback",
+        "browserforward",
+        "chatagent",
+        "Cmdi",
+        "Cmnd",
+        "Cstm",
+        "dirtydiff",
+        "Engl",
+        "extensioneditor",
+        "Extn",
+        "Hitp",
+        "Insg",
+        "Insn",
+        "Intelli",
+        "Josip",
+        "Jsel",
+        "Mcsh",
+        "Mcsmgr",
+        "Medved",
+        "openagent",
+        "Overtype",
+        "quickchat",
+        "Scrollselect",
+        "Scrolltoggle",
+        "senso",
+        "showfind",
+        "Snpt",
+        "synag",
+        "treesticky",
+        "uncollapse",
+        "Usif",
+        "vscodekeybindings",
+        "webvieweditor",
+        "worktrees"
+    ],
+    "cSpell.ignoreWords": [
+        "Vscodeusifedtr",
+        "Vscodeusifedtrdsn",
+        "Vscodeusifedtrnam"
+    ],
+    "editor.tabSize": 2,
+    // Mcs-Visual: the local server (dirMcshmgr/server.mjs) serves web root C:\dirNodews
+    // on http://localhost, so the doc-root marker folder is "dirNodews" (not the old
+    // XAMPP "htdocs"). The extension maps <path-after-dirNodews> to the URL path.
+    "mcshv.docRootFolder": "dirNodews",
+    "mcshv.serverOrigin": "http://localhost",
+}

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../dirMcsh"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"chat.checkpoints.enabled": true,
+		"htmlhint.ignoreGitignore": true,
+		"search.searchView.semanticSearchBehavior": "manual",
+		"vscode-edge-devtools.webhint": false,
+		"workbench.browser.enableChatTools": true,
+		"workbench.colorCustomizations": {
+			"editor.findMatchBorder": "#FFA500"
+		}
+	}
+}
