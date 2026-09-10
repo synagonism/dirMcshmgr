@@ -78,7 +78,7 @@ function fActivate(context) {
   // ${command:mcshv.currentWorldview}: worldview ROOT of the current file — the
   // nearest ancestor folder holding a `dirNamidx` (every worldview has one). Lets a
   // task's cwd track the open file's worldview instead of ${workspaceFolder}, so the
-  // manager scripts (which read/write dirNamidx/, dirManager/, Mcsqnt.root.json
+  // manager scripts (which read/write dirNamidx/, dirManager/, Mcshqnt.root.json
   // relative to process.cwd()) work from any worldview in a multi-root workspace.
   const fTaskWorldview = () => {
     const s = fTaskFile();

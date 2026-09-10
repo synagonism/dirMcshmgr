@@ -229,7 +229,7 @@ let
   // Shared /dirMcshmgr/mMcsh2.js works for any worldview (dirMcs..., dirHitp...) without editing.
   // A SITE-ROOT page (e.g. /index.html) has a file as its first segment, not a worldview folder, so
   // it declares which worldview's name-indexes to use with <meta name="Mcsh-worldview" content="dirMcsh">.
-  // pathname "/dirMcsh/dirCor/McsCor000005.last.html" -> "dirMcsh"; "/index.html" -> meta -> "dirMcsh".
+  // pathname "/dirMcsh/dirCor/McshCor000005.last.html" -> "dirMcsh"; "/index.html" -> meta -> "dirMcsh".
   sWorldview = (function () {
     var sSeg = location.pathname.split('/').filter(Boolean)[0] || ''
     if (sSeg && sSeg.indexOf('.') === -1) return sSeg            // a real worldview folder in the URL
@@ -312,16 +312,16 @@ let fContainersInsert = function () {
   // localhost or online,
   sTabSearchOl =
     '<li>SEE ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McsCor000002.last.html#idMcsattNamcvn">name-notation--of-Mcs</a>.</li>' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McshCor000002.last.html#idMcsattNamcvn">name-notation--of-Mcs</a>.</li>' +
     '<li>TYPE a-name of ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McsCor000002.last.html#idOverview">a-senso-concept-Mcs</a> of ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959-WORLDVIEW</a>.</li>' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McshCor000002.last.html#idOverview">a-senso-concept-Mcs</a> of ' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959-WORLDVIEW</a>.</li>' +
     '<li>some important concepts are: "<strong>char</strong>", ' +
       '"<strong>javascript</strong>", "<strong>human-language</strong>", ' +
       '"<strong>chain-net</strong>", ...</li>' +
     '<li>senso-concept-searching demonstrates THE-POWER of senso-concepts.' +
       '<br>· compare them with Google-WORD-search and Wikipedia-TEXT-entries.</li>' +
-    '<li><a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a> works more than 30 years on senso-concepts. ' +
+    '<li><a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a> works more than 30 years on senso-concepts. ' +
       '<br>· <a class="clsPreview" href="' + sPathSite + '#idSupport">support him</a> to continue publishing.</li>' +
     '<li>this site uses 3 types of searching:' +
       '<br>- word--site-search from Menu,' +

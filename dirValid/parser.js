@@ -425,7 +425,7 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
  * OUTPUT: one cnptFile object (see header of this file).
  */
 export function fParseFile(sPathFile) {
-  // sPathFile: C:\xampp\htdocs\dirMcsh\dirCor\McsCor000015.last.html
+  // sPathFile: C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
   let sFileRaw;
   try {
     sFileRaw = fs.readFileSync(sPathFile, 'utf8');
@@ -433,7 +433,7 @@ export function fParseFile(sPathFile) {
     return {
       sType: 'cnptFile',
       sPathFile,
-      sNameFile: path.basename(sPathFile), // McsCor000015.last.html
+      sNameFile: path.basename(sPathFile), // McshCor000015.last.html
       sNameDir: path.basename(path.dirname(sPathFile)), // dirCor
       sError: e.message,
       oSectOverview: null,

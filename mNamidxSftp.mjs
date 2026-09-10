@@ -33,7 +33,7 @@
  *   5) it UPLOADS the-files
  *
  * INPUT: dirManager/NamidxOnly.txt
- * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcsqnt.json,
+ * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcshqnt.json,
            dirManager/SftpOnly.json,
  * RUN: node Mcsmgr/mNamidxSftp.mjs pwd
  *
@@ -116,7 +116,7 @@ function fNamidx(fileIn) {
     // files to upload, index, Mcs, Mcsqnt
     // we use a-set, because we add same files and want unique.
     aFileMcsIn,
-    // array with names of dirCor/McsCor000010.last.html to remove|add its names
+    // array with names of dirCor/McshCor000010.last.html to remove|add its names
     aLag,
     // array of languages ['lagALLL'] or ['lagElln','lagEngl',...]
     aLagALL = ['lagEngl','lagSngu','lagElln','lagZhon',
@@ -173,7 +173,7 @@ function fNamidx(fileIn) {
     // first file we want to upload
     oSetFileUp.add('dirNamidx/namidx.lagRoot.json');
     // also we want the-file with the-quantity of concepts.
-    oSetFileUp.add('Mcsqnt.root.json');
+    oSetFileUp.add('Mcshqnt.root.json');
   }
 
   /**
@@ -194,9 +194,9 @@ function fNamidx(fileIn) {
     // if sFileMcs ../index.html dirNamidx/abbreviation.html do nothing nnn
     if (!sFileMcs.startsWith('../')             // root-dir has no Mcs
         && !sFileMcs.startsWith("dirNamidx/")   // dirNamidx has no Mcs
-        && !sFileMcs.startsWith("Mcs000")       // dirMcsh has Mcsqnt.root.json
+        && !sFileMcs.startsWith("Mcsh000")       // dirMcsh has Mcshqnt.root.json
        ) {
-      oSetFileUp.add(sFileMcs.substring(0, sFileMcs.lastIndexOf('/')) + '/Mcsqnt.json')
+      oSetFileUp.add(sFileMcs.substring(0, sFileMcs.lastIndexOf('/')) + '/Mcshqnt.json')
     }
 
     // for EACH language
@@ -341,7 +341,7 @@ function fNamidx(fileIn) {
       }
     }
 
-    // update Mcsqnt.json
+    // update Mcshqnt.json
     // only on Mcs-files measure Mcs
     if (sFileMcs.indexOf('filMcs') >= 0
        || sFileMcs.indexOf('Mcs') >= 0
@@ -428,7 +428,7 @@ function fNamidx(fileIn) {
    *  it stores one name-Url in oFileIdx_ANamUrl
    *  using first character of name, for a-language
    * INPUT:
-   *  - aNUIn: ["name","dirNtr/McsNtr000007.last.html#idChmElrBoron"]
+   *  - aNUIn: ["name","dirNtr/McshNtr000007.last.html#idChmElrBoron"]
    *  - sLagIn: 'lagSngu','lagEngl','lagElln'
    */
   function fStoreNamUrlLag(aNUIn, sLagIn) {
@@ -870,7 +870,7 @@ function fNamidx(fileIn) {
   console.log(aSftp)
 
   /**
-   * DOING: updates the-quantity of Mcs of ONE Mcs-file[a] in Mcsqnt.json-files
+   * DOING: updates the-quantity of Mcs of ONE Mcs-file[a] in Mcshqnt.json-files
    *    AND all wholes of it[a]
    * INPUT: the-name of an-Mcs-file[a] and the-new quantity of Mcs in this[a] file.
    * OUTPUT: the-Mcsqnt-files affected
@@ -883,10 +883,10 @@ function fNamidx(fileIn) {
       sDir = sFileMcsIn.substring(0, sFileMcsIn.lastIndexOf('/')),
       sMcsqnt
 
-    if (sFileMcsIn.startsWith('Mcs000')) {
-      sMcsqnt = 'Mcsqnt.root.json'
+    if (sFileMcsIn.startsWith('Mcsh000')) {
+      sMcsqnt = 'Mcshqnt.root.json'
     } else {
-      sMcsqnt = sDir + '/Mcsqnt.json'
+      sMcsqnt = sDir + '/Mcshqnt.json'
     }
 
     aMcsqnt = JSON.parse(moFs.readFileSync(sMcsqnt))
@@ -936,7 +936,7 @@ function fNamidx(fileIn) {
       let
         aMcsqntRt,
         nMcsqntRtSum = 0,
-        sMcsqntRt = 'Mcsqnt.root.json'
+        sMcsqntRt = 'Mcshqnt.root.json'
 
       aMcsqntRt = JSON.parse(moFs.readFileSync(sMcsqntRt))
       for (n = 1; n < aMcsqntRt.length; n++) {

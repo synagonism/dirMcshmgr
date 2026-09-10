@@ -29,3 +29,11 @@ Here it is:
 Open the GUI anytime with `Win + R` → `taskschd.msc` → click **Task Scheduler Library**, and you'll see `DirNodewsServer` in the top list.
 
 The related files live in `C:\dirNodews`: [server.mjs](C:/dirNodews/server.mjs) (the server) and [start-server-hidden.vbs](C:/dirNodews/start-server-hidden.vbs) (the launcher the task calls).
+
+===========================================
+Field	Value
+Node.js version	newest offered (18/20/22)
+Application Mode	production
+Application Root	/httpdocs (the web root)
+Document Root	/httpdocs
+Application Startup File	dirMcshmgr/server.mjs

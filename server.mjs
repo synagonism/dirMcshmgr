@@ -10,8 +10,12 @@ import { fileURLToPath } from 'node:url';
 // --- config -----------------------------------------------------------------
 
 const sRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // dirMcshmgr's parent = web root C:\dirNodews
-const nPort = 80;
-const sHost = '127.0.0.1'; // localhost only
+// Port/host: local default stays 127.0.0.1:80 (unchanged for `node server.mjs`).
+// When hosted (Plesk/Passenger, a PaaS, etc.) PORT is provided in the environment,
+// and we bind 0.0.0.0 so the platform can reach the app. (Passenger also patches
+// .listen(), so honouring PORT here is belt-and-suspenders.)
+const nPort = process.env.PORT || 80;
+const sHost = process.env.HOST || (process.env.PORT ? '0.0.0.0' : '127.0.0.1');
 const bListDirs = true;    // show a directory listing when no index.html
 
 // Hit-counter (replaces the old PHPcount counter.php). Data files are one
@@ -55,6 +59,15 @@ const oMimeByExt = {
 
 // Extensions that should carry a utf-8 charset.
 const oCharsetExt = new Set(['html', 'htm', 'css', 'js', 'mjs', 'json', 'map', 'txt', 'md', 'xml', 'svg']);
+
+// CORS parity with the old root .htaccess (<Files> matched by basename): these
+// files may be fetched cross-origin by other origins via JS.
+const oCorsFiles = new Set(['manifest.json', 'bksk-index.html']);
+const oCorsHeaders = {
+	'Access-Control-Allow-Origin': '*',
+	'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding',
+	'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, DELETE, PUT',
+};
 
 // --- helpers ----------------------------------------------------------------
 
@@ -117,6 +130,9 @@ const fServeFile = (oReq, oRes, sPath, oStat, bHeadOnly) => {
 		&& (sE === 'js' || sE === 'mjs' || sE === 'css')) {
 		oHeaders['Cache-Control'] = 'no-cache, must-revalidate';
 	}
+
+	// CORS headers for the allow-listed files (parity with the old .htaccess).
+	if (oCorsFiles.has(path.basename(sPath))) Object.assign(oHeaders, oCorsHeaders);
 
 	oRes.writeHead(200, oHeaders);
 	if (bHeadOnly) { oRes.end(); return; }

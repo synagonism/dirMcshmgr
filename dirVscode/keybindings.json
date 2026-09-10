@@ -1189,7 +1189,7 @@
       "cursorUp",
       "cursorLineEnd",
       "editor.action.insertLineAfter",
-      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McsHmn000003.last.html#idOverview\">humnSngu</a>."},
+      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McshHmn000003.last.html#idOverview\">humnSngu</a>."},
       },
       {"command": "editor.action.insertSnippet",
         "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}]" }

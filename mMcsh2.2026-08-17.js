@@ -295,16 +295,16 @@ let fContainersInsert = function () {
   // localhost or online,
   sTabSearchOl =
     '<li>SEE ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McsCor000002.last.html#idMcsattNamcvn">name-notation--of-Mcs</a>.</li>' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McshCor000002.last.html#idMcsattNamcvn">name-notation--of-Mcs</a>.</li>' +
     '<li>TYPE a-name of ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McsCor000002.last.html#idOverview">a-senso-concept-Mcs</a> of ' +
-      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959-WORLDVIEW</a>.</li>' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirCor/McshCor000002.last.html#idOverview">a-senso-concept-Mcs</a> of ' +
+      '<a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959-WORLDVIEW</a>.</li>' +
     '<li>some important concepts are: "<strong>char</strong>", ' +
       '"<strong>javascript</strong>", "<strong>human-language</strong>", ' +
       '"<strong>chain-net</strong>", ...</li>' +
     '<li>senso-concept-searching demonstrates THE-POWER of senso-concepts.' +
       '<br>· compare them with Google-WORD-search and Wikipedia-TEXT-entries.</li>' +
-    '<li><a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a> works more than 30 years on senso-concepts. ' +
+    '<li><a class="clsPreview" href="' + sPathSite + 'dirMcsh/dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a> works more than 30 years on senso-concepts. ' +
       '<br>· <a class="clsPreview" href="' + sPathSite + '#idSupport">support him</a> to continue publishing.</li>' +
     '<li>this site uses 3 types of searching:' +
       '<br>- word--site-search from Menu,' +
@@ -1095,27 +1095,27 @@ let fContainersInsert = function () {
   oEltCmdLagApp.appendChild(oEltCmdLagAppUl2)
   const oEltCmdLagAppSwcr = document.createElement('li')
   oEltCmdLagAppSwcr.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000010.last.html#idL0014wrdcrtr">SinaguWordCreator</a>'
+    'dirMcsh/dirLag/McshLag000010.last.html#idL0014wrdcrtr">SinaguWordCreator</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdLagAppSwcr)
   const oEltCmdWebAppEnff = document.createElement('li')
   oEltCmdWebAppEnff.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000011.last.html#idLEnglnouformfndr">EnglishNoun FormFinder</a>'
+    'dirMcsh/dirLag/McshLag000011.last.html#idLEnglnouformfndr">EnglishNoun FormFinder</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdWebAppEnff)
   const oEltCmdWebAppEvff = document.createElement('li')
   oEltCmdWebAppEvff.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000011.last.html#idLEnglverbfmfd">EnglishVerb FormFinder</a>'
+    'dirMcsh/dirLag/McshLag000011.last.html#idLEnglverbfmfd">EnglishVerb FormFinder</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdWebAppEvff)
   const oEltCmdWebAppGnmf = document.createElement('li')
   oEltCmdWebAppGnmf.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000020.last.html#idLEllnnounmbrfdr">GreekNoun MemberFinder</a>'
+    'dirMcsh/dirLag/McshLag000020.last.html#idLEllnnounmbrfdr">GreekNoun MemberFinder</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdWebAppGnmf)
   const oEltCmdWebAppGwpn = document.createElement('li')
   oEltCmdWebAppGwpn.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000020.last.html#idLEllnwrdspch">Greek WordPronunciation</a>'
+    'dirMcsh/dirLag/McshLag000020.last.html#idLEllnwrdspch">Greek WordPronunciation</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdWebAppGwpn)
   const oEltCmdWebAppGawp = document.createElement('li')
   oEltCmdWebAppGawp.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000027.last.html#idLEllawordspch">GreekAncient WordPronunciation</a>'
+    'dirMcsh/dirLag/McshLag000027.last.html#idLEllawordspch">GreekAncient WordPronunciation</a>'
   oEltCmdLagAppUl2.appendChild(oEltCmdWebAppGawp)
   const oEltCmdWebAppGwca = document.createElement('li')
   oEltCmdWebAppGwca.innerHTML = '<a class="clsPreview" href="' + sPathSite +
@@ -1128,12 +1128,12 @@ let fContainersInsert = function () {
 
   const oEltCmdWebAppCrNs = document.createElement('li')
   oEltCmdWebAppCrNs.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirCor/McsCor000010.last.html#idQntNbrnmrlsysdthc">Numerral Converter</a>'
+    'dirMcsh/dirCor/McshCor000010.last.html#idQntNbrnmrlsysdthc">Numerral Converter</a>'
   oEltCmdWebAppUl.appendChild(oEltCmdWebAppCrNs)
 
   const oEltCmdWebAppCCtC = document.createElement('li')
   oEltCmdWebAppCCtC.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirLag/McsLag000006.last.html#idCharUcdstdcpfdr">Char⇔Codepoint Converter</a>'
+    'dirMcsh/dirLag/McshLag000006.last.html#idCharUcdstdcpfdr">Char⇔Codepoint Converter</a>'
   oEltCmdWebAppUl.appendChild(oEltCmdWebAppCCtC)
 
   const oEltCmdWebAppCrcy = document.createElement('li')
@@ -1143,52 +1143,52 @@ let fContainersInsert = function () {
   oEltCmdWebAppCrcy.appendChild(oEltCmdWebAppCrcyUl2)
   const oEltCmdWebAppBbgn = document.createElement('li')
   oEltCmdWebAppBbgn.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000038.last.html#idBgraeconevu">Euro⇔BulgariaLev-BGN</a>'
+    'dirMcsh/dirStn/McshStn000038.last.html#idBgraeconevu">Euro⇔BulgariaLev-BGN</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppBbgn)
   const oEltCmdWebAppKhma = document.createElement('li')
   oEltCmdWebAppKhma.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000050.last.html#idKhmaeconevu">Euro⇔Cambodia-KHR</a>'
+    'dirMcsh/dirStn/McshStn000050.last.html#idKhmaeconevu">Euro⇔Cambodia-KHR</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppKhma)
   const oEltCmdWebAppCcny = document.createElement('li')
   oEltCmdWebAppCcny.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000031.last.html#idChnaEconevu">Euro⇔ChinaRenMinBi-CNY</a>'
+    'dirMcsh/dirStn/McshStn000031.last.html#idChnaEconevu">Euro⇔ChinaRenMinBi-CNY</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppCcny)
   const oEltCmdWebAppEtGd = document.createElement('li')
   oEltCmdWebAppEtGd.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000020.last.html#idEusaEconEurevuapp">Euro⇔GreeceDrachmas</a>'
+    'dirMcsh/dirStn/McshStn000020.last.html#idEusaEconEurevuapp">Euro⇔GreeceDrachmas</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppEtGd)
   const oEltCmdWebAppJpna = document.createElement('li')
   oEltCmdWebAppJpna.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000048.last.html#idJpnaeconevu">Euro⇔Japan-JPY</a>'
+    'dirMcsh/dirStn/McshStn000048.last.html#idJpnaeconevu">Euro⇔Japan-JPY</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppJpna)
   const oEltCmdWebAppSmkd = document.createElement('li')
   oEltCmdWebAppSmkd.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000040.last.html#idNmkdeconevu">Euro⇔NorthMacedonia-MKD</a>'
+    'dirMcsh/dirStn/McshStn000040.last.html#idNmkdeconevu">Euro⇔NorthMacedonia-MKD</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppSmkd)
   const oEltCmdWebAppRrub = document.createElement('li')
   oEltCmdWebAppRrub.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000043.last.html#idRusaeconevu">Euro⇔Russia-RUB</a>'
+    'dirMcsh/dirStn/McshStn000043.last.html#idRusaeconevu">Euro⇔Russia-RUB</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppRrub)
   const oEltCmdWebAppSgpr = document.createElement('li')
   oEltCmdWebAppSgpr.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000051.last.html#idSgpreconevu">Euro⇔Singapore-SGD</a>'
+    'dirMcsh/dirStn/McshStn000051.last.html#idSgpreconevu">Euro⇔Singapore-SGD</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppSgpr)
   const oEltCmdWebAppKors = document.createElement('li')
   oEltCmdWebAppKors.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000049.last.html#idKorseconevu">Euro⇔SouthKorea-KRW</a>'
+    'dirMcsh/dirStn/McshStn000049.last.html#idKorseconevu">Euro⇔SouthKorea-KRW</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppKors)
   const oEltCmdWebAppTtry = document.createElement('li')
   oEltCmdWebAppTtry.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000033.last.html#idTurkeconevu">Euro⇔Turkey-TRY</a>'
+    'dirMcsh/dirStn/McshStn000033.last.html#idTurkeconevu">Euro⇔Turkey-TRY</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppTtry)
   const oEltCmdWebAppVvnd = document.createElement('li')
   oEltCmdWebAppVvnd.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirStn/McsStn000034.last.html#idVtnmeconevu">Euro⇔Vietnam-VND</a>'
+    'dirMcsh/dirStn/McshStn000034.last.html#idVtnmeconevu">Euro⇔Vietnam-VND</a>'
   oEltCmdWebAppCrcyUl2.appendChild(oEltCmdWebAppVvnd)
   const oEltCmdWebAppTock = document.createElement('li')
 
   oEltCmdWebAppTock.innerHTML = '<a class="clsPreview" href="' + sPathSite +
-    'dirMcsh/dirCor/McsCor000002.last.html#idMcsmToc">TableOfContents ChromeExtension</a>'
+    'dirMcsh/dirCor/McshCor000002.last.html#idMcsmToc">TableOfContents ChromeExtension</a>'
   oEltCmdWebAppUl.appendChild(oEltCmdWebAppTock)
 
   // command Esc

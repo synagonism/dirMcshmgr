@@ -38,7 +38,7 @@ const
     'mLagEngl.js.1-0-0.2025-11-02: fFindNounForms',
     'mLagEngl.js.0-1-0.2021-11-22: creation'
   ],
-  sFileEngl = omMcsh.sPathSite + 'dirMcsh/dirLag/McsLag000011.last.html',
+  sFileEngl = omMcsh.sPathSite + 'dirMcsh/dirLag/McshLag000011.last.html',
   aIrregulars = []
 
 /**

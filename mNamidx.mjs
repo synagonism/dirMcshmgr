@@ -33,7 +33,7 @@
  *   4) it computes the-number of concepts.
  *   5) it uploads the-files
  * INPUT: dirManager/namidx.txt
- * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcsqnt.json, dirManager/sftp.json,
+ * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcshqnt.json, dirManager/sftp.json,
  *
  *
  * PROBLEM:
@@ -89,7 +89,7 @@ function fNamidx(fileIn, fSftpIn) {
     // files to upload, index, Mcs, Mcsqnt
     // we use a-set, because we add same files and want unique.
     aFileMcsIn,
-    // array with names of dirCor/McsCor000010.last.html to remove|add its names
+    // array with names of dirCor/McshCor000010.last.html to remove|add its names
     aLag,
     // array of languages ['lagALLL']
     //aLagALL = ['lagEngl','lagElln','lagZhon','lagDeut','lagFrac'],
@@ -149,7 +149,7 @@ function fNamidx(fileIn, fSftpIn) {
     // first file we want to upload
     oSetFileUp.add('dirNamidx/namidx.lagRoot.json');
     // also we want the-file with the-quantity of concepts (skip for Hitp-only runs).
-    if (bAnyMcs) oSetFileUp.add('Mcsqnt.root.json');
+    if (bAnyMcs) oSetFileUp.add('Mcshqnt.root.json');
   }
 
   /**
@@ -171,10 +171,10 @@ function fNamidx(fileIn, fSftpIn) {
     // if sFileMcs ../index.html dirNamidx/abbreviation.html do nothing nnn
     if (!sFileMcs.startsWith('../')             // root-dir has no Mcs
         && !sFileMcs.startsWith("dirNamidx/")   // dirNamidx has no Mcs
-        && !sFileMcs.startsWith("Mcs000")       // dirMcsh has Mcsqnt.root.json
-        && !bIsHitp                             // Hitp pages have no Mcsqnt.json
+        && !sFileMcs.startsWith("Mcsh000")       // dirMcsh has Mcshqnt.root.json
+        && !bIsHitp                             // Hitp pages have no Mcshqnt.json
        ) {
-      oSetFileUp.add(sFileMcs.substring(0, sFileMcs.lastIndexOf('/')) + '/Mcsqnt.json')
+      oSetFileUp.add(sFileMcs.substring(0, sFileMcs.lastIndexOf('/')) + '/Mcshqnt.json')
     }
 
     // for EACH language
@@ -329,7 +329,7 @@ function fNamidx(fileIn, fSftpIn) {
       }
     }
 
-    // update Mcsqnt.json
+    // update Mcshqnt.json
     // only on Mcs-files measure Mcs; Hitp pages are NOT measured
     if (!bIsHitp
        && (sFileMcs.indexOf('filMcs') >= 0
@@ -416,7 +416,7 @@ function fNamidx(fileIn, fSftpIn) {
    *  it stores one name-Url in oFileIdx_ANamUrl
    *  using first character of name, for a-language
    * INPUT:
-   *  - aNUIn: ["name","dirNtr/McsNtr000007.last.html#idChmElrBoron"]
+   *  - aNUIn: ["name","dirNtr/McshNtr000007.last.html#idChmElrBoron"]
    *  - sLagIn: 'lagSngu','lagEngl','lagElln'
    */
   function fStoreNamUrlLag(aNUIn, sLagIn) {
@@ -861,7 +861,7 @@ function fNamidx(fileIn, fSftpIn) {
   console.log(aFileMcs_QntMcs)
 
   /**
-   * DOING: updates the-quantity of Mcs of ONE Mcs-file[a] in Mcsqnt.json-files
+   * DOING: updates the-quantity of Mcs of ONE Mcs-file[a] in Mcshqnt.json-files
    *    AND all wholes of it[a]
    * INPUT: the-name of an-Mcs-file[a] and the-new quantity of Mcs in this[a] file.
    * OUTPUT: the-Mcsqnt-files affected
@@ -874,10 +874,10 @@ function fNamidx(fileIn, fSftpIn) {
       sDir = sFileMcsIn.substring(0, sFileMcsIn.lastIndexOf('/')),
       sMcsqnt
 
-    if (sFileMcsIn.startsWith('Mcs000')) {
-      sMcsqnt = 'Mcsqnt.root.json'
+    if (sFileMcsIn.startsWith('Mcsh000')) {
+      sMcsqnt = 'Mcshqnt.root.json'
     } else {
-      sMcsqnt = sDir + '/Mcsqnt.json'
+      sMcsqnt = sDir + '/Mcshqnt.json'
     }
 
     // read the-Mcsqnt-file, or start a-meta-only skeleton on demand (fresh worldview)
@@ -931,9 +931,9 @@ function fNamidx(fileIn, fSftpIn) {
         aMcsqntRt,
         bFound = false,
         nMcsqntRtSum = 0,
-        sMcsqntRt = 'Mcsqnt.root.json'
+        sMcsqntRt = 'Mcshqnt.root.json'
 
-      // read Mcsqnt.root.json, or start a-meta-only skeleton on demand (fresh worldview)
+      // read Mcshqnt.root.json, or start a-meta-only skeleton on demand (fresh worldview)
       aMcsqntRt = moFs.existsSync(sMcsqntRt)
         ? JSON.parse(moFs.readFileSync(sMcsqntRt))
         : [[';qntAGG', 0, fDateYMD()]]

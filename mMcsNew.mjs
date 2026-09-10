@@ -136,10 +136,10 @@ aPages = JSON.parse(moFs.readFileSync('../dirMcsh/SitePagesArr.json'))
 // find file-name
 for (n = 0; n < aPages.length; n++) {
   //aPages contains the-counter files
-  if (new RegExp('^Mcs'+sDirShort+'[0-9]+\.txt').test(aPages[n][0])) nFile = nFile + 1
+  if (new RegExp('^Mcsh'+sDirShort+'[0-9]+\.txt').test(aPages[n][0])) nFile = nFile + 1
 }
 // first file-number 000000
-sNameFileNaked = 'Mcs' + sDirShort + nFile.toString().padStart(6, '0')
+sNameFileNaked = 'Mcsh' + sDirShort + nFile.toString().padStart(6, '0')
 sNameFile = sNameFileNaked + '.last.html'
 
 //if file exist exit
@@ -219,7 +219,7 @@ s =
   '    <a class="clsHide" href="#' + sNameId + 'evgH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'evgdsn">description::\n' +
   '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
-  '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McsTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
+  '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McshTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'evgdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'evgnam">name::\n' +
   '    <br>* McsEngl.evoluting-of-' + sNameFormal + ',\n' +
@@ -261,7 +261,7 @@ s =
   '    <a class="clsHide" href="#' + sNameId + 'wptnam"></a></p>\n' +
   '  <p id="' + sNameId + 'wtr">whole-tree-of-' + sNameFormal + '::\n' +
   '    <br>* ,\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McsCor000003.last.html#idEntwtr">Sympan</a>.\n' +
+  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntwtr">Sympan</a>.\n' +
   '    <br>* McsEngl.' + sNameFormal + '\'whole-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wtr"></a></p>\n' +
   '  <p id="' + sNameId + 'ptr">part-tree-of-' + sNameFormal + '::\n' +
@@ -283,7 +283,7 @@ s =
   '    <a class="clsHide" href="#' + sNameId + 'gstnam"></a></p>\n' +
   '  <p id="' + sNameId + 'gtr">generic-tree-of-' + sNameFormal + '::\n' +
   '    <br>* ,\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McsCor000003.last.html#idOverview">entity</a>.\n' +
+  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idOverview">entity</a>.\n' +
   '    <br>* McsEngl.' + sNameFormal + '\'generic-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gtr"></a></p>\n' +
   '  <p id="' + sNameId + 'str">specific-tree-of-' + sNameFormal + '::\n' +
@@ -308,25 +308,25 @@ s = s +
   '  <!-- the content of page-path paragraph is displayed as it is on top of toc -->\n' +
   '  <p id="idMetaWebpage_path"><span class="clsColorGreen">page-wholepath</span>:\n' +
   '    <a class="clsPreview" href="../../index.html#idOverview">synagonism.net</a> /\n' +
-  '    <a class="clsPreview" href="../Mcs000000.last.html#idOverview">worldviewSngo</a> /\n' +
-  '    <a class="clsPreview" href="../' + sDir + '/Mcs' + sDirShort + '000000.last.html#idOverview">' + sDir + '</a> /\n' +
+  '    <a class="clsPreview" href="../Mcsh000000.last.html#idOverview">worldviewSngo</a> /\n' +
+  '    <a class="clsPreview" href="../' + sDir + '/Mcsh' + sDirShort + '000000.last.html#idOverview">' + sDir + '</a> /\n' +
   '    ' + sNameFormal + '\n' +
   '    </p>\n' +
   '  <p id="idMetaP1">SEARCH::\n' +
   '    <br>· this page uses \'<span class="clsColorRed">locator-names</span>\', names that when you find them, you find the-LOCATION of the-concept they denote.\n' +
   '    <br>⊛ <strong>GLOBAL-SEARCH</strong>:\n' +
   '    <br>· clicking on <span class="clsColorGreenBg">the-green-BAR of a-page</span> you have access to the-global--locator-names of my-site.\n' +
-  '    <br>· use the-prefix \'<span class="clsColorRed">' + sNameFormal + '</span>\' for <a class="clsPreview" href="../dirCor/McsCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sNameInformal + '\'.\n' +
+  '    <br>· use the-prefix \'<span class="clsColorRed">' + sNameFormal + '</span>\' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sNameInformal + '\'.\n' +
   '    <br>⊛ <strong>LOCAL-SEARCH</strong>:\n' +
   '    <br>· TYPE <span class="clsColorRed">CTRL+F "McsLang.words-of-concept\'s-name"</span>, to go to the-LOCATION of the-concept.\n' +
   '    <br>· a-preview of the-description of a-global-name makes reading fast.\n' +
   '    <a class="clsHide" href="#idMetaP1"></a></p>\n' +
   '  <p id="idFooterP1">footer::\n' +
-  '    <br>• author: <a class="clsPreview" href="../dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a>\n' +
+  '    <br>• author: <a class="clsPreview" href="../dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a>\n' +
   '    <br>• email:\n' +
   '    <br> &nbsp;<img src="../../dirRsc/dirImg/mail.png" alt="mail">\n' +
   '    <br>• edit on github: https://github.com/synagonism/dirMcsh/blob/master/' + sDir +'/' + sNameFile + ',\n' +
-  '    <br>• comments on <a class="clsPreview" href="../' + sDir + '/Mcs' + sDirShort + '000000.last.html#idComment">Disqus</a>,\n' +
+  '    <br>• comments on <a class="clsPreview" href="../' + sDir + '/Mcsh' + sDirShort + '000000.last.html#idComment">Disqus</a>,\n' +
   '    <br>• twitter: <a href="https://twitter.com/synagonism">@synagonism</a>,\n' +
   '    <a class="clsHide" href="#idFooterP1"></a></p>\n' +
   '  <p id="idMetaVersion">webpage-versions::\n' +

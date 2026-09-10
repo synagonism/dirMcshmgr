@@ -38,7 +38,7 @@ const
     'mLagSngu.js.0-2-0.2025-11-09: fCreateNewWord',
     'mLagSngu.js.0-1-0.2025-11-08: creation'
   ],
-  sFileSngu = omMcsh.sPathSite + 'dirMcsh/dirLag/McsLag000010.last.html',
+  sFileSngu = omMcsh.sPathSite + 'dirMcsh/dirLag/McshLag000010.last.html',
   aVowl = ['a','e','o','i','u'],
   aCons = ['b','v','d','dh','j','z','g','y','n','l','p','f','t','th','c','s','k','h','m','r'],
   aSylb = [

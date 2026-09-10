@@ -29,7 +29,7 @@
  *   1) it reads the-Wrdidx.txt, and creates the-word-concepts for the-words in.
  *   2) it name-indexes the-new files.
  * INPUT: Wrdidx.txt
- * OUTPUT: dirWrdidx/dirLang/McsWrdidxLangX.last.html, McsWrdidxLangX.txt aPages,
+ * OUTPUT: dirWrdidx/dirLang/McshWrdidxLangX.last.html, McshWrdidxLangX.txt aPages,
  *         NamidxAgg.txt, SftpAgg.json,
  *
  * RUN: node Mcsmgr/mWrdidxOnly.mjs alone 
@@ -114,11 +114,11 @@ function fWrdidx(asWordsIn, sMethodIn) {
     // array with words to index
     sMethod = sMethodIn,
     sLag = sMethod.substring(4, 8),
-    aaRootWrdidx_Idx = JSON.parse(moFs.readFileSync('dirWrdidx/McsWrdidx_0.json')),
-    // [['McsWrdidxEngl01ei','A']}
+    aaRootWrdidx_Idx = JSON.parse(moFs.readFileSync('dirWrdidx/McshWrdidx_0.json')),
+    // [['McshWrdidxEngl01ei','A']}
     oWrdidxMcs_Idx = {},
     // holds the-names of Wrdidx-files and the related indexes
-    // {McsWrdidxEngl01ei:'A|a', McsWrdidxZhon024:'13312..14000'}
+    // {McshWrdidxEngl01ei:'A|a', McshWrdidxZhon024:'13312..14000'}
     sLn,
     n
 
@@ -137,7 +137,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
     let
       aWordinfo,
       sWord,
-      aWrdidxMcs_Idx, //["McsWrdidxElln02vita","Β|β"]
+      aWrdidxMcs_Idx, //["McshWrdidxElln02vita","Β|β"]
       sWrdidxMcs,
       sWrdidxMcsFull,
       sIndex
@@ -168,15 +168,15 @@ function fWrdidx(asWordsIn, sMethodIn) {
   })
 
   /**
-   * DOING: it creates McsWrdidx-file
-   * INPTUT: sWiMcsFullIn='dirWrdidx/dirLagElln/McsWrdidxElln01alfa_1.last.html'
+   * DOING: it creates McshWrdidx-file
+   * INPTUT: sWiMcsFullIn='dirWrdidx/dirLagElln/McshWrdidxElln01alfa_1.last.html'
    */
   function fCreateWrdidxMcs(sWiMcsFullIn, sIndexIn) {
     let
       n,
       s,
       sName = sWiMcsFullIn.substring(sWiMcsFullIn.lastIndexOf('/')+1, sWiMcsFullIn.indexOf('.')),
-      sFile = sName + '.last.html', //McsWrdidxElln01alfa_1.last.html
+      sFile = sName + '.last.html', //McshWrdidxElln01alfa_1.last.html
       sLag =  sWiMcsFullIn.substring(16, sWiMcsFullIn.lastIndexOf('/')), //Elln
       sId = sName.substring(9), //Elln01alfa_1
       aPages
@@ -213,16 +213,16 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>* McsEngl.' + sName + ',\n' +
       '    <br>* McsEngl.wordary' + sLag +'\'' +sIndexIn +',\n' +
       '    <a class="clsHide" href="#idName"></a></p>\n' +
-      '  <p id="idOverviewwtr">whole-tree-of-McsWrdidxElln01alfa::\n'
+      '  <p id="idOverviewwtr">whole-tree-of-McshWrdidxElln01alfa::\n'
     if (sLag === 'Elln') {
       s = s +
-      '    <br>* <a class="clsPreview" href="../../dirLag/McsLag000025.last.html#idOverview">wordaryElln</a>,\n'
+      '    <br>* <a class="clsPreview" href="../../dirLag/McshLag000025.last.html#idOverview">wordaryElln</a>,\n'
     } else if (sLag === 'Engl') {
       s = s +
-      '    <br>* <a class="clsPreview" href="../../dirLag/McsLag000024.last.html#idOverview">wordaryEngl</a>,\n'
+      '    <br>* <a class="clsPreview" href="../../dirLag/McshLag000024.last.html#idOverview">wordaryEngl</a>,\n'
     } else if (sLag === 'Zhon') {
       s = s +
-      '    <br>* <a class="clsPreview" href="../../dirLag/McsLag000023.last.html#idOverview">wordaryZhon</a>,\n'
+      '    <br>* <a class="clsPreview" href="../../dirLag/McshLag000023.last.html#idOverview">wordaryZhon</a>,\n'
     } else {
       s = s +
       '    <br>* <a class="clsPreview" href="../../dirLag/McsLag00007.last.html#idLHmnmwrdIdx">wordary</a>,\n'
@@ -247,7 +247,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '  <!-- the content of page-path paragraph is displayed as it is on top of toc -->\n' +
       '  <p id="idMetaWebpage_path"><span class="clsB clsColorGreen">page-wholepath</span>:\n' +
       '    <a class="clsPreview" href="../../../#idOverview">synagonism.net</a> /\n' +
-      '    <a class="clsPreview" href="../../Mcs000000.last.html#idOverview">worldviewSngo</a> /\n' +
+      '    <a class="clsPreview" href="../../Mcsh000000.last.html#idOverview">worldviewSngo</a> /\n' +
       '    dirWrdidx /\n' +
       '    dirLag' + sLag + ' /\n' +
       '    ' + sName + '\n' +
@@ -256,17 +256,17 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>· this page uses \'<span class="clsColorRed">locator-names</span>\', names that when you find them, you find the-LOCATION of the-concept they denote.\n' +
       '    <br>⊛ <strong>GLOBAL-SEARCH</strong>:\n' +
       '    <br>· clicking on <span class="clsColorGreenBg">the-green-BAR of a-page</span> you have access to the-global--locator-names of my-site.\n' +
-      '    <br>· use the-prefix \'<span class="clsColorRed">word' + sLag + '</span>\' for <a class="clsPreview" href="../dirCor/McsCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sName + '\'.\n' +
+      '    <br>· use the-prefix \'<span class="clsColorRed">word' + sLag + '</span>\' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sName + '\'.\n' +
       '    <br>⊛ <strong>LOCAL-SEARCH</strong>:\n' +
       '    <br>· TYPE <span class="clsColorRed">CTRL+F "McsLang.words-of-concept\'s-name"</span>, to go to the-LOCATION of the-concept.\n' +
       '    <br>· a-preview of the-description of a-global-name makes reading fast.\n' +
       '    <a class="clsHide" href="#idMetaP1"></a></p>\n' +
       '  <p id="idFooterP1">footer::\n' +
-      '    <br>• author: <a class="clsPreview" href="../../dirHmn/McsHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a>\n' +
+      '    <br>• author: <a class="clsPreview" href="../../dirHmn/McshHmn000003.last.html#idOverview">Kaseluris.Nikos.1959</a>\n' +
       '    <br>• email:\n' +
       '    <br> &nbsp;<img src="../../../dirRsc/dirImg/mail.png">\n' +
       '    <br>• edit on github: https://github.com/synagonism/McsWorld/blob/master/dirMcsh/' + sWiMcsFullIn + ',\n' +
-      '    <br>• comments on <a class="clsPreview" href="../../dirLag/McsLag000015.last.html#idOverview">Disqus</a>,\n' +
+      '    <br>• comments on <a class="clsPreview" href="../../dirLag/McshLag000015.last.html#idOverview">Disqus</a>,\n' +
       '    <br>• twitter: <a href="https://twitter.com/synagonism">@synagonism</a>,\n' +
       '    <a class="clsHide" href="#idFooterP1"></a></p>\n' +
       '  <p id="idMetaVersion">webpage-versions::\n' +
@@ -303,7 +303,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
   /**
    * DOING: it stores a-word-info in a-Wrdidx-file
    * INPUT:
-   *    - sWrdidxMcsFullIn: dirWrdinf/dirLagElln/McsWrdidxElln02vita.last.html
+   *    - sWrdidxMcsFullIn: dirWrdinf/dirLagElln/McshWrdidxElln02vita.last.html
    *    - aWrdinfIn: ['βουνό-το','  p id="idWrdEllnvunó-to"><span...']
    */
   function fStoreWordinfo(sWrdidxMcsFullIn, aWrdinfIn) {
@@ -388,7 +388,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       aFile1[24] = '    <br>× quantity of words: ' + aWords.length
       //set version ONCE per process
       if (!oSetFileUp.has(sWrdidxMcsFullIn)) {
-        //  <title>Mcs.McsWrdidxElln01alfa_2-(0-1-0.2022-02-26) α..αμ</title>
+        //  <title>Mcs.McshWrdidxElln01alfa_2-(0-1-0.2022-02-26) α..αμ</title>
         let
           s5 = aFile1[5],
           sT1 = s5.substring(0, s5.indexOf('(')+1),
@@ -765,7 +765,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
     '    <br>× pos: ' + oCase.pos + '\n' +
     '    <br>× gender: ' + oCase.gender + '\n' +
     '    <br>× members: ' + oCase.members + '\n' +
-    '    <br>× inflection-method: <a class="clsPreview" href="../../dirLag/McsLag000020.last.html#idLEllncase' 
+    '    <br>× inflection-method: <a class="clsPreview" href="../../dirLag/McshLag000020.last.html#idLEllncase' 
             + oCase.method.substring(8, oCase.method.indexOf('-')) + '">' + oCase.method + '</a>\n' +
     '    <br>× el.wiktionary.org: <a href="https://el.wiktionary.org/wiki/' + oCase.Baseform + '">' + oCase.Baseform + '</a>\n' +
     '    <a class="clsHide" href="#idWrd' +sLag + sPhonemaPreview + '"></a></p>'
@@ -776,8 +776,8 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
 
 /**
  * DOING: creates object {Wrdidx: index} from [[Wrdidx,idx,quantity]]
- * INPUT: aIn = [['McsWrdidxEngl01ei','A',1234]]
- * OUTPUT: {McsWrdidxEngl01ei:'A'}
+ * INPUT: aIn = [['McshWrdidxEngl01ei','A',1234]]
+ * OUTPUT: {McshWrdidxEngl01ei:'A'}
  */
 function fCreateOWrdidxMcs_Index(aIn) {
   let
@@ -797,8 +797,8 @@ function fCreateOWrdidxMcs_Index(aIn) {
  * INPUT:
  *  - sWordIn: 'νύφη/nífi/'
  *  - sLagIn: 'Elln'
- *  - aaWrdidxIdxIn: [['McsWrdidxX','X']]
- * OUTPUT: ['McsWrdidxEngl18ar.last.html', 'R|r']
+ *  - aaWrdidxIdxIn: [['McshWrdidxX','X']]
+ * OUTPUT: ['McshWrdidxEngl18ar.last.html', 'R|r']
  */
 function fFindWrdidxMcs(sWordIn, sLagIn, aaWrdidxIdxIn) {
   let
@@ -823,10 +823,10 @@ function fFindWrdidxMcs(sWordIn, sLagIn, aaWrdidxIdxIn) {
   // choose root-char or rest
   sCharWord = sWordIn[0].substring(0,1)
   oWrdidxMcs_Idx = fCreateOWrdidxMcs_Index(aaWrdidxIdxIn)
-  // {McsWrdidxEngl01ei:'A'}
+  // {McshWrdidxEngl01ei:'A'}
 
   for (sWrdidx in oWrdidxMcs_Idx) {
-    if (sWrdidx.startsWith('McsWrdidx'+sLagIn)) {
+    if (sWrdidx.startsWith('McshWrdidx'+sLagIn)) {
       sIndex = oWrdidxMcs_Idx[sWrdidx]
 
       if (sIndex.indexOf('..') < 0) {
@@ -886,7 +886,7 @@ function fFindWrdidxMcs(sWordIn, sLagIn, aaWrdidxIdxIn) {
       }
     }
     // in case where rest-file is reference ('_0')
-    if (sWrdidx.startsWith('McsWrdidx' + sLagIn + '00'))
+    if (sWrdidx.startsWith('McshWrdidx' + sLagIn + '00'))
       sWrdidxRest = sWrdidx
   }
   if (bRest) {

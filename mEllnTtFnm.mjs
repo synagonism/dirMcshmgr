@@ -32,7 +32,7 @@
  *   4) it computes the-number of concepts.
  *   5) it uploads the-files
  * INPUT: wrdidx.txt
- * OUTPUT: dirWrdidx/dirLang/wrdidx.lagLangX.last.html, wrdidx.lagRoot.json, Mcsqnt.json, sftp.json,
+ * OUTPUT: dirWrdidx/dirLang/wrdidx.lagLangX.last.html, wrdidx.lagRoot.json, Mcshqnt.json, sftp.json,
  *
  * RUN: node Mcsmgr/mEllnTtfm.mjs pwd ALONE|ANYTHING
  *

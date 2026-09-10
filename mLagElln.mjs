@@ -40,7 +40,7 @@ const
     'mLagElln.js.0-2-0.2022-02-26: member-phonema',
     'mLagElln.js.0-1-0.2022-01-15: creation'
   ],
-  sFileElln = 'dirLag/McsLag000020.last.html'
+  sFileElln = 'dirLag/McshLag000020.last.html'
 
 let
   aVerbEllnRegularNo = [],
@@ -67,7 +67,7 @@ function fFindVerbEllnRegularNo () {
 }
 
 /**
- * DOING: it finds info of a-Greek-case FROM example in dirLag/McsLag000020.last.html
+ * DOING: it finds info of a-Greek-case FROM example in dirLag/McshLag000020.last.html
  * INPUT:
  *  - sWordIn = ξαδέρφη-η/ksadhérfi-i/, Ανθοχώρι-το/anthohóri-to-s/(sinizisi on members)
  *  - sMethodIn = caseEllnMnG2XiT2SeuNucF2Bo

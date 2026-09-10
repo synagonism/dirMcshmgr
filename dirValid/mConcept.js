@@ -51,19 +51,19 @@ const oPath = {
   }
 };
 
-let oFileIdRelaCnpt = {}; //{'dirTchInf/McsTchInf000010.last.html#idLjstol': {}}
+let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}}
 
 
 /**
  * DOING: parses a-file-concept and returns a-JS-object of it.
- * INPUT: one file-concept given its relative-path (dirCor/McsCor000015.last.html).
+ * INPUT: one file-concept given its relative-path (dirCor/McshCor000015.last.html).
  * OUTPUT: one file-concept-object:
  * {
  *   sType,          // 'cnptFile',
- *   sNameFile,      // McsCor000015.last.html
+ *   sNameFile,      // McshCor000015.last.html
  *   sNameDir,       // dirCor
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McsCor000015.last.html
- *   sNameIdRela,    // dirCor/McsCor000015.last.html
+ *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
+ *   sNameIdRela,    // dirCor/McshCor000015.last.html
  *   sNameTitle,     // text from <title> (name part only)
  *   sNameFormal,    // the English formal-name
  *   sVersion,       // e.g. "McsCor000015.1-4-0.2026-03-30"
@@ -95,7 +95,7 @@ async function fReadMcshFile(sNameIdRela) {
   } catch (e) {
     return {
       sType: 'cnptFile',
-      sNameIdAbso, // http://localhost/dirMcsh/dirCor/McsCor000015.last.html
+      sNameIdAbso, // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
       sError: e.message,
     };
   }
@@ -490,7 +490,7 @@ function fFindPos_key(sPosIn) {
 }
 
 /**
- * DOING: an-id-name (dirCor/McsCor000015.last.html, McsCor000015) is-NOT a-McsLago-name.
+ * DOING: an-id-name (dirCor/McshCor000015.last.html, McsCor000015) is-NOT a-McsLago-name.
  */
 function fIsName_id(sNameIn) {
   return /\.last\.html/.test(sNameIn) || /^Mcs[A-Z][A-Za-z]*\d{6}$/.test(sNameIn);
@@ -516,8 +516,8 @@ function fFindName_frequent(aNameIn) {
  * nested part <section> elements, to avoid double-counting.
  * {
  *   sType,          // 'cnptSect',
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McsCor000015.last.html#idSection
- *   sNameIdRela,    // dirCor/McsCor000015.last.html#idSection
+ *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idSection
+ *   sNameIdRela,    // dirCor/McshCor000015.last.html#idSection
  *   sNameTitle,     // text from <h?>title::
  *   sNameFormal,    // the English formal-name
  *   oNameLago,      // {oNameEngl, oNameZhon, ...}
@@ -631,8 +631,8 @@ function fParseOverview(sOverviewIn, sNameId) {
  * {
  *   sType,          // 'cnptPara',
  *   sSubtype,          // 'p',
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McsCor000015.last.html#idPara
- *   sNameIdRela,    // dirCor/McsCor000015.last.html#idPara
+ *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
+ *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
  *   sNameFormal,    // the English formal-name
  *   oNameLago,     // contains oNameEngl, oNameZhon, ...
@@ -695,8 +695,8 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
  *   sType,          // 'cnptPara',
  *   sSubtype,       // 'div',
  *   sNameId,        // value of id= attribute, or null
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McsCor000015.last.html#idPara
- *   sNameIdRela,    // dirCor/McsCor000015.last.html#idPara
+ *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
+ *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
  *   sNameFormal,    // the English formal-name
  *   sCreation,      // from × Mcsh-creation:
@@ -754,7 +754,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
 // =========================================================== test:
 // we import mConcept.js in McsCor15
 // we see on console its output
-console.log(sFileNameRela) // dirCor/McsCor000015.last.html
+console.log(sFileNameRela) // dirCor/McshCor000015.last.html
 //const oCor15  = fReadMcshFile(sFileNameRela)
 //fReadParaP('<p id="idPara">name::</p>')
 //fReadParaDiv('<div id="idParaDiv">\n    <p>description::</p>')

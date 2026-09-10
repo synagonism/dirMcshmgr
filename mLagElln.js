@@ -40,7 +40,7 @@ const
     'mLagElln.js.0-2-0.2022-04-09: fFindVerbEllnRegularNo',
     'mLagElln.js.0-1-0.2022-04-06: creation'
   ],
-  sFileElln = omMcsh.sPathSite + 'dirMcsh/dirLag/McsLag000020.last.html'
+  sFileElln = omMcsh.sPathSite + 'dirMcsh/dirLag/McshLag000020.last.html'
 
 let
   aVerbEllnRegularNo = [],
@@ -375,7 +375,7 @@ function fFindMethodNounElln (sWordIn, bSinizisiIn) {
 }
 
 /**
- * DOING: it finds info of a-Greek-case FROM example in dirLag/McsLag000020.last.html
+ * DOING: it finds info of a-Greek-case FROM example in dirLag/McshLag000020.last.html
  * INPUT:
  *  - sWordIn = αγάπη
  *  - sMethodIn = Elln_nounMnG2XiT2SeNcF1Bn6

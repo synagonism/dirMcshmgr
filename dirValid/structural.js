@@ -153,7 +153,7 @@ function fCheckTitle(aoFile) {
   return aoIssue;
 }
 
-// ❌ [M06] Duplicate McsEngl-name "exmlMcsh" appears in: McsCorTest.last.html#idName, McsCorTest.last.html#idName
+// ❌ [M06] Duplicate McsEngl-name "exmlMcsh" appears in: McshCorTest.last.html#idName, McshCorTest.last.html#idName
 function fCheckDuplicateName(aoFile) {
   const aoIssue = [];
   const oMapName = fBuildMapName(aoFile);
@@ -172,7 +172,7 @@ function fCheckDuplicateName(aoFile) {
 }
 
 // ⚠️ [M10] DATE has NO {YYYY-MM-DD} format in line: "· {2022-4-27} evoluting ..."
-// in file: "McsCorTest.last.html"
+// in file: "McshCorTest.last.html"
 function fCheckDate(aoFile) {
   const aoIssue = [];
   const rDate1 = /\{\d{4}-\d{2}-\d{2}\}/;
