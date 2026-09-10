@@ -19,26 +19,6 @@
         "panel": "shared"
       }
     },
-    // Sync this master .vscode (settings.json + tasks.json) into the subdirs.
-    // Master lives at C:\dirNodews\.vscode ; run this after editing it so the
-    // subdir workspaces (dirMcsh, dirHitp) pick up the same config.
-    {
-      "label": "Sync .vscode to subdirs",
-      "type": "shell",
-      "command": "cmd.exe",
-      "args": [
-        "/d",
-        "/c",
-        "copy /y \"C:\\dirNodews\\.vscode\\settings.json\" \"C:\\dirNodews\\dirMcsh\\.vscode\\settings.json\" && copy /y \"C:\\dirNodews\\.vscode\\tasks.json\" \"C:\\dirNodews\\dirMcsh\\.vscode\\tasks.json\" && copy /y \"C:\\dirNodews\\.vscode\\settings.json\" \"C:\\dirNodews\\dirHitp\\.vscode\\settings.json\" && copy /y \"C:\\dirNodews\\.vscode\\tasks.json\" \"C:\\dirNodews\\dirHitp\\.vscode\\tasks.json\""
-      ],
-      "problemMatcher": [],
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": false,
-        "panel": "shared"
-      }
-    },
     // Index names of current-file and upload
     {
       "label": "Index names of current-file and upload",
