@@ -27,7 +27,7 @@
 
 import * as omLagUtil from './mLagUtil.js'
 import * as omMcsh from './mMcsh2.js'
-import * as omConcept from './mConcept.js'
+import * as omConcept from './dirValid/mConcept.js'
 
 const
   // contains the-versions of mLagSngu.js

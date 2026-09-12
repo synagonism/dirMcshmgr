@@ -25,7 +25,7 @@
  * SOFTWARE.
  */
 
-import * as omMcsh from './mMcsh2.js'
+import * as omMcsh from '../mMcsh2.js'
 
 const
   // contains the-versions of mConcept.js 

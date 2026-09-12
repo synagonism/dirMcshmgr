@@ -477,7 +477,7 @@ let fContainersInsert = function () {
   oEltCnrTopHomeIcnI.addEventListener('click', function () {
     oEltClicked.classList.remove('clsClicked', 'clsTtpShow', 'clsTriClicked')
     oEltClicked = oEltCnrTopHomeIcnI
-    location.href = sPathSite + '/index.html' //nnnFv
+    location.href = sPathSite + 'index.html' //nnnFv
   })
   oEltCnrTopDiv.insertBefore(oEltCnrTopMenuIcnI, oEltCnrTopDiv.firstChild)
 
