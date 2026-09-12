@@ -1,7 +1,7 @@
 @echo off
 REM ===========================================================================
 REM cmd.install-in-users-vscode.bat
-REM Reinstall the Mcs-Visual extension into THIS user's VS Code.
+REM Reinstall the Mcsh-visual-manager extension into THIS user's VS Code.
 REM The destination folder name is DERIVED from package.json
 REM (publisher.name-version), so it always matches VS Code's own convention.
 REM Any previously-installed copies (old name or version) are removed first.

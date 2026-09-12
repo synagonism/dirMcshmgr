@@ -206,8 +206,8 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>× quantity of words: \n' +
       '    <a class="clsHide" href="#idDescription"></a></p>\n' +
       '  <p id="idName">name::\n' +
-      '    <br>* McsEngl.' + sName + ',\n' +
-      '    <br>* McsEngl.wordary' + sLag +'\'' +sIndexIn +',\n' +
+      '    <br>* McshEngl.' + sName + ',\n' +
+      '    <br>* McshEngl.wordary' + sLag +'\'' +sIndexIn +',\n' +
       '    <a class="clsHide" href="#idName"></a></p>\n' +
       '  <p id="idOverviewwtr">whole-tree-of-McshWrdidxElln01alfa::\n'
     if (sLag === 'Elln') {
@@ -254,7 +254,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>· clicking on <span class="clsColorGreenBg">the-green-BAR of a-page</span> you have access to the-global--locator-names of my-site.\n' +
       '    <br>· use the-prefix \'<span class="clsColorRed">word' + sLag + '</span>\' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sName + '\'.\n' +
       '    <br>⊛ <strong>LOCAL-SEARCH</strong>:\n' +
-      '    <br>· TYPE <span class="clsColorRed">CTRL+F "McsLang.words-of-concept\'s-name"</span>, to go to the-LOCATION of the-concept.\n' +
+      '    <br>· TYPE <span class="clsColorRed">CTRL+F "McshLang.words-of-concept\'s-name"</span>, to go to the-LOCATION of the-concept.\n' +
       '    <br>· a-preview of the-description of a-global-name makes reading fast.\n' +
       '    <a class="clsHide" href="#idMetaP1"></a></p>\n' +
       '  <p id="idFooterP1">footer::\n' +
@@ -463,14 +463,14 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
   aWordinfo[0] = sWord
   sInfo = '  <p id="idWrd' + sLag + sPhonemaPreview + '">' +
     '<span class="clsColorRed">' + sWordIn + '</span>::\n' +
-    '    <br>* McsEngl.word' + sLag + '.' + sWordIn + '@word' + sLag + ',\n' +
-    '    <br>* Mcs' + sLag + './' + sPhonema + '/' + sWord + '@word' + sLag + ',\n'
+    '    <br>* McshEngl.word' + sLag + '.' + sWordIn + '@word' + sLag + ',\n' +
+    '    <br>* Mcsh' + sLag + './' + sPhonema + '/' + sWord + '@word' + sLag + ',\n'
 
   oCase = moLagElln.fFindCaseinfoElln(sWordIn, sMethod)
   //console.log(oCase)
   /*{
-    McsElln1: '.λέξηΕλλν.ξαδέρφη-η/ksadhérfi-i/@wordElln,',
-    McsElln2: '.ουσιαστικό.ξαδέρφη-η/ksadhérfi-i/@wordElln,',
+    McshElln1: '.λέξηΕλλν.ξαδέρφη-η/ksadhérfi-i/@wordElln,',
+    McshElln2: '.ουσιαστικό.ξαδέρφη-η/ksadhérfi-i/@wordElln,',
     sinNom: 'ξαδέρφη/ksadhérfi/',
     sinGen: 'ξαδέρφης/ksadhérfis/',
     sinAcc: 'ξαδέρφη/ksadhérfi/',
@@ -489,8 +489,8 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
   }*/
   if (sLag === 'Elln') {
     sInfo = sInfo +
-      '    <br>* McsElln' + oCase.McsElln1 + '\n' +
-      '    <br>* McsElln' + oCase.McsElln2 + '\n'
+      '    <br>* McshElln' + oCase.McshElln1 + '\n' +
+      '    <br>* McshElln' + oCase.McshElln2 + '\n'
     let
       aMember = [],
       oSetMember = new Set,
@@ -514,7 +514,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
         sMember = sMember + '|αιτι-πληθ'
       if (oCase.pluVoc.indexOf(oCase.sinNom) != -1)
         sMember = sMember + '|κλητ-πληθ'
-      sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+      sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
     }
     //ενικός-γενική
     if (oCase.sinGen != '∅') {
@@ -535,7 +535,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sMember + '|αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.sinGen) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.sinGen.split('|')
@@ -555,7 +555,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
               sMember = sMember + '|αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -577,7 +577,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sMember + '|αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.sinAcc) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.sinAcc.split('|')
@@ -595,7 +595,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
               sMember = sMember + '|αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -615,7 +615,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sMember + '|αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.sinVoc) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.sinVoc.split('|')
@@ -631,7 +631,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
               sMember = sMember + '|αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -649,7 +649,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sMember + '|αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.pluNom) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.pluNom.split('|')
@@ -663,7 +663,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
               sMember = sMember + '|αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -679,7 +679,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sMember + '|αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.pluGen) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.pluGen.split('|')
@@ -691,7 +691,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
               sMember = sMember + '|αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -705,7 +705,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
           sMember = oCase.pluAcc + '!~αιτι-πληθ'
           if (oCase.pluVoc.indexOf(oCase.pluAcc) != -1)
             sMember = sMember + '|κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.pluAcc.split('|')
@@ -715,7 +715,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
             sMember = sElm + '!~αιτι-πληθ'
             if (oCase.pluVoc.indexOf(sElm) != -1)
               sMember = sMember + '|κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }
@@ -727,7 +727,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
         if (!oSetMember.has(oCase.pluVoc)) {
           oSetMember.add(oCase.pluVoc)
           sMember = oCase.pluVoc + '!~κλητ-πληθ'
-          sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+          sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
         }
       } else {
         aMember = oCase.pluVoc.split('|')
@@ -735,7 +735,7 @@ function fCreateWordinfo(sWordIn, sMethodIn) {
           if (!oSetMember.has(sElm)) {
             oSetMember.add(sElm)
             sMember = sElm + '!~κλητ-πληθ'
-            sInfo = sInfo + '    <br>* McsElln.' + sMember + ':' + sWord + '@wordElln,\n'
+            sInfo = sInfo + '    <br>* McshElln.' + sMember + ':' + sWord + '@wordElln,\n'
           }
         }
       }

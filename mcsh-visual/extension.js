@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Mcsh-Visual — a-visual-editor for Mcs*.last.html and Hitp*.last.html files.
+ * Mcsh-visual-manager — a-visual-editor for Mcs*.last.html and Hitp*.last.html files.
  *
  * The editor is a VS Code custom editor that looks like a browser: an address bar
  * with back / forward / reload and a "..." overflow menu (File → Save; Format →
@@ -24,15 +24,15 @@ const omFormat = require('./src/mFormat');
 const fFormat = omFormat.fFormat;
 
 const sViewType = 'mcshv.editorVisual';
-/** Uris that currently have a Mcsh-Visual editor open (so we reformat on save). */
+/** Uris that currently have a Mcsh-visual-manager editor open (so we reformat on save). */
 const oSetUriManaged = new Set();
 /** Uris mid-save: the canonical-format edit is ours, so don't treat it as external. */
 const oSetUriSaving = new Set();
 /** Cached parse of the user's keybindings.json (re-read when its mtime changes). */
 let oShortcutsCache = { path: '', mtimeMs: -1, list: [] };
-/** fsPath of the file currently shown in the active Mcsh-Visual editor (for ${command:mcshv.currentFile}). */
+/** fsPath of the file currently shown in the active Mcsh-visual-manager editor (for ${command:mcshv.currentFile}). */
 let sVisualFile = '';
-/** Navigate fn of the most-recently-active open Mcsh-Visual editor (null = none open). */
+/** Navigate fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fNavigateVisual = null;
 
 function fActivate(context) {
@@ -63,7 +63,7 @@ function fActivate(context) {
     })
   );
   // Task variables: ${command:mcshv.currentFile[Dirname|Basename]} resolve to the file the
-  // Mcsh-Visual editor is currently showing (its navigated activeDoc) — because a task's
+  // Mcsh-visual-manager editor is currently showing (its navigated activeDoc) — because a task's
   // ${file} resolves from the active editor, which for the custom editor stays the ORIGINAL
   // bound document even after you navigate. Falls back to the active text editor when one
   // is focused, so the commands behave like ${file} outside the visual editor.
@@ -101,7 +101,7 @@ function fActivate(context) {
   );
   // Open a McsHitp page BY CODE: prompt a Mcs-code prefilled with the current file's
   // code, resolve it to dir<Cat>/<code>.last.html (Hitp → dir<Cat>/dirHitp/…) and open
-  // it in Mcsh-Visual (source + visual). Works from the visual editor and from a raw
+  // it in Mcsh-visual-manager (source + visual). Works from the visual editor and from a raw
   // .last.html text editor (bound to Ctrl+Alt+P O in the user's keybindings).
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.openByCode', async () => {
@@ -126,7 +126,7 @@ function fActivate(context) {
       let sPath = '';
       for (const sRoot of aRoots) { const p = fPathForCode(sRoot, sCode); if (p && fs.existsSync(p)) { sPath = p; break; } }
       if (!sPath) for (const sRoot of aRoots) { const p = fSearchByCode(sRoot, sCode); if (p) { sPath = p; break; } }
-      if (!sPath) { vscode.window.showWarningMessage('Mcsh-Visual: no file for code “' + sCode + '”.'); return; }
+      if (!sPath) { vscode.window.showWarningMessage('Mcsh-visual-manager: no file for code “' + sCode + '”.'); return; }
       // A visual editor is open → reuse its single tab: navigate its iframe (the
       // bridge `nav` retargets the edit doc + source pane). Else open a fresh pair.
       const sUrl = fNavigateVisual ? fDisplayUrlForPath(sPath) : '';
@@ -151,7 +151,7 @@ function fActivate(context) {
     })
   );
   // Canonicalise on EVERY save (File → Save, Ctrl+S, or programmatic) of a doc
-  // that has a Mcsh-Visual editor open.
+  // that has a Mcsh-visual-manager editor open.
   context.subscriptions.push(
     vscode.workspace.onWillSaveTextDocument((e) => {
       const sUri = e.document.uri.toString();
@@ -619,7 +619,7 @@ function fBuildShell(webview, url) {
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-${sNonce}';">
 <style>body{font:13px system-ui;padding:20px;color:#ddd;background:#1e1e1e}code{background:#333;padding:1px 5px;border-radius:3px}button{margin-top:8px}</style>
 </head><body>
-<h3>Mcsh-Visual</h3>
+<h3>Mcsh-visual-manager</h3>
 <p>This file isn't under your server document-root, so the live view can't load.</p>
 <p>Expected the path to contain <code>/htdocs/</code> (configurable via <code>mcshv.docRootFolder</code> / <code>mcshv.serverOrigin</code>).</p>
 <button id="idRaw">Open the raw text editor</button>

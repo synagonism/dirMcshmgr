@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Mcsh-Visual (opens dirMcsh)",
+      "name": "Run Mcsh-visual-manager (opens dirMcsh)",
       "type": "extensionHost",
       "request": "launch",
       "args": [

@@ -3,7 +3,7 @@
 // ctrl+k ctrl+2 folds them and shows shortcuts
 [
 
-// k m:: maximize/restore editor group (also relayed from the Mcs-Visual pane)
+// k m:: maximize/restore editor group (also relayed from the Mcsh-visual-manager pane)
 {
   "key": "ctrl+k ctrl+m",
   "command": "workbench.action.toggleMaximizeEditorGroup"

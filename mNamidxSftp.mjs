@@ -65,7 +65,7 @@ const
     'namidx: {2021-04-04} lagALLL',
     'namidx: {2021-04-03} oSetFileUp',
     'namidx: {2021-03-25} * lagEngl lagElln',
-    'namidx: {2021-01-04} * McsSngo',
+    'namidx: {2021-01-04} * McshSngo',
     'namidx: {2020-10-19} * Mcs. for section and paragraph-Mcs',
     'namidx: {2020-10-18} McsP.',
     'namidx: {2019-12-11} cptqnt.root.json',
@@ -267,12 +267,12 @@ function fNamidx(fileIn) {
               fStoreNamUrlLag(aNU, aLag[nL])
             }
           }
-          if (sLn.startsWith('    <br>* Mcs'+aLag[nL].substring(3)+'.')) {
+          if (sLn.startsWith('    <br>* Mcsh'+aLag[nL].substring(3)+'.')) {
             if (bMcsSection) {
-              aNU = [sLn.substring(18, sLn.indexOf(',')), sUrl]
+              aNU = [sLn.substring(19, sLn.indexOf(',')), sUrl]
               fStoreNamUrlLag(aNU, aLag[nL])
             } else {
-              aNU = [sLn.substring(18, sLn.indexOf(',')), sUrlP]
+              aNU = [sLn.substring(19, sLn.indexOf(',')), sUrlP]
               fStoreNamUrlLag(aNU, aLag[nL])
               // if previous-id different for current
               // we have a-new-paragraph-cpt

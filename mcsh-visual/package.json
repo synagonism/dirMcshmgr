@@ -1,6 +1,6 @@
 {
   "name": "mcsh-visual",
-  "displayName": "Mcsh-Visual",
+  "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
   "version": "0.4.0",
   "date": "2026-09-10",
@@ -30,7 +30,7 @@
     "customEditors": [
       {
         "viewType": "mcshv.editorVisual",
-        "displayName": "Mcsh-Visual",
+        "displayName": "Mcsh-visual-manager",
         "selector": [
           {
             "filenamePattern": "Mcs*.last.html"
@@ -45,7 +45,7 @@
     "commands": [
       {
         "command": "mcshv.open",
-        "title": "Open in Mcsh-Visual",
+        "title": "Open in Mcsh-visual-manager",
         "category": "Mcs",
         "icon": "media/icon.png"
       },
@@ -65,7 +65,7 @@
       ]
     },
     "configuration": {
-      "title": "Mcsh-Visual",
+      "title": "Mcsh-visual-manager",
       "properties": {
         "mcshv.serverOrigin": {
           "type": "string",

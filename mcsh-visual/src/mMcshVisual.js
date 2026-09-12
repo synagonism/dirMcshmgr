@@ -1,8 +1,8 @@
-// mcsh-visual/src/mMcshVisual.js — edit-bridge for the Mcsh-Visual VS Code extension.
+// mcsh-visual/src/mMcshVisual.js — edit-bridge for the Mcsh-visual-manager VS Code extension.
 //
 // Runs INSIDE the normal, server-rendered page (so it looks exactly like the
 // live site). Served over http and loaded by mMcsh2.js ONLY when the URL carries
-// `?mcshv=1`, i.e. when the page is embedded in the Mcsh-Visual editor's iframe. On
+// `?mcshv=1`, i.e. when the page is embedded in the Mcsh-visual-manager editor's iframe. On
 // the public site it never loads and has zero effect.
 //
 // Unlike mMcshEdit.js (the surgical WYSIWYG bridge), this one is paired with an

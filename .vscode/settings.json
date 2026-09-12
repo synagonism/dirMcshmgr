@@ -59,7 +59,7 @@
         "Vscodeusifedtrnam"
     ],
     "editor.tabSize": 2,
-    // Mcs-Visual: the local server (dirMcshmgr/server.mjs) serves web root C:\dirNodews
+    // Mcsh-visual-manager: the local server (dirMcshmgr/server.mjs) serves web root C:\dirNodews
     // on http://localhost, so the doc-root marker folder is "dirNodews" (not the old
     // XAMPP "htdocs"). The extension maps <path-after-dirNodews> to the URL path.
     "mcshv.docRootFolder": "dirNodews",

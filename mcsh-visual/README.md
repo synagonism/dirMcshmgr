@@ -1,4 +1,4 @@
-# Mcsh-Visual editor (`Mcs*|Hitp*.last.html`)
+# Mcsh-visual-manager editor (`Mcs*|Hitp*.last.html`)
 
 A-VSCode-extension that visually edits McsHitp(`Mcs*.last.html`) and Hitp(`Hitp*.last.html`) pages.
 An address-bar has **← → ⟳ ⋯** menu, and the page is-rendered exactly as in a-browser.
@@ -49,8 +49,8 @@ It only runs with `?mcshv=1` (inside this editor) — **no effect on the public 
 1. Open this folder (`/dirMcshmgr/mcsh-visual`) in VSCode.
 2. `npm install` (installs `parse5`; a copy is already vendored in `node_modules`).
 3. Press **F5** → an *Extension Development Host* opens with `dirMcsh` loaded.
-4. Make sure XAMPP is running. Open any `Mcs*.last.html` or `Hitp*.last.html`, then run **Mcs: Open in Mcsh-Visual** (or click the title-bar button). It opens a **vertical split**:
-   the **raw source on the left** and the **visual editor on the right** (focus on the right). It registers as an *option*, so it never overrides the default text editor; **Reopen Editor With… → Mcsh-Visual** still opens single-pane.
+4. Make sure XAMPP is running. Open any `Mcs*.last.html` or `Hitp*.last.html`, then run **Mcs: Open in Mcsh-visual-manager** (or click the title-bar button). It opens a **vertical split**:
+   the **raw source on the left** and the **visual editor on the right** (focus on the right). It registers as an *option*, so it never overrides the default text editor; **Reopen Editor With… → Mcsh-visual-manager** still opens single-pane.
 
 Both panes back the same document: visual edits show in the source live; saving either pane canonicalises the file and reloads the visual.
 

@@ -399,7 +399,7 @@ function fFindSect_overview(sRawSect) {
 
 
 /**
- * DOING: find the-McsLago-names: " <br>* McsEngl.McshExml'att001-attribute, {2026-04-23}"
+ * DOING: find the-McsLago-names: " <br>* McshEngl.McshExml'att001-attribute, {2026-04-23}"
  * INPUT: the-text of a-Mcsh_para, one name per line.
  * OUTPUT: an object of lagoName-objects
  *   { oLagoEngl: {sNameFormal, sNameInformal, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
@@ -408,8 +408,8 @@ function fReadMcsLago_names(sTextIn) {
   // ── 1. read the-name-lines ────────────────────────────────────────────────
   const aoName = []; // { sLago, sName, sNameFormal, sNameTransl, sPos } in document order
   for (const sLine of String(sTextIn ?? '').split('\n')) {
-    // a-name-line: " <br>* McsEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
-    const aNameMatch = sLine.match(/^\s*<br>\*\s*Mcs([A-Z][a-z]{3})\.([^\n,]+),/);
+    // a-name-line: " <br>* McshEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
+    const aNameMatch = sLine.match(/^\s*<br>\*\s*Mcsh([A-Z][a-z]{3})\.([^\n,]+),/);
     if (!aNameMatch) continue;
 
     const sLago = aNameMatch[1];                      // Engl, Elln, Zhon, ...
@@ -493,7 +493,7 @@ function fFindPos_key(sPosIn) {
  * DOING: an-id-name (dirCor/McshCor000015.last.html, McsCor000015) is-NOT a-McsLago-name.
  */
 function fIsName_id(sNameIn) {
-  return /\.last\.html/.test(sNameIn) || /^Mcs[A-Z][A-Za-z]*\d{6}$/.test(sNameIn);
+  return /\.last\.html/.test(sNameIn) || /^Mcsh[A-Z][A-Za-z]*\d{6}$/.test(sNameIn);
 }
 
 /**
@@ -762,7 +762,7 @@ console.log(sFileNameRela) // dirCor/McshCor000015.last.html
                 // sRawHtml: '<section id="idSection">\n  <h1 id="idSectionH1>sect-title\n    <a class="clsHide"></a>',
                 // nDepth: 0,
                 // sIdWhole_elmt: 'sIdWhole_elmt' })
-const oName = fReadMcsLago_names(" <br>* McsEngl.of!~conjEngl!⇒rltnAttribute_then_entity, ")
+const oName = fReadMcsLago_names(" <br>* McshEngl.of!~conjEngl!⇒rltnAttribute_then_entity, ")
 console.log(oName.oLagoEngl.aConj[0])
 
 
