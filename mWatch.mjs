@@ -1,5 +1,5 @@
 /*
- * mWatch.mjs - module that watches for file changes, creates name-indexes,
+ * mWatch.mjs - module that watches for changes in *.last.html, creates name-indexes,
  *   and uploads the-files
  * The MIT License (MIT)
  *
@@ -28,7 +28,7 @@
  * DOING: watch changes on files ending .last.html
  * INPUT:
  * OUTPUT:
- * RUN: node Mcsmgr/mWatch.mjs pwd
+ * RUN from worldview: node ../dirMcshmgr/mWatch.mjs pwd
  *
  */
 
@@ -45,14 +45,15 @@ import {fWriteJsonObject} from './mUtil.mjs'
 const
   // contains the-versions of mHitp.js 
   aVersion = [
-    'mWatch.mjs.0-4-0.2021-12-14: save ordered oMcs_Hash',
+    'mWatch.mjs.0-5-0.2026-09-13: dirManager/oHash',
+    'mWatch.mjs.0-4-0.2021-12-14: save ordered oHash',
     'mWatch.mjs.0-3-0.2021-12-01: setTimeout solves file reading',
     'mWatch.mjs.0-2-0.2021-11-29: imports mNamidx, mSftp, stores hashes of Mcs',
     'mWatch.mjs.0-1-0.2021-11-28: creation'
   ]
 
 let
-  oMcs_Hash = JSON.parse(moFs.readFileSync('oMcs_Hash.json')),
+  oHash = JSON.parse(moFs.readFileSync('dirManager/oHash.json')),
   aFileMcsIn = [],
   sCwd = process.cwd() + moPath.sep
 
@@ -76,18 +77,18 @@ moFs.watch(sCwd, {recursive: true}, (eventType, sFilename) => {
       const hashSum = moCrypto.createHash('sha256')
       hashSum.update(fileBuffer)
       const sHashCurrent = hashSum.digest('hex')
-      if (oMcs_Hash[sFilename]) {
-        if (sHashCurrent === oMcs_Hash[sFilename]) {
+      if (oHash[sFilename]) {
+        if (sHashCurrent === oHash[sFilename]) {
           return
         }
       }
-      oMcs_Hash[sFilename] = sHashCurrent
+      oHash[sFilename] = sHashCurrent
       const oMHOrdered = {}
-      Object.keys(oMcs_Hash).sort().forEach(function(key) {
-        oMHOrdered[key] = oMcs_Hash[key];
+      Object.keys(oHash).sort().forEach(function(key) {
+        oMHOrdered[key] = oHash[key];
       })
-      //moFs.writeFileSync('oMcs_Hash.json', JSON.stringify(oMHOrdered))
-      fWriteJsonObject('oMcs_Hash.json', oMHOrdered)
+      //moFs.writeFileSync('oHash.json', JSON.stringify(oMHOrdered))
+      fWriteJsonObject('dirManager/oHash.json', oMHOrdered)
 
       //aFileMcsIn.push(sFilename)
       //setTimeout(() => console.log(aFileMcsIn), 1000)

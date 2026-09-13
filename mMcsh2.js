@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.25-0-3.2026-09-13: configMcshapp.json',
     'mMcsh2.js.25-0-2.2026-09-02: Site-Menu',
     'mMcsh2.js.25-0-1.2026-09-01: Site-Home',
     'mMcsh2.js.25-0-0.2026-08-30: dirMcshmgr',
@@ -92,7 +93,7 @@ const
     'mMcsh2.js.22-0-0.2025-10-20: fCmdQueryInput, fExpandSelectionRight',
     'mMcsh2.js.21-4-0.2025-10-19: fChooseInputLanguage not working',
     'mMcsh2.js.21-3-1.2025-10-18: wait first suggestion',
-    'mMcsh2.js.21-2-0.2025-10-17: DoubleClick query name and preview first, esc remove',
+    'mMcsh2.js.21-2-0.2025-10-17: double-click query name and preview first, esc remove',
     'mMcsh2.js.21-1-0.2025-10-16: parent-child names',
     'mMcsh2.js.21-0-0.2025-10-15: open http',
     'mMcsh2.js.20-3-0.2025-10-14: expand selection',
@@ -708,7 +709,7 @@ let fContainersInsert = function () {
 
   // command dblclick
   const oEltCmdDblclck = document.createElement('li')
-  oEltCmdDblclck.innerHTML = '(DoubleClick) Query-Selected'
+  oEltCmdDblclck.innerHTML = 'Double-Click (Query-Selected)'
   oEltMenuUl.appendChild(oEltCmdDblclck)
   // on content expand selection of dblclick, query it, and preview first suggestion
   oEltCnrMainContentDiv.addEventListener('dblclick', async function (oEvtIn) {
@@ -2590,7 +2591,7 @@ if (location.hostname !== '') {
 
 if (sPathSite) {
   // read configMcs
-  await fetch(sPathSite + 'dirMcshmgr/configMcs.json') // nnn HitpConfig
+  await fetch(sPathSite + 'dirMcshmgr/configMcshapp.json') // nnn HitpConfig
   .then(response => response.json())
   .then(oConfig => {
     if (oConfig.nCfgPageinfoWidth) {
@@ -2611,7 +2612,7 @@ if (sPathSite) {
   }
   await fFetchSiteMenu()   // await so the site-menu is loaded before fContainersInsert renders it
 
-  // read the per-worldview web-apps menu (optional; a worldview without it shows no apps menu)
+  // read the per-worldview menu
   async function fFetchWorldviewApps() {
     try {
       const response = await fetch(sPathSite + sWorldview + '/configWorldview.html')

@@ -1,8 +1,5 @@
 /**
- * DOING: sftp the-files in dirManager/sftp.json
- * INPUT:
- * OUTPUT:
- * RUN: node mSftp.mjs password
+ * DOING: module that sftp the-files in dirManager/sftp.json
  *
  * modified: {2026-09-09} single persistent connection + sequential upload with retry (fixes ECONNRESET); numbered progress
  * modified: {2021-04-29}
@@ -16,13 +13,6 @@ var oSftp = {
   host: 'linux1087.grserver.gr',
   port: 2234,
   username: 'kaseluri160933'
-}
-
-if (process.argv[2]) {
-  oSftp.password = process.argv[2]
-} else {
-  console.log('type password as 3rd argument')
-  process.exit()
 }
 
 async function fSftp (sPassword) {

@@ -35,16 +35,11 @@
  * INPUT: dirManager/namidx.txt
  * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcshqnt.json, dirManager/sftp.json,
  *
- *
- * PROBLEM:
- * - to compute the-number of concepts, we must set new DIRS at cptqnt.root.json.
- *
  */
 
 import moFs from 'fs'
 import mfReadlines from 'n-readlines' // npm install n-readlines
 import mfClient from 'ssh2-sftp-client'
-import mfEs6_promise_pool from 'es6-promise-pool'
 import {oSftp, fSftp} from './mSftp.mjs'
 import {fWriteJsonArray} from './mUtil.mjs'
 

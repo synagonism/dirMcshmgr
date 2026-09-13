@@ -27,7 +27,7 @@
  * DOING: indexes one input-file and uploads changed-files
  * INPUT:
  * OUTPUT:
- * RUN from dirMcsh: node ../dirMcshmgr/mNamidxFile.mjs file pwd
+ * RUN from worldview: node ../dirMcshmgr/mNamidxFile.mjs file pwd
  * process.argv[2] → first argument you provided
  */
 
@@ -37,7 +37,6 @@ import moPath from 'path'
 import mfReadlines from 'n-readlines' // npm install n-readlines
 import {fNamidx} from './mNamidx.mjs'
 import mfClient from 'ssh2-sftp-client'
-import mfEs6_promise_pool from 'es6-promise-pool'
 import {oSftp, fSftp} from './mSftp.mjs'
 import {fWriteJsonObject} from './mUtil.mjs'
 import { stdin as input, stdout as output } from 'node:process';
