@@ -27,18 +27,14 @@
  * DOING: indexes one input-file and uploads changed-files
  * INPUT:
  * OUTPUT:
- * RUN from worldview: node ../dirMcshmgr/mNamidxFile.mjs file pwd
- * process.argv[2] → first argument you provided
+ * RUN from worldview: node ../dirMcshmgr/mNamidxFile.mjs <dirCor/McshCor000015.last.html>
+ * 
  */
 
 import moFs from 'fs'
-import moCrypto from 'crypto'
 import moPath from 'path'
-import mfReadlines from 'n-readlines' // npm install n-readlines
 import {fNamidx} from './mNamidx.mjs'
-import mfClient from 'ssh2-sftp-client'
 import {oSftp, fSftp, fAskHidden} from './mSftp.mjs'
-import {fWriteJsonObject} from './mUtil.mjs'
 
 const
   // contains the-versions of mNamidxFile.mjs
@@ -50,13 +46,13 @@ const
   ]
 
 if (process.argv.length !== 3) {
-  console.log('run: node ../dirMcshmgr/mNamidxFile.mjs file')
+  console.log('run from worldview: node ../dirMcshmgr/mNamidxFile.mjs file')
   process.exit()
 }
 
 let
   sFilename = process.argv[2],
-  pwd = process.argv[3];
+  pwd;
 
 if (!pwd) {
   pwd = await fAskHidden('Enter password: ');
@@ -65,7 +61,7 @@ if (!pwd) {
 // namidx-files not accept '\'
 sFilename = sFilename.replace(/\\/g, '/')
 if (!sFilename.endsWith('.last.html')) {
-  console.log('this is NOT an-Mcs-file, exit')
+  console.log('this is NOT an-Mcsh|Hitp-file, exit')
   process.exit()
 }
 

@@ -32,8 +32,7 @@
  * INPUT:
  * OUTPUT: McsDir000000.last.html
  * RUN from dirMcsh:
- *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false> [sftp_pwd]
- *  (run alone without sftp_pwd and it prompts for the password)
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false>
  *
  * ISSUE: IF you want to recreate the-file,
  * you have to delete IT from SitePagesArr.json

@@ -1,5 +1,5 @@
 /*
- * go to line 96 (aLagALL) to change indexed languages.
+ * go to line 89 (aLagALL) to change indexed languages.
  * mNamidx.mjs - module that creates name-indexes and uploads the-files
  * The MIT License (MIT)
  *
@@ -27,25 +27,24 @@
  *
  * DOING:
  *   it works as a-module
- *   1) it updates the-names of Mcs-files in dirManager/namidx.txt, in index-files.
- *   2) it creates the-file 'dirManager/sftp.json' that contains the-changed files we have to upload.
- *   3) it computes the-number of names.
- *   4) it computes the-number of concepts.
- *   5) it uploads the-files
- * INPUT: dirManager/namidx.txt
+ *   1) it creates the-file 'dirManager/sftp.json' that contains the-changed files we have to upload.
+ *   2) it computes the-number of names.
+ *   3) it computes the-number of concepts.
+ *   4) it uploads the-files
+ * INPUT:
  * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcshqnt.json, dirManager/sftp.json,
  *
  */
 
 import moFs from 'fs'
 import mfReadlines from 'n-readlines' // npm install n-readlines
-import mfClient from 'ssh2-sftp-client'
 import {oSftp, fSftp} from './mSftp.mjs'
-import {fWriteJsonArray} from './mUtil.mjs'
+import {fDateYMD, fWriteJsonArray} from './mUtil.mjs'
 
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mNamidx.mjs.0-9-0.2026-09-24: auto-add + sort new DIRS in Mcshqnt.root.json',
     'mNamidx.mjs.0-8-0.2026-08-30: dirMcshmgr',
     'mNamidx.mjs.0-7-1.2026-02-03: lagKhmr',
     'mNamidx.mjs.0-7-0.2025-11-30: only module',
@@ -659,25 +658,6 @@ function fNamidx(fileIn, fSftpIn) {
   }
 
   /**
-   * DOING: it returns the-current-date as yyyy-mm-dd
-   */
-  function fDateYMD() {
-    let
-      oD, sY, sM, sD
-    oD = new Date()
-    sY = oD.getFullYear().toString()
-    sM = (oD.getMonth() + 1).toString()
-    if (sM.length === 1) {
-      sM = '0' + sM
-    }
-    sD = oD.getDate().toString()
-    if (sD.length === 1) {
-      sD = '0' + sD
-    }
-    return sY + '-' + sM + '-' + sD
-  }
-
-  /**
    * Compares elements of arrays
    * Used in: aNew.sort(fCompare)
    * to sort arrays of arrays.
@@ -948,6 +928,8 @@ function fNamidx(fileIn, fSftpIn) {
         aMcsqntRt.push([sDfIn, nQIn])
         nMcsqntRtSum = nMcsqntRtSum + nQIn
       }
+      // keep DIRS ordered (a-new-dir was pushed at the-end); ';qntAGG' sorts to index 0
+      aMcsqntRt.sort()
       aMcsqntRt[0] = [';qntAGG', nMcsqntRtSum, fDateYMD()]
       fWriteJsonArray(sMcsqntRt, aMcsqntRt)
     }

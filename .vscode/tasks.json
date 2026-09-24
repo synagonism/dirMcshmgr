@@ -43,7 +43,7 @@
       "type": "shell",
       "command": "node",
       "args": [
-        "../dirMcshmgr/mNamidxOnlyFile.mjs",
+        "../dirMcshmgr/mNamidxFileOnly.mjs",
         "${command:mcshv.currentFile}"
       ],
       "options": {

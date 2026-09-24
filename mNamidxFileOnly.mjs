@@ -1,5 +1,5 @@
 /*
- * mNamidxFile.mjs - creates name-indexes of input-file 
+ * mNamidxFileOnly.mjs - creates name-indexes of input-file 
  * The MIT License (MIT)
  *
  * Copyright (c) 2026 Kaseluris.Nikos.1959 (hmnSngu)
@@ -24,11 +24,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * DOING: indexes one input-file and uploads changed-files
- * INPUT:
- * OUTPUT:
- * RUN from dirMcsh: node ../dirMcshmgr/mNamidxFile.mjs file pwd
- * process.argv[2] → first argument you provided
+ * DOING: indexes one input-file
+ * RUN from worldview: node ../dirMcshmgr/mNamidxFileOnly.mjs <dirCor/McshCor000015.last.html>
  */
 
 import moPath from 'path'
@@ -37,13 +34,14 @@ import {fNamidx} from './mNamidx.mjs'
 const
   // contains the-versions of mNamidxFile.mjs
   aVersion = [
+    'mNamidxFileOnly.mjs.0-4-0.2026-09-24: name change',
     'mNamidxOnlyFile.mjs.0-3-0.2026-08-30: only indexing',
     'mNamidxFile.mjs.0-2-0.2026-04-21: password',
     'mNamidxFile.mjs.0-1-0.2026-04-20: creation'
   ]
 
 if (process.argv.length !== 3) {
-  console.log('run: node ../dirMcshmgr/mNamidxFile.mjs file')
+  console.log('run: node ../dirMcshmgr/mNamidxFileOnly.mjs file')
   process.exit()
 }
 
