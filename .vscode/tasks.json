@@ -101,7 +101,7 @@
       "type": "shell",
       "command": "node",
       "args": [
-        "../dirMcshmgr/mMcsNew.mjs",
+        "../dirMcshmgr/mMcshNew.mjs",
         "${input:sDir}",
         "${input:sNameInformal}",
         "${input:sNameFormal}",

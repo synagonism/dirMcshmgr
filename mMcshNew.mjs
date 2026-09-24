@@ -1,5 +1,5 @@
 /*
- * mMcsNew.mjs - it creates a-new file McsHitp-senso-concept
+ * mMcshNew.mjs - it creates a-new file McsHitp-senso-concept
  * The MIT License (MIT)
  *
  * Copyright (c) 2017-2026 Kaseluris.Nikos.1959 (hmnSngu)
@@ -25,26 +25,30 @@
  * SOFTWARE.
  *
  * DOING: it creates a-new file senso-concept McsDir000000.last.html
- *     - updates aPages.json
+ *     - updates SitePagesArr.json//dirMcsh
  *     - creates McsDir000000.txt
  *     - indexes new file
  *     - uploads new and modified files
  * INPUT:
  * OUTPUT: McsDir000000.last.html
- * RUN: cd dirMcsh && node ../dirMcshmgr/mMcsNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false> <sftpPassword>
+ * RUN from dirMcsh:
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false> [sftp_pwd]
+ *  (run alone without sftp_pwd and it prompts for the password)
  *
  * ISSUE: IF you want to recreate the-file,
- * you have to delete IT from aPages.json
+ * you have to delete IT from SitePagesArr.json
  */
 
 import moFs from 'fs'
 import * as moUtil from './mUtil.mjs'
 import {fNamidx} from './mNamidx.mjs'
-import {fSftp} from './mSftp.mjs'
+import {fSftp, fAskHidden} from './mSftp.mjs'
 
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-6-0.2026-09-24: prompt password when run alone',
+    'mMcshNew.mjs.1-5-0.2026-09-24: mMcshNew',
     'mMcsNew.mjs.1-4-1.2026-09-01: relations pc, wp, gs',
     'mMcsNew.mjs.1-4-0.2026-09-01: dirManager',
     'mMcsNew.mjs.1-3-12.2026-08-17: Mcsh-creation',
@@ -98,25 +102,26 @@ let
   s,
 
   //// INPUT VALUES ////
-  //1. Add counter or not
-  bCounter = true,
 
-  //2. Directory of the-concept dirCor|dirEdu|dirHlth|dirHmn|dirLag|dirNtr|
+  //1. Directory of the-concept dirCor|dirEdu|dirHlth|dirHmn|dirLag|dirNtr|
   //   dirOgm|dirStn|dirStnlaw|dirTch|dirTchPrgm|dirTchInf
-  sDir = 'dirTchPrgm',
+  sDir = 'dirHmn',
 
-  //3. Name of the-title: Ethereum--blockchain-net
-  sNameInformal = 'Table-of-contents--Chrome-extension',
-  //4. SHORT-name: sysNet, ogn, DnChain, DnEth, Dchain-net, lagoSngu,
-  sNameFormal = 'CrxToc',
+  //2. Name of the-title: Ethereum--blockchain-net
+  sNameInformal = 'Human A',
 
-  //5. Name for IDs, unique in this file: Net, Dtc, LTurk, SocGrca,
-  sNameId = 'idCrxToc',
+  //3. SHORT-name: sysNet, ogn, DnChain, DnEth, Dchain-net, lagoSngu,
+  sNameFormal = 'humnA',
 
+  //4. Name for IDs, unique in this file: Net, Dtc, LTurk, SocGrca,
+  sNameId = 'HumnA',
+
+  //5. Add counter or not
+  bCounter = true,
 
   sNameFile = '',
   sNameFileNaked = '',
-  aPages,
+  SitePagesArr,
   nFile = 0,
   sDirShort = sDir.substring(3)
 
@@ -131,12 +136,12 @@ if (process.argv[6]) bCounter      = process.argv[6] === 'true'
 sDirShort = sDir.substring(3)
 
 
-aPages = JSON.parse(moFs.readFileSync('../dirMcsh/SitePagesArr.json'))
+SitePagesArr = JSON.parse(moFs.readFileSync('../dirMcsh/SitePagesArr.json'))
 
 // find file-name
-for (n = 0; n < aPages.length; n++) {
-  //aPages contains the-counter files
-  if (new RegExp('^Mcsh'+sDirShort+'[0-9]+\.txt').test(aPages[n][0])) nFile = nFile + 1
+for (n = 0; n < SitePagesArr.length; n++) {
+  //SitePagesArr contains the-counter files
+  if (new RegExp('^Mcsh'+sDirShort+'[0-9]+\.txt').test(SitePagesArr[n][0])) nFile = nFile + 1
 }
 // first file-number 000000
 sNameFileNaked = 'Mcsh' + sDirShort + nFile.toString().padStart(6, '0')
@@ -361,12 +366,12 @@ if (bCounter) {
   moFs.writeFileSync('../dirPgm/dirCntr/dirCntrfiles/' + sNameFileNaked + '.txt', '1')
 }
 
-// add file to aPages
-aPages.push([sNameFileNaked+'.txt', sNameInformal])
-aPages.sort((aA, aB) => {
+// add file to SitePagesArr
+SitePagesArr.push([sNameFileNaked+'.txt', sNameInformal])
+SitePagesArr.sort((aA, aB) => {
   return aA[0] > aB[0] ? 1 : -1
 })
-moUtil.fWriteJsonArray('../dirMcsh/SitePagesArr.json', aPages)
+moUtil.fWriteJsonArray('../dirMcsh/SitePagesArr.json', SitePagesArr)
 
 // index new file
 fNamidx(sDir + '/' + sNameFile)
@@ -376,5 +381,7 @@ let aSftp = JSON.parse(moFs.readFileSync('../dirMcsh/dirManager/sftp.json'))
 aSftp.push('../dirMcsh/SitePagesArr.json')
 aSftp.push('../dirPgm/dirCntr/dirCntrfiles/' + sNameFileNaked + '.txt')
 moUtil.fWriteJsonArray('../dirMcsh/dirManager/sftp.json', aSftp)
-//upload files (argv[7] = SFTP password, supplied by the VS Code task prompt)
-fSftp(process.argv[7])
+//upload files (argv[7] = SFTP password from the VS Code task; else prompt when run alone)
+let sSftpPwd = process.argv[7]
+if (!sSftpPwd) sSftpPwd = await fAskHidden('Enter password: ')
+fSftp(sSftpPwd)

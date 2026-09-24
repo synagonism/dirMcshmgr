@@ -8,11 +8,48 @@
 
 import moFs from 'fs'
 import mfClient from 'ssh2-sftp-client'
+import { stdin as input, stdout as output } from 'node:process'
 
 var oSftp = {
   host: 'linux1087.grserver.gr',
   port: 2234,
   username: 'kaseluri160933'
+}
+
+// read a line from the terminal in raw mode, echoing '*' for each typed char
+function fAskHidden(promptText) {
+  return new Promise((resolve) => {
+    output.write(promptText);
+    var bWasRaw = input.isRaw;
+    if (input.isTTY) input.setRawMode(true);
+    input.resume();
+    input.setEncoding('utf8');
+    var sPwd = '';
+    const fOnData = (sChunk) => {
+      for (const sCh of sChunk) {
+        var nCode = sCh.charCodeAt(0);
+        if (nCode === 13 || nCode === 10 || nCode === 4) {          // Enter / Ctrl-D: done
+          if (input.isTTY) input.setRawMode(bWasRaw);
+          input.pause();
+          input.removeListener('data', fOnData);
+          output.write('\n');
+          resolve(sPwd);
+          return;
+        } else if (nCode === 3) {                                   // Ctrl-C: abort
+          output.write('\n');
+          process.exit(1);
+        } else if (nCode === 27) {                                  // Esc: ignore arrow/nav sequences
+          break;
+        } else if (nCode === 127 || nCode === 8) {                  // Backspace / Del
+          if (sPwd.length > 0) { sPwd = sPwd.slice(0, -1); output.write('\b \b'); }
+        } else if (nCode >= 32) {                                   // printable char
+          sPwd += sCh;
+          output.write('*');
+        }
+      }
+    };
+    input.on('data', fOnData);
+  });
 }
 
 async function fSftp (sPassword) {
@@ -77,4 +114,4 @@ async function fSftp (sPassword) {
   }
 }
 
-export {oSftp, fSftp}
+export {oSftp, fSftp, fAskHidden}

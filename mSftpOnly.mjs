@@ -23,7 +23,7 @@ var oSftp = {
 }
 
 // read a line from the terminal in raw mode, echoing '*' for each typed char
-function askHidden (sPromptIn) {
+function fAskHidden (sPromptIn) {
   return new Promise((resolve) => {
     output.write(sPromptIn)
     var bWasRaw = input.isRaw
@@ -59,7 +59,7 @@ function askHidden (sPromptIn) {
 }
 
 // password: 3rd argument if given, otherwise prompt (as mNamidxFile.mjs)
-oSftp.password = process.argv[2] || await askHidden('Enter password: ')
+oSftp.password = process.argv[2] || await fAskHidden('Enter password: ')
 
 async function fSftp () {
   var aFil = JSON.parse(moFs.readFileSync('dirManager/sftp.json'))
