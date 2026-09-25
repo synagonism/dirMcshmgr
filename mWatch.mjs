@@ -1,5 +1,5 @@
 /*
- * mWatch.mjs - module that watches for changes in *.last.html, creates name-indexes,
+ * mWatch.mjs - module and program that watches for changes in *.last.html, creates name-indexes,
  *   and uploads the-files
  * The MIT License (MIT)
  *
@@ -28,23 +28,21 @@
  * DOING: watch changes on files ending .last.html
  * INPUT:
  * OUTPUT:
- * RUN from worldview: node ../dirMcshmgr/mWatch.mjs pwd
+ * RUN from worldview: node ../dirMcshmgr/mWatch.mjs   (prompts for password)
  *
  */
 
 import moFs from 'fs'
 import moCrypto from 'crypto'
 import moPath from 'path'
-import mfReadlines from 'n-readlines' // npm install n-readlines
 import {fNamidx} from './mNamidx.mjs'
-import mfClient from 'ssh2-sftp-client'
-import mfEs6_promise_pool from 'es6-promise-pool'
-import {oSftp, fSftp} from './mSftp.mjs'
+import {fAskHidden, oSftp, fSftp} from './mSftp.mjs'
 import {fWriteJsonObject} from './mUtil.mjs'
 
 const
   // contains the-versions of mHitp.js 
   aVersion = [
+    'mWatch.mjs.0-6-0.2026-09-25: prompt for password',
     'mWatch.mjs.0-5-0.2026-09-13: dirManager/oHash',
     'mWatch.mjs.0-4-0.2021-12-14: save ordered oHash',
     'mWatch.mjs.0-3-0.2021-12-01: setTimeout solves file reading',
@@ -58,12 +56,7 @@ let
   sCwd = process.cwd() + moPath.sep
 
 sCwd = sCwd.replace(/\\/g, '/')
-if (process.argv[2]) {
-  oSftp.password = process.argv[2]
-} else {
-  console.log('type password after mWatch.mjs')
-  process.exit()
-}
+oSftp.password = await fAskHidden('Enter password: ')
 
 moFs.watch(sCwd, {recursive: true}, (eventType, sFilename) => {
   if (sFilename && eventType === 'change' && sFilename.endsWith('.last.html')) {

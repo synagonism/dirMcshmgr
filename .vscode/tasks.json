@@ -55,16 +55,13 @@
       },
       "problemMatcher": []
     },
-    // Sftp only current worldview: upload the files listed in
-    // <worldview>/dirManager/sftp.json (no re-indexing). cwd is the current
-    // worldview, so mSftpOnly.mjs uploads to httpdocs/<worldview>/.
+    // Sftp ONLY files in <worldview>/dirManager/sftp.json
     {
-      "label": "Sftp only current worldview",
+      "label": "Sftp ONLY sftp.json",
       "type": "shell",
       "command": "node",
       "args": [
-        "../dirMcshmgr/mSftpOnly.mjs",
-        "${input:sftpPassword}"
+        "../dirMcshmgr/mSftpOnly.mjs"
       ],
       "options": {
         "cwd": "${command:mcshv.currentWorldview}"
