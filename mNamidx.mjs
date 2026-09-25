@@ -638,16 +638,17 @@ function fNamidx(fileIn, fSftpIn) {
       s
 
     // aIn[0] = [";lagEngl01ei",";A..B",419,"2018-08-04"],
+    // JSON.stringify escapes " \ tab etc. in names/urls (manual concatenation did not)
     if (aIn.length === 1) {
-      s = '[\n  ["' + aIn[0][0] + '","' + aIn[0][1] + '",0,"' + fDateYMD() + '"]\n'
+      s = '[\n  ' + JSON.stringify([aIn[0][0], aIn[0][1], 0, fDateYMD()]) + '\n'
     } else {
-      s = '[\n  ["' + aIn[0][0] + '","' + aIn[0][1] + '",' +
-        (aIn.length-1) + ',"' + fDateYMD() + '"],\n'
+      s = '[\n  ' +
+        JSON.stringify([aIn[0][0], aIn[0][1], aIn.length-1, fDateYMD()]) + ',\n'
       for (let n = 1; n < aIn.length-1; n++) {
-        s = s +'  ["' + aIn[n][0] + '","' + aIn[n][1] + '"],\n'
+        s = s +'  ' + JSON.stringify([aIn[n][0], aIn[n][1]]) + ',\n'
       }
       // last element no-comma at the-end
-      s = s + '  ["' + aIn[aIn.length-1][0] + '","' + aIn[aIn.length-1][1] + '"]\n'
+      s = s + '  ' + JSON.stringify([aIn[aIn.length-1][0], aIn[aIn.length-1][1]]) + '\n'
     }
 
     s = s + ']'
