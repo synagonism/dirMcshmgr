@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Mcs/Hitp Consistency Checker
+ * Mcsh/Hitp Consistency Checker
  * Checks dirMcsh-worldview for structural and content issues.
  *
  * Every file is validated as generic Hitp (H01–H11).
- * Files whose name starts with "Mcs" additionally get the Mcs concept checks (M01–M12) and,
+ * Files whose name starts with "Mcsh" additionally get the Mcs concept checks (M01–M12) and,
  * with --ai, the DeepSeek semantic checks (M01–M04).
  *
  * Usage:

@@ -74,7 +74,7 @@
     },
     // Validate current-file
     {
-      "label": "validate current-file",
+      "label": "validate current-FILE",
       "type": "shell",
       "command": "node",
       "args": [
@@ -82,6 +82,24 @@
         "${command:mcshv.currentFileDirname}",
         "--file",
         "${command:mcshv.currentFileBasename}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Validate current-DIR
+    {
+      "label": "validate current-DIRECTORY",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/dirValid/validator",
+        "${command:mcshv.currentFileDirname}"
       ],
       "options": {
         "cwd": "${command:mcshv.currentWorldview}"
