@@ -56,6 +56,9 @@
     "chat.mcp.autostart": "never",
     "editor.renderWhitespace": "boundary",
     "accessibility.voice.speechTimeout": 555,
+    "accessibility.voice.speechLanguage": "en-US",
+    "accessibility.voice.keywordActivation": "off",
+    "accessibility.voice.autoSynthesize": "off",
     "llama-vscode.ask_install_llamacpp": false,
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.profiles.windows": {

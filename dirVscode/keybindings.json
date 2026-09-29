@@ -28,25 +28,25 @@
 {
   "key": "ctrl+alt+c a 1", 
   "command": "type",
-  "args": {"text": "⭢"},
+  "args": {"text": "⭢"}
 },
 // c a 2:: Char Arrow 2: ⇒
 {
   "key": "ctrl+alt+c a 2", 
   "command": "type",
-  "args": {"text": "⇒"},
+  "args": {"text": "⇒"}
 },
 // c h g:: Char Html Greaterthan: & gt;
 {
   "key": "ctrl+alt+c h g", 
   "command": "type",
-  "args": {"text": "&gt;"},
+  "args": {"text": "&gt;"}
 },
 // c h l:: Char Html Leshthan: & lt;
 {
   "key": "ctrl+alt+c h l", 
   "command": "type",
-  "args": {"text": "&lt;"},
+  "args": {"text": "&lt;"}
 },
 // c h s:: Char Html Space: & nbsp;
 {
@@ -136,7 +136,7 @@
       },
       "editor.action.nextMatchFindAction",
       "editor.action.replaceOne",
-      "closeFindWidget",
+      "closeFindWidget"
     ]
   }
 },
@@ -156,7 +156,7 @@
       },
       "editor.action.nextMatchFindAction",
       "editor.action.replaceOne",
-      "closeFindWidget",
+      "closeFindWidget"
     ]
   }
 },
@@ -184,7 +184,7 @@
       "cursorLeft",
       "cursorLeft",
       "cursorLeft",
-      "cursorLeft",
+      "cursorLeft"
     ]
   },
   "when": "editorTextFocus"
@@ -209,7 +209,7 @@
       "closeFindWidget",
       "cursorRight",
       "extension.userInput",
-      "cursorRight",
+      "cursorRight"
     ]
   },
   "when": "editorTextFocus && editorHasSelection"
@@ -364,7 +364,7 @@
       "cursorWordLeft",
       "cursorWordLeft",
       "cursorWordLeft",
-      "cursorLeft",
+      "cursorLeft"
     ]
   },
   "when": "editorTextFocus"
@@ -412,7 +412,7 @@
       "cursorWordLeft",
       "deleteLeft",
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      "cursorEnd",
+      "cursorEnd"
     ]
   },
   "when": "editorTextFocus"
@@ -451,7 +451,7 @@
       "cursorWordLeft",
       "deleteLeft",
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      "cursorEnd",
+      "cursorEnd"
     ]
   },
   "when": "editorTextFocus"
@@ -483,7 +483,7 @@
       },
       "editor.action.previousMatchFindAction",
       "closeFindWidget",
-      "cursorRight",
+      "cursorRight"
     ]
   },
   "when": "editorTextFocus && editorHasSelection"
@@ -1171,12 +1171,12 @@
       "cursorUp",
       "cursorLineEnd",
       "editor.action.insertLineAfter",
-      { "command": "type", "args": {"text": "<br>["},
+      { "command": "type", "args": {"text": "<br>["}
       },
       {"command": "editor.action.insertSnippet",
         "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} retrieved} ]" }
       },
-      "cursorLeft",
+      "cursorLeft"
     ]
   }
 },
@@ -1189,7 +1189,7 @@
       "cursorUp",
       "cursorLineEnd",
       "editor.action.insertLineAfter",
-      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McsHmn000003.last.html#idOverview\">humnSngu</a>."},
+      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McsHmn000003.last.html#idOverview\">humnSngu</a>."}
       },
       {"command": "editor.action.insertSnippet",
         "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}]" }
@@ -1209,10 +1209,10 @@
        "args": {"snippet": "_sntxArgt:[${TM_SELECTED_TEXT}]"}
       },
       "editor.action.jumpToBracket",
-      "cursorLeft",
+      "cursorLeft"
     ]
   },
-  "when": "editorTextFocus && editorHasSelection",
+  "when": "editorTextFocus && editorHasSelection"
 },
 // p s :: hitP Syntax Cause
 {
@@ -1324,7 +1324,7 @@
       "editor.action.insertLineAfter",
       {"command": "type", "args": {"text": "<br>"}},
       "editor.action.insertLineAfter",
-      {"command": "type", "args": {"text": "<br>· _sntxEngl: "}},
+      {"command": "type", "args": {"text": "<br>· _sntxEngl: "}}
     ]
   },
   "when": "editorTextFocus"
@@ -1340,7 +1340,7 @@
       "editor.action.insertLineAfter",
       {"command": "type", "args": {"text": "<br>"}},
       "editor.action.insertLineAfter",
-      {"command": "type", "args": {"text": "<br>· _sntxElln: "}},
+      {"command": "type", "args": {"text": "<br>· _sntxElln: "}}
     ]
   },
   "when": "editorTextFocus"
@@ -1356,7 +1356,7 @@
       "editor.action.insertLineAfter",
       {"command": "type", "args": {"text": "<br>"}},
       "editor.action.insertLineAfter",
-      {"command": "type", "args": {"text": "<br>· _sntxZhon: "}},
+      {"command": "type", "args": {"text": "<br>· _sntxZhon: "}}
     ]
   },
   "when": "editorTextFocus"
@@ -1404,7 +1404,7 @@
       "cursorWordEndRightSelect",
       "deleteRight",
       { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}" },
+        "args": { "snippet": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}" }
       }
     ]
   }
@@ -1474,7 +1474,7 @@
       { "command": "type", "args": {"text": "· _sntxEngl: "} },
         { "command": "cursorDown" }
 
-  /*      
+  /*
       // set break in line
       "cursorHome",
       "cursorHome",
@@ -1484,6 +1484,29 @@
     ]
   }
 },
+
+// V:: VOICE
+// v d:: Voice Dictation: start dictating into the editor
+{
+  "key": "ctrl+alt+v d",
+  "command": "workbench.action.editorDictation.start",
+  "when": "editorTextFocus"
+},
+// v s:: Voice Stop: stop editor dictation
+{
+  "key": "ctrl+alt+v s",
+  "command": "workbench.action.editorDictation.stop"
+},
+// v c:: Voice Chat: start talking to the chat panel
+{
+  "key": "ctrl+alt+v c",
+  "command": "workbench.action.chat.startVoiceChat"
+},
+// v x:: Voice eXit: stop listening and submit the chat prompt
+{
+  "key": "ctrl+alt+v x",
+  "command": "workbench.action.chat.stopListeningAndSubmit"
+}
 ]
 
 /*
