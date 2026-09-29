@@ -73,7 +73,7 @@ let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}
  *   oNameLago,      // {oNameEngl, oNameZhon}
  *   sAttrGeneric,   // generic-concept of concept
  *   sAttrWhole,     // whole-concept of concept
- *   sAttrParent,    // whole-concept of concept
+ *   sAttrParent,    // parent-concept of concept
  *   aAttr,          // attributes of concept
  *   oFileIdRelaCnpt,// {'sNameIdRela': oCnpt} the-part concepts
  * }
@@ -630,7 +630,7 @@ function fParseOverview(sOverviewIn, sNameId) {
  * OUTPUT: one object para:
  * {
  *   sType,          // 'cnptPara',
- *   sSubtype,          // 'p',
+ *   sSubtype,       // 'p',
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::

@@ -4,19 +4,19 @@
  * Checks dirMcsh-worldview for structural and content issues.
  *
  * Every file is validated as generic Hitp (H01–H11).
- * Files whose name starts with "Mcsh" additionally get the Mcs concept checks (M01–M12) and,
+ * Files whose name starts with "Mcsh" additionally get the Mcsh concept checks (M01–M12) and,
  * with --ai, the DeepSeek semantic checks (M01–M04).
  *
  * Usage:
  *   node validator.js <dirMcsh-path>          # fast structural checks only
  *   node validator.js <dirMcsh-path> --file McsXxx000001.last.html  # single file
- *   node validator.js <dirMcsh-path> --ai     # + DeepSeek AI semantic checks (Mcs)
+ *   node validator.js <dirMcsh-path> --ai     # + DeepSeek AI semantic checks (Mcsh)
  */
 
 import { fParseFileHitp, fParseFileAllHitp } from './parserHitp.js';
 import { fRunChecksHitp } from './structuralHitp.js';
 import { fParseFile } from './parser.js';
-import { fRunChecksStructural } from './structural.js';
+import { fRunChecksMcsh } from './structural.js';
 import { fRunChecksAi } from './ai-checks.js';
 import { fReporter } from './reporter.js';
 import path from 'path';
@@ -27,7 +27,7 @@ const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
-    'validator.js.0-4-0.2026-09-05: merge Hitp+Mcs',
+    'validator.js.0-4-0.2026-09-05: merge Hitp+Mcsh',
     'validator.js.0-3-0.2026-09-04: naming convention',
     'validator.js.0-2-0.2026-04-27: working structural',
     'validator.js.0-1-0.2026-04-24: creation'
@@ -53,7 +53,7 @@ const oReporter = fReporter();
 
 async function fMain() {
   console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  console.log('  Mcs/Hitp Consistency Checker');
+  console.log('  Mcsh/Hitp Consistency Checker');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
   // ── parse every file as generic Hitp ──────────────────────────────────────
@@ -72,17 +72,17 @@ async function fMain() {
   console.log('🔍 Running Hitp checks...');
   oReporter.fAddAll(fRunChecksHitp(aoFileHitp, sPathDir));
 
-  // ── 2. Mcs checks (files named Mcs* only) ─────────────────────────────────
-  const aoFileMcs = aoFileHitp
-    .filter(oFile => oFile.sNameFile.startsWith('Mcs'))
+  // ── 2. Mcsh checks (files named Mcsh* only) ─────────────────────────────────
+  const aoFileMcsh = aoFileHitp
+    .filter(oFile => oFile.sNameFile.startsWith('Mcsh'))
     .map(oFile => fParseFile(oFile.sPathFile));
-  console.log(`\n🔍 Running Mcs checks (${aoFileMcs.length} Mcs files)...`);
-  oReporter.fAddAll(fRunChecksStructural(aoFileMcs, sPathDir));
+  console.log(`\n🔍 Running Mcsh checks (${aoFileMcsh.length} Mcsh files)...`);
+  oReporter.fAddAll(fRunChecksMcsh(aoFileMcsh, sPathDir));
 
-  // ── 3. AI semantic checks (Mcs files, requires DeepSeek API key) ──────────
+  // ── 3. AI semantic checks (Mcsh files, requires DeepSeek API key) ──────────
   if (bUseAi) {
     console.log('\n🤖 Running AI semantic checks via DeepSeek...');
-    oReporter.fAddAll(await fRunChecksAi(aoFileMcs));
+    oReporter.fAddAll(await fRunChecksAi(aoFileMcsh));
   }
 
   oReporter.fPrint();

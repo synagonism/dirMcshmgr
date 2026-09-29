@@ -46,6 +46,7 @@ import {fSftp, fAskHidden} from './mSftp.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-7-0.2026-09-29: pc|wp|gs trees',
     'mMcshNew.mjs.1-6-0.2026-09-24: prompt password when run alone',
     'mMcshNew.mjs.1-5-0.2026-09-24: mMcshNew',
     'mMcsNew.mjs.1-4-1.2026-09-01: relations pc, wp, gs',
@@ -210,7 +211,7 @@ s =
   '  <h1 id="' + sNameId + 'dngH1">DOING of ' + sNameFormal + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'dngH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'dngdsn">description::\n' +
-  '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
+  '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>* \n' +
   '    <a class="clsHide" href="#' + sNameId + 'dngdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'dngnam">name::\n' +
@@ -222,7 +223,7 @@ s =
   '  <h1 id="' + sNameId + 'evgH1">evoluting of ' + sNameFormal + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'evgH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'evgdsn">description::\n' +
-  '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
+  '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McshTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'evgdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'evgnam">name::\n' +
@@ -231,68 +232,59 @@ s =
   '    <a class="clsHide" href="#' + sNameId + 'evgnam"></a></p>\n' +
   '  </section>\n' +
   '\n' +
-  '  <section id="' + sNameId + 'pct">\n' +
-  '  <h1 id="' + sNameId + 'pctH1">PARENT-CHILD-TREE of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'pctH1"></a></h1>\n' +
-  '  <p id="' + sNameId + 'pctdsn">description::\n' +
-  '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
-  '    <br>· parent-child relations of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'pctdsn"></a></p>\n' +
-  '  <p id="' + sNameId + 'pctnam">name::\n' +
+  '  <section id="' + sNameId + 'pctr">\n' +
+  '  <h1 id="' + sNameId + 'pctrH1">PARENT-CHILD-TREE of ' + sNameFormal + '\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'pctrH1"></a></h1>\n' +
+  '  <p id="' + sNameId + 'pctrdsn">description::\n' +
+  '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'pctrdsn"></a></p>\n' +
+  '  <p id="' + sNameId + 'pctrnam">name::\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'parent-child-tree,\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'child-parent-tree,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'pctnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'pntr">parent-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'parent-tree,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'pntr"></a></p>\n' +
-  '  <p id="' + sNameId + 'ctr">child-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'child-tree,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'pctrnam"></a></p>\n' +
+  '  <p id="' + sNameId + 'rtr">parent-tree::\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-rtr,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'rtr"></a></p>\n' +
+  '  <p id="' + sNameId + 'ctr">child-tree-of::\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-ctr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'ctr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
-  '  <section id="' + sNameId + 'wpt">\n' +
-  '  <h1 id="' + sNameId + 'wptH1">WHOLE-PART-TREE of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'wptH1"></a></h1>\n' +
-  '  <p id="' + sNameId + 'wptdsn">description::\n' +
-  '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
-  '    <br>· whole-part relations of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'wptdsn"></a></p>\n' +
-  '  <p id="' + sNameId + 'wptnam">name::\n' +
+  '  <section id="' + sNameId + 'wptr">\n' +
+  '  <h1 id="' + sNameId + 'wptrH1">WHOLE-PART-TREE of ' + sNameFormal + '\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'wptrH1"></a></h1>\n' +
+  '  <p id="' + sNameId + 'wptrdsn">description::\n' +
+  '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'wptrdsn"></a></p>\n' +
+  '  <p id="' + sNameId + 'wptrnam">name::\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'whole-part-tree,\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'part-whole-tree,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'wptnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'wtr">whole-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'wptrnam"></a></p>\n' +
+  '  <p id="' + sNameId + 'wtr">whole-tree::\n' +
   '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntwtr">Sympan</a>.\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'whole-tree,\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-wtr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wtr"></a></p>\n' +
-  '  <p id="' + sNameId + 'ptr">part-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'part-tree,\n' +
+  '  <p id="' + sNameId + 'ptr">part-tree::\n' +
+  '    <br>* McshEngl.' + sNameFormal + 'ptr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'ptr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
-  '  <section id="' + sNameId + 'gst">\n' +
-  '  <h1 id="' + sNameId + 'gstH1">GENERIC-SPECIFIC-TREE of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'gstH1"></a></h1>\n' +
-  '  <p id="' + sNameId + 'gstdsn">description::\n' +
-  '    <br>× McsHitp-creation: {' + moUtil.fDateYMD() + '}\n' +
-  '    <br>· generic-specific relations of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'gstdsn"></a></p>\n' +
-  '  <p id="' + sNameId + 'gstnam">name::\n' +
+  '  <section id="' + sNameId + 'gstr">\n' +
+  '  <h1 id="' + sNameId + 'gstrH1">GENERIC-SPECIFIC-TREE of ' + sNameFormal + '\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'gstrH1"></a></h1>\n' +
+  '  <p id="' + sNameId + 'gstrdsn">description::\n' +
+  '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'gstrdsn"></a></p>\n' +
+  '  <p id="' + sNameId + 'gstrnam">name::\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'generic-specific-tree,\n' +
   '    <br>* McshEngl.' + sNameFormal + '\'specific-generic-tree,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'gstnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'gtr">generic-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'gstrnam"></a></p>\n' +
+  '  <p id="' + sNameId + 'gtr">generic-tree::\n' +
   '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idOverview">entity</a>.\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'generic-tree,\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-gtr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gtr"></a></p>\n' +
-  '  <p id="' + sNameId + 'str">specific-tree-of-' + sNameFormal + '::\n' +
-  '    <br>* ,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '.specific-tree,\n' +
+  '  <p id="' + sNameId + 'str">specific-tree::\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-str,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'str"></a></p>\n' +
   '  </section>\n' +
   '\n' +

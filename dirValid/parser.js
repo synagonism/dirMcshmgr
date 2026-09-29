@@ -1,8 +1,8 @@
 /**
  * parser.js
- * Parses Mcs*.last.html files into structured JavaScript objects.
+ * Parses Mcsh*.last.html files into structured JavaScript objects.
  *
- * The three Mcs types in the whole-part structure:
+ * The three Mcsh types in the whole-part structure:
  *
  *  1) cnptFile
  *     The file itself is a concept. Its identity is in <section id="idOverview">.
@@ -11,7 +11,7 @@
  *
  *  2) cnptSect   (the main type)
  *     Every <section id="idXxx"> that contains a <p> whose text starts with "name::"
- *     and has at least one Mcs* entry is a cnptSect. Structure:
+ *     and has at least one Mcsh* entry is a cnptSect. Structure:
  *     - sNameId             the section's id= attribute
  *     - sNameTitle          text of the first <h1|h2|h3|h4> in the section
  *     - nHeadingLevel       1–9
@@ -19,7 +19,7 @@
  *     - sIdWhole_elmt       id of the enclosing <section>, or null
  *     - aoPara              all <p> elements directly in this section
  *     - oParaByTitle        paragraphs indexed by their keyword (e.g. "description", "name")
- *     - aName               parsed Mcs* entries from the name:: paragraph
+ *     - aName               parsed Mcsh* entries from the name:: paragraph
  *     - aLinks              all hrefs found in this section
  *
  *  3) cnptPara
@@ -132,7 +132,7 @@ export function fExtractContentHrefs(sHtmlIn) {
   return [...new Set(aLinks)]; // array unique hrefs only
 }
 
-// ─── Mcs name-entry parser ────────────────────────────────────────────────────
+// ─── Mcsh name-entry parser ────────────────────────────────────────────────────
 
 /**
  * DOING: find the-names of text of paragraph with lines: "* McsEngl.McshExml'att001-attribute, {2026-04-23}"
@@ -143,7 +143,7 @@ function fReadNameEntries(sTextIn) {
   const aoName = [];
   for (const sLine of sTextIn.split('\n')) {
     // A name entry line: "* McsEngl.McshExml'att001-attribute, {2026-04-23}"
-    const aNameMatch = sLine.match(/\* (Mcs[A-Z][^\n,]+),/);
+    const aNameMatch = sLine.match(/\* (Mcsh[A-Z][^\n,]+),/);
     if (!aNameMatch) continue;
     const sNameRaw = aNameMatch[1]; // "McsEngl.McshExml'att001 attribute"
 
@@ -169,7 +169,7 @@ function fReadNameEntries(sTextIn) {
  *   sNameId,       // value of id= attribute, or null
  *   sNameTitle,    // keyword before "::" in the first text line, or null
  *   sText,         // full plain text content
- *   aoName,        // parsed Mcs* name objects
+ *   aoName,        // parsed Mcsh* name objects
  *   aName,         // array of object-names
  *   aLinks,        // content hrefs
  * }
@@ -201,7 +201,7 @@ function fReadBlockMcshPara(sBlockHtml, sTag) {
   const aoName = fReadNameEntries(sText);
   const aName = aoName.map(oName => oName.sName);
 
-  // A paragraph-concept: has an id AND has Mcs* names AND is NOT a name:: paragraph
+  // A paragraph-concept: has an id AND has Mcsh* names AND is NOT a name:: paragraph
   // (name::-paragraphs belong to the cnptSect, not a separate concept)
   const bIsCnptPara =
     sNameId !== null &&
@@ -400,7 +400,7 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   const aLinks = fExtractContentHrefs(sRawHtml);
 
   // A cnptSect is a section that carries a name:: paragraph with at least one
-  // valid Mcs* entry. Structural sections (TOC, headers, plain prose) have no
+  // valid Mcsh* entry. Structural sections (TOC, headers, plain prose) have no
   // name:: and are labelled 'sect' so they are not treated as concepts.
   const bIsCnptSect = (oParaByTitle['name'] ?? []).length > 0 && aName.length > 0;
 
@@ -457,7 +457,7 @@ export function fParseFile(sPathFile) {
   const sTitleRaw = aTitleMatch ? fStripTags(aTitleMatch[1]) : '';
   const aVersionMatch = sTitleRaw.match(/\(([^)]+)\)/);
   const sVersion  = aVersionMatch ? aVersionMatch[1].trim() : null; //McsCor000015.1-7-0.2026-06-22
-  const sNameTitle = sTitleRaw.replace(/\s*\([^)]*\)\s*/g, '').trim(); //Mcs.McshExml!=example-McsHitp
+  const sNameTitle = sTitleRaw.replace(/\s*\([^)]*\)\s*/g, '').trim(); //Mcsh.McshExml!=example-McsHitp
 
   // ── all id= values (for broken-anchor checking) ───────────────────────────
   const oSetId = fExtractId(sFileRaw);
@@ -470,7 +470,7 @@ export function fParseFile(sPathFile) {
 
   const aoCnptSect = [];
   const aoPara  = [];
-  // file-Mcs = the idOverview section (always the file's own concept)
+  // file-Mcsh = the idOverview section (always the file's own concept)
   let oSectOverview = null;
 
   for (const oRawSect of aoRawSect) {
