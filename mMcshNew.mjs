@@ -244,9 +244,11 @@ s =
   '    <a class="clsHide" href="#' + sNameId + 'pctrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'rtr">parent-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-rtr,\n' +
+  '    <br>===\n' +
   '    <a class="clsHide" href="#' + sNameId + 'rtr"></a></p>\n' +
   '  <p id="' + sNameId + 'ctr">child-tree-of::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-ctr,\n' +
+  '    <br>===\n' +
   '    <a class="clsHide" href="#' + sNameId + 'ctr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
@@ -261,11 +263,13 @@ s =
   '    <br>* McshEngl.' + sNameFormal + '\'part-whole-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'wtr">whole-tree::\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntwtr">Sympan</a>.\n' +
   '    <br>* McshEngl.' + sNameFormal + '-wtr,\n' +
+  '    <br>===\n' +
+  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntwtr">Sympan</a>.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wtr"></a></p>\n' +
   '  <p id="' + sNameId + 'ptr">part-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + 'ptr,\n' +
+  '    <br>* McshEngl.' + sNameFormal + '-ptr,\n' +
+  '    <br>===\n' +
   '    <a class="clsHide" href="#' + sNameId + 'ptr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
@@ -280,11 +284,13 @@ s =
   '    <br>* McshEngl.' + sNameFormal + '\'specific-generic-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'gtr">generic-tree::\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idOverview">entity</a>.\n' +
   '    <br>* McshEngl.' + sNameFormal + '-gtr,\n' +
+  '    <br>===\n' +
+  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idOverview">entity</a>.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gtr"></a></p>\n' +
   '  <p id="' + sNameId + 'str">specific-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-str,\n' +
+  '    <br>===\n' +
   '    <a class="clsHide" href="#' + sNameId + 'str"></a></p>\n' +
   '  </section>\n' +
   '\n' +

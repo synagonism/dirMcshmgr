@@ -53,6 +53,11 @@
         "command": "mcshv.openByCode",
         "title": "Open McsHitp file by code",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.openByCodeOnly",
+        "title": "Open McsHitp file by code only (no visual)",
+        "category": "Mcs"
       }
     ],
     "menus": {

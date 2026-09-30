@@ -43,12 +43,24 @@ function fActivate(context) {
       supportsMultipleEditorsPerDocument: false,
     })
   );
+  // Open oUri as a source text editor in column One; when nLine > 0, put the cursor
+  // at that 1-based line and scroll it into view. Reused by mcshv.open, openByCode
+  // and openByCodeOnly.
+  const fRevealSource = async (oUri, nLine) => {
+    const oEd = await vscode.window.showTextDocument(oUri, { viewColumn: vscode.ViewColumn.One, preview: false });
+    if (nLine > 0 && oEd) {
+      const oPos = new vscode.Position(Math.max(0, nLine - 1), 0);
+      oEd.selection = new vscode.Selection(oPos, oPos);
+      oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenter);
+    }
+    return oEd;
+  };
   context.subscriptions.push(
-    vscode.commands.registerCommand('mcshv.open', async (uri) => {
+    vscode.commands.registerCommand('mcshv.open', async (uri, nLine) => {
       const oTarget = uri || (vscode.window.activeTextEditor && vscode.window.activeTextEditor.document.uri);
       if (!oTarget) return;
-      // Left column: the raw source text editor.
-      await vscode.window.showTextDocument(oTarget, { viewColumn: vscode.ViewColumn.One, preview: false });
+      // Left column: the raw source text editor (positioned at nLine when given).
+      await fRevealSource(oTarget, nLine);
       // Right column: the visual custom editor, which receives focus (default).
       await vscode.commands.executeCommand('vscode.openWith', oTarget, sViewType, {
         viewColumn: vscode.ViewColumn.Beside,
@@ -103,35 +115,66 @@ function fActivate(context) {
   // code, resolve it to dir<Cat>/<code>.last.html (Hitp → dir<Cat>/dirHitp/…) and open
   // it in Mcsh-visual-manager (source + visual). Works from the visual editor and from a raw
   // .last.html text editor (bound to Ctrl+Alt+P O in the user's keybindings).
+  // Prompt for a Mcs-code (prefilled with the current file's code), optionally with a
+  // trailing `:<line>` (e.g. McsCor000001:59), and resolve it to a
+  // dir<Cat>/<code>.last.html path. Returns { sPath, nLine } — sPath '' when cancelled
+  // or unresolved (a warning is shown for the latter), nLine 0 when no line was typed.
+  // Shared by openByCode (source + visual) and openByCodeOnly (source text editor alone).
+  const fPromptResolveCode = async () => {
+    // Current McsHitp file (if any) — used only to prefill the prompt and as the
+    // first root candidate. Absent when invoked cold (e.g. from index.html), which
+    // is fine: the prompt opens empty and the root is inferred from the workspace.
+    const oEd = vscode.window.activeTextEditor;
+    const sCur = (oEd && oEd.document.uri.scheme === 'file' && /\.last\.html$/i.test(oEd.document.uri.fsPath))
+      ? oEd.document.uri.fsPath : sVisualFile;
+    const sCurCode = sCur ? path.basename(sCur).replace(/\.last\.html$/i, '') : '';
+    const sInput = await vscode.window.showInputBox({
+      prompt: 'Open McsHitp file by code (optionally :line)',
+      placeHolder: 'e.g. McsCor000001:59, McsStn000005, HitpStnEcon000',
+      value: sCurCode,
+      valueSelection: sCurCode ? [0, sCurCode.length] : undefined,
+    });
+    if (!sInput) return { sPath: '', nLine: 0 };
+    // Split off a trailing `:<line>` BEFORE stripping `.last.html`, so both
+    // `code:59` and `code.last.html:59` parse.
+    let sRaw = sInput.trim();
+    let nLine = 0;
+    const oMLine = sRaw.match(/:(\d+)\s*$/);
+    if (oMLine) { nLine = parseInt(oMLine[1], 10); sRaw = sRaw.slice(0, oMLine.index); }
+    const sCode = sRaw.replace(/\.last\.html$/i, '');
+    // Resolve across candidate roots: fast deterministic path first, recursive
+    // search as the safety net. Handles the cold start (no current file).
+    const aRoots = fRootCandidates(sCur, sCurCode);
+    let sPath = '';
+    for (const sRoot of aRoots) { const p = fPathForCode(sRoot, sCode); if (p && fs.existsSync(p)) { sPath = p; break; } }
+    if (!sPath) for (const sRoot of aRoots) { const p = fSearchByCode(sRoot, sCode); if (p) { sPath = p; break; } }
+    if (!sPath) { vscode.window.showWarningMessage('Mcsh-visual-manager: no file for code “' + sCode + '”.'); return { sPath: '', nLine: 0 }; }
+    return { sPath, nLine };
+  };
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.openByCode', async () => {
-      // Current McsHitp file (if any) — used only to prefill the prompt and as the
-      // first root candidate. Absent when invoked cold (e.g. from index.html), which
-      // is fine: the prompt opens empty and the root is inferred from the workspace.
-      const oEd = vscode.window.activeTextEditor;
-      const sCur = (oEd && oEd.document.uri.scheme === 'file' && /\.last\.html$/i.test(oEd.document.uri.fsPath))
-        ? oEd.document.uri.fsPath : sVisualFile;
-      const sCurCode = sCur ? path.basename(sCur).replace(/\.last\.html$/i, '') : '';
-      const sInput = await vscode.window.showInputBox({
-        prompt: 'Open McsHitp file by code',
-        placeHolder: 'e.g. McsStn000005, HitpStnEcon000, Mcs000000',
-        value: sCurCode,
-        valueSelection: sCurCode ? [0, sCurCode.length] : undefined,
-      });
-      if (!sInput) return;
-      const sCode = sInput.trim().replace(/\.last\.html$/i, '');
-      // Resolve across candidate roots: fast deterministic path first, recursive
-      // search as the safety net. Handles the cold start (no current file).
-      const aRoots = fRootCandidates(sCur, sCurCode);
-      let sPath = '';
-      for (const sRoot of aRoots) { const p = fPathForCode(sRoot, sCode); if (p && fs.existsSync(p)) { sPath = p; break; } }
-      if (!sPath) for (const sRoot of aRoots) { const p = fSearchByCode(sRoot, sCode); if (p) { sPath = p; break; } }
-      if (!sPath) { vscode.window.showWarningMessage('Mcsh-visual-manager: no file for code “' + sCode + '”.'); return; }
+      const { sPath, nLine } = await fPromptResolveCode();
+      if (!sPath) return;
       // A visual editor is open → reuse its single tab: navigate its iframe (the
       // bridge `nav` retargets the edit doc + source pane). Else open a fresh pair.
       const sUrl = fNavigateVisual ? fDisplayUrlForPath(sPath) : '';
-      if (fNavigateVisual && sUrl) fNavigateVisual(sUrl);
-      else await vscode.commands.executeCommand('mcshv.open', vscode.Uri.file(sPath));
+      if (fNavigateVisual && sUrl) {
+        fNavigateVisual(sUrl);
+        if (nLine > 0) await fRevealSource(vscode.Uri.file(sPath), nLine);  // position left source pane
+      } else {
+        await vscode.commands.executeCommand('mcshv.open', vscode.Uri.file(sPath), nLine);
+      }
+    })
+  );
+  // Open a McsHitp page BY CODE, source ONLY: resolve the code then open just the raw
+  // .last.html text editor — no visual-manager pane. Because the custom editor is
+  // contributed with priority "option" (not default), showTextDocument opens the
+  // plain text editor. Bound to Ctrl+Alt+P O O in the user's keybindings.
+  context.subscriptions.push(
+    vscode.commands.registerCommand('mcshv.openByCodeOnly', async () => {
+      const { sPath, nLine } = await fPromptResolveCode();
+      if (!sPath) return;
+      await fRevealSource(vscode.Uri.file(sPath), nLine);   // nLine 0 → opens at top
     })
   );
   // Source -> Visual: when the active source tab becomes a different editable page
