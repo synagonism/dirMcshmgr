@@ -46,6 +46,7 @@ import {fSftp, fAskHidden} from './mSftp.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-8-0.2026-09-30: entity-gtr|Sympan-wtr',
     'mMcshNew.mjs.1-7-0.2026-09-29: pc|wp|gs trees',
     'mMcshNew.mjs.1-6-0.2026-09-24: prompt password when run alone',
     'mMcshNew.mjs.1-5-0.2026-09-24: mMcshNew',
@@ -265,7 +266,7 @@ s =
   '  <p id="' + sNameId + 'wtr">whole-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-wtr,\n' +
   '    <br>===\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntwtr">Sympan</a>.\n' +
+  '    <br>* ... Sympan-wtr.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wtr"></a></p>\n' +
   '  <p id="' + sNameId + 'ptr">part-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-ptr,\n' +
@@ -286,7 +287,7 @@ s =
   '  <p id="' + sNameId + 'gtr">generic-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-gtr,\n' +
   '    <br>===\n' +
-  '    <br>* ... <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idOverview">entity</a>.\n' +
+  '    <br>* ... entity-gtr.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gtr"></a></p>\n' +
   '  <p id="' + sNameId + 'str">specific-tree::\n' +
   '    <br>* McshEngl.' + sNameFormal + '-str,\n' +
