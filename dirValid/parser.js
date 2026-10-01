@@ -31,7 +31,7 @@
  * Returned per file:
  * {
  *   sType: 'cnptFile',
- *   sPathFile, sNameFile, sNameDir,
+ *   sNameIdAbso, sNameFile, sNameDir,
  *   sNameTitle,     // text from <title> (name part only)
  *   sVersion,       // e.g. "McsCor000015.1-4-0.2026-03-30"
  *   oSectOverview,  // the idOverview cnptSect (= the file's own concept)
@@ -424,17 +424,17 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
  * INPUT: one McsFile given its path.
  * OUTPUT: one cnptFile object (see header of this file).
  */
-export function fParseFile(sPathFile) {
-  // sPathFile: C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
+export function fParseFile(sNameIdAbso) {
+  // sNameIdAbso: C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
   let sFileRaw;
   try {
-    sFileRaw = fs.readFileSync(sPathFile, 'utf8');
+    sFileRaw = fs.readFileSync(sNameIdAbso, 'utf8');
   } catch (e) {
     return {
       sType: 'cnptFile',
-      sPathFile,
-      sNameFile: path.basename(sPathFile), // McshCor000015.last.html
-      sNameDir: path.basename(path.dirname(sPathFile)), // dirCor
+      sNameIdAbso,
+      sNameFile: path.basename(sNameIdAbso), // McshCor000015.last.html
+      sNameDir: path.basename(path.dirname(sNameIdAbso)), // dirCor
       sError: e.message,
       oSectOverview: null,
       aoCnptSect: [],
@@ -491,9 +491,9 @@ export function fParseFile(sPathFile) {
 
   return {
     sType: 'cnptFile',
-    sPathFile,
-    sNameFile: path.basename(sPathFile),
-    sNameDir: path.basename(path.dirname(sPathFile)),
+    sNameIdAbso,
+    sNameFile: path.basename(sNameIdAbso),
+    sNameDir: path.basename(path.dirname(sNameIdAbso)),
     sNameTitle,
     sVersion,
     oSectOverview,

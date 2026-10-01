@@ -1,7 +1,7 @@
 /**
  * reporter.js
  * Collects issues and prints a summary report.
- * Can also write JSON and HTML reports.
+ * Can also write HTML reports.
  *
  * Issue object shape (from structural.js / ai-checks.js):
  *   { sLevel, sCode, sNameFile, sConcept, sIdConcept, nLine, sMessage }
@@ -96,7 +96,7 @@ export function fReporter() {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MCS Consistency Report</title>
+<title>Hitp|Mcsh Consistency Report</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -113,7 +113,7 @@ export function fReporter() {
 </style>
 </head>
 <body>
-<h1>MCS Consistency Report</h1>
+<h1>Hitp|Mcsh Consistency Report</h1>
 <p>Generated: ${new Date().toLocaleString()}</p>
 <div class="summary">
   <span style="color:#c00">❌ ${fError().length} errors</span>

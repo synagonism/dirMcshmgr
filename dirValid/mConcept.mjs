@@ -1,5 +1,5 @@
 /*
- * mConcept.js - module functions on concepts-of-Mcsh_lago (Mcsh)
+ * mConcept.mjs - module functions on concepts-of-Mcsh_lago (Mcsh), for Nodejs
  * The MIT License (MIT)
  *
  * Copyright (c) 2026 Kaseluris.Nikos.1959 (humnSngu)
@@ -23,14 +23,25 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
+ * DOING: it is the-Nodejs-version of mConcept.js (the-browser-version).
+ *   The-parsing-functions are the-same; only the-three browser-couplings differ:
+ *   - no import of mMcsh2.js (it needs a-DOM),
+ *   - the-relative-name-id is an-argument, NOT window.location.pathname,
+ *   - the-file is read with moFs, NOT with fetch.
+ * RUN alone:
+ *   node dirValid/mConcept.mjs <sNameIdRela> [sPathDirMcsh] [--verbose]
  */
 
-import * as omMcsh from '../mMcsh2.js'
+import moFs from 'fs'
+import moPath from 'path'
+import { pathToFileURL } from 'url'
 
 const
-  // contains the-versions of mConcept.js 
+  // contains the-versions of mConcept.mjs
   aVersion = [
-    'mConcept.js.0-4-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
+    'mConcept.mjs.0-2-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
+    'mConcept.mjs.0-1-0.2026-10-01: Nodejs-version of mConcept.js',
     'mConcept.js.0-3-0.2026-08-23: Claude review',
     'mConcept.js.0-3-0.2026-08-14: fReadMcsLago_names',
     'mConcept.js.0-2-0.2026-06-25: fReadFileCnpt',
@@ -38,32 +49,36 @@ const
   ],
   // the-PoS-keys of a-lagoName-object,
   aPosKey = ['aNoun', 'aCase', 'aAdje', 'aAdve', 'aVerb', 'aConj'],
-  ooFile_cnpt = omMcsh.ooFile_cnpt, // {sNameIdRela: oFile_cnpt}
-  sProjectPath = omMcsh.sPathSite + "dirMcsh/", // http://localhost/dirMcsh/
-  sFileNameRela = window.location.pathname.split("dirMcsh/")[1] // dirCor/McsCor000....last.html
-const oPath = {
-  join: (...parts) => parts.filter(Boolean).join('/'),
-  resolve: (...parts) => '/' + parts.filter(Boolean).join('/'),
-  basename: (str) => str.split('/').pop(),
-  dirname: (str) => str.split('/').slice(0, -1).join('/'),
-  extname: (str) => {
-    const i = str.lastIndexOf('.');
-    return i > 0 ? str.slice(i) : '';
-  }
-};
+  ooFile_cnpt = {}; // {sNameIdRela: oFile_cnpt}
 
-let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}}
+// the-diagnostics are off by default: on a-whole-worldview they are noise.
+let bVerbose = false;
+
+/**
+ * DOING: prints a-diagnostic ONLY when bVerbose.
+ */
+function fWarn(sMsgIn) {
+  if (bVerbose) console.log(sMsgIn);
+}
+
+/**
+ * DOING: a-relative-name-id uses '/' on every OS, also on Windows.
+ */
+function fToPosix(sPathIn) {
+  return String(sPathIn ?? '').replace(/\\/g, '/');
+}
 
 
 /**
  * DOING: parses a-file-concept and returns a-JS-object of it.
- * INPUT: one file-concept given its relative-path (dirCor/McshCor000015.last.html).
+ * INPUT: one file-concept given its relative-path (dirCor/McshCor000015.last.html)
+ *   and the-path of dirMcsh (default: the-current-dir, we run from dirMcsh).
  * OUTPUT: one file-concept-object:
  * {
  *   sType,          // 'cnptFile',
  *   sNameFile,      // McshCor000015.last.html
  *   sNameDir,       // dirCor
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
+ *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
  *   sNameIdRela,    // dirCor/McshCor000015.last.html
  *   sNameTitle,     // text from <title> (name part only)
  *   sNameFormal,    // the English formal-name
@@ -79,28 +94,32 @@ let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}
  *   oFileIdRelaCnpt,// {'sNameIdRela': oCnpt} the-part concepts
  * }
  */
-async function fReadMcshFile(sNameIdRela) {
+async function fReadMcshFile(sNameIdRelaIn, sPathDirMcshIn = process.cwd()) {
   // FIRST: check if this file-cnpt is known
-  // LAST: add this file-cnpt on ooFile_cnpt 
-  const sNameIdAbso = sProjectPath + sNameIdRela;
+  // LAST: add this file-cnpt on ooFile_cnpt
+  const sNameIdRela = fToPosix(sNameIdRelaIn);
+  const sNameIdAbso = moPath.join(moPath.resolve(sPathDirMcshIn), sNameIdRela);
   let aoTitlePara = [];
   let sOverview = '';
   let sFileRaw = '';
   let oNameLago = {};
   let sNameFormal = '';
-  oFileIdRelaCnpt = {};
+  // the-part-concepts of THIS file only: one object per call, no module-state.
+  const oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}}
 
   try {
-    const oResponse = await fetch(sNameIdAbso);
-    if (!oResponse.ok) throw new Error(`HTTP ${oResponse.status} ${oResponse.statusText}`);
-    sFileRaw = await oResponse.text();
+    sFileRaw = await moFs.promises.readFile(sNameIdAbso, 'utf8');
   } catch (e) {
     return {
       sType: 'cnptFile',
-      sNameIdAbso, // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
+      sNameIdAbso, // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
+      sNameIdRela, // dirCor/McshCor000015.last.html
       sError: e.message,
     };
   }
+
+  // the-file-context, it replaces the-module-globals of the-browser-version.
+  const oCtxFile = { sNameIdAbso, sNameIdRela };
 
   // ── <title> ──────────────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
@@ -108,7 +127,6 @@ async function fReadMcshFile(sNameIdRela) {
   const aVersionMatch = sTitleRaw.match(/\(([^)]+)\)/);
   const sVersion  = aVersionMatch ? aVersionMatch[1].trim() : null; //McsCor000015.1-7-0.2026-06-22
   const sNameTitle = sTitleRaw.replace(/\s*\([^)]*\)\s*/g, '').trim(); //Mcs.McshExml!=example-McsHitp
-  // console.log(sNameTitle)
 
   // ── split into sections ───────────────────────────────────────────────────
   const aoRaw_sect = fSplit_sections(sFileRaw);
@@ -116,25 +134,7 @@ async function fReadMcshFile(sNameIdRela) {
   idOverview: null: 0
   idMcshExmlatt001: null: 0
   idMcshExmlatt002: idMcshExmlatt001: 1
-  idMcshExmlatt003: idMcshExmlatt002: 2
-  idMcshExmlatt004: idMcshExmlatt003: 3
-  idMcshExmlatt005: idMcshExmlatt004: 4
-  idMcshExmlatt005b: idMcshExmlatt004: 4
-  idMcshExmlatt006: idMcshExmlatt005: 5
-  idMcshExmlenvt: null: 0
-  idMcshExmlmisc: null: 0
-  idMcshExmlirsc: null: 0
-  idMcshExmlrsceval: idMcshExmlirsc: 1
-  idMcshExmlrscsci: idMcshExmlirsc: 1
-  idMcshExmlsrtr: null: 0
-  idMcshExmldng: null: 0
-  idMcshExmlevg: null: 0
-  idMcshExmlpct: null: 0
-  idMcshExmlwpt: null: 0
-  idMcshExmlgst: null: 0
-  idMcshExmlgtr: idMcshExmlgst: 1
-  idMcshExmlstr: idMcshExmlgst: 1
-  idMcshExmlsdvBdr: idMcshExmlgst: 1
+  ...
   idMeta: null: 0
   idSupport: null: 0
   for (let i = 0; i < aoRaw_sect.length; i++) {
@@ -157,7 +157,7 @@ async function fReadMcshFile(sNameIdRela) {
 
       // Collect para-cnpt from this section's overview
       sOverview = fFindSect_overview(oRaw_sect.sRawHtml);
-      aoTitlePara = fParseOverview(sOverview, 'idOverview');
+      aoTitlePara = fParseOverview(sOverview, 'idOverview', oCtxFile, oFileIdRelaCnpt);
 
       // find name-para
       const sParaName = fFindPara_from_title(aoTitlePara, 'name');
@@ -165,13 +165,13 @@ async function fReadMcshFile(sNameIdRela) {
         // Name entries — from the name:: para only
         oNameLago = fReadMcsLago_names(sParaName);
         sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
-      } else console.log("error: no name-para");
+      } else fWarn("error: no name-para: " + sNameIdRela + "#idOverview");
 
       continue;
     }
 
     // Parse sect-cnpt candidate
-    const oSect = fReadMcshRaw_sect(oRaw_sect)
+    const oSect = fReadMcshRaw_sect(oRaw_sect, oCtxFile, oFileIdRelaCnpt)
     if ( oSect.sType === 'cnptSect') {
       oFileIdRelaCnpt[oSect.sNameIdRela] = oSect;
     }
@@ -181,8 +181,8 @@ async function fReadMcshFile(sNameIdRela) {
     sType: 'cnptFile',
     sNameIdAbso,
     sNameIdRela,
-    sNameFile: oPath.basename(sNameIdRela),
-    sNameDir: oPath.basename(oPath.dirname(sNameIdRela)),
+    sNameFile: moPath.posix.basename(sNameIdRela),
+    sNameDir: moPath.posix.basename(moPath.posix.dirname(sNameIdRela)),
     sNameTitle,
     sNameFormal,
     sVersion,
@@ -195,7 +195,7 @@ async function fReadMcshFile(sNameIdRela) {
 }
 
 /**
- * DOING: 
+ * DOING:
  * INPUT:
  * OUTPUT:
  */
@@ -203,7 +203,7 @@ function fIsDoing(sLinkIn) {
 }
 
 /**
- * DOING: 
+ * DOING:
  * INPUT:
  * OUTPUT:
  */
@@ -212,7 +212,7 @@ function fIsRelation(sLinkIn) {
 
 
 // ============================================================
-/** 
+/**
  * DOING: strip all HTML-tags, decode basic entities, collapse whitespace.
  *   <br>-tags are converted to \n FIRST so that name-entry lines stay separate.
  */
@@ -229,7 +229,7 @@ function fStripTags(sHtmlIn) {
     .trim();
 }
 
-/** 
+/**
  * DOING: Extract all id= values from a block of HTML
  * OUTPUT: Set<string> of all id= values found, for link-checking against hrefs later.
 */
@@ -513,13 +513,14 @@ function fFindName_frequent(aNameIn) {
 }
 
 /**
- * INPUT: one Raw-sect-object.
+ * INPUT: one Raw-sect-object, the-file-context {sNameIdAbso, sNameIdRela},
+ *   and the-oFileIdRelaCnpt of the-file, where the-para-concepts are added.
  * OUTPUT: one sect-cnpt or 'sect'-object.
  * We only parse Mcsh-para that are DIRECTLY part in this section, not inside
  * nested part <section> elements, to avoid double-counting.
  * {
  *   sType,          // 'cnptSect',
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idSection
+ *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idSection
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idSection
  *   sNameTitle,     // text from <h?>title::
  *   sNameFormal,    // the English formal-name
@@ -534,7 +535,7 @@ function fFindName_frequent(aNameIn) {
  *   aAttr,          // attributes of concept
  * }
  */
-function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
+function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }, oCtxFileIn, oFileIdRelaCnptIn) {
   //console.log(`   Parsing section: id=${sNameId} nDepth=${nDepth} sIdWhole_elmt=${sIdWhole_elmt}`);
   const sOverview = fFindSect_overview(sRawHtml);  // "<h? id=... <p ...</a></p>"
 
@@ -542,14 +543,13 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   const aHeadMatch = sOverview.match(/<h([1-9])\b[^>]*>([\s\S]*?)<\/h\1>/i);
   const sNameTitle  = aHeadMatch ? fStripTags(aHeadMatch[2]) : '';
   const nHeadingLevel = aHeadMatch ? parseInt(aHeadMatch[1]) : 1;
-  const sNameIdAbso = sProjectPath + sFileNameRela + '#' + sNameId;
-  const sNameIdRela = sFileNameRela + '#' + sNameId;
-  console.log(sNameIdRela)
+  const sNameIdAbso = oCtxFileIn.sNameIdAbso + '#' + sNameId;
+  const sNameIdRela = oCtxFileIn.sNameIdRela + '#' + sNameId;
   let oNameLago = {};
   let sNameFormal = '';
 
   // All direct-child Mcsh-para
-  const aoTitlePara = fParseOverview(sOverview, sNameId);
+  const aoTitlePara = fParseOverview(sOverview, sNameId, oCtxFileIn, oFileIdRelaCnptIn);
 
   // find name-para
   const sParaName = fFindPara_from_title(aoTitlePara, 'name');
@@ -557,7 +557,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
     // Name entries — from the name:: para only
     oNameLago = fReadMcsLago_names(sParaName);
     sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
-  } else console.log("error: no name-para");
+  } else fWarn("error: no name-para: " + sNameIdRela);
 
   // if aNames.length > 0, this is a sect-cnpt
   if ((oNameLago != null && Object.keys(oNameLago).length > 0) &&
@@ -593,7 +593,7 @@ function fFindPara_from_title(aoTitleParaIn, sNameIn) {
   let sPara = null;
   for (const oP of aoTitleParaIn) {
     if (oP.sNameTitle === sNameIn) {
-      if (sPara !== null) console.log("error: more than one para with title: " + oP.sNameTitle);
+      if (sPara !== null) fWarn("error: more than one para with title: " + oP.sNameTitle);
       sPara = oP.sPara;
     }
   }
@@ -603,27 +603,27 @@ function fFindPara_from_title(aoTitleParaIn, sNameIn) {
 /**
  * DOING: parse overview of section.
  * OUTPUT: returns array of objects title-para [{sNameTitle, sPara}]
- *    also if para is concept, add it to oFileIdRelaCnpt.
+ *    also if para is concept, add it to oFileIdRelaCnptIn.
  */
-function fParseOverview(sOverviewIn, sNameId) {
+function fParseOverview(sOverviewIn, sNameId, oCtxFileIn, oFileIdRelaCnptIn) {
   const aoTitlePara = [];
   const rP = /<p\b[^>]*>[\s\S]*?<\/p>/gi;
   // Mcsh-para could-be and div with p|table|ol|ul members
   const rDiv = /<div\b[^>]*>[\s\S]*?<\/div>/gi;
   let aParaMatch;
   while ((aParaMatch = rP.exec(sOverviewIn)) !== null) {
-    const oP = fReadParaP(aParaMatch[0], sNameId);
+    const oP = fReadParaP(aParaMatch[0], sNameId, oCtxFileIn);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
-    // if oP is concept add oFileIdRelaCnpt
+    // if oP is concept add oFileIdRelaCnptIn
     if (oP.sType === 'cnptPara') {
-      oFileIdRelaCnpt[oP.sNameIdRela] = oP;
+      oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
     }
   }
   while ((aParaMatch = rDiv.exec(sOverviewIn)) !== null) {
-    const oP = fReadParaDiv(aParaMatch[0], sNameId);
+    const oP = fReadParaDiv(aParaMatch[0], sNameId, oCtxFileIn);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
     if (oP.sType === 'cnptPara') {
-      oFileIdRelaCnpt[oP.sNameIdRela] = oP;
+      oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
     }
   }
 
@@ -636,13 +636,13 @@ function fParseOverview(sOverviewIn, sNameId) {
  * {
  *   sType,          // 'cnptPara',
  *   sSubtype,       // 'p',
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
+ *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
  *   sNameFormal,    // the English formal-name
  *   oNameLago,     // contains oNameEngl, oNameZhon, ...
  *   sCreation,      // from × Mcsh-creation:
- *   sPara,          // p element 
+ *   sPara,          // p element
  *   sIdWhole_elmt,  // IdRela of whole-section
  *   sAttrWhole,     // whole-concept of concept
  *   sAttrGeneric,   // generic-concept of concept
@@ -650,16 +650,14 @@ function fParseOverview(sOverviewIn, sNameId) {
  *   aAttr,          // attributes of concept
  * }
  */
-function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
+function fReadParaP(sPHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
   const aIdTitleMatch = sPHtmlIn.match(/<p\b[^>]*\bid="([^"]+)"[^>]*>([^:\n]+)::/);
   const sNameId = aIdTitleMatch ? aIdTitleMatch[1] : null;
   // console.log(`Parsing paragraph id=${sNameId}`);
-  const sNameIdAbso = sProjectPath + sFileNameRela + '#' + sNameId;
-  const sNameIdRela = sFileNameRela + '#' + sNameId;
+  const sNameIdAbso = oCtxFileIn.sNameIdAbso + '#' + sNameId;
+  const sNameIdRela = oCtxFileIn.sNameIdRela + '#' + sNameId;
   const sNameTitle = aIdTitleMatch ? aIdTitleMatch[2].trim() : null;
   const sPara = sPHtmlIn;
-  // console.log(sNameIdAbso)
-  // console.log(sNameTitle)
 
   // Name entries — parse regardless of sNameTitle, so para-concepts can be detected
   const oNameLago = fReadMcsLago_names(sPHtmlIn);
@@ -700,7 +698,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
  *   sType,          // 'cnptPara',
  *   sSubtype,       // 'div',
  *   sNameId,        // value of id= attribute, or null
- *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
+ *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
  *   sNameFormal,    // the English formal-name
@@ -713,17 +711,15 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
  *   aAttr,          // attributes of concept
  * }
  */
-function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
+function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
   // the-first <p> of the-div holds the-title, on any indentation and with any attributes.
   const aIdTitleMatch = sDivHtmlIn.match(/<div\b[^>]*\bid="([^"]+)"[^>]*>\s*<p\b[^>]*>([^:\n]+)::/);
   const sNameId = aIdTitleMatch ? aIdTitleMatch[1] : null;
   // console.log(`Parsing paragraph id=${sNameId}`);
-  const sNameIdAbso = sProjectPath + sFileNameRela + '#' + sNameId;
-  const sNameIdRela = sFileNameRela + '#' + sNameId;
+  const sNameIdAbso = oCtxFileIn.sNameIdAbso + '#' + sNameId;
+  const sNameIdRela = oCtxFileIn.sNameIdRela + '#' + sNameId;
   const sNameTitle = aIdTitleMatch ? aIdTitleMatch[2].trim() : null;
   const sPara = sDivHtmlIn;
-  console.log(sNameIdRela)
-  console.log(sNameTitle)
 
   // Name entries — parse regardless of sNameTitle, so para-concepts can be detected
   const oNameLago = fReadMcsLago_names(sDivHtmlIn);
@@ -757,19 +753,49 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
   }
 }
 
-// =========================================================== test:
-// we import mConcept.js in McsCor15
-// we see on console its output
-console.log(sFileNameRela) // dirCor/McshCor000015.last.html
-//const oCor15  = fReadMcshFile(sFileNameRela)
-//fReadParaP('<p id="idPara">name::</p>')
-//fReadParaDiv('<div id="idParaDiv">\n    <p>description::</p>')
-//fReadMcshRaw_sect({ sNameId:'idSect',
-                // sRawHtml: '<section id="idSection">\n  <h1 id="idSectionH1>sect-title\n    <a class="clsHide"></a>',
-                // nDepth: 0,
-                // sIdWhole_elmt: 'sIdWhole_elmt' })
-const oName = fReadMcsLago_names(" <br>* McshEngl.of!~conjEngl!⇒rltnAttribute_then_entity, ")
-console.log(oName.oLagoEngl.aConj[0])
+// =========================================================== run alone:
+// node dirValid/mConcept.mjs <sNameIdRela> [sPathDirMcsh] [--verbose]
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const aArg = process.argv.slice(2);
+  bVerbose = aArg.includes('--verbose');
+  const aArgPath = aArg.filter(sArg => !sArg.startsWith('--'));
+  const sNameIdRelaCli  = aArgPath[0];
+  const sPathDirMcshCli = aArgPath[1] ?? process.cwd();
+
+  if (!sNameIdRelaCli) {
+    console.log('mConcept.mjs - module functions on concepts-of-Mcsh_lago, for Nodejs');
+    console.log('  ' + aVersion[0]);
+    console.log('');
+    console.log('USAGE: node dirValid/mConcept.mjs <sNameIdRela> [sPathDirMcsh] [--verbose]');
+    console.log('  sNameIdRela   dirCor/McshCor000015.last.html');
+    console.log('  sPathDirMcsh  the-path of dirMcsh, default: the-current-dir');
+    console.log('');
+    // smoke-test of fReadMcsLago_names
+    const oName = fReadMcsLago_names(" <br>* McshEngl.of!~conjEngl!⇒rltnAttribute_then_entity, ");
+    const sConj   = oName?.oLagoEngl?.aConj?.[0] ?? '';
+    const sFormal = oName?.oLagoEngl?.sNameFormal ?? '';
+    console.log('smoke-test fReadMcsLago_names:');
+    console.log("  aConj[0]    = '" + sConj   + "' " + (sConj === 'of' ? 'OK' : 'FAILED'));
+    console.log("  sNameFormal = '" + sFormal + "' " +
+      (sFormal === 'rltnAttribute_then_entity' ? 'OK' : 'FAILED'));
+  } else {
+    const oCnptFile = await fReadMcshFile(sNameIdRelaCli, sPathDirMcshCli);
+    // the-raw-HTML is too big to print: we print its size only.
+    const oPrint = {
+      ...oCnptFile,
+      sOverview: oCnptFile.sOverview === undefined
+        ? undefined : '[' + oCnptFile.sOverview.length + ' chars]',
+      aoRaw_sect: oCnptFile.aoRaw_sect === undefined
+        ? undefined : '[' + oCnptFile.aoRaw_sect.length + ' raw-sect: ' +
+          oCnptFile.aoRaw_sect.map(oSect => oSect.sNameId).join(', ') + ']',
+      oFileIdRelaCnpt: Object.fromEntries(
+        Object.entries(oCnptFile.oFileIdRelaCnpt ?? {}).map(([sKey, oCnpt]) =>
+          [sKey, oCnpt.sType + ' | ' + (oCnpt.sNameTitle ?? '') + ' | ' +
+            (oCnpt.oNameLago?.oLagoEngl?.sNameFormal ?? '')]))
+    };
+    console.log(JSON.stringify(oPrint, null, 2));
+  }
+}
 
 
 export {
@@ -777,4 +803,9 @@ export {
   fIsRelation,
   fReadMcshFile,
   fReadMcsLago_names,
+  fStripTags,
+  fExtractId,
+  fExtractContentHrefs,
+  fSplit_sections,
+  fFindSect_overview,
 }

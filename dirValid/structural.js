@@ -24,6 +24,7 @@
 
 const
   aVersion = [
+    'structural.js.0-5-0.2026-10-01: M08 per-token, set-notation not a date',
     'structural.js.0-4-0.2026-09-05: Mcsh-only (S→M), Hitp checks removed',
     'structural.js.0-3-0.2026-09-04: naming convention',
     'structural.js.0-2-0.2026-05-02: DATE not TeX',
@@ -170,22 +171,35 @@ function fCheckDuplicateName(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ [M08] DATE has NO {YYYY-MM-DD} format in line: "· {2022-4-27} evoluting ..."
-// in file: "McshCorTest.last.html"
+/** true when a brace token is *meant* to be a date: hyphen-joined numeric groups whose
+ *  first group is a year — 4 digits, or 3+ digits when more groups follow, so the typo
+ *  {202-03-28} is still caught.  Set notation and plain numbers — {1, 2}, {2}, {32},
+ *  {525}, {-1} — are not dates and are not judged. */
+function fIsDateCandidate(sTok) {
+  const sIn = sTok.slice(1, -1);              // drop the braces
+  if (!/^\d[\d-]*$/.test(sIn)) return false;  // digits+hyphens only, never leading '-'
+  const aGroup = sIn.split('-');
+  const nDigitYear = aGroup[0].length;
+  return nDigitYear === 4 || (nDigitYear >= 3 && aGroup.length > 1);
+}
+
+// ⚠️ [M08] DATE "{2022-4-27}" has NO {YYYY-MM-DD} format, judged per {token}, not per line
 function fCheckDate(aoFile) {
   const aoIssue = [];
-  const rDate1 = /\{\d{4}-\d{2}-\d{2}\}/;
-  const rDate2 = /\{\d{4}-\d{2}\}/;
-  const rDate3 = /\{\d{4}\}/;
+  const rDateGood = /^\{\d{4}(?:-\d{2}(?:-\d{2})?)?\}$/;
+  const rTex      = /\\\([\s\S]*?\\\)/g;   // inline-TeX spans hold math, never dates
+  const rBrace    = /\{[^{}]*\}/g;
   for (const oFile of aoFile) {
     for (const oSect of oFile.aoCnptSect) {
       for (const oPara of oSect.aoPara) {
         for (const sLine of oPara.sText.split('\n')) {
-          // contains {d-} not Tex not goodDates
-          if (/\{[\d-]+\}/.test(sLine) && !/\\\(\s*(.*?)\s*\\\)/.test(sLine) &&
-             !rDate1.test(sLine) && !rDate2.test(sLine) && !rDate3.test(sLine)) {
+          const oSetTokBad = new Set();       // one issue per distinct token on the line
+          for (const [sTok] of sLine.replace(rTex, ' ').matchAll(rBrace)) {
+            if (fIsDateCandidate(sTok) && !rDateGood.test(sTok)) oSetTokBad.add(sTok);
+          }
+          for (const sTok of oSetTokBad) {
             aoIssue.push(fIssue('WARN', 'M08', oFile.sNameFile, oSect,
-              `DATE has NO {YYYY-MM-DD} format in line: "${sLine.trim()}" in file: "${oFile.sNameFile}"`,
+              `DATE "${sTok}" has NO {YYYY-MM-DD} format in line: "${sLine.trim()}" in file: "${oFile.sNameFile}"`,
               oFile.oMapIdLine.get(oPara.sNameId) ?? oFile.oMapIdLine.get(oSect.sNameId) ?? null));
           }
         }
@@ -195,9 +209,7 @@ function fCheckDate(aoFile) {
   return aoIssue;
 }
 
-// ─── main export ──────────────────────────────────────────────────────────────
-
-export function fRunChecksMcsh(aoFile, sPathDir) {
+function fRunChecksMcsh(aoFile, sPathDir) {
   const aoAll = [];
 
   process.stdout.write('   M01    File-Mcsh (idOverview)... ');
@@ -231,4 +243,8 @@ export function fRunChecksMcsh(aoFile, sPathDir) {
   console.log(`${aoDate.length} issues`);
 
   return aoAll;
+}
+
+export {
+  fRunChecksMcsh
 }
