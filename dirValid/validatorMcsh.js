@@ -35,17 +35,17 @@ const
   aArg = process.argv.slice(2);
 
 if (aArg.length === 0) {
-  console.error('Usage dirMcshmgr: node dirValid/validator <dirMcsh-path> [--ai] [--file <filename>]');
+  console.error('Usage: node validator <sNameDir> <sNameIdRela> [--ai]');
   process.exit(1);
 }
 
-const sPathDir     = aArg[0];
 const bUseAi       = aArg.includes('--ai');
-const nIndexFile   = aArg.indexOf('--file');
-const sFileSingle  = nIndexFile !== -1 ? aArg[nIndexFile + 1] : null;
+const aArgPath     = aArg.filter(sArg => !sArg.startsWith('--'));
+const sNameDir     = aArgPath[0];
+const sNameIdRela  = aArgPath[1] ? aArgPath[1] : null;
 
-if (!fs.existsSync(sPathDir)) {
-  console.error(`Directory not found: ${sPathDir}`);
+if (!fs.existsSync(sNameDir)) {
+  console.error(`Directory not found: ${sNameDir}`);
   process.exit(1);
 }
 
@@ -58,26 +58,29 @@ async function fMain() {
 
   // ── parse every file as generic Hitp ──────────────────────────────────────
   let aoFileHitp;
-  if (sFileSingle) {
-    const sPathFile = path.isAbsolute(sFileSingle) ? sFileSingle : path.join(sPathDir, sFileSingle);
-    console.log(`📄 Single-file mode: ${sFileSingle}`);
+  if (sNameIdRela) {
+    const sPathFile = path.isAbsolute(sNameIdRela) ? sNameIdRela : path.join(sNameDir, sNameIdRela);
+    console.log(`📄 Single-file mode: ${sNameIdRela}`);
     aoFileHitp = [fReadFileHitp(sPathFile)];
   } else {
-    console.log(`📂 Scanning: ${sPathDir}`);
-    aoFileHitp = fReadFileAllHitp(sPathDir);
+    console.log(`📂 Scanning: ${sNameDir}`);
+    aoFileHitp = fReadFileAllHitp(sNameDir);
     console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
   }
 
   // ── 1. Hitp checks (every file) ────────────────────────────────────────────
   console.log('🔍 Running Hitp checks...');
-  oReporter.fAddAll(fRunChecksHitp(aoFileHitp, sPathDir));
+  oReporter.fAddAll(fRunChecksHitp(aoFileHitp, sNameDir));
 
   // ── 2. Mcsh checks (files named Mcsh* only) ─────────────────────────────────
-  const aoFileMcsh = aoFileHitp
-    .filter(oFile => oFile.sNameFile.startsWith('Mcsh'))
-    .map(oFile => fReadFileMcsh(oFile.sPathFile));
+  // fReadFileMcsh(sNameDir, sNameIdRela) is async: await them all, and give it
+  // the-worldview-relative-id, NOT the-full-path.
+  const aoFileMcsh = await Promise.all(
+    aoFileHitp
+      .filter(oFile => oFile.sNameFile.startsWith('Mcsh'))
+      .map(oFile => fReadFileMcsh(sNameDir, path.relative(sNameDir, oFile.sPathFile))));
   console.log(`\n🔍 Running Mcsh checks (${aoFileMcsh.length} Mcsh files)...`);
-  oReporter.fAddAll(fRunChecksMcsh(aoFileMcsh, sPathDir));
+  oReporter.fAddAll(fRunChecksMcsh(aoFileMcsh, sNameDir));
 
   // ── 3. AI semantic checks (Mcsh files, requires DeepSeek API key) ──────────
   if (bUseAi) {

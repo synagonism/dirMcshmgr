@@ -97,9 +97,9 @@ function fToPosix(sPathIn) {
 async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
   // FIRST: check if this file-cnpt is known
   // LAST: add this file-cnpt on ooFile_cnpt
-  const sNameIdRela = sNameIdRelaIn;
+  // the-relative-id uses '/' on every OS, so moPath.posix reads it right on Windows.
+  const sNameIdRela = fToPosix(sNameIdRelaIn);
   const sNameIdAbso = moPath.join(sNameDirIn, sNameIdRela);
-  console.log(sNameIdAbso);
   let aoTitlePara = [];
   let sOverview = '';
   let sFileRaw = '';
@@ -122,6 +122,8 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
   // the-file-context, it replaces the-module-globals of the-browser-version.
   const oCtxFile = { sNameIdAbso, sNameIdRela };
 
+  const oMapIdLine   = fBuildMapLine(sFileRaw, /\bid="([^"]+)"/g);
+  
   // ── <title> ──────────────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
   const sTitleRaw = aTitleMatch ? fStripTags(aTitleMatch[1]) : '';
@@ -190,7 +192,9 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
     sError: null,
     ooNameLago,
     sOverview,
+    aoTitlePara,   // the-title-para of idOverview, they belong to the-cnptFile
     aoRaw_sect,
+    oMapIdLine,
     ooIdRelaCnpt
   };
 }
@@ -440,6 +444,8 @@ function fReadMcsLago_names(sTextIn) {
   for (const oName of aoName) {
     const sLagokey = 'oLago' + oName.sLago;
     if (!oLagoname[sLagokey]) oLagoname[sLagokey] = fNewLago_name();
+    // the-raw-name-lines, duplicates KEPT: a-name written twice is an-error to find.
+    oLagoname[sLagokey].aoName.push(oName);
     const aPos = oLagoname[sLagokey][fFindPos_key(oName.sPos)];
     if (!aPos.includes(oName.sName)) aPos.push(oName.sName);
   }
@@ -473,6 +479,9 @@ function fNewLago_name() {
   return {
     sNameFormal: '',
     sNameInformal: '',
+    // every name-line of this McsLago in document-order, duplicates kept:
+    // [{sLago, sName, sNameFormal, sNameTransl, sPos}]
+    aoName: [],
     aNoun: [], aCase: [], aAdje: [], aAdve: [], aVerb: [], aConj: []
   };
 }
@@ -567,6 +576,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }, oCtxFil
       sType: 'cnptSect',
       sNameIdAbso,
       sNameIdRela,
+      sNameId,
       sNameTitle,
       sNameFormal,
       ooNameLago,
@@ -614,7 +624,7 @@ function fParseOverview(sOverviewIn, sNameId, oCtxFileIn, oFileIdRelaCnptIn) {
   let aParaMatch;
   while ((aParaMatch = rP.exec(sOverviewIn)) !== null) {
     const oP = fReadParaP(aParaMatch[0], sNameId, oCtxFileIn);
-    aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
+    aoTitlePara.push({sNameTitle: oP.sNameTitle, sNameId: oP.sNameId ?? null, sPara: oP.sPara});
     // if oP is concept add oFileIdRelaCnptIn
     if (oP.sType === 'cnptPara') {
       oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
@@ -622,7 +632,7 @@ function fParseOverview(sOverviewIn, sNameId, oCtxFileIn, oFileIdRelaCnptIn) {
   }
   while ((aParaMatch = rDiv.exec(sOverviewIn)) !== null) {
     const oP = fReadParaDiv(aParaMatch[0], sNameId, oCtxFileIn);
-    aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
+    aoTitlePara.push({sNameTitle: oP.sNameTitle, sNameId: oP.sNameId ?? null, sPara: oP.sPara});
     if (oP.sType === 'cnptPara') {
       oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
     }
@@ -677,6 +687,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
       sSubtype: 'p',
       sNameIdAbso,
       sNameIdRela,
+      sNameId,
       sNameTitle,
       sNameFormal,
       ooNameLago,
@@ -687,6 +698,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
     return {
       sType: 'paraP',
       sNameTitle,
+      sNameId,
       sPara
     };
   }
@@ -739,6 +751,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
       sSubtype: 'div',
       sNameIdAbso,
       sNameIdRela,
+      sNameId,
       sNameTitle,
       sNameFormal,
       ooNameLago,
@@ -749,10 +762,29 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
     return {
       sType: 'paraDiv',
       sNameTitle,
+      sNameId,
       sPara
     };
   }
 }
+
+/**
+ * DOING: map each first-group capture of rPattern to its 1-based line number.
+ *   Single O(n) pass — the regex must be global and its matches monotonic.
+ *   Keeps the FIRST line an equal key appears on.
+ * OUTPUT: Map<string, number>.
+ */
+export function fBuildMapLine(sHtmlIn, rPattern) {
+  const oMap = new Map();
+  let aMatch, nLine = 1, nPos = 0;
+  rPattern.lastIndex = 0;
+  while ((aMatch = rPattern.exec(sHtmlIn)) !== null) {
+    while (nPos < aMatch.index) { if (sHtmlIn.charCodeAt(nPos) === 10) nLine++; nPos++; }
+    if (!oMap.has(aMatch[1])) oMap.set(aMatch[1], nLine);
+  }
+  return oMap;
+}
+
 
 // =========================================================== run alone:
 // node parserMcsh.js <sNameDir> <sNameIdRela> [--verbose]
@@ -761,7 +793,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   bVerbose = aArg.includes('--verbose');
   const aArgPath = aArg.filter(sArg => !sArg.startsWith('--'));
   const sNameDirCli  = aArgPath[0];
-  const sNameIdRelaCli  = aArgPath[1];
+  const sNameIdRelaCli  = aArgPath[1] ? aArgPath[1] : null;
 
   if (!sNameIdRelaCli) {
     console.log('parserMcsh.js - module functions on concepts-of-Mcsh_lago, for Nodejs');
