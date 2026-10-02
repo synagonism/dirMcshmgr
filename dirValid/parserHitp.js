@@ -247,7 +247,7 @@ function fReadElmtHitp(sElmtHtml) {
  * INPUT: one Hitp file given its path.
  * OUTPUT: one oFileHitp object (see header).
  */
-export function fParseFileHitp(sPathFile) {
+export function fReadFileHitp(sPathFile) {
   let sFileRaw;
   try {
     sFileRaw = fs.readFileSync(sPathFile, 'utf8');
@@ -381,7 +381,7 @@ export function fParseFileHitp(sPathFile) {
 
 // ─── directory scanner ────────────────────────────────────────────────────────
 
-export function fParseFileAllHitp(sPathDir) {
+export function fReadFileAllHitp(sPathDir) {
   let aPathFile;
   try {
     const sPattern = path.join(sPathDir, '**/*.last.html').replace(/\\/g, '/');
@@ -389,7 +389,7 @@ export function fParseFileAllHitp(sPathDir) {
   } catch {
     aPathFile = fWalkDir(sPathDir);
   }
-  return aPathFile.map(sPath => fParseFileHitp(sPath));
+  return aPathFile.map(sPath => fReadFileHitp(sPath));
 }
 
 function fWalkDir(sDir) {

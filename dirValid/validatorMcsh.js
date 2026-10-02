@@ -15,8 +15,8 @@
 
 import { fReadFileHitp, fReadFileAllHitp } from './parserHitp.js';
 import { fRunChecksHitp } from './structuralHitp.js';
-import { fReadFile } from './parser.js';
-import { fRunChecksMcsh } from './structural.js';
+import { fReadFileMcsh } from './parserMcsh.js';
+import { fRunChecksMcsh } from './structuralMcsh.js';
 import { fRunChecksAi } from './ai-checks.js';
 import { fReporter } from './reporter.js';
 import path from 'path';
@@ -75,7 +75,7 @@ async function fMain() {
   // ── 2. Mcsh checks (files named Mcsh* only) ─────────────────────────────────
   const aoFileMcsh = aoFileHitp
     .filter(oFile => oFile.sNameFile.startsWith('Mcsh'))
-    .map(oFile => fReadFile(oFile.sPathFile));
+    .map(oFile => fReadFileMcsh(oFile.sPathFile));
   console.log(`\n🔍 Running Mcsh checks (${aoFileMcsh.length} Mcsh files)...`);
   oReporter.fAddAll(fRunChecksMcsh(aoFileMcsh, sPathDir));
 

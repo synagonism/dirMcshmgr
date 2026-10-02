@@ -424,7 +424,7 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
  * INPUT: one McsFile given its path.
  * OUTPUT: one cnptFile object (see header of this file).
  */
-export function fParseFile(sNameIdAbso) {
+export function fReadFile(sNameIdAbso) {
   // sNameIdAbso: C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
   let sFileRaw;
   try {
@@ -509,7 +509,7 @@ export function fParseFile(sNameIdAbso) {
 
 // ─── directory scanner ────────────────────────────────────────────────────────
 
-export function fParseFileAll(sPathDir) {
+export function fReadFileAll(sPathDir) {
   let aPathFile;
   try {
     const sPattern = path.join(sPathDir, '**/*.last.html').replace(/\\/g, '/');
@@ -518,7 +518,7 @@ export function fParseFileAll(sPathDir) {
     aPathFile = fWalkDir(sPathDir);
   }
   // returns array of cnptFile objects
-  return aPathFile.map(sPath => fParseFile(sPath));
+  return aPathFile.map(sPath => fReadFile(sPath));
 }
 
 function fWalkDir(sDir) {

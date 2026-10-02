@@ -79,7 +79,7 @@ let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}
  *   oFileIdRelaCnpt,// {'sNameIdRela': oCnpt} the-part concepts
  * }
  */
-async function fReadMcshFile(sNameIdRela) {
+async function fReadFileMcsh(sNameIdRela) {
   // FIRST: check if this file-cnpt is known
   // LAST: add this file-cnpt on ooFile_cnpt 
   const sNameIdAbso = sProjectPath + sNameIdRela;
@@ -761,7 +761,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
 // we import mConcept.js in McsCor15
 // we see on console its output
 console.log(sFileNameRela) // dirCor/McshCor000015.last.html
-//const oCor15  = fReadMcshFile(sFileNameRela)
+//const oCor15  = fReadFileMcsh(sFileNameRela)
 //fReadParaP('<p id="idPara">name::</p>')
 //fReadParaDiv('<div id="idParaDiv">\n    <p>description::</p>')
 //fReadMcshRaw_sect({ sNameId:'idSect',
@@ -775,6 +775,6 @@ console.log(oName.oLagoEngl.aConj[0])
 export {
   fIsDoing,
   fIsRelation,
-  fReadMcshFile,
+  fReadFileMcsh,
   fReadMcsLago_names,
 }
