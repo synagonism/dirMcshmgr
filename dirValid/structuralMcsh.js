@@ -18,7 +18,7 @@
  *  Mcsh04  cnptSect missing name:: paragraph
  *  Mcsh05  cnptSect name:: has zero valid Mcsh* entries
  *  Mcsh06  cnptSect has no title
- *  Mcsh07  Duplicate McshEngl sName across entire worldview
+ *  Mcsh07  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
  *  Mcsh08  evoluting:: dates not in YYYY-MM-DD format
  */
 
@@ -26,6 +26,8 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-9-0.2026-10-03: Mcsh07 checks every McsLago, not only Engl',
+    'structuralMcsh.js.0-8-0.2026-10-03: Mcsh07 keys the-whole-name-line',
     'structuralMcsh.js.0-7-0.2026-10-02: Mcsh07 sees cnptFile-names and duplicates',
     'structuralMcsh.js.0-6-0.2026-10-02: parserMcsh-model (ooIdRelaCnpt, aoTitlePara)',
     'structural.js.0-5-0.2026-10-01: Mcsh08 per-token, set-notation not a date',
@@ -120,16 +122,23 @@ function fBuildMapName(aoCnptFile) {
   const oMap = new Map();
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    // the-names of the-cnptFile, the-cnptSect and the-cnptPara.
-    // only McshEngl is checked for duplicates, and aoName keeps the-duplicates
-    // of one name::-para, which the-aNoun|aVerb|... arrays deduplicate away.
+    // the-names of the-cnptFile, the-cnptSect and the-cnptPara, in EVERY McsLago.
+    // aoName keeps the-duplicates of one name::-para, which the-aNoun|aVerb|...
+    // arrays deduplicate away.
     for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
-      for (const oName of oCnpt.ooNameLago?.oLagoEngl?.aoName ?? []) {
-        if (!oMap.has(oName.sName)) oMap.set(oName.sName, []);
-        oMap.get(oName.sName).push({
-          sNameFile: oCnptFile.sNameFile, sNameId: fFindIdElmt(oCnpt),
-          sTitle: oCnpt.sNameTitle
-        });
+      for (const oLago of Object.values(oCnpt.ooNameLago ?? {})) {
+        for (const oName of oLago.aoName ?? []) {
+          // the-key is the-WHOLE name-line to the-comma WITH its McsLago:
+          // "McshEngl.young!~adjeEngl:animal", so "young" and
+          // "young!~adjeEngl:animal" are NOT duplicates, and the-same text in
+          // two McsLago (McshElln. and McshElla.) is NOT a-duplicate either.
+          const sKey = 'Mcsh' + oName.sLago + '.' + oName.sNameFull;
+          if (!oMap.has(sKey)) oMap.set(sKey, []);
+          oMap.get(sKey).push({
+            sNameFile: oCnptFile.sNameFile, sNameId: fFindIdElmt(oCnpt),
+            sTitle: oCnpt.sNameTitle
+          });
+        }
       }
     }
   }
@@ -230,16 +239,16 @@ function fCheckTitle(aoCnptFile) {
   return aoIssue;
 }
 
-// ❌ [Mcsh07] Duplicate McshEngl-name "exmlMcsh" appears in: McshCorTest.last.html#idName, McshCorTest.last.html#idName
+// ❌ [Mcsh07] Duplicated names:
 function fCheckDuplicateName(aoCnptFile) {
   const aoIssue = [];
   const oMapName = fBuildMapName(aoCnptFile);
   const oMapFileByName = new Map(aoCnptFile.map(oCnptFile => [oCnptFile.sNameFile, oCnptFile]));
-  for (const [sName, aoOccur] of oMapName) {
+  for (const [sNameFull, aoOccur] of oMapName) {
     if (aoOccur.length > 1) {
       const aLoc = aoOccur.map(oOccur => `${oOccur.sNameFile}#${oOccur.sNameId}`);
       const oSetLoc = new Set(aLoc);
-      // all occurrences in ONE place: the-name is written more than once in one para
+      // all occurrences in ONE place: the-name-line is written more than once in one para
       const sLoc = oSetLoc.size === 1
         ? `appears ${aoOccur.length} times in ${aLoc[0]}`
         : `appears in: ${aLoc.join(', ')}`;
@@ -247,7 +256,7 @@ function fCheckDuplicateName(aoCnptFile) {
       const oOcc = aoOccur[1];
       const nLine = oMapFileByName.get(oOcc.sNameFile)?.oMapIdLine.get(oOcc.sNameId) ?? null;
       aoIssue.push(fIssue('ERROR', 'Mcsh07', oOcc.sNameFile, null,
-        `Duplicate McshEngl-name "${sName}" ${sLoc}`, nLine));
+        `Duplicate name-line "${sNameFull}" ${sLoc}`, nLine));
     }
   }
   return aoIssue;
@@ -316,7 +325,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir) {
   aoAll.push(...aoTitle);
   console.log(`${aoTitle.length} issues`);
 
-  process.stdout.write('   Mcsh07    Duplicate McshEngl names... ');
+  process.stdout.write('   Mcsh07    Duplicate names (every McsLago)... ');
   const aoDup = fCheckDuplicateName(aoCnptFile);
   aoAll.push(...aoDup);
   console.log(`${aoDup.length} issues`);
@@ -330,5 +339,6 @@ function fRunChecksMcsh(aoCnptFile, sPathDir) {
 }
 
 export {
-  fRunChecksMcsh
+  fRunChecksMcsh,
+  fBuildMapName   // dupMcsh.mjs reports the-duplicate-names from this map
 }

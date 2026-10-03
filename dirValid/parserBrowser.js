@@ -37,6 +37,9 @@ const
     'mConcept.js.0-1-0.2026-06-22: creation'
   ],
   // the-PoS-keys of a-lagoName-object,
+  // a-name-line: " <br>* McshEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
+  //   group1: the-McsLago (Engl, Elln, ...), group2: the-whole-name to the-comma.
+  rNameLine = /^\s*<br>\*\s*Mcsh([A-Z][a-z]{3})\.([^\n,]+),/,
   aPosKey = ['aNoun', 'aCase', 'aAdje', 'aAdve', 'aVerb', 'aConj'],
   ooFile_cnpt = omMcsh.ooFile_cnpt, // {sNameIdRela: oFile_cnpt}
   sProjectPath = omMcsh.sPathSite + "dirMcsh/", // http://localhost/dirMcsh/
@@ -405,14 +408,16 @@ function fFindSect_overview(sRawSect) {
  * DOING: find the-McsLago-names: " <br>* McshEngl.McshExml'att001-attribute, {2026-04-23}"
  * INPUT: the-text of a-Mcsh_para, one name per line.
  * OUTPUT: an object of lagoName-objects
- *   { oLagoEngl: {sNameFormal, sNameInformal, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
+ *   { oLagoEngl: {sNameFormal, sNameInformal, aoName, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
+ *   aoName holds every name-line, duplicates kept, each one with its
+ *   sNameFull: the-whole-line to the-comma, "young!~adjeEngl:animal".
  */
 function fReadMcsLago_names(sTextIn) {
   // ── 1. read the-name-lines ────────────────────────────────────────────────
   const aoName = []; // { sLago, sName, sNameFormal, sNameTransl, sPos } in document order
   for (const sLine of String(sTextIn ?? '').split('\n')) {
     // a-name-line: " <br>* McshEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
-    const aNameMatch = sLine.match(/^\s*<br>\*\s*Mcsh([A-Z][a-z]{3})\.([^\n,]+),/);
+    const aNameMatch = sLine.match(rNameLine);
     if (!aNameMatch) continue;
 
     const sLago = aNameMatch[1];                      // Engl, Elln, Zhon, ...
@@ -431,7 +436,9 @@ function fReadMcsLago_names(sTextIn) {
       else if (sMark === '=' && !sNameTransl)  sNameTransl  = sValue;
       else if (sMark === '~' && !sPos)         sPos         = sValue;
     }
-    aoName.push({ sLago, sName, sNameFormal, sNameTransl, sPos });
+    // sNameFull is the-whole-line to the-comma: "young!~adjeEngl:animal".
+    // Mcsh07 keys the-duplicates on IT, so name-notations do-not collide.
+    aoName.push({ sLago, sName, sNameFull: sRest, sNameFormal, sNameTransl, sPos });
   }
 
   // ── 2. group the-names per McsLago and per PoS ────────────────────────────
@@ -475,7 +482,7 @@ function fNewLago_name() {
     sNameFormal: '',
     sNameInformal: '',
     // every name-line of this McsLago in document-order, duplicates kept:
-    // [{sLago, sName, sNameFormal, sNameTransl, sPos}]
+    // [{sLago, sName, sNameFull, sNameFormal, sNameTransl, sPos}]
     aoName: [],
     aNoun: [], aCase: [], aAdje: [], aAdve: [], aVerb: [], aConj: []
   };
