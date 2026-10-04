@@ -26,6 +26,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-12-0.2026-10-04: fRunChecksMcsh bQuietIn, for reportMcsh.mjs',
     'structuralMcsh.js.0-11-0.2026-10-04: Mcsh01 tells missing from unclosed idOverview',
     'structuralMcsh.js.0-10-0.2026-10-03: fFindIdElmt removed, every cnpt has sNameId',
     'structuralMcsh.js.0-9-0.2026-10-03: Mcsh07 checks every McsLago, not only Engl',
@@ -301,38 +302,41 @@ function fCheckDate(aoCnptFile) {
   return aoIssue;
 }
 
-function fRunChecksMcsh(aoCnptFile, sPathDir) {
+function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoAll = [];
+  // bQuietIn: no progress-lines, for reportMcsh.mjs which prints its own report
+  const fWrite = sIn => { if (!bQuietIn) process.stdout.write(sIn); };
+  const fLog   = sIn => { if (!bQuietIn) console.log(sIn); };
 
-  process.stdout.write('   Mcsh01    File-Mcsh (idOverview)... ');
+  fWrite('   Mcsh01    File-Mcsh (idOverview)... ');
   const aoFileMcs = fCheckCnptFile(aoCnptFile);
   aoAll.push(...aoFileMcs);
-  console.log(`${aoFileMcs.length} issues`);
+  fLog(`${aoFileMcs.length} issues`);
 
-  process.stdout.write('   Mcsh02/Mcsh03 Section descriptions... ');
+  fWrite('   Mcsh02/Mcsh03 Section descriptions... ');
   const aoDesc = fCheckDescription(aoCnptFile);
   aoAll.push(...aoDesc);
-  console.log(`${aoDesc.length} issues`);
+  fLog(`${aoDesc.length} issues`);
 
-  process.stdout.write('   Mcsh04/Mcsh05 Section names... ');
+  fWrite('   Mcsh04/Mcsh05 Section names... ');
   const aoName = fCheckName(aoCnptFile);
   aoAll.push(...aoName);
-  console.log(`${aoName.length} issues`);
+  fLog(`${aoName.length} issues`);
 
-  process.stdout.write('   Mcsh06    Section title... ');
+  fWrite('   Mcsh06    Section title... ');
   const aoTitle = fCheckTitle(aoCnptFile);
   aoAll.push(...aoTitle);
-  console.log(`${aoTitle.length} issues`);
+  fLog(`${aoTitle.length} issues`);
 
-  process.stdout.write('   Mcsh07    Duplicate names (every McsLago)... ');
+  fWrite('   Mcsh07    Duplicate names (every McsLago)... ');
   const aoDup = fCheckDuplicateName(aoCnptFile);
   aoAll.push(...aoDup);
-  console.log(`${aoDup.length} issues`);
+  fLog(`${aoDup.length} issues`);
 
-  process.stdout.write('   Mcsh08    Dates... ');
+  fWrite('   Mcsh08    Dates... ');
   const aoDate = fCheckDate(aoCnptFile);
   aoAll.push(...aoDate);
-  console.log(`${aoDate.length} issues`);
+  fLog(`${aoDate.length} issues`);
 
   return aoAll;
 }

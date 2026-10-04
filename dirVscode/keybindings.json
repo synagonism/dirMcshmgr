@@ -1,5 +1,5 @@
 [
-// {2026-09-03}
+// {2026-10-04}
 // Place your key bindings in this file to override the defaults
 // ctrl+k ctrl+2 folds them and shows shortcuts
 
@@ -894,10 +894,15 @@
   "when": "editorTextFocus"
 },
 
-// p o:: hitP Open McsHitp file by code (prompts a Mcs-code prefilled with the current file, opens dir<Cat>/<code>.last.html)
+// p o p:: hitP Open McsHitp file by code and viewer(prompts a Mcs-code prefilled with the current file, opens dir<Cat>/<code>.last.html)
 {
-  "key": "ctrl+alt+p o",
+  "key": "ctrl+alt+p o p",
   "command": "mcshv.openByCode"
+},
+// p o o:: hitP Open McsHitp file by code only
+{
+  "key": "ctrl+alt+p o o",
+  "command": "mcshv.openByCodeOnly"
 },
 
 // p p :: hitP Paragraph
@@ -985,9 +990,8 @@
       { "command": "type", "args": { "text": "dsn\">description::" }},
       { "command": "type", "args": { "text": "\n<br>× Mcsh-creation: " } },
       { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}} " } },
-      { "command": "deleteLeft" },
-      { "command": "type", "args": { "text": ",\n<br>· \n<a class=\"clsHide\" href=\"#" } },
+        "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}" } },
+      { "command": "type", "args": { "text": "\n<br>· \n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "dsn\"></a></p>" } },
       { "command": "cursorUp" }

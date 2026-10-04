@@ -1,0 +1,10 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  creaMcsh dry-run: C:/dirNodews/dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  0 files to write · 0 paras deleted · 0 descriptions created · 0 lines inserted · 4 skipped
+  nothing written: add --fix to write
+
+SKIP   McshHlth000019:5083  the-para holds more than the-creation-line
+SKIP   McshLag000027:7458  #idLEllaevgFdsn says {2025-07-28}, the-para {2022-04-12}: an-other creation-date
+SKIP   McshLag000032:434  the-para holds more than the-creation-line
+SKIP   McshStn000021:527  the-para holds more than the-creation-line
