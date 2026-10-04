@@ -170,6 +170,7 @@ function fActivate(context) {
   // .last.html text editor — no visual-manager pane. Because the custom editor is
   // contributed with priority "option" (not default), showTextDocument opens the
   // plain text editor. Bound to Ctrl+Alt+P O O in the user's keybindings.
+  // From a file under dirMcshmgr/..., the code resolves in the sibling dirMcsh/ (fRootCandidates).
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.openByCodeOnly', async () => {
       const { sPath, nLine } = await fPromptResolveCode();
@@ -515,8 +516,10 @@ function fOrigin() {
 function fRootCandidates(sCur, sCurCode) {
   const a = [];
   const fAdd = (s) => { if (s && !a.some((x) => x.toLowerCase() === s.toLowerCase())) a.push(s); };
-  if (sCur) fAdd(fWorldviewRoot(sCur, sCurCode));
   const oEd = vscode.window.activeTextEditor;
+  // current file under <parent>/dirMcshmgr/... → resolve in <parent>/dirMcsh FIRST
+  if (oEd && oEd.document.uri.scheme === 'file') fAdd(fMcshForMcshmgr(oEd.document.uri.fsPath));
+  if (sCur) fAdd(fWorldviewRoot(sCur, sCurCode));
   if (oEd && oEd.document.uri.scheme === 'file') fAdd(path.dirname(oEd.document.uri.fsPath));
   for (const oWf of (vscode.workspace.workspaceFolders || [])) {
     const sWf = oWf.uri.fsPath;
@@ -525,6 +528,15 @@ function fRootCandidates(sCur, sCurCode) {
     try { if (fs.existsSync(sMcsh)) fAdd(sMcsh); } catch (e) { /* unreadable → skip */ }
   }
   return a;
+}
+
+/** A-path under <parent>/dirMcshmgr/... → <parent>/dirMcsh (if it exists), else ''. */
+function fMcshForMcshmgr(sFsPath) {
+  const aPart = sFsPath.split(/[\\/]/);
+  const nI = aPart.findIndex((s) => s.toLowerCase() === 'dirmcshmgr');
+  if (nI < 0) return '';
+  const sMcsh = path.join(aPart.slice(0, nI).join(path.sep) + path.sep, 'dirMcsh');
+  try { return fs.existsSync(sMcsh) ? sMcsh : ''; } catch (e) { return ''; }
 }
 
 /**
