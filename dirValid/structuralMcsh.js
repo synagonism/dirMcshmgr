@@ -26,6 +26,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-11-0.2026-10-04: Mcsh01 tells missing from unclosed idOverview',
     'structuralMcsh.js.0-10-0.2026-10-03: fFindIdElmt removed, every cnpt has sNameId',
     'structuralMcsh.js.0-9-0.2026-10-03: Mcsh07 checks every McsLago, not only Engl',
     'structuralMcsh.js.0-8-0.2026-10-03: Mcsh07 keys the-whole-name-line',
@@ -140,6 +141,8 @@ function fBuildMapName(aoCnptFile) {
 // ─── individual checks ────────────────────────────────────────────────────────
 
 // ❌ Mcsh01  cnptFile missing idOverview section
+//   two causes, two messages: the-file has NO id="idOverview", or it HAS the-id
+//   but the-parser could-not read a-section from IT (an-unclosed <section>).
 function fCheckCnptFile(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
@@ -150,8 +153,16 @@ function fCheckCnptFile(aoCnptFile) {
       continue;
     }
     if (!oCnptFile.sOverview) {
-      aoIssue.push(fIssue('ERROR', 'Mcsh01', oCnptFile.sNameFile, null,
-        `File has no <section id="idOverview"> — cnptFile identity section is missing`));
+      const nLineOverview = oCnptFile.oMapIdLine?.get('idOverview') ?? null;
+      if (nLineOverview !== null) {
+        // the-id is there, but the-parser could-not read a-section: it is not closed
+        aoIssue.push(fIssue('ERROR', 'Mcsh01', oCnptFile.sNameFile, null,
+          `id="idOverview" is NOT a-closed <section> — the-parser can-not read IT, see Hitp09`,
+          nLineOverview));
+      } else {
+        aoIssue.push(fIssue('ERROR', 'Mcsh01', oCnptFile.sNameFile, null,
+          `File has no <section id="idOverview"> — cnptFile identity section is missing`));
+      }
     }
   }
   return aoIssue;
