@@ -19,7 +19,7 @@
         "panel": "shared"
       }
     },
-    // Index names of current-file and upload
+    // Index names of current-FILE and upload
     {
       "label": "Index names of current-file and upload",
       "type": "shell",
@@ -45,6 +45,24 @@
       "args": [
         "../dirMcshmgr/mNamidxFileOnly.mjs",
         "${command:mcshv.currentFile}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Index names of current-DIRECTORY and upload
+    {
+      "label": "Index names of current-DIRECTORY and upload",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxDir.mjs",
+        "${command:mcshv.currentFileDirname}"
       ],
       "options": {
         "cwd": "${command:mcshv.currentWorldview}"

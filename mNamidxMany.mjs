@@ -1,5 +1,5 @@
 /*
- * mNamidxSftp.mjs - creates name-indexes and uploads the-files
+ * mNamidxMany.mjs - program creates name-indexes from namidx.txt and uploads the-files
  * The MIT License (MIT)
  *
  * Copyright (c) 2017 - 2025 Kaseluris.Nikos.1959 (hmnSngu)
@@ -35,7 +35,7 @@
  * INPUT: dirManager/namidx.txt
  * OUTPUT: dirLang/namidx.lagLangX.json, namidx.lagRoot.json, Mcshqnt.json,
            dirManager/SftpOnly.json,
- * RUN from worldview: node ../dirMcshmgr/mNamidxSftp.mjs
+ * RUN from worldview: node ../dirMcshmgr/mNamidxMany.mjs
  *
  */
 
@@ -46,6 +46,7 @@ import {oSftp, fSftp} from './mSftp.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mNamidxMany.mjs.0-9-0.2026-10-04: changed name',
     'mNamidxSftp.mjs.0-8-0.2026-09-24: auto-add + sort new DIRS in Mcshqnt.root.json',
     'mNamidxSftp.mjs.0-7-0.2025-12-01: index and upload',
     'mNamidxOnly.mjs.0-6-0.2025-11-30: clear only index',

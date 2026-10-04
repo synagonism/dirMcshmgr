@@ -13,9 +13,9 @@
  *
  * Checks (Mcsh-specific; Hitp-covered ones removed):
  *  Mcsh01  cnptFile missing idOverview section
- *  Mcsh02  cnptSect missing description:: paragraph
+ *  Mcsh02  cnptSect missing description::-paragraph
  *  Mcsh03  cnptSect has description:: but it is empty (only placeholder "·")
- *  Mcsh04  cnptSect missing name:: paragraph
+ *  Mcsh04  cnptSect missing name::-paragraph
  *  Mcsh05  cnptSect name:: has zero valid Mcsh* entries
  *  Mcsh06  cnptSect has no title
  *  Mcsh07  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
@@ -26,6 +26,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-10-0.2026-10-03: fFindIdElmt removed, every cnpt has sNameId',
     'structuralMcsh.js.0-9-0.2026-10-03: Mcsh07 checks every McsLago, not only Engl',
     'structuralMcsh.js.0-8-0.2026-10-03: Mcsh07 keys the-whole-name-line',
     'structuralMcsh.js.0-7-0.2026-10-02: Mcsh07 sees cnptFile-names and duplicates',
@@ -63,15 +64,6 @@ function fFindCnpt(oCnptFile, sTypeIn = '') {
     aoCnpt.push({ ...oCnpt, sIdCnpt });
   }
   return aoCnpt;
-}
-
-/**
- * DOING: finds the-id of the-element of a-concept, for the-oMapIdLine-lookup.
- *   a-cnptSect has a-sNameId, a-cnptPara has only its sNameIdRela: 'dir/fil.html#idPara'.
- * OUTPUT: 'idMcshExmlatt001'.
- */
-function fFindIdElmt(oCnptIn) {
-  return oCnptIn.sNameId ?? (oCnptIn.sNameIdRela ?? '').split('#')[1] ?? null;
 }
 
 /**
@@ -135,7 +127,7 @@ function fBuildMapName(aoCnptFile) {
           const sKey = 'Mcsh' + oName.sLago + '.' + oName.sNameFull;
           if (!oMap.has(sKey)) oMap.set(sKey, []);
           oMap.get(sKey).push({
-            sNameFile: oCnptFile.sNameFile, sNameId: fFindIdElmt(oCnpt),
+            sNameFile: oCnptFile.sNameFile, sNameId: oCnpt.sNameId,
             sTitle: oCnpt.sNameTitle
           });
         }
@@ -165,7 +157,7 @@ function fCheckCnptFile(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [Mcsh02] cnptSect  has no description:: paragraph
+// ⚠️ [Mcsh02] cnptSect  has no description::-paragraph
 // ⚠️ [Mcsh03] cnptSect  has an empty/placeholder description:: (only "·" or "×")
 function fCheckDescription(aoCnptFile) {
   const aoIssue = [];
@@ -173,12 +165,11 @@ function fCheckDescription(aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
       if ((oSect.sNameTitle ?? '').indexOf('( link )') > 1) continue;
-      const sIdElmt = fFindIdElmt(oSect);
       const aoParaDesc = fFindParaAll(oSect, 'description');
       if (aoParaDesc.length === 0) {
         aoIssue.push(fIssue('WARN', 'Mcsh02', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${sIdElmt}) has no description:: paragraph`,
-          oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no description::-paragraph`,
+          oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
         continue;
       }
       // Check for empty/placeholder description (just "·" or whitespace)
@@ -189,8 +180,8 @@ function fCheckDescription(aoCnptFile) {
           .trim();
         if (sContent.length === 0) {
           aoIssue.push(fIssue('WARN', 'Mcsh03', oCnptFile.sNameFile, oSect,
-            `cnptSect "${oSect.sNameTitle}" (${sIdElmt}) has an empty/placeholder description:: (only "·" or "×")`,
-            oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+            `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has an empty/placeholder description:: (only "·" or "×")`,
+            oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
         }
       }
     }
@@ -198,24 +189,23 @@ function fCheckDescription(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [Mcsh04] cnptSect  has no name:: paragraph
-//⚠️  [Mcsh05] cnptSect  name:: paragraph has no valid Mcsh* entries
+// ⚠️ [Mcsh04] cnptSect  has no name::-paragraph
+//⚠️  [Mcsh05] cnptSect  name::-paragraph has no valid Mcsh* entries
 function fCheckName(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
       if ((oSect.sNameTitle ?? '').indexOf('( link )') > 1) continue;
-      const sIdElmt = fFindIdElmt(oSect);
       if (fFindParaAll(oSect, 'name').length === 0) {
         // This shouldn't happen (cnptSect requires names), but guard anyway
         aoIssue.push(fIssue('WARN', 'Mcsh04', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${sIdElmt}) has no name:: paragraph`,
-          oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no name::-paragraph`,
+          oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
       } else if (fCountName(oSect) === 0) {
         aoIssue.push(fIssue('WARN', 'Mcsh05', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${sIdElmt}) name:: paragraph has no valid Mcsh* entries`,
-          oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) name::-paragraph has no valid Mcsh* entries`,
+          oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
       }
     }
   }
@@ -229,10 +219,9 @@ function fCheckTitle(aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
       if (!oSect.sNameTitle || oSect.sNameTitle.trim() === '') {
-        const sIdElmt = fFindIdElmt(oSect);
         aoIssue.push(fIssue('WARN', 'Mcsh06', oCnptFile.sNameFile, oSect,
-          `cnptSect (${sIdElmt}) has no TITLE`,
-          oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+          `cnptSect (${oSect.sNameId}) has no TITLE`,
+          oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
       }
     }
   }
@@ -283,7 +272,6 @@ function fCheckDate(aoCnptFile) {
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
-      const sIdElmt = fFindIdElmt(oSect);
       for (const oPara of oSect.aoTitlePara ?? []) {
         for (const sLine of fFindParaText(oPara).split('\n')) {
           const oSetTokBad = new Set();       // one issue per distinct token on the line
@@ -293,7 +281,7 @@ function fCheckDate(aoCnptFile) {
           for (const sTok of oSetTokBad) {
             aoIssue.push(fIssue('WARN', 'Mcsh08', oCnptFile.sNameFile, oSect,
               `DATE "${sTok}" has NO {YYYY-MM-DD} format in line: "${sLine.trim()}" in file: "${oCnptFile.sNameFile}"`,
-              oCnptFile.oMapIdLine.get(sIdElmt) ?? null));
+              oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
           }
         }
       }
