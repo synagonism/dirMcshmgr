@@ -8,18 +8,27 @@
  *   oSect → { sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt }
  *   oElmt → { sType:'head'|'para', sSubtype, sNameId, nLevel, sHrefSelf, nLine, sIdSect }
  *
+ * types:
+ * ❌ ERROR
+ * ⚠️ WARN
+ * ℹ️ INFO
+ * 
  * Checks:
- *  Hitp01  File <title> missing / malformed version string
- *  Hitp02  Duplicate id within a file (IDs must be unique)
- *  Hitp03  Heading without id (cannot be a link/preview target)
- *  Hitp04  Paragraph without id
- *  Hitp05  Section without id
- *  Hitp06  clsHide self-anchor missing or not matching the element's own id
- *  Hitp07  Broken internal anchor: #id (or file#id) target not found
- *  Hitp08  Broken file link: target .last.html does not exist
- *  Hitp09  Missing HTML tag pair: unclosed open, or stray close
- *  Hitp10  HTML element name is not lowercase
- *  Hitp11  Attribute value not double-quoted (single-quoted or unquoted)
+ *  Hvre01  Duplicate id within a file (IDs must be unique)
+ *  Hvre02  Heading without id (cannot be a link/preview target)
+ *  Hvre03  Paragraph without id
+ *  Hvre04  Section without id
+ *  Hvre05  Broken file link: target .last.html does not exist
+ *  Hvre06  Broken internal anchor: #id (or file#id) target not found
+ *  Hvre07  Missing HTML tag pair: unclosed open, or stray close
+ * 
+ *  Hvrw01  File <title> missing 
+ *  Hvrw02  File version string malformed
+ *  Hvrw03  clsHide self-anchor missing
+ *  Hvrw04  clsHide self-anchor not matching the element's own id
+ *  Hvrw05  Html-element name is not lowercase
+ *  Hvrw06  Html-attribute value not double-quoted (single-quoted or unquoted)
+ *  Hvrw07  Html-heading gaps
  */
 
 import path from 'path';
@@ -27,6 +36,9 @@ import fs from 'fs';
 
 const
   aVersion = [
+    'structuralHitp.js.0-4-0.2026-10-09: fRunChecksHitp bQuietIn, for reportMcsh.mjs',
+    'structuralHitp.js.0-3-0.2026-10-09: Hvrw07 Html-heading gaps',
+    'structuralHitp.js.0-2-0.2026-10-09: renaming',
     'structuralHitp.js.0-1-0.2026-09-04: creation'
   ]
 
@@ -74,16 +86,17 @@ function fSectOf(oElmt) {
 
 // ─── individual checks ────────────────────────────────────────────────────────
 
-// ⚠️/ℹ️ Hitp01  <title> version string
+// ⚠️ Hvrw01  file <title> version string
+// ⚠️ Hvrw02  file version string malformed
 function fCheckVersion(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     if (!oFile.sVersion) {
-      aoIssue.push(fIssue('WARN', 'Hitp01', oFile.sNameFile, null,
+      aoIssue.push(fIssue('WARN', 'Hvrw01', oFile.sNameFile, null,
         `File "${oFile.sNameFile}" has no version string in <title> (expected e.g. HitpXxx.1-2-3.2026-01-01)`,
         oFile.nLineTitle ?? null));
     } else if (!oFile.sVersion.match(/\w+\.\d+-\d+-\d+\.\d{4}-\d{2}-\d{2}/)) {
-      aoIssue.push(fIssue('INFO', 'Hitp01', oFile.sNameFile, null,
+      aoIssue.push(fIssue('WARN', 'Hvrw02', oFile.sNameFile, null,
         `File "${oFile.sNameFile}" version "${oFile.sVersion}" does not match pattern Xxx.N-N-N.YYYY-MM-DD`,
         oFile.nLineTitle ?? null));
     }
@@ -91,39 +104,39 @@ function fCheckVersion(aoFile) {
   return aoIssue;
 }
 
-// ❌ Hitp02  duplicate id in a file
+// ❌ Hvre01  duplicate id in a file
 function fCheckIdDuplicate(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     for (const oDup of oFile.aoIdDup) {
-      aoIssue.push(fIssue('ERROR', 'Hitp02', oFile.sNameFile, null,
-        `Duplicate id "${oDup.sName}" — IDs must be unique in a Hitp file`, oDup.nLine));
+      aoIssue.push(fIssue('ERROR', 'Hvre01', oFile.sNameFile, null,
+        `Duplicate id "${oDup.sName}" — IDs must be unique in a-Hitp-file`, oDup.nLine));
     }
   }
   return aoIssue;
 }
 
-// ❌ Hitp03 heading without id  |  ℹ️ Hitp04 paragraph without id  |  ❌ Hitp05 section without id
+// ❌ Hvre02 heading without id  | ❌  Hvre03 paragraph without id  |  ❌ Hvre04 section without id
 function fCheckIdMissing(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
-    // Hitp05: sections without id
+    // Hvre04: sections without id
     for (const oSect of oFile.aoSect) {
       if (!oSect.sNameId) {
-        aoIssue.push(fIssue('ERROR', 'Hitp05', oFile.sNameFile, null,
+        aoIssue.push(fIssue('ERROR', 'Hvre04', oFile.sNameFile, null,
           `<section> without id (heading "${oSect.sNameTitle}") — cannot be referenced`,
           null));
       }
     }
-    // Hitp03/Hitp04: heading / paragraph without id
+    // Hvre02/Hvre03: heading / paragraph without id
     for (const oElmt of oFile.aoElmt) {
       if (oElmt.sNameId) continue;
       if (oElmt.sType === 'head') {
-        aoIssue.push(fIssue('ERROR', 'Hitp03', oFile.sNameFile, fSectOf(oElmt),
+        aoIssue.push(fIssue('ERROR', 'Hvre02', oFile.sNameFile, fSectOf(oElmt),
           `<${oElmt.sSubtype}> heading without id in section "${oElmt.sIdSect}" — cannot be a link/preview target`,
           oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       } else if (!oElmt.bInDivId) { // <p> inside a <div id="…"> is exempt — the div carries the id
-        aoIssue.push(fIssue('ERROR', 'Hitp04', oFile.sNameFile, fSectOf(oElmt),
+        aoIssue.push(fIssue('ERROR', 'Hvre03', oFile.sNameFile, fSectOf(oElmt),
           `<p> without id in section "${oElmt.sIdSect}"`,
           oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       }
@@ -132,7 +145,8 @@ function fCheckIdMissing(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hitp06  clsHide self-anchor missing or mismatched (paragraphs only)
+// ⚠️ Hvrw03  clsHide self-anchor
+// ⚠️ Hvrw04  clsHide self-anchor mismatched (paragraphs only)
 // Headings are exempt: they are reachable via the auto-generated TOC, so they do
 // not need a clsHide self-anchor.
 function fCheckSelfAnchor(aoFile) {
@@ -140,14 +154,14 @@ function fCheckSelfAnchor(aoFile) {
   for (const oFile of aoFile) {
     for (const oElmt of oFile.aoElmt) {
       if (oElmt.sType === 'head') continue; // headings need no self-anchor (TOC)
-      if (!oElmt.sNameId) continue; // no id → already Hitp03/Hitp04
-      if (oElmt.bUnclosed) continue; // unclosed <p> → reported by Hitp09, not a mismatch
+      if (!oElmt.sNameId) continue; // no id → already Hvre02/Hvre03
+      if (oElmt.bUnclosed) continue; // unclosed <p> → reported by Hvre07, not a mismatch
       if (oElmt.sHrefSelf === null) {
-        aoIssue.push(fIssue('WARN', 'Hitp06', oFile.sNameFile, fSectOf(oElmt),
+        aoIssue.push(fIssue('WARN', 'Hvrw03', oFile.sNameFile, fSectOf(oElmt),
           `<${oElmt.sSubtype}> "${oElmt.sNameId}" has no clsHide self-anchor`,
           oElmt.nLine));
       } else if (oElmt.sHrefSelf !== oElmt.sNameId) {
-        aoIssue.push(fIssue('WARN', 'Hitp06', oFile.sNameFile, fSectOf(oElmt),
+        aoIssue.push(fIssue('WARN', 'Hvrw04', oFile.sNameFile, fSectOf(oElmt),
           `<${oElmt.sSubtype}> "${oElmt.sNameId}" clsHide self-anchor points to #${oElmt.sHrefSelf} (should be #${oElmt.sNameId})`,
           oElmt.nLine));
       }
@@ -156,7 +170,7 @@ function fCheckSelfAnchor(aoFile) {
   return aoIssue;
 }
 
-// ❌ Hitp08 broken file link  |  ⚠️ Hitp07 broken internal anchor
+// ❌ Hvre05 broken file link  |  ⚠️ Hvre06 broken internal anchor
 function fCheckLink(aoFile, sPathDir) {
   const aoIssue = [];
   const oMapAnchor = fBuildMapAnchor(aoFile, sPathDir);
@@ -173,10 +187,10 @@ function fCheckLink(aoFile, sPathDir) {
       const nLine = oFile.oMapLinkLine.get(sHref) ?? null;
 
       if (oResolved.sRelFile) {
-        // cross-file link → Hitp08 file existence, then Hitp07 anchor
+        // cross-file link → Hvre05 file existence, then Hvre06 anchor
         const bExists = oSetRel.has(oResolved.sRelFile) || fs.existsSync(oResolved.sPathAbs);
         if (!bExists) {
-          aoIssue.push(fIssue('ERROR', 'Hitp08', oFile.sNameFile, null,
+          aoIssue.push(fIssue('ERROR', 'Hvre05', oFile.sNameFile, null,
             `Broken link: FILE not found "${oResolved.sRelFile}" (from "${oFile.sNameFile}/${sHref}")`, nLine));
           continue;
         }
@@ -184,14 +198,14 @@ function fCheckLink(aoFile, sPathDir) {
           const oSetIdTarget = oMapAnchor.get(oResolved.sRelFile)
             ?? oMapAnchor.get(path.basename(oResolved.sRelFile));
           if (oSetIdTarget && !oSetIdTarget.has(oResolved.sAnchor)) {
-            aoIssue.push(fIssue('WARN', 'Hitp07', oFile.sNameFile, null,
+            aoIssue.push(fIssue('WARN', 'Hvre06', oFile.sNameFile, null,
               `Broken anchor: #${oResolved.sAnchor} not found in "${oResolved.sRelFile}"`, nLine));
           }
         }
       } else if (oResolved.sAnchor) {
-        // same-file anchor → Hitp07
+        // same-file anchor → Hvre06
         if (!oFile.oSetId.has(oResolved.sAnchor)) {
-          aoIssue.push(fIssue('WARN', 'Hitp07', oFile.sNameFile, null,
+          aoIssue.push(fIssue('WARN', 'Hvre06', oFile.sNameFile, null,
             `Broken anchor: #${oResolved.sAnchor} not found in "${oFile.sNameFile}"`, nLine));
         }
       }
@@ -200,7 +214,7 @@ function fCheckLink(aoFile, sPathDir) {
   return aoIssue;
 }
 
-// ❌ Hitp09  missing HTML tag pair (unclosed open or stray close)
+// ❌ Hvre07  missing HTML tag pair (unclosed open or stray close)
 function fCheckTagPair(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -208,18 +222,18 @@ function fCheckTagPair(aoFile) {
       const sMessage = oBad.sKind === 'stray'
         ? `Stray </${oBad.sTag}> — no matching <${oBad.sTag}> open`
         : `Unclosed <${oBad.sTag}> — no matching </${oBad.sTag}> (opened here)`;
-      aoIssue.push(fIssue('ERROR', 'Hitp09', oFile.sNameFile, null, sMessage, oBad.nLine));
+      aoIssue.push(fIssue('ERROR', 'Hvre07', oFile.sNameFile, null, sMessage, oBad.nLine));
     }
   }
   return aoIssue;
 }
 
-// ⚠️ Hitp10  HTML element name is not lowercase
+// ⚠️ Hvrw05  HTML element name is not lowercase
 function fCheckTagCase(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     for (const oCase of oFile.aoTagCase) {
-      aoIssue.push(fIssue('WARN', 'Hitp10', oFile.sNameFile, null,
+      aoIssue.push(fIssue('WARN', 'Hvrw05', oFile.sNameFile, null,
         `HTML element <${oCase.sTag}> is not lowercase — use <${oCase.sTag.toLowerCase()}>`,
         oCase.nLine));
     }
@@ -227,7 +241,7 @@ function fCheckTagCase(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hitp11  attribute value not double-quoted (single-quoted or unquoted)
+// ⚠️ Hvrw06  attribute value not double-quoted (single-quoted or unquoted)
 function fCheckAttrQuote(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -235,7 +249,55 @@ function fCheckAttrQuote(aoFile) {
       const sMessage = oAttr.sKind === 'single'
         ? `Attribute ${oAttr.sAttr}='${oAttr.sValue}' uses single quotes — use ${oAttr.sAttr}="${oAttr.sValue}"`
         : `Attribute ${oAttr.sAttr}=${oAttr.sValue} is unquoted — use ${oAttr.sAttr}="${oAttr.sValue}"`;
-      aoIssue.push(fIssue('WARN', 'Hitp11', oFile.sNameFile, null, sMessage, oAttr.nLine));
+      aoIssue.push(fIssue('WARN', 'Hvrw06', oFile.sNameFile, null, sMessage, oAttr.nLine));
+    }
+  }
+  return aoIssue;
+}
+
+// ⚠️ Hvrw07  Html-heading gaps
+// A-part's heading is ONE level below its whole's (h1 → h2), and a-section's next
+// sibling has the-same level (h2 → h2). Sections without id, line or heading are
+// skipped (a-missing id is Hvre04).
+function fCheckHeadingGap(aoFile) {
+  const aoIssue = [];
+  for (const oFile of aoFile) {
+    const aoSect = oFile.aoSect.filter(oSect =>
+      oSect.sNameId && oSect.nLine != null && oSect.nHeadingLevel != null);
+    const oMapSect = new Map(aoSect.map(oSect => [oSect.sNameId, oSect]));
+    // the-parts of each whole (null = top level), in document order
+    const oMapGroup = new Map();
+    for (const oSect of aoSect) {
+      const sIdWhole = oSect.sIdWhole_elmt ?? null;
+      if (!oMapGroup.has(sIdWhole)) oMapGroup.set(sIdWhole, []);
+      oMapGroup.get(sIdWhole).push(oSect);
+    }
+
+    for (const [sIdWhole, aoSectGroup] of oMapGroup) {
+      aoSectGroup.sort((oA, oB) => oA.nLine - oB.nLine);
+
+      // part: one level below its whole
+      const oWhole = sIdWhole ? oMapSect.get(sIdWhole) : null;
+      if (oWhole) {
+        const nLevelExpect = oWhole.nHeadingLevel + 1;
+        for (const oSect of aoSectGroup) {
+          if (oSect.nHeadingLevel === nLevelExpect) continue;
+          aoIssue.push(fIssue('WARN', 'Hvrw07', oFile.sNameFile, oSect,
+            `<h${oSect.nHeadingLevel}> section "${oSect.sNameId}" is a part of ` +
+            `<h${oWhole.nHeadingLevel}> section "${oWhole.sNameId}" — expected <h${nLevelExpect}>`,
+            oSect.nLine));
+        }
+      }
+
+      // sibling: the-same level as the-previous one, reported on the-next one
+      for (let nI = 1; nI < aoSectGroup.length; nI++) {
+        const oPrev = aoSectGroup[nI - 1], oNext = aoSectGroup[nI];
+        if (oNext.nHeadingLevel === oPrev.nHeadingLevel) continue;
+        aoIssue.push(fIssue('WARN', 'Hvrw07', oFile.sNameFile, oNext,
+          `<h${oPrev.nHeadingLevel}> section "${oPrev.sNameId}" has next sibling ` +
+          `<h${oNext.nHeadingLevel}> "${oNext.sNameId}" — expected <h${oPrev.nHeadingLevel}>`,
+          oNext.nLine));
+      }
     }
   }
   return aoIssue;
@@ -243,48 +305,57 @@ function fCheckAttrQuote(aoFile) {
 
 // ─── main export ──────────────────────────────────────────────────────────────
 
-export function fRunChecksHitp(aoFile, sPathDir) {
+export function fRunChecksHitp(aoFile, sPathDir, bQuietIn = false) {
   const aoAll = [];
+  // bQuietIn: no progress-lines, for reportMcsh.mjs which prints its own report
+  const fWrite = sIn => { if (!bQuietIn) process.stdout.write(sIn); };
+  const fLog   = sIn => { if (!bQuietIn) console.log(sIn); };
 
-  process.stdout.write('   Hitp01    Version strings... ');
-  const aoVersion = fCheckVersion(aoFile);
-  aoAll.push(...aoVersion);
-  console.log(`${aoVersion.length} issues`);
-
-  process.stdout.write('   Hitp02    Duplicate ids... ');
+  fWrite('   Hvre01    Duplicate ids... ');
   const aoDup = fCheckIdDuplicate(aoFile);
   aoAll.push(...aoDup);
-  console.log(`${aoDup.length} issues`);
+  fLog(`${aoDup.length} issues`);
 
-  process.stdout.write('   Hitp03/Hitp04/Hitp05 Missing ids... ');
+  fWrite('   Hvre02/Hvre03/Hvre04 Missing ids... ');
   const aoIdMissing = fCheckIdMissing(aoFile);
   aoAll.push(...aoIdMissing);
-  console.log(`${aoIdMissing.length} issues`);
+  fLog(`${aoIdMissing.length} issues`);
 
-  process.stdout.write('   Hitp06    clsHide self-anchors... ');
-  const aoSelf = fCheckSelfAnchor(aoFile);
-  aoAll.push(...aoSelf);
-  console.log(`${aoSelf.length} issues`);
-
-  process.stdout.write('   Hitp07/Hitp08 Links & anchors... ');
+  fWrite('   Hvre06/Hvre05 Links & anchors... ');
   const aoLink = fCheckLink(aoFile, sPathDir);
   aoAll.push(...aoLink);
-  console.log(`${aoLink.length} issues`);
+  fLog(`${aoLink.length} issues`);
 
-  process.stdout.write('   Hitp09    Tag pairs... ');
+  fWrite('   Hvre07    Tag pairs... ');
   const aoTag = fCheckTagPair(aoFile);
   aoAll.push(...aoTag);
-  console.log(`${aoTag.length} issues`);
+  fLog(`${aoTag.length} issues`);
 
-  process.stdout.write('   Hitp10    Tag lowercase... ');
+
+  fWrite('   Hvrw01    Version strings... ');
+  const aoVersion = fCheckVersion(aoFile);
+  aoAll.push(...aoVersion);
+  fLog(`${aoVersion.length} issues`);
+
+  fWrite('   Hvrw03    clsHide self-anchors... ');
+  const aoSelf = fCheckSelfAnchor(aoFile);
+  aoAll.push(...aoSelf);
+  fLog(`${aoSelf.length} issues`);
+
+  fWrite('   Hvrw05    Tag lowercase... ');
   const aoTagCase = fCheckTagCase(aoFile);
   aoAll.push(...aoTagCase);
-  console.log(`${aoTagCase.length} issues`);
+  fLog(`${aoTagCase.length} issues`);
 
-  process.stdout.write('   Hitp11    Attr double-quote... ');
+  fWrite('   Hvrw06    Attr double-quote... ');
   const aoAttr = fCheckAttrQuote(aoFile);
   aoAll.push(...aoAttr);
-  console.log(`${aoAttr.length} issues`);
+  fLog(`${aoAttr.length} issues`);
+
+  fWrite('   Hvrw07    Heading gaps... ');
+  const aoHeadingGap = fCheckHeadingGap(aoFile);
+  aoAll.push(...aoHeadingGap);
+  fLog(`${aoHeadingGap.length} issues`);
 
   return aoAll;
 }

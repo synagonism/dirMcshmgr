@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * creaMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections
+ * createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections
  * The MIT License (MIT)
  *
  * Copyright (c) 2026 Kaseluris.Nikos.1959 (humnSngu)
@@ -44,24 +44,43 @@
  *   fixed instead. It SKIPS and reports: a-section-id that occurs 2+ times,
  *   a-taken <section-id>dsn, an-other description-title (descriptionLong::).
  *
+ *   --overview: the-description:: of idOverview without × Mcsh-creation gets the-date
+ *   of the-file's end, <p id="idMetaVersion">webpage-versions::, from the-line
+ *     <br>• version.0-1-0.2019-09-06 draft creation,
+ *   else from the-earliest dated version-line when that is 0-x-x or 1-0-0.
+ *   It SKIPS a-file without such a-date, and reports as NODESC an-idOverview
+ *   without description::.
+ *
+ *   --undated: EVERY description:: without × Mcsh-creation gets the-run-date as
+ *   its first line (plain and div form). A-description the-validator's Mcsh03
+ *   calls empty is reported EMPTY, since afterwards Mcsh03 no longer sees it.
+ *   It SKIPS a-title-line with text after description::.
+ *
+ *   --nameid: the-name::-para of idOverview gets the-id idName (its <p id> and its
+ *   own clsHide-anchor). It SKIPS when idName is used, the-old id is not unique,
+ *   or any file links to the-old id.
+ *
  * INPUT: the-path of a-dirMcsh-worldview.
  * OUTPUT: dry-run by default: what it would do. With --fix it writes the-files,
- *   after it copies each one into dirValid/creaMcsh-backup/<time>/.
- *   The-report goes to dirValid/creaMcsh.txt.
+ *   after it copies each one into dirValid/createMcsh-backup/<time>/.
+ *   The-report goes to dirValid/createMcsh.txt.
  * RUN:
- *   node dirValid/creaMcsh.mjs <sNameDir> [--missing] [--fix]
+ *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid] [--fix]
  */
 
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
 import { fReadFileAllHitp } from './parserHitp.js'
-import { fReadFileMcsh } from './parserMcsh.js'
+import { fReadFileMcsh, fStripTags } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
 
 const
-  // contains the-versions of creaMcsh.mjs
+  // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-5-0.2026-10-04: --nameid, idOverview name::-para id = idName',
+    'createMcsh.mjs.0-4-0.2026-10-04: --undated, every description gets a-creation-date',
+    'createMcsh.mjs.0-3-0.2026-10-04: --overview; renamed from creaMcsh.mjs',
     'creaMcsh.mjs.0-2-0.2026-10-04: --missing, a-description for every Mcsh02-section',
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
@@ -79,7 +98,14 @@ const
   // an-other title that starts like description: descriptionLong::, Description::
   rDescLike  = /^\s*(?:<p\b[^>]*>|<div\b[^>]*>\s*<p>|<p>)\s*[Dd]escr\w*::/,
   rNameOpen  = /^( *)<p id="[^"]+">name::/,
-  rCreaDesc  = /× Mcsh-creation:\s*\{([0-9-]+)\}/
+  rCreaDesc  = /× Mcsh-creation:\s*\{([0-9-]+)\}/,
+  // a-dated version-line in webpage-versions: <br>• version.0-1-0.2019-09-06 draft creation,
+  rVersion   = /<br>• version\.(\d+-\d+-\d+)\.(\d{4}-\d{2}-\d{2})/g,
+  // a-div-description: <div id="..."> and on the-next line <p>description::
+  rDescDiv   = /^( *)<p>description::\s*$/,
+  rDivOpen   = /<div\b[^>]*\bid="([^"]+)"/,
+  // a-title-line with text after description:: on the-same line
+  rDescSame  = /^ *<p id="([^"]+)">description::\s*\S/
 
 /**
  * OUTPUT: a-line without a-trailing \r, for matching only.
@@ -116,7 +142,7 @@ function fFindFileAll(sDirIn) {
   for (const oEnt of moFs.readdirSync(sDirIn, { withFileTypes: true })) {
     const sPath = moPath.join(sDirIn, oEnt.name);
     if (oEnt.isDirectory()) {
-      if (['node_modules', '.git'].includes(oEnt.name) || oEnt.name.startsWith('creaMcsh-backup')) continue;
+      if (['node_modules', '.git'].includes(oEnt.name) || oEnt.name.startsWith('createMcsh-backup')) continue;
       aPath.push(...fFindFileAll(sPath));
     } else if (oEnt.name.endsWith('.last.html')) {
       aPath.push(sPath);
@@ -359,6 +385,184 @@ function fPlanMissing(sRawIn, sNameShortIn, aIdSectIn, sDateIn) {
 }
 
 /**
+ * DOING: --overview mode: when the-description:: of idOverview has no
+ *   × Mcsh-creation, it takes the-date from the-end of the-file, the-para
+ *   <p id="idMetaVersion">webpage-versions:: — the-line version.0-1-0.<date>,
+ *   else the-earliest dated version-line — and inserts it as the-first line.
+ *   An-idOverview with NO description:: is reported as NODESC.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanOverview(sRawIn, sNameShortIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const fDone = () => ({ aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) });
+
+  const nSect = aLine.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === 'idOverview');
+  if (nSect === -1) {
+    aoNote.push(`NODESC ${sNameShortIn}  has no <section id="idOverview">`);
+    return fDone();
+  }
+  const sLoc = `${sNameShortIn}:${nSect + 1}`;
+  const nOwnEnd = fFindSectOwnEnd(aLine, nSect);
+  let nDesc = -1;
+  for (let nD = nSect + 1; nD < nOwnEnd; nD++) {
+    if (rDescOpen.test(fLineClean(aLine[nD]))) { nDesc = nD; break; }
+  }
+  if (nDesc === -1) {
+    // what the-idOverview holds instead, so you see what to add
+    const aTitle = aLine.slice(nSect + 1, nOwnEnd)
+      .map(sLine => (fLineClean(sLine).match(/^ *<p id="[^"]+">([^:<\n]+)::/) ?? [])[1])
+      .filter(Boolean);
+    aoNote.push(`NODESC ${sLoc}  idOverview has no description::, it holds: ` +
+      (aTitle.length ? aTitle.join(', ') + '::' : 'no titled para'));
+    return fDone();
+  }
+
+  let nDescEnd = nDesc;
+  while (nDescEnd < nOwnEnd && !aLine[nDescEnd].includes('</p>')) nDescEnd++;
+  if (rCreaDesc.test(aLine.slice(nDesc, nDescEnd + 1).join('\n'))) return fDone();
+
+  // ── the-date from the-end of the-file ───────────────────────────────────────
+  const sParaVer = sRawIn.match(/<p id="idMetaVersion">[\s\S]*?<\/p>/)?.[0] ?? '';
+  const aoVer = [...sParaVer.matchAll(rVersion)].map(aM => ({ sVer: aM[1], sDate: aM[2] }));
+  const oVer010 = aoVer.find(oVer => oVer.sVer === '0-1-0');
+  const oVer = oVer010 ?? aoVer.slice().sort((oA, oB) => oA.sDate.localeCompare(oB.sDate))[0];
+  const aDescOpen = fLineClean(aLine[nDesc]).match(rDescOpen);
+  if (!oVer) {
+    aoNote.push(`SKIP   ${sLoc}  #${aDescOpen[2]} has no × Mcsh-creation and the-file's end has no dated version-line`);
+    return fDone();
+  }
+  // the-earliest RECORDED version is the-creation only when it is 0-x-x or 1-0-0:
+  // a-first record version.17-0-0 means the-earlier versions are not recorded.
+  if (!oVer010 && !/^(0-\d+-\d+|1-0-0)$/.test(oVer.sVer)) {
+    aoNote.push(`SKIP   ${sLoc}  #${aDescOpen[2]} has no × Mcsh-creation and the-earliest recorded ` +
+      `version is version.${oVer.sVer}.${oVer.sDate}: not the-creation`);
+    return fDone();
+  }
+  aoEdit.push({ nAt: nDesc + 1, nDel: 0,
+    aIns: [fFindIndentNext(aLine, nDesc, aDescOpen[1]) + `<br>× Mcsh-creation: {${oVer.sDate}}`] });
+  aoNote.push(`INSERT ${sLoc}  {${oVer.sDate}} into #${aDescOpen[2]}, from version.${oVer.sVer}` +
+    (oVer010 ? '' : ' (the-earliest)'));
+  return fDone();
+}
+
+/**
+ * DOING: --undated mode: EVERY description:: of a-file without × Mcsh-creation
+ *   gets "<br>× Mcsh-creation: {date}" as its first line: the-plain form
+ *   <p id="..">description:: and the-div form <div id=".."> + <p>description::.
+ *   A-description that the-validator's Mcsh03 calls empty is noted EMPTY first,
+ *   because after the-insertion Mcsh03 no longer sees it as empty.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }, one INSERT-note per file with the-count.
+ */
+function fPlanUndated(sRawIn, sNameShortIn, sDateIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  let nInsert = 0;
+
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const sLine = fLineClean(aLine[nL]);
+    let sIdDesc = null, sIndentOpen = '', sCloser = '</p>';
+    const aPlain = sLine.match(rDescOpen);
+    const aDiv = sLine.match(rDescDiv);
+    if (aPlain) {
+      [, sIndentOpen, sIdDesc] = aPlain;
+    } else if (aDiv && rDivOpen.test(aLine[nL - 1] ?? '')) {
+      sIndentOpen = aDiv[1];
+      sIdDesc = aLine[nL - 1].match(rDivOpen)[1];
+      sCloser = '</div>';
+    } else if (rDescSame.test(sLine)) {
+      aoNote.push(`SKIP   ${sNameShortIn}:${nL + 1}  #${sLine.match(rDescSame)[1]} has text on its description::-line`);
+      continue;
+    } else {
+      continue;
+    }
+
+    // its text, to its </p> or </div>
+    let nEnd = nL;
+    while (nEnd < aLine.length - 1 && !aLine[nEnd].includes(sCloser)) nEnd++;
+    const sText = aLine.slice(nL, nEnd + 1).join('\n');
+    if (rCreaDesc.test(sText)) continue;
+
+    // the-Mcsh03-test of structuralMcsh.js: empty = nothing but "·", "×", spaces
+    const sContent = fStripTags(sText).replace(/^description::\s*/i, '').replace(/[·\s×]/g, '').trim();
+    if (sContent.length === 0) {
+      aoNote.push(`EMPTY  ${sNameShortIn}:${nL + 1}  #${sIdDesc} description:: has no content`);
+    }
+    aoEdit.push({ nAt: nL + 1, nDel: 0,
+      aIns: [fFindIndentNext(aLine, nL, sIndentOpen) + `<br>× Mcsh-creation: {${sDateIn}}`] });
+    nInsert++;
+  }
+  if (nInsert > 0) aoNote.push(`INSERT ${sNameShortIn}  ${nInsert} descriptions`);
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: --nameid mode: the-name::-para of idOverview gets the-id idName, as
+ *   in most files. It renames 2 lines: <p id="X">name:: and its own
+ *   <a class="clsHide" href="#X"></a></p>.
+ *   It SKIPS, so a-rename never breaks anything: idName used already in the-file,
+ *   X used twice, or ANY link to X: in the-file beyond its own anchor, or
+ *   <file>#X from an-other file.
+ * INPUT: sNameFileIn: McshCor000017.last.html, aRawAllIn: the-texts of all files.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanNameId(sRawIn, sNameShortIn, sNameFileIn, aRawAllIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const fDone = () => ({ aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) });
+
+  const nSect = aLine.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === 'idOverview');
+  if (nSect === -1) return fDone();
+  const nOwnEnd = fFindSectOwnEnd(aLine, nSect);
+  let nName = -1, sId = null;
+  for (let nN = nSect + 1; nN < nOwnEnd; nN++) {
+    const aName = fLineClean(aLine[nN]).match(/^ *<p id="([^"]+)">name::/);
+    if (aName) { nName = nN; sId = aName[1]; break; }
+  }
+  if (nName === -1 || sId === 'idName') return fDone();
+  const sLoc = `${sNameShortIn}:${nName + 1}`;
+
+  // ── the-guards ──────────────────────────────────────────────────────────────
+  const sAnchor = `<a class="clsHide" href="#${sId}"></a></p>`;
+  if (sRawIn.includes('id="idName"')) {
+    aoNote.push(`SKIP   ${sLoc}  #${sId}: idName is used already in the-file`);
+    return fDone();
+  }
+  if (fCount(sRawIn, `id="${sId}"`) !== 1) {
+    aoNote.push(`SKIP   ${sLoc}  #${sId} occurs ${fCount(sRawIn, `id="${sId}"`)} times as an-id`);
+    return fDone();
+  }
+  const nLinkIn = fCount(sRawIn, `href="#${sId}"`) - fCount(sRawIn, `class="clsHide" href="#${sId}"`);
+  const nLinkOut = aRawAllIn.reduce((nSum, sRaw) => nSum + fCount(sRaw, `${sNameFileIn}#${sId}"`), 0);
+  if (nLinkIn > 0 || nLinkOut > 0) {
+    aoNote.push(`SKIP   ${sLoc}  #${sId} has links: ${nLinkIn} in the-file, ${nLinkOut} from other files`);
+    return fDone();
+  }
+  // its own anchor, on the-para's closing line
+  let nEnd = nName;
+  while (nEnd < nOwnEnd && !aLine[nEnd].includes('</p>')) nEnd++;
+  if (!aLine[nEnd].includes(sAnchor)) {
+    aoNote.push(`SKIP   ${sLoc}  #${sId}: its closing line is not ${sAnchor}`);
+    return fDone();
+  }
+
+  const fRenameOpen = sLine => sLine.replace(`<p id="${sId}">`, '<p id="idName">');
+  const fRenameAnchor = sLine => sLine.replace(sAnchor, '<a class="clsHide" href="#idName"></a></p>');
+  if (nEnd === nName) {
+    // a-one-line para: ONE edit, two edits on one line would undo each other
+    aoEdit.push({ nAt: nName, nDel: 1, aIns: [fRenameAnchor(fRenameOpen(aLine[nName]))] });
+  } else {
+    aoEdit.push({ nAt: nName, nDel: 1, aIns: [fRenameOpen(aLine[nName])] });
+    aoEdit.push({ nAt: nEnd, nDel: 1, aIns: [fRenameAnchor(aLine[nEnd])] });
+  }
+  aoNote.push(`RENAME ${sLoc}  #${sId} -> #idName`);
+  return fDone();
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -381,24 +585,35 @@ async function fMain() {
   const sNameDir = aArg.find(sArg => !sArg.startsWith('--'));
   const bFix = aArg.includes('--fix');
   const bMissing = aArg.includes('--missing');
+  const bOverview = aArg.includes('--overview');
+  const bUndated = aArg.includes('--undated');
+  const bNameId = aArg.includes('--nameid');
+  if ([bMissing, bOverview, bUndated, bNameId].filter(Boolean).length > 1) {
+    console.error('--missing, --overview, --undated and --nameid are separate runs: give one of them');
+    process.exit(1);
+  }
   if (!sNameDir) {
-    console.log('creaMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
+    console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/creaMcsh.mjs <sNameDir> [--missing] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every Mcsh02-section');
+    console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
+    console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
+    console.log('  --undated    EVERY description:: without × Mcsh-creation gets the-run-date');
+    console.log('  --nameid     the-name::-para of idOverview gets the-id idName');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
-    console.log('  OUTPUT: dirValid/creaMcsh.txt; with --fix also dirValid/creaMcsh-backup/<time>/');
+    console.log('  OUTPUT: dirValid/createMcsh.txt; with --fix also dirValid/createMcsh-backup/<time>/');
     process.exit(1);
   }
 
   // a-NEW backup-folder per run: a-second run must never overwrite the-originals of a-first
   const sTime = fFindDateLocal(true);
-  let sDirBackup = moPath.join(sDirScript, 'creaMcsh-backup', sTime);
+  let sDirBackup = moPath.join(sDirScript, 'createMcsh-backup', sTime);
   for (let nN = 2; moFs.existsSync(sDirBackup); nN++) {
-    sDirBackup = moPath.join(sDirScript, 'creaMcsh-backup', `${sTime}-${nN}`);
+    sDirBackup = moPath.join(sDirScript, 'createMcsh-backup', `${sTime}-${nN}`);
   }
   const aLineOut = [];
   const oCount = { nFile: 0, nBad: 0 };
@@ -431,7 +646,37 @@ async function fMain() {
   }
 
   let sCount;
-  if (!bMissing) {
+  if (bNameId) {
+    // all files read once: a-rename is skipped when ANY file links to the-old id
+    const aPathAll = fFindFileAll(sNameDir);
+    const aRawAll = aPathAll.map(sPathFile => moFs.readFileSync(sPathFile, 'utf8'));
+    aPathAll.forEach((sPathFile, nI) => {
+      const sNameFile = moPath.basename(sPathFile);
+      const sNameShort = sNameFile.replace(/\.last\.html$/, '');
+      fWriteFile(sPathFile, aRawAll[nI], sNameShort, fPlanNameId(aRawAll[nI], sNameShort, sNameFile, aRawAll));
+    });
+    sCount = `${oCount.RENAME ?? 0} ids renamed to idName`;
+  } else if (bUndated) {
+    const sDate = fFindDateLocal();
+    for (const sPathFile of fFindFileAll(sNameDir)) {
+      if (!moPath.basename(sPathFile).startsWith('Mcsh')) continue;
+      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+      const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
+      fWriteFile(sPathFile, sRaw, sNameShort, fPlanUndated(sRaw, sNameShort, sDate));
+    }
+    // one INSERT-note per file carries the-count of its descriptions
+    const nDesc = aLineOut.reduce((nSum, sLine) =>
+      nSum + Number(sLine.match(/^INSERT \S+  (\d+) descriptions$/)?.[1] ?? 0), 0);
+    sCount = `${nDesc} descriptions dated · ${oCount.EMPTY ?? 0} of them EMPTY · date {${sDate}}`;
+  } else if (bOverview) {
+    for (const sPathFile of fFindFileAll(sNameDir)) {
+      if (!moPath.basename(sPathFile).startsWith('Mcsh')) continue;
+      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+      const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
+      fWriteFile(sPathFile, sRaw, sNameShort, fPlanOverview(sRaw, sNameShort));
+    }
+    sCount = `${oCount.INSERT ?? 0} dates inserted · ${oCount.NODESC ?? 0} idOverview without description::`;
+  } else if (!bMissing) {
     for (const sPathFile of fFindFileAll(sNameDir)) {
       const sRaw = moFs.readFileSync(sPathFile, 'utf8');
       if (!sRaw.includes('=== McsHitp-creation:') && !sRaw.includes('=== webpage creation:')) continue;
@@ -464,22 +709,26 @@ async function fMain() {
 
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    `  creaMcsh${bMissing ? ' --missing' : ''} ${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
+    `  createMcsh${bMissing ? ' --missing' : ''}${bOverview ? ' --overview' : ''}` +
+      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''} ` +
+      `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oCount.nFile} files ${bFix ? 'written' : 'to write'} · ${sCount} · ` +
       `${oCount.SKIP ?? 0} skipped` + (oCount.nBad ? ` · ${oCount.nBad} BAD` : ''),
     bFix ? `  backup: ${sDirBackup}` : '  nothing written: add --fix to write',
     ''
   ];
-  // in the-report: skips and bad first, they need you
+  // in the-report: what needs you first — NODESC, EMPTY, then skips and bad — then the-rest
   const aLineSort = [
+    ...aLineOut.filter(sLine => /^NODESC/.test(sLine)),
+    ...aLineOut.filter(sLine => /^EMPTY/.test(sLine)),
     ...aLineOut.filter(sLine => /^(SKIP|BAD)/.test(sLine)),
-    ...aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine))
+    ...aLineOut.filter(sLine => !/^(NODESC|EMPTY|SKIP|BAD)/.test(sLine))
   ];
-  const sPathOut = moPath.join(sDirScript, 'creaMcsh.txt');
+  const sPathOut = moPath.join(sDirScript, 'createMcsh.txt');
   moFs.writeFileSync(sPathOut, [...aHead, ...aLineSort].join('\n') + '\n');
   for (const sLine of aHead.slice(0, 5)) console.log(sLine);
-  for (const sLine of aLineSort.filter(sLine => /^(SKIP|BAD)/.test(sLine))) console.log('  ' + sLine);
+  for (const sLine of aLineSort.filter(sLine => /^(NODESC|EMPTY|SKIP|BAD)/.test(sLine))) console.log('  ' + sLine);
   console.log(`📄 report written: ${sPathOut}`);
 }
 

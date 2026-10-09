@@ -129,18 +129,22 @@ function fActivate(context) {
       ? oEd.document.uri.fsPath : sVisualFile;
     const sCurCode = sCur ? path.basename(sCur).replace(/\.last\.html$/i, '') : '';
     const sInput = await vscode.window.showInputBox({
-      prompt: 'Open McsHitp file by code (optionally :line)',
-      placeHolder: 'e.g. McsCor000001:59, McsStn000005, HitpStnEcon000',
+      prompt: 'Open McsHitp file by code (optionally :line or #id)',
+      placeHolder: 'e.g. McsCor000001:59, McshLag000003#idInfHmnBrn, HitpStnEcon000',
       value: sCurCode,
       valueSelection: sCurCode ? [0, sCurCode.length] : undefined,
     });
-    if (!sInput) return { sPath: '', nLine: 0 };
-    // Split off a trailing `:<line>` BEFORE stripping `.last.html`, so both
-    // `code:59` and `code.last.html:59` parse.
+    if (!sInput) return { sPath: '', nLine: 0, sId: '' };
+    // Split off a trailing `:<line>`, then a trailing `#<id>`, BEFORE stripping
+    // `.last.html`, so `code:59`, `code.last.html:59`, `code#idX` and
+    // `code.last.html#idX` all parse.
     let sRaw = sInput.trim();
     let nLine = 0;
     const oMLine = sRaw.match(/:(\d+)\s*$/);
     if (oMLine) { nLine = parseInt(oMLine[1], 10); sRaw = sRaw.slice(0, oMLine.index); }
+    let sId = '';
+    const oMId = sRaw.match(/#([^#\s]+)\s*$/);
+    if (oMId) { sId = oMId[1]; sRaw = sRaw.slice(0, oMId.index); }
     const sCode = sRaw.replace(/\.last\.html$/i, '');
     // Resolve across candidate roots: fast deterministic path first, recursive
     // search as the safety net. Handles the cold start (no current file).
@@ -148,18 +152,27 @@ function fActivate(context) {
     let sPath = '';
     for (const sRoot of aRoots) { const p = fPathForCode(sRoot, sCode); if (p && fs.existsSync(p)) { sPath = p; break; } }
     if (!sPath) for (const sRoot of aRoots) { const p = fSearchByCode(sRoot, sCode); if (p) { sPath = p; break; } }
-    if (!sPath) { vscode.window.showWarningMessage('Mcsh-visual-manager: no file for code “' + sCode + '”.'); return { sPath: '', nLine: 0 }; }
-    return { sPath, nLine };
+    if (!sPath) { vscode.window.showWarningMessage('Mcsh-visual-manager: no file for code “' + sCode + '”.'); return { sPath: '', nLine: 0, sId: '' }; }
+    // `#<id>` → the 1-based line of the element carrying id="<id>" (overrides `:line`).
+    if (sId) {
+      let sText = '';
+      try { sText = fs.readFileSync(sPath, 'utf8'); } catch (e) { /* unreadable → no line */ }
+      const rId = new RegExp('\\bid=["\']' + sId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '["\']');
+      const oMatch = rId.exec(sText);
+      if (oMatch) nLine = sText.slice(0, oMatch.index).split('\n').length;
+      else vscode.window.showWarningMessage('Mcsh-visual-manager: id “' + sId + '” not found in ' + path.basename(sPath) + '.');
+    }
+    return { sPath, nLine, sId };
   };
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.openByCode', async () => {
-      const { sPath, nLine } = await fPromptResolveCode();
+      const { sPath, nLine, sId } = await fPromptResolveCode();
       if (!sPath) return;
       // A visual editor is open → reuse its single tab: navigate its iframe (the
       // bridge `nav` retargets the edit doc + source pane). Else open a fresh pair.
       const sUrl = fNavigateVisual ? fDisplayUrlForPath(sPath) : '';
       if (fNavigateVisual && sUrl) {
-        fNavigateVisual(sUrl);
+        fNavigateVisual(sId ? sUrl + '#' + sId : sUrl);
         if (nLine > 0) await fRevealSource(vscode.Uri.file(sPath), nLine);  // position left source pane
       } else {
         await vscode.commands.executeCommand('mcshv.open', vscode.Uri.file(sPath), nLine);

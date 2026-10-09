@@ -1,0 +1,28 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --nameid --fix: C:/dirNodews/dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  22 files written · 22 ids renamed to idName · 0 skipped
+  backup: C:\dirNodews\dirMcshmgr\dirValid\createMcsh-backup\2026-10-04T18-45-57
+
+RENAME McshCor000017:27  #idDescriptionnam -> #idName
+RENAME McshHlth000017:26  #idDescriptionnam -> #idName
+RENAME McshHmn000001:27  #idNameP1 -> #idName
+RENAME McshHmn000004:26  #idDescriptionnam -> #idName
+RENAME McshLag000001:27  #idNameP1 -> #idName
+RENAME McshLag000015:26  #idDescriptionnam -> #idName
+RENAME McshNtr000001:27  #idNameP1 -> #idName
+RENAME McshNtr000016:26  #idDescriptionnam -> #idName
+RENAME McshOgm000001:27  #idNameP1 -> #idName
+RENAME McshOgm000012:27  #idDescriptionnam -> #idName
+RENAME McshStn000001:27  #idNameP1 -> #idName
+RENAME McshStn000025:26  #idDescriptionnam -> #idName
+RENAME McshStnlaw000001:27  #idNameP1 -> #idName
+RENAME McshStnlaw000005:26  #idDescriptionnam -> #idName
+RENAME McshTch000001:27  #idNameP1 -> #idName
+RENAME McshTch000004:26  #idDescriptionnam -> #idName
+RENAME McshTchInf000001:27  #idNameP1 -> #idName
+RENAME McshTchInf000032:26  #idDescriptionP2 -> #idName
+RENAME McshTchInf000034:26  #idDescriptionnam -> #idName
+RENAME McshTchPrgm000001:27  #idNameP1 -> #idName
+RENAME McshTchPrgm000004:26  #idDescriptionnam -> #idName
+RENAME Mcsh000001:26  #idDescriptionnam -> #idName

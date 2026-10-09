@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * reportMcsh.mjs - it reports the-issues of one Mcsh-validator-code, per file
+ * reportMcsh.mjs - it reports the-issues of one validator-code (Mcsh or Hitp), per file
  * The MIT License (MIT)
  *
  * Copyright (c) 2026 Kaseluris.Nikos.1959 (humnSngu)
@@ -25,17 +25,19 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * DOING: it reports the-issues of one or more Mcsh-validator-codes per file, as
+ * DOING: it reports the-issues of one or more validator-codes per file, as
  *   McshTchInf000015:12034;11980;2310
  *   one number per issue: the-line of the-issue, the-biggest first, so you edit
  *   them top-down and the-other-numbers stay valid. Files with more issues first.
- *   It takes the-issues the-validator itself makes (fRunChecksMcsh), so the-rules
- *   live in ONE place: structuralMcsh.js.
+ *   It takes the-issues the-validator itself makes, so the-rules live in ONE place:
+ *   Mvr.. codes from fRunChecksMcsh (structuralMcsh.js, Mcsh* files only),
+ *   Hvr.. codes from fRunChecksHitp (structuralHitp.js, every .last.html file).
+ *   Only the-checker of a-requested code runs.
  * INPUT: the-path of a-dirMcsh-worldview and the-codes.
  * OUTPUT: the-report in dirValid/reportMcsh.txt, overwritten on every run;
  *   the-console shows its header and the-path.
  * RUN:
- *   node dirValid/reportMcsh.mjs <sNameDir> --code Mcsh02[,Mcsh03]
+ *   node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07]
  *                                [--line] [--file McshDir000000]
  */
 
@@ -45,10 +47,12 @@ import { fileURLToPath } from 'url'
 import { fReadFileAllHitp } from './parserHitp.js'
 import { fReadFileMcsh } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
+import { fRunChecksHitp } from './structuralHitp.js'
 
 const
   // contains the-versions of reportMcsh.mjs
   aVersion = [
+    'reportMcsh.mjs.0-3-0.2026-10-09: and Hitp-rules (Hvr.. codes)',
     'reportMcsh.mjs.0-2-0.2026-10-04: the-report goes to reportMcsh.txt',
     'reportMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
@@ -81,12 +85,14 @@ async function fMain() {
     : [];
 
   if (!sNameDir || aCode.length === 0) {
-    console.log('reportMcsh.mjs - it reports the-issues of one Mcsh-validator-code, per file');
+    console.log('reportMcsh.mjs - it reports the-issues of one validator-code (Mcsh or Hitp), per file');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code Mcsh02[,Mcsh03] [--line] [--file McshDir000000]');
+    console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07] [--line] [--file McshDir000000]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
-    console.log('  --code       one or more codes, comma-separated: Mcsh01 ... Mcsh08');
+    console.log('  --code       one or more codes, comma-separated:');
+    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06');
+    console.log('                 Hitp: Hvre01 ... Hvre07  Hvrw01 ... Hvrw07');
     console.log('  --line       per file, every issue: its line and its message');
     console.log('  --file       one file only, given as McshDir000000');
     console.log('  OUTPUT: dirValid/reportMcsh.txt, overwritten on every run');
@@ -97,11 +103,19 @@ async function fMain() {
   const nIdxFile = aArg.indexOf('--file');
   const sNameFileOnly = nIdxFile !== -1 ? fFindNameShort(aArg[nIdxFile + 1] ?? '') : '';
 
-  // ── read the-Mcsh-files, run the-checks of the-validator, quietly ─────────
-  const aoFileHitp = fReadFileAllHitp(sNameDir).filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
-  const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
-    fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
-  const aoIssueAll = fRunChecksMcsh(aoCnptFile, sNameDir, true);
+  // ── read the-files, run the-checks of the-validator, quietly ──────────────
+  // Hitp-rules on every .last.html file, as validatorMcsh.js; Mcsh-rules on Mcsh* only
+  const bCodeHitp = aCode.some(sCode => sCode.startsWith('H'));
+  const bCodeMcsh = aCode.some(sCode => !sCode.startsWith('H'));
+  const aoFileHitp = fReadFileAllHitp(sNameDir);
+  const aoFileHitpMcsh = aoFileHitp.filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+  const aoIssueAll = [];
+  if (bCodeHitp) aoIssueAll.push(...fRunChecksHitp(aoFileHitp, sNameDir, true));
+  if (bCodeMcsh) {
+    const aoCnptFile = await Promise.all(aoFileHitpMcsh.map(oFile =>
+      fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
+    aoIssueAll.push(...fRunChecksMcsh(aoCnptFile, sNameDir, true));
+  }
   const aoIssue = aoIssueAll.filter(oIssue => aCode.includes(oIssue.sCode));
 
   // ── group per file ────────────────────────────────────────────────────────
@@ -121,7 +135,8 @@ async function fMain() {
     fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     fOut(`  ${aCode.join(',')}: ${sNameDir}`);
     fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    fOut(`  ${aoCnptFile.length} Mcsh-files · ${aoCount.length} files with issues · ` +
+    fOut(`  ${bCodeHitp ? aoFileHitp.length + ' files' : aoFileHitpMcsh.length + ' Mcsh-files'} · ` +
+      `${aoCount.length} files with issues · ` +
       `${aoIssue.length} issues`);
     if (aoIssue.length === 0) {
       // an-unknown-code finds nothing: we say which codes DO occur

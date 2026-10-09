@@ -15,7 +15,7 @@
  *   sNameTitle,     // <title> text (name part only)
  *   sVersion,       // e.g. "HitpStnStd000.8-2-3.2024-05-26"
  *   nLineTitle,     // line of the <title>
- *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt }]
+ *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt, nLine }]
  *   aoElmt,         // heading+paragraph elements of content sections:
  *                   //   [{ sType:'head'|'para', sNameId, nLevel, sHrefSelf, nLine, sIdSect }]
  *   oSetId,         // Set<string> of every id= in the file
@@ -324,6 +324,8 @@ export function fReadFileHitp(sPathFile) {
       nHeadingLevel,
       nDepth: oRawSect.nDepth,
       sIdWhole_elmt: oRawSect.sIdWhole_elmt,
+      // the-line of <section id>: aoSect is NOT in document order, Hvrw07 sorts by it
+      nLine: oMapIdLine.get(oRawSect.sNameId) ?? null,
     });
 
     // element-level checks skip infrastructure sections (idMeta/idComment/idSupport);

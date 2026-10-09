@@ -21,7 +21,7 @@
     },
     // Index names of current-FILE and upload
     {
-      "label": "Index names of current-file and upload",
+      "label": "Index names of current-FILE and upload",
       "type": "shell",
       "command": "node",
       "args": [
