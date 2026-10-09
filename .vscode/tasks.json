@@ -1,4 +1,5 @@
 {
+  // {2026-10-09}
   "version": "2.0.0",
   "tasks": [
     // Backup Vscode user settings
@@ -37,9 +38,9 @@
       },
       "problemMatcher": []
     },
-    // Index names ONLY of current-file
+    // Index names ONLY of current-FILE
     {
-      "label": "Index names ONLY of current-file",
+      "label": "Index names ONLY of current-FILE",
       "type": "shell",
       "command": "node",
       "args": [
@@ -63,6 +64,23 @@
       "args": [
         "../dirMcshmgr/mNamidxDir.mjs",
         "${command:mcshv.currentFileDirname}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    // Index names of LIST (dirManager/namidx.txt) and upload
+    {
+      "label": "Index names of LIST and upload",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxMany.mjs"
       ],
       "options": {
         "cwd": "${command:mcshv.currentWorldview}"
