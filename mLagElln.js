@@ -420,37 +420,30 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
   n = aMcs.findIndex(function(sLn){
     return sLn.indexOf('"idLEllnnoun' +sMethodIn.substring(9) +'dsn"') > 1
   })
+  if (n === -1) {
+    console.log('fFindNounmbrElln: method not found: ' +sMethodIn)
+    return ['method not found: ' +sMethodIn, '']
+  }
   //we found method
-  sLn = aMcs[n+1] //<p>description::
-  sLn = aMcs[n+2] //<br>× Elln_nounMnG2Xi
-  aCase.push(sLn.substring(10))
-  aMethod.push(sLn.substring(10))
-  sLn = aMcs[n+3] //</p>
-  sLn = aMcs[n+4] //<table class="clsTblBorderNo">
-  sLn = aMcs[n+5] //<tr><td>η<td>νύφ-η
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+6] //<tr><td>της<td>νύφ-ης
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+7] //<tr><td>την<td>νύφ-η
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+8] //<tr><td><td>νύφ-η
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+9] //<tr><td>οι<td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+10] //<tr><td>των<td>νυφ-άδων
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+11] //<tr><td>τις<td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
-  sLn = aMcs[n+12] //<tr><td><td>νύφ-ες|νυφ-άδες
-  aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
-  aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
+  //description can have extra lines (eg × Mcsh-creation), find lines by content
+  let nLn = n+1
+  while (nLn < aMcs.length && aMcs[nLn].indexOf('× Elln_noun') === -1
+    && aMcs[nLn].indexOf('</div>') === -1) nLn++
+  sLn = aMcs[nLn] //<br>× Elln_nounMnG2Xi
+  aCase.push(sLn.substring(sLn.indexOf('×')+2))
+  aMethod.push(sLn.substring(sLn.indexOf('×')+2))
+  while (nLn < aMcs.length && aMcs[nLn].indexOf('<table') === -1
+    && aMcs[nLn].indexOf('</div>') === -1) nLn++
+  if (aMcs[nLn].indexOf('<table') === -1) {
+    console.log('fFindNounmbrElln: no table in method: ' +sMethodIn)
+    return ['no table in method: ' +sMethodIn, '']
+  }
+  //8 rows: <tr><td>η<td>νύφ-η ... <tr><td><td>νύφ-ες|νυφ-άδες
+  for (let nRow=1; nRow<=8; nRow++) {
+    sLn = aMcs[nLn+nRow]
+    aCase.push(sLn.substring(sLn.indexOf('<'), sLn.lastIndexOf('>')+1))
+    aMethod.push(sLn.substring(sLn.lastIndexOf('>')+1))
+  }
   //console.log(aMethod)
   //console.log(aCase)
 
@@ -506,6 +499,10 @@ async function fFindNounmbrElln (sWordIn, sMethodIn, bSinizisiIn) {
       else if (sStemMx.substring(1) === sStemMRem) sWordX = '(' + sStemWRem + sSufxMx
       else if (sStemMx.substring(1) === sStemMInc) sWordX = '(' + sStemWInc + sSufxMx
       else if (sStemMx.substring(1) === sStemMDec) sWordX = '(' + sStemWDec + sSufxMx
+      else {
+        console.log('fFindWordX: no stem match: ' +sMethexlIn +' / stemM=' +sStemM)
+        return '?' + sMethexlIn
+      }
       let sPhnm = omLagUtil.fGreekwordFindPhonema(sWordX, bSinizisi)
       if (sPhnm.indexOf('111') !== -1){
         //TODO: fix it from base-form
