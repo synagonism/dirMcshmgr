@@ -1,0 +1,420 @@
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-16
+
+GS-TREE sections: 2402   fully conforming: 2153   with issues: 249
+heading levels: h1 555, h2 763, h3 579, h4 316, h5 147, h6 38, h7 4
+
+Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
+  {id}dsn with Mcsh-creation date, {id}nam with X'generic-specific-tree + X'specific-generic-tree,
+  {whole}gtr generic-tree:: starting "McshEngl.X-Gntr," and holding "... entity-Gntr,",
+  {whole}str specific-tree:: with "McshEngl.X.specific," + "McshEngl.X-Sptr,", X = the whole's main-name, no extra content.
+
+ISSUES (a GS-TREE can have several):
+  OLD          2  old-style title (not "GENERIC-SPECIFIC-TREE of X")
+  NOPARENT     0  top-level GS-TREE whose id does not end in gstr
+  ID           6  section id is not {whole}gstr
+  LEVEL        0  heading level is not whole + 1
+  HID          0  heading id is not {id}H{level}
+  DSN          9  no {id}dsn description:: (or no Mcsh-creation date)
+  NAM         20  name:: lacks X'generic-specific-tree / X'specific-generic-tree
+  GTR          5  no {whole}gtr generic-tree:: paragraph
+  GTRN        78  generic-tree:: does not start with McshEngl.X-Gntr,
+  GTRE         7  generic-tree:: neither has "... entity-Gntr," nor ends at entity
+  STR         45  no {whole}str specific-tree:: paragraph
+  STRN         0  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X-Sptr,
+  XNAME       43  X differs from the whole's !⇒ main-name
+  EXTRA      100  other paragraphs / blocks inside the GS-TREE
+  KIDS        46  GS-TREE has child sections
+  TWO          4  whole has more than one GS-TREE
+  SELF         2  self-link does not match its paragraph id
+
+=== OLD. old-style title (not "GENERIC-SPECIFIC-TREE of X") (2) ===
+McshTchInf000006:2801  idLSrcdalggstr  h2  "Srcdalgo'GENERIC-SPECIFIC-TREE"
+McshTchInf000028:1100  idLMovealgogstr  h2  "Movealgo'GENERIC-SPECIFIC-TREE"
+
+=== ID. section id is not {whole}gstr (6) ===
+  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"  whole idLHmnmsmsondo
+McshOgm000005:252  isSbtcHmngst  h3  "GENERIC-SPECIFIC-TREE of substanceHmn"  whole idSysMolsHmn027
+McshTchInf000006:2801  idLSrcdalggstr  h2  "Srcdalgo'GENERIC-SPECIFIC-TREE"  whole idLSrcd
+McshTchInf000012:3446  idLJsndmgogst  h3  "GENERIC-SPECIFIC-TREE of Jsndmgo"  whole idLJsndmgo
+McshTchInf000028:1100  idLMovealgogstr  h2  "Movealgo'GENERIC-SPECIFIC-TREE"  whole idLMove
+
+=== DSN. no {id}dsn description:: (or no Mcsh-creation date) (9) ===
+McshLag000003:1599  idInfHmnBrn010gstr  h2  "GENERIC-SPECIFIC-TREE of infoData"
+McshLag000003:1750  idInfHmnSrl001gstr  h3  "GENERIC-SPECIFIC-TREE of doc"
+McshOgm000009:795  idOgmAnml023gstr  h2  "GENERIC-SPECIFIC-TREE of animalBrainNo"
+McshTchInf000003:1636  idCmr003gstr  h2  "GENERIC-SPECIFIC-TREE of cmprAbstract"
+McshTchInf000005:1047  idLtdocinptgstr  h3  "GENERIC-SPECIFIC-TREE of docNtxt"
+McshTchInf000005:1084  idLtdocotptgstr  h3  "GENERIC-SPECIFIC-TREE of docDtxt"
+McshTchInf000039:850  idLKnlgmngrgstr  h2  "GENERIC-SPECIFIC-TREE of KnlgMngr"
+McshTchInf000039:3354  idLKnlg002gstr  h2  "GENERIC-SPECIFIC-TREE of lagoLgkl"
+McshTchPrgm000002:412  idCpgm001Edtrgstr  h3  "GENERIC-SPECIFIC-TREE of appEditor"
+
+=== NAM. name:: lacks X'generic-specific-tree / X'specific-generic-tree (20) ===
+McshHmn000003:338  idHmnSngogstr  h1  "GENERIC-SPECIFIC-TREE of HumnSngu"
+McshLag000003:1599  idInfHmnBrn010gstr  h2  "GENERIC-SPECIFIC-TREE of infoData"
+McshLag000003:1750  idInfHmnSrl001gstr  h3  "GENERIC-SPECIFIC-TREE of doc"
+McshLag000035:2537  idLSpangstr  h1  "GENERIC-SPECIFIC-TREE of Span_lago"
+McshLag000036:2979  idLArabgstr  h1  "GENERIC-SPECIFIC-TREE of Arab_lago"
+McshLag000037:2214  idLHiurgstr  h1  "GENERIC-SPECIFIC-TREE of Hiur_lago"
+McshLag000041:1772  idLTur0gstr  h1  "GENERIC-SPECIFIC-TREE of Tur0_lago"
+McshLag000042:1593  idLAsa0gstr  h1  "GENERIC-SPECIFIC-TREE of Asa0_lago"
+McshOgm000003:1464  idOgm013gstr  h2  "GENERIC-SPECIFIC-TREE of ogmMicro"
+McshOgm000005:252  isSbtcHmngst  h3  "GENERIC-SPECIFIC-TREE of substanceHmn"
+McshOgm000009:795  idOgmAnml023gstr  h2  "GENERIC-SPECIFIC-TREE of animalBrainNo"
+McshStn000023:21598  idScmogstr  h1  "GENERIC-SPECIFIC-TREE of scmo"
+McshTchInf000003:814  idCmrgstr  h1  "GENERIC-SPECIFIC-TREE of techCmpr"
+McshTchInf000003:1636  idCmr003gstr  h2  "GENERIC-SPECIFIC-TREE of cmprAbstract"
+McshTchInf000005:1047  idLtdocinptgstr  h3  "GENERIC-SPECIFIC-TREE of docNtxt"
+McshTchInf000005:1084  idLtdocotptgstr  h3  "GENERIC-SPECIFIC-TREE of docDtxt"
+McshTchInf000012:3446  idLJsndmgogst  h3  "GENERIC-SPECIFIC-TREE of Jsndmgo"
+McshTchInf000039:850  idLKnlgmngrgstr  h2  "GENERIC-SPECIFIC-TREE of KnlgMngr"
+McshTchInf000039:3354  idLKnlg002gstr  h2  "GENERIC-SPECIFIC-TREE of lagoLgkl"
+McshTchPrgm000002:412  idCpgm001Edtrgstr  h3  "GENERIC-SPECIFIC-TREE of appEditor"
+
+=== GTR. no {whole}gtr generic-tree:: paragraph (5) ===
+McshCor000002:2050  idMcsattWhlNogstr  h3  "GENERIC-SPECIFIC-TREE of Mcsenvt"
+McshLag000007:2049  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"
+McshOgm000005:252  isSbtcHmngst  h3  "GENERIC-SPECIFIC-TREE of substanceHmn"
+McshTchInf000006:2801  idLSrcdalggstr  h2  "Srcdalgo'GENERIC-SPECIFIC-TREE"
+McshTchInf000028:1100  idLMovealgogstr  h2  "Movealgo'GENERIC-SPECIFIC-TREE"
+
+=== GTRN. generic-tree:: does not start with McshEngl.X-Gntr, (78) ===
+McshHlth000002:1902  idGlndHmngstr  h3  "GENERIC-SPECIFIC-TREE of organGland"  <br>* McshEngl.gland-Gntr,
+McshHlth000002:2802  idGlndHmn009gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodySkinGland"  <br>* McshEngl.glandSkin-Gntr,
+McshHlth000002:3310  idGlndHmn017gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyTesticle"  <br>* McshEngl.glandTesticle-Gntr,
+McshHlth000002:3519  idGlndHmn020gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyBreast"  <br>* McshEngl.glandBreast-Gntr,
+McshHlth000002:9082  idOgnHmn005gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyLung"  <br>* McshEngl.organLung-Gntr,
+McshHlth000002:10540  idSysOgnHmn007functinggstr  h3  "GENERIC-SPECIFIC-TREE of SystDigestive'functing"  <br>* McshEngl.functingSysDigestive-Gntr,
+McshHlth000002:13748  idBdyHmn148gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyBreathing"  <br>* McshEngl.breathing-Gntr,
+McshHlth000003:3677  idBrnHmngstr  h1  "GENERIC-SPECIFIC-TREE of organBrain"  <br>* McshEngl.brain-Gntr,
+McshHlth000004:458  idCellHmnatt016gstr  h2  "GENERIC-SPECIFIC-TREE of chromosome"  <br>* chromosome⧺cptEpistem730⧺,
+McshHlth000004:2410  idCellHmn019gstr  h2  "GENERIC-SPECIFIC-TREE of cellLeucocyte"  <br>* <a class="clsPreview" href="#idCellHmngtr">cell-gtr</a
+McshHlth000005:1754  idMsclHmn009gstr  h4  "GENERIC-SPECIFIC-TREE of muscleTorsofrontSkeletal"  <br>* McshEngl.muscleTorsoFrontSkeletal-Gntr,
+McshHlth000011:1183  idDssHmn001gstr  h2  "GENERIC-SPECIFIC-TREE of DssInfectious"  <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr<
+McshHlth000013:1179  idFoodHmn049gstr  h2  "GENERIC-SPECIFIC-TREE of foodNatural"  <br>* <a class="clsPreview" href="#idOverview">foodHmn</a>,
+McshHlth000013:6928  idFoodHmn106gstr  h2  "GENERIC-SPECIFIC-TREE of foodFruit"  <br>* McshEngl.fruit-Gntr,
+McshHlth000013:8767  idFoodHmn143gstr  h2  "GENERIC-SPECIFIC-TREE of foodMeat"  <br>* <a class="clsPreview" href="#idFoodHmn049">natural-foo
+McshHlth000013:9905  idFoodHmn194gstr  h2  "GENERIC-SPECIFIC-TREE of foodOilOlive"  <br>* <a class="clsPreview" href="#idFoodHmn050">naturalNo-f
+McshHlth000019:2815  idOgnHmn008gstr  h3  "GENERIC-SPECIFIC-TREE of ear"  <br>* McshEngl.organEar-Gntr,
+McshLag000007:1566  idLHmnmsmsondosmatgstr  h4  "GENERIC-SPECIFIC-TREE of Semuargu_attr"  <br>* <a class="clsPreview" href="#idLHmnmsmscptatt">semu-cn
+McshLag000007:2249  idLHmnmprsngstr  h4  "GENERIC-SPECIFIC-TREE of personLago"  <br>* <a class="clsPreview" href="../dirCor/McshCor000003.la
+McshLag000007:2291  idLHmnmprsnAgstr  h5  "GENERIC-SPECIFIC-TREE of personLagoA"  <br>* <a class="clsPreview" href="../dirCor/McshCor000003.la
+McshLag000007:2581  idLHmnmprsnCgstr  h5  "GENERIC-SPECIFIC-TREE of personLagoC"  <br>* <a class="clsPreview" href="../dirCor/McshCor000003.la
+McshLag000007:23174  idLHmnmverbmrfdrgstr  h4  "GENERIC-SPECIFIC-TREE of verber"  <br>* McshEngl.memberorVerb-Gntr,
+McshLag000008:140  idL0016untgstr  h3  "GENERIC-SPECIFIC-TREE of alfa_lago_unit"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000009:183  idL0017untgstr  h3  "GENERIC-SPECIFIC-TREE of unitSpch"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000010:383  idL0014untgstr  h3  "GENERIC-SPECIFIC-TREE of Sngu_unit"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000010:420  idL0014untTrmgstr  h4  "GENERIC-SPECIFIC-TREE of Sngu_lagu-unit.term"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000010:516  idL0014phnmgstr  h4  "GENERIC-SPECIFIC-TREE of Sngu_phnm"  <br>* <a class="clsPreview" href="../dirLag/McshLag000009.la
+McshLag000010:1272  idL0014ltrgstr  h4  "GENERIC-SPECIFIC-TREE of Sngu_letr"  <br>* <a class="clsPreview" href="../dirLag/McshLag000008.la
+McshLag000010:2419  idL0014wrdgstr  h4  "GENERIC-SPECIFIC-TREE of Sngu_word"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000011:286  idLEnglsmsondombrMaingstr  h5  "GENERIC-SPECIFIC-TREE of Engl_Semuargu_mebr.main"  <br>* <a class="clsPreview" href="#idLEnglsmsondo">Engl_lago
+McshLag000011:424  idLEnglsmsondoSgstr  h5  "GENERIC-SPECIFIC-TREE of OndoSmsmbrSpclEngl"  <br>* <a class="clsPreview" href="#idLEnglsmsondombr">Engl_l
+McshLag000011:723  idLEnglphnmgstr  h4  "GENERIC-SPECIFIC-TREE of Engl_phnm"  <br>* <a class="clsPreview" href="../dirLag/McshLag000009.la
+McshLag000011:1615  idLEnglltrgstr  h4  "GENERIC-SPECIFIC-TREE of Engl_letr"  <br>* <a class="clsPreview" href="../dirLag/McshLag000008.la
+McshLag000011:14760  idLEnglprongstr  h4  "GENERIC-SPECIFIC-TREE of pronEngl"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000012:365  idLEspountgstr  h3  "GENERIC-SPECIFIC-TREE of unitEspo"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000012:402  idLEspountTrmgstr  h4  "GENERIC-SPECIFIC-TREE of Espo_lago-unit.term"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000012:489  idLEspophnmgstr  h4  "GENERIC-SPECIFIC-TREE of EspoPhnm"  <br>* <a class="clsPreview" href="../dirLag/McshLag000009.la
+McshLag000012:1666  idLEspowrdgstr  h4  "GENERIC-SPECIFIC-TREE of wordEspo"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000018:382  idLZhonsmsnunSgstr  h6  "GENERIC-SPECIFIC-TREE of ArgoStxvmbrSpclZhon"  <br>* <a class="clsPreview" href="#idLZhonsmsnunmbr">Zhon_la
+McshLag000018:619  idLZhonuntgstr  h3  "GENERIC-SPECIFIC-TREE of Zhon_unit"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000018:659  idLZhonuntNamegstr  h4  "GENERIC-SPECIFIC-TREE of Zhonname_unit"  <br>* Hmnm_lago-name-unit,
+McshLag000018:1166  idLZhonphnmgstr  h4  "GENERIC-SPECIFIC-TREE of Zhon_phnm"  <br>* <a class="clsPreview" href="../dirLag/McshLag000009.la
+McshLag000018:10841  idLZhonprngstr  h4  "GENERIC-SPECIFIC-TREE of Zhonpron"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshLag000021:161  idLZhonwrdgstr  h2  "GENERIC-SPECIFIC-TREE of Zhon_word"  <br>* <a class="clsPreview" href="../dirLag/McshLag000007.la
+McshNtr000005:1381  idSysMols010gstr  h2  "GENERIC-SPECIFIC-TREE of mtrlChemical"  <br>* McshEngl.chemical-Gntr,
+McshOgm000005:2591  idHrmnHmn002gstr  h3  "GENERIC-SPECIFIC-TREE of HrmnHumnMale"  <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr
+McshOgm000006:164  idPrtnOgmatt003003gstr  h3  "GENERIC-SPECIFIC-TREE of acidAminoHmn"  <br>* McshEngl.amino-acid-Gntr,
+McshTch000002:509  idTchgstr  h1  "GENERIC-SPECIFIC-TREE of tech"  <br>* <a class="clsPreview" href="../dirStn/McshStn000010.la
+McshTchInf000006:2160  idLSrcdwrdgstr  h3  "GENERIC-SPECIFIC-TREE of Srcdalgowork"  <br>* <a class="clsPreview" href="#idLCpgmalgwrd">word-of-Pg
+McshTchInf000006:2317  idLSrcdsuntgstr  h3  "GENERIC-SPECIFIC-TREE of Srcd_lago_Sunt"  <br>* <a class="clsPreview" href="#idLCpgmalgsunt">sem-unit-
+McshTchInf000006:2673  idLSrcdsntcgstr  h3  "GENERIC-SPECIFIC-TREE of Srcdsent"  <br>* <a class="clsPreview" href="#idLCpgmsntc">sentence-of-
+McshTchInf000006:2750  idLSrcdsctngstr  h3  "GENERIC-SPECIFIC-TREE of Srcdalgosect"  <br>* <a class="clsPreview" href="#idLCpgmalgsctn">section-o
+McshTchInf000010:365  idLJsgnsutgstr  h2  "GENERIC-SPECIFIC-TREE of Jssut"  <br>* <a class="clsPreview" href="#idLJsgno">object</a>,
+McshTchInf000010:1842  idLJsgnbgstr  h3  "GENERIC-SPECIFIC-TREE of Jsb"  <br>* Boolean.prototype, (<code>true.__proto__ === Boolean.p
+McshTchInf000010:2180  idLJsgnfgstr  h3  "GENERIC-SPECIFIC-TREE of Jsf"  <br>* <a class="clsPreview" href="#idLJsgnFunctionp">Functio
+McshTchInf000010:2822  idLJsgnmgstr  h3  "GENERIC-SPECIFIC-TREE of Jsm"  <br>* <a class="clsPreview" href="#idLJsgnsut">semantic-unit
+McshTchInf000010:2896  idLJsgnngstr  h3  "GENERIC-SPECIFIC-TREE of Jsn"  <br>* <a class="clsPreview" href="#idLJsgnNumberp">Number.pr
+McshTchInf000010:3363  idLJsgnrgstr  h3  "GENERIC-SPECIFIC-TREE of Jsr"  <br>* <a class="clsPreview" href="#idLJsgnRegExpp">RegExp.pr
+McshTchInf000010:3485  idLJsgnsgstr  h3  "GENERIC-SPECIFIC-TREE of Jss"  <br>* <a class="clsPreview" href="#idLJsgnStringp">String.pr
+McshTchInf000010:4103  idLJsgnapiNtvgstr  h3  "GENERIC-SPECIFIC-TREE of JsapiNative"  <br>* <a class="clsPreview" href="#idLJsgnapi">Jsapi</a>,
+McshTchInf000010:4845  idLJsgndefRefgstr  h4  "GENERIC-SPECIFIC-TREE of JsgndefNmvl"  <br>* Definition-sentence,
+McshTchInf000012:3446  idLJsndmgogst  h3  "GENERIC-SPECIFIC-TREE of Jsndmgo"  <br>* McsEngl.Jsndmgo-Gntr,
+McshTchInf000016:251  idDbcogngstr  h3  "GENERIC-SPECIFIC-TREE of chain_ogn"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000019:1173  idDeOzngstr  h1  "GENERIC-SPECIFIC-TREE of OgznDao"  <br>* McshEngl.OgznAlgo-Gntr,
+McshTchInf000019:3400  idDaostkgovcgenxgstr  h5  "GENERIC-SPECIFIC-TREE of DvGEN'exchange-ogn"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000021:1347  idEosbexgstr  h3  "GENERIC-SPECIFIC-TREE of Deos_explorer"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000021:1758  idEosevuEOSgstr  h3  "GENERIC-SPECIFIC-TREE of DvEOS"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000021:2166  idEosgovvtggstr  h3  "GENERIC-SPECIFIC-TREE of Deos'voting"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000021:2585  idEospgmAppgstr  h2  "GENERIC-SPECIFIC-TREE of Deos_Dapp"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000024:399  idSteemastgstr  h2  "GENERIC-SPECIFIC-TREE of Steemasset"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000024:955  idSteempgmgstr  h2  "GENERIC-SPECIFIC-TREE of Steem-program"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000024:2094  idSteemwltgstr  h2  "GENERIC-SPECIFIC-TREE of Steemwalt"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000030:222  idLRustalgnodegstr  h2  "GENERIC-SPECIFIC-TREE of Rustnode"  <br>* <a class="clsPreview" href="#idLSrcdalgnode">algo-node
+McshTchInf000030:300  idLRustwrdgstr  h2  "GENERIC-SPECIFIC-TREE of Rust_lago_word"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000030:355  idLRustkwdgstr  h3  "GENERIC-SPECIFIC-TREE of Rust_lago_keyword"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000030:1631  idLRustsuntFgstr  h3  "GENERIC-SPECIFIC-TREE of Rust_lago_f"  <br>* <a class="clsPreview" href="#idLRustsunt">source--sema
+McshTchInf000030:1686  idLRustoprgstr  h4  "GENERIC-SPECIFIC-TREE of Rust_lago_opr"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+McshTchInf000030:2612  idLRustsntcgstr  h2  "GENERIC-SPECIFIC-TREE of Rust_lago_sentence"  <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+
+=== GTRE. generic-tree:: neither has "... entity-Gntr," nor ends at entity (7) ===
+McshHlth000002:14812  idBdyHmngstr  h1  "GENERIC-SPECIFIC-TREE of bodyHumn"  last: <br>...
+McshHlth000005:2027  idMsclHmn012gstr  h4  "GENERIC-SPECIFIC-TREE of muscleThorax"  last: <br>πρόσθιας επιφάνειας μυς κορμού⧺cptBdyHmn476⧺,
+McshHlth000005:2095  idMsclHmn013gstr  h4  "GENERIC-SPECIFIC-TREE of muscleAbdominal"  last: <br>πρόσθιας επιφάνειας μυς κορμού⧺cptBdyHmn476⧺,
+McshOgm000003:1464  idOgm013gstr  h2  "GENERIC-SPECIFIC-TREE of ogmMicro"  last: <br>===
+McshOgm000005:610  idSysMolsHmn008gstr  h3  "GENERIC-SPECIFIC-TREE of macromolecule"  last: <br>===
+McshOgm000005:3435  idFldHmn001gstr  h2  "GENERIC-SPECIFIC-TREE of bloodHmn"  last: <br>[Αργύρης, {1994}, 48⧺cptRsc29⧺]
+McshOgm000006:164  idPrtnOgmatt003003gstr  h3  "GENERIC-SPECIFIC-TREE of acidAminoHmn"  last: <br>===
+
+=== STR. no {whole}str specific-tree:: paragraph (45) ===
+McshCor000002:2050  idMcsattWhlNogstr  h3  "GENERIC-SPECIFIC-TREE of Mcsenvt"
+McshCor000009:1223  idGnrcgstr  h1  "GENERIC-SPECIFIC-TREE of generic"
+McshCor000011:370  idSysgstr  h1  "GENERIC-SPECIFIC-TREE of system"
+McshCor000011:2597  idSys009gstr  h2  "GENERIC-SPECIFIC-TREE of SystDynamic"
+McshCor000018:1086  idBrngHmnFct002gstr  h2  "GENERIC-SPECIFIC-TREE of FctgThinking"
+McshEdu000005:5706  idSMath002gstr  h2  "GENERIC-SPECIFIC-TREE of mathAppliedNo"
+McshEdu000005:5771  idSMath015gstr  h3  "GENERIC-SPECIFIC-TREE of mathNumber_theory"
+McshEdu000005:5973  idSMath005gstr  h2  "GENERIC-SPECIFIC-TREE of mathAlgebra"
+McshEdu000005:6238  idSMath021gstr  h2  "GENERIC-SPECIFIC-TREE of mathAnalysis"
+McshEdu000005:6904  idSMath007gstr  h2  "GENERIC-SPECIFIC-TREE of mathGeometry"
+McshEdu000005:7991  idSMath013gstr  h2  "GENERIC-SPECIFIC-TREE of mathTopology"
+McshEdu000009:829  idSMind005gstr  h2  "GENERIC-SPECIFIC-TREE of sciLogic"
+McshEdu000010:876  idSLangtermgstr  h3  "GENERIC-SPECIFIC-TREE of terminology"
+McshHlth000002:240  idBdyHmnatt007gstr  h2  "GENERIC-SPECIFIC-TREE of head"
+McshHlth000002:1902  idGlndHmngstr  h3  "GENERIC-SPECIFIC-TREE of organGland"
+McshHlth000002:11603  idSysOgnHmn009gstr  h2  "GENERIC-SPECIFIC-TREE of SystReproductive"
+McshHlth000003:3677  idBrnHmngstr  h1  "GENERIC-SPECIFIC-TREE of organBrain"
+McshHlth000004:1343  idCellHmngstr  h1  "GENERIC-SPECIFIC-TREE of cell"
+McshHlth000006:198  idDsdrgstr  h2  "GENERIC-SPECIFIC-TREE of disorderBio"
+McshHlth000013:837  idFoodHmngstr  h1  "GENERIC-SPECIFIC-TREE of food"
+McshHlth000019:4423  idSysNrvsatt076att005gstr  h4  "GENERIC-SPECIFIC-TREE of neuron'axon"
+McshLag000003:1599  idInfHmnBrn010gstr  h2  "GENERIC-SPECIFIC-TREE of infoData"
+McshLag000003:1750  idInfHmnSrl001gstr  h3  "GENERIC-SPECIFIC-TREE of doc"
+McshLag000006:2162  idCharUcdstdcpBlkgstr  h5  "GENERIC-SPECIFIC-TREE of Ucbk"
+McshLag000007:2049  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"
+McshLag000007:2779  idLHmnmsmsvrbattgstr  h4  "GENERIC-SPECIFIC-TREE of Semuverbattr"
+McshLag000007:15439  idLHmnmoptinfgstr  h3  "GENERIC-SPECIFIC-TREE of expression"
+McshNtr000007:2348  idChmElrFranciumgstr  h2  "GENERIC-SPECIFIC-TREE of chmElrFr87"
+McshOgm000005:252  isSbtcHmngst  h3  "GENERIC-SPECIFIC-TREE of substanceHmn"
+McshOgm000009:795  idOgmAnml023gstr  h2  "GENERIC-SPECIFIC-TREE of animalBrainNo"
+McshStnlaw000003:1051  idLawEusgstr  h1  "GENERIC-SPECIFIC-TREE of lawEus"
+McshTchInf000003:1636  idCmr003gstr  h2  "GENERIC-SPECIFIC-TREE of cmprAbstract"
+McshTchInf000005:1047  idLtdocinptgstr  h3  "GENERIC-SPECIFIC-TREE of docNtxt"
+McshTchInf000005:1084  idLtdocotptgstr  h3  "GENERIC-SPECIFIC-TREE of docDtxt"
+McshTchInf000006:2801  idLSrcdalggstr  h2  "Srcdalgo'GENERIC-SPECIFIC-TREE"
+McshTchInf000011:324  idLJsbrfgstr  h4  "GENERIC-SPECIFIC-TREE of Jsbrf"
+McshTchInf000012:3276  idLJsndmwombrgstr  h4  "GENERIC-SPECIFIC-TREE of Jsndglobal"
+McshTchInf000012:3446  idLJsndmgogst  h3  "GENERIC-SPECIFIC-TREE of Jsndmgo"
+McshTchInf000012:10067  idLJsndrtmopngstr  h4  "GENERIC-SPECIFIC-TREE of Jsnd_Rrtmon"
+McshTchInf000014:1500  idLWasmstcopcdgstr  h3  "GENERIC-SPECIFIC-TREE of Wasmopcode"
+McshTchInf000015:12743  idAlgntEvggstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo_evoluting"
+McshTchInf000028:1100  idLMovealgogstr  h2  "Movealgo'GENERIC-SPECIFIC-TREE"
+McshTchInf000039:850  idLKnlgmngrgstr  h2  "GENERIC-SPECIFIC-TREE of KnlgMngr"
+McshTchInf000039:3354  idLKnlg002gstr  h2  "GENERIC-SPECIFIC-TREE of lagoLgkl"
+McshTchPrgm000002:412  idCpgm001Edtrgstr  h3  "GENERIC-SPECIFIC-TREE of appEditor"
+
+=== XNAME. X differs from the whole's !⇒ main-name (43) ===
+McshCor000004:6775  idDngRptggstr  h3  "GENERIC-SPECIFIC-TREE of repeating"  main-name DongRepeating
+McshCor000005:2535  idRlnCsltgstr  h2  "GENERIC-SPECIFIC-TREE of causality"  main-name RltnCausality
+McshCor000005:2996  idRlnDcasgstr  h2  "GENERIC-SPECIFIC-TREE of dialectic-antithesis"  main-name RltnDialectic
+McshCor000009:1373  idGnrcCntgstr  h2  "GENERIC-SPECIFIC-TREE of continuous-generic"  main-name discreteNo_entity
+McshEdu000010:876  idSLangtermgstr  h3  "GENERIC-SPECIFIC-TREE of terminology"  main-name sciTerm
+McshHlth000002:240  idBdyHmnatt007gstr  h2  "GENERIC-SPECIFIC-TREE of head"  main-name bodyHumn'head
+McshHlth000002:2513  idBdyHmn547gstr  h4  "GENERIC-SPECIFIC-TREE of HumnbodyOvarianFollicle"  main-name ovarian_follicle
+McshHlth000002:3519  idGlndHmn020gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyBreast"  main-name glandBreast
+McshHlth000002:3992  idTissHmn006gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyEpithelialTissue"  main-name tissueEpithelial
+McshHlth000002:4042  idTissHmn007gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodySkeletalTissue"  main-name tissueSkeletal
+McshHlth000002:7254  idOgnHmn013002gstr  h4  "GENERIC-SPECIFIC-TREE of HumnbodyArtery"  main-name vesselArtery
+McshHlth000002:7525  idOgnHmn013007gstr  h4  "GENERIC-SPECIFIC-TREE of HumnbodyVein"  main-name vesselVein
+McshHlth000002:9082  idOgnHmn005gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyLung"  main-name organLung
+McshHlth000002:11018  idOgnHmn026att012gstr  h4  "GENERIC-SPECIFIC-TREE of HumnbodyRenalPyramid"  main-name renal_pyramid
+McshHlth000002:11804  idBdyHmn502gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyScrotum"  main-name scrotum
+McshHlth000002:13748  idBdyHmn148gstr  h3  "GENERIC-SPECIFIC-TREE of HumnbodyBreathing"  main-name breathing
+McshHlth000008:1568  idHlthHmnMndgstr  h2  "GENERIC-SPECIFIC-TREE of healthMind"  main-name health.mental
+McshHlth000011:2437  idDssHmn047gstr  h3  "GENERIC-SPECIFIC-TREE of DssHeart"  main-name disease.heart
+McshHlth000011:16221  idDssHmn026gstr  h2  "GENERIC-SPECIFIC-TREE of nutritional-imbalance"  main-name DssNutrient
+McshHlth000013:4571  idFoodHmn039gstr  h2  "GENERIC-SPECIFIC-TREE of flavoringNaturalDriedNo"  main-name foodFlavoring
+McshHlth000016:422  idThrpHmnMndgstr  h2  "GENERIC-SPECIFIC-TREE of thrpMind"  main-name therapyMind
+McshHlth000019:2815  idOgnHmn008gstr  h3  "GENERIC-SPECIFIC-TREE of ear"  main-name organEar
+McshLag000007:2049  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"  main-name Semuargu
+McshLag000007:23174  idLHmnmverbmrfdrgstr  h4  "GENERIC-SPECIFIC-TREE of verber"  main-name memberorVerb
+McshLag000012:280  idLEspoipt3gstr  h2  "GENERIC-SPECIFIC-TREE of Espo_lago-semu"  main-name semasoEspo
+McshOgm000005:610  idSysMolsHmn008gstr  h3  "GENERIC-SPECIFIC-TREE of macromolecule"  main-name macromoleculeHmn
+McshOgm000005:1062  idSysMolsHmn023gstr  h3  "GENERIC-SPECIFIC-TREE of antioxidant"  main-name antioxidantHmn
+McshStn000002:190  idStnOgmatt012gstr  h3  "GENERIC-SPECIFIC-TREE of satisfierStn"  main-name satisfierOgm
+McshStn000009:4846  idSocadmndnggstr  h3  "GENERIC-SPECIFIC-TREE of Socadmndng"  main-name SocAdmndng
+McshStn000017:7898  idOznW3cstdGpntgstr  h4  "GENERIC-SPECIFIC-TREE of StdW3c.group-noes"  main-name StdW3c.group-notes
+McshTchInf000011:4947  idLJsbrbsrgstr  h2  "GENERIC-SPECIFIC-TREE of browser"  main-name appBrowser
+McshTchInf000015:320  idAlgnthmngstr  h3  "GENERIC-SPECIFIC-TREE of Dchain-human"  main-name Dhuman
+McshTchInf000015:4570  idAlgntevuMoeStblgstr  h4  "GENERIC-SPECIFIC-TREE of stable-AgntassetExvu"  main-name stable_AnaCurrency
+McshTchInf000016:152  idDbchmngstr  h3  "GENERIC-SPECIFIC-TREE of human"  main-name Dblockchain_human
+McshTchInf000016:346  idDbcprlgstr  h2  "GENERIC-SPECIFIC-TREE of blockchain-protocol"  main-name Dblockchain_protocol
+McshTchInf000016:3998  idDbcpgmgstr  h2  "GENERIC-SPECIFIC-TREE of blockchain-program"  main-name Dblockchain_program
+McshTchInf000020:1723  idChbctpInfcgstr  h4  "GENERIC-SPECIFIC-TREE of Chrntechsc.interfac"  main-name Chrntechsc.interface
+McshTchInf000026:975  idBkskpgmgstr  h2  "GENERIC-SPECIFIC-TREE of Algobkstkprgm"  main-name Algobkskprgm
+McshTchInf000028:131  idDnlbrskhrDvprgstr  h3  "GENERIC-SPECIFIC-TREE of DnDiem-developer"  main-name DnDiem_developer
+McshTchInf000030:222  idLRustalgnodegstr  h2  "GENERIC-SPECIFIC-TREE of Rustnode"  main-name Rust_lago_node
+McshTchInf000030:1312  idLRustsuntNIntgstr  h4  "GENERIC-SPECIFIC-TREE of Rustni"  main-name Rust_lago_ni
+McshTchInf000030:1563  idLRustsuntNFpgstr  h4  "GENERIC-SPECIFIC-TREE of Rustnf"  main-name Rust_lago_nf
+McshTchInf000039:8178  idLKnlg010otptgstr  h3  "GENERIC-SPECIFIC-TREE of ontology"  main-name kbOnto
+
+=== EXTRA. other paragraphs / blocks inside the GS-TREE (100) ===
+McshCor000002:2050  idMcsattWhlNogstr  h3  "GENERIC-SPECIFIC-TREE of Mcsenvt"  idMcsattWhlNogtr(generic-tree::), idMcsattWhlNostr(specific-tree::)
+McshCor000011:2597  idSys009gstr  h2  "GENERIC-SPECIFIC-TREE of SystDynamic"  idSys009spc(specific-tree::)
+McshCor000018:1086  idBrngHmnFct002gstr  h2  "GENERIC-SPECIFIC-TREE of FctgThinking"  idBrngHmnFct002gstrstr(specific-tree::)
+McshEdu000005:5706  idSMath002gstr  h2  "GENERIC-SPECIFIC-TREE of mathAppliedNo"  idSMath002gstrstr(specific-tree::)
+McshEdu000005:5771  idSMath015gstr  h3  "GENERIC-SPECIFIC-TREE of mathNumber_theory"  idSMath015gstrstr(specific-tree::)
+McshEdu000005:5973  idSMath005gstr  h2  "GENERIC-SPECIFIC-TREE of mathAlgebra"  idSMath005gstrstr(specific-tree::)
+McshEdu000005:6238  idSMath021gstr  h2  "GENERIC-SPECIFIC-TREE of mathAnalysis"  idSMath021gstrstr(specific-tree::)
+McshEdu000005:6904  idSMath007gstr  h2  "GENERIC-SPECIFIC-TREE of mathGeometry"  idSMath007gstrstr(specific-tree::)
+McshEdu000005:7991  idSMath013gstr  h2  "GENERIC-SPECIFIC-TREE of mathTopology"  idSMath013gstrstr(specific-tree::)
+McshEdu000009:829  idSMind005gstr  h2  "GENERIC-SPECIFIC-TREE of sciLogic"  idSMind005gstrstr(specific-tree::)
+McshEdu000010:876  idSLangtermgstr  h3  "GENERIC-SPECIFIC-TREE of terminology"  idSLangtermgstrstr(specific-tree::)
+McshHlth000002:1625  idOgnHmngstr  h2  "GENERIC-SPECIFIC-TREE of organ"  idOgnHmngstrwpa(addressWpg::)
+McshHlth000002:1902  idGlndHmngstr  h3  "GENERIC-SPECIFIC-TREE of organGland"  idGlndHmnspc(specific-tree::)
+McshHlth000002:7043  idOgnHmn013gstr  h3  "GENERIC-SPECIFIC-TREE of organVessel"  idOgnHmn013strdvct(specifics-division.content::)
+McshHlth000002:9624  idBdyHmn110gstr  h4  "GENERIC-SPECIFIC-TREE of organTooth"  idBdyHmn110strP2(specifics-division.EVOLUTION::)
+McshHlth000002:11603  idSysOgnHmn009gstr  h2  "GENERIC-SPECIFIC-TREE of SystReproductive"  idSysOgnHmn009spc(specific-tree::)
+McshHlth000002:14812  idBdyHmngstr  h1  "GENERIC-SPECIFIC-TREE of bodyHumn"  idBdyHmngstrattihf(att-inherited-from-of-bodyHumn::), idBdyHmngstrattown(att-own-of-bodyHumn::)
+McshHlth000003:3677  idBrnHmngstr  h1  "GENERIC-SPECIFIC-TREE of organBrain"  idBrnHmnspc(specific-tree::)
+McshHlth000004:1343  idCellHmngstr  h1  "GENERIC-SPECIFIC-TREE of cell"  idCellHmnspc(specific-tree::)
+McshHlth000005:483  idMsclHmngstr  h2  "GENERIC-SPECIFIC-TREE of organMuscle"  idMsclHmnstrwpa(addressWpg::)
+McshHlth000005:3237  idBoneHmngstr  h2  "GENERIC-SPECIFIC-TREE of organBone"  idBoneHmnstrwpa(addressWpg::)
+McshHlth000006:198  idDsdrgstr  h2  "GENERIC-SPECIFIC-TREE of disorderBio"  idDsdrattown(att-tree-own-of-disorderBio::)
+McshHlth000007:178  idHlthOgmgstr  h1  "GENERIC-SPECIFIC-TREE of healthOgm"  idHlthOgmgstrifa(inherited-from-att::), idHlthOgmgstrina(inheritedNo-att::)
+McshHlth000011:653  idDssHmngstr  h1  "GENERIC-SPECIFIC-TREE of disease"  idDssHmnsblg(sibling-of-disease::), idDssHmngstratttr(att-tree-of-disease::), idDssHmngstrattown(att-own-of-disease::)
+McshHlth000013:11167  idFoodHmn181gstr  h3  "GENERIC-SPECIFIC-TREE of foodPepper"  idFoodHmn181SPECIFICP1(πρασινες μάκροστενες τηγανιτες::)
+McshHlth000014:622  idMedHmngstr  h1  "GENERIC-SPECIFIC-TREE of medication"  idMedHmnstrwpa(addressWpg::)
+McshHlth000014:760  idMedHmn004gstr  h2  "GENERIC-SPECIFIC-TREE of antibiotic"  idMedHmn004Spcclfn(classification::), idMedHmn004Spceags(Extermination and Growth Suppression::)
+McshHlth000016:269  idThrpHmngstr  h1  "GENERIC-SPECIFIC-TREE of therapy"  idThrpHmnstrwpa(addressWpg::)
+McshHlth000016:816  idThrpHmnAltvgstr  h2  "GENERIC-SPECIFIC-TREE of therapyAlt"  idThrpHmnAltvSpcwpa(addressWpg::)
+McshHlth000019:4423  idSysNrvsatt076att005gstr  h4  "GENERIC-SPECIFIC-TREE of neuron'axon"  idSysNrvsatt076att005P3(specific-tree::)
+McshLag000002:189  idInfBrnBiogstr  h1  "GENERIC-SPECIFIC-TREE of infoBrainBio"  idInfBrnBiogstrihfm(inherited-from::), idInfBrnBiogstrihN(inheritedNo::)
+McshLag000003:1599  idInfHmnBrn010gstr  h2  "GENERIC-SPECIFIC-TREE of infoData"  idInfHmnBrn010gstrstr(specific-tree::)
+McshLag000003:1750  idInfHmnSrl001gstr  h3  "GENERIC-SPECIFIC-TREE of doc"  idInfHmnSrl001gstrstr(specific-tree::)
+McshLag000006:2162  idCharUcdstdcpBlkgstr  h5  "GENERIC-SPECIFIC-TREE of Ucbk"  idCharUcdstdcpBlkstr(div)
+McshLag000007:2049  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"  idLHmnmsmsondoevlggtr(generic-tree::), idLHmnmsmsondoevlgstr(specific-tree::)
+McshLag000007:2779  idLHmnmsmsvrbattgstr  h4  "GENERIC-SPECIFIC-TREE of Semuverbattr"  idLHmnmsmsvrbattgstrstr(specific-tree::)
+McshLag000007:15439  idLHmnmoptinfgstr  h3  "GENERIC-SPECIFIC-TREE of expression"  idLHmnmoptinfgstrstr(specific-tree::)
+McshLag000007:30400  idLHmnmgstr  h1  "GENERIC-SPECIFIC-TREE of Hmnm_lago"  idLHmnmgstrifa(inherited-from-att::), idLHmnmgstrina(inheritedNo-att::)
+McshLag000010:1272  idL0014ltrgstr  h4  "GENERIC-SPECIFIC-TREE of Sngu_letr"  idL0014ltrstrdsn(div)
+McshLag000011:9677  idLEngladvegstr  h4  "GENERIC-SPECIFIC-TREE of Engl_adve"  idLEngladve_1(Engl_adve.001-abnormally::), idLEngladve_2(Engl_adve.002-about::), idLEngladve_3(Engl_adve.003-above::), idLEngladve_4(Engl_adve.004-abroad::) …
+McshLag000018:12899  idLZhonconjgstr  h3  "GENERIC-SPECIFIC-TREE of Zhonconj"  idLZhonconjstrdsn(div)
+McshLag000020:1757  idLEllnsylbgstr  h4  "GENERIC-SPECIFIC-TREE of Elln_sylb"  idLEllnsylbSpcwpa(addressWpg::)
+McshLag000027:3796  idLEllaadvegstr  h3  "GENERIC-SPECIFIC-TREE of Ella_adve"  idLEllaadvestrdsn(div)
+McshLag000027:5168  idLEllaconjgstr  h3  "GENERIC-SPECIFIC-TREE of Ella_conj"  idLEllaconj_006(Ella_conj.ἀλλά::), idLEllaconj_001(Ella_conj.ἀλλ_ἢ::), idLEllaconj_007(Ella_conj.ἀλλὰ_μήν::), idLEllaconj_002(Ella_conj.ἅμα-επίρρημα-πρόθεση-σύνδεσμος::) …
+McshLag000027:6740  idLEllaConjPrepgstr  h4  "GENERIC-SPECIFIC-TREE of Ella_prep"  idLEllaConjPrepstrdsn(div)
+McshNtr000006:143  idChmCpdgstr  h1  "GENERIC-SPECIFIC-TREE of chmCpd"  idChmCpdgstrwpa(addressWpg::)
+McshNtr000006:211  idChmOgcgstr  h2  "GENERIC-SPECIFIC-TREE of chmOgc"  idChmOgcgstrwpa(addressWpg::)
+McshNtr000006:402  idChmCpd002gstr  h2  "GENERIC-SPECIFIC-TREE of chmOgcNo"  idChmCpd002gstrwpa(addressWpg::)
+McshOgm000003:1464  idOgm013gstr  h2  "GENERIC-SPECIFIC-TREE of ogmMicro"  idOgm013gtrnam(name::)
+McshOgm000005:252  isSbtcHmngst  h3  "GENERIC-SPECIFIC-TREE of substanceHmn"  isSbtcHmngtr(generic-tree::), isSbtcHmnstr(specific-tree::)
+McshOgm000005:2703  idHrmnHmn003gstr  h3  "GENERIC-SPECIFIC-TREE of HrmnAndrogen"  idHrmnHmn003attihf(att-inherited-from::), idHrmnHmn003attown(att-own-of-HrmnAndrogen::)
+McshOgm000006:1044  idPrtnHmngstr  h2  "GENERIC-SPECIFIC-TREE of proteinHmn"  idPrtnHmngstrwpa(addressWpg::)
+McshOgm000007:1721  idCellAnmlgstr  h2  "GENERIC-SPECIFIC-TREE of cellAnimal"  idCellAnmlattihf(att-inherited-from::), idCellAnmlattown(att-own-of-cellAnimal::)
+McshOgm000007:1852  idCellPlntgstr  h2  "GENERIC-SPECIFIC-TREE of cellPlant"  idCellPlntattihf(att-inherited-from::), idCellPlntattown(att-own-of-cellPlant::)
+McshOgm000007:1905  idOgm003gstr  h2  "GENERIC-SPECIFIC-TREE of ogmCellOne"  idOgm003attihf(att-inherited-from::), idOgm003attown(att-own-of-ogmCellOne::)
+McshOgm000008:980  idOgmVrs004gstr  h3  "GENERIC-SPECIFIC-TREE of vrsCorona"  idOgmVrs004attihf(att-inherited-from::), idOgmVrs004attown(att-own-of-vrsCorona::)
+McshOgm000009:795  idOgmAnml023gstr  h2  "GENERIC-SPECIFIC-TREE of animalBrainNo"  idOgmAnml023gstrstr(specific-tree::)
+McshStn000005:296  idGrpOgmgstr  h1  "GENERIC-SPECIFIC-TREE of groupOgm"  idGrpOgmgstrifa(inherited-from-att::), idGrpOgmgstrina(inheritedNo-att::)
+McshStn000006:234  idOznOgmgstr  h1  "GENERIC-SPECIFIC-TREE of oznOgm"  idOznOgmgstrihfm(inherited-from::), idOznOgmgstrihN(inheritedNo::)
+McshStn000007:291  idSocOgmgstr  h1  "GENERIC-SPECIFIC-TREE of societyOgm"  idSocOgmgstrifa(inherited-from-att::), idSocOgmgstrina(inheritedNo-att::)
+McshStn000009:8076  idSocHumngstr  h1  "GENERIC-SPECIFIC-TREE of society"  idSocHumngstrifa(inherited-from-att::), idSocHumngstrina(inheritedNo-att::), idSocHumnstrwpa(addressWpg::)
+McshStn000015:1204  idOznPdngstr  h1  "GENERIC-SPECIFIC-TREE of OgznPrdg"  idOznPdngstrFwpa(addressWpg::)
+McshStn000018:88  idOznUnatt006gstr  h3  "GENERIC-SPECIFIC-TREE of Unms"  idOznUnatt006strAgg(Unms.aggregate::)
+McshStn000024:123  idStdRfcgstr  h1  "GENERIC-SPECIFIC-TREE of stdRfc"  idStdRfc0001(0001 Host Software::), idStdRfc0002(0002 Host software::), idStdRfc0003(0003 Documentation conventions::), idStdRfc0004(0004 Network timetable::) …
+McshStn000029:1047  idSfrFin019Untgstr  h3  "GENERIC-SPECIFIC-TREE of Evu"  idSfrFin019UntSpc2(specific-tree::)
+McshStnlaw000003:1051  idLawEusgstr  h1  "GENERIC-SPECIFIC-TREE of lawEus"  idLawEusgstrstr(specific-tree::)
+McshTchInf000003:334  idCmrstrggstr  h3  "GENERIC-SPECIFIC-TREE of Cmrstorage"  idCmrstrgSpcwpa(addressWpg::)
+McshTchInf000003:814  idCmrgstr  h1  "GENERIC-SPECIFIC-TREE of techCmpr"  idCmrgstrFnam(name::), idCmrgstrattihf(att-inherited-from::), idCmrgstrattown(att-own-of-::), idCmrSpcwpa(addressWpg::)
+McshTchInf000003:1636  idCmr003gstr  h2  "GENERIC-SPECIFIC-TREE of cmprAbstract"  idCmr003gstrstr(specific-tree::)
+McshTchInf000005:1047  idLtdocinptgstr  h3  "GENERIC-SPECIFIC-TREE of docNtxt"  idLtdocinptgstrstr(specific-tree::)
+McshTchInf000005:1084  idLtdocotptgstr  h3  "GENERIC-SPECIFIC-TREE of docDtxt"  idLtdocotptgstrstr(specific-tree::)
+McshTchInf000006:2801  idLSrcdalggstr  h2  "Srcdalgo'GENERIC-SPECIFIC-TREE"  idLSrcdalggtr(generic-tree::), idLSrcdalgstr(specific-tree::)
+McshTchInf000007:3153  idLxmlggstr  h2  "GENERIC-SPECIFIC-TREE of lagXmlg"  idLxmlgSpcwpa(addressWpg::)
+McshTchInf000010:365  idLJsgnsutgstr  h2  "GENERIC-SPECIFIC-TREE of Jssut"  idLJsgnsutSpcAlpha(specific.alphabetically::)
+McshTchInf000010:2180  idLJsgnfgstr  h3  "GENERIC-SPECIFIC-TREE of Jsf"  idLJsgnfSpcP1(specific.alphabetically::)
+McshTchInf000010:6181  idLjegstr  h3  "GENERIC-SPECIFIC-TREE of Jses"  idLjeSpcP1(Specific (versions)::)
+McshTchInf000011:222  idLJsbrsutgstr  h3  "GENERIC-SPECIFIC-TREE of Jsbrsut"  idLJsbrsutSpcP1(SPECIFIC::), idLJsbrsutSpcAlpha(specific.alphabetically::)
+McshTchInf000011:324  idLJsbrfgstr  h4  "GENERIC-SPECIFIC-TREE of Jsbrf"  idLJsbrfstr(div)
+McshTchInf000011:880  idLJsbrogstr  h4  "GENERIC-SPECIFIC-TREE of Jsbro"  idLJsbroSpcP1(specific.alphabetically::)
+McshTchInf000011:2633  idLJsbrlbrgstr  h3  "GENERIC-SPECIFIC-TREE of Jsbrlib"  idLJsbrlbrSpcP1(SPECIFIC::)
+McshTchInf000011:4947  idLJsbrbsrgstr  h2  "GENERIC-SPECIFIC-TREE of browser"  idLJsbrbsrSpcP1(SPECIFIC::)
+McshTchInf000012:3276  idLJsndmwombrgstr  h4  "GENERIC-SPECIFIC-TREE of Jsndglobal"  idLJsndmwombrspc(specific-tree::)
+McshTchInf000012:3446  idLJsndmgogst  h3  "GENERIC-SPECIFIC-TREE of Jsndmgo"  idLJsndmgostr(div)
+McshTchInf000012:10067  idLJsndrtmopngstr  h4  "GENERIC-SPECIFIC-TREE of Jsnd_Rrtmon"  idLJsndrtmopnP2(specific-tree::)
+McshTchInf000013:1429  idLJselpgmgstr  h2  "GENERIC-SPECIFIC-TREE of Jselapp"  idLJselpgmSpcP1(SPECIFIC::)
+McshTchInf000014:1500  idLWasmstcopcdgstr  h3  "GENERIC-SPECIFIC-TREE of Wasmopcode"  idLWasmalgopcdSpcstr(div)
+McshTchInf000015:2417  idAlgntevugstr  h2  "GENERIC-SPECIFIC-TREE of Agntasset"  idAlgntevuSpcwpa(addressWpg::)
+McshTchInf000015:4179  idAlgntevuMoegstr  h3  "GENERIC-SPECIFIC-TREE of AgntassetExvu"  idAlgntevuMoeP1(SPECIFIC::)
+McshTchInf000015:12743  idAlgntEvggstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo_evoluting"  idAlgntEvgP1(specific-tree::)
+McshTchInf000015:13219  idAlgntgstr  h1  "GENERIC-SPECIFIC-TREE of netAlgo"  idAlgntSpcwpa(addressWpg::)
+McshTchInf000017:6821  idBtcwltgstr  h2  "GENERIC-SPECIFIC-TREE of Btcnwallet"  idBtcwltSpcwpa(addressWpg::)
+McshTchInf000018:3793  idEthevuCgstr  h3  "GENERIC-SPECIFIC-TREE of DvETH"  idEthevuCSpcP1(div)
+McshTchInf000018:7898  idEthsolcgstr  h5  "GENERIC-SPECIFIC-TREE of Lsolc"  idEthsolcSpcP1(div)
+McshTchInf000028:1100  idLMovealgogstr  h2  "Movealgo'GENERIC-SPECIFIC-TREE"  idLMovealgogtr(generic-tree::), idLMovealgostr(specific-tree::)
+McshTchInf000029:445  idLJsondocgstr  h2  "GENERIC-SPECIFIC-TREE of JsonDoc"  idLJsondocSpcP1(SPECIFIC::)
+McshTchInf000032:622  idGitgstr  h2  "GENERIC-SPECIFIC-TREE of Git"  idGitSpcP1(SPECIFIC::)
+McshTchInf000039:850  idLKnlgmngrgstr  h2  "GENERIC-SPECIFIC-TREE of KnlgMngr"  idLKnlgmngrgstrstr(specific-tree::)
+McshTchInf000039:3354  idLKnlg002gstr  h2  "GENERIC-SPECIFIC-TREE of lagoLgkl"  idLKnlg002gstrstr(specific-tree::)
+McshTchInf000042:99  idVscodecmdidgstr  h1  "GENERIC-SPECIFIC-TREE of Vsccmdi"  idVscodecmndid-5196(Vsccmdi.runCommands::), idVscodecmndid-5197(Vsccmdi.type::)
+McshTchPrgm000002:412  idCpgm001Edtrgstr  h3  "GENERIC-SPECIFIC-TREE of appEditor"  idCpgm001Edtrgstrstr(specific-tree::)
+
+=== KIDS. GS-TREE has child sections (46) ===
+McshCor000003:4987  idEntgstr  h1  "GENERIC-SPECIFIC-TREE of entity"  9 child section(s)
+McshCor000008:676  idWhlgstr  h1  "GENERIC-SPECIFIC-TREE of whole"  1 child section(s)
+McshCor000009:1223  idGnrcgstr  h1  "GENERIC-SPECIFIC-TREE of generic"  3 child section(s)
+McshCor000011:370  idSysgstr  h1  "GENERIC-SPECIFIC-TREE of system"  1 child section(s)
+McshCor000012:423  idMdlgstr  h1  "GENERIC-SPECIFIC-TREE of model"  5 child section(s)
+McshCor000015:309  idMcshExmlgstr  h1  "GENERIC-SPECIFIC-TREE of McshExml"  1 child section(s)
+McshEdu000002:890  idScigstr  h1  "GENERIC-SPECIFIC-TREE of science"  3 child section(s)
+McshHlth000002:14812  idBdyHmngstr  h1  "GENERIC-SPECIFIC-TREE of bodyHumn"  1 child section(s)
+McshHlth000006:198  idDsdrgstr  h2  "GENERIC-SPECIFIC-TREE of disorderBio"  1 child section(s)
+McshHlth000007:178  idHlthOgmgstr  h1  "GENERIC-SPECIFIC-TREE of healthOgm"  1 child section(s)
+McshHlth000011:653  idDssHmngstr  h1  "GENERIC-SPECIFIC-TREE of disease"  7 child section(s)
+McshHlth000013:837  idFoodHmngstr  h1  "GENERIC-SPECIFIC-TREE of food"  5 child section(s)
+McshHlth000014:622  idMedHmngstr  h1  "GENERIC-SPECIFIC-TREE of medication"  1 child section(s)
+McshHlth000016:269  idThrpHmngstr  h1  "GENERIC-SPECIFIC-TREE of therapy"  2 child section(s)
+McshLag000002:189  idInfBrnBiogstr  h1  "GENERIC-SPECIFIC-TREE of infoBrainBio"  1 child section(s)
+McshLag000007:2049  idLHmnmsmsondoevlggstr  h3  "GENERIC-SPECIFIC-TREE of semu-argu"  1 child section(s)
+McshLag000007:18423  idLHmnmnameTrmgstr  h4  "GENERIC-SPECIFIC-TREE of term"  2 child section(s)
+McshLag000007:21654  idLHmnmverbmbrgstr  h4  "GENERIC-SPECIFIC-TREE of Verbmebr"  2 child section(s)
+McshLag000007:30400  idLHmnmgstr  h1  "GENERIC-SPECIFIC-TREE of Hmnm_lago"  4 child section(s)
+McshLag000010:5417  idL0014conjgstr  h3  "GENERIC-SPECIFIC-TREE of Sngu_conj"  1 child section(s)
+McshLag000020:1757  idLEllnsylbgstr  h4  "GENERIC-SPECIFIC-TREE of Elln_sylb"  4 child section(s)
+McshNtr000002:485  idMtrlgstr  h1  "GENERIC-SPECIFIC-TREE of material"  3 child section(s)
+McshNtr000007:415  idChmElrgstr  h1  "GENERIC-SPECIFIC-TREE of chmElry"  6 child section(s)
+McshOgm000003:925  idOgmgstr  h1  "GENERIC-SPECIFIC-TREE of Ogsm"  6 child section(s)
+McshOgm000008:604  idOgmVrsgstr  h2  "GENERIC-SPECIFIC-TREE of ogmVirus"  3 child section(s)
+McshOgm000010:291  idPlntgstr  h1  "GENERIC-SPECIFIC-TREE of ogmPlant"  1 child section(s)
+McshOgm000010:957  idPlnt012gstr  h2  "GENERIC-SPECIFIC-TREE of plantFlowering"  1 child section(s)
+McshStn000002:433  idStnOgmgstr  h1  "GENERIC-SPECIFIC-TREE of sctnOgms"  1 child section(s)
+McshStn000004:456  idGvcOgmgstr  h1  "GENERIC-SPECIFIC-TREE of AdmnSctn"  1 child section(s)
+McshStn000010:1433  idSfrHmngstr  h1  "GENERIC-SPECIFIC-TREE of satisfier"  13 child section(s)
+McshStn000015:1204  idOznPdngstr  h1  "GENERIC-SPECIFIC-TREE of OgznPrdg"  5 child section(s)
+McshStn000029:155  idSfrFingstr  h1  "GENERIC-SPECIFIC-TREE of sfrFin"  1 child section(s)
+McshStnlaw000003:1051  idLawEusgstr  h1  "GENERIC-SPECIFIC-TREE of lawEus"  1 child section(s)
+McshTch000002:509  idTchgstr  h1  "GENERIC-SPECIFIC-TREE of tech"  5 child section(s)
+McshTchInf000005:546  idLCmprgstr  h1  "GENERIC-SPECIFIC-TREE of Cmpr_lago"  1 child section(s)
+McshTchInf000007:818  idLCnkntmgrgstr  h2  "GENERIC-SPECIFIC-TREE of Cnknmngr"  4 child section(s)
+McshTchInf000010:365  idLJsgnsutgstr  h2  "GENERIC-SPECIFIC-TREE of Jssut"  1 child section(s)
+McshTchInf000010:5076  idLJsgnalggstr  h1  "GENERIC-SPECIFIC-TREE of Jsalgo"  11 child section(s)
+McshTchInf000012:3867  idLJsndalggstr  h1  "GENERIC-SPECIFIC-TREE of Jsndalgo"  16 child section(s)
+McshTchInf000015:13219  idAlgntgstr  h1  "GENERIC-SPECIFIC-TREE of netAlgo"  1 child section(s)
+McshTchInf000016:5243  idDbcgstr  h1  "GENERIC-SPECIFIC-TREE of AgntBkcn"  14 child section(s)
+McshTchInf000018:3793  idEthevuCgstr  h3  "GENERIC-SPECIFIC-TREE of DvETH"  7 child section(s)
+McshTchInf000030:1123  idLRustsuntgstr  h2  "GENERIC-SPECIFIC-TREE of Rustsunt"  1 child section(s)
+McshTchInf000031:2145  idLCppalggstr  h1  "GENERIC-SPECIFIC-TREE of Cppzalgo"  2 child section(s)
+McshTchInf000031:2684  idLCppgstr  h1  "GENERIC-SPECIFIC-TREE of Cppz_lago"  1 child section(s)
+McshTchPrgm000002:289  idCpgmgstr  h1  "GENERIC-SPECIFIC-TREE of cmpr_prgm"  1 child section(s)
+
+=== TWO. whole has more than one GS-TREE (4) ===
+McshTchInf000006:2801  idLSrcdalggstr  whole idLSrcd  (2 GS-TREEs)
+McshTchInf000006:2865  idLSrcdgstr  whole idLSrcd  (2 GS-TREEs)
+McshTchInf000028:1100  idLMovealgogstr  whole idLMove  (2 GS-TREEs)
+McshTchInf000028:1341  idLMovegstr  whole idLMove  (2 GS-TREEs)
+
+=== SELF. self-link does not match its paragraph id (2) ===
+McshStn000017:12231  idOznW3cstdRtrdgstr  h4  "GENERIC-SPECIFIC-TREE of StdW3c.retired"  idOznW3cstdRtrdstr→#idOznW3cstd0762
+McshTchInf000008:2993  idLHitpwbpggstr  h2  "GENERIC-SPECIFIC-TREE of Hitpdoc"  idLHitpwbpgstr→#idLHitpwbpggstr

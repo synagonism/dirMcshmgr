@@ -1,0 +1,25 @@
+=== ALIGNED (14) ===
+McshCor000002:1624  idMcsprtgstr  whole idMcsattPrt  idMcsprtgstr→idMcsattPrtgstr, idMcsprtgstrH3→idMcsattPrtgstrH3, idMcsprtgstrdsn→idMcsattPrtgstrdsn, idMcsprtgstrnam→idMcsattPrtgstrnam, idMcsprtgtr→idMcsattPrtgtr, idMcsprtstr→idMcsattPrtstr
+McshHlth000008:491  idHlthHmnsbtcgstr  whole idHlthHmnsbtc  idHlthHmnsbtcgstrgt→idHlthHmnsbtcgtr
+McshHlth000010:118  idDssOgmthrpgstr  whole idDssOgmthrpF  idDssOgmthrpgstr→idDssOgmthrpFgstr, idDssOgmthrpgstrH2→idDssOgmthrpFgstrH2, idDssOgmthrpgstrdsn→idDssOgmthrpFgstrdsn, idDssOgmthrpgstrnam→idDssOgmthrpFgstrnam, idDssOgmthrpgtr→idDssOgmthrpFgtr, idDssOgmthrpstr→idDssOgmthrpFstr
+McshHlth000013:167  idFoodHmnntrtgstr  whole idFoodHmnatt003  idFoodHmnntrtgstr→idFoodHmnatt003gstr, idFoodHmnntrtgstrH3→idFoodHmnatt003gstrH3, idFoodHmnntrtgstrdsn→idFoodHmnatt003gstrdsn, idFoodHmnntrtgstrnam→idFoodHmnatt003gstrnam, idFoodHmnntrtgtr→idFoodHmnatt003gtr, idFoodHmnntrtstr→idFoodHmnatt003str
+McshLag000037:1322  idHirultrgstr  whole idLHiurltr  idHirultrgstr→idLHiurltrgstr, idHirultrgstrH4→idLHiurltrgstrH4, idHirultrgstrdsn→idLHiurltrgstrdsn, idHirultrgstrnam→idLHiurltrgstrnam, idHirultrgtr→idLHiurltrgtr, idHirultrstr→idLHiurltrstr
+McshNtr000006:402  idChmOgnNgstr  whole idChmCpd002  idChmOgnNgstr→idChmCpd002gstr, idChmOgnNgstrH2→idChmCpd002gstrH2, idChmOgnNgstrdsn→idChmCpd002gstrdsn, idChmOgnNgstrnam→idChmCpd002gstrnam, idChmOgnNgtr→idChmCpd002gtr, idChmOgnNstr→idChmCpd002str, idChmOgnNgstrwpa→idChmCpd002gstrwpa
+McshNtr000007:2348  idChmElrFranciumgstr  whole idChmElrFrancium  idChmElrFranciumgstrgtr→idChmElrFranciumgtr
+McshStn000004:353  idGvcogmdnggstr  whole idGvcOgmdng  idGvcogmdnggstr→idGvcOgmdnggstr, idGvcogmdnggstrH2→idGvcOgmdnggstrH2, idGvcogmdnggstrdsn→idGvcOgmdnggstrdsn, idGvcogmdnggstrnam→idGvcOgmdnggstrnam, idGvcogmdnggtr→idGvcOgmdnggtr, idGvcogmdngstr→idGvcOgmdngstr
+McshStnlaw000002:1776  idMcsTestgstr  whole idLaw024  idMcsTestgstr→idLaw024gstr, idMcsTestgstrH3→idLaw024gstrH3, idMcsTestgstrdsn→idLaw024gstrdsn, idMcsTestgstrnam→idLaw024gstrnam, idMcsTestgtr→idLaw024gtr, idMcsTeststr→idLaw024str
+McshTchInf000008:2993  idLHitpwbpgstr  whole idLHitpwbpg  idLHitpwbpgstr→idLHitpwbpggstr, idLHitpwbpgstrH2→idLHitpwbpggstrH2, idLHitpwbpgstrdsn→idLHitpwbpggstrdsn, idLHitpwbpgstrnam→idLHitpwbpggstrnam, idLHitpwbpgtr→idLHitpwbpggtr, idLHitpwbpstr→idLHitpwbpgstr
+McshTchInf000008:3613  idMcsTestgstr  whole idLHitpdng  idMcsTestgstr→idLHitpdnggstr, idMcsTestgstrH2→idLHitpdnggstrH2, idMcsTestgstrdsn→idLHitpdnggstrdsn, idMcsTestgstrnam→idLHitpdnggstrnam, idMcsTestgtr→idLHitpdnggtr, idMcsTeststr→idLHitpdngstr
+McshTchInf000014:1500  idLWasmalgoopcdgstr  whole idLWasmstcopcd  idLWasmalgoopcdgstr→idLWasmstcopcdgstr, idLWasmalgoopcdgstrH3→idLWasmstcopcdgstrH3, idLWasmalgoopcdgstrdsn→idLWasmstcopcdgstrdsn, idLWasmalgoopcdgstrnam→idLWasmstcopcdgstrnam, idLWasmalgoopcdgtr→idLWasmstcopcdgtr
+McshTchInf000015:10913  idAlgntsvcMnygstr  whole idAlgntsvcMoe  idAlgntsvcMnygstr→idAlgntsvcMoegstr, idAlgntsvcMnygstrH4→idAlgntsvcMoegstrH4, idAlgntsvcMnygstrdsn→idAlgntsvcMoegstrdsn, idAlgntsvcMnygstrnam→idAlgntsvcMoegstrnam, idAlgntsvcMnygtr→idAlgntsvcMoegtr, idAlgntsvcMnystr→idAlgntsvcMoestr
+McshTchInf000018:5195  idEthinngstr  whole idEthevminn  idEthinngstr→idEthevminngstr, idEthinngstrH5→idEthevminngstrH5, idEthinngstrdsn→idEthevminngstrdsn, idEthinngstrnam→idEthevminngstrnam, idEthinngtr→idEthevminngtr, idEthinnstr→idEthevminnstr
+
+=== LINKS-REPOINTED (1) ===
+McshTchInf000008  #idLHitpwbpgstr -> #idLHitpwbpggstr (1x)
+
+=== SKIPPED (5) ===
+McshCor000002:2050  idMcsattWhlNogstr  whole idMcsattWhlN  new ids already exist: idMcsattWhlNstr
+McshLag000007:2048  idLHmnmsmsondoevlggstr  has child sections
+McshOgm000005:252  isSbtcHmngst  whole idSysMolsHmn027  new ids already exist: idSysMolsHmn027gtr
+McshTchInf000006:2797  idLSrcdalggstr  whole idLSrcd  new ids already exist: idLSrcdgstr,idLSrcdgstrH2,idLSrcdgstrdsn,idLSrcdgstrnam,idLSrcdgtr,idLSrcdstr
+McshTchInf000028:1100  idLMovealgogstr  whole idLMove  new ids already exist: idLMovegstr,idLMovegstrH2,idLMovegstrdsn,idLMovegstrnam,idLMovegtr,idLMovestr

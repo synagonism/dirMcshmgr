@@ -1,0 +1,29 @@
+=== ADDED (13) ===
+McshCor000002:724  idMcsattNamDzrgstr  X=nameMcsMind  added 3 line(s)
+McshCor000004:5167  idDngMvngFcngstr  X=FctgMoving  added 3 line(s)
+McshLag000007:2248  idLHmnmprsngstr  X=personLago  added 3 line(s)
+McshLag000007:21150  idLHmnmpronEsfcgstr  X=pronEsophoric  added 3 line(s)
+McshLag000007:27864  idLHmnmsntcphraVerbgstr  X=phraseVerb  added 3 line(s)
+McshLag000011:1612  idLEnglltrgstr  X=Engl_letr  added 3 line(s)
+McshLag000011:14839  idLEnglpronEsfcgstr  X=pronEnglEsophoric  added 3 line(s)
+McshLag000011:15170  idLEnglpronExfcgstr  X=pronEnglExophoric  added 3 line(s)
+McshLag000020:2664  idLEllnnounG1gstr  X=Elln_nounG1  added 3 line(s)
+McshNtr000010:261  idBrnBioNtrlgstr  X=brainNatural  added 3 line(s)
+McshOgm000005:684  idSysMolsHmn013gstr  X=lipidHmn  added 3 line(s)
+McshStnlaw000003:1991  idLawEus002gstr  X=EulSecondary  added 3 line(s)
+McshTchInf000009:1717  idLMcshwvdnixl4jfgstr  X=namidxjsonLangNmbr  added 3 line(s)
+
+=== RENAMED (10) ===
+McshCor000012:855  idMdl009gstr  X=modelAbstract  McshEngl.modelAbstact.specific, + McshEngl.modelAbstact-Sptr,  -> X
+McshLag000007:18609  idLHmnmnameTrmmrfrgstr  X=memberorHmnm  McshEngl.termSemu-memberorHmnm.specific, + McshEngl.termSemu-memberorHmnm-Sptr,  -> X
+McshNtr000005:1380  idSysMols010gstr  X=mtrlChemical  McshEngl.chemical.specific, + McshEngl.chemical-Sptr,  -> X
+McshStn000010:846  idSfrHmntrsggstr  X=ActgSfrtransacting  McshEngl.sfrtransacting.specific, + McshEngl.sfrtransacting-Sptr,  -> X
+McshTchInf000003:334  idCmrstrggstr  X=Cmrstorage  McshEngl.techCmpr-CpuNo-storage.specific, + McshEngl.techCmpr-CpuNo-storage-Sptr,  -> X
+McshTchInf000012:5118  idLJsndpkgjsngstr  X=Pckgjson  McshEngl.Pckgjson.json.specific,  -> X
+McshTchInf000015:6985  idAlgntogngstr  X=netAlgo_ozn  McshEngl.Agntogzn.specific,  -> X
+McshTchInf000015:9194  idAlgntevalScongstr  X=netAlgo_benefitNo  McshEngl.AgntevalCon.specific,  -> X
+McshTchInf000018:8140  idEthsolfgstr  X=Lsolf  McshEngl.lagSolf.specific, + McshEngl.lagSolf-Sptr,  -> X
+McshTchInf000021:2582  idEospgmAppgstr  X=Deos_Dapp  McshEngl.Deos'Dapp.specific, + McshEngl.Deos'Dapp-Sptr,  -> X
+
+=== SKIPPED (0) ===
+(none)

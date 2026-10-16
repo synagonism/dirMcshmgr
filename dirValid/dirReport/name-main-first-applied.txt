@@ -1,0 +1,2957 @@
+MAIN-NAME FIRST APPLIED — 934 name:: paragraphs in 127 files; 900 informal!⇒main lines added; 28 skipped
+
+PER FILE
+  McshCor000002 2
+  McshCor000003 6
+  McshCor000004 3
+  McshCor000005 1
+  McshCor000006 7
+  McshCor000007 1
+  McshCor000008 2
+  McshCor000010 1
+  McshCor000011 1
+  McshCor000018 11
+  McshEdu000002 3
+  McshEdu000005 13
+  McshEdu000009 2
+  McshEdu000010 6
+  McshEdu000011 2
+  McshHlth000002 4
+  McshHlth000003 3
+  McshHlth000004 2
+  McshHlth000005 4
+  McshHlth000006 1
+  McshHlth000008 2
+  McshHlth000011 1
+  McshHlth000013 1
+  McshHlth000014 1
+  McshHlth000019 5
+  McshHmn000000 1
+  McshHmn000002 9
+  McshHmn000005 1
+  McshLag000002 1
+  McshLag000003 4
+  McshLag000006 1
+  McshLag000007 27
+  McshLag000008 2
+  McshLag000009 2
+  McshLag000010 8
+  McshLag000011 14
+  McshLag000012 3
+  McshLag000013 2
+  McshLag000014 1
+  McshLag000017 1
+  McshLag000018 17
+  McshLag000019 1
+  McshLag000020 12
+  McshLag000022 1
+  McshLag000025 1
+  McshLag000027 7
+  McshLag000028 2
+  McshLag000030 4
+  McshLag000033 17
+  McshLag000034 21
+  McshLag000035 20
+  McshLag000036 17
+  McshLag000037 23
+  McshLag000038 16
+  McshLag000039 16
+  McshLag000040 15
+  McshLag000041 15
+  McshLag000042 15
+  McshLag000043 16
+  McshNtr000002 1
+  McshNtr000004 1
+  McshNtr000007 97
+  McshNtr000015 2
+  McshOgm000004 3
+  McshOgm000005 4
+  McshOgm000006 1
+  McshOgm000007 1
+  McshStn000002 3
+  McshStn000004 3
+  McshStn000005 1
+  McshStn000008 2
+  McshStn000009 29
+  McshStn000010 2
+  McshStn000011 3
+  McshStn000012 21
+  McshStn000014 3
+  McshStn000015 15
+  McshStn000016 2
+  McshStn000017 2
+  McshStn000018 9
+  McshStn000019 4
+  McshStn000020 39
+  McshStn000021 1
+  McshStn000026 2
+  McshStn000028 2
+  McshStn000030 11
+  McshStn000031 54
+  McshStn000032 3
+  McshStn000033 4
+  McshStn000034 15
+  McshStn000035 14
+  McshStn000037 4
+  McshStn000038 10
+  McshStn000039 6
+  McshStn000040 3
+  McshStn000041 3
+  McshStn000042 2
+  McshStn000043 4
+  McshStn000044 3
+  McshStn000048 10
+  McshStn000050 4
+  McshStn000051 1
+  McshStnlaw000002 4
+  McshStnlaw000003 9
+  McshStnlaw000004 3
+  McshStnlaw000006 1
+  McshTchInf000005 4
+  McshTchInf000006 8
+  McshTchInf000007 11
+  McshTchInf000008 5
+  McshTchInf000009 3
+  McshTchInf000010 13
+  McshTchInf000011 1
+  McshTchInf000012 3
+  McshTchInf000014 1
+  McshTchInf000015 4
+  McshTchInf000029 1
+  McshTchInf000036 7
+  McshTchInf000038 2
+  McshTchInf000039 40
+  McshTchInf000040 4
+  McshTchInf000041 1
+  McshTchPrgm000000 1
+  McshTchPrgm000002 2
+  McshTchPrgm000003 2
+  McshTch000002 1
+  McshTch000005 1
+
+CHANGED
+McshCor000002:1034  Mcsattr
+    + <br>* McshEngl.Mcs'attribute!⇒Mcsattr,
+    + <br>* McshEngl.Mcsattr!=Mcs'attribute,
+McshCor000002:5242  McsSfi
+    + <br>* McshEngl.Mcs-Html-with-structured-fragment-identifiers!⇒McsSfi,
+    + <br>* McshEngl.McsSfi!=Mcs-Html-with-structured-fragment-identifiers,
+McshCor000003:484  RltnEntityAttribute
+    + <br>* McshEngl.sequencedNo-entity-attribute-relation!⇒RltnEntityAttribute,
+    + <br>* McshEngl.RltnEntityAttribute!=sequencedNo-entity-attribute-relation,
+McshCor000003:5236  entityAsk
+    + <br>* McshEngl.which!⇒entityAsk,
+    + <br>* McshEngl.entityAsk!=which,
+McshCor000003:5337  entityDeicticNearAOneNo
+    + <br>* McshEngl.these!⇒entityDeicticNearAOneNo,
+    + <br>* McshEngl.entityDeicticNearAOneNo!=these,
+McshCor000003:6426  humanNoAsk
+    + <br>* McshEngl.what!⇒humanNoAsk,
+    + <br>* McshEngl.humanNoAsk!=what,
+McshCor000003:6500  young
+    + <br>* McshEngl.young-entity!⇒young,
+    + <br>* McshEngl.young!=young-entity,
+McshCor000003:6633  example
+    + <br>* McshEngl.exml!⇒example,
+    + <br>* McshEngl.example!=exml,
+McshCor000004:27  doing
+    + <br>* McshEngl.dong!⇒doing,
+    + <br>* McshEngl.doing!=dong,
+McshCor000004:626  mannerAsk
+    + <br>* McshEngl.how!⇒mannerAsk,
+    + <br>* McshEngl.mannerAsk!=how,
+McshCor000004:6660  RltnFreqOnce
+    + <br>* McshEngl.RltnFreqOnce,
+McshCor000005:2353  causeAsk
+    + <br>* McshEngl.why!⇒causeAsk,
+    + <br>* McshEngl.causeAsk!=why,
+McshCor000006:517  timePastJust
+    + <br>* McshEngl.timeDeicticPastJust!⇒timePastJust,
+    + <br>* McshEngl.timePastJust!=timeDeicticPastJust,
+McshCor000006:2293  {i10}
+    + <br>* McshEngl.10-years!⇒{i10},
+    + <br>* McshEngl.{i10}!=10-years,
+McshCor000006:2327  {i100}
+    + <br>* McshEngl.100-years!⇒{i100},
+    + <br>* McshEngl.{i100}!=100-years,
+McshCor000006:2356  {iK1}
+    + <br>* McshEngl.1000-years!⇒{iK1},
+    + <br>* McshEngl.{iK1}!=1000-years,
+McshCor000006:2387  {iK2}
+    + <br>* McshEngl.1'000'000-years!⇒{iK2},
+    + <br>* McshEngl.{iK2}!=1'000'000-years,
+McshCor000006:2407  {iK3}
+    + <br>* McshEngl.1'000'000'000-years!⇒{iK3},
+    + <br>* McshEngl.{iK3}!=1'000'000'000-years,
+McshCor000006:2427  {iK4}
+    + <br>* McshEngl.1'000'000'000'000-years!⇒{iK4},
+    + <br>* McshEngl.{iK4}!=1'000'000'000'000-years,
+McshCor000007:2641  UomDistance
+    + <br>* McshEngl.unit-of-measurement-of-distance!⇒UomDistance,
+    + <br>* McshEngl.UomDistance!=unit-of-measurement-of-distance,
+McshCor000008:42  whole
+    + <br>* McshEngl.whole,
+McshCor000008:416  environment
+    + <br>* McshEngl.PartNo!⇒environment,
+    + <br>* McshEngl.environment!=PartNo,
+McshCor000010:1940  quantoRela
+    + <br>* McshEngl.relative-quanto!⇒quantoRela,
+    + <br>* McshEngl.quantoRela!=relative-quanto,
+McshCor000011:2762  sciMngsys
+    + <br>* McshEngl.science of managing-system!⇒sciMngsys,
+    + <br>* McshEngl.sciMngsys!=science of managing-system,
+McshCor000018:27  FctgBraining
+    + <br>* McshEngl.FctgBraining,
+McshCor000018:244  FctgMinding
+    + <br>* McshEngl.human-minding-functing!⇒FctgMinding,
+    + <br>* McshEngl.FctgMinding!=human-minding-functing,
+McshCor000018:313  FctgMindingNo
+    + <br>* McshEngl.human-lower-braining-functing!⇒FctgMindingNo,
+    + <br>* McshEngl.FctgMindingNo!=human-lower-braining-functing,
+McshCor000018:354  FctgSensing
+    + <br>* McshEngl.human-sensing!⇒FctgSensing,
+    + <br>* McshEngl.FctgSensing!=human-sensing,
+McshCor000018:1472  degree
+    + <br>* McshEngl.degree,
+McshCor000018:3367  FctgEmotingNeeding
+    + <br>* McshEngl.human-needing!⇒FctgEmotingNeeding,
+    + <br>* McshEngl.FctgEmotingNeeding!=human-needing,
+McshCor000018:3406  need
+    + <br>* McshEngl.human-need!⇒need,
+    + <br>* McshEngl.need!=human-need,
+McshCor000018:3919  FctgEmotingWanting
+    + <br>* McshEngl.human'wanting!⇒FctgEmotingWanting,
+    + <br>* McshEngl.FctgEmotingWanting!=human'wanting,
+McshCor000018:4013  want
+    + <br>* McshEngl.human'want!⇒want,
+    + <br>* McshEngl.want!=human'want,
+McshCor000018:4211  FctgMemoring
+    + <br>* McshEngl.human-memoring-functing!⇒FctgMemoring,
+    + <br>* McshEngl.FctgMemoring!=human-memoring-functing,
+McshCor000018:4746  FctgCognizing
+    + <br>* McshEngl.human-congizing-functing!⇒FctgCognizing,
+    + <br>* McshEngl.FctgCognizing!=human-congizing-functing,
+McshEdu000002:822  Scipcbranch
+    + <br>* McshEngl.parent-child-branch!⇒Scipcbranch,
+    + <br>* McshEngl.Scipcbranch!=parent-child-branch,
+McshEdu000002:860  Sciwpbranch
+    + <br>* McshEngl.science-whole-part-branch!⇒Sciwpbranch,
+    + <br>* McshEngl.Sciwpbranch!=science-whole-part-branch,
+McshEdu000002:921  Scigsbranch
+    + <br>* McshEngl.science-generic-specific-field!⇒Scigsbranch,
+    + <br>* McshEngl.Scigsbranch!=science-generic-specific-field, {2023-08-15}
+McshEdu000005:102  Mathschar
+    + <br>* McshEngl.math-character!⇒Mathschar,
+    + <br>* McshEngl.Mathschar!=math-character,
+McshEdu000005:230  charTex
+    + <br>* McshEngl.TeX-unicode-character!⇒charTex,
+    + <br>* McshEngl.charTex!=TeX-unicode-character,
+McshEdu000005:277  charTexElln
+    + <br>* McshEngl.charTex.Greek-unicode-char!⇒charTexElln,
+    + <br>* McshEngl.charTexElln!=charTex.Greek-unicode-char,
+McshEdu000005:359  charTexArrow
+    + <br>* McshEngl.charTex.arrow-unicode-char!⇒charTexArrow,
+    + <br>* McshEngl.charTexArrow!=charTex.arrow-unicode-char,
+McshEdu000005:684  charTexCode
+    + <br>* McshEngl.Texchar.in-unicode-per-TeX-name!⇒charTexCode,
+    + <br>* McshEngl.charTexCode!=Texchar.in-unicode-per-TeX-name,
+McshEdu000005:1120  Mathwebapp
+    + <br>* McshEngl.math-Webapp!⇒Mathwebapp,
+    + <br>* McshEngl.Mathwebapp!=math-Webapp,
+McshEdu000005:1335  Mathsvar
+    + <br>* McshEngl.math-variable!⇒Mathsvar,
+    + <br>* McshEngl.Mathsvar!=math-variable,
+McshEdu000005:5286  WrkrMath
+    + <br>* McshEngl.worker.mathematics!⇒WrkrMath,
+    + <br>* McshEngl.WrkrMath!=worker.mathematics,
+McshEdu000005:5590  mathApplied
+    + <br>* McshEngl.math.applied!⇒mathApplied,
+    + <br>* McshEngl.mathApplied!=math.applied,
+McshEdu000005:6350  mathCalc
+    + <br>* McshEngl.math.calculus!⇒mathCalc,
+    + <br>* McshEngl.mathCalc!=math.calculus,
+McshEdu000005:6988  mathLogic
+    + <br>* McshEngl.science.math.logic!⇒mathLogic,
+    + <br>* McshEngl.mathLogic!=science.math.logic,
+McshEdu000005:7868  Mathstensor
+    + <br>* McshEngl.tenosr//sciMath!⇒Mathstensor,
+    + <br>* McshEngl.Mathstensor!=tenosr//sciMath,
+McshEdu000005:7885  mathStat
+    + <br>* McshEngl.science.math.statistics!⇒mathStat,
+    + <br>* McshEngl.mathStat!=science.math.statistics,
+McshEdu000009:27  sciMind
+    + <br>* McshEngl.science.mind.human!⇒sciMind,
+    + <br>* McshEngl.sciMind!=science.mind.human,
+McshEdu000009:717  sciLogic
+    + <br>* McshEngl.science.mind.logic!⇒sciLogic,
+    + <br>* McshEngl.sciLogic!=science.mind.logic,
+McshEdu000010:29  sciLago
+    + <br>* McshEngl.science.human-mind-language!⇒sciLago,
+    + <br>* McshEngl.sciLago!=science.human-mind-language, {2024-11-27}
+McshEdu000010:563  sciName
+    + <br>* McshEngl.science.human-mind-lang'names!⇒sciName,
+    + <br>* McshEngl.sciName!=science.human-mind-lang'names,
+McshEdu000010:854  sciTerm
+    + <br>* McshEngl.science.human-mind-lang'term!⇒sciTerm,
+    + <br>* McshEngl.sciTerm!=science.human-mind-lang'term,
+McshEdu000010:1160  sciGstr
+    + <br>* McshEngl.science.human-mind-lang.gesture!⇒sciGstr,
+    + <br>* McshEngl.sciGstr!=science.human-mind-lang.gesture,
+McshEdu000010:1175  sciSpch
+    + <br>* McshEngl.science.human-mind-lang.speech!⇒sciSpch,
+    + <br>* McshEngl.sciSpch!=science.human-mind-lang.speech,
+McshEdu000010:1252  sciText
+    + <br>* McshEngl.science.human-mind-lang.text!⇒sciText,
+    + <br>* McshEngl.sciText!=science.human-mind-lang.text,
+McshEdu000011:32  art
+    + <br>* McshEngl.satisfier.art!⇒art,
+    + <br>* McshEngl.art!=satisfier.art,
+McshEdu000011:383  sectorArt
+    + <br>* McshEngl.art-sector!⇒sectorArt,
+    + <br>* McshEngl.sectorArt!=art-sector,
+McshHlth000002:1021  SystOrgans
+    + <br>* McshEngl.human-sys-of-organs!⇒SystOrgans,
+    + <br>* McshEngl.SystOrgans!=human-sys-of-organs, {2012-08-11}
+McshHlth000002:1271  organ
+    + <br>* McshEngl.human-organ!⇒organ,
+    + <br>* McshEngl.organ!=human-organ, {2012-08-16},
+McshHlth000002:10576  SystUrinary
+    + <br>* McshEngl.human-SystUrinary!⇒SystUrinary,
+    + <br>* McshEngl.SystUrinary!=human-SystUrinary,
+McshHlth000002:10645  organKidney
+    + <br>* McshEngl.human-kidney!⇒organKidney,
+    + <br>* McshEngl.organKidney!=human-kidney,
+McshHlth000003:1652  mind
+    + <br>* McshEngl.human-mind!⇒mind,
+    + <br>* McshEngl.mind!=human-mind, {2023-08-28},
+McshHlth000003:1858  DongMinding
+    + <br>* McshEngl.human-doing-of-mind!⇒DongMinding,
+    + <br>* McshEngl.DongMinding!=human-doing-of-mind,
+McshHlth000003:3452  DongBraining
+    + <br>* McshEngl.doing-of-human-brain!⇒DongBraining,
+    + <br>* McshEngl.DongBraining!=doing-of-human-brain,
+McshHlth000004:572  Dna
+    + <br>* McshEngl.human-Dna!⇒Dna,
+    + <br>* McshEngl.Dna!=human-Dna,
+McshHlth000004:1595  cellMuscle
+    + <br>* McshEngl.human-cellMuscle!⇒cellMuscle,
+    + <br>* McshEngl.cellMuscle!=human-cellMuscle,
+McshHlth000005:72  SystMuscular
+    + <br>* McshEngl.human-muscular-system!⇒SystMuscular, {2012-08-11},
+    + <br>* McshEngl.SystMuscular!=human-muscular-system,
+McshHlth000005:122  organMuscle
+    + <br>* McshEngl.human-muscle!⇒organMuscle,
+    + <br>* McshEngl.organMuscle!=human-muscle,
+McshHlth000005:2774  SystSkeletal
+    + <br>* McshEngl.human-skeletal-system!⇒SystSkeletal, {2012-08-11},
+    + <br>* McshEngl.SystSkeletal!=human-skeletal-system,
+McshHlth000005:2968  organBone
+    + <br>* McshEngl.human-bone!⇒organBone, {2012-08-12},
+    + <br>* McshEngl.organBone!=human-bone,
+McshHlth000006:27  healthBio
+    + <br>* McshEngl.biobody-health!⇒healthBio,
+    + <br>* McshEngl.healthBio!=biobody-health,
+McshHlth000008:27  health
+    + <br>* McshEngl.human-health!⇒health,
+    + <br>* McshEngl.health!=human-health,
+McshHlth000008:135  WrkrHealth
+    + <br>* McshEngl.health-worker!⇒WrkrHealth,
+    + <br>* McshEngl.WrkrHealth!=health-worker,
+McshHlth000011:30  disease
+    + <br>* McshEngl.human-disease!⇒disease,
+    + <br>* McshEngl.disease!=human-disease,
+McshHlth000013:38  food
+    + <br>* McshEngl.human-food!⇒food,
+    + <br>* McshEngl.food!=human-food,
+McshHlth000014:32  medication
+    + <br>* McshEngl.human-medication!⇒medication,
+    + <br>* McshEngl.medication!=human-medication,
+McshHlth000019:28  SystNervous
+    + <br>* McshEngl.human-SystNervous!⇒SystNervous,
+    + <br>* McshEngl.SystNervous!=human-SystNervous, {2020-05-01},
+McshHlth000019:1319  SystSense
+    + <br>* McshEngl.human-sensory-system!⇒SystSense,
+    + <br>* McshEngl.SystSense!=human-sensory-system,
+McshHlth000019:3644  organNerve
+    + <br>* McshEngl.human-nerve!⇒organNerve,
+    + <br>* McshEngl.organNerve!=human-nerve,
+McshHlth000019:4126  cellNeuron
+    + <br>* McshEngl.human-neuron!⇒cellNeuron,
+    + <br>* McshEngl.cellNeuron!=human-neuron,
+McshHlth000019:4884  neuronSensory
+    + <br>* McshEngl.human-sensory-neuron!⇒neuronSensory,
+    + <br>* McshEngl.neuronSensory!=human-sensory-neuron,
+McshHmn000000:29  dirHumn
+    + <br>* McshEngl.modelWorldSynagonismView.dirHuman!⇒dirHumn,
+    + <br>* McshEngl.dirHumn!=modelWorldSynagonismView.dirHuman,
+McshHmn000002:513  humn_id
+    + <br>* McshEngl.human-identifier!⇒humn_id,
+    + <br>* McshEngl.humn_id!=human-identifier,
+McshHmn000002:531  Hmnnid
+    + <br>* McshEngl.human-national-identifier!⇒Hmnnid,
+    + <br>* McshEngl.Hmnnid!=human-national-identifier,
+McshHmn000002:549  Hmngid
+    + <br>* McshEngl.human-global-identifier!⇒Hmngid,
+    + <br>* McshEngl.Hmngid!=human-global-identifier,
+McshHmn000002:626  Hmnimg
+    + <br>* McshEngl.image-of-human!⇒Hmnimg,
+    + <br>* McshEngl.Hmnimg!=image-of-human,
+McshHmn000002:1116  Hmnsfr
+    + <br>* McshEngl.human'satisfier!⇒Hmnsfr,
+    + <br>* McshEngl.Hmnsfr!=human'satisfier,
+McshHmn000002:1685  Humnsltn
+    + <br>* McshEngl.socialitation-of-human!⇒Humnsltn,
+    + <br>* McshEngl.Humnsltn!=socialitation-of-human,
+McshHmn000002:1794  lawHnrt
+    + <br>* McshEngl.law-on-human-rights!⇒lawHnrt,
+    + <br>* McshEngl.lawHnrt!=law-on-human-rights,
+McshHmn000002:3716  DongBehaving
+    + <br>* McshEngl.human-behaving-doing!⇒DongBehaving,
+    + <br>* McshEngl.DongBehaving!=human-behaving-doing,
+McshHmn000002:4680  humanAsk
+    + <br>* McshEngl.who!⇒humanAsk,
+    + <br>* McshEngl.humanAsk!=who,
+McshHmn000005:52  Arstwv
+    + <br>* McshEngl.AristotleB0384-worldview!⇒Arstwv,
+    + <br>* McshEngl.Arstwv!=AristotleB0384-worldview,
+McshLag000002:27  infoBrainBio
+    + <br>* McshEngl.brain-info!⇒infoBrainBio,
+    + <br>* McshEngl.infoBrainBio!=brain-info,
+McshLag000003:54  referent
+    + <br>* McshEngl.human-info-referent!⇒referent,
+    + <br>* McshEngl.referent!=human-info-referent,
+McshLag000003:876  concept
+    + <br>* McshEngl.human-concept!⇒concept,
+    + <br>* McshEngl.concept!=human-concept,
+McshLag000003:960  worldview
+    + <br>* McshEngl.human-worldview!⇒worldview,
+    + <br>* McshEngl.worldview!=human-worldview,
+McshLag000003:1277  worldviewMind
+    + <br>* McshEngl.human-mind-worldview!⇒worldviewMind,
+    + <br>* McshEngl.worldviewMind!=human-mind-worldview,
+McshLag000006:321  charUncd
+    + <br>* McshEngl.Unicode-character!⇒charUncd,
+    + <br>* McshEngl.charUncd!=Unicode-character,
+McshLag000007:29  Hmnm_lago
+    + <br>* McshEngl.human-mind--language!⇒Hmnm_lago,
+    + <br>* McshEngl.Hmnm_lago!=human-mind--language, {2026-07-02}
+McshLag000007:754  SLA
+    + <br>* McshEngl.second-language-acquisition!⇒SLA,
+    + <br>* McshEngl.SLA!=second-language-acquisition,
+McshLag000007:1228  Semucnpt_attr
+    + <br>* McshEngl.attribute-of-Semucnpt!⇒Semucnpt_attr,
+    + <br>* McshEngl.Semucnpt_attr!=attribute-of-Semucnpt, {2024-10-07}
+McshLag000007:1558  Semuargu_attr
+    + <br>* McshEngl.attribure-of-argu-concept!⇒Semuargu_attr,
+    + <br>* McshEngl.Semuargu_attr!=attribure-of-argu-concept, {2024-07-06}
+McshLag000007:2151  AskArgoCnpt
+    + <br>* McshEngl.interrogative-ReferenceArgoCnpt!⇒AskArgoCnpt,
+    + <br>* McshEngl.AskArgoCnpt!=interrogative-ReferenceArgoCnpt,
+McshLag000007:2764  Semuverbattr
+    + <br>* McshEngl.attribure-of-Semuverb!⇒Semuverbattr,
+    + <br>* McshEngl.Semuverbattr!=attribure-of-Semuverb, {2026-01-01}
+McshLag000007:3941  VerbCptAttAsk
+    + <br>* McshEngl.SemoCnptattVerbInterrogation!⇒VerbCptAttAsk,
+    + <br>* McshEngl.VerbCptAttAsk!=SemoCnptattVerbInterrogation, {2023-09-21},
+McshLag000007:3993  VerbCptAttAfrm
+    + <br>* McshEngl.SemoCnptattVerbAffirmation!⇒VerbCptAttAfrm,
+    + <br>* McshEngl.VerbCptAttAfrm!=SemoCnptattVerbAffirmation, {2023-09-21},
+McshLag000007:4157  VerbCnptmbr
+    + <br>* McshEngl.member-of-Semuverb!⇒VerbCnptmbr,
+    + <br>* McshEngl.VerbCnptmbr!=member-of-Semuverb, {2024-07-05}
+McshLag000007:14955  Semutime
+    + <br>* McshEngl.semu-time--verb-argument!⇒Semutime,
+    + <br>* McshEngl.Semutime!=semu-time--verb-argument,
+McshLag000007:15276  SemoSection
+    + <br>* McshEngl.titled--semu-sentence-system!⇒SemoSection,
+    + <br>* McshEngl.SemoSection!=titled--semu-sentence-system,
+McshLag000007:15364  HmnmLogoView
+    + <br>* McshEngl.output-view-of-human-mind-language!⇒HmnmLogoView,
+    + <br>* McshEngl.HmnmLogoView!=output-view-of-human-mind-language,
+McshLag000007:17279  HmnmStress
+    + <br>* McshEngl.stress-of-Hmnm_lago!⇒HmnmStress,
+    + <br>* McshEngl.HmnmStress!=stress-of-Hmnm_lago,
+McshLag000007:17305  HmnmPitch
+    + <br>* McshEngl.pitch-accent--in-Hmnm_lago!⇒HmnmPitch,
+    + <br>* McshEngl.HmnmPitch!=pitch-accent--in-Hmnm_lago,
+McshLag000007:17356  HmnmTone
+    + <br>* McshEngl.tone-of-Hmnm_lago!⇒HmnmTone,
+    + <br>* McshEngl.HmnmTone!=tone-of-Hmnm_lago,
+McshLag000007:19677  argu_form
+    + <br>* McshEngl.form-part-of-argu_mebr!⇒argu_form,
+    + <br>* McshEngl.argu_form!=form-part-of-argu_mebr,
+McshLag000007:19718  argu_auxi
+    + <br>* McshEngl.auxiliary-part-of-argu-member!⇒argu_auxi,
+    + <br>* McshEngl.argu_auxi!=auxiliary-part-of-argu-member,
+McshLag000007:19771  argu_mebrAtomic
+    + <br>* McshEngl.genericNo-argu_mebr!⇒argu_mebrAtomic,
+    + <br>* McshEngl.argu_mebrAtomic!=genericNo-argu_mebr, {2025-01-20}
+McshLag000007:19798  argu_mebrGnrc
+    + <br>* McshEngl.anoticNo--argu-member!⇒argu_mebrGnrc,
+    + <br>* McshEngl.argu_mebrGnrc!=anoticNo--argu-member,
+McshLag000007:21619  Verbmebr
+    + <br>* McshEngl.verb-member!⇒Verbmebr,
+    + <br>* McshEngl.Verbmebr!=verb-member,
+McshLag000007:21817  VerbIndi
+    + <br>* McshEngl.individual-member--of-verb!⇒VerbIndi,
+    + <br>* McshEngl.VerbIndi!=individual-member--of-verb, {2025-11-01}
+McshLag000007:26976  ConjSpaceVerb
+    + <br>* McshEngl.space-verb-conjunction!⇒ConjSpaceVerb,
+    + <br>* McshEngl.ConjSpaceVerb!=space-verb-conjunction,
+McshLag000007:29388  techLHmnm
+    + <br>* McshEngl.human-mind-language-tech!⇒techLHmnm,
+    + <br>* McshEngl.techLHmnm!=human-mind-language-tech,
+McshLag000007:30185  Faml_lago
+    + <br>* McshEngl.family!⇒Faml_lago,
+    + <br>* McshEngl.Faml_lago!=family,
+McshLag000007:30669  lagoCnrd
+    + <br>* McshEngl.constructed--human-mind-language!⇒lagoCnrd,
+    + <br>* McshEngl.lagoCnrd!=constructed--human-mind-language,
+McshLag000007:31365  lagLfrk
+    + <br>* McshEngl.lingua-franka!⇒lagLfrk,
+    + <br>* McshEngl.lagLfrk!=lingua-franka,
+McshLag000007:31530  Dlct_lago
+    + <br>* McshEngl.dialect-of-Hmnm_lago!⇒Dlct_lago,
+    + <br>* McshEngl.Dlct_lago!=dialect-of-Hmnm_lago,
+McshLag000008:473  consLetr
+    + <br>* McshEngl.consonant.letter!⇒consLetr,
+    + <br>* McshEngl.consLetr!=consonant.letter,
+McshLag000008:491  vowlLetr
+    + <br>* McshEngl.vowel.letter!⇒vowlLetr,
+    + <br>* McshEngl.vowlLetr!=vowel.letter,
+McshLag000009:751  IPA
+    + <br>* McshEngl.international-phonetic-alphabet!⇒IPA,
+    + <br>* McshEngl.IPA!=international-phonetic-alphabet,
+McshLag000009:1696  ConsPhnm
+    + <br>* McshEngl.consonant-phoneme!⇒ConsPhnm,
+    + <br>* McshEngl.ConsPhnm!=consonant-phoneme,
+McshLag000010:43  Sngu_lagu
+    + <br>* McshEngl.sinagu-language!⇒Sngu_lagu, {2025-11-30},
+    + <br>* McshEngl.Sngu_lagu!=sinagu-language,
+McshLag000010:133  Sngu_logu_view
+    + <br>* McshEngl.semu-view--of-Sngu_lagu!⇒Sngu_logu_view,
+    + <br>* McshEngl.Sngu_logu_view!=semu-view--of-Sngu_lagu,
+McshLag000010:202  Sngusemuargu
+    + <br>* McshEngl.semu-argu--of-Sngu_lagu!⇒Sngusemuargu,
+    + <br>* McshEngl.Sngusemuargu!=semu-argu--of-Sngu_lagu,
+McshLag000010:581  Sngu_vowl_phnm
+    + <br>* McshEngl.vowel-phoneme--of-Sngu_lagu!⇒Sngu_vowl_phnm,
+    + <br>* McshEngl.Sngu_vowl_phnm!=vowel-phoneme--of-Sngu_lagu,
+McshLag000010:794  Sngu_cons_phnm
+    + <br>* McshEngl.sinagu-consonant-phoneme!⇒Sngu_cons_phnm,
+    + <br>* McshEngl.Sngu_cons_phnm!=sinagu-consonant-phoneme,
+McshLag000010:3731  Sngu_sylb
+    + <br>* McshEngl.syllable-of-Sngu_lagu!⇒Sngu_sylb,
+    + <br>* McshEngl.Sngu_sylb!=syllable-of-Sngu_lagu,
+McshLag000010:5104  Sngu_pron
+    + <br>* McshEngl.pronoun-of-Sngu_lagu!⇒Sngu_pron,
+    + <br>* McshEngl.Sngu_pron!=pronoun-of-Sngu_lagu,
+McshLag000010:5597  Sngu_Verbargt
+    + <br>* McshEngl.Sngu_lagu--verb-argument!⇒Sngu_Verbargt,
+    + <br>* McshEngl.Sngu_Verbargt!=Sngu_lagu--verb-argument,
+McshLag000011:114  Engl_semo_view
+    + <br>* McshEngl.semu-view--of-Engl_lago!⇒Engl_semo_view,
+    + <br>* McshEngl.Engl_semo_view!=semu-view--of-Engl_lago,
+McshLag000011:208  Engl_Semuargu
+    + <br>* McshEngl.semu-argu--of-Engl_lago!⇒Engl_Semuargu,
+    + <br>* McshEngl.Engl_Semuargu!=semu-argu--of-Engl_lago,
+McshLag000011:239  Engl_Semuargu_mebr
+    + <br>* McshEngl.member-of-Engl_Semuargu!⇒Engl_Semuargu_mebr,
+    + <br>* McshEngl.Engl_Semuargu_mebr!=member-of-Engl_Semuargu,
+McshLag000011:546  Englconj_cnpt
+    + <br>* McshEngl.conjunction-concept--of-Engl_lago!⇒Englconj_cnpt,
+    + <br>* McshEngl.Englconj_cnpt!=conjunction-concept--of-Engl_lago,
+McshLag000011:564  Engl_logo_view
+    + <br>* McshEngl.logo-view--of-Engl_lago!⇒Engl_logo_view,
+    + <br>* McshEngl.Engl_logo_view!=logo-view--of-Engl_lago,
+McshLag000011:583  Engl_sntx
+    + <br>* McshEngl.syntax-tree--of-Engl_logo-view!⇒Engl_sntx,
+    + <br>* McshEngl.Engl_sntx!=syntax-tree--of-Engl_logo-view,
+McshLag000011:1221  Engl_cons_phnm
+    + <br>* McshEngl.English-consonant-phoneme!⇒Engl_cons_phnm,
+    + <br>* McshEngl.Engl_cons_phnm!=English-consonant-phoneme,
+McshLag000011:5163  Engl_sufx
+    + <br>* McshEngl.English-suffix!⇒Engl_sufx,
+    + <br>* McshEngl.Engl_sufx!=English-suffix,
+McshLag000011:5507  Engl_prfx
+    + <br>* McshEngl.English-prefix!⇒Engl_prfx,
+    + <br>* McshEngl.Engl_prfx!=English-prefix,
+McshLag000011:6664  Englnoun_mebr
+    + <br>* McshEngl.member-of-Englnoun!⇒Englnoun_mebr,
+    + <br>* McshEngl.Englnoun_mebr!=member-of-Englnoun,
+McshLag000011:9466  Engl_adve_mebr
+    + <br>* McshEngl.member-of-English-adverb!⇒Engl_adve_mebr,
+    + <br>* McshEngl.Engl_adve_mebr!=member-of-English-adverb,
+McshLag000011:16441  Engl_Vm
+    + <br>* McshEngl.member-of-Englverb!⇒Engl_Vm,
+    + <br>* McshEngl.Engl_Vm!=member-of-Englverb,
+McshLag000011:26738  verbEnglC
+    + <br>* McshEngl.go;goes;went;going;gone!⇒verbEnglC,
+    + <br>* McshEngl.verbEnglC!=go;goes;went;going;gone,
+McshLag000011:29618  Engl_Verbargt
+    + <br>* McshEngl.English--verb-argument!⇒Engl_Verbargt,
+    + <br>* McshEngl.Engl_Verbargt!=English--verb-argument,
+McshLag000012:557  EspoVowlPhnm
+    + <br>* McshEngl.Esperanto-vowel-phoneme!⇒EspoVowlPhnm,
+    + <br>* McshEngl.EspoVowlPhnm!=Esperanto-vowel-phoneme,
+McshLag000012:764  EspoConsPhnm
+    + <br>* McshEngl.Esperanto-consonant-phoneme!⇒EspoConsPhnm,
+    + <br>* McshEngl.EspoConsPhnm!=Esperanto-consonant-phoneme,
+McshLag000012:4840  EspoVerbArgu
+    + <br>* McshEngl.Esperanto--verb-argument!⇒EspoVerbArgu,
+    + <br>* McshEngl.EspoVerbArgu!=Esperanto--verb-argument,
+McshLag000013:1016  irAcdjournal
+    + <br>* McshEngl.academic-journal!⇒irAcdjournal,
+    + <br>* McshEngl.irAcdjournal!=academic-journal,
+McshLag000013:1047  irSong
+    + <br>* McshEngl.song--info-resource!⇒irSong,
+    + <br>* McshEngl.irSong!=song--info-resource,
+McshLag000014:30  irBook
+    + <br>* McshEngl.info-resource.book!⇒irBook,
+    + <br>* McshEngl.irBook!=info-resource.book,
+McshLag000017:32241  lago4
+    + <br>* McshEngl.4-letter-name-of-human-mind-language!⇒lago4,
+    + <br>* McshEngl.lago4!=4-letter-name-of-human-mind-language,
+McshLag000018:211  Zhonsemuview
+    + <br>* McshEngl.syntax-view--of-Zhon_lago!⇒Zhonsemuview,
+    + <br>* McshEngl.Zhonsemuview!=syntax-view--of-Zhon_lago,
+McshLag000018:1307  Zhon_vowl_phnm
+    + <br>* McshEngl.Chinese-vowel-phoneme!⇒Zhon_vowl_phnm,
+    + <br>* McshEngl.Zhon_vowl_phnm!=Chinese-vowel-phoneme,
+McshLag000018:1491  Zhon_cons_phnm
+    + <br>* McshEngl.consonant-phoneme--of-Zhon_lago!⇒Zhon_cons_phnm,
+    + <br>* McshEngl.Zhon_cons_phnm!=consonant-phoneme--of-Zhon_lago,
+McshLag000018:7165  Zhon_compo
+    + <br>* McshEngl.component-of-Chinese-character!⇒Zhon_compo,
+    + <br>* McshEngl.Zhon_compo!=component-of-Chinese-character,
+McshLag000018:7923  Zhonname
+    + <br>* McshEngl.name-of-Chinese-language!⇒Zhonname,
+    + <br>* McshEngl.Zhonname!=name-of-Chinese-language,
+McshLag000018:8296  Zhonargu
+    + <br>* McshEngl.argu-of-Zhon_lago!⇒Zhonargu,
+    + <br>* McshEngl.Zhonargu!=argu-of-Zhon_lago,
+McshLag000018:8364  Zhon_noun
+    + <br>* McshEngl.Chinese-noun!⇒Zhon_noun,
+    + <br>* McshEngl.Zhon_noun!=Chinese-noun,
+McshLag000018:12802  Zhon_verb.yuǎnlí-远离
+    + <br>* McshEngl.to-stay-away-from!⇒Zhon_verb.yuǎnlí-远离,
+    + <br>* McshEngl.Zhon_verb.yuǎnlí-远离!=to-stay-away-from,
+McshLag000018:14587  Zhon_prep
+    + <br>* McshEngl.Zhonconj.preposition!⇒Zhon_prep,
+    + <br>* McshEngl.Zhon_prep!=Zhonconj.preposition,
+McshLag000018:14820  Zhon_Verbargt
+    + <br>* McshEngl.Chinese--verb-argument!⇒Zhon_Verbargt,
+    + <br>* McshEngl.Zhon_Verbargt!=Chinese--verb-argument,
+McshLag000018:14873  Zhon_subj
+    + <br>* McshEngl.subject-of-Zhon_verb!⇒Zhon_subj,
+    + <br>* McshEngl.Zhon_subj!=subject-of-Zhon_verb,
+McshLag000018:14888  Zhon_sbjt
+    + <br>* McshEngl.subject-target--of-Zhon_verb!⇒Zhon_sbjt,
+    + <br>* McshEngl.Zhon_sbjt!=subject-target--of-Zhon_verb,
+McshLag000018:14903  Zhon_obj1
+    + <br>* McshEngl.direct-object-of-Zhon_verb!⇒Zhon_obj1,
+    + <br>* McshEngl.Zhon_obj1!=direct-object-of-Zhon_verb,
+McshLag000018:14930  Zhon_space_VA
+    + <br>* McshEngl.space--Chinese-verb-argument!⇒Zhon_space_VA,
+    + <br>* McshEngl.Zhon_space_VA!=space--Chinese-verb-argument,
+McshLag000018:15428  Zhon_expr
+    + <br>* McshEngl.Chinese-basic-expression!⇒Zhon_expr,
+    + <br>* McshEngl.Zhon_expr!=Chinese-basic-expression,
+McshLag000018:19272  Zhon_final
+    + <br>* McshEngl.final-of-lagoZhon!⇒Zhon_final,
+    + <br>* McshEngl.Zhon_final!=final-of-lagoZhon,
+McshLag000018:20234  Zhon_text_lago
+    + <br>* McshEngl.text-Standard-Chinese!⇒Zhon_text_lago,
+    + <br>* McshEngl.Zhon_text_lago!=text-Standard-Chinese,
+McshLag000019:27  irPaper
+    + <br>* McshEngl.info-resource.paper!⇒irPaper,
+    + <br>* McshEngl.irPaper!=info-resource.paper,
+McshLag000020:105  Elln_Semuview
+    + <br>* McshEngl.semu-view--of-Elln_lago!⇒Elln_Semuview,
+    + <br>* McshEngl.Elln_Semuview!=semu-view--of-Elln_lago,
+McshLag000020:240  Elln_phnm
+    + <br>* McshEngl.Greek-phoneme!⇒Elln_phnm,
+    + <br>* McshEngl.Elln_phnm!=Greek-phoneme,
+McshLag000020:336  Elln_vowl_phnm
+    + <br>* McshEngl.Greek-vowel-phoneme!⇒Elln_vowl_phnm,
+    + <br>* McshEngl.Elln_vowl_phnm!=Greek-vowel-phoneme,
+McshLag000020:495  Elln_cons_phnm
+    + <br>* McshEngl.Greek-consonant-phoneme!⇒Elln_cons_phnm,
+    + <br>* McshEngl.Elln_cons_phnm!=Greek-consonant-phoneme,
+McshLag000020:1435  Elln_word
+    + <br>* McshEngl.Greek-word!⇒Elln_word,
+    + <br>* McshEngl.Elln_word!=Greek-word,
+McshLag000020:1996  Elln_noun
+    + <br>* McshEngl.Greek-noun!⇒Elln_noun,
+    + <br>* McshEngl.Elln_noun!=Greek-noun,
+McshLag000020:9470  Elln_adje
+    + <br>* McshEngl.Greek-adjective!⇒Elln_adje,
+    + <br>* McshEngl.Elln_adje!=Greek-adjective,
+McshLag000020:9526  Elln_adve
+    + <br>* McshEngl.Greek-adverb!⇒Elln_adve,
+    + <br>* McshEngl.Elln_adve!=Greek-adverb,
+McshLag000020:12168  Elln_Verbargt
+    + <br>* McshEngl.Greek--verb-argument!⇒Elln_Verbargt,
+    + <br>* McshEngl.Elln_Verbargt!=Greek--verb-argument,
+McshLag000020:12212  Elln_expr
+    + <br>* McshEngl.Greek-basic-expression!⇒Elln_expr,
+    + <br>* McshEngl.Elln_expr!=Greek-basic-expression,
+McshLag000020:12545  sciLangElln
+    + <br>* McshEngl.linguisticsGreek!⇒sciLangElln,
+    + <br>* McshEngl.sciLangElln!=linguisticsGreek,
+McshLag000020:12696  lagEllt
+    + <br>* McshEngl.katharevousa!⇒lagEllt,
+    + <br>* McshEngl.lagEllt!=katharevousa,
+McshLag000022:30  wordSetElla
+    + <br>* McshEngl.set-of-words-of-Ancient-Greek!⇒wordSetElla,
+    + <br>* McshEngl.wordSetElla!=set-of-words-of-Ancient-Greek,
+McshLag000025:27  wordSetElln
+    + <br>* McshEngl.set-of-words--of-Greek-language!⇒wordSetElln,
+    + <br>* McshEngl.wordSetElln!=set-of-words--of-Greek-language,
+McshLag000027:119  Ella_phnm
+    + <br>* McshEngl.GreekAncient-phoneme!⇒Ella_phnm,
+    + <br>* McshEngl.Ella_phnm!=GreekAncient-phoneme,
+McshLag000027:866  Ella_letr
+    + <br>* McshEngl.letter-of-Ancient-Greek!⇒Ella_letr,
+    + <br>* McshEngl.Ella_letr!=letter-of-Ancient-Greek,
+McshLag000027:6972  Ella_Verbargt
+    + <br>* McshEngl.Ancient-Greek--verb-argument!⇒Ella_Verbargt,
+    + <br>* McshEngl.Ella_Verbargt!=Ancient-Greek--verb-argument,
+McshLag000027:7782  EllaDark
+    + <br>* McshEngl.Dark-Greek!⇒EllaDark,
+    + <br>* McshEngl.EllaDark!=Dark-Greek,
+McshLag000027:7800  EllaArchaic
+    + <br>* McshEngl.Archaic-Greek!⇒EllaArchaic,
+    + <br>* McshEngl.EllaArchaic!=Archaic-Greek,
+McshLag000027:8002  Ella_pitch
+    + <br>* McshEngl.pitch-accent--of-GreekAncient!⇒Ella_pitch,
+    + <br>* McshEngl.Ella_pitch!=pitch-accent--of-GreekAncient,
+McshLag000027:8207  EllaIonic
+    + <br>* McshEngl.Ionic-Greek!⇒EllaIonic,
+    + <br>* McshEngl.EllaIonic!=Ionic-Greek,
+McshLag000028:1521  Ellk_lago
+    + <br>* McshEngl.Koine-Greek!⇒Ellk_lago,
+    + <br>* McshEngl.Ellk_lago!=Koine-Greek,
+McshLag000028:1856  Ellb_lago
+    + <br>* McshEngl.Linear-B!⇒Ellb_lago,
+    + <br>* McshEngl.Ellb_lago!=Linear-B,
+McshLag000030:67  Turk_Semuview
+    + <br>* McshEngl.semu-view--of-lagoTurk!⇒Turk_Semuview,
+    + <br>* McshEngl.Turk_Semuview!=semu-view--of-lagoTurk,
+McshLag000030:245  TurkPhnm
+    + <br>* McshEngl.Turkish-phoneme!⇒TurkPhnm,
+    + <br>* McshEngl.TurkPhnm!=Turkish-phoneme,
+McshLag000030:1606  NounmbrTurk
+    + <br>* McshEngl.member-of-nounTurk!⇒NounmbrTurk,
+    + <br>* McshEngl.NounmbrTurk!=member-of-nounTurk, {2024-07-07}
+McshLag000030:7848  TurkVerbArgu
+    + <br>* McshEngl.Turkish--verb-argument!⇒TurkVerbArgu,
+    + <br>* McshEngl.TurkVerbArgu!=Turkish--verb-argument,
+McshLag000033:72  Deut_lago
+    + <br>* McshEngl.German-language!⇒Deut_lago,
+    + <br>* McshEngl.Deut_lago!=German-language,
+McshLag000033:123  Deut_Semuview
+    + <br>* McshEngl.semu-view--of-Deut_lago!⇒Deut_Semuview,
+    + <br>* McshEngl.Deut_Semuview!=semu-view--of-Deut_lago,
+McshLag000033:950  DeutConsPhnm
+    + <br>* McshEngl.consonant-phoneme-of-Deut_lago!⇒DeutConsPhnm,
+    + <br>* McshEngl.DeutConsPhnm!=consonant-phoneme-of-Deut_lago,
+McshLag000033:1947  DeutConsLetr
+    + <br>* McshEngl.consonant-letter-of-Deut_lago!⇒DeutConsLetr,
+    + <br>* McshEngl.DeutConsLetr!=consonant-letter-of-Deut_lago,
+McshLag000033:1960  DeutVowlLetr
+    + <br>* McshEngl.vowel-letter-of-Deut_lago,!⇒DeutVowlLetr,
+    + <br>* McshEngl.DeutVowlLetr!=vowel-letter-of-Deut_lago,,
+McshLag000033:2014  Deutword
+    + <br>* McshEngl.Deut_lago-word!⇒Deutword,
+    + <br>* McshEngl.Deutword!=Deut_lago-word,
+McshLag000033:2056  DeutSylb
+    + <br>* McshEngl.syllable-of-Deut_lago!⇒DeutSylb,
+    + <br>* McshEngl.DeutSylb!=syllable-of-Deut_lago,
+McshLag000033:2204  DeutNoun
+    + <br>* McshEngl.noun-of-Deut_lago!⇒DeutNoun,
+    + <br>* McshEngl.DeutNoun!=noun-of-Deut_lago,
+McshLag000033:2508  DeutAdje
+    + <br>* McshEngl.adjective-of-Deut_lago!⇒DeutAdje,
+    + <br>* McshEngl.DeutAdje!=adjective-of-Deut_lago,
+McshLag000033:2648  DeutAdve
+    + <br>* McshEngl.adverb-of-Deut_lago!⇒DeutAdve,
+    + <br>* McshEngl.DeutAdve!=adverb-of-Deut_lago,
+McshLag000033:2756  DeutPron
+    + <br>* McshEngl.pronoun-of-Deut_lago!⇒DeutPron,
+    + <br>* McshEngl.DeutPron!=pronoun-of-Deut_lago,
+McshLag000033:2897  DeutVerb
+    + <br>* McshEngl.verb-of-Deut_lago!⇒DeutVerb,
+    + <br>* McshEngl.DeutVerb!=verb-of-Deut_lago,
+McshLag000033:2924  DeutVM
+    + <br>* McshEngl.member-of-DeutVerb!⇒DeutVM,
+    + <br>* McshEngl.DeutVM!=member-of-DeutVerb,
+McshLag000033:3095  DeutConj
+    + <br>* McshEngl.conjunction-of-Deut_lago!⇒DeutConj,
+    + <br>* McshEngl.DeutConj!=conjunction-of-Deut_lago,
+McshLag000033:3188  DeutPrep
+    + <br>* McshEngl.preposition-of-Deut_lago!⇒DeutPrep,
+    + <br>* McshEngl.DeutPrep!=preposition-of-Deut_lago,
+McshLag000033:3217  DeutExpr
+    + <br>* McshEngl.Deutarian-basic-expression!⇒DeutExpr,
+    + <br>* McshEngl.DeutExpr!=Deutarian-basic-expression,
+McshLag000033:3676  Deug_lago
+    + <br>* McshEngl.German--Standard-German!⇒Deug_lago,
+    + <br>* McshEngl.Deug_lago!=German--Standard-German,
+McshLag000034:87  Bcms_Semuview
+    + <br>* McshEngl.semu-view--of-Bcms_lago!⇒Bcms_Semuview,
+    + <br>* McshEngl.Bcms_Semuview!=semu-view--of-Bcms_lago,
+McshLag000034:181  Bcms_Semuargu
+    + <br>* McshEngl.semu-argu--of-Bcms_lago!⇒Bcms_Semuargu,
+    + <br>* McshEngl.Bcms_Semuargu!=semu-argu--of-Bcms_lago,
+McshLag000034:279  BcmsLogoView
+    + <br>* McshEngl.logo-view--of-Bcms_lago!⇒BcmsLogoView,
+    + <br>* McshEngl.BcmsLogoView!=logo-view--of-Bcms_lago,
+McshLag000034:324  BcmsUnit
+    + <br>* McshEngl.unit-of-Bcms_lago!⇒BcmsUnit,
+    + <br>* McshEngl.BcmsUnit!=unit-of-Bcms_lago,
+McshLag000034:364  BcmsPhnm
+    + <br>* McshEngl.Bcms_lago-phoneme!⇒BcmsPhnm,
+    + <br>* McshEngl.BcmsPhnm!=Bcms_lago-phoneme,
+McshLag000034:421  BcmsVowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Bcms_lago!⇒BcmsVowlPhnm,
+    + <br>* McshEngl.BcmsVowlPhnm!=vowel-phoneme--of-Bcms_lago,
+McshLag000034:478  BcmsConsPhnm
+    + <br>* McshEngl.Bosnian-Croatian-Montenegrin-Serbian-consonant-phoneme!⇒BcmsConsPhnm,
+    + <br>* McshEngl.BcmsConsPhnm!=Bosnian-Croatian-Montenegrin-Serbian-consonant-phoneme,
+McshLag000034:495  BcmsLetr
+    + <br>* McshEngl.letter-of-Bcms_lago!⇒BcmsLetr,
+    + <br>* McshEngl.BcmsLetr!=letter-of-Bcms_lago,
+McshLag000034:1385  BcmsWord
+    + <br>* McshEngl.Bcms_lago-word!⇒BcmsWord,
+    + <br>* McshEngl.BcmsWord!=Bcms_lago-word,
+McshLag000034:1427  Bcmssylb
+    + <br>* McshEngl.syllable-of-Bcms_lago!⇒Bcmssylb,
+    + <br>* McshEngl.Bcmssylb!=syllable-of-Bcms_lago,
+McshLag000034:1675  BcmsPron
+    + <br>* McshEngl.pronoun-of-Bcms_lago!⇒BcmsPron,
+    + <br>* McshEngl.BcmsPron!=pronoun-of-Bcms_lago,
+McshLag000034:1835  BcmsVerb
+    + <br>* McshEngl.Bosnian-Croatian-Montenegrin-Serbian--verb!⇒BcmsVerb,
+    + <br>* McshEngl.BcmsVerb!=Bosnian-Croatian-Montenegrin-Serbian--verb,
+McshLag000034:1931  BcmsConj
+    + <br>* McshEngl.conjunction-of-Bcms_lago!⇒BcmsConj,
+    + <br>* McshEngl.BcmsConj!=conjunction-of-Bcms_lago,
+McshLag000034:1982  BcmsVerbArgu
+    + <br>* McshEngl.Bcms_lago--verb-argument!⇒BcmsVerbArgu,
+    + <br>* McshEngl.BcmsVerbArgu!=Bcms_lago--verb-argument,
+McshLag000034:1997  Bcmssent
+    + <br>* McshEngl.sentence-of-Bcms_lago!⇒Bcmssent,
+    + <br>* McshEngl.Bcmssent!=sentence-of-Bcms_lago,
+McshLag000034:2011  BcmsExpr
+    + <br>* McshEngl.Bcmsarian-basic-expression!⇒BcmsExpr,
+    + <br>* McshEngl.BcmsExpr!=Bcmsarian-basic-expression,
+McshLag000034:2435  BcmsSect
+    + <br>* McshEngl.section-of-Bcms_lago!⇒BcmsSect,
+    + <br>* McshEngl.BcmsSect!=section-of-Bcms_lago,
+McshLag000034:3424  SbosLetr
+    + <br>* McshEngl.SlavoBostian-letter!⇒SbosLetr,
+    + <br>* McshEngl.SbosLetr!=SlavoBostian-letter,
+McshLag000034:4320  ShrvLetr
+    + <br>* McshEngl.SlavoCroatian-letter!⇒ShrvLetr,
+    + <br>* McshEngl.ShrvLetr!=SlavoCroatian-letter,
+McshLag000034:4800  ScnrLetr
+    + <br>* McshEngl.SlavoMontenegrin-letter!⇒ScnrLetr,
+    + <br>* McshEngl.ScnrLetr!=SlavoMontenegrin-letter,
+McshLag000034:5756  SsrpLetr
+    + <br>* McshEngl.SlavoSerbian-letter!⇒SsrpLetr,
+    + <br>* McshEngl.SsrpLetr!=SlavoSerbian-letter,
+McshLag000035:75  Span_lago
+    + <br>* McshEngl.Spanish-language!⇒Span_lago,
+    + <br>* McshEngl.Span_lago!=Spanish-language,
+McshLag000035:132  Span_Semuview
+    + <br>* McshEngl.semu-view--of-Span_lago!⇒Span_Semuview,
+    + <br>* McshEngl.Span_Semuview!=semu-view--of-Span_lago,
+McshLag000035:226  Span_Semuargu
+    + <br>* McshEngl.semu-argu--of-Span_lago!⇒Span_Semuargu,
+    + <br>* McshEngl.Span_Semuargu!=semu-argu--of-Span_lago,
+McshLag000035:324  SpanLogoView
+    + <br>* McshEngl.logo-view--of-Span_lago!⇒SpanLogoView,
+    + <br>* McshEngl.SpanLogoView!=logo-view--of-Span_lago,
+McshLag000035:369  SpanUnit
+    + <br>* McshEngl.unit-of-Span_lago!⇒SpanUnit,
+    + <br>* McshEngl.SpanUnit!=unit-of-Span_lago,
+McshLag000035:409  SpanPhnm
+    + <br>* McshEngl.Span_lago-phoneme!⇒SpanPhnm,
+    + <br>* McshEngl.SpanPhnm!=Span_lago-phoneme,
+McshLag000035:487  SpanVowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Span_lago!⇒SpanVowlPhnm,
+    + <br>* McshEngl.SpanVowlPhnm!=vowel-phoneme--of-Span_lago,
+McshLag000035:633  SpanConsPhnm
+    + <br>* McshEngl.Spanish-consonant-phoneme!⇒SpanConsPhnm,
+    + <br>* McshEngl.SpanConsPhnm!=Spanish-consonant-phoneme,
+McshLag000035:650  SpanLetr
+    + <br>* McshEngl.letter-of-Span_lago!⇒SpanLetr,
+    + <br>* McshEngl.SpanLetr!=letter-of-Span_lago,
+McshLag000035:1091  SpanWord
+    + <br>* McshEngl.Span_lago-word!⇒SpanWord,
+    + <br>* McshEngl.SpanWord!=Span_lago-word,
+McshLag000035:1133  SpanSylb
+    + <br>* McshEngl.syllable-of-Span_lago!⇒SpanSylb,
+    + <br>* McshEngl.SpanSylb!=syllable-of-Span_lago,
+McshLag000035:1426  SpanAdje
+    + <br>* McshEngl.Spanish-adjective!⇒SpanAdje,
+    + <br>* McshEngl.SpanAdje!=Spanish-adjective,
+McshLag000035:1497  SpanAdve
+    + <br>* McshEngl.Spanish-adverb!⇒SpanAdve,
+    + <br>* McshEngl.SpanAdve!=Spanish-adverb,
+McshLag000035:1535  SpanPron
+    + <br>* McshEngl.pronoun-of-Span_lago!⇒SpanPron,
+    + <br>* McshEngl.SpanPron!=pronoun-of-Span_lago,
+McshLag000035:1923  SpanConj
+    + <br>* McshEngl.conjunction-of-Span_lago!⇒SpanConj,
+    + <br>* McshEngl.SpanConj!=conjunction-of-Span_lago,
+McshLag000035:2052  SpanPrep
+    + <br>* McshEngl.Spanish-preposition!⇒SpanPrep,
+    + <br>* McshEngl.SpanPrep!=Spanish-preposition,
+McshLag000035:2080  SpanVerbArgu
+    + <br>* McshEngl.Span_lago--verb-argument!⇒SpanVerbArgu,
+    + <br>* McshEngl.SpanVerbArgu!=Span_lago--verb-argument,
+McshLag000035:2095  SpanSent
+    + <br>* McshEngl.sentence-of-Span_lago!⇒SpanSent,
+    + <br>* McshEngl.SpanSent!=sentence-of-Span_lago,
+McshLag000035:2109  SpanExpr
+    + <br>* McshEngl.Spanish-basic-expression!⇒SpanExpr,
+    + <br>* McshEngl.SpanExpr!=Spanish-basic-expression,
+McshLag000035:2309  SpanSect
+    + <br>* McshEngl.section-of-Span_lago!⇒SpanSect,
+    + <br>* McshEngl.SpanSect!=section-of-Span_lago,
+McshLag000036:71  Arab_lago
+    + <br>* McshEngl.Arabic-language!⇒Arab_lago,
+    + <br>* McshEngl.Arab_lago!=Arabic-language,
+McshLag000036:129  Arab_Semuview
+    + <br>* McshEngl.semu-view--of-Arab_lago!⇒Arab_Semuview,
+    + <br>* McshEngl.Arab_Semuview!=semu-view--of-Arab_lago,
+McshLag000036:223  Arab_Semuargu
+    + <br>* McshEngl.semu-argu--of-Arab_lago!⇒Arab_Semuargu,
+    + <br>* McshEngl.Arab_Semuargu!=semu-argu--of-Arab_lago,
+McshLag000036:321  ArabLogoView
+    + <br>* McshEngl.logo-view--of-Arab_lago!⇒ArabLogoView,
+    + <br>* McshEngl.ArabLogoView!=logo-view--of-Arab_lago,
+McshLag000036:366  ArabUnit
+    + <br>* McshEngl.unit-of-Arab_lago!⇒ArabUnit,
+    + <br>* McshEngl.ArabUnit!=unit-of-Arab_lago,
+McshLag000036:406  ArabPhnm
+    + <br>* McshEngl.Arab_lago-phoneme!⇒ArabPhnm,
+    + <br>* McshEngl.ArabPhnm!=Arab_lago-phoneme,
+McshLag000036:522  ArabVowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Arab_lago!⇒ArabVowlPhnm,
+    + <br>* McshEngl.ArabVowlPhnm!=vowel-phoneme--of-Arab_lago,
+McshLag000036:620  ArabConsPhnm
+    + <br>* McshEngl.Arabic-consonant-phoneme!⇒ArabConsPhnm,
+    + <br>* McshEngl.ArabConsPhnm!=Arabic-consonant-phoneme,
+McshLag000036:685  ArabLetr
+    + <br>* McshEngl.letter-of-Arab_lago!⇒ArabLetr,
+    + <br>* McshEngl.ArabLetr!=letter-of-Arab_lago,
+McshLag000036:1636  ArabWord
+    + <br>* McshEngl.Arab_lago-word!⇒ArabWord,
+    + <br>* McshEngl.ArabWord!=Arab_lago-word,
+McshLag000036:1678  ArabSylb
+    + <br>* McshEngl.syllable-of-Arab_lago!⇒ArabSylb,
+    + <br>* McshEngl.ArabSylb!=syllable-of-Arab_lago,
+McshLag000036:2054  ArabPron
+    + <br>* McshEngl.pronoun-of-Arab_lago!⇒ArabPron,
+    + <br>* McshEngl.ArabPron!=pronoun-of-Arab_lago,
+McshLag000036:2392  ArabConj
+    + <br>* McshEngl.conjunction-of-Arab_lago!⇒ArabConj,
+    + <br>* McshEngl.ArabConj!=conjunction-of-Arab_lago,
+McshLag000036:2501  ArabVerbArgu
+    + <br>* McshEngl.Arab_lago--verb-argument!⇒ArabVerbArgu,
+    + <br>* McshEngl.ArabVerbArgu!=Arab_lago--verb-argument,
+McshLag000036:2516  ArabSent
+    + <br>* McshEngl.sentence-of-Arab_lago!⇒ArabSent,
+    + <br>* McshEngl.ArabSent!=sentence-of-Arab_lago,
+McshLag000036:2530  ArabExpr
+    + <br>* McshEngl.Arabic-basic-expression!⇒ArabExpr,
+    + <br>* McshEngl.ArabExpr!=Arabic-basic-expression,
+McshLag000036:2730  ArabSect
+    + <br>* McshEngl.section-of-Arab_lago!⇒ArabSect,
+    + <br>* McshEngl.ArabSect!=section-of-Arab_lago,
+McshLag000037:53  Hiur_lago
+    + <br>* McshEngl.Hindi-Urdu--language!⇒Hiur_lago,
+    + <br>* McshEngl.Hiur_lago!=Hindi-Urdu--language,
+McshLag000037:109  Hiur_Semuview
+    + <br>* McshEngl.semu-view--of-Hiur_lago!⇒Hiur_Semuview,
+    + <br>* McshEngl.Hiur_Semuview!=semu-view--of-Hiur_lago,
+McshLag000037:203  Hiur_Semuargu
+    + <br>* McshEngl.semu-argu--of-Hiur_lago!⇒Hiur_Semuargu,
+    + <br>* McshEngl.Hiur_Semuargu!=semu-argu--of-Hiur_lago,
+McshLag000037:301  HiurLogoView
+    + <br>* McshEngl.logo-view--of-Hiur_lago!⇒HiurLogoView,
+    + <br>* McshEngl.HiurLogoView!=logo-view--of-Hiur_lago,
+McshLag000037:346  HiurUnit
+    + <br>* McshEngl.unit-of-Hiur_lago!⇒HiurUnit,
+    + <br>* McshEngl.HiurUnit!=unit-of-Hiur_lago,
+McshLag000037:457  HiurPhnm
+    + <br>* McshEngl.Hiur_lago-phoneme!⇒HiurPhnm,
+    + <br>* McshEngl.HiurPhnm!=Hiur_lago-phoneme,
+McshLag000037:515  HiurVowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Hiur_lago!⇒HiurVowlPhnm,
+    + <br>* McshEngl.HiurVowlPhnm!=vowel-phoneme--of-Hiur_lago,
+McshLag000037:744  HiurConsPhnm
+    + <br>* McshEngl.Hindi-Urdu-consonant-phoneme!⇒HiurConsPhnm,
+    + <br>* McshEngl.HiurConsPhnm!=Hindi-Urdu-consonant-phoneme,
+McshLag000037:1323  Hiurletr
+    + <br>* McshEngl.letter-of-Hiur_lago!⇒Hiurletr,
+    + <br>* McshEngl.Hiurletr!=letter-of-Hiur_lago,
+McshLag000037:1402  HiurWord
+    + <br>* McshEngl.Hiur_lago-word!⇒HiurWord,
+    + <br>* McshEngl.HiurWord!=Hiur_lago-word,
+McshLag000037:1444  HiurSylb
+    + <br>* McshEngl.syllable-of-Hiur_lago!⇒HiurSylb,
+    + <br>* McshEngl.HiurSylb!=syllable-of-Hiur_lago,
+McshLag000037:1652  HiurPron
+    + <br>* McshEngl.pronoun-of-Hiur_lago!⇒HiurPron,
+    + <br>* McshEngl.HiurPron!=pronoun-of-Hiur_lago,
+McshLag000037:1908  HiurConj
+    + <br>* McshEngl.conjunction-of-Hiur_lago!⇒HiurConj,
+    + <br>* McshEngl.HiurConj!=conjunction-of-Hiur_lago,
+McshLag000037:1960  HiurVerbArgu
+    + <br>* McshEngl.Hiur_lago--verb-argument!⇒HiurVerbArgu,
+    + <br>* McshEngl.HiurVerbArgu!=Hiur_lago--verb-argument,
+McshLag000037:1975  HiurSent
+    + <br>* McshEngl.sentence-of-Hiur_lago!⇒HiurSent,
+    + <br>* McshEngl.HiurSent!=sentence-of-Hiur_lago,
+McshLag000037:2015  HiurSect
+    + <br>* McshEngl.section-of-Hiur_lago!⇒HiurSect,
+    + <br>* McshEngl.HiurSect!=section-of-Hiur_lago,
+McshLag000037:2463  HindUnit
+    + <br>* McshEngl.unit-of-HindLogoView!⇒HindUnit,
+    + <br>* McshEngl.HindUnit!=unit-of-HindLogoView,
+McshLag000037:2986  HindVowlLetr
+    + <br>* McshEngl.Hindi-vowel-letter!⇒HindVowlLetr,
+    + <br>* McshEngl.HindVowlLetr!=Hindi-vowel-letter,
+McshLag000037:3240  HindConsLetr
+    + <br>* McshEngl.Hindi-consonant-letter!⇒HindConsLetr,
+    + <br>* McshEngl.HindConsLetr!=Hindi-consonant-letter,
+McshLag000037:3974  HindSylb
+    + <br>* McshEngl.syllable-of-Hind_lago!⇒HindSylb,
+    + <br>* McshEngl.HindSylb!=syllable-of-Hind_lago,
+McshLag000037:4086  HindExpr
+    + <br>* McshEngl.Hindi-basic-expression!⇒HindExpr,
+    + <br>* McshEngl.HindExpr!=Hindi-basic-expression,
+McshLag000037:4406  UrduUnit
+    + <br>* McshEngl.unit-of-UrduLogoView!⇒UrduUnit,
+    + <br>* McshEngl.UrduUnit!=unit-of-UrduLogoView,
+McshLag000037:4567  UrduSylb
+    + <br>* McshEngl.syllable-of-Urdu_lago!⇒UrduSylb,
+    + <br>* McshEngl.UrduSylb!=syllable-of-Urdu_lago,
+McshLag000038:82  Slv0Lago
+    + <br>* McshEngl.Slavic-languages!⇒Slv0Lago,
+    + <br>* McshEngl.Slv0Lago!=Slavic-languages,
+McshLag000038:141  Slv0SemoView
+    + <br>* McshEngl.semu-view--of-Slv0Lago!⇒Slv0SemoView,
+    + <br>* McshEngl.Slv0SemoView!=semu-view--of-Slv0Lago,
+McshLag000038:235  Slv0_Semuargu
+    + <br>* McshEngl.semu-argu--of-Slv0Lago!⇒Slv0_Semuargu,
+    + <br>* McshEngl.Slv0_Semuargu!=semu-argu--of-Slv0Lago,
+McshLag000038:333  Slv0LogoView
+    + <br>* McshEngl.logo-view--of-Slv0Lago!⇒Slv0LogoView,
+    + <br>* McshEngl.Slv0LogoView!=logo-view--of-Slv0Lago,
+McshLag000038:378  Slv0Unit
+    + <br>* McshEngl.unit-of-Slv0Lago!⇒Slv0Unit,
+    + <br>* McshEngl.Slv0Unit!=unit-of-Slv0Lago,
+McshLag000038:418  Slv0Phnm
+    + <br>* McshEngl.Slv0Lago-phoneme!⇒Slv0Phnm,
+    + <br>* McshEngl.Slv0Phnm!=Slv0Lago-phoneme,
+McshLag000038:521  Slv0VowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Slv0Lago!⇒Slv0VowlPhnm,
+    + <br>* McshEngl.Slv0VowlPhnm!=vowel-phoneme--of-Slv0Lago,
+McshLag000038:603  Slv0ConsPhnm
+    + <br>* McshEngl.Slavic-consonant-phoneme!⇒Slv0ConsPhnm,
+    + <br>* McshEngl.Slv0ConsPhnm!=Slavic-consonant-phoneme,
+McshLag000038:620  Slv0letr
+    + <br>* McshEngl.letter-of-Slv0Lago!⇒Slv0letr,
+    + <br>* McshEngl.Slv0letr!=letter-of-Slv0Lago,
+McshLag000038:775  Slv0Word
+    + <br>* McshEngl.Slv0Lago-word!⇒Slv0Word,
+    + <br>* McshEngl.Slv0Word!=Slv0Lago-word,
+McshLag000038:817  Slv0Sylb
+    + <br>* McshEngl.syllable-of-Slv0Lago!⇒Slv0Sylb,
+    + <br>* McshEngl.Slv0Sylb!=syllable-of-Slv0Lago,
+McshLag000038:1149  Slv0Pron
+    + <br>* McshEngl.pronoun-of-Slv0Lago!⇒Slv0Pron,
+    + <br>* McshEngl.Slv0Pron!=pronoun-of-Slv0Lago,
+McshLag000038:1405  Slv0Conj
+    + <br>* McshEngl.conjunction-of-Slv0Lago!⇒Slv0Conj,
+    + <br>* McshEngl.Slv0Conj!=conjunction-of-Slv0Lago,
+McshLag000038:1457  Slv0VerbArgu
+    + <br>* McshEngl.Slv0Lago--verb-argument!⇒Slv0VerbArgu,
+    + <br>* McshEngl.Slv0VerbArgu!=Slv0Lago--verb-argument,
+McshLag000038:1472  Slv0Sent
+    + <br>* McshEngl.sentence-of-Slv0Lago!⇒Slv0Sent,
+    + <br>* McshEngl.Slv0Sent!=sentence-of-Slv0Lago,
+McshLag000038:1512  Slv0Sect
+    + <br>* McshEngl.section-of-Slv0Lago!⇒Slv0Sect,
+    + <br>* McshEngl.Slv0Sect!=section-of-Slv0Lago,
+McshLag000039:137  Ide0SemoView
+    + <br>* McshEngl.semu-view--of-Ide0_lago!⇒Ide0SemoView,
+    + <br>* McshEngl.Ide0SemoView!=semu-view--of-Ide0_lago,
+McshLag000039:231  Ide0_Semuargu
+    + <br>* McshEngl.semu-argu--of-Ide0_lago!⇒Ide0_Semuargu,
+    + <br>* McshEngl.Ide0_Semuargu!=semu-argu--of-Ide0_lago,
+McshLag000039:329  Ide0LogoView
+    + <br>* McshEngl.logo-view--of-Ide0_lago!⇒Ide0LogoView,
+    + <br>* McshEngl.Ide0LogoView!=logo-view--of-Ide0_lago,
+McshLag000039:374  Ide0Unit
+    + <br>* McshEngl.unit-of-Ide0_lago!⇒Ide0Unit,
+    + <br>* McshEngl.Ide0Unit!=unit-of-Ide0_lago,
+McshLag000039:414  Ide0Phnm
+    + <br>* McshEngl.Ide0_lago-phoneme!⇒Ide0Phnm,
+    + <br>* McshEngl.Ide0Phnm!=Ide0_lago-phoneme,
+McshLag000039:454  Ide0VowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Ide0_lago!⇒Ide0VowlPhnm,
+    + <br>* McshEngl.Ide0VowlPhnm!=vowel-phoneme--of-Ide0_lago,
+McshLag000039:470  Ide0ConsPhnm
+    + <br>* McshEngl.IndoEuropean-consonant-phoneme!⇒Ide0ConsPhnm,
+    + <br>* McshEngl.Ide0ConsPhnm!=IndoEuropean-consonant-phoneme,
+McshLag000039:487  Ide0letr
+    + <br>* McshEngl.letter-of-Ide0_lago!⇒Ide0letr,
+    + <br>* McshEngl.Ide0letr!=letter-of-Ide0_lago,
+McshLag000039:566  Ide0Word
+    + <br>* McshEngl.Ide0_lago-word!⇒Ide0Word,
+    + <br>* McshEngl.Ide0Word!=Ide0_lago-word,
+McshLag000039:608  Ide0Sylb
+    + <br>* McshEngl.syllable-of-Ide0_lago!⇒Ide0Sylb,
+    + <br>* McshEngl.Ide0Sylb!=syllable-of-Ide0_lago,
+McshLag000039:816  Ide0Pron
+    + <br>* McshEngl.pronoun-of-Ide0_lago!⇒Ide0Pron,
+    + <br>* McshEngl.Ide0Pron!=pronoun-of-Ide0_lago,
+McshLag000039:1072  Ide0Conj
+    + <br>* McshEngl.conjunction-of-Ide0_lago!⇒Ide0Conj,
+    + <br>* McshEngl.Ide0Conj!=conjunction-of-Ide0_lago,
+McshLag000039:1124  Ide0VerbArgu
+    + <br>* McshEngl.Ide0_lago--verb-argument!⇒Ide0VerbArgu,
+    + <br>* McshEngl.Ide0VerbArgu!=Ide0_lago--verb-argument,
+McshLag000039:1139  Ide0Sent
+    + <br>* McshEngl.sentence-of-Ide0_lago!⇒Ide0Sent,
+    + <br>* McshEngl.Ide0Sent!=sentence-of-Ide0_lago,
+McshLag000039:1179  Ide0Sect
+    + <br>* McshEngl.section-of-Ide0_lago!⇒Ide0Sect,
+    + <br>* McshEngl.Ide0Sect!=section-of-Ide0_lago,
+McshLag000039:1453  Ptie_lago
+    + <br>* McshEngl.proto-Indo-European-language!⇒Ptie_lago,
+    + <br>* McshEngl.Ptie_lago!=proto-Indo-European-language,
+McshLag000040:153  Afa0SemoView
+    + <br>* McshEngl.semu-view--of-Afa0_lago!⇒Afa0SemoView,
+    + <br>* McshEngl.Afa0SemoView!=semu-view--of-Afa0_lago,
+McshLag000040:247  Afa0_Semuargu
+    + <br>* McshEngl.semu-argu--of-Afa0_lago!⇒Afa0_Semuargu,
+    + <br>* McshEngl.Afa0_Semuargu!=semu-argu--of-Afa0_lago,
+McshLag000040:345  Afa0LogoView
+    + <br>* McshEngl.logo-view--of-Afa0_lago!⇒Afa0LogoView,
+    + <br>* McshEngl.Afa0LogoView!=logo-view--of-Afa0_lago,
+McshLag000040:390  Afa0Unit
+    + <br>* McshEngl.unit-of-Afa0_lago!⇒Afa0Unit,
+    + <br>* McshEngl.Afa0Unit!=unit-of-Afa0_lago,
+McshLag000040:430  Afa0Phnm
+    + <br>* McshEngl.Afa0_lago-phoneme!⇒Afa0Phnm,
+    + <br>* McshEngl.Afa0Phnm!=Afa0_lago-phoneme,
+McshLag000040:539  Afa0VowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Afa0_lago!⇒Afa0VowlPhnm,
+    + <br>* McshEngl.Afa0VowlPhnm!=vowel-phoneme--of-Afa0_lago,
+McshLag000040:649  Afa0ConsPhnm
+    + <br>* McshEngl.AfroAsiatic-consonant-phoneme!⇒Afa0ConsPhnm,
+    + <br>* McshEngl.Afa0ConsPhnm!=AfroAsiatic-consonant-phoneme,
+McshLag000040:712  Afa0letr
+    + <br>* McshEngl.letter-of-Afa0_lago!⇒Afa0letr,
+    + <br>* McshEngl.Afa0letr!=letter-of-Afa0_lago,
+McshLag000040:791  Afa0Word
+    + <br>* McshEngl.Afa0_lago-word!⇒Afa0Word,
+    + <br>* McshEngl.Afa0Word!=Afa0_lago-word,
+McshLag000040:833  Afa0Sylb
+    + <br>* McshEngl.syllable-of-Afa0_lago!⇒Afa0Sylb,
+    + <br>* McshEngl.Afa0Sylb!=syllable-of-Afa0_lago,
+McshLag000040:1041  Afa0Pron
+    + <br>* McshEngl.pronoun-of-Afa0_lago!⇒Afa0Pron,
+    + <br>* McshEngl.Afa0Pron!=pronoun-of-Afa0_lago,
+McshLag000040:1297  Afa0Conj
+    + <br>* McshEngl.conjunction-of-Afa0_lago!⇒Afa0Conj,
+    + <br>* McshEngl.Afa0Conj!=conjunction-of-Afa0_lago,
+McshLag000040:1349  Afa0VerbArgu
+    + <br>* McshEngl.Afa0_lago--verb-argument!⇒Afa0VerbArgu,
+    + <br>* McshEngl.Afa0VerbArgu!=Afa0_lago--verb-argument,
+McshLag000040:1364  Afa0Sent
+    + <br>* McshEngl.sentence-of-Afa0_lago!⇒Afa0Sent,
+    + <br>* McshEngl.Afa0Sent!=sentence-of-Afa0_lago,
+McshLag000040:1404  Afa0Sect
+    + <br>* McshEngl.section-of-Afa0_lago!⇒Afa0Sect,
+    + <br>* McshEngl.Afa0Sect!=section-of-Afa0_lago,
+McshLag000041:143  Tur0SemoView
+    + <br>* McshEngl.semu-view--of-Tur0_lago!⇒Tur0SemoView,
+    + <br>* McshEngl.Tur0SemoView!=semu-view--of-Tur0_lago,
+McshLag000041:237  Tur0_Semuargu
+    + <br>* McshEngl.semu-argu--of-Tur0_lago!⇒Tur0_Semuargu,
+    + <br>* McshEngl.Tur0_Semuargu!=semu-argu--of-Tur0_lago,
+McshLag000041:335  Tur0LogoView
+    + <br>* McshEngl.logo-view--of-Tur0_lago!⇒Tur0LogoView,
+    + <br>* McshEngl.Tur0LogoView!=logo-view--of-Tur0_lago,
+McshLag000041:380  Tur0Unit
+    + <br>* McshEngl.unit-of-Tur0_lago!⇒Tur0Unit,
+    + <br>* McshEngl.Tur0Unit!=unit-of-Tur0_lago,
+McshLag000041:420  Tur0Phnm
+    + <br>* McshEngl.Tur0_lago-phoneme!⇒Tur0Phnm,
+    + <br>* McshEngl.Tur0Phnm!=Tur0_lago-phoneme,
+McshLag000041:502  Tur0VowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Tur0_lago!⇒Tur0VowlPhnm,
+    + <br>* McshEngl.Tur0VowlPhnm!=vowel-phoneme--of-Tur0_lago,
+McshLag000041:562  Tur0ConsPhnm
+    + <br>* McshEngl.Turkic-consonant-phoneme!⇒Tur0ConsPhnm,
+    + <br>* McshEngl.Tur0ConsPhnm!=Turkic-consonant-phoneme,
+McshLag000041:624  Tur0letr
+    + <br>* McshEngl.letter-of-Tur0_lago!⇒Tur0letr,
+    + <br>* McshEngl.Tur0letr!=letter-of-Tur0_lago,
+McshLag000041:703  Tur0Word
+    + <br>* McshEngl.Tur0_lago-word!⇒Tur0Word,
+    + <br>* McshEngl.Tur0Word!=Tur0_lago-word,
+McshLag000041:745  Tur0Sylb
+    + <br>* McshEngl.syllable-of-Tur0_lago!⇒Tur0Sylb,
+    + <br>* McshEngl.Tur0Sylb!=syllable-of-Tur0_lago,
+McshLag000041:953  Tur0Pron
+    + <br>* McshEngl.pronoun-of-Tur0_lago!⇒Tur0Pron,
+    + <br>* McshEngl.Tur0Pron!=pronoun-of-Tur0_lago,
+McshLag000041:1209  Tur0Conj
+    + <br>* McshEngl.conjunction-of-Tur0_lago!⇒Tur0Conj,
+    + <br>* McshEngl.Tur0Conj!=conjunction-of-Tur0_lago,
+McshLag000041:1261  Tur0VerbArgu
+    + <br>* McshEngl.Tur0_lago--verb-argument!⇒Tur0VerbArgu,
+    + <br>* McshEngl.Tur0VerbArgu!=Tur0_lago--verb-argument,
+McshLag000041:1276  Tur0Sent
+    + <br>* McshEngl.sentence-of-Tur0_lago!⇒Tur0Sent,
+    + <br>* McshEngl.Tur0Sent!=sentence-of-Tur0_lago,
+McshLag000041:1316  Tur0Sect
+    + <br>* McshEngl.section-of-Tur0_lago!⇒Tur0Sect,
+    + <br>* McshEngl.Tur0Sect!=section-of-Tur0_lago,
+McshLag000042:116  Asa0SemoView
+    + <br>* McshEngl.semu-view--of-Asa0_lago!⇒Asa0SemoView,
+    + <br>* McshEngl.Asa0SemoView!=semu-view--of-Asa0_lago,
+McshLag000042:210  Asa0_Semuargu
+    + <br>* McshEngl.semu-argu--of-Asa0_lago!⇒Asa0_Semuargu,
+    + <br>* McshEngl.Asa0_Semuargu!=semu-argu--of-Asa0_lago,
+McshLag000042:308  Asa0LogoView
+    + <br>* McshEngl.logo-view--of-Asa0_lago!⇒Asa0LogoView,
+    + <br>* McshEngl.Asa0LogoView!=logo-view--of-Asa0_lago,
+McshLag000042:353  Asa0Unit
+    + <br>* McshEngl.unit-of-Asa0_lago!⇒Asa0Unit,
+    + <br>* McshEngl.Asa0Unit!=unit-of-Asa0_lago,
+McshLag000042:393  Asa0Phnm
+    + <br>* McshEngl.Asa0_lago-phoneme!⇒Asa0Phnm,
+    + <br>* McshEngl.Asa0Phnm!=Asa0_lago-phoneme,
+McshLag000042:480  Asa0VowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Asa0_lago!⇒Asa0VowlPhnm,
+    + <br>* McshEngl.Asa0VowlPhnm!=vowel-phoneme--of-Asa0_lago,
+McshLag000042:567  Asa0ConsPhnm
+    + <br>* McshEngl.AustroAsiatic-consonant-phoneme!⇒Asa0ConsPhnm,
+    + <br>* McshEngl.Asa0ConsPhnm!=AustroAsiatic-consonant-phoneme,
+McshLag000042:633  Asa0letr
+    + <br>* McshEngl.letter-of-Asa0_lago!⇒Asa0letr,
+    + <br>* McshEngl.Asa0letr!=letter-of-Asa0_lago,
+McshLag000042:712  Asa0Word
+    + <br>* McshEngl.Asa0_lago-word!⇒Asa0Word,
+    + <br>* McshEngl.Asa0Word!=Asa0_lago-word,
+McshLag000042:754  Asa0Sylb
+    + <br>* McshEngl.syllable-of-Asa0_lago!⇒Asa0Sylb,
+    + <br>* McshEngl.Asa0Sylb!=syllable-of-Asa0_lago,
+McshLag000042:962  Asa0Pron
+    + <br>* McshEngl.pronoun-of-Asa0_lago!⇒Asa0Pron,
+    + <br>* McshEngl.Asa0Pron!=pronoun-of-Asa0_lago,
+McshLag000042:1218  Asa0Conj
+    + <br>* McshEngl.conjunction-of-Asa0_lago!⇒Asa0Conj,
+    + <br>* McshEngl.Asa0Conj!=conjunction-of-Asa0_lago,
+McshLag000042:1270  Asa0VerbArgu
+    + <br>* McshEngl.Asa0_lago--verb-argument!⇒Asa0VerbArgu,
+    + <br>* McshEngl.Asa0VerbArgu!=Asa0_lago--verb-argument,
+McshLag000042:1285  Asa0Sent
+    + <br>* McshEngl.sentence-of-Asa0_lago!⇒Asa0Sent,
+    + <br>* McshEngl.Asa0Sent!=sentence-of-Asa0_lago,
+McshLag000042:1325  Asa0Sect
+    + <br>* McshEngl.section-of-Asa0_lago!⇒Asa0Sect,
+    + <br>* McshEngl.Asa0Sect!=section-of-Asa0_lago,
+McshLag000043:119  Kora_Semuview
+    + <br>* McshEngl.semu-view--of-Kora_lago!⇒Kora_Semuview,
+    + <br>* McshEngl.Kora_Semuview!=semu-view--of-Kora_lago,
+McshLag000043:213  Kora_Semuargu
+    + <br>* McshEngl.semu-argu--of-Kora_lago!⇒Kora_Semuargu,
+    + <br>* McshEngl.Kora_Semuargu!=semu-argu--of-Kora_lago,
+McshLag000043:311  Kora_logo_view
+    + <br>* McshEngl.logo-view--of-Kora_lago!⇒Kora_logo_view,
+    + <br>* McshEngl.Kora_logo_view!=logo-view--of-Kora_lago,
+McshLag000043:356  KoraUnit
+    + <br>* McshEngl.unit-of-Kora_lago!⇒KoraUnit,
+    + <br>* McshEngl.KoraUnit!=unit-of-Kora_lago,
+McshLag000043:395  KoraPhnm
+    + <br>* McshEngl.Kora_lago-phoneme!⇒KoraPhnm,
+    + <br>* McshEngl.KoraPhnm!=Kora_lago-phoneme,
+McshLag000043:496  KoraVowlPhnm
+    + <br>* McshEngl.vowel-phoneme--of-Kora_lago!⇒KoraVowlPhnm,
+    + <br>* McshEngl.KoraVowlPhnm!=vowel-phoneme--of-Kora_lago,
+McshLag000043:512  KoraConsPhnm
+    + <br>* McshEngl.Korean-consonant-phoneme!⇒KoraConsPhnm,
+    + <br>* McshEngl.KoraConsPhnm!=Korean-consonant-phoneme,
+McshLag000043:529  KoraChar
+    + <br>* McshEngl.character-of-Kora_lago!⇒KoraChar,
+    + <br>* McshEngl.KoraChar!=character-of-Kora_lago,
+McshLag000043:1988  KoraWord
+    + <br>* McshEngl.Kora_lago-word!⇒KoraWord,
+    + <br>* McshEngl.KoraWord!=Kora_lago-word,
+McshLag000043:2030  KoraSylb
+    + <br>* McshEngl.syllable-of-Kora_lago!⇒KoraSylb,
+    + <br>* McshEngl.KoraSylb!=syllable-of-Kora_lago,
+McshLag000043:2460  KoraPron
+    + <br>* McshEngl.pronoun-of-Kora_lago!⇒KoraPron,
+    + <br>* McshEngl.KoraPron!=pronoun-of-Kora_lago,
+McshLag000043:2881  KoraConj
+    + <br>* McshEngl.conjunction-of-Kora_lago!⇒KoraConj,
+    + <br>* McshEngl.KoraConj!=conjunction-of-Kora_lago,
+McshLag000043:3101  KoraVerbArgu
+    + <br>* McshEngl.Kora_lago--verb-argument!⇒KoraVerbArgu,
+    + <br>* McshEngl.KoraVerbArgu!=Kora_lago--verb-argument,
+McshLag000043:3116  KoraSent
+    + <br>* McshEngl.sentence-of-Kora_lago!⇒KoraSent,
+    + <br>* McshEngl.KoraSent!=sentence-of-Kora_lago,
+McshLag000043:3130  KoraExpr
+    + <br>* McshEngl.Korean-basic-expression!⇒KoraExpr,
+    + <br>* McshEngl.KoraExpr!=Korean-basic-expression,
+McshLag000043:3331  KoraSect
+    + <br>* McshEngl.section-of-Kora_lago!⇒KoraSect,
+    + <br>* McshEngl.KoraSect!=section-of-Kora_lago,
+McshNtr000002:342  sciChem
+    + <br>* McshEngl.chemistry-science!⇒sciChem,
+    + <br>* McshEngl.sciChem!=chemistry-science,
+McshNtr000004:31  mtrlMol
+    + <br>* McshEngl.material-molecule!⇒mtrlMol,
+    + <br>* McshEngl.mtrlMol!=material-molecule,
+McshNtr000007:27  chmElry
+    + <br>* McshEngl.chemical.elementary!⇒chmElry,
+    + <br>* McshEngl.chmElry!=chemical.elementary,
+McshNtr000007:1054  chmElrAc89
+    + <br>* McshEngl.Actinium!⇒chmElrAc89,
+    + <br>* McshEngl.chmElrAc89!=Actinium,
+McshNtr000007:1093  chmElrAl13
+    + <br>* McshEngl.Aluminium!⇒chmElrAl13,
+    + <br>* McshEngl.chmElrAl13!=Aluminium,
+McshNtr000007:1130  chmElrAm95
+    + <br>* McshEngl.Americium!⇒chmElrAm95,
+    + <br>* McshEngl.chmElrAm95!=Americium,
+McshNtr000007:1166  chmElrSb51
+    + <br>* McshEngl.Antimony!⇒chmElrSb51,
+    + <br>* McshEngl.chmElrSb51!=Antimony,
+McshNtr000007:1202  chmElrAr18
+    + <br>* McshEngl.Argon!⇒chmElrAr18,
+    + <br>* McshEngl.chmElrAr18!=Argon,
+McshNtr000007:1238  chmElrAs33
+    + <br>* McshEngl.Arsenic!⇒chmElrAs33,
+    + <br>* McshEngl.chmElrAs33!=Arsenic,
+McshNtr000007:1274  chmElrAt85
+    + <br>* McshEngl.Astatine!⇒chmElrAt85,
+    + <br>* McshEngl.chmElrAt85!=Astatine,
+McshNtr000007:1326  chmElrBa56
+    + <br>* McshEngl.Barium!⇒chmElrBa56,
+    + <br>* McshEngl.chmElrBa56!=Barium,
+McshNtr000007:1362  chmElrBk97
+    + <br>* McshEngl.Berkelium!⇒chmElrBk97,
+    + <br>* McshEngl.chmElrBk97!=Berkelium,
+McshNtr000007:1398  chmElrBe4
+    + <br>* McshEngl.Beryllium!⇒chmElrBe4,
+    + <br>* McshEngl.chmElrBe4!=Beryllium,
+McshNtr000007:1434  chmElrBi83
+    + <br>* McshEngl.Bismuth!⇒chmElrBi83,
+    + <br>* McshEngl.chmElrBi83!=Bismuth,
+McshNtr000007:1470  chmElrBh107
+    + <br>* McshEngl.Bohrium!⇒chmElrBh107,
+    + <br>* McshEngl.chmElrBh107!=Bohrium,
+McshNtr000007:1541  chmElrBr35
+    + <br>* McshEngl.Bromine!⇒chmElrBr35,
+    + <br>* McshEngl.chmElrBr35!=Bromine,
+McshNtr000007:1577  chmElrCd48
+    + <br>* McshEngl.Cadmium!⇒chmElrCd48,
+    + <br>* McshEngl.chmElrCd48!=Cadmium,
+McshNtr000007:1613  chmElrCs55
+    + <br>* McshEngl.Caesium!⇒chmElrCs55,
+    + <br>* McshEngl.chmElrCs55!=Caesium,
+McshNtr000007:1677  chmElrCa20
+    + <br>* McshEngl.Calcium!⇒chmElrCa20,
+    + <br>* McshEngl.chmElrCa20!=Calcium,
+McshNtr000007:1715  chmElrCf98
+    + <br>* McshEngl.Californium!⇒chmElrCf98,
+    + <br>* McshEngl.chmElrCf98!=Californium,
+McshNtr000007:1797  chmElrCe58
+    + <br>* McshEngl.Cerium!⇒chmElrCe58,
+    + <br>* McshEngl.chmElrCe58!=Cerium,
+McshNtr000007:1833  chmElrCl17
+    + <br>* McshEngl.Chlorine!⇒chmElrCl17,
+    + <br>* McshEngl.chmElrCl17!=Chlorine,
+McshNtr000007:1869  chmElrCr24
+    + <br>* McshEngl.Chromium!⇒chmElrCr24,
+    + <br>* McshEngl.chmElrCr24!=Chromium,
+McshNtr000007:1905  chmElrCo27
+    + <br>* McshEngl.Cobalt!⇒chmElrCo27,
+    + <br>* McshEngl.chmElrCo27!=Cobalt,
+McshNtr000007:1941  chmElrCu29
+    + <br>* McshEngl.Copper!⇒chmElrCu29,
+    + <br>* McshEngl.chmElrCu29!=Copper,
+McshNtr000007:1990  chmElrCn112
+    + <br>* McshEngl.Copernicium!⇒chmElrCn112,
+    + <br>* McshEngl.chmElrCn112!=Copernicium,
+McshNtr000007:2026  chmElrCm96
+    + <br>* McshEngl.Curium!⇒chmElrCm96,
+    + <br>* McshEngl.chmElrCm96!=Curium,
+McshNtr000007:2062  chmElrDs110
+    + <br>* McshEngl.Darmstadtium!⇒chmElrDs110,
+    + <br>* McshEngl.chmElrDs110!=Darmstadtium,
+McshNtr000007:2098  chmElrDb105
+    + <br>* McshEngl.Dubnium!⇒chmElrDb105,
+    + <br>* McshEngl.chmElrDb105!=Dubnium,
+McshNtr000007:2134  chmElrDy66
+    + <br>* McshEngl.Dysprosium!⇒chmElrDy66,
+    + <br>* McshEngl.chmElrDy66!=Dysprosium,
+McshNtr000007:2170  chmElrEs99
+    + <br>* McshEngl.Einsteinium!⇒chmElrEs99,
+    + <br>* McshEngl.chmElrEs99!=Einsteinium,
+McshNtr000007:2206  chmElrEr68
+    + <br>* McshEngl.Erbium!⇒chmElrEr68,
+    + <br>* McshEngl.chmElrEr68!=Erbium,
+McshNtr000007:2242  chmElrEu63
+    + <br>* McshEngl.Europium!⇒chmElrEu63,
+    + <br>* McshEngl.chmElrEu63!=Europium,
+McshNtr000007:2278  chmElrFm100
+    + <br>* McshEngl.Fermium!⇒chmElrFm100,
+    + <br>* McshEngl.chmElrFm100!=Fermium,
+McshNtr000007:2349  chmElrFr87
+    + <br>* McshEngl.Francium!⇒chmElrFr87,
+    + <br>* McshEngl.chmElrFr87!=Francium,
+McshNtr000007:2406  chmElrGd64
+    + <br>* McshEngl.Gadolinium!⇒chmElrGd64,
+    + <br>* McshEngl.chmElrGd64!=Gadolinium,
+McshNtr000007:2442  chmElrGa31
+    + <br>* McshEngl.Gallium!⇒chmElrGa31,
+    + <br>* McshEngl.chmElrGa31!=Gallium,
+McshNtr000007:2478  chmElrGe32
+    + <br>* McshEngl.Germanium!⇒chmElrGe32,
+    + <br>* McshEngl.chmElrGe32!=Germanium,
+McshNtr000007:2516  chmElrAu79
+    + <br>* McshEngl.Gold!⇒chmElrAu79,
+    + <br>* McshEngl.chmElrAu79!=Gold,
+McshNtr000007:2595  chmElrHf72
+    + <br>* McshEngl.Hafnium!⇒chmElrHf72,
+    + <br>* McshEngl.chmElrHf72!=Hafnium,
+McshNtr000007:2631  chmElrHs108
+    + <br>* McshEngl.Hassium!⇒chmElrHs108,
+    + <br>* McshEngl.chmElrHs108!=Hassium,
+McshNtr000007:2669  chmElrHe2
+    + <br>* McshEngl.Helium!⇒chmElrHe2,
+    + <br>* McshEngl.chmElrHe2!=Helium,
+McshNtr000007:2723  chmElrHo67
+    + <br>* McshEngl.Holmium!⇒chmElrHo67,
+    + <br>* McshEngl.chmElrHo67!=Holmium,
+McshNtr000007:2858  chmElrIn49
+    + <br>* McshEngl.Indium!⇒chmElrIn49,
+    + <br>* McshEngl.chmElrIn49!=Indium,
+McshNtr000007:2929  chmElrIr77
+    + <br>* McshEngl.Iridium!⇒chmElrIr77,
+    + <br>* McshEngl.chmElrIr77!=Iridium,
+McshNtr000007:2965  chmElrFe26
+    + <br>* McshEngl.Iron!⇒chmElrFe26,
+    + <br>* McshEngl.chmElrFe26!=Iron,
+McshNtr000007:3001  chmElrKr36
+    + <br>* McshEngl.Krypton!⇒chmElrKr36,
+    + <br>* McshEngl.chmElrKr36!=Krypton,
+McshNtr000007:3037  chmElrLa57
+    + <br>* McshEngl.Lanthanum!⇒chmElrLa57,
+    + <br>* McshEngl.chmElrLa57!=Lanthanum,
+McshNtr000007:3073  chmElrLr103
+    + <br>* McshEngl.Lawrencium!⇒chmElrLr103,
+    + <br>* McshEngl.chmElrLr103!=Lawrencium,
+McshNtr000007:3160  chmElrLi3
+    + <br>* McshEngl.Lithium!⇒chmElrLi3,
+    + <br>* McshEngl.chmElrLi3!=Lithium,
+McshNtr000007:3196  chmElrLu71
+    + <br>* McshEngl.Lutetium!⇒chmElrLu71,
+    + <br>* McshEngl.chmElrLu71!=Lutetium,
+McshNtr000007:3232  chmElrMg12
+    + <br>* McshEngl.Magnesium!⇒chmElrMg12,
+    + <br>* McshEngl.chmElrMg12!=Magnesium,
+McshNtr000007:3304  chmElrMn25
+    + <br>* McshEngl.Manganese!⇒chmElrMn25,
+    + <br>* McshEngl.chmElrMn25!=Manganese,
+McshNtr000007:3340  chmElrMt109
+    + <br>* McshEngl.Meitnerium!⇒chmElrMt109,
+    + <br>* McshEngl.chmElrMt109!=Meitnerium,
+McshNtr000007:3376  chmElrMd101
+    + <br>* McshEngl.Mendelevium!⇒chmElrMd101,
+    + <br>* McshEngl.chmElrMd101!=Mendelevium,
+McshNtr000007:3412  chmElrHg80
+    + <br>* McshEngl.Mercury!⇒chmElrHg80,
+    + <br>* McshEngl.chmElrHg80!=Mercury,
+McshNtr000007:3448  chmElrMo42
+    + <br>* McshEngl.Molybdenum!⇒chmElrMo42,
+    + <br>* McshEngl.chmElrMo42!=Molybdenum,
+McshNtr000007:3484  chmElrNd60
+    + <br>* McshEngl.Neodymium!⇒chmElrNd60,
+    + <br>* McshEngl.chmElrNd60!=Neodymium,
+McshNtr000007:3520  chmElrNe10
+    + <br>* McshEngl.Neon!⇒chmElrNe10,
+    + <br>* McshEngl.chmElrNe10!=Neon,
+McshNtr000007:3556  chmElrNp93
+    + <br>* McshEngl.Neptunium!⇒chmElrNp93,
+    + <br>* McshEngl.chmElrNp93!=Neptunium,
+McshNtr000007:3592  chmElrNi28
+    + <br>* McshEngl.Nickel!⇒chmElrNi28,
+    + <br>* McshEngl.chmElrNi28!=Nickel,
+McshNtr000007:3628  chmElrNb41
+    + <br>* McshEngl.Niobium!⇒chmElrNb41,
+    + <br>* McshEngl.chmElrNb41!=Niobium,
+McshNtr000007:3709  chmElrNo102
+    + <br>* McshEngl.Nobelium!⇒chmElrNo102,
+    + <br>* McshEngl.chmElrNo102!=Nobelium,
+McshNtr000007:3745  chmElrOs76
+    + <br>* McshEngl.Osmium!⇒chmElrOs76,
+    + <br>* McshEngl.chmElrOs76!=Osmium,
+McshNtr000007:3888  chmElrPd46
+    + <br>* McshEngl.Palladium!⇒chmElrPd46,
+    + <br>* McshEngl.chmElrPd46!=Palladium,
+McshNtr000007:3975  chmElrPt78
+    + <br>* McshEngl.Platinum!⇒chmElrPt78,
+    + <br>* McshEngl.chmElrPt78!=Platinum,
+McshNtr000007:4011  chmElrPu94
+    + <br>* McshEngl.Plutonium!⇒chmElrPu94,
+    + <br>* McshEngl.chmElrPu94!=Plutonium,
+McshNtr000007:4047  chmElrPo84
+    + <br>* McshEngl.Polonium!⇒chmElrPo84,
+    + <br>* McshEngl.chmElrPo84!=Polonium,
+McshNtr000007:4148  chmElrPr59
+    + <br>* McshEngl.Praseodymium!⇒chmElrPr59,
+    + <br>* McshEngl.chmElrPr59!=Praseodymium,
+McshNtr000007:4184  chmElrPm61
+    + <br>* McshEngl.Promethium!⇒chmElrPm61,
+    + <br>* McshEngl.chmElrPm61!=Promethium,
+McshNtr000007:4220  chmElrPa91
+    + <br>* McshEngl.Protactinium!⇒chmElrPa91,
+    + <br>* McshEngl.chmElrPa91!=Protactinium,
+McshNtr000007:4256  chmElrRa88
+    + <br>* McshEngl.Radium!⇒chmElrRa88,
+    + <br>* McshEngl.chmElrRa88!=Radium,
+McshNtr000007:4310  chmElrRn86
+    + <br>* McshEngl.Radon!⇒chmElrRn86,
+    + <br>* McshEngl.chmElrRn86!=Radon,
+McshNtr000007:4346  chmElrRe75
+    + <br>* McshEngl.Rhenium!⇒chmElrRe75,
+    + <br>* McshEngl.chmElrRe75!=Rhenium,
+McshNtr000007:4382  chmElrRh45
+    + <br>* McshEngl.Rhodium!⇒chmElrRh45,
+    + <br>* McshEngl.chmElrRh45!=Rhodium,
+McshNtr000007:4418  chmElrRb37
+    + <br>* McshEngl.Rubidium!⇒chmElrRb37,
+    + <br>* McshEngl.chmElrRb37!=Rubidium,
+McshNtr000007:4454  chmElrRu44
+    + <br>* McshEngl.Ruthenium!⇒chmElrRu44,
+    + <br>* McshEngl.chmElrRu44!=Ruthenium,
+McshNtr000007:4490  chmElrRf104
+    + <br>* McshEngl.Rutherfordium!⇒chmElrRf104,
+    + <br>* McshEngl.chmElrRf104!=Rutherfordium,
+McshNtr000007:4526  chmElrSm62
+    + <br>* McshEngl.Samarium!⇒chmElrSm62,
+    + <br>* McshEngl.chmElrSm62!=Samarium,
+McshNtr000007:4562  chmElrSc21
+    + <br>* McshEngl.Scandium!⇒chmElrSc21,
+    + <br>* McshEngl.chmElrSc21!=Scandium,
+McshNtr000007:4598  chmElrSg106
+    + <br>* McshEngl.Seaborgium!⇒chmElrSg106,
+    + <br>* McshEngl.chmElrSg106!=Seaborgium,
+McshNtr000007:4634  chmElrSe34
+    + <br>* McshEngl.Selenium!⇒chmElrSe34,
+    + <br>* McshEngl.chmElrSe34!=Selenium,
+McshNtr000007:4670  chmElrSi14
+    + <br>* McshEngl.Silicon!⇒chmElrSi14,
+    + <br>* McshEngl.chmElrSi14!=Silicon,
+McshNtr000007:4706  chmElrAg47
+    + <br>* McshEngl.Silver!⇒chmElrAg47,
+    + <br>* McshEngl.chmElrAg47!=Silver,
+McshNtr000007:4742  chmElrNa11
+    + <br>* McshEngl.Sodium!⇒chmElrNa11,
+    + <br>* McshEngl.chmElrNa11!=Sodium,
+McshNtr000007:4778  chmElrSr38
+    + <br>* McshEngl.Strontium!⇒chmElrSr38,
+    + <br>* McshEngl.chmElrSr38!=Strontium,
+McshNtr000007:4849  chmElrTa73
+    + <br>* McshEngl.Tantalum!⇒chmElrTa73,
+    + <br>* McshEngl.chmElrTa73!=Tantalum,
+McshNtr000007:4885  chmElrTc43
+    + <br>* McshEngl.Technetium!⇒chmElrTc43,
+    + <br>* McshEngl.chmElrTc43!=Technetium,
+McshNtr000007:4921  chmElrTe52
+    + <br>* McshEngl.Tellurium!⇒chmElrTe52,
+    + <br>* McshEngl.chmElrTe52!=Tellurium,
+McshNtr000007:4957  chmElrTb65
+    + <br>* McshEngl.Terbium!⇒chmElrTb65,
+    + <br>* McshEngl.chmElrTb65!=Terbium,
+McshNtr000007:4993  chmElrTl81
+    + <br>* McshEngl.Thallium!⇒chmElrTl81,
+    + <br>* McshEngl.chmElrTl81!=Thallium,
+McshNtr000007:5029  chmElrTh90
+    + <br>* McshEngl.Thorium!⇒chmElrTh90,
+    + <br>* McshEngl.chmElrTh90!=Thorium,
+McshNtr000007:5065  chmElrTm69
+    + <br>* McshEngl.Thulium!⇒chmElrTm69,
+    + <br>* McshEngl.chmElrTm69!=Thulium,
+McshNtr000007:5101  chmElrSn50
+    + <br>* McshEngl.Tin!⇒chmElrSn50,
+    + <br>* McshEngl.chmElrSn50!=Tin,
+McshNtr000007:5137  chmElrTi22
+    + <br>* McshEngl.Titanium!⇒chmElrTi22,
+    + <br>* McshEngl.chmElrTi22!=Titanium,
+McshNtr000007:5573  chmElrXe54
+    + <br>* McshEngl.Xenon!⇒chmElrXe54,
+    + <br>* McshEngl.chmElrXe54!=Xenon,
+McshNtr000007:5609  chmElrYb70
+    + <br>* McshEngl.Ytterbium!⇒chmElrYb70,
+    + <br>* McshEngl.chmElrYb70!=Ytterbium,
+McshNtr000007:5680  chmElrZn30
+    + <br>* McshEngl.Zinc!⇒chmElrZn30,
+    + <br>* McshEngl.chmElrZn30!=Zinc,
+McshNtr000007:5716  chmElrZr40
+    + <br>* McshEngl.Zirconium!⇒chmElrZr40,
+    + <br>* McshEngl.chmElrZr40!=Zirconium,
+McshNtr000015:31  Earth
+    + <br>* McshEngl.planet-Earth!⇒Earth,
+    + <br>* McshEngl.Earth!=planet-Earth,
+McshNtr000015:363  ecosystem
+    + <br>* McshEngl.Earth-ecosystem!⇒ecosystem,
+    + <br>* McshEngl.ecosystem!=Earth-ecosystem,
+McshOgm000004:793  molLipid
+    + <br>* McshEngl.organism-lipid!⇒molLipid,
+    + <br>* McshEngl.molLipid!=organism-lipid,
+McshOgm000004:999  molCholesterol
+    + <br>* McshEngl.organism-cholesterol!⇒molCholesterol,
+    + <br>* McshEngl.molCholesterol!=organism-cholesterol,
+McshOgm000004:1454  molSterol
+    + <br>* McshEngl.organism-sterol!⇒molSterol,
+    + <br>* McshEngl.molSterol!=organism-sterol,
+McshOgm000005:35  SystMolsOgm
+    + <br>* McshEngl.organism-system-of-molecules!⇒SystMolsOgm,
+    + <br>* McshEngl.SystMolsOgm!=organism-system-of-molecules,
+McshOgm000005:1173  hormoneHumn
+    + <br>* McshEngl.human-hormone!⇒hormoneHumn, {2012-08-13},
+    + <br>* McshEngl.hormoneHumn!=human-hormone,
+McshOgm000005:3013  fluidBlood
+    + <br>* McshEngl.organism-blood!⇒fluidBlood,
+    + <br>* McshEngl.fluidBlood!=organism-blood,
+McshOgm000005:3034  bloodHmn
+    + <br>* McshEngl.human-blood!⇒bloodHmn,
+    + <br>* McshEngl.bloodHmn!=human-blood,
+McshOgm000006:1014  proteinHmn
+    + <br>* McshEngl.human-protein!⇒proteinHmn,
+    + <br>* McshEngl.proteinHmn!=human-protein,
+McshOgm000007:31  cellOgm
+    + <br>* McshEngl.cell-of-organism!⇒cellOgm, /sel/,
+    + <br>* McshEngl.cellOgm!=cell-of-organism,
+McshStn000002:27  sctnOgms
+    + <br>* McshEngl.socialitation-of-organisms!⇒sctnOgms, (from organization)
+    + <br>* McshEngl.sctnOgms!=socialitation-of-organisms,
+McshStn000002:388  DongOgzg
+    + <br>* McshEngl.organization-process!⇒DongOgzg,
+    + <br>* McshEngl.DongOgzg!=organization-process,
+McshStn000002:730  sltnMarriage
+    + <br>* McshEngl.marriage-socialitation!⇒sltnMarriage,
+    + <br>* McshEngl.sltnMarriage!=marriage-socialitation,
+McshStn000004:530  admnPolyocracy
+    + <br>* McshEngl.controlling-by-many!⇒admnPolyocracy,
+    + <br>* McshEngl.admnPolyocracy!=controlling-by-many,
+McshStn000004:1262  admnAlgo
+    + <br>* McshEngl.algorithmic-administration-of--human-socialitation!⇒admnAlgo,
+    + <br>* McshEngl.admnAlgo!=algorithmic-administration-of--human-socialitation,
+McshStn000004:1420  admnDigi
+    + <br>* McshEngl.digital-administration!⇒admnDigi,
+    + <br>* McshEngl.admnDigi!=digital-administration,
+McshStn000005:28  groupOgm
+    + <br>* McshEngl.group-of-organisms!⇒groupOgm,
+    + <br>* McshEngl.groupOgm!=group-of-organisms,
+McshStn000008:28  Ogzn
+    + <br>* McshEngl.human-organization!⇒Ogzn,
+    + <br>* McshEngl.Ogzn!=human-organization, {2023-12-03},
+McshStn000008:1532  Socogzn
+    + <br>* McshEngl.organization-of-society!⇒Socogzn,
+    + <br>* McshEngl.Socogzn!=organization-of-society,
+McshStn000009:137  Socnode
+    + <br>* McshEngl.node-of-society!⇒Socnode,
+    + <br>* McshEngl.Socnode!=node-of-society,
+McshStn000009:224  SocHuman
+    + <br>* McshEngl.individual-of-society!⇒SocHuman,
+    + <br>* McshEngl.SocHuman!=individual-of-society,
+McshStn000009:684  Socturist
+    + <br>* McshEngl.tourist-of-society!⇒Socturist,
+    + <br>* McshEngl.Socturist!=tourist-of-society,
+McshStn000009:1070  SocHumanAggt
+    + <br>* McshEngl.aggregate-human-of-society!⇒SocHumanAggt,
+    + <br>* McshEngl.SocHumanAggt!=aggregate-human-of-society,
+McshStn000009:2283  Socclimate
+    + <br>* McshEngl.climate-of-society!⇒Socclimate,
+    + <br>* McshEngl.Socclimate!=climate-of-society,
+McshStn000009:3409  Socexe
+    + <br>* McshEngl.executive-brance-of-society!⇒Socexe,
+    + <br>* McshEngl.Socexe!=executive-brance-of-society,
+McshStn000009:3496  Soclegi
+    + <br>* McshEngl.legislature-branch-of-society!⇒Soclegi,
+    + <br>* McshEngl.Soclegi!=legislature-branch-of-society,
+McshStn000009:3636  Soclgls
+    + <br>* McshEngl.legal-system-of-society!⇒Soclgls,
+    + <br>* McshEngl.Soclgls!=legal-system-of-society,
+McshStn000009:3783  Socjtcs
+    + <br>* McshEngl.justice-system-of-society!⇒Socjtcs,
+    + <br>* McshEngl.Socjtcs!=justice-system-of-society,
+McshStn000009:3911  Socpnls
+    + <br>* McshEngl.penal-system-of-society!⇒Socpnls,
+    + <br>* McshEngl.Socpnls!=penal-system-of-society,
+McshStn000009:4239  SocAdmneval
+    + <br>* McshEngl.evaluation-of-governance!⇒SocAdmneval,
+    + <br>* McshEngl.SocAdmneval!=evaluation-of-governance,
+McshStn000009:5131  servicePblcStop1
+    + <br>* McshEngl.one-stop-public-service!⇒servicePblcStop1,
+    + <br>* McshEngl.servicePblcStop1!=one-stop-public-service,
+McshStn000009:5152  servicePblcStop0
+    + <br>* McshEngl.one-stop-public-service!⇒servicePblcStop0,
+    + <br>* McshEngl.servicePblcStop0!=one-stop-public-service,
+McshStn000009:5341  Socpolicy
+    + <br>* McshEngl.policy-of-society!⇒Socpolicy,
+    + <br>* McshEngl.Socpolicy!=policy-of-society,
+McshStn000009:5894  SocWellBeing
+    + <br>* McshEngl.well-being-of-society!⇒SocWellBeing,
+    + <br>* McshEngl.SocWellBeing!=well-being-of-society,
+McshStn000009:5959  SocBadBeing
+    + <br>* McshEngl.bad-being-of-society!⇒SocBadBeing,
+    + <br>* McshEngl.SocBadBeing!=bad-being-of-society,
+McshStn000009:6477  esoc
+    + <br>* McshEngl.digital-part-of-society!⇒esoc,
+    + <br>* McshEngl.esoc!=digital-part-of-society,
+McshStn000009:6979  SocEvg
+    + <br>* McshEngl.evoluting-of-human-society!⇒SocEvg,
+    + <br>* McshEngl.SocEvg!=evoluting-of-human-society,
+McshStn000009:8175  SocGvcCentr
+    + <br>* McshEngl.centralized-governance-society!⇒SocGvcCentr,
+    + <br>* McshEngl.SocGvcCentr!=centralized-governance-society,
+McshStn000009:8254  SocGvcDcntr
+    + <br>* McshEngl.decentralized-governance-society!⇒SocGvcDcntr,
+    + <br>* McshEngl.SocGvcDcntr!=decentralized-governance-society,
+McshStn000009:8358  SocState
+    + <br>* McshEngl.state--society!⇒SocState,
+    + <br>* McshEngl.SocState!=state--society,
+McshStn000009:8410  gvcState
+    + <br>* McshEngl.state--governance-sys!⇒gvcState,
+    + <br>* McshEngl.gvcState!=state--governance-sys,
+McshStn000009:8515  SocStateOne
+    + <br>* McshEngl.unitary_state!⇒SocStateOne,
+    + <br>* McshEngl.SocStateOne!=unitary_state,
+McshStn000009:9630  SocCptlBefr
+    + <br>* McshEngl.pre-capitalist-society!⇒SocCptlBefr,
+    + <br>* McshEngl.SocCptlBefr!=pre-capitalist-society,
+McshStn000009:10467  SocAcp
+    + <br>* McshEngl.African-Caribbean-Pacific-society!⇒SocAcp,
+    + <br>* McshEngl.SocAcp!=African-Caribbean-Pacific-society,
+McshStn000009:10601  soc2
+    + <br>* McshEngl.2-letter-code-of-society!⇒soc2,
+    + <br>* McshEngl.soc2!=2-letter-code-of-society,
+McshStn000009:11115  soc3
+    + <br>* McshEngl.3-letter-code-of-society!⇒soc3,
+    + <br>* McshEngl.soc3!=3-letter-code-of-society,
+McshStn000009:12136  soc4
+    + <br>* McshEngl.4-letter-code-of-society!⇒soc4,
+    + <br>* McshEngl.soc4!=4-letter-code-of-society,
+McshStn000009:12277  SocThaa
+    + <br>* McshEngl.Thailand-society!⇒SocThaa,
+    + <br>* McshEngl.SocThaa!=Thailand-society,
+McshStn000010:27  satisfier
+    + <br>* McshEngl.human-satisfier!⇒satisfier,
+    + <br>* McshEngl.satisfier!=human-satisfier,
+McshStn000010:1752  IEC-CDD
+    + <br>* McshEngl.IEC-common-data-dictionary!⇒IEC-CDD,
+    + <br>* McshEngl.IEC-CDD!=IEC-common-data-dictionary,
+McshStn000011:29  Wrkr
+    + <br>* McshEngl.human-worker!⇒Wrkr,
+    + <br>* McshEngl.Wrkr!=human-worker,
+McshStn000011:479  DongWorking
+    + <br>* McshEngl.human-doing.working!⇒DongWorking,
+    + <br>* McshEngl.DongWorking!=human-doing.working,
+McshStn000011:1602  Chnaunemployment
+    + <br>* McshEngl.unemployment-in-China!⇒Chnaunemployment,
+    + <br>* McshEngl.Chnaunemployment!=unemployment-in-China,
+McshStn000012:149  Econprdgsys
+    + <br>* McshEngl.producing-system-of-economy!⇒Econprdgsys,
+    + <br>* McshEngl.Econprdgsys!=producing-system-of-economy,
+McshStn000012:204  Econproducer
+    + <br>* McshEngl.producer-human-of-economy!⇒Econproducer,
+    + <br>* McshEngl.Econproducer!=producer-human-of-economy,
+McshStn000012:256  PdcrIncome
+    + <br>* McshEngl.human-producer-income!⇒PdcrIncome,
+    + <br>* McshEngl.PdcrIncome!=human-producer-income,
+McshStn000012:481  Pdcrasset
+    + <br>* McshEngl.human-producer-asset!⇒Pdcrasset,
+    + <br>* McshEngl.Pdcrasset!=human-producer-asset,
+McshStn000012:501  Pdcrliability
+    + <br>* McshEngl.human-producer-liability!⇒Pdcrliability,
+    + <br>* McshEngl.Pdcrliability!=human-producer-liability,
+McshStn000012:670  Econcsmgsys
+    + <br>* McshEngl.consuming-system-of-economy!⇒Econcsmgsys,
+    + <br>* McshEngl.Econcsmgsys!=consuming-system-of-economy,
+McshStn000012:707  EconConsumer
+    + <br>* McshEngl.human-consumer-of-economy!⇒EconConsumer,
+    + <br>* McshEngl.EconConsumer!=human-consumer-of-economy,
+McshStn000012:806  humnRich
+    + <br>* McshEngl.human-consumer.rich!⇒humnRich,
+    + <br>* McshEngl.humnRich!=human-consumer.rich,
+McshStn000012:836  humnMillionaire
+    + <br>* McshEngl.human-consumer-millionaire!⇒humnMillionaire,
+    + <br>* McshEngl.humnMillionaire!=human-consumer-millionaire,
+McshStn000012:869  humnBillionaire
+    + <br>* McshEngl.human-consumer-billionaire!⇒humnBillionaire,
+    + <br>* McshEngl.humnBillionaire!=human-consumer-billionaire,
+McshStn000012:892  humnRichMiddle
+    + <br>* McshEngl.human-consumer.richMiddle!⇒humnRichMiddle,
+    + <br>* McshEngl.humnRichMiddle!=human-consumer.richMiddle,
+McshStn000012:917  humnRichNo
+    + <br>* McshEngl.human-consumer.richMiddle!⇒humnRichNo,
+    + <br>* McshEngl.humnRichNo!=human-consumer.richMiddle,
+McshStn000012:1214  SystAcct
+    + <br>* McshEngl.accounting-sys!⇒SystAcct,
+    + <br>* McshEngl.SystAcct!=accounting-sys,
+McshStn000012:1232  acctEcon
+    + <br>* McshEngl.accounting-sys-of-whole-economy!⇒acctEcon,
+    + <br>* McshEngl.acctEcon!=accounting-sys-of-whole-economy,
+McshStn000012:1280  Sna
+    + <br>* McshEngl.System-of-National-Accounts!⇒Sna,
+    + <br>* McshEngl.Sna!=System-of-National-Accounts,
+McshStn000012:1368  Sna2008
+    + <br>* McshEngl.system-of-national-accounts-2008!⇒Sna2008,
+    + <br>* McshEngl.Sna2008!=system-of-national-accounts-2008,
+McshStn000012:1517  Esa2010
+    + <br>* McshEngl.European-system-of-regioanal-and-national-accounts-2010!⇒Esa2010,
+    + <br>* McshEngl.Esa2010!=European-system-of-regioanal-and-national-accounts-2010,
+McshStn000012:1996  Econeval
+    + <br>* McshEngl.evaluation-of-economy!⇒Econeval,
+    + <br>* McshEngl.Econeval!=evaluation-of-economy,
+McshStn000012:2158  GdpPpp
+    + <br>* McshEngl.GDP-at-parity!⇒GdpPpp,
+    + <br>* McshEngl.GdpPpp!=GDP-at-parity,
+McshStn000012:2345  Sochdi
+    + <br>* McshEngl.human-development-index-of-society!⇒Sochdi,
+    + <br>* McshEngl.Sochdi!=human-development-index-of-society,
+McshStn000012:2370  Socgini
+    + <br>* McshEngl.Gini-index-of-economy!⇒Socgini,
+    + <br>* McshEngl.Socgini!=Gini-index-of-economy,
+McshStn000014:169  Hshdmbr
+    + <br>* McshEngl.member-of-household!⇒Hshdmbr,
+    + <br>* McshEngl.Hshdmbr!=member-of-household,
+McshStn000014:295  admnHshd
+    + <br>* McshEngl.admin-sys-of-household!⇒admnHshd,
+    + <br>* McshEngl.admnHshd!=admin-sys-of-household,
+McshStn000014:611  Hshddebt
+    + <br>* McshEngl.debt-of-household!⇒Hshddebt,
+    + <br>* McshEngl.Hshddebt!=debt-of-household,
+McshStn000015:455  Cmpnecon
+    + <br>* McshEngl.economic-system-of-company!⇒Cmpnecon,
+    + <br>* McshEngl.Cmpnecon!=economic-system-of-company,
+McshStn000015:1582  sector
+    + <br>* McshEngl.production-organization-sector!⇒sector,
+    + <br>* McshEngl.sector!=production-organization-sector,
+McshStn000015:1747  lawSector
+    + <br>* McshEngl.law-on-sector!⇒lawSector,
+    + <br>* McshEngl.lawSector!=law-on-sector,
+McshStn000015:2314  sector4
+    + <br>* McshEngl.forth-sector!⇒sector4,
+    + <br>* McshEngl.sector4!=forth-sector,
+McshStn000015:2333  sector5
+    + <br>* McshEngl.fifth-sector!⇒sector5,
+    + <br>* McshEngl.sector5!=fifth-sector,
+McshStn000015:2999  WrkrArmed
+    + <br>* McshEngl.armed-forces-worker!⇒WrkrArmed,
+    + <br>* McshEngl.WrkrArmed!=armed-forces-worker,
+McshStn000015:3181  UsazsectorArmed
+    + <br>* McshEngl.armed-sector-of-Usa!⇒UsazsectorArmed,
+    + <br>* McshEngl.UsazsectorArmed!=armed-sector-of-Usa,
+McshStn000015:3245  WrkrPoli
+    + <br>* McshEngl.police-worker!⇒WrkrPoli,
+    + <br>* McshEngl.WrkrPoli!=police-worker,
+McshStn000015:3499  WrkrEmperor
+    + <br>* McshEngl.emperor!⇒WrkrEmperor,
+    + <br>* McshEngl.WrkrEmperor!=emperor,
+McshStn000015:3608  bdgtPblcinput
+    + <br>* McshEngl.revenue-of-public-budget!⇒bdgtPblcinput,
+    + <br>* McshEngl.bdgtPblcinput!=revenue-of-public-budget,
+McshStn000015:4158  ogznPrivate
+    + <br>* McshEngl.private--production-organization!⇒ogznPrivate,
+    + <br>* McshEngl.ogznPrivate!=private--production-organization,
+McshStn000015:4553  ogznServiceBoth
+    + <br>* McshEngl.production-organization-service-and-serviceNo!⇒ogznServiceBoth,
+    + <br>* McshEngl.ogznServiceBoth!=production-organization-service-and-serviceNo,
+McshStn000015:5097  ogznCulture
+    + <br>* McshEngl.culture-production-organization!⇒ogznCulture,
+    + <br>* McshEngl.ogznCulture!=culture-production-organization,
+McshStn000015:5165  ogznAgro
+    + <br>* McshEngl.agricultural-organization!⇒ogznAgro,
+    + <br>* McshEngl.ogznAgro!=agricultural-organization,
+McshStn000015:5346  lawArmscontrol
+    + <br>* McshEngl.arms-control-treaty!⇒lawArmscontrol,
+    + <br>* McshEngl.lawArmscontrol!=arms-control-treaty,
+McshStn000016:373  ogznOecd
+    + <br>* McshEngl.Organization-for-economic-cooperation-and-development!⇒ogznOecd,
+    + <br>* McshEngl.ogznOecd!=Organization-for-economic-cooperation-and-development,
+McshStn000016:734  ogznBrics
+    + <br>* McshEngl.Brazil-Russia-India-China-SouthAfrica!⇒ogznBrics,
+    + <br>* McshEngl.ogznBrics!=Brazil-Russia-India-China-SouthAfrica,
+McshStn000017:294  oznW3c
+    + <br>* McshEngl..world-wide-web-consortium!⇒oznW3c,
+    + <br>* McshEngl.oznW3c!=.world-wide-web-consortium,
+McshStn000017:14890  stdBcp
+    + <br>* McshEngl.best-current-practice!⇒stdBcp,
+    + <br>* McshEngl.stdBcp!=best-current-practice,
+McshStn000018:82  Unms
+    + <br>* McshEngl.Un-member-state!⇒Unms,
+    + <br>* McshEngl.Unms!=Un-member-state,
+McshStn000018:551  Unecon
+    + <br>* McshEngl.economic-system-of-UN!⇒Unecon,
+    + <br>* McshEngl.Unecon!=economic-system-of-UN,
+McshStn000018:583  Unsrvc
+    + <br>* McshEngl.service-of-UN!⇒Unsrvc,
+    + <br>* McshEngl.Unsrvc!=service-of-UN,
+McshStn000018:612  Unbdgt
+    + <br>* McshEngl.budget-of-UN!⇒Unbdgt,
+    + <br>* McshEngl.Unbdgt!=budget-of-UN,
+McshStn000018:658  Unadmin
+    + <br>* McshEngl.admin-system-of-Un!⇒Unadmin,
+    + <br>* McshEngl.Unadmin!=admin-system-of-Un,
+McshStn000018:688  Unga
+    + <br>* McshEngl.General-assembly!⇒Unga,
+    + <br>* McshEngl.Unga!=General-assembly,
+McshStn000018:732  Unsc
+    + <br>* McshEngl.Security-Council--of-Un!⇒Unsc,
+    + <br>* McshEngl.Unsc!=Security-Council--of-Un,
+McshStn000018:803  Untc
+    + <br>* McshEngl.Trusteeship-council!⇒Untc,
+    + <br>* McshEngl.Untc!=Trusteeship-council,
+McshStn000018:2666  Un2030asd
+    + <br>* McshEngl.Un2030-Agenda-for-Sustainable-Development!⇒Un2030asd,
+    + <br>* McshEngl.Un2030asd!=Un2030-Agenda-for-Sustainable-Development,
+McshStn000019:119  Algoecon
+    + <br>* McshEngl.algorithmic-economy!⇒Algoecon,
+    + <br>* McshEngl.Algoecon!=algorithmic-economy, {2024-07-21}
+McshStn000019:260  AlgoSocAdmn
+    + <br>* McshEngl.algorithmic-administrattion-of-society!⇒AlgoSocAdmn,
+    + <br>* McshEngl.AlgoSocAdmn!=algorithmic-administrattion-of-society, {2025-02-11}
+McshStn000019:419  Autotech
+    + <br>* McshEngl.autonomous-technology!⇒Autotech,
+    + <br>* McshEngl.Autotech!=autonomous-technology,
+McshStn000019:577  Algocity
+    + <br>* McshEngl.algorithmic-city!⇒Algocity,
+    + <br>* McshEngl.Algocity!=algorithmic-city,
+McshStn000020:68  Euhmns
+    + <br>* McshEngl.node-of-humans-of-EU!⇒Euhmns,
+    + <br>* McshEngl.Euhmns!=node-of-humans-of-EU,
+McshStn000020:516  Euzz_lago
+    + <br>* McshEngl.language-of-EU!⇒Euzz_lago,
+    + <br>* McshEngl.Euzz_lago!=language-of-EU,
+McshStn000020:744  Euozn
+    + <br>* McshEngl.organization-of-Eu!⇒Euozn,
+    + <br>* McshEngl.Euozn!=organization-of-Eu,
+McshStn000020:797  EuzzEcon
+    + <br>* McshEngl.economy-of-Eu!⇒EuzzEcon,
+    + <br>* McshEngl.EuzzEcon!=economy-of-Eu,
+McshStn000020:999  EussctrHhd
+    + <br>* McshEngl.EU-household-sector!⇒EussctrHhd,
+    + <br>* McshEngl.EussctrHhd!=EU-household-sector,
+McshStn000020:1016  Eushousehold
+    + <br>* McshEngl.EU-household!⇒Eushousehold,
+    + <br>* McshEngl.Eushousehold!=EU-household,
+McshStn000020:1059  Euzzconsumer
+    + <br>* McshEngl.consumer-of-EU!⇒Euzzconsumer,
+    + <br>* McshEngl.Euzzconsumer!=consumer-of-EU,
+McshStn000020:1096  EussctrRat
+    + <br>* McshEngl.EU-research-and-tech-sector!⇒EussctrRat,
+    + <br>* McshEngl.EussctrRat!=EU-research-and-tech-sector,
+McshStn000020:1377  EussctrHealth
+    + <br>* McshEngl.EU-health-sector!⇒EussctrHealth,
+    + <br>* McshEngl.EussctrHealth!=EU-health-sector,
+McshStn000020:1397  Euzzworker
+    + <br>* McshEngl.worker-of-EU!⇒Euzzworker,
+    + <br>* McshEngl.Euzzworker!=worker-of-EU,
+McshStn000020:1687  EuzzAdmn
+    + <br>* McshEngl.admin-system-of-Eu!⇒EuzzAdmn,
+    + <br>* McshEngl.EuzzAdmn!=admin-system-of-Eu,
+McshStn000020:1724  Euexe
+    + <br>* McshEngl.executive-branch-of-Eu!⇒Euexe,
+    + <br>* McshEngl.Euexe!=executive-branch-of-Eu,
+McshStn000020:1742  EuoCouncil
+    + <br>* McshEngl.European-council!⇒EuoCouncil,
+    + <br>* McshEngl.EuoCouncil!=European-council,
+McshStn000020:1789  EuoMin
+    + <br>* McshEngl.Council-of-ministers!⇒EuoMin,
+    + <br>* McshEngl.EuoMin!=Council-of-ministers,
+McshStn000020:2294  EuwCompresident
+    + <br>* McshEngl.Eu-Commission-president!⇒EuwCompresident,
+    + <br>* McshEngl.EuwCompresident!=Eu-Commission-president,
+McshStn000020:2328  EuwHrfs
+    + <br>* McshEngl.High-representative-for-foreign-affrairs-and-security!⇒EuwHrfs,
+    + <br>* McshEngl.EuwHrfs!=High-representative-for-foreign-affrairs-and-security,
+McshStn000020:2368  EuwComvpresident
+    + <br>* McshEngl.Eu-Commission-vice-president!⇒EuwComvpresident,
+    + <br>* McshEngl.EuwComvpresident!=Eu-Commission-vice-president,
+McshStn000020:2481  EuoDgCom
+    + <br>* McshEngl.Commission-Directorate-general!⇒EuoDgCom,
+    + <br>* McshEngl.EuoDgCom!=Commission-Directorate-general,
+McshStn000020:3463  EuoErc
+    + <br>* McshEngl.European-Research-Council!⇒EuoErc,
+    + <br>* McshEngl.EuoErc!=European-Research-Council,
+McshStn000020:3590  EuoErcea
+    + <br>* McshEngl.European-Research-Council-Executive-Agency!⇒EuoErcea,
+    + <br>* McshEngl.EuoErcea!=European-Research-Council-Executive-Agency,
+McshStn000020:3657  EuoEpso
+    + <br>* McshEngl.European-personnel-selection-office!⇒EuoEpso,
+    + <br>* McshEngl.EuoEpso!=European-personnel-selection-office,
+McshStn000020:4035  Euogvc
+    + <br>* McshEngl.governance-organization-of-Eu!⇒Euogvc,
+    + <br>* McshEngl.Euogvc!=governance-organization-of-Eu, {2020-12-03},
+McshStn000020:4309  EuoAdc
+    + <br>* McshEngl.decentralized-agency-of-Eu!⇒EuoAdc,
+    + <br>* McshEngl.EuoAdc!=decentralized-agency-of-Eu,
+McshStn000020:4419  EuoEsc
+    + <br>* McshEngl.Economic-and-social-committee!⇒EuoEsc,
+    + <br>* McshEngl.EuoEsc!=Economic-and-social-committee,
+McshStn000020:4438  EuoCtr
+    + <br>* McshEngl.Committee-of-the-Regions-of-Eu!⇒EuoCtr,
+    + <br>* McshEngl.EuoCtr!=Committee-of-the-Regions-of-Eu,
+McshStn000020:4552  EuoIbk
+    + <br>* McshEngl.European-Investment-Bank!⇒EuoIbk,
+    + <br>* McshEngl.EuoIbk!=European-Investment-Bank,
+McshStn000020:4580  EuoEas
+    + <br>* McshEngl.European-external-action-service!⇒EuoEas,
+    + <br>* McshEngl.EuoEas!=European-external-action-service,
+McshStn000020:4631  EuoDgBudg
+    + <br>* McshEngl.Directorate-general-budget!⇒EuoDgBudg,
+    + <br>* McshEngl.EuoDgBudg!=Directorate-general-budget,
+McshStn000020:15722  Euzzegvc
+    + <br>* McshEngl.digital-part-of-Eu-admin!⇒Euzzegvc,
+    + <br>* McshEngl.Euzzegvc!=digital-part-of-Eu-admin,
+McshStn000020:15742  EuDep
+    + <br>* McshEngl.Digital-Europe-programme!⇒EuDep,
+    + <br>* McshEngl.EuDep!=Digital-Europe-programme,
+McshStn000020:15771  EuCef
+    + <br>* McshEngl.Connecting-Europe-facility-programme!⇒EuCef,
+    + <br>* McshEngl.EuCef!=Connecting-Europe-facility-programme,
+McshStn000020:15951  EulEgvc
+    + <br>* McshEngl.eGovernance-Eulaw!⇒EulEgvc,
+    + <br>* McshEngl.EulEgvc!=eGovernance-Eulaw,
+McshStn000020:16950  Euzzwellbeing
+    + <br>* McshEngl.well-being--of-Eu!⇒Euzzwellbeing,
+    + <br>* McshEngl.Euzzwellbeing!=well-being--of-Eu,
+McshStn000020:16967  Euzzbadbeing
+    + <br>* McshEngl.bad-being-of-Eu!⇒Euzzbadbeing,
+    + <br>* McshEngl.Euzzbadbeing!=bad-being-of-Eu,
+McshStn000020:17031  Euzzesoc
+    + <br>* McshEngl.digital-part-of-Eu!⇒Euzzesoc,
+    + <br>* McshEngl.Euzzesoc!=digital-part-of-Eu,
+McshStn000020:17136  oznEea
+    + <br>* McshEngl.European-economic-area!⇒oznEea,
+    + <br>* McshEngl.oznEea!=European-economic-area,
+McshStn000020:17201  EuoPbo
+    + <br>* McshEngl.Publications-Office-of-Eu!⇒EuoPbo,
+    + <br>* McshEngl.EuoPbo!=Publications-Office-of-Eu,
+McshStn000020:17235  europaeu
+    + <br>* McshEngl.https://european-union.europa.eu/!⇒europaeu,
+    + <br>* McshEngl.europaeu!=https://european-union.europa.eu/,
+McshStn000020:17278  Euvoc
+    + <br>* McshEngl.Eu-vocabulary!⇒Euvoc,
+    + <br>* McshEngl.Euvoc!=Eu-vocabulary,
+McshStn000021:115  Inlmbr
+    + <br>* McshEngl.international-human-member!⇒Inlmbr,
+    + <br>* McshEngl.Inlmbr!=international-human-member,
+McshStn000026:358  sectorPblcSrvc
+    + <br>* McshEngl.admin-service-sector!⇒sectorPblcSrvc,
+    + <br>* McshEngl.sectorPblcSrvc!=admin-service-sector,
+McshStn000026:790  sectorTrnsp
+    + <br>* McshEngl.transportation-service-sector!⇒sectorTrnsp,
+    + <br>* McshEngl.sectorTrnsp!=transportation-service-sector,
+McshStn000028:335  Finpaysys
+    + <br>* McshEngl.payment-system!⇒Finpaysys,
+    + <br>* McshEngl.Finpaysys!=payment-system,
+McshStn000028:356  FinpaysysE
+    + <br>* McshEngl.electronic-payment-system!⇒FinpaysysE,
+    + <br>* McshEngl.FinpaysysE!=electronic-payment-system,
+McshStn000030:109  Grcaecon
+    + <br>* McshEngl.node-of-satisfiers--of-Greece!⇒Grcaecon,
+    + <br>* McshEngl.Grcaecon!=node-of-satisfiers--of-Greece,
+McshStn000030:173  Grcawrkr
+    + <br>* McshEngl.worker-of-Greece!⇒Grcawrkr,
+    + <br>* McshEngl.Grcawrkr!=worker-of-Greece,
+McshStn000030:187  GrcasectorPublic
+    + <br>* McshEngl.public-sector-of-Greece!⇒GrcasectorPublic,
+    + <br>* McshEngl.GrcasectorPublic!=public-sector-of-Greece,
+McshStn000030:236  Grcapublicdebt
+    + <br>* McshEngl.ublic-debt-of-Greece!⇒Grcapublicdebt,
+    + <br>* McshEngl.Grcapublicdebt!=ublic-debt-of-Greece,
+McshStn000030:251  GrcasectorPrivate
+    + <br>* McshEngl.private-sector-of-Greece!⇒GrcasectorPrivate,
+    + <br>* McshEngl.GrcasectorPrivate!=private-sector-of-Greece,
+McshStn000030:360  GrcaAdmn
+    + <br>* McshEngl.governance-of-Greece!⇒GrcaAdmn,
+    + <br>* McshEngl.GrcaAdmn!=governance-of-Greece,
+McshStn000030:419  GrcaAdmn'governance-organization
+    + <br>* McshEngl.GrcaogznGovc!⇒GrcaAdmn'governance-organization,
+    + <br>* McshEngl.GrcaAdmn'governance-organization!=GrcaogznGovc,
+McshStn000030:452  govgr
+    + <br>* McshEngl.govgr!=https://www.gov.gr!=Ιελκ,
+McshStn000030:589  IAPR
+    + <br>* McshEngl.Independent-Authority-for-Public-Revenue!⇒IAPR,
+    + <br>* McshEngl.IAPR!=Independent-Authority-for-Public-Revenue,
+McshStn000030:668  Grcato
+    + <br>* McshEngl.Greek-tax-office!⇒Grcato,
+    + <br>* McshEngl.Grcato!=Greek-tax-office,
+McshStn000030:753  Grcaogzn
+    + <br>* McshEngl.organization-of-Greece!⇒Grcaogzn,
+    + <br>* McshEngl.Grcaogzn!=organization-of-Greece,
+McshStn000031:49  SocChna
+    + <br>* McshEngl.People's-Republic-of-China-{1949..}!⇒SocChna,
+    + <br>* McshEngl.SocChna!=People's-Republic-of-China-{1949..},
+McshStn000031:200  ChnaTimeZone
+    + <br>* McshEngl.time-zone-of-PRC!⇒ChnaTimeZone,
+    + <br>* McshEngl.ChnaTimeZone!=time-zone-of-PRC,
+McshStn000031:1519  Chnappln
+    + <br>* McshEngl.population-of-China!⇒Chnappln,
+    + <br>* McshEngl.Chnappln!=population-of-China,
+McshStn000031:1581  ChnaCulture
+    + <br>* McshEngl.SocChna-culture!⇒ChnaCulture,
+    + <br>* McshEngl.ChnaCulture!=SocChna-culture,
+McshStn000031:1794  Chnaworldview
+    + <br>* McshEngl.SocChna-worldview!⇒Chnaworldview,
+    + <br>* McshEngl.Chnaworldview!=SocChna-worldview,
+McshStn000031:1940  Chnafestival
+    + <br>* McshEngl.festival-of-PRC!⇒Chnafestival,
+    + <br>* McshEngl.Chnafestival!=festival-of-PRC,
+McshStn000031:2379  ChnaPlace
+    + <br>* McshEngl.place-of-SocChna!⇒ChnaPlace,
+    + <br>* McshEngl.ChnaPlace!=place-of-SocChna,
+McshStn000031:2424  ChnaRegion
+    + <br>* McshEngl.SocChna-region!⇒ChnaRegion,
+    + <br>* McshEngl.ChnaRegion!=SocChna-region,
+McshStn000031:2788  ChnaWorldHeritage
+    + <br>* McshEngl.world-heritage-site-of-SocChna!⇒ChnaWorldHeritage,
+    + <br>* McshEngl.ChnaWorldHeritage!=world-heritage-site-of-SocChna,
+McshStn000031:2837  Chna_econ
+    + <br>* McshEngl.economy-of-SocChna!⇒Chna_econ,
+    + <br>* McshEngl.Chna_econ!=economy-of-SocChna,
+McshStn000031:2866  ChnaRmb
+    + <br>* McshEngl.currency-of-People's-Republic-of-China!⇒ChnaRmb,
+    + <br>* McshEngl.ChnaRmb!=currency-of-People's-Republic-of-China,
+McshStn000031:3048  NDRC
+    + <br>* McshEngl.National-Development-and-Reform-Commission--of-Chna-econ!⇒NDRC,
+    + <br>* McshEngl.NDRC!=National-Development-and-Reform-Commission--of-Chna-econ,
+McshStn000031:3078  Chnasic
+    + <br>* McshEngl.state-information-center-of-PRC!⇒Chnasic,
+    + <br>* McshEngl.Chnasic!=state-information-center-of-PRC,
+McshStn000031:3110  Chnaein
+    + <br>* McshEngl.China-Economic-Information-Network!⇒Chnaein,
+    + <br>* McshEngl.Chnaein!=China-Economic-Information-Network,
+McshStn000031:3132  ChnasectorEcon
+    + <br>* McshEngl.economic-sector-of-PRC!⇒ChnasectorEcon,
+    + <br>* McshEngl.ChnasectorEcon!=economic-sector-of-PRC,
+McshStn000031:3148  Chnawealth
+    + <br>* McshEngl.wealth-of-economy-of-PRC!⇒Chnawealth,
+    + <br>* McshEngl.Chnawealth!=wealth-of-economy-of-PRC,
+McshStn000031:3177  Chnacmpn
+    + <br>* McshEngl.Chinese-company!⇒Chnacmpn,
+    + <br>* McshEngl.Chnacmpn!=Chinese-company,
+McshStn000031:3291  Chnasoe
+    + <br>* McshEngl.PRC-state-owned-enterprise!⇒Chnasoe,
+    + <br>* McshEngl.Chnasoe!=PRC-state-owned-enterprise,
+McshStn000031:3431  Chnawrkr
+    + <br>* McshEngl.Chinese-worker!⇒Chnawrkr,
+    + <br>* McshEngl.Chnawrkr!=Chinese-worker,
+McshStn000031:3513  lawChnaWrkr
+    + <br>* McshEngl.law-on-Chnawrkr!⇒lawChnaWrkr,
+    + <br>* McshEngl.lawChnaWrkr!=law-on-Chnawrkr,
+McshStn000031:3565  ChnaWrkrAggt
+    + <br>* McshEngl.labor-force-of-China!⇒ChnaWrkrAggt,
+    + <br>* McshEngl.ChnaWrkrAggt!=labor-force-of-China,
+McshStn000031:3607  ChnaWrkrNo
+    + <br>* McshEngl.workerNo-of-SocChna!⇒ChnaWrkrNo,
+    + <br>* McshEngl.ChnaWrkrNo!=workerNo-of-SocChna,
+McshStn000031:3686  ChnasectorScitech
+    + <br>* McshEngl.science-and-technology-sector-of-PRC!⇒ChnasectorScitech,
+    + <br>* McshEngl.ChnasectorScitech!=science-and-technology-sector-of-PRC,
+McshStn000031:3794  ChnasectorICT
+    + <br>* McshEngl.ICT-sector-of-SocChna!⇒ChnasectorICT,
+    + <br>* McshEngl.ChnasectorICT!=ICT-sector-of-SocChna,
+McshStn000031:3810  ChnaministryIIT
+    + <br>* McshEngl.Ministry-of-Industry-and-Information-Technology-of-SocChna!⇒ChnaministryIIT,
+    + <br>* McshEngl.ChnaministryIIT!=Ministry-of-Industry-and-Information-Technology-of-SocChna,
+McshStn000031:3915  Chnainternet
+    + <br>* McshEngl.internet-of-SocChna!⇒Chnainternet,
+    + <br>* McshEngl.Chnainternet!=internet-of-SocChna,
+McshStn000031:4058  ChnasectorHealth
+    + <br>* McshEngl.sectorHealth-of-SocChna!⇒ChnasectorHealth,
+    + <br>* McshEngl.ChnasectorHealth!=sectorHealth-of-SocChna,
+McshStn000031:4118  ChnasectorEnergy
+    + <br>* McshEngl.sectorEnergy-of-SocChna!⇒ChnasectorEnergy,
+    + <br>* McshEngl.ChnasectorEnergy!=sectorEnergy-of-SocChna,
+McshStn000031:4227  ChnasectorTrnsp
+    + <br>* McshEngl.sectorTransportation-of-SocChna!⇒ChnasectorTrnsp,
+    + <br>* McshEngl.ChnasectorTrnsp!=sectorTransportation-of-SocChna,
+McshStn000031:4668  Chna_train'hard|soft-sleeper
+    + <br>* McshEngl.硬卧|软卧!⇒Chna_train'hard|soft-sleeper,
+    + <br>* McshEngl.Chna_train'hard|soft-sleeper!=硬卧|软卧,
+McshStn000031:4902  Chnahshd
+    + <br>* McshEngl.Chinese-household!⇒Chnahshd,
+    + <br>* McshEngl.Chnahshd!=Chinese-household,
+McshStn000031:5009  Chnaconsumer
+    + <br>* McshEngl.consumer-of-PRC!⇒Chnaconsumer,
+    + <br>* McshEngl.Chnaconsumer!=consumer-of-PRC,
+McshStn000031:5213  Chnapublicdebt
+    + <br>* McshEngl.public-debt-of-China!⇒Chnapublicdebt,
+    + <br>* McshEngl.Chnapublicdebt!=public-debt-of-China,
+McshStn000031:5231  ChnasectorArmed
+    + <br>* McshEngl.sectorArmed-of-SocChna!⇒ChnasectorArmed,
+    + <br>* McshEngl.ChnasectorArmed!=sectorArmed-of-SocChna,
+McshStn000031:5277  Chnapla
+    + <br>* McshEngl.People's-Liberation-Army-of-SocChna!⇒Chnapla,
+    + <br>* McshEngl.Chnapla!=People's-Liberation-Army-of-SocChna,
+McshStn000031:5317  ChnasectorPolice
+    + <br>* McshEngl.sectorPolice-of-SocChna!⇒ChnasectorPolice,
+    + <br>* McshEngl.ChnasectorPolice!=sectorPolice-of-SocChna,
+McshStn000031:5346  ChnasectorPrivate
+    + <br>* McshEngl.public-sector-of-China!⇒ChnasectorPrivate,
+    + <br>* McshEngl.ChnasectorPrivate!=public-sector-of-China,
+McshStn000031:5566  Chnabank
+    + <br>* McshEngl.bank-of-PRC!⇒Chnabank,
+    + <br>* McshEngl.Chnabank!=bank-of-PRC,
+McshStn000031:5647  Chnasez
+    + <br>* McshEngl.special-economic-zone-of-Chna-econ!⇒Chnasez,
+    + <br>* McshEngl.Chnasez!=special-economic-zone-of-Chna-econ,
+McshStn000031:5813  Chnaplanning
+    + <br>* McshEngl.planning-in-SocChna!⇒Chnaplanning,
+    + <br>* McshEngl.Chnaplanning!=planning-in-SocChna,
+McshStn000031:6971  Chnacpcstn
+    + <br>* McshEngl.Chinese-Communist-Part-Constitution!⇒Chnacpcstn,
+    + <br>* McshEngl.Chnacpcstn!=Chinese-Communist-Part-Constitution,
+McshStn000031:7875  Chnacppsc
+    + <br>* McshEngl.Politburo-Standing-Committee-of-China!⇒Chnacppsc,
+    + <br>* McshEngl.Chnacppsc!=Politburo-Standing-Committee-of-China,
+McshStn000031:7897  Chnacpwf
+    + <br>* McshEngl.united-front-of-SocChna!⇒Chnacpwf,
+    + <br>* McshEngl.Chnacpwf!=united-front-of-SocChna,
+McshStn000031:7932  CPPCC
+    + <br>* McshEngl.Chinese-People's-Political-Consultative-Conference!⇒CPPCC,
+    + <br>* McshEngl.CPPCC!=Chinese-People's-Political-Consultative-Conference,
+McshStn000031:8195  Chnaadmnsc
+    + <br>* McshEngl.State-Council-of-China!⇒Chnaadmnsc,
+    + <br>* McshEngl.Chnaadmnsc!=State-Council-of-China,
+McshStn000031:8273  Chnaadmnncs
+    + <br>* McshEngl.National-Commission-of-Supervision!⇒Chnaadmnncs,
+    + <br>* McshEngl.Chnaadmnncs!=National-Commission-of-Supervision,
+McshStn000031:8466  ChnaLaw
+    + <br>* McshEngl.law-of-China!⇒ChnaLaw,
+    + <br>* McshEngl.ChnaLaw!=law-of-China,
+McshStn000031:10558  lawChnaCivil
+    + <br>* McshEngl.civil-code-of-SocChna!⇒lawChnaCivil,
+    + <br>* McshEngl.lawChnaCivil!=civil-code-of-SocChna,
+McshStn000031:10785  Chnajtcs
+    + <br>* McshEngl.justice-system-of-China!⇒Chnajtcs,
+    + <br>* McshEngl.Chnajtcs!=justice-system-of-China,
+McshStn000031:10919  ChnaAdmnDiv1
+    + <br>* McshEngl.provincial-level-admin-div-of-China!⇒ChnaAdmnDiv1,
+    + <br>* McshEngl.ChnaAdmnDiv1!=provincial-level-admin-div-of-China,
+McshStn000031:11857  ChnaAdmnDiv2
+    + <br>* McshEngl.prefecture-level-admin-div-of-China!⇒ChnaAdmnDiv2,
+    + <br>* McshEngl.ChnaAdmnDiv2!=prefecture-level-admin-div-of-China,
+McshStn000031:11881  ChnaAdmnDiv3
+    + <br>* McshEngl.count-level-admin-div-of-China!⇒ChnaAdmnDiv3,
+    + <br>* McshEngl.ChnaAdmnDiv3!=count-level-admin-div-of-China,
+McshStn000031:11903  ChnaAdmnDiv4
+    + <br>* McshEngl.township-level-admin-div-of-China!⇒ChnaAdmnDiv4,
+    + <br>* McshEngl.ChnaAdmnDiv4!=township-level-admin-div-of-China,
+McshStn000031:12678  Chnagoal
+    + <br>* McshEngl.goal-of-PRC!⇒Chnagoal,
+    + <br>* McshEngl.Chnagoal!=goal-of-PRC,
+McshStn000032:204  UsazsectorPblc
+    + <br>* McshEngl.public-sector!⇒UsazsectorPblc,
+    + <br>* McshEngl.UsazsectorPblc!=public-sector,
+McshStn000032:289  Usazfins
+    + <br>* McshEngl.financial-system-of-Usa!⇒Usazfins,
+    + <br>* McshEngl.Usazfins!=financial-system-of-Usa,
+McshStn000032:355  Usazlgls
+    + <br>* McshEngl.legal-system!⇒Usazlgls,
+    + <br>* McshEngl.Usazlgls!=legal-system,
+McshStn000033:97  Turkhmnview
+    + <br>* McshEngl.human-view-of-SocTurk!⇒Turkhmnview,
+    + <br>* McshEngl.Turkhmnview!=human-view-of-SocTurk,
+McshStn000033:271  Turkecon
+    + <br>* McshEngl.economy-view-of-SocTurk!⇒Turkecon,
+    + <br>* McshEngl.Turkecon!=economy-view-of-SocTurk,
+McshStn000033:352  Turkadmn
+    + <br>* McshEngl.admin-system-of-SocTurk!⇒Turkadmn,
+    + <br>* McshEngl.Turkadmn!=admin-system-of-SocTurk,
+McshStn000033:390  Turkeval
+    + <br>* McshEngl.evaluation-of-SocTurk!⇒Turkeval,
+    + <br>* McshEngl.Turkeval!=evaluation-of-SocTurk,
+McshStn000034:340  VnmaUnit
+    + <br>* McshEngl.unit-of-logoVnma!⇒VnmaUnit,
+    + <br>* McshEngl.VnmaUnit!=unit-of-logoVnma,
+McshStn000034:704  VnmaVowlPhnm
+    + <br>* McshEngl.Vietnamese-vowel-phoneme!⇒VnmaVowlPhnm,
+    + <br>* McshEngl.VnmaVowlPhnm!=Vietnamese-vowel-phoneme,
+McshStn000034:1078  VnmaConsPhnm
+    + <br>* McshEngl.Vietnamese-consonant-phoneme!⇒VnmaConsPhnm,
+    + <br>* McshEngl.VnmaConsPhnm!=Vietnamese-consonant-phoneme,
+McshStn000034:2466  VnmaSylb
+    + <br>* McshEngl.syllable-of-Vnma_lago!⇒VnmaSylb,
+    + <br>* McshEngl.VnmaSylb!=syllable-of-Vnma_lago,
+McshStn000034:2667  VnmaTone
+    + <br>* McshEngl.tone-of-Vientnamese!⇒VnmaTone,
+    + <br>* McshEngl.VnmaTone!=tone-of-Vientnamese,
+McshStn000034:2983  VnmaAdje
+    + <br>* McshEngl.Vietnamese-adjective!⇒VnmaAdje,
+    + <br>* McshEngl.VnmaAdje!=Vietnamese-adjective,
+McshStn000034:3107  VnmaPron
+    + <br>* McshEngl.Vietnamese-pronoun!⇒VnmaPron,
+    + <br>* McshEngl.VnmaPron!=Vietnamese-pronoun,
+McshStn000034:3198  Vnmaverb
+    + <br>* McshEngl.Vnmaverb!=,
+McshStn000034:3280  VnmaConj
+    + <br>* McshEngl.Vietnamese-conjunction!⇒VnmaConj,
+    + <br>* McshEngl.VnmaConj!=Vietnamese-conjunction,
+McshStn000034:3383  VnmaPrep
+    + <br>* McshEngl.Vietnamese-preposition!⇒VnmaPrep,
+    + <br>* McshEngl.VnmaPrep!=Vietnamese-preposition,
+McshStn000034:3588  VnmaSent
+    + <br>* McshEngl.Vietnamese-sentence!⇒VnmaSent,
+    + <br>* McshEngl.VnmaSent!=Vietnamese-sentence,
+McshStn000034:3685  lagoVnmn
+    + <br>* McshEngl.northern-Vietnamese!⇒lagoVnmn,
+    + <br>* McshEngl.lagoVnmn!=northern-Vietnamese,
+McshStn000034:3752  lagoVnmc
+    + <br>* McshEngl.central-Vietnamese-dialect!⇒lagoVnmc,
+    + <br>* McshEngl.lagoVnmc!=central-Vietnamese-dialect,
+McshStn000034:3808  lagoVnms
+    + <br>* McshEngl.southern-Vietnamese-dialect!⇒lagoVnms,
+    + <br>* McshEngl.lagoVnms!=southern-Vietnamese-dialect,
+McshStn000034:3866  VtnmEcon
+    + <br>* McshEngl.economy-of-Vietnam!⇒VtnmEcon,
+    + <br>* McshEngl.VtnmEcon!=economy-of-Vietnam,
+McshStn000035:213  lagoItln
+    + <br>* McshEngl.Italian-language!⇒lagoItln,
+    + <br>* McshEngl.lagoItln!=Italian-language,
+McshStn000035:304  ItlnUnit
+    + <br>* McshEngl.unit-of-logoItln!⇒ItlnUnit,
+    + <br>* McshEngl.ItlnUnit!=unit-of-logoItln,
+McshStn000035:535  ItlnVowlPhnm
+    + <br>* McshEngl.Italian-vowel-phoneme!⇒ItlnVowlPhnm,
+    + <br>* McshEngl.ItlnVowlPhnm!=Italian-vowel-phoneme,
+McshStn000035:752  ItlnConsPhon
+    + <br>* McshEngl.Italian-consonant-phoneme!⇒ItlnConsPhon,
+    + <br>* McshEngl.ItlnConsPhon!=Italian-consonant-phoneme,
+McshStn000035:1678  ItlnSylb
+    + <br>* McshEngl.syllable-of-lagoItln!⇒ItlnSylb,
+    + <br>* McshEngl.ItlnSylb!=syllable-of-lagoItln,
+McshStn000035:1978  ItlnArti
+    + <br>* McshEngl.Italian-article!⇒ItlnArti,
+    + <br>* McshEngl.ItlnArti!=Italian-article,
+McshStn000035:2027  ItlnAdje
+    + <br>* McshEngl.Italian-adjective!⇒ItlnAdje,
+    + <br>* McshEngl.ItlnAdje!=Italian-adjective,
+McshStn000035:2144  ItlnAdve
+    + <br>* McshEngl.Italian-adverb!⇒ItlnAdve,
+    + <br>* McshEngl.ItlnAdve!=Italian-adverb,
+McshStn000035:2287  ItlnPron
+    + <br>* McshEngl.Italian-pronoun!⇒ItlnPron,
+    + <br>* McshEngl.ItlnPron!=Italian-pronoun,
+McshStn000035:2482  ItlnVM
+    + <br>* McshEngl.member-of-ItlnVerb!⇒ItlnVM,
+    + <br>* McshEngl.ItlnVM!=member-of-ItlnVerb,
+McshStn000035:3064  ItlnConj
+    + <br>* McshEngl.Italian-conjunction!⇒ItlnConj,
+    + <br>* McshEngl.ItlnConj!=Italian-conjunction,
+McshStn000035:3204  ItlnVerbArgu
+    + <br>* McshEngl.Italian-verb-argument!⇒ItlnVerbArgu,
+    + <br>* McshEngl.ItlnVerbArgu!=Italian-verb-argument,
+McshStn000035:3247  ItlnSent
+    + <br>* McshEngl.Italian-sentence!⇒ItlnSent,
+    + <br>* McshEngl.ItlnSent!=Italian-sentence,
+McshStn000035:3261  ItlnExpr
+    + <br>* McshEngl.Itlnarian-basic-expression!⇒ItlnExpr,
+    + <br>* McshEngl.ItlnExpr!=Itlnarian-basic-expression,
+McshStn000037:301  FracUnit
+    + <br>* McshEngl.unit-of-logoFrac!⇒FracUnit,
+    + <br>* McshEngl.FracUnit!=unit-of-logoFrac,
+McshStn000037:481  FracVowlPhnm
+    + <br>* McshEngl.French-vowel-phoneme!⇒FracVowlPhnm,
+    + <br>* McshEngl.FracVowlPhnm!=French-vowel-phoneme,
+McshStn000037:882  FracConsPhnm
+    + <br>* McshEngl.French-consonant-phoneme!⇒FracConsPhnm,
+    + <br>* McshEngl.FracConsPhnm!=French-consonant-phoneme,
+McshStn000037:1829  FracSylb
+    + <br>* McshEngl.syllable-of-Frac_lago!⇒FracSylb,
+    + <br>* McshEngl.FracSylb!=syllable-of-Frac_lago,
+McshStn000038:212  Sbul_lago
+    + <br>* McshEngl.Slavo-Bulgarian-language!⇒Sbul_lago,
+    + <br>* McshEngl.Sbul_lago!=Slavo-Bulgarian-language,
+McshStn000038:310  SbulUnit
+    + <br>* McshEngl.unit-of-logoSbul!⇒SbulUnit,
+    + <br>* McshEngl.SbulUnit!=unit-of-logoSbul,
+McshStn000038:950  SbulSylb
+    + <br>* McshEngl.syllable-of-Sbul_lago!⇒SbulSylb,
+    + <br>* McshEngl.SbulSylb!=syllable-of-Sbul_lago,
+McshStn000038:1003  SbulName
+    + <br>* McshEngl.Bulgarian-name!⇒SbulName,
+    + <br>* McshEngl.SbulName!=Bulgarian-name,
+McshStn000038:1017  SbulArgo
+    + <br>* McshEngl.Bulgarian--argu-name!⇒SbulArgo,
+    + <br>* McshEngl.SbulArgo!=Bulgarian--argu-name,
+McshStn000038:1110  SbulAdje
+    + <br>* McshEngl.Bulgarian-adjective!⇒SbulAdje,
+    + <br>* McshEngl.SbulAdje!=Bulgarian-adjective,
+McshStn000038:1168  SbulAdve
+    + <br>* McshEngl.Bulgarian-adverb!⇒SbulAdve,
+    + <br>* McshEngl.SbulAdve!=Bulgarian-adverb,
+McshStn000038:1266  SbulVerb
+    + <br>* McshEngl.Bulgarian-verb!⇒SbulVerb,
+    + <br>* McshEngl.SbulVerb!=Bulgarian-verb,
+McshStn000038:1325  SbulConj
+    + <br>* McshEngl.Bulgarian-conjunction!⇒SbulConj,
+    + <br>* McshEngl.SbulConj!=Bulgarian-conjunction,
+McshStn000038:1353  SbulExpr
+    + <br>* McshEngl.Bulgarian-basic-expression!⇒SbulExpr,
+    + <br>* McshEngl.SbulExpr!=Bulgarian-basic-expression,
+McshStn000039:240  Sqip_lago
+    + <br>* McshEngl.Albanian-language!⇒Sqip_lago,
+    + <br>* McshEngl.Sqip_lago!=Albanian-language,
+McshStn000039:308  SqipLogo
+    + <br>* McshEngl.logo-of-Albanian-language!⇒SqipLogo,
+    + <br>* McshEngl.SqipLogo!=logo-of-Albanian-language,
+McshStn000039:336  SqipUnit
+    + <br>* McshEngl.unit-of-SqipLogo!⇒SqipUnit,
+    + <br>* McshEngl.SqipUnit!=unit-of-SqipLogo,
+McshStn000039:560  SqipConsPhnm
+    + <br>* McshEngl.Albanian-consonant-phoneme!⇒SqipConsPhnm,
+    + <br>* McshEngl.SqipConsPhnm!=Albanian-consonant-phoneme,
+McshStn000039:1501  SqipSylb
+    + <br>* McshEngl.syllable-of-Sqip_lago!⇒SqipSylb,
+    + <br>* McshEngl.SqipSylb!=syllable-of-Sqip_lago,
+McshStn000039:1695  SqipExpr
+    + <br>* McshEngl.Albanian-basic-expression!⇒SqipExpr,
+    + <br>* McshEngl.SqipExpr!=Albanian-basic-expression,
+McshStn000040:381  SmkdUnit
+    + <br>* McshEngl.unit-of-SmkdLogoView!⇒SmkdUnit,
+    + <br>* McshEngl.SmkdUnit!=unit-of-SmkdLogoView,
+McshStn000040:1070  SmkdSylb
+    + <br>* McshEngl.syllable-of-Smkd_lago!⇒SmkdSylb,
+    + <br>* McshEngl.SmkdSylb!=syllable-of-Smkd_lago,
+McshStn000040:1182  SmkdExpr
+    + <br>* McshEngl.Langg-basic-expression!⇒SmkdExpr,
+    + <br>* McshEngl.SmkdExpr!=Langg-basic-expression,
+McshStn000041:395  SslvUnit
+    + <br>* McshEngl.unit-of-SslvLogoView!⇒SslvUnit,
+    + <br>* McshEngl.SslvUnit!=unit-of-SslvLogoView,
+McshStn000041:945  SslvSylb
+    + <br>* McshEngl.syllable-of-Sslv_lago!⇒SslvSylb,
+    + <br>* McshEngl.SslvSylb!=syllable-of-Sslv_lago,
+McshStn000041:1057  SslvExpr
+    + <br>* McshEngl.Sslvarian-basic-expression!⇒SslvExpr,
+    + <br>* McshEngl.SslvExpr!=Sslvarian-basic-expression,
+McshStn000042:2982  ChnaEdu
+    + <br>* McshEngl.Chinese-education-sector!⇒ChnaEdu,
+    + <br>* McshEngl.ChnaEdu!=Chinese-education-sector,
+McshStn000042:3047  ChnaMOE
+    + <br>* McshEngl.education-ministry-of-SocChna!⇒ChnaMOE,
+    + <br>* McshEngl.ChnaMOE!=education-ministry-of-SocChna,
+McshStn000043:67  SocRusa
+    + <br>* McshEngl.Russia-society!⇒SocRusa,
+    + <br>* McshEngl.SocRusa!=Russia-society,
+McshStn000043:286  SrusUnit
+    + <br>* McshEngl.unit-of-SrusLogoView!⇒SrusUnit,
+    + <br>* McshEngl.SrusUnit!=unit-of-SrusLogoView,
+McshStn000043:1070  SrusSylb
+    + <br>* McshEngl.syllable-of-Srus_lago!⇒SrusSylb,
+    + <br>* McshEngl.SrusSylb!=syllable-of-Srus_lago,
+McshStn000043:1182  SrusExpr
+    + <br>* McshEngl.Russian-basic-expression!⇒SrusExpr,
+    + <br>* McshEngl.SrusExpr!=Russian-basic-expression,
+McshStn000044:324  RomnUnit
+    + <br>* McshEngl.unit-of-RomnLogoView!⇒RomnUnit,
+    + <br>* McshEngl.RomnUnit!=unit-of-RomnLogoView,
+McshStn000044:1320  RomnSylb
+    + <br>* McshEngl.syllable-of-Romn_lago!⇒RomnSylb,
+    + <br>* McshEngl.RomnSylb!=syllable-of-Romn_lago,
+McshStn000044:1432  RomnExpr
+    + <br>* McshEngl.Langg-basic-expression!⇒RomnExpr,
+    + <br>* McshEngl.RomnExpr!=Langg-basic-expression,
+McshStn000048:373  JpnsUnit
+    + <br>* McshEngl.unit-of-JpnsLogoView!⇒JpnsUnit,
+    + <br>* McshEngl.JpnsUnit!=unit-of-JpnsLogoView,
+McshStn000048:621  JpnsChar
+    + <br>* McshEngl.character-of-Jpns_lago!⇒JpnsChar,
+    + <br>* McshEngl.JpnsChar!=character-of-Jpns_lago,
+McshStn000048:940  JpnsHrgn
+    + <br>* McshEngl.Japanese-Hiragana!⇒JpnsHrgn,
+    + <br>* McshEngl.JpnsHrgn!=Japanese-Hiragana,
+McshStn000048:3033  JpnsKtkn
+    + <br>* McshEngl.Japanese-Katakana!⇒JpnsKtkn,
+    + <br>* McshEngl.JpnsKtkn!=Japanese-Katakana,
+McshStn000048:3897  JpnsKnji
+    + <br>* McshEngl.Japanese-Kanji!⇒JpnsKnji,
+    + <br>* McshEngl.JpnsKnji!=Japanese-Kanji,
+McshStn000048:3957  JpnsRmji
+    + <br>* McshEngl.Japanese-Romaji!⇒JpnsRmji,
+    + <br>* McshEngl.JpnsRmji!=Japanese-Romaji,
+McshStn000048:3986  JpnsSylb
+    + <br>* McshEngl.syllable-of-Jpns_lago!⇒JpnsSylb,
+    + <br>* McshEngl.JpnsSylb!=syllable-of-Jpns_lago,
+McshStn000048:4146  JpnsNoun
+    + <br>* McshEngl.Japanese-noun!⇒JpnsNoun,
+    + <br>* McshEngl.JpnsNoun!=Japanese-noun,
+McshStn000048:4330  JpnsConj
+    + <br>* McshEngl.Japanese-conjunction!⇒JpnsConj,
+    + <br>* McshEngl.JpnsConj!=Japanese-conjunction,
+McshStn000048:4732  JpnsExpr
+    + <br>* McshEngl.Langg-basic-expression!⇒JpnsExpr,
+    + <br>* McshEngl.JpnsExpr!=Langg-basic-expression,
+McshStn000050:272  Khmr_lago
+    + <br>* McshEngl.Cambodia-language!⇒Khmr_lago,
+    + <br>* McshEngl.Khmr_lago!=Cambodia-language,
+McshStn000050:362  KhmrUnit
+    + <br>* McshEngl.unit-of-KhmrLogoView!⇒KhmrUnit,
+    + <br>* McshEngl.KhmrUnit!=unit-of-KhmrLogoView,
+McshStn000050:2753  KhmrSylb
+    + <br>* McshEngl.syllable-of-Khmr_lago!⇒KhmrSylb,
+    + <br>* McshEngl.KhmrSylb!=syllable-of-Khmr_lago,
+McshStn000050:3270  KhmrExpr
+    + <br>* McshEngl.Langg-basic-expression!⇒KhmrExpr,
+    + <br>* McshEngl.KhmrExpr!=Langg-basic-expression,
+McshStn000051:211  Sgpr_lago
+    + <br>* McshEngl.Singapore-language!⇒Sgpr_lago,
+    + <br>* McshEngl.Sgpr_lago!=Singapore-language,
+McshStnlaw000002:27  law
+    + <br>* McshEngl.socialitation'law!⇒law,
+    + <br>* McshEngl.law!=socialitation'law,
+McshStnlaw000002:912  sciLaw
+    + <br>* McshEngl.law-science!⇒sciLaw,
+    + <br>* McshEngl.sciLaw!=law-science,
+McshStnlaw000002:2084  lawChnaTax
+    + <br>* McshEngl.tax-law-in-PRC!⇒lawChnaTax,
+    + <br>* McshEngl.lawChnaTax!=tax-law-in-PRC,
+McshStnlaw000002:2647  lawGrk
+    + <br>* McshEngl.law-in-Greek-language!⇒lawGrk,
+    + <br>* McshEngl.lawGrk!=law-in-Greek-language,
+McshStnlaw000003:102  Euloznpass
+    + <br>* McshEngl.oznPassing-lawEus!⇒Euloznpass,
+    + <br>* McshEngl.Euloznpass!=oznPassing-lawEus,
+McshStnlaw000003:392  Euoj
+    + <br>* McshEngl.official-journal-of-Eu!⇒Euoj,
+    + <br>* McshEngl.Euoj!=official-journal-of-Eu,
+McshStnlaw000003:666  Euoje
+    + <br>* McshEngl.electronic-official-jurnal-of-Eu!⇒Euoje,
+    + <br>* McshEngl.Euoje!=electronic-official-jurnal-of-Eu,
+McshStnlaw000003:1730  EulTfeu
+    + <br>* McshEngl.treaty-on-functioning-of-Eu!⇒EulTfeu,
+    + <br>* McshEngl.EulTfeu!=treaty-on-functioning-of-Eu,
+McshStnlaw000003:1931  EuoFra
+    + <br>* McshEngl.Fundamental-Rights-Agency-of-Eu!⇒EuoFra,
+    + <br>* McshEngl.EuoFra!=Fundamental-Rights-Agency-of-Eu,
+McshStnlaw000003:2430  EulInta
+    + <br>* McshEngl.interinstitutional-agreement!⇒EulInta,
+    + <br>* McshEngl.EulInta!=interinstitutional-agreement,
+McshStnlaw000003:2654  EulAct
+    + <br>* McshEngl.written-lawEus!⇒EulAct,
+    + <br>* McshEngl.EulAct!=written-lawEus,
+McshStnlaw000003:2810  EulConsd
+    + <br>* McshEngl.consolidated!⇒EulConsd,
+    + <br>* McshEngl.EulConsd!=consolidated,
+McshStnlaw000003:2888  EulPrep
+    + <br>* McshEngl.preparatory-act-and-working-doc!⇒EulPrep,
+    + <br>* McshEngl.EulPrep!=preparatory-act-and-working-doc,
+McshStnlaw000004:177  Unicj
+    + <br>* McshEngl.International-court-of-justice--of-Un!⇒Unicj,
+    + <br>* McshEngl.Unicj!=International-court-of-justice--of-Un,
+McshStnlaw000004:1583  Unudhr
+    + <br>* McshEngl.Universal-declaration-of-human-rights--of-Un!⇒Unudhr,
+    + <br>* McshEngl.Unudhr!=Universal-declaration-of-human-rights--of-Un,
+McshStnlaw000004:10489  Iccrs
+    + <br>* McshEngl.Rome-statute-of--International-criminal-court!⇒Iccrs,
+    + <br>* McshEngl.Iccrs!=Rome-statute-of--International-criminal-court,
+McshStnlaw000006:864  lawGrcaCnstn
+    + <br>* McshEngl.Constitution-of-Greece!⇒lawGrcaCnstn,
+    + <br>* McshEngl.lawGrcaCnstn!=Constitution-of-Greece,
+McshTchInf000005:107  Cmprlnode
+    + <br>* McshEngl.node-of-Cmpr_lago'output!⇒Cmprlnode,
+    + <br>* McshEngl.Cmprlnode!=node-of-Cmpr_lago'output,
+McshTchInf000005:853  lagDtrp
+    + <br>* McshEngl.data-representation--computer-language!⇒lagDtrp,
+    + <br>* McshEngl.lagDtrp!=data-representation--computer-language,
+McshTchInf000005:943  docNtxt
+    + <br>* McshEngl.natural-language--text-document!⇒docNtxt,
+    + <br>* McshEngl.docNtxt!=natural-language--text-document,
+McshTchInf000005:1079  docDtxt
+    + <br>* McshEngl.document-of--digital-text!⇒docDtxt,
+    + <br>* McshEngl.docDtxt!=document-of--digital-text,
+McshTchInf000006:162  Calgonode
+    + <br>* McshEngl.node-of-computer-algo!⇒Calgonode,
+    + <br>* McshEngl.Calgonode!=node-of-computer-algo,
+McshTchInf000006:873  Cframework
+    + <br>* McshEngl.computer-framework!⇒Cframework,
+    + <br>* McshEngl.Cframework!=computer-framework,
+McshTchInf000006:888  Clibrary
+    + <br>* McshEngl.computer-library!⇒Clibrary,
+    + <br>* McshEngl.Clibrary!=computer-library, {2020-05-05},
+McshTchInf000006:1749  Pgmg_lagoBnr
+    + <br>* McshEngl.binary--programing-language!⇒Pgmg_lagoBnr,
+    + <br>* McshEngl.Pgmg_lagoBnr!=binary--programing-language,
+McshTchInf000006:1800  lagAsm
+    + <br>* McshEngl.assembly-language!⇒lagAsm,
+    + <br>* McshEngl.lagAsm!=assembly-language,
+McshTchInf000006:2966  lagDtpr
+    + <br>* McshEngl.data-processing--computer-language!⇒lagDtpr,
+    + <br>* McshEngl.lagDtpr!=data-processing--computer-language,
+McshTchInf000006:3072  Oolz_lago
+    + <br>* McshEngl.object-oriented--programing-language!⇒Oolz_lago,
+    + <br>* McshEngl.Oolz_lago!=object-oriented--programing-language,
+McshTchInf000006:3207  lagCscr
+    + <br>* McshEngl.scripting--programing-language!⇒lagCscr,
+    + <br>* McshEngl.lagCscr!=scripting--programing-language,
+McshTchInf000007:31  Cnkn_lago
+    + <br>* McshEngl.concept---knowledge-language!⇒Cnkn_lago,
+    + <br>* McshEngl.Cnkn_lago!=concept---knowledge-language,
+McshTchInf000007:1235  lagCtsr
+    + <br>* McshEngl.ConcepT-StructuRe-representation--Cnkn_lago!⇒lagCtsr,
+    + <br>* McshEngl.lagCtsr!=ConcepT-StructuRe-representation--Cnkn_lago,
+McshTchInf000007:1256  lagCtdg
+    + <br>* McshEngl.ConcepT-DoinG--Cnkn_lago!⇒lagCtdg,
+    + <br>* McshEngl.lagCtdg!=ConcepT-DoinG--Cnkn_lago,
+McshTchInf000007:1275  lagCsad
+    + <br>* McshEngl.lagCsad,
+McshTchInf000007:1296  lagCtxt
+    + <br>* McshEngl.textual-Cnkn_lago!⇒lagCtxt,
+    + <br>* McshEngl.lagCtxt!=textual-Cnkn_lago,
+McshTchInf000007:1311  lagCvkl
+    + <br>* McshEngl.concept-visual--knowledge-language!⇒lagCvkl,
+    + <br>* McshEngl.lagCvkl!=concept-visual--knowledge-language,
+McshTchInf000007:1552  Frmlmngr
+    + <br>* McshEngl.frame-language--manager!⇒Frmlmngr,
+    + <br>* McshEngl.Frmlmngr!=frame-language--manager,
+McshTchInf000007:1824  lagKngr
+    + <br>* McshEngl.knowledge-graph--language!⇒lagKngr,
+    + <br>* McshEngl.lagKngr!=knowledge-graph--language,
+McshTchInf000007:1840  kbGraph
+    + <br>* McshEngl.knowledge-graph--knowledge-base!⇒kbGraph,
+    + <br>* McshEngl.kbGraph!=knowledge-graph--knowledge-base,
+McshTchInf000007:2096  lagXmlg
+    + <br>* McshEngl.extensible-markup-language!⇒lagXmlg,
+    + <br>* McshEngl.lagXmlg!=extensible-markup-language,
+McshTchInf000007:3009  XmlDtd
+    + <br>* McshEngl.DTD-for-XML!⇒XmlDtd,
+    + <br>* McshEngl.XmlDtd!=DTD-for-XML,
+McshTchInf000008:207  Hitp_archo_node
+    + <br>* McshEngl.node-of-Hitparcho!⇒Hitp_archo_node,
+    + <br>* McshEngl.Hitp_archo_node!=node-of-Hitparcho,
+McshTchInf000008:1070  Hitpcss
+    + <br>* McshEngl.Hitp--Css-code!⇒Hitpcss,
+    + <br>* McshEngl.Hitpcss!=Hitp--Css-code,
+McshTchInf000008:2766  Hitpname
+    + <br>* McshEngl.extra-name-on-Hitpdoc!⇒Hitpname,
+    + <br>* McshEngl.Hitpname!=extra-name-on-Hitpdoc,
+McshTchInf000008:2906  HitpIndx
+    + <br>* McshEngl.index-of-Hitpdoc!⇒HitpIndx,
+    + <br>* McshEngl.HitpIndx!=index-of-Hitpdoc,
+McshTchInf000008:3055  HitpBook
+    + <br>* McshEngl.book-represented-with-Hitp_lago!⇒HitpBook,
+    + <br>* McshEngl.HitpBook!=book-represented-with-Hitp_lago,
+McshTchInf000009:968  Mcsh_Nvd
+    + <br>* McshEngl.name-value-data--of-Mcsh!⇒Mcsh_Nvd,
+    + <br>* McshEngl.Mcsh_Nvd!=name-value-data--of-Mcsh,
+McshTchInf000009:2435  Mcsh_ctnr
+    + <br>* McshEngl.container-of-mMcshjs!⇒Mcsh_ctnr,
+    + <br>* McshEngl.Mcsh_ctnr!=container-of-mMcshjs,
+McshTchInf000009:2489  mcshcntrInfo
+    + <br>* McshEngl.info-container-of-mMcsh.js!⇒mcshcntrInfo,
+    + <br>* McshEngl.mcshcntrInfo!=info-container-of-mMcsh.js,
+McshTchInf000010:187  Jssut
+    + <br>* McshEngl.JavaScript--semantic-unit!⇒Jssut,
+    + <br>* McshEngl.Jssut!=JavaScript--semantic-unit,
+McshTchInf000010:676  Jsgnnvp
+    + <br>* McshEngl.JavaScript--name-value-pair!⇒Jsgnnvp,
+    + <br>* McshEngl.Jsgnnvp!=JavaScript--name-value-pair, {2019-03-16},
+McshTchInf000010:770  Jsgnx
+    + <br>* McshEngl.mixed-sunit!⇒Jsgnx,
+    + <br>* McshEngl.Jsgnx!=mixed-sunit,
+McshTchInf000010:984  Jsa
+    + <br>* McshEngl.JavaScript-array!⇒Jsa,
+    + <br>* McshEngl.Jsa!=JavaScript-array, {2021-05-22},
+McshTchInf000010:1834  Jsb
+    + <br>* McshEngl.JavaScript-boolean!⇒Jsb,
+    + <br>* McshEngl.Jsb!=JavaScript-boolean, {2021-05-22},
+McshTchInf000010:1909  Jsf
+    + <br>* McshEngl.JavaScript-function!⇒Jsf,
+    + <br>* McshEngl.Jsf!=JavaScript-function, {2021-05-22},
+McshTchInf000010:2888  Jsn
+    + <br>* McshEngl.number!⇒Jsn,
+    + <br>* McshEngl.Jsn!=number,
+McshTchInf000010:3003  Jso
+    + <br>* McshEngl.JavaScript-object!⇒Jso,
+    + <br>* McshEngl.Jso!=JavaScript-object,
+McshTchInf000010:3468  Jss
+    + <br>* McshEngl.JavaScript-string!⇒Jss,
+    + <br>* McshEngl.Jss!=JavaScript-string,
+McshTchInf000010:3761  Jsapi
+    + <br>* McshEngl.API.JavaScript!⇒Jsapi,
+    + <br>* McshEngl.Jsapi!=API.JavaScript,
+McshTchInf000010:6290  Jses2017
+    + <br>* McshEngl.ECMA.262.8-edition!⇒Jses2017,
+    + <br>* McshEngl.Jses2017!=ECMA.262.8-edition,
+McshTchInf000010:6324  Jses2016
+    + <br>* McshEngl.ECMA.262.7-edition!⇒Jses2016,
+    + <br>* McshEngl.Jses2016!=ECMA.262.7-edition,
+McshTchInf000010:6350  Jses2015
+    + <br>* McshEngl.ECMA.262.6-edition!⇒Jses2015,
+    + <br>* McshEngl.Jses2015!=ECMA.262.6-edition,
+McshTchInf000011:1026  Jsbrmmbr
+    + <br>* McshEngl.member-of-Jsbr-module!⇒Jsbrmmbr,
+    + <br>* McshEngl.Jsbrmmbr!=member-of-Jsbr-module,
+McshTchInf000012:293  Jsnd_lago_f
+    + <br>* McshEngl.Node.js-function!⇒Jsnd_lago_f,
+    + <br>* McshEngl.Jsnd_lago_f!=Node.js-function, {2019-03-16},
+McshTchInf000012:348  Jsnd_lago_o
+    + <br>* McshEngl.Node.js-object!⇒Jsnd_lago_o,
+    + <br>* McshEngl.Jsnd_lago_o!=Node.js-object,
+McshTchInf000012:434  Jsndme
+    + <br>* McshEngl.ECMAScript-modules-in-Jsnd!⇒Jsndme,
+    + <br>* McshEngl.Jsndme!=ECMAScript-modules-in-Jsnd,
+McshTchInf000014:32  Wasm_lago
+    + <br>* McshEngl.WebAssembly-language!⇒Wasm_lago,
+    + <br>* McshEngl.Wasm_lago!=WebAssembly-language, {2019-06-21},
+McshTchInf000015:4304  CBDC
+    + <br>* McshEngl.Central-Bank-Digital-Currency!⇒CBDC,
+    + <br>* McshEngl.CBDC!=Central-Bank-Digital-Currency,
+McshTchInf000015:9626  AnLaw
+    + <br>* McshEngl.netAlgo-law!⇒AnLaw,
+    + <br>* McshEngl.AnLaw!=netAlgo-law,
+McshTchInf000015:11979  AnsrvcGvng
+    + <br>* McshEngl.decentralized-automated-governing-service!⇒AnsrvcGvng,
+    + <br>* McshEngl.AnsrvcGvng!=decentralized-automated-governing-service, {2019-04-26},
+McshTchInf000015:12256  AgntsrvcEcon
+    + <br>* McshEngl.decentralized-autonomous-economy's-service!⇒AgntsrvcEcon,
+    + <br>* McshEngl.AgntsrvcEcon!=decentralized-autonomous-economy's-service, {2023-12-12},
+McshTchInf000029:752  Jnst
+    + <br>* McshEngl.JSON-stat!⇒Jnst,
+    + <br>* McshEngl.Jnst!=JSON-stat,
+McshTchInf000036:29  techAI
+    + <br>* McshEngl.artificial-intelligence-tech!⇒techAI,
+    + <br>* McshEngl.techAI!=artificial-intelligence-tech,
+McshTchInf000036:425  AiOgzn
+    + <br>* McshEngl.AI-organization!⇒AiOgzn,
+    + <br>* McshEngl.AiOgzn!=AI-organization,
+McshTchInf000036:720  sciAi
+    + <br>* McshEngl.artificial-intelligence-science!⇒sciAi,
+    + <br>* McshEngl.sciAi!=artificial-intelligence-science,
+McshTchInf000036:2159  techNlp
+    + <br>* McshEngl.natural-language-processing--tech!⇒techNlp,
+    + <br>* McshEngl.techNlp!=natural-language-processing--tech,
+McshTchInf000036:2177  techNlplm
+    + <br>* McshEngl.natural-language-processing--language-model---tech!⇒techNlplm,
+    + <br>* McshEngl.techNlplm!=natural-language-processing--language-model---tech,
+McshTchInf000036:2752  espkcmnd
+    + <br>* McshEngl.eSpeak-ng'command!⇒espkcmnd,
+    + <br>* McshEngl.espkcmnd!=eSpeak-ng'command,
+McshTchInf000036:3797  techTrln
+    + <br>* McshEngl.machine-TRansLatioN!⇒techTrln,
+    + <br>* McshEngl.techTrln!=machine-TRansLatioN,
+McshTchInf000038:476  LlmData
+    + <br>* McshEngl.training-data-of-Llm!⇒LlmData,
+    + <br>* McshEngl.LlmData!=training-data-of-Llm,
+McshTchInf000038:1800  llmGrok
+    + <br>* McshEngl.Grok--large-language-model!⇒llmGrok,
+    + <br>* McshEngl.llmGrok!=Grok--large-language-model,
+McshTchInf000039:27  lagoKnlg
+    + <br>* McshEngl.KNowLedGe-language!⇒lagoKnlg,
+    + <br>* McshEngl.lagoKnlg!=KNowLedGe-language,
+McshTchInf000039:85  KnlgMngr
+    + <br>* McshEngl.knowledge-language--manager!⇒KnlgMngr,
+    + <br>* McshEngl.KnlgMngr!=knowledge-language--manager, {2023-11-01},
+McshTchInf000039:138  KnlgBase
+    + <br>* McshEngl.knowledge-base!⇒KnlgBase,
+    + <br>* McshEngl.KnlgBase!=knowledge-base,
+McshTchInf000039:354  Klmrdoing
+    + <br>* McshEngl.doing-of--knowledge-manager!⇒Klmrdoing,
+    + <br>* McshEngl.Klmrdoing!=doing-of--knowledge-manager,
+McshTchInf000039:1077  klmrEs
+    + <br>* McshEngl.expert-system--KnlgMngr!⇒klmrEs,
+    + <br>* McshEngl.klmrEs!=expert-system--KnlgMngr,
+McshTchInf000039:1554  klmrErgoai
+    + <br>* McshEngl.ErgoAI--knowledge-language-manager!⇒klmrErgoai,
+    + <br>* McshEngl.klmrErgoai!=ErgoAI--knowledge-language-manager,
+McshTchInf000039:2537  klmrKlone
+    + <br>* McshEngl.KL-ONE--knowledge-manager!⇒klmrKlone,
+    + <br>* McshEngl.klmrKlone!=KL-ONE--knowledge-manager,
+McshTchInf000039:3254  lagoLgkl
+    + <br>* McshEngl.LoGo--Knowledge-Language!⇒lagoLgkl,
+    + <br>* McshEngl.lagoLgkl!=LoGo--Knowledge-Language,
+McshTchInf000039:3327  Lgklmngr
+    + <br>* McshEngl.Logo-Knowledge-Language--Manager!⇒Lgklmngr,
+    + <br>* McshEngl.Lgklmngr!=Logo-Knowledge-Language--Manager,
+McshTchInf000039:3476  lagoCdnl
+    + <br>* McshEngl.ControlleD-Natural-Language!⇒lagoCdnl,
+    + <br>* McshEngl.lagoCdnl!=ControlleD-Natural-Language,
+McshTchInf000039:3569  lagoAcen
+    + <br>* McshEngl.Attempto-Controlled-ENglish!⇒lagoAcen,
+    + <br>* McshEngl.lagoAcen!=Attempto-Controlled-ENglish,
+McshTchInf000039:3927  kbWikidata
+    + <br>* McshEngl.Wikidata--knowledge-base!⇒kbWikidata,
+    + <br>* McshEngl.kbWikidata!=Wikidata--knowledge-base,
+McshTchInf000039:3947  Wkdtitem
+    + <br>* McshEngl.wikidata-item!⇒Wkdtitem,
+    + <br>* McshEngl.Wkdtitem!=wikidata-item,
+McshTchInf000039:4029  Wkdtproperty
+    + <br>* McshEngl.wikidata-property!⇒Wkdtproperty,
+    + <br>* McshEngl.Wkdtproperty!=wikidata-property,
+McshTchInf000039:4613  klmrLogic
+    + <br>* McshEngl.logic--knowledge-language-manager!⇒klmrLogic,
+    + <br>* McshEngl.klmrLogic!=logic--knowledge-language-manager,
+McshTchInf000039:5496  lagoCgdf
+    + <br>* McshEngl.conceptual-graph-display-form!⇒lagoCgdf,
+    + <br>* McshEngl.lagoCgdf!=conceptual-graph-display-form,
+McshTchInf000039:5515  lagoCglf
+    + <br>* McshEngl.conceptual-graph-linear-form!⇒lagoCglf,
+    + <br>* McshEngl.lagoCglf!=conceptual-graph-linear-form,
+McshTchInf000039:5818  lagoDtlg
+    + <br>* McshEngl.Datalog--logic-language!⇒lagoDtlg,
+    + <br>* McshEngl.lagoDtlg!=Datalog--logic-language,
+McshTchInf000039:5836  lagoPrlg
+    + <br>* McshEngl.Prolog--logic-language!⇒lagoPrlg,
+    + <br>* McshEngl.lagoPrlg!=Prolog--logic-language,
+McshTchInf000039:5979  lagoFnlc
+    + <br>* McshEngl.functional-logic!⇒lagoFnlc,
+    + <br>* McshEngl.lagoFnlc!=functional-logic,
+McshTchInf000039:6031  lagoCmlc
+    + <br>* McshEngl.common-logic!⇒lagoCmlc,
+    + <br>* McshEngl.lagoCmlc!=common-logic,
+McshTchInf000039:6158  lagFlr2
+    + <br>* McshEngl.Flora-2-language!⇒lagFlr2,
+    + <br>* McshEngl.lagFlr2!=Flora-2-language,
+McshTchInf000039:6260  klmrCyc
+    + <br>* McshEngl.CYC--knowledge-manager!⇒klmrCyc,
+    + <br>* McshEngl.klmrCyc!=CYC--knowledge-manager,
+McshTchInf000039:7985  lagoOntg
+    + <br>* McshEngl.ONToloGy-language!⇒lagoOntg,
+    + <br>* McshEngl.lagoOntg!=ONToloGy-language,
+McshTchInf000039:8069  kbOnto
+    + <br>* McshEngl.ontology--knowledge-base!⇒kbOnto,
+    + <br>* McshEngl.kbOnto!=ontology--knowledge-base,
+McshTchInf000039:10484  lagoOwlg
+    + <br>* McshEngl.web-ontology-language-OWL!⇒lagoOwlg,
+    + <br>* McshEngl.lagoOwlg!=web-ontology-language-OWL,
+McshTchInf000039:11267  lagoLddt
+    + <br>* McshEngl.linked-data-language!⇒lagoLddt,
+    + <br>* McshEngl.lagoLddt!=linked-data-language,
+McshTchInf000039:11417  lagoRdfw
+    + <br>* McshEngl.Resource-Description-FrameWork!⇒lagoRdfw,
+    + <br>* McshEngl.lagoRdfw!=Resource-Description-FrameWork, {2021-01-05},
+McshTchInf000039:14020  Wlfmlui
+    + <br>* McshEngl.user-interface-of-Wlfmlsys!⇒Wlfmlui,
+    + <br>* McshEngl.Wlfmlui!=user-interface-of-Wlfmlsys,
+McshTchInf000039:14103  Wlfmlnbi
+    + <br>* McshEngl.notebook-interface-of-lagoWlfm!⇒Wlfmlnbi,
+    + <br>* McshEngl.Wlfmlnbi!=notebook-interface-of-lagoWlfm,
+McshTchInf000039:14194  Wlfmlitpr
+    + <br>* McshEngl.interpreter-of-lagoWlfm!⇒Wlfmlitpr,
+    + <br>* McshEngl.Wlfmlitpr!=interpreter-of-lagoWlfm,
+McshTchInf000039:14309  Wlfmlmath
+    + <br>* McshEngl.Wolfram-Mathematica!⇒Wlfmlmath,
+    + <br>* McshEngl.Wlfmlmath!=Wolfram-Mathematica,
+McshTchInf000039:14466  Wlfmlen
+    + <br>* McshEngl.expression-of-lagoWlfm!⇒Wlfmlen,
+    + <br>* McshEngl.Wlfmlen!=expression-of-lagoWlfm,
+McshTchInf000039:14874  Wlfmlam
+    + <br>* McshEngl.atomic-object-of-lagoWlfm!⇒Wlfmlam,
+    + <br>* McshEngl.Wlfmlam!=atomic-object-of-lagoWlfm,
+McshTchInf000039:14901  Wlfmlnr
+    + <br>* McshEngl.number-of-lagoWlfm!⇒Wlfmlnr,
+    + <br>* McshEngl.Wlfmlnr!=number-of-lagoWlfm,
+McshTchInf000039:14916  Wlfmlsg
+    + <br>* McshEngl.string-of-lagoWlfm!⇒Wlfmlsg,
+    + <br>* McshEngl.Wlfmlsg!=string-of-lagoWlfm,
+McshTchInf000039:14968  Wlfmlsl
+    + <br>* McshEngl.symbol-of-lagoWlfm!⇒Wlfmlsl,
+    + <br>* McshEngl.Wlfmlsl!=symbol-of-lagoWlfm,
+McshTchInf000039:15515  Wlfmlan
+    + <br>* McshEngl.association-of-lagoWlfm!⇒Wlfmlan,
+    + <br>* McshEngl.Wlfmlan!=association-of-lagoWlfm,
+McshTchInf000039:15588  Wlfmlpn
+    + <br>* McshEngl.pattern-of-lagoWlfm!⇒Wlfmlpn,
+    + <br>* McshEngl.Wlfmlpn!=pattern-of-lagoWlfm,
+McshTchInf000039:15783  Wlfmlkb
+    + <br>* McshEngl.knowledge-base-of-lagoWlfm!⇒Wlfmlkb,
+    + <br>* McshEngl.Wlfmlkb!=knowledge-base-of-lagoWlfm,
+McshTchInf000040:451  WeChat
+    + <br>* McshEngl.微信-wēixìn!⇒WeChat,
+    + <br>* McshEngl.WeChat!=微信-wēixìn,
+McshTchInf000040:469  InPay
+    + <br>* McshEngl.Internet-payment-service!⇒InPay,
+    + <br>* McshEngl.InPay!=Internet-payment-service,
+McshTchInf000040:563  AliPay
+    + <br>* McshEngl.支付宝-zhīfùbǎo!⇒AliPay,
+    + <br>* McshEngl.AliPay!=支付宝-zhīfùbǎo,
+McshTchInf000040:618  WWW
+    + <br>* McshEngl.world-wide-web!⇒WWW,
+    + <br>* McshEngl.WWW!=world-wide-web,
+McshTchInf000041:1033  Vscprmpt
+    + <br>* McshEngl.prompt-file of Vscode!⇒Vscprmpt,
+    + <br>* McshEngl.Vscprmpt!=prompt-file of Vscode,
+McshTchPrgm000000:29  dirTchPrgm
+    + <br>* McshEngl.modelWorldSynagonismView.dirCprogram!⇒dirTchPrgm,
+    + <br>* McshEngl.dirTchPrgm!=modelWorldSynagonismView.dirCprogram,
+McshTchPrgm000002:508  ahk
+    + <br>* McshEngl.AutoHotKey!⇒ahk,
+    + <br>* McshEngl.ahk!=AutoHotKey,
+McshTchPrgm000002:834  AdrdTermux
+    + <br>* McshEngl.Termux-Android-program!⇒AdrdTermux,
+    + <br>* McshEngl.AdrdTermux!=Termux-Android-program,
+McshTchPrgm000003:28  Atomedtr
+    + <br>* McshEngl.Atom--code-editor!⇒Atomedtr,
+    + <br>* McshEngl.Atomedtr!=Atom--code-editor,
+McshTchPrgm000003:581  Atompckg
+    + <br>* McshEngl.package-of-Atomedtr!⇒Atompckg,
+    + <br>* McshEngl.Atompckg!=package-of-Atomedtr,
+McshTch000002:953  techAutomation
+    + <br>* McshEngl.automation-technology!⇒techAutomation,
+    + <br>* McshEngl.techAutomation!=automation-technology,
+McshTch000005:68  techRobo
+    + <br>* McshEngl.tech.robotics!⇒techRobo,
+    + <br>* McshEngl.techRobo!=tech.robotics, {2023-12-30},
+
+SKIPPED
+Mcsh000000:31  2 McshEngl.Mws!=… lines: Mcsh.worldview.synagonism | McsWorldviewSynagonism
+McshCor000003:29  2 McshEngl.entity!=… lines: ent | entt
+McshCor000005:27  2 McshEngl.relation!=… lines: rln | rltn
+McshCor000006:555  2 McshEngl.timeDeicticNow!=… lines: time.reference.deictic.current | timeDeicticCurrent
+McshCor000007:2181  2 McshEngl.RltnDire!=… lines: relation-of--space-direction | space-direction'relation
+McshCor000011:2278  2 McshEngl.treePnch!=… lines: parent-child--tree | evolutionary-tree
+McshCor000013:30  2 McshEngl.FctgBrainingBio!=… lines: functing-of--bio-braining | functing.FctgBrainingBio
+McshCor000014:27  2 McshEngl.SystNet!=… lines: network | system.network
+McshEdu000005:1389  2 McshEngl.MathRltn!=… lines: math-relation | mrln
+McshEdu000005:1461  2 McshEngl.MathFn!=… lines: math-function | mfn
+McshEdu000005:7456  2 McshEngl.MathSet!=… lines: math-set | mset
+McshLag000028:1821  2 McshEngl.Ellc_lago!=… lines: Mycenaean/maisinían/-Greek | Mycenaean-Greek
+McshOgm000006:32  2 McshEngl.molProtein!=… lines: organism-protein | protein-of-organism
+McshOgm000009:36  2 McshEngl.ogsmAnimal!=… lines: animal | organism.animal
+McshStn000009:176  2 McshEngl.SocHumnView!=… lines: human-view-of-society | society
+McshStn000012:35  2 McshEngl.SocEcon!=… lines: economic-view-of-human-society | society
+McshStn000012:1602  2 McshEngl.sectorEcon!=… lines: economic-sector | sectorSoc
+McshStn000019:445  2 McshEngl.Algolang!=… lines: algorithmic-language | autonomous-language
+McshStn000020:285  2 McshEngl.Euzzmbr!=… lines: member-of-Eu | Eu-state-member
+McshStn000020:821  2 McshEngl.EvuEUR!=… lines: Euro-Member-Countries-currency | European-Union-currency
+McshStn000021:28  2 McshEngl.SocGlbl!=… lines: global-society | International-society
+McshStn000049:96  2 McshEngl.SocKors!=… lines: South-Korea | South-Korea--society
+McshTchInf000003:27  2 McshEngl.techCmpr!=… lines: computer | computer-machine
+McshTchInf000005:902  2 McshEngl.Tdoc_lago!=… lines: text-document--language | text-document-representation-language
+McshTchInf000006:138  2 McshEngl.Pgmgalgo!=… lines: algorithm-of--programing-language | computer-algo
+McshTchInf000015:1707  2 McshEngl.Agntasset!=… lines: asset-of-netAlgo | netAlgo-asset
+McshTchInf000031:30  2 McshEngl.Cppz_lago!=… lines: C++-programing-language | C++-language
+McshTchInf000039:3648  2 McshEngl.lagoPpsl!=… lines: ProPoSitionaL-lagoKnlg | ProPoSitionaL-lagoCnpt

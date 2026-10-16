@@ -1,0 +1,47 @@
+ALONE-DELETE APPLIED — 20 deleted, 23 skipped
+
+McshCor000003:5336  McshEngl.entityDeicticNearAOneNo,   (kept :5341 <br>* McshEngl.entityDeicticNearAOneNo!=these,)
+McshCor000003:6426  McshEngl.humanNoAsk,   (kept :6429 <br>* McshEngl.humanNoAsk!=what,)
+McshCor000003:6500  McshEngl.young,   (kept :6503 <br>* McshEngl.young!=young-entity,)
+McshCor000003:6634  McshEngl.example,   (kept :6636 <br>* McshEngl.example!=exml,)
+McshCor000006:426  McshEngl.timeAsk,   (kept :428 <br>* McshEngl.timeAsk!=time.reference.interrogative,)
+McshEdu000005:5280  McshEngl.WrkrMath,   (kept :5285 <br>* McshEngl.WrkrMath!=worker.mathematics,)
+McshEdu000005:6343  McshEngl.mathCalc,   (kept :6345 <br>* McshEngl.mathCalc!=math.calculus,)
+McshHmn000002:4673  McshEngl.humanAsk,   (kept :4675 <br>* McshEngl.humanAsk!=who,)
+McshLag000003:55  McshEngl.referent,   (kept :58 <br>* McshEngl.referent!=human-info-referent,)
+McshLag000009:752  McshEngl.IPA,   (kept :753 <br>* McshEngl.IPA!=international-phonetic-alphabet,)
+McshLag000020:12686  McshEngl.lagEllt,   (kept :12687 <br>* McshEngl.lagEllt!=katharevousa,)
+McshStn000002:389  McshEngl.DongOgzg,   (kept :390 <br>* McshEngl.DongOgzg!=organization-process,)
+McshStn000009:9327  McshEngl.SocInduAftr,   (kept :9329 <br>* McshEngl.SocInduAftr!=post-industrial--society,)
+McshStn000028:336  McshEngl.Finpaysys,   (kept :337 <br>* McshEngl.Finpaysys!=payment-system,)
+McshStn000030:583  McshEngl.IAPR,   (kept :585 <br>* McshEngl.IAPR!=Independent-Authority-for-Public-Revenue,)
+McshStn000031:2829  McshEngl.Chna_econ,   (kept :2831 <br>* McshEngl.Chna_econ!=economy-of-SocChna,)
+McshStn000031:3039  McshEngl.NDRC,   (kept :3040 <br>* McshEngl.NDRC!=National-Development-and-Reform-Commission--of-Chna-econ,)
+McshStn000031:7894  McshEngl.CPPCC,   (kept :7895 <br>* McshEngl.CPPCC!=Chinese-People's-Political-Consultative-Conference,)
+McshTchInf000040:452  McshEngl.WeChat,   (kept :453 <br>* McshEngl.WeChat!=微信-wēixìn,)
+McshTchInf000040:563  McshEngl.AliPay,   (kept :564 <br>* McshEngl.AliPay!=支付宝-zhīfùbǎo,)
+
+SKIPPED
+McshEdu000003:33  McshEngl.MathGraph,   SKIP line is now: <br>* McshEngl.MathGraph, /máthgráf/,
+McshHlth000002:3706  McshEngl.tissue,   SKIP line is now: <br>* McshEngl.tissue, {2012-08-11},
+McshHlth000003:1665  McshEngl.mind,   SKIP line is now: <br>* McshEngl.mind, {2023-08-28},
+McshHlth000004:57  McshEngl.cell,   SKIP line is now: <br>* McshEngl.cell, {2012-08-11},
+McshHlth000019:40  McshEngl.SystNervous,   SKIP line is now: <br>* McshEngl.SystNervous, {2020-05-01},
+McshLag000007:3990  McshEngl.VerbCptAttAfrm,   SKIP line is now: <br>* McshEngl.VerbCptAttAfrm, {2023-09-21},
+McshLag000007:3938  McshEngl.VerbCptAttAsk,   SKIP line is now: <br>* McshEngl.VerbCptAttAsk, {2023-09-21},
+McshStn000020:4018  McshEngl.Euogvc,   SKIP line is now: <br>* McshEngl.Euogvc, {2020-12-03},
+McshStn000020:2088  McshEngl.EuoCjeu,   SKIP line is now: <br>* McshEngl.EuoCjeu, {2020-12-03},
+McshStn000020:1995  McshEngl.EuoParl,   SKIP line is now: <br>* McshEngl.EuoParl, {2020-12-03},
+McshStn000020:102  McshEngl.Euhmbr,   SKIP line is now: <br>* McshEngl.Euhmbr, {2022-04-21},
+McshTchInf000006:889  McshEngl.Clibrary,   SKIP line is now: <br>* McshEngl.Clibrary, {2020-05-05},
+McshTchInf000010:1908  McshEngl.Jsf,   SKIP line is now: <br>* McshEngl.Jsf, {2021-05-22},
+McshTchInf000010:1833  McshEngl.Jsb,   SKIP line is now: <br>* McshEngl.Jsb, {2021-05-22},
+McshTchInf000010:983  McshEngl.Jsa,   SKIP line is now: <br>* McshEngl.Jsa, {2021-05-22},
+McshTchInf000010:683  McshEngl.Jsgnnvp,   SKIP line is now: <br>* McshEngl.Jsgnnvp, {2019-03-16},
+McshTchInf000012:8987  McshEngl.npm,   SKIP line is now: <br>* McshEngl.npm, {2019-03-20},
+McshTchInf000012:477  McshEngl.Jsndmc,   SKIP line is now: <br>* McshEngl.Jsndmc, {2021-05-02},
+McshTchInf000012:296  McshEngl.Jsnd_lago_f,   SKIP line is now: <br>* McshEngl.Jsnd_lago_f, {2019-03-16},
+McshTchInf000014:41  McshEngl.Wasm_lago,   SKIP line is now: <br>* McshEngl.Wasm_lago, {2019-06-21},
+McshTchInf000015:6189  McshEngl.DeApp,   SKIP line is now: <br>* McshEngl.DeApp, {2022-06-25},
+McshTchInf000017:55  McshEngl.AgntBtcn,   SKIP line is now: <br>* McshEngl.AgntBtcn, {2019-06-18},
+McshTchInf000028:35  McshEngl.DnDiem,   SKIP line is now: <br>* McshEngl.DnDiem, {2021-04-10},

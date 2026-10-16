@@ -1,0 +1,24 @@
+NON-ENGLISH MAIN-NAME LAST APPLIED — 17 lines in 2 files
+
+PER FILE
+  McshCor000010 4
+  McshLag000018 13
+
+CHANGED
+McshCor000010:726  <br>* McshZhon.Líng-零!=quantoDefiNone!=0!=quantoDefiNone,  ->  <br>* McshZhon.Líng-零!=0!=quantoDefiNone,
+McshCor000010:727  <br>* McshZhon.Méiyǒu-没有!=quantoDefiNone!=none!=quantoDefiNone,  ->  <br>* McshZhon.Méiyǒu-没有!=none!=quantoDefiNone,
+McshCor000010:728  <br>* McshZhon.Wú-无!=quantoDefiNone!=formal,  ->  <br>* McshZhon.Wú-无!=formal!=quantoDefiNone,
+McshCor000010:729  <br>* McshZhon.零-Líng!=quantoDefiNone!=0!=quantoDefiNone,  ->  <br>* McshZhon.零-Líng!=0!=quantoDefiNone,
+McshLag000018:17992  <br>* McshZhon.guǎngdōnghuà-广东话!=Zhoy_lago!=Yue-language,  ->  <br>* McshZhon.guǎngdōnghuà-广东话!=Yue-language!=Zhoy_lago,
+McshLag000018:17993  <br>* McshZhon.Guǎngdōnghuà-广东话!=Zhoy_lago!=Yue-language,  ->  <br>* McshZhon.Guǎngdōnghuà-广东话!=Yue-language!=Zhoy_lago,
+McshLag000018:17994  <br>* McshZhon.广东话-guǎngdōnghuà!=Zhoy_lago!=Yue-language,  ->  <br>* McshZhon.广东话-guǎngdōnghuà!=Yue-language!=Zhoy_lago,
+McshLag000018:17995  <br>* McshZhon.yuèyǔ-粤语!=Zhoy_lago!=Yue-language,  ->  <br>* McshZhon.yuèyǔ-粤语!=Yue-language!=Zhoy_lago,
+McshLag000018:17996  <br>* McshZhon.粤语-yuèyǔ!=Zhoy_lago!=Yue-language,  ->  <br>* McshZhon.粤语-yuèyǔ!=Yue-language!=Zhoy_lago,
+McshLag000018:18022  <br>* McshZhon.wúyǔ-吴语!=Zhow_lago!=Wu-language,  ->  <br>* McshZhon.wúyǔ-吴语!=Wu-language!=Zhow_lago,
+McshLag000018:18023  <br>* McshZhon.吴语-wúyǔ!=Zhow_lago!=Wu-language,  ->  <br>* McshZhon.吴语-wúyǔ!=Wu-language!=Zhow_lago,
+McshLag000018:18101  <br>* McshZhon.mǐnyǔ-闽语!=Zhoi_lago!=Min-language,  ->  <br>* McshZhon.mǐnyǔ-闽语!=Min-language!=Zhoi_lago,
+McshLag000018:18102  <br>* McshZhon.闽语-mǐnyǔ!=Zhoi_lago!=Min-language,  ->  <br>* McshZhon.闽语-mǐnyǔ!=Min-language!=Zhoi_lago,
+McshLag000018:18184  <br>* McshZhon.jìnyǔ-晋语!=Zhoj_lago!=Jin-language,  ->  <br>* McshZhon.jìnyǔ-晋语!=Jin-language!=Zhoj_lago,
+McshLag000018:18185  <br>* McshZhon.晋语-jìnyǔ!=Zhoj_lago!=Jin-language,  ->  <br>* McshZhon.晋语-jìnyǔ!=Jin-language!=Zhoj_lago,
+McshLag000018:18250  <br>* McshZhon.kèjiāhuà-客家话!=Zhoh_lago!=Hakka-language,  ->  <br>* McshZhon.kèjiāhuà-客家话!=Hakka-language!=Zhoh_lago,
+McshLag000018:18251  <br>* McshZhon.客家话-kèjiāhuà!=Zhoh_lago!=Hakka-language,  ->  <br>* McshZhon.客家话-kèjiāhuà!=Hakka-language!=Zhoh_lago,
