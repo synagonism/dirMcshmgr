@@ -1,0 +1,48 @@
+=== MOVED (0) ===
+(none)
+
+=== SKIPPED (44) ===
+McshTchInf000010:1101  idLJsgnArraypgtr  "Jsa'Array.prototype"  has child sections
+McshTchInf000010:2148  idLJsgnFunctiongtr  "Jsf'Function-function"  line is not a "* X" item: <br>It is important to mention here that <code>Function</cod
+McshTchInf000010:2849  idLJsgnlgtr  "Jssut.null"  line is not a "* X" item: <br>===
+McshTchInf000010:2915  idLJsgnNumberpgtr  "Jsn'Number.prototype"  has child sections
+McshTchInf000010:3203  idLJsgnoCsrgtr  "Jso.CONSTRUCTOR"  line is not a "* X" item: <br>...
+McshTchInf000010:3502  idLJsgnStringpgtr  "String.prototype-object of Jss"  has child sections
+McshTchInf000010:3772  idLJsgnmwogtr  "jsAPI'most-whole-object (global)"  has child sections
+McshTchInf000011:70  idLJsbrarcgtr  "01_archetype of Jsbr_lago"  has child sections
+McshTchInf000011:3345  idLJsbroEvttgtgtr  "Jsbrevent'EventTarget-object (oEvttgt)"  line is not a "* X" item: <br>===
+McshTchInf000011:4654  idLJsbrelngnc  "03_evaluation of Jsbr_lago"  has child sections
+McshTchInf000012:727  idLJsndmodulegtr  "Jsndmmbr.module-object (Jsndmobt)"  has child sections
+McshTchInf000012:920  idLJsndrequiregtr  "Jsndmmbr.require-function"  has child sections
+McshTchInf000012:1531  idLJsndmcfEventsgtr  "Jsndmc.core.events-function (core 2.stable)"  has child sections
+McshTchInf000012:1668  idLJsndmcfStreamgtr  "Jsndmc.core.stream-function (core 2.stable)"  has child sections
+McshTchInf000012:1740  idLJsndoStreamgtr  "Jsnd_lago'stream-object"  line is not a "* X" item: <br>The-objects of <a class="clsPreview" href="#idLJsndoStre
+McshTchInf000012:2090  idLJsndmcoHttpgtr  "Jsndmc.core.http-object (core 2.stable)"  has child sections
+McshTchInf000012:2764  idLJsndmcoUtilgtr  "Jsndmc.core.util-object (core 2.stable)"  has child sections
+McshTchInf000012:3528  idLJsndprocessgtr  "JsndAPI'process-object"  has child sections
+McshTchInf000012:3673  idLJsndstcgnc  "algo'SENTENCE"  has child sections
+McshTchInf000012:6060  idLJsndpkgEslintgnc  "Npmpkg.eslint"  has child sections
+McshTchInf000012:7605  idLJsndpkgJakegtr  "Npmpkg.jake (ljnjake)"  has child sections
+McshTchInf000013:60  idLJselarcgnc  "archetype of Jsel_lago"  no idLJselarcdsn description::
+McshTchInf000013:299  idLJselmainelngnc  "Jsel_lago-API'electron-object.main-process"  has child sections
+McshTchInf000013:1251  idLJselpgmpkgjsngnc  "package.json-file of JselApp"  has child sections
+McshTchInf000015:7708  idAlgntxBstmpgnc  "exchange-ogn.Bitstamp (3rd - EU)"  has child sections
+McshTchInf000016:4766  idDbcelngnc  "11_evaluation of AgntBkcn"  has child sections
+McshTchInf000016:7828  idTzsnetgnc  "AgntBkcn.time.Tezos-XTZ {2018-06-30},"  has child sections
+McshTchInf000016:7925  idZecnetgnc  "AgntBkcn.time.Zcash-ZEC {2016-10-28},"  has child sections
+McshTchInf000016:8125  idLskevuCgnc  "ĐLisk'exchange-value-unit.Consensus (LSKevuC {2016})"  has child sections
+McshTchInf000016:8800  idDcrnodgnc  "Dcrnet'Node (dcrnod)"  has child sections
+McshTchInf000016:10060  idPivxnetgnc  "AgntBkcn.time.PIVX {2016-01-29},"  has child sections
+McshTchInf000016:10165  idBtsnetgnc  "AgntBkcn.time.BitShares2-BTS {2015-10-13},"  has child sections
+McshTchInf000016:12298  idDashevuCgnc  "DevuDASH of Ddash-net"  has child sections
+McshTchInf000016:12695  idEmcnetgnc  "AgntBkcn.time.Emercoin-EMC {2013-12-11},"  has child sections
+McshTchInf000016:12802  idNxtgncgnc  "Nxt-net'GENERIC"  no idNxtgncdsn description::
+McshTchInf000016:13176  idPpcnetgnc  "AgntBkcn.time.Peercoin-PPC {2012-08-19},"  has child sections
+McshTchInf000016:14180  idDfnnetgnc  "AgntBkcn.Dfinity-DFN"  has child sections
+McshTchInf000017:112  idDescriptiongnc  "overview of AgntBtcn"  no idOverviewdsn description::
+McshTchInf000017:1408  idBtcbcngnc  "blockchain of AgntBtcn"  has child sections
+McshTchInf000017:1500  idBtcblkgnc  "blockchain'Block"  has child sections
+McshTchInf000017:5377  idBtcevuCegrtgnc  "DvBTC'Exchange-rate"  has child sections
+McshTchInf000018:2297  idEthcsagnc  "Algoethrbkcn'consensus-algorithm"  has child sections
+McshTchInf000018:4008  idEthevuCNbkngnc  "EthrassetCN'Backness"  no idEthevuCNbkndsn description::
+McshTchInf000018:7122  idEthsolgnc  "DcontractEth'language.SOLIDITY"  has child sections

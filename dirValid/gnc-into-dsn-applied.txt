@@ -1,0 +1,99 @@
+=== MOVED (52) ===
+McshHlth000014:2049  idMedHmn015gccn  "medication.adhesive-bandage-015"  -> idMedHmn015dsn  (1 generic line)
+McshHlth000014:2070  idMedHmn016gccn  "medication.dramamine-016"  -> idMedHmn016dsn  (1 generic line)
+McshHlth000014:2097  idMedHmn017gccn  "medication.fenistil-gel-017"  -> idMedHmn017dsn  (1 generic line)
+McshHlth000014:2121  idMedHmn018gccn  "medication.lysopaine-018"  -> idMedHmn018dsn  (1 generic line)
+McshHlth000014:2146  idMedHmn019gccn  "medication.simeco-019"  -> idMedHmn019dsn  (1 generic line)
+McshHlth000014:2170  idMedHmn020gccn  "medication.terramycin-w-polymyxin-020"  -> idMedHmn020dsn  (1 generic line)
+McshHlth000014:2197  idMedHmn021gccn  "medication.acetaminophen-021"  -> idMedHmn021dsn  (1 generic line)
+McshHlth000014:2221  idMedHmn022gccn  "medication.cetirizine-022"  -> idMedHmn022dsn  (1 generic line)
+McshHlth000014:2249  idMedHmn023gccn  "medication.aspirin-023"  -> idMedHmn023dsn  (1 generic line)
+McshHlth000014:2279  idMedHmn024gccn  "medication.amphetamine-024"  -> idMedHmn024dsn  (1 generic line)
+McshTchInf000010:913  idLJsgnsutLtlgtr  "Jssut.LITERAL"  -> idLJsgnsutLtldsn  (1 generic line)
+McshTchInf000010:1085  idLJsgnArraygtr  "Jsa'Array-function"  -> idLJsgnArraydsn  (2 generic lines)
+McshTchInf000010:1876  idLJsgnBooleanpgtr  "Jsgn_lago'Boolean.prototype"  -> idLJsgnBooleanpdsn  (1 generic line)
+McshTchInf000010:2119  idLJsgnFunctionpgtr  "Jsf'Function.prototype"  -> idLJsgnFunctionpdsn  (1 generic line)
+McshTchInf000010:3299  idLJsgnRegExppgtr  "RegExp.prototype"  -> idLJsgnRegExppdsn  (1 generic line)
+McshTchInf000010:3730  idLJsgnugtr  "Jssut.undefined"  -> idLJsgnudsn  (2 generic lines)
+McshTchInf000011:2922  idLJsbrWindowgtr  "JsbralgoBrowser'Window-function"  -> idLJsbrWindowdsn  (3 generic lines)
+McshTchInf000011:3263  idLJsbroEvtgtr  "Jsbrevent'Event-object (oEvt)"  -> idLJsbroEvtdsn  (3 generic lines)
+McshTchInf000011:3332  idLJsbrfEvtlnrgtr  "Jsbrevent'EventListener-function (fEvtlnr)"  -> idLJsbrfEvtlnrdsn  (2 generic lines)
+McshTchInf000011:3375  idLJsbrEventpgtr  "Jsbrevent'Event.prototype"  -> idLJsbrEventpdsn  (1 generic line)
+McshTchInf000011:3409  idLJsbrEventgtr  "Jsbrevent'Event-function"  -> idLJsbrEventdsn  (2 generic lines)
+McshTchInf000011:3445  idLJsbrEventTargetpgtr  "Jsbrevent'EventTarget.prototype"  -> idLJsbrEventTargetpdsn  (1 generic line)
+McshTchInf000011:3479  idLJsbrEventTargetgtr  "Jsbrevent'EventTarget-function"  -> idLJsbrEventTargetdsn  (2 generic lines)
+McshTchInf000011:3949  idLJsbrdocumentgtr  "JsbralgoHtml'document-object"  -> idLJsbrdocumentdsn  (5 generic lines)
+McshTchInf000011:4002  idLJsbrHTMLDocumentpgtr  "JsbralgoHtml'HTMLDocument.prototype"  -> idLJsbrHTMLDocumentpdsn  (4 generic lines)
+McshTchInf000011:4050  idLJsbrDocumentpgtr  "JsbralgoHtml'Document.prototype"  -> idLJsbrDocumentpdsn  (3 generic lines)
+McshTchInf000011:4095  idLJsbrNodepgtr  "JsbralgoHtml'Node.prototype"  -> idLJsbrNodepdsn  (2 generic lines)
+McshTchInf000011:4145  idLJsbrAttrpgtr  "JsbralgoHtml'Attr.prototype"  -> idLJsbrAttrpdsn  (3 generic lines)
+McshTchInf000011:4192  idLJsbrCharacterDatapgtr  "JsbralgoHtml'CharacterData.prototype"  -> idLJsbrCharacterDatapdsn  (3 generic lines)
+McshTchInf000011:4233  idLJsbrDocumentFragmentpgtr  "JsbralgoHtml'DocumentFragment.prototype"  -> idLJsbrDocumentFragmentpdsn  (3 generic lines)
+McshTchInf000011:4281  idLJsbrDocumentTypepgtr  "JsbralgoHtml'DocumentType.prototype"  -> idLJsbrDocumentTypepdsn  (3 generic lines)
+McshTchInf000011:4330  idLJsbrElementpgtr  "JsbralgoHtml'Element.prototype"  -> idLJsbrElementpdsn  (3 generic lines)
+McshTchInf000011:4378  idLJsbrHTMLElementpgtr  "JsbralgoHtml'HTMLElement.prototype"  -> idLJsbrHTMLElementpdsn  (4 generic lines)
+McshTchInf000012:1495  idLJsndmcfAssertgtr  "Jsndmc.core.assert-function (core 3.locked)"  -> idLJsndmcfAssertdsn  (2 generic lines)
+McshTchInf000012:1780  idLJsndmcoBuffergtr  "Jsndmc.core.buffer-object (core 2.stable)"  -> idLJsndmcoBufferdsn  (1 generic line)
+McshTchInf000012:1814  idLJsndmcoChild_processgtr  "Jsndmc.core.child_process-object (core 2=stable)"  -> idLJsndmcoChild_processdsn  (1 generic line)
+McshTchInf000012:1842  idLJsndmcoClustergtr  "Jsndmc.core.cluster-object (core 2=stable)"  -> idLJsndmcoClusterdsn  (2 generic lines)
+McshTchInf000012:1867  idLJsndmcoCryptogtr  "Jsndmc.core.crypto-object (core 2.stable)"  -> idLJsndmcoCryptodsn  (1 generic line)
+McshTchInf000012:1902  idLJsndmcoDnsgtr  "Jsndmc.core.dns-object (core 2.stable)"  -> idLJsndmcoDnsdsn  (1 generic line)
+McshTchInf000012:1984  idLJsndmcoFsgtr  "Jsndmc.core.fs-object (core 3=stable)"  -> idLJsndmcoFsdsn  (1 generic line)
+McshTchInf000012:2433  idLJsndmcoHttpsgtr  "Jsndmc.core.https-object (core 2.stable)"  -> idLJsndmcoHttpsdsn  (1 generic line)
+McshTchInf000012:2501  idLJsndmcoNetgtr  "Jsndmc.core.net-object (core 2.stable)"  -> idLJsndmcoNetdsn  (1 generic line)
+McshTchInf000012:2553  idLJsndmcoOsgtr  "Jsndmc.core.os-object (core 2.stable)"  -> idLJsndmcoOsdsn  (1 generic line)
+McshTchInf000012:2603  idLJsndmcoPathgtr  "Jsndmc.core.path-object (core 2.stable)"  -> idLJsndmcoPathdsn  (1 generic line)
+McshTchInf000012:2648  idLJsndmcoReadlinegtr  "Jsndmc.core.readline-object (core 2.stable)"  -> idLJsndmcoReadlinedsn  (1 generic line)
+McshTchInf000012:2692  idLJsndmcoString_decodergtr  "Jsndmc.core.string_decoder-object (2.stable)"  -> idLJsndmcoString_decoderdsn  (1 generic line)
+McshTchInf000012:2722  idLJsndmcoTlsgtr  "Jsndmc.core.tls-object (core 2.stable)"  -> idLJsndmcoTlsdsn  (1 generic line)
+McshTchInf000012:2752  idLJsndmcoUrlgtr  "Jsndmc.core.url-object (core 2.stable)"  -> idLJsndmcoUrldsn  (1 generic line)
+McshTchInf000012:2844  idLJsndmcoVmgtr  "Jsndmc.core.vm-object (core 2.stable)"  -> idLJsndmcoVmdsn  (1 generic line)
+McshTchInf000012:2874  idLJsndmcoZlibgtr  "Jsndmc.core.zlib-object (core 2.stable)"  -> idLJsndmcoZlibdsn  (1 generic line)
+McshTchInf000012:3457  idLJsndArrayBuffergtr  "JsndAPI'ArrayBuffer-function"  -> idLJsndArrayBufferdsn  (2 generic lines)
+McshTchInf000012:3537  idLJsndconsolegtr  "JsndAPI'console-object"  -> idLJsndconsoledsn  (2 generic lines)
+
+=== SKIPPED (44) ===
+McshTchInf000010:1105  idLJsgnArraypgtr  "Jsa'Array.prototype"  has child sections
+McshTchInf000010:2156  idLJsgnFunctiongtr  "Jsf'Function-function"  line is not a "* X" item: <br>It is important to mention here that <code>Function</cod
+McshTchInf000010:2857  idLJsgnlgtr  "Jssut.null"  line is not a "* X" item: <br>===
+McshTchInf000010:2923  idLJsgnNumberpgtr  "Jsn'Number.prototype"  has child sections
+McshTchInf000010:3211  idLJsgnoCsrgtr  "Jso.CONSTRUCTOR"  line is not a "* X" item: <br>...
+McshTchInf000010:3512  idLJsgnStringpgtr  "String.prototype-object of Jss"  has child sections
+McshTchInf000010:3784  idLJsgnmwogtr  "jsAPI'most-whole-object (global)"  has child sections
+McshTchInf000011:70  idLJsbrarcgtr  "01_archetype of Jsbr_lago"  has child sections
+McshTchInf000011:3351  idLJsbroEvttgtgtr  "Jsbrevent'EventTarget-object (oEvttgt)"  line is not a "* X" item: <br>===
+McshTchInf000011:4688  idLJsbrelngnc  "03_evaluation of Jsbr_lago"  has child sections
+McshTchInf000012:727  idLJsndmodulegtr  "Jsndmmbr.module-object (Jsndmobt)"  has child sections
+McshTchInf000012:920  idLJsndrequiregtr  "Jsndmmbr.require-function"  has child sections
+McshTchInf000012:1533  idLJsndmcfEventsgtr  "Jsndmc.core.events-function (core 2.stable)"  has child sections
+McshTchInf000012:1670  idLJsndmcfStreamgtr  "Jsndmc.core.stream-function (core 2.stable)"  has child sections
+McshTchInf000012:1742  idLJsndoStreamgtr  "Jsnd_lago'stream-object"  line is not a "* X" item: <br>The-objects of <a class="clsPreview" href="#idLJsndoStre
+McshTchInf000012:2104  idLJsndmcoHttpgtr  "Jsndmc.core.http-object (core 2.stable)"  has child sections
+McshTchInf000012:2794  idLJsndmcoUtilgtr  "Jsndmc.core.util-object (core 2.stable)"  has child sections
+McshTchInf000012:3566  idLJsndprocessgtr  "JsndAPI'process-object"  has child sections
+McshTchInf000012:3711  idLJsndstcgnc  "algo'SENTENCE"  has child sections
+McshTchInf000012:6098  idLJsndpkgEslintgnc  "Npmpkg.eslint"  has child sections
+McshTchInf000012:7643  idLJsndpkgJakegtr  "Npmpkg.jake (ljnjake)"  has child sections
+McshTchInf000013:60  idLJselarcgnc  "archetype of Jsel_lago"  no idLJselarcdsn description::
+McshTchInf000013:299  idLJselmainelngnc  "Jsel_lago-API'electron-object.main-process"  has child sections
+McshTchInf000013:1251  idLJselpgmpkgjsngnc  "package.json-file of JselApp"  has child sections
+McshTchInf000015:7708  idAlgntxBstmpgnc  "exchange-ogn.Bitstamp (3rd - EU)"  has child sections
+McshTchInf000016:4766  idDbcelngnc  "11_evaluation of AgntBkcn"  has child sections
+McshTchInf000016:7828  idTzsnetgnc  "AgntBkcn.time.Tezos-XTZ {2018-06-30},"  has child sections
+McshTchInf000016:7925  idZecnetgnc  "AgntBkcn.time.Zcash-ZEC {2016-10-28},"  has child sections
+McshTchInf000016:8125  idLskevuCgnc  "ĐLisk'exchange-value-unit.Consensus (LSKevuC {2016})"  has child sections
+McshTchInf000016:8800  idDcrnodgnc  "Dcrnet'Node (dcrnod)"  has child sections
+McshTchInf000016:10060  idPivxnetgnc  "AgntBkcn.time.PIVX {2016-01-29},"  has child sections
+McshTchInf000016:10165  idBtsnetgnc  "AgntBkcn.time.BitShares2-BTS {2015-10-13},"  has child sections
+McshTchInf000016:12298  idDashevuCgnc  "DevuDASH of Ddash-net"  has child sections
+McshTchInf000016:12695  idEmcnetgnc  "AgntBkcn.time.Emercoin-EMC {2013-12-11},"  has child sections
+McshTchInf000016:12802  idNxtgncgnc  "Nxt-net'GENERIC"  no idNxtgncdsn description::
+McshTchInf000016:13176  idPpcnetgnc  "AgntBkcn.time.Peercoin-PPC {2012-08-19},"  has child sections
+McshTchInf000016:14180  idDfnnetgnc  "AgntBkcn.Dfinity-DFN"  has child sections
+McshTchInf000017:112  idDescriptiongnc  "overview of AgntBtcn"  no idOverviewdsn description::
+McshTchInf000017:1408  idBtcbcngnc  "blockchain of AgntBtcn"  has child sections
+McshTchInf000017:1500  idBtcblkgnc  "blockchain'Block"  has child sections
+McshTchInf000017:5377  idBtcevuCegrtgnc  "DvBTC'Exchange-rate"  has child sections
+McshTchInf000018:2297  idEthcsagnc  "Algoethrbkcn'consensus-algorithm"  has child sections
+McshTchInf000018:4008  idEthevuCNbkngnc  "EthrassetCN'Backness"  no idEthevuCNbkndsn description::
+McshTchInf000018:7122  idEthsolgnc  "DcontractEth'language.SOLIDITY"  has child sections

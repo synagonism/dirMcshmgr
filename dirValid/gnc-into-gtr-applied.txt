@@ -1,0 +1,21 @@
+=== FOLDED (14) ===
+McshTchInf000011:193  idLJsbrsutgnc  "semantic-unit-node of Jsbr_algo"  -> idLJsbrsutgtr in idLJsbrsutgstr  (1 line(s) added)
+McshTchInf000011:872  idLJsbrognc  "Jsbrsut.OBJECT (Jsbro)"  -> idLJsbrogtr in idLJsbrogstr  (1 line(s) added)
+McshTchInf000011:1360  idLJsbrapignc  "Jsbrsut.API"  -> idLJsbrapigtr in idLJsbrapigstr  (1 line(s) added)
+McshTchInf000011:2614  idLJsbrlbrgnc  "Jsbr_algo.LIBRARY"  -> idLJsbrlbrgtr in idLJsbrlbrgstr  (1 line(s) added)
+McshTchInf000012:253  idLJsndsutgnc  "algo'SEMANTIC-UNIT"  -> idLJsndsutgtr in idLJsndsutgstr  (1 line(s) added)
+McshTchInf000012:310  idLJsndfgnc  "Jsnd_lago-Sut.FUNCTION"  -> idLJsndfgtr in idLJsndfgstr  (1 line(s) added)
+McshTchInf000013:1148  idLJselpgmgnc  "algo.PROGRAM (app)"  -> idLJselpgmgtr in idLJselpgmgstr  (1 line(s) added)
+McshTchInf000015:595  idAlgntprlgnc  "02_protocol of netAlgo"  -> idAlgntprlgtr in idAlgntprlgstr  (1 line(s) added)
+McshTchInf000016:293  idDbcprlgnc  "02_protocol of AgntBkcn"  -> idDbcprlgtr in idDbcprlgstr  (1 line(s) added)
+McshTchInf000017:6521  idBtcwltgnc  "wallet of AgntBtcn"  -> idBtcwltgtr in idBtcwltgstr  (1 line(s) added)
+McshTchInf000018:2327  idEthtxgnc  "Algoethrbkcn'transaction"  -> idEthtxgtr in idEthtxgstr  (1 line(s) added)
+McshTchInf000018:3634  idEthevuCgnc  "Ethereum-asset.CONSENSUS (Ether-ETH, Ξ, {2015})"  -> idEthevuCgtr in idEthevuCgstr  (1 line(s) added)
+McshTchInf000018:6364  idEthdapgnc  "program.Dapp of AgntEthr"  -> idEthdapgtr in idEthdapgstr  (1 line(s) added)
+McshTchInf000020:2086  idChbtmtgnc  "Evu.TIME"  -> idChbtmtgtr in idChbtmtgstr  (1 line(s) added)
+
+=== LINKS-REPOINTED (1) ===
+McshTchInf000011  #idLJsbrognc -> #idLJsbrogtr  (10x)
+
+=== SKIPPED (1) ===
+McshTchInf000012:3329  idLJsndmgognc  "JsndAPI'most-generic-object (Object.prototype)"  idLJsndgst has 0 generic-tree:: paragraphs

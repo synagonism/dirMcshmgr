@@ -38,7 +38,7 @@
  *   It SKIPS and reports: a-para with more than the-creation-line, a-description
  *   with an-other creation-date, a-taken id, a-para outside a-section.
  *
- *   --missing: every section the-validator reports as Mcsh02 (no description::)
+ *   --missing: every section the-validator reports as Mvrw01 (no description::)
  *   gets a-description:: with the-date of the-run, right after its heading.
  *   A-description with a-typo-title (Descripton::, descption::) gets its title
  *   fixed instead. It SKIPS and reports: a-section-id that occurs 2+ times,
@@ -52,20 +52,28 @@
  *   without description::.
  *
  *   --undated: EVERY description:: without × Mcsh-creation gets the-run-date as
- *   its first line (plain and div form). A-description the-validator's Mcsh03
- *   calls empty is reported EMPTY, since afterwards Mcsh03 no longer sees it.
+ *   its first line (plain and div form). A-description the-validator's Mvrw02
+ *   calls empty is reported EMPTY, since afterwards Mvrw02 no longer sees it.
  *   It SKIPS a-title-line with text after description::.
  *
  *   --nameid: the-name::-para of idOverview gets the-id idName (its <p id> and its
  *   own clsHide-anchor). It SKIPS when idName is used, the-old id is not unique,
  *   or any file links to the-old id.
  *
+ *   --headgap: the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* files and the-law
+ *   Hitp* files of dirStnlaw: a-part deeper than its whole's level + 1 moves up,
+ *   with its parts. A-law-article (Article, Άρθρο) keeps its level: in a-law all
+ *   articles have the-same level. Other Hitp* files are not touched.
+ *
+ *   --nest: the-obvious Hvrw08 nesting-errors, same files as --headgap: a-whole
+ *   whose parts from X on have its OWN level gets its </section> moved before X.
+ *
  * INPUT: the-path of a-dirMcsh-worldview.
  * OUTPUT: dry-run by default: what it would do. With --fix it writes the-files,
  *   after it copies each one into dirValid/createMcsh-backup/<time>/.
  *   The-report goes to dirValid/createMcsh.txt.
  * RUN:
- *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid] [--fix]
+ *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest] [--fix]
  */
 
 import moFs from 'fs'
@@ -74,10 +82,14 @@ import { fileURLToPath } from 'url'
 import { fReadFileAllHitp } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
+import { rHeadArticle } from './structuralHitp.js'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-8-0.2026-10-15: --nest, the-obvious Hvrw08 nesting errors',
+    'createMcsh.mjs.0-7-0.2026-10-15: --headgap exempts law articles, law files included',
+    'createMcsh.mjs.0-6-0.2026-10-15: --headgap, the-obvious Hvrw07 heading gaps',
     'createMcsh.mjs.0-5-0.2026-10-04: --nameid, idOverview name::-para id = idName',
     'createMcsh.mjs.0-4-0.2026-10-04: --undated, every description gets a-creation-date',
     'createMcsh.mjs.0-3-0.2026-10-04: --overview; renamed from creaMcsh.mjs',
@@ -318,7 +330,7 @@ function fPlanFile(sRawIn, sNameShortIn) {
 /**
  * DOING: --missing mode: for the-sections of one file without description::,
  *   it plans a-new description (or a-fixed typo-title), it changes nothing.
- * INPUT: the-ids of the-sections, as the-validator reports them (Mcsh02).
+ * INPUT: the-ids of the-sections, as the-validator reports them (Mvrw01).
  * OUTPUT: { aoEdit, aoNote, sRawNew }
  */
 function fPlanMissing(sRawIn, sNameShortIn, aIdSectIn, sDateIn) {
@@ -451,8 +463,8 @@ function fPlanOverview(sRawIn, sNameShortIn) {
  * DOING: --undated mode: EVERY description:: of a-file without × Mcsh-creation
  *   gets "<br>× Mcsh-creation: {date}" as its first line: the-plain form
  *   <p id="..">description:: and the-div form <div id=".."> + <p>description::.
- *   A-description that the-validator's Mcsh03 calls empty is noted EMPTY first,
- *   because after the-insertion Mcsh03 no longer sees it as empty.
+ *   A-description that the-validator's Mvrw02 calls empty is noted EMPTY first,
+ *   because after the-insertion Mvrw02 no longer sees it as empty.
  * OUTPUT: { aoEdit, aoNote, sRawNew }, one INSERT-note per file with the-count.
  */
 function fPlanUndated(sRawIn, sNameShortIn, sDateIn) {
@@ -485,7 +497,7 @@ function fPlanUndated(sRawIn, sNameShortIn, sDateIn) {
     const sText = aLine.slice(nL, nEnd + 1).join('\n');
     if (rCreaDesc.test(sText)) continue;
 
-    // the-Mcsh03-test of structuralMcsh.js: empty = nothing but "·", "×", spaces
+    // the-Mvrw02-test of structuralMcsh.js: empty = nothing but "·", "×", spaces
     const sContent = fStripTags(sText).replace(/^description::\s*/i, '').replace(/[·\s×]/g, '').trim();
     if (sContent.length === 0) {
       aoNote.push(`EMPTY  ${sNameShortIn}:${nL + 1}  #${sIdDesc} description:: has no content`);
@@ -563,6 +575,185 @@ function fPlanNameId(sRawIn, sNameShortIn, sNameFileIn, aRawAllIn) {
 }
 
 /**
+ * DOING: --headgap mode: the-obvious Hvrw07 heading-gaps. It trusts the-<section>
+ *   nesting and walks it top-down: a-top-level section is h1, a-part is its
+ *   whole's level + 1. A-part DEEPER than that (h1 → h3) moves up, and its parts
+ *   move with it. A-part at its whole's level or above (h2 in h2, h1 in h2), or
+ *   a-top-level not h1, means a-wrong nesting: its subtree is left untouched.
+ *   A-law-article (rHeadArticle) never moves: its parts are walked from ITS level.
+ *   A-move edits the-heading-lines only: <h3 id="xH3"> → <h2 id="xH2">, its
+ *   clsHide-anchor #xH3 → #xH2, </h3> → </h2>.
+ *   It SKIPS, with its subtree: a-section-id not unique, a-heading not found,
+ *   a-new id taken, ANY link to the-old heading-id (in the-file beyond its own
+ *   anchor, or <file>#id from an-other file).
+ * INPUT: oFileHitpIn: the-file from fReadFileAllHitp (its aoSect gives the-tree),
+ *   aRawAllIn: the-texts of all files.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanHeadGap(sRawIn, sNameShortIn, sNameFileIn, oFileHitpIn, aRawAllIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+
+  // the-tree: the-parts of each whole, in document order
+  const aoSect = oFileHitpIn.aoSect.filter(oSect =>
+    oSect.sNameId && oSect.nLine != null && oSect.nHeadingLevel != null);
+  const oSetIdSect = new Set(aoSect.map(oSect => oSect.sNameId));
+  const oMapPart = new Map();
+  for (const oSect of aoSect) {
+    const sIdWhole = oSect.sIdWhole_elmt ?? null;
+    if (!oMapPart.has(sIdWhole)) oMapPart.set(sIdWhole, []);
+    oMapPart.get(sIdWhole).push(oSect);
+  }
+  for (const aoPart of oMapPart.values()) aoPart.sort((oA, oB) => oA.nLine - oB.nLine);
+
+  /**
+   * DOING: it plans the-move of one heading from level nLevelIn to nLevelNewIn.
+   * OUTPUT: true when planned, false when skipped (a-note says why).
+   */
+  function fMove(oSectIn, nLevelIn, nLevelNewIn) {
+    const sLoc = `${sNameShortIn}:${oSectIn.nLine}`;
+    const fSkip = sWhy => { aoNote.push(`SKIP   ${sLoc}  #${oSectIn.sNameId}: ${sWhy}`); return false; };
+    if (fCount(sRawIn, `id="${oSectIn.sNameId}"`) !== 1) return fSkip('the-section-id is not unique');
+    const nSect = oSectIn.nLine - 1;
+    if (fLineClean(aLine[nSect]).match(rSectOpen)?.[1] !== oSectIn.sNameId) return fSkip('its <section> is not on its line');
+    const nOwnEnd = fFindSectOwnEnd(aLine, nSect);
+    let nHead = -1, sId = null;
+    for (let nH = nSect + 1; nH < nOwnEnd; nH++) {
+      const aHead = aLine[nH].match(/<h([1-9]) id="([^"]+)"/);
+      if (aHead) { if (Number(aHead[1]) === nLevelIn) { nHead = nH; sId = aHead[2]; } break; }
+    }
+    if (nHead === -1) return fSkip(`no <h${nLevelIn} id> heading`);
+    let nClose = nHead;
+    while (nClose < nOwnEnd && !aLine[nClose].includes(`</h${nLevelIn}>`)) nClose++;
+    if (nClose === nOwnEnd) return fSkip(`no </h${nLevelIn}>`);
+
+    // the-id carries its level: idXH3 → idXH2; other ids stay
+    const sIdNew = sId.endsWith(`H${nLevelIn}`) ? sId.slice(0, -1) + nLevelNewIn : sId;
+    if (sIdNew !== sId) {
+      if (sRawIn.includes(`id="${sIdNew}"`)) return fSkip(`the-new id ${sIdNew} is taken`);
+      const nLinkIn = fCount(sRawIn, `href="#${sId}"`) - fCount(sRawIn, `class="clsHide" href="#${sId}"`);
+      const nLinkOut = aRawAllIn.reduce((nSum, sRaw) => nSum + fCount(sRaw, `${sNameFileIn}#${sId}"`), 0);
+      if (nLinkIn > 0 || nLinkOut > 0) {
+        return fSkip(`#${sId} has links: ${nLinkIn} in the-file, ${nLinkOut} from other files`);
+      }
+    }
+
+    // one edit per changed line, so 2 changes on one line never undo each other
+    for (let nL = nHead; nL <= nClose; nL++) {
+      let sLine = aLine[nL];
+      if (nL === nHead) sLine = sLine.replace(`<h${nLevelIn} id="${sId}"`, `<h${nLevelNewIn} id="${sIdNew}"`);
+      sLine = sLine.replace(`class="clsHide" href="#${sId}"`, `class="clsHide" href="#${sIdNew}"`);
+      if (nL === nClose) sLine = sLine.replace(`</h${nLevelIn}>`, `</h${nLevelNewIn}>`);
+      if (sLine !== aLine[nL]) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+    }
+    aoNote.push(`HEADING ${sLoc}  #${sId} h${nLevelIn} -> h${nLevelNewIn}`);
+    return true;
+  }
+
+  function fWalk(oSectIn, nLevelExpectIn) {
+    let nLevelNew;
+    if (rHeadArticle.test(oSectIn.sNameTitle)) {
+      nLevelNew = oSectIn.nHeadingLevel; // in a-law all articles have the-same level
+    } else if (oSectIn.nHeadingLevel === nLevelExpectIn) {
+      nLevelNew = nLevelExpectIn;
+    } else if (oSectIn.nHeadingLevel > nLevelExpectIn && nLevelExpectIn > 1) {
+      if (!fMove(oSectIn, oSectIn.nHeadingLevel, nLevelExpectIn)) return;
+      nLevelNew = nLevelExpectIn;
+    } else {
+      return; // a-wrong nesting, not obvious
+    }
+    for (const oPart of oMapPart.get(oSectIn.sNameId) ?? []) fWalk(oPart, nLevelNew + 1);
+  }
+
+  // the-roots: top-level (h1), or a-whole without heading (its own level)
+  for (const oSect of aoSect) {
+    if (oSect.sIdWhole_elmt == null) fWalk(oSect, 1);
+    else if (!oSetIdSect.has(oSect.sIdWhole_elmt)) fWalk(oSect, oSect.nHeadingLevel);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: --nest mode: the-obvious Hvrw08 nesting-errors. A-whole Y contains, from
+ *   a-part X on, parts at Y's OWN level (h2 in h2): the-</section> of Y belongs
+ *   before X. It MOVES that line: the-</section> of Y goes right before X (before
+ *   the-blank line above X), and the-old one is deleted. X and the-parts after it
+ *   become siblings of Y.
+ *   Obvious only when, else SKIP with a-note:
+ *   - the-file has no unclosed or stray <section> (Hvre07), no duplicated id of Y or its parts,
+ *   - Y is no law-article, and EVERY part of Y from X on has Y's level
+ *     (a-part above it, h1 in h2, may be a-wrong heading, not a-wrong nesting),
+ *   - between X and the-old </section>, Y has no own text: only its parts and blank lines,
+ *   - the-old line is only </section>, X's line is only its <section id>.
+ * INPUT: oFileHitpIn: the-file from fReadFileAllHitp.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanNest(sRawIn, sNameShortIn, oFileHitpIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const fDone = () => ({ aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) });
+
+  const aoSect = oFileHitpIn.aoSect.filter(oSect =>
+    oSect.sNameId && oSect.nLine != null && oSect.nHeadingLevel != null);
+  const oMapSect = new Map(aoSect.map(oSect => [oSect.sNameId, oSect]));
+  const oMapPart = new Map();
+  for (const oSect of aoSect) {
+    if (!oSect.sIdWhole_elmt) continue;
+    if (!oMapPart.has(oSect.sIdWhole_elmt)) oMapPart.set(oSect.sIdWhole_elmt, []);
+    oMapPart.get(oSect.sIdWhole_elmt).push(oSect);
+  }
+  const oSetIdDup = new Set(oFileHitpIn.aoIdDup.map(oDup => oDup.sName));
+  const bTagBad = oFileHitpIn.aoTagBad.some(oBad => oBad.sTag === 'section');
+  const oSetLineUsed = new Set();
+
+  for (const [sIdWhole, aoPart] of oMapPart) {
+    const oWhole = oMapSect.get(sIdWhole);
+    if (!oWhole || rHeadArticle.test(oWhole.sNameTitle)) continue;
+    aoPart.sort((oA, oB) => oA.nLine - oB.nLine);
+    const nFirst = aoPart.findIndex(oPart =>
+      oPart.nHeadingLevel <= oWhole.nHeadingLevel && !rHeadArticle.test(oPart.sNameTitle));
+    if (nFirst === -1) continue;
+    const oFirst = aoPart[nFirst];
+    const sLoc = `${sNameShortIn}:${oFirst.nLine}`;
+    const fSkip = sWhy => aoNote.push(`SKIP   ${sLoc}  #${sIdWhole} > #${oFirst.sNameId}: ${sWhy}`);
+
+    if (bTagBad) { fSkip('the-file has an-unclosed or stray <section> (Hvre07)'); continue; }
+    const aoMove = aoPart.slice(nFirst);
+    if ([oWhole, ...aoPart].some(oSect => oSetIdDup.has(oSect.sNameId))) { fSkip('a-duplicated id'); continue; }
+    const oOther = aoMove.find(oPart => oPart.nHeadingLevel !== oWhole.nHeadingLevel);
+    if (oOther) {
+      fSkip(`#${oOther.sNameId} (line ${oOther.nLine}) is <h${oOther.nHeadingLevel}>, not <h${oWhole.nHeadingLevel}> as #${sIdWhole}`);
+      continue;
+    }
+    // Y's own text between X and its </section>: only its parts and blank lines
+    const nClose = oWhole.nLineClose - 1;
+    const nOpen = oFirst.nLine - 1;
+    let nOwn = -1;
+    for (let nL = nOpen; nL < nClose && nOwn === -1; nL++) {
+      const bInPart = aoMove.some(oPart => nL >= oPart.nLine - 1 && nL <= oPart.nLineClose - 1);
+      if (!bInPart && fLineClean(aLine[nL]).trim() !== '') nOwn = nL;
+    }
+    if (nOwn !== -1) { fSkip(`#${sIdWhole} has own text at line ${nOwn + 1}, after #${oFirst.sNameId}`); continue; }
+    if (fLineClean(aLine[nClose]).trim() !== '</section>') { fSkip(`line ${nClose + 1} is not only </section>`); continue; }
+    if (fLineClean(aLine[nOpen]).trim() !== `<section id="${oFirst.sNameId}">`) { fSkip(`line ${nOpen + 1} is not only its <section id>`); continue; }
+
+    // the-new </section>: before the-blank lines above X
+    let nIns = nOpen;
+    while (nIns > 0 && fLineClean(aLine[nIns - 1]).trim() === '') nIns--;
+    if ([nIns, nClose].some(nL => oSetLineUsed.has(nL))) { fSkip('an-other move uses its lines'); continue; }
+    oSetLineUsed.add(nIns); oSetLineUsed.add(nClose);
+    // the-same line moves: its indentation and line-end stay
+    aoEdit.push({ nAt: nClose, nDel: 1, aIns: [] });
+    aoEdit.push({ nAt: nIns, nDel: 0, aIns: [aLine[nClose]] });
+    aoNote.push(`NEST   ${sLoc}  </section> of #${sIdWhole} moved from line ${nClose + 1} to before #${oFirst.sNameId}` +
+      ` (${aoMove.length} section${aoMove.length > 1 ? 's' : ''} become its siblings)`);
+  }
+  return fDone();
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -588,22 +779,27 @@ async function fMain() {
   const bOverview = aArg.includes('--overview');
   const bUndated = aArg.includes('--undated');
   const bNameId = aArg.includes('--nameid');
-  if ([bMissing, bOverview, bUndated, bNameId].filter(Boolean).length > 1) {
-    console.error('--missing, --overview, --undated and --nameid are separate runs: give one of them');
+  const bHeadGap = aArg.includes('--headgap');
+  const bNest = aArg.includes('--nest');
+  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest].filter(Boolean).length > 1) {
+    console.error('--missing, --overview, --undated, --nameid, --headgap and --nest are separate runs: give one of them');
     process.exit(1);
   }
   if (!sNameDir) {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
-    console.log('  --missing    a-description:: with the-run-date for every Mcsh02-section');
+    console.log('  --missing    a-description:: with the-run-date for every Mvrw01-section');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
     console.log('  --undated    EVERY description:: without × Mcsh-creation gets the-run-date');
     console.log('  --nameid     the-name::-para of idOverview gets the-id idName');
+    console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
+    console.log('               law-articles keep their level');
+    console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt; with --fix also dirValid/createMcsh-backup/<time>/');
     process.exit(1);
@@ -646,7 +842,30 @@ async function fMain() {
   }
 
   let sCount;
-  if (bNameId) {
+  if (bNest) {
+    for (const oFile of fReadFileAllHitp(sNameDir)) {
+      const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
+      // the-files of --headgap: Mcsh*, and of the-Hitp* files only the-laws of dirStnlaw
+      const bLaw = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).includes('dirStnlaw');
+      if (!oFile.sNameFile.startsWith('Mcsh') && !bLaw) continue;
+      const sRaw = moFs.readFileSync(oFile.sPathFile, 'utf8');
+      fWriteFile(oFile.sPathFile, sRaw, sNameShort, fPlanNest(sRaw, sNameShort, oFile));
+    }
+    sCount = `${oCount.NEST ?? 0} </section> moved`;
+  } else if (bHeadGap) {
+    // all files read once: a-move is skipped when ANY file links to the-old heading-id
+    const aoFileHitp = fReadFileAllHitp(sNameDir);
+    const aRawAll = aoFileHitp.map(oFile => moFs.readFileSync(oFile.sPathFile, 'utf8'));
+    aoFileHitp.forEach((oFile, nI) => {
+      const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
+      // Mcsh* files, and of the-Hitp* files only the-laws of dirStnlaw
+      const bLaw = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).includes('dirStnlaw');
+      if (!oFile.sNameFile.startsWith('Mcsh') && !bLaw) return;
+      fWriteFile(oFile.sPathFile, aRawAll[nI], sNameShort,
+        fPlanHeadGap(aRawAll[nI], sNameShort, oFile.sNameFile, oFile, aRawAll));
+    });
+    sCount = `${oCount.HEADING ?? 0} headings moved up`;
+  } else if (bNameId) {
     // all files read once: a-rename is skipped when ANY file links to the-old id
     const aPathAll = fFindFileAll(sNameDir);
     const aRawAll = aPathAll.map(sPathFile => moFs.readFileSync(sPathFile, 'utf8'));
@@ -687,14 +906,14 @@ async function fMain() {
     sCount = `${nCreate + nInsert + nDelete} paras deleted · ${nCreate} descriptions created · ` +
       `${nInsert} lines inserted`;
   } else {
-    // the-sections without description:: are what the-VALIDATOR says: Mcsh02
+    // the-sections without description:: are what the-VALIDATOR says: Mvrw01
     const sDate = fFindDateLocal();
     const aoFileHitp = fReadFileAllHitp(sNameDir).filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
     const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
       fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
     const ooIdSect = {};
     for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
-      if (oIssue.sCode === 'Mcsh02') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
+      if (oIssue.sCode === 'Mvrw01') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
     }
     const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
     for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
@@ -710,7 +929,7 @@ async function fMain() {
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  createMcsh${bMissing ? ' --missing' : ''}${bOverview ? ' --overview' : ''}` +
-      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''} ` +
+      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oCount.nFile} files ${bFix ? 'written' : 'to write'} · ${sCount} · ` +

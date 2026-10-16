@@ -15,7 +15,7 @@
  *   sNameTitle,     // <title> text (name part only)
  *   sVersion,       // e.g. "HitpStnStd000.8-2-3.2024-05-26"
  *   nLineTitle,     // line of the <title>
- *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt, nLine }]
+ *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt, nLine, nLineClose }]
  *   aoElmt,         // heading+paragraph elements of content sections:
  *                   //   [{ sType:'head'|'para', sNameId, nLevel, sHrefSelf, nLine, sIdSect }]
  *   oSetId,         // Set<string> of every id= in the file
@@ -326,6 +326,9 @@ export function fReadFileHitp(sPathFile) {
       sIdWhole_elmt: oRawSect.sIdWhole_elmt,
       // the-line of <section id>: aoSect is NOT in document order, Hvrw07 sorts by it
       nLine: oMapIdLine.get(oRawSect.sNameId) ?? null,
+      // the-line of its </section>: sRawHtml runs from <section to </section>
+      nLineClose: oMapIdLine.has(oRawSect.sNameId)
+        ? oMapIdLine.get(oRawSect.sNameId) + oRawSect.sRawHtml.split('\n').length - 1 : null,
     });
 
     // element-level checks skip infrastructure sections (idMeta/idComment/idSupport);

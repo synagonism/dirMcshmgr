@@ -1,0 +1,90 @@
+=== ADDED (34) ===
+McshTchInf000008:670  idLHitptctdScnstr  -> idLHitptctdScngstr h5  of Hitpsection  2 nam + 6 items
+McshTchInf000010:3021  idLJsgnombrstr  -> idLJsgnombrgstr h4  of Jsomembr  2 nam + 10 items
+McshTchInf000015:859  idAlgntnodFulstr  -> idAlgntnodFulgstr h3  of AgntnodeFull  2 nam + 2 items
+McshTchInf000015:2276  idAlgntevusvcgstr  -> idAlgntevusvcggstr h3  of Agntasset'service  2 nam + 2 items
+McshTchInf000015:3677  idAlgntevuAggstr  -> idAlgntevuAgggstr h3  of AgntassetAggr  2 nam + 3 items
+McshTchInf000015:3988  idAlgntevuMoesvcgstr  -> idAlgntevuMoesvcggstr h4  of AgntassetExvu'service  2 nam + 4 items
+McshTchInf000015:7028  idAlgntognBrdgstr  -> idAlgntognBrdggstr h3  of AgntogznBridge  2 nam + 2 items
+McshTchInf000015:9267  idAlgntscrtstr  -> idAlgntscrtgstr h4  of AgntevalConSecurity  2 nam + 4 items
+McshTchInf000015:9639  idAlgntenvtstr  -> idAlgntenvtgstr h2  of netAlgo'environment  2 nam + 2 items
+McshTchInf000015:10639  idAlgntsvcndgstr  -> idAlgntsvcndggstr h4  of AgntsrvcFunding  2 nam + 4 items
+McshTchInf000015:10675  idAlgntsvcStrtupfdgstr  -> idAlgntsvcStrtupfdggstr h5  of AgntsrvcStartup  2 nam + 2 items
+McshTchInf000015:10885  idAlgntsvcInfstr  -> idAlgntsvcInfgstr h3  of AgntsrvcInfo  2 nam + 1 items
+McshTchInf000015:11363  idAlgntsvcRkgstr  -> idAlgntsvcRkggstr h4  of AgntsrvcRecord  2 nam + 9 items
+McshTchInf000016:3325  idDbcevuCNstr  -> idDbcevuCNgstr h3  of BkcnassetApdgNo  2 nam + 4 items
+McshTchInf000017:129  idBtcattIdxstr  -> idBtcattIdxgstr h2  of Btcnvcbr  2 nam + 95 items
+McshTchInf000017:7748  idBtchmnstr  -> idBtchmngstr h2  of Btcnhumn  2 nam + 8 items
+McshTchInf000017:8209  idBtcognMrctstr  -> idBtcognMrctgstr h3  of BtcnogznMerchant  2 nam + 1 items
+McshTchInf000018:3579  idEthevustr  -> idEthevugstr h2  of Ethrasset  2 nam + 2 items
+McshTchInf000018:8793  idEthsolvGblstr  -> idEthsolvGblgstr h6  of Solxvg  2 nam + 5 items
+McshTchInf000018:11191  idEthwltstr  -> idEthwltgstr h2  of Ethrwllt  2 nam + 4 items
+McshTchInf000018:11330  idEthhmnstr  -> idEthhmngstr h2  of Ethrhumn  2 nam + 15 items
+McshTchInf000019:366  idDeOznskhrExlstr  -> idDeOznskhrExlgstr h3  of DaoskhrExternal  2 nam + 5 items
+McshTchInf000019:751  idDeOzngovgstr  -> idDeOzngovggstr h3  of Daoadmg  2 nam + 6 items
+McshTchInf000019:3803  idDaostkgovgstr  -> idDaostkgovggstr h4  of Daostckadmg  2 nam + 4 items
+McshTchInf000020:1379  idChbctpstr  -> idChbctpgstr h3  of Chrntechsc  2 nam + 27 items
+McshTchInf000020:1444  idChbctpAststr  -> idChbctpAstgstr h4  of ChrntechscChronoBankAsset  2 nam + 2 items
+McshTchInf000020:1620  idChbctpOndstr  -> idChbctpOndgstr h4  of ChrntechscOwned  2 nam + 2 items
+McshTchInf000024:401  idSteemaststr  -> idSteemastgstr h2  of Steemasset  2 nam + 4 items [gtr]
+McshTchInf000024:2079  idSteemwltstr  -> idSteemwltgstr h2  of Steemwalt  2 nam + 3 items [gtr]
+McshTchInf000024:3488  idSteemithmnstr  -> idSteemithmngstr h3  of Steemit'human  2 nam + 2 items
+McshTchInf000024:3648  idSteemhmnstr  -> idSteemhmngstr h2  of Steemhumn  2 nam + 8 items
+McshTchInf000024:3756  idSteemevalConstr  -> idSteemevalCongstr h3  of SteemevalCon  2 nam + 2 items
+McshTchInf000031:677  idLCppsuntNbrIngrstr  -> idLCppsuntNbrIngrgstr h4  of CppznItgr  2 nam + 8 items
+McshTchInf000031:2457  idLCpptoolCplrstr  -> idLCpptoolCplrgstr h3  of CppztoolCompiler  2 nam + 10 items
+
+=== NO-SINGLE-MAIN-NAME (0) ===
+(none)
+
+=== ID-COLLISION (0) ===
+(none)
+
+=== LINKED-PARA (0) ===
+(none)
+
+=== WOULD-LOSE (0) ===
+(none)
+
+=== GENERIC-FOLDED (0) ===
+(none)
+
+=== GTR-REUSED (2) ===
+McshTchInf000024:401  idSteemaststr  idSteemastgtr
+McshTchInf000024:2079  idSteemwltstr  idSteemwltgtr
+
+=== NAME-SYNTHESISED (34) ===
+McshTchInf000008:670  idLHitptctdScnstr  2
+McshTchInf000010:3021  idLJsgnombrstr  2
+McshTchInf000015:859  idAlgntnodFulstr  2
+McshTchInf000015:2276  idAlgntevusvcgstr  2
+McshTchInf000015:3677  idAlgntevuAggstr  2
+McshTchInf000015:3988  idAlgntevuMoesvcgstr  2
+McshTchInf000015:7028  idAlgntognBrdgstr  2
+McshTchInf000015:9267  idAlgntscrtstr  2
+McshTchInf000015:9639  idAlgntenvtstr  2
+McshTchInf000015:10639  idAlgntsvcndgstr  2
+McshTchInf000015:10675  idAlgntsvcStrtupfdgstr  2
+McshTchInf000015:10885  idAlgntsvcInfstr  2
+McshTchInf000015:11363  idAlgntsvcRkgstr  2
+McshTchInf000016:3325  idDbcevuCNstr  2
+McshTchInf000017:129  idBtcattIdxstr  2
+McshTchInf000017:7748  idBtchmnstr  2
+McshTchInf000017:8209  idBtcognMrctstr  2
+McshTchInf000018:3579  idEthevustr  2
+McshTchInf000018:8793  idEthsolvGblstr  2
+McshTchInf000018:11191  idEthwltstr  2
+McshTchInf000018:11330  idEthhmnstr  2
+McshTchInf000019:366  idDeOznskhrExlstr  2
+McshTchInf000019:751  idDeOzngovgstr  2
+McshTchInf000019:3803  idDaostkgovgstr  2
+McshTchInf000020:1379  idChbctpstr  2
+McshTchInf000020:1444  idChbctpAststr  2
+McshTchInf000020:1620  idChbctpOndstr  2
+McshTchInf000024:401  idSteemaststr  2
+McshTchInf000024:2079  idSteemwltstr  2
+McshTchInf000024:3488  idSteemithmnstr  2
+McshTchInf000024:3648  idSteemhmnstr  2
+McshTchInf000024:3756  idSteemevalConstr  2
+McshTchInf000031:677  idLCppsuntNbrIngrstr  2
+McshTchInf000031:2457  idLCpptoolCplrstr  2

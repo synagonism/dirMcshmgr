@@ -28,7 +28,8 @@
  *  Hvrw04  clsHide self-anchor not matching the element's own id
  *  Hvrw05  Html-element name is not lowercase
  *  Hvrw06  Html-attribute value not double-quoted (single-quoted or unquoted)
- *  Hvrw07  Html-heading gaps
+ *  Hvrw07  Html-heading gaps (law articles exempt: they keep ONE level)
+ *  Hvrw08  Html-section nesting: a-part at its whole's level or above (a-missing </section>)
  */
 
 import path from 'path';
@@ -36,11 +37,20 @@ import fs from 'fs';
 
 const
   aVersion = [
+    'structuralHitp.js.0-6-0.2026-10-15: Hvrw08 Html-section nesting, split from Hvrw07',
+    'structuralHitp.js.0-5-0.2026-10-15: Hvrw07 exempts law articles',
     'structuralHitp.js.0-4-0.2026-10-09: fRunChecksHitp bQuietIn, for reportMcsh.mjs',
     'structuralHitp.js.0-3-0.2026-10-09: Hvrw07 Html-heading gaps',
     'structuralHitp.js.0-2-0.2026-10-09: renaming',
     'structuralHitp.js.0-1-0.2026-09-04: creation'
   ]
+
+/**
+ * A-law-article-heading: Article 5, Άρθρο 5Α, ** Άρθρο 5Α, *** **** Άρθρο 115.
+ * In a-law ALL articles have the-same level, whatever their depth; Hvrw07 and
+ * createMcsh.mjs --headgap exempt them.
+ */
+export const rHeadArticle = /^[\s*]*(Article|Άρθρο|ΑΡΘΡΟ)\s/i;
 
 // ─── helpers ──────────────────────────────────────────────────────────────────
 
@@ -259,11 +269,22 @@ function fCheckAttrQuote(aoFile) {
 // A-part's heading is ONE level below its whole's (h1 → h2), and a-section's next
 // sibling has the-same level (h2 → h2). Sections without id, line or heading are
 // skipped (a-missing id is Hvre04).
+// A-law-article (rHeadArticle) is exempt from the-part-rule, and articles are
+// siblings only of articles: consecutive articles have the-same level, and so
+// do the-consecutive other sections, with the-articles between them skipped.
+// ⚠️ Hvrw08  Html-section nesting
+// A-part at its whole's level or above (h2 in h2, h1 in h2) means a-wrong nesting:
+// the-</section> of the-whole is missing before that part (and with balanced tags
+// it sits further down). ONE issue per whole, on its first such part; its other
+// such parts, and the-sibling-mismatches they cause, are not reported again.
+// Sections with a-duplicated id are skipped: their line and whole are unsure (Hvre01).
 function fCheckHeadingGap(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
+    const oSetIdDup = new Set(oFile.aoIdDup.map(oDup => oDup.sName));
     const aoSect = oFile.aoSect.filter(oSect =>
-      oSect.sNameId && oSect.nLine != null && oSect.nHeadingLevel != null);
+      oSect.sNameId && oSect.nLine != null && oSect.nHeadingLevel != null &&
+      !oSetIdDup.has(oSect.sNameId));
     const oMapSect = new Map(aoSect.map(oSect => [oSect.sNameId, oSect]));
     // the-parts of each whole (null = top level), in document order
     const oMapGroup = new Map();
@@ -278,10 +299,28 @@ function fCheckHeadingGap(aoFile) {
 
       // part: one level below its whole
       const oWhole = sIdWhole ? oMapSect.get(sIdWhole) : null;
+      // the-parts at the-whole's level or above: Hvrw08, not Hvrw07
+      const oSetNest = new Set();
+      if (oWhole) {
+        const aoNest = aoSectGroup.filter(oSect =>
+          oSect.nHeadingLevel <= oWhole.nHeadingLevel && !rHeadArticle.test(oSect.sNameTitle));
+        for (const oSect of aoNest) oSetNest.add(oSect);
+        if (aoNest.length > 0) {
+          const oFirst = aoNest[0];
+          aoIssue.push(fIssue('WARN', 'Hvrw08', oFile.sNameFile, oWhole,
+            `<h${oWhole.nHeadingLevel}> section "${oWhole.sNameId}" (line ${oWhole.nLine}) contains ` +
+            `<h${oFirst.nHeadingLevel}> "${oFirst.sNameId}"` +
+            (aoNest.length > 1 ? ` and ${aoNest.length - 1} more at its level or above` : '') +
+            ` — its </section> missing before line ${oFirst.nLine}? now at line ${oWhole.nLineClose}`,
+            oFirst.nLine));
+        }
+      }
       if (oWhole) {
         const nLevelExpect = oWhole.nHeadingLevel + 1;
         for (const oSect of aoSectGroup) {
           if (oSect.nHeadingLevel === nLevelExpect) continue;
+          if (rHeadArticle.test(oSect.sNameTitle)) continue;
+          if (oSetNest.has(oSect)) continue;
           aoIssue.push(fIssue('WARN', 'Hvrw07', oFile.sNameFile, oSect,
             `<h${oSect.nHeadingLevel}> section "${oSect.sNameId}" is a part of ` +
             `<h${oWhole.nHeadingLevel}> section "${oWhole.sNameId}" — expected <h${nLevelExpect}>`,
@@ -289,14 +328,19 @@ function fCheckHeadingGap(aoFile) {
         }
       }
 
-      // sibling: the-same level as the-previous one, reported on the-next one
-      for (let nI = 1; nI < aoSectGroup.length; nI++) {
-        const oPrev = aoSectGroup[nI - 1], oNext = aoSectGroup[nI];
-        if (oNext.nHeadingLevel === oPrev.nHeadingLevel) continue;
-        aoIssue.push(fIssue('WARN', 'Hvrw07', oFile.sNameFile, oNext,
-          `<h${oPrev.nHeadingLevel}> section "${oPrev.sNameId}" has next sibling ` +
-          `<h${oNext.nHeadingLevel}> "${oNext.sNameId}" — expected <h${oPrev.nHeadingLevel}>`,
-          oNext.nLine));
+      // sibling: the-same level as the-previous one, reported on the-next one;
+      // articles with articles, the-rest with the-rest
+      for (const bArticle of [false, true]) {
+        const aoSib = aoSectGroup.filter(oSect => rHeadArticle.test(oSect.sNameTitle) === bArticle);
+        for (let nI = 1; nI < aoSib.length; nI++) {
+          const oPrev = aoSib[nI - 1], oNext = aoSib[nI];
+          if (oNext.nHeadingLevel === oPrev.nHeadingLevel) continue;
+          if (oSetNest.has(oPrev) || oSetNest.has(oNext)) continue; // Hvrw08 has it
+          aoIssue.push(fIssue('WARN', 'Hvrw07', oFile.sNameFile, oNext,
+            `<h${oPrev.nHeadingLevel}> ${bArticle ? 'article' : 'section'} "${oPrev.sNameId}" has next sibling ` +
+            `<h${oNext.nHeadingLevel}> "${oNext.sNameId}" — expected <h${oPrev.nHeadingLevel}>`,
+            oNext.nLine));
+        }
       }
     }
   }
@@ -352,7 +396,7 @@ export function fRunChecksHitp(aoFile, sPathDir, bQuietIn = false) {
   aoAll.push(...aoAttr);
   fLog(`${aoAttr.length} issues`);
 
-  fWrite('   Hvrw07    Heading gaps... ');
+  fWrite('   Hvrw07/Hvrw08 Heading gaps & section nesting... ');
   const aoHeadingGap = fCheckHeadingGap(aoFile);
   aoAll.push(...aoHeadingGap);
   fLog(`${aoHeadingGap.length} issues`);
