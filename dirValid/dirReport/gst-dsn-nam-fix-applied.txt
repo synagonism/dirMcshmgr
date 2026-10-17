@@ -1,0 +1,42 @@
+=== DSN-ADDED (9)
+  McshLag000003:1602  idInfHmnBrn010gstr  "GENERIC-SPECIFIC-TREE of infoData"
+  McshLag000003:1760  idInfHmnSrl001gstr  "GENERIC-SPECIFIC-TREE of doc"
+  McshOgm000009:795  idOgmAnml023gstr  "GENERIC-SPECIFIC-TREE of animalBrainNo"
+  McshTchInf000003:1636  idCmr003gstr  "GENERIC-SPECIFIC-TREE of cmprAbstract"
+  McshTchInf000005:1050  idLtdocinptgstr  "GENERIC-SPECIFIC-TREE of docNtxt"
+  McshTchInf000005:1095  idLtdocotptgstr  "GENERIC-SPECIFIC-TREE of docDtxt"
+  McshTchInf000039:854  idLKnlgmngrgstr  "GENERIC-SPECIFIC-TREE of KnlgMngr"
+  McshTchInf000039:3370  idLKnlg002gstr  "GENERIC-SPECIFIC-TREE of lagoLgkl"
+  McshTchPrgm000002:413  idCpgm001Edtrgstr  "GENERIC-SPECIFIC-TREE of appEditor"
+
+=== DSN-DATE-ADDED (0)
+  (none)
+
+=== NAM-ADDED (9)
+  McshLag000003:1602  idInfHmnBrn010gstr  "GENERIC-SPECIFIC-TREE of infoData"  X=infoData
+  McshLag000003:1760  idInfHmnSrl001gstr  "GENERIC-SPECIFIC-TREE of doc"  X=doc
+  McshOgm000009:795  idOgmAnml023gstr  "GENERIC-SPECIFIC-TREE of animalBrainNo"  X=animalBrainNo
+  McshTchInf000003:1636  idCmr003gstr  "GENERIC-SPECIFIC-TREE of cmprAbstract"  X=cmprAbstract
+  McshTchInf000005:1050  idLtdocinptgstr  "GENERIC-SPECIFIC-TREE of docNtxt"  X=docNtxt
+  McshTchInf000005:1095  idLtdocotptgstr  "GENERIC-SPECIFIC-TREE of docDtxt"  X=docDtxt
+  McshTchInf000039:854  idLKnlgmngrgstr  "GENERIC-SPECIFIC-TREE of KnlgMngr"  X=KnlgMngr
+  McshTchInf000039:3370  idLKnlg002gstr  "GENERIC-SPECIFIC-TREE of lagoLgkl"  X=lagoLgkl
+  McshTchPrgm000002:413  idCpgm001Edtrgstr  "GENERIC-SPECIFIC-TREE of appEditor"  X=appEditor
+
+=== NAM-LINES-ADDED (8)
+  McshLag000035:2557  idLSpangstr  "GENERIC-SPECIFIC-TREE of Span_lago"  Span_lago'specific-generic-tree
+  McshLag000036:2996  idLArabgstr  "GENERIC-SPECIFIC-TREE of Arab_lago"  Arab_lago'specific-generic-tree
+  McshLag000037:2230  idLHiurgstr  "GENERIC-SPECIFIC-TREE of Hiur_lago"  Hiur_lago'specific-generic-tree
+  McshLag000041:1787  idLTur0gstr  "GENERIC-SPECIFIC-TREE of Tur0_lago"  Tur0_lago'specific-generic-tree
+  McshLag000042:1608  idLAsa0gstr  "GENERIC-SPECIFIC-TREE of Asa0_lago"  Asa0_lago'specific-generic-tree
+  McshOgm000005:250  idSysMolsHmn027gst  "GENERIC-SPECIFIC-TREE of substanceHmn"  substanceHmn'specific-generic-tree
+  McshTchInf000003:814  idCmrgstr  "GENERIC-SPECIFIC-TREE of techCmpr"  techCmpr'specific-generic-tree
+  McshTchInf000012:3447  idLJsndmgogst  "GENERIC-SPECIFIC-TREE of Jsndmgo"  Jsndmgo'specific-generic-tree
+
+=== ID-FIXED (2)
+  McshOgm000003:1464  idOgm013gstr  "GENERIC-SPECIFIC-TREE of ogmMicro"  idOgm013gtrnam -> idOgm013gstrnam
+  McshTchInf000003:814  idCmrgstr  "GENERIC-SPECIFIC-TREE of techCmpr"  idCmrgstrFnam -> idCmrgstrnam
+
+=== SKIPPED (2)
+  McshHmn000003:338  idHmnSngogstr  "GENERIC-SPECIFIC-TREE of HumnSngu"  name:: uses the "/" separator (kept): HumnSngu/generic-specific-tree
+  McshStn000023:21598  idScmogstr  "GENERIC-SPECIFIC-TREE of scmo"  name:: uses the "/" separator (kept): scmo/generic-specific-tree

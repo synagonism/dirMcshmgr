@@ -26,7 +26,8 @@
  * SOFTWARE.
  *
  * DOING: it reports the-issues of one or more validator-codes per file, as
- *   McshTchInf000015:12034;11980;2310
+ *   === Mvrw01 (130 issues in 1 files) — file:lines, the-biggest line first
+ *     McshTchInf000015:12034;11980;2310
  *   one number per issue: the-line of the-issue, the-biggest first, so you edit
  *   them top-down and the-other-numbers stay valid. Files with more issues first.
  *   It takes the-issues the-validator itself makes, so the-rules live in ONE place:
@@ -52,6 +53,7 @@ import { fRunChecksHitp } from './structuralHitp.js'
 const
   // contains the-versions of reportMcsh.mjs
   aVersion = [
+    'reportMcsh.mjs.0-4-0.2026-10-16: one === heading per code, entries indented for folding',
     'reportMcsh.mjs.0-3-0.2026-10-09: and Hitp-rules (Hvr.. codes)',
     'reportMcsh.mjs.0-2-0.2026-10-04: the-report goes to reportMcsh.txt',
     'reportMcsh.mjs.0-1-0.2026-10-04: creation'
@@ -145,25 +147,37 @@ async function fMain() {
       return;
     }
 
+    // ── per code: a-heading at column 0, its entries indented, so VS Code folds them
     fOut('');
-    for (const [sNameFile] of aoCount) {
-      if (sNameFileOnly && fFindNameShort(sNameFile) !== sNameFileOnly) continue;
-      const aLine = fSortLine(ooIssueFile[sNameFile]).map(oIssue => oIssue.nLine ?? '?');
-      fOut(`${fFindNameShort(sNameFile)}:${aLine.join(';')}`);
-    }
-    if (!bLine) return;
+    for (const sCode of aCode) {
+      const aoIssueCode = aoIssue.filter(oIssue => oIssue.sCode === sCode);
+      if (aoIssueCode.length === 0) continue;
+      const ooIssueCodeFile = {};
+      for (const oIssue of aoIssueCode) (ooIssueCodeFile[oIssue.sNameFile] ??= []).push(oIssue);
+      const aNameFile = aoCount.map(([sNameFile]) => sNameFile)
+        .filter(sNameFile => ooIssueCodeFile[sNameFile])
+        .filter(sNameFile => !sNameFileOnly || fFindNameShort(sNameFile) === sNameFileOnly);
 
-    // ── --line: every issue, its line and its message ───────────────────────
-    for (const [sNameFile] of aoCount) {
-      if (sNameFileOnly && fFindNameShort(sNameFile) !== sNameFileOnly) continue;
-      const aoIssueFile = fSortLine(ooIssueFile[sNameFile]);
-      const nWidth = Math.max(...aoIssueFile.map(oIssue => String(oIssue.nLine ?? '?').length));
-      fOut('');
-      fOut(`  ${sNameFile}`);
-      for (const oIssue of aoIssueFile) {
-        fOut(`    ${String(oIssue.nLine ?? '?').padStart(nWidth)}  ` +
-          (aCode.length > 1 ? `[${oIssue.sCode}] ` : '') + oIssue.sMessage);
+      fOut(`=== ${sCode} (${aoIssueCode.length} issues in ${Object.keys(ooIssueCodeFile).length} files)` +
+        ' — file:lines, the-biggest line first');
+      for (const sNameFile of aNameFile) {
+        const aLine = fSortLine(ooIssueCodeFile[sNameFile]).map(oIssue => oIssue.nLine ?? '?');
+        fOut(`  ${fFindNameShort(sNameFile)}:${aLine.join(';')}`);
       }
+      fOut('');
+      if (!bLine) continue;
+
+      // ── --line: every issue, its line and its message, per file ───────────
+      fOut(`=== ${sCode} --line — every issue, its line and its message`);
+      for (const sNameFile of aNameFile) {
+        const aoIssueFile = fSortLine(ooIssueCodeFile[sNameFile]);
+        const nWidth = Math.max(...aoIssueFile.map(oIssue => String(oIssue.nLine ?? '?').length));
+        fOut(`  ${sNameFile}`);
+        for (const oIssue of aoIssueFile) {
+          fOut(`    ${String(oIssue.nLine ?? '?').padStart(nWidth)}  ${oIssue.sMessage}`);
+        }
+      }
+      fOut('');
     }
   }
   fReport();

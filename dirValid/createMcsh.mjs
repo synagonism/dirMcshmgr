@@ -87,6 +87,7 @@ import { rHeadArticle } from './structuralHitp.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-9-0.2026-10-16: createMcsh.txt per kind, notes indented for folding',
     'createMcsh.mjs.0-8-0.2026-10-15: --nest, the-obvious Hvrw08 nesting errors',
     'createMcsh.mjs.0-7-0.2026-10-15: --headgap exempts law articles, law files included',
     'createMcsh.mjs.0-6-0.2026-10-15: --headgap, the-obvious Hvrw07 heading gaps',
@@ -96,6 +97,20 @@ const
     'creaMcsh.mjs.0-2-0.2026-10-04: --missing, a-description for every Mcsh02-section',
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
+  // the-kinds of notes in createMcsh.txt, one === heading each
+  ooKindDesc = {
+    NODESC:   'idOverview without description::',
+    EMPTY:    'a-description:: that was empty (only "·"), now dated: give it a-text',
+    SKIP:     'skipped, with why: fix by hand',
+    BAD:      'the-file is NOT written: its check failed',
+    DELETE:   'a-creation-para deleted, its date put in the-description::',
+    CREATE:   'a-new description:: created',
+    INSERT:   'a-creation-date inserted in a-description::',
+    FIXTITLE: 'a-typo description-title fixed',
+    RENAME:   'the-name::-para id renamed to idName',
+    HEADING:  'a-heading moved up (Hvrw07 gap)',
+    NEST:     'a-</section> moved up (Hvrw08 nesting)'
+  },
   // the-dir of this script: the-report and the-backup go next to IT
   sDirScript = moPath.dirname(fileURLToPath(import.meta.url)),
   // the-lines of a-creation-para
@@ -937,17 +952,23 @@ async function fMain() {
     bFix ? `  backup: ${sDirBackup}` : '  nothing written: add --fix to write',
     ''
   ];
-  // in the-report: what needs you first — NODESC, EMPTY, then skips and bad — then the-rest
-  const aLineSort = [
-    ...aLineOut.filter(sLine => /^NODESC/.test(sLine)),
-    ...aLineOut.filter(sLine => /^EMPTY/.test(sLine)),
-    ...aLineOut.filter(sLine => /^(SKIP|BAD)/.test(sLine)),
-    ...aLineOut.filter(sLine => !/^(NODESC|EMPTY|SKIP|BAD)/.test(sLine))
-  ];
+  // in the-report: one "=== KIND (count) — description" heading per kind, its notes
+  // indented 2 spaces (VS Code folds them); what needs you first — NODESC, EMPTY,
+  // SKIP, BAD — then the-rest in the-order they came
+  const aKindFirst = ['NODESC', 'EMPTY', 'SKIP', 'BAD'];
+  const aKind = [...new Set([...aKindFirst, ...aLineOut.map(sLine => sLine.split(' ')[0])])];
+  const aLineReport = [];
+  for (const sKind of aKind) {
+    const aNote = aLineOut.filter(sLine => sLine.split(' ')[0] === sKind);
+    if (aNote.length === 0) continue;
+    aLineReport.push(`=== ${sKind} (${aNote.length}) — ${ooKindDesc[sKind] ?? ''}`);
+    aLineReport.push(...aNote.map(sLine => '  ' + sLine.slice(sKind.length).trimStart()));
+    aLineReport.push('');
+  }
   const sPathOut = moPath.join(sDirScript, 'createMcsh.txt');
-  moFs.writeFileSync(sPathOut, [...aHead, ...aLineSort].join('\n') + '\n');
+  moFs.writeFileSync(sPathOut, [...aHead, ...aLineReport].join('\n'));
   for (const sLine of aHead.slice(0, 5)) console.log(sLine);
-  for (const sLine of aLineSort.filter(sLine => /^(NODESC|EMPTY|SKIP|BAD)/.test(sLine))) console.log('  ' + sLine);
+  for (const sLine of aLineOut.filter(sLine => aKindFirst.includes(sLine.split(' ')[0]))) console.log('  ' + sLine);
   console.log(`📄 report written: ${sPathOut}`);
 }
 

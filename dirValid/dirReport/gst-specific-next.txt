@@ -128,3 +128,20 @@ T4. {2026-10-16} DONE: GTR 19 -> 5. 14 GS-TREEs had their ids aligned to their w
 T5. {2026-10-16} DONE: GTRE. "<br>* ... entity-Gntr," was added as the last generic-tree:: item of 197 GS-TREEs (44 files; only that line added).
     67 already end at entity (e.g. "* entity-Gntr," as the full chain); they are now counted as conforming.
     Left: 7 whose last line is not an item (..., ===, prose, citation). List: gst-gtre-fix-applied.txt.
+T6. {2026-10-17} DONE: DSN 9 -> 0, NAM 20 -> 2.
+    9 GS-TREEs had neither description:: nor name::. Both were added, with "× Mcsh-creation: {2026-10-04}" and X'generic-specific-tree / X'specific-generic-tree.
+    8 had only X'generic-specific-tree; X'specific-generic-tree was added.
+    2 name:: ids were fixed: idOgm013gtrnam -> idOgm013gstrnam, idCmrgstrFnam -> idCmrgstrnam.
+    Left (kept): McshHmn000003:338 HumnSngu/… and McshStn000023:21598 scmo/… use the "/" separator.
+    List: dirReport/gst-dsn-nam-fix-applied.txt.
+T7. {2026-10-17} DONE: STR 42 -> 9.
+    30 specific-tree:: paragraphs under old ids (…gstrstr, …spc, …P1/P2/P3) were renamed to {W}str; none of them was linked.
+    3 GS-TREEs got an empty specific-tree:: (X.specific, X-Sptr, ===): head, chmElrFr87, Wasmopcode.
+    Left: 5 GS-TREEs whose specifics are a child SECTION "SPECIFIC-TREE of X" with the id {W}str
+      (McshCor000009 generic, McshCor000011 system, McshHlth000006 disorderBio, McshHlth000013 food, McshLag000006 Ucbk);
+    2 whose {W}str is a <div> tree (McshTchInf000011 idLJsbrfstr, McshTchInf000012 idLJsndmgostr);
+    and the 2 old-style GS-TREEs (McshTchInf000006, McshTchInf000028). List: dirReport/gst-str-fix-applied.txt.
+T8. {2026-10-17} DONE: GTRN 78 -> 6. The first generic-tree:: line is now McshEngl.M-Gntr, with M = the whole's main-name (6 used the title X, no main-name).
+    11 renamed (e.g. gland-Gntr -> organGland-Gntr, chemical-Gntr -> mtrlChemical-Gntr, the McsEngl. typo in idLJsndmgogstr).
+    62 had no name line; "McshEngl.M-Gntr," + "===" were added on top. List: dirReport/gst-gtrn-fix-applied.txt.
+    Left: 6 where the generic-tree already uses the main-name but the GS-TREE title X differs (these are XNAME cases).

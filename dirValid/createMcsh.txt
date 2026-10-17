@@ -1,46 +1,12 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --nest --fix: C:/dirNodews/dirMcsh
+  createMcsh --undated dry-run: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  8 files written · 13 </section> moved · 27 skipped
-  backup: C:\dirNodews\dirMcshmgr\dirValid\createMcsh-backup\2026-10-15T18-14-39
+  5 files to write · 10 descriptions dated · 0 of them EMPTY · date {2026-10-16} · 0 skipped
+  nothing written: add --fix to write
 
-SKIP   McshTchInf000041:1736  #idVscodecmndsc > #idVscodecmndscgstr: #idVscodecmndscgstr (line 1736) is <h1>, not <h2> as #idVscodecmndsc
-SKIP   McshTchInf000031:940  #idLCppsuntFcnprlt > #idLCppsuntFcnargt: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000031:1251  #idLCppsuntClsmbrFcn > #idLCppsuntClsmbrFcnCstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000030:168  #idLRustalgfile > #idLRustalgfile: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000030:3798  #idLRustcargo > #idLRustrstup: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000030:4036  #idLRustevgFT > #idLRustgstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000028:1100  #idLMove > #idLMovealgogstr: #idLMovealgoSrc (line 1128) is <h2>, not <h1> as #idLMove
-SKIP   McshTchInf000022:395  #idFairnetwpr218077 > #idFairnetwpr218077: a-duplicated id
-SKIP   McshTchInf000020:1723  #idChbctpInfc > #idChbctpInfcgstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000016:976  #idDbcblk > #idDbcblkgstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000016:5720  #idBpmnet > #idDbcEvu: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000016:6882  #idAenetrsc > #idAenetEvg: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000016:12395  #idDashmnd > #idDashmndonr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000016:7056  #idBoswpr2 > #idBoswpr2: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000015:448  #idAlgntHumnUsr > #idAlgntHumnUsrgstr: #idAlgntHumnUsrgstr (line 448) is <h1>, not <h3> as #idAlgntHumnUsr
-SKIP   McshTchInf000015:13625  #idDcnetMoe > #idDcnetMoegstr: #idDcnetMoePetro (line 13651) is <h2>, not <h1> as #idDcnetMoe
-SKIP   McshTchInf000014:2367  #idLWasmstcLoad > #idLWasmstcLoad: a-duplicated id
-SKIP   McshTchInf000012:1402  #idLJsndmc > #idLJsndmcgstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000012:7639  #idLJsndpkgEslint > #idLJsndpkgexpress: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000012:9014  #idLJsndnpmcmd > #idLJsndnpmcmd: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000012:7465  #idLJsndpkgEslintcfgrulStcis > #idLJsndpkgEslintcfgrulEs6: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000010:6688  #idLJsgntolCdanl > #idLJsgntolCdanlgstr: #idLJsgntolCdanlgstr (line 6688) is <h1>, not <h2> as #idLJsgntolCdanl
-SKIP   McshTchInf000008:2993  #idLHitpwbpg > #idLHitpwbpgstr: #idLHitpwbpIdpt (line 3022) is <h2>, not <h1> as #idLHitpwbpg
-SKIP   McshTchInf000006:81  #idLCpgmtech > #idLCpgmarch: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000006:815  #idLCpgmalg > #idLCpgmalggstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshTchInf000006:2796  #idLSrcd > #idLSrcdalggstr: the-file has an-unclosed or stray <section> (Hvre07)
-SKIP   McshStnlaw000004:8897  #idLawInl017AnxV > #idLawInl017AnxVI: #idLawInl017AnxVIScn1 (line 8923) is <h3>, not <h2> as #idLawInl017AnxV
-NEST   McshTchInf000041:213  </section> of #idVscodeusiftmnl moved from line 224 to before #idVscodeusiftmnlshll (1 section become its siblings)
-NEST   McshTchInf000039:303  </section> of #idLKnlgmngrsfts moved from line 321 to before #idLKnlgmngrcplg (1 section become its siblings)
-NEST   McshTchInf000039:7492  </section> of #idLCyclqtfn moved from line 7531 to before #idLCyclqtfnExst (2 sections become its siblings)
-NEST   McshTchInf000039:8510  </section> of #idLKnlg010otptUper moved from line 10148 to before #idLKnlg010otptDmin (18 sections become its siblings)
-NEST   McshTchInf000039:15781  </section> of #idLWlfmHumnWmSn1959 moved from line 15792 to before #idLWlfmHumnWmSn1959irsc (1 section become its siblings)
-NEST   McshTchInf000028:131  </section> of #idDnlbrskhrDvpr moved from line 153 to before #idDnlbrskhrDvprgstr (1 section become its siblings)
-NEST   McshTchInf000018:12389  </section> of #idEthnetEvg moved from line 12488 to before #idEthgstr (4 sections become its siblings)
-NEST   McshTchInf000015:5183  </section> of #idAlgntgovdnmk moved from line 5215 to before #idAlgntgovdocr (2 sections become its siblings)
-NEST   McshTchInf000015:6317  </section> of #idDappatt005Edur moved from line 6331 to before #idDappatt005Dau (1 section become its siblings)
-NEST   McshTchInf000010:4624  </section> of #idLJsgnapi moved from line 5853 to before #idLJsgnfrs (7 sections become its siblings)
-NEST   McshTchInf000010:3872  </section> of #idLJsgnmwo moved from line 4622 to before #idLJsgnmgo (8 sections become its siblings)
-NEST   McshTchInf000009:190  </section> of #idLMcshotptcodeHtml moved from line 1516 to before #idLMcshotptcodeHtmllktl (10 sections become its siblings)
-NEST   McshStn000048:358  </section> of #idLJpnssxtr moved from line 4710 to before #idLJpnsnode (10 sections become its siblings)
+=== INSERT (5) — a-creation-date inserted in a-description::
+  McshCor000018  1 descriptions
+  McshHlth000002  4 descriptions
+  McshHlth000003  2 descriptions
+  McshHlth000019  1 descriptions
+  McshTchInf000010  2 descriptions

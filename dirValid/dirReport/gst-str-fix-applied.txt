@@ -1,0 +1,50 @@
+=== RENAMED (30)
+  McshCor000011:2597  idSys009gstr  "GENERIC-SPECIFIC-TREE of SystDynamic"  idSys009spc -> idSys009str
+  McshCor000018:1089  idBrngHmnFct002gstr  "GENERIC-SPECIFIC-TREE of FctgThinking"  idBrngHmnFct002gstrstr -> idBrngHmnFct002str
+  McshEdu000005:5714  idSMath002gstr  "GENERIC-SPECIFIC-TREE of mathAppliedNo"  idSMath002gstrstr -> idSMath002str
+  McshEdu000005:5779  idSMath015gstr  "GENERIC-SPECIFIC-TREE of mathNumber_theory"  idSMath015gstrstr -> idSMath015str
+  McshEdu000005:5981  idSMath005gstr  "GENERIC-SPECIFIC-TREE of mathAlgebra"  idSMath005gstrstr -> idSMath005str
+  McshEdu000005:6246  idSMath021gstr  "GENERIC-SPECIFIC-TREE of mathAnalysis"  idSMath021gstrstr -> idSMath021str
+  McshEdu000005:6912  idSMath007gstr  "GENERIC-SPECIFIC-TREE of mathGeometry"  idSMath007gstrstr -> idSMath007str
+  McshEdu000005:8001  idSMath013gstr  "GENERIC-SPECIFIC-TREE of mathTopology"  idSMath013gstrstr -> idSMath013str
+  McshEdu000009:831  idSMind005gstr  "GENERIC-SPECIFIC-TREE of sciLogic"  idSMind005gstrstr -> idSMind005str
+  McshEdu000010:879  idSLangtermgstr  "GENERIC-SPECIFIC-TREE of terminology"  idSLangtermgstrstr -> idSLangtermstr
+  McshHlth000002:1908  idGlndHmngstr  "GENERIC-SPECIFIC-TREE of organGland"  idGlndHmnspc -> idGlndHmnstr
+  McshHlth000002:11610  idSysOgnHmn009gstr  "GENERIC-SPECIFIC-TREE of SystReproductive"  idSysOgnHmn009spc -> idSysOgnHmn009str
+  McshHlth000003:3679  idBrnHmngstr  "GENERIC-SPECIFIC-TREE of organBrain"  idBrnHmnspc -> idBrnHmnstr
+  McshHlth000004:1343  idCellHmngstr  "GENERIC-SPECIFIC-TREE of cell"  idCellHmnspc -> idCellHmnstr
+  McshHlth000019:4426  idSysNrvsatt076att005gstr  "GENERIC-SPECIFIC-TREE of neuron'axon"  idSysNrvsatt076att005P3 -> idSysNrvsatt076att005str
+  McshLag000003:1602  idInfHmnBrn010gstr  "GENERIC-SPECIFIC-TREE of infoData"  idInfHmnBrn010gstrstr -> idInfHmnBrn010str
+  McshLag000003:1760  idInfHmnSrl001gstr  "GENERIC-SPECIFIC-TREE of doc"  idInfHmnSrl001gstrstr -> idInfHmnSrl001str
+  McshLag000007:2784  idLHmnmsmsvrbattgstr  "GENERIC-SPECIFIC-TREE of Semuverbattr"  idLHmnmsmsvrbattgstrstr -> idLHmnmsmsvrbattstr
+  McshLag000007:15448  idLHmnmoptinfgstr  "GENERIC-SPECIFIC-TREE of expression"  idLHmnmoptinfgstrstr -> idLHmnmoptinfstr
+  McshOgm000009:795  idOgmAnml023gstr  "GENERIC-SPECIFIC-TREE of animalBrainNo"  idOgmAnml023gstrstr -> idOgmAnml023str
+  McshStnlaw000003:1054  idLawEusgstr  "GENERIC-SPECIFIC-TREE of lawEus"  idLawEusgstrstr -> idLawEusstr
+  McshTchInf000003:1637  idCmr003gstr  "GENERIC-SPECIFIC-TREE of cmprAbstract"  idCmr003gstrstr -> idCmr003str
+  McshTchInf000005:1050  idLtdocinptgstr  "GENERIC-SPECIFIC-TREE of docNtxt"  idLtdocinptgstrstr -> idLtdocinptstr
+  McshTchInf000005:1095  idLtdocotptgstr  "GENERIC-SPECIFIC-TREE of docDtxt"  idLtdocotptgstrstr -> idLtdocotptstr
+  McshTchInf000012:3277  idLJsndmwombrgstr  "GENERIC-SPECIFIC-TREE of Jsndglobal"  idLJsndmwombrspc -> idLJsndmwombrstr
+  McshTchInf000012:10069  idLJsndrtmopngstr  "GENERIC-SPECIFIC-TREE of Jsnd_Rrtmon"  idLJsndrtmopnP2 -> idLJsndrtmopnstr
+  McshTchInf000015:12746  idAlgntEvggstr  "GENERIC-SPECIFIC-TREE of netAlgo_evoluting"  idAlgntEvgP1 -> idAlgntEvgstr
+  McshTchInf000039:854  idLKnlgmngrgstr  "GENERIC-SPECIFIC-TREE of KnlgMngr"  idLKnlgmngrgstrstr -> idLKnlgmngrstr
+  McshTchInf000039:3370  idLKnlg002gstr  "GENERIC-SPECIFIC-TREE of lagoLgkl"  idLKnlg002gstrstr -> idLKnlg002str
+  McshTchPrgm000002:413  idCpgm001Edtrgstr  "GENERIC-SPECIFIC-TREE of appEditor"  idCpgm001Edtrgstrstr -> idCpgm001Edtrstr
+
+=== ADDED (3)
+  McshHlth000002:240  idBdyHmnatt007gstr  "GENERIC-SPECIFIC-TREE of head"  empty idBdyHmnatt007str after idBdyHmnatt007gtr
+  McshNtr000007:2381  idChmElrFranciumgstr  "GENERIC-SPECIFIC-TREE of chmElrFr87"  empty idChmElrFranciumstr after idChmElrFranciumgtr
+  McshTchInf000014:1500  idLWasmstcopcdgstr  "GENERIC-SPECIFIC-TREE of Wasmopcode"  empty idLWasmstcopcdstr after idLWasmstcopcdgtr
+
+=== LINKS-REPOINTED (0)
+  (none)
+
+=== SKIPPED (9)
+  McshCor000009:1223  idGnrcgstr  "GENERIC-SPECIFIC-TREE of generic"  no specific-tree::, but idGnrcstr exists elsewhere
+  McshCor000011:370  idSysgstr  "GENERIC-SPECIFIC-TREE of system"  no specific-tree::, but idSysstr exists elsewhere
+  McshHlth000006:199  idDsdrgstr  "GENERIC-SPECIFIC-TREE of disorderBio"  no specific-tree::, but idDsdrstr exists elsewhere
+  McshHlth000013:838  idFoodHmngstr  "GENERIC-SPECIFIC-TREE of food"  no specific-tree::, but idFoodHmnstr exists elsewhere
+  McshLag000006:2163  idCharUcdstdcpBlkgstr  "GENERIC-SPECIFIC-TREE of Ucbk"  no specific-tree::, but idCharUcdstdcpBlkstr exists elsewhere
+  McshTchInf000006:2805  idLSrcdalggstr  "Srcdalgo'GENERIC-SPECIFIC-TREE"  not found / old-style title
+  McshTchInf000011:324  idLJsbrfgstr  "GENERIC-SPECIFIC-TREE of Jsbrf"  no specific-tree::, but idLJsbrfstr exists elsewhere
+  McshTchInf000012:3447  idLJsndmgogst  "GENERIC-SPECIFIC-TREE of Jsndmgo"  no specific-tree::, but idLJsndmgostr exists elsewhere
+  McshTchInf000028:1099  idLMovealgogstr  "Movealgo'GENERIC-SPECIFIC-TREE"  not found / old-style title

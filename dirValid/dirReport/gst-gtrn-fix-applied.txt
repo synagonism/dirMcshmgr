@@ -1,0 +1,83 @@
+=== RENAMED (11)
+  McshHlth000002:1908  idGlndHmngstr  gland-Gntr -> organGland-Gntr  (main-name)
+  McshHlth000002:2808  idGlndHmn009gstr  glandSkin-Gntr -> HumnbodySkinGland-Gntr  (main-name)
+  McshHlth000002:3316  idGlndHmn017gstr  glandTesticle-Gntr -> HumnbodyTesticle-Gntr  (title X)
+  McshHlth000002:10545  idSysOgnHmn007functinggstr  functingSysDigestive-Gntr -> SystDigestive'functing-Gntr  (main-name)
+  McshHlth000003:3679  idBrnHmngstr  brain-Gntr -> organBrain-Gntr  (title X)
+  McshHlth000005:1755  idMsclHmn009gstr  muscleTorsoFrontSkeletal-Gntr -> muscleTorsofrontSkeletal-Gntr  (main-name)
+  McshHlth000013:6931  idFoodHmn106gstr  fruit-Gntr -> foodFruit-Gntr  (main-name)
+  McshNtr000005:1381  idSysMols010gstr  chemical-Gntr -> mtrlChemical-Gntr  (main-name)
+  McshOgm000006:164  idPrtnOgmatt003003gstr  amino-acid-Gntr -> acidAminoHmn-Gntr  (main-name)
+  McshTchInf000012:3447  idLJsndmgogstr  <br>* McsEngl.Jsndmgo-Gntr -> Jsndmgo-Gntr  (main-name)
+  McshTchInf000019:1173  idDeOzngstr  OgznAlgo-Gntr -> OgznDao-Gntr  (title X)
+
+=== ADDED (62)
+  McshHlth000004:457  idCellHmnatt016gstr  chromosome-Gntr + ===  (title X)  first was: <br>* chromosome⧺cptEpistem730⧺,
+  McshHlth000004:2413  idCellHmn019gstr  cellLeucocyte-Gntr + ===  (title X)  first was: <br>* <a class="clsPreview" href="#idCellHmngtr">c
+  McshHlth000011:1184  idDssHmn001gstr  DssInfectious-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idDssHmngtr">di
+  McshHlth000013:1180  idFoodHmn049gstr  foodNatural-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idOverview">foo
+  McshHlth000013:8770  idFoodHmn143gstr  foodMeat-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idFoodHmn049">n
+  McshHlth000013:9910  idFoodHmn194gstr  foodOilOlive-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idFoodHmn050">n
+  McshLag000007:1570  idLHmnmsmsondosmatgstr  Semuargu_attr-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLHmnmsmscptat
+  McshLag000007:2256  idLHmnmprsngstr  personLago-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirCor/McshCo
+  McshLag000007:2300  idLHmnmprsnAgstr  personLagoA-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirCor/McshCo
+  McshLag000007:2592  idLHmnmprsnCgstr  personLagoC-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirCor/McshCo
+  McshLag000008:140  idL0016untgstr  alfa_lago_unit-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000009:183  idL0017untgstr  unitSpch-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000010:385  idL0014untgstr  Sngu_unit-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000010:424  idL0014untTrmgstr  Sngu_lagu-unit.term-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000010:522  idL0014phnmgstr  Sngu_phnm-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000010:1282  idL0014ltrgstr  Sngu_letr-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000010:2431  idL0014wrdgstr  Sngu_word-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000011:289  idLEnglsmsondombrMaingstr  Engl_Semuargu_mebr.main-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLEnglsmsondo"
+  McshLag000011:429  idLEnglsmsondoSgstr  OndoSmsmbrSpclEngl-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLEnglsmsondom
+  McshLag000011:731  idLEnglphnmgstr  Engl_phnm-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000011:1626  idLEnglltrgstr  Engl_letr-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000011:14777  idLEnglprongstr  pronEngl-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000012:365  idLEspountgstr  unitEspo-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000012:404  idLEspountTrmgstr  Espo_lago-unit.term-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000012:493  idLEspophnmgstr  EspoPhnm-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000012:1674  idLEspowrdgstr  wordEspo-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000018:383  idLZhonsmsnunSgstr  ArgoStxvmbrSpclZhon-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLZhonsmsnunmb
+  McshLag000018:622  idLZhonuntgstr  Zhon_unit-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000018:664  idLZhonuntNamegstr  Zhonname_unit-Gntr + ===  (main-name)  first was: <br>* Hmnm_lago-name-unit,
+  McshLag000018:1173  idLZhonphnmgstr  Zhon_phnm-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000018:10856  idLZhonprngstr  Zhonpron-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshLag000021:161  idLZhonwrdgstr  Zhon_word-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirLag/McshLa
+  McshOgm000005:2590  idHrmnHmn002gstr  HrmnHumnMale-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idHrmnHmngtr">h
+  McshTch000002:509  idTchgstr  tech-Gntr + ===  (title X)  first was: <br>* <a class="clsPreview" href="../dirStn/McshSt
+  McshTchInf000006:2164  idLSrcdwrdgstr  Srcdalgowork-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLCpgmalgwrd">
+  McshTchInf000006:2323  idLSrcdsuntgstr  Srcd_lago_Sunt-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLCpgmalgsunt"
+  McshTchInf000006:2681  idLSrcdsntcgstr  Srcdsent-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLCpgmsntc">se
+  McshTchInf000006:2760  idLSrcdsctngstr  Srcdalgosect-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLCpgmalgsctn"
+  McshTchInf000010:366  idLJsgnsutgstr  Jssut-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgno">objec
+  McshTchInf000010:1846  idLJsgnbgstr  Jsb-Gntr + ===  (main-name)  first was: <br>* Boolean.prototype, (<code>true.__proto__ ===
+  McshTchInf000010:2186  idLJsgnfgstr  Jsf-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnFunction
+  McshTchInf000010:2830  idLJsgnmgstr  Jsm-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnsut">sem
+  McshTchInf000010:2907  idLJsgnngstr  Jsn-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnNumberp"
+  McshTchInf000010:3377  idLJsgnrgstr  Jsr-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnRegExpp"
+  McshTchInf000010:3502  idLJsgnsgstr  Jss-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnStringp"
+  McshTchInf000010:4123  idLJsgnapiNtvgstr  JsapiNative-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLJsgnapi">Jsa
+  McshTchInf000010:4867  idLJsgndefRefgstr  JsgndefNmvl-Gntr + ===  (main-name)  first was: <br>* Definition-sentence,
+  McshTchInf000016:251  idDbcogngstr  chain_ogn-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000019:3400  idDaostkgovcgenxgstr  DvGEN'exchange-ogn-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000021:1347  idEosbexgstr  Deos_explorer-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000021:1760  idEosevuEOSgstr  DvEOS-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000021:2170  idEosgovvtggstr  Deos'voting-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000021:2591  idEospgmAppgstr  Deos_Dapp-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000024:399  idSteemastgstr  Steemasset-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000024:957  idSteempgmgstr  Steem-program-Gntr + ===  (title X)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000024:2098  idSteemwltgstr  Steemwalt-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000030:222  idLRustalgnodegstr  Rust_lago_node-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLSrcdalgnode"
+  McshTchInf000030:302  idLRustwrdgstr  Rust_lago_word-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000030:359  idLRustkwdgstr  Rust_lago_keyword-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000030:1637  idLRustsuntFgstr  Rust_lago_f-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="#idLRustsunt">so
+  McshTchInf000030:1694  idLRustoprgstr  Rust_lago_opr-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+  McshTchInf000030:2622  idLRustsntcgstr  Rust_lago_sentence-Gntr + ===  (main-name)  first was: <br>* <a class="clsPreview" href="../dirTchInf/Mcs
+
+=== SKIPPED (5)
+  McshHlth000002:3525  idGlndHmn020gstr  already <br>* McshEngl.glandBreast-Gntr,
+  McshHlth000002:9087  idOgnHmn005gstr  already <br>* McshEngl.organLung-Gntr,
+  McshHlth000002:13755  idBdyHmn148gstr  already <br>* McshEngl.breathing-Gntr,
+  McshHlth000019:2816  idOgnHmn008gstr  already <br>* McshEngl.organEar-Gntr,
+  McshLag000007:23200  idLHmnmverbmrfdrgstr  already <br>* McshEngl.memberorVerb-Gntr,
