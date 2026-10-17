@@ -145,3 +145,33 @@ T8. {2026-10-17} DONE: GTRN 78 -> 6. The first generic-tree:: line is now McshEn
     11 renamed (e.g. gland-Gntr -> organGland-Gntr, chemical-Gntr -> mtrlChemical-Gntr, the McsEngl. typo in idLJsndmgogstr).
     62 had no name line; "McshEngl.M-Gntr," + "===" were added on top. List: dirReport/gst-gtrn-fix-applied.txt.
     Left: 6 where the generic-tree already uses the main-name but the GS-TREE title X differs (these are XNAME cases).
+T9. {2026-10-17} DONE: XNAME 44 -> 0 and GTRN 6 -> 0. GS-TREE titles became "GENERIC-SPECIFIC-TREE of <main-name>".
+    32 non-dash X: their name lines (generic-specific-tree, specific-generic-tree, -Gntr, .specific, -Sptr) were renamed to the main-name.
+    12 dash X (rule sync-keep-dash-name): the old dash name lines were KEPT and main-name lines were added BEFORE them (60 pairs).
+    Note: one kept dash name is a typo: McshStn000017:7899 "StdW3c.group-noes" (main-name StdW3c.group-notes).
+    List: dirReport/gst-xname-main-applied.txt.
+    Note: T1 ({2026-10-16}, 92 dash -> underscore renames) was made BEFORE the keep-dash rule; there the dash names were replaced, not kept.
+T10. {2026-10-17} DONE: GTRE 7 -> 0. "<br>* ... entity-Gntr," was added at the end of the chain:
+    - last line in muscleThorax, muscleAbdominal, substanceHmn, ogmMicro, macromoleculeHmn, acidAminoHmn;
+    - before the second "===" in bloodHmn (its quote + source block stays last).
+    Only those 7 lines were added. List: dirReport/gst-gtre-fix2-applied.txt.
+T11. {2026-10-17} DONE: specific:: (any case) right after a GS-TREE's specific-tree:: was folded into it (example idAlgntevuMoestr).
+     7 in McshTchInf000011 x3, 013, 015, 029, 032. None was linked; only the specific:: openers and self-links went.
+     List: dirReport/gst-spc-next-applied.txt.
+T12. {2026-10-17} DONE: McshTchInf000018. The missing </section> of idEthsolcgstr (GENERIC-SPECIFIC-TREE of Solxc) was added before
+     idEthsolcExpl "Solxc.example" (it had gone in the user's edit of {2026-10-17}). Sections are 599/599 again.
+     This cleared ID, LEVEL, GTR, STR, XNAME and TWO for the 4 GS-TREEs after it. GS-TREE: 2377 of 2402 conform.
+T13. {2026-10-17} DONE: addressWpg:: right after a GS-TREE's specific-tree:: was merged into it as "<br>=== addressWpg:" + its lines
+     (example idBoneHmnstr). 16 merged, in 10 files. List: dirReport/gst-wpa-into-str-applied.txt.
+     Left: McshStn000015:1233 idOznPdngstrFwpa (OgznPrdg); there it sits between generic-tree:: and specific-tree::.
+T14. {2026-10-17} gst-report: all 2402 GS-TREE sections conform (from 1910 on {2026-10-16}).
+     The report accepts as GS-TREE content: spec-div / specific / SPECIFIC-COMPLEMENT sections,
+     specific para-concepts (label starting with a dotted name), <div><p>label:: para-concepts, and "M'GENERIC-SPECIFIC-TREE" other-concept GS-TREEs.
+T15. {2026-10-17} DONE: 9 new specific:: (group C) converted with the idMcsdng GS-TREE rule:
+     McshHlth000014 x3 (MdtnPsychiatric 210 items, MdtnAntipsychotic, MdtnMinocycline'indication), McshTchInf000013 Jseltool,
+     McshTchInf000032 x5 (Gitcmd.*). GS-TREE sections: 2411, all conform except McshTchInf000010:5150 Jsalgo,
+     whose child idLJsgnalgObt has an EMPTY heading. List: dirReport/gst-spc2gstr-applied.txt.
+T16. {2026-10-17} DONE: the last 2 convertible specific:: got GS-TREEs (McshTchInf000013 Jselhumn, McshTchInf000032 GitcmdBranmerg).
+     specific:: left: only 2, inside the Jsalgo GS-TREE (McshTchInf000010:5436, :5586).
+T17. {2026-10-17} DONE: McshTchInf000024:1894 idSteemdapgstr heading h1 -> h3 (its whole idSteemdap is h2). Nothing linked to #idSteemdapgstrH1.
+     gst-report: all 2415 GS-TREE sections conform.

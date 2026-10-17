@@ -1,0 +1,462 @@
+NO-NAME FIX DRY — 264 name:: added (263 with a new description::), 122 specific parts left, 69 skipped
+
+=== CHANGED (264)
+  McshHlth000015:48  "brand-name of drug"  + McshEngl.drug'brand-name,  + description::
+  McshHlth000019:1046  "structure of SystCentralNervous"  + McshEngl.SystCentralNervous'structure,  + description::
+  McshHlth000019:1070  "DOING of SystCentralNervous"  + McshEngl.SystCentralNervous'doing,  + description::
+  McshHlth000019:1242  "structure of SystAutonomicNervous"  + McshEngl.SystAutonomicNervous'structure,  + description::
+  McshHlth000019:1259  "DOING of SystAutonomicNervous"  + McshEngl.SystAutonomicNervous'doing,  + description::
+  McshHlth000019:1295  "structure of SystPeripheralNervous"  + McshEngl.SystPeripheralNervous'structure,  + description::
+  McshHlth000019:1432  "structure of organSense"  + McshEngl.organSense'structure,  + description::
+  McshHlth000019:1576  "doing of organEyelid"  + McshEngl.organEyelid'doing,  + description::
+  McshHlth000019:1585  "structure of organEyelid"  + McshEngl.organEyelid'structure,  + description::
+  McshHlth000019:2382  "computer of organEye"  + McshEngl.organEye'computer,  + description::
+  McshHlth000019:2505  "DOING of organEye"  + McshEngl.organEye'doing,
+  McshHlth000019:2746  "DOING of ear"  + McshEngl.organEar'doing,  + description::
+  McshHlth000019:2846  "04_receptor of SystSense"  + McshEngl.SystSense'receptor,  + description::
+  McshHlth000019:2861  "07_resource of SystSense"  + McshEngl.SystSense'resource,  + description::
+  McshHlth000019:2866  "08_structure of SystSense"  + McshEngl.SystSense'structure,  + description::
+  McshHlth000019:4076  "structure of tissueSysNervous"  + McshEngl.tissueSysNervous'structure,  + description::
+  McshHlth000019:4576  "info-resource of cellNeuron"  + McshEngl.cellNeuron'info-resource,  + description::
+  McshHlth000019:824  "doing of menix"  + McshEngl.menix'doing,  + description::
+  McshHmn000003:236  "personality of HumnSngu"  + McshEngl.HumnSngu'personality,  + description::
+  McshLag000011:29793  "MISC-ATTRIBUTE of Engl_lago"  + McshEngl.Engl_lago'misc-attribute,  + description::
+  McshLag000012:4980  "ATTRIBUTE of Espo_lago"  + McshEngl.Espo_lago'attribute,  + description::
+  McshLag000020:12606  "MISC-ATTRIBUTE of Elln_lago"  + McshEngl.Elln_lago'misc-attribute,  + description::
+  McshLag000031:52  "human of Gstr_lago"  + McshEngl.Gstr_lago'human,  + description::
+  McshLag000033:3196  "argu-phrase of logoDeut"  + McshEngl.DeutLogoView'argu-phrase,  + description::
+  McshLag000033:3201  "verb-argument of logoDeut"  + McshEngl.DeutLogoView'verb-argument,  + description::
+  McshLag000033:3206  "sentence of logoDeut"  + McshEngl.DeutLogoView'sentence,  + description::
+  McshLag000033:3385  "section of logoDeut"  + McshEngl.DeutLogoView'section,  + description::
+  McshLag000033:3390  "root-node of logoDeut"  + McshEngl.DeutLogoView'root-node,  + description::
+  McshLag000037:2445  "syntax-tree of HindLogoView"  + McshEngl.HindLogoView'syntax-tree,  + description::
+  McshLag000037:2450  "node of HindLogoView"  + McshEngl.HindLogoView'node,  + description::
+  McshLag000037:4021  "name of HindLogoView"  + McshEngl.HindLogoView'name,  + description::
+  McshLag000037:4026  "argu-name of HindLogoView"  + McshEngl.HindLogoView'argu-name,  + description::
+  McshLag000037:4056  "verb-name of HindLogoView"  + McshEngl.HindLogoView'verb-name,  + description::
+  McshLag000037:4061  "conjunction-name of HindLogoView"  + McshEngl.HindLogoView'conjunction-name,  + description::
+  McshLag000037:4066  "argu-phrase of HindLogoView"  + McshEngl.HindLogoView'argu-phrase,  + description::
+  McshLag000037:4071  "verb-argument of HindLogoView"  + McshEngl.HindLogoView'verb-argument,  + description::
+  McshLag000037:4076  "sentence of HindLogoView"  + McshEngl.HindLogoView'sentence,  + description::
+  McshLag000037:4255  "section of HindLogoView"  + McshEngl.HindLogoView'section,  + description::
+  McshLag000037:4260  "root-node of HindLogoView"  + McshEngl.HindLogoView'root-node,  + description::
+  McshLag000037:4309  "evoluting of Hind_lago"  + McshEngl.Hind_lago'evoluting,  + description::
+  McshLag000037:4388  "syntax-tree of UrduLogoView"  + McshEngl.UrduLogoView'syntax-tree,  + description::
+  McshLag000037:4393  "node of UrduLogoView"  + McshEngl.UrduLogoView'node,  + description::
+  McshLag000037:4614  "name of UrduLogoView"  + McshEngl.UrduLogoView'name,  + description::
+  McshLag000037:4619  "argu-name of UrduLogoView"  + McshEngl.UrduLogoView'argu-name,  + description::
+  McshLag000037:4649  "verb-name of UrduLogoView"  + McshEngl.UrduLogoView'verb-name,  + description::
+  McshLag000037:4654  "conjunction-name of UrduLogoView"  + McshEngl.UrduLogoView'conjunction-name,  + description::
+  McshLag000037:4659  "argu-phrase of UrduLogoView"  + McshEngl.UrduLogoView'argu-phrase,  + description::
+  McshLag000037:4664  "verb-argument of UrduLogoView"  + McshEngl.UrduLogoView'verb-argument,  + description::
+  McshLag000037:4669  "sentence of UrduLogoView"  + McshEngl.UrduLogoView'sentence,  + description::
+  McshLag000037:4674  "section of UrduLogoView"  + McshEngl.UrduLogoView'section,  + description::
+  McshLag000037:4679  "root-node of UrduLogoView"  + McshEngl.UrduLogoView'root-node,  + description::
+  McshLag000037:4697  "evoluting of Urdu_lago"  + McshEngl.Urdu_lago'evoluting,  + description::
+  McshLag000039:1464  "phoneme of Ptie_lago"  + McshEngl.Ptie_lago'phoneme,  + description::
+  McshNtr000004:158  "structure of mtrlMol"  + McshEngl.mtrlMol'structure,  + description::
+  McshNtr000004:163  "05_DOING of mtrlMol"  + McshEngl.mtrlMol'doing,  + description::
+  McshNtr000005:212  "MISC-ATTRIBUTE of mtrlSysMols"  + McshEngl.mtrlSysMols'misc-attribute,  + description::
+  McshNtr000007:1694  "usage of chmElrCa20"  + McshEngl.chmElrCa20'usage,  + description::
+  McshNtr000007:2821  "DOING of chmElrH1"  + McshEngl.chmElrH1'doing,  + description::
+  McshNtr000007:3254  "usage of chmElrMg12"  + McshEngl.chmElrMg12'usage,  + description::
+  McshNtr000007:3828  "DOING of chmElrO8"  + McshEngl.chmElrO8'doing,  + description::
+  McshNtr000007:4117  "usage of chmElrΚ19"  + McshEngl.chmElrΚ19'usage,  + description::
+  McshOgm000004:1146  "evaluation of cholesterolHmn"  + McshEngl.cholesterolHmn'evaluation,  + description::
+  McshOgm000004:1287  "gene of cholesterolHmn"  + McshEngl.cholesterolHmn'gene,  + description::
+  McshOgm000004:1327  "doingManaging of cholesterolHmn"  + McshEngl.cholesterolHmn'doingManaging,  + description::
+  McshOgm000004:1343  "doingMeasuring of cholesterolHmn"  + McshEngl.cholesterolHmn'doingMeasuring,  + description::
+  McshOgm000005:1596  "disease of hrmnInsulin"  + McshEngl.hrmnInsulin'disease,  + description::
+  McshOgm000005:1607  "DOING of hrmnInsulin"  + McshEngl.hrmnInsulin'doing,  + description::
+  McshOgm000005:1661  "DOING of hormoneHmnCortisol"  + McshEngl.hormoneHmnCortisol'doing,  + description::
+  McshOgm000005:2672  "DOING of HrmnAndrogen"  + McshEngl.HrmnAndrogen'doing,  + description::
+  McshOgm000005:2796  "DOING of hrmnTestosterone"  + McshEngl.hrmnTestosterone'doing,  + description::
+  McshOgm000005:428  "disease of BodyHumn'product"  + McshEngl.BodyHumn'product'disease,  + description::
+  McshOgm000005:436  "DOING of BodyHumn'product"  + McshEngl.BodyHumn'product'doing,  + description::
+  McshOgm000005:444  "structure of BodyHumn'product"  + McshEngl.BodyHumn'product'structure,  + description::
+  McshOgm000005:52  "01_molecule of SystMolsOgm"  + McshEngl.SystMolsOgm'molecule,  + description::
+  McshOgm000005:57  "02_atom of SystMolsOgm"  + McshEngl.SystMolsOgm'atom,  + description::
+  McshOgm000005:62  "03_intermolecular-bond of SystMolsOgm"  + McshEngl.SystMolsOgm'intermolecular-bond,  + description::
+  McshOgm000005:67  "04_physical-property of SystMolsOgm"  + McshEngl.SystMolsOgm'physical-property,  + description::
+  McshOgm000005:72  "05_chemical-property of SystMolsOgm"  + McshEngl.SystMolsOgm'chemical-property,  + description::
+  McshOgm000008:37  "01_disease of ogmCellNo"  + McshEngl.ogmCellNo'disease,  + description::
+  McshOgm000008:42  "02_governance-system of ogmCellNo"  + McshEngl.ogmCellNo'governance-system,  + description::
+  McshOgm000008:47  "03_health of ogmCellNo"  + McshEngl.ogmCellNo'health,  + description::
+  McshOgm000009:457  "MISC-attribute of ogsmAnimal"  + McshEngl.ogsmAnimal'MISC-attribute,  + description::
+  McshStn000018:2975  "Means of Implementation"  + McshEngl.Un2030asd'text'Means,  + description::
+  McshStn000018:3560  "Means of implementation and the Global Partnership"  + McshEngl.Un2030asd'text'Means,  + description::
+  McshStn000018:891  "charter of ogznUn"  + McshEngl.Unadmin'charter,  + description::
+  McshStn000020:1121  "budget of Eufp"  + McshEngl.Eufp'budget,  + description::
+  McshStn000020:1126  "objective of Eufp"  + McshEngl.Eufp'objective,  + description::
+  McshStn000020:1131  "time of Eufp"  + McshEngl.Eufp'time,  + description::
+  McshStn000020:1136  "evaluation of Eufp"  + McshEngl.Eufp'evaluation,  + description::
+  McshStn000020:1141  "implementation of Eufp"  + McshEngl.Eufp'implementation,  + description::
+  McshStn000020:15652  "DOING of Euinfsys"  + McshEngl.Euinfsys'doing,  + description::
+  McshStn000023:111  "class.instance of scmo"  + McshEngl.scmo'class.instance,  + description::
+  McshStn000030:760  "place of SocGrca"  + McshEngl.SocGrca'place,  + description::
+  McshStn000031:12754  "{1949..present} of SocChna"  + McshEngl.{SocChna''{1949..present},  + description::
+  McshStn000031:13038  "before-{1949} of SocChna"  + McshEngl.{SocChna''before-{1949},  + description::
+  McshStn000031:3456  "hours-of-work of Chnawrkr"  + McshEngl.Chnawrkr'hours-of-work,  + description::
+  McshStn000034:2842  "name of logoVnma"  + McshEngl.logoVnma'name,  + description::
+  McshStn000034:321  "syntax-tree of logoVnma"  + McshEngl.logoVnma'syntax-tree,  + description::
+  McshStn000034:326  "node of logoVnma"  + McshEngl.logoVnma'node,  + description::
+  McshStn000034:3391  "argu-phrase of logoVnma"  + McshEngl.logoVnma'argu-phrase,  + description::
+  McshStn000034:3596  "section of logoVnma"  + McshEngl.logoVnma'section,  + description::
+  McshStn000034:3601  "root-node of logoVnma"  + McshEngl.logoVnma'root-node,  + description::
+  McshStn000035:285  "syntax-tree of logoItln"  + McshEngl.logoItln'syntax-tree,  + description::
+  McshStn000035:290  "node of logoItln"  + McshEngl.logoItln'node,  + description::
+  McshStn000035:3115  "argu-phrase of logoItln"  + McshEngl.logoItln'argu-phrase,  + description::
+  McshStn000035:3429  "section of logoItln"  + McshEngl.logoItln'section,  + description::
+  McshStn000035:3434  "root-node of logoItln"  + McshEngl.logoItln'root-node,  + description::
+  McshStn000037:1875  "name of logoFrac"  + McshEngl.logoFrac'name,  + description::
+  McshStn000037:1880  "argu-name of logoFrac"  + McshEngl.logoFrac'argu-name,  + description::
+  McshStn000037:1910  "verb-name of logoFrac"  + McshEngl.logoFrac'verb-name,  + description::
+  McshStn000037:1915  "conjunction-name of logoFrac"  + McshEngl.logoFrac'conjunction-name,  + description::
+  McshStn000037:1920  "argu-phrase of logoFrac"  + McshEngl.logoFrac'argu-phrase,  + description::
+  McshStn000037:1925  "verb-argument of logoFrac"  + McshEngl.logoFrac'verb-argument,  + description::
+  McshStn000037:1930  "sentence of logoFrac"  + McshEngl.logoFrac'sentence,  + description::
+  McshStn000037:1935  "section of logoFrac"  + McshEngl.logoFrac'section,  + description::
+  McshStn000037:1940  "root-node of logoFrac"  + McshEngl.logoFrac'root-node,  + description::
+  McshStn000037:282  "syntax-tree of logoFrac"  + McshEngl.logoFrac'syntax-tree,  + description::
+  McshStn000037:287  "node of logoFrac"  + McshEngl.logoFrac'node,  + description::
+  McshStn000038:1332  "argu-phrase of logoSbul"  + McshEngl.logoSbul'argu-phrase,  + description::
+  McshStn000038:1337  "verb-argument of logoSbul"  + McshEngl.logoSbul'verb-argument,  + description::
+  McshStn000038:1342  "sentence of logoSbul"  + McshEngl.logoSbul'sentence,  + description::
+  McshStn000038:1511  "section of logoSbul"  + McshEngl.logoSbul'section,  + description::
+  McshStn000038:1516  "root-node of logoSbul"  + McshEngl.logoSbul'root-node,  + description::
+  McshStn000038:291  "syntax-tree of logoSbul"  + McshEngl.logoSbul'syntax-tree,  + description::
+  McshStn000038:296  "node of logoSbul"  + McshEngl.logoSbul'node,  + description::
+  McshStn000039:1563  "argu-name of SqipLogo"  + McshEngl.SqipLogo'argu-name,  + description::
+  McshStn000039:1664  "verb-name of SqipLogo"  + McshEngl.SqipLogo'verb-name,  + description::
+  McshStn000039:1669  "conjunction-name of SqipLogo"  + McshEngl.SqipLogo'conjunction-name,  + description::
+  McshStn000039:1674  "argu-phrase of SqipLogo"  + McshEngl.SqipLogo'argu-phrase,  + description::
+  McshStn000039:1679  "verb-argument of SqipLogo"  + McshEngl.SqipLogo'verb-argument,  + description::
+  McshStn000039:1684  "sentence of SqipLogo"  + McshEngl.SqipLogo'sentence,  + description::
+  McshStn000039:1853  "section of SqipLogo"  + McshEngl.SqipLogo'section,  + description::
+  McshStn000039:1858  "root-node of SqipLogo"  + McshEngl.SqipLogo'root-node,  + description::
+  McshStn000039:317  "syntax-tree of SqipLogo"  + McshEngl.SqipLogo'syntax-tree,  + description::
+  McshStn000039:322  "node of SqipLogo"  + McshEngl.SqipLogo'node,  + description::
+  McshStn000040:1116  "name of SmkdLogoView"  + McshEngl.SmkdLogoView'name,  + description::
+  McshStn000040:1121  "argu-name of SmkdLogoView"  + McshEngl.SmkdLogoView'argu-name,  + description::
+  McshStn000040:1151  "verb-name of SmkdLogoView"  + McshEngl.SmkdLogoView'verb-name,  + description::
+  McshStn000040:1156  "conjunction-name of SmkdLogoView"  + McshEngl.SmkdLogoView'conjunction-name,  + description::
+  McshStn000040:1161  "argu-phrase of SmkdLogoView"  + McshEngl.SmkdLogoView'argu-phrase,  + description::
+  McshStn000040:1166  "verb-argument of SmkdLogoView"  + McshEngl.SmkdLogoView'verb-argument,  + description::
+  McshStn000040:1171  "sentence of SmkdLogoView"  + McshEngl.SmkdLogoView'sentence,  + description::
+  McshStn000040:1350  "section of SmkdLogoView"  + McshEngl.SmkdLogoView'section,  + description::
+  McshStn000040:1355  "root-node of SmkdLogoView"  + McshEngl.SmkdLogoView'root-node,  + description::
+  McshStn000040:362  "syntax-tree of SmkdLogoView"  + McshEngl.SmkdLogoView'syntax-tree,  + description::
+  McshStn000040:367  "node of SmkdLogoView"  + McshEngl.SmkdLogoView'node,  + description::
+  McshStn000041:1026  "verb-name of SslvLogoView"  + McshEngl.SslvLogoView'verb-name,  + description::
+  McshStn000041:1031  "conjunction-name of SslvLogoView"  + McshEngl.SslvLogoView'conjunction-name,  + description::
+  McshStn000041:1036  "argu-phrase of SslvLogoView"  + McshEngl.SslvLogoView'argu-phrase,  + description::
+  McshStn000041:1041  "verb-argument of SslvLogoView"  + McshEngl.SslvLogoView'verb-argument,  + description::
+  McshStn000041:1046  "sentence of SslvLogoView"  + McshEngl.SslvLogoView'sentence,  + description::
+  McshStn000041:1225  "section of SslvLogoView"  + McshEngl.SslvLogoView'section,  + description::
+  McshStn000041:1230  "root-node of SslvLogoView"  + McshEngl.SslvLogoView'root-node,  + description::
+  McshStn000041:376  "syntax-tree of SslvLogoView"  + McshEngl.SslvLogoView'syntax-tree,  + description::
+  McshStn000041:381  "node of SslvLogoView"  + McshEngl.SslvLogoView'node,  + description::
+  McshStn000041:991  "name of SslvLogoView"  + McshEngl.SslvLogoView'name,  + description::
+  McshStn000041:996  "argu-name of SslvLogoView"  + McshEngl.SslvLogoView'argu-name,  + description::
+  McshStn000042:1604  "organization of SchlbookDigi"  + McshEngl.SchlbookDigi'organization,  + description::
+  McshStn000042:3804  "info-resource of Chnaeduc"  + McshEngl.Chnaeduc'info-resource,  + description::
+  McshStn000042:4826  "organization of ChnaSmrteduc"  + McshEngl.ChnaSmrteduc'organization,  + description::
+  McshStn000042:5594  "organization of Smrteduc"  + McshEngl.Smrteduc'organization,  + description::
+  McshStn000042:5717  "learning of Smrteduc"  + McshEngl.Smrteduc'learning,  + description::
+  McshStn000043:1116  "name of SrusLogoView"  + McshEngl.SrusLogoView'name,  + description::
+  McshStn000043:1121  "argu-name of SrusLogoView"  + McshEngl.SrusLogoView'argu-name,  + description::
+  McshStn000043:1151  "verb-name of SrusLogoView"  + McshEngl.SrusLogoView'verb-name,  + description::
+  McshStn000043:1156  "conjunction-name of SrusLogoView"  + McshEngl.SrusLogoView'conjunction-name,  + description::
+  McshStn000043:1161  "argu-phrase of SrusLogoView"  + McshEngl.SrusLogoView'argu-phrase,  + description::
+  McshStn000043:1166  "verb-argument of SrusLogoView"  + McshEngl.SrusLogoView'verb-argument,  + description::
+  McshStn000043:1171  "sentence of SrusLogoView"  + McshEngl.SrusLogoView'sentence,  + description::
+  McshStn000043:1350  "section of SrusLogoView"  + McshEngl.SrusLogoView'section,  + description::
+  McshStn000043:1355  "root-node of SrusLogoView"  + McshEngl.SrusLogoView'root-node,  + description::
+  McshStn000043:1373  "evoluting of Srus_lago"  + McshEngl.Srus_lago'evoluting,  + description::
+  McshStn000043:267  "syntax-tree of SrusLogoView"  + McshEngl.SrusLogoView'syntax-tree,  + description::
+  McshStn000043:272  "node of SrusLogoView"  + McshEngl.SrusLogoView'node,  + description::
+  McshStn000044:1366  "name of RomnLogoView"  + McshEngl.RomnLogoView'name,  + description::
+  McshStn000044:1371  "argu-name of RomnLogoView"  + McshEngl.RomnLogoView'argu-name,  + description::
+  McshStn000044:1401  "verb-name of RomnLogoView"  + McshEngl.RomnLogoView'verb-name,  + description::
+  McshStn000044:1406  "conjunction-name of RomnLogoView"  + McshEngl.RomnLogoView'conjunction-name,  + description::
+  McshStn000044:1411  "argu-phrase of RomnLogoView"  + McshEngl.RomnLogoView'argu-phrase,  + description::
+  McshStn000044:1416  "verb-argument of RomnLogoView"  + McshEngl.RomnLogoView'verb-argument,  + description::
+  McshStn000044:1421  "sentence of RomnLogoView"  + McshEngl.RomnLogoView'sentence,  + description::
+  McshStn000044:1600  "section of RomnLogoView"  + McshEngl.RomnLogoView'section,  + description::
+  McshStn000044:1605  "root-node of RomnLogoView"  + McshEngl.RomnLogoView'root-node,  + description::
+  McshStn000044:1623  "evoluting of Romn_lago"  + McshEngl.Romn_lago'evoluting,  + description::
+  McshStn000044:305  "syntax-tree of RomnLogoView"  + McshEngl.RomnLogoView'syntax-tree,  + description::
+  McshStn000044:310  "node of RomnLogoView"  + McshEngl.RomnLogoView'node,  + description::
+  McshStn000048:354  "syntax-tree of JpnsLogoView"  + McshEngl.JpnsLogoView'syntax-tree,  + description::
+  McshStn000048:359  "node of JpnsLogoView"  + McshEngl.JpnsLogoView'node,  + description::
+  McshStn000048:4032  "name of JpnsLogoView"  + McshEngl.JpnsLogoView'name,  + description::
+  McshStn000048:4037  "argu-name of JpnsLogoView"  + McshEngl.JpnsLogoView'argu-name,  + description::
+  McshStn000048:4589  "argu-phrase of JpnsLogoView"  + McshEngl.JpnsLogoView'argu-phrase,  + description::
+  McshStn000048:4721  "sentence of JpnsLogoView"  + McshEngl.JpnsLogoView'sentence,  + description::
+  McshStn000048:4900  "section of JpnsLogoView"  + McshEngl.JpnsLogoView'section,  + description::
+  McshStn000048:4905  "root-node of JpnsLogoView"  + McshEngl.JpnsLogoView'root-node,  + description::
+  McshStn000050:2799  "name of KhmrLogoView"  + McshEngl.KhmrLogoView'name,  + description::
+  McshStn000050:2804  "argu-name of KhmrLogoView"  + McshEngl.KhmrLogoView'argu-name,  + description::
+  McshStn000050:3249  "argu-phrase of KhmrLogoView"  + McshEngl.KhmrLogoView'argu-phrase,  + description::
+  McshStn000050:3254  "verb-argument of KhmrLogoView"  + McshEngl.KhmrLogoView'verb-argument,  + description::
+  McshStn000050:3259  "sentence of KhmrLogoView"  + McshEngl.KhmrLogoView'sentence,  + description::
+  McshStn000050:343  "syntax-tree of KhmrLogoView"  + McshEngl.KhmrLogoView'syntax-tree,  + description::
+  McshStn000050:3438  "section of KhmrLogoView"  + McshEngl.KhmrLogoView'section,  + description::
+  McshStn000050:3443  "root-node of KhmrLogoView"  + McshEngl.KhmrLogoView'root-node,  + description::
+  McshStn000050:348  "node of KhmrLogoView"  + McshEngl.KhmrLogoView'node,  + description::
+  McshTch000002:1012  "evaluation of techAutomation"  + McshEngl.techAutomation'evaluation,  + description::
+  McshTchInf000003:184  "processor.CPU.NO of techCmpr"  + McshEngl.techCmpr_processor'processor.CPU.NO,  + description::
+  McshTchInf000003:1865  "hardware of cmprBnr"  + McshEngl.cmprBnr'hardware,  + description::
+  McshTchInf000003:1870  "software of cmprBnr"  + McshEngl.cmprBnr'software,  + description::
+  McshTchInf000006:2616  "identifier of named-Sunt (link)"  + McshEngl.Srcd_lago-Sunt.named'identifier,  + description::
+  McshTchInf000006:602  "MISC-ATTRIBUTE of Pgmgalgo"  + McshEngl.Pgmgalgo'misc-attribute,  + description::
+  McshTchInf000010:3165  "WHOLE of Jso"  + McshEngl.Jso'whole,  + description::
+  McshTchInf000012:9881  "info-resource of npm"  + McshEngl.npm'info-resource,  + description::
+  McshTchInf000012:9971  "evoluting of npm"  + McshEngl.npm'evoluting,  + description::
+  McshTchInf000014:3328  "WHOLE of Wasmsection"  + McshEngl.Wasmsection'whole,  + description::
+  McshTchInf000015:4180  "WHOLE of AgntassetExvu"  + McshEngl.AgntassetExvu'whole,  + description::
+  McshTchInf000015:6545  "SPECIFIC-COMPLEMENT of DeApp"  + McshEngl.DeApp'specific-complement,  + description::
+  McshTchInf000015:8095  "blockchain of Lykke"  + McshEngl.Lykke'blockchain,  + description::
+  McshTchInf000016:11787  "protocol of Ddash_net"  + McshEngl.Ddash_net'protocol,  + description::
+  McshTchInf000016:12412  "blockchain of Ddash_net"  + McshEngl.Ddash_net'blockchain,  + description::
+  McshTchInf000016:12804  "whole.DAO of Ddash_net"  + McshEngl.Ddash_net'whole.DAO,  + description::
+  McshTchInf000016:4995  "MISC-ATTRIBUTE of AgntBkcn"  + McshEngl.AgntBkcn'misc-attribute,  + description::
+  McshTchInf000016:5942  "protocol of Dae_net"  + McshEngl.Dae_net'protocol,  + description::
+  McshTchInf000016:773  "attribute of Dblockchain"  + McshEngl.Dblockchain'attribute,  + description::
+  McshTchInf000017:5909  "statistics of AgntBtcn"  + McshEngl.AgntBtcn'statistics,  + description::
+  McshTchInf000017:8730  "relation-to-PayPal of AgntBtcn"  + McshEngl.AgntBtcn'relation-to-PayPal,  + description::
+  McshTchInf000017:8807  "DOING of AgntBtcn"  + McshEngl.AgntBtcn'doing,  + description::
+  McshTchInf000017:8831  "Market of Btcnservice"  + McshEngl.Btcnservice'Market,  + description::
+  McshTchInf000018:145  "attribute of AgntEthr"  + McshEngl.AgntEthr'attribute,  + description::
+  McshTchInf000018:9940  "evoluting of Solx_lago"  + McshEngl.Solx_lago'evoluting,  + description::
+  McshTchInf000019:1063  "ENVIRONMENT of OgznDao"  + McshEngl.OgznDao'environment,  + description::
+  McshTchInf000019:1306  "stakeholder of DoEth"  + McshEngl.DoEth'stakeholder,  + description::
+  McshTchInf000019:1460  "resource.whitepaper of DoEth"  + McshEngl.DoEth'resource.whitepaper,  + description::
+  McshTchInf000019:2322  "DOING of DoEth"  + McshEngl.DoEth'doing,  + description::
+  McshTchInf000019:2468  "evoluting of The_DAO"  + McshEngl.The_DAO'evoluting,  + description::
+  McshTchInf000019:2629  "asset of DoAragon"  + McshEngl.DoAragon'asset,  + description::
+  McshTchInf000019:2795  "Permissions-page of DoAragon"  + McshEngl.DoAragon_Dapp'Permissions-page,  + description::
+  McshTchInf000019:2800  "App-Center-page of DoAragon"  + McshEngl.DoAragon_Dapp'App-Center-page,  + description::
+  McshTchInf000019:2805  "Settings-page of DoAragon"  + McshEngl.DoAragon_Dapp'Settings-page,  + description::
+  McshTchInf000019:2894  "evaluation of DoAragon"  + McshEngl.DoAragon'evaluation,  + description::
+  McshTchInf000019:3047  "asset of DAOstack"  + McshEngl.DAOstack'asset,  + description::
+  McshTchInf000019:5847  "DOING of eosDAC"  + McshEngl.eosDAC'doing,  + description::
+  McshTchInf000019:969  "organization of OgznDao"  + McshEngl.OgznDao'organization,  + description::
+  McshTchInf000020:3061  "organization of Chrono.tech"  + McshEngl.Chrono.tech'organization,  + description::
+  McshTchInf000020:3145  "evoluting of Chrono.tech"  + McshEngl.Chrono.tech'evoluting,  + description::
+  McshTchInf000025:991  "ATTRIBUTE of Everipedia"  + McshEngl.Everipedia'attribute,  + description::
+  McshTchInf000027:61  "asset of Neo_net"  + McshEngl.Neo_net'asset,  + description::
+  McshTchInf000028:1063  "DOING of module"  + McshEngl.Move_lago_module'doing,  + description::
+  McshTchInf000028:1257  "evaluation of Move_lago"  + McshEngl.Move_lago'evaluation,  + description::
+  McshTchInf000028:1309  "attribute of Move_lago"  + McshEngl.Move_lago'attribute,  + description::
+  McshTchInf000028:1822  "program of DnDiem"  + McshEngl.DnDiem'program,  + description::
+  McshTchInf000028:183  "DOING of DvLibra"  + McshEngl.DvLibra'doing,  + description::
+  McshTchInf000028:2310  "benefit of DnDiem"  + McshEngl.DnDiem'evaluation'benefit,  + description::
+  McshTchInf000028:2427  "DOING of DnDiem"  + McshEngl.DnDiem'doing,  + description::
+  McshTchInf000030:2761  "algo'titledNo-section of Rust_lago"  + McshEngl.Rustalgo'section'algo'titledNo-section,  + description::
+  McshTchInf000030:2766  "algo'titled-section of Rust_lago"  + McshEngl.Rustalgo'section'algo'titled-section,  + description::
+  McshTchInf000030:3214  "benefit of Rust_lago"  + McshEngl.Rust_lago'evaluation'benefit,  + description::
+  McshTchInf000030:3219  "benefitNo of Rust_lago"  + McshEngl.Rust_lago'evaluation'benefitNo,  + description::
+  McshTchInf000031:2615  "DOING of Cppz_lago"  + McshEngl.Cppz_lago'doing,  + description::
+  McshTchInf000031:927  "name of Cppz_lago_f"  + McshEngl.Cppz_lago_f'name,  + description::
+  McshTchInf000038:1391  "evaluation of llmTransformer"  + McshEngl.llmTransformer'evaluation,  + description::
+  McshTchInf000039:14786  "DOING of Wlfmlen"  + McshEngl.Wlfmlen'doing,  + description::
+  McshTchInf000039:15641  "DOING of Wlfmlpn"  + McshEngl.Wlfmlpn'doing,  + description::
+  McshTchInf000039:6319  "browser of klmrCyc"  + McshEngl.klmrCyc'browser,  + description::
+  McshTchInf000039:6324  "server of klmrCyc"  + McshEngl.klmrCyc'server,  + description::
+  McshTchPrgm000003:695  "file of Atompckg"  + McshEngl.Atompckg'developing'file,  + description::
+
+=== SPECIFIC-LEFT (122)
+  McshCor000005:2573  "causality.real"  specific part: not changed
+  McshCor000007:753  "ConjSpace.sentence"  specific part: not changed
+  McshLag000020:9389  "Elln_nounRegularNo.masculine"  specific part: not changed
+  McshLag000020:9394  "Elln_nounRegularNo.feminine"  specific part: not changed
+  McshLag000020:9399  "Elln_nounRegularNo.neuter"  specific part: not changed
+  McshLag000024:444  "nounEnglC.irregular"  specific part: not changed
+  McshLag000030:4887  "mVTurkSubj.past.reported (link)"  specific part: not changed
+  McshNtr000004:608  "macromolecule.human (link)"  specific part: not changed
+  McshNtr000005:340  "mtrlSysMols.organism-001 (link)"  specific part: not changed
+  McshNtr000005:345  "mtrlSysMols.human-002 (link)"  specific part: not changed
+  McshOgm000005:2808  "hrmnTestosterone.aggregate"  specific part: not changed
+  McshOgm000010:1262  "herb.spiritual-042"  specific part: not changed
+  McshStn000008:1257  "Ogzn.spec-div.admin-sys"  specific part: not changed
+  McshStn000010:3822  "satisfier.MISC"  specific part: not changed
+  McshStn000015:4540  "ogznServiceNo.sector (link)"  specific part: not changed
+  McshStn000015:5524  "OgznPrdg.ALPHABETICALLY"  specific part: not changed
+  McshStn000020:3344  "EuoComozn.Directorate-general (link)"  specific part: not changed
+  McshStn000028:345  "Finpaysys.SPACIFIC"  specific part: not changed
+  McshStn000035:2950  "ItlnVerb.ere"  specific part: not changed
+  McshStn000035:2955  "ItlnVerb.ire"  specific part: not changed
+  McshStn000038:1175  "SbulArgo.pronoun"  specific part: not changed
+  McshStn000042:1237  "techEdu.schoolbook (link)"  specific part: not changed
+  McshStnlaw000004:1569  "lawIntl.Universal-declaration-of-human-rights-(Unudhr)"  specific part: not changed
+  McshTchInf000003:1831  "cmprAbstract.lambda-calculus"  specific part: not changed
+  McshTchInf000010:1117  "Array.prototype'member"  specific part: not changed
+  McshTchInf000011:4680  "Jsbreval.pro"  specific part: not changed
+  McshTchInf000011:4688  "Jsbreval.con"  specific part: not changed
+  McshTchInf000012:1279  "Jsndmc'node-modules.com"  specific part: not changed
+  McshTchInf000012:3852  "lagJsndstc.debugger"  specific part: not changed
+  McshTchInf000012:4671  "Jsndpgm.HELLO-WORLD"  specific part: not changed
+  McshTchInf000012:8405  "resource.APPLICATION"  specific part: not changed
+  McshTchInf000014:1251  "table.TEXT"  specific part: not changed
+  McshTchInf000015:13757  "netAlgo.MULTI.NO-CHAIN"  specific part: not changed
+  McshTchInf000015:232  "Dstakeholder.authorityNo"  specific part: not changed
+  McshTchInf000015:4748  "AnaSecurity.EVOLUTING"  specific part: not changed
+  McshTchInf000015:6980  "ICO.EVOLUTING"  specific part: not changed
+  McshTchInf000016:11250  "btsnet.EVOLUTING"  specific part: not changed
+  McshTchInf000016:13334  "nxtsvc.ALIAS-SYSTEM"  specific part: not changed
+  McshTchInf000016:13979  "DvXRP.AGGREGATE"  specific part: not changed
+  McshTchInf000016:14025  "xrppgm.CLIENT"  specific part: not changed
+  McshTchInf000016:14030  "xrppgm.SERVER"  specific part: not changed
+  McshTchInf000016:14138  "Ripple_net.EVOLUTING"  specific part: not changed
+  McshTchInf000016:2109  "asset-ogn.EDUCATING"  specific part: not changed
+  McshTchInf000016:2841  "Bkcnasset.spec-div.activeness"  specific part: not changed
+  McshTchInf000016:2873  "Bkcnasset.spec-div.mining"  specific part: not changed
+  McshTchInf000016:4521  "wallet.ONLINE"  specific part: not changed
+  McshTchInf000016:5986  "I. INTRODUCTION"  specific part: not changed
+  McshTchInf000016:6014  "II. ÆTERNITY BLOCKCHAIN"  specific part: not changed
+  McshTchInf000016:6393  "III. APPLICATIONS"  specific part: not changed
+  McshTchInf000016:6553  "IV. IMPLEMENTATION"  specific part: not changed
+  McshTchInf000016:6602  "V. DISCUSSION"  specific part: not changed
+  McshTchInf000016:7593  "1. Introduction"  specific part: not changed
+  McshTchInf000016:7716  "2. Architecture Overview"  specific part: not changed
+  McshTchInf000016:7898  "Tzs-net.Evoluting"  specific part: not changed
+  McshTchInf000016:8926  "Dcrdnode.MINER"  specific part: not changed
+  McshTchInf000016:9084  "dcrblk.Block1"  specific part: not changed
+  McshTchInf000016:9824  "dcrpgm.AMGR (address_manager)"  specific part: not changed
+  McshTchInf000016:9829  "dcrpgm.BMGR (block_manager)"  specific part: not changed
+  McshTchInf000016:9834  "dcrpgm.SRVR (server)"  specific part: not changed
+  McshTchInf000016:9839  "dcrpgm.RPCS (RPC_server)"  specific part: not changed
+  McshTchInf000016:9924  "dcrwltCli'Key.PUBLIC"  specific part: not changed
+  McshTchInf000017:2321  "block.EXAMPLE"  specific part: not changed
+  McshTchInf000017:3166  "Btcntx'part.INPUT-ARRAY"  specific part: not changed
+  McshTchInf000017:3346  "Btcntx'part.OUTPUT-ARRAY"  specific part: not changed
+  McshTchInf000017:4219  "Btcntx.AGGREGATE"  specific part: not changed
+  McshTchInf000017:5545  "BtcnexvuC-rate.EVOLUTING"  specific part: not changed
+  McshTchInf000017:5773  "BtcnexvuC.AGGREGATE"  specific part: not changed
+  McshTchInf000017:7140  "mycelium.EVOLUTING"  specific part: not changed
+  McshTchInf000017:8997  "Bitcoin-svc.SecureVote"  specific part: not changed
+  McshTchInf000018:11127  "Deth-asm'tool.binary-to-assembly"  specific part: not changed
+  McshTchInf000018:11147  "DcontractEth.solidity"  specific part: not changed
+  McshTchInf000018:11153  "DcontractEth.CALLED"  specific part: not changed
+  McshTchInf000018:11158  "DcontractEth.CALLER"  specific part: not changed
+  McshTchInf000018:11222  "DcontractEth.EXCHANGE"  specific part: not changed
+  McshTchInf000018:11230  "DcontractEth.EXCHANGE_VALUE_UNIT"  specific part: not changed
+  McshTchInf000018:11275  "DcontractEth.WILL-MANAGER"  specific part: not changed
+  McshTchInf000018:11301  "DcontractEth.EVOLUTING"  specific part: not changed
+  McshTchInf000018:11519  "human.DEVELOPER"  specific part: not changed
+  McshTchInf000018:11578  "human.Meetup"  specific part: not changed
+  McshTchInf000018:12428  "DnEth.TEST"  specific part: not changed
+  McshTchInf000018:3198  "Deth-account'transaction.IN"  specific part: not changed
+  McshTchInf000018:3218  "Deth-account'transaction.OUT"  specific part: not changed
+  McshTchInf000018:4143  "EthrassetCN.AGGREGATE"  specific part: not changed
+  McshTchInf000018:4636  "web3.js'oWeb3.eth"  specific part: not changed
+  McshTchInf000018:4683  "web3.js'oWeb3.personal"  specific part: not changed
+  McshTchInf000018:4698  "web3.js'oWeb3.version"  specific part: not changed
+  McshTchInf000018:7270  "Solx_lago_asm.INLINE"  specific part: not changed
+  McshTchInf000018:7894  "Lsolc.GENERIC (base)"  specific part: not changed
+  McshTchInf000019:4665  "1. INTERPRETATION"  specific part: not changed
+  McshTchInf000019:4762  "2. CORE PRINCIPLES"  specific part: not changed
+  McshTchInf000019:4796  "3. DAC TOKENS AND MEMBERSHIP"  specific part: not changed
+  McshTchInf000019:4853  "4. PROPOSALS AND VOTING OF MEMBERS"  specific part: not changed
+  McshTchInf000019:4870  "5. CUSTODIAN BOARD"  specific part: not changed
+  McshTchInf000019:4906  "6. POWER OF CUSTODIAN BOARD"  specific part: not changed
+  McshTchInf000019:4936  "7. PROCEEDINGS OF CUSTODIAN BOARD"  specific part: not changed
+  McshTchInf000019:4974  "8. CONFLICT OF INTERESTS"  specific part: not changed
+  McshTchInf000019:4981  "9. INDEMNIFICATION"  specific part: not changed
+  McshTchInf000019:5002  "10. DISTRIBUTION OF ASSETS TO MEMBERS"  specific part: not changed
+  McshTchInf000019:5020  "11. ACCOUNTING"  specific part: not changed
+  McshTchInf000019:5027  "12. AUDIT"  specific part: not changed
+  McshTchInf000019:5034  "13. NOTICES"  specific part: not changed
+  McshTchInf000019:5041  "14. RESOLUTION OF DIFFERENCES"  specific part: not changed
+  McshTchInf000019:5048  "15. RESOLUTION OF DISPUTES"  specific part: not changed
+  McshTchInf000019:5075  "16. VOLUNTARY WINDING UP AND DISSOLUTION"  specific part: not changed
+  McshTchInf000019:5083  "17. AMENDMENT OF CONSTITUTION"  specific part: not changed
+  McshTchInf000019:5090  "18. TERMS AND CONDITIONS"  specific part: not changed
+  McshTchInf000019:5098  "19. APPLICABLE LAW"  specific part: not changed
+  McshTchInf000019:5105  "20. SEVERABILITY"  specific part: not changed
+  McshTchInf000019:5116  "21. BINDING AGREEMENT"  specific part: not changed
+  McshTchInf000020:2051  "EvuLH.AGGREGATE"  specific part: not changed
+  McshTchInf000021:126  "1.Background"  specific part: not changed
+  McshTchInf000021:138  "2.Requirements for Blockchain Applications"  specific part: not changed
+  McshTchInf000021:198  "3.Consensus Algorithm (BFT-DPOS)"  specific part: not changed
+  McshTchInf000021:255  "4.Accounts"  specific part: not changed
+  McshTchInf000021:527  "6.Token Model and Resource Usage"  specific part: not changed
+  McshTchInf000021:645  "7.Governance"  specific part: not changed
+  McshTchInf000021:726  "8.Scripts &amp; Virtual Machines"  specific part: not changed
+  McshTchInf000021:778  "9.Inter Blockchain Communication"  specific part: not changed
+  McshTchInf000021:863  "10.Conclusion"  specific part: not changed
+  McshTchInf000025:958  "evaluation.PRO"  specific part: not changed
+  McshTchInf000039:16004  "Knlg_lago.MISC"  specific part: not changed
+  McshTchPrgm000003:207  "Atomedtr_Uicmd.CORE"  specific part: not changed
+
+=== SKIPPED (69)
+  McshHlth000019:3517  "07_organBrain (link) of SystNervous"  SKIP attr has space/&#: organBrain (link)
+  McshLag000003:1597  "data-structure (link) of infoData"  SKIP attr has space/&#: data-structure (link)
+  McshLag000022:12768  "Ε of wordSetElla"  SKIP id exists: idWrdrEllaepsilonnam
+  McshLag000022:19879  "Ζ of wordSetElla"  SKIP id exists: idWrdrEllazitanam
+  McshLag000022:20335  "Η of wordSetElla"  SKIP id exists: idWrdrEllaitanam
+  McshLag000022:21212  "Θ of wordSetElla"  SKIP id exists: idWrdrEllathitanam
+  McshLag000022:22573  "Ι of wordSetElla"  SKIP id exists: idWrdrEllayyotanam
+  McshLag000022:23556  "Κ of wordSetElla"  SKIP id exists: idWrdrEllakapanam
+  McshLag000022:26928  "Λ of wordSetElla"  SKIP id exists: idWrdrEllalamdhanam
+  McshLag000022:28645  "Μ of wordSetElla"  SKIP id exists: idWrdrEllaminam
+  McshLag000022:31452  "Ν of wordSetElla"  SKIP id exists: idWrdrEllaninam
+  McshLag000022:32327  "Ξ of wordSetElla"  SKIP id exists: idWrdrEllaksinam
+  McshLag000022:32624  "Ο of wordSetElla"  SKIP id exists: idWrdrEllaomikronnam
+  McshLag000022:35082  "Π of wordSetElla"  SKIP id exists: idWrdrEllapinam
+  McshLag000022:40773  "Ρ of wordSetElla"  SKIP id exists: idWrdrEllaronam
+  McshLag000022:41305  "Σ of wordSetElla"  SKIP id exists: idWrdrEllasiymanam
+  McshLag000022:44436  "Τ of wordSetElla"  SKIP id exists: idWrdrEllatafnam
+  McshLag000022:46093  "Υ of wordSetElla"  SKIP id exists: idWrdrEllaipsilonnam
+  McshLag000022:47  "Α of wordSetElla"  SKIP id exists: idWrdrEllaalfanam
+  McshLag000022:47106  "Φ of wordSetElla"  SKIP id exists: idWrdrEllafinam
+  McshLag000022:48025  "Χ of wordSetElla"  SKIP id exists: idWrdrEllahhinam
+  McshLag000022:48874  "Ψ of wordSetElla"  SKIP id exists: idWrdrEllapsinam
+  McshLag000022:49137  "Ω of wordSetElla"  SKIP id exists: idWrdrEllaomeyanam
+  McshLag000022:7787  "Β of wordSetElla"  SKIP id exists: idWrdrEllavitanam
+  McshLag000022:8872  "Γ of wordSetElla"  SKIP id exists: idWrdrEllayamanam
+  McshLag000022:9798  "Δ of wordSetElla"  SKIP id exists: idWrdrElladheltanam
+  McshLag000024:5648  "A of wordSetEngl"  SKIP id exists: idWrdrEnglAnam
+  McshLag000024:5656  "B of wordSetEngl"  SKIP id exists: idWrdrEnglBnam
+  McshLag000024:5664  "C of wordSetEngl"  SKIP id exists: idWrdrEnglCnam
+  McshLag000024:5672  "D of wordSetEngl"  SKIP id exists: idWrdrEnglDnam
+  McshLag000024:5680  "E of wordSetEngl"  SKIP id exists: idWrdrEnglEnam
+  McshLag000024:5688  "F of wordSetEngl"  SKIP id exists: idWrdrEnglFnam
+  McshLag000024:5696  "G of wordSetEngl"  SKIP id exists: idWrdrEnglGnam
+  McshLag000024:5704  "H of wordSetEngl"  SKIP id exists: idWrdrEnglHnam
+  McshLag000024:5712  "I of wordSetEngl"  SKIP id exists: idWrdrEnglInam
+  McshLag000024:5720  "J of wordSetEngl"  SKIP id exists: idWrdrEnglJnam
+  McshLag000024:5728  "K of wordSetEngl"  SKIP id exists: idWrdrEnglKnam
+  McshLag000024:5736  "L of wordSetEngl"  SKIP id exists: idWrdrEnglLnam
+  McshLag000024:5744  "M of wordSetEngl"  SKIP id exists: idWrdrEnglMnam
+  McshLag000024:5752  "N of wordSetEngl"  SKIP id exists: idWrdrEnglNnam
+  McshLag000024:5760  "O of wordSetEngl"  SKIP id exists: idWrdrEnglOnam
+  McshLag000024:5768  "P of wordSetEngl"  SKIP id exists: idWrdrEnglPnam
+  McshLag000024:5776  "Q of wordSetEngl"  SKIP id exists: idWrdrEnglQnam
+  McshLag000024:5784  "R of wordSetEngl"  SKIP id exists: idWrdrEnglRnam
+  McshLag000024:5792  "S of wordSetEngl"  SKIP id exists: idWrdrEnglesnam
+  McshLag000024:5800  "T of wordSetEngl"  SKIP id exists: idWrdrEnglTnam
+  McshLag000024:5808  "U of wordSetEngl"  SKIP id exists: idWrdrEnglUnam
+  McshLag000024:5816  "V of wordSetEngl"  SKIP id exists: idWrdrEnglVnam
+  McshLag000024:5824  "W of wordSetEngl"  SKIP id exists: idWrdrEnglWnam
+  McshLag000024:5917  "X of wordSetEngl"  SKIP id exists: idWrdrEnglXnam
+  McshLag000024:5925  "Y of wordSetEngl"  SKIP id exists: idWrdrEnglYnam
+  McshLag000024:5933  "Z of wordSetEngl"  SKIP id exists: idWrdrEnglZnam
+  McshLag000031:71  "04_output (view-logo) of Gstr_lago"  SKIP attr has space/&#: output (view-logo)
+  McshOgm000008:745  "disorder-caused (link) of vrsPathogenic"  SKIP attr has space/&#: disorder-caused (link)
+  McshOgm000010:59  "03_health (link) of ogmPlant"  SKIP attr has space/&#: health (link)
+  McshStn000018:2508  "Universal-declaration-of-human-rights (link) of ogznUn"  SKIP attr has space/&#: Universal-declaration-of-human-rights (link)
+  McshStn000031:7672  "Chapter X. Relationship between the Party and the Communist Youth League of China"  SKIP attr has space/&#: Chapter X. Relationship between the Party and the Communist Youth League
+  McshStn000031:9074  "Chapter II: Fundamental Rights and Obligations of Citizens"  SKIP attr has space/&#: Chapter II: Fundamental Rights and Obligations
+  McshStn000042:5321  "World-Digital-Education-Alliance (link) of DgtlEdu"  SKIP attr has space/&#: World-Digital-Education-Alliance (link)
+  McshStnlaw000002:588  "Declaration-on-Free-Access-to-Law of ogznFalm"  SKIP id exists: idLawatt006Falmdlrnnam
+  McshTchInf000006:1720  "algo (output) of lagTnr"  SKIP attr has space/&#: algo (output)
+  McshTchInf000009:1943  "dirMcshmgr (link) of Mcshwv"  SKIP attr has space/&#: dirMcshmgr (link)
+  McshTchInf000016:10830  "5 Architecture of BitShares"  SKIP attr has space/&#: 5 Architecture
+  McshTchInf000016:13523  "Checkpoint: Protection of History"  SKIP attr has space/&#: Checkpoint: Protection
+  McshTchInf000016:15040  "8 The timeline of Humaniq"  SKIP attr has space/&#: 8 The timeline
+  McshTchInf000016:7549  "0. Adventure of Ideas"  SKIP attr has space/&#: 0. Adventure
+  McshTchInf000016:8484  "Lightweight clients, two-tier architecture, Proof of Stake, and usability."  SKIP attr has space/&#: Lightweight clients, two-tier architecture, Proof
+  McshTchInf000019:104  "01_node of OgznDao"  SKIP id exists: idDeOznskhrnam,idDeOznskhrdsn
+  McshTchInf000021:405  "5.Deterministic Parallel Execution of Applications"  SKIP attr has space/&#: 5.Deterministic Parallel Execution

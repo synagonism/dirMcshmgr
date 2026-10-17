@@ -1,0 +1,54 @@
+=== TITLE (0)
+  (none)
+
+=== NAMES-RENAMED (0)
+  (none)
+
+=== NAMES-KEPT+ADDED (0)
+  (none)
+
+=== SKIPPED (44)
+  McshCor000004:6874  idDngRptggstr  repeating -> DongRepeating  heading not matched
+  McshCor000005:2558  idRlnCsltgstr  causality -> RltnCausality  heading not matched
+  McshCor000005:3031  idRlnDcasgstr  dialectic-antithesis -> RltnDialectic  heading not matched
+  McshCor000009:1389  idGnrcCntgstr  continuous-generic -> discreteNo_entity  heading not matched
+  McshEdu000010:898  idSLangtermgstr  terminology -> sciTerm  heading not matched
+  McshHlth000002:241  idBdyHmnatt007gstr  head -> bodyHumn'head  heading not matched
+  McshHlth000002:2545  idBdyHmn547gstr  HumnbodyOvarianFollicle -> ovarian_follicle  heading not matched
+  McshHlth000002:3573  idGlndHmn020gstr  HumnbodyBreast -> glandBreast  heading not matched
+  McshHlth000002:4057  idTissHmn006gstr  HumnbodyEpithelialTissue -> tissueEpithelial  heading not matched
+  McshHlth000002:4107  idTissHmn007gstr  HumnbodySkeletalTissue -> tissueSkeletal  heading not matched
+  McshHlth000002:7335  idOgnHmn013002gstr  HumnbodyArtery -> vesselArtery  heading not matched
+  McshHlth000002:7610  idOgnHmn013007gstr  HumnbodyVein -> vesselVein  heading not matched
+  McshHlth000002:9190  idOgnHmn005gstr  HumnbodyLung -> organLung  heading not matched
+  McshHlth000002:11148  idOgnHmn026att012gstr  HumnbodyRenalPyramid -> renal_pyramid  heading not matched
+  McshHlth000002:11941  idBdyHmn502gstr  HumnbodyScrotum -> scrotum  heading not matched
+  McshHlth000002:13907  idBdyHmn148gstr  HumnbodyBreathing -> breathing  heading not matched
+  McshHlth000008:1573  idHlthHmnMndgstr  healthMind -> health.mental  heading not matched
+  McshHlth000011:2454  idDssHmn047gstr  DssHeart -> disease.heart  heading not matched
+  McshHlth000011:16272  idDssHmn026gstr  nutritional-imbalance -> DssNutrient  heading not matched
+  McshHlth000013:4621  idFoodHmn039gstr  flavoringNaturalDriedNo -> foodFlavoring  heading not matched
+  McshHlth000016:423  idThrpHmnMndgstr  thrpMind -> therapyMind  heading not matched
+  McshHlth000019:2913  idOgnHmn008gstr  ear -> organEar  heading not matched
+  McshLag000007:2063  idLHmnmsmsondogstr  semu-argu -> Semuargu  heading not matched
+  McshLag000007:23853  idLHmnmverbmrfdrgstr  verber -> memberorVerb  heading not matched
+  McshLag000012:281  idLEspoipt3gstr  Espo_lago-semu -> semasoEspo  heading not matched
+  McshOgm000005:657  idSysMolsHmn008gstr  macromolecule -> macromoleculeHmn  heading not matched
+  McshOgm000005:1109  idSysMolsHmn023gstr  antioxidant -> antioxidantHmn  heading not matched
+  McshStn000002:190  idStnOgmatt012gstr  satisfierStn -> satisfierOgm  heading not matched
+  McshStn000009:4911  idSocadmndnggstr  Socadmndng -> SocAdmndng  heading not matched
+  McshStn000017:7899  idOznW3cstdGpntgstr  StdW3c.group-noes -> StdW3c.group-notes  heading not matched
+  McshTchInf000011:4989  idLJsbrbsrgstr  browser -> appBrowser  heading not matched
+  McshTchInf000015:327  idAlgnthmngstr  Dchain-human -> Dhuman  heading not matched
+  McshTchInf000015:4621  idAlgntevuMoeStblgstr  stable-AgntassetExvu -> stable_AnaCurrency  heading not matched
+  McshTchInf000016:153  idDbchmngstr  human -> Dblockchain_human  heading not matched
+  McshTchInf000016:355  idDbcprlgstr  blockchain-protocol -> Dblockchain_protocol  heading not matched
+  McshTchInf000016:2324  idDbcevugstr  Dblockchain-asset -> Bkcnasset  heading not matched
+  McshTchInf000016:4087  idDbcpgmgstr  blockchain-program -> Dblockchain_program  heading not matched
+  McshTchInf000020:1723  idChbctpInfcgstr  Chrntechsc.interfac -> Chrntechsc.interface  heading not matched
+  McshTchInf000026:1002  idBkskpgmgstr  Algobkstkprgm -> Algobkskprgm  heading not matched
+  McshTchInf000028:133  idDnlbrskhrDvprgstr  DnDiem-developer -> DnDiem_developer  heading not matched
+  McshTchInf000030:231  idLRustalgnodegstr  Rustnode -> Rust_lago_node  heading not matched
+  McshTchInf000030:1329  idLRustsuntNIntgstr  Rustni -> Rust_lago_ni  heading not matched
+  McshTchInf000030:1595  idLRustsuntNFpgstr  Rustnf -> Rust_lago_nf  heading not matched
+  McshTchInf000039:8281  idLKnlg010otptgstr  ontology -> kbOnto  heading not matched

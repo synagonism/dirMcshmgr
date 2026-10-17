@@ -1,0 +1,96 @@
+=== TITLE (44)
+  McshCor000004:6874  idDngRptggstr  repeating -> DongRepeating
+  McshCor000005:2558  idRlnCsltgstr  causality -> RltnCausality
+  McshCor000005:3031  idRlnDcasgstr  dialectic-antithesis -> RltnDialectic
+  McshCor000009:1389  idGnrcCntgstr  continuous-generic -> discreteNo_entity
+  McshEdu000010:898  idSLangtermgstr  terminology -> sciTerm
+  McshHlth000002:241  idBdyHmnatt007gstr  head -> bodyHumn'head
+  McshHlth000002:2545  idBdyHmn547gstr  HumnbodyOvarianFollicle -> ovarian_follicle
+  McshHlth000002:3573  idGlndHmn020gstr  HumnbodyBreast -> glandBreast
+  McshHlth000002:4057  idTissHmn006gstr  HumnbodyEpithelialTissue -> tissueEpithelial
+  McshHlth000002:4107  idTissHmn007gstr  HumnbodySkeletalTissue -> tissueSkeletal
+  McshHlth000002:7335  idOgnHmn013002gstr  HumnbodyArtery -> vesselArtery
+  McshHlth000002:7610  idOgnHmn013007gstr  HumnbodyVein -> vesselVein
+  McshHlth000002:9190  idOgnHmn005gstr  HumnbodyLung -> organLung
+  McshHlth000002:11148  idOgnHmn026att012gstr  HumnbodyRenalPyramid -> renal_pyramid
+  McshHlth000002:11941  idBdyHmn502gstr  HumnbodyScrotum -> scrotum
+  McshHlth000002:13907  idBdyHmn148gstr  HumnbodyBreathing -> breathing
+  McshHlth000008:1573  idHlthHmnMndgstr  healthMind -> health.mental
+  McshHlth000011:2454  idDssHmn047gstr  DssHeart -> disease.heart
+  McshHlth000011:16272  idDssHmn026gstr  nutritional-imbalance -> DssNutrient
+  McshHlth000013:4621  idFoodHmn039gstr  flavoringNaturalDriedNo -> foodFlavoring
+  McshHlth000016:423  idThrpHmnMndgstr  thrpMind -> therapyMind
+  McshHlth000019:2913  idOgnHmn008gstr  ear -> organEar
+  McshLag000007:2063  idLHmnmsmsondogstr  semu-argu -> Semuargu
+  McshLag000007:23853  idLHmnmverbmrfdrgstr  verber -> memberorVerb
+  McshLag000012:281  idLEspoipt3gstr  Espo_lago-semu -> semasoEspo
+  McshOgm000005:657  idSysMolsHmn008gstr  macromolecule -> macromoleculeHmn
+  McshOgm000005:1109  idSysMolsHmn023gstr  antioxidant -> antioxidantHmn
+  McshStn000002:190  idStnOgmatt012gstr  satisfierStn -> satisfierOgm
+  McshStn000009:4911  idSocadmndnggstr  Socadmndng -> SocAdmndng
+  McshStn000017:7899  idOznW3cstdGpntgstr  StdW3c.group-noes -> StdW3c.group-notes
+  McshTchInf000011:4989  idLJsbrbsrgstr  browser -> appBrowser
+  McshTchInf000015:327  idAlgnthmngstr  Dchain-human -> Dhuman
+  McshTchInf000015:4621  idAlgntevuMoeStblgstr  stable-AgntassetExvu -> stable_AnaCurrency
+  McshTchInf000016:153  idDbchmngstr  human -> Dblockchain_human
+  McshTchInf000016:355  idDbcprlgstr  blockchain-protocol -> Dblockchain_protocol
+  McshTchInf000016:2324  idDbcevugstr  Dblockchain-asset -> Bkcnasset
+  McshTchInf000016:4087  idDbcpgmgstr  blockchain-program -> Dblockchain_program
+  McshTchInf000020:1723  idChbctpInfcgstr  Chrntechsc.interfac -> Chrntechsc.interface
+  McshTchInf000026:1002  idBkskpgmgstr  Algobkstkprgm -> Algobkskprgm
+  McshTchInf000028:133  idDnlbrskhrDvprgstr  DnDiem-developer -> DnDiem_developer
+  McshTchInf000030:231  idLRustalgnodegstr  Rustnode -> Rust_lago_node
+  McshTchInf000030:1329  idLRustsuntNIntgstr  Rustni -> Rust_lago_ni
+  McshTchInf000030:1595  idLRustsuntNFpgstr  Rustnf -> Rust_lago_nf
+  McshTchInf000039:8281  idLKnlg010otptgstr  ontology -> kbOnto
+
+=== NAMES-RENAMED (32)
+  McshCor000004:6874  idDngRptggstr  repeating -> DongRepeating  5 line(s)
+  McshCor000005:2558  idRlnCsltgstr  causality -> RltnCausality  5 line(s)
+  McshEdu000010:898  idSLangtermgstr  terminology -> sciTerm  5 line(s)
+  McshHlth000002:241  idBdyHmnatt007gstr  head -> bodyHumn'head  5 line(s)
+  McshHlth000002:2545  idBdyHmn547gstr  HumnbodyOvarianFollicle -> ovarian_follicle  5 line(s)
+  McshHlth000002:3573  idGlndHmn020gstr  HumnbodyBreast -> glandBreast  4 line(s)
+  McshHlth000002:4057  idTissHmn006gstr  HumnbodyEpithelialTissue -> tissueEpithelial  5 line(s)
+  McshHlth000002:4107  idTissHmn007gstr  HumnbodySkeletalTissue -> tissueSkeletal  5 line(s)
+  McshHlth000002:7335  idOgnHmn013002gstr  HumnbodyArtery -> vesselArtery  5 line(s)
+  McshHlth000002:7610  idOgnHmn013007gstr  HumnbodyVein -> vesselVein  5 line(s)
+  McshHlth000002:9190  idOgnHmn005gstr  HumnbodyLung -> organLung  4 line(s)
+  McshHlth000002:11148  idOgnHmn026att012gstr  HumnbodyRenalPyramid -> renal_pyramid  5 line(s)
+  McshHlth000002:11941  idBdyHmn502gstr  HumnbodyScrotum -> scrotum  5 line(s)
+  McshHlth000002:13907  idBdyHmn148gstr  HumnbodyBreathing -> breathing  4 line(s)
+  McshHlth000008:1573  idHlthHmnMndgstr  healthMind -> health.mental  5 line(s)
+  McshHlth000011:2454  idDssHmn047gstr  DssHeart -> disease.heart  5 line(s)
+  McshHlth000013:4621  idFoodHmn039gstr  flavoringNaturalDriedNo -> foodFlavoring  5 line(s)
+  McshHlth000016:423  idThrpHmnMndgstr  thrpMind -> therapyMind  5 line(s)
+  McshHlth000019:2913  idOgnHmn008gstr  ear -> organEar  4 line(s)
+  McshLag000007:23853  idLHmnmverbmrfdrgstr  verber -> memberorVerb  4 line(s)
+  McshOgm000005:657  idSysMolsHmn008gstr  macromolecule -> macromoleculeHmn  5 line(s)
+  McshOgm000005:1109  idSysMolsHmn023gstr  antioxidant -> antioxidantHmn  5 line(s)
+  McshStn000002:190  idStnOgmatt012gstr  satisfierStn -> satisfierOgm  5 line(s)
+  McshStn000009:4911  idSocadmndnggstr  Socadmndng -> SocAdmndng  5 line(s)
+  McshTchInf000011:4989  idLJsbrbsrgstr  browser -> appBrowser  5 line(s)
+  McshTchInf000016:153  idDbchmngstr  human -> Dblockchain_human  5 line(s)
+  McshTchInf000020:1723  idChbctpInfcgstr  Chrntechsc.interfac -> Chrntechsc.interface  5 line(s)
+  McshTchInf000026:1002  idBkskpgmgstr  Algobkstkprgm -> Algobkskprgm  5 line(s)
+  McshTchInf000030:231  idLRustalgnodegstr  Rustnode -> Rust_lago_node  4 line(s)
+  McshTchInf000030:1329  idLRustsuntNIntgstr  Rustni -> Rust_lago_ni  5 line(s)
+  McshTchInf000030:1595  idLRustsuntNFpgstr  Rustnf -> Rust_lago_nf  5 line(s)
+  McshTchInf000039:8281  idLKnlg010otptgstr  ontology -> kbOnto  5 line(s)
+
+=== NAMES-KEPT+ADDED (12)
+  McshCor000005:3031  idRlnDcasgstr  dialectic-antithesis -> RltnDialectic  5 line(s) added, dash names kept
+  McshCor000009:1389  idGnrcCntgstr  continuous-generic -> discreteNo_entity  5 line(s) added, dash names kept
+  McshHlth000011:16272  idDssHmn026gstr  nutritional-imbalance -> DssNutrient  5 line(s) added, dash names kept
+  McshLag000007:2063  idLHmnmsmsondogstr  semu-argu -> Semuargu  5 line(s) added, dash names kept
+  McshLag000012:281  idLEspoipt3gstr  Espo_lago-semu -> semasoEspo  5 line(s) added, dash names kept
+  McshStn000017:7899  idOznW3cstdGpntgstr  StdW3c.group-noes -> StdW3c.group-notes  5 line(s) added, dash names kept
+  McshTchInf000015:327  idAlgnthmngstr  Dchain-human -> Dhuman  5 line(s) added, dash names kept
+  McshTchInf000015:4621  idAlgntevuMoeStblgstr  stable-AgntassetExvu -> stable_AnaCurrency  5 line(s) added, dash names kept
+  McshTchInf000016:355  idDbcprlgstr  blockchain-protocol -> Dblockchain_protocol  5 line(s) added, dash names kept
+  McshTchInf000016:2324  idDbcevugstr  Dblockchain-asset -> Bkcnasset  5 line(s) added, dash names kept
+  McshTchInf000016:4087  idDbcpgmgstr  blockchain-program -> Dblockchain_program  5 line(s) added, dash names kept
+  McshTchInf000028:133  idDnlbrskhrDvprgstr  DnDiem-developer -> DnDiem_developer  5 line(s) added, dash names kept
+
+=== SKIPPED (0)
+  (none)

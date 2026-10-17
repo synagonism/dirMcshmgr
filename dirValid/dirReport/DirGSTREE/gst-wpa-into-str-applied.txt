@@ -1,0 +1,20 @@
+=== MERGED (16)
+  McshHlth000005:510  idMsclHmnstr <- idMsclHmnstrwpa  (1 lines)  in idMsclHmngstr
+  McshHlth000005:3301  idBoneHmnstr <- idBoneHmnstrwpa  (1 lines)  in idBoneHmngstr
+  McshHlth000014:646  idMedHmnstr <- idMedHmnstrwpa  (2 lines)  in idMedHmngstr
+  McshHlth000016:287  idThrpHmnstr <- idThrpHmnstrwpa  (2 lines)  in idThrpHmngstr
+  McshHlth000016:834  idThrpHmnAltvstr <- idThrpHmnAltvSpcwpa  (1 lines)  in idThrpHmnAltvgstr
+  McshNtr000006:161  idChmCpdstr <- idChmCpdgstrwpa  (2 lines)  in idChmCpdgstr
+  McshNtr000006:227  idChmOgcstr <- idChmOgcgstrwpa  (1 lines)  in idChmOgcgstr
+  McshNtr000006:418  idChmCpd002str <- idChmCpd002gstrwpa  (1 lines)  in idChmCpd002gstr
+  McshOgm000006:1065  idPrtnHmnstr <- idPrtnHmngstrwpa  (3 lines)  in idPrtnHmngstr
+  McshStn000009:8195  idSocHumnstr <- idSocHumnstrwpa  (3 lines)  in idSocHumngstr
+  McshTchInf000003:355  idCmrstrgstr <- idCmrstrgSpcwpa  (1 lines)  in idCmrstrggstr
+  McshTchInf000003:837  idCmrstr <- idCmrSpcwpa  (1 lines)  in idCmrgstr
+  McshTchInf000007:3201  idLxmlgstr <- idLxmlgSpcwpa  (2 lines)  in idLxmlggstr
+  McshTchInf000015:2472  idAlgntevustr <- idAlgntevuSpcwpa  (2 lines)  in idAlgntevugstr
+  McshTchInf000015:13467  idAlgntstr <- idAlgntSpcwpa  (1 lines)  in idAlgntgstr
+  McshTchInf000017:6921  idBtcwltstr <- idBtcwltSpcwpa  (1 lines)  in idBtcwltgstr
+
+=== SKIPPED (0)
+  (none)

@@ -1,0 +1,153 @@
+NO-NAME FIX APPLIED — 91 name:: added (90 with a new description::), 0 parts with another title prefix left, 55 skipped
+
+=== CHANGED (91)
+  McshCor000005:2573  "causality.real"  + McshEngl.causality.real,  + description::
+  McshCor000007:753  "ConjSpace.sentence"  + McshEngl.ConjSpace.sentence,  + description::
+  McshLag000020:9389  "Elln_nounRegularNo.masculine"  + McshEngl.Elln_nounRegularNo.masculine,  + description::
+  McshLag000020:9394  "Elln_nounRegularNo.feminine"  + McshEngl.Elln_nounRegularNo.feminine,  + description::
+  McshLag000020:9399  "Elln_nounRegularNo.neuter"  + McshEngl.Elln_nounRegularNo.neuter,  + description::
+  McshLag000024:444  "nounEnglC.irregular"  + McshEngl.nounEnglC.irregular,  + description::
+  McshLag000037:4069  "HindArgo.pronoun"  + McshEngl.HindArgo.pronoun,  + description::
+  McshLag000037:4734  "UrduArgo.pronoun"  + McshEngl.UrduArgo.pronoun,  + description::
+  McshLag000039:1539  "PtiePhnm.consonant"  + McshEngl.PtiePhnm.consonant,  + description::
+  McshOgm000005:2886  "hrmnTestosterone.aggregate"  + McshEngl.hrmnTestosterone.aggregate,  + description::
+  McshOgm000010:1262  "herb.spiritual-042"  + McshEngl.herb.spiritual-042,  + description::
+  McshStn000008:1257  "Ogzn.spec-div.admin-sys"  + McshEngl.Ogzn.spec-div.admin-sys,  + description::
+  McshStn000010:3822  "satisfier.MISC"  + McshEngl.satisfier.MISC,  + description::
+  McshStn000015:5524  "OgznPrdg.ALPHABETICALLY"  + McshEngl.OgznPrdg.ALPHABETICALLY,  + description::
+  McshStn000028:345  "Finpaysys.SPACIFIC"  + McshEngl.Finpaysys.SPACIFIC,  + description::
+  McshStn000035:2962  "ItlnVerb.ere"  + McshEngl.ItlnVerb.ere,  + description::
+  McshStn000035:2967  "ItlnVerb.ire"  + McshEngl.ItlnVerb.ire,  + description::
+  McshStn000037:1923  "FracArgo.pronoun"  + McshEngl.FracArgo.pronoun,  + description::
+  McshStn000038:1187  "SbulArgo.pronoun"  + McshEngl.SbulArgo.pronoun,  + description::
+  McshStn000039:1671  "SqipArgo.pronoun"  + McshEngl.SqipArgo.pronoun,  + description::
+  McshStn000040:1164  "SmkdArgo.pronoun"  + McshEngl.SmkdArgo.pronoun,  + description::
+  McshStn000041:1039  "SslvArgo.pronoun"  + McshEngl.SslvArgo.pronoun,  + description::
+  McshStn000043:1164  "SrusArgo.pronoun"  + McshEngl.SrusArgo.pronoun,  + description::
+  McshStn000044:1414  "RomnArgo.pronoun"  + McshEngl.RomnArgo.pronoun,  + description::
+  McshStn000048:4187  "JpnsArgo.pronoun"  + McshEngl.JpnsArgo.pronoun,  + description::
+  McshStn000050:3042  "KhmrArgo.pronoun"  + McshEngl.KhmrArgo.pronoun,  + description::
+  McshStnlaw000004:1569  "lawIntl.Universal-declaration-of-human-rights-(Unudhr)"  + McshEngl.lawIntl.Universal-declaration-of-human-rights-(Unudhr),  + description::
+  McshTchInf000003:1837  "cmprAbstract.lambda-calculus"  + McshEngl.cmprAbstract.lambda-calculus,  + description::
+  McshTchInf000010:1117  "Array.prototype'member"  + McshEngl.Array.prototype'member,  + description::
+  McshTchInf000011:4680  "Jsbreval.pro"  + McshEngl.Jsbreval.pro,  + description::
+  McshTchInf000011:4688  "Jsbreval.con"  + McshEngl.Jsbreval.con,  + description::
+  McshTchInf000012:1279  "Jsndmc'node-modules.com"  + McshEngl.Jsndmc'node-modules.com,  + description::
+  McshTchInf000012:3852  "lagJsndstc.debugger"  + McshEngl.lagJsndstc.debugger,  + description::
+  McshTchInf000012:4671  "Jsndpgm.HELLO-WORLD"  + McshEngl.Jsndpgm.HELLO-WORLD,  + description::
+  McshTchInf000012:8405  "resource.APPLICATION"  + McshEngl.resource.APPLICATION,  + description::
+  McshTchInf000014:1251  "table.TEXT"  + McshEngl.table.TEXT,  + description::
+  McshTchInf000015:13775  "netAlgo.MULTI.NO-CHAIN"  + McshEngl.netAlgo.MULTI.NO-CHAIN,  + description::
+  McshTchInf000015:232  "Dstakeholder.authorityNo"  + McshEngl.Dstakeholder.authorityNo,  + description::
+  McshTchInf000015:4754  "AnaSecurity.EVOLUTING"  + McshEngl.AnaSecurity.EVOLUTING,  + description::
+  McshTchInf000015:6992  "ICO.EVOLUTING"  + McshEngl.ICO.EVOLUTING,  + description::
+  McshTchInf000016:11268  "btsnet.EVOLUTING"  + McshEngl.btsnet.EVOLUTING,  + description::
+  McshTchInf000016:13370  "nxtsvc.ALIAS-SYSTEM"  + McshEngl.nxtsvc.ALIAS-SYSTEM,  + description::
+  McshTchInf000016:14015  "DvXRP.AGGREGATE"  + McshEngl.DvXRP.AGGREGATE,  + description::
+  McshTchInf000016:14061  "xrppgm.CLIENT"  + McshEngl.xrppgm.CLIENT,  + description::
+  McshTchInf000016:14066  "xrppgm.SERVER"  + McshEngl.xrppgm.SERVER,  + description::
+  McshTchInf000016:14174  "Ripple_net.EVOLUTING"  + McshEngl.Ripple_net.EVOLUTING,  + description::
+  McshTchInf000016:2115  "asset-ogn.EDUCATING"  + McshEngl.asset-ogn.EDUCATING,  + description::
+  McshTchInf000016:2847  "Bkcnasset.spec-div.activeness"  + McshEngl.Bkcnasset.spec-div.activeness,  + description::
+  McshTchInf000016:2879  "Bkcnasset.spec-div.mining"  + McshEngl.Bkcnasset.spec-div.mining,  + description::
+  McshTchInf000016:4527  "wallet.ONLINE"  + McshEngl.wallet.ONLINE,  + description::
+  McshTchInf000016:7916  "Tzs-net.Evoluting"  + McshEngl.Tzs-net.Evoluting,  + description::
+  McshTchInf000016:8944  "Dcrdnode.MINER"  + McshEngl.Dcrdnode.MINER,  + description::
+  McshTchInf000016:9102  "dcrblk.Block1"  + McshEngl.dcrblk.Block1,  + description::
+  McshTchInf000016:9942  "dcrwltCli'Key.PUBLIC"  + McshEngl.dcrwltCli'Key.PUBLIC,  + description::
+  McshTchInf000017:2321  "block.EXAMPLE"  + McshEngl.block.EXAMPLE,  + description::
+  McshTchInf000017:3166  "Btcntx'part.INPUT-ARRAY"  + McshEngl.Btcntx'part.INPUT-ARRAY,  + description::
+  McshTchInf000017:3346  "Btcntx'part.OUTPUT-ARRAY"  + McshEngl.Btcntx'part.OUTPUT-ARRAY,  + description::
+  McshTchInf000017:4219  "Btcntx.AGGREGATE"  + McshEngl.Btcntx.AGGREGATE,  + description::
+  McshTchInf000017:5545  "BtcnexvuC-rate.EVOLUTING"  + McshEngl.BtcnexvuC-rate.EVOLUTING,  + description::
+  McshTchInf000017:5773  "BtcnexvuC.AGGREGATE"  + McshEngl.BtcnexvuC.AGGREGATE,
+  McshTchInf000017:7146  "mycelium.EVOLUTING"  + McshEngl.mycelium.EVOLUTING,  + description::
+  McshTchInf000017:8922  "Bitcoin-svc.PAYMENT"  + McshEngl.Bitcoin-svc.PAYMENT,  + description::
+  McshTchInf000017:9021  "Bitcoin-svc.SecureVote"  + McshEngl.Bitcoin-svc.SecureVote,  + description::
+  McshTchInf000018:11139  "Deth-asm'tool.binary-to-assembly"  + McshEngl.Deth-asm'tool.binary-to-assembly,  + description::
+  McshTchInf000018:11159  "DcontractEth.solidity"  + McshEngl.DcontractEth.solidity,  + description::
+  McshTchInf000018:11165  "DcontractEth.CALLED"  + McshEngl.DcontractEth.CALLED,  + description::
+  McshTchInf000018:11170  "DcontractEth.CALLER"  + McshEngl.DcontractEth.CALLER,  + description::
+  McshTchInf000018:11234  "DcontractEth.EXCHANGE"  + McshEngl.DcontractEth.EXCHANGE,  + description::
+  McshTchInf000018:11242  "DcontractEth.EXCHANGE_VALUE_UNIT"  + McshEngl.DcontractEth.EXCHANGE_VALUE_UNIT,  + description::
+  McshTchInf000018:11287  "DcontractEth.WILL-MANAGER"  + McshEngl.DcontractEth.WILL-MANAGER,  + description::
+  McshTchInf000018:11313  "DcontractEth.EVOLUTING"  + McshEngl.DcontractEth.EVOLUTING,  + description::
+  McshTchInf000018:11531  "human.DEVELOPER"  + McshEngl.human.DEVELOPER,  + description::
+  McshTchInf000018:11590  "human.Meetup"  + McshEngl.human.Meetup,  + description::
+  McshTchInf000018:12440  "DnEth.TEST"  + McshEngl.DnEth.TEST,  + description::
+  McshTchInf000018:3204  "Deth-account'transaction.IN"  + McshEngl.Deth-account'transaction.IN,  + description::
+  McshTchInf000018:3224  "Deth-account'transaction.OUT"  + McshEngl.Deth-account'transaction.OUT,  + description::
+  McshTchInf000018:4149  "EthrassetCN.AGGREGATE"  + McshEngl.EthrassetCN.AGGREGATE,  + description::
+  McshTchInf000018:4642  "web3.js'oWeb3.eth"  + McshEngl.web3.js'oWeb3.eth,  + description::
+  McshTchInf000018:4689  "web3.js'oWeb3.personal"  + McshEngl.web3.js'oWeb3.personal,  + description::
+  McshTchInf000018:4704  "web3.js'oWeb3.version"  + McshEngl.web3.js'oWeb3.version,  + description::
+  McshTchInf000018:7276  "Solx_lago_asm.INLINE"  + McshEngl.Solx_lago_asm.INLINE,  + description::
+  McshTchInf000020:2051  "EvuLH.AGGREGATE"  + McshEngl.EvuLH.AGGREGATE,  + description::
+  McshTchInf000020:3071  "organization.Exchange"  + McshEngl.organization.Exchange,  + description::
+  McshTchInf000020:3081  "organization.Merchant"  + McshEngl.organization.Merchant,  + description::
+  McshTchInf000021:126  "1.Background"  + McshEngl.1.Background,  + description::
+  McshTchInf000021:255  "4.Accounts"  + McshEngl.4.Accounts,  + description::
+  McshTchInf000021:645  "7.Governance"  + McshEngl.7.Governance,  + description::
+  McshTchInf000021:863  "10.Conclusion"  + McshEngl.10.Conclusion,  + description::
+  McshTchInf000025:958  "evaluation.PRO"  + McshEngl.evaluation.PRO,  + description::
+  McshTchInf000039:16028  "Knlg_lago.MISC"  + McshEngl.Knlg_lago.MISC,  + description::
+  McshTchPrgm000003:207  "Atomedtr_Uicmd.CORE"  + McshEngl.Atomedtr_Uicmd.CORE,  + description::
+
+=== OTHER-PREFIX-LEFT (0)
+
+=== SKIPPED (55)
+  McshLag000030:4887  "mVTurkSubj.past.reported (link)"  SKIP name has space/&#: mVTurkSubj.past.reported (link)
+  McshNtr000004:620  "macromolecule.human (link)"  SKIP name has space/&#: macromolecule.human (link)
+  McshNtr000005:346  "mtrlSysMols.organism-001 (link)"  SKIP name has space/&#: mtrlSysMols.organism-001 (link)
+  McshNtr000005:351  "mtrlSysMols.human-002 (link)"  SKIP name has space/&#: mtrlSysMols.human-002 (link)
+  McshStn000015:4540  "ogznServiceNo.sector (link)"  SKIP name has space/&#: ogznServiceNo.sector (link)
+  McshStn000020:3374  "EuoComozn.Directorate-general (link)"  SKIP name has space/&#: EuoComozn.Directorate-general (link)
+  McshStn000042:1237  "techEdu.schoolbook (link)"  SKIP name has space/&#: techEdu.schoolbook (link)
+  McshTchInf000016:6004  "I. INTRODUCTION"  SKIP name has space/&#: I. INTRODUCTION
+  McshTchInf000016:6032  "II. ÆTERNITY BLOCKCHAIN"  SKIP name has space/&#: II. ÆTERNITY BLOCKCHAIN
+  McshTchInf000016:6411  "III. APPLICATIONS"  SKIP name has space/&#: III. APPLICATIONS
+  McshTchInf000016:6571  "IV. IMPLEMENTATION"  SKIP name has space/&#: IV. IMPLEMENTATION
+  McshTchInf000016:6620  "V. DISCUSSION"  SKIP name has space/&#: V. DISCUSSION
+  McshTchInf000016:7611  "1. Introduction"  SKIP name has space/&#: 1. Introduction
+  McshTchInf000016:7734  "2. Architecture Overview"  SKIP name has space/&#: 2. Architecture Overview
+  McshTchInf000016:9842  "dcrpgm.AMGR (address_manager)"  SKIP name has space/&#: dcrpgm.AMGR (address_manager)
+  McshTchInf000016:9847  "dcrpgm.BMGR (block_manager)"  SKIP name has space/&#: dcrpgm.BMGR (block_manager)
+  McshTchInf000016:9852  "dcrpgm.SRVR (server)"  SKIP name has space/&#: dcrpgm.SRVR (server)
+  McshTchInf000016:9857  "dcrpgm.RPCS (RPC_server)"  SKIP name has space/&#: dcrpgm.RPCS (RPC_server)
+  McshTchInf000018:7900  "Lsolc.GENERIC (base)"  SKIP name has space/&#: Lsolc.GENERIC (base)
+  McshTchInf000019:1508  "1. Introduction"  SKIP name has space/&#: 1. Introduction
+  McshTchInf000019:1551  "2. Dao Concept"  SKIP name has space/&#: 2. Dao Concept
+  McshTchInf000019:1610  "3. Notation"  SKIP name has space/&#: 3. Notation
+  McshTchInf000019:1619  "4. Majority robs minority attack"  SKIP name has space/&#: 4. Majority robs minority attack
+  McshTchInf000019:1664  "5. Token Price"  SKIP name has space/&#: 5. Token Price
+  McshTchInf000019:1688  "6. Contracts"  SKIP name has space/&#: 6. Contracts
+  McshTchInf000019:2187  "7. Reward Tokens"  SKIP name has space/&#: 7. Reward Tokens
+  McshTchInf000019:2209  "8. Split"  SKIP name has space/&#: 8. Split
+  McshTchInf000019:2253  "9. Updates"  SKIP name has space/&#: 9. Updates
+  McshTchInf000019:2269  "10. Acknowledgements"  SKIP name has space/&#: 10. Acknowledgements
+  McshTchInf000019:4737  "1. INTERPRETATION"  SKIP name has space/&#: 1. INTERPRETATION
+  McshTchInf000019:4834  "2. CORE PRINCIPLES"  SKIP name has space/&#: 2. CORE PRINCIPLES
+  McshTchInf000019:4868  "3. DAC TOKENS AND MEMBERSHIP"  SKIP name has space/&#: 3. DAC TOKENS AND MEMBERSHIP
+  McshTchInf000019:4925  "4. PROPOSALS AND VOTING OF MEMBERS"  SKIP name has space/&#: 4. PROPOSALS AND VOTING OF MEMBERS
+  McshTchInf000019:4942  "5. CUSTODIAN BOARD"  SKIP name has space/&#: 5. CUSTODIAN BOARD
+  McshTchInf000019:4978  "6. POWER OF CUSTODIAN BOARD"  SKIP name has space/&#: 6. POWER OF CUSTODIAN BOARD
+  McshTchInf000019:5008  "7. PROCEEDINGS OF CUSTODIAN BOARD"  SKIP name has space/&#: 7. PROCEEDINGS OF CUSTODIAN BOARD
+  McshTchInf000019:5046  "8. CONFLICT OF INTERESTS"  SKIP name has space/&#: 8. CONFLICT OF INTERESTS
+  McshTchInf000019:5053  "9. INDEMNIFICATION"  SKIP name has space/&#: 9. INDEMNIFICATION
+  McshTchInf000019:5074  "10. DISTRIBUTION OF ASSETS TO MEMBERS"  SKIP name has space/&#: 10. DISTRIBUTION OF ASSETS TO MEMBERS
+  McshTchInf000019:5092  "11. ACCOUNTING"  SKIP name has space/&#: 11. ACCOUNTING
+  McshTchInf000019:5099  "12. AUDIT"  SKIP name has space/&#: 12. AUDIT
+  McshTchInf000019:5106  "13. NOTICES"  SKIP name has space/&#: 13. NOTICES
+  McshTchInf000019:5113  "14. RESOLUTION OF DIFFERENCES"  SKIP name has space/&#: 14. RESOLUTION OF DIFFERENCES
+  McshTchInf000019:5120  "15. RESOLUTION OF DISPUTES"  SKIP name has space/&#: 15. RESOLUTION OF DISPUTES
+  McshTchInf000019:5147  "16. VOLUNTARY WINDING UP AND DISSOLUTION"  SKIP name has space/&#: 16. VOLUNTARY WINDING UP AND DISSOLUTION
+  McshTchInf000019:5155  "17. AMENDMENT OF CONSTITUTION"  SKIP name has space/&#: 17. AMENDMENT OF CONSTITUTION
+  McshTchInf000019:5162  "18. TERMS AND CONDITIONS"  SKIP name has space/&#: 18. TERMS AND CONDITIONS
+  McshTchInf000019:5170  "19. APPLICABLE LAW"  SKIP name has space/&#: 19. APPLICABLE LAW
+  McshTchInf000019:5177  "20. SEVERABILITY"  SKIP name has space/&#: 20. SEVERABILITY
+  McshTchInf000019:5188  "21. BINDING AGREEMENT"  SKIP name has space/&#: 21. BINDING AGREEMENT
+  McshTchInf000021:138  "2.Requirements for Blockchain Applications"  SKIP name has space/&#: 2.Requirements for Blockchain Applications
+  McshTchInf000021:198  "3.Consensus Algorithm (BFT-DPOS)"  SKIP name has space/&#: 3.Consensus Algorithm (BFT-DPOS)
+  McshTchInf000021:527  "6.Token Model and Resource Usage"  SKIP name has space/&#: 6.Token Model and Resource Usage
+  McshTchInf000021:726  "8.Scripts &amp; Virtual Machines"  SKIP name has space/&#: 8.Scripts &amp; Virtual Machines
+  McshTchInf000021:778  "9.Inter Blockchain Communication"  SKIP name has space/&#: 9.Inter Blockchain Communication
