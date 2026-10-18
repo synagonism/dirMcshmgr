@@ -1,0 +1,6 @@
+T18. {2026-10-18} DONE: GS-TREE link lists use the name!@file#id format (read by mMcsh2.js 26-0-0).
+     6034 internal <a> links on 6024 list lines (<br>*…) inside GS-TREEs, child sections included, in 168 files.
+     The link text became the name (spaces -> "-": 88). In 282 mixed lines the link was converted inline.
+     144 targets that do not exist are marked " (broken)" right after the reference.
+     Kept as <a>: 160 external URLs, 22 non-Mcsh hrefs (e.g. href="..", McsCor000011Dnmc.last.html), 2 names with a comma.
+     List: dirReport/gst-link-ref-applied.txt.

@@ -796,8 +796,15 @@ let fContainersInsert = function () {
     if (bDblRef) {
       // concept-reference: preview the referenced page#id directly, ignoring the name
       sDblRef = sDblRef.replace(/[.:/;@+'-]+$/, '') // clears trailing separators
-      fPreviewReference(sDblRef)
+      if (!await fPreviewReference(sDblRef)) console.warn('unresolved reference: ' + sDblRef)
       return
+    }
+    // double-click directly on a 'McshDir...' file-stem (optionally with #id):
+    // preview it like the name — '!@' prefix not required. Falls through to
+    // name-search when the stem is not a resolvable McshDir reference.
+    const sWvPrefix = sWorldview.substring(3) // 'dirMcsh' -> 'Mcsh'
+    if (sSelection.startsWith(sWvPrefix) && /^[A-Za-z]/.test(sSelection.slice(sWvPrefix.length))) {
+      if (await fPreviewReference(sSelection.replace(/[.:/;@+'-]+$/, ''))) return
     }
     if (sSelection !== '') {
       sSelection = sSelection.replace(/[-_'.:/;@+]*$/, '')
@@ -1211,7 +1218,7 @@ let fContainersInsert = function () {
       }
     }
     if (oLi && oLi.children[0]) {
-      sPreviewRefHref = '' // a name-suggestion preview, not a '!@'-reference
+      sPreviewRefHref = oLi.children[0].href // click-preview / Enter now go to the concept
       fPreviewUrl(oLi.children[0].href)
     } else {
       console.warn('No first suggestion found')
@@ -1342,9 +1349,10 @@ let fContainersInsert = function () {
    */
   async function fPreviewReference(sRefIn) {
     const sHref = await fRefToUrl(sRefIn)
-    if (!sHref) { console.warn('unresolved reference: ' + sRefIn); return }
+    if (!sHref) return false // caller decides (warn, or fall through to name-search)
     sPreviewRefHref = sHref // enables go-to on Enter / preview-click
     fPreviewUrl(sHref)
+    return true
   }
 
   // go-to for a-'!@'-reference preview: Enter navigates to the-referenced page#id,

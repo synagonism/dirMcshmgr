@@ -1,0 +1,882 @@
+GS-TREE link lists -> name!@file#id — 2026-10-18   DRY=false
+
+links converted: 6034 on 6024 lines, files written: 168
+
+=== CONVERTED-PER-FILE (168)
+  McshCor000002  61 links on 61 lines
+  McshCor000003  34 links on 34 lines
+  McshCor000004  32 links on 32 lines
+  McshCor000005  35 links on 35 lines
+  McshCor000006  8 links on 8 lines
+  McshCor000007  2 links on 2 lines
+  McshCor000008  3 links on 3 lines
+  McshCor000009  6 links on 6 lines
+  McshCor000010  4 links on 4 lines
+  McshCor000011  13 links on 13 lines
+  McshCor000012  3 links on 3 lines
+  McshCor000013  31 links on 31 lines
+  McshCor000014  4 links on 4 lines
+  McshCor000018  51 links on 51 lines
+  McshCor000020  1 links on 1 lines
+  McshEdu000002  6 links on 6 lines
+  McshEdu000005  22 links on 22 lines
+  McshEdu000014  1 links on 1 lines
+  McshHlth000002  262 links on 262 lines
+  McshHlth000003  51 links on 51 lines
+  McshHlth000004  31 links on 31 lines
+  McshHlth000005  92 links on 92 lines
+  McshHlth000006  6 links on 6 lines
+  McshHlth000007  1 links on 1 lines
+  McshHlth000008  12 links on 12 lines
+  McshHlth000010  1 links on 1 lines
+  McshHlth000011  389 links on 389 lines
+  McshHlth000012  4 links on 4 lines
+  McshHlth000013  102 links on 102 lines
+  McshHlth000014  5 links on 5 lines
+  McshHlth000015  2 links on 2 lines
+  McshHlth000016  1 links on 1 lines
+  McshHlth000018  1 links on 1 lines
+  McshHlth000019  66 links on 66 lines
+  McshHmn000002  2 links on 2 lines
+  McshLag000002  17 links on 17 lines
+  McshLag000003  27 links on 27 lines
+  McshLag000005  11 links on 11 lines
+  McshLag000006  13 links on 13 lines
+  McshLag000007  233 links on 231 lines
+  McshLag000008  4 links on 4 lines
+  McshLag000009  26 links on 26 lines
+  McshLag000010  95 links on 95 lines
+  McshLag000011  342 links on 342 lines
+  McshLag000012  61 links on 61 lines
+  McshLag000013  8 links on 8 lines
+  McshLag000014  1 links on 1 lines
+  McshLag000018  69 links on 69 lines
+  McshLag000019  1 links on 1 lines
+  McshLag000020  73 links on 73 lines
+  McshLag000021  420 links on 420 lines
+  McshLag000026  8 links on 8 lines
+  McshLag000027  37 links on 37 lines
+  McshLag000028  10 links on 10 lines
+  McshLag000030  108 links on 108 lines
+  McshLag000031  1 links on 1 lines
+  McshLag000033  89 links on 89 lines
+  McshLag000034  12 links on 12 lines
+  McshLag000035  41 links on 41 lines
+  McshLag000036  17 links on 17 lines
+  McshLag000037  118 links on 118 lines
+  McshLag000038  13 links on 13 lines
+  McshLag000039  12 links on 12 lines
+  McshLag000040  12 links on 12 lines
+  McshLag000041  12 links on 12 lines
+  McshLag000042  12 links on 12 lines
+  McshLag000043  32 links on 32 lines
+  McshNtr000002  2 links on 2 lines
+  McshNtr000005  1 links on 1 lines
+  McshNtr000006  21 links on 19 lines
+  McshNtr000007  365 links on 363 lines
+  McshNtr000010  1 links on 1 lines
+  McshNtr000011  2 links on 2 lines
+  McshOgm000002  9 links on 9 lines
+  McshOgm000003  2 links on 2 lines
+  McshOgm000004  6 links on 6 lines
+  McshOgm000005  53 links on 53 lines
+  McshOgm000006  8 links on 8 lines
+  McshOgm000007  13 links on 13 lines
+  McshOgm000010  4 links on 4 lines
+  McshStn000002  13 links on 13 lines
+  McshStn000004  22 links on 22 lines
+  McshStn000005  5 links on 5 lines
+  McshStn000006  1 links on 1 lines
+  McshStn000007  9 links on 9 lines
+  McshStn000008  8 links on 8 lines
+  McshStn000009  22 links on 22 lines
+  McshStn000010  14 links on 14 lines
+  McshStn000011  9 links on 9 lines
+  McshStn000012  11 links on 11 lines
+  McshStn000014  1 links on 1 lines
+  McshStn000015  30 links on 30 lines
+  McshStn000016  1 links on 1 lines
+  McshStn000018  1 links on 1 lines
+  McshStn000019  1 links on 1 lines
+  McshStn000020  10 links on 10 lines
+  McshStn000021  9 links on 9 lines
+  McshStn000022  1 links on 1 lines
+  McshStn000023  1 links on 1 lines
+  McshStn000026  1 links on 1 lines
+  McshStn000029  7 links on 7 lines
+  McshStn000031  1 links on 1 lines
+  McshStn000034  77 links on 77 lines
+  McshStn000035  54 links on 54 lines
+  McshStn000036  1 links on 1 lines
+  McshStn000037  64 links on 64 lines
+  McshStn000038  30 links on 30 lines
+  McshStn000039  75 links on 75 lines
+  McshStn000040  35 links on 35 lines
+  McshStn000041  29 links on 29 lines
+  McshStn000042  7 links on 7 lines
+  McshStn000043  37 links on 37 lines
+  McshStn000044  62 links on 62 lines
+  McshStn000045  1 links on 1 lines
+  McshStn000046  1 links on 1 lines
+  McshStn000047  1 links on 1 lines
+  McshStn000048  19 links on 19 lines
+  McshStn000049  1 links on 1 lines
+  McshStn000050  43 links on 43 lines
+  McshStn000051  1 links on 1 lines
+  McshStnlaw000002  3 links on 3 lines
+  McshStnlaw000003  15 links on 15 lines
+  McshStnlaw000004  1 links on 1 lines
+  McshTch000002  13 links on 13 lines
+  McshTch000003  7 links on 7 lines
+  McshTch000005  1 links on 1 lines
+  McshTchInf000002  9 links on 9 lines
+  McshTchInf000003  2 links on 2 lines
+  McshTchInf000004  2 links on 2 lines
+  McshTchInf000005  20 links on 20 lines
+  McshTchInf000006  19 links on 19 lines
+  McshTchInf000007  10 links on 10 lines
+  McshTchInf000008  18 links on 18 lines
+  McshTchInf000009  8 links on 8 lines
+  McshTchInf000010  145 links on 142 lines
+  McshTchInf000011  36 links on 36 lines
+  McshTchInf000012  174 links on 174 lines
+  McshTchInf000013  6 links on 6 lines
+  McshTchInf000014  49 links on 49 lines
+  McshTchInf000015  200 links on 200 lines
+  McshTchInf000016  197 links on 197 lines
+  McshTchInf000017  17 links on 17 lines
+  McshTchInf000018  92 links on 92 lines
+  McshTchInf000019  22 links on 22 lines
+  McshTchInf000020  25 links on 25 lines
+  McshTchInf000021  15 links on 15 lines
+  McshTchInf000022  2 links on 2 lines
+  McshTchInf000023  1 links on 1 lines
+  McshTchInf000024  24 links on 24 lines
+  McshTchInf000025  5 links on 5 lines
+  McshTchInf000026  4 links on 4 lines
+  McshTchInf000027  1 links on 1 lines
+  McshTchInf000028  5 links on 5 lines
+  McshTchInf000029  30 links on 30 lines
+  McshTchInf000030  48 links on 48 lines
+  McshTchInf000031  73 links on 72 lines
+  McshTchInf000032  48 links on 48 lines
+  McshTchInf000035  1 links on 1 lines
+  McshTchInf000036  32 links on 32 lines
+  McshTchInf000037  5 links on 5 lines
+  McshTchInf000038  3 links on 3 lines
+  McshTchInf000039  58 links on 58 lines
+  McshTchInf000040  2 links on 2 lines
+  McshTchInf000041  2 links on 2 lines
+  McshTchPrgm000003  90 links on 90 lines
+  McshTchPrgm000005  1 links on 1 lines
+  McshTchPrgm000006  1 links on 1 lines
+  Mcsh000000  9 links on 9 lines
+
+=== HYPHENATED (88)
+  McshCor000008:849  "collection.duplicateNo (set)" -> collection.duplicateNo-(set)
+  McshEdu000005:5639  "Numerical analysis" -> Numerical-analysis
+  McshEdu000005:5642  "Mathematical optimization" -> Mathematical-optimization
+  McshEdu000005:5918  "Graph theory" -> Graph-theory
+  McshEdu000005:5920  "Number theory" -> Number-theory
+  McshEdu000005:7081  "Model theory" -> Model-theory
+  McshEdu000005:7083  "Set theory" -> Set-theory
+  McshEdu000005:7086  "Theory of Computation" -> Theory-of-Computation
+  McshLag000037:3048  "HindVowlLetr./a/-⟨अ ⟩-[ə]" -> HindVowlLetr./a/-⟨अ-⟩-[ə]
+  McshLag000037:3049  "HindVowlLetr./aa/-⟨आ ा⟩-[aː]" -> HindVowlLetr./aa/-⟨आ-ा⟩-[aː]
+  McshLag000037:3050  "HindVowlLetr./i/-⟨इ ि⟩-[ɪ]" -> HindVowlLetr./i/-⟨इ-ि⟩-[ɪ]
+  McshLag000037:3051  "HindVowlLetr./ii/-⟨ई ी⟩-[iː]" -> HindVowlLetr./ii/-⟨ई-ी⟩-[iː]
+  McshLag000037:3052  "HindVowlLetr./u/-⟨उ ु⟩-[ʊ]" -> HindVowlLetr./u/-⟨उ-ु⟩-[ʊ]
+  McshLag000037:3053  "HindVowlLetr./uu/-⟨ऊ ू⟩-[uː]" -> HindVowlLetr./uu/-⟨ऊ-ू⟩-[uː]
+  McshLag000037:3054  "HindVowlLetr./ri/-⟨ऋ ृ⟩" -> HindVowlLetr./ri/-⟨ऋ-ृ⟩
+  McshLag000037:3055  "HindVowlLetr./e/-⟨ए े⟩-[eː]" -> HindVowlLetr./e/-⟨ए-े⟩-[eː]
+  McshLag000037:3056  "HindVowlLetr./ee/-⟨ऐ ै⟩-[ɛː]" -> HindVowlLetr./ee/-⟨ऐ-ै⟩-[ɛː]
+  McshLag000037:3057  "HindVowlLetr./o/-⟨ओ ो⟩-[oː]" -> HindVowlLetr./o/-⟨ओ-ो⟩-[oː]
+  McshLag000037:3058  "HindVowlLetr./oo/-⟨औ ौ⟩-[ɔː]" -> HindVowlLetr./oo/-⟨औ-ौ⟩-[ɔː]
+  McshLag000043:1383  "KoraConsChar.ㅆ-ss-[s͈] (often [ɕ͈] before “i/y” vowels)-[t̚]" -> KoraConsChar.ㅆ-ss-[s͈]-(often-[ɕ͈]-before-“i/y”-vowels)-[t̚]
+  McshLag000043:1384  "KoraConsChar.ㅎ-h-[h] (often affects aspiration)-[t̚/ or ∅ (context-dependent)" -> KoraConsChar.ㅎ-h-[h]-(often-affects-aspiration)-[t̚/-or-∅-(context-dependent)
+  McshLag000043:1387  "KoraConsChar.ㅇ-(none)-(∅ (silent as onset)-[ŋ]" -> KoraConsChar.ㅇ-(none)-(∅-(silent-as-onset)-[ŋ]
+  McshLag000043:1388  "KoraConsChar.ㄹ-rl-(typically [ɾ] between vowels; [l] in some positions-[l]" -> KoraConsChar.ㄹ-rl-(typically-[ɾ]-between-vowels;-[l]-in-some-positions-[l]
+  McshStnlaw000004:1311  "Universal Declaration of Human Rights" -> Universal-Declaration-of-Human-Rights
+  McshTchInf000010:3432  "Jsr.word-bountary /\b/" -> Jsr.word-bountary-/\b/
+  McshTchInf000011:907  "most-whole-object (global)" -> most-whole-object-(global)
+  McshTchInf000011:4956  "V8 (Chrome)" -> V8-(Chrome)
+  McshTchInf000012:412  "Jsndm.ECMAScript (Jsndme)" -> Jsndm.ECMAScript-(Jsndme)
+  McshTchInf000012:4705  "Jsndpgm.GUI (desktop)" -> Jsndpgm.GUI-(desktop)
+  McshTchInf000012:6147  "Npmpkg.jake (ljnjake)" -> Npmpkg.jake-(ljnjake)
+  McshTchInf000014:1855  "br (unconditional-branch)" -> br-(unconditional-branch)
+  McshTchInf000014:1856  "br_if (conditional-brance)" -> br_if-(conditional-brance)
+  McshTchInf000015:362  "Buterin.Vitalic (Ethereum)" -> Buterin.Vitalic-(Ethereum)
+  McshTchInf000015:11442  "Blockstack: decentralized-internet" -> Blockstack:-decentralized-internet
+  McshTchInf000016:5371  "Bitshares2-BTS-network {2015}" -> Bitshares2-BTS-network-{2015}
+  McshTchInf000016:5374  "Dash-DASH-network {2014}" -> Dash-DASH-network-{2014}
+  McshTchInf000016:5375  "Decred-DCR-network {2016}" -> Decred-DCR-network-{2016}
+  McshTchInf000016:5377  "Emercoin-EMC-network {2013}" -> Emercoin-EMC-network-{2013}
+  McshTchInf000016:5378  "Ethereum-ETH-network {2015}" -> Ethereum-ETH-network-{2015}
+  McshTchInf000016:5379  "FairCoop-FAIR-network {2014}" -> FairCoop-FAIR-network-{2014}
+  McshTchInf000016:5384  "Lisk-LSK-network {2016}" -> Lisk-LSK-network-{2016}
+  McshTchInf000016:5385  "Litecoin-LTC-network {2011}" -> Litecoin-LTC-network-{2011}
+  McshTchInf000016:5386  "Namecoin-NMC-network {2011}" -> Namecoin-NMC-network-{2011}
+  McshTchInf000016:5387  "NEM-XEM-network {2015}" -> NEM-XEM-network-{2015}
+  McshTchInf000016:5388  "Nxt-NXT-network {2013}" -> Nxt-NXT-network-{2013}
+  McshTchInf000016:5389  "Peercoin-PPC-network {2012}" -> Peercoin-PPC-network-{2012}
+  McshTchInf000016:5390  "PIVX-network {2016}" -> PIVX-network-{2016}
+  McshTchInf000016:5392  "Ripple-XRP-network {2012}" -> Ripple-XRP-network-{2012}
+  McshTchInf000016:5396  "Zcash-ZEC-network {2016}" -> Zcash-ZEC-network-{2016}
+  McshTchInf000016:5397  "Waves-WAVES-network {2016}" -> Waves-WAVES-network-{2016}
+  McshTchInf000016:5520  "Decred-network {2016}" -> Decred-network-{2016}
+  McshTchInf000016:5521  "BitShares-network {2015}" -> BitShares-network-{2015}
+  McshTchInf000016:5522  "Dash-network {2014}" -> Dash-network-{2014}
+  McshTchInf000016:5538  "Zcash-ZEC-network {2016}" -> Zcash-ZEC-network-{2016}
+  McshTchInf000016:5539  "Ethereum-ETH-network {2015}" -> Ethereum-ETH-network-{2015}
+  McshTchInf000016:5540  "Bitcoin-BTC-network {2009}" -> Bitcoin-BTC-network-{2009}
+  McshTchInf000016:5555  "Lisk-LSK-network {2016}" -> Lisk-LSK-network-{2016}
+  McshTchInf000016:5557  "PIVX-network {2016}" -> PIVX-network-{2016}
+  McshTchInf000016:5558  "Waves-WAVES-network {2016}" -> Waves-WAVES-network-{2016}
+  McshTchInf000016:5559  "BitShares-network {2015}" -> BitShares-network-{2015}
+  McshTchInf000016:5561  "Nxt-NXT-network {2013}" -> Nxt-NXT-network-{2013}
+  McshTchInf000016:5562  "Peercoin-PPC-network {2012} first" -> Peercoin-PPC-network-{2012}-first
+  McshTchInf000016:5579  "Decred-DCR-network {2016}" -> Decred-DCR-network-{2016}
+  McshTchInf000016:5580  "Emercoin-EMC-network {2013}" -> Emercoin-EMC-network-{2013}
+  McshTchInf000016:5581  "Peercoin-PPC-network {2012}" -> Peercoin-PPC-network-{2012}
+  McshTchInf000016:5799  "Lisk-LSK-network {2016}" -> Lisk-LSK-network-{2016}
+  McshTchInf000016:5800  "Ethereum-ETH-network {2015}" -> Ethereum-ETH-network-{2015}
+  McshTchInf000018:7792  "address - ad" -> address---ad
+  McshTchInf000018:7793  "array - a" -> array---a
+  McshTchInf000018:7794  "boolean - b" -> boolean---b
+  McshTchInf000018:7795  "bytes - bt" -> bytes---bt
+  McshTchInf000018:7796  "contract - c" -> contract---c
+  McshTchInf000018:7797  "enum - en" -> enum---en
+  McshTchInf000018:7798  "event - e" -> event---e
+  McshTchInf000018:7799  "function - f" -> function---f
+  McshTchInf000018:7800  "library - l" -> library---l
+  McshTchInf000018:7801  "mapping - m" -> mapping---m
+  McshTchInf000018:7807  "string - s" -> string---s
+  McshTchInf000018:7808  "struct - sc" -> struct---sc
+  McshTchInf000018:8963  "Lsolv.STATE-VARIABLE (storage)" -> Lsolv.STATE-VARIABLE-(storage)
+  McshTchInf000024:415  "asset of blockchain-net" -> asset-of-blockchain-net
+  McshTchInf000031:509  "generic (type)" -> generic-(type)
+  McshTchInf000031:510  "instance (literal)" -> instance-(literal)
+  McshTchInf000036:2486  "identifying the language of a text" -> identifying-the-language-of-a-text
+  McshTchInf000036:2498  "translating a text" -> translating-a-text
+  McshTchInf000036:4369  "deep neural networks" -> deep-neural-networks
+  McshTchInf000036:4372  "recurrent neural networks" -> recurrent-neural-networks
+  McshTchInf000036:4373  "convolutional neural networks" -> convolutional-neural-networks
+
+=== INLINE (282)
+  McshHlth000011:3293  <br>* alzheimer-disease!@McshHlth000011#idDssHmn115, http://wwwlzheimers.org/unravel.html
+  McshHlth000011:3296  <br>* multiple-sclerosis!@McshHlth000011#idDssHmn195,  http://medstat.med.utah.edu/kw/ms/,
+  McshLag000007:1597  <br>* definiteness!@McshLag000007#idLHmnmsmsondosmatDfnt:
+  McshLag000007:1598  <br>* genericness!@McshLag000007#idLHmnmsmsondosmatGns: generic,
+  McshLag000007:1599  <br>* semu-view-number!@McshCor000010#idQntSms: singular, plural, dual, trial, paucal,
+  McshLag000007:1600  <br>* semu-view-gender!@McshLag000007#idLHmnmsmsondosmatGdr: masculine, feminine, neuter,
+  McshLag000007:1601  <br>* comparativeness!@McshLag000007#idLHmnmsmsondosmatCps: positive, comparative, superlative,
+  McshLag000007:1602  <br>* lifeness!@McshLag000007#idLHmnmsmsondosmatLif: animate, inanimate,
+  McshLag000007:1603  <br>* unit-of-measurement!@McshLag000007#idLHmnmsmsondosmatUom: couple, dozen, ...,
+  McshLag000007:1604  <br>* relation!@McshLag000007#idLHmnmsmsondosmatRln: attribute-of-entity, entity-of-attribute, ...,
+  McshLag000007:21555  <br>* termSemu!@McshLag000007#idLHmnmnameTrmSms : nameSemaso!@McshLag000007#idLHmnmname002,
+  McshLag000007:24411  <br>* termSemu!@McshLag000007#idLHmnmnameTrmSms : nameSemaso!@McshLag000007#idLHmnmname002,
+  McshNtr000006:118  <br>* chemical-substance!@McshNtr000002#idMtrl006 (broken), mixture,
+  McshNtr000006:120  <br>* body!@McshCor000003#idEntBody, doing!@McshCor000004#idOverview, relation!@McshCor000005#idOverview,
+  McshNtr000007:406  <br>* chemical-element, chemical-compound!@McshNtr000006#idOverview,
+  McshNtr000007:407  <br>* chemical-substance!@McshNtr000002#idMtrl006 (broken), mixture,
+  McshNtr000007:409  <br>* body!@McshCor000003#idEntBody, doing!@McshCor000004#idOverview, relation!@McshCor000005#idOverview,
+  McshStn000002:418  <br>* group-of-organisms!@McshStn000005#idOverview, (simple)
+  McshStn000002:419  <br>* organization!@McshStn000006#idOverview, (mid)
+  McshStn000002:420  <br>* society!@McshStn000007#idOverview, (complex)
+  McshStn000002:432  <br>* group-of-organisms!@McshStn000005#idOverview, (simple)
+  McshStn000002:433  <br>* organization!@McshStn000006#idOverview, (mid)
+  McshStn000002:434  <br>* society!@McshStn000007#idOverview, (complex)
+  McshStn000029:1109  <br>* Exvu.EUR ExvuEUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuseconEurevu (broken),
+  McshStnlaw000004:1311  <br>* {1948} Universal-Declaration-of-Human-Rights!@McshStnlaw000004#idLawInl007,
+  McshTch000002:525  <br>* .. entity!@McshCor000003#idOverview,
+  McshTchInf000010:1017  <br>* Array.prototype!@McshTchInf000010#idLJsgnArrayp, (<code>[].__proto__ === Array.prototype //true</code>)
+  McshTchInf000010:1018  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>[].__proto__.__proto__ === Object.prototype //true
+  McshTchInf000010:1873  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>true.__proto__.__proto__ === Object.prototype //tr
+  McshTchInf000010:2216  <br>* Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Func
+  McshTchInf000010:2217  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>f.__proto__.__proto__ === Object.prototype //true<
+  McshTchInf000010:2940  <br>* Number.prototype!@McshTchInf000010#idLJsgnNumberp, (<code>(3).__proto__ === Number.prototype //true</cod
+  McshTchInf000010:2941  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>(3).__proto__.__proto__ === Object.prototype //tru
+  McshTchInf000010:3108  <br>* Inherited: a-member!@McshTchInf000010#idLJsgnombr of its generic-objects!@McshTchInf000010#idLJsgnogstr,
+  McshTchInf000010:3110  <br>* <span id="idLJsgnmethod">Method: a-member!@McshTchInf000010#idLJsgnombr which is a-function!@McshTchInf0
+  McshTchInf000010:3114  <br>* Public: a-member we have access from outside of the-object. ALL members of a-generic-object!@McshTchInf0
+  McshTchInf000010:3115  <br>* PublicNo: A-function!@McshTchInf000010#idLJsgnf (a-specific-object) has publicNo members,
+  McshTchInf000010:3229  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (literal-objects <code>({}).__proto__ === Object.prototyp
+  McshTchInf000010:3231  <br>* Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto, (constructor-objects!@McshTchInf000010#idLJsgn
+  McshTchInf000010:3422  <br>* RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp, (<code>/r/.__proto__ === RegExp.prototype //true</cod
+  McshTchInf000010:3423  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>/r/.__proto__.__proto__ === Object.prototype //tru
+  McshTchInf000010:3547  <br>* String.prototype!@McshTchInf000010#idLJsgnStringp, (<code>''.__proto__ === String.prototype //true</code
+  McshTchInf000010:3548  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (<code>''.__proto__.__proto__ === Object.prototype //true
+  McshTchInf000010:6319  <br>* ECMAScript.11.2020!@McshTchInf000010#idLjes2020, (ES11)
+  McshTchInf000010:6320  <br>* ECMAScript.10.2019!@McshTchInf000010#idLjes2019, (ES10)
+  McshTchInf000010:6321  <br>* ECMAScript.9.2018!@McshTchInf000010#idLjes2018, (ES9)
+  McshTchInf000010:6322  <br>* ECMAScript.8.2017!@McshTchInf000010#idLjes2017 (ES8),
+  McshTchInf000010:6323  <br>* ECMAScript.7.2016!@McshTchInf000010#idLjes2016 (ES7),
+  McshTchInf000010:6324  <br>* ECMAScript.6.2015!@McshTchInf000010#idLjes2015 (ES6),
+  McshTchInf000010:6325  <br>* ECMAScript.5-1.2011!@McshTchInf000010#idLjes2011 (ES51),
+  McshTchInf000010:6326  <br>* ECMAScript.5.1999!@McshTchInf000010#idLjes1999b (ES5),
+  McshTchInf000010:6328  <br>* ECMAScript.3.1999!@McshTchInf000010#idLjes1999 (ES3),
+  McshTchInf000010:6329  <br>* ECMAScript.2.1998!@McshTchInf000010#idLjes1998 (ES2),
+  McshTchInf000010:6330  <br>* ECMAScript.1.1997!@McshTchInf000010#idLjes1997 (ES1),
+  McshTchInf000011:1426  <br>* EventTarget.prototype!@McshTchInf000011#idLJsbrEventTargetp (<code>Window.prototype.__proto__.__proto__ 
+  McshTchInf000012:752  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo (<code>module.__proto__.__proto__ === Object.prototype //t
+  McshTchInf000012:1236  <br>* npmjs.org!@McshTchInf000012#idLJsndnpmjs_org/ (broken)/
+  McshTchInf000012:1237  <br>* node-modules.com!@McshTchInf000012#idLJsndnode-modules_com/
+  McshTchInf000012:1615  <br>* Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfEvents.__proto__ === Function.prototype //true
+  McshTchInf000012:1616  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (mfEvents.__proto__.__proto__ === Object.prototype //true
+  McshTchInf000012:1806  <br>* Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfStream.__proto__ === Function.prototype //true
+  McshTchInf000012:1807  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo (mfStream.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:2221  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (moHttp.__proto__ === Object.prototype //true)
+  McshTchInf000012:2953  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo, (moUtil.__proto__ === Object.prototype //true)
+  McshTchInf000012:3268  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo (> global.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:3725  <br>* Object.prototype!@McshTchInf000010#idLJsgnmgo (> process.__proto__.__proto__.__proto__ === Object.protot
+  McshTchInf000012:4313  <br>* dgram!@McshTchInf000012#idLJsndmcoDgram (broken): receive and send UDP packets,
+  McshTchInf000012:4314  <br>* dns!@McshTchInf000012#idLJsndmcoDns: asynchronous DNS resolution,
+  McshTchInf000012:4315  <br>* http!@McshTchInf000012#idLJsndmcoHttp: create an HTTP server or client,
+  McshTchInf000012:4316  <br>* https!@McshTchInf000012#idLJsndmcoHttps: implements http over TLS/SSL,
+  McshTchInf000012:4317  <br>* net!@McshTchInf000012#idLJsndmcoNet: create a TCP server client
+  McshTchInf000012:4318  <br>* tls!@McshTchInf000012#idLJsndmcoTls (ssl): uses OpenSSL to provide Transport Layer Security and/or Secur
+  McshTchInf000012:4351  <br>* process-object link!@McshTchInf000012#nodejs'api'process_object (broken),
+  McshTchInf000012:9168  <br>* access!@McshTchInf000012#idLJsndnpmcmdAccess: Set access level on published packages
+  McshTchInf000012:9169  <br>* adduser!@McshTchInf000012#idLJsndnpmcmdAdduser (broken): Add a registry user account
+  McshTchInf000012:9170  <br>* bin!@McshTchInf000012#idLJsndnpmcmdBin: Display npm bin folder
+  McshTchInf000012:9171  <br>* bugs!@McshTchInf000012#idLJsndnpmcmdBugs: Bugs for a package in a web browser maybe
+  McshTchInf000012:9172  <br>* build!@McshTchInf000012#idLJsndnpmcmdBuild: Build a package
+  McshTchInf000012:9173  <br>* bundle!@McshTchInf000012#idLJsndnpmcmdBundle: REMOVED
+  McshTchInf000012:9174  <br>* cache!@McshTchInf000012#idLJsndnpmcmdCache: Manipulates packages cache
+  McshTchInf000012:9175  <br>* completion!@McshTchInf000012#idLJsndnpmcmdCompletion: Tab Completion for npm
+  McshTchInf000012:9176  <br>* config!@McshTchInf000012#idLJsndnpmcmdConfig: Manage the npm configuration files
+  McshTchInf000012:9177  <br>* dedupe!@McshTchInf000012#idLJsndnpmcmdDedupe: Reduce duplication
+  McshTchInf000012:9178  <br>* deprecate!@McshTchInf000012#idLJsndnpmcmdDeprecate: Deprecate a version of a package
+  McshTchInf000012:9179  <br>* dist-tag!@McshTchInf000012#idLJsndnpmcmdDisttag: Modify package distribution tags
+  McshTchInf000012:9180  <br>* docs!@McshTchInf000012#idLJsndnpmcmdDocs: Docs for a package in a web browser maybe
+  McshTchInf000012:9181  <br>* edit!@McshTchInf000012#idLJsndnpmcmdEdit: Edit an installed package
+  McshTchInf000012:9182  <br>* explore!@McshTchInf000012#idLJsndnpmcmdExplore: Browse an installed package
+  McshTchInf000012:9183  <br>* find!@McshTchInf000012#idLJsndnpmcmdSearch: Search for packages
+  McshTchInf000012:9184  <br>* help!@McshTchInf000012#idLJsndnpmcmdHelp: Get help on npm
+  McshTchInf000012:9185  <br>* help-search!@McshTchInf000012#idLJsndnpmcmdHelpsearch: Search npm help documentation
+  McshTchInf000012:9186  <br>* init!@McshTchInf000012#idLJsndnpmcmdInit: Interactively create a package.json file
+  McshTchInf000012:9187  <br>* install!@McshTchInf000012#idLJsndnpmcmdInstall: Install a package
+  McshTchInf000012:9188  <br>* install-test!@McshTchInf000012#idLJsndnpmcmdInstalltest:
+  McshTchInf000012:9189  <br>* link!@McshTchInf000012#idLJsndnpmcmdLink: Symlink a package folder
+  McshTchInf000012:9190  <br>* logout!@McshTchInf000012#idLJsndnpmcmdLogout: Log out of the registry
+  McshTchInf000012:9191  <br>* ls!@McshTchInf000012#idLJsndnpmcmdLs: List installed packages
+  McshTchInf000012:9192  <br>* outdated!@McshTchInf000012#idLJsndnpmcmdOutdated: Check for outdated packages
+  McshTchInf000012:9193  <br>* owner!@McshTchInf000012#idLJsndnpmcmdOwner: Manage package owners
+  McshTchInf000012:9194  <br>* pack!@McshTchInf000012#idLJsndnpmcmdPack: Create a tarball from a package
+  McshTchInf000012:9195  <br>* ping!@McshTchInf000012#idLJsndnpmcmdPing: Ping npm registry
+  McshTchInf000012:9196  <br>* prefix!@McshTchInf000012#idLJsndnpmcmdPrefix: Display prefix
+  McshTchInf000012:9197  <br>* prune!@McshTchInf000012#idLJsndnpmcmdPrune: Remove extraneous packages
+  McshTchInf000012:9198  <br>* publish!@McshTchInf000012#idLJsndnpmcmdPublish: Publish a package
+  McshTchInf000012:9199  <br>* rebuild!@McshTchInf000012#idLJsndnpmcmdRebuild: Rebuild a package
+  McshTchInf000012:9200  <br>* repo!@McshTchInf000012#idLJsndnpmcmdRepo: Open package repository page in the browser
+  McshTchInf000012:9201  <br>* restart!@McshTchInf000012#idLJsndnpmcmdRestart: Restart a package
+  McshTchInf000012:9202  <br>* root!@McshTchInf000012#idLJsndnpmcmdRoot: Display npm root
+  McshTchInf000012:9203  <br>* run-script!@McshTchInf000012#idLJsndnpmcmdRunscript: Run arbitrary package scripts
+  McshTchInf000012:9204  <br>* s!@McshTchInf000012#idLJsndnpmcmdSearch: Search for packages
+  McshTchInf000012:9205  <br>* se!@McshTchInf000012#idLJsndnpmcmdSearch: Search for packages
+  McshTchInf000012:9206  <br>* search!@McshTchInf000012#idLJsndnpmcmdSearch: Search for packages
+  McshTchInf000012:9207  <br>* shrinkwrap!@McshTchInf000012#idLJsndnpmcmdShrinkwrap: Lock down dependency versions
+  McshTchInf000012:9208  <br>* star!@McshTchInf000012#idLJsndnpmcmdStar: Mark your favorite packages
+  McshTchInf000012:9209  <br>* stars!@McshTchInf000012#idLJsndnpmcmdStars: View packages marked as favorites
+  McshTchInf000012:9210  <br>* start!@McshTchInf000012#idLJsndnpmcmdStart: Start a package
+  McshTchInf000012:9211  <br>* stop!@McshTchInf000012#idLJsndnpmcmdStop: Stop a package
+  McshTchInf000012:9212  <br>* tag!@McshTchInf000012#idLJsndnpmcmdTag: Tag a published version
+  McshTchInf000012:9213  <br>* team!@McshTchInf000012#idLJsndnpmcmdTeam: Manage organization teams and team memberships
+  McshTchInf000012:9214  <br>* test!@McshTchInf000012#idLJsndnpmcmdTest: Test a package
+  McshTchInf000012:9215  <br>* uninstall!@McshTchInf000012#idLJsndnpmcmdUninstall: Remove a package
+  McshTchInf000012:9216  <br>* unpublish!@McshTchInf000012#idLJsndnpmcmdUnpublish: Remove a package from the registry
+  McshTchInf000012:9217  <br>* update!@McshTchInf000012#idLJsndnpmcmdUpdate: Update a package
+  McshTchInf000012:9218  <br>* version!@McshTchInf000012#idLJsndnpmcmdVersion: Bump a package version
+  McshTchInf000012:9219  <br>* view!@McshTchInf000012#idLJsndnpmcmdView: View registry info
+  McshTchInf000012:9220  <br>* whoami!@McshTchInf000012#idLJsndnpmcmdWhoami: Display npm username
+  McshTchInf000015:8478  <br>* saves you time by evalating performance of individual Anassets!@McshTchInf000015#idAlgntevu,
+  McshTchInf000015:13471  <br>* Dagchain-network!@McshTchInf000015#idAlgntnDag (Directed-Acyclic-Graph--net),
+  McshTchInf000016:5615  <br>* Humaniq!@McshTchInf000016#idHmqnet, (Ethereum)
+  McshTchInf000016:5616  <br>* Omni_layer!@McshTchInf000016#idDbcomnl (broken), (Bitcoin)
+  McshTchInf000016:14848  <br>* dependent-bcnnet!@McshTchInf000016#idDbcDpt, (Ethereum)
+  McshTchInf000018:7802  <br>* number!@McshTchInf000018#idEthsolnbr:
+  McshTchInf000030:3428  <br>* bench!@McshTchInf000030#idLRustcrgcmdbench: Execute all benchmarks of a local package
+  McshTchInf000030:3429  <br>* build!@McshTchInf000030#idLRustcrgcmdbuild: Compile a local package and all of its dependencies
+  McshTchInf000030:3430  <br>* check!@McshTchInf000030#idLRustcrgcmdcheck: Check a local package and all of its dependencies for errors
+  McshTchInf000030:3431  <br>* clean!@McshTchInf000030#idLRustcrgcmdclean: Remove artifacts that cargo has generated in the past
+  McshTchInf000030:3432  <br>* clippy-preview!@McshTchInf000030#idLRustcrgcmdclippy: Checks a package to catch common mistakes and impr
+  McshTchInf000030:3433  <br>* doc!@McshTchInf000030#idLRustcrgcmddoc: Build a package's documentation
+  McshTchInf000030:3434  <br>* fetch!@McshTchInf000030#idLRustcrgcmdfetch: Fetch dependencies of a package from the network
+  McshTchInf000030:3435  <br>* fix!@McshTchInf000030#idLRustcrgcmdfix: Automatically fix lint warnings reported by rustc
+  McshTchInf000030:3436  <br>* generate-lockfile!@McshTchInf000030#idLRustcrgcmdgenerate: Generate the lockfile for a package
+  McshTchInf000030:3437  <br>* git-checkout!@McshTchInf000030#idLRustcrgcmdgit: Checkout a copy of a Git repository
+  McshTchInf000030:3438  <br>* init!@McshTchInf000030#idLRustcrgcmdinit: Create a new cargo package in an existing directory
+  McshTchInf000030:3439  <br>* install!@McshTchInf000030#idLRustcrgcmdinstall: Install a Rust binary. Default location is $HOME/.cargo/
+  McshTchInf000030:3440  <br>* locate-project!@McshTchInf000030#idLRustcrgcmdlocate: Print a JSON representation of a Cargo.toml file's
+  McshTchInf000030:3441  <br>* login!@McshTchInf000030#idLRustcrgcmdlogin: Save an api token from the registry locally. If token is not
+  McshTchInf000030:3442  <br>* metadata!@McshTchInf000030#idLRustcrgcmdmetadata: Output the resolved dependencies of a package, the con
+  McshTchInf000030:3443  <br>* new!@McshTchInf000030#idLRustcrgcmdnew: create a new cargo-package at &lt;path&gt;
+  McshTchInf000030:3444  <br>* owner!@McshTchInf000030#idLRustcrgcmdowner: Manage the owners of a crate on the registry
+  McshTchInf000030:3445  <br>* package!@McshTchInf000030#idLRustcrgcmdpackage: Assemble the local package into a distributable tarball
+  McshTchInf000030:3446  <br>* pkgid!@McshTchInf000030#idLRustcrgcmdpkgid: Print a fully qualified package specification
+  McshTchInf000030:3447  <br>* publish!@McshTchInf000030#idLRustcrgcmdpublish: Upload a package to the registry
+  McshTchInf000030:3448  <br>* read-manifest!@McshTchInf000030#idLRustcrgcmdread: Print a JSON representation of a Cargo.toml manifest,
+  McshTchInf000030:3449  <br>* run!@McshTchInf000030#idLRustcrgcmdrun: Run a binary or example of the local package
+  McshTchInf000030:3450  <br>* rustc!@McshTchInf000030#idLRustcrgcmdrustc: Compile a package and all of its dependencies
+  McshTchInf000030:3451  <br>* rustdoc!@McshTchInf000030#idLRustcrgcmdrustdoc: Build a package's documentation, using specified custom 
+  McshTchInf000030:3452  <br>* search!@McshTchInf000030#idLRustcrgcmdsearch: Search packages in crates.io
+  McshTchInf000030:3453  <br>* test!@McshTchInf000030#idLRustcrgcmdtest: Execute all unit and integration tests and build examples of a
+  McshTchInf000030:3454  <br>* uninstall!@McshTchInf000030#idLRustcrgcmduninstall: Remove a Rust binary
+  McshTchInf000030:3455  <br>* update!@McshTchInf000030#idLRustcrgcmdupdate: Update dependencies as recorded in the local lock file
+  McshTchInf000030:3456  <br>* verify-project!@McshTchInf000030#idLRustcrgcmdverify: Check correctness of crate manifest
+  McshTchInf000030:3457  <br>* version!@McshTchInf000030#idLRustcrgcmdversion: Show version information
+  McshTchInf000030:3458  <br>* yank!@McshTchInf000030#idLRustcrgcmdyank: Remove a pushed crate from the index
+  McshTchInf000030:3459  <br>* clippy!@McshTchInf000030#idLRustcrgcmdclippy:
+  McshTchInf000030:3460  <br>* fmt!@McshTchInf000030#idLRustcrgcmdfmt:
+  McshTchInf000030:3461  <br>* miri!@McshTchInf000030#idLRustcrgcmdmiri:
+  McshTchInf000031:2605  <br>* white-space!@McshTchInf000031#idLCppuntWtsc,    <br>* [] array!@McshTchInf000031#idLCppsuntArr definitio
+  McshTchInf000031:2606  <br>* () {} function!@McshTchInf000031#idLCppsuntFcn definition,
+  McshTchInf000031:2607  <br>* " string!@McshTchInf000031#idLCppsuntStrg definition,
+  McshTchInf000032:243  <br>* git-init!@McshTchInf000032#idGitcmdInit = Create repository from an existing directory of working-files
+  McshTchInf000032:244  <br>* git-clone!@McshTchInf000032#idGitcmdClone = Copy a remote repository
+  McshTchInf000032:245  <br>* git-commit!@McshTchInf000032#idGitcmdCommit = Record changes to the repository,
+  McshTchInf000032:332  <br>* git-add!@McshTchInf000032#idGitcmdAdd = Add files to be included in next commit
+  McshTchInf000032:333  <br>* git-commit!@McshTchInf000032#idGitcmdCommit = Record changes to the repository
+  McshTchInf000032:334  <br>* git-status!@McshTchInf000032#idGitcmdStatus = List files changed since last commit
+  McshTchInf000032:335  <br>* git-diff!@McshTchInf000032#idGitcmdDiff = Find differences between commits etc
+  McshTchInf000032:336  <br>* git-reset!@McshTchInf000032#idGitcmdReset = Go to previous states
+  McshTchInf000032:337  <br>* git-rm!@McshTchInf000032#idGitcmdRm = Remove files from the working tree and from the index
+  McshTchInf000032:338  <br>* git-mv!@McshTchInf000032#idGitcmdMv = Move or rename a file, a directory, or a symlink
+  McshTchInf000032:459  <br>* git-branch!@McshTchInf000032#idGitcmdBranch = List, create, or delete branches
+  McshTchInf000032:460  <br>* git-merge!@McshTchInf000032#idGitcmdMerge = Join two or more development histories together
+  McshTchInf000032:461  <br>* git-checkout!@McshTchInf000032#idGitcmdCheckout = Update files in working-tree to match what specified
+  McshTchInf000032:462  <br>* git-log!@McshTchInf000032#idGitcmdLog = Show history of commits
+  McshTchInf000032:463  <br>* git-tag!@McshTchInf000032#idGitcmdTag = Give name to commit
+  McshTchInf000032:464  <br>* git-stash!@McshTchInf000032#idGitcmdStash = Stores all changes in temporary location
+  McshTchInf000032:576  <br>* git-status!@McshTchInf000032#idGitcmdStatus = List all files changed since last commit
+  McshTchInf000032:577  <br>* git-log!@McshTchInf000032#idGitcmdLog = Show the history of commits
+  McshTchInf000032:578  <br>* git-diff!@McshTchInf000032#idGitcmdDiff = Find difference between commits
+  McshTchInf000032:579  <br>* git-show!@McshTchInf000032#idGitcmdShow = Show various types of objects
+  McshTchInf000032:627  <br>* git-checkout!@McshTchInf000032#idGitcmdCheckout = Update files in working-tree to match what specified
+  McshTchInf000032:628  <br>* git-tag!@McshTchInf000032#idGitcmdTag = Give name to commit
+  McshTchInf000032:629  <br>* git-stash!@McshTchInf000032#idGitcmdStash = Stores all changes in temporary location
+  McshTchInf000032:663  <br>* git-clone!@McshTchInf000032#idGitcmdClone.html (broken) = Copy a remote repository
+  McshTchInf000032:664  <br>* git-remote!@McshTchInf000032#idGitcmdRemote.html (broken) = Manage set of tracked repositories
+  McshTchInf000032:665  <br>* git-pull!@McshTchInf000032#idGitcmdPull.html (broken) = Fetch from and merge with another repository or 
+  McshTchInf000032:666  <br>* git-fetch!@McshTchInf000032#idGitcmdFetch.html (broken) = Download objects and refs from another reposit
+  McshTchInf000032:667  <br>* git-push!@McshTchInf000032#idGitcmdPush.html (broken) = Update remote refs along with associated objects
+  McshTchInf000036:4935  <br>* entity!@McshCor000003#idOverview.
+  McshTchInf000039:6124  <br>* RDF!@McshTchInf000039#idLKnlg014(S),
+  McshTchPrgm000003:846  <br>* about!@McshTchPrgm000003#idAtmpkgAbout: View useful information about your Atom installation,
+  McshTchPrgm000003:847  <br>* archive-view!@McshTchPrgm000003#idAtmpkgArchiveview: View the files and folders inside archive files
+  McshTchPrgm000003:848  <br>* autocomplete-atom-api!@McshTchPrgm000003#idAtmpkgAutocompleteatomapi: Atom API autocompletions
+  McshTchPrgm000003:849  <br>* autocomplete-css!@McshTchPrgm000003#idAtmpkgAutocompletecss: CSS property name and value autocompletions
+  McshTchPrgm000003:850  <br>* autocomplete-html!@McshTchPrgm000003#idAtmpkgAutocompletehtml: HTML element and attribute autocompletion
+  McshTchPrgm000003:851  <br>* autocomplete-plus!@McshTchPrgm000003#idAtmpkgAutocompleteplus: Display possible completions in the edito
+  McshTchPrgm000003:852  <br>* autocomplete-snippets!@McshTchPrgm000003#idAtmpkgAutocompletesnippets: Adds snippets to autocomplete+ su
+  McshTchPrgm000003:853  <br>* autoflow!@McshTchPrgm000003#idAtmpkgAutoflow: Format the current selection to have lines no longer than 
+  McshTchPrgm000003:854  <br>* autosave!@McshTchPrgm000003#idAtmpkgAutosave: Save editors when they lose focus or are closed
+  McshTchPrgm000003:855  <br>* background-tips!@McshTchPrgm000003#idAtmpkgBackgroundtips: Displays tips about Atom in the background wh
+  McshTchPrgm000003:856  <br>* bookmarks!@McshTchPrgm000003#idAtmpkgBookmarks: Can mark lines, then jump back to them
+  McshTchPrgm000003:857  <br>* bracket-matcher!@McshTchPrgm000003#idAtmpkgBracketmatcher: Highlight the matching bracket for the `(){}[
+  McshTchPrgm000003:858  <br>* command-palette!@McshTchPrgm000003#idAtmpkgCommandpalette: Find and run available commands using `cmd-sh
+  McshTchPrgm000003:859  <br>* dalek!@McshTchPrgm000003#idAtmpkgDalek: EXTERMINATEs built-in packages installed in ~/.atom/packages
+  McshTchPrgm000003:860  <br>* deprecation-cop!@McshTchPrgm000003#idAtmpkgDeprecationcop: Shows a list of deprecated calls
+  McshTchPrgm000003:861  <br>* dev-live-reload!@McshTchPrgm000003#idAtmpkgDevlivereload: Live reload atom themes and packages,
+  McshTchPrgm000003:862  <br>* encoding-selector!@McshTchPrgm000003#idAtmpkgEncodingselector: Select the encoding to use for the curren
+  McshTchPrgm000003:863  <br>* exception-reporting!@McshTchPrgm000003#idAtmpkgExceptionreporting: Reports uncaught Atom exceptions to t
+  McshTchPrgm000003:864  <br>* find-and-replace!@McshTchPrgm000003#idAtmpkgFindandreplace: Find and replace within buffers and across t
+  McshTchPrgm000003:865  <br>* fuzzy-finder!@McshTchPrgm000003#idAtmpkgFuzzyfinder: Open an editor to a file in the project with `cmd-t
+  McshTchPrgm000003:866  <br>* git-diff!@McshTchPrgm000003#idAtmpkgGitdiff: Marks lines in the editor gutter that have been added, edit
+  McshTchPrgm000003:867  <br>* github!@McshTchPrgm000003#idAtmpkgGithub: GitHub integration
+  McshTchPrgm000003:868  <br>* go-to-line!@McshTchPrgm000003#idAtmpkgGotoline: Jump to a specific editor line number with `ctrl-g`,
+  McshTchPrgm000003:869  <br>* grammar-selector!@McshTchPrgm000003#idAtmpkgGrammarselector: Select the grammar to use for the current e
+  McshTchPrgm000003:870  <br>* image-view!@McshTchPrgm000003#idAtmpkgImageview: Open images in an editor
+  McshTchPrgm000003:871  <br>* incompatible-packages!@McshTchPrgm000003#idAtmpkgIncompatiblepackages: Show incompatible packages
+  McshTchPrgm000003:872  <br>* keybinding-resolver!@McshTchPrgm000003#idAtmpkgKeybindingresolver: Show what commands a keybinding resol
+  McshTchPrgm000003:873  <br>* language-c!@McshTchPrgm000003#idAtmpkgLanguagec: Atom language support for C/C++
+  McshTchPrgm000003:874  <br>* language-clojure!@McshTchPrgm000003#idAtmpkgLanguageclojure: Clojure language support in Atom
+  McshTchPrgm000003:875  <br>* language-coffee-script!@McshTchPrgm000003#idAtmpkgLanguagecoffeescript: CoffeeScript language support in
+  McshTchPrgm000003:876  <br>* language-csharp!@McshTchPrgm000003#idAtmpkgLanguagecsharp: C# language support for Atom
+  McshTchPrgm000003:877  <br>* language-css!@McshTchPrgm000003#idAtmpkgLanguagecss: CSS support in Atom
+  McshTchPrgm000003:878  <br>* language-gfm!@McshTchPrgm000003#idAtmpkgLanguagegfm: Syntax highlighting and snippets for GitHub Flavore
+  McshTchPrgm000003:879  <br>* language-git!@McshTchPrgm000003#idAtmpkgLanguagegit: Git editing support in Atom
+  McshTchPrgm000003:880  <br>* language-go!@McshTchPrgm000003#idAtmpkgLanguagego: Go language support in Atom
+  McshTchPrgm000003:881  <br>* language-html!@McshTchPrgm000003#idAtmpkgLanguagehtml: HTML language support in Atom
+  McshTchPrgm000003:882  <br>* language-hyperlink!@McshTchPrgm000003#idAtmpkgLanguagehyperlink: Hyperlink colorization in Atom
+  McshTchPrgm000003:883  <br>* language-java!@McshTchPrgm000003#idAtmpkgLanguagejava: Java language support in Atom
+  McshTchPrgm000003:884  <br>* language-javascript!@McshTchPrgm000003#idAtmpkgLanguagejavascript: JavaScript language support in Atom
+  McshTchPrgm000003:885  <br>* language-json!@McshTchPrgm000003#idAtmpkgLanguagejson: JSON language support in Atom
+  McshTchPrgm000003:886  <br>* language-less!@McshTchPrgm000003#idAtmpkgLanguageless: Less language support in Atom
+  McshTchPrgm000003:887  <br>* language-make!@McshTchPrgm000003#idAtmpkgLanguagemake: Make language support in Atom
+  McshTchPrgm000003:888  <br>* language-mustache!@McshTchPrgm000003#idAtmpkgLanguagemustache: Mustache language support in Atom
+  McshTchPrgm000003:889  <br>* language-objective-c!@McshTchPrgm000003#idAtmpkgLanguageobjectivec: Objective-C language support in Atom
+  McshTchPrgm000003:890  <br>* language-pegjs!@McshTchPrgm000003#idAtmpkgLanguagepegjs: PEG.js language support in Atom
+  McshTchPrgm000003:891  <br>* language-perl!@McshTchPrgm000003#idAtmpkgLanguageperl: Perl language support in Atom
+  McshTchPrgm000003:892  <br>* language-php!@McshTchPrgm000003#idAtmpkgLanguagephp: PHP language support in Atom
+  McshTchPrgm000003:893  <br>* language-property-list!@McshTchPrgm000003#idAtmpkgLanguagepropertylist: Property List support in Atom
+  McshTchPrgm000003:894  <br>* language-python!@McshTchPrgm000003#idAtmpkgLanguagepython: Python language support in Atom
+  McshTchPrgm000003:895  <br>* language-ruby!@McshTchPrgm000003#idAtmpkgLanguageruby: Ruby language support in Atom
+  McshTchPrgm000003:896  <br>* language-ruby-on-rails!@McshTchPrgm000003#idAtmpkgLanguagerubyonrails: Ruby on Rails language support in
+  McshTchPrgm000003:897  <br>* language-sass!@McshTchPrgm000003#idAtmpkgLanguagesass: Sass/SCSS language support in Atom
+  McshTchPrgm000003:898  <br>* language-shellscript!@McshTchPrgm000003#idAtmpkgLanguageshellscript: ShellScript language support in Ato
+  McshTchPrgm000003:899  <br>* language-source!@McshTchPrgm000003#idAtmpkgLanguagesource: Source code support in Atom
+  McshTchPrgm000003:900  <br>* language-sql!@McshTchPrgm000003#idAtmpkgLanguagesql: SQL language support in Atom
+  McshTchPrgm000003:901  <br>* language-text!@McshTchPrgm000003#idAtmpkgLanguagetext: Plain text support in Atom
+  McshTchPrgm000003:902  <br>* language-todo!@McshTchPrgm000003#idAtmpkgLanguagetodo: TODO/FIXME highlighting support in Atom
+  McshTchPrgm000003:903  <br>* language-toml!@McshTchPrgm000003#idAtmpkgLanguagetoml: Syntax highlighting for Tom's Obvious, Minimal La
+  McshTchPrgm000003:904  <br>* language-typescript!@McshTchPrgm000003#idAtmpkgLanguagetypescript: TypeScript language support in Atom
+  McshTchPrgm000003:905  <br>* language-xml!@McshTchPrgm000003#idAtmpkgLanguagexml: XML language support in Atom
+  McshTchPrgm000003:906  <br>* language-yaml!@McshTchPrgm000003#idAtmpkgLanguageyaml: YAML language support in Atom
+  McshTchPrgm000003:907  <br>* line-ending-selector!@McshTchPrgm000003#idAtmpkgLineendingselector: Select the line ending to use for th
+  McshTchPrgm000003:908  <br>* link!@McshTchPrgm000003#idAtmpkgLink: Opens http/https links under the cursor using `ctrl-shift-o`,
+  McshTchPrgm000003:909  <br>* markdown-preview!@McshTchPrgm000003#idAtmpkgMarkdownpreview: Open a rendered version of the Markdown in 
+  McshTchPrgm000003:910  <br>* metrics!@McshTchPrgm000003#idAtmpkgMetrics: Help improve Atom by sending usage statistics, exceptions an
+  McshTchPrgm000003:911  <br>* notifications!@McshTchPrgm000003#idAtmpkgNotifications: A tidy way to display Atom notifications,
+  McshTchPrgm000003:912  <br>* open-on-github!@McshTchPrgm000003#idAtmpkgOpenongithub: View the active file on github.com
+  McshTchPrgm000003:913  <br>* package-generator!@McshTchPrgm000003#idAtmpkgPackagegenerator: Generates and opens a new sample package 
+  McshTchPrgm000003:914  <br>* settings-view!@McshTchPrgm000003#idAtmpkgSettingsview: Edit config settings, install packages, and chang
+  McshTchPrgm000003:915  <br>* snippets!@McshTchPrgm000003#idAtmpkgSnippets: Expand snippets matching the current prefix with `tab`,
+  McshTchPrgm000003:916  <br>* spell-check!@McshTchPrgm000003#idAtmpkgSpellcheck: Highlights misspelled words and shows possible correc
+  McshTchPrgm000003:917  <br>* status-bar!@McshTchPrgm000003#idAtmpkgStatusbar: Display information about the current editor such as cu
+  McshTchPrgm000003:918  <br>* styleguide!@McshTchPrgm000003#idAtmpkgStyleguide: A visual styleguide of the Atom's UI components,
+  McshTchPrgm000003:919  <br>* symbols-view!@McshTchPrgm000003#idAtmpkgSymbolsview: Jump to a function/method in the current editor wit
+  McshTchPrgm000003:920  <br>* tabs!@McshTchPrgm000003#idAtmpkgTabs: Display a selectable tab for each editor open,
+  McshTchPrgm000003:921  <br>* timecop!@McshTchPrgm000003#idAtmpkgTimecop: Displays information about where time is spent while Atom lo
+  McshTchPrgm000003:922  <br>* tree-view!@McshTchPrgm000003#idAtmpkgTrvw (broken): Explore and open files in the current project,
+  McshTchPrgm000003:923  <br>* update-package-dependencies!@McshTchPrgm000003#idAtmpkgUpdatepackagedependencies: Runs `apm install` for
+  McshTchPrgm000003:924  <br>* welcome!@McshTchPrgm000003#idAtmpkgWelcome: Welcome users to Atom with useful information
+  McshTchPrgm000003:925  <br>* whitespace!@McshTchPrgm000003#idAtmpkgWhitespace: Strips trailing whitespace and adds a trailing newline
+  McshTchPrgm000003:926  <br>* wrap-guide!@McshTchPrgm000003#idAtmpkgWrapguide: Displays a vertical line at the 80th character in the e
+  Mcsh000000:405  <br>* semi monosemantic-worldview!@McshLag000003#idWldv012,
+  Mcsh000000:411  <br>* semi machine-readable-worldview!@McshLag000003#idWldv008,
+
+=== KEPT-EXTERNAL (160)
+  McshCor000002:5052  https://everipedia.org/wiki/lang_en/structured-concept-mcs/
+  McshLag000007:31149  https://plotset.com/gallery/2b1ee4ef-17c6-4997-a1dc-47a86d548f95
+  McshTchInf000010:2632  http://www.ecma-international.org/ecma-262/index.html#sec-unary-operat
+  McshTchInf000010:5193  http://animejs.com/
+  McshTchInf000010:5194  http://slicker.me/fractals/animate.htm
+  McshTchInf000010:5399  https://www.taucharts.com/
+  McshTchInf000010:5455  https://JavaScript.info/date
+  McshTchInf000010:5494  https://rmodal.js.org/
+  McshTchInf000010:5523  http://xem.github.io/sheet/
+  McshTchInf000010:5895  https://github.com/signalapp/libsignal-protocol-JavaScript
+  McshTchInf000010:6826  http://jsbeautifier.org/
+  McshTchInf000010:6903  https://bower.io/
+  McshTchInf000010:6906  https://bower.io/
+  McshTchInf000010:7175  https://auth0.com/blog/JavaScript-for-microcontrollers-and-iot-part-1/
+  McshTchInf000011:2662  http://www.Javascripting.com/
+  McshTchInf000012:1238  http://eirikb.github.io/nipster/
+  McshTchInf000012:3960  https://scotch.io/tutorials/build-an-interactive-command-line-applicat
+  McshTchInf000012:3961  http://st-on-it.blogspot.gr/2011/05/how-to-read-user-input-with-nodejs
+  McshTchInf000012:3963  https://github.com/anseki/readline-sync
+  McshTchInf000012:3964  https://github.com/SBoudrias/Inquirer.js
+  McshTchInf000012:3965  http://vorpal.js.org/
+  McshTchInf000012:3984  https://blog.risingstack.com/mastering-async-await-in-nodejs/
+  McshTchInf000012:3985  https://blog.risingstack.com//node-hero-async-programming-in-node-js/
+  McshTchInf000012:4000  http://passportjs.org/
+  McshTchInf000012:4001  http://www.sitepoint.com/http-authentication-in-node-js/
+  McshTchInf000012:4016  https://medium.com/@tarkus/how-to-call-c-c-code-from-node-js-86a773033
+  McshTchInf000012:4038  http://www.sitepoint.com/accessing-the-file-system-in-node-js/
+  McshTchInf000012:4039  https://www.npmjs.org/package/delivery
+  McshTchInf000012:4115  http://www.hongkiat.com/blog/node-js-server-side-JavaScript/
+  McshTchInf000012:4129  http://www.componentix.com/blog/13/file-uploads-using-nodejs-once-agai
+  McshTchInf000012:4204  https://github.com/Marak/html
+  McshTchInf000012:4230  https://github.com/frozzare/json-to-html
+  McshTchInf000012:4244  https://github.com/vanetix/artificer
+  McshTchInf000012:4334  https://www.npmjs.org/package/grunt-ssh
+  McshTchInf000012:4335  https://www.npmjs.org/package/sftp-upload
+  McshTchInf000012:4366  https://medium.com/@leo/getting-started-with-JavaScript-robotics-5c54e
+  McshTchInf000012:4399  https://github.com/substack/stream-handbook
+  McshTchInf000012:4400  http://www.sitepoint.com/introduction-to-streams/
+  McshTchInf000012:4458  https://www.npmjs.org/package/js-yaml
+  McshTchInf000012:4461  http://nodeexamples.com/2012/09/15/parsing-yaml-files-in-node-js-using
+  McshTchInf000012:4476  http://www.rackspace.com/blog/node-elementtree-node-js-library-to-buil
+  McshTchInf000012:4669  https://www.ctl.io/appfog/
+  McshTchInf000012:4670  https://cloudno.de/
+  McshTchInf000012:4860  http://stackoverflow.com/questions/3684743/cms-based-on-nodejs
+  McshTchInf000012:4862  https://github.com/joyent/node/wiki/modules#wiki-content-management
+  McshTchInf000012:4863  https://github.com/punkave/apostrophe
+  McshTchInf000012:4864  https://github.com/dpirek/nodejs-mvc-cms
+  McshTchInf000012:6165  http://npmsearch.com/
+  McshTchInf000012:9007  https://github.com/contra/gulp-cached
+  McshTchInf000012:9008  https://github.com/sindresorhus/gulp-changed
+  McshTchInf000012:9009  https://github.com/tschaub/gulp-newer
+  McshTchInf000012:9010  https://github.com/ahaurw01/gulp-remember
+  McshTchInf000013:1450  https://electron.atom.io/apps/
+  McshTchInf000013:1666  https://electron.atom.io/releases/
+  McshTchInf000014:4607  https://github.com/mdn/webassembly-examples
+  McshTchInf000014:4609  https://github.com/tgsstdio/Hello-WebAssembly
+  McshTchInf000014:5525  https://wasdk.github.io/WasmFiddle/
+  McshTchInf000014:5526  http://mbebenita.github.io/WasmExplorer/
+  McshTchInf000014:6124  https://github.com/ewasm
+  McshTchInf000015:1235  https://tendermint.com/
+  McshTchInf000015:2495  https://hackernoon.com/crypto-asset-classes-6dd6ddece456
+  McshTchInf000015:7021  https://www.icoalert.com/
+  McshTchInf000015:7022  https://icowatchlist.com/
+  McshTchInf000015:7023  https://www.coinhills.com/ico/list/ongoing/1/
+  McshTchInf000015:7024  https://cointelegraph.com/ico-calendar
+  McshTchInf000015:7116  http://www.akasha.world
+  McshTchInf000015:7117  http://www.bitcoinsuisse.ch
+  McshTchInf000015:7118  http://www.bitfinitum.com
+  McshTchInf000015:7119  https://www.blockchainforsocialimpact.com/about-index
+  McshTchInf000015:7120  http://www.blockchainsource.ch
+  McshTchInf000015:7121  http://www.crypto.ch
+  McshTchInf000015:7122  http://www.cryptocash.ch
+  McshTchInf000015:7123  http://www.ethereum.org
+  McshTchInf000015:7124  http://www.ifz.ch
+  McshTchInf000015:7125  http://www.infoguard.ch
+  McshTchInf000015:7126  http://www.iprotus.ch
+  McshTchInf000015:7127  http://www.mme.ch
+  McshTchInf000015:7128  http://www.monetas.net
+  McshTchInf000015:7129  http://www.mount10.ch
+  McshTchInf000015:7130  http://www.netmon.ch
+  McshTchInf000015:7131  http://www.pd.coop
+  McshTchInf000015:7132  http://www.sapphireinnovation.com
+  McshTchInf000015:7133  http://shapeshift.io
+  McshTchInf000015:7134  http://www.xapo.com
+  McshTchInf000015:7632  https://etherdelta.com/
+  McshTchInf000015:10991  https://neufund.org/
+  McshTchInf000015:11046  https://www.kickico.com/
+  McshTchInf000015:11277  https://www.experty.io/
+  McshTchInf000015:11438  https://rendertoken.com/
+  McshTchInf000015:11443  https://www.domeplatform.io/
+  McshTchInf000015:11574  https://filecoin.io/
+  McshTchInf000015:11577  https://sia.tech/
+  McshTchInf000015:11578  https://storj.io/
+  McshTchInf000015:12079  https://immla.io/
+  McshTchInf000015:12080  https://www.wacoin.io/
+  McshTchInf000015:12228  http://boardroom.to/
+  McshTchInf000015:12229  https://colony.io/
+  McshTchInf000015:12230  https://district0x.io/
+  McshTchInf000015:12436  https://www.boule.one/
+  McshTchInf000015:12437  https://voteflux.org/
+  McshTchInf000015:12681  https://www.civic.com/
+  McshTchInf000015:12684  https://www.uport.me/
+  McshTchInf000015:12685  https://persona.im/
+  McshTchInf000015:12686  https://www.verif-y.io/
+  McshTchInf000015:12811  http://join.libertaria.world/
+  McshTchInf000015:13453  https://en.wikipedia.org/wiki/Peer-to-peer
+  McshTchInf000015:13489  https://byteball.org/
+  McshTchInf000015:13490  https://h.cash/
+  McshTchInf000015:13491  https://iota.org/
+  McshTchInf000015:13525  https://medium.com/@josh_nussbaum/blockchain-project-ecosystem-8940aba
+  McshTchInf000015:13809  https://byteball.org/
+  McshTchInf000015:13810  https://iota.org/
+  McshTchInf000015:13811  https://raiblocks.net/
+  McshTchInf000016:5722  https://gendal.me/2014/10/26/a-simple-explanation-of-bitcoin-sidechain
+  McshTchInf000016:5723  https://blockstream.com/sidechains.pdf
+  McshTchInf000017:145  https://en.bitcoin.it/wiki/Vocabulary
+  McshTchInf000017:146  http://www.coindesk.com/information/bitcoin-glossary/
+  McshTchInf000017:147  https://github.com/oleganza/bitcoin-papers/blob/master/BitcoinGlossary
+  McshTchInf000017:6017  https://npmjs.org/package/bitcoin
+  McshTchInf000017:6018  http://coinwidget.com/
+  McshTchInf000017:6923  https://bitcoin.org/en/choose-your-wallet
+  McshTchInf000017:8313  https://bitcoinsgreece.com/
+  McshTchInf000017:8314  https://www.mtgox.com/
+  McshTchInf000017:8502  https://bitit.gift/
+  McshTchInf000017:9004  https://proofofexistence.com/about
+  McshTchInf000018:4015  https://etherscan.io/stat/supply
+  McshTchInf000018:4016  https://coinmarketcap.com/currencies/ethereum/
+  McshTchInf000018:4165  https://etherscan.io/address/0x9734c136f5c63531b60d02548bca73a3d72e024
+  McshTchInf000018:4173  https://etherscan.io/address/0x6531f133e6deebe7f2dce5a0441aa7ef330b4e5
+  McshTchInf000018:6626  https://github.com/ethereum/dapp-bin
+  McshTchInf000018:9663  https://github.com/fivedogit/solidity-baby-steps/tree/master/contracts
+  McshTchInf000018:9664  https://github.com/ConsenSys/dapp-store-contracts
+  McshTchInf000018:10032  https://github.com/ConsenSys/solidity-parser
+  McshTchInf000018:10818  https://github.com/Arachnid/evmdis
+  McshTchInf000018:11265  https://github.com/fivedogit/solidity-baby-steps
+  McshTchInf000018:11279  https://github.com/Ambisafe/etoken-docs/wiki
+  McshTchInf000020:2236  https://bittrex.com/Market/Index?MarketName=BTC-TIME
+  McshTchInf000021:1409  https://eostracker.io/
+  McshTchInf000021:1410  https://eospark.com/
+  McshTchInf000021:1411  https://explorer.eosvibes.io/
+  McshTchInf000021:1413  https://eosnetworkmonitor.io/
+  McshTchInf000021:1414  https://eosflare.io/
+  McshTchInf000021:1415  https://eosweb.net/
+  McshTchInf000021:2681  https://synagonism.net/dirMcsh/dirTchInf/McshTchInf000025.last.html#id
+  McshTchInf000024:1917  https://busy.org/
+  McshTchInf000024:1918  https://chainbb.com/
+  McshTchInf000024:1919  https://dsound.audio
+  McshTchInf000024:1920  https://d.tube/
+  McshTchInf000024:1921  http://join.utopian.io/
+  McshTchInf000025:887  https://everipedia.org/wiki/QmaSR4oTLYf65vKpWwtsDYgbpA5LvzyoSdzTBuCd6C
+  McshTchInf000025:888  https://everipedia.org/wiki/QmfK2VFsByT1YH5ja7Qb2gSDRK4bwGVBPgypm3h9K5
+  McshTchInf000025:889  https://everipedia.org/wiki/QmfK2VFsByT1YH5ja7Qb2gSDRK4bwGVBPgypm3h9K5
+  McshTchInf000025:890  https://everipedia.org/wiki/QmciKP5NQ4yvnfoczbWHAji9Ys449JbKZRSp6K8fXK
+  McshTchInf000025:891  https://everipedia.org/wiki/QmYW29NNnurw82K3YHtHBGwjjeNxry7iKKBGdeSPDC
+  McshTchInf000025:892  https://everipedia.org/wiki/QmYsKDGeFVa6FGkGvfxgRDK2sgNArR2iB5RVHMPNY2
+  McshTchInf000029:465  http://json.org/example.html
+  McshTchInf000031:2217  https://msdn.microsoft.com/en-us/library/a7tkse1h.aspx
+  McshTchInf000031:2218  https://en.wikipedia.org/wiki/C++_Standard_Library
+  McshTchInf000031:2498  http://cpp.sh/
+  McshTchInf000032:1070  https://github.com/
+
+=== KEPT-NONMCSH (22)
+  McshHlth000003:1929  href=".."
+  McshLag000020:1785  href="../../dirOtenet/gr/syltable.html"
+  McshNtr000005:1357  href="filMcsChmelr.last.html#idOverview"
+  McshOgm000002:235  href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf"
+  McshTchInf000005:646  href="../dirTchInf/McsTchInf000010on.last.html#idOverview"
+  McshTchInf000009:2037  href="../../dirFolioViews/index.html"
+  McshTchInf000013:1451  href="../dirLagTch/McsTchCpgm000003.last.html#idDescription"
+  McshTchInf000013:1452  href="..\dirTchInf\McshTchInf000041.last.html"
+  McshTchInf000015:365  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcHumnSnt"
+  McshTchInf000015:4255  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcevuC"
+  McshTchInf000015:9712  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtclgn"
+  McshTchInf000015:12678  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcsvcIdn"
+  McshTchInf000016:382  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcprl"
+  McshTchInf000016:1022  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblk"
+  McshTchInf000016:1268  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtccrptsha256"
+  McshTchInf000016:1533  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtctx"
+  McshTchInf000016:1696  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcbcn"
+  McshTchInf000016:2365  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcevuC"
+  McshTchInf000016:4458  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcwlt"
+  McshTchInf000016:4941  href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcpbm"
+  McshTchInf000016:5370  href="../dirTchInf/McsTchInf000016Btc.last.html#idDescription"
+  McshTchInf000019:138  href="stakeholder.ACCOUNT"
+
+=== SKIPPED-NAME (1)
+  McshLag000043:1382  "KoraConsChar.ㅅ-s-[s] (often [ɕ] before ㅣ, ㅑ, ㅕ, ㅛ, ㅠ)-[t̚]"
+
+=== TARGET-MISSING (144)
+  McshCor000005:1700  math-function!@McshEdu000005#idSMathsfn  (no id idSMathsfn in McshEdu000005)
+  McshCor000018:540  sensingSeeing-(sensationImage)!@McshHlth000002#idBdyHmn313  (no id idBdyHmn313 in McshHlth000002)
+  McshHlth000002:13433  doing!@McshCor000004#idDnggncFT  (no id idDnggncFT in McshCor000004)
+  McshHlth000003:1910  functing-DongMinding!@McshCor000018#idMinddngCmng007  (no id idMinddngCmng007 in McshCor000018)
+  McshHlth000008:508  substance!@McshNtr000002#idMtrlSbtc  (no id idMtrlSbtc in McshNtr000002)
+  McshHlth000008:510  body-system!@McshCor000008#idSys004  (no id idSys004 in McshCor000008)
+  McshHlth000011:17468  sensing!@McshCor000018#idOverview003  (no id idOverview003 in McshCor000018)
+  McshHlth000012:153  substance!@McshNtr000002#idMtrlSbtc  (no id idMtrlSbtc in McshNtr000002)
+  McshLag000005:162  mapping-method!@McshCor000004#idDngActgMpgmtd  (no id idDngActgMpgmtd in McshCor000004)
+  McshLag000009:610  German-phoneme(41)!@McshStn000036#idLDeutunitPhnm  (no id idLDeutunitPhnm in McshStn000036)
+  McshNtr000002:500  body-system!@McshCor000008#idSys004  (no id idSys004 in McshCor000008)
+  McshNtr000006:118  chemical-substance!@McshNtr000002#idMtrl006  (no id idMtrl006 in McshNtr000002)
+  McshNtr000007:407  chemical-substance!@McshNtr000002#idMtrl006  (no id idMtrl006 in McshNtr000002)
+  McshNtr000007:574  Cesium-Cs55!@McshNtr000007#idChmElrCesium  (no id idChmElrCesium in McshNtr000007)
+  McshNtr000007:709  Cs55-Cesium!@McshNtr000007#idChmElrCesium  (no id idChmElrCesium in McshNtr000007)
+  McshNtr000007:870  55-Cesium-Cs!@McshNtr000007#idChmElrCesium  (no id idChmElrCesium in McshNtr000007)
+  McshNtr000010:280  brain-(human-brain)!@McshHlth000002#idBrnHmn  (no id idBrnHmn in McshHlth000002)
+  McshOgm000002:241  material-object!@McshNtr000002#idMtrlSbtcN  (no id idMtrlSbtcN in McshNtr000002)
+  McshOgm000005:293  substance!@McshNtr000002#idMtrlSbtc  (no id idMtrlSbtc in McshNtr000002)
+  McshOgm000005:313  calcium!@McshHlth000002#idBdyHmnclcm  (no id idBdyHmnclcm in McshHlth000002)
+  McshOgm000005:314  iron!@McshHlth000002#idBdyHmniron  (no id idBdyHmniron in McshHlth000002)
+  McshOgm000005:521  cholesterol!@McshOgm000005#idMolOgm016001  (no id idMolOgm016001 in McshOgm000005)
+  McshOgm000005:1381  productBodyHumn!@McshOgm000005#idSysMolsHmn004gnc  (no id idSysMolsHmn004gnc in McshOgm000005)
+  McshOgm000005:3527  connective-tissue!@McshOgm000005#idBdyHmn098  (no id idBdyHmn098 in McshOgm000005)
+  McshOgm000006:184  essensial!@McshHlth000002#idBdyHmnatt015025  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshStn000002:570  organizationHmn!@McshStn000008#idOzn  (no id idOzn in McshStn000008)
+  McshStn000004:1292  company-admnAlgo!@McshStn000012#idAlgoeconatt002  (no id idAlgoeconatt002 in McshStn000012)
+  McshStn000004:1293  household-admnAlgo!@McshStn000012#idAlgoeconatt001  (no id idAlgoeconatt001 in McshStn000012)
+  McshStn000005:266  dynamic-system!@McshCor000008#idSysDnmc  (no id idSysDnmc in McshCor000008)
+  McshStn000007:256  self-dynamic-system!@McshCor000011#idSys009Slf  (no id idSys009Slf in McshCor000011)
+  McshStn000007:257  material-body--system!@McshCor000008#idSys004  (no id idSys004 in McshCor000008)
+  McshStn000009:279  consumer!@McshStn000012#idEconHmnatt006att002  (no id idEconHmnatt006att002 in McshStn000012)
+  McshStn000009:8174  dynamic-system!@McshCor000008#idSysDnmc  (no id idSysDnmc in McshCor000008)
+  McshStn000021:694  self-dynamic-system!@McshCor000011#idSys009Slf  (no id idSys009Slf in McshCor000011)
+  McshStn000021:695  material-body--system!@McshCor000008#idSys004  (no id idSys004 in McshCor000008)
+  McshStn000023:21621  RDF-vocabulary!@McshTchInf000007#idLCnknt005voc  (no id idLCnknt005voc in McshTchInf000007)
+  McshStn000029:1109  ExvuEUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuseconEurevu  (no id idEuseconEurevu in McshStn000020)
+  McshStn000029:1271  EUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuseconEurevu  (no id idEuseconEurevu in McshStn000020)
+  McshStn000029:1442  Euro-Member-Countries-currency-(EUR)!@McshStn000020#idEuseconEurevu  (no id idEuseconEurevu in McshStn000020)
+  McshTchInf000005:566  human-mind-language!@McshLag000007#idLHumn  (no id idLHumn in McshLag000007)
+  McshTchInf000005:568  mapping-method!@McshCor000004#idDngActgMpgmtd  (no id idDngActgMpgmtd in McshCor000004)
+  McshTchInf000005:1084  title-content-tree--document!@McshTchInf000008#idLHitparctre  (no id idLHitparctre in McshTchInf000008)
+  McshTchInf000010:416  name-value-pair-mixedNo--semantic-unit!@McshTchInf000010#idLJsgnxNo  (no id idLJsgnxNo in McshTchInf000010)
+  McshTchInf000010:4087  Jsbr-native-generic-specific-tree!@McshTchInf000011#idLJsbrgst  (no id idLJsbrgst in McshTchInf000011)
+  McshTchInf000010:4088  Jsnd-native-generic-specific-tree!@McshTchInf000012#idLJsndgst  (no id idLJsndgst in McshTchInf000012)
+  McshTchInf000010:4104  Jsbr-Object.prototype!@McshTchInf000011#idLJsbrgst  (no id idLJsbrgst in McshTchInf000011)
+  McshTchInf000010:4105  Jsnd-Object.prototype!@McshTchInf000012#idLJsndgst  (no id idLJsndgst in McshTchInf000012)
+  McshTchInf000010:4761  generic-sentence!@McshTchInf000010#idLJsgnstcSpcGnc  (no id idLJsgnstcSpcGnc in McshTchInf000010)
+  McshTchInf000010:4765  instance-sentence!@McshTchInf000010#idLJsgnstcSpcGnc  (no id idLJsgnstcSpcGnc in McshTchInf000010)
+  McshTchInf000010:4770  simple-sentence!@McshTchInf000010#idLJsgnstcSpcSpl  (no id idLJsgnstcSpcSpl in McshTchInf000010)
+  McshTchInf000010:5182  Number-managing!@McshTchInf000010#idLJsgnalgNbr  (no id idLJsgnalgNbr in McshTchInf000010)
+  McshTchInf000010:5630  member-sorting!@McshTchInf000010##idLJsgnalgObtMbrsrt  (no id #idLJsgnalgObtMbrsrt in McshTchInf000010)
+  McshTchInf000012:1236  npmjs.org!@McshTchInf000012#idLJsndnpmjs_org/  (no id idLJsndnpmjs_org/ in McshTchInf000012)
+  McshTchInf000012:4313  dgram!@McshTchInf000012#idLJsndmcoDgram  (no id idLJsndmcoDgram in McshTchInf000012)
+  McshTchInf000012:4351  link!@McshTchInf000012#nodejs'api'process_object  (no id nodejs'api'process_object in McshTchInf000012)
+  McshTchInf000012:9169  adduser!@McshTchInf000012#idLJsndnpmcmdAdduser  (no id idLJsndnpmcmdAdduser in McshTchInf000012)
+  McshTchInf000013:1659  Desktop-Javascript-language!@McshTchInf000010#idLjddsn  (no id idLjddsn in McshTchInf000010)
+  McshTchInf000015:479  blockchain-human!@McshTchInf000016#idDbdhmn  (no id idDbdhmn in McshTchInf000016)
+  McshTchInf000015:719  Blockchain-protocol!@McshTchInf000016#idDbdprl  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000015:792  blockchain--chain-node!@McshTchInf000016#idDbdnod  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000015:1545  public-key--cryptography!@McshTchInf000015#idDbccrptPkc  (no id idDbccrptPkc in McshTchInf000015)
+  McshTchInf000015:1716  blockchain-network--chain!@McshTchInf000016#idDbddat  (no id idDbddat in McshTchInf000016)
+  McshTchInf000015:2485  blockchain-Agntasset!@McshTchInf000016#idDbdevu  (no id idDbdevu in McshTchInf000016)
+  McshTchInf000015:5530  blockchain--netAlgo-govc!@McshTchInf000016#idDbdgov  (no id idDbdgov in McshTchInf000016)
+  McshTchInf000015:5679  blockchain-program!@McshTchInf000016#idDbdpgm  (no id idDbdpgm in McshTchInf000016)
+  McshTchInf000015:6593  Lisk-DeApp!@McshTchInf000015#idLskbap  (no id idLskbap in McshTchInf000015)
+  McshTchInf000015:6806  blockchain-wallet!@McshTchInf000016#idDbdwlt  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000015:6858  Blockchain-statistics!@McshTchInf000016#idDbdstat  (no id idDbdstat in McshTchInf000016)
+  McshTchInf000015:7019  Blockchain-ICO!@McshTchInf000016#idDbcico  (no id idDbcico in McshTchInf000016)
+  McshTchInf000015:7113  blockchain-ogn!@McshTchInf000016#idDbdogn  (no id idDbdogn in McshTchInf000016)
+  McshTchInf000015:7640  ShapShift-exchange!@McshTchInf000015#idDbcbrdgShpsht  (no id idDbcbrdgShpsht in McshTchInf000015)
+  McshTchInf000015:9157  Blockchain-evaluation!@McshTchInf000016#idDbdeln  (no id idDbdeln in McshTchInf000016)
+  McshTchInf000015:9342  blockchain-net--problem!@McshTchInf000016#idDbdpbm  (no id idDbdpbm in McshTchInf000016)
+  McshTchInf000015:9849  blockchain-law!@McshTchInf000016#idAlgntlaw  (no id idAlgntlaw in McshTchInf000016)
+  McshTchInf000015:10331  blockchain--chain-doing!@McshTchInf000016#idDbddng  (no id idDbddng in McshTchInf000016)
+  McshTchInf000015:12225  organization-governing--Dchain-service!@McshTchInf000019#idDogngovg  (no id idDogngovg in McshTchInf000019)
+  McshTchInf000015:12433  Blockchain--voting!@McshTchInf000016#idDbcsvcVot  (no id idDbcsvcVot in McshTchInf000016)
+  McshTchInf000015:12679  Blockchain-ID-service!@McshTchInf000016#idBtcsvcIdn  (no id idBtcsvcIdn in McshTchInf000016)
+  McshTchInf000015:13479  public--chain-net!@McshTchInf000015#idDcnetPblc  (no id idDcnetPblc in McshTchInf000015)
+  McshTchInf000015:13629  Blockchain-publicNo-network!@McshTchInf000016#idDbcnetPbcN  (no id idDbcnetPbcN in McshTchInf000016)
+  McshTchInf000015:13864  blockchain--đ-currency-network!@McshTchInf000016#idDbcnetMoe  (no id idDbcnetMoe in McshTchInf000016)
+  McshTchInf000016:166  chain-human!@McshTchInf000015#idAlgnthmnFT  (no id idAlgnthmnFT in McshTchInf000015)
+  McshTchInf000016:269  chain-organization!@McshTchInf000015#idAlgntognFT  (no id idAlgntognFT in McshTchInf000015)
+  McshTchInf000016:276  Dao!@McshTchInf000015#idAlgntdaoBchn  (no id idAlgntdaoBchn in McshTchInf000015)
+  McshTchInf000016:371  chain-protocol!@McshTchInf000015#idAlgntprlFT  (no id idAlgntprlFT in McshTchInf000015)
+  McshTchInf000016:428  chain-node!@McshTchInf000015#idAlgntnodFT  (no id idAlgntnodFT in McshTchInf000015)
+  McshTchInf000016:438  miner-node!@McshTchInf000016#idDbcnodeMnr  (no id idDbcnodeMnr in McshTchInf000016)
+  McshTchInf000016:1155  chain-appending-algo!@McshTchInf000015#idAlgntcsaFNT  (no id idAlgntcsaFNT in McshTchInf000015)
+  McshTchInf000016:1689  Dchain!@McshTchInf000015#idAlgntchnT  (no id idAlgntchnT in McshTchInf000015)
+  McshTchInf000016:2340  chain-asset!@McshTchInf000015#idAlgntevuFNT  (no id idAlgntevuFNT in McshTchInf000015)
+  McshTchInf000016:2355  Medium-of-exchange--bcnevu!@McshTchInf000016#idDbcevuMoe  (no id idDbcevuMoe in McshTchInf000016)
+  McshTchInf000016:2356  Medium-of-exchangeNo--bcnevu!@McshTchInf000016#idDbcevuMoeN  (no id idDbcevuMoeN in McshTchInf000016)
+  McshTchInf000016:2363  Augur-REP!@McshTchInf000016#idRepevu  (no id idRepevu in McshTchInf000016)
+  McshTchInf000016:2372  Dogecoin-DOGE!@McshTchInf000016##idDogeevuC  (no id #idDogeevuC in McshTchInf000016)
+  McshTchInf000016:2375  Faircoin-FAIR!@McshTchInf000016#idFairnetevuC  (no id idFairnetevuC in McshTchInf000016)
+  McshTchInf000016:3443  Chronobank-LHT!@McshTchInf000016#idChblht  (no id idChblht in McshTchInf000016)
+  McshTchInf000016:4083  chain-program!@McshTchInf000015#idAlgntpgmFT  (no id idAlgntpgmFT in McshTchInf000015)
+  McshTchInf000016:4875  chain-evaluation!@McshTchInf000015#idAlgntevalFT  (no id idAlgntevalFT in McshTchInf000015)
+  McshTchInf000016:4930  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon  (no id idAlgntelnScon in McshTchInf000015)
+  McshTchInf000016:4940  Nem-XEM-network-problem!@McshTchInf000016#idXempbm  (no id idXempbm in McshTchInf000016)
+  McshTchInf000016:5187  chain-doing!@McshTchInf000015#idAlgntdngFT  (no id idAlgntdngFT in McshTchInf000015)
+  McshTchInf000016:5356  Blockchain-as-a-Service!@McshTchInf000016#idBaas  (no id idBaas in McshTchInf000016)
+  McshTchInf000016:5539  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet  (no id idEthnet in McshTchInf000018)
+  McshTchInf000016:5540  Bitcoin-BTC-network-{2009}!@McshTchInf000016#idBtcnet  (no id idBtcnet in McshTchInf000016)
+  McshTchInf000016:5616  Omni_layer!@McshTchInf000016#idDbcomnl  (no id idDbcomnl in McshTchInf000016)
+  McshTchInf000016:5800  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet  (no id idEthnet in McshTchInf000018)
+  McshTchInf000016:10444  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn  (no id idDbcEvtkn in McshTchInf000016)
+  McshTchInf000016:11915  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn  (no id idDbcEvtkn in McshTchInf000016)
+  McshTchInf000017:1482  Blockchain!@McshTchInf000016#idDbddat  (no id idDbddat in McshTchInf000016)
+  McshTchInf000017:4965  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf  (no id idDbccrptchf in McshTchInf000016)
+  McshTchInf000017:6901  blockchain-wallet!@McshTchInf000016#idDbdwlt  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000017:9202  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcnetMoe  (no id idDbcnetMoe in McshTchInf000016)
+  McshTchInf000018:316  blockchain-protocol!@McshTchInf000016#idDbdprl  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000018:1398  blockchain-network-node!@McshTchInf000016#idDbdnod  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000018:7320  Viper!@McshTchInf000018#idEthctpvpr  (no id idEthctpvpr in McshTchInf000018)
+  McshTchInf000018:10025  Browser-compiler!@McshTchInf000018#idEthsoltolBrcr  (no id idEthsoltolBrcr in McshTchInf000018)
+  McshTchInf000018:10026  solcjs!@McshTchInf000018#idEthsoltolSolcjs  (no id idEthsoltolSolcjs in McshTchInf000018)
+  McshTchInf000018:10027  Dapple!@McshTchInf000018#idEthsoltolDpl  (no id idEthsoltolDpl in McshTchInf000018)
+  McshTchInf000018:10028  Populus!@McshTchInf000018#idEthsoltolPpl  (no id idEthsoltolPpl in McshTchInf000018)
+  McshTchInf000018:10029  REPL!@McshTchInf000018#idEthsoltolRepl  (no id idEthsoltolRepl in McshTchInf000018)
+  McshTchInf000018:10030  Solgraph!@McshTchInf000018#idEthsoltolSlgh  (no id idEthsoltolSlgh in McshTchInf000018)
+  McshTchInf000019:1224  human-organization-gtr!@McshStn000006#idOgzngtr  (no id idOgzngtr in McshStn000006)
+  McshTchInf000021:2400  blockchain-net'program!@McshTchInf000016#idDbdpgm  (no id idDbdpgm in McshTchInf000016)
+  McshTchInf000021:2930  blockchain-net'human!@McshTchInf000016#idDbdhmn  (no id idDbdhmn in McshTchInf000016)
+  McshTchInf000023:261  Dagchain-network!@McshTchInf000015#idDdcnet  (no id idDdcnet in McshTchInf000015)
+  McshTchInf000024:981  blockchain-program!@McshTchInf000016#idDbdpgm  (no id idDbdpgm in McshTchInf000016)
+  McshTchInf000024:2141  blockchain-wallet!@McshTchInf000016#idDbdwlt  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000027:221  Blockchain-program--blockchain-network!@McshTchInf000016#idDbdpgm  (no id idDbdpgm in McshTchInf000016)
+  McshTchInf000030:244  algo-node-of-Srcd_lago!@McshTchInf000030#idLSrcdalgnode  (no id idLSrcdalgnode in McshTchInf000030)
+  McshTchInf000030:4147  compiled-language!@McshTchInf000006#idLCpgmSrcCmpd  (no id idLCpgmSrcCmpd in McshTchInf000006)
+  McshTchInf000030:4148  statically-typed-language!@McshTchInf000006#idLCpgmSrcStctp  (no id idLCpgmSrcStctp in McshTchInf000006)
+  McshTchInf000031:2764  compiled--programing-language!@McshTchInf000006#idLCpgmSrcCmpd  (no id idLCpgmSrcCmpd in McshTchInf000006)
+  McshTchInf000032:196  git-fetch!@McshTchInf000032#idGitcmdFetch.html  (no id idGitcmdFetch.html in McshTchInf000032)
+  McshTchInf000032:201  git-pull!@McshTchInf000032#idGitcmdPull.html  (no id idGitcmdPull.html in McshTchInf000032)
+  McshTchInf000032:202  git-push!@McshTchInf000032#idGitcmdPush.html  (no id idGitcmdPush.html in McshTchInf000032)
+  McshTchInf000032:203  git-remote!@McshTchInf000032#idGitcmdRemote.html  (no id idGitcmdRemote.html in McshTchInf000032)
+  McshTchInf000032:663  git-clone!@McshTchInf000032#idGitcmdClone.html  (no id idGitcmdClone.html in McshTchInf000032)
+  McshTchInf000032:664  git-remote!@McshTchInf000032#idGitcmdRemote.html  (no id idGitcmdRemote.html in McshTchInf000032)
+  McshTchInf000032:665  git-pull!@McshTchInf000032#idGitcmdPull.html  (no id idGitcmdPull.html in McshTchInf000032)
+  McshTchInf000032:666  git-fetch!@McshTchInf000032#idGitcmdFetch.html  (no id idGitcmdFetch.html in McshTchInf000032)
+  McshTchInf000032:667  git-push!@McshTchInf000032#idGitcmdPush.html  (no id idGitcmdPush.html in McshTchInf000032)
+  McshTchInf000036:2488  machine-translation!@McshTchInf000036#idTchInf019  (no id idTchInf019 in McshTchInf000036)
+  McshTchPrgm000003:810  Tree-view--package!@McshTchPrgm000003#idAtmpkgTrvw  (no id idAtmpkgTrvw in McshTchPrgm000003)
+  McshTchPrgm000003:922  tree-view!@McshTchPrgm000003#idAtmpkgTrvw  (no id idAtmpkgTrvw in McshTchPrgm000003)
