@@ -1,153 +1,21 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:/dirNodews/dirMcsh
+  INHERITANCE SYNC — dry run: c:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  256 files · 29750 sections · 4335 specifics under a-numbered generic · 2897 of their attributes · 951 match a-numbered generic-attribute
+  256 files · 29747 sections · 4383 specifics under a-numbered generic · 3067 of their attributes · 1018 match a-numbered generic-attribute
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
-  INH-NONUM       784  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  INH-WRONGNUM     57  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-ORDER        42  the-attributes of a-specific are not in the-NN order of its generic
-  INH-EMPTY         2  an-inherited attribute that says nothing new (no info, no link): delete?
-  INH-GENDUP        6  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL        75  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-NONUM       835  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM     52  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
+  INH-EMPTY        21  an-inherited attribute that says nothing new (no info, no link): delete?
+  INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
+  INH-LOCAL        77  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
+  INH-GNTRTEXT      1  a-generic "X-Gntr" in generic-tree:: that does NOT resolve to one concept
 
-=== DELETED (129) — empty inherited attribute-sections
-  McshCor000006:342  #idTimeirsc  "info-resource of time"  ← doing'06_resource@McshCor000004#idDngirsc
-  McshCor000013:446  #idBrngirsc  "info-resource of FctgBrainingBio"  ← doing'06_resource@McshCor000004#idDngirsc
-  McshCor000014:162  #idNetdng  "DOING of SystNet"  ← system'06_DOING@McshCor000011#idSysdng
-  McshCor000014:151  #idNetsrtrF  "structure of SystNet"  ← system'05_structure@McshCor000011#idSysstrrF
-  McshCor000014:108  #idNetirsc  "info-resource of SystNet"  ← system'03_resource@McshCor000011#idSysirsc
-  McshHlth000005:5715  #idSysOgnHmn001dng  "DOING of SystMusculoskeletal"  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000005:5703  #idSysOgnHmn001srtrF  "structure of SystMusculoskeletal"  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000007:118  #idHlthOgmirsc  "05_resource of healthOgm"  ← healthBio'05_resource@McshHlth000006#idHlthBioirsc
-  McshHlth000008:722  #idHlthHmnirsc  "06_resource of health"  ← healthBio'05_resource@McshHlth000006#idHlthBioirsc
-  McshHlth000010:180  #idDssOgmirsc  "08_resource of DssOgm"  ← disorderBio'08_resource@McshHlth000006#idDsdrrsc
-  McshHlth000012:39  #idFoodBioirsc  "info-resource of foodBio"  ← material'07_info-resource@McshNtr000002#idMtrlirsc
-  McshHlth000013:10436  #idFoodHmn201recipe  "recipe of foodDessert"  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
-  McshHlth000013:1350  #idFoodHmn050eval  "03_evaluation of foodCooked"  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
-  McshHlth000014:593  #idMedHmnevg  "EVOLUTING of medication"  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshHlth000015:70  #idDrgHmnevg  "evoluting of drug"  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshHlth000015:59  #idDrgHmnirsc  "info-resource of drug"  ← material'07_info-resource@McshNtr000002#idMtrlirsc
-  McshHlth000019:4705  #idSysNrvsatt076irsc  "info-resource of cellNeuron"  ← cell'17_resource@McshHlth000004#idCellHmnatt010
-  McshLag000007:31846  #idLSylbopt  "output of Sylb_lago"  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
-  McshLag000010:111  #idL0014ipt2  "input2-(sensu-mind--view) of Sngu_lagu"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
-  McshLag000011:90  #idLEnglipt2  "input2-(senso-mind--view) of Engl_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
-  McshLag000014:152  #idBookatt008  "08_language of irBook"  ← Infrsc'06_language@McshLag000013#idInfrsclag
-  McshLag000014:139  #idBookatt007  "07_subject of irBook"  ← Infrsc'03_subject@McshLag000013#idInfrscsbjt
-  McshLag000014:113  #idBookatt005  "05_place-of-publication of irBook"  ← Infrsc'05_place-of-publication@McshLag000013#idInfrscplcpn
-  McshLag000014:100  #idBookatt004  "04_time-of-publication of irBook"  ← Infrsc'04_time-of-publication@McshLag000013#idInfrsctmpn
-  McshLag000014:87  #idBookatt002  "02_title of irBook"  ← Infrsc'02_title@McshLag000013#idInfrscttl
-  McshLag000014:74  #idBookatt001  "01_author of irBook"  ← Infrsc'01_author@McshLag000013#idInfrscothr
-  McshLag000019:125  #idPaperatt008  "08_language of irPaper"  ← Infrsc'06_language@McshLag000013#idInfrsclag
-  McshLag000019:112  #idPaperatt007  "07_subject of irPaper"  ← Infrsc'03_subject@McshLag000013#idInfrscsbjt
-  McshLag000019:86  #idPaperatt005  "05_place-of-publication of irPaper"  ← Infrsc'05_place-of-publication@McshLag000013#idInfrscplcpn
-  McshLag000019:73  #idPaperatt004  "04_time-of-publication of irPaper"  ← Infrsc'04_time-of-publication@McshLag000013#idInfrsctmpn
-  McshLag000019:60  #idPaperatt002  "02_title of irPaper"  ← Infrsc'02_title@McshLag000013#idInfrscttl
-  McshLag000019:47  #idPaperatt001  "01_author of irPaper"  ← Infrsc'01_author@McshLag000013#idInfrscothr
-  McshLag000035:108  #idLSpanipt2  "input2-(senso-mind--view) of Span_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
-  McshLag000036:105  #idLArabipt2  "input2-(senso-mind--view) of Arab_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
-  McshLag000043:95  #idLKoraipt2  "input2-(senso-mind--view) of Kora_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
-  McshNtr000005:1364  #idSysMols010att005  "05_chemical-property of mtrlChemical"  ← mtrlSysMols'05_chemical-property@McshNtr000005#idSysMolsatt005
-  McshNtr000005:1351  #idSysMols010att004  "04_physical-property of mtrlChemical"  ← mtrlSysMols'04_physical-property@McshNtr000005#idSysMolsatt004
-  McshNtr000005:1323  #idSysMols010att002  "02_atom of mtrlChemical"  ← mtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
-  McshNtr000005:1309  #idSysMols010att001  "01_molecule of mtrlChemical"  ← mtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
-  McshNtr000006:109  #idChmCpdevg  "evoluting of chmCpd"  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshNtr000006:51  #idChmCpdatt002  "02_atom of chmCpd"  ← mtrlChemical'02_atom@McshNtr000005#idSysMols010att002
-  McshNtr000006:38  #idChmCpdatt001  "01_molecule of chmCpd"  ← mtrlChemical'01_molecule@McshNtr000005#idSysMols010att001
-  McshNtr000007:332  #idChmElrsrtrF  "structure of chmElry"  ← material'08_structure@McshNtr000002#idMtrlsrtrF
-  McshNtr000008:53  #idAbioevgFT  "evoluting of bioNosys"  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshOgm000002:216  #idBioevg  "12_evoluting of bio"  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshOgm000002:149  #idBioatt009  "10_structure of bio"  ← system'05_structure@McshCor000011#idSysstrrF
-  McshOgm000003:1378  #idOgm012att003  "03_health of ogmCellMany"  ← Ogsm'03_health@McshOgm000003#idOgmatt010
-  McshOgm000003:1352  #idOgm012att001  "01_disease of ogmCellMany"  ← Ogsm'01_disease@McshOgm000003#idOgmatt008
-  McshOgm000003:573  #idOgmsrtrF  "structure of Ogsm"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshOgm000005:1279  #idHrmnHmnatt004  "structure of hormoneHumn"  ← material'08_structure@McshNtr000002#idMtrlsrtrF
-  McshOgm000007:2053  #idCellOgm009att001  "01_disease of neuronOgm"  ← cellOgm'01_disease@McshOgm000007#idCellOgmatt013
-  McshOgm000008:351  #idOgmVrsatt004  "shape of ogmVirus"  ← ogmCellNo'07_shape@McshOgm000008#idOgmCllNatt007
-  McshOgm000010:259  #idPlntevg  "evoluting of ogmPlant"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshOgm000010:174  #idPlntsrtrF  "structure of ogmPlant"  ← material'08_structure@McshNtr000002#idMtrlsrtrF
-  McshOgm000010:150  #idPlntatt012  "10_size of ogmPlant"  ← Ogsm'10_size@McshOgm000003#idOgmatt014
-  McshOgm000010:137  #idPlntatt011  "09_shape of ogmPlant"  ← Ogsm'09_shape@McshOgm000003#idOgmatt007
-  McshOgm000010:118  #idPlntatt009  "07_nutrient of ogmPlant"  ← bio'07_nutrient@McshOgm000002#idBioatt007
-  McshOgm000010:105  #idPlntatt013  "06_genome of ogmPlant"  ← Ogsm'06_genome@McshOgm000003#idOgmatt018
-  McshOgm000010:64  #idPlntatt004  "04_material-system of ogmPlant"  ← Ogsm'04_material-node@McshOgm000003#idSysMtrlOgm
-  McshStn000002:608  #idStnHmndng  "DOING of Sctn"  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000002:597  #idStnHmnirsc  "info-resource of Sctn"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000002:585  #idStnHmnatt006  "06_place of Sctn"  ← sctnOgms'07_place@McshStn000002#idStnOgmatt010
-  McshStn000002:399  #idStnOgmevg  "evoluting of sctnOgms"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000002:313  #idStnOgmsrtrF  "structure of sctnOgms"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000002:301  #idStnOgmirsc  "info-resource of sctnOgms"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000004:429  #idGvcOgmevg  "evoluting of AdmnSctn"  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshStn000004:204  #idGvcOgmsrtrF  "structure of AdmnSctn"  ← system'05_structure@McshCor000011#idSysstrrF
-  McshStn000005:264  #idGrpOgmevg  "evoluting of groupOgm"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000005:253  #idGrpOgmdng  "DOING of groupOgm"  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000005:242  #idGrpOgmirsc  "info-resource of groupOgm"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000005:171  #idGrpOgmatt003  "place of groupOgm"  ← sctnOgms'07_place@McshStn000002#idStnOgmatt010
-  McshStn000006:201  #idOznOgmevg  "evoluting of oznOgm"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000006:147  #idOznOgmirsc  "info-resource of oznOgm"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000007:259  #idSocOgmevg  "14_evoluting of societyOgm"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000007:246  #idSocOgmdng  "13_DOING of societyOgm"  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000007:233  #idSocOgmsrtrF  "12_structure of societyOgm"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000007:220  #idSocOgmirsc  "11_resource of societyOgm"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000008:977  #idOgznatt017  "08_size of Ogzn"  ← bio'08_size@McshOgm000002#idBioatt008
-  McshStn000014:819  #idOznCsnsrtrF  "structure of ogznCsmg"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000015:4923  #idOznPdn002dng  "DOING of ogznCoop"  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000015:1022  #idOznPdnsrtrF  "structure of OgznPrdg"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000016:133  #idOgznIntlevg  "evoluting of ogznIntl"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000016:122  #idOgznIntldng  "DOING of ogznIntl"  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000016:111  #idOgznIntlsrtrF  "structure of ogznIntl"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000016:100  #idOgznIntlirsc  "info-resource of ogznIntl"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000018:3793  #idOznUnevg  "evoluting of ogznUn"  ← bio'12_evoluting@McshOgm000002#idBioevg
-  McshStn000018:2652  #idOznUnsrtrF  "structure of ogznUn"  ← bio'10_structure@McshOgm000002#idBioatt009
-  McshStn000035:3545  #idSocItladng  "DOING of SocItla"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000035:3534  #idSocItlairsc  "info-resource of SocItla"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000036:145  #idSocDeutdng  "DOING of SocDeut"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000036:134  #idSocDeutirsc  "info-resource of SocDeut"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000037:2078  #idSocFracdng  "DOING of SocFrac"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000037:2067  #idSocFracirsc  "info-resource of SocFrac"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000038:1757  #idSocBgradng  "DOING of SocBgra"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000038:1746  #idSocBgrairsc  "info-resource of SocBgra"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000039:2194  #idSocAlbadng  "DOING of SocAlba"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000039:2183  #idSocAlbairsc  "info-resource of SocAlba"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000040:1545  #idSocNmkddng  "DOING of SocNmkd"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000040:1534  #idSocNmkdirsc  "info-resource of SocNmkd"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000041:1467  #idSocSvnadng  "DOING of SocSvna"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000041:1456  #idSocSvnairsc  "info-resource of SocSvna"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000043:1559  #idSocRusadng  "DOING of SocRusa"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000043:1548  #idSocRusairsc  "info-resource of SocRusa"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000044:1804  #idSocRouadng  "DOING of SocRoua"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000044:1793  #idSocRouairsc  "info-resource of SocRoua"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000045:247  #idSocSsssdng  "DOING of SocBiha"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000045:236  #idSocSsssirsc  "info-resource of SocBiha"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000046:231  #idSocMneadng  "DOING of SocMnea"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000046:220  #idSocMneairsc  "info-resource of SocMnea"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000047:247  #idSocHrvadng  "DOING of SocHrva"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000047:236  #idSocHrvairsc  "info-resource of SocHrva"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000048:5222  #idSocJpnadng  "DOING of SocJpna"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000048:5211  #idSocJpnairsc  "info-resource of SocJpna"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000049:449  #idSocKorsdng  "DOING of SocKors"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000049:438  #idSocKorsirsc  "info-resource of SocKors"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000050:3785  #idSocKhmadng  "DOING of SocKhma"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000050:3774  #idSocKhmairsc  "info-resource of SocKhma"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshStn000051:370  #idSocSgprdng  "DOING of SocSgpr"  ← societyOgm'13_DOING@McshStn000007#idSocOgmdng
-  McshStn000051:359  #idSocSgprirsc  "info-resource of SocSgpr"  ← societyOgm'11_resource@McshStn000007#idSocOgmirsc
-  McshTchInf000003:1883  #idCmr001stwr  "software of cmprBnr"  ← techCmpr'02_software@McshTchInf000003#idCmratt002
-  McshTchInf000003:1872  #idCmr001hdwr  "hardware of cmprBnr"  ← techCmpr'01_hardware@McshTchInf000003#idCmratt001
-  McshTchInf000003:1626  #idCmr003irsc  "info-resource of cmprAbstract"  ← techCmpr'04_resource@McshTchInf000003#idCmrirsc
-  McshTchInf000006:2889  #idLSrcdtool  "tool of Srcd_lago"  ← Pgmg_lago'05_tool@McshTchInf000006#idLCpgmtool
-  McshTchInf000006:2878  #idLSrcdeval  "evalauation of Srcd_lago"  ← Pgmg_lago'04_evaluation@McshTchInf000006#idLCpgmeval
-  McshTchInf000006:1118  #idLCpgmogn  "07_organization of Pgmg_lago"  ← Cmpr_lago'07_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000007:1505  #idLCnknt037inpt  "input of lagFram"  ← Cnkn_lago'02_input@McshTchInf000007#idLCnkntipt
-  McshTchInf000016:5015  #idDbclaw  "12_law of AgntBkcn"  ← netAlgo'13_law@McshTchInf000015#idAlgntlaw
-  McshTchInf000016:4048  #idDbcgov  "06_governance-system of AgntBkcn"  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
-  McshTchInf000022:1215  #idFairnetpgm  "program of Faircoin_net"  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
-
-=== EMPTY-KEPT (1) — empty, but NOT deleted
-  McshTchInf000019:104  "01_node of OgznDao"  linked: #idDeOznskhr
-
-=== INH-NONUM (784) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+=== INH-NONUM (835) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   McshCor000002:4251  "evaluation of Mcs"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
   McshCor000002:2628  "human of Mcswv"  → 01_  ← worldview'01_human@McshLag000003#idWldvatt001
   McshCor000002:1045  "attribute of Mcs"  → 01_  ← entity'01_attribute@McshCor000003#idEntatt
@@ -157,21 +25,21 @@ SUMMARY
   McshCor000004:6981  "argument of replacing"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
   McshCor000004:5260  "argument of FctgMoving"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
   McshCor000004:4569  "argument of dressing"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
-  McshCor000004:3952  "argument of math-division"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
-  McshCor000004:3946  "relation of math-division"  → 03_  ← doing'03_relation@McshCor000004#idDngatt008
+  McshCor000004:3951  "relation of math-division"  → 03_  ← doing'03_relation@McshCor000004#idDngatt008
+  McshCor000004:3946  "argument of math-division"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
   McshCor000004:3861  "argument of subtracting"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
   McshCor000004:3737  "argument of DongUniting"  → 01_  ← doing'01_argument@McshCor000004#idDngatt001
-  McshCor000005:3464  "argument of RltnPossession"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:3363  "argument of RltnProbability"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:3275  "argument of RltnBelief"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:3221  "argument of RltnInfoPossessor"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:2220  "argument of RltnOpposition"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:1598  "argument of mapping-rel"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:1161  "argument of RltnDivision"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:1020  "argument of RltnSubtraction"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:725  "argument of RltnAddition"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
-  McshCor000005:283  "sequence of relation"  → 03_  ← bodyNo'03_direction@McshCor000003#idEntBodyNdrn
-  McshCor000005:266  "valence of relation"  → 02_  ← bodyNo'02_valence@McshCor000003#idEntBodyNvlc
+  McshCor000005:3470  "argument of RltnPossession"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:3369  "argument of RltnProbability"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:3281  "argument of RltnBelief"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:3227  "argument of RltnInfoPossessor"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:2226  "argument of RltnOpposition"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:1604  "argument of mapping-rel"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:1167  "argument of RltnDivision"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:1026  "argument of RltnSubtraction"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:731  "argument of RltnAddition"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:289  "sequence of relation"  → 03_  ← bodyNo'03_sequence@McshCor000003#idEntBodyNdrn
+  McshCor000005:272  "valence of relation"  → 02_  ← bodyNo'02_valence@McshCor000003#idEntBodyNvlc
   McshCor000005:110  "argument of relation"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
   McshCor000006:4287  "info-resource of hour.clock"  → 06_  ← doing'06_resource@McshCor000004#idDngirsc
   McshCor000006:342  "evoluting of time"  → 07_  ← doing'07_evoluting@McshCor000004#idDngevg
@@ -179,27 +47,31 @@ SUMMARY
   McshCor000008:1000  "DOING of set"  → 07_  ← whole'07_DOING@McshCor000008#idWhldng
   McshCor000009:555  "argument of ActgMeasuring"  → 01_  ← FctgBraining'01_argument@McshCor000018#idBrngHmnFctarg
   McshCor000009:57  "attribute of generic"  → 01_  ← entity'01_attribute@McshCor000003#idEntatt
-  McshCor000011:3044  "DOING of SystMngOgm"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
-  McshCor000011:2790  "science of SystManaging"  → 04_  ← system'04_science@McshCor000011#idSyssciF
-  McshCor000011:2778  "info-resource of SystManaging"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshCor000011:2622  "evoluting of SystDynamic"  → 07_  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshCor000011:2607  "DOING of SystDynamic"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
-  McshCor000011:2581  "structure of SystDynamic"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
-  McshCor000011:2534  "info-resource of SystDynamic"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshCor000011:2471  "info-resource of SystComplex"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshCor000011:2427  "node of SystBody"  → 01_  ← system'01_node@McshCor000011#idSysnodeF
-  McshCor000011:2398  "edge-(node-relation) of SystGraph"  → 02_  ← system'02_node-relation@McshCor000011#idSysndrn
-  McshCor000011:2384  "vertex-(node) of SystGraph"  → 01_  ← system'01_node@McshCor000011#idSysnodeF
-  McshCor000011:1523  "structure of sequence"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
+  McshCor000011:3043  "DOING of SystMngOgm"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
+  McshCor000011:2789  "science of SystManaging"  → 04_  ← system'04_science@McshCor000011#idSyssciF
+  McshCor000011:2777  "info-resource of SystManaging"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
+  McshCor000011:2621  "evoluting of SystDynamic"  → 07_  ← system'07_evoluting@McshCor000011#idSysevg
+  McshCor000011:2606  "DOING of SystDynamic"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
+  McshCor000011:2580  "structure of SystDynamic"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
+  McshCor000011:2533  "info-resource of SystDynamic"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
+  McshCor000011:2470  "info-resource of SystComplex"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
+  McshCor000011:2426  "node of SystBody"  → 01_  ← system'01_node@McshCor000011#idSysnodeF
+  McshCor000011:2397  "edge-(node-relation) of SystGraph"  → 02_  ← system'02_node-relation@McshCor000011#idSysndrn
+  McshCor000011:2383  "vertex-(node) of SystGraph"  → 01_  ← system'01_node@McshCor000011#idSysnodeF
+  McshCor000011:1522  "structure of sequence"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
   McshCor000012:1101  "evaluation of modelCmpr"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
   McshCor000012:1036  "mapping-method of modelCmpr"  → 03_  ← model'03_mapping-method@McshCor000012#idMdlatt003
   McshCor000012:968  "archetype of modelCmpr"  → 01_  ← model'01_archetype@McshCor000012#idMdlatt001
   McshCor000012:715  "evaluation of modelSci"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshCor000012:376  "evoluting of model"  → 07_ ✗ own numbering of the-specific: by hand  ← system'07_evoluting@McshCor000011#idSysevg
+  McshCor000012:248  "DOING of model"  → 06_ ✗ own numbering of the-specific: by hand  ← system'06_DOING@McshCor000011#idSysdng
+  McshCor000012:237  "structure of model"  → 05_ ✗ own numbering of the-specific: by hand  ← system'05_structure@McshCor000011#idSysstrrF
+  McshCor000012:226  "info-resource of model"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_resource@McshCor000011#idSysirsc
   McshCor000013:1958  "brain-entity of FctgWantingBio"  → 02_  ← FctgEmotingBio'02_brain-entity@McshCor000013#idBrngEmtgbnet
   McshCor000013:1943  "argument of FctgWantingBio"  → 01_  ← FctgEmotingBio'01_argument@McshCor000013#idBrngEmtgarg
   McshCor000013:1515  "argument of FctgLovingBio"  → 01_  ← FctgEmotingBio'01_argument@McshCor000013#idBrngEmtgarg
-  McshCor000013:1258  "evoluting of FctgEmotingBio"  → 07_  ← doing'07_evoluting@McshCor000004#idDngevg
-  McshCor000013:1231  "info-resource of FctgEmotingBio"  → 06_  ← doing'06_resource@McshCor000004#idDngirsc
+  McshCor000013:1258  "evoluting of FctgEmotingBio"  → 07_ ✗ own numbering of the-specific: by hand  ← doing'07_evoluting@McshCor000004#idDngevg
+  McshCor000013:1231  "info-resource of FctgEmotingBio"  → 06_ ✗ own numbering of the-specific: by hand  ← doing'06_resource@McshCor000004#idDngirsc
   McshCor000013:1066  "argument of smellingBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
   McshCor000013:1007  "argument of FctgSeeingBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
   McshCor000013:932  "argument of FctgHearingBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
@@ -207,8 +79,8 @@ SUMMARY
   McshCor000013:658  "argument of communicatingBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
   McshCor000013:629  "argument of retrievingInfoMindBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
   McshCor000013:546  "argument of creatingInfoMindBio"  → 01_  ← FctgBrainingBio'01_argument@McshCor000013#idBrngarg
-  McshCor000013:446  "evoluting of FctgBrainingBio"  → 07_  ← doing'07_evoluting@McshCor000004#idDngevg
-  McshCor000014:140  "evoluting of SystNet"  → 07_  ← system'07_EVOLUTING@McshCor000011#idSysevg
+  McshCor000013:446  "evoluting of FctgBrainingBio"  → 07_ ✗ own numbering of the-specific: by hand  ← doing'07_evoluting@McshCor000004#idDngevg
+  McshCor000014:140  "evoluting of SystNet"  → 07_ ✗ own numbering of the-specific: by hand  ← system'07_evoluting@McshCor000011#idSysevg
   McshCor000018:4696  "argument of FctgFeeling"  → 01_  ← FctgBraining'01_argument@McshCor000018#idBrngHmnFctarg
   McshCor000018:4000  "human of FctgEmotingWanting"  → 02_  ← FctgEmoting'02_human@McshCor000018#idBrngHmnFct004hmn
   McshCor000018:3985  "argument of FctgEmotingWanting"  → 01_  ← FctgEmoting'01_argument@McshCor000018#idBrngHmnFct004arg
@@ -226,74 +98,74 @@ SUMMARY
   McshCor000018:1267  "argument of FctgDeciding"  → 01_  ← FctgBraining'01_argument@McshCor000018#idBrngHmnFctarg
   McshCor000018:1080  "info-resource of FctgThinking"  → 06_  ← doing'06_resource@McshCor000004#idDngirsc
   McshEdu000002:1497  "evaluation of sciOpen"  → 03_  ← science'03_rlnReferent@McshEdu000002#idSciatt020
-  McshHlth000002:12013  "disease of organPenis"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:11849  "disease of glandProstate"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:11701  "structure of SystReproductive"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000002:11688  "DOING of SystReproductive"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000002:11626  "organ of SystReproductive"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:11621  "disease of SystReproductive"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:11571  "DOING of SystUrinary"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000002:11547  "structure of SystUrinary"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000002:10783  "disease of organKidney"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:10738  "organ of SystUrinary"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:10733  "disease of SystUrinary"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:10607  "structure of SystDigestive"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000002:10505  "disease of organGallbladder"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:10402  "disease of organIntestineLarge"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:10320  "disease of organDuodenum"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:10188  "disease of organStomach"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:10124  "disease of organEsophagus"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:9411  "organ of SystDigestive"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:9406  "disease of SystDigestive"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:9351  "DOING of SystRespiratory"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000002:9327  "structure of SystRespiratory"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000002:9007  "disease of HumnbodyLung"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:8830  "disease of organLarynx"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:8696  "therapy of DssThroatSore"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000002:8530  "organ of SystRespiratory"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:8525  "disease of SystRespiratory"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:8444  "organ of SystEndocrine"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:8439  "disease of SystEndocrine"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:7953  "disease of SystIntegumentary"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:7891  "DOING of SystCirculatory"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000002:7870  "structure of SystCirculatory"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000002:7080  "disease of organVessel"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:6795  "size of organHeart"  → 07_  ← organ'07_size@McshHlth000002#idOgnHmnatt009
-  McshHlth000002:6781  "shape of organHeart"  → 06_  ← organ'06_shape@McshHlth000002#idOgnHmnatt008
-  McshHlth000002:6705  "cell of organHeart"  → 03_ ✗ NN taken by "artery of organHeart"  ← organ'03_cell@McshHlth000002#idOgnHmnatt012
-  McshHlth000002:6691  "nerve of organHeart"  → 05_  ← organ'05_nerve@McshHlth000002#idOgnHmnatt007
-  McshHlth000002:6672  "vein of organHeart"  → 04_  ← organ'04_vein@McshHlth000002#idOgnHmnatt006
-  McshHlth000002:6650  "artery of organHeart"  → 03_  ← organ'03_artery@McshHlth000002#idOgnHmnatt005
-  McshHlth000002:6363  "disease of organHeart"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:6265  "organ of SystCirculatory"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-  McshHlth000002:6260  "disease of SystCirculatory"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000002:4803  "mass of sun"  → 01_  ← material'01_mass@McshNtr000002#idMtrlatt006
-  McshHlth000002:3251  "disease of HumnbodyTesticle"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:2339  "disease of glandLiver"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000002:1835  "shape of organGland"  → 06_  ← organ'06_shape@McshHlth000002#idOgnHmnatt008
-  McshHlth000002:1796  "disease of organGland"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:12015  "disease of organPenis"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:11851  "disease of glandProstate"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:11702  "DOING of SystReproductive"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+  McshHlth000002:11690  "structure of SystReproductive"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
+  McshHlth000002:11628  "organ of SystReproductive"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:11623  "disease of SystReproductive"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:11573  "DOING of SystUrinary"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+  McshHlth000002:11549  "structure of SystUrinary"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
+  McshHlth000002:10785  "disease of organKidney"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:10740  "organ of SystUrinary"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:10735  "disease of SystUrinary"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:10609  "structure of SystDigestive"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
+  McshHlth000002:10507  "disease of organGallbladder"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:10404  "disease of organIntestineLarge"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:10322  "disease of organDuodenum"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:10190  "disease of organStomach"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:10126  "disease of organEsophagus"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:9413  "organ of SystDigestive"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:9408  "disease of SystDigestive"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:9353  "DOING of SystRespiratory"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+  McshHlth000002:9329  "structure of SystRespiratory"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
+  McshHlth000002:9009  "disease of HumnbodyLung"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:8832  "disease of organLarynx"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:8698  "therapy of DssThroatSore"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000002:8532  "organ of SystRespiratory"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:8527  "disease of SystRespiratory"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:8446  "organ of SystEndocrine"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:8441  "disease of SystEndocrine"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:7955  "disease of SystIntegumentary"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:7893  "DOING of SystCirculatory"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+  McshHlth000002:7872  "structure of SystCirculatory"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
+  McshHlth000002:7082  "disease of organVessel"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:6797  "size of organHeart"  → 08_  ← organ'08_size@McshHlth000002#idOgnHmnatt009
+  McshHlth000002:6783  "shape of organHeart"  → 07_  ← organ'07_shape@McshHlth000002#idOgnHmnatt008
+  McshHlth000002:6710  "nerve of organHeart"  → 06_  ← organ'06_nerve@McshHlth000002#idOgnHmnatt007
+  McshHlth000002:6691  "vein of organHeart"  → 05_  ← organ'05_vein@McshHlth000002#idOgnHmnatt006
+  McshHlth000002:6669  "artery of organHeart"  → 04_  ← organ'04_artery@McshHlth000002#idOgnHmnatt005
+  McshHlth000002:6652  "cell of organHeart"  → 03_  ← organ'03_cell@McshHlth000002#idOgnHmnatt012
+  McshHlth000002:6365  "disease of organHeart"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:6266  "organ of SystCirculatory"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+  McshHlth000002:6261  "disease of SystCirculatory"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
+  McshHlth000002:4804  "mass of sun"  → 01_  ← material'01_mass@McshNtr000002#idMtrlatt006
+  McshHlth000002:3252  "disease of HumnbodyTesticle"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:2340  "disease of glandLiver"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000002:1836  "shape of organGland"  → 07_  ← organ'07_shape@McshHlth000002#idOgnHmnatt008
+  McshHlth000002:1797  "disease of organGland"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
   McshHlth000003:3087  "disease of vesselBrain"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
-  McshHlth000004:2573  "DOING of cellOsteoblast"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000004:2379  "evoluting of cellLeucocyte"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:2364  "DOING of cellLeucocyte"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000004:2351  "structure of cellLeucocyte"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:2306  "evoluting of taste-receptor-cell"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:2245  "structure of spermatozoon"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:2231  "evoluting of spermatozoon"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:2169  "structure of red-blood-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:2140  "DOING of red-blood-cell"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000004:2083  "evoluting of red-blood-cell"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:1983  "structure of platelet"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:1968  "DOING of platelet"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000004:1954  "evoluting of platelet"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:1907  "structure of photoreceptor-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:1835  "evoluting of cellOvum"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
-  McshHlth000004:1822  "size of cellOvum"  → 14_  ← cell'14_size@McshHlth000004#idCellHmnatt040
-  McshHlth000004:1783  "structure of cardiac-muscle-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:1632  "DOING of cellMuscle"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000004:1619  "structure of cellMuscle"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
-  McshHlth000004:1556  "DOING of lymph-cell"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000005:5703  "evoluting of SystMusculoskeletal"  → 04_  ← SystOrgans'04_evoluting@McshHlth000002#idSysOgnHmnvgF
+  McshHlth000004:2562  "DOING of cellOsteoblast"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000004:2368  "evoluting of cellLeucocyte"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:2353  "DOING of cellLeucocyte"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000004:2340  "structure of cellLeucocyte"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:2295  "evoluting of taste-receptor-cell"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:2238  "evoluting of spermatozoon"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:2220  "structure of spermatozoon"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:2120  "evoluting of red-blood-cell"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:2091  "DOING of red-blood-cell"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000004:2072  "structure of red-blood-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:1972  "evoluting of platelet"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:1957  "DOING of platelet"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000004:1943  "structure of platelet"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:1896  "structure of photoreceptor-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:1824  "evoluting of cellOvum"  → 20_  ← cell'20_evoluting@McshHlth000004#idCellHmnatt006
+  McshHlth000004:1811  "size of cellOvum"  → 14_  ← cell'14_size@McshHlth000004#idCellHmnatt040
+  McshHlth000004:1772  "structure of cardiac-muscle-cell"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:1621  "DOING of cellMuscle"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000004:1608  "structure of cellMuscle"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000004:1545  "DOING of lymph-cell"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000005:5703  "evoluting of SystMusculoskeletal"  → 05_  ← SystOrgans'05_evoluting@McshHlth000002#idSysOgnHmnvgF
   McshHlth000005:3917  "disease of vertebral-column"  → 01_  ← organBone'01_disease@McshHlth000005#idBoneHmnatt001
   McshHlth000005:2983  "DOING of SystSkeletal"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
   McshHlth000005:2959  "structure of SystSkeletal"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
@@ -303,7 +175,7 @@ SUMMARY
   McshHlth000005:103  "organ of SystMuscular"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
   McshHlth000005:48  "organ of SystMusculoskeletal"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
   McshHlth000005:43  "disease of SystMusculoskeletal"  → 01_  ← SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-  McshHlth000008:1401  "evoluting of health"  → 07_ ✗ NN taken by "07_environment of health"  ← healthBio'07_evoluting@McshHlth000006#idHlthBioevg
+  McshHlth000008:1401  "evoluting of health"  → 07_ ✗ own numbering of the-specific: by hand  ← healthBio'07_evoluting@McshHlth000006#idHlthBioevg
   McshHlth000010:833  "diagnosis of DssOgmViral"  → 03_  ← DssOgm'03_diagnosis@McshHlth000010#idDssOgmdgnsF
   McshHlth000010:602  "therapy of DssPlntFungus"  → 04_  ← DssPlnt'04_therapy@McshHlth000010#idDssPlntatt004
   McshHlth000011:17506  "protection of DssFctPaining"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
@@ -318,39 +190,39 @@ SUMMARY
   McshHlth000011:15653  "cause of DssTendonitis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:15618  "protection of DssFatigue"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:15589  "cause of DssSinusitis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:15135  "therapy of DssCholesterol"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:15121  "symptom of DssCholesterol"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:14989  "protection of DssCholesterol"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:15450  "protection of DssCholesterol"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:15015  "therapy of DssCholesterol"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:14989  "symptom of DssCholesterol"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:14845  "therapy of DssFever"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:14743  "therapy of DssStomatitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:14565  "symptom of DssOtitis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:14551  "therapy of DssOtitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:14562  "therapy of DssOtitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:14551  "symptom of DssOtitis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:14504  "protection of DssCholera"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:14312  "protection of DssInfo_tech"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:14161  "protection of DssStroke"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:14131  "symptom of DssStroke"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:14084  "therapy of DssArthritis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:14045  "therapy of DssGastroesophageal_reflux"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:13913  "symptom of DssAsthma"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:13900  "stats of DssAsthma"  → 07_  ← disease'07_stats@McshHlth000011#idDssHmnatt008
-  McshHlth000011:13882  "therapy of DssAsthma"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:13869  "diagnosis of DssAsthma"  → 03_  ← disease'03_diagnosis-doing@McshHlth000011#idDssHmn003
-  McshHlth000011:13805  "protection of DssBronchiolitis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:13756  "therapy of DssBronchiolitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:13743  "diet of DssBronchiolitis"  → 06_  ← disease'06_food@McshHlth000011#idDssHmnatt007
+  McshHlth000011:13917  "stats of DssAsthma"  → 07_  ← disease'07_stats@McshHlth000011#idDssHmnatt008
+  McshHlth000011:13899  "therapy of DssAsthma"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:13886  "diagnosis of DssAsthma"  → 03_  ← disease'03_diagnosis-doing@McshHlth000011#idDssHmn003
+  McshHlth000011:13869  "symptom of DssAsthma"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
+  McshHlth000011:13806  "diet of DssBronchiolitis"  → 06_  ← disease'06_food@McshHlth000011#idDssHmnatt007
+  McshHlth000011:13792  "protection of DssBronchiolitis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:13743  "therapy of DssBronchiolitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:13711  "cause of DssBronchiolitis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:13684  "symptom of DssBronchiolitis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:13643  "protection of DssMalaria"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:13630  "cause of DssMalaria"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:13586  "symptom of DssSigella"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:13564  "protection of DssSigella"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:13551  "cause of DssSigella"  → 02_  ← DssInfectious'02_cause@McshHlth000011#idDssHmn001cause
+  McshHlth000011:13580  "protection of DssSigella"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:13567  "cause of DssSigella"  → 02_  ← DssInfectious'02_cause@McshHlth000011#idDssHmn001cause
+  McshHlth000011:13551  "symptom of DssSigella"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:13468  "therapy of DssMigraine"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:13335  "therapy of FctgPainingHead"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:13261  "therapy of DssEsophagitis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:13227  "symptom of DssAcute_mountain_sickness"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:13214  "protection of DssAcute_mountain_sickness"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:13201  "therapy of DssAcute_mountain_sickness"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:13229  "protection of DssAcute_mountain_sickness"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:13216  "therapy of DssAcute_mountain_sickness"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:13201  "symptom of DssAcute_mountain_sickness"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:13059  "symptom of DssWhooping_cough"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:13022  "symptom of DssParkinson"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:12974  "symptom of DssCryptorchidism"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
@@ -368,8 +240,8 @@ SUMMARY
   McshHlth000011:12171  "protection of DssHerpes"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:12147  "therapy of DssHerpes"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:12117  "cause of DssEczema"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:12082  "therapy of DssPepticulcer"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:12069  "protection of DssPepticulcer"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:12080  "protection of DssPepticulcer"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:12069  "therapy of DssPepticulcer"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:12056  "cause of DssPepticulcer"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:12011  "protection of DssBaby"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:11982  "therapy of DssFaint"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
@@ -411,8 +283,8 @@ SUMMARY
   McshHlth000011:10559  "symptom of DssLeprosy"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:10514  "protection of DssMalta_fever"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:10496  "cause of DssMalta_fever"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:10459  "therapy of DssDiphtheria"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:10446  "protection of DssDiphtheria"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:10458  "protection of DssDiphtheria"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:10446  "therapy of DssDiphtheria"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:10431  "cause of DssDiphtheria"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:10418  "symptom of DssDiphtheria"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:10369  "protection of DssTetanus"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
@@ -420,8 +292,8 @@ SUMMARY
   McshHlth000011:10337  "symptom of DssTetanus"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:10288  "protection of DssTyphoid_fever"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:10272  "cause of DssTyphoid_fever"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:10166  "protection of DssMeningitis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:10152  "evoluting of DssMeningitis"  → 10_  ← disorderBio'10_evoluting@McshHlth000006#idDsdrevg
+  McshHlth000011:10183  "evoluting of DssMeningitis"  → 10_  ← disorderBio'10_evoluting@McshHlth000006#idDsdrevg
+  McshHlth000011:10152  "protection of DssMeningitis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:10124  "cause of DssMeningitis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:10091  "symptom of DssMeningitis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:10059  "therapy of DssScarletfever"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
@@ -507,39 +379,39 @@ SUMMARY
   McshHlth000011:4739  "protection of DssDiabetes"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:4725  "therapy of DssDiabetes"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:4708  "symptom of DssDiabetes"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:4465  "symptom of DssLeukemia"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:4452  "cause of DssLeukemia"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:4465  "cause of DssLeukemia"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:4452  "symptom of DssLeukemia"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:4410  "therapy of DssWart"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:4374  "therapy of DssTuberculosis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:4361  "symptom of DssTuberculosis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:4347  "protection of DssTuberculosis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:4331  "stats of DssTuberculosis"  → 07_  ← disease'07_stats@McshHlth000011#idDssHmnatt008
-  McshHlth000011:4305  "cause of DssTuberculosis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:4371  "stats of DssTuberculosis"  → 07_  ← disease'07_stats@McshHlth000011#idDssHmnatt008
+  McshHlth000011:4357  "protection of DssTuberculosis"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:4344  "therapy of DssTuberculosis"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:4331  "cause of DssTuberculosis"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:4305  "symptom of DssTuberculosis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:4234  "therapy of DssSeasickness"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:4205  "symptom of DssSeasickness"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:4161  "therapy of DssNausea"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:4132  "protection of DssNausea"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:4150  "protection of DssNausea"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:4132  "therapy of DssNausea"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:4096  "cause of DssNausea"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:4082  "symptom of DssNausea"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:3991  "symptom of DssGastroenteritis"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:3803  "protection of DssTooth"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:3715  "therapy of DssFrequent_urination"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:3696  "symptom of DssFrequent_urination"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:3681  "cause of DssFrequent_urination"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:3700  "cause of DssFrequent_urination"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:3681  "symptom of DssFrequent_urination"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:3642  "protection of DssInvoluntary_urination"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
-  McshHlth000011:3567  "therapy of DssKidney_stone"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:3554  "protection of DssKidney_stone"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:3571  "protection of DssKidney_stone"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:3554  "therapy of DssKidney_stone"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:3541  "cause of DssKidney_stone"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
   McshHlth000011:3453  "protection of DssKidney"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:3180  "protection of dssMI"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:3009  "cause of DssUraemia"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
-  McshHlth000011:2924  "therapy of DssHypertension"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:2898  "symptom of DssHypertension"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:2870  "protection of DssHypertension"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:2939  "protection of DssHypertension"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
+  McshHlth000011:2908  "therapy of DssHypertension"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:2870  "symptom of DssHypertension"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:2795  "therapy of DssThalassemia"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:2732  "symptom of DssAnemia"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
-  McshHlth000011:2718  "therapy of DssAnemia"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:2702  "cause of DssAnemia"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:2733  "therapy of DssAnemia"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
+  McshHlth000011:2717  "cause of DssAnemia"  → 02_  ← disease'02_cause@McshHlth000011#idDssHmn002F
+  McshHlth000011:2702  "symptom of DssAnemia"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:2654  "symptom of DssHaemophilia"  → 01_  ← disease'01_symptom@McshHlth000011#idDssHmn001F
   McshHlth000011:2542  "protection of DssHeart_failure"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:2437  "evoluting of DssHeart"  → 10_  ← disorderBio'10_evoluting@McshHlth000006#idDsdrevg
@@ -559,10 +431,10 @@ SUMMARY
   McshHlth000011:1555  "therapy of DssWound"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
   McshHlth000011:1296  "protection of DssViralInfection"  → 05_  ← disease'05_protection@McshHlth000011#idDssHmn005F
   McshHlth000011:1253  "therapy of DssViralInfection"  → 04_  ← disease'04_therapy@McshHlth000011#idDssHmn004F
-  McshHlth000011:612  "evoluting of disease"  → 10_  ← disorderBio'10_evoluting@McshHlth000006#idDsdrevg
-  McshHlth000011:598  "DOING of disease"  → 09_ ✗ NN taken by "09_worker of disease"  ← disorderBio'09_DOING@McshHlth000006#idDsdrdng
-  McshHlth000011:546  "info-resource of disease"  → 08_ ✗ NN taken by "08_patient of disease"  ← disorderBio'08_resource@McshHlth000006#idDsdrrsc
-  McshHlth000012:107  "evoluting of foodBio"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
+  McshHlth000011:612  "evoluting of disease"  → 10_ ✗ own numbering of the-specific: by hand  ← disorderBio'10_evoluting@McshHlth000006#idDsdrevg
+  McshHlth000011:598  "DOING of disease"  → 09_ ✗ own numbering of the-specific: by hand  ← disorderBio'09_DOING@McshHlth000006#idDsdrdng
+  McshHlth000011:546  "info-resource of disease"  → 08_ ✗ own numbering of the-specific: by hand  ← disorderBio'08_resource@McshHlth000006#idDsdrrsc
+  McshHlth000012:107  "evoluting of foodBio"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
   McshHlth000013:11148  "recipe of foodSaladPotato"  → 01_  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
   McshHlth000013:11086  "recipe of foodSaladTahini"  → 01_  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
   McshHlth000013:10988  "recipe of foodGreens"  → 01_  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
@@ -610,8 +482,8 @@ SUMMARY
   McshHlth000013:7577  "ingredient of fruitOrange"  → 01_  ← foodFruit'01_ingredient@McshHlth000013#idFoodHmn106att001
   McshHlth000013:7226  "evaluation of foodPeanuts"  → 03_  ← foodFruit'03_evaluation@McshHlth000013#idFoodHmn106att003
   McshHlth000013:6454  "recipe of foodOlives"  → 01_  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
-  McshHlth000013:5930  "ingredient of foodVegetable"  → 01_  ← food'01_ingredient@McshHlth000013#idFoodHmnatt001
-  McshHlth000013:5866  "evaluation of foodVegetable"  → 03_  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
+  McshHlth000013:5909  "evaluation of foodVegetable"  → 03_  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
+  McshHlth000013:5866  "ingredient of foodVegetable"  → 01_  ← food'01_ingredient@McshHlth000013#idFoodHmnatt001
   McshHlth000013:5361  "evaluation of foodSesame"  → 03_  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
   McshHlth000013:4956  "evaluation of foodVegetarian"  → 03_  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
   McshHlth000013:4762  "evaluation of foodGinger"  → 03_  ← food'03_evaluation@McshHlth000013#idFoodHmnatt007
@@ -621,27 +493,26 @@ SUMMARY
   McshHlth000013:3075  "recipe of drinkCocoa"  → 01_  ← foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
   McshHlth000013:3001  "price of drinkCocacola"  → 06_  ← food'06_price@McshHlth000013#idFoodHmnatt012
   McshHlth000013:987  "course of meal"  → 01_  ← food'01_ingredient@McshHlth000013#idFoodHmnatt001
-  McshHlth000013:814  "evoluting of food"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshHlth000013:770  "DOING of food"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
-  McshHlth000013:726  "info-resource of food"  → 07_ ✗ NN taken by "07_sector of food"  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshHlth000013:814  "evoluting of food"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshHlth000013:770  "DOING of food"  → 09_ ✗ own numbering of the-specific: by hand  ← material'09_doing@McshNtr000002#idMtrldng
+  McshHlth000013:726  "info-resource of food"  → 07_ ✗ own numbering of the-specific: by hand  ← material'07_info-resource@McshNtr000002#idMtrlirsc
   McshHlth000014:1914  "indication of MdtnMinocycline"  → 02_  ← medication'02_indication@McshHlth000014#idMedHmnatt002
   McshHlth000014:1772  "side-effect of medFinasteride"  → 04_  ← medication'04_side-effect@McshHlth000014#idMedHmnatt004
   McshHlth000014:1759  "indication of medFinasteride"  → 02_  ← medication'02_indication@McshHlth000014#idMedHmnatt002
   McshHlth000014:1745  "brand-name of medFinasteride"  → 01_  ← medication'01_brand-name@McshHlth000014#idMedHmnatt001
-  McshHlth000014:564  "DOING of medication"  → 09_ ✗ NN taken by "09_prescription of medication"  ← material'09_doing@McshNtr000002#idMtrldng
-  McshHlth000014:550  "info-resource of medication"  → 07_ ✗ NN taken by "07_dosage of medication"  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshHlth000014:564  "DOING of medication"  → 09_ ✗ own numbering of the-specific: by hand  ← material'09_doing@McshNtr000002#idMtrldng
+  McshHlth000014:550  "info-resource of medication"  → 07_ ✗ own numbering of the-specific: by hand  ← material'07_info-resource@McshNtr000002#idMtrlirsc
   McshHlth000015:197  "info-resource of drugNarcotic"  → 07_  ← material'07_info-resource@McshNtr000002#idMtrlirsc
   McshHlth000016:1412  "indication of therapyPhoto"  → 01_  ← therapy'01_indication@McshHlth000016#idThrpHmnatt001
   McshHlth000016:613  "indication of therapyMindCB"  → 01_  ← therapy'01_indication@McshHlth000016#idThrpHmnatt001
   McshHlth000016:547  "indication of therapyMindReality"  → 01_  ← therapy'01_indication@McshHlth000016#idThrpHmnatt001
   McshHlth000016:406  "therapist of therapyMind"  → 06_  ← therapy'06_therapist@McshHlth000016#idThrpHmnatt006
-  McshHlth000019:5677  "evoluting of SystNervous"  → 04_ ✗ NN taken by "04_sensory-sys of SystNervous"  ← SystOrgans'04_evoluting@McshHlth000002#idSysOgnHmnvgF
-  McshHlth000019:5600  "DOING of SystNervous"  → 04_ ✗ NN taken by "04_sensory-sys of SystNervous"  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
-  McshHlth000019:5557  "structure of SystNervous"  → 03_ ✗ NN taken by "03_peripheral-nervous-system of SystNervous"  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
-  McshHlth000019:5532  "info-resource of SystNervous"  → 05_ ✗ NN taken by "05_neural-circuit of SystNervous"  ← whole'05_resource@McshCor000008#idWhlirsc
+  McshHlth000019:5677  "evoluting of SystNervous"  → 05_ ✗ own numbering of the-specific: by hand  ← SystOrgans'05_evoluting@McshHlth000002#idSysOgnHmnvgF
+  McshHlth000019:5600  "DOING of SystNervous"  → 04_ ✗ own numbering of the-specific: by hand  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+  McshHlth000019:5557  "structure of SystNervous"  → 03_ ✗ own numbering of the-specific: by hand  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
   McshHlth000019:5252  "DOING of cellNeuroglia"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000019:4737  "DOING of cellNeuron"  → 19_  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
-  McshHlth000019:4705  "structure of cellNeuron"  → 18_  ← cell'18_structure@McshHlth000004#idCellHmnatt008
+  McshHlth000019:4737  "DOING of cellNeuron"  → 19_ ✗ own numbering of the-specific: by hand  ← cell'19_DOING@McshHlth000004#idCellHmnatt007
+  McshHlth000019:4705  "structure of cellNeuron"  → 18_ ✗ own numbering of the-specific: by hand  ← cell'18_structure@McshHlth000004#idCellHmnatt008
   McshHlth000019:2507  "disease of organEye"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
   McshHlth000019:1087  "DOING of SystCentralNervous"  → 04_  ← SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
   McshHlth000019:1057  "structure of SystCentralNervous"  → 03_  ← SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
@@ -661,33 +532,81 @@ SUMMARY
   McshLag000012:310  "output (logo-view) of Espo_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
   McshLag000012:62  "input3-(semu-view) of Espo_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
   McshLag000012:52  "input1-(mind-view) of Espo_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000033:3441  "evaluation of Deut_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000033:296  "output (logo-view) of Deut_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000033:116  "input3-(semu-view) of Deut_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000033:100  "input2-(senso-mind--view) of Deut_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000033:83  "input1-(mind-view) of Deut_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000034:2576  "evaluation of Bcms_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000034:275  "output (logo-view) of Bcms_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000034:79  "input3-(semu-view) of Bcms_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000034:63  "input2-(senso-mind--view) of Bcms_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000034:46  "input1-(mind-view) of Bcms_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000035:2370  "evaluation of Span_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
   McshLag000035:304  "output (logo-view) of Span_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
   McshLag000035:108  "input3-(semu-view) of Span_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
   McshLag000035:91  "input1-(mind-view) of Span_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000036:2791  "evaluation of Arab_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
   McshLag000036:301  "output (logo-view) of Arab_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
   McshLag000036:105  "input3-(semu-view) of Arab_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
   McshLag000036:88  "input1-(mind-view) of Arab_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000037:4365  "evaluation of Hind_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000037:2091  "evaluation of Hiur_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000037:297  "output (logo-view) of Hiur_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000037:101  "input3-(semu-view) of Hiur_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000037:85  "input2-(senso-mind--view) of Hiur_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000037:68  "input1-(mind-view) of Hiur_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000038:1588  "evaluation of Slv0Lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000038:329  "output (logo-view) of Slv0Lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000038:133  "input3-(semu-view) of Slv0Lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000038:117  "input2-(senso-mind--view) of Slv0Lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000038:100  "input1-(mind-view) of Slv0Lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000039:1255  "evaluation of Ide0_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000039:325  "output (logo-view) of Ide0_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000039:129  "input3-(semu-view) of Ide0_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000039:113  "input2-(senso-mind--view) of Ide0_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000039:96  "input1-(mind-view) of Ide0_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000040:1480  "evaluation of Afa0_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000040:341  "output (logo-view) of Afa0_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000040:145  "input3-(semu-view) of Afa0_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000040:129  "input2-(senso-mind--view) of Afa0_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000040:112  "input1-(mind-view) of Afa0_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000041:1392  "evaluation of Tur0_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000041:331  "output (logo-view) of Tur0_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000041:135  "input3-(semu-view) of Tur0_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000041:119  "input2-(senso-mind--view) of Tur0_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000041:102  "input1-(mind-view) of Tur0_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000042:1401  "evaluation of Asa0_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
+  McshLag000042:304  "output (logo-view) of Asa0_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+  McshLag000042:108  "input3-(semu-view) of Asa0_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000042:92  "input2-(senso-mind--view) of Asa0_lago"  → 02_  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000042:75  "input1-(mind-view) of Asa0_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
   McshLag000043:291  "output (logo-view) of Kora_lago"  → 04_  ← Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
   McshLag000043:95  "input3-(semu-view) of Kora_lago"  → 03_  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
   McshLag000043:78  "input1-(mind-view) of Kora_lago"  → 01_  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
   McshNtr000006:241  "DOING of steroidOgm"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
-  McshNtr000006:71  "info-resource of chmCpd"  → 07_  ← material'07_info-resource@McshNtr000002#idMtrlirsc
-  McshNtr000007:4139  "usage of chmElrΚ19"  → 11_  ← chmElry'11_usage@McshNtr000007#idChmElratt012
-  McshNtr000007:4126  "occurance of chmElrΚ19"  → 08_  ← chmElry'08_occurance@McshNtr000007#idChmElratt009
-  McshNtr000007:3259  "usage of chmElrMg12"  → 11_  ← chmElry'11_usage@McshNtr000007#idChmElratt012
-  McshNtr000007:3152  "toxicity of chmElrLead"  → 12_  ← chmElry'12_toxicity@McshNtr000007#idChmElratt014
-  McshNtr000007:2805  "usage of chmElrH1"  → 11_  ← chmElry'11_usage@McshNtr000007#idChmElratt012
-  McshNtr000007:2706  "occurance of chmElrHe2"  → 08_  ← chmElry'08_occurance@McshNtr000007#idChmElratt009
-  McshNtr000007:1955  "toxicity of chmElrCu29"  → 12_  ← chmElry'12_toxicity@McshNtr000007#idChmElratt014
-  McshNtr000007:1684  "usage of chmElrCa20"  → 11_  ← chmElry'11_usage@McshNtr000007#idChmElratt012
-  McshNtr000007:1299  "occurance of chmElrAt85"  → 08_  ← chmElry'08_occurance@McshNtr000007#idChmElratt009
-  McshNtr000007:355  "evoluting of chmElry"  → 10_ ✗ NN taken by "10_metalicity of chmElry"  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshNtr000007:332  "DOING of chmElry"  → 09_ ✗ NN taken by "09_state-of-matter of chmElry"  ← material'09_doing@McshNtr000002#idMtrldng
-  McshNtr000007:319  "info-resource of chmElry"  → 07_ ✗ NN taken by "07_physical-property of chmElry"  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshNtr000006:71  "info-resource of ChmcCpd"  → 07_ ✗ own numbering of the-specific: by hand  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshNtr000007:4126  "usage of ChmcElrΚ19"  → 11_  ← ChmcElry'11_usage@McshNtr000007#idChmElratt012
+  McshNtr000007:4113  "occurance of ChmcElrΚ19"  → 08_  ← ChmcElry'08_occurance@McshNtr000007#idChmElratt009
+  McshNtr000007:3246  "usage of ChmcElrMg12"  → 11_  ← ChmcElry'11_usage@McshNtr000007#idChmElratt012
+  McshNtr000007:3139  "toxicity of ChmcElrLead"  → 12_  ← ChmcElry'12_toxicity@McshNtr000007#idChmElratt014
+  McshNtr000007:2792  "usage of ChmcElrH1"  → 11_  ← ChmcElry'11_usage@McshNtr000007#idChmElratt012
+  McshNtr000007:2693  "occurance of ChmcElrHe2"  → 08_  ← ChmcElry'08_occurance@McshNtr000007#idChmElratt009
+  McshNtr000007:1942  "toxicity of ChmcElrCu29"  → 12_  ← ChmcElry'12_toxicity@McshNtr000007#idChmElratt014
+  McshNtr000007:1671  "usage of ChmcElrCa20"  → 11_  ← ChmcElry'11_usage@McshNtr000007#idChmElratt012
+  McshNtr000007:1286  "occurance of ChmcElrAt85"  → 08_  ← ChmcElry'08_occurance@McshNtr000007#idChmElratt009
+  McshNtr000007:1017  "info-resource of individualNo"  → 07_  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshNtr000007:494  "info-resource of periodic_table"  → 07_  ← material'07_info-resource@McshNtr000002#idMtrlirsc
+  McshNtr000007:342  "evoluting of ChmcElry"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshNtr000007:319  "DOING of ChmcElry"  → 09_ ✗ own numbering of the-specific: by hand  ← material'09_doing@McshNtr000002#idMtrldng
+  McshNtr000007:306  "info-resource of ChmcElry"  → 07_ ✗ own numbering of the-specific: by hand  ← material'07_info-resource@McshNtr000002#idMtrlirsc
   McshNtr000008:41  "info-resource of bioNosys"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshOgm000003:815  "evoluting of Ogsm"  → 10_ ✗ NN taken by "10_size of Ogsm"  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshOgm000003:573  "DOING of Ogsm"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshOgm000003:522  "info-resource of Ogsm"  → 09_ ✗ NN taken by "09_shape of Ogsm"  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshNtr000013:73  "evoluting of Chmreaction"  → 07_  ← doing'07_evoluting@McshCor000004#idDngevg
+  McshNtr000013:61  "info-resource of Chmreaction"  → 06_  ← doing'06_resource@McshCor000004#idDngirsc
+  McshOgm000003:815  "evoluting of Ogsm"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshOgm000003:573  "DOING of Ogsm"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshOgm000003:522  "info-resource of Ogsm"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshOgm000004:113  "DOING of molOgm"  → 05_ ✗ own numbering of the-specific: by hand  ← MtrlMol'05_DOING@McshNtr000004#idMoldng
   McshOgm000005:2853  "DOING of hrmnTestosterone"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
   McshOgm000005:2729  "DOING of HrmnAndrogen"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
   McshOgm000005:2582  "DOING of hrmnEstrogen"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
@@ -695,11 +614,11 @@ SUMMARY
   McshOgm000005:1712  "DOING of hormoneHmnCortisol"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
   McshOgm000005:1652  "DOING of hrmnInsulin"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
   McshOgm000005:1279  "DOING of hormoneHumn"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
-  McshOgm000005:487  "structure of BodyHumn'product"  → 08_  ← material'08_structure@McshNtr000002#idMtrlsrtrF
-  McshOgm000005:473  "DOING of BodyHumn'product"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
-  McshOgm000006:720  "DOING of MolProtein"  → 05_ ✗ NN taken by "05_pro-protein of MolProtein"  ← mtrlMol'05_DOING@McshNtr000004#idMoldng
-  McshOgm000006:635  "size of MolProtein"  → 04_  ← molOgm'04_size@McshOgm000004#idMolOgmatt005
-  McshOgm000006:619  "shape of MolProtein"  → 03_ ✗ NN taken by "03_peptide-bond of MolProtein"  ← molOgm'03_shape@McshOgm000004#idMolOgmatt004
+  McshOgm000005:487  "DOING of BodyHumn'product"  → 09_  ← material'09_doing@McshNtr000002#idMtrldng
+  McshOgm000005:473  "structure of BodyHumn'product"  → 08_  ← material'08_structure@McshNtr000002#idMtrlsrtrF
+  McshOgm000006:720  "DOING of MolProtein"  → 05_ ✗ own numbering of the-specific: by hand  ← MtrlMol'05_DOING@McshNtr000004#idMoldng
+  McshOgm000006:635  "size of MolProtein"  → 04_ ✗ own numbering of the-specific: by hand  ← molOgm'04_size@McshOgm000004#idMolOgmatt005
+  McshOgm000006:619  "shape of MolProtein"  → 03_ ✗ own numbering of the-specific: by hand  ← molOgm'03_shape@McshOgm000004#idMolOgmatt004
   McshOgm000008:948  "evoluting of vrsSarsc2"  → 12_  ← ogmCellNo'12_evoluting@McshOgm000008#idOgmCllNevg
   McshOgm000008:840  "evoluting of virusHmn"  → 12_  ← ogmCellNo'12_evoluting@McshOgm000008#idOgmCllNevg
   McshOgm000008:827  "structure of virusHmn"  → 10_  ← ogmCellNo'10_structure@McshOgm000008#idOgmCllNsrtr
@@ -709,43 +628,43 @@ SUMMARY
   McshOgm000008:380  "info-resource of ogmVirus"  → 09_  ← ogmCellNo'09_resource@McshOgm000008#idOgmCllNirsc
   McshOgm000008:351  "size of ogmVirus"  → 08_  ← ogmCellNo'08_size@McshOgm000008#idOgmCllNatt008
   McshOgm000009:1507  "food of ogmFish"  → 13_  ← ogsmAnimal'13_food@McshOgm000009#idOgmAnmlatt013
-  McshOgm000010:108  "DOING of ogmPlant"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000002:301  "DOING of sctnOgms"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000002:239  "05-health of sctnOgms"  → 03_ ✗ NN taken by "03_node-of-satisfiers of sctnOgms"  ← bio'03_health@McshOgm000002#idBioatt003
-  McshStn000004:1259  "info-resource of admnAlgo"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshStn000004:1036  "DOING of Admn"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
+  McshOgm000010:108  "DOING of ogmPlant"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000002:301  "DOING of sctnOgms"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000002:239  "05-health of sctnOgms"  → 03_ ✗ own numbering of the-specific: by hand  ← bio'03_health@McshOgm000002#idBioatt003
+  McshStn000004:1258  "info-resource of admnAlgo"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
+  McshStn000004:1035  "DOING of Admn"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
   McshStn000004:204  "DOING of AdmnSctn"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
   McshStn000004:162  "info-resource of AdmnSctn"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshStn000006:147  "DOING of oznOgm"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000006:147  "DOING of oznOgm"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
   McshStn000008:1431  "info-resource of ogznSfmt"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000008:1099  "evoluting of Ogzn"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000008:1059  "DOING of Ogzn"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000008:977  "info-resource of Ogzn"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshStn000008:1099  "evoluting of Ogzn"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000008:1059  "DOING of Ogzn"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000008:977  "info-resource of Ogzn"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
   McshStn000009:8436  "place of SocState"  → 07_  ← sctnOgms'07_place@McshStn000002#idStnOgmatt010
   McshStn000009:6932  "DOING of society"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
   McshStn000009:122  "01-node of society"  → 01_  ← Sctn'01_node@McshStn000002#idStnHmnatt001
   McshStn000011:1565  "payment of unemployment"  → 03_  ← Wrkr'03_compensation@McshStn000011#idWkratt004
-  McshStn000014:857  "evoluting of ogznCsmg"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000014:819  "DOING of ogznCsmg"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000014:806  "info-resource of ogznCsmg"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000014:656  "health of ogznCsmg"  → 05_ ✗ NN taken by "05_consuming-node of ogznCsmg"  ← Sctn'05_health@McshStn000002#idStnHmnatt005
-  McshStn000015:4912  "evoluting of ogznCoop"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000015:1127  "evoluting of OgznPrdg"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000015:1022  "DOING of OgznPrdg"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000015:1006  "info-resource of OgznPrdg"  → 09_ ✗ NN taken by "09_size of OgznPrdg"  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000016:401  "evoluting of ogznOecd"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000018:2652  "DOING of ogznUn"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000018:2640  "info-resource of ogznUn"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000018:2568  "place of ogznUn"  → 07_  ← Ogzn'07_place@McshStn000008#idOgznatt007
+  McshStn000014:857  "evoluting of ogznCsmg"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000014:819  "DOING of ogznCsmg"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000014:806  "info-resource of ogznCsmg"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshStn000014:656  "health of ogznCsmg"  → 05_ ✗ own numbering of the-specific: by hand  ← Sctn'05_health@McshStn000002#idStnHmnatt005
+  McshStn000015:4912  "evoluting of ogznCoop"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000015:1127  "evoluting of OgznPrdg"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000015:1022  "DOING of OgznPrdg"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000015:1006  "info-resource of OgznPrdg"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshStn000016:401  "evoluting of ogznOecd"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000018:2652  "DOING of ogznUn"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000018:2640  "info-resource of ogznUn"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshStn000018:2568  "place of ogznUn"  → 07_ ✗ own numbering of the-specific: by hand  ← Ogzn'07_place@McshStn000008#idOgznatt007
   McshStn000019:670  "DOING of SocAlgo"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000019:439  "algo-language of SocAlgo"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
-  McshStn000019:381  "algo-technology of SocAlgo"  → 10_  ← societyOgm'10_technology@McshStn000007#idSocOgmatt010
+  McshStn000019:406  "algo-technology of SocAlgo"  → 10_  ← societyOgm'10_technology@McshStn000007#idSocOgmatt010
+  McshStn000019:381  "algo-language of SocAlgo"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
   McshStn000019:109  "algo-economy of SocAlgo"  → 03_  ← Sctn'03_node-of-satisfiers@McshStn000002#idStnHmnatt003
   McshStn000020:180  "identification of HumnElln"  → 01_  ← human'01_identification@McshHmn000002#idHmnatt010
-  McshStn000021:536  "evoluting of SocGlbl"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshStn000021:508  "DOING of SocGlbl"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshStn000021:490  "info-resource of SocGlbl"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshStn000021:462  "place of SocGlbl"  → 07_  ← sctnOgms'07_place@McshStn000002#idStnOgmatt010
+  McshStn000021:536  "evoluting of SocGlbl"  → 10_ ✗ own numbering of the-specific: by hand  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshStn000021:508  "DOING of SocGlbl"  → 11_ ✗ own numbering of the-specific: by hand  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshStn000021:490  "info-resource of SocGlbl"  → 09_ ✗ own numbering of the-specific: by hand  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshStn000021:462  "place of SocGlbl"  → 07_ ✗ own numbering of the-specific: by hand  ← sctnOgms'07_place@McshStn000002#idStnOgmatt010
   McshStn000031:12758  "DOING of SocChna"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
   McshStn000035:191  "language of SocItla"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
   McshStn000036:115  "language of SocDeut"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
@@ -764,12 +683,12 @@ SUMMARY
   McshStn000050:217  "language of SocKhma"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
   McshStn000051:197  "language of SocSgpr"  → 09_  ← societyOgm'09_language@McshStn000007#idSocOgmatt009
   McshStnlaw000003:1922  "application of EulTcfr"  → 02_  ← lawEus'02_jurisdiction@McshStnlaw000003#idLawEuzztt004
-  McshStnlaw000003:1203  "time-of-validation of EulTreaty"  → 05_ ✗ NN taken by "05_amendment of EulTreaty"  ← lawEus'05_time-in-force@McshStnlaw000003#idLawEuzztt011
+  McshStnlaw000003:1203  "time-of-validation of EulTreaty"  → 05_ ✗ own numbering of the-specific: by hand  ← lawEus'05_time-in-force@McshStnlaw000003#idLawEuzztt011
   McshTchInf000003:2439  "health-issue of cmprPone"  → 03_  ← techCmpr'03_health-issue@McshTchInf000003#idCmratt003
-  McshTchInf000003:2368  "evoluting of cmprNuro"  → 07_  ← techCmpr'07_EVOLUTING@McshTchInf000003#idCmrevg
-  McshTchInf000003:2146  "evoluting of cmprQntm"  → 07_  ← techCmpr'07_EVOLUTING@McshTchInf000003#idCmrevg
+  McshTchInf000003:2368  "evoluting of cmprNuro"  → 07_  ← techCmpr'07_evoluting@McshTchInf000003#idCmrevg
+  McshTchInf000003:2146  "evoluting of cmprQntm"  → 07_  ← techCmpr'07_evoluting@McshTchInf000003#idCmrevg
   McshTchInf000003:2054  "info-resource of cmprQntm"  → 04_  ← techCmpr'04_resource@McshTchInf000003#idCmrirsc
-  McshTchInf000003:957  "evoluting of cmprVtube"  → 07_  ← techCmpr'07_EVOLUTING@McshTchInf000003#idCmrevg
+  McshTchInf000003:957  "evoluting of cmprVtube"  → 07_  ← techCmpr'07_evoluting@McshTchInf000003#idCmrevg
   McshTchInf000003:944  "info-resource of cmprVtube"  → 04_  ← techCmpr'04_resource@McshTchInf000003#idCmrirsc
   McshTchInf000005:1429  "output-info of lagFile"  → 03_  ← Cmpr_lago'03_output@McshTchInf000005#idLCmpropt
   McshTchInf000005:1089  "output of Tdoc_lago"  → 03_  ← Cmpr_lago'03_output@McshTchInf000005#idLCmpropt
@@ -784,19 +703,19 @@ SUMMARY
   McshTchInf000007:2124  "input of lagXmlg"  → 02_  ← Cnkn_lago'02_input@McshTchInf000007#idLCnkntipt
   McshTchInf000007:1832  "output of lagKngr"  → 03_  ← Cnkn_lago'03_output@McshTchInf000007#idLCnkntopt
   McshTchInf000007:1638  "output of lagSnet"  → 03_  ← Cnkn_lago'03_output@McshTchInf000007#idLCnkntopt
-  McshTchInf000007:1543  "manager of lagFram"  → 04_  ← Cnkn_lago'04_manager@McshTchInf000007#idLCnkntmgr
-  McshTchInf000007:1531  "evaluation of lagFram"  → 05_  ← Cnkn_lago'05_evaluation@McshTchInf000007#idLCnknteval
+  McshTchInf000007:1552  "evaluation of lagFram"  → 05_  ← Cnkn_lago'05_evaluation@McshTchInf000007#idLCnknteval
+  McshTchInf000007:1531  "manager of lagFram"  → 04_  ← Cnkn_lago'04_manager@McshTchInf000007#idLCnkntmgr
   McshTchInf000007:1505  "output of lagFram"  → 03_  ← Cnkn_lago'03_output@McshTchInf000007#idLCnkntopt
-  McshTchInf000009:3625  "evaluation of Mcsh_lago"  → 06_  ← Hitp_lago'06_evaluation@McshTchInf000008#idLHitpeval
-  McshTchInf000009:2206  "manager of Mcsh_lago"  → 07_  ← Hitp_lago'07_manager@McshTchInf000008#idLHitpmgr
+  McshTchInf000009:2231  "manager of Mcsh_lago"  → 07_  ← Hitp_lago'07_manager@McshTchInf000008#idLHitpmgr
+  McshTchInf000009:2206  "evaluation of Mcsh_lago"  → 06_  ← Hitp_lago'06_evaluation@McshTchInf000008#idLHitpeval
   McshTchInf000009:124  "output of Mcsh_lago"  → 03_  ← Hitp_lago'03_web-app-doc (output)@McshTchInf000008#idLHitpwbpg
   McshTchInf000010:6016  "evaluation of Jsgn_lago"  → 12_  ← model'12_evaluation@McshCor000012#idMdlatt011
   McshTchInf000010:145  "Jsalgo'UNIT of Jsgn_lago"  → 09_  ← model'09_unit@McshCor000012#idMdlatt008
   McshTchInf000015:13573  "asset of AlgonetCentral"  → 05_  ← netAlgo'05_asset@McshTchInf000015#idAlgntevu
-  McshTchInf000015:12890  "evoluting of netAlgo"  → 07_ ✗ NN taken by "07_program of netAlgo"  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshTchInf000015:10284  "DOING of netAlgo"  → 06_ ✗ NN taken by "06_governance-system of netAlgo"  ← system'06_DOING@McshCor000011#idSysdng
-  McshTchInf000016:12876  "wallet of Ddash_net"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
-  McshTchInf000016:12861  "statistics of Ddash_net"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000015:12890  "evoluting of netAlgo"  → 07_ ✗ own numbering of the-specific: by hand  ← system'07_evoluting@McshCor000011#idSysevg
+  McshTchInf000015:10284  "DOING of netAlgo"  → 06_ ✗ own numbering of the-specific: by hand  ← system'06_DOING@McshCor000011#idSysdng
+  McshTchInf000016:12905  "statistics of Ddash_net"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000016:12861  "wallet of Ddash_net"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
   McshTchInf000016:12649  "governance-system of Ddash_net"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
   McshTchInf000016:12557  "blockchain of Ddash_net"  → 04_  ← AgntBkcn'04_blockchain@McshTchInf000016#idDbcdat
   McshTchInf000016:11925  "protocol of Ddash_net"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
@@ -805,51 +724,51 @@ SUMMARY
   McshTchInf000016:6913  "program of Dae_net"  → 07_  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
   McshTchInf000016:6899  "governance of Dae_net"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
   McshTchInf000016:6032  "protocol of Dae_net"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
-  McshTchInf000016:4995  "environment of AgntBkcn"  → 14_  ← netAlgo'14_environment@McshTchInf000015#idAlgntenvt
+  McshTchInf000016:4995  "environment of AgntBkcn"  → 14_ ✗ own numbering of the-specific: by hand  ← netAlgo'14_environment@McshTchInf000015#idAlgntenvt
   McshTchInf000017:9474  "node of Bitcoin-cash"  → 03_  ← AgntBkcn'03_node@McshTchInf000016#idDbcnod
   McshTchInf000017:8721  "law of AgntBtcn"  → 13_  ← netAlgo'13_law@McshTchInf000015#idAlgntlaw
   McshTchInf000017:8576  "evaluation of AgntBtcn"  → 11_  ← AgntBkcn'11_evaluation@McshTchInf000016#idDbceln
-  McshTchInf000017:6703  "wallet of AgntBtcn"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
-  McshTchInf000017:5996  "program of AgntBtcn"  → 07_  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
-  McshTchInf000017:5979  "statistics of AgntBtcn"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000017:7604  "statistics of AgntBtcn"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000017:6686  "wallet of AgntBtcn"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000017:5979  "program of AgntBtcn"  → 07_  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
   McshTchInf000017:1381  "blockchain of AgntBtcn"  → 04_  ← AgntBkcn'04_blockchain@McshTchInf000016#idDbcdat
   McshTchInf000017:1069  "node of AgntBtcn"  → 03_  ← AgntBkcn'03_node@McshTchInf000016#idDbcnod
   McshTchInf000017:496  "protocol of AgntBtcn"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
   McshTchInf000018:12057  "evaluation of AgntEthr"  → 11_  ← AgntBkcn'11_evaluation@McshTchInf000016#idDbceln
-  McshTchInf000018:11502  "wallet of AgntEthr"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
-  McshTchInf000018:6479  "program.Dapp of AgntEthr"  → 08_  ← AgntBkcn'08_Dapp@McshTchInf000016#idDbcapp
-  McshTchInf000018:4549  "program of AgntEthr"  → 07_  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
-  McshTchInf000018:4533  "governance of AgntEthr"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
-  McshTchInf000018:4497  "statistics of AgntEthr"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000018:11626  "statistics of AgntEthr"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000018:6825  "wallet of AgntEthr"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000018:6443  "program.Dapp of AgntEthr"  → 08_  ← AgntBkcn'08_Dapp@McshTchInf000016#idDbcapp
+  McshTchInf000018:4513  "program of AgntEthr"  → 07_  ← AgntBkcn'07_program@McshTchInf000016#idDbcpgm
+  McshTchInf000018:4497  "governance of AgntEthr"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
   McshTchInf000018:3660  "Dasset of AgntEthr"  → 05_  ← AgntBkcn'05_asset@McshTchInf000016#idDbcevu
   McshTchInf000018:1594  "blockchain of AgntEthr"  → 04_  ← AgntBkcn'04_blockchain@McshTchInf000016#idDbcdat
   McshTchInf000018:1339  "node of AgntEthr"  → 03_  ← AgntBkcn'03_node@McshTchInf000016#idDbcnod
   McshTchInf000018:288  "protocol of AgntEthr"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
-  McshTchInf000019:6078  "evoluting of eosDAC"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshTchInf000019:6046  "DOING of eosDAC"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshTchInf000019:6007  "info-resource of eosDAC"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:4411  "stakeholder of eosDAC"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
-  McshTchInf000019:4362  "info-resource of PolkaDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:4332  "info-resource of dxDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:4301  "resouse of DAOstack_dOrg"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:4245  "info-resource of Genesis_DAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:4182  "evoluting of DAOstack"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshTchInf000019:4138  "info-resource of DAOstack"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:3187  "stakeholder of DAOstack"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
-  McshTchInf000019:3055  "info-resource of DoAragon"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:2638  "stakeholder of DoAragon"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
-  McshTchInf000019:2590  "info-resource of MakerDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:2533  "evoluting of The_DAO"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshTchInf000019:2512  "info-resource of The_DAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:2483  "stakeholder of The_DAO"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
-  McshTchInf000019:2380  "DOING of DoEth"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshTchInf000019:1481  "info-resource of DoEth"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:1350  "stakeholder of DoEth"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
-  McshTchInf000019:1296  "info-resource of DeOznDef"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:1193  "evoluting of OgznDao"  → 10_  ← material'10_EVOLUTING@McshNtr000002#idMtrlevg
-  McshTchInf000019:1121  "DOING of OgznDao"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
-  McshTchInf000019:1022  "info-resource of OgznDao"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
-  McshTchInf000019:109  "stakeholder of OgznDao"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:6056  "DOING of eosDAC"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshTchInf000019:6041  "evoluting of eosDAC"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshTchInf000019:6002  "info-resource of eosDAC"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:4406  "stakeholder of eosDAC"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:4357  "info-resource of PolkaDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:4327  "info-resource of dxDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:4296  "resouse of DAOstack_dOrg"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:4240  "info-resource of Genesis_DAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:4177  "evoluting of DAOstack"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshTchInf000019:4133  "info-resource of DAOstack"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:3182  "stakeholder of DAOstack"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:3050  "info-resource of DoAragon"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:2633  "stakeholder of DoAragon"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:2585  "info-resource of MakerDAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:2528  "evoluting of The_DAO"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshTchInf000019:2507  "info-resource of The_DAO"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:2478  "stakeholder of The_DAO"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:2375  "DOING of DoEth"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshTchInf000019:1476  "info-resource of DoEth"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:1345  "stakeholder of DoEth"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
+  McshTchInf000019:1291  "info-resource of DeOznDef"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:1139  "DOING of OgznDao"  → 11_  ← bio'11_DOING@McshOgm000002#idBiodng
+  McshTchInf000019:1116  "evoluting of OgznDao"  → 10_  ← material'10_evoluting@McshNtr000002#idMtrlevg
+  McshTchInf000019:1017  "info-resource of OgznDao"  → 09_  ← bio'09_resource@McshOgm000002#idBioirsc
+  McshTchInf000019:104  "stakeholder of OgznDao"  → 02_  ← Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
   McshTchInf000020:3179  "evoluting of Chrono.tech"  → 10_  ← DeApp'10_evoluting@McshTchInf000015#idDappevg
   McshTchInf000020:3027  "human of Chrono.tech"  → 05_  ← DeApp'05_human@McshTchInf000015#idDappatt005
   McshTchInf000021:3240  "ENVIRONMENT of Deos"  → 14_  ← netAlgo'14_environment@McshTchInf000015#idAlgntenvt
@@ -864,9 +783,9 @@ SUMMARY
   McshTchInf000021:51  "protocol of Deos"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
   McshTchInf000022:1448  "law of Faircoin_net"  → 13_  ← netAlgo'13_law@McshTchInf000015#idAlgntlaw
   McshTchInf000022:1367  "evaluation of Faircoin_net"  → 11_  ← AgntBkcn'11_evaluation@McshTchInf000016#idDbceln
-  McshTchInf000022:1215  "wallet of Faircoin_net"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
-  McshTchInf000022:1096  "governance-system of Faircoin_net"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
-  McshTchInf000022:1064  "statistics of Faircoin_net"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000022:1201  "statistics of Faircoin_net"  → 10_  ← AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000022:1183  "wallet of Faircoin_net"  → 09_  ← AgntBkcn'09_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000022:1064  "governance-system of Faircoin_net"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
   McshTchInf000022:792  "blockchain of Faircoin_net"  → 04_  ← AgntBkcn'04_blockchain@McshTchInf000016#idDbcdat
   McshTchInf000022:655  "node of Faircoin_net"  → 03_  ← AgntBkcn'03_node@McshTchInf000016#idDbcnod
   McshTchInf000022:46  "protocol of Faircoin_net"  → 02_  ← AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
@@ -889,21 +808,21 @@ SUMMARY
   McshTchInf000028:2271  "wallet of DnDiem"  → 09_  ← netAlgo'09_wallet@McshTchInf000015#idAlgntwlt
   McshTchInf000028:1914  "program of DnDiem"  → 07_  ← netAlgo'07_program@McshTchInf000015#idAlgntpgm
   McshTchInf000028:1805  "governance of DnDiem"  → 06_  ← netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
-  McshTchInf000028:1518  "chain of DnDiem"  → 04_  ← netAlgo'04_chain@McshTchInf000015#idAlgntchn
-  McshTchInf000028:1434  "node of DnDiem"  → 03_  ← netAlgo'03_node@McshTchInf000015#idAlgntnod
-  McshTchInf000028:419  "protocol of DnDiem"  → 02_  ← netAlgo'02_protocol@McshTchInf000015#idAlgntprl
-  McshTchInf000028:163  "asset of DnDiem"  → 05_  ← netAlgo'05_asset@McshTchInf000015#idAlgntevu
+  McshTchInf000028:1549  "asset of DnDiem"  → 05_  ← netAlgo'05_asset@McshTchInf000015#idAlgntevu
+  McshTchInf000028:1262  "chain of DnDiem"  → 04_  ← netAlgo'04_chain@McshTchInf000015#idAlgntchn
+  McshTchInf000028:569  "node of DnDiem"  → 03_  ← netAlgo'03_node@McshTchInf000015#idAlgntnod
+  McshTchInf000028:163  "protocol of DnDiem"  → 02_  ← netAlgo'02_protocol@McshTchInf000015#idAlgntprl
   McshTchInf000028:41  "stakeholder of DnDiem"  → 01_  ← netAlgo'01_stakeholder@McshTchInf000015#idAlgntskhr
   McshTchInf000030:3906  "human of Rust_lago"  → 06_  ← Pgmg_lago'06_human@McshTchInf000006#idLCpgmhmn
   McshTchInf000030:3292  "tool of Rust_lago"  → 05_  ← Pgmg_lago'05_tool@McshTchInf000006#idLCpgmtool
   McshTchInf000030:3259  "evaluation of Rust_lago"  → 04_  ← Pgmg_lago'04_evaluation@McshTchInf000006#idLCpgmeval
   McshTchInf000030:40  "archetype (input) of Rust_lago"  → 02_  ← Pgmg_lago'02_input|archetype@McshTchInf000006#idLCpgmarch
-  McshTchInf000031:2483  "tool of Cppz_lago"  → 05_  ← Pgmg_lago'05_tool@McshTchInf000006#idLCpgmtool
-  McshTchInf000031:2463  "evaluation of Cppz_lago"  → 04_  ← Pgmg_lago'04_evaluation@McshTchInf000006#idLCpgmeval
-  McshTchInf000031:334  "algo'unit of Cppz_lago"  → 09_  ← model'09_unit@McshCor000012#idMdlatt008
+  McshTchInf000031:2568  "algo'unit of Cppz_lago"  → 09_  ← model'09_unit@McshCor000012#idMdlatt008
+  McshTchInf000031:2422  "tool of Cppz_lago"  → 05_  ← Pgmg_lago'05_tool@McshTchInf000006#idLCpgmtool
+  McshTchInf000031:334  "evaluation of Cppz_lago"  → 04_  ← Pgmg_lago'04_evaluation@McshTchInf000006#idLCpgmeval
   McshTchInf000031:61  "algorithm (output) of Cppz_lago"  → 03_  ← Pgmg_lago'03_output|algo@McshTchInf000006#idLCpgmalg
   McshTchInf000031:48  "archetype (input) of Cppz_lago"  → 02_  ← Pgmg_lago'02_input|archetype@McshTchInf000006#idLCpgmarch
-  McshTchInf000036:5955  "evaluation of techNn"  → 03_  ← science'03_rlnReferent@McshEdu000002#idSciatt020
+  McshTchInf000036:5954  "evaluation of techNn"  → 03_  ← science'03_rlnReferent@McshEdu000002#idSciatt020
   McshTchInf000036:4018  "organization of techMl"  → 05_  ← science'05_organization@McshEdu000002#idSciatt006
   McshTchInf000036:418  "organization of techAI"  → 05_  ← science'05_organization@McshEdu000002#idSciatt006
   McshTchInf000036:85  "evaluation of techAI"  → 03_  ← science'03_rlnReferent@McshEdu000002#idSciatt020
@@ -921,9 +840,9 @@ SUMMARY
   McshTchInf000039:6620  "output of lagoCycl"  → 03_  ← Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
   McshTchInf000039:6608  "input of lagoCycl"  → 02_  ← Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
   McshTchInf000039:5609  "output of lagoDlgc"  → 03_  ← Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000039:5223  "output of lagoCgaf"  → 03_  ← Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000039:5210  "input of lagoCgaf"  → 02_  ← Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
-  McshTchInf000039:5197  "manager of lagoCgaf"  → 04_  ← Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
+  McshTchInf000039:5345  "manager of lagoCgaf"  → 04_  ← Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
+  McshTchInf000039:5210  "output of lagoCgaf"  → 03_  ← Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
+  McshTchInf000039:5197  "input of lagoCgaf"  → 02_  ← Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
   McshTchInf000039:4624  "manager of lagoLogic"  → 04_  ← Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
   McshTchInf000039:4573  "output of lagoGlsh"  → 03_  ← Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
   McshTchInf000039:4345  "manager of lagoWkdt"  → 04_  ← Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
@@ -933,20 +852,22 @@ SUMMARY
   McshTchInf000039:3691  "input of Ppsl_lago"  → 02_  ← Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
   McshTchInf000039:3348  "manager of lagoLgkl"  → 04_  ← Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
 
-=== INH-WRONGNUM (57) — its NN_ differs from the-generic-attribute (own numbering? by hand)
-  Mcsh000000:206  "08_management-tool of Mws"  → 04_  ← worldview'04_management-tool@McshLag000003#idWldvatt002
-  Mcsh000000:135  "05_view of Mws"  → 03_  ← worldview'03_view@McshLag000003#idWldvatt004
+=== INH-WRONGNUM (52) — its NN_ differs from the-generic-attribute (own numbering? by hand)
+  Mcsh000000:207  "08_management-tool of Mws"  → 04_  ← worldview'04_management-tool@McshLag000003#idWldvatt002
+  Mcsh000000:136  "05_view of Mws"  → 03_  ← worldview'03_view@McshLag000003#idWldvatt004
   McshCor000004:3159  "04_risk of functing"  → 05_  ← doing'05_risk@McshCor000004#idDngatt004
   McshCor000004:1619  "04_risk of acting"  → 05_  ← doing'05_risk@McshCor000004#idDngatt004
   McshCor000008:854  "01_element of collection"  → 02_  ← whole'02_part@McshCor000008#idWhlprt
-  McshCor000011:2043  "10_EVOLUTING of systTree"  → 07_  ← system'07_EVOLUTING@McshCor000011#idSysevg
-  McshCor000011:2030  "09_DOING of systTree"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
-  McshCor000011:2010  "08_structure of systTree"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
-  McshCor000011:1995  "07_resource of systTree"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
-  McshCor000011:335  "07_EVOLUTING of system"  → 08_  ← whole'08_EVOLUTING@McshCor000008#idWhlevg
+  McshCor000011:2042  "10_evoluting of systTree"  → 07_  ← system'07_evoluting@McshCor000011#idSysevg
+  McshCor000011:2029  "09_DOING of systTree"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
+  McshCor000011:2009  "08_structure of systTree"  → 05_  ← system'05_structure@McshCor000011#idSysstrrF
+  McshCor000011:1994  "07_resource of systTree"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
+  McshCor000011:335  "07_evoluting of system"  → 08_  ← whole'08_evoluting@McshCor000008#idWhlevg
   McshCor000011:321  "06_DOING of system"  → 07_  ← whole'07_DOING@McshCor000008#idWhldng
   McshCor000011:284  "05_structure of system"  → 06_  ← whole'06_structure@McshCor000008#idWhlsrtr
   McshCor000011:224  "03_resource of system"  → 05_  ← whole'05_resource@McshCor000008#idWhlirsc
+  McshCor000012:119  "07_node-relation of model"  → 02_  ← system'02_node-relation@McshCor000011#idSysndrn
+  McshCor000012:105  "06_node of model"  → 01_  ← system'01_node@McshCor000011#idSysnodeF
   McshCor000013:429  "05_syntax of FctgBrainingBio"  → 03_  ← functing'03_syntax@McshCor000004#idDngFctgstx
   McshHlth000003:3035  "05_cell of organBrain"  → 03_  ← organ'03_cell@McshHlth000002#idOgnHmnatt012
   McshHlth000004:1017  "15_shape of cell"  → 11_  ← cellOgm'11_shape@McshOgm000007#idCellOgmatt017
@@ -957,21 +878,14 @@ SUMMARY
   McshHlth000004:917  "09_SystMaterial of cell"  → 06_  ← cellOgm'06_SystMaterial@McshOgm000007#idCellOgmatt034
   McshHlth000004:547  "08_genetic-material of cell"  → 05_  ← cellOgm'05_genetic-material@McshOgm000007#idCellOgmatt002
   McshHlth000004:232  "05_organelle of cell"  → 04_  ← cellOgm'04_organelle@McshOgm000007#idCellOgmatt003
-  McshHlth000005:3163  "08_size of organBone"  → 07_  ← organ'07_size@McshHlth000002#idOgnHmnatt009
-  McshHlth000005:3149  "07_shape of organBone"  → 06_  ← organ'06_shape@McshHlth000002#idOgnHmnatt008
-  McshHlth000005:256  "08_size of organMuscle"  → 07_  ← organ'07_size@McshHlth000002#idOgnHmnatt009
-  McshHlth000005:242  "07_shape of organMuscle"  → 06_  ← organ'06_shape@McshHlth000002#idOgnHmnatt008
-  McshHlth000007:131  "06_EVOLUTING of healthOgm"  → 07_  ← healthBio'07_evoluting@McshHlth000006#idHlthBioevg
   McshHlth000008:722  "07_environment of health"  → 06_  ← healthBio'06_environment@McshHlth000006#idHlthBioatt005
   McshHlth000008:420  "05_material of health"  → 04_  ← healthBio'04_material@McshHlth000006#idHlthBioatt004
   McshHlth000013:6873  "06_sector of foodFruit"  → 07_  ← food'07_sector@McshHlth000013#idFoodHmnatt013
   McshHlth000013:6859  "05_price of foodFruit"  → 06_  ← food'06_price@McshHlth000013#idFoodHmnatt012
   McshHlth000019:3559  "06_organ of SystNervous"  → 02_  ← SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
   McshLag000007:29997  "07_grammar of Hmnm_lago"  → 04_  ← Ogsm_lago'04_grammar@McshLag000005#idLaggrmr
-  McshLag000007:15979  "04_output-(logo-view) of Hmnm_lago"  → 03_  ← Ogsm_lago'03_output--logo-view@McshLag000005#idLagoplv
   McshLag000014:87  "10_citation-format of irBook"  → 07_  ← Infrsc'07_citation-format@McshLag000013#idInfrscfrmt
   McshLag000019:60  "10_citation-format of irPaper"  → 07_  ← Infrsc'07_citation-format@McshLag000013#idInfrscfrmt
-  McshNtr000007:222  "07_physical-property of chmElry"  → 02_  ← material'02_physical-property@McshNtr000002#idMtrlatt008
   McshOgm000002:149  "11_DOING of bio"  → 06_  ← system'06_DOING@McshCor000011#idSysdng
   McshOgm000002:136  "09_resource of bio"  → 03_  ← system'03_resource@McshCor000011#idSysirsc
   McshOgm000003:507  "10_size of Ogsm"  → 08_  ← bio'08_size@McshOgm000002#idBioatt008
@@ -992,99 +906,78 @@ SUMMARY
   McshTchPrgm000003:76  "02_using of Atomedtr"  → 15_  ← Pgmgalgo'15_using@McshTchInf000006#idLCpgmalgusg
   McshTchPrgm000003:47  "01_installing of Atomedtr"  → 14_  ← Pgmgalgo'14_installing@McshTchInf000006#idLCpgmalgistg
 
-=== INH-EMPTY (2) — an-inherited attribute that says nothing new (no info, no link): delete?
-  McshNtr000007:222  "07_physical-property of chmElry"  ← material'02_physical-property@McshNtr000002#idMtrlatt008
-  McshTchInf000019:104  "01_node of OgznDao"  ← Ogzn'01_node@McshStn000008#idOgznatt018
+=== INH-EMPTY (21) — an-inherited attribute that says nothing new (no info, no link): delete?
+  McshCor000012:237  "structure of model"  ← system'05_structure@McshCor000011#idSysstrrF
+  McshCor000012:226  "info-resource of model"  ← system'03_resource@McshCor000011#idSysirsc
+  McshLag000033:100  "input2-(senso-mind--view) of Deut_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000034:63  "input2-(senso-mind--view) of Bcms_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000037:4462  "03_input3-(semu-view) of Urdu_lago"  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000037:4447  "02_input2-(senso-mind-view) of Urdu_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000037:4432  "01_input1-(mind-view) of Urdu_lago"  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000037:2437  "03_input3-(semu-view) of Hind_lago"  ← Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+  McshLag000037:2422  "02_input2-(senso-mind-view) of Hind_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000037:2407  "01_input1-(mind-view) of Hind_lago"  ← Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+  McshLag000037:85  "input2-(senso-mind--view) of Hiur_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000038:117  "input2-(senso-mind--view) of Slv0Lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000039:113  "input2-(senso-mind--view) of Ide0_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000040:129  "input2-(senso-mind--view) of Afa0_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000041:119  "input2-(senso-mind--view) of Tur0_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshLag000042:92  "input2-(senso-mind--view) of Asa0_lago"  ← Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
+  McshNtr000012:115  "07_evoluting of force"  ← doing'07_evoluting@McshCor000004#idDngevg
+  McshNtr000012:103  "06_resource of force"  ← doing'06_resource@McshCor000004#idDngirsc
+  McshNtr000012:75  "04_risk of force"  ← acting'04_risk@McshCor000004#idDngActgrsk
+  McshNtr000013:73  "evoluting of Chmreaction"  ← doing'07_evoluting@McshCor000004#idDngevg
+  McshOgm000004:77  "03_shape of molOgm"  ← MtrlMol'03_shape@McshNtr000004#idMolatt004
 
-=== INH-ORDER (42) — the-attributes of a-specific are not in the-NN order of its generic
-  McshCor000004:3932  "dividing.math"  order: 03 01
-  McshHlth000002:11594  "SystOrgans.009-reproductive"  order: 01 02 04 03
-  McshHlth000002:6316  "organHeart of SystCirculatory"  order: 01 03 04 05 03 06 07
-  McshHlth000004:2204  "cell.spermatozoon-017"  order: 20 18
-  McshHlth000004:2012  "cell.red-009"  order: 20 19 18
-  McshHlth000004:1926  "cell.platelet-016"  order: 20 19 18
-  McshHlth000011:14951  "disease.cholesterol-015"  order: 05 01 04
-  McshHlth000011:14529  "disease.otitis-156"  order: 04 01
-  McshHlth000011:13842  "disease.bronchial-asthma-144"  order: 03 04 07 01
-  McshHlth000011:13657  "disease.bronchiolitis-142"  order: 01 02 06 04 05
-  McshHlth000011:13529  "disease.gastroenteritis-sigkella-140"  order: 02 05 01
-  McshHlth000011:13165  "disease.Ams-136"  order: 04 05 01
-  McshHlth000011:12025  "disease.peptic-ulcer-216"  order: 02 05 04
-  McshHlth000011:10396  "disease.diphtheria-178"  order: 01 02 05 04
-  McshHlth000011:10073  "disease.meningitis-174"  order: 01 02 10 05
-  McshHlth000011:4424  "disease.leukemia-069"  order: 02 01
-  McshHlth000011:4276  "disease.tuberculosis-073"  order: 02 07 05 01 04
-  McshHlth000011:4063  "disease.nausea-067"  order: 01 02 05 04
-  McshHlth000011:3657  "disease.overactive-bladder-060"  order: 02 01 04
-  McshHlth000011:3515  "disease.kidney-stone-218"  order: 02 05 04
-  McshHlth000011:2840  "DssSysCirculatory.hypertension-042"  order: 05 01 04
-  McshHlth000011:2670  "DssSysCirculatory.anemia-058"  order: 02 04 01
-  McshHlth000013:5841  "food.vegetable-079"  order: 03 01
-  McshHlth000019:20  "overview of SystNervous"  order: 01 02 05 03 04 04
-  McshOgm000003:20  "overview of Ogsm"  order: 03 04 05 06 08 09 11 10
-  McshOgm000005:432  "SystMolsHmn.secretory-product"  order: 09 08
-  McshStn000008:20  "overview of Ogzn"  order: 01 05 08 09 11 10
-  McshStn000014:20  "overview of ogznCsmg"  order: 01 05 09 11 10
-  McshStn000015:20  "overview of OgznPrdg"  order: 01 05 07 08 09 11 10
-  McshStn000019:20  "overview of SocAlgo"  order: 03 10 09 11
-  McshStn000021:20  "overview of SocGlbl"  order: 01 03 07 09 11 10
-  McshTchInf000007:1463  "Cnkn_lago.frame-037"  order: 03 05 04
-  McshTchInf000009:20  "overview of Mcsh_lago"  order: 03 07 06
-  McshTchInf000016:11878  "AgntBkcn.time.Dash-DASH {2014-01-19}"  order: 02 04 06 10 09
-  McshTchInf000017:20  "overview of AgntBtcn"  order: 02 03 04 10 07 09 11 13
-  McshTchInf000018:21  "overview of AgntEthr"  order: 02 03 04 05 10 06 07 08 09 11
-  McshTchInf000019:4392  "OgznDao.eosDAC (EOS-net)"  order: 02 09 11 10
-  McshTchInf000019:20  "overview of OgznDao"  order: 01 02 09 11 10
-  McshTchInf000022:20  "overview of Faircoin-net"  order: 02 03 04 10 06 09 11 13
-  McshTchInf000028:20  "overview of DnDiem"  order: 01 05 02 03 04 06 07 09 12 13
-  McshTchInf000031:20  "overview of Cppz_lago"  order: 02 03 09 04 05
-  McshTchInf000039:5151  "lagoLogic.conceptual-graphs-{1976..}"  order: 04 02 03
+=== INH-ORDER (0) — the-attributes of a-specific are not in the-NN order of its generic
 
-=== INH-GENDUP (6) — a-numbered generic gives the-same NN_ to two attributes: renumber
-  McshHlth000002:1461  "03_artery of organ"  03_ also "03_cell of organ" :1446
-  McshHlth000002:1151  "04_evoluting of SystOrgans"  04_ also "04_DOING of SystOrgans" :1121
-  McshHlth000007:131  "06_EVOLUTING of healthOgm"  06_ also "06_environment of healthOgm" :118
-  McshLag000007:30161  "07_linguistics of Hmnm_lago"  07_ also "07_grammar of Hmnm_lago" :29997
-  McshStn000007:143  "03_governance-system of societyOgm"  03_ also "03_node-of-satisfiers of societyOgm" :124
-  McshTchInf000015:6481  "08_resource of DeApp"  08_ also "08_MISC-ATTRIBUTE of DeApp" :6455
+=== INH-GNTRTEXT (1) — a-generic "X-Gntr" in generic-tree:: that does NOT resolve to one concept
+  McshCor000002:163  #idMcsattNamcvngstr  convention-Gntr: not defined, no concept named convention
 
-=== INH-LOCAL (75) — an-attribute in 3+ specifics, not in the-generic: lift it up?
-  structure of organ@McshHlth000002  ×37  McshHlth000002:1850 McshHlth000002:2106 McshHlth000002:2231 McshHlth000002:2457 McshHlth000002:2596 McshHlth000002:2934 McshHlth000002:3068 McshHlth000002:3212 …
-  evoluting of entity@McshCor000003  ×31  Mcsh000000:345 McshCor000002:4881 McshCor000007:798 McshCor000009:1226 McshEdu000002:684 McshLag000002:156 McshLag000003:252 McshLag000003:1090 …
-  info-resource of entity@McshCor000003  ×29  Mcsh000000:232 McshCor000002:4515 McshCor000007:787 McshCor000009:368 McshEdu000002:560 McshLag000002:68 McshLag000003:231 McshLag000003:1062 …
-  doing of organ@McshHlth000002  ×29  McshHlth000002:1864 McshHlth000002:2472 McshHlth000002:2568 McshHlth000002:3402 McshHlth000002:3483 McshHlth000002:6842 McshHlth000002:7317 McshHlth000002:7394 …
+=== INH-REFBROKEN (0) — a-text-reference name!@File#id whose file or id does NOT exist
+
+=== INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
+
+=== INH-LOCAL (77) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  structure of organ@McshHlth000002  ×37  McshHlth000002:1851 McshHlth000002:2107 McshHlth000002:2232 McshHlth000002:2458 McshHlth000002:2597 McshHlth000002:2935 McshHlth000002:3069 McshHlth000002:3213 …
+  evoluting of entity@McshCor000003  ×33  Mcsh000000:346 McshCor000002:4881 McshCor000007:798 McshCor000009:1226 McshEdu000002:684 McshHlth000016:220 McshLag000002:156 McshLag000003:252 …
+  info-resource of entity@McshCor000003  ×31  Mcsh000000:233 McshCor000002:4515 McshCor000007:787 McshCor000009:368 McshEdu000002:560 McshHlth000016:196 McshLag000002:68 McshLag000003:231 …
+  doing of organ@McshHlth000002  ×29  McshHlth000002:1865 McshHlth000002:2473 McshHlth000002:2569 McshHlth000002:3403 McshHlth000002:3484 McshHlth000002:6844 McshHlth000002:7319 McshHlth000002:7396 …
   evoluting of Sctn@McshStn000002  ×26  McshStn000009:6994 McshStn000009:8811 McshStn000009:9138 McshStn000009:9872 McshStn000009:10056 McshStn000009:10117 McshStn000009:10192 McshStn000009:10257 …
+  info-resource of Hmnm_lago@McshLag000007  ×24  McshLag000007:31377 McshLag000007:32075 McshLag000008:687 McshLag000009:4042 McshLag000010:5779 McshLag000011:29896 McshLag000012:4998 McshLag000018:16281 …
   ingredient of foodCooked@McshHlth000013  ×23  McshHlth000013:3061 McshHlth000013:7697 McshHlth000013:7789 McshHlth000013:7884 McshHlth000013:7939 McshHlth000013:8022 McshHlth000013:8095 McshHlth000013:8220 …
+  evoluting of Hmnm_lago@McshLag000007  ×23  McshLag000007:31421 McshLag000008:752 McshLag000009:4201 McshLag000010:5891 McshLag000011:30048 McshLag000012:5108 McshLag000018:16655 McshLag000030:7967 …
   structure of organBone@McshHlth000005  ×18  McshHlth000005:3463 McshHlth000005:3756 McshHlth000005:4286 McshHlth000005:4343 McshHlth000005:4976 McshHlth000005:5544 McshHlth000005:3797 McshHlth000005:3835 …
   evoluting of Knlg_lago@McshTchInf000039  ×18  McshTchInf000039:4450 McshTchInf000039:4734 McshTchInf000039:4977 McshTchInf000039:5078 McshTchInf000039:5487 McshTchInf000039:5666 McshTchInf000039:5801 McshTchInf000039:5901 …
-  secretory-product of organ@McshHlth000002  ×17  McshHlth000002:1814 McshHlth000002:1997 McshHlth000002:2072 McshHlth000002:2445 McshHlth000002:2581 McshHlth000002:2675 McshHlth000002:2719 McshHlth000002:2922 …
+  secretory-product of organ@McshHlth000002  ×17  McshHlth000002:1815 McshHlth000002:1998 McshHlth000002:2073 McshHlth000002:2446 McshHlth000002:2582 McshHlth000002:2676 McshHlth000002:2720 McshHlth000002:2923 …
   human-view of Sctn@McshStn000002  ×17  McshStn000031:71 McshStn000035:81 McshStn000036:75 McshStn000037:101 McshStn000038:98 McshStn000039:111 McshStn000040:91 McshStn000041:136 …
   economic-view of Sctn@McshStn000002  ×17  McshStn000031:2813 McshStn000035:3500 McshStn000036:120 McshStn000037:2053 McshStn000038:1710 McshStn000039:2149 McshStn000040:1498 McshStn000041:1428 …
-  doing of entity@McshCor000003  ×15  Mcsh000000:329 McshCor000002:4607 McshCor000007:223 McshEdu000002:627 McshLag000002:79 McshLag000003:236 McshLag000005:126 McshStnlaw000002:1025 …
-  resource of disease@McshHlth000011  ×15  McshHlth000011:1765 McshHlth000011:2886 McshHlth000011:5928 McshHlth000011:6155 McshHlth000011:8254 McshHlth000011:8390 McshHlth000011:8475 McshHlth000011:8814 …
-  info-resource of Hmnm_lago@McshLag000007  ×14  McshLag000007:31377 McshLag000007:32075 McshLag000008:687 McshLag000009:4042 McshLag000010:5779 McshLag000011:29896 McshLag000012:4998 McshLag000018:16282 …
-  evoluting of Hmnm_lago@McshLag000007  ×13  McshLag000007:31421 McshLag000008:752 McshLag000009:4201 McshLag000010:5891 McshLag000011:30048 McshLag000012:5108 McshLag000018:16656 McshLag000030:7967 …
+  doing of entity@McshCor000003  ×15  Mcsh000000:330 McshCor000002:4607 McshCor000007:223 McshEdu000002:627 McshLag000002:79 McshLag000003:236 McshLag000005:126 McshStnlaw000002:1025 …
+  resource of disease@McshHlth000011  ×15  McshHlth000011:1765 McshHlth000011:2896 McshHlth000011:5928 McshHlth000011:6155 McshHlth000011:8254 McshHlth000011:8390 McshHlth000011:8475 McshHlth000011:8814 …
   info-resource of Knlg_lago@McshTchInf000039  ×11  McshTchInf000039:3529 McshTchInf000039:3644 McshTchInf000039:4413 McshTchInf000039:5419 McshTchInf000039:6089 McshTchInf000039:7928 McshTchInf000039:10360 McshTchInf000039:10935 …
   info-resource of AgntBkcn@McshTchInf000016  ×10  McshTchInf000016:5970 McshTchInf000016:6969 McshTchInf000016:7862 McshTchInf000016:12935 McshTchInf000016:14776 McshTchInf000017:8868 McshTchInf000018:12144 McshTchInf000021:3196 …
   manager of entity@McshCor000003  ×7  McshCor000002:2785 McshCor000002:5080 McshCor000002:5109 McshCor000002:5237 McshCor000002:5344 McshCor000002:5367 McshCor000002:5386
   evaluation of Knlg_lago@McshTchInf000039  ×7  McshTchInf000039:3859 McshTchInf000039:4431 McshTchInf000039:4952 McshTchInf000039:5358 McshTchInf000039:7916 McshTchInf000039:11394 McshTchInf000039:15952
-  structure of entity@McshCor000003  ×6  Mcsh000000:243 McshCor000002:4594 McshLag000003:1077 McshTchInf000013:1322 McshTch000002:230 McshTch000003:65
-  evoluting of organ@McshHlth000002  ×6  McshHlth000002:3312 McshHlth000002:3544 McshHlth000002:7030 McshHlth000003:3548 McshHlth000005:461 McshHlth000005:3268
-  evaluation of Hmnm_lago@McshLag000007  ×6  McshLag000010:5752 McshLag000012:4986 McshLag000018:16233 McshLag000035:2370 McshLag000036:2791 McshLag000043:3409
+  structure of entity@McshCor000003  ×6  Mcsh000000:244 McshCor000002:4594 McshLag000003:1076 McshTchInf000013:1322 McshTch000002:230 McshTch000003:65
+  evoluting of organ@McshHlth000002  ×6  McshHlth000002:3313 McshHlth000002:3545 McshHlth000002:7032 McshHlth000003:3548 McshHlth000005:461 McshHlth000005:3268
   disease of SystMolsOgm@McshOgm000005  ×6  McshOgm000005:459 McshOgm000005:1234 McshOgm000005:1635 McshOgm000005:2697 McshOgm000005:2831 McshOgm000005:3116
   info-resource of Sctn@McshStn000002  ×6  McshStn000009:6606 McshStn000009:9545 McshStn000009:9736 McshStn000009:9994 McshStn000019:653 McshStn000031:12729
   human of AgntBkcn@McshTchInf000016  ×6  McshTchInf000016:12920 McshTchInf000017:7975 McshTchInf000018:11662 McshTchInf000021:2902 McshTchInf000022:1233 McshTchInf000024:3728
   info-resource of DeApp@McshTchInf000015  ×6  McshTchInf000020:3137 McshTchInf000021:2636 McshTchInf000021:2857 McshTchInf000025:1071 McshTchInf000026:1469 McshTchInf000026:1769
   info-resource of disease@McshHlth000011  ×5  McshHlth000011:1147 McshHlth000011:1438 McshHlth000011:1959 McshHlth000011:2058 McshHlth000011:5785
   mainno-food of foodCooked@McshHlth000013  ×5  McshHlth000013:4008 McshHlth000013:8498 McshHlth000013:8546 McshHlth000013:9133 McshHlth000013:9299
-  referent of entity@McshCor000003  ×5  McshLag000002:49 McshLag000003:47 McshLag000003:329 McshLag000003:495 McshNtr000011:45
+  referent of entity@McshCor000003  ×5  McshLag000002:49 McshLag000003:47 McshLag000003:328 McshLag000003:494 McshNtr000011:45
   info-resource of OgznPrdg@McshStn000015  ×5  McshStn000015:1403 McshStn000015:4899 McshStn000015:5077 McshStn000015:5187 McshStn000015:5526
   algo (output) of Pgmg_lago@McshTchInf000006  ×5  McshTchInf000006:1679 McshTchInf000006:1732 McshTchInf000006:1774 McshTchInf000006:1835 McshTchInf000030:55
   organization of AgntBkcn@McshTchInf000016  ×5  McshTchInf000017:8188 McshTchInf000018:11955 McshTchInf000021:3068 McshTchInf000022:1263 McshTchInf000024:3805
+  asset of Ogzn@McshStn000008  ×5  McshTchInf000019:459 McshTchInf000019:2492 McshTchInf000019:2697 McshTchInf000019:3157 McshTchInf000019:4684
   info-resource of Cmprprgm@McshTchPrgm000002  ×5  McshTchPrgm000002:362 McshTchPrgm000002:715 McshTchPrgm000002:2327 McshTchPrgm000002:2359 McshTchPrgm000005:632
-  logo-relation of entity@McshCor000003  ×4  McshCor000002:2754 McshCor000003:6142 McshLag000018:410 McshLag000018:489
-  info-resource of model@McshCor000012  ×4  McshCor000012:842 McshCor000012:1132 McshLag000003:582 McshLag000003:779
+  logo-relation of entity@McshCor000003  ×4  McshCor000002:2754 McshCor000003:6145 McshLag000018:410 McshLag000018:489
+  info-resource of model@McshCor000012  ×4  McshCor000012:842 McshCor000012:1132 McshLag000003:581 McshLag000003:778
+  info-resource of SystOrgans@McshHlth000002  ×4  McshHlth000002:11536 McshHlth000005:5691 McshHlth000005:2947 McshHlth000019:5532
   attribute of Hmnm_lago@McshLag000007  ×4  McshLag000008:699 McshLag000009:4059 McshLag000010:5791 McshLag000012:5013
+  evaluation of Hmnm_lago@McshLag000007  ×4  McshLag000010:5752 McshLag000012:4986 McshLag000018:16232 McshLag000043:3409
+  letter of Hmnm_lago@McshLag000007  ×4  McshLag000034:3475 McshLag000034:4449 McshLag000034:4943 McshLag000034:5963
   celex-sector-number of lawEus@McshStnlaw000003  ×4  McshStnlaw000003:1178 McshStnlaw000003:2465 McshStnlaw000003:2809 McshStnlaw000003:2923
   evoluting of Pgmg_lago@McshTchInf000006  ×4  McshTchInf000006:3093 McshTchInf000006:3227 McshTchInf000030:4066 McshTchInf000031:2674
   human of entity@McshCor000003  ×4  McshTchInf000010:6129 McshTchInf000012:8291 McshTchInf000012:9968 McshTchInf000013:1518
@@ -1092,20 +985,18 @@ SUMMARY
   scope of HumnSngu@McshHmn000003  ×4  McshTchInf000010:346 McshTchInf000010:2816 McshTchInf000010:3168 McshTchInf000011:1006
   evoluting of AgntBkcn@McshTchInf000016  ×4  McshTchInf000016:6988 McshTchInf000016:7880 McshTchInf000016:12967 McshTchInf000018:12442
   doing of AgntBkcn@McshTchInf000016  ×4  McshTchInf000017:8933 McshTchInf000018:12244 McshTchInf000021:3225 McshTchInf000024:4007
-  asset of OgznDao@McshTchInf000019  ×4  McshTchInf000019:2497 McshTchInf000019:2702 McshTchInf000019:3162 McshTchInf000019:4689
+  governance of Ogzn@McshStn000008  ×4  McshTchInf000019:541 McshTchInf000019:2708 McshTchInf000019:3433 McshTchInf000019:4782
   relation of entity@McshCor000003  ×3  McshCor000007:171 McshCor000007:2183 McshCor000013:89
   relation of FctgBraining@McshCor000018  ×3  McshCor000009:1110 McshCor000018:1822 McshCor000018:2617
   evoluting of FctgSensing@McshCor000018  ×3  McshCor000018:642 McshCor000018:785 McshCor000018:850
   info-resource of FctgEmoting@McshCor000018  ×3  McshCor000018:3292 McshHlth000011:7464 McshHlth000011:7659
-  info-resource of SystOrgans@McshHlth000002  ×3  McshHlth000002:11534 McshHlth000005:5691 McshHlth000005:2947
-  structure of bodyHumn@McshHlth000002  ×3  McshHlth000002:12040 McshHlth000002:12254 McshHlth000002:12415
+  structure of bodyHumn@McshHlth000002  ×3  McshHlth000002:12042 McshHlth000002:12256 McshHlth000002:12417
   resource of food@McshHlth000013  ×3  McshHlth000013:3445 McshHlth000013:5227 McshHlth000013:8789
   time of foodCooked@McshHlth000013  ×3  McshHlth000013:8253 McshHlth000013:8373 McshHlth000013:11000
   recipe of food@McshHlth000013  ×3  McshHlth000013:8698 McshHlth000013:8742 McshHlth000013:10128
   evoluting of therapy@McshHlth000016  ×3  McshHlth000016:887 McshHlth000016:1535 McshHlth000018:116
-  doing of Ogsm_lago@McshLag000005  ×3  McshLag000005:313 McshLag000007:30480 McshTchInf000005:509
   doing of Hmnm_lago@McshLag000007  ×3  McshLag000009:4112 McshLag000031:131 McshTchInf000007:1055
-  evoluting of chmElry@McshNtr000007  ×3  McshNtr000007:521 McshNtr000007:3966 McshNtr000007:4325
+  evoluting of ChmcElry@McshNtr000007  ×3  McshNtr000007:508 McshNtr000007:3953 McshNtr000007:4312
   node-producing of SystMolsOgm@McshOgm000005  ×3  McshOgm000005:1239 McshOgm000005:1914 McshOgm000005:2702
   evaluation of Sctn@McshStn000002  ×3  McshStn000009:9519 McshStn000015:913 McshStn000031:12469
   evaluation of SocEcon@McshStn000012  ×3  McshStn000012:3161 McshStn000012:3248 McshStn000012:3524
@@ -1123,41 +1014,46 @@ SUMMARY
   package.json-file of entity@McshCor000003  ×3  McshTchInf000012:5151 McshTchInf000012:9987 McshTchInf000013:1259
   info-resource of money@McshStn000029  ×3  McshTchInf000015:4048 McshTchInf000015:4385 McshTchInf000015:4600
   account of AgntBkcn@McshTchInf000016  ×3  McshTchInf000018:2952 McshTchInf000021:1529 McshTchInf000024:2176
-  governance of OgznDao@McshTchInf000019  ×3  McshTchInf000019:2713 McshTchInf000019:3438 McshTchInf000019:4787
+  law of Ogzn@McshStn000008  ×3  McshTchInf000019:959 McshTchInf000019:1446 McshTchInf000019:5989
+  organization of Ogzn@McshStn000008  ×3  McshTchInf000019:991 McshTchInf000019:3009 McshTchInf000019:5958
 
-=== INFO (230) — how many specifics refine each numbered generic-attribute
+=== INFO (235) — how many specifics refine each numbered generic-attribute
      70  disease'04_therapy@McshHlth000011#idDssHmn004F
      58  disease'05_protection@McshHlth000011#idDssHmn005F
      52  disease'02_cause@McshHlth000011#idDssHmn002F
      51  disease'01_symptom@McshHlth000011#idDssHmn001F
      40  foodCooked'01_recipe@McshHlth000013#idFoodHmn050att001
+     22  Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
+     20  Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
+     20  Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
      19  organ'01_disease@McshHlth000002#idOgnHmnatt004
      19  bio'09_resource@McshOgm000002#idBioirsc
      17  societyOgm'09_language@McshStn000007#idSocOgmatt009
+     16  model'12_evaluation@McshCor000012#idMdlatt011
      15  bio'11_DOING@McshOgm000002#idBiodng
-     14  material'10_EVOLUTING@McshNtr000002#idMtrlevg
+     14  material'10_evoluting@McshNtr000002#idMtrlevg
      12  material'09_doing@McshNtr000002#idMtrldng
      12  food'03_evaluation@McshHlth000013#idFoodHmnatt007
-     12  Hmnm_lago'04_output-(logo-view)@McshLag000007#idLHmnmopt
      11  bodyNo'01_argument@McshCor000003#idEntBodyNarg
      11  disorderBio'10_evoluting@McshHlth000006#idDsdrevg
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
      10  SystOrgans'01_disease@McshHlth000002#idSysOgnHmnatt002
      10  SystOrgans'02_organ@McshHlth000002#idSysOgnHmnatt001
-     10  Hmnm_lago'01_input1-(mind-view)@McshLag000007#idLHmnmipt1
-     10  Hmnm_lago'03_input3-(semu-view)@McshLag000007#idLHmnmipt3
+     10  Hmnm_lago'02_input2-(senso-mind--view)@McshLag000007#idLHmnmipt2
      10  Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
       9  doing'01_argument@McshCor000004#idDngatt001
-      8  system'03_resource@McshCor000011#idSysirsc
+      9  system'03_resource@McshCor000011#idSysirsc
+      8  system'06_DOING@McshCor000011#idSysdng
       8  FctgBrainingBio'01_argument@McshCor000013#idBrngarg
       8  SystOrgans'03_structure@McshHlth000002#idSysOgnHmnsrtrF
       8  cell'19_DOING@McshHlth000004#idCellHmnatt007
       8  cell'18_structure@McshHlth000004#idCellHmnatt008
       8  AgntBkcn'02_protocol@McshTchInf000016#idDbcprl
       8  Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
-      7  system'06_DOING@McshCor000011#idSysdng
       7  SystOrgans'04_DOING@McshHlth000002#idSysOgnHmndng
+      7  material'07_info-resource@McshNtr000002#idMtrlirsc
       7  netAlgo'06_governance-system@McshTchInf000015#idAlgntgov
+      6  doing'07_evoluting@McshCor000004#idDngevg
       6  FctgBraining'01_argument@McshCor000018#idBrngHmnFctarg
       6  cell'20_evoluting@McshHlth000004#idCellHmnatt006
       6  AgntBkcn'04_blockchain@McshTchInf000016#idDbcdat
@@ -1165,39 +1061,37 @@ SUMMARY
       6  AgntBkcn'03_node@McshTchInf000016#idDbcnod
       6  Ogzn'02_stakeholder-node@McshStn000008#idOgznatt024
       6  Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
-      5  model'12_evaluation@McshCor000012#idMdlatt011
+      5  doing'06_resource@McshCor000004#idDngirsc
+      5  system'01_node@McshCor000011#idSysnodeF
+      5  system'07_evoluting@McshCor000011#idSysevg
       5  FctgEmoting'03_emotion@McshCor000018#idBrngHmnFct004emn
-      5  material'07_info-resource@McshNtr000002#idMtrlirsc
       5  Cmpr_lago'03_output@McshTchInf000005#idLCmpropt
       5  AgntBkcn'07_program@McshTchInf000016#idDbcpgm
       5  AgntBkcn'11_evaluation@McshTchInf000016#idDbceln
-      4  doing'07_evoluting@McshCor000004#idDngevg
-      4  system'01_node@McshCor000011#idSysnodeF
-      4  system'07_EVOLUTING@McshCor000011#idSysevg
+      4  entity'01_attribute@McshCor000003#idEntatt
+      4  system'05_structure@McshCor000011#idSysstrrF
       4  science'03_rlnReferent@McshEdu000002#idSciatt020
-      4  organ'06_shape@McshHlth000002#idOgnHmnatt008
+      4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis-doing@McshHlth000011#idDssHmn003
       4  food'01_ingredient@McshHlth000013#idFoodHmnatt001
-      4  chmElry'11_usage@McshNtr000007#idChmElratt012
+      4  ChmcElry'11_usage@McshNtr000007#idChmElratt012
       4  sctnOgms'01_node@McshStn000002#idStnOgmatt004
       4  sctnOgms'03_node-of-satisfiers@McshStn000002#idStnOgmatt007
       4  Sctn'01_node@McshStn000002#idStnHmnatt001
       4  Pgmg_lago'02_input|archetype@McshTchInf000006#idLCpgmarch
       4  Cnkn_lago'03_output@McshTchInf000007#idLCnkntopt
       4  AgntBkcn'10_statistics@McshTchInf000016#idDbcstat
-      3  entity'01_attribute@McshCor000003#idEntatt
       3  doing'03_relation@McshCor000004#idDngatt008
-      3  doing'06_resource@McshCor000004#idDngirsc
-      3  system'05_structure@McshCor000011#idSysstrrF
+      3  system'02_node-relation@McshCor000011#idSysndrn
       3  organ'03_cell@McshHlth000002#idOgnHmnatt012
-      3  organ'07_size@McshHlth000002#idOgnHmnatt009
+      3  organ'08_size@McshHlth000002#idOgnHmnatt009
       3  food'02_calorie@McshHlth000013#idFoodHmnatt006
       3  therapy'01_indication@McshHlth000016#idThrpHmnatt001
-      3  chmElry'08_occurance@McshNtr000007#idChmElratt009
+      3  ChmcElry'08_occurance@McshNtr000007#idChmElratt009
       3  ogmCellNo'12_evoluting@McshOgm000008#idOgmCllNevg
       3  sctnOgms'07_place@McshStn000002#idStnOgmatt010
       3  Sctn'05_health@McshStn000002#idStnHmnatt005
-      3  techCmpr'07_EVOLUTING@McshTchInf000003#idCmrevg
+      3  techCmpr'07_evoluting@McshTchInf000003#idCmrevg
       3  Cmpr_lago'01_computer@McshTchInf000005#idLCmpruser
       3  netAlgo'05_asset@McshTchInf000015#idAlgntevu
       3  netAlgo'13_law@McshTchInf000015#idAlgntlaw
@@ -1206,14 +1100,12 @@ SUMMARY
       2  doing'02_valence@McshCor000004#idDngatt002
       2  doing'05_risk@McshCor000004#idDngatt004
       2  whole'07_DOING@McshCor000008#idWhldng
-      2  whole'05_resource@McshCor000008#idWhlirsc
-      2  system'02_node-relation@McshCor000011#idSysndrn
       2  FctgEmotingBio'01_argument@McshCor000013#idBrngEmtgarg
       2  FctgEmoting'04_stimulus@McshCor000018#idBrngHmnFct004stml
       2  FctgEmoting'02_human@McshCor000018#idBrngHmnFct004hmn
       2  FctgEmoting'01_argument@McshCor000018#idBrngHmnFct004arg
       2  cellOgm'02_membrane@McshOgm000007#idCellOgmatt001
-      2  SystOrgans'04_evoluting@McshHlth000002#idSysOgnHmnvgF
+      2  SystOrgans'05_evoluting@McshHlth000002#idSysOgnHmnvgF
       2  organ'02_tissue@McshHlth000002#idOgnHmnatt010
       2  healthBio'02_disorder@McshHlth000006#idDsdr
       2  healthBio'03_disorderNo@McshHlth000006#idHlthBioatt003
@@ -1233,13 +1125,13 @@ SUMMARY
       2  food'06_price@McshHlth000013#idFoodHmnatt012
       2  medication'02_indication@McshHlth000014#idMedHmnatt002
       2  Infrsc'07_citation-format@McshLag000013#idInfrscfrmt
-      2  chmElry'12_toxicity@McshNtr000007#idChmElratt014
+      2  ChmcElry'12_toxicity@McshNtr000007#idChmElratt014
       2  bio'03_health@McshOgm000002#idBioatt003
       2  bio'08_size@McshOgm000002#idBioatt008
+      2  MtrlMol'05_DOING@McshNtr000004#idMoldng
       2  ogmCellNo'10_structure@McshOgm000008#idOgmCllNsrtr
       2  sctnOgms'02_node-of-organisms@McshStn000002#idStnOgmatt011
       2  Ogzn'07_place@McshStn000008#idOgznatt007
-      2  Ogzn'01_node@McshStn000008#idOgznatt018
       2  techCmpr'04_resource@McshTchInf000003#idCmrirsc
       2  Cmpr_lago'02_input@McshTchInf000005#idLCmpript
       2  Pgmg_lago'03_output|algo@McshTchInf000006#idLCpgmalg
@@ -1263,10 +1155,11 @@ SUMMARY
       1  worldview'03_view@McshLag000003#idWldvatt004
       1  worldview'04_management-tool@McshLag000003#idWldvatt002
       1  worldview'01_human@McshLag000003#idWldvatt001
-      1  bodyNo'03_direction@McshCor000003#idEntBodyNdrn
+      1  bodyNo'03_sequence@McshCor000003#idEntBodyNdrn
       1  whole'02_part@McshCor000008#idWhlprt
+      1  whole'05_resource@McshCor000008#idWhlirsc
       1  whole'06_structure@McshCor000008#idWhlsrtr
-      1  whole'08_EVOLUTING@McshCor000008#idWhlevg
+      1  whole'08_evoluting@McshCor000008#idWhlevg
       1  system'04_science@McshCor000011#idSyssciF
       1  model'01_archetype@McshCor000012#idMdlatt001
       1  model'03_mapping-method@McshCor000012#idMdlatt003
@@ -1279,9 +1172,9 @@ SUMMARY
       1  nutrient'02_indication@McshHlth000002#idBdyHmnatt015att005
       1  nutrient'03_dietary-recommendation@McshHlth000002#idBdyHmnatt015att003
       1  nutrient'04_food-source@McshHlth000002#idBdyHmnatt015att004
-      1  organ'03_artery@McshHlth000002#idOgnHmnatt005
-      1  organ'04_vein@McshHlth000002#idOgnHmnatt006
-      1  organ'05_nerve@McshHlth000002#idOgnHmnatt007
+      1  organ'04_artery@McshHlth000002#idOgnHmnatt005
+      1  organ'05_vein@McshHlth000002#idOgnHmnatt006
+      1  organ'06_nerve@McshHlth000002#idOgnHmnatt007
       1  cellOgm'01_disease@McshOgm000007#idCellOgmatt013
       1  cellOgm'03_cytoplasm@McshOgm000007#idCellOgmatt012
       1  cellOgm'04_organelle@McshOgm000007#idCellOgmatt003
@@ -1302,7 +1195,7 @@ SUMMARY
       1  DssOgm'06_food@McshHlth000010#idDssOgmfoodF
       1  DssOgm'07_stats@McshHlth000010#idDssHmn008
       1  DssOgm'09_DOING@McshHlth000010#idDssOgmdng
-      1  DssOgm'10_EVOLUTING@McshHlth000010#idDssOgmevg
+      1  DssOgm'10_evoluting@McshHlth000010#idDssOgmevg
       1  DssPlnt'04_therapy@McshHlth000010#idDssPlntatt004
       1  DssPlnt'05_protection@McshHlth000010#idDssPlntatt005
       1  DssInfectious'02_cause@McshHlth000011#idDssHmn001cause
@@ -1315,16 +1208,19 @@ SUMMARY
       1  medication'04_side-effect@McshHlth000014#idMedHmnatt004
       1  therapy'06_therapist@McshHlth000016#idThrpHmnatt006
       1  cell'01_disease@McshHlth000004#idCellHmnatt001
-      1  Ogsm_lago'03_output--logo-view@McshLag000005#idLagoplv
       1  Ogsm_lago'04_grammar@McshLag000005#idLaggrmr
-      1  material'02_physical-property@McshNtr000002#idMtrlatt008
+      1  acting'01_argument@McshCor000004#idDngActgarg
+      1  acting'02_valence@McshCor000004#idDngActgvlc
+      1  acting'03_syntax@McshCor000004#idDngActgstx
+      1  acting'04_risk@McshCor000004#idDngActgrsk
       1  bio'04_material-system@McshOgm000002#idBioatt004
       1  bio'05_material@McshOgm000002#idBioatt005
       1  bio'06_genome@McshOgm000002#idBioatt006
+      1  MtrlMol'01_atom@McshNtr000004#idMolatt001
+      1  MtrlMol'03_shape@McshNtr000004#idMolatt004
       1  material'08_structure@McshNtr000002#idMtrlsrtrF
       1  molOgm'03_shape@McshOgm000004#idMolOgmatt004
       1  molOgm'04_size@McshOgm000004#idMolOgmatt005
-      1  mtrlMol'05_DOING@McshNtr000004#idMoldng
       1  ogmCellNo'08_size@McshOgm000008#idOgmCllNatt008
       1  ogmCellNo'09_resource@McshOgm000008#idOgmCllNirsc
       1  ogmCellNo'11_DOING@McshOgm000008#idOgmCllNdng
@@ -1333,6 +1229,7 @@ SUMMARY
       1  Ogsm'05_material@McshOgm000003#idOgmatt005
       1  oznOgm'08_place@McshStn000006#idOznOgmatt007
       1  Wrkr'03_compensation@McshStn000011#idWkratt004
+      1  Ogzn'01_node@McshStn000008#idOgznatt018
       1  Sctn'04_node-of-governance@McshStn000002#idStnHmnatt004
       1  Ogzn'06_health@McshStn000008#idOgznatt005
       1  Sctn'03_node-of-satisfiers@McshStn000002#idStnHmnatt003
@@ -1345,8 +1242,8 @@ SUMMARY
       1  Cnkn_lago'04_manager@McshTchInf000007#idLCnkntmgr
       1  Cnkn_lago'02_input@McshTchInf000007#idLCnkntipt
       1  Hitp_lago'03_web-app-doc (output)@McshTchInf000008#idLHitpwbpg
-      1  Hitp_lago'07_manager@McshTchInf000008#idLHitpmgr
       1  Hitp_lago'06_evaluation@McshTchInf000008#idLHitpeval
+      1  Hitp_lago'07_manager@McshTchInf000008#idLHitpmgr
       1  SystNet'01_node@McshCor000014#idNetatt002
       1  techInfo'04_law@McshTchInf000002#idTchInfatt003
       1  netAlgo'10_statistics@McshTchInf000015#idAlgntstat

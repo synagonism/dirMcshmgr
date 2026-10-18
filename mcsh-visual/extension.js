@@ -562,7 +562,7 @@ function fMcshForMcshmgr(sFsPath) {
 function fWorldviewRoot(sFsPath, sCode) {
   const sDir = path.dirname(sFsPath);
   if (/^Hitp/i.test(sCode)) return path.dirname(path.dirname(sDir)); // strip dirHitp + dir<Cat>
-  const sAlpha = sCode.replace(/^Mcs/i, '').match(/^[A-Za-z]+/);      // has a category?
+  const sAlpha = sCode.replace(/^Mcsh?/i, '').match(/^[A-Za-z]+/);    // has a category?
   return sAlpha ? path.dirname(sDir) : sDir;                          // strip dir<Cat>, else already root
 }
 
@@ -586,7 +586,7 @@ function fCategories(sRoot) {
  */
 function fPathForCode(sRoot, sCode) {
   const bHitp = /^Hitp/i.test(sCode);
-  const sAlpha = (sCode.replace(/^(Mcs|Hitp)/i, '').match(/^[A-Za-z]+/) || [''])[0];
+  const sAlpha = (sCode.replace(/^(Mcsh|Mcs|Hitp)/i, '').match(/^[A-Za-z]+/) || [''])[0];
   if (!bHitp && !sAlpha) return path.join(sRoot, sCode + '.last.html');   // e.g. Mcs000000
   const sCat = fCategories(sRoot).find((c) => sAlpha.toLowerCase().indexOf(c.toLowerCase()) === 0);
   if (!sCat) return null;

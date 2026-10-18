@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.26-0-0.2026-10-18: !@ concept-reference preview + go-to',
     'mMcsh2.js.25-0-3.2026-09-13: configMcshapp.json',
     'mMcsh2.js.25-0-2.2026-09-02: Site-Menu',
     'mMcsh2.js.25-0-1.2026-09-01: Site-Home',
@@ -242,7 +243,12 @@ let
   oSrchCtx = {},
   // selector for elements with clsClickCnt
   sQrslrAClk,
-  sQrslrAClkLast
+  sQrslrAClkLast,
+  // '!@'-reference preview: dir-code->full-path map (lazy, cached), its build-promise,
+  // and the target-url of the active reference-preview (for go-to on Enter/click).
+  oDirByCode = null,
+  oDirByCodeP = null,
+  sPreviewRefHref = ''
 
 /**
  * Creates new containers and inserts them in the-body-element:
@@ -403,6 +409,7 @@ let fContainersInsert = function () {
     oEltCnrWidthDiv.style.display = 'none' // remove width-cnr
     oEltCnrMenuDiv.style.display = 'none' // remove menu-cnr
     oEltClicked.classList.remove('clsClicked', 'clsTtpShow', 'clsTriClicked') // remove tooltip clicks
+    sPreviewRefHref = '' // no active '!@'-reference preview
   }
 
   // show toc-tab
@@ -717,6 +724,10 @@ let fContainersInsert = function () {
     const sTag = (oEvtIn.target.closest('input, textarea, [contenteditable="true"]') || {}).tagName
     if (sTag === 'INPUT' || sTag === 'TEXTAREA') return
 
+    // '!@'-concept-reference: set by fExpandSelectionRight when the clicked word
+    // is followed by '!@McshDir000000#id' (the reference after '!@', name ignored).
+    let bDblRef = false, sDblRef = ''
+
     // Define what counts as “word” letters, numbers, symbols.
     const rWORD = /[\p{L}\p{N}]/u // letters & numbers
     // :. generic-specific, // / whoel-part, - _ polyword, @ view, ' attribute,
@@ -756,16 +767,38 @@ let fContainersInsert = function () {
           // Expand right over word / symbol chars, all within this text node.
           while (nEnd < sText.length && fIsWord(sText[nEnd])) nEnd++
           if (nEnd <= nStart) return oSel.toString().trim()   // no word char here — leave selection as is
-          const newRange = document.createRange()
-          newRange.setStart(oNode, nStart)
-          newRange.setEnd(oNode, nEnd)
+          // '!@'-reference: the clicked word (name) is followed by '!@<reference>';
+          // select ONLY the reference (McshDir000000#id) and preview it, name ignored.
+          if (sText.substr(nEnd, 2) === '!@') {
+            let nRefStart = nEnd + 2, nRefEnd = nRefStart
+            while (nRefEnd < sText.length && fIsWord(sText[nRefEnd])) nRefEnd++
+            if (nRefEnd > nRefStart) {
+              bDblRef = true
+              sDblRef = sText.substring(nRefStart, nRefEnd)
+              const oRangeRef = document.createRange()
+              oRangeRef.setStart(oNode, nRefStart)
+              oRangeRef.setEnd(oNode, nRefEnd)
+              oSel.removeAllRanges()
+              oSel.addRange(oRangeRef)
+              return sDblRef
+            }
+          }
+          const oRangeNew = document.createRange()
+          oRangeNew.setStart(oNode, nStart)
+          oRangeNew.setEnd(oNode, nEnd)
           oSel.removeAllRanges()
-          oSel.addRange(newRange)
+          oSel.addRange(oRangeNew)
           return oSel.toString().trim()
         }
       }
     }
     let sSelection = fExpandSelectionRight().trim()
+    if (bDblRef) {
+      // concept-reference: preview the referenced page#id directly, ignoring the name
+      sDblRef = sDblRef.replace(/[.:/;@+'-]+$/, '') // clears trailing separators
+      fPreviewReference(sDblRef)
+      return
+    }
     if (sSelection !== '') {
       sSelection = sSelection.replace(/[-_'.:/;@+]*$/, '')
       if (sSelection.startsWith('_'))  sSelection = sSelection.slice(1) //_DESCRIPTION
@@ -1170,49 +1203,163 @@ let fContainersInsert = function () {
   async function fPreviewFirstSuggestion() {
     const nStart = Date.now()
     const nMaxWait = 1200 // miliseconds max
-    let
-      oLi,
-      sLoc = location.href,
-      sId1, sId2,
-      oDoc
+    let oLi
     while (!oLi && (Date.now() - nStart < nMaxWait)) {
       oLi = oEltTabSearchOl.getElementsByTagName('li')[0]
       if (!oLi) {
-        await new Promise(resolve => setTimeout(resolve, 70)) // Poll every 70ms
+        await new Promise(fResolve => setTimeout(fResolve, 70)) // Poll every 70ms
       }
     }
     if (oLi && oLi.children[0]) {
-      sId1 = oLi.children[0].href
-      if (sId1.indexOf('#') > 0) {
-        sId2 = sId1.substring(sId1.indexOf('#') + 1)
-        sId1 = sId1.substring(0, sId1.indexOf('#'))
-      }
-      if (sLoc.indexOf('#') > 0) {
-        sLoc = sLoc.substring(0, sLoc.indexOf('#'))
-      }
-      // internal-link
-      if (sLoc === sId1) {
-        fPreviewSetNode(document.getElementById(sId2))
-      } else {
-        oEltCnrPreviewDiv.replaceChildren()
-        fetch(sId1)
-        .then(response => response.text())
-        .then(data => {
-          oDoc = (new DOMParser()).parseFromString(data, 'text/html')
-          // IF #fragment url, display only that element, else whole <body>.
-          fPreviewSetNode(sId2 ? oDoc.getElementById(sId2) : oDoc.body)
-        })
-        .catch(error => console.warn(error))
-      }
-      oEltCnrPreviewDiv.style.top = '33px'
-      oEltCnrPreviewDiv.style.left = '25%'
-      oEltCnrPreviewDiv.style.width = '70%'
-      oEltCnrPreviewDiv.style.height = '40%'
-      oEltCnrPreviewDiv.style.display = 'block'
+      sPreviewRefHref = '' // a name-suggestion preview, not a '!@'-reference
+      fPreviewUrl(oLi.children[0].href)
     } else {
       console.warn('No first suggestion found')
     }
   }
+
+  /**
+   * DOING: previews a-full-url in the-preview-cnr.
+   *   IF the-url is the-current-page, shows its #id element,
+   *   ELSE fetches the-page and shows its #id element (or <body>).
+   * INPUT: sUrlIn = full href, maybe with #id
+   */
+  function fPreviewUrl(sUrlIn) {
+    let
+      sLoc = location.href,
+      sId1 = sUrlIn,
+      sId2 = ''
+    if (sId1.indexOf('#') > 0) {
+      sId2 = sId1.substring(sId1.indexOf('#') + 1)
+      sId1 = sId1.substring(0, sId1.indexOf('#'))
+    }
+    if (sLoc.indexOf('#') > 0) {
+      sLoc = sLoc.substring(0, sLoc.indexOf('#'))
+    }
+    // internal-link
+    if (sLoc === sId1) {
+      fPreviewSetNode(document.getElementById(sId2))
+    } else {
+      oEltCnrPreviewDiv.replaceChildren()
+      fetch(sId1)
+      .then(oRes => oRes.text())
+      .then(sTxt => {
+        const oDoc = (new DOMParser()).parseFromString(sTxt, 'text/html')
+        // IF #fragment url, display only that element, else whole <body>.
+        fPreviewSetNode(sId2 ? oDoc.getElementById(sId2) : oDoc.body)
+      })
+      .catch(oErr => console.warn(oErr))
+    }
+    oEltCnrPreviewDiv.style.top = '33px'
+    oEltCnrPreviewDiv.style.left = '25%'
+    oEltCnrPreviewDiv.style.width = '70%'
+    oEltCnrPreviewDiv.style.height = '40%'
+    oEltCnrPreviewDiv.style.display = 'block'
+  }
+
+  /**
+   * DOING: builds (once, cached) a-map dir-code -> full-worldview-path
+   *   by walking the-Mcshqnt-tree: Mcshqnt.root.json lists top-dirs,
+   *   each dir's Mcshqnt.json lists its child-dirs as full-paths.
+   * OUTPUT: promise of {Cor:'dirCor', Ucd:'dirTchInf/dirUcd'}
+   */
+  function fBuildDirMap() {
+    if (oDirByCode) return Promise.resolve(oDirByCode)
+    if (oDirByCodeP) return oDirByCodeP
+    oDirByCodeP = (async function () {
+      const
+        oMap = {},
+        oSetVisited = new Set(),
+        aQueue = []
+      // the-dir-entries of a-Mcshqnt-array: not meta (;..), not a-page (.last.html).
+      // root-entries are bare ('dirCor'); child-entries are full-paths ('dirTchInf/dirUcd');
+      // both are worldview-root-relative, so queue the-entry as-is.
+      function fAddDirs(aMcshqnt) {
+        for (let n = 1; n < aMcshqnt.length; n++) {
+          const sEntry = aMcshqnt[n][0]
+          if (sEntry.startsWith(';') || sEntry.endsWith('.last.html')) continue
+          if (!oSetVisited.has(sEntry)) aQueue.push(sEntry)
+        }
+      }
+      try {
+        const oResRoot = await fetch(sPathSite + sWorldview + '/Mcshqnt.root.json') // nnnFv
+        fAddDirs(await oResRoot.json())
+      } catch (oErr) { console.warn(oErr) }
+      while (aQueue.length) {
+        const sDirFull = aQueue.shift()
+        if (oSetVisited.has(sDirFull)) continue
+        oSetVisited.add(sDirFull)
+        // code = letters after 'dir' of the-last path-segment (dirTchInf/dirUcd -> Ucd)
+        const sLast = sDirFull.substring(sDirFull.lastIndexOf('/') + 1)
+        if (sLast.startsWith('dir')) oMap[sLast.slice(3)] = sDirFull
+        try {
+          const oRes = await fetch(sPathSite + sWorldview + '/' + sDirFull + '/Mcshqnt.json') // nnnFv
+          fAddDirs(await oRes.json())
+        } catch (oErr) { console.warn(oErr) }
+      }
+      oDirByCode = oMap
+      return oMap
+    })()
+    return oDirByCodeP
+  }
+
+  /**
+   * DOING: turns a-'!@'-reference into a-full-preview-url, resolving nested dirs
+   *   and hex file-numbers (McshUcdU2B00) by matching known dir-codes.
+   * INPUT: sRefIn = 'McshDir000000#id' or 'McshDir000000' (then #idOverview)
+   * OUTPUT: promise of full-url, or '' if the-stem is-not resolvable
+   */
+  async function fRefToUrl(sRefIn) {
+    let
+      sStem = sRefIn,
+      sHash = '#idOverview' // default id when none given
+    const nH = sRefIn.indexOf('#')
+    if (nH >= 0) {
+      sStem = sRefIn.substring(0, nH)
+      if (sRefIn.substring(nH + 1)) sHash = sRefIn.substring(nH)
+    }
+    const sWvPrefix = sWorldview.substring(3) // 'dirMcsh' -> 'Mcsh'
+    if (!sStem.startsWith(sWvPrefix)) return ''
+    // The dir-code is the-letters after the-prefix, BUT a file-number can itself
+    // start with / contain letters (dirUcd uses hex: McshUcd'U2B00'), so a regex
+    // cannot split code from number. Match against the-KNOWN dir-codes instead,
+    // longest first (so 'TchInf' beats 'Tch'). Empty code => a-root-page.
+    const
+      sRest = sStem.slice(sWvPrefix.length),
+      oMap = await fBuildDirMap()
+    let sCode = '', sDirFull = ''
+    for (const sK in oMap) {
+      if (sRest.startsWith(sK) && sK.length > sCode.length) { sCode = sK; sDirFull = oMap[sK] }
+    }
+    if (!sCode && !/^[0-9]/.test(sRest)) return '' // unknown dir-code, not a-root-page
+    return sPathSite + sWorldview + '/' +
+      (sDirFull ? sDirFull + '/' : '') + sStem + '.last.html' + sHash // nnnFv
+  }
+
+  /**
+   * DOING: previews a-'!@'-concept-reference and remembers its url for go-to.
+   * INPUT: sRefIn = 'McshDir000000#id'
+   */
+  async function fPreviewReference(sRefIn) {
+    const sHref = await fRefToUrl(sRefIn)
+    if (!sHref) { console.warn('unresolved reference: ' + sRefIn); return }
+    sPreviewRefHref = sHref // enables go-to on Enter / preview-click
+    fPreviewUrl(sHref)
+  }
+
+  // go-to for a-'!@'-reference preview: Enter navigates to the-referenced page#id,
+  // only while such a-preview is-open and the-focus is-not the-search-input.
+  addEventListener('keyup', function (oEvtIn) {
+    if (oEvtIn.key === 'Enter' && sPreviewRefHref &&
+        oEltCnrPreviewDiv.style.display !== 'none' &&
+        document.activeElement !== oEltTabSearchIpt) {
+      location.href = sPreviewRefHref
+    }
+  })
+  // go-to by clicking the-preview-cnr while a-'!@'-reference preview is-open
+  oEltCnrPreviewDiv.addEventListener('click', function () {
+    if (sPreviewRefHref) location.href = sPreviewRefHref
+  })
 
   oEltTabSearchOl.addEventListener('keyup', function (oEvtIn) {
     let aLi, n, oLi
@@ -2122,6 +2269,7 @@ let fEvtPreview = function (oEvtIn, sContent) {
   let sLoc, sId1, sId2,
     nPx, nWh, nWw,
     oDoc
+  sPreviewRefHref = '' // this is a-link-preview, not a '!@'-reference preview
   oEvtIn.preventDefault()
   oEvtIn.stopPropagation()
   nPx = oEvtIn.pageX
@@ -2790,8 +2938,8 @@ async function fFindNamidxfile(sNameIn, sLagIn, aaNamidxIdxIn) {
   } else {
     sNamidxRefFull = fFindNamidxfileFull(sNamidxOut)
     const response = await fetch(sNamidxRefFull)
-    const json = await response.json()
-    return fFindNamidxfile(sNameIn, sLagIn, json)
+    const aJson = await response.json()
+    return fFindNamidxfile(sNameIn, sLagIn, aJson)
   }
 }
 
@@ -2807,12 +2955,12 @@ async function fSearchName(sNameIn, sLagIn) {
     n
 
   aFile = await fFindNamidxfile(sNameIn, sLagIn, aaNamidxfileRoot)
-  const response = await fetch(fFindNamidxfileFull(aFile[0]))
-  const json = await response.json()
-  for (n = 1; n < json.length; n++) {
+  const oResp = await fetch(fFindNamidxfileFull(aFile[0]))
+  const aJson = await oResp.json()
+  for (n = 1; n < aJson.length; n++) {
     // it searches for names that begin win nameIn, case insensitive
-    if (new RegExp('^' + sNameIn, 'i').test(json[n][0])){
-      aaOut.push(json[n])
+    if (new RegExp('^' + sNameIn, 'i').test(aJson[n][0])){
+      aaOut.push(aJson[n])
     }
   }
   return aaOut
