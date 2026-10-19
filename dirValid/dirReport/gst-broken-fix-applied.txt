@@ -1,0 +1,139 @@
+GS-TREE (broken) references -> correct concept — 2026-10-19   DRY=false
+
+broken references: 131 | fixed: 91 | left (broken): 40 | files written: 30
+
+=== CLEANUP (12)
+  McshTchInf000010:5630  member-sorting!@McshTchInf000010##idLJsgnalgObtMbrsrt (broken)  ->  member-sorting!@McshTchInf000010#idLJsgnalgObtMbrsrt
+  McshTchInf000012:1236  npmjs.org!@McshTchInf000012#idLJsndnpmjs_org/ (broken)  ->  npmjs.org!@McshTchInf000012#idLJsndnpmjs_org (stray trailing "/" removed)
+  McshTchInf000016:2372  Dogecoin-DOGE!@McshTchInf000016##idDogeevuC (broken)  ->  Dogecoin-DOGE!@McshTchInf000016#idDogeevuC
+  McshTchInf000032:196  git-fetch!@McshTchInf000032#idGitcmdFetch.html (broken)  ->  git-fetch!@McshTchInf000032#idGitcmdFetch
+  McshTchInf000032:201  git-pull!@McshTchInf000032#idGitcmdPull.html (broken)  ->  git-pull!@McshTchInf000032#idGitcmdPull
+  McshTchInf000032:202  git-push!@McshTchInf000032#idGitcmdPush.html (broken)  ->  git-push!@McshTchInf000032#idGitcmdPush
+  McshTchInf000032:203  git-remote!@McshTchInf000032#idGitcmdRemote.html (broken)  ->  git-remote!@McshTchInf000032#idGitcmdRemote
+  McshTchInf000032:663  git-clone!@McshTchInf000032#idGitcmdClone.html (broken)  ->  git-clone!@McshTchInf000032#idGitcmdClone
+  McshTchInf000032:664  git-remote!@McshTchInf000032#idGitcmdRemote.html (broken)  ->  git-remote!@McshTchInf000032#idGitcmdRemote
+  McshTchInf000032:665  git-pull!@McshTchInf000032#idGitcmdPull.html (broken)  ->  git-pull!@McshTchInf000032#idGitcmdPull
+  McshTchInf000032:666  git-fetch!@McshTchInf000032#idGitcmdFetch.html (broken)  ->  git-fetch!@McshTchInf000032#idGitcmdFetch
+  McshTchInf000032:667  git-push!@McshTchInf000032#idGitcmdPush.html (broken)  ->  git-push!@McshTchInf000032#idGitcmdPush
+
+=== NAME (33)
+  McshLag000005:162  mapping-method!@McshCor000004#idDngActgMpgmtd (broken)  ->  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshNtr000006:118  chemical-substance!@McshNtr000002#idMtrl006 (broken)  ->  chemical-substance!@McshNtr000005#idSysMols010
+  McshNtr000007:407  chemical-substance!@McshNtr000002#idMtrl006 (broken)  ->  chemical-substance!@McshNtr000005#idSysMols010
+  McshNtr000007:574  Cesium-Cs55!@McshNtr000007#idChmElrCesium (broken)  ->  Cesium-Cs55!@McshNtr000007#idChmElrCaesium
+  McshOgm000005:1381  productBodyHumn!@McshOgm000005#idSysMolsHmn004gnc (broken)  ->  productBodyHumn!@McshOgm000005#idSysMolsHmn004
+  McshStn000005:266  dynamic-system!@McshCor000008#idSysDnmc (broken)  ->  dynamic-system!@McshCor000011#idSys009
+  McshStn000007:256  self-dynamic-system!@McshCor000011#idSys009Slf (broken)  ->  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000009:279  consumer!@McshStn000012#idEconHmnatt006att002 (broken)  ->  consumer!@McshStn000012#idEconHmnatt046
+  McshStn000009:8174  dynamic-system!@McshCor000008#idSysDnmc (broken)  ->  dynamic-system!@McshCor000011#idSys009
+  McshStn000021:694  self-dynamic-system!@McshCor000011#idSys009Slf (broken)  ->  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000023:21621  RDF-vocabulary!@McshTchInf000007#idLCnknt005voc (broken)  ->  RDF-vocabulary!@McshTchInf000039#idLKnlg014voc
+  McshStn000029:1442  Euro-Member-Countries-currency-(EUR)!@McshStn000020#idEuseconEurevu (broken)  ->  Euro-Member-Countries-currency-(EUR)!@McshStn000020#idEuzzEconEurevu
+  McshTchInf000005:568  mapping-method!@McshCor000004#idDngActgMpgmtd (broken)  ->  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshTchInf000015:479  blockchain-human!@McshTchInf000016#idDbdhmn (broken)  ->  blockchain-human!@McshTchInf000016#idDbchmn
+  McshTchInf000015:5679  blockchain-program!@McshTchInf000016#idDbdpgm (broken)  ->  blockchain-program!@McshTchInf000016#idDbcpgm
+  McshTchInf000015:6806  blockchain-wallet!@McshTchInf000016#idDbdwlt (broken)  ->  blockchain-wallet!@McshTchInf000016#idDbcwlt
+  McshTchInf000015:7113  blockchain-ogn!@McshTchInf000016#idDbdogn (broken)  ->  blockchain-ogn!@McshTchInf000016#idDbcogn
+  McshTchInf000016:269  chain-organization!@McshTchInf000015#idAlgntognFT (broken)  ->  chain-organization!@McshTchInf000015#idAlgntogn
+  McshTchInf000016:276  Dao!@McshTchInf000015#idAlgntdaoBchn (broken)  ->  Dao!@McshTchInf000019#idOverview
+  McshTchInf000016:371  chain-protocol!@McshTchInf000015#idAlgntprlFT (broken)  ->  chain-protocol!@McshTchInf000015#idAlgntprl
+  McshTchInf000016:428  chain-node!@McshTchInf000015#idAlgntnodFT (broken)  ->  chain-node!@McshTchInf000015#idAlgntnod
+  McshTchInf000016:1155  chain-appending-algo!@McshTchInf000015#idAlgntcsaFNT (broken)  ->  chain-appending-algo!@McshTchInf000015#idAlgntcsa
+  McshTchInf000016:1689  Dchain!@McshTchInf000015#idAlgntchnT (broken)  ->  Dchain!@McshTchInf000015#idAlgntchn
+  McshTchInf000016:2340  chain-asset!@McshTchInf000015#idAlgntevuFNT (broken)  ->  chain-asset!@McshTchInf000015#idAlgntevu
+  McshTchInf000016:4083  chain-program!@McshTchInf000015#idAlgntpgmFT (broken)  ->  chain-program!@McshTchInf000015#idAlgntpgm
+  McshTchInf000016:5187  chain-doing!@McshTchInf000015#idAlgntdngFT (broken)  ->  chain-doing!@McshTchInf000015#idAlgntdng
+  McshTchInf000017:6901  blockchain-wallet!@McshTchInf000016#idDbdwlt (broken)  ->  blockchain-wallet!@McshTchInf000016#idDbcwlt
+  McshTchInf000017:9202  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcnetMoe (broken)  ->  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe
+  McshTchInf000018:316  blockchain-protocol!@McshTchInf000016#idDbdprl (broken)  ->  blockchain-protocol!@McshTchInf000016#idDbcprl
+  McshTchInf000023:261  Dagchain-network!@McshTchInf000015#idDdcnet (broken)  ->  Dagchain-network!@McshTchInf000015#idAlgntnDag
+  McshTchInf000024:981  blockchain-program!@McshTchInf000016#idDbdpgm (broken)  ->  blockchain-program!@McshTchInf000016#idDbcpgm
+  McshTchInf000024:2141  blockchain-wallet!@McshTchInf000016#idDbdwlt (broken)  ->  blockchain-wallet!@McshTchInf000016#idDbcwlt
+  McshTchInf000031:2764  compiled--programing-language!@McshTchInf000006#idLCpgmSrcCmpd (broken)  ->  compiled--programing-language!@McshTchInf000006#idLSrcdCmpd
+
+=== ID-MOVED (13)
+  McshNtr000010:280  brain-(human-brain)!@McshHlth000002#idBrnHmn (broken)  ->  brain-(human-brain)!@McshHlth000019#idBrnHmn
+  McshOgm000006:184  essensial!@McshHlth000002#idBdyHmnatt015025 (broken)  ->  essensial!@McshOgm000006#idBdyHmnatt015025
+  McshStn000002:570  organizationHmn!@McshStn000008#idOzn (broken)  ->  organizationHmn!@McshStn000006#idOzn
+  McshStn000004:1292  company-admnAlgo!@McshStn000012#idAlgoeconatt002 (broken)  ->  company-admnAlgo!@McshStn000019#idAlgoeconatt002
+  McshStn000004:1293  household-admnAlgo!@McshStn000012#idAlgoeconatt001 (broken)  ->  household-admnAlgo!@McshStn000019#idAlgoeconatt001
+  McshTchInf000015:6593  Lisk-DeApp!@McshTchInf000015#idLskbap (broken)  ->  Lisk-DeApp!@McshTchInf000016#idLskbap
+  McshTchInf000015:9849  blockchain-law!@McshTchInf000016#idAlgntlaw (broken)  ->  blockchain-law!@McshTchInf000015#idAlgntlaw
+  McshTchInf000015:12679  Blockchain-ID-service!@McshTchInf000016#idBtcsvcIdn (broken)  ->  Blockchain-ID-service!@McshTchInf000017#idBtcsvcIdn
+  McshTchInf000016:2363  Augur-REP!@McshTchInf000016#idRepevu (broken)  ->  Augur-REP!@McshTchInf000018#idRepevu
+  McshTchInf000016:2375  Faircoin-FAIR!@McshTchInf000016#idFairnetevuC (broken)  ->  Faircoin-FAIR!@McshTchInf000022#idFairnetevuC
+  McshTchInf000016:3443  Chronobank-LHT!@McshTchInf000016#idChblht (broken)  ->  Chronobank-LHT!@McshTchInf000020#idChblht
+  McshTchInf000019:1224  human-organization-gtr!@McshStn000006#idOgzngtr (broken)  ->  human-organization-gtr!@McshStn000008#idOgzngtr
+  McshTchInf000030:244  algo-node-of-Srcd_lago!@McshTchInf000030#idLSrcdalgnode (broken)  ->  algo-node-of-Srcd_lago!@McshTchInf000006#idLSrcdalgnode
+
+=== NAME-CASE (10)
+  McshOgm000005:313  calcium!@McshHlth000002#idBdyHmnclcm (broken)  ->  calcium!@McshNtr000007#idChmElrCalcium
+  McshOgm000005:314  iron!@McshHlth000002#idBdyHmniron (broken)  ->  iron!@McshNtr000007#idChmElrIron
+  McshTchInf000013:1659  Desktop-Javascript-language!@McshTchInf000010#idLjddsn (broken)  ->  Desktop-Javascript-language!@McshTchInf000010#idLJsdt
+  McshTchInf000015:719  Blockchain-protocol!@McshTchInf000016#idDbdprl (broken)  ->  Blockchain-protocol!@McshTchInf000016#idDbcprl
+  McshTchInf000015:6858  Blockchain-statistics!@McshTchInf000016#idDbdstat (broken)  ->  Blockchain-statistics!@McshTchInf000016#idDbcstat
+  McshTchInf000015:9157  Blockchain-evaluation!@McshTchInf000016#idDbdeln (broken)  ->  Blockchain-evaluation!@McshTchInf000016#idDbceln
+  McshTchInf000016:5356  Blockchain-as-a-Service!@McshTchInf000016#idBaas (broken)  ->  Blockchain-as-a-Service!@McshTchInf000015#idAlgntsvcDLgr
+  McshTchInf000017:1482  Blockchain!@McshTchInf000016#idDbddat (broken)  ->  Blockchain!@McshTchInf000016#idDbcdat
+  McshTchInf000018:10026  solcjs!@McshTchInf000018#idEthsoltolSolcjs (broken)  ->  solcjs!@McshTchInf000018#idEthsoltulSolcjs
+  McshTchInf000027:221  Blockchain-program--blockchain-network!@McshTchInf000016#idDbdpgm (broken)  ->  Blockchain-program--blockchain-network!@McshTchInf000016#idBpmnet
+
+=== RENAME-RULES (12)
+  McshNtr000007#idChmElrC…  ->  McshNtr000007#idChmElrCa…   proven by McshNtr000007:574 Cesium-Cs55
+  McshOgm000005#…gnc  ->  McshOgm000005#…  (suffix dropped)   proven by McshOgm000005:1381 productBodyHumn
+  McshTchInf000007#idLCnknt005…  ->  McshTchInf000039#idLKnlg014…   proven by McshStn000023:21621 RDF-vocabulary
+  McshStn000020#idEuse…  ->  McshStn000020#idEuzzE…   proven by McshStn000029:1442 Euro-Member-Countries-currency-(EUR)
+  McshTchInf000012#…/  ->  McshTchInf000012#…  (suffix dropped)   proven by McshTchInf000012:1236 npmjs.org
+  McshTchInf000016#idDbd…  ->  McshTchInf000016#idDbc…   proven by McshTchInf000015:479 blockchain-human, McshTchInf000015:719 Blockchain-protocol, McshTchInf000015:5679 blockchain-program, McshTchInf000015:6806 blockchain-wallet, McshTchInf000015:6858 Blockchain-statistics, McshTchInf000015:7113 blockchain-ogn, McshTchInf000015:9157 Blockchain-evaluation, McshTchInf000017:1482 Blockchain, McshTchInf000017:6901 blockchain-wallet, McshTchInf000018:316 blockchain-protocol, McshTchInf000024:981 blockchain-program, McshTchInf000024:2141 blockchain-wallet
+  McshTchInf000015#…FT  ->  McshTchInf000015#…  (suffix dropped)   proven by McshTchInf000016:269 chain-organization, McshTchInf000016:371 chain-protocol, McshTchInf000016:428 chain-node, McshTchInf000016:4083 chain-program, McshTchInf000016:5187 chain-doing
+  McshTchInf000015#…FNT  ->  McshTchInf000015#…  (suffix dropped)   proven by McshTchInf000016:1155 chain-appending-algo, McshTchInf000016:2340 chain-asset
+  McshTchInf000015#…T  ->  McshTchInf000015#…  (suffix dropped)   proven by McshTchInf000016:1689 Dchain
+  McshTchInf000016#idDbcnet…  ->  McshTchInf000016#idDbc…   proven by McshTchInf000017:9202 cryptocurrency--blockchain-network
+  McshTchInf000018#idEthsolto…  ->  McshTchInf000018#idEthsoltu…   proven by McshTchInf000018:10026 solcjs
+  McshTchInf000006#idLCpgmSrc…  ->  McshTchInf000006#idLSrcd…   proven by McshTchInf000031:2764 compiled--programing-language
+
+=== PROVEN-RENAME (23)
+  McshNtr000007:709  Cs55-Cesium!@McshNtr000007#idChmElrCesium (broken)  ->  Cs55-Cesium!@McshNtr000007#idChmElrCaesium
+  McshNtr000007:870  55-Cesium-Cs!@McshNtr000007#idChmElrCesium (broken)  ->  55-Cesium-Cs!@McshNtr000007#idChmElrCaesium
+  McshStn000029:1109  ExvuEUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuseconEurevu (broken)  ->  ExvuEUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuzzEconEurevu
+  McshStn000029:1271  EUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuseconEurevu (broken)  ->  EUR'(Euro-Member-Countries-currency)!@McshStn000020#idEuzzEconEurevu
+  McshTchInf000015:792  blockchain--chain-node!@McshTchInf000016#idDbdnod (broken)  ->  blockchain--chain-node!@McshTchInf000016#idDbcnod
+  McshTchInf000015:1716  blockchain-network--chain!@McshTchInf000016#idDbddat (broken)  ->  blockchain-network--chain!@McshTchInf000016#idDbcdat
+  McshTchInf000015:2485  blockchain-Agntasset!@McshTchInf000016#idDbdevu (broken)  ->  blockchain-Agntasset!@McshTchInf000016#idDbcevu
+  McshTchInf000015:9342  blockchain-net--problem!@McshTchInf000016#idDbdpbm (broken)  ->  blockchain-net--problem!@McshTchInf000016#idDbcpbm
+  McshTchInf000015:10331  blockchain--chain-doing!@McshTchInf000016#idDbddng (broken)  ->  blockchain--chain-doing!@McshTchInf000016#idDbcdng
+  McshTchInf000015:13629  Blockchain-publicNo-network!@McshTchInf000016#idDbcnetPbcN (broken)  ->  Blockchain-publicNo-network!@McshTchInf000016#idDbcPbcN
+  McshTchInf000015:13864  blockchain--đ-currency-network!@McshTchInf000016#idDbcnetMoe (broken)  ->  blockchain--đ-currency-network!@McshTchInf000016#idDbcMoe
+  McshTchInf000016:166  chain-human!@McshTchInf000015#idAlgnthmnFT (broken)  ->  chain-human!@McshTchInf000015#idAlgnthmn
+  McshTchInf000016:4875  chain-evaluation!@McshTchInf000015#idAlgntevalFT (broken)  ->  chain-evaluation!@McshTchInf000015#idAlgnteval
+  McshTchInf000018:1398  blockchain-network-node!@McshTchInf000016#idDbdnod (broken)  ->  blockchain-network-node!@McshTchInf000016#idDbcnod
+  McshTchInf000018:10025  Browser-compiler!@McshTchInf000018#idEthsoltolBrcr (broken)  ->  Browser-compiler!@McshTchInf000018#idEthsoltulBrcr
+  McshTchInf000018:10027  Dapple!@McshTchInf000018#idEthsoltolDpl (broken)  ->  Dapple!@McshTchInf000018#idEthsoltulDpl
+  McshTchInf000018:10028  Populus!@McshTchInf000018#idEthsoltolPpl (broken)  ->  Populus!@McshTchInf000018#idEthsoltulPpl
+  McshTchInf000018:10029  REPL!@McshTchInf000018#idEthsoltolRepl (broken)  ->  REPL!@McshTchInf000018#idEthsoltulRepl
+  McshTchInf000018:10030  Solgraph!@McshTchInf000018#idEthsoltolSlgh (broken)  ->  Solgraph!@McshTchInf000018#idEthsoltulSlgh
+  McshTchInf000021:2400  blockchain-net'program!@McshTchInf000016#idDbdpgm (broken)  ->  blockchain-net'program!@McshTchInf000016#idDbcpgm
+  McshTchInf000021:2930  blockchain-net'human!@McshTchInf000016#idDbdhmn (broken)  ->  blockchain-net'human!@McshTchInf000016#idDbchmn
+  McshTchInf000030:4147  compiled-language!@McshTchInf000006#idLCpgmSrcCmpd (broken)  ->  compiled-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000030:4148  statically-typed-language!@McshTchInf000006#idLCpgmSrcStctp (broken)  ->  statically-typed-language!@McshTchInf000006#idLSrcdStctp
+
+=== CONFLICT (3)
+
+=== MANY (1)
+
+=== UNRESOLVED (36)
+  McshTchInf000016:438  miner-node!@McshTchInf000016#idDbcnodeMnr (broken)  near ids: idDbcnodMnr
+  McshTchInf000016:2355  Medium-of-exchange--bcnevu!@McshTchInf000016#idDbcevuMoe (broken)  near ids: idDbcevuMng, idDbcevMoe, idDbcevMoeN
+  McshTchInf000016:2356  Medium-of-exchangeNo--bcnevu!@McshTchInf000016#idDbcevuMoeN (broken)  near ids: idDbcevuogn, idDbcevMoe, idDbcevMoeN
+  McshTchInf000016:4930  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)
+  McshTchInf000016:4940  Nem-XEM-network-problem!@McshTchInf000016#idXempbm (broken)  near ids: idXemprl, idXempgm, idXempblm
+  McshTchInf000016:5539  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet (broken)  near ids: idEthatt, idEthnod, idEthbex, idEthtxt, idEthact, idEthtmt, idEthMNE, idEthmst
+  McshTchInf000016:5540  Bitcoin-BTC-network-{2009}!@McshTchInf000016#idBtcnet (broken)  near ids: idBpmnet, idBosnet, idQtmnet, idZecnet, idBtsnet, idEmcnet, idPpcnet, idLtcnet
+  McshTchInf000016:5616  Omni_layer!@McshTchInf000016#idDbcomnl (broken)  near ids: idDbchmn, idDbcogn, idDbcmnr, idDbcmng
+  McshTchInf000016:5800  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet (broken)  near ids: idEthatt, idEthnod, idEthbex, idEthtxt, idEthact, idEthtmt, idEthMNE, idEthmst
+  McshTchInf000016:10444  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)  near ids: idDbcevubkn, idDbcevuCN
+  McshTchInf000016:11915  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)  near ids: idDbcevubkn, idDbcevuCN
+  McshTchInf000017:4965  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken)  near ids: idDbccrptH2
+  McshTchInf000018:7320  Viper!@McshTchInf000018#idEthctpvpr (broken)  near ids: idEthctpdvpg, idEthctpgtr, idEthctpstr, idEthctpBnr, idEthctpClr
+  McshTchPrgm000003:  Tree-view--package!@McshTchPrgm000003#idAtmpkgTrvw (broken)
+    tree-view!@McshTchPrgm000003#idAtmpkgTrvw (broken)

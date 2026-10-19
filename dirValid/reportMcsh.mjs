@@ -93,7 +93,7 @@ async function fMain() {
     console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07] [--line] [--file McshDir000000]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --code       one or more codes, comma-separated:');
-    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06');
+    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06 MvrlId01 MvrlId02 MvrlId03 MvrlId04 MvrlId05 MvrlId06 MvrlId07 MvrlId08 MvrlId09 MvrlId10 MvrlId11');
     console.log('                 Hitp: Hvre01 ... Hvre07  Hvrw01 ... Hvrw07');
     console.log('  --line       per file, every issue: its line and its message');
     console.log('  --file       one file only, given as McshDir000000');

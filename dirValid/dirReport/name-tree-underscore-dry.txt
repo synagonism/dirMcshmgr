@@ -1,0 +1,9 @@
+=== name-tree-underscore DRY-RUN {2026-10-19} — X-Wltr|-Prtr|-Chtr|-Pntr|-Sptr -> X_Wltr|...
+  files changed: 551, names: 3293
+=== PER-SUFFIX
+  _Sptr: 2511
+  _Wltr: 487
+  _Prtr: 179
+  _Pntr: 59
+  _Chtr: 57
+=== IN-ATTRIBUTE (0) — a-name inside id=/href=, check

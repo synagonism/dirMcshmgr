@@ -50,6 +50,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-3-0.2026-10-19: generic-tree names X_Gntr (was X-Gntr), ":" ends a-text-reference',
     'inheritMcsh.mjs.0-2-0.2026-10-18: --delete-empty, --fix-order, own-numbering, INH-GENDUP',
     'inheritMcsh.mjs.0-1-0.2026-10-17: creation'
   ],
@@ -64,11 +65,11 @@ const
   // an-English-name-line
   rNameEngl = /<br>\*\s*McshEngl\.([^\n,]+),/g,
   // a-text-reference: "name!@McshCor000012#idMdl014", "name!@#idMdl014" (same file)
-  rRef = /!@(Mcsh[A-Za-z]*\d{6})?#(id[^\s,<"']+)/g,
-  // the-name of a-generic-tree, in its own generic-tree::  "<br>* McshEngl.system-Gntr,"
-  rGntrDef = /<br>\*\s*McshEngl\.([^\s,<!]+-Gntr)[,!]/g,
-  // a-text-entry of a-generic: "<br>* system-Gntr,"; NOT "McshEngl.…", NOT "... entity-Gntr"
-  rGntrUse = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*]+-Gntr),/g
+  rRef = /!@(Mcsh[A-Za-z]*\d{6})?#(id[^\s,<"':]+)/g,
+  // the-name of a-generic-tree, in its own generic-tree::  "<br>* McshEngl.system_Gntr,"
+  rGntrDef = /<br>\*\s*McshEngl\.([^\s,<!]+_Gntr)[,!]/g,
+  // a-text-entry of a-generic: "<br>* system_Gntr,"; NOT "McshEngl.…", NOT "... entity_Gntr"
+  rGntrUse = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*]+_Gntr),/g
 
 /**
  * OUTPUT: the-file-name without its '.last.html', as McshDir000000.
@@ -274,7 +275,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
 
   const aoNodeAll = aoFileIn.flatMap(oFile => oFile.aoNode);
 
-  // the-names of the-generic-trees: "McshEngl.system-Gntr" in system's generic-tree:: → system.
+  // the-names of the-generic-trees: "McshEngl.system_Gntr" in system's generic-tree:: → system.
   //   a-name defined twice is ambiguous: NOT used, reported.
   const ooGntrDef = {};   // sNameLower → [{ oNode, sDef }]
   const oNodeByName = {}; // sName → [oNode], the-English-names of the-concepts
@@ -291,7 +292,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
     for (const sName of oNode.aName) (oNodeByName[sName] ??= []).push(oNode);
     if (oNode.sMain) (oNodeByMain[oNode.sMain] ??= []).push(oNode);
   }
-  // a-text-entry "X-Gntr" → { oNode } or { sWhy }: the-definition exact, then any case,
+  // a-text-entry "X_Gntr" → { oNode } or { sWhy }: the-definition exact, then any case,
   //   then the-ONE concept named X (main-name first)
   function fResolveGntr(sGntrIn) {
     const aoDef = ooGntrDef[sGntrIn.toLowerCase()] ?? [];
@@ -300,7 +301,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
     if (aoUse.length === 1) return { oNode: aoUse[0].oNode };
     if (aoUse.length > 1) return { sWhy: 'defined ' + aoUse.length + ' times: ' +
       aoUse.map(oD => `${oD.oNode.sNameShort}:${oD.oNode.nLine}`).join(', ') };
-    const sName = sGntrIn.replace(/-Gntr$/, '');
+    const sName = sGntrIn.replace(/_Gntr$/, '');
     for (const aoNode of [oNodeByMain[sName], oNodeByName[sName]]) {
       if (aoNode?.length === 1) return { oNode: aoNode[0] };
       if (aoNode?.length > 1) return { sWhy: `not defined; ${aoNode.length} concepts named ${sName}` };
@@ -320,7 +321,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
       for (const sHref of [...fExtractContentHrefs(sGtr), ...fExtractRefs(sGtr)]) {
         fAddGeneric(oOwner, fResolveHref(sHref, oNode));
       }
-      // the-text-entries "* system-Gntr," — the-standard way to denote the-generic
+      // the-text-entries "* system_Gntr," — the-standard way to denote the-generic
       for (const aUse of sGtr.matchAll(rGntrUse)) {
         const oResolved = fResolveGntr(aUse[1]);
         if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode);
@@ -704,7 +705,7 @@ function fMain() {
     'INH-EMPTY': 'an-inherited attribute that says nothing new (no info, no link): delete?',
     'INH-GENDUP': 'a-numbered generic gives the-same NN_ to two attributes: renumber',
     'INH-REFBROKEN': 'a-text-reference name!@File#id whose file or id does NOT exist',
-    'INH-GNTRTEXT': 'a-generic "X-Gntr" in generic-tree:: that does NOT resolve to one concept',
+    'INH-GNTRTEXT': 'a-generic "X_Gntr" in generic-tree:: that does NOT resolve to one concept',
     'INH-LOCAL': `an-attribute in ${nLocalMin}+ specifics, not in the-generic: lift it up?`
   };
   for (const sCode of Object.keys(ooIssue)) {

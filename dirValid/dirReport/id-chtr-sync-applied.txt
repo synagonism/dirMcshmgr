@@ -1,0 +1,61 @@
+=== id-chtr-sync APPLIED {2026-10-19} — child-tree:: ids -> …chtr
+  files changed: 54, ids: 56, tokens replaced: 112, dangling links before/after: 1675/1675
+=== RENAMED (56) — old -> new
+  McshCor000003:4968  idEntctr -> idEntchtr
+  McshCor000015:288  idMcshExmlctr -> idMcshExmlchtr
+  McshEdu000006:374  idSSophyctr -> idSSophychtr
+  McshEdu000007:214  idSCmprctr -> idSCmprchtr
+  McshEdu000008:139  idSInfoctr -> idSInfochtr
+  McshEdu000009:113  idSMindctr -> idSMindchtr
+  McshEdu000010:1377  idSLang004ctr -> idSLang004chtr
+  McshEdu000010:2022  idSLangctr -> idSLangchtr
+  McshEdu000010:2487  idSLang003ctr -> idSLang003chtr
+  McshEdu000011:262  idArtctr -> idArtchtr
+  McshEdu000012:123  idSGvncctr -> idSGvncchtr
+  McshEdu000013:148  idSPhysctr -> idSPhyschtr
+  McshEdu000014:327  idSEconctr -> idSEconchtr
+  McshEdu000015:303  idMuscctr -> idMuscchtr
+  McshHmn000002:4418  idHmnctr -> idHmnchtr
+  McshLag000032:520  idLFrmlctr -> idLFrmlchtr
+  McshLag000033:3610  idLDeutctr -> idLDeutchtr
+  McshLag000034:3309  idLBcmsctr -> idLBcmschtr
+  McshLag000035:2509  idLSpanctr -> idLSpanchtr
+  McshLag000036:2929  idLArabctr -> idLArabchtr
+  McshLag000037:2229  idLHiurctr -> idLHiurchtr
+  McshLag000038:1775  idLSlv0ctr -> idLSlv0chtr
+  McshLag000039:1412  idLIde0ctr -> idLIde0chtr
+  McshLag000040:1638  idLAfa0ctr -> idLAfa0chtr
+  McshLag000041:1543  idLTur0ctr -> idLTur0chtr
+  McshLag000042:1543  idLAsa0ctr -> idLAsa0chtr
+  McshLag000043:3621  idLKoractr -> idLKorachtr
+  McshNtr000017:217  idSkyctr -> idSkychtr
+  McshOgm000009:507  idOgmAnmlctr -> idOgmAnmlchtr
+  McshStn000030:888  idSocGrcactr -> idSocGrcachtr
+  McshStn000031:13703  idSocChnactr -> idSocChnachtr
+  McshStn000032:637  idSocUsazctr -> idSocUsazchtr
+  McshStn000033:490  idSocTurkctr -> idSocTurkchtr
+  McshStn000034:4141  idSocVtnmctr -> idSocVtnmchtr
+  McshStn000035:3651  idSocItlactr -> idSocItlachtr
+  McshStn000036:157  idSocDeutctr -> idSocDeutchtr
+  McshStn000037:2090  idSocFracctr -> idSocFracchtr
+  McshStn000038:1791  idSocBgractr -> idSocBgrachtr
+  McshStn000039:2206  idSocAlbactr -> idSocAlbachtr
+  McshStn000040:1597  idSocNmkdctr -> idSocNmkdchtr
+  McshStn000041:1522  idSocSvnactr -> idSocSvnachtr
+  McshStn000042:2746  idSctrEductr -> idSctrEduchtr
+  McshStn000043:1611  idSocRusactr -> idSocRusachtr
+  McshStn000044:1864  idSocRouactr -> idSocRouachtr
+  McshStn000045:258  idSocSsssctr -> idSocSssschtr
+  McshStn000046:242  idSocMneactr -> idSocMneachtr
+  McshStn000047:258  idSocHrvactr -> idSocHrvachtr
+  McshStn000048:5275  idSocJpnactr -> idSocJpnachtr
+  McshStn000049:494  idSocKorsctr -> idSocKorschtr
+  McshStn000050:3796  idSocKhmactr -> idSocKhmachtr
+  McshStn000051:413  idSocSgprctr -> idSocSgprchtr
+  McshStnlaw000006:734  idLawGrcctr -> idLawGrcchtr
+  McshTch000005:186  idTRbtcctr -> idTRbtcchtr
+  McshTchInf000039:3216  idLKnlgctr -> idLKnlgchtr
+  McshTchInf000040:1338  idIntntctr -> idIntntchtr
+  McshTchInf000041:6078  idVscodectr -> idVscodechtr
+=== SKIPPED (0) — new id taken
+

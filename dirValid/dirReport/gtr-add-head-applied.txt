@@ -1,0 +1,164 @@
+NO-NAME generic-trees: add "McshEngl.X_Gntr," + "===" — 2026-10-19   DRY=false
+
+heads added: 3 | files written: 3
+
+=== ADDED (3) — head added
+  McshHlth000004:1940  idCellHmn016gntr  -> McshEngl.cellPlatelet_Gntr   first: <br>* cell_Gntr,
+  McshHlth000005:5498  idBoneHmn036gntr  -> McshEngl.boneHeel_Gntr   first: <br>* organBone_Gntr,
+  McshHlth000011:1422  idDssHmn002gntr  -> McshEngl.DssInfectiousNo_Gntr   first: <br>* disease_Gntr,
+
+=== NO-MAIN (136) — owner has several names and no !⇒ main-name — add one
+  McshCor000002:2135  idMcsrftgntr  8 names, no !⇒: Mcs'archetype | Mcsattr.archetype | Mcsattr.referent | Mcs'attAsArchetype
+  McshCor000002:2278  idMcsattGncchngntr  2 names, no !⇒: generic-chain--Mcsattr | Mcsattr.generic-chain
+  McshCor000002:2347  idMcsattWhlNSpcdvngntr  10 names, no !⇒: Mcsattr.division.specifics | Mcsattr.specifics-division | Mcs-division.specifics | Mcs'attAsSpecifics-division
+  McshCor000011:3158  idSysMng003att003gntr  2 names, no !⇒: SystMngPlant'att003-info-sys | SystMngPlant'info-sys
+  McshCor000013:424  idBrnginfarchgntr  6 names, no !⇒: archetype-of-braining | archetype-of-infoMindBio | FctgBrainingBio'04_archetype | FctgBrainingBio'archetype
+  McshCor000013:441  idBrngstxgntr  3 names, no !⇒: FctgBrainingBio'05-syntax | FctgBrainingBio'syntax | syntax.braining
+  McshCor000018:2577  idBrngHmnFct004stmlgntr  3 names, no !⇒: argtEmoting.stimulus | FctgEmoting'04_stimulus | FctgEmoting'stimulus
+  McshHlth000004:1458  idCellHmn010gntr  3 names, no !⇒: cell.010-hair | cell.hair-010 | hair-cell.human
+  McshHlth000005:3505  idBoneHmn007gntr  4 names, no !⇒: organBone.frontal-bone | organBone.007-frontal-bone | frontal-bone | skeletonHead.frontal-bone-007
+  McshHlth000005:3532  idBoneHmn008gntr  4 names, no !⇒: organBone.parietal | organBone.008-parietal | parietal-bone | skeletonHead.parietal-008
+  McshHlth000005:3560  idBoneHmn009gntr  4 names, no !⇒: organBone.occipital | organBone.009-occipital | occipital-bone | skeletonHead.occipital-009
+  McshHlth000005:3587  idBoneHmn010gntr  4 names, no !⇒: organBone.temporal | organBone.010-temporal | temporal-bone | skeletonHead.temporal-010
+  McshHlth000005:3614  idBoneHmn011gntr  4 names, no !⇒: organBone.sphenoid | organBone.011-sphenoid | sphenoid-bone | skeletonHead.sphenoid-011
+  McshHlth000005:3641  idBoneHmn012gntr  4 names, no !⇒: organBone.nasal | organBone.012-nasal | nasal-bone | skeletonHead.nasal-012
+  McshHlth000005:3668  idBoneHmn013gntr  4 names, no !⇒: organBone.zygomatic | organBone.013-zygomatic | zygomatic-bone | skeletonHead.zygomatic-013
+  McshHlth000005:3698  idBoneHmn014gntr  5 names, no !⇒: organBone.upper-jaw | organBone.014-upper-jaw | maxillae | upper-jaw
+  McshHlth000008:57  idHlthHmnatt001gntr  4 names, no !⇒: health'01_human | health'att001-human | health'human | humanHlth
+  McshHlth000011:2983  idDssHmn132gntr  5 names, no !⇒: disease.132-hypotension | disease.hypotension-132 | hypotension | low-blood-pressure
+  McshHlth000011:3056  idDssHmn039gntr  6 names, no !⇒: disease.039-angina | disease.angina-pectoris-039 | angina-pectoris | cardialgia
+  McshHlth000011:3608  idDssHmn165gntr  3 names, no !⇒: disease.165-nephritis | disease.nephritis-165 | nephritis
+  McshHlth000011:4630  idDssHmn075gntr  3 names, no !⇒: disease.075-dermatitis | disease.dermatitis-075 | dermatitis-disease
+  McshHlth000011:6407  idDssHmn111gntr  3 names, no !⇒: disease.111-astigmatism | disease.astigmatism-111 | astigmatism
+  McshHlth000011:6471  idDssHmn118gntr  3 names, no !⇒: disease.118-hypermetropia | disease.hypermetropia-118 | hypermetropia
+  McshHlth000011:6502  idDssHmn119gntr  5 names, no !⇒: disease.119-myopia | disease.myopia-119 | disease.nearsightedness | nearsightedness
+  McshHlth000011:8149  idDssHmn113gntr  4 names, no !⇒: disease.113-aerophagia | disease.aerophagia-113 | DssAerophagia | aerophagia
+  McshHlth000011:11531  idDssHmn200gntr  3 names, no !⇒: disease.200-undernourishment | disease.undernourishment-200 | undernourishment
+  McshHlth000011:12875  idDssHmn121gntr  3 names, no !⇒: disease.121-jaundice | disease.jaundice-121 | jaundice, /jjóndis/
+  McshHlth000011:12896  idDssHmn122gntr  3 names, no !⇒: disease.122-obstructive-jaundice | disease.obstructive-jaundice-122 | obstructive-jaundice
+  McshHlth000011:12921  idDssHmn123gntr  3 names, no !⇒: disease.123-cholecystitis | disease.cholecystitis-123 | cholecystitis
+  McshHlth000011:12947  idDssHmn125gntr  4 names, no !⇒: cholelithiasis | disease.125-gallstone | disease.gallstone-125 | gallstone-disease
+  McshHlth000011:13168  idDssHmn133gntr  3 names, no !⇒: disease.133-pneumonia | disease.pneumonia-133 | pneumonia
+  McshHlth000011:13845  idDssHmn143gntr  3 names, no !⇒: disease.143-inflammation | disease.inflammation-143 | inflammation
+  McshHlth000011:14007  idDssHmn147gntr  4 names, no !⇒: disease.147-chronic-obstructive-pulmonary | disease.chronic-obstructive-pulmonary-147 | chronic-obstructive-pulmonary-disease-(copd) | copd
+  McshHlth000011:14283  idDssHmn099gntr  4 names, no !⇒: disease.099-flat-feet | disease.flat-feet-099 | flat-feet | foot-arch--disease
+  McshHlth000013:9266  idFoodHmn149gntr  4 names, no !⇒: food.149-tas-kebab | food.tas-kebab-149 | meatKebab | foodMeat.tas-kebab
+  McshHlth000014:524  idMedHmnognFgntr  2 names, no !⇒: medication'organization | ogznMed
+  McshHlth000014:2378  idMedHmn025gntr  3 names, no !⇒: medication.025-clomifen | medication.clomifen-025 | clomifen-medication-025
+  McshHlth000016:790  idThrpHmnPhrmcgntr  2 names, no !⇒: pharmacotherapy | therapy.pharmacotherapy
+  McshLag000007:22049  idLHmnmargoMtwdgntr  2 names, no !⇒: multiword-ondoname | Hmnm_argu.multiword
+  McshLag000007:26186  idLHmnmConjWrdmnygntr  4 names, no !⇒: Hmnmconj.multiword | Hmnmconj.word-many | many-word-Hmnmconj | multiword-Hmnmconj
+  McshLag000008:123  idL0016nodegntr  2 names, no !⇒: alfa_lago'node | textAlph'node
+  McshLag000009:166  idL0017nodegntr  2 names, no !⇒: spch_lago'node | speech'node
+  McshLag000010:283  idL0014smscnjgntr  7 names, no !⇒: Sngusemucnpt.conjunction | conjunction-concept--of-Sngu_lagu | laguSinagu-Conj-cnpt | Sngu_lagu'Conj-cnpt
+  McshLag000010:357  idL0014nodegntr  3 names, no !⇒: Sngu_lagu'node | Sngu_logu_view'node | nodeLogSngo
+  McshLag000011:2511  idLEnglsylbatt001gntr  3 names, no !⇒: Engl_sylb'syllabication | syllabication-of-Engl_lago | Engl_word'syllabication
+  McshLag000011:8095  idLEngladjesnmrsgntr  2 names, no !⇒: Engl_adje'syno_members | Engl_adje-syno_members
+  McshLag000011:26717  idLEnglverbcjgngntr  4 names, no !⇒: conjugating-of-Englverb | conjugation-of-Englverb | Englverb'conjugation | memberorVerbEngl'conjugation
+  McshLag000012:255  idLEsposmsvrbgntr  5 names, no !⇒: cptSmsEspo.verb | Esperanto-semu-verb | Espo_lago'semu-verb | Espo_lago-semu-verb
+  McshLag000012:354  idLEsponodegntr  3 names, no !⇒: Espo_lago'node | logoEspo'node | nodeLogEspo
+  McshLag000012:1669  idLEspowrdsylbngntr  3 names, no !⇒: Espo_lago'syllabication | syllabication-of-Espo_lago | wordEspo'syllabication
+  McshLag000012:4689  idLEspoverbcjgngntr  3 names, no !⇒: conjugation-of-verbEspo | verbEspo'conjugation | memberorVerbEspo'conjugation
+  McshLag000018:606  idLZhonnodegntr  3 names, no !⇒: Zhon_lago'node | Zhon_logo'node | nodeZhon
+  McshLag000021:676  idLZhonsylbslbcngntr  3 names, no !⇒: Zhon_sylb'syllabication | syllabication-of-lagoZhon | Zhon_word'syllabication
+  McshLag000033:342  idLDeutnodegntr  3 names, no !⇒: Deut_lago'node | DeutLogoView'node | nodeLogDeut
+  McshNtr000007:217  idChmElratt007gntr  3 names, no !⇒: ChmcElry'06_chemical-property | ChmcElry'att007-chemical-property | ChmcElry'chemical-property-att007
+  McshNtr000012:98  idFrcatt005gntr  2 names, no !⇒: force'05_direction | force'direction
+  McshOgm000004:901  idMolOgm011gntr  3 names, no !⇒: molOgm.011-rubber | molOgm.rubber-011 | rubber-biopolymer-011
+  McshOgm000005:860  idSysMolsHmn016gntr  4 names, no !⇒: SystMolsHmn.016-releasing-hormone | SystMolsHmn.releasing-hormone-016 | releasing-hormone | releasing-factor
+  McshOgm000005:1804  idHrmnHmn009gntr  4 names, no !⇒: hormoneHumn.adrenaline-009 | hormoneHumn.009-adrenaline | adrenaline, /adrénalin/ | epinephrine, /epinéfrin/
+  McshOgm000005:1841  idHrmnHmn018gntr  3 names, no !⇒: hormoneHumn.norepinephrine-018 | hormoneHumn.018-norepinephrine | norepinephrine
+  McshOgm000005:1877  idHrmnHmn012gntr  3 names, no !⇒: hormoneHumn.thyroid-calcitonin-012 | hormoneHumn.012-thyroid-calcitonin | thyroid-calcitonin
+  McshOgm000005:1959  idHrmnHmn005gntr  3 names, no !⇒: hormoneHumn.growth-005 | hormoneHumn.005-growth | growth-hormone
+  McshOgm000005:2023  idHrmnHmn025gntr  3 names, no !⇒: hormoneHumn.oxytocin-025 | hormoneHumn.025-oxytocin | oxytocin
+  McshOgm000005:2062  idHrmnHmn022gntr  3 names, no !⇒: hormoneHumn.prolactin-022 | hormoneHumn.022-prolactin | prolactin
+  McshOgm000005:2099  idHrmnHmn006gntr  3 names, no !⇒: hormoneHumn.basopressin-006 | hormoneHumn.006-basopressin | basopressin
+  McshOgm000005:2131  idHrmnHmn024gntr  3 names, no !⇒: hormoneHumn.adrenocorticotropic-024 | hormoneHumn.024-adrenocorticotropic | adrenocorticotropic-hormone
+  McshOgm000005:2175  idHrmnHmn011gntr  3 names, no !⇒: hormoneHumn.thyroid-stimulating-011 | hormoneHumn.011-thyroid-stimulating | thyroid-stimulating-hormone
+  McshOgm000005:2211  idHrmnHmn010gntr  3 names, no !⇒: hormoneHumn.follicle-stimulating-010 | hormoneHumn.010-follicle-stimulating | follicle-stimulating-hormone
+  McshOgm000005:2251  idHrmnHmn026gntr  3 names, no !⇒: hormoneHumn.luteinizing-026 | hormoneHumn.026-luteinizing | luteinizing-hormone
+  McshOgm000005:2289  idHrmnHmn004gntr  3 names, no !⇒: hormoneHumn.antidiuretic-004 | hormoneHumn.004-antidiuretic | antidiuretic-hormone
+  McshOgm000005:2333  idHrmnHmn016gntr  3 names, no !⇒: hormoneHumn.melanotropin-016 | hormoneHumn.016-melanotropin | melanotropin
+  McshOgm000005:2371  idHrmnHmn013gntr  3 names, no !⇒: hormoneHumn.thyroxine-013 | hormoneHumn.013-thyroxine | thyroxine, /thairóksin/
+  McshOgm000005:2441  idHrmnHmn007gntr  3 names, no !⇒: hormoneHumn.glucagon-007 | hormoneHumn.007-glucagon | glucagon
+  McshOgm000005:2481  idHrmnHmn020gntr  3 names, no !⇒: hormoneHumn.parathyroid-020 | hormoneHumn.020-parathyroid | parathyroid-hormone
+  McshOgm000005:2529  idHrmnHmn038gntr  3 names, no !⇒: hormoneHumn.038-estradiol | hormoneHumn.estradiol-038 | estradiol-hormone, /estradáiol/
+  McshOgm000005:2562  idHrmnHmn008gntr  3 names, no !⇒: hormoneHumn.female-008 | hormoneHumn.008-female | female-hormone
+  McshOgm000005:2582  idHrmnHmn019gntr  3 names, no !⇒: hormoneHumn.estrogen-019 | hormoneHumn.019-estrogen | estrogen
+  McshOgm000005:2618  idHrmnHmn021gntr  3 names, no !⇒: hormoneHumn.progesterone-021 | hormoneHumn.021-progesterone | progesterone
+  McshOgm000005:3477  idFldHmn001att011gntr  3 names, no !⇒: bloodHmn'coagulation | bloodHmn'att011-coagulation | bloodHmn'doing'coagulation
+  McshStn000002:252  idStnOgmatt003gntr  4 names, no !⇒: sctnOgms'05-health | sctnOgms'att003-health | sctnOgms'health-003 | health.socialitation
+  McshStn000007:202  idSocOgmatt009gntr  3 names, no !⇒: societyOgm'09_language | societyOgm'att009-language | societyOgm'language-att009
+  McshStnlaw000003:2430  idLawEus027gntr  5 names, no !⇒: EulSecondary.action-programme | action-programme-of-Eu | lawEus.027-action-programme | lawEus.action-programme
+  McshTchInf000006:1964  idLSrcdarchcdgntr  3 names, no !⇒: Srcd_lago-archetype'archo-code | Srcd_lago-archo-code | Srcd_lago_archetype'archo-code
+  McshTchInf000006:2692  idLSrcdphrsgntr  5 names, no !⇒: Srcd_lago'output-phrase | Srcd_lago'phrase | Srcdalgo'phrase | Srcd_lago-node.phrase
+  McshTchInf000015:1650  idAlgntchnimtbltgntr  2 names, no !⇒: immutability-of-Dchain | Dchain'immutability
+  McshTchInf000015:3975  idAlgntevuMoebknsgntr  2 names, no !⇒: backness-of-AgntassetExvu | AgntassetExvu'backness
+  McshTchInf000015:4029  idAlgntevuMoeprcgntr  2 names, no !⇒: AgntassetExvu'price | price-of-AgntassetExvu
+  McshTchInf000015:4316  idAlgntevuMoeCnsgntr  2 names, no !⇒: AgntassetExvu.consensus | consensus-cryptocurrency
+  McshTchInf000016:326  idDbcwprgntr  4 names, no !⇒: blockchain--white-paper | Dblockchain-protocol'white-paper | white-paper--of--blockchain-network | Dblockchain_protocol'white-paper
+  McshTchInf000016:492  idDbcnodApdrgntr  6 names, no !⇒: block-generator-node | block-producer-node | blockchain-appender-node | Dblockchain-node.appender
+  McshTchInf000016:1903  idDbcprcgntr  4 names, no !⇒: Dblockchain-asset'price | Dblockchain-asset'value | price-of--blockchain-asset | Bkcnasset'price
+  McshTchInf000016:3246  idDbcevMoeNgntr  3 names, no !⇒: Dblockchain-asset.currencyNo | blockchain-currencyNo | Bkcnasset.CURRENCY.NO
+  McshTchInf000016:4145  idDbcpgmScrtgntr  4 names, no !⇒: blockchain-contract | Dblockchain-program.smart-contract | smart-contract.blockchain | Dblockchain_program.PROGRAMMABLE-CONTRACT
+  McshTchInf000016:4902  idDbcevalSprogntr  3 names, no !⇒: blockchain-evaluation.pro | AgntBkcn'pro | Bkcheval.PRO
+  McshTchInf000016:15601  idDbcPmsapdgntr  2 names, no !⇒: AgntBkcn.permission-to-append | permission-to-append--blockchain-net
+  McshTchInf000016:15616  idDbcPmsapdNgntr  2 names, no !⇒: AgntBkcn.permissionless-to-append | permissionless-to-append--blockchain-net
+  McshTchInf000016:15631  idDbcPmsjoingntr  2 names, no !⇒: AgntBkcn.permission-to-join | permission-to-join--blockchain-net
+  McshTchInf000016:15646  idDbcPmsjoinNgntr  2 names, no !⇒: AgntBkcn.permissionless-to-join | permissionless-to-join--blockchain-net
+  McshTchInf000016:15666  idDbcPbcgntr  4 names, no !⇒: AgntBkcn.public | permissionless--blockchain-net | privateNo--blockchain-net | public--blockchain-net
+  McshTchInf000016:15686  idDbcPbcNgntr  4 names, no !⇒: AgntBkcn.publicNo | permissioned--blockchain-net | private--blockchain-net | publicNo--blockchain-net
+  McshTchInf000021:61  idEosprlgntr  2 names, no !⇒: Deos'protocol | Deos-protocol
+  McshTchInf000021:80  idEosprlwprgntr  3 names, no !⇒: Deos'protocol'white-paper | Deos'white-paper | Deos-white-paper
+  McshTchInf000021:937  idEosnodgntr  2 names, no !⇒: Deos'node | Deos-node
+  McshTchInf000021:1280  idEosblkgntr  2 names, no !⇒: Deos-block | Deos'block
+  McshTchInf000021:3086  idEosogngntr  2 names, no !⇒: Deos'organization | Deos-organization
+  McshTchInf000021:3106  idEosognBkongntr  2 names, no !⇒: Block.one | Deos'Block.one
+  McshTchInf000021:3243  idEosdonggntr  2 names, no !⇒: Deos-doing | Deos'doing
+  McshTchInf000022:57  idFairnetprlgntr  3 names, no !⇒: Faircoin-net'protocol | Faircoin_net'protocol | protocol-of-Faircoin-net
+  McshTchInf000022:71  idFairnetwprgntr  2 names, no !⇒: Faircoin-net'white-paper | white-paper--of--Faircoin-network
+  McshTchInf000022:671  idFairnetnodgntr  3 names, no !⇒: Faircoin-net'node | Faircoin_net'node | node-of-Faircoin-net
+  McshTchInf000022:802  idFairnetbcngntr  2 names, no !⇒: Faircoin-net'blockchain | Faircoin_net'blockchain
+  McshTchInf000022:900  idFairnetblktmbngntr  4 names, no !⇒: Fain-net'block'interval | Fain-net'block-period | Fain-net'block-spacing | Fain-net'time-between-blocks
+  McshTchInf000022:957  idFairnetpocgntr  3 names, no !⇒: blockchain-appending-algo.proof-of-cooperation | Faircoin-net'proof-of-cooperation | proof-of-cooperation
+  McshTchInf000022:1034  idFairnetevuCexrgntr  3 names, no !⇒: Faircoin-currency'exchange-rate | FAIR'exchange-rate | Faircoin_currency'exchange-rate
+  McshTchInf000022:1082  idFairnetgovgntr  2 names, no !⇒: Faircoin-net'governance-system | Faircoin_net'governance-system
+  McshTchInf000022:1201  idFairnetwltgntr  2 names, no !⇒: Faircoin-net'wallet | Faircoin_net'wallet
+  McshTchInf000022:1219  idFairnetstatgntr  2 names, no !⇒: Faircoin-net'statistics | Faircoin_net'statistics
+  McshTchInf000022:1235  idFairnetstatEnrggntr  2 names, no !⇒: Faircoin-net'energy-consuption | Faircoin-statistics.energy-consuption
+  McshTchInf000022:1251  idFairnethmngntr  2 names, no !⇒: Faircoin-net'human | Faircoin_net'human
+  McshTchInf000022:1281  idFairnetogngntr  2 names, no !⇒: Faircoin-net'organization | Faircoin_net'organization
+  McshTchInf000022:1385  idFairnetevalgntr  2 names, no !⇒: Faircoin-net'evaluation | Faircoin_net'evaluation
+  McshTchInf000022:1399  idFairnetevalScongntr  2 names, no !⇒: Faircoin-evaluation.con | Faircoin-net'problem
+  McshTchInf000022:1466  idFairnetlawgntr  2 names, no !⇒: Faircoin-net'law | Faircoin_net'law
+  McshTchInf000022:1501  idFairnetrscgntr  2 names, no !⇒: Faircoin-net'info-resource | Faircoin_net'info-resource
+  McshTchInf000024:57  idSteemprlgntr  2 names, no !⇒: Steem-net'protocol | Steem_net'protocol
+  McshTchInf000024:79  idSteemnodgntr  4 names, no !⇒: Steem-net'node | Steem_net'node | Steem-node | Đ-Steem'node
+  McshTchInf000024:126  idSteemnodWtnsgntr  3 names, no !⇒: Steem-net'witness-node | Steem-node.witness | Steem-witness-node
+  McshTchInf000024:167  idSteemblkgntr  3 names, no !⇒: Steem-block | Steem-net'block | Đ-Steem'block
+  McshTchInf000024:287  idSteemtxgntr  3 names, no !⇒: Steem-net'transaction | Steem-transaction | transaction-of--Steem-net
+  McshTchInf000024:1016  idSteemdgntr  7 names, no !⇒: Steem-client-program | Steem-daemon-program | Steem-program.client | Steem-server-program
+  McshTchInf000024:2327  idSteemacntpbcgntr  6 names, no !⇒: address-of--Steem-account | name-of--Steem-account | Steem-account'address | Steem-account'name
+  McshTchInf000024:3832  idSteemognExggntr  3 names, no !⇒: Steem-exchange-organization | Steem-net'exchange-organization | Steem-ogn.exchange
+  McshTchInf000025:756  idEvrpastIqtgntr  3 names, no !⇒: Everipedia'IQ-token | IQ-token-of-Everipedia | Everipedia'asset.IQ-token
+  McshTchInf000026:209  idBkskBcnetgntr  2 names, no !⇒: Blockstack-net'blockchain-network | Blockstack_net'blockchain-network
+  McshTchInf000030:1277  idLRustsuntNgntr  2 names, no !⇒: Rust_lago'number | Rustn
+  McshTchInf000030:2841  idLRustrootgntr  2 names, no !⇒: Rust_lago'root | Rustalgo'root
+
+=== NO-NAM (4) — owner has no {B}nam name:: paragraph
+  McshTchInf000021:1266  idEoschngntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+  McshTchInf000021:1755  idEosevugntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+  McshTchInf000021:1926  idEosgovgntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+  McshTchInf000021:2895  idEoswltgntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+
+=== COLLIDES (0) — X_Gntr is already the name of another generic-tree
+  (none)
+
+=== NEW-CLASH (0) — two new heads would get the same name
+  (none)
+
+=== UNCLOSED (0) — generic-tree:: is not closed
+  (none)
+
+=== ID-NOT-gtr (0) — paragraph id does not end in gntr
+  (none)

@@ -1,0 +1,1892 @@
+generic-tree:: references -> X_Gntr — 2026-10-19   DRY=false
+
+references converted: 870 | files written: 119
+
+=== TARGET-IS-GTR (218)
+  McshCor000014:185  dynamic-system-gtr (McshCor000011#idSys009gtr) -> SystDynamic_Gntr
+  McshHlth000002:2302  glandEndocrine-gtr (McshHlth000002#idGlndHmn001gtr) -> glandEndocrine_Gntr
+  McshHlth000002:2625  glandMixed-gtr (McshHlth000002#idGlndHmn003gtr) -> HumnbodyMixedGland_Gntr
+  McshHlth000002:2667  glandMixed-gtr (McshHlth000002#idGlndHmn003gtr) -> HumnbodyMixedGland_Gntr
+  McshHlth000002:3370  glandMixed-gtr (McshHlth000002#idGlndHmn003gtr) -> HumnbodyMixedGland_Gntr
+  McshHlth000002:3480  glandSkin-gtr (McshHlth000002#idGlndHmn009gtr) -> HumnbodySkinGland_Gntr
+  McshHlth000002:4356  skeletal-tissue-gtr (McshHlth000002#idTissHmn007gtr) -> tissueSkeletal_Gntr
+  McshHlth000002:4415  skeletal-tissue-gtr (McshHlth000002#idTissHmn007gtr) -> tissueSkeletal_Gntr
+  McshHlth000002:4516  epithelial-tissue-gtr (McshHlth000002#idTissHmn006gtr) -> tissueEpithelial_Gntr
+  McshHlth000002:6251  SystOrgans-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000002:6253  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:8517  SystOrgans-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000002:8519  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:8694  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000002:9398  SystOrgans-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000002:9399  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:10725  SystOrgans-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000002:10727  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:11749  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:11847  glandExocrine-gtr (McshHlth000002#idGlndHmn002gtr) -> glandExocrine_Gntr
+  McshHlth000002:12394  SystOrgans-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000002:12396  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000002:15030  human-body-gtr (McshHlth000002#idBdyHmngtr) -> bodyHumn_Gntr
+  McshHlth000003:3735  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000004:1457  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1503  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1538  leucocyte-gtr (McshHlth000004#idCellHmn019gtr) -> cellLeucocyte_Gntr
+  McshHlth000004:1648  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1691  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1768  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1850  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1889  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:1937  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:2034  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:2216  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:2287  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:2423  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000004:2559  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000005:95  SystOgn-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000005:96  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000005:2842  SystOgn-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000005:2843  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000005:3504  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3505  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3531  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3532  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3559  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3560  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3586  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3587  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3613  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3614  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3640  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3641  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3667  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3668  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3697  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3698  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3725  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:3726  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:3867  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4446  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4490  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4681  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4729  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4730  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:4778  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4779  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:4891  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4920  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:4945  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5053  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5182  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5212  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5213  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:5244  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5279  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5280  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:5460  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5461  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:5489  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000005:5490  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000005:5537  organBone-gtr (McshHlth000005#idBoneHmngtr) -> organBone_Gntr
+  McshHlth000008:58  human-gtr (McshHmn000002#idHmngtr) -> human_Gntr
+  McshHlth000011:1196  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:1343  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:1421  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:1526  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:1790  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:2084  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:2978  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:3002  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:3051  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:3173  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:3534  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:3603  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:4202  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:4296  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:4701  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:4794  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:6285  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:6717  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8100  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8144  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8186  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8342  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8501  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8746  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8779  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:8854  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:9240  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:9278  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:9365  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10026  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10210  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10269  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10334  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10415  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10493  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10547  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10615  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10666  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10707  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10759  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10798  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10847  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:10923  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11001  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11053  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11157  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11454  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11526  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11556  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11649  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11899  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:11979  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12053  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12641  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12682  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12816  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12868  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12889  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12914  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12940  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:12967  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13007  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13056  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13161  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13185  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13287  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13425  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13548  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13627  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13681  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13838  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:13866  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14000  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14042  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14081  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14128  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14276  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14305  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14434  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14501  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14548  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14740  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:14779  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000011:16741  disease-gtr (McshHlth000011#idDssHmngtr) -> disease_Gntr
+  McshHlth000019:130  SystOgn-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000019:132  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshHlth000019:1414  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000019:2626  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000019:2926  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000019:3321  sense-organ-gtr (McshHlth000019#idOgnHmn007gtr) -> organSense_Gntr
+  McshHlth000019:3899  organ-gtr (McshHlth000002#idOgnHmngtr) -> organ_Gntr
+  McshHlth000019:4899  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000019:5284  cell-gtr (McshHlth000004#idCellHmngtr) -> cell_Gntr
+  McshHlth000019:5729  SystOgn-gtr (McshHlth000002#idSysOgnHmngtr) -> SystOrgans_Gntr
+  McshHlth000019:5730  nodeBodyHumn-gtr (McshHlth000002#idBdyHmnatt002gtr) -> nodeBodyHumn_Gntr
+  McshLag000003:300  bio-info-gtr (McshNtr000011#idInfBiogtr) -> infoBio_Gntr
+  McshOgm000004:739  biomolecule-gtr (McshOgm000004#idMolOgmgtr) -> molOgm_Gntr
+  McshOgm000004:840  biopolymer-gtr (McshOgm000004#idMolOgm003gtr) -> biopolymer_Gntr
+  McshOgm000004:862  biopolymer-gtr (McshOgm000004#idMolOgm003gtr) -> biopolymer_Gntr
+  McshOgm000004:882  biopolymer-gtr (McshOgm000004#idMolOgm003gtr) -> biopolymer_Gntr
+  McshOgm000004:902  biopolymer-gtr (McshOgm000004#idMolOgm003gtr) -> biopolymer_Gntr
+  McshOgm000005:1628  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1705  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1752  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1801  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1838  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1874  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1911  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:1956  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2020  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2059  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2096  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2128  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2172  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2208  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2248  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2286  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2330  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2368  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2438  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2478  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2526  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2559  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2579  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2615  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2660  hormone-gtr (McshOgm000005#idHrmnHmngtr) -> hormoneHumn_Gntr
+  McshOgm000005:2821  male-hormone-gtr (McshOgm000005#idHrmnHmn002gtr) -> HrmnHumnMale_Gntr
+  McshStn000009:5452  SocAdmnOgm-gtr (McshStn000007#idSocOgmatt006gtr) -> SystGvcSocOgm_Gntr
+  McshStn000020:113  human-gtr (McshHmn000002#idHmngtr) -> human_Gntr
+  McshStnlaw000002:1262  info-gtr (McshLag000003#idInfHmngtr) -> info_Gntr
+  McshTch000002:524  satisfier-gtr (McshStn000010#idSfrHmngtr) -> satisfier_Gntr
+  McshTch000003:131  technology-gtr (McshTch000002#idTchgtr) -> tech_Gntr
+  McshTchInf000004:116  info-tech-gtr (McshTchInf000002#idTchInfgtr) -> techInfo_Gntr
+  McshTchInf000019:1224  human-organization-gtr (McshStn000008#idOgzngtr) -> Ogzn_Gntr
+
+=== GTR-OF-TARGET (588)
+  McshCor000002:2136  Mcsattr (McshCor000002#idMcsatt) -> Mcsattr_Gntr
+  McshCor000002:2279  tree-node--path (McshCor000011#idSys002nodepth) -> tree_node_chain_Gntr
+  McshCor000002:2675  worldviewPrimary (McshLag000003#idWldv005) -> worldviewMind_Gntr
+  McshCor000002:3410  knowledge-manager (McshTchInf000039#idLKnlgmngr) -> KnlgMngr_Gntr
+  McshCor000002:3824  Mcsmanager-doing (McshCor000002#idMcsmdng) -> Mcsmgrdong_Gntr
+  McshCor000003:5287  definite-entity (McshCor000003#idEntDef) -> definite_Gntr
+  McshCor000004:195  bodyNo-argument (McshCor000003#idEntBodyNarg) -> bodyNo_argt_Gntr
+  McshCor000004:484  space-direction (McshCor000007#idSpcDrcn) -> space_direction_Gntr
+  McshCor000005:140  argument-of-bodyNo (McshCor000003#idEntBodyNarg) -> bodyNo_argt_Gntr
+  McshCor000006:368  continous-generic-entity (McshCor000009#idGnrcCnt) -> discreteNo_entity_Gntr
+  McshCor000007:824  continous-generic-entity (McshCor000009#idGnrcCnt) -> discreteNo_entity_Gntr
+  McshCor000009:552  evaluating (McshCor000018#idBrngHmnFct002Evalg) -> FctgEvaluating_Gntr
+  McshCor000012:217  evaluation (McshCor000018#idBrngHmnFct002EvalgargOtpt) -> evaluation_Gntr
+  McshCor000013:107  brainin-info (McshLag000002#idInfBrnBioBrnn) -> infoBrainInBio_Gntr
+  McshCor000013:495  functing (McshCor000004#idDngFctg) -> functing_Gntr
+  McshCor000013:497  doing-or-relation (McshCor000003#idEntBodyN) -> bodyNo_Gntr
+  McshCor000018:188  doing-of-bodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshCor000018:520  επικοινωνία (McshHlth000002#idBdyHmn298) -> HumnbodyCommunicating_Gntr
+  McshCor000018:631  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:719  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:748  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:778  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:843  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:891  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:916  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:946  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:979  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:1010  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:1044  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshCor000018:1105  FctgThinking.io (McshCor000013#idBrngThkg) -> FctgThinkingBio_Gntr
+  McshCor000018:3982  wantingBio (McshCor000013#idBrngWntg) -> FctgWantingBio_Gntr
+  McshCor000018:4865  brainingBio.creating (McshCor000013#idBrngInfcrt) -> creatingInfoMindBio_Gntr
+  McshEdu000005:6004  mathAppliedNo (McshEdu000005#idSMath002) -> mathAppliedNo_Gntr
+  McshEdu000005:6269  mathAppliedNo (McshEdu000005#idSMath002) -> mathAppliedNo_Gntr
+  McshEdu000005:6936  mathAppliedNo (McshEdu000005#idSMath002) -> mathAppliedNo_Gntr
+  McshEdu000005:7071  mathAppliedNo (McshEdu000005#idSMath002) -> mathAppliedNo_Gntr
+  McshEdu000005:8028  mathAppliedNo (McshEdu000005#idSMath002) -> mathAppliedNo_Gntr
+  McshHlth000002:1667  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:1939  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2023  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2195  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2257  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2330  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2332  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2745  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2747  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2852  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2892  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2894  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:2918  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:2920  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:3004  glandEndocrine (McshHlth000002#idGlndHmn013) -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3034  glandEndocrine (McshHlth000002#idGlndHmn013) -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3099  endocrine-gland (McshHlth000002#idGlndHmn013) -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3160  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:3162  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:3195  organGland (McshHlth000002#idGlndHmn) -> organGland_Gntr
+  McshHlth000002:3197  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:3441  glandSkin (McshHlth000002#idGlndHmn009) -> HumnbodySkinGland_Gntr
+  McshHlth000002:3585  glandSkin (McshHlth000002#idGlndHmn009) -> HumnbodySkinGland_Gntr
+  McshHlth000002:3958  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:4069  tissue (McshHlth000002#idTissHmn) -> tissue_Gntr
+  McshHlth000002:4119  tissue (McshHlth000002#idTissHmn) -> tissue_Gntr
+  McshHlth000002:4163  tissueSkeletal (McshHlth000002#idTissHmn007) -> tissueSkeletal_Gntr
+  McshHlth000002:4223  tissue (McshHlth000002#idTissHmn) -> tissue_Gntr
+  McshHlth000002:4261  tissueMuscle (McshHlth000002#idTissHmn008) -> tissueMuscle_Gntr
+  McshHlth000002:4291  tissueMuscle (McshHlth000002#idTissHmn008) -> tissueMuscle_Gntr
+  McshHlth000002:6356  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:6531  tissueMuscle (McshHlth000002#idTissHmn008) -> tissueMuscle_Gntr
+  McshHlth000002:7133  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:7806  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:8388  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:8603  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:8763  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:8823  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:8959  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:9202  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:9283  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000002:9285  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000002:9286  muscleTorso (McshHlth000005#idMsclHmn007) -> muscleTorso_Gntr
+  McshHlth000002:9288  muscleThorax (McshHlth000005#idMsclHmn012) -> muscleThorax_Gntr
+  McshHlth000002:9498  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:9523  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:9750  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:9857  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:9892  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:9923  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000002:10002  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10030  organSense (McshHlth000019#idOgnHmn007) -> organSense_Gntr
+  McshHlth000002:10117  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10167  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10252  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10285  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10313  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:10498  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:11383  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:11420  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:11464  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:11499  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:11748  SystOrgans (McshHlth000002#idSysOgnHmn) -> SystOrgans_Gntr
+  McshHlth000002:11791  γεννητικό-σύστημα (McshHlth000002#idSysOgnHmn009) -> SystReproductive_Gntr
+  McshHlth000002:12006  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:12087  γεννητικό-σύστημα (McshHlth000002#idSysOgnHmn009) -> SystReproductive_Gntr
+  McshHlth000002:12114  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:12171  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:12202  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:12606  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000002:13542  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:13630  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:13918  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:13970  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:14008  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:14040  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000002:14139  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshHlth000003:472  lobeBrain (McshHlth000003#idBrnHmnatt037) -> lobeBrain_Gntr
+  McshHlth000003:593  lobeBrain (McshHlth000003#idBrnHmnatt037) -> lobeBrain_Gntr
+  McshHlth000003:671  lobeBrain (McshHlth000003#idBrnHmnatt037) -> lobeBrain_Gntr
+  McshHlth000003:809  lobeBrain (McshHlth000003#idBrnHmnatt037) -> lobeBrain_Gntr
+  McshHlth000003:872  lobeBrain (McshHlth000003#idBrnHmnatt037) -> lobeBrain_Gntr
+  McshHlth000003:1203  endocrine-gland (McshHlth000002#idGlndHmn001) -> glandEndocrine_Gntr
+  McshHlth000003:3128  organVessel (McshHlth000002#idOgnHmn013) -> organVessel_Gntr
+  McshHlth000004:1349  nodeBodyHumn (McshHlth000002#idBdyHmnatt002) -> nodeBodyHumn_Gntr
+  McshHlth000004:1692  μυϊκό-κύτταρο (McshHlth000004#idCellHmn013) -> cellMuscle_Gntr
+  McshHlth000004:1740  cellMuscle (McshHlth000004#idCellHmn013) -> cellMuscle_Gntr
+  McshHlth000004:1769  cellMuscle (McshHlth000004#idCellHmn013) -> cellMuscle_Gntr
+  McshHlth000005:507  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000005:668  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:718  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:777  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:850  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:851  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:933  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:934  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:935  muscleHead (McshHlth000005#idMsclHmn006) -> muscleHead_Gntr
+  McshHlth000005:1344  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:1345  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:1755  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:1756  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:1802  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:1803  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:1804  muscleTorso (McshHlth000005#idMsclHmn007) -> muscleTorso_Gntr
+  McshHlth000005:1854  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:1855  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:1856  muscleTorso (McshHlth000005#idMsclHmn007) -> muscleTorso_Gntr
+  McshHlth000005:2077  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2078  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:2079  muscleTorso (McshHlth000005#idMsclHmn007) -> muscleTorso_Gntr
+  McshHlth000005:2147  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2148  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:2149  muscleTorso (McshHlth000005#idMsclHmn007) -> muscleTorso_Gntr
+  McshHlth000005:2268  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2269  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:2390  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2391  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:2392  muscleLimb (McshHlth000005#idMsclHmn008) -> muscleLimb_Gntr
+  McshHlth000005:2630  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2631  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:2632  muscleLimb (McshHlth000005#idMsclHmn008) -> muscleLimb_Gntr
+  McshHlth000005:2705  organMuscle (McshHlth000005#idMsclHmn) -> organMuscle_Gntr
+  McshHlth000005:2706  muscleSkeletal (McshHlth000005#idMsclHmn002) -> muscleSkeletal_Gntr
+  McshHlth000005:3297  organ (McshHlth000002#idOgnHmn) -> organ_Gntr
+  McshHlth000006:393  state-of-entity (McshCor000003#idEntevgtmpt) -> Enttstate_Gntr
+  McshHlth000006:394  attribute-of-entity (McshCor000003#idEntatt) -> attribute_Gntr
+  McshHlth000007:178  state-of-entity (McshCor000003#idEntevgtmpt) -> Enttstate_Gntr
+  McshHlth000008:511  body (McshCor000003#idEntBody) -> body_Gntr
+  McshHlth000008:555  bodyMaterialHealthHuman (McshHlth000008#idHlthHmnatt005) -> MtrlHlth_Gntr
+  McshHlth000011:1552  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:2140  αιμοφιλία (McshHlth000011#idDssHmn198) -> DssHaemophilia_Gntr
+  McshHlth000011:2141  αναιμία (McshHlth000011#idDssHmn058) -> DssAnemia_Gntr
+  McshHlth000011:2142  αρτηριακη-υπέρταση (McshHlth000011#idDssHmn042) -> DssHypertension_Gntr
+  McshHlth000011:2145  leucosyte-disease (McshHlth000011#idDssHmn068) -> DssLeucocyte_Gntr
+  McshHlth000011:2146  ουραιμια (McshHlth000011#idDssHmn197) -> DssUraemia_Gntr
+  McshHlth000011:2185  DssHeartvessel (McshHlth000011#idDssHmn032) -> DssSysCirculatory_Gntr
+  McshHlth000011:2251  DssVessel (McshHlth000011#idDssHmn130) -> DssVessel_Gntr
+  McshHlth000011:2286  DssVessel (McshHlth000011#idDssHmn130) -> DssVessel_Gntr
+  McshHlth000011:2464  DssHeartvessel (McshHlth000011#idDssHmn032) -> DssSysCirculatory_Gntr
+  McshHlth000011:2535  DssHeart (McshHlth000011#idDssHmn047) -> disease.heart_Gntr
+  McshHlth000011:2637  DssBlood (McshHlth000011#idDssHmn057) -> DssBlood_Gntr
+  McshHlth000011:2695  blood-disease (McshHlth000011#idDssHmn057) -> DssBlood_Gntr
+  McshHlth000011:2779  DssAnaemia (McshHlth000011#idDssHmn058) -> DssAnemia_Gntr
+  McshHlth000011:2831  DssBlood (McshHlth000011#idDssHmn057) -> DssBlood_Gntr
+  McshHlth000011:2832  leukemia (McshHlth000011#idDssHmn069) -> DssLeukemia_Gntr
+  McshHlth000011:2867  DssBlood (McshHlth000011#idDssHmn057) -> DssBlood_Gntr
+  McshHlth000011:3108  DssHeart (McshHlth000011#idDssHmn047) -> disease.heart_Gntr
+  McshHlth000011:4449  leucosyte-disease (McshHlth000011#idDssHmn068) -> DssLeucocyte_Gntr
+  McshHlth000011:4625  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:6365  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:6402  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:6429  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:6466  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:6497  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:6541  DssEye (McshHlth000011#idDssHmn096) -> DssEye_Gntr
+  McshHlth000011:8983  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9427  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9656  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9694  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9746  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9809  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9886  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:9949  viral-infection (McshHlth000011#idDssHmn162) -> DssViralInfection_Gntr
+  McshHlth000011:11122  infectious-disease (McshHlth000011#idDssHmn001) -> DssInfectious_Gntr
+  McshHlth000011:11810  DssReproduction (McshHlth000011#idDssHmn211) -> DssReproduction_Gntr
+  McshHlth000011:12114  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12198  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12232  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12325  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12364  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12452  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12513  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:12548  DssSkin (McshHlth000011#idDssHmn037) -> DssSkin_Gntr
+  McshHlth000011:13424  DssFctPaining (McshHlth000011#idDssHmn272) -> DssFctPaining_Gntr
+  McshHlth000011:17468  sensing (McshCor000018#idBrngHmnFct003) -> FctgSensing_Gntr
+  McshHlth000013:3058  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:3471  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:4039  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:4490  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:4589  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:5863  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:6410  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:6552  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:6963  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:7663  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7694  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7786  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7844  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7881  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7936  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:7989  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8061  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8092  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8150  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8217  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8285  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8337  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8405  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8455  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8529  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8577  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8632  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8695  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8739  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:8814  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:8889  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9115  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9265  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9487  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9579  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9601  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9636  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9672  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9707  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9743  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9788  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9819  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9856  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:9892  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:9967  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10035  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:10072  natural-food (McshHlth000013#idFoodHmn049) -> foodNatural_Gntr
+  McshHlth000013:10175  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10215  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10255  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10335  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10448  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10638  γλυκό (McshHlth000013#idFoodHmn201) -> foodDessert_Gntr
+  McshHlth000013:10695  γλυκό (McshHlth000013#idFoodHmn201) -> foodDessert_Gntr
+  McshHlth000013:10914  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10949  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:10985  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:11083  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:11145  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000013:11230  naturalNo-food (McshHlth000013#idFoodHmn050) -> foodCooked_Gntr
+  McshHlth000015:91  health-substance (McshHlth000008#idHlthHmnsbtc) -> substanceHlth_Gntr
+  McshHlth000016:791  doingNo-therapy (McshHlth000016#idThrpHmnDngN) -> therapy.doingNo_Gntr
+  McshHlth000019:275  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:401  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:433  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:434  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:435  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:468  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:469  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:470  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:518  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:519  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:544  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:545  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:570  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:571  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:596  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:597  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:598  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:624  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:625  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:626  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:655  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:656  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:657  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:682  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:683  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:684  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:709  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:710  cerebrum-center (McshHlth000019#idSysNrvsatt018) -> cerebrum_center_Gntr
+  McshHlth000019:711  sensory-center (McshHlth000019#idSysNrvsatt019) -> sensory-center_Gntr
+  McshHlth000019:736  nervous-center (McshHlth000019#idSysNrvsatt017) -> nervous_center_Gntr
+  McshHlth000019:890  meninx (McshHlth000019#idSysNrvsatt031) -> menix_Gntr
+  McshHlth000019:920  meninx (McshHlth000019#idSysNrvsatt031) -> menix_Gntr
+  McshHlth000019:950  meninx (McshHlth000019#idSysNrvsatt031) -> menix_Gntr
+  McshHlth000019:1674  eye-appendage (McshHlth000019#idSysNrvsatt038) -> eye_appendage_Gntr
+  McshHlth000019:1709  eye-appendage (McshHlth000019#idSysNrvsatt038) -> eye_appendage_Gntr
+  McshHlth000019:1757  eye-appendage (McshHlth000019#idSysNrvsatt038) -> eye_appendage_Gntr
+  McshHlth000019:1790  eye-appendage (McshHlth000019#idSysNrvsatt038) -> eye_appendage_Gntr
+  McshHlth000019:3072  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3109  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3168  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3211  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3287  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3346  nerveSense (McshHlth000019#idOgnHmn006Snsr) -> nerveSensory_Gntr
+  McshHlth000019:3420  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3483  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:3518  sense-system (McshHlth000019#idSysNrvsatt016) -> SystSense_Gntr
+  McshHlth000019:4029  organNerve (McshHlth000019#idOgnHmn006) -> organNerve_Gntr
+  McshHlth000019:4082  organNerve (McshHlth000019#idOgnHmn006) -> organNerve_Gntr
+  McshHlth000019:4114  organNerve (McshHlth000019#idOgnHmn006) -> organNerve_Gntr
+  McshHlth000019:4192  tissue-gtr (McshHlth000002#idTissHmn) -> tissue_Gntr
+  McshHlth000019:5653  doingBodyHumn (McshHlth000002#idBdyHmndng) -> bodyHumn'doing_Gntr
+  McshLag000003:88  mapping-relation (McshCor000005#idRlnMpg) -> RltnMapping_Gntr
+  McshLag000003:1787  senso-info (McshLag000003#idInfHmnSrl) -> infoSenso_Gntr
+  McshLag000005:164  info (McshCor000013#idBrnginf) -> infoMindBio_Gntr
+  McshLag000006:3510  computer-char (McshLag000006#idCharCmr) -> computer-char_Gntr
+  McshLag000007:949  viewMcs (McshCor000002#idMcsv) -> Mcsview_Gntr
+  McshLag000007:1066  brainin-info (McshLag000002#idInfBrnBioBrnn) -> infoBrainInBio_Gntr
+  McshLag000007:1390  bio-mind-info (McshCor000013#idBrnginf) -> infoMindBio_Gntr
+  McshLag000007:1590  semu-cnpt-attribute--of-Semucnpt (McshLag000007#idLHmnmsmscptatt) -> Semucnpt_attr_Gntr
+  McshLag000007:4080  SemoCnptattNumber (McshCor000010#idQntSms) -> attSemuNumber_Gntr
+  McshLag000007:21505  inflector-of-Hmnm_lago (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000007:21555  termSemu (McshLag000007#idLHmnmnameTrmSms) -> termSemu_Gntr
+  McshLag000007:22048  multiword-term (McshLag000007#idLHmnmname006) -> termMany_Gntr
+  McshLag000007:23866  memberorHmnm (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000007:24411  termSemu (McshLag000007#idLHmnmnameTrmSms) -> termSemu_Gntr
+  McshLag000007:24494  multiword-term (McshLag000007#idLHmnmname006) -> termMany_Gntr
+  McshLag000007:25301  termSemu (McshLag000007#idLHmnmnameTrmSms) -> termSemu_Gntr
+  McshLag000007:26183  multiword-term (McshLag000007#idLHmnmname006) -> termMany_Gntr
+  McshLag000008:124  logo-node (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000008:155  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000008:258  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000008:604  logo-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000008:628  lagHmnm-name (McshLag000007#idLHmnmname) -> name_Gntr
+  McshLag000009:167  logo-node (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000009:198  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000009:598  unit-of-lagHmnm (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000009:3938  logo-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000009:3979  lagHmnm-name (McshLag000007#idLHmnmname) -> name_Gntr
+  McshLag000010:260  lagHmnm-semu-verb (McshLag000007#idLHmnmsmsvrb) -> Semuverb_Gntr
+  McshLag000010:282  lagHmnm_conj-cnpt (McshLag000007#idLHmnmsmscnj) -> Semuconj_Gntr
+  McshLag000010:356  logo-node--of-lagHmnm (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000010:388  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000010:527  main-name-unit--of-lagoSpch (McshLag000009#idL0017phnm) -> phoneme_Gntr
+  McshLag000010:1287  lagAlfa-letter (McshLag000008#idL0016ltr) -> letter_Gntr
+  McshLag000010:2432  lagHmnm-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000010:4804  memberor (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000010:5442  ConjHmnm (McshLag000007#idLHmnmconj) -> Hmnmconj_Gntr
+  McshLag000010:5443  Sngu_term (McshLag000010#idL0014term) -> Sngu_term_Gntr
+  McshLag000010:5930  constructed-language (McshLag000007#idLntrlN) -> lagoCnrd_Gntr
+  McshLag000011:288  Engl_lago-lago-argu (McshLag000011#idLEnglsmsondo) -> Engl_Semuargu_Gntr
+  McshLag000011:289  lagHmnm-lago-typical-noun (McshLag000007#idLHmnmsmsondombrMain) -> Semuargu_mebrMain_Gntr
+  McshLag000011:428  Engl_lago-lago-argu-member (McshLag000011#idLEnglsmsondombr) -> Engl_Semuargu_mebr_Gntr
+  McshLag000011:524  lagHmnm-lago-verb (McshLag000007#idLHmnmsmsvrb) -> Semuverb_Gntr
+  McshLag000011:735  main-name-unit--of-lagoSpch (McshLag000009#idL0017phnm) -> phoneme_Gntr
+  McshLag000011:1630  lagAlfa-letter (McshLag000008#idL0016ltr) -> letter_Gntr
+  McshLag000011:2201  lagHmnm-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000011:5959  member-finder (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000011:14921  pronoun (McshLag000007#idLHmnmpron) -> pronoun_Gntr
+  McshLag000011:25739  verb-conjugator (McshLag000007#idLHmnmverbmrfdr) -> memberorVerb_Gntr
+  McshLag000012:168  lagHmnm-semu-argu (McshLag000007#idLHmnmsmsondo) -> Semuargu_Gntr
+  McshLag000012:200  Espo_lago-semu-argu (McshLag000012#idLEsposmsondo) -> Espo_Semuargu_Gntr
+  McshLag000012:201  lagHmnm-semu-main-argu (McshLag000007#idLHmnmsmsondombrMain) -> Semuargu_mebrMain_Gntr
+  McshLag000012:254  lagHmnm-semu-verb (McshLag000007#idLHmnmsmsvrb) -> Semuverb_Gntr
+  McshLag000012:276  lagHmnm-semu-conjunction (McshLag000007#idLHmnmsmscnj) -> Semuconj_Gntr
+  McshLag000012:353  logo-node--of-lagHmnm (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000012:385  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000012:515  main-name-unit--of-lagoSpch (McshLag000009#idL0017phnm) -> phoneme_Gntr
+  McshLag000012:1166  lagAlfa-letter (McshLag000008#idL0016ltr) -> letter_Gntr
+  McshLag000012:1698  lagHmnm-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000012:1751  syllable-of-lagHmnm (McshLag000007#idLHmnmsylb) -> HmnmSylb_Gntr
+  McshLag000012:1851  memberor (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000012:5148  constructed-language (McshLag000007#idLntrlN) -> lagoCnrd_Gntr
+  McshLag000018:247  Semucnpt (McshLag000007#idLHmnmsmscpt) -> Semucnpt_Gntr
+  McshLag000018:365  Zhon_lago-argu-concept (McshLag000018#idLZhonsmsnun) -> Zhonsemuargu_Gntr
+  McshLag000018:366  Hmnm_lago-semu-typical-argu (McshLag000007#idLHmnmsmsondombrMain) -> Semuargu_mebrMain_Gntr
+  McshLag000018:396  Zhon_lago-argu-concept-member (McshLag000018#idLZhonsmsnunmbr) -> Zhonsemuargu_mebr_Gntr
+  McshLag000018:435  Hmnm_lago-argu-concept (McshLag000007#idLHmnmsmsondo) -> Semuargu_Gntr
+  McshLag000018:474  Hmnm_lago-semu-verb (McshLag000007#idLHmnmsmsvrb) -> Semuverb_Gntr
+  McshLag000018:522  HmnmConjCnpt (McshLag000007#idLHmnmsmscnj) -> Semuconj_Gntr
+  McshLag000018:586  syntax (McshLag000007#idLHmnmsxtr) -> syntax_Gntr
+  McshLag000018:603  logo-node--of-Hmnm_lago (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000018:636  logo-unit (McshLag000007#idLHmnmunt) -> HmnmUnit_Gntr
+  McshLag000018:1186  name-unit--of-lagoSpch (McshLag000009#idL0017phnm) -> phoneme_Gntr
+  McshLag000018:8009  member-finder (McshLag000007#idLHmnmnameTrmmrfr) -> memberorHmnm_Gntr
+  McshLag000018:10876  pronoun (McshLag000007#idLHmnmpron) -> pronoun_Gntr
+  McshLag000018:12281  verb-member-finder (McshLag000007#idLHmnmverbmrfdr) -> memberorVerb_Gntr
+  McshLag000018:18507  conceptographic-language (McshLag000007#idLHmnm0033) -> Cptg_lago_Gntr
+  McshLag000020:130  semu-concept (McshLag000007#idLHmnmsmscpt) -> Semucnpt_Gntr
+  McshLag000020:165  syntax (McshLag000007#idLHmnmsxtr) -> syntax_Gntr
+  McshLag000020:182  logo-node--of-lagHmnm (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshLag000021:175  lagHmnm-word (McshLag000007#idLHmnmwrd) -> word_Gntr
+  McshLag000026:1626  verb (McshLag000007#idLHmnmverb) -> verb_Gntr
+  McshLag000030:7764  ConjHmnm (McshLag000007#idLHmnmconj) -> Hmnmconj_Gntr
+  McshLag000033:343  logo-node--of-lagHmnm (McshLag000007#idLHmnmnode) -> Hmnm_node_Gntr
+  McshNtr000006:118  chemical-substance (McshNtr000005#idSysMols010) -> MtrlChemical_Gntr
+  McshNtr000006:120  body (McshCor000003#idEntBody) -> body_Gntr
+  McshNtr000006:330  acidCarboxylic (McshNtr000006#idCmpAcd003) -> acidCarboxylic_Gntr
+  McshNtr000007:407  chemical-substance (McshNtr000005#idSysMols010) -> MtrlChemical_Gntr
+  McshNtr000007:409  body (McshCor000003#idEntBody) -> body_Gntr
+  McshOgm000002:238  body (McshCor000003#idEntBody) -> body_Gntr
+  McshOgm000002:243  body (McshCor000003#idEntBody) -> body_Gntr
+  McshOgm000005:863  productBodyHumn (McshOgm000005#idSysMolsHmn004) -> BodyHumn'product_Gntr
+  McshOgm000005:907  productBodyHumn (McshOgm000005#idSysMolsHmn004) -> BodyHumn'product_Gntr
+  McshOgm000005:999  productBodyHumn (McshOgm000005#idSysMolsHmn004) -> BodyHumn'product_Gntr
+  McshOgm000005:1020  productBodyHumn (McshOgm000005#idSysMolsHmn004) -> BodyHumn'product_Gntr
+  McshOgm000005:1381  productBodyHumn (McshOgm000005#idSysMolsHmn004) -> BodyHumn'product_Gntr
+  McshOgm000005:3527  connective-tissue (McshHlth000002#idTissHmn005) -> tissueConnective_Gntr
+  McshOgm000006:82  carboxylic-acid (McshNtr000006#idCmpAcd003) -> acidCarboxylic_Gntr
+  McshOgm000006:959  polymer (McshNtr000004#idMol013) -> molPolymer_Gntr
+  McshStn000005:266  dynamic-system (McshCor000011#idSys009) -> SystDynamic_Gntr
+  McshStn000006:225  socialitation (McshStn000002#idStnOgmgstr) -> sctnOgms_Gntr
+  McshStn000007:260  body-entity (McshCor000003#idEntBody) -> body_Gntr
+  McshStn000008:1197  socialitation (McshStn000002#idStnHmn) -> Sctn_Gntr
+  McshStn000009:8174  dynamic-system (McshCor000011#idSys009) -> SystDynamic_Gntr
+  McshStn000011:198  human'skill (McshHmn000002#idHmnatt036) -> skill_Gntr
+  McshStn000011:1315  producer-of-economy (McshStn000012#idEconHmnatt037) -> Econproducer_Gntr
+  McshStn000015:139  ozn'node (McshStn000008#idOgznatt018) -> Ogzn'node_Gntr
+  McshStn000020:112  human-citizen (McshHmn000002#idHmn016) -> HumnCitizen_Gntr
+  McshStn000020:5298  EuoCom-Directorate-general (McshStn000020#idEuoDgCom) -> EuoDgCom_Gntr
+  McshStn000020:16266  Euzzworker (McshStn000020#idEuwkr) -> Euzzworker_Gntr
+  McshStn000020:17304  governance-organization-of-Eu (McshStn000020#idEuogvc) -> Euogvc_Gntr
+  McshStn000021:698  body-entity (McshCor000003#idEntBody) -> body_Gntr
+  McshStn000023:21621  RDF-vocabulary (McshTchInf000039#idLKnlg014voc) -> Rdfvoc_Gntr
+  McshStnlaw000003:1357  primary-law-of-Eu (McshStnlaw000003#idLawEus010) -> EulPrimary_Gntr
+  McshTch000005:226  artificial-agent (McshTchInf000002#idTchInf024) -> techAA_Gntr
+  McshTchInf000005:570  info (McshCor000013#idBrnginf) -> infoMindBio_Gntr
+  McshTchInf000005:1073  document (McshLag000003#idInfHmnSrl001) -> doc_Gntr
+  McshTchInf000006:2195  word-of-Pgmg_lago (McshTchInf000006#idLCpgmalgwrd) -> Prmgalgoword_Gntr
+  McshTchInf000006:2800  section-of-Pgmg_lago (McshTchInf000006#idLCpgmalgsctn) -> Pgmgalgo'section_Gntr
+  McshTchInf000006:2854  algorithm-of-Pgmg_lago (McshTchInf000006#idLCpgmalg) -> Pgmgalgo_Gntr
+  McshTchInf000007:1187  naturalNo-human-mind--language (McshLag000007#idLntrlN) -> lagoCnrd_Gntr
+  McshTchInf000009:3185  Mcsmgr'doing (McshCor000002#idMcsmdng) -> Mcsmgrdong_Gntr
+  McshTchInf000010:383  object (McshTchInf000010#idLJsgno) -> Jso_Gntr
+  McshTchInf000010:1017  Array.prototype (McshTchInf000010#idLJsgnArrayp) -> JsoArrayprototype_Gntr
+  McshTchInf000010:1018  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:1116  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:1873  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:2217  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:2862  semantic-unit (McshTchInf000010#idLJsgnsut) -> Jssut_Gntr
+  McshTchInf000010:2895  semantic-unit (McshTchInf000010#idLJsgnsut) -> Jssut_Gntr
+  McshTchInf000010:2941  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:3229  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:3268  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:3423  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:3548  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:4005  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000010:4174  Jsapi (McshTchInf000010#idLJsgnapi) -> Jsapi_Gntr
+  McshTchInf000011:236  Jsgn-semantic-unit (McshTchInf000010#idLJsgnsut) -> Jssut_Gntr
+  McshTchInf000011:337  Jsgn-function (McshTchInf000010#idLJsgnf) -> Jsf_Gntr
+  McshTchInf000011:894  Jsgn-object (McshTchInf000010#idLJsgno) -> Jso_Gntr
+  McshTchInf000011:1374  Jsgn-API (McshTchInf000010#idLJsgnapi) -> Jsapi_Gntr
+  McshTchInf000011:1427  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000011:2529  Jsgn-algorithm (McshTchInf000010#idLJsgnalg) -> Jsalgo_Gntr
+  McshTchInf000011:2655  Jsgn-library (McshTchInf000010#idLJsgnlbr) -> Jsalgolbrr_Gntr
+  McshTchInf000011:3359  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000011:4787  Jsgn-tool (McshTchInf000010#idLJsgntol) -> Jsgntool_Gntr
+  McshTchInf000012:260  Jsgn-semantic-unit (McshTchInf000010#idLJsgnsut) -> Jssut_Gntr
+  McshTchInf000012:316  Jsgn-function (McshTchInf000010#idLJsgnf) -> Jsf_Gntr
+  McshTchInf000012:752  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:754  module-sut-member (McshTchInf000012#idLJsndmcmbr) -> Jsndmmbr_Gntr
+  McshTchInf000012:973  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:1616  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:1807  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:2221  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:2953  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:3188  Jsgn-native-api (McshTchInf000010#idLJsgnapiNtv) -> JsapiNative_Gntr
+  McshTchInf000012:3268  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:3507  JavaScript--most-generic-object (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:3725  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000012:3883  Jsgn-sentence (McshTchInf000010#idLJsgnstc) -> Jsgnsent_Gntr
+  McshTchInf000012:3933  Jsgn-algo (McshTchInf000010#idLJsgnalg) -> Jsalgo_Gntr
+  McshTchInf000012:4697  Jsgn-program (McshTchInf000010#idLJsgnpgm) -> Jsgnpgm_Gntr
+  McshTchInf000012:6133  Jsgn-package (McshTchInf000010#idLJsgnpkg) -> Jsgn_lago_pkg_Gntr
+  McshTchInf000012:8626  Jsgn-tool (McshTchInf000010#idLJsgntol) -> Jsgntool_Gntr
+  McshTchInf000013:96  Javascript-algorithm (McshTchInf000010#idLJsgnalg) -> Jsalgo_Gntr
+  McshTchInf000013:169  Javascript-API (McshTchInf000010#idLJsgnapi) -> Jsapi_Gntr
+  McshTchInf000013:322  Object.prototype (McshTchInf000010#idLJsgnmgo) -> Jsmgo_Gntr
+  McshTchInf000013:1296  Jsnd-package.json (McshTchInf000012#idLJsndpkgjsn) -> Pckgjson_Gntr
+  McshTchInf000013:1443  Javascript-program (McshTchInf000010#idLJsgnpgm) -> Jsgnpgm_Gntr
+  McshTchInf000013:1659  Desktop-Javascript-language (McshTchInf000010#idLJsdt) -> Jsdt_lago_Gntr
+  McshTchInf000015:343  stakeholder-of--chain-net (McshTchInf000015#idAlgntskhr) -> Dstakeholder_Gntr
+  McshTchInf000015:1651  chain-net--advantage (McshTchInf000015#idAlgntevalSpro) -> netAlgo_benefit_Gntr
+  McshTchInf000015:2135  AnLaw (McshTchInf000015#idAlgntlaw) -> AnLaw_Gntr
+  McshTchInf000015:4030  price-of--chain-asset (McshTchInf000015#idAlgntevuprc) -> Agntasset_price_Gntr
+  McshTchInf000015:4317  consensus--chain-asset (McshTchInf000015#idAlgntevuCns) -> appending_Agntasset_Gntr
+  McshTchInf000015:7097  stakeholder-of--chain-net (McshTchInf000015#idAlgntskhr) -> Dstakeholder_Gntr
+  McshTchInf000015:7830  blockchain-Đbexchange (McshTchInf000015#idAlgntx) -> AgntogznExch_Gntr
+  McshTchInf000016:166  chain-human (McshTchInf000015#idAlgnthmn) -> Dhuman_Gntr
+  McshTchInf000016:269  chain-organization (McshTchInf000015#idAlgntogn) -> netAlgo_ozn_Gntr
+  McshTchInf000016:371  chain-protocol (McshTchInf000015#idAlgntprl) -> Dprotocol_Gntr
+  McshTchInf000016:428  chain-node (McshTchInf000015#idAlgntnod) -> Agntnode_Gntr
+  McshTchInf000016:493  appender-node--of--chain-net (McshTchInf000015#idAlgntnodApdr) -> DnodeAppender_Gntr
+  McshTchInf000016:1155  chain-appending-algo (McshTchInf000015#idAlgntcsa) -> Dchain_appending_algo_Gntr
+  McshTchInf000016:1574  chain-crypto (McshTchInf000015#idAlgntchncrpt) -> Dchain_crypto_Gntr
+  McshTchInf000016:1689  Dchain (McshTchInf000015#idAlgntchn) -> Dchain_Gntr
+  McshTchInf000016:1902  price-of--chain-asset (McshTchInf000015#idAlgntevuprc) -> Agntasset_price_Gntr
+  McshTchInf000016:2340  chain-asset (McshTchInf000015#idAlgntevu) -> Agntasset_Gntr
+  McshTchInf000016:3206  chain-currency (McshTchInf000015#idAlgntevuMoe) -> AgntassetExvu_Gntr
+  McshTchInf000016:3335  chain--appending-asset (McshTchInf000015#idAlgntevuCns) -> appending_Agntasset_Gntr
+  McshTchInf000016:4083  chain-program (McshTchInf000015#idAlgntpgm) -> DeProgram_Gntr
+  McshTchInf000016:4142  smart-contract (McshTchInf000015#idDcntrt) -> DeContract_Gntr
+  McshTchInf000016:4171  chain-Dapp (McshTchInf000015#idDapp) -> DeApp_Gntr
+  McshTchInf000016:4875  chain-evaluation (McshTchInf000015#idAlgnteval) -> netAlgo'evaluation_Gntr
+  McshTchInf000016:5187  chain-doing (McshTchInf000015#idAlgntdng) -> Dchain_doing_Gntr
+  McshTchInf000016:7038  program-blockchain-network (McshTchInf000016#idBpmnet) -> BkcnserviceSmct_Gntr
+  McshTchInf000016:7971  program-blockchain-network (McshTchInf000016#idBpmnet) -> BkcnserviceSmct_Gntr
+  McshTchInf000016:8096  Exchange-value-unit-network (McshTchInf000016#idDbcEvu) -> BcnnetEvu_Gntr
+  McshTchInf000016:8317  Consensus-exchange-value-token (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000016:9013  Blockchain-network-node (McshTchInf000016#idDbcnod) -> Dblockchain_node_Gntr
+  McshTchInf000016:10249  Exchange-value-unit-blockchain-network (McshTchInf000016#idDbcEvu) -> BcnnetEvu_Gntr
+  McshTchInf000016:10337  Exchange-value-unit-network (McshTchInf000016#idDbcEvu) -> BcnnetEvu_Gntr
+  McshTchInf000016:12619  consensus-token (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000016:12888  blockchain-wallet (McshTchInf000016#idDbcwlt) -> Dblockchain_wallet_Gntr
+  McshTchInf000016:14611  program-blockchain-network (McshTchInf000016#idBpmnet) -> BkcnserviceSmct_Gntr
+  McshTchInf000017:1482  Blockchain (McshTchInf000016#idDbcdat) -> Dblockchain_Gntr
+  McshTchInf000017:5398  consensus-exval-token (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000017:6901  blockchain-wallet (McshTchInf000016#idDbcwlt) -> Dblockchain_wallet_Gntr
+  McshTchInf000018:316  blockchain-protocol (McshTchInf000016#idDbcprl) -> Dblockchain_protocol_Gntr
+  McshTchInf000018:1398  blockchain-network-node (McshTchInf000016#idDbcnod) -> Dblockchain_node_Gntr
+  McshTchInf000018:2329  bcnnet-consensus-algorithm (McshTchInf000016#idDbccsa) -> Dblockchain_appending_algo_Gntr
+  McshTchInf000018:2766  blockchain-transaction (McshTchInf000016#idDbctx) -> Dblockchain_tx_Gntr
+  McshTchInf000018:3846  Consensous-exchange-value-unit (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000018:12636  Blockchain-program-blockchain-network (McshTchInf000016#idBpmnet) -> BkcnserviceSmct_Gntr
+  McshTchInf000019:2643  stakeholder-of--OgznDao (McshTchInf000019#idDeOznskhr) -> OgznDao'stakeholder_Gntr
+  McshTchInf000019:3205  OgznDao-stakeholder (McshTchInf000019#idDeOznskhr) -> OgznDao'stakeholder_Gntr
+  McshTchInf000019:3545  Dchain-exchange-ogn (McshTchInf000015#idAlgntx) -> AgntogznExch_Gntr
+  McshTchInf000019:4122  Ethereum-Dapp (McshTchInf000018#idEthdap) -> DappEth_Gntr
+  McshTchInf000019:4416  stakeholder-of-OgznDao (McshTchInf000019#idDeOznskhr) -> OgznDao'stakeholder_Gntr
+  McshTchInf000020:2126  Ethereum-consensusNo-asset (McshTchInf000018#idEthevuCN) -> EthrassetCN_Gntr
+  McshTchInf000021:1281  blockchain-net'block (McshTchInf000016#idDbcblk) -> Bkcnblock_Gntr
+  McshTchInf000021:1830  consensus-blockchain-asset (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000021:2400  blockchain-net'program (McshTchInf000016#idDbcpgm) -> Dblockchain_program_Gntr
+  McshTchInf000021:2562  smart-contract (McshTchInf000015#idDcntrt) -> DeContract_Gntr
+  McshTchInf000021:2668  chain-net'Dapp (McshTchInf000015#idDapp) -> DeApp_Gntr
+  McshTchInf000021:2930  blockchain-net'human (McshTchInf000016#idDbchmn) -> Dblockchain_human_Gntr
+  McshTchInf000022:816  blockchain-block (McshTchInf000016#idDbcblk) -> Bkcnblock_Gntr
+  McshTchInf000022:952  blockchain--consensus-algorithm (McshTchInf000016#idDbccsa) -> Dblockchain_appending_algo_Gntr
+  McshTchInf000022:996  blockchain-consensus-cryptocurrency (McshTchInf000016#idDbcevuC) -> appending-asset_Gntr
+  McshTchInf000023:261  Dagchain-network (McshTchInf000015#idAlgntnDag) -> AnDagchain_Gntr
+  McshTchInf000024:168  blockchain-block (McshTchInf000016#idDbcblk) -> Bkcnblock_Gntr
+  McshTchInf000024:288  blockchain-transaction (McshTchInf000016#idDbctx) -> Dblockchain_tx_Gntr
+  McshTchInf000024:981  blockchain-program (McshTchInf000016#idDbcpgm) -> Dblockchain_program_Gntr
+  McshTchInf000024:1907  Steem-net--program (McshTchInf000024#idSteempgm) -> Steem-program_Gntr
+  McshTchInf000024:2141  blockchain-wallet (McshTchInf000016#idDbcwlt) -> Dblockchain_wallet_Gntr
+  McshTchInf000024:3715  Đapp (McshTchInf000015#idDapp) -> DeApp_Gntr
+  McshTchInf000024:3829  chain-exchange-organization (McshTchInf000015#idAlgntx) -> AgntogznExch_Gntr
+  McshTchInf000025:1212  Eos-Dapp (McshTchInf000021#idEospgmApp) -> Deos_Dapp_Gntr
+  McshTchInf000025:1214  chain-Dapp (McshTchInf000015#idDapp) -> DeApp_Gntr
+  McshTchInf000026:1630  Dapp (McshTchInf000015#idDapp) -> DeApp_Gntr
+  McshTchInf000027:221  Blockchain-program--blockchain-network (McshTchInf000016#idBpmnet) -> BkcnserviceSmct_Gntr
+  McshTchInf000028:602  appender-Dnode (McshTchInf000015#idAlgntnodApdr) -> DnodeAppender_Gntr
+  McshTchInf000028:1630  Dcurrency (McshTchInf000015#idAlgntevuMoe) -> AgntassetExvu_Gntr
+  McshTchInf000028:1631  Move_lago--resource-type (McshTchInf000028#idLMoveprsrcTp) -> Moversrctype_Gntr
+  McshTchInf000028:2615  Dcurrency-DnChain (McshTchInf000015#idDcnetMoe) -> netAlgoCurrency_Gntr
+  McshTchInf000030:244  algo-node-of-Srcd_lago (McshTchInf000006#idLSrcdalgnode) -> Srcd_lago_node_Gntr
+  McshTchInf000030:326  word-of-Lsrc (McshTchInf000006#idLSrcdwrd) -> Srcdalgowork_Gntr
+  McshTchInf000030:1153  sem-unit-of-Lsrc (McshTchInf000006#idLSrcdsunt) -> Srcd_lago_Sunt_Gntr
+  McshTchInf000030:1274  number-of-Srcd_lago (McshTchInf000006#idLSrcdsuntN) -> Srcd_lago_n_Gntr
+  McshTchInf000030:1678  source--semantic-unit---of-Rust_lago (McshTchInf000030#idLRustsunt) -> Rustsunt_Gntr
+  McshTchInf000030:1737  Srcd_lago-operator (McshTchInf000006#idLSrcdsuntFOpr) -> Srcd_lago_opr_Gntr
+  McshTchInf000030:2670  sentence-of-Lsrc (McshTchInf000006#idLSrcdsntc) -> Srcdsent_Gntr
+  McshTchInf000030:2794  section-of-Lsrc (McshTchInf000006#idLSrcdsctn) -> Srcdalgosect_Gntr
+  McshTchInf000030:2849  algorithm-of--source-language (McshTchInf000006#idLSrcdalg) -> Srcdalgo_Gntr
+  McshTchInf000035:466  text-document-representation-language (McshTchInf000005#idLtdoc) -> Tdoc_lago_Gntr
+  McshTchInf000036:4937  tool (McshTch000002#idTch003) -> techTool_Gntr
+  McshTchInf000037:166  software-interface (McshTchInf000003#idCmratt004Soft) -> Softinterface_Gntr
+  McshTchInf000038:1296  logo-knowledge-language--manager (McshTchInf000039#idLKnlg002mngr) -> Lgklmngr_Gntr
+  McshTchInf000041:6118  Electron-app (McshTchInf000013#idLJselpgm) -> Jselapp_Gntr
+  McshTchPrgm000003:2403  Electronjs-program (McshTchInf000013#idLJselpgm) -> Jselapp_Gntr
+  McshTchPrgm000003:2405  computer-algorithm (McshTchInf000006#idLCpgmalg) -> Pgmgalgo_Gntr
+  McshTchPrgm000005:698  operating-system (McshTchPrgm000002#idCpgm003) -> prgmOs_Gntr
+  Mcsh000000:224  Mcs-manager (McshCor000002#idMcsm) -> Mcsmgr_Gntr
+  Mcsh000000:397  Mcs-worlview (McshCor000002#idMcswv) -> Mcswv_Gntr
+  Mcsh000000:407  primary-worldview (McshLag000003#idWldv005) -> worldviewMind_Gntr
+
+=== WHOLE-FILE (64)
+  McshCor000002:5042  entity (McshCor000003) -> entity_Gntr
+  McshCor000006:370  doing (McshCor000004) -> doing_Gntr
+  McshCor000009:1252  entity (McshCor000003) -> entity_Gntr
+  McshCor000013:109  info (McshLag000003) -> info_Gntr
+  McshCor000013:112  entity (McshCor000003) -> entity_Gntr
+  McshCor000013:496  doing (McshCor000004) -> doing_Gntr
+  McshCor000013:498  entity (McshCor000003) -> entity_Gntr
+  McshEdu000002:913  entity (McshCor000003) -> entity_Gntr
+  McshHlth000004:1348  cellOgm (McshOgm000007) -> cellOgm_Gntr
+  McshHlth000008:512  entity (McshCor000003) -> entity_Gntr
+  McshHlth000013:865  satisfier (McshStn000010) -> satisfier_Gntr
+  McshHlth000013:866  foodBio (McshHlth000012) -> foodBio_Gntr
+  McshHlth000014:630  drug (McshHlth000015) -> drug_Gntr
+  McshHlth000014:1472  entity (McshCor000003) -> entity_Gntr
+  McshHlth000018:160  therapy (McshHlth000016) -> therapy_Gntr
+  McshLag000002:206  entity (McshCor000003) -> entity_Gntr
+  McshLag000003:302  entity (McshCor000003) -> entity_Gntr
+  McshLag000007:2284  entity (McshCor000003) -> entity_Gntr
+  McshLag000007:2328  entity (McshCor000003) -> entity_Gntr
+  McshLag000007:2620  entity (McshCor000003) -> entity_Gntr
+  McshLag000030:8046  entity (McshCor000003) -> entity_Gntr
+  McshLag000043:3663  entity (McshCor000003) -> entity_Gntr
+  McshNtr000002:501  entity (McshCor000003) -> entity_Gntr
+  McshNtr000006:120  doing (McshCor000004) -> doing_Gntr
+  McshNtr000006:120  relation (McshCor000005) -> relation_Gntr
+  McshNtr000006:121  entity (McshCor000003) -> entity_Gntr
+  McshNtr000007:409  doing (McshCor000004) -> doing_Gntr
+  McshNtr000007:409  relation (McshCor000005) -> relation_Gntr
+  McshNtr000011:117  entity (McshCor000003) -> entity_Gntr
+  McshOgm000002:236  system (McshCor000011) -> system_Gntr
+  McshOgm000002:239  entity (McshCor000003) -> entity_Gntr
+  McshOgm000002:244  entity (McshCor000003) -> entity_Gntr
+  McshStn000005:267  system (McshCor000011) -> system_Gntr
+  McshStn000005:269  entity (McshCor000003) -> entity_Gntr
+  McshStn000007:261  entity (McshCor000003) -> entity_Gntr
+  McshStn000009:8175  system (McshCor000011) -> system_Gntr
+  McshStn000009:8177  entity (McshCor000003) -> entity_Gntr
+  McshStn000021:699  entity (McshCor000003) -> entity_Gntr
+  McshStn000022:482  sfrBuilding (McshStn000027) -> sfrBuilding_Gntr
+  McshStn000029:168  satisfier (McshStn000010) -> satisfier_Gntr
+  McshStn000031:13743  society (McshStn000009) -> society_Gntr
+  McshStn000035:3691  society (McshStn000009) -> society_Gntr
+  McshStn000036:198  society (McshStn000009) -> society_Gntr
+  McshStn000037:2131  society (McshStn000009) -> society_Gntr
+  McshStn000038:1832  society (McshStn000009) -> society_Gntr
+  McshStn000039:2247  society (McshStn000009) -> society_Gntr
+  McshStn000040:1638  society (McshStn000009) -> society_Gntr
+  McshStn000041:1568  society (McshStn000009) -> society_Gntr
+  McshStn000043:1652  society (McshStn000009) -> society_Gntr
+  McshStn000044:1905  society (McshStn000009) -> society_Gntr
+  McshStn000045:299  society (McshStn000009) -> society_Gntr
+  McshStn000046:283  society (McshStn000009) -> society_Gntr
+  McshStn000047:299  society (McshStn000009) -> society_Gntr
+  McshStn000048:5316  society (McshStn000009) -> society_Gntr
+  McshStn000049:535  society (McshStn000009) -> society_Gntr
+  McshStn000050:3837  society (McshStn000009) -> society_Gntr
+  McshStn000051:454  society (McshStn000009) -> society_Gntr
+  McshTch000002:525  entity (McshCor000003) -> entity_Gntr
+  McshTchInf000005:567  language (McshLag000005) -> language_Gntr
+  McshTchInf000008:3124  law (McshStnlaw000002) -> law_Gntr
+  McshTchInf000015:13463  entity (McshCor000003) -> entity_Gntr
+  McshTchInf000036:4936  science (McshEdu000002) -> science_Gntr
+  McshTchPrgm000003:2410  entity (McshCor000003) -> entity_Gntr
+  Mcsh000000:401  entity (McshCor000003) -> entity_Gntr
+
+=== NAME-DIFFERS (432)
+  McshCor000002:2279  tree-node--path -> tree_node_chain_Gntr
+  McshCor000002:2675  worldviewPrimary -> worldviewMind_Gntr
+  McshCor000002:3410  knowledge-manager -> KnlgMngr_Gntr
+  McshCor000002:3824  Mcsmanager-doing -> Mcsmgrdong_Gntr
+  McshCor000003:5287  definite-entity -> definite_Gntr
+  McshCor000004:195  bodyNo-argument -> bodyNo_argt_Gntr
+  McshCor000005:140  argument-of-bodyNo -> bodyNo_argt_Gntr
+  McshCor000006:368  continous-generic-entity -> discreteNo_entity_Gntr
+  McshCor000007:824  continous-generic-entity -> discreteNo_entity_Gntr
+  McshCor000009:552  evaluating -> FctgEvaluating_Gntr
+  McshCor000013:107  brainin-info -> infoBrainInBio_Gntr
+  McshCor000013:497  doing-or-relation -> bodyNo_Gntr
+  McshCor000014:185  dynamic-system-gtr -> SystDynamic_Gntr
+  McshCor000018:188  doing-of-bodyHumn -> bodyHumn'doing_Gntr
+  McshCor000018:520  επικοινωνία -> HumnbodyCommunicating_Gntr
+  McshCor000018:631  sensing -> FctgSensing_Gntr
+  McshCor000018:719  sensing -> FctgSensing_Gntr
+  McshCor000018:748  sensing -> FctgSensing_Gntr
+  McshCor000018:778  sensing -> FctgSensing_Gntr
+  McshCor000018:843  sensing -> FctgSensing_Gntr
+  McshCor000018:891  sensing -> FctgSensing_Gntr
+  McshCor000018:916  sensing -> FctgSensing_Gntr
+  McshCor000018:946  sensing -> FctgSensing_Gntr
+  McshCor000018:979  sensing -> FctgSensing_Gntr
+  McshCor000018:1010  sensing -> FctgSensing_Gntr
+  McshCor000018:1044  sensing -> FctgSensing_Gntr
+  McshCor000018:1105  FctgThinking.io -> FctgThinkingBio_Gntr
+  McshCor000018:3982  wantingBio -> FctgWantingBio_Gntr
+  McshCor000018:4865  brainingBio.creating -> creatingInfoMindBio_Gntr
+  McshHlth000002:2625  glandMixed-gtr -> HumnbodyMixedGland_Gntr
+  McshHlth000002:2667  glandMixed-gtr -> HumnbodyMixedGland_Gntr
+  McshHlth000002:3004  glandEndocrine -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3034  glandEndocrine -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3099  endocrine-gland -> HumnbodyAdrenalGland_Gntr
+  McshHlth000002:3370  glandMixed-gtr -> HumnbodyMixedGland_Gntr
+  McshHlth000002:3441  glandSkin -> HumnbodySkinGland_Gntr
+  McshHlth000002:3480  glandSkin-gtr -> HumnbodySkinGland_Gntr
+  McshHlth000002:3585  glandSkin -> HumnbodySkinGland_Gntr
+  McshHlth000002:4356  skeletal-tissue-gtr -> tissueSkeletal_Gntr
+  McshHlth000002:4415  skeletal-tissue-gtr -> tissueSkeletal_Gntr
+  McshHlth000002:4516  epithelial-tissue-gtr -> tissueEpithelial_Gntr
+  McshHlth000002:11791  γεννητικό-σύστημα -> SystReproductive_Gntr
+  McshHlth000002:12087  γεννητικό-σύστημα -> SystReproductive_Gntr
+  McshHlth000002:13542  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:13630  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:13918  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:13970  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:14008  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:14040  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:14139  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000002:15030  human-body-gtr -> bodyHumn_Gntr
+  McshHlth000003:1203  endocrine-gland -> glandEndocrine_Gntr
+  McshHlth000004:1538  leucocyte-gtr -> cellLeucocyte_Gntr
+  McshHlth000004:1692  μυϊκό-κύτταρο -> cellMuscle_Gntr
+  McshHlth000005:95  SystOgn-gtr -> SystOrgans_Gntr
+  McshHlth000005:2842  SystOgn-gtr -> SystOrgans_Gntr
+  McshHlth000006:393  state-of-entity -> Enttstate_Gntr
+  McshHlth000006:394  attribute-of-entity -> attribute_Gntr
+  McshHlth000007:178  state-of-entity -> Enttstate_Gntr
+  McshHlth000008:555  bodyMaterialHealthHuman -> MtrlHlth_Gntr
+  McshHlth000011:2140  αιμοφιλία -> DssHaemophilia_Gntr
+  McshHlth000011:2141  αναιμία -> DssAnemia_Gntr
+  McshHlth000011:2142  αρτηριακη-υπέρταση -> DssHypertension_Gntr
+  McshHlth000011:2145  leucosyte-disease -> DssLeucocyte_Gntr
+  McshHlth000011:2146  ουραιμια -> DssUraemia_Gntr
+  McshHlth000011:2185  DssHeartvessel -> DssSysCirculatory_Gntr
+  McshHlth000011:2464  DssHeartvessel -> DssSysCirculatory_Gntr
+  McshHlth000011:2535  DssHeart -> disease.heart_Gntr
+  McshHlth000011:2695  blood-disease -> DssBlood_Gntr
+  McshHlth000011:2779  DssAnaemia -> DssAnemia_Gntr
+  McshHlth000011:2832  leukemia -> DssLeukemia_Gntr
+  McshHlth000011:3108  DssHeart -> disease.heart_Gntr
+  McshHlth000011:4449  leucosyte-disease -> DssLeucocyte_Gntr
+  McshHlth000011:8983  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9427  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9656  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9694  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9746  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9809  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9886  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:9949  viral-infection -> DssViralInfection_Gntr
+  McshHlth000011:11122  infectious-disease -> DssInfectious_Gntr
+  McshHlth000011:17468  sensing -> FctgSensing_Gntr
+  McshHlth000013:3058  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:3471  natural-food -> foodNatural_Gntr
+  McshHlth000013:4039  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:4490  natural-food -> foodNatural_Gntr
+  McshHlth000013:4589  natural-food -> foodNatural_Gntr
+  McshHlth000013:5863  natural-food -> foodNatural_Gntr
+  McshHlth000013:6410  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:6552  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:6963  natural-food -> foodNatural_Gntr
+  McshHlth000013:7663  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7694  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7786  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7844  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7881  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7936  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:7989  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8061  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8092  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8150  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8217  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8285  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8337  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8405  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8455  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8529  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8577  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8632  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8695  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8739  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:8814  natural-food -> foodNatural_Gntr
+  McshHlth000013:8889  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9115  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9265  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9487  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9579  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9601  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9636  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9672  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9707  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9743  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9788  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9819  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9856  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:9892  natural-food -> foodNatural_Gntr
+  McshHlth000013:9967  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10035  natural-food -> foodNatural_Gntr
+  McshHlth000013:10072  natural-food -> foodNatural_Gntr
+  McshHlth000013:10175  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10215  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10255  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10335  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10448  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10638  γλυκό -> foodDessert_Gntr
+  McshHlth000013:10695  γλυκό -> foodDessert_Gntr
+  McshHlth000013:10914  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10949  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:10985  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:11083  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:11145  naturalNo-food -> foodCooked_Gntr
+  McshHlth000013:11230  naturalNo-food -> foodCooked_Gntr
+  McshHlth000015:91  health-substance -> substanceHlth_Gntr
+  McshHlth000016:791  doingNo-therapy -> therapy.doingNo_Gntr
+  McshHlth000019:130  SystOgn-gtr -> SystOrgans_Gntr
+  McshHlth000019:890  meninx -> menix_Gntr
+  McshHlth000019:920  meninx -> menix_Gntr
+  McshHlth000019:950  meninx -> menix_Gntr
+  McshHlth000019:3072  sense-system -> SystSense_Gntr
+  McshHlth000019:3109  sense-system -> SystSense_Gntr
+  McshHlth000019:3168  sense-system -> SystSense_Gntr
+  McshHlth000019:3211  sense-system -> SystSense_Gntr
+  McshHlth000019:3287  sense-system -> SystSense_Gntr
+  McshHlth000019:3321  sense-organ-gtr -> organSense_Gntr
+  McshHlth000019:3346  nerveSense -> nerveSensory_Gntr
+  McshHlth000019:3420  sense-system -> SystSense_Gntr
+  McshHlth000019:3483  sense-system -> SystSense_Gntr
+  McshHlth000019:3518  sense-system -> SystSense_Gntr
+  McshHlth000019:5653  doingBodyHumn -> bodyHumn'doing_Gntr
+  McshHlth000019:5729  SystOgn-gtr -> SystOrgans_Gntr
+  McshLag000003:88  mapping-relation -> RltnMapping_Gntr
+  McshLag000003:300  bio-info-gtr -> infoBio_Gntr
+  McshLag000003:1787  senso-info -> infoSenso_Gntr
+  McshLag000005:164  info -> infoMindBio_Gntr
+  McshLag000007:949  viewMcs -> Mcsview_Gntr
+  McshLag000007:1066  brainin-info -> infoBrainInBio_Gntr
+  McshLag000007:1390  bio-mind-info -> infoMindBio_Gntr
+  McshLag000007:1590  semu-cnpt-attribute--of-Semucnpt -> Semucnpt_attr_Gntr
+  McshLag000007:4080  SemoCnptattNumber -> attSemuNumber_Gntr
+  McshLag000007:21505  inflector-of-Hmnm_lago -> memberorHmnm_Gntr
+  McshLag000007:22048  multiword-term -> termMany_Gntr
+  McshLag000007:24494  multiword-term -> termMany_Gntr
+  McshLag000007:26183  multiword-term -> termMany_Gntr
+  McshLag000008:124  logo-node -> Hmnm_node_Gntr
+  McshLag000008:155  logo-unit -> HmnmUnit_Gntr
+  McshLag000008:258  logo-unit -> HmnmUnit_Gntr
+  McshLag000008:604  logo-word -> word_Gntr
+  McshLag000008:628  lagHmnm-name -> name_Gntr
+  McshLag000009:167  logo-node -> Hmnm_node_Gntr
+  McshLag000009:198  logo-unit -> HmnmUnit_Gntr
+  McshLag000009:598  unit-of-lagHmnm -> HmnmUnit_Gntr
+  McshLag000009:3938  logo-word -> word_Gntr
+  McshLag000009:3979  lagHmnm-name -> name_Gntr
+  McshLag000010:260  lagHmnm-semu-verb -> Semuverb_Gntr
+  McshLag000010:282  lagHmnm_conj-cnpt -> Semuconj_Gntr
+  McshLag000010:356  logo-node--of-lagHmnm -> Hmnm_node_Gntr
+  McshLag000010:388  logo-unit -> HmnmUnit_Gntr
+  McshLag000010:527  main-name-unit--of-lagoSpch -> phoneme_Gntr
+  McshLag000010:1287  lagAlfa-letter -> letter_Gntr
+  McshLag000010:2432  lagHmnm-word -> word_Gntr
+  McshLag000010:4804  memberor -> memberorHmnm_Gntr
+  McshLag000010:5442  ConjHmnm -> Hmnmconj_Gntr
+  McshLag000010:5930  constructed-language -> lagoCnrd_Gntr
+  McshLag000011:288  Engl_lago-lago-argu -> Engl_Semuargu_Gntr
+  McshLag000011:289  lagHmnm-lago-typical-noun -> Semuargu_mebrMain_Gntr
+  McshLag000011:428  Engl_lago-lago-argu-member -> Engl_Semuargu_mebr_Gntr
+  McshLag000011:524  lagHmnm-lago-verb -> Semuverb_Gntr
+  McshLag000011:735  main-name-unit--of-lagoSpch -> phoneme_Gntr
+  McshLag000011:1630  lagAlfa-letter -> letter_Gntr
+  McshLag000011:2201  lagHmnm-word -> word_Gntr
+  McshLag000011:5959  member-finder -> memberorHmnm_Gntr
+  McshLag000011:25739  verb-conjugator -> memberorVerb_Gntr
+  McshLag000012:168  lagHmnm-semu-argu -> Semuargu_Gntr
+  McshLag000012:200  Espo_lago-semu-argu -> Espo_Semuargu_Gntr
+  McshLag000012:201  lagHmnm-semu-main-argu -> Semuargu_mebrMain_Gntr
+  McshLag000012:254  lagHmnm-semu-verb -> Semuverb_Gntr
+  McshLag000012:276  lagHmnm-semu-conjunction -> Semuconj_Gntr
+  McshLag000012:353  logo-node--of-lagHmnm -> Hmnm_node_Gntr
+  McshLag000012:385  logo-unit -> HmnmUnit_Gntr
+  McshLag000012:515  main-name-unit--of-lagoSpch -> phoneme_Gntr
+  McshLag000012:1166  lagAlfa-letter -> letter_Gntr
+  McshLag000012:1698  lagHmnm-word -> word_Gntr
+  McshLag000012:1751  syllable-of-lagHmnm -> HmnmSylb_Gntr
+  McshLag000012:1851  memberor -> memberorHmnm_Gntr
+  McshLag000012:5148  constructed-language -> lagoCnrd_Gntr
+  McshLag000018:365  Zhon_lago-argu-concept -> Zhonsemuargu_Gntr
+  McshLag000018:366  Hmnm_lago-semu-typical-argu -> Semuargu_mebrMain_Gntr
+  McshLag000018:396  Zhon_lago-argu-concept-member -> Zhonsemuargu_mebr_Gntr
+  McshLag000018:435  Hmnm_lago-argu-concept -> Semuargu_Gntr
+  McshLag000018:474  Hmnm_lago-semu-verb -> Semuverb_Gntr
+  McshLag000018:522  HmnmConjCnpt -> Semuconj_Gntr
+  McshLag000018:603  logo-node--of-Hmnm_lago -> Hmnm_node_Gntr
+  McshLag000018:636  logo-unit -> HmnmUnit_Gntr
+  McshLag000018:1186  name-unit--of-lagoSpch -> phoneme_Gntr
+  McshLag000018:8009  member-finder -> memberorHmnm_Gntr
+  McshLag000018:12281  verb-member-finder -> memberorVerb_Gntr
+  McshLag000018:18507  conceptographic-language -> Cptg_lago_Gntr
+  McshLag000020:130  semu-concept -> Semucnpt_Gntr
+  McshLag000020:182  logo-node--of-lagHmnm -> Hmnm_node_Gntr
+  McshLag000021:175  lagHmnm-word -> word_Gntr
+  McshLag000030:7764  ConjHmnm -> Hmnmconj_Gntr
+  McshLag000033:343  logo-node--of-lagHmnm -> Hmnm_node_Gntr
+  McshNtr000006:118  chemical-substance -> MtrlChemical_Gntr
+  McshNtr000007:407  chemical-substance -> MtrlChemical_Gntr
+  McshOgm000004:739  biomolecule-gtr -> molOgm_Gntr
+  McshOgm000005:863  productBodyHumn -> BodyHumn'product_Gntr
+  McshOgm000005:907  productBodyHumn -> BodyHumn'product_Gntr
+  McshOgm000005:999  productBodyHumn -> BodyHumn'product_Gntr
+  McshOgm000005:1020  productBodyHumn -> BodyHumn'product_Gntr
+  McshOgm000005:1381  productBodyHumn -> BodyHumn'product_Gntr
+  McshOgm000005:1628  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1705  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1752  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1801  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1838  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1874  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1911  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:1956  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2020  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2059  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2096  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2128  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2172  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2208  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2248  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2286  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2330  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2368  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2438  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2478  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2526  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2559  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2579  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2615  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2660  hormone-gtr -> hormoneHumn_Gntr
+  McshOgm000005:2821  male-hormone-gtr -> HrmnHumnMale_Gntr
+  McshOgm000005:3527  connective-tissue -> tissueConnective_Gntr
+  McshOgm000006:82  carboxylic-acid -> acidCarboxylic_Gntr
+  McshOgm000006:959  polymer -> molPolymer_Gntr
+  McshStn000005:266  dynamic-system -> SystDynamic_Gntr
+  McshStn000006:225  socialitation -> sctnOgms_Gntr
+  McshStn000007:260  body-entity -> body_Gntr
+  McshStn000008:1197  socialitation -> Sctn_Gntr
+  McshStn000009:5452  SocAdmnOgm-gtr -> SystGvcSocOgm_Gntr
+  McshStn000009:8174  dynamic-system -> SystDynamic_Gntr
+  McshStn000011:198  human'skill -> skill_Gntr
+  McshStn000011:1315  producer-of-economy -> Econproducer_Gntr
+  McshStn000015:139  ozn'node -> Ogzn'node_Gntr
+  McshStn000020:112  human-citizen -> HumnCitizen_Gntr
+  McshStn000020:5298  EuoCom-Directorate-general -> EuoDgCom_Gntr
+  McshStn000020:17304  governance-organization-of-Eu -> Euogvc_Gntr
+  McshStn000021:698  body-entity -> body_Gntr
+  McshStn000023:21621  RDF-vocabulary -> Rdfvoc_Gntr
+  McshStnlaw000003:1357  primary-law-of-Eu -> EulPrimary_Gntr
+  McshTch000003:131  technology-gtr -> tech_Gntr
+  McshTch000005:226  artificial-agent -> techAA_Gntr
+  McshTchInf000004:116  info-tech-gtr -> techInfo_Gntr
+  McshTchInf000005:570  info -> infoMindBio_Gntr
+  McshTchInf000005:1073  document -> doc_Gntr
+  McshTchInf000006:2195  word-of-Pgmg_lago -> Prmgalgoword_Gntr
+  McshTchInf000006:2800  section-of-Pgmg_lago -> Pgmgalgo'section_Gntr
+  McshTchInf000006:2854  algorithm-of-Pgmg_lago -> Pgmgalgo_Gntr
+  McshTchInf000007:1187  naturalNo-human-mind--language -> lagoCnrd_Gntr
+  McshTchInf000009:3185  Mcsmgr'doing -> Mcsmgrdong_Gntr
+  McshTchInf000010:383  object -> Jso_Gntr
+  McshTchInf000010:1017  Array.prototype -> JsoArrayprototype_Gntr
+  McshTchInf000010:1018  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:1116  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:1873  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:2217  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:2862  semantic-unit -> Jssut_Gntr
+  McshTchInf000010:2895  semantic-unit -> Jssut_Gntr
+  McshTchInf000010:2941  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:3229  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:3268  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:3423  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:3548  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000010:4005  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000011:236  Jsgn-semantic-unit -> Jssut_Gntr
+  McshTchInf000011:337  Jsgn-function -> Jsf_Gntr
+  McshTchInf000011:894  Jsgn-object -> Jso_Gntr
+  McshTchInf000011:1374  Jsgn-API -> Jsapi_Gntr
+  McshTchInf000011:1427  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000011:2529  Jsgn-algorithm -> Jsalgo_Gntr
+  McshTchInf000011:2655  Jsgn-library -> Jsalgolbrr_Gntr
+  McshTchInf000011:3359  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:260  Jsgn-semantic-unit -> Jssut_Gntr
+  McshTchInf000012:316  Jsgn-function -> Jsf_Gntr
+  McshTchInf000012:752  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:754  module-sut-member -> Jsndmmbr_Gntr
+  McshTchInf000012:973  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:1616  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:1807  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:2221  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:2953  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:3188  Jsgn-native-api -> JsapiNative_Gntr
+  McshTchInf000012:3268  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:3507  JavaScript--most-generic-object -> Jsmgo_Gntr
+  McshTchInf000012:3725  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000012:3883  Jsgn-sentence -> Jsgnsent_Gntr
+  McshTchInf000012:3933  Jsgn-algo -> Jsalgo_Gntr
+  McshTchInf000012:4697  Jsgn-program -> Jsgnpgm_Gntr
+  McshTchInf000012:6133  Jsgn-package -> Jsgn_lago_pkg_Gntr
+  McshTchInf000013:96  Javascript-algorithm -> Jsalgo_Gntr
+  McshTchInf000013:169  Javascript-API -> Jsapi_Gntr
+  McshTchInf000013:322  Object.prototype -> Jsmgo_Gntr
+  McshTchInf000013:1296  Jsnd-package.json -> Pckgjson_Gntr
+  McshTchInf000013:1443  Javascript-program -> Jsgnpgm_Gntr
+  McshTchInf000013:1659  Desktop-Javascript-language -> Jsdt_lago_Gntr
+  McshTchInf000015:343  stakeholder-of--chain-net -> Dstakeholder_Gntr
+  McshTchInf000015:1651  chain-net--advantage -> netAlgo_benefit_Gntr
+  McshTchInf000015:4030  price-of--chain-asset -> Agntasset_price_Gntr
+  McshTchInf000015:4317  consensus--chain-asset -> appending_Agntasset_Gntr
+  McshTchInf000015:7097  stakeholder-of--chain-net -> Dstakeholder_Gntr
+  McshTchInf000015:7830  blockchain-Đbexchange -> AgntogznExch_Gntr
+  McshTchInf000016:166  chain-human -> Dhuman_Gntr
+  McshTchInf000016:269  chain-organization -> netAlgo_ozn_Gntr
+  McshTchInf000016:371  chain-protocol -> Dprotocol_Gntr
+  McshTchInf000016:428  chain-node -> Agntnode_Gntr
+  McshTchInf000016:493  appender-node--of--chain-net -> DnodeAppender_Gntr
+  McshTchInf000016:1155  chain-appending-algo -> Dchain_appending_algo_Gntr
+  McshTchInf000016:1574  chain-crypto -> Dchain_crypto_Gntr
+  McshTchInf000016:1902  price-of--chain-asset -> Agntasset_price_Gntr
+  McshTchInf000016:2340  chain-asset -> Agntasset_Gntr
+  McshTchInf000016:3206  chain-currency -> AgntassetExvu_Gntr
+  McshTchInf000016:3335  chain--appending-asset -> appending_Agntasset_Gntr
+  McshTchInf000016:4083  chain-program -> DeProgram_Gntr
+  McshTchInf000016:4142  smart-contract -> DeContract_Gntr
+  McshTchInf000016:4171  chain-Dapp -> DeApp_Gntr
+  McshTchInf000016:4875  chain-evaluation -> netAlgo'evaluation_Gntr
+  McshTchInf000016:5187  chain-doing -> Dchain_doing_Gntr
+  McshTchInf000016:7038  program-blockchain-network -> BkcnserviceSmct_Gntr
+  McshTchInf000016:7971  program-blockchain-network -> BkcnserviceSmct_Gntr
+  McshTchInf000016:8096  Exchange-value-unit-network -> BcnnetEvu_Gntr
+  McshTchInf000016:8317  Consensus-exchange-value-token -> appending-asset_Gntr
+  McshTchInf000016:9013  Blockchain-network-node -> Dblockchain_node_Gntr
+  McshTchInf000016:10249  Exchange-value-unit-blockchain-network -> BcnnetEvu_Gntr
+  McshTchInf000016:10337  Exchange-value-unit-network -> BcnnetEvu_Gntr
+  McshTchInf000016:12619  consensus-token -> appending-asset_Gntr
+  McshTchInf000016:12888  blockchain-wallet -> Dblockchain_wallet_Gntr
+  McshTchInf000016:14611  program-blockchain-network -> BkcnserviceSmct_Gntr
+  McshTchInf000017:1482  Blockchain -> Dblockchain_Gntr
+  McshTchInf000017:5398  consensus-exval-token -> appending-asset_Gntr
+  McshTchInf000017:6901  blockchain-wallet -> Dblockchain_wallet_Gntr
+  McshTchInf000018:316  blockchain-protocol -> Dblockchain_protocol_Gntr
+  McshTchInf000018:1398  blockchain-network-node -> Dblockchain_node_Gntr
+  McshTchInf000018:2329  bcnnet-consensus-algorithm -> Dblockchain_appending_algo_Gntr
+  McshTchInf000018:2766  blockchain-transaction -> Dblockchain_tx_Gntr
+  McshTchInf000018:3846  Consensous-exchange-value-unit -> appending-asset_Gntr
+  McshTchInf000018:12636  Blockchain-program-blockchain-network -> BkcnserviceSmct_Gntr
+  McshTchInf000019:1224  human-organization-gtr -> Ogzn_Gntr
+  McshTchInf000019:2643  stakeholder-of--OgznDao -> OgznDao'stakeholder_Gntr
+  McshTchInf000019:3545  Dchain-exchange-ogn -> AgntogznExch_Gntr
+  McshTchInf000019:4122  Ethereum-Dapp -> DappEth_Gntr
+  McshTchInf000019:4416  stakeholder-of-OgznDao -> OgznDao'stakeholder_Gntr
+  McshTchInf000020:2126  Ethereum-consensusNo-asset -> EthrassetCN_Gntr
+  McshTchInf000021:1281  blockchain-net'block -> Bkcnblock_Gntr
+  McshTchInf000021:1830  consensus-blockchain-asset -> appending-asset_Gntr
+  McshTchInf000021:2400  blockchain-net'program -> Dblockchain_program_Gntr
+  McshTchInf000021:2562  smart-contract -> DeContract_Gntr
+  McshTchInf000021:2668  chain-net'Dapp -> DeApp_Gntr
+  McshTchInf000021:2930  blockchain-net'human -> Dblockchain_human_Gntr
+  McshTchInf000022:816  blockchain-block -> Bkcnblock_Gntr
+  McshTchInf000022:952  blockchain--consensus-algorithm -> Dblockchain_appending_algo_Gntr
+  McshTchInf000022:996  blockchain-consensus-cryptocurrency -> appending-asset_Gntr
+  McshTchInf000023:261  Dagchain-network -> AnDagchain_Gntr
+  McshTchInf000024:168  blockchain-block -> Bkcnblock_Gntr
+  McshTchInf000024:288  blockchain-transaction -> Dblockchain_tx_Gntr
+  McshTchInf000024:981  blockchain-program -> Dblockchain_program_Gntr
+  McshTchInf000024:1907  Steem-net--program -> Steem-program_Gntr
+  McshTchInf000024:2141  blockchain-wallet -> Dblockchain_wallet_Gntr
+  McshTchInf000024:3715  Đapp -> DeApp_Gntr
+  McshTchInf000024:3829  chain-exchange-organization -> AgntogznExch_Gntr
+  McshTchInf000025:1212  Eos-Dapp -> Deos_Dapp_Gntr
+  McshTchInf000025:1214  chain-Dapp -> DeApp_Gntr
+  McshTchInf000026:1630  Dapp -> DeApp_Gntr
+  McshTchInf000027:221  Blockchain-program--blockchain-network -> BkcnserviceSmct_Gntr
+  McshTchInf000028:602  appender-Dnode -> DnodeAppender_Gntr
+  McshTchInf000028:1630  Dcurrency -> AgntassetExvu_Gntr
+  McshTchInf000028:1631  Move_lago--resource-type -> Moversrctype_Gntr
+  McshTchInf000028:2615  Dcurrency-DnChain -> netAlgoCurrency_Gntr
+  McshTchInf000030:244  algo-node-of-Srcd_lago -> Srcd_lago_node_Gntr
+  McshTchInf000030:326  word-of-Lsrc -> Srcdalgowork_Gntr
+  McshTchInf000030:1153  sem-unit-of-Lsrc -> Srcd_lago_Sunt_Gntr
+  McshTchInf000030:1274  number-of-Srcd_lago -> Srcd_lago_n_Gntr
+  McshTchInf000030:1678  source--semantic-unit---of-Rust_lago -> Rustsunt_Gntr
+  McshTchInf000030:1737  Srcd_lago-operator -> Srcd_lago_opr_Gntr
+  McshTchInf000030:2670  sentence-of-Lsrc -> Srcdsent_Gntr
+  McshTchInf000030:2794  section-of-Lsrc -> Srcdalgosect_Gntr
+  McshTchInf000030:2849  algorithm-of--source-language -> Srcdalgo_Gntr
+  McshTchInf000035:466  text-document-representation-language -> Tdoc_lago_Gntr
+  McshTchInf000036:4937  tool -> techTool_Gntr
+  McshTchInf000037:166  software-interface -> Softinterface_Gntr
+  McshTchInf000038:1296  logo-knowledge-language--manager -> Lgklmngr_Gntr
+  McshTchInf000041:6118  Electron-app -> Jselapp_Gntr
+  McshTchPrgm000003:2403  Electronjs-program -> Jselapp_Gntr
+  McshTchPrgm000003:2405  computer-algorithm -> Pgmgalgo_Gntr
+  McshTchPrgm000005:698  operating-system -> prgmOs_Gntr
+  Mcsh000000:224  Mcs-manager -> Mcsmgr_Gntr
+  Mcsh000000:397  Mcs-worlview -> Mcswv_Gntr
+  Mcsh000000:407  primary-worldview -> worldviewMind_Gntr
+
+=== AMBIGUOUS-NAME (0)
+  (none)
+
+=== NO-GTR (397)
+  McshCor000002:2348  <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002GcscGcoc">generic-tree</a>
+  McshCor000002:2674  worldviewSensorial!@McshLag000003#idWldv003
+  McshCor000002:3411  worldview-management-tool!@McshLag000003#idWldvatt002
+  McshCor000002:5039  informationBrain!@McshLag000003  (whole-file reference)
+  McshCor000002:5041  model!@McshCor000005#idRlnMpgmdl
+  McshCor000004:1203  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntBodyNvlc">bodyNo'valence</a>
+  McshCor000011:384  whole-entity!@McshCor000008  (whole-file reference)
+  McshCor000011:3159  <a class="clsPreview" href="#idSysMng001att002">info-sys-of-organism</a>
+  McshCor000013:108  brain-info!@McshLag000002  (whole-file reference)
+  McshCor000013:110  bio-info!@McshNtr000011  (whole-file reference)
+  McshCor000013:111  model!@McshCor000005#idRlnMpgmdl
+  McshCor000013:425  <a class="clsPreview" href="../dirCor/McshCor000005.last.html#idRlnMpgarch">archetype-of-model</a>
+  McshCor000018:1849  evaluatingBio!@McshCor000013#idBrngEvalg
+  McshCor000018:2575  <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgstml">stimulus-of-emotingBio</a>
+  McshCor000020:149  model-evaluating!@McshCor000012#idMdlatt016
+  McshEdu000002:909  knowledgeBrain!@McshLag000002#idInfBrnBioKldg
+  McshEdu000002:910  infoBrain!@McshLag000002  (whole-file reference)
+  McshEdu000002:912  model!@McshCor000005#idRlnMpgmdl
+  McshHlth000002:984  node-of-system!@McshCor000011#idSysnodeF
+  McshHlth000002:5095  positive-health-material!@McshHlth000008#idMtrHlthHmn001
+  McshHlth000002:5279  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrIron">iron</a>
+  McshHlth000002:5556  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrCalcium">calcium</a>
+  McshHlth000002:10673  functingSysOrgnsHmn!@McshHlth000002#idSysOgnHmnftg
+  McshHlth000002:14520  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevgtmil">stageEvoluting</a>
+  McshHlth000002:14780  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevgtmil">stage-of-evolution</a>
+  McshHlth000004:695  <a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt024">DnaOgm</a>
+  McshHlth000005:719  <a class="clsPreview" href="#idMsclHmn019">muscleStriatedNo</a>
+  McshHlth000008:452  bodyMtr!@McshNtr000002  (whole-file reference)
+  McshHlth000008:508  substance!@McshNtr000005#idSysMols008
+  McshHlth000008:509  material-body!@McshNtr000002  (whole-file reference)
+  McshHlth000008:510  body-system!@McshCor000011#idSys004
+  McshHlth000008:1449  organism's-health!@McshHlth000007  (whole-file reference)
+  McshHlth000011:672  wellness!@McshHlth000008#idHlthHmnatt003
+  McshHlth000011:2137  <a class="clsPreview" href="#idOverview">disease</a>
+  McshHlth000011:2143  <a class="clsPreview" href="#idDssHmn132">αρτηριακη-υπόταση</a>
+  McshHlth000011:2694  <a class="clsPreview" href="#idOverview">disease</a>
+  McshHlth000011:14982  <a class="clsPreview" href="#idDssHmn007">entity.model.information.evaluation.problem.disease.animal.human</a>
+  McshHlth000011:16287  DssImbalance!@McshHlth000011#idDssHmn226
+  McshHlth000012:153  substance!@McshNtr000005#idSysMols008
+  McshHlth000012:154  material-body!@McshNtr000002  (whole-file reference)
+  McshHlth000012:155  body!@McshNtr000002  (whole-file reference)
+  McshHlth000013:1176  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000013:1460  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000013:6067  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000014:767  antimicrobial!@McshHlth000014#idMedHmn030
+  McshHlth000014:2379  <a class="clsPreview" href="#idOverview">medication</a>
+  McshHlth000019:5726  organism-managing-system!@McshCor000011#idSysMng001
+  McshLag000002:204  bio-info!@McshNtr000011  (whole-file reference)
+  McshLag000002:205  model!@McshCor000005#idRlnMpgmdl
+  McshLag000003:301  model!@McshCor000005#idRlnMpgmdl
+  McshLag000005:162  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshLag000005:163  method!@McshLag000003#idInfHmnBrn008
+  McshLag000005:165  model!@McshCor000005#idRlnMpgmdl
+  McshLag000005:389  language-of-organisms!@McshLag000005  (whole-file reference)
+  McshLag000007:883  <a class="clsPreview" href="../dirLag/McshLag000003.last.html#idInfHmnMind002">viewMind</a>
+  McshLag000007:1389  BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt
+  McshLag000007:21555  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:21556  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:24411  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:24412  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:25302  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000008:780  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000009:597  main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn
+  McshLag000009:4125  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmdng">lagHmnm-doing</a>
+  McshLag000009:4261  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000010:299  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000010:428  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000010:5931  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000010:5932  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000010:5933  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000010:5934  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000011:429  lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000011:8092  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr<
+  McshLag000011:9700  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr<
+  McshLag000011:26712  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000011:30067  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000011:30068  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000011:30069  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000011:30070  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000012:297  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000012:425  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000012:4686  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000012:5149  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000012:5150  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000012:5151  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000012:5152  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000014:195  information-resouce!@McshLag000013  (whole-file reference)
+  McshLag000018:397  Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000018:540  Hmnm_lago-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000018:12303  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000018:18508  written-language!@McshLag000008  (whole-file reference)
+  McshLag000018:18509  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000018:18510  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000019:155  information-resouce!@McshLag000013  (whole-file reference)
+  McshLag000020:12684  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmprlg">paralanguage</a>
+  McshLag000030:8040  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000031:192  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000035:2578  polycentric-language!@McshLag000007#idLHmnm0031
+  McshLag000036:3017  polycentric-language!@McshLag000007#idLHmnm0031
+  McshLag000043:3657  human-mind-language!@McshLag000007  (whole-file reference)
+  McshNtr000002:500  body-system!@McshCor000011#idSys004
+  McshNtr000006:119  material-body!@McshNtr000002  (whole-file reference)
+  McshNtr000007:406  chemical-compound!@McshNtr000006  (whole-file reference)
+  McshNtr000007:408  material-body!@McshNtr000002  (whole-file reference)
+  McshNtr000007:1061  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1101  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1137  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1173  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1209  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1245  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1282  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1333  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1369  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1405  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1441  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1477  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1512  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1548  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1584  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1621  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1729  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1775  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1811  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1847  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1883  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1919  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1968  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2004  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2040  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2076  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2112  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2148  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2184  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2220  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2256  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2292  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2327  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2365  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2425  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2461  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2497  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2578  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2614  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2650  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2689  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2742  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2788  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2884  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2919  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2955  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2991  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3027  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3063  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3099  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3135  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3187  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3223  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3302  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3338  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3374  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3410  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3446  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3482  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3518  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3554  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3590  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3626  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3662  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3707  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3743  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3779  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3868  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3931  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3982  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4018  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4054  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4090  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4163  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4199  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4235  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4271  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4308  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4362  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4398  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4434  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4470  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4506  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4542  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4578  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4614  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4650  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4686  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4722  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4758  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4794  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4830  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4865  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4901  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4937  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4973  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5009  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5045  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5081  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5117  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5153  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5189  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5224  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5259  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5294  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5327  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5362  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5397  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5432  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5484  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5519  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5554  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5589  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5625  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5661  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5696  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5732  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5768  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000011:116  model!@McshCor000005#idRlnMpgmdl
+  McshNtr000012:99  <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001Drnstr">doing--space-direction</a>
+  McshOgm000002:237  whole-entity!@McshCor000008  (whole-file reference)
+  McshOgm000002:241  material-object!@McshNtr000005#idSysMols009
+  McshOgm000002:242  material-body!@McshNtr000002  (whole-file reference)
+  McshOgm000005:230  material-body!@McshNtr000002  (whole-file reference)
+  McshOgm000007:1876  cellEukariotic!@McshOgm000007#idCellOgm003
+  McshOgm000010:215  organism!@McshOgm000003  (whole-file reference)
+  McshOgm000010:1532  <a class="clsPreview" href="#idPlnt020">plantHerb</a>
+  McshOgm000010:1533  <a class="clsPreview" href="#idPlnt036">plantWeed</a>
+  McshOgm000010:1730  <a class="clsPreview" href="#idPlnt041">medicinal-herb</a>
+  McshStn000002:409  biobody!@McshOgm000002  (whole-file reference)
+  McshStn000004:452  managing-system-of-bio!@McshCor000011#idSysMng004
+  McshStn000005:265  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000005:268  whole-entity!@McshCor000008  (whole-file reference)
+  McshStn000007:203  <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">languageOgm</a>
+  McshStn000007:254  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000007:255  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000007:256  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000007:257  material-body--system!@McshCor000011#idSys004
+  McshStn000007:258  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStn000007:259  material-body!@McshNtr000002  (whole-file reference)
+  McshStn000008:1199  organization-of-organisms!@McshStn000006  (whole-file reference)
+  McshStn000009:8171  society-of-organisms!@McshStn000007  (whole-file reference)
+  McshStn000009:8172  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000009:8173  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000009:8176  whole-entity!@McshCor000008  (whole-file reference)
+  McshStn000014:961  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000015:679  <a class="clsPreview" href="../dirStn/McshStn000008.last.html#idOgznatt001">admnOgzn</a>
+  McshStn000015:1219  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000016:132  human-organization!@McshStn000008  (whole-file reference)
+  McshStn000018:3814  international-organization!@McshStn000016  (whole-file reference)
+  McshStn000019:822  stateless-society!@McshStn000009#idSocHumn026
+  McshStn000020:177  <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idOverview">human</a>
+  McshStn000020:16561  policy!@McshStn000009#idSocadmndngPlc
+  McshStn000020:17303  <a class="clsPreview" href="#idEuoComoznSd">service-department-of-EuoCom</a>
+  McshStn000021:691  human-society!@McshStn000009  (whole-file reference)
+  McshStn000021:692  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000021:693  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000021:694  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000021:696  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStn000021:697  material-body!@McshNtr000002  (whole-file reference)
+  McshStnlaw000003:2209  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2262  binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016
+  McshStnlaw000003:2296  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2317  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2339  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2357  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2377  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2397  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2423  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2443  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2462  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2519  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshTchInf000002:666  technology!@McshTch000002  (whole-file reference)
+  McshTchInf000005:566  human-mind-language!@McshLag000007  (whole-file reference)
+  McshTchInf000005:568  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshTchInf000005:569  method!@McshLag000003#idInfHmnBrn008
+  McshTchInf000005:571  model!@McshCor000005#idRlnMpgmdl
+  McshTchInf000006:1411  computer-language!@McshTchInf000005  (whole-file reference)
+  McshTchInf000006:1947  <a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>
+  McshTchInf000006:1963  <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>
+  McshTchInf000006:1979  <a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>
+  McshTchInf000006:2163  <a class="clsPreview" href="#idLCpgmalgunt">unit-of-Pgmg_lago</a>
+  McshTchInf000006:2355  sem-unit-of-Pgmg_lago!@McshTchInf000006#idLCpgmalgsunt
+  McshTchInf000006:2687  <a class="clsPreview" href="#idLCpgmalgphrs">phrase-of-Pgmg_lago</a>
+  McshTchInf000006:2721  sentence-of-Pgmg_lago!@McshTchInf000006#idLCpgmsntc
+  McshTchInf000006:2876  <a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>
+  McshTchInf000008:3903  computer-language!@McshTchInf000005  (whole-file reference)
+  McshTchInf000008:3906  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000009:2275  <a class="clsPreview" href="../dirTchInf/McshTchInf000008.last.html#idLHitpmgr">Hitp-manager</a>
+  McshTchInf000009:3777  concept-language!@McshTchInf000007  (whole-file reference)
+  McshTchInf000010:385  object-pmNo!@McshTchInf000010#idLJsgnopmN
+  McshTchInf000010:2182  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>
+  McshTchInf000010:2184  <a class="clsPreview" href="#idLJsgnObject">Object.prototype</a>
+  McshTchInf000010:2216  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000010:2894  <a class="clsPreview" href="#idLJsgnopmN">object-pmNo</a>
+  McshTchInf000010:2940  Number.prototype!@McshTchInf000010#idLJsgnNumberp
+  McshTchInf000010:3231  Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto
+  McshTchInf000010:3266  <a class="clsPreview" href="#idLJsgnfCsrproto">Constructor.prototype</a>
+  McshTchInf000010:3422  RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp
+  McshTchInf000010:3547  String.prototype!@McshTchInf000010#idLJsgnStringp
+  McshTchInf000010:4004  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>
+  McshTchInf000010:7152  modelConceptStructured!@McshCor000002#idDescription
+  McshTchInf000010:7224  JavaScript-programing-language!@McshTchInf000010#idDescription
+  McshTchInf000011:85  Jsgn-archetype!@McshTchInf000010#idLJsgnarc
+  McshTchInf000011:1426  EventTarget.prototype!@McshTchInf000011#idLJsbrEventTargetp
+  McshTchInf000011:3357  <a class="clsPreview" href="#idLJsbrNodep">Node.prototype</a>
+  McshTchInf000011:3358  <a class="clsPreview" href="#idLJsbrEventTargetp">EventTarget.prototype</a>
+  McshTchInf000011:4696  Jsgn-evaluation!@McshTchInf000010#idLJsgneln
+  McshTchInf000011:5049  JavaScript-programing-language!@McshTchInf000010  (whole-file reference)
+  McshTchInf000012:972  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1615  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1806  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:6339  Jsnd_lago-code-analysis-tool!@McshTchInf000012#idLJsndtolAns
+  McshTchInf000012:7919  build-tool!@McshTchInf000012#idLJsndtolBld
+  McshTchInf000015:3976  <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>
+  McshTchInf000015:8372  <a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>
+  McshTchInf000015:8526  ERC20-token!@McshTchInf000018#idEthevuCNErc20
+  McshTchInf000015:8527  utility-token!@McshTchInf000015#idAlgntevuUtlt
+  McshTchInf000016:1972  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevubkn">backness-of--chain-asset</a
+  McshTchInf000016:3243  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeN">chain-currencyNo</a>
+  McshTchInf000016:5864  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:6022  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:7037  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:8097  Proof-of-work-network!@McshTchInf000016#idPownet
+  McshTchInf000016:10248  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:10250  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:10338  Proof-of-Stake-network!@McshTchInf000016#idPosnet
+  McshTchInf000016:10443  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:11914  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:13051  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:13556  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:13893  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:14610  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:14848  dependent-bcnnet!@McshTchInf000016#idDbcDpt
+  McshTchInf000016:15594  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapd">permission-to-append--chai
+  McshTchInf000016:15609  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapdN">permissionless-to-append-
+  McshTchInf000016:15624  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusr">permission-to-join--chain-
+  McshTchInf000016:15639  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusrN">permissionless-to-join--c
+  McshTchInf000016:15659  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPbl">public--chain-net</a>
+  McshTchInf000016:15679  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPblN">publicNo--chain-net</a>
+  McshTchInf000017:5491  exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt
+  McshTchInf000017:9201  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000017:9202  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe
+  McshTchInf000018:221  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntdcrzTrst">chain-net'decentralized-t
+  McshTchInf000018:6619  blockchain-dApp!@McshTchInf000016#idDbcapp
+  McshTchInf000018:12637  Proof-of-work-blockchain-network!@McshTchInf000016#idPownet
+  McshTchInf000019:2783  <a class="clsPreview" href="../dirTchInf/McshTchInf000018.last.html#idEthdao">Ethereum-DAO-dApp</a>
+  McshTchInf000019:3263  <a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>
+  McshTchInf000019:3445  <a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>
+  McshTchInf000021:1402  blockchain-net'block-explorer!@McshTchInf000016#idDbcbex
+  McshTchInf000021:1549  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcwltacnt">blockchain-net'account</a>
+  McshTchInf000021:2244  chain-net'voting!@McshTchInf000015#idAlgntgovvtg
+  McshTchInf000021:2530  blockchain-client!@McshTchInf000016#idDbcpgmClnt
+  McshTchInf000021:2667  blockchain-net'Dapp!@McshTchInf000016#idDbcapp
+  McshTchInf000021:3300  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000021:3301  chain-network!@McshTchInf000015  (whole-file reference)
+  McshTchInf000022:897  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcblktimGnrt">blockchain-block-interval
+  McshTchInf000022:917  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcbex">blockchain--block-explorer</a>
+  McshTchInf000022:1027  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuexrate">chain-asset--exchange-ra
+  McshTchInf000022:1228  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcenrg">blockchain-energy-consumption</
+  McshTchInf000022:1494  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcirsc">blockchain-resource</a>
+  McshTchInf000022:1535  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000022:1536  chain-network!@McshTchInf000015  (whole-file reference)
+  McshTchInf000024:127  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcnodApdr">appender-node--of--blockchai
+  McshTchInf000024:415  asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn
+  McshTchInf000024:1017  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntpgmClnt">client-program--of--chain-
+  McshTchInf000024:1909  block-chain--app!@McshTchInf000016#idDbcapp
+  McshTchInf000024:2328  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcads">address-of--blockchain-account</
+  McshTchInf000024:3546  <a class="clsPreview" href="#idSteemacnt">Steem-account</a>
+  McshTchInf000024:4071  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000025:1213  blockchain-Dapp!@McshTchInf000016#idDbcapp
+  McshTchInf000030:51  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdarch">archetype-of--source-language
+  McshTchInf000030:295  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdunt">unit-of--source-language</a>
+  McshTchInf000030:383  Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd
+  McshTchInf000030:2465  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdsuntNmd">named-Sunt--of-Lsrc</a>
+  McshTchInf000030:2639  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdphrs">phrase-of-Lsrc</a>
+  McshTchInf000030:2832  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdroot">algo-root--of-Srcd_lago</a>
+  McshTchInf000030:3097  <a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>
+  McshTchInf000030:4147  compiled-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000030:4148  statically-typed-language!@McshTchInf000006#idLSrcdStctp
+  McshTchInf000030:4149  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000031:2764  compiled--programing-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000031:2767  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000031:2772  modelConceptStructured!@McshCor000002  (whole-file reference)
+  McshTchPrgm000003:2404  computer-program!@McshTchInf000006#idCpgm
+  McshTchPrgm000003:2407  infoBrain!@McshLag000002  (whole-file reference)
+  McshTchPrgm000003:2409  model!@McshCor000005#idRlnMpgmdl
+  Mcsh000000:398  sensorial-concept-Mcs!@McshCor000002  (whole-file reference)
+  Mcsh000000:403  individual-worldview!@McshLag000003#idWldv001
+  Mcsh000000:405  monosemantic-worldview!@McshLag000003#idWldv012
+  Mcsh000000:409  sensorial-worldview!@McshLag000003#idWldv003
+  Mcsh000000:411  machine-readable-worldview!@McshLag000003#idWldv008
+  Mcsh000000:412  senso-concept-Mcs!@McshCor000002  (whole-file reference)
+
+=== BROKEN (46)
+  McshHmn000002:4070  <a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgmatt012gtr">Ogsm'lifetime-gtr</a>  (no id idOgmatt012gtr in McshOgm000003)
+  McshNtr000007:218  <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006prty">chemical-property</a>  (no id idMtrl006prty in McshNtr000002)
+  McshOgm000005:3474  <a class="clsPreview" href="#idDssHmn010">therapy</a>  (no id idDssHmn010 in McshOgm000005)
+  McshOgm000006:256  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:276  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:296  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:315  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:335  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:359  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:379  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:402  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:422  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshTchInf000010:3231  (constructor-objects!@McshTchInf000010#idLJsgnoCsr)  (no id idLJsgnoCsr) in McshTchInf000010)
+  McshTchInf000016:327  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntwprFT">chain--white-paper</a>  (no id idAlgntwprFT in McshTchInf000015)
+  McshTchInf000016:4897  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntelnSpro">chain-net-pro</a>  (no id idAlgntelnSpro in McshTchInf000015)
+  McshTchInf000016:4930  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)
+  McshTchInf000016:5291  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntsvcF">chain-service</a>  (no id idAlgntsvcF in McshTchInf000015)
+  McshTchInf000016:10444  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)
+  McshTchInf000016:11915  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)
+  McshTchInf000017:4965  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken)
+  McshTchInf000021:62  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000021:81  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-net'white-paper</a>  (no id idDbdwpr in McshTchInf000016)
+  McshTchInf000021:938  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-net'node</a>  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000021:1267  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>  (no id idDbddat in McshTchInf000016)
+  McshTchInf000021:1752  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdevu">blockchain-net'asset</a>  (no id idDbdevu in McshTchInf000016)
+  McshTchInf000021:1921  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-net'governance</a>  (no id idDbdgov in McshTchInf000016)
+  McshTchInf000021:2888  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-net'wallet</a>  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000021:3079  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-net'organization</a>  (no id idDbdogn in McshTchInf000016)
+  McshTchInf000021:3236  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddng">blockchain-net'doing</a>  (no id idDbddng in McshTchInf000016)
+  McshTchInf000022:58  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000022:72  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-white-paper</a>  (no id idDbdwpr in McshTchInf000016)
+  McshTchInf000022:672  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-node</a>  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000022:803  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>  (no id idDbddat in McshTchInf000016)
+  McshTchInf000022:1075  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-governance-system</a>  (no id idDbdgov in McshTchInf000016)
+  McshTchInf000022:1194  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-wallet</a>  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000022:1212  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdstat">blockchain-statistics</a>  (no id idDbdstat in McshTchInf000016)
+  McshTchInf000022:1244  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdhmn">blockchain-human</a>  (no id idDbdhmn in McshTchInf000016)
+  McshTchInf000022:1274  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-organization</a>  (no id idDbdogn in McshTchInf000016)
+  McshTchInf000022:1378  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdeln">blockchain-evaluation</a>  (no id idDbdeln in McshTchInf000016)
+  McshTchInf000022:1392  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdpbm">blockchain-problem</a>  (no id idDbdpbm in McshTchInf000016)
+  McshTchInf000022:1459  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdlaw">blockchain-law</a>  (no id idDbdlaw in McshTchInf000016)
+  McshTchInf000024:58  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000024:80  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">node-of--chain-net</a>  (no id idAlgntnodFT in McshTchInf000015)
+  McshTchInf000028:51  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">stakeholder-of-DnChain</a>  (no id idAlgntprlFT in McshTchInf000015)
+  McshTchInf000028:178  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">protocol-of-DnChain</a>  (no id idAlgntprlFT in McshTchInf000015)
+  McshTchInf000028:581  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">Dnode</a>  (no id idAlgntnodFT in McshTchInf000015)
+
+=== EXTERNAL (3)
+  McshOgm000002:235  <a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a
+  McshTchInf000015:13453  <a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer-network</a>
+  McshTchInf000022:840  <a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblkpld">Bitcoin-block-pay
+
+=== UNCLOSED (1)
+  McshHlth000014:1297  idMedHmn036gtr  generic-tree:: is not closed before the next block
+
+=== CONVERTED-PER-FILE (119)
+  McshCor000002  6
+  McshCor000003  1
+  McshCor000004  2
+  McshCor000005  1
+  McshCor000006  2
+  McshCor000007  1
+  McshCor000009  2
+  McshCor000012  1
+  McshCor000013  7
+  McshCor000014  1
+  McshCor000018  16
+  McshEdu000002  1
+  McshEdu000005  5
+  McshHlth000002  99
+  McshHlth000003  8
+  McshHlth000004  19
+  McshHlth000005  81
+  McshHlth000006  2
+  McshHlth000007  1
+  McshHlth000008  4
+  McshHlth000011  130
+  McshHlth000013  62
+  McshHlth000014  2
+  McshHlth000015  1
+  McshHlth000016  1
+  McshHlth000018  1
+  McshHlth000019  62
+  McshLag000002  1
+  McshLag000003  4
+  McshLag000005  1
+  McshLag000006  1
+  McshLag000007  16
+  McshLag000008  5
+  McshLag000009  5
+  McshLag000010  11
+  McshLag000011  10
+  McshLag000012  13
+  McshLag000018  15
+  McshLag000020  3
+  McshLag000021  1
+  McshLag000026  1
+  McshLag000030  2
+  McshLag000033  1
+  McshLag000043  1
+  McshNtr000002  1
+  McshNtr000006  6
+  McshNtr000007  4
+  McshNtr000011  1
+  McshOgm000002  5
+  McshOgm000004  5
+  McshOgm000005  32
+  McshOgm000006  2
+  McshStn000005  3
+  McshStn000006  1
+  McshStn000007  2
+  McshStn000008  1
+  McshStn000009  4
+  McshStn000011  2
+  McshStn000015  1
+  McshStn000020  5
+  McshStn000021  2
+  McshStn000022  1
+  McshStn000023  1
+  McshStn000029  1
+  McshStn000031  1
+  McshStn000035  1
+  McshStn000036  1
+  McshStn000037  1
+  McshStn000038  1
+  McshStn000039  1
+  McshStn000040  1
+  McshStn000041  1
+  McshStn000043  1
+  McshStn000044  1
+  McshStn000045  1
+  McshStn000046  1
+  McshStn000047  1
+  McshStn000048  1
+  McshStn000049  1
+  McshStn000050  1
+  McshStn000051  1
+  McshStnlaw000002  1
+  McshStnlaw000003  1
+  McshTch000002  2
+  McshTch000003  1
+  McshTch000005  1
+  McshTchInf000004  1
+  McshTchInf000005  3
+  McshTchInf000006  3
+  McshTchInf000007  1
+  McshTchInf000008  1
+  McshTchInf000009  1
+  McshTchInf000010  15
+  McshTchInf000011  9
+  McshTchInf000012  18
+  McshTchInf000013  6
+  McshTchInf000015  8
+  McshTchInf000016  27
+  McshTchInf000017  3
+  McshTchInf000018  6
+  McshTchInf000019  6
+  McshTchInf000020  1
+  McshTchInf000021  6
+  McshTchInf000022  3
+  McshTchInf000023  1
+  McshTchInf000024  7
+  McshTchInf000025  2
+  McshTchInf000026  1
+  McshTchInf000027  1
+  McshTchInf000028  4
+  McshTchInf000030  9
+  McshTchInf000035  1
+  McshTchInf000036  2
+  McshTchInf000037  1
+  McshTchInf000038  1
+  McshTchInf000041  1
+  McshTchPrgm000003  3
+  McshTchPrgm000005  1
+  Mcsh000000  4

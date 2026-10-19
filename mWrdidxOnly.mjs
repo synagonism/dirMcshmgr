@@ -46,6 +46,7 @@ import * as moLagElln from './mLagElln.mjs'
 const
   // contains the-versions of mHitp.js 
   aVersion = [
+    'mWrdidxOnly.mjs.0-5-1.2026-10-19: idOverviewwltr (was idOverviewwtr)',
     'mWrdidxOnly.mjs.0-5-0.2022-03-17: mWrdidxOnly.mjs',
     'mWrdidxOnly.mjs.0-4-1.2022-03-16: same-name',
     'mWrdidxOnly.mjs.0-4-0.2022-03-13: index-phonema',
@@ -213,7 +214,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>* McshEngl.' + sName + ',\n' +
       '    <br>* McshEngl.wordary' + sLag +'\'' +sIndexIn +',\n' +
       '    <a class="clsHide" href="#idName"></a></p>\n' +
-      '  <p id="idOverviewwtr">whole-tree-of-McshWrdidxElln01alfa::\n'
+      '  <p id="idOverviewwltr">whole-tree-of-McshWrdidxElln01alfa::\n'
     if (sLag === 'Elln') {
       s = s +
       '    <br>* <a class="clsPreview" href="../../dirLag/McshLag000025.last.html#idOverview">wordaryElln</a>,\n'
@@ -228,7 +229,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>* <a class="clsPreview" href="../../dirLag/McsLag00007.last.html#idLHmnmwrdIdx">wordary</a>,\n'
     }
     s = s +
-      '    <a class="clsHide" href="#idOverviewwtr"></a></p>\n' +
+      '    <a class="clsHide" href="#idOverviewwltr"></a></p>\n' +
       '</section>\n' +
       '\n' +
       '<section id="idWrd' + sId + '">\n' +

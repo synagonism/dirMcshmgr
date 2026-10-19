@@ -1,0 +1,67 @@
+GS-TREE (broken) references -> correct concept — 2026-10-19   DRY=true
+
+broken references: 40 | fixed: 0 | left (broken): 40 | files to write: 0
+
+=== CLEANUP (0)
+  (none)
+
+=== NAME (0)
+  (none)
+
+=== ID-MOVED (0)
+  (none)
+
+=== NAME-CASE (0)
+  (none)
+
+=== RENAME-RULES (0)
+  (none)
+
+=== PROVEN-RENAME (0)
+  (none)
+
+=== CONFLICT (3)
+  McshOgm000005:521  cholesterol!@McshOgm000005#idMolOgm016001 (broken)  NAME McshOgm000004#idMolOgm016 | ID-MOVED McshOgm000004#idMolOgm016001 | NAME-CASE McshOgm000004#idMolOgm016
+  McshTchInf000005:566  human-mind-language!@McshLag000007#idLHumn (broken)  NAME McshLag000007#idOverview | ID-MOVED McshLag000005#idLHumn | NAME-CASE McshLag000007#idOverview
+  McshTchInf000036:2488  machine-translation!@McshTchInf000036#idTchInf019 (broken)  ID-MOVED McshTchInf000002#idTchInf019 | NAME-CASE McshTchInf000036#idTchInf022
+
+=== MANY (1)
+  McshTchInf000012:4351  link!@McshTchInf000012#nodejs'api'process_object (broken)  NAME McshCor000004#idDngUntg | McshLag000024#idLEnglverbA1-29
+
+=== UNRESOLVED (36)
+  McshLag000009:610  German-phoneme(41)!@McshStn000036#idLDeutunitPhnm (broken)
+  McshOgm000005:3527  connective-tissue!@McshOgm000005#idBdyHmn098 (broken)
+  McshTchInf000005:1084  title-content-tree--document!@McshTchInf000008#idLHitparctre (broken)  near ids: idLHitparcdrn, idLHitparcprt, idLHitparcttl, idLHitparctoc
+  McshTchInf000010:416  name-value-pair-mixedNo--semantic-unit!@McshTchInf000010#idLJsgnxNo (broken)  near ids: idLJsgnunt, idLJsgnx, idLJsgnxH3, idLJsgnxnam, idLJsgnxN, idLJsgnxNH3, idLJsgnn, idLJsgno
+  McshTchInf000010:4087  Jsbr-native-generic-specific-tree!@McshTchInf000011#idLJsbrgst (broken)  near ids: idLJsbrcss, idLJsbrbct, idLJsbrunt, idLJsbrsut, idLJsbrfgstr, idLJsbrfstr, idLJsbrogstr, idLJsbrostr
+  McshTchInf000010:4088  Jsnd-native-generic-specific-tree!@McshTchInf000012#idLJsndgst (broken)  near ids: idLJsndsxt, idLJsndunt, idLJsndsut, idLJsndfgstr, idLJsndfstr, idLJsndmgstr, idLJsndmstr, idLJsndstc
+  McshTchInf000010:4104  Jsbr-Object.prototype!@McshTchInf000011#idLJsbrgst (broken)  near ids: idLJsbrcss, idLJsbrbct, idLJsbrunt, idLJsbrsut, idLJsbrfgstr, idLJsbrfstr, idLJsbrogstr, idLJsbrostr
+  McshTchInf000010:4105  Jsnd-Object.prototype!@McshTchInf000012#idLJsndgst (broken)  near ids: idLJsndsxt, idLJsndunt, idLJsndsut, idLJsndfgstr, idLJsndfstr, idLJsndmgstr, idLJsndmstr, idLJsndstc
+  McshTchInf000010:4761  generic-sentence!@McshTchInf000010#idLJsgnstcSpcGnc (broken)
+  McshTchInf000010:4765  instance-sentence!@McshTchInf000010#idLJsgnstcSpcGnc (broken)
+  McshTchInf000010:4770  simple-sentence!@McshTchInf000010#idLJsgnstcSpcSpl (broken)
+  McshTchInf000010:5182  Number-managing!@McshTchInf000010#idLJsgnalgNbr (broken)  near ids: idLJsgnalgnam, idLJsgnalggtr, idLJsgnalgstr, idLJsgnalgNmbr, idLJsgnalgObt
+  McshTchInf000012:4313  dgram!@McshTchInf000012#idLJsndmcoDgram (broken)
+  McshTchInf000012:9169  adduser!@McshTchInf000012#idLJsndnpmcmdAdduser (broken)  near ids: idLJsndnpmcmdAdduserH3
+  McshTchInf000015:1545  public-key--cryptography!@McshTchInf000015#idDbccrptPkc (broken)
+  McshTchInf000015:5530  blockchain--netAlgo-govc!@McshTchInf000016#idDbdgov (broken)  near ids: idDcrgov, idDfngov
+  McshTchInf000015:7019  Blockchain-ICO!@McshTchInf000016#idDbcico (broken)  near ids: idDbcIbm
+  McshTchInf000015:7640  ShapShift-exchange!@McshTchInf000015#idDbcbrdgShpsht (broken)
+  McshTchInf000015:12225  organization-governing--Dchain-service!@McshTchInf000019#idDogngovg (broken)  near ids: idDeOzngovg
+  McshTchInf000015:12433  Blockchain--voting!@McshTchInf000016#idDbcsvcVot (broken)
+  McshTchInf000015:13479  public--chain-net!@McshTchInf000015#idDcnetPblc (broken)
+  McshTchInf000016:438  miner-node!@McshTchInf000016#idDbcnodeMnr (broken)  near ids: idDbcnodMnr
+  McshTchInf000016:2355  Medium-of-exchange--bcnevu!@McshTchInf000016#idDbcevuMoe (broken)  near ids: idDbcevuMng, idDbcevMoe, idDbcevMoeN
+  McshTchInf000016:2356  Medium-of-exchangeNo--bcnevu!@McshTchInf000016#idDbcevuMoeN (broken)  near ids: idDbcevuogn, idDbcevMoe, idDbcevMoeN
+  McshTchInf000016:4930  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)
+  McshTchInf000016:4940  Nem-XEM-network-problem!@McshTchInf000016#idXempbm (broken)  near ids: idXemprl, idXempgm, idXempblm
+  McshTchInf000016:5539  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet (broken)  near ids: idEthatt, idEthnod, idEthbex, idEthtxt, idEthact, idEthtmt, idEthMNE, idEthmst
+  McshTchInf000016:5540  Bitcoin-BTC-network-{2009}!@McshTchInf000016#idBtcnet (broken)  near ids: idBpmnet, idBosnet, idQtmnet, idZecnet, idBtsnet, idEmcnet, idPpcnet, idLtcnet
+  McshTchInf000016:5616  Omni_layer!@McshTchInf000016#idDbcomnl (broken)  near ids: idDbchmn, idDbcogn, idDbcmnr, idDbcmng
+  McshTchInf000016:5800  Ethereum-ETH-network-{2015}!@McshTchInf000018#idEthnet (broken)  near ids: idEthatt, idEthnod, idEthbex, idEthtxt, idEthact, idEthtmt, idEthMNE, idEthmst
+  McshTchInf000016:10444  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)  near ids: idDbcevubkn, idDbcevuCN
+  McshTchInf000016:11915  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)  near ids: idDbcevubkn, idDbcevuCN
+  McshTchInf000017:4965  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken)  near ids: idDbccrptH2
+  McshTchInf000018:7320  Viper!@McshTchInf000018#idEthctpvpr (broken)  near ids: idEthctpdvpg, idEthctpgtr, idEthctpstr, idEthctpBnr, idEthctpClr
+  McshTchPrgm000003:810  Tree-view--package!@McshTchPrgm000003#idAtmpkgTrvw (broken)
+  McshTchPrgm000003:922  tree-view!@McshTchPrgm000003#idAtmpkgTrvw (broken)

@@ -1,0 +1,476 @@
+generic-tree:: references -> X_Gntr — 2026-10-19   DRY=true
+
+references converted: 0 | files to write: 0
+
+=== TARGET-IS-GTR (0)
+  (none)
+
+=== GTR-OF-TARGET (0)
+  (none)
+
+=== WHOLE-FILE (0)
+  (none)
+
+=== NAME-DIFFERS (0)
+  (none)
+
+=== AMBIGUOUS-NAME (0)
+  (none)
+
+=== NO-GTR (397)
+  McshCor000002:2348  <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002GcscGcoc">generic-tree</a>
+  McshCor000002:2674  worldviewSensorial!@McshLag000003#idWldv003
+  McshCor000002:3411  worldview-management-tool!@McshLag000003#idWldvatt002
+  McshCor000002:5039  informationBrain!@McshLag000003  (whole-file reference)
+  McshCor000002:5041  model!@McshCor000005#idRlnMpgmdl
+  McshCor000004:1203  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntBodyNvlc">bodyNo'valence</a>
+  McshCor000011:384  whole-entity!@McshCor000008  (whole-file reference)
+  McshCor000011:3159  <a class="clsPreview" href="#idSysMng001att002">info-sys-of-organism</a>
+  McshCor000013:108  brain-info!@McshLag000002  (whole-file reference)
+  McshCor000013:110  bio-info!@McshNtr000011  (whole-file reference)
+  McshCor000013:111  model!@McshCor000005#idRlnMpgmdl
+  McshCor000013:425  <a class="clsPreview" href="../dirCor/McshCor000005.last.html#idRlnMpgarch">archetype-of-model</a>
+  McshCor000018:1849  evaluatingBio!@McshCor000013#idBrngEvalg
+  McshCor000018:2575  <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgstml">stimulus-of-emotingBio</a>
+  McshCor000020:149  model-evaluating!@McshCor000012#idMdlatt016
+  McshEdu000002:909  knowledgeBrain!@McshLag000002#idInfBrnBioKldg
+  McshEdu000002:910  infoBrain!@McshLag000002  (whole-file reference)
+  McshEdu000002:912  model!@McshCor000005#idRlnMpgmdl
+  McshHlth000002:984  node-of-system!@McshCor000011#idSysnodeF
+  McshHlth000002:5095  positive-health-material!@McshHlth000008#idMtrHlthHmn001
+  McshHlth000002:5279  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrIron">iron</a>
+  McshHlth000002:5556  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrCalcium">calcium</a>
+  McshHlth000002:10673  functingSysOrgnsHmn!@McshHlth000002#idSysOgnHmnftg
+  McshHlth000002:14520  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevgtmil">stageEvoluting</a>
+  McshHlth000002:14780  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevgtmil">stage-of-evolution</a>
+  McshHlth000004:695  <a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt024">DnaOgm</a>
+  McshHlth000005:719  <a class="clsPreview" href="#idMsclHmn019">muscleStriatedNo</a>
+  McshHlth000008:452  bodyMtr!@McshNtr000002  (whole-file reference)
+  McshHlth000008:508  substance!@McshNtr000005#idSysMols008
+  McshHlth000008:509  material-body!@McshNtr000002  (whole-file reference)
+  McshHlth000008:510  body-system!@McshCor000011#idSys004
+  McshHlth000008:1449  organism's-health!@McshHlth000007  (whole-file reference)
+  McshHlth000011:672  wellness!@McshHlth000008#idHlthHmnatt003
+  McshHlth000011:2137  <a class="clsPreview" href="#idOverview">disease</a>
+  McshHlth000011:2143  <a class="clsPreview" href="#idDssHmn132">αρτηριακη-υπόταση</a>
+  McshHlth000011:2694  <a class="clsPreview" href="#idOverview">disease</a>
+  McshHlth000011:14982  <a class="clsPreview" href="#idDssHmn007">entity.model.information.evaluation.problem.disease.animal.human</a>
+  McshHlth000011:16287  DssImbalance!@McshHlth000011#idDssHmn226
+  McshHlth000012:153  substance!@McshNtr000005#idSysMols008
+  McshHlth000012:154  material-body!@McshNtr000002  (whole-file reference)
+  McshHlth000012:155  body!@McshNtr000002  (whole-file reference)
+  McshHlth000013:1176  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000013:1460  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000013:6067  foodHmn!@McshHlth000013  (whole-file reference)
+  McshHlth000014:767  antimicrobial!@McshHlth000014#idMedHmn030
+  McshHlth000014:2379  <a class="clsPreview" href="#idOverview">medication</a>
+  McshHlth000019:5726  organism-managing-system!@McshCor000011#idSysMng001
+  McshLag000002:204  bio-info!@McshNtr000011  (whole-file reference)
+  McshLag000002:205  model!@McshCor000005#idRlnMpgmdl
+  McshLag000003:301  model!@McshCor000005#idRlnMpgmdl
+  McshLag000005:162  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshLag000005:163  method!@McshLag000003#idInfHmnBrn008
+  McshLag000005:165  model!@McshCor000005#idRlnMpgmdl
+  McshLag000005:389  language-of-organisms!@McshLag000005  (whole-file reference)
+  McshLag000007:883  <a class="clsPreview" href="../dirLag/McshLag000003.last.html#idInfHmnMind002">viewMind</a>
+  McshLag000007:1389  BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt
+  McshLag000007:21555  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:21556  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:24411  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:24412  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:25302  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000008:780  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000009:597  main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn
+  McshLag000009:4125  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmdng">lagHmnm-doing</a>
+  McshLag000009:4261  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000010:299  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000010:428  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000010:5931  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000010:5932  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000010:5933  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000010:5934  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000011:429  lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000011:8092  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr<
+  McshLag000011:9700  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr<
+  McshLag000011:26712  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000011:30067  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000011:30068  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000011:30069  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000011:30070  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000012:297  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000012:425  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000012:4686  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000012:5149  alphabetic-language!@McshLag000008  (whole-file reference)
+  McshLag000012:5150  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000012:5151  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000012:5152  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000014:195  information-resouce!@McshLag000013  (whole-file reference)
+  McshLag000018:397  Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000018:540  Hmnm_lago-semu-view!@McshLag000007#idLHmnmipt3
+  McshLag000018:12303  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000018:18508  written-language!@McshLag000008  (whole-file reference)
+  McshLag000018:18509  oral-language!@McshLag000009  (whole-file reference)
+  McshLag000018:18510  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000019:155  information-resouce!@McshLag000013  (whole-file reference)
+  McshLag000020:12684  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmprlg">paralanguage</a>
+  McshLag000030:8040  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000031:192  human-mind-language!@McshLag000007  (whole-file reference)
+  McshLag000035:2578  polycentric-language!@McshLag000007#idLHmnm0031
+  McshLag000036:3017  polycentric-language!@McshLag000007#idLHmnm0031
+  McshLag000043:3657  human-mind-language!@McshLag000007  (whole-file reference)
+  McshNtr000002:500  body-system!@McshCor000011#idSys004
+  McshNtr000006:119  material-body!@McshNtr000002  (whole-file reference)
+  McshNtr000007:406  chemical-compound!@McshNtr000006  (whole-file reference)
+  McshNtr000007:408  material-body!@McshNtr000002  (whole-file reference)
+  McshNtr000007:1061  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1101  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1137  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1173  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1209  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1245  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1282  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1333  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1369  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1405  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1441  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1477  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1512  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1548  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1584  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1621  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1729  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1775  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1811  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1847  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1883  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1919  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1968  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2004  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2040  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2076  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2112  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2148  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2184  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2220  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2256  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2292  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2327  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2365  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2425  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2461  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2497  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2578  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2614  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2650  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2689  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2742  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2788  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2884  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2919  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2955  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2991  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3027  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3063  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3099  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3135  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3187  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3223  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3302  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3338  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3374  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3410  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3446  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3482  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3518  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3554  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3590  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3626  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3662  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3707  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3743  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3779  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3868  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3931  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3982  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4018  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4054  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4090  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4163  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4199  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4235  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4271  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4308  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4362  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4398  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4434  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4470  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4506  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4542  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4578  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4614  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4650  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4686  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4722  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4758  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4794  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4830  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4865  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4901  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4937  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4973  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5009  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5045  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5081  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5117  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5153  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5189  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5224  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5259  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5294  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5327  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5362  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5397  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5432  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5484  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5519  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5554  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5589  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5625  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5661  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5696  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5732  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5768  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000011:116  model!@McshCor000005#idRlnMpgmdl
+  McshNtr000012:99  <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001Drnstr">doing--space-direction</a>
+  McshOgm000002:237  whole-entity!@McshCor000008  (whole-file reference)
+  McshOgm000002:241  material-object!@McshNtr000005#idSysMols009
+  McshOgm000002:242  material-body!@McshNtr000002  (whole-file reference)
+  McshOgm000005:230  material-body!@McshNtr000002  (whole-file reference)
+  McshOgm000007:1876  cellEukariotic!@McshOgm000007#idCellOgm003
+  McshOgm000010:215  organism!@McshOgm000003  (whole-file reference)
+  McshOgm000010:1532  <a class="clsPreview" href="#idPlnt020">plantHerb</a>
+  McshOgm000010:1533  <a class="clsPreview" href="#idPlnt036">plantWeed</a>
+  McshOgm000010:1730  <a class="clsPreview" href="#idPlnt041">medicinal-herb</a>
+  McshStn000002:409  biobody!@McshOgm000002  (whole-file reference)
+  McshStn000004:452  managing-system-of-bio!@McshCor000011#idSysMng004
+  McshStn000005:265  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000005:268  whole-entity!@McshCor000008  (whole-file reference)
+  McshStn000007:203  <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">languageOgm</a>
+  McshStn000007:254  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000007:255  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000007:256  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000007:257  material-body--system!@McshCor000011#idSys004
+  McshStn000007:258  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStn000007:259  material-body!@McshNtr000002  (whole-file reference)
+  McshStn000008:1199  organization-of-organisms!@McshStn000006  (whole-file reference)
+  McshStn000009:8171  society-of-organisms!@McshStn000007  (whole-file reference)
+  McshStn000009:8172  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000009:8173  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000009:8176  whole-entity!@McshCor000008  (whole-file reference)
+  McshStn000014:961  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000015:679  <a class="clsPreview" href="../dirStn/McshStn000008.last.html#idOgznatt001">admnOgzn</a>
+  McshStn000015:1219  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000016:132  human-organization!@McshStn000008  (whole-file reference)
+  McshStn000018:3814  international-organization!@McshStn000016  (whole-file reference)
+  McshStn000019:822  stateless-society!@McshStn000009#idSocHumn026
+  McshStn000020:177  <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idOverview">human</a>
+  McshStn000020:16561  policy!@McshStn000009#idSocadmndngPlc
+  McshStn000020:17303  <a class="clsPreview" href="#idEuoComoznSd">service-department-of-EuoCom</a>
+  McshStn000021:691  human-society!@McshStn000009  (whole-file reference)
+  McshStn000021:692  system-of-organisms!@McshStn000002  (whole-file reference)
+  McshStn000021:693  biosystem!@McshOgm000002  (whole-file reference)
+  McshStn000021:694  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000021:696  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStn000021:697  material-body!@McshNtr000002  (whole-file reference)
+  McshStnlaw000003:2209  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2262  binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016
+  McshStnlaw000003:2296  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2317  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2339  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2357  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2377  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2397  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2423  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2443  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2462  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2519  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshTchInf000002:666  technology!@McshTch000002  (whole-file reference)
+  McshTchInf000005:566  human-mind-language!@McshLag000007  (whole-file reference)
+  McshTchInf000005:568  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshTchInf000005:569  method!@McshLag000003#idInfHmnBrn008
+  McshTchInf000005:571  model!@McshCor000005#idRlnMpgmdl
+  McshTchInf000006:1411  computer-language!@McshTchInf000005  (whole-file reference)
+  McshTchInf000006:1947  <a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>
+  McshTchInf000006:1963  <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>
+  McshTchInf000006:1979  <a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>
+  McshTchInf000006:2163  <a class="clsPreview" href="#idLCpgmalgunt">unit-of-Pgmg_lago</a>
+  McshTchInf000006:2355  sem-unit-of-Pgmg_lago!@McshTchInf000006#idLCpgmalgsunt
+  McshTchInf000006:2687  <a class="clsPreview" href="#idLCpgmalgphrs">phrase-of-Pgmg_lago</a>
+  McshTchInf000006:2721  sentence-of-Pgmg_lago!@McshTchInf000006#idLCpgmsntc
+  McshTchInf000006:2876  <a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>
+  McshTchInf000008:3903  computer-language!@McshTchInf000005  (whole-file reference)
+  McshTchInf000008:3906  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000009:2275  <a class="clsPreview" href="../dirTchInf/McshTchInf000008.last.html#idLHitpmgr">Hitp-manager</a>
+  McshTchInf000009:3777  concept-language!@McshTchInf000007  (whole-file reference)
+  McshTchInf000010:385  object-pmNo!@McshTchInf000010#idLJsgnopmN
+  McshTchInf000010:2182  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>
+  McshTchInf000010:2184  <a class="clsPreview" href="#idLJsgnObject">Object.prototype</a>
+  McshTchInf000010:2216  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000010:2894  <a class="clsPreview" href="#idLJsgnopmN">object-pmNo</a>
+  McshTchInf000010:2940  Number.prototype!@McshTchInf000010#idLJsgnNumberp
+  McshTchInf000010:3231  Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto
+  McshTchInf000010:3266  <a class="clsPreview" href="#idLJsgnfCsrproto">Constructor.prototype</a>
+  McshTchInf000010:3422  RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp
+  McshTchInf000010:3547  String.prototype!@McshTchInf000010#idLJsgnStringp
+  McshTchInf000010:4004  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>
+  McshTchInf000010:7152  modelConceptStructured!@McshCor000002#idDescription
+  McshTchInf000010:7224  JavaScript-programing-language!@McshTchInf000010#idDescription
+  McshTchInf000011:85  Jsgn-archetype!@McshTchInf000010#idLJsgnarc
+  McshTchInf000011:1426  EventTarget.prototype!@McshTchInf000011#idLJsbrEventTargetp
+  McshTchInf000011:3357  <a class="clsPreview" href="#idLJsbrNodep">Node.prototype</a>
+  McshTchInf000011:3358  <a class="clsPreview" href="#idLJsbrEventTargetp">EventTarget.prototype</a>
+  McshTchInf000011:4696  Jsgn-evaluation!@McshTchInf000010#idLJsgneln
+  McshTchInf000011:5049  JavaScript-programing-language!@McshTchInf000010  (whole-file reference)
+  McshTchInf000012:972  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1615  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1806  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:6339  Jsnd_lago-code-analysis-tool!@McshTchInf000012#idLJsndtolAns
+  McshTchInf000012:7919  build-tool!@McshTchInf000012#idLJsndtolBld
+  McshTchInf000015:3976  <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>
+  McshTchInf000015:8372  <a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>
+  McshTchInf000015:8526  ERC20-token!@McshTchInf000018#idEthevuCNErc20
+  McshTchInf000015:8527  utility-token!@McshTchInf000015#idAlgntevuUtlt
+  McshTchInf000016:1972  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevubkn">backness-of--chain-asset</a
+  McshTchInf000016:3243  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeN">chain-currencyNo</a>
+  McshTchInf000016:5864  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:6022  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:7037  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:8097  Proof-of-work-network!@McshTchInf000016#idPownet
+  McshTchInf000016:10248  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:10250  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:10338  Proof-of-Stake-network!@McshTchInf000016#idPosnet
+  McshTchInf000016:10443  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:11914  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:13051  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:13556  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:13893  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:14610  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:14848  dependent-bcnnet!@McshTchInf000016#idDbcDpt
+  McshTchInf000016:15594  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapd">permission-to-append--chai
+  McshTchInf000016:15609  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapdN">permissionless-to-append-
+  McshTchInf000016:15624  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusr">permission-to-join--chain-
+  McshTchInf000016:15639  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusrN">permissionless-to-join--c
+  McshTchInf000016:15659  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPbl">public--chain-net</a>
+  McshTchInf000016:15679  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPblN">publicNo--chain-net</a>
+  McshTchInf000017:5491  exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt
+  McshTchInf000017:9201  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000017:9202  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe
+  McshTchInf000018:221  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntdcrzTrst">chain-net'decentralized-t
+  McshTchInf000018:6619  blockchain-dApp!@McshTchInf000016#idDbcapp
+  McshTchInf000018:12637  Proof-of-work-blockchain-network!@McshTchInf000016#idPownet
+  McshTchInf000019:2783  <a class="clsPreview" href="../dirTchInf/McshTchInf000018.last.html#idEthdao">Ethereum-DAO-dApp</a>
+  McshTchInf000019:3263  <a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>
+  McshTchInf000019:3445  <a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>
+  McshTchInf000021:1402  blockchain-net'block-explorer!@McshTchInf000016#idDbcbex
+  McshTchInf000021:1549  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcwltacnt">blockchain-net'account</a>
+  McshTchInf000021:2244  chain-net'voting!@McshTchInf000015#idAlgntgovvtg
+  McshTchInf000021:2530  blockchain-client!@McshTchInf000016#idDbcpgmClnt
+  McshTchInf000021:2667  blockchain-net'Dapp!@McshTchInf000016#idDbcapp
+  McshTchInf000021:3300  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000021:3301  chain-network!@McshTchInf000015  (whole-file reference)
+  McshTchInf000022:897  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcblktimGnrt">blockchain-block-interval
+  McshTchInf000022:917  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcbex">blockchain--block-explorer</a>
+  McshTchInf000022:1027  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuexrate">chain-asset--exchange-ra
+  McshTchInf000022:1228  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcenrg">blockchain-energy-consumption</
+  McshTchInf000022:1494  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcirsc">blockchain-resource</a>
+  McshTchInf000022:1535  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000022:1536  chain-network!@McshTchInf000015  (whole-file reference)
+  McshTchInf000024:127  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcnodApdr">appender-node--of--blockchai
+  McshTchInf000024:415  asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn
+  McshTchInf000024:1017  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntpgmClnt">client-program--of--chain-
+  McshTchInf000024:1909  block-chain--app!@McshTchInf000016#idDbcapp
+  McshTchInf000024:2328  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcads">address-of--blockchain-account</
+  McshTchInf000024:3546  <a class="clsPreview" href="#idSteemacnt">Steem-account</a>
+  McshTchInf000024:4071  blockchain-network!@McshTchInf000016  (whole-file reference)
+  McshTchInf000025:1213  blockchain-Dapp!@McshTchInf000016#idDbcapp
+  McshTchInf000030:51  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdarch">archetype-of--source-language
+  McshTchInf000030:295  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdunt">unit-of--source-language</a>
+  McshTchInf000030:383  Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd
+  McshTchInf000030:2465  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdsuntNmd">named-Sunt--of-Lsrc</a>
+  McshTchInf000030:2639  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdphrs">phrase-of-Lsrc</a>
+  McshTchInf000030:2832  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdroot">algo-root--of-Srcd_lago</a>
+  McshTchInf000030:3097  <a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>
+  McshTchInf000030:4147  compiled-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000030:4148  statically-typed-language!@McshTchInf000006#idLSrcdStctp
+  McshTchInf000030:4149  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000031:2764  compiled--programing-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000031:2767  programing-language!@McshTchInf000006  (whole-file reference)
+  McshTchInf000031:2772  modelConceptStructured!@McshCor000002  (whole-file reference)
+  McshTchPrgm000003:2404  computer-program!@McshTchInf000006#idCpgm
+  McshTchPrgm000003:2407  infoBrain!@McshLag000002  (whole-file reference)
+  McshTchPrgm000003:2409  model!@McshCor000005#idRlnMpgmdl
+  Mcsh000000:398  sensorial-concept-Mcs!@McshCor000002  (whole-file reference)
+  Mcsh000000:403  individual-worldview!@McshLag000003#idWldv001
+  Mcsh000000:405  monosemantic-worldview!@McshLag000003#idWldv012
+  Mcsh000000:409  sensorial-worldview!@McshLag000003#idWldv003
+  Mcsh000000:411  machine-readable-worldview!@McshLag000003#idWldv008
+  Mcsh000000:412  senso-concept-Mcs!@McshCor000002  (whole-file reference)
+
+=== BROKEN (46)
+  McshHmn000002:4070  <a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgmatt012gtr">Ogsm'lifetime-gtr</a>  (no id idOgmatt012gtr in McshOgm000003)
+  McshNtr000007:218  <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006prty">chemical-property</a>  (no id idMtrl006prty in McshNtr000002)
+  McshOgm000005:3474  <a class="clsPreview" href="#idDssHmn010">therapy</a>  (no id idDssHmn010 in McshOgm000005)
+  McshOgm000006:256  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:276  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:296  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:315  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:335  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:359  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:379  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:402  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshOgm000006:422  <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnatt015025">essential-amino-acid</a>  (no id idBdyHmnatt015025 in McshHlth000002)
+  McshTchInf000010:3231  (constructor-objects!@McshTchInf000010#idLJsgnoCsr)  (no id idLJsgnoCsr) in McshTchInf000010)
+  McshTchInf000016:327  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntwprFT">chain--white-paper</a>  (no id idAlgntwprFT in McshTchInf000015)
+  McshTchInf000016:4897  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntelnSpro">chain-net-pro</a>  (no id idAlgntelnSpro in McshTchInf000015)
+  McshTchInf000016:4930  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)
+  McshTchInf000016:5291  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntsvcF">chain-service</a>  (no id idAlgntsvcF in McshTchInf000015)
+  McshTchInf000016:10444  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)
+  McshTchInf000016:11915  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken)
+  McshTchInf000017:4965  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken)
+  McshTchInf000021:62  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000021:81  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-net'white-paper</a>  (no id idDbdwpr in McshTchInf000016)
+  McshTchInf000021:938  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-net'node</a>  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000021:1267  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>  (no id idDbddat in McshTchInf000016)
+  McshTchInf000021:1752  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdevu">blockchain-net'asset</a>  (no id idDbdevu in McshTchInf000016)
+  McshTchInf000021:1921  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-net'governance</a>  (no id idDbdgov in McshTchInf000016)
+  McshTchInf000021:2888  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-net'wallet</a>  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000021:3079  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-net'organization</a>  (no id idDbdogn in McshTchInf000016)
+  McshTchInf000021:3236  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddng">blockchain-net'doing</a>  (no id idDbddng in McshTchInf000016)
+  McshTchInf000022:58  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000022:72  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-white-paper</a>  (no id idDbdwpr in McshTchInf000016)
+  McshTchInf000022:672  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-node</a>  (no id idDbdnod in McshTchInf000016)
+  McshTchInf000022:803  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>  (no id idDbddat in McshTchInf000016)
+  McshTchInf000022:1075  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-governance-system</a>  (no id idDbdgov in McshTchInf000016)
+  McshTchInf000022:1194  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-wallet</a>  (no id idDbdwlt in McshTchInf000016)
+  McshTchInf000022:1212  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdstat">blockchain-statistics</a>  (no id idDbdstat in McshTchInf000016)
+  McshTchInf000022:1244  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdhmn">blockchain-human</a>  (no id idDbdhmn in McshTchInf000016)
+  McshTchInf000022:1274  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-organization</a>  (no id idDbdogn in McshTchInf000016)
+  McshTchInf000022:1378  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdeln">blockchain-evaluation</a>  (no id idDbdeln in McshTchInf000016)
+  McshTchInf000022:1392  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdpbm">blockchain-problem</a>  (no id idDbdpbm in McshTchInf000016)
+  McshTchInf000022:1459  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdlaw">blockchain-law</a>  (no id idDbdlaw in McshTchInf000016)
+  McshTchInf000024:58  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>  (no id idDbdprl in McshTchInf000016)
+  McshTchInf000024:80  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">node-of--chain-net</a>  (no id idAlgntnodFT in McshTchInf000015)
+  McshTchInf000028:51  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">stakeholder-of-DnChain</a>  (no id idAlgntprlFT in McshTchInf000015)
+  McshTchInf000028:178  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">protocol-of-DnChain</a>  (no id idAlgntprlFT in McshTchInf000015)
+  McshTchInf000028:581  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">Dnode</a>  (no id idAlgntnodFT in McshTchInf000015)
+
+=== EXTERNAL (3)
+  McshOgm000002:235  <a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a
+  McshTchInf000015:13453  <a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer-network</a>
+  McshTchInf000022:840  <a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblkpld">Bitcoin-block-pay
+
+=== UNCLOSED (1)
+  McshHlth000014:1297  idMedHmn036gtr  generic-tree:: is not closed before the next block
+
+=== CONVERTED-PER-FILE (0)
+  (none)

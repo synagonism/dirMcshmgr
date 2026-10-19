@@ -32,7 +32,7 @@
  * INPUT:
  * OUTPUT: McsDir000000.last.html
  * RUN from dirMcsh:
- *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameFormal> <sNameId> <true|false>
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <true|false>
  *
  * ISSUE: IF you want to recreate the-file,
  * you have to delete IT from SitePagesArr.json
@@ -46,6 +46,8 @@ import {fSftp, fAskHidden} from './mSftp.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-10-0.2026-10-19: tree-names with underscore _Wltr|_Sptr|_Prtr|_Chtr|_Pntr|Sympan_Wltr',
+    'mMcshNew.mjs.1-9-0.2026-10-19: tree-ids gntr|chtr|wltr|prtr, child-tree::, entity_Gntr, names -Wltr|-Sptr|-Prtr|-Chtr|-Pntr|Sympan-Wltr',
     'mMcshNew.mjs.1-8-0.2026-09-30: entity-gtr|Sympan-wtr',
     'mMcshNew.mjs.1-7-0.2026-09-29: pc|wp|gs trees',
     'mMcshNew.mjs.1-6-0.2026-09-24: prompt password when run alone',
@@ -112,7 +114,7 @@ let
   sNameInformal = 'Human A',
 
   //3. SHORT-name: sysNet, ogn, DnChain, DnEth, Dchain-net, lagoSngu,
-  sNameFormal = 'humnA',
+  sNameMain = 'humnA',
 
   //4. Name for IDs, unique in this file: Net, Dtc, LTurk, SocGrca,
   sNameId = 'HumnA',
@@ -128,10 +130,10 @@ let
 
 
 // INPUT VALUES may be supplied as CLI args (VS Code task inputs); else defaults above.
-// argv[2]=sDir  argv[3]=sNameInformal  argv[4]=sNameFormal  argv[5]=sNameId  argv[6]=bCounter
+// argv[2]=sDir  argv[3]=sNameInformal  argv[4]=sNameMain  argv[5]=sNameId  argv[6]=bCounter
 if (process.argv[2]) sDir          = process.argv[2]
 if (process.argv[3]) sNameInformal = process.argv[3]
-if (process.argv[4]) sNameFormal   = process.argv[4]
+if (process.argv[4]) sNameMain   = process.argv[4]
 if (process.argv[5]) sNameId       = process.argv[5]
 if (process.argv[6]) bCounter      = process.argv[6] === 'true'
 sDirShort = sDir.substring(3)
@@ -156,9 +158,9 @@ s =
   '<head>\n' +
   '  <meta charset="utf-8">\n' +
   '  <meta name="viewport" content="width=device-width, initial-scale=1">\n' +
-  '  <title>Mcs.' + sNameFormal + '!=' + sNameInformal + '\n' +
+  '  <title>Mcs.' + sNameMain + '!=' + sNameInformal + '\n' +
   '    (' + sNameFileNaked + '.0-1-0.' + moUtil.fDateYMD() + ' draft)</title>\n' +
-  '  <meta name="keywords" content="' + sNameInformal + ', ' + sNameFormal + ', modelConceptSenso, McsHitp, Synagonism">\n' +
+  '  <meta name="keywords" content="' + sNameInformal + ', ' + sNameMain + ', modelConceptSenso, McsHitp, Synagonism">\n' +
   '  <link rel="stylesheet" href="/dirMcshmgr/mMcsh2.css">\n' +
   '</head>\n' +
   '\n' +
@@ -166,133 +168,134 @@ s =
   '  <header id="idHeader">\n' +
   '  <p></p>\n' +
   '  <h1 id="idHeaderH1">' + sNameInformal + '\n' +
-  '    <br>senso-concept-Mcs (' + sNameFormal + ')\n' +
+  '    <br>senso-concept-Mcs (' + sNameMain + ')\n' +
   '    </h1>\n' +
   '  </header>\n' +
   '\n' +
   '  <section id="idOverview">\n' +
-  '  <h1 id="idOverviewH1">overview of ' + sNameFormal + '\n' +
+  '  <h1 id="idOverviewH1">overview of ' + sNameMain + '\n' +
   '    <a class="clsHide" href="#idOverviewH1"></a></h1>\n' +
   '  <p id="idDescription">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>· \n' +
   '    <a class="clsHide" href="#idDescription"></a></p>\n' +
   '  <p id="idName">name::\n' +
-  '    <br>* McshEngl.' + sNameInformal + '!⇒' + sNameFormal + ',\n' +
-  '    <br>* McshEngl.' + sNameFormal + '!=' + sNameInformal + ',\n' +
-  '    <br>* McshEngl.' + sNameFormal + '!~' + sNameFileNaked + ',\n' +
-  '    <br>* McshEngl.' + sNameFile + '//' + sDir + '//dirMcsh!⇒' + sNameFormal + ',\n' +
-  '    <br>* McshEngl.' + sDir +'/' + sNameFile + '!⇒' + sNameFormal + ',\n' +
+  '    <br>* McshEngl.' + sNameInformal + '!⇒' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '!=' + sNameInformal + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '!@' + sNameFileNaked + ',\n' +
+  '    <br>* McshEngl.' + sNameFile + '//' + sDir + '//dirMcsh!⇒' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sDir + '//dirMcsh!⇒' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sDir +'/' + sNameFile + '!⇒' + sNameMain + ',\n' +
   '    <a class="clsHide" href="#idName"></a></p>\n' +
   '  </section>\n' +
   '\n' +
   '  <section id="' + sNameId + 'irsc">\n' +
-  '  <h1 id="' + sNameId + 'irscH1">info-resource of ' + sNameFormal + '\n' +
+  '  <h1 id="' + sNameId + 'irscH1">info-resource of ' + sNameMain + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'irscdsn">description::\n' +
   '    <br>* \n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'irscnam">name::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'InfRsc,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'InfRsc,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscnam"></a></p>\n' +
   '  </section>\n' +
   //'\n' +
   //'  <section id="' + sNameId + 'srtr">\n' +
-  //'  <h1 id="' + sNameId + 'srtrH1">structure of ' + sNameFormal + '\n' +
+  //'  <h1 id="' + sNameId + 'srtrH1">structure of ' + sNameMain + '\n' +
   //'    <a class="clsHide" href="#' + sNameId + 'srtrH1"></a></h1>\n' +
   //'  <p id="' + sNameId + 'srtrnam">name::\n' +
-  //'    <br>* McshEngl.' + sNameFormal + '\'structure,\n' +
+  //'    <br>* McshEngl.' + sNameMain + '\'structure,\n' +
   //'    <a class="clsHide" href="#' + sNameId + 'srtrnam"></a></p>\n' +
   //'  <p id="' + sNameId + 'srtrdsn">description::\n' +
   //'    <br>* \n' +
   //'    <a class="clsHide" href="#' + sNameId + 'srtrdsn"></a></p>\n' +
   //'  </section>\n' +
   '\n' +
-  '  <section id="' + sNameId + 'dng">\n' +
-  '  <h1 id="' + sNameId + 'dngH1">DOING of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'dngH1"></a></h1>\n' +
-  '  <p id="' + sNameId + 'dngdsn">description::\n' +
+  '  <section id="' + sNameId + 'dong">\n' +
+  '  <h1 id="' + sNameId + 'dongH1">DOING of ' + sNameMain + '\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'dongH1"></a></h1>\n' +
+  '  <p id="' + sNameId + 'dongdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>* \n' +
-  '    <a class="clsHide" href="#' + sNameId + 'dngdsn"></a></p>\n' +
-  '  <p id="' + sNameId + 'dngnam">name::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'doing,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'dngnam"></a></p>\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'dongdsn"></a></p>\n' +
+  '  <p id="' + sNameId + 'dongnam">name::\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'doing,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'dongnam"></a></p>\n' +
   '  </section>\n' +
   '\n' +
-  '  <section id="' + sNameId + 'evg">\n' +
-  '  <h1 id="' + sNameId + 'evgH1">evoluting of ' + sNameFormal + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'evgH1"></a></h1>\n' +
-  '  <p id="' + sNameId + 'evgdsn">description::\n' +
+  '  <section id="' + sNameId + 'evog">\n' +
+  '  <h1 id="' + sNameId + 'evogH1">evoluting of ' + sNameMain + '\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'evogH1"></a></h1>\n' +
+  '  <p id="' + sNameId + 'evogdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McshTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'evgdsn"></a></p>\n' +
-  '  <p id="' + sNameId + 'evgnam">name::\n' +
-  '    <br>* McshEngl.evoluting-of-' + sNameFormal + ',\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'evoluting,\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'evgnam"></a></p>\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'evogdsn"></a></p>\n' +
+  '  <p id="' + sNameId + 'evognam">name::\n' +
+  '    <br>* McshEngl.evoluting-of-' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'evoluting,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'evognam"></a></p>\n' +
   '  </section>\n' +
   '\n' +
   '  <section id="' + sNameId + 'pctr">\n' +
-  '  <h1 id="' + sNameId + 'pctrH1">PARENT-CHILD-TREE of ' + sNameFormal + '\n' +
+  '  <h1 id="' + sNameId + 'pctrH1">PARENT-CHILD-TREE of ' + sNameMain + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'pctrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'pctrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'parent-child-tree,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'child-parent-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'parent-child-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'child-parent-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'rtr">parent-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-rtr,\n' +
+  '  <p id="' + sNameId + 'pntr">parent-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Pntr,\n' +
   '    <br>===\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'rtr"></a></p>\n' +
-  '  <p id="' + sNameId + 'ctr">child-tree-of::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-ctr,\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'pntr"></a></p>\n' +
+  '  <p id="' + sNameId + 'chtr">child-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Chtr,\n' +
   '    <br>===\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'ctr"></a></p>\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'chtr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
   '  <section id="' + sNameId + 'wptr">\n' +
-  '  <h1 id="' + sNameId + 'wptrH1">WHOLE-PART-TREE of ' + sNameFormal + '\n' +
+  '  <h1 id="' + sNameId + 'wptrH1">WHOLE-PART-TREE of ' + sNameMain + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'wptrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'wptrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'whole-part-tree,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'part-whole-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'whole-part-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'part-whole-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'wtr">whole-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-wtr,\n' +
+  '  <p id="' + sNameId + 'wltr">whole-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Wltr,\n' +
   '    <br>===\n' +
-  '    <br>* ... Sympan-wtr.\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'wtr"></a></p>\n' +
-  '  <p id="' + sNameId + 'ptr">part-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-ptr,\n' +
+  '    <br>* ... Sympan_Wltr.\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'wltr"></a></p>\n' +
+  '  <p id="' + sNameId + 'prtr">part-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Prtr,\n' +
   '    <br>===\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'ptr"></a></p>\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'prtr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
   '  <section id="' + sNameId + 'gstr">\n' +
-  '  <h1 id="' + sNameId + 'gstrH1">GENERIC-SPECIFIC-TREE of ' + sNameFormal + '\n' +
+  '  <h1 id="' + sNameId + 'gstrH1">GENERIC-SPECIFIC-TREE of ' + sNameMain + '\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrH1"></a></h1>\n' +
   '  <p id="' + sNameId + 'gstrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'gstrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'generic-specific-tree,\n' +
-  '    <br>* McshEngl.' + sNameFormal + '\'specific-generic-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'generic-specific-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'specific-generic-tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrnam"></a></p>\n' +
-  '  <p id="' + sNameId + 'gtr">generic-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-gtr,\n' +
+  '  <p id="' + sNameId + 'gntr">generic-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Gntr,\n' +
   '    <br>===\n' +
-  '    <br>* ... entity-gtr.\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'gtr"></a></p>\n' +
-  '  <p id="' + sNameId + 'str">specific-tree::\n' +
-  '    <br>* McshEngl.' + sNameFormal + '-str,\n' +
+  '    <br>* ... entity_Gntr.\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'gntr"></a></p>\n' +
+  '  <p id="' + sNameId + 'sptr">specific-tree::\n' +
+  '    <br>* McshEngl.' + sNameMain + '_Sptr,\n' +
   '    <br>===\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'str"></a></p>\n' +
+  '    <a class="clsHide" href="#' + sNameId + 'sptr"></a></p>\n' +
   '  </section>\n' +
   '\n' +
   '  <section id="idMeta">\n' +
@@ -313,13 +316,13 @@ s = s +
   '    <a class="clsPreview" href="../../index.html#idOverview">synagonism.net</a> /\n' +
   '    <a class="clsPreview" href="../Mcsh000000.last.html#idOverview">worldviewSngo</a> /\n' +
   '    <a class="clsPreview" href="../' + sDir + '/Mcsh' + sDirShort + '000000.last.html#idOverview">' + sDir + '</a> /\n' +
-  '    ' + sNameFormal + '\n' +
+  '    ' + sNameMain + '\n' +
   '    </p>\n' +
   '  <p id="idMetaP1">SEARCH::\n' +
   '    <br>· this page uses \'<span class="clsColorRed">locator-names</span>\', names that when you find them, you find the-LOCATION of the-concept they denote.\n' +
   '    <br>⊛ <strong>GLOBAL-SEARCH</strong>:\n' +
   '    <br>· clicking on <span class="clsColorGreenBg">the-green-BAR of a-page</span> you have access to the-global--locator-names of my-site.\n' +
-  '    <br>· use the-prefix \'<span class="clsColorRed">' + sNameFormal + '</span>\' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sNameInformal + '\'.\n' +
+  '    <br>· use the-prefix \'<span class="clsColorRed">' + sNameMain + '</span>\' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">senso-concepts</a> related to current concept \'' + sNameInformal + '\'.\n' +
   '    <br>⊛ <strong>LOCAL-SEARCH</strong>:\n' +
   '    <br>· TYPE <span class="clsColorRed">CTRL+F "McshLang.words-of-concept\'s-name"</span>, to go to the-LOCATION of the-concept.\n' +
   '    <br>· a-preview of the-description of a-global-name makes reading fast.\n' +

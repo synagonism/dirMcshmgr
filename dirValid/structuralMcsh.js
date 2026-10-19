@@ -25,12 +25,35 @@
  *  Mvrw03  cnptSect missing name::-paragraph
  *  Mvrw04  cnptSect name:: has zero valid Mcsh* entries
  *  Mvrw06  dates not in {YYYY-MM-DD} format
+ *
+ *  MvrlId01  (warning) non-english-letters: id="..." has a letter outside A-Z a-z
+ *  MvrlId02  (warning) dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" cnptSect does not end in "dong"
+ *  MvrlId03  (warning) space_in_id: id="..." or href="#..." has a space
+ *  MvrlId04  (warning) eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" cnptSect does not end in "eval"
+ *  MvrlId05  (warning) evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" cnptSect does not end in "evog"
+ *  MvrlId06  (warning) irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" cnptSect does not end in "irsc"
+ *  MvrlId07  (warning) pntr_parent_tree_suffix: the-id of a "parent-tree::" para does not end in "pntr"
+ *  MvrlId08  (warning) chtr_child_tree_suffix: the-id of a "child-tree::" para does not end in "chtr"
+ *  MvrlId09  (warning) wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
+ *  MvrlId10  (warning) prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
+ *  MvrlId11  (warning) gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-24-0.2026-10-19: MvrlId11 gntr_generic_tree_suffix',
+    'structuralMcsh.js.0-23-0.2026-10-19: MvrlId10 prtr_part_tree_suffix',
+    'structuralMcsh.js.0-22-0.2026-10-19: MvrlId09 wltr_whole_tree_suffix',
+    'structuralMcsh.js.0-21-0.2026-10-19: MvrlId08 chtr_child_tree_suffix',
+    'structuralMcsh.js.0-20-0.2026-10-19: MvrlId07 pntr_parent_tree_suffix, fCheckIdParaSuffix',
+    'structuralMcsh.js.0-19-0.2026-10-19: MvrlId06 irsc_info_resource_suffix',
+    'structuralMcsh.js.0-18-0.2026-10-19: MvrlId05 evog_evoluting_suffix',
+    'structuralMcsh.js.0-17-0.2026-10-19: MvrlId04 eval_evaluation_suffix, fCheckIdSuffix shared with MvrlId02',
+    'structuralMcsh.js.0-16-0.2026-10-19: MvrlId03 space_in_id',
+    'structuralMcsh.js.0-15-0.2026-10-19: MvrlId02 dong_DOING_suffix',
+    'structuralMcsh.js.0-14-0.2026-10-19: MvrlId01 non-english-letters',
     'structuralMcsh.js.0-13-0.2026-10-09: renaming',
     'structuralMcsh.js.0-12-0.2026-10-04: fRunChecksMcsh bQuietIn, for reportMcsh.mjs',
     'structuralMcsh.js.0-11-0.2026-10-04: Mvre01 tells missing from unclosed idOverview',
@@ -292,6 +315,137 @@ function fCheckDate(aoCnptFile) {
   return aoIssue;
 }
 
+// ⚠️ [MvrlId01] non-english-letters: an-id has a-letter outside A-Z a-z (Greek Η, é, µ ...)
+//   a-Greek Η looks like a-Latin H, but it is another id, so links to IT break silently.
+//   only letters are judged, NOT punctuation.
+function fCheckIdLetter(aoCnptFile) {
+  const aoIssue = [];
+  const rLetterNoEngl = /[^\P{L}A-Za-z]/gu;
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const [sId, nLine] of oCnptFile.oMapIdLine ?? []) {
+      const aLetter = sId.match(rLetterNoEngl);
+      if (!aLetter) continue;
+      aoIssue.push(fIssue('WARN', 'MvrlId01', oCnptFile.sNameFile, null,
+        `non-english-letters [${[...new Set(aLetter)].join('')}] in id="${sId}"`, nLine));
+    }
+  }
+  return aoIssue;
+}
+
+/**
+ * DOING: the-id of an-attribute-cnptSect titled "<sTitle> of X" (with or without
+ *   "NN_") or "X'<sTitle>" must end in sSuffix.
+ *   "<sTitle>.X" (a-specific) and "GENERIC-SPECIFIC-TREE of X'<sTitle>" are NOT judged.
+ * OUTPUT: array of WARN-issues with code sCode.
+ */
+function fCheckIdSuffix(aoCnptFile, sCode, sNameRule, sTitle, sSuffix) {
+  const aoIssue = [];
+  const rTitle = new RegExp(`^(\\d+_)?${sTitle} of |^[^\\s.']+'${sTitle}$`, 'i');
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
+      if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
+      if (oSect.sNameId.endsWith(sSuffix)) continue;
+      aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oSect,
+        `${sNameRule}: id="${oSect.sNameId}" of "${oSect.sNameTitle}" does not end in "${sSuffix}"`,
+        oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
+    }
+  }
+  return aoIssue;
+}
+
+// ⚠️ [MvrlId02] dong_DOING_suffix: the-id of a-DOING-concept ends in "dong",
+//   NOT dng | dngF | dngFT | doing.
+function fCheckIdDong(aoCnptFile) {
+  return fCheckIdSuffix(aoCnptFile, 'MvrlId02', 'dong_DOING_suffix', 'DOING', 'dong');
+}
+
+// ⚠️ [MvrlId04] eval_evaluation_suffix: the-id of an-evaluation-concept ends in "eval",
+//   NOT eln | evln | evaln | evaluation | evalF | evalFT | attNNN.
+function fCheckIdEval(aoCnptFile) {
+  return fCheckIdSuffix(aoCnptFile, 'MvrlId04', 'eval_evaluation_suffix', 'evaluation', 'eval');
+}
+
+// ⚠️ [MvrlId05] evog_evoluting_suffix: the-id of an-evoluting-concept ends in "evog",
+//   NOT evg | Evg | evlg | evltg | evoluting | evgF | evgFT | attNNN.
+function fCheckIdEvog(aoCnptFile) {
+  return fCheckIdSuffix(aoCnptFile, 'MvrlId05', 'evog_evoluting_suffix', 'evoluting', 'evog');
+}
+
+// ⚠️ [MvrlId06] irsc_info_resource_suffix: the-id of an-info-resource-concept ends in "irsc",
+//   NOT rsc | infrsc | resource | ircs.
+function fCheckIdIrsc(aoCnptFile) {
+  return fCheckIdSuffix(aoCnptFile, 'MvrlId06', 'irsc_info_resource_suffix', 'info-resource', 'irsc');
+}
+
+/**
+ * DOING: the-id of a-para-concept "<sTitlePara>::" (of the-cnptFile or of any concept)
+ *   must end in sSuffix.
+ * OUTPUT: array of WARN-issues with code sCode.
+ */
+function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
+      const aoPara = oCnpt.sType === 'cnptFile' ? oCnptFile.aoTitlePara : oCnpt.aoTitlePara;
+      for (const oPara of aoPara ?? []) {
+        if (oPara.sNameTitle !== sTitlePara || !oPara.sNameId) continue;
+        if (oPara.sNameId.endsWith(sSuffix)) continue;
+        aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oCnpt.sType === 'cnptFile' ? null : oCnpt,
+          `${sNameRule}: id="${oPara.sNameId}" of "${sTitlePara}::" does not end in "${sSuffix}"`,
+          oCnptFile.oMapIdLine.get(oPara.sNameId) ?? null));
+      }
+    }
+  }
+  return aoIssue;
+}
+
+// ⚠️ [MvrlId07] pntr_parent_tree_suffix: the-id of a "parent-tree::" para ends in "pntr", NOT rtr.
+function fCheckIdPntr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId07', 'pntr_parent_tree_suffix', 'parent-tree', 'pntr');
+}
+
+// ⚠️ [MvrlId08] chtr_child_tree_suffix: the-id of a "child-tree::" para ends in "chtr", NOT ctr.
+function fCheckIdChtr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId08', 'chtr_child_tree_suffix', 'child-tree', 'chtr');
+}
+
+// ⚠️ [MvrlId09] wltr_whole_tree_suffix: the-id of a "whole-tree::" para ends in "wltr",
+//   NOT wtr | whlchn | whl | P1.
+function fCheckIdWltr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId09', 'wltr_whole_tree_suffix', 'whole-tree', 'wltr');
+}
+
+// ⚠️ [MvrlId10] prtr_part_tree_suffix: the-id of a "part-tree::" para ends in "prtr", NOT ptr | rtr | prt.
+function fCheckIdPrtr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId10', 'prtr_part_tree_suffix', 'part-tree', 'prtr');
+}
+
+// ⚠️ [MvrlId11] gntr_generic_tree_suffix: the-id of a "generic-tree::" para ends in "gntr", NOT gtr.
+function fCheckIdGntr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId11', 'gntr_generic_tree_suffix', 'generic-tree', 'gntr');
+}
+
+// ⚠️ [MvrlId03] space_in_id: an-id="..." or a-link href="...#..." (NOT http) has a-space
+//   (any whitespace), the-browser can-not reach IT.
+function fCheckIdSpace(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const [sId, nLine] of oCnptFile.oMapIdLine ?? []) {
+      if (/\s/.test(sId)) aoIssue.push(fIssue('WARN', 'MvrlId03', oCnptFile.sNameFile, null,
+        `space_in_id: id="${sId}" has a-space`, nLine));
+    }
+    for (const [sId, nLine] of oCnptFile.oMapLinkLine ?? []) {
+      if (/\s/.test(sId)) aoIssue.push(fIssue('WARN', 'MvrlId03', oCnptFile.sNameFile, null,
+        `space_in_id: href="#${sId}" has a-space`, nLine));
+    }
+  }
+  return aoIssue;
+}
+
 function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoAll = [];
   // bQuietIn: no progress-lines, for reportMcsh.mjs which prints its own report
@@ -322,6 +476,61 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoDate = fCheckDate(aoCnptFile);
   aoAll.push(...aoDate);
   fLog(`${aoDate.length} issues`);
+
+  fWrite('   MvrlId01  Ids non-english-letters... ');
+  const aoIdLetter = fCheckIdLetter(aoCnptFile);
+  aoAll.push(...aoIdLetter);
+  fLog(`${aoIdLetter.length} issues`);
+
+  fWrite('   MvrlId02  Ids dong_DOING_suffix... ');
+  const aoIdDong = fCheckIdDong(aoCnptFile);
+  aoAll.push(...aoIdDong);
+  fLog(`${aoIdDong.length} issues`);
+
+  fWrite('   MvrlId03  Ids space_in_id... ');
+  const aoIdSpace = fCheckIdSpace(aoCnptFile);
+  aoAll.push(...aoIdSpace);
+  fLog(`${aoIdSpace.length} issues`);
+
+  fWrite('   MvrlId04  Ids eval_evaluation_suffix... ');
+  const aoIdEval = fCheckIdEval(aoCnptFile);
+  aoAll.push(...aoIdEval);
+  fLog(`${aoIdEval.length} issues`);
+
+  fWrite('   MvrlId05  Ids evog_evoluting_suffix... ');
+  const aoIdEvog = fCheckIdEvog(aoCnptFile);
+  aoAll.push(...aoIdEvog);
+  fLog(`${aoIdEvog.length} issues`);
+
+  fWrite('   MvrlId06  Ids irsc_info_resource_suffix... ');
+  const aoIdIrsc = fCheckIdIrsc(aoCnptFile);
+  aoAll.push(...aoIdIrsc);
+  fLog(`${aoIdIrsc.length} issues`);
+
+  fWrite('   MvrlId07  Ids pntr_parent_tree_suffix... ');
+  const aoIdPntr = fCheckIdPntr(aoCnptFile);
+  aoAll.push(...aoIdPntr);
+  fLog(`${aoIdPntr.length} issues`);
+
+  fWrite('   MvrlId08  Ids chtr_child_tree_suffix... ');
+  const aoIdChtr = fCheckIdChtr(aoCnptFile);
+  aoAll.push(...aoIdChtr);
+  fLog(`${aoIdChtr.length} issues`);
+
+  fWrite('   MvrlId09  Ids wltr_whole_tree_suffix... ');
+  const aoIdWltr = fCheckIdWltr(aoCnptFile);
+  aoAll.push(...aoIdWltr);
+  fLog(`${aoIdWltr.length} issues`);
+
+  fWrite('   MvrlId10  Ids prtr_part_tree_suffix... ');
+  const aoIdPrtr = fCheckIdPrtr(aoCnptFile);
+  aoAll.push(...aoIdPrtr);
+  fLog(`${aoIdPrtr.length} issues`);
+
+  fWrite('   MvrlId11  Ids gntr_generic_tree_suffix... ');
+  const aoIdGntr = fCheckIdGntr(aoCnptFile);
+  aoAll.push(...aoIdGntr);
+  fLog(`${aoIdGntr.length} issues`);
 
   return aoAll;
 }

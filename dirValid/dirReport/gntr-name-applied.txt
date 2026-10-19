@@ -1,0 +1,913 @@
+generic-tree names: uniqueness + rename -Gntr -> _Gntr — 2026-10-19   DRY=false
+
+generic-tree:: paragraphs: 3118 | named: 2774 | distinct names: 2769
+tokens renamed: 5883 in 551 files, written 551
+
+=== SAME-NAME (5) — two or more generic-trees have the same name
+  McsTest_Gntr (2)
+  boneRib_Gntr (2)
+  medAntidepressant_Gntr (2)
+  nerveCranial_Gntr (2)
+  Englverb_Gntr (2)
+
+=== SAME-NAME-IGNORING-CASE (0) — names that differ only in letter case
+  (none)
+
+=== NO-NAME (344) — generic-tree:: does not start with "<br>* McshEngl.X_Gntr,"
+  McshCor000002:2135  idMcsrftgtr  first: <br>* <a class="clsPreview" href="#idMcsatt">Mcsattr</a>,
+  McshCor000002:2278  idMcsattGncchngtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002node
+  McshCor000002:2347  idMcsattWhlNSpcdvngtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002Gcsc
+  McshCor000003:5286  idEntDctcgtr  first: <br>* <a class="clsPreview" href="#idEntDef">definite-entity</a>,
+  McshCor000004:483  idDngatt001DrnSpcgtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000007.last.html#idSpcDrcn">s
+  McshCor000011:3158  idSysMng003att003gtr  first: <br>* <a class="clsPreview" href="#idSysMng001att002">info-sys-of-organism</a>,
+  McshCor000013:424  idBrnginfarchgtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000005.last.html#idRlnMpgarch
+  McshCor000013:441  idBrngstxgtr  first: <br>* syntax-of-functing,
+  McshCor000018:718  idBrngHmnFcthearggtr  first: <br>* <a class="clsPreview" href="#idBrngHmnFct003">sensing</a>,
+  McshCor000018:2574  idBrngHmnFct004stmlgtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgst
+  McshHlth000004:178  idCellHmnatt003gtr  first: <br>* cell-nucleus⧺cptEpistem658⧺,
+  McshHlth000004:1456  idCellHmn010gtr  first: <br>* <a class="clsPreview" href="#idCellHmngtr">cell-gtr</a>,
+  McshHlth000004:1690  idCellHmn020gtr  first: <br>* <a class="clsPreview" href="#idCellHmngtr">cell-gtr</a>,
+  McshHlth000004:1936  idCellHmn016gtr  first: <br>* <a class="clsPreview" href="#idCellHmngtr">cell-gtr</a>,
+  McshHlth000004:2558  idCellHmn008gtr  first: <br>* <a class="clsPreview" href="#idCellHmngtr">cell-gtr</a>,
+  McshHlth000005:932  idMsclHmn015gtr  first: <br>* <a class="clsPreview" href="../dirHlth/McshHlth000005.last.html#idMsclHmn"
+  McshHlth000005:3503  idBoneHmn007gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3530  idBoneHmn008gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3558  idBoneHmn009gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3585  idBoneHmn010gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3612  idBoneHmn011gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3639  idBoneHmn012gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3666  idBoneHmn013gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3696  idBoneHmn014gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:3724  idBoneHmn040gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:5215  idBoneHmn027gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:5282  idBoneHmn033gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:5463  idBoneHmn035gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000005:5492  idBoneHmn036gtr  first: <br>* <a class="clsPreview" href="#idBoneHmngtr">organBone-gtr</a>,
+  McshHlth000008:57  idHlthHmnatt001gtr  first: <br>* <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idHmngtr">hu
+  McshHlth000011:1178  idDssHmn001infngtr  first: <br>* doing-of-disease,
+  McshHlth000011:1420  idDssHmn002gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:1905  idDssHmn192gtr  first: <br>* disease.skeletal-system⧺cptDssHmn104⧺,
+  McshHlth000011:1927  idDssHmn193gtr  first: <br>* disease.skeletal-system⧺cptDssHmn104⧺,
+  McshHlth000011:2977  idDssHmn132gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:3050  idDssHmn039gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:3602  idDssHmn165gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:4624  idDssHmn075gtr  first: <br>* <a class="clsPreview" href="#idDssHmn037">DssSkin</a>,
+  McshHlth000011:6401  idDssHmn111gtr  first: <br>* <a class="clsPreview" href="#idDssHmn096">DssEye</a>,
+  McshHlth000011:6465  idDssHmn118gtr  first: <br>* <a class="clsPreview" href="#idDssHmn096">DssEye</a>,
+  McshHlth000011:6496  idDssHmn119gtr  first: <br>* <a class="clsPreview" href="#idDssHmn096">DssEye</a>,
+  McshHlth000011:8143  idDssHmn113gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:11525  idDssHmn200gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:12512  idDssHmn205gtr  first: <br>* <a class="clsPreview" href="#idDssHmn037">DssSkin</a>,
+  McshHlth000011:12867  idDssHmn121gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:12888  idDssHmn122gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:12913  idDssHmn123gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:12939  idDssHmn125gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:13160  idDssHmn133gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:13837  idDssHmn143gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:13999  idDssHmn147gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000011:14275  idDssHmn099gtr  first: <br>* <a class="clsPreview" href="#idDssHmngtr">disease-gtr</a>,
+  McshHlth000013:6551  idFoodHmn092gtr  first: <br>* <a class="clsPreview" href="#idFoodHmn050">naturalNo-food</a>,
+  McshHlth000013:9264  idFoodHmn149gtr  first: <br>* <a class="clsPreview" href="#idFoodHmn050">naturalNo-food</a>,
+  McshHlth000014:524  idMedHmnognFgtr  first: <br>* drug-organization,
+  McshHlth000014:2345  idMedHmn025gtr  first: <br>* <a class="clsPreview" href="#idOverview">medication</a>,
+  McshHlth000016:790  idThrpHmnPhrmcgtr  first: <br>* <a class="clsPreview" href="#idThrpHmnDngN">doingNo-therapy</a>,
+  McshLag000007:1065  idLHmnmsmsinfgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000002.last.html#idInfBrnBioB
+  McshLag000007:22047  idLHmnmargoMtwdgtr  first: <br>* <a class="clsPreview" href="#idLHmnmname006">multiword-term</a>,
+  McshLag000007:24493  idLHmnmverbMtwdgtr  first: <br>* <a class="clsPreview" href="#idLHmnmname006">multiword-term</a>,
+  McshLag000007:26182  idLHmnmConjWrdmnygtr  first: <br>* <a class="clsPreview" href="#idLHmnmname006">multiword-term</a>,
+  McshLag000008:123  idL0016nodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000008:603  idL0016wrdgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmwrd">
+  McshLag000008:627  idL0016duntgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmname"
+  McshLag000009:166  idL0017nodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000009:3937  idL0017wrdgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmwrd">
+  McshLag000009:3978  idL0017duntgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmname"
+  McshLag000009:4124  idL0017dnggtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmdng">
+  McshLag000010:259  idL0014smsvrbgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsmsvr
+  McshLag000010:281  idL0014smscnjgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsmscn
+  McshLag000010:355  idL0014nodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000011:523  idLEnglsmsvrbgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsmsvr
+  McshLag000011:2200  idLEnglwrdgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmwrd">
+  McshLag000011:2507  idLEnglsylbatt001gtr  first: <br>* lagHmnm-syllabication,
+  McshLag000011:8091  idLEngladjesnmrsgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameT
+  McshLag000011:9699  idLEngladvesnmrsgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameT
+  McshLag000011:26710  idLEnglverbcjgngtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbm
+  McshLag000012:199  idLEsposmsondoMaingtr  first: <br>* <a class="clsPreview" href="#idLEsposmsondo">Espo_lago-semu-argu</a>,
+  McshLag000012:253  idLEsposmsvrbgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsmsvr
+  McshLag000012:352  idLEsponodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000012:1667  idLEspowrdsylbngtr  first: <br>* lagHmnm-syllabication,
+  McshLag000012:1750  idLEsposylbgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsylb"
+  McshLag000012:4685  idLEspoverbcjgngtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbm
+  McshLag000012:4786  idLEspoconjgtr  first: <br>* ConjHmnm,
+  McshLag000018:364  idLZhonsmsnunmbrMaingtr  first: <br>* <a class="clsPreview" href="#idLZhonsmsnun">Zhon_lago-argu-concept</a>,
+  McshLag000018:473  idLZhonsmsvrbgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmsmsvr
+  McshLag000018:602  idLZhonnodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000018:12302  idLHmnmverbmrfdggtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbm
+  McshLag000020:181  idLEllnnodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshLag000021:676  idLZhonsylbslbcngtr  first: <br>* lagHmnm-syllabication,
+  McshLag000033:342  idLDeutnodegtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnode"
+  McshNtr000007:217  idChmElratt007gtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006
+  McshNtr000007:1060  idAtmActiniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1100  idAtmAluminiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1136  idAtmAmericiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1172  idAtmAntimonygtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1208  idAtmArgongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1244  idAtmArsenicgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1281  idAtmAstatinegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1332  idAtmBariumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1368  idAtmBerkeliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1404  idAtmBerylliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1440  idAtmBismuthgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1476  idAtmBohriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1511  idAtmBorongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1547  idAtmBrominegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1583  idAtmCadmiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1620  idAtmCaesiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1728  idAtmCaliforniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1774  idAtmCarbongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1810  idAtmCeriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1846  idAtmChlorinegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1882  idAtmChromiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1918  idAtmCobaltgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:1967  idAtmCoppergtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2003  idAtmCoperniciumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2039  idAtmCuriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2075  idAtmDarmstadtiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2111  idAtmDubniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2147  idAtmDysprosiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2183  idAtmEinsteiniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2219  idAtmErbiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2255  idAtmEuropiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2291  idAtmFermiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2326  idAtmFluorinegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2424  idAtmGadoliniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2460  idAtmGalliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2496  idAtmGermaniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2577  idAtmGoldgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2613  idAtmHafniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2649  idAtmHassiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2688  idAtmHeliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2741  idAtmHolmiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2787  idAtmHydrogengtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2883  idAtmIndiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2918  idAtmIodinegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2954  idAtmIridiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:2990  idAtmIrongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3026  idAtmKryptongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3062  idAtmLanthanumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3098  idAtmLawrenciumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3134  idAtmLeadgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3186  idAtmLithiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3222  idAtmLutetiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3301  idAtmMagnesiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3337  idAtmManganesegtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3373  idAtmMeitneriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3409  idAtmMendeleviumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3445  idAtmMercurygtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3481  idAtmMolybdenumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3517  idAtmNeodymiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3553  idAtmNeongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3589  idAtmNeptuniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3625  idAtmNickelgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3661  idAtmNiobiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3706  idAtmNitrogengtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3742  idAtmNobeliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3778  idAtmOsmiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3867  idAtmOxygengtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3930  idAtmPalladiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:3981  idAtmPhosphorusgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4017  idAtmPlatinumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4053  idAtmPlutoniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4089  idAtmPoloniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4162  idAtmPotassiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4198  idAtmPraseodymiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4234  idAtmPromethiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4270  idAtmProtactiniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4307  idAtmRadiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4361  idAtmRadongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4397  idAtmRheniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4433  idAtmRhodiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4469  idAtmRubidiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4505  idAtmRutheniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4541  idAtmRutherfordiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4577  idAtmSamariumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4613  idAtmScandiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4649  idAtmSeaborgiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4685  idAtmSeleniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4721  idAtmSilicongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4757  idAtmSilvergtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4793  idAtmSodiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4829  idAtmStrontiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4864  idAtmSulfurgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4900  idAtmTantalumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4936  idAtmTechnetiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:4972  idAtmTelluriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5008  idAtmTerbiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5044  idAtmThalliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5080  idAtmThoriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5116  idAtmThuliumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5152  idAtmTingtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5188  idAtmTitaniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5223  idAtmTungstengtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5258  idAtmUnunbiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5293  idAtmUnunhexiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5326  idAtmUnunoctiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5361  idAtmUnunpentiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5396  idAtmUnunquadiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5431  idAtmUnunseptiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5483  idAtmUnuntriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5518  idAtmUnuniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5553  idAtmUraniumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5588  idAtmVanadiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5624  idAtmXenongtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5660  idAtmYtterbiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5695  idAtmYttriumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5731  idAtmZincgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000007:5767  idAtmZirconiumgtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOvervie
+  McshNtr000012:98  idFrcatt005gtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001D
+  McshOgm000004:901  idMolOgm011gtr  first: <br>* <a class="clsPreview" href="#idMolOgm003gtr">biopolymer-gtr</a>,
+  McshOgm000005:452  idSysMolsHmn004gtr  first: <br>* entity.body.product⧺cptEpistem475.371⧺,
+  McshOgm000005:862  idSysMolsHmn016gtr  first: <br>* <a class="clsPreview" href="#idSysMolsHmn004">productBodyHumn</a>,
+  McshOgm000005:906  idSysMolsHmn018gtr  first: <br>* <a class="clsPreview" href="#idSysMolsHmn004">productBodyHumn</a>,
+  McshOgm000005:998  idSysMolsHmn021gtr  first: <br>* <a class="clsPreview" href="#idSysMolsHmn004">productBodyHumn</a>,
+  McshOgm000005:1019  idSysMolsHmn022gtr  first: <br>* <a class="clsPreview" href="#idSysMolsHmn004">productBodyHumn</a>,
+  McshOgm000005:1800  idHrmnHmn009gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:1837  idHrmnHmn018gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:1873  idHrmnHmn012gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:1955  idHrmnHmn005gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2019  idHrmnHmn025gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2058  idHrmnHmn022gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2095  idHrmnHmn006gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2127  idHrmnHmn024gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2171  idHrmnHmn011gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2207  idHrmnHmn010gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2247  idHrmnHmn026gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2285  idHrmnHmn004gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2329  idHrmnHmn016gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2367  idHrmnHmn013gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2437  idHrmnHmn007gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2477  idHrmnHmn020gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2525  idHrmnHmn038gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2558  idHrmnHmn008gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2578  idHrmnHmn019gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:2614  idHrmnHmn021gtr  first: <br>* <a class="clsPreview" href="#idHrmnHmngtr">hormone-gtr</a>,
+  McshOgm000005:3473  idFldHmn001att011gtr  first: <br>* <a class="clsPreview" href="#idDssHmn010">therapy</a>,
+  McshOgm000008:944  idOgmVrs003gtr  first: <br>* coronavirus,
+  McshOgm000010:1729  idPlnt039gtr  first: <br>* <a class="clsPreview" href="#idPlnt041">medicinal-herb</a>,
+  McshStn000002:252  idStnOgmatt003gtr  first: <br>* health-of-socialitation,
+  McshStn000007:202  idSocOgmatt009gtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">
+  McshStnlaw000003:2295  idLawEus020gtr  first: <br>* <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</
+  McshStnlaw000003:2356  idLawEus022gtr  first: <br>* <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>,
+  McshStnlaw000003:2376  idLawEus023gtr  first: <br>* <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>,
+  McshStnlaw000003:2396  idLawEus024gtr  first: <br>* <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>,
+  McshStnlaw000003:2422  idLawEus027gtr  first: <br>* <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2442  idLawEus028gtr  first: <br>* <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2461  idLawEus029gtr  first: <br>* <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2518  idLawEus030gtr  first: <br>* <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshTchInf000006:1946  idLSrcdarchgtr  first: <br>* <a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>,
+  McshTchInf000006:1962  idLSrcdarchcdgtr  first: <br>* <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>,
+  McshTchInf000006:1978  idLSrcdarchdmngtr  first: <br>* <a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>,
+  McshTchInf000006:2162  idLSrcduntgtr  first: <br>* <a class="clsPreview" href="#idLCpgmalgunt">unit-of-Pgmg_lago</a>,
+  McshTchInf000006:2686  idLSrcdphrsgtr  first: <br>* <a class="clsPreview" href="#idLCpgmalgphrs">phrase-of-Pgmg_lago</a>,
+  McshTchInf000006:2875  idLSrcdrscgtr  first: <br>* <a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>,
+  McshTchInf000010:4003  idLJsgnObjectmebrgtr  first: <br>* <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>,
+  McshTchInf000015:1650  idAlgntchnimtbltgtr  first: <br>* <a class="clsPreview" href="#idAlgntevalSpro">chain-net--advantage</a>,
+  McshTchInf000015:3975  idAlgntevuMoebknsgtr  first: <br>* <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>,
+  McshTchInf000015:4029  idAlgntevuMoeprcgtr  first: <br>* <a class="clsPreview" href="#idAlgntevuprc">price-of--chain-asset</a>,
+  McshTchInf000015:4316  idAlgntevuMoeCnsgtr  first: <br>* <a class="clsPreview" href="#idAlgntevuCns">consensus--chain-asset</a>,
+  McshTchInf000015:8371  idLkxLycitkrgtr  first: <br>* <a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>,
+  McshTchInf000016:326  idDbcwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:492  idDbcnodApdrgtr  first: <br>* <a href="McshTchInf000015.last.html#idAlgntnodApdr">appender-node--of--cha
+  McshTchInf000016:1573  idDbccrptgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:1901  idDbcprcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:1971  idDbcevubkngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:3242  idDbcevMoeNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:4141  idDbcpgmScrtgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idDcnt
+  McshTchInf000016:4170  idDbcappgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idDapp
+  McshTchInf000016:4896  idDbcelnSprogtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:5290  idDbcsvcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15593  idDbcPmsapdgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15608  idDbcPmsapdNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15623  idDbcPmsjoingtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15638  idDbcPmsjoinNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15658  idDbcPbcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000016:15678  idDbcPbcNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000018:220  idEthtrstlsgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000019:2642  idArgnskhrgtr  first: <br>* <a class="clsPreview" href="#idDeOznskhr">stakeholder-of--OgznDao</a>,
+  McshTchInf000019:2782  idArgnclntgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000018.last.html#idEthd
+  McshTchInf000019:3262  idDaostkskhrGvnrgtr  first: <br>* <a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>,
+  McshTchInf000019:3444  idDaostkgovcgtr  first: <br>* <a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>,
+  McshTchInf000019:4121  idDaostkAlcmgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000018.last.html#idEthd
+  McshTchInf000019:4415  idEosdacskhrgtr  first: <br>* <a class="clsPreview" href="#idDeOznskhr">stakeholder-of-OgznDao</a>,
+  McshTchInf000021:61  idEosprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
+  McshTchInf000021:80  idEosprlwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
+  McshTchInf000021:937  idEosnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdn
+  McshTchInf000021:1266  idEoschngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
+  McshTchInf000021:1280  idEosblkgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
+  McshTchInf000021:1454  idEostxgtr  first: <br>* blockchain-net'transaction,
+  McshTchInf000021:1548  idEosacntgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcw
+  McshTchInf000021:1751  idEosevugtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbde
+  McshTchInf000021:1764  idEosevuognXgtr  first: <br>* exchange-organization--of--blockchain-asset,
+  McshTchInf000021:1920  idEosgovgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdg
+  McshTchInf000021:2561  idEospgmstctgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idDcnt
+  McshTchInf000021:2887  idEoswltgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
+  McshTchInf000021:3078  idEosogngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdo
+  McshTchInf000021:3098  idEosognBkongtr  first: <br>* company,
+  McshTchInf000021:3235  idEosdnggtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
+  McshTchInf000022:57  idFairnetprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
+  McshTchInf000022:71  idFairnetwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
+  McshTchInf000022:671  idFairnetnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdn
+  McshTchInf000022:802  idFairnetbcngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
+  McshTchInf000022:815  idFairnetblkgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
+  McshTchInf000022:839  idFairnetblkpldgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBt
+  McshTchInf000022:896  idFairnetblktmbngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
+  McshTchInf000022:916  idFairnetbergtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
+  McshTchInf000022:951  idFairnetpocgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcc
+  McshTchInf000022:995  idFairnetevuCgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbce
+  McshTchInf000022:1026  idFairnetevuCexrgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000022:1074  idFairnetgovgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdg
+  McshTchInf000022:1193  idFairnetwltgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
+  McshTchInf000022:1211  idFairnetstatgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbds
+  McshTchInf000022:1227  idFairnetstatEnrggtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbce
+  McshTchInf000022:1243  idFairnethmngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdh
+  McshTchInf000022:1273  idFairnetogngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdo
+  McshTchInf000022:1377  idFairnetelngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbde
+  McshTchInf000022:1391  idFairnetelnScongtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
+  McshTchInf000022:1458  idFairnetlawgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdl
+  McshTchInf000022:1493  idFairnetrscgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbci
+  McshTchInf000024:57  idSteemprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
+  McshTchInf000024:79  idSteemnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000024:126  idSteemnodWtnsgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcn
+  McshTchInf000024:167  idSteemblkgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
+  McshTchInf000024:287  idSteemtxgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbct
+  McshTchInf000024:1016  idSteemdgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000024:2327  idSteemacntpbcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbca
+  McshTchInf000024:2622  idSteemactpstgtr  first: <br>* post-of--Steem-net,
+  McshTchInf000024:3545  idSteemitactgtr  first: <br>* <a class="clsPreview" href="#idSteemacnt">Steem-account</a>,
+  McshTchInf000024:3828  idSteemognExggtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000025:756  idEvrpastIqtgtr  first: <br>* Eos-net--asset,
+  McshTchInf000026:209  idBkskBcnetgtr  first: <br>* blockchain-network,
+  McshTchInf000028:50  idDnlbrskhrgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000028:177  idDnlbrprclgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000028:580  idDnlbrnodegtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000028:601  idDnlbrnodeVdtrgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
+  McshTchInf000030:50  idLRustarchgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:294  idLRustuntgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:1273  idLRustsuntNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:2464  idLRustsuntNmdgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:2638  idLRustphrsgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:2793  idLRustsctngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:2831  idLRustrootgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+  McshTchInf000030:3096  idLRustalgStdpldVecgtr  first: <br>* <a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>,
+
+=== RENAMED -Gntr -> _Gntr, per file
+  McshCor000002  39
+  McshCor000003  21
+  McshCor000004  31
+  McshCor000005  27
+  McshCor000006  10
+  McshCor000007  12
+  McshCor000008  6
+  McshCor000009  7
+  McshCor000010  16
+  McshCor000011  21
+  McshCor000012  8
+  McshCor000013  23
+  McshCor000014  6
+  McshCor000015  2
+  McshCor000016  2
+  McshCor000018  49
+  McshCor000019  2
+  McshCor000020  4
+  McshCor000021  2
+  McshEdu000002  3
+  McshEdu000003  2
+  McshEdu000005  24
+  McshEdu000006  4
+  McshEdu000007  2
+  McshEdu000008  2
+  McshEdu000009  4
+  McshEdu000010  8
+  McshEdu000011  2
+  McshEdu000012  2
+  McshEdu000013  2
+  McshEdu000014  8
+  McshEdu000015  2
+  McshHlth000002  185
+  McshHlth000003  27
+  McshHlth000004  25
+  McshHlth000005  70
+  McshHlth000006  4
+  McshHlth000007  1
+  McshHlth000008  21
+  McshHlth000009  2
+  McshHlth000010  6
+  McshHlth000011  173
+  McshHlth000012  2
+  McshHlth000013  108
+  McshHlth000014  26
+  McshHlth000015  6
+  McshHlth000016  13
+  McshHlth000018  6
+  McshHlth000019  76
+  McshHmn000002  25
+  McshHmn000003  2
+  McshHmn000005  2
+  McshLag000000  2
+  McshLag000002  11
+  McshLag000003  22
+  McshLag000004  2
+  McshLag000005  4
+  McshLag000006  46
+  McshLag000007  178
+  McshLag000008  8
+  McshLag000009  14
+  McshLag000010  42
+  McshLag000011  84
+  McshLag000012  45
+  McshLag000013  14
+  McshLag000014  2
+  McshLag000016  3
+  McshLag000017  2
+  McshLag000018  66
+  McshLag000019  2
+  McshLag000020  35
+  McshLag000021  6
+  McshLag000022  2
+  McshLag000023  4
+  McshLag000024  2
+  McshLag000025  2
+  McshLag000026  4
+  McshLag000027  22
+  McshLag000028  4
+  McshLag000029  2
+  McshLag000030  29
+  McshLag000031  2
+  McshLag000032  2
+  McshLag000033  34
+  McshLag000034  32
+  McshLag000035  32
+  McshLag000036  36
+  McshLag000037  45
+  McshLag000038  35
+  McshLag000039  33
+  McshLag000040  33
+  McshLag000041  33
+  McshLag000042  33
+  McshLag000043  27
+  McshNtr000002  2
+  McshNtr000003  2
+  McshNtr000004  6
+  McshNtr000005  9
+  McshNtr000006  15
+  McshNtr000007  12
+  McshNtr000008  2
+  McshNtr000009  2
+  McshNtr000010  4
+  McshNtr000011  1
+  McshNtr000012  6
+  McshNtr000013  4
+  McshNtr000014  2
+  McshNtr000015  2
+  McshNtr000017  2
+  McshOgm000002  3
+  McshOgm000003  14
+  McshOgm000004  13
+  McshOgm000005  36
+  McshOgm000006  24
+  McshOgm000007  19
+  McshOgm000008  6
+  McshOgm000009  8
+  McshOgm000010  7
+  McshOgm000011  1
+  McshStn000002  6
+  McshStn000003  2
+  McshStn000004  12
+  McshStn000005  4
+  McshStn000006  2
+  McshStn000007  3
+  McshStn000008  7
+  McshStn000009  44
+  McshStn000010  30
+  McshStn000011  17
+  McshStn000012  28
+  McshStn000013  4
+  McshStn000014  2
+  McshStn000015  30
+  McshStn000016  2
+  McshStn000017  21
+  McshStn000018  4
+  McshStn000019  2
+  McshStn000020  35
+  McshStn000021  1
+  McshStn000022  2
+  McshStn000023  2
+  McshStn000024  2
+  McshStn000026  6
+  McshStn000027  2
+  McshStn000028  4
+  McshStn000029  20
+  McshStn000030  2
+  McshStn000031  18
+  McshStn000032  4
+  McshStn000033  2
+  McshStn000034  8
+  McshStn000035  10
+  McshStn000036  2
+  McshStn000037  8
+  McshStn000038  8
+  McshStn000039  8
+  McshStn000040  4
+  McshStn000041  4
+  McshStn000042  14
+  McshStn000043  4
+  McshStn000044  8
+  McshStn000045  2
+  McshStn000046  2
+  McshStn000047  2
+  McshStn000048  6
+  McshStn000049  2
+  McshStn000050  6
+  McshStn000051  2
+  McshStnlaw000002  22
+  McshStnlaw000003  23
+  McshStnlaw000004  4
+  McshStnlaw000006  2
+  McshTch000002  5
+  McshTch000003  6
+  McshTch000005  2
+  McshUcdU0000  6
+  McshUcdU0080  6
+  McshUcdU0100  6
+  McshUcdU0180  6
+  McshUcdU0250  6
+  McshUcdU02B0  6
+  McshUcdU0300  6
+  McshUcdU0370  6
+  McshUcdU0400  6
+  McshUcdU0500  6
+  McshUcdU0530  6
+  McshUcdU0590  6
+  McshUcdU0600  6
+  McshUcdU0700  6
+  McshUcdU0750  6
+  McshUcdU0780  6
+  McshUcdU07C0  6
+  McshUcdU0800  6
+  McshUcdU0840  6
+  McshUcdU0860  6
+  McshUcdU08A0  6
+  McshUcdU0900  6
+  McshUcdU0980  6
+  McshUcdU0A00  6
+  McshUcdU0A80  6
+  McshUcdU0B00  6
+  McshUcdU0B80  6
+  McshUcdU0C00  6
+  McshUcdU0C80  6
+  McshUcdU0D00  6
+  McshUcdU0D80  6
+  McshUcdU0E00  6
+  McshUcdU0E80  6
+  McshUcdU0F00  6
+  McshUcdU1000  6
+  McshUcdU10000  6
+  McshUcdU100000  3
+  McshUcdU10080  6
+  McshUcdU10100  6
+  McshUcdU10140  6
+  McshUcdU10190  6
+  McshUcdU101D0  6
+  McshUcdU10280  6
+  McshUcdU102A0  6
+  McshUcdU102E0  6
+  McshUcdU10300  6
+  McshUcdU10330  6
+  McshUcdU10350  6
+  McshUcdU10380  6
+  McshUcdU103A0  6
+  McshUcdU10400  6
+  McshUcdU10450  6
+  McshUcdU10480  6
+  McshUcdU104B0  6
+  McshUcdU10500  6
+  McshUcdU10530  6
+  McshUcdU10600  6
+  McshUcdU10800  6
+  McshUcdU10840  6
+  McshUcdU10860  6
+  McshUcdU10880  6
+  McshUcdU108E0  6
+  McshUcdU10900  6
+  McshUcdU10920  6
+  McshUcdU10980  6
+  McshUcdU109A0  6
+  McshUcdU10A0  6
+  McshUcdU10A00  6
+  McshUcdU10A60  6
+  McshUcdU10A80  6
+  McshUcdU10AC0  6
+  McshUcdU10B00  6
+  McshUcdU10B40  6
+  McshUcdU10B60  6
+  McshUcdU10B80  6
+  McshUcdU10C00  6
+  McshUcdU10C80  6
+  McshUcdU10D00  6
+  McshUcdU10E60  6
+  McshUcdU10F00  6
+  McshUcdU10F30  6
+  McshUcdU1100  6
+  McshUcdU11000  6
+  McshUcdU11080  6
+  McshUcdU110D0  6
+  McshUcdU11100  6
+  McshUcdU11150  6
+  McshUcdU11180  6
+  McshUcdU111E0  6
+  McshUcdU11200  6
+  McshUcdU11280  6
+  McshUcdU112B0  6
+  McshUcdU11300  6
+  McshUcdU11400  6
+  McshUcdU11480  6
+  McshUcdU11580  6
+  McshUcdU11600  6
+  McshUcdU11660  6
+  McshUcdU11680  6
+  McshUcdU11700  6
+  McshUcdU11800  6
+  McshUcdU118A0  6
+  McshUcdU11A00  6
+  McshUcdU11A50  6
+  McshUcdU11AC0  6
+  McshUcdU11C00  6
+  McshUcdU11C70  6
+  McshUcdU11D00  6
+  McshUcdU11D60  6
+  McshUcdU11EE0  6
+  McshUcdU1200  6
+  McshUcdU12000  6
+  McshUcdU12400  6
+  McshUcdU12480  6
+  McshUcdU13000  6
+  McshUcdU1380  6
+  McshUcdU13A0  6
+  McshUcdU1400  6
+  McshUcdU14400  6
+  McshUcdU1680  6
+  McshUcdU16800  6
+  McshUcdU16A0  6
+  McshUcdU16A40  6
+  McshUcdU16AD0  6
+  McshUcdU16B00  6
+  McshUcdU16E40  6
+  McshUcdU16F00  6
+  McshUcdU16FE0  6
+  McshUcdU1700  6
+  McshUcdU17000  3
+  McshUcdU1720  6
+  McshUcdU1740  6
+  McshUcdU1760  6
+  McshUcdU1780  6
+  McshUcdU1800  6
+  McshUcdU18800  6
+  McshUcdU18B0  6
+  McshUcdU1900  6
+  McshUcdU1950  6
+  McshUcdU1980  6
+  McshUcdU19E0  6
+  McshUcdU1A00  6
+  McshUcdU1A20  6
+  McshUcdU1AB0  6
+  McshUcdU1B00  6
+  McshUcdU1B000  6
+  McshUcdU1B100  6
+  McshUcdU1B170  6
+  McshUcdU1B80  6
+  McshUcdU1BC0  6
+  McshUcdU1BC00  6
+  McshUcdU1BCA0  6
+  McshUcdU1C00  6
+  McshUcdU1C50  6
+  McshUcdU1C80  6
+  McshUcdU1C90  6
+  McshUcdU1CC0  6
+  McshUcdU1CD0  6
+  McshUcdU1D00  6
+  McshUcdU1D000  6
+  McshUcdU1D100  6
+  McshUcdU1D200  6
+  McshUcdU1D2E0  6
+  McshUcdU1D300  6
+  McshUcdU1D360  6
+  McshUcdU1D400  6
+  McshUcdU1D80  6
+  McshUcdU1D800  6
+  McshUcdU1DC0  6
+  McshUcdU1E00  6
+  McshUcdU1E000  6
+  McshUcdU1E800  6
+  McshUcdU1E900  6
+  McshUcdU1EC70  6
+  McshUcdU1EE00  6
+  McshUcdU1F00  6
+  McshUcdU1F000  6
+  McshUcdU1F030  6
+  McshUcdU1F0A0  6
+  McshUcdU1F100  6
+  McshUcdU1F200  6
+  McshUcdU1F300  6
+  McshUcdU1F600  6
+  McshUcdU1F650  6
+  McshUcdU1F680  6
+  McshUcdU1F700  6
+  McshUcdU1F780  6
+  McshUcdU1F800  6
+  McshUcdU1F900  6
+  McshUcdU1FA00  6
+  McshUcdU2000  6
+  McshUcdU20000  3
+  McshUcdU2070  6
+  McshUcdU20A0  6
+  McshUcdU20D0  6
+  McshUcdU2100  6
+  McshUcdU2150  6
+  McshUcdU2190  6
+  McshUcdU2200  6
+  McshUcdU2300  6
+  McshUcdU2400  6
+  McshUcdU2440  6
+  McshUcdU2460  6
+  McshUcdU2500  6
+  McshUcdU2580  6
+  McshUcdU25A0  6
+  McshUcdU2600  6
+  McshUcdU2700  6
+  McshUcdU27C0  6
+  McshUcdU27F0  6
+  McshUcdU2800  6
+  McshUcdU2900  6
+  McshUcdU2980  6
+  McshUcdU2A00  6
+  McshUcdU2A700  3
+  McshUcdU2B00  6
+  McshUcdU2B740  3
+  McshUcdU2B820  3
+  McshUcdU2C00  6
+  McshUcdU2C60  6
+  McshUcdU2C80  6
+  McshUcdU2CEB0  3
+  McshUcdU2D00  6
+  McshUcdU2D30  6
+  McshUcdU2D80  6
+  McshUcdU2DE0  6
+  McshUcdU2E00  6
+  McshUcdU2E80  6
+  McshUcdU2F00  6
+  McshUcdU2F800  6
+  McshUcdU2FF0  6
+  McshUcdU3000  6
+  McshUcdU3040  6
+  McshUcdU30A0  6
+  McshUcdU3100  6
+  McshUcdU3130  6
+  McshUcdU3190  6
+  McshUcdU31A0  6
+  McshUcdU31C0  6
+  McshUcdU31F0  6
+  McshUcdU3200  6
+  McshUcdU3300  6
+  McshUcdU3400  3
+  McshUcdU4DC0  6
+  McshUcdU4E00  3
+  McshUcdUA000  6
+  McshUcdUA490  6
+  McshUcdUA4D0  6
+  McshUcdUA500  6
+  McshUcdUA640  6
+  McshUcdUA6A0  6
+  McshUcdUA700  6
+  McshUcdUA720  6
+  McshUcdUA800  6
+  McshUcdUA830  6
+  McshUcdUA840  6
+  McshUcdUA880  6
+  McshUcdUA8E0  6
+  McshUcdUA900  6
+  McshUcdUA930  6
+  McshUcdUA960  6
+  McshUcdUA980  6
+  McshUcdUA9E0  6
+  McshUcdUAA00  6
+  McshUcdUAA60  6
+  McshUcdUAA80  6
+  McshUcdUAAE0  6
+  McshUcdUAB00  6
+  McshUcdUAB30  6
+  McshUcdUAB70  6
+  McshUcdUABC0  6
+  McshUcdUAC00  3
+  McshUcdUD7B0  6
+  McshUcdUD800  3
+  McshUcdUDB80  3
+  McshUcdUDC00  3
+  McshUcdUE000  3
+  McshUcdUE0000  6
+  McshUcdUE0100  6
+  McshUcdUF0000  3
+  McshUcdUF900  6
+  McshUcdUFB00  6
+  McshUcdUFB50  6
+  McshUcdUFE00  6
+  McshUcdUFE10  6
+  McshUcdUFE20  6
+  McshUcdUFE30  6
+  McshUcdUFE50  6
+  McshUcdUFE70  6
+  McshUcdUFF00  6
+  McshUcdUFFF0  6
+  McshTchInf000002  10
+  McshTchInf000003  23
+  McshTchInf000004  2
+  McshTchInf000005  20
+  McshTchInf000006  48
+  McshTchInf000007  20
+  McshTchInf000008  18
+  McshTchInf000009  31
+  McshTchInf000010  86
+  McshTchInf000011  33
+  McshTchInf000012  85
+  McshTchInf000013  16
+  McshTchInf000014  36
+  McshTchInf000015  146
+  McshTchInf000016  100
+  McshTchInf000017  38
+  McshTchInf000018  66
+  McshTchInf000019  38
+  McshTchInf000020  20
+  McshTchInf000021  22
+  McshTchInf000022  4
+  McshTchInf000023  2
+  McshTchInf000024  26
+  McshTchInf000025  6
+  McshTchInf000026  16
+  McshTchInf000027  2
+  McshTchInf000028  21
+  McshTchInf000029  8
+  McshTchInf000030  36
+  McshTchInf000031  34
+  McshTchInf000032  18
+  McshTchInf000035  2
+  McshTchInf000036  23
+  McshTchInf000037  4
+  McshTchInf000038  8
+  McshTchInf000039  88
+  McshTchInf000040  6
+  McshTchInf000041  16
+  McshTchInf000042  2
+  McshTchPrgm000002  10
+  McshTchPrgm000003  7
+  McshTchPrgm000005  2
+  McshTchPrgm000006  2
+  McshWrdidxElln00  3
+  McshWrdidxElln01alfa_1  3
+  McshWrdidxElln01alfa_2  3
+  McshWrdidxElln01alfa_3  3
+  McshWrdidxElln01alfa_4  3
+  McshWrdidxElln01alfa_5  3
+  McshWrdidxElln02vita  3
+  McshWrdidxElln03yama  3
+  McshWrdidxElln04dhelta  3
+  McshWrdidxElln05epsilon_1  3
+  McshWrdidxElln05epsilon_2  3
+  McshWrdidxElln05epsilon_3  3
+  McshWrdidxElln06zita  3
+  McshWrdidxElln07ita  3
+  McshWrdidxElln08thita  3
+  McshWrdidxElln09yxota  3
+  McshWrdidxElln10kapa_1  3
+  McshWrdidxElln10kapa_2  3
+  McshWrdidxElln10kapa_3  3
+  McshWrdidxElln11lamdha  3
+  McshWrdidxElln12mi_1  3
+  McshWrdidxElln12mi_2  3
+  McshWrdidxElln12mi_3  3
+  McshWrdidxElln12mi_4  3
+  McshWrdidxElln12mi_5  3
+  McshWrdidxElln13ni  3
+  McshWrdidxElln14ksi  3
+  McshWrdidxElln15omikron  3
+  McshWrdidxElln16pi_1  3
+  McshWrdidxElln16pi_2  3
+  McshWrdidxElln16pi_3  3
+  McshWrdidxElln17ro  3
+  McshWrdidxElln18siyma_1  3
+  McshWrdidxElln18siyma_2  3
+  McshWrdidxElln18siyma_3  3
+  McshWrdidxElln19taf  3
+  McshWrdidxElln20ipsilon  3
+  McshWrdidxElln21fi  3
+  McshWrdidxElln22hxi  3
+  McshWrdidxElln23psi  3
+  McshWrdidxElln24oméya  3
+  Mcsh000000  3

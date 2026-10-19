@@ -1,48 +1,28 @@
-GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-18
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-19
 
-GS-TREE sections: 2417   fully conforming: 2415   with issues: 2
-heading levels: h1 557, h2 766, h3 583, h4 322, h5 147, h6 38, h7 4
+GS-TREE sections: 2417   fully conforming: 2417   with issues: 0
+heading levels: h1 555, h2 765, h3 586, h4 322, h5 147, h6 38, h7 4
 
 Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
   {id}dsn with Mcsh-creation date, {id}nam with X'generic-specific-tree + X'specific-generic-tree,
-  {whole}gtr generic-tree:: starting "McshEngl.X-Gntr," and holding "... entity-Gntr,",
-  {whole}str specific-tree:: with "McshEngl.X.specific," + "McshEngl.X-Sptr,", X = the whole's main-name, no extra content.
+  {whole}gntr generic-tree:: starting "McshEngl.X_Gntr," and holding "... entity_Gntr,",
+  {whole}str specific-tree:: with "McshEngl.X.specific," + "McshEngl.X_Sptr,", X = the whole's main-name, no extra content.
 
 ISSUES (a GS-TREE can have several):
   OLD          0  old-style title (not "GENERIC-SPECIFIC-TREE of X")
   NOPARENT     0  top-level GS-TREE whose id does not end in gstr
-  ID           2  section id is not {whole}gstr
-  LEVEL        2  heading level is not whole + 1
+  ID           0  section id is not {whole}gstr
+  LEVEL        0  heading level is not whole + 1
   HID          0  heading id is not {id}H{level}
   DSN          0  no {id}dsn description:: (or no Mcsh-creation date)
   NAM          0  name:: lacks X'generic-specific-tree / X'specific-generic-tree
-  GTR          2  no {whole}gtr generic-tree:: paragraph
-  GTRN         0  generic-tree:: does not start with McshEngl.X-Gntr,
-  GTRE         0  generic-tree:: neither has "... entity-Gntr," nor ends at entity
-  STR          2  no {whole}str specific-tree:: paragraph
-  STRN         0  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X-Sptr,
+  GTR          0  no {whole}gntr generic-tree:: paragraph
+  GTRN         0  generic-tree:: does not start with McshEngl.X_Gntr,
+  GTRE         0  generic-tree:: neither has "... entity_Gntr," nor ends at entity
+  STR          0  no {whole}str specific-tree:: paragraph
+  STRN         0  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
   XNAME        0  X differs from the whole's !⇒ main-name
-  EXTRA        2  other paragraphs / blocks inside the GS-TREE
+  EXTRA        0  other paragraphs / blocks inside the GS-TREE
   KIDS         0  GS-TREE has child sections that are not spec-div, specifics (X.name) or SPECIFIC-COMPLEMENT
   TWO          0  whole has more than one GS-TREE
   SELF         0  self-link does not match its paragraph id
-
-=== ID (2) — section id is not {whole}gstr
-  McshTchInf000010:5434  idLJsgnalgoDatgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoDate"  whole idLJsgnalgDat
-  McshTchInf000010:5606  idLJsgnalgoObtgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoObject"  whole idLJsgnalgObt
-
-=== LEVEL (2) — heading level is not whole + 1
-  McshTchInf000010:5434  idLJsgnalgoDatgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoDate"  whole h2
-  McshTchInf000010:5606  idLJsgnalgoObtgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoObject"  whole h2
-
-=== GTR (2) — no {whole}gtr generic-tree:: paragraph
-  McshTchInf000010:5434  idLJsgnalgoDatgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoDate"
-  McshTchInf000010:5606  idLJsgnalgoObtgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoObject"
-
-=== STR (2) — no {whole}str specific-tree:: paragraph
-  McshTchInf000010:5434  idLJsgnalgoDatgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoDate"
-  McshTchInf000010:5606  idLJsgnalgoObtgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoObject"
-
-=== EXTRA (2) — other paragraphs / blocks inside the GS-TREE
-  McshTchInf000010:5434  idLJsgnalgoDatgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoDate"  idLJsgnalgoDatgtr(generic-tree::), idLJsgnalgoDatstr(specific-tree::)
-  McshTchInf000010:5606  idLJsgnalgoObtgstr  h1  "GENERIC-SPECIFIC-TREE of JsgnalgoObject"  idLJsgnalgoObtgtr(generic-tree::), idLJsgnalgoObtstr(specific-tree::)

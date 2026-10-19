@@ -127,6 +127,8 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
   const oCtxFile = { sNameIdAbso, sNameIdRela };
 
   const oMapIdLine   = fBuildMapLine(sFileRaw, /\bid="([^"]+)"/g);
+  // the-#id of every NOT-http link, "#idX" or "../dirLag/McshLag000002.last.html#idX"
+  const oMapLinkLine = fBuildMapLine(sFileRaw, /href="(?!https?:)[^"#]*#([^"]*)"/g);
   
   // ── <title> ──────────────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
@@ -199,6 +201,7 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
     aoTitlePara,   // the-title-para of idOverview, they belong to the-cnptFile
     aoRaw_sect,
     oMapIdLine,
+    oMapLinkLine,
     ooIdRelaCnpt
   };
 }

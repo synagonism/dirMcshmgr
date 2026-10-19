@@ -1,0 +1,312 @@
+=== id-eval-sync APPLIED {2026-10-19} — "evaluation of X" ids -> …eval
+  files changed: 31, bases: 36, renamed tokens: 264, dangling links before/after: 1675/1675
+=== BASE (36) — old(+heading variant) -> new
+  McshCor000002:4251  idMcseln -> idMcseval  "evaluation of Mcs"
+  McshCor000012:196  idMdlatt011 -> idMdleval  "12_evaluation of model"
+  McshCor000012:1101  idMdl021evaln -> idMdl021eval  "evaluation of modelCmpr"
+  McshHlth000005:415  idMsclHmnatt004evaluation -> idMsclHmnatt004eval  "evaluation of MuscleTone"
+  McshHlth000008:1335  idHlthHmnatt011 -> idHlthHmneval  "evaluation of health"
+  McshHlth000013:264  idFoodHmnatt007 -> idFoodHmneval  "03_evaluation of food"
+  McshHlth000013:4956  idFoodHmn048att001 -> idFoodHmn048eval  "evaluation of foodVegetarian"
+  McshHlth000013:6833  idFoodHmn106att003 -> idFoodHmn106eval  "03_evaluation of foodFruit"
+  McshHlth000016:206  idThrpHmnatt009 -> idThrpHmneval  "evaluation of therapy"
+  McshOgm000004:1149  idMolOgm016001evaluation -> idMolOgm016001eval  "evaluation of cholesterolHmn"
+  McshStn000011:865  idJobatt005 -> idJobeval  "evaluation of job"
+  McshStn000031:5697  idChnaEconatt080 -> idChnaEconeval  "evaluation of Chna_econ"
+  McshStn000031:12469  idSocChnaatt031 -> idSocChnaeval  "evaluation of SocChna"
+  McshStn000033:363  idSocTurkatt004 -> idSocTurkeval  "evaluation of SocTurk"
+  McshTch000002:56  idTchatt011 -> idTcheval  "evaluation of tech"
+  McshTchInf000002:47  idTchInfatt001 -> idTchInfeval  "01_evaluation of techInfo"
+  McshTchInf000010:6018  idLJsgneln -> idLJsgneval  "evaluation of Jsgn_lago"
+  McshTchInf000015:5853  idDcntrtatt008 -> idDcntrteval  "08_evaluation of DeContract"
+  McshTchInf000015:6419  idDappatt006 -> idDappeval  "06_evaluation of DeApp"
+  McshTchInf000015:6945  idAlgnticoeln -> idAlgnticoeval  "evaluation of ICO"
+  McshTchInf000016:2018  idDbcevueln -> idDbcevueval  "evaluation of blockchain-Dasset"
+  McshTchInf000016:4855  idDbceln -> idDbceval  "11_evaluation of AgntBkcn"
+  McshTchInf000017:5130  idBtcbcnevln -> idBtcbcneval  "blockchain'Evaluation"
+  McshTchInf000017:4033  idBtcstlevln -> idBtcstleval  "Script'evaluation"
+  McshTchInf000017:8576  idBtceln -> idBtceval  "evaluation of AgntBtcn"
+  McshTchInf000018:12059  idEthevln -> idEtheval  "evaluation of AgntEthr"
+  McshTchInf000020:2492  idChblrxwkrevln -> idChblrxwkreval  "worker'evaluation"
+  McshTchInf000020:2594  idChblrxemrevln -> idChblrxemreval  "employer'evaluation"
+  McshTchInf000021:3127  idEosevalFT -> idEoseval  "evaluation of Deos"
+  McshTchInf000022:1375  idFairneteln -> idFairneteval  "evaluation of Faircoin_net"
+  McshTchInf000023:153  idIotaevalF -> idIotaeval  "evaluation of Iota-net"
+  McshTchInf000025:967  idErpdevalF -> idErpdeval  "evaluation of Everipedia"
+  McshTchInf000027:140  idNeoevlnFT -> idNeoeval  "evaluation of Neo_net"
+  McshTchInf000028:2402  idDnlbrevalFT -> idDnlbreval  "evaluation of DnDiem"
+  McshTchInf000031:334  idLCppevalFT -> idLCppeval  "evaluation of Cppz_lago"
+  McshTchPrgm000002:148  idCpgmatt013 -> idCpgmeval  "06_evaluation of Cmprprgm"
+=== SKIPPED (0) — no rule
+
+=== VARIANT-ODD (0) — F/FT then not a-part-suffix, left unchanged
+
+=== GUARD-FAIL (0) — file skipped, two ids would get one name
+
+=== NEW-DANGLING (0)
+
+=== RENAMED (264) — every id changed
+  idAlgnticoeln -> idAlgnticoeval
+  idAlgnticoelnH3 -> idAlgnticoevalH3
+  idAlgnticoelnP1 -> idAlgnticoevalP1
+  idAlgnticoelndsn -> idAlgnticoevaldsn
+  idAlgnticoelnnam -> idAlgnticoevalnam
+  idBtcbcnevln -> idBtcbcneval
+  idBtcbcnevlnH2 -> idBtcbcnevalH2
+  idBtcbcnevlndsn -> idBtcbcnevaldsn
+  idBtcbcnevlnnam -> idBtcbcnevalnam
+  idBtceln -> idBtceval
+  idBtcelnH1 -> idBtcevalH1
+  idBtcelnP1 -> idBtcevalP1
+  idBtcelnP2 -> idBtcevalP2
+  idBtcelncon -> idBtcevalcon
+  idBtcelnconH2 -> idBtcevalconH2
+  idBtcelnconP2 -> idBtcevalconP2
+  idBtcelndsn -> idBtcevaldsn
+  idBtcelnnam -> idBtcevalnam
+  idBtcelnpfmc -> idBtcevalpfmc
+  idBtcelnpfmcH2 -> idBtcevalpfmcH2
+  idBtcelnpfmcdsn -> idBtcevalpfmcdsn
+  idBtcelnpfmcnam -> idBtcevalpfmcnam
+  idBtcelnpro -> idBtcevalpro
+  idBtcelnproH2 -> idBtcevalproH2
+  idBtcelnproP1 -> idBtcevalproP1
+  idBtcelnproP2 -> idBtcevalproP2
+  idBtcelnproP3 -> idBtcevalproP3
+  idBtcelnproP4 -> idBtcevalproP4
+  idBtcelnprodsn -> idBtcevalprodsn
+  idBtcelnpronam -> idBtcevalpronam
+  idBtcelnrtg -> idBtcevalrtg
+  idBtcelnrtgH2 -> idBtcevalrtgH2
+  idBtcelnrtgdsn -> idBtcevalrtgdsn
+  idBtcelnrtgnam -> idBtcevalrtgnam
+  idBtcstlevln -> idBtcstleval
+  idBtcstlevlnH4 -> idBtcstlevalH4
+  idBtcstlevlndsn -> idBtcstlevaldsn
+  idBtcstlevlnnam -> idBtcstlevalnam
+  idChblrxemrevln -> idChblrxemreval
+  idChblrxemrevlnH3 -> idChblrxemrevalH3
+  idChblrxemrevlndsn -> idChblrxemrevaldsn
+  idChblrxemrevlnnam -> idChblrxemrevalnam
+  idChblrxwkrevln -> idChblrxwkreval
+  idChblrxwkrevlnH3 -> idChblrxwkrevalH3
+  idChblrxwkrevlndsn -> idChblrxwkrevaldsn
+  idChblrxwkrevlnnam -> idChblrxwkrevalnam
+  idChnaEconatt080 -> idChnaEconeval
+  idChnaEconatt080H2 -> idChnaEconevalH2
+  idChnaEconatt080dsn -> idChnaEconevaldsn
+  idChnaEconatt080nam -> idChnaEconevalnam
+  idCpgmatt013 -> idCpgmeval
+  idCpgmatt013H1 -> idCpgmevalH1
+  idCpgmatt013dsn -> idCpgmevaldsn
+  idCpgmatt013nam -> idCpgmevalnam
+  idDappatt006 -> idDappeval
+  idDappatt006Con -> idDappevalCon
+  idDappatt006ConH3 -> idDappevalConH3
+  idDappatt006H2 -> idDappevalH2
+  idDappatt006Pro -> idDappevalPro
+  idDappatt006ProDcrn -> idDappevalProDcrn
+  idDappatt006ProDcrnH4 -> idDappevalProDcrnH4
+  idDappatt006ProDcrndsn -> idDappevalProDcrndsn
+  idDappatt006ProDcrnnam -> idDappevalProDcrnnam
+  idDappatt006ProH3 -> idDappevalProH3
+  idDappatt006dsn -> idDappevaldsn
+  idDappatt006nam -> idDappevalnam
+  idDbceln -> idDbceval
+  idDbcelnH1 -> idDbcevalH1
+  idDbcelnSpro -> idDbcevalSpro
+  idDbcelnSproH2 -> idDbcevalSproH2
+  idDbcelnSprodsn -> idDbcevalSprodsn
+  idDbcelnSprogtr -> idDbcevalSprogtr
+  idDbcelnSpronam -> idDbcevalSpronam
+  idDbcelndsn -> idDbcevaldsn
+  idDbcelngstr -> idDbcevalgstr
+  idDbcelngstrH2 -> idDbcevalgstrH2
+  idDbcelngstrdsn -> idDbcevalgstrdsn
+  idDbcelngstrnam -> idDbcevalgstrnam
+  idDbcelngtr -> idDbcevalgtr
+  idDbcelnnam -> idDbcevalnam
+  idDbcelnstr -> idDbcevalstr
+  idDbcevueln -> idDbcevueval
+  idDbcevuelnH2 -> idDbcevuevalH2
+  idDbcevuelnP2 -> idDbcevuevalP2
+  idDbcevuelndsn -> idDbcevuevaldsn
+  idDbcevuelnnam -> idDbcevuevalnam
+  idDcntrtatt008 -> idDcntrteval
+  idDcntrtatt008H3 -> idDcntrtevalH3
+  idDcntrtatt008dsn -> idDcntrtevaldsn
+  idDcntrtatt008nam -> idDcntrtevalnam
+  idDnlbrevalFT -> idDnlbreval
+  idDnlbrevalFTH1 -> idDnlbrevalH1
+  idDnlbrevalFTdsn -> idDnlbrevaldsn
+  idDnlbrevalFTnam -> idDnlbrevalnam
+  idDnlbrevalFTwpa -> idDnlbrevalwpa
+  idEosevalFT -> idEoseval
+  idEosevalFTH1 -> idEosevalH1
+  idEosevalFTdsn -> idEosevaldsn
+  idEosevalFTnam -> idEosevalnam
+  idEosevalFTwpa -> idEosevalwpa
+  idErpdevalF -> idErpdeval
+  idErpdevalFH1 -> idErpdevalH1
+  idErpdevalFdsn -> idErpdevaldsn
+  idErpdevalFnam -> idErpdevalnam
+  idEthevln -> idEtheval
+  idEthevlnH1 -> idEthevalH1
+  idEthevlnP1 -> idEthevalP1
+  idEthevlnP2 -> idEthevalP2
+  idEthevlnP3 -> idEthevalP3
+  idEthevlndsn -> idEthevaldsn
+  idEthevlnnam -> idEthevalnam
+  idEthevlnstct -> idEthevalstct
+  idEthevlnwpa -> idEthevalwpa
+  idFairneteln -> idFairneteval
+  idFairnetelnH1 -> idFairnetevalH1
+  idFairnetelnScon -> idFairnetevalScon
+  idFairnetelnSconDbn -> idFairnetevalSconDbn
+  idFairnetelnSconDbnH3 -> idFairnetevalSconDbnH3
+  idFairnetelnSconDbndsn -> idFairnetevalSconDbndsn
+  idFairnetelnSconDbnnam -> idFairnetevalSconDbnnam
+  idFairnetelnSconH2 -> idFairnetevalSconH2
+  idFairnetelnSconScrt -> idFairnetevalSconScrt
+  idFairnetelnSconScrtH3 -> idFairnetevalSconScrtH3
+  idFairnetelnSconScrtdsn -> idFairnetevalSconScrtdsn
+  idFairnetelnSconScrtnam -> idFairnetevalSconScrtnam
+  idFairnetelnScondsn -> idFairnetevalScondsn
+  idFairnetelnScongtr -> idFairnetevalScongtr
+  idFairnetelnSconnam -> idFairnetevalSconnam
+  idFairnetelndsn -> idFairnetevaldsn
+  idFairnetelngtr -> idFairnetevalgtr
+  idFairnetelnnam -> idFairnetevalnam
+  idFoodHmn048att001 -> idFoodHmn048eval
+  idFoodHmn048att001H2 -> idFoodHmn048evalH2
+  idFoodHmn048att001dsn -> idFoodHmn048evaldsn
+  idFoodHmn048att001nam -> idFoodHmn048evalnam
+  idFoodHmn106att003 -> idFoodHmn106eval
+  idFoodHmn106att003H2 -> idFoodHmn106evalH2
+  idFoodHmn106att003dsn -> idFoodHmn106evaldsn
+  idFoodHmn106att003nam -> idFoodHmn106evalnam
+  idFoodHmnatt007 -> idFoodHmneval
+  idFoodHmnatt007Con -> idFoodHmnevalCon
+  idFoodHmnatt007ConH2 -> idFoodHmnevalConH2
+  idFoodHmnatt007Condsn -> idFoodHmnevalCondsn
+  idFoodHmnatt007Connam -> idFoodHmnevalConnam
+  idFoodHmnatt007H1 -> idFoodHmnevalH1
+  idFoodHmnatt007Pro -> idFoodHmnevalPro
+  idFoodHmnatt007ProH2 -> idFoodHmnevalProH2
+  idFoodHmnatt007Prodsn -> idFoodHmnevalProdsn
+  idFoodHmnatt007Pronam -> idFoodHmnevalPronam
+  idFoodHmnatt007dsn -> idFoodHmnevaldsn
+  idFoodHmnatt007nam -> idFoodHmnevalnam
+  idHlthHmnatt011 -> idHlthHmneval
+  idHlthHmnatt011H1 -> idHlthHmnevalH1
+  idHlthHmnatt011dsn -> idHlthHmnevaldsn
+  idHlthHmnatt011nam -> idHlthHmnevalnam
+  idIotaevalF -> idIotaeval
+  idIotaevalFH1 -> idIotaevalH1
+  idJobatt005 -> idJobeval
+  idJobatt005H2 -> idJobevalH2
+  idJobatt005dsn -> idJobevaldsn
+  idJobatt005nam -> idJobevalnam
+  idLCppevalFT -> idLCppeval
+  idLCppevalFTH1 -> idLCppevalH1
+  idLCppevalFTdsn -> idLCppevaldsn
+  idLJsgneln -> idLJsgneval
+  idLJsgnelnCon -> idLJsgnevalCon
+  idLJsgnelnConH2 -> idLJsgnevalConH2
+  idLJsgnelnConInstanceof -> idLJsgnevalConInstanceof
+  idLJsgnelnConInstanceofH3 -> idLJsgnevalConInstanceofH3
+  idLJsgnelnConInstanceofP1 -> idLJsgnevalConInstanceofP1
+  idLJsgnelnConInstanceofnam -> idLJsgnevalConInstanceofnam
+  idLJsgnelnConNaming -> idLJsgnevalConNaming
+  idLJsgnelnConNamingH3 -> idLJsgnevalConNamingH3
+  idLJsgnelnConNamingP1 -> idLJsgnevalConNamingP1
+  idLJsgnelnConOsp -> idLJsgnevalConOsp
+  idLJsgnelnConOspH3 -> idLJsgnevalConOspH3
+  idLJsgnelnConOspdsn -> idLJsgnevalConOspdsn
+  idLJsgnelnConOspnam -> idLJsgnevalConOspnam
+  idLJsgnelnH1 -> idLJsgnevalH1
+  idLJsgnelnPro -> idLJsgnevalPro
+  idLJsgnelnProH2 -> idLJsgnevalProH2
+  idLJsgnelnProInheritance -> idLJsgnevalProInheritance
+  idLJsgnelnProInheritanceH3 -> idLJsgnevalProInheritanceH3
+  idLJsgnelnProInheritanceP1 -> idLJsgnevalProInheritanceP1
+  idLJsgnelnProInheritancedsn -> idLJsgnevalProInheritancedsn
+  idLJsgnelnProInheritancenam -> idLJsgnevalProInheritancenam
+  idLJsgnelnProInheritancewpa -> idLJsgnevalProInheritancewpa
+  idLJsgnelnProSimple -> idLJsgnevalProSimple
+  idLJsgnelnProSimpleH3 -> idLJsgnevalProSimpleH3
+  idLJsgnelnProSimpleP1 -> idLJsgnevalProSimpleP1
+  idLJsgnelnTodo -> idLJsgnevalTodo
+  idLJsgnelnTodoH2 -> idLJsgnevalTodoH2
+  idLJsgnelnTodoP1 -> idLJsgnevalTodoP1
+  idLJsgnelndsn -> idLJsgnevaldsn
+  idLJsgnelnnam -> idLJsgnevalnam
+  idMcseln -> idMcseval
+  idMcselnH1 -> idMcsevalH1
+  idMcselncmplt -> idMcsevalcmplt
+  idMcselncmpltH2 -> idMcsevalcmpltH2
+  idMcselncmpltdsn -> idMcsevalcmpltdsn
+  idMcselncmpltnam -> idMcsevalcmpltnam
+  idMcselncnsc -> idMcsevalcnsc
+  idMcselncnscH2 -> idMcsevalcnscH2
+  idMcselncnscdsn -> idMcsevalcnscdsn
+  idMcselncnscnam -> idMcsevalcnscnam
+  idMcselndsn -> idMcsevaldsn
+  idMcselnmsmt -> idMcsevalmsmt
+  idMcselnmsmtH2 -> idMcsevalmsmtH2
+  idMcselnmsmtdsn -> idMcsevalmsmtdsn
+  idMcselnmsmtnam -> idMcsevalmsmtnam
+  idMcselnnam -> idMcsevalnam
+  idMcselnsbvt -> idMcsevalsbvt
+  idMcselnsbvtH2 -> idMcsevalsbvtH2
+  idMcselnsbvtdsn -> idMcsevalsbvtdsn
+  idMcselnsbvtnam -> idMcsevalsbvtnam
+  idMcselnuos -> idMcsevaluos
+  idMcselnuosH2 -> idMcsevaluosH2
+  idMcselnuosdsn -> idMcsevaluosdsn
+  idMcselnuosnam -> idMcsevaluosnam
+  idMdl021evaln -> idMdl021eval
+  idMdl021evalnH2 -> idMdl021evalH2
+  idMdl021evalndsn -> idMdl021evaldsn
+  idMdl021evalnnam -> idMdl021evalnam
+  idMdlatt011 -> idMdleval
+  idMdlatt011H1 -> idMdlevalH1
+  idMdlatt011dsn -> idMdlevaldsn
+  idMdlatt011evg -> idMdlevalevg
+  idMdlatt011evgH2 -> idMdlevalevgH2
+  idMdlatt011gtr -> idMdlevalgtr
+  idMdlatt011nam -> idMdlevalnam
+  idMolOgm016001evaluation -> idMolOgm016001eval
+  idMolOgm016001evaluationH3 -> idMolOgm016001evalH3
+  idMolOgm016001evaluationP1 -> idMolOgm016001evalP1
+  idMolOgm016001evaluationdsn -> idMolOgm016001evaldsn
+  idMolOgm016001evaluationnam -> idMolOgm016001evalnam
+  idMsclHmnatt004evaluation -> idMsclHmnatt004eval
+  idMsclHmnatt004evaluationH4 -> idMsclHmnatt004evalH4
+  idMsclHmnatt004evaluationdsn -> idMsclHmnatt004evaldsn
+  idMsclHmnatt004evaluationnam -> idMsclHmnatt004evalnam
+  idNeoevlnFT -> idNeoeval
+  idNeoevlnFTH1 -> idNeoevalH1
+  idNeoevlnFTdsn -> idNeoevaldsn
+  idNeoevlnFTnam -> idNeoevalnam
+  idNeoevlnFTwpa -> idNeoevalwpa
+  idSocChnaatt031 -> idSocChnaeval
+  idSocChnaatt031H1 -> idSocChnaevalH1
+  idSocChnaatt031dsn -> idSocChnaevaldsn
+  idSocChnaatt031nam -> idSocChnaevalnam
+  idSocTurkatt004 -> idSocTurkeval
+  idSocTurkatt004H1 -> idSocTurkevalH1
+  idSocTurkatt004dsn -> idSocTurkevaldsn
+  idSocTurkatt004nam -> idSocTurkevalnam
+  idTchInfatt001 -> idTchInfeval
+  idTchInfatt001H1 -> idTchInfevalH1
+  idTchInfatt001dsn -> idTchInfevaldsn
+  idTchInfatt001nam -> idTchInfevalnam
+  idTchatt011 -> idTcheval
+  idTchatt011H1 -> idTchevalH1
+  idTchatt011dsn -> idTchevaldsn
+  idTchatt011nam -> idTchevalnam
+  idThrpHmnatt009 -> idThrpHmneval
+  idThrpHmnatt009H2 -> idThrpHmnevalH2
+  idThrpHmnatt009dsn -> idThrpHmnevaldsn
+  idThrpHmnatt009nam -> idThrpHmnevalnam

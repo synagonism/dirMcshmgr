@@ -1,0 +1,737 @@
+=== id-irsc-sync APPLIED {2026-10-19} — "info-resource of X" ids -> …irsc
+  files changed: 66, bases: 157, renamed tokens: 568, dangling links before/after: 1675/1675
+=== BASE (157) — old(+heading variant) -> new
+  McshCor000006:4287  idTimeUomHourrsc -> idTimeUomHourirsc  "info-resource of hour.clock"
+  McshCor000011:2470  idSys006rsc -> idSys006irsc  "info-resource of SystComplex"
+  McshCor000013:1231  idBrngEmtgrsc -> idBrngEmtgirsc  "info-resource of FctgEmotingBio"
+  McshEdu000002:1421  idSci002onacsrsc -> idSci002onacsirsc  "info-resource of open-access"
+  McshHlth000002:12029  idSysOgnHmn016resource -> idSysOgnHmn016irsc  "info-resource of SystReproductiveMale"
+  McshHlth000002:12457  idSysOgnHmn010rsc -> idSysOgnHmn010irsc  "info-resource of SystNeuroendocrine"
+  McshHlth000005:2949  idBdyHmn102resource -> idBdyHmn102irsc  "info-resource of SystSkeletal"
+  McshHlth000010:532  idDssPlnt001rsc -> idDssPlnt001irsc  "info-resource of DssPlntOQDS"
+  McshHlth000011:1147  idDssHmn001rsc -> idDssHmn001irsc  "info-resource of DssInfectious"
+  McshHlth000011:1440  idDssHmn045rsc -> idDssHmn045irsc  "info-resource of DssPandemic"
+  McshHlth000011:1965  idDssHmn194rsc -> idDssHmn194irsc  "info-resource of DssSprain"
+  McshHlth000011:2064  idDssHmn032resource -> idDssHmn032irsc  "info-resource of DssSysCirculatory"
+  McshHlth000011:7470  idDssHmn079resource -> idDssHmn079irsc  "info-resource of DssAnxiety"
+  McshHlth000011:7665  idDssHmn071resource -> idDssHmn071irsc  "info-resource of DssPanic"
+  McshHlth000013:1362  idFoodHmn050resource -> idFoodHmn050irsc  "info-resource of foodCooked"
+  McshHlth000014:1819  idMedHmn009rsc -> idMedHmn009irsc  "info-resource of MdtnFinasteride"
+  McshHlth000015:197  idDrgHmn003rsc -> idDrgHmn003irsc  "info-resource of drugNarcotic"
+  McshHmn000005:624  idHmnArstPrdtrsc -> idHmnArstPrdtirsc  "info-resource of Arstproduct"
+  McshLag000006:165  idCharencdgrsc -> idCharencdgirsc  "info-resource of char_encoding"
+  McshLag000006:3485  idCharUcdrsc -> idCharUcdirsc  "info-resource of charUncd"
+  McshLag000006:3013  idCharUcdstdrsc -> idCharUcdstdirsc  "info-resource of Unicode"
+  McshLag000007:27192  idLHmnmsbjcrsc -> idLHmnmsbjcirsc  "info-resource of subject-complement"
+  McshLag000007:30850  idLHmnmchngrsc -> idLHmnmchngirsc  "info-resource of Hmnm_lago'change"
+  McshLag000009:569  idL0017phnmrsc -> idL0017phnmirsc  "info-resource of phoneme"
+  McshLag000009:991  idL0017phnmVwlinfrsc -> idL0017phnmVwlirsc  "info-resource of VowlPhnm"
+  McshLag000011:712  idLEnglphnmrsc -> idLEnglphnmirsc  "info-resource of Engl_phnm"
+  McshLag000011:9816  idLEngladversc -> idLEngladveirsc  "info-resource of Engl_adve"
+  McshLag000018:12314  idLZhonverbrsc -> idLZhonverbirsc  "info-resource of Zhon_verb"
+  McshLag000018:15437  idLZhonsntcrsc -> idLZhonsntcirsc  "info-resource of Zhon_sent"
+  McshLag000018:1162  idLZhonphnmrsc -> idLZhonphnmirsc  "info-resource of Zhon_phnm"
+  McshLag000018:9212  idLZhonadversc -> idLZhonadveirsc  "info-resource of Zhon_adve"
+  McshLag000030:1523  idLTurknamersc -> idLTurknameirsc  "info-resource of nameTurk"
+  McshLag000037:4396  idLHindrsc -> idLHindirsc  "info-resource of Hind_lago"
+  McshLag000037:4865  idLUrdursc -> idLUrduirsc  "info-resource of Urdu_lago"
+  McshNtr000005:762  idSysMols009clrrsc -> idSysMols009clrirsc  "info-resource of color"
+  McshNtr000007:494  idChmElrScdnPctlrsc -> idChmElrScdnPctlirsc  "info-resource of periodic_table"
+  McshNtr000007:1017  idChmElrIndlNrsc -> idChmElrIndlNirsc  "info-resource of individualNo"
+  McshOgm000004:1231  idMolOgm016001resource -> idMolOgm016001irsc  "info-resource of cholesterolHmn"
+  McshOgm000006:1035  idPrtnHmnrsc -> idPrtnHmnirsc  "info-resource of proteinHmn"
+  McshOgm000007:1506  idCellOgmatt032rsc -> idCellOgmatt032irsc  "info-resource of ferroptosis"
+  McshOgm000008:380  idOgmVrsrsc -> idOgmVrsirsc  "info-resource of ogmVirus"
+  McshOgm000010:1213  idPlnt021rsc -> idPlnt021irsc  "info-resource of plantCactus"
+  McshStn000011:1480  idWkr017rsc -> idWkr017irsc  "info-resource of WrkrFreelancer"
+  McshStn000017:342  idOznW3cstdrsc -> idOznW3cstdirsc  "info-resource of StdW3c"
+  McshStn000035:3486  idLItlnrsc -> idLItlnirsc  "info-resource of lagoItln"
+  McshStn000037:2021  idLFracrsc -> idLFracirsc  "info-resource of Frac_lago"
+  McshStn000038:1665  idSbulrsc -> idSbulirsc  "info-resource of Sbul_lago"
+  McshStn000039:1990  idLSqiprsc -> idLSqipirsc  "info-resource of Sqip_lago"
+  McshStn000040:1437  idLSmkdrsc -> idLSmkdirsc  "info-resource of Smkd_lago"
+  McshStn000041:1312  idLSslvrsc -> idLSslvirsc  "info-resource of Sslv_lago"
+  McshStn000043:1437  idLSrusrsc -> idLSrusirsc  "info-resource of Srus_lago"
+  McshStn000044:1687  idLRomnrsc -> idLRomnirsc  "info-resource of Romn_lago"
+  McshStn000048:4975  idLJpnsrsc -> idLJpnsirsc  "info-resource of Jpns_lago"
+  McshStn000050:3519  idLKhmrrsc -> idLKhmrirsc  "info-resource of Khmr_lago"
+  McshTchInf000003:944  idCmrVmtbrsc -> idCmrVmtbirsc  "info-resource of cmprVtube"
+  McshTchInf000006:2872  idLSrcdrsc -> idLSrcdirsc  "info-resource of Srcd_lago"
+  McshTchInf000010:4597  idLJsgnprmsrsc -> idLJsgnprmsirsc  "info-resource of Jspromise"
+  McshTchInf000010:6710  idLJsgntolEgnrsc -> idLJsgntolEgnirsc  "info-resource of Jsgnengine"
+  McshTchInf000011:1302  idLJsbrmrsc -> idLJsbrmirsc  "info-resource of Jsesm"
+  McshTchInf000011:5019  idLJsbrrsc -> idLJsbrirsc  "info-resource of Jsbr_lago"
+  McshTchInf000012:416  idLJsndmrsc -> idLJsndmirsc  "info-resource of Jsndm"
+  McshTchInf000012:446  idLJsndmersc -> idLJsndmeirsc  "info-resource of Jsndme"
+  McshTchInf000012:8465  idLJsndrsc -> idLJsndirsc  "info-resource of Jsnd_lago"
+  McshTchInf000012:8972  idLJsndtolGlppgnrsc -> idLJsndtolGlppgnirsc  "info-resource of Gulpjsplugin"
+  McshTchInf000012:9992  idLJsndnpmrsc -> idLJsndnpmirsc  "info-resource of npm"
+  McshTchInf000013:1595  idLJselrsc -> idLJselirsc  "info-resource of Jsel_lago"
+  McshTchInf000014:1762  idLWasmstcrsc -> idLWasmstcirsc  "info-resource of Wasmcmnd"
+  McshTchInf000014:6213  idLWasmTxtrsc -> idLWasmTxtirsc  "info-resource of text-Wasm"
+  McshTchInf000015:553  idAlgntHumnSzbNckrsc -> idAlgntHumnSzbNckirsc  "info-resource of Szabo.Nick"
+  McshTchInf000015:1509  idAlgntchncrptrsc -> idAlgntchncrptirsc  "info-resource of Dchain_crypto"
+  McshTchInf000015:2259  idAlgntevursc -> idAlgntevuirsc  "info-resource of Agntasset"
+  McshTchInf000015:2008  idAlgntevuerrsc -> idAlgntevuerirsc  "info-resource of Agntasset_price"
+  McshTchInf000015:4048  idAlgntevuMoersc -> idAlgntevuMoeirsc  "info-resource of AgntassetExvu"
+  McshTchInf000015:4600  idAlgntevuMoeStblrsc -> idAlgntevuMoeStblirsc  "info-resource of stable-AgntassetExvu"
+  McshTchInf000015:5470  idAlgntgovrsc -> idAlgntgovirsc  "info-resource of netAlgo_govc"
+  McshTchInf000015:6212  idAlgntpgmSctrrsc -> idAlgntpgmSctrirsc  "info-resource of Scatter"
+  McshTchInf000015:6737  idAlgntwltrsc -> idAlgntwltirsc  "info-resource of Dwallet"
+  McshTchInf000015:6969  idAlgnticorsc -> idAlgnticoirsc  "info-resource of ICO"
+  McshTchInf000015:7584  idAlgntxrsc -> idAlgntxirsc  "info-resource of exchange-ogn"
+  McshTchInf000015:8609  idLkxrsc -> idLkxirsc  "info-resource of Lykke"
+  McshTchInf000015:8305  idLkxLyciircs -> idLkxLyciiirsc  "info-resource of LyCI"
+  McshTchInf000015:9115  idAlgntevalrsc -> idAlgntevalirsc  "info-resource of netAlgo'evaluation"
+  McshTchInf000015:9185  idAlgntevalSprorsc -> idAlgntevalSproirsc  "info-resource of chain-benefit"
+  McshTchInf000015:9308  idAlgntevalSconrsc -> idAlgntevalSconirsc  "info-resource of benefitNo"
+  McshTchInf000015:9806  idAlgntlawrsc -> idAlgntlawirsc  "info-resource of AnLaw"
+  McshTchInf000015:10048  idAlgntdcrzrsc -> idAlgntdcrzirsc  "info-resource of decentralization"
+  McshTchInf000015:10558  idAlgntsvcrsc -> idAlgntsvcirsc  "info-resource of Agntsrvc"
+  McshTchInf000015:11467  idAlgntsvc001rsc -> idAlgntsvc001irsc  "info-resource of AnserviceArbitration"
+  McshTchInf000015:13402  idAlgntevogrsc -> idAlgntevogirsc  "info-resource of netAlgo_evoluting"
+  McshTchInf000016:1232  idDbcpowrsc -> idDbcpowirsc  "info-resource of AgntBkcnpow"
+  McshTchInf000016:2222  idDbcevursc -> idDbcevuirsc  "info-resource of blockchain-Dasset"
+  McshTchInf000016:4399  idDbcwltrsc -> idDbcwltirsc  "info-resource of blockchain-wallet"
+  McshTchInf000016:5249  idDbcdongUpgrsc -> idDbcdongUpgirsc  "info-resource of upgrading"
+  McshTchInf000016:5978  idCmsnetrsc -> idCmsnetirsc  "info-resource of Cosmos_net"
+  McshTchInf000016:6977  idAenetrsc -> idAenetirsc  "info-resource of Dae_net"
+  McshTchInf000016:7870  idBosrsc -> idBosirsc  "info-resource of Bos_net"
+  McshTchInf000016:12943  idDashnetrsc -> idDashnetirsc  "info-resource of Ddash_net"
+  McshTchInf000016:12785  idDashpplrsc -> idDashpplirsc  "info-resource of Dashproposal"
+  McshTchInf000016:14784  idDbcKmdrsc -> idDbcKmdirsc  "info-resource of DKomodo"
+  McshTchInf000017:7667  idBtcnetrsc -> idBtcnetirsc  "info-resource of AgntBtcncon"
+  McshTchInf000017:8868  idBtcrsc -> idBtcirsc  "info-resource of AgntBtcn"
+  McshTchInf000018:6062  idEthtknbsrrsc -> idEthtknbsrirsc  "info-resource of Token-client"
+  McshTchInf000018:10175  idEthsolrsc -> idEthsolirsc  "info-resource of Solx_lago"
+  McshTchInf000018:11872  idEthHumnBtnVtkrsc -> idEthHumnBtnVtkirsc  "HumnBtrn1994'info-resource"
+  McshTchInf000018:12146  idEthrsc -> idEthirsc  "info-resource of AgntEthr"
+  McshTchInf000019:972  idDeOznlawrsc -> idDeOznlawirsc  "info-resource of law of OgznDao"
+  McshTchInf000019:1476  idEthdaorsc -> idEthdaoirsc  "info-resource of DoEth"
+  McshTchInf000019:2507  idEthdaoThdrsc -> idEthdaoThdirsc  "info-resource of The_DAO"
+  McshTchInf000019:2585  idEthdaoMkrrsc -> idEthdaoMkrirsc  "info-resource of MakerDAO"
+  McshTchInf000019:3054  idArgnrsc -> idArgnirsc  "info-resource of DoAragon"
+  McshTchInf000019:2958  idArgnkitrsc -> idArgnkitirsc  "info-resource of template"
+  McshTchInf000019:4143  idDaostkrsc -> idDaostkirsc  "info-resource of DAOstack"
+  McshTchInf000019:4250  idGnsdaorsc -> idGnsdaoirsc  "info-resource of Genesis_DAO"
+  McshTchInf000019:4367  idPlkdaorsc -> idPlkdaoirsc  "info-resource of PolkaDAO"
+  McshTchInf000019:3570  idDaostkgovcgenrsc -> idDaostkgovcgenirsc  "info-resource of GEN-token"
+  McshTchInf000019:3361  idDaostkrptnrsc -> idDaostkrptnirsc  "info-resource of reputation"
+  McshTchInf000019:6014  idEosdacrsc -> idEosdacirsc  "info-resource of eosDAC"
+  McshTchInf000019:5874  idEosdacgovcrsc -> idEosdacgovcirsc  "info-resource of govc"
+  McshTchInf000019:5827  idEosdacppslrsc -> idEosdacppslirsc  "info-resource of proposal"
+  McshTchInf000019:4653  idEosdacctdnSklkrsc -> idEosdacctdnSklkirsc  "info-resource of Stokes.Luke"
+  McshTchInf000020:3137  idChbrsc -> idChbirsc  "info-resource of Chrono.tech"
+  McshTchInf000021:1775  idEosevursc -> idEosevuirsc  "info-resource of Dasset"
+  McshTchInf000021:2216  idEosgovvtgrsc -> idEosgovvtgirsc  "info-resource of Deos'voting"
+  McshTchInf000021:2502  idEospgmClntrsc -> idEospgmClntirsc  "info-resource of Eos-client"
+  McshTchInf000021:2644  idEospgmApprsc -> idEospgmAppirsc  "info-resource of Deos_Dapp"
+  McshTchInf000021:2865  idEosVoicersc -> idEosVoiceirsc  "info-resource of Voice"
+  McshTchInf000022:753  idFairnetnodCvnrsc -> idFairnetnodCvnirsc  "info-resource of CVN"
+  McshTchInf000022:1351  idFairnetognFrcprsc -> idFairnetognFrcpirsc  "info-resource of FairCoop"
+  McshTchInf000023:89  idIotachnrsc -> idIotachnirsc  "info-resource of Dagchain"
+  McshTchInf000024:878  idSteemSbdrsc -> idSteemSbdirsc  "info-resource of STEEM-Dollar"
+  McshTchInf000024:2699  idSteemactrsc -> idSteemactirsc  "info-resource of Steem-account"
+  McshTchInf000024:2857  idSteemactWtsrsc -> idSteemactWtsirsc  "info-resource of witness-account"
+  McshTchInf000024:3667  idSteemitrsc -> idSteemitirsc  "info-resource of Steemit"
+  McshTchInf000026:284  idBkskStxnetrsc -> idBkskStxnetirsc  "info-resource of Stacks-net"
+  McshTchInf000026:787  idBkskBnssdnrsc -> idBkskBnssdnirsc  "info-resource of subdomain"
+  McshTchInf000026:951  idBkskGaiarsc -> idBkskGaiairsc  "info-resource of Gaia"
+  McshTchInf000026:1469  idBkskDaprsc -> idBkskDapirsc  "info-resource of Dapp"
+  McshTchInf000026:1451  idBkskDapamrsc -> idBkskDapamirsc  "info-resource of app-mining"
+  McshTchInf000028:109  idDnlbrskhrDvprrsc -> idDnlbrskhrDvprirsc  "info-resource of Ddeveloper"
+  McshTchInf000028:1539  idDnlbrbkcnrsc -> idDnlbrbkcnirsc  "info-resource of Dchain"
+  McshTchInf000028:1778  idDnlbrrsrvrsc -> idDnlbrrsrvirsc  "info-resource of Libra-Reserve"
+  McshTchInf000028:1889  idDnlbrAscnrsc -> idDnlbrAscnirsc  "info-resource of DnDiem_Association"
+  McshTchInf000028:2259  idDnlbrpgmrsc -> idDnlbrpgmirsc  "info-resource of program"
+  McshTchInf000029:538  idLJsonrsc -> idLJsonirsc  "info-resource of Json_lago"
+  McshTchInf000030:3000  idLRustalgCrtStdrsc -> idLRustalgCrtStdirsc  "info-resource of Rust_lago_std"
+  McshTchInf000030:3376  idLRustrstcrsc -> idLRustrstcirsc  "info-resource of rustc"
+  McshTchInf000030:3888  idLRustcargorsc -> idLRustcargoirsc  "info-resource of Cargo"
+  McshTchInf000032:735  idGitrsc -> idGitirsc  "info-resource of Git"
+  McshTchInf000032:1035  idGitreprsc -> idGitrepirsc  "info-resource of Gitrepo"
+  McshTchInf000036:5237  idTechAi003rsc -> idTechAi003irsc  "info-resource of techAIResponsible"
+  McshTchInf000036:5326  idTechAiGnrlrsc -> idTechAiGnrlirsc  "info-resource of techAIGeneral"
+  McshTchInf000036:5994  idTchNnrsc -> idTchNnirsc  "info-resource of techNn"
+  McshTchInf000039:6089  idLKnlg023Infrsc -> idLKnlg023Infirsc  "info-resource of lagoCmlc"
+  McshTchPrgm000002:715  idCpgm003rsc -> idCpgm003irsc  "info-resource of prgmOs"
+  McshTchPrgm000003:773  idAtmpkgrsc -> idAtmpkgirsc  "info-resource of Atompckg"
+  McshTchPrgm000003:2317  idAtmrsc -> idAtmirsc  "info-resource of Atomedtr"
+  Mcsh000000:233  idMwsrsc -> idMwsirsc  "info-resource of Mws"
+=== SKIPPED (1) — no rule
+  McshTchInf000039:11521  idLKnlg014irscin  "info-resource of Rdfinput"  — RDF-resource, title to check
+=== VARIANT-ODD (0) — F/FT then not a-part-suffix, left unchanged
+
+=== GUARD-FAIL (0) — file skipped, two ids would get one name
+
+=== NEW-DANGLING (0)
+
+=== RENAMED (568) — every id changed
+  idAenetrsc -> idAenetirsc
+  idAenetrscH2 -> idAenetirscH2
+  idAenetrscnam -> idAenetirscnam
+  idAlgntHumnSzbNckrsc -> idAlgntHumnSzbNckirsc
+  idAlgntHumnSzbNckrscH4 -> idAlgntHumnSzbNckirscH4
+  idAlgntHumnSzbNckrscnam -> idAlgntHumnSzbNckirscnam
+  idAlgntchncrptrsc -> idAlgntchncrptirsc
+  idAlgntchncrptrscH3 -> idAlgntchncrptirscH3
+  idAlgntchncrptrscnam -> idAlgntchncrptirscnam
+  idAlgntdcrzrsc -> idAlgntdcrzirsc
+  idAlgntdcrzrscH3 -> idAlgntdcrzirscH3
+  idAlgntdcrzrscnam -> idAlgntdcrzirscnam
+  idAlgntevalSconrsc -> idAlgntevalSconirsc
+  idAlgntevalSconrscH3 -> idAlgntevalSconirscH3
+  idAlgntevalSconrscnam -> idAlgntevalSconirscnam
+  idAlgntevalSprorsc -> idAlgntevalSproirsc
+  idAlgntevalSprorscH3 -> idAlgntevalSproirscH3
+  idAlgntevalSprorscnam -> idAlgntevalSproirscnam
+  idAlgntevalrsc -> idAlgntevalirsc
+  idAlgntevalrscH2 -> idAlgntevalirscH2
+  idAlgntevalrscnam -> idAlgntevalirscnam
+  idAlgntevogrsc -> idAlgntevogirsc
+  idAlgntevogrscH2 -> idAlgntevogirscH2
+  idAlgntevogrscdsn -> idAlgntevogirscdsn
+  idAlgntevogrscnam -> idAlgntevogirscnam
+  idAlgntevuMoeStblrsc -> idAlgntevuMoeStblirsc
+  idAlgntevuMoeStblrscH4 -> idAlgntevuMoeStblirscH4
+  idAlgntevuMoeStblrscnam -> idAlgntevuMoeStblirscnam
+  idAlgntevuMoersc -> idAlgntevuMoeirsc
+  idAlgntevuMoerscH3 -> idAlgntevuMoeirscH3
+  idAlgntevuMoerscnam -> idAlgntevuMoeirscnam
+  idAlgntevuerrsc -> idAlgntevuerirsc
+  idAlgntevuerrscH3 -> idAlgntevuerirscH3
+  idAlgntevuerrscnam -> idAlgntevuerirscnam
+  idAlgntevursc -> idAlgntevuirsc
+  idAlgntevurscH2 -> idAlgntevuirscH2
+  idAlgntevurscnam -> idAlgntevuirscnam
+  idAlgntgovrsc -> idAlgntgovirsc
+  idAlgntgovrscH2 -> idAlgntgovirscH2
+  idAlgntgovrscnam -> idAlgntgovirscnam
+  idAlgnticorsc -> idAlgnticoirsc
+  idAlgnticorscH3 -> idAlgnticoirscH3
+  idAlgnticorscnam -> idAlgnticoirscnam
+  idAlgntlawrsc -> idAlgntlawirsc
+  idAlgntlawrscH2 -> idAlgntlawirscH2
+  idAlgntlawrscnam -> idAlgntlawirscnam
+  idAlgntpgmSctrrsc -> idAlgntpgmSctrirsc
+  idAlgntpgmSctrrscH3 -> idAlgntpgmSctrirscH3
+  idAlgntpgmSctrrscnam -> idAlgntpgmSctrirscnam
+  idAlgntsvc001rsc -> idAlgntsvc001irsc
+  idAlgntsvc001rscH4 -> idAlgntsvc001irscH4
+  idAlgntsvc001rscdsn -> idAlgntsvc001irscdsn
+  idAlgntsvc001rscnam -> idAlgntsvc001irscnam
+  idAlgntsvcrsc -> idAlgntsvcirsc
+  idAlgntsvcrscH2 -> idAlgntsvcirscH2
+  idAlgntsvcrscnam -> idAlgntsvcirscnam
+  idAlgntwltrsc -> idAlgntwltirsc
+  idAlgntwltrscH2 -> idAlgntwltirscH2
+  idAlgntwltrscnam -> idAlgntwltirscnam
+  idAlgntxrsc -> idAlgntxirsc
+  idAlgntxrscH3 -> idAlgntxirscH3
+  idAlgntxrscnam -> idAlgntxirscnam
+  idArgnkitrsc -> idArgnkitirsc
+  idArgnkitrscH4 -> idArgnkitirscH4
+  idArgnkitrscnam -> idArgnkitirscnam
+  idArgnrsc -> idArgnirsc
+  idArgnrscH2 -> idArgnirscH2
+  idArgnrscnam -> idArgnirscnam
+  idAtmpkgrsc -> idAtmpkgirsc
+  idAtmpkgrscH3 -> idAtmpkgirscH3
+  idAtmpkgrscdsn -> idAtmpkgirscdsn
+  idAtmpkgrscnam -> idAtmpkgirscnam
+  idAtmrsc -> idAtmirsc
+  idAtmrscH1 -> idAtmirscH1
+  idAtmrscnam -> idAtmirscnam
+  idBdyHmn102resource -> idBdyHmn102irsc
+  idBdyHmn102resourceH2 -> idBdyHmn102irscH2
+  idBdyHmn102resourcedsn -> idBdyHmn102irscdsn
+  idBdyHmn102resourcenam -> idBdyHmn102irscnam
+  idBkskBnssdnrsc -> idBkskBnssdnirsc
+  idBkskBnssdnrscH4 -> idBkskBnssdnirscH4
+  idBkskBnssdnrscnam -> idBkskBnssdnirscnam
+  idBkskDapamrsc -> idBkskDapamirsc
+  idBkskDapamrscH3 -> idBkskDapamirscH3
+  idBkskDapamrscnam -> idBkskDapamirscnam
+  idBkskDaprsc -> idBkskDapirsc
+  idBkskDaprscH2 -> idBkskDapirscH2
+  idBkskDaprscnam -> idBkskDapirscnam
+  idBkskGaiarsc -> idBkskGaiairsc
+  idBkskGaiarscH3 -> idBkskGaiairscH3
+  idBkskGaiarscnam -> idBkskGaiairscnam
+  idBkskStxnetrsc -> idBkskStxnetirsc
+  idBkskStxnetrscH3 -> idBkskStxnetirscH3
+  idBkskStxnetrscnam -> idBkskStxnetirscnam
+  idBosrsc -> idBosirsc
+  idBosrscH2 -> idBosirscH2
+  idBosrscnam -> idBosirscnam
+  idBrngEmtgrsc -> idBrngEmtgirsc
+  idBrngEmtgrscH2 -> idBrngEmtgirscH2
+  idBrngEmtgrscdsn -> idBrngEmtgirscdsn
+  idBrngEmtgrscnam -> idBrngEmtgirscnam
+  idBtcnetrsc -> idBtcnetirsc
+  idBtcnetrscH2 -> idBtcnetirscH2
+  idBtcnetrscnam -> idBtcnetirscnam
+  idBtcrsc -> idBtcirsc
+  idBtcrscH1 -> idBtcirscH1
+  idBtcrscP1 -> idBtcirscP1
+  idBtcrscP2 -> idBtcirscP2
+  idBtcrscnam -> idBtcirscnam
+  idCellOgmatt032rsc -> idCellOgmatt032irsc
+  idCellOgmatt032rscH3 -> idCellOgmatt032irscH3
+  idCellOgmatt032rscdsn -> idCellOgmatt032irscdsn
+  idCellOgmatt032rscnam -> idCellOgmatt032irscnam
+  idCharUcdrsc -> idCharUcdirsc
+  idCharUcdrscH2 -> idCharUcdirscH2
+  idCharUcdrscdsn -> idCharUcdirscdsn
+  idCharUcdrscnam -> idCharUcdirscnam
+  idCharUcdstdrsc -> idCharUcdstdirsc
+  idCharUcdstdrscH3 -> idCharUcdstdirscH3
+  idCharUcdstdrscnam -> idCharUcdstdirscnam
+  idCharencdgrsc -> idCharencdgirsc
+  idCharencdgrscH3 -> idCharencdgirscH3
+  idCharencdgrscnam -> idCharencdgirscnam
+  idChbrsc -> idChbirsc
+  idChbrscH1 -> idChbirscH1
+  idChbrscnam -> idChbirscnam
+  idChmElrIndlNrsc -> idChmElrIndlNirsc
+  idChmElrIndlNrscH2 -> idChmElrIndlNirscH2
+  idChmElrIndlNrscdsn -> idChmElrIndlNirscdsn
+  idChmElrIndlNrscnam -> idChmElrIndlNirscnam
+  idChmElrScdnPctlrsc -> idChmElrScdnPctlirsc
+  idChmElrScdnPctlrscH3 -> idChmElrScdnPctlirscH3
+  idChmElrScdnPctlrscdsn -> idChmElrScdnPctlirscdsn
+  idChmElrScdnPctlrscnam -> idChmElrScdnPctlirscnam
+  idCmrVmtbrsc -> idCmrVmtbirsc
+  idCmrVmtbrscH3 -> idCmrVmtbirscH3
+  idCmrVmtbrscnam -> idCmrVmtbirscnam
+  idCmsnetrsc -> idCmsnetirsc
+  idCmsnetrscH2 -> idCmsnetirscH2
+  idCmsnetrscnam -> idCmsnetirscnam
+  idCpgm003rsc -> idCpgm003irsc
+  idCpgm003rscH2 -> idCpgm003irscH2
+  idCpgm003rscnam -> idCpgm003irscnam
+  idDaostkgovcgenrsc -> idDaostkgovcgenirsc
+  idDaostkgovcgenrscH4 -> idDaostkgovcgenirscH4
+  idDaostkgovcgenrscnam -> idDaostkgovcgenirscnam
+  idDaostkrptnrsc -> idDaostkrptnirsc
+  idDaostkrptnrscH5 -> idDaostkrptnirscH5
+  idDaostkrptnrscnam -> idDaostkrptnirscnam
+  idDaostkrsc -> idDaostkirsc
+  idDaostkrscH2 -> idDaostkirscH2
+  idDaostkrscnam -> idDaostkirscnam
+  idDashnetrsc -> idDashnetirsc
+  idDashnetrscH2 -> idDashnetirscH2
+  idDashnetrscnam -> idDashnetirscnam
+  idDashpplrsc -> idDashpplirsc
+  idDashpplrscH4 -> idDashpplirscH4
+  idDashpplrscnam -> idDashpplirscnam
+  idDbcKmdrsc -> idDbcKmdirsc
+  idDbcKmdrscH2 -> idDbcKmdirscH2
+  idDbcKmdrscnam -> idDbcKmdirscnam
+  idDbcdongUpgrsc -> idDbcdongUpgirsc
+  idDbcdongUpgrscH3 -> idDbcdongUpgirscH3
+  idDbcdongUpgrscnam -> idDbcdongUpgirscnam
+  idDbcevursc -> idDbcevuirsc
+  idDbcevurscH2 -> idDbcevuirscH2
+  idDbcevurscnam -> idDbcevuirscnam
+  idDbcpowrsc -> idDbcpowirsc
+  idDbcpowrscH4 -> idDbcpowirscH4
+  idDbcpowrscdsn -> idDbcpowirscdsn
+  idDbcpowrscnam -> idDbcpowirscnam
+  idDbcwltrsc -> idDbcwltirsc
+  idDbcwltrscH2 -> idDbcwltirscH2
+  idDbcwltrscnam -> idDbcwltirscnam
+  idDeOznlawrsc -> idDeOznlawirsc
+  idDeOznlawrscH2 -> idDeOznlawirscH2
+  idDeOznlawrscnam -> idDeOznlawirscnam
+  idDnlbrAscnrsc -> idDnlbrAscnirsc
+  idDnlbrAscnrscH3 -> idDnlbrAscnirscH3
+  idDnlbrAscnrscnam -> idDnlbrAscnirscnam
+  idDnlbrbkcnrsc -> idDnlbrbkcnirsc
+  idDnlbrbkcnrscH2 -> idDnlbrbkcnirscH2
+  idDnlbrbkcnrscnam -> idDnlbrbkcnirscnam
+  idDnlbrpgmrsc -> idDnlbrpgmirsc
+  idDnlbrpgmrscH2 -> idDnlbrpgmirscH2
+  idDnlbrpgmrscnam -> idDnlbrpgmirscnam
+  idDnlbrrsrvrsc -> idDnlbrrsrvirsc
+  idDnlbrrsrvrscH3 -> idDnlbrrsrvirscH3
+  idDnlbrrsrvrscnam -> idDnlbrrsrvirscnam
+  idDnlbrskhrDvprrsc -> idDnlbrskhrDvprirsc
+  idDnlbrskhrDvprrscH3 -> idDnlbrskhrDvprirscH3
+  idDnlbrskhrDvprrscnam -> idDnlbrskhrDvprirscnam
+  idDrgHmn003rsc -> idDrgHmn003irsc
+  idDrgHmn003rscH2 -> idDrgHmn003irscH2
+  idDrgHmn003rscP1 -> idDrgHmn003irscP1
+  idDrgHmn003rscdsn -> idDrgHmn003irscdsn
+  idDrgHmn003rscnam -> idDrgHmn003irscnam
+  idDssHmn001rsc -> idDssHmn001irsc
+  idDssHmn001rscH2 -> idDssHmn001irscH2
+  idDssHmn001rscdsn -> idDssHmn001irscdsn
+  idDssHmn001rscnam -> idDssHmn001irscnam
+  idDssHmn032resource -> idDssHmn032irsc
+  idDssHmn032resourceH2 -> idDssHmn032irscH2
+  idDssHmn032resourcedsn -> idDssHmn032irscdsn
+  idDssHmn032resourcenam -> idDssHmn032irscnam
+  idDssHmn045rsc -> idDssHmn045irsc
+  idDssHmn045rscH2 -> idDssHmn045irscH2
+  idDssHmn045rscdsn -> idDssHmn045irscdsn
+  idDssHmn045rscnam -> idDssHmn045irscnam
+  idDssHmn071resource -> idDssHmn071irsc
+  idDssHmn071resourceH4 -> idDssHmn071irscH4
+  idDssHmn071resourcedsn -> idDssHmn071irscdsn
+  idDssHmn071resourcenam -> idDssHmn071irscnam
+  idDssHmn079resource -> idDssHmn079irsc
+  idDssHmn079resourceH3 -> idDssHmn079irscH3
+  idDssHmn079resourcedsn -> idDssHmn079irscdsn
+  idDssHmn079resourcenam -> idDssHmn079irscnam
+  idDssHmn194rsc -> idDssHmn194irsc
+  idDssHmn194rscH3 -> idDssHmn194irscH3
+  idDssHmn194rscP1 -> idDssHmn194irscP1
+  idDssHmn194rscnam -> idDssHmn194irscnam
+  idDssPlnt001rsc -> idDssPlnt001irsc
+  idDssPlnt001rscH3 -> idDssPlnt001irscH3
+  idDssPlnt001rscdsn -> idDssPlnt001irscdsn
+  idDssPlnt001rscnam -> idDssPlnt001irscnam
+  idEosVoicersc -> idEosVoiceirsc
+  idEosVoicerscH3 -> idEosVoiceirscH3
+  idEosVoicerscnam -> idEosVoiceirscnam
+  idEosdacctdnSklkrsc -> idEosdacctdnSklkirsc
+  idEosdacctdnSklkrscH5 -> idEosdacctdnSklkirscH5
+  idEosdacctdnSklkrscnam -> idEosdacctdnSklkirscnam
+  idEosdacgovcrsc -> idEosdacgovcirsc
+  idEosdacgovcrscH3 -> idEosdacgovcirscH3
+  idEosdacgovcrscnam -> idEosdacgovcirscnam
+  idEosdacppslrsc -> idEosdacppslirsc
+  idEosdacppslrscH4 -> idEosdacppslirscH4
+  idEosdacppslrscnam -> idEosdacppslirscnam
+  idEosdacrsc -> idEosdacirsc
+  idEosdacrscH2 -> idEosdacirscH2
+  idEosdacrscnam -> idEosdacirscnam
+  idEosevursc -> idEosevuirsc
+  idEosevurscH2 -> idEosevuirscH2
+  idEosevurscnam -> idEosevuirscnam
+  idEosgovvtgrsc -> idEosgovvtgirsc
+  idEosgovvtgrscH3 -> idEosgovvtgirscH3
+  idEosgovvtgrscnam -> idEosgovvtgirscnam
+  idEospgmApprsc -> idEospgmAppirsc
+  idEospgmApprscH2 -> idEospgmAppirscH2
+  idEospgmApprscnam -> idEospgmAppirscnam
+  idEospgmClntrsc -> idEospgmClntirsc
+  idEospgmClntrscH2 -> idEospgmClntirscH2
+  idEospgmClntrscnam -> idEospgmClntirscnam
+  idEthHumnBtnVtkrsc -> idEthHumnBtnVtkirsc
+  idEthHumnBtnVtkrscH3 -> idEthHumnBtnVtkirscH3
+  idEthHumnBtnVtkrscdsn -> idEthHumnBtnVtkirscdsn
+  idEthHumnBtnVtkrscnam -> idEthHumnBtnVtkirscnam
+  idEthdaoMkrrsc -> idEthdaoMkrirsc
+  idEthdaoMkrrscH3 -> idEthdaoMkrirscH3
+  idEthdaoMkrrscnam -> idEthdaoMkrirscnam
+  idEthdaoThdrsc -> idEthdaoThdirsc
+  idEthdaoThdrscH3 -> idEthdaoThdirscH3
+  idEthdaoThdrscnam -> idEthdaoThdirscnam
+  idEthdaorsc -> idEthdaoirsc
+  idEthdaorscH2 -> idEthdaoirscH2
+  idEthdaorscnam -> idEthdaoirscnam
+  idEthrsc -> idEthirsc
+  idEthrscH1 -> idEthirscH1
+  idEthrscnam -> idEthirscnam
+  idEthsolrsc -> idEthsolirsc
+  idEthsolrscH3 -> idEthsolirscH3
+  idEthsolrscnam -> idEthsolirscnam
+  idEthtknbsrrsc -> idEthtknbsrirsc
+  idEthtknbsrrscH3 -> idEthtknbsrirscH3
+  idEthtknbsrrscnam -> idEthtknbsrirscnam
+  idFairnetnodCvnrsc -> idFairnetnodCvnirsc
+  idFairnetnodCvnrscH3 -> idFairnetnodCvnirscH3
+  idFairnetnodCvnrscnam -> idFairnetnodCvnirscnam
+  idFairnetognFrcprsc -> idFairnetognFrcpirsc
+  idFairnetognFrcprscH3 -> idFairnetognFrcpirscH3
+  idFairnetognFrcprscdsn -> idFairnetognFrcpirscdsn
+  idFairnetognFrcprscnam -> idFairnetognFrcpirscnam
+  idFoodHmn050resource -> idFoodHmn050irsc
+  idFoodHmn050resourceH2 -> idFoodHmn050irscH2
+  idFoodHmn050resourcedsn -> idFoodHmn050irscdsn
+  idFoodHmn050resourcenam -> idFoodHmn050irscnam
+  idGitreprsc -> idGitrepirsc
+  idGitreprscH1 -> idGitrepirscH1
+  idGitreprscnam -> idGitrepirscnam
+  idGitrsc -> idGitirsc
+  idGitrscH2 -> idGitirscH2
+  idGitrscnam -> idGitirscnam
+  idGnsdaorsc -> idGnsdaoirsc
+  idGnsdaorscH3 -> idGnsdaoirscH3
+  idGnsdaorscnam -> idGnsdaoirscnam
+  idHmnArstPrdtrsc -> idHmnArstPrdtirsc
+  idHmnArstPrdtrscH2 -> idHmnArstPrdtirscH2
+  idHmnArstPrdtrscdsn -> idHmnArstPrdtirscdsn
+  idHmnArstPrdtrscnam -> idHmnArstPrdtirscnam
+  idIotachnrsc -> idIotachnirsc
+  idIotachnrscH2 -> idIotachnirscH2
+  idIotachnrscnam -> idIotachnirscnam
+  idL0017phnmVwlinfrsc -> idL0017phnmVwlirsc
+  idL0017phnmVwlinfrscH5 -> idL0017phnmVwlirscH5
+  idL0017phnmVwlinfrscdsn -> idL0017phnmVwlirscdsn
+  idL0017phnmVwlinfrscnam -> idL0017phnmVwlirscnam
+  idL0017phnmrsc -> idL0017phnmirsc
+  idL0017phnmrscH4 -> idL0017phnmirscH4
+  idL0017phnmrscdsn -> idL0017phnmirscdsn
+  idL0017phnmrscnam -> idL0017phnmirscnam
+  idLEngladversc -> idLEngladveirsc
+  idLEngladverscH4 -> idLEngladveirscH4
+  idLEngladverscdsn -> idLEngladveirscdsn
+  idLEngladverscnam -> idLEngladveirscnam
+  idLEnglphnmrsc -> idLEnglphnmirsc
+  idLEnglphnmrscH4 -> idLEnglphnmirscH4
+  idLEnglphnmrscdsn -> idLEnglphnmirscdsn
+  idLEnglphnmrscnam -> idLEnglphnmirscnam
+  idLFracrsc -> idLFracirsc
+  idLFracrscH2 -> idLFracirscH2
+  idLFracrscdsn -> idLFracirscdsn
+  idLFracrscnam -> idLFracirscnam
+  idLHindrsc -> idLHindirsc
+  idLHindrscH2 -> idLHindirscH2
+  idLHindrscdsn -> idLHindirscdsn
+  idLHindrscnam -> idLHindirscnam
+  idLHmnmchngrsc -> idLHmnmchngirsc
+  idLHmnmchngrscH3 -> idLHmnmchngirscH3
+  idLHmnmchngrscdsn -> idLHmnmchngirscdsn
+  idLHmnmchngrscnam -> idLHmnmchngirscnam
+  idLHmnmsbjcrsc -> idLHmnmsbjcirsc
+  idLHmnmsbjcrscH5 -> idLHmnmsbjcirscH5
+  idLHmnmsbjcrscdsn -> idLHmnmsbjcirscdsn
+  idLHmnmsbjcrscnam -> idLHmnmsbjcirscnam
+  idLItlnrsc -> idLItlnirsc
+  idLItlnrscH2 -> idLItlnirscH2
+  idLItlnrscdsn -> idLItlnirscdsn
+  idLItlnrscnam -> idLItlnirscnam
+  idLJpnsrsc -> idLJpnsirsc
+  idLJpnsrscH2 -> idLJpnsirscH2
+  idLJpnsrscdsn -> idLJpnsirscdsn
+  idLJpnsrscnam -> idLJpnsirscnam
+  idLJsbrmrsc -> idLJsbrmirsc
+  idLJsbrmrscH4 -> idLJsbrmirscH4
+  idLJsbrmrscnam -> idLJsbrmirscnam
+  idLJsbrrsc -> idLJsbrirsc
+  idLJsbrrscH1 -> idLJsbrirscH1
+  idLJsbrrscdsn -> idLJsbrirscdsn
+  idLJsbrrscnam -> idLJsbrirscnam
+  idLJsbrrscwpa -> idLJsbrirscwpa
+  idLJselrsc -> idLJselirsc
+  idLJselrscH1 -> idLJselirscH1
+  idLJselrscnam -> idLJselirscnam
+  idLJsgnprmsrsc -> idLJsgnprmsirsc
+  idLJsgnprmsrscH3 -> idLJsgnprmsirscH3
+  idLJsgnprmsrscdsn -> idLJsgnprmsirscdsn
+  idLJsgnprmsrscnam -> idLJsgnprmsirscnam
+  idLJsgntolEgnrsc -> idLJsgntolEgnirsc
+  idLJsgntolEgnrscH3 -> idLJsgntolEgnirscH3
+  idLJsgntolEgnrscnam -> idLJsgntolEgnirscnam
+  idLJsndmersc -> idLJsndmeirsc
+  idLJsndmerscH3 -> idLJsndmeirscH3
+  idLJsndmerscdsn -> idLJsndmeirscdsn
+  idLJsndmerscnam -> idLJsndmeirscnam
+  idLJsndmrsc -> idLJsndmirsc
+  idLJsndmrscH2 -> idLJsndmirscH2
+  idLJsndmrscdsn -> idLJsndmirscdsn
+  idLJsndmrscnam -> idLJsndmirscnam
+  idLJsndnpmrsc -> idLJsndnpmirsc
+  idLJsndnpmrscH2 -> idLJsndnpmirscH2
+  idLJsndnpmrscP1 -> idLJsndnpmirscP1
+  idLJsndnpmrscdsn -> idLJsndnpmirscdsn
+  idLJsndnpmrscnam -> idLJsndnpmirscnam
+  idLJsndrsc -> idLJsndirsc
+  idLJsndrscBok -> idLJsndirscBok
+  idLJsndrscBokH2 -> idLJsndirscBokH2
+  idLJsndrscBokP2 -> idLJsndirscBokP2
+  idLJsndrscBokP3 -> idLJsndirscBokP3
+  idLJsndrscBokP4 -> idLJsndirscBokP4
+  idLJsndrscBokP5 -> idLJsndirscBokP5
+  idLJsndrscBokdsn -> idLJsndirscBokdsn
+  idLJsndrscBoknam -> idLJsndirscBoknam
+  idLJsndrscH1 -> idLJsndirscH1
+  idLJsndrscP1 -> idLJsndirscP1
+  idLJsndrscPgm -> idLJsndirscPgm
+  idLJsndrscPgmH2 -> idLJsndirscPgmH2
+  idLJsndrscPgmP1 -> idLJsndirscPgmP1
+  idLJsndrscPgmdsn -> idLJsndirscPgmdsn
+  idLJsndrscPgmnam -> idLJsndirscPgmnam
+  idLJsndrscdsn -> idLJsndirscdsn
+  idLJsndrscnam -> idLJsndirscnam
+  idLJsndtolGlppgnrsc -> idLJsndtolGlppgnirsc
+  idLJsndtolGlppgnrscH4 -> idLJsndtolGlppgnirscH4
+  idLJsndtolGlppgnrscnam -> idLJsndtolGlppgnirscnam
+  idLJsonrsc -> idLJsonirsc
+  idLJsonrscH1 -> idLJsonirscH1
+  idLJsonrscdsn -> idLJsonirscdsn
+  idLJsonrscnam -> idLJsonirscnam
+  idLJsonrscwpa -> idLJsonirscwpa
+  idLKhmrrsc -> idLKhmrirsc
+  idLKhmrrscH2 -> idLKhmrirscH2
+  idLKhmrrscdsn -> idLKhmrirscdsn
+  idLKhmrrscnam -> idLKhmrirscnam
+  idLKnlg023Infrsc -> idLKnlg023Infirsc
+  idLKnlg023InfrscH3 -> idLKnlg023InfirscH3
+  idLKnlg023Infrscdsn -> idLKnlg023Infirscdsn
+  idLKnlg023Infrscnam -> idLKnlg023Infirscnam
+  idLRomnrsc -> idLRomnirsc
+  idLRomnrscH2 -> idLRomnirscH2
+  idLRomnrscdsn -> idLRomnirscdsn
+  idLRomnrscnam -> idLRomnirscnam
+  idLRustalgCrtStdrsc -> idLRustalgCrtStdirsc
+  idLRustalgCrtStdrscH3 -> idLRustalgCrtStdirscH3
+  idLRustalgCrtStdrscnam -> idLRustalgCrtStdirscnam
+  idLRustcargorsc -> idLRustcargoirsc
+  idLRustcargorscH3 -> idLRustcargoirscH3
+  idLRustcargorscnam -> idLRustcargoirscnam
+  idLRustrstcrsc -> idLRustrstcirsc
+  idLRustrstcrscH3 -> idLRustrstcirscH3
+  idLRustrstcrscnam -> idLRustrstcirscnam
+  idLSmkdrsc -> idLSmkdirsc
+  idLSmkdrscH2 -> idLSmkdirscH2
+  idLSmkdrscdsn -> idLSmkdirscdsn
+  idLSmkdrscnam -> idLSmkdirscnam
+  idLSqiprsc -> idLSqipirsc
+  idLSqiprscH2 -> idLSqipirscH2
+  idLSqiprscdsn -> idLSqipirscdsn
+  idLSqiprscnam -> idLSqipirscnam
+  idLSrcdrsc -> idLSrcdirsc
+  idLSrcdrscH2 -> idLSrcdirscH2
+  idLSrcdrscdsn -> idLSrcdirscdsn
+  idLSrcdrscgtr -> idLSrcdirscgtr
+  idLSrcdrscnam -> idLSrcdirscnam
+  idLSrusrsc -> idLSrusirsc
+  idLSrusrscH2 -> idLSrusirscH2
+  idLSrusrscdsn -> idLSrusirscdsn
+  idLSrusrscnam -> idLSrusirscnam
+  idLSslvrsc -> idLSslvirsc
+  idLSslvrscH2 -> idLSslvirscH2
+  idLSslvrscdsn -> idLSslvirscdsn
+  idLSslvrscnam -> idLSslvirscnam
+  idLTurknamersc -> idLTurknameirsc
+  idLTurknamerscH3 -> idLTurknameirscH3
+  idLTurknamerscdsn -> idLTurknameirscdsn
+  idLTurknamerscnam -> idLTurknameirscnam
+  idLUrdursc -> idLUrduirsc
+  idLUrdurscH2 -> idLUrduirscH2
+  idLUrdurscdsn -> idLUrduirscdsn
+  idLUrdurscnam -> idLUrduirscnam
+  idLWasmTxtrsc -> idLWasmTxtirsc
+  idLWasmTxtrscH2 -> idLWasmTxtirscH2
+  idLWasmTxtrscnam -> idLWasmTxtirscnam
+  idLWasmstcrsc -> idLWasmstcirsc
+  idLWasmstcrscH2 -> idLWasmstcirscH2
+  idLWasmstcrscnam -> idLWasmstcirscnam
+  idLZhonadversc -> idLZhonadveirsc
+  idLZhonadverscH4 -> idLZhonadveirscH4
+  idLZhonadverscdsn -> idLZhonadveirscdsn
+  idLZhonadverscnam -> idLZhonadveirscnam
+  idLZhonphnmrsc -> idLZhonphnmirsc
+  idLZhonphnmrscH4 -> idLZhonphnmirscH4
+  idLZhonphnmrscdsn -> idLZhonphnmirscdsn
+  idLZhonphnmrscnam -> idLZhonphnmirscnam
+  idLZhonsntcrsc -> idLZhonsntcirsc
+  idLZhonsntcrscH3 -> idLZhonsntcirscH3
+  idLZhonsntcrscdsn -> idLZhonsntcirscdsn
+  idLZhonsntcrscnam -> idLZhonsntcirscnam
+  idLZhonverbrsc -> idLZhonverbirsc
+  idLZhonverbrscH3 -> idLZhonverbirscH3
+  idLZhonverbrscdsn -> idLZhonverbirscdsn
+  idLZhonverbrscnam -> idLZhonverbirscnam
+  idLkxLyciircs -> idLkxLyciiirsc
+  idLkxLyciircsH6 -> idLkxLyciiirscH6
+  idLkxLyciircsdsn -> idLkxLyciiirscdsn
+  idLkxLyciircsnam -> idLkxLyciiirscnam
+  idLkxLyciircswpa -> idLkxLyciiirscwpa
+  idLkxrsc -> idLkxirsc
+  idLkxrscH4 -> idLkxirscH4
+  idLkxrscnam -> idLkxirscnam
+  idMedHmn009rsc -> idMedHmn009irsc
+  idMedHmn009rscH2 -> idMedHmn009irscH2
+  idMedHmn009rscdsn -> idMedHmn009irscdsn
+  idMedHmn009rscnam -> idMedHmn009irscnam
+  idMolOgm016001resource -> idMolOgm016001irsc
+  idMolOgm016001resourceH3 -> idMolOgm016001irscH3
+  idMolOgm016001resourcedsn -> idMolOgm016001irscdsn
+  idMolOgm016001resourcefamily -> idMolOgm016001irscfamily
+  idMolOgm016001resourcenam -> idMolOgm016001irscnam
+  idMwsrsc -> idMwsirsc
+  idMwsrscH1 -> idMwsirscH1
+  idMwsrscdsn -> idMwsirscdsn
+  idMwsrscnam -> idMwsirscnam
+  idOgmVrsrsc -> idOgmVrsirsc
+  idOgmVrsrscH2 -> idOgmVrsirscH2
+  idOgmVrsrscdsn -> idOgmVrsirscdsn
+  idOgmVrsrscnam -> idOgmVrsirscnam
+  idOznW3cstdrsc -> idOznW3cstdirsc
+  idOznW3cstdrscH3 -> idOznW3cstdirscH3
+  idOznW3cstdrscdsn -> idOznW3cstdirscdsn
+  idOznW3cstdrscnam -> idOznW3cstdirscnam
+  idPlkdaorsc -> idPlkdaoirsc
+  idPlkdaorscH3 -> idPlkdaoirscH3
+  idPlkdaorscnam -> idPlkdaoirscnam
+  idPlnt021rsc -> idPlnt021irsc
+  idPlnt021rscH2 -> idPlnt021irscH2
+  idPlnt021rscdsn -> idPlnt021irscdsn
+  idPlnt021rscnam -> idPlnt021irscnam
+  idPrtnHmnrsc -> idPrtnHmnirsc
+  idPrtnHmnrscH2 -> idPrtnHmnirscH2
+  idPrtnHmnrscdsn -> idPrtnHmnirscdsn
+  idPrtnHmnrscnam -> idPrtnHmnirscnam
+  idSbulrsc -> idSbulirsc
+  idSbulrscH2 -> idSbulirscH2
+  idSbulrscdsn -> idSbulirscdsn
+  idSbulrscnam -> idSbulirscnam
+  idSci002onacsrsc -> idSci002onacsirsc
+  idSci002onacsrscH3 -> idSci002onacsirscH3
+  idSci002onacsrscdsn -> idSci002onacsirscdsn
+  idSci002onacsrscnam -> idSci002onacsirscnam
+  idSteemSbdrsc -> idSteemSbdirsc
+  idSteemSbdrscH3 -> idSteemSbdirscH3
+  idSteemSbdrscnam -> idSteemSbdirscnam
+  idSteemactWtsrsc -> idSteemactWtsirsc
+  idSteemactWtsrscH3 -> idSteemactWtsirscH3
+  idSteemactWtsrscnam -> idSteemactWtsirscnam
+  idSteemactrsc -> idSteemactirsc
+  idSteemactrscH2 -> idSteemactirscH2
+  idSteemactrscnam -> idSteemactirscnam
+  idSteemitrsc -> idSteemitirsc
+  idSteemitrscH2 -> idSteemitirscH2
+  idSteemitrscdsn -> idSteemitirscdsn
+  idSteemitrscnam -> idSteemitirscnam
+  idSteemitrscwpa -> idSteemitirscwpa
+  idSys006rsc -> idSys006irsc
+  idSys006rscH2 -> idSys006irscH2
+  idSys006rscdsn -> idSys006irscdsn
+  idSys006rscnam -> idSys006irscnam
+  idSysMols009clrrsc -> idSysMols009clrirsc
+  idSysMols009clrrscH3 -> idSysMols009clrirscH3
+  idSysMols009clrrscdsn -> idSysMols009clrirscdsn
+  idSysMols009clrrscnam -> idSysMols009clrirscnam
+  idSysOgnHmn010rsc -> idSysOgnHmn010irsc
+  idSysOgnHmn010rscH2 -> idSysOgnHmn010irscH2
+  idSysOgnHmn010rscdsn -> idSysOgnHmn010irscdsn
+  idSysOgnHmn010rscnam -> idSysOgnHmn010irscnam
+  idSysOgnHmn016resource -> idSysOgnHmn016irsc
+  idSysOgnHmn016resourceH2 -> idSysOgnHmn016irscH2
+  idSysOgnHmn016resourcedsn -> idSysOgnHmn016irscdsn
+  idSysOgnHmn016resourcenam -> idSysOgnHmn016irscnam
+  idTchNnrsc -> idTchNnirsc
+  idTchNnrscH2 -> idTchNnirscH2
+  idTchNnrscdsn -> idTchNnirscdsn
+  idTchNnrscnam -> idTchNnirscnam
+  idTechAi003rsc -> idTechAi003irsc
+  idTechAi003rscH2 -> idTechAi003irscH2
+  idTechAi003rscdsn -> idTechAi003irscdsn
+  idTechAi003rscnam -> idTechAi003irscnam
+  idTechAiGnrlrsc -> idTechAiGnrlirsc
+  idTechAiGnrlrscH2 -> idTechAiGnrlirscH2
+  idTechAiGnrlrscdsn -> idTechAiGnrlirscdsn
+  idTechAiGnrlrscnam -> idTechAiGnrlirscnam
+  idTimeUomHourrsc -> idTimeUomHourirsc
+  idTimeUomHourrscH3 -> idTimeUomHourirscH3
+  idTimeUomHourrscdsn -> idTimeUomHourirscdsn
+  idTimeUomHourrscnam -> idTimeUomHourirscnam
+  idWkr017rsc -> idWkr017irsc
+  idWkr017rscH4 -> idWkr017irscH4
+  idWkr017rscdsn -> idWkr017irscdsn
+  idWkr017rscnam -> idWkr017irscnam
