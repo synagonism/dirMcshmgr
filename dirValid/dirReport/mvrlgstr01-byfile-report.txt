@@ -1,0 +1,877 @@
+MvrlGstr01 specific_has_generic BY FILE — IF X has specific Y THEN Y has generic X — 2026-10-20
+
+warnings: 628 in 81 files | "does not list it": 257 | "has NO generic-tree::": 371
+file:line = the line of X's specific-tree:: (where Y is listed); rows of one file are in line order
+
+  count  not-listed  no-gntr  file
+     59          46       13  McshHlth000002
+     34          16       18  McshTchInf000016
+     33          12       21  McshLag000007
+     29           4       25  McshLag000018
+     28          25        3  McshHlth000011
+     28           8       20  McshTchInf000015
+     26           5       21  McshHlth000003
+     26           7       19  McshTchInf000010
+     20           3       17  McshTchInf000018
+     15          13        2  McshHlth000013
+     15           3       12  McshStn000004
+     14           9        5  McshOgm000005
+     14           0       14  McshTchInf000031
+     13           4        9  McshCor000002
+     12           2       10  McshEdu000005
+     11           2        9  McshTchInf000008
+     10           5        5  McshCor000003
+     10           2        8  McshCor000005
+     10           2        8  McshLag000009
+      9           9        0  McshLag000012
+      9           9        0  McshOgm000006
+      8           0        8  McshCor000013
+      8           6        2  McshHlth000019
+      8           8        0  McshLag000010
+      8           1        7  McshTchInf000006
+      8           0        8  McshTchInf000032
+      8           1        7  McshTchInf000036
+      7           0        7  McshStn000015
+      6           3        3  McshLag000003
+      6           0        6  McshStn000010
+      6           3        3  McshTchInf000005
+      6           3        3  McshTchInf000012
+      6           0        6  McshTchInf000014
+      6           0        6  McshTchInf000017
+      5           2        3  McshLag000002
+      5           4        1  McshStn000008
+      5           0        5  McshStn000020
+      5           0        5  McshTchInf000039
+      4           3        1  McshCor000018
+      4           4        0  McshHlth000005
+      4           4        0  McshHlth000006
+      4           4        0  McshLag000011
+      4           4        0  McshStn000002
+      4           3        1  McshTchInf000007
+      4           0        4  McshTchInf000011
+      3           1        2  McshLag000037
+      3           1        2  McshLag000038
+      3           1        2  McshLag000039
+      3           1        2  McshLag000040
+      3           1        2  McshLag000041
+      3           1        2  McshLag000042
+      3           1        2  McshTchInf000020
+      3           2        1  McshTchInf000024
+      2           2        0  McshHlth000004
+      2           1        1  McshHlth000008
+      2           0        2  McshLag000033
+      2           0        2  McshLag000034
+      2           0        2  McshLag000035
+      2           0        2  McshLag000036
+      2           0        2  McshLag000043
+      2           1        1  McshStn000009
+      2           0        2  McshStn000029
+      2           0        2  McshTchInf000019
+      2           0        2  McshTchInf000021
+      2           0        2  McshTchInf000028
+      1           0        1  McshCor000004
+      1           0        1  McshCor000007
+      1           0        1  McshCor000012
+      1           1        0  McshCor000014
+      1           0        1  McshEdu000002
+      1           0        1  McshLag000006
+      1           0        1  McshLag000013
+      1           1        0  McshLag000021
+      1           0        1  McshStn000011
+      1           0        1  McshStnlaw000004
+      1           1        0  McshTch000002
+      1           0        1  McshTchInf000003
+      1           1        0  McshTchInf000004
+      1           1        0  McshTchInf000030
+      1           0        1  McshTchInf000038
+      1           0        1  McshTchInf000041
+
+=== McshHlth000002 (59: 46 not listed, 13 no generic-tree)
+  McshHlth000002:1283  endocrine-system (McshHlth000002#idSysOgnHmn005)  <- specific of SystOrgans_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1283  integumentary-system (McshHlth000002#idSysOgnHmn004)  <- specific of SystOrgans_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1283  004.integumentary-system (McshHlth000002#idSysOgnHmn004)  <- specific of SystOrgans_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1283  005.endocrine-system (McshHlth000002#idSysOgnHmn005)  <- specific of SystOrgans_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1745  arm (McshHlth000002#idBdyHmnatt043)  <- specific of organ_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1745  intestine.large (McshHlth000002#idOgnHmn034)  <- specific of organ_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1745  sense  <- specific of organ_Gntr  | Y generic-tree McshCor000018:519 does not list it
+  McshHlth000002:1745  sense.ear  <- specific of organ_Gntr  | Y generic-tree McshCor000018:723 does not list it
+  McshHlth000002:1745  sense.eye  <- specific of organ_Gntr  | Y generic-tree McshCor000018:633 does not list it
+  McshHlth000002:1745  sense.nose  <- specific of organ_Gntr  | Y generic-tree McshCor000018:847 does not list it
+  McshHlth000002:1745  sense.skin  <- specific of organ_Gntr  | Y generic-tree McshCor000018:895 does not list it
+  McshHlth000002:1745  sense.tongue  <- specific of organ_Gntr  | Y generic-tree McshCor000018:782 does not list it
+  McshHlth000002:1745  uvula  <- specific of organ_Gntr  | Y generic-tree McshHlth000002:10013 does not list it
+  McshHlth000002:1745  παχύ-εντερο (McshHlth000002#idOgnHmn034)  <- specific of organ_Gntr  | Y has NO generic-tree::
+  McshHlth000002:1745  σταφυλή  <- specific of organ_Gntr  | Y generic-tree McshHlth000002:10013 does not list it
+  McshHlth000002:2022  εξωκρινεις-αδένες  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2271 does not list it
+  McshHlth000002:2022  μεικτοί-αδένες  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2333 does not list it
+  McshHlth000002:2022  εξωκρινεις-αδένες  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2271 does not list it
+  McshHlth000002:2022  επινεφριδια/SUPRARENAL  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:3175 does not list it
+  McshHlth000002:2022  μεικτοί-αδένες  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2333 does not list it
+  McshHlth000002:2022  ορχεις/TESTICLE  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:3446 does not list it
+  McshHlth000002:2022  πάγκρεας/PANCREAS  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2743 does not list it
+  McshHlth000002:2022  προστάτης  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:11972 does not list it
+  McshHlth000002:2022  ωοθήκες/OVARY  <- specific of organGland_Gntr  | Y generic-tree McshHlth000002:2701 does not list it
+  McshHlth000002:2106  glandAdrenal  <- specific of glandEndocrine_Gntr  | Y generic-tree McshHlth000002:3175 does not list it
+  McshHlth000002:2106  glandParathyroid  <- specific of glandEndocrine_Gntr  | Y generic-tree McshHlth000002:3236 does not list it
+  McshHlth000002:2106  glandThymus  <- specific of glandEndocrine_Gntr  | Y generic-tree McshHlth000002:3271 does not list it
+  McshHlth000002:2106  glandThyroid  <- specific of glandEndocrine_Gntr  | Y generic-tree McshHlth000002:2994 does not list it
+  McshHlth000002:2278  salivary-gland  <- specific of glandExocrine_Gntr  | Y generic-tree McshHlth000002:2821 does not list it
+  McshHlth000002:2445  cirrhosis (McshHlth000011#idDssHmn013)  <- specific of glandLiver'disease_Gntr  | Y has NO generic-tree::
+  McshHlth000002:4044  υποδόριος-ιστός (McshHlth000002#idBdyHmn459)  <- specific of tissue_Gntr  | Y has NO generic-tree::
+  McshHlth000002:4154  καλυπτήριος-ιστός (McshHlth000002#idTissHmn012)  <- specific of tissueEpithelial_Gntr  | Y has NO generic-tree::
+  McshHlth000002:4441  χόνδρος (McshHlth000005#idOgnHmn041)  <- specific of tissueConnective_Gntr  | Y has NO generic-tree::
+  McshHlth000002:4753  health-bodyMtrHumn  <- specific of McshHlth000002#idBdyHmnatt022  | Y generic-tree McshHlth000008:452 does not list it
+  McshHlth000002:5192  eye-nutrient-(food)  <- specific of nutrient_Gntr  | Y generic-tree McshHlth000013:869 does not list it
+  McshHlth000002:6406  organHeart  <- specific of SystCirculatory'organ_Gntr  | Y generic-tree McshHlth000002:6467 does not list it
+  McshHlth000002:6406  organVessel  <- specific of SystCirculatory'organ_Gntr  | Y generic-tree McshHlth000002:7247 does not list it
+  McshHlth000002:9559  mouth  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:9615 does not list it
+  McshHlth000002:9559  salivary-gland  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:2821 does not list it
+  McshHlth000002:9559  pharynx  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:8880 does not list it
+  McshHlth000002:9559  esophagus  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:10239 does not list it
+  McshHlth000002:9559  stomach  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:10289 does not list it
+  McshHlth000002:9559  intestine  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:10374 does not list it
+  McshHlth000002:9559  liver-gland  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:2406 does not list it
+  McshHlth000002:9559  gall-bladder  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:10620 does not list it
+  McshHlth000002:9559  mesentery (McshHlth000002#idOgnHmn039)  <- specific of SystDigestive'organ_Gntr  | Y has NO generic-tree::
+  McshHlth000002:9559  pancreas-gland  <- specific of SystDigestive'organ_Gntr  | Y generic-tree McshHlth000002:2743 does not list it
+  McshHlth000002:10802  πέψη  <- specific of SystDigestive'functing_Gntr  | Y generic-tree McshHlth000002:14164 does not list it
+  McshHlth000002:13579  doing.braining  <- specific of Hmbddoing_Gntr  | Y generic-tree McshCor000018:187 does not list it
+  McshHlth000002:13579  doing.breathing  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:14072 does not list it
+  McshHlth000002:13579  doing.communicating  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:14125 does not list it
+  McshHlth000002:13579  doing.digesting  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:14164 does not list it
+  McshHlth000002:13579  doing.excreting  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:14195 does not list it
+  McshHlth000002:13579  doing.fooding  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:14299 does not list it
+  McshHlth000002:13579  doing.homeostasis  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:13778 does not list it
+  McshHlth000002:13579  doing.metabolizing  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:13808 does not list it
+  McshHlth000002:13579  doing.moving  <- specific of Hmbddoing_Gntr  | Y generic-tree McshHlth000002:13687 does not list it
+  McshHlth000002:13579  doing.reproducing (McshHlth000002#idBdyHmnatt034)  <- specific of Hmbddoing_Gntr  | Y has NO generic-tree::
+  McshHlth000002:15042  αιφνιδιος-θάνατος  <- specific of HmbdDeath_Gntr  | Y generic-tree McshHlth000011:4889 does not list it
+
+=== McshTchInf000016 (34: 16 not listed, 18 no generic-tree)
+  McshTchInf000016:170  miner-human (McshTchInf000016#idDbcmnr)  <- specific of Dblockchain_human_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:274  Dao  <- specific of chain_ogn_Gntr  | Y generic-tree McshTchInf000019:1232 does not list it
+  McshTchInf000016:1707  Steem-Dblockchain (McshTchInf000024#idSteemchn)  <- specific of Dblockchain_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Consensus-bcnevu  <- specific of Bkcnasset_Gntr  | Y generic-tree McshTchInf000016:3357 does not list it
+  McshTchInf000016:2362  Ardor-ARDR (McshTchInf000016#idArdrevu)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Augur-REP (McshTchInf000018#idRepevu)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  BitShares-BTS (McshTchInf000016#idBtsevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Dash  <- specific of Bkcnasset_Gntr  | Y generic-tree McshTchInf000016:12657 does not list it
+  McshTchInf000016:2362  Ether-ETH  <- specific of Bkcnasset_Gntr  | Y generic-tree McshTchInf000018:3848 does not list it
+  McshTchInf000016:2362  Faircoin-FAIR  <- specific of Bkcnasset_Gntr  | Y generic-tree McshTchInf000022:1021 does not list it
+  McshTchInf000016:2362  Lisk-LSK  <- specific of Bkcnasset_Gntr  | Y generic-tree McshTchInf000016:8354 does not list it
+  McshTchInf000016:2362  Litecoin-LTC (McshTchInf000016#idLtcevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Namecoin-NMC (McshTchInf000016#idNmcevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Nxt-NXT (McshTchInf000016#idNxtevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Peercoin-PPC (McshTchInf000016#idPpcevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Ripple-XRP (McshTchInf000016#idXrpevuC)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:2362  Synereo-AMP (McshTchInf000016#idAmpevu)  <- specific of Bkcnasset_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:3053  Ripple-XRP (McshTchInf000016#idXrpevuC)  <- specific of Dblockchain-asset.minableNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:3465  Chronobank-LHT (McshTchInf000020#idChblht)  <- specific of BkcnassetApdgNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:4112  blockchain-Dapp  <- specific of Dblockchain_program_Gntr  | Y generic-tree McshTchInf000016:4199 does not list it
+  McshTchInf000016:4112  smart-contract  <- specific of Dblockchain_program_Gntr  | Y generic-tree McshTchInf000016:4168 does not list it
+  McshTchInf000016:4112  wallet-program (McshTchInf000016#idDbcwltPgm)  <- specific of Dblockchain_program_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:5388  Blockchain-as-a-Service (McshTchInf000015#idAlgntsvcDLgr)  <- specific of AgntBkcn_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:5388  Public-blockchain-network  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:15712 does not list it
+  McshTchInf000016:5388  PublicNo-blockchain-network  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:15735 does not list it
+  McshTchInf000016:5388  Aeternity-AE-network  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:6058 does not list it
+  McshTchInf000016:5388  Bitshares2-BTS-network-{2015}  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:10480 does not list it
+  McshTchInf000016:5388  Dash-DASH-network-{2014}  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:11951 does not list it
+  McshTchInf000016:5388  Emercoin-EMC-network-{2013}  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:13089 does not list it
+  McshTchInf000016:5388  Humaniq-network  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:14886 does not list it
+  McshTchInf000016:5388  Peercoin-PPC-network-{2012}  <- specific of AgntBkcn_Gntr  | Y generic-tree McshTchInf000016:13594 does not list it
+  McshTchInf000016:5833  Lisk-LSK-network-{2016} (McshTchInf000016#idLsknet)  <- specific of BkcnserviceSmct_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:5833  Qtum-network (McshTchInf000016#idQtmnet)  <- specific of BkcnserviceSmct_Gntr  | Y has NO generic-tree::
+  McshTchInf000016:5833  Rootstock-RSK-network (McshTchInf000016#idRsknet)  <- specific of BkcnserviceSmct_Gntr  | Y has NO generic-tree::
+
+=== McshLag000007 (33: 12 not listed, 21 no generic-tree)
+  McshLag000007:1139  semu-concept  <- specific of Semunode_Gntr  | Y generic-tree McshLag000007:1403 does not list it
+  McshLag000007:1139  semu-sentence (McshLag000007#idLHmnmsmssntc)  <- specific of Semunode_Gntr  | Y has NO generic-tree::
+  McshLag000007:1139  semu-view-root (McshLag000007#idLHmnmsmsroot)  <- specific of Semunode_Gntr  | Y has NO generic-tree::
+  McshLag000007:2575  entity  <- specific of personLagoB_Gntr  | Y generic-tree McshCor000003:5096 does not list it
+  McshLag000007:16433  compound-sentence--Hmnmnode (McshLag000007#idLHmnmtsscsmCmpd)  <- specific of Hmnmnode_Gntr  | Y has NO generic-tree::
+  McshLag000007:16433  paragraph-Hmnmnode (McshLag000007#idLHmnmtsscsmPara)  <- specific of Hmnmnode_Gntr  | Y has NO generic-tree::
+  McshLag000007:16433  section-Hmnmnode (McshLag000007#idLHmnmsctn)  <- specific of Hmnmnode_Gntr  | Y has NO generic-tree::
+  McshLag000007:16433  root-Hmnmnode (McshLag000007#idLHmnmroot)  <- specific of Hmnmnode_Gntr  | Y has NO generic-tree::
+  McshLag000007:16515  syllabogram (McshLag000007#idLSylbunt)  <- specific of HmnmUnit_Gntr  | Y has NO generic-tree::
+  McshLag000007:16678  phonemogram-(letter)  <- specific of TextUnit_Gntr  | Y generic-tree McshLag000008:259 does not list it
+  McshLag000007:16678  syllabogram (McshLag000007#idLSylbunt)  <- specific of TextUnit_Gntr  | Y has NO generic-tree::
+  McshLag000007:16678  conceptogram (McshLag000007#idLHmnmuntCpgm)  <- specific of TextUnit_Gntr  | Y has NO generic-tree::
+  McshLag000007:17562  GreekAncient-word (McshLag000027#idLEllaword)  <- specific of word_Gntr  | Y has NO generic-tree::
+  McshLag000007:18704  Greek-name (McshLag000020#idLEllnname)  <- specific of name_Gntr  | Y has NO generic-tree::
+  McshLag000007:18704  Turk-name (McshLag000030#idLTurkname)  <- specific of name_Gntr  | Y has NO generic-tree::
+  McshLag000007:18704  concept-name (McshLag000003#idInfHmnBrn001Mcptmdnm)  <- specific of name_Gntr  | Y has NO generic-tree::
+  McshLag000007:18704  verb  <- specific of name_Gntr  | Y generic-tree McshLag000007:24521 does not list it
+  McshLag000007:18704  argu  <- specific of name_Gntr  | Y generic-tree McshLag000007:21629 does not list it
+  McshLag000007:18704  Conj  <- specific of name_Gntr  | Y generic-tree McshLag000007:25416 does not list it
+  McshLag000007:19150  argu  <- specific of term_Gntr  | Y generic-tree McshLag000007:21629 does not list it
+  McshLag000007:19150  verb  <- specific of term_Gntr  | Y generic-tree McshLag000007:24521 does not list it
+  McshLag000007:19150  Conj  <- specific of term_Gntr  | Y generic-tree McshLag000007:25416 does not list it
+  McshLag000007:20453  main-argu_mebr-(relationNo-specialNo) (McshLag000007#idLHmnmNounMain)  <- specific of argu_mebr_Gntr  | Y has NO generic-tree::
+  McshLag000007:20634  relationNo-specialNo--argu (McshLag000007#idLHmnmNounMain)  <- specific of argu_mebrRltnNo_Gntr  | Y has NO generic-tree::
+  McshLag000007:22423  Greek-Verbmebr (McshLag000026#idLEllnverbmbr)  <- specific of Verbmebr_Gntr  | Y has NO generic-tree::
+  McshLag000007:22423  GreekAncient-Verbmebr (McshLag000027#idLEllaverbmbr)  <- specific of Verbmebr_Gntr  | Y has NO generic-tree::
+  McshLag000007:22423  sinagu-Verbmebr (McshLag000010#idL0014verbmbr)  <- specific of Verbmebr_Gntr  | Y has NO generic-tree::
+  McshLag000007:25423  English-Hmnmconj  <- specific of Hmnmconj_Gntr  | Y generic-tree McshLag000011:27428 does not list it
+  McshLag000007:28696  conjunction-phrase (McshLag000007#idLHmnmcnsm)  <- specific of phrase_Gntr  | Y has NO generic-tree::
+  McshLag000007:30049  speech (McshLag000009#idL0017opt)  <- specific of HmnmLogoView_Gntr  | Y has NO generic-tree::
+  McshLag000007:31845  alphabetic-text (McshLag000008#idL0016opt)  <- specific of text_Gntr  | Y has NO generic-tree::
+  McshLag000007:31966  alphabetic-Hmnm_lago  <- specific of Text_lago_Gntr  | Y generic-tree McshLag000008:787 does not list it
+  McshLag000007:32643  sinagu-language  <- specific of Glbl_lago_Gntr  | Y generic-tree McshLag000010:5962 does not list it
+
+=== McshLag000018 (29: 4 not listed, 25 no generic-tree)
+  McshLag000018:649  name-unit  <- specific of Zhon_unit_Gntr  | Y generic-tree McshLag000018:1194 does not list it
+  McshLag000018:649  phoneme  <- specific of Zhon_unit_Gntr  | Y generic-tree McshLag000018:1194 does not list it
+  McshLag000018:691  Standard-Chinese-phoneme  <- specific of Zhonname_unit_Gntr  | Y generic-tree McshLag000018:1194 does not list it
+  McshLag000018:1535  /p/-⟨b⟩-pinyin (McshLag000018#idLZhonpnynB)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /pd/-[pʰ]-⟨p⟩-pinyin (McshLag000018#idLZhonpnynP)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /t/-⟨d⟩-pinyin (McshLag000018#idLZhonpnynD)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /td/-[tʰ]-⟨t⟩-pinyin (McshLag000018#idLZhonpnynT)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /k/-⟨g⟩-pinyin (McshLag000018#idLZhonpnynG)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /kd/-[kʰ]-⟨k⟩-pinyin (McshLag000018#idLZhonpnynK)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /c/-[ts]-⟨z⟩-pinyin (McshLag000018#idLZhonpnynZ)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /cd/-[tsʰ]-⟨c⟩-pinyin (McshLag000018#idLZhonpnynC)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /C/-[ʈʂ]-⟨zh⟩-pinyin (McshLag000018#idLZhonpnynZh)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /Cd/-[ʈʂʰ]-⟨ch⟩-pinyin (McshLag000018#idLZhonpnynCh)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /cc/-[tɕ]-⟨j⟩-pinyin (McshLag000018#idLZhonpnynJ)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /ccd/-[tɕʰ]-⟨q⟩-pinyin (McshLag000018#idLZhonpnynQ)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /s/-⟨s⟩-pinyin (McshLag000018#idLZhonpnynS)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /S/-[ʂ]-⟨sh⟩-pinyin (McshLag000018#idLZhonpnynSh)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /ss/-[ɕ]-⟨x⟩-pinyin (McshLag000018#idLZhonpnynX)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /h/-[x]-⟨h⟩-pinyin (McshLag000018#idLZhonpnynH)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /f/-⟨f⟩-pinyin (McshLag000018#idLZhonpnynF)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /m/-⟨m⟩-pinyin (McshLag000018#idLZhonpnynM)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /n/-⟨n⟩-pinyin (McshLag000018#idLZhonpnynN)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /l/-⟨l⟩-pinyin (McshLag000018#idLZhonpnynL)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /r/-[ɻ|ʐ]-⟨r⟩-pinyin (McshLag000018#idLZhonpnynR)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /yy/-[j|ɥ]-⟨y⟩-pinyin (McshLag000018#idLZhonpnynY)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /y/-[ɻ|ʐ]-⟨w⟩-pinyin (McshLag000018#idLZhonpnynW)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:1535  /ng/-[ŋ]-⟨ng⟩-pinyin (McshLag000018#idLZhonSpchfinlNNg)  <- specific of Zhon_cons_phnm_Gntr  | Y has NO generic-tree::
+  McshLag000018:8119  conjunction-Zhonname  <- specific of Zhonname_Gntr  | Y generic-tree McshLag000018:12971 does not list it
+  McshLag000018:8365  adjective-Zhonargu_mebr (McshLag000018#idLZhonadje)  <- specific of Zhonargu_mebr_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000011 (28: 25 not listed, 3 no generic-tree)
+  McshHlth000011:1208  viral-infection  <- specific of DissInfectious_Gntr  | Y generic-tree McshHlth000011:1355 does not list it
+  McshHlth000011:1208  σιγκελλα  <- specific of DissInfectious_Gntr  | Y generic-tree McshHlth000011:13747 does not list it
+  McshHlth000011:1841  ραχίτιδα  <- specific of DissSkeletal_system_Gntr  | Y generic-tree McshHlth000011:1955 does not list it
+  McshHlth000011:1841  οστεοπόρωση (McshHlth000011#idDssHmn191)  <- specific of DissSkeletal_system_Gntr  | Y has NO generic-tree::
+  McshHlth000011:1841  κατάγματα  <- specific of DissSkeletal_system_Gntr  | Y generic-tree McshHlth000011:1979 does not list it
+  McshHlth000011:2141  DissSystCirculatory.blood-057  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2188 does not list it
+  McshHlth000011:2141  DissSystCirculatory.hemophilia  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2693 does not list it
+  McshHlth000011:2141  DissSystCirculatory.anemia-058  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2753 does not list it
+  McshHlth000011:2141  DissSystCirculatory.leucocyte-068  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2893 does not list it
+  McshHlth000011:2141  DissSystCirculatory.hypertension-042  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2929 does not list it
+  McshHlth000011:2141  DissSystCirculatory.hypotension-132  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:3044 does not list it
+  McshHlth000011:2141  DissSystCirculatory.uremia-197  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:3069 does not list it
+  McshHlth000011:2141  DissSystCirculatory.angina-039  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:3122 does not list it
+  McshHlth000011:2141  DissSystCirculatory.myocardial-infarction-036  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:3244 does not list it
+  McshHlth000011:2141  blood-disease  <- specific of DissSystCirculatory_Gntr  | Y generic-tree McshHlth000011:2188 does not list it
+  McshHlth000011:2521  ηχητικές-παθήσεις (McshHlth000011#idDssHmn046)  <- specific of disease.heart_Gntr  | Y has NO generic-tree::
+  McshHlth000011:3185  myocardial-infarction  <- specific of DissCoronary_artery_Gntr  | Y generic-tree McshHlth000011:3244 does not list it
+  McshHlth000011:3365  alzheimer-disease  <- specific of DissNervous_Gntr  | Y generic-tree McshHlth000011:8471 does not list it
+  McshHlth000011:3365  parkinson-disease  <- specific of DissNervous_Gntr  | Y generic-tree McshHlth000011:13194 does not list it
+  McshHlth000011:3365  multiple-sclerosis  <- specific of DissNervous_Gntr  | Y generic-tree McshHlth000011:11310 does not list it
+  McshHlth000011:3588  kidney-colic-disease (McshHlth000011#idDssHmn226)  <- specific of DissKidney_Gntr  | Y has NO generic-tree::
+  McshHlth000011:3588  nephritis-disease  <- specific of DissKidney_Gntr  | Y generic-tree McshHlth000011:3686 does not list it
+  McshHlth000011:3917  dental-caries  <- specific of DissTooth_Gntr  | Y generic-tree McshHlth000011:12991 does not list it
+  McshHlth000011:4109  diarrhea  <- specific of DissGastroenteritis_Gntr  | Y generic-tree McshHlth000011:9373 does not list it
+  McshHlth000011:4683  φθειριαση  <- specific of DissSkin_Gntr  | Y generic-tree McshHlth000011:11203 does not list it
+  McshHlth000011:4683  ψωρίαση  <- specific of DissSkin_Gntr  | Y generic-tree McshHlth000011:11151 does not list it
+  McshHlth000011:9379  ταξιδιωτικη-διαρροια  <- specific of DissDiarrhea_Gntr  | Y generic-tree McshHlth000011:9412 does not list it
+  McshHlth000011:11938  αντισυλληψη  <- specific of DissReproduction_Gntr  | Y generic-tree McshHlth000011:11808 does not list it
+
+=== McshTchInf000015 (28: 8 not listed, 20 no generic-tree)
+  McshTchInf000015:205  Agntnode-operator (McshTchInf000015#idAlgntnodoptr)  <- specific of Dstakeholder_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:346  Buterin.Vitalic-(Ethereum) (McshTchInf000018#idEthHumnBtnVtk)  <- specific of Dhuman_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:477  blockchain-human  <- specific of chain_user_Gntr  | Y generic-tree McshTchInf000016:164 does not list it
+  McshTchInf000015:4113  store-of-value (McshTchInf000015#idAlgntevusovatt)  <- specific of Agntexvu'service_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:4260  Ethereum-ETH  <- specific of Agntexvu_Gntr  | Y generic-tree McshTchInf000018:3848 does not list it
+  McshTchInf000015:4657  Chronobank-Labour-Hour (McshTchInf000020#idChblht)  <- specific of stable_AnaCurrency_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:5246  funding (McshTchInf000015#idAlgntdongFdg)  <- specific of Dchain_governing_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:5711  DeApp  <- specific of DeProgram_Gntr  | Y generic-tree McshTchInf000015:6608 does not list it
+  McshTchInf000015:6614  exchange-DeApp (McshTchInf000015#idAlgntxCntrN)  <- specific of DeApp_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:6614  Lisk-DeApp (McshTchInf000016#idLskbap)  <- specific of DeApp_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:6614  ChronoBank-DeApp  <- specific of DeApp_Gntr  | Y generic-tree McshTchInf000020:3237 does not list it
+  McshTchInf000015:6895  Blockchain-statistics (McshTchInf000016#idDbcstat)  <- specific of chain-stats_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:8486  problem (McshTchInf000015#idLkxLycipblm)  <- specific of DvLYCI'evaluation_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9392  blockchain-net--problem  <- specific of netAlgo_benefitNo_Gntr  | Y generic-tree McshTchInf000016:4962 does not list it
+  McshTchInf000015:9392  conflict-resolution--problem (McshTchInf000015#idAlgntevalSconCtrn)  <- specific of netAlgo_benefitNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9392  immutability-problem  <- specific of netAlgo_benefitNo_Gntr  | Y generic-tree McshTchInf000015:1656 does not list it
+  McshTchInf000015:9392  speculation-on-chain-asset--problem (McshTchInf000015#idAlgntevuvltlt)  <- specific of netAlgo_benefitNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9392  transaction-fees--problem (McshTchInf000015#idAlgnttxfee)  <- specific of netAlgo_benefitNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9590  Blockchain-security (McshTchInf000016#idDbcscrt)  <- specific of AgntevalConSecurity_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9764  size-of-chain (McshTchInf000015#idAlgntchnsiz)  <- specific of netAlgo'scalability_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9764  transactions-per-second (McshTchInf000015#idAlgnttps)  <- specific of netAlgo'scalability_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:9994  resource (McshTchInf000015#idAlgntirsc)  <- specific of netAlgo'environment_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:10661  Blockchain-Agntsrvc  <- specific of Agntsrvc_Gntr  | Y generic-tree McshTchInf000016:5326 does not list it
+  McshTchInf000015:11859  Land-registry (McshTchInf000015#idAlgntsvcLdr)  <- specific of AgntsrvcRecord_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:12752  Blockchain-ID-service (McshTchInf000017#idBtcsvcIdn)  <- specific of Did_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:13051  blockchain-network--evoluting (McshTchInf000016#idDbcevog)  <- specific of netAlgo_evoluting_Gntr  | Y has NO generic-tree::
+  McshTchInf000015:13707  Blockchain-publicNo-network  <- specific of AlgonetCentral_Gntr  | Y generic-tree McshTchInf000016:15735 does not list it
+  McshTchInf000015:13944  blockchain--đ-currency-network (McshTchInf000016#idDbcMoe)  <- specific of netAlgoCurrency_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000003 (26: 5 not listed, 21 no generic-tree)
+  McshHlth000003:1913  attention (McshCor000018#idBrngHmnFctPygatn)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  behavior (McshHmn000002#idHmnatt167)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  canning (McshCor000018#idBrngHmnFctCnng)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  concepting (McshCor000018#idBrngHmnFctCptg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  connotating (McshCor000018#idBrngHmnFctCntg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  comparing  <- specific of DongMinding_Gntr  | Y generic-tree McshCor000018:1854 does not list it
+  McshHlth000003:1913  decision-making (McshHmn000002#idHmnatt036001)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  defining (McshCor000018#idBrngHmnFct002Dfng)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  educating (McshHlth000003#idMinddongEdtg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  evaluation  <- specific of DongMinding_Gntr  | Y generic-tree McshCor000018:1854 does not list it
+  McshHlth000003:1913  feeling (McshCor000018#idBrngHmnFct001)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  forcasting (McshCor000018#idBrngHmnFctFctg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  inferencing (McshCor000018#idBrngHmnFctIfrg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  language-comprehension-and-production (McshLag000007#idLHmnmdong)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  learning (McshHlth000003#idMinddongLrng)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  paying-attention (McshCor000018#idBrngHmnFctPygatn)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  perception (McshCor000018#idBrngHmnFctPcptg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  preconcepting (McshCor000018#idBrngHmnFctPcptg)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  probability-thinking (McshCor000018#idBrngHmnFctPbbl)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  problem-solving (McshHmn000002#idHmnatt036002)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  rational-thinking (McshCor000018#idBrngHmnFctRtntnk)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  rationalNo-thinking (McshCor000018#idBrngHmnFctRtntnk)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  reasoning (McshCor000018#idBrngHmnFctRisn)  <- specific of DongMinding_Gntr  | Y has NO generic-tree::
+  McshHlth000003:1913  sensing  <- specific of DongMinding_Gntr  | Y generic-tree McshCor000018:519 does not list it
+  McshHlth000003:1913  thinking  <- specific of DongMinding_Gntr  | Y generic-tree McshCor000018:1109 does not list it
+  McshHlth000003:1913  thought  <- specific of DongMinding_Gntr  | Y generic-tree McshCor000018:1109 does not list it
+
+=== McshTchInf000010 (26: 7 not listed, 19 no generic-tree)
+  McshTchInf000010:2507  instanceof-operator (McshTchInf000010#idLJsgnevalConInstanceof)  <- specific of Jsoptr_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:2872  browser-module (McshTchInf000011#idLJsbrm)  <- specific of Jsm_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:2872  Node.js-module  <- specific of Jsm_Gntr  | Y generic-tree McshTchInf000012:1440 does not list it
+  McshTchInf000010:3109  generic-objects  <- specific of Jsomembr_Gntr  | Y generic-tree McshTchInf000010:3224 does not list it
+  McshTchInf000010:3109  a-generic-object  <- specific of Jsomembr_Gntr  | Y generic-tree McshTchInf000010:3224 does not list it
+  McshTchInf000010:3109  A-function  <- specific of Jsomembr_Gntr  | Y generic-tree McshTchInf000010:2216 does not list it
+  McshTchInf000010:3931  Jsbr-native-whole-part-tree (McshTchInf000011#idLJsbrwptr)  <- specific of Jsmwo'whole_part_tree_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:3931  Jsnd-native-whole-part-tree (McshTchInf000012#idLJsndwptr)  <- specific of Jsmwo'whole_part_tree_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:4111  Jsbr-Object.prototype (McshTchInf000011#idLJsbrmgo)  <- specific of Jsmgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:4188  Jsbr-native-API (McshTchInf000011#idLJsbrapiNtv)  <- specific of JsapiNative_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:4760  Immediately-invoked-function-expression (McshTchInf000010#idLJsgnfSex)  <- specific of Jsgnsent_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:4760  return-sentence (McshTchInf000010#idLJsgnfotp)  <- specific of Jsgnsent_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:4873  Name-value-pair--definition  <- specific of Jsgndef_Gntr  | Y generic-tree McshTchInf000010:4936 does not list it
+  McshTchInf000010:5032  array.forEach (McshTchInf000010#idLJsgnArraypforEach)  <- specific of Jsloop_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:5182  Codomain (McshTchInf000010#idLJsgnalgCdn)  <- specific of Jsalgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:5182  Number-managing (McshTchInf000010#idLJsgnalgNmbr)  <- specific of Jsalgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:5859  Jsnd-library (McshTchInf000012#idLJsndlbr)  <- specific of Jsalgolbrr_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6286  browser-JavaScript-specification (McshTchInf000011#idLJsbrspec)  <- specific of Jsgnspec_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6705  Node.js-runtime (McshTchInf000012#idLJsndrtm)  <- specific of Jsgnruntime_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6844  Jsnd--code-analysis-tool (McshTchInf000012#idLJsndtolAns)  <- specific of JsgntoolAnalysis_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6844  ESLint  <- specific of JsgntoolAnalysis_Gntr  | Y generic-tree McshTchInf000012:6341 does not list it
+  McshTchInf000010:6844  JSHint (McshTchInf000012#idLJsndpkgJshint)  <- specific of JsgntoolAnalysis_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6844  JSLint (McshTchInf000012#idLJsndpkgJslint)  <- specific of JsgntoolAnalysis_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6926  npm-package-manager (McshTchInf000012#idLJsndnpm)  <- specific of JsgntoolPkgmgr_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:6982  gulp (McshTchInf000012#idLJsndtolGlp)  <- specific of JsgntoolTask_Gntr  | Y has NO generic-tree::
+  McshTchInf000010:7185  Node-JavaScript  <- specific of Jsgn_lago_Gntr  | Y generic-tree McshTchInf000012:10895 does not list it
+
+=== McshTchInf000018 (20: 3 not listed, 17 no generic-tree)
+  McshTchInf000018:3697  Ether  <- specific of Ethrasset_Gntr  | Y generic-tree McshTchInf000018:3848 does not list it
+  McshTchInf000018:4820  Đapp  <- specific of AgntEthr_program_Gntr  | Y generic-tree McshTchInf000018:6626 does not list it
+  McshTchInf000018:6863  Parity-wallet (McshTchInf000018#idEthpritwlt)  <- specific of Ethrwllt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:6863  Jaxx-wallet (McshTchInf000016#idJaxwlt)  <- specific of Ethrwllt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7324  LLL (McshTchInf000018#idEthlll)  <- specific of AgntEthr_contract_lang_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7324  Serpent (McshTchInf000018#idEthsrpt)  <- specific of AgntEthr_contract_lang_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7324  Solidity  <- specific of AgntEthr_contract_lang_Gntr  | Y generic-tree McshTchInf000018:10578 does not list it
+  McshTchInf000018:7324  Viper (McshTchInf000018#idEthvpr)  <- specific of AgntEthr_contract_lang_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  address---ad (McshTchInf000018#idEthsolad)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  array---a (McshTchInf000018#idEthsola)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  boolean---b (McshTchInf000018#idEthsolb)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  bytes---bt (McshTchInf000018#idEthsolbt)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  enum---en (McshTchInf000018#idEthsolen)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  event---e (McshTchInf000018#idEthsole)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  library---l (McshTchInf000018#idEthsoll)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  mapping---m (McshTchInf000018#idEthsolm)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  string---s (McshTchInf000018#idEthsols)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  struct---sc (McshTchInf000018#idEthsolsc)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  API (McshTchInf000018#idEthsolapi)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+  McshTchInf000018:7800  JSON-INTERFACE (McshTchInf000018#idEthsolAbi)  <- specific of Solxsunt_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000013 (15: 13 not listed, 2 no generic-tree)
+  McshHlth000013:125  nutrient  <- specific of food'ingredient_Gntr  | Y generic-tree McshHlth000013:183 does not list it
+  McshHlth000013:1186  lemon (McshHlth000013#idFoodHmn206)  <- specific of foodNatural_Gntr  | Y has NO generic-tree::
+  McshHlth000013:1186  λεμόνι (McshHlth000013#idFoodHmn206)  <- specific of foodNatural_Gntr  | Y has NO generic-tree::
+  McshHlth000013:2433  cocoa  <- specific of drink_Gntr  | Y generic-tree McshHlth000013:3072 does not list it
+  McshHlth000013:8839  κοκκινιστό  <- specific of foodMeat_Gntr  | Y generic-tree McshHlth000013:8908 does not list it
+  McshHlth000013:8839  λεμονάτο  <- specific of foodMeat_Gntr  | Y generic-tree McshHlth000013:9134 does not list it
+  McshHlth000013:8839  τασκεμπαπ  <- specific of foodMeat_Gntr  | Y generic-tree McshHlth000013:9289 does not list it
+  McshHlth000013:9576  ρύζι-πιλάφι  <- specific of foodSoup_Gntr  | Y generic-tree McshHlth000013:7712 does not list it
+  McshHlth000013:9576  τραχανάς  <- specific of foodSoup_Gntr  | Y generic-tree McshHlth000013:8650 does not list it
+  McshHlth000013:10907  μαρουλοσαλάτα  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:10942 does not list it
+  McshHlth000013:10907  πατατοσαλάτα  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:11173 does not list it
+  McshHlth000013:10907  πιπεριές  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:11258 does not list it
+  McshHlth000013:10907  ταχινοσαλάτα  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:11111 does not list it
+  McshHlth000013:10907  φασόλια-σαλάτα  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:10977 does not list it
+  McshHlth000013:10907  χόρτα  <- specific of foodSalad_Gntr  | Y generic-tree McshHlth000013:11013 does not list it
+
+=== McshStn000004 (15: 3 not listed, 12 no generic-tree)
+  McshStn000004:456  groupOgsm-AdmnSctn (McshStn000005#idGrpOgmatt002)  <- specific of AdmnSctn_Gntr  | Y has NO generic-tree::
+  McshStn000004:456  organizationOgsm-AdmnSctn (McshStn000006#idOznOgmatt002)  <- specific of AdmnSctn_Gntr  | Y has NO generic-tree::
+  McshStn000004:456  societyOgsm-AdmnSctn  <- specific of AdmnSctn_Gntr  | Y generic-tree McshStn000007:160 does not list it
+  McshStn000004:456  ozn-AdmnSctn (McshStn000008#idOgznatt001)  <- specific of AdmnSctn_Gntr  | Y has NO generic-tree::
+  McshStn000004:456  oznHousehold-AdmnSctn (McshStn000014#idOznCsnatt005)  <- specific of AdmnSctn_Gntr  | Y has NO generic-tree::
+  McshStn000004:456  society-AdmnSctn  <- specific of AdmnSctn_Gntr  | Y generic-tree McshStn000009:5478 does not list it
+  McshStn000004:991  oznHumn-budget (McshStn000008#idOgznatt037)  <- specific of budget_Gntr  | Y has NO generic-tree::
+  McshStn000004:991  oznConsumption-budget (McshStn000014#idOznCsnatt017)  <- specific of budget_Gntr  | Y has NO generic-tree::
+  McshStn000004:1103  group-admin (McshStn000005#idGrpOgm001admn)  <- specific of Admn_Gntr  | Y has NO generic-tree::
+  McshStn000004:1103  organization-admin (McshStn000008#idOgznatt001)  <- specific of Admn_Gntr  | Y has NO generic-tree::
+  McshStn000004:1103  society-admin  <- specific of Admn_Gntr  | Y generic-tree McshStn000009:5478 does not list it
+  McshStn000004:1299  society-admnAlgo (McshStn000019#idSocAlgoatt003)  <- specific of admnAlgo_Gntr  | Y has NO generic-tree::
+  McshStn000004:1299  organization-admnAlgo (McshStn000019#idSocAlgo007)  <- specific of admnAlgo_Gntr  | Y has NO generic-tree::
+  McshStn000004:1299  company-admnAlgo (McshStn000019#idAlgoeconatt002)  <- specific of admnAlgo_Gntr  | Y has NO generic-tree::
+  McshStn000004:1299  household-admnAlgo (McshStn000019#idAlgoeconatt001)  <- specific of admnAlgo_Gntr  | Y has NO generic-tree::
+
+=== McshOgm000005 (14: 9 not listed, 5 no generic-tree)
+  McshOgm000005:241  health-SystMolsHumn  <- specific of SystMolsHumn_Gntr  | Y generic-tree McshHlth000008:452 does not list it
+  McshOgm000005:305  health-substanceHumn  <- specific of substanceHumn_Gntr  | Y generic-tree McshHlth000008:508 does not list it
+  McshOgm000005:305  food  <- specific of substanceHumn_Gntr  | Y generic-tree McshHlth000013:869 does not list it
+  McshOgm000005:305  produced  <- specific of substanceHumn_Gntr  | Y generic-tree McshOgm000005:521 does not list it
+  McshOgm000005:305  calcium (McshNtr000007#idChmElrCalcium)  <- specific of substanceHumn_Gntr  | Y has NO generic-tree::
+  McshOgm000005:305  iron (McshNtr000007#idChmElrIron)  <- specific of substanceHumn_Gntr  | Y has NO generic-tree::
+  McshOgm000005:527  bile (McshOgm000005#idSysMolsHmn019)  <- specific of BodyHumn'product_Gntr  | Y has NO generic-tree::
+  McshOgm000005:595  water-fluidHumn (McshOgm000005#idSysMolsHmn015)  <- specific of fluidHumn_Gntr  | Y has NO generic-tree::
+  McshOgm000005:595  bile-fluidHumn (McshOgm000005#idSysMolsHmn019)  <- specific of fluidHumn_Gntr  | Y has NO generic-tree::
+  McshOgm000005:595  saliva-fluidHumn  <- specific of fluidHumn_Gntr  | Y generic-tree McshOgm000005:930 does not list it
+  McshOgm000005:595  urine-fluidHumn  <- specific of fluidHumn_Gntr  | Y generic-tree McshOgm000005:1047 does not list it
+  McshOgm000005:1420  HrmnAndrogen  <- specific of hormoneHumn_Gntr  | Y generic-tree McshOgm000005:2889 does not list it
+  McshOgm000005:2775  HrmnAndrogen  <- specific of HrmnHumnMale_Gntr  | Y generic-tree McshOgm000005:2889 does not list it
+  McshOgm000005:2896  testosterone  <- specific of HrmnAndrogen_Gntr  | Y generic-tree McshOgm000005:2930 does not list it
+
+=== McshTchInf000031 (14: 0 not listed, 14 no generic-tree)
+  McshTchInf000031:1451  array (McshTchInf000031#idLCppsuntArr)  <- specific of CppzsuntNamed_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1451  class (McshTchInf000031#idLCppsuntCls)  <- specific of CppzsuntNamed_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  array (McshTchInf000031#idLCppsuntArr)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  boolean (McshTchInf000031#idLCppsuntBool)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  character (McshTchInf000031#idLCppsuntChrtr)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  enumeration (McshTchInf000031#idLCppsuntEnum)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  number (McshTchInf000031#idLCppsuntNbr)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  string (McshTchInf000031#idLCppsuntStrg)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  structure (McshTchInf000031#idLCppsuntStrct)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1726  void (McshTchInf000031#idLCppsuntVoid)  <- specific of Cppzsunt.processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:1769  class (McshTchInf000031#idLCppsuntCls)  <- specific of Cppzsunt.process-and-processNo_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:2424  building--bin-doc (McshTchInf000031#idLCppalgbldg)  <- specific of Cppz_lago-bin-algo'doing_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:2630  array (McshTchInf000031#idLCppsuntArr)  <- specific of Cppzunit_Gntr  | Y has NO generic-tree::
+  McshTchInf000031:2630  string (McshTchInf000031#idLCppsuntStrg)  <- specific of Cppzunit_Gntr  | Y has NO generic-tree::
+
+=== McshCor000002 (13: 4 not listed, 9 no generic-tree)
+  McshCor000002:611  derived--main-name (McshCor000002#idMcsattNamDzrMaindrvd)  <- specific of Mcs_derived_name_Gntr  | Y has NO generic-tree::
+  McshCor000002:661  title (McshCor000002#idMcsttl)  <- specific of nameMcs_Gntr  | Y has NO generic-tree::
+  McshCor000002:757  title (McshCor000002#idMcsttl)  <- specific of nameMcsMind_Gntr  | Y has NO generic-tree::
+  McshCor000002:1126  generic-chain--att  <- specific of Mcsattr_Gntr  | Y generic-tree McshCor000002:2315 does not list it
+  McshCor000002:1126  title-att (McshCor000002#idMcsttl)  <- specific of Mcsattr_Gntr  | Y has NO generic-tree::
+  McshCor000002:1444  attributes-division (McshCor000002#idMcsattPrtdvn)  <- specific of Mcs_division_Gntr  | Y has NO generic-tree::
+  McshCor000002:1444  parts-division (McshCor000002#idMcsattPrtdvn)  <- specific of Mcs_division_Gntr  | Y has NO generic-tree::
+  McshCor000002:1444  specifics-division  <- specific of Mcs_division_Gntr  | Y generic-tree McshCor000002:2387 does not list it
+  McshCor000002:2602  directory-Mcs-view (McshCor000002#idMcsvDir)  <- specific of Mcsview_Gntr  | Y has NO generic-tree::
+  McshCor000002:2602  world-Mcs-view  <- specific of Mcsview_Gntr  | Y generic-tree McshCor000002:2716 does not list it
+  McshCor000002:2602  base-Mcs-view (McshCor000002#idMcsbv)  <- specific of Mcsview_Gntr  | Y has NO generic-tree::
+  McshCor000002:3459  Hmcsgr-Mcsmgr  <- specific of Mcsmgr_Gntr  | Y generic-tree McshTchInf000009:2287 does not list it
+  McshCor000002:4761  McsHitp-searching (McshTchInf000008#idLHitpscg)  <- specific of Mcs'searching_Gntr  | Y has NO generic-tree::
+
+=== McshEdu000005 (12: 2 not listed, 10 no generic-tree)
+  McshEdu000005:5632  Numerical-analysis (McshEdu000005#idSMath027)  <- specific of mathApplied_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5632  Mathematical-optimization (McshEdu000005#idSMath024)  <- specific of mathApplied_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5632  Cryptography (McshEdu000005#idSMath026)  <- specific of mathApplied_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5913  Combinatorics (McshEdu000005#idSMath022)  <- specific of mathDiscrete_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5913  computability-theory (McshEdu000007#idSCmpr004)  <- specific of mathDiscrete_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5913  Cryptography (McshEdu000005#idSMath026)  <- specific of mathDiscrete_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5913  Graph-theory (McshEdu000003#idSMathgraphthry)  <- specific of mathDiscrete_Gntr  | Y has NO generic-tree::
+  McshEdu000005:5913  logic  <- specific of mathDiscrete_Gntr  | Y generic-tree McshEdu000005:7073 does not list it
+  McshEdu000005:5913  Number-theory  <- specific of mathDiscrete_Gntr  | Y generic-tree McshEdu000005:5805 does not list it
+  McshEdu000005:5913  set-theory (McshEdu000005#idSMath017)  <- specific of mathDiscrete_Gntr  | Y has NO generic-tree::
+  McshEdu000005:6277  calculus (McshEdu000005#idSMath006)  <- specific of mathAnalysis_Gntr  | Y has NO generic-tree::
+  McshEdu000005:7079  Theory-of-Computation (McshEdu000007#idSCmpr003)  <- specific of mathLogic_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000008 (11: 2 not listed, 9 no generic-tree)
+  McshTchInf000008:3037  Hitp_lago.law-page  <- specific of Hitpdoc_Gntr  | Y generic-tree McshTchInf000008:3143 does not list it
+  McshTchInf000008:3660  address-link-icon--functionality (McshTchInf000008#idLHitpidali)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  editing (McshTchInf000008#idLHitpmgredtr)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  evoluting (McshTchInf000008#idLHitpevog)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  link-preview (McshTchInf000008#idPreview)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  indexing (McshTchInf000009#idLMcshmngrnijs)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  installing (McshTchInf000008#idLHitpsiteistlg)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  table-of-contents (McshTchInf000008#idLHitptoc)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  searching (McshTchInf000008#idLHitpscg)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3660  uploading (McshTchInf000009#idLMcshmngrnijs)  <- specific of Hitpdoing_Gntr  | Y has NO generic-tree::
+  McshTchInf000008:3932  Hitp_lagoMcs  <- specific of Hitp_lago_Gntr  | Y generic-tree McshTchInf000009:3877 does not list it
+
+=== McshCor000003 (10: 5 not listed, 5 no generic-tree)
+  McshCor000003:357  whole-of-entity-wtr (McshCor000003#idEntwptr)  <- specific of attribute_Gntr  | Y has NO generic-tree::
+  McshCor000003:357  part-of-entity (McshCor000003#idEntwptr)  <- specific of attribute_Gntr  | Y has NO generic-tree::
+  McshCor000003:357  generic-of-entity-gtr  <- specific of attribute_Gntr  | Y generic-tree McshCor000003:5096 does not list it
+  McshCor000003:357  specific-of-entity  <- specific of attribute_Gntr  | Y generic-tree McshCor000003:5096 does not list it
+  McshCor000003:640  part-relation--of-entity (McshCor000008#idWhlprtrln1)  <- specific of RltnAttributeThenEntity_Gntr  | Y has NO generic-tree::
+  McshCor000003:5103  genericNo (McshCor000009#idGnrcspcIndi)  <- specific of entity_Gntr  | Y has NO generic-tree::
+  McshCor000003:6016  material-body  <- specific of body_Gntr  | Y generic-tree McshNtr000002:499 does not list it
+  McshCor000003:6016  semu-body (McshLag000007#idLHmnmsmsondoBdet)  <- specific of body_Gntr  | Y has NO generic-tree::
+  McshCor000003:6390  body  <- specific of doingNo_Gntr  | Y generic-tree McshCor000003:6011 does not list it
+  McshCor000003:6390  relation  <- specific of doingNo_Gntr  | Y generic-tree McshCor000005:339 does not list it
+
+=== McshCor000005 (10: 2 not listed, 8 no generic-tree)
+  McshCor000005:345  quantity-relation (McshCor000009#idGnrcmsrgactrlnQuant)  <- specific of relation_Gntr  | Y has NO generic-tree::
+  McshCor000005:345  space-relation (McshCor000007#idSpcrln)  <- specific of relation_Gntr  | Y has NO generic-tree::
+  McshCor000005:345  time-relation (McshCor000006#idTimerln)  <- specific of relation_Gntr  | Y has NO generic-tree::
+  McshCor000005:404  relation-entity--semu-ondo (McshLag000007#idLHmnmsmsondoRnet)  <- specific of RltnSemaso_Gntr  | Y has NO generic-tree::
+  McshCor000005:404  relation-entity--semu-verb (McshLag000007#idLHmnmsmsvrbRltn)  <- specific of RltnSemaso_Gntr  | Y has NO generic-tree::
+  McshCor000005:1698  human-language  <- specific of RltnMapping_Gntr  | Y generic-tree McshLag000005:390 does not list it
+  McshCor000005:1698  language-of-organisms  <- specific of RltnMapping_Gntr  | Y generic-tree McshLag000005:163 does not list it
+  McshCor000005:1698  math-function (McshEdu000005#idSMathfn)  <- specific of RltnMapping_Gntr  | Y has NO generic-tree::
+  McshCor000005:3063  generic-specific--relation (McshCor000009#idGnrspcrln)  <- specific of RltnDialectic_Gntr  | Y has NO generic-tree::
+  McshCor000005:3063  whole-part--relation (McshCor000008#idWhlprtrln)  <- specific of RltnDialectic_Gntr  | Y has NO generic-tree::
+
+=== McshLag000009 (10: 2 not listed, 8 no generic-tree)
+  McshLag000009:204  main-name-unit  <- specific of unitSpch_Gntr  | Y generic-tree McshLag000009:597 does not list it
+  McshLag000009:604  Albanina-language(36) (McshStn000039#idLSqipunitPhnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  French-phoneme(34) (McshStn000037#idLFracunitPhnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  German-phoneme(41) (McshLag000033#idLDeutphnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  Greek-phoneme(30) (McshLag000028#idLEll0phnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  Italian-phoneme(28) (McshStn000035#idLItlnunitPhnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  SlavoBulgarian-language(27) (McshStn000038#idSbulunitPhnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  Turkish-phoneme(28) (McshLag000030#idLTurkphnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:604  Vietnamese-phoneme(44) (McshStn000034#idLVnmaunitPhnm)  <- specific of phoneme_Gntr  | Y has NO generic-tree::
+  McshLag000009:3931  speech-word  <- specific of Spchunitsrtr_Gntr  | Y generic-tree McshLag000009:3954 does not list it
+
+=== McshLag000012 (9: 9 not listed, 0 no generic-tree)
+  McshLag000012:105  Semuargu--of-Espo_lago  <- specific of cptSmsEspo_Gntr  | Y generic-tree McshLag000012:166 does not list it
+  McshLag000012:105  semu-verb--of-Espo_lago  <- specific of cptSmsEspo_Gntr  | Y generic-tree McshLag000012:258 does not list it
+  McshLag000012:105  semu-conjunction--of-Espo_lago  <- specific of cptSmsEspo_Gntr  | Y generic-tree McshLag000012:280 does not list it
+  McshLag000012:397  main-name-unit  <- specific of unitEspo_Gntr  | Y generic-tree McshLag000012:431 does not list it
+  McshLag000012:397  phoneme  <- specific of unitEspo_Gntr  | Y generic-tree McshLag000012:522 does not list it
+  McshLag000012:397  letter  <- specific of unitEspo_Gntr  | Y generic-tree McshLag000012:1178 does not list it
+  McshLag000012:437  langoEsperanto-phoneme  <- specific of Espo_lago-unit.term_Gntr  | Y generic-tree McshLag000012:522 does not list it
+  McshLag000012:437  langoEsperanto-letter  <- specific of Espo_lago-unit.term_Gntr  | Y generic-tree McshLag000012:1178 does not list it
+  McshLag000012:1633  word  <- specific of systUnitEspo_Gntr  | Y generic-tree McshLag000012:1713 does not list it
+
+=== McshOgm000006 (9: 9 not listed, 0 no generic-tree)
+  McshOgm000006:203  phenylalanine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:254 does not list it
+  McshOgm000006:203  valine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:274 does not list it
+  McshOgm000006:203  threonine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:294 does not list it
+  McshOgm000006:203  tryptophan  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:313 does not list it
+  McshOgm000006:203  methionine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:333 does not list it
+  McshOgm000006:203  leucine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:357 does not list it
+  McshOgm000006:203  isoleucine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:377 does not list it
+  McshOgm000006:203  lysine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:400 does not list it
+  McshOgm000006:203  histidine  <- specific of McshOgm000006#idBdyHmnatt015025  | Y generic-tree McshOgm000006:420 does not list it
+
+=== McshCor000013 (8: 0 not listed, 8 no generic-tree)
+  McshCor000013:117  sensation-infoMindBio (McshCor000013#idBrngSnsgsns)  <- specific of infoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:117  preconcept-infoMindBio (McshCor000013#idBrngPcptgpct)  <- specific of infoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:117  concept-infoMindBio (McshCor000013#idBrngCptgcpt)  <- specific of infoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:117  emotion-infoMindBio (McshCor000013#idBrngEmtginf)  <- specific of infoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:117  want-infoMindBio (McshCor000013#idBrngWntginf)  <- specific of infoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:583  preconcepting-outputing (McshCor000013#idBrngPcptg)  <- specific of creatingInfoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:583  concepting-outputing (McshCor000013#idBrngCptg)  <- specific of creatingInfoMindBio_Gntr  | Y has NO generic-tree::
+  McshCor000013:583  canning-outputing (McshCor000018#idBrngHmnFctCnng)  <- specific of creatingInfoMindBio_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000019 (8: 6 not listed, 2 no generic-tree)
+  McshHlth000019:3608  organBrain  <- specific of organNervous_Gntr  | Y generic-tree McshHlth000003:3754 does not list it
+  McshHlth000019:3608  brainstem (McshHlth000003#idBrnHmnatt039)  <- specific of organNervous_Gntr  | Y has NO generic-tree::
+  McshHlth000019:3608  cerebellum (McshHlth000003#idBrnHmnatt005)  <- specific of organNervous_Gntr  | Y has NO generic-tree::
+  McshHlth000019:3608  spinal-cord  <- specific of organNervous_Gntr  | Y generic-tree McshHlth000019:3695 does not list it
+  McshHlth000019:3608  eye  <- specific of organNervous_Gntr  | Y generic-tree McshHlth000019:2638 does not list it
+  McshHlth000019:3608  ear  <- specific of organNervous_Gntr  | Y generic-tree McshHlth000019:2938 does not list it
+  McshHlth000019:3608  tongue  <- specific of organNervous_Gntr  | Y generic-tree McshHlth000002:10124 does not list it
+  McshHlth000019:5680  braining  <- specific of SystNervous'doing_Gntr  | Y generic-tree McshCor000018:187 does not list it
+
+=== McshLag000010 (8: 8 not listed, 0 no generic-tree)
+  McshLag000010:158  semu-verb--of-Sngu_lagu  <- specific of Sngusemucnpt_Gntr  | Y generic-tree McshLag000010:263 does not list it
+  McshLag000010:158  Conj-cnpt-Sngu_lagu  <- specific of Sngusemucnpt_Gntr  | Y generic-tree McshLag000010:289 does not list it
+  McshLag000010:404  main-name-unit  <- specific of Sngu_unit_Gntr  | Y generic-tree McshLag000010:438 does not list it
+  McshLag000010:404  phoneme  <- specific of Sngu_unit_Gntr  | Y generic-tree McshLag000010:538 does not list it
+  McshLag000010:404  letter  <- specific of Sngu_unit_Gntr  | Y generic-tree McshLag000010:1303 does not list it
+  McshLag000010:444  laguSinagu-phoneme  <- specific of Sngu_lagu-unit.term_Gntr  | Y generic-tree McshLag000010:538 does not list it
+  McshLag000010:444  laguSinagu-letter  <- specific of Sngu_lagu-unit.term_Gntr  | Y generic-tree McshLag000010:1303 does not list it
+  McshLag000010:2170  word  <- specific of systUnitSngo_Gntr  | Y generic-tree McshLag000010:2449 does not list it
+
+=== McshTchInf000006 (8: 1 not listed, 7 no generic-tree)
+  McshTchInf000006:188  unit (McshTchInf000006#idLCpgmalgunt)  <- specific of Calgonode_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:188  semantic-unit (McshTchInf000006#idLCpgmalgsunt)  <- specific of Calgonode_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:188  phrase (McshTchInf000006#idLCpgmalgphrs)  <- specific of Calgonode_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:188  sentence (McshTchInf000006#idLCpgmsntc)  <- specific of Calgonode_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:2444  Rust-character (McshTchInf000030#idLRustsuntCh)  <- specific of Srcd_lago_ch_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:2482  Javascript-string  <- specific of Srcd_lago_s_Gntr  | Y generic-tree McshTchInf000010:3551 does not list it
+  McshTchInf000006:2537  C++-number (McshTchInf000031#idLCppsuntNbr)  <- specific of Srcd_lago_n_Gntr  | Y has NO generic-tree::
+  McshTchInf000006:2619  C++-operator (McshTchInf000031#idLCppsuntFcnOpr)  <- specific of Srcd_lago_opr_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000032 (8: 0 not listed, 8 no generic-tree)
+  McshTchInf000032:329  git-commit (McshTchInf000032#idGitcmdCommit)  <- specific of Gitcmd.versioning_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:573  git-status (McshTchInf000032#idGitcmdStatus)  <- specific of Gitcmd.informing_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:573  git-log (McshTchInf000032#idGitcmdLog)  <- specific of Gitcmd.informing_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:573  git-diff (McshTchInf000032#idGitcmdDiff)  <- specific of Gitcmd.informing_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:624  git-checkout (McshTchInf000032#idGitcmdCheckout)  <- specific of Gitcmd.navigating_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:624  git-tag (McshTchInf000032#idGitcmdTag)  <- specific of Gitcmd.navigating_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:624  git-stash (McshTchInf000032#idGitcmdStash)  <- specific of Gitcmd.navigating_Gntr  | Y has NO generic-tree::
+  McshTchInf000032:660  git-clone (McshTchInf000032#idGitcmdClone)  <- specific of Gitcmd.collaborating_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000036 (8: 1 not listed, 7 no generic-tree)
+  McshTchInf000036:803  economy (McshStn000012#idEconHmn026)  <- specific of Aiapp_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:803  economy (McshStn000012#idEconHmn026)  <- specific of Aiapp_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:2047  LLM-chatbot (McshTchInf000038#idTchLlmChbt)  <- specific of AiChatbot_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:2475  machine-translation (McshTchInf000036#idTchInf022)  <- specific of techNlp_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:4368  generative  <- specific of techDl_Gntr  | Y generic-tree McshTchInf000036:5779 does not list it
+  McshTchInf000036:4368  deep-neural-networks (McshTchInf000036#idTchNnDeep)  <- specific of techDl_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:4368  recurrent-neural-networks (McshTchInf000036#idTchNnRtnn)  <- specific of techDl_Gntr  | Y has NO generic-tree::
+  McshTchInf000036:4368  convolutional-neural-networks (McshTchInf000036#idTchNnCvnl)  <- specific of techDl_Gntr  | Y has NO generic-tree::
+
+=== McshStn000015 (7: 0 not listed, 7 no generic-tree)
+  McshStn000015:1238  governance-organization (McshStn000009#idSocHumnatt017)  <- specific of OgznPrdg_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  admin-sector (McshStn000015#idSctrPblc)  <- specific of sector_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  adminNo-sector (McshStn000015#idOznPdn010)  <- specific of sector_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  admin-sector (McshStn000015#idSctrPblc)  <- specific of sector_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  adminNo-sector (McshStn000015#idOznPdn010)  <- specific of sector_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  public-sector (McshStn000015#idSctrPblc)  <- specific of sector_Gntr  | Y has NO generic-tree::
+  McshStn000015:1846  private-sector (McshStn000015#idOznPdn010)  <- specific of sector_Gntr  | Y has NO generic-tree::
+
+=== McshLag000003 (6: 3 not listed, 3 no generic-tree)
+  McshLag000003:363  sensation-infoBrain (McshLag000003#idInfHmnBrn001Sstn)  <- specific of infoBrain_Gntr  | Y has NO generic-tree::
+  McshLag000003:363  preconcept-infoBrain (McshLag000003#idInfHmnBrn001Pcpt)  <- specific of infoBrain_Gntr  | Y has NO generic-tree::
+  McshLag000003:929  semu-concept  <- specific of concept_Gntr  | Y generic-tree McshLag000007:1403 does not list it
+  McshLag000003:929  sensorial-concept  <- specific of concept_Gntr  | Y generic-tree McshCor000002:5091 does not list it
+  McshLag000003:1751  sensorial-concept  <- specific of infoSenso_Gntr  | Y generic-tree McshCor000002:5091 does not list it
+  McshLag000003:1798  computer-document (McshTchInf000005#idLfileotpt)  <- specific of doc_Gntr  | Y has NO generic-tree::
+
+=== McshStn000010 (6: 0 not listed, 6 no generic-tree)
+  McshStn000010:833  contract-for-service (McshStn000011#idWkr003att001)  <- specific of contract_Gntr  | Y has NO generic-tree::
+  McshStn000010:833  contract-of-service (McshStn000011#idWkr002att001)  <- specific of contract_Gntr  | Y has NO generic-tree::
+  McshStn000010:873  for-ever (McshStn000010#idSfrHmnexgfe)  <- specific of ActgSfrtransacting_Gntr  | Y has NO generic-tree::
+  McshStn000010:873  for-time-interval (McshStn000010#idSfrHmnexgfti)  <- specific of ActgSfrtransacting_Gntr  | Y has NO generic-tree::
+  McshStn000010:873  transfering (McshStn000010#idSfrHmntrfg)  <- specific of ActgSfrtransacting_Gntr  | Y has NO generic-tree::
+  McshStn000010:2450  production-Ogzn--satisfier (McshStn000015#idOznPdnatt003)  <- specific of satisfierOgzn_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000005 (6: 3 not listed, 3 no generic-tree)
+  McshTchInf000005:640  lagHitp  <- specific of lagCpgmNo_Gntr  | Y generic-tree McshTchInf000008:3923 does not list it
+  McshTchInf000005:698  data-representation-language (McshTchInf000005#idLCmpr006)  <- specific of lagCdat_Gntr  | Y has NO generic-tree::
+  McshTchInf000005:698  data-processing-language (McshTchInf000006#idLCpgmData)  <- specific of lagCdat_Gntr  | Y has NO generic-tree::
+  McshTchInf000005:1081  title-content-tree--document (McshTchInf000008#idLHitparcttl)  <- specific of docNtxt_Gntr  | Y has NO generic-tree::
+  McshTchInf000005:1302  lagHitp  <- specific of Tdoc_lagoMrkp_Gntr  | Y generic-tree McshTchInf000008:3923 does not list it
+  McshTchInf000005:1302  lagHtml  <- specific of Tdoc_lagoMrkp_Gntr  | Y generic-tree McshTchInf000035:464 does not list it
+
+=== McshTchInf000012 (6: 3 not listed, 3 no generic-tree)
+  McshTchInf000012:602  require-function-member  <- specific of Jsndmmbr_Gntr  | Y generic-tree McshTchInf000012:970 does not list it
+  McshTchInf000012:6141  Npmpkg.eslint  <- specific of Npmpkg_Gntr  | Y generic-tree McshTchInf000012:6341 does not list it
+  McshTchInf000012:6141  Npmpkg.jake-(ljnjake)  <- specific of Npmpkg_Gntr  | Y generic-tree McshTchInf000012:7921 does not list it
+  McshTchInf000012:8635  interpreter-(runtime)-tool (McshTchInf000012#idLJsndrtm)  <- specific of Jsndtool_Gntr  | Y has NO generic-tree::
+  McshTchInf000012:8635  npm-tool (McshTchInf000012#idLJsndnpm)  <- specific of Jsndtool_Gntr  | Y has NO generic-tree::
+  McshTchInf000012:8635  REPL-tool (McshTchInf000012#idLJsndrpl)  <- specific of Jsndtool_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000014 (6: 0 not listed, 6 no generic-tree)
+  McshTchInf000014:3105  drop (McshTchInf000014#idLWasmstcPrmcDrp)  <- specific of Wasmcmnd.parametric_Gntr  | Y has NO generic-tree::
+  McshTchInf000014:3105  select-instruction (McshTchInf000014#idLWasmstcPrmcSlct)  <- specific of Wasmcmnd.parametric_Gntr  | Y has NO generic-tree::
+  McshTchInf000014:4568  text-algo (McshTchInf000014#idLWasmalgTxt)  <- specific of Wasmalgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000014:4568  binary-algo (McshTchInf000014#idLWasmalgBnr)  <- specific of Wasmalgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000014:4568  library (McshTchInf000014#idLWasmalgLbr)  <- specific of Wasmalgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000014:5496  runtime-environment (McshTchInf000014#idLWasmtoolRte)  <- specific of WasmTool_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000017 (6: 0 not listed, 6 no generic-tree)
+  McshTchInf000017:8997  ID-service (McshTchInf000017#idBtcsvcIdn)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+  McshTchInf000017:8997  notary-service (McshTchInf000017#idBtcsvcNtzn)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+  McshTchInf000017:8997  payment-processing (McshTchInf000017#idBtcsvcPmnt)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+  McshTchInf000017:8997  shopping (McshTchInf000017#idBtcsvcShpg)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+  McshTchInf000017:8997  trading (McshTchInf000017#idBtcsvcTrd)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+  McshTchInf000017:8997  voting (McshTchInf000017#idBtcsvcVot)  <- specific of Btcnservice_Gntr  | Y has NO generic-tree::
+
+=== McshLag000002 (5: 2 not listed, 3 no generic-tree)
+  McshLag000002:419  human-braininNo-infoBrainBio (McshLag000003#idInfHmnBrn002)  <- specific of infoBrainBioSenso_Gntr  | Y has NO generic-tree::
+  McshLag000002:483  human-infoBrain-view (McshLag000003#idInfHmnBrn005)  <- specific of thoughtBio_Gntr  | Y has NO generic-tree::
+  McshLag000002:483  brain-concept--view  <- specific of thoughtBio_Gntr  | Y generic-tree McshLag000007:884 does not list it
+  McshLag000002:483  sensorial-brain-concept--view  <- specific of thoughtBio_Gntr  | Y generic-tree McshLag000007:953 does not list it
+  McshLag000002:483  semu-view (McshLag000007#idLHmnmipt3)  <- specific of thoughtBio_Gntr  | Y has NO generic-tree::
+
+=== McshStn000008 (5: 4 not listed, 1 no generic-tree)
+  McshStn000008:1214  household-organization  <- specific of Ogzn_Gntr  | Y generic-tree McshStn000014:967 does not list it
+  McshStn000008:1214  householdNo-organization  <- specific of Ogzn_Gntr  | Y generic-tree McshStn000015:1232 does not list it
+  McshStn000008:1214  governance-organization (McshStn000009#idSocHumnatt017)  <- specific of Ogzn_Gntr  | Y has NO generic-tree::
+  McshStn000008:1566  consumption-Socogzn  <- specific of Socogzn_Gntr  | Y generic-tree McshStn000014:967 does not list it
+  McshStn000008:1566  production-Socogzn  <- specific of Socogzn_Gntr  | Y generic-tree McshStn000015:1232 does not list it
+
+=== McshStn000020 (5: 0 not listed, 5 no generic-tree)
+  McshStn000020:2616  Budget|BUDG|DG-EuoCom (McshStn000020#idEubdgtdg)  <- specific of EuoDgCom_Gntr  | Y has NO generic-tree::
+  McshStn000020:2616  Budget|BUDG|DG (McshStn000020#idEubdgtdg)  <- specific of EuoDgCom_Gntr  | Y has NO generic-tree::
+  McshStn000020:2616  DG.BUDG|Budget (McshStn000020#idEubdgtdg)  <- specific of EuoDgCom_Gntr  | Y has NO generic-tree::
+  McshStn000020:4277  European-Research-Council-Executive-Agency|ERCEA-EuoAgency (McshStn000020#idEuoErc)  <- specific of EuoAgency_Gntr  | Y has NO generic-tree::
+  McshStn000020:4277  ERCEA'(European-Research-Council-Executive-Agency-EuoAgency) (McshStn000020#idEuoErc)  <- specific of EuoAgency_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000039 (5: 0 not listed, 5 no generic-tree)
+  McshTchInf000039:223  YAGO-KnlgBase (McshTchInf000039#idLKnlg014optYago)  <- specific of KnlgBase_Gntr  | Y has NO generic-tree::
+  McshTchInf000039:6159  CGIF (McshTchInf000039#idLKnlg017Cgif)  <- specific of lagoCmlc_Gntr  | Y has NO generic-tree::
+  McshTchInf000039:7307  formula (McshTchInf000039#idLCyclformula)  <- specific of Cyclexpression_Gntr  | Y has NO generic-tree::
+  McshTchInf000039:7622  Cyclquantification.existential (McshTchInf000039#idLCyclqtfnExst)  <- specific of Cyclquantification_Gntr  | Y has NO generic-tree::
+  McshTchInf000039:7622  Cyclquantification.universal (McshTchInf000039#idLCyclqtfnUnvl)  <- specific of Cyclquantification_Gntr  | Y has NO generic-tree::
+
+=== McshCor000018 (4: 3 not listed, 1 no generic-tree)
+  McshCor000018:193  sensing  <- specific of FctgBraining_Gntr  | Y generic-tree McshCor000018:519 does not list it
+  McshCor000018:193  thinking  <- specific of FctgBraining_Gntr  | Y generic-tree McshCor000018:1109 does not list it
+  McshCor000018:193  thinking  <- specific of FctgBraining_Gntr  | Y generic-tree McshCor000018:1109 does not list it
+  McshCor000018:1446  measure (McshCor000009#idGnrcmsrggnrc)  <- specific of evaluation_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000005 (4: 4 not listed, 0 no generic-tree)
+  McshHlth000005:856  δερματικοί  <- specific of muscleHead_Gntr  | Y generic-tree McshHlth000005:2707 does not list it
+  McshHlth000005:979  sternocleidomastoid  <- specific of muscleNeck_Gntr  | Y generic-tree McshHlth000005:1346 does not list it
+  McshHlth000005:1812  θώρακα-μύες  <- specific of muscleTorsofrontSkeletal_Gntr  | Y generic-tree McshHlth000005:2079 does not list it
+  McshHlth000005:1812  κοιλίας-μύες  <- specific of muscleTorsofrontSkeletal_Gntr  | Y generic-tree McshHlth000005:2149 does not list it
+
+=== McshHlth000006 (4: 4 not listed, 0 no generic-tree)
+  McshHlth000006:211  organism-disorder  <- specific of disorderBio_Gntr  | Y generic-tree McshHlth000010:243 does not list it
+  McshHlth000006:211  human-disorder  <- specific of disorderBio_Gntr  | Y generic-tree McshHlth000011:672 does not list it
+  McshHlth000006:392  organism-health  <- specific of healthBio_Gntr  | Y generic-tree McshHlth000007:174 does not list it
+  McshHlth000006:392  human-health  <- specific of healthBio_Gntr  | Y generic-tree McshHlth000008:1451 does not list it
+
+=== McshLag000011 (4: 4 not listed, 0 no generic-tree)
+  McshLag000011:637  phoneme  <- specific of Engl_unit_Gntr  | Y generic-tree McshLag000011:738 does not list it
+  McshLag000011:637  letter  <- specific of Engl_unit_Gntr  | Y generic-tree McshLag000011:1636 does not list it
+  McshLag000011:2181  output-word  <- specific of systUnitEngl_Gntr  | Y generic-tree McshLag000011:2209 does not list it
+  McshLag000011:5999  conjunction-termEngl  <- specific of termEngl_Gntr  | Y generic-tree McshLag000011:27428 does not list it
+
+=== McshStn000002 (4: 4 not listed, 0 no generic-tree)
+  McshStn000002:419  group-of-organisms  <- specific of SctnOgms_Gntr  | Y generic-tree McshStn000005:269 does not list it
+  McshStn000002:571  consumption-socialitation  <- specific of Sctn_Gntr  | Y generic-tree McshStn000014:967 does not list it
+  McshStn000002:571  production-socialitation  <- specific of Sctn_Gntr  | Y generic-tree McshStn000015:1232 does not list it
+  McshStn000002:571  societyHumn  <- specific of Sctn_Gntr  | Y generic-tree McshStn000009:8249 does not list it
+
+=== McshTchInf000007 (4: 3 not listed, 1 no generic-tree)
+  McshTchInf000007:785  translating (McshTchInf000007#idLCnkntmgrtrlg)  <- specific of Cnknmngr'thinking_Gntr  | Y has NO generic-tree::
+  McshTchInf000007:861  Mcsmgr  <- specific of Cnknmngr_Gntr  | Y generic-tree McshCor000002:3452 does not list it
+  McshTchInf000007:861  Hmcsmgr  <- specific of Cnknmngr_Gntr  | Y generic-tree McshTchInf000009:2287 does not list it
+  McshTchInf000007:1469  lagMcsh  <- specific of lagCnklMrkp_Gntr  | Y generic-tree McshTchInf000009:3877 does not list it
+
+=== McshTchInf000011 (4: 0 not listed, 4 no generic-tree)
+  McshTchInf000011:345  constructor-function (McshTchInf000010#idLJsgnfCsr)  <- specific of Jsbrf_Gntr  | Y has NO generic-tree::
+  McshTchInf000011:345  method-function (McshTchInf000010#idLJsgnfMtd)  <- specific of Jsbrf_Gntr  | Y has NO generic-tree::
+  McshTchInf000011:345  object-returning-function (McshTchInf000010#idLJsgnfOrn)  <- specific of Jsbrf_Gntr  | Y has NO generic-tree::
+  McshTchInf000011:4969  V8-(Chrome) (McshTchInf000010#idLJsgntolV8)  <- specific of Jsbrengine_Gntr  | Y has NO generic-tree::
+
+=== McshLag000037 (3: 1 not listed, 2 no generic-tree)
+  McshLag000037:188  semu-verb--of-Hiur_lago (McshLag000037#idLHiursmsvrb)  <- specific of Hiur_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000037:188  semu-Conj--of-Hiur_lago (McshLag000037#idLHiursmscnj)  <- specific of Hiur_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000037:378  letter  <- specific of HiurUnit_Gntr  | Y generic-tree McshLag000037:1355 does not list it
+
+=== McshLag000038 (3: 1 not listed, 2 no generic-tree)
+  McshLag000038:220  semu-verb--of-Slv0Lago (McshLag000038#idLSlv0smsvrb)  <- specific of Slv0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000038:220  semu-Conj--of-Slv0Lago (McshLag000038#idLSlv0smscnj)  <- specific of Slv0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000038:410  letter  <- specific of Slv0Unit_Gntr  | Y generic-tree McshLag000038:652 does not list it
+
+=== McshLag000039 (3: 1 not listed, 2 no generic-tree)
+  McshLag000039:216  semu-verb--of-Ide0_lago (McshLag000039#idLIde0smsvrb)  <- specific of Ide0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000039:216  semu-Conj--of-Ide0_lago (McshLag000039#idLIde0smscnj)  <- specific of Ide0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000039:406  letter  <- specific of Ide0Unit_Gntr  | Y generic-tree McshLag000039:519 does not list it
+
+=== McshLag000040 (3: 1 not listed, 2 no generic-tree)
+  McshLag000040:232  semu-verb--of-Afa0_lago (McshLag000040#idLAfa0smsvrb)  <- specific of Afa0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000040:232  semu-Conj--of-Afa0_lago (McshLag000040#idLAfa0smscnj)  <- specific of Afa0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000040:422  letter  <- specific of Afa0Unit_Gntr  | Y generic-tree McshLag000040:744 does not list it
+
+=== McshLag000041 (3: 1 not listed, 2 no generic-tree)
+  McshLag000041:222  semu-verb--of-Tur0_lago (McshLag000041#idLTur0smsvrb)  <- specific of Tur0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000041:222  semu-Conj--of-Tur0_lago (McshLag000041#idLTur0smscnj)  <- specific of Tur0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000041:412  letter  <- specific of Tur0Unit_Gntr  | Y generic-tree McshLag000041:656 does not list it
+
+=== McshLag000042 (3: 1 not listed, 2 no generic-tree)
+  McshLag000042:195  semu-verb--of-Asa0_lago (McshLag000042#idLAsa0smsvrb)  <- specific of Asa0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000042:195  semu-Conj--of-Asa0_lago (McshLag000042#idLAsa0smscnj)  <- specific of Asa0LagoCnpt_Gntr  | Y has NO generic-tree::
+  McshLag000042:385  letter  <- specific of Asa0Unit_Gntr  | Y generic-tree McshLag000042:665 does not list it
+
+=== McshTchInf000020 (3: 1 not listed, 2 no generic-tree)
+  McshTchInf000020:1344  LaborX-dApp (McshTchInf000020#idChblrx)  <- specific of Chrono.tech'program_Gntr  | Y has NO generic-tree::
+  McshTchInf000020:1344  ChronoWallet-dApp (McshTchInf000020#idChbwlt)  <- specific of Chrono.tech'program_Gntr  | Y has NO generic-tree::
+  McshTchInf000020:1968  TIME-token  <- specific of Chrono.tech_Evu_Gntr  | Y generic-tree McshTchInf000020:2124 does not list it
+
+=== McshTchInf000024 (3: 2 not listed, 1 no generic-tree)
+  McshTchInf000024:1013  Steem-application  <- specific of Stemprgm_Gntr  | Y generic-tree McshTchInf000024:1938 does not list it
+  McshTchInf000024:1946  steemit.com  <- specific of Stemdapp_Gntr  | Y generic-tree McshTchInf000024:3794 does not list it
+  McshTchInf000024:2177  cli_wallet (McshTchInf000024#idSteempgmCliwlt)  <- specific of Stemwalt_Gntr  | Y has NO generic-tree::
+
+=== McshHlth000004 (2: 2 not listed, 0 no generic-tree)
+  McshHlth000004:1514  σπερματοζωαρια  <- specific of cellGamete_Gntr  | Y generic-tree McshHlth000004:2225 does not list it
+  McshHlth000004:1514  ωαρια  <- specific of cellGamete_Gntr  | Y generic-tree McshHlth000004:1857 does not list it
+
+=== McshHlth000008 (2: 1 not listed, 1 no generic-tree)
+  McshHlth000008:517  food  <- specific of substanceHlth_Gntr  | Y generic-tree McshHlth000013:869 does not list it
+  McshHlth000008:624  sun (McshHlth000002#idBdyHmn247)  <- specific of harmful-external-object_Gntr  | Y has NO generic-tree::
+
+=== McshLag000033 (2: 0 not listed, 2 no generic-tree)
+  McshLag000033:189  semu-verb--of-Deut_lago (McshLag000033#idLDeutsmsvrb)  <- specific of Deut_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000033:189  semu-Conj--of-Deut_lago (McshLag000033#idLDeutsmscnj)  <- specific of Deut_Semucnpt_Gntr  | Y has NO generic-tree::
+
+=== McshLag000034 (2: 0 not listed, 2 no generic-tree)
+  McshLag000034:166  semu-verb--of-Bcms_lago (McshLag000034#idLBcmssmsvrb)  <- specific of Bcms_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000034:166  semu-Conj--of-Bcms_lago (McshLag000034#idLBcmssmscnj)  <- specific of Bcms_Semucnpt_Gntr  | Y has NO generic-tree::
+
+=== McshLag000035 (2: 0 not listed, 2 no generic-tree)
+  McshLag000035:194  semu-verb--of-Span_lago (McshLag000035#idLSpansmsvrb)  <- specific of Span_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000035:194  semu-Conj--of-Span_lago (McshLag000035#idLSpansmscnj)  <- specific of Span_Semucnpt_Gntr  | Y has NO generic-tree::
+
+=== McshLag000036 (2: 0 not listed, 2 no generic-tree)
+  McshLag000036:191  semu-verb--of-Arab_lago (McshLag000036#idLArabsmsvrb)  <- specific of Arab_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000036:191  semu-Conj--of-Arab_lago (McshLag000036#idLArabsmscnj)  <- specific of Arab_Semucnpt_Gntr  | Y has NO generic-tree::
+
+=== McshLag000043 (2: 0 not listed, 2 no generic-tree)
+  McshLag000043:181  semu-verb--of-Kora_lago (McshLag000043#idLKorasmsvrb)  <- specific of Kora_Semucnpt_Gntr  | Y has NO generic-tree::
+  McshLag000043:181  semu-Conj--of-Kora_lago (McshLag000043#idLKorasmscnj)  <- specific of Kora_Semucnpt_Gntr  | Y has NO generic-tree::
+
+=== McshStn000009 (2: 1 not listed, 1 no generic-tree)
+  McshStn000009:5695  autonomous-SocAdmnDigi (McshStn000019#idSocAlgoatt003)  <- specific of SocAdmnDigi_Gntr  | Y has NO generic-tree::
+  McshStn000009:9848  autonomous-society  <- specific of SocCptlAftr_Gntr  | Y generic-tree McshStn000019:835 does not list it
+
+=== McshStn000029 (2: 0 not listed, 2 no generic-tree)
+  McshStn000029:1068  ExvuEUR'(Euro-Member-Countries-currency) (McshStn000020#idEuzzEconEurevu)  <- specific of Exvu_Gntr  | Y has NO generic-tree::
+  McshStn000029:1068  EUR'(Euro-Member-Countries-currency) (McshStn000020#idEuzzEconEurevu)  <- specific of Exvu_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000019 (2: 0 not listed, 2 no generic-tree)
+  McshTchInf000019:1175  creating (McshTchInf000019#idDeOzncrtg)  <- specific of OgznDao'doing_Gntr  | Y has NO generic-tree::
+  McshTchInf000019:1238  Wings-OgznDao (McshTchInf000016#idWingsdao)  <- specific of OgznDao_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000021 (2: 0 not listed, 2 no generic-tree)
+  McshTchInf000021:2277  block-producer--voting (McshTchInf000021#idEosnodBpvtng)  <- specific of Agnteos'voting_Gntr  | Y has NO generic-tree::
+  McshTchInf000021:2277  referendum-voting (McshTchInf000021#idEosgovrfdm)  <- specific of Agnteos'voting_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000028 (2: 0 not listed, 2 no generic-tree)
+  McshTchInf000028:995  module (McshTchInf000028#idLMovevmdl)  <- specific of Movealgo_Gntr  | Y has NO generic-tree::
+  McshTchInf000028:995  transaction-script (McshTchInf000028#idDnlbrtxscpt)  <- specific of Movealgo_Gntr  | Y has NO generic-tree::
+
+=== McshCor000004 (1: 0 not listed, 1 no generic-tree)
+  McshCor000004:1382  semu-doing-noun (McshLag000007#idLHmnmsmsondoDget)  <- specific of DongSemu_Gntr  | Y has NO generic-tree::
+
+=== McshCor000007 (1: 0 not listed, 1 no generic-tree)
+  McshCor000007:1185  Earth-surface-named (McshCor000007#idSpc2Erthadrs)  <- specific of space.named_Gntr  | Y has NO generic-tree::
+
+=== McshCor000012 (1: 0 not listed, 1 no generic-tree)
+  McshCor000012:443  conceptual-model (McshLag000003#idInfHmnMind002)  <- specific of model_Gntr  | Y has NO generic-tree::
+
+=== McshCor000014 (1: 1 not listed, 0 no generic-tree)
+  McshCor000014:189  decentralized-crypto-chain--network  <- specific of SystNet_Gntr  | Y generic-tree McshTchInf000015:13530 does not list it
+
+=== McshEdu000002 (1: 0 not listed, 1 no generic-tree)
+  McshEdu000002:919  sociology (McshStn000009#idSocHumnatt019)  <- specific of science_Gntr  | Y has NO generic-tree::
+
+=== McshLag000006 (1: 0 not listed, 1 no generic-tree)
+  McshLag000006:9900  Unicode-graphic-char (McshLag000006#idCharUcdGrfc)  <- specific of charGraphic_Gntr  | Y has NO generic-tree::
+
+=== McshLag000013 (1: 0 not listed, 1 no generic-tree)
+  McshLag000013:606  speech (McshLag000009#idL0017opt)  <- specific of irAudio_Gntr  | Y has NO generic-tree::
+
+=== McshLag000021 (1: 1 not listed, 0 no generic-tree)
+  McshLag000021:111  output-word  <- specific of Zhon_unit_syst_Gntr  | Y generic-tree McshLag000021:172 does not list it
+
+=== McshStn000011 (1: 0 not listed, 1 no generic-tree)
+  McshStn000011:1058  blockchain-job (McshTchInf000015#idAlgntwhlidtrjob)  <- specific of job_Gntr  | Y has NO generic-tree::
+
+=== McshStnlaw000004 (1: 0 not listed, 1 no generic-tree)
+  McshStnlaw000004:1306  Universal-Declaration-of-Human-Rights (McshStnlaw000004#idLawInl007)  <- specific of lawIntlTreaty_Gntr  | Y has NO generic-tree::
+
+=== McshTch000002 (1: 1 not listed, 0 no generic-tree)
+  McshTch000002:665  info-tech  <- specific of techHumn_Gntr  | Y generic-tree McshTchInf000002:674 does not list it
+
+=== McshTchInf000003 (1: 0 not listed, 1 no generic-tree)
+  McshTchInf000003:710  evoluting (McshTchInf000003#idCmrevog)  <- specific of techCmpr_doing_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000004 (1: 1 not listed, 0 no generic-tree)
+  McshTchInf000004:119  DLT  <- specific of techFin_Gntr  | Y generic-tree McshTchInf000015:13530 does not list it
+
+=== McshTchInf000030 (1: 1 not listed, 0 no generic-tree)
+  McshTchInf000030:334  keyword  <- specific of Rust_lago_word_Gntr  | Y generic-tree McshTchInf000030:387 does not list it
+
+=== McshTchInf000038 (1: 0 not listed, 1 no generic-tree)
+  McshTchInf000038:857  Agent (McshTchInf000036#idTechAi005Llm)  <- specific of LlmApp_Gntr  | Y has NO generic-tree::
+
+=== McshTchInf000041 (1: 0 not listed, 1 no generic-tree)
+  McshTchInf000041:5926  AI-settings (McshTchInf000041#idVscodeaistg)  <- specific of Vscsetg_Gntr  | Y has NO generic-tree::

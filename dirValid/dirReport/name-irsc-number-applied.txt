@@ -1,0 +1,79 @@
+=== TITLE (1) — number removed from "NN_info-resource of X"
+  McshNtr000002:318  <h1 id="idMtrlirscH1">info-resource of material
+
+=== NAME-REMOVED (1) — X'NN_info-resource dropped, X'info-resource already in the list
+  McshNtr000002:328  <br>* McshEngl.material'07_info-resource,
+
+=== TITLE-RESOURCE (16) — "NN_resource of X" → "info-resource of X"
+  McshCor000004:1250  <h1 id="idDngirscH1">info-resource of doing
+  McshCor000008:436  <h1 id="idWhlirscH1">info-resource of whole
+  McshCor000011:225  <h1 id="idSysirscH1">info-resource of system
+  McshCor000011:1997  <h2 id="idSys002rscH2">info-resource of systTree
+  McshHlth000004:1057  <h1 id="idCellHmnatt010H1">info-resource of cell
+  McshHlth000006:160  <h2 id="idDsdrrscH2">info-resource of disorderBio
+  McshHlth000006:318  <h1 id="idHlthBioirscH1">info-resource of healthBio
+  McshHlth000010:440  <h2 id="idDssPlntrscH2">info-resource of DissPlnt
+  McshHlth000019:2978  <h2 id="idSysNrvsatt016rscFH2">info-resource of SystSense
+  McshNtr000003:298  <h1 id="idAtmirscH1">info-resource of MtrlAtom
+  McshNtr000012:107  <h1 id="idFrcirscH1">info-resource of force
+  McshOgm000002:137  <h1 id="idBioirscH1">info-resource of bio
+  McshOgm000008:134  <h1 id="idOgmCllNirscH1">info-resource of ogmCellNo
+  McshTchInf000003:633  <h1 id="idCmrirscH1">info-resource of techCmpr
+  McshTchInf000015:6048  <h3 id="idDcntrtrscFH3">info-resource of DeContract
+  McshTchInf000015:6511  <h2 id="idDapprscFH2">info-resource of DeApp
+
+=== NAME-RENAMED (3) — X'NN_resource → X'info-resource
+  McshHlth000010:447  <br>* McshEngl.DissPlnt'info-resource,
+  McshHlth000019:2985  <br>* McshEngl.SystSense'info-resource,
+  McshTchInf000015:6517  <br>* McshEngl.DeApp'info-resource,
+
+=== NAME-REMOVED (15) — X'NN_resource dropped, X'info-resource already in the list
+  McshCor000004:1256  <br>* McshEngl.doing'06_resource,  (dup of doing'info-resource)
+  McshCor000008:442  <br>* McshEngl.whole'03_resource,  (dup of whole'info-resource)
+  McshCor000008:443  <br>* McshEngl.whole'05_resource,  (dup of whole'info-resource)
+  McshCor000011:232  <br>* McshEngl.system'03_resource,  (dup of system'info-resource)
+  McshCor000011:2006  <br>* McshEngl.systTree'07_resource,  (dup of systTree'info-resource)
+  McshHlth000004:1064  <br>* McshEngl.cell'17_resource,  (dup of cell'info-resource)
+  McshHlth000006:167  <br>* McshEngl.disorderBio'08_resource,  (dup of disorderBio'info-resource)
+  McshHlth000006:324  <br>* McshEngl.healthBio'05_resource,  (dup of healthBio'info-resource)
+  McshNtr000002:325  <br>* McshEngl.material'07_resource,  (dup of material'info-resource)
+  McshNtr000003:304  <br>* McshEngl.MtrlAtom'08_resource,  (dup of MtrlAtom'info-resource)
+  McshNtr000012:113  <br>* McshEngl.force'06_resource,  (dup of force'info-resource)
+  McshOgm000002:144  <br>* McshEngl.bio'09_resource,  (dup of bio'info-resource)
+  McshOgm000008:140  <br>* McshEngl.ogmCellNo'09_resource,  (dup of ogmCellNo'info-resource)
+  McshTchInf000003:640  <br>* McshEngl.techCmpr'04_resource,  (dup of techCmpr'info-resource)
+  McshTchInf000015:6054  <br>* McshEngl.DeContract'11_resource,  (dup of DeContract'info-resource)
+
+=== TITLE-RESOURCE-PLAIN (25) — "resource of X" → "info-resource of X"
+  McshCor000018:4409  <h3 id="idBrngHmnFct005resourceH3">info-resource of FctgMemorizing
+  McshHlth000002:9779  <h4 id="idBdyHmn110resourceH4">info-resource of organTooth
+  McshHlth000002:12256  <h3 id="idOgnHmn014resourceH3">info-resource of organVulva
+  McshHlth000011:1806  <h3 id="idDssHmn005_1resourceH3">info-resource of DissSkeletal_system
+  McshHlth000011:2958  <h3 id="idDssHmn042resourceH3">info-resource of DissHypertension
+  McshHlth000011:6026  <h3 id="idDssHmn100resourceH3">info-resource of mastectomy
+  McshHlth000011:6257  <h3 id="idDssHmn106resourceH3">info-resource of DissCancer.skin
+  McshHlth000011:8377  <h2 id="idDssHmn114resourceH2">info-resource of DissAids
+  McshHlth000011:8514  <h2 id="idDssHmn115resourceH2">info-resource of DissAlzheimer
+  McshHlth000011:8601  <h2 id="idDssHmn116resourceH2">info-resource of DissDementia
+  McshHlth000011:8941  <h3 id="idDssHmn120resourceH3">info-resource of DissCoughing
+  McshHlth000011:9463  <h3 id="idDssHmn139resourceH3">info-resource of DissTravel_diarrhea
+  McshHlth000011:9719  <h2 id="idDssHmn166resourceH2">info-resource of DissHepatitis
+  McshHlth000011:11476  <h2 id="idDssHmn195resourceH2">info-resource of DissMultiple_sclerosis
+  McshHlth000011:12871  <h3 id="idDssHmn135resourceH3">info-resource of DissCramp
+  McshHlth000011:13191  <h2 id="idDssHmn129resourceH2">info-resource of DissParkinson
+  McshHlth000011:13588  <h2 id="idDssHmn138resourceH2">info-resource of FctgPainingHead
+  McshHlth000011:15225  <h2 id="idDssHmn015resourceH2">info-resource of DissCholesterol
+  McshHlth000013:3461  <h3 id="idFoodHmn032resourceH3">info-resource of drinkWater
+  McshHlth000013:5244  <h2 id="idFoodHmn058resourceH2">info-resource of foodProbiotic
+  McshHlth000013:8808  <h2 id="idFoodHmn143resourceH2">info-resource of foodMeat
+  McshLag000020:9898  <h3 id="idLEllnconjrscH3">info-resource of Ellnconj
+  McshNtr000004:149  <h1 id="idMolirscH1">info-resource of MtrlMol
+  McshOgm000009:391  <h1 id="idOgmAnmlirscH1">info-resource of ogsmAnimal
+  McshTchInf000015:9719  <h4 id="idAlgntsclbtrscH4">info-resource of netAlgo'scalability
+=== NAME-ADDED (5) — name:: lacked M'attname — added at end of the English block (!⇒ the section's own main when it has one)
+  McshCor000002:4443  <br>* McshEngl.Mcs'relation-to-human-concept,
+  McshHlth000011:1815  <br>* McshEngl.DissSkeletal_system'info-resource,
+  McshHlth000011:6268  <br>* McshEngl.DissCancer.skin'info-resource,
+  McshHlth000011:9474  <br>* McshEngl.DissTravel_diarrhea'info-resource,
+  McshHlth000013:8816  <br>* McshEngl.foodMeat'info-resource,
+

@@ -1,0 +1,146 @@
+generic-tree:: WITHOUT its name first — Mcsh worldview C:dirNodewsdirMcsh, live pages Mcsh*.last.html — 2026-10-20
+
+generic-tree:: paragraphs: 2796 | named: 2664 | WITHOUT name: 132
+
+=== NO-MAIN (78) — owner has several McshEngl names and NO !⇒ main-name — add "!⇒Main" to its names, then the head McshEngl.Main_Gntr can be added
+  McshLag000007:22049  idLHmnmargoMtwdgntr  "Hmnm_argu.multiword"  names: multiword-ondoname | Hmnm_argu.multiword
+  McshLag000007:26186  idLHmnmConjWrdmnygntr  "Hmnmconj.word-many"  names: Hmnmconj.multiword | Hmnmconj.word-many | many-word-Hmnmconj | multiword-Hmnmconj
+  McshLag000008:123  idL0016nodegntr  "node of text of alfa_lago"  names: alfa_lago'node | textAlph'node
+  McshLag000009:166  idL0017nodegntr  "node of speech"  names: spch_lago'node | speech'node
+  McshLag000010:283  idL0014smscnjgntr  "Conj-cnpt of Sngu_logu_view"  names: Sngusemucnpt.conjunction | conjunction-concept--of-Sngu_lagu | laguSinagu-Conj-cnpt | Sngu_lagu'Conj-cnpt | Sngu_lagu-Conj-cnpt | Conj_lagoSngo | Sngu_logu_view'Conj-cnpt
+  McshLag000010:357  idL0014nodegntr  "node of Sngu_logu_view"  names: Sngu_lagu'node | Sngu_logu_view'node | nodeLogSngo
+  McshLag000011:2511  idLEnglsylbatt001gntr  "syllabication of Engl_sylb"  names: Engl_sylb'syllabication | syllabication-of-Engl_lago | Engl_word'syllabication
+  McshLag000011:8095  idLEngladjesnmrsgntr  "syno_members of Engl_adje"  names: Engl_adje'syno_members | Engl_adje-syno_members
+  McshLag000011:26717  idLEnglverbcjgngntr  "conjugating of Englverb"  names: conjugating-of-Englverb | conjugation-of-Englverb | Englverb'conjugation | memberorVerbEngl'conjugation
+  McshLag000012:255  idLEsposmsvrbgntr  "cptSmsEspo.verb"  names: cptSmsEspo.verb | Esperanto-semu-verb | Espo_lago'semu-verb | Espo_lago-semu-verb | verbSmsEspo
+  McshLag000012:354  idLEsponodegntr  "node of logoEspo"  names: Espo_lago'node | logoEspo'node | nodeLogEspo
+  McshLag000012:1669  idLEspowrdsylbngntr  "syllabication of wordEspo"  names: Espo_lago'syllabication | syllabication-of-Espo_lago | wordEspo'syllabication
+  McshLag000012:4689  idLEspoverbcjgngntr  "conjugation of verbEspo"  names: conjugation-of-verbEspo | verbEspo'conjugation | memberorVerbEspo'conjugation
+  McshLag000018:606  idLZhonnodegntr  "node of Zhon_logo"  names: Zhon_lago'node | Zhon_logo'node | nodeZhon
+  McshLag000021:676  idLZhonsylbslbcngntr  "syllabication of Zhon_sylb"  names: Zhon_sylb'syllabication | syllabication-of-lagoZhon | Zhon_word'syllabication
+  McshLag000033:342  idLDeutnodegntr  "node of DeutLogoView"  names: Deut_lago'node | DeutLogoView'node | nodeLogDeut
+  McshNtr000007:217  idChmElratt007gntr  "06_chemical-property of ChmcElry"  names: ChmcElry'06_chemical-property | ChmcElry'att007-chemical-property | ChmcElry'chemical-property-att007
+  McshNtr000012:98  idFrcatt005gntr  "05_direction of force"  names: force'05_direction | force'direction
+  McshOgm000004:901  idMolOgm011gntr  "molOgsm.rubber-011"  names: molOgsm.011-rubber | molOgsm.rubber-011 | rubber-biopolymer-011
+  McshOgm000005:860  idSysMolsHmn016gntr  "SystMolsHmn.releasing-hormone of hypothalamus"  names: SystMolsHmn.016-releasing-hormone | SystMolsHmn.releasing-hormone-016 | releasing-hormone | releasing-factor
+  McshOgm000005:3516  idFldHmn001att011gntr  "coagulation of bloodHmn"  names: bloodHmn'coagulation | bloodHmn'att011-coagulation | bloodHmn'doing'coagulation
+  McshStn000002:252  idStnOgmatt003gntr  "05-health of sctnOgms"  names: sctnOgms'05-health | sctnOgms'att003-health | sctnOgms'health-003 | health.socialitation
+  McshStn000007:202  idSocOgmatt009gntr  "09_language of societyOgsm"  names: societyOgsm'09_language | societyOgsm'att009-language | societyOgsm'language-att009
+  McshStnlaw000003:2430  idLawEus027gntr  "EulSecondary.action-programme-027"  names: EulSecondary.action-programme | action-programme-of-Eu | lawEus.027-action-programme | lawEus.action-programme | action-programme:lawEus
+  McshTchInf000006:1964  idLSrcdarchcdgntr  "archo-code of archetype of Srcd_lago"  names: Srcd_lago-archetype'archo-code | Srcd_lago-archo-code | Srcd_lago_archetype'archo-code
+  McshTchInf000006:2692  idLSrcdphrsgntr  "Srcdalgo'phrase of Srcd_lago"  names: Srcd_lago'output-phrase | Srcd_lago'phrase | Srcdalgo'phrase | Srcd_lago-node.phrase | Srcd_lago-phrase
+  McshTchInf000015:1650  idAlgntchnimtbltgntr  "immutability of Dchain"  names: immutability-of-Dchain | Dchain'immutability
+  McshTchInf000015:3975  idAlgntevuMoebknsgntr  "backness of AgntassetExvu"  names: backness-of-AgntassetExvu | AgntassetExvu'backness
+  McshTchInf000015:4029  idAlgntevuMoeprcgntr  "price of AgntassetExvu"  names: AgntassetExvu'price | price-of-AgntassetExvu
+  McshTchInf000015:4316  idAlgntevuMoeCnsgntr  "AgntassetExvu.CONSENSUS"  names: AgntassetExvu.consensus | consensus-cryptocurrency
+  McshTchInf000016:326  idDbcwprgntr  "white-paper of blockchain-protocol"  names: blockchain--white-paper | Dblockchain-protocol'white-paper | white-paper--of--blockchain-network | Dblockchain_protocol'white-paper
+  McshTchInf000016:492  idDbcnodApdrgntr  "node.BLOCK-PRODUCER"  names: block-generator-node | block-producer-node | blockchain-appender-node | Dblockchain-node.appender | Dblockchain-node.block-producer | Dblockchain_node.BLOCK-PRODUCER
+  McshTchInf000016:1903  idDbcprcgntr  "price of blockchain-Dasset"  names: Dblockchain-asset'price | Dblockchain-asset'value | price-of--blockchain-asset | Bkcnasset'price
+  McshTchInf000016:3246  idDbcevMoeNgntr  "Bkcnasset.CURRENCY.NO"  names: Dblockchain-asset.currencyNo | blockchain-currencyNo | Bkcnasset.CURRENCY.NO
+  McshTchInf000016:4145  idDbcpgmScrtgntr  "program.PROGRAMMABLE-CONTRACT"  names: blockchain-contract | Dblockchain-program.smart-contract | smart-contract.blockchain | Dblockchain_program.PROGRAMMABLE-CONTRACT
+  McshTchInf000016:4902  idDbcevalSprogntr  "evaluation.PRO"  names: blockchain-evaluation.pro | AgntBkcn'pro | Bkcheval.PRO
+  McshTchInf000016:15601  idDbcPmsapdgntr  "AgntBkcn.appending.PERMISSIONED"  names: AgntBkcn.permission-to-append | permission-to-append--blockchain-net
+  McshTchInf000016:15616  idDbcPmsapdNgntr  "AgntBkcn.appending.PERMISSIONED.NO"  names: AgntBkcn.permissionless-to-append | permissionless-to-append--blockchain-net
+  McshTchInf000016:15631  idDbcPmsjoingntr  "AgntBkcn.joining.PERMISSIONED"  names: AgntBkcn.permission-to-join | permission-to-join--blockchain-net
+  McshTchInf000016:15646  idDbcPmsjoinNgntr  "AgntBkcn.joining.PERMISSIONED.NO"  names: AgntBkcn.permissionless-to-join | permissionless-to-join--blockchain-net
+  McshTchInf000016:15666  idDbcPbcgntr  "AgntBkcn.appending-joining.PUBLIC"  names: AgntBkcn.public | permissionless--blockchain-net | privateNo--blockchain-net | public--blockchain-net
+  McshTchInf000016:15686  idDbcPbcNgntr  "AgntBkcn.appending-joining.PUBLIC.NO"  names: AgntBkcn.publicNo | permissioned--blockchain-net | private--blockchain-net | publicNo--blockchain-net
+  McshTchInf000021:61  idEosprlgntr  "protocol of Agnteos"  names: Agnteos'protocol | Agnteos-protocol
+  McshTchInf000021:80  idEosprlwprgntr  "white-paper of Eos-protocol"  names: Agnteos'protocol'white-paper | Agnteos'white-paper | Agnteos-white-paper
+  McshTchInf000021:937  idEosnodgntr  "node of Agnteos"  names: Agnteos'node | Agnteos-node
+  McshTchInf000021:1283  idEosblkgntr  "block of Eos-blockchain"  names: Agnteos-block | Agnteos'block
+  McshTchInf000021:3098  idEosogngntr  "organization of Agnteos"  names: Agnteos'organization | Agnteos-organization
+  McshTchInf000021:3118  idEosognBkongntr  "Agnteos-ogn.Block.one"  names: Block.one | Agnteos'Block.one
+  McshTchInf000021:3255  idEosdonggntr  "DOING of Agnteos"  names: Agnteos-doing | Agnteos'doing
+  McshTchInf000022:57  idFairnetprlgntr  "protocol of Faircoin_net"  names: Faircoin-net'protocol | Faircoin_net'protocol | protocol-of-Faircoin-net
+  McshTchInf000022:71  idFairnetwprgntr  "FairCoin white-paper"  names: Faircoin-net'white-paper | white-paper--of--Faircoin-network
+  McshTchInf000022:671  idFairnetnodgntr  "node of Faircoin_net"  names: Faircoin-net'node | Faircoin_net'node | node-of-Faircoin-net
+  McshTchInf000022:802  idFairnetbcngntr  "blockchain of Faircoin_net"  names: Faircoin-net'blockchain | Faircoin_net'blockchain
+  McshTchInf000022:900  idFairnetblktmbngntr  "time-between-blocks of Faircoin-block"  names: Fain-net'block'interval | Fain-net'block-period | Fain-net'block-spacing | Fain-net'time-between-blocks
+  McshTchInf000022:957  idFairnetpocgntr  "proof-of-cooperation of Faircoin-blockchain"  names: blockchain-appending-algo.proof-of-cooperation | Faircoin-net'proof-of-cooperation | proof-of-cooperation
+  McshTchInf000022:1034  idFairnetevuCexrgntr  "exchange-rate of FAIR"  names: Faircoin-currency'exchange-rate | FAIR'exchange-rate | Faircoin_currency'exchange-rate
+  McshTchInf000022:1082  idFairnetgovgntr  "governance-system of Faircoin_net"  names: Faircoin-net'governance-system | Faircoin_net'governance-system
+  McshTchInf000022:1201  idFairnetwltgntr  "wallet of Faircoin_net"  names: Faircoin-net'wallet | Faircoin_net'wallet
+  McshTchInf000022:1219  idFairnetstatgntr  "statistics of Faircoin_net"  names: Faircoin-net'statistics | Faircoin_net'statistics
+  McshTchInf000022:1235  idFairnetstatEnrggntr  "statistics.energy-consumption"  names: Faircoin-net'energy-consuption | Faircoin-statistics.energy-consuption
+  McshTchInf000022:1251  idFairnethmngntr  "human of Faircoin_net"  names: Faircoin-net'human | Faircoin_net'human
+  McshTchInf000022:1281  idFairnetogngntr  "organization of Faircoin_net"  names: Faircoin-net'organization | Faircoin_net'organization
+  McshTchInf000022:1385  idFairnetevalgntr  "evaluation of Faircoin_net"  names: Faircoin-net'evaluation | Faircoin_net'evaluation
+  McshTchInf000022:1399  idFairnetevalScongntr  "evaluation.CON"  names: Faircoin-evaluation.con | Faircoin-net'problem
+  McshTchInf000022:1466  idFairnetlawgntr  "law of Faircoin_net"  names: Faircoin-net'law | Faircoin_net'law
+  McshTchInf000022:1501  idFairnetrscgntr  "info-resource of Faircoin_net"  names: Faircoin-net'info-resource | Faircoin_net'info-resource
+  McshTchInf000024:57  idSteemprlgntr  "protocol of Steem_net"  names: Steem-net'protocol | Steem_net'protocol
+  McshTchInf000024:79  idSteemnodgntr  "node of Steem_net"  names: Steem-net'node | Steem_net'node | Steem-node | Đ-Steem'node
+  McshTchInf000024:126  idSteemnodWtnsgntr  "Steem-node.WITNESS"  names: Steem-net'witness-node | Steem-node.witness | Steem-witness-node
+  McshTchInf000024:167  idSteemblkgntr  "block of Steem-chain"  names: Steem-block | Steem-net'block | Đ-Steem'block
+  McshTchInf000024:287  idSteemtxgntr  "transaction of Steem-chain"  names: Steem-net'transaction | Steem-transaction | transaction-of--Steem-net
+  McshTchInf000024:1016  idSteemdgntr  "Steem-program.CLIENT"  names: Steem-client-program | Steem-daemon-program | Steem-program.client | Steem-server-program | Steem-software | Steem-steemd-program | steemd
+  McshTchInf000024:2327  idSteemacntpbcgntr  "name of Steem-account"  names: address-of--Steem-account | name-of--Steem-account | Steem-account'address | Steem-account'name | Steem-account'username | Steem-net'username
+  McshTchInf000024:3832  idSteemognExggntr  "Steem-ogn.EXCHANGE"  names: Steem-exchange-organization | Steem-net'exchange-organization | Steem-ogn.exchange
+  McshTchInf000025:756  idEvrpastIqtgntr  "asset.IQ-token"  names: Everipedia'IQ-token | IQ-token-of-Everipedia | Everipedia'asset.IQ-token
+  McshTchInf000026:209  idBkskBcnetgntr  "blockchain-network of Blockstack_net"  names: Blockstack-net'blockchain-network | Blockstack_net'blockchain-network
+  McshTchInf000030:1277  idLRustsuntNgntr  "Sunt.number (n) of Rust_lago"  names: Rust_lago'number | Rustn
+  McshTchInf000030:2841  idLRustrootgntr  "algo'root of Rust_lago"  names: Rust_lago'root | Rustalgo'root
+
+=== ONE-NAME (0) — owner has one McshEngl name (it is the main) — head McshEngl.Name_Gntr can be added
+
+
+=== HAS-MAIN (54) — owner HAS a !⇒ main-name — head McshEngl.Main_Gntr can be added
+  McshCor000013:424  idBrnginfarchgntr  "04_archetype of FctgBrainingBio"  names: FctgBrainingBio'archetype | archetype-of-braining!⇒FctgBrainingBio'archetype | archetype-of-infoMindBio!⇒FctgBrainingBio'archetype | FctgBrainingBio'04_archetype!⇒FctgBrainingBio'archetype | infoMindBio-archetype!⇒FctgBrainingBio'archetype | referent-of-infoMindBio!⇒FctgBrainingBio'archetype
+  McshCor000013:441  idBrngstxgntr  "05_syntax of FctgBrainingBio"  names: FctgBrainingBio'syntax | FctgBrainingBio'05-syntax!⇒FctgBrainingBio'syntax | syntax.brainingBio!⇒FctgBrainingBio'syntax
+  McshCor000018:2577  idBrngHmnFct004stmlgntr  "04_stimulus of FctgEmoting"  names: FctgEmoting'stimulus | argtEmoting.stimulus!⇒FctgEmoting'stimulus | FctgEmoting'04_stimulus!⇒FctgEmoting'stimulus
+  McshHlth000004:1458  idCellHmn010gntr  "cell.hair-010"  names: cellHair | cell.010-hair!⇒cellHair | cell.hair-010!⇒cellHair | hair-cell.human!⇒cellHair
+  McshHlth000005:3507  idBoneHmn007gntr  "organBone.frontal-bone-007"  names: boneFrontal | organBone.frontal-bone!⇒boneFrontal | organBone.007-frontal-bone!⇒boneFrontal | frontal-bone!⇒boneFrontal | skeletonHead.frontal-bone-007!⇒boneFrontal
+  McshHlth000005:3536  idBoneHmn008gntr  "organBone.parietal-008"  names: boneParietal | organBone.parietal!⇒boneParietal | organBone.008-parietal!⇒boneParietal | parietal-bone!⇒boneParietal | skeletonHead.parietal-008!⇒boneParietal
+  McshHlth000005:3565  idBoneHmn009gntr  "organBone.occipital-009"  names: boneOccipital | organBone.occipital!⇒boneOccipital | organBone.009-occipital!⇒boneOccipital | occipital-bone!⇒boneOccipital | skeletonHead.occipital-009!⇒boneOccipital
+  McshHlth000005:3594  idBoneHmn010gntr  "organBone.temporal-010"  names: boneTemporal | organBone.temporal!⇒boneTemporal | organBone.010-temporal!⇒boneTemporal | temporal-bone!⇒boneTemporal | skeletonHead.temporal-010!⇒boneTemporal
+  McshHlth000005:3623  idBoneHmn011gntr  "organBone.sphenoid-011"  names: boneSphenoid | organBone.sphenoid!⇒boneSphenoid | organBone.011-sphenoid!⇒boneSphenoid | sphenoid-bone!⇒boneSphenoid | skeletonHead.sphenoid-011!⇒boneSphenoid
+  McshHlth000005:3652  idBoneHmn012gntr  "organBone.nasal-012"  names: boneNasal | organBone.nasal!⇒boneNasal | organBone.012-nasal!⇒boneNasal | nasal-bone!⇒boneNasal | skeletonHead.nasal-012!⇒boneNasal
+  McshHlth000005:3681  idBoneHmn013gntr  "organBone.zygomatic-013"  names: boneZygomatic | organBone.zygomatic!⇒boneZygomatic | organBone.013-zygomatic!⇒boneZygomatic | zygomatic-bone!⇒boneZygomatic | skeletonHead.zygomatic-013!⇒boneZygomatic
+  McshHlth000005:3712  idBoneHmn014gntr  "organBone.upper-jaw-014"  names: boneJawUpper | organBone.upper-jaw!⇒boneJawUpper | organBone.014-upper-jaw!⇒boneJawUpper | maxillae!⇒boneJawUpper | upper-jaw!⇒boneJawUpper | skeletonHead.upper-jaw-014!⇒boneJawUpper
+  McshHlth000008:56  idHlthHmnatt001gntr  "01_human of health"  names: health'human | health'01_human!⇒health'human | health'att001-human!⇒health'human
+  McshHlth000011:3006  idDssHmn132gntr  "DissSystCirculatory.hypotension-132"  names: DissHypotension | disease.132-hypotension!⇒DissHypotension | disease.hypotension-132!⇒DissHypotension | hypotension!⇒DissHypotension | low-blood-pressure!⇒DissHypotension | DissSystCirculatory.hypotension-132!⇒DissHypotension
+  McshHlth000011:3081  idDssHmn039gntr  "DissSystCirculatory.angina-039"  names: DissAngina | disease.039-angina!⇒DissAngina | disease.angina-pectoris-039!⇒DissAngina | angina-pectoris!⇒DissAngina | cardialgia!⇒DissAngina | disease.angina!⇒DissAngina | DissSystCirculatory.angina-039!⇒DissAngina
+  McshHlth000011:3643  idDssHmn165gntr  "disease.nephritis-165"  names: DissNephritis | disease.165-nephritis!⇒DissNephritis | disease.nephritis-165!⇒DissNephritis | nephritis!⇒DissNephritis
+  McshHlth000011:4671  idDssHmn075gntr  "disease.dermatitis-075"  names: DissDermatitis | disease.075-dermatitis!⇒DissDermatitis | disease.dermatitis-075!⇒DissDermatitis | dermatitis-disease!⇒DissDermatitis
+  McshHlth000011:6453  idDssHmn111gntr  "DissEye.astigmatism-111"  names: DissAstigmatism | disease.111-astigmatism!⇒DissAstigmatism | disease.astigmatism-111!⇒DissAstigmatism | astigmatism!⇒DissAstigmatism
+  McshHlth000011:6518  idDssHmn118gntr  "DissEye.hypermetropia-118"  names: DissHypermetropia | disease.118-hypermetropia!⇒DissHypermetropia | disease.hypermetropia-118!⇒DissHypermetropia | hypermetropia!⇒DissHypermetropia
+  McshHlth000011:6550  idDssHmn119gntr  "DissEye.myopia-119"  names: DissMyopia | disease.119-myopia!⇒DissMyopia | disease.myopia-119!⇒DissMyopia | disease.nearsightedness!⇒DissMyopia | nearsightedness!⇒DissMyopia | myopia!⇒DissMyopia
+  McshHlth000011:8199  idDssHmn113gntr  "disease.aerophagia-113"  names: DissAerophagia | disease.113-aerophagia!⇒DissAerophagia | disease.aerophagia-113!⇒DissAerophagia | aerophagia!⇒DissAerophagia
+  McshHlth000011:11588  idDssHmn200gntr  "disease.undernourishment-200"  names: DissUndernourishment | disease.200-undernourishment!⇒DissUndernourishment | disease.undernourishment-200!⇒DissUndernourishment | undernourishment!⇒DissUndernourishment
+  McshHlth000011:12938  idDssHmn121gntr  "disease.jaundice-121"  names: DissJaundice | disease.121-jaundice!⇒DissJaundice | disease.jaundice-121!⇒DissJaundice | jaundice!⇒DissJaundice
+  McshHlth000011:12960  idDssHmn122gntr  "disease.obstructive-jaundice-122"  names: DissObstructive_jaundice | disease.122-obstructive-jaundice!⇒DissObstructive_jaundice | disease.obstructive-jaundice-122!⇒DissObstructive_jaundice | obstructive-jaundice!⇒DissObstructive_jaundice
+  McshHlth000011:12986  idDssHmn123gntr  "disease.cholecystitis-123"  names: DissCholecystitis | disease.123-cholecystitis!⇒DissCholecystitis | disease.cholecystitis-123!⇒DissCholecystitis | cholecystitis!⇒DissCholecystitis
+  McshHlth000011:13013  idDssHmn125gntr  "disease.gallstone-125"  names: DissGallstone | cholelithiasis!⇒DissGallstone | disease.125-gallstone!⇒DissGallstone | disease.gallstone-125!⇒DissGallstone | gallstone-disease!⇒DissGallstone
+  McshHlth000011:13235  idDssHmn133gntr  "disease.pneumonia-133"  names: DissPneumonia | disease.133-pneumonia!⇒DissPneumonia | disease.pneumonia-133!⇒DissPneumonia | pneumonia!⇒DissPneumonia
+  McshHlth000011:13917  idDssHmn143gntr  "disease.inflammation-143"  names: DissInflammation | disease.143-inflammation!⇒DissInflammation | disease.inflammation-143!⇒DissInflammation | inflammation!⇒DissInflammation
+  McshHlth000011:14083  idDssHmn147gntr  "disease.chronic-obstructive-pulmonary-147"  names: DissChronic_obstructive_pulmonary | disease.147-chronic-obstructive-pulmonary!⇒DissChronic_obstructive_pulmonary | disease.chronic-obstructive-pulmonary-147!⇒DissChronic_obstructive_pulmonary | chronic-obstructive-pulmonary-disease-(copd)!⇒DissChronic_obstructive_pulmonary | copd!⇒DissChronic_obstructive_pulmonary
+  McshHlth000011:14362  idDssHmn099gntr  "disease.flat-feet-099"  names: DissFlat_feet | disease.099-flat-feet!⇒DissFlat_feet | disease.flat-feet-099!⇒DissFlat_feet | flat-feet!⇒DissFlat_feet | foot-arch--disease!⇒DissFlat_feet
+  McshHlth000013:9267  idFoodHmn149gntr  "meat.tas-kebab"  names: foodTas_kebab | food.149-tas-kebab!⇒foodTas_kebab | food.tas-kebab-149!⇒foodTas_kebab | meatKebab!⇒foodTas_kebab | foodMeat.tas-kebab!⇒foodTas_kebab
+  McshHlth000014:525  idMedHmnognFgntr  "15_organization of medication"  names: medication'organization!⇒Mdtnogzn | Mdtnogzn!=medication'organization | ogznMed!⇒Mdtnogzn
+  McshHlth000014:2407  idMedHmn025gntr  "medication.clomifen-025"  names: MdtnClomifen | medication.025-clomifen!⇒MdtnClomifen | medication.clomifen-025!⇒MdtnClomifen | clomifen-medication-025!⇒MdtnClomifen
+  McshHlth000016:792  idThrpHmnPhrmcgntr  "therapy.pharmacotherapy"  names: pharmacotherapy!⇒ThrpPharmaco | ThrpPharmaco!=pharmacotherapy | therapy.pharmacotherapy!⇒ThrpPharmaco
+  McshOgm000005:1812  idHrmnHmn009gntr  "hormoneHumn.adrenaline-009"  names: HrmnHumnAdrenaline | hormoneHumn.adrenaline-009!⇒HrmnHumnAdrenaline | hormoneHumn.009-adrenaline!⇒HrmnHumnAdrenaline | adrenaline!⇒HrmnHumnAdrenaline | epinephrine!⇒HrmnHumnAdrenaline
+  McshOgm000005:1850  idHrmnHmn018gntr  "hormoneHumn.norepinephrine-018"  names: HrmnHumnNorepinephrine | hormoneHumn.norepinephrine-018!⇒HrmnHumnNorepinephrine | hormoneHumn.018-norepinephrine!⇒HrmnHumnNorepinephrine | norepinephrine!⇒HrmnHumnNorepinephrine
+  McshOgm000005:1887  idHrmnHmn012gntr  "hormoneHumn.thyroid-calcitonin-012"  names: HrmnHumnThyroid_calcitonin | hormoneHumn.thyroid-calcitonin-012!⇒HrmnHumnThyroid_calcitonin | hormoneHumn.012-thyroid-calcitonin!⇒HrmnHumnThyroid_calcitonin | thyroid-calcitonin!⇒HrmnHumnThyroid_calcitonin
+  McshOgm000005:1971  idHrmnHmn005gntr  "hormoneHumn.growth-hormone-005"  names: HrmnHumnGrowth | hormoneHumn.growth-005!⇒HrmnHumnGrowth | hormoneHumn.005-growth!⇒HrmnHumnGrowth | growth-hormone!⇒HrmnHumnGrowth
+  McshOgm000005:2036  idHrmnHmn025gntr  "hormoneHumn.oxytocin-025"  names: HrmnHumnOxytocin | hormoneHumn.oxytocin-025!⇒HrmnHumnOxytocin | hormoneHumn.025-oxytocin!⇒HrmnHumnOxytocin | oxytocin!⇒HrmnHumnOxytocin
+  McshOgm000005:2076  idHrmnHmn022gntr  "hormoneHumn.prolactin-022"  names: HrmnHumnProlactin | hormoneHumn.prolactin-022!⇒HrmnHumnProlactin | hormoneHumn.022-prolactin!⇒HrmnHumnProlactin | prolactin!⇒HrmnHumnProlactin
+  McshOgm000005:2114  idHrmnHmn006gntr  "hormoneHumn.basopressin-006"  names: HrmnHumnBasopressin | hormoneHumn.basopressin-006!⇒HrmnHumnBasopressin | hormoneHumn.006-basopressin!⇒HrmnHumnBasopressin | basopressin!⇒HrmnHumnBasopressin
+  McshOgm000005:2148  idHrmnHmn024gntr  "hormoneHumn.adrenocorticotropic-024"  names: HrmnHumnAdrenocorticotropic | hormoneHumn.adrenocorticotropic-024!⇒HrmnHumnAdrenocorticotropic | hormoneHumn.024-adrenocorticotropic!⇒HrmnHumnAdrenocorticotropic | adrenocorticotropic-hormone!⇒HrmnHumnAdrenocorticotropic
+  McshOgm000005:2193  idHrmnHmn011gntr  "hormoneHumn.thyroid-stimulating-011"  names: HrmnHumnThyroid_stimulating | hormoneHumn.thyroid-stimulating-011!⇒HrmnHumnThyroid_stimulating | hormoneHumn.011-thyroid-stimulating!⇒HrmnHumnThyroid_stimulating | thyroid-stimulating-hormone!⇒HrmnHumnThyroid_stimulating
+  McshOgm000005:2230  idHrmnHmn010gntr  "hormoneHumn.follicle-stimulating-010"  names: HrmnHumnFollicle_stimulating | hormoneHumn.follicle-stimulating-010!⇒HrmnHumnFollicle_stimulating | hormoneHumn.010-follicle-stimulating!⇒HrmnHumnFollicle_stimulating | follicle-stimulating-hormone!⇒HrmnHumnFollicle_stimulating
+  McshOgm000005:2271  idHrmnHmn026gntr  "hormoneHumn.luteinizing-026"  names: HrmnHumnLuteinizing | hormoneHumn.luteinizing-026!⇒HrmnHumnLuteinizing | hormoneHumn.026-luteinizing!⇒HrmnHumnLuteinizing | luteinizing-hormone!⇒HrmnHumnLuteinizing
+  McshOgm000005:2311  idHrmnHmn004gntr  "hormoneHumn.antidiuretic-004"  names: HrmnHumnAntidiuretic | hormoneHumn.antidiuretic-004!⇒HrmnHumnAntidiuretic | hormoneHumn.004-antidiuretic!⇒HrmnHumnAntidiuretic | antidiuretic-hormone!⇒HrmnHumnAntidiuretic
+  McshOgm000005:2356  idHrmnHmn016gntr  "hormoneHumn.melanotropin-016"  names: HrmnHumnMelanotropin | hormoneHumn.melanotropin-016!⇒HrmnHumnMelanotropin | hormoneHumn.016-melanotropin!⇒HrmnHumnMelanotropin | melanotropin!⇒HrmnHumnMelanotropin
+  McshOgm000005:2395  idHrmnHmn013gntr  "hormoneHumn.thyroxine-013"  names: HrmnHumnThyroxine | hormoneHumn.thyroxine-013!⇒HrmnHumnThyroxine | hormoneHumn.013-thyroxine!⇒HrmnHumnThyroxine | thyroxine!⇒HrmnHumnThyroxine
+  McshOgm000005:2466  idHrmnHmn007gntr  "hormoneHumn.glucagon-007"  names: HrmnHumnGlucagon | hormoneHumn.glucagon-007!⇒HrmnHumnGlucagon | hormoneHumn.007-glucagon!⇒HrmnHumnGlucagon | glucagon!⇒HrmnHumnGlucagon
+  McshOgm000005:2508  idHrmnHmn020gntr  "hormoneHumn.parathyroid-020"  names: HrmnHumnParathyroid | hormoneHumn.parathyroid-020!⇒HrmnHumnParathyroid | hormoneHumn.020-parathyroid!⇒HrmnHumnParathyroid | parathyroid-hormone!⇒HrmnHumnParathyroid
+  McshOgm000005:2557  idHrmnHmn038gntr  "hormoneHumn.estradiol-038"  names: HrmnHumnEstradiol | hormoneHumn.038-estradiol!⇒HrmnHumnEstradiol | hormoneHumn.estradiol-038!⇒HrmnHumnEstradiol | estradiol-hormone!⇒HrmnHumnEstradiol
+  McshOgm000005:2591  idHrmnHmn008gntr  "hormoneHumn.female-008"  names: HrmnHumnFemale | hormoneHumn.female-008!⇒HrmnHumnFemale | hormoneHumn.008-female!⇒HrmnHumnFemale | female-hormone!⇒HrmnHumnFemale
+  McshOgm000005:2612  idHrmnHmn019gntr  "hormoneHumn.estrogen"  names: HrmnHumnEstrogen | hormoneHumn.estrogen-019!⇒HrmnHumnEstrogen | hormoneHumn.019-estrogen!⇒HrmnHumnEstrogen | estrogen!⇒HrmnHumnEstrogen
+  McshOgm000005:2649  idHrmnHmn021gntr  "hormoneHumn.progesterone"  names: HrmnHumnProgesterone | hormoneHumn.progesterone-021!⇒HrmnHumnProgesterone | hormoneHumn.021-progesterone!⇒HrmnHumnProgesterone | progesterone!⇒HrmnHumnProgesterone
+
+=== NO-NAME (0) — no name:: in the owner section
+
+

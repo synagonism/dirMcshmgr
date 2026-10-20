@@ -1,0 +1,2150 @@
+=== RENAMED (2149 lines) — Dss… name → Diss… (ids/links unchanged; bare 'Dss!⇒disease' kept)
+  McshHlth000002:8680  <br>* McshEngl.DissThroatSore,
+  McshHlth000002:8690  <br>* McshEngl.DissThroatSore_Gntr,
+  McshHlth000002:8693  <br>* McshEngl.DissThroatSore:disease,
+  McshHlth000002:8697  <h4 id="idBdyHmn220therapyH4">therapy of DissThroatSore
+  McshHlth000002:8729  <br>* McshEngl.DissThroatSore'therapy,
+  McshHlth000003:2804  <br>* McshEngl.DissMemory,
+  McshHlth000003:2805  <br>* McshEngl.disease.286-memory!⇒DissMemory,
+  McshHlth000003:2806  <br>* McshEngl.disease.memory!⇒DissMemory,
+  McshHlth000003:2807  <br>* McshEngl.SystMemory'disease!⇒DissMemory,
+  McshHlth000003:2810  <section id="idBrnHmnatt061DissAmns">
+  McshHlth000003:2811  <h3 id="idBrnHmnatt061DissAmnsH3">DissMemory.amnesia
+  McshHlth000003:2813  <p id="idBrnHmnatt061DissAmnsdsn">description::
+  McshHlth000003:2817  <a class="clsHide" href="#idBrnHmnatt061DissAmnsdsn"></a></p>
+  McshHlth000003:2818  <p id="idBrnHmnatt061DissAmnsnam">name::
+  McshHlth000003:2819  <br>* McshEngl.DissAmnesia,
+  McshHlth000003:2820  <br>* McshEngl.amnesia!⇒DissAmnesia,
+  McshHlth000003:2821  <br>* McshEngl.disease.287-amnesia!⇒DissAmnesia,
+  McshHlth000003:2822  <br>* McshEngl.disease.amnesia!⇒DissAmnesia,
+  McshHlth000003:2823  <br>* McshEngl.DissMemory.amnesia!⇒DissAmnesia,
+  McshHlth000003:2824  <a class="clsHide" href="#idBrnHmnatt061DissAmnsnam"></a></p>
+  McshHlth000010:6  <title>Mcsh.DissOgm!=disease-of-organism
+  McshHlth000010:8  <meta name="keywords" content="disease-of-organism, DissOgm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshHlth000010:16  <br>senso-concept-Mcsh (DissOgm)
+  McshHlth000010:21  <h1 id="idOverviewH1">overview of DissOgm
+  McshHlth000010:34  <br>* McshEngl.disease-of-organism!⇒DissOgm,
+  McshHlth000010:35  <br>* McshEngl.DissOgm!=disease-of-organism,
+  McshHlth000010:36  <br>* McshEngl.DissOgm!~McsHlth000010,
+  McshHlth000010:37  <br>* McshEngl.McshHlth000010.last.html//dirHlth//dirMcsh!⇒DissOgm,
+  McshHlth000010:38  <br>* McshEngl.dirHlth/McshHlth000010.last.html!⇒DissOgm,
+  McshHlth000010:39  <br>* McshEngl.diseaseOgm!⇒DissOgm,
+  McshHlth000010:40  <br>* McshEngl.disease.organism!⇒DissOgm,
+  McshHlth000010:41  <br>* McshEngl.disorder.organism!⇒DissOgm,
+  McshHlth000010:42  <br>* McshEngl.health-problem--of-organism!⇒DissOgm,
+  McshHlth000010:43  <br>* McshEngl.Ogsm'01_disease!⇒DissOgm,
+  McshHlth000010:44  <br>* McshEngl.Ogsm'att008-disease!⇒DissOgm,
+  McshHlth000010:45  <br>* McshEngl.Ogsm'disease-att008!⇒DissOgm,
+  McshHlth000010:47  <br>* McshZhon.jíbìng-疾病!=DissOgm,
+  McshHlth000010:48  <br>* McshZhon.疾病-jíbìng!=DissOgm,
+  McshHlth000010:50  <br>* McshEspo.malsano!=DissOgm,
+  McshHlth000010:52  <br>* McshElln.ασθένεια-οργανισμού!η!=DissOgm,
+  McshHlth000010:53  <br>* McshElln.αρρώστια-οργανισμού!η!=DissOgm,
+  McshHlth000010:54  <br>* McshElln.νόσημα-οργανισμού!το!=DissOgm,
+  McshHlth000010:55  <br>* McshElln.νόσος-οργανισμού!η!=DissOgm,
+  McshHlth000010:56  <br>* McshElln.πάθηση-οργανισμού!η!=DissOgm,
+  McshHlth000010:61  <h1 id="idDssOgmeftFH1">01_symptom of DissOgm
+  McshHlth000010:68  <br>* McshEngl.DissOgm'effect,
+  McshHlth000010:69  <br>* McshEngl.DissOgm'symptom,
+  McshHlth000010:70  <br>* McshEngl.symptom-of-DissOgm,
+  McshHlth000010:75  <h1 id="idDssOgmcasFH1">02_cause of DissOgm
+  McshHlth000010:82  <br>* McshEngl.cause-of-DissOgm,
+  McshHlth000010:83  <br>* McshEngl.DissOgm'cause,
+  McshHlth000010:88  <h1 id="idDssOgmdgnsFH1">03_diagnosis of DissOgm
+  McshHlth000010:95  <br>* McshEngl.DissOgm'diagnosis,
+  McshHlth000010:96  <br>* McshEngl.diagnosis-of-DissOgm, /daignósis/!⇒DissOgm'diagnosis,
+  McshHlth000010:98  <br>* McshElln.διάγνωση-πάθησης-οργανισμού!=DissOgm'diagnosis,
+  McshHlth000010:103  <h1 id="idDssOgmthrpFH1">04_therapy of DissOgm
+  McshHlth000010:111  <br>* McshEngl.DissOgm'therapy!⇒therapyOgm,
+  McshHlth000010:112  <br>* McshEngl.DissOgm'treatment!⇒therapyOgm,
+  McshHlth000010:145  <h1 id="idDssOgmprtnFH1">05_protection of DissOgm
+  McshHlth000010:152  <br>* McshEngl.DissOgm'protection,
+  McshHlth000010:157  <h1 id="idDssOgmfoodFH1">06_food of DissOgm
+  McshHlth000010:164  <br>* McshEngl.DissOgm'food,
+  McshHlth000010:169  <h1 id="idDssHmn008H1">07_stats of DissOgm
+  McshHlth000010:176  <br>* McshEngl.DissOgm'stats,
+  McshHlth000010:181  <h1 id="idDssOgmdongH1">DOING of DissOgm
+  McshHlth000010:188  <br>* McshEngl.DissOgm'attDoing,
+  McshHlth000010:189  <br>* McshEngl.DissOgm'doing,
+  McshHlth000010:194  <h1 id="idDssOgmevogH1">10_evoluting of DissOgm
+  McshHlth000010:201  <br>* McshEngl.evoluting-of-DissOgm,
+  McshHlth000010:202  <br>* McshEngl.DissOgm'evoluting,
+  McshHlth000010:207  <h1 id="idDssOgmwptrH1">WHOLE-PART-TREE of DissOgm
+  McshHlth000010:213  <br>* McshEngl.DissOgm'whole-part-tree,
+  McshHlth000010:214  <br>* McshEngl.DissOgm'part-whole-tree,
+  McshHlth000010:219  <br>* McshEngl.DissOgm_Wltr,
+  McshHlth000010:222  <br>* McshEngl.DissOgm_Prtr,
+  McshHlth000010:227  <h1 id="idDssOgmgstrH1">GENERIC-SPECIFIC-TREE of DissOgm
+  McshHlth000010:233  <br>* McshEngl.DissOgm'generic-specific-tree,
+  McshHlth000010:234  <br>* McshEngl.DissOgm'specific-generic-tree,
+  McshHlth000010:237  <br>* McshEngl.DissOgm_Gntr,
+  McshHlth000010:243  <br>* McshEngl.DissOgm.specific,
+  McshHlth000010:244  <br>* McshEngl.DissOgm_Sptr,
+  McshHlth000010:250  <h1 id="idDssOgm001H1">DissOgm.human-001 (<a class="clsPreview" href="../dirHlth/McshHlth000011.last.html#idOverview">link</a>)
+  McshHlth000010:255  <h1 id="idDssPlntH1">DissOgm.plant-002
+  McshHlth000010:259  <br>· plant-disease is <a class="clsPreview" href="#idOverview">a-DissOgm</a> of <a class="clsPreview" href="../dirOgm/McshOgm000010.last.html#idOverview">a-plant</a>.
+  McshHlth000010:262  <br>* McshEngl.plant-disease!⇒DissPlnt,
+  McshHlth000010:263  <br>* McshEngl.DissPlnt!=plant-disease,
+  McshHlth000010:264  <br>* McshEngl.DissOgm.002-plant!⇒DissPlnt,
+  McshHlth000010:265  <br>* McshEngl.DissOgm.plant-002!⇒DissPlnt,
+  McshHlth000010:266  <br>* McshEngl.diseasePlant!⇒DissPlnt,
+  McshHlth000010:267  <br>* McshEngl.ogmPlant'01_disease!⇒DissPlnt,
+  McshHlth000010:268  <br>* McshEngl.ogmPlant'att001-disease!⇒DissPlnt,
+  McshHlth000010:269  <br>* McshEngl.ogmPlant'disease-att001!⇒DissPlnt,
+  McshHlth000010:273  <h2 id="idDssPlntatt001H2">01_symptom of DissPlnt
+  McshHlth000010:280  <br>* McshEngl.DissPlnt'01_symptom,
+  McshHlth000010:281  <br>* McshEngl.DissPlnt'att001-symptom,
+  McshHlth000010:282  <br>* McshEngl.DissPlnt'symptom-att001,
+  McshHlth000010:287  <h2 id="idDssPlntatt002H2">02_cause of DissPlnt
+  McshHlth000010:294  <br>* McshEngl.DissPlnt'02_cause,
+  McshHlth000010:295  <br>* McshEngl.DissPlnt'att002-cause,
+  McshHlth000010:296  <br>* McshEngl.DissPlnt'cause-att002,
+  McshHlth000010:301  <h2 id="idDssPlntatt003H2">03_diagnosis of DissPlnt
+  McshHlth000010:308  <br>* McshEngl.DissPlnt'03_diagnosis,
+  McshHlth000010:309  <br>* McshEngl.DissPlnt'att003-diagnosis,
+  McshHlth000010:310  <br>* McshEngl.DissPlnt'diagnosis-att003,
+  McshHlth000010:315  <h2 id="idDssPlntatt004H2">04_therapy of DissPlnt
+  McshHlth000010:323  <br>* McshEngl.DissPlnt'04_therapy!⇒therapyPlnt,
+  McshHlth000010:324  <br>* McshEngl.DissPlnt'att004-therapy!⇒therapyPlnt,
+  McshHlth000010:325  <br>* McshEngl.DissPlnt'therapy-att004!⇒therapyPlnt,
+  McshHlth000010:391  <h2 id="idDssPlntatt005H2">05_protection of DissPlnt
+  McshHlth000010:398  <br>* McshEngl.DissPlnt'05_protection,
+  McshHlth000010:399  <br>* McshEngl.DissPlnt'att005-protection,
+  McshHlth000010:400  <br>* McshEngl.DissPlnt'protection-att005,
+  McshHlth000010:405  <h2 id="idDssPlntatt006H2">06_food of DissPlnt
+  McshHlth000010:412  <br>* McshEngl.DissPlnt'06_food,
+  McshHlth000010:413  <br>* McshEngl.DissPlnt'att006-food,
+  McshHlth000010:414  <br>* McshEngl.DissPlnt'food-att006,
+  McshHlth000010:419  <h2 id="idDssPlntatt007H2">07_stats of DissPlnt
+  McshHlth000010:426  <br>* McshEngl.DissPlnt'07_stats,
+  McshHlth000010:427  <br>* McshEngl.DissPlnt'att007-stats,
+  McshHlth000010:428  <br>* McshEngl.DissPlnt'stats-att007,
+  McshHlth000010:433  <h2 id="idDssPlntrscH2">08_resource of DissPlnt
+  McshHlth000010:440  <br>* McshEngl.DissPlnt'08_resource,
+  McshHlth000010:441  <br>* McshEngl.DissPlnt'att008-resource,
+  McshHlth000010:442  <br>* McshEngl.DissPlnt'resource-att008,
+  McshHlth000010:446  <h3 id="idDssPlntatt011H3">phytopathology of DissPlnt
+  McshHlth000010:454  <br>* McshEngl.DissPlnt'att011-phytopathology,
+  McshHlth000010:455  <br>* McshEngl.DissPlnt'phytopathology-att011,
+  McshHlth000010:463  <h2 id="idDssPlntdongH2">DOING of DissPlnt
+  McshHlth000010:470  <br>* McshEngl.DissPlnt'doing,
+  McshHlth000010:471  <br>* McshEngl.DissPlnt'att009-DOING,
+  McshHlth000010:472  <br>* McshEngl.DissPlnt'DOING-att009,
+  McshHlth000010:477  <h2 id="idDssPlntevogH2">10_evoluting of DissPlnt
+  McshHlth000010:484  <br>* McshEngl.DissPlnt'10_evoluting,
+  McshHlth000010:485  <br>* McshEngl.DissPlnt'att010-evoluting,
+  McshHlth000010:486  <br>* McshEngl.DissPlnt'evoluting-att010,
+  McshHlth000010:491  <h2 id="idDssPlntgstrH2">GENERIC-SPECIFIC-TREE of DissPlnt
+  McshHlth000010:497  <br>* McshEngl.DissPlnt'generic-specific-tree,
+  McshHlth000010:498  <br>* McshEngl.DissPlnt'specific-generic-tree,
+  McshHlth000010:501  <br>* McshEngl.DissPlnt_Gntr,
+  McshHlth000010:506  <br>* McshEngl.DissPlnt.specific,
+  McshHlth000010:507  <br>* McshEngl.DissPlnt_Sptr,
+  McshHlth000010:513  <h2 id="idDssPlnt001H2">DissPlnt.olive-quick-decline-syndrome-OQDS-001
+  McshHlth000010:524  <br>* McshEngl.DissPlnt.001-olive-quick-decline-syndrome-OQDS,
+  McshHlth000010:525  <br>* McshEngl.DissPlnt.OQDS-olive-quick-decline-syndrome-001,
+  McshHlth000010:526  <br>* McshEngl.DissPlnt.olive-quick-decline-syndrome-OQDS-001,
+  McshHlth000010:532  <h3 id="idDssPlnt001irscH3">info-resource of DissPlntOQDS
+  McshHlth000010:539  <br>* McshEngl.DissPlntOQDS'info-resource,
+  McshHlth000010:545  <h2 id="idDssPlnt002H2">DissPlnt.nutrient-deficiency-002
+  McshHlth000010:552  <br>* McshEngl.DissPlnt.002-nutrient-deficiency,
+  McshHlth000010:553  <br>* McshEngl.DissPlnt.nutrient-deficiency-002,
+  McshHlth000010:558  <h2 id="idDssPlnt003H2">DissPlnt.virus-003
+  McshHlth000010:567  <br>* McshEngl.DissPlnt.003-virus,
+  McshHlth000010:568  <br>* McshEngl.DissPlnt.virus-003,
+  McshHlth000010:569  <br>* McshEngl.virus-DissPlnt-003,
+  McshHlth000010:574  <h2 id="idDssPlnt004H2">DissPlnt.bacterium-004
+  McshHlth000010:581  <br>* McshEngl.DissPlnt.004-bacterium,
+  McshHlth000010:582  <br>* McshEngl.DissPlnt.bacterium-004,
+  McshHlth000010:587  <h2 id="idDssPlnt005H2">DissPlnt.fungus-005
+  McshHlth000010:594  <br>* McshEngl.DissPlntFungus,
+  McshHlth000010:595  <br>* McshEngl.DissPlnt.005-fungus!⇒DissPlntFungus,
+  McshHlth000010:596  <br>* McshEngl.DissPlnt.fungus-005!⇒DissPlntFungus,
+  McshHlth000010:598  <br>* McshElln.μυκητίαση-φυτών!=DissPlntFungus,
+  McshHlth000010:602  <h3 id="idDssPlnt005thrpH3">therapy of DissPlntFungus
+  McshHlth000010:609  <br>* McshEngl.DissPlntFungus'therapy,
+  McshHlth000010:613  <h4 id="idDssPlnt005fgcdH4">fungicide of DissPlntFungus
+  McshHlth000010:628  <br>* McshEngl.DissPlntFungus'fungicide!⇒fungicidePlant, /fa-nji-sá-id/!⇒fungicidePlant,
+  McshHlth000010:630  <br>* McshEngl.DissPlntFungus'therapy'fungicide!⇒fungicidePlant,
+  McshHlth000010:639  <h2 id="idDssPlnt009H2">DissPlnt.pest-009
+  McshHlth000010:647  <br>* McshEngl.DissPlntPest,
+  McshHlth000010:648  <br>* McshEngl.DissPlnt.009-pest!⇒DissPlntPest,
+  McshHlth000010:649  <br>* McshEngl.DissPlnt.pest-009!⇒DissPlntPest,
+  McshHlth000010:650  <br>* McshEngl.pest-DissPlnt-009!⇒DissPlntPest,
+  McshHlth000010:654  <h3 id="idDssPlnt009att001H3">pesticide of DissPlntPest
+  McshHlth000010:663  <br>* McshEngl.DissPlntPest'pesticide!⇒pesticide,
+  McshHlth000010:671  <h2 id="idDssPlnt010H2">DissPlnt.animal-010
+  McshHlth000010:679  <br>* McshEngl.DissPlntAnimal,
+  McshHlth000010:680  <br>* McshEngl.DissPlnt.010-animal!⇒DissPlntAnimal,
+  McshHlth000010:681  <br>* McshEngl.DissPlnt.animal-010!⇒DissPlntAnimal,
+  McshHlth000010:682  <br>* McshEngl.animal-DissPlnt-010!⇒DissPlntAnimal,
+  McshHlth000010:686  <h3 id="idDssPlnt011H3">DissPlnt.aphid-011
+  McshHlth000010:722  <br>* McshEngl.DissPlntAphid,
+  McshHlth000010:723  <br>* McshEngl.DissPlnt.011-aphid!⇒DissPlntAphid,
+  McshHlth000010:724  <br>* McshEngl.DissPlnt.aphid-011!⇒DissPlntAphid,
+  McshHlth000010:725  <br>* McshEngl.aphid-DissPlnt-011!⇒DissPlntAphid,
+  McshHlth000010:726  <br>* McshEngl.DissPlntAnimal.aphid-011!⇒DissPlntAphid,
+  McshHlth000010:728  <br>* McshElln.αφίδας-πάθηση!=DissPlntAphid,
+  McshHlth000010:729  <br>* McshElln.μελίγκρας-πάθηση!=DissPlntAphid,
+  McshHlth000010:730  <br>* McshElln.ψείρα-φυτού-πάθηση!=DissPlntAphid,
+  McshHlth000010:736  <h2 id="idDssPlnt008H2">DissPlnt.weed-008
+  McshHlth000010:743  <br>* McshEngl.DissPlntWeed,
+  McshHlth000010:744  <br>* McshEngl.DissPlnt.008-weed!⇒DissPlntWeed,
+  McshHlth000010:745  <br>* McshEngl.DissPlnt.weed-008!⇒DissPlntWeed,
+  McshHlth000010:746  <br>* McshEngl.weed-disease-of-plant!⇒DissPlntWeed,
+  McshHlth000010:748  <br>* McshElln.ζιζανιοπάθηση!=DissPlntWeed,
+  McshHlth000010:752  <h3 id="idDssPlnt008att001H3">05_protection of DissPlntWeed
+  McshHlth000010:759  <br>* McshEngl.DissPlntWeed'protection,
+  McshHlth000010:763  <h4 id="idDssPlnt008att002H4">weedkiller of DissPlntWeed
+  McshHlth000010:774  <br>* McshEngl.DissPlntWeed'weedkiller!⇒weedkiller,
+  McshHlth000010:776  <br>* McshEngl.DissPlntWeed'protection'weedkiller!⇒weedkiller,
+  McshHlth000010:785  <h2 id="idDssPlnt006H2">DissPlnt.downy-mildew-006
+  McshHlth000010:792  <br>* McshEngl.DissPlnt.006-downy-mildew,
+  McshHlth000010:793  <br>* McshEngl.DissPlnt.downy-mildew-006,
+  McshHlth000010:800  <h2 id="idDssPlnt007H2">DissPlnt.powdery-mildew-007
+  McshHlth000010:809  <br>* McshEngl.DissPlnt.007-powdery-mildew,
+  McshHlth000010:810  <br>* McshEngl.DissPlnt.powdery-mildew-007,
+  McshHlth000010:818  <h1 id="idDssOgm003H1">DissOgm.viral-infection-003
+  McshHlth000010:826  <br>* McshEngl.DissOgmViral,
+  McshHlth000010:827  <br>* McshEngl.DissOgm.003-viral-infection!⇒DissOgmViral,
+  McshHlth000010:828  <br>* McshEngl.DissOgm.viral-infection-003!⇒DissOgmViral,
+  McshHlth000010:829  <br>* McshEngl.viral-infection-of-Ogsm-003!⇒DissOgmViral,
+  McshHlth000010:833  <h2 id="idDssOgm003dgnsH2">diagnosis of DissOgmViral
+  McshHlth000010:841  <br>* McshEngl.DissOgmViral'diagnosis,
+  McshHlth000010:847  <h1 id="idDssOgm004H1">DissOgm.infectious-004
+  McshHlth000010:867  <br>* McshEngl.DissOgmInfectious,
+  McshHlth000010:868  <br>* McshEngl.DissOgm.004-infectious!⇒DissOgmInfectious,
+  McshHlth000010:869  <br>* McshEngl.DissOgm.infectious-004!⇒DissOgmInfectious,
+  McshHlth000010:870  <br>* McshEngl.infectiousOgm!⇒DissOgmInfectious,
+  McshHlth000010:887  DissOgm
+  McshHlth000010:893  <br>· use the-prefix '<span class="clsColorRed">DissOgm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concepts</a> related to current concept 'disease-of-organism'.
+  McshHlth000011:47  <br>* McshEngl.DissHmn!⇒disease,
+  McshHlth000011:48  <br>* McshEngl.DissOgm.001-human!⇒disease,
+  McshHlth000011:49  <br>* McshEngl.DissOgm.human-001!⇒disease,
+  McshHlth000011:166  <br>* McshEngl.DissInfectious'cause,
+  McshHlth000011:414  <br>* McshEngl.protection-of-disease!⇒Dissprotection,
+  McshHlth000011:415  <br>* McshEngl.Dissprotection!=protection-of-disease,
+  McshHlth000011:416  <br>* McshEngl.disease'05_protection!⇒Dissprotection,
+  McshHlth000011:417  <br>* McshEngl.disease'att005-protection!⇒Dissprotection,
+  McshHlth000011:418  <br>* McshEngl.disease'protection!⇒Dissprotection,
+  McshHlth000011:419  <br>* McshEngl.disease'prevention!⇒Dissprotection,
+  McshHlth000011:421  <br>* McshElln.πάθησης-πρόληψη!=Dissprotection,
+  McshHlth000011:422  <br>* McshElln.πάθησης-προστασία!=Dissprotection,
+  McshHlth000011:423  <br>* McshElln.πάθησης-προφύλαξη!=Dissprotection,
+  McshHlth000011:427  <h2 id="idDssHmn005FgstrH2">GENERIC-SPECIFIC-TREE of Dissprotection
+  McshHlth000011:433  <br>* McshEngl.Dissprotection'generic-specific-tree,
+  McshHlth000011:434  <br>* McshEngl.Dissprotection'specific-generic-tree,
+  McshHlth000011:437  <br>* McshEngl.Dissprotection_Gntr,
+  McshHlth000011:442  <br>* McshEngl.Dissprotection.specific,
+  McshHlth000011:443  <br>* McshEngl.Dissprotection_Sptr,
+  McshHlth000011:461  <br>* McshEngl.Dissprotection.checkup,,
+  McshHlth000011:478  <br>* McshEngl.Dissprotection.hand-washing,
+  McshHlth000011:771  <br>* DissDoing!@McshHlth000011#idDssHmn279,
+  McshHlth000011:772  <br>* DissDoingNo!@McshHlth000011#idDssHmn280,
+  McshHlth000011:1087  <br>* McshEngl.infectious-disease!⇒DissInfectious,
+  McshHlth000011:1088  <br>* McshEngl.DissInfectious!=infectious-disease,
+  McshHlth000011:1089  <br>* McshEngl.disease.001-infectious!⇒DissInfectious,
+  McshHlth000011:1090  <br>* McshEngl.disease.infectious-001!⇒DissInfectious,
+  McshHlth000011:1091  <br>* McshEngl.communicable-disease!⇒DissInfectious,
+  McshHlth000011:1092  <br>* McshEngl.transmissible-disease!⇒DissInfectious,
+  McshHlth000011:1094  <br>* McshElln.πάθηση.λοίμωξη!=DissInfectious,
+  McshHlth000011:1095  <br>* McshElln.πάθηση.λοιμώδες-νόσημα!=DissInfectious,
+  McshHlth000011:1096  <br>* McshElln.πάθηση.μεταδοτική!=DissInfectious,
+  McshHlth000011:1097  <br>* McshElln.λοίμωξη!=DissInfectious,
+  McshHlth000011:1098  <br>* McshElln.λοιμώδες-νόσημα!=DissInfectious,
+  McshHlth000011:1099  <br>* McshElln.λοιμώδης-νόσος!=DissInfectious,
+  McshHlth000011:1100  <br>* McshElln.μεταδοτική-ασθένεια!=DissInfectious,
+  McshHlth000011:1101  <br>* McshElln.μεταδοτική-πάθηση!=DissInfectious,
+  McshHlth000011:1116  <h2 id="idDssHmn001causeH2">02_cause of DissInfectious (<a class="clsPreview" href="#idDssHmncasPtgn">link</a>)
+  McshHlth000011:1121  <h2 id="idDssHmn001diagnosisH2">03_diagnosis of DissInfectious
+  McshHlth000011:1128  <br>* McshEngl.DissInfectious'diagnosis,
+  McshHlth000011:1150  <h2 id="idDssHmn001irscH2">info-resource of DissInfectious
+  McshHlth000011:1158  <br>* McshEngl.DissInfectious'info-resource,
+  McshHlth000011:1163  <h2 id="idDssHmn001infnH2">infection of DissInfectious
+  McshHlth000011:1172  <br>* McshEngl.DissInfectious'infection!⇒disease'transmition,
+  McshHlth000011:1188  <h2 id="idDssHmn001gstrH2">GENERIC-SPECIFIC-TREE of DissInfectious
+  McshHlth000011:1194  <br>* McshEngl.DissInfectious'generic-specific-tree,
+  McshHlth000011:1195  <br>* McshEngl.DissInfectious'specific-generic-tree,
+  McshHlth000011:1198  <br>* McshEngl.DissInfectious_Gntr,
+  McshHlth000011:1204  <br>* McshEngl.DissInfectious.specific,
+  McshHlth000011:1205  <br>* McshEngl.DissInfectious_Sptr,
+  McshHlth000011:1228  <br>* McshEngl.DissInfectious.bacterial-infection-056,
+  McshHlth000011:1249  <br>* McshEngl.DissViralInfection,
+  McshHlth000011:1251  <br>* McshEngl.DissInfectious.viral-infection-162,
+  McshHlth000011:1258  <h3 id="idDssHmn162therapyH3">therapy of DissViralInfection
+  McshHlth000011:1269  <br>* McshEngl.DissViralInfection'therapy,
+  McshHlth000011:1273  <h4 id="idDssHmn162therapyPlsmH4">DissViralInfection.plasma
+  McshHlth000011:1294  <br>* McshEngl.DissViral'DissViralInfection.plasma,
+  McshHlth000011:1295  <br>* McshEngl.DissViralInfection'therapy.plasma!⇒DissViral'DissViralInfection.plasma,
+  McshHlth000011:1301  <h3 id="idDssHmn162protectionH3">protection of DissViralInfection
+  McshHlth000011:1330  <br>* McshEngl.DissViralInfection'protection,
+  McshHlth000011:1335  <h3 id="idDssHmn162gstrH3">GENERIC-SPECIFIC-TREE of DissViralInfection
+  McshHlth000011:1341  <br>* McshEngl.DissViralInfection'generic-specific-tree,
+  McshHlth000011:1342  <br>* McshEngl.DissViralInfection'specific-generic-tree,
+  McshHlth000011:1345  <br>* McshEngl.DissViralInfection_Gntr,
+  McshHlth000011:1351  <br>* McshEngl.DissViralInfection.specific,
+  McshHlth000011:1352  <br>* McshEngl.DissViralInfection_Sptr,
+  McshHlth000011:1416  <br>* McshEngl.DissInfectiousNo,
+  McshHlth000011:1417  <br>* McshEngl.disease.002-infectiousNo!⇒DissInfectiousNo,
+  McshHlth000011:1418  <br>* McshEngl.disease.infectiousNo-002!⇒DissInfectiousNo,
+  McshHlth000011:1419  <br>* McshEngl.non-infectious-disease!⇒DissInfectiousNo, {2012-07-31}!⇒DissInfectiousNo,
+  McshHlth000011:1421  <br>* McshElln.πάθηση.μεταδοτικήΜη!=DissInfectiousNo,
+  McshHlth000011:1422  <br>* McshElln.πάθηση.μη-μεταδοτική!=DissInfectiousNo,
+  McshHlth000011:1425  <br>* McshEngl.DissInfectiousNo_Gntr,
+  McshHlth000011:1445  <h2 id="idDssHmn045irscH2">info-resource of DissPandemic
+  McshHlth000011:1452  <br>* McshEngl.DissPandemic'info-resource,
+  McshHlth000011:1519  <br>* McshEngl.DissCauseExternal,
+  McshHlth000011:1530  <br>* McshEngl.DissCauseExternal_Gntr,
+  McshHlth000011:1545  <br>* McshEngl.DissWound,
+  McshHlth000011:1546  <br>* McshEngl.disease.203-wound!⇒DissWound,
+  McshHlth000011:1547  <br>* McshEngl.disease.wound-203!⇒DissWound,
+  McshHlth000011:1548  <br>* McshEngl.injury!⇒DissWound,
+  McshHlth000011:1549  <br>* McshEngl.wound!⇒DissWound,
+  McshHlth000011:1551  <br>* McshElln.πάθηση.πληγή!=DissWound,
+  McshHlth000011:1552  <br>* McshElln.πληγή!=DissWound,
+  McshHlth000011:1553  <br>* McshElln.τραύμα!=DissWound,
+  McshHlth000011:1556  <br>* McshEngl.DissWound_Gntr,
+  McshHlth000011:1558  <br>* DissSkin_Gntr,
+  McshHlth000011:1562  <h3 id="idDssHmn203therapyH3">therapy of DissWound
+  McshHlth000011:1576  <br>* McshEngl.DissWound'therapy,
+  McshHlth000011:1591  <br>* McshEngl.DissCauseInternal,
+  McshHlth000011:1602  <h2 id="idDssHmn004gstrH2">GENERIC-SPECIFIC-TREE of DissCauseInternal
+  McshHlth000011:1608  <br>* McshEngl.DissCauseInternal'generic-specific-tree,
+  McshHlth000011:1609  <br>* McshEngl.DissCauseInternal'specific-generic-tree,
+  McshHlth000011:1612  <br>* McshEngl.DissCauseInternal_Gntr,
+  McshHlth000011:1617  <br>* McshEngl.DissCauseInternal.specific,
+  McshHlth000011:1618  <br>* McshEngl.DissCauseInternal_Sptr,
+  McshHlth000011:1632  <br>* McshEngl.DissImbalance,
+  McshHlth000011:1688  <br>* McshEngl.DissMusculoskeletalSystem,
+  McshHlth000011:1693  <h2 id="idDssHmn005gstrH2">GENERIC-SPECIFIC-TREE of DissMusculoskeletalSystem
+  McshHlth000011:1699  <br>* McshEngl.DissMusculoskeletalSystem'generic-specific-tree,
+  McshHlth000011:1700  <br>* McshEngl.DissMusculoskeletalSystem'specific-generic-tree,
+  McshHlth000011:1703  <br>* McshEngl.DissMusculoskeletalSystem_Gntr,
+  McshHlth000011:1708  <br>* McshEngl.DissMusculoskeletalSystem.specific,
+  McshHlth000011:1709  <br>* McshEngl.DissMusculoskeletalSystem_Sptr,
+  McshHlth000011:1731  <br>* McshEngl.DissSkeletal,
+  McshHlth000011:1735  <p id="idDssHmn005_1wtr">whole-tree-of-DissSkeletal::
+  McshHlth000011:1737  <br>* McshEngl.DissSkeletal_Wltr,
+  McshHlth000011:1741  <h3 id="idDssHmn005_1causeH3">cause of DissSkeletal
+  McshHlth000011:1751  <br>* McshEngl.DissSkeletal'cause,
+  McshHlth000011:1756  <h3 id="idDssHmn005_1protectionH3">protection of DissSkeletal
+  McshHlth000011:1767  <br>* McshEngl.DissSkeletal'protection,
+  McshHlth000011:1772  <h3 id="idDssHmn005_1resourceH3">resource of DissSkeletal
+  McshHlth000011:1779  <br>* McshEngl.DissSkeletal'info-resource,
+  McshHlth000011:1784  <h3 id="idDssHmn005_1gstrH3">GENERIC-SPECIFIC-TREE of DissSkeletal
+  McshHlth000011:1790  <br>* McshEngl.DissSkeletal'generic-specific-tree,
+  McshHlth000011:1791  <br>* McshEngl.DissSkeletal'specific-generic-tree,
+  McshHlth000011:1794  <br>* McshEngl.DissSkeletal_Gntr,
+  McshHlth000011:1800  <br>* McshEngl.DissSkeletal.specific,
+  McshHlth000011:1801  <br>* McshEngl.DissSkeletal_Sptr,
+  McshHlth000011:1830  <br>* McshEngl.DissOsteoporosis,
+  McshHlth000011:1831  <br>* McshEngl.disease.191-osteoporosis!⇒DissOsteoporosis,
+  McshHlth000011:1832  <br>* McshEngl.disease.osteoporosis!⇒DissOsteoporosis,
+  McshHlth000011:1833  <br>* McshEngl.osteoporosis!⇒DissOsteoporosis,
+  McshHlth000011:1835  <br>* McshElln.πάθηση.οστεοπόρωση!=DissOsteoporosis,
+  McshHlth000011:1836  <br>* McshElln.οστεοπόρωση!=DissOsteoporosis,
+  McshHlth000011:1840  <h3 id="idDssHmn191causeH3">cause of DissOsteoporosis
+  McshHlth000011:1849  <br>* McshEngl.DissOsteoporosis'cause,
+  McshHlth000011:1854  <h3 id="idDssHmn191therapyH3">therapy of DissOsteoporosis
+  McshHlth000011:1864  <br>* McshEngl.DissOsteoporosis'therapy,
+  McshHlth000011:1903  <br>* McshEngl.DissRachitis,
+  McshHlth000011:1904  <br>* McshEngl.disease.192-rachitis!⇒DissRachitis,
+  McshHlth000011:1905  <br>* McshEngl.disease.rachitis!⇒DissRachitis,
+  McshHlth000011:1906  <br>* McshEngl.rachitis!⇒DissRachitis,
+  McshHlth000011:1908  <br>* McshElln.πάθηση.ραχίτιδα!=DissRachitis,
+  McshHlth000011:1909  <br>* McshElln.ραχίτιδα!=DissRachitis,
+  McshHlth000011:1912  <br>* McshEngl.DissRachitis_Gntr,
+  McshHlth000011:1927  <br>* McshEngl.DissFracture,
+  McshHlth000011:1928  <br>* McshEngl.disease.193-fracture!⇒DissFracture,
+  McshHlth000011:1929  <br>* McshEngl.disease.fracture!⇒DissFracture,
+  McshHlth000011:1930  <br>* McshEngl.fracture!⇒DissFracture,
+  McshHlth000011:1932  <br>* McshElln.πάθηση.κάταγμα!=DissFracture,
+  McshHlth000011:1933  <br>* McshElln.κάταγμα!=DissFracture,
+  McshHlth000011:1936  <br>* McshEngl.DissFracture_Gntr,
+  McshHlth000011:1955  <br>* McshEngl.DissSprain,
+  McshHlth000011:1956  <br>* McshEngl.disease.194-sprain!⇒DissSprain,
+  McshHlth000011:1957  <br>* McshEngl.disease.sprain!⇒DissSprain,
+  McshHlth000011:1958  <br>* McshEngl.sprain!⇒DissSprain,
+  McshHlth000011:1960  <br>* McshElln.πάθηση.διάστρεμμα!=DissSprain,
+  McshHlth000011:1961  <br>* McshElln.διάστρεμμα!=DissSprain,
+  McshHlth000011:1964  <br>* McshEngl.DissSprain_Gntr,
+  McshHlth000011:1970  <h3 id="idDssHmn194irscH3">info-resource of DissSprain
+  McshHlth000011:1978  <br>* McshEngl.DissSprain'info-resource,
+  McshHlth000011:1992  <br>* McshEngl.DissLbp,
+  McshHlth000011:1993  <br>* McshEngl.LBP-low-back-pain-disease!⇒DissLbp,
+  McshHlth000011:1994  <br>* McshEngl.disease.278-low-back-pain!⇒DissLbp,
+  McshHlth000011:1995  <br>* McshEngl.disease.low-back-pain!⇒DissLbp,
+  McshHlth000011:1996  <br>* McshEngl.low-back-pain!⇒DissLbp,
+  McshHlth000011:1998  <br>* McshElln.πόνος-μέσης!=DissLbp,
+  McshHlth000011:2011  <br>* McshEngl.DissSysCirculatory,
+  McshHlth000011:2012  <br>* McshEngl.disease.032-circulatory-system!⇒DissSysCirculatory,
+  McshHlth000011:2013  <br>* McshEngl.disease.cardiovascular-032!⇒DissSysCirculatory,
+  McshHlth000011:2014  <br>* McshEngl.CVD-cardiovascular-disease!⇒DissSysCirculatory,
+  McshHlth000011:2015  <br>* McshEngl.disease.cirulatory-system-032!⇒DissSysCirculatory,
+  McshHlth000011:2016  <br>* McshEngl.disease.heartvessel-system!⇒DissSysCirculatory,
+  McshHlth000011:2017  <br>* McshEngl.cardiovascular-disease!⇒DissSysCirculatory,
+  McshHlth000011:2018  <br>* McshEngl.defect-of-heartvessel-system!⇒DissSysCirculatory,
+  McshHlth000011:2019  <br>* McshEngl.heartvessel'defect!⇒DissSysCirculatory,
+  McshHlth000011:2021  <br>* McshElln.πάθηση.καρδιαγγειακή!=DissSysCirculatory,
+  McshHlth000011:2022  <br>* McshElln.πάθηση.καρδιαγγειακού-συστήματος!=DissSysCirculatory,
+  McshHlth000011:2024  <p id="idDssHmn032wtr">whole-tree-of-DissSysCirculatory::
+  McshHlth000011:2026  <br>* McshEngl.DissSysCirculatory_Wltr,
+  McshHlth000011:2030  <h2 id="idDssHmn032causeH2">cause of DissSysCirculatory
+  McshHlth000011:2047  <br>* McshEngl.DissSysCirculator'cause,
+  McshHlth000011:2048  <br>* McshEngl.DissSysCirculatory'cause!⇒DissSysCirculator'cause,
+  McshHlth000011:2053  <h2 id="idDssHmn032statsH2">stats of DissSysCirculatory
+  McshHlth000011:2064  <br>* McshEngl.DissSysCirculatory'stats,
+  McshHlth000011:2069  <h2 id="idDssHmn032irscH2">info-resource of DissSysCirculatory
+  McshHlth000011:2077  <br>* McshEngl.DissSysCirculatory'info-resource,
+  McshHlth000011:2082  <h2 id="idDssHmn032gstrH2">GENERIC-SPECIFIC-TREE of DissSysCirculatory
+  McshHlth000011:2088  <br>* McshEngl.DissSysCirculatory'generic-specific-tree,
+  McshHlth000011:2089  <br>* McshEngl.DissSysCirculatory'specific-generic-tree,
+  McshHlth000011:2092  <br>* McshEngl.DissSysCirculatory_Gntr,
+  McshHlth000011:2098  <br>* McshEngl.DissSysCirculatory.specific,
+  McshHlth000011:2099  <br>* McshEngl.DissSysCirculatory_Sptr,
+  McshHlth000011:2101  <br>* DissSysCirculatory.blood-057!@McshHlth000011#idDssHmn057,
+  McshHlth000011:2102  <br>* DissSysCirculatory.vessel-130!@McshHlth000011#idDssHmn130,
+  McshHlth000011:2103  <br>* DissSysCirculatory.heart-047!@McshHlth000011#idDssHmn047,
+  McshHlth000011:2104  <br>* DissSysCirculatory.heart-sound-046!@McshHlth000011#idDssHmn046,
+  McshHlth000011:2105  <br>* DissSysCirculatory.heart-failure-048!@McshHlth000011#idDssHmn048,
+  McshHlth000011:2106  <br>* DissSysCirculatory.myocardial-bridge-259!@McshHlth000011#idDssHmn259,
+  McshHlth000011:2107  <br>* DissSysCirculatory.cardiac-amyloidosis!@McshHlth000011#idDssHmn261,
+  McshHlth000011:2108  <br>* DissSysCirculatory.cardiac-asthma!@McshHlth000011#idDssHmn262,
+  McshHlth000011:2109  <br>* DissSysCirculatory.hemophilia!@McshHlth000011#idDssHmn198,
+  McshHlth000011:2110  <br>* DissSysCirculatory.anemia-058!@McshHlth000011#idDssHmn058,
+  McshHlth000011:2111  <br>* DissSysCirculatory.leucocyte-068!@McshHlth000011#idDssHmn068,
+  McshHlth000011:2112  <br>* DissSysCirculatory.hypertension-042!@McshHlth000011#idDssHmn042,
+  McshHlth000011:2113  <br>* DissSysCirculatory.hypotension-132!@McshHlth000011#idDssHmn132,
+  McshHlth000011:2114  <br>* DissSysCirculatory.uremia-197!@McshHlth000011#idDssHmn197,
+  McshHlth000011:2115  <br>* DissSysCirculatory.angina-039!@McshHlth000011#idDssHmn039,
+  McshHlth000011:2116  <br>* DissSysCirculatory.coronary-heart-disease-035!@McshHlth000011#idDssHmn035,
+  McshHlth000011:2117  <br>* DissSysCirculatory.myocardial-infarction-036!@McshHlth000011#idDssHmn036,
+  McshHlth000011:2118  <br>* DissSysCirculatory.atherosclerosis-255!@McshHlth000011#idDssHmn255,
+  McshHlth000011:2119  <br>* DissSysCirculatory.bruit!@McshHlth000011#idDssHmn260,
+  McshHlth000011:2128  <h2 id="idDssHmn057H2">DissSysCirculatory.blood-057
+  McshHlth000011:2139  <br>* McshEngl.DissBlood,
+  McshHlth000011:2140  <br>* McshEngl.DissSysCirculatory.blood-057,
+  McshHlth000011:2145  <br>* McshEngl.DissBlood_Gntr,
+  McshHlth000011:2150  <br>* DissHaemophilia_Gntr,
+  McshHlth000011:2151  <br>* DissAnemia_Gntr,
+  McshHlth000011:2152  <br>* DissHypertension_Gntr,
+  McshHlth000011:2155  <br>* DissLeucocyte_Gntr,
+  McshHlth000011:2156  <br>* DissUraemia_Gntr,
+  McshHlth000011:2158  <p id="idDssHmn057wtr">whole-tree-of-DissBlood::
+  McshHlth000011:2160  <br>* McshEngl.DissBlood_Wltr,
+  McshHlth000011:2165  <h2 id="idDssHmn130H2">DissSysCirculatory.vessel-130
+  McshHlth000011:2172  <br>* McshEngl.DissVessel,
+  McshHlth000011:2173  <br>* McshEngl.disease.130-vessel!⇒DissVessel,
+  McshHlth000011:2174  <br>* McshEngl.disease.vessel-130!⇒DissVessel,
+  McshHlth000011:2175  <br>* McshEngl.defect-of-vessel!⇒DissVessel,
+  McshHlth000011:2176  <br>* McshEngl.vessel'defect!⇒DissVessel,
+  McshHlth000011:2177  <br>* McshEngl.DissSysCirculatory.vessel-130!⇒DissVessel,
+  McshHlth000011:2179  <br>* McshElln.πάθηση.αγγείων!=DissVessel,
+  McshHlth000011:2183  <h3 id="idDssHmn130gstrH3">GENERIC-SPECIFIC-TREE of DissVessel
+  McshHlth000011:2189  <br>* McshEngl.DissVessel'generic-specific-tree,
+  McshHlth000011:2190  <br>* McshEngl.DissVessel'specific-generic-tree,
+  McshHlth000011:2193  <br>* McshEngl.DissVessel_Gntr,
+  McshHlth000011:2195  <br>* DissSysCirculatory_Gntr,
+  McshHlth000011:2199  <br>* McshEngl.DissVessel.specific,
+  McshHlth000011:2200  <br>* McshEngl.DissVessel_Sptr,
+  McshHlth000011:2219  <br>* McshEngl.DissBleading,
+  McshHlth000011:2220  <br>* McshEngl.bleeding!⇒DissBleading,
+  McshHlth000011:2221  <br>* McshEngl.disease.134-hemorrhage!⇒DissBleading,
+  McshHlth000011:2222  <br>* McshEngl.disease.hemorrhage-134!⇒DissBleading,
+  McshHlth000011:2223  <br>* McshEngl.haemorrhage!⇒DissBleading,
+  McshHlth000011:2224  <br>* McshEngl.hemorrhage!⇒DissBleading,
+  McshHlth000011:2225  <br>* McshEngl.DissSysCirculatory.hemorrhage-134!⇒DissBleading,
+  McshHlth000011:2227  <br>* McshElln.πάθηση.αιμορραγία!=DissBleading,
+  McshHlth000011:2228  <br>* McshElln.αιμορραγία!=DissBleading,
+  McshHlth000011:2230  <p id="idDssHmn134wtr">whole-tree-of-DissBleading::
+  McshHlth000011:2232  <br>* McshEngl.DissBleading_Wltr,
+  McshHlth000011:2236  <h3 id="idDssHmn134therapyH3">therapy of DissBleading
+  McshHlth000011:2244  <br>* McshEngl.DissBleading'therapy,
+  McshHlth000011:2249  <h3 id="idDssHmn134gstrH3">GENERIC-SPECIFIC-TREE of DissBleading
+  McshHlth000011:2255  <br>* McshEngl.DissBleading'generic-specific-tree,
+  McshHlth000011:2256  <br>* McshEngl.DissBleading'specific-generic-tree,
+  McshHlth000011:2259  <br>* McshEngl.DissBleading_Gntr,
+  McshHlth000011:2261  <br>* DissVessel_Gntr,
+  McshHlth000011:2265  <br>* McshEngl.DissBleading.specific,
+  McshHlth000011:2266  <br>* McshEngl.DissBleading_Sptr,
+  McshHlth000011:2283  <br>* McshEngl.DissArteriosclerosis,
+  McshHlth000011:2284  <br>* McshEngl.arteriosclerosis!⇒DissArteriosclerosis,
+  McshHlth000011:2285  <br>* McshEngl.disease.033-arteriosclerosis!⇒DissArteriosclerosis,
+  McshHlth000011:2286  <br>* McshEngl.disease.arteriosclerosis-033!⇒DissArteriosclerosis,
+  McshHlth000011:2287  <br>* McshEngl.DissSysCirculatory.arteriosclerosis-033!⇒DissArteriosclerosis,
+  McshHlth000011:2289  <br>* McshElln.πάθηση.αθηρωματικη-νόσος-των-αρτηριών!=DissArteriosclerosis,
+  McshHlth000011:2290  <br>* McshElln.αθηρωματικη-νόσος-των-αρτηριών!=DissArteriosclerosis,
+  McshHlth000011:2291  <br>* McshElln.αρτηριοσκλήρυνση!=DissArteriosclerosis,
+  McshHlth000011:2294  <br>* McshEngl.DissArteriosclerosis_Gntr,
+  McshHlth000011:2296  <br>* DissVessel_Gntr,
+  McshHlth000011:2298  <p id="idDssHmn033wtr">whole-tree-of-DissArteriosclerosis::
+  McshHlth000011:2300  <br>* McshEngl.DissArteriosclerosis_Wltr,
+  McshHlth000011:2304  <h3 id="idDssHmn033symptomH3">symptom of DissArteriosclerosis
+  McshHlth000011:2312  <br>* McshEngl.DissArteriosclerosis'symptom,
+  McshHlth000011:2317  <h3 id="idDssHmn033causeH3">cause of DissArteriosclerosis
+  McshHlth000011:2330  <br>* McshEngl.DissArteriosclerosis'cause,
+  McshHlth000011:2335  <h3 id="idDssHmn033therapyH3">therapy of DissArteriosclerosis
+  McshHlth000011:2343  <br>* McshEngl.DissArteriosclerosis'therapy,
+  McshHlth000011:2348  <h3 id="idDssHmn033protectionH3">protection of DissArteriosclerosis
+  McshHlth000011:2372  <br>* McshEngl.DissArteriosclerosis'protection,
+  McshHlth000011:2378  <h2 id="idDssHmn047H2">DissSysCirculatory.heart-047
+  McshHlth000011:2388  <br>* McshEngl.DissHeart!⇒disease.heart,
+  McshHlth000011:2393  <br>* McshEngl.DissSysCirculatory.heart-047!⇒disease.heart,
+  McshHlth000011:2397  <p id="idDssHmn047wtr">whole-tree-of-DissHeart::
+  McshHlth000011:2399  <br>* McshEngl.DissHeart_Wltr,
+  McshHlth000011:2403  <h3 id="idDssHmn047diagnosisH3">diagnosis of DissHeart
+  McshHlth000011:2411  <br>* McshEngl.DissHeart'diagnosis,
+  McshHlth000011:2412  <br>* McshEngl.disease.heart'diagnosis!⇒DissHeart'diagnosis,
+  McshHlth000011:2417  <h3 id="idDssHmn047protectionH3">protection of DissHeart
+  McshHlth000011:2442  <br>* McshEngl.DissHeart'protection,
+  McshHlth000011:2443  <br>* McshEngl.disease.heart'protection!⇒DissHeart'protection,
+  McshHlth000011:2448  <h3 id="idDssHmn047evogH3">evoluting of DissHeart
+  McshHlth000011:2456  <br>* McshEngl.DissHeart'evoluting,
+  McshHlth000011:2457  <br>* McshEngl.disease.heart'evoluting!⇒DissHeart'evoluting,
+  McshHlth000011:2474  <br>* DissSysCirculatory_Gntr,
+  McshHlth000011:2494  <h2 id="idDssHmn046H2">DissSysCirculatory.heart-sound-046
+  McshHlth000011:2508  <br>* McshEngl.DissSysCirculatory.heart-sound-046,
+  McshHlth000011:2517  <h2 id="idDssHmn048H2">DissSysCirculatory.heart-failure-048
+  McshHlth000011:2535  <br>* McshEngl.DissHeart_failure,
+  McshHlth000011:2537  <br>* McshEngl.DissSysCirculatory.heart-failure-048,
+  McshHlth000011:2543  <br>* McshEngl.DissHeart_failure_Gntr,
+  McshHlth000011:2547  <p id="idDssHmn048wtr">whole-tree-of-DissHeart_failure::
+  McshHlth000011:2549  <br>* McshEngl.DissHeart_failure_Wltr,
+  McshHlth000011:2553  <h3 id="idDssHmn048protectionH3">protection of DissHeart_failure
+  McshHlth000011:2567  <br>* McshEngl.DissHeart_failure'protection,
+  McshHlth000011:2573  <h2 id="idDssHmn259H2">DissSysCirculatory.myocardial-bridge-259
+  McshHlth000011:2581  <br>* McshEngl.DissSysCirculatory.myocardial-bridge,
+  McshHlth000011:2589  <h2 id="idDssHmn261H2">DissSysCirculatory.cardiac-amyloidosis
+  McshHlth000011:2597  <br>* McshEngl.DissSysCirculatory.cardiac-amyloidosis, /amaloidósis/,
+  McshHlth000011:2604  <h2 id="idDssHmn262H2">DissSysCirculatory.cardiac-asthma
+  McshHlth000011:2615  <br>* McshEngl.DissSysCirculatory.cardiac-asthma,
+  McshHlth000011:2622  <h2 id="idDssHmn198H2">DissSysCirculatory.hemophilia
+  McshHlth000011:2635  <br>* McshEngl.DissHaemophilia,
+  McshHlth000011:2638  <br>* McshEngl.DissSysCirculatory.hemophilia,
+  McshHlth000011:2645  <br>* McshEngl.DissHaemophilia_Gntr,
+  McshHlth000011:2647  <br>* DissBlood_Gntr,
+  McshHlth000011:2651  <h3 id="idDssHmn198infectionH3">infection of DissHaemophilia
+  McshHlth000011:2660  <br>* McshEngl.DissHaemophilia'infection,
+  McshHlth000011:2665  <h3 id="idDssHmn198symptomH3">symptom of DissHaemophilia
+  McshHlth000011:2675  <br>* McshEngl.DissHaemophilia'sympton,
+  McshHlth000011:2681  <h2 id="idDssHmn058H2">DissSysCirculatory.anemia-058
+  McshHlth000011:2693  <br>* McshEngl.DissAnemia,
+  McshHlth000011:2696  <br>* McshEngl.DissSysCirculatory.anemia-058,
+  McshHlth000011:2702  <br>* McshEngl.DissAnemia_Gntr,
+  McshHlth000011:2705  <br>* DissBlood_Gntr,
+  McshHlth000011:2707  <p id="idDssHmn058wtr">whole-tree-of-DissAnemia::
+  McshHlth000011:2709  <br>* McshEngl.DissAnemia_Wltr,
+  McshHlth000011:2713  <h3 id="idDssHmn058symptomH3">symptom of DissAnemia
+  McshHlth000011:2723  <br>* McshEngl.DissAnemia'symptom,
+  McshHlth000011:2728  <h3 id="idDssHmn058causeH3">cause of DissAnemia
+  McshHlth000011:2739  <br>* McshEngl.DissAnemia'cause,
+  McshHlth000011:2744  <h3 id="idDssHmn058therapyH3">therapy of DissAnemia
+  McshHlth000011:2753  <br>* McshEngl.DissAnemia'therapy,
+  McshHlth000011:2758  <h3 id="idDssHmnAnmEmlcH3">DissAnemia.hemolytic
+  McshHlth000011:2780  <br>* McshEngl.DissThalassemia,
+  McshHlth000011:2787  <br>* McshEngl.DissThalassemia_Gntr,
+  McshHlth000011:2789  <br>* DissAnemia_Gntr,
+  McshHlth000011:2793  <h4 id="idDssHmnAnmThlsmstatisticsH4">statistics of DissThalassemia
+  McshHlth000011:2801  <br>* McshEngl.DissThalassemia'statistics,
+  McshHlth000011:2806  <h4 id="idDssHmnAnmThlsmtherapyH4">therapy of DissThalassemia
+  McshHlth000011:2815  <br>* McshEngl.DissThalassemia'therapy,
+  McshHlth000011:2822  <h2 id="idDssHmn068H2">DissSysCirculatory.leucocyte-068
+  McshHlth000011:2833  <br>* McshEngl.DissLeucocyte,
+  McshHlth000011:2834  <br>* McshEngl.DissSysCirculatory.leucocyte-068,
+  McshHlth000011:2839  <br>* McshEngl.DissLeucocyte_Gntr,
+  McshHlth000011:2841  <br>* DissBlood_Gntr,
+  McshHlth000011:2842  <br>* DissLeukemia_Gntr,
+  McshHlth000011:2844  <p id="idDssHmn068wtr">whole-tree-of-DissLeucocyte::
+  McshHlth000011:2846  <br>* McshEngl.DissLeucocyte_Wltr,
+  McshHlth000011:2851  <h2 id="idDssHmn042H2">DissSysCirculatory.hypertension-042
+  McshHlth000011:2867  <br>* McshEngl.DissHypertension,
+  McshHlth000011:2869  <br>* McshEngl.DissSysCirculatory.hypertension-042,
+  McshHlth000011:2875  <br>* McshEngl.DissHypertension_Gntr,
+  McshHlth000011:2877  <br>* DissBlood_Gntr,
+  McshHlth000011:2881  <h3 id="idDssHmn042symptomH3">symptom of DissHypertension
+  McshHlth000011:2902  <br>* McshEngl.DissHypertension'symptom,
+  McshHlth000011:2907  <h3 id="idDssHmn042resourceH3">resource of DissHypertension
+  McshHlth000011:2914  <br>* McshEngl.DissHypertension'info-resource,
+  McshHlth000011:2919  <h3 id="idDssHmn042therapyH3">therapy of DissHypertension
+  McshHlth000011:2946  <br>* McshEngl.DissHypertension'therapy,
+  McshHlth000011:2950  <h3 id="idDssHmn042protectionH3">protection of DissHypertension
+  McshHlth000011:2958  <br>* McshEngl.DissHypertension'protection,
+  McshHlth000011:2968  <h2 id="idDssHmn132H2">DissSysCirculatory.hypotension-132
+  McshHlth000011:2982  <br>* McshEngl.DissSysCirculatory.hypotension-132,
+  McshHlth000011:2993  <h2 id="idDssHmn197H2">DissSysCirculatory.uremia-197
+  McshHlth000011:3002  <br>* McshEngl.DissUraemia,
+  McshHlth000011:3004  <br>* McshEngl.DissSysCirculatory.uremia-197,
+  McshHlth000011:3010  <br>* McshEngl.DissUraemia_Gntr,
+  McshHlth000011:3014  <p id="idDssHmn197wtr">whole-tree-of-DissUraemia::
+  McshHlth000011:3016  <br>* McshEngl.DissUraemia_Wltr,
+  McshHlth000011:3020  <h3 id="idDssHmn197causeH3">cause of DissUraemia
+  McshHlth000011:3028  <br>* McshEngl.DissUraemia'cause,
+  McshHlth000011:3034  <h2 id="idDssHmn039H2">DissSysCirculatory.angina-039
+  McshHlth000011:3055  <br>* McshEngl.DissSysCirculatory.angina-039,
+  McshHlth000011:3070  <h2 id="idDssHmn035H2">DissSysCirculatory.coronary-heart-disease-035
+  McshHlth000011:3083  <br>* McshEngl.DissCoronaryArtery,
+  McshHlth000011:3084  <br>* McshEngl.disease.035-coronary-heart-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3085  <br>* McshEngl.disease.coronary-heart-disease-035!⇒DissCoronaryArtery,
+  McshHlth000011:3086  <br>* McshEngl.disease.coronary-artery-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3087  <br>* McshEngl.disease.ischemic-heart-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3088  <br>* McshEngl.disease.atherosclerotic-heart-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3089  <br>* McshEngl.disease.atherosclerotic-vascular-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3090  <br>* McshEngl.CAD-coronary-artery-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3091  <br>* McshEngl.CHD-coronary-heart-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3092  <br>* McshEngl.IHD-ischemic-heart-disease!⇒DissCoronaryArtery,
+  McshHlth000011:3093  <br>* McshEngl.coronary-heart-disease!⇒DissCoronaryArtery, {2012-07-31}
+  McshHlth000011:3094  <br>* McshEngl.disease.CHD!⇒DissCoronaryArtery,
+  McshHlth000011:3095  <br>* McshEngl.DissSysCirculatory.coronary-heart-disease-035!⇒DissCoronaryArtery,
+  McshHlth000011:3097  <br>* McshElln.πάθηση.στεφανιαία-νόσος!=DissCoronaryArtery,
+  McshHlth000011:3098  <br>* McshElln.στεφανιαία-νόσος!=DissCoronaryArtery,
+  McshHlth000011:3100  <p id="idDssHmn035wtr">whole-tree-of-DissCoronaryArtery::
+  McshHlth000011:3102  <br>* McshEngl.DissCoronaryArtery_Wltr,
+  McshHlth000011:3106  <h3 id="idDssHmn035gstrH3">GENERIC-SPECIFIC-TREE of DissCoronaryArtery
+  McshHlth000011:3112  <br>* McshEngl.DissCoronaryArtery'generic-specific-tree,
+  McshHlth000011:3113  <br>* McshEngl.DissCoronaryArtery'specific-generic-tree,
+  McshHlth000011:3116  <br>* McshEngl.DissCoronaryArtery_Gntr,
+  McshHlth000011:3122  <br>* McshEngl.DissCoronaryArtery.specific,
+  McshHlth000011:3123  <br>* McshEngl.DissCoronaryArtery_Sptr,
+  McshHlth000011:3131  <h3 id="idDssHmn035bpsrH3">bypass-surgery of DissCoronaryArtery
+  McshHlth000011:3141  <br>* McshEngl.DissCoronaryArtery'bypass-surgery,
+  McshHlth000011:3151  <h2 id="idDssHmn036H2">DissSysCirculatory.myocardial-infarction-036
+  McshHlth000011:3174  <br>* McshEngl.DissSysCirculatory.myocardial-infarction-036!⇒dssMI,
+  McshHlth000011:3226  <h2 id="idDssHmn255H2">DissSysCirculatory.atherosclerosis-255
+  McshHlth000011:3240  <br>* McshEngl.DissSysCirculatory.atherosclerosis-255,
+  McshHlth000011:3245  <h2 id="idDssHmn260H2">DissSysCirculatory.bruit
+  McshHlth000011:3254  <br>* McshEngl.DissSysCirculatory.bruit,
+  McshHlth000011:3274  <br>* McshEngl.DissNervous,
+  McshHlth000011:3275  <br>* McshEngl.disease.006-nervous-system!⇒DissNervous,
+  McshHlth000011:3276  <br>* McshEngl.disease.nervous-system-006!⇒DissNervous,
+  McshHlth000011:3277  <br>* McshEngl.neurological-disease!⇒DissNervous,
+  McshHlth000011:3278  <br>* McshEngl.neurological-disorder!⇒DissNervous,
+  McshHlth000011:3279  <br>* McshEngl.SystNervous'01_disease!⇒DissNervous,
+  McshHlth000011:3280  <br>* McshEngl.SystNervous'att001-disease!⇒DissNervous,
+  McshHlth000011:3281  <br>* McshEngl.SystNervous'disease-att001!⇒DissNervous,
+  McshHlth000011:3285  <h2 id="idDssHmn006gstrH2">GENERIC-SPECIFIC-TREE of DissNervous
+  McshHlth000011:3291  <br>* McshEngl.DissNervous'generic-specific-tree,
+  McshHlth000011:3292  <br>* McshEngl.DissNervous'specific-generic-tree,
+  McshHlth000011:3295  <br>* McshEngl.DissNervous_Gntr,
+  McshHlth000011:3300  <br>* McshEngl.DissNervous.specific,
+  McshHlth000011:3301  <br>* McshEngl.DissNervous_Sptr,
+  McshHlth000011:3324  <br>* McshEngl.DissNervous.cerebellum-025,
+  McshHlth000011:3376  <br>* McshEngl.DissNervous.cerebrospinal-fluid-024,
+  McshHlth000011:3455  <br>* McshEngl.DissKidney,
+  McshHlth000011:3456  <br>* McshEngl.disease.kidney!⇒DissKidney,
+  McshHlth000011:3457  <br>* McshEngl.disease.263-kidney!⇒DissKidney,
+  McshHlth000011:3458  <br>* McshEngl.nephropathy!⇒DissKidney,
+  McshHlth000011:3459  <br>* McshEngl.ognKidney'disease!⇒DissKidney,
+  McshHlth000011:3460  <br>* McshEngl.ognKidney'att001-disease!⇒DissKidney,
+  McshHlth000011:3464  <h3 id="idDssHmn263prtnH3">protection of DissKidney
+  McshHlth000011:3496  <br>* McshEngl.DissKidney'protection,
+  McshHlth000011:3501  <h3 id="idDssHmn263gstrH3">GENERIC-SPECIFIC-TREE of DissKidney
+  McshHlth000011:3507  <br>* McshEngl.DissKidney'generic-specific-tree,
+  McshHlth000011:3508  <br>* McshEngl.DissKidney'specific-generic-tree,
+  McshHlth000011:3511  <br>* McshEngl.DissKidney_Gntr,
+  McshHlth000011:3516  <br>* McshEngl.DissKidney.specific,
+  McshHlth000011:3517  <br>* McshEngl.DissKidney_Sptr,
+  McshHlth000011:3533  <br>* McshEngl.DissKidney_stone,
+  McshHlth000011:3534  <br>* McshEngl.disease.218-kidney-colic!⇒DissKidney_stone,
+  McshHlth000011:3535  <br>* McshEngl.disease.kidney-colic-218!⇒DissKidney_stone,
+  McshHlth000011:3536  <br>* McshEngl.kidney-colic!⇒DissKidney_stone,
+  McshHlth000011:3538  <br>* McshElln.πάθηση.κωλικός-νεφρων!=DissKidney_stone,
+  McshHlth000011:3539  <br>* McshElln.κωλικός-νεφρων!=DissKidney_stone,
+  McshHlth000011:3542  <br>* McshEngl.DissKidney_stone_Gntr,
+  McshHlth000011:3546  <p id="idDssHmn218wtr">whole-tree-of-DissKidney_stone::
+  McshHlth000011:3548  <br>* McshEngl.DissKidney_stone_Wltr,
+  McshHlth000011:3552  <h3 id="idDssHmn218causeH3">cause of DissKidney_stone
+  McshHlth000011:3560  <br>* McshEngl.DissKidney_stone'cause,
+  McshHlth000011:3565  <h3 id="idDssHmn218therapyH3">therapy of DissKidney_stone
+  McshHlth000011:3578  <br>* McshEngl.DissKidney_stone'therapy,
+  McshHlth000011:3582  <h3 id="idDssHmn218protectionH3">protection of DissKidney_stone
+  McshHlth000011:3590  <br>* McshEngl.DissKidney_stone'protection,
+  McshHlth000011:3630  <br>* McshEngl.DissInvoluntary_urination,
+  McshHlth000011:3638  <h3 id="idDssHmn059frequencyH3">frequency of DissInvoluntary_urination
+  McshHlth000011:3648  <br>* McshEngl.DissInvoluntary_urination'frequency,
+  McshHlth000011:3653  <h3 id="idDssHmn059protectionH3">protection of DissInvoluntary_urination
+  McshHlth000011:3662  <br>* McshEngl.DissInvoluntary_urination'protection,
+  McshHlth000011:3677  <br>* McshEngl.DissFrequent_urination,
+  McshHlth000011:3686  <br>* McshEngl.DissFrequent_urination_Gntr,
+  McshHlth000011:3692  <h3 id="idDssHmn060symptomH3">symptom of DissFrequent_urination
+  McshHlth000011:3706  <br>* McshEngl.DissFrequent_urination'symptom,
+  McshHlth000011:3711  <h3 id="idDssHmn060causeH3">cause of DissFrequent_urination
+  McshHlth000011:3721  <br>* McshEngl.DissFrequent_urination'cause,
+  McshHlth000011:3726  <h3 id="idDssHmn060therapyH3">therapy of DissFrequent_urination
+  McshHlth000011:3736  <br>* McshEngl.DissFrequent_urination'therapy,
+  McshHlth000011:3806  <br>* McshEngl.DissTooth,
+  McshHlth000011:3807  <br>* McshEngl.disease.215-tooth!⇒DissTooth,
+  McshHlth000011:3808  <br>* McshEngl.disease.tooth-215!⇒DissTooth, {2012-07-31}!⇒DissTooth,
+  McshHlth000011:3810  <br>* McshElln.πάθηση.δοντιών!=DissTooth,
+  McshHlth000011:3814  <h2 id="idDssHmn215protectionH2">protection of DissTooth
+  McshHlth000011:3821  <br>* McshEngl.DissTooth'protection,
+  McshHlth000011:3826  <h2 id="idDssHmn215gstrH2">GENERIC-SPECIFIC-TREE of DissTooth
+  McshHlth000011:3832  <br>* McshEngl.DissTooth'generic-specific-tree,
+  McshHlth000011:3833  <br>* McshEngl.DissTooth'specific-generic-tree,
+  McshHlth000011:3836  <br>* McshEngl.DissTooth_Gntr,
+  McshHlth000011:3841  <br>* McshEngl.DissTooth.specific,
+  McshHlth000011:3842  <br>* McshEngl.DissTooth_Sptr,
+  McshHlth000011:3992  <br>* McshEngl.DissGastroenteritis,
+  McshHlth000011:3993  <br>* McshEngl.disease.065-gastroenteritis!⇒DissGastroenteritis,
+  McshHlth000011:3994  <br>* McshEngl.disease.gastroenteritis!⇒DissGastroenteritis,
+  McshHlth000011:3995  <br>* McshEngl.gastroenteritis/gastroederáitis/!⇒DissGastroenteritis,
+  McshHlth000011:3997  <br>* McshElln.πάθηση.γαστρεντερίτιδα!=DissGastroenteritis,
+  McshHlth000011:3998  <br>* McshElln.γαστρεντερίτιδα!=DissGastroenteritis,
+  McshHlth000011:4002  <h2 id="idDssHmn065smtmH2">symptom of DissGastroenteritis
+  McshHlth000011:4012  <br>* McshEngl.DissGastroenteritis'symptom,
+  McshHlth000011:4017  <h2 id="idDssHmn065gstrH2">GENERIC-SPECIFIC-TREE of DissGastroenteritis
+  McshHlth000011:4023  <br>* McshEngl.DissGastroenteritis'generic-specific-tree,
+  McshHlth000011:4024  <br>* McshEngl.DissGastroenteritis'specific-generic-tree,
+  McshHlth000011:4027  <br>* McshEngl.DissGastroenteritis_Gntr,
+  McshHlth000011:4032  <br>* McshEngl.DissGastroenteritis.specific,
+  McshHlth000011:4033  <br>* McshEngl.DissGastroenteritis_Sptr,
+  McshHlth000011:4085  <br>* McshEngl.DissNausea,
+  McshHlth000011:4093  <h2 id="idDssHmn067symptomH2">symptom of DissNausea
+  McshHlth000011:4102  <br>* McshEngl.DissNausea'symptom,
+  McshHlth000011:4107  <h2 id="idDssHmn067causeH2">cause of DissNausea
+  McshHlth000011:4138  <br>* McshEngl.DissNausea'cause,
+  McshHlth000011:4143  <h2 id="idDssHmn067therapyH2">therapy of DissNausea
+  McshHlth000011:4152  <br>* McshEngl.DissNausea'therapy,
+  McshHlth000011:4161  <h2 id="idDssHmn067protectionH2">protection of DissNausea
+  McshHlth000011:4185  <br>* McshEngl.DissNausea'protection,
+  McshHlth000011:4204  <br>* McshEngl.DissSeasickness,
+  McshHlth000011:4210  <br>* McshEngl.DissSeasickness_Gntr,
+  McshHlth000011:4216  <h2 id="idDssHmn219symptomH2">symptom of DissSeasickness
+  McshHlth000011:4240  <br>* McshEngl.DissSeasickness'symptom,
+  McshHlth000011:4245  <h2 id="idDssHmn219therapyH2">therapy of DissSeasickness
+  McshHlth000011:4264  <br>* McshEngl.DissSeasickness'therapy,
+  McshHlth000011:4295  <br>* McshEngl.DissTuberculosis,
+  McshHlth000011:4296  <br>* McshEngl.disease.073-tuberculosis!⇒DissTuberculosis,
+  McshHlth000011:4297  <br>* McshEngl.disease.tuberculosis-073!⇒DissTuberculosis,
+  McshHlth000011:4298  <br>* McshEngl.tuberculosis!⇒DissTuberculosis,
+  McshHlth000011:4300  <br>* McshElln.πάθηση.φυματίωση!=DissTuberculosis,
+  McshHlth000011:4301  <br>* McshElln.φυματίωση!=DissTuberculosis,
+  McshHlth000011:4304  <br>* McshEngl.DissTuberculosis_Gntr,
+  McshHlth000011:4308  <p id="idDssHmn073wtr">whole-tree-of-DissTuberculosis::
+  McshHlth000011:4312  <br>* McshEngl.DissTuberculosis_Wltr,
+  McshHlth000011:4316  <h2 id="idDssHmn073symptomH2">symptom of DissTuberculosis
+  McshHlth000011:4324  <br>* McshEngl.DissTuberculosis'symptom,
+  McshHlth000011:4329  <h2 id="idDssHmn073mantouxtestH2">mantoux-test of DissTuberculosis
+  McshHlth000011:4337  <br>* McshEngl.DissTuberculosis'mantoux-test,
+  McshHlth000011:4342  <h2 id="idDssHmn073causeH2">cause of DissTuberculosis
+  McshHlth000011:4350  <br>* McshEngl.DissTuberculosis'cause,
+  McshHlth000011:4355  <h2 id="idDssHmn073therapyH2">therapy of DissTuberculosis
+  McshHlth000011:4364  <br>* McshEngl.DissTuberculosis'therapy,
+  McshHlth000011:4368  <h2 id="idDssHmn073protectionH2">protection of DissTuberculosis
+  McshHlth000011:4377  <br>* McshEngl.DissTuberculosis'protection,
+  McshHlth000011:4382  <h2 id="idDssHmn073statsH2">stats of DissTuberculosis
+  McshHlth000011:4393  <br>* McshEngl.DissTuberculosis'stats,
+  McshHlth000011:4408  <br>* McshEngl.DissWart,
+  McshHlth000011:4409  <br>* McshEngl.disease.074-wart!⇒DissWart,
+  McshHlth000011:4410  <br>* McshEngl.disease.wart-074!⇒DissWart,
+  McshHlth000011:4411  <br>* McshEngl.wart!⇒DissWart,
+  McshHlth000011:4413  <br>* McshElln.πάθηση.γαρδαβίτσα!=DissWart,
+  McshHlth000011:4414  <br>* McshElln.γαρδαβίτσα!=DissWart,
+  McshHlth000011:4415  <br>* McshElln.καρναβίτσα!=DissWart,
+  McshHlth000011:4416  <br>* McshElln.μπασδραβίτσα!=DissWart,
+  McshHlth000011:4417  <br>* McshElln.μυρμηγκιά!=DissWart,
+  McshHlth000011:4421  <h2 id="idDssHmn074therapyH2">therapy of DissWart
+  McshHlth000011:4429  <br>* McshEngl.DissWart'therapy,
+  McshHlth000011:4448  <br>* McshEngl.DissLeukemia,
+  McshHlth000011:4457  <br>* McshEngl.DissLeukemia_Gntr,
+  McshHlth000011:4459  <br>* DissLeucocyte_Gntr,
+  McshHlth000011:4463  <h2 id="idDssHmn069symptomH2">symptom of DissLeukemia
+  McshHlth000011:4471  <br>* McshEngl.DissLeukemia'symptom,
+  McshHlth000011:4476  <h2 id="idDssHmn069causeH2">cause of DissLeukemia
+  McshHlth000011:4484  <br>* McshEngl.DissLeukemia'cause,
+  McshHlth000011:4489  <h2 id="idDssHmn069therapyH2">therapy for DissLeukemia
+  McshHlth000011:4499  <br>* McshEngl.DissLeukemia'therapy!⇒LeukemiaTherapy,
+  McshHlth000011:4573  <br>* McshEngl.DissSkin,
+  McshHlth000011:4580  <p id="idDssHmn037wtr">whole-tree-of-DissSkin::
+  McshHlth000011:4582  <br>* McshEngl.DissSkin_Wltr,
+  McshHlth000011:4586  <h2 id="idDssHmn037gstrH2">GENERIC-SPECIFIC-TREE of DissSkin
+  McshHlth000011:4592  <br>* McshEngl.DissSkin'generic-specific-tree,
+  McshHlth000011:4593  <br>* McshEngl.DissSkin'specific-generic-tree,
+  McshHlth000011:4596  <br>* McshEngl.DissSkin_Gntr,
+  McshHlth000011:4601  <br>* McshEngl.DissSkin.specific,
+  McshHlth000011:4602  <br>* McshEngl.DissSkin_Sptr,
+  McshHlth000011:4635  <br>* DissSkin_Gntr,
+  McshHlth000011:4699  <br>* McshEngl.DissDiabetes,
+  McshHlth000011:4700  <br>* McshEngl.disease.043-diabetes!⇒DissDiabetes,
+  McshHlth000011:4701  <br>* McshEngl.disease.diabetes-043!⇒DissDiabetes,
+  McshHlth000011:4702  <br>* McshEngl.diabetes!⇒DissDiabetes,
+  McshHlth000011:4704  <br>* McshElln.πάθηση.διαβήτης!=DissDiabetes,
+  McshHlth000011:4705  <br>* McshElln.διαβήτης!=DissDiabetes,
+  McshHlth000011:4706  <br>* McshElln.σακχαρώης-διαβήτης!=DissDiabetes,
+  McshHlth000011:4709  <br>* McshEngl.DissDiabetes_Gntr,
+  McshHlth000011:4713  <p id="idDssHmn043wtr">whole-tree-of-DissDiabetes::
+  McshHlth000011:4715  <br>* McshEngl.DissDiabetes_Wltr,
+  McshHlth000011:4719  <h2 id="idDssHmn043symptomH2">symptom of DissDiabetes
+  McshHlth000011:4731  <br>* McshEngl.DissDiabetes'symptom,
+  McshHlth000011:4736  <h2 id="idDssHmn043therapyH2">therapy of DissDiabetes
+  McshHlth000011:4745  <br>* McshEngl.DissDiabetes'therapy,
+  McshHlth000011:4750  <h2 id="idDssHmn043protectionH2">protection of DissDiabetes
+  McshHlth000011:4764  <br>* McshEngl.DissDiabetes'protection,
+  McshHlth000011:4769  <h2 id="idDssHmn043statsH2">stats of DissDiabetes
+  McshHlth000011:4776  <br>* McshEngl.DissDiabetes'stats,
+  McshHlth000011:4792  <br>* McshEngl.DissSuddenDeath,
+  McshHlth000011:4802  <br>* McshEngl.DissSuddenDeath_Gntr,
+  McshHlth000011:4808  <h2 id="idDssHmn050symptomH2">symptom of DissSuddenDeath
+  McshHlth000011:4817  <br>* McshEngl.DissSuddenDeath'symptom,
+  McshHlth000011:4822  <h2 id="idDssHmn048protectioncauseH2">cause of DissSuddenDeath
+  McshHlth000011:4830  <br>* McshEngl.DissSuddenDeath'cause,
+  McshHlth000011:4835  <h2 id="idDssHmn050therapyH2">therapy of DissSuddenDeath
+  McshHlth000011:4848  <br>* McshEngl.DissSuddenDeath'therapy,
+  McshHlth000011:4865  <br>* McshEngl.DissCancer,
+  McshHlth000011:4866  <br>* McshEngl.cancer-disease!⇒DissCancer,
+  McshHlth000011:4867  <br>* McshEngl.DissCancer.disease!⇒DissCancer,
+  McshHlth000011:4868  <br>* McshEngl.DissCancer.human!⇒DissCancer,
+  McshHlth000011:4869  <br>* McshEngl.disease.052-cancer!⇒DissCancer,
+  McshHlth000011:4870  <br>* McshEngl.disease.cancer!⇒DissCancer, {2012-05-30}
+  McshHlth000011:4872  <br>* McshElln.πάθηση.καρκίνος!=DissCancer,
+  McshHlth000011:4873  <br>* McshElln.καρκίνος!=DissCancer,
+  McshHlth000011:4877  <h2 id="idDssHmn052smptmH2">symptom of DissCancer
+  McshHlth000011:4898  <br>* McshEngl.DissCancer'symptom,
+  McshHlth000011:4903  <h2 id="idDssHmn052causeH2">cause of DissCancer
+  McshHlth000011:4916  <br>* McshEngl.DissCancer'cause,
+  McshHlth000011:4921  <h2 id="idDssHmn052diagnosisH2">diagnosis of DissCancer
+  McshHlth000011:4987  <br>* McshEngl.DissCancer'diagnosis,
+  McshHlth000011:4989  <br>* McshEngl.DissCancer.detection, {2012-11-19}
+  McshHlth000011:5115  <br>* McshEngl.DissCancer'marker,
+  McshHlth000011:5204  <h2 id="idDssHmn052therapyH2">therapy of DissCancer
+  McshHlth000011:5213  <br>* McshEngl.DissCancer'therapy!⇒CancerTherapy,
+  McshHlth000011:5429  <h2 id="idDssHmn052protectionH2">protection of DissCancer
+  McshHlth000011:5440  <br>* McshEngl.DissCancer'protection!⇒CancerProtection,
+  McshHlth000011:5661  <h2 id="idDssHmn052statsH2">stats of DissCancer
+  McshHlth000011:5709  <br>* McshEngl.DissCancer'stats,
+  McshHlth000011:5718  <h2 id="idDssHmn052oznH2">organization of DissCancer
+  McshHlth000011:5725  <br>* McshEngl.DissCancer'organization,
+  McshHlth000011:5741  <br>* McshEngl.DissCancer'National-cancer-institute!⇒UsaNci,
+  McshHlth000011:5790  <br>* McshEngl.DissCancer'Iarc,
+  McshHlth000011:5796  <h2 id="idDssHmn052rscFH2">info-resource of DissCancer
+  McshHlth000011:5806  <br>* McshEngl.DissCancer'info-resource,
+  McshHlth000011:5811  <h2 id="idDssHmn052dongH2">DOING of DissCancer
+  McshHlth000011:5819  <br>* McshEngl.DissCancer'doing,
+  McshHlth000011:5824  <h2 id="idDssHmn052evogH2">evoluting of DissCancer
+  McshHlth000011:5830  <br>* McshEngl.DissCancer'evoluting,
+  McshHlth000011:5850  <h2 id="idDssHmn052gstrH2">GENERIC-SPECIFIC-TREE of DissCancer
+  McshHlth000011:5856  <br>* McshEngl.DissCancer'generic-specific-tree,
+  McshHlth000011:5857  <br>* McshEngl.DissCancer'specific-generic-tree,
+  McshHlth000011:5860  <br>* McshEngl.DissCancer_Gntr,
+  McshHlth000011:5865  <br>* McshEngl.DissCancer.specific,
+  McshHlth000011:5866  <br>* McshEngl.DissCancer_Sptr,
+  McshHlth000011:5868  <br>* DissCancer.aggregate.052_1!@McshHlth000011#idDssHmn052_1,
+  McshHlth000011:5869  <br>* DissCancer.breast.100!@McshHlth000011#idDssHmn100,
+  McshHlth000011:5870  <br>* DissCancer.colon.101!@McshHlth000011#idDssHmn101,
+  McshHlth000011:5871  <br>* DissCancer.lung.102!@McshHlth000011#idDssHmn102,
+  McshHlth000011:5872  <br>* DissCancer.pancreas.103!@McshHlth000011#idDssHmn103,
+  McshHlth000011:5873  <br>* DissCancer.prostate.105!@McshHlth000011#idDssHmn105,
+  McshHlth000011:5874  <br>* DissCancer.skin.106!@McshHlth000011#idDssHmn106,
+  McshHlth000011:5875  <br>* DissCancer.urinary-bladder.107!@McshHlth000011#idDssHmn107,
+  McshHlth000011:5891  <h2 id="idDssHmn052_1H2">DissCancer.aggregate.052_1
+  McshHlth000011:5901  <br>* McshEngl.DissCancer.aggregate,
+  McshHlth000011:5906  <h2 id="idDssHmn100H2">DissCancer.breast.100
+  McshHlth000011:5914  <br>* McshEngl.DissCancer.breast,
+  McshHlth000011:5930  <br>* McshEngl.DissMastectomy,
+  McshHlth000011:5952  <h2 id="idDssHmn101H2">DissCancer.colon.101
+  McshHlth000011:5972  <br>* McshEngl.DissCancer.colon,
+  McshHlth000011:5980  <h2 id="idDssHmn102H2">DissCancer.lung.102
+  McshHlth000011:5989  <br>* McshEngl.DissCancerLung,
+  McshHlth000011:5991  <br>* McshEngl.DissCancer.lung.102,
+  McshHlth000011:5999  <h3 id="idDssHmn102protectionH3">protection of DissCancerLung
+  McshHlth000011:6007  <br>* McshEngl.DissCancerLung'protection,
+  McshHlth000011:6013  <h2 id="idDssHmn103H2">DissCancer.pancreas.103
+  McshHlth000011:6036  <br>* McshEngl.DissCancer.pancreas,
+  McshHlth000011:6042  <h2 id="idDssHmn105H2">DissCancer.prostate.105
+  McshHlth000011:6052  <br>* McshEngl.DissCancerProstate,
+  McshHlth000011:6053  <br>* McshEngl.DissCancer.prostate,
+  McshHlth000011:6061  <h3 id="idDssHmn105symptomH3">symptom of DissCancerProstate
+  McshHlth000011:6090  <br>* McshEngl.DissCancerProstate'symptom,
+  McshHlth000011:6095  <h3 id="idDssHmn105therapyH3">therapy of DissCancerProstate
+  McshHlth000011:6123  <br>* McshEngl.DissCancerProstate'therapy,
+  McshHlth000011:6129  <h2 id="idDssHmn106H2">DissCancer.skin.106
+  McshHlth000011:6138  <br>* McshEngl.DissCancerSkin,
+  McshHlth000011:6139  <br>* McshEngl.DissCancer.skin.106,
+  McshHlth000011:6147  <h3 id="idDssHmn106protectionH3">protection of DissCancerSkin
+  McshHlth000011:6161  <br>* McshEngl.DissCancerSkin'protection,
+  McshHlth000011:6166  <h3 id="idDssHmn106resourceH3">resource of DissCancerSkin
+  McshHlth000011:6174  <br>* McshEngl.DissCancerSkin'resource,
+  McshHlth000011:6179  <h3 id="idDssHmn106gstrH3">GENERIC-SPECIFIC-TREE of DissCancerSkin
+  McshHlth000011:6185  <br>* McshEngl.DissCancerSkin'generic-specific-tree,
+  McshHlth000011:6186  <br>* McshEngl.DissCancerSkin'specific-generic-tree,
+  McshHlth000011:6189  <br>* McshEngl.DissCancerSkin_Gntr,
+  McshHlth000011:6194  <br>* McshEngl.DissCancerSkin.specific,
+  McshHlth000011:6195  <br>* McshEngl.DissCancerSkin_Sptr,
+  McshHlth000011:6204  <h3 id="idDssHmn106melanomaH3">DissCancerSkin.melanoma
+  McshHlth000011:6215  <br>* McshEngl.DissCancerSkin.melanoma,
+  McshHlth000011:6221  <h2 id="idDssHmn107H2">DissCancer.urinary-bladder.107
+  McshHlth000011:6229  <br>* McshEngl.DissCancer.urinary-bladder,
+  McshHlth000011:6245  <br>* McshEngl.DissEye,
+  McshHlth000011:6253  <p id="idDssHmn096wtr">whole-tree-of-DissEye::
+  McshHlth000011:6255  <br>* McshEngl.DissEye_Wltr,
+  McshHlth000011:6259  <h2 id="idDssHmn096protectionH2">protection of DissEye
+  McshHlth000011:6278  <br>* McshEngl.DissEye'protection,
+  McshHlth000011:6283  <h2 id="idDssHmn096gstrH2">GENERIC-SPECIFIC-TREE of DissEye
+  McshHlth000011:6289  <br>* McshEngl.DissEye'generic-specific-tree,
+  McshHlth000011:6290  <br>* McshEngl.DissEye'specific-generic-tree,
+  McshHlth000011:6293  <br>* McshEngl.DissEye_Gntr,
+  McshHlth000011:6299  <br>* McshEngl.DissEye.specific,
+  McshHlth000011:6300  <br>* McshEngl.DissEye_Sptr,
+  McshHlth000011:6302  <br>* DissAstigmatism!@McshHlth000011#idDssHmn111,
+  McshHlth000011:6303  <br>* DissCatarract!@McshHlth000011#idDssHmn097,
+  McshHlth000011:6304  <br>* DissHypermetropia!@McshHlth000011#idDssHmn118,
+  McshHlth000011:6305  <br>* DissMyopia!@McshHlth000011#idDssHmn119,
+  McshHlth000011:6306  <br>* DissPresbyopia!@McshHlth000011#idDssHmn117,
+  McshHlth000011:6307  <br>* DissSquint!@McshHlth000011#idDssHmn110,
+  McshHlth000011:6320  <h2 id="idDssHmn097H2">DissEye.catarract-097
+  McshHlth000011:6367  <br>* McshEngl.DissCatarract,
+  McshHlth000011:6373  <br>* McshEngl.DissCatarract_Gntr,
+  McshHlth000011:6375  <br>* DissEye_Gntr,
+  McshHlth000011:6377  <p id="idDssHmn097wtr">whole-tree-of-DissCatarract::
+  McshHlth000011:6379  <br>* McshEngl.DissCatarract_Wltr,
+  McshHlth000011:6383  <h3 id="idDssHmn097protectionH3">protection of DissCatarract
+  McshHlth000011:6390  <br>* McshEngl.DissCatarract'protection,
+  McshHlth000011:6396  <h2 id="idDssHmn111H2">DissEye.astigmatism-111
+  McshHlth000011:6412  <br>* DissEye_Gntr,
+  McshHlth000011:6420  <h2 id="idDssHmn117H2">DissEye.presbyopia-117
+  McshHlth000011:6430  <br>* McshEngl.DissPresbyopia,
+  McshHlth000011:6437  <br>* McshEngl.DissPresbyopia_Gntr,
+  McshHlth000011:6439  <br>* DissEye_Gntr,
+  McshHlth000011:6441  <p id="idDssHmn117wtr">whole-tree-of-DissPresbyopia::
+  McshHlth000011:6443  <br>* McshEngl.DissPresbyopia_Wltr,
+  McshHlth000011:6447  <h3 id="idDssHmn117therapyH3">therapy of DissPresbyopia
+  McshHlth000011:6454  <br>* McshEngl.DissPresbyopia'therapy,
+  McshHlth000011:6460  <h2 id="idDssHmn118H2">DissEye.hypermetropia-118
+  McshHlth000011:6476  <br>* DissEye_Gntr,
+  McshHlth000011:6484  <h2 id="idDssHmn119H2">DissEye.myopia-119
+  McshHlth000011:6507  <br>* DissEye_Gntr,
+  McshHlth000011:6515  <h2 id="idDssHmn078H2">DissEye.poor-vision-078
+  McshHlth000011:6532  <h2 id="idDssHmn110H2">DissEye.squint-110
+  McshHlth000011:6539  <br>* McshEngl.DissSquint,
+  McshHlth000011:6540  <br>* McshEngl.disease.110-squint!⇒DissSquint,
+  McshHlth000011:6541  <br>* McshEngl.disease.squint-110!⇒DissSquint,
+  McshHlth000011:6542  <br>* McshEngl.squint!⇒DissSquint,
+  McshHlth000011:6543  <br>* McshEngl.strabismus!⇒DissSquint,
+  McshHlth000011:6545  <br>* McshElln.πάθηση.στραβισμός!=DissSquint,
+  McshHlth000011:6546  <br>* McshElln.στραβισμός!=DissSquint,
+  McshHlth000011:6549  <br>* McshEngl.DissSquint_Gntr,
+  McshHlth000011:6551  <br>* DissEye_Gntr,
+  McshHlth000011:6553  <p id="idDssHmn110wholewtr">whole-tree-of-DissSquint::
+  McshHlth000011:6555  <br>* McshEngl.DissSquint_Wltr,
+  McshHlth000011:6559  <h3 id="idDssHmn110symptomH3">symptom of DissSquint
+  McshHlth000011:6566  <br>* McshEngl.DissSquint'symptom,
+  McshHlth000011:6587  <br>* McshEngl.DissMental,
+  McshHlth000011:6588  <br>* McshEngl.disease.108-mental-disorder!⇒DissMental,
+  McshHlth000011:6589  <br>* McshEngl.disease.mental-disorder-108!⇒DissMental,
+  McshHlth000011:6590  <br>* McshEngl.disease.mental!⇒DissMental,
+  McshHlth000011:6591  <br>* McshEngl.mental-disorder!⇒DissMental, {2012-03-11}
+  McshHlth000011:6592  <br>* McshEngl.mental-illness!⇒DissMental, {2012-03-11}
+  McshHlth000011:6593  <br>* McshEngl.phychogenic-disease!⇒DissMental,
+  McshHlth000011:6594  <br>* McshEngl.phychological-disease!⇒DissMental,
+  McshHlth000011:6596  <br>* McshElln.πάθηση.ψυχική!=DissMental,
+  McshHlth000011:6597  <br>* McshElln.ψυχική-αρρώστια!=DissMental,
+  McshHlth000011:6598  <br>* McshElln.ψυχική-ασθένεια!=DissMental,
+  McshHlth000011:6599  <br>* McshElln.ψυχική-διαταραχή!=DissMental,
+  McshHlth000011:6600  <br>* McshElln.ψυχική-νόσο!=DissMental,
+  McshHlth000011:6609  <h2 id="idDssHmn108symptomH2">symptom of DissMental
+  McshHlth000011:6633  <br>* McshEngl.DissMental'symptom,
+  McshHlth000011:6638  <h2 id="idDssHmn108causeH2">cause of DissMental
+  McshHlth000011:6655  <br>* McshEngl.DissMental'cause,
+  McshHlth000011:6660  <h2 id="idDssHmn108therapyH2">therapy of DissMental
+  McshHlth000011:6667  <br>* McshEngl.DissMental'therapy,
+  McshHlth000011:6672  <h2 id="idDssHmn108evogH2">evoluting of DissMental
+  McshHlth000011:6710  <br>* McshEngl.DissMental'evoluting,
+  McshHlth000011:6715  <h2 id="idDssHmn108gstrH2">GENERIC-SPECIFIC-TREE of DissMental
+  McshHlth000011:6721  <br>* McshEngl.DissMental'generic-specific-tree,
+  McshHlth000011:6722  <br>* McshEngl.DissMental'specific-generic-tree,
+  McshHlth000011:6725  <br>* McshEngl.DissMental_Gntr,
+  McshHlth000011:6731  <br>* McshEngl.DissMental.specific,
+  McshHlth000011:6732  <br>* McshEngl.DissMental_Sptr,
+  McshHlth000011:6734  <br>* DissMental.anxiety-079!@McshHlth000011#idDssHmn079,
+  McshHlth000011:6735  <br>* DissMental.depression-080!@McshHlth000011#idDssHmn080,
+  McshHlth000011:6736  <br>* DissMental.personality-disorder-277!@McshHlth000011#idDssHmn277,
+  McshHlth000011:6737  <br>* DissMental.bipolar-270!@McshHlth000011#idDssHmn270,
+  McshHlth000011:6738  <br>* DissMental.insanity-081!@McshHlth000011#idDssHmn081,
+  McshHlth000011:6739  <br>* DissMental.psychopathy-082!@McshHlth000011#idDssHmn082,
+  McshHlth000011:6740  <br>* DissMental.hypochondriasis-083!@McshHlth000011#idDssHmn083,
+  McshHlth000011:6741  <br>* DissMental.mood-084!@McshHlth000011#idDssHmn084,
+  McshHlth000011:6742  <br>* DissMental.somatic-symptom-disorder-273!@McshHlth000011#idDssHmn273,
+  McshHlth000011:6743  <br>* DissMental.addiction-274!@McshHlth000011#idDssHmn274,
+  McshHlth000011:6744  <br>* DissMental.substance-dependence-275!@McshHlth000011#idDssHmn275,
+  McshHlth000011:6745  <br>* DissMental.body-dysmorphic-290!@McshHlth000011#idDssHmn290,
+  McshHlth000011:6764  <h2 id="idDssHmn079H2">DissMental.anxiety-079
+  McshHlth000011:6788  <br>* McshEngl.DissAnxiety,
+  McshHlth000011:6789  <br>* McshEngl.disease.079-anxiety-disorder!⇒DissAnxiety,
+  McshHlth000011:6790  <br>* McshEngl.disease.anxiety-disorder-079!⇒DissAnxiety,
+  McshHlth000011:6791  <br>* McshEngl.DissMental.anxiety!⇒DissAnxiety,
+  McshHlth000011:6792  <br>* McshEngl.anxiety-disorder!⇒DissAnxiety,
+  McshHlth000011:6793  <br>* McshEngl.stress-disorder!⇒DissAnxiety,
+  McshHlth000011:6795  <br>* McshElln.πάθηση.αγχώδη-διαταραχή!=DissAnxiety,
+  McshHlth000011:6796  <br>* McshElln.αγχώδη-διαταραχή!=DissAnxiety,
+  McshHlth000011:6797  <br>* McshElln.διαταραχές-άγχους!=DissAnxiety,
+  McshHlth000011:6801  <h3 id="idDssHmn079symptomH3">symptom of DissAnxiety
+  McshHlth000011:6836  <br>* McshEngl.DissAnxiety'symptom,
+  McshHlth000011:6954  <br>* McshEngl.DissAnxiety'symptom.gagging,
+  McshHlth000011:6964  <h3 id="idDssHmn079causeH3">cause of DissAnxiety
+  McshHlth000011:6980  <br>* McshEngl.DissAnxiety'cause,
+  McshHlth000011:6985  <h3 id="idDssHmn079therapyH3">therapy of DissAnxiety
+  McshHlth000011:7000  <br>* McshEngl.DissAnxiety'therapy,
+  McshHlth000011:7475  <h3 id="idDssHmn079irscH3">info-resource of DissAnxiety
+  McshHlth000011:7484  <br>* McshEngl.DissAnxiety'info-resource,
+  McshHlth000011:7489  <h3 id="idDssHmn079gstrH3">GENERIC-SPECIFIC-TREE of DissAnxiety
+  McshHlth000011:7495  <br>* McshEngl.DissAnxiety'generic-specific-tree,
+  McshHlth000011:7496  <br>* McshEngl.DissAnxiety'specific-generic-tree,
+  McshHlth000011:7499  <br>* McshEngl.DissAnxiety_Gntr,
+  McshHlth000011:7504  <br>* McshEngl.DissAnxiety.specific,
+  McshHlth000011:7505  <br>* McshEngl.DissAnxiety_Sptr,
+  McshHlth000011:7527  <h3 id="idDssHmn071H3">DissAnxiety.panic-attack-071
+  McshHlth000011:7535  <br>* McshEngl.DissPanic,
+  McshHlth000011:7536  <br>* McshEngl.DissAnxiety.panic-attack!⇒DissPanic,
+  McshHlth000011:7537  <br>* McshEngl.disease.071-panic-attack!⇒DissPanic,
+  McshHlth000011:7538  <br>* McshEngl.disease.panic-attack-071!⇒DissPanic,
+  McshHlth000011:7539  <br>* McshEngl.panic-attack!⇒DissPanic,
+  McshHlth000011:7541  <br>* McshElln.πάθηση.κρίση-πανικού!=DissPanic,
+  McshHlth000011:7542  <br>* McshElln.κρίση-πανικού!=DissPanic,
+  McshHlth000011:7546  <h4 id="idDssHmn071faqH4">faq of DissPanic
+  McshHlth000011:7665  <br>* McshEngl.DissPanic'faq,
+  McshHlth000011:7670  <h4 id="idDssHmn071irscH4">info-resource of DissPanic
+  McshHlth000011:7677  <br>* McshEngl.DissPanic'info-resource,
+  McshHlth000011:7683  <h3 id="idDssHmn077H3">DissAnxiety.uncertainty-077
+  McshHlth000011:7694  <br>* McshEngl.DissAnxiety.uncertainty-077,
+  McshHlth000011:7730  <h3 id="idDssHmn079SocH3">DissAnxiety.society
+  McshHlth000011:7740  <br>* McshEngl.DissAnxiety.society,
+  McshHlth000011:7745  <h3 id="idDssHmn079PtsdH3">DissAnxiety.Ptsd
+  McshHlth000011:7755  <br>* McshEngl.DissAnxiety.Ptsd,
+  McshHlth000011:7767  <h2 id="idDssHmn080H2">DissMental.depression-080
+  McshHlth000011:7775  <br>* McshEngl.DissDepression,
+  McshHlth000011:7776  <br>* McshEngl.disease.080-depression!⇒DissDepression,
+  McshHlth000011:7777  <br>* McshEngl.disease.depression-080!⇒DissDepression,
+  McshHlth000011:7778  <br>* McshEngl.DissMental.depression!⇒DissDepression,
+  McshHlth000011:7779  <br>* McshEngl.depression!⇒DissDepression,
+  McshHlth000011:7781  <br>* McshElln.πάθηση.κατάθλιψη!=DissDepression,
+  McshHlth000011:7782  <br>* McshElln.πάθηση.μελαγχολία!=DissDepression,
+  McshHlth000011:7783  <br>* McshElln.κατάθλιψη!=DissDepression,
+  McshHlth000011:7784  <br>* McshElln.μελαγχολία!=DissDepression,
+  McshHlth000011:7791  <h3 id="idDssHmn080therapyH3">therapy of DissDepression
+  McshHlth000011:7803  <br>* McshEngl.DissDepression'therapy,
+  McshHlth000011:7808  <h3 id="idDssHmn080gstrH3">GENERIC-SPECIFIC-TREE of DissDepression
+  McshHlth000011:7814  <br>* McshEngl.DissDepression'generic-specific-tree,
+  McshHlth000011:7815  <br>* McshEngl.DissDepression'specific-generic-tree,
+  McshHlth000011:7818  <br>* McshEngl.DissDepression_Gntr,
+  McshHlth000011:7823  <br>* McshEngl.DissDepression.specific,
+  McshHlth000011:7824  <br>* McshEngl.DissDepression_Sptr,
+  McshHlth000011:7836  <h2 id="idDssHmn277H2">DissMental.personality-disorder-277
+  McshHlth000011:7847  <br>* McshEngl.DissPersonality,
+  McshHlth000011:7848  <br>* McshEngl.disease.277-personality-disorder!⇒DissPersonality,
+  McshHlth000011:7849  <br>* McshEngl.DissMental.personality!⇒DissPersonality,
+  McshHlth000011:7850  <br>* McshEngl.personality-disorder!⇒DissPersonality,
+  McshHlth000011:7855  <h2 id="idDssHmn270H2">DissMental.bipolar-270
+  McshHlth000011:7863  <br>* McshEngl.DissBipolar,
+  McshHlth000011:7864  <br>* McshEngl.bipolar-disorder!⇒DissBipolar,
+  McshHlth000011:7865  <br>* McshEngl.disease.270-bipolar-disorder!⇒DissBipolar,
+  McshHlth000011:7866  <br>* McshEngl.disease.bipolar-disorder!⇒DissBipolar,
+  McshHlth000011:7867  <br>* McshEngl.DissMental.bipolar!⇒DissBipolar,
+  McshHlth000011:7869  <br>* McshElln.διπολική-διαταραχή!=DissBipolar,
+  McshHlth000011:7874  <h2 id="idDssHmn081H2">DissMental.insanity-081
+  McshHlth000011:7888  <br>* McshEngl.DissInsanity,
+  McshHlth000011:7889  <br>* McshEngl.disease.081-insanity!⇒DissInsanity,
+  McshHlth000011:7890  <br>* McshEngl.disease.insanity-081!⇒DissInsanity,
+  McshHlth000011:7891  <br>* McshEngl.DissMental.insanity!⇒DissInsanity,
+  McshHlth000011:7892  <br>* McshEngl.insanity!⇒DissInsanity,
+  McshHlth000011:7893  <br>* McshEngl.madness!⇒DissInsanity,
+  McshHlth000011:7895  <br>* McshElln.παράνοια!=DissInsanity,
+  McshHlth000011:7896  <br>* McshElln.παραφροσύνη!=DissInsanity,
+  McshHlth000011:7897  <br>* McshElln.τρέλα!=DissInsanity,
+  McshHlth000011:7898  <br>* McshElln.φρενοβλάβεια!=DissInsanity,
+  McshHlth000011:7903  <h2 id="idDssHmn082H2">DissMental.psychopathy-082
+  McshHlth000011:7912  <br>* McshEngl.DissPsychopathy,
+  McshHlth000011:7913  <br>* McshEngl.disease.082-psychopathy!⇒DissPsychopathy,
+  McshHlth000011:7914  <br>* McshEngl.disease.psychopathy!⇒DissPsychopathy,
+  McshHlth000011:7915  <br>* McshEngl.DissMental.psychopathy!⇒DissPsychopathy,
+  McshHlth000011:7916  <br>* McshEngl.psychopathy!⇒DissPsychopathy,
+  McshHlth000011:7921  <h2 id="idDssHmn083H2">DissMental.hypochondriasis-083
+  McshHlth000011:7938  <br>* McshEngl.DissHypochondriasis,
+  McshHlth000011:7939  <br>* McshEngl.disease.083-hypochondriasis!⇒DissHypochondriasis,
+  McshHlth000011:7940  <br>* McshEngl.disease.hypochondriasis!⇒DissHypochondriasis,
+  McshHlth000011:7941  <br>* McshEngl.DissMental.hypochondriasis!⇒DissHypochondriasis,
+  McshHlth000011:7942  <br>* McshEngl.hypochondriasis!⇒DissHypochondriasis, /haipokodráiasis/,
+  McshHlth000011:7947  <h2 id="idDssHmn084H2">DissMental.mood-084
+  McshHlth000011:7955  <br>* McshEngl.DissMood,
+  McshHlth000011:7956  <br>* McshEngl.disease.084.mood!⇒DissMood,
+  McshHlth000011:7957  <br>* McshEngl.disease.mood!⇒DissMood,
+  McshHlth000011:7958  <br>* McshEngl.DissMental.mood!⇒DissMood,
+  McshHlth000011:7959  <br>* McshEngl.mood-disorder!⇒DissMood,
+  McshHlth000011:7963  <h3 id="idDssHmn084causeH3">cuase of DissMood
+  McshHlth000011:7971  <br>* McshEngl.DissMood'cause,
+  McshHlth000011:7977  <h2 id="idDssHmn273H2">DissMental.somatic-symptom-disorder-273
+  McshHlth000011:7985  <br>* McshEngl.DissMentalSomatic,
+  McshHlth000011:7986  <br>* McshEngl.disease.273-somatic-symptom-disorder!⇒DissMentalSomatic,
+  McshHlth000011:7987  <br>* McshEngl.disease.somatic-symptom-disorder!⇒DissMentalSomatic,
+  McshHlth000011:7988  <br>* McshEngl.DissMental.somatic-symptom-disorder!⇒DissMentalSomatic,
+  McshHlth000011:7989  <br>* McshEngl.somatic-symptom-disorder!⇒DissMentalSomatic,
+  McshHlth000011:7998  <h2 id="idDssHmn274H2">DissMental.addiction-274
+  McshHlth000011:8005  <br>* McshEngl.DissAddiction,
+  McshHlth000011:8006  <br>* McshEngl.addiction!⇒DissAddiction,
+  McshHlth000011:8007  <br>* McshEngl.disease.274-addiction!⇒DissAddiction,
+  McshHlth000011:8008  <br>* McshEngl.disease.addiction!⇒DissAddiction,
+  McshHlth000011:8009  <br>* McshEngl.DissMental.addiction!⇒DissAddiction,
+  McshHlth000011:8011  <br>* McshElln.εθισμός-πάθηση!=DissAddiction,
+  McshHlth000011:8012  <br>* McshElln.πάθηση.εθισμός!=DissAddiction,
+  McshHlth000011:8016  <h3 id="idDssHmn274thrpH3">therapy of DissAddiction
+  McshHlth000011:8026  <br>* McshEngl.DissAddiction'therapy,
+  McshHlth000011:8032  <h2 id="idDssHmn275H2">DissMental.substance-dependence-275
+  McshHlth000011:8041  <br>* McshEngl.DissSubstance_dependence,
+  McshHlth000011:8042  <br>* McshEngl.DissSubstance-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8043  <br>* McshEngl.disease.275-substance-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8044  <br>* McshEngl.disease.substance-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8045  <br>* McshEngl.DissMental.substance-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8046  <br>* McshEngl.drug-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8047  <br>* McshEngl.substance-dependence!⇒DissSubstance_dependence,
+  McshHlth000011:8049  <br>* McshElln.εξάρτηση-από-ουσίες-πάθηση!=DissSubstance_dependence,
+  McshHlth000011:8054  <h2 id="idDssHmn290H2">DissMental.body-dysmorphic-290
+  McshHlth000011:8062  <br>* McshEngl.DissBody_dysmorphic,
+  McshHlth000011:8063  <br>* McshEngl.DissBody-dysmorphic!⇒DissBody_dysmorphic,
+  McshHlth000011:8064  <br>* McshEngl.BDD-body-dysmorphic-disorder!⇒DissBody_dysmorphic,
+  McshHlth000011:8065  <br>* McshEngl.body-dysmorphic-disorder!⇒DissBody_dysmorphic,
+  McshHlth000011:8066  <br>* McshEngl.disease.290-body-dysmorphic-disorder!⇒DissBody_dysmorphic,
+  McshHlth000011:8067  <br>* McshEngl.disease.body-dysmorphic-disorder!⇒DissBody_dysmorphic,
+  McshHlth000011:8068  <br>* McshEngl.diseaseMental.body-dysmorphic!⇒DissBody_dysmorphic,
+  McshHlth000011:8069  <br>* McshEngl.DissMental.body-dysmorphic-290!⇒DissBody_dysmorphic,
+  McshHlth000011:8082  <br>* McshEngl.DissMentalNo,
+  McshHlth000011:8083  <br>* McshEngl.body-disease!⇒DissMentalNo,
+  McshHlth000011:8084  <br>* McshEngl.disease.276-mentalNo!⇒DissMentalNo,
+  McshHlth000011:8085  <br>* McshEngl.disease.mentalNo!⇒DissMentalNo,
+  McshHlth000011:8086  <br>* McshEngl.mentalNo-disease!⇒DissMentalNo,
+  McshHlth000011:8087  <br>* McshEngl.physical-disease!⇒DissMentalNo,
+  McshHlth000011:8101  <br>* McshEngl.DissEar,
+  McshHlth000011:8108  <br>* McshEngl.DissEar_Gntr,
+  McshHlth000011:8112  <p id="idDssHmn112wtr">whole-tree-of-DissEar::
+  McshHlth000011:8114  <br>* McshEngl.DissEar_Wltr,
+  McshHlth000011:8118  <h2 id="idDssHmn112protectionH2">protection of DissEar
+  McshHlth000011:8125  <br>* McshEngl.DissEar'protection,
+  McshHlth000011:8147  <br>* McshEngl.DissAerophagia,
+  McshHlth000011:8156  <p id="idDssHmn113wtr">whole-tree-of-DissAerophagia::
+  McshHlth000011:8158  <br>* McshEngl.DissAerophagia_Wltr,
+  McshHlth000011:8162  <h2 id="idDssHmn113therapyH2">therapy of DissAerophagia
+  McshHlth000011:8169  <br>* McshEngl.DissAerophagia'therapy,
+  McshHlth000011:8185  <br>* McshEngl.DissAids,
+  McshHlth000011:8194  <br>* McshEngl.DissAids_Gntr,
+  McshHlth000011:8200  <h2 id="idDssHmn114causeH2">cause of DissAids
+  McshHlth000011:8216  <br>* McshEngl.DissAids'cause,
+  McshHlth000011:8221  <h2 id="idDssHmn114therapyH2">therapy of DissAids
+  McshHlth000011:8231  <br>* McshEngl.DissAids'therapy,
+  McshHlth000011:8236  <h2 id="idDssHmn114protectionH2">protection of DissAids
+  McshHlth000011:8247  <br>* McshEngl.DissAids'protection,
+  McshHlth000011:8252  <h2 id="idDssHmn114statsH2">stats of DissAids
+  McshHlth000011:8260  <br>* McshEngl.DissAids'stats,
+  McshHlth000011:8265  <h2 id="idDssHmn114resourceH2">resource of DissAids
+  McshHlth000011:8274  <br>* McshEngl.DissAids'info-resource,
+  McshHlth000011:8279  <h2 id="idDssHmn114evogH2">evoluting of DissAids
+  McshHlth000011:8319  <br>* McshEngl.DissAids'evoluting,
+  McshHlth000011:8343  <br>* McshEngl.DissAlzheimer,
+  McshHlth000011:8350  <br>* McshEngl.DissAlzheimer_Gntr,
+  McshHlth000011:8356  <h2 id="idDssHmn115therapyH2">therapy of DissAlzheimer
+  McshHlth000011:8384  <br>* McshEngl.DissAlzheimer'therapy,
+  McshHlth000011:8389  <h2 id="idDssHmn115statsH2">stats of DissAlzheimer
+  McshHlth000011:8396  <br>* McshEngl.DissAlzheimer'stats,
+  McshHlth000011:8401  <h2 id="idDssHmn115resourceH2">resource of DissAlzheimer
+  McshHlth000011:8408  <br>* McshEngl.DissAlzheimer'info-resource,
+  McshHlth000011:8425  <br>* McshEngl.DissDementia,
+  McshHlth000011:8426  <br>* McshEngl.disease.116-dementia!⇒DissDementia,
+  McshHlth000011:8427  <br>* McshEngl.disease.dementia-116!⇒DissDementia,
+  McshHlth000011:8428  <br>* McshEngl.senility!⇒DissDementia,
+  McshHlth000011:8429  <br>* McshEngl.dementia!⇒DissDementia,
+  McshHlth000011:8431  <br>* McshElln.πάθηση.άνοια!=DissDementia,
+  McshHlth000011:8432  <br>* McshElln.άνοια!=DissDementia,
+  McshHlth000011:8433  <br>* McshElln.γεροντική-άνοια!=DissDementia,
+  McshHlth000011:8437  <h2 id="idDssHmn116symptonH2">sympton of DissDementia
+  McshHlth000011:8454  <br>* McshEngl.DissDementia'symptom,
+  McshHlth000011:8459  <h2 id="idDssHmn116therapyH2">therapy of DissDementia
+  McshHlth000011:8469  <br>* McshEngl.DissDementia'therapy,
+  McshHlth000011:8474  <h2 id="idDssHmn116helpH2">help of DissDementia
+  McshHlth000011:8481  <br>* McshEngl.DissDementia'help,
+  McshHlth000011:8486  <h2 id="idDssHmn116resourceH2">resource of DissDementia
+  McshHlth000011:8494  <br>* McshEngl.DissDementia'info-resource,
+  McshHlth000011:8499  <h2 id="idDssHmn116gstrH2">GENERIC-SPECIFIC-TREE of DissDementia
+  McshHlth000011:8505  <br>* McshEngl.DissDementia'generic-specific-tree,
+  McshHlth000011:8506  <br>* McshEngl.DissDementia'specific-generic-tree,
+  McshHlth000011:8509  <br>* McshEngl.DissDementia_Gntr,
+  McshHlth000011:8515  <br>* McshEngl.DissDementia.specific,
+  McshHlth000011:8516  <br>* McshEngl.DissDementia_Sptr,
+  McshHlth000011:8523  <h2 id="idDssHmn116_1H2">DissDementia.Mci
+  McshHlth000011:8533  <br>* McshEngl.DissDementia.Mci!=Mild-cognitive-impairment,
+  McshHlth000011:8552  <br>* McshEngl.DissCommon_cold,
+  McshHlth000011:8562  <h2 id="idDssHmn124causeH2">cause of DissCommon_cold
+  McshHlth000011:8575  <br>* McshEngl.DissCommon_cold'cause,
+  McshHlth000011:8580  <h2 id="idDssHmn124therapyH2">therapy of DissCommon_cold
+  McshHlth000011:8592  <br>* McshEngl.DissCommon_cold'therapy,
+  McshHlth000011:8715  <h2 id="idDssHmn124protectionH2">protection of DissCommon_cold
+  McshHlth000011:8725  <br>* McshEngl.DissCommon_cold'protection,
+  McshHlth000011:8730  <h2 id="idDssHmn124rtizH2">relation-to-influenza of DissCommon_cold
+  McshHlth000011:8739  <br>* McshEngl.DissCommon_cold'relation-to-influenza,
+  McshHlth000011:8744  <h2 id="idDssHmn124gstrH2">GENERIC-SPECIFIC-TREE of DissCommon_cold
+  McshHlth000011:8750  <br>* McshEngl.DissCommon_cold'generic-specific-tree,
+  McshHlth000011:8751  <br>* McshEngl.DissCommon_cold'specific-generic-tree,
+  McshHlth000011:8754  <br>* McshEngl.DissCommon_cold_Gntr,
+  McshHlth000011:8760  <br>* McshEngl.DissCommon_cold.specific,
+  McshHlth000011:8761  <br>* McshEngl.DissCommon_cold_Sptr,
+  McshHlth000011:8771  <h2 id="idDssHmn120H2">DissCommon_cold.coughing-120
+  McshHlth000011:8780  <br>* McshEngl.DissCoughing,
+  McshHlth000011:8787  <br>* McshEngl.DissCoughing_Gntr,
+  McshHlth000011:8793  <h3 id="idDssHmn120therapyH3">therapy of DissCoughing
+  McshHlth000011:8820  <br>* McshEngl.DissCoughing'therapy,
+  McshHlth000011:8825  <h3 id="idDssHmn120resourceH3">resource of DissCoughing
+  McshHlth000011:8832  <br>* McshEngl.DissCoughing'info-resource,
+  McshHlth000011:8855  <br>* McshEngl.DissBronchitis,
+  McshHlth000011:8862  <br>* McshEngl.DissBronchitis_Gntr,
+  McshHlth000011:8868  <h2 id="idDssHmn126symptomH2">symptom of DissBronchitis
+  McshHlth000011:8875  <br>* McshEngl.DissBronchitis'symptom,
+  McshHlth000011:8880  <h2 id="idDssHmn126therapyH2">therapy of DissBronchitis
+  McshHlth000011:8896  <br>* McshEngl.DissBronchitis'therapy,
+  McshHlth000011:8970  <br>* McshEngl.DissFlu,
+  McshHlth000011:8971  <br>* McshEngl.disease.127-influenza!⇒DissFlu,
+  McshHlth000011:8972  <br>* McshEngl.disease.influenza!⇒DissFlu,
+  McshHlth000011:8973  <br>* McshEngl.flu!⇒DissFlu,
+  McshHlth000011:8974  <br>* McshEngl.influenza!⇒DissFlu,
+  McshHlth000011:8976  <br>* McshElln.πάθηση.γρίπη!=DissFlu,
+  McshHlth000011:8977  <br>* McshElln.γρίπη!=DissFlu,
+  McshHlth000011:8981  <h2 id="idDssHmn127gstrH2">GENERIC-SPECIFIC-TREE of DissFlu
+  McshHlth000011:8987  <br>* McshEngl.DissFlu'generic-specific-tree,
+  McshHlth000011:8988  <br>* McshEngl.DissFlu'specific-generic-tree,
+  McshHlth000011:8991  <br>* McshEngl.DissFlu_Gntr,
+  McshHlth000011:8993  <br>* DissViralInfection_Gntr,
+  McshHlth000011:8997  <br>* McshEngl.DissFlu.specific,
+  McshHlth000011:8998  <br>* McshEngl.DissFlu_Sptr,
+  McshHlth000011:9000  <br>* DissFlu.{1918}-flu!@McshHlth000011#idDssHmn127flu.1918,
+  McshHlth000011:9005  <h2 id="idDssHmn127symptomH2">symptom of DissFlu
+  McshHlth000011:9018  <br>* McshEngl.DissFlu'symptom,
+  McshHlth000011:9106  <h2 id="idDssHmn127therapyH2">therapy of DissFlu
+  McshHlth000011:9139  <br>* McshEngl.DissFlu'therapy,
+  McshHlth000011:9144  <h2 id="idDssHmn127protectionH2">protection of DissFlu
+  McshHlth000011:9155  <br>* McshEngl.DissFlu'protection,
+  McshHlth000011:9163  <h2 id="idDssHmn127wholeH2">whole of DissFlu
+  McshHlth000011:9172  <br>* McshEngl.DissFlu'whole,
+  McshHlth000011:9177  <h2 id="idDssHmn127flu.1918H2">DissFlu.{1918}-flu
+  McshHlth000011:9187  <br>* McshEngl.DissFlu.{1918}-flu,
+  McshHlth000011:9208  <br>* McshEngl.DissDiarrhea,
+  McshHlth000011:9220  <h2 id="idDssHmn128therapyH2">therapy of DissDiarrhea
+  McshHlth000011:9233  <br>* McshEngl.DissDiarrhea'therapy,
+  McshHlth000011:9238  <h2 id="idDssHmn128gstrH2">GENERIC-SPECIFIC-TREE of DissDiarrhea
+  McshHlth000011:9244  <br>* McshEngl.DissDiarrhea'generic-specific-tree,
+  McshHlth000011:9245  <br>* McshEngl.DissDiarrhea'specific-generic-tree,
+  McshHlth000011:9248  <br>* McshEngl.DissDiarrhea_Gntr,
+  McshHlth000011:9254  <br>* McshEngl.DissDiarrhea.specific,
+  McshHlth000011:9255  <br>* McshEngl.DissDiarrhea_Sptr,
+  McshHlth000011:9262  <h2 id="idDssHmn139H2">DissDiarrhea.travel-139
+  McshHlth000011:9272  <br>* McshEngl.DissDiarrheaTravel,
+  McshHlth000011:9286  <br>* McshEngl.DissDiarrheaTravel_Gntr,
+  McshHlth000011:9292  <h3 id="idDssHmn139causeH3">cause of DissDiarrheaTravel
+  McshHlth000011:9307  <br>* McshEngl.DissDiarrheaTravel'cause,
+  McshHlth000011:9312  <h3 id="idDssHmn139therapyH3">therapy of DissDiarrheaTravel
+  McshHlth000011:9320  <br>* McshEngl.DissDiarrheaTravel'therapy,
+  McshHlth000011:9325  <h3 id="idDssHmn139protectionH3">protection of DissDiarrheaTravel
+  McshHlth000011:9337  <br>* McshEngl.DissDiarrheaTravel'protection,
+  McshHlth000011:9342  <h3 id="idDssHmn139resourceH3">resource of DissDiarrheaTravel
+  McshHlth000011:9349  <br>* McshEngl.DissDiarrheaTravel'info-resource,
+  McshHlth000011:9366  <br>* McshEngl.DissChicken_pox,
+  McshHlth000011:9373  <br>* McshEngl.DissChicken_pox_Gntr,
+  McshHlth000011:9379  <h2 id="idDssHmn163symptomH2">symptom of DissChicken_pox
+  McshHlth000011:9387  <br>* McshEngl.DissChicken_pox'symptom,
+  McshHlth000011:9392  <h2 id="idDssHmn163causeH2">cause of DissChicken_pox
+  McshHlth000011:9400  <br>* McshEngl.DissChicken_pox'cause,
+  McshHlth000011:9405  <h2 id="idDssHmn163protectionH2">protection of DissChicken_pox
+  McshHlth000011:9413  <br>* McshEngl.DissChicken_pox'protection,
+  McshHlth000011:9426  <br>* McshEngl.DissRubella,
+  McshHlth000011:9427  <br>* McshEngl.disease.164-rubella!⇒DissRubella,
+  McshHlth000011:9428  <br>* McshEngl.disease.rubella-164!⇒DissRubella,
+  McshHlth000011:9429  <br>* McshEngl.rubella!⇒DissRubella,
+  McshHlth000011:9431  <br>* McshElln.πάθηση.ερυθρα!=DissRubella,
+  McshHlth000011:9432  <br>* McshElln.ερυθρα!=DissRubella,
+  McshHlth000011:9435  <br>* McshEngl.DissRubella_Gntr,
+  McshHlth000011:9437  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9441  <h2 id="idDssHmn164symptomH2">symptom of DissRubella
+  McshHlth000011:9453  <br>* McshEngl.DissRubella'symptom,
+  McshHlth000011:9458  <h2 id="idDssHmn164protectionH2">protection of DissRubella
+  McshHlth000011:9466  <br>* McshEngl.DissRubella'protection,
+  McshHlth000011:9471  <h2 id="idDssHmn164evogH2">evoluting of DissRubella
+  McshHlth000011:9479  <br>* McshEngl.DissRubella'evoluting,
+  McshHlth000011:9494  <br>* McshEngl.DissHepatitis,
+  McshHlth000011:9502  <h2 id="idDssHmn166symptomH2">symptom of DissHepatitis
+  McshHlth000011:9515  <br>* McshEngl.DissHepatitis'symptom,
+  McshHlth000011:9520  <h2 id="idDssHmn166causeH2">cause of DissHepatitis
+  McshHlth000011:9544  <br>* McshEngl.DissHepatitis'cause,
+  McshHlth000011:9549  <h2 id="idDssHmn166therapyH2">therapy of DissHepatitis
+  McshHlth000011:9568  <br>* McshEngl.DissHepatitis'therapy,
+  McshHlth000011:9573  <h2 id="idDssHmn166protectionH2">protection of DissHepatitis
+  McshHlth000011:9592  <br>* McshEngl.DissHepatitis'protection,
+  McshHlth000011:9597  <h2 id="idDssHmn166resourceH2">resource of DissHepatitis
+  McshHlth000011:9636  <br>* McshEngl.DissHepatitis'info-resource,
+  McshHlth000011:9641  <h2 id="idDssHmn166evogH2">evoluting of DissHepatitis
+  McshHlth000011:9649  <br>* McshEngl.DissHepatitis'evoluting,
+  McshHlth000011:9654  <h2 id="idDssHmn166gstrH2">GENERIC-SPECIFIC-TREE of DissHepatitis
+  McshHlth000011:9660  <br>* McshEngl.DissHepatitis'generic-specific-tree,
+  McshHlth000011:9661  <br>* McshEngl.DissHepatitis'specific-generic-tree,
+  McshHlth000011:9664  <br>* McshEngl.DissHepatitis_Gntr,
+  McshHlth000011:9666  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9670  <br>* McshEngl.DissHepatitis.specific,
+  McshHlth000011:9671  <br>* McshEngl.DissHepatitis_Sptr,
+  McshHlth000011:9693  <br>* McshEngl.DissMeasles,
+  McshHlth000011:9694  <br>* McshEngl.disease.167-measles!⇒DissMeasles,
+  McshHlth000011:9695  <br>* McshEngl.disease.measles-167!⇒DissMeasles,
+  McshHlth000011:9696  <br>* McshEngl.measles!⇒DissMeasles,
+  McshHlth000011:9698  <br>* McshElln.πάθηση.ιλαρά!=DissMeasles,
+  McshHlth000011:9699  <br>* McshElln.ιλαρά!=DissMeasles,
+  McshHlth000011:9702  <br>* McshEngl.DissMeasles_Gntr,
+  McshHlth000011:9704  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9708  <h2 id="idDssHmn167symptomH2">symptom of DissMeasles
+  McshHlth000011:9719  <br>* McshEngl.DissMeasles'symptom,
+  McshHlth000011:9724  <h2 id="idDssHmn167protectionH2">protection of DissMeasles
+  McshHlth000011:9732  <br>* McshEngl.DissMeasles'protection,
+  McshHlth000011:9745  <br>* McshEngl.DissRabies,
+  McshHlth000011:9746  <br>* McshEngl.disease.168-rabies!⇒DissRabies,
+  McshHlth000011:9747  <br>* McshEngl.disease.rabies-168!⇒DissRabies,
+  McshHlth000011:9748  <br>* McshEngl.rabies!⇒DissRabies,
+  McshHlth000011:9750  <br>* McshElln.πάθηση.λύσσα!=DissRabies,
+  McshHlth000011:9751  <br>* McshElln.λύσσα!=DissRabies,
+  McshHlth000011:9754  <br>* McshEngl.DissRabies_Gntr,
+  McshHlth000011:9756  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9760  <h2 id="idDssHmn168symptomH2">symptom of DissRabies
+  McshHlth000011:9768  <br>* McshEngl.DissRabies'symptom,
+  McshHlth000011:9773  <h2 id="idDssHmn168causeH2">cause of DissRabies
+  McshHlth000011:9781  <br>* McshEngl.DissRabies'cause,
+  McshHlth000011:9786  <h2 id="idDssHmn168protectionH2">protection of DissRabies
+  McshHlth000011:9794  <br>* McshEngl.DissRabies'protection,
+  McshHlth000011:9809  <br>* McshEngl.DissParotitis,
+  McshHlth000011:9817  <br>* McshEngl.DissParotitis_Gntr,
+  McshHlth000011:9819  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9823  <h2 id="idDssHmn169symptomH2">symptom of DissParotitis
+  McshHlth000011:9831  <br>* McshEngl.DissParotitis'symptom,
+  McshHlth000011:9836  <h2 id="idDssHmn169causeH2">cause of DissParotitis
+  McshHlth000011:9844  <br>* McshEngl.DissParotitis'cause,
+  McshHlth000011:9849  <h2 id="idDssHmn169therapyH2">therapy of DissParotitis
+  McshHlth000011:9857  <br>* McshEngl.DissParotitis'therapy,
+  McshHlth000011:9862  <h2 id="idDssHmn169protectionH2">protection of DissParotitis
+  McshHlth000011:9870  <br>* McshEngl.DissParotitis'protection,
+  McshHlth000011:9886  <br>* McshEngl.DissPoliomyelitis,
+  McshHlth000011:9894  <br>* McshEngl.DissPoliomyelitis_Gntr,
+  McshHlth000011:9896  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9900  <h2 id="idDssHmn170symptomH2">symptom of DissPoliomyelitis
+  McshHlth000011:9908  <br>* McshEngl.DissPoliomyelitis'symptom,
+  McshHlth000011:9913  <h2 id="idDssHmn170causeH2">cause of DissPoliomyelitis
+  McshHlth000011:9921  <br>* McshEngl.DissPoliomyelitis'cause,
+  McshHlth000011:9926  <h2 id="idDssHmn170protectionH2">protection of DissPoliomyelitis
+  McshHlth000011:9935  <br>* McshEngl.DissPoliomyelitis'protection,
+  McshHlth000011:9948  <br>* McshEngl.DissSmallpox,
+  McshHlth000011:9949  <br>* McshEngl.disease.171-smallpox!⇒DissSmallpox,
+  McshHlth000011:9950  <br>* McshEngl.disease.smallpox-171!⇒DissSmallpox,
+  McshHlth000011:9951  <br>* McshEngl.smallpox!⇒DissSmallpox,
+  McshHlth000011:9953  <br>* McshElln.πάθηση.ευλογιά!=DissSmallpox,
+  McshHlth000011:9954  <br>* McshElln.ευλογιά!=DissSmallpox,
+  McshHlth000011:9957  <br>* McshEngl.DissSmallpox_Gntr,
+  McshHlth000011:9959  <br>* DissViralInfection_Gntr,
+  McshHlth000011:9963  <h2 id="idDssHmn171symptomH2">symptom of DissSmallpox
+  McshHlth000011:9972  <br>* McshEngl.DissSmallpox'symptom,
+  McshHlth000011:9977  <h2 id="idDssHmn171causeH2">cause of DissSmallpox
+  McshHlth000011:9985  <br>* McshEngl.DissSmallpox'cause,
+  McshHlth000011:9990  <h2 id="idDssHmn171protectionH2">protection of DissSmallpox
+  McshHlth000011:9998  <br>* McshEngl.DissSmallpox'protection,
+  McshHlth000011:10003  <h2 id="idDssHmn171statsH2">stats of DissSmallpox
+  McshHlth000011:10012  <br>* McshEngl.DissSmallpox'stats,
+  McshHlth000011:10027  <br>* McshEngl.DissScarletfever,
+  McshHlth000011:10034  <br>* McshEngl.DissScarletfever_Gntr,
+  McshHlth000011:10040  <h2 id="idDssHmn173symptomH2">symptom of DissScarletfever
+  McshHlth000011:10049  <br>* McshEngl.DissScarletfever'symptom,
+  McshHlth000011:10054  <h2 id="idDssHmn173causeH2">cause of DissScarletfever
+  McshHlth000011:10065  <br>* McshEngl.DissScarletfever'cause,
+  McshHlth000011:10070  <h2 id="idDssHmn173therapyH2">therapy of DissScarletfever
+  McshHlth000011:10078  <br>* McshEngl.DissScarletfever'therapy,
+  McshHlth000011:10094  <br>* McshEngl.DissMeningitis,
+  McshHlth000011:10102  <h2 id="idDssHmn174symptomH2">symptom of DissMeningitis
+  McshHlth000011:10130  <br>* McshEngl.DissMeningitis'sympton,
+  McshHlth000011:10135  <h2 id="idDssHmn174causeH2">cause of DissMeningitis
+  McshHlth000011:10158  <br>* McshEngl.DissMeningitis'cause,
+  McshHlth000011:10163  <h2 id="idDssHmn174protectionH2">protection of DissMeningitis
+  McshHlth000011:10189  <br>* McshEngl.DissMeningitis'protection,
+  McshHlth000011:10194  <h2 id="idDssHmn174evogH2">evoluting of DissMeningitis
+  McshHlth000011:10203  <br>* McshEngl.DissMeningitis'evoluting,
+  McshHlth000011:10208  <h2 id="idDssHmn174gstrH2">GENERIC-SPECIFIC-TREE of DissMeningitis
+  McshHlth000011:10214  <br>* McshEngl.DissMeningitis'generic-specific-tree,
+  McshHlth000011:10215  <br>* McshEngl.DissMeningitis'specific-generic-tree,
+  McshHlth000011:10218  <br>* McshEngl.DissMeningitis_Gntr,
+  McshHlth000011:10224  <br>* McshEngl.DissMeningitis.specific,
+  McshHlth000011:10225  <br>* McshEngl.DissMeningitis_Sptr,
+  McshHlth000011:10270  <br>* McshEngl.DissTyphoid_fever,
+  McshHlth000011:10277  <br>* McshEngl.DissTyphoid_fever_Gntr,
+  McshHlth000011:10283  <h2 id="idDssHmn175causeH2">cause of DissTyphoid_fever
+  McshHlth000011:10294  <br>* McshEngl.DissTyphoid_fever'cause,
+  McshHlth000011:10299  <h2 id="idDssHmn175protectionH2">protection of DissTyphoid_fever
+  McshHlth000011:10320  <br>* McshEngl.DissTyphoid_fever'protection,
+  McshHlth000011:10335  <br>* McshEngl.DissTetanus,
+  McshHlth000011:10342  <br>* McshEngl.DissTetanus_Gntr,
+  McshHlth000011:10348  <h2 id="idDssHmn176symptomH2">symptom of DissTetanus
+  McshHlth000011:10357  <br>* McshEngl.DissTetanus'symptom,
+  McshHlth000011:10362  <h2 id="idDssHmn176causeH2">cause of DissTetanus
+  McshHlth000011:10375  <br>* McshEngl.DissTetanus'cause,
+  McshHlth000011:10380  <h2 id="idDssHmn176protectionH2">protection of DissTetanus
+  McshHlth000011:10388  <br>* McshEngl.DissTetanus'protection,
+  McshHlth000011:10401  <br>* McshEngl.DissTetanus'evoluting,
+  McshHlth000011:10416  <br>* McshEngl.DissDiphtheria,
+  McshHlth000011:10423  <br>* McshEngl.DissDiphtheria_Gntr,
+  McshHlth000011:10429  <h2 id="idDssHmn178symptomH2">symptom of DissDiphtheria
+  McshHlth000011:10437  <br>* McshEngl.DissDiphtheria'symptom,
+  McshHlth000011:10442  <h2 id="idDssHmn178causeH2">cause of DissDiphtheria
+  McshHlth000011:10452  <br>* McshEngl.DissDiphtheria'cause,
+  McshHlth000011:10457  <h2 id="idDssHmn178therapyH2">therapy of DissDiphtheria
+  McshHlth000011:10465  <br>* McshEngl.DissDiphtheria'therapy,
+  McshHlth000011:10469  <h2 id="idDssHmn178protectionH2">protection of DissDiphtheria
+  McshHlth000011:10477  <br>* McshEngl.DissDiphtheria'protection,
+  McshHlth000011:10494  <br>* McshEngl.DissMalta_fever,
+  McshHlth000011:10501  <br>* McshEngl.DissMalta_fever_Gntr,
+  McshHlth000011:10507  <h2 id="idDssHmn179causeH2">cause of DissMalta_fever
+  McshHlth000011:10520  <br>* McshEngl.DissMalta_fever'cause,
+  McshHlth000011:10525  <h2 id="idDssHmn179protectionH2">protection of DissMalta_fever
+  McshHlth000011:10533  <br>* McshEngl.DissMalta_fever'protection,
+  McshHlth000011:10548  <br>* McshEngl.DissLeprosy,
+  McshHlth000011:10555  <br>* McshEngl.DissLeprosy_Gntr,
+  McshHlth000011:10559  <p id="idDssHmn180wtr">whole-tree-of-DissLeprosy::
+  McshHlth000011:10561  <br>* McshEngl.DissLeprosy_Wltr,
+  McshHlth000011:10566  <br>* McshEngl.DissLeprosy'cause
+  McshHlth000011:10570  <h2 id="idDssHmn180symptomH2">symptom of DissLeprosy
+  McshHlth000011:10578  <br>* McshEngl.DissLeprosy'symptom,
+  McshHlth000011:10583  <h2 id="idDssHmn180therapyH2">therapy of DissLeprosy
+  McshHlth000011:10591  <br>* McshEngl.DissLeprosy'therapy,
+  McshHlth000011:10623  <br>* McshEngl.DissSyphilis_Gntr,
+  McshHlth000011:10629  <h2 id="idDssHmn181symptomH2">symptom of DissSyphilis
+  McshHlth000011:10637  <br>* McshEngl.DissSyphilis'symptom,
+  McshHlth000011:10642  <h2 id="idDssHmn181causeH2">cause of DissSyphilis
+  McshHlth000011:10652  <br>* McshEngl.DissSyphilis'cause,
+  McshHlth000011:10667  <br>* McshEngl.DissGonorrhoea,
+  McshHlth000011:10674  <br>* McshEngl.DissGonorrhoea_Gntr,
+  McshHlth000011:10680  <h2 id="idDssHmn182causeH2">cause of DissGonorrhoea
+  McshHlth000011:10690  <br>* McshEngl.DissGonorrhoea'cause,
+  McshHlth000011:10708  <br>* McshEngl.DissAmoebiasis,
+  McshHlth000011:10715  <br>* McshEngl.DissAmoebiasis_Gntr,
+  McshHlth000011:10721  <h2 id="idDssHmn183symptomH2">symptom of DissAmoebiasis
+  McshHlth000011:10729  <br>* McshEngl.DissAmoebiasis'symptom,
+  McshHlth000011:10734  <h2 id="idDssHmn183causeH2">cause of DissAmoebiasis
+  McshHlth000011:10742  <br>* McshEngl.DissAmoebiasis'cause,
+  McshHlth000011:10760  <br>* McshEngl.DissAscariasis,
+  McshHlth000011:10767  <br>* McshEngl.DissAscariasis_Gntr,
+  McshHlth000011:10773  <h2 id="idDssHmn184causeH2">cause of DissAscariasis
+  McshHlth000011:10784  <br>* McshEngl.DissAscariasis'cause,
+  McshHlth000011:10799  <br>* McshEngl.DissOxyuriasis,
+  McshHlth000011:10806  <br>* McshEngl.DissOxyuriasis_Gntr,
+  McshHlth000011:10812  <h2 id="idDssHmn185symptomH2">symptom of DissOxyuriasis
+  McshHlth000011:10820  <br>* McshEngl.DissOxyuriasis'symptom,
+  McshHlth000011:10825  <h2 id="idDssHmn185causeH2">cause of DissOxyuriasis
+  McshHlth000011:10833  <br>* McshEngl.DissOxyuriasis'cause,
+  McshHlth000011:10848  <br>* McshEngl.DissTrichinosis,
+  McshHlth000011:10855  <br>* McshEngl.DissTrichinosis_Gntr,
+  McshHlth000011:10861  <h2 id="idDssHmn186symptomH2">symptom of DissTrichinosis
+  McshHlth000011:10869  <br>* McshEngl.DissTrichinosis'symptom,
+  McshHlth000011:10874  <h2 id="idDssHmn186causeH2">cause of DissTrichinosis
+  McshHlth000011:10882  <br>* McshEngl.DissTrichinosis'cause,
+  McshHlth000011:10887  <h2 id="idDssHmn186protectionH2">protection of DissTrichinosis
+  McshHlth000011:10895  <br>* McshEngl.DissTrichinosis'protection,
+  McshHlth000011:10900  <h2 id="idDssHmn186statsH2">stats of DissTrichinosis
+  McshHlth000011:10908  <br>* McshEngl.DissTrichinosis'stats,
+  McshHlth000011:10923  <br>* McshEngl.DissEchinococcus,
+  McshHlth000011:10931  <br>* McshEngl.DissEchinococcus_Gntr,
+  McshHlth000011:10937  <h2 id="idDssHmn187symptomH2">symptom of DissEchinococcus
+  McshHlth000011:10945  <br>* McshEngl.DissEchinococcus'symptom,
+  McshHlth000011:10950  <h2 id="idDssHmn187causeH2">cause of DissEchinococcus
+  McshHlth000011:10960  <br>* McshEngl.DissEchinococcus'cause,
+  McshHlth000011:10965  <h2 id="idDssHmn187therapyH2">therapy of DissEchinococcus
+  McshHlth000011:10973  <br>* McshEngl.DissEchinococcus'therapy,
+  McshHlth000011:10978  <h2 id="idDssHmn187statsH2">stats of DissEchinococcus
+  McshHlth000011:10986  <br>* McshEngl.DissEchinococcus'stats,
+  McshHlth000011:10999  <br>* McshEngl.DissScabies,
+  McshHlth000011:11000  <br>* McshEngl.disease.188-scabies!⇒DissScabies,
+  McshHlth000011:11001  <br>* McshEngl.disease.scabies-188!⇒DissScabies,
+  McshHlth000011:11002  <br>* McshEngl.scabies!⇒DissScabies,
+  McshHlth000011:11004  <br>* McshElln.πάθηση.ψώρα!=DissScabies,
+  McshHlth000011:11005  <br>* McshElln.ψώρα!=DissScabies,
+  McshHlth000011:11006  <br>* McshElln.ψωρίαση!=DissScabies,
+  McshHlth000011:11009  <br>* McshEngl.DissScabies_Gntr,
+  McshHlth000011:11015  <h2 id="idDssHmn188symptomH2">symptom of DissScabies
+  McshHlth000011:11023  <br>* McshEngl.DissScabies'symptom,
+  McshHlth000011:11028  <h2 id="idDssHmn188causeH2">cause of DissScabies
+  McshHlth000011:11038  <br>* McshEngl.DissScabies'cause,
+  McshHlth000011:11051  <br>* McshEngl.DissLousiness,
+  McshHlth000011:11052  <br>* McshEngl.disease.189-lousiness!⇒DissLousiness,
+  McshHlth000011:11053  <br>* McshEngl.disease.lousiness-189!⇒DissLousiness,
+  McshHlth000011:11054  <br>* McshEngl.lousiness!⇒DissLousiness,
+  McshHlth000011:11056  <br>* McshElln.πάθηση.φθειριαση!=DissLousiness,
+  McshHlth000011:11057  <br>* McshElln.φθειριαση!=DissLousiness,
+  McshHlth000011:11058  <br>* McshElln.ψειρες!=DissLousiness,
+  McshHlth000011:11061  <br>* McshEngl.DissLousiness_Gntr,
+  McshHlth000011:11067  <h2 id="idDssHmn189symptomH2">symptom of DissLousiness
+  McshHlth000011:11075  <br>* McshEngl.DissLousiness'symptom,
+  McshHlth000011:11080  <h2 id="idDssHmn189causeH2">cause of DissLousiness
+  McshHlth000011:11088  <br>* McshEngl.DissLousiness'cuase,
+  McshHlth000011:11093  <h2 id="idDssHmn189therapyH2">therapy of DissLousiness
+  McshHlth000011:11105  <br>* McshEngl.DissLousiness'therapy,
+  McshHlth000011:11124  <br>* McshEngl.DissFungal_infection,
+  McshHlth000011:11130  <br>* McshEngl.DissFungal_infection_Gntr,
+  McshHlth000011:11132  <br>* DissInfectious_Gntr,
+  McshHlth000011:11136  <h2 id="idDssHmn190causeH2">cause of DissFungal_infection
+  McshHlth000011:11143  <br>* McshEngl.DissFungal_infection'cause,
+  McshHlth000011:11158  <br>* McshEngl.DissMultiple_sclerosis,
+  McshHlth000011:11165  <br>* McshEngl.DissMultiple_sclerosis_Gntr,
+  McshHlth000011:11171  <h2 id="idDssHmn195causeH2">cause of DissMultiple_sclerosis
+  McshHlth000011:11179  <br>* McshEngl.DissMultiple_sclerosis'cause,
+  McshHlth000011:11184  <h2 id="idDssHmn195therapyH2">therapy of DissMultiple_sclerosis
+  McshHlth000011:11191  <br>* McshEngl.DissMultiple_sclerosis'therapy,
+  McshHlth000011:11340  <h2 id="idDssHmn195resourceH2">resource of DissMultiple_sclerosis
+  McshHlth000011:11347  <br>* McshEngl.DissMultiple_sclerosis'info-resource,
+  McshHlth000011:11412  <h2 id="idDssHmn195statsH2">stats of DissMultiple_sclerosis
+  McshHlth000011:11420  <br>* McshEngl.DissMultiple_sclerosis'stats,
+  McshHlth000011:11425  <h2 id="idDssHmn195evogH2">evoluting of DissMultiple_sclerosis
+  McshHlth000011:11434  <br>* McshEngl.DissMultiple_sclerosis'evoluting,
+  McshHlth000011:11462  <br>* McshEngl.DissObesity_Gntr,
+  McshHlth000011:11468  <h2 id="idDssHmn199protectionH2">protection of DissObesity
+  McshHlth000011:11504  <h2 id="idDssHmn199rtfwH2">relation-to-food-waste of DissObesity
+  McshHlth000011:11514  <br>* McshEngl.DissObesity'relation-to-food-waste,
+  McshHlth000011:11556  <br>* McshEngl.DissInsomnia,
+  McshHlth000011:11564  <br>* McshEngl.DissInsomnia_Gntr,
+  McshHlth000011:11570  <h2 id="idDssHmn209therapyH2">therapy of DissInsomnia
+  McshHlth000011:11586  <br>* McshEngl.DissInsomnia'therapy,
+  McshHlth000011:11649  <br>* McshEngl.DissContraception,
+  McshHlth000011:11657  <br>* McshEngl.DissContraception_Gntr,
+  McshHlth000011:11661  <p id="idDssHmn210wtr">whole-tree-of-DissContraception::
+  McshHlth000011:11663  <br>* McshEngl.DissContraception_Wltr,
+  McshHlth000011:11667  <h2 id="idDssHmn210therapyH2">therapy of DissContraception
+  McshHlth000011:11674  <br>* McshEngl.DissContraception'therapy,
+  McshHlth000011:11744  <br>* McshEngl.DissReproduction,
+  McshHlth000011:11753  <h2 id="idDssHmn211causeH2">cause of DissReproduction
+  McshHlth000011:11767  <br>* McshEngl.DissReproduction'cause,
+  McshHlth000011:11772  <h2 id="idDssHmn211gstrH2">GENERIC-SPECIFIC-TREE of DissReproduction
+  McshHlth000011:11778  <br>* McshEngl.DissReproduction'generic-specific-tree,
+  McshHlth000011:11779  <br>* McshEngl.DissReproduction'specific-generic-tree,
+  McshHlth000011:11782  <br>* McshEngl.DissReproduction_Gntr,
+  McshHlth000011:11787  <br>* McshEngl.DissReproduction.specific,
+  McshHlth000011:11788  <br>* McshEngl.DissReproduction_Sptr,
+  McshHlth000011:11811  <br>* McshEngl.DissLibido,
+  McshHlth000011:11818  <br>* McshEngl.DissLibido_Gntr,
+  McshHlth000011:11820  <br>* DissReproduction_Gntr,
+  McshHlth000011:11824  <h3 id="idDssHmn217causeH3">cause of DissLibido
+  McshHlth000011:11833  <br>* McshEngl.DissLibido'cause,
+  McshHlth000011:11838  <h3 id="idDssHmn217therapyH3">therapy of DissLibido
+  McshHlth000011:11855  <br>* McshEngl.DissLibido'therapy,
+  McshHlth000011:11894  <br>* McshEngl.DissFood_poisoning,
+  McshHlth000011:11907  <br>* McshEngl.DissFood_poisoning_Gntr,
+  McshHlth000011:11911  <p id="idDssHmn213wtr">whole-tree-of-DissFood_poisoning::
+  McshHlth000011:11913  <br>* McshEngl.DissFood_poisoning_Wltr,
+  McshHlth000011:11918  <h2 id="idDssHmn213evogH2">evoluting of DissFood_poisoning
+  McshHlth000011:11925  <br>* McshEngl.DissFood_poisoning'evoluting,
+  McshHlth000011:11938  <br>* McshEngl.DissConstipation,
+  McshHlth000011:11939  <br>* McshEngl.disease.214-constipation!⇒DissConstipation,
+  McshHlth000011:11940  <br>* McshEngl.disease.constipation-214!⇒DissConstipation,
+  McshHlth000011:11941  <br>* McshEngl.constipation!⇒DissConstipation,
+  McshHlth000011:11942  <br>* McshEngl.costiveness!⇒DissConstipation,
+  McshHlth000011:11944  <br>* McshElln.πάθηση.δισκοιλιότητα!=DissConstipation,
+  McshHlth000011:11945  <br>* McshElln.δισκοιλιότητα!=DissConstipation,
+  McshHlth000011:11949  <h2 id="idDssHmn214therapyH2">therapy of DissConstipation
+  McshHlth000011:11965  <br>* McshEngl.DissConstipation'therapy,
+  McshHlth000011:11978  <br>* McshEngl.DissFaint,
+  McshHlth000011:11979  <br>* McshEngl.disease.221-faint!⇒DissFaint,
+  McshHlth000011:11980  <br>* McshEngl.disease.faint-221!⇒DissFaint,
+  McshHlth000011:11981  <br>* McshEngl.faint!⇒DissFaint,
+  McshHlth000011:11983  <br>* McshElln.πάθηση.λιποθυμία!=DissFaint,
+  McshHlth000011:11984  <br>* McshElln.λιποθυμία!=DissFaint,
+  McshHlth000011:11987  <br>* McshEngl.DissFaint_Gntr,
+  McshHlth000011:11993  <h2 id="idDssHmn221therapyH2">therapy of DissFaint
+  McshHlth000011:12002  <br>* McshEngl.DissFaint'therapy,
+  McshHlth000011:12017  <br>* McshEngl.DissBaby,
+  McshHlth000011:12022  <h2 id="idDssHmn220protectionH2">protection of DissBaby
+  McshHlth000011:12030  <br>* McshEngl.DissBaby'protection,
+  McshHlth000011:12049  <br>* McshEngl.DissPepticulcer,
+  McshHlth000011:12056  <p id="idDssHmn216wtr">whole-tree-of-DissPepticulcer::
+  McshHlth000011:12058  <br>* McshEngl.DissPepticulcer_Wltr,
+  McshHlth000011:12061  <br>* McshEngl.DissPepticulcer_Gntr,
+  McshHlth000011:12067  <h2 id="idDssHmn216causeH2">cause of DissPepticulcer
+  McshHlth000011:12075  <br>* McshEngl.DissPepticulcer'cause,
+  McshHlth000011:12080  <h2 id="idDssHmn216therapyH2">therapy of DissPepticulcer
+  McshHlth000011:12087  <br>* McshEngl.DissPepticulcer'therapy,
+  McshHlth000011:12091  <h2 id="idDssHmn216protectionH2">protection of DissPepticulcer
+  McshHlth000011:12099  <br>* McshEngl.DissPepticulcer'protection,
+  McshHlth000011:12115  <br>* McshEngl.DissEczema,
+  McshHlth000011:12122  <br>* McshEngl.DissEczema_Gntr,
+  McshHlth000011:12124  <br>* DissSkin_Gntr,
+  McshHlth000011:12128  <h2 id="idDssHmn212causeH2">cause of DissEczema
+  McshHlth000011:12135  <br>* McshEngl.DissEczema'cause,
+  McshHlth000011:12150  <br>* McshEngl.DissHerpes,
+  McshHlth000011:12158  <h2 id="idDssHmn208therapyH2">therapy of DissHerpes
+  McshHlth000011:12177  <br>* McshEngl.DissHerpes'therapy,
+  McshHlth000011:12182  <h2 id="idDssHmn208protectionH2">protection of DissHerpes
+  McshHlth000011:12191  <br>* McshEngl.DissHerpes'protection,
+  McshHlth000011:12196  <h2 id="idDssHmn208gstrH2">GENERIC-SPECIFIC-TREE of DissHerpes
+  McshHlth000011:12202  <br>* McshEngl.DissHerpes'generic-specific-tree,
+  McshHlth000011:12203  <br>* McshEngl.DissHerpes'specific-generic-tree,
+  McshHlth000011:12206  <br>* McshEngl.DissHerpes_Gntr,
+  McshHlth000011:12208  <br>* DissSkin_Gntr,
+  McshHlth000011:12212  <br>* McshEngl.DissHerpes.specific,
+  McshHlth000011:12213  <br>* McshEngl.DissHerpes_Sptr,
+  McshHlth000011:12231  <br>* McshEngl.DissBurn,
+  McshHlth000011:12240  <br>* McshEngl.DissBurn_Gntr,
+  McshHlth000011:12242  <br>* DissSkin_Gntr,
+  McshHlth000011:12246  <h2 id="idDssHmn207firewalkerH2">firewalker of DissBurn
+  McshHlth000011:12262  <h2 id="idDssHmn207therapyH2">therapy of DissBurn
+  McshHlth000011:12304  <br>* McshEngl.DissBurn'therapy,
+  McshHlth000011:12309  <br>* McshEngl.DissBurnSun'therapy,
+  McshHlth000011:12324  <br>* McshEngl.DissStingJellyfish,
+  McshHlth000011:12333  <br>* McshEngl.DissStingJellyfish_Gntr,
+  McshHlth000011:12335  <br>* DissSkin_Gntr,
+  McshHlth000011:12339  <h2 id="idDssHmn201therapyH2">therapy of DissStingJellyfish
+  McshHlth000011:12350  <br>* McshEngl.DissStingJellyfish'therapy,
+  McshHlth000011:12365  <br>* McshEngl.DissStingInsect,
+  McshHlth000011:12372  <br>* McshEngl.DissStingInsect_Gntr,
+  McshHlth000011:12374  <br>* DissSkin_Gntr,
+  McshHlth000011:12378  <h2 id="idDssHmn202therapyH2">therapy of DissStingInsect
+  McshHlth000011:12391  <br>* McshEngl.DissStingInsect'therapy,
+  McshHlth000011:12396  <h2 id="idDssHmn202mosquitobiteH2">DissStingInsect.mosquito-bite
+  McshHlth000011:12433  <br>* McshEngl.DissStingMosquito,
+  McshHlth000011:12453  <br>* McshEngl.DissHair_loss,
+  McshHlth000011:12460  <br>* McshEngl.DissHair_loss_Gntr,
+  McshHlth000011:12462  <br>* DissSkin_Gntr,
+  McshHlth000011:12466  <h2 id="idDssHmn204therapyH2">therapy of DissHair_loss`
+  McshHlth000011:12481  <br>* McshEngl.DissHair_loss'therapy,
+  McshHlth000011:12486  <h2 id="idDssHmn204protectionH2">protection of DissHair_loss
+  McshHlth000011:12501  <br>* McshEngl.DissHair_loss'protection,
+  McshHlth000011:12514  <br>* McshEngl.DissDandruff,
+  McshHlth000011:12515  <br>* McshEngl.disease.205-dandruff!⇒DissDandruff,
+  McshHlth000011:12516  <br>* McshEngl.disease.dandruff-205!⇒DissDandruff,
+  McshHlth000011:12517  <br>* McshEngl.dandruff!⇒DissDandruff,
+  McshHlth000011:12519  <br>* McshElln.πάθηση.πιτυρίδα!=DissDandruff,
+  McshHlth000011:12520  <br>* McshElln.πιτυρίδα!=DissDandruff,
+  McshHlth000011:12523  <br>* McshEngl.DissDandruff_Gntr,
+  McshHlth000011:12525  <br>* DissSkin_Gntr,
+  McshHlth000011:12529  <h2 id="idDssHmn205causeH2">cause of DissDandruff
+  McshHlth000011:12536  <br>* McshEngl.DissDandruff'cause,
+  McshHlth000011:12551  <br>* McshEngl.DissPhotochemical_allergy,
+  McshHlth000011:12558  <br>* McshEngl.DissPhotochemical_allergy_Gntr,
+  McshHlth000011:12560  <br>* DissSkin_Gntr,
+  McshHlth000011:12564  <h2 id="idDssHmn206symptomH2">symptom of DissPhotochemical_allergy
+  McshHlth000011:12571  <br>* McshEngl.DissPhotochemical_allergy'symptom,
+  McshHlth000011:12576  <h2 id="idDssHmn206therapyH2">therapy of DissPhotochemical_allergy
+  McshHlth000011:12583  <br>* McshEngl.DissPhotochemical_allergy'therapy,
+  McshHlth000011:12598  <br>* McshEngl.DissMuscle,
+  McshHlth000011:12599  <br>* McshEngl.disease.muscle!⇒DissMuscle,
+  McshHlth000011:12600  <br>* McshEngl.disease.ognMuscle!⇒DissMuscle,
+  McshHlth000011:12601  <br>* McshEngl.disease.256-ognMuscle!⇒DissMuscle,
+  McshHlth000011:12602  <br>* McshEngl.myopathy!⇒DissMuscle,
+  McshHlth000011:12603  <br>* McshEngl.muscular-disease!⇒DissMuscle,
+  McshHlth000011:12604  <br>* McshEngl.ognMuscle'01_disease!⇒DissMuscle,
+  McshHlth000011:12605  <br>* McshEngl.ognMuscle'disease!⇒DissMuscle,
+  McshHlth000011:12606  <br>* McshEngl.ognMuscle'att001-disease!⇒DissMuscle,
+  McshHlth000011:12622  <br>* McshEngl.DissMyalgia, /maiáljia/,
+  McshHlth000011:12623  <br>* McshEngl.disease.myalgia!⇒DissMyalgia,
+  McshHlth000011:12624  <br>* McshEngl.disease.266-myalgia!⇒DissMyalgia,
+  McshHlth000011:12625  <br>* McshEngl.myalgia-disease!⇒DissMyalgia,
+  McshHlth000011:12626  <br>* McshEngl.muscle-ache!⇒DissMyalgia,
+  McshHlth000011:12627  <br>* McshEngl.muscle-pain!⇒DissMyalgia,
+  McshHlth000011:12628  <br>* McshEngl.DissMuscle.myalgia-266!⇒DissMyalgia,
+  McshHlth000011:12643  <br>* McshEngl.DissMuscle_atrophy,
+  McshHlth000011:12645  <br>* McshEngl.DissMuscle.muscle-atrophy-196,
+  McshHlth000011:12651  <br>* McshEngl.DissMuscle_atrophy_Gntr,
+  McshHlth000011:12657  <h3 id="idDssHmn196protectionH3">protection of DissMuscle_atrophy
+  McshHlth000011:12668  <br>* McshEngl.DissMuscle_atrophy'protection,
+  McshHlth000011:12684  <br>* McshEngl.DissCramp,
+  McshHlth000011:12686  <br>* McshEngl.DissMuscle.cramp-135,
+  McshHlth000011:12692  <br>* McshEngl.DissCramp_Gntr,
+  McshHlth000011:12696  <p id="idDssHmn135wtr">whole-tree-of-DissCramp::
+  McshHlth000011:12698  <br>* McshEngl.DissCramp_Wltr,
+  McshHlth000011:12702  <h3 id="idDssHmn135therapyH3">therapy of DissCramp
+  McshHlth000011:12711  <br>* McshEngl.DissCramp'therapy,
+  McshHlth000011:12716  <h3 id="idDssHmn135resourceH3">resource of DissCramp
+  McshHlth000011:12794  <br>* McshEngl.DissCramp'info-resource,
+  McshHlth000011:12814  <br>* McshEngl.DissCaries,
+  McshHlth000011:12815  <br>* McshEngl.disease.177-dental-caries!⇒DissCaries,
+  McshHlth000011:12816  <br>* McshEngl.disease.dental-caries-177!⇒DissCaries,
+  McshHlth000011:12817  <br>* McshEngl.caries!⇒DissCaries,
+  McshHlth000011:12818  <br>* McshEngl.cavities!⇒DissCaries,
+  McshHlth000011:12819  <br>* McshEngl.dental-caries!⇒DissCaries,
+  McshHlth000011:12820  <br>* McshEngl.tooth-decay!⇒DissCaries,
+  McshHlth000011:12822  <br>* McshElln.πάθηση.τερηδόνα!=DissCaries,
+  McshHlth000011:12823  <br>* McshElln.τερηδόνα!=DissCaries,
+  McshHlth000011:12826  <br>* McshEngl.DissCaries_Gntr,
+  McshHlth000011:12832  <h2 id="idDssHmn177protectionH2">protection of DissCaries
+  McshHlth000011:12857  <br>* McshEngl.DissCaries'protection,
+  McshHlth000011:12970  <br>* McshEngl.DissCryptorchidism,
+  McshHlth000011:12977  <br>* McshEngl.DissCryptorchidism_Gntr,
+  McshHlth000011:12981  <p id="idDssHmn109wholewtr">whole-tree-of-DissCryptorchidism::
+  McshHlth000011:12983  <br>* McshEngl.DissCryptorchidism_Wltr,
+  McshHlth000011:12987  <h2 id="idDssHmn109symptomH2">symptom of DissCryptorchidism
+  McshHlth000011:12995  <br>* McshEngl.DissCryptorchidism'symptom,
+  McshHlth000011:13010  <br>* McshEngl.DissParkinson,
+  McshHlth000011:13017  <br>* McshEngl.DissParkinson_Gntr,
+  McshHlth000011:13023  <h2 id="idDssHmn129resourceH2">resource of DissParkinson
+  McshHlth000011:13030  <br>* McshEngl.DissParkinson'info-resource,
+  McshHlth000011:13035  <h2 id="idDssHmn129symptomH2">symptom of DissParkinson
+  McshHlth000011:13043  <br>* McshEngl.DissParkinson'symptom,
+  McshHlth000011:13058  <br>* McshEngl.DissWhooping_cough,
+  McshHlth000011:13066  <br>* McshEngl.DissWhooping_cough_Gntr,
+  McshHlth000011:13072  <h2 id="idDssHmn131symptomH2">symptom of DissWhooping_cough
+  McshHlth000011:13079  <br>* McshEngl.DissWhooping_cough'symptom,
+  McshHlth000011:13187  <br>* McshEngl.DissAcute_mountain_sickness,
+  McshHlth000011:13195  <br>* McshEngl.DissAcute_mountain_sickness_Gntr,
+  McshHlth000011:13201  <h2 id="idDssHmn136causeH2">cause DissAcute_mountain_sickness
+  McshHlth000011:13209  <br>* McshEngl.DissAcute_mountain_sickness'cause,
+  McshHlth000011:13214  <h2 id="idDssHmn136symptomH2">symptom of DissAcute_mountain_sickness
+  McshHlth000011:13225  <br>* McshEngl.DissAcute_mountain_sickness'symptom,
+  McshHlth000011:13229  <h2 id="idDssHmn136therapyH2">therapy of DissAcute_mountain_sickness
+  McshHlth000011:13237  <br>* McshEngl.DissAcute_mountain_sickness'therapy,
+  McshHlth000011:13242  <h2 id="idDssHmn136protectionH2">protection of DissAcute_mountain_sickness
+  McshHlth000011:13250  <br>* McshEngl.DissAcute_mountain_sickness'protection,
+  McshHlth000011:13266  <br>* McshEngl.DissEsophagitis,
+  McshHlth000011:13274  <h2 id="idDssHmn137therapyH2">therapy of DissEsophagitis
+  McshHlth000011:13282  <br>* McshEngl.DissEsophagitis'therapy,
+  McshHlth000011:13287  <h2 id="idDssHmn137gstrH2">GENERIC-SPECIFIC-TREE of DissEsophagitis
+  McshHlth000011:13293  <br>* McshEngl.DissEsophagitis'generic-specific-tree,
+  McshHlth000011:13294  <br>* McshEngl.DissEsophagitis'specific-generic-tree,
+  McshHlth000011:13297  <br>* McshEngl.DissEsophagitis_Gntr,
+  McshHlth000011:13303  <br>* McshEngl.DissEsophagitis.specific,
+  McshHlth000011:13304  <br>* McshEngl.DissEsophagitis_Sptr,
+  McshHlth000011:13436  <br>* DissFctPaining_Gntr,
+  McshHlth000011:13472  <br>* McshEngl.DissMigraine,
+  McshHlth000011:13481  <h3 id="idDssHmn085therapyH3">therapy of DissMigraine
+  McshHlth000011:13498  <br>* McshEngl.DissMigraine'therapy,
+  McshHlth000011:13551  <br>* McshEngl.DissSigella,
+  McshHlth000011:13558  <br>* McshEngl.DissSigella_Gntr,
+  McshHlth000011:13564  <h2 id="idDssHmn140symptomH2">symptom of DissSigella
+  McshHlth000011:13576  <br>* McshEngl.DissSigella'symptom,
+  McshHlth000011:13580  <h2 id="idDssHmn140causeH2">cause of DissSigella
+  McshHlth000011:13588  <br>* McshEngl.DissSigella'cause,
+  McshHlth000011:13593  <h2 id="idDssHmn140protectionH2">protection of DissSigella
+  McshHlth000011:13610  <br>* McshEngl.DissSigella'protection,
+  McshHlth000011:13628  <br>* McshEngl.DissMalaria,
+  McshHlth000011:13629  <br>* McshEngl.disease.141-malaria!⇒DissMalaria,
+  McshHlth000011:13630  <br>* McshEngl.disease.malaria-141!⇒DissMalaria,
+  McshHlth000011:13631  <br>* McshEngl.malaria!⇒DissMalaria,
+  McshHlth000011:13633  <br>* McshElln.πάθηση.ελονοσία!=DissMalaria,
+  McshHlth000011:13634  <br>* McshElln.ελονοσία!=DissMalaria,
+  McshHlth000011:13637  <br>* McshEngl.DissMalaria_Gntr,
+  McshHlth000011:13643  <h2 id="idDssHmn141causeH2">cause of DissMalaria
+  McshHlth000011:13651  <br>* McshEngl.DissMalaria'cause,
+  McshHlth000011:13656  <h2 id="idDssHmn141protectionH2">protection of DissMalaria
+  McshHlth000011:13664  <br>* McshEngl.DissMalaria'protection,
+  McshHlth000011:13684  <br>* McshEngl.DissBronchiolitis,
+  McshHlth000011:13691  <br>* McshEngl.DissBronchiolitis_Gntr,
+  McshHlth000011:13697  <h2 id="idDssHmn142symptomH2">symptom of DissBronchiolitis
+  McshHlth000011:13719  <br>* McshEngl.DissBronchiolitis'symptom,
+  McshHlth000011:13724  <h2 id="idDssHmn142causeH2">cause of DissBronchiolitis
+  McshHlth000011:13734  <br>* McshEngl.DissBronchiolitis'cause,
+  McshHlth000011:13738  <h3 id="idDssHmn142causeriskfactorH3">risk-factor of DissBronchiolitis
+  McshHlth000011:13749  <br>* McshEngl.DissBronchiolitis'risk-factor,
+  McshHlth000011:13750  <br>* McshEngl.DissBronchiolitis'cause'risk-factor!⇒DissBronchiolitis'risk-factor,
+  McshHlth000011:13756  <h2 id="idDssHmn142therapyH2">therapy of DissBronchiolitis
+  McshHlth000011:13770  <br>* McshEngl.DissBronchiolitis'therapy,
+  McshHlth000011:13805  <h2 id="idDssHmn142protectionH2">protection of DissBronchiolitis
+  McshHlth000011:13815  <br>* McshEngl.DissBronchiolitis'protection,
+  McshHlth000011:13819  <h2 id="idDssHmn142dietH2">diet of DissBronchiolitis
+  McshHlth000011:13827  <br>* McshEngl.DissBronchiolitis'diet,
+  McshHlth000011:13869  <br>* McshEngl.DissAsthma,
+  McshHlth000011:13876  <br>* McshEngl.DissAsthma_Gntr,
+  McshHlth000011:13882  <h2 id="idDssHmn144symptomH2">symptom of DissAsthma
+  McshHlth000011:13895  <br>* McshEngl.DissAsthma'symptom,
+  McshHlth000011:13899  <h2 id="idDssHmn144diagnosisH2">diagnosis of DissAsthma
+  McshHlth000011:13907  <br>* McshEngl.DissAsthma'diagnosis,
+  McshHlth000011:13912  <h2 id="idDssHmn144therapyH2">therapy of DissAsthma
+  McshHlth000011:13925  <br>* McshEngl.DissAsthma'therapy,
+  McshHlth000011:13930  <h2 id="idDssHmn144statsH2">stats of DissAsthma
+  McshHlth000011:13938  <br>* McshEngl.DissAsthma'stats,
+  McshHlth000011:14044  <br>* McshEngl.DissGastroesophageal_reflux,
+  McshHlth000011:14052  <br>* McshEngl.DissGastroesophageal_reflux_Gntr,
+  McshHlth000011:14058  <h2 id="idDssHmn149therapyH2">therapy of DissGastroesophageal_reflux
+  McshHlth000011:14068  <br>* McshEngl.DissGastroesophageal_reflux'therapy,
+  McshHlth000011:14084  <br>* McshEngl.DissArthritis,
+  McshHlth000011:14091  <br>* McshEngl.DissArthritis_Gntr,
+  McshHlth000011:14097  <h2 id="idDssHmn150therapyH2">therapy of DissArthritis
+  McshHlth000011:14109  <br>* McshEngl.DissArthritis'therapy,
+  McshHlth000011:14131  <br>* McshEngl.DissStroke,
+  McshHlth000011:14138  <br>* McshEngl.DissStroke_Gntr,
+  McshHlth000011:14144  <h2 id="idDssHmn151symptomH2">symptom of DissStroke
+  McshHlth000011:14150  <br>* McshEngl.DissStroke'symptom,
+  McshHlth000011:14174  <h2 id="idDssHmn151protectionH2">protection of DissStroke
+  McshHlth000011:14208  <br>* McshEngl.DissStroke'protection,
+  McshHlth000011:14308  <br>* McshEngl.DissInfo_tech,
+  McshHlth000011:14316  <br>* McshEngl.DissInfo_tech_Gntr,
+  McshHlth000011:14320  <p id="idDssHmn089wtr">whole-tree-of-DissInfo_tech::
+  McshHlth000011:14322  <br>* McshEngl.DissInfo_tech_Wltr,
+  McshHlth000011:14326  <h2 id="idDssHmnatt090H2">protection of DissInfo_tech
+  McshHlth000011:14333  <br>* McshEngl.DissInfo_tech'protection,
+  McshHlth000011:14505  <br>* McshEngl.DissCholera,
+  McshHlth000011:14512  <br>* McshEngl.DissCholera_Gntr,
+  McshHlth000011:14518  <h2 id="idDssHmn155protectionH2">protection of DissCholera
+  McshHlth000011:14537  <br>* McshEngl.DissCholera'protection,
+  McshHlth000011:14552  <br>* McshEngl.DissOtitis,
+  McshHlth000011:14559  <br>* McshEngl.DissOtitis_Gntr,
+  McshHlth000011:14565  <h2 id="idDssHmn156symptomH2">symptom of DissOtitis
+  McshHlth000011:14572  <br>* McshEngl.DissOtitis'symptom,
+  McshHlth000011:14576  <h2 id="idDssHmn156therapyH2">therapy of DissOtitis
+  McshHlth000011:14585  <br>* McshEngl.DissOtitis'therapy,
+  McshHlth000011:14744  <br>* McshEngl.DissStomatitis,
+  McshHlth000011:14751  <br>* McshEngl.DissStomatitis_Gntr,
+  McshHlth000011:14757  <h2 id="idDssHmn157therapyH2">therapy of DissStomatitis
+  McshHlth000011:14766  <br>* McshEngl.DissStomatitis'therapy,
+  McshHlth000011:14782  <br>* McshEngl.DissDehydration,
+  McshHlth000011:14790  <br>* McshEngl.DissDehydration_Gntr,
+  McshHlth000011:14807  <br>* McshEngl.DissDehydration'therapy,
+  McshHlth000011:14823  <br>* McshEngl.DissEdema,
+  McshHlth000011:14824  <br>* McshEngl.disease.098-edema!⇒DissEdema, /idíma/!⇒DissEdema,
+  McshHlth000011:14825  <br>* McshEngl.disease.edema-098!⇒DissEdema,
+  McshHlth000011:14826  <br>* McshEngl.edema-disease!⇒DissEdema,
+  McshHlth000011:14827  <br>* McshEngl.fluid-retention-disease!⇒DissEdema,
+  McshHlth000011:14828  <br>* McshEngl.swelling-disease!⇒DissEdema,
+  McshHlth000011:14830  <br>* McshElln.οίδημα!το!=DissEdema,
+  McshHlth000011:14831  <br>* McshElln.πάθηση.οίδημα!το!=DissEdema,
+  McshHlth000011:14832  <br>* McshElln.πρήξιμο!το!=DissEdema,
+  McshHlth000011:14851  <br>* McshEngl.DissFever,
+  McshHlth000011:14859  <h2 id="idDssHmn159therapyH2">therapy of DissFever
+  McshHlth000011:14870  <br>* McshEngl.DissFever'therapy,
+  McshHlth000011:14985  <br>* McshEngl.DissCholesterol,
+  McshHlth000011:14993  <br>* McshEngl.DissCholesterol_Gntr,
+  McshHlth000011:14997  <p id="idDssHmn015wtr">whole-tree-of-DissCholesterol::
+  McshHlth000011:14999  <br>* McshEngl.DissCholesterol_Wltr,
+  McshHlth000011:15003  <h2 id="idDssHmn015symptomH2">symptom of DissCholesterol
+  McshHlth000011:15012  <br>* McshEngl.DissCholesterol'symptom,
+  McshHlth000011:15017  <h2 id="idDssHmn015resourceH2">resource of DissCholesterol
+  McshHlth000011:15024  <br>* McshEngl.DissCholesterol'info-resource,
+  McshHlth000011:15029  <h2 id="idDssHmn015therapyH2">therapy of DissCholesterol
+  McshHlth000011:15037  <br>* McshEngl.DissCholesterol'therapy!⇒CholesterolTherapy,
+  McshHlth000011:15464  <h2 id="idDssHmn015protectionH2">protection of DissCholesterol
+  McshHlth000011:15476  <br>* McshEngl.DissCholesterol'protection!⇒CholesterolProtection,
+  McshHlth000011:15595  <br>* McshEngl.DissSinusitis, /sainusáitis/,
+  McshHlth000011:15603  <h2 id="idDssHmn016causeH2">cause of DissSinusitis
+  McshHlth000011:15610  <br>* McshEngl.DissSinusitis'cause,
+  McshHlth000011:15625  <br>* McshEngl.DissFatigue,
+  McshHlth000011:15632  <h2 id="idDssHmn017protectionH2">protection of DissFatigue
+  McshHlth000011:15639  <br>* McshEngl.DissFatigue'protection,
+  McshHlth000011:15654  <br>* McshEngl.DissTendonitis,
+  McshHlth000011:15661  <br>* McshEngl.DissTendonitis_Gntr,
+  McshHlth000011:15667  <h2 id="idDssHmn018causeH2">cause of DissTendonitis
+  McshHlth000011:15677  <br>* McshEngl.DissTendonitis'cause,
+  McshHlth000011:15682  <h2 id="idDssHmn018therapyH2">therapy of DissTendonitis
+  McshHlth000011:15703  <br>* McshEngl.DissTendonitis'therapy,
+  McshHlth000011:15708  <h2 id="idDssHmn018protectionH2">protection of DissTendonitis
+  McshHlth000011:15725  <br>* McshEngl.DissTendonitis'protection,
+  McshHlth000011:15730  <h2 id="idBdyHmn266_3H2">DissTendonitis.anconeus
+  McshHlth000011:15739  <br>* McshEngl.DissTendonitis.anconeus,
+  McshHlth000011:15744  <h2 id="idBdyHmn266_4H2">DissTendonitis.Achilles
+  McshHlth000011:15752  <br>* McshEngl.DissTendonitis.Achilles,
+  McshHlth000011:15757  <h2 id="idBdyHmn266_5H2">DissTendonitis.jumper-knee
+  McshHlth000011:15766  <br>* McshEngl.DissTendonitis.jumper-knee,
+  McshHlth000011:15771  <h2 id="idBdyHmn266_6H2">DissTendonitis.wrist
+  McshHlth000011:15779  <br>* McshEngl.DissTendonitis.wrist,
+  McshHlth000011:15784  <h2 id="idBdyHmn266_7H2">DissTendonitis.tibialis-posterior
+  McshHlth000011:15793  <br>* McshEngl.DissTendonitis.tibialis-posterior,
+  McshHlth000011:15798  <h2 id="idBdyHmn266_8H2">DissTendonitis.rotator-cuff
+  McshHlth000011:15810  <br>* McshEngl.DissTendonitis.rotator-cuff,
+  McshHlth000011:15824  <br>* McshEngl.DissHormone,
+  McshHlth000011:15825  <br>* McshEngl.disease.019-hormone!⇒DissHormone,
+  McshHlth000011:15826  <br>* McshEngl.disease.hormone-019!⇒DissHormone,
+  McshHlth000011:15827  <br>* McshEngl.hormoneHmn'001-disease!⇒DissHormone,
+  McshHlth000011:15828  <br>* McshEngl.hormoneHmn'disease-001!⇒DissHormone,
+  McshHlth000011:15829  <br>* McshEngl.hormonal-imbalance!⇒DissHormone,
+  McshHlth000011:15830  <br>* McshEngl.imbalance.hormone!⇒DissHormone,
+  McshHlth000011:15834  <h2 id="idDssHmn019gstrH2">GENERIC-SPECIFIC-TREE of DissHormone
+  McshHlth000011:15840  <br>* McshEngl.DissHormone'generic-specific-tree,
+  McshHlth000011:15841  <br>* McshEngl.DissHormone'specific-generic-tree,
+  McshHlth000011:15844  <br>* McshEngl.DissHormone_Gntr,
+  McshHlth000011:15849  <br>* McshEngl.DissHormone.specific,
+  McshHlth000011:15850  <br>* McshEngl.DissHormone_Sptr,
+  McshHlth000011:15852  <br>* DissHormone.deficiency!@McshHlth000011#idDssHmn034,
+  McshHlth000011:15853  <br>* DissHormone.excess!@McshHlth000011#idDssHmn038,
+  McshHlth000011:15858  <h2 id="idDssHmn019symptomH2">symptom of DissHormone
+  McshHlth000011:15891  <br>* McshEngl.DissHormone'symptom,
+  McshHlth000011:15896  <h2 id="idDssHmn019causeH2">cause of DissHormone
+  McshHlth000011:15903  <br>* McshEngl.DissHormone'cause,
+  McshHlth000011:15908  <h2 id="idDssHmn019protectionH2">protection of DissHormone
+  McshHlth000011:15915  <br>* McshEngl.DissHormone'protection,
+  McshHlth000011:15920  <h2 id="idDssHmn034H2">DissHormone.deficiency
+  McshHlth000011:15931  <br>* McshEngl.DissHormone.deficiency,
+  McshHlth000011:15936  <h2 id="idDssHmn038H2">DissHormone.excess
+  McshHlth000011:15947  <br>* McshEngl.DissHormone.excess,
+  McshHlth000011:15962  <br>* McshEngl.DissHormone'disease,
+  McshHlth000011:15988  <h4 id="idDssHmn249att002H4">cause of DissAndrogenDeficiency
+  McshHlth000011:15996  <br>* McshEngl.DissAndrogenDeficiency'cause,
+  McshHlth000011:16032  <br>* McshEngl.DissSleeping,
+  McshHlth000011:16074  <h2 id="idDssHmn020therapyH2">04_therapy of DissSleeping
+  McshHlth000011:16088  <br>* McshEngl.DissSleeping'therapy,
+  McshHlth000011:16156  <h2 id="idBdyHmn147_1sleep-drunkennessH2">sleep-drunkenness of DissSleeping
+  McshHlth000011:16166  <br>* McshEngl.DissSleeping'sleep-drunkenness,
+  McshHlth000011:16186  <h2 id="idDssHmn021gstrH2">GENERIC-SPECIFIC-TREE of DissSysImmune
+  McshHlth000011:16192  <br>* McshEngl.DissSysImmune'generic-specific-tree,
+  McshHlth000011:16193  <br>* McshEngl.DissSysImmune'specific-generic-tree,
+  McshHlth000011:16196  <br>* McshEngl.DissSysImmune_Gntr,
+  McshHlth000011:16201  <br>* McshEngl.DissSysImmune.specific,
+  McshHlth000011:16202  <br>* McshEngl.DissSysImmune_Sptr,
+  McshHlth000011:16268  <br>* McshEngl.DissNutrient,
+  McshHlth000011:16269  <br>* McshEngl.disease.026-nutrient!⇒DissNutrient,
+  McshHlth000011:16270  <br>* McshEngl.disease.nutrient-026!⇒DissNutrient,
+  McshHlth000011:16271  <br>* McshEngl.nutrient'01_disease!⇒DissNutrient,
+  McshHlth000011:16272  <br>* McshEngl.nutrient'disease-att001!⇒DissNutrient,
+  McshHlth000011:16273  <br>* McshEngl.nutrient-disease-026!⇒DissNutrient,
+  McshHlth000011:16274  <br>* McshEngl.nutritional-disorder-026!⇒DissNutrient,
+  McshHlth000011:16275  <br>* McshEngl.imbalance.nutrient-026!⇒DissNutrient,
+  McshHlth000011:16276  <br>* McshEngl.mulnutrition-026!⇒DissNutrient,
+  McshHlth000011:16285  <h2 id="idDssHmn026gstrH2">GENERIC-SPECIFIC-TREE of DissNutrient
+  McshHlth000011:16291  <br>* McshEngl.DissNutrient'generic-specific-tree,
+  McshHlth000011:16293  <br>* McshEngl.DissNutrient'specific-generic-tree,
+  McshHlth000011:16297  <br>* McshEngl.DissNutrient_Gntr,
+  McshHlth000011:16300  <br>* DissImbalance!@McshHlth000011#idDssHmn226,
+  McshHlth000011:16304  <br>* McshEngl.DissNutrient.specific,
+  McshHlth000011:16306  <br>* McshEngl.DissNutrient_Sptr,
+  McshHlth000011:16346  <br>* McshEngl.DissNutrient.nutritional-deficiency-028,
+  McshHlth000011:16385  <br>* McshEngl.DissNutrient.nutritional-excess-029,
+  McshHlth000011:16405  <br>* McshEngl.DissNutrient.starvation-222,
+  McshHlth000011:16424  <br>* McshEngl.DissNutrient.calcium-imbalance-227,
+  McshHlth000011:16441  <br>* McshEngl.DissNutrient.phosphorus-imbalance-228,
+  McshHlth000011:16456  <br>* McshEngl.DissNutrient.potassium-imbalance-229,
+  McshHlth000011:16471  <br>* McshEngl.DissNutrient.sodium-imbalance-230,
+  McshHlth000011:16486  <br>* McshEngl.DissNutrient.magnesium-imbalance-231,
+  McshHlth000011:16501  <br>* McshEngl.DissNutrient.sulfur-imbalance-232,
+  McshHlth000011:16516  <br>* McshEngl.DissNutrient.iron-imbalance-233,
+  McshHlth000011:16568  <br>* McshEngl.DissNutrient.calcium-imbalance-234,
+  McshHlth000011:16583  <br>* McshEngl.DissNutrient.chlorine-imbalance-235,
+  McshHlth000011:16598  <br>* McshEngl.DissNutrient.cobalt-imbalance-236,
+  McshHlth000011:16620  <br>* McshEngl.DissNutrient.copper-imbalance-237,
+  McshHlth000011:16635  <br>* McshEngl.DissNutrient.zinc-imbalance-238,
+  McshHlth000011:16652  <br>* McshEngl.DissNutrient.manganese-imbalance-239,
+  McshHlth000011:16669  <br>* McshEngl.DissNutrient.molybdenum-imbalance-240,
+  McshHlth000011:16684  <br>* McshEngl.DissNutrient.iodine-imbalance-241,
+  McshHlth000011:16699  <br>* McshEngl.DissNutrient.selenium-imbalance-242,
+  McshHlth000011:16714  <br>* McshEngl.DissNutrient.vitamin-253,
+  McshHlth000011:16733  <br>* McshEngl.DissVitaminDeficiency,
+  McshHlth000011:16735  <br>* McshEngl.DissNutrient.vitamin-deficiency-172,
+  McshHlth000011:16742  <h3 id="idDssHmn172gstrH3">GENERIC-SPECIFIC-TREE of DissVitaminDeficiency
+  McshHlth000011:16748  <br>* McshEngl.DissVitaminDeficiency'generic-specific-tree,
+  McshHlth000011:16749  <br>* McshEngl.DissVitaminDeficiency'specific-generic-tree,
+  McshHlth000011:16752  <br>* McshEngl.DissVitaminDeficiency_Gntr,
+  McshHlth000011:16758  <br>* McshEngl.DissVitaminDeficiency.specific,
+  McshHlth000011:16759  <br>* McshEngl.DissVitaminDeficiency_Sptr,
+  McshHlth000011:16782  <br>* McshEngl.DissNutrient.vitamin-excess-245,
+  McshHlth000011:16814  <br>* McshEngl.DissProstate,
+  McshHlth000011:16815  <br>* McshEngl.disease.044-prostate!⇒DissProstate,
+  McshHlth000011:16816  <br>* McshEngl.disease.prostate-044!⇒DissProstate,
+  McshHlth000011:16817  <br>* McshEngl.prostate-disease-044!⇒DissProstate,
+  McshHlth000011:16819  <br>* McshElln.πάθηση.προστάτη!η!=DissProstate,
+  McshHlth000011:16820  <br>* McshElln.προστάτη-πάθηση!η!=DissProstate,
+  McshHlth000011:16824  <h2 id="idDssHmn044prtctnH2">protection of DissProstate
+  McshHlth000011:16854  <br>* McshEngl.DissProstate'protection,
+  McshHlth000011:16859  <h2 id="idDssHmn044gstrH2">GENERIC-SPECIFIC-TREE of DissProstate
+  McshHlth000011:16865  <br>* McshEngl.DissProstate'generic-specific-tree,
+  McshHlth000011:16866  <br>* McshEngl.DissProstate'specific-generic-tree,
+  McshHlth000011:16869  <br>* McshEngl.DissProstate_Gntr,
+  McshHlth000011:16875  <br>* McshEngl.DissProstate.specific,
+  McshHlth000011:16876  <br>* McshEngl.DissProstate_Sptr,
+  McshHlth000011:16911  <h2 id="idDssHmn291H2">DissProstate.benign-prostatic-hyperplasia
+  McshHlth000011:16972  <br>* McshEngl.benign-prostatic-hyperplasia!⇒DissBph,
+  McshHlth000011:16973  <br>* McshEngl.DissBph!=benign-prostatic-hyperplasia,
+  McshHlth000011:16974  <br>* McshEngl.disease.291-benign-prostatic-hyperplasia!⇒DissBph,
+  McshHlth000011:16975  <br>* McshEngl.benign-prostatic-hypertrophy!⇒DissBph,
+  McshHlth000011:16976  <br>* McshEngl.DissProstate.benign-prostatic-hyperplasia!⇒DissBph,
+  McshHlth000011:16977  <br>* McshEngl.enlarged-prostate!⇒DissBph,
+  McshHlth000011:16979  <br>* McshElln.ΚΥΠ!=καλοήθης-υπερπλασία-του-προστάτη!η!=DissBph,
+  McshHlth000011:16980  <br>* McshElln.καλοήθης-υπερπλασία-του-προστάτη!η!=DissBph,
+  McshHlth000011:16981  <br>* McshElln.καλοήθης-υπερτροφία-του-προστάτη!η!=DissBph,
+  McshHlth000011:16985  <h3 id="idDssHmn291thrpH3">therapy of DissBph
+  McshHlth000011:17022  <br>* McshEngl.DissBph'therapy!⇒Bphtherapy,
+  McshHlth000011:17023  <br>* McshEngl.Bphtherapy!=DissBph'therapy,
+  McshHlth000011:17191  <br>* McshEngl.DissUlcer,
+  McshHlth000011:17192  <br>* McshEngl.DissUlcer, /álcer/!⇒DissUlcer,
+  McshHlth000011:17193  <br>* McshEngl.disease.053-ulcer!⇒DissUlcer,
+  McshHlth000011:17194  <br>* McshEngl.disease.ulcer-053!⇒DissUlcer,
+  McshHlth000011:17195  <br>* McshEngl.ulcer-disease-053!⇒DissUlcer,
+  McshHlth000011:17197  <br>* McshElln.άλγος!=DissUlcer,
+  McshHlth000011:17297  <br>* McshEngl.DissBone,
+  McshHlth000011:17298  <br>* McshEngl.disease.bone!⇒DissBone,
+  McshHlth000011:17299  <br>* McshEngl.disease.264-bone!⇒DissBone,
+  McshHlth000011:17300  <br>* McshEngl.bone-disease!⇒DissBone,
+  McshHlth000011:17301  <br>* McshEngl.ognBone'01_disease!⇒DissBone,
+  McshHlth000011:17302  <br>* McshEngl.ognBone'disease!⇒DissBone,
+  McshHlth000011:17303  <br>* McshEngl.ognBone'att001-disease!⇒DissBone,
+  McshHlth000011:17358  <br>* McshEngl.DissCartilage,
+  McshHlth000011:17359  <br>* McshEngl.cartilage-disease!⇒DissCartilage,
+  McshHlth000011:17360  <br>* McshEngl.chondropay!⇒DissCartilage,
+  McshHlth000011:17361  <br>* McshEngl.disease.267-cartilage!⇒DissCartilage,
+  McshHlth000011:17362  <br>* McshEngl.disease.cartilage!⇒DissCartilage,
+  McshHlth000011:17384  <br>* McshEngl.DissOgnLarynx,
+  McshHlth000011:17385  <br>* McshEngl.disease.268-ognLarynx!⇒DissOgnLarynx,
+  McshHlth000011:17386  <br>* McshEngl.disease.ognLarynx!⇒DissOgnLarynx,
+  McshHlth000011:17403  <br>* McshEngl.DissLaryngitis,
+  McshHlth000011:17404  <br>* McshEngl.disease.269-laryngitis!⇒DissLaryngitis,
+  McshHlth000011:17405  <br>* McshEngl.disease.laryngitis!⇒DissLaryngitis,
+  McshHlth000011:17406  <br>* McshEngl.laryngitis!⇒DissLaryngitis,
+  McshHlth000011:17407  <br>* McshEngl.DissOgnLarynx.laryngitis-269!⇒DissLaryngitis,
+  McshHlth000011:17421  <br>* McshEngl.DissGlobus_pharyngis,
+  McshHlth000011:17422  <br>* McshEngl.DissGlobus-pharyngis!⇒DissGlobus_pharyngis,
+  McshHlth000011:17423  <br>* McshEngl.disease.271-globus-pharyngis!⇒DissGlobus_pharyngis,
+  McshHlth000011:17424  <br>* McshEngl.disease.globus-pharyngis!⇒DissGlobus_pharyngis,
+  McshHlth000011:17425  <br>* McshEngl.globus-pharyngis!⇒DissGlobus_pharyngis,
+  McshHlth000011:17426  <br>* McshEngl.globus-sensation!⇒DissGlobus_pharyngis,
+  McshHlth000011:17427  <br>* McshEngl.lump-in-the-throat!⇒DissGlobus_pharyngis,
+  McshHlth000011:17429  <br>* McshElln.κόμπο-στο-λαιμό!=DissGlobus_pharyngis,
+  McshHlth000011:17447  <br>* McshEngl.DissFctPaining,
+  McshHlth000011:17448  <br>* McshEngl.disease.272-pain!⇒DissFctPaining,
+  McshHlth000011:17449  <br>* McshEngl.disease.pain!⇒DissFctPaining,
+  McshHlth000011:17450  <br>* McshEngl.ognBrain'att031-paining!⇒DissFctPaining,
+  McshHlth000011:17451  <br>* McshEngl.ognBrain'paining-att031!⇒DissFctPaining,
+  McshHlth000011:17452  <br>* McshEngl.pain!⇒DissFctPaining,
+  McshHlth000011:17453  <br>* McshEngl.paining!⇒DissFctPaining,
+  McshHlth000011:17454  <br>* McshEngl.sensing.pain!⇒DissFctPaining,
+  McshHlth000011:17456  <br>* McshZhon.téng-疼!=DissFctPaining,
+  McshHlth000011:17457  <br>* McshZhon.疼-téng!=DissFctPaining,
+  McshHlth000011:17458  <br>* McshZhon.tòng-痛!=DissFctPaining,
+  McshHlth000011:17459  <br>* McshZhon.痛-tòng!=DissFctPaining,
+  McshHlth000011:17461  <br>* McshElln.αίσθηση.πόνου!=DissFctPaining,
+  McshHlth000011:17462  <br>* McshElln.άλγος!=DissFctPaining,
+  McshHlth000011:17463  <br>* McshElln.πόνος!=DissFctPaining,
+  McshHlth000011:17464  <br>* McshElln.πόνου-αίσθηση!=DissFctPaining,
+  McshHlth000011:17468  <h2 id="idDssHmn272gstrH2">GENERIC-SPECIFIC-TREE of DissFctPaining
+  McshHlth000011:17474  <br>* McshEngl.DissFctPaining'generic-specific-tree,
+  McshHlth000011:17475  <br>* McshEngl.DissFctPaining'specific-generic-tree,
+  McshHlth000011:17478  <br>* McshEngl.DissFctPaining_Gntr,
+  McshHlth000011:17485  <br>* McshEngl.DissFctPaining.specific,
+  McshHlth000011:17486  <br>* McshEngl.DissFctPaining_Sptr,
+  McshHlth000011:17488  <br>* DissFctPaining.chronic!@McshHlth000011#idDssHmn283,
+  McshHlth000011:17493  <h2 id="idDssHmn272cntrH2">pain-center of DissFctPaining (<a class="clsPreview" href="../dirHlth/McshHlth000019.last.html#idSysNrvsatt029">link</a>)
+  McshHlth000011:17498  <h2 id="idDssHmn272thrpH2">therapy of DissFctPaining
+  McshHlth000011:17515  <br>* McshEngl.DissFctPaining'therapy,
+  McshHlth000011:17520  <h2 id="idDssHmn272prtcnH2">protection of DissFctPaining
+  McshHlth000011:17536  <br>* McshEngl.DissFctPaining'protection,
+  McshHlth000011:17541  <h2 id="idDssHmn283EEAH2">Ελληνική-Εταιρεία-Αλγολογίας-ΕΕΑ of DissFctPaining
+  McshHlth000011:17551  <br>* McshEngl.DissFctPaining'Ελληνική-Εταιρεία-Αλγολογίας-ΕΕΑ,
+  McshHlth000011:17559  <h2 id="idDssHmn283IaspH2">IASP of DissFctPaining
+  McshHlth000011:17569  <br>* McshEngl.DissFctPaining'IASP!⇒oznIasp,
+  McshHlth000011:17574  <h2 id="idDssHmn283H2">DissFctPaining.chronic
+  McshHlth000011:17582  <br>* McshEngl.DissFctPainingChronic,
+  McshHlth000011:17583  <br>* McshEngl.chronic-pain!⇒DissFctPainingChronic,
+  McshHlth000011:17584  <br>* McshEngl.disease.283-pain.chronic!⇒DissFctPainingChronic,
+  McshHlth000011:17585  <br>* McshEngl.disease.pain.chronic!⇒DissFctPainingChronic,
+  McshHlth000011:17586  <br>* McshEngl.DissFctPaining.chronic!⇒DissFctPainingChronic,
+  McshHlth000011:17588  <br>* McshElln.χρόνιος-πόνος!=DissFctPainingChronic,
+  McshHlth000011:17598  <br>· DissDoing is <a class="clsPreview" href="#idOverview">a-disease</a> that impairs normal <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmndong">bodily-doings</a>.
+  McshHlth000011:17601  <br>* McshEngl.DissDoing,
+  McshHlth000011:17602  <br>* McshEngl.disease.279-doing!⇒DissDoing,
+  McshHlth000011:17603  <br>* McshEngl.disease.doing!⇒DissDoing,
+  McshHlth000011:17604  <br>* McshEngl.functional-disorder!⇒DissDoing,
+  McshHlth000011:17613  <h2 id="idDssHmn279gstrH2">GENERIC-SPECIFIC-TREE of DissDoing
+  McshHlth000011:17619  <br>* McshEngl.DissDoing'generic-specific-tree,
+  McshHlth000011:17620  <br>* McshEngl.DissDoing'specific-generic-tree,
+  McshHlth000011:17623  <br>* McshEngl.DissDoing_Gntr,
+  McshHlth000011:17628  <br>* McshEngl.DissDoing.specific,
+  McshHlth000011:17629  <br>* McshEngl.DissDoing_Sptr,
+  McshHlth000011:17631  <br>* DissDoing.vomiting!@McshHlth000011#idDssHmn284,
+  McshHlth000011:17636  <h2 id="idDssHmn284H2">DissDoing.vomiting
+  McshHlth000011:17644  <br>* McshEngl.DissVomiting,
+  McshHlth000011:17645  <br>* McshEngl.disease.284-vomiting!⇒DissVomiting,
+  McshHlth000011:17646  <br>* McshEngl.disease.vomiting!⇒DissVomiting,
+  McshHlth000011:17647  <br>* McshEngl.DissDoing.vomiting!⇒DissVomiting,
+  McshHlth000011:17648  <br>* McshEngl.vomiting!⇒DissVomiting,
+  McshHlth000011:17650  <br>* McshZhon.ǒutù-呕吐!=DissVomiting,
+  McshHlth000011:17651  <br>* McshZhon.呕吐-ǒutù!=DissVomiting,
+  McshHlth000011:17653  <br>* McshEspo.vomi!=DissVomiting,
+  McshHlth000011:17655  <br>* McshElln.κάνω-εμετό!=DissVomiting,
+  McshHlth000011:17665  <br>· DissDoingNo is <a class="clsPreview" href="#idOverview">a-disease</a> that impairs normal <a class="clsPreview" href="../dirHlth/McshHlth000002.last.html#idBdyHmnsrtrF">body's-structure</a>.
+  McshHlth000011:17668  <br>* McshEngl.DissDoingNO,
+  McshHlth000011:17669  <br>* McshEngl.disease.280-doingNO!⇒DissDoingNO,
+  McshHlth000011:17670  <br>* McshEngl.disease.doingNO!⇒DissDoingNO,
+  McshHlth000011:17671  <br>* McshEngl.structural-disorder!⇒DissDoingNO,
+  McshHlth000011:17685  <br>* McshEngl.DissDeath,
+  McshHlth000011:17686  <br>* McshEngl.death.human!⇒DissDeath,
+  McshHlth000011:17687  <br>* McshEngl.disease.281-death!⇒DissDeath,
+  McshHlth000011:17688  <br>* McshEngl.disease.death!⇒DissDeath,
+  McshHlth000011:17689  <br>* McshEngl.human-death!⇒DissDeath,
+  McshHlth000011:17691  <br>* McshZhon.sǐwáng-死亡!=DissDeath,
+  McshHlth000011:17692  <br>* McshZhon.死亡-sǐwáng!=DissDeath,
+  McshHlth000011:17694  <br>* McshEspo.morto!=DissDeath,
+  McshHlth000011:17696  <br>* McshElln.θάνατος!ο!=DissDeath,
+  McshHlth000011:17710  <br>* McshEngl.DissSuicide,
+  McshHlth000011:17711  <br>* McshEngl.disease.282-suicide!⇒DissSuicide,
+  McshHlth000011:17712  <br>* McshEngl.disease.suicide!⇒DissSuicide,
+  McshHlth000011:17713  <br>* McshEngl.DissDeath.suicide-282!⇒DissSuicide,
+  McshHlth000011:17715  <br>* McshZhon.zìshā-自杀!=DissSuicide,
+  McshHlth000011:17716  <br>* McshZhon.自杀-zìshā!=DissSuicide,
+  McshHlth000011:17718  <br>* McshElln.αυτοκτονία!η!=DissSuicide,
+  McshHlth000011:17735  <br>* McshEngl.DissNocebo,
+  McshHlth000011:17736  <br>* McshEngl.disease.285-nocebo!⇒DissNocebo,
+  McshHlth000011:17737  <br>* McshEngl.disease.nocebo!⇒DissNocebo,
+  McshHlth000011:17738  <br>* McshEngl.nocebo/nocíbo/!⇒DissNocebo,
+  McshHlth000011:17739  <br>* McshEngl.nocebo-disease!⇒DissNocebo,
+  McshLag000007:106  <br>* McshEngl.DissLango,
+  McshLag000007:107  <br>* McshEngl.disease.288-DongLanguaging!⇒DissLango,
+  McshLag000007:108  <br>* McshEngl.disease.DongLanguaging!⇒DissLango,
+  McshLag000007:109  <br>* McshEngl.language-deficit!⇒DissLango,
+  McshLag000007:110  <br>* McshEngl.language-disorder!⇒DissLango,
+  McshLag000007:111  <br>* McshEngl.language-impairment!⇒DissLango,
+  McshLag000007:112  <br>* McshEngl.language-processing-disorder!⇒DissLango,
+  McshLag000007:113  <br>* McshEngl.HumnLango'language-disorder!⇒DissLango,
+  McshLag000007:117  <h3 id="idLHmnmhmndsscausH3">cause of DissLango
+  McshLag000007:125  <br>* McshEngl.DissLango'cause,
+  McshLag000007:130  <h3 id="idLHmnmhmndssthrpH3">therapy of DissLango
+  McshLag000007:138  <br>* McshEngl.DissLango'therapy,
+  McshLag000007:143  <h3 id="idLHmnmhmndssgstrH3">GENERIC-SPECIFIC-TREE of DissLango
+  McshLag000007:149  <br>* McshEngl.DissLango'generic-specific-tree,
+  McshLag000007:150  <br>* McshEngl.DissLango'specific-generic-tree,
+  McshLag000007:153  <br>* McshEngl.DissLango_Gntr,
+  McshLag000007:158  <br>* McshEngl.DissLango.specific,
+  McshLag000007:159  <br>* McshEngl.DissLango_Sptr,
+  McshLag000007:182  <h3 id="idLHmnmhmnDssExpvH3">DissLango.expressive
+  McshLag000007:190  <br>* McshEngl.DissLango.expressive,
+  McshLag000007:196  <h3 id="idLHmnmhmnDssRcpvH3">DissLango.receptive
+  McshLag000007:204  <br>* McshEngl.DissLango.receptive,
+  McshLag000007:210  <h3 id="idLHmnmhmnDssPrmrH3">DissLango.primary
+  McshLag000007:218  <br>* McshEngl.DissLango.primary,
+  McshLag000007:223  <h3 id="idLHmnmhmnDssScdrH3">DissLango.secondary
+  McshLag000007:231  <br>* McshEngl.DissLango.secondary,
+  McshLag000007:236  <h3 id="idLHmnmhmnDssDvmlH3">DissLango.developmental
+  McshLag000007:244  <br>* McshEngl.DissLango.developmental,
+  McshLag000007:249  <h3 id="idLHmnmhmnDssAqrdH3">DissLango.acquired
+  McshLag000007:257  <br>* McshEngl.DissLango.acquired,
+  McshLag000007:262  <h3 id="idLHmnmhmnDssDgrfH3">DissLango.dysgraphia
+  McshLag000007:270  <br>* McshEngl.DissDysgraphia,
+  McshLag000007:271  <br>* McshEngl.dysgraphia/disgráfia/!⇒DissDysgraphia,
+  McshLag000007:272  <br>* McshEngl.dysgraphia!⇒DissDysgraphia,
+  McshLag000007:273  <br>* McshEngl.DissLango.dysgraphia!⇒DissDysgraphia,
+  McshLag000007:278  <h3 id="idLHmnmhmnDssDslxH3">DissLango.dyslexia
+  McshLag000007:286  <br>* McshEngl.DissDyslexia,
+  McshLag000007:287  <br>* McshEngl.disease.289-dyslexia!⇒DissDyslexia,
+  McshLag000007:288  <br>* McshEngl.disease.dyslexia!⇒DissDyslexia,
+  McshLag000007:289  <br>* McshEngl.dyslexia/disléksia/!⇒DissDyslexia,
+  McshLag000007:290  <br>* McshEngl.DissLango.dyslexia!⇒DissDyslexia,
+  McshLag000007:291  <br>* McshEngl.word-blindness!⇒DissDyslexia,
+  McshLag000007:296  <h3 id="idLHmnmhmnDssSpchH3">DissLango.speech
+  McshLag000007:310  <br>* McshEngl.DissLango.speech,
+  McshLag000007:315  <h4 id="idLHmnmhmnDssSpprH4">DissLango.speech-production
+  McshLag000007:343  <br>* McshEngl.DissLango.speech-production,
+  McshLag000007:344  <br>* McshEngl.speech-production-DissLango,
+  McshLag000007:349  <h4 id="idLHmnmhmnDssSprcH4">DissLango.speech-reception
+  McshLag000007:357  <br>* McshEngl.DissLango.speech-reception,
+  McshLag000007:358  <br>* McshEngl.speech-reception-DissLango,
+  McshLag000007:363  <h4 id="idLHmnmhmnDssFnglH4">DissLango.phonological
+  McshLag000007:371  <br>* McshEngl.DissLango.phonological,
+  McshLag000007:377  <h4 id="idLHmnmhmnDssSltgH4">DissLango.stuttering
+  McshLag000007:386  <br>* McshEngl.DissLango.stuttering!⇒stuttering,
+  McshLag000007:393  <h4 id="idLHmnmhmnDssSpchApsdH4">DissLango.aprosodia
+  McshLag000007:402  <br>* McshEngl.DissLango.aprosodia,
+  McshLag000007:407  <h4 id="idLHmnmhmnDssSpchAprxH4">DissLango.apraxia-of-speech
+  McshLag000007:419  <br>* McshEngl.apraxia-DissLango,
+  McshLag000007:420  <br>* McshEngl.dyspraxia-DissLango,
+  McshLag000007:421  <br>* McshEngl.DissLango.apraxia-of-speech,
+  McshLag000007:426  <h4 id="idLHmnmhmnDssSpchApdH4">DissLango.auditory-processing-disorder
+  McshLag000007:439  <br>* McshEngl.DissLango.auditory-processing-disorder,
+  McshLag000007:444  <h4 id="idLHmnmhmnDssSpchCltgH4">DissLango.cluttering
+  McshLag000007:454  <br>* McshEngl.cluttering-DissLango,
+  McshLag000007:455  <br>* McshEngl.DissLango.cluttering,
+  McshLag000007:460  <h4 id="idLHmnmhmnDssSpchDvdH4">DissLango.developmental-verbal-dyspraxia
+  McshLag000007:475  <br>* McshEngl.DissLango.developmental-verbal-dyspraxia,
+  McshLag000007:480  <h4 id="idLHmnmhmnDssSpchDrsdH4">DissLango.dysprosody
+  McshLag000007:490  <br>* McshEngl.DissLango.dysprosody,
+  McshLag000007:491  <br>* McshEngl.dysprosody-DissLango,
+  McshLag000007:496  <h4 id="idLHmnmhmnDssSpchLispH4">DissLango.lisp
+  McshLag000007:505  <br>* McshEngl.DissLango.lisp,
+  McshLag000007:506  <br>* McshEngl.lisp-DissLango,
+  McshLag000007:511  <h4 id="idLHmnmhmnDssSpchSsdH4">DissLango.speech-sound-disorder
+  McshLag000007:524  <br>* McshEngl.DissLango.speech-sound-disorder,
+  McshLag000007:530  <h3 id="idLHmnmhmnDssAphsH3">DissLango.aphasia
+  McshLag000007:540  <br>* McshEngl.aphasia-DissLango/afízia/,
+  McshLag000007:541  <br>* McshEngl.DissLango.aphasia,
+  McshLag000007:545  <h4 id="idLHmnmhmnDssAphsAnmH4">DissLango.anomic-aphasia
+  McshLag000007:555  <br>* McshEngl.anomia-DissLango,
+  McshLag000007:557  <br>* McshEngl.DissLango.anomic-aphasia,
+  McshLag000007:558  <br>* McshEngl.dysnomia-DissLango,

@@ -1,0 +1,26 @@
+=== TITLE (6) — numbered title: dash → underscore (number separator too)
+  McshCor000009:575  01_generic-entity → 01_generic_entity
+  McshCor000009:687  02_specific-entity → 02_specific_entity
+  McshCor000009:703  03_measure-unit → 03_measure_unit
+  McshCor000009:823  04_abstract-measure → 04_abstract_measure
+  McshCor000009:828  05_measure → 05_measure
+  McshCor000009:1097  06_measurer → 06_measurer
+
+=== NAME-ADDED (2) — Y'NN_att_name added beside the dash form (old kept)
+  McshCor000009:586  <br>* McshEngl.ActgMeasuring'01_generic_entity!⇒megethos,
+  McshCor000009:695  <br>* McshEngl.ActgMeasuring'02_specific_entity,
+
+=== NAME-ADDED-2 (2) — X'NN_att_name added where the section had no numbered name
+  McshCor000009:729  <br>* McshEngl.ActgMeasuring'03_measure_unit!⇒UOM,
+  McshCor000009:864  <br>* McshEngl.ActgMeasuring'05_measure!⇒measure,
+
+=== TITLE (2) — numbered title: dash → underscore (number separator too)
+  McshLag000009:938  09_nasal-1-2 → 09_nasal_1_2
+  McshLag000009:956  10_aspirated-1-2 → 10_aspirated_1_2
+
+=== NAME-ADDED (0) — Y'NN_att_name added beside the dash form (old kept)
+
+
+=== NAME-ADDED-2 (2) — McshLag000009
+  McshLag000009:952  <br>* McshEngl.VowlPhnm'09_nasal_1_2,
+  McshLag000009:972  <br>* McshEngl.VowlPhnm'10_aspirated_1_2,

@@ -42,3 +42,75 @@ T25. {2026-10-19} DONE: McshTchInf000010 Jsgnalgo GS-TREEs: idLJsgnalgoDat… ->
 
 T26. {2026-10-19} DONE: McshHlth000014 GS-TREE of MdtnAntidepressant: ids idMedHmn036… -> idMedHmn001… (gstr, gstrH3, gstrdsn, gstrnam, gntr, str + self-links; 9 lines),
      and its unclosed generic-tree:: got "<br>* ... entity_Gntr," + its self-link close. GS-TREE report: 2417 of 2417 conform.
+
+T27. {2026-10-19} DONE: DOING sections lost their attribute number NN_: 16 titles ("07_DOING of whole" -> "DOING of whole"),
+     1 description line (McshCor000011:2034), names: 14 numbered names removed (X'doing was already there), 2 renamed (DssPlnt'doing, DeApp'doing).
+     13 files; no "NN_doing" left. List: dirReport/doing-unnum-applied.txt.
+
+T28. {2026-10-19} DONE: gstree-report.js expects the specific-tree:: id {whole}sptr (old {whole}str still accepted, counted in the header:
+     1 sptr, 2416 str). GS-TREE report: 2415 of 2417 (left: idSysMnggstr, idEosgstr — title X differs from the _Gntr/_Sptr names).
+
+T29. {2026-10-19} DONE: after the user's main-name renames SystManaging -> Mnggsyst and Deos -> Agnteos, their GS-TREE names followed:
+     McshCor000011:2899/2906 Mnggsyst_Gntr / Mnggsyst_Sptr, McshTchInf000021:3318/3326 Agnteos_Gntr / Agnteos_Sptr (the old names had no other uses).
+     GS-TREE report: 2417 of 2417 conform; generic-tree names all unique (2977).
+
+T30. {2026-10-19} DONE: every specific-tree:: paragraph id "…str" -> "…sptr" (also div para-concepts, "…strA"->"…sptrA", "…str2"->"…sptr2"):
+     2790 ids + 2799 links (self-links, href="#…", "…McshF.last.html#…", "!@McshF#…") in 551 files; no clash, no new duplicate id,
+     dangling links 2912 -> 2912. gstree-report.js now requires {whole}sptr. List: dirReport/id-sptr-sync-applied.txt.
+
+T31. {2026-10-19} DONE: structuralMcsh.js 0-25-0: rule MvrlId12 sptr_specific_tree_suffix (warning): a "specific-tree::" para id must end in
+     "sptr" (a list may add one letter/digit: sptrA, sptr2). fCheckIdParaSuffix got an optional rEndIn. reportMcsh.mjs usage lists MvrlId12.
+     Live pages: 0 issues; on the pre-rename copy it finds 2787 of the 2790 old "…str" ids.
+
+T32. {2026-10-19} DONE: 4 more generic-trees got their head after the user's new main-names: Mcsarcho_Gntr, Mcsgenchn_Gntr, Mcsspecdiv_Gntr
+     (McshCor000002), Plantinfosyst_Gntr (McshCor000011). Unnamed generic-trees: 132 (all NO-MAIN) — dirReport/gntr-noname-report.txt.
+
+T33. {2026-10-20} DONE: 98 specific-division sections (with their children) moved from outside to the END of their whole's GS-TREE, in 23 files;
+     headings shifted to GS-TREE level + 1 (478 heading ids {id}HN renamed, 25 links to them followed); section/para ids unchanged.
+     Content guard (same lines modulo heading level), section balance, no new duplicate id, dangling links 2912 -> 2912. GS-TREE report: 2417 of 2417.
+     NOT moved: 6 in files with unbalanced sections — McshLag000007 (line 26679 "</section>  </section>" on one line; 3 spec-divs),
+     McshTchInf000006 (extra </section> at 1097; 3 spec-divs), and McshTchInf000024 (extra </section> at 2137). 4 spec-divs have no GS-TREE in their whole.
+     Lists: dirReport/specdiv-move-applied.txt, dirReport/specdiv-outside-report.txt.
+
+T34. {2026-10-20} DONE: unbalanced sections fixed: McshLag000007:26679 "</section>  </section>" split onto two lines;
+     McshTchInf000006:1097 a third </section> after tool.interpreter removed (it closed nothing; 168 opens / 168 closes now, every heading level = its depth).
+     Then the 6 spec-divs there moved into their GS-TREEs (idLHmnmnamegstr, idLCpgmgstr). spec-divs outside a GS-TREE: 4 (whole has no GS-TREE).
+     Still unbalanced: McshTchInf000024:2137 (extra </section>).
+
+T35. {2026-10-20} DONE: McshTchInf000024: the </section> at line 1978 closed the h1 program section too early (after Steem-program.TOOL),
+     leaving Steem-program.BLOCK-EXPLORER … Utopian (h2) outside it; removed. 172 opens / 172 closes, every heading level = its depth.
+     A scan of all pages found 12 more files with section problems (see the reply of {2026-10-20}): 8 have one extra </section>
+     (McshCor000011, McshHlth000006, McshLag000039, McshNtr000006, McshNtr000014, McshStn000021, McshTchInf000020, McshTchInf000032),
+     4 are balanced in count but their nesting/levels disagree (McshStn000031, McshStn000050, McshStnlaw000004, McshTchInf000039).
+
+T36. {2026-10-20} DONE: one stray </section> removed in 8 files (each closed nothing, or closed its whole too early):
+     McshCor000011:410, McshHlth000006:225 (closed idDsdr before its specific idDsdr001), McshLag000039:1671, McshNtr000006:138,
+     McshNtr000014:173, McshStn000021:712, McshTchInf000020:1937, McshTchInf000032:855. Now every page: sections balanced, nesting consistent.
+     McshStn000050 and McshTchInf000039 were false alarms (a </section> sharing a line). Left: McshStn000031 (59 "Article" h6 at depth 5)
+     and McshStnlaw000004 (345 h4/h5 under shallower depth) — sections balanced, only heading levels skip.
+     -> {2026-10-20} user: "article sect, always have one level" — the McshStn000031 / McshStnlaw000004 article levels are intended; nothing to fix.
+
+T37. {2026-10-20} REPORT: rule "IF generic X has specific Y THEN Y has generic X" — dirReport/gen-spec-rule-report.txt (script scratchpad/gen-spec-rule.js).
+     Only linked specific items are checked (name!@file#id, <a href>); 15053 plain-text items are not. See the counts in the report header.
+
+T38. {2026-10-20} DONE: rule "X has specific Y => Y has generic X": the 394 cases where Y's generic-tree:: was empty got "<br>* X_Gntr,"
+     right after its "<br>===" — 372 lines in 327 generic-trees (40 Y have 2+ X), 75 files; only these lines were added.
+     Rule report now: OK 840 (was 446), INDIRECT 34, MISSING 259 (Y names another generic), Y-NO-GENERIC-TREE 400, ITEM-NOT-A-CONCEPT 5.
+     List: dirReport/gen-spec-fill-applied.txt.
+
+T39. {2026-10-20} DONE: McshTchInf000024 GS-TREE of Stemacnt (whole idSteemacnt) had the ids of the concept Stemacnt.VESTER (idSteemactVstr…):
+     idSteemactVstrgstr/gstrH2/gstrdsn/gstrnam/gntr/sptr -> idSteemacntgstr/… (lines 2852-2871, + self-links; no other links, no clash).
+     VESTER's own ids (idSteemactVstr, …dsn, …nam) unchanged. GS-TREE report: 2420 of 2420.
+
+T40. {2026-10-20} DONE: structuralMcsh.js 0-26-0: rule MvrlGstr01 specific_has_generic (warning) — IF generic X has specific Y
+     (a linked item of X's specific-tree::) THEN Y has X as generic (in its generic-tree:: as X_Gntr or a link; or Y is a part-section of X
+     without own generic-tree; or Y reaches X through its generic-chain). reportMcsh.mjs lists MvrlGstr01.
+     Live pages: 628 warnings in 81 files (257 "does not list it", 371 "has no generic-tree::"). It sees only concepts of parserMcsh
+     (sections with a name::), so it is ~30 below gen-spec-rule.js (659).
+
+T41. {2026-10-20} DONE: MvrlGstr01 fixed for McshHlth000002 (59 -> 3 warnings; all 628 -> 572):
+     39 generic-trees got their generic X added (X_Gntr; health-bodyMtrHumn got "bodyMtrHumn!@McshHlth000002#idBdyHmnatt022", X has no generic-tree),
+     in McshHlth000002/08/11/13 and McshCor000018; 8 concepts without generic-tree got a GS-TREE ({2026-10-20}) listing X:
+     SystEndocrine, SystIntegumentary, Hmbdarm, DissCirrhosis, tissueCover, organCartilage, organMesentery, HmbdReproducing.
+     LEFT 3: idOgnHmn034 (large intestine) and idBdyHmn459 (subcutaneous tissue) have no !⇒ main-name.
+     Script: scratchpad/gstr01-fix.js <McshFile> [--dry]. List: dirReport/mvrlgstr01-fix-McshHlth000002-applied.txt.

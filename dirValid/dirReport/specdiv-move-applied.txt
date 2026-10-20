@@ -1,0 +1,618 @@
+specific-divisions moved into their GS-TREE — 2026-10-20   DRY=false
+
+moved: 98 | heading ids renamed: 478 | links to them updated: 25 | files written: 23
+
+=== MOVED (98)
+  McshCor000002:1161  idMcsattScdnPrt  h2->h3 "Mcsattr.specs-div.internal|external"  (12 lines, 0 sub-sections)  -> end of idMcsattgstr h2
+  McshCor000002:1174  idMcsattScdnGnc  h2->h3 "Mcsattr.specs-div.generic"  (13 lines, 0 sub-sections)  -> end of idMcsattgstr h2
+  McshCor000002:1188  idMcsattScdnDng  h2->h3 "Mcsattr.specs-div.doing-instance"  (13 lines, 0 sub-sections)  -> end of idMcsattgstr h2
+  McshCor000002:1202  idMcsattScdnIhf  h2->h3 "Mcsattr.specs-div.inherited-from-instance"  (13 lines, 0 sub-sections)  -> end of idMcsattgstr h2
+  McshCor000002:1216  idMcsattScdnIht  h2->h3 "Mcsattr.specs-div.inherited-to"  (17 lines, 0 sub-sections)  -> end of idMcsattgstr h2
+  McshCor000012:1223  idMdl021sdarch  h2->h3 "modelCmpr.spec-div.on-archetype"  (24 lines, 0 sub-sections)  -> end of idMdl021gstr h2
+  McshCor000013:137  idBrnginfScdnIarn  h2->h3 "infoMindBio.spec-div.infoMindBio-archetype-relation"  (160 lines, 9 sub-sections)  -> end of idBrnginfgstr h2
+  McshHlth000013:1621  idFoodHmn050_1  h2->h3 "foodCooked.specs-div.ingredient"  (81 lines, 4 sub-sections)  -> end of idFoodHmn050gstr h2
+  McshHlth000013:1703  idFoodHmn050_2  h2->h3 "foodCooked.specs-div.cooking"  (122 lines, 6 sub-sections)  -> end of idFoodHmn050gstr h2
+  McshHlth000013:4070  idFoodHmn153  h3->h4 "drinkWine.specs-div.law"  (90 lines, 5 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4161  idFoodHmn154  h3->h4 "drinkWine.specs-div.color"  (59 lines, 3 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4221  idFoodHmn155  h3->h4 "drinkWine.specs-div.sweetness"  (69 lines, 4 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4291  idFoodHmn078  h3->h4 "drinkWine.specs-div.carbon-dioxide"  (55 lines, 3 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4347  idFoodHmn156  h3->h4 "drinkWine.specs-div.oldness"  (20 lines, 0 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4368  idFoodHmn152SpdvSopr  h3->h4 "drinkWine.specs-div.society-producing"  (32 lines, 0 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHlth000013:4401  idFoodHmn152SpdvSocs  h3->h4 "drinkWine.specs-div.society-consuming"  (23 lines, 0 sub-sections)  -> end of idFoodHmn152gstr h3
+  McshHmn000002:4611  idHmnSpdnRdv  h1->h2 "human.spec-div.SystReproductive"  (13 lines, 0 sub-sections)  -> end of idHmngstr h1
+  McshHmn000002:4625  idHmnSpdnItgc  h1->h2 "human.spec-div.intelligence"  (12 lines, 0 sub-sections)  -> end of idHmngstr h1
+  McshHmn000002:4638  idHmnSpdnEcnm  h1->h2 "human.spec-div.economy"  (30 lines, 3 sub-sections)  -> end of idHmngstr h1
+  McshHmn000002:4669  idHmnSpdnGnrn  h1->h2 "human.spec-div.generation"  (57 lines, 1 sub-sections)  -> end of idHmngstr h1
+  McshLag000006:3546  idCharUcdSdogc  h2->h3 "charUncd.spec-div.general-category"  (192 lines, 7 sub-sections)  -> end of idCharUcdgstr h2
+  McshLag000009:633  idL0017phnmScdnLag  h4->h5 "phoneme.spec-div.language of speech"  (24 lines, 0 sub-sections)  -> end of idL0017phnmgstr h4
+  McshLag000009:658  idL0017phnmScdnObrn  h4->h5 "phoneme.spec-div.obstruction of speech"  (15 lines, 0 sub-sections)  -> end of idL0017phnmgstr h4
+  McshLag000018:15682  idLZhonsntcOnwo  h3->h4 "Zhon_sent.spec-div.word-order (link)"  (4 lines, 0 sub-sections)  -> end of idLZhonsntcgstr h3
+  McshStn000008:1226  idOgznScdnSrpn  h1->h2 "Ogzn.spec-div.satisfier-production"  (30 lines, 1 sub-sections)  -> end of idOgzngstr h1
+  McshStn000008:1257  idOgznScdnAdmn  h1->h2 "Ogzn.spec-div.admin-sys"  (274 lines, 9 sub-sections)  -> end of idOgzngstr h1
+  McshStn000009:8283  idSocHumnScdnGvcsm  h1->h2 "society.spec-div.admin-system"  (819 lines, 31 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:9103  idSocHumnScdnBlad  h1->h2 "society.spec-div.blood-relations"  (48 lines, 1 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:9152  idSocHumnScdnSfrsm  h1->h2 "society.spec-div.economy"  (729 lines, 23 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:9882  idSocHumnScdnTech  h1->h2 "society.spec-div.technology"  (493 lines, 16 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:10376  idSocHumnScdnTime  h1->h2 "society.spec-div.time"  (84 lines, 2 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:10461  idSocHumnScdnSrtr  h1->h2 "society.spec-div.structure"  (103 lines, 3 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:10565  idSocHumnScdnPlac  h1->h2 "society.spec-div.place"  (83 lines, 3 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:10649  idSocHumnScdnIndp  h1->h2 "society.spec-div.independence"  (75 lines, 0 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:10725  idSocHumnScdnCode  h1->h2 "society.spec-div.code"  (1564 lines, 3 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000009:12290  idSocHumnScdnGen  h1->h2 "society.spec-div.generic"  (40 lines, 2 sub-sections)  -> end of idSocHumngstr h1
+  McshStn000010:1827  idSfrHmnSdew  h1->h2 "satisfier.specs-div.economic-work"  (132 lines, 4 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:1960  idSfrHmnSdwnsp  h1->h2 "satisfier.specs-div.ownership"  (718 lines, 41 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:2679  idSfrHmnSdcstn  h1->h2 "satisfier.specs-div.consumption"  (375 lines, 18 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:3055  idSfrHmnSdpdcn  h1->h2 "satisfier.specs-div.production"  (165 lines, 6 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:3221  idSfrHmnSdev  h1->h2 "satisfier.specs-div.exchange-value"  (121 lines, 6 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:3343  idSfrHmnSduv  h1->h2 "satisfier.specs-div.use-value"  (57 lines, 2 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000010:3401  idSfrHmnSdTime  h1->h2 "satisfier.specs-div.time"  (12 lines, 0 sub-sections)  -> end of idSfrHmngstr h1
+  McshStn000011:1345  idWkrScdvElmt  h1->h2 "Wrkr.spec-div.employment"  (310 lines, 17 sub-sections)  -> end of idWkrgstr h1
+  McshStn000011:1656  idWkrScdvSkil  h1->h2 "Wrkr.spec-div.skill"  (103 lines, 4 sub-sections)  -> end of idWkrgstr h1
+  McshStn000012:3141  idEconHmnScdvPlng  h1->h2 "SocEcon.specs-div.planning"  (204 lines, 11 sub-sections)  -> end of idEconHmngstr h1
+  McshStn000012:3346  idEconHmnScdvTech  h1->h2 "SocEcon.specs-div.tech"  (147 lines, 3 sub-sections)  -> end of idEconHmngstr h1
+  McshStn000012:3494  idEconHmnSpdvWrkr  h1->h2 "SocEcon.specs-div.worker"  (250 lines, 11 sub-sections)  -> end of idEconHmngstr h1
+  McshStn000012:3745  idEconHmnSpdvSctr  h1->h2 "SocEcon.specs-div.sector"  (57 lines, 1 sub-sections)  -> end of idEconHmngstr h1
+  McshStn000012:3803  idEconHmnSpdnModl  h1->h2 "SocEcon.specs-div.model"  (384 lines, 7 sub-sections)  -> end of idEconHmngstr h1
+  McshStn000015:1362  idOznPdnScdnOnr  h1->h2 "OgznPrdg.spec-div.owner"  (23 lines, 2 sub-sections)  -> end of idOznPdngstr h1
+  McshStn000015:1904  idOznPdn004Spdn3sml  h2->h3 "sector.spec-div.3-sector-model"  (19 lines, 0 sub-sections)  -> end of idOznPdn004gstr h2
+  McshStn000015:1924  idOznPdn004SpdnOnsp  h2->h3 "sector.spec-div.ownership"  (14 lines, 0 sub-sections)  -> end of idOznPdn004gstr h2
+  McshStnlaw000002:1280  idLawSdsorc  h1->h2 "law.spec-div.on-source"  (22 lines, 0 sub-sections)  -> end of idLawgstr h1
+  McshStnlaw000002:1303  idLawSdsoct  h1->h2 "law.spec-div.on-society"  (13 lines, 0 sub-sections)  -> end of idLawgstr h1
+  McshStnlaw000002:1317  idLawSdlang  h1->h2 "law.spec-div.on-language"  (12 lines, 0 sub-sections)  -> end of idLawgstr h1
+  McshStnlaw000002:1330  idLawSdtopc  h1->h2 "law.spec-div.on-topic"  (810 lines, 28 sub-sections)  -> end of idLawgstr h1
+  McshStnlaw000002:2141  idLawSdpcdr  h1->h2 "law.spec-div.on-procedure"  (71 lines, 2 sub-sections)  -> end of idLawgstr h1
+  McshStnlaw000003:1123  idLawEusSdtopc  h1->h2 "lawEus.spec-div.topic"  (16 lines, 1 sub-sections)  -> end of idLawEusgstr h1
+  McshStnlaw000003:2591  idLawEus007  h2->h3 "EulawInternal.spec-div.importance"  (13 lines, 0 sub-sections)  -> end of idLawEus003gstr h2
+  McshStnlaw000003:2743  idLawEus005001  h2->h3 "EulawAct.spec-div.medium-001"  (16 lines, 0 sub-sections)  -> end of idLawEus005gstr h2
+  McshStnlaw000004:657  idLawInlSdtopc  h1->h2 "lawIntl.spec-div.topic"  (448 lines, 12 sub-sections)  -> end of idLawInlgstr h1
+  McshTchInf000003:864  idCmrScdnDcd  h1->h2 "techCmpr.spec-div.decade"  (14 lines, 0 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:879  idCmrScdnHdwr  h1->h2 "techCmpr.spec-div.hardware"  (209 lines, 11 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1089  idCmrScdnPgm  h1->h2 "techCmpr.spec-div.program"  (94 lines, 5 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1184  idCmrScdnOs  h1->h2 "techCmpr.spec-div.Os"  (45 lines, 2 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1230  idCmrScdnDlif  h1->h2 "techCmpr.spec-div.digital-info"  (38 lines, 2 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1269  idCmrScdnmnfg  h1->h2 "techCmpr.spec-div.main-functing"  (43 lines, 2 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1313  idCmrScdnRlt  h1->h2 "techCmpr.spec-div.reality"  (114 lines, 6 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000003:1428  idCmrScdnSize  h1->h2 "techCmpr.spec-div.size"  (60 lines, 3 sub-sections)  -> end of idCmrgstr h1
+  McshTchInf000010:444  idLJsgnsutSpcDlt  h2->h3 "Jssut.spec-div.dialect"  (12 lines, 0 sub-sections)  -> end of idLJsgnsutgstr h2
+  McshTchInf000010:457  idLJsgnsutSpcObt  h2->h3 "Jssut.spec-div.object-pm"  (12 lines, 0 sub-sections)  -> end of idLJsgnsutgstr h2
+  McshTchInf000010:470  idLJsgnsutSpcCsm  h2->h3 "Jssut.spec-div.creator"  (110 lines, 6 sub-sections)  -> end of idLJsgnsutgstr h2
+  McshTchInf000010:581  idLJsgnsutSnam  h2->h3 "Jssut.spec-div.reference"  (12 lines, 0 sub-sections)  -> end of idLJsgnsutgstr h2
+  McshTchInf000012:1467  idLJsndmcOnpsu  h3->h4 "Jsndmc.spec-div.public--semantic-unit"  (21 lines, 0 sub-sections)  -> end of idLJsndmcgstr h3
+  McshTchInf000015:2505  idAlgntevuSpcCnsa  h2->h3 "Agntasset.spec-div.consensus-algorithm"  (12 lines, 0 sub-sections)  -> end of idAlgntevugstr h2
+  McshTchInf000015:2518  idAlgntevuSpcClm  h2->h3 "Agntasset.spec-div.claim"  (14 lines, 0 sub-sections)  -> end of idAlgntevugstr h2
+  McshTchInf000015:2533  idAlgntevuSpcMoe  h2->h3 "Agntasset.spec-div.chain-currency"  (12 lines, 0 sub-sections)  -> end of idAlgntevugstr h2
+  McshTchInf000015:2546  idAlgntevuSpcCeo  h2->h3 "Agntasset.spec-div.chain-exchange-orgnanization"  (36 lines, 2 sub-sections)  -> end of idAlgntevugstr h2
+  McshTchInf000015:2583  idAlgntevuSpcCmc  h2->h3 "Agntasset.spec-div.CoinMarketCap"  (1162 lines, 0 sub-sections)  -> end of idAlgntevugstr h2
+  McshTchInf000015:4271  idAlgntevuMoeSpcAdpn  h3->h4 "Agntexvu.spec-div.Adoption"  (13 lines, 0 sub-sections)  -> end of idAlgntevuMoegstr h3
+  McshTchInf000015:4285  idAlgntevuMoeSpcDmnc  h3->h4 "Agntexvu.spec-div.dominancy"  (12 lines, 0 sub-sections)  -> end of idAlgntevuMoegstr h3
+  McshTchInf000015:5571  idAlgntgovDvsnOnchn  h2->h3 "netAlgo_govc.spec-div.on-automation"  (14 lines, 0 sub-sections)  -> end of idAlgntgovgstr h2
+  McshTchInf000015:7745  idAlgntxSdVlm  h3->h4 "exchange-ogn.spec-div.VOLUME"  (13 lines, 0 sub-sections)  -> end of idAlgntxgstr h3
+  McshTchInf000015:10700  idAlgntsvcOninf  h2->h3 "Agntsrvc.spec-div.info-stored"  (23 lines, 0 sub-sections)  -> end of idAlgntsvcgstr h2
+  McshTchInf000015:10724  idAlgntsvcOnsctr  h2->h3 "Agntsrvc.spec-div.sector"  (36 lines, 0 sub-sections)  -> end of idAlgntsvcgstr h2
+  McshTchInf000016:2427  idDbcevuOncsa  h2->h3 "Bkcnasset.spec-div.consensus-algorithm"  (12 lines, 0 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2440  idDbcevuOngov  h2->h3 "Bkcnasset.spec-div.governance"  (12 lines, 0 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2453  idDbcevuOntog  h2->h3 "Bkcnasset.spec-div.time-of-genesis"  (50 lines, 0 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2504  idDbcevuOnprl  h2->h3 "Bkcnasset.spec-div.protocol"  (381 lines, 12 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2886  idBevuCknOnbtc  h2->h3 "Bkcnasset.spec-div.bitcoin"  (36 lines, 1 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2923  idDbcevuSpdvActv  h2->h3 "Bkcnasset.spec-div.activeness"  (37 lines, 2 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:2961  idDbcevuMng  h2->h3 "Bkcnasset.spec-div.mining"  (156 lines, 6 sub-sections)  -> end of idDbcevugstr h2
+  McshTchInf000016:5778  idDbcDvnsvc  h1->h2 "AgntBkcn.spec-div.service"  (161 lines, 5 sub-sections)  -> end of idDbcgstr h1
+  McshTchInf000016:5940  idDbcOntog  h1->h2 "AgntBkcn.spec-div.time-of-genesis"  (38 lines, 0 sub-sections)  -> end of idDbcgstr h1
+  McshTchInf000018:11290  idEthctpOncod  h2->h3 "DcontractEth.spec-div.code"  (13 lines, 0 sub-sections)  -> end of idEthctpgstr h2
+  McshTchInf000018:11304  idEthctpOnsvc  h2->h3 "DcontractEth.spec-div.service"  (10 lines, 0 sub-sections)  -> end of idEthctpgstr h2
+  McshTchInf000018:11315  idEthctpOn5tm  h2->h3 "DcontractEth.spec-div.5-types-model"  (29 lines, 0 sub-sections)  -> end of idEthctpgstr h2
+
+=== HEADING-ID-RENAMED (478)
+  McshCor000002:1162  idMcsattScdnPrtH2 -> idMcsattScdnPrtH3
+  McshCor000002:1175  idMcsattScdnGncH2 -> idMcsattScdnGncH3
+  McshCor000002:1189  idMcsattScdnDngH2 -> idMcsattScdnDngH3
+  McshCor000002:1203  idMcsattScdnIhfH2 -> idMcsattScdnIhfH3
+  McshCor000002:1217  idMcsattScdnIhtH2 -> idMcsattScdnIhtH3
+  McshCor000012:1224  idMdl021sdarchH2 -> idMdl021sdarchH3
+  McshCor000013:138  idBrnginfScdnIarnH2 -> idBrnginfScdnIarnH3
+  McshCor000013:155  idBrnginfTrueH3 -> idBrnginfTrueH4
+  McshCor000013:179  idBrnginfTrsgH3 -> idBrnginfTrsgH4
+  McshCor000013:193  idBrnginfTrwkH3 -> idBrnginfTrwkH4
+  McshCor000013:207  idBrnginfTrfsH3 -> idBrnginfTrfsH4
+  McshCor000013:221  idBrnginfFswkH3 -> idBrnginfFswkH4
+  McshCor000013:235  idBrnginfFssgH3 -> idBrnginfFssgH4
+  McshCor000013:249  idBrnginfFalsH3 -> idBrnginfFalsH4
+  McshCor000013:269  idBrnginfLieH4 -> idBrnginfLieH5
+  McshCor000013:293  idBrnginfBlfH3 -> idBrnginfBlfH4
+  McshHlth000013:1622  idFoodHmn050_1H2 -> idFoodHmn050_1H3
+  McshHlth000013:1637  idFoodHmn050_3H3 -> idFoodHmn050_3H4
+  McshHlth000013:1656  idFoodHmn050_4H3 -> idFoodHmn050_4H4
+  McshHlth000013:1676  idFoodHmn050_6H3 -> idFoodHmn050_6H4
+  McshHlth000013:1690  idFoodHmn050_7H3 -> idFoodHmn050_7H4
+  McshHlth000013:1704  idFoodHmn050_2H2 -> idFoodHmn050_2H3
+  McshHlth000013:1725  idFoodHmn050_8H3 -> idFoodHmn050_8H4
+  McshHlth000013:1743  idFoodHmn050_11H3 -> idFoodHmn050_11H4
+  McshHlth000013:1762  idFoodHmn050_12H3 -> idFoodHmn050_12H4
+  McshHlth000013:1786  idFoodHmn050_13H3 -> idFoodHmn050_13H4
+  McshHlth000013:1801  idFoodHmn050_16H3 -> idFoodHmn050_16H4
+  McshHlth000013:1814  idFoodHmn050_18H3 -> idFoodHmn050_18H4
+  McshHlth000013:4071  idFoodHmn153H3 -> idFoodHmn153H4
+  McshHlth000013:4084  idFoodHmn161H4 -> idFoodHmn161H5
+  McshHlth000013:4101  idFoodHmn162H4 -> idFoodHmn162H5
+  McshHlth000013:4118  idFoodHmn163H5 -> idFoodHmn163H6
+  McshHlth000013:4132  idFoodHmn164H5 -> idFoodHmn164H6
+  McshHlth000013:4146  idFoodHmn165H5 -> idFoodHmn165H6
+  McshHlth000013:4162  idFoodHmn154H3 -> idFoodHmn154H4
+  McshHlth000013:4175  idFoodHmn166H4 -> idFoodHmn166H5
+  McshHlth000013:4191  idFoodHmn167H4 -> idFoodHmn167H5
+  McshHlth000013:4206  idFoodHmn168H4 -> idFoodHmn168H5
+  McshHlth000013:4222  idFoodHmn155H3 -> idFoodHmn155H4
+  McshHlth000013:4235  idFoodHmn169H4 -> idFoodHmn169H5
+  McshHlth000013:4249  idFoodHmn170H4 -> idFoodHmn170H5
+  McshHlth000013:4263  idFoodHmn171H4 -> idFoodHmn171H5
+  McshHlth000013:4277  idFoodHmn172H4 -> idFoodHmn172H5
+  McshHlth000013:4292  idFoodHmn078H3 -> idFoodHmn078H4
+  McshHlth000013:4305  idFoodHmn173H4 -> idFoodHmn173H5
+  McshHlth000013:4319  idFoodHmn174H4 -> idFoodHmn174H5
+  McshHlth000013:4333  idFoodHmn175H4 -> idFoodHmn175H5
+  McshHlth000013:4348  idFoodHmn156H3 -> idFoodHmn156H4
+  McshHlth000013:4369  idFoodHmn152SpdvSoprH3 -> idFoodHmn152SpdvSoprH4
+  McshHlth000013:4402  idFoodHmn152SpdvSocsH3 -> idFoodHmn152SpdvSocsH4
+  McshHmn000002:4612  idHmnSpdnRdvH1 -> idHmnSpdnRdvH2
+  McshHmn000002:4626  idHmnSpdnItgcH1 -> idHmnSpdnItgcH2
+  McshHmn000002:4639  idHmnSpdnEcnmH1 -> idHmnSpdnEcnmH2
+  McshHmn000002:4654  idHmn021H2 -> idHmn021H3
+  McshHmn000002:4659  idHmn022H2 -> idHmn022H3
+  McshHmn000002:4664  idHmn023H2 -> idHmn023H3
+  McshHmn000002:4670  idHmnSpdnGnrnH1 -> idHmnSpdnGnrnH2
+  McshHmn000002:4692  idHmnSpdnGnrnZH2 -> idHmnSpdnGnrnZH3
+  McshLag000006:3547  idCharUcdSdogcH2 -> idCharUcdSdogcH3
+  McshLag000006:3565  idCharUcdLtrH3 -> idCharUcdLtrH4
+  McshLag000006:3593  idCharUcdMrkH3 -> idCharUcdMrkH4
+  McshLag000006:3615  idCharUcdNbrH3 -> idCharUcdNbrH4
+  McshLag000006:3637  idCharUcdPtnH3 -> idCharUcdPtnH4
+  McshLag000006:3667  idCharUcdSblH3 -> idCharUcdSblH4
+  McshLag000006:3691  idCharUcdSprH3 -> idCharUcdSprH4
+  McshLag000006:3713  idCharUcdOtrH3 -> idCharUcdOtrH4
+  McshLag000009:634  idL0017phnmScdnLagH4 -> idL0017phnmScdnLagH5
+  McshLag000009:659  idL0017phnmScdnObrnH4 -> idL0017phnmScdnObrnH5
+  McshLag000018:15683  idLZhonsntcOnwoH3 -> idLZhonsntcOnwoH4
+  McshStn000008:1227  idOgznScdnSrpnH1 -> idOgznScdnSrpnH2
+  McshStn000008:1243  idOgzn008H2 -> idOgzn008H3
+  McshStn000008:1258  idOgznScdnAdmnH1 -> idOgznScdnAdmnH2
+  McshStn000008:1268  idOgzn004H2 -> idOgzn004H3
+  McshStn000008:1285  idOgzn005H2 -> idOgzn005H3
+  McshStn000008:1302  idOgzn011H3 -> idOgzn011H4
+  McshStn000008:1340  idOgzn009H2 -> idOgzn009H3
+  McshStn000008:1378  idOgzn009clngH3 -> idOgzn009clngH4
+  McshStn000008:1429  idOgzn009cpsnH3 -> idOgzn009cpsnH4
+  McshStn000008:1441  idOgzn009irscH3 -> idOgzn009irscH4
+  McshStn000008:1453  idOgzn009gstrH3 -> idOgzn009gstrH4
+  McshStn000008:1527  idOgzn010H2 -> idOgzn010H3
+  McshStn000009:8284  idSocHumnScdnGvcsmH1 -> idSocHumnScdnGvcsmH2
+  McshStn000009:8302  idSocHumn006H2 -> idSocHumn006H3
+  McshStn000009:8307  idSocHumn004H2 -> idSocHumn004H3
+  McshStn000009:8324  idSocHumn004gstrH3 -> idSocHumn004gstrH4
+  McshStn000009:8348  idSocHumn027H3 -> idSocHumn027H4
+  McshStn000009:8367  idSocHumn043H3 -> idSocHumn043H4
+  McshStn000009:8386  idSocHumn005H2 -> idSocHumn005H3
+  McshStn000009:8465  idSocHumn005gstrH3 -> idSocHumn005gstrH4
+  McshStn000009:8489  idSocHumn025H2 -> idSocHumn025H3
+  McshStn000009:8506  idSocHumn025hnndH3 -> idSocHumn025hnndH4
+  McshStn000009:8519  idSocHumn025placH3 -> idSocHumn025placH4
+  McshStn000009:8531  idSocHumn025sfndH3 -> idSocHumn025sfndH4
+  McshStn000009:8544  idSocHumn025stateH3 -> idSocHumn025stateH4
+  McshStn000009:8558  idSocHumn025statedongH4 -> idSocHumn025statedongH5
+  McshStn000009:8573  idSocHumn025gstrH3 -> idSocHumn025gstrH4
+  McshStn000009:8599  idSocHumn035H3 -> idSocHumn035H4
+  McshStn000009:8619  idSocHumn036H3 -> idSocHumn036H4
+  McshStn000009:8649  idSocHumn037H3 -> idSocHumn037H4
+  McshStn000009:8669  idSocHumn028H3 -> idSocHumn028H4
+  McshStn000009:8695  idSocHumn029H3 -> idSocHumn029H4
+  McshStn000009:8713  idSocHumn029gstrH4 -> idSocHumn029gstrH5
+  McshStn000009:8762  idSocHumn030H3 -> idSocHumn030H4
+  McshStn000009:8778  idSocHumn030ntnH4 -> idSocHumn030ntnH5
+  McshStn000009:8808  idSocHumn038H2 -> idSocHumn038H3
+  McshStn000009:8825  idSocHumn038fvcfH3 -> idSocHumn038fvcfH4
+  McshStn000009:8866  idSocHumn026H2 -> idSocHumn026H3
+  McshStn000009:8896  idSocHumn026evogH3 -> idSocHumn026evogH4
+  McshStn000009:8957  idSocHumn047H2 -> idSocHumn047H3
+  McshStn000009:8980  idSocHumn049H2 -> idSocHumn049H3
+  McshStn000009:9011  idSocHumn049gstrH3 -> idSocHumn049gstrH4
+  McshStn000009:9035  idSocHumn050H2 -> idSocHumn050H3
+  McshStn000009:9063  idSocHumn050admnH3 -> idSocHumn050admnH4
+  McshStn000009:9104  idSocHumnScdnBladH1 -> idSocHumnScdnBladH2
+  McshStn000009:9116  idSocHumn040H2 -> idSocHumn040H3
+  McshStn000009:9153  idSocHumnScdnSfrsmH1 -> idSocHumnScdnSfrsmH2
+  McshStn000009:9174  idSocHumn015H2 -> idSocHumn015H3
+  McshStn000009:9224  idSocHumn015evogH3 -> idSocHumn015evogH4
+  McshStn000009:9264  idSocHumn016H2 -> idSocHumn016H3
+  McshStn000009:9281  idSocHumn022H2 -> idSocHumn022H3
+  McshStn000009:9321  idSocHumn023H2 -> idSocHumn023H3
+  McshStn000009:9360  idSocHumn024H2 -> idSocHumn024H3
+  McshStn000009:9434  idSocHumn051H2 -> idSocHumn051H3
+  McshStn000009:9452  idSocHumn051rvlgH3 -> idSocHumn051rvlgH4
+  McshStn000009:9458  idSocHumn054H2 -> idSocHumn054H3
+  McshStn000009:9475  idSocHumn052H2 -> idSocHumn052H3
+  McshStn000009:9500  idSocHumn019H2 -> idSocHumn019H3
+  McshStn000009:9575  idSocHumn019gstrH3 -> idSocHumn019gstrH4
+  McshStn000009:9600  idSocHumn019econH3 -> idSocHumn019econH4
+  McshStn000009:9605  idSocHumn019evalH3 -> idSocHumn019evalH4
+  McshStn000009:9631  idSocHumn019irscH3 -> idSocHumn019irscH4
+  McshStn000009:9643  idSocHumn019001H3 -> idSocHumn019001H4
+  McshStn000009:9683  idSocHumn019002H3 -> idSocHumn019002H4
+  McshStn000009:9738  idSocHumn019003H3 -> idSocHumn019003H4
+  McshStn000009:9752  idSocHumn020H2 -> idSocHumn020H3
+  McshStn000009:9782  idSocHumn021H2 -> idSocHumn021H3
+  McshStn000009:9822  idSocHumn021irscH3 -> idSocHumn021irscH4
+  McshStn000009:9834  idSocHumn021gstrH3 -> idSocHumn021gstrH4
+  McshStn000009:9858  idSocHumn053H2 -> idSocHumn053H3
+  McshStn000009:9883  idSocHumnScdnTechH1 -> idSocHumnScdnTechH2
+  McshStn000009:9908  idSocHumnAutoH2 -> idSocHumnAutoH3
+  McshStn000009:9913  idSocHumn044H2 -> idSocHumn044H3
+  McshStn000009:9958  idSocHumn044evogH3 -> idSocHumn044evogH4
+  McshStn000009:9989  idSocHumn044DgtlH3 -> idSocHumn044DgtlH4
+  McshStn000009:10022  idSocHumn044InfoH3 -> idSocHumn044InfoH4
+  McshStn000009:10047  idSocHumn046H2 -> idSocHumn046H3
+  McshStn000009:10080  idSocHumn046irscH3 -> idSocHumn046irscH4
+  McshStn000009:10094  idSocHumn045H2 -> idSocHumn045H3
+  McshStn000009:10122  idSocHumn031H2 -> idSocHumn031H3
+  McshStn000009:10142  idSocHumn031evogH3 -> idSocHumn031evogH4
+  McshStn000009:10170  idSocHumn032H2 -> idSocHumn032H3
+  McshStn000009:10203  idSocHumn032evogH3 -> idSocHumn032evogH4
+  McshStn000009:10251  idSocHumn033H2 -> idSocHumn033H3
+  McshStn000009:10278  idSocHumn033evogH3 -> idSocHumn033evogH4
+  McshStn000009:10330  idSocHumn034H2 -> idSocHumn034H3
+  McshStn000009:10343  idSocHumn034evogH3 -> idSocHumn034evogH4
+  McshStn000009:10377  idSocHumnScdnTimeH1 -> idSocHumnScdnTimeH2
+  McshStn000009:10410  idSocHumn013H2 -> idSocHumn013H3
+  McshStn000009:10440  idSocHumn014H2 -> idSocHumn014H3
+  McshStn000009:10462  idSocHumnScdnSrtrH1 -> idSocHumnScdnSrtrH2
+  McshStn000009:10474  idSocHumn041H2 -> idSocHumn041H3
+  McshStn000009:10499  idSocHumn042H2 -> idSocHumn042H3
+  McshStn000009:10532  idSocHumn056H2 -> idSocHumn056H3
+  McshStn000009:10566  idSocHumnScdnPlacH1 -> idSocHumnScdnPlacH2
+  McshStn000009:10579  idSocHumn009H2 -> idSocHumn009H3
+  McshStn000009:10621  idSocHumn010H2 -> idSocHumn010H3
+  McshStn000009:10635  idSocHumn011H2 -> idSocHumn011H3
+  McshStn000009:10650  idSocHumnScdnIndpH1 -> idSocHumnScdnIndpH2
+  McshStn000009:10726  idSocHumnScdnCodeH1 -> idSocHumnScdnCodeH2
+  McshStn000009:10738  idSocHumn007H2 -> idSocHumn007H3
+  McshStn000009:11252  idSocHumn008H2 -> idSocHumn008H3
+  McshStn000009:11776  idSocHumn055H2 -> idSocHumn055H3
+  McshStn000009:12291  idSocHumnScdnGenH1 -> idSocHumnScdnGenH2
+  McshStn000009:12303  idSocHumn002H2 -> idSocHumn002H3
+  McshStn000009:12317  idSocHumn012H2 -> idSocHumn012H3
+  McshStn000010:1828  idSfrHmnSdewH1 -> idSfrHmnSdewH2
+  McshStn000010:1841  idSfrHmn056H2 -> idSfrHmn056H3
+  McshStn000010:1866  idSfrHmn056gstrH3 -> idSfrHmn056gstrH4
+  McshStn000010:1899  idSfrHmn062H3 -> idSfrHmn062H4
+  McshStn000010:1936  idSfrHmn057H2 -> idSfrHmn057H3
+  McshStn000010:1961  idSfrHmnSdwnspH1 -> idSfrHmnSdwnspH2
+  McshStn000010:1974  idSfrHmn005H2 -> idSfrHmn005H3
+  McshStn000010:1994  idSfrHmn005ownrH3 -> idSfrHmn005ownrH4
+  McshStn000010:1999  idSfrHmn005orrnH3 -> idSfrHmn005orrnH4
+  McshStn000010:2031  idSfrHmn005orrnrghtH4 -> idSfrHmn005orrnrghtH5
+  McshStn000010:2046  idSfrHmn005orrnevalH4 -> idSfrHmn005orrnevalH5
+  McshStn000010:2060  idSfrHmn005orrngstrH4 -> idSfrHmn005orrngstrH5
+  McshStn000010:2096  idSfrHmn005orrnEcncH4 -> idSfrHmn005orrnEcncH5
+  McshStn000010:2115  idSfrHmn005orrnLeglH4 -> idSfrHmn005orrnLeglH5
+  McshStn000010:2131  idSfrHmn005orrnPrvtH4 -> idSfrHmn005orrnPrvtH5
+  McshStn000010:2144  idSfrHmn005orrnPrvtNH4 -> idSfrHmn005orrnPrvtNH5
+  McshStn000010:2157  idSfrHmn005orrnAdmnH4 -> idSfrHmn005orrnAdmnH5
+  McshStn000010:2173  idSfrHmn005orrnAdmnNH4 -> idSfrHmn005orrnAdmnNH5
+  McshStn000010:2187  idSfrHmn005orrnSoclH4 -> idSfrHmn005orrnSoclH5
+  McshStn000010:2200  idSfrHmn005orrnSoclNH4 -> idSfrHmn005orrnSoclNH5
+  McshStn000010:2214  idSfrHmn005orrnSctlH4 -> idSfrHmn005orrnSctlH5
+  McshStn000010:2227  idSfrHmn005orrnGlblH4 -> idSfrHmn005orrnGlblH5
+  McshStn000010:2242  idSfrHmn005ttlH3 -> idSfrHmn005ttlH4
+  McshStn000010:2253  idSfrHmn005gstrH3 -> idSfrHmn005gstrH4
+  McshStn000010:2288  idSfrHmn007H3 -> idSfrHmn007H4
+  McshStn000010:2293  idSfrHmn008H3 -> idSfrHmn008H4
+  McshStn000010:2312  idSfrHmn066H3 -> idSfrHmn066H4
+  McshStn000010:2325  idSfrHmn068H4 -> idSfrHmn068H5
+  McshStn000010:2353  idSfrHmn065H3 -> idSfrHmn065H4
+  McshStn000010:2372  idSfrHmnSctlH4 -> idSfrHmnSctlH5
+  McshStn000010:2377  idSfrHmnGlblH4 -> idSfrHmnGlblH5
+  McshStn000010:2383  idSfrHmn009H3 -> idSfrHmn009H4
+  McshStn000010:2397  idSfrHmn064H3 -> idSfrHmn064H4
+  McshStn000010:2409  idSfrHmn028H4 -> idSfrHmn028H5
+  McshStn000010:2421  idSfrHmn029H4 -> idSfrHmn029H5
+  McshStn000010:2436  idSfrHmn029gstrH5 -> idSfrHmn029gstrH6
+  McshStn000010:2466  idSfrHmn029IncmH5 -> idSfrHmn029IncmH6
+  McshStn000010:2497  idSfrHmn010H4 -> idSfrHmn010H5
+  McshStn000010:2511  idSfrHmn011H4 -> idSfrHmn011H5
+  McshStn000010:2526  idSfrHmn018H4 -> idSfrHmn018H5
+  McshStn000010:2548  idSfrHmn018onrH5 -> idSfrHmn018onrH6
+  McshStn000010:2562  idSfrHmn018rscFH5 -> idSfrHmn018rscFH6
+  McshStn000010:2575  idSfrHmn018gstrH5 -> idSfrHmn018gstrH6
+  McshStn000010:2606  idSfrHmn012H4 -> idSfrHmn012H5
+  McshStn000010:2624  idSfrHmn013H4 -> idSfrHmn013H5
+  McshStn000010:2645  idSfrHmn067H4 -> idSfrHmn067H5
+  McshStn000010:2661  idSfrHmn006H2 -> idSfrHmn006H3
+  McshStn000010:2680  idSfrHmnSdcstnH1 -> idSfrHmnSdcstnH2
+  McshStn000010:2706  idSfrHmn069H2 -> idSfrHmn069H3
+  McshStn000010:2723  idSfrHmn070H2 -> idSfrHmn070H3
+  McshStn000010:2740  idSfrHmn071H3 -> idSfrHmn071H4
+  McshStn000010:2761  idSfrHmn072H3 -> idSfrHmn072H4
+  McshStn000010:2775  idSfrHmn022H2 -> idSfrHmn022H3
+  McshStn000010:2790  idSfrHmn023H2 -> idSfrHmn023H3
+  McshStn000010:2805  idSfrHmn032H2 -> idSfrHmn032H3
+  McshStn000010:2821  idSfrHmn032gstrH3 -> idSfrHmn032gstrH4
+  McshStn000010:2845  idSfrHmn037H3 -> idSfrHmn037H4
+  McshStn000010:2862  idSfrHmn038H3 -> idSfrHmn038H4
+  McshStn000010:2881  idSfrHmn033H2 -> idSfrHmn033H3
+  McshStn000010:2897  idSfrHmn033gstrH3 -> idSfrHmn033gstrH4
+  McshStn000010:2921  idSfrHmn035H3 -> idSfrHmn035H4
+  McshStn000010:2941  idSfrHmn036H3 -> idSfrHmn036H4
+  McshStn000010:2987  idSfrHmn036rscFH4 -> idSfrHmn036rscFH5
+  McshStn000010:3001  idSfrHmn034H2 -> idSfrHmn034H3
+  McshStn000010:3018  idSfrHmn060H2 -> idSfrHmn060H3
+  McshStn000010:3036  idSfrHmn061H2 -> idSfrHmn061H3
+  McshStn000010:3056  idSfrHmnSdpdcnH1 -> idSfrHmnSdpdcnH2
+  McshStn000010:3073  idSfrHmn054H2 -> idSfrHmn054H3
+  McshStn000010:3096  idSfrHmn055H2 -> idSfrHmn055H3
+  McshStn000010:3129  idSfrHmn040H2 -> idSfrHmn040H3
+  McshStn000010:3145  idSfrHmn040onspH3 -> idSfrHmn040onspH4
+  McshStn000010:3159  idSfrHmn040gstrH3 -> idSfrHmn040gstrH4
+  McshStn000010:3203  idSfrHmn041H2 -> idSfrHmn041H3
+  McshStn000010:3222  idSfrHmnSdevH1 -> idSfrHmnSdevH2
+  McshStn000010:3234  idSfrHmn001H2 -> idSfrHmn001H3
+  McshStn000010:3259  idSfrHmn001exvlH3 -> idSfrHmn001exvlH4
+  McshStn000010:3264  idSfrHmn001prcH3 -> idSfrHmn001prcH4
+  McshStn000010:3280  idSfrHmn001prcBigH4 -> idSfrHmn001prcBigH5
+  McshStn000010:3304  idSfrHmn001prcSmlH4 -> idSfrHmn001prcSmlH5
+  McshStn000010:3325  idSfrHmn002H2 -> idSfrHmn002H3
+  McshStn000010:3344  idSfrHmnSduvH1 -> idSfrHmnSduvH2
+  McshStn000010:3356  idSfrHmn003H2 -> idSfrHmn003H3
+  McshStn000010:3372  idSfrHmn004H2 -> idSfrHmn004H3
+  McshStn000010:3402  idSfrHmnSdTimeH1 -> idSfrHmnSdTimeH2
+  McshStn000011:1346  idWkrScdvElmtH1 -> idWkrScdvElmtH2
+  McshStn000011:1356  idWkr005H2 -> idWkr005H3
+  McshStn000011:1375  idWkr002H2 -> idWkr002H3
+  McshStn000011:1395  idWkr002att001H3 -> idWkr002att001H4
+  McshStn000011:1413  idWkr003H2 -> idWkr003H3
+  McshStn000011:1429  idWkr001H3 -> idWkr001H4
+  McshStn000011:1450  idWkr017H3 -> idWkr017H4
+  McshStn000011:1475  idWkr003att001H4 -> idWkr003att001H5
+  McshStn000011:1489  idWkr017irscH4 -> idWkr017irscH5
+  McshStn000011:1505  idWkr021H2 -> idWkr021H3
+  McshStn000011:1521  idWkr006H2 -> idWkr006H3
+  McshStn000011:1537  idWkr006AggH3 -> idWkr006AggH4
+  McshStn000011:1550  idWkr006AgggstrH4 -> idWkr006AgggstrH5
+  McshStn000011:1574  idWkr006AggpmntH4 -> idWkr006AggpmntH5
+  McshStn000011:1592  idWkr006AggLgtmH4 -> idWkr006AggLgtmH5
+  McshStn000011:1604  idWkr006AggChnaH4 -> idWkr006AggChnaH5
+  McshStn000011:1621  idWkr018H3 -> idWkr018H4
+  McshStn000011:1638  idWkr019H3 -> idWkr019H4
+  McshStn000011:1657  idWkrScdvSkilH1 -> idWkrScdvSkilH2
+  McshStn000011:1667  idWkr014H2 -> idWkr014H3
+  McshStn000011:1682  idWkr015H2 -> idWkr015H3
+  McshStn000011:1698  idWkr026H2 -> idWkr026H3
+  McshStn000011:1728  idWkr027H2 -> idWkr027H3
+  McshStn000012:3142  idEconHmnScdvPlngH1 -> idEconHmnScdvPlngH2
+  McshStn000012:3155  idEconHmn022H2 -> idEconHmn022H3
+  McshStn000012:3180  idEconHmn022evalH3 -> idEconHmn022evalH4
+  McshStn000012:3191  idEconHmn022evalBnftH4 -> idEconHmn022evalBnftH5
+  McshStn000012:3203  idEconHmn022evalBnftNH4 -> idEconHmn022evalBnftNH5
+  McshStn000012:3219  idEconHmn023H2 -> idEconHmn023H3
+  McshStn000012:3244  idEconHmn023gstrH3 -> idEconHmn023gstrH4
+  McshStn000012:3267  idEconHmn023evalH3 -> idEconHmn023evalH4
+  McshStn000012:3278  idEconHmn023evalBnftH4 -> idEconHmn023evalBnftH5
+  McshStn000012:3290  idEconHmn023evalBnftNH4 -> idEconHmn023evalBnftNH5
+  McshStn000012:3303  idEconHmn023LgmlH3 -> idEconHmn023LgmlH4
+  McshStn000012:3319  idEconHmn024H2 -> idEconHmn024H3
+  McshStn000012:3347  idEconHmnScdvTechH1 -> idEconHmnScdvTechH2
+  McshStn000012:3360  idEconHmn026H2 -> idEconHmn026H3
+  McshStn000012:3463  idEconHmn016H2 -> idEconHmn016H3
+  McshStn000012:3479  idEconHmn017H2 -> idEconHmn017H3
+  McshStn000012:3495  idEconHmnSpdvWrkrH1 -> idEconHmnSpdvWrkrH2
+  McshStn000012:3511  idAlgoeconH2 -> idAlgoeconH3
+  McshStn000012:3516  idEconHmn005H2 -> idEconHmn005H3
+  McshStn000012:3533  idEconHmn005wgwrH3 -> idEconHmn005wgwrH4
+  McshStn000012:3538  idEconHmn005eplrH3 -> idEconHmn005eplrH4
+  McshStn000012:3543  idEconHmn005evalH3 -> idEconHmn005evalH4
+  McshStn000012:3614  idEconHmn005rscFH3 -> idEconHmn005rscFH4
+  McshStn000012:3628  idEconHmn011H2 -> idEconHmn011H3
+  McshStn000012:3664  idEconHmn011sfwrH3 -> idEconHmn011sfwrH4
+  McshStn000012:3670  idEconHmn012H2 -> idEconHmn012H3
+  McshStn000012:3703  idEconHmn012svwrH3 -> idEconHmn012svwrH4
+  McshStn000012:3709  idEconHmn025H2 -> idEconHmn025H3
+  McshStn000012:3746  idEconHmnSpdvSctrH1 -> idEconHmnSpdvSctrH2
+  McshStn000012:3759  idEconHmn018H2 -> idEconHmn018H3
+  McshStn000012:3804  idEconHmnSpdnModlH1 -> idEconHmnSpdnModlH2
+  McshStn000012:3814  idEconHmn008H2 -> idEconHmn008H3
+  McshStn000012:3897  idEconHmn021H2 -> idEconHmn021H3
+  McshStn000012:3916  idEconHmn010H2 -> idEconHmn010H3
+  McshStn000012:3984  idEconHmn006H2 -> idEconHmn006H3
+  McshStn000012:4043  idEconHmn019H2 -> idEconHmn019H3
+  McshStn000012:4087  idEconHmn007H2 -> idEconHmn007H3
+  McshStn000012:4145  idEconHmn020H2 -> idEconHmn020H3
+  McshStn000015:1363  idOznPdnScdnOnrH1 -> idOznPdnScdnOnrH2
+  McshStn000015:1376  idOznPdnCoopH2 -> idOznPdnCoopH3
+  McshStn000015:1381  idOznPdnEeodH2 -> idOznPdnEeodH3
+  McshStn000015:1905  idOznPdn004Spdn3smlH2 -> idOznPdn004Spdn3smlH3
+  McshStn000015:1925  idOznPdn004SpdnOnspH2 -> idOznPdn004SpdnOnspH3
+  McshStnlaw000002:1281  idLawSdsorcH1 -> idLawSdsorcH2
+  McshStnlaw000002:1304  idLawSdsoctH1 -> idLawSdsoctH2
+  McshStnlaw000002:1318  idLawSdlangH1 -> idLawSdlangH2
+  McshStnlaw000002:1331  idLawSdtopcH1 -> idLawSdtopcH2
+  McshStnlaw000002:1443  idLaw029H2 -> idLaw029H3
+  McshStnlaw000002:1487  idLaw022H2 -> idLaw022H3
+  McshStnlaw000002:1492  idLaw030H2 -> idLaw030H3
+  McshStnlaw000002:1534  idLaw031H2 -> idLaw031H3
+  McshStnlaw000002:1581  idLaw032H2 -> idLaw032H3
+  McshStnlaw000002:1619  idLaw033H2 -> idLaw033H3
+  McshStnlaw000002:1664  idLaw044H2 -> idLaw044H3
+  McshStnlaw000002:1707  idLaw034H2 -> idLaw034H3
+  McshStnlaw000002:1712  idLaw023H2 -> idLaw023H3
+  McshStnlaw000002:1729  idLaw023gstrH3 -> idLaw023gstrH4
+  McshStnlaw000002:1768  idLaw041H2 -> idLaw041H3
+  McshStnlaw000002:1773  idLaw024H2 -> idLaw024H3
+  McshStnlaw000002:1790  idLaw024gstrH3 -> idLaw024gstrH4
+  McshStnlaw000002:1831  idLaw035H2 -> idLaw035H3
+  McshStnlaw000002:1836  idLaw036H2 -> idLaw036H3
+  McshStnlaw000002:1841  idLaw037H2 -> idLaw037H3
+  McshStnlaw000002:1846  idLaw040H2 -> idLaw040H3
+  McshStnlaw000002:1851  idLaw047H2 -> idLaw047H3
+  McshStnlaw000002:1866  idLaw027H2 -> idLaw027H3
+  McshStnlaw000002:1905  idLaw028H2 -> idLaw028H3
+  McshStnlaw000002:1945  idLaw039H2 -> idLaw039H3
+  McshStnlaw000002:1950  idLaw026H2 -> idLaw026H3
+  McshStnlaw000002:1990  idLaw026TjnH3 -> idLaw026TjnH4
+  McshStnlaw000002:2020  idLaw026irscH3 -> idLaw026irscH4
+  McshStnlaw000002:2032  idLaw026gstrH3 -> idLaw026gstrH4
+  McshStnlaw000002:2088  idLaw026ChnaH3 -> idLaw026ChnaH4
+  McshStnlaw000002:2102  idLaw026ChnagstrH4 -> idLaw026ChnagstrH5
+  McshStnlaw000002:2136  idLaw038H2 -> idLaw038H3
+  McshStnlaw000002:2142  idLawSdpcdrH1 -> idLawSdpcdrH2
+  McshStnlaw000002:2181  idLawPcdlH2 -> idLawPcdlH3
+  McshStnlaw000002:2196  idLawSbtvH2 -> idLawSbtvH3
+  McshStnlaw000003:1124  idLawEusSdtopcH1 -> idLawEusSdtopcH2
+  McshStnlaw000003:1135  idLawEus036H2 -> idLawEus036H3
+  McshStnlaw000003:2592  idLawEus007H2 -> idLawEus007H3
+  McshStnlaw000003:2744  idLawEus005001H2 -> idLawEus005001H3
+  McshStnlaw000004:658  idLawInlSdtopcH1 -> idLawInlSdtopcH2
+  McshStnlaw000004:683  idLawInl023H2 -> idLawInl023H3
+  McshStnlaw000004:711  idLawInl023crimH3 -> idLawInl023crimH4
+  McshStnlaw000004:729  idLawInl023irscH3 -> idLawInl023irscH4
+  McshStnlaw000004:764  idLawInl022H2 -> idLawInl022H3
+  McshStnlaw000004:798  idLawInl021H2 -> idLawInl021H3
+  McshStnlaw000004:841  idLawInl018H2 -> idLawInl018H3
+  McshStnlaw000004:887  idLawInl014H2 -> idLawInl014H3
+  McshStnlaw000004:927  idLawInl016H2 -> idLawInl016H3
+  McshStnlaw000004:965  idLawInl016isrcH3 -> idLawInl016isrcH4
+  McshStnlaw000004:992  idLawInl015H2 -> idLawInl015H3
+  McshStnlaw000004:1039  idLawInl013H2 -> idLawInl013H3
+  McshStnlaw000004:1074  idLawInl009H2 -> idLawInl009H3
+  McshTchInf000003:865  idCmrScdnDcdH1 -> idCmrScdnDcdH2
+  McshTchInf000003:880  idCmrScdnHdwrH1 -> idCmrScdnHdwrH2
+  McshTchInf000003:897  idCmrMchlH2 -> idCmrMchlH3
+  McshTchInf000003:911  idCmrErmlH2 -> idCmrErmlH3
+  McshTchInf000003:928  idCmrElrcH2 -> idCmrElrcH3
+  McshTchInf000003:941  idCmrVmtbH2 -> idCmrVmtbH3
+  McshTchInf000003:957  idCmrVmtbirscH3 -> idCmrVmtbirscH4
+  McshTchInf000003:970  idCmrVmtbevogH3 -> idCmrVmtbevogH4
+  McshTchInf000003:994  idCmrTrtrH2 -> idCmrTrtrH3
+  McshTchInf000003:1013  idCmrChipH2 -> idCmrChipH3
+  McshTchInf000003:1027  idCmrChipgstrH3 -> idCmrChipgstrH4
+  McshTchInf000003:1053  idCmrChipMrprH3 -> idCmrChipMrprH4
+  McshTchInf000003:1074  idCmrSocH2 -> idCmrSocH3
+  McshTchInf000003:1090  idCmrScdnPgmH1 -> idCmrScdnPgmH2
+  McshTchInf000003:1103  idCmrPgmlH2 -> idCmrPgmlH3
+  McshTchInf000003:1117  idCmrPgmlgstrH3 -> idCmrPgmlgstrH4
+  McshTchInf000003:1141  idCmrPgmlStrdH3 -> idCmrPgmlStrdH4
+  McshTchInf000003:1155  idCmrPgmlStrdNH3 -> idCmrPgmlStrdNH4
+  McshTchInf000003:1171  idCmrPgmlNH2 -> idCmrPgmlNH3
+  McshTchInf000003:1185  idCmrScdnOsH1 -> idCmrScdnOsH2
+  McshTchInf000003:1198  idCmrOsH2 -> idCmrOsH3
+  McshTchInf000003:1215  idCmrOsNH2 -> idCmrOsNH3
+  McshTchInf000003:1231  idCmrScdnDlifH1 -> idCmrScdnDlifH2
+  McshTchInf000003:1243  idCmrDgtlH2 -> idCmrDgtlH3
+  McshTchInf000003:1256  idCmrDgtlNH2 -> idCmrDgtlNH3
+  McshTchInf000003:1270  idCmrScdnmnfgH1 -> idCmrScdnmnfgH2
+  McshTchInf000003:1283  idCmrGlpsH2 -> idCmrGlpsH3
+  McshTchInf000003:1300  idCmrGlpsNoH2 -> idCmrGlpsNoH3
+  McshTchInf000003:1314  idCmrScdnRltH1 -> idCmrScdnRltH2
+  McshTchInf000003:1329  idCmrRealH2 -> idCmrRealH3
+  McshTchInf000003:1342  idCmrRealgstrH3 -> idCmrRealgstrH4
+  McshTchInf000003:1368  idCmrRealNH2 -> idCmrRealNH3
+  McshTchInf000003:1373  idCmrPhclH2 -> idCmrPhclH3
+  McshTchInf000003:1388  idCmrVrtlH2 -> idCmrVrtlH3
+  McshTchInf000003:1403  idCmrVrtlgstrH3 -> idCmrVrtlgstrH4
+  McshTchInf000003:1429  idCmrScdnSizeH1 -> idCmrScdnSizeH2
+  McshTchInf000003:1443  idCmrLrgH2 -> idCmrLrgH3
+  McshTchInf000003:1457  idCmrDktpH2 -> idCmrDktpH3
+  McshTchInf000003:1471  idCmrSmlH2 -> idCmrSmlH3
+  McshTchInf000010:445  idLJsgnsutSpcDltH2 -> idLJsgnsutSpcDltH3
+  McshTchInf000010:458  idLJsgnsutSpcObtH2 -> idLJsgnsutSpcObtH3
+  McshTchInf000010:471  idLJsgnsutSpcCsmH2 -> idLJsgnsutSpcCsmH3
+  McshTchInf000010:483  idLJsgnsutCsmH3 -> idLJsgnsutCsmH4
+  McshTchInf000010:498  idLJsgnsutCsmOwnH4 -> idLJsgnsutCsmOwnH5
+  McshTchInf000010:516  idLJsgnsutCsmOwnNoH4 -> idLJsgnsutCsmOwnNoH5
+  McshTchInf000010:535  idLJsgnsutCsmNH3 -> idLJsgnsutCsmNH4
+  McshTchInf000010:552  idLJsgnsutInlH3 -> idLJsgnsutInlH4
+  McshTchInf000010:566  idLJsgnsutInlNoH3 -> idLJsgnsutInlNoH4
+  McshTchInf000010:582  idLJsgnsutSnamH2 -> idLJsgnsutSnamH3
+  McshTchInf000012:1468  idLJsndmcOnpsuH3 -> idLJsndmcOnpsuH4
+  McshTchInf000015:2506  idAlgntevuSpcCnsaH2 -> idAlgntevuSpcCnsaH3
+  McshTchInf000015:2519  idAlgntevuSpcClmH2 -> idAlgntevuSpcClmH3
+  McshTchInf000015:2534  idAlgntevuSpcMoeH2 -> idAlgntevuSpcMoeH3
+  McshTchInf000015:2547  idAlgntevuSpcCeoH2 -> idAlgntevuSpcCeoH3
+  McshTchInf000015:2557  idAlgntevuTrdH3 -> idAlgntevuTrdH4
+  McshTchInf000015:2571  idAlgntevuTrdNH3 -> idAlgntevuTrdNH4
+  McshTchInf000015:2584  idAlgntevuSpcCmcH2 -> idAlgntevuSpcCmcH3
+  McshTchInf000015:4272  idAlgntevuMoeSpcAdpnH3 -> idAlgntevuMoeSpcAdpnH4
+  McshTchInf000015:4286  idAlgntevuMoeSpcDmncH3 -> idAlgntevuMoeSpcDmncH4
+  McshTchInf000015:5572  idAlgntgovDvsnOnchnH2 -> idAlgntgovDvsnOnchnH3
+  McshTchInf000015:7746  idAlgntxSdVlmH3 -> idAlgntxSdVlmH4
+  McshTchInf000015:10701  idAlgntsvcOninfH2 -> idAlgntsvcOninfH3
+  McshTchInf000015:10725  idAlgntsvcOnsctrH2 -> idAlgntsvcOnsctrH3
+  McshTchInf000016:2428  idDbcevuOncsaH2 -> idDbcevuOncsaH3
+  McshTchInf000016:2441  idDbcevuOngovH2 -> idDbcevuOngovH3
+  McshTchInf000016:2454  idDbcevuOntogH2 -> idDbcevuOntogH3
+  McshTchInf000016:2505  idDbcevuOnprlH2 -> idDbcevuOnprlH3
+  McshTchInf000016:2518  idDbcevubcbdH3 -> idDbcevubcbdH4
+  McshTchInf000016:2537  idDbcevucnbdH3 -> idDbcevucnbdH4
+  McshTchInf000016:2569  idAeonevuCH3 -> idAeonevuCH4
+  McshTchInf000016:2610  idBynevuCH3 -> idBynevuCH4
+  McshTchInf000016:2654  idByncentexrH4 -> idByncentexrH5
+  McshTchInf000016:2663  idDncevuCH3 -> idDncevuCH4
+  McshTchInf000016:2681  idDshevuCH3 -> idDshevuCH4
+  McshTchInf000016:2721  idXdnevuCH3 -> idXdnevuCH4
+  McshTchInf000016:2757  idFcnevuCH3 -> idFcnevuCH4
+  McshTchInf000016:2798  idXmrevuCH3 -> idXmrevuCH4
+  McshTchInf000016:2837  idXPbevuCH3 -> idXPbevuCH4
+  McshTchInf000016:2852  idQcnevuCH3 -> idQcnevuCH4
+  McshTchInf000016:2887  idBevuCknOnbtcH2 -> idBevuCknOnbtcH3
+  McshTchInf000016:2899  idDbcevuAltH3 -> idDbcevuAltH4
+  McshTchInf000016:2924  idDbcevuSpdvActvH2 -> idDbcevuSpdvActvH3
+  McshTchInf000016:2934  idDbcevuActvH3 -> idDbcevuActvH4
+  McshTchInf000016:2945  idDbcevuActvNH3 -> idDbcevuActvNH4
+  McshTchInf000016:2962  idDbcevuMngH2 -> idDbcevuMngH3
+  McshTchInf000016:2972  idDbcevuMnblH3 -> idDbcevuMnblH4
+  McshTchInf000016:2982  idDbcevuMnblgstrH4 -> idDbcevuMnblgstrH5
+  McshTchInf000016:3027  idDbcevuMnblNH3 -> idDbcevuMnblNH4
+  McshTchInf000016:3037  idDbcevuMnblNgstrH4 -> idDbcevuMnblNgstrH5
+  McshTchInf000016:3084  idDbcevuStpmnH3 -> idDbcevuStpmnH4
+  McshTchInf000016:3094  idDbcevuStpmngstrH4 -> idDbcevuStpmngstrH5
+  McshTchInf000016:5779  idDbcDvnsvcH1 -> idDbcDvnsvcH2
+  McshTchInf000016:5792  idBpmnetH2 -> idBpmnetH3
+  McshTchInf000016:5814  idBpmnetgstrH3 -> idBpmnetgstrH4
+  McshTchInf000016:5846  idDbcEvuH2 -> idDbcEvuH3
+  McshTchInf000016:5885  idDbcEvugstrH3 -> idDbcEvugstrH4
+  McshTchInf000016:5908  idDbcMoeH3 -> idDbcMoeH4
+  McshTchInf000016:5941  idDbcOntogH1 -> idDbcOntogH2
+  McshTchInf000018:11291  idEthctpOncodH2 -> idEthctpOncodH3
+  McshTchInf000018:11305  idEthctpOnsvcH2 -> idEthctpOnsvcH3
+  McshTchInf000018:11316  idEthctpOn5tmH2 -> idEthctpOn5tmH3
+
+=== LINKS-TO-HEADING-IDS (1)
+  McshHlth000013  25
+
+=== SKIPPED (3)
+  McshLag000007  unbalanced sections: 1 not closed
+  McshTchInf000006  unbalanced sections: extra </section> at line 1097
+  McshTchInf000024  unbalanced sections: extra </section> at line 2137
+
+--- second pass {2026-10-20}, after fixing unbalanced sections in McshLag000007 and McshTchInf000006 ---
+specific-divisions moved into their GS-TREE — 2026-10-20   DRY=false
+
+moved: 6 | heading ids renamed: 6 | links to them updated: 0 | files written: 2
+
+=== MOVED (6)
+  McshLag000007:18720  idLHmnmnameScdnMpg  h3->h4 "name.spec-div.denoting-relation"  (22 lines, 0 sub-sections)  -> end of idLHmnmnamegstr h3
+  McshLag000007:18743  idLHmnmnameScdnUnt  h3->h4 "name.spec-div.unit"  (12 lines, 0 sub-sections)  -> end of idLHmnmnamegstr h3
+  McshLag000007:18756  idLHmnmnameScdnIeus  h3->h4 "name.spec-div.internal-external-use"  (27 lines, 0 sub-sections)  -> end of idLHmnmnamegstr h3
+  McshTchInf000006:1499  idLCpgmScdnmcn  h1->h2 "Pgmg_lago.spec-div.on-machine"  (18 lines, 0 sub-sections)  -> end of idLCpgmgstr h1
+  McshTchInf000006:1518  idLCpgmScdntocn  h1->h2 "Pgmg_lago.spec-div.on-time-of-creation"  (94 lines, 0 sub-sections)  -> end of idLCpgmgstr h1
+  McshTchInf000006:1613  idLCpgmScdndmn  h1->h2 "Pgmg_lago.spec-div.on-domain"  (13 lines, 0 sub-sections)  -> end of idLCpgmgstr h1
+
+=== HEADING-ID-RENAMED (6)
+  McshLag000007:18721  idLHmnmnameScdnMpgH3 -> idLHmnmnameScdnMpgH4
+  McshLag000007:18744  idLHmnmnameScdnUntH3 -> idLHmnmnameScdnUntH4
+  McshLag000007:18757  idLHmnmnameScdnIeusH3 -> idLHmnmnameScdnIeusH4
+  McshTchInf000006:1500  idLCpgmScdnmcnH1 -> idLCpgmScdnmcnH2
+  McshTchInf000006:1519  idLCpgmScdntocnH1 -> idLCpgmScdntocnH2
+  McshTchInf000006:1614  idLCpgmScdndmnH1 -> idLCpgmScdndmnH2
+
+=== LINKS-TO-HEADING-IDS (0)
+  (none)
+
+=== SKIPPED (1)
+  McshTchInf000024  unbalanced sections: extra </section> at line 2137

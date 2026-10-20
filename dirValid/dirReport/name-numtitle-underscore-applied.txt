@@ -1,0 +1,493 @@
+=== TITLE (253) — numbered title: dash → underscore (number separator too); rebuilt from git diff
+  Mcsh000000:132  04_sensorial_concept_Mcs
+  Mcsh000000:152  06_concept_quantity
+  Mcsh000000:180  07_name_quantity
+  Mcsh000000:210  08_management_tool
+  Mcsh000000:232  09_McsHitp_lag
+  McshCor000008:314  03_part__relation
+  McshCor000011:206  02_node_relation
+  McshCor000011:1939  02_node_relation
+  McshCor000012:76  02_mapping_relation
+  McshCor000012:81  03_mapping_method
+  McshCor000012:86  04_mapping_doing
+  McshCor000012:120  07_node_relation
+  McshCor000012:135  08_mapping_unit
+  McshCor000013:57  02_brain_entity
+  McshCor000013:1172  02_brain_entity
+  McshCor000014:72  03_communicated_entity
+  McshCor000018:463  02_sensory_system
+  McshEdu000002:141  01_area_of_study
+  McshEdu000006:58  01_area_of_study
+  McshHlth000002:296  01_front_region
+  McshHlth000002:321  02_back_region
+  McshHlth000002:347  03_Adam's_apple
+  McshHlth000002:4686  10_material_sys
+  McshHlth000002:4958  03_dietary_recommendation
+  McshHlth000002:5160  04_food_source
+  McshHlth000002:5832  03_dietary_recommendation
+  McshHlth000002:5847  04_food_source
+  McshHlth000003:294  02_longitudinal_fissure
+  McshHlth000003:312  03_corpus_callosum
+  McshHlth000003:1498  04_medulla_oblongata
+  McshHlth000003:3002  04_large_scale_net
+  McshHlth000003:3051  06_storage_capacity
+  McshHlth000004:554  08_genetic_material
+  McshHlth000005:3143  06_muscle_attached
+  McshHlth000011:175  03_diagnosis_doing
+  McshHlth000013:1257  01_01_ingredient
+  McshHlth000013:1278  01_02_method
+  McshHlth000013:1297  01_03_time
+  McshHlth000013:1315  01_04_human_served
+  McshHlth000013:1333  01_05_skill
+  McshHlth000013:6935  09_fruit_plant
+  McshHlth000014:58  01_brand_name
+  McshHlth000014:113  04_side_effect
+  McshHlth000014:398  08_root_of_administration
+  McshHlth000014:441  10_legal_status
+  McshHlth000016:89  03_side_effect
+  McshHlth000016:166  07_therapy_receiver
+  McshHlth000016:187  08_drop_out_rate
+  McshHlth000019:97  02_central_nervous_system
+  McshHlth000019:1110  03_peripheral_nervous_system
+  McshHlth000019:1360  04_sensory_sys
+  McshHlth000019:2954  03_sensory_cortex
+  McshHlth000019:3561  05_neural_circuit
+  McshHlth000019:3664  08_organSpinal_cord
+  McshHmn000002:735  03_managing_system
+  McshHmn000002:1670  10_physical_appearance
+  McshLag000003:1047  04_management_tool
+  McshLag000005:63  02_input__info_view
+  McshLag000005:80  03_output__logo_view
+  McshLag000007:851  01_input1_(mind_view)
+  McshLag000007:922  02_input2_(senso_mind__view)
+  McshLag000007:988  03_input3_(semu_view)
+  McshLag000007:16008  04_output_(logo_view)
+  McshLag000007:17380  06_name_entirety
+  McshLag000007:30055  06_mapping_relations
+  McshLag000013:97  04_time_of_publication
+  McshLag000013:110  05_place_of_publication
+  McshLag000013:145  07_citation_format
+  McshLag000014:89  10_citation_format
+  McshLag000018:195  01_input1_(mind_view)
+  McshLag000018:200  02_input2_(senso_mind_view)
+  McshLag000018:205  03_input3_(semu_view)
+  McshLag000019:61  10_citation_format
+  McshLag000020:1498  03_part_of_speech
+  McshLag000020:1540  04_base_form
+  McshLag000020:1557  05_inflection_type
+  McshLag000020:1596  07_name_entirety
+  McshLag000020:1613  08_other_form
+  McshLag000020:2198  8_memBer_quantity
+  McshLag000030:51  01_input1_(mind_view)
+  McshLag000030:56  02_input2_(senso_mind_view)
+  McshLag000030:61  03_input3_(semu_view)
+  McshLag000037:2417  01_input1_(mind_view)
+  McshLag000037:2434  02_input2_(senso_mind_view)
+  McshLag000037:2451  03_input3_(semu_view)
+  McshLag000037:2468  04_output_(logo_view)
+  McshLag000037:4451  01_input1_(mind_view)
+  McshLag000037:4468  02_input2_(senso_mind_view)
+  McshLag000037:4485  03_input3_(semu_view)
+  McshLag000037:4502  04_output_(logo_view)
+  McshNtr000002:128  02_physical_property
+  McshNtr000002:233  03_chemical_property
+  McshNtr000003:50  01_subatomic_particle
+  McshNtr000004:64  02_intramolecular_bond
+  McshNtr000005:72  03_intermolecular_force
+  McshNtr000005:77  04_physical_property
+  McshNtr000005:200  05_chemical_property
+  McshNtr000005:1313  03_intermolecular_bond
+  McshNtr000005:1328  06_chemical_reaction
+  McshNtr000006:39  03_structural_formula
+  McshNtr000006:57  04_chemical_formula
+  McshNtr000007:151  03_mass_number_(A)
+  McshNtr000007:171  04_atomic_number_(Z)
+  McshNtr000007:193  05_atomic_weight
+  McshNtr000007:213  06_chemical_property
+  McshNtr000007:247  09_state_of_matter
+  McshOgm000002:59  02_managing_system
+  McshOgm000002:69  04_material_system
+  McshOgm000003:128  02_managing_sys
+  McshOgm000003:138  04_material_node
+  McshOgm000003:1351  02_governance_system
+  McshOgm000005:77  03_intermolecular_bond
+  McshOgm000005:90  04_physical_property
+  McshOgm000005:103  05_chemical_property
+  McshOgm000006:45  01_amino_acid
+  McshOgm000006:583  03_peptide_bond
+  McshOgm000006:601  05_pro_protein
+  McshOgm000007:143  05_genetic_material
+  McshOgm000008:50  02_governance_system
+  McshOgm000008:75  04_material_system
+  McshOgm000009:94  02_governance_system
+  McshOgm000009:122  04_organ_sys
+  McshOgm000009:175  08_material_system
+  McshOgm000009:218  10_nervous_sys
+  McshOgm000010:55  02_governance_system
+  McshOgm000010:770  02_reproductive_part
+  McshStn000002:72  02_node_of_organisms
+  McshStn000002:164  03_node_of_satisfiers
+  McshStn000002:237  04_admin_system
+  McshStn000002:508  02_node_of_humans
+  McshStn000002:523  03_node_of_satisfiers
+  McshStn000002:538  04_node_of_governance
+  McshStn000005:57  02_node_of_organisms
+  McshStn000005:79  03_node_of_satisfiers
+  McshStn000005:101  04_admin_system
+  McshStn000006:76  04_governance_system
+  McshStn000006:94  05_financial_system
+  McshStn000007:71  02_node_of_organisms
+  McshStn000007:126  03_node_of_satisfiers
+  McshStn000007:146  04_governance_system
+  McshStn000008:175  02_stakeholder_node
+  McshStn000008:272  03_satisfier_node
+  McshStn000008:828  04_admin_sys
+  McshStn000009:171  02_human_view
+  McshStn000009:3346  03_economic_view
+  McshStn000009:3361  04_admin_system
+  McshStn000010:323  04_use_value
+  McshStn000010:352  05_exchange_value
+  McshStn000012:130  04_producing_sys
+  McshStn000012:659  05_consuming_sys
+  McshStn000012:945  06_financial_sys
+  McshStn000012:1202  07_transacting_sys
+  McshStn000012:1227  08_accounting_sys
+  McshStn000012:1611  09_admin_sys
+  McshStn000013:85  04_governance_node
+  McshStn000014:145  02_sys_human
+  McshStn000014:224  03_sys_satisfier
+  McshStn000014:242  04_admin_sys
+  McshStn000014:353  05_consuming_node
+  McshStn000014:384  06_producing_node
+  McshStn000015:240  03_humans_system
+  McshStn000015:458  04_economic_system
+  McshStn000015:615  05_admin_system
+  McshStn000018:62  02_node_of_humans
+  McshStn000018:546  03_node_of_satisfiers
+  McshStn000018:641  04_node_of_governance
+  McshStn000018:2671  2030_Agenda_for_Sustainable_Development
+  McshStn000018:3764  2015_Millennium_Development_Goals
+  McshStn000020:63  02_humans_system
+  McshStn000020:809  03_economic_system
+  McshStn000020:1664  04_admin_system
+  McshStn000020:1900  01_Foreign_Affairs_council
+  McshStn000020:1913  02_General_Affairs_council
+  McshStn000020:1926  03_Economic_and_Financial_Affairs
+  McshStn000020:1939  04_Justice_and_Home_Affairs
+  McshStn000020:1952  05_Employment_Social_Policy_Health_and_Consumer_Affairs
+  McshStn000020:1978  07_Transport_Telecommunications_and_Energy
+  McshStn000020:1991  08_Agriculture_and_Fisheries
+  McshStn000020:2017  10_Education_Youth_Culture_and_Sport
+  McshStn000020:4754  01_multiannual_budget
+  McshStn000020:4906  02_annual_budget
+  McshStn000021:83  02_node_of_humans
+  McshStn000021:166  03_node_of_satisfiers
+  McshStn000021:171  04_node_governance
+  McshStn000029:734  01_medium_of_exchange
+  McshStn000029:749  02_store_of_value
+  McshStn000029:765  03_unit_of_account
+  McshStn000031:3486  996_work_system
+  McshStn000031:5877  5_years_plan
+  McshStn000034:261  01_input1_(mind_view)
+  McshStn000034:278  02_input2_(senso_mind_view)
+  McshStn000034:295  03_input3_(semu_view)
+  McshStn000034:312  04_output_(logo_view)
+  McshStn000035:225  01_input1_(mind_view)
+  McshStn000035:242  02_input2_(senso_mind_view)
+  McshStn000035:259  03_input3_(semu_view)
+  McshStn000035:276  04_output_(logo_view)
+  McshStn000037:221  01_input1_(mind_view)
+  McshStn000037:238  02_input2_(senso_mind_view)
+  McshStn000037:255  03_input3_(semu_view)
+  McshStn000037:272  04_output_(logo_view)
+  McshStn000038:230  01_input1_(mind_view)
+  McshStn000038:247  02_input2_(senso_mind_view)
+  McshStn000038:264  03_input3_(semu_view)
+  McshStn000038:281  04_output_(logo_view)
+  McshStn000039:255  01_input1_(mind_view)
+  McshStn000039:272  02_input2_(senso_mind_view)
+  McshStn000039:289  03_input3_(semu_view)
+  McshStn000039:306  04_output_(logo_view)
+  McshStn000040:302  01_input1_(mind_view)
+  McshStn000040:319  02_input2_(senso_mind_view)
+  McshStn000040:336  03_input3_(semu_view)
+  McshStn000040:353  04_output_(logo_view)
+  McshStn000041:316  01_input1_(mind_view)
+  McshStn000041:333  02_input2_(senso_mind_view)
+  McshStn000041:350  03_input3_(semu_view)
+  McshStn000041:367  04_output_(logo_view)
+  McshStn000043:207  01_input1_(mind_view)
+  McshStn000043:224  02_input2_(senso_mind_view)
+  McshStn000043:241  03_input3_(semu_view)
+  McshStn000043:258  04_output_(logo_view)
+  McshStn000044:245  01_input1_(mind_view)
+  McshStn000044:262  02_input2_(senso_mind_view)
+  McshStn000044:279  03_input3_(semu_view)
+  McshStn000044:296  04_output_(logo_view)
+  McshStn000048:294  01_input1_(mind_view)
+  McshStn000048:311  02_input2_(senso_mind_view)
+  McshStn000048:328  03_input3_(semu_view)
+  McshStn000048:345  04_output_(logo_view)
+  McshStn000050:283  01_input1_(mind_view)
+  McshStn000050:300  02_input2_(senso_mind_view)
+  McshStn000050:317  03_input3_(semu_view)
+  McshStn000050:334  04_output_(logo_view)
+  McshStnlaw000002:139  03_time_of_validation
+  McshStnlaw000003:240  05_time_in_force
+  McshStnlaw000003:733  01_sector_(1_digit|letter)
+  McshStnlaw000003:762  02_year_(4_digits)
+  McshStnlaw000003:779  03_doctype_(1|2_letters)
+  McshStnlaw000003:812  04_docnbr_(4_digits)
+  McshTchInf000003:507  03_health_issue
+  McshTchInf000006:203  03_unit_node
+  McshTchInf000006:224  04_word_node
+  McshTchInf000006:299  05_semantic_unit_node
+  McshTchInf000006:464  06_phrase_node
+  McshTchInf000006:480  07_sentence_node
+  McshTchInf000006:497  08_section_node
+  McshTchInf000006:567  09_root_node
+  McshTchInf000011:144  01_browser_compatibility
+  McshTchInf000015:4993  06_governance_system
+  McshTchInf000015:5856  06_programing_language
+  McshTchInf000015:5870  07_doc_language
+  McshTchInf000015:6322  01_Dchain_net
+  McshTchInf000015:6487  07_MISC_ATTRIBUTE
+
+=== NAME-ADDED (237) — Y'NN_att_name added beside the dash form (old kept); rebuilt from git diff
+  Mcsh000000:159  <br>* McshEngl.Mws'06_concept_quantity,
+  Mcsh000000:187  <br>* McshEngl.Mws'07_name_quantity,
+  Mcsh000000:221  <br>* McshEngl.Mws'08_management_tool,
+  McshCor000008:330  <br>* McshEngl.whole'03_part__relation!⇒RltnWholePartU,
+  McshCor000011:215  <br>* McshEngl.system'02_node_relation!⇒system'edge,
+  McshCor000011:1947  <br>* McshEngl.systTree'02_node_relation,
+  McshCor000012:128  <br>* McshEngl.model'07_node_relation,
+  McshCor000012:143  <br>* McshEngl.model'08_mapping_unit,
+  McshCor000013:66  <br>* McshEngl.FctgBrainingBio'02_brain_entity,
+  McshCor000013:1181  <br>* McshEngl.FctgEmotingBio'02_brain_entity,
+  McshCor000014:81  <br>* McshEngl.SystNet'03_communicated_entity,
+  McshEdu000002:157  <br>* McshEngl.science'01_area_of_study,
+  McshEdu000006:69  <br>* McshEngl.sciSophy'01_area_of_study,
+  McshHlth000002:312  <br>* McshEngl.bodyHumn'neck'01_front_region!⇒Hmbdthroat,
+  McshHlth000002:314  <br>* McshEngl.Hmbdneck'01_front_region!⇒Hmbdthroat,
+  McshHlth000002:337  <br>* McshEngl.bodyHumn'neck'02_back_region!⇒Hmbdnape,
+  McshHlth000002:339  <br>* McshEngl.Hmbdneck'02_back_region!⇒Hmbdnape,
+  McshHlth000002:4694  <br>* McshEngl.bodyHumn'10_material_sys,
+  McshHlth000002:4967  <br>* McshEngl.nutrient'03_dietary_recommendation!⇒nutrient'rcmdtn,
+  McshHlth000002:5168  <br>* McshEngl.nutrient'04_food_source,
+  McshHlth000002:5842  <br>* McshEngl.vitamin'03_dietary_recommendation,
+  McshHlth000002:5855  <br>* McshEngl.vitamin'04_food_source,
+  McshHlth000003:303  <br>* McshEngl.cerebrum'02_longitudinal_fissure,
+  McshHlth000003:322  <br>* McshEngl.cerebrum'03_corpus_callosum,
+  McshHlth000003:1508  <br>* McshEngl.brainstem'04_medulla_oblongata!⇒medulla_oblongata,
+  McshHlth000003:3013  <br>* McshEngl.organBrain'04_large_scale_net!⇒netBrain,
+  McshHlth000003:3063  <br>* McshEngl.organBrain'06_storage_capacity,
+  McshHlth000004:564  <br>* McshEngl.cell'08_genetic_material,
+  McshHlth000005:3151  <br>* McshEngl.organBone'06_muscle_attached,
+  McshHlth000011:194  <br>* McshEngl.disease'03_diagnosis_doing!⇒diagnosis,
+  McshHlth000013:1270  <br>* McshEngl.recipe'01_01_ingredient,
+  McshHlth000013:1290  <br>* McshEngl.recipe'01_02_method,
+  McshHlth000013:1310  <br>* McshEngl.recipe'01_03_time,
+  McshHlth000013:1327  <br>* McshEngl.recipe'01_04_human-served,
+  McshHlth000013:1328  <br>* McshEngl.recipe'01_04_human_served,
+  McshHlth000013:1345  <br>* McshEngl.recipe'01_05_skill,
+  McshHlth000014:67  <br>* McshEngl.medication'01_brand_name,
+  McshHlth000014:122  <br>* McshEngl.medication'04_side_effect!⇒medication_side_effect,
+  McshHlth000014:413  <br>* McshEngl.medication'08_root_of_administration!⇒medication'administration,
+  McshHlth000014:451  <br>* McshEngl.medication'10_legal_status,
+  McshHlth000016:101  <br>* McshEngl.therapy'03_side_effect!⇒therapy'side_effect,
+  McshHlth000016:176  <br>* McshEngl.therapy'07_therapy_receiver!⇒therapy_receiver,
+  McshHlth000016:194  <br>* McshEngl.therapy'08_drop_out_rate,
+  McshHlth000019:124  <br>* McshEngl.SystNervous'02_central_nervous_system!⇒SystCentralNervous,
+  McshHlth000019:1130  <br>* McshEngl.SystNervous'03_peripheral_nervous_system!⇒SystPeripheralNervous,
+  McshHlth000019:1379  <br>* McshEngl.SystNervous'04_sensory_sys!⇒SystSense,
+  McshHlth000019:3570  <br>* McshEngl.SystNervous'05_neural_circuit,
+  McshHlth000019:3677  <br>* McshEngl.SystNervous'08_organSpinal_cord!⇒organSpinal_cord,
+  McshHmn000002:1684  <br>* McshEngl.human'10_physical_appearance!⇒human'appearance,
+  McshLag000003:1055  <br>* McshEngl.worldview'04_management_tool,
+  McshLag000005:75  <br>* McshEngl.Ogsm_lago'02_input__info_view,
+  McshLag000005:90  <br>* McshEngl.Ogsm_lago'03_output__logo_view,
+  McshLag000007:879  <br>* McshEngl.Hmnm_lago'01_input1_(mind_view)!⇒HmnmMindView,
+  McshLag000007:949  <br>* McshEngl.Hmnm_lago'02_input2_(senso_mind__view)!⇒HmnmSensoMindView,
+  McshLag000007:1034  <br>* McshEngl.Hmnm_lago'03_input3_(semu_view)!⇒Semuview,
+  McshLag000007:16038  <br>* McshEngl.Hmnm_lago'04_output_(logo_view)!⇒HmnmLogoView,
+  McshLag000007:17389  <br>* McshEngl.word'06_name_entirety,
+  McshLag000007:30065  <br>* McshEngl.Hmnm_lago'06_mapping_relations!⇒Hmnmmprl,
+  McshLag000013:104  <br>* McshEngl.Infrsc'04_time_of_publication,
+  McshLag000013:119  <br>* McshEngl.Infrsc'05_place_of_publication!⇒place_of_publication__of_Infrsc,
+  McshLag000013:159  <br>* McshEngl.Infrsc'07_citation_format,
+  McshLag000014:99  <br>* McshEngl.irBook'10_citation_format,
+  McshLag000018:219  <br>* McshEngl.Zhon_lago'03_input3_(semu_view)!⇒Zhonsemuview,
+  McshLag000019:69  <br>* McshEngl.irPaper'10_citation_format,
+  McshLag000020:1514  <br>* McshEngl.Elln_word'03_part_of_speech,
+  McshLag000020:1549  <br>* McshEngl.Elln_word'04_base_form,
+  McshLag000020:1567  <br>* McshEngl.Elln_word'05_inflection_type,
+  McshLag000020:1605  <br>* McshEngl.Elln_word'07_name_entirety,
+  McshLag000020:1622  <br>* McshEngl.Elln_word'08_other_form,
+  McshLag000020:2224  <br>* McshEngl.Elln_noun'8_memBer_quantity!⇒Elln_noun'member,
+  McshLag000030:73  <br>* McshEngl.Turk_lago'03_input3_(semu_view)!⇒Turk_Semuview,
+  McshLag000037:2429  <br>* McshEngl.Hind_lago'01_input1_(mind_view),
+  McshLag000037:2446  <br>* McshEngl.Hind_lago'02_input2_(senso_mind_view),
+  McshLag000037:2463  <br>* McshEngl.Hind_lago'03_input3_(semu_view),
+  McshLag000037:2482  <br>* McshEngl.Hind_lago'04_output_(logo_view)!⇒HindLogoView,
+  McshLag000037:4463  <br>* McshEngl.Urdu_lago'01_input1_(mind_view),
+  McshLag000037:4480  <br>* McshEngl.Urdu_lago'02_input2_(senso_mind_view),
+  McshLag000037:4497  <br>* McshEngl.Urdu_lago'03_input3_(semu_view),
+  McshLag000037:4516  <br>* McshEngl.Urdu_lago'04_output_(logo_view)!⇒UrduLogoView,
+  McshNtr000002:137  <br>* McshEngl.material'02_physical_property,
+  McshNtr000002:244  <br>* McshEngl.material'03_chemical_property,
+  McshNtr000003:61  <br>* McshEngl.MtrlAtom'01_subatomic_particle!⇒ptclSubatomic,
+  McshNtr000005:90  <br>* McshEngl.MtrlSysMols'04_physical_property,
+  McshNtr000005:208  <br>* McshEngl.MtrlSysMols'05_chemical_property,
+  McshNtr000005:1320  <br>* McshEngl.MtrlChemical'03_intermolecular_bond,
+  McshNtr000005:1335  <br>* McshEngl.MtrlChemical'06_chemical_reaction,
+  McshNtr000006:49  <br>* McshEngl.ChmcCpd'03_structural_formula,
+  McshNtr000006:66  <br>* McshEngl.ChmcCpd'04_chemical_formula,
+  McshNtr000007:166  <br>* McshEngl.ChmcElry'03_mass_number_(A),
+  McshNtr000007:188  <br>* McshEngl.ChmcElry'04_atomic_number_(Z),
+  McshNtr000007:205  <br>* McshEngl.ChmcElry'05_atomic_weight,
+  McshNtr000007:221  <br>* McshEngl.ChmcElry'06_chemical_property!⇒Chmelrchpr,
+  McshNtr000007:256  <br>* McshEngl.ChmcElry'09_state_of_matter,
+  McshOgm000002:76  <br>* McshEngl.bio'04_material_system,
+  McshOgm000003:148  <br>* McshEngl.Ogsm'04_material_node!⇒nodeOgmMtrl,
+  McshOgm000003:1358  <br>* McshEngl.ogmCellMany'02_governance_system,
+  McshOgm000005:85  <br>* McshEngl.SystMolsOgsm'03_intermolecular_bond,
+  McshOgm000005:98  <br>* McshEngl.SystMolsOgsm'04_physical_property,
+  McshOgm000005:111  <br>* McshEngl.SystMolsOgsm'05_chemical_property,
+  McshOgm000006:59  <br>* McshEngl.MolProtein'01_amino_acid!⇒acidAmino,
+  McshOgm000006:593  <br>* McshEngl.MolProtein'03_peptide_bond,
+  McshOgm000006:619  <br>* McshEngl.MolProtein'05_pro_protein,
+  McshOgm000007:173  <br>* McshEngl.cellOgsm'05_genetic_material!⇒acidNucleic,
+  McshOgm000008:58  <br>* McshEngl.ogmCellNo'02_governance_system,
+  McshOgm000008:82  <br>* McshEngl.ogmCellNo'04_material_system,
+  McshOgm000009:104  <br>* McshEngl.ogsmAnimal'02_governance_system,
+  McshOgm000009:129  <br>* McshEngl.ogsmAnimal'04_organ_sys,
+  McshOgm000009:182  <br>* McshEngl.ogsmAnimal'08_material_system,
+  McshOgm000009:226  <br>* McshEngl.ogsmAnimal'10_nervous_sys!⇒SystNervousAnml,
+  McshOgm000010:779  <br>* McshEngl.flowerPlant'02_reproductive_part,
+  McshStn000002:79  <br>* McshEngl.SctnOgms'02_node_of_organisms,
+  McshStn000002:171  <br>* McshEngl.SctnOgms'03_node_of_satisfiers,
+  McshStn000002:516  <br>* McshEngl.Sctn'02_node_of_humans,
+  McshStn000002:531  <br>* McshEngl.Sctn'03_node_of_satisfiers,
+  McshStn000005:69  <br>* McshEngl.groupOgsm'02_node_of_organisms,
+  McshStn000005:91  <br>* McshEngl.groupOgsm'03_node_of_satisfiers,
+  McshStn000005:118  <br>* McshEngl.groupOgsm'04_admin_system!⇒admnGrupOgsm,
+  McshStn000006:86  <br>* McshEngl.oznOgsm'04_governance_system!⇒gvcOznOgsm,
+  McshStn000006:104  <br>* McshEngl.oznOgsm'05_financial_system,
+  McshStn000007:78  <br>* McshEngl.societyOgsm'02_node_of_organisms,
+  McshStn000007:134  <br>* McshEngl.societyOgsm'03_node_of_satisfiers,
+  McshStn000007:156  <br>* McshEngl.societyOgsm'04_governance_system!⇒SystGvcSocOgsm,
+  McshStn000008:218  <br>* McshEngl.Ogzn'02_stakeholder_node,
+  McshStn000008:284  <br>* McshEngl.Ogzn'03_satisfier_node,
+  McshStn000008:845  <br>* McshEngl.Ogzn'04_admin_sys!⇒admnOgzn,
+  McshStn000009:199  <br>* McshEngl.society'02_human_view!⇒Sochumnview,
+  McshStn000009:3440  <br>* McshEngl.society'04_admin_system!⇒Socadmn,
+  McshStn000010:345  <br>* McshEngl.satisfier'04_use_value,
+  McshStn000010:369  <br>* McshEngl.satisfier'05_exchange_value!⇒Sfrev,
+  McshStn000012:163  <br>* McshEngl.SocEcon'04_producing_sys!⇒Econprdgsys,
+  McshStn000012:694  <br>* McshEngl.SocEcon'05_consuming_sys!⇒Econcsmgsys,
+  McshStn000012:996  <br>* McshEngl.SocEcon'06_financial_sys!⇒Econfin,
+  McshStn000012:1222  <br>* McshEngl.SocEcon'07_transacting_sys,
+  McshStn000012:1237  <br>* McshEngl.SocEcon'08_accounting_sys!⇒SystAcct,
+  McshStn000013:94  <br>* McshEngl.project'04_governance_node!⇒GvncProject,
+  McshStn000014:156  <br>* McshEngl.ogznCsmg'02_sys_human!⇒Hshdhmnsys,
+  McshStn000014:237  <br>* McshEngl.ogznCsmg'03_sys_satisfier!⇒Hshdsfrsys,
+  McshStn000014:309  <br>* McshEngl.ogznCsmg'04_admin_sys!⇒admnHshd,
+  McshStn000014:363  <br>* McshEngl.ogznCsmg'05_consuming_node!⇒cscHousehold,
+  McshStn000014:393  <br>* McshEngl.ogznCsmg'06_producing_node,
+  McshStn000015:251  <br>* McshEngl.OgznPrdg'03_humans_system,
+  McshStn000015:470  <br>* McshEngl.OgznPrdg'04_economic_system!⇒Cmpnecon,
+  McshStn000015:686  <br>* McshEngl.OgznPrdg'05_admin_system!⇒Cmpnadmn,
+  McshStn000018:70  <br>* McshEngl.ogznUn'02_node_of_humans,
+  McshStn000018:556  <br>* McshEngl.ogznUn'03_node_of_satisfiers!⇒Unecon,
+  McshStn000018:666  <br>* McshEngl.ogznUn'04_node_of_governance!⇒Unadmin,
+  McshStn000018:2686  <br>* McshEngl.ogznUn'att008'2030_Agenda_for_Sustainable_Development!⇒Un2030asd,
+  McshStn000018:2688  <br>* McshEngl.ogznUn'2030_Agenda_for_Sustainable_Development!⇒Un2030asd,
+  McshStn000018:2691  <br>* McshEngl.ogznUn'doing'2030_Agenda_for_Sustainable_Development!⇒Un2030asd,
+  McshStn000018:3786  <br>* McshEngl.ogznUn'2015_Millennium_Development_Goals,
+  McshStn000018:3789  <br>* McshEngl.ogznUn'doing'2015_Millennium_Development_Goals,
+  McshStn000020:76  <br>* McshEngl.SocEuzz'02_humans_system!⇒Euhmns,
+  McshStn000020:827  <br>* McshEngl.SocEuzz'03_economic_system!⇒EuzzEcon,
+  McshStn000020:1761  <br>* McshEngl.SocEuzz'04_admin_system!⇒EuzzAdmn,
+  McshStn000020:1907  <br>* McshEngl.EuoMin'01_Foreign_Affairs_council,
+  McshStn000020:1920  <br>* McshEngl.EuoMin'02_General_Affairs_council,
+  McshStn000020:1933  <br>* McshEngl.EuoMin'03_Economic_and_Financial_Affairs,
+  McshStn000020:1946  <br>* McshEngl.EuoMin'04_Justice_and_Home_Affairs,
+  McshStn000020:1959  <br>* McshEngl.EuoMin'05_Employment_Social_Policy_Health_and_Consumer_Affairs,
+  McshStn000020:1985  <br>* McshEngl.EuoMin'07_Transport_Telecommunications_and_Energy,
+  McshStn000020:1998  <br>* McshEngl.EuoMin'08_Agriculture_and_Fisheries,
+  McshStn000020:2024  <br>* McshEngl.EuoMin'10_Education_Youth_Culture_and_Sport,
+  McshStn000020:4771  <br>* McshEngl.Eubudget'01_multiannual_budget!⇒EuMff,
+  McshStn000020:4918  <br>* McshEngl.Eubudget'02_annual_budget,
+  McshStn000021:92  <br>* McshEngl.SocGlbl'02_node_of_humans,
+  McshStn000021:189  <br>* McshEngl.SocGlbl'04_node_governance!⇒Glbladmn,
+  McshStn000029:743  <br>* McshEngl.money'01_medium_of_exchange,
+  McshStn000029:759  <br>* McshEngl.money'02_store_of_value,
+  McshStn000029:774  <br>* McshEngl.money'03_unit_of_account,
+  McshStn000031:3500  <br>* McshEngl.Chnawrkr'996_work_system,
+  McshStn000031:3503  <br>* McshEngl.Chnawrkr'hours-of-work'996_work_system,
+  McshStn000031:5897  <br>* McshEngl.Chna_econ'5_years_plan!⇒ChnaPlan5,
+  McshStn000031:5901  <br>* McshEngl.Chnaplanning'5_years_plan!⇒ChnaPlan5,
+  McshStn000034:273  <br>* McshEngl.Vnma_lago'01_input1_(mind_view),
+  McshStn000034:290  <br>* McshEngl.Vnma_lago'02_input2_(senso_mind_view),
+  McshStn000034:307  <br>* McshEngl.Vnma_lago'03_input3_(semu_view),
+  McshStn000034:326  <br>* McshEngl.Vnma_lago'04_output_(logo_view)!⇒logoVnma,
+  McshStn000035:237  <br>* McshEngl.lagoItln'01_input1_(mind_view),
+  McshStn000035:254  <br>* McshEngl.lagoItln'02_input2_(senso_mind_view),
+  McshStn000035:271  <br>* McshEngl.lagoItln'03_input3_(semu_view),
+  McshStn000035:290  <br>* McshEngl.lagoItln'04_output_(logo_view)!⇒logoItln,
+  McshStn000037:233  <br>* McshEngl.Frac_lago'01_input1_(mind_view),
+  McshStn000037:250  <br>* McshEngl.Frac_lago'02_input2_(senso_mind_view),
+  McshStn000037:267  <br>* McshEngl.Frac_lago'03_input3_(semu_view),
+  McshStn000037:287  <br>* McshEngl.Frac_lago'04_output_(logo_view)!⇒logoFrac,
+  McshStn000038:242  <br>* McshEngl.Sbul_lago'01_input1_(mind_view),
+  McshStn000038:259  <br>* McshEngl.Sbul_lago'02_input2_(senso_mind_view),
+  McshStn000038:276  <br>* McshEngl.Sbul_lago'03_input3_(semu_view),
+  McshStn000038:296  <br>* McshEngl.Sbul_lago'04_output_(logo_view)!⇒logoSbul,
+  McshStn000039:267  <br>* McshEngl.Sqip_lago'01_input1_(mind_view),
+  McshStn000039:284  <br>* McshEngl.Sqip_lago'02_input2_(senso_mind_view),
+  McshStn000039:301  <br>* McshEngl.Sqip_lago'03_input3_(semu_view),
+  McshStn000039:322  <br>* McshEngl.Sqip_lago'04_output_(logo_view)!⇒SqipLogo,
+  McshStn000040:314  <br>* McshEngl.Smkd_lago'01_input1_(mind_view),
+  McshStn000040:331  <br>* McshEngl.Smkd_lago'02_input2_(senso_mind_view),
+  McshStn000040:348  <br>* McshEngl.Smkd_lago'03_input3_(semu_view),
+  McshStn000040:367  <br>* McshEngl.Smkd_lago'04_output_(logo_view)!⇒SmkdLogoView,
+  McshStn000041:328  <br>* McshEngl.Sslv_lago'01_input1_(mind_view),
+  McshStn000041:345  <br>* McshEngl.Sslv_lago'02_input2_(senso_mind_view),
+  McshStn000041:362  <br>* McshEngl.Sslv_lago'03_input3_(semu_view),
+  McshStn000041:381  <br>* McshEngl.Sslv_lago'04_output_(logo_view)!⇒SslvLogoView,
+  McshStn000043:219  <br>* McshEngl.Srus_lago'01_input1_(mind_view),
+  McshStn000043:236  <br>* McshEngl.Srus_lago'02_input2_(senso_mind_view),
+  McshStn000043:253  <br>* McshEngl.Srus_lago'03_input3_(semu_view),
+  McshStn000043:272  <br>* McshEngl.Srus_lago'04_output_(logo_view)!⇒SrusLogoView,
+  McshStn000044:257  <br>* McshEngl.Romn_lago'01_input1_(mind_view),
+  McshStn000044:274  <br>* McshEngl.Romn_lago'02_input2_(senso_mind_view),
+  McshStn000044:291  <br>* McshEngl.Romn_lago'03_input3_(semu_view),
+  McshStn000044:310  <br>* McshEngl.Romn_lago'04_output_(logo_view)!⇒RomnLogoView,
+  McshStn000048:306  <br>* McshEngl.Jpns_lago'01_input1_(mind_view),
+  McshStn000048:323  <br>* McshEngl.Jpns_lago'02_input2_(senso_mind_view),
+  McshStn000048:340  <br>* McshEngl.Jpns_lago'03_input3_(semu_view),
+  McshStn000048:359  <br>* McshEngl.Jpns_lago'04_output_(logo_view)!⇒JpnsLogoView,
+  McshStn000050:295  <br>* McshEngl.Khmr_lago'01_input1_(mind_view),
+  McshStn000050:312  <br>* McshEngl.Khmr_lago'02_input2_(senso_mind_view),
+  McshStn000050:329  <br>* McshEngl.Khmr_lago'03_input3_(semu_view),
+  McshStn000050:348  <br>* McshEngl.Khmr_lago'04_output_(logo_view)!⇒KhmrLogoView,
+  McshStnlaw000002:147  <br>* McshEngl.law'03_time_of_validation,
+  McshStnlaw000003:248  <br>* McshEngl.lawEus'05_time_in_force,
+  McshStnlaw000003:757  <br>* McshEngl.Celex_nbr'01_sector_(1_digit|letter),
+  McshStnlaw000003:774  <br>* McshEngl.Celex_nbr'02_year_(4_digits),
+  McshStnlaw000003:807  <br>* McshEngl.Celex_nbr'03_doctype_(1|2_letters),
+  McshStnlaw000003:825  <br>* McshEngl.Celex_nbr'04_docnbr_(4_digits),
+  McshTchInf000003:516  <br>* McshEngl.techCmpr'03_health_issue,
+  McshTchInf000006:219  <br>* McshEngl.Pgmgalgo'03_unit_node,
+  McshTchInf000006:233  <br>* McshEngl.Pgmgalgo'04_word_node!⇒Prmgalgoword,
+  McshTchInf000006:308  <br>* McshEngl.Pgmgalgo'05_semantic_unit_node!⇒Pgmgalgo'Sunt,
+  McshTchInf000006:472  <br>* McshEngl.Pgmgalgo'06_phrase_node,
+  McshTchInf000006:489  <br>* McshEngl.Pgmgalgo'07_sentence_node,
+  McshTchInf000006:509  <br>* McshEngl.Pgmgalgo'08_section_node!⇒Pgmgalgo'section,
+  McshTchInf000006:575  <br>* McshEngl.Pgmgalgo'09_root_node,
+  McshTchInf000008:3223  <br>* McshEngl.Hitp_lago'04_Hitp_site!⇒Hitpsite,
+  McshTchInf000011:156  <br>* McshEngl.Jsbr_algo'01_browser_compatibility,
+  McshTchInf000015:5071  <br>* McshEngl.netAlgo'06_governance_system!⇒netAlgo_govc,
+  McshTchInf000015:5863  <br>* McshEngl.DeContract'06_programing_language,
+  McshTchInf000015:5881  <br>* McshEngl.DeContract'07_doc_language,
+  McshTchInf000015:6330  <br>* McshEngl.DeApp'01_Dchain_net,

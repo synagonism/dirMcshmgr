@@ -1,0 +1,43 @@
+=== TITLE (19) — number removed from "NN_evoluting of X" (headings, text)
+  McshCor000004:1262  <h1 id="idDngevogH1">evoluting of doing
+  McshCor000008:472  <h1 id="idWhlevogH1">evoluting of whole
+  McshCor000011:336  <h1 id="idSysevogH1">evoluting of system
+  McshCor000011:2045  <h2 id="idSys002evogH2">evoluting of systTree
+  McshCor000011:2049  <br>· evoluting of systTree.
+  McshHlth000002:1222  <h2 id="idSysOgnHmnevogH2">evoluting of SystOrgans
+  McshHlth000004:1198  <h1 id="idCellHmnevogH1">evoluting of cell
+  McshHlth000006:185  <h2 id="idDsdrevogH2">evoluting of disorderBio
+  McshHlth000006:345  <h1 id="idHlthBioevogH1">evoluting of healthBio
+  McshHlth000007:132  <h1 id="idHlthOgmevogH1">evoluting of healthOgsm
+  McshHlth000010:201  <h1 id="idDssOgmevogH1">evoluting of DissOgsm
+  McshHlth000010:485  <h2 id="idDssPlntevogH2">evoluting of DissPlnt
+  McshNtr000002:445  <h1 id="idMtrlevogH1">evoluting of material
+  McshNtr000003:336  <h1 id="idAtmevogH1">evoluting of MtrlAtom
+  McshNtr000012:119  <h1 id="idFrcevogH1">evoluting of force
+  McshOgm000008:169  <h1 id="idOgmCllNevogH1">evoluting of ogmCellNo
+  McshTchInf000003:747  <h1 id="idCmrevogH1">evoluting of techCmpr
+  McshTchInf000015:6098  <h3 id="idDcntrtevogH3">evoluting of DeContract
+  McshTchInf000015:6572  <h2 id="idDappevogH2">evoluting of DeApp
+
+=== NAME-RENAMED (2) — X'NN_evoluting → X'evoluting
+  McshHlth000010:492  <br>* McshEngl.DissPlnt'evoluting,
+  McshTchInf000015:6582  <br>* McshEngl.DeApp'evoluting,
+
+=== NAME-REMOVED (17) — X'NN_evoluting dropped, X'evoluting already in the list
+  McshCor000004:1269  <br>* McshEngl.doing'07_evoluting,  (dup of doing'evoluting)
+  McshCor000008:479  <br>* McshEngl.whole'08_evoluting,  (dup of whole'evoluting)
+  McshCor000011:343  <br>* McshEngl.system'07_evoluting,  (dup of system'evoluting)
+  McshCor000011:2052  <br>* McshEngl.systTree'10_evoluting,  (dup of systTree'evoluting)
+  McshHlth000002:1229  <br>* McshEngl.SystOrgans'05_evoluting,  (dup of SystOrgans'evoluting)
+  McshHlth000004:1204  <br>* McshEngl.cell'20_evoluting,  (dup of cell'evoluting)
+  McshHlth000006:192  <br>* McshEngl.disorderBio'10_evoluting,  (dup of disorderBio'evoluting)
+  McshHlth000006:352  <br>* McshEngl.healthBio'07_evoluting,  (dup of healthBio'evoluting)
+  McshHlth000007:139  <br>* McshEngl.healthOgsm'07_evoluting,  (dup of healthOgsm'evoluting)
+  McshHlth000008:1415  <br>* McshEngl.health'08_evoluting,  (dup of health'evoluting)
+  McshHlth000010:210  <br>* McshEngl.DissOgsm'10_evoluting,  (dup of DissOgsm'evoluting)
+  McshNtr000002:451  <br>* McshEngl.material'10_evoluting,  (dup of material'evoluting)
+  McshNtr000003:342  <br>* McshEngl.MtrlAtom'11_evoluting,  (dup of MtrlAtom'evoluting)
+  McshNtr000012:125  <br>* McshEngl.force'07_evoluting,  (dup of force'evoluting)
+  McshOgm000008:175  <br>* McshEngl.ogmCellNo'12_evoluting,  (dup of ogmCellNo'evoluting)
+  McshTchInf000003:753  <br>* McshEngl.techCmpr'07_evoluting,  (dup of techCmpr'evoluting)
+  McshTchInf000015:6104  <br>* McshEngl.DeContract'14_evoluting,  (dup of DeContract'evoluting)

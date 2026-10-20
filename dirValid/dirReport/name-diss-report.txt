@@ -1,0 +1,38 @@
+=== MATCH (71) — Diss main-names already DissWord_word
+
+=== CAMEL (13) — CamelCase after Diss (e.g. DissCoronaryArtery) — not DissWord_word, to review
+  McshHlth000010:593  DissPlntFungus
+  McshHlth000010:646  DissPlntPest
+  McshHlth000010:678  DissPlntAnimal
+  McshHlth000010:721  DissPlntAphid
+  McshHlth000010:742  DissPlntWeed
+  McshHlth000010:825  DissOgmViral
+  McshHlth000010:866  DissOgmInfectious
+  McshHlth000011:2010  DissSysCirculatory
+  McshHlth000011:3082  DissCoronaryArtery
+  McshHlth000011:7984  DissMentalSomatic
+  McshHlth000011:17383  DissOgnLarynx
+  McshHlth000011:17446  DissFctPaining
+  McshHlth000011:17581  DissFctPainingChronic
+
+=== ATTR (6) — attribute names X'y — not plain mains
+  McshHlth000011:1293  DissViral'DissViralInfection.plasma
+  McshHlth000011:2046  DissSysCirculator'cause
+  McshHlth000011:2410  DissHeart'diagnosis
+  McshHlth000011:2441  DissHeart'protection
+  McshHlth000011:2455  DissHeart'evoluting
+  McshHlth000011:13748  DissBronchiolitis'risk-factor
+
+=== NO (3) — negation suffix No — keep (user)
+  McshHlth000011:1415  DissInfectiousNo
+  McshHlth000011:8081  DissMentalNo
+  McshHlth000011:17667  DissDoingNO
+
+=== LOWER (2) — lowercase compound (Disscause) — keep (user)
+  McshHlth000011:124  Disscause
+  McshHlth000011:413  Dissprotection
+
+=== DSS-LEFT (3 kinds) — not names, left as is
+  McshHlth000011:46  McshEngl.Dss!⇒disease (bare alias, Diss!⇒disease above)
+  McshHlth000011:*  ⧺cptDssHmnNNN⧺ old concept refs (like ids)
+  McshHlth000010:910, McshHlth000011:17778  filMcsDss… archive filenames

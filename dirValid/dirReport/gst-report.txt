@@ -1,12 +1,13 @@
-GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-19
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-20
 
-GS-TREE sections: 2417   fully conforming: 2417   with issues: 0
-heading levels: h1 555, h2 765, h3 586, h4 322, h5 147, h6 38, h7 4
+GS-TREE sections: 2428   fully conforming: 2428   with issues: 0
+specific-tree ids: 2428 {whole}sptr, 0 old {whole}str
+heading levels: h1 555, h2 768, h3 571, h4 338, h5 152, h6 40, h7 4
 
 Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
   {id}dsn with Mcsh-creation date, {id}nam with X'generic-specific-tree + X'specific-generic-tree,
   {whole}gntr generic-tree:: starting "McshEngl.X_Gntr," and holding "... entity_Gntr,",
-  {whole}str specific-tree:: with "McshEngl.X.specific," + "McshEngl.X_Sptr,", X = the whole's main-name, no extra content.
+  {whole}sptr specific-tree:: with "McshEngl.X.specific," + "McshEngl.X_Sptr,", X = the whole's main-name, no extra content.
 
 ISSUES (a GS-TREE can have several):
   OLD          0  old-style title (not "GENERIC-SPECIFIC-TREE of X")
@@ -19,7 +20,7 @@ ISSUES (a GS-TREE can have several):
   GTR          0  no {whole}gntr generic-tree:: paragraph
   GTRN         0  generic-tree:: does not start with McshEngl.X_Gntr,
   GTRE         0  generic-tree:: neither has "... entity_Gntr," nor ends at entity
-  STR          0  no {whole}str specific-tree:: paragraph
+  STR          0  no {whole}sptr specific-tree:: paragraph
   STRN         0  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
   XNAME        0  X differs from the whole's !⇒ main-name
   EXTRA        0  other paragraphs / blocks inside the GS-TREE

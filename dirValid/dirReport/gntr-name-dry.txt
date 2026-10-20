@@ -1,162 +1,21 @@
-generic-tree names: uniqueness + rename -Gntr -> _Gntr — 2026-10-19   DRY=true
+generic-tree names: uniqueness + rename -Gntr -> _Gntr — 2026-10-20   DRY=true
 
-generic-tree:: paragraphs: 3115 | named: 2968 | distinct names: 2968
+generic-tree:: paragraphs: 3124 | named: 3124 | distinct names: 3122
 tokens renamed: 0 in 0 files (dry)
 
-=== SAME-NAME (0) — two or more generic-trees have the same name
-  (none)
+=== SAME-NAME (2) — two or more generic-trees have the same name
+  satisfierOgsm_Gntr (2)
+    McshStn000002:202  idStnOgmatt012gntr
+    McshStn000003:119  idSfrOgmgntr
+  Rustn_Gntr (2)
+    McshTchInf000030:1334  idLRustsuntNgntr
+    McshTchInf000030:1350  idLRustsuntNgntr
 
 === SAME-NAME-IGNORING-CASE (0) — names that differ only in letter case
   (none)
 
-=== NO-NAME (147) — generic-tree:: does not start with "<br>* McshEngl.X_Gntr,"
-  McshCor000002:2135  idMcsrftgtr  first: <br>* Mcsattr_Gntr,
-  McshCor000002:2278  idMcsattGncchngtr  first: <br>* tree_node_chain_Gntr,
-  McshCor000002:2347  idMcsattWhlNSpcdvngtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002Gcsc
-  McshCor000004:483  idDngatt001DrnSpcgtr  first: <br>* space_direction_Gntr,
-  McshCor000011:3158  idSysMng003att003gtr  first: <br>* <a class="clsPreview" href="#idSysMng001att002">info-sys-of-organism</a>,
-  McshCor000013:424  idBrnginfarchgtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000005.last.html#idRlnMpgarch
-  McshCor000013:441  idBrngstxgtr  first: <br>* syntax-of-functing,
-  McshCor000018:2576  idBrngHmnFct004stmlgtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgst
-  McshHlth000004:1458  idCellHmn010gtr  first: <br>* cell_Gntr,
-  McshHlth000004:1940  idCellHmn016gtr  first: <br>* cell_Gntr,
-  McshHlth000005:3505  idBoneHmn007gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3532  idBoneHmn008gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3560  idBoneHmn009gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3587  idBoneHmn010gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3614  idBoneHmn011gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3641  idBoneHmn012gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3668  idBoneHmn013gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:3698  idBoneHmn014gtr  first: <br>* organBone_Gntr,
-  McshHlth000005:5498  idBoneHmn036gtr  first: <br>* organBone_Gntr,
-  McshHlth000008:57  idHlthHmnatt001gtr  first: <br>* human_Gntr,
-  McshHlth000011:1422  idDssHmn002gtr  first: <br>* disease_Gntr,
-  McshHlth000011:2983  idDssHmn132gtr  first: <br>* disease_Gntr,
-  McshHlth000011:3056  idDssHmn039gtr  first: <br>* disease_Gntr,
-  McshHlth000011:3608  idDssHmn165gtr  first: <br>* disease_Gntr,
-  McshHlth000011:4630  idDssHmn075gtr  first: <br>* DssSkin_Gntr,
-  McshHlth000011:6407  idDssHmn111gtr  first: <br>* DssEye_Gntr,
-  McshHlth000011:6471  idDssHmn118gtr  first: <br>* DssEye_Gntr,
-  McshHlth000011:6502  idDssHmn119gtr  first: <br>* DssEye_Gntr,
-  McshHlth000011:8149  idDssHmn113gtr  first: <br>* disease_Gntr,
-  McshHlth000011:11531  idDssHmn200gtr  first: <br>* disease_Gntr,
-  McshHlth000011:12875  idDssHmn121gtr  first: <br>* disease_Gntr,
-  McshHlth000011:12896  idDssHmn122gtr  first: <br>* disease_Gntr,
-  McshHlth000011:12921  idDssHmn123gtr  first: <br>* disease_Gntr,
-  McshHlth000011:12947  idDssHmn125gtr  first: <br>* disease_Gntr,
-  McshHlth000011:13168  idDssHmn133gtr  first: <br>* disease_Gntr,
-  McshHlth000011:13845  idDssHmn143gtr  first: <br>* disease_Gntr,
-  McshHlth000011:14007  idDssHmn147gtr  first: <br>* disease_Gntr,
-  McshHlth000011:14283  idDssHmn099gtr  first: <br>* disease_Gntr,
-  McshHlth000013:9266  idFoodHmn149gtr  first: <br>* foodCooked_Gntr,
-  McshHlth000014:524  idMedHmnognFgtr  first: <br>* drug-organization,
-  McshHlth000014:2378  idMedHmn025gtr  first: <br>* <a class="clsPreview" href="#idOverview">medication</a>,
-  McshHlth000016:790  idThrpHmnPhrmcgtr  first: <br>* therapy.doingNo_Gntr,
-  McshLag000007:22049  idLHmnmargoMtwdgtr  first: <br>* termMany_Gntr,
-  McshLag000007:26186  idLHmnmConjWrdmnygtr  first: <br>* termMany_Gntr,
-  McshLag000008:123  idL0016nodegtr  first: <br>* Hmnm_node_Gntr,
-  McshLag000009:166  idL0017nodegtr  first: <br>* Hmnm_node_Gntr,
-  McshLag000010:283  idL0014smscnjgtr  first: <br>* Semuconj_Gntr,
-  McshLag000010:357  idL0014nodegtr  first: <br>* Hmnm_node_Gntr,
-  McshLag000011:2511  idLEnglsylbatt001gtr  first: <br>* lagHmnm-syllabication,
-  McshLag000011:8095  idLEngladjesnmrsgtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameT
-  McshLag000011:26717  idLEnglverbcjgngtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbm
-  McshLag000012:255  idLEsposmsvrbgtr  first: <br>* Semuverb_Gntr,
-  McshLag000012:354  idLEsponodegtr  first: <br>* Hmnm_node_Gntr,
-  McshLag000012:1669  idLEspowrdsylbngtr  first: <br>* lagHmnm-syllabication,
-  McshLag000012:4689  idLEspoverbcjgngtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbm
-  McshLag000018:606  idLZhonnodegtr  first: <br>* Hmnm_node_Gntr,
-  McshLag000021:676  idLZhonsylbslbcngtr  first: <br>* lagHmnm-syllabication,
-  McshLag000033:342  idLDeutnodegtr  first: <br>* Hmnm_node_Gntr,
-  McshNtr000007:217  idChmElratt007gtr  first: <br>* <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006
-  McshNtr000012:98  idFrcatt005gtr  first: <br>* <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001D
-  McshOgm000004:901  idMolOgm011gtr  first: <br>* biopolymer_Gntr,
-  McshOgm000005:452  idSysMolsHmn004gtr  first: <br>* entity.body.product⧺cptEpistem475.371⧺,
-  McshOgm000005:862  idSysMolsHmn016gtr  first: <br>* BodyHumn'product_Gntr,
-  McshOgm000005:1806  idHrmnHmn009gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:1843  idHrmnHmn018gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:1879  idHrmnHmn012gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:1961  idHrmnHmn005gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2025  idHrmnHmn025gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2064  idHrmnHmn022gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2101  idHrmnHmn006gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2133  idHrmnHmn024gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2177  idHrmnHmn011gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2213  idHrmnHmn010gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2253  idHrmnHmn026gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2291  idHrmnHmn004gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2335  idHrmnHmn016gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2373  idHrmnHmn013gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2443  idHrmnHmn007gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2483  idHrmnHmn020gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2531  idHrmnHmn038gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2564  idHrmnHmn008gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2584  idHrmnHmn019gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:2620  idHrmnHmn021gtr  first: <br>* hormoneHumn_Gntr,
-  McshOgm000005:3479  idFldHmn001att011gtr  first: <br>* <a class="clsPreview" href="#idDssHmn010">therapy</a>,
-  McshStn000002:252  idStnOgmatt003gtr  first: <br>* health-of-socialitation,
-  McshStn000007:202  idSocOgmatt009gtr  first: <br>* <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">
-  McshStnlaw000003:2430  idLawEus027gtr  first: <br>* <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
-  McshTchInf000006:1964  idLSrcdarchcdgtr  first: <br>* <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>,
-  McshTchInf000006:2692  idLSrcdphrsgtr  first: <br>* <a class="clsPreview" href="#idLCpgmalgphrs">phrase-of-Pgmg_lago</a>,
-  McshTchInf000015:1650  idAlgntchnimtbltgtr  first: <br>* netAlgo_benefit_Gntr,
-  McshTchInf000015:3975  idAlgntevuMoebknsgtr  first: <br>* <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>,
-  McshTchInf000015:4029  idAlgntevuMoeprcgtr  first: <br>* Agntasset_price_Gntr,
-  McshTchInf000015:4316  idAlgntevuMoeCnsgtr  first: <br>* appending_Agntasset_Gntr,
-  McshTchInf000016:326  idDbcwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:492  idDbcnodApdrgtr  first: <br>* DnodeAppender_Gntr,
-  McshTchInf000016:1573  idDbccrptgtr  first: <br>* Dchain_crypto_Gntr,
-  McshTchInf000016:1901  idDbcprcgtr  first: <br>* Agntasset_price_Gntr,
-  McshTchInf000016:3244  idDbcevMoeNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:4143  idDbcpgmScrtgtr  first: <br>* DeContract_Gntr,
-  McshTchInf000016:4900  idDbcelnSprogtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15599  idDbcPmsapdgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15614  idDbcPmsapdNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15629  idDbcPmsjoingtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15644  idDbcPmsjoinNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15664  idDbcPbcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000016:15684  idDbcPbcNgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000021:61  idEosprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
-  McshTchInf000021:80  idEosprlwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
-  McshTchInf000021:937  idEosnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdn
-  McshTchInf000021:1266  idEoschngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
-  McshTchInf000021:1280  idEosblkgtr  first: <br>* Bkcnblock_Gntr,
-  McshTchInf000021:1755  idEosevugtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbde
-  McshTchInf000021:1926  idEosgovgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdg
-  McshTchInf000021:2895  idEoswltgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
-  McshTchInf000021:3086  idEosogngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdo
-  McshTchInf000021:3106  idEosognBkongtr  first: <br>* company,
-  McshTchInf000021:3243  idEosdnggtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
-  McshTchInf000022:57  idFairnetprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
-  McshTchInf000022:71  idFairnetwprgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
-  McshTchInf000022:671  idFairnetnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdn
-  McshTchInf000022:802  idFairnetbcngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdd
-  McshTchInf000022:900  idFairnetblktmbngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcb
-  McshTchInf000022:957  idFairnetpocgtr  first: <br>* Dblockchain_appending_algo_Gntr,
-  McshTchInf000022:1034  idFairnetevuCexrgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000022:1082  idFairnetgovgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdg
-  McshTchInf000022:1201  idFairnetwltgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdw
-  McshTchInf000022:1219  idFairnetstatgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbds
-  McshTchInf000022:1235  idFairnetstatEnrggtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbce
-  McshTchInf000022:1251  idFairnethmngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdh
-  McshTchInf000022:1281  idFairnetogngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdo
-  McshTchInf000022:1385  idFairnetelngtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbde
-  McshTchInf000022:1399  idFairnetelnScongtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
-  McshTchInf000022:1466  idFairnetlawgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdl
-  McshTchInf000022:1501  idFairnetrscgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbci
-  McshTchInf000024:57  idSteemprlgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdp
-  McshTchInf000024:79  idSteemnodgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000024:126  idSteemnodWtnsgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcn
-  McshTchInf000024:167  idSteemblkgtr  first: <br>* Bkcnblock_Gntr,
-  McshTchInf000024:287  idSteemtxgtr  first: <br>* Dblockchain_tx_Gntr,
-  McshTchInf000024:1016  idSteemdgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000024:2327  idSteemacntpbcgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbca
-  McshTchInf000024:3832  idSteemognExggtr  first: <br>* AgntogznExch_Gntr,
-  McshTchInf000025:756  idEvrpastIqtgtr  first: <br>* Eos-net--asset,
-  McshTchInf000026:209  idBkskBcnetgtr  first: <br>* blockchain-network,
-  McshTchInf000028:50  idDnlbrskhrgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgn
-  McshTchInf000030:1277  idLRustsuntNgtr  first: <br>* Srcd_lago_n_Gntr,
-  McshTchInf000030:2841  idLRustrootgtr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrc
+=== NO-NAME (0) — generic-tree:: does not start with "<br>* McshEngl.X_Gntr,"
+  (none)
 
 === RENAMED -Gntr -> _Gntr, per file
   (none)

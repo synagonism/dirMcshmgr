@@ -1,0 +1,56 @@
+MvrlGstr01 fix for McshHlth000002 — 2026-10-20   DRY=true
+
+generic-trees extended: 0 | new GS-TREEs: 0 | skipped: 45 | files (dry)
+
+=== ADDED (0)
+  (none)
+
+=== GSTREE-NEW (0)
+  (none)
+
+=== SKIPPED (45)
+  McshCor000018:895  no generic-tree:: at that line
+  McshCor000018:847  no generic-tree:: at that line
+  McshCor000018:782  no generic-tree:: at that line
+  McshCor000018:723  no generic-tree:: at that line
+  McshCor000018:633  no generic-tree:: at that line
+  McshCor000018:519  no generic-tree:: at that line
+  McshHlth000002:14299  no generic-tree:: at that line
+  McshHlth000002:14195  no generic-tree:: at that line
+  McshHlth000002:14164  no generic-tree:: at that line
+  McshHlth000002:14125  no generic-tree:: at that line
+  McshHlth000002:14072  no generic-tree:: at that line
+  McshHlth000002:13808  no generic-tree:: at that line
+  McshHlth000002:13778  no generic-tree:: at that line
+  McshHlth000002:13687  no generic-tree:: at that line
+  McshHlth000002:11972  no generic-tree:: at that line
+  McshHlth000002:10620  no generic-tree:: at that line
+  McshHlth000002:10374  no generic-tree:: at that line
+  McshHlth000002:10289  no generic-tree:: at that line
+  McshHlth000002:10239  no generic-tree:: at that line
+  McshHlth000002:10013  no generic-tree:: at that line
+  McshHlth000002:9615  no generic-tree:: at that line
+  McshHlth000002:8880  no generic-tree:: at that line
+  McshHlth000002:7247  no generic-tree:: at that line
+  McshHlth000002:6467  no generic-tree:: at that line
+  McshHlth000002:3446  no generic-tree:: at that line
+  McshHlth000002:3271  no generic-tree:: at that line
+  McshHlth000002:3236  no generic-tree:: at that line
+  McshHlth000002:3175  no generic-tree:: at that line
+  McshHlth000002:2994  no generic-tree:: at that line
+  McshHlth000002:2821  no generic-tree:: at that line
+  McshHlth000002:2743  no generic-tree:: at that line
+  McshHlth000002:2701  no generic-tree:: at that line
+  McshHlth000002:2406  no generic-tree:: at that line
+  McshHlth000002:2333  no generic-tree:: at that line
+  McshHlth000002:2271  no generic-tree:: at that line
+  McshHlth000002#idSysOgnHmn005  SystEndocrine_Gntr already used
+  McshHlth000002#idSysOgnHmn004  SystIntegumentary_Gntr already used
+  McshHlth000002#idBdyHmnatt043  Hmbdarm_Gntr already used
+  McshHlth000002#idOgnHmn034  no clear main-name
+  McshHlth000011#idDssHmn013  DissCirrhosis_Gntr already used
+  McshHlth000002#idBdyHmn459  no clear main-name
+  McshHlth000002#idTissHmn012  tissueCover_Gntr already used
+  McshHlth000005#idOgnHmn041  organCartilage_Gntr already used
+  McshHlth000002#idOgnHmn039  organMesentery_Gntr already used
+  McshHlth000002#idBdyHmnatt034  HmbdReproducing_Gntr already used

@@ -1,0 +1,93 @@
+=== SET (14) — Steem mains Stem+4letters (Steem_net'X!⇒Main, Main!=Steem_net'X)
+  McshTchInf000024:55  Stemprcl  (Steem_net'protocol)
+  McshTchInf000024:76  Stemnode  (Steem_net'node)
+  McshTchInf000024:145  Stembkcn  (Steem_net'blockchain)
+  McshTchInf000024:167  Stemblck  (Steem_net'block)
+  McshTchInf000024:964  Stemprgm  (Steem_net'program)
+  McshTchInf000024:2192  Stemacnt  (Steem_net'account)
+  McshTchInf000024:3060  Stempost  (Steem_net'post)
+  McshTchInf000024:3422  Stemcmnt  (Steem_net'comment)
+  McshTchInf000024:3436  Stemvote  (Steem_net'vote)
+  McshTchInf000024:3461  Stemrwrd  (Steem_net'reward)
+  McshTchInf000024:3828  Stemogzn  (Steem_net'organization)
+  McshTchInf000024:3880  Stemeval  (Steem_net'evaluation)
+  McshTchInf000024:4020  Stemirsc  (Steem_net'info-resource)
+  McshTchInf000024:4108  Stemevog  (Steem_net'evoluting)
+
+=== RENAMED (75 names) — Steemasset, Steemwalt, Steemhumn, SteemevalCon, Steemdapp → Stem… (ids unchanged)
+  McshTchInf000024:392  <br>* McshEngl.asset-of--Steem-net!⇒Stemasset,
+  McshTchInf000024:393  <br>* McshEngl.Stemasset!=asset-of--Steem-net,
+  McshTchInf000024:394  <br>* McshEngl.Steem-asset!⇒Stemasset,
+  McshTchInf000024:395  <br>* McshEngl.Steem-net'asset!⇒Stemasset,
+  McshTchInf000024:396  <br>* McshEngl.Steem_net'asset!⇒Stemasset,
+  McshTchInf000024:397  <br>* McshEngl.đ-assetSteem!⇒Stemasset,
+  McshTchInf000024:398  <br>* McshEngl.đ-Steem-asset!⇒Stemasset,
+  McshTchInf000024:399  <br>* McshEngl.đb-assetSteem!⇒Stemasset,
+  McshTchInf000024:403  <h2 id="idSteemastgstrH2">GENERIC-SPECIFIC-TREE of Stemasset
+  McshTchInf000024:409  <br>* McshEngl.Stemasset'generic-specific-tree,
+  McshTchInf000024:410  <br>* McshEngl.Stemasset'specific-generic-tree,
+  McshTchInf000024:413  <br>* McshEngl.Stemasset_Gntr,
+  McshTchInf000024:419  <br>* McshEngl.Stemasset.specific,
+  McshTchInf000024:420  <br>* McshEngl.Stemasset_Sptr,
+  McshTchInf000024:438  <br>* McshEngl.Stemasset.AGGREGATE,
+  McshTchInf000024:499  <br>* McshEngl.Stemasset.STEEM,
+  McshTchInf000024:789  <br>* McshEngl.Stemasset.STEEM-Power,
+  McshTchInf000024:835  <br>* McshEngl.Stemasset.STEEM-Dollar,
+  McshTchInf000024:907  <br>* McshEngl.Stemasset.Smart-Media-Token,
+  McshTchInf000024:926  <br>* McshEngl.Stemasset.LIQUID!⇒Steem-asset.liquid,
+  McshTchInf000024:946  <br>* McshEngl.Stemasset.SAVINGS!⇒Steem-asset.savings,
+  McshTchInf000024:1881  <br>* McshEngl.Stemdapp,
+  McshTchInf000024:1882  <br>* McshEngl.Dapp.Steem⇒Stemdapp,
+  McshTchInf000024:1883  <br>* McshEngl.Steem-app⇒Stemdapp,
+  McshTchInf000024:1884  <br>* McshEngl.Steem-net'application⇒Stemdapp,
+  McshTchInf000024:1885  <br>* McshEngl.Steem-net'Dapp⇒Stemdapp,
+  McshTchInf000024:1886  <br>* McshEngl.Steem-net'interface⇒Stemdapp,
+  McshTchInf000024:1887  <br>* McshEngl.Steem-program.application⇒Stemdapp,
+  McshTchInf000024:1888  <br>* McshEngl.Đ-Steem'application⇒Stemdapp,
+  McshTchInf000024:1895  <h3 id="idSteemdapgstrH3">GENERIC-SPECIFIC-TREE of Stemdapp
+  McshTchInf000024:1901  <br>* McshEngl.Stemdapp'generic-specific-tree,
+  McshTchInf000024:1902  <br>* McshEngl.Stemdapp'specific-generic-tree,
+  McshTchInf000024:1905  <br>* McshEngl.Stemdapp_Gntr,
+  McshTchInf000024:1913  <br>* McshEngl.Stemdapp.specific,
+  McshTchInf000024:1914  <br>* McshEngl.Stemdapp_Sptr,
+  McshTchInf000024:2115  <br>* McshEngl.Steem-net'wallet!⇒Stemwalt,
+  McshTchInf000024:2116  <br>* McshEngl.Steem_net'wallet!⇒Stemwalt,
+  McshTchInf000024:2117  <br>* McshEngl.Stemwalt!=Steem-net'wallet,
+  McshTchInf000024:2118  <br>* McshEngl.Steem-wallet!⇒Stemwalt,
+  McshTchInf000024:2119  <br>* McshEngl.wallet-of--Steem-net!⇒Stemwalt,
+  McshTchInf000024:2120  <br>* McshEngl.Đ-Steem'wallet!⇒Stemwalt,
+  McshTchInf000024:2129  <h2 id="idSteemwltgstrH2">GENERIC-SPECIFIC-TREE of Stemwalt
+  McshTchInf000024:2135  <br>* McshEngl.Stemwalt'generic-specific-tree,
+  McshTchInf000024:2136  <br>* McshEngl.Stemwalt'specific-generic-tree,
+  McshTchInf000024:2139  <br>* McshEngl.Stemwalt_Gntr,
+  McshTchInf000024:2145  <br>* McshEngl.Stemwalt.specific,
+  McshTchInf000024:2146  <br>* McshEngl.Stemwalt_Sptr,
+  McshTchInf000024:2166  <br>* McshEngl.Stemwalt.VESSEL,
+  McshTchInf000024:3740  <br>* McshEngl.Steem-net--human!⇒Stemhumn,
+  McshTchInf000024:3741  <br>* McshEngl.Stemhumn!=Steem-net--human,
+  McshTchInf000024:3742  <br>* McshEngl.Steem-community!⇒Stemhumn,
+  McshTchInf000024:3743  <br>* McshEngl.Steem-net'human!⇒Stemhumn,
+  McshTchInf000024:3744  <br>* McshEngl.Steem_net'human!⇒Stemhumn,
+  McshTchInf000024:3745  <br>* McshEngl.Steemer!⇒Stemhumn,
+  McshTchInf000024:3746  <br>* McshEngl.Steemian!⇒Stemhumn,
+  McshTchInf000024:3747  <br>* McshEngl.Đ-human.Steem!⇒Stemhumn,
+  McshTchInf000024:3748  <br>* McshEngl.Đ-Steem'human!⇒Stemhumn,
+  McshTchInf000024:3757  <h2 id="idSteemhmngstrH2">GENERIC-SPECIFIC-TREE of Stemhumn
+  McshTchInf000024:3763  <br>* McshEngl.Stemhumn'generic-specific-tree,
+  McshTchInf000024:3764  <br>* McshEngl.Stemhumn'specific-generic-tree,
+  McshTchInf000024:3767  <br>* McshEngl.Stemhumn_Gntr,
+  McshTchInf000024:3772  <br>* McshEngl.Stemhumn.specific,
+  McshTchInf000024:3773  <br>* McshEngl.Stemhumn_Sptr,
+  McshTchInf000024:3800  <br>* McshEngl.Stemhumn.Ned,
+  McshTchInf000024:3883  <br>* McshEngl.StemevalCon,
+  McshTchInf000024:3884  <br>* McshEngl.Steem-evaluation.CON!⇒StemevalCon,
+  McshTchInf000024:3888  <h3 id="idSteemevalCongstrH3">GENERIC-SPECIFIC-TREE of StemevalCon
+  McshTchInf000024:3894  <br>* McshEngl.StemevalCon'generic-specific-tree,
+  McshTchInf000024:3895  <br>* McshEngl.StemevalCon'specific-generic-tree,
+  McshTchInf000024:3898  <br>* McshEngl.StemevalCon_Gntr,
+  McshTchInf000024:3903  <br>* McshEngl.StemevalCon.specific,
+  McshTchInf000024:3904  <br>* McshEngl.StemevalCon_Sptr,
+  McshTchInf000024:3925  <br>* McshEngl.StemevalCon.ACCOUNT-ANONYMITY,
+  McshTchInf000024:3942  <br>* McshEngl.StemevalCon.LOST-IN-SEA-OF-INFO,
+  McshTchInf000024:3968  <br>* McshEngl.StemevalCon.SELF-VOTING,
+=== FIXED (7) — bare ⇒ → !⇒ in the Stemdapp name:: list

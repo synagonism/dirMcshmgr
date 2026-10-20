@@ -37,12 +37,18 @@
  *  MvrlId09  (warning) wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
  *  MvrlId10  (warning) prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
  *  MvrlId11  (warning) gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
+ *  MvrlId12  (warning) sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
+ *
+ *  MvrlGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
+ *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-26-0.2026-10-20: MvrlGstr01 specific_has_generic',
+    'structuralMcsh.js.0-25-0.2026-10-19: MvrlId12 sptr_specific_tree_suffix, fCheckIdParaSuffix rEndIn',
     'structuralMcsh.js.0-24-0.2026-10-19: MvrlId11 gntr_generic_tree_suffix',
     'structuralMcsh.js.0-23-0.2026-10-19: MvrlId10 prtr_part_tree_suffix',
     'structuralMcsh.js.0-22-0.2026-10-19: MvrlId09 wltr_whole_tree_suffix',
@@ -381,10 +387,10 @@ function fCheckIdIrsc(aoCnptFile) {
 
 /**
  * DOING: the-id of a-para-concept "<sTitlePara>::" (of the-cnptFile or of any concept)
- *   must end in sSuffix.
+ *   must end in sSuffix (or match rEndIn, when given).
  * OUTPUT: array of WARN-issues with code sCode.
  */
-function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix) {
+function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix, rEndIn) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
@@ -392,7 +398,7 @@ function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix) {
       const aoPara = oCnpt.sType === 'cnptFile' ? oCnptFile.aoTitlePara : oCnpt.aoTitlePara;
       for (const oPara of aoPara ?? []) {
         if (oPara.sNameTitle !== sTitlePara || !oPara.sNameId) continue;
-        if (oPara.sNameId.endsWith(sSuffix)) continue;
+        if (rEndIn ? rEndIn.test(oPara.sNameId) : oPara.sNameId.endsWith(sSuffix)) continue;
         aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oCnpt.sType === 'cnptFile' ? null : oCnpt,
           `${sNameRule}: id="${oPara.sNameId}" of "${sTitlePara}::" does not end in "${sSuffix}"`,
           oCnptFile.oMapIdLine.get(oPara.sNameId) ?? null));
@@ -426,6 +432,156 @@ function fCheckIdPrtr(aoCnptFile) {
 // ⚠️ [MvrlId11] gntr_generic_tree_suffix: the-id of a "generic-tree::" para ends in "gntr", NOT gtr.
 function fCheckIdGntr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrlId11', 'gntr_generic_tree_suffix', 'generic-tree', 'gntr');
+}
+
+// ⚠️ [MvrlId12] sptr_specific_tree_suffix: the-id of a "specific-tree::" para ends in "sptr", NOT str;
+//   a-list of specific-trees may add ONE letter or digit: idLHmnm0011sptrA, idLHmnm0011sptr2.
+function fCheckIdSptr(aoCnptFile) {
+  return fCheckIdParaSuffix(aoCnptFile, 'MvrlId12', 'sptr_specific_tree_suffix', 'specific-tree', 'sptr',
+    /sptr[A-Z0-9]?$/);
+}
+
+// ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
+//   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
+//   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
+//   A-concept is a-key "McshDir000000#id" ("McshDir000000#" the-file-concept);
+//   a-GS-TREE means its whole, a-para means its section.
+function fCheckGstrSpecificGeneric(aoCnptFile) {
+  const aoIssue = [];
+  const rGs = /^GENERIC-SPECIFIC-TREE of /;   // NOT "Name'GENERIC-SPECIFIC-TREE" of another concept
+  const fHead = sPara => (/<br>\*\s*McshEngl\.(\S+?_Gntr)\b/.exec(sPara ?? '') ?? [])[1] ?? null;
+  // index per file: the-cnptSect by id, the-para by id (with its section), the-top GS-TREE
+  const ooFile = {};
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    const oF = { oCnptFile, ooSect: {}, ooPara: {}, sIdTopGs: null };
+    for (const oCnpt of fFindCnpt(oCnptFile, 'cnptSect')) {
+      oF.ooSect[oCnpt.sNameId] = oCnpt;
+      for (const oPara of oCnpt.aoTitlePara ?? [])
+        if (oPara.sNameId) oF.ooPara[oPara.sNameId] = { ...oPara, sIdSect: oCnpt.sNameId };
+      if (!oCnpt.sIdWhole_elmt && rGs.test(oCnpt.sNameTitle ?? '')) oF.sIdTopGs = oCnpt.sNameId;
+    }
+    for (const oPara of oCnptFile.aoTitlePara ?? [])
+      if (oPara.sNameId) oF.ooPara[oPara.sNameId] = { ...oPara, sIdSect: null };
+    ooFile[oCnptFile.sNameFile.replace(/\.last\.html$/, '')] = oF;
+  }
+  // the-concept-key a-target (file, id) means
+  const fKey = (sFile, sId) => {
+    const oF = ooFile[sFile];
+    if (!oF) return null;
+    if (!sId || sId === 'idOverview') return sFile + '#';
+    const sIdSect = oF.ooSect[sId] ? sId : (sId in oF.ooPara ? oF.ooPara[sId].sIdSect : undefined);
+    if (sIdSect === undefined) return null;
+    if (sIdSect === null) return sFile + '#';
+    const oSect = oF.ooSect[sIdSect];
+    if (rGs.test(oSect.sNameTitle ?? '')) return sFile + '#' + (oSect.sIdWhole_elmt ?? '');
+    return sFile + '#' + sIdSect;
+  };
+  // the-generic-tree:: of a-concept: {id}gntr; of the-file-concept: the-top GS-TREE's {B}gntr
+  const fGntr = sKey => {
+    const [sFile, sId] = sKey.split('#');
+    const oF = ooFile[sFile];
+    const sB = sId || (oF.sIdTopGs ? oF.sIdTopGs.replace(/gstr$/, '') : null);
+    const oP = sB ? oF.ooPara[sB + 'gntr'] : null;
+    return oP && oP.sNameTitle === 'generic-tree' ? { sFile, oP } : null;
+  };
+  // the-links of an-item-line: <a href>, name!@McshDir000000#id
+  const fRefs = (sFile, sLine) => {
+    const aoRef = [];
+    for (const aA of sLine.matchAll(/<a\b([^>]*)>([^<]*)<\/a>/g)) {
+      if (/clsHide/.test(aA[1])) continue;
+      const sHref = (/href="([^"]*)"/.exec(aA[1]) ?? [])[1] ?? '';
+      if (sHref.startsWith('#')) { aoRef.push({ sFile, sId: sHref.slice(1), sText: aA[2] }); continue; }
+      const aF = /(?:^|\/)(Mcsh[A-Za-z0-9]+)\.last\.html(?:#(.*))?$/.exec(sHref);
+      if (aF) aoRef.push({ sFile: aF[1], sId: aF[2] ?? null, sText: aA[2] });
+    }
+    for (const aR of sLine.matchAll(/([^\s*,]+?)!@(Mcsh[A-Za-z]*\d{6})?(?:#([^\s,<"':]+))?(?=[,\s]|$)/g))
+      aoRef.push({ sFile: aR[2] ?? sFile, sId: aR[3] ?? null, sText: aR[1] });
+    return aoRef;
+  };
+  const fItems = sPara => (sPara ?? '').split('\n').map(s => s.trim()).filter(s => /^<br>\*/.test(s));
+  // X_Gntr name → concept-key
+  const oNameGntr = {};
+  for (const [sFile, oF] of Object.entries(ooFile)) {
+    for (const [sId, oP] of Object.entries(oF.ooPara)) {
+      if (oP.sNameTitle !== 'generic-tree') continue;
+      const sHead = fHead(oP.sPara);
+      const sB = sId.replace(/gntr$/, '');
+      const sKey = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sId);
+      if (sHead && sKey) oNameGntr[sHead] = sKey;
+    }
+  }
+  // the-generics of a-concept, from its generic-tree:: (null: no generic-tree)
+  const ooGeneric = {};
+  const fGenerics = sKey => {
+    if (sKey in ooGeneric) return ooGeneric[sKey];
+    const oG = fGntr(sKey);
+    if (!oG) return (ooGeneric[sKey] = null);
+    const oSetKey = new Set();
+    for (const sLine of fItems(oG.oP.sPara)) {
+      if (/^<br>\*\s*(McshEngl\.|\.\.\.)/.test(sLine)) continue;
+      for (const aN of sLine.matchAll(/([^\s*,]+_Gntr)(?=[,\s]|$)/g)) if (oNameGntr[aN[1]]) oSetKey.add(oNameGntr[aN[1]]);
+      for (const oR of fRefs(oG.sFile, sLine)) { const sK = fKey(oR.sFile, oR.sId); if (sK) oSetKey.add(sK); }
+    }
+    return (ooGeneric[sKey] = { oSetKey, oG });
+  };
+  // Y reaches X through its generic-chain
+  const fReaches = (sKeyY, sKeyX) => {
+    const oSeen = new Set([sKeyY]);
+    let aQueue = [sKeyY];
+    for (let n = 0; n < 12 && aQueue.length; n++) {
+      const aNext = [];
+      for (const sK of aQueue) for (const sG of fGenerics(sK)?.oSetKey ?? []) {
+        if (sG === sKeyX) return true;
+        if (!oSeen.has(sG)) { oSeen.add(sG); aNext.push(sG); }
+      }
+      aQueue = aNext;
+    }
+    return false;
+  };
+  // Y is a-part-section of X
+  const fInside = (sKeyY, sKeyX) => {
+    const [sFileY, sIdY] = sKeyY.split('#'), [sFileX, sIdX] = sKeyX.split('#');
+    if (sFileY !== sFileX || !sIdY) return false;
+    if (!sIdX) return true;
+    let oS = ooFile[sFileY].ooSect[sIdY];
+    while (oS && oS.sIdWhole_elmt) {
+      if (oS.sIdWhole_elmt === sIdX) return true;
+      oS = ooFile[sFileY].ooSect[oS.sIdWhole_elmt];
+    }
+    return false;
+  };
+  for (const [sFile, oF] of Object.entries(ooFile)) {
+    for (const [sIdPara, oP] of Object.entries(oF.ooPara)) {
+      if (oP.sNameTitle !== 'specific-tree') continue;
+      const sB = sIdPara.replace(/sptr[A-Z0-9]?$/, '');
+      const sKeyX = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sIdPara);
+      if (!sKeyX) continue;
+      const oGX = fGntr(sKeyX);
+      const sNameX = (oGX && fHead(oGX.oP.sPara)) || sKeyX;
+      const oSectX = oF.ooSect[sKeyX.split('#')[1]] ?? null;
+      let bAfter = false, bWeb = false;
+      for (const sLine of (oP.sPara ?? '').split('\n').map(s => s.trim())) {
+        if (/^<br>===/.test(sLine)) { bAfter = true; bWeb = /address/i.test(sLine); continue; }
+        if (!bAfter || bWeb || !/^<br>\*/.test(sLine)) continue;
+        for (const oR of fRefs(sFile, sLine)) {
+          const sKeyY = fKey(oR.sFile, oR.sId);
+          if (!sKeyY || sKeyY === sKeyX) continue;
+          const oGen = fGenerics(sKeyY);
+          if (oGen && oGen.oSetKey.has(sKeyX)) continue;
+          if (!oGen && fInside(sKeyY, sKeyX)) continue;
+          if (oGen && fReaches(sKeyY, sKeyX)) continue;
+          const sWhere = oGen ? `${oGen.oG.sFile}:${ooFile[oGen.oG.sFile].oCnptFile.oMapIdLine?.get(oGen.oG.oP.sNameId) ?? '?'}` : '';
+          aoIssue.push(fIssue('WARN', 'MvrlGstr01', oF.oCnptFile.sNameFile, oSectX,
+            oGen
+              ? `specific_has_generic: "${oR.sText}" is a specific of ${sNameX}, but its generic-tree:: (${sWhere}) does not list it`
+              : `specific_has_generic: "${oR.sText}" (${sKeyY}) is a specific of ${sNameX}, but has no generic-tree::`,
+            oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
+        }
+      }
+    }
+  }
+  return aoIssue;
 }
 
 // ⚠️ [MvrlId03] space_in_id: an-id="..." or a-link href="...#..." (NOT http) has a-space
@@ -531,6 +687,16 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoIdGntr = fCheckIdGntr(aoCnptFile);
   aoAll.push(...aoIdGntr);
   fLog(`${aoIdGntr.length} issues`);
+
+  fWrite('   MvrlId12  Ids sptr_specific_tree_suffix... ');
+  const aoIdSptr = fCheckIdSptr(aoCnptFile);
+  aoAll.push(...aoIdSptr);
+  fLog(`${aoIdSptr.length} issues`);
+
+  fWrite('   MvrlGstr01 specific_has_generic... ');
+  const aoGstrSpcGnc = fCheckGstrSpecificGeneric(aoCnptFile);
+  aoAll.push(...aoGstrSpcGnc);
+  fLog(`${aoGstrSpcGnc.length} issues`);
 
   return aoAll;
 }

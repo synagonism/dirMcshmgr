@@ -1,0 +1,324 @@
+=== RETITLED (27) — heading "A of X" → "A of M" (X is an alias X!⇒M on the same page)
+  McshHlth000002:127  "face of bodyHumn'head"  →  "face of Hmbdhead"
+  McshHlth000002:223  "WHOLE-PART-TREE of bodyHumn'head"  →  "WHOLE-PART-TREE of Hmbdhead"
+  McshHlth000002:247  "GENERIC-SPECIFIC-TREE of bodyHumn'head"  →  "GENERIC-SPECIFIC-TREE of Hmbdhead"
+  McshHlth000002:292  "01_front-region of bodyHumn'neck"  →  "01_front-region of Hmbdneck"
+  McshHlth000002:315  "02_back-region of bodyHumn'neck"  →  "02_back-region of Hmbdneck"
+  McshHlth000002:339  "03_Adam's-apple of bodyHumn'neck"  →  "03_Adam's-apple of Hmbdneck"
+  McshHlth000002:359  "structure of bodyHumn'neck"  →  "structure of Hmbdneck"
+  McshHlth000002:396  "thorax-region of bodyHumn'torso"  →  "thorax-region of Hmbdtorso"
+  McshHlth000002:418  "breast-region of bodyHumn'thorax"  →  "breast-region of Hmbdthorax"
+  McshHlth000002:441  "abdomen-region of bodyHumn'torso"  →  "abdomen-region of Hmbdtorso"
+  McshHlth000002:465  "waist-region of bodyHumn'abdomen"  →  "waist-region of Hmbdabdomen"
+  McshHlth000002:485  "navel-region of bodyHumn'abdomen"  →  "navel-region of Hmbdabdomen"
+  McshHlth000002:508  "pelvic-region of bodyHumn'torso"  →  "pelvic-region of Hmbdtorso"
+  McshHlth000002:527  "back-region of bodyHumn'torso"  →  "back-region of Hmbdtorso"
+  McshHlth000002:554  "buttocks-region of bodyHumn'torso"  →  "buttocks-region of Hmbdtorso"
+  McshHlth000002:685  "upper-arm of bodyHumn'arm"  →  "upper-arm of Hmbdarm"
+  McshHlth000002:705  "elbow of bodyHumn'arm"  →  "elbow of Hmbdarm"
+  McshHlth000002:726  "lower-arm of bodyHumn'arm"  →  "lower-arm of Hmbdarm"
+  McshHlth000002:846  "hip-region of bodyHumn'lower_limbs"  →  "hip-region of Hmbdlower_limbs"
+  McshHlth000002:870  "leg-region of bodyHumn'lower_limbs"  →  "leg-region of Hmbdlower_limbs"
+  McshHlth000002:890  "upper-leg-region of bodyHumn'leg"  →  "upper-leg-region of Hmbdleg"
+  McshHlth000002:912  "knee-region of bodyHumn'leg"  →  "knee-region of Hmbdleg"
+  McshHlth000002:933  "lower-leg-region of bodyHumn'leg"  →  "lower-leg-region of Hmbdleg"
+  McshHlth000002:955  "foot-region of bodyHumn'lower_limbs"  →  "foot-region of Hmbdlower_limbs"
+  McshHlth000002:13547  "GENERIC-SPECIFIC-TREE of bodyHumn'doing"  →  "GENERIC-SPECIFIC-TREE of Hmbddoing"
+  McshHlth000002:13681  "intensity of bodyHumn'moving"  →  "intensity of Hmbdmoving"
+  McshHlth000002:14200  "defecating of bodyHumn'doing"  →  "defecating of Hmbddoing"
+
+=== NAME-ADDED (27) — name:: lacked M'attname — added at end of the English block (!⇒ the section's own main when it has one)
+  McshHlth000002:141  <br>* McshEngl.Hmbdhead'face!⇒face,
+  McshHlth000002:232  <br>* McshEngl.Hmbdhead'whole-part-tree,
+  McshHlth000002:255  <br>* McshEngl.Hmbdhead'generic-specific-tree,
+  McshHlth000002:308  <br>* McshEngl.Hmbdneck'01_front-region!⇒Hmbdthroat,
+  McshHlth000002:331  <br>* McshEngl.Hmbdneck'02_back-region!⇒Hmbdnape,
+  McshHlth000002:354  <br>* McshEngl.Hmbdneck'03_Adam's-apple!⇒HmbdAdam's_apple,
+  McshHlth000002:369  <br>* McshEngl.Hmbdneck'structure,
+  McshHlth000002:411  <br>* McshEngl.Hmbdtorso'thorax-region!⇒Hmbdthorax,
+  McshHlth000002:435  <br>* McshEngl.Hmbdthorax'breast-region!⇒Hmbdbreast,
+  McshHlth000002:459  <br>* McshEngl.Hmbdtorso'abdomen-region!⇒Hmbdabdomen,
+  McshHlth000002:480  <br>* McshEngl.Hmbdabdomen'waist-region!⇒Hmbdwaist,
+  McshHlth000002:499  <br>* McshEngl.Hmbdabdomen'navel-region!⇒Hmbdnavel,
+  McshHlth000002:522  <br>* McshEngl.Hmbdtorso'pelvic-region!⇒Hmbdpelvis,
+  McshHlth000002:543  <br>* McshEngl.Hmbdtorso'back-region!⇒Hmbdback,
+  McshHlth000002:569  <br>* McshEngl.Hmbdtorso'buttocks-region!⇒Hmbdbuttocks,
+  McshHlth000002:697  <br>* McshEngl.Hmbdarm'upper-arm!⇒upper_arm,
+  McshHlth000002:719  <br>* McshEngl.Hmbdarm'elbow!⇒elbow,
+  McshHlth000002:744  <br>* McshEngl.Hmbdarm'lower-arm!⇒Hmbdforearm,
+  McshHlth000002:861  <br>* McshEngl.Hmbdlower_limbs'hip-region!⇒Hmbdhip,
+  McshHlth000002:884  <br>* McshEngl.Hmbdlower_limbs'leg-region!⇒Hmbdleg,
+  McshHlth000002:904  <br>* McshEngl.Hmbdleg'upper-leg-region!⇒Hmbdupper_leg,
+  McshHlth000002:926  <br>* McshEngl.Hmbdleg'knee-region!⇒Hmbdknee,
+  McshHlth000002:947  <br>* McshEngl.Hmbdleg'lower-leg-region!⇒body'lower_leg,
+  McshHlth000002:969  <br>* McshEngl.Hmbdlower_limbs'foot-region!⇒Hmbdfoot,
+  McshHlth000002:13555  <br>* McshEngl.Hmbddoing'generic-specific-tree,
+  McshHlth000002:13690  <br>* McshEngl.Hmbdmoving'intensity,
+  McshHlth000002:14248  <br>* McshEngl.Hmbddoing'defecating,
+
+=== OTHER-PAGE (49) — X resolves to a main only on another page — not changed
+  McshCor000004:810  "ActgNaming of instrument"  other pages: FinInstrument
+  McshHlth000002:614  "shoulder of upper-limb"  other pages: skeletonLimbUpper
+  McshHlth000002:636  "axilla of upper-limb"  other pages: skeletonLimbUpper
+  McshHlth000002:659  "arm of upper-limb"  other pages: skeletonLimbUpper
+  McshLag000027:1304  "dative of argu"  other pages: Hmnmargu
+  McshOgm000003:597  "influence of behavior"  other pages: SystDynamic'doing
+  McshOgm000003:611  "reward of behavior"  other pages: SystDynamic'doing
+  McshOgm000003:645  "penalty of behavior"  other pages: SystDynamic'doing
+  McshOgm000005:654  "WHOLE-PART-TREE of macromolecule"  other pages: molMacro
+  McshStn000042:4466  "Schoolbook of China"  other pages: SocChna
+  McshStnlaw000004:3911  "Article 103: Definition of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:3922  "Article 104: Retention or loss of the nationality of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:3933  "Article 105: Seizure of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:4006  "Article 110: Right of visit"  other pages: FctgVisiting
+  McshStnlaw000004:4077  "Article 113: Breaking or injury of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:4330  "Article 129: Cooperation in the construction and improvement of means of transport"  other pages: ActgTransporting
+  McshStnlaw000004:4341  "Article 130: Measures to avoid or eliminate delays or other difficulties of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:4552  "Article 144: Transfer of technology"  other pages: tech
+  McshStnlaw000004:7105  "Article 287: Choice of procedure"  other pages: doing
+  McshStnlaw000004:7947  "Article AnxIII.5: Transfer of technology"  other pages: tech
+  McshStnlaw000004:7982  "Article AnxIII.6: Approval of plans of work"  other pages: DongWorking
+  McshStnlaw000004:8233  "Article AnxIII.14: Transfer of data"  other pages: infoData
+  McshStnlaw000004:8576  "Article AnxIV.10: Allocation of net"  other pages: SystNet
+  McshStnlaw000004:10879  "Article 14: Referral of a"  other pages: quantoDefiNoOne
+  McshStnlaw000004:10976  "Article 19: Challenges to the jurisdiction of the Court or the admissibility of a"  other pages: quantoDefiNoOne
+  McshTchInf000006:2251  "naming-convention of identifier"  other pages: nameId
+  McshTchInf000010:6616  "info-resource of tool"  other pages: techTool
+  McshTchInf000014:699  "parameter of function"  other pages: functing
+  McshTchInf000014:711  "return-value of function"  other pages: functing
+  McshTchInf000014:727  "type of function"  other pages: functing
+  McshTchInf000014:797  "body of function"  other pages: functing
+  McshTchInf000014:821  "index-space of function"  other pages: functing
+  McshTchInf000014:835  "calling of function"  other pages: functing
+  McshTchInf000016:1465  "creator (sender) of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000016:1477  "fee of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000021:1212  "price of RAM"  other pages: CmrRam
+  McshTchInf000021:1781  "exchange-ogn of Dasset"  other pages: Agntasset
+  McshTchInf000021:1797  "info-resource of Dasset"  other pages: Agntasset
+  McshTchInf000021:2608  "Ricardian-contract of smart-contract"  other pages: DeContract
+  McshTchInf000021:2626  "immutability of smart-contract"  other pages: DeContract
+  McshTchInf000026:1304  "using-on-public-computers of web-browser"  other pages: appBrowser
+  McshTchInf000028:1360  "structure of state"  other pages: Enttstate | society
+  McshTchInf000028:1375  "Merkle-tree of state"  other pages: Enttstate | society
+  McshTchInf000028:1435  "script of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000028:1458  "argument of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000028:1472  "execution-result of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000028:1490  "event of transaction"  other pages: ActgSfrtransacting
+  McshTchInf000028:2292  "info-resource of program"  other pages: project | Cmprprgm
+  McshTchInf000031:2391  "DOING of bin-algo"  other pages: Pgmg_lagoBnr_algo
+
+=== AMBIGUOUS (0) — X points to several mains on the page — not changed
+
+
+=== NAME-SKIPPED-SPACE (210) — attname has spaces — no M'attname name added
+  McshCor000002:4427  "relation to human-concept of Mcs"
+  McshCor000002:4447  "relation to entity of Mcs"
+  McshCor000002:4487  "relation to object-oriented-programing of Mcs"
+  McshCor000005:2244  "complement of arg of RltnOpposition"
+  McshCor000009:575  "01) generic-entity of ActgMeasuring"
+  McshCor000009:686  "02) specific-entity of ActgMeasuring"
+  McshCor000009:701  "03) measure-unit of ActgMeasuring"
+  McshCor000009:821  "04) abstract-measure of ActgMeasuring"
+  McshCor000009:826  "05) measure of ActgMeasuring"
+  McshCor000009:1095  "06) measurer of ActgMeasuring"
+  McshHlth000002:5067  "acceptable-macronutrient-distribution-ranges (AMDR) of nutrient"
+  McshHlth000016:801  "medication (link) of ThrpPharmaco"
+  McshHlth000019:3656  "07_organBrain (link) of SystNervous"
+  McshLag000003:1612  "data-structure (link) of infoData"
+  McshLag000007:29819  "title-sentence-system (section) of HmnmLogoView"
+  McshLag000008:87  "info of text of Alfa_lago"
+  McshLag000008:100  "syntax-tree of text of Alfa_lago"
+  McshLag000008:114  "node of text of Alfa_lago"
+  McshLag000008:133  "unit of text of Alfa_lago"
+  McshLag000008:172  "unit.term of text of Alfa_lago"
+  McshLag000008:475  "letter.consonant of text of Alfa_lago"
+  McshLag000008:493  "letter.vowel of text of Alfa_lago"
+  McshLag000008:511  "letter.capital of text of Alfa_lago"
+  McshLag000008:524  "letter.small of text of Alfa_lago"
+  McshLag000008:538  "unit.termNo of text of Alfa_lago"
+  McshLag000008:551  "unit-structure of text of Alfa_lago"
+  McshLag000008:592  "word of text of Alfa_lago"
+  McshLag000008:616  "mapping-unit-(text-name) of text of Alfa_lago"
+  McshLag000008:641  "sentence of text of Alfa_lago"
+  McshLag000008:660  "section of text of Alfa_lago"
+  McshLag000008:678  "root-node of text of Alfa_lago"
+  McshLag000009:127  "utterance of speech of Spch_lago"
+  McshLag000009:216  "unit.term-(phoneme) of speech of Spch_lago"
+  McshLag000009:753  "phoneSpch.IPA of speech of Spch_lago"
+  McshLag000009:858  "01-02-03) front-central-back|horizontal-1-2-3 of VowlPhnm"
+  McshLag000009:884  "04-05-06) closed-mid-opened|vertical of VowlPhnm"
+  McshLag000009:917  "07-08) unround-round-1-2 of VowlPhnm"
+  McshLag000009:938  "09) nasal-1-2 of VowlPhnm"
+  McshLag000009:956  "10) aspirated-1-2 of VowlPhnm"
+  McshLag000009:975  "11-12) short-long of VowlPhnm"
+  McshLag000009:3882  "unit.termNo of speech of Spch_lago"
+  McshLag000009:3895  "unit-structure of speech of Spch_lago"
+  McshLag000009:3935  "word of speech of Spch_lago"
+  McshLag000009:3976  "mapping-unit-(speech-name) of speech of Spch_lago"
+  McshLag000009:4000  "sentence of speech of Spch_lago"
+  McshLag000009:4023  "section of speech of Spch_lago"
+  McshLag000009:4041  "root-node of speech of Spch_lago"
+  McshLag000010:319  "output (logu-view) of Sngu_lagu"
+  McshLag000011:553  "04_output (logo-view) of Engl_lago"
+  McshLag000012:318  "output (logo-view) of Espo_lago"
+  McshLag000018:558  "04_output (logo-view) of Zhon_lago"
+  McshLag000018:17314  "Literary-Chinese {~Bce0500..1919} of Zho0Lago"
+  McshLag000018:17367  "04_output (view-logo) of Zhol_lago"
+  McshLag000018:17758  "Old-Chinese {~Bce1250..Bce0206} of Zho0Lago"
+  McshLag000018:17811  "Middle-Chinese {~501..1000} of Zho0Lago"
+  McshLag000018:17875  "Mandarin (官话 / 普通话 / 国语) of Zho0Lago"
+  McshLag000018:18005  "Yue (Cantonese) (粤语 / 广东话) of Zho0Lago"
+  McshLag000018:18079  "Wu (吴语 / Shanghainese, etc.) of Zho0Lago"
+  McshLag000018:18106  "Min (闽语 / Hokkien, Teochew, etc.) of Zho0Lago"
+  McshLag000018:18185  "Jin (晋语) of Zho0Lago"
+  McshLag000018:18268  "Hakka (客家话) of Zho0Lago"
+  McshLag000018:18334  "Xiang (湘语 / Hunanese) of Zho0Lago"
+  McshLag000018:18424  "Gan (赣语) of Zho0Lago"
+  McshLag000020:140  "04_output (logo-view) of Elln_lago"
+  McshLag000027:49  "04_output (logo-view) of Ella_lago"
+  McshLag000028:41  "04_output (logo-view) of Ell0Lago"
+  McshLag000030:147  "04_output (logo-view) of Turk_lago"
+  McshLag000031:80  "04_output (view-logo) of Gstr_lago"
+  McshLag000033:300  "output (logo-view) of Deut_lago"
+  McshLag000034:279  "output (logo-view) of Bcms_lago"
+  McshLag000035:307  "output (logo-view) of Span_lago"
+  McshLag000036:304  "output (logo-view) of Arab_lago"
+  McshLag000036:756  "fatha-a(<span style="font-size:33px;">ـَ</span>) of ArabLetr"
+  McshLag000036:770  "kasra-i(<span style="font-size:33px;">ـِ</span>) of ArabLetr"
+  McshLag000036:784  "damma-u(<span style="font-size:33px;">ـُ</span>) of ArabLetr"
+  McshLag000036:799  "sukun(<span style="font-size:33px;">ـْ</span>) of ArabLetr"
+  McshLag000036:813  "shadda(<span style="font-size:33px;">ـّ</span>) of ArabLetr"
+  McshLag000036:825  "hamza(<span style="font-size:33px;">ء</span>) of ArabLetr"
+  McshLag000037:301  "output (logo-view) of Hiur_lago"
+  McshLag000038:333  "output (logo-view) of Slv0Lago"
+  McshLag000039:329  "output (logo-view) of Ide0_lago"
+  McshLag000040:345  "output (logo-view) of Afa0_lago"
+  McshLag000041:335  "output (logo-view) of Tur0_lago"
+  McshLag000042:308  "output (logo-view) of Asa0_lago"
+  McshLag000043:294  "output (logo-view) of Kora_lago"
+  McshOgm000008:292  "shape of genome of ogmVirus"
+  McshOgm000008:306  "size of genome of ogmVirus"
+  McshOgm000008:774  "disorder-caused (link) of vrsPathogenic"
+  McshOgm000010:60  "03_health (link) of ogmPlant"
+  McshStn000005:93  "satisfier (link) of groupOgsm"
+  McshStn000007:138  "satisfier (link) of societyOgsm"
+  McshStn000012:117  "tech (link) of SocEcon"
+  McshStn000015:289  "info-resource of hiring of OgznPrdg"
+  McshStn000018:2528  "Universal-declaration-of-human-rights (link) of ogznUn"
+  McshStn000018:3239  "Goal 6. Ensure availability and sustainable management of water"
+  McshStn000020:966  "evoluting of Gdp of EuzzEcon"
+  McshStn000020:2515  "compensation of EuwCommissioner of EuoCom"
+  McshStn000020:2530  "info-resource of EuwCommissioner of EuoCom"
+  McshStn000020:5007  "ceilings of output of Eubudget"
+  McshStn000020:5897  "glossary of statistics-explained of EuoStat"
+  McshStn000020:15674  "statistical-article of statistics-explained of EuoStat"
+  McshStn000020:15688  "background-article of statistics-explained of EuoStat"
+  McshStn000023:10078  "attribute of property of scmo"
+  McshStn000031:4690  "hard|soft-sleeper (硬卧 | 软卧) of Chna_train"
+  McshStn000031:7736  "Chapter X. Relationship between the Party and the Communist Youth League of SocChna"
+  McshStn000031:9781  "Section 2: The President of the People's Republic of SocChna"
+  McshStn000041:1330  "relation to Croatian of Sslv_lago"
+  McshStnlaw000002:1989  "Tax Justice Network of lawTax"
+  McshStnlaw000004:2725  "Article 35: Scope of this"
+  McshStnlaw000004:2758  "Article 37: Scope of this"
+  McshStnlaw000004:3257  "Article 63: Stocks occurring within the exclusive economic zones of two"
+  McshStnlaw000004:3658  "Article 86: Application of the provisions of this"
+  McshStnlaw000004:4404  "Article 134: Scope of this"
+  McshStnlaw000004:4588  "Article 146: Protection of human"
+  McshStnlaw000004:5476  "Article 184: Suspension of the exercise of voting"
+  McshStnlaw000004:7078  "Article 285: Application of this"
+  McshStnlaw000004:7572  "Article 314: Amendments to the provisions of this"
+  McshStnlaw000004:8352  "Article AnxIII.19: Revision of contract"
+  McshStnlaw000004:8985  "Article AnxVI.5: Term of office"
+  McshStnlaw000004:9494  "Article AnxVI.40: Applicability of other sections of this"
+  McshStnlaw000004:9943  "Agreement relating to the Implementation of Part XI of the United Nations Convention on the Law of the Sea of 10"
+  McshStnlaw000004:11237  "Article 32: Mistake of fact or mistake of law"
+  McshStnlaw000004:11250  "Article 33: Superior orders and prescription of law"
+  McshStnlaw000004:13119  "Article 107: Transfer of the person upon completion of sentence"
+  McshStnlaw000004:13164  "Article 110: Review by the Court concerning reduction of sentence"
+  McshStnlaw000006:172  "Court of First Instance (Πρωτοδικείο) of lawGrca"
+  McshStnlaw000006:250  "Court of Appeals (Εφετείο) of lawGrca"
+  McshStnlaw000006:279  "Supreme-Civil-and-Criminal-Court-of-Greece (Άρειος Πάγος) of lawGrca"
+  McshStnlaw000006:320  "Court-of-cassation (Εφετείο) of lawGrca"
+  McshStnlaw000006:356  "Court-of-Auditors (Ελεγκτικό Συνέδριο) of lawGrca"
+  McshStnlaw000006:382  "Council-of-State (Συμβούλιο της Επικρατείας) of lawGrca"
+  McshTchInf000003:452  "language (<a class="clsPreview" href="../dirTchInf/McshTchInf000005.last.html#idOverview">link</a>) of software of techCmpr"
+  McshTchInf000006:441  "Sunt.function (f) of Pgmg_lago"
+  McshTchInf000006:1691  "algo (output) of Mchn_lago"
+  McshTchInf000006:1744  "algo (output) of lagTnr"
+  McshTchInf000006:1786  "algo (output) of Pgmg_lagoBnr"
+  McshTchInf000006:1836  "archetype (input) of lagAsm"
+  McshTchInf000006:1848  "algo (output) of lagAsm"
+  McshTchInf000006:1897  "algo (input) of lagBtcd"
+  McshTchInf000006:1948  "archetype (input) of Srcd_lago"
+  McshTchInf000006:1966  "archo-code of archetype of Srcd_lago"
+  McshTchInf000006:1986  "domain of archetype of Srcd_lago"
+  McshTchInf000006:2005  "algorithm (output) of Srcd_lago"
+  McshTchInf000006:2405  "Sunt.character (ch) of Srcd_lago"
+  McshTchInf000006:2445  "Sunt.string (s) of Srcd_lago"
+  McshTchInf000006:2485  "Sunt.boolean (b) of Srcd_lago"
+  McshTchInf000006:2500  "Sunt.number (n) of Srcd_lago"
+  McshTchInf000006:2544  "Sunt.function (f) of Srcd_lago"
+  McshTchInf000006:2630  "Sunt.instance (literal) of Srcd_lago"
+  McshTchInf000008:93  "02_archetype (input) of Hitp_lago"
+  McshTchInf000008:389  "03_web-app-doc (output) of Hitp_lago"
+  McshTchInf000009:1967  "dirMcshmgr (link) of Mcshwv"
+  McshTchInf000010:73  "archetype (input) of Jsgn_lago"
+  McshTchInf000010:92  "algorithm (output) of Jsgn_lago"
+  McshTchInf000012:5212  "field (member) of Pckgjson"
+  McshTchInf000014:49  "archetype (input-doc) of Wasm_lago"
+  McshTchInf000014:90  "algorithm (output-doc) of Wasm_lago"
+  McshTchInf000014:1493  "algo-sentence (instruction) of Wasm_lago"
+  McshTchInf000016:5075  "conference  of AgntBkcn"
+  McshTchInf000016:15276  "8 The timeline of Humaniq"
+  McshTchInf000019:976  "info-resource of law of OgznDao"
+  McshTchInf000029:55  "archetype (input) of Json_lago"
+  McshTchInf000029:68  "document (output) of Json_lago"
+  McshTchInf000030:41  "archetype (input) of Rust_lago"
+  McshTchInf000030:58  "algo (output) of Rust_lago"
+  McshTchInf000030:101  "heap of machine-memory of Rust_lago_algo"
+  McshTchInf000030:118  "stack of machine-memory of Rust_lago_algo"
+  McshTchInf000030:220  "scope of node of Rust_lago_algo"
+  McshTchInf000030:260  "node.named of algo of Rust_lago"
+  McshTchInf000030:273  "node.namedNo of algo of Rust_lago"
+  McshTchInf000030:1257  "Sunt.character (ch) of Rust_lago"
+  McshTchInf000030:1274  "Sunt.string (s) of Rust_lago"
+  McshTchInf000030:1311  "Sunt.boolean (b) of Rust_lago"
+  McshTchInf000030:1324  "Sunt.number (n) of Rust_lago"
+  McshTchInf000030:1715  "Sunt.function (f) of Rust_lago"
+  McshTchInf000030:1773  "overloading of opr of Rust_lago"
+  McshTchInf000030:2444  "Sunt.array (a) of Rust_lago"
+  McshTchInf000030:2458  "Sunt.tuple () of Rust_lago"
+  McshTchInf000030:2471  "Sunt.struct () of Rust_lago"
+  McshTchInf000030:2492  "Sunt.enum () of Rust_lago"
+  McshTchInf000030:2510  "Sunt.trait () of Rust_lago"
+  McshTchInf000030:2527  "Sunt.instance (literal) of Rust_lago"
+  McshTchInf000030:2541  "Sunt.instanceNo (type) of Rust_lago"
+  McshTchInf000030:2657  "pointer of heap-Sunt of Rust_lago"
+  McshTchInf000030:2670  "length of heap-Sunt of Rust_lago"
+  McshTchInf000030:2682  "capacity of heap-Sunt of Rust_lago"
+  McshTchInf000030:3033  "main-module of crate of Rust_lago"
+  McshTchInf000030:3163  "part of prelude of Rust_lago"
+  McshTchInf000030:3192  "std::string::String-struct of prelude of Rust_lago"
+  McshTchInf000030:3212  "std::vec::Vec-struct of prelude of Rust_lago"
+  McshTchInf000030:3259  "Cargo.toml-file of package of Rust_lago"
+  McshTchInf000030:3304  "info-resource of clip of Rust_lago"
+  McshTchInf000030:3348  "bin-code of bin-algo of Rust_lago"
+  McshTchInf000031:49  "archetype (input) of Cppz_lago"
+  McshTchInf000031:62  "algorithm (output) of Cppz_lago"
+  McshTchInf000031:531  "Sunt.character (ch) of Cppz_lago"
+  McshTchInf000031:568  "Sunt.wchar_t (chw) of Cppz_lago"
+  McshTchInf000031:582  "Sunt.string (s) of Cppz_lago"
+  McshTchInf000031:599  "Sunt.boolean (b) of Cppz_lago"
+  McshTchInf000031:624  "Sunt.number (n) of Cppz_lago"
+  McshTchInf000031:844  "Sunt.function (f) of Cppz_lago"
+  McshTchInf000031:1013  "operand of operator of Cppz_lago"
+  McshTchInf000031:1162  "Sunt.array (a) of Cppz_lago"
+  McshTchInf000031:1191  "Sunt.class (c) of Cppz_lago"
+  McshTchInf000031:1327  "Sunt.enumeration (e) of Cppz_lago"
+  McshTchInf000031:1342  "Sunt.structure (sc) of Cppz_lago"
+  McshTchInf000031:1359  "Sunt.template (t) of Cppz_lago"
+  McshTchInf000031:1630  "Sunt.instance (literal) of Cppz_lago"
+  McshTchInf000031:1644  "Sunt.instanceNo (type) of Cppz_lago"
+  McshTchInf000038:711  "Retrieval-Augmented Generation of techLlm"
+

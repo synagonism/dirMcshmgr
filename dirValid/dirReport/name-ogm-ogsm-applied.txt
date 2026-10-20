@@ -1,0 +1,1369 @@
+=== RENAMED (1279 lines, 1375 names) — suffix Ogm → Ogsm (not ids, paths, dirOgm, DisqusDirOgm)
+  McshCor000011:3002  <br>* McshEngl.SystMngOgsm,
+  McshCor000011:3003  <br>* McshEngl.Mnggsyst.001-Ogsm!⇒SystMngOgsm,
+  McshCor000011:3004  <br>* McshEngl.Mnggsyst.Ogsm-001!⇒SystMngOgsm,
+  McshCor000011:3005  <br>* McshEngl.Ogsm'02_SystMngBio!⇒SystMngOgsm,
+  McshCor000011:3006  <br>* McshEngl.Ogsm'managing-system!⇒SystMngOgsm,
+  McshCor000011:3007  <br>* McshEngl.Ogsm'SystMngBio!⇒SystMngOgsm,
+  McshCor000011:3008  <br>* McshEngl.SystMngBio.Ogsm!⇒SystMngOgsm,
+  McshCor000011:3017  <h3 id="idSysMng001att001H3">sensory-sys of SystMngOgsm
+  McshCor000011:3024  <br>* McshEngl.SystMngOgsm'att001-sensory-sys,
+  McshCor000011:3025  <br>* McshEngl.SystMngOgsm'sensory-sys,
+  McshCor000011:3030  <h3 id="idSysMng001att002H3">Infosyst of SystMngOgsm
+  McshCor000011:3037  <br>* McshEngl.SystMngOgsm'att002-Infosyst,
+  McshCor000011:3038  <br>* McshEngl.SystMngOgsm'Infosyst,
+  McshCor000011:3043  <h3 id="idSysMng001dongH3">DOING of SystMngOgsm
+  McshCor000011:3051  <br>* McshEngl.SystMngOgsm'intelligence,
+  McshCor000012:1583  <br>* McshEngl.modelOgsm,
+  McshCor000012:1584  <br>* McshEngl.model.022-organism!⇒modelOgsm,
+  McshCor000012:1585  <br>* McshEngl.model.archo.organism!⇒modelOgsm,
+  McshCor000012:1586  <br>* McshEngl.model.organism!⇒modelOgsm,
+  McshCor000012:1587  <br>* McshEngl.organism-model!⇒modelOgsm,
+  McshHlth000002:40  <br>* McshEngl.bodyOgsm.human!⇒bodyHumn,
+  McshHlth000002:14987  <br>* bodyOgsm,
+  McshHlth000004:58  <br>* McshEngl.cellOgsm.001-human!⇒cell,
+  McshHlth000004:59  <br>* McshEngl.cellOgsm.human-001!⇒cell,
+  McshHlth000004:697  <br>* <a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt024">DnaOgsm</a>,
+  McshHlth000004:1141  <br>× generic: <a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt040">cellOgsm'signaling</a>
+  McshHlth000007:6  <title>Mcsh.healthOgsm!=organism-health
+  McshHlth000007:8  <meta name="keywords" content="health-of-organism, healthOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshHlth000007:16  <br>senso-concept-Mcsh (healthOgsm)
+  McshHlth000007:21  <h1 id="idOverviewH1">overview of healthOgsm
+  McshHlth000007:33  <br>* McshEngl.health-of-organism!⇒healthOgsm,
+  McshHlth000007:34  <br>* McshEngl.healthOgsm!=health-of-organism,
+  McshHlth000007:35  <br>* McshEngl.healthOgsm!~McsHlth000007,
+  McshHlth000007:36  <br>* McshEngl.McshHlth000007.last.html//dirHlth//dirMcsh!⇒healthOgsm,
+  McshHlth000007:37  <br>* McshEngl.dirHlth/McshHlth000007.last.html!⇒healthOgsm,
+  McshHlth000007:38  <br>* McshEngl.healthBio.003-atomic!⇒healthOgsm,
+  McshHlth000007:39  <br>* McshEngl.healthBio.atomic-003!⇒healthOgsm,
+  McshHlth000007:40  <br>* McshEngl.Ogsm'03_health!⇒healthOgsm,
+  McshHlth000007:41  <br>* McshEngl.Ogsm'att010-health!⇒healthOgsm,
+  McshHlth000007:42  <br>* McshEngl.Ogsm'health-att010!⇒healthOgsm,
+  McshHlth000007:47  <h1 id="idHlthOgmatt001H1">01_organism of healthOgsm
+  McshHlth000007:51  <br>· healthOgsm-organism is the-organism that has healthOgsm.
+  McshHlth000007:54  <br>* McshEngl.healthOgsm'01_organism,
+  McshHlth000007:55  <br>* McshEngl.healthOgsm'att001-organism,
+  McshHlth000007:64  <h1 id="idHlthOgmatt002H1">02_disorder of healthOgsm
+  McshHlth000007:71  <br>* McshEngl.healthOgsm'02_disorder,
+  McshHlth000007:72  <br>* McshEngl.healthOgsm'att002-disorder,
+  McshHlth000007:73  <br>* McshEngl.healthOgsm'disorder,
+  McshHlth000007:76  <br>* <a class="clsPreview" href="../dirHlth/McshHlth000010.last.html#idOverview">diseaseOgsm-(socialNo-disorder)</a>,
+  McshHlth000007:82  <h1 id="idHlthOgmatt003H1">03_disorderNo of healthOgsm
+  McshHlth000007:86  <br>· attribute of healthOgsm that is not a-disorder.
+  McshHlth000007:89  <br>* McshEngl.healthOgsm'03_disorderNo,
+  McshHlth000007:90  <br>* McshEngl.healthOgsm'att003-disorderNo,
+  McshHlth000007:91  <br>* McshEngl.healthOgsm'disorderNo,
+  McshHlth000007:96  <h1 id="idHlthOgmatt004H1">04_material of healthOgsm
+  McshHlth000007:100  <br>· healthOgsm-material is any material that affects healthOgsm.
+  McshHlth000007:103  <br>* McshEngl.healthOgsm'04_material,
+  McshHlth000007:104  <br>* McshEngl.healthOgsm'att004_material,
+  McshHlth000007:105  <br>* McshEngl.healthOgsm'material-004,
+  McshHlth000007:106  <br>* McshEngl.materialHlthOgsm,
+  McshHlth000007:107  <br>* McshEngl.material.healthOgsm,
+  McshHlth000007:110  <br>* beneficial-materialHlthOgsm,
+  McshHlth000007:111  <br>* harmful-materialHlthOgsm,
+  McshHlth000007:113  <br>* nutrientOgsm,
+  McshHlth000007:114  <br>* foodOgsm,
+  McshHlth000007:119  <h1 id="idHlthOgmenvFH1">06_environment of healthOgsm
+  McshHlth000007:123  <br>· environment attribute of healthOgsm.
+  McshHlth000007:126  <br>* McshEngl.healthOgsm'06_environment,
+  McshHlth000007:127  <br>* McshEngl.healthOgsm'attEnvironment,
+  McshHlth000007:132  <h1 id="idHlthOgmevogH1">07_evoluting of healthOgsm
+  McshHlth000007:139  <br>* McshEngl.healthOgsm'07_evoluting,
+  McshHlth000007:140  <br>* McshEngl.healthOgsm'attEvoluting,
+  McshHlth000007:141  <br>* McshEngl.evoluting-of-healthOgsm,
+  McshHlth000007:142  <br>* McshEngl.healthOgsm'evoluting,
+  McshHlth000007:147  <h1 id="idHlthOgmwptrH1">WHOLE-PART-TREE of healthOgsm
+  McshHlth000007:153  <br>* McshEngl.healthOgsm'whole-part-tree,
+  McshHlth000007:154  <br>* McshEngl.healthOgsm'part-whole-tree,
+  McshHlth000007:166  <h1 id="idHlthOgmgstrH1">GENERIC-SPECIFIC-TREE of healthOgsm
+  McshHlth000007:172  <br>* McshEngl.healthOgsm'generic-specific-tree,
+  McshHlth000007:173  <br>* McshEngl.healthOgsm'specific-generic-tree,
+  McshHlth000007:182  <br>* McshEngl.healthOgsm.specific,
+  McshHlth000007:185  <br>* good-healthOgsm,
+  McshHlth000007:186  <br>* bad-healthOgsm,
+  McshHlth000007:188  <br>* human-healthOgsm,
+  McshHlth000007:189  <br>* humanNo-healthOgsm,
+  McshHlth000007:190  <br>* animal-healthOgsm,
+  McshHlth000007:191  <br>* plant-healthOgsm,
+  McshHlth000007:195  <h2 id="idHlthOgmScdnWlbgH2">healthOgsm.specs-div.well-being
+  McshHlth000007:199  <br>* good-healthOgsm,
+  McshHlth000007:200  <br>* bad-healthOgsm,
+  McshHlth000007:203  <br>* McshEngl.healthOgsm.spec-div.well-being,
+  McshHlth000007:209  <h1 id="idHlthOgm001H1">healthOgsm.human-001 (<a class="clsPreview" href="../dirHlth/McshHlth000008.last.html#idOverview">link</a>)
+  McshHlth000007:214  <h1 id="idHlthOgm004H1">healthOgsm.animal-004
+  McshHlth000007:221  <br>* McshEngl.healthOgsm.004-animal,
+  McshHlth000007:222  <br>* McshEngl.healthOgsm.animal-004,
+  McshHlth000007:223  <br>* McshEngl.animal-healthOgsm,
+  McshHlth000007:228  <h1 id="idHlthOgm005H1">healthOgsm.plant-005
+  McshHlth000007:235  <br>* McshEngl.healthOgsm.005-plant,
+  McshHlth000007:236  <br>* McshEngl.healthOgsm.plant-005,
+  McshHlth000007:256  healthOgsm
+  McshHlth000007:262  <br>· use the-prefix '<span class="clsColorRed">healthOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-conce
+  McshHlth000007:280  <br>• filMcsHlthOgsm.0-1-0.2019-12-16.last.html: draft creation,
+  McshHlth000008:37  <br>* McshEngl.healthOgsm.001-human!⇒health,
+  McshHlth000008:38  <br>* McshEngl.healthOgsm.human-001!⇒health,
+  McshHlth000010:39  <br>* McshEngl.diseaseOgsm!⇒DissOgsm,
+  McshHlth000010:110  <br>* McshEngl.therapyOgsm,
+  McshHlth000010:111  <br>* McshEngl.DissOgsm'therapy!⇒therapyOgsm,
+  McshHlth000010:112  <br>* McshEngl.DissOgsm'treatment!⇒therapyOgsm,
+  McshHlth000010:113  <br>* McshEngl.therapy-of-organism!⇒therapyOgsm,
+  McshHlth000010:115  <br>* McshElln.θεραπεία-οργανισμού!=therapyOgsm,
+  McshHlth000010:119  <h2 id="idDssOgmthrpFgstrH2">GENERIC-SPECIFIC-TREE of therapyOgsm
+  McshHlth000010:125  <br>* McshEngl.therapyOgsm'generic-specific-tree,
+  McshHlth000010:126  <br>* McshEngl.therapyOgsm'specific-generic-tree,
+  McshHlth000010:134  <br>* McshEngl.therapyOgsm.specific,
+  McshHlth000010:870  <br>* McshEngl.infectiousOgsm!⇒DissOgsmInfectious,
+  McshHlth000010:911  <br>• filMcsDssOgsm.0-1-0.2020-01-12.last.html: draft creation,
+  McshHlth000012:175  <br>· foodOgsm is <a class="clsPreview" href="#idOverview">the-foodBio</a> of an-organism.
+  McshHlth000012:178  <br>* McshEngl.foodOgsm,
+  McshHlth000012:179  <br>* McshEngl.foodBio.001-organism!⇒foodOgsm,
+  McshHlth000012:180  <br>* McshEngl.foodBio.organism-001!⇒foodOgsm,
+  McshHlth000012:181  <br>* McshEngl.Ogsm'08_food!⇒foodOgsm,
+  McshHlth000012:182  <br>* McshEngl.Ogsm'att011-food!⇒foodOgsm,
+  McshHlth000012:183  <br>* McshEngl.Ogsm'food-att011!⇒foodOgsm,
+  McshHlth000012:197  <br>· foodPlnt is the-foodOgsm (= system of nutrients) of a-plant.
+  McshHlth000012:215  <h1 id="idFoodBio004H1">foodBio.groupOgsm-004
+  McshHlth000012:222  <br>* McshEngl.foodBio.004-groupOgsm,
+  McshHlth000012:223  <br>* McshEngl.foodBio.groupOgsm,
+  McshHlth000012:228  <h1 id="idFoodBio005H1">foodBio.oznOgsm-005
+  McshHlth000012:235  <br>* McshEngl.foodBio.005-oznOgsm,
+  McshHlth000012:236  <br>* McshEngl.foodBio.oznOgsm,
+  McshHlth000012:241  <h1 id="idFoodBio006H1">foodBio.societyOgsm-006
+  McshHlth000012:248  <br>* McshEngl.foodBio.006-societyOgsm,
+  McshHlth000012:249  <br>* McshEngl.foodBio.societyOgsm,
+  McshLag000005:37  <br>* McshEngl.lagOgsm!⇒Ogsm_lago,
+  McshNtr000003:456  <br>* McshEngl.atomOgsm,
+  McshNtr000003:457  <br>* McshEngl.MtrlAtom.004-organism!⇒atomOgsm,
+  McshNtr000003:458  <br>* McshEngl.MtrlAtom.organism-004!⇒atomOgsm,
+  McshNtr000003:459  <br>* McshEngl.atom-of-Ogsm-001!⇒atomOgsm,
+  McshNtr000003:460  <br>* McshEngl.bioatom-001!⇒atomOgsm,
+  McshNtr000003:461  <br>* McshEngl.biological-atom!⇒atomOgsm,
+  McshNtr000003:462  <br>* McshEngl.Ogsm'att001-atom!⇒atomOgsm,
+  McshNtr000003:463  <br>* McshEngl.Ogsm'atom-att001!⇒atomOgsm,
+  McshNtr000005:25  <br>· MtrlSysMols is ANY <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idOverview">system</a> of <a class="clsPreview" href="../dirLagNtr/McsNtr
+  McshNtr000006:209  <br>* McshEngl.steroidOgsm,
+  McshNtr000006:210  <br>* McshEngl.ChmcOgc.steroid!⇒steroidOgsm,
+  McshNtr000006:211  <br>* McshEngl.ChmcOgc.001-steroid!⇒steroidOgsm,
+  McshNtr000006:212  <br>* McshEngl.steroid!⇒steroidOgsm,
+  McshNtr000006:213  <br>* McshEngl.steroid-ChmcOgc-001!⇒steroidOgsm,
+  McshNtr000006:217  <h3 id="idChmOgc001gstrH3">GENERIC-SPECIFIC-TREE of steroidOgsm
+  McshNtr000006:223  <br>* McshEngl.steroidOgsm'generic-specific-tree,
+  McshNtr000006:224  <br>* McshEngl.steroidOgsm'specific-generic-tree,
+  McshNtr000006:232  <br>* McshEngl.steroidOgsm.specific,
+  McshNtr000006:235  <br>* steroidOgsm.animal!@McshNtr000006#idChmOgc001001,
+  McshNtr000006:236  <br>* steroidOgsm.plant!@McshNtr000006#idChmOgc001002,
+  McshNtr000006:237  <br>* steroidOgsm.fungal!@McshNtr000006#idChmOgc001003,
+  McshNtr000006:242  <h3 id="idChmOgc001dongH3">DOING of steroidOgsm
+  McshNtr000006:250  <br>* McshEngl.steroidOgsm'doing,
+  McshNtr000006:255  <h3 id="idChmOgc001001H3">steroidOgsm.animal
+  McshNtr000006:266  <br>* McshEngl.steroidOgsm.animal,
+  McshNtr000006:267  <br>* McshEngl.steroidOgsm.001-animal,
+  McshNtr000006:272  <h3 id="idChmOgc001002H3">steroidOgsm.plant
+  McshNtr000006:280  <br>* McshEngl.steroidOgsm.plant,
+  McshNtr000006:281  <br>* McshEngl.steroidOgsm.002-plant,
+  McshNtr000006:286  <h3 id="idChmOgc001003H3">steroidOgsm.fungal
+  McshNtr000006:294  <br>* McshEngl.steroidOgsm.fungal,
+  McshNtr000006:295  <br>* McshEngl.steroidOgsm.003-fungal,
+  McshNtr000010:257  <br>* McshEngl.brainOgsm!⇒brainNatural,
+  McshOgm000003:153  <br>* McshEngl.SystMaterialOgsm!⇒nodeOgmMtrl,
+  McshOgm000003:155  <br>* McshEngl.SystMtrlOgsm!⇒nodeOgmMtrl, {2020-05-13}
+  McshOgm000003:202  <br>* McshEngl.bodyOgsm,
+  McshOgm000003:203  <br>* McshEngl.nodeOgmMtrl.body!⇒bodyOgsm,
+  McshOgm000003:204  <br>* McshEngl.nodeOgmMtrl.001-body!⇒bodyOgsm,
+  McshOgm000003:205  <br>* McshEngl.Ogsm'att013-body!⇒bodyOgsm,
+  McshOgm000003:206  <br>* McshEngl.Ogsm'body-att013!⇒bodyOgsm,
+  McshOgm000003:207  <br>* McshEngl.body-of-Ogsm-att013!⇒bodyOgsm,
+  McshOgm000003:364  <br>* McshEngl.SystOgnOgsm,
+  McshOgm000003:365  <br>* McshEngl.body-system!⇒SystOgnOgsm,
+  McshOgm000003:366  <br>* McshEngl.Ogsm'att027-sys-of-organs!⇒SystOgnOgsm,
+  McshOgm000003:367  <br>* McshEngl.Ogsm'sys-of-organs!⇒SystOgnOgsm,
+  McshOgm000003:368  <br>* McshEngl.Ogsm'SystOgnOgsm!⇒SystOgnOgsm,
+  McshOgm000003:369  <br>* McshEngl.organ-system!⇒SystOgnOgsm,
+  McshOgm000003:408  <br>· materialOgsm is any <a class="clsPreview" href="../dirNtr/McshNtr000002.last.html#idOverview">material (atom, molecule, sys-of-molecules)</a> part of an-o
+  McshOgm000003:414  <br>* McshEngl.materialOgsm,
+  McshOgm000003:698  <br>* McshEngl.reproductionOgsm,
+  McshOgm000003:699  <br>* McshEngl.Ogsm'att025-reproduction!⇒reproductionOgsm,
+  McshOgm000003:700  <br>* McshEngl.Ogsm'reproduction!⇒reproductionOgsm,
+  McshOgm000003:701  <br>* McshEngl.reproduction-of-Ogsm!⇒reproductionOgsm,
+  McshOgm000003:705  <h3 id="idOgmatt025SexlH3">reproductionOgsm.sexual
+  McshOgm000003:728  <br>* McshEngl.reproductionOgsm.sexual,
+  McshOgm000003:729  <br>* McshEngl.sexual-reproductionOgsm,
+  McshOgm000003:734  <h3 id="idOgmatt025SexlNH3">reproductionOgsm.sexualNo
+  McshOgm000003:755  <br>* McshEngl.asexual-reproductionOgsm,
+  McshOgm000003:756  <br>* McshEngl.reproductionOgsm.sexualNo,
+  McshOgm000003:757  <br>* McshEngl.sexualNo-reproductionOgsm,
+  McshOgm000003:1365  <br>* McshEngl.tissueOgsm,
+  McshOgm000003:1366  <br>* McshEngl.Ogsm'att029-tissue!⇒tissueOgsm,
+  McshOgm000003:1367  <br>* McshEngl.Ogsm'tissue!⇒tissueOgsm,
+  McshOgm000003:1368  <br>* McshEngl.ogmCellMany'04_tissue!⇒tissueOgsm,
+  McshOgm000003:1369  <br>* McshEngl.ogmCellMany'att004-tissue!⇒tissueOgsm,
+  McshOgm000003:1370  <br>* McshEngl.ogmCellMany'tissue!⇒tissueOgsm,
+  McshOgm000003:1374  <h3 id="idOgm012att004tsengH3">engineering of tissueOgsm
+  McshOgm000003:1383  <br>* McshEngl.tissueOgsm'engineering,
+  McshOgm000003:1496  <br>* McshEngl.freeOgsm-015,
+  McshOgm000003:1510  <br>* McshEngl.freeNoOgsm-016,
+  McshOgm000003:1856  <br>* McshEngl.groupOgsm'01_organism,
+  McshOgm000003:1857  <br>* McshEngl.groupOgsm'att001-organism,
+  McshOgm000003:1858  <br>* McshEngl.groupOgsm'member,
+  McshOgm000003:1859  <br>* McshEngl.groupOgsm'organism,
+  McshOgm000004:6  <title>Mcsh.molOgsm!=molecule-of-organism
+  McshOgm000004:8  <meta name="keywords" content="molecule-of-organism, molOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshOgm000004:16  <br>senso-concept-Mcsh (molOgsm)
+  McshOgm000004:21  <h1 id="idOverviewH1">overview of molOgsm
+  McshOgm000004:33  <br>* McshEngl.molecule-of-organism!⇒molOgsm,
+  McshOgm000004:34  <br>* McshEngl.molOgsm!=molecule-of-organism,
+  McshOgm000004:35  <br>* McshEngl.molOgsm!~McsOgm000004,
+  McshOgm000004:36  <br>* McshEngl.McshOgm000004.last.html//dirOgm//dirMcsh!⇒molOgsm,
+  McshOgm000004:37  <br>* McshEngl.dirOgm/McshOgm000004.last.html!⇒molOgsm,
+  McshOgm000004:38  <br>* McshEngl.biological-molecule!⇒molOgsm,
+  McshOgm000004:39  <br>* McshEngl.biomolecule!⇒molOgsm,
+  McshOgm000004:40  <br>* McshEngl.moleculeMtrl.001-organism!⇒molOgsm,
+  McshOgm000004:41  <br>* McshEngl.moleculeMtrl.organism-001!⇒molOgsm,
+  McshOgm000004:42  <br>* McshEngl.Ogsm'att002-molecule!⇒molOgsm,
+  McshOgm000004:43  <br>* McshEngl.Ogsm'molecule-002!⇒molOgsm,
+  McshOgm000004:44  <br>* McshEngl.organic-molecule!⇒molOgsm,
+  McshOgm000004:49  <h1 id="idMolOgmatt001H1">01_atom of molOgsm
+  McshOgm000004:57  <br>* McshEngl.molOgsm'atom-001,
+  McshOgm000004:58  <br>* McshEngl.molOgsm'att001-atom,
+  McshOgm000004:59  <br>* McshEngl.atom-of-molOgsm-001,
+  McshOgm000004:64  <h1 id="idMolOgmatt003H1">02_bond of molOgsm
+  McshOgm000004:71  <br>* McshEngl.molOgsm'02_bond,
+  McshOgm000004:72  <br>* McshEngl.molOgsm'bond,
+  McshOgm000004:73  <br>* McshEngl.molOgsm'att003-bond,
+  McshOgm000004:78  <h1 id="idMolOgmatt004H1">03_shape of molOgsm
+  McshOgm000004:84  <br>* McshEngl.molOgsm'03_shape,
+  McshOgm000004:85  <br>* McshEngl.molOgsm'shape,
+  McshOgm000004:86  <br>* McshEngl.molOgsm'att004-shape,
+  McshOgm000004:91  <h1 id="idMolOgmatt005H1">04_size of molOgsm
+  McshOgm000004:97  <br>* McshEngl.molOgsm'04_size,
+  McshOgm000004:98  <br>* McshEngl.molOgsm'04_size,
+  McshOgm000004:103  <h1 id="idMolOgmirscH1">info-resource of molOgsm
+  McshOgm000004:109  <br>* McshEngl.molOgsm'info-resource,
+  McshOgm000004:114  <h1 id="idMolOgmdongH1">DOING of molOgsm
+  McshOgm000004:120  <br>* McshEngl.molOgsm'doing,
+  McshOgm000004:124  <h2 id="idMolOgmatt005H2">production of molOgsm
+  McshOgm000004:130  <br>* McshEngl.molOgsm'att005-production,
+  McshOgm000004:131  <br>* McshEngl.molOgsm'production,
+  McshOgm000004:132  <br>* McshEngl.molOgsm'doing'production,
+  McshOgm000004:137  <h2 id="idMolOgmatt002H2">modification of molOgsm
+  McshOgm000004:145  <br>* McshEngl.molOgsm'modification,
+  McshOgm000004:146  <br>* McshEngl.molOgsm'att002-modification,
+  McshOgm000004:147  <br>* McshEngl.molOgsm'doing'modification,
+  McshOgm000004:153  <h1 id="idMolOgmevogH1">evoluting of molOgsm
+  McshOgm000004:159  <br>* McshEngl.evoluting-of-molOgsm,
+  McshOgm000004:160  <br>* McshEngl.molOgsm'evoluting,
+  McshOgm000004:165  <h1 id="idMolOgmwptrH1">WHOLE-PART-TREE of molOgsm
+  McshOgm000004:171  <br>* McshEngl.molOgsm'whole-part-tree,
+  McshOgm000004:172  <br>* McshEngl.molOgsm'part-whole-tree,
+  McshOgm000004:184  <h1 id="idMolOgmgstrH1">GENERIC-SPECIFIC-TREE of molOgsm
+  McshOgm000004:190  <br>* McshEngl.molOgsm'generic-specific-tree,
+  McshOgm000004:191  <br>* McshEngl.molOgsm'specific-generic-tree,
+  McshOgm000004:200  <br>* McshEngl.molOgsm.specific,
+  McshOgm000004:646  <h1 id="idMolOgm012H1">molOgsm.human-012
+  McshOgm000004:654  <br>* McshEngl.molOgsm.012-human!⇒molHmn,
+  McshOgm000004:655  <br>* McshEngl.molOgsm.human-012!⇒molHmn,
+  McshOgm000004:669  <h1 id="idMolOgm001H1">molOgsm.cell-001 (<a class="clsPreview" href="../dirLagOgm/McshOgm000007.last.html#idCellOgmatt015">link</a>)
+  McshOgm000004:674  <h1 id="idMolOgm002H1">molOgsm.macromolecule-002
+  McshOgm000004:686  <br>* McshEngl.molOgsm.002-macromolecule!⇒molOgmMacro,
+  McshOgm000004:687  <br>* McshEngl.molOgsm.macromolecule-002!⇒molOgmMacro,
+  McshOgm000004:688  <br>* McshEngl.macromoleculeOgsm-002!⇒molOgmMacro,
+  McshOgm000004:689  <br>* McshEngl.molMacroOgsm!⇒molOgmMacro,
+  McshOgm000004:709  <br>* McshEngl.molOgsm.013-macro.human!⇒molHmnMacro,
+  McshOgm000004:710  <br>* McshEngl.molOgsm.macro.human-013!⇒molHmnMacro,
+  McshOgm000004:717  <h1 id="idMolOgm003H1">molOgsm.biopolymer-003
+  McshOgm000004:729  <br>* McshEngl.molOgsm.003-biopolymer,
+  McshOgm000004:730  <br>* McshEngl.molOgsm.biopolymer-003,
+  McshOgm000004:731  <br>* McshEngl.molOgsm.polymer-003,
+  McshOgm000004:733  <br>* McshEngl.biopolymer-molOgsm-003,
+  McshOgm000004:745  <h1 id="idMolOgm004H1">molOgsm.polysaccharide-004
+  McshOgm000004:757  <br>* McshEngl.molOgsm.004-polysaccharide,
+  McshOgm000004:758  <br>* McshEngl.molOgsm.polysaccharide-004,
+  McshOgm000004:760  <br>* McshEngl.polysaccharideOgsm-004,
+  McshOgm000004:765  <h1 id="idMolOgm005H1">molOgsm.carbohydrate-005
+  McshOgm000004:777  <br>* McshEngl.molOgsm.005-carbohydrate,
+  McshOgm000004:778  <br>* McshEngl.molOgsm.carbohydrate-005,
+  McshOgm000004:779  <br>* McshEngl.carbohydrateOgsm-005,
+  McshOgm000004:785  <h1 id="idMolOgm006H1">molOgsm.lipid-006
+  McshOgm000004:798  <br>* McshEngl.molOgsm.006-lipid!⇒molLipid,
+  McshOgm000004:799  <br>* McshEngl.molOgsm.lipid-006!⇒molLipid,
+  McshOgm000004:801  <br>* McshEngl.lipidOgsm!⇒molLipid,
+  McshOgm000004:806  <h1 id="idMolOgm007H1">molOgsm.cellulose-007
+  McshOgm000004:816  <br>* McshEngl.molOgsm.007-cellulose,
+  McshOgm000004:817  <br>* McshEngl.molOgsm.cellulose-007,
+  McshOgm000004:823  <h1 id="idMolOgm008H1">molOgsm.lignin-008
+  McshOgm000004:831  <br>* McshEngl.molOgsm.008-lignin, /lígnin/,
+  McshOgm000004:832  <br>* McshEngl.molOgsm.lignin-008,
+  McshOgm000004:833  <br>* McshEngl.ligninOgsm-008,
+  McshOgm000004:834  <br>* McshEngl.lignin-molOgsm-008,
+  McshOgm000004:845  <h1 id="idMolOgm009H1">molOgsm.melanin-009
+  McshOgm000004:855  <br>* McshEngl.molOgsm.009-melanin,
+  McshOgm000004:856  <br>* McshEngl.molOgsm.melanin-009,
+  McshOgm000004:867  <h1 id="idMolOgm010H1">molOgsm.suberin-010
+  McshOgm000004:875  <br>* McshEngl.molOgsm.010-suberin,
+  McshOgm000004:876  <br>* McshEngl.molOgsm.suberin-010,
+  McshOgm000004:887  <h1 id="idMolOgm011H1">molOgsm.rubber-011
+  McshOgm000004:897  <br>* McshEngl.molOgsm.011-rubber,
+  McshOgm000004:898  <br>* McshEngl.molOgsm.rubber-011,
+  McshOgm000004:907  <h1 id="idMolOgm014H1">molOgsm.plant-014
+  McshOgm000004:914  <br>* McshEngl.molOgsm.014-plant!⇒molPlant,
+  McshOgm000004:915  <br>* McshEngl.molOgsm.plant-014!⇒molPlant,
+  McshOgm000004:922  <h1 id="idMolOgm015H1">molOgsm.antigen-015
+  McshOgm000004:935  <br>* McshEngl.molOgsm.015-antigen!⇒molAntigen,
+  McshOgm000004:936  <br>* McshEngl.molOgsm.antigen-015!⇒molAntigen,
+  McshOgm000004:937  <br>* McshEngl.antigen-molOgsm-015!⇒molAntigen,
+  McshOgm000004:993  <h1 id="idMolOgm016H1">molOgsm.cholesterol-016
+  McshOgm000004:1005  <br>* McshEngl.molOgsm.cholesterol!⇒molCholesterol,
+  McshOgm000004:1007  <br>* McshEngl.cholesterolOgsm!⇒molCholesterol,
+  McshOgm000004:1475  <h1 id="idMolOgm017H1">molOgsm.sterol-017
+  McshOgm000004:1485  <br>* McshEngl.molOgsm.sterol!⇒molSterol,
+  McshOgm000004:1486  <br>* McshEngl.molOgsm.017-sterol!⇒molSterol,
+  McshOgm000004:1504  molOgsm
+  McshOgm000004:1510  <br>· use the-prefix '<span class="clsColorRed">molOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concepts
+  McshOgm000004:1528  <br>• filMcsOgsm-mol.0-1-0.2020-03-25.last.html: draft creation,
+  McshOgm000005:6  <title>Mcsh.SystMolsOgsm!=organism--sys-of-molecules
+  McshOgm000005:8  <meta name="keywords" content="organism-system-of-molecules, SystMolsOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshOgm000005:16  <br>senso-concept-Mcsh (SystMolsOgsm)
+  McshOgm000005:21  <h1 id="idOverviewH1">overview of SystMolsOgsm
+  McshOgm000005:36  <br>* McshEngl.organism-system-of-molecules!⇒SystMolsOgsm,
+  McshOgm000005:37  <br>* McshEngl.SystMolsOgsm!=organism-system-of-molecules,
+  McshOgm000005:38  <br>* McshEngl.SystMolsOgsm!~McsOgm000005,
+  McshOgm000005:39  <br>* McshEngl.McshOgm000005.last.html//dirOgm//dirMcsh!⇒SystMolsOgsm,
+  McshOgm000005:40  <br>* McshEngl.dirOgm/McshOgm000005.last.html!⇒SystMolsOgsm,
+  McshOgm000005:41  <br>* McshEngl.biobolecule-complex!⇒SystMolsOgsm,
+  McshOgm000005:42  <br>* McshEngl.bioSystMolecule-003!⇒SystMolsOgsm,
+  McshOgm000005:43  <br>* McshEngl.MtrlSysMols.001-organism!⇒SystMolsOgsm,
+  McshOgm000005:44  <br>* McshEngl.MtrlSysMols.organism-001!⇒SystMolsOgsm,
+  McshOgm000005:45  <br>* McshEngl.Ogsm'att003-SystMolecules!⇒SystMolsOgsm,
+  McshOgm000005:46  <br>* McshEngl.Ogsm'SystMolecules-003!⇒SystMolsOgsm,
+  McshOgm000005:47  <br>* McshEngl.organism--system-of-molecules!⇒SystMolsOgsm,
+  McshOgm000005:48  <br>* McshEngl.SystMolecules-of-Ogsm-003!⇒SystMolsOgsm,
+  McshOgm000005:53  <h1 id="idSysMolsOgmatt001H1">01_molecule of SystMolsOgsm
+  McshOgm000005:59  <br>* McshEngl.SystMolsOgsm'molecule,
+  McshOgm000005:64  <h1 id="idSysMolsOgmatt002H1">02_atom of SystMolsOgsm
+  McshOgm000005:70  <br>* McshEngl.SystMolsOgsm'atom,
+  McshOgm000005:75  <h1 id="idSysMolsOgmatt003H1">03_intermolecular-bond of SystMolsOgsm
+  McshOgm000005:81  <br>* McshEngl.SystMolsOgsm'intermolecular-bond,
+  McshOgm000005:86  <h1 id="idSysMolsOgmatt004H1">04_physical-property of SystMolsOgsm
+  McshOgm000005:92  <br>* McshEngl.SystMolsOgsm'physical-property,
+  McshOgm000005:97  <h1 id="idSysMolsOgmatt005H1">05_chemical-property of SystMolsOgsm
+  McshOgm000005:103  <br>* McshEngl.SystMolsOgsm'chemical-property,
+  McshOgm000005:108  <h1 id="idSysMolsOgmirscH1">info-resource of SystMolsOgsm
+  McshOgm000005:114  <br>* McshEngl.SystMolsOgsm'attResource,
+  McshOgm000005:115  <br>* McshEngl.SystMolsOgsm'info-resource,
+  McshOgm000005:120  <h1 id="idSysMolsOgmsrtrFH1">structure of SystMolsOgsm
+  McshOgm000005:126  <br>* McshEngl.SystMolsOgsm'attStructure,
+  McshOgm000005:127  <br>* McshEngl.SystMolsOgsm'structure,
+  McshOgm000005:132  <h1 id="idSysMolsOgmdongH1">DOING of SystMolsOgsm
+  McshOgm000005:138  <br>* McshEngl.SystMolsOgsm'attDoing,
+  McshOgm000005:139  <br>* McshEngl.SystMolsOgsm'doing,
+  McshOgm000005:144  <h1 id="idSysMolsOgmevogH1">evoluting of SystMolsOgsm
+  McshOgm000005:150  <br>* McshEngl.SystMolsOgsm'attEvoluting,
+  McshOgm000005:151  <br>* McshEngl.evoluting-of-SystMolsOgsm,
+  McshOgm000005:152  <br>* McshEngl.SystMolsOgsm'evoluting,
+  McshOgm000005:157  <h1 id="idSysMolsOgmwptrH1">WHOLE-PART-TREE of SystMolsOgsm
+  McshOgm000005:163  <br>* McshEngl.SystMolsOgsm'whole-part-tree,
+  McshOgm000005:164  <br>* McshEngl.SystMolsOgsm'part-whole-tree,
+  McshOgm000005:176  <h1 id="idSysMolsOgmgstrH1">GENERIC-SPECIFIC-TREE of SystMolsOgsm
+  McshOgm000005:182  <br>* McshEngl.SystMolsOgsm'generic-specific-tree,
+  McshOgm000005:183  <br>* McshEngl.SystMolsOgsm'specific-generic-tree,
+  McshOgm000005:191  <br>* McshEngl.SystMolsOgsm.specific,
+  McshOgm000005:199  <h1 id="idSysMolsHmnH1">SystMolsOgsm.human-001
+  McshOgm000005:207  <br>* McshEngl.SystMolsOgsm.001-human!⇒SystMolsHmn,
+  McshOgm000005:208  <br>* McshEngl.SystMolsOgsm.human-001!⇒SystMolsHmn,
+  McshOgm000005:1144  <h1 id="idHrmnOgmH1">SystMolsOgsm.hormone-003
+  McshOgm000005:1155  <br>* McshEngl.hormoneOgsm,
+  McshOgm000005:1156  <br>* McshEngl.signalOgsm.006-hormone!⇒hormoneOgsm,
+  McshOgm000005:1157  <br>* McshEngl.signalOgsm.hormone!⇒hormoneOgsm,
+  McshOgm000005:1158  <br>* McshEngl.SystMolsOgsm.003-hormone!⇒hormoneOgsm,
+  McshOgm000005:1159  <br>* McshEngl.SystMolsOgsm.hormone-003!⇒hormoneOgsm,
+  McshOgm000005:1160  <br>* McshEngl.cellOgsm'signal.hormone!⇒hormoneOgsm,
+  McshOgm000005:1161  <br>* McshEngl.cellOgsm'signal.003-hormone!⇒hormoneOgsm,
+  McshOgm000005:1165  <h2 id="idHrmnOgmgstrH2">GENERIC-SPECIFIC-TREE of hormoneOgsm
+  McshOgm000005:1171  <br>* McshEngl.hormoneOgsm'generic-specific-tree,
+  McshOgm000005:1172  <br>* McshEngl.hormoneOgsm'specific-generic-tree,
+  McshOgm000005:1180  <br>* McshEngl.hormoneOgsm.specific,
+  McshOgm000005:1183  <br>* hormoneOgsm.plant!@McshOgm000005#idHrmnOgm001,
+  McshOgm000005:1188  <h2 id="idHrmnOgm001H2">hormoneOgsm.plant
+  McshOgm000005:1198  <br>* McshEngl.hormoneOgsm.001-plant!⇒hormonePlant,
+  McshOgm000005:1199  <br>* McshEngl.hormoneOgsm.plant-001!⇒hormonePlant,
+  McshOgm000005:1200  <br>* McshEngl.plant-hormoneOgsm-001!⇒hormonePlant,
+  McshOgm000005:1206  <h1 id="idHrmnHmnH1">SystMolsOgsm.hormoneHumn
+  McshOgm000005:1232  <br>* McshEngl.SystMolsOgsm.hormoneHumn!⇒hormoneHumn,
+  McshOgm000005:3060  <h1 id="idSysMolsPlntH1">SystMolsOgsm.plant-002
+  McshOgm000005:3067  <br>* McshEngl.SystMolsOgsm.002-plant!⇒SystMolsPlnt,
+  McshOgm000005:3068  <br>* McshEngl.SystMolsOgsm.plant-002!⇒SystMolsPlnt,
+  McshOgm000005:3069  <br>* McshEngl.ogmPlant'att006-SystMolsOgsm!⇒SystMolsPlnt,
+  McshOgm000005:3070  <br>* McshEngl.ogmPlant'SystMolsOgsm-att006!⇒SystMolsPlnt,
+  McshOgm000005:3075  <h1 id="idSysMolsOgm004H1">SystMolsOgsm.blood-004
+  McshOgm000005:3090  <br>* McshEngl.SystMolsOgsm.blood!⇒fluidBlood,
+  McshOgm000005:3092  <br>* McshEngl.bloodOgsm!⇒fluidBlood,
+  McshOgm000005:3093  <br>* McshEngl.SystMolsOgsm.004-blood!⇒fluidBlood,
+  McshOgm000005:3098  <h1 id="idFldHmn001H1">SystMolsOgsm.bloodHmn
+  McshOgm000005:3114  <br>* McshEngl.SystMolsOgsm.bloodHmn!⇒bloodHmn,
+  McshOgm000005:3639  <h1 id="idSysMolsOgm005H1">SystMolsOgsm.neurotransmitter-005
+  McshOgm000005:3647  <br>* McshEngl.ChmcNeurotransmitterOgsm,
+  McshOgm000005:3648  <br>* McshEngl.signalOgsm.007-neurotransmitter!⇒ChmcNeurotransmitterOgsm,
+  McshOgm000005:3649  <br>* McshEngl.signalOgsm.neurotransmitter!⇒ChmcNeurotransmitterOgsm,
+  McshOgm000005:3650  <br>* McshEngl.SystMolsOgsm.005-neurotransmitter!⇒ChmcNeurotransmitterOgsm,
+  McshOgm000005:3651  <br>* McshEngl.SystMolsOgsm.neurotransmitter!⇒ChmcNeurotransmitterOgsm,
+  McshOgm000005:3652  <br>* McshEngl.neurotransmitter!⇒ChmcNeurotransmitterOgsm,
+  McshOgm000005:3660  <h1 id="idSysMolsOgm006H1">SystMolsOgsm.cytokine-006
+  McshOgm000005:3669  <br>* McshEngl.ChmcCytokineOgsm,
+  McshOgm000005:3670  <br>* McshEngl.signalOgsm.008-cytokine!⇒ChmcCytokineOgsm,
+  McshOgm000005:3671  <br>* McshEngl.SystMolsOgsm.cytokine!⇒ChmcCytokineOgsm,
+  McshOgm000005:3672  <br>* McshEngl.SystMolsOgsm.006-cytokine!⇒ChmcCytokineOgsm,
+  McshOgm000005:3673  <br>* McshEngl.cytokine!⇒ChmcCytokineOgsm,
+  McshOgm000005:3678  <h1 id="idSysMolsOgm007H1">SystMolsOgsm.growth-factor-007
+  McshOgm000005:3688  <br>* McshEngl.SystMolsOgsm.growth-factor-007,
+  McshOgm000005:3689  <br>* McshEngl.SystMolsOgsm.007-growth-factor,
+  McshOgm000005:3690  <br>* McshEngl.growth-factor-of-SystMolsOgsm,
+  McshOgm000005:3695  <h1 id="idSysMolsOgm008H1">SystMolsOgsm.pheromone-008
+  McshOgm000005:3704  <br>* McshEngl.SystMolsOgsm.pheromone-008!⇒ChmcPheromone,
+  McshOgm000005:3705  <br>* McshEngl.SystMolsOgsm.008-pheromone!⇒ChmcPheromone,
+  McshOgm000005:3706  <br>* McshEngl.pheromone-SystMolsOgsm!⇒ChmcPheromone,
+  McshOgm000005:3723  SystMolsOgsm
+  McshOgm000005:3729  <br>· use the-prefix '<span class="clsColorRed">SystMolsOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-con
+  McshOgm000005:3747  <br>• filMcsOgsm-SystMols.0-1-0.2020-04-06.last.html: draft creation,
+  McshOgm000006:39  <br>* McshEngl.proteinOgsm!⇒MolProtein,
+  McshOgm000006:1443  <br>* McshEngl.proteinEnzymeOgsm!⇒prtnEnzyme,
+  McshOgm000006:1719  <br>• filMcsOgsm-prtn.0-1-0.2020-03-25.last.html: draft creation,
+  McshOgm000007:6  <title>Mcsh.cellOgsm!=cell-of-organism
+  McshOgm000007:8  <meta name="keywords" content="cell-of-organism, cellOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshOgm000007:16  <br>senso-concept-Mcsh (cellOgsm)
+  McshOgm000007:21  <h1 id="idOverviewH1">overview of cellOgsm
+  McshOgm000007:32  <br>* McshEngl.cell-of-organism!⇒cellOgsm, /sel/,
+  McshOgm000007:33  <br>* McshEngl.cellOgsm!=cell-of-organism,
+  McshOgm000007:34  <br>* McshEngl.cellOgsm!~McsOgm000007,
+  McshOgm000007:35  <br>* McshEngl.McshOgm000007.last.html//dirOgm//dirMcsh!⇒cellOgsm,
+  McshOgm000007:36  <br>* McshEngl.dirOgm/McshOgm000007.last.html!⇒cellOgsm,
+  McshOgm000007:37  <br>* McshEngl.biological-cell!⇒cellOgsm,
+  McshOgm000007:38  <br>* McshEngl.Ogsm'att030-cell!⇒cellOgsm,
+  McshOgm000007:39  <br>* McshEngl.Ogsm'cell!⇒cellOgsm,
+  McshOgm000007:41  <br>* McshZhon.xìbāo-细胞-(細胞)!=cellOgsm,
+  McshOgm000007:42  <br>* McshZhon.细胞-(細胞)-xìbāo!=cellOgsm,
+  McshOgm000007:44  <br>* McshEspo.ĉelo!=cellOgsm,
+  McshOgm000007:46  <br>* McshElln.κύτταρο-βιολογικό!=cellOgsm,
+  McshOgm000007:51  <h1 id="idCellOgmatt013H1">01_disease of cellOgsm
+  McshOgm000007:58  <br>* McshEngl.cellOgsm'01_disease,
+  McshOgm000007:59  <br>* McshEngl.cellOgsm'att013-disease,
+  McshOgm000007:60  <br>* McshEngl.cellOgsm'disease,
+  McshOgm000007:65  <h1 id="idCellOgmatt001H1">02_membrane of cellOgsm
+  McshOgm000007:77  <br>* McshEngl.cellOgsm'membrane,
+  McshOgm000007:78  <br>* McshEngl.cellOgsm'02_membrane!⇒cellOgsm'membrane, /membréin/,
+  McshOgm000007:79  <br>* McshEngl.cellOgsm'membrane-001!⇒cellOgsm'membrane,
+  McshOgm000007:80  <br>* McshEngl.cellOgsm'att001-membrane!⇒cellOgsm'membrane,
+  McshOgm000007:81  <br>* McshEngl.membrane-of-cellOgsm!⇒cellOgsm'membrane,
+  McshOgm000007:82  <br>* McshEngl.cell-membrane!⇒cellOgsm'membrane,
+  McshOgm000007:83  <br>* McshEngl.plasma-membrane!⇒cellOgsm'membrane,
+  McshOgm000007:87  <h2 id="idCellOgmatt001ptslH2">potential of cellOgsm'membrane
+  McshOgm000007:99  <br>* McshEngl.cellOgsm'membrane'potential,
+  McshOgm000007:107  <h1 id="idCellOgmatt012H1">03_cytoplasm of cellOgsm
+  McshOgm000007:119  <br>* McshEngl.cellOgsm'03_cytoplasm, /sáitoplasm/,
+  McshOgm000007:120  <br>* McshEngl.cellOgsm'att012-cytoplasm, /sáitoplasm/,
+  McshOgm000007:121  <br>* McshEngl.cellOgsm'cytoplasm-012,
+  McshOgm000007:122  <br>* McshEngl.cytoplasm-of-cellOgsm-012,
+  McshOgm000007:127  <h1 id="idCellOgmatt003H1">04_organelle of cellOgsm
+  McshOgm000007:136  <br>* McshEngl.cellOgsm'04_organelle,
+  McshOgm000007:137  <br>* McshEngl.cellOgsm'att003-organelle,
+  McshOgm000007:138  <br>* McshEngl.cellOgsm'organelle-003,
+  McshOgm000007:143  <h1 id="idCellOgmatt002H1">05_genetic-material of cellOgsm
+  McshOgm000007:164  <br>* McshEngl.cellOgsm'05_matterGenetic!⇒acidNucleic,
+  McshOgm000007:165  <br>* McshEngl.cellOgsm'att002-genetic-material!⇒acidNucleic,
+  McshOgm000007:166  <br>* McshEngl.cellOgsm'matterGenetic-002!⇒acidNucleic,
+  McshOgm000007:167  <br>* McshEngl.cellOgsm'genetic-material-002!⇒acidNucleic,
+  McshOgm000007:175  <h2 id="idCellOgmatt026H2">nucleotide of cellOgsm
+  McshOgm000007:181  <br>* McshEngl.cellOgsm'att026-nucleotide,
+  McshOgm000007:182  <br>* McshEngl.cellOgsm'nucleotide-026,
+  McshOgm000007:183  <br>* McshEngl.nucleotide-of-cellOgsm-026,
+  McshOgm000007:189  <h2 id="idCellOgmatt023H2">gene-product of cellOgsm
+  McshOgm000007:202  <br>* McshEngl.cellOgsm'att023-gene-product,
+  McshOgm000007:203  <br>* McshEngl.cellOgsm'gene-product,
+  McshOgm000007:204  <br>* McshEngl.gene-product-of-cellOgsm,
+  McshOgm000007:210  <h2 id="idCellOgmatt024H2">DNA of cellOgsm
+  McshOgm000007:221  <br>* McshEngl.cellOgsm'att024-Dna,
+  McshOgm000007:222  <br>* McshEngl.cellOgsm'Dna-024,
+  McshOgm000007:223  <br>* McshEngl.Dna-of-cellOgsm-024,
+  McshOgm000007:229  <h2 id="idCellOgmatt025H2">RNA of cellOgsm
+  McshOgm000007:240  <br>* McshEngl.cellOgsm'att025-Rna,
+  McshOgm000007:241  <br>* McshEngl.cellOgsm'Rna-025,
+  McshOgm000007:242  <br>* McshEngl.Rna-cellOgsm-025,
+  McshOgm000007:249  <h1 id="idCellOgmatt034H1">06_SystMaterial of cellOgsm
+  McshOgm000007:255  <br>* McshEngl.cellOgsm'06_SystMaterial,
+  McshOgm000007:256  <br>* McshEngl.cellOgsm'att034-SystMaterial,
+  McshOgm000007:257  <br>* McshEngl.cellOgsm'SystMaterial-att034,
+  McshOgm000007:258  <br>* McshEngl.SystMaterial-of-cellOgsm-att034,
+  McshOgm000007:263  <h1 id="idCellOgmatt014H1">07_SystMolecules of cellOgsm
+  McshOgm000007:270  <br>* McshEngl.cellOgsm'07_matterSubobjo,
+  McshOgm000007:271  <br>* McshEngl.cellOgsm'att014_matterSubobjo,
+  McshOgm000007:272  <br>* McshEngl.cellOgsm'matterSubobjo,
+  McshOgm000007:273  <br>* McshEngl.SystMolecules-of-cellOgsm,
+  McshOgm000007:278  <h1 id="idCellOgmatt015H1">08_molecule of cellOgsm
+  McshOgm000007:284  <br>* McshEngl.cellOgsm'08_molecule,
+  McshOgm000007:285  <br>* McshEngl.cellOgsm'att015-molecule,
+  McshOgm000007:286  <br>* McshEngl.cellOgsm'molecule-att015,
+  McshOgm000007:287  <br>* McshEngl.biomolecule-of-cellOgsm,
+  McshOgm000007:288  <br>* McshEngl.molOgsm.001-cell,
+  McshOgm000007:289  <br>* McshEngl.molOgsm.cell-001,
+  McshOgm000007:290  <br>* McshEngl.molecule-of-cellOgsm,
+  McshOgm000007:295  <h1 id="idCellOgmatt016H1">09_atom of cellOgsm
+  McshOgm000007:299  <br>· atoms parts of cellOgsm.
+  McshOgm000007:302  <br>* McshEngl.cellOgsm'09_matterAtom,
+  McshOgm000007:303  <br>* McshEngl.cellOgsm'att015-matterAtom,
+  McshOgm000007:304  <br>* McshEngl.cellOgsm'matterAtom-att015,
+  McshOgm000007:305  <br>* McshEngl.cellOgsm'atom-att015,
+  McshOgm000007:306  <br>* McshEngl.atom-of-cellOgsm,
+  McshOgm000007:311  <h1 id="idCellOgmatt011H1">10_size of cellOgsm
+  McshOgm000007:324  <br>* McshEngl.cellOgsm'10_size,
+  McshOgm000007:325  <br>* McshEngl.cellOgsm'att011-size,
+  McshOgm000007:326  <br>* McshEngl.cellOgsm'size-011,
+  McshOgm000007:331  <h1 id="idCellOgmatt017H1">11_shape of cellOgsm
+  McshOgm000007:337  <br>* McshEngl.cellOgsm'11_shape,
+  McshOgm000007:338  <br>* McshEngl.cellOgsm'att017-shape,
+  McshOgm000007:339  <br>* McshEngl.cellOgsm'shape,
+  McshOgm000007:344  <h1 id="idCellOgmattMisH1">MISC-ATTRIBUTE of cellOgsm
+  McshOgm000007:350  <br>* McshEngl.cellOgsm'attMisc,
+  McshOgm000007:354  <h2 id="idCellOgmatt038H2">junction of cellOgsm
+  McshOgm000007:369  <br>* McshEngl.cellOgsm'att038-junction,
+  McshOgm000007:370  <br>* McshEngl.cellOgsm'gap-junction,
+  McshOgm000007:371  <br>* McshEngl.cellOgsm'junction,
+  McshOgm000007:373  <br>* McshEngl.cellOgsm'attMisc'junction,
+  McshOgm000007:379  <h1 id="idCellOgmirscH1">info-resource of cellOgsm
+  McshOgm000007:387  <br>* McshEngl.cellOgsm'info-resource,
+  McshOgm000007:391  <h2 id="idCellOgmatt005H2">cell-biology of cellOgsm
+  McshOgm000007:399  <br>* McshEngl.cellOgsm'att005-cell-biology,
+  McshOgm000007:400  <br>* McshEngl.cellOgsm'cell-biology-005,
+  McshOgm000007:406  <br>* McshEngl.cellOgsm'info-resource'cell-biology,
+  McshOgm000007:411  <h2 id="idCellOgmatt004H2">cell-theory of cellOgsm
+  McshOgm000007:419  <br>* McshEngl.cellOgsm'att004-cell-theory,
+  McshOgm000007:420  <br>* McshEngl.cellOgsm'cell-theory-004,
+  McshOgm000007:423  <br>* McshEngl.cellOgsm'info-resource'cell-theory,
+  McshOgm000007:428  <h2 id="idCellOgmatt018H2">mechanobiology of cellOgsm
+  McshOgm000007:446  <br>* McshEngl.cellOgsm'info-resource'mechanobiology!⇒cellogm'att018-me,
+  McshOgm000007:452  <h1 id="idCellOgmsrtrFH1">structure of cellOgsm
+  McshOgm000007:458  <br>* McshEngl.cellOgsm'structure,
+  McshOgm000007:463  <h1 id="idCellOgmdongH1">DOING of cellOgsm
+  McshOgm000007:471  <br>* McshEngl.cellOgsm'doing,
+  McshOgm000007:480  <h2 id="idCellOgmatt037H2">adhetion of cellOgsm
+  McshOgm000007:488  <br>* McshEngl.cellOgsm'att037-adhetion,
+  McshOgm000007:489  <br>* McshEngl.cellOgsm'adhetion-att037,
+  McshOgm000007:490  <br>* McshEngl.cellOgsm'doing'adhetion,
+  McshOgm000007:495  <h2 id="idCellOgmatt036H2">migration of cellOgsm
+  McshOgm000007:504  <br>* McshEngl.cellOgsm'att036-migration,
+  McshOgm000007:505  <br>* McshEngl.cellOgsm'migration-att036,
+  McshOgm000007:506  <br>* McshEngl.cellOgsm'motility,
+  McshOgm000007:507  <br>* McshEngl.cellOgsm'doing'migration,
+  McshOgm000007:512  <h2 id="idCellOgmatt035H2">cell-to-cell-interaction of cellOgsm
+  McshOgm000007:520  <br>* McshEngl.cellOgsm'att035-cell-to-cell-interaction,
+  McshOgm000007:521  <br>* McshEngl.cellOgsm'cell-to-cell-interaction-att035,
+  McshOgm000007:523  <br>* McshEngl.cellOgsm'doing'cell-to-cell-interaction,
+  McshOgm000007:527  <h3 id="idCellOgmatt039H3">interaction.transient of cellOgsm
+  McshOgm000007:533  <br>* McshEngl.cellOgsm'att039-interaction.transient,
+  McshOgm000007:534  <br>* McshEngl.cellOgsm'interaction.transient-att039,
+  McshOgm000007:541  <h2 id="idCellOgmatt010H2">DNA-repair of cellOgsm
+  McshOgm000007:549  <br>* McshEngl.cellOgsm'att010-DNA-repair,
+  McshOgm000007:550  <br>* McshEngl.cellOgsm'DNA-repair-010,
+  McshOgm000007:551  <br>* McshEngl.cellOgsm'doing'DNA-repair,
+  McshOgm000007:556  <h2 id="idCellOgmatt009H2">metabolism of cellOgsm
+  McshOgm000007:564  <br>* McshEngl.cellOgsm'att009-metabolism,
+  McshOgm000007:565  <br>* McshEngl.cellOgsm'metabolism-009,
+  McshOgm000007:566  <br>* McshEngl.cellOgsm'doing'metabolism,
+  McshOgm000007:571  <h2 id="idCellOgmatt007H2">protein-synthesis of cellOgsm
+  McshOgm000007:580  <br>* McshEngl.cellOgsm'att007-protein-synthesis,
+  McshOgm000007:581  <br>* McshEngl.cellOgsm'doing'protein-synthesis!⇒cellOgsm'att007-protein-synthesis,
+  McshOgm000007:586  <h2 id="idCellOgmatt006H2">motility of cellOgsm
+  McshOgm000007:595  <br>* McshEngl.cellOgsm'att006-motility,
+  McshOgm000007:596  <br>* McshEngl.cellOgsm'motility-006,
+  McshOgm000007:597  <br>* McshEngl.cellOgsm'doing'motility,
+  McshOgm000007:602  <h2 id="idCellOgmatt019H2">endocytosis of cellOgsm
+  McshOgm000007:610  <br>* McshEngl.cellOgsm'att019-endocytosis,
+  McshOgm000007:611  <br>* McshEngl.cellOgsm'endocytosis,
+  McshOgm000007:613  <br>* McshEngl.cellOgsm'doing'endocytosis,
+  McshOgm000007:617  <h3 id="idCellOgmatt021H3">pinocytosis of cellOgsm
+  McshOgm000007:627  <br>* McshEngl.cellOgsm'att021-pinocytosis,
+  McshOgm000007:628  <br>* McshEngl.cellOgsm'pinocytosis,
+  McshOgm000007:634  <h3 id="idCellOgmatt022H3">phagocytosis of cellOgsm
+  McshOgm000007:643  <br>* McshEngl.cellOgsm'att022-phagocytosis,
+  McshOgm000007:644  <br>* McshEngl.cellOgsm'phagocytosis,
+  McshOgm000007:651  <h2 id="idCellOgmatt020H2">exocytosis of cellOgsm
+  McshOgm000007:661  <br>* McshEngl.cellOgsm'att020-exocytosis,
+  McshOgm000007:662  <br>* McshEngl.cellOgsm'exocytosis-att020,
+  McshOgm000007:664  <br>* McshEngl.cellOgsm'doing'exocytosis,
+  McshOgm000007:669  <h2 id="idCellOgmatt040H2">signaling of cellOgsm
+  McshOgm000007:680  <br>* McshEngl.signalingOgsm,
+  McshOgm000007:681  <br>* McshEngl.cell-signalling!⇒signalingOgsm,
+  McshOgm000007:682  <br>* McshEngl.cellOgsm'signaling!⇒signalingOgsm,
+  McshOgm000007:683  <br>* McshEngl.cellOgsm'att040-signaling!⇒signalingOgsm,
+  McshOgm000007:684  <br>* McshEngl.cellOgsm'communication!⇒signalingOgsm,
+  McshOgm000007:685  <br>* McshEngl.cellular-communication!⇒signalingOgsm,
+  McshOgm000007:686  <br>* McshEngl.signaling-of-cellOgsm!⇒signalingOgsm,
+  McshOgm000007:687  <br>* McshEngl.cellOgsm'doing'signaling!⇒signalingOgsm,
+  McshOgm000007:703  <h3 id="idCellOgmatt040att001H3">sender of signalingOgsm
+  McshOgm000007:710  <br>* McshEngl.signalingOgsm'sender,
+  McshOgm000007:711  <br>* McshEngl.signalingOgsm'signaling-entity,
+  McshOgm000007:712  <br>* McshEngl.signalingOgsm'att001-signaling-entity,
+  McshOgm000007:717  <h3 id="idCellOgmatt040att002H3">receiver-cell of signalingOgsm
+  McshOgm000007:724  <br>* McshEngl.signalingOgsm'receiver-cell,
+  McshOgm000007:725  <br>* McshEngl.signalingOgsm'responder-cell,
+  McshOgm000007:726  <br>* McshEngl.signalingOgsm'target-cell,
+  McshOgm000007:727  <br>* McshEngl.signalingOgsm'att002-target-cell,
+  McshOgm000007:732  <h3 id="idCellOgmatt043H3">signal of signalingOgsm
+  McshOgm000007:743  <br>* McshEngl.signalOgsm,
+  McshOgm000007:744  <br>* McshEngl.cellOgsm'att043-signal!⇒signalOgsm,
+  McshOgm000007:745  <br>* McshEngl.cellOgsm'signal!⇒signalOgsm,
+  McshOgm000007:746  <br>* McshEngl.signalingOgsm'att003-signal!⇒signalOgsm,
+  McshOgm000007:747  <br>* McshEngl.signalingOgsm'signal!⇒signalOgsm,
+  McshOgm000007:748  <br>* McshEngl.signal-of-signalingOgsm!⇒signalOgsm,
+  McshOgm000007:752  <h4 id="idCellOgmatt043gstrH4">GENERIC-SPECIFIC-TREE of signalOgsm
+  McshOgm000007:758  <br>* McshEngl.signalOgsm'generic-specific-tree,
+  McshOgm000007:759  <br>* McshEngl.signalOgsm'specific-generic-tree,
+  McshOgm000007:767  <br>* McshEngl.signalOgsm.specific,
+  McshOgm000007:776  <h4 id="idCellOgmatt043003H4">signalOgsm.extracellular-003
+  McshOgm000007:784  <br>* McshEngl.extracellular-signalOgsm,
+  McshOgm000007:785  <br>* McshEngl.signalOgsm.003-extracellular,
+  McshOgm000007:786  <br>* McshEngl.signalOgsm.extracellular,
+  McshOgm000007:791  <h4 id="idCellOgmatt043004H4">signalOgsm.intracellular-004
+  McshOgm000007:797  <br>* McshEngl.intracellular-signalOgsm,
+  McshOgm000007:798  <br>* McshEngl.signalOgsm.004-intracellular,
+  McshOgm000007:799  <br>* McshEngl.signalOgsm.intracellular,
+  McshOgm000007:804  <h4 id="idCellOgmatt043005H4">signalOgsm.chemical-005
+  McshOgm000007:812  <br>* McshEngl.chemical-signalOgsm,
+  McshOgm000007:813  <br>* McshEngl.signalOgsm.005-chemical,
+  McshOgm000007:814  <br>* McshEngl.signalOgsm.chemical,
+  McshOgm000007:818  <h5 id="idCellOgmatt043001H5">signalOgsm.biochemical-001
+  McshOgm000007:834  <br>* McshEngl.signalOgsm.001-biochemical,
+  McshOgm000007:835  <br>* McshEngl.signalOgsm.biochemical,
+  McshOgm000007:836  <br>* McshEngl.signalOgsm.signaling-molecule,
+  McshOgm000007:837  <br>* McshEngl.signalingOgsm'att004-signaling-molecule,
+  McshOgm000007:838  <br>* McshEngl.cellOgsm'receptor-ligand,
+  McshOgm000007:839  <br>* McshEngl.biochemical-signal-of-cellOgsm,
+  McshOgm000007:840  <br>* McshEngl.receptor-ligand-of-cellOgsm,
+  McshOgm000007:841  <br>* McshEngl.signal-molecule-of-cellOgsm,
+  McshOgm000007:842  <br>* McshEngl.signaling-molecule-of-cellOgsm,
+  McshOgm000007:848  <h4 id="idCellOgmatt043002H4">signalOgsm.chemicalNo-002
+  McshOgm000007:856  <br>* McshEngl.signalOgsm.002-mechanical,
+  McshOgm000007:857  <br>* McshEngl.signalOgsm.chemicalNo,
+  McshOgm000007:858  <br>* McshEngl.signalOgsm.mechanical,
+  McshOgm000007:859  <br>* McshEngl.signalOgsm.physical-stimulus,
+  McshOgm000007:860  <br>* McshEngl.mechanical-signal-of-signalingOgsm,
+  McshOgm000007:861  <br>* McshEngl.physical-stimulus-of-signalingOgsm,
+  McshOgm000007:866  <h4 id="idCellOgmatt043006H4">signalOgsm.hormone (<a class="clsPreview" href="../dirLagOgm/McshOgm000005.last.html#idHrmnOgm">link</a>)
+  McshOgm000007:871  <h4 id="idCellOgmatt043007H4">signalOgsm.neurotransmitter (<a class="clsPreview" href="../dirLagOgm/McshOgm000005.last.html#idSysMolsOgm005">link</a>)
+  McshOgm000007:876  <h4 id="idCellOgmatt043008H4">signalOgsm.cytokine (<a class="clsPreview" href="../dirLagOgm/McshOgm000005.last.html#idSysMolsOgm006">link</a>)
+  McshOgm000007:882  <h3 id="idCellOgmatt040att010H3">distance-sender-receiver of signalingOgsm
+  McshOgm000007:888  <br>* McshEngl.signalingOgsm'att010-distance-sender-receiver,
+  McshOgm000007:889  <br>* McshEngl.signalingOgsm'distance-sender-receiver,
+  McshOgm000007:894  <h3 id="idCellOgmatt041H3">receptor of signalingOgsm
+  McshOgm000007:903  <br>* McshEngl.cellOgsm'receptor,
+  McshOgm000007:904  <br>* McshEngl.signalingOgsm'receptor!⇒cellOgsm'receptor,
+  McshOgm000007:905  <br>* McshEngl.signalingOgsm'att005-receptor!⇒cellOgsm'receptor,
+  McshOgm000007:906  <br>* McshEngl.cellOgsm'att041-receptor,!⇒cellOgsm'receptor
+  McshOgm000007:907  <br>* McshEngl.receptor-of-signalingOgsm!⇒cellOgsm'receptor,
+  McshOgm000007:909  <br>* McshElln.υποδοχέας!ο!=cellOgsm'receptor,
+  McshOgm000007:921  <br>* McshEngl.cellOgsm'receptor.006-external,
+  McshOgm000007:922  <br>* McshEngl.cellOgsm'receptor.external,
+  McshOgm000007:936  <br>* McshEngl.cellOgsm'receptor.007-internal,
+  McshOgm000007:937  <br>* McshEngl.cellOgsm'receptor.internal,
+  McshOgm000007:950  <br>* McshEngl.cellOgsm'receptor.surface-002,
+  McshOgm000007:951  <br>* McshEngl.cellOgsm'receptor.002-surface,
+  McshOgm000007:952  <br>* McshEngl.cellOgsm-surface-receptor,
+  McshOgm000007:965  <br>* McshEngl.cellOgsm'receptor.co-receptor,
+  McshOgm000007:966  <br>* McshEngl.cellOgsm'receptor.009-co-receptor,
+  McshOgm000007:967  <br>* McshEngl.co-receptor-of-cellOgsm,
+  McshOgm000007:986  <br>* McshEngl.cellOgsm'receptor.intracellular-003,
+  McshOgm000007:987  <br>* McshEngl.cellOgsm'receptor.003-intracellular,
+  McshOgm000007:988  <br>* McshEngl.intracellular-receptor-of-cellOgsm,
+  McshOgm000007:1003  <br>* McshEngl.cellOgsm'receptor.nuclear,
+  McshOgm000007:1004  <br>* McshEngl.cellOgsm'receptor.001-nuclear,
+  McshOgm000007:1005  <br>* McshEngl.nuclear-receptor-of-cellOgsm,
+  McshOgm000007:1017  <br>* McshEngl.cellOgsm'receptor.steroid-hormone-004,
+  McshOgm000007:1018  <br>* McshEngl.cellOgsm'receptor.004-steroid-hormone,
+  McshOgm000007:1019  <br>* McshEngl.steroid-hormone-receptor-of-cellOgsm,
+  McshOgm000007:1032  <br>* McshEngl.cellOgsm'receptor.immune-005,
+  McshOgm000007:1033  <br>* McshEngl.cellOgsm'receptor.005-immune,
+  McshOgm000007:1034  <br>* McshEngl.immune-receptor-of-cellOgsm,
+  McshOgm000007:1050  <br>* McshEngl.cellOgsm'receptor.008-nociceptor,
+  McshOgm000007:1051  <br>* McshEngl.cellOgsm'receptor.nociceptor,
+  McshOgm000007:1058  <h3 id="idCellOgmatt040att009H3">ligand of signalingOgsm
+  McshOgm000007:1067  <br>* McshEngl.signalingOgsm'att009-ligand!⇒ligandSignaling,
+  McshOgm000007:1068  <br>* McshEngl.signalingOgsm'ligand!⇒ligandSignaling,
+  McshOgm000007:1069  <br>* McshEngl.ligand-of-signalingOgsm!⇒ligandSignaling,
+  McshOgm000007:1115  <h3 id="idCellOgmatt040att006H3">receiving of signalingOgsm
+  McshOgm000007:1123  <br>* McshEngl.signalingOgsm'receiving,
+  McshOgm000007:1124  <br>* McshEngl.signalingOgsm'att006-receiving,
+  McshOgm000007:1129  <h3 id="idCellOgmatt040att007H3">responding of signalingOgsm
+  McshOgm000007:1137  <br>* McshEngl.signalingOgsm'responding,
+  McshOgm000007:1138  <br>* McshEngl.signalingOgsm'att007-responding,
+  McshOgm000007:1139  <br>* McshEngl.signalingOgsm'receptor-activation,
+  McshOgm000007:1144  <h3 id="idCellOgmatt040att008H3">signaling-pathway of signalingOgsm
+  McshOgm000007:1152  <br>* McshEngl.signalingOgsm'pathway,
+  McshOgm000007:1153  <br>* McshEngl.signalingOgsm'att008-pathway,
+  McshOgm000007:1154  <br>* McshEngl.signaling-pathway-of-cellOgsm,
+  McshOgm000007:1162  <h3 id="idCellOgmatt040gstrH3">GENERIC-SPECIFIC-TREE of signalingOgsm
+  McshOgm000007:1168  <br>* McshEngl.signalingOgsm'generic-specific-tree,
+  McshOgm000007:1169  <br>* McshEngl.signalingOgsm'specific-generic-tree,
+  McshOgm000007:1177  <br>* McshEngl.signalingOgsm.specific,
+  McshOgm000007:1184  <h3 id="idCellOgmatt040001H3">signalingOgsm.organismMany-001
+  McshOgm000007:1193  <br>* McshEngl.signalingOgsm.001-between-organisms,
+  McshOgm000007:1194  <br>* McshEngl.signalingOgsm.between-organisms,
+  McshOgm000007:1195  <br>* McshEngl.signalingOgsm.organismMany,
+  McshOgm000007:1200  <h3 id="idCellOgmatt040002H3">signalingOgsm.organismOne-002
+  McshOgm000007:1206  <br>* McshEngl.signalingOgsm.001-one-organism,
+  McshOgm000007:1207  <br>* McshEngl.signalingOgsm.one-organism,
+  McshOgm000007:1208  <br>* McshEngl.signalingOgsm.organismOne,
+  McshOgm000007:1213  <h3 id="idCellOgmatt040008H3">signalingOgsm.molecular-008
+  McshOgm000007:1219  <br>* McshEngl.signalingOgsm.molecular,
+  McshOgm000007:1220  <br>* McshEngl.signalingOgsm.008-molecular,
+  McshOgm000007:1226  <h3 id="idCellOgmatt040007H3">signalingOgsm.intracrine-007
+  McshOgm000007:1241  <br>* McshEngl.signalingOgsm.intracrine,
+  McshOgm000007:1242  <br>* McshEngl.signalingOgsm.007-intracrine,
+  McshOgm000007:1243  <br>* McshEngl.intracrine-signaling-of-cellOgsm,
+  McshOgm000007:1248  <h3 id="idCellOgmatt040003H3">signalingOgsm.autocrine-003
+  McshOgm000007:1256  <br>* McshEngl.signalingOgsm.autocrine,
+  McshOgm000007:1257  <br>* McshEngl.signalingOgsm.003-autocrine,
+  McshOgm000007:1258  <br>* McshEngl.autocrine-signaling-of-cellOgsm,
+  McshOgm000007:1263  <h3 id="idCellOgmatt040004H3">signalingOgsm.juxtacrine-004
+  McshOgm000007:1276  <br>* McshEngl.signalingOgsm.juxtacrine,
+  McshOgm000007:1277  <br>* McshEngl.signalingOgsm.004-juxtacrine,
+  McshOgm000007:1278  <br>* McshEngl.signalingOgsm.contact,
+  McshOgm000007:1279  <br>* McshEngl.juxtacrine-signaling-of-cellOgsm,
+  McshOgm000007:1295  <h3 id="idCellOgmatt040005H3">signalingOgsm.paracrine-005
+  McshOgm000007:1304  <br>* McshEngl.signalingOgsm.paracrine,
+  McshOgm000007:1305  <br>* McshEngl.signalingOgsm.005-paracrine,
+  McshOgm000007:1306  <br>* McshEngl.signalingOgsm.near,
+  McshOgm000007:1307  <br>* McshEngl.paracrine-signaling-of-cellOgsm,
+  McshOgm000007:1327  <h3 id="idCellOgmatt040006H3">signalingOgsm.endocrine-006
+  McshOgm000007:1335  <br>* McshEngl.signalingOgsm.endocrine,
+  McshOgm000007:1336  <br>* McshEngl.signalingOgsm.006-endocrine,
+  McshOgm000007:1337  <br>* McshEngl.signalingOgsm.far,
+  McshOgm000007:1338  <br>* McshEngl.endocrine-signaling-of-cellOgsm,
+  McshOgm000007:1359  <h1 id="idCellOgmevogH1">evoluting of cellOgsm
+  McshOgm000007:1365  <br>* McshEngl.evoluting-of-cellOgsm,
+  McshOgm000007:1366  <br>* McshEngl.cellOgsm'evoluting,
+  McshOgm000007:1395  <h2 id="idCellOgmatt033H2">life-cycle of cellOgsm
+  McshOgm000007:1401  <br>* McshEngl.cellOgsm'att033-life-cycle,
+  McshOgm000007:1402  <br>* McshEngl.cellOgsm'life-cycle-att033,
+  McshOgm000007:1407  <h2 id="idCellOgmatt008H2">reproduction of cellOgsm
+  McshOgm000007:1417  <br>* McshEngl.cellOgsm'att008-division,
+  McshOgm000007:1418  <br>* McshEngl.cellOgsm'reproduction-008,
+  McshOgm000007:1419  <br>* McshEngl.cellOgsm'division-008,
+  McshOgm000007:1424  <h2 id="idCellOgmatt027H2">death of cellOgsm
+  McshOgm000007:1432  <br>* McshEngl.cellOgsm'att027-death,
+  McshOgm000007:1433  <br>* McshEngl.cellOgsm'death,
+  McshOgm000007:1437  <h3 id="idCellOgmatt028H3">programmed-cell-death of cellOgsm
+  McshOgm000007:1446  <br>* McshEngl.cellOgsm'att028-programmed-cell-death,
+  McshOgm000007:1447  <br>* McshEngl.cellOgsm'programmed-cell-death-att028,
+  McshOgm000007:1459  <h3 id="idCellOgmatt030H3">apoptosis of cellOgsm
+  McshOgm000007:1470  <br>* McshEngl.cellOgsm'att030-apoptosis,
+  McshOgm000007:1471  <br>* McshEngl.cellOgsm'apoptosis-att030,
+  McshOgm000007:1472  <br>* McshEngl.apoptosis-cellOgsm-att030,
+  McshOgm000007:1477  <h3 id="idCellOgmatt031H3">autophagy of cellOgsm
+  McshOgm000007:1488  <br>* McshEngl.cellOgsm'att031-autophagy, /otófaji/,
+  McshOgm000007:1493  <h3 id="idCellOgmatt032H3">feroptosis of cellOgsm
+  McshOgm000007:1502  <br>* McshEngl.cellOgsm'att032-feroptosis, /feroptósis/,
+  McshOgm000007:1527  <h3 id="idCellOgmatt029H3">necrosis of cellOgsm
+  McshOgm000007:1536  <br>* McshEngl.cellOgsm'att029-necrosis, /nekrósis/,
+  McshOgm000007:1537  <br>* McshEngl.cellOgsm'necrosis-att029,
+  McshOgm000007:1544  <h1 id="idCellOgmwptrH1">WHOLE-PART-TREE of cellOgsm
+  McshOgm000007:1550  <br>* McshEngl.cellOgsm'whole-part-tree,
+  McshOgm000007:1551  <br>* McshEngl.cellOgsm'part-whole-tree,
+  McshOgm000007:1552  <br>* McshEngl.cellOgsm'organism,
+  McshOgm000007:1567  <h1 id="idCellOgmgstrH1">GENERIC-SPECIFIC-TREE of cellOgsm
+  McshOgm000007:1573  <br>* McshEngl.cellOgsm'generic-specific-tree,
+  McshOgm000007:1574  <br>* McshEngl.cellOgsm'specific-generic-tree,
+  McshOgm000007:1583  <br>* McshEngl.cellOgsm.specific,
+  McshOgm000007:1597  <h1 id="idCellOgm002H1">cellOgsm.prokaryotic-002
+  McshOgm000007:1610  <br>* McshEngl.cellOgsm.002-prokaryotic,
+  McshOgm000007:1611  <br>* McshEngl.cellOgsm.prokaryotic-002,
+  McshOgm000007:1612  <br>* McshEngl.prokaryotic-cellOgsm-002,
+  McshOgm000007:1620  <h1 id="idCellOgm003H1">cellOgsm.eukaryotic-003
+  McshOgm000007:1633  <br>* McshEngl.cellOgsm.003-eukaryotic,
+  McshOgm000007:1634  <br>* McshEngl.cellOgsm.eukaryotic-003,
+  McshOgm000007:1635  <br>* McshEngl.eukaryotic-cellOgsm-003,
+  McshOgm000007:1655  <h1 id="idCellAnmlH1">cellOgsm.animal-004
+  McshOgm000007:1679  <br>* McshEngl.cellOgsm.004-animal,
+  McshOgm000007:1680  <br>* McshEngl.cellOgsm.animal-004,
+  McshOgm000007:1683  <br>* McshEngl.animal-cellOgsm-004,
+  McshOgm000007:1803  <h1 id="idCellPlntH1">cellOgsm.plant-005
+  McshOgm000007:1813  <br>* McshEngl.cellOgsm.005-plant,
+  McshOgm000007:1814  <br>* McshEngl.cellOgsm.plant-005,
+  McshOgm000007:1818  <br>* McshEngl.plant-cellOgsm-005,
+  McshOgm000007:1889  <h1 id="idOgm003H1">cellOgsm.unicellular-organism-006
+  McshOgm000007:1901  <br>* McshEngl.cellOgsm.006-unicellular-organism!⇒ogmCellOne,
+  McshOgm000007:1902  <br>* McshEngl.cellOgsm.unicellular-organism-006!⇒ogmCellOne,
+  McshOgm000007:1943  <h1 id="idOgm004H1">cellOgsm.archeaon-007
+  McshOgm000007:1957  <br>* McshEngl.cellOgsm.007-archeon!⇒ogmArcheon,
+  McshOgm000007:1958  <br>* McshEngl.cellOgsm.archeon-007!⇒ogmArcheon,
+  McshOgm000007:1966  <h1 id="idOgm005H1">cellOgsm.bacterium-008
+  McshOgm000007:1979  <br>* McshEngl.cellOgsm.008-bacterium!⇒ogmBacterium,
+  McshOgm000007:1980  <br>* McshEngl.cellOgsm.bacterium-008!⇒ogmBacterium,
+  McshOgm000007:1988  <h1 id="idCellOgm009H1">cellOgsm.neuron-009
+  McshOgm000007:2002  <br>* McshEngl.neuronOgsm,
+  McshOgm000007:2003  <br>* McshEngl.brainNatural'att005-neuron!⇒neuronOgsm,
+  McshOgm000007:2004  <br>* McshEngl.brainNatural'neuron!⇒neuronOgsm,
+  McshOgm000007:2005  <br>* McshEngl.biological-neuron!⇒neuronOgsm,
+  McshOgm000007:2006  <br>* McshEngl.cellNeuronOgsm!⇒neuronOgsm,
+  McshOgm000007:2007  <br>* McshEngl.cellOgsm.009-neuron!⇒neuronOgsm,
+  McshOgm000007:2008  <br>* McshEngl.cellOgsm.neuron-009!⇒neuronOgsm,
+  McshOgm000007:2009  <br>* McshEngl.neuron-cellOgsm!⇒neuronOgsm,
+  McshOgm000007:2010  <br>* McshEngl.natural-neuron!⇒neuronOgsm,
+  McshOgm000007:2011  <br>* McshEngl.nerve-cell!⇒neuronOgsm,
+  McshOgm000007:2012  <br>* McshEngl.neuronBio.natural!⇒neuronOgsm,
+  McshOgm000007:2013  <br>* McshEngl.neurone!⇒neuronOgsm,
+  McshOgm000007:2022  <h2 id="idCellOgm009gstrH2">GENERIC-SPECIFIC-TREE of neuronOgsm
+  McshOgm000007:2028  <br>* McshEngl.neuronOgsm'generic-specific-tree,
+  McshOgm000007:2029  <br>* McshEngl.neuronOgsm'specific-generic-tree,
+  McshOgm000007:2037  <br>* McshEngl.neuronOgsm.specific,
+  McshOgm000007:2040  <br>* neuronOgsm.sensory-001!@McshOgm000007#idCellOgm009001,
+  McshOgm000007:2041  <br>* neuronOgsm.motor-002!@McshOgm000007#idCellOgm009002,
+  McshOgm000007:2042  <br>* neuronOgsm.interneuron-003!@McshOgm000007#idCellOgm009003,
+  McshOgm000007:2043  <br>* neuronOgsm.unipolar-004!@McshOgm000007#idCellOgm009004,
+  McshOgm000007:2044  <br>* neuronOgsm.bipolar-005!@McshOgm000007#idCellOgm009005,
+  McshOgm000007:2045  <br>* neuronOgsm.multipolar-006!@McshOgm000007#idCellOgm009006,
+  McshOgm000007:2046  <br>* neuronOgsm.head-directed-007!@McshOgm000007#idCellOgm009007,
+  McshOgm000007:2047  <br>* neuronOgsm.pyramidal-008!@McshOgm000007#idCellOgm009008,
+  McshOgm000007:2048  <br>* neuronOgsm.place-009!@McshOgm000007#idCellOgm009009,
+  McshOgm000007:2049  <br>* neuronOgsm.grid-010!@McshOgm000007#idCellOgm009010,
+  McshOgm000007:2054  <h2 id="idCellOgm009att002H2">02_soma of neuronOgsm
+  McshOgm000007:2062  <br>* McshEngl.neuronOgsm'02_soma,
+  McshOgm000007:2063  <br>* McshEngl.neuronOgsm'att002-soma,
+  McshOgm000007:2064  <br>* McshEngl.neuronOgsm'soma-att002,
+  McshOgm000007:2070  <h2 id="idCellOgm009att003H2">03_neurite of neuronOgsm
+  McshOgm000007:2076  <br>* McshEngl.neuronOgsm'03_neurite,
+  McshOgm000007:2077  <br>* McshEngl.neuronOgsm'att003-neurite,
+  McshOgm000007:2078  <br>* McshEngl.neuronOgsm'neurite-att003,
+  McshOgm000007:2083  <h2 id="idCellOgm009att004H2">04_axon of neuronOgsm
+  McshOgm000007:2089  <br>* McshEngl.neuronOgsm'04_axon,
+  McshOgm000007:2090  <br>* McshEngl.neuronOgsm'att004-axon,
+  McshOgm000007:2091  <br>* McshEngl.neuronOgsm'axon-att004,
+  McshOgm000007:2096  <h2 id="idCellOgm009att005H2">05_dendrite of neuronOgsm
+  McshOgm000007:2102  <br>* McshEngl.dendriteOgsm,
+  McshOgm000007:2103  <br>* McshEngl.neuronOgsm'05_dendrite,
+  McshOgm000007:2104  <br>* McshEngl.neuronOgsm'att005-dendrite,
+  McshOgm000007:2105  <br>* McshEngl.neuronOgsm'dendrite-att005,
+  McshOgm000007:2110  <h2 id="idCellOgm009att006H2">06_synapse of neuronOgsm
+  McshOgm000007:2119  <br>* McshEngl.synapseOgsm,
+  McshOgm000007:2120  <br>* McshEngl.neuronOgsm'06_synapse!⇒synapseOgsm,
+  McshOgm000007:2121  <br>* McshEngl.neuronOgsm'att006-synapse!⇒synapseOgsm,
+  McshOgm000007:2122  <br>* McshEngl.neuronOgsm'synapse-att006!⇒synapseOgsm,
+  McshOgm000007:2126  <h3 id="idCellOgm009att006elrcH3">synapseOgsm.electric
+  McshOgm000007:2135  <br>* McshEngl.synapseOgsm.electric,
+  McshOgm000007:2140  <h3 id="idCellOgm009att006cmclH3">synapseOgsm.chemical
+  McshOgm000007:2151  <br>* McshEngl.synaplseOgsm.chemical,
+  McshOgm000007:2152  <br>* McshEngl.synapseOgsm.chemical!⇒synaplseOgsm.chemical,
+  McshOgm000007:2158  <h2 id="idCellOgm009att008H2">07_membrane of neuronOgsm
+  McshOgm000007:2166  <br>* McshEngl.neuronOgsm'07_membrane,
+  McshOgm000007:2167  <br>* McshEngl.neuronOgsm'membrane,
+  McshOgm000007:2168  <br>* McshEngl.neuronOgsm'att008-membrane,
+  McshOgm000007:2173  <h2 id="idCellOgm009nbrH2">number of neuronOgsm
+  McshOgm000007:2181  <br>* McshEngl.neuronOgsm'number,
+  McshOgm000007:2186  <h2 id="idCellOgm009rscFH2">info-resource of neuronOgsm
+  McshOgm000007:2192  <br>* McshEngl.neuronOgsm'info-resource,
+  McshOgm000007:2197  <h2 id="idCellOgm009srtrFH2">structure of neuronOgsm
+  McshOgm000007:2203  <br>* McshEngl.neuronOgsm'structure,
+  McshOgm000007:2208  <h2 id="idCellOgm009dongH2">DOING of neuronOgsm
+  McshOgm000007:2214  <br>* McshEngl.neuronOgsm'doing,
+  McshOgm000007:2218  <h3 id="idCellOgm009att007H3">nerve-impulse of neuronOgsm
+  McshOgm000007:2226  <br>* McshEngl.neuronOgsm'nerve-impulse,
+  McshOgm000007:2227  <br>* McshEngl.neuronOgsm'att007-nerve-impulse,
+  McshOgm000007:2228  <br>* McshEngl.neuronOgsm'nerve-impulse-att007,
+  McshOgm000007:2229  <br>* McshEngl.neuronOgsm'doing'nerve-impulse,
+  McshOgm000007:2235  <h2 id="idCellOgm009evogH2">evoluting of neuronOgsm
+  McshOgm000007:2241  <br>* McshEngl.evoluting-of-neuronOgsm,
+  McshOgm000007:2242  <br>* McshEngl.neuronOgsm'evoluting,
+  McshOgm000007:2247  <h2 id="idCellOgm009001H2">neuronOgsm.sensory-001
+  McshOgm000007:2257  <br>* McshEngl.neuronSenseOgsm,
+  McshOgm000007:2258  <br>* McshEngl.neuronOgsm.001-sensory!⇒neuronSenseOgsm,
+  McshOgm000007:2259  <br>* McshEngl.neuronOgsm.sensory-001!⇒neuronSenseOgsm,
+  McshOgm000007:2260  <br>* McshEngl.afferent-neuron-of-Ogsm!⇒neuronSenseOgsm,
+  McshOgm000007:2261  <br>* McshEngl.neuronSensory!⇒neuronSenseOgsm,
+  McshOgm000007:2265  <h3 id="idCellOgm009001gstrH3">GENERIC-SPECIFIC-TREE of neuronSenseOgsm
+  McshOgm000007:2271  <br>* McshEngl.neuronSenseOgsm'generic-specific-tree,
+  McshOgm000007:2272  <br>* McshEngl.neuronSenseOgsm'specific-generic-tree,
+  McshOgm000007:2280  <br>* McshEngl.neuronSenseOgsm.specific,
+  McshOgm000007:2283  <br>* neuronSenseOgsm.nociceptor!@McshOgm000007#idCellOgm009001Pain,
+  McshOgm000007:2288  <h3 id="idCellOgm009001PainH3">neuronSenseOgsm.nociceptor
+  McshOgm000007:2296  <br>* McshEngl.nociceptorOgsm,
+  McshOgm000007:2297  <br>* McshEngl.neuronSenseOgsm.nociceptor!⇒nociceptorOgsm,
+  McshOgm000007:2298  <br>* McshEngl.pain-receptor!⇒nociceptorOgsm,
+  McshOgm000007:2304  <h2 id="idCellOgm009002H2">neuronOgsm.motor-002
+  McshOgm000007:2313  <br>* McshEngl.neuronMotorOgsm,
+  McshOgm000007:2314  <br>* McshEngl.neuronOgsm.002-motor!⇒neuronMotorOgsm,
+  McshOgm000007:2315  <br>* McshEngl.neuronOgsm.motor-002!⇒neuronMotorOgsm,
+  McshOgm000007:2320  <h2 id="idCellOgm009003H2">neuronOgsm.interneuron-003
+  McshOgm000007:2329  <br>* McshEngl.neuronInterOgsm,
+  McshOgm000007:2330  <br>* McshEngl.neuronOgsm.003-interneuron!⇒neuronInterOgsm,
+  McshOgm000007:2331  <br>* McshEngl.neuronOgsm.interneuron-003!⇒neuronInterOgsm,
+  McshOgm000007:2332  <br>* McshEngl.interneuron-of-Ogsm-003!⇒neuronInterOgsm,
+  McshOgm000007:2337  <h2 id="idCellOgm009004H2">neuronOgsm.unipolar-004
+  McshOgm000007:2348  <br>* McshEngl.neuronOgsm.004-unipolar,
+  McshOgm000007:2353  <h2 id="idCellOgm009005H2">neuronOgsm.bipolar-005
+  McshOgm000007:2362  <br>* McshEngl.neuronOgsm.005-bipolar,
+  McshOgm000007:2363  <br>* McshEngl.neuronOgsm.bipolar-005,
+  McshOgm000007:2368  <h2 id="idCellOgm009006H2">neuronOgsm.multipolar-006
+  McshOgm000007:2376  <br>* McshEngl.neuronOgsm.006-multipolar,
+  McshOgm000007:2377  <br>* McshEngl.neuronOgsm.multipolar-006,
+  McshOgm000007:2382  <h2 id="idCellOgm009007H2">neuronOgsm.head-directed-007
+  McshOgm000007:2390  <br>* McshEngl.neuronOgsm.007-head-directed,
+  McshOgm000007:2391  <br>* McshEngl.neuronOgsm.head-directed,
+  McshOgm000007:2396  <h2 id="idCellOgm009008H2">neuronOgsm.pyramidal-008
+  McshOgm000007:2404  <br>* McshEngl.neuronOgsm.pyramidal, /pirámidal/,
+  McshOgm000007:2405  <br>* McshEngl.neuronOgsm.008-pyramidal,
+  McshOgm000007:2406  <br>* McshEngl.pyramidal-neuronOgsm,
+  McshOgm000007:2411  <h2 id="idCellOgm009009H2">neuronOgsm.place-009
+  McshOgm000007:2419  <br>* McshEngl.neuronOgsm.place,
+  McshOgm000007:2420  <br>* McshEngl.neuronOgsm.009-place,
+  McshOgm000007:2421  <br>* McshEngl.place-neuronOgsm,
+  McshOgm000007:2426  <h2 id="idCellOgm009010H2">neuronOgsm.grid-010
+  McshOgm000007:2434  <br>* McshEngl.neuronOgsm.grid,
+  McshOgm000007:2435  <br>* McshEngl.neuronOgsm.010-grid,
+  McshOgm000007:2436  <br>* McshEngl.grid-neuronOgsm,
+  McshOgm000007:2442  <h1 id="idCellOgm010H1">cellOgsm.stem-010
+  McshOgm000007:2453  <br>* McshEngl.cellOgsm.010-stem,
+  McshOgm000007:2454  <br>* McshEngl.cellOgsm.stem-010,
+  McshOgm000007:2455  <br>* McshEngl.stem-cellOgsm-010,
+  McshOgm000007:2459  <h2 id="idCellOgm011H2">cellOgsm.stem.neural-011
+  McshOgm000007:2468  <br>* McshEngl.cellOgsm.011-stem.neural,
+  McshOgm000007:2469  <br>* McshEngl.cellOgsm.stem.neural-011,
+  McshOgm000007:2470  <br>* McshEngl.neural-stem-cellOgsm,
+  McshOgm000007:2476  <h1 id="idCellOgm012H1">cellOgsm.excitable-012
+  McshOgm000007:2484  <br>* McshEngl.cellOgsm.012-excitable,
+  McshOgm000007:2485  <br>* McshEngl.cellOgsm.excitable,
+  McshOgm000007:2486  <br>* McshEngl.excitable-cellOgsm,
+  McshOgm000007:2503  cellOgsm
+  McshOgm000007:2509  <br>· use the-prefix '<span class="clsColorRed">cellOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concept
+  McshOgm000007:2527  <br>• filMcsOgsm-cell.0-1-0.2020-03-12.last.html: draft creation,
+  McshOgm000009:230  <h2 id="idOgmAnmlatt010att001H2">cellNeuronOgsm of SystNervousAnml (<a class="clsPreview" href="../dirLagOgm/McshOgm000007.last.html#idCellOgm009">link</a>)
+  McshStn000002:39  <br>* McshEngl.stnOgsm!⇒sctnOgms, {2020-11-14}
+  McshStn000002:40  <br>* McshEngl.SystOgsm!⇒sctnOgms,
+  McshStn000002:182  <br>* McshEngl.satisfierOgsm,
+  McshStn000002:183  <br>* McshEngl.satisfierStn!⇒satisfierOgsm,
+  McshStn000002:184  <br>* McshEngl.sfrOgsm!⇒satisfierOgsm,
+  McshStn000002:185  <br>* McshEngl.sctnOgms'06_satisfier!⇒satisfierOgsm,
+  McshStn000002:186  <br>* McshEngl.sctnOgms'att012-satisfier!⇒satisfierOgsm,
+  McshStn000002:187  <br>* McshEngl.sctnOgms'satisfier!⇒satisfierOgsm,
+  McshStn000002:191  <h3 id="idStnOgmatt012gstrH3">GENERIC-SPECIFIC-TREE of satisfierOgsm
+  McshStn000002:197  <br>* McshEngl.satisfierOgsm'generic-specific-tree,
+  McshStn000002:198  <br>* McshEngl.satisfierOgsm'specific-generic-tree,
+  McshStn000002:206  <br>* McshEngl.satisfierOgsm.specific,
+  McshStn000002:228  <br>* McshEngl.satisfierOgsm.food!⇒foodStn,
+  McshStn000002:704  <br>· a-socialitation part of <a class="clsPreview" href="../dirStn/McshStn000007.last.html#idOverview">a-societyOgsm</a>.
+  McshStn000002:707  <br>* McshEngl.societyOgsm'att013-socialitation,
+  McshStn000002:708  <br>* McshEngl.societyOgsm'socialitation,
+  McshStn000002:719  <br>· a-socialitation NOT part of <a class="clsPreview" href="../dirStn/McshStn000007.last.html#idOverview">a-societyOgsm</a>.
+  McshStn000003:6  <title>Mcsh.sfrOgsm!=organism'satisfier
+  McshStn000003:8  <meta name="keywords" content="satisfierOgsm, sfrOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshStn000003:16  <br>senso-concept-Mcsh (sfrOgsm)
+  McshStn000003:21  <h1 id="idOverviewH1">overview of sfrOgsm
+  McshStn000003:29  <br>* McshEngl.sfrOgsm!⇒satisfierOgsm,
+  McshStn000003:30  <br>* McshEngl.sfrOgsm!~McsStn000003,
+  McshStn000003:39  <h1 id="idSfrOgmirscH1">info-resource of sfrOgsm
+  McshStn000003:45  <br>* McshEngl.sfrOgsm'info-resource,
+  McshStn000003:46  <br>* McshEngl.satisfierOgsm'info-resource!⇒sfrOgsm'info-resource,
+  McshStn000003:51  <h1 id="idSfrOgmsrtrFH1">structure of sfrOgsm
+  McshStn000003:57  <br>* McshEngl.sfrOgsm'structure,
+  McshStn000003:58  <br>* McshEngl.satisfierOgsm'structure!⇒sfrOgsm'structure,
+  McshStn000003:63  <h1 id="idSfrOgmdongH1">DOING of sfrOgsm
+  McshStn000003:69  <br>* McshEngl.sfrOgsm'doing,
+  McshStn000003:70  <br>* McshEngl.satisfierOgsm'doing!⇒sfrOgsm'doing,
+  McshStn000003:75  <h1 id="idSfrOgmevogH1">evoluting of sfrOgsm
+  McshStn000003:81  <br>* McshEngl.evoluting-of-sfrOgsm,
+  McshStn000003:82  <br>* McshEngl.sfrOgsm'evoluting,
+  McshStn000003:88  <h1 id="idSfrOgmwptrH1">WHOLE-PART-TREE of sfrOgsm
+  McshStn000003:94  <br>* McshEngl.sfrOgsm'whole-part-tree,
+  McshStn000003:95  <br>* McshEngl.sfrOgsm'part-whole-tree,
+  McshStn000003:107  <h1 id="idSfrOgmgstrH1">GENERIC-SPECIFIC-TREE of sfrOgsm
+  McshStn000003:113  <br>* McshEngl.sfrOgsm'generic-specific-tree,
+  McshStn000003:114  <br>* McshEngl.sfrOgsm'specific-generic-tree,
+  McshStn000003:122  <br>* McshEngl.sfrOgsm.specific,
+  McshStn000003:130  <h1 id="idSfrOgm001H1">sfrOgsm.human-001 (<a class="clsPreview" href="../dirStn/McshStn000010.last.html#idOverview">link</a>)
+  McshStn000003:135  <h1 id="idSfrOgm002H1">sfrOgsm.humanNo-002
+  McshStn000003:141  <br>* McshEngl.sfrOgsm.002-humanNo,
+  McshStn000003:142  <br>* McshEngl.sfrOgsm.humanNo,
+  McshStn000003:148  <h1 id="idSfrOgm003H1">sfrOgsm.groupOgsm-003
+  McshStn000003:154  <br>* McshEngl.sfrOgsm.003-groupOgsm,
+  McshStn000003:155  <br>* McshEngl.sfrOgsm.groupOgsm,
+  McshStn000003:156  <br>* McshEngl.satisfierOgsm.groupOgsm-003,
+  McshStn000003:161  <h1 id="idSfrOgm004H1">sfrOgsm.organizationOgsm-004
+  McshStn000003:165  <br>· a-sfrOgsm related to an-oznOgsm.
+  McshStn000003:168  <br>* McshEngl.sfrOgsm.004-oznOgsm,
+  McshStn000003:169  <br>* McshEngl.sfrOgsm.oznOgsm,
+  McshStn000003:170  <br>* McshEngl.satisfierOgsm.organizationOgsm-004,
+  McshStn000003:175  <h1 id="idSfrOgm005H1">sfrOgsm.societyOgsm-005
+  McshStn000003:179  <br>· a-sfrOgsm related to <a class="clsPreview" href="../dirStn/McshStn000007.last.html#idOverview">a-societyOgsm</a>.
+  McshStn000003:182  <br>* McshEngl.sfrOgsm.005-societyOgsm,
+  McshStn000003:183  <br>* McshEngl.sfrOgsm.societyOgsm,
+  McshStn000003:184  <br>* McshEngl.satisfierOgsm.societyOgsm-005,
+  McshStn000003:189  <h1 id="idSfrOgm006H1">sfrOgsm.nutrient-006
+  McshStn000003:193  <br>· nutrientOgsm is <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idOverview">an-elementary</a> or <a class="clsPreview" href="../dirNtr/McshN
+  McshStn000003:194  <br>· foodOgsm is a-system of nutrientOgms.
+  McshStn000003:197  <br>* McshEngl.nutrientOgsm,
+  McshStn000003:198  <br>* McshEngl.nutrient-of-Ogsm-att006!⇒nutrientOgsm,
+  McshStn000003:199  <br>* McshEngl.Ogsm'07_nutrient!⇒nutrientOgsm,
+  McshStn000003:200  <br>* McshEngl.Ogsm'att006-nutrient!⇒nutrientOgsm,
+  McshStn000003:201  <br>* McshEngl.Ogsm'nutrient-att006!⇒nutrientOgsm,
+  McshStn000003:202  <br>* McshEngl.sfrOgsm.006-nutrient!⇒nutrientOgsm,
+  McshStn000003:203  <br>* McshEngl.sfrOgsm.nutrient!⇒nutrientOgsm,
+  McshStn000003:204  <br>* McshEngl.satisfierOgsm.nutrient-006!⇒nutrientOgsm,
+  McshStn000003:209  <h1 id="isSfrOgm007H1">sfrOgsm.food-007 (<a class="clsPreview" href="../dirHlth/McshHlth000012.last.html#idFoodBio001">link</a>)
+  McshStn000003:226  sfrOgsm
+  McshStn000003:232  <br>· use the-prefix '<span class="clsColorRed">sfrOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concepts
+  McshStn000003:250  <br>• filMcsSfrOgsm.0-1-0.2020-11-14.last.html: draft creation,
+  McshStn000004:38  <br>* McshEngl.gvcOgsm!⇒AdmnSctn,
+  McshStn000004:42  <br>* McshEngl.stnOgsm'governance-system!⇒AdmnSctn,
+  McshStn000004:43  <br>* McshEngl.stnOgsm'managing-system!⇒AdmnSctn,
+  McshStn000004:44  <br>* McshEngl.stnOgsm'AdmnSctn!⇒AdmnSctn,
+  McshStn000004:45  <br>* McshEngl.stnOgsm'SystGvc!⇒AdmnSctn,
+  McshStn000004:157  <br>* McshEngl.govOgsm'att017-tech!⇒techGvc,
+  McshStn000004:158  <br>* McshEngl.govOgsm'tech!⇒techGvc,
+  McshStn000004:236  <br>* McshEngl.stnOgsm'decision-making!⇒decisioningOgnm,
+  McshStn000004:237  <br>* McshEngl.stnOgsm'power!⇒decisioningOgnm,
+  McshStn000004:255  <br>* McshEngl.stnOgsm'power!⇒AdmnSctn'controlling,
+  McshStn000004:308  <br>* McshEngl.stnOgsm'decisioning.dictatorial,
+  McshStn000004:325  <br>* McshEngl.stnOgsm'coordination,
+  McshStn000004:343  <br>* McshEngl.stnOgsm'admgSctn'feedback,
+  McshStn000004:462  <br>* groupOgsm-AdmnSctn!@McshStn000005#idGrpOgmatt002,
+  McshStn000004:463  <br>* organizationOgsm-AdmnSctn!@McshStn000006#idOznOgmatt002,
+  McshStn000004:464  <br>* societyOgsm-AdmnSctn!@McshStn000007#idSocOgmatt006,
+  McshStn000004:1551  <br>• filMcsStnOgsm-gvc.0-1-0.2020-10-20.last.html: draft creation,
+  McshStn000005:6  <title>Mcsh.groupOgsm!=simple-socialitation
+  McshStn000005:8  <meta name="keywords" content="socialitation.group, groupOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshStn000005:16  <br>senso-concept-Mcsh (groupOgsm)
+  McshStn000005:21  <h1 id="idOverviewH1">overview of groupOgsm
+  McshStn000005:25  <br>· groupOgsm is <a class="clsPreview" href="../dirStn/McshStn000002.last.html#idOverview">a-system-of-organisms</a> with a-simple <a class="clsPreview" href=
+  McshStn000005:29  <br>* McshEngl.group-of-organisms!⇒groupOgsm,
+  McshStn000005:30  <br>* McshEngl.groupOgsm!=group-of-organisms,
+  McshStn000005:31  <br>* McshEngl.groupOgsm!~McsStn000005,
+  McshStn000005:32  <br>* McshEngl.McshStn000005.last.html//dirStn//dirMcsh!⇒groupOgsm,
+  McshStn000005:33  <br>* McshEngl.dirStn/McshStn000005.last.html!⇒groupOgsm,
+  McshStn000005:34  <br>* McshEngl.social-group!⇒groupOgsm,
+  McshStn000005:35  <br>* McshEngl.stnOgsm.003-group!⇒groupOgsm,
+  McshStn000005:36  <br>* McshEngl.stnOgsm.group!⇒groupOgsm,
+  McshStn000005:41  <h1 id="idGrpOgmatt004H1">01_node of groupOgsm
+  McshStn000005:49  <br>* McshEngl.GrpOmgnd!=groupOgsm-node!⇒GrpOgmnd,
+  McshStn000005:50  <br>* McshEngl.groupOgsm'att004-node!⇒GrpOgmnd,
+  McshStn000005:51  <br>* McshEngl.groupOgsm'node!⇒GrpOgmnd,
+  McshStn000005:56  <h1 id="idGrpOgmatt005H1">02_node-of-organisms of groupOgsm
+  McshStn000005:63  <br>* McshEngl.groupOgsm'02_organisms-node,
+  McshStn000005:64  <br>* McshEngl.groupOgsm'att005-organisms-node,
+  McshStn000005:65  <br>* McshEngl.groupOgsm'node-of-organisms,
+  McshStn000005:66  <br>* McshEngl.groupOgsm'organisms-node,
+  McshStn000005:70  <h2 id="idGrpOgmatt001H2">organism of groupOgsm (<a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgm035">link</a>)
+  McshStn000005:76  <h1 id="idGrpOgmatt006H1">03_node-of-satisfiers of groupOgsm
+  McshStn000005:83  <br>* McshEngl.groupOgsm'03_satisfiers-node,
+  McshStn000005:84  <br>* McshEngl.groupOgsm'att006-satisfiers-node,
+  McshStn000005:85  <br>* McshEngl.groupOgsm'node-satisfiers,
+  McshStn000005:86  <br>* McshEngl.groupOgsm'satisfiers-node,
+  McshStn000005:90  <h2 id="idGrpOgmatt007H2">satisfier (link) of groupOgsm
+  McshStn000005:96  <h1 id="idGrpOgmatt002H1">04-admin-system of groupOgsm
+  McshStn000005:100  <br>· a-groupOgsm, as socialitation, has a-simple <a class="clsPreview" href="../dirStn/McshStn000004.last.html#idOverview">admin-system</a>.
+  McshStn000005:103  <br>* McshEngl.admin-system-of-groupOgsm!⇒admnGrupOgsm,
+  McshStn000005:104  <br>* McshEngl.admnGrupOgsm!=admin-system-of-groupOgsm,
+  McshStn000005:105  <br>* McshEngl.governance-system-of-groupOgsm!⇒admnGrupOgsm,
+  McshStn000005:106  <br>* McshEngl.groupOgsm'04_governance-system!⇒admnGrupOgsm,
+  McshStn000005:107  <br>* McshEngl.groupOgsm'att002-governance-system!⇒admnGrupOgsm,
+  McshStn000005:108  <br>* McshEngl.groupOgsm'node-of-governance!⇒admnGrupOgsm,
+  McshStn000005:109  <br>* McshEngl.groupOgsm'governance-system!⇒admnGrupOgsm,
+  McshStn000005:110  <br>* McshEngl.gvcGrpOgsm!⇒admnGrupOgsm,
+  McshStn000005:111  <br>* McshEngl.SystGvcGrpOgsm!⇒admnGrupOgsm,
+  McshStn000005:172  <h1 id="idGrpOgmrtogznH1">relation-to-organization of groupOgsm
+  McshStn000005:225  <br>* McshEngl.groupOgsm'relation-to-ogznOgsm,
+  McshStn000005:226  <br>* McshEngl.ogznOgsm'relation-to-groupOgsm,
+  McshStn000005:231  <h1 id="idGrpOgmwptrH1">WHOLE-PART-TREE of groupOgsm
+  McshStn000005:237  <br>* McshEngl.groupOgsm'whole-part-tree,
+  McshStn000005:238  <br>* McshEngl.groupOgsm'part-whole-tree,
+  McshStn000005:241  <br>* groupOgsm,
+  McshStn000005:252  <h1 id="idGrpOgmgstrH1">GENERIC-SPECIFIC-TREE of groupOgsm
+  McshStn000005:258  <br>* McshEngl.groupOgsm'generic-specific-tree,
+  McshStn000005:259  <br>* McshEngl.groupOgsm'specific-generic-tree,
+  McshStn000005:264  <br>* groupOgsm,
+  McshStn000005:271  <br>* McshEngl.groupOgsm:stnOgsm,
+  McshStn000005:282  <br>* McshEngl.groupOgsm.specific,
+  McshStn000005:289  <h1 id="idGrpOgm001H1">groupOgsm.human-001
+  McshStn000005:293  <br>· a-groupOgsm of humans.
+  McshStn000005:299  <br>* McshEngl.groupOgsm.001-human!⇒group,
+  McshStn000005:300  <br>* McshEngl.groupOgsm.human!⇒group,
+  McshStn000005:302  <br>* McshEngl.group:groupOgsm!⇒group,
+  McshStn000005:455  <h1 id="idGrpOgm002H1">groupOgsm.humanNo-002
+  McshStn000005:462  <br>* McshEngl.groupOgsm.002-humanNo,
+  McshStn000005:463  <br>* McshEngl.groupOgsm.humanNo,
+  McshStn000005:468  <h1 id="idGrpOgm003H1">groupOgsm.society-003
+  McshStn000005:477  <br>* McshEngl.groupOgsm.003-society!⇒group,
+  McshStn000005:478  <br>* McshEngl.groupOgsm.society!⇒group,
+  McshStn000005:479  <br>* McshEngl.societyOgsm'att005-group!⇒group,
+  McshStn000005:480  <br>* McshEngl.societyOgsm'group!⇒group,
+  McshStn000005:487  <h1 id="idGrpOgm004H1">groupOgsm.societyNo-004
+  McshStn000005:494  <br>* McshEngl.groupOgsm.004-societyNo,
+  McshStn000005:495  <br>* McshEngl.groupOgsm.societyNo,
+  McshStn000005:500  <h1 id="idGrpOgm005H1">groupOgsm.same-species-005
+  McshStn000005:506  <br>* McshEngl.groupOgsm.005-same-species,
+  McshStn000005:507  <br>* McshEngl.groupOgsm.same-species,
+  McshStn000005:512  <h1 id="idGrpOgm006H1">groupOgsm.sameNo-species-006
+  McshStn000005:518  <br>* McshEngl.groupOgsm.006-sameNo-species,
+  McshStn000005:519  <br>* McshEngl.groupOgsm.sameNo-species,
+  McshStn000005:524  <h1 id="idGrpOgm007H1">groupOgsm.flock-007
+  McshStn000005:534  <br>* McshEngl.groupOgsm.007-flock!⇒flock,
+  McshStn000005:535  <br>* McshEngl.groupOgsm.flock!⇒flock,
+  McshStn000005:542  <h1 id="idGrpOgm008H1">groupOgsm.herd-008
+  McshStn000005:554  <br>* McshEngl.groupOgsm.008-herd!⇒herd,
+  McshStn000005:555  <br>* McshEngl.groupOgsm.herd!⇒herd,
+  McshStn000005:562  <h1 id="idGrpOgm009H1">groupOgsm.pack-009
+  McshStn000005:570  <br>* McshEngl.groupOgsm.009-pack,
+  McshStn000005:571  <br>* McshEngl.groupOgsm.pack,
+  McshStn000005:590  groupOgsm
+  McshStn000005:596  <br>· use the-prefix '<span class="clsColorRed">groupOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concep
+  McshStn000006:6  <title>Mcsh.oznOgsm!=socialitation.organization-of-organisms
+  McshStn000006:8  <meta name="keywords" content="organization-of-organisms, oznOgsm, modelConceptSenso, Hitp_Mcs, synagonism">
+  McshStn000006:16  <br>senso-concept-Mcsh (oznOgsm)
+  McshStn000006:21  <h1 id="idOverviewH1">overview of oznOgsm
+  McshStn000006:28  <br>* McshEngl.oznOgsm,
+  McshStn000006:29  <br>* McshEngl.McshStn000006.last.html//dirStn//dirMcsh!⇒oznOgsm,
+  McshStn000006:30  <br>* McshEngl.oznOgsm!~McsStn000006,
+  McshStn000006:31  <br>* McshEngl.dirStn/McshStn000006.last.html!⇒oznOgsm,
+  McshStn000006:32  <br>* McshEngl.organization-of-organisms!⇒oznOgsm,
+  McshStn000006:33  <br>* McshEngl.stnOgsm.004-organization!⇒oznOgsm,
+  McshStn000006:34  <br>* McshEngl.stnOgsm.organization!⇒oznOgsm,
+  McshStn000006:36  <br>* McshElln.οργάνωση!=oznOgsm,
+  McshStn000006:41  <h1 id="idOznOgmatt003H1">02_member of oznOgsm
+  McshStn000006:48  <br>* McshEngl.oznOgsm'02_member,
+  McshStn000006:49  <br>* McshEngl.oznOgsm'att003-organism,
+  McshStn000006:50  <br>* McshEngl.oznOgsm'organism,
+  McshStn000006:51  <br>* McshEngl.oznOgsm'member,
+  McshStn000006:56  <h1 id="idOznOgmatt006H1">03_satisfier of oznOgsm
+  McshStn000006:63  <br>* McshEngl.oznOgsm'03_satisfier,
+  McshStn000006:64  <br>* McshEngl.oznOgsm'att006-satisfier,
+  McshStn000006:65  <br>* McshEngl.oznOgsm'satisfier,
+  McshStn000006:66  <br>* McshEngl.satisfierOznOgsm,
+  McshStn000006:76  <h1 id="idOznOgmatt002H1">04_governance-system of oznOgsm
+  McshStn000006:80  <br>· an-oznOgsm has <a class="clsPreview" href="../dirStn/McshStn000002.last.html#idStnOgmatt005">a-governance-system</a> as <a class="clsPreview" href="../dir
+  McshStn000006:83  <br>* McshEngl.gvcOznOgsm,
+  McshStn000006:84  <br>* McshEngl.governance-system-of-oznOgsm!⇒gvcOznOgsm,
+  McshStn000006:85  <br>* McshEngl.oznOgsm'04_governance-system!⇒gvcOznOgsm,
+  McshStn000006:86  <br>* McshEngl.oznOgsm'att002-governance-system!⇒gvcOznOgsm,
+  McshStn000006:87  <br>* McshEngl.oznOgsm'governance-system!⇒gvcOznOgsm,
+  McshStn000006:88  <br>* McshEngl.SystGvcOznOgsm!⇒gvcOznOgsm,
+  McshStn000006:93  <h1 id="idOznOgmatt008H1">05_financial-system of oznOgsm
+  McshStn000006:100  <br>* McshEngl.oznOgsm'att008-financial-sys,
+  McshStn000006:101  <br>* McshEngl.oznOgsm'financial-sys,
+  McshStn000006:106  <h1 id="idOznOgmatt004H1">06_sociality of oznOgsm
+  McshStn000006:113  <br>* McshEngl.oznOgsm'06_sociality,
+  McshStn000006:114  <br>* McshEngl.oznOgsm'att004-sociality,
+  McshStn000006:115  <br>* McshEngl.oznOgsm'sociality,
+  McshStn000006:120  <h1 id="idOznOgmatt005H1">07_health of oznOgsm
+  McshStn000006:127  <br>* McshEngl.oznOgsm'07_health,
+  McshStn000006:128  <br>* McshEngl.oznOgsm'att00-health,
+  McshStn000006:129  <br>* McshEngl.oznOgsm'health,
+  McshStn000006:134  <h1 id="idOznOgmatt007H1">08_place of oznOgsm
+  McshStn000006:141  <br>* McshEngl.oznOgsm'08_place,
+  McshStn000006:142  <br>* McshEngl.oznOgsm'att007-place,
+  McshStn000006:143  <br>* McshEngl.oznOgsm'place,
+  McshStn000006:148  <h1 id="idOznOgmdongH1">DOING of oznOgsm
+  McshStn000006:154  <br>* McshEngl.oznOgsm'doing,
+  McshStn000006:162  <h2 id="idOznOgmatt001H2">01_goal of oznOgsm
+  McshStn000006:169  <br>* McshEngl.oznOgsm'01_goal,
+  McshStn000006:170  <br>* McshEngl.oznOgsm'att001-goal,
+  McshStn000006:171  <br>* McshEngl.oznOgsm'goal,
+  McshStn000006:172  <br>* McshEngl.oznOgsm'doing'goal,
+  McshStn000006:176  <h3 id="idOznOgmatt009H3">mission of oznOgsm
+  McshStn000006:183  <br>* McshEngl.oznOgsm'att009-mission,
+  McshStn000006:184  <br>* McshEngl.oznOgsm'mission,
+  McshStn000006:191  <h1 id="idOznOgmwptrH1">WHOLE-PART-TREE of oznOgsm
+  McshStn000006:197  <br>* McshEngl.oznOgsm'whole-part-tree,
+  McshStn000006:198  <br>* McshEngl.oznOgsm'part-whole-tree,
+  McshStn000006:201  <br>* oznOgsm,
+  McshStn000006:213  <h1 id="idOznOgmgstrH1">GENERIC-SPECIFIC-TREE of oznOgsm
+  McshStn000006:219  <br>* McshEngl.oznOgsm'generic-specific-tree,
+  McshStn000006:220  <br>* McshEngl.oznOgsm'specific-generic-tree,
+  McshStn000006:227  <br>* McshEngl.oznOgsm:stnOgsm,
+  McshStn000006:231  <br>* McshEngl.oznOgsm.specific,
+  McshStn000006:234  <br>* human-oznOgsm,
+  McshStn000006:235  <br>* humanNo-oznOgsm,
+  McshStn000006:241  <h1 id="idOznH1">oznOgsm.human-001 (<a class="clsPreview" href="../dirStn/McshStn000008.last.html#idOverview">link</a>)
+  McshStn000006:246  <h1 id="idOznOgm002H1">oznOgsm.humanNo-002
+  McshStn000006:257  <br>* McshEngl.oznOgsm.002-humanNo!⇒oznHmnNo,
+  McshStn000006:262  <h1 id="idOznOgm003H1">oznOgsm.societal-003
+  McshStn000006:266  <br>· an-oznOgsm part of a-societyOgsm.
+  McshStn000006:270  <br>* McshEngl.oznOgsm.003-societal!⇒oznOgmSoc,
+  McshStn000006:271  <br>* McshEngl.oznOgsm.societal!⇒oznOgmSoc,
+  McshStn000006:272  <br>* McshEngl.societyOgsm'att004-organization!⇒oznOgmSoc,
+  McshStn000006:273  <br>* McshEngl.societyOgsm'organization-att004!⇒oznOgmSoc,
+  McshStn000006:278  <h1 id="idOznOgm004H1">oznOgsm.societalNo-004
+  McshStn000006:282  <br>· an-oznOgsm NOT part of a-societyOgsm.
+  McshStn000006:286  <br>* McshEngl.oznOgsm.003-societalNo!⇒oznOgmSocNo,
+  McshStn000006:287  <br>* McshEngl.oznOgsm.societalNo!⇒oznOgmSocNo,
+  McshStn000006:304  oznOgsm
+  McshStn000006:310  <br>· use the-prefix '<span class="clsColorRed">oznOgsm</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concepts
+  McshStn000007:6  <title>Mcsh.societyOgsm!=society-of-organisms
+  McshStn000007:16  <br>senso-concept-Mcsh (societyOgsm)
+  McshStn000007:21  <h1 id="idOverviewH1">overview of societyOgsm
+  McshStn000007:28  <br>* McshEngl.society-of-organisms!⇒societyOgsm,
+  McshStn000007:29  <br>* McshEngl.societyOgsm!=society-of-organisms,
+  McshStn000007:30  <br>* McshEngl.societyOgsm!~McsStn000007,
+  McshStn000007:31  <br>* McshEngl.McshStn000007.last.html//dirStn//dirMcsh!⇒societyOgsm,
+  McshStn000007:32  <br>* McshEngl.dirStn/McshStn000007.last.html!⇒societyOgsm,
+  McshStn000007:33  <br>* McshEngl.stnOgsm.005-society!⇒societyOgsm,
+  McshStn000007:34  <br>* McshEngl.stnOgsm.society!⇒societyOgsm,
+  McshStn000007:35  <br>* McshEngl.SocOgsm!⇒societyOgsm,
+  McshStn000007:37  <br>* McshElln.κοινωνία-οργανισμών!η!=societyOgsm,
+  McshStn000007:53  <h1 id="idSocOgmatt011H1">01_node of societyOgsm
+  McshStn000007:57  <br>· any subsystem of a-societyOgsm.
+  McshStn000007:60  <br>* McshEngl.societyOgsm'01_node,
+  McshStn000007:61  <br>* McshEngl.societyOgsm'att011-node,
+  McshStn000007:62  <br>* McshEngl.societyOgsm'node,
+  McshStn000007:71  <h1 id="idSocOgmatt012H1">02_node-of-organisms of societyOgsm
+  McshStn000007:77  <br>* McshEngl.societyOgsm'02_node-of-organisms,
+  McshStn000007:78  <br>* McshEngl.societyOgsm'att012-node-of-organisms,
+  McshStn000007:79  <br>* McshEngl.societyOgsm'node-of-organisms,
+  McshStn000007:83  <h2 id="idSocOgmatt001H2">member of societyOgsm
+  McshStn000007:90  <br>* McshEngl.societyOgsm'att001-member,
+  McshStn000007:91  <br>* McshEngl.societyOgsm'member,
+  McshStn000007:92  <br>* McshEngl.societyOgsm'organism,
+  McshStn000007:97  <h2 id="idSocOgmatt002H2">sociality of societyOgsm
+  McshStn000007:103  <br>* McshEngl.societyOgsm'att002-sociality,
+  McshStn000007:104  <br>* McshEngl.societyOgsm'sociality,
+  McshStn000007:109  <h2 id="idSocOgmatt013H2">socialitation of societyOgsm (<a class="clsPreview" href="../dirStn/McshStn000002.last.html#idStnOgm006">link</a>)
+  McshStn000007:114  <h2 id="idSocOgmatt004H2">organization of societyOgsm (<a class="clsPreview" href="../dirStn/McshStn000006.last.html#idOznOgm003">link</a>)
+  McshStn000007:119  <h2 id="idSocOgmatt005H2">group of societyOgsm (<a class="clsPreview" href="../dirStn/McshStn000005.last.html#idGrpOgm003">link</a>)
+  McshStn000007:125  <h1 id="idSocOgmatt007H1">03_node-of-satisfiers of societyOgsm
+  McshStn000007:132  <br>* McshEngl.societyOgsm'03_node-of-satisfiers,
+  McshStn000007:133  <br>* McshEngl.societyOgsm'att007-node-of-satisfiers,
+  McshStn000007:134  <br>* McshEngl.societyOgsm'node-of-satisfiers,
+  McshStn000007:138  <h2 id="idSocOgmatt013H2">satisfier (link) of societyOgsm
+  McshStn000007:144  <h1 id="idSocOgmatt006H1">04_governance-system of societyOgsm
+  McshStn000007:148  <br>· a-societyOgsm, as <a class="clsPreview" href="../dirStn/McshStn000006.last.html#idOverview">organization</a>, has a-governance-system.
+  McshStn000007:151  <br>* McshEngl.SystGvcSocOgsm,
+  McshStn000007:152  <br>* McshEngl.governance-system-of-societyOgsm!⇒SystGvcSocOgsm,
+  McshStn000007:153  <br>* McshEngl.societyOgsm'04_governance-system!⇒SystGvcSocOgsm,
+  McshStn000007:154  <br>* McshEngl.societyOgsm'att006-governance-system!⇒SystGvcSocOgsm,
+  McshStn000007:155  <br>* McshEngl.societyOgsm'governance-system-att006!⇒SystGvcSocOgsm,
+  McshStn000007:165  <h1 id="idSocOgmatt003H1">05_health of societyOgsm
+  McshStn000007:169  <br>· the-good|bad-state of a-societyOgsm.
+  McshStn000007:172  <br>* McshEngl.societyOgsm'05_health,
+  McshStn000007:173  <br>* McshEngl.societyOgsm'att003-health,
+  McshStn000007:174  <br>* McshEngl.societyOgsm'health,
+  McshStn000007:179  <h1 id="idSocOgmatt008H1">08_food of societyOgsm
+  McshStn000007:185  <br>* McshEngl.societyOgsm'08_food,
+  McshStn000007:186  <br>* McshEngl.societyOgsm'att008-food,
+  McshStn000007:187  <br>* McshEngl.societyOgsm'food-att008,
+  McshStn000007:192  <h1 id="idSocOgmatt009H1">09_language of societyOgsm
+  McshStn000007:198  <br>* McshEngl.societyOgsm'09_language,
+  McshStn000007:199  <br>* McshEngl.societyOgsm'att009-language,
+  McshStn000007:200  <br>* McshEngl.societyOgsm'language-att009,
+  McshStn000007:203  <br>* <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">languageOgsm</a>,
+  McshStn000007:208  <h1 id="idSocOgmatt010H1">10_technology of societyOgsm
+  McshStn000007:214  <br>* McshEngl.societyOgsm'10_technology,
+  McshStn000007:215  <br>* McshEngl.societyOgsm'att010-technology,
+  McshStn000007:216  <br>* McshEngl.societyOgsm'technology-att010,
+  McshStn000007:221  <h1 id="idSocOgmwptrH1">WHOLE-PART-TREE of societyOgsm
+  McshStn000007:227  <br>* McshEngl.societyOgsm'whole-part-tree,
+  McshStn000007:228  <br>* McshEngl.societyOgsm'part-whole-tree,
+  McshStn000007:241  <h1 id="idSocOgmgstrH1">GENERIC-SPECIFIC-TREE of societyOgsm
+  McshStn000007:247  <br>* McshEngl.societyOgsm'generic-specific-tree,
+  McshStn000007:248  <br>* McshEngl.societyOgsm'specific-generic-tree,
+  McshStn000007:263  <br>* McshEngl.societyOgsm:stnOgsm,
+  McshStn000007:267  <br>* McshEngl.societyOgsm.specific,
+  McshStn000007:276  <h1 id="idSocOgm002H1">societyOgsm.humanNo
+  McshStn000007:280  <br>· non-human-society is a-societyOgsm with members non-humans.
+  McshStn000007:311  <br>* McshEngl.societyOgsm.002-humanNo!⇒societyHmnN,
+  McshStn000007:312  <br>* McshEngl.societyOgsm.humanNo!⇒societyHmnN,
+  McshStn000007:316  <h2 id="idSocOgm002strH2">societyOgsm.humanNo
+  McshStn000007:358  <br>* McshEngl.societyOgsm.003-humanNo.terrestrial,
+  McshStn000007:359  <br>* McshEngl.societyOgsm.humanNo.terrestrial,
+  McshStn000007:387  <br>* McshEngl.societyOgsm.004-humanNo.terrestrialNo!⇒societyHntn,
+  McshStn000007:388  <br>* McshEngl.societyOgsm.humanNo.terrestrialNo!⇒societyHntn,
+  McshStn000008:41  <br>* McshEngl.oznOgsm.001-human!⇒Ogzn,
+  McshStn000008:42  <br>* McshEngl.oznOgsm.human!⇒Ogzn,
+  McshStn000008:1203  <br>* McshEngl.Ogzn:oznOgsm,
+  McshStn000008:1602  <br>· use the-prefix '<span class="clsColorRed">Ogzn</span>' for <a class="clsPreview" href="../dirCor/McshCor000002.last.html#idOverview">sensorial-concepts</a
+  McshStn000009:8180  <br>* McshEngl.society:societyOgsm,
+  McshStn000010:46  <br>* McshEngl.sfrOgsm.001-human!⇒satisfier,
+  McshStn000010:47  <br>* McshEngl.sfrOgsm.human!⇒satisfier,
+
+=== FIXED-TREE-HEADS (87) — X…Ogm_/Hmn_ tree names missed by the first rename → Ogsm_/Humn_
+  McshHlth000002:5554  <br>* McshEngl.calciumAtmHumn_Gntr,
+  McshHlth000002:12836  <br>* McshEngl.ogmHstHumn_Gntr,
+  McshHlth000002:12842  <br>* McshEngl.ogmHstHumn_Sptr,
+  McshHlth000002:13417  <br>* McshEngl.doingBdyHumn_Wltr,
+  McshHlth000004:1349  <br>* cellOgsm_Gntr,
+  McshHlth000007:158  <br>* McshEngl.healthOgsm_Wltr,
+  McshHlth000007:161  <br>* McshEngl.healthOgsm_Prtr,
+  McshHlth000007:176  <br>* McshEngl.healthOgsm_Gntr,
+  McshHlth000007:183  <br>* McshEngl.healthOgsm_Sptr,
+  McshHlth000010:129  <br>* McshEngl.ThrpOgsm_Gntr,
+  McshHlth000010:135  <br>* McshEngl.ThrpOgsm_Sptr,
+  McshHlth000016:284  <br>* ThrpOgsm_Gntr,
+  McshHlth000019:4656  <br>* McshEngl.synapseHumn_Wltr,
+  McshNtr000006:227  <br>* McshEngl.steroidOgsm_Gntr,
+  McshNtr000006:233  <br>* McshEngl.steroidOgsm_Sptr,
+  McshOgm000004:176  <br>* McshEngl.molOgsm_Wltr,
+  McshOgm000004:179  <br>* McshEngl.molOgsm_Prtr,
+  McshOgm000004:194  <br>* McshEngl.molOgsm_Gntr,
+  McshOgm000004:201  <br>* McshEngl.molOgsm_Sptr,
+  McshOgm000004:739  <br>* molOgsm_Gntr,
+  McshOgm000004:838  <br>* McshEngl.ligninOgsm_Gntr,
+  McshOgm000004:860  <br>* McshEngl.melaninOgsm_Gntr,
+  McshOgm000004:880  <br>* McshEngl.suberinOgsm_Gntr,
+  McshOgm000004:1110  <br>* McshEngl.cholesterolHumn_Wltr,
+  McshOgm000004:1124  <br>* McshEngl.cholesterolHumn_Gntr,
+  McshOgm000004:1130  <br>* McshEngl.cholesterolHumn_Sptr,
+  McshOgm000005:168  <br>* McshEngl.SystMolsOgsm_Wltr,
+  McshOgm000005:171  <br>* McshEngl.SystMolsOgsm_Prtr,
+  McshOgm000005:186  <br>* McshEngl.SystMolsOgsm_Gntr,
+  McshOgm000005:192  <br>* McshEngl.SystMolsOgsm_Sptr,
+  McshOgm000005:228  <br>* McshEngl.SystMolsHumn_Gntr,
+  McshOgm000005:235  <br>* McshEngl.SystMolsHumn_Sptr,
+  McshOgm000005:277  <br>* McshEngl.substanceHumn_Wltr,
+  McshOgm000005:291  <br>* McshEngl.substanceHumn_Gntr,
+  McshOgm000005:298  <br>* McshEngl.substanceHumn_Sptr,
+  McshOgm000005:575  <br>* McshEngl.fluidHumn_Gntr,
+  McshOgm000005:581  <br>* McshEngl.fluidHumn_Sptr,
+  McshOgm000005:667  <br>* McshEngl.macromoleculeHumn_Gntr,
+  McshOgm000005:673  <br>* McshEngl.macromoleculeHumn_Sptr,
+  McshOgm000005:742  <br>* McshEngl.lipidHumn_Gntr,
+  McshOgm000005:748  <br>* McshEngl.lipidHumn_Sptr,
+  McshOgm000005:908  <br>* McshEngl.salivaHumn_Gntr,
+  McshOgm000005:1002  <br>* McshEngl.excrementHumn_Gntr,
+  McshOgm000005:1025  <br>* McshEngl.urineHumn_Gntr,
+  McshOgm000005:1129  <br>* McshEngl.antioxidantHumn_Gntr,
+  McshOgm000005:1136  <br>* McshEngl.antioxidantHumn_Sptr,
+  McshOgm000005:1178  <br>* McshEngl.hormoneOgsm_Gntr,
+  McshOgm000005:1184  <br>* McshEngl.hormoneOgsm_Sptr,
+  McshOgm000005:3614  <br>* McshEngl.bloodHumn_Gntr,
+  McshOgm000005:3624  <br>* McshEngl.bloodHumn_Sptr,
+  McshOgm000006:176  <br>* McshEngl.acidAminoHumn_Gntr,
+  McshOgm000006:182  <br>* McshEngl.acidAminoHumn_Sptr,
+  McshOgm000006:1057  <br>* McshEngl.proteinHumn_Sptr,
+  McshOgm000006:1060  <br>* McshEngl.proteinHumn_Gntr,
+  McshOgm000006:1067  <br>* McshEngl.proteinHumn_Sptr,
+  McshOgm000007:762  <br>* McshEngl.signalOgsm_Gntr,
+  McshOgm000007:768  <br>* McshEngl.signalOgsm_Sptr,
+  McshOgm000007:1172  <br>* McshEngl.signalingOgsm_Gntr,
+  McshOgm000007:1178  <br>* McshEngl.signalingOgsm_Sptr,
+  McshOgm000007:1558  <br>* McshEngl.cellOgsm_Wltr,
+  McshOgm000007:1562  <br>* McshEngl.cellOgsm_Prtr,
+  McshOgm000007:1577  <br>* McshEngl.cellOgsm_Gntr,
+  McshOgm000007:1584  <br>* McshEngl.cellOgsm_Sptr,
+  McshOgm000007:2032  <br>* McshEngl.neuronOgsm_Gntr,
+  McshOgm000007:2038  <br>* McshEngl.neuronOgsm_Sptr,
+  McshOgm000007:2275  <br>* McshEngl.neuronSenseOgsm_Gntr,
+  McshOgm000007:2281  <br>* McshEngl.neuronSenseOgsm_Sptr,
+  McshStn000002:201  <br>* McshEngl.satisfierOgsm_Gntr,
+  McshStn000002:207  <br>* McshEngl.satisfierOgsm_Sptr,
+  McshStn000003:99  <br>* McshEngl.sfrOgsm_Wltr,
+  McshStn000003:102  <br>* McshEngl.sfrOgsm_Prtr,
+  McshStn000003:117  <br>* McshEngl.sfrOgsm_Gntr,
+  McshStn000003:123  <br>* McshEngl.sfrOgsm_Sptr,
+  McshStn000005:243  <br>* McshEngl.groupOgsm_Wltr,
+  McshStn000005:247  <br>* McshEngl.groupOgsm_Prtr,
+  McshStn000005:262  <br>* McshEngl.groupOgsm_Gntr,
+  McshStn000005:283  <br>* McshEngl.groupOgsm_Sptr,
+  McshStn000006:204  <br>* McshEngl.oznOgsm_Wltr,
+  McshStn000006:208  <br>* McshEngl.oznOgsm_Prtr,
+  McshStn000006:223  <br>* McshEngl.oznOgsm_Gntr,
+  McshStn000006:232  <br>* McshEngl.oznOgsm_Sptr,
+  McshStn000007:158  <br>* McshEngl.SystGvcSocOgsm_Gntr,
+  McshStn000007:235  <br>* McshEngl.societyOgsm_Wltr,
+  McshStn000007:239  <br>* McshEngl.societyOgsm_Prtr,
+  McshStn000007:254  <br>* McshEngl.societyOgsm_Gntr,
+  McshStn000007:271  <br>* McshEngl.societyOgsm_Sptr,
+  McshStn000009:5452  <br>* SystGvcSocOgsm_Gntr,

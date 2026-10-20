@@ -1,0 +1,3371 @@
+specific-tree ids: str -> sptr — 2026-10-19   DRY=false
+
+ids renamed: 2789 | links updated: 2798 | files written: 551 | dangling links: 2912 -> 2912
+
+=== RENAMED (2789)
+  McshCor000002  idMcsattNamcvnstr -> idMcsattNamcvnsptr
+  McshCor000002  idMcsattNamdrvdstr -> idMcsattNamdrvdsptr
+  McshCor000002  idMcsattNamstr -> idMcsattNamsptr
+  McshCor000002  idMcsattNamDzrstr -> idMcsattNamDzrsptr
+  McshCor000002  idMcsattstr -> idMcsattsptr
+  McshCor000002  idMcsattDvsnclmtstr -> idMcsattDvsnclmtsptr
+  McshCor000002  idMcsattDvsnstr -> idMcsattDvsnsptr
+  McshCor000002  idMcsattDvsnThmstr -> idMcsattDvsnThmsptr
+  McshCor000002  idMcsattPrtstr -> idMcsattPrtsptr
+  McshCor000002  idMcsattWhlNstr -> idMcsattWhlNsptr
+  McshCor000002  idMcsvstr -> idMcsvsptr
+  McshCor000002  idMcswvstr -> idMcswvsptr
+  McshCor000002  idMcslagstr -> idMcslagsptr
+  McshCor000002  idMcsmdongstr -> idMcsmdongsptr
+  McshCor000002  idMcsmatt014str -> idMcsmatt014sptr
+  McshCor000002  idMcsmstr -> idMcsmsptr
+  McshCor000002  idMcsmAajbldgstr -> idMcsmAajbldgsptr
+  McshCor000002  idMcsdongstr -> idMcsdongsptr
+  McshCor000002  idMcssrcgstr -> idMcssrcgsptr
+  McshCor000002  idMcsvdtgstr -> idMcsvdtgsptr
+  McshCor000002  idMcsstr -> idMcssptr
+  McshCor000002  idMcsHtmlstr -> idMcsHtmlsptr
+  McshCor000003  idEntattstr -> idEntattsptr
+  McshCor000003  idEntatrrln2str -> idEntatrrln2sptr
+  McshCor000003  idEntstrrstr -> idEntstrrsptr
+  McshCor000003  idEntevogtmptstr -> idEntevogtmptsptr
+  McshCor000003  idEntevogrvtgstr -> idEntevogrvtgsptr
+  McshCor000003  idEntevogstr -> idEntevogsptr
+  McshCor000003  idEntstr -> idEntsptr
+  McshCor000003  idEntDefstr -> idEntDefsptr
+  McshCor000003  idEntBodystr -> idEntBodysptr
+  McshCor000003  idEntBodyNargstr -> idEntBodyNargsptr
+  McshCor000003  idEntBodyNstr -> idEntBodyNsptr
+  McshCor000003  idEntBodyNSqcdstr -> idEntBodyNSqcdsptr
+  McshCor000003  idEntDngNstr -> idEntDngNsptr
+  McshCor000004  idDngatt001str -> idDngatt001sptr
+  McshCor000004  idDngstr -> idDngsptr
+  McshCor000004  idDngSmsstr -> idDngSmssptr
+  McshCor000004  idDngActgstr -> idDngActgsptr
+  McshCor000004  idDngActgIactstr -> idDngActgIactsptr
+  McshCor000004  idDngFctgstr -> idDngFctgsptr
+  McshCor000004  idDngFctgMvgstr -> idDngFctgMvgsptr
+  McshCor000004  idDngBrkgstr -> idDngBrkgsptr
+  McshCor000004  idDngClngstr -> idDngClngsptr
+  McshCor000004  idDngClsgstr -> idDngClsgsptr
+  McshCor000004  idDngClpgstr -> idDngClpgsptr
+  McshCor000004  idDngCutgstr -> idDngCutgsptr
+  McshCor000004  idDngDrsgstr -> idDngDrsgsptr
+  McshCor000004  idDngFirgstr -> idDngFirgsptr
+  McshCor000004  idDngIdngstr -> idDngIdngsptr
+  McshCor000004  idDngMvngstr -> idDngMvngsptr
+  McshCor000004  idDngMvngAcnstr -> idDngMvngAcnsptr
+  McshCor000004  idDngMvngFcnstr -> idDngMvngFcnsptr
+  McshCor000004  idDngMvngTostr -> idDngMvngTosptr
+  McshCor000004  idDngRptgstr -> idDngRptgsptr
+  McshCor000005  idRlnstr -> idRlnsptr
+  McshCor000005  idRlnSmsstr -> idRlnSmssptr
+  McshCor000005  idRlnUnnstr -> idRlnUnnsptr
+  McshCor000005  idRlnCpltstr -> idRlnCpltsptr
+  McshCor000005  idRlnDjcnstr -> idRlnDjcnsptr
+  McshCor000005  idRlnSmnsstr -> idRlnSmnssptr
+  McshCor000005  idRlnMpgstr -> idRlnMpgsptr
+  McshCor000005  idRlnSmnsNstr -> idRlnSmnsNsptr
+  McshCor000005  idRlnOpsnstr -> idRlnOpsnsptr
+  McshCor000005  idRlnCsltstr -> idRlnCsltsptr
+  McshCor000005  idRlnDcasstr -> idRlnDcassptr
+  McshCor000005  idRlnInfstr -> idRlnInfsptr
+  McshCor000005  idRlnPssnstr -> idRlnPssnsptr
+  McshCor000006  idTimestr -> idTimesptr
+  McshCor000006  idTimePntstr -> idTimePntsptr
+  McshCor000006  idTimeUomstr -> idTimeUomsptr
+  McshCor000006  idTimeUom001str -> idTimeUom001sptr
+  McshCor000006  idTimeUomDaystr -> idTimeUomDaysptr
+  McshCor000006  idTimeUomDayWorkNstr -> idTimeUomDayWorkNsptr
+  McshCor000007  idSpcconjstr -> idSpcconjsptr
+  McshCor000007  idSpcestr -> idSpcesptr
+  McshCor000007  idSpcDftstr -> idSpcDftsptr
+  McshCor000007  idSpcNamedstr -> idSpcNamedsptr
+  McshCor000007  idSpcDrcnstr -> idSpcDrcnsptr
+  McshCor000007  idSpc1Uomstr -> idSpc1Uomsptr
+  McshCor000008  idWhlatt001str -> idWhlatt001sptr
+  McshCor000008  idEnt003str -> idEnt003sptr
+  McshCor000008  idWhlstr -> idWhlsptr
+  McshCor000008  idWhl001str -> idWhl001sptr
+  McshCor000009  idGnrcmsrguomstr -> idGnrcmsrguomsptr
+  McshCor000009  idGnrcstr -> idGnrcsptr
+  McshCor000009  idGnrcCntstr -> idGnrcCntsptr
+  McshCor000010  idQntstr -> idQntsptr
+  McshCor000010  idQntSmsIgvstr -> idQntSmsIgvsptr
+  McshCor000010  idQntDfntstr -> idQntDfntsptr
+  McshCor000010  idQntNbrnmrlsysstr -> idQntNbrnmrlsyssptr
+  McshCor000010  idQntNbrstr -> idQntNbrsptr
+  McshCor000010  idQntDftNstr -> idQntDftNsptr
+  McshCor000010  idQntRlvstr -> idQntRlvsptr
+  McshCor000010  idQntSmsstr -> idQntSmssptr
+  McshCor000011  idSysstr -> idSyssptr
+  McshCor000011  idSys001ordrstr -> idSys001ordrsptr
+  McshCor000011  idSys001ordrRlvstr -> idSys001ordrRlvsptr
+  McshCor000011  idSys002nodepthstr -> idSys002nodepthsptr
+  McshCor000011  idSys002nodestr -> idSys002nodesptr
+  McshCor000011  idSys002nodeLvlstr -> idSys002nodeLvlsptr
+  McshCor000011  idSys002str -> idSys002sptr
+  McshCor000011  idSys002Gcscstr -> idSys002Gcscsptr
+  McshCor000011  idSys009str -> idSys009sptr
+  McshCor000011  idSysMngstr -> idSysMngsptr
+  McshCor000011  idSysMng004str -> idSysMng004sptr
+  McshCor000011  idSysMng001str -> idSysMng001sptr
+  McshCor000011  idSysMng001dongstr -> idSysMng001dongsptr
+  McshCor000012  idMdlatt016str -> idMdlatt016sptr
+  McshCor000012  idMdlstr -> idMdlsptr
+  McshCor000012  idMdl009str -> idMdl009sptr
+  McshCor000012  idMdl021str -> idMdl021sptr
+  McshCor000013  idBrnginfstr -> idBrnginfsptr
+  McshCor000013  idBrngstr -> idBrngsptr
+  McshCor000013  idBrngInfcrtstr -> idBrngInfcrtsptr
+  McshCor000013  idBrngInfcmtstr -> idBrngInfcmtsptr
+  McshCor000013  idBrngSnsgstr -> idBrngSnsgsptr
+  McshCor000013  idBrngEmtgstr -> idBrngEmtgsptr
+  McshCor000013  idBrngEmtgPlsgNstr -> idBrngEmtgPlsgNsptr
+  McshCor000013  idBrngWntgstr -> idBrngWntgsptr
+  McshCor000013  idBrngWntgsfrstr -> idBrngWntgsfrsptr
+  McshCor000013  idBrngWntg001needstr -> idBrngWntg001needsptr
+  McshCor000013  idBrngFlngstr -> idBrngFlngsptr
+  McshCor000013  idBrngThkgstr -> idBrngThkgsptr
+  McshCor000013  idBrngCptgcptstr -> idBrngCptgcptsptr
+  McshCor000013  idBrngLrngstr -> idBrngLrngsptr
+  McshCor000013  idBrngEvalgstr -> idBrngEvalgsptr
+  McshCor000014  idNetstr -> idNetsptr
+  McshCor000014  idNetBiolstr -> idNetBiolsptr
+  McshCor000014  idNetSoclstr -> idNetSoclsptr
+  McshCor000015  idMcshExmlstr -> idMcshExmlsptr
+  McshCor000016  idMcsTeststr -> idMcsTestsptr
+  McshCor000018  idBrngHmnFctstr -> idBrngHmnFctsptr
+  McshCor000018  idBrngHmnFct007str -> idBrngHmnFct007sptr
+  McshCor000018  idBrngHmnFct003att001str -> idBrngHmnFct003att001sptr
+  McshCor000018  idBrngHmnFct003str -> idBrngHmnFct003sptr
+  McshCor000018  idBrngHmnFctseegstr -> idBrngHmnFctseegsptr
+  McshCor000018  idBrngHmnFct002str -> idBrngHmnFct002sptr
+  McshCor000018  idBrngHmnFct002Dcdgstr -> idBrngHmnFct002Dcdgsptr
+  McshCor000018  idBrngHmnFct002EvalgargOtptstr -> idBrngHmnFct002EvalgargOtptsptr
+  McshCor000018  idBrngHmnFct002EvalgargOtptDegrstr -> idBrngHmnFct002EvalgargOtptDegrsptr
+  McshCor000018  idBrngHmnFct002Evalgstr -> idBrngHmnFct002Evalgsptr
+  McshCor000018  idBrngHmnFct004str -> idBrngHmnFct004sptr
+  McshCor000018  idBrngHmnFct004012str -> idBrngHmnFct004012sptr
+  McshCor000018  idBrngHmnFct004002nidstr -> idBrngHmnFct004002nidsptr
+  McshCor000018  idBrngHmnFct004015str -> idBrngHmnFct004015sptr
+  McshCor000018  idBrngHmnFct004001wntstr -> idBrngHmnFct004001wntsptr
+  McshCor000018  idBrngHmnFct004001wnt003str -> idBrngHmnFct004001wnt003sptr
+  McshCor000018  idBrngHmnFct004001wnt004str -> idBrngHmnFct004001wnt004sptr
+  McshCor000018  idBrngHmnFct012str -> idBrngHmnFct012sptr
+  McshCor000018  idBrngHmnFct005str -> idBrngHmnFct005sptr
+  McshCor000018  idBrngHmnFct010str -> idBrngHmnFct010sptr
+  McshCor000018  idBrngHmnFct006str -> idBrngHmnFct006sptr
+  McshCor000019  idDncgstr -> idDncgsptr
+  McshCor000020  idRfrtgstr -> idRfrtgsptr
+  McshCor000020  idRfrtgPrvgstr -> idRfrtgPrvgsptr
+  McshCor000020  idRfrtgPrvgPrtcstr -> idRfrtgPrvgPrtcsptr
+  McshCor000021  idEnrgstr -> idEnrgsptr
+  McshEdu000002  idSciatt019str -> idSciatt019sptr
+  McshEdu000002  idSciatt005str -> idSciatt005sptr
+  McshEdu000002  idScidongstr -> idScidongsptr
+  McshEdu000002  idScistr -> idScisptr
+  McshEdu000002  idSci013str -> idSci013sptr
+  McshEdu000002  idSci002onacsrptrstr -> idSci002onacsrptrsptr
+  McshEdu000003  idSMathgraphstr -> idSMathgraphsptr
+  McshEdu000005  idSMathstcdWebappstr -> idSMathstcdWebappsptr
+  McshEdu000005  idSMathobjtstr -> idSMathobjtsptr
+  McshEdu000005  idSMathstr -> idSMathsptr
+  McshEdu000005  idSMath001str -> idSMath001sptr
+  McshEdu000005  idSMath002str -> idSMath002sptr
+  McshEdu000005  idSMath015str -> idSMath015sptr
+  McshEdu000005  idSMath003str -> idSMath003sptr
+  McshEdu000005  idSMath005str -> idSMath005sptr
+  McshEdu000005  idSMath021str -> idSMath021sptr
+  McshEdu000005  idSMath007str -> idSMath007sptr
+  McshEdu000005  idSMath009str -> idSMath009sptr
+  McshEdu000005  idSMath012str -> idSMath012sptr
+  McshEdu000005  idSMath013str -> idSMath013sptr
+  McshEdu000006  idSSophywrkrstr -> idSSophywrkrsptr
+  McshEdu000006  idSSophystr -> idSSophysptr
+  McshEdu000007  idSCmprstr -> idSCmprsptr
+  McshEdu000008  idSInfostr -> idSInfosptr
+  McshEdu000009  idSMindstr -> idSMindsptr
+  McshEdu000009  idSMind005str -> idSMind005sptr
+  McshEdu000010  idSLangtermstr -> idSLangtermsptr
+  McshEdu000010  idSLangwkrstr -> idSLangwkrsptr
+  McshEdu000010  idSLangstr -> idSLangsptr
+  McshEdu000010  idSLangApldstr -> idSLangApldsptr
+  McshEdu000010  idSLang003str -> idSLang003sptr
+  McshEdu000011  idArtstr -> idArtsptr
+  McshEdu000012  idSGvncstr -> idSGvncsptr
+  McshEdu000013  idSPhysstr -> idSPhyssptr
+  McshEdu000014  idSEconstr -> idSEconsptr
+  McshEdu000014  idSEcon008str -> idSEcon008sptr
+  McshEdu000014  idSEcon009str -> idSEcon009sptr
+  McshEdu000014  idSEcon001str -> idSEcon001sptr
+  McshEdu000015  idMuscstr -> idMuscsptr
+  McshHlth000002  idBdyHmnatt079str -> idBdyHmnatt079sptr
+  McshHlth000002  idBdyHmnatt007str -> idBdyHmnatt007sptr
+  McshHlth000002  idBdyHmnatt002str -> idBdyHmnatt002sptr
+  McshHlth000002  idSysOgnHmnstr -> idSysOgnHmnsptr
+  McshHlth000002  idOgnHmnstr -> idOgnHmnsptr
+  McshHlth000002  idGlndHmnstr -> idGlndHmnsptr
+  McshHlth000002  idGlndHmn001str -> idGlndHmn001sptr
+  McshHlth000002  idGlndHmn002str -> idGlndHmn002sptr
+  McshHlth000002  idGlndHmn003str -> idGlndHmn003sptr
+  McshHlth000002  idGlndHmn005diseasestr -> idGlndHmn005diseasesptr
+  McshHlth000002  idBdyHmn547str -> idBdyHmn547sptr
+  McshHlth000002  idGlndHmn006str -> idGlndHmn006sptr
+  McshHlth000002  idGlndHmn008str -> idGlndHmn008sptr
+  McshHlth000002  idGlndHmn009str -> idGlndHmn009sptr
+  McshHlth000002  idGlndHmn013str -> idGlndHmn013sptr
+  McshHlth000002  idGlndHmn014str -> idGlndHmn014sptr
+  McshHlth000002  idGlndHmn017str -> idGlndHmn017sptr
+  McshHlth000002  idGlndHmn018str -> idGlndHmn018sptr
+  McshHlth000002  idGlndHmn020str -> idGlndHmn020sptr
+  McshHlth000002  idTissHmnstr -> idTissHmnsptr
+  McshHlth000002  idTissHmn006str -> idTissHmn006sptr
+  McshHlth000002  idTissHmn007str -> idTissHmn007sptr
+  McshHlth000002  idTissHmn008str -> idTissHmn008sptr
+  McshHlth000002  idTissHmn005str -> idTissHmn005sptr
+  McshHlth000002  idBdyHmnatt017str -> idBdyHmnatt017sptr
+  McshHlth000002  idBdyHmnatt022str -> idBdyHmnatt022sptr
+  McshHlth000002  idBdyHmnatt015str -> idBdyHmnatt015sptr
+  McshHlth000002  idBdyHmnatt015004str -> idBdyHmnatt015004sptr
+  McshHlth000002  idBdyHmnatt015001str -> idBdyHmnatt015001sptr
+  McshHlth000002  idBdyHmnatt015005str -> idBdyHmnatt015005sptr
+  McshHlth000002  idBdyHmnatt015002str -> idBdyHmnatt015002sptr
+  McshHlth000002  idSysOgnHmn002att002str -> idSysOgnHmn002att002sptr
+  McshHlth000002  idOgnHmn013str -> idOgnHmn013sptr
+  McshHlth000002  idOgnHmn013001str -> idOgnHmn013001sptr
+  McshHlth000002  idOgnHmn013002str -> idOgnHmn013002sptr
+  McshHlth000002  idOgnHmn013007str -> idOgnHmn013007sptr
+  McshHlth000002  idSysOgnHmn014str -> idSysOgnHmn014sptr
+  McshHlth000002  idOgnHmn011str -> idOgnHmn011sptr
+  McshHlth000002  idSysOgnHmn005organstr -> idSysOgnHmn005organsptr
+  McshHlth000002  idSysOgnHmn006organstr -> idSysOgnHmn006organsptr
+  McshHlth000002  idOgnHmn005str -> idOgnHmn005sptr
+  McshHlth000002  idBdyHmn294str -> idBdyHmn294sptr
+  McshHlth000002  idSysOgnHmn007organstr -> idSysOgnHmn007organsptr
+  McshHlth000002  idBdyHmn110str -> idBdyHmn110sptr
+  McshHlth000002  idSysOgnHmn007functingstr -> idSysOgnHmn007functingsptr
+  McshHlth000002  idOgnHmn026att012str -> idOgnHmn026att012sptr
+  McshHlth000002  idOgnHmn026str -> idOgnHmn026sptr
+  McshHlth000002  cptBdyHmn152organstr -> cptBdyHmn152organsptr
+  McshHlth000002  idSysOgnHmn009str -> idSysOgnHmn009sptr
+  McshHlth000002  idBdyHmn502str -> idBdyHmn502sptr
+  McshHlth000002  idBdyHmn498str -> idBdyHmn498sptr
+  McshHlth000002  idBdyHmnOgmMicrstr -> idBdyHmnOgmMicrsptr
+  McshHlth000002  idBdyHmn119str -> idBdyHmn119sptr
+  McshHlth000002  idBdyHmndongstr -> idBdyHmndongsptr
+  McshHlth000002  idBdyHmn148str -> idBdyHmn148sptr
+  McshHlth000002  idBdyHmn298str -> idBdyHmn298sptr
+  McshHlth000002  idBdyHmnatt078str -> idBdyHmnatt078sptr
+  McshHlth000002  idBdyHmn216str -> idBdyHmn216sptr
+  McshHlth000002  idBdyHmnatt038str -> idBdyHmnatt038sptr
+  McshHlth000002  idBdyHmnstr -> idBdyHmnsptr
+  McshHlth000003  idBrnHmnatt037str -> idBrnHmnatt037sptr
+  McshHlth000003  idBrnHmnatt050str -> idBrnHmnatt050sptr
+  McshHlth000003  idBrnHmnatt049str -> idBrnHmnatt049sptr
+  McshHlth000003  idBrnHmnatt051str -> idBrnHmnatt051sptr
+  McshHlth000003  idBrnHmnatt052str -> idBrnHmnatt052sptr
+  McshHlth000003  idBrnHmnatt047str -> idBrnHmnatt047sptr
+  McshHlth000003  idMinddongstr -> idMinddongsptr
+  McshHlth000003  idMinddongTchgstr -> idMinddongTchgsptr
+  McshHlth000003  idMinddongCmngstr -> idMinddongCmngsptr
+  McshHlth000003  idMindstr -> idMindsptr
+  McshHlth000003  idBrnHmnatt036str -> idBrnHmnatt036sptr
+  McshHlth000003  idBrnHmnatt055str -> idBrnHmnatt055sptr
+  McshHlth000003  idBrnHmnstr -> idBrnHmnsptr
+  McshHlth000004  idCellHmnatt016str -> idCellHmnatt016sptr
+  McshHlth000004  idCellHmnatt015_2str -> idCellHmnatt015_2sptr
+  McshHlth000004  idCellHmnstr -> idCellHmnsptr
+  McshHlth000004  idCellHmn011str -> idCellHmn011sptr
+  McshHlth000004  idCellHmn013str -> idCellHmn013sptr
+  McshHlth000004  idCellHmn014str -> idCellHmn014sptr
+  McshHlth000004  idCellHmn019str -> idCellHmn019sptr
+  McshHlth000004  idCellHmn007str -> idCellHmn007sptr
+  McshHlth000005  idMsclHmnstr -> idMsclHmnsptr
+  McshHlth000005  idMsclHmn002str -> idMsclHmn002sptr
+  McshHlth000005  idMsclHmn006str -> idMsclHmn006sptr
+  McshHlth000005  idMsclHmn020str -> idMsclHmn020sptr
+  McshHlth000005  idMsclHmn066str -> idMsclHmn066sptr
+  McshHlth000005  idMsclHmn067str -> idMsclHmn067sptr
+  McshHlth000005  idMsclHmn007str -> idMsclHmn007sptr
+  McshHlth000005  idMsclHmn009str -> idMsclHmn009sptr
+  McshHlth000005  idMsclHmn010str -> idMsclHmn010sptr
+  McshHlth000005  idMsclHmn012str -> idMsclHmn012sptr
+  McshHlth000005  idMsclHmn013str -> idMsclHmn013sptr
+  McshHlth000005  idMsclHmn008str -> idMsclHmn008sptr
+  McshHlth000005  idMsclHmn016str -> idMsclHmn016sptr
+  McshHlth000005  idMsclHmn017str -> idMsclHmn017sptr
+  McshHlth000005  idBoneHmnatt004str -> idBoneHmnatt004sptr
+  McshHlth000005  idBoneHmnstr -> idBoneHmnsptr
+  McshHlth000005  idBoneHmn003str -> idBoneHmn003sptr
+  McshHlth000005  idBoneHmn003002str -> idBoneHmn003002sptr
+  McshHlth000005  idBoneHmn016str -> idBoneHmn016sptr
+  McshHlth000005  idBoneHmn019str -> idBoneHmn019sptr
+  McshHlth000005  idBoneHmn017str -> idBoneHmn017sptr
+  McshHlth000005  idBoneHmn018str -> idBoneHmn018sptr
+  McshHlth000005  idBoneHmn020str -> idBoneHmn020sptr
+  McshHlth000005  idBoneHmn021str -> idBoneHmn021sptr
+  McshHlth000005  idBoneHmn023str -> idBoneHmn023sptr
+  McshHlth000005  idBoneHmn046str -> idBoneHmn046sptr
+  McshHlth000005  idBoneHmn047str -> idBoneHmn047sptr
+  McshHlth000005  idBoneHmn022str -> idBoneHmn022sptr
+  McshHlth000005  idBoneHmn029archstr -> idBoneHmn029archsptr
+  McshHlth000005  idSysOgnHmn001str -> idSysOgnHmn001sptr
+  McshHlth000006  idDsdrstr -> idDsdrsptr
+  McshHlth000006  idHlthBioatt004str -> idHlthBioatt004sptr
+  McshHlth000006  idHlthBioatt006str -> idHlthBioatt006sptr
+  McshHlth000006  idHlthBiostr -> idHlthBiosptr
+  McshHlth000007  idHlthOgmatt001str -> idHlthOgmatt001sptr
+  McshHlth000007  idHlthOgmatt002str -> idHlthOgmatt002sptr
+  McshHlth000007  idHlthOgmatt004str -> idHlthOgmatt004sptr
+  McshHlth000007  idHlthOgmstr -> idHlthOgmsptr
+  McshHlth000008  idHlthHmnatt006str -> idHlthHmnatt006sptr
+  McshHlth000008  idHlthHmnatt006Pscnstr -> idHlthHmnatt006Pscnsptr
+  McshHlth000008  idHlthHmnatt002str -> idHlthHmnatt002sptr
+  McshHlth000008  idHlthHmnatt005str -> idHlthHmnatt005sptr
+  McshHlth000008  idHlthHmnsbtcstr -> idHlthHmnsbtcsptr
+  McshHlth000008  idMtrlHrmHmnstr -> idMtrlHrmHmnsptr
+  McshHlth000008  idMtrlHrmHmn001str -> idMtrlHrmHmn001sptr
+  McshHlth000008  idHlthHmnatt007str -> idHlthHmnatt007sptr
+  McshHlth000008  idHlthHmnstr -> idHlthHmnsptr
+  McshHlth000008  idHlthHmnBdystr -> idHlthHmnBdysptr
+  McshHlth000008  idHlthHmnMndstr -> idHlthHmnMndsptr
+  McshHlth000008  idHlthHmnSclstr -> idHlthHmnSclsptr
+  McshHlth000008  idHlthHmnSclNstr -> idHlthHmnSclNsptr
+  McshHlth000009  idHlthStnstr -> idHlthStnsptr
+  McshHlth000010  idDssOgmthrpFstr -> idDssOgmthrpFsptr
+  McshHlth000010  idDssOgmstr -> idDssOgmsptr
+  McshHlth000010  idDssPlntstr -> idDssPlntsptr
+  McshHlth000011  idDssHmn001Fstr -> idDssHmn001Fsptr
+  McshHlth000011  idDssHmn003str -> idDssHmn003sptr
+  McshHlth000011  idDssHmn005Fstr -> idDssHmn005Fsptr
+  McshHlth000011  idDssHmnstr -> idDssHmnsptr
+  McshHlth000011  idDssHmn001str -> idDssHmn001sptr
+  McshHlth000011  idDssHmn162str -> idDssHmn162sptr
+  McshHlth000011  idDssHmn004str -> idDssHmn004sptr
+  McshHlth000011  idDssHmn226str -> idDssHmn226sptr
+  McshHlth000011  idDssHmn005str -> idDssHmn005sptr
+  McshHlth000011  idDssHmn005_1str -> idDssHmn005_1sptr
+  McshHlth000011  idDssHmn032str -> idDssHmn032sptr
+  McshHlth000011  idDssHmn130str -> idDssHmn130sptr
+  McshHlth000011  idDssHmn134str -> idDssHmn134sptr
+  McshHlth000011  idDssHmn047str -> idDssHmn047sptr
+  McshHlth000011  idDssHmn035str -> idDssHmn035sptr
+  McshHlth000011  idDssHmn006str -> idDssHmn006sptr
+  McshHlth000011  idDssHmn263str -> idDssHmn263sptr
+  McshHlth000011  idDssHmn215str -> idDssHmn215sptr
+  McshHlth000011  idDssHmn065str -> idDssHmn065sptr
+  McshHlth000011  idDssHmn037str -> idDssHmn037sptr
+  McshHlth000011  idDssHmn052str -> idDssHmn052sptr
+  McshHlth000011  idDssHmn106str -> idDssHmn106sptr
+  McshHlth000011  idDssHmn096str -> idDssHmn096sptr
+  McshHlth000011  idDssHmn108str -> idDssHmn108sptr
+  McshHlth000011  idDssHmn079therapyfoodstr -> idDssHmn079therapyfoodsptr
+  McshHlth000011  idDssHmn079str -> idDssHmn079sptr
+  McshHlth000011  idDssHmn080str -> idDssHmn080sptr
+  McshHlth000011  idDssHmn116str -> idDssHmn116sptr
+  McshHlth000011  idDssHmn124str -> idDssHmn124sptr
+  McshHlth000011  idDssHmn127str -> idDssHmn127sptr
+  McshHlth000011  idDssHmn128str -> idDssHmn128sptr
+  McshHlth000011  idDssHmn166str -> idDssHmn166sptr
+  McshHlth000011  idDssHmn174str -> idDssHmn174sptr
+  McshHlth000011  idDssHmn211str -> idDssHmn211sptr
+  McshHlth000011  idDssHmn208str -> idDssHmn208sptr
+  McshHlth000011  idDssHmn256str -> idDssHmn256sptr
+  McshHlth000011  idDssHmn137str -> idDssHmn137sptr
+  McshHlth000011  idDssHmn138str -> idDssHmn138sptr
+  McshHlth000011  idDssHmn019str -> idDssHmn019sptr
+  McshHlth000011  idDssHmn021str -> idDssHmn021sptr
+  McshHlth000011  idDssHmn022str -> idDssHmn022sptr
+  McshHlth000011  idDssHmn026str -> idDssHmn026sptr
+  McshHlth000011  idDssHmn028str -> idDssHmn028sptr
+  McshHlth000011  idDssHmn253str -> idDssHmn253sptr
+  McshHlth000011  idDssHmn172str -> idDssHmn172sptr
+  McshHlth000011  idDssHmn044str -> idDssHmn044sptr
+  McshHlth000011  idDssHmn264str -> idDssHmn264sptr
+  McshHlth000011  idDssHmn267str -> idDssHmn267sptr
+  McshHlth000011  idDssHmn268str -> idDssHmn268sptr
+  McshHlth000011  idDssHmn272str -> idDssHmn272sptr
+  McshHlth000011  idDssHmn279str -> idDssHmn279sptr
+  McshHlth000012  idFoodBiostr -> idFoodBiosptr
+  McshHlth000013  idFoodHmnatt001str -> idFoodHmnatt001sptr
+  McshHlth000013  idFoodHmnatt003str -> idFoodHmnatt003sptr
+  McshHlth000013  idFoodHmnatt010str -> idFoodHmnatt010sptr
+  McshHlth000013  idFoodHmnstr -> idFoodHmnsptr
+  McshHlth000013  idFoodHmnMealcrsstr -> idFoodHmnMealcrssptr
+  McshHlth000013  idFoodHmnMealstr -> idFoodHmnMealsptr
+  McshHlth000013  idFoodHmn049str -> idFoodHmn049sptr
+  McshHlth000013  idFoodHmn050str -> idFoodHmn050sptr
+  McshHlth000013  idFoodHmn017str -> idFoodHmn017sptr
+  McshHlth000013  idFoodHmn026str -> idFoodHmn026sptr
+  McshHlth000013  idFoodHmn032str -> idFoodHmn032sptr
+  McshHlth000013  idFoodHmn152str -> idFoodHmn152sptr
+  McshHlth000013  idFoodHmn191str -> idFoodHmn191sptr
+  McshHlth000013  idFoodHmn039str -> idFoodHmn039sptr
+  McshHlth000013  idFoodHmn067str -> idFoodHmn067sptr
+  McshHlth000013  idFoodHmn070str -> idFoodHmn070sptr
+  McshHlth000013  idFoodHmn082str -> idFoodHmn082sptr
+  McshHlth000013  idFoodHmn091str -> idFoodHmn091sptr
+  McshHlth000013  idFoodHmn106str -> idFoodHmn106sptr
+  McshHlth000013  idFoodHmn110str -> idFoodHmn110sptr
+  McshHlth000013  idFoodHmn120str -> idFoodHmn120sptr
+  McshHlth000013  idFoodHmn131str -> idFoodHmn131sptr
+  McshHlth000013  idFoodHmn143str -> idFoodHmn143sptr
+  McshHlth000013  idFoodHmn148str -> idFoodHmn148sptr
+  McshHlth000013  idFoodHmn232str -> idFoodHmn232sptr
+  McshHlth000013  idFoodHmn186str -> idFoodHmn186sptr
+  McshHlth000013  idFoodHmn194str -> idFoodHmn194sptr
+  McshHlth000013  idFoodHmn201str -> idFoodHmn201sptr
+  McshHlth000013  idFoodHmn207str -> idFoodHmn207sptr
+  McshHlth000013  idFoodHmn181str -> idFoodHmn181sptr
+  McshHlth000013  idFoodHmn216str -> idFoodHmn216sptr
+  McshHlth000013  idFoodHmn219str -> idFoodHmn219sptr
+  McshHlth000013  idFoodHmn221str -> idFoodHmn221sptr
+  McshHlth000014  idMedHmnatt004str -> idMedHmnatt004sptr
+  McshHlth000014  idMedHmnatt008str -> idMedHmnatt008sptr
+  McshHlth000014  idMedHmnatt013str -> idMedHmnatt013sptr
+  McshHlth000014  idMedHmnstr -> idMedHmnsptr
+  McshHlth000014  idMedHmn004str -> idMedHmn004sptr
+  McshHlth000014  idMedHmn029str -> idMedHmn029sptr
+  McshHlth000014  idMedHmn006str -> idMedHmn006sptr
+  McshHlth000014  idMedAsktcstr -> idMedAsktcsptr
+  McshHlth000014  idMedHmn026str -> idMedHmn026sptr
+  McshHlth000014  idMedHmn008str -> idMedHmn008sptr
+  McshHlth000014  idMedHmn012Idcnstr -> idMedHmn012Idcnsptr
+  McshHlth000014  idMedHmn014str -> idMedHmn014sptr
+  McshHlth000015  idDrgHmnstr -> idDrgHmnsptr
+  McshHlth000015  idDrgHmn002str -> idDrgHmn002sptr
+  McshHlth000015  idDrgHmn003str -> idDrgHmn003sptr
+  McshHlth000016  idThrpHmnatt005str -> idThrpHmnatt005sptr
+  McshHlth000016  idThrpHmnatt006str -> idThrpHmnatt006sptr
+  McshHlth000016  idThrpHmnstr -> idThrpHmnsptr
+  McshHlth000016  idThrpHmnDngNstr -> idThrpHmnDngNsptr
+  McshHlth000016  idThrpHmnMndstr -> idThrpHmnMndsptr
+  McshHlth000016  idThrpHmnAltvstr -> idThrpHmnAltvsptr
+  McshHlth000016  idThrpHmn217str -> idThrpHmn217sptr
+  McshHlth000016  idThrpHmn015str -> idThrpHmn015sptr
+  McshHlth000018  idExcsDstr -> idExcsDsptr
+  McshHlth000018  idExcsD001str -> idExcsD001sptr
+  McshHlth000018  idExcsD006str -> idExcsD006sptr
+  McshHlth000018  idExcsD002str -> idExcsD002sptr
+  McshHlth000019  idSysNrvsatt017str -> idSysNrvsatt017sptr
+  McshHlth000019  idSysNrvsatt018str -> idSysNrvsatt018sptr
+  McshHlth000019  idSysNrvsatt031str -> idSysNrvsatt031sptr
+  McshHlth000019  idSysNrvsatt038str -> idSysNrvsatt038sptr
+  McshHlth000019  idSysNrvsatt040str -> idSysNrvsatt040sptr
+  McshHlth000019  idSysNrvsatt042str -> idSysNrvsatt042sptr
+  McshHlth000019  idOgnHmn009str -> idOgnHmn009sptr
+  McshHlth000019  idOgnHmn008str -> idOgnHmn008sptr
+  McshHlth000019  idSysNrvsatt016str -> idSysNrvsatt016sptr
+  McshHlth000019  idSysNrvsatt004str -> idSysNrvsatt004sptr
+  McshHlth000019  idOgnHmn006str -> idOgnHmn006sptr
+  McshHlth000019  idOgnHmn006Crnlstr -> idOgnHmn006Crnlsptr
+  McshHlth000019  idOgnHmn006Spnlstr -> idOgnHmn006Spnlsptr
+  McshHlth000019  idOgnHmn006Mtrstr -> idOgnHmn006Mtrsptr
+  McshHlth000019  idSysNrvsatt076att004str -> idSysNrvsatt076att004sptr
+  McshHlth000019  idSysNrvsatt076att005str -> idSysNrvsatt076att005sptr
+  McshHlth000019  idSysNrvsatt076str -> idSysNrvsatt076sptr
+  McshHlth000019  idSysNrvsatt076004str -> idSysNrvsatt076004sptr
+  McshHlth000019  idSysNrvsatt077str -> idSysNrvsatt077sptr
+  McshHlth000019  idSysNrvsdongstr -> idSysNrvsdongsptr
+  McshHlth000019  idSysNrvsstr -> idSysNrvssptr
+  McshHmn000002  idHmnatt095str -> idHmnatt095sptr
+  McshHmn000002  idHmnatt036str -> idHmnatt036sptr
+  McshHmn000002  idHmnatt121str -> idHmnatt121sptr
+  McshHmn000002  idHmnatt033str -> idHmnatt033sptr
+  McshHmn000002  idHmnatt004str -> idHmnatt004sptr
+  McshHmn000002  idHmnatt068str -> idHmnatt068sptr
+  McshHmn000002  idHmnatt069str -> idHmnatt069sptr
+  McshHmn000002  idHmnatt067str -> idHmnatt067sptr
+  McshHmn000002  idHmnatt126str -> idHmnatt126sptr
+  McshHmn000002  idHmnstr -> idHmnsptr
+  McshHmn000002  idHmn003att002str -> idHmn003att002sptr
+  McshHmn000002  idHmn016str -> idHmn016sptr
+  McshHmn000002  idHmn025str -> idHmn025sptr
+  McshHmn000002  idHmn027str -> idHmn027sptr
+  McshHmn000003  idHmnSngostr -> idHmnSngosptr
+  McshHmn000005  idHmnArstLgmnstr -> idHmnArstLgmnsptr
+  McshHmn000005  idHmnArstLgmnAsmkstr -> idHmnArstLgmnAsmksptr
+  McshHmn000005  idHmnArststr -> idHmnArstsptr
+  McshLag000000  idMwsdirLagTodostr -> idMwsdirLagTodosptr
+  McshLag000002  idInfBrnBiodongstr -> idInfBrnBiodongsptr
+  McshLag000002  idInfBrnBiodongCmtgstr -> idInfBrnBiodongCmtgsptr
+  McshLag000002  idInfBrnBiostr -> idInfBrnBiosptr
+  McshLag000002  idInfBrnBioBrnnstr -> idInfBrnBioBrnnsptr
+  McshLag000002  idInfBrnBioBrnnNstr -> idInfBrnBioBrnnNsptr
+  McshLag000002  idInfBrnBioUntstr -> idInfBrnBioUntsptr
+  McshLag000002  idInfBrnBioViewstr -> idInfBrnBioViewsptr
+  McshLag000002  idInfBrnBioKldgstr -> idInfBrnBioKldgsptr
+  McshLag000003  idInfHmnatt002str -> idInfHmnatt002sptr
+  McshLag000003  idInfHmndongstr -> idInfHmndongsptr
+  McshLag000003  idInfHmnstr -> idInfHmnsptr
+  McshLag000003  idInfHmnBrnstr -> idInfHmnBrnsptr
+  McshLag000003  idInfHmnBrn001str -> idInfHmnBrn001sptr
+  McshLag000003  idInfHmnBrn001Mcptmdnmstr -> idInfHmnBrn001Mcptmdnmsptr
+  McshLag000003  idInfHmnBrn001Mcptstr -> idInfHmnBrn001Mcptsptr
+  McshLag000003  idInfHmnMindstr -> idInfHmnMindsptr
+  McshLag000003  idInfHmnBrn002str -> idInfHmnBrn002sptr
+  McshLag000003  idInfHmnBrn004str -> idInfHmnBrn004sptr
+  McshLag000003  idInfHmnBrn005str -> idInfHmnBrn005sptr
+  McshLag000003  idWldvstr -> idWldvsptr
+  McshLag000003  idWldv003str -> idWldv003sptr
+  McshLag000003  idWldv005str -> idWldv005sptr
+  McshLag000003  idInfHmnBrn007str -> idInfHmnBrn007sptr
+  McshLag000003  idInfHmnBrn010str -> idInfHmnBrn010sptr
+  McshLag000003  idInfHmnBrn008str -> idInfHmnBrn008sptr
+  McshLag000003  idInfHmnSrlstr -> idInfHmnSrlsptr
+  McshLag000003  idInfHmnSrl001str -> idInfHmnSrl001sptr
+  McshLag000004  idLagCmnrstr -> idLagCmnrsptr
+  McshLag000005  idLagstr -> idLagsptr
+  McshLag000005  idLOrgm004str -> idLOrgm004sptr
+  McshLag000005  idLHumnstr -> idLHumnsptr
+  McshLag000006  iidCharstr -> iidCharsptr
+  McshLag000006  idCharencdgstr -> idCharencdgsptr
+  McshLag000006  idCharCmrstr -> idCharCmrsptr
+  McshLag000006  idCharUcdbdclsstr -> idCharUcdbdclssptr
+  McshLag000006  idCharUcdcasestr -> idCharUcdcasesptr
+  McshLag000006  idCharUcdcsfgstr -> idCharUcdcsfgsptr
+  McshLag000006  idCharUcdbpbtpstr -> idCharUcdbpbtpsptr
+  McshLag000006  idCharUcddnmgstr -> idCharUcddnmgsptr
+  McshLag000006  idCharUcdeawstr -> idCharUcdeawsptr
+  McshLag000006  idCharUcdjggpstr -> idCharUcdjggpsptr
+  McshLag000006  idCharUcdjgtpstr -> idCharUcdjgtpsptr
+  McshLag000006  idCharUcdlnbkstr -> idCharUcdlnbksptr
+  McshLag000006  idCharUcdnctpstr -> idCharUcdnctpsptr
+  McshLag000006  idCharUcdprptstr -> idCharUcdprptsptr
+  McshLag000006  idCharUcdstdcpstr -> idCharUcdstdcpsptr
+  McshLag000006  idCharUcdstdcpBlkstr -> idCharUcdstdcpBlksptr
+  McshLag000006  idCharUcdstdurtstr -> idCharUcdstdurtsptr
+  McshLag000006  idCharUcdstdurtUaxstr -> idCharUcdstdurtUaxsptr
+  McshLag000006  idCharUcdstr -> idCharUcdsptr
+  McshLag000006  idCharUcdScrptstr -> idCharUcdScrptsptr
+  McshLag000006  idCharHtmlstr -> idCharHtmlsptr
+  McshLag000006  idCharGrfcstr -> idCharGrfcsptr
+  McshLag000007  idLHmnmhmndssstr -> idLHmnmhmndsssptr
+  McshLag000007  idLHmnmsmsnodstr -> idLHmnmsmsnodsptr
+  McshLag000007  idLHmnmsmscptattstr -> idLHmnmsmscptattsptr
+  McshLag000007  idLHmnmsmscptstr -> idLHmnmsmscptsptr
+  McshLag000007  idLHmnmsmsondosmatstr -> idLHmnmsmsondosmatsptr
+  McshLag000007  idLHmnmsmsondosmatDfntstr -> idLHmnmsmsondosmatDfntsptr
+  McshLag000007  idLHmnmsmsondosmatCpsstr -> idLHmnmsmsondosmatCpssptr
+  McshLag000007  idLHmnmsmsondombrstr -> idLHmnmsmsondombrsptr
+  McshLag000007  idLHmnmsmsondombrMainstr -> idLHmnmsmsondombrMainsptr
+  McshLag000007  idLHmnmsmsondostr -> idLHmnmsmsondosptr
+  McshLag000007  idLHmnmsmsondoRfrcstr -> idLHmnmsmsondoRfrcsptr
+  McshLag000007  idLHmnmprsnstr -> idLHmnmprsnsptr
+  McshLag000007  idLHmnmprsnAstr -> idLHmnmprsnAsptr
+  McshLag000007  idLHmnmprsnBstr -> idLHmnmprsnBsptr
+  McshLag000007  idLHmnmprsnCstr -> idLHmnmprsnCsptr
+  McshLag000007  idLHmnmsmsvrbattstr -> idLHmnmsmsvrbattsptr
+  McshLag000007  idLHmnmsmsvrbattModstr -> idLHmnmsmsvrbattModsptr
+  McshLag000007  idLHmnmsmsvrbattModRealNstr -> idLHmnmsmsvrbattModRealNsptr
+  McshLag000007  idLHmnmsmsvrbattTmplstr -> idLHmnmsmsvrbattTmplsptr
+  McshLag000007  idLHmnmsmsvrbstr -> idLHmnmsmsvrbsptr
+  McshLag000007  idLHmnmsmsvrbDngstr -> idLHmnmsmsvrbDngsptr
+  McshLag000007  idLHmnmsmscnjstr -> idLHmnmsmscnjsptr
+  McshLag000007  idLHmnmsmscnjVrbstr -> idLHmnmsmscnjVrbsptr
+  McshLag000007  idLHmnmsmsvbatstr -> idLHmnmsmsvbatsptr
+  McshLag000007  idLHmnmsmsscssstr -> idLHmnmsmsscsssptr
+  McshLag000007  idLHmnmoptinfstr -> idLHmnmoptinfsptr
+  McshLag000007  idLHmnmsxtrstr -> idLHmnmsxtrsptr
+  McshLag000007  idLHmnmnodestr -> idLHmnmnodesptr
+  McshLag000007  idLHmnmuntstr -> idLHmnmuntsptr
+  McshLag000007  idLHmnmuntLgnmstr -> idLHmnmuntLgnmsptr
+  McshLag000007  idLHmnmuntTextstr -> idLHmnmuntTextsptr
+  McshLag000007  idLHmnmutsmstr -> idLHmnmutsmsptr
+  McshLag000007  idLHmnmwrdspchstr -> idLHmnmwrdspchsptr
+  McshLag000007  idLHmnmwrdslbnstr -> idLHmnmwrdslbnsptr
+  McshLag000007  idLHmnmwrdstr -> idLHmnmwrdsptr
+  McshLag000007  idLHmnmwrdRutNstr -> idLHmnmwrdRutNsptr
+  McshLag000007  idLHmnmwrdIdxstr -> idLHmnmwrdIdxsptr
+  McshLag000007  idLHmnmsylbstr -> idLHmnmsylbsptr
+  McshLag000007  idLHmnmafxstr -> idLHmnmafxsptr
+  McshLag000007  idLHmnmnamenmgcrtgstr -> idLHmnmnamenmgcrtgsptr
+  McshLag000007  idLHmnmnamenmgstr -> idLHmnmnamenmgsptr
+  McshLag000007  idLHmnmnamestr -> idLHmnmnamesptr
+  McshLag000007  idLHmnmname002str -> idLHmnmname002sptr
+  McshLag000007  idLHmnmnameTrmmbrstr -> idLHmnmnameTrmmbrsptr
+  McshLag000007  idLHmnmnameTrmcrtgstr -> idLHmnmnameTrmcrtgsptr
+  McshLag000007  idLHmnmnameTrmstr -> idLHmnmnameTrmsptr
+  McshLag000007  idLHmnmnameTrmmrfrstr -> idLHmnmnameTrmmrfrsptr
+  McshLag000007  idLHmnmnameTrmSmsstr -> idLHmnmnameTrmSmssptr
+  McshLag000007  idLHmnmnameTrmAtmstr -> idLHmnmnameTrmAtmsptr
+  McshLag000007  idLHmnmname006str -> idLHmnmname006sptr
+  McshLag000007  idLHmnmnameTrmCmpdstr -> idLHmnmnameTrmCmpdsptr
+  McshLag000007  idLHmnmname013str -> idLHmnmname013sptr
+  McshLag000007  idLHmnmname021str -> idLHmnmname021sptr
+  McshLag000007  idLHmnmargombrstr -> idLHmnmargombrsptr
+  McshLag000007  idLHmnmargombrRlnstr -> idLHmnmargombrRlnsptr
+  McshLag000007  idLHmnmargombrRlnNstr -> idLHmnmargombrRlnNsptr
+  McshLag000007  idLHmnmnounmbrstr -> idLHmnmnounmbrsptr
+  McshLag000007  idLHmnmnounstr -> idLHmnmnounsptr
+  McshLag000007  idLHmnmadjembrstr -> idLHmnmadjembrsptr
+  McshLag000007  idLHmnmadjestr -> idLHmnmadjesptr
+  McshLag000007  idLHmnmadvestxstr -> idLHmnmadvestxsptr
+  McshLag000007  idLHmnmadvestr -> idLHmnmadvesptr
+  McshLag000007  idLHmnmargodlsrstr -> idLHmnmargodlsrsptr
+  McshLag000007  idLHmnmargostr -> idLHmnmargosptr
+  McshLag000007  idLHmnmpronstr -> idLHmnmpronsptr
+  McshLag000007  idLHmnmpronIgvstr -> idLHmnmpronIgvsptr
+  McshLag000007  idLHmnmpronIgvNstr -> idLHmnmpronIgvNsptr
+  McshLag000007  idLHmnmpronEsfcstr -> idLHmnmpronEsfcsptr
+  McshLag000007  idLHmnmpronExfcstr -> idLHmnmpronExfcsptr
+  McshLag000007  idLHmnmpronPslstr -> idLHmnmpronPslsptr
+  McshLag000007  idLHmnmpronHmnstr -> idLHmnmpronHmnsptr
+  McshLag000007  idLHmnmpronSpacstr -> idLHmnmpronSpacsptr
+  McshLag000007  idLHmnmpronTimestr -> idLHmnmpronTimesptr
+  McshLag000007  idLHmnmpronQnttstr -> idLHmnmpronQnttsptr
+  McshLag000007  idLHmnmpronMnrstr -> idLHmnmpronMnrsptr
+  McshLag000007  idLHmnmpronCausstr -> idLHmnmpronCaussptr
+  McshLag000007  idLHmnmverbmbrlukstr -> idLHmnmverbmbrluksptr
+  McshLag000007  idLHmnmverbmbrstr -> idLHmnmverbmbrsptr
+  McshLag000007  idLHmnmverbmoodstr -> idLHmnmverbmoodsptr
+  McshLag000007  idLHmnmverbmbrPrststr -> idLHmnmverbmbrPrstsptr
+  McshLag000007  idLHmnmverbmbrPaststr -> idLHmnmverbmbrPastsptr
+  McshLag000007  idLHmnmverbmbrFutrstr -> idLHmnmverbmbrFutrsptr
+  McshLag000007  idLHmnmverbmbrprtBstr -> idLHmnmverbmbrprtBsptr
+  McshLag000007  idLHmnmverbsncptstr -> idLHmnmverbsncptsptr
+  McshLag000007  idLHmnmverbmrfdrstr -> idLHmnmverbmrfdrsptr
+  McshLag000007  idLHmnmverbstxstr -> idLHmnmverbstxsptr
+  McshLag000007  idLHmnmverbstr -> idLHmnmverbsptr
+  McshLag000007  idLHmnmconjstr -> idLHmnmconjsptr
+  McshLag000007  idLHmnmConjSentstr -> idLHmnmConjSentsptr
+  McshLag000007  idLHmnmodsmstr -> idLHmnmodsmsptr
+  McshLag000007  idLHmnmvbatstr -> idLHmnmvbatsptr
+  McshLag000007  idLHmnmsbtstr -> idLHmnmsbtsptr
+  McshLag000007  idLHmnmsbjtstr -> idLHmnmsbjtsptr
+  McshLag000007  idLHmnmsntcphrastr -> idLHmnmsntcphrasptr
+  McshLag000007  idLHmnmsntcphraVerbstr -> idLHmnmsntcphraVerbsptr
+  McshLag000007  idLHmnmsntcstr -> idLHmnmsntcsptr
+  McshLag000007  idLHmnmsntcQtnstr -> idLHmnmsntcQtnsptr
+  McshLag000007  idLHmnmtsscsmstr -> idLHmnmtsscsmsptr
+  McshLag000007  idLHmnmoptstr -> idLHmnmoptsptr
+  McshLag000007  idLHmnmmprnstr -> idLHmnmmprnsptr
+  McshLag000007  idLHmnmknwrstr -> idLHmnmknwrsptr
+  McshLag000007  idLHmnmstr -> idLHmnmsptr
+  McshLag000007  idLvslstr -> idLvslsptr
+  McshLag000007  idLntrlNstr -> idLntrlNsptr
+  McshLag000007  idLTextoptstr -> idLTextoptsptr
+  McshLag000007  idLTextstr -> idLTextsptr
+  McshLag000007  idLSylbstr -> idLSylbsptr
+  McshLag000007  idLHmnm0033str -> idLHmnm0033sptr
+  McshLag000007  idLHmnm0024str -> idLHmnm0024sptr
+  McshLag000007  idLHmnm0030str -> idLHmnm0030sptr
+  McshLag000008  idL0016untstr -> idL0016untsptr
+  McshLag000008  idL0016ltrstr -> idL0016ltrsptr
+  McshLag000008  idL0016utsrstr -> idL0016utsrsptr
+  McshLag000008  idL0016str -> idL0016sptr
+  McshLag000009  idL0017untstr -> idL0017untsptr
+  McshLag000009  idL0017phnmstr -> idL0017phnmsptr
+  McshLag000009  idL0017phnmPhnstr -> idL0017phnmPhnsptr
+  McshLag000009  idL0017phnmVwlstr -> idL0017phnmVwlsptr
+  McshLag000009  idL0017phnmVwlNstr -> idL0017phnmVwlNsptr
+  McshLag000009  idL0017utsrstr -> idL0017utsrsptr
+  McshLag000009  idL0017str -> idL0017sptr
+  McshLag000010  idL0014smscptstr -> idL0014smscptsptr
+  McshLag000010  idL0014smsondostr -> idL0014smsondosptr
+  McshLag000010  idL0014ipt3str -> idL0014ipt3sptr
+  McshLag000010  idL0014untstr -> idL0014untsptr
+  McshLag000010  idL0014untTrmstr -> idL0014untTrmsptr
+  McshLag000010  idL0014phnmstr -> idL0014phnmsptr
+  McshLag000010  idL0014phnmVwlstr -> idL0014phnmVwlsptr
+  McshLag000010  idL0014phnmVwlNstr -> idL0014phnmVwlNsptr
+  McshLag000010  idL0014ltrstr -> idL0014ltrsptr
+  McshLag000010  idL0014utsmstr -> idL0014utsmsptr
+  McshLag000010  idL0014wrdstr -> idL0014wrdsptr
+  McshLag000010  idL0014sylbstr -> idL0014sylbsptr
+  McshLag000010  idL0014namemgrrulestr -> idL0014namemgrrulesptr
+  McshLag000010  idL0014namestr -> idL0014namesptr
+  McshLag000010  idL0014termiflrstr -> idL0014termiflrsptr
+  McshLag000010  idL0014termstr -> idL0014termsptr
+  McshLag000010  idL0014ondostr -> idL0014ondosptr
+  McshLag000010  idL0014verbstr -> idL0014verbsptr
+  McshLag000010  idL0014conjstr -> idL0014conjsptr
+  McshLag000010  idL0014knwrstr -> idL0014knwrsptr
+  McshLag000010  idL0014str -> idL0014sptr
+  McshLag000011  idLEnglsmscptstr -> idLEnglsmscptsptr
+  McshLag000011  idLEnglsmsondombrstr -> idLEnglsmsondombrsptr
+  McshLag000011  idLEnglsmsondombrMainstr -> idLEnglsmsondombrMainsptr
+  McshLag000011  idLEnglsmsondoSstr -> idLEnglsmsondoSsptr
+  McshLag000011  idLEnglsmsondostr -> idLEnglsmsondosptr
+  McshLag000011  idLEngluntstr -> idLEngluntsptr
+  McshLag000011  idLEnglphnmstr -> idLEnglphnmsptr
+  McshLag000011  idLEnglphnmVwlstr -> idLEnglphnmVwlsptr
+  McshLag000011  idLEnglphnmVwlNstr -> idLEnglphnmVwlNsptr
+  McshLag000011  idLEnglltrstr -> idLEnglltrsptr
+  McshLag000011  idLEnglutsmstr -> idLEnglutsmsptr
+  McshLag000011  idLEnglsylbstr -> idLEnglsylbsptr
+  McshLag000011  idLEnglnamestr -> idLEnglnamesptr
+  McshLag000011  idLEngltermiflrstr -> idLEngltermiflrsptr
+  McshLag000011  idLEngltermstr -> idLEngltermsptr
+  McshLag000011  idLEnglondombrstr -> idLEnglondombrsptr
+  McshLag000011  idLEnglondombrSplstr -> idLEnglondombrSplsptr
+  McshLag000011  idLEnglondombrOrdstr -> idLEnglondombrOrdsptr
+  McshLag000011  idLEnglondombrRlnstr -> idLEnglondombrRlnsptr
+  McshLag000011  idLEnglondombrOrdRlnstr -> idLEnglondombrOrdRlnsptr
+  McshLag000011  idLEnglondoAtmstr -> idLEnglondoAtmsptr
+  McshLag000011  idLEnglondoAtmNstr -> idLEnglondoAtmNsptr
+  McshLag000011  idLEnglMainNounstr -> idLEnglMainNounsptr
+  McshLag000011  idLEnglMainNoun2str -> idLEnglMainNoun2sptr
+  McshLag000011  idLEnglnounstr -> idLEnglnounsptr
+  McshLag000011  idLEngladjembrstr -> idLEngladjembrsptr
+  McshLag000011  idLEngladjestr -> idLEngladjesptr
+  McshLag000011  idLEngladvestr -> idLEngladvesptr
+  McshLag000011  idLEnglondostr -> idLEnglondosptr
+  McshLag000011  idLEnglpronstr -> idLEnglpronsptr
+  McshLag000011  idLEnglpronEsfcstr -> idLEnglpronEsfcsptr
+  McshLag000011  idLEnglpronExfcstr -> idLEnglpronExfcsptr
+  McshLag000011  idLEnglverbmbrstr -> idLEnglverbmbrsptr
+  McshLag000011  idLEnglverbmbrAtmstr -> idLEnglverbmbrAtmsptr
+  McshLag000011  idLEnglverbmbrPrestensstr -> idLEnglverbmbrPrestenssptr
+  McshLag000011  idLEnglverbmbrFututensstr -> idLEnglverbmbrFututenssptr
+  McshLag000011  idLEnglverbmbrCondstr -> idLEnglverbmbrCondsptr
+  McshLag000011  idLEnglverbstr -> idLEnglverbsptr
+  McshLag000011  idLEnglverbMtwdstr -> idLEnglverbMtwdsptr
+  McshLag000011  idLEnglconjstr -> idLEnglconjsptr
+  McshLag000011  idLEnglConjPrepstr -> idLEnglConjPrepsptr
+  McshLag000011  idLEnglConjPrepTimestr -> idLEnglConjPrepTimesptr
+  McshLag000011  idLEnglodsmstr -> idLEnglodsmsptr
+  McshLag000011  idLEnglknwrstr -> idLEnglknwrsptr
+  McshLag000011  idLEnglstr -> idLEnglsptr
+  McshLag000012  idLEsposmscptstr -> idLEsposmscptsptr
+  McshLag000012  idLEsposmsondostr -> idLEsposmsondosptr
+  McshLag000012  idLEspoipt3str -> idLEspoipt3sptr
+  McshLag000012  idLEspountstr -> idLEspountsptr
+  McshLag000012  idLEspountTrmstr -> idLEspountTrmsptr
+  McshLag000012  idLEspophnmstr -> idLEspophnmsptr
+  McshLag000012  idLEspophnmVwlstr -> idLEspophnmVwlsptr
+  McshLag000012  idLEspophnmVwlNstr -> idLEspophnmVwlNsptr
+  McshLag000012  idLEspoltrstr -> idLEspoltrsptr
+  McshLag000012  idLEspoutsrstr -> idLEspoutsrsptr
+  McshLag000012  idLEspowrdstr -> idLEspowrdsptr
+  McshLag000012  idLEsponamestr -> idLEsponamesptr
+  McshLag000012  idLEspotermiflrstr -> idLEspotermiflrsptr
+  McshLag000012  idLEspotermstr -> idLEspotermsptr
+  McshLag000012  idLEspoondoMainstr -> idLEspoondoMainsptr
+  McshLag000012  idLEspoondoAttCasstr -> idLEspoondoAttCassptr
+  McshLag000012  idLEspoondoAttstr -> idLEspoondoAttsptr
+  McshLag000012  idLEspoondostr -> idLEspoondosptr
+  McshLag000012  idLEspoverbmbrstr -> idLEspoverbmbrsptr
+  McshLag000012  idLEspoverbstr -> idLEspoverbsptr
+  McshLag000012  idLEspoknwrstr -> idLEspoknwrsptr
+  McshLag000012  idLEspostr -> idLEsposptr
+  McshLag000013  idInflcs002str -> idInflcs002sptr
+  McshLag000013  idInfrscstr -> idInfrscsptr
+  McshLag000013  idInfrscScistr -> idInfrscScisptr
+  McshLag000013  idInfrscAudstr -> idInfrscAudsptr
+  McshLag000013  idInfrscVslstr -> idInfrscVslsptr
+  McshLag000013  idInfrscVdostr -> idInfrscVdosptr
+  McshLag000013  idInfrscPrklstr -> idInfrscPrklsptr
+  McshLag000014  idBookstr -> idBooksptr
+  McshLag000016  idAbrnstr -> idAbrnsptr
+  McshLag000017  idLHmnm0009str -> idLHmnm0009sptr
+  McshLag000017  idLHmnm0011strA -> idLHmnm0011sptrA
+  McshLag000017  idLHmnm0011strB -> idLHmnm0011sptrB
+  McshLag000017  idLHmnm0011strC -> idLHmnm0011sptrC
+  McshLag000017  idLHmnm0011strD -> idLHmnm0011sptrD
+  McshLag000017  idLHmnm0011strE -> idLHmnm0011sptrE
+  McshLag000017  idLHmnm0011strF -> idLHmnm0011sptrF
+  McshLag000017  idLHmnm0011strG -> idLHmnm0011sptrG
+  McshLag000017  idLHmnm0011strH -> idLHmnm0011sptrH
+  McshLag000017  idLHmnm0011strI -> idLHmnm0011sptrI
+  McshLag000017  idLHmnm0011strJ -> idLHmnm0011sptrJ
+  McshLag000017  idLHmnm0011strK -> idLHmnm0011sptrK
+  McshLag000017  idLHmnm0011strL -> idLHmnm0011sptrL
+  McshLag000017  idLHmnm0011strM -> idLHmnm0011sptrM
+  McshLag000017  idLHmnm0011strN -> idLHmnm0011sptrN
+  McshLag000017  idLHmnm0011strO -> idLHmnm0011sptrO
+  McshLag000017  idLHmnm0011strP -> idLHmnm0011sptrP
+  McshLag000017  idLHmnm0011strQ -> idLHmnm0011sptrQ
+  McshLag000017  idLHmnm0011strR -> idLHmnm0011sptrR
+  McshLag000017  idLHmnm0011strS -> idLHmnm0011sptrS
+  McshLag000017  idLHmnm0011strT -> idLHmnm0011sptrT
+  McshLag000017  idLHmnm0011strU -> idLHmnm0011sptrU
+  McshLag000017  idLHmnm0011strV -> idLHmnm0011sptrV
+  McshLag000017  idLHmnm0011strW -> idLHmnm0011sptrW
+  McshLag000017  idLHmnm0011strX -> idLHmnm0011sptrX
+  McshLag000017  idLHmnm0011strY -> idLHmnm0011sptrY
+  McshLag000017  idLHmnm0011strZ -> idLHmnm0011sptrZ
+  McshLag000017  idLIsostr -> idLIsosptr
+  McshLag000018  idLZhonsmscptstr -> idLZhonsmscptsptr
+  McshLag000018  idLZhonsmsnunmbrstr -> idLZhonsmsnunmbrsptr
+  McshLag000018  idLZhonsmsnunSstr -> idLZhonsmsnunSsptr
+  McshLag000018  idLZhonsmsnunstr -> idLZhonsmsnunsptr
+  McshLag000018  idLZhonipt3str -> idLZhonipt3sptr
+  McshLag000018  idLZhonuntstr -> idLZhonuntsptr
+  McshLag000018  idLZhonuntNamestr -> idLZhonuntNamesptr
+  McshLag000018  idLZhonphnmstr -> idLZhonphnmsptr
+  McshLag000018  idLZhonphnmVwlstr -> idLZhonphnmVwlsptr
+  McshLag000018  idLZhonphnmVwlNstr -> idLZhonphnmVwlNsptr
+  McshLag000018  idLZhoncharstr -> idLZhoncharsptr
+  McshLag000018  idLZhoncharrdclstr -> idLZhoncharrdclsptr
+  McshLag000018  idLZhonnameiflrstr -> idLZhonnameiflrsptr
+  McshLag000018  idLZhonnamestr -> idLZhonnamesptr
+  McshLag000018  idLZhonargombrstr -> idLZhonargombrsptr
+  McshLag000018  idLZhonargomwstr -> idLZhonargomwsptr
+  McshLag000018  idLZhonnounstr -> idLZhonnounsptr
+  McshLag000018  idLZhonadvestr -> idLZhonadvesptr
+  McshLag000018  idLZhonargostr -> idLZhonargosptr
+  McshLag000018  idLZhonprnstr -> idLZhonprnsptr
+  McshLag000018  idLZhonprnEsfcstr -> idLZhonprnEsfcsptr
+  McshLag000018  idLZhonprnExfcstr -> idLZhonprnExfcsptr
+  McshLag000018  idLZhonverbmbrstr -> idLZhonverbmbrsptr
+  McshLag000018  idLZhonverbmbrAtmstr -> idLZhonverbmbrAtmsptr
+  McshLag000018  idLZhonverbstr -> idLZhonverbsptr
+  McshLag000018  idLZhonconjstr -> idLZhonconjsptr
+  McshLag000018  idLZhonnnsmstr -> idLZhonnnsmsptr
+  McshLag000018  idLZhonvbatSpacstr -> idLZhonvbatSpacsptr
+  McshLag000018  idLZhonsntcwdorstr -> idLZhonsntcwdorsptr
+  McshLag000018  idLZhonsntcstr -> idLZhonsntcsptr
+  McshLag000018  idLZhonsntcAskstr -> idLZhonsntcAsksptr
+  McshLag000018  idLZhonknwrstr -> idLZhonknwrsptr
+  McshLag000018  idLZholwordstr -> idLZholwordsptr
+  McshLag000018  idLZhonstr -> idLZhonsptr
+  McshLag000019  idPaperstr -> idPapersptr
+  McshLag000020  idLEllnphnmstr -> idLEllnphnmsptr
+  McshLag000020  idLEllnvowlstr -> idLEllnvowlsptr
+  McshLag000020  idLEllncsntstr -> idLEllncsntsptr
+  McshLag000020  idLEllnphgmstr -> idLEllnphgmsptr
+  McshLag000020  idLEllnwrdstr -> idLEllnwrdsptr
+  McshLag000020  idLEllnsylbstr -> idLEllnsylbsptr
+  McshLag000020  idEllnondostr -> idEllnondosptr
+  McshLag000020  idLEllnnounstr -> idLEllnnounsptr
+  McshLag000020  idLEllnnounG1str -> idLEllnnounG1sptr
+  McshLag000020  idLEllnnounMnG1XasT1SuNcF1Bastr -> idLEllnnounMnG1XasT1SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT1SuNcF1Bnpstr -> idLEllnnounMnG1XasT1SuNcF1Bnpsptr
+  McshLag000020  idLEllnnounMnG1XasT1SuNcF1Bnsstr -> idLEllnnounMnG1XasT1SuNcF1Bnssptr
+  McshLag000020  idLEllnnounMnG1XasT2SeNuF1Bastr -> idLEllnnounMnG1XasT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT2SeNcF1Bastr -> idLEllnnounMnG1XasT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnaG1XasT2SeNucF2Bastr -> idLEllnnounMnaG1XasT2SeNucF2Basptr
+  McshLag000020  idLEllnnounMnaG1XasT2SuNcF2Bastr -> idLEllnnounMnaG1XasT2SuNcF2Basptr
+  McshLag000020  idLEllnnounMnG1XasT2SuNcF1Bastr -> idLEllnnounMnG1XasT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT2SuNuF1Bastr -> idLEllnnounMnG1XasT2SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1Xas2T2SuNuF1Bastr -> idLEllnnounMnG1Xas2T2SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT2SeuNuF2Bastr -> idLEllnnounMnG1XasT2SeuNuF2Basptr
+  McshLag000020  idLEllnnounMnaG1XasT2SeuNucF2Bastr -> idLEllnnounMnaG1XasT2SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XasT2SuNucF2Bastr -> idLEllnnounMnG1XasT2SuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XasT3SeNcF1Bastr -> idLEllnnounMnG1XasT3SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT3SeNuF1Bastr -> idLEllnnounMnG1XasT3SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT3SuNcF1Bastr -> idLEllnnounMnG1XasT3SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XasT3SeuNucF2Bastr -> idLEllnnounMnG1XasT3SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XesT1SuNuF1Bastr -> idLEllnnounMnG1XesT1SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XesT2SuNuF1Bastr -> idLEllnnounMnG1XesT2SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XisT1SeNuF1Bastr -> idLEllnnounMnG1XisT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1Xis2T1SeNuF1Bastr -> idLEllnnounMnG1Xis2T1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XisT1SuNuF1Bastr -> idLEllnnounMnG1XisT1SuNuF1Basptr
+  McshLag000020  idLEllnnounMnaG1XisT1SuNuF2Bastr -> idLEllnnounMnaG1XisT1SuNuF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT1SeuNuF2Bastr -> idLEllnnounMnG1XisT1SeuNuF2Basptr
+  McshLag000020  idLEllnnounMnaG1XisT1SeuNuF2Bastr -> idLEllnnounMnaG1XisT1SeuNuF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT1SuNuF2Bastr -> idLEllnnounMnG1XisT1SuNuF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT2SeNcF1Bastr -> idLEllnnounMnG1XisT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XisT2SuNuF1Bastr -> idLEllnnounMnG1XisT2SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XisT2SeuNcuF2Bastr -> idLEllnnounMnG1XisT2SeuNcuF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT2SeuuNcucF3Bastr -> idLEllnnounMnG1XisT2SeuuNcucF3Basptr
+  McshLag000020  idLEllnnounMnG1XisT2SuNucF2Bastr -> idLEllnnounMnG1XisT2SuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT2Su2NucF2Bastr -> idLEllnnounMnG1XisT2Su2NucF2Basptr
+  McshLag000020  idLEllnnounMnG1XisT3SuNcF1Bastr -> idLEllnnounMnG1XisT3SuNcF1Basptr
+  McshLag000020  idLEllnnounMnaG12XisT3SeNcF2Bastr -> idLEllnnounMnaG12XisT3SeNcF2Basptr
+  McshLag000020  idLEllnnounMaG1XisT3SuNcF2Bastr -> idLEllnnounMaG1XisT3SuNcF2Basptr
+  McshLag000020  idLEllnnounMnG1XosT1SeNuF1Bastr -> idLEllnnounMnG1XosT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT2SeNuF1Bastr -> idLEllnnounMnG1XosT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT2Se2NuF1Bastr -> idLEllnnounMnG1XosT2Se2NuF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT2SeNuF2Bastr -> idLEllnnounMnG1XosT2SeNuF2Basptr
+  McshLag000020  idLEllnnounMnG1XosT2SuNuF1Bastr -> idLEllnnounMnG1XosT2SuNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT2SeuNucuF3Bastr -> idLEllnnounMnG1XosT2SeuNucuF3Basptr
+  McshLag000020  idLEllnnounMnG1XosT2SeuNucF2Bastr -> idLEllnnounMnG1XosT2SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XosT3SeNuF1Bastr -> idLEllnnounMnG1XosT3SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT3SeNcF1Bastr -> idLEllnnounMnG1XosT3SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG1XosT3SeNc2F1Bastr -> idLEllnnounMnG1XosT3SeNc2F1Basptr
+  McshLag000020  idLEllnnounManG1XosT3SeNcF2Bastr -> idLEllnnounManG1XosT3SeNcF2Basptr
+  McshLag000020  idLEllnnounManG1XosT3SeNc2F2Bastr -> idLEllnnounManG1XosT3SeNc2F2Basptr
+  McshLag000020  idLEllnnounMnaG1XosT3SeNucF2Bastr -> idLEllnnounMnaG1XosT3SeNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XusT1SuNuF1Bastr -> idLEllnnounMnG1XusT1SuNuF1Basptr
+  McshLag000020  idLEllnnounMaG1XusT1SeuNucF2Bastr -> idLEllnnounMaG1XusT1SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG1XusT2SeNuF1Bastr -> idLEllnnounMnG1XusT2SeNuF1Basptr
+  McshLag000020  idLEllnnounG2str -> idLEllnnounG2sptr
+  McshLag000020  idLEllnnounMnG2XaT1SeNuF1Bastr -> idLEllnnounMnG2XaT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT1SuNcF1Bastr -> idLEllnnounMnG2XaT1SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT1SeuNucF2Bastr -> idLEllnnounMnG2XaT1SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG2XaT2SeNuF1Bastr -> idLEllnnounMnG2XaT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT2SeNcF1Bastr -> idLEllnnounMnG2XaT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT2SeNcF1Bu6str -> idLEllnnounMnG2XaT2SeNcF1Bu6sptr
+  McshLag000020  idLEllnnounMnG2XaT2SeNcF1Bn6str -> idLEllnnounMnG2XaT2SeNcF1Bn6sptr
+  McshLag000020  idLEllnnounMnG2XaT3SeNuF1Bastr -> idLEllnnounMnG2XaT3SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT3SeNcF1Bastr -> idLEllnnounMnG2XaT3SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG2XaT3SeNc2F1Bastr -> idLEllnnounMnG2XaT3SeNc2F1Basptr
+  McshLag000020  idLEllnnounMnG2XiT1SeNuF1Bastr -> idLEllnnounMnG2XiT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XiT2SeNcF1Bastr -> idLEllnnounMnG2XiT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG2XiT2SeNcF1Bn6str -> idLEllnnounMnG2XiT2SeNcF1Bn6sptr
+  McshLag000020  idLEllnnounMnG2XiT2SeNuF1Bastr -> idLEllnnounMnG2XiT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XiT2SeNdF1Bastr -> idLEllnnounMnG2XiT2SeNdF1Basptr
+  McshLag000020  idLEllnnounMnaG2XiT2SuNcF2Bastr -> idLEllnnounMnaG2XiT2SuNcF2Basptr
+  McshLag000020  idLEllnnounMnG2XiT2SeuNucF2Bastr -> idLEllnnounMnG2XiT2SeuNucF2Basptr
+  McshLag000020  idLEllnnounMnG2XiT3SeNuF1Bastr -> idLEllnnounMnG2XiT3SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XiT3SeNuF1Bn6str -> idLEllnnounMnG2XiT3SeNuF1Bn6sptr
+  McshLag000020  idLEllnnounMnG2XiT3SeNucF2Bastr -> idLEllnnounMnG2XiT3SeNucF2Basptr
+  McshLag000020  idLEllnnounMnG2XiT3SeaNucF2Bastr -> idLEllnnounMnG2XiT3SeaNucF2Basptr
+  McshLag000020  idLEllnnounMnG2XiT3SeuNucF1Bastr -> idLEllnnounMnG2XiT3SeuNucF1Basptr
+  McshLag000020  idLEllnnounManG2XisT2SuNucF1Bastr -> idLEllnnounManG2XisT2SuNucF1Basptr
+  McshLag000020  idLEllnnounMnG2XosT1SeNuF1Bastr -> idLEllnnounMnG2XosT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XosT2SeNuF2Bastr -> idLEllnnounMnG2XosT2SeNuF2Basptr
+  McshLag000020  idLEllnnounMnG2XosT2SeNuF1Bastr -> idLEllnnounMnG2XosT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XosT3SeNcF1Bastr -> idLEllnnounMnG2XosT3SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG2XosT3SeNcF2Bastr -> idLEllnnounMnG2XosT3SeNcF2Basptr
+  McshLag000020  idLEllnnounMnG2XosT3SeNcF2bBastr -> idLEllnnounMnG2XosT3SeNcF2bBasptr
+  McshLag000020  idLEllnnounMnaG2XosT3SeNucF2Bastr -> idLEllnnounMnaG2XosT3SeNucF2Basptr
+  McshLag000020  idLEllnnounMnG2XoT1SeNuF1Bnpstr -> idLEllnnounMnG2XoT1SeNuF1Bnpsptr
+  McshLag000020  idLEllnnounMnG2XoT2SeNuF1Bastr -> idLEllnnounMnG2XoT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG2XuT1SuNcF1Bastr -> idLEllnnounMnG2XuT1SuNcF1Basptr
+  McshLag000020  idLEllnnounG3str -> idLEllnnounG3sptr
+  McshLag000020  idLEllnnounMnG3XaT2SuNcF1Bastr -> idLEllnnounMnG3XaT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XaT3SuNcF1Bastr -> idLEllnnounMnG3XaT3SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XasT2SuNcF1Bastr -> idLEllnnounMnG3XasT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMaG3XarT2SuNcF1Bastr -> idLEllnnounMaG3XarT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMaG3XesT1SeNuF1Bastr -> idLEllnnounMaG3XesT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMaG3XesT2SeNcF1Bastr -> idLEllnnounMaG3XesT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XiT1SeNuF1Bastr -> idLEllnnounMnG3XiT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG3XiT2SeNcF1Bastr -> idLEllnnounMnG3XiT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMaG3XiT2SuNcF1Bastr -> idLEllnnounMaG3XiT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMnaG3XiT2SeuNcF2Bastr -> idLEllnnounMnaG3XiT2SeuNcF2Basptr
+  McshLag000020  idLEllnnounMnG3XiT2SeNuF1Bn26str -> idLEllnnounMnG3XiT2SeNuF1Bn26sptr
+  McshLag000020  idLEllnnounMnG3XiT2Se2NcF1Bastr -> idLEllnnounMnG3XiT2Se2NcF1Basptr
+  McshLag000020  idLEllnnounMn2G3XiT2SeNcF1Bastr -> idLEllnnounMn2G3XiT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XoT1SeNuF1Bastr -> idLEllnnounMnG3XoT1SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG3XoT2SeNuF1Bastr -> idLEllnnounMnG3XoT2SeNuF1Basptr
+  McshLag000020  idLEllnnounMnG3XoT3SeNuF1Bastr -> idLEllnnounMnG3XoT3SeNuF1Basptr
+  McshLag000020  idLEllnnounMaG3XoT3SeNcF1Bastr -> idLEllnnounMaG3XoT3SeNcF1Basptr
+  McshLag000020  idLEllnnounManG3XoT3SeNcuF2Bastr -> idLEllnnounManG3XoT3SeNcuF2Basptr
+  McshLag000020  idLEllnnounMnaG3XoT3SeNucF2Bastr -> idLEllnnounMnaG3XoT3SeNucF2Basptr
+  McshLag000020  idLEllnnounMnG3XoT3SuNcF1Bastr -> idLEllnnounMnG3XoT3SuNcF1Basptr
+  McshLag000020  idLEllnnounMaG3XonT1SuNcF1Bastr -> idLEllnnounMaG3XonT1SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XosT1SuNcF1Bastr -> idLEllnnounMnG3XosT1SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XosT2SeNcF1Bastr -> idLEllnnounMnG3XosT2SeNcF1Basptr
+  McshLag000020  idLEllnnounMaG3XosT2SuNcF1Bastr -> idLEllnnounMaG3XosT2SuNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XosT3SeNcF1Bastr -> idLEllnnounMnG3XosT3SeNcF1Basptr
+  McshLag000020  idLEllnnounMnG3XosT3SuNcF1Bastr -> idLEllnnounMnG3XosT3SuNcF1Basptr
+  McshLag000020  idLEllnnounXstr -> idLEllnnounXsptr
+  McshLag000020  idLEllnnounXAstr -> idLEllnnounXAsptr
+  McshLag000020  idLEllnnounXEstr -> idLEllnnounXEsptr
+  McshLag000020  idLEllnnounXIstr -> idLEllnnounXIsptr
+  McshLag000020  idLEllnnounXOstr -> idLEllnnounXOsptr
+  McshLag000020  idLEllnnounXUstr -> idLEllnnounXUsptr
+  McshLag000020  idLEllnnounUdcblstr -> idLEllnnounUdcblsptr
+  McshLag000020  idLEllnadvestr -> idLEllnadvesptr
+  McshLag000020  idLEllnpronstr -> idLEllnpronsptr
+  McshLag000020  idLEllnconjstr -> idLEllnconjsptr
+  McshLag000020  idLEllnoptstr -> idLEllnoptsptr
+  McshLag000020  idLEllnstr -> idLEllnsptr
+  McshLag000021  idLZhonunsmstr -> idLZhonunsmsptr
+  McshLag000021  idLZhonwrdstr -> idLZhonwrdsptr
+  McshLag000021  idLZhonsylbstr -> idLZhonsylbsptr
+  McshLag000022  idWrdrEllastr -> idWrdrEllasptr
+  McshLag000023  idWrdrZhonprtclstr -> idWrdrZhonprtclsptr
+  McshLag000023  idWrdrZhonstr -> idWrdrZhonsptr
+  McshLag000024  idWrdrEnglstr -> idWrdrEnglsptr
+  McshLag000025  idWrdrEllnstr -> idWrdrEllnsptr
+  McshLag000026  idLEllnverbmbrMoodstr -> idLEllnverbmbrMoodsptr
+  McshLag000026  idLEllnverbstr -> idLEllnverbsptr
+  McshLag000026  idLEllnverbNalkstr -> idLEllnverbNalksptr
+  McshLag000026  idLEllnverbNplkstr -> idLEllnverbNplksptr
+  McshLag000026  idLEllnverbImplstr -> idLEllnverbImplsptr
+  McshLag000026  idLEllnverbIpltstr -> idLEllnverbIpltsptr
+  McshLag000027  idLEllaphnmstr -> idLEllaphnmsptr
+  McshLag000027  idLEllanounG1str -> idLEllanounG1sptr
+  McshLag000027  idLEllanounG1XasT2SeNcMoF1Bastr -> idLEllanounG1XasT2SeNcMoF1Basptr
+  McshLag000027  idLEllanounG1XasT2SeNcMopF1Bastr -> idLEllanounG1XasT2SeNcMopF1Basptr
+  McshLag000027  idLEllanounG1XeesT1aSeNuMwF1Bastr -> idLEllanounG1XeesT1aSeNuMwF1Basptr
+  McshLag000027  idLEllanounG1XeesT2oSeaNcMopF1Bastr -> idLEllanounG1XeesT2oSeaNcMopF1Basptr
+  McshLag000027  idLEllanounG1XeesT2oSeaNcMoF1Bastr -> idLEllanounG1XeesT2oSeaNcMoF1Basptr
+  McshLag000027  idLEllanounG1XeesT2oSeeNcMopF1Bastr -> idLEllanounG1XeesT2oSeeNcMopF1Basptr
+  McshLag000027  idLEllanounG1XeesT2oSeeNcMoF1Bastr -> idLEllanounG1XeesT2oSeeNcMoF1Basptr
+  McshLag000027  idLEllanounG1XeesT1pSueNuMwF2Bastr -> idLEllanounG1XeesT1pSueNuMwF2Basptr
+  McshLag000027  idLEllanounG1XanT1SuNuMopF1Bastr -> idLEllanounG1XanT1SuNuMopF1Basptr
+  McshLag000027  idLEllanounG1XanT1SuNcMwF1Bnpstr -> idLEllanounG1XanT1SuNcMwF1Bnpsptr
+  McshLag000027  idLEllanounG1XeenT2SuNcMoF1Bastr -> idLEllanounG1XeenT2SuNcMoF1Basptr
+  McshLag000027  idLEllanounG1XeenT1SuNcMwF1Bastr -> idLEllanounG1XeenT1SuNcMwF1Basptr
+  McshLag000027  idLEllanounG1Xeen2T1SuNcMwF1Bastr -> idLEllanounG1Xeen2T1SuNcMwF1Basptr
+  McshLag000027  idLEllanounG1XeenT1SuNuMwF1Bastr -> idLEllanounG1XeenT1SuNuMwF1Basptr
+  McshLag000027  idLEllanounG1XeerT1SuNcMwoF1Bastr -> idLEllanounG1XeerT1SuNcMwoF1Basptr
+  McshLag000027  idLEllanounG1XeerT1SudNcMwoF1Bastr -> idLEllanounG1XeerT1SudNcMwoF1Basptr
+  McshLag000027  idLEllanounG1XeerT1SuNcMwF1Bastr -> idLEllanounG1XeerT1SuNcMwF1Basptr
+  McshLag000027  idLEllanounG1XeerT1SuNcopMwF1Bastr -> idLEllanounG1XeerT1SuNcopMwF1Basptr
+  McshLag000027  idLEllanounG1XsT1SuNuMopF1Bastr -> idLEllanounG1XsT1SuNuMopF1Basptr
+  McshLag000027  idLEllanounG1XsT2SuNcMoF1Bastr -> idLEllanounG1XsT2SuNcMoF1Basptr
+  McshLag000027  idLEllanounG1XksT2SuNcMoF1Bastr -> idLEllanounG1XksT2SuNcMoF1Basptr
+  McshLag000027  idLEllanounG1XapsT2SuNcMowF1Bastr -> idLEllanounG1XapsT2SuNcMowF1Basptr
+  McshLag000027  idLEllanounG2str -> idLEllanounG2sptr
+  McshLag000027  idLEllanounG2XaT1SeNuMwF1Bastr -> idLEllanounG2XaT1SeNuMwF1Basptr
+  McshLag000027  idLEllanounG2XeenT1SuNcMwF1Bastr -> idLEllanounG2XeenT1SuNcMwF1Basptr
+  McshLag000027  idLEllanounG3str -> idLEllanounG3sptr
+  McshLag000027  idLEllanounXstr -> idLEllanounXsptr
+  McshLag000027  idLEllaadvestr -> idLEllaadvesptr
+  McshLag000027  idLEllaverbstr -> idLEllaverbsptr
+  McshLag000027  idLEllaconjstr -> idLEllaconjsptr
+  McshLag000027  idLEllaConjPrepstr -> idLEllaConjPrepsptr
+  McshLag000027  idLEllastr -> idLEllasptr
+  McshLag000027  idLEllarstr -> idLEllarsptr
+  McshLag000028  idLEll0phgmDcmkstr -> idLEll0phgmDcmksptr
+  McshLag000028  idLEll0phgmDptgstr -> idLEll0phgmDptgsptr
+  McshLag000028  idLEll0str -> idLEll0sptr
+  McshLag000029  idLEng0str -> idLEng0sptr
+  McshLag000030  idLTurkphnmVwlstr -> idLTurkphnmVwlsptr
+  McshLag000030  idLTurkphnmCnststr -> idLTurkphnmCnstsptr
+  McshLag000030  idLTurkltrstr -> idLTurkltrsptr
+  McshLag000030  idLTurksufxstr -> idLTurksufxsptr
+  McshLag000030  idLTurkpronstr -> idLTurkpronsptr
+  McshLag000030  idLTurkverbmbrstr -> idLTurkverbmbrsptr
+  McshLag000030  idLTurkverbmbrAoristr -> idLTurkverbmbrAorisptr
+  McshLag000030  idLTurkverbmbrPresstr -> idLTurkverbmbrPressptr
+  McshLag000030  idLTurkverbmbrPaststr -> idLTurkverbmbrPastsptr
+  McshLag000030  idLTurkverbmbrFutustr -> idLTurkverbmbrFutusptr
+  McshLag000030  idLTurkverbmbrVolistr -> idLTurkverbmbrVolisptr
+  McshLag000030  idLTurkverbmbrCondstr -> idLTurkverbmbrCondsptr
+  McshLag000030  idLTurkverbmbrNecestr -> idLTurkverbmbrNecesptr
+  McshLag000030  idLTurkverbstr -> idLTurkverbsptr
+  McshLag000030  idLTurkconjstr -> idLTurkconjsptr
+  McshLag000030  idLTurkstr -> idLTurksptr
+  McshLag000031  idLSignstr -> idLSignsptr
+  McshLag000032  idLFrmlstr -> idLFrmlsptr
+  McshLag000033  idLDeutsmscptstr -> idLDeutsmscptsptr
+  McshLag000033  idLDeutsmsondostr -> idLDeutsmsondosptr
+  McshLag000033  idLDeutuntstr -> idLDeutuntsptr
+  McshLag000033  idLDeutunitPhnmVowlstr -> idLDeutunitPhnmVowlsptr
+  McshLag000033  idLDeutunitPhnmCsntstr -> idLDeutunitPhnmCsntsptr
+  McshLag000033  idLDeutltrstr -> idLDeutltrsptr
+  McshLag000033  idLDeututsmstr -> idLDeututsmsptr
+  McshLag000033  idLDeutwrdstr -> idLDeutwrdsptr
+  McshLag000033  idLDeutnamestr -> idLDeutnamesptr
+  McshLag000033  idLDeutondombrstr -> idLDeutondombrsptr
+  McshLag000033  idLDeutondostr -> idLDeutondosptr
+  McshLag000033  idLDeutverbstr -> idLDeutverbsptr
+  McshLag000033  idLDeutconjstr -> idLDeutconjsptr
+  McshLag000033  idLDeutstr -> idLDeutsptr
+  McshLag000034  idLBcmssmscptstr -> idLBcmssmscptsptr
+  McshLag000034  idLBcmssmsondostr -> idLBcmssmsondosptr
+  McshLag000034  idLBcmsuntstr -> idLBcmsuntsptr
+  McshLag000034  idLBcmsphnmstr -> idLBcmsphnmsptr
+  McshLag000034  idLBcmsltrstr -> idLBcmsltrsptr
+  McshLag000034  idLBcmsutsmstr -> idLBcmsutsmsptr
+  McshLag000034  idLBcmswrdstr -> idLBcmswrdsptr
+  McshLag000034  idLBcmsnamestr -> idLBcmsnamesptr
+  McshLag000034  idLBcmsondombrstr -> idLBcmsondombrsptr
+  McshLag000034  idLBcmsondostr -> idLBcmsondosptr
+  McshLag000034  idLBcmsverbstr -> idLBcmsverbsptr
+  McshLag000034  idLBcmsconjstr -> idLBcmsconjsptr
+  McshLag000034  idLBcmsstr -> idLBcmssptr
+  McshLag000035  idLSpansmscptstr -> idLSpansmscptsptr
+  McshLag000035  idLSpansmsondostr -> idLSpansmsondosptr
+  McshLag000035  idLSpanuntstr -> idLSpanuntsptr
+  McshLag000035  idLSpanphnmstr -> idLSpanphnmsptr
+  McshLag000035  idLSpanltrstr -> idLSpanltrsptr
+  McshLag000035  idLSpanutsmstr -> idLSpanutsmsptr
+  McshLag000035  idLSpanwrdstr -> idLSpanwrdsptr
+  McshLag000035  idLSpannamestr -> idLSpannamesptr
+  McshLag000035  idLSpanondombrstr -> idLSpanondombrsptr
+  McshLag000035  idLSpanondostr -> idLSpanondosptr
+  McshLag000035  idLSpanverbstr -> idLSpanverbsptr
+  McshLag000035  idLSpanconjstr -> idLSpanconjsptr
+  McshLag000035  idLSpanstr -> idLSpansptr
+  McshLag000036  idLArabsmscptstr -> idLArabsmscptsptr
+  McshLag000036  idLArabsmsondostr -> idLArabsmsondosptr
+  McshLag000036  idLArabuntstr -> idLArabuntsptr
+  McshLag000036  idLArabphnmstr -> idLArabphnmsptr
+  McshLag000036  idLArabphnmVwlstr -> idLArabphnmVwlsptr
+  McshLag000036  idLArabphnmVwlNstr -> idLArabphnmVwlNsptr
+  McshLag000036  idLArabltrstr -> idLArabltrsptr
+  McshLag000036  idLArabutsmstr -> idLArabutsmsptr
+  McshLag000036  idLArabwrdstr -> idLArabwrdsptr
+  McshLag000036  idLArabnamestr -> idLArabnamesptr
+  McshLag000036  idLArabondombrstr -> idLArabondombrsptr
+  McshLag000036  idLArabondostr -> idLArabondosptr
+  McshLag000036  idLArabverbstr -> idLArabverbsptr
+  McshLag000036  idLArabconjstr -> idLArabconjsptr
+  McshLag000036  idLArabstr -> idLArabsptr
+  McshLag000037  idLHiursmscptstr -> idLHiursmscptsptr
+  McshLag000037  idLHiursmsondostr -> idLHiursmsondosptr
+  McshLag000037  idLHiuruntstr -> idLHiuruntsptr
+  McshLag000037  idLHiurphnmstr -> idLHiurphnmsptr
+  McshLag000037  idLHiurphnmVwlstr -> idLHiurphnmVwlsptr
+  McshLag000037  idLHiurphnmVwlNstr -> idLHiurphnmVwlNsptr
+  McshLag000037  idLHiurltrstr -> idLHiurltrsptr
+  McshLag000037  idLHiurutsmstr -> idLHiurutsmsptr
+  McshLag000037  idLHiurwrdstr -> idLHiurwrdsptr
+  McshLag000037  idLHiurnamestr -> idLHiurnamesptr
+  McshLag000037  idLHiurondombrstr -> idLHiurondombrsptr
+  McshLag000037  idLHiurondostr -> idLHiurondosptr
+  McshLag000037  idLHiurverbstr -> idLHiurverbsptr
+  McshLag000037  idLHiurconjstr -> idLHiurconjsptr
+  McshLag000037  idLHiurstr -> idLHiursptr
+  McshLag000037  idLHindunitLttrstr -> idLHindunitLttrsptr
+  McshLag000037  idLHindunitLttrVwelstr -> idLHindunitLttrVwelsptr
+  McshLag000037  idLHindunitLttrCsntstr -> idLHindunitLttrCsntsptr
+  McshLag000037  idLUrduunitLttrstr -> idLUrduunitLttrsptr
+  McshLag000038  idLSlv0smscptstr -> idLSlv0smscptsptr
+  McshLag000038  idLSlv0smsondostr -> idLSlv0smsondosptr
+  McshLag000038  idLSlv0untstr -> idLSlv0untsptr
+  McshLag000038  idLSlv0phnmstr -> idLSlv0phnmsptr
+  McshLag000038  idLSlv0ltrstr -> idLSlv0ltrsptr
+  McshLag000038  idLSlv0utsmstr -> idLSlv0utsmsptr
+  McshLag000038  idLSlv0wrdstr -> idLSlv0wrdsptr
+  McshLag000038  idLSlv0sylbstr -> idLSlv0sylbsptr
+  McshLag000038  idLSlv0namestr -> idLSlv0namesptr
+  McshLag000038  idLSlv0ondombrstr -> idLSlv0ondombrsptr
+  McshLag000038  idLSlv0ondostr -> idLSlv0ondosptr
+  McshLag000038  idLSlv0verbstr -> idLSlv0verbsptr
+  McshLag000038  idLSlv0conjstr -> idLSlv0conjsptr
+  McshLag000038  idLSlv0str -> idLSlv0sptr
+  McshLag000039  idLIde0smscptstr -> idLIde0smscptsptr
+  McshLag000039  idLIde0smsondostr -> idLIde0smsondosptr
+  McshLag000039  idLIde0untstr -> idLIde0untsptr
+  McshLag000039  idLIde0phnmstr -> idLIde0phnmsptr
+  McshLag000039  idLIde0ltrstr -> idLIde0ltrsptr
+  McshLag000039  idLIde0utsmstr -> idLIde0utsmsptr
+  McshLag000039  idLIde0wrdstr -> idLIde0wrdsptr
+  McshLag000039  idLIde0namestr -> idLIde0namesptr
+  McshLag000039  idLIde0ondombrstr -> idLIde0ondombrsptr
+  McshLag000039  idLIde0ondostr -> idLIde0ondosptr
+  McshLag000039  idLIde0verbstr -> idLIde0verbsptr
+  McshLag000039  idLIde0conjstr -> idLIde0conjsptr
+  McshLag000039  idLIde0str -> idLIde0sptr
+  McshLag000040  idLAfa0smscptstr -> idLAfa0smscptsptr
+  McshLag000040  idLAfa0smsondostr -> idLAfa0smsondosptr
+  McshLag000040  idLAfa0untstr -> idLAfa0untsptr
+  McshLag000040  idLAfa0phnmstr -> idLAfa0phnmsptr
+  McshLag000040  idLAfa0ltrstr -> idLAfa0ltrsptr
+  McshLag000040  idLAfa0utsmstr -> idLAfa0utsmsptr
+  McshLag000040  idLAfa0wrdstr -> idLAfa0wrdsptr
+  McshLag000040  idLAfa0namestr -> idLAfa0namesptr
+  McshLag000040  idLAfa0ondombrstr -> idLAfa0ondombrsptr
+  McshLag000040  idLAfa0ondostr -> idLAfa0ondosptr
+  McshLag000040  idLAfa0verbstr -> idLAfa0verbsptr
+  McshLag000040  idLAfa0conjstr -> idLAfa0conjsptr
+  McshLag000040  idLAfa0str -> idLAfa0sptr
+  McshLag000041  idLTur0smscptstr -> idLTur0smscptsptr
+  McshLag000041  idLTur0smsondostr -> idLTur0smsondosptr
+  McshLag000041  idLTur0untstr -> idLTur0untsptr
+  McshLag000041  idLTur0phnmstr -> idLTur0phnmsptr
+  McshLag000041  idLTur0ltrstr -> idLTur0ltrsptr
+  McshLag000041  idLTur0utsmstr -> idLTur0utsmsptr
+  McshLag000041  idLTur0wrdstr -> idLTur0wrdsptr
+  McshLag000041  idLTur0namestr -> idLTur0namesptr
+  McshLag000041  idLTur0ondombrstr -> idLTur0ondombrsptr
+  McshLag000041  idLTur0ondostr -> idLTur0ondosptr
+  McshLag000041  idLTur0verbstr -> idLTur0verbsptr
+  McshLag000041  idLTur0conjstr -> idLTur0conjsptr
+  McshLag000041  idLTur0str -> idLTur0sptr
+  McshLag000042  idLAsa0smscptstr -> idLAsa0smscptsptr
+  McshLag000042  idLAsa0smsondostr -> idLAsa0smsondosptr
+  McshLag000042  idLAsa0untstr -> idLAsa0untsptr
+  McshLag000042  idLAsa0phnmstr -> idLAsa0phnmsptr
+  McshLag000042  idLAsa0ltrstr -> idLAsa0ltrsptr
+  McshLag000042  idLAsa0utsmstr -> idLAsa0utsmsptr
+  McshLag000042  idLAsa0wrdstr -> idLAsa0wrdsptr
+  McshLag000042  idLAsa0namestr -> idLAsa0namesptr
+  McshLag000042  idLAsa0ondombrstr -> idLAsa0ondombrsptr
+  McshLag000042  idLAsa0ondostr -> idLAsa0ondosptr
+  McshLag000042  idLAsa0verbstr -> idLAsa0verbsptr
+  McshLag000042  idLAsa0conjstr -> idLAsa0conjsptr
+  McshLag000042  idLAsa0str -> idLAsa0sptr
+  McshLag000043  idLKorasmscptstr -> idLKorasmscptsptr
+  McshLag000043  idLKorasmsondostr -> idLKorasmsondosptr
+  McshLag000043  idLKorauntstr -> idLKorauntsptr
+  McshLag000043  idLKoraphnmstr -> idLKoraphnmsptr
+  McshLag000043  idLKoracharstr -> idLKoracharsptr
+  McshLag000043  idLKoracharHgctstr -> idLKoracharHgctsptr
+  McshLag000043  idLKorautsmstr -> idLKorautsmsptr
+  McshLag000043  idLKorawrdstr -> idLKorawrdsptr
+  McshLag000043  idLKoranamestr -> idLKoranamesptr
+  McshLag000043  idLKoraondombrstr -> idLKoraondombrsptr
+  McshLag000043  idLKoraondostr -> idLKoraondosptr
+  McshLag000043  idLKoraverbstr -> idLKoraverbsptr
+  McshLag000043  idLKoraconjstr -> idLKoraconjsptr
+  McshLag000043  idLKorastr -> idLKorasptr
+  McshNtr000002  idMtrlatt008str -> idMtrlatt008sptr
+  McshNtr000002  idMtrlstr -> idMtrlsptr
+  McshNtr000002  idMtrl010str -> idMtrl010sptr
+  McshNtr000003  idSaplstr -> idSaplsptr
+  McshNtr000003  idAtmstr -> idAtmsptr
+  McshNtr000004  idMolatt003str -> idMolatt003sptr
+  McshNtr000004  idMolstr -> idMolsptr
+  McshNtr000004  idMol003str -> idMol003sptr
+  McshNtr000004  idMol004str -> idMol004sptr
+  McshNtr000004  idMol005str -> idMol005sptr
+  McshNtr000004  idMol006str -> idMol006sptr
+  McshNtr000004  idMol007str -> idMol007sptr
+  McshNtr000004  idMol008str -> idMol008sptr
+  McshNtr000004  idMol009str -> idMol009sptr
+  McshNtr000004  idMol010str -> idMol010sptr
+  McshNtr000004  idMol011str -> idMol011sptr
+  McshNtr000004  idMol012str -> idMol012sptr
+  McshNtr000004  idMol013str -> idMol013sptr
+  McshNtr000005  idSysMolsatt004str -> idSysMolsatt004sptr
+  McshNtr000005  idSysMolsstr -> idSysMolssptr
+  McshNtr000005  idSysMols009clrstr -> idSysMols009clrsptr
+  McshNtr000005  idSysMols010str -> idSysMols010sptr
+  McshNtr000006  idChmCpdstr -> idChmCpdsptr
+  McshNtr000006  idChmOgcstr -> idChmOgcsptr
+  McshNtr000006  idChmOgc001str -> idChmOgc001sptr
+  McshNtr000006  idChmOgc004str -> idChmOgc004sptr
+  McshNtr000006  idChmCpd002str -> idChmCpd002sptr
+  McshNtr000006  idCmpAcdstr -> idCmpAcdsptr
+  McshNtr000006  idCmpAcd002str -> idCmpAcd002sptr
+  McshNtr000006  idCmpAcd003str -> idCmpAcd003sptr
+  McshNtr000006  idChmCpd005str -> idChmCpd005sptr
+  McshNtr000007  idChmElrstr -> idChmElrsptr
+  McshNtr000007  idChmElrCaesiumstr -> idChmElrCaesiumsptr
+  McshNtr000007  idChmElrFranciumstr -> idChmElrFranciumsptr
+  McshNtr000007  idChmElrHydrogenstr -> idChmElrHydrogensptr
+  McshNtr000007  idChmElrOxygenstr -> idChmElrOxygensptr
+  McshNtr000008  idAbiostr -> idAbiosptr
+  McshNtr000009  idAlystr -> idAlysptr
+  McshNtr000010  idBrnBiostr -> idBrnBiosptr
+  McshNtr000010  idBrnBioNtrlstr -> idBrnBioNtrlsptr
+  McshNtr000010  idBrnBioNtrlNstr -> idBrnBioNtrlNsptr
+  McshNtr000011  idInfBiostr -> idInfBiosptr
+  McshNtr000012  idFrcstr -> idFrcsptr
+  McshNtr000012  idFrc011str -> idFrc011sptr
+  McshNtr000013  idCmrnstr -> idCmrnsptr
+  McshNtr000014  idNtrstr -> idNtrsptr
+  McshNtr000015  idErthstr -> idErthsptr
+  McshNtr000017  idSkystr -> idSkysptr
+  McshOgm000002  idBiodongstr -> idBiodongsptr
+  McshOgm000002  idBiostr -> idBiosptr
+  McshOgm000003  idSysMtrlOgmstr -> idSysMtrlOgmsptr
+  McshOgm000003  idOgmdongstr -> idOgmdongsptr
+  McshOgm000003  idOgmstr -> idOgmsptr
+  McshOgm000003  idOgm006str -> idOgm006sptr
+  McshOgm000003  idOgm013str -> idOgm013sptr
+  McshOgm000003  idOgm020str -> idOgm020sptr
+  McshOgm000004  idMolOgmstr -> idMolOgmsptr
+  McshOgm000004  idMolOgm002str -> idMolOgm002sptr
+  McshOgm000004  idMolOgm015str -> idMolOgm015sptr
+  McshOgm000004  idMolOgm016str -> idMolOgm016sptr
+  McshOgm000004  idMolOgm016001str -> idMolOgm016001sptr
+  McshOgm000005  idSysMolsOgmstr -> idSysMolsOgmsptr
+  McshOgm000005  idSysMolsHmnstr -> idSysMolsHmnsptr
+  McshOgm000005  idSysMolsHmn027str -> idSysMolsHmn027sptr
+  McshOgm000005  idSysMolsHmn002str -> idSysMolsHmn002sptr
+  McshOgm000005  idSysMolsHmn004str -> idSysMolsHmn004sptr
+  McshOgm000005  idFldHmnstr -> idFldHmnsptr
+  McshOgm000005  idSysMolsHmn008str -> idSysMolsHmn008sptr
+  McshOgm000005  idSysMolsHmn013str -> idSysMolsHmn013sptr
+  McshOgm000005  idSysMolsHmn013Strdstr -> idSysMolsHmn013Strdsptr
+  McshOgm000005  idSysMolsHmn023str -> idSysMolsHmn023sptr
+  McshOgm000005  idHrmnOgmstr -> idHrmnOgmsptr
+  McshOgm000005  idHrmnHmnstr -> idHrmnHmnsptr
+  McshOgm000005  idHrmnHmn034str -> idHrmnHmn034sptr
+  McshOgm000005  idHrmnHmn035str -> idHrmnHmn035sptr
+  McshOgm000005  idHrmnHmn032str -> idHrmnHmn032sptr
+  McshOgm000005  idHrmnHmn002str -> idHrmnHmn002sptr
+  McshOgm000005  idHrmnHmn003str -> idHrmnHmn003sptr
+  McshOgm000005  idFldHmn001str -> idFldHmn001sptr
+  McshOgm000005  idSysMolsOgm005str -> idSysMolsOgm005sptr
+  McshOgm000006  idPrtnOgmatt003str -> idPrtnOgmatt003sptr
+  McshOgm000006  idPrtnOgmatt003003str -> idPrtnOgmatt003003sptr
+  McshOgm000006  idBdyHmnatt015025str -> idBdyHmnatt015025sptr
+  McshOgm000006  idPrtnOgmatt004003str -> idPrtnOgmatt004003sptr
+  McshOgm000006  idPrtnOgmatt013str -> idPrtnOgmatt013sptr
+  McshOgm000006  idPrtnOgmstr -> idPrtnOgmsptr
+  McshOgm000006  idPrtnHmnstr -> idPrtnHmnsptr
+  McshOgm000006  idPrtnOgm004str -> idPrtnOgm004sptr
+  McshOgm000006  idPrtnOgm004001str -> idPrtnOgm004001sptr
+  McshOgm000006  idPrtnOgm014str -> idPrtnOgm014sptr
+  McshOgm000007  idCellOgmdongstr -> idCellOgmdongsptr
+  McshOgm000007  idCellOgmatt043str -> idCellOgmatt043sptr
+  McshOgm000007  idCellOgmatt040att009str -> idCellOgmatt040att009sptr
+  McshOgm000007  idCellOgmatt040att008str -> idCellOgmatt040att008sptr
+  McshOgm000007  idCellOgmatt040str -> idCellOgmatt040sptr
+  McshOgm000007  idCellOgmatt028str -> idCellOgmatt028sptr
+  McshOgm000007  idCellOgmstr -> idCellOgmsptr
+  McshOgm000007  idCellAnmlstr -> idCellAnmlsptr
+  McshOgm000007  idCellPlntstr -> idCellPlntsptr
+  McshOgm000007  idOgm003str -> idOgm003sptr
+  McshOgm000007  idCellOgm009str -> idCellOgm009sptr
+  McshOgm000007  idCellOgm009001str -> idCellOgm009001sptr
+  McshOgm000008  idOgmCllNstr -> idOgmCllNsptr
+  McshOgm000008  idOgmVrsstr -> idOgmVrssptr
+  McshOgm000008  idOgmVrs004str -> idOgmVrs004sptr
+  McshOgm000009  idOgmAnmlstr -> idOgmAnmlsptr
+  McshOgm000009  idOgmAnml005str -> idOgmAnml005sptr
+  McshOgm000009  idOgmAnml023str -> idOgmAnml023sptr
+  McshOgm000009  idOgmAnml017str -> idOgmAnml017sptr
+  McshOgm000010  idPlntdongstr -> idPlntdongsptr
+  McshOgm000010  idPlntatt017str -> idPlntatt017sptr
+  McshOgm000010  idPlntstr -> idPlntsptr
+  McshOgm000010  idPlnt012str -> idPlnt012sptr
+  McshOgm000010  idPlnt031str -> idPlnt031sptr
+  McshOgm000010  idPlnt037str -> idPlnt037sptr
+  McshOgm000011  idOgmMmlstr -> idOgmMmlsptr
+  McshStn000002  idStnOgmatt004str -> idStnOgmatt004sptr
+  McshStn000002  idStnOgmatt012str -> idStnOgmatt012sptr
+  McshStn000002  idStnOgmstr -> idStnOgmsptr
+  McshStn000002  idStnHmnstr -> idStnHmnsptr
+  McshStn000003  idSfrOgmstr -> idSfrOgmsptr
+  McshStn000004  idGvcOgmdongstr -> idGvcOgmdongsptr
+  McshStn000004  idGvcOgmatt016str -> idGvcOgmatt016sptr
+  McshStn000004  idGvcOgmstr -> idGvcOgmsptr
+  McshStn000004  idGvcHmnatt006str -> idGvcHmnatt006sptr
+  McshStn000004  idBdgtstr -> idBdgtsptr
+  McshStn000004  idGvcHmnstr -> idGvcHmnsptr
+  McshStn000004  idGvcHmn001str -> idGvcHmn001sptr
+  McshStn000005  idGrpOgmstr -> idGrpOgmsptr
+  McshStn000005  idGrpOgm001str -> idGrpOgm001sptr
+  McshStn000006  idOznOgmatt006str -> idOznOgmatt006sptr
+  McshStn000006  idOznOgmdongstr -> idOznOgmdongsptr
+  McshStn000006  idOznOgmstr -> idOznOgmsptr
+  McshStn000007  idSocOgmatt011str -> idSocOgmatt011sptr
+  McshStn000007  idSocOgmstr -> idSocOgmsptr
+  McshStn000008  idOgznatt018str -> idOgznatt018sptr
+  McshStn000008  idOgznatt002str -> idOgznatt002sptr
+  McshStn000008  idOgznstr -> idOgznsptr
+  McshStn000008  idOgzn009str -> idOgzn009sptr
+  McshStn000008  idOgzn006str -> idOgzn006sptr
+  McshStn000009  idSocHumnatt064str -> idSocHumnatt064sptr
+  McshStn000009  idSocctznstr -> idSocctznsptr
+  McshStn000009  idSocHumnatt031str -> idSocHumnatt031sptr
+  McshStn000009  idSocHumnatt037str -> idSocHumnatt037sptr
+  McshStn000009  idSocHumnatt038str -> idSocHumnatt038sptr
+  McshStn000009  idSocHumnatt064Aggtstr -> idSocHumnatt064Aggtsptr
+  McshStn000009  idSocHumnatt053str -> idSocHumnatt053sptr
+  McshStn000009  idSocHumnatt024strA -> idSocHumnatt024sptrA
+  McshStn000009  idSocHumnatt024strB -> idSocHumnatt024sptrB
+  McshStn000009  idSocHumnatt024strC -> idSocHumnatt024sptrC
+  McshStn000009  idSocHumnatt024strD -> idSocHumnatt024sptrD
+  McshStn000009  idSocHumnatt024strF -> idSocHumnatt024sptrF
+  McshStn000009  idSocHumnatt024strH -> idSocHumnatt024sptrH
+  McshStn000009  idSocHumnatt024strK -> idSocHumnatt024sptrK
+  McshStn000009  idSocHumnatt024strM -> idSocHumnatt024sptrM
+  McshStn000009  idSocHumnatt024strO -> idSocHumnatt024sptrO
+  McshStn000009  idSocHumnatt024strS -> idSocHumnatt024sptrS
+  McshStn000009  idSocHumnatt024strU -> idSocHumnatt024sptrU
+  McshStn000009  idSocHumnatt034str -> idSocHumnatt034sptr
+  McshStn000009  idSocadmndongstr -> idSocadmndongsptr
+  McshStn000009  idSocadmnatt009str -> idSocadmnatt009sptr
+  McshStn000009  idSocadmnstr -> idSocadmnsptr
+  McshStn000009  idGvcSocDigistr -> idGvcSocDigisptr
+  McshStn000009  idSocHumnatt045str -> idSocHumnatt045sptr
+  McshStn000009  idSocHumnatt012str -> idSocHumnatt012sptr
+  McshStn000009  idSocHumnatt012002str -> idSocHumnatt012002sptr
+  McshStn000009  idSocHumnstr -> idSocHumnsptr
+  McshStn000009  idSocHumn004str -> idSocHumn004sptr
+  McshStn000009  idSocHumn005str -> idSocHumn005sptr
+  McshStn000009  idSocHumn025str -> idSocHumn025sptr
+  McshStn000009  idSocHumn029str -> idSocHumn029sptr
+  McshStn000009  idSocHumn049str -> idSocHumn049sptr
+  McshStn000009  idSocHumn019str -> idSocHumn019sptr
+  McshStn000009  idSocHumn021str -> idSocHumn021sptr
+  McshStn000009  idSocHumn007str -> idSocHumn007sptr
+  McshStn000009  idSocHumn008str -> idSocHumn008sptr
+  McshStn000010  idSfrHmnatt015str -> idSfrHmnatt015sptr
+  McshStn000010  idSfrHmnatt010str -> idSfrHmnatt010sptr
+  McshStn000010  idSfrHmnatt010Lglstr -> idSfrHmnatt010Lglsptr
+  McshStn000010  idSfrHmndongstr -> idSfrHmndongsptr
+  McshStn000010  idSfrHmntrsgcnrtstr -> idSfrHmntrsgcnrtsptr
+  McshStn000010  idSfrHmntrsgstr -> idSfrHmntrsgsptr
+  McshStn000010  idSfrHmntrsgMntrstr -> idSfrHmntrsgMntrsptr
+  McshStn000010  idSfrHmntrsgMntrNstr -> idSfrHmntrsgMntrNsptr
+  McshStn000010  idSfrHmnexcgstr -> idSfrHmnexcgsptr
+  McshStn000010  idSfrHmnexcgBuygstr -> idSfrHmnexcgBuygsptr
+  McshStn000010  idSfrHmnexcgSelgstr -> idSfrHmnexcgSelgsptr
+  McshStn000010  idSfrHmnstr -> idSfrHmnsptr
+  McshStn000010  idSfrHmnCpastr -> idSfrHmnCpasptr
+  McshStn000010  idSfrHmn056str -> idSfrHmn056sptr
+  McshStn000010  idSfrHmn005orrnstr -> idSfrHmn005orrnsptr
+  McshStn000010  idSfrHmn005str -> idSfrHmn005sptr
+  McshStn000010  idSfrHmn008str -> idSfrHmn008sptr
+  McshStn000010  idSfrHmn029str -> idSfrHmn029sptr
+  McshStn000010  idSfrHmn018str -> idSfrHmn018sptr
+  McshStn000010  idSfrHmn032str -> idSfrHmn032sptr
+  McshStn000010  idSfrHmn033str -> idSfrHmn033sptr
+  McshStn000010  idSfrHmn040str -> idSfrHmn040sptr
+  McshStn000011  idWkratt008str -> idWkratt008sptr
+  McshStn000011  idWkratt014str -> idWkratt014sptr
+  McshStn000011  idWkratt001str -> idWkratt001sptr
+  McshStn000011  idJobstr -> idJobsptr
+  McshStn000011  idJob001str -> idJob001sptr
+  McshStn000011  idWkrstr -> idWkrsptr
+  McshStn000011  idWkr005str -> idWkr005sptr
+  McshStn000011  idWkr006Aggstr -> idWkr006Aggsptr
+  McshStn000011  idWkr004str -> idWkr004sptr
+  McshStn000011  idWkr023str -> idWkr023sptr
+  McshStn000011  idWkr024str -> idWkr024sptr
+  McshStn000012  idEconHmnatt038Wagestr -> idEconHmnatt038Wagesptr
+  McshStn000012  idEconHmnatt037str -> idEconHmnatt037sptr
+  McshStn000012  idEconHmnatt036str -> idEconHmnatt036sptr
+  McshStn000012  idEconHmnatt046str -> idEconHmnatt046sptr
+  McshStn000012  idEconHmnatt007Econstr -> idEconHmnatt007Econsptr
+  McshStn000012  idEconHmnatt007snastr -> idEconHmnatt007snasptr
+  McshStn000012  idEconHmnatt007esastr -> idEconHmnatt007esasptr
+  McshStn000012  idEconHmnatt047str -> idEconHmnatt047sptr
+  McshStn000012  idEconHmnatt011str -> idEconHmnatt011sptr
+  McshStn000012  idLaw045str -> idLaw045sptr
+  McshStn000012  idEconHmnatt031str -> idEconHmnatt031sptr
+  McshStn000012  idEconHmnstr -> idEconHmnsptr
+  McshStn000012  idEconHmn023str -> idEconHmn023sptr
+  McshStn000012  idEconHmn001str -> idEconHmn001sptr
+  McshStn000013  idPjtatt004tulstr -> idPjtatt004tulsptr
+  McshStn000013  idPjtstr -> idPjtsptr
+  McshStn000014  idOznCsnatt011str -> idOznCsnatt011sptr
+  McshStn000014  idOznCsnatt012str -> idOznCsnatt012sptr
+  McshStn000014  idOznCsnstr -> idOznCsnsptr
+  McshStn000015  idOznPdnatt025str -> idOznPdnatt025sptr
+  McshStn000015  idOznPdnatt012str -> idOznPdnatt012sptr
+  McshStn000015  idOznPdnatt008str -> idOznPdnatt008sptr
+  McshStn000015  idOznPdnatt015str -> idOznPdnatt015sptr
+  McshStn000015  idOznPdnatt027str -> idOznPdnatt027sptr
+  McshStn000015  idOznPdnatt016str -> idOznPdnatt016sptr
+  McshStn000015  idOznPdnstr -> idOznPdnsptr
+  McshStn000015  idOznPdn011str -> idOznPdn011sptr
+  McshStn000015  idOznPdn004str -> idOznPdn004sptr
+  McshStn000015  idOznPdn042str -> idOznPdn042sptr
+  McshStn000015  idWrkr028str -> idWrkr028sptr
+  McshStn000015  idSctrPblcatt002str -> idSctrPblcatt002sptr
+  McshStn000015  idOznPdn013str -> idOznPdn013sptr
+  McshStn000015  idOznPdn014str -> idOznPdn014sptr
+  McshStn000015  idOznPdn017str -> idOznPdn017sptr
+  McshStn000015  idOznPdn002str -> idOznPdn002sptr
+  McshStn000015  idOznPdn038str -> idOznPdn038sptr
+  McshStn000015  idOznPdn012str -> idOznPdn012sptr
+  McshStn000015  idOznPdn027str -> idOznPdn027sptr
+  McshStn000016  idOgznIntlstr -> idOgznIntlsptr
+  McshStn000017  idStandardstr -> idStandardsptr
+  McshStn000017  idOznStdstr -> idOznStdsptr
+  McshStn000017  idOznW3cstdstr -> idOznW3cstdsptr
+  McshStn000017  idOznW3cstdRecstr -> idOznW3cstdRecsptr
+  McshStn000017  idOznW3cstdPdrdstr -> idOznW3cstdPdrdsptr
+  McshStn000017  idOznW3cstdPerdstr -> idOznW3cstdPerdsptr
+  McshStn000017  idOznW3cstdCdrdstr -> idOznW3cstdCdrdsptr
+  McshStn000017  idOznW3cstdWgdtstr -> idOznW3cstdWgdtsptr
+  McshStn000017  idOznW3cstdGpntstr -> idOznW3cstdGpntsptr
+  McshStn000017  idOznW3cstdRtrdstr -> idOznW3cstdRtrdsptr
+  McshStn000017  idOznIetfstdstr -> idOznIetfstdsptr
+  McshStn000018  idOznUnatt006str -> idOznUnatt006sptr
+  McshStn000018  idOznUnatt021str -> idOznUnatt021sptr
+  McshStn000018  idOznUnstr -> idOznUnsptr
+  McshStn000019  idSocAlgostr -> idSocAlgosptr
+  McshStn000020  idEuzzmbrstr -> idEuzzmbrsptr
+  McshStn000020  idSocEuzztt040str -> idSocEuzztt040sptr
+  McshStn000020  idEufpstr -> idEufpsptr
+  McshStn000020  idEuwkrstr -> idEuwkrsptr
+  McshStn000020  idEuoDgComstr -> idEuoDgComsptr
+  McshStn000020  idEuogvcstr -> idEuogvcsptr
+  McshStn000020  idEuoAgncystr -> idEuoAgncysptr
+  McshStn000020  idEuoAgncyDcdstr -> idEuoAgncyDcdsptr
+  McshStn000020  idEubdgtatt007str -> idEubdgtatt007sptr
+  McshStn000020  idEuegvcstr -> idEuegvcsptr
+  McshStn000020  idEuzzadmnlbgstr -> idEuzzadmnlbgsptr
+  McshStn000020  idEuzzadmnplcstr -> idEuzzadmnplcsptr
+  McshStn000020  idEuzzadmnpcscstr -> idEuzzadmnpcscsptr
+  McshStn000020  idEuzzhealth002str -> idEuzzhealth002sptr
+  McshStn000020  idEudocstr -> idEudocsptr
+  McshStn000020  idSocEusstr -> idSocEussptr
+  McshStn000021  idSocGlblstr -> idSocGlblsptr
+  McshStn000022  idSfrHauzstr -> idSfrHauzsptr
+  McshStn000023  idScmostr -> idScmosptr
+  McshStn000024  idStdRfcstr -> idStdRfcsptr
+  McshStn000026  idOznSvcstr -> idOznSvcsptr
+  McshStn000026  idOznSvcSctrstr -> idOznSvcSctrsptr
+  McshStn000026  idOznSvcSctrTrsmstr -> idOznSvcSctrTrsmsptr
+  McshStn000027  idSfrBldgstr -> idSfrBldgsptr
+  McshStn000028  idOznFinstr -> idOznFinsptr
+  McshStn000028  idOznFin002Elrcstr -> idOznFin002Elrcsptr
+  McshStn000029  idSfrFinstr -> idSfrFinsptr
+  McshStn000029  idSfrFin001str -> idSfrFin001sptr
+  McshStn000029  idSfrFin002str -> idSfrFin002sptr
+  McshStn000029  idSfrFin003str -> idSfrFin003sptr
+  McshStn000029  idSfrFin004str -> idSfrFin004sptr
+  McshStn000029  idSfrFin019str -> idSfrFin019sptr
+  McshStn000029  idSfrFin019Untstr -> idSfrFin019Untsptr
+  McshStn000029  idSfrFin019UntRsvdstr -> idSfrFin019UntRsvdsptr
+  McshStn000029  idSfrFin025str -> idSfrFin025sptr
+  McshStn000029  idSfrFin026str -> idSfrFin026sptr
+  McshStn000030  idSocGrcastr -> idSocGrcasptr
+  McshStn000031  idSocChnaatt015str -> idSocChnaatt015sptr
+  McshStn000031  idSocChnaatt016str -> idSocChnaatt016sptr
+  McshStn000031  idChnaEconatt004str -> idChnaEconatt004sptr
+  McshStn000031  idChnaEconatt064str -> idChnaEconatt064sptr
+  McshStn000031  idChnaEconatt005str -> idChnaEconatt005sptr
+  McshStn000031  idChnaadmnatt003str -> idChnaadmnatt003sptr
+  McshStn000031  idChnalawstr -> idChnalawsptr
+  McshStn000031  idChnaadmnatt015str -> idChnaadmnatt015sptr
+  McshStn000031  idSocChnastr -> idSocChnasptr
+  McshStn000032  idUsazadmnatt002str -> idUsazadmnatt002sptr
+  McshStn000032  idSocUsazstr -> idSocUsazsptr
+  McshStn000033  idSocTurkstr -> idSocTurksptr
+  McshStn000034  idLVnmaunitPhnmVowlstr -> idLVnmaunitPhnmVowlsptr
+  McshStn000034  idLVnmaunitPhnmCsntstr -> idLVnmaunitPhnmCsntsptr
+  McshStn000034  idLVnmaunitLttrstr -> idLVnmaunitLttrsptr
+  McshStn000034  idSocVtnmstr -> idSocVtnmsptr
+  McshStn000035  idLItlnunitPhnmVowlstr -> idLItlnunitPhnmVowlsptr
+  McshStn000035  idLItlnunitPhnmCsntstr -> idLItlnunitPhnmCsntsptr
+  McshStn000035  idLItlnunitLttrstr -> idLItlnunitLttrsptr
+  McshStn000035  idLItlnpronstr -> idLItlnpronsptr
+  McshStn000035  idSocItlastr -> idSocItlasptr
+  McshStn000036  idSocDeutstr -> idSocDeutsptr
+  McshStn000037  idLFracunitPhnmVowlstr -> idLFracunitPhnmVowlsptr
+  McshStn000037  idLFracunitPhnmCsntstr -> idLFracunitPhnmCsntsptr
+  McshStn000037  idLFracunitLttrstr -> idLFracunitLttrsptr
+  McshStn000037  idSocFracstr -> idSocFracsptr
+  McshStn000038  idSbulunitPhnmVowlstr -> idSbulunitPhnmVowlsptr
+  McshStn000038  idSbulunitPhnmCsntstr -> idSbulunitPhnmCsntsptr
+  McshStn000038  idSbulunitLttrstr -> idSbulunitLttrsptr
+  McshStn000038  idSocBgrastr -> idSocBgrasptr
+  McshStn000039  idLSqipunitPhnmVowlstr -> idLSqipunitPhnmVowlsptr
+  McshStn000039  idLSqipunitPhnmCsntstr -> idLSqipunitPhnmCsntsptr
+  McshStn000039  idLSqipunitLttrstr -> idLSqipunitLttrsptr
+  McshStn000039  idSocAlbastr -> idSocAlbasptr
+  McshStn000040  idLSmkdunitLttrstr -> idLSmkdunitLttrsptr
+  McshStn000040  idSocNmkdstr -> idSocNmkdsptr
+  McshStn000041  idLSslvunitLttrstr -> idLSslvunitLttrsptr
+  McshStn000041  idSocSvnastr -> idSocSvnasptr
+  McshStn000042  idSctrEduogznstr -> idSctrEduogznsptr
+  McshStn000042  idSctrEdutechSkbkstr -> idSctrEdutechSkbksptr
+  McshStn000042  idSctrEdutechSkbkDgtlstr -> idSctrEdutechSkbkDgtlsptr
+  McshStn000042  idSctrEdutechSkbkDgtlSkrastr -> idSctrEdutechSkbkDgtlSkrasptr
+  McshStn000042  idSctrEdustr -> idSctrEdusptr
+  McshStn000042  idSctrEduChnastr -> idSctrEduChnasptr
+  McshStn000042  idSctrEduSmrtstr -> idSctrEduSmrtsptr
+  McshStn000043  idLSrusunitLttrstr -> idLSrusunitLttrsptr
+  McshStn000043  idSocRusastr -> idSocRusasptr
+  McshStn000044  idLRomnunitPhnmVowlstr -> idLRomnunitPhnmVowlsptr
+  McshStn000044  idLRomnunitPhnmCsntstr -> idLRomnunitPhnmCsntsptr
+  McshStn000044  idLRomnunitLttrstr -> idLRomnunitLttrsptr
+  McshStn000044  idSocRouastr -> idSocRouasptr
+  McshStn000045  idSocSsssstr -> idSocSssssptr
+  McshStn000046  idSocMneastr -> idSocMneasptr
+  McshStn000047  idSocHrvastr -> idSocHrvasptr
+  McshStn000048  idLJpnsunitCharstr -> idLJpnsunitCharsptr
+  McshStn000048  idLJpnsunitCharHrgnstr -> idLJpnsunitCharHrgnsptr
+  McshStn000048  idSocJpnastr -> idSocJpnasptr
+  McshStn000049  idSocKorsstr -> idSocKorssptr
+  McshStn000050  idLKhmrunitCharstr -> idLKhmrunitCharsptr
+  McshStn000050  idLKhmrunitLttrstr -> idLKhmrunitLttrsptr
+  McshStn000050  idSocKhmastr -> idSocKhmasptr
+  McshStn000051  idSocSgprstr -> idSocSgprsptr
+  McshStnlaw000002  idLawatt006Cortstr -> idLawatt006Cortsptr
+  McshStnlaw000002  idLawatt006Liitstr -> idLawatt006Liitsptr
+  McshStnlaw000002  idLawatt007str -> idLawatt007sptr
+  McshStnlaw000002  idLawstr -> idLawsptr
+  McshStnlaw000002  idLaw023str -> idLaw023sptr
+  McshStnlaw000002  idLaw024str -> idLaw024sptr
+  McshStnlaw000002  idLaw026str -> idLaw026sptr
+  McshStnlaw000002  idLaw026Chnastr -> idLaw026Chnasptr
+  McshStnlaw000002  idLaw009str -> idLaw009sptr
+  McshStnlaw000002  idLaw011str -> idLaw011sptr
+  McshStnlaw000002  idLaw012str -> idLaw012sptr
+  McshStnlaw000003  idLawEuzztt018str -> idLawEuzztt018sptr
+  McshStnlaw000003  idLawEuzztt012str -> idLawEuzztt012sptr
+  McshStnlaw000003  idLawEusstr -> idLawEussptr
+  McshStnlaw000003  idLawEus001dongstr -> idLawEus001dongsptr
+  McshStnlaw000003  idLawEus001str -> idLawEus001sptr
+  McshStnlaw000003  idLawEus010str -> idLawEus010sptr
+  McshStnlaw000003  idLawEus002str -> idLawEus002sptr
+  McshStnlaw000003  idLawEus017str -> idLawEus017sptr
+  McshStnlaw000003  idLawEus019str -> idLawEus019sptr
+  McshStnlaw000003  idLawEus003str -> idLawEus003sptr
+  McshStnlaw000003  idLawEus004str -> idLawEus004sptr
+  McshStnlaw000003  idLawEus005str -> idLawEus005sptr
+  McshStnlaw000004  idLawInlstr -> idLawInlsptr
+  McshStnlaw000004  idLawInl002str -> idLawInl002sptr
+  McshStnlaw000006  idLawGrcstr -> idLawGrcsptr
+  McshTch000002  idTchstr -> idTchsptr
+  McshTch000002  idTch001str -> idTch001sptr
+  McshTch000002  idTch003str -> idTch003sptr
+  McshTch000003  idMchnstr -> idMchnsptr
+  McshTch000003  idMchn001str -> idMchn001sptr
+  McshTch000003  idMchn002str -> idMchn002sptr
+  McshTch000005  idTRbtcstr -> idTRbtcsptr
+  McshUcdU0000  idU0000chrstr -> idU0000chrsptr
+  McshUcdU0000  idU0000str -> idU0000sptr
+  McshUcdU0080  idU0080chrstr -> idU0080chrsptr
+  McshUcdU0080  idU0080str -> idU0080sptr
+  McshUcdU0100  idU0100chrstr -> idU0100chrsptr
+  McshUcdU0100  idU0100str -> idU0100sptr
+  McshUcdU0180  idU0180chrstr -> idU0180chrsptr
+  McshUcdU0180  idU0180str -> idU0180sptr
+  McshUcdU0250  idU0250chrstr -> idU0250chrsptr
+  McshUcdU0250  idU0250str -> idU0250sptr
+  McshUcdU02B0  idU02B0chrstr -> idU02B0chrsptr
+  McshUcdU02B0  idU02B0str -> idU02B0sptr
+  McshUcdU0300  idU0300chrstr -> idU0300chrsptr
+  McshUcdU0300  idU0300str -> idU0300sptr
+  McshUcdU0370  idU0370chrstr -> idU0370chrsptr
+  McshUcdU0370  idU0370str -> idU0370sptr
+  McshUcdU0400  idU0400chrstr -> idU0400chrsptr
+  McshUcdU0400  idU0400str -> idU0400sptr
+  McshUcdU0500  idU0500chrstr -> idU0500chrsptr
+  McshUcdU0500  idU0500str -> idU0500sptr
+  McshUcdU0530  idU0530chrstr -> idU0530chrsptr
+  McshUcdU0530  idU0530str -> idU0530sptr
+  McshUcdU0590  idU0590chrstr -> idU0590chrsptr
+  McshUcdU0590  idU0590str -> idU0590sptr
+  McshUcdU0600  idU0600chrstr -> idU0600chrsptr
+  McshUcdU0600  idU0600str -> idU0600sptr
+  McshUcdU0700  idU0700chrstr -> idU0700chrsptr
+  McshUcdU0700  idU0700str -> idU0700sptr
+  McshUcdU0750  idU0750chrstr -> idU0750chrsptr
+  McshUcdU0750  idU0750str -> idU0750sptr
+  McshUcdU0780  idU0780chrstr -> idU0780chrsptr
+  McshUcdU0780  idU0780str -> idU0780sptr
+  McshUcdU07C0  idU07C0chrstr -> idU07C0chrsptr
+  McshUcdU07C0  idU07C0str -> idU07C0sptr
+  McshUcdU0800  idU0800chrstr -> idU0800chrsptr
+  McshUcdU0800  idU0800str -> idU0800sptr
+  McshUcdU0840  idU0840chrstr -> idU0840chrsptr
+  McshUcdU0840  idU0840str -> idU0840sptr
+  McshUcdU0860  idU0860chrstr -> idU0860chrsptr
+  McshUcdU0860  idU0860str -> idU0860sptr
+  McshUcdU08A0  idU08A0chrstr -> idU08A0chrsptr
+  McshUcdU08A0  idU08A0str -> idU08A0sptr
+  McshUcdU0900  idU0900chrstr -> idU0900chrsptr
+  McshUcdU0900  idU0900str -> idU0900sptr
+  McshUcdU0980  idU0980chrstr -> idU0980chrsptr
+  McshUcdU0980  idU0980str -> idU0980sptr
+  McshUcdU0A00  idU0A00chrstr -> idU0A00chrsptr
+  McshUcdU0A00  idU0A00str -> idU0A00sptr
+  McshUcdU0A80  idU0A80chrstr -> idU0A80chrsptr
+  McshUcdU0A80  idU0A80str -> idU0A80sptr
+  McshUcdU0B00  idU0B00chrstr -> idU0B00chrsptr
+  McshUcdU0B00  idU0B00str -> idU0B00sptr
+  McshUcdU0B80  idU0B80chrstr -> idU0B80chrsptr
+  McshUcdU0B80  idU0B80str -> idU0B80sptr
+  McshUcdU0C00  idU0C00chrstr -> idU0C00chrsptr
+  McshUcdU0C00  idU0C00str -> idU0C00sptr
+  McshUcdU0C80  idU0C80chrstr -> idU0C80chrsptr
+  McshUcdU0C80  idU0C80str -> idU0C80sptr
+  McshUcdU0D00  idU0D00chrstr -> idU0D00chrsptr
+  McshUcdU0D00  idU0D00str -> idU0D00sptr
+  McshUcdU0D80  idU0D80chrstr -> idU0D80chrsptr
+  McshUcdU0D80  idU0D80str -> idU0D80sptr
+  McshUcdU0E00  idU0E00chrstr -> idU0E00chrsptr
+  McshUcdU0E00  idU0E00str -> idU0E00sptr
+  McshUcdU0E80  idU0E80chrstr -> idU0E80chrsptr
+  McshUcdU0E80  idU0E80str -> idU0E80sptr
+  McshUcdU0F00  idU0F00chrstr -> idU0F00chrsptr
+  McshUcdU0F00  idU0F00str -> idU0F00sptr
+  McshUcdU1000  idU1000chrstr -> idU1000chrsptr
+  McshUcdU1000  idU1000str -> idU1000sptr
+  McshUcdU10000  idU10000chrstr -> idU10000chrsptr
+  McshUcdU10000  idU10000str -> idU10000sptr
+  McshUcdU100000  idU100000str -> idU100000sptr
+  McshUcdU10080  idU10080chrstr -> idU10080chrsptr
+  McshUcdU10080  idU10080str -> idU10080sptr
+  McshUcdU10100  idU10100chrstr -> idU10100chrsptr
+  McshUcdU10100  idU10100str -> idU10100sptr
+  McshUcdU10140  idU10140chrstr -> idU10140chrsptr
+  McshUcdU10140  idU10140str -> idU10140sptr
+  McshUcdU10190  idU10190chrstr -> idU10190chrsptr
+  McshUcdU10190  idU10190str -> idU10190sptr
+  McshUcdU101D0  idU101D0chrstr -> idU101D0chrsptr
+  McshUcdU101D0  idU101D0str -> idU101D0sptr
+  McshUcdU10280  idU10280chrstr -> idU10280chrsptr
+  McshUcdU10280  idU10280str -> idU10280sptr
+  McshUcdU102A0  idU102A0chrstr -> idU102A0chrsptr
+  McshUcdU102A0  idU102A0str -> idU102A0sptr
+  McshUcdU102E0  idU102E0chrstr -> idU102E0chrsptr
+  McshUcdU102E0  idU102E0str -> idU102E0sptr
+  McshUcdU10300  idU10300chrstr -> idU10300chrsptr
+  McshUcdU10300  idU10300str -> idU10300sptr
+  McshUcdU10330  idU10330chrstr -> idU10330chrsptr
+  McshUcdU10330  idU10330str -> idU10330sptr
+  McshUcdU10350  idU10350chrstr -> idU10350chrsptr
+  McshUcdU10350  idU10350str -> idU10350sptr
+  McshUcdU10380  idU10380chrstr -> idU10380chrsptr
+  McshUcdU10380  idU10380str -> idU10380sptr
+  McshUcdU103A0  idU103A0chrstr -> idU103A0chrsptr
+  McshUcdU103A0  idU103A0str -> idU103A0sptr
+  McshUcdU10400  idU10400chrstr -> idU10400chrsptr
+  McshUcdU10400  idU10400str -> idU10400sptr
+  McshUcdU10450  idU10450chrstr -> idU10450chrsptr
+  McshUcdU10450  idU10450str -> idU10450sptr
+  McshUcdU10480  idU10480chrstr -> idU10480chrsptr
+  McshUcdU10480  idU10480str -> idU10480sptr
+  McshUcdU104B0  idU104B0chrstr -> idU104B0chrsptr
+  McshUcdU104B0  idU104B0str -> idU104B0sptr
+  McshUcdU10500  idU10500chrstr -> idU10500chrsptr
+  McshUcdU10500  idU10500str -> idU10500sptr
+  McshUcdU10530  idU10530chrstr -> idU10530chrsptr
+  McshUcdU10530  idU10530str -> idU10530sptr
+  McshUcdU10600  idU10600chrstr -> idU10600chrsptr
+  McshUcdU10600  idU10600str -> idU10600sptr
+  McshUcdU10800  idU10800chrstr -> idU10800chrsptr
+  McshUcdU10800  idU10800str -> idU10800sptr
+  McshUcdU10840  idU10840chrstr -> idU10840chrsptr
+  McshUcdU10840  idU10840str -> idU10840sptr
+  McshUcdU10860  idU10860chrstr -> idU10860chrsptr
+  McshUcdU10860  idU10860str -> idU10860sptr
+  McshUcdU10880  idU10880chrstr -> idU10880chrsptr
+  McshUcdU10880  idU10880str -> idU10880sptr
+  McshUcdU108E0  idU108E0chrstr -> idU108E0chrsptr
+  McshUcdU108E0  idU108E0str -> idU108E0sptr
+  McshUcdU10900  idU10900chrstr -> idU10900chrsptr
+  McshUcdU10900  idU10900str -> idU10900sptr
+  McshUcdU10920  idU10920chrstr -> idU10920chrsptr
+  McshUcdU10920  idU10920str -> idU10920sptr
+  McshUcdU10980  idU10980chrstr -> idU10980chrsptr
+  McshUcdU10980  idU10980str -> idU10980sptr
+  McshUcdU109A0  idU109A0chrstr -> idU109A0chrsptr
+  McshUcdU109A0  idU109A0str -> idU109A0sptr
+  McshUcdU10A0  idU10A0chrstr -> idU10A0chrsptr
+  McshUcdU10A0  idU10A0str -> idU10A0sptr
+  McshUcdU10A00  idU10A00chrstr -> idU10A00chrsptr
+  McshUcdU10A00  idU10A00str -> idU10A00sptr
+  McshUcdU10A60  idU10A60chrstr -> idU10A60chrsptr
+  McshUcdU10A60  idU10A60str -> idU10A60sptr
+  McshUcdU10A80  idU10A80chrstr -> idU10A80chrsptr
+  McshUcdU10A80  idU10A80str -> idU10A80sptr
+  McshUcdU10AC0  idU10AC0chrstr -> idU10AC0chrsptr
+  McshUcdU10AC0  idU10AC0str -> idU10AC0sptr
+  McshUcdU10B00  idU10B00chrstr -> idU10B00chrsptr
+  McshUcdU10B00  idU10B00str -> idU10B00sptr
+  McshUcdU10B40  idU10B40chrstr -> idU10B40chrsptr
+  McshUcdU10B40  idU10B40str -> idU10B40sptr
+  McshUcdU10B60  idU10B60chrstr -> idU10B60chrsptr
+  McshUcdU10B60  idU10B60str -> idU10B60sptr
+  McshUcdU10B80  idU10B80chrstr -> idU10B80chrsptr
+  McshUcdU10B80  idU10B80str -> idU10B80sptr
+  McshUcdU10C00  idU10C00chrstr -> idU10C00chrsptr
+  McshUcdU10C00  idU10C00str -> idU10C00sptr
+  McshUcdU10C80  idU10C80chrstr -> idU10C80chrsptr
+  McshUcdU10C80  idU10C80str -> idU10C80sptr
+  McshUcdU10D00  idU10D00chrstr -> idU10D00chrsptr
+  McshUcdU10D00  idU10D00str -> idU10D00sptr
+  McshUcdU10E60  idU10E60chrstr -> idU10E60chrsptr
+  McshUcdU10E60  idU10E60str -> idU10E60sptr
+  McshUcdU10F00  idU10F00chrstr -> idU10F00chrsptr
+  McshUcdU10F00  idU10F00str -> idU10F00sptr
+  McshUcdU10F30  idU10F30chrstr -> idU10F30chrsptr
+  McshUcdU10F30  idU10F30str -> idU10F30sptr
+  McshUcdU1100  idU1100chrstr -> idU1100chrsptr
+  McshUcdU1100  idU1100str -> idU1100sptr
+  McshUcdU11000  idU11000chrstr -> idU11000chrsptr
+  McshUcdU11000  idU11000str -> idU11000sptr
+  McshUcdU11080  idU11080chrstr -> idU11080chrsptr
+  McshUcdU11080  idU11080str -> idU11080sptr
+  McshUcdU110D0  idU110D0chrstr -> idU110D0chrsptr
+  McshUcdU110D0  idU110D0str -> idU110D0sptr
+  McshUcdU11100  idU11100chrstr -> idU11100chrsptr
+  McshUcdU11100  idU11100str -> idU11100sptr
+  McshUcdU11150  idU11150chrstr -> idU11150chrsptr
+  McshUcdU11150  idU11150str -> idU11150sptr
+  McshUcdU11180  idU11180chrstr -> idU11180chrsptr
+  McshUcdU11180  idU11180str -> idU11180sptr
+  McshUcdU111E0  idU111E0chrstr -> idU111E0chrsptr
+  McshUcdU111E0  idU111E0str -> idU111E0sptr
+  McshUcdU11200  idU11200chrstr -> idU11200chrsptr
+  McshUcdU11200  idU11200str -> idU11200sptr
+  McshUcdU11280  idU11280chrstr -> idU11280chrsptr
+  McshUcdU11280  idU11280str -> idU11280sptr
+  McshUcdU112B0  idU112B0chrstr -> idU112B0chrsptr
+  McshUcdU112B0  idU112B0str -> idU112B0sptr
+  McshUcdU11300  idU11300chrstr -> idU11300chrsptr
+  McshUcdU11300  idU11300str -> idU11300sptr
+  McshUcdU11400  idU11400chrstr -> idU11400chrsptr
+  McshUcdU11400  idU11400str -> idU11400sptr
+  McshUcdU11480  idU11480chrstr -> idU11480chrsptr
+  McshUcdU11480  idU11480str -> idU11480sptr
+  McshUcdU11580  idU11580chrstr -> idU11580chrsptr
+  McshUcdU11580  idU11580str -> idU11580sptr
+  McshUcdU11600  idU11600chrstr -> idU11600chrsptr
+  McshUcdU11600  idU11600str -> idU11600sptr
+  McshUcdU11660  idU11660chrstr -> idU11660chrsptr
+  McshUcdU11660  idU11660str -> idU11660sptr
+  McshUcdU11680  idU11680chrstr -> idU11680chrsptr
+  McshUcdU11680  idU11680str -> idU11680sptr
+  McshUcdU11700  idU11700chrstr -> idU11700chrsptr
+  McshUcdU11700  idU11700str -> idU11700sptr
+  McshUcdU11800  idU11800chrstr -> idU11800chrsptr
+  McshUcdU11800  idU11800str -> idU11800sptr
+  McshUcdU118A0  idU118A0chrstr -> idU118A0chrsptr
+  McshUcdU118A0  idU118A0str -> idU118A0sptr
+  McshUcdU11A00  idU11A00chrstr -> idU11A00chrsptr
+  McshUcdU11A00  idU11A00str -> idU11A00sptr
+  McshUcdU11A50  idU11A50chrstr -> idU11A50chrsptr
+  McshUcdU11A50  idU11A50str -> idU11A50sptr
+  McshUcdU11AC0  idU11AC0chrstr -> idU11AC0chrsptr
+  McshUcdU11AC0  idU11AC0str -> idU11AC0sptr
+  McshUcdU11C00  idU11C00chrstr -> idU11C00chrsptr
+  McshUcdU11C00  idU11C00str -> idU11C00sptr
+  McshUcdU11C70  idU11C70chrstr -> idU11C70chrsptr
+  McshUcdU11C70  idU11C70str -> idU11C70sptr
+  McshUcdU11D00  idU11D00chrstr -> idU11D00chrsptr
+  McshUcdU11D00  idU11D00str -> idU11D00sptr
+  McshUcdU11D60  idU11D60chrstr -> idU11D60chrsptr
+  McshUcdU11D60  idU11D60str -> idU11D60sptr
+  McshUcdU11EE0  idU11EE0chrstr -> idU11EE0chrsptr
+  McshUcdU11EE0  idU11EE0str -> idU11EE0sptr
+  McshUcdU1200  idU1200chrstr -> idU1200chrsptr
+  McshUcdU1200  idU1200str -> idU1200sptr
+  McshUcdU12000  idU12000chrstr -> idU12000chrsptr
+  McshUcdU12000  idU12000str -> idU12000sptr
+  McshUcdU12400  idU12400chrstr -> idU12400chrsptr
+  McshUcdU12400  idU12400str -> idU12400sptr
+  McshUcdU12480  idU12480chrstr -> idU12480chrsptr
+  McshUcdU12480  idU12480str -> idU12480sptr
+  McshUcdU13000  idU13000chrstr -> idU13000chrsptr
+  McshUcdU13000  idU13000str -> idU13000sptr
+  McshUcdU1380  idU1380chrstr -> idU1380chrsptr
+  McshUcdU1380  idU1380str -> idU1380sptr
+  McshUcdU13A0  idU13A0chrstr -> idU13A0chrsptr
+  McshUcdU13A0  idU13A0str -> idU13A0sptr
+  McshUcdU1400  idU1400chrstr -> idU1400chrsptr
+  McshUcdU1400  idU1400str -> idU1400sptr
+  McshUcdU14400  idU14400chrstr -> idU14400chrsptr
+  McshUcdU14400  idU14400str -> idU14400sptr
+  McshUcdU1680  idU1680chrstr -> idU1680chrsptr
+  McshUcdU1680  idU1680str -> idU1680sptr
+  McshUcdU16800  idU16800chrstr -> idU16800chrsptr
+  McshUcdU16800  idU16800str -> idU16800sptr
+  McshUcdU16A0  idU16A0chrstr -> idU16A0chrsptr
+  McshUcdU16A0  idU16A0str -> idU16A0sptr
+  McshUcdU16A40  idU16A40chrstr -> idU16A40chrsptr
+  McshUcdU16A40  idU16A40str -> idU16A40sptr
+  McshUcdU16AD0  idU16AD0chrstr -> idU16AD0chrsptr
+  McshUcdU16AD0  idU16AD0str -> idU16AD0sptr
+  McshUcdU16B00  idU16B00chrstr -> idU16B00chrsptr
+  McshUcdU16B00  idU16B00str -> idU16B00sptr
+  McshUcdU16E40  idU16E40chrstr -> idU16E40chrsptr
+  McshUcdU16E40  idU16E40str -> idU16E40sptr
+  McshUcdU16F00  idU16F00chrstr -> idU16F00chrsptr
+  McshUcdU16F00  idU16F00str -> idU16F00sptr
+  McshUcdU16FE0  idU16FE0chrstr -> idU16FE0chrsptr
+  McshUcdU16FE0  idU16FE0str -> idU16FE0sptr
+  McshUcdU1700  idU1700chrstr -> idU1700chrsptr
+  McshUcdU1700  idU1700str -> idU1700sptr
+  McshUcdU17000  idU17000str -> idU17000sptr
+  McshUcdU1720  idU1720chrstr -> idU1720chrsptr
+  McshUcdU1720  idU1720str -> idU1720sptr
+  McshUcdU1740  idU1740chrstr -> idU1740chrsptr
+  McshUcdU1740  idU1740str -> idU1740sptr
+  McshUcdU1760  idU1760chrstr -> idU1760chrsptr
+  McshUcdU1760  idU1760str -> idU1760sptr
+  McshUcdU1780  idU1780chrstr -> idU1780chrsptr
+  McshUcdU1780  idU1780str -> idU1780sptr
+  McshUcdU1800  idU1800chrstr -> idU1800chrsptr
+  McshUcdU1800  idU1800str -> idU1800sptr
+  McshUcdU18800  idU18800chrstr -> idU18800chrsptr
+  McshUcdU18800  idU18800str -> idU18800sptr
+  McshUcdU18B0  idU18B0chrstr -> idU18B0chrsptr
+  McshUcdU18B0  idU18B0str -> idU18B0sptr
+  McshUcdU1900  idU1900chrstr -> idU1900chrsptr
+  McshUcdU1900  idU1900str -> idU1900sptr
+  McshUcdU1950  idU1950chrstr -> idU1950chrsptr
+  McshUcdU1950  idU1950str -> idU1950sptr
+  McshUcdU1980  idU1980chrstr -> idU1980chrsptr
+  McshUcdU1980  idU1980str -> idU1980sptr
+  McshUcdU19E0  idU19E0chrstr -> idU19E0chrsptr
+  McshUcdU19E0  idU19E0str -> idU19E0sptr
+  McshUcdU1A00  idU1A00chrstr -> idU1A00chrsptr
+  McshUcdU1A00  idU1A00str -> idU1A00sptr
+  McshUcdU1A20  idU1A20chrstr -> idU1A20chrsptr
+  McshUcdU1A20  idU1A20str -> idU1A20sptr
+  McshUcdU1AB0  idU1AB0chrstr -> idU1AB0chrsptr
+  McshUcdU1AB0  idU1AB0str -> idU1AB0sptr
+  McshUcdU1B00  idU1B00chrstr -> idU1B00chrsptr
+  McshUcdU1B00  idU1B00str -> idU1B00sptr
+  McshUcdU1B000  idU1B000chrstr -> idU1B000chrsptr
+  McshUcdU1B000  idU1B000str -> idU1B000sptr
+  McshUcdU1B100  idU1B100chrstr -> idU1B100chrsptr
+  McshUcdU1B100  idU1B100str -> idU1B100sptr
+  McshUcdU1B170  idU1B170chrstr -> idU1B170chrsptr
+  McshUcdU1B170  idU1B170str -> idU1B170sptr
+  McshUcdU1B80  idU1B80chrstr -> idU1B80chrsptr
+  McshUcdU1B80  idU1B80str -> idU1B80sptr
+  McshUcdU1BC0  idU1BC0chrstr -> idU1BC0chrsptr
+  McshUcdU1BC0  idU1BC0str -> idU1BC0sptr
+  McshUcdU1BC00  idU1BC00chrstr -> idU1BC00chrsptr
+  McshUcdU1BC00  idU1BC00str -> idU1BC00sptr
+  McshUcdU1BCA0  idU1BCA0chrstr -> idU1BCA0chrsptr
+  McshUcdU1BCA0  idU1BCA0str -> idU1BCA0sptr
+  McshUcdU1C00  idU1C00chrstr -> idU1C00chrsptr
+  McshUcdU1C00  idU1C00str -> idU1C00sptr
+  McshUcdU1C50  idU1C50chrstr -> idU1C50chrsptr
+  McshUcdU1C50  idU1C50str -> idU1C50sptr
+  McshUcdU1C80  idU1C80chrstr -> idU1C80chrsptr
+  McshUcdU1C80  idU1C80str -> idU1C80sptr
+  McshUcdU1C90  idU1C90chrstr -> idU1C90chrsptr
+  McshUcdU1C90  idU1C90str -> idU1C90sptr
+  McshUcdU1CC0  idU1CC0chrstr -> idU1CC0chrsptr
+  McshUcdU1CC0  idU1CC0str -> idU1CC0sptr
+  McshUcdU1CD0  idU1CD0chrstr -> idU1CD0chrsptr
+  McshUcdU1CD0  idU1CD0str -> idU1CD0sptr
+  McshUcdU1D00  idU1D00chrstr -> idU1D00chrsptr
+  McshUcdU1D00  idU1D00str -> idU1D00sptr
+  McshUcdU1D000  idU1D000chrstr -> idU1D000chrsptr
+  McshUcdU1D000  idU1D000str -> idU1D000sptr
+  McshUcdU1D100  idU1D100chrstr -> idU1D100chrsptr
+  McshUcdU1D100  idU1D100str -> idU1D100sptr
+  McshUcdU1D200  idU1D200chrstr -> idU1D200chrsptr
+  McshUcdU1D200  idU1D200str -> idU1D200sptr
+  McshUcdU1D2E0  idU1D2E0chrstr -> idU1D2E0chrsptr
+  McshUcdU1D2E0  idU1D2E0str -> idU1D2E0sptr
+  McshUcdU1D300  idU1D300chrstr -> idU1D300chrsptr
+  McshUcdU1D300  idU1D300str -> idU1D300sptr
+  McshUcdU1D360  idU1D360chrstr -> idU1D360chrsptr
+  McshUcdU1D360  idU1D360str -> idU1D360sptr
+  McshUcdU1D400  idU1D400chrstr -> idU1D400chrsptr
+  McshUcdU1D400  idU1D400str -> idU1D400sptr
+  McshUcdU1D80  idU1D80chrstr -> idU1D80chrsptr
+  McshUcdU1D80  idU1D80str -> idU1D80sptr
+  McshUcdU1D800  idU1D800chrstr -> idU1D800chrsptr
+  McshUcdU1D800  idU1D800str -> idU1D800sptr
+  McshUcdU1DC0  idU1DC0chrstr -> idU1DC0chrsptr
+  McshUcdU1DC0  idU1DC0str -> idU1DC0sptr
+  McshUcdU1E00  idU1E00chrstr -> idU1E00chrsptr
+  McshUcdU1E00  idU1E00str -> idU1E00sptr
+  McshUcdU1E000  idU1E000chrstr -> idU1E000chrsptr
+  McshUcdU1E000  idU1E000str -> idU1E000sptr
+  McshUcdU1E800  idU1E800chrstr -> idU1E800chrsptr
+  McshUcdU1E800  idU1E800str -> idU1E800sptr
+  McshUcdU1E900  idU1E900chrstr -> idU1E900chrsptr
+  McshUcdU1E900  idU1E900str -> idU1E900sptr
+  McshUcdU1EC70  idU1EC70chrstr -> idU1EC70chrsptr
+  McshUcdU1EC70  idU1EC70str -> idU1EC70sptr
+  McshUcdU1EE00  idU1EE00chrstr -> idU1EE00chrsptr
+  McshUcdU1EE00  idU1EE00str -> idU1EE00sptr
+  McshUcdU1F00  idU1F00chrstr -> idU1F00chrsptr
+  McshUcdU1F00  idU1F00str -> idU1F00sptr
+  McshUcdU1F000  idU1F000chrstr -> idU1F000chrsptr
+  McshUcdU1F000  idU1F000str -> idU1F000sptr
+  McshUcdU1F030  idU1F030chrstr -> idU1F030chrsptr
+  McshUcdU1F030  idU1F030str -> idU1F030sptr
+  McshUcdU1F0A0  idU1F0A0chrstr -> idU1F0A0chrsptr
+  McshUcdU1F0A0  idU1F0A0str -> idU1F0A0sptr
+  McshUcdU1F100  idU1F100chrstr -> idU1F100chrsptr
+  McshUcdU1F100  idU1F100str -> idU1F100sptr
+  McshUcdU1F200  idU1F200chrstr -> idU1F200chrsptr
+  McshUcdU1F200  idU1F200str -> idU1F200sptr
+  McshUcdU1F300  idU1F300chrstr -> idU1F300chrsptr
+  McshUcdU1F300  idU1F300str -> idU1F300sptr
+  McshUcdU1F600  idU1F600chrstr -> idU1F600chrsptr
+  McshUcdU1F600  idU1F600str -> idU1F600sptr
+  McshUcdU1F650  idU1F650chrstr -> idU1F650chrsptr
+  McshUcdU1F650  idU1F650str -> idU1F650sptr
+  McshUcdU1F680  idU1F680chrstr -> idU1F680chrsptr
+  McshUcdU1F680  idU1F680str -> idU1F680sptr
+  McshUcdU1F700  idU1F700chrstr -> idU1F700chrsptr
+  McshUcdU1F700  idU1F700str -> idU1F700sptr
+  McshUcdU1F780  idU1F780chrstr -> idU1F780chrsptr
+  McshUcdU1F780  idU1F780str -> idU1F780sptr
+  McshUcdU1F800  idU1F800chrstr -> idU1F800chrsptr
+  McshUcdU1F800  idU1F800str -> idU1F800sptr
+  McshUcdU1F900  idU1F900chrstr -> idU1F900chrsptr
+  McshUcdU1F900  idU1F900str -> idU1F900sptr
+  McshUcdU1FA00  idU1FA00chrstr -> idU1FA00chrsptr
+  McshUcdU1FA00  idU1FA00str -> idU1FA00sptr
+  McshUcdU2000  idU2000chrstr -> idU2000chrsptr
+  McshUcdU2000  idU2000str -> idU2000sptr
+  McshUcdU20000  idU20000str -> idU20000sptr
+  McshUcdU2070  idU2070chrstr -> idU2070chrsptr
+  McshUcdU2070  idU2070str -> idU2070sptr
+  McshUcdU20A0  idU20A0chrstr -> idU20A0chrsptr
+  McshUcdU20A0  idU20A0str -> idU20A0sptr
+  McshUcdU20D0  idU20D0chrstr -> idU20D0chrsptr
+  McshUcdU20D0  idU20D0str -> idU20D0sptr
+  McshUcdU2100  idU2100chrstr -> idU2100chrsptr
+  McshUcdU2100  idU2100str -> idU2100sptr
+  McshUcdU2150  idU2150chrstr -> idU2150chrsptr
+  McshUcdU2150  idU2150str -> idU2150sptr
+  McshUcdU2190  idU2190chrstr -> idU2190chrsptr
+  McshUcdU2190  idU2190str -> idU2190sptr
+  McshUcdU2200  idU2200chrstr -> idU2200chrsptr
+  McshUcdU2200  idU2200str -> idU2200sptr
+  McshUcdU2300  idU2300chrstr -> idU2300chrsptr
+  McshUcdU2300  idU2300str -> idU2300sptr
+  McshUcdU2400  idU2400chrstr -> idU2400chrsptr
+  McshUcdU2400  idU2400str -> idU2400sptr
+  McshUcdU2440  idU2440chrstr -> idU2440chrsptr
+  McshUcdU2440  idU2440str -> idU2440sptr
+  McshUcdU2460  idU2460chrstr -> idU2460chrsptr
+  McshUcdU2460  idU2460str -> idU2460sptr
+  McshUcdU2500  idU2500chrstr -> idU2500chrsptr
+  McshUcdU2500  idU2500str -> idU2500sptr
+  McshUcdU2580  idU2580chrstr -> idU2580chrsptr
+  McshUcdU2580  idU2580str -> idU2580sptr
+  McshUcdU25A0  idU25A0chrstr -> idU25A0chrsptr
+  McshUcdU25A0  idU25A0str -> idU25A0sptr
+  McshUcdU2600  idU2600chrstr -> idU2600chrsptr
+  McshUcdU2600  idU2600str -> idU2600sptr
+  McshUcdU2700  idU2700chrstr -> idU2700chrsptr
+  McshUcdU2700  idU2700str -> idU2700sptr
+  McshUcdU27C0  idU27C0chrstr -> idU27C0chrsptr
+  McshUcdU27C0  idU27C0str -> idU27C0sptr
+  McshUcdU27F0  idU27F0chrstr -> idU27F0chrsptr
+  McshUcdU27F0  idU27F0str -> idU27F0sptr
+  McshUcdU2800  idU2800chrstr -> idU2800chrsptr
+  McshUcdU2800  idU2800str -> idU2800sptr
+  McshUcdU2900  idU2900chrstr -> idU2900chrsptr
+  McshUcdU2900  idU2900str -> idU2900sptr
+  McshUcdU2980  idU2980chrstr -> idU2980chrsptr
+  McshUcdU2980  idU2980str -> idU2980sptr
+  McshUcdU2A00  idU2A00chrstr -> idU2A00chrsptr
+  McshUcdU2A00  idU2A00str -> idU2A00sptr
+  McshUcdU2A700  idU2A700str -> idU2A700sptr
+  McshUcdU2B00  idU2B00chrstr -> idU2B00chrsptr
+  McshUcdU2B00  idU2B00str -> idU2B00sptr
+  McshUcdU2B740  idU2B740str -> idU2B740sptr
+  McshUcdU2B820  idU2B820str -> idU2B820sptr
+  McshUcdU2C00  idU2C00chrstr -> idU2C00chrsptr
+  McshUcdU2C00  idU2C00str -> idU2C00sptr
+  McshUcdU2C60  idU2C60chrstr -> idU2C60chrsptr
+  McshUcdU2C60  idU2C60str -> idU2C60sptr
+  McshUcdU2C80  idU2C80chrstr -> idU2C80chrsptr
+  McshUcdU2C80  idU2C80str -> idU2C80sptr
+  McshUcdU2CEB0  idU2CEB0str -> idU2CEB0sptr
+  McshUcdU2D00  idU2D00chrstr -> idU2D00chrsptr
+  McshUcdU2D00  idU2D00str -> idU2D00sptr
+  McshUcdU2D30  idU2D30chrstr -> idU2D30chrsptr
+  McshUcdU2D30  idU2D30str -> idU2D30sptr
+  McshUcdU2D80  idU2D80chrstr -> idU2D80chrsptr
+  McshUcdU2D80  idU2D80str -> idU2D80sptr
+  McshUcdU2DE0  idU2DE0chrstr -> idU2DE0chrsptr
+  McshUcdU2DE0  idU2DE0str -> idU2DE0sptr
+  McshUcdU2E00  idU2E00chrstr -> idU2E00chrsptr
+  McshUcdU2E00  idU2E00str -> idU2E00sptr
+  McshUcdU2E80  idU2E80chrstr -> idU2E80chrsptr
+  McshUcdU2E80  idU2E80str -> idU2E80sptr
+  McshUcdU2F00  idU2F00chrstr -> idU2F00chrsptr
+  McshUcdU2F00  idU2F00str -> idU2F00sptr
+  McshUcdU2F800  idU2F800chrstr -> idU2F800chrsptr
+  McshUcdU2F800  idU2F800str -> idU2F800sptr
+  McshUcdU2FF0  idU2FF0chrstr -> idU2FF0chrsptr
+  McshUcdU2FF0  idU2FF0str -> idU2FF0sptr
+  McshUcdU3000  idU3000chrstr -> idU3000chrsptr
+  McshUcdU3000  idU3000str -> idU3000sptr
+  McshUcdU3040  idU3040chrstr -> idU3040chrsptr
+  McshUcdU3040  idU3040str -> idU3040sptr
+  McshUcdU30A0  idU30A0chrstr -> idU30A0chrsptr
+  McshUcdU30A0  idU30A0str -> idU30A0sptr
+  McshUcdU3100  idU3100chrstr -> idU3100chrsptr
+  McshUcdU3100  idU3100str -> idU3100sptr
+  McshUcdU3130  idU3130chrstr -> idU3130chrsptr
+  McshUcdU3130  idU3130str -> idU3130sptr
+  McshUcdU3190  idU3190chrstr -> idU3190chrsptr
+  McshUcdU3190  idU3190str -> idU3190sptr
+  McshUcdU31A0  idU31A0chrstr -> idU31A0chrsptr
+  McshUcdU31A0  idU31A0str -> idU31A0sptr
+  McshUcdU31C0  idU31C0chrstr -> idU31C0chrsptr
+  McshUcdU31C0  idU31C0str -> idU31C0sptr
+  McshUcdU31F0  idU31F0chrstr -> idU31F0chrsptr
+  McshUcdU31F0  idU31F0str -> idU31F0sptr
+  McshUcdU3200  idU3200chrstr -> idU3200chrsptr
+  McshUcdU3200  idU3200str -> idU3200sptr
+  McshUcdU3300  idU3300chrstr -> idU3300chrsptr
+  McshUcdU3300  idU3300str -> idU3300sptr
+  McshUcdU3400  idU3400str -> idU3400sptr
+  McshUcdU4DC0  idU4DC0chrstr -> idU4DC0chrsptr
+  McshUcdU4DC0  idU4DC0str -> idU4DC0sptr
+  McshUcdU4E00  idU4E00str -> idU4E00sptr
+  McshUcdUA000  idUA000chrstr -> idUA000chrsptr
+  McshUcdUA000  idUA000str -> idUA000sptr
+  McshUcdUA490  idUA490chrstr -> idUA490chrsptr
+  McshUcdUA490  idUA490str -> idUA490sptr
+  McshUcdUA4D0  idUA4D0chrstr -> idUA4D0chrsptr
+  McshUcdUA4D0  idUA4D0str -> idUA4D0sptr
+  McshUcdUA500  idUA500chrstr -> idUA500chrsptr
+  McshUcdUA500  idUA500str -> idUA500sptr
+  McshUcdUA640  idUA640chrstr -> idUA640chrsptr
+  McshUcdUA640  idUA640str -> idUA640sptr
+  McshUcdUA6A0  idUA6A0chrstr -> idUA6A0chrsptr
+  McshUcdUA6A0  idUA6A0str -> idUA6A0sptr
+  McshUcdUA700  idUA700chrstr -> idUA700chrsptr
+  McshUcdUA700  idUA700str -> idUA700sptr
+  McshUcdUA720  idUA720chrstr -> idUA720chrsptr
+  McshUcdUA720  idUA720str -> idUA720sptr
+  McshUcdUA800  idUA800chrstr -> idUA800chrsptr
+  McshUcdUA800  idUA800str -> idUA800sptr
+  McshUcdUA830  idUA830chrstr -> idUA830chrsptr
+  McshUcdUA830  idUA830str -> idUA830sptr
+  McshUcdUA840  idUA840chrstr -> idUA840chrsptr
+  McshUcdUA840  idUA840str -> idUA840sptr
+  McshUcdUA880  idUA880chrstr -> idUA880chrsptr
+  McshUcdUA880  idUA880str -> idUA880sptr
+  McshUcdUA8E0  idUA8E0chrstr -> idUA8E0chrsptr
+  McshUcdUA8E0  idUA8E0str -> idUA8E0sptr
+  McshUcdUA900  idUA900chrstr -> idUA900chrsptr
+  McshUcdUA900  idUA900str -> idUA900sptr
+  McshUcdUA930  idUA930chrstr -> idUA930chrsptr
+  McshUcdUA930  idUA930str -> idUA930sptr
+  McshUcdUA960  idUA960chrstr -> idUA960chrsptr
+  McshUcdUA960  idUA960str -> idUA960sptr
+  McshUcdUA980  idUA980chrstr -> idUA980chrsptr
+  McshUcdUA980  idUA980str -> idUA980sptr
+  McshUcdUA9E0  idUA9E0chrstr -> idUA9E0chrsptr
+  McshUcdUA9E0  idUA9E0str -> idUA9E0sptr
+  McshUcdUAA00  idUAA00chrstr -> idUAA00chrsptr
+  McshUcdUAA00  idUAA00str -> idUAA00sptr
+  McshUcdUAA60  idUAA60chrstr -> idUAA60chrsptr
+  McshUcdUAA60  idUAA60str -> idUAA60sptr
+  McshUcdUAA80  idUAA80chrstr -> idUAA80chrsptr
+  McshUcdUAA80  idUAA80str -> idUAA80sptr
+  McshUcdUAAE0  idUAAE0chrstr -> idUAAE0chrsptr
+  McshUcdUAAE0  idUAAE0str -> idUAAE0sptr
+  McshUcdUAB00  idUAB00chrstr -> idUAB00chrsptr
+  McshUcdUAB00  idUAB00str -> idUAB00sptr
+  McshUcdUAB30  idUAB30chrstr -> idUAB30chrsptr
+  McshUcdUAB30  idUAB30str -> idUAB30sptr
+  McshUcdUAB70  idUAB70chrstr -> idUAB70chrsptr
+  McshUcdUAB70  idUAB70str -> idUAB70sptr
+  McshUcdUABC0  idUABC0chrstr -> idUABC0chrsptr
+  McshUcdUABC0  idUABC0str -> idUABC0sptr
+  McshUcdUAC00  idUAC00str -> idUAC00sptr
+  McshUcdUD7B0  idUD7B0chrstr -> idUD7B0chrsptr
+  McshUcdUD7B0  idUD7B0str -> idUD7B0sptr
+  McshUcdUD800  idUD800str -> idUD800sptr
+  McshUcdUDB80  idUDB80str -> idUDB80sptr
+  McshUcdUDC00  idUDC00str -> idUDC00sptr
+  McshUcdUE000  idUE000str -> idUE000sptr
+  McshUcdUE0000  idUE0000chrstr -> idUE0000chrsptr
+  McshUcdUE0000  idUE0000str -> idUE0000sptr
+  McshUcdUE0100  idUE0100chrstr -> idUE0100chrsptr
+  McshUcdUE0100  idUE0100str -> idUE0100sptr
+  McshUcdUF0000  idUF0000str -> idUF0000sptr
+  McshUcdUF900  idUF900chrstr -> idUF900chrsptr
+  McshUcdUF900  idUF900str -> idUF900sptr
+  McshUcdUFB00  idUFB00chrstr -> idUFB00chrsptr
+  McshUcdUFB00  idUFB00str -> idUFB00sptr
+  McshUcdUFB50  idUFB50chrstr -> idUFB50chrsptr
+  McshUcdUFB50  idUFB50str -> idUFB50sptr
+  McshUcdUFE00  idUFE00chrstr -> idUFE00chrsptr
+  McshUcdUFE00  idUFE00str -> idUFE00sptr
+  McshUcdUFE10  idUFE10chrstr -> idUFE10chrsptr
+  McshUcdUFE10  idUFE10str -> idUFE10sptr
+  McshUcdUFE20  idUFE20chrstr -> idUFE20chrsptr
+  McshUcdUFE20  idUFE20str -> idUFE20sptr
+  McshUcdUFE30  idUFE30chrstr -> idUFE30chrsptr
+  McshUcdUFE30  idUFE30str -> idUFE30sptr
+  McshUcdUFE50  idUFE50chrstr -> idUFE50chrsptr
+  McshUcdUFE50  idUFE50str -> idUFE50sptr
+  McshUcdUFE70  idUFE70chrstr -> idUFE70chrsptr
+  McshUcdUFE70  idUFE70str -> idUFE70sptr
+  McshUcdUFF00  idUFF00chrstr -> idUFF00chrsptr
+  McshUcdUFF00  idUFF00str -> idUFF00sptr
+  McshUcdUFFF0  idUFFF0chrstr -> idUFFF0chrsptr
+  McshUcdUFFF0  idUFFF0str -> idUFFF0sptr
+  McshTchInf000002  idTchInfatt002str -> idTchInfatt002sptr
+  McshTchInf000002  idTchInfatt004Sctrstr -> idTchInfatt004Sctrsptr
+  McshTchInf000002  idTchInfstr -> idTchInfsptr
+  McshTchInf000002  idTchInf003str -> idTchInf003sptr
+  McshTchInf000002  idTchInf005str -> idTchInf005sptr
+  McshTchInf000002  idTchInf024str -> idTchInf024sptr
+  McshTchInf000002  idTchInf023str -> idTchInf023sptr
+  McshTchInf000003  idCmratt001str -> idCmratt001sptr
+  McshTchInf000003  idCmrpcsrstr -> idCmrpcsrsptr
+  McshTchInf000003  idCmrstrgstr -> idCmrstrgsptr
+  McshTchInf000003  idCmratt002str -> idCmratt002sptr
+  McshTchInf000003  idCmratt003str -> idCmratt003sptr
+  McshTchInf000003  idCmratt004Softstr -> idCmratt004Softsptr
+  McshTchInf000003  idCmrdongstr -> idCmrdongsptr
+  McshTchInf000003  idCmrstr -> idCmrsptr
+  McshTchInf000003  idCmrChipstr -> idCmrChipsptr
+  McshTchInf000003  idCmrPgmlstr -> idCmrPgmlsptr
+  McshTchInf000003  idCmrRealstr -> idCmrRealsptr
+  McshTchInf000003  idCmrVrtlstr -> idCmrVrtlsptr
+  McshTchInf000003  idCmr003str -> idCmr003sptr
+  McshTchInf000004  idTchFinstr -> idTchFinsptr
+  McshTchInf000005  idLCmprnodestr -> idLCmprnodesptr
+  McshTchInf000005  idLCmprstr -> idLCmprsptr
+  McshTchInf000005  idLCmpr002str -> idLCmpr002sptr
+  McshTchInf000005  idLCdatstr -> idLCdatsptr
+  McshTchInf000005  idLtdocinptstr -> idLtdocinptsptr
+  McshTchInf000005  idLtdocotptstr -> idLtdocotptsptr
+  McshTchInf000005  idLtdocstr -> idLtdocsptr
+  McshTchInf000005  idLtdocMrkpstr -> idLtdocMrkpsptr
+  McshTchInf000005  idLmrkpstr -> idLmrkpsptr
+  McshTchInf000005  idLfilestr -> idLfilesptr
+  McshTchInf000006  idLCpgmalgnodestr -> idLCpgmalgnodesptr
+  McshTchInf000006  idLCpgmalgwrdstr -> idLCpgmalgwrdsptr
+  McshTchInf000006  idLCpgmalgsctnstr -> idLCpgmalgsctnsptr
+  McshTchInf000006  idLCpgmalgcodestr -> idLCpgmalgcodesptr
+  McshTchInf000006  idLCpgmalgdongstr -> idLCpgmalgdongsptr
+  McshTchInf000006  idLCpgmalgstr -> idLCpgmalgsptr
+  McshTchInf000006  idLCpgmalgLbrstr -> idLCpgmalgLbrsptr
+  McshTchInf000006  idLCpgmtoolstr -> idLCpgmtoolsptr
+  McshTchInf000006  idLCpgmdongstr -> idLCpgmdongsptr
+  McshTchInf000006  idLCpgmstr -> idLCpgmsptr
+  McshTchInf000006  idLSrcdalgnodestr -> idLSrcdalgnodesptr
+  McshTchInf000006  idLSrcdwrdstr -> idLSrcdwrdsptr
+  McshTchInf000006  idLSrcdwrdIdfrnmcvnstr -> idLSrcdwrdIdfrnmcvnsptr
+  McshTchInf000006  idLSrcdsuntstr -> idLSrcdsuntsptr
+  McshTchInf000006  idLSrcdsuntChstr -> idLSrcdsuntChsptr
+  McshTchInf000006  idLSrcdsuntSstr -> idLSrcdsuntSsptr
+  McshTchInf000006  idLSrcdsuntNstr -> idLSrcdsuntNsptr
+  McshTchInf000006  idLSrcdsuntFstr -> idLSrcdsuntFsptr
+  McshTchInf000006  idLSrcdsuntFOprstr -> idLSrcdsuntFOprsptr
+  McshTchInf000006  idLSrcdsntcstr -> idLSrcdsntcsptr
+  McshTchInf000006  idLSrcdsntcDefstr -> idLSrcdsntcDefsptr
+  McshTchInf000006  idLSrcdsctnstr -> idLSrcdsctnsptr
+  McshTchInf000006  idLSrcdalgstr -> idLSrcdalgsptr
+  McshTchInf000006  idLSrcdstr -> idLSrcdsptr
+  McshTchInf000007  idLCnknttulstr -> idLCnknttulsptr
+  McshTchInf000007  idLCnkntmgrbldgstr -> idLCnkntmgrbldgsptr
+  McshTchInf000007  idLCnkntmgrthkgstr -> idLCnkntmgrthkgsptr
+  McshTchInf000007  idLCnkntmgrstr -> idLCnkntmgrsptr
+  McshTchInf000007  idLCnkntstr -> idLCnkntsptr
+  McshTchInf000007  idLCnknt034str -> idLCnknt034sptr
+  McshTchInf000007  idLCnknt039str -> idLCnknt039sptr
+  McshTchInf000007  idLCnknt037mngrstr -> idLCnknt037mngrsptr
+  McshTchInf000007  idLCnknt037str -> idLCnknt037sptr
+  McshTchInf000007  idLCnknt022str -> idLCnknt022sptr
+  McshTchInf000007  idLxmlgoschmstr -> idLxmlgoschmsptr
+  McshTchInf000007  idLxmlgXsdstr -> idLxmlgXsdsptr
+  McshTchInf000007  idLxmlgstr -> idLxmlgsptr
+  McshTchInf000008  idLHitparcnodstr -> idLHitparcnodsptr
+  McshTchInf000008  idLHitparcnodnbrstr -> idLHitparcnodnbrsptr
+  McshTchInf000008  idLHitptctdstr -> idLHitptctdsptr
+  McshTchInf000008  idLHitptctdScnstr -> idLHitptctdScnsptr
+  McshTchInf000008  idLHitpdutstr -> idLHitpdutsptr
+  McshTchInf000008  idLHitpwbpgstr -> idLHitpwbpgsptr
+  McshTchInf000008  idLHitpwbpLawstr -> idLHitpwbpLawsptr
+  McshTchInf000008  idLHitpdongstr -> idLHitpdongsptr
+  McshTchInf000008  idLHitpstr -> idLHitpsptr
+  McshTchInf000009  idLMcshuserHmnstr -> idLMcshuserHmnsptr
+  McshTchInf000009  idMcsHitpnamestr -> idMcsHitpnamesptr
+  McshTchInf000009  idMcsHitpnameIdstr -> idMcsHitpnameIdsptr
+  McshTchInf000009  idMcsHitpnameMainstr -> idMcsHitpnameMainsptr
+  McshTchInf000009  idMcsHitpdtstr -> idMcsHitpdtsptr
+  McshTchInf000009  idMcsHitpstr -> idMcsHitpsptr
+  McshTchInf000009  idMcsHitpFilNstr -> idMcsHitpFilNsptr
+  McshTchInf000009  idMcsHitp001str -> idMcsHitp001sptr
+  McshTchInf000009  idMcshParastr -> idMcshParasptr
+  McshTchInf000009  idLMcshwvdnixl4jfstr -> idLMcshwvdnixl4jfsptr
+  McshTchInf000009  idLMcshwvstr -> idLMcshwvsptr
+  McshTchInf000009  idLMcshmngrfilestr -> idLMcshmngrfilesptr
+  McshTchInf000009  idLMcshmngrvldgstr -> idLMcshmngrvldgsptr
+  McshTchInf000009  idLMcshmngrvldgHitprulestr -> idLMcshmngrvldgHitprulesptr
+  McshTchInf000009  idLMcshmngrvldgMcshrulestr -> idLMcshmngrvldgMcshrulesptr
+  McshTchInf000009  idLMcshstr -> idLMcshsptr
+  McshTchInf000010  idLJsgnsutstr -> idLJsgnsutsptr
+  McshTchInf000010  idLJsgnsutRfrdstr -> idLJsgnsutRfrdsptr
+  McshTchInf000010  idLJsgnastr -> idLJsgnasptr
+  McshTchInf000010  idLJsgnbstr -> idLJsgnbsptr
+  McshTchInf000010  idLJsgnfstr -> idLJsgnfsptr
+  McshTchInf000010  idLJsgnfOprstr -> idLJsgnfOprsptr
+  McshTchInf000010  idLJsgnfOprBnrstr -> idLJsgnfOprBnrsptr
+  McshTchInf000010  idLJsgnfOprTnrstr -> idLJsgnfOprTnrsptr
+  McshTchInf000010  idLJsgnmstr -> idLJsgnmsptr
+  McshTchInf000010  idLJsgnnstr -> idLJsgnnsptr
+  McshTchInf000010  idLJsgnombrstr -> idLJsgnombrsptr
+  McshTchInf000010  idLJsgnostr -> idLJsgnosptr
+  McshTchInf000010  idLJsgnrstr -> idLJsgnrsptr
+  McshTchInf000010  idLJsgnsstr -> idLJsgnssptr
+  McshTchInf000010  idLJsgnmwombrstr -> idLJsgnmwombrsptr
+  McshTchInf000010  idLJsgnapiwptrstr -> idLJsgnapiwptrsptr
+  McshTchInf000010  idLJsgnObjectmebrstr -> idLJsgnObjectmebrsptr
+  McshTchInf000010  idLJsgnmgostr -> idLJsgnmgosptr
+  McshTchInf000010  idLJsgnapistr -> idLJsgnapisptr
+  McshTchInf000010  idLJsgnapiNtvstr -> idLJsgnapiNtvsptr
+  McshTchInf000010  idLJsgnstcstr -> idLJsgnstcsptr
+  McshTchInf000010  idLJsgnstcDfnstr -> idLJsgnstcDfnsptr
+  McshTchInf000010  idLJsgndefRefstr -> idLJsgndefRefsptr
+  McshTchInf000010  idLJsgnstcLoopstr -> idLJsgnstcLoopsptr
+  McshTchInf000010  idLJsgnalgstr -> idLJsgnalgsptr
+  McshTchInf000010  idLJsgnalgSarrstr -> idLJsgnalgSarrsptr
+  McshTchInf000010  idLJsgnalgDatstr -> idLJsgnalgDatsptr
+  McshTchInf000010  idLJsgnalgObtstr -> idLJsgnalgObtsptr
+  McshTchInf000010  idLJsgnlbrstr -> idLJsgnlbrsptr
+  McshTchInf000010  idLJsgnlbrCrptstr -> idLJsgnlbrCrptsptr
+  McshTchInf000010  idLJsgnpgmstr -> idLJsgnpgmsptr
+  McshTchInf000010  idLJsgnpkgstr -> idLJsgnpkgsptr
+  McshTchInf000010  idLJsgnspecstr -> idLJsgnspecsptr
+  McshTchInf000010  idLjestr -> idLjesptr
+  McshTchInf000010  idLJsgntolstr -> idLJsgntolsptr
+  McshTchInf000010  idLJsgntolRtestr -> idLJsgntolRtesptr
+  McshTchInf000010  idLJsgntolEgnstr -> idLJsgntolEgnsptr
+  McshTchInf000010  idLJsgntolCdanlstr -> idLJsgntolCdanlsptr
+  McshTchInf000010  idLJsgntolPkgstr -> idLJsgntolPkgsptr
+  McshTchInf000010  idLJsgntolTaskstr -> idLJsgntolTasksptr
+  McshTchInf000010  idLJsgnstr -> idLJsgnsptr
+  McshTchInf000010  idLJsdtstr -> idLJsdtsptr
+  McshTchInf000011  idLJsbrarcstr -> idLJsbrarcsptr
+  McshTchInf000011  idLJsbrsutstr -> idLJsbrsutsptr
+  McshTchInf000011  idLJsbrfstr -> idLJsbrfsptr
+  McshTchInf000011  idLJsbrostr -> idLJsbrosptr
+  McshTchInf000011  idLJsbrapistr -> idLJsbrapisptr
+  McshTchInf000011  idLJsbrmwostr -> idLJsbrmwosptr
+  McshTchInf000011  idLJsbralgstr -> idLJsbralgsptr
+  McshTchInf000011  idLJsbrlbrstr -> idLJsbrlbrsptr
+  McshTchInf000011  idLJsbrpgmstr -> idLJsbrpgmsptr
+  McshTchInf000011  idLJsbralgEvtstr -> idLJsbralgEvtsptr
+  McshTchInf000011  idLJsbrevalstr -> idLJsbrevalsptr
+  McshTchInf000011  idLJsbrtolstr -> idLJsbrtolsptr
+  McshTchInf000011  idLJsbrbsregnLytstr -> idLJsbrbsregnLytsptr
+  McshTchInf000011  idLJsbrbsregnJsstr -> idLJsbrbsregnJssptr
+  McshTchInf000011  idLJsbrbsrstr -> idLJsbrbsrsptr
+  McshTchInf000011  idLJsbrstr -> idLJsbrsptr
+  McshTchInf000012  idLJsndsutstr -> idLJsndsutsptr
+  McshTchInf000012  idLJsndfstr -> idLJsndfsptr
+  McshTchInf000012  idLJsndmstr -> idLJsndmsptr
+  McshTchInf000012  idLJsndmcmbrstr -> idLJsndmcmbrsptr
+  McshTchInf000012  idLJsndmodulestr -> idLJsndmodulesptr
+  McshTchInf000012  idLJsndrequirestr -> idLJsndrequiresptr
+  McshTchInf000012  idLJsndmcrepostr -> idLJsndmcreposptr
+  McshTchInf000012  idLJsndmcstr -> idLJsndmcsptr
+  McshTchInf000012  idLJsndmcfEventsstr -> idLJsndmcfEventssptr
+  McshTchInf000012  idLJsndmcfStreamstr -> idLJsndmcfStreamsptr
+  McshTchInf000012  idLJsndmcoHttpstr -> idLJsndmcoHttpsptr
+  McshTchInf000012  idLJsndmcoUtilstr -> idLJsndmcoUtilsptr
+  McshTchInf000012  idLJsndapistr -> idLJsndapisptr
+  McshTchInf000012  idLJsndmwostr -> idLJsndmwosptr
+  McshTchInf000012  idLJsndmwombrstr -> idLJsndmwombrsptr
+  McshTchInf000012  idLJsndmgostr -> idLJsndmgosptr
+  McshTchInf000012  idLJsndprocessstr -> idLJsndprocesssptr
+  McshTchInf000012  idLJsndstcstr -> idLJsndstcsptr
+  McshTchInf000012  idLJsndalgstr -> idLJsndalgsptr
+  McshTchInf000012  idLJsndpghoststr -> idLJsndpghostsptr
+  McshTchInf000012  idLJsndpgmstr -> idLJsndpgmsptr
+  McshTchInf000012  idLJsndpgCmsstr -> idLJsndpgCmssptr
+  McshTchInf000012  idLJsndpkgjsnstr -> idLJsndpkgjsnsptr
+  McshTchInf000012  idLJsndpkgjsnmbrstr -> idLJsndpkgjsnmbrsptr
+  McshTchInf000012  idLJsndpkgstr -> idLJsndpkgsptr
+  McshTchInf000012  idLJsndpkgEslintstr -> idLJsndpkgEslintsptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulstr -> idLJsndpkgEslintcfgrulsptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulPslerstr -> idLJsndpkgEslintcfgrulPslersptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulBstpkcstr -> idLJsndpkgEslintcfgrulBstpkcsptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulSrtmdstr -> idLJsndpkgEslintcfgrulSrtmdsptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulVarstr -> idLJsndpkgEslintcfgrulVarsptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulNdCnjsstr -> idLJsndpkgEslintcfgrulNdCnjssptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulStcisstr -> idLJsndpkgEslintcfgrulStcissptr
+  McshTchInf000012  idLJsndpkgEslintcfgrulEs6str -> idLJsndpkgEslintcfgrulEs6sptr
+  McshTchInf000012  idLJsndpkgJakestr -> idLJsndpkgJakesptr
+  McshTchInf000012  idLJsndhmnstr -> idLJsndhmnsptr
+  McshTchInf000012  idLJsndognstr -> idLJsndognsptr
+  McshTchInf000012  idLJsndtolstr -> idLJsndtolsptr
+  McshTchInf000012  idLJsndtolGlppgnstr -> idLJsndtolGlppgnsptr
+  McshTchInf000012  idLJsndnpmcmdstr -> idLJsndnpmcmdsptr
+  McshTchInf000012  idLJsndrtmopnstr -> idLJsndrtmopnsptr
+  McshTchInf000012  idLJsndstr -> idLJsndsptr
+  McshTchInf000013  idLJselalgstr -> idLJselalgsptr
+  McshTchInf000013  idLJselapistr -> idLJselapisptr
+  McshTchInf000013  idLJselmainelnstr -> idLJselmainelnsptr
+  McshTchInf000013  idLJselpgmpkgjsnstr -> idLJselpgmpkgjsnsptr
+  McshTchInf000013  idLJselpgmstr -> idLJselpgmsptr
+  McshTchInf000013  idLJseltulstr -> idLJseltulsptr
+  McshTchInf000013  idLJselhmnstr -> idLJselhmnsptr
+  McshTchInf000013  idLJselstr -> idLJselsptr
+  McshTchInf000014  idLWasmsuntstr -> idLWasmsuntsptr
+  McshTchInf000014  idLWasmsuntValstr -> idLWasmsuntValsptr
+  McshTchInf000014  idLWasmsuntValTypestr -> idLWasmsuntValTypesptr
+  McshTchInf000014  idLWasmstcopcdstr -> idLWasmstcopcdsptr
+  McshTchInf000014  idLWasmstcstr -> idLWasmstcsptr
+  McshTchInf000014  idLWasmstcClfwstr -> idLWasmstcClfwsptr
+  McshTchInf000014  idLWasmstcLoadstr -> idLWasmstcLoadsptr
+  McshTchInf000014  idLWasmstcStorestr -> idLWasmstcStoresptr
+  McshTchInf000014  idLWasmstcBscstr -> idLWasmstcBscsptr
+  McshTchInf000014  idLWasmstcNmrcstr -> idLWasmstcNmrcsptr
+  McshTchInf000014  idLWasmstcPrmcstr -> idLWasmstcPrmcsptr
+  McshTchInf000014  idLWasmscnstr -> idLWasmscnsptr
+  McshTchInf000014  idLWasmmdlstr -> idLWasmmdlsptr
+  McshTchInf000014  idLWasmalgstr -> idLWasmalgsptr
+  McshTchInf000014  idLWasmpgmstr -> idLWasmpgmsptr
+  McshTchInf000014  idLWasmtoolstr -> idLWasmtoolsptr
+  McshTchInf000014  idLWasmtoolCplrstr -> idLWasmtoolCplrsptr
+  McshTchInf000014  idLWasmstr -> idLWasmsptr
+  McshTchInf000015  idAlgntskhrstr -> idAlgntskhrsptr
+  McshTchInf000015  idAlgnthmnstr -> idAlgnthmnsptr
+  McshTchInf000015  idAlgntHumnApdrstr -> idAlgntHumnApdrsptr
+  McshTchInf000015  idAlgntHumnUsrstr -> idAlgntHumnUsrsptr
+  McshTchInf000015  idAlgntprlstr -> idAlgntprlsptr
+  McshTchInf000015  idAlgntnodstr -> idAlgntnodsptr
+  McshTchInf000015  idAlgntnodApdrstr -> idAlgntnodApdrsptr
+  McshTchInf000015  idAlgntnodFulstr -> idAlgntnodFulsptr
+  McshTchInf000015  idAlgnttxstr -> idAlgnttxsptr
+  McshTchInf000015  idAlgntcsastr -> idAlgntcsasptr
+  McshTchInf000015  idAlgntchncrptstr -> idAlgntchncrptsptr
+  McshTchInf000015  idAlgntchncrptPkcstr -> idAlgntchncrptPkcsptr
+  McshTchInf000015  idAlgntchnstr -> idAlgntchnsptr
+  McshTchInf000015  idAlgntevuprcstr -> idAlgntevuprcsptr
+  McshTchInf000015  idAlgntevusvcgstr -> idAlgntevusvcgsptr
+  McshTchInf000015  idAlgntevustr -> idAlgntevusptr
+  McshTchInf000015  idAlgntevuAggstr -> idAlgntevuAggsptr
+  McshTchInf000015  idAlgntevuCnsstr -> idAlgntevuCnssptr
+  McshTchInf000015  idAlgntevuMoesvcgstr -> idAlgntevuMoesvcgsptr
+  McshTchInf000015  idAlgntevuMoestr -> idAlgntevuMoesptr
+  McshTchInf000015  idAlgntevuMoeDmntstr -> idAlgntevuMoeDmntsptr
+  McshTchInf000015  idAlgntevuMoeStblstr -> idAlgntevuMoeStblsptr
+  McshTchInf000015  idAlgntgovrulestr -> idAlgntgovrulesptr
+  McshTchInf000015  idAlgntgovcrlgstr -> idAlgntgovcrlgsptr
+  McshTchInf000015  idAlgntgovstr -> idAlgntgovsptr
+  McshTchInf000015  idAlgntpgmstr -> idAlgntpgmsptr
+  McshTchInf000015  idDcntrtbnftstr -> idDcntrtbnftsptr
+  McshTchInf000015  idDcntrtpblmstr -> idDcntrtpblmsptr
+  McshTchInf000015  idDcntrtstr -> idDcntrtsptr
+  McshTchInf000015  idDappstr -> idDappsptr
+  McshTchInf000015  idAlgntwltsdgstr -> idAlgntwltsdgsptr
+  McshTchInf000015  idAlgntwltstr -> idAlgntwltsptr
+  McshTchInf000015  idAlgntstatstr -> idAlgntstatsptr
+  McshTchInf000015  idAlgnticostr -> idAlgnticosptr
+  McshTchInf000015  idAlgntognstr -> idAlgntognsptr
+  McshTchInf000015  idAlgntognBrdgstr -> idAlgntognBrdgsptr
+  McshTchInf000015  idAlgntxordrstr -> idAlgntxordrsptr
+  McshTchInf000015  idAlgntxstr -> idAlgntxsptr
+  McshTchInf000015  idAlgntxBstmpstr -> idAlgntxBstmpsptr
+  McshTchInf000015  idLkxLyciiprtstr -> idLkxLyciiprtsptr
+  McshTchInf000015  idLkxLycievalstr -> idLkxLycievalsptr
+  McshTchInf000015  idLkxLycibnftstr -> idLkxLycibnftsptr
+  McshTchInf000015  idLkxLycistr -> idLkxLycisptr
+  McshTchInf000015  idLkxhmnstr -> idLkxhmnsptr
+  McshTchInf000015  idAlgntevalstr -> idAlgntevalsptr
+  McshTchInf000015  idAlgntevalSprostr -> idAlgntevalSprosptr
+  McshTchInf000015  idAlgntevalSconstr -> idAlgntevalSconsptr
+  McshTchInf000015  idAlgntscrtstr -> idAlgntscrtsptr
+  McshTchInf000015  idAlgntsclbtstr -> idAlgntsclbtsptr
+  McshTchInf000015  idAlgntlawstr -> idAlgntlawsptr
+  McshTchInf000015  idAlgntenvtstr -> idAlgntenvtsptr
+  McshTchInf000015  idAlgntdongstr -> idAlgntdongsptr
+  McshTchInf000015  idAlgntsvcstr -> idAlgntsvcsptr
+  McshTchInf000015  idAlgntsvcinstr -> idAlgntsvcinsptr
+  McshTchInf000015  idAlgntsvcndgstr -> idAlgntsvcndgsptr
+  McshTchInf000015  idAlgntsvcStrtupfdgstr -> idAlgntsvcStrtupfdgsptr
+  McshTchInf000015  idAlgntsvcMoestr -> idAlgntsvcMoesptr
+  McshTchInf000015  idAlgntsvcInfstr -> idAlgntsvcInfsptr
+  McshTchInf000015  idAlgntsvcTchInfstr -> idAlgntsvcTchInfsptr
+  McshTchInf000015  idAlgntsvcCldstgstr -> idAlgntsvcCldstgsptr
+  McshTchInf000015  idAlgntsvcRkgstr -> idAlgntsvcRkgsptr
+  McshTchInf000015  idAlgntsvcSplchnstr -> idAlgntsvcSplchnsptr
+  McshTchInf000015  idAlgntsvcGovstr -> idAlgntsvcGovsptr
+  McshTchInf000015  idAlgntsvcGovSctstr -> idAlgntsvcGovSctsptr
+  McshTchInf000015  idAlgntsvcVtgstr -> idAlgntsvcVtgsptr
+  McshTchInf000015  idAlgntsvcIdnstr -> idAlgntsvcIdnsptr
+  McshTchInf000015  idAlgntsvcDSctstr -> idAlgntsvcDSctsptr
+  McshTchInf000015  idAlgntevogstr -> idAlgntevogsptr
+  McshTchInf000015  idAlgntstr -> idAlgntsptr
+  McshTchInf000015  idDcnetcntlzdstr -> idDcnetcntlzdsptr
+  McshTchInf000015  idAlgntnDagstr -> idAlgntnDagsptr
+  McshTchInf000015  idDcnetMoestr -> idDcnetMoesptr
+  McshTchInf000016  idDbchmnstr -> idDbchmnsptr
+  McshTchInf000016  idDbcognstr -> idDbcognsptr
+  McshTchInf000016  idDbcprlstr -> idDbcprlsptr
+  McshTchInf000016  idDbcnodstr -> idDbcnodsptr
+  McshTchInf000016  idDbcmgplstr -> idDbcmgplsptr
+  McshTchInf000016  idDbcblkstr -> idDbcblksptr
+  McshTchInf000016  idDbccsastr -> idDbccsasptr
+  McshTchInf000016  idDbcpowstr -> idDbcpowsptr
+  McshTchInf000016  idDbctxstr -> idDbctxsptr
+  McshTchInf000016  idDbcdatdongstr -> idDbcdatdongsptr
+  McshTchInf000016  idDbcdatstr -> idDbcdatsptr
+  McshTchInf000016  idDbcevustr -> idDbcevusptr
+  McshTchInf000016  idDbcevuMnblstr -> idDbcevuMnblsptr
+  McshTchInf000016  idDbcevuMnblNstr -> idDbcevuMnblNsptr
+  McshTchInf000016  idDbcevuStpmnstr -> idDbcevuStpmnsptr
+  McshTchInf000016  idDbcevuAggstr -> idDbcevuAggsptr
+  McshTchInf000016  idDbcevMoestr -> idDbcevMoesptr
+  McshTchInf000016  idDbcevuCstr -> idDbcevuCsptr
+  McshTchInf000016  idDbcevuCNstr -> idDbcevuCNsptr
+  McshTchInf000016  idDbcpgmstr -> idDbcpgmsptr
+  McshTchInf000016  idDbcwltstr -> idDbcwltsptr
+  McshTchInf000016  idDbcevalstr -> idDbcevalsptr
+  McshTchInf000016  idDbcpbmstr -> idDbcpbmsptr
+  McshTchInf000016  idDbcenvtstr -> idDbcenvtsptr
+  McshTchInf000016  idDbcdongstr -> idDbcdongsptr
+  McshTchInf000016  idDbcstr -> idDbcsptr
+  McshTchInf000016  idBpmnetstr -> idBpmnetsptr
+  McshTchInf000016  idDbcEvustr -> idDbcEvusptr
+  McshTchInf000016  idAenetstr -> idAenetsptr
+  McshTchInf000016  idBosnetstr -> idBosnetsptr
+  McshTchInf000016  idTzsnetstr -> idTzsnetsptr
+  McshTchInf000016  idZecnetstr -> idZecnetsptr
+  McshTchInf000016  idLskevuCstr -> idLskevuCsptr
+  McshTchInf000016  idDcrnodstr -> idDcrnodsptr
+  McshTchInf000016  idDcrpgmstr -> idDcrpgmsptr
+  McshTchInf000016  idDcrnetstr -> idDcrnetsptr
+  McshTchInf000016  idPivxnetstr -> idPivxnetsptr
+  McshTchInf000016  idBtsnetstr -> idBtsnetsptr
+  McshTchInf000016  idXemevuCstr -> idXemevuCsptr
+  McshTchInf000016  idDashnetstr -> idDashnetsptr
+  McshTchInf000016  idDashevuCstr -> idDashevuCsptr
+  McshTchInf000016  idDashpplstr -> idDashpplsptr
+  McshTchInf000016  idDashwltstr -> idDashwltsptr
+  McshTchInf000016  idEmcnetstr -> idEmcnetsptr
+  McshTchInf000016  idPpcnetstr -> idPpcnetsptr
+  McshTchInf000016  idXrpnetstr -> idXrpnetsptr
+  McshTchInf000016  idDfnnetstr -> idDfnnetsptr
+  McshTchInf000016  idHmqnetstr -> idHmqnetsptr
+  McshTchInf000017  idBtcattIdxstr -> idBtcattIdxsptr
+  McshTchInf000017  idBtcprlstr -> idBtcprlsptr
+  McshTchInf000017  idBtcbcnstr -> idBtcbcnsptr
+  McshTchInf000017  idBtcblkstr -> idBtcblksptr
+  McshTchInf000017  idBtctxstr -> idBtctxsptr
+  McshTchInf000017  idBtccrpthfstr -> idBtccrpthfsptr
+  McshTchInf000017  idBtcevuCstr -> idBtcevuCsptr
+  McshTchInf000017  idBtcevuCegrtstr -> idBtcevuCegrtsptr
+  McshTchInf000017  idBtcpgmstr -> idBtcpgmsptr
+  McshTchInf000017  idBtcpgmClntstr -> idBtcpgmClntsptr
+  McshTchInf000017  idBtcwltstr -> idBtcwltsptr
+  McshTchInf000017  idBtcwltPgmstr -> idBtcwltPgmsptr
+  McshTchInf000017  idBtcpbmstr -> idBtcpbmsptr
+  McshTchInf000017  idBtchmnstr -> idBtchmnsptr
+  McshTchInf000017  idBtcognSvcstr -> idBtcognSvcsptr
+  McshTchInf000017  idBtcognXstr -> idBtcognXsptr
+  McshTchInf000017  idBtcognMrctstr -> idBtcognMrctsptr
+  McshTchInf000017  idBtcnetsvcstr -> idBtcnetsvcsptr
+  McshTchInf000017  idBtcstr -> idBtcsptr
+  McshTchInf000018  idEthprlstr -> idEthprlsptr
+  McshTchInf000018  idEthnodstr -> idEthnodsptr
+  McshTchInf000018  idEthblkstr -> idEthblksptr
+  McshTchInf000018  idEthcsastr -> idEthcsasptr
+  McshTchInf000018  idEthtxstr -> idEthtxsptr
+  McshTchInf000018  idEthbcnstr -> idEthbcnsptr
+  McshTchInf000018  idEthactstr -> idEthactsptr
+  McshTchInf000018  idEthevustr -> idEthevusptr
+  McshTchInf000018  idEthevuCstr -> idEthevuCsptr
+  McshTchInf000018  idEthevuCNstr -> idEthevuCNsptr
+  McshTchInf000018  idEthpgmstr -> idEthpgmsptr
+  McshTchInf000018  idEthevminnstr -> idEthevminnsptr
+  McshTchInf000018  idEthclntstr -> idEthclntsptr
+  McshTchInf000018  idEthtflcmdstr -> idEthtflcmdsptr
+  McshTchInf000018  idEthdapstr -> idEthdapsptr
+  McshTchInf000018  idEthwltstr -> idEthwltsptr
+  McshTchInf000018  idEthctpmgclstr -> idEthctpmgclsptr
+  McshTchInf000018  idEthctplagstr -> idEthctplagsptr
+  McshTchInf000018  idEthsolaspstr -> idEthsolaspsptr
+  McshTchInf000018  idEthsolsutstr -> idEthsolsutsptr
+  McshTchInf000018  idEthsolcstr -> idEthsolcsptr
+  McshTchInf000018  idEthsolfstr -> idEthsolfsptr
+  McshTchInf000018  idEthsolvstr -> idEthsolvsptr
+  McshTchInf000018  idEthsolvGblstr -> idEthsolvGblsptr
+  McshTchInf000018  idEthsolscdstr -> idEthsolscdsptr
+  McshTchInf000018  idEthsoltulstr -> idEthsoltulsptr
+  McshTchInf000018  idEthsolstr -> idEthsolsptr
+  McshTchInf000018  idEthctptolDsasmstr -> idEthctptolDsasmsptr
+  McshTchInf000018  idEthctpsvcstr -> idEthctpsvcsptr
+  McshTchInf000018  idEthctpstr -> idEthctpsptr
+  McshTchInf000018  idEthhmnstr -> idEthhmnsptr
+  McshTchInf000018  idEthsvcstr -> idEthsvcsptr
+  McshTchInf000018  idEthstr -> idEthsptr
+  McshTchInf000019  idDeOznskhrstr -> idDeOznskhrsptr
+  McshTchInf000019  idDeOznskhrAcntNstr -> idDeOznskhrAcntNsptr
+  McshTchInf000019  idDeOznmbrstr -> idDeOznmbrsptr
+  McshTchInf000019  idDeOznskhrExlstr -> idDeOznskhrExlsptr
+  McshTchInf000019  idDeOznskhrSplrstr -> idDeOznskhrSplrsptr
+  McshTchInf000019  idDeOzngovgstr -> idDeOzngovgsptr
+  McshTchInf000019  idDeOznevalPblmstr -> idDeOznevalPblmsptr
+  McshTchInf000019  idDeOzndongstr -> idDeOzndongsptr
+  McshTchInf000019  idDeOznstr -> idDeOznsptr
+  McshTchInf000019  idEthdaostr -> idEthdaosptr
+  McshTchInf000019  idArgnhmnstr -> idArgnhmnsptr
+  McshTchInf000019  idArgnstr -> idArgnsptr
+  McshTchInf000019  idDaostkskhrstr -> idDaostkskhrsptr
+  McshTchInf000019  idDaostkskhrHmnstr -> idDaostkskhrHmnsptr
+  McshTchInf000019  idDaostkgovcgenxstr -> idDaostkgovcgenxsptr
+  McshTchInf000019  idDaostkpslSchmstr -> idDaostkpslSchmsptr
+  McshTchInf000019  idDaostkgovgstr -> idDaostkgovgsptr
+  McshTchInf000019  idDaostkstr -> idDaostksptr
+  McshTchInf000019  idEosdacctdnstr -> idEosdacctdnsptr
+  McshTchInf000020  idChbpgmstr -> idChbpgmsptr
+  McshTchInf000020  idChbctpstr -> idChbctpsptr
+  McshTchInf000020  idChbctpAststr -> idChbctpAstsptr
+  McshTchInf000020  idChbctpOndstr -> idChbctpOndsptr
+  McshTchInf000020  idChbctpInfcstr -> idChbctpInfcsptr
+  McshTchInf000020  idChbevustr -> idChbevusptr
+  McshTchInf000020  idChbtmtstr -> idChbtmtsptr
+  McshTchInf000020  idChbtmtognExcstr -> idChbtmtognExcsptr
+  McshTchInf000020  idChbhmnstr -> idChbhmnsptr
+  McshTchInf000020  idChbstr -> idChbsptr
+  McshTchInf000021  idEosnodBpevalstr -> idEosnodBpevalsptr
+  McshTchInf000021  idEosnodBpstr -> idEosnodBpsptr
+  McshTchInf000021  idEosbexstr -> idEosbexsptr
+  McshTchInf000021  idEosevuEOSstr -> idEosevuEOSsptr
+  McshTchInf000021  idEosgovvtgstr -> idEosgovvtgsptr
+  McshTchInf000021  idEospgmstr -> idEospgmsptr
+  McshTchInf000021  idEospgmClntstr -> idEospgmClntsptr
+  McshTchInf000021  idEospgmAppstr -> idEospgmAppsptr
+  McshTchInf000021  idEospgmAppGamstr -> idEospgmAppGamsptr
+  McshTchInf000021  idEoshmnstr -> idEoshmnsptr
+  McshTchInf000021  idEosstr -> idEossptr
+  McshTchInf000022  idFairnetblkdbvstr -> idFairnetblkdbvsptr
+  McshTchInf000022  idFairnetstr -> idFairnetsptr
+  McshTchInf000023  idIotastr -> idIotasptr
+  McshTchInf000024  idSteemtxopnstr -> idSteemtxopnsptr
+  McshTchInf000024  idSteemaststr -> idSteemastsptr
+  McshTchInf000024  idSteempgmstr -> idSteempgmsptr
+  McshTchInf000024  idSteemdapstr -> idSteemdapsptr
+  McshTchInf000024  idSteemwltstr -> idSteemwltsptr
+  McshTchInf000024  idSteemacntkeystr -> idSteemacntkeysptr
+  McshTchInf000024  idSteemactdongstr -> idSteemactdongsptr
+  McshTchInf000024  idSteemithmnstr -> idSteemithmnsptr
+  McshTchInf000024  idSteemitstr -> idSteemitsptr
+  McshTchInf000024  idSteemhmnstr -> idSteemhmnsptr
+  McshTchInf000024  idSteemevalConstr -> idSteemevalConsptr
+  McshTchInf000024  idSteemdongstr -> idSteemdongsptr
+  McshTchInf000024  idSteemstr -> idSteemsptr
+  McshTchInf000025  idEvrpuicEtpgstr -> idEvrpuicEtpgsptr
+  McshTchInf000025  idErpdhmnstr -> idErpdhmnsptr
+  McshTchInf000025  idErpdstr -> idErpdsptr
+  McshTchInf000026  idBkskIDstr -> idBkskIDsptr
+  McshTchInf000026  idBksknamestr -> idBksknamesptr
+  McshTchInf000026  idBksknmscstr -> idBksknmscsptr
+  McshTchInf000026  idBkskpgmstr -> idBkskpgmsptr
+  McshTchInf000026  idBkskbrsrstr -> idBkskbrsrsptr
+  McshTchInf000026  idBkskDapstr -> idBkskDapsptr
+  McshTchInf000026  idBkskhmnFTstr -> idBkskhmnFTsptr
+  McshTchInf000026  idBkskstr -> idBksksptr
+  McshTchInf000027  idNeostr -> idNeosptr
+  McshTchInf000028  idDnlbrskhrstr -> idDnlbrskhrsptr
+  McshTchInf000028  idDnlbrskhrDvprstr -> idDnlbrskhrDvprsptr
+  McshTchInf000028  idLMoveprsrcTpstr -> idLMoveprsrcTpsptr
+  McshTchInf000028  idLMovealgostr -> idLMovealgosptr
+  McshTchInf000028  idLMovestr -> idLMovesptr
+  McshTchInf000028  idDnlbrtknstr -> idDnlbrtknsptr
+  McshTchInf000028  idDnlbrrsrvasststr -> idDnlbrrsrvasstsptr
+  McshTchInf000028  idDnlbrclicmdstr -> idDnlbrclicmdsptr
+  McshTchInf000028  idDnlbrprbmstr -> idDnlbrprbmsptr
+  McshTchInf000028  idDnlbrstr -> idDnlbrsptr
+  McshTchInf000029  idLJsonsutstr -> idLJsonsutsptr
+  McshTchInf000029  idLJsondocstr -> idLJsondocsptr
+  McshTchInf000029  idLJsonstr -> idLJsonsptr
+  McshTchInf000029  idJnstnmstr -> idJnstnmsptr
+  McshTchInf000029  idJnsttulstr -> idJnsttulsptr
+  McshTchInf000030  idLRustalgnodestr -> idLRustalgnodesptr
+  McshTchInf000030  idLRustwrdstr -> idLRustwrdsptr
+  McshTchInf000030  idLRustkwdstr -> idLRustkwdsptr
+  McshTchInf000030  idLRustsuntstr -> idLRustsuntsptr
+  McshTchInf000030  idLRustsuntNstr -> idLRustsuntNsptr
+  McshTchInf000030  idLRustsuntNIntstr -> idLRustsuntNIntsptr
+  McshTchInf000030  idLRustsuntNFpstr -> idLRustsuntNFpsptr
+  McshTchInf000030  idLRustsuntFstr -> idLRustsuntFsptr
+  McshTchInf000030  idLRustoprstr -> idLRustoprsptr
+  McshTchInf000030  idLRustsntcstr -> idLRustsntcsptr
+  McshTchInf000030  idLRustalgstr -> idLRustalgsptr
+  McshTchInf000030  idLRustalgCrtstr -> idLRustalgCrtsptr
+  McshTchInf000030  idLRustbalgostr -> idLRustbalgosptr
+  McshTchInf000030  idLRusttoolstr -> idLRusttoolsptr
+  McshTchInf000030  idLRustcargocmdstr -> idLRustcargocmdsptr
+  McshTchInf000030  idLRusthmnstr -> idLRusthmnsptr
+  McshTchInf000030  idLRustdongstr -> idLRustdongsptr
+  McshTchInf000030  idLRuststr -> idLRustsptr
+  McshTchInf000031  idLCppalgfilestr -> idLCppalgfilesptr
+  McshTchInf000031  idLCppwrdnamestr -> idLCppwrdnamesptr
+  McshTchInf000031  idLCppsuntstr -> idLCppsuntsptr
+  McshTchInf000031  idLCppsuntNbrIngrstr -> idLCppsuntNbrIngrsptr
+  McshTchInf000031  idLCppsuntFcnstr -> idLCppsuntFcnsptr
+  McshTchInf000031  idLCppsuntNmdstr -> idLCppsuntNmdsptr
+  McshTchInf000031  idLCppsuntPrcsstr -> idLCppsuntPrcssptr
+  McshTchInf000031  idLCppsuntPrcsNstr -> idLCppsuntPrcsNsptr
+  McshTchInf000031  idLCppsuntPrcsBstr -> idLCppsuntPrcsBsptr
+  McshTchInf000031  idLCppsstcstr -> idLCppsstcsptr
+  McshTchInf000031  idLCppalgscnstr -> idLCppalgscnsptr
+  McshTchInf000031  idLCppalgdongstr -> idLCppalgdongsptr
+  McshTchInf000031  idLCppalgstr -> idLCppalgsptr
+  McshTchInf000031  idLCppbdocdongstr -> idLCppbdocdongsptr
+  McshTchInf000031  idLCpptoolCplrstr -> idLCpptoolCplrsptr
+  McshTchInf000031  idLCppuntstr -> idLCppuntsptr
+  McshTchInf000031  idLCppstr -> idLCppsptr
+  McshTchInf000032  idGitcmdstr -> idGitcmdsptr
+  McshTchInf000032  idGitcmdRepstr -> idGitcmdRepsptr
+  McshTchInf000032  idGitcmdVrsnstr -> idGitcmdVrsnsptr
+  McshTchInf000032  idGitcmdBrcmrgstr -> idGitcmdBrcmrgsptr
+  McshTchInf000032  idGitcmdInfstr -> idGitcmdInfsptr
+  McshTchInf000032  idGitcmdNavstr -> idGitcmdNavsptr
+  McshTchInf000032  idGitcmdClbrtstr -> idGitcmdClbrtsptr
+  McshTchInf000032  idGitstr -> idGitsptr
+  McshTchInf000032  idGitrepstr -> idGitrepsptr
+  McshTchInf000035  idLHtmlstr -> idLHtmlsptr
+  McshTchInf000036  idTechAiapplstr -> idTechAiapplsptr
+  McshTchInf000036  idTechAi005str -> idTechAi005sptr
+  McshTchInf000036  idTechAi005Codgstr -> idTechAi005Codgsptr
+  McshTchInf000036  idTechAi004str -> idTechAi004sptr
+  McshTchInf000036  idTchNlp001lgmlstr -> idTchNlp001lgmlsptr
+  McshTchInf000036  idTchNlpstr -> idTchNlpsptr
+  McshTchInf000036  idTchNlp004str -> idTchNlp004sptr
+  McshTchInf000036  idTchInf008str -> idTchInf008sptr
+  McshTchInf000036  idTchInf008Dplrstr -> idTchInf008Dplrsptr
+  McshTchInf000036  idTechAistr -> idTechAisptr
+  McshTchInf000036  idTechAiGnrvstr -> idTechAiGnrvsptr
+  McshTchInf000036  idTchNnstr -> idTchNnsptr
+  McshTchInf000037  idSoftapistr -> idSoftapisptr
+  McshTchInf000037  idSoftapiWebstr -> idSoftapiWebsptr
+  McshTchInf000038  idTchLlmusagstr -> idTchLlmusagsptr
+  McshTchInf000038  idTchLlmstr -> idTchLlmsptr
+  McshTchInf000038  idTchLlmTrfmstr -> idTchLlmTrfmsptr
+  McshTchInf000038  idTchLlmLamastr -> idTchLlmLamasptr
+  McshTchInf000039  idLKnlgmngrknbsstr -> idLKnlgmngrknbssptr
+  McshTchInf000039  idLKnlgmngrknbs001str -> idLKnlgmngrknbs001sptr
+  McshTchInf000039  idLKnlgmngrstr -> idLKnlgmngrsptr
+  McshTchInf000039  idLKnlgstr -> idLKnlgsptr
+  McshTchInf000039  idLKnlg002mngrstr -> idLKnlg002mngrsptr
+  McshTchInf000039  idLKnlg002str -> idLKnlg002sptr
+  McshTchInf000039  idLKnlg003str -> idLKnlg003sptr
+  McshTchInf000039  idLKnlg004str -> idLKnlg004sptr
+  McshTchInf000039  idLKnlg008otptprptstr -> idLKnlg008otptprptsptr
+  McshTchInf000039  idLKnlg008mngrstr -> idLKnlg008mngrsptr
+  McshTchInf000039  idLKnlg009str -> idLKnlg009sptr
+  McshTchInf000039  idLKnlg015str -> idLKnlg015sptr
+  McshTchInf000039  idLKnlg017str -> idLKnlg017sptr
+  McshTchInf000039  idLKnlg017ogrfstr -> idLKnlg017ogrfsptr
+  McshTchInf000039  idLKnlg021str -> idLKnlg021sptr
+  McshTchInf000039  idLKnlg023str -> idLKnlg023sptr
+  McshTchInf000039  idLCycltermstr -> idLCycltermsptr
+  McshTchInf000039  idLCycltermNatstr -> idLCycltermNatsptr
+  McshTchInf000039  idLCycltermRlnstr -> idLCycltermRlnsptr
+  McshTchInf000039  idLCyclpredicatestr -> idLCyclpredicatesptr
+  McshTchInf000039  idLCycltermLlcvstr -> idLCycltermLlcvsptr
+  McshTchInf000039  idLCyclquantifierstr -> idLCyclquantifiersptr
+  McshTchInf000039  idLCyclexrnstr -> idLCyclexrnsptr
+  McshTchInf000039  idLCyclqtfnstr -> idLCyclqtfnsptr
+  McshTchInf000039  idLCyclstr -> idLCyclsptr
+  McshTchInf000039  idLKnlg010otptstr -> idLKnlg010otptsptr
+  McshTchInf000039  idLKnlg010otptUperstr -> idLKnlg010otptUpersptr
+  McshTchInf000039  idLKnlg010otptDminstr -> idLKnlg010otptDminsptr
+  McshTchInf000039  idLKnlg010mngrstr -> idLKnlg010mngrsptr
+  McshTchInf000039  idLKnlg010str -> idLKnlg010sptr
+  McshTchInf000039  idLKnlg026str -> idLKnlg026sptr
+  McshTchInf000039  idLKnlg026iprptstr -> idLKnlg026iprptsptr
+  McshTchInf000039  idLKnlg011str -> idLKnlg011sptr
+  McshTchInf000039  idLKnlg012str -> idLKnlg012sptr
+  McshTchInf000039  idLKnlg014ipptstr -> idLKnlg014ipptsptr
+  McshTchInf000039  idLKnlg014itermLtrlstr -> idLKnlg014itermLtrlsptr
+  McshTchInf000039  idLKnlg014vocstr -> idLKnlg014vocsptr
+  McshTchInf000039  idLKnlg014str -> idLKnlg014sptr
+  McshTchInf000039  idLWlfmuistr -> idLWlfmuisptr
+  McshTchInf000039  idLWlfmsysstr -> idLWlfmsyssptr
+  McshTchInf000039  idLWlfmoexnstr -> idLWlfmoexnsptr
+  McshTchInf000039  idLWlfmoatmstr -> idLWlfmoatmsptr
+  McshTchInf000039  idLWlfmosblctxtstr -> idLWlfmosblctxtsptr
+  McshTchInf000039  idLWlfmosblstr -> idLWlfmosblsptr
+  McshTchInf000039  idLWlfmofnstr -> idLWlfmofnsptr
+  McshTchInf000039  idLWlfmoEnttstr -> idLWlfmoEnttsptr
+  McshTchInf000039  idLWlfmoptnstr -> idLWlfmoptnsptr
+  McshTchInf000040  idIntntdongPmntstr -> idIntntdongPmntsptr
+  McshTchInf000040  idWwwfmwkstr -> idWwwfmwksptr
+  McshTchInf000040  idIntntstr -> idIntntsptr
+  McshTchInf000041  idVscodeagnttoolstr -> idVscodeagnttoolsptr
+  McshTchInf000041  idVscodeagntstr -> idVscodeagntsptr
+  McshTchInf000041  idVscodecminstr -> idVscodecminsptr
+  McshTchInf000041  idVscodeextnstr -> idVscodeextnsptr
+  McshTchInf000041  idVscodecmndscstr -> idVscodecmndscsptr
+  McshTchInf000041  idVscodecmndstr -> idVscodecmndsptr
+  McshTchInf000041  idVscodestgsstr -> idVscodestgssptr
+  McshTchInf000041  idVscodestr -> idVscodesptr
+  McshTchInf000042  idVscodecmdidstr -> idVscodecmdidsptr
+  McshTchPrgm000002  idCpgmatt003str -> idCpgmatt003sptr
+  McshTchPrgm000002  idCpgmstr -> idCpgmsptr
+  McshTchPrgm000002  idCpgm001str -> idCpgm001sptr
+  McshTchPrgm000002  idCpgm001Edtrstr -> idCpgm001Edtrsptr
+  McshTchPrgm000002  idCpgm002str -> idCpgm002sptr
+  McshTchPrgm000002  idCpgm003str -> idCpgm003sptr
+  McshTchPrgm000003  idAtmcmdstr -> idAtmcmdsptr
+  McshTchPrgm000003  idAtmpkgstr -> idAtmpkgsptr
+  McshTchPrgm000003  idAtmpkgCorestr -> idAtmpkgCoresptr
+  McshTchPrgm000003  idAtmstr -> idAtmsptr
+  McshTchPrgm000005  idWinosstr -> idWinossptr
+  McshTchPrgm000006  idCrxTocstr -> idCrxTocsptr
+  McshWrdidxElln00  idWrdElln00str -> idWrdElln00sptr
+  McshWrdidxElln01alfa_1  idWrdElln01alfa_1str -> idWrdElln01alfa_1sptr
+  McshWrdidxElln01alfa_2  idWrdElln01alfa_2str -> idWrdElln01alfa_2sptr
+  McshWrdidxElln01alfa_3  idWrdElln01alfa_3str -> idWrdElln01alfa_3sptr
+  McshWrdidxElln01alfa_4  idWrdElln01alfa_4str -> idWrdElln01alfa_4sptr
+  McshWrdidxElln01alfa_5  idWrdElln01alfa_5str -> idWrdElln01alfa_5sptr
+  McshWrdidxElln02vita  idWrdElln02vitastr -> idWrdElln02vitasptr
+  McshWrdidxElln03yama  idWrdElln03yamastr -> idWrdElln03yamasptr
+  McshWrdidxElln04dhelta  idWrdElln04dheltastr -> idWrdElln04dheltasptr
+  McshWrdidxElln05epsilon_1  idWrdElln05epsilon_1str -> idWrdElln05epsilon_1sptr
+  McshWrdidxElln05epsilon_2  idWrdElln05epsilon_2str -> idWrdElln05epsilon_2sptr
+  McshWrdidxElln05epsilon_3  idWrdElln05epsilon_3str -> idWrdElln05epsilon_3sptr
+  McshWrdidxElln06zita  idWrdElln06zitastr -> idWrdElln06zitasptr
+  McshWrdidxElln07ita  idWrdElln07itastr -> idWrdElln07itasptr
+  McshWrdidxElln08thita  idWrdElln08thitastr -> idWrdElln08thitasptr
+  McshWrdidxElln09yxota  idWrdElln09yxotastr -> idWrdElln09yxotasptr
+  McshWrdidxElln10kapa_1  idWrdElln10kapa_1str -> idWrdElln10kapa_1sptr
+  McshWrdidxElln10kapa_2  idWrdElln10kapa_2str -> idWrdElln10kapa_2sptr
+  McshWrdidxElln10kapa_3  idWrdElln10kapa_3str -> idWrdElln10kapa_3sptr
+  McshWrdidxElln11lamdha  idWrdElln11lamdhastr -> idWrdElln11lamdhasptr
+  McshWrdidxElln12mi_1  idWrdElln12mi_1str -> idWrdElln12mi_1sptr
+  McshWrdidxElln12mi_2  idWrdElln12mi_2str -> idWrdElln12mi_2sptr
+  McshWrdidxElln12mi_3  idWrdElln12mi_3str -> idWrdElln12mi_3sptr
+  McshWrdidxElln12mi_4  idWrdElln12mi_4str -> idWrdElln12mi_4sptr
+  McshWrdidxElln12mi_5  idWrdElln12mi_5str -> idWrdElln12mi_5sptr
+  McshWrdidxElln13ni  idWrdElln13nistr -> idWrdElln13nisptr
+  McshWrdidxElln14ksi  idWrdElln14ksistr -> idWrdElln14ksisptr
+  McshWrdidxElln15omikron  idWrdElln15omikronstr -> idWrdElln15omikronsptr
+  McshWrdidxElln16pi_1  idWrdElln16pi_1str -> idWrdElln16pi_1sptr
+  McshWrdidxElln16pi_2  idWrdElln16pi_2str -> idWrdElln16pi_2sptr
+  McshWrdidxElln16pi_3  idWrdElln16pi_3str -> idWrdElln16pi_3sptr
+  McshWrdidxElln17ro  idWrdElln17rostr -> idWrdElln17rosptr
+  McshWrdidxElln18siyma_1  idWrdElln18siyma_1str -> idWrdElln18siyma_1sptr
+  McshWrdidxElln18siyma_2  idWrdElln18siyma_2str -> idWrdElln18siyma_2sptr
+  McshWrdidxElln18siyma_3  idWrdElln18siyma_3str -> idWrdElln18siyma_3sptr
+  McshWrdidxElln19taf  idWrdElln19tafstr -> idWrdElln19tafsptr
+  McshWrdidxElln20ipsilon  idWrdElln20ipsilonstr -> idWrdElln20ipsilonsptr
+  McshWrdidxElln21fi  idWrdElln21fistr -> idWrdElln21fisptr
+  McshWrdidxElln22hxi  idWrdElln22hxistr -> idWrdElln22hxisptr
+  McshWrdidxElln23psi  idWrdElln23psistr -> idWrdElln23psisptr
+  McshWrdidxElln24oméya  idWrdElln24omeyastr -> idWrdElln24omeyasptr
+  Mcsh000000  idMwsstr -> idMwssptr
+
+=== CLASH (0)
+  (none)
+
+=== LINKS-PER-FILE (551)
+  McshCor000002  ids 22, links 24
+  McshCor000003  ids 13, links 15
+  McshCor000004  ids 20, links 20
+  McshCor000005  ids 13, links 13
+  McshCor000006  ids 6, links 6
+  McshCor000007  ids 6, links 6
+  McshCor000008  ids 4, links 4
+  McshCor000009  ids 3, links 5
+  McshCor000010  ids 8, links 8
+  McshCor000011  ids 13, links 13
+  McshCor000012  ids 4, links 4
+  McshCor000013  ids 15, links 15
+  McshCor000014  ids 3, links 3
+  McshCor000015  ids 1, links 1
+  McshCor000016  ids 1, links 1
+  McshCor000018  ids 21, links 21
+  McshCor000019  ids 1, links 1
+  McshCor000020  ids 3, links 3
+  McshCor000021  ids 1, links 1
+  McshEdu000002  ids 6, links 6
+  McshEdu000003  ids 1, links 1
+  McshEdu000005  ids 13, links 13
+  McshEdu000006  ids 2, links 2
+  McshEdu000007  ids 1, links 1
+  McshEdu000008  ids 1, links 1
+  McshEdu000009  ids 2, links 2
+  McshEdu000010  ids 5, links 5
+  McshEdu000011  ids 1, links 1
+  McshEdu000012  ids 1, links 1
+  McshEdu000013  ids 1, links 1
+  McshEdu000014  ids 4, links 4
+  McshEdu000015  ids 1, links 1
+  McshHlth000002  ids 60, links 60
+  McshHlth000003  ids 13, links 13
+  McshHlth000004  ids 8, links 8
+  McshHlth000005  ids 30, links 30
+  McshHlth000006  ids 4, links 4
+  McshHlth000007  ids 4, links 4
+  McshHlth000008  ids 13, links 12
+  McshHlth000009  ids 1, links 1
+  McshHlth000010  ids 3, links 3
+  McshHlth000011  ids 51, links 51
+  McshHlth000012  ids 1, links 1
+  McshHlth000013  ids 33, links 33
+  McshHlth000014  ids 12, links 12
+  McshHlth000015  ids 3, links 3
+  McshHlth000016  ids 8, links 8
+  McshHlth000018  ids 4, links 4
+  McshHlth000019  ids 21, links 21
+  McshHmn000002  ids 14, links 14
+  McshHmn000003  ids 1, links 1
+  McshHmn000005  ids 3, links 3
+  McshLag000000  ids 1, links 1
+  McshLag000002  ids 8, links 8
+  McshLag000003  ids 19, links 19
+  McshLag000004  ids 1, links 1
+  McshLag000005  ids 3, links 3
+  McshLag000006  ids 22, links 22
+  McshLag000007  ids 110, links 110
+  McshLag000008  ids 4, links 4
+  McshLag000009  ids 7, links 7
+  McshLag000010  ids 21, links 21
+  McshLag000011  ids 45, links 45
+  McshLag000012  ids 22, links 22
+  McshLag000013  ids 7, links 7
+  McshLag000014  ids 1, links 1
+  McshLag000016  ids 1, links 1
+  McshLag000017  ids 28, links 28
+  McshLag000018  ids 34, links 33
+  McshLag000019  ids 1, links 1
+  McshLag000020  ids 133, links 133
+  McshLag000021  ids 3, links 3
+  McshLag000022  ids 1, links 1
+  McshLag000023  ids 2, links 2
+  McshLag000024  ids 1, links 1
+  McshLag000025  ids 1, links 1
+  McshLag000026  ids 6, links 6
+  McshLag000027  ids 35, links 35
+  McshLag000028  ids 3, links 3
+  McshLag000029  ids 1, links 1
+  McshLag000030  ids 16, links 16
+  McshLag000031  ids 1, links 1
+  McshLag000032  ids 1, links 1
+  McshLag000033  ids 14, links 14
+  McshLag000034  ids 13, links 13
+  McshLag000035  ids 13, links 13
+  McshLag000036  ids 15, links 15
+  McshLag000037  ids 19, links 19
+  McshLag000038  ids 14, links 14
+  McshLag000039  ids 13, links 13
+  McshLag000040  ids 13, links 13
+  McshLag000041  ids 13, links 13
+  McshLag000042  ids 13, links 13
+  McshLag000043  ids 14, links 14
+  McshNtr000002  ids 3, links 3
+  McshNtr000003  ids 2, links 2
+  McshNtr000004  ids 13, links 13
+  McshNtr000005  ids 4, links 4
+  McshNtr000006  ids 9, links 9
+  McshNtr000007  ids 5, links 5
+  McshNtr000008  ids 1, links 1
+  McshNtr000009  ids 1, links 1
+  McshNtr000010  ids 3, links 3
+  McshNtr000011  ids 1, links 1
+  McshNtr000012  ids 2, links 2
+  McshNtr000013  ids 1, links 1
+  McshNtr000014  ids 1, links 1
+  McshNtr000015  ids 1, links 1
+  McshNtr000017  ids 1, links 1
+  McshOgm000002  ids 2, links 2
+  McshOgm000003  ids 6, links 7
+  McshOgm000004  ids 5, links 5
+  McshOgm000005  ids 19, links 19
+  McshOgm000006  ids 10, links 10
+  McshOgm000007  ids 12, links 12
+  McshOgm000008  ids 3, links 3
+  McshOgm000009  ids 4, links 4
+  McshOgm000010  ids 6, links 6
+  McshOgm000011  ids 1, links 1
+  McshStn000002  ids 4, links 4
+  McshStn000003  ids 1, links 1
+  McshStn000004  ids 7, links 7
+  McshStn000005  ids 2, links 2
+  McshStn000006  ids 3, links 3
+  McshStn000007  ids 2, links 2
+  McshStn000008  ids 5, links 5
+  McshStn000009  ids 36, links 36
+  McshStn000010  ids 22, links 22
+  McshStn000011  ids 11, links 11
+  McshStn000012  ids 14, links 14
+  McshStn000013  ids 2, links 2
+  McshStn000014  ids 3, links 3
+  McshStn000015  ids 19, links 19
+  McshStn000016  ids 1, links 1
+  McshStn000017  ids 11, links 11
+  McshStn000018  ids 3, links 3
+  McshStn000019  ids 1, links 1
+  McshStn000020  ids 16, links 16
+  McshStn000021  ids 1, links 1
+  McshStn000022  ids 1, links 1
+  McshStn000023  ids 1, links 1
+  McshStn000024  ids 1, links 1
+  McshStn000026  ids 3, links 3
+  McshStn000027  ids 1, links 1
+  McshStn000028  ids 2, links 2
+  McshStn000029  ids 10, links 10
+  McshStn000030  ids 1, links 1
+  McshStn000031  ids 9, links 9
+  McshStn000032  ids 2, links 2
+  McshStn000033  ids 1, links 1
+  McshStn000034  ids 4, links 4
+  McshStn000035  ids 5, links 5
+  McshStn000036  ids 1, links 1
+  McshStn000037  ids 4, links 4
+  McshStn000038  ids 4, links 4
+  McshStn000039  ids 4, links 4
+  McshStn000040  ids 2, links 2
+  McshStn000041  ids 2, links 2
+  McshStn000042  ids 7, links 7
+  McshStn000043  ids 2, links 2
+  McshStn000044  ids 4, links 4
+  McshStn000045  ids 1, links 1
+  McshStn000046  ids 1, links 1
+  McshStn000047  ids 1, links 1
+  McshStn000048  ids 3, links 3
+  McshStn000049  ids 1, links 1
+  McshStn000050  ids 3, links 3
+  McshStn000051  ids 1, links 1
+  McshStnlaw000002  ids 11, links 11
+  McshStnlaw000003  ids 12, links 12
+  McshStnlaw000004  ids 2, links 2
+  McshStnlaw000006  ids 1, links 1
+  McshTch000002  ids 3, links 3
+  McshTch000003  ids 3, links 3
+  McshTch000005  ids 1, links 1
+  McshUcdU0000  ids 2, links 2
+  McshUcdU0080  ids 2, links 2
+  McshUcdU0100  ids 2, links 2
+  McshUcdU0180  ids 2, links 2
+  McshUcdU0250  ids 2, links 2
+  McshUcdU02B0  ids 2, links 2
+  McshUcdU0300  ids 2, links 2
+  McshUcdU0370  ids 2, links 2
+  McshUcdU0400  ids 2, links 2
+  McshUcdU0500  ids 2, links 2
+  McshUcdU0530  ids 2, links 2
+  McshUcdU0590  ids 2, links 2
+  McshUcdU0600  ids 2, links 2
+  McshUcdU0700  ids 2, links 2
+  McshUcdU0750  ids 2, links 2
+  McshUcdU0780  ids 2, links 2
+  McshUcdU07C0  ids 2, links 2
+  McshUcdU0800  ids 2, links 2
+  McshUcdU0840  ids 2, links 2
+  McshUcdU0860  ids 2, links 2
+  McshUcdU08A0  ids 2, links 2
+  McshUcdU0900  ids 2, links 2
+  McshUcdU0980  ids 2, links 2
+  McshUcdU0A00  ids 2, links 2
+  McshUcdU0A80  ids 2, links 2
+  McshUcdU0B00  ids 2, links 2
+  McshUcdU0B80  ids 2, links 2
+  McshUcdU0C00  ids 2, links 2
+  McshUcdU0C80  ids 2, links 2
+  McshUcdU0D00  ids 2, links 2
+  McshUcdU0D80  ids 2, links 2
+  McshUcdU0E00  ids 2, links 2
+  McshUcdU0E80  ids 2, links 2
+  McshUcdU0F00  ids 2, links 2
+  McshUcdU1000  ids 2, links 2
+  McshUcdU10000  ids 2, links 2
+  McshUcdU100000  ids 1, links 1
+  McshUcdU10080  ids 2, links 2
+  McshUcdU10100  ids 2, links 2
+  McshUcdU10140  ids 2, links 2
+  McshUcdU10190  ids 2, links 2
+  McshUcdU101D0  ids 2, links 2
+  McshUcdU10280  ids 2, links 2
+  McshUcdU102A0  ids 2, links 2
+  McshUcdU102E0  ids 2, links 2
+  McshUcdU10300  ids 2, links 2
+  McshUcdU10330  ids 2, links 2
+  McshUcdU10350  ids 2, links 2
+  McshUcdU10380  ids 2, links 2
+  McshUcdU103A0  ids 2, links 2
+  McshUcdU10400  ids 2, links 2
+  McshUcdU10450  ids 2, links 2
+  McshUcdU10480  ids 2, links 2
+  McshUcdU104B0  ids 2, links 2
+  McshUcdU10500  ids 2, links 2
+  McshUcdU10530  ids 2, links 2
+  McshUcdU10600  ids 2, links 2
+  McshUcdU10800  ids 2, links 2
+  McshUcdU10840  ids 2, links 2
+  McshUcdU10860  ids 2, links 2
+  McshUcdU10880  ids 2, links 2
+  McshUcdU108E0  ids 2, links 2
+  McshUcdU10900  ids 2, links 2
+  McshUcdU10920  ids 2, links 2
+  McshUcdU10980  ids 2, links 2
+  McshUcdU109A0  ids 2, links 2
+  McshUcdU10A0  ids 2, links 2
+  McshUcdU10A00  ids 2, links 2
+  McshUcdU10A60  ids 2, links 2
+  McshUcdU10A80  ids 2, links 2
+  McshUcdU10AC0  ids 2, links 2
+  McshUcdU10B00  ids 2, links 2
+  McshUcdU10B40  ids 2, links 2
+  McshUcdU10B60  ids 2, links 2
+  McshUcdU10B80  ids 2, links 2
+  McshUcdU10C00  ids 2, links 2
+  McshUcdU10C80  ids 2, links 2
+  McshUcdU10D00  ids 2, links 2
+  McshUcdU10E60  ids 2, links 2
+  McshUcdU10F00  ids 2, links 2
+  McshUcdU10F30  ids 2, links 2
+  McshUcdU1100  ids 2, links 2
+  McshUcdU11000  ids 2, links 2
+  McshUcdU11080  ids 2, links 2
+  McshUcdU110D0  ids 2, links 2
+  McshUcdU11100  ids 2, links 2
+  McshUcdU11150  ids 2, links 2
+  McshUcdU11180  ids 2, links 2
+  McshUcdU111E0  ids 2, links 2
+  McshUcdU11200  ids 2, links 2
+  McshUcdU11280  ids 2, links 2
+  McshUcdU112B0  ids 2, links 2
+  McshUcdU11300  ids 2, links 2
+  McshUcdU11400  ids 2, links 2
+  McshUcdU11480  ids 2, links 2
+  McshUcdU11580  ids 2, links 2
+  McshUcdU11600  ids 2, links 2
+  McshUcdU11660  ids 2, links 2
+  McshUcdU11680  ids 2, links 2
+  McshUcdU11700  ids 2, links 2
+  McshUcdU11800  ids 2, links 2
+  McshUcdU118A0  ids 2, links 2
+  McshUcdU11A00  ids 2, links 2
+  McshUcdU11A50  ids 2, links 2
+  McshUcdU11AC0  ids 2, links 2
+  McshUcdU11C00  ids 2, links 2
+  McshUcdU11C70  ids 2, links 2
+  McshUcdU11D00  ids 2, links 2
+  McshUcdU11D60  ids 2, links 2
+  McshUcdU11EE0  ids 2, links 2
+  McshUcdU1200  ids 2, links 2
+  McshUcdU12000  ids 2, links 2
+  McshUcdU12400  ids 2, links 2
+  McshUcdU12480  ids 2, links 2
+  McshUcdU13000  ids 2, links 2
+  McshUcdU1380  ids 2, links 2
+  McshUcdU13A0  ids 2, links 2
+  McshUcdU1400  ids 2, links 2
+  McshUcdU14400  ids 2, links 2
+  McshUcdU1680  ids 2, links 2
+  McshUcdU16800  ids 2, links 2
+  McshUcdU16A0  ids 2, links 2
+  McshUcdU16A40  ids 2, links 2
+  McshUcdU16AD0  ids 2, links 2
+  McshUcdU16B00  ids 2, links 2
+  McshUcdU16E40  ids 2, links 2
+  McshUcdU16F00  ids 2, links 2
+  McshUcdU16FE0  ids 2, links 2
+  McshUcdU1700  ids 2, links 2
+  McshUcdU17000  ids 1, links 1
+  McshUcdU1720  ids 2, links 2
+  McshUcdU1740  ids 2, links 2
+  McshUcdU1760  ids 2, links 2
+  McshUcdU1780  ids 2, links 2
+  McshUcdU1800  ids 2, links 2
+  McshUcdU18800  ids 2, links 2
+  McshUcdU18B0  ids 2, links 2
+  McshUcdU1900  ids 2, links 2
+  McshUcdU1950  ids 2, links 2
+  McshUcdU1980  ids 2, links 2
+  McshUcdU19E0  ids 2, links 2
+  McshUcdU1A00  ids 2, links 2
+  McshUcdU1A20  ids 2, links 2
+  McshUcdU1AB0  ids 2, links 2
+  McshUcdU1B00  ids 2, links 2
+  McshUcdU1B000  ids 2, links 2
+  McshUcdU1B100  ids 2, links 2
+  McshUcdU1B170  ids 2, links 2
+  McshUcdU1B80  ids 2, links 2
+  McshUcdU1BC0  ids 2, links 2
+  McshUcdU1BC00  ids 2, links 2
+  McshUcdU1BCA0  ids 2, links 2
+  McshUcdU1C00  ids 2, links 2
+  McshUcdU1C50  ids 2, links 2
+  McshUcdU1C80  ids 2, links 2
+  McshUcdU1C90  ids 2, links 2
+  McshUcdU1CC0  ids 2, links 2
+  McshUcdU1CD0  ids 2, links 2
+  McshUcdU1D00  ids 2, links 2
+  McshUcdU1D000  ids 2, links 2
+  McshUcdU1D100  ids 2, links 2
+  McshUcdU1D200  ids 2, links 2
+  McshUcdU1D2E0  ids 2, links 2
+  McshUcdU1D300  ids 2, links 2
+  McshUcdU1D360  ids 2, links 2
+  McshUcdU1D400  ids 2, links 2
+  McshUcdU1D80  ids 2, links 2
+  McshUcdU1D800  ids 2, links 2
+  McshUcdU1DC0  ids 2, links 2
+  McshUcdU1E00  ids 2, links 2
+  McshUcdU1E000  ids 2, links 2
+  McshUcdU1E800  ids 2, links 2
+  McshUcdU1E900  ids 2, links 2
+  McshUcdU1EC70  ids 2, links 2
+  McshUcdU1EE00  ids 2, links 2
+  McshUcdU1F00  ids 2, links 2
+  McshUcdU1F000  ids 2, links 2
+  McshUcdU1F030  ids 2, links 2
+  McshUcdU1F0A0  ids 2, links 2
+  McshUcdU1F100  ids 2, links 2
+  McshUcdU1F200  ids 2, links 2
+  McshUcdU1F300  ids 2, links 2
+  McshUcdU1F600  ids 2, links 2
+  McshUcdU1F650  ids 2, links 2
+  McshUcdU1F680  ids 2, links 2
+  McshUcdU1F700  ids 2, links 2
+  McshUcdU1F780  ids 2, links 2
+  McshUcdU1F800  ids 2, links 2
+  McshUcdU1F900  ids 2, links 2
+  McshUcdU1FA00  ids 2, links 2
+  McshUcdU2000  ids 2, links 2
+  McshUcdU20000  ids 1, links 1
+  McshUcdU2070  ids 2, links 2
+  McshUcdU20A0  ids 2, links 2
+  McshUcdU20D0  ids 2, links 2
+  McshUcdU2100  ids 2, links 2
+  McshUcdU2150  ids 2, links 2
+  McshUcdU2190  ids 2, links 2
+  McshUcdU2200  ids 2, links 2
+  McshUcdU2300  ids 2, links 2
+  McshUcdU2400  ids 2, links 2
+  McshUcdU2440  ids 2, links 2
+  McshUcdU2460  ids 2, links 2
+  McshUcdU2500  ids 2, links 2
+  McshUcdU2580  ids 2, links 2
+  McshUcdU25A0  ids 2, links 2
+  McshUcdU2600  ids 2, links 2
+  McshUcdU2700  ids 2, links 2
+  McshUcdU27C0  ids 2, links 2
+  McshUcdU27F0  ids 2, links 2
+  McshUcdU2800  ids 2, links 2
+  McshUcdU2900  ids 2, links 2
+  McshUcdU2980  ids 2, links 2
+  McshUcdU2A00  ids 2, links 2
+  McshUcdU2A700  ids 1, links 1
+  McshUcdU2B00  ids 2, links 2
+  McshUcdU2B740  ids 1, links 1
+  McshUcdU2B820  ids 1, links 1
+  McshUcdU2C00  ids 2, links 2
+  McshUcdU2C60  ids 2, links 2
+  McshUcdU2C80  ids 2, links 2
+  McshUcdU2CEB0  ids 1, links 1
+  McshUcdU2D00  ids 2, links 2
+  McshUcdU2D30  ids 2, links 2
+  McshUcdU2D80  ids 2, links 2
+  McshUcdU2DE0  ids 2, links 2
+  McshUcdU2E00  ids 2, links 2
+  McshUcdU2E80  ids 2, links 2
+  McshUcdU2F00  ids 2, links 2
+  McshUcdU2F800  ids 2, links 2
+  McshUcdU2FF0  ids 2, links 2
+  McshUcdU3000  ids 2, links 2
+  McshUcdU3040  ids 2, links 2
+  McshUcdU30A0  ids 2, links 2
+  McshUcdU3100  ids 2, links 2
+  McshUcdU3130  ids 2, links 2
+  McshUcdU3190  ids 2, links 2
+  McshUcdU31A0  ids 2, links 2
+  McshUcdU31C0  ids 2, links 2
+  McshUcdU31F0  ids 2, links 2
+  McshUcdU3200  ids 2, links 2
+  McshUcdU3300  ids 2, links 2
+  McshUcdU3400  ids 1, links 1
+  McshUcdU4DC0  ids 2, links 2
+  McshUcdU4E00  ids 1, links 1
+  McshUcdUA000  ids 2, links 2
+  McshUcdUA490  ids 2, links 2
+  McshUcdUA4D0  ids 2, links 2
+  McshUcdUA500  ids 2, links 2
+  McshUcdUA640  ids 2, links 2
+  McshUcdUA6A0  ids 2, links 2
+  McshUcdUA700  ids 2, links 2
+  McshUcdUA720  ids 2, links 2
+  McshUcdUA800  ids 2, links 2
+  McshUcdUA830  ids 2, links 2
+  McshUcdUA840  ids 2, links 2
+  McshUcdUA880  ids 2, links 2
+  McshUcdUA8E0  ids 2, links 2
+  McshUcdUA900  ids 2, links 2
+  McshUcdUA930  ids 2, links 2
+  McshUcdUA960  ids 2, links 2
+  McshUcdUA980  ids 2, links 2
+  McshUcdUA9E0  ids 2, links 2
+  McshUcdUAA00  ids 2, links 2
+  McshUcdUAA60  ids 2, links 2
+  McshUcdUAA80  ids 2, links 2
+  McshUcdUAAE0  ids 2, links 2
+  McshUcdUAB00  ids 2, links 2
+  McshUcdUAB30  ids 2, links 2
+  McshUcdUAB70  ids 2, links 2
+  McshUcdUABC0  ids 2, links 2
+  McshUcdUAC00  ids 1, links 1
+  McshUcdUD7B0  ids 2, links 2
+  McshUcdUD800  ids 1, links 1
+  McshUcdUDB80  ids 1, links 1
+  McshUcdUDC00  ids 1, links 1
+  McshUcdUE000  ids 1, links 1
+  McshUcdUE0000  ids 2, links 2
+  McshUcdUE0100  ids 2, links 2
+  McshUcdUF0000  ids 1, links 1
+  McshUcdUF900  ids 2, links 2
+  McshUcdUFB00  ids 2, links 2
+  McshUcdUFB50  ids 2, links 2
+  McshUcdUFE00  ids 2, links 2
+  McshUcdUFE10  ids 2, links 2
+  McshUcdUFE20  ids 2, links 2
+  McshUcdUFE30  ids 2, links 2
+  McshUcdUFE50  ids 2, links 2
+  McshUcdUFE70  ids 2, links 2
+  McshUcdUFF00  ids 2, links 2
+  McshUcdUFFF0  ids 2, links 2
+  McshTchInf000002  ids 7, links 7
+  McshTchInf000003  ids 13, links 13
+  McshTchInf000004  ids 1, links 1
+  McshTchInf000005  ids 10, links 10
+  McshTchInf000006  ids 24, links 24
+  McshTchInf000007  ids 13, links 13
+  McshTchInf000008  ids 9, links 10
+  McshTchInf000009  ids 16, links 16
+  McshTchInf000010  ids 42, links 44
+  McshTchInf000011  ids 16, links 16
+  McshTchInf000012  ids 42, links 42
+  McshTchInf000013  ids 8, links 8
+  McshTchInf000014  ids 18, links 17
+  McshTchInf000015  ids 72, links 73
+  McshTchInf000016  ids 48, links 48
+  McshTchInf000017  ids 19, links 19
+  McshTchInf000018  ids 33, links 33
+  McshTchInf000019  ids 19, links 19
+  McshTchInf000020  ids 10, links 10
+  McshTchInf000021  ids 11, links 11
+  McshTchInf000022  ids 2, links 2
+  McshTchInf000023  ids 1, links 1
+  McshTchInf000024  ids 13, links 13
+  McshTchInf000025  ids 3, links 3
+  McshTchInf000026  ids 8, links 8
+  McshTchInf000027  ids 1, links 1
+  McshTchInf000028  ids 10, links 10
+  McshTchInf000029  ids 5, links 5
+  McshTchInf000030  ids 18, links 18
+  McshTchInf000031  ids 17, links 17
+  McshTchInf000032  ids 9, links 9
+  McshTchInf000035  ids 1, links 1
+  McshTchInf000036  ids 12, links 12
+  McshTchInf000037  ids 2, links 2
+  McshTchInf000038  ids 4, links 4
+  McshTchInf000039  ids 47, links 48
+  McshTchInf000040  ids 3, links 3
+  McshTchInf000041  ids 8, links 8
+  McshTchInf000042  ids 1, links 1
+  McshTchPrgm000002  ids 6, links 6
+  McshTchPrgm000003  ids 4, links 4
+  McshTchPrgm000005  ids 1, links 1
+  McshTchPrgm000006  ids 1, links 1
+  McshWrdidxElln00  ids 1, links 1
+  McshWrdidxElln01alfa_1  ids 1, links 1
+  McshWrdidxElln01alfa_2  ids 1, links 1
+  McshWrdidxElln01alfa_3  ids 1, links 1
+  McshWrdidxElln01alfa_4  ids 1, links 1
+  McshWrdidxElln01alfa_5  ids 1, links 1
+  McshWrdidxElln02vita  ids 1, links 1
+  McshWrdidxElln03yama  ids 1, links 1
+  McshWrdidxElln04dhelta  ids 1, links 1
+  McshWrdidxElln05epsilon_1  ids 1, links 1
+  McshWrdidxElln05epsilon_2  ids 1, links 1
+  McshWrdidxElln05epsilon_3  ids 1, links 1
+  McshWrdidxElln06zita  ids 1, links 1
+  McshWrdidxElln07ita  ids 1, links 1
+  McshWrdidxElln08thita  ids 1, links 1
+  McshWrdidxElln09yxota  ids 1, links 1
+  McshWrdidxElln10kapa_1  ids 1, links 1
+  McshWrdidxElln10kapa_2  ids 1, links 1
+  McshWrdidxElln10kapa_3  ids 1, links 1
+  McshWrdidxElln11lamdha  ids 1, links 1
+  McshWrdidxElln12mi_1  ids 1, links 1
+  McshWrdidxElln12mi_2  ids 1, links 1
+  McshWrdidxElln12mi_3  ids 1, links 1
+  McshWrdidxElln12mi_4  ids 1, links 1
+  McshWrdidxElln12mi_5  ids 1, links 1
+  McshWrdidxElln13ni  ids 1, links 1
+  McshWrdidxElln14ksi  ids 1, links 1
+  McshWrdidxElln15omikron  ids 1, links 1
+  McshWrdidxElln16pi_1  ids 1, links 1
+  McshWrdidxElln16pi_2  ids 1, links 1
+  McshWrdidxElln16pi_3  ids 1, links 1
+  McshWrdidxElln17ro  ids 1, links 1
+  McshWrdidxElln18siyma_1  ids 1, links 1
+  McshWrdidxElln18siyma_2  ids 1, links 1
+  McshWrdidxElln18siyma_3  ids 1, links 1
+  McshWrdidxElln19taf  ids 1, links 1
+  McshWrdidxElln20ipsilon  ids 1, links 1
+  McshWrdidxElln21fi  ids 1, links 1
+  McshWrdidxElln22hxi  ids 1, links 1
+  McshWrdidxElln23psi  ids 1, links 1
+  McshWrdidxElln24oméya  ids 1, links 1
+  Mcsh000000  ids 1, links 1
+
+=== DANGLING-BEFORE-AFTER (0)
+  (none)
+
+
+--- second pass (id with a digit after str) ---
+specific-tree ids: str -> sptr — 2026-10-19   DRY=false
+
+ids renamed: 1 | links updated: 1 | files written: 1 | dangling links: 2912 -> 2912
+
+=== RENAMED (1)
+  McshLag000017  idLHmnm0011str2 -> idLHmnm0011sptr2
+
+=== CLASH (0)
+  (none)
+
+=== LINKS-PER-FILE (1)
+  McshLag000017  ids 1, links 1
+
+=== DANGLING-BEFORE-AFTER (0)
+  (none)

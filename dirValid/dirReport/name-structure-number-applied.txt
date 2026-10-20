@@ -1,0 +1,31 @@
+=== TITLE (11) — number removed from "NN_structure of X"
+  McshCor000008:447  <h1 id="idWhlsrtrH1">structure of whole
+  McshCor000011:285  <h1 id="idSysstrrFH1">structure of system
+  McshCor000011:2010  <h2 id="idSys002stcrH2">structure of systTree
+  McshHlth000002:1179  <h2 id="idSysOgnHmnsrtrFH2">structure of SystOrgans
+  McshHlth000004:1085  <h1 id="idCellHmnatt008H1">structure of cell
+  McshHlth000019:2990  <h2 id="idSysNrvsatt016srtrH2">structure of SystSense
+  McshNtr000002:418  <h1 id="idMtrlsrtrFH1">structure of material
+  McshNtr000003:310  <h1 id="idAtmsrtrFH1">structure of MtrlAtom
+  McshOgm000008:145  <h1 id="idOgmCllNsrtrH1">structure of ogmCellNo
+  McshTchInf000003:646  <h1 id="idCmrsrtrH1">structure of techCmpr
+  McshTchInf000015:6072  <h3 id="idDcntrtsrtrH3">structure of DeContract
+
+=== NAME-RENAMED (0) — X'NN_structure → X'structure
+
+
+=== NAME-REMOVED (11) — X'NN_structure dropped, X'structure already in the list
+  McshCor000008:453  <br>* McshEngl.whole'06_structure,  (dup of whole'structure)
+  McshCor000011:293  <br>* McshEngl.system'05_structure,  (dup of system'structure)
+  McshCor000011:2017  <br>* McshEngl.systTree'08_structure,  (dup of systTree'structure)
+  McshHlth000002:1186  <br>* McshEngl.SystOrgans'03_structure,  (dup of SystOrgans'structure)
+  McshHlth000004:1094  <br>* McshEngl.cell'18_structure,  (dup of cell'structure)
+  McshHlth000019:2997  <br>* McshEngl.SystSense'08_structure,  (dup of SystSense'structure)
+  McshNtr000002:424  <br>* McshEngl.material'08_structure,  (dup of material'structure)
+  McshNtr000003:316  <br>* McshEngl.MtrlAtom'09_structure,  (dup of MtrlAtom'structure)
+  McshOgm000008:151  <br>* McshEngl.ogmCellNo'10_structure,  (dup of ogmCellNo'structure)
+  McshTchInf000003:654  <br>* McshEngl.techCmpr'05_structure,  (dup of techCmpr'structure)
+  McshTchInf000015:6078  <br>* McshEngl.DeContract'12_structure,  (dup of DeContract'structure)
+
+=== NAME-REMOVED-EXTRA (1) — numbered variant, the unnumbered one is in the list
+  McshHlth000002:1932  <br>* McshEngl.organGland'04_structure-006,  (dup of organGland'structure-006)

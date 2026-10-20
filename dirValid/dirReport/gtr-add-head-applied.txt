@@ -1,21 +1,18 @@
 NO-NAME generic-trees: add "McshEngl.X_Gntr," + "===" — 2026-10-19   DRY=false
 
-heads added: 3 | files written: 3
+heads added: 4 | files written: 2
 
-=== ADDED (3) — head added
-  McshHlth000004:1940  idCellHmn016gntr  -> McshEngl.cellPlatelet_Gntr   first: <br>* cell_Gntr,
-  McshHlth000005:5498  idBoneHmn036gntr  -> McshEngl.boneHeel_Gntr   first: <br>* organBone_Gntr,
-  McshHlth000011:1422  idDssHmn002gntr  -> McshEngl.DssInfectiousNo_Gntr   first: <br>* disease_Gntr,
+=== ADDED (4) — head added
+  McshCor000002:2136  idMcsrftgntr  -> McshEngl.Mcsarcho_Gntr   first: <br>* Mcsattr_Gntr,
+  McshCor000002:2280  idMcsattGncchngntr  -> McshEngl.Mcsgenchn_Gntr   first: <br>* tree_node_chain_Gntr,
+  McshCor000002:2350  idMcsattWhlNSpcdvngntr  -> McshEngl.Mcsspecdiv_Gntr   first: <br>* <a class="clsPreview" href="../dirCor/McshCo
+  McshCor000011:3160  idSysMng003att003gntr  -> McshEngl.Plantinfosyst_Gntr   first: <br>* <a class="clsPreview" href="#idSysMng001att0
 
-=== NO-MAIN (136) — owner has several names and no !⇒ main-name — add one
-  McshCor000002:2135  idMcsrftgntr  8 names, no !⇒: Mcs'archetype | Mcsattr.archetype | Mcsattr.referent | Mcs'attAsArchetype
-  McshCor000002:2278  idMcsattGncchngntr  2 names, no !⇒: generic-chain--Mcsattr | Mcsattr.generic-chain
-  McshCor000002:2347  idMcsattWhlNSpcdvngntr  10 names, no !⇒: Mcsattr.division.specifics | Mcsattr.specifics-division | Mcs-division.specifics | Mcs'attAsSpecifics-division
-  McshCor000011:3158  idSysMng003att003gntr  2 names, no !⇒: SystMngPlant'att003-info-sys | SystMngPlant'info-sys
+=== NO-MAIN (132) — owner has several names and no !⇒ main-name — add one
   McshCor000013:424  idBrnginfarchgntr  6 names, no !⇒: archetype-of-braining | archetype-of-infoMindBio | FctgBrainingBio'04_archetype | FctgBrainingBio'archetype
-  McshCor000013:441  idBrngstxgntr  3 names, no !⇒: FctgBrainingBio'05-syntax | FctgBrainingBio'syntax | syntax.braining
+  McshCor000013:441  idBrngstxgntr  3 names, no !⇒: FctgBrainingBio'05-syntax | FctgBrainingBio'syntax | syntax.brainingBio
   McshCor000018:2577  idBrngHmnFct004stmlgntr  3 names, no !⇒: argtEmoting.stimulus | FctgEmoting'04_stimulus | FctgEmoting'stimulus
-  McshHlth000004:1458  idCellHmn010gntr  3 names, no !⇒: cell.010-hair | cell.hair-010 | hair-cell.human
+  McshHlth000004:1457  idCellHmn010gntr  3 names, no !⇒: cell.010-hair | cell.hair-010 | hair-cell.human
   McshHlth000005:3505  idBoneHmn007gntr  4 names, no !⇒: organBone.frontal-bone | organBone.007-frontal-bone | frontal-bone | skeletonHead.frontal-bone-007
   McshHlth000005:3532  idBoneHmn008gntr  4 names, no !⇒: organBone.parietal | organBone.008-parietal | parietal-bone | skeletonHead.parietal-008
   McshHlth000005:3560  idBoneHmn009gntr  4 names, no !⇒: organBone.occipital | organBone.009-occipital | occipital-bone | skeletonHead.occipital-009
@@ -25,26 +22,26 @@ heads added: 3 | files written: 3
   McshHlth000005:3668  idBoneHmn013gntr  4 names, no !⇒: organBone.zygomatic | organBone.013-zygomatic | zygomatic-bone | skeletonHead.zygomatic-013
   McshHlth000005:3698  idBoneHmn014gntr  5 names, no !⇒: organBone.upper-jaw | organBone.014-upper-jaw | maxillae | upper-jaw
   McshHlth000008:57  idHlthHmnatt001gntr  4 names, no !⇒: health'01_human | health'att001-human | health'human | humanHlth
-  McshHlth000011:2983  idDssHmn132gntr  5 names, no !⇒: disease.132-hypotension | disease.hypotension-132 | hypotension | low-blood-pressure
-  McshHlth000011:3056  idDssHmn039gntr  6 names, no !⇒: disease.039-angina | disease.angina-pectoris-039 | angina-pectoris | cardialgia
-  McshHlth000011:3608  idDssHmn165gntr  3 names, no !⇒: disease.165-nephritis | disease.nephritis-165 | nephritis
-  McshHlth000011:4630  idDssHmn075gntr  3 names, no !⇒: disease.075-dermatitis | disease.dermatitis-075 | dermatitis-disease
-  McshHlth000011:6407  idDssHmn111gntr  3 names, no !⇒: disease.111-astigmatism | disease.astigmatism-111 | astigmatism
-  McshHlth000011:6471  idDssHmn118gntr  3 names, no !⇒: disease.118-hypermetropia | disease.hypermetropia-118 | hypermetropia
-  McshHlth000011:6502  idDssHmn119gntr  5 names, no !⇒: disease.119-myopia | disease.myopia-119 | disease.nearsightedness | nearsightedness
-  McshHlth000011:8149  idDssHmn113gntr  4 names, no !⇒: disease.113-aerophagia | disease.aerophagia-113 | DssAerophagia | aerophagia
-  McshHlth000011:11531  idDssHmn200gntr  3 names, no !⇒: disease.200-undernourishment | disease.undernourishment-200 | undernourishment
-  McshHlth000011:12875  idDssHmn121gntr  3 names, no !⇒: disease.121-jaundice | disease.jaundice-121 | jaundice, /jjóndis/
-  McshHlth000011:12896  idDssHmn122gntr  3 names, no !⇒: disease.122-obstructive-jaundice | disease.obstructive-jaundice-122 | obstructive-jaundice
-  McshHlth000011:12921  idDssHmn123gntr  3 names, no !⇒: disease.123-cholecystitis | disease.cholecystitis-123 | cholecystitis
-  McshHlth000011:12947  idDssHmn125gntr  4 names, no !⇒: cholelithiasis | disease.125-gallstone | disease.gallstone-125 | gallstone-disease
-  McshHlth000011:13168  idDssHmn133gntr  3 names, no !⇒: disease.133-pneumonia | disease.pneumonia-133 | pneumonia
-  McshHlth000011:13845  idDssHmn143gntr  3 names, no !⇒: disease.143-inflammation | disease.inflammation-143 | inflammation
-  McshHlth000011:14007  idDssHmn147gntr  4 names, no !⇒: disease.147-chronic-obstructive-pulmonary | disease.chronic-obstructive-pulmonary-147 | chronic-obstructive-pulmonary-disease-(copd) | copd
-  McshHlth000011:14283  idDssHmn099gntr  4 names, no !⇒: disease.099-flat-feet | disease.flat-feet-099 | flat-feet | foot-arch--disease
+  McshHlth000011:2985  idDssHmn132gntr  5 names, no !⇒: disease.132-hypotension | disease.hypotension-132 | hypotension | low-blood-pressure
+  McshHlth000011:3058  idDssHmn039gntr  6 names, no !⇒: disease.039-angina | disease.angina-pectoris-039 | angina-pectoris | cardialgia
+  McshHlth000011:3610  idDssHmn165gntr  3 names, no !⇒: disease.165-nephritis | disease.nephritis-165 | nephritis
+  McshHlth000011:4632  idDssHmn075gntr  3 names, no !⇒: disease.075-dermatitis | disease.dermatitis-075 | dermatitis-disease
+  McshHlth000011:6409  idDssHmn111gntr  3 names, no !⇒: disease.111-astigmatism | disease.astigmatism-111 | astigmatism
+  McshHlth000011:6473  idDssHmn118gntr  3 names, no !⇒: disease.118-hypermetropia | disease.hypermetropia-118 | hypermetropia
+  McshHlth000011:6504  idDssHmn119gntr  5 names, no !⇒: disease.119-myopia | disease.myopia-119 | disease.nearsightedness | nearsightedness
+  McshHlth000011:8151  idDssHmn113gntr  4 names, no !⇒: disease.113-aerophagia | disease.aerophagia-113 | DssAerophagia | aerophagia
+  McshHlth000011:11533  idDssHmn200gntr  3 names, no !⇒: disease.200-undernourishment | disease.undernourishment-200 | undernourishment
+  McshHlth000011:12877  idDssHmn121gntr  3 names, no !⇒: disease.121-jaundice | disease.jaundice-121 | jaundice, /jjóndis/
+  McshHlth000011:12898  idDssHmn122gntr  3 names, no !⇒: disease.122-obstructive-jaundice | disease.obstructive-jaundice-122 | obstructive-jaundice
+  McshHlth000011:12923  idDssHmn123gntr  3 names, no !⇒: disease.123-cholecystitis | disease.cholecystitis-123 | cholecystitis
+  McshHlth000011:12949  idDssHmn125gntr  4 names, no !⇒: cholelithiasis | disease.125-gallstone | disease.gallstone-125 | gallstone-disease
+  McshHlth000011:13170  idDssHmn133gntr  3 names, no !⇒: disease.133-pneumonia | disease.pneumonia-133 | pneumonia
+  McshHlth000011:13847  idDssHmn143gntr  3 names, no !⇒: disease.143-inflammation | disease.inflammation-143 | inflammation
+  McshHlth000011:14009  idDssHmn147gntr  4 names, no !⇒: disease.147-chronic-obstructive-pulmonary | disease.chronic-obstructive-pulmonary-147 | chronic-obstructive-pulmonary-disease-(copd) | copd
+  McshHlth000011:14285  idDssHmn099gntr  4 names, no !⇒: disease.099-flat-feet | disease.flat-feet-099 | flat-feet | foot-arch--disease
   McshHlth000013:9266  idFoodHmn149gntr  4 names, no !⇒: food.149-tas-kebab | food.tas-kebab-149 | meatKebab | foodMeat.tas-kebab
   McshHlth000014:524  idMedHmnognFgntr  2 names, no !⇒: medication'organization | ogznMed
-  McshHlth000014:2378  idMedHmn025gntr  3 names, no !⇒: medication.025-clomifen | medication.clomifen-025 | clomifen-medication-025
+  McshHlth000014:2380  idMedHmn025gntr  3 names, no !⇒: medication.025-clomifen | medication.clomifen-025 | clomifen-medication-025
   McshHlth000016:790  idThrpHmnPhrmcgntr  2 names, no !⇒: pharmacotherapy | therapy.pharmacotherapy
   McshLag000007:22049  idLHmnmargoMtwdgntr  2 names, no !⇒: multiword-ondoname | Hmnm_argu.multiword
   McshLag000007:26186  idLHmnmConjWrdmnygntr  4 names, no !⇒: Hmnmconj.multiword | Hmnmconj.word-many | many-word-Hmnmconj | multiword-Hmnmconj
@@ -108,13 +105,13 @@ heads added: 3 | files written: 3
   McshTchInf000016:15646  idDbcPmsjoinNgntr  2 names, no !⇒: AgntBkcn.permissionless-to-join | permissionless-to-join--blockchain-net
   McshTchInf000016:15666  idDbcPbcgntr  4 names, no !⇒: AgntBkcn.public | permissionless--blockchain-net | privateNo--blockchain-net | public--blockchain-net
   McshTchInf000016:15686  idDbcPbcNgntr  4 names, no !⇒: AgntBkcn.publicNo | permissioned--blockchain-net | private--blockchain-net | publicNo--blockchain-net
-  McshTchInf000021:61  idEosprlgntr  2 names, no !⇒: Deos'protocol | Deos-protocol
-  McshTchInf000021:80  idEosprlwprgntr  3 names, no !⇒: Deos'protocol'white-paper | Deos'white-paper | Deos-white-paper
-  McshTchInf000021:937  idEosnodgntr  2 names, no !⇒: Deos'node | Deos-node
-  McshTchInf000021:1280  idEosblkgntr  2 names, no !⇒: Deos-block | Deos'block
-  McshTchInf000021:3086  idEosogngntr  2 names, no !⇒: Deos'organization | Deos-organization
-  McshTchInf000021:3106  idEosognBkongntr  2 names, no !⇒: Block.one | Deos'Block.one
-  McshTchInf000021:3243  idEosdonggntr  2 names, no !⇒: Deos-doing | Deos'doing
+  McshTchInf000021:61  idEosprlgntr  2 names, no !⇒: Agnteos'protocol | Agnteos-protocol
+  McshTchInf000021:80  idEosprlwprgntr  3 names, no !⇒: Agnteos'protocol'white-paper | Agnteos'white-paper | Agnteos-white-paper
+  McshTchInf000021:937  idEosnodgntr  2 names, no !⇒: Agnteos'node | Agnteos-node
+  McshTchInf000021:1283  idEosblkgntr  2 names, no !⇒: Agnteos-block | Agnteos'block
+  McshTchInf000021:3098  idEosogngntr  2 names, no !⇒: Agnteos'organization | Agnteos-organization
+  McshTchInf000021:3118  idEosognBkongntr  2 names, no !⇒: Block.one | Agnteos'Block.one
+  McshTchInf000021:3255  idEosdonggntr  2 names, no !⇒: Agnteos-doing | Agnteos'doing
   McshTchInf000022:57  idFairnetprlgntr  3 names, no !⇒: Faircoin-net'protocol | Faircoin_net'protocol | protocol-of-Faircoin-net
   McshTchInf000022:71  idFairnetwprgntr  2 names, no !⇒: Faircoin-net'white-paper | white-paper--of--Faircoin-network
   McshTchInf000022:671  idFairnetnodgntr  3 names, no !⇒: Faircoin-net'node | Faircoin_net'node | node-of-Faircoin-net
@@ -145,11 +142,8 @@ heads added: 3 | files written: 3
   McshTchInf000030:1277  idLRustsuntNgntr  2 names, no !⇒: Rust_lago'number | Rustn
   McshTchInf000030:2841  idLRustrootgntr  2 names, no !⇒: Rust_lago'root | Rustalgo'root
 
-=== NO-NAM (4) — owner has no {B}nam name:: paragraph
-  McshTchInf000021:1266  idEoschngntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
-  McshTchInf000021:1755  idEosevugntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
-  McshTchInf000021:1926  idEosgovgntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
-  McshTchInf000021:2895  idEoswltgntr  first: <br>* <a class="clsPreview" href="../dirTchInf/McshTchInf000
+=== NO-NAM (0) — owner has no {B}nam name:: paragraph
+  (none)
 
 === COLLIDES (0) — X_Gntr is already the name of another generic-tree
   (none)
