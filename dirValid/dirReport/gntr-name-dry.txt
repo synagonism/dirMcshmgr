@@ -1,6 +1,6 @@
-generic-tree names: uniqueness + rename -Gntr -> _Gntr — 2026-10-20   DRY=true
+generic-tree names: uniqueness + rename -Gntr -> _Gntr — 2026-10-21   DRY=true
 
-generic-tree:: paragraphs: 3124 | named: 3124 | distinct names: 3122
+generic-tree:: paragraphs: 3286 | named: 3286 | distinct names: 3284
 tokens renamed: 0 in 0 files (dry)
 
 === SAME-NAME (2) — two or more generic-trees have the same name
@@ -8,8 +8,8 @@ tokens renamed: 0 in 0 files (dry)
     McshStn000002:202  idStnOgmatt012gntr
     McshStn000003:119  idSfrOgmgntr
   Rustn_Gntr (2)
-    McshTchInf000030:1334  idLRustsuntNgntr
-    McshTchInf000030:1350  idLRustsuntNgntr
+    McshTchInf000030:1341  idLRustsuntNgntr
+    McshTchInf000030:1357  idLRustsuntNgntr
 
 === SAME-NAME-IGNORING-CASE (0) — names that differ only in letter case
   (none)

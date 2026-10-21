@@ -114,3 +114,20 @@ T41. {2026-10-20} DONE: MvrlGstr01 fixed for McshHlth000002 (59 -> 3 warnings; a
      SystEndocrine, SystIntegumentary, Hmbdarm, DissCirrhosis, tissueCover, organCartilage, organMesentery, HmbdReproducing.
      LEFT 3: idOgnHmn034 (large intestine) and idBdyHmn459 (subcutaneous tissue) have no !⇒ main-name.
      Script: scratchpad/gstr01-fix.js <McshFile> [--dry]. List: dirReport/mvrlgstr01-fix-McshHlth000002-applied.txt.
+     -> {2026-10-21} gen-spec-rule-report.txt regenerated: OK 896, INDIRECT 35, MISSING 213, Y-NO-GENERIC-TREE 390, ITEM-NOT-A-CONCEPT 5.
+
+T42. {2026-10-21} DONE: gen-spec rule MISSING: X added to Y's generic-tree:: — 163 lines in 143 generic-trees, 41 files
+     (before "... entity_Gntr,", after the last generic otherwise; 2 chains ending at entity_Gntr got X at the top: body, substanceHlth).
+     MISSING 213 -> 43; OK 896 -> 1066. LEFT: 34 where Y is a whole page (link without #id — the item may mean another concept
+     of that page, e.g. generic-of-entity-gtr!@McshCor000003 would have changed entity itself), 9 in McshOgm000006 whose X
+     (idBdyHmnatt015025, essential amino acid) has no _Gntr and no !⇒ main-name. List: dirReport/gen-spec-missing-fix-applied.txt.
+
+T43. {2026-10-21} DONE: gstree-report.js, specdiv-report.js, specdiv-move.js accept the spelling "X.Specsdiv.…" as a specific-division
+     (pattern \bspe?cs?-?div\b, any case). GS-TREE report: 2428 of 2428. Specific-divisions outside a GS-TREE: 1 (whole has no GS-TREE).
+
+T44. {2026-10-21} DONE: gen-spec rule Y-NO-GENERIC-TREE: 162 specifics Y (with a clear !⇒ main-name) got a generic-tree listing their X:
+     76 with part sections -> a GS-TREE {Y}gstr (h = Y+1, {2026-10-21}) before Y's first part; 86 without -> a {Y}gntr generic-tree:: para
+     at the end of Y. 66 files, only added lines (two passes: a file lock stopped the first write at McshStnlaw000004).
+     Then 27 Ys that are also part-sections of another generic got that generic too (MISSING fix again, 9 files).
+     Rule report: Y-NO-GENERIC-TREE 390 -> 201 (all 187 concepts without a !⇒ main-name), MISSING 43, OK 1282. GS-TREE report 2504 of 2504.
+     Lists: dirReport/gen-spec-nogntr-fix-applied.txt, gen-spec-nogntr-fix-dry.txt (the 187 NO-MAIN-NAME), gen-spec-missing-fix-applied-T44.txt.

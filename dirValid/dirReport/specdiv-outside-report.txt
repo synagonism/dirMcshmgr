@@ -1,9 +1,10 @@
-specific-divisions OUTSIDE a GENERIC-SPECIFIC-TREE — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-20
+specific-divisions OUTSIDE a GENERIC-SPECIFIC-TREE — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-21
 
 specific-division = title or label with spec-div | specs-div | spcs-div | specs-division | specific-division
-inside a GS-TREE (correct): 186 sections, 1 para-concepts | OUTSIDE: 4
+inside a GS-TREE (correct): 189 sections, 1 para-concepts | OUTSIDE: 1
   WHOLE-HAS-GSTREE    0  section outside the GS-TREE, but its whole HAS a GS-TREE (could move into it)
-  WHOLE-NO-GSTREE     4  section outside any GS-TREE, its whole has NO GS-TREE
+  WHOLE-NO-GSTREE     1  section outside any GS-TREE, its whole has NO GS-TREE
   PARA-OUTSIDE        0  para-concept with a specific-division label, outside any GS-TREE
 
-=== WHOLE-NO-GSTREE (4) — section outside any GS-TREE, its whole has NO GS-TREE
+=== WHOLE-NO-GSTREE (1) — section outside any GS-TREE, its whole has NO GS-TREE
+  McshCor000002:2361  idMcsattWhlNSpcdvn  h3 "Mcsattr.specifics-division"  whole idMcsattSptp h2 "Mcsattr.specific-type"

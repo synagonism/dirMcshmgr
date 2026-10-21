@@ -1,0 +1,71 @@
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-21   DRY=false
+
+MISSING rows: 70 | generic-trees extended: 19 | lines added: 27 | skipped: 9 | files written: 9
+
+=== ADDED (19)
+  McshCor000009:713  idGnrcmsrggnrcgntr  += generic_Gntr,   (Y measured)
+  McshCor000018:4845  idBrngHmnFct001gntr  += FctgBraining_Gntr,   (Y feeling)
+  McshEdu000005:7533  idSMath017gntr  += mathLogic_Gntr,   (Y Set-theory)
+  McshLag000007:29982  idLHmnmtsscsmParagntr  += systSentTitless_Gntr,   (Y paragraph)
+  McshLag000007:29952  idLHmnmtsscsmCmpdgntr  += systSentTitless_Gntr,   (Y compound-sentence)
+  McshLag000007:21011  idLHmnmNounMaingntr  += noun_mebr_Gntr,   (Y nominative-case)
+  McshLag000007:17056  idLHmnmuntCpgmgntr  += HmnmUnit_Gntr,   (Y conceptogram)
+  McshTchInf000012:8702  idLJsndtolAnsgntr  += Jsndtool_Gntr,   (Y code-analysis-tool)
+  McshTchInf000020:2015  idChblhtgntr  += Chrono.tech_Evu_Gntr,   (Y LH-token)
+  McshTchInf000032:587  idGitcmdStashgntr  += Gitcmd_Gntr, GitcmdBranmerg_Gntr,   (Y git-stash | git-stash)
+  McshTchInf000032:568  idGitcmdTaggntr  += Gitcmd_Gntr, GitcmdBranmerg_Gntr,   (Y git-tag | git-tag)
+  McshTchInf000032:549  idGitcmdLoggntr  += Gitcmd_Gntr, GitcmdBranmerg_Gntr,   (Y git-log | git-log)
+  McshTchInf000032:530  idGitcmdCheckoutgntr  += Gitcmd_Gntr, GitcmdBranmerg_Gntr,   (Y git-checkout | git-checkout)
+  McshTchInf000032:401  idGitcmdDiffgntr  += Gitcmd_Gntr, Gitcmd.versioning_Gntr,   (Y git-diff | git-diff)
+  McshTchInf000032:381  idGitcmdStatusgntr  += Gitcmd_Gntr, Gitcmd.versioning_Gntr,   (Y git-status | git-status)
+  McshTchInf000032:307  idGitcmdCommitgntr  += Gitcmd_Gntr, Gitcmd.repo-creating_Gntr,   (Y git-commit | git-commit)
+  McshTchInf000032:283  idGitcmdClonegntr  += Gitcmd_Gntr, Gitcmd.repo-creating_Gntr,   (Y git-clone | git-clone)
+  McshTchInf000036:6297  idTchNnRtnngntr  += techNn_Gntr,   (Y recurrent-neural-network)
+  McshTchInf000039:5624  idLKnlg017Cgifgntr  += lagoCgaf_Gntr,   (Y lagoCgaf.CGIF)
+
+=== Y-IS-A-PAGE (34)
+  McshCor000003:367  generic-of-entity-gtr (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks attribute_Gntr
+  McshCor000003:368  specific-of-entity (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks attribute_Gntr
+  McshCor000003:6396  relation (McshCor000005#(page))  generic-tree McshCor000005:339 lacks doingNo_Gntr
+  McshCor000005:1703  language-of-organisms (McshLag000005#(page))  generic-tree McshLag000005:163 lacks RltnMapping_Gntr
+  McshCor000014:196  decentralized-crypto-chain--network (McshTchInf000015#(page))  generic-tree McshTchInf000015:13544 lacks SystNet_Gntr
+  McshHlth000006:216  organism-disorder (McshHlth000010#(page))  generic-tree McshHlth000010:243 lacks disorderBio_Gntr
+  McshHlth000006:217  human-disorder (McshHlth000011#(page))  generic-tree McshHlth000011:672 lacks disorderBio_Gntr
+  McshHlth000006:399  organism-health (McshHlth000007#(page))  generic-tree McshHlth000007:174 lacks healthBio_Gntr
+  McshHlth000006:401  human-health (McshHlth000008#(page))  generic-tree McshHlth000008:1454 lacks healthBio_Gntr
+  McshHlth000008:527  food (McshHlth000013#(page))  generic-tree McshHlth000013:870 lacks substanceHlth_Gntr
+  McshHlth000019:3614  organBrain (McshHlth000003#(page))  generic-tree McshHlth000003:3829 lacks organNervous_Gntr
+  McshHlth000019:5687  braining (McshCor000018#(page))  generic-tree McshCor000018:187 lacks SystNervous'doing_Gntr
+  McshLag000003:1010  sensorial-concept (McshCor000002#(page))  generic-tree McshCor000002:5117 lacks concept_Gntr
+  McshLag000003:1831  sensorial-concept (McshCor000002#(page))  generic-tree McshCor000002:5117 lacks infoSenso_Gntr
+  McshLag000007:2606  entity (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks personLagoB_Gntr
+  McshLag000007:32155  alphabetic-Hmnm_lago (McshLag000008#(page))  generic-tree McshLag000008:811 lacks Text_lago_Gntr
+  McshLag000007:32840  sinagu-language (McshLag000010#(page))  generic-tree McshLag000010:5993 lacks Glbl_lago_Gntr
+  McshOgm000005:316  food (McshHlth000013#(page))  generic-tree McshHlth000013:870 lacks substanceHumn_Gntr
+  McshStn000002:423  group-of-organisms (McshStn000005#(page))  generic-tree McshStn000005:275 lacks SctnOgms_Gntr
+  McshStn000002:579  consumption-socialitation (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Sctn_Gntr
+  McshStn000002:580  production-socialitation (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Sctn_Gntr
+  McshStn000002:581  societyHumn (McshStn000009#(page))  generic-tree McshStn000009:8298 lacks Sctn_Gntr
+  McshStn000008:1242  household-organization (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Ogzn_Gntr
+  McshStn000008:1243  householdNo-organization (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Ogzn_Gntr
+  McshStn000008:1596  consumption-Socogzn (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Socogzn_Gntr
+  McshStn000008:1597  production-Socogzn (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Socogzn_Gntr
+  McshStn000009:9901  autonomous-society (McshStn000019#(page))  generic-tree McshStn000019:882 lacks SocCptlAftr_Gntr
+  McshTch000002:669  info-tech (McshTchInf000002#(page))  generic-tree McshTchInf000002:674 lacks techHumn_Gntr
+  McshTchInf000004:123  DLT (McshTchInf000015#(page))  generic-tree McshTchInf000015:13544 lacks techFin_Gntr
+  McshTchInf000005:646  lagHitp (McshTchInf000008#(page))  generic-tree McshTchInf000008:3924 lacks lagCpgmNo_Gntr
+  McshTchInf000005:1329  lagHitp (McshTchInf000008#(page))  generic-tree McshTchInf000008:3924 lacks Tdoc_lagoMrkp_Gntr
+  McshTchInf000005:1330  lagHtml (McshTchInf000035#(page))  generic-tree McshTchInf000035:464 lacks Tdoc_lagoMrkp_Gntr
+  McshTchInf000007:1474  lagMcsh (McshTchInf000009#(page))  generic-tree McshTchInf000009:3879 lacks lagCnklMrkp_Gntr
+  McshTchInf000008:3937  Hitp_lagoMcs (McshTchInf000009#(page))  generic-tree McshTchInf000009:3879 lacks Hitp_lago_Gntr
+
+=== SKIPPED (9)
+  McshOgm000006:420  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y histidine, from McshOgm000006:217)
+  McshOgm000006:400  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y lysine, from McshOgm000006:216)
+  McshOgm000006:377  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y isoleucine, from McshOgm000006:215)
+  McshOgm000006:357  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y leucine, from McshOgm000006:214)
+  McshOgm000006:333  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y methionine, from McshOgm000006:213)
+  McshOgm000006:313  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y tryptophan, from McshOgm000006:212)
+  McshOgm000006:294  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y threonine, from McshOgm000006:211)
+  McshOgm000006:274  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y valine, from McshOgm000006:210)
+  McshOgm000006:254  McshOgm000006#idBdyHmnatt015025  has no _Gntr name and no clear main-name  (Y phenylalanine, from McshOgm000006:209)

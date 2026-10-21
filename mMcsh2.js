@@ -1355,18 +1355,26 @@ let fContainersInsert = function () {
     return true
   }
 
-  // go-to for a-'!@'-reference preview: Enter navigates to the-referenced page#id,
+  // navigate to the-remembered concept-url and hide the-preview. For a-same-file
+  // target (only the-#id changes) the-page does NOT reload, so hide explicitly.
+  function fPreviewGoto() {
+    const sHref = sPreviewRefHref
+    oEltCnrPreviewDiv.style.display = 'none'
+    sPreviewRefHref = ''
+    location.href = sHref
+  }
+  // go-to for a-preview: Enter navigates to the-referenced page#id,
   // only while such a-preview is-open and the-focus is-not the-search-input.
   addEventListener('keyup', function (oEvtIn) {
     if (oEvtIn.key === 'Enter' && sPreviewRefHref &&
         oEltCnrPreviewDiv.style.display !== 'none' &&
         document.activeElement !== oEltTabSearchIpt) {
-      location.href = sPreviewRefHref
+      fPreviewGoto()
     }
   })
-  // go-to by clicking the-preview-cnr while a-'!@'-reference preview is-open
+  // go-to by clicking the-preview-cnr while such a-preview is-open
   oEltCnrPreviewDiv.addEventListener('click', function () {
-    if (sPreviewRefHref) location.href = sPreviewRefHref
+    if (sPreviewRefHref) fPreviewGoto()
   })
 
   oEltTabSearchOl.addEventListener('keyup', function (oEvtIn) {
