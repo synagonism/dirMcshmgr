@@ -1,52 +1,18 @@
 RULE: IF generic X has specific Y THEN Y has generic X — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-21
 
-specific-tree:: paragraphs: 2878 | specific items with a link (checked): 4487 | items as plain text (not checked): 15053
+specific-tree:: paragraphs: 2878 | specific items with a link (checked): 4481 | items as plain text (not checked): 15068
 X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (its section, GS-TREE or generic-tree::)
 
-  MISSING                43  Y has a generic-tree:: but it does NOT list X
-  Y-NO-GENERIC-TREE     201  Y has no generic-tree:: (so X is not listed)
-  ITEM-NOT-A-CONCEPT      5  the specific item links to a missing target
-  OK                   1282  Y lists X as generic (rule holds)
+  MISSING                10  Y has a generic-tree:: but it does NOT list X
+  Y-NO-GENERIC-TREE     199  Y has no generic-tree:: (so X is not listed)
+  ITEM-NOT-A-CONCEPT      0  the specific item links to a missing target
+  OK                   1315  Y lists X as generic (rule holds)
   INDIRECT               39  Y does not list X, but reaches X through its generic chain
-  Y-NESTED-IN-X        2917  Y has no generic-tree:: but is a sub-section of X (generic by nesting)
+  Y-NESTED-IN-X        2918  Y has no generic-tree:: but is a sub-section of X (generic by nesting)
 
-=== MISSING (43) — Y has a generic-tree:: but it does NOT list X
-  McshCor000003:367  generic-of-entity-gtr (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks attribute_Gntr
+=== MISSING (10) — Y has a generic-tree:: but it does NOT list X
+  McshLag000007:2606  entity (McshCor000003#(page))  generic-tree McshCor000003:5108 lacks personLagoB_Gntr
       its generics: entity = the-most-generic,
-  McshCor000003:368  specific-of-entity (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks attribute_Gntr
-      its generics: entity = the-most-generic,
-  McshCor000003:6396  relation (McshCor000005#(page))  generic-tree McshCor000005:339 lacks doingNo_Gntr
-      its generics: bodyNo_Gntr, | entity_Gntr,
-  McshCor000005:1703  language-of-organisms (McshLag000005#(page))  generic-tree McshLag000005:163 lacks RltnMapping_Gntr
-      its generics: mapping-method!@McshCor000005#idRlnMpgmt | method!@McshLag000003#idInfHmnBrn008, | infoMindBio_Gntr, | model!@McshCor000005#idRlnMpgmdl, | entity_Gntr,
-  McshCor000014:196  decentralized-crypto-chain--network (McshTchInf000015#(page))  generic-tree McshTchInf000015:13544 lacks SystNet_Gntr
-      its generics: netAlgo, | peer-to-peer-network, | Internet, | computer-network, | computer-system, | info-tech, | technology, | product-satisfier, | satisfier, | human-economic-entity, | human-entity, | entity_Gntr,
-  McshHlth000006:216  organism-disorder (McshHlth000010#(page))  generic-tree McshHlth000010:243 lacks disorderBio_Gntr
-      its generics: disorder-of-organism,
-  McshHlth000006:217  human-disorder (McshHlth000011#(page))  generic-tree McshHlth000011:672 lacks disorderBio_Gntr
-      its generics: disease-of-organism, | wellness!@McshHlth000008#idHlthHmnatt003 | symptom, | cause, | diagnosis, | therapy, | protection, | diet, | stats, | resource, | doing, | evoluting, | therapy,
-  McshHlth000006:399  organism-health (McshHlth000007#(page))  generic-tree McshHlth000007:174 lacks healthBio_Gntr
-      its generics: Enttstate_Gntr,
-  McshHlth000006:401  human-health (McshHlth000008#(page))  generic-tree McshHlth000008:1454 lacks healthBio_Gntr
-      its generics: organism's-health!@McshHlth000007,
-  McshHlth000008:527  food (McshHlth000013#(page))  generic-tree McshHlth000013:870 lacks substanceHlth_Gntr
-      its generics: satisfier_Gntr, | foodBio_Gntr, | nutrient_Gntr,
-  McshHlth000019:3614  organBrain (McshHlth000003#(page))  generic-tree McshHlth000003:3829 lacks organNervous_Gntr
-      its generics: mamalian-brain⧺cptEpistem21.2, | brain⧺cptEpistem21⧺, | organ_Gntr,
-  McshHlth000019:5687  braining (McshCor000018#(page))  generic-tree McshCor000018:187 lacks SystNervous'doing_Gntr
-      its generics: bodyHumn'doing_Gntr, | Hmbddoing_Gntr,
-  McshLag000003:1010  sensorial-concept (McshCor000002#(page))  generic-tree McshCor000002:5117 lacks concept_Gntr
-      its generics: informationBrain!@McshLag000003, | infoBio, | model!@McshCor000005#idRlnMpgmdl, | entity_Gntr,
-  McshLag000003:1831  sensorial-concept (McshCor000002#(page))  generic-tree McshCor000002:5117 lacks infoSenso_Gntr
-      its generics: informationBrain!@McshLag000003, | infoBio, | model!@McshCor000005#idRlnMpgmdl, | entity_Gntr,
-  McshLag000007:2606  entity (McshCor000003#(page))  generic-tree McshCor000003:5096 lacks personLagoB_Gntr
-      its generics: entity = the-most-generic,
-  McshLag000007:32159  alphabetic-Hmnm_lago (McshLag000008#(page))  generic-tree McshLag000008:811 lacks Text_lago_Gntr
-      its generics: human-mind-language!@McshLag000007, | language, | mapping-method, | method, | info, | model, | entity_Gntr,
-  McshLag000007:32844  sinagu-language (McshLag000010#(page))  generic-tree McshLag000010:5993 lacks Glbl_lago_Gntr
-      its generics: lagoCnrd_Gntr | alphabetic-language!@McshLag000008, | oral-language!@McshLag000009, | common-language!@McshLag000007#idLHmnmKm | human-mind-language!@McshLag000007, | language, | mapping-method, | method, | info, | model, | entity_Gntr,
-  McshOgm000005:316  food (McshHlth000013#(page))  generic-tree McshHlth000013:870 lacks substanceHumn_Gntr
-      its generics: satisfier_Gntr, | foodBio_Gntr, | nutrient_Gntr,
   McshOgm000006:209  phenylalanine (McshOgm000006#idPrtnOgmatt003003Pnln)  generic-tree McshOgm000006:254 lacks idBdyHmnatt015025
       its generics: essential-amino-acid,
   McshOgm000006:210  valine (McshOgm000006#idPrtnOgmatt003003valn)  generic-tree McshOgm000006:274 lacks idBdyHmnatt015025
@@ -65,52 +31,17 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
       its generics: essential-amino-acid,
   McshOgm000006:217  histidine (McshOgm000006#idPrtnOgmatt003003Hsdn)  generic-tree McshOgm000006:420 lacks idBdyHmnatt015025
       its generics: essential-amino-acid,
-  McshStn000002:423  group-of-organisms (McshStn000005#(page))  generic-tree McshStn000005:275 lacks SctnOgms_Gntr
-      its generics: groupOgsm, | biosystem!@McshOgm000002, | SystDynamic_Gntr, | system_Gntr, | whole-entity!@McshCor000008, | entity_Gntr, | governance-system, | health, | science, | resource, | doing,
-  McshStn000002:579  consumption-socialitation (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Sctn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000002:580  production-socialitation (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Sctn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000002:581  societyHumn (McshStn000009#(page))  generic-tree McshStn000009:8298 lacks Sctn_Gntr
-      its generics: human-society, ogmHmnNo-society, | society-of-organisms!@McshStn000007, | system-of-organisms!@McshStn000002, | biosystem!@McshOgm000002, | SystDynamic_Gntr, | system_Gntr, | whole-entity!@McshCor000008, | entity_Gntr, | human, | organization, | governace-system, | satisfier-system, | language, | technology,
-  McshStn000008:1242  household-organization (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Ogzn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000008:1243  householdNo-organization (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Ogzn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000008:1596  consumption-Socogzn (McshStn000014#(page))  generic-tree McshStn000014:990 lacks Socogzn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000008:1597  production-Socogzn (McshStn000015#(page))  generic-tree McshStn000015:1232 lacks Socogzn_Gntr
-      its generics: economic-Ogzn!@McshStn000008#idOgznScdnS
-  McshStn000009:9901  autonomous-society (McshStn000019#(page))  generic-tree McshStn000019:882 lacks SocCptlAftr_Gntr
-      its generics: stateless-society!@McshStn000009#idSocHu | classless-society, | metacapitalist-society, | knowledge-society, | info-network-society, | complex-society,
-  McshTch000002:669  info-tech (McshTchInf000002#(page))  generic-tree McshTchInf000002:674 lacks techHumn_Gntr
-      its generics: technology!@McshTch000002
-  McshTchInf000004:123  DLT (McshTchInf000015#(page))  generic-tree McshTchInf000015:13544 lacks techFin_Gntr
-      its generics: netAlgo, | peer-to-peer-network, | Internet, | computer-network, | computer-system, | info-tech, | technology, | product-satisfier, | satisfier, | human-economic-entity, | human-entity, | entity_Gntr,
-  McshTchInf000005:646  lagHitp (McshTchInf000008#(page))  generic-tree McshTchInf000008:3924 lacks lagCpgmNo_Gntr
-      its generics: computer-language!@McshTchInf000005, | * web-app-language, | * data-language, | * programing-language!@McshTchInf000006,
-  McshTchInf000005:1329  lagHitp (McshTchInf000008#(page))  generic-tree McshTchInf000008:3924 lacks Tdoc_lagoMrkp_Gntr
-      its generics: computer-language!@McshTchInf000005, | * web-app-language, | * data-language, | * programing-language!@McshTchInf000006,
-  McshTchInf000005:1330  lagHtml (McshTchInf000035#(page))  generic-tree McshTchInf000035:464 lacks Tdoc_lagoMrkp_Gntr
-      its generics: Tdoc_lago_Gntr,
-  McshTchInf000007:1474  lagMcsh (McshTchInf000009#(page))  generic-tree McshTchInf000009:3879 lacks lagCnklMrkp_Gntr
-      its generics: concept-language!@McshTchInf000007,
-  McshTchInf000008:3937  Hitp_lagoMcs (McshTchInf000009#(page))  generic-tree McshTchInf000009:3879 lacks Hitp_lago_Gntr
-      its generics: concept-language!@McshTchInf000007,
 
-=== Y-NO-GENERIC-TREE (201) — Y has no generic-tree:: (so X is not listed)
+=== Y-NO-GENERIC-TREE (199) — Y has no generic-tree:: (so X is not listed)
   McshCor000002:623  derived--main-name (McshCor000002#idMcsattNamDzrMaindrvd)  has no generic-tree::  — should list Mcs_derived_name_Gntr
   McshCor000002:1460  attributes-division (McshCor000002#idMcsattPrtdvn)  has no generic-tree::  — should list Mcs_division_Gntr
   McshCor000002:1461  parts-division (McshCor000002#idMcsattPrtdvn)  has no generic-tree::  — should list Mcs_division_Gntr
   McshCor000002:4791  McsHitp-searching (McshTchInf000008#idLHitpscg)  has no generic-tree::  — should list Mcs'searching_Gntr
-  McshCor000003:361  doing-of-entity (McshCor000003#idEntDng)  has no generic-tree::  — should list attribute_Gntr
-  McshCor000003:364  whole-of-entity-wtr (McshCor000003#idEntwptr)  has no generic-tree::  — should list attribute_Gntr
-  McshCor000003:365  part-of-entity (McshCor000003#idEntwptr)  has no generic-tree::  — should list attribute_Gntr
-  McshCor000003:6021  material-body (McshNtr000002#idOverview)  has no generic-tree::  — should list body_Gntr
-  McshCor000003:6023  semu-body (McshLag000007#idLHmnmsmsondoBdet)  has no generic-tree::  — should list body_Gntr
+  McshCor000003:6033  material-body (McshNtr000002#idOverview)  has no generic-tree::  — should list body_Gntr
+  McshCor000003:6035  semu-body (McshLag000007#idLHmnmsmsondoBdet)  has no generic-tree::  — should list body_Gntr
   McshCor000004:1386  semu-doing-noun (McshLag000007#idLHmnmsmsondoDget)  has no generic-tree::  — should list DongSemu_Gntr
   McshCor000004:5113  bringing (McshCor000004#idDngActgBrng)  has no generic-tree::  — should list ActgMoving_Gntr
-  McshCor000005:408  relation-entity--semu-ondo (McshLag000007#idLHmnmsmsondoRnet)  has no generic-tree::  — should list RltnSemaso_Gntr
+  McshCor000005:409  relation-entity--semu-ondo (McshLag000007#idLHmnmsmsondoRnet)  has no generic-tree::  — should list RltnSemaso_Gntr
   McshCor000012:1212  McsHitp-modelConceptSensorial (McshCor000002#idMcsHitp)  has no generic-tree::  — should list modelCmpr_Gntr
   McshCor000013:122  preconcept-infoMindBio (McshCor000013#idBrngPcptgpct)  has no generic-tree::  — should list infoMindBio_Gntr
   McshCor000013:589  preconcepting-outputing (McshCor000013#idBrngPcptg)  has no generic-tree::  — should list creatingInfoMindBio_Gntr
@@ -189,8 +120,8 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshStn000010:838  contract-for-service (McshStn000011#idWkr003att001)  has no generic-tree::  — should list contract_Gntr
   McshStn000010:839  contract-of-service (McshStn000011#idWkr002att001)  has no generic-tree::  — should list contract_Gntr
   McshStn000010:2490  production-Ogzn--satisfier (McshStn000015#idOznPdnatt003)  has no generic-tree::  — should list satisfierOgzn_Gntr
-  McshStn000015:1854  serviceNo-sector (McshStn000015#idOznPdn025Sctr)  has no generic-tree::  — should list sector_Gntr
-  McshStn000015:1863  serviceNo-sector (McshStn000015#idOznPdn025Sctr)  has no generic-tree::  — should list sector_Gntr
+  McshStn000015:1857  serviceNo-sector (McshStn000015#idOznPdn025Sctr)  has no generic-tree::  — should list sector_Gntr
+  McshStn000015:1866  serviceNo-sector (McshStn000015#idOznPdn025Sctr)  has no generic-tree::  — should list sector_Gntr
   McshStnlaw000002:2687  Hitp-lawGrk (McshTchInf000008#idLHitpwbpLawElln)  has no generic-tree::  — should list lawGrk_Gntr
   McshTchInf000003:715  evoluting (McshTchInf000003#idCmrevog)  has no generic-tree::  — should list techCmpr_doing_Gntr
   McshTchInf000005:1112  title-content-tree--document (McshTchInf000008#idLHitparcttl)  has no generic-tree::  — should list docNtxt_Gntr
@@ -251,7 +182,7 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshTchInf000015:11879  Land-registry (McshTchInf000015#idAlgntsvcLdr)  has no generic-tree::  — should list AgntsrvcRecord_Gntr
   McshTchInf000015:12315  Aragon (McshTchInf000018#idEthdapArgn)  has no generic-tree::  — should list AnsrvcGvng_Gntr
   McshTchInf000015:12771  Blockchain-ID-service (McshTchInf000017#idBtcsvcIdn)  has no generic-tree::  — should list Did_Gntr
-  McshTchInf000015:13962  blockchain--đ-currency-network (McshTchInf000016#idDbcMoe)  has no generic-tree::  — should list netAlgoCurrency_Gntr
+  McshTchInf000015:13964  blockchain--đ-currency-network (McshTchInf000016#idDbcMoe)  has no generic-tree::  — should list netAlgoCurrency_Gntr
   McshTchInf000016:177  miner-human (McshTchInf000016#idDbcmnr)  has no generic-tree::  — should list Dblockchain_human_Gntr
   McshTchInf000016:279  Dao (McshTchInf000019#idOverview)  has no generic-tree::  — should list chain_ogn_Gntr
   McshTchInf000016:2382  Ardor-ARDR (McshTchInf000016#idArdrevu)  has no generic-tree::  — should list Bkcnasset_Gntr
@@ -262,14 +193,15 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshTchInf000016:2406  Nxt-NXT (McshTchInf000016#idNxtevuC)  has no generic-tree::  — should list Bkcnasset_Gntr
   McshTchInf000016:2408  Peercoin-PPC (McshTchInf000016#idPpcevuC)  has no generic-tree::  — should list Bkcnasset_Gntr
   McshTchInf000016:2416  Synereo-AMP (McshTchInf000016#idAmpevu)  has no generic-tree::  — should list Bkcnasset_Gntr
-  McshTchInf000016:3472  Chronobank-TIME (McshTchInf000018#idEthtmt)  has no generic-tree::  — should list BkcnassetApdgNo_Gntr
-  McshTchInf000016:4123  wallet-program (McshTchInf000016#idDbcwltPgm)  has no generic-tree::  — should list Dblockchain_program_Gntr
-  McshTchInf000016:4979  Lisk-LSK-network-problem (McshTchInf000016#idLskpbm)  has no generic-tree::  — should list blockchain-con_Gntr
-  McshTchInf000016:5406  Blockchain-as-a-Service (McshTchInf000015#idAlgntsvcDLgr)  has no generic-tree::  — should list AgntBkcn_Gntr
-  McshTchInf000016:5428  Ethereum-ETH-network-{2015} (McshTchInf000018#idOverview)  has no generic-tree::  — should list AgntBkcn_Gntr
-  McshTchInf000016:5849  Lisk-LSK-network-{2016} (McshTchInf000016#idLsknet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
-  McshTchInf000016:5855  Qtum-network (McshTchInf000016#idQtmnet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
-  McshTchInf000016:5856  Rootstock-RSK-network (McshTchInf000016#idRsknet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
+  McshTchInf000016:3474  Chronobank-TIME (McshTchInf000018#idEthtmt)  has no generic-tree::  — should list BkcnassetApdgNo_Gntr
+  McshTchInf000016:4125  wallet-program (McshTchInf000016#idDbcwltPgm)  has no generic-tree::  — should list Dblockchain_program_Gntr
+  McshTchInf000016:4981  Lisk-LSK-network-problem (McshTchInf000016#idLskpbm)  has no generic-tree::  — should list blockchain-con_Gntr
+  McshTchInf000016:4982  Nem-XEM-network-problem (McshTchInf000016#idXempblm)  has no generic-tree::  — should list blockchain-con_Gntr
+  McshTchInf000016:5408  Blockchain-as-a-Service (McshTchInf000015#idAlgntsvcDLgr)  has no generic-tree::  — should list AgntBkcn_Gntr
+  McshTchInf000016:5430  Ethereum-ETH-network-{2015} (McshTchInf000018#idOverview)  has no generic-tree::  — should list AgntBkcn_Gntr
+  McshTchInf000016:5851  Lisk-LSK-network-{2016} (McshTchInf000016#idLsknet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
+  McshTchInf000016:5857  Qtum-network (McshTchInf000016#idQtmnet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
+  McshTchInf000016:5858  Rootstock-RSK-network (McshTchInf000016#idRsknet)  has no generic-tree::  — should list BkcnserviceSmct_Gntr
   McshTchInf000017:9001  ID-service (McshTchInf000017#idBtcsvcIdn)  has no generic-tree::  — should list Btcnservice_Gntr
   McshTchInf000018:6659  DAO-ethdap (McshTchInf000018#idEthdao)  has no generic-tree::  — should list DappEth_Gntr
   McshTchInf000018:6880  Jaxx-wallet (McshTchInf000016#idJaxwlt)  has no generic-tree::  — should list Ethrwllt_Gntr
@@ -301,8 +233,6 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshTchInf000039:7657  Cyclquantification.universal (McshTchInf000039#idLCyclqtfnUnvl)  has no generic-tree::  — should list Cyclquantification_Gntr
   McshTchInf000041:5938  AI-settings (McshTchInf000041#idVscodeaistg)  has no generic-tree::  — should list Vscsetg_Gntr
 
-=== ITEM-NOT-A-CONCEPT (5) — the specific item links to a missing target
-
 === INDIRECT (39) — Y does not list X, but reaches X through its generic chain
   McshHlth000002:1778  epiphysis (McshHlth000002#idGlndHmn004)  reaches organ_Gntr via idGlndHmn001 > idGlndHmn
   McshHlth000002:1782  gland.endocrine (McshHlth000002#idGlndHmn001)  reaches organ_Gntr via idGlndHmn
@@ -326,10 +256,10 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshHlth000002:4099  συνδετικός-ιστός (McshHlth000002#idTissHmn005)  reaches tissue_Gntr via idTissHmn007
   McshHlth000002:4101  χονδρικός-ιστός (McshHlth000002#idBdyHmn099)  reaches tissue_Gntr via idTissHmn007
   McshHlth000004:1367  lymph-cell (McshHlth000004#idCellHmn012)  reaches cell_Gntr via idCellHmn019
-  McshHlth000011:2180  DissSystCirculatory.heart-sound-046 (McshHlth000011#idDssHmn046)  reaches DissSystCirculatory_Gntr via idDssHmn047
-  McshHlth000011:2181  DissSystCirculatory.heart-failure-048 (McshHlth000011#idDssHmn048)  reaches DissSystCirculatory_Gntr via idDssHmn047
-  McshHlth000011:2192  DissSystCirculatory.coronary-heart-disease-035 (McshHlth000011#idDssHmn035)  reaches DissSystCirculatory_Gntr via idDssHmn047
-  McshHlth000013:1595  χαλβας-με-παγωτο (McshHlth000013#idFoodHmn205)  reaches foodCooked_Gntr via idFoodHmn201
+  McshHlth000011:2181  DissSystCirculatory.heart-sound-046 (McshHlth000011#idDssHmn046)  reaches DissSystCirculatory_Gntr via idDssHmn047
+  McshHlth000011:2182  DissSystCirculatory.heart-failure-048 (McshHlth000011#idDssHmn048)  reaches DissSystCirculatory_Gntr via idDssHmn047
+  McshHlth000011:2193  DissSystCirculatory.coronary-heart-disease-035 (McshHlth000011#idDssHmn035)  reaches DissSystCirculatory_Gntr via idDssHmn047
+  McshHlth000013:1597  χαλβας-με-παγωτο (McshHlth000013#idFoodHmn205)  reaches foodCooked_Gntr via idFoodHmn201
   McshLag000002:222  semo-infoBrainBio (McshLag000007#idLHmnmsmsinf)  reaches infoBrainBio_Gntr via idInfBrnBioBrnn
   McshLag000003:1204  Mcs-worldview (McshCor000002#idMcswv)  reaches worldview_Gntr via idWldv005
   McshLag000003:1205  synagonism-worldview (Mcsh000000#(page))  reaches worldview_Gntr via idWldv005
@@ -337,9 +267,9 @@ X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (
   McshLag000010:4786  conjunction-Sngu_name (McshLag000010#idL0014conj)  reaches Sngu_name_Gntr via idL0014term
   McshOgm000005:1511  τεστοστερόνη (McshOgm000005#idHrmnHmn023)  reaches hormoneHumn_Gntr via idHrmnHmn002
   McshTchInf000015:6641  Ethereum-DeApp (McshTchInf000018#idEthdap)  reaches DeApp_Gntr via idDbcapp
-  McshTchInf000016:5422  BOScoin-network (McshTchInf000016#idBosnet)  reaches AgntBkcn_Gntr via idBpmnet
-  McshTchInf000016:5426  Dfinity-network (McshTchInf000016#idDfnnet)  reaches AgntBkcn_Gntr via idBpmnet
-  McshTchInf000016:5445  Tezos-network (McshTchInf000016#idTzsnet)  reaches AgntBkcn_Gntr via idBpmnet
+  McshTchInf000016:5424  BOScoin-network (McshTchInf000016#idBosnet)  reaches AgntBkcn_Gntr via idBpmnet
+  McshTchInf000016:5428  Dfinity-network (McshTchInf000016#idDfnnet)  reaches AgntBkcn_Gntr via idBpmnet
+  McshTchInf000016:5447  Tezos-network (McshTchInf000016#idTzsnet)  reaches AgntBkcn_Gntr via idBpmnet
   McshTchInf000031:462  c-class (McshTchInf000031#idLCppsuntCls)  reaches Cppzsunt_Gntr via idLCppsuntNmd
   McshTchInf000031:483  class (McshTchInf000031#idLCppsuntCls)  reaches Cppzsunt_Gntr via idLCppsuntNmd
   McshTchInf000031:490  number (McshTchInf000031#idLCppsuntNbr)  reaches Cppzsunt_Gntr via idLCppsuntPrcsN

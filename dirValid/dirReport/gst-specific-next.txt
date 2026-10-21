@@ -131,3 +131,11 @@ T44. {2026-10-21} DONE: gen-spec rule Y-NO-GENERIC-TREE: 162 specifics Y (with a
      Then 27 Ys that are also part-sections of another generic got that generic too (MISSING fix again, 9 files).
      Rule report: Y-NO-GENERIC-TREE 390 -> 201 (all 187 concepts without a !⇒ main-name), MISSING 43, OK 1282. GS-TREE report 2504 of 2504.
      Lists: dirReport/gen-spec-nogntr-fix-applied.txt, gen-spec-nogntr-fix-dry.txt (the 187 NO-MAIN-NAME), gen-spec-missing-fix-applied-T44.txt.
+     -> {2026-10-21} McshCor000005:343 relation idRlngntr += doingNo_Gntr (after bodyNo_Gntr; asked by the user).
+     -> {2026-10-21} McshTchInf000016 idDbcevuMoegntr, idDbcevuMoeNgntr += Bkcnasset_Gntr (asked by the user). MISSING 42.
+
+T45. {2026-10-21} DONE: gen-spec MISSING with Y = a whole page (link without #id; the user confirmed the page concept is meant):
+     X added to the page concept's generic-tree:: — 30 lines in 21 generic-trees, 21 files (e.g. Ogsm_lago += RltnMapping_Gntr,
+     Mcs += concept_Gntr, infoSenso_Gntr). A chain ending at entity_Gntr gets X on top. NOT done: 3 that would give entity (the root)
+     a generic (generic-of-entity-gtr, specific-of-entity -> attribute_Gntr; entity -> personLagoB_Gntr), 9 amino acids (X has no name).
+     Script: gen-spec-missing-fix.js --pages. List: dirReport/gen-spec-missing-fix-applied-T45.txt.

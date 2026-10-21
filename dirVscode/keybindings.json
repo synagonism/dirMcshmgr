@@ -1,5 +1,5 @@
 [
-// {2026-10-04}
+// {2026-10-09}
 // Place your key bindings in this file to override the defaults
 // ctrl+k ctrl+2 folds them and shows shortcuts
 
@@ -96,9 +96,9 @@
     ]
   }
 },
-// c p m:: Char hitP name Main: !⇒
+// c p m ⭢ c c:: Char hitP name Main: !⇒
 {
-  "key": "ctrl+alt+c p m",  
+  "key": "ctrl+alt+c c",  
   "command": "type",
   "args": {"text": "!⇒"},
   "when": "editorTextFocus"
@@ -406,12 +406,6 @@
       "cursorLeft",
       "deleteLeft",
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      "cursorWordLeft",
-      "cursorWordLeft",
-      "cursorWordLeft",
-      "cursorWordLeft",
-      "deleteLeft",
-      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       "cursorEnd"
     ]
   },
@@ -443,12 +437,6 @@
       "cursorDown",
       "cursorEnd",
       "cursorLeft",
-      "deleteLeft",
-      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      "cursorWordLeft",
-      "cursorWordLeft",
-      "cursorWordLeft",
-      "cursorWordLeft",
       "deleteLeft",
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       "cursorEnd"
@@ -906,7 +894,7 @@
 },
 
 // p p :: hitP Paragraph
-// p p :: hitP Paragraph Address
+// p p a :: hitP Paragraph Address
 {
   "key": "ctrl+alt+p p a", 
   "command": "runCommands",
@@ -953,7 +941,7 @@
   },
   "when": "editorTextFocus"
 },
-// p p :: hitP Paragraph Description
+// p p d :: hitP Paragraph Description
 {
   "key": "ctrl+alt+p p d", 
   "command": "runCommands",
@@ -999,7 +987,7 @@
   },
   "when": "editorTextFocus"
 },
-// p p :: hitP Paragraph Generic
+// p p g :: hitP Paragraph Generic
 {
   "key": "ctrl+alt+p p g", 
   "command": "runCommands",
@@ -1033,20 +1021,41 @@
       { "command": "editor.action.nextMatchFindAction" },
       { "command": "closeFindWidget" },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      { "command": "type", "args": { "text": "gtr\">generic-tree::" }},
-      { "command": "type", "args": { "text": "\n  <br>× Mcsh-creation: " } },
-      { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}} " } },
-      { "command": "deleteLeft" },
-      { "command": "type", "args": { "text": ",\n<br>× generic: \n<a class=\"clsHide\" href=\"#" } },
+      { "command": "type", "args": { "text": "gntr\">generic-tree::" }},
+      { "command": "type", "args": { "text": "\n  <br>* McshEngl.mainmain_Gntr," } },
+      { "command": "type", "args": { "text": "\n<br>===\n<br>* ... entity_Gntr,\n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      { "command": "type", "args": { "text": "gtr\"></a></p>" } },
-      { "command": "cursorUp" }
+      { "command": "type", "args": { "text": "gntr\"></a></p>" } },
+      // copy mainname: text after previous "!⇒" to line end
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "!⇒", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorEndSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "mainmain", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "deleteLeft" },
+      { "command": "cursorDown" },
+      { "command": "cursorEnd" }
     ]
   },
   "when": "editorTextFocus"
 },
-// p p :: hitP Paragraph Name
+// p p n :: hitP Paragraph Name
 {
   "key": "ctrl+alt+p p n", 
   "command": "runCommands",
@@ -1080,7 +1089,7 @@
       { "command": "editor.action.nextMatchFindAction" },
       { "command": "closeFindWidget" },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      { "command": "type", "args": { "text": "nam\">name::\n<br>* McsEngl.,\n<a class=\"clsHide\" href=\"#" } },
+      { "command": "type", "args": { "text": "nam\">name::\n<br>* McshEngl.,\n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "nam\"></a></p>" } },
       { "command": "cursorUp" },
@@ -1089,7 +1098,7 @@
   },
   "when": "editorTextFocus"
 },
-// p p :: hitP Paragraph (P)description and name
+// p p p :: hitP Paragraph (P)description and name
 {
   "key": "ctrl+alt+p p p", 
   "command": "runCommands",
@@ -1135,7 +1144,7 @@
       { "command": "deleteLeft" },
       { "command": "type", "args": { "text": "<p id=\"" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
-      { "command": "type", "args": { "text": "nam\">name::\n<br>* McsEngl.,\n<a class=\"clsHide\" href=\"#" } },
+      { "command": "type", "args": { "text": "nam\">name::\n<br>* McshEngl.,\n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "nam\"></a></p>" } },
       { "command": "cursorUp" },
@@ -1193,7 +1202,7 @@
       "cursorUp",
       "cursorLineEnd",
       "editor.action.insertLineAfter",
-      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McsHmn000003.last.html#idOverview\">humnSngu</a>."}
+      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McshHmn000003.last.html#idOverview\">humnSngu</a>."}
       },
       {"command": "editor.action.insertSnippet",
         "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}]" }
@@ -1365,6 +1374,123 @@
   },
   "when": "editorTextFocus"
 },
+
+// HITP SEC(T)ION-TREE
+// p t g :: hitP section Tree Generic-specific
+{
+  "key": "ctrl+alt+p t g",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      "cursorUp",
+      "cursorEnd",
+      "editor.action.insertLineAfter",
+      "cursorLineStartSelect",
+      { "command": "editor.action.insertSnippet",
+        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain_Gntr,\n    <br>===\n    <br>* ... entity_Gntr,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>* McshEngl.mainmain_Sptr,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
+      // id: of previous section, into every ididid
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<section", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorWordEndRight" },
+      { "command": "cursorWordEndRight" },
+      { "command": "cursorWordEndRightSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "ididid", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "removeSecondaryCursors" },
+      // mainname: after previous "!⇒", into every mainmain
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "!⇒", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorEndSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "mainmain", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "deleteLeft" },
+      { "command": "removeSecondaryCursors" },
+      // heading: previous heading level + 1, into every lvlvlv
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<h\\d", "isRegex": true, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorLeftSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "lvlvlv", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "cursorLeftSelect" },
+      { "command": "editor.action.inPlaceReplace.up" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "lvlvlv", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "removeSecondaryCursors" },
+      // cursor: end of generic-tree "===" line
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<br>===", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorEnd" }
+    ]
+  },
+  "when": "editorTextFocus"
+},
+
 // HITP SAVE
 // p v 1:: hitP saVe major versioning
 // p v 2:: hitP saVe minor versioning

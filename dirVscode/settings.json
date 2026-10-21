@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:\",<>/?.-'⇒",
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:\",<>/?.-⇒",
     "editor.linkedEditing": true,
     "editor.stickyScroll.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -84,12 +84,15 @@
     "workbench.browser.searchEngine": "google",
     "workbench.browser.openLocalhostLinks": true,
     "google-translate.firstLanguage": "en",
-    "breadcrumbs.enabled": false,
     "workbench.colorCustomizations": {
     "tab.activeBackground": "#2d2d30",
     "tab.activeForeground": "#ffffff",
     "tab.activeBorderTop": "#00aaff",
     "tab.inactiveBackground": "#181818",
     "tab.inactiveForeground": "#777777"
-    }
+    },
+    "cSpell.enabledNotifications": {
+        "Lines too Long": false
+    },
+    "breadcrumbs.enabled": false
 }
