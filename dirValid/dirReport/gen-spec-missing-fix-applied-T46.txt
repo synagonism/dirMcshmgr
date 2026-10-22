@@ -1,0 +1,21 @@
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-21   DRY=false
+
+MISSING rows: 10 | generic-trees extended: 10 | lines added: 10 | skipped: 0 | files written: 2
+
+=== ADDED (10)
+  McshHmn000002:4620  idHmngntr  += personLagoB_Gntr,   (Y human)
+  McshOgm000006:438  idPrtnOgmatt003003Hsdngntr  += acidAminEsntHumn_Gntr,   (Y histidine)
+  McshOgm000006:418  idPrtnOgmatt003003Lysngntr  += acidAminEsntHumn_Gntr,   (Y lysine)
+  McshOgm000006:395  idPrtnOgmatt003003Iscngntr  += acidAminEsntHumn_Gntr,   (Y isoleucine)
+  McshOgm000006:375  idPrtnOgmatt003003Lucngntr  += acidAminEsntHumn_Gntr,   (Y leucine)
+  McshOgm000006:351  idPrtnOgmatt003003Mtnngntr  += acidAminEsntHumn_Gntr,   (Y methionine)
+  McshOgm000006:331  idPrtnOgmatt003003Trpfngntr  += acidAminEsntHumn_Gntr,   (Y tryptophan)
+  McshOgm000006:312  idPrtnOgmatt003003Trnngntr  += acidAminEsntHumn_Gntr,   (Y threonine)
+  McshOgm000006:292  idPrtnOgmatt003003valngntr  += acidAminEsntHumn_Gntr,   (Y valine)
+  McshOgm000006:272  idPrtnOgmatt003003Pnlngntr  += acidAminEsntHumn_Gntr,   (Y phenylalanine)
+
+=== Y-IS-A-PAGE (0)
+  (none)
+
+=== SKIPPED (0)
+  (none)

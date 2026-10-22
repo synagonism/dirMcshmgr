@@ -1,0 +1,94 @@
+GLND MAIN-NAME APPLIED — 11 name:: paragraphs, 0 skipped
+
+=== CHANGED (11)
+  McshHlth000002:2087  GlndEndocrine
+      <br>* McshEngl.GlndEndocrine,
+      <br>* McshEngl.OganGland.001-endocrine!⇒GlndEndocrine,
+      <br>* McshEngl.OganGland.endocrine-001!⇒GlndEndocrine,
+      <br>* McshEngl.human-endocrine-gland!⇒GlndEndocrine, {2012-08-12}
+      <br>* McshEngl.endocrine-gland.human!⇒GlndEndocrine, {2012-08-12}
+      <br>* McshEngl.endocrine-gland!⇒GlndEndocrine,
+      <br>* McshEngl.organ.endocrine-001!⇒GlndEndocrine,
+      <br>* McshElln.αδένας.ενδοκρινής!=GlndEndocrine, {2012-08-12}
+      <br>* McshElln.ενδοκρινής-αδένας!=GlndEndocrine, {2012-08-12}
+  McshHlth000002:2163  GlndExocrine
+      <br>* McshEngl.GlndExocrine,
+      <br>* McshEngl.OganGland.002-exocrine!⇒GlndExocrine,
+      <br>* McshEngl.OganGland.exocrine-002!⇒GlndExocrine,
+      <br>* McshEngl.exocrine-gland.human!⇒GlndExocrine, {2012-08-12}
+      <br>* McshEngl.human-exocrine-gland!⇒GlndExocrine, {2012-08-12}
+      <br>* McshEngl.organ.exocrine-002!⇒GlndExocrine,
+      <br>* McshElln.αδένας.εξωκρινής!=GlndExocrine,
+      <br>* McshElln.εξωκρινής-αδένας!=GlndExocrine,
+  McshHlth000002:2391  GlndEpiphysis
+      <br>* McshEngl.GlndEpiphysis,
+      <br>* McshEngl.GlndEpiphysis:GlndEndocrine!⇒GlndEpiphysis,
+      <br>* McshEngl.OganGland.004-epiphysis!⇒GlndEpiphysis,
+      <br>* McshEngl.OganGland.epiphysis-004!⇒GlndEpiphysis,
+      <br>* McshEngl.OganGland.pineal-004!⇒GlndEpiphysis,
+      <br>* McshEngl.conarium-gland!⇒GlndEpiphysis,
+      <br>* McshEngl.epiphysis-gland!⇒GlndEpiphysis,
+      <br>* McshEngl.pineal-gland!⇒GlndEpiphysis,
+      <br>* McshEngl.organ.epiphysis-004!⇒GlndEpiphysis,
+      <br>* McshElln.επίφυση!=GlndEpiphysis,
+  McshHlth000002:2880  GlndParotic
+      <br>* McshEngl.GlndParotic, /parótik/,
+      <br>* McshEngl.OganGland.026-parotic!⇒GlndParotic,
+      <br>* McshEngl.OganGland.parotic-026!⇒GlndParotic,
+      <br>* McshEngl.parotic-gland-026!⇒GlndParotic,
+      <br>* McshEngl.GlndSalivary.parotic-026!⇒GlndParotic,
+  McshHlth000002:3350  GlndTesticle
+      <br>* McshEngl.GlndTesticle,
+      <br>* McshEngl.HmbdTesticle!⇒GlndTesticle,
+      <br>* McshEngl.OganGland.017-testicle!⇒GlndTesticle,
+      <br>* McshEngl.OganGland.testicle-017!⇒GlndTesticle,
+      <br>* McshEngl.testicle!⇒GlndTesticle,
+      <br>* McshEngl.organ.testicle-017!⇒GlndTesticle,
+      <br>* McshElln.όρχης!=GlndTesticle,
+      <br>* McshElln.όρχις!=GlndTesticle,
+  McshHlth000002:3583  GlndSebaceous
+      <br>* McshEngl.GlndSebaceous, /sebéisius/,
+      <br>* McshEngl.OganGland.019-sebaceous!⇒GlndSebaceous,
+      <br>* McshEngl.OganGland.sebaceous-019!⇒GlndSebaceous,
+      <br>* McshEngl.sebaceous-gland!⇒GlndSebaceous,
+      <br>* McshEngl.organ.sebaceous-019!⇒GlndSebaceous,
+      <br>* McshElln.σμηγματογόνος-αδένας!=GlndSebaceous,
+      <br>* McshElln.αδένας.σμηγματογόνος!=GlndSebaceous,
+  McshHlth000002:3734  GlndTubular
+      <br>* McshEngl.GlndTubular,
+      <br>* McshEngl.OganGland.022-tubular!⇒GlndTubular,
+      <br>* McshEngl.OganGland.tubular-022!⇒GlndTubular,
+      <br>* McshEngl.tubular-gland-022!⇒GlndTubular,
+      <br>* McshEngl.organ.tubular-022!⇒GlndTubular,
+  McshHlth000002:3760  GlndAlveolar
+      <br>* McshEngl.GlndAlveolar,
+      <br>* McshEngl.OganGland.023-alveolar!⇒GlndAlveolar,
+      <br>* McshEngl.OganGland.alveolar-023!⇒GlndAlveolar,
+      <br>* McshEngl.alveolar-gland.-023!⇒GlndAlveolar,
+      <br>* McshEngl.organ.alveolar-023!⇒GlndAlveolar,
+  McshHlth000002:3778  GlndSerous
+      <br>* McshEngl.GlndSerous,
+      <br>* McshEngl.OganGland.024-serous!⇒GlndSerous,
+      <br>* McshEngl.OganGland.serous-024!⇒GlndSerous,
+      <br>* McshEngl.serous-gland-024!⇒GlndSerous,
+      <br>* McshEngl.organ.serous-024!⇒GlndSerous,
+  McshHlth000002:3795  GlndMucous
+      <br>* McshEngl.GlndMucous,
+      <br>* McshEngl.OganGland.025-mucous!⇒GlndMucous,
+      <br>* McshEngl.OganGland.mucous-025!⇒GlndMucous,
+      <br>* McshEngl.mucous-gland-025!⇒GlndMucous,
+      <br>* McshEngl.organ.mucous-025!⇒GlndMucous,
+  McshHlth000002:7994  GlndLymph
+      <br>* McshEngl.GlndLymph,
+      <br>* McshEngl.lymph-gland!⇒GlndLymph,
+      <br>* McshEngl.lymph-node!⇒GlndLymph,
+      <br>* McshEngl.lymph.human!⇒GlndLymph, {2012-08-16}
+      <br>* McshEngl.organ.031-lymph!⇒GlndLymph,
+      <br>* McshEngl.organ.lymph-031!⇒GlndLymph,
+      <br>* McshEngl.SystLymphatic'OganLymph!⇒GlndLymph,
+      <br>* McshElln.όργανο.λεμφαδένας!⇒GlndLymph,
+      <br>* McshElln.λεμφαδένας-ανθρώπου!⇒GlndLymph, {2012-08-16}
+      <br>* McshElln.λεμφογάγγλιο-ανθρώπου!⇒GlndLymph, {2012-08-16}
+      <br>* McshElln.λεμφογάγγλιο!⇒GlndLymph,
+
+=== SKIPPED (0)

@@ -1,0 +1,119 @@
+gen-spec Y-NO-GENERIC-TREE fix — 2026-10-21   DRY=false
+
+rows: 106 | Y concepts: 101 | new GS-TREEs: 10 | new generic-tree:: paras: 38 | lines added: 458 | files written: 18
+
+=== GSTREE-NEW (10)
+  McshStn000014:624  idOznCsnatt017gstr  h2 "GENERIC-SPECIFIC-TREE of Hshdbudget"  generic-tree: budget_Gntr
+  McshStn000015:496  idOznPdnatt003gstr  h3 "GENERIC-SPECIFIC-TREE of Cmpnstfr"  generic-tree: satisfierOgzn_Gntr
+  McshTchInf000008:153  idLHitparcttlgstr  h3 "GENERIC-SPECIFIC-TREE of Hitparchotitle"  generic-tree: docNtxt_Gntr
+  McshTchInf000009:2718  idLMcshmngrnijsgstr  h4 "GENERIC-SPECIFIC-TREE of Hitpindexing"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000010:2798  idLJsgnfSexgstr  h4 "GENERIC-SPECIFIC-TREE of JsfSelfexec"  generic-tree: Jsgnsent_Gntr
+  McshTchInf000011:1504  idLJsbrwptrgstr  h6 "GENERIC-SPECIFIC-TREE of Jsbrwptr"  generic-tree: Jsmwo'whole_part_tree_Gntr
+  McshTchInf000014:5742  idLWasmtoolRtegstr  h2 "GENERIC-SPECIFIC-TREE of Wasmruntime"  generic-tree: WasmTool_Gntr
+  McshTchInf000014:5186  idLWasmalgBnrgstr  h2 "GENERIC-SPECIFIC-TREE of WasmagoBinary"  generic-tree: Wasmalgo_Gntr
+  McshTchInf000016:4822  idDbcstatgstr  h2 "GENERIC-SPECIFIC-TREE of Bkcnstat"  generic-tree: chain-stats_Gntr
+  McshTchInf000018:11979  idEthHumnBtnVtkgstr  h3 "GENERIC-SPECIFIC-TREE of HumnBtrn1994"  generic-tree: Dhuman_Gntr
+
+=== GNTR-PARA-NEW (38)
+  McshLag000018:19351  idLZhonpnynLgntr  "Zhonl/l/_Gntr"  generic-tree: Zhon_cons_phnm_Gntr
+  McshLag000018:18780  idLZhonpnynPgntr  "Zhonp/pd/_Gntr"  generic-tree: Zhon_cons_phnm_Gntr
+  McshStn000008:756  idOgznatt037gntr  "OgznBudget_Gntr"  generic-tree: budget_Gntr
+  McshStn000011:1488  idWkr003att001gntr  "crctForservice_Gntr"  generic-tree: contract_Gntr
+  McshStn000011:1409  idWkr002att001gntr  "crctOfservice_Gntr"  generic-tree: contract_Gntr
+  McshStnlaw000006:834  idLawGrc007gntr  "lawGrcaHitp_Gntr"  generic-tree: lawGrk_Gntr
+  McshTchInf000003:830  idCmrevoggntr  "Cmprevog_Gntr"  generic-tree: techCmpr_doing_Gntr
+  McshTchInf000006:521  idLCpgmsntcgntr  "Pgmgsent_Gntr"  generic-tree: Calgonode_Gntr
+  McshTchInf000006:503  idLCpgmalgphrsgntr  "Pgmgphrase_Gntr"  generic-tree: Calgonode_Gntr
+  McshTchInf000006:222  idLCpgmalguntgntr  "Pgmgunit_Gntr"  generic-tree: Calgonode_Gntr
+  McshTchInf000007:752  idLCnkntmgrtrlggntr  "Cnkntranlating_Gntr"  generic-tree: Cnknmngr'thinking_Gntr
+  McshTchInf000008:3634  idLHitpmgredtrgntr  "Hitpeditor_Gntr"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000008:3350  idLHitpsiteistlggntr  "Hitpsitecreating_Gntr"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000008:2703  idPreviewgntr  "Hitppreview_Gntr"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000008:2680  idLHitptocgntr  "Hitptoc_Gntr"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000008:1000  idLHitpidaligntr  "Hitpalicon_Gntr"  generic-tree: Hitpdoing_Gntr
+  McshTchInf000010:6827  idLJsgntolV8gntr  "JsV8_Gntr"  generic-tree: Jsbrengine_Gntr
+  McshTchInf000010:6141  idLJsgnevalConInstanceofgntr  "Jsinstanceof_Gntr"  generic-tree: Jsoptr_Gntr
+  McshTchInf000010:5590  idLJsgnalgNmbrgntr  "JsalgoNumber_Gntr"  generic-tree: Jsalgo_Gntr
+  McshTchInf000010:5458  idLJsgnalgCdngntr  "JsdomainOut_Gntr"  generic-tree: Jsalgo_Gntr
+  McshTchInf000010:2473  idLJsgnfOrngntr  "JsfObjectreturning_Gntr"  generic-tree: Jsbrf_Gntr
+  McshTchInf000010:2407  idLJsgnfMtdgntr  "JsjMethod_Gntr"  generic-tree: Jsbrf_Gntr
+  McshTchInf000010:2393  idLJsgnfCsrgntr  "Jsfconstructor_Gntr"  generic-tree: Jsbrf_Gntr
+  McshTchInf000010:1355  idLJsgnArraypforEachgntr  "JsfforEach_Gntr"  generic-tree: Jsloop_Gntr
+  McshTchInf000011:4821  idLJsbrspecgntr  "Jsbrspec_Gntr"  generic-tree: Jsgnspec_Gntr
+  McshTchInf000011:2448  idLJsbrapiNtvgntr  "JsbrApiNative_Gntr"  generic-tree: JsapiNative_Gntr
+  McshTchInf000012:8150  idLJsndpkgJslintgntr  "JSLint_Gntr"  generic-tree: JsgntoolAnalysis_Gntr
+  McshTchInf000012:8128  idLJsndpkgJshintgntr  "JSHint_Gntr"  generic-tree: JsgntoolAnalysis_Gntr
+  McshTchInf000012:4501  idLJsndlbrgntr  "Jsndlibrary_Gntr"  generic-tree: Jsalgolbrr_Gntr
+  McshTchInf000014:5168  idLWasmalgTxtgntr  "WasmalgoText_Gntr"  generic-tree: Wasmalgo_Gntr
+  McshTchInf000014:5153  idLWasmalgLbrgntr  "WasmalgoLibrary_Gntr"  generic-tree: Wasmalgo_Gntr
+  McshTchInf000014:2709  idLWasmstcPrmcSlctgntr  "Wasmselect_Gntr"  generic-tree: Wasmcmnd.parametric_Gntr
+  McshTchInf000014:2289  idLWasmstcPrmcDrpgntr  "Wasmdrop_Gntr"  generic-tree: Wasmcmnd.parametric_Gntr
+  McshTchInf000015:10526  idAlgntdongFdggntr  "Agntfunding_Gntr"  generic-tree: Dchain_governing_Gntr
+  McshTchInf000015:7765  idAlgntxCntrNgntr  "AgntogznExchCentNo_Gntr"  generic-tree: DeApp_Gntr
+  McshTchInf000015:5512  idAlgntevalSconCtrngntr  "AgntevalConConflict_resolution_Gntr"  generic-tree: netAlgo_benefitNo_Gntr
+  McshTchInf000015:2396  idAlgntevusovattgntr  "Agntassetsovalue_Gntr"  generic-tree: Agntexvu'service_Gntr
+  McshTchInf000016:8434  idLskbapgntr  "Liskdapp_Gntr"  generic-tree: DeApp_Gntr
+
+=== Y-IS-A-PAGE (0)
+  (none)
+
+=== NO-MAIN-NAME (53)
+  McshLag000033#idLDeutphnm  "German-phoneme(41)"  (specific of phoneme_Gntr)
+  McshTchInf000008#idLHitpevog  "evoluting"  (specific of Hitpdoing_Gntr)
+  McshTchInf000012#idLJsndwptr  "Jsnd-native-whole-part-tree"  (specific of Jsmwo'whole_part_tree_Gntr)
+  McshTchInf000015#idLkxLycipblm  "problem"  (specific of Lykklyci'evaluation_Gntr)
+  McshTchInf000015#idAlgntevuvltlt  "speculation-on-chain-asset--problem"  (specific of netAlgo_benefitNo_Gntr)
+  McshTchInf000015#idAlgnttxfee  "transaction-fees--problem"  (specific of netAlgo_benefitNo_Gntr)
+  McshTchInf000016#idDbcscrt  "Blockchain-security"  (specific of AgntevalConSecurity_Gntr)
+  McshTchInf000015#idAlgntchnsiz  "size-of-chain"  (specific of netAlgo'scalability_Gntr)
+  McshTchInf000015#idAlgnttps  "transactions-per-second"  (specific of netAlgo'scalability_Gntr)
+  McshTchInf000015#idAlgntirsc  "resource"  (specific of netAlgo'environment_Gntr)
+  McshTchInf000015#idAlgntsvcLdr  "Land-registry"  (specific of AgntsrvcRecord_Gntr)
+  McshTchInf000017#idBtcsvcIdn  "Blockchain-ID-service"  (specific of Did_Gntr, Btcnservice_Gntr)
+  McshTchInf000016#idDbcMoe  "blockchain--đ-currency-network"  (specific of netAlgoCurrency_Gntr)
+  McshTchInf000016#idDbcmnr  "miner-human"  (specific of Dblockchain_human_Gntr)
+  McshTchInf000016#idArdrevu  "Ardor-ARDR"  (specific of Bkcnasset_Gntr)
+  McshTchInf000018#idRepevu  "Augur-REP"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idBtsevuC  "BitShares-BTS"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idLtcevuC  "Litecoin-LTC"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idNmcevuC  "Namecoin-NMC"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idNxtevuC  "Nxt-NXT"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idPpcevuC  "Peercoin-PPC"  (specific of Bkcnasset_Gntr)
+  McshTchInf000024#idSteemtkn  "STEEM"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idAmpevu  "Synereo-AMP"  (specific of Bkcnasset_Gntr)
+  McshTchInf000016#idDbcwltPgm  "wallet-program"  (specific of Dblockchain_program_Gntr)
+  McshTchInf000016#idLskpbm  "Lisk-LSK-network-problem"  (specific of blockchain-con_Gntr)
+  McshTchInf000016#idXempblm  "Nem-XEM-network-problem"  (specific of blockchain-con_Gntr)
+  McshTchInf000015#idAlgntsvcDLgr  "Blockchain-as-a-Service"  (specific of AgntBkcn_Gntr)
+  McshTchInf000016#idLsknet  "Lisk-LSK-network-{2016}"  (specific of BkcnserviceSmct_Gntr)
+  McshTchInf000016#idQtmnet  "Qtum-network"  (specific of BkcnserviceSmct_Gntr)
+  McshTchInf000016#idRsknet  "Rootstock-RSK-network"  (specific of BkcnserviceSmct_Gntr)
+  McshTchInf000016#idJaxwlt  "Jaxx-wallet"  (specific of Ethrwllt_Gntr)
+  McshTchInf000018#idEthlll  "LLL"  (specific of AgntEthr_contract_lang_Gntr)
+  McshTchInf000018#idEthsrpt  "Serpent"  (specific of AgntEthr_contract_lang_Gntr)
+  McshTchInf000018#idEthvpr  "Viper"  (specific of AgntEthr_contract_lang_Gntr)
+  McshTchInf000018#idEthsolapi  "API"  (specific of Solxsunt_Gntr)
+  McshTchInf000018#idEthsolAbi  "JSON-INTERFACE"  (specific of Solxsunt_Gntr)
+  McshTchInf000016#idWingsdao  "Wings-OgznDao"  (specific of OgznDao_Gntr)
+  McshTchInf000020#idChbwlt  "ChronoWallet-dApp"  (specific of Chrono.tech'program_Gntr)
+  McshTchInf000021#idEosnodBpvtng  "block-producer--voting"  (specific of Agnteos'voting_Gntr)
+  McshTchInf000021#idEosgovrfdm  "referendum-voting"  (specific of Agnteos'voting_Gntr)
+  McshTchInf000024#idSteempgmCliwlt  "cli_wallet"  (specific of Stemwalt_Gntr)
+  McshTchInf000031#idLCppsuntArr  "array"  (specific of CppzsuntNamed_Gntr, Cppzsunt.processNo_Gntr, Cppzunit_Gntr)
+  McshTchInf000031#idLCppsuntBool  "boolean"  (specific of Cppzsunt.processNo_Gntr)
+  McshTchInf000031#idLCppsuntChrtr  "character"  (specific of Cppzsunt.processNo_Gntr)
+  McshTchInf000031#idLCppsuntEnum  "enumeration"  (specific of Cppzsunt.processNo_Gntr)
+  McshTchInf000031#idLCppsuntStrg  "string"  (specific of Cppzsunt.processNo_Gntr, Cppzunit_Gntr)
+  McshTchInf000031#idLCppsuntStrct  "structure"  (specific of Cppzsunt.processNo_Gntr)
+  McshTchInf000031#idLCppsuntVoid  "void"  (specific of Cppzsunt.processNo_Gntr)
+  McshTchInf000038#idTchLlmChbt  "LLM-chatbot"  (specific of AiChatbot_Gntr)
+  McshTchInf000039#idLKnlg014optYago  "YAGO-KnlgBase"  (specific of KnlgBase_Gntr)
+  McshTchInf000039#idLCyclqtfnExst  "Cyclquantification.existential"  (specific of Cyclquantification_Gntr)
+  McshTchInf000039#idLCyclqtfnUnvl  "Cyclquantification.universal"  (specific of Cyclquantification_Gntr)
+  McshTchInf000041#idVscodeaistg  "AI-settings"  (specific of Vscsetg_Gntr)
+
+=== NAME-TAKEN (0)
+  (none)
+
+=== SKIPPED (0)
+  (none)

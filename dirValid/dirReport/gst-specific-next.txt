@@ -139,3 +139,45 @@ T45. {2026-10-21} DONE: gen-spec MISSING with Y = a whole page (link without #id
      Mcs += concept_Gntr, infoSenso_Gntr). A chain ending at entity_Gntr gets X on top. NOT done: 3 that would give entity (the root)
      a generic (generic-of-entity-gtr, specific-of-entity -> attribute_Gntr; entity -> personLagoB_Gntr), 9 amino acids (X has no name).
      Script: gen-spec-missing-fix.js --pages. List: dirReport/gen-spec-missing-fix-applied-T45.txt.
+
+T46. {2026-10-21} DONE: the last 10 gen-spec MISSING: human (McshHmn000002 idHmngntr) += personLagoB_Gntr; the 9 essential amino acids
+     (McshOgm000006, phenylalanine … histidine) += acidAminEsntHumn_Gntr. 10 lines, 2 files. Rule report: MISSING 0.
+     List: dirReport/gen-spec-missing-fix-applied-T46.txt.
+     -> {2026-10-21} McshOgm000006: GS-TREE idBdyHmnatt015025gstr h2 -> h4 (heading id ...gstrH2 -> ...gstrH4; whole is h3; no links to it);
+        the 9 amino-acid generic-trees lost the old broken link "essential-amino-acid" (McshHlth000002#idBdyHmnatt015025), now acidAminEsntHumn_Gntr.
+     -> {2026-10-21} gen-spec-rule.js: a link to "#idOverview" means the page concept (was taken as a section without generic-tree:: —
+        e.g. McshCor000003:6033 material-body). Report: MISSING 2 (material lacks body_Gntr; Dao lacks chain_ogn_Gntr), Y-NO-GENERIC-TREE 196.
+     -> {2026-10-21} gen-spec-rule.js also: a para inside idOverview (e.g. #idDescription) means the page concept; an X_Gntr name written in
+        Y's generic-tree:: counts even when the name maps to another key of the same concept. Report: MISSING 3, Y-NO-GENERIC-TREE 192, OK 1329.
+     -> {2026-10-21} T47: material (McshNtr000002 idMtrlgntr) += body_Gntr (top of its chain); Dao (McshTchInf000019 idDeOzngntr) += chain_ogn_Gntr; ChronoBank (McshTchInf000020 idChbgntr) += DeApp_Gntr. MISSING 0.
+     -> {2026-10-21} T48: 3 generic-tree:: paras added after the user gave main-names: Mcspartdivi_Gntr (McshCor000002 idMcsattPrtdvngntr), nameMcsMindMainDerived_Gntr (idMcsattNamDzrMaindrvdgntr), Hitpsearching_Gntr (McshTchInf000008 idLHitpscggntr).
+
+T49. {2026-10-21} DONE: after the user's edits — 12 specifics (new main-names) got a generic-tree: 5 GS-TREEs (FctgConceptingBio,
+     FctgPreconceptingBio, Hmnsworldviewe, bdgtPblc, Algoecon) and 7 generic-tree:: paras (ActgBringing, preconceptMind, SemuarguRelation,
+     SemarguDoing, SemuarguBody, CBDC'doing, HumnLarimerDaniel); then the 11 MISSING: 10 lines in 9 generic-trees (linguistics += science_Gntr,
+     doing.governing += Hmbddoing_Gntr, protein += macromoleculeHumn_Gntr, Aragon += AnsrvcGvng_Gntr, DappEth_Gntr, …). Only added lines.
+     Rule report: MISSING 0, Y-NO-GENERIC-TREE 166 (all without !⇒ main-name), OK 1367. GS-TREE 2509 of 2509; generic-tree names all unique (3300).
+     Lists: dirReport/gen-spec-nogntr-fix-applied-T49.txt, gen-spec-missing-fix-applied-T49.txt.
+
+T50. {2026-10-21} DONE: after the user's new main-names — 48 specifics got a generic-tree (10 GS-TREEs, 38 generic-tree:: paras; 458 lines, 18 files),
+     then 7 MISSING (the 3 reported + 4 nested ones the new trees exposed): brain += brainNatural_Gntr, serviceNo-sector += sector_Gntr,
+     JsbrApi.NATIVE += JsbrApi_Gntr, Npmpkg.jshint/.jslint += Npmpkg_Gntr, Buterin.Vitalic += Ethrhumn_Gntr. 19 files, only added lines.
+     Rule report: MISSING 0, Y-NO-GENERIC-TREE 57, ITEM-NOT-A-CONCEPT 5 (McshStn000015 sector3No.* targets not yet written), OK 1478.
+     GS-TREE 2524 of 2528: 4 from the user's main-name renames (title new, _Gntr/_Sptr old): Mathgrph, infoBrainInsd, LykklyciPro, Lykklyci.
+     Lists: dirReport/gen-spec-nogntr-fix-applied-T50.txt, gen-spec-missing-fix-applied-T50.txt.
+     -> {2026-10-21} T50b: the 4 GS-TREEs follow the user's new main-names: MathGraph -> Mathgrph (McshEdu000003: name::, _Gntr, _Sptr),
+        infoBrainIn -> infoBrainInsd (McshLag000003), Lykklyci'benefit -> LykklyciPro and DvLYCI -> Lykklyci (McshTchInf000015, incl. the item
+        at :2488). 11 lines. GS-TREE report 2528 of 2528; generic-tree names unique (3400).
+
+T51. {2026-10-22} DONE: structuralMcsh.js 0-27-0: rule MvrlGstr02 generic_has_specific (warning) — IF specific S has generic G
+     (the FIRST item of each "===" group of S's generic-tree:: — the rest of a group is its chain; generic-trees are NOT changed,
+     the user: "take the first existing") THEN G lists S in its specific-tree:: (a link to S, or a text item = a name of S),
+     or S is a part-section of G. Also warns when G has no specific-tree::. The GS index is shared with MvrlGstr01 (fGstrIndex).
+     Live pages: MvrlGstr01 1 (unchanged), MvrlGstr02 1062 in 410 files (638 not listed, 424 G without specific-tree).
+     Most: Ucbk_Gntr 291 and charUncd_Gntr 276 (the dirUcd pages), MtrlAtom_Gntr 118 (its specific-tree lists only ion/ionNo atoms).
+     By file: dirReport/mvrlgstr02-byfile-report.txt (scratchpad/gstr02-byfile.js after "reportMcsh.mjs --code MvrlGstr02 --line").
+
+T52. {2026-10-22} DONE: MvrlGstr02 in McshNtr000007: MtrlAtom's specific-tree:: (McshNtr000003 idAtmsptr) got a new "===" group with the
+     118 atoms whose generic is MtrlAtom ("<br>* atomX!@McshNtr000007#idAtmX,", page order). 119 lines added, nothing else.
+     McshNtr000007 119 -> 1; MvrlGstr02 1062 -> 944; MvrlGstr01 still 1. LEFT: ChmcElry (McshNtr000007:416) — its generic-tree's first line is
+     "chemical-element, chemical-compound!@McshNtr000006", so the rule takes ChmcCpd as its generic; an element is not a compound: for the user.

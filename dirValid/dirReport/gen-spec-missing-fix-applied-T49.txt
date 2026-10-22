@@ -1,0 +1,20 @@
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-21   DRY=false
+
+MISSING rows: 11 | generic-trees extended: 9 | lines added: 10 | skipped: 0 | files written: 7
+
+=== ADDED (9)
+  McshEdu000010:2091  idSLanggntr  += science_Gntr,   (Y linguistics)
+  McshHlth000019:5677  idSysNrvsdonggntr  += Hmbddoing_Gntr,   (Y doing.governing)
+  McshOgm000006:1089  idPrtnHmngntr  += macromoleculeHumn_Gntr,   (Y protein)
+  McshTchInf000007:856  idLCnkntmgrgntr  += techInfo_Gntr,   (Y dataNo-techInfo)
+  McshTchInf000009:1087  idMcsHitpgntr  += modelCmpr_Gntr,   (Y McsHitp-modelConceptSensorial)
+  McshTchInf000019:2805  idArgnclntgntr  += AnsrvcGvng_Gntr, DappEth_Gntr,   (Y Aragon | Aragon-ethdap)
+  McshTchInf000019:2448  idEthdaogntr  += DappEth_Gntr,   (Y DAO-ethdap)
+  McshTchInf000019:1238  idDeOzngntr  += netAlgo'environment_Gntr,   (Y Dao)
+  McshTchInf000026:2133  idBkskgntr  += AgntserviceTchInf_Gntr,   (Y Blockstack:-decentralized-internet)
+
+=== Y-IS-A-PAGE (0)
+  (none)
+
+=== SKIPPED (0)
+  (none)

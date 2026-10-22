@@ -1,0 +1,13 @@
+link-chain-fix-dry {2026-10-21} — chained references rewritten to their LAST destination; files changed 0
+
+=== PREVIEW (0) — clsPreview <a> href → LAST
+
+
+=== LINK-HEADING (0) — link-heading href → LAST
+
+
+=== NAMEREF (0) — !@ name-ref → LAST
+
+
+=== SKIPPED (0) — not rewritten
+

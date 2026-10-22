@@ -1,0 +1,314 @@
+GEN-SPEC Y WITHOUT MAIN-NAME — proposals — 2026-10-21
+These Y concepts need a main-name before they can get a generic-tree:: (McshEngl.<main>_Gntr).
+Proposed: a W'attr name, else a W.spec name, else the first name. Correct any line, then say apply.
+
+=== PROPOSED (101)
+  McshLag000033:412  "German-phoneme(41)"  specific of phoneme_Gntr
+      proposed main: Deut_lago'phoneme
+      names: phoneme-of-Deut_lago | DeutPhnm | DeutUnit.phoneme | Deut_lago'phoneme | logoDeut'phoneme | speech'DeutUnit.phoneme
+  McshLag000018:18755  "/pd/-[pʰ]-⟨p⟩-pinyin"  specific of Zhon_cons_phnm_Gntr
+      proposed main: Zhonp[pʰ]
+      names: Zhon_cons_phnm.[pʰ]-(p-pinyin) | Zhon_phnm.[pʰ]-(p-pinyin) | Zhon_phnm.p-[pʰ] | Zhonp[pʰ] | pinyin.p/pd/[pʰ] | pinyin'/pd/[pʰ]p
+  McshLag000018:19335  "/l/-⟨l⟩-pinyin"  specific of Zhon_cons_phnm_Gntr
+      proposed main: Zhonl/l/
+      names: Zhonl/l/ | Zhon_cons_phnm./l/ | Zhon_phnm./l/ | Zhon_phnm.l-/l/ | pinyin.l
+  McshStn000008:741  "oznHumn-budget"  specific of budget_Gntr
+      proposed main: Ogzn'budget
+      names: budget-of-Ogzn | Ogzn'att037-budget | Ogzn'budget
+  McshStn000014:610  "oznConsumption-budget"  specific of budget_Gntr
+      proposed main: ogznCsmg'budget
+      names: Hshdbudget | budget.ogznCsmg | ogznCsmg'att017-budget | ogznCsmg'budget
+  McshStn000019:210  "company-admnAlgo"  specific of admnAlgo_Gntr
+      proposed main: Algoecon'consuming-system
+      names: Algoecon'att002-consuming-system | Algoecon'consuming-system
+  McshStn000019:175  "household-admnAlgo"  specific of admnAlgo_Gntr
+      proposed main: Algoecon'producing-system
+      names: Algoecon'att001-production-system | Algoecon'producing-system
+  McshStn000011:1473  "contract-for-service"  specific of contract_Gntr
+      proposed main: WrkrSelfemployed'contract-for-service
+      names: contract-for-service | WrkrSelfemployed'contract-for-service | WrkrFreelancer'contract-for-service
+  McshStn000011:1393  "contract-of-service"  specific of contract_Gntr
+      proposed main: contract-of-employment
+      names: contract-of-employment | contract-of-service | WrkrEmployee'contract-of-employment | WrkrEmployer'contract-of-employment
+  McshStn000015:478  "production-Ogzn--satisfier"  specific of satisfierOgzn_Gntr
+      proposed main: OgznPrdg'satisfier
+      names: Cmpnstfr | OgznPrdg'satisfier | OgznPrdg'att003-satisfier | Cmpnecon'satisfier
+  McshStnlaw000006:812  "Hitp-lawGrk"  specific of lawGrk_Gntr
+      proposed main: Hitplaw.Greece
+      names: Hitplaw.Greece | lawGrca.007-Hitp | lawGrca.Hitp | lawGrk.Hitp.Greece
+  McshTchInf000003:767  "evoluting"  specific of techCmpr_doing_Gntr
+      proposed main: techCmpr'attEvoluting
+      names: techCmpr'attEvoluting | evoluting-of-techCmpr | techCmpr'evoluting
+  McshTchInf000008:138  "title-content-tree--document"  specific of docNtxt_Gntr
+      proposed main: Hitparcho'info-title
+      names: Hitparcho'info-title | Hitparcho'title | title-content-tree--document'title
+  McshTchInf000006:202  "unit"  specific of Calgonode_Gntr
+      proposed main: Pgmgalgo'03-unit-node
+      names: Pgmgalgo'03-unit-node | Calgonode.unit | Pgmgalgo'unit-node | Pgmgalgo-unit | Pgmg_lago'output-unit | Pgmg_lago'unit | Pgmg_lago-unit | Pgmgalgo'03_unit-node | Pgmgalgo'03_unit_node
+  McshTchInf000006:487  "phrase"  specific of Calgonode_Gntr
+      proposed main: Pgmgalgo'06_phrase-node
+      names: Pgmgalgo'06_phrase-node | Pgmgalgo'06_phrase_node | Pgmgalgo'phrase-node | Calgonode.phrase | Pgmg_lago-phrase
+  McshTchInf000006:503  "sentence"  specific of Calgonode_Gntr
+      proposed main: Pgmgalgo'07_sentence-node
+      names: Pgmgalgo'07_sentence-node | Pgmgalgo'07_sentence_node | Pgmgalgo'sentence-node | Calgonode.sentence | Pgmg_lago-sentence
+  McshTchInf000007:738  "translating"  specific of Cnknmngr'thinking_Gntr
+      proposed main: Cnknmngr'doing.translating
+      names: Cnknmngr'doing.translating | Cnknmngr'translating | Cnknmngr'retreiving.translating
+  McshTchInf000008:976  "address-link-icon--functionality"  specific of Hitpdoing_Gntr
+      proposed main: Hitp_lago'address-link-icon
+      names: Hitp_lago'address-link-icon | Hitpid'address-link-icon
+  McshTchInf000008:3611  "editing"  specific of Hitpdoing_Gntr
+      proposed main: Hitpmgr'editor
+      names: Hitpmgr'editor | Hitpmgr-editor | Hitpmgr'editing
+  McshTchInf000008:3684  "evoluting"  specific of Hitpdoing_Gntr
+      proposed main: Hitp_lago'evoluting
+      names: evoluting-of-Hitp_lago | Hitp_lago'evoluting | Hitp_lago.evolution
+  McshTchInf000008:2678  "link-preview"  specific of Hitpdoing_Gntr
+      proposed main: Hitp_lago'link-preview
+      names: Hitp_lago'link-preview | Hitpjsbr'link-preview | Hitp_lago'popup | Hitp_lago'preview-functionality | PreviewLink-of-Hitp_lago | linkPreview-of-Hitp_lago
+  McshTchInf000009:2656  "indexing"  specific of Hitpdoing_Gntr, Hitpdoing_Gntr
+      proposed main: Mcshmgr'mNamidx.mjs
+      names: indexing-of-Hitp|McsHitp-file | Mcshmgrfile.mNamidx.mjs | McshIndexFilemjs | Mcshmgr'mNamidx.mjs | mNamidx.mjs-file | mNamidx.mjs//dirMcshmgr
+  McshTchInf000008:3305  "installing"  specific of Hitpdoing_Gntr
+      proposed main: Hitp_lago'installing-site
+      names: Hitp_lago'installing-site | Hitpmgr'installing-site | Hitpsite'creating | Hitpsite'installing
+  McshTchInf000008:2649  "table-of-contents"  specific of Hitpdoing_Gntr
+      proposed main: Hitp_lago'Toc
+      names: Hitpjsbr'table-of-contents | Hitp_lago'table-of-contents | Hitp_lago'Toc | Hitp_lago'Toc-tree
+  McshTchInf000010:6111  "instanceof-operator"  specific of Jsoptr_Gntr
+      proposed main: Jsgn_lago'instanceof
+      names: Jsoptr.instanceof | Jsgn_lago'instanceof | instanceof//JavaScript
+  McshTchInf000011:1483  "Jsbr-native-whole-part-tree"  specific of Jsmwo'whole_part_tree_Gntr
+      proposed main: JsbrApi'whole-part-tree
+      names: JsbrApi'whole-part-tree | Jsbrmwo'tree | Jsbr_lago'whole-part-tree-of-API | Jsbr_lago'wpt-(whole-part-tree-of-API) | whole-part-tree-of-API//Jsbr_lago
+  McshTchInf000012:3351  "Jsnd-native-whole-part-tree"  specific of Jsmwo'whole_part_tree_Gntr
+      proposed main: JsndAPI'whole-part-tree
+      names: JsndAPI'whole-part-tree | Jsnd_lago'whole-part-tree | Jsnd_lago'wpt-of-apiNtv-(whole-part-tree)
+  McshTchInf000011:2434  "Jsbr-native-API"  specific of JsapiNative_Gntr
+      proposed main: Jsbr_lago'API.native
+      names: Jsbr_lago'API.native | Jsbr_lago'native-API | JsbrApi.NATIVE
+  McshTchInf000010:2774  "Immediately-invoked-function-expression"  specific of Jsgnsent_Gntr
+      proposed main: Jsgn_lago'self-executing-function
+      names: Jsf.self-executing | Jsgn_lago'self-executing-function
+  McshTchInf000010:1323  "array.forEach"  specific of Jsloop_Gntr
+      proposed main: Jsa'forEach-function
+      names: Array.prototype.forEach-function | forEach--JavaScript-array-function | Jsa'forEach-function | Jsgn_lago'forEach-array-function
+  McshTchInf000010:5438  "Codomain"  specific of Jsalgo_Gntr
+      proposed main: Jsgn_lago'codomain
+      names: Jsgn_lago'codomain | Jsgn_lago'domainOut
+  McshTchInf000010:5562  "Number-managing"  specific of Jsalgo_Gntr
+      proposed main: Jsalgo.number
+      names: Jsalgo.number | number-managing//JavaScript
+  McshTchInf000012:4486  "Jsnd-library"  specific of Jsalgolbrr_Gntr
+      proposed main: Jsnd_lago'lbr
+      names: Jsnd_lago'lbr | Jsnd_lago'library | Jsnd_lago-library | Jsnd_lago-code-doc.library | Jsnd_lago.LIBRARY
+  McshTchInf000011:4801  "browser-JavaScript-specification"  specific of Jsgnspec_Gntr
+      proposed main: Jsbr_lago'04_specification
+      names: Jsbr_lago'04_specification | Jsbr_lago'specification
+  McshTchInf000012:8103  "JSHint"  specific of JsgntoolAnalysis_Gntr
+      proposed main: npm'jshint-package
+      names: Npmpkg.jshint | npm'jshint-package | Jshint | JSHint
+  McshTchInf000012:8129  "JSLint"  specific of JsgntoolAnalysis_Gntr
+      proposed main: npm'jslint-package
+      names: Npmpkg.jslint | npm'jslint-package | Jslint | JSLint
+  McshTchInf000010:2367  "constructor-function"  specific of Jsbrf_Gntr
+      proposed main: Jsgn_lago'constructor
+      names: constructor-function//JavaScript | Jsgn_lago'constructor | Jsgn_lago'constructor-function | Jsf.constructor
+  McshTchInf000010:2392  "method-function"  specific of Jsbrf_Gntr
+      proposed main: Jsgn_lago'method
+      names: Jsgn_lago'method | Jsf.method
+  McshTchInf000010:2440  "object-returning-function"  specific of Jsbrf_Gntr
+      proposed main: Jsgn_lago'factory-function
+      names: Jsgn_lago'factory-function | Jsgn_lago'object-factory-function | Jsgn_lago'object-returning-function | Jsf.factory | Jsf.object-factory | Jsf.object-returning
+  McshTchInf000010:6799  "V8-(Chrome)"  specific of Jsbrengine_Gntr
+      proposed main: Jsgn_lago'V8
+      names: Google-V8-JavaScript-engine | Jsgn_lago'V8 | Jsgn_lago'Google-V8-engine | Jsgnengine.V8 | V8--JavaScript-engine
+  McshTchInf000014:2273  "drop"  specific of Wasmcmnd.parametric_Gntr
+      proposed main: Wasm_lago'drop-instruction
+      names: Wasm_lago'drop-instruction | Wasmcmnd.0x1A-drop | Wasmcmnd.drop-0x1A
+  McshTchInf000014:2670  "select-instruction"  specific of Wasmcmnd.parametric_Gntr
+      proposed main: Wasm_lago'select-instruction
+      names: Wasm_lago'select-instruction | Wasmcmnd.0x1B-select | Wasmcmnd.select-0x1B
+  McshTchInf000014:5152  "text-algo"  specific of Wasmalgo_Gntr
+      proposed main: Wasmalgo.text
+      names: Wasmalgo.text | Wasm-text-algo | Wasm_lago.TEXT
+  McshTchInf000014:5166  "binary-algo"  specific of Wasmalgo_Gntr
+      proposed main: Wasm_lago'binary-algo
+      names: Wasm_lago'binary-algo | Wasmalgo.binary | Wasm-binary-algo | Wasm-bnr-algo | Wasm_lago.BINARY
+  McshTchInf000014:5137  "library"  specific of Wasmalgo_Gntr
+      proposed main: Wasm_lago'library
+      names: Wasm_lago'library | Wasm-library | Wasm_lago.LIBRARY
+  McshTchInf000014:5714  "runtime-environment"  specific of WasmTool_Gntr
+      proposed main: Wasm_lago'embedder
+      names: Wasm_lago'embedder | Wasm_lago'embedding-environment | Wasm_lago'host-environment | Wasm_lago'outside-environment | Wasm_lago'runtime-environment | Wasm_lago.RUNTIME-ENVIRONMENT
+  McshTchInf000018:11951  "Buterin.Vitalic-(Ethereum)"  specific of Dhuman_Gntr
+      proposed main: Buterin.Vitalik.human
+      names: Buterin.Vitalik.human | HumnBtrn1994 | human.{1994}.Buterin.Vitalik | human.Buterin.Vitalik.{1994} | Vitalik-Buterin.human.{1994}
+  McshTchInf000015:2367  "store-of-value"  specific of Agntexvu'service_Gntr
+      proposed main: Agntasset'store-of-value--attribute
+      names: Agntasset'store-of-value--attribute | store-of-value--of--cryptoasset | Agntasset'service'store-of-value-attribute | Agntasset'store-of-value-attribute
+  McshTchInf000015:10503  "funding"  specific of Dchain_governing_Gntr
+      proposed main: Dchain-governing'funding
+      names: Dchain-governing'funding | netAlgo'funding | funding-of-netAlgo | Dchain-doing.funding | Dchain_doing.FUNDING
+  McshTchInf000015:7733  "exchange-DeApp"  specific of DeApp_Gntr
+      proposed main: AgntogznExch.centralizedNo
+      names: DEX-(Decentralized-EXchange) | AgntogznExch.centralizedNo | Dexchange | centralizedNo--AgntogznExch | decentralized--AgntogznExch | decentralized-exchange-ogn | on-chain--exchange-ogn
+  McshTchInf000016:8415  "Lisk-DeApp"  specific of DeApp_Gntr
+      proposed main: Lisk'Bapp
+      names: Dcc-app.Lisk | Lisk'Bapp | Lisk'Blockchain-App | Lisk'Dapp | Đapp.Lisk | blockchain-Dapp.Lisk
+  McshTchInf000016:4808  "Blockchain-statistics"  specific of chain-stats_Gntr
+      proposed main: AgntBkcn'10_statistics
+      names: AgntBkcn'10_statistics | AgntBkcn'statistics | blockchain-statistics
+  McshTchInf000015:8542  "problem"  specific of DvLYCI'evaluation_Gntr
+      proposed main: DvLYCI'problem
+      names: DvLYCI'problem | DvLYCI'evaluation.problem
+  McshTchInf000015:5495  "conflict-resolution--problem"  specific of netAlgo_benefitNo_Gntr
+      proposed main: AgntevalCon.conflict-resolution
+      names: conflict-resolution--of-netAlgo | AgntevalCon.conflict-resolution
+  McshTchInf000015:1978  "speculation-on-chain-asset--problem"  specific of netAlgo_benefitNo_Gntr
+      proposed main: Agntasset'volatility
+      names: AgntevalCon.volatility-of-Agntasset | Agntasset'volatility | Agntasset-price'volatility | price-volatility--of-Agntasset | volatility-of-Agntasset | Agntasset_price'volatility
+  McshTchInf000015:1025  "transaction-fees--problem"  specific of netAlgo_benefitNo_Gntr
+      proposed main: Dchain-tx'fee
+      names: chain-fee | Dchain-tx'fee | Dchain_tx'fee | fee-of--chain-transaction
+  McshTchInf000016:4984  "Blockchain-security"  specific of AgntevalConSecurity_Gntr
+      proposed main: AgntBkcn'security
+      names: AgntBkcn'security | blockchain-security | security-of-blockchain
+  McshTchInf000015:1334  "size-of-chain"  specific of netAlgo'scalability_Gntr
+      proposed main: Dchain'size
+      names: Dchain'size | size-of-Dchain
+  McshTchInf000015:1059  "transactions-per-second"  specific of netAlgo'scalability_Gntr
+      proposed main: netAlgo'performance
+      names: netAlgo'performance | netAlgo'tps | netAlgo'transaction-rate | netAlgo'transaction-speed | netAlgo'transaction-throughput | chain-tps | Dchain-tx'per-second | performance-of-netAlgo | tps-(Transaction-Per-Second) | transaction-per-second--of-netAlgo | transaction-rate--of-netAlgo | transaction-speed--of-netAlgo | transaction-throughput--of-netAlgo
+  McshTchInf000015:10313  "resource"  specific of netAlgo'environment_Gntr
+      proposed main: netAlgo'info-resource
+      names: netAlgo'info-resource | Dchain-resource | resource-of-netAlgo
+  McshTchInf000015:12418  "Land-registry"  specific of AgntsrvcRecord_Gntr
+      proposed main: Agntsrvc.land-registry
+      names: Agntsrvc.land-registry | Agntsrvc.real-estate-transaction | land-registry-Agntsrvc | real-estate-transaction-Agntsrvc | AgntserviceAdmgSoc.LAND-REGISTRY
+  McshTchInf000017:9013  "Blockchain-ID-service"  specific of Did_Gntr, Btcnservice_Gntr
+      proposed main: AgntBtcn'doing.ID
+      names: Bitcoin-svc.ID | Bitcoin-svc.identification | AgntBtcn'doing.ID
+  McshTchInf000016:5924  "blockchain--đ-currency-network"  specific of netAlgoCurrency_Gntr
+      proposed main: BcnnetEvu.cryptocurrency
+      names: BcnnetEvu.cryptocurrency | AgntBkcn.cryptocurrency | AgntBkcn.medium-of-exchange | cryptocurrency--blockchain-network | medium-of-exchange--blockchain-network
+  McshTchInf000016:525  "miner-human"  specific of Dblockchain_human_Gntr
+      proposed main: AgntBkcn'miner-human
+      names: Dblockchain-human.miner | Dccb-miner-human | AgntBkcn'miner-human | blockchain-miner | miner-human-of-blockchain
+  McshTchInf000016:13259  "Ardor-ARDR"  specific of Bkcnasset_Gntr
+      proposed main: Ardor-evu
+      names: Ardor-evu | ARDRevu
+  McshTchInf000018:4341  "Augur-REP"  specific of Bkcnasset_Gntr
+      proposed main: EthrassetCN.Augur-REP
+      names: Augur-REP-of-Ethereum | REP-Augur--Ethereum-token | EthrassetCN.Augur-REP
+  McshTchInf000016:11322  "BitShares-BTS"  specific of Bkcnasset_Gntr
+      proposed main: Bitshares-token
+      names: Bitshares-token | BTS-token | BTS-cevu
+  McshTchInf000016:14486  "Litecoin-LTC"  specific of Bkcnasset_Gntr
+      proposed main: Dblockchain-asset.LTC-(Litecoin)
+      names: Dblockchain-asset.LTC-(Litecoin) | Litecoin-consensus-exval-token | LTC-(Litecoin-token) | Litecoin-token-(LTC) | Dblockchain-asset.litecoin | mnyLitecoin
+  McshTchInf000016:14566  "Namecoin-NMC"  specific of Bkcnasset_Gntr
+      proposed main: Namecoin
+      names: Namecoin | Namecoin-token | NMC-evuC | NMC-token | Nmccevt
+  McshTchInf000016:13279  "Nxt-NXT"  specific of Bkcnasset_Gntr
+      proposed main: Dblockchain-asset.NXT
+      names: Dblockchain-asset.NXT | Nxt-token-(NXT) | NXT-(Nxt-token)
+  McshTchInf000016:13854  "Peercoin-PPC"  specific of Bkcnasset_Gntr
+      proposed main: Dblockchain-asset.PPC-(Peercoin)
+      names: Dblockchain-asset.PPC-(Peercoin) | Peercoin-token-(PPC) | PPC-(Peercoin-token)
+  McshTchInf000024:530  "STEEM"  specific of Bkcnasset_Gntr
+      proposed main: crypto-token.STEEM
+      names: crypto-token.STEEM | STEEM | STEEM-evuC | STEEM-token | Steem-asset.STEEM | đ-STEEM | Stemasset.STEEM
+  McshTchInf000016:15626  "Synereo-AMP"  specific of Bkcnasset_Gntr
+      proposed main: Dblockchain-asset.AMP-(Synereo)
+      names: AMP-(Synereo-token) | Dblockchain-asset.AMP-(Synereo)
+  McshTchInf000016:4519  "wallet-program"  specific of Dblockchain_program_Gntr
+      proposed main: Dblockchain-wallet.Program
+      names: Dblockchain-wallet.Program | program-wallet-of-blockchain | Dblockchain_wallet.PROGRAM
+  McshTchInf000015:12231  "Blockchain-as-a-Service"  specific of AgntBkcn_Gntr
+      proposed main: Agntsrvc.chain-service-providing
+      names: BaaS | Agntsrvc.chain-service-providing | Dchain-as-a-service | blockchain-as-a-service
+  McshTchInf000016:8229  "Lisk-LSK-network-{2016}"  specific of BkcnserviceSmct_Gntr
+      proposed main: Lisk-network
+      names: Lisk-network | Lsk-net | Lsk-net-(Lisk--blockchain-network) | netLisk | netLsk
+  McshTchInf000016:8091  "Qtum-network"  specific of BkcnserviceSmct_Gntr
+      proposed main: AgntBkcn.Qtum
+      names: AgntBkcn.Qtum | Qtum-net
+  McshTchInf000016:8068  "Rootstock-RSK-network"  specific of BkcnserviceSmct_Gntr
+      proposed main: AgntBkcn.Rootstock
+      names: AgntBkcn.Rootstock | Rootstock-net | Rsk-net
+  McshTchInf000016:4721  "Jaxx-wallet"  specific of Ethrwllt_Gntr
+      proposed main: Jaxwlt
+      names: Jaxwlt | Jaxx-wallet
+  McshTchInf000018:10704  "LLL"  specific of AgntEthr_contract_lang_Gntr
+      proposed main: DcontractEth-lang.LLL
+      names: DcontractEth-lang.LLL | Lisp-Like-Language-of-Ethereum | LLL-Ethereum-lang | langLLL | DcontractEth.LLL
+  McshTchInf000018:10682  "Serpent"  specific of AgntEthr_contract_lang_Gntr
+      proposed main: DcontractEth-lang.Serpent
+      names: DcontractEth-lang.Serpent | Serpent-Ethereum-lang | DcontractEth.Serpent
+  McshTchInf000018:10770  "Viper"  specific of AgntEthr_contract_lang_Gntr
+      proposed main: DcontractEth-lang.Viper
+      names: DcontractEth-lang.Viper | langViper | Viper-Ethereum-lang | DcontractEth.VIPER
+  McshTchInf000018:9359  "API"  specific of Solxsunt_Gntr
+      proposed main: Solxsunt.API
+      names: Solxsunt.API | lagSolAPI | Solxsource.API
+  McshTchInf000018:9390  "JSON-INTERFACE"  specific of Solxsunt_Gntr
+      proposed main: Solx_lago'ABI
+      names: ABI.ethsol | Solx_lago'ABI | Solx_lago'JSON-interface | Solxsunt.ABI | lagSolscpsut.ABI
+  McshTchInf000016:4270  "Wings-OgznDao"  specific of OgznDao_Gntr
+      proposed main: Wings'Dogn
+      names: Dogn.wings | Wings'Dogn
+  McshTchInf000020:2309  "ChronoWallet-dApp"  specific of Chrono.tech'program_Gntr
+      proposed main: Chrono.tech'ChronoWallet
+      names: Chrono.tech'ChronoWallet | ChronoWallet | Chrono.tech'ChronoWallet-Dapp
+  McshTchInf000021:982  "block-producer--voting"  specific of Agnteos'voting_Gntr
+      proposed main: Agnteos-block-producer-node'voting
+      names: Agnteos-block-producer-node'voting | Agnteos-voting.block-producer
+  McshTchInf000021:2353  "referendum-voting"  specific of Agnteos'voting_Gntr
+      proposed main: Agnteos'governance'referendum
+      names: Agnteos-referendum | Agnteos'governance'referendum
+  McshTchInf000024:2041  "cli_wallet"  specific of Stemwalt_Gntr
+      proposed main: Steem-program.cli_wallet
+      names: cli_wallet-of--Steem-net | Steem-cli_wallet | Steem-program.cli_wallet
+  McshTchInf000031:1213  "array"  specific of CppzsuntNamed_Gntr, Cppzsunt.processNo_Gntr, Cppzunit_Gntr
+      proposed main: Cppz_lago'array.source
+      names: Cppz_lago'array.source | Cppz_lago-src-a | Cppz_lago-src-array | Cppzsunt.array
+  McshTchInf000031:598  "boolean"  specific of Cppzsunt.processNo_Gntr
+      proposed main: Cppz_lago'boolean.source
+      names: Cppz_lago'boolean.source | Cppz_lago-b | C++-bool | Cppzsunt.b | Cppzsunt.boolean
+  McshTchInf000031:530  "character"  specific of Cppzsunt.processNo_Gntr
+      proposed main: Cppz_lago'character.source
+      names: Cppz_lago'character.source | Cppzsunt.ch | Cppzsunt.character
+  McshTchInf000031:1402  "enumeration"  specific of Cppzsunt.processNo_Gntr
+      proposed main: Cppz_lago'enumeration.source
+      names: Cppz_lago'enumeration.source | Cppzsunt.e | Cppzsunt.enum | Cppzsunt.enumeration
+  McshTchInf000031:581  "string"  specific of Cppzsunt.processNo_Gntr, Cppzunit_Gntr
+      proposed main: Cppz_lago'string.source
+      names: Cppz_lago'string.source | Cppz_lago-s | C++-string | Cppzsunt.s | Cppzsunt.string
+  McshTchInf000031:1417  "structure"  specific of Cppzsunt.processNo_Gntr
+      proposed main: Cppz_lago'structure.source
+      names: Cppz_lago'structure.source | Cppzsunt.sc | Cppzsunt.struct | Cppzsunt.structure
+  McshTchInf000031:515  "void"  specific of Cppzsunt.processNo_Gntr
+      proposed main: Cppz_lago'void-src-sem-unit
+      names: Cppzsunt.void | Cppz_lago'void-src-sem-unit | Cppz_lago'Sunt.void
+  McshTchInf000038:1139  "LLM-chatbot"  specific of AiChatbot_Gntr
+      proposed main: LlmApp.chatbot
+      names: chatbot-techLlm | LlmChatbot | LlmApp.chatbot
+  McshTchInf000039:13386  "YAGO-KnlgBase"  specific of KnlgBase_Gntr
+      proposed main: lagoRdfw'output.YAGO
+      names: YAGO | lagoRdfw'output.YAGO
+  McshTchInf000039:7662  "Cyclquantification.existential"  specific of Cyclquantification_Gntr
+      proposed main: lagoCycl'existential-quantification
+      names: Cyclquantification.existential | lagoCycl'existential-quantification | Cyclassertion.existential
+  McshTchInf000039:7682  "Cyclquantification.universal"  specific of Cyclquantification_Gntr
+      proposed main: lagoCycl'universal-quantification
+      names: Cyclquantification.universal | lagoCycl'universal-quantification | Cyclassertion.universal
+  McshTchInf000041:1118  "AI-settings"  specific of Vscsetg_Gntr
+      proposed main: Vsc_Ai'settings
+      names: Vsc_Ai'settings | Vscode'AI-settings
+
+=== NO-NAME (4)
+  McshHlth000019:3660  "brain-(human-brain)"  no name:: paragraph  (specific of brainNatural_Gntr)
+  McshStn000015:4655  "serviceNo-sector"  no name:: paragraph  (specific of sector_Gntr, sector_Gntr)
+  McshTchInf000016:8434  "Lisk-LSK-network-problem"  no name:: paragraph  (specific of blockchain-con_Gntr)
+  McshTchInf000016:11819  "Nem-XEM-network-problem"  no name:: paragraph  (specific of blockchain-con_Gntr)

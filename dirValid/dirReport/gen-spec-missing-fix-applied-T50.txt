@@ -1,0 +1,17 @@
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-21   DRY=false
+
+MISSING rows: 7 | generic-trees extended: 6 | lines added: 6 | skipped: 0 | files written: 5
+
+=== ADDED (6)
+  McshHlth000003:3829  idBrnHmngntr  += brainNatural_Gntr,   (Y brain-(human-brain))
+  McshStn000015:2061  idOznPdn042gntr  += sector_Gntr,   (Y serviceNo-sector)
+  McshTchInf000011:2471  idLJsbrapiNtvgntr  += JsbrApi_Gntr,   (Y JsbrApi.NATIVE)
+  McshTchInf000012:8162  idLJsndpkgJslintgntr  += Npmpkg_Gntr,   (Y Npmpkg.jslint)
+  McshTchInf000012:8134  idLJsndpkgJshintgntr  += Npmpkg_Gntr,   (Y Npmpkg.jshint)
+  McshTchInf000018:11989  idEthHumnBtnVtkgntr  += Ethrhumn_Gntr,   (Y Buterin.Vitalic)
+
+=== Y-IS-A-PAGE (0)
+  (none)
+
+=== SKIPPED (0)
+  (none)

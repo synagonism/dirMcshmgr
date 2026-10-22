@@ -1,0 +1,116 @@
+link-chain-fix-applied {2026-10-21} — chained references rewritten to their LAST destination; files changed 56
+
+=== PREVIEW (64) — clsPreview <a> href → LAST
+  McshCor000002:5353  #idMcsmToc  →  ../../dirPgm/dirCrxToc/#idDescription
+  McshCor000003:5119  ../dirCor/McshCor000003.last.html#idEntGnrcN  →  ../dirCor/McshCor000009.last.html#idGnrcspcIndi
+  McshCor000004:935  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshCor000006:25  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshCor000007:2638  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshCor000007:2961  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshCor000007:3036  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshCor000011:2975  ../dirStn/McshStn000002.last.html#idStnOgmatt005  →  ../dirStn/McshStn000004.last.html#idOverview
+  McshCor000012:1606  ../dirStn/McshStn000006.last.html#idOzn  →  ../dirStn/McshStn000008.last.html#idOverview
+  McshCor000013:76  ../dirCor/McshCor000005.last.html#idRlnMpgmdl  →  ../dirCor/McshCor000012.last.html#idOverview
+  McshCor000013:429  ../dirCor/McshCor000005.last.html#idRlnMpgarch  →  ../dirCor/McshCor000012.last.html#idMdlatt001
+  McshCor000015:56  ../dirCor/McshCor000003.last.html#idEnt001  →  ../dirCor/McshCor000008.last.html#idWhlmtwh
+  McshCor000018:479  #idBrngHmnFct003att003  →  ../dirLag/McshLag000003.last.html#idInfHmnBrn001Sstn
+  McshCor000018:4194  ../dirHmn/McshHmn000002.last.html#idHmnatt044  →  ../dirHlth/McshHlth000003.last.html#idMind
+  McshEdu000002:423  ../dirStn/McshStn000006.last.html#idOzn  →  ../dirStn/McshStn000008.last.html#idOverview
+  McshEdu000006:25  ../dirCor/McshCor000003.last.html#idEnt001  →  ../dirCor/McshCor000008.last.html#idWhlmtwh
+  McshHlth000002:12146  #idGlndHmn016dssH3  →  ../dirHlth/McshHlth000011.last.html#idDssHmn044
+  McshHlth000002:13681  #idSysNrvs  →  ../dirHlth/McshHlth000019.last.html#idOverview
+  McshHlth000002:15326  #idSysNrvs  →  ../dirHlth/McshHlth000019.last.html#idOverview
+  McshHlth000003:1725  ../dirLag/McshLag000003.last.html#idWldv001  →  ../dirHmn/McshHmn000002.last.html#idHmnatt003
+  McshHlth000011:1719  ../dirHlth/McshHlth000002.last.html#idSysOgnHmn001  →  ../dirHlth/McshHlth000005.last.html#idOverview
+  McshHlth000011:7965  ../dirHlth/McshHlth000002.last.html#idBdyHmnatt069  →  ../dirHlth/McshHlth000018.last.html#idOverview
+  McshHlth000014:324  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshHlth000019:74  ../dirHlth/McshHlth000002.last.html#idBdyHmn297  →  #idSysNrvsdong
+  McshHlth000019:5647  ../dirHlth/McshHlth000002.last.html#idBdyHmn297  →  #idSysNrvsdong
+  McshHmn000002:849  #idHmnatt044  →  ../dirHlth/McshHlth000003.last.html#idMind
+  McshLag000002:25  ../dirCor/McshCor000005.last.html#idRlnMpgmdl  →  ../dirCor/McshCor000012.last.html#idOverview
+  McshLag000002:54  ../dirCor/McshCor000005.last.html#idRlnMpgarch  →  ../dirCor/McshCor000012.last.html#idMdlatt001
+  McshLag000003:1779  ../dirCor/McshCor000012.last.html#idMdlatt003  →  ../dirCor/McshCor000005.last.html#idRlnMpgmthd
+  McshLag000007:28448  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshLag000007:30322  ../dirCor/McshCor000012.last.html#idMdlatt003  →  ../dirCor/McshCor000005.last.html#idRlnMpgmthd
+  McshLag000011:273  ../dirLag/McshLag000007.last.html#idLHmnmsmscptattNbr  →  ../dirCor/McshCor000010.last.html#idQntSms
+  McshLag000011:28969  ../dirCor/McshCor000006.last.html#idTimeRltvRptg  →  ../dirCor/McshCor000004.last.html#idDngRptgfrqc
+  McshLag000014:25  ../dirLag/McshLag000003.last.html#idInfHmnirsc  →  ../dirLag/McshLag000013.last.html#idOverview
+  McshLag000018:1484  ../dirLag/McshLag000021.last.html#idLZhonsylbintl  →  #idLZhonSpchintl
+  McshLag000019:25  ../dirLag/McshLag000003.last.html#idInfHmnirsc  →  ../dirLag/McshLag000013.last.html#idOverview
+  McshLag000024:5953  ../dirTchInf/McshTchInf000007.last.html#idLCnknt022otptWdnt  →  ../dirTchInf/McshTchInf000039.last.html#idLKnlgmngr018
+  McshLag000027:7839  ../dirLag/McshLag000020.last.html#idLEllnfmly  →  ../dirLag/McshLag000028.last.html#idOverview
+  McshNtr000002:61  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshStn000006:80  ../dirStn/McshStn000002.last.html#idStnOgmatt005  →  ../dirStn/McshStn000004.last.html#idOverview
+  McshStn000009:12357  ../dirCor/McshCor000003.last.html#idEntGnrcN  →  ../dirCor/McshCor000009.last.html#idGnrcspcIndi
+  McshStn000010:668  #idSfrHmnatt009  →  #idSfrHmn005orrn
+  McshStn000010:1258  #idSfrFin019  →  ../dirStn/McshStn000029.last.html#idSfrFin019
+  McshStn000010:1273  #idSfrFin019  →  ../dirStn/McshStn000029.last.html#idSfrFin019
+  McshStn000010:2013  #idSfrHmnatt009  →  #idSfrHmn005orrn
+  McshStn000010:2700  #idSfrHmnatt009  →  #idSfrHmn005orrn
+  McshStn000010:3303  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshStn000029:699  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshTchInf000005:846  ../dirTchInf/McshTchInf000003.last.html#idCmrRealN  →  ../dirTchInf/McshTchInf000003.last.html#idCmr003
+  McshTchInf000006:72  ../dirTchInf/McshTchInf000003.last.html#idCmrRealN  →  ../dirTchInf/McshTchInf000003.last.html#idCmr003
+  McshTchInf000008:1970  ../dirCor/McshCor000002.last.html#idMcsHitp  →  ../dirTchInf/McshTchInf000009.last.html#idMcsHitp
+  McshTchInf000008:2142  ../dirCor/McshCor000002.last.html#idMcsHitp  →  ../dirTchInf/McshTchInf000009.last.html#idMcsHitp
+  McshTchInf000010:359  #idLJsgnfscp  →  #idLJsgnevalConOsp
+  McshTchInf000015:1901  ../dirCor/McshCor000009.last.html#idGnrcMsrd  →  ../dirCor/McshCor000009.last.html#idGnrcmsrggnrc
+  McshTchInf000015:4285  #idAlgntevuMoeNtnl  →  #idAlgntevuMoeDmnt
+  McshTchInf000015:4298  #idAlgntevuMoeNtnl  →  #idAlgntevuMoeDmnt
+  McshTchInf000015:11685  #idBsksvc  →  ../dirTchInf/McshTchInf000026.last.html#idOverview
+  McshTchInf000016:2463  #idSteemevuC  →  ../dirTchInf/McshTchInf000024.last.html#idSteemtkn
+  McshTchInf000016:3241  ../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeNtnl  →  ../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeDmnt
+  McshTchInf000016:3375  #idSteemevuC  →  ../dirTchInf/McshTchInf000024.last.html#idSteemtkn
+  McshTchInf000018:11600  #idEthdao  →  ../dirTchInf/McshTchInf000019.last.html#idEthdao
+  McshTchInf000019:2808  ../dirTchInf/McshTchInf000018.last.html#idEthdao  →  #idEthdao
+  McshTchInf000030:91  ../dirTchInf/McshTchInf000003.last.html#idCmrRealN  →  ../dirTchInf/McshTchInf000003.last.html#idCmr003
+  McshTchInf000039:3777  ../dirCor/McshCor000003.last.html#idEntGnrcN  →  ../dirCor/McshCor000009.last.html#idGnrcspcIndi
+
+=== LINK-HEADING (6) — link-heading href → LAST
+  McshCor000002:5471  #idMcsmToc  →  ../../dirPgm/dirCrxToc/#idDescription
+  McshCor000003:681  ../dirEdu/McshEdu000002.last.html#idSci001  →  ../dirEdu/McshEdu000006.last.html#idOverview
+  McshCor000005:3630  ../dirStn/McshStn000010.last.html#idSfrHmnatt009  →  ../dirStn/McshStn000010.last.html#idSfrHmn005orrn
+  McshLag000027:8098  #idLEllaphgmAtmk  →  ../dirLag/McshLag000028.last.html#idLEll0phgmAtmk
+  McshNtr000010:83  #idBrnBioNtrlatt005  →  ../dirOgm/McshOgm000007.last.html#idCellOgm009
+  McshStn000015:3439  ../dirStn/McshStn000009.last.html#idSocadmnwkr  →  #idWrkr028
+
+=== NAMEREF (36) — !@ name-ref → LAST
+  McshCor000013:113  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshEdu000002:916  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshEdu000002:933  !@McshLag000007#idLHmnmlgcs  →  !@McshEdu000010#idOverview
+  McshHlth000002:1318  !@McshHlth000002#idSysNrvs  →  !@McshHlth000019#idOverview
+  McshHlth000002:1325  !@McshHlth000002#idSysNrvs  →  !@McshHlth000019#idOverview
+  McshHlth000002:13761  !@McshHlth000002#idBdyHmn297  →  !@McshHlth000019#idSysNrvsdong
+  McshHlth000002:13771  !@McshHlth000002#idBdyHmn297  →  !@McshHlth000019#idSysNrvsdong
+  McshLag000002:205  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshLag000003:301  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshLag000003:1206  !@McshLag000003#idWldv001  →  !@McshHmn000002#idHmnatt003
+  McshLag000003:1211  !@McshLag000003#idWldv001  →  !@McshHmn000002#idHmnatt003
+  McshLag000005:170  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshLag000007:31493  !@McshLag000007#idLsgn  →  !@McshLag000031#idOverview
+  McshLag000007:31560  !@McshLag000007#idLsgn  →  !@McshLag000031#idOverview
+  McshNtr000011:116  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshOgm000005:696  !@McshOgm000005#idPrtnHmn  →  !@McshOgm000006#idPrtnHmn
+  McshOgm000007:1614  !@McshHlth000002#idCellHmn  →  !@McshHlth000004#idOverview
+  McshStn000002:524  !@McshStn000006#idOzn  →  !@McshStn000008#idOverview
+  McshStn000004:998  !@McshStn000009#idSocbdgt  →  !@McshStn000015#idSctrPblcatt001
+  McshStn000004:1304  !@McshStn000012#idAlgoecon  →  !@McshStn000019#idAlgoecon
+  McshStnlaw000002:2687  !@McshTchInf000008#idLHitpwbpLawElln  →  !@McshStnlaw000006#idLawGrc007
+  McshTchInf000002:699  !@McshTchInf000002#idTchCnpt  →  !@McshTchInf000007#idLCnkntmgr
+  McshTchInf000005:572  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  McshTchInf000015:10000  !@McshTchInf000015#idAlgntdao  →  !@McshTchInf000019#idOverview
+  McshTchInf000015:11186  !@McshTchInf000015#idAlgntsvcGvcc  →  !@McshTchInf000015#idAlgntevuMoeDmntdong
+  McshTchInf000015:11518  !@McshTchInf000015#idBsksvc  →  !@McshTchInf000026#idOverview
+  McshTchInf000015:12309  !@McshTchInf000018#idEthdapArgn  →  !@McshTchInf000019#idArgnclnt
+  McshTchInf000015:12398  !@McshTchInf000015#idAlgntsvcGvcc  →  !@McshTchInf000015#idAlgntevuMoeDmntdong
+  McshTchInf000016:2408  !@McshTchInf000016#idSteemevuC  →  !@McshTchInf000024#idSteemtkn
+  McshTchInf000016:3470  !@McshTchInf000018#idEthtmt  →  !@McshTchInf000020#idChbtmt
+  McshTchInf000018:6655  !@McshTchInf000018#idEthdapArgn  →  !@McshTchInf000019#idArgnclnt
+  McshTchInf000018:6659  !@McshTchInf000018#idEthdao  →  !@McshTchInf000019#idEthdao
+  McshTchInf000024:3884  !@McshTchInf000015#idAlgntHumnLmrDnl  →  !@McshTchInf000021#idEosHumnLmrDnl
+  McshTchPrgm000003:2411  !@McshTchInf000006#idCpgm  →  !@McshTchPrgm000002#idOverview
+  McshTchPrgm000003:2416  !@McshCor000005#idRlnMpgmdl  →  !@McshCor000012#idOverview
+  Mcsh000000:406  !@McshLag000003#idWldv001  →  !@McshHmn000002#idHmnatt003
+
+=== SKIPPED (0) — not rewritten
+

@@ -1,7 +1,7 @@
 
 GS-TREE:
-- 
-
+- sp-gn rule:
+- generic-specific-attributes,
 
 TASKS:
 
@@ -11,5 +11,3 @@ NAME::
 ID:
 - sync
 
-VERIFICATION:
-- generic-specific-attributes,

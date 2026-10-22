@@ -1,0 +1,14 @@
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-21   DRY=false
+
+MISSING rows: 3 | generic-trees extended: 3 | lines added: 3 | skipped: 0 | files written: 3
+
+=== ADDED (3)
+  McshNtr000002:499  idMtrlgntr  += body_Gntr,   (Y material-body)
+  McshTchInf000019:1238  idDeOzngntr  += chain_ogn_Gntr,   (Y Dao)
+  McshTchInf000020:3285  idChbgntr  += DeApp_Gntr,   (Y ChronoBank-DeApp)
+
+=== Y-IS-A-PAGE (0)
+  (none)
+
+=== SKIPPED (0)
+  (none)

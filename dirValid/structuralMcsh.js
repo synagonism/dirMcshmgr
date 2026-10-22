@@ -41,12 +41,15 @@
  *
  *  MvrlGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
  *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
+ *  MvrlGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
+ *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-27-0.2026-10-22: MvrlGstr02 generic_has_specific, fGstrIndex shared',
     'structuralMcsh.js.0-26-0.2026-10-20: MvrlGstr01 specific_has_generic',
     'structuralMcsh.js.0-25-0.2026-10-19: MvrlId12 sptr_specific_tree_suffix, fCheckIdParaSuffix rEndIn',
     'structuralMcsh.js.0-24-0.2026-10-19: MvrlId11 gntr_generic_tree_suffix',
@@ -446,8 +449,10 @@ function fCheckIdSptr(aoCnptFile) {
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
 //   A-concept is a-key "McshDir000000#id" ("McshDir000000#" the-file-concept);
 //   a-GS-TREE means its whole, a-para means its section.
-function fCheckGstrSpecificGeneric(aoCnptFile) {
-  const aoIssue = [];
+// the-GS index of the-worldview, shared by MvrlGstr01 and MvrlGstr02, built once per aoCnptFile.
+const oWeakGstrIndex = new WeakMap();
+function fGstrIndex(aoCnptFile) {
+  if (oWeakGstrIndex.has(aoCnptFile)) return oWeakGstrIndex.get(aoCnptFile);
   const rGs = /^GENERIC-SPECIFIC-TREE of /;   // NOT "Name'GENERIC-SPECIFIC-TREE" of another concept
   const fHead = sPara => (/<br>\*\s*McshEngl\.(\S+?_Gntr)\b/.exec(sPara ?? '') ?? [])[1] ?? null;
   // index per file: the-cnptSect by id, the-para by id (with its section), the-top GS-TREE
@@ -551,6 +556,49 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
     }
     return false;
   };
+  // the-specific-tree:: of a-concept: {id}sptr; of the-file-concept: the-top GS-TREE's {B}sptr
+  const fSptr = sKey => {
+    const [sFile, sId] = sKey.split('#');
+    const oF = ooFile[sFile];
+    const sB = sId || (oF.sIdTopGs ? oF.sIdTopGs.replace(/gstr$/, '') : null);
+    const oP = sB ? oF.ooPara[sB + 'sptr'] : null;
+    return oP && oP.sNameTitle === 'specific-tree' ? { sFile, oP } : null;
+  };
+  // the-item-lines of a-tree:: after its first "===", without an-addressWpg part
+  const fTreeItems = sPara => {
+    const aOut = [];
+    let bAfter = false, bWeb = false;
+    for (const sLine of (sPara ?? '').split('\n').map(s => s.trim())) {
+      if (/^<br>===/.test(sLine)) { bAfter = true; bWeb = /address/i.test(sLine); continue; }
+      if (bAfter && !bWeb && /^<br>\*/.test(sLine)) aOut.push(sLine);
+    }
+    return aOut;
+  };
+  // the-English names of a-concept (lower case): McshEngl names, !⇒ main-name, X of X_Gntr
+  const fNames = sKey => {
+    const [sFile, sId] = sKey.split('#');
+    const oF = ooFile[sFile];
+    const aoPara = sId ? (oF.ooSect[sId]?.aoTitlePara ?? []) : (oF.oCnptFile.aoTitlePara ?? []);
+    const oSet = new Set();
+    for (const oP of aoPara.filter(o => o.sNameTitle === 'name'))
+      for (const aN of (oP.sPara ?? '').matchAll(/<br>\*\s*McshEngl\.([^\s,<]+)/g)) {
+        oSet.add(aN[1].split('!')[0].toLowerCase());
+        const aM = /!⇒\s*([^,\s]+)/.exec(aN[1]);
+        if (aM) oSet.add(aM[1].toLowerCase());
+      }
+    const oG = fGntr(sKey), sHead = oG && fHead(oG.oP.sPara);
+    if (sHead) oSet.add(sHead.replace(/_Gntr$/, '').toLowerCase());
+    return oSet;
+  };
+  const oIndex = { rGs, ooFile, fHead, fKey, fGntr, fSptr, fRefs, fItems, fTreeItems, fNames, oNameGntr, fGenerics, fReaches, fInside };
+  oWeakGstrIndex.set(aoCnptFile, oIndex);
+  return oIndex;
+}
+
+// ⚠️ [MvrlGstr01] specific_has_generic (see above fGstrIndex)
+function fCheckGstrSpecificGeneric(aoCnptFile) {
+  const aoIssue = [];
+  const { ooFile, fHead, fKey, fGntr, fRefs, fGenerics, fReaches, fInside } = fGstrIndex(aoCnptFile);
   for (const [sFile, oF] of Object.entries(ooFile)) {
     for (const [sIdPara, oP] of Object.entries(oF.ooPara)) {
       if (oP.sNameTitle !== 'specific-tree') continue;
@@ -578,6 +626,59 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
               : `specific_has_generic: "${oR.sText}" (${sKeyY}) is a specific of ${sNameX}, but has no generic-tree::`,
             oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
         }
+      }
+    }
+  }
+  return aoIssue;
+}
+
+// ⚠️ [MvrlGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
+//   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
+//   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
+//   Skipped: McshEngl head, "... entity_Gntr", an-addressWpg group, entity itself, a-first item that is NOT a-concept.
+function fCheckGstrGenericSpecific(aoCnptFile) {
+  const aoIssue = [];
+  const { ooFile, fHead, fKey, fGntr, fSptr, fRefs, fTreeItems, fNames, oNameGntr, fInside } = fGstrIndex(aoCnptFile);
+  const fStripItem = sLine => fStripTags(sLine.replace(/^<br>\*\s*/, '')).replace(/!@\S+/g, '').replace(/,\s*$/, '').trim().toLowerCase();
+  for (const [sFile, oF] of Object.entries(ooFile)) {
+    for (const [sIdPara, oP] of Object.entries(oF.ooPara)) {
+      if (oP.sNameTitle !== 'generic-tree') continue;
+      const sB = sIdPara.replace(/gntr$/, '');
+      const sKeyS = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sIdPara);
+      if (!sKeyS) continue;
+      const sNameS = fHead(oP.sPara) || sKeyS;
+      const oSectS = oF.ooSect[sKeyS.split('#')[1]] ?? null;
+      // the-first item of every "===" group
+      const aFirst = [];
+      let bNew = false, bWeb = false;
+      for (const sLine of (oP.sPara ?? '').split('\n').map(s => s.trim())) {
+        if (/^<br>===/.test(sLine)) { bNew = true; bWeb = /address/i.test(sLine); continue; }
+        if (!bNew || bWeb || !/^<br>\*/.test(sLine) || /^<br>\*\s*(McshEngl\.|\.\.\.)/.test(sLine)) continue;
+        aFirst.push(sLine); bNew = false;
+      }
+      let oNamesS = null;
+      for (const sLine of aFirst) {
+        const aN = /^<br>\*\s*([^\s*,]+_Gntr)(?=[,\s]|$)/.exec(sLine);
+        const oR = aN ? null : fRefs(sFile, sLine)[0];
+        const sKeyG = aN ? oNameGntr[aN[1]] : (oR ? fKey(oR.sFile, oR.sId) : null);
+        if (!sKeyG || sKeyG === sKeyS || sKeyG === 'McshCor000003#') continue;   // not a-concept, itself, entity
+        if (fInside(sKeyS, sKeyG)) continue;
+        const sNameG = aN ? aN[1] : (fGntr(sKeyG) && fHead(fGntr(sKeyG).oP.sPara)) || sKeyG;
+        const oSp = fSptr(sKeyG);
+        if (!oSp) {
+          aoIssue.push(fIssue('WARN', 'MvrlGstr02', oF.oCnptFile.sNameFile, oSectS,
+            `generic_has_specific: "${sNameS}" has generic ${sNameG}, but ${sNameG} has no specific-tree::`,
+            oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
+          continue;
+        }
+        const aItem = fTreeItems(oSp.oP.sPara);
+        if (aItem.some(s => fRefs(oSp.sFile, s).some(o => fKey(o.sFile, o.sId) === sKeyS))) continue;
+        oNamesS ??= fNames(sKeyS);
+        if (aItem.some(s => { const sT = fStripItem(s); return oNamesS.has(sT) || oNamesS.has(sT.replace(/_gntr$/, '')); })) continue;
+        const sWhere = `${oSp.sFile}:${ooFile[oSp.sFile].oCnptFile.oMapIdLine?.get(oSp.oP.sNameId) ?? '?'}`;
+        aoIssue.push(fIssue('WARN', 'MvrlGstr02', oF.oCnptFile.sNameFile, oSectS,
+          `generic_has_specific: "${sNameS}" has generic ${sNameG}, but its specific-tree:: (${sWhere}) does not list it`,
+          oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
       }
     }
   }
@@ -697,6 +798,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoGstrSpcGnc = fCheckGstrSpecificGeneric(aoCnptFile);
   aoAll.push(...aoGstrSpcGnc);
   fLog(`${aoGstrSpcGnc.length} issues`);
+
+  fWrite('   MvrlGstr02 generic_has_specific... ');
+  const aoGstrGncSpc = fCheckGstrGenericSpecific(aoCnptFile);
+  aoAll.push(...aoGstrGncSpc);
+  fLog(`${aoGstrGncSpc.length} issues`);
 
   return aoAll;
 }

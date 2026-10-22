@@ -1,0 +1,34 @@
+INFORMAL PAIR ADD APPLIED — 6 name:: paragraphs, 0 skipped
+
+=== CHANGED (6)
+  McshLag000007:15614  Semuoutp
+      <br>* McshEngl.SemuVerbargt.output!⇒Semuoutp,
+      <br>* McshEngl.Semuoutp!=SemuVerbargt.output,
+      <br>* McshEngl.output-SemuVerbargt!⇒Semuoutp,
+      <br>* McshEngl.semu-output--verb-argument!⇒Semuoutp,
+  McshLag000012:354  Esponode
+      <br>* McshEngl.Espo_lago'node!⇒Esponode,
+      <br>* McshEngl.Esponode!=Espo_lago'node,
+      <br>* McshEngl.logoEspo'node!⇒Esponode,
+      <br>* McshEngl.nodeLogEspo!⇒Esponode,
+  McshStn000008:750  OgznBudget
+      <br>* McshEngl.budget-of-Ogzn!⇒OgznBudget,
+      <br>* McshEngl.OgznBudget!=budget-of-Ogzn,
+      <br>* McshEngl.OgznBudgetbudget-of-Ogzn!⇒OgznBudget,
+      <br>* McshEngl.Ogzn'att037-budget!⇒OgznBudget,
+  McshStn000014:616  Hshdbudget
+      <br>* McshEngl.budget-of-householde!⇒Hshdbudget,
+      <br>* McshEngl.Hshdbudget!=budget-of-householde,
+      <br>* McshEngl.Hshdbudgetbudget-of-householde!⇒Hshdbudget,
+      <br>* McshEngl.budget.ogznCsmg!⇒Hshdbudget,
+  McshTchInf000015:1343  Agntsize
+      <br>* McshEngl.size-of-Dchain!⇒Agntsize,
+      <br>* McshEngl.Agntsize!=size-of-Dchain,
+      <br>* McshEngl.Dchain'size!⇒Agntsize,
+  McshTchInf000016:4969  Bkcncon
+      <br>* McshEngl.problem-of-blockchain!⇒Bkcncon,
+      <br>* McshEngl.Bkcncon!=problem-of-blockchain,
+      <br>* McshEngl.blockchain-evaluation.con!⇒Bkcncon,
+      <br>* McshEngl.AgntBkcn'problem!⇒Bkcncon,
+
+=== SKIPPED (0)
