@@ -290,7 +290,7 @@ s =
   '  <p id="' + sNameId + 'gntr">generic-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Gntr,\n' +
   '    <br>===\n' +
-  '    <br>* ... entity_Gntr.\n' +
+  '    <br>* ...entity_Gntr.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gntr"></a></p>\n' +
   '  <p id="' + sNameId + 'sptr">specific-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Sptr,\n' +

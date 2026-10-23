@@ -1,8 +1,8 @@
-GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-21
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-22
 
-GS-TREE sections: 2528   fully conforming: 2528   with issues: 0
-specific-tree ids: 2528 {whole}sptr, 0 old {whole}str
-heading levels: h1 555, h2 806, h3 606, h4 355, h5 161, h6 41, h7 4
+GS-TREE sections: 2544   fully conforming: 2528   with issues: 16
+specific-tree ids: 2544 {whole}sptr, 0 old {whole}str
+heading levels: h1 555, h2 809, h3 614, h4 358, h5 163, h6 41, h7 4
 
 Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
   {id}dsn with Mcsh-creation date, {id}nam with X'generic-specific-tree + X'specific-generic-tree,
@@ -16,14 +16,54 @@ ISSUES (a GS-TREE can have several):
   LEVEL        0  heading level is not whole + 1
   HID          0  heading id is not {id}H{level}
   DSN          0  no {id}dsn description:: (or no Mcsh-creation date)
-  NAM          0  name:: lacks X'generic-specific-tree / X'specific-generic-tree
+  NAM          1  name:: lacks X'generic-specific-tree / X'specific-generic-tree
   GTR          0  no {whole}gntr generic-tree:: paragraph
-  GTRN         0  generic-tree:: does not start with McshEngl.X_Gntr,
+  GTRN        14  generic-tree:: does not start with McshEngl.X_Gntr,
   GTRE         0  generic-tree:: neither has "... entity_Gntr," nor ends at entity
   STR          0  no {whole}sptr specific-tree:: paragraph
-  STRN         0  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
-  XNAME        0  X differs from the whole's !⇒ main-name
+  STRN        14  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
+  XNAME        3  X differs from the whole's !⇒ main-name
   EXTRA        0  other paragraphs / blocks inside the GS-TREE
   KIDS         0  GS-TREE has child sections that are not spec-div, specifics (X.name) or SPECIFIC-COMPLEMENT
   TWO          0  whole has more than one GS-TREE
   SELF         0  self-link does not match its paragraph id
+
+=== NAM (1) — name:: lacks X'generic-specific-tree / X'specific-generic-tree
+  McshTchInf000015:1732  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"
+
+=== GTRN (14) — generic-tree:: does not start with McshEngl.X_Gntr,
+  McshCor000002:1444  idMcsattDvsngstr  h3  "GENERIC-SPECIFIC-TREE of Mcsdivision"  <br>* McshEngl.Mcs_division_Gntr,
+  McshTchInf000015:1170  idAlgnttxgstr  h3  "GENERIC-SPECIFIC-TREE of Agnttx"  <br>* McshEngl.Dchain_tx_Gntr,
+  McshTchInf000015:1732  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"  <br>* McshEngl.Dchain_Gntr,
+  McshTchInf000015:6916  idAlgntwltgstr  h2  "GENERIC-SPECIFIC-TREE of Agnetwllt"  <br>* McshEngl.Dwallet_Gntr,
+  McshTchInf000016:5098  idDbcpbmgstr  h3  "GENERIC-SPECIFIC-TREE of Bkcncon"  <br>* McshEngl.blockchain-con_Gntr,
+  McshTchInf000016:6074  idDbcEvugstr  h4  "GENERIC-SPECIFIC-TREE of Bkcnasset"  <br>* McshEngl.BcnnetEvu_Gntr,
+  McshTchInf000016:10547  idDcrnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDcrd"  <br>* McshEngl.Dcrnet_Gntr,
+  McshTchInf000016:10637  idPivxnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntPivx"  <br>* McshEngl.AgntPivs_Gntr,
+  McshTchInf000016:12239  idDashnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDash"  <br>* McshEngl.Ddash_net_Gntr,
+  McshTchInf000016:13380  idEmcnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEmcn"  <br>* McshEngl.AgntEmrcn_Gntr,
+  McshTchInf000016:14271  idXrpnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntRppl"  <br>* McshEngl.Ripple_net_Gntr,
+  McshTchInf000038:842  idTchLlmusaggstr  h2  "GENERIC-SPECIFIC-TREE of Llmapp"  <br>* McshEngl.LlmApp_Gntr,
+  McshTchInf000039:8066  idLCyclgstr  h2  "GENERIC-SPECIFIC-TREE of Cycl_lago"  <br>* McshEngl.lagoCycl_Gntr,
+  McshTchInf000039:13495  idLKnlg014gstr  h3  "GENERIC-SPECIFIC-TREE of Rdfw_lago"  <br>* McshEngl.lagoRdfw_Gntr,
+
+=== STRN (14) — specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
+  McshCor000002:1444  idMcsattDvsngstr  h3  "GENERIC-SPECIFIC-TREE of Mcsdivision"
+  McshTchInf000015:1170  idAlgnttxgstr  h3  "GENERIC-SPECIFIC-TREE of Agnttx"
+  McshTchInf000015:1732  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"
+  McshTchInf000015:6916  idAlgntwltgstr  h2  "GENERIC-SPECIFIC-TREE of Agnetwllt"
+  McshTchInf000016:5098  idDbcpbmgstr  h3  "GENERIC-SPECIFIC-TREE of Bkcncon"
+  McshTchInf000016:6074  idDbcEvugstr  h4  "GENERIC-SPECIFIC-TREE of Bkcnasset"
+  McshTchInf000016:10547  idDcrnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDcrd"
+  McshTchInf000016:10637  idPivxnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntPivx"
+  McshTchInf000016:12239  idDashnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDash"
+  McshTchInf000016:13380  idEmcnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEmcn"
+  McshTchInf000016:14271  idXrpnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntRppl"
+  McshTchInf000038:842  idTchLlmusaggstr  h2  "GENERIC-SPECIFIC-TREE of Llmapp"
+  McshTchInf000039:8066  idLCyclgstr  h2  "GENERIC-SPECIFIC-TREE of Cycl_lago"
+  McshTchInf000039:13495  idLKnlg014gstr  h3  "GENERIC-SPECIFIC-TREE of Rdfw_lago"
+
+=== XNAME (3) — X differs from the whole's !⇒ main-name
+  McshHlth000002:3495  idGlndHmn017gstr  h3  "GENERIC-SPECIFIC-TREE of HmbdTesticle"  main-name GlndTesticle
+  McshTchInf000015:1732  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"  main-name Dchain
+  McshTchInf000016:15284  idHmqnetgstr  h2  "GENERIC-SPECIFIC-TREE of Humaniq"  main-name AgntHmiq

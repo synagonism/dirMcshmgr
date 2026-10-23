@@ -1,0 +1,1510 @@
+generic-chain report {2026-10-22}: gntr shows 3 levels + ... entity_Gntr  (total 3454 gntr)
+
+=== WILL-CHANGE (1) — current  → proposed
+
+=== NO-ENTITY-END (3) — last line is not ... entity_Gntr; current → proposed
+
+=== MULTI-GENERIC (236) — has lines not in the computed chain (2nd generic or other); not auto-changed
+  McshCor000002:121  nameMcs_Gntr | nameMcsMind_Gntr | Mcsattr_Gntr | ... entity_Gntr
+      → nameMcs_Gntr | Mcsattr_Gntr | ... entity_Gntr
+      extra: nameMcsMind_Gntr
+  McshCor000002:2050  Mcsattr_Gntr | RltnAttributeThenEntity_Gntr | ... entity_Gntr
+      → Mcsattr_Gntr | ... entity_Gntr
+      extra: RltnAttributeThenEntity_Gntr
+  McshCor000002:2352  tree_node_chain_Gntr | Mcsattr_Gntr
+      → tree_node_chain_Gntr | ... entity_Gntr
+      extra: Mcsattr_Gntr
+  McshCor000002:5162  concept_Gntr | infoSenso_Gntr | informationBrain!@McshLag000003 | infoBio_Gntr | model!@McshCor000012 | entity_Gntr
+      → concept_Gntr | model_Gntr | system_Gntr | ... entity_Gntr
+      extra: infoSenso_Gntr | informationBrain!@McshLag000003 | infoBio_Gntr | model!@McshCor000012 | entity_Gntr
+  McshCor000003:6031  doingNo_Gntr | entity_Gntr
+      → doingNo_Gntr | attribute_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshCor000004:1330  bodyNo_Gntr | entity_Gntr
+      → bodyNo_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshCor000004:1650  doing_Gntr | bodyNo_Gntr | entity_Gntr
+      → doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshCor000004:484  space_direction_Gntr | argtDoing_Gntr
+      → space_direction_Gntr | ... entity_Gntr
+      extra: argtDoing_Gntr
+  McshCor000005:2588  relation_Gntr | RltnDialectic_Gntr | ... entity_Gntr
+      → relation_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: RltnDialectic_Gntr
+  McshCor000005:341  bodyNo_Gntr | doingNo_Gntr | entity_Gntr
+      → bodyNo_Gntr | ... entity_Gntr
+      extra: doingNo_Gntr | entity_Gntr
+  McshCor000006:390  discreteNo_entity_Gntr | doing-of-Universe | doing_Gntr | entity_Gntr
+      → discreteNo_entity_Gntr | generic_Gntr | ... entity_Gntr
+      extra: doing-of-Universe | doing_Gntr | entity_Gntr
+  McshCor000007:828  discreteNo_entity_Gntr | structure-of-entity | entity_Gntr
+      → discreteNo_entity_Gntr | generic_Gntr | ... entity_Gntr
+      extra: structure-of-entity | entity_Gntr
+  McshCor000009:713  evaluation_Gntr | generic_Gntr | ... entity_Gntr
+      → evaluation_Gntr | ... entity_Gntr
+      extra: generic_Gntr
+  McshCor000012:446  system_Gntr | entity_Gntr
+      → system_Gntr | whole_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshCor000013:106  infoBrainInBio_Gntr | brain-info!@McshLag000002 | info_Gntr | bio-info!@McshNtr000011 | model!@McshCor000012#idOverview | entity_Gntr | ... entity_Gntr
+      → infoBrainInBio_Gntr | infoBrainBio_Gntr | infoBio_Gntr | ... entity_Gntr
+      extra: brain-info!@McshLag000002 | info_Gntr | bio-info!@McshNtr000011 | model!@McshCor000012#idOverview | entity_Gntr
+  McshCor000013:499  functing_Gntr | doing_Gntr | bodyNo_Gntr | entity_Gntr
+      → functing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshCor000013:695  FctgBrainingBio_Gntr | infoBrainBio'communicating_Gntr | ... entity_Gntr
+      → FctgBrainingBio_Gntr | functing_Gntr | doing_Gntr | ... entity_Gntr
+      extra: infoBrainBio'communicating_Gntr
+  McshCor000018:1120  FctgThinkingBio_Gntr | FctgBraining_Gntr | DongMinding_Gntr | ... entity_Gntr
+      → FctgThinkingBio_Gntr | ... entity_Gntr
+      extra: FctgBraining_Gntr | DongMinding_Gntr
+  McshCor000018:1287  creatingInfoMindBio_Gntr | DongMinding_Gntr | ... entity_Gntr
+      → creatingInfoMindBio_Gntr | FctgBrainingBio_Gntr | functing_Gntr | ... entity_Gntr
+      extra: DongMinding_Gntr
+  McshCor000018:187  bodyHumn'doing_Gntr | Hmbddoing_Gntr | SystNervous'doing_Gntr | ... entity_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr | SystNervous'doing_Gntr
+  McshCor000018:2792  FctgBraining_Gntr | DongMinding_Gntr | ... entity_Gntr
+      → FctgBraining_Gntr | Hmbddoing_Gntr | doing_Gntr | ... entity_Gntr
+      extra: DongMinding_Gntr
+  McshCor000018:4871  DongMinding_Gntr | FctgBraining_Gntr | ... entity_Gntr
+      → DongMinding_Gntr | ... entity_Gntr
+      extra: FctgBraining_Gntr
+  McshCor000018:4999  FctgBraining_Gntr | DongMinding_Gntr | ... entity_Gntr
+      → FctgBraining_Gntr | Hmbddoing_Gntr | doing_Gntr | ... entity_Gntr
+      extra: DongMinding_Gntr
+  McshEdu000005:5834  mathAppliedNo_Gntr | mathDiscrete_Gntr | ... entity_Gntr
+      → mathAppliedNo_Gntr | sciMath_Gntr | science_Gntr | ... entity_Gntr
+      extra: mathDiscrete_Gntr
+  McshEdu000005:6799  mathApplied_Gntr | mathDiscrete_Gntr | ... entity_Gntr
+      → mathApplied_Gntr | ... entity_Gntr
+      extra: mathDiscrete_Gntr
+  McshEdu000005:7172  mathAppliedNo_Gntr | mathDiscrete_Gntr | ... entity_Gntr
+      → mathAppliedNo_Gntr | sciMath_Gntr | science_Gntr | ... entity_Gntr
+      extra: mathDiscrete_Gntr
+  McshEdu000005:7573  mathDiscrete_Gntr | mathLogic_Gntr | ... entity_Gntr
+      → mathDiscrete_Gntr | sciMath_Gntr | science_Gntr | ... entity_Gntr
+      extra: mathLogic_Gntr
+  McshHlth000002:12256  GlndExocrine_Gntr | OganGland_Gntr
+      → GlndExocrine_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: OganGland_Gntr
+  McshHlth000002:13978  bodyHumn'doing_Gntr | Hmbddoing_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000002:14071  bodyHumn'doing_Gntr | Hmbddoing_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000002:14367  bodyHumn'doing_Gntr | Hmbddoing_Gntr | ... entity_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000002:14421  bodyHumn'doing_Gntr | Hmbddoing_Gntr | ... entity_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000002:14461  bodyHumn'doing_Gntr | SystDigestive'functing_Gntr | Hmbddoing_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: SystDigestive'functing_Gntr | Hmbddoing_Gntr
+  McshHlth000002:14599  bodyHumn'doing_Gntr | Hmbddoing_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000002:2455  OganGland_Gntr | organ_Gntr | SystDigestive'organ_Gntr
+      → OganGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: SystDigestive'organ_Gntr
+  McshHlth000002:2751  HmbdMixedGland_Gntr | OganGland_Gntr | organ_Gntr | ... entity_Gntr
+      → HmbdMixedGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: OganGland_Gntr
+  McshHlth000002:2795  HmbdMixedGland_Gntr | OganGland_Gntr | SystDigestive'organ_Gntr | organ_Gntr
+      → HmbdMixedGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: OganGland_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:2876  OganGland_Gntr | organ_Gntr | GlndExocrine_Gntr | SystDigestive'organ_Gntr | ... entity_Gntr
+      → OganGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: GlndExocrine_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:3055  OganGland_Gntr | organ_Gntr | GlndEndocrine_Gntr
+      → OganGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: GlndEndocrine_Gntr
+  McshHlth000002:3300  OganGland_Gntr | organ_Gntr | GlndEndocrine_Gntr | ... entity_Gntr
+      → OganGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: GlndEndocrine_Gntr
+  McshHlth000002:3336  OganGland_Gntr | organ_Gntr | GlndEndocrine_Gntr
+      → OganGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: GlndEndocrine_Gntr
+  McshHlth000002:3512  HmbdMixedGland_Gntr | OganGland_Gntr | organ_Gntr | ... entity_Gntr
+      → HmbdMixedGland_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: OganGland_Gntr
+  McshHlth000002:9624  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleTorso_Gntr | muscleThorax_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleTorso_Gntr | muscleThorax_Gntr
+  McshHlth000005:1355  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleNeck_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleNeck_Gntr
+  McshHlth000005:1767  OganMuscle_Gntr | muscleSkeletal_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr
+  McshHlth000005:1814  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleTorso_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleTorso_Gntr
+  McshHlth000005:1866  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleTorso_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleTorso_Gntr
+  McshHlth000005:2089  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleTorso_Gntr | muscleTorsofrontSkeletal_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleTorso_Gntr | muscleTorsofrontSkeletal_Gntr
+  McshHlth000005:2160  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleTorso_Gntr | muscleTorsofrontSkeletal_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleTorso_Gntr | muscleTorsofrontSkeletal_Gntr
+  McshHlth000005:2282  OganMuscle_Gntr | muscleSkeletal_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr
+  McshHlth000005:2404  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleLimb_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleLimb_Gntr
+  McshHlth000005:2644  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleLimb_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleLimb_Gntr
+  McshHlth000005:2719  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleHead_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleHead_Gntr
+  McshHlth000005:721  OganMuscle_Gntr | <a class="clsPreview" href="#idMsclHmn019">muscleStriatedNo</a>
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: <a class="clsPreview" href="#idMsclHmn019">muscleStriatedNo</a>
+  McshHlth000005:856  OganMuscle_Gntr | muscleSkeletal_Gntr | ... entity_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr
+  McshHlth000005:941  OganMuscle_Gntr | muscleSkeletal_Gntr | muscleHead_Gntr
+      → OganMuscle_Gntr | organ_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+      extra: muscleSkeletal_Gntr | muscleHead_Gntr
+  McshHlth000006:384  Enttstate_Gntr | attribute_Gntr | entity_Gntr
+      → Enttstate_Gntr | ... entity_Gntr
+      extra: attribute_Gntr | entity_Gntr
+  McshHlth000007:174  Enttstate_Gntr | healthBio_Gntr | ... entity_Gntr
+      → Enttstate_Gntr | ... entity_Gntr
+      extra: healthBio_Gntr
+  McshHlth000008:1464  organism's-health!@McshHlth000007 | healthBio_Gntr | ... entity_Gntr
+      → organism's-health!@McshHlth000007 | Enttstate_Gntr | ... entity_Gntr
+      extra: healthBio_Gntr
+  McshHlth000008:460  bodyMtr!@McshNtr000002 | bodyMtrHumn!@McshHlth000002#idBdyHmnatt022 | SystMolsHumn_Gntr | ... entity_Gntr
+      → bodyMtr!@McshNtr000002 | body_Gntr | doingNo_Gntr | ... entity_Gntr
+      extra: bodyMtrHumn!@McshHlth000002#idBdyHmnatt022 | SystMolsHumn_Gntr
+  McshHlth000011:2764  DissBlood_Gntr | DissSystCirculatory_Gntr
+      → DissBlood_Gntr | disease_Gntr | DissOgsm_Gntr | ... entity_Gntr
+      extra: DissSystCirculatory_Gntr
+  McshHlth000011:2975  DissBlood_Gntr | DissLeukemia_Gntr | DissSystCirculatory_Gntr
+      → DissBlood_Gntr | disease_Gntr | DissOgsm_Gntr | ... entity_Gntr
+      extra: DissLeukemia_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:3018  DissBlood_Gntr | DissSystCirculatory_Gntr
+      → DissBlood_Gntr | disease_Gntr | DissOgsm_Gntr | ... entity_Gntr
+      extra: DissSystCirculatory_Gntr
+  McshHlth000011:7739  FctgEmotingAnxieting_Gntr | DissMental_Gntr | ... entity_Gntr
+      → FctgEmotingAnxieting_Gntr | ... entity_Gntr
+      extra: DissMental_Gntr
+  McshHlth000013:11114  foodCooked_Gntr | foodSalad_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:11150  foodCooked_Gntr | foodSalad_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:11187  foodCooked_Gntr | foodSalad_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:11286  foodCooked_Gntr | foodSalad_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:11349  foodCooked_Gntr | foodSalad_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:11435  foodCooked_Gntr | foodSalad_Gntr | ... entity_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSalad_Gntr
+  McshHlth000013:3079  foodCooked_Gntr | drink_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: drink_Gntr
+  McshHlth000013:7740  foodCooked_Gntr | foodSoup_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSoup_Gntr
+  McshHlth000013:8723  foodCooked_Gntr | foodSoup_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodSoup_Gntr
+  McshHlth000013:8990  foodCooked_Gntr | foodMeat_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodMeat_Gntr
+  McshHlth000013:9217  foodCooked_Gntr | foodMeat_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodMeat_Gntr
+  McshHlth000013:9288  foodCooked_Gntr | foodMeat_Gntr | ... entity_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodMeat_Gntr
+  McshHlth000013:9373  foodCooked_Gntr | foodMeat_Gntr
+      → foodCooked_Gntr | food_Gntr | satisfier_Gntr | ... entity_Gntr
+      extra: foodMeat_Gntr
+  McshHlth000016:284  ThrpOgsm_Gntr | entity_Gntr
+      → ThrpOgsm_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshHlth000019:3247  SystSense_Gntr | VISUAL_SYSTEM⧺cptEpistem84.6.12⧺
+      → SystSense_Gntr | ... entity_Gntr
+      extra: VISUAL_SYSTEM⧺cptEpistem84.6.12⧺
+  McshHlth000019:435  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:470  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:547  nervous_center_Gntr | cerebrum_center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr
+  McshHlth000019:5721  bodyHumn'doing_Gntr | Hmbddoing_Gntr | ... entity_Gntr
+      → bodyHumn'doing_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Hmbddoing_Gntr
+  McshHlth000019:573  nervous_center_Gntr | cerebrum_center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr
+  McshHlth000019:599  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:627  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:658  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:685  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHlth000019:712  nervous_center_Gntr | cerebrum_center_Gntr | sensory-center_Gntr
+      → nervous_center_Gntr | ... entity_Gntr
+      extra: cerebrum_center_Gntr | sensory-center_Gntr
+  McshHmn000002:4677  animal_Gntr | personLagoB_Gntr | ... | organism_Gntr | entity_Gntr
+      → animal_Gntr | ... entity_Gntr
+      extra: personLagoB_Gntr | ... | organism_Gntr | entity_Gntr
+  McshLag000002:201  bio-info!@McshNtr000011 | model!@McshCor000012#idOverview | entity_Gntr
+      → bio-info!@McshNtr000011 | model_Gntr | system_Gntr | ... entity_Gntr
+      extra: model!@McshCor000012#idOverview | entity_Gntr
+  McshLag000003:298  infoBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+      → infoBio_Gntr | model_Gntr | system_Gntr | ... entity_Gntr
+      extra: model!@McshCor000012#idOverview | entity_Gntr
+  McshLag000005:163  RltnMapping_Gntr | mapping-method!@McshCor000005#idRlnMpgmthd | method!@McshLag000003#idInfHmnBrn008 | infoMindBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+      → RltnMapping_Gntr | ... entity_Gntr
+      extra: mapping-method!@McshCor000005#idRlnMpgmthd | method!@McshLag000003#idInfHmnBrn008 | infoMindBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+  McshLag000007:14768  bodyNo_Gntr | Semucnpt_Gntr | ... entity_Gntr
+      → bodyNo_Gntr | ... entity_Gntr
+      extra: Semucnpt_Gntr
+  McshLag000007:15031  RltnSemaso_Gntr | Semucnpt_Gntr | ... entity_Gntr
+      → RltnSemaso_Gntr | relation_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Semucnpt_Gntr
+  McshLag000007:17136  TextUnit_Gntr | HmnmUnit_Gntr | ... entity_Gntr
+      → TextUnit_Gntr | ... entity_Gntr
+      extra: HmnmUnit_Gntr
+  McshLag000007:21106  argu_mebr_Gntr | argu_mebrRltnNo_Gntr | noun_mebr_Gntr | ... entity_Gntr
+      → argu_mebr_Gntr | ... entity_Gntr
+      extra: argu_mebrRltnNo_Gntr | noun_mebr_Gntr
+  McshLag000007:22115  pronoun_Gntr | pronDeictic_Gntr | ... entity_Gntr
+      → pronoun_Gntr | ... entity_Gntr
+      extra: pronDeictic_Gntr
+  McshLag000007:25633  termSemu_Gntr | nameSemaso!@McshLag000007#idLHmnmname002 | name_Gntr | term_Gntr | ... entity_Gntr
+      → termSemu_Gntr | ... entity_Gntr
+      extra: nameSemaso!@McshLag000007#idLHmnmname002 | name_Gntr | term_Gntr
+  McshLag000007:26717  Hmnmnode_Gntr | phrase_Gntr | ... entity_Gntr
+      → Hmnmnode_Gntr | ... entity_Gntr
+      extra: phrase_Gntr
+  McshLag000007:30061  Hmnmnode_Gntr | systSentTitless_Gntr | ... entity_Gntr
+      → Hmnmnode_Gntr | ... entity_Gntr
+      extra: systSentTitless_Gntr
+  McshLag000007:30092  Hmnmnode_Gntr | systSentTitless_Gntr | ... entity_Gntr
+      → Hmnmnode_Gntr | ... entity_Gntr
+      extra: systSentTitless_Gntr
+  McshLag000007:31596  language_Gntr | mapping-relation_Gntr | relation_Gntr | bodyNo_Gntr | entity_Gntr
+      → language_Gntr | Ogsm_lago_Gntr | RltnMapping_Gntr | ... entity_Gntr
+      extra: mapping-relation_Gntr | relation_Gntr | bodyNo_Gntr | entity_Gntr
+  McshLag000007:32144  HmnmLogoView_Gntr | irVisual_Gntr | ... entity_Gntr
+      → HmnmLogoView_Gntr | thoughtBio_Gntr | ... entity_Gntr
+      extra: irVisual_Gntr
+  McshLag000007:32348  HmnmUnit_Gntr | TextUnit_Gntr | ... entity_Gntr
+      → HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: TextUnit_Gntr
+  McshLag000007:885  <a class="clsPreview" href="../dirLag/McshLag000003.last.html#idInfHmnMind002">viewMind</a> | thoughtBio_Gntr
+      → <a class="clsPreview" href="../dirLag/McshLag000003.last.html#idInfHmnMind002">viewMind</a> | model_Gntr | system_Gntr | ... entity_Gntr
+      extra: thoughtBio_Gntr
+  McshLag000007:956  Mcsview_Gntr | thoughtBio_Gntr
+      → Mcsview_Gntr | model_Gntr | system_Gntr | ... entity_Gntr
+      extra: thoughtBio_Gntr
+  McshLag000008:286  HmnmUnit_Gntr | TextUnit_Gntr | ... entity_Gntr
+      → HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: TextUnit_Gntr
+  McshLag000008:826  Text_lago_Gntr | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → Text_lago_Gntr | Hmnm_lago_Gntr | language_Gntr | ... entity_Gntr
+      extra: human-mind-language!@McshLag000007 | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000009:136  HmnmLogoView_Gntr | irAudio_Gntr | ... entity_Gntr
+      → HmnmLogoView_Gntr | thoughtBio_Gntr | ... entity_Gntr
+      extra: irAudio_Gntr
+  McshLag000009:3982  word_Gntr | Spchunitsrtr_Gntr
+      → word_Gntr | systUnitHmnm_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Spchunitsrtr_Gntr
+  McshLag000009:4319  human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → human-mind-language!@McshLag000007 | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000010:1317  letter_Gntr | Sngu_unit_Gntr | Sngu_lagu-unit.term_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Sngu_unit_Gntr | Sngu_lagu-unit.term_Gntr
+  McshLag000010:2464  word_Gntr | systUnitSngo_Gntr | ... entity_Gntr
+      → word_Gntr | systUnitHmnm_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: systUnitSngo_Gntr
+  McshLag000010:266  Semuverb_Gntr | Sngusemucnpt_Gntr
+      → Semuverb_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: Sngusemucnpt_Gntr
+  McshLag000010:294  Semuconj_Gntr | Sngusemucnpt_Gntr
+      → Semuconj_Gntr | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: Sngusemucnpt_Gntr
+  McshLag000010:5461  Sngu_name_Gntr | Sngu_term_Gntr | ... entity_Gntr
+      → Sngu_name_Gntr | name_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Sngu_term_Gntr
+  McshLag000010:5516  Hmnmconj_Gntr | Sngu_term_Gntr | Sngu_name_Gntr | ... entity_Gntr
+      → Hmnmconj_Gntr | termSemu_Gntr | ... entity_Gntr
+      extra: Sngu_term_Gntr | Sngu_name_Gntr
+  McshLag000010:6006  Glbl_lago_Gntr | lagoCnrd_Gntr | alphabetic-language!@McshLag000008 | oral-language!@McshLag000009 | common-language!@McshLag000007#idLHmnmKmn | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → Glbl_lago_Gntr | ... entity_Gntr
+      extra: lagoCnrd_Gntr | alphabetic-language!@McshLag000008 | oral-language!@McshLag000009 | common-language!@McshLag000007#idLHmnmKmn | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000011:1647  letter_Gntr | Engl_unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Engl_unit_Gntr
+  McshLag000011:2220  word_Gntr | systUnitEngl_Gntr
+      → word_Gntr | systUnitHmnm_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: systUnitEngl_Gntr
+  McshLag000011:27447  ConjHmnm | termEngl_Gntr | Hmnmconj_Gntr | termEngl_Gntr | ... entity_Gntr
+      → ConjHmnm | termSemu_Gntr | ... entity_Gntr
+      extra: termEngl_Gntr | Hmnmconj_Gntr | termEngl_Gntr
+  McshLag000011:291  Englsemuargu_Gntr | Semuargu_mebrMain_Gntr | ... entity_Gntr
+      → Englsemuargu_Gntr | Semuargu_Gntr | Semucnpt_Gntr | ... entity_Gntr
+      extra: Semuargu_mebrMain_Gntr
+  McshLag000011:431  Englsemuargu_mebr_Gntr | lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl | ... entity_Gntr
+      → Englsemuargu_mebr_Gntr | ... entity_Gntr
+      extra: lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000011:9875  Hmnm_adve_Gntr | Englargumebr_Gntr | ... entity_Gntr
+      → Hmnm_adve_Gntr | argu_mebr_Gntr | ... entity_Gntr
+      extra: Englargumebr_Gntr
+  McshLag000012:1185  letter_Gntr | unitEspo_Gntr | Espo_lago-unit.term_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: unitEspo_Gntr | Espo_lago-unit.term_Gntr
+  McshLag000012:1721  word_Gntr | systUnitEspo_Gntr | ... entity_Gntr
+      → word_Gntr | systUnitHmnm_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: systUnitEspo_Gntr
+  McshLag000012:197  Esposemuargu_Gntr | Semuargu_mebrMain_Gntr
+      → Esposemuargu_Gntr | Semuargu_Gntr | Semucnpt_Gntr | ... entity_Gntr
+      extra: Semuargu_mebrMain_Gntr
+  McshLag000012:256  Semuverb_Gntr | cptSmsEspo_Gntr
+      → Semuverb_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: cptSmsEspo_Gntr
+  McshLag000012:279  Semuconj_Gntr | cptSmsEspo_Gntr
+      → Semuconj_Gntr | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: cptSmsEspo_Gntr
+  McshLag000012:4840  ConjHmnm | termEspo_Gntr
+      → ConjHmnm | termSemu_Gntr | ... entity_Gntr
+      extra: termEspo_Gntr
+  McshLag000018:13015  ConjHmnm | Zhonname_Gntr | Zhonname_Gntr | ... entity_Gntr
+      → ConjHmnm | termSemu_Gntr | ... entity_Gntr
+      extra: Zhonname_Gntr | Zhonname_Gntr
+  McshLag000018:1649  Zhon_unit_Gntr | Zhonname_unit_Gntr | ... entity_Gntr
+      → Zhon_unit_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Zhonname_unit_Gntr
+  McshLag000018:18591  Cptg_lago_Gntr | written-language!@McshLag000008 | oral-language!@McshLag000009 | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → Cptg_lago_Gntr | ... entity_Gntr
+      extra: written-language!@McshLag000008 | oral-language!@McshLag000009 | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000018:368  Zhonsemuargu_Gntr | Semuargu_mebrMain_Gntr
+      → Zhonsemuargu_Gntr | Semuargu_Gntr | Semucnpt_Gntr | ... entity_Gntr
+      extra: Semuargu_mebrMain_Gntr
+  McshLag000018:399  Zhonsemuargu_mebr_Gntr | Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl | ... entity_Gntr
+      → Zhonsemuargu_mebr_Gntr | ... entity_Gntr
+      extra: Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000018:9288  Hmnm_adve_Gntr | Zhonargu_mebr_Gntr | ... entity_Gntr
+      → Hmnm_adve_Gntr | argu_mebr_Gntr | ... entity_Gntr
+      extra: Zhonargu_mebr_Gntr
+  McshLag000021:172  word_Gntr | Zhon_unit_syst_Gntr | ... entity_Gntr
+      → word_Gntr | systUnitHmnm_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Zhon_unit_syst_Gntr
+  McshLag000030:8100  human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → human-mind-language!@McshLag000007 | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000037:1375  letter_Gntr | HiurUnit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: HiurUnit_Gntr
+  McshLag000038:672  letter_Gntr | Slv0Unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Slv0Unit_Gntr
+  McshLag000039:539  letter_Gntr | Ide0Unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Ide0Unit_Gntr
+  McshLag000040:764  letter_Gntr | Afa0Unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Afa0Unit_Gntr
+  McshLag000041:676  letter_Gntr | Tur0Unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Tur0Unit_Gntr
+  McshLag000042:685  letter_Gntr | Asa0Unit_Gntr | ... entity_Gntr
+      → letter_Gntr | HmnmUnit_Gntr | Hmnmnode_Gntr | ... entity_Gntr
+      extra: Asa0Unit_Gntr
+  McshLag000043:3690  human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → human-mind-language!@McshLag000007 | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshNtr000002:499  body_Gntr | body-system!@McshCor000011#idSys004 | entity_Gntr
+      → body_Gntr | doingNo_Gntr | attribute_Gntr | ... entity_Gntr
+      extra: body-system!@McshCor000011#idSys004 | entity_Gntr
+  McshNtr000005:375  MtrlSysMols_Gntr | material-object
+      → MtrlSysMols_Gntr | ... entity_Gntr
+      extra: material-object
+  McshNtr000006:117  MtrlChemical_Gntr, mixture | material-body!@McshNtr000002 | body_Gntr, doing_Gntr, relation_Gntr | entity_Gntr
+      → MtrlChemical_Gntr, mixture | MtrlSysMols_Gntr | ... entity_Gntr
+      extra: material-body!@McshNtr000002 | body_Gntr, doing_Gntr, relation_Gntr | entity_Gntr
+  McshNtr000011:113  model!@McshCor000012#idOverview | entity_Gntr
+      → model!@McshCor000012#idOverview | system_Gntr | whole_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshNtr000012:159  acting_Gntr | doing_Gntr | entity_Gntr
+      → acting_Gntr | doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshNtr000013:115  doing_Gntr | bodyNo_Gntr | entity_Gntr
+      → doing_Gntr | bodyNo_Gntr | ... entity_Gntr
+      extra: entity_Gntr
+  McshOgm000004:1135  molCholesterol_Gntr | BodyHumn'product_Gntr | ... entity_Gntr
+      → molCholesterol_Gntr | ... entity_Gntr
+      extra: BodyHumn'product_Gntr
+  McshOgm000008:641  ogmCellNo_Gntr | pathogen | ... entity_Gntr
+      → ogmCellNo_Gntr | ... entity_Gntr
+      extra: pathogen
+  McshStn000008:1241  Sctn_Gntr | organization-of-organisms!@McshStn000006 | ... entity_Gntr
+      → Sctn_Gntr | ... entity_Gntr
+      extra: organization-of-organisms!@McshStn000006
+  McshStn000009:4436  Ogzn_Gntr | OgznPrdg_Gntr | ... entity_Gntr
+      → Ogzn_Gntr | Sctn_Gntr | ... entity_Gntr
+      extra: OgznPrdg_Gntr
+  McshStn000019:346  admnAlgo_Gntr | SocAdmnDigi_Gntr | ... entity_Gntr
+      → admnAlgo_Gntr | ... entity_Gntr
+      extra: SocAdmnDigi_Gntr
+  McshStn000020:113  HumnCitizen_Gntr | human_Gntr
+      → HumnCitizen_Gntr | ... entity_Gntr
+      extra: human_Gntr
+  McshStn000020:177  Euhmbr_Gntr | <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idOverview">human</a>
+      → Euhmbr_Gntr | HumnCitizen_Gntr | ... entity_Gntr
+      extra: <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idOverview">human</a>
+  McshTchInf000005:564  human-mind-language!@McshLag000007 | language_Gntr | mapping-method!@McshCor000005#idRlnMpgmthd | method!@McshLag000003#idInfHmnBrn008 | infoMindBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+      → human-mind-language!@McshLag000007 | RltnSemaso_Gntr | relation_Gntr | ... entity_Gntr
+      extra: language_Gntr | mapping-method!@McshCor000005#idRlnMpgmthd | method!@McshLag000003#idInfHmnBrn008 | infoMindBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+  McshTchInf000006:1507  computer-language!@McshTchInf000005 | language_Gntr | ... entity_Gntr
+      → computer-language!@McshTchInf000005 | Semuconj_Gntr | RltnSemaso_Gntr | ... entity_Gntr
+      extra: language_Gntr
+  McshTchInf000007:3223  Tdoc_lagoMrkp_Gntr | lagCnklMrkp_Gntr | ... entity_Gntr
+      → Tdoc_lagoMrkp_Gntr | ... entity_Gntr
+      extra: lagCnklMrkp_Gntr
+  McshTchInf000008:3441  Mcs'searching_Gntr | Hitpdoing_Gntr | ... entity_Gntr
+      → Mcs'searching_Gntr | Mcsmng_Gntr | ... entity_Gntr
+      extra: Hitpdoing_Gntr
+  McshTchInf000008:4024  computer-language!@McshTchInf000005 | lagCpgmNo_Gntr | Tdoc_lagoMrkp_Gntr | ... entity_Gntr
+      → computer-language!@McshTchInf000005 | Semuconj_Gntr | RltnSemaso_Gntr | ... entity_Gntr
+      extra: lagCpgmNo_Gntr | Tdoc_lagoMrkp_Gntr
+  McshTchInf000009:1090  Mcs_Gntr | Hitpdoc_Gntr | modelCmpr_Gntr | ... entity_Gntr
+      → Mcs_Gntr | concept_Gntr | model_Gntr | ... entity_Gntr
+      extra: Hitpdoc_Gntr | modelCmpr_Gntr
+  McshTchInf000009:3917  concept-language!@McshTchInf000007 | lagCnklMrkp_Gntr | Hitp_lago_Gntr | ... entity_Gntr
+      → concept-language!@McshTchInf000007 | lagoCnrd_Gntr | Hmnm_lago_Gntr | ... entity_Gntr
+      extra: lagCnklMrkp_Gntr | Hitp_lago_Gntr
+  McshTchInf000010:2572  Srcd_lago_opr_Gntr | Jsbrf_Gntr | ... entity_Gntr
+      → Srcd_lago_opr_Gntr | ... entity_Gntr
+      extra: Jsbrf_Gntr
+  McshTchInf000010:7344  programing-language | Cmpr_lago_Gntr | mapping-method | method | Mcs_Gntr | info_Gntr | model_Gntr | ... entity_Gntr
+      → programing-language | Cmpr_lago_Gntr | Semuconj_Gntr | ... entity_Gntr
+      extra: mapping-method | method | Mcs_Gntr | info_Gntr | model_Gntr
+  McshTchInf000011:2475  JsapiNative_Gntr | JsbrApi_Gntr | ... entity_Gntr
+      → JsapiNative_Gntr | Jsapi_Gntr | ... entity_Gntr
+      extra: JsbrApi_Gntr
+  McshTchInf000011:5159  JavaScript-programing-language!@McshTchInf000010 | programing-language | Cmpr_lago_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+      → JavaScript-programing-language!@McshTchInf000010 | Pgmg_lago_Gntr | Cmpr_lago_Gntr | ... entity_Gntr
+      extra: programing-language | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshTchInf000012:10329  Jsgnruntime_Gntr | Jsndtool_Gntr | ... entity_Gntr
+      → Jsgnruntime_Gntr | ... entity_Gntr
+      extra: Jsndtool_Gntr
+  McshTchInf000012:6367  Jsnd_lago-code-analysis-tool!@McshTchInf000012#idLJsndtolAns | JsgntoolAnalysis_Gntr | Npmpkg_Gntr | ... entity_Gntr
+      → Jsnd_lago-code-analysis-tool!@McshTchInf000012#idLJsndtolAns | JsgntoolAnalysis_Gntr | ... entity_Gntr
+      extra: Npmpkg_Gntr
+  McshTchInf000012:8151  JsgntoolAnalysis_Gntr | Npmpkg_Gntr | ... entity_Gntr
+      → JsgntoolAnalysis_Gntr | ... entity_Gntr
+      extra: Npmpkg_Gntr
+  McshTchInf000012:8180  JsgntoolAnalysis_Gntr | Npmpkg_Gntr | ... entity_Gntr
+      → JsgntoolAnalysis_Gntr | ... entity_Gntr
+      extra: Npmpkg_Gntr
+  McshTchInf000012:8743  JsgntoolAnalysis_Gntr | Jsndtool_Gntr | ... entity_Gntr
+      → JsgntoolAnalysis_Gntr | ... entity_Gntr
+      extra: Jsndtool_Gntr
+  McshTchInf000012:9240  JsgntoolPkgmgr_Gntr | Jsndtool_Gntr | ... entity_Gntr
+      → JsgntoolPkgmgr_Gntr | Jsgntool_Gntr | ... entity_Gntr
+      extra: Jsndtool_Gntr
+  McshTchInf000015:11263  Agntsrvc_Gntr | AnserviceFin_Gntr | AgntsrvcFunding_Gntr | ... entity_Gntr
+      → Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: AnserviceFin_Gntr | AgntsrvcFunding_Gntr
+  McshTchInf000015:11328  Agntexvu'service_Gntr | Agntsrvc_Gntr | AnserviceFin_Gntr | ... entity_Gntr
+      → Agntexvu'service_Gntr | ... entity_Gntr
+      extra: Agntsrvc_Gntr | AnserviceFin_Gntr
+  McshTchInf000015:11798  Agntsrvc_Gntr | AgntserviceTchInf_Gntr | ... entity_Gntr
+      → Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: AgntserviceTchInf_Gntr
+  McshTchInf000015:12018  Agntsrvc_Gntr | AgntserviceTchInf_Gntr | ... entity_Gntr
+      → Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: AgntserviceTchInf_Gntr
+  McshTchInf000015:12405  AgntBkcn_Gntr | Agntsrvc_Gntr | ... entity_Gntr
+      → AgntBkcn_Gntr | netAlgo_Gntr | SystNet_Gntr | ... entity_Gntr
+      extra: Agntsrvc_Gntr
+  McshTchInf000015:12609  AgntsrvcRecord_Gntr | AgntserviceAdmgSoc_Gntr | Agntsrvc_Gntr | ... entity_Gntr
+      → AgntsrvcRecord_Gntr | Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: AgntserviceAdmgSoc_Gntr
+  McshTchInf000015:12685  Agntsrvc_Gntr | AgntserviceAdmgSoc_Gntr | ... entity_Gntr
+      → Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: AgntserviceAdmgSoc_Gntr
+  McshTchInf000015:13716  SystNet_Gntr | techFin_Gntr | <a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer-network</a> | Internet_Gntr | computer-network | techCmpr_Gntr | techInfo_Gntr | tech_Gntr | product-satisfier | satisfier_Gntr | human-economic-entity | human-entity | entity_Gntr
+      → SystNet_Gntr | SystDynamic_Gntr | system_Gntr | ... entity_Gntr
+      extra: techFin_Gntr | <a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer-network</a> | Internet_Gntr | computer-network | techCmpr_Gntr | techInfo_Gntr | tech_Gntr | product-satisfier | satisfier_Gntr | human-economic-entity | human-entity | entity_Gntr
+  McshTchInf000015:1689  netAlgo_benefit_Gntr | netAlgo_benefitNo_Gntr
+      → netAlgo_benefit_Gntr | netAlgo'evaluation_Gntr | ... entity_Gntr
+      extra: netAlgo_benefitNo_Gntr
+  McshTchInf000015:4325  money_Gntr | Agntasset_Gntr | ... entity_Gntr
+      → money_Gntr | ... entity_Gntr
+      extra: Agntasset_Gntr
+  McshTchInf000015:4516  AgntserviceMoney_Gntr | AgntserviceAdmgSoc_Gntr | ... entity_Gntr
+      → AgntserviceMoney_Gntr | Agntexvu'service_Gntr | ... entity_Gntr
+      extra: AgntserviceAdmgSoc_Gntr
+  McshTchInf000015:6245  contract_Gntr | DeProgram_Gntr | ... entity_Gntr
+      → contract_Gntr | ... entity_Gntr
+      extra: DeProgram_Gntr
+  McshTchInf000016:12986  appending-asset_Gntr | Bkcnasset_Gntr | ... entity_Gntr
+      → appending-asset_Gntr | appending_Agntasset_Gntr | ... entity_Gntr
+      extra: Bkcnasset_Gntr
+  McshTchInf000016:14551  Bkcnasset_Gntr | Dblockchain-asset.minableNo_Gntr | ... entity_Gntr
+      → Bkcnasset_Gntr | Agntasset_Gntr | LykklyciPro_Gntr | ... entity_Gntr
+      extra: Dblockchain-asset.minableNo_Gntr
+  McshTchInf000016:164  Dhuman_Gntr | chain_user_Gntr | ... entity_Gntr
+      → Dhuman_Gntr | Dstakeholder_Gntr | ... entity_Gntr
+      extra: chain_user_Gntr
+  McshTchInf000016:3270  Agntexvu_Gntr | Bkcnasset_Gntr | ... entity_Gntr
+      → Agntexvu_Gntr | money_Gntr | ... entity_Gntr
+      extra: Bkcnasset_Gntr
+  McshTchInf000016:3410  appending_Agntasset_Gntr | Bkcnasset_Gntr | ... entity_Gntr
+      → appending_Agntasset_Gntr | ... entity_Gntr
+      extra: Bkcnasset_Gntr
+  McshTchInf000016:4234  DeContract_Gntr | Dblockchain_program_Gntr
+      → DeContract_Gntr | contract_Gntr | ... entity_Gntr
+      extra: Dblockchain_program_Gntr
+  McshTchInf000016:4637  Dblockchain_program_Gntr | Dblockchain_wallet_Gntr | ... entity_Gntr
+      → Dblockchain_program_Gntr | DeProgram_Gntr | ... entity_Gntr
+      extra: Dblockchain_wallet_Gntr
+  McshTchInf000016:5173  AgntevalConSecurity_Gntr | blockchain-con_Gntr | ... entity_Gntr
+      → AgntevalConSecurity_Gntr | netAlgo_benefitNo_Gntr | netAlgo'evaluation_Gntr | ... entity_Gntr
+      extra: blockchain-con_Gntr
+  McshTchInf000016:8629  appending-asset_Gntr | Bkcnasset_Gntr | ... entity_Gntr
+      → appending-asset_Gntr | appending_Agntasset_Gntr | ... entity_Gntr
+      extra: Bkcnasset_Gntr
+  McshTchInf000017:5398  appending-asset_Gntr | global-digital-currency | ... entity_Gntr
+      → appending-asset_Gntr | appending_Agntasset_Gntr | ... entity_Gntr
+      extra: global-digital-currency
+  McshTchInf000017:9029  Did_Gntr | Btcnservice_Gntr | ... entity_Gntr
+      → Did_Gntr | Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: Btcnservice_Gntr
+  McshTchInf000017:9293  blockchain-network!@McshTchInf000016 | cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe | ... entity_Gntr
+      → blockchain-network!@McshTchInf000016 | netAlgo_Gntr | SystNet_Gntr | ... entity_Gntr
+      extra: cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe
+  McshTchInf000018:12098  Dhuman_Gntr | Ethrhumn_Gntr | ... entity_Gntr
+      → Dhuman_Gntr | Dstakeholder_Gntr | ... entity_Gntr
+      extra: Ethrhumn_Gntr
+  McshTchInf000018:12877  AgntBkcn_Gntr | BkcnserviceSmct_Gntr | Proof-of-work-blockchain-network!@McshTchInf000016#idPownet | ... entity_Gntr
+      → AgntBkcn_Gntr | netAlgo_Gntr | SystNet_Gntr | ... entity_Gntr
+      extra: BkcnserviceSmct_Gntr | Proof-of-work-blockchain-network!@McshTchInf000016#idPownet
+  McshTchInf000018:3853  appending-asset_Gntr | Agntexvu_Gntr | Bkcnasset_Gntr | Ethrasset_Gntr | ... entity_Gntr
+      → appending-asset_Gntr | appending_Agntasset_Gntr | ... entity_Gntr
+      extra: Agntexvu_Gntr | Bkcnasset_Gntr | Ethrasset_Gntr
+  McshTchInf000018:4162  BkcnassetApdgNo_Gntr | Ethrasset_Gntr | ... entity_Gntr
+      → BkcnassetApdgNo_Gntr | Bkcnasset_Gntr | Agntasset_Gntr | ... entity_Gntr
+      extra: Ethrasset_Gntr
+  McshTchInf000019:1248  Ogzn_Gntr | chain_ogn_Gntr | netAlgo'environment_Gntr | ... entity_Gntr
+      → Ogzn_Gntr | Sctn_Gntr | ... entity_Gntr
+      extra: chain_ogn_Gntr | netAlgo'environment_Gntr
+  McshTchInf000019:2459  OgznDao_Gntr | DappEth_Gntr | ... entity_Gntr
+      → OgznDao_Gntr | Ogzn_Gntr | Sctn_Gntr | ... entity_Gntr
+      extra: DappEth_Gntr
+  McshTchInf000019:2820  <a class="clsPreview" href="#idEthdao">Ethereum-DAO-dApp</a> | AnsrvcGvng_Gntr | DappEth_Gntr
+      → <a class="clsPreview" href="#idEthdao">Ethereum-DAO-dApp</a> | OgznDao_Gntr | Ogzn_Gntr | ... entity_Gntr
+      extra: AnsrvcGvng_Gntr | DappEth_Gntr
+  McshTchInf000019:813  AnsrvcGvng_Gntr | OgznDao'doing_Gntr | ... entity_Gntr
+      → AnsrvcGvng_Gntr | Agntsrvc_Gntr | Dchain_doing_Gntr | ... entity_Gntr
+      extra: OgznDao'doing_Gntr
+  McshTchInf000020:2015  stable_AnaCurrency_Gntr | BkcnassetApdgNo_Gntr | Chrono.tech_Evu_Gntr | ... entity_Gntr
+      → stable_AnaCurrency_Gntr | ... entity_Gntr
+      extra: BkcnassetApdgNo_Gntr | Chrono.tech_Evu_Gntr
+  McshTchInf000020:2149  EthrassetCN_Gntr | Chrono.tech_Evu_Gntr | BkcnassetApdgNo_Gntr | ... entity_Gntr
+      → EthrassetCN_Gntr | BkcnassetApdgNo_Gntr | Bkcnasset_Gntr | ... entity_Gntr
+      extra: Chrono.tech_Evu_Gntr
+  McshTchInf000021:3369  blockchain-network!@McshTchInf000016 | chain-network!@McshTchInf000015 | ... entity_Gntr
+      → blockchain-network!@McshTchInf000016 | netAlgo_Gntr | SystNet_Gntr | ... entity_Gntr
+      extra: chain-network!@McshTchInf000015
+  McshTchInf000022:1024  appending-asset_Gntr | Bkcnasset_Gntr
+      → appending-asset_Gntr | appending_Agntasset_Gntr | ... entity_Gntr
+      extra: Bkcnasset_Gntr
+  McshTchInf000024:1994  Steem-program_Gntr | block-chain--app!@McshTchInf000016#idDbcapp | Stemprgm_Gntr | ... entity_Gntr
+      → Steem-program_Gntr | Dblockchain_program_Gntr | DeProgram_Gntr | ... entity_Gntr
+      extra: block-chain--app!@McshTchInf000016#idDbcapp | Stemprgm_Gntr
+  McshTchInf000024:709  Bkcnasset_Gntr | Stemasset_Gntr | ... entity_Gntr
+      → Bkcnasset_Gntr | Agntasset_Gntr | LykklyciPro_Gntr | ... entity_Gntr
+      extra: Stemasset_Gntr
+  McshTchInf000025:1215  Deos_Dapp_Gntr | blockchain-Dapp!@McshTchInf000016#idDbcapp | DeApp_Gntr | ... entity_Gntr
+      → Deos_Dapp_Gntr | Dapp_Gntr | DeApp_Gntr | ... entity_Gntr
+      extra: blockchain-Dapp!@McshTchInf000016#idDbcapp
+  McshTchInf000028:1685  Agntexvu_Gntr | Moversrctype_Gntr | ... entity_Gntr
+      → Agntexvu_Gntr | money_Gntr | ... entity_Gntr
+      extra: Moversrctype_Gntr
+  McshTchInf000030:1746  Rustsunt_Gntr | source-function--of-Srcd_lago | ... entity_Gntr
+      → Rustsunt_Gntr | Srcd_lago_Sunt_Gntr | Pgmgalgo'Sunt_Gntr | ... entity_Gntr
+      extra: source-function--of-Srcd_lago
+  McshTchInf000031:1073  Cppzsunt_Gntr | CppzsuntNamed_Gntr | Cppzsunt.process_Gntr | Cppzunit_Gntr | ... entity_Gntr
+      → Cppzsunt_Gntr | ... entity_Gntr
+      extra: CppzsuntNamed_Gntr | Cppzsunt.process_Gntr | Cppzunit_Gntr
+  McshTchInf000031:1307  CppzsuntNamed_Gntr | Cppzsunt.processNo_Gntr | Cppzunit_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      → CppzsuntNamed_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      extra: Cppzsunt.processNo_Gntr | Cppzunit_Gntr
+  McshTchInf000031:1365  CppzsuntNamed_Gntr | Cppzsunt.process-and-processNo_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      → CppzsuntNamed_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      extra: Cppzsunt.process-and-processNo_Gntr
+  McshTchInf000031:630  Cppzsunt.processNo_Gntr | Cppzunit_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      → Cppzsunt.processNo_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      extra: Cppzunit_Gntr
+  McshTchInf000031:717  Srcd_lago_n_Gntr | Cppzsunt.processNo_Gntr | Cppzsunt_Gntr | ... entity_Gntr
+      → Srcd_lago_n_Gntr | ... entity_Gntr
+      extra: Cppzsunt.processNo_Gntr | Cppzsunt_Gntr
+  McshTchInf000032:282  Gitcmd.collaborating_Gntr | Gitcmd_Gntr | Gitcmd.repo-creating_Gntr | ... entity_Gntr
+      → Gitcmd.collaborating_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | Gitcmd.repo-creating_Gntr
+  McshTchInf000032:308  Gitcmd.versioning_Gntr | Gitcmd_Gntr | Gitcmd.repo-creating_Gntr | ... entity_Gntr
+      → Gitcmd.versioning_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | Gitcmd.repo-creating_Gntr
+  McshTchInf000032:384  Gitcmd.informing_Gntr | Gitcmd_Gntr | Gitcmd.versioning_Gntr | ... entity_Gntr
+      → Gitcmd.informing_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | Gitcmd.versioning_Gntr
+  McshTchInf000032:406  Gitcmd.informing_Gntr | Gitcmd_Gntr | Gitcmd.versioning_Gntr | ... entity_Gntr
+      → Gitcmd.informing_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | Gitcmd.versioning_Gntr
+  McshTchInf000032:537  Gitcmd.navigating_Gntr | Gitcmd_Gntr | GitcmdBranmerg_Gntr | ... entity_Gntr
+      → Gitcmd.navigating_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | GitcmdBranmerg_Gntr
+  McshTchInf000032:558  Gitcmd.informing_Gntr | Gitcmd_Gntr | GitcmdBranmerg_Gntr | ... entity_Gntr
+      → Gitcmd.informing_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | GitcmdBranmerg_Gntr
+  McshTchInf000032:579  Gitcmd.navigating_Gntr | Gitcmd_Gntr | GitcmdBranmerg_Gntr | ... entity_Gntr
+      → Gitcmd.navigating_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | GitcmdBranmerg_Gntr
+  McshTchInf000032:600  Gitcmd.navigating_Gntr | Gitcmd_Gntr | GitcmdBranmerg_Gntr | ... entity_Gntr
+      → Gitcmd.navigating_Gntr | ... entity_Gntr
+      extra: Gitcmd_Gntr | GitcmdBranmerg_Gntr
+  McshTchInf000035:464  Tdoc_lago_Gntr | Tdoc_lagoMrkp_Gntr | ... entity_Gntr
+      → Tdoc_lago_Gntr | ... entity_Gntr
+      extra: Tdoc_lagoMrkp_Gntr
+  McshTchInf000036:4182  techNlp_Gntr | techAI_Gntr | ... entity_Gntr
+      → techNlp_Gntr | ... entity_Gntr
+      extra: techAI_Gntr
+  McshTchInf000036:6293  techDl_Gntr | techNn_Gntr | ... entity_Gntr
+      → techDl_Gntr | ... entity_Gntr
+      extra: techNn_Gntr
+  McshTchInf000038:1469  techDl_Gntr | techNn_Gntr | ... entity_Gntr
+      → techDl_Gntr | ... entity_Gntr
+      extra: techNn_Gntr
+  McshTchInf000039:13505  lagoCmlc_Gntr | lagoSweb_Gntr | ... entity_Gntr
+      → lagoCmlc_Gntr | ... entity_Gntr
+      extra: lagoSweb_Gntr
+  McshTchInf000039:5626  lagoCmlc_Gntr | lagoCgaf_Gntr | ... entity_Gntr
+      → lagoCmlc_Gntr | ... entity_Gntr
+      extra: lagoCgaf_Gntr
+
+=== BROKEN-LINK (756) — a level has no gntr found; chain stops; fix by hand  || current
+  Mcsh000000:224  level3 "hard-soft-system" has no gntr  || Mcsmgr_Gntr
+  Mcsh000000:397  level2 "worldviewSensorial!@McshLag000003#idWldv003" has no gntr  || Mcswv_Gntr | sensorial-concept-Mcs!@McshCor000002 | info_Gntr | model_Gntr | entity_Gntr | worldview_Gntr | individual-worldview!@McshHmn000002#idHmnatt003 | semi monosemantic-worldview!@McshLag000003#idWldv012 | worldviewMind_Gntr | sensorial-worldview!@McshLag000003#idWldv003 | semi machine-readable-worldview!@McshLag000003#idWldv008 | senso-concept-Mcs!@McshCor000002 | ... entity_Gntr
+  McshCor000002:182  level1 "convention_Gntr" has no gntr  || convention_Gntr | ... entity_Gntr
+  McshCor000002:2427  level1 "<a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002GcscGcoc">generic-tree</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002GcscGcoc">generic-tree</a> | Mcs_division_Gntr
+  McshCor000002:2770  level1 "worldviewSensorial!@McshLag000003#idWldv003" has no gntr  || worldviewSensorial!@McshLag000003#idWldv003 | worldviewMind_Gntr | Mcsview_Gntr | Mcs_Gntr | Mcsview_Gntr | worldview_Gntr | ... entity_Gntr
+  McshCor000002:3519  level2 "hard-soft-system" has no gntr  || KnlgMngr_Gntr | worldview-management-tool!@McshLag000003#idWldvatt002 | Cnknmngr_Gntr | ... entity_Gntr
+  McshCor000004:1207  level1 "<a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntBodyNvlc">bodyNo'valence</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntBodyNvlc">bodyNo'valence</a>
+  McshCor000009:578  level2 "evaluatingBio!@McshCor000013#idBrngEvalg" has no gntr  || FctgEvaluating_Gntr
+  McshCor000010:209  level1 "information" has no gntr  || information | ... entity_Gntr
+  McshCor000011:3185  level1 "<a class="clsPreview" href="#idSysMng001att002">Infosyst-of-organism</a>" has no gntr  || <a class="clsPreview" href="#idSysMng001att002">Infosyst-of-organism</a>
+  McshCor000013:426  level1 "<a class="clsPreview" href="../dirCor/McshCor000012.last.html#idMdlatt001">archetype-of-model</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000012.last.html#idMdlatt001">archetype-of-model</a>
+  McshCor000013:446  level1 "syntax-of-functing" has no gntr  || syntax-of-functing
+  McshCor000018:1025  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000018:1059  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000018:1949  level1 "evaluatingBio!@McshCor000013#idBrngEvalg" has no gntr  || evaluatingBio!@McshCor000013#idBrngEvalg | DongMinding_Gntr | ... entity_Gntr
+  McshCor000018:2723  level1 "<a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgstml">stimulus-of-emotingBio</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgstml">stimulus-of-emotingBio</a>
+  McshCor000018:522  level1 "feeling" has no gntr  || feeling | HmbdCommunicating_Gntr | organ_Gntr | FctgBraining_Gntr | DongMinding_Gntr | ... entity_Gntr | FctgSensingBio_Gntr
+  McshCor000018:639  level2 "feeling" has no gntr  || FctgSensing_Gntr | organ_Gntr | ... entity_Gntr
+  McshCor000018:730  level2 "feeling" has no gntr  || FctgSensing_Gntr | organ_Gntr
+  McshCor000018:760  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000018:790  level2 "feeling" has no gntr  || FctgSensing_Gntr | organ_Gntr
+  McshCor000018:856  level2 "feeling" has no gntr  || FctgSensing_Gntr | organ_Gntr
+  McshCor000018:905  level2 "feeling" has no gntr  || FctgSensing_Gntr | organ_Gntr
+  McshCor000018:931  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000018:961  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000018:994  level2 "feeling" has no gntr  || FctgSensing_Gntr
+  McshCor000019:130  level1 "performing-art" has no gntr  || performing-art | ... entity_Gntr
+  McshCor000020:146  level1 "model-evaluating!@McshCor000012#idMdlatt016" has no gntr  || model-evaluating!@McshCor000012#idMdlatt016 | ... entity_Gntr
+  McshEdu000002:910  level1 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || knowledgeBrain!@McshLag000002#idInfBrnBioKldg | infoBrain!@McshLag000002 | infoBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+  McshEdu000005:5604  level2 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || science_Gntr | ... entity_Gntr
+  McshEdu000005:5763  level3 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || sciMath_Gntr | ... entity_Gntr
+  McshEdu000005:5937  level3 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || sciMath_Gntr | ... entity_Gntr
+  McshEdu000009:148  level2 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || science_Gntr | ... entity_Gntr
+  McshEdu000009:844  level3 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || sciMind_Gntr | ... entity_Gntr
+  McshEdu000010:2091  level3 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || sciMind_Gntr | science_Gntr | ... entity_Gntr
+  McshHlth000002:10094  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHlth000002:10202  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr
+  McshHlth000002:10238  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr | organ_Gntr
+  McshHlth000002:10271  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr
+  McshHlth000002:10350  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | OganNervous_Gntr
+  McshHlth000002:10469  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:10520  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:10606  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:10640  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:10668  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:10771  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:1079  level1 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || node-of-system!@McshCor000011#idSysnodeF | entity.body.material.node.part.body⧺cptEpistem741⧺ | entity.body.material.node.part⧺cptEpistem742.13⧺ | entity.body.material.node⧺cptEpistem742.12⧺ | ... entity_Gntr
+  McshHlth000002:10876  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:11075  level1 "functingSysOrgnsHumn!@McshHlth000002#idSysOgnHmnftg" has no gntr  || functingSysOrgnsHumn!@McshHlth000002#idSysOgnHmnftg | entity.bodyNo.doing.functing⧺idSysOgnHmn008dong⧺ | ... entity_Gntr
+  McshHlth000002:11128  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000002:11788  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:11825  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:11869  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:11904  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:12153  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHlth000002:12417  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:12528  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:12585  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:12616  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:12811  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000002:13027  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:1306  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHlth000002:14102  level1 "entity.bodyNo.doing.chem_reacting⧺cptEpistem740.1⧺" has no gntr  || entity.bodyNo.doing.chem_reacting⧺cptEpistem740.1⧺ | Hmbddoing_Gntr
+  McshHlth000002:14494  level1 "λειτουργία⧺cptEpistem475⧺" has no gntr  || λειτουργία⧺cptEpistem475⧺ | bodyHumn'doing_Gntr | Hmbddoing_Gntr
+  McshHlth000002:15007  level1 "<a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stageEvoluting</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stageEvoluting</a>
+  McshHlth000002:15268  level1 "<a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stage-of-evolution</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stage-of-evolution</a>
+  McshHlth000002:15475  level1 "bodyVertebrate" has no gntr  || bodyVertebrate | bodyOgsm | ... entity_Gntr
+  McshHlth000002:15518  level2 "bodyVertebrate" has no gntr  || bodyHumn_Gntr
+  McshHlth000002:1773  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHlth000002:2053  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:2313  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | OganGland_Gntr | ... entity_Gntr
+  McshHlth000002:2378  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | OganGland_Gntr | ... entity_Gntr
+  McshHlth000002:258  level1 "head-of-vertebrate" has no gntr  || head-of-vertebrate | ... entity_Gntr
+  McshHlth000002:4111  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr | animal-tissue⧺cptEpistem20.1⧺ | ... entity_Gntr
+  McshHlth000002:4222  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || tissue_Gntr | ... entity_Gntr
+  McshHlth000002:4273  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || tissue_Gntr | ... entity_Gntr
+  McshHlth000002:4379  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || tissue_Gntr | ... entity_Gntr
+  McshHlth000002:5327  level1 "positive-health-material!@McshHlth000008#idMtrHlthHmn001" has no gntr  || positive-health-material!@McshHlth000008#idMtrHlthHmn001 | ... entity_Gntr
+  McshHlth000002:5409  level1 "sulfur" has no gntr  || sulfur
+  McshHlth000002:5433  level1 "chlorine" has no gntr  || chlorine
+  McshHlth000002:5459  level1 "cobalt" has no gntr  || cobalt
+  McshHlth000002:5485  level1 "copper" has no gntr  || copper
+  McshHlth000002:5516  level3 "substanceMcshNtr000005#idSysMols008" has no gntr  || <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrIron">iron</a>
+  McshHlth000002:5554  level1 "manganese" has no gntr  || manganese
+  McshHlth000002:5578  level1 "molybdenum" has no gntr  || molybdenum
+  McshHlth000002:5601  level1 "selenium" has no gntr  || selenium
+  McshHlth000002:5630  level1 "zinc-atom" has no gntr  || zinc-atom
+  McshHlth000002:5655  level1 "iodine" has no gntr  || iodine
+  McshHlth000002:5767  level1 "essential-nutrient" has no gntr  || essential-nutrient
+  McshHlth000002:5799  level3 "substanceMcshNtr000005#idSysMols008" has no gntr  || <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrCalcium">calcium</a>
+  McshHlth000002:5825  level1 "phosphorus" has no gntr  || phosphorus
+  McshHlth000002:5863  level1 "potassium" has no gntr  || potassium
+  McshHlth000002:5889  level1 "sodium" has no gntr  || sodium
+  McshHlth000002:5913  level1 "magnesiumAtom" has no gntr  || magnesiumAtom
+  McshHlth000002:6012  level1 "entity.body.material.pure.nutrient⧺cptEpistem580⧺" has no gntr  || entity.body.material.pure.nutrient⧺cptEpistem580⧺ | entity.body.material.pure.chem_compound⧺cptEpistem942⧺ | ... entity_Gntr
+  McshHlth000002:6503  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000002:6541  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:6609  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystCirculatory'organ_Gntr
+  McshHlth000002:702  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:7393  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystCirculatory'organ_Gntr | ... entity_Gntr
+  McshHlth000002:8075  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:8130  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | ... entity_Gntr
+  McshHlth000002:8237  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | ... entity_Gntr
+  McshHlth000002:8463  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || tissue_Gntr | ... entity_Gntr
+  McshHlth000002:8705  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:8770  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | ... entity_Gntr
+  McshHlth000002:8857  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000002:8943  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:9034  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000002:9103  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:9164  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:9300  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000002:9543  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000002:9739  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000002:9839  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | SystDigestive'organ_Gntr
+  McshHlth000002:9866  level2 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || nodeBodyHumn_Gntr
+  McshHlth000003:3833  level1 "mamalian-brain⧺cptEpistem21.2" has no gntr  || mamalian-brain⧺cptEpistem21.2 | brain⧺cptEpistem21⧺ | organ_Gntr | OganNervous_Gntr | brainNatural_Gntr | ... entity_Gntr
+  McshHlth000004:1350  level2 "MtrlObject" has no gntr  || cellOgsm_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHlth000004:1462  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:1508  level3 "MtrlObject" has no gntr  || cell_Gntr | ... entity_Gntr
+  McshHlth000004:1656  level3 "MtrlObject" has no gntr  || cell_Gntr | ... entity_Gntr
+  McshHlth000004:1701  level3 "MtrlObject" has no gntr  || cell_Gntr | cellMuscle_Gntr
+  McshHlth000004:1781  level3 "MtrlObject" has no gntr  || cell_Gntr | cellMuscle_Gntr
+  McshHlth000004:182  level1 "cell-nucleus⧺cptEpistem658⧺" has no gntr  || cell-nucleus⧺cptEpistem658⧺
+  McshHlth000004:1863  level3 "MtrlObject" has no gntr  || cell_Gntr | cellGamete_Gntr | ... entity_Gntr
+  McshHlth000004:1903  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:1953  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:2050  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:2232  level3 "MtrlObject" has no gntr  || cell_Gntr | cellGamete_Gntr
+  McshHlth000004:2304  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:2440  level3 "MtrlObject" has no gntr  || cell_Gntr | ... entity_Gntr
+  McshHlth000004:2578  level3 "MtrlObject" has no gntr  || cell_Gntr
+  McshHlth000004:474  level1 "chromosome⧺cptEpistem730⧺" has no gntr  || chromosome⧺cptEpistem730⧺ | ... entity_Gntr
+  McshHlth000004:699  level1 "<a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt024">DnaOgsm</a>" has no gntr  || <a class="clsPreview" href="../dirOgm/McshOgm000007.last.html#idCellOgmatt024">DnaOgsm</a>
+  McshHlth000004:808  level1 "GENE⧺cptEpistem731⧺" has no gntr  || GENE⧺cptEpistem731⧺
+  McshHlth000005:2858  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000005:3341  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000005:506  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000005:5897  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | ... entity_Gntr
+  McshHlth000005:92  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000008:518  level2 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceHumn_Gntr | substance!@McshNtr000005#idSysMols008 | material-body!@McshNtr000002 | body-system!@McshCor000011#idSys004 | body_Gntr | entity_Gntr
+  McshHlth000010:243  level1 "disorder-of-organism" has no gntr  || disorder-of-organism | disorderBio_Gntr | ... entity_Gntr
+  McshHlth000011:10325  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10513  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:10572  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10637  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10718  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10796  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10850  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10919  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:10970  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11011  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11063  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11102  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11151  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11227  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11305  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSkin_Gntr
+  McshHlth000011:11358  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSkin_Gntr
+  McshHlth000011:11469  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissNervous_Gntr
+  McshHlth000011:11769  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11845  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:11875  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:1188  level1 "doing-of-disease" has no gntr  || doing-of-disease
+  McshHlth000011:11968  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissReproduction_Gntr
+  McshHlth000011:1205  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:12224  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:12304  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:12379  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:12984  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13025  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13160  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissTooth_Gntr
+  McshHlth000011:13216  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13240  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13268  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13297  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13324  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13364  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissNervous_Gntr
+  McshHlth000011:13415  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13523  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:13548  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:1360  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissInfectious_Gntr | ... entity_Gntr
+  McshHlth000011:13653  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:13919  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissInfectious_Gntr
+  McshHlth000011:14002  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14056  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14216  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14245  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14388  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14431  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:1444  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14470  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14517  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14669  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14698  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14830  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14899  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:14946  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:15138  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:15177  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:15407  level1 "<a class="clsPreview" href="#idDssHmn007">entity.model.information.evaluation.problem.disease.animal.human</a>" has no gntr  || <a class="clsPreview" href="#idDssHmn007">entity.model.information.evaluation.problem.disease.animal.human</a>
+  McshHlth000011:1554  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:1640  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:17207  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:17943  level3 "disorder-of-organism" has no gntr  || disease_Gntr | FctgSensing_Gntr | ... entity_Gntr
+  McshHlth000011:1849  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:1995  level1 "disease.skeletal-system⧺cptDssHmn104⧺" has no gntr  || disease.skeletal-system⧺cptDssHmn104⧺ | DissSkeletal_system_Gntr
+  McshHlth000011:2020  level1 "disease.skeletal-system⧺cptDssHmn104⧺" has no gntr  || disease.skeletal-system⧺cptDssHmn104⧺ | DissSkeletal_system_Gntr
+  McshHlth000011:2049  level1 "disease.skeletal-system⧺cptDssHmn104⧺" has no gntr  || disease.skeletal-system⧺cptDssHmn104⧺
+  McshHlth000011:2177  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:222  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:2230  level3 "disorder-of-organism" has no gntr  || <a class="clsPreview" href="#idOverview">disease</a> | DissHaemophilia_Gntr | DissAnemia_Gntr | DissHypertension_Gntr | <a class="clsPreview" href="#idDssHmn132">αρτηριακη-υπόταση</a> | θρομβωση = πήξη του αίματος | DissLeucocyte_Gntr | DissUraemia_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:2831  level3 "disorder-of-organism" has no gntr  || <a class="clsPreview" href="#idOverview">disease</a> | DissBlood_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:3134  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:3160  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:3214  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSystCirculatory_Gntr
+  McshHlth000011:3339  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissSystCirculatory_Gntr | DissCoronary_artery_Gntr
+  McshHlth000011:3717  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:3789  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissKidney_Gntr
+  McshHlth000011:3865  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:4393  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:4490  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:4903  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:4997  level3 "disorder-of-organism" has no gntr  || disease_Gntr | HmbdDeath_Gntr
+  McshHlth000011:6505  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:672  level2 "disorder-of-organism" has no gntr  || DissOgsm_Gntr | disorderBio_Gntr | ... entity_Gntr | wellness!@McshHlth000008#idHlthHmnatt003 | symptom | cause | diagnosis_Gntr | therapy_Gntr | protection | diet | stats | resource | doing_Gntr | Enttevlg_Gntr | therapy_Gntr
+  McshHlth000011:6965  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:8355  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:8401  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:8443  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:8600  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissNervous_Gntr
+  McshHlth000011:8763  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:9008  level3 "disorder-of-organism" has no gntr  || disease_Gntr | ... entity_Gntr
+  McshHlth000011:9041  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:9117  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000011:9505  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissGastroenteritis_Gntr | ... entity_Gntr
+  McshHlth000011:9545  level3 "disorder-of-organism" has no gntr  || disease_Gntr | DissDiarrhea_Gntr
+  McshHlth000011:9638  level3 "disorder-of-organism" has no gntr  || disease_Gntr
+  McshHlth000012:150  level1 "substance!@McshNtr000005#idSysMols008" has no gntr  || substance!@McshNtr000005#idSysMols008 | material-body!@McshNtr000002 | body!@McshNtr000002 | entity_Gntr
+  McshHlth000013:1184  level3 "economic-entity" has no gntr  || foodHumn!@McshHlth000013 | ... entity_Gntr
+  McshHlth000013:1477  level3 "economic-entity" has no gntr  || foodHumn!@McshHlth000013 | ... entity_Gntr
+  McshHlth000013:183  level2 "positive-health-material!@McshHlth000008#idMtrHlthHmn001" has no gntr  || nutrient_Gntr | food'ingredient_Gntr | ... entity_Gntr
+  McshHlth000013:2643  level1 "drink-food" has no gntr  || drink-food
+  McshHlth000013:3496  level1 "water-general" has no gntr  || water-general | foodNatural_Gntr | ... entity_Gntr
+  McshHlth000013:6102  level3 "economic-entity" has no gntr  || foodHumn!@McshHlth000013 | ... entity_Gntr
+  McshHlth000013:870  level2 "economic-entity" has no gntr  || satisfier_Gntr | foodBio_Gntr | nutrient_Gntr | substanceHlth_Gntr | substanceHumn_Gntr | ... entity_Gntr
+  McshHlth000014:534  level1 "drug-organization" has no gntr  || drug-organization
+  McshHlth000014:791  level1 "antimicrobial!@McshHlth000014#idMedHmn030" has no gntr  || antimicrobial!@McshHlth000014#idMedHmn030 | ... entity_Gntr
+  McshHlth000014:883  level1 "antimicrobial-medication" has no gntr  || antimicrobial-medication | ... entity_Gntr
+  McshHlth000015:88  level3 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceHlth_Gntr | ... entity_Gntr
+  McshHlth000019:132  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || SystOrgans_Gntr | nodeBodyHumn_Gntr
+  McshHlth000019:1429  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr
+  McshHlth000019:2654  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | OganNervous_Gntr | ... entity_Gntr
+  McshHlth000019:2955  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | OganNervous_Gntr | ... entity_Gntr
+  McshHlth000019:3727  level1 "SPINAL_CORD⧺cptEpistem84.6.11⧺" has no gntr  || SPINAL_CORD⧺cptEpistem84.6.11⧺ | OganNervous_Gntr
+  McshHlth000019:3948  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || organ_Gntr | ... entity_Gntr
+  McshHlth000019:4256  level3 "node-of-system!@McshCor000011#idSysnodeF" has no gntr  || tissue_Gntr
+  McshHlth000019:4584  level1 "signaling-molecule-of-cell" has no gntr  || signaling-molecule-of-cell
+  McshHlth000019:4965  level3 "MtrlObject" has no gntr  || cell_Gntr | neuronBio⧺cptEpistem1289⧺ | ... entity_Gntr
+  McshHlth000019:5351  level3 "MtrlObject" has no gntr  || cell_Gntr | ... entity_Gntr
+  McshHlth000019:5794  level1 "worldview-management-system⧺cptEpistem402⧺" has no gntr  || worldview-management-system⧺cptEpistem402⧺ | organism-managing-system!@McshCor000011#idSysMng001 | entity.whole.system.governing.organism.animal⧺cptEpistem84.6⧺ | SystOrgans_Gntr | nodeBodyHumn_Gntr | ... entity_Gntr
+  McshHmn000002:4161  level1 "<a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgmatt012gtr">Ogsm'lifetime-gtr</a>" has no gntr  || <a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgmatt012gtr">Ogsm'lifetime-gtr</a>
+  McshLag000006:10184  level2 "written-language-attribute" has no gntr  || char_Gntr | ... entity_Gntr
+  McshLag000006:110  level1 "written-language-attribute" has no gntr  || written-language-attribute | ... entity_Gntr
+  McshLag000006:307  level2 "written-language-attribute" has no gntr  || char_Gntr | ... entity_Gntr
+  McshLag000006:3529  level3 "written-language-attribute" has no gntr  || computer-char_Gntr | char_Gntr | ... entity_Gntr
+  McshLag000006:4202  level3 "written-language-attribute" has no gntr  || charGraphic_Gntr | ... entity_Gntr
+  McshLag000006:4256  level2 "written-language-attribute" has no gntr  || char_Gntr | ... entity_Gntr
+  McshLag000007:1437  level1 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt | infoMindBio_Gntr | concept_Gntr | Semunode_Gntr | ... entity_Gntr
+  McshLag000007:2130  level2 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semucnpt_Gntr | ... entity_Gntr
+  McshLag000007:21835  level1 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002 | termGeneric!@McshLag000007#idLHmnmnameTrmAtmN | name_Gntr | term_Gntr | ... entity_Gntr
+  McshLag000007:24735  level1 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002 | termGeneric!@McshLag000007#idLHmnmnameTrmAtmN | name_Gntr | term_Gntr | ... entity_Gntr
+  McshLag000009:1169  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000009:1933  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000009:623  level1 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn | HmnmUnit_Gntr | unitSpch_Gntr | ... entity_Gntr
+  McshLag000009:765  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000010:2234  level1 "lagHmnm-syllabication" has no gntr  || lagHmnm-syllabication
+  McshLag000010:230  level3 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semuargu_Gntr | Sngusemucnpt_Gntr | ... entity_Gntr
+  McshLag000010:448  level1 "termHmnm-unit!@McshLag000007#idLHmnmuntNmMn" has no gntr  || termHmnm-unit!@McshLag000007#idLHmnmuntNmMn | Sngu_unit_Gntr | ... entity_Gntr
+  McshLag000010:5135  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || Hmnmargu_Gntr | Sngu_name_Gntr | Sngu_term_Gntr | ... entity_Gntr
+  McshLag000010:549  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | Sngu_unit_Gntr | Sngu_lagu-unit.term_Gntr | ... entity_Gntr
+  McshLag000011:14924  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || Hmnmargu_Gntr | termEngl_Gntr | ... entity_Gntr
+  McshLag000011:2533  level1 "lagHmnm-syllabication" has no gntr  || lagHmnm-syllabication
+  McshLag000011:26775  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000011:26796  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | termEngl_Gntr | ... entity_Gntr
+  McshLag000011:30134  level1 "common-language!@McshLag000007#idLHmnmKmn" has no gntr  || common-language!@McshLag000007#idLHmnmKmn | alphabetic-language!@McshLag000008 | oral-language!@McshLag000009 | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000011:469  level3 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semuargu_Gntr | ... entity_Gntr
+  McshLag000011:747  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | Engl_unit_Gntr | ... entity_Gntr
+  McshLag000011:8125  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr</a>
+  McshLag000011:9738  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-TermMebr</a>
+  McshLag000012:164  level3 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semuargu_Gntr | cptSmsEspo_Gntr | ... entity_Gntr
+  McshLag000012:1691  level1 "lagHmnm-syllabication" has no gntr  || lagHmnm-syllabication
+  McshLag000012:2533  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || Hmnmargu_Gntr | ... entity_Gntr
+  McshLag000012:435  level1 "termHmnm-unit!@McshLag000007#idLHmnmuntNmMn" has no gntr  || termHmnm-unit!@McshLag000007#idLHmnmuntNmMn | unitEspo_Gntr | ... entity_Gntr
+  McshLag000012:4736  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000012:4754  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | ... entity_Gntr
+  McshLag000012:5202  level1 "lagoCnrd_Gntr" has no gntr  || lagoCnrd_Gntr | alphabetic-language!@McshLag000008 | oral-language!@McshLag000009 | common-language!@McshLag000007#idLHmnmKmn | human-mind-language!@McshLag000007 | language_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000012:527  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | unitEspo_Gntr | Espo_lago-unit.term_Gntr | ... entity_Gntr
+  McshLag000016:662  level1 "abbreviation_Gntr" has no gntr  || abbreviation_Gntr | ... entity_Gntr
+  McshLag000018:1204  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | Zhon_unit_Gntr | Zhonname_unit_Gntr | ... entity_Gntr
+  McshLag000018:12374  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>
+  McshLag000018:12405  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | Zhonname_Gntr | ... entity_Gntr
+  McshLag000018:248  level2 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semucnpt_Gntr | ... entity_Gntr
+  McshLag000018:438  level3 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semuargu_Gntr | ... entity_Gntr
+  McshLag000018:695  level1 "Hmnm_lago-name-unit" has no gntr  || Hmnm_lago-name-unit | ... entity_Gntr
+  McshLag000020:12732  level1 "<a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmprlg">paralanguage</a>" has no gntr  || <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmprlg">paralanguage</a>
+  McshLag000020:134  level2 "BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt" has no gntr  || Semucnpt_Gntr
+  McshLag000021:679  level1 "lagHmnm-syllabication" has no gntr  || lagHmnm-syllabication
+  McshLag000022:49429  level3 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || Ella_verb_Gntr | ... entity_Gntr
+  McshLag000026:1647  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | ... entity_Gntr
+  McshLag000027:149  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000027:5180  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | ... entity_Gntr
+  McshLag000028:78  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000030:270  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshLag000030:5978  level2 "termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002" has no gntr  || verb_Gntr | ... entity_Gntr
+  McshLag000033:3706  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000033:489  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | DeutUnit_Gntr | ... entity_Gntr
+  McshLag000034:3383  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000035:2610  level1 "polycentric-language!@McshLag000007#idLHmnm0031" has no gntr  || polycentric-language!@McshLag000007#idLHmnm0031 | hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000036:3051  level1 "polycentric-language!@McshLag000007#idLHmnm0031" has no gntr  || polycentric-language!@McshLag000007#idLHmnm0031 | hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000037:2299  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000038:2012  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000039:1815  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000040:1813  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000041:1857  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshLag000042:1677  level1 "hmnm_lago_Gntr" has no gntr  || hmnm_lago_Gntr | language_Gntr | mapping-method_Gntr | method_Gntr | info_Gntr | model_Gntr | entity_Gntr
+  McshNtr000002:312  level1 "material'physical-property" has no gntr  || material'physical-property
+  McshNtr000003:379  level1 "body-node" has no gntr  || body-node | body, doing, relation | entity_Gntr
+  McshNtr000005:106  level1 "attribute-of-MtrlSysMols" has no gntr  || attribute-of-MtrlSysMols | ... entity_Gntr
+  McshNtr000007:1072  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1114  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1152  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1190  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1228  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1266  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1305  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1358  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1396  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1434  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1472  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1510  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1547  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1585  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1623  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1662  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1679  level1 "group1-ChmcElry" has no gntr  || group1-ChmcElry | ... entity_Gntr
+  McshNtr000007:1725  level2 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceHumn_Gntr | ... entity_Gntr
+  McshNtr000007:1797  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1845  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1883  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1921  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1959  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:1997  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2048  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2086  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2124  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2162  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2200  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2238  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:226  level1 "<a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006prty">chemical-property</a>" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006prty">chemical-property</a>
+  McshNtr000007:2276  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2314  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2352  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2390  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2427  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2465  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a> | ... entity_Gntr
+  McshNtr000007:2527  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2565  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2603  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2686  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2724  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2762  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2803  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2858  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2906  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:2960  level1 "group1-ChmcElry" has no gntr  || group1-ChmcElry | ... entity_Gntr
+  McshNtr000007:3004  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3041  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3079  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3115  level2 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceHumn_Gntr | ... entity_Gntr
+  McshNtr000007:3142  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3180  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3218  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3256  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3294  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3348  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3386  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3467  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3505  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3543  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3581  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3619  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3657  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3695  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3733  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3771  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3809  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3847  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3894  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3932  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:3970  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4061  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4126  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4179  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4217  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4255  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4293  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4368  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4406  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4444  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4482  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4521  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4577  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4615  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4653  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4691  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4729  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4767  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4805  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4843  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4881  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4919  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4957  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:4995  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5033  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5071  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5108  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5146  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5184  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5222  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5260  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5298  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5336  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5374  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5412  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5450  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5487  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5524  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5561  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5596  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5633  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5670  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5707  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5761  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5798  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5835  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5872  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5910  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5948  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:5985  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:6023  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000007:6061  level2 "body-node" has no gntr  || <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>
+  McshNtr000012:99  level1 "<a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001Drnstr">doing--space-direction</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001Drnstr">doing--space-direction</a>
+  McshOgm000002:231  level1 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || <a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a> | system_Gntr | whole-entity!@McshCor000008 | body_Gntr | entity_Gntr | material-object!@McshNtr000005#idSysMols009 | material-body!@McshNtr000002 | body_Gntr | entity_Gntr
+  McshOgm000003:934  level2 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || bio_Gntr | dynamic-system_Gntr | whole_Gntr | body_Gntr | entity_Gntr
+  McshOgm000004:739  level1 "molOgsm_Gntr" has no gntr  || molOgsm_Gntr | polymer
+  McshOgm000004:849  level2 "molOgsm_Gntr" has no gntr  || biopolymer_Gntr
+  McshOgm000004:871  level2 "molOgsm_Gntr" has no gntr  || biopolymer_Gntr
+  McshOgm000004:891  level2 "molOgsm_Gntr" has no gntr  || biopolymer_Gntr
+  McshOgm000004:914  level2 "molOgsm_Gntr" has no gntr  || biopolymer_Gntr
+  McshOgm000005:1006  level2 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || BodyHumn'product_Gntr | fluidHumn_Gntr | ... entity_Gntr
+  McshOgm000005:1062  level2 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || BodyHumn'product_Gntr
+  McshOgm000005:1085  level2 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || BodyHumn'product_Gntr | fluidHumn_Gntr
+  McshOgm000005:1454  level1 "animal-hormone" has no gntr  || animal-hormone | BodyHumn'product_Gntr | ... entity_Gntr
+  McshOgm000005:1655  level1 "hormone" has no gntr  || hormone | ... entity_Gntr
+  McshOgm000005:1713  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:1790  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:1838  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:1890  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:1930  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:1969  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2007  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2055  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2122  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2164  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2204  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2240  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2287  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2326  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2369  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2411  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2458  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2499  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2572  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2616  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2667  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2703  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2726  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2765  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr
+  McshOgm000005:2810  level2 "animal-hormone" has no gntr  || hormoneHumn_Gntr | ... entity_Gntr
+  McshOgm000005:2930  level1 "hormoneSex-steroid" has no gntr  || hormoneSex-steroid | medication_Gntr | hormoneHumn_Gntr | HrmnHumnMale_Gntr | ... entity_Gntr
+  McshOgm000005:2973  level3 "animal-hormone" has no gntr  || HrmnHumnMale_Gntr | HrmnAndrogen_Gntr | hormoneHumn_Gntr
+  McshOgm000005:301  level1 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceMcshNtr000005#idSysMols008 | ... entity_Gntr
+  McshOgm000005:3639  level1 "<a class="clsPreview" href="#idDssHmn010">therapy</a>" has no gntr  || <a class="clsPreview" href="#idDssHmn010">therapy</a>
+  McshOgm000005:524  level1 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || entity.body.product⧺cptEpistem475.371⧺ | substanceHumn_Gntr | ... entity_Gntr
+  McshOgm000005:596  level2 "substanceMcshNtr000005#idSysMols008" has no gntr  || substanceHumn_Gntr | ... entity_Gntr
+  McshOgm000005:827  level1 "lipid" has no gntr  || lipid
+  McshOgm000005:872  level3 "substanceMcshNtr000005#idSysMols008" has no gntr  || fluidHumn_Gntr | ... entity_Gntr
+  McshOgm000005:897  level2 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || BodyHumn'product_Gntr
+  McshOgm000005:943  level2 "entity.body.product⧺cptEpistem475.371⧺" has no gntr  || BodyHumn'product_Gntr | fluidHumn_Gntr
+  McshOgm000006:1016  level1 "biomaterial" has no gntr  || biomaterial | molPolymer_Gntr | ... entity_Gntr
+  McshOgm000006:1122  level2 "biomaterial" has no gntr  || MolProtein_Gntr | macromoleculeHumn_Gntr | ... entity_Gntr
+  McshOgm000007:1604  level1 "MtrlObject" has no gntr  || MtrlObject | ... entity_Gntr
+  McshOgm000007:1901  level1 "cellEukariotic!@McshOgm000007#idCellOgm003" has no gntr  || cellEukariotic!@McshOgm000007#idCellOgm003 | ... entity_Gntr
+  McshOgm000007:1947  level3 "MtrlObject" has no gntr  || cell_Gntr | Ogsm_Gntr | ... entity_Gntr
+  McshOgm000008:962  level1 "coronavirus" has no gntr  || coronavirus
+  McshOgm000010:1558  level1 "<a class="clsPreview" href="#idPlnt020">plantHerb</a>" has no gntr  || <a class="clsPreview" href="#idPlnt020">plantHerb</a> | <a class="clsPreview" href="#idPlnt036">plantWeed</a>
+  McshOgm000010:1758  level1 "<a class="clsPreview" href="#idPlnt041">medicinal-herb</a>" has no gntr  || <a class="clsPreview" href="#idPlnt041">medicinal-herb</a>
+  McshOgm000010:213  level3 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || organism!@McshOgm000003 | ... entity_Gntr
+  McshOgm000011:94  level1 "vertebrate-animal" has no gntr  || vertebrate-animal
+  McshStn000002:359  level2 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || biobody!@McshOgm000002 | ... entity_Gntr
+  McshStn000004:451  level1 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || managing-system-of-bio!@McshCor000011#idSysMng004 | ... entity_Gntr
+  McshStn000005:177  level2 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || AdmnSctn_Gntr | ... entity_Gntr
+  McshStn000005:276  level2 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || biosystem!@McshOgm000002 | SystDynamic_Gntr | system_Gntr | whole-entity!@McshCor000008 | entity_Gntr | SctnOgms_Gntr | ... entity_Gntr | governance-system | health_Gntr | science_Gntr | resource | doing_Gntr
+  McshStn000006:232  level3 "<a class="clsPreview" href="../dirCor/McsCor000011Dnmc.last.html#idSys009Slf">self-dynamic-system</a>" has no gntr  || SctnOgms_Gntr | ... entity_Gntr
+  McshStn000006:92  level2 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || AdmnSctn_Gntr | ... entity_Gntr
+  McshStn000007:161  level1 "goverance-system" has no gntr  || goverance-system | AdmnSctn_Gntr
+  McshStn000008:161  level1 "ogznOgnm'node" has no gntr  || ogznOgnm'node
+  McshStn000008:870  level2 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || AdmnSctn_Gntr | Admn_Gntr | ... entity_Gntr
+  McshStn000009:5512  level2 "goverance-system" has no gntr  || SystGvcSocOgsm_Gntr | AdmnSctn_Gntr | Admn_Gntr | ... entity_Gntr
+  McshStn000009:6717  level2 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || science_Gntr | ... entity_Gntr
+  McshStn000010:1498  level1 "economic-entity" has no gntr  || economic-entity
+  McshStn000010:297  level1 "legal-Sfrowner" has no gntr  || legal-Sfrowner
+  McshStn000014:1015  level1 "economic-Ogzn!@McshStn000008#idOgznScdnSrpn" has no gntr  || economic-Ogzn!@McshStn000008#idOgznScdnSrpn | Sctn_Gntr | Ogzn_Gntr | Socogzn_Gntr | ... entity_Gntr
+  McshStn000014:322  level2 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || AdmnSctn_Gntr | ... entity_Gntr
+  McshStn000015:1258  level1 "economic-Ogzn!@McshStn000008#idOgznScdnSrpn" has no gntr  || economic-Ogzn!@McshStn000008#idOgznScdnSrpn | Sctn_Gntr | Ogzn_Gntr | Socogzn_Gntr | ... entity_Gntr
+  McshStn000015:138  level2 "ogznOgnm'node" has no gntr  || Ogzn'node_Gntr
+  McshStn000015:714  level3 "managing-system-of-bio!@McshCor000011#idSysMng004" has no gntr  || <a class="clsPreview" href="../dirStn/McshStn000008.last.html#idOgznatt001">admnOgzn</a>
+  McshStn000019:911  level1 "stateless-society!@McshStn000009#idSocHumn026" has no gntr  || stateless-society!@McshStn000009#idSocHumn026 | classless-society | metacapitalist-society | knowledge-society | info-network-society | complex-society | SocCptlAftr_Gntr | ... entity_Gntr
+  McshStn000020:16698  level1 "policy!@McshStn000009#idSocadmndongPlc" has no gntr  || policy!@McshStn000009#idSocadmndongPlc | ... entity_Gntr
+  McshStn000020:17444  level1 "<a class="clsPreview" href="#idEuoComoznSd">service-department-of-EuoCom</a>" has no gntr  || <a class="clsPreview" href="#idEuoComoznSd">service-department-of-EuoCom</a> | Euogvc_Gntr
+  McshStn000028:114  level2 "economic-Ogzn!@McshStn000008#idOgznScdnSrpn" has no gntr  || OgznPrdg_Gntr | ... entity_Gntr
+  McshStn000029:166  level2 "economic-entity" has no gntr  || satisfier_Gntr | ... entity_Gntr
+  McshStn000034:676  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshStn000035:537  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshStn000037:406  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshStn000038:390  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshStn000039:425  level2 "main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn" has no gntr  || phoneme_Gntr | ... entity_Gntr
+  McshStnlaw000002:1261  level1 "McshEngl.law.generic" has no gntr  || McshEngl.law.generic | info_Gntr | ... entity_Gntr
+  McshStnlaw000003:2242  level1 "<a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2295  level1 "binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016" has no gntr  || binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016 | ... entity_Gntr
+  McshStnlaw000003:2331  level1 "<a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>
+  McshStnlaw000003:2352  level1 "<a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2374  level1 "<a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2394  level1 "<a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>
+  McshStnlaw000003:2416  level1 "<a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2438  level1 "<a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>
+  McshStnlaw000003:2467  level1 "<a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2489  level1 "<a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2510  level1 "<a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshStnlaw000003:2569  level1 "<a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>" has no gntr  || <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>
+  McshTch000002:522  level2 "economic-entity" has no gntr  || satisfier_Gntr | .. entity_Gntr
+  McshTch000003:128  level3 "economic-entity" has no gntr  || tech_Gntr | ... entity_Gntr
+  McshTchInf000002:674  level1 "technology!@McshTch000002" has no gntr  || technology!@McshTch000002 | techHumn_Gntr | ... entity_Gntr
+  McshTchInf000003:871  level1 "info-machine" has no gntr  || info-machine | machine_Gntr | ... entity
+  McshTchInf000004:113  level2 "technology!@McshTch000002" has no gntr  || techInfo_Gntr | ... entity_Gntr
+  McshTchInf000005:1147  level1 "digital-document" has no gntr  || digital-document | ... entity_Gntr
+  McshTchInf000006:2047  level1 "<a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>" has no gntr  || <a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>
+  McshTchInf000006:2072  level1 "<a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>" has no gntr  || <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>
+  McshTchInf000006:2090  level1 "<a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>" has no gntr  || <a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>
+  McshTchInf000006:3047  level1 "<a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>" has no gntr  || <a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>
+  McshTchInf000007:863  level2 "technology!@McshTch000002" has no gntr  || techInfo_Gntr | ... entity_Gntr
+  McshTchInf000008:3192  level2 "McshEngl.law.generic" has no gntr  || law_Gntr | Hitpdoc_Gntr | ... entity_Gntr
+  McshTchInf000009:2293  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000008.last.html#idLHitpmgr">Hitp-manager</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000008.last.html#idLHitpmgr">Hitp-manager</a> | Mcsmgr_Gntr | Cnknmngr_Gntr
+  McshTchInf000010:1026  level2 "Jsmgo_Gntr (<code>Array.prototype.__proto__ === Object.prototype //true</code>)" has no gntr  || JsoArrayprototype_Gntr, (<code>[].__proto__ === Array.prototype //true</code>) | Jsmgo_Gntr, (<code>[].__proto__.__proto__ === Object.prototype //true</code>) | ... entity_Gntr
+  McshTchInf000010:1125  level1 "Jsmgo_Gntr (<code>Array.prototype.__proto__ === Object.prototype //true</code>)" has no gntr  || Jsmgo_Gntr (<code>Array.prototype.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:1895  level1 "Boolean.prototype, (<code>true.__proto__ === Boolean.prototype //true</code>)" has no gntr  || Boolean.prototype, (<code>true.__proto__ === Boolean.prototype //true</code>) | Jsmgo_Gntr, (<code>true.__proto__.__proto__ === Object.prototype //true</code>) | ... entity_Gntr
+  McshTchInf000010:2223  level1 "<a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>,  (<code>Function.__proto__ === Function.prototype //true</code>)" has no gntr  || <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>,  (<code>Function.__proto__ === Function.prototype //true</code>) | <a class="clsPreview" href="#idLJsgnObject">Object.prototype</a>, (<code>Function.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:2257  level1 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>) | Jsmgo_Gntr, (<code>f.__proto__.__proto__ === Object.prototype //true</code>) | Jsomembr_Gntr | ... entity_Gntr
+  McshTchInf000010:2428  level3 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Jsbrf_Gntr | ... entity_Gntr
+  McshTchInf000010:2454  level3 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Jsbrf_Gntr | ... entity_Gntr
+  McshTchInf000010:2526  level3 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Jsbrf_Gntr | ... entity_Gntr
+  McshTchInf000010:3001  level1 "<a class="clsPreview" href="#idLJsgnopmN">object-pmNo</a>" has no gntr  || <a class="clsPreview" href="#idLJsgnopmN">object-pmNo</a> | Jssut_Gntr
+  McshTchInf000010:3047  level1 "Number.prototype!@McshTchInf000010#idLJsgnNumberp, (<code>(3).__proto__ === Number.prototype //true</code>)" has no gntr  || Number.prototype!@McshTchInf000010#idLJsgnNumberp, (<code>(3).__proto__ === Number.prototype //true</code>) | Jsmgo_Gntr, (<code>(3).__proto__.__proto__ === Object.prototype //true</code>) | ... entity_Gntr
+  McshTchInf000010:3333  level2 "none" has no gntr  || Jsmgo_Gntr, (literal-objects <code>({}).__proto__ === Object.prototype //true</code>) | Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto, (constructor-objects!@McshTchInf000010#idLJsgnoCsr) | objectX, (<code>var o = Object.create(objectX)</code>) | Jsomembr_Gntr | ... entity_Gntr
+  McshTchInf000010:3381  level1 "<a class="clsPreview" href="#idLJsgnfCsrproto">Constructor.prototype</a>" has no gntr  || <a class="clsPreview" href="#idLJsgnfCsrproto">Constructor.prototype</a> | Jsmgo_Gntr
+  McshTchInf000010:3537  level1 "RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp, (<code>/r/.__proto__ === RegExp.prototype //true</code>)" has no gntr  || RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp, (<code>/r/.__proto__ === RegExp.prototype //true</code>) | Jsmgo_Gntr, (<code>/r/.__proto__.__proto__ === Object.prototype //true</code>) | ... entity_Gntr
+  McshTchInf000010:3665  level1 "String.prototype!@McshTchInf000010#idLJsgnStringp, (<code>''.__proto__ === String.prototype //true</code>)" has no gntr  || String.prototype!@McshTchInf000010#idLJsgnStringp, (<code>''.__proto__ === String.prototype //true</code>) | Jsmgo_Gntr, (<code>''.__proto__.__proto__ === Object.prototype //true</code>) | Srcd_lago_s_Gntr | ... entity_Gntr
+  McshTchInf000010:389  level3 "none" has no gntr  || Jso_Gntr | object-pmNo!@McshTchInf000010#idLJsgnopmN | ... entity_Gntr
+  McshTchInf000010:4128  level1 "<a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>" has no gntr  || <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a> | Jsmgo_Gntr
+  McshTchInf000010:4221  level1 "none" has no gntr  || none | ... entity_Gntr
+  McshTchInf000010:5065  level1 "Definition-sentence" has no gntr  || Definition-sentence | Jsgndef_Gntr | ... entity_Gntr
+  McshTchInf000010:7422  level1 "JavaScript-programing-language!@McshTchInf000010#idDescription" has no gntr  || JavaScript-programing-language!@McshTchInf000010#idDescription | programing-language | Cmpr_lago_Gntr | mapping-method | method | info_Gntr | model_Gntr | entity_Gntr
+  McshTchInf000011:1458  level1 "Window.prototype (<code>Window.prototype.isPrototypeOf(window) // true</code>)" has no gntr  || Window.prototype (<code>Window.prototype.isPrototypeOf(window) // true</code>) | WindowProperties.prototype (internal in Chrome) | EventTarget.prototype!@McshTchInf000011#idLJsbrEventTargetp (<code>Window.prototype.__proto__.__proto__ === EventTarget.prototype // true</code>) | Jsmgo_Gntr | ... entity_Gntr
+  McshTchInf000011:2289  level2 "none" has no gntr  || Jsmgo_Gntr | ... entity_Gntr
+  McshTchInf000011:341  level2 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Jsf_Gntr | ... entity_Gntr
+  McshTchInf000011:3453  level1 ".." has no gntr  || .. | <a class="clsPreview" href="#idLJsbrNodep">Node.prototype</a> | <a class="clsPreview" href="#idLJsbrEventTargetp">EventTarget.prototype</a> | Jsmgo_Gntr
+  McshTchInf000011:4793  level1 "Jsgn-evaluation!@McshTchInf000010#idLJsgneval" has no gntr  || Jsgn-evaluation!@McshTchInf000010#idLJsgneval | ... entity_Gntr
+  McshTchInf000011:82  level1 "Jsgn-archetype!@McshTchInf000010#idLJsgnarc" has no gntr  || Jsgn-archetype!@McshTchInf000010#idLJsgnarc | ... entity_Gntr
+  McshTchInf000011:898  level3 "none" has no gntr  || Jso_Gntr | ... entity_Gntr
+  McshTchInf000012:1617  level1 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfEvents.__proto__ === Function.prototype //true)" has no gntr  || Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfEvents.__proto__ === Function.prototype //true) | Jsmgo_Gntr, (mfEvents.__proto__.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:1808  level1 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfStream.__proto__ === Function.prototype //true)" has no gntr  || Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfStream.__proto__ === Function.prototype //true) | Jsmgo_Gntr (mfStream.__proto__.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:2223  level2 "none" has no gntr  || Jsmgo_Gntr, (moHttp.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:2955  level2 "none" has no gntr  || Jsmgo_Gntr, (moUtil.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:316  level2 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)" has no gntr  || Jsf_Gntr | ... entity_Gntr
+  McshTchInf000012:3270  level1 "global.__proto__ (?)" has no gntr  || global.__proto__ (?) | Jsmgo_Gntr (> global.__proto__.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:3518  level2 "none" has no gntr  || Jsmgo_Gntr | ... entity_Gntr
+  McshTchInf000012:3734  level1 "(process.__proto__)" has no gntr  || (process.__proto__) | events.EventEmitter.prototype (>  process.__proto__.__proto__ === events.EventEmitter.prototype //true) | Jsmgo_Gntr (> process.__proto__.__proto__.__proto__ === Object.prototype //true) | ... entity_Gntr
+  McshTchInf000012:751  level1 "?(Module.prototype) (<code>module.__proto__ === Object.prototype //false</code>)" has no gntr  || ?(Module.prototype) (<code>module.__proto__ === Object.prototype //false</code>) | Jsmgo_Gntr (<code>module.__proto__.__proto__ === Object.prototype //true</code>) | Jsndmmbr_Gntr | ... entity_Gntr
+  McshTchInf000012:7949  level1 "build-tool!@McshTchInf000012#idLJsndtolBld" has no gntr  || build-tool!@McshTchInf000012#idLJsndtolBld | Jsgn-based-task-runner | Npmpkg_Gntr | ... entity_Gntr
+  McshTchInf000012:972  level1 "Function.prototype!@McshTchInf000010#idLJsgnFunctionp" has no gntr  || Function.prototype!@McshTchInf000010#idLJsgnFunctionp | Jsmgo_Gntr | Jsndmmbr_Gntr | ... entity_Gntr
+  McshTchInf000013:1665  level2 "JavaScript-programing-language!@McshTchInf000010#idDescription" has no gntr  || Jsdt_lago_Gntr | ... entity_Gntr
+  McshTchInf000013:320  level2 "none" has no gntr  || Jsmgo_Gntr | ... entity_Gntr
+  McshTchInf000014:6203  level1 "web-programing-language" has no gntr  || web-programing-language | ... entity_Gntr
+  McshTchInf000015:10021  level2 "McshEngl.law.generic" has no gntr  || law_Gntr | ... entity_Gntr
+  McshTchInf000015:2202  level3 "McshEngl.law.generic" has no gntr  || AnLaw_Gntr
+  McshTchInf000015:4056  level1 "<a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>" has no gntr  || <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>
+  McshTchInf000015:6706  level1 "application" has no gntr  || application | DeProgram_Gntr | ... entity_Gntr
+  McshTchInf000015:710  level1 "p2p-network-protocol" has no gntr  || p2p-network-protocol | ... entity_Gntr
+  McshTchInf000015:7859  level2 "application" has no gntr  || DeApp_Gntr | ... entity_Gntr
+  McshTchInf000015:8533  level1 "<a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>" has no gntr  || <a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>
+  McshTchInf000015:8697  level1 "ERC20-token!@McshTchInf000018#idEthevuCNErc20" has no gntr  || ERC20-token!@McshTchInf000018#idEthevuCNErc20 | utility-token!@McshTchInf000015#idAlgntevuUtlt | ... entity_Gntr
+  McshTchInf000016:10585  level1 "Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig" has no gntr  || Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig | BcnnetEvu_Gntr | Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:10675  level2 "blockchain-network!@McshTchInf000016#idDescription" has no gntr  || BcnnetEvu_Gntr | Proof-of-Stake-network!@McshTchInf000016#idPosnet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:10783  level1 "Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig" has no gntr  || Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig | Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken) | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:12135  level2 "problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)" has no gntr  || blockchain-con_Gntr | ... entity_Gntr
+  McshTchInf000016:12279  level1 "Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig" has no gntr  || Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig | Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken) | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:13421  level1 "Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet" has no gntr  || Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:13967  level1 "Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet" has no gntr  || Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:14318  level1 "blockchain-network!@McshTchInf000016#idDescription" has no gntr  || blockchain-network!@McshTchInf000016#idDescription | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:15091  level1 "Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig" has no gntr  || Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig | BkcnserviceSmct_Gntr | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:15335  level1 "dependent-bcnnet!@McshTchInf000016#idDbcDpt, (Ethereum)" has no gntr  || dependent-bcnnet!@McshTchInf000016#idDbcDpt, (Ethereum) | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:16096  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapd">permission-to-append--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapd">permission-to-append--chain-net</a>
+  McshTchInf000016:16114  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapdN">permissionless-to-append--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapdN">permissionless-to-append--chain-net</a>
+  McshTchInf000016:16132  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusr">permission-to-join--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusr">permission-to-join--chain-net</a>
+  McshTchInf000016:16150  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusrN">permissionless-to-join--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusrN">permissionless-to-join--chain-net</a>
+  McshTchInf000016:16173  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPbl">public--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPbl">public--chain-net</a> | AgntBkcn_Gntr
+  McshTchInf000016:16197  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPblN">publicNo--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPblN">publicNo--chain-net</a> | AlgonetCentral_Gntr | AgntBkcn_Gntr
+  McshTchInf000016:2025  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevubkn">backness-of--chain-asset</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevubkn">backness-of--chain-asset</a>
+  McshTchInf000016:3311  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeN">chain-currencyNo</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeN">chain-currencyNo</a> | Bkcnasset_Gntr
+  McshTchInf000016:333  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntwprFT">chain--white-paper</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntwprFT">chain--white-paper</a>
+  McshTchInf000016:376  level2 "p2p-network-protocol" has no gntr  || Dprotocol_Gntr | ... entity_Gntr
+  McshTchInf000016:4266  level2 "application" has no gntr  || DeApp_Gntr | Dblockchain_program_Gntr
+  McshTchInf000016:5092  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntelnSpro">chain-net-pro</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntelnSpro">chain-net-pro</a>
+  McshTchInf000016:5125  level1 "problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)" has no gntr  || problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken) | netAlgo_benefitNo_Gntr | ... entity_Gntr
+  McshTchInf000016:5515  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntsvcF">chain-service</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntsvcF">chain-service</a> | Agntsrvc_Gntr
+  McshTchInf000016:6105  level1 "blockchain-network!@McshTchInf000016#idDescription" has no gntr  || blockchain-network!@McshTchInf000016#idDescription | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:6279  level1 "Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet" has no gntr  || Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:7298  level1 "Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig" has no gntr  || Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig | BkcnserviceSmct_Gntr | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:8380  level2 "blockchain-network!@McshTchInf000016#idDescription" has no gntr  || BcnnetEvu_Gntr | Proof-of-work-network!@McshTchInf000016#idPownet | AgntBkcn_Gntr | ... entity_Gntr
+  McshTchInf000016:8694  level2 "application" has no gntr  || DeApp_Gntr | ... entity_Gntr
+  McshTchInf000016:8713  level2 "problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken)" has no gntr  || blockchain-con_Gntr | ... entity_Gntr
+  McshTchInf000017:1533  level1 "file" has no gntr  || file | ... entity_Gntr
+  McshTchInf000017:4964  level1 "cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken)" has no gntr  || cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken) | ... entity_Gntr
+  McshTchInf000017:524  level3 "p2p-network-protocol" has no gntr  || blockchain-protocol_Gntr | ... entity_Gntr
+  McshTchInf000017:5491  level1 "exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt" has no gntr  || exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt | ... entity_Gntr
+  McshTchInf000018:10721  level1 "LanguageComputerPrograming" has no gntr  || LanguageComputerPrograming | AgntEthr_contract_lang_Gntr | ... entity_Gntr
+  McshTchInf000018:220  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntdcrzTrst">chain-net'decentralized-trust</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntdcrzTrst">chain-net'decentralized-trust</a>
+  McshTchInf000018:315  level3 "p2p-network-protocol" has no gntr  || Dblockchain_protocol_Gntr | ... entity_Gntr
+  McshTchInf000018:6653  level3 "application" has no gntr  || blockchain-dApp!@McshTchInf000016#idDbcapp | AgntEthr_program_Gntr | DeApp_Gntr | ... entity_Gntr
+  McshTchInf000019:3310  level1 "<a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>" has no gntr  || <a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>
+  McshTchInf000019:3494  level1 "<a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>" has no gntr  || <a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>
+  McshTchInf000020:3294  level2 "application" has no gntr  || DeApp_Gntr | ... entity_Gntr
+  McshTchInf000021:1002  level2 "chain-net'voting!@McshTchInf000015#idAlgntgovvtg" has no gntr  || Agnteos'voting_Gntr | ... entity_Gntr
+  McshTchInf000021:1286  level1 "blockchain!@McshTchInf000016#idDbddat" has no gntr  || blockchain!@McshTchInf000016#idDbddat
+  McshTchInf000021:1425  level1 "blockchain-net'block-explorer!@McshTchInf000016#idDbcbex" has no gntr  || blockchain-net'block-explorer!@McshTchInf000016#idDbcbex | ... entity_Gntr
+  McshTchInf000021:1480  level1 "blockchain-net'transaction" has no gntr  || blockchain-net'transaction
+  McshTchInf000021:1576  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcwltacnt">blockchain-net'account</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcwltacnt">blockchain-net'account</a>
+  McshTchInf000021:1782  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdevu">blockchain-net'asset</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdevu">blockchain-net'asset</a>
+  McshTchInf000021:1797  level1 "exchange-organization--of--blockchain-asset" has no gntr  || exchange-organization--of--blockchain-asset
+  McshTchInf000021:1957  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-net'governance</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-net'governance</a>
+  McshTchInf000021:2280  level1 "chain-net'voting!@McshTchInf000015#idAlgntgovvtg" has no gntr  || chain-net'voting!@McshTchInf000015#idAlgntgovvtg | ... entity_Gntr
+  McshTchInf000021:2378  level2 "chain-net'voting!@McshTchInf000015#idAlgntgovvtg" has no gntr  || Agnteos'voting_Gntr | ... entity_Gntr
+  McshTchInf000021:2575  level1 "blockchain-client!@McshTchInf000016#idDbcpgmClnt" has no gntr  || blockchain-client!@McshTchInf000016#idDbcpgmClnt | ... entity_Gntr
+  McshTchInf000021:2716  level3 "application" has no gntr  || blockchain-net'Dapp!@McshTchInf000016#idDbcapp | DeApp_Gntr | ... entity_Gntr
+  McshTchInf000021:2940  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-net'wallet</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-net'wallet</a>
+  McshTchInf000021:3142  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-net'organization</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-net'organization</a>
+  McshTchInf000021:3165  level2 "economic-Ogzn!@McshStn000008#idOgznScdnSrpn" has no gntr  || OgznPrdg_Gntr
+  McshTchInf000021:3305  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddng">blockchain-net'doing</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddng">blockchain-net'doing</a>
+  McshTchInf000021:62  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>
+  McshTchInf000021:84  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-net'white-paper</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-net'white-paper</a>
+  McshTchInf000021:944  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-net'node</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-net'node</a>
+  McshTchInf000022:1059  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuexrate">chain-asset--exchange-rate</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuexrate">chain-asset--exchange-rate</a>
+  McshTchInf000022:1110  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-governance-system</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-governance-system</a>
+  McshTchInf000022:1232  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-wallet</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-wallet</a>
+  McshTchInf000022:1253  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdstat">blockchain-statistics</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdstat">blockchain-statistics</a>
+  McshTchInf000022:1272  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcenrg">blockchain-energy-consumption</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcenrg">blockchain-energy-consumption</a>
+  McshTchInf000022:1291  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdhmn">blockchain-human</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdhmn">blockchain-human</a>
+  McshTchInf000022:1324  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-organization</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-organization</a>
+  McshTchInf000022:1431  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdeln">blockchain-evaluation</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdeln">blockchain-evaluation</a>
+  McshTchInf000022:1448  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdpbm">blockchain-problem</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdpbm">blockchain-problem</a>
+  McshTchInf000022:1518  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdlaw">blockchain-law</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdlaw">blockchain-law</a>
+  McshTchInf000022:1557  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcirsc">blockchain-resource</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcirsc">blockchain-resource</a>
+  McshTchInf000022:1599  level1 "Bitcoin-based-network" has no gntr  || Bitcoin-based-network | blockchain-network!@McshTchInf000016 | chain-network!@McshTchInf000015 | ... entity_Gntr
+  McshTchInf000022:58  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>
+  McshTchInf000022:679  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-node</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-node</a>
+  McshTchInf000022:76  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-white-paper</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-white-paper</a>
+  McshTchInf000022:813  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>
+  McshTchInf000022:857  level1 "<a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblkpld">Bitcoin-block-payload</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblkpld">Bitcoin-block-payload</a>
+  McshTchInf000022:916  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcblktimGnrt">blockchain-block-interval</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcblktimGnrt">blockchain-block-interval</a>
+  McshTchInf000022:938  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcbex">blockchain--block-explorer</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcbex">blockchain--block-explorer</a>
+  McshTchInf000024:1104  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntpgmClnt">client-program--of--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntpgmClnt">client-program--of--chain-net</a>
+  McshTchInf000024:2430  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcads">address-of--blockchain-account</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcads">address-of--blockchain-account</a>
+  McshTchInf000024:2734  level1 "post-of--Steem-net" has no gntr  || post-of--Steem-net
+  McshTchInf000024:3864  level2 "application" has no gntr  || DeApp_Gntr | blogging-platform | Stemdapp_Gntr | ... entity_Gntr
+  McshTchInf000024:467  level1 "asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn" has no gntr  || asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn | ... entity_Gntr
+  McshTchInf000024:58  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>
+  McshTchInf000024:83  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">node-of--chain-net</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">node-of--chain-net</a>
+  McshTchInf000025:758  level1 "Eos-net--asset" has no gntr  || Eos-net--asset
+  McshTchInf000026:1652  level2 "application" has no gntr  || DeApp_Gntr | web-app | ... entity_Gntr
+  McshTchInf000026:2136  level1 "decentralized-network" has no gntr  || decentralized-network | AgntserviceTchInf_Gntr | ... entity_Gntr
+  McshTchInf000028:1291  level1 "DnChain--programing-language" has no gntr  || DnChain--programing-language | ... entity_Gntr
+  McshTchInf000028:176  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">protocol-of-DnChain</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">protocol-of-DnChain</a>
+  McshTchInf000028:582  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">Dnode</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">Dnode</a>
+  McshTchInf000028:61  level1 "stakeholder-of-DnChain!@McshTchInf000015.last.html#idAlgntprlFT" has no gntr  || stakeholder-of-DnChain!@McshTchInf000015.last.html#idAlgntprlFT | ... entity_Gntr
+  McshTchInf000030:2583  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdsuntNmd">named-Sunt--of-Lsrc</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdsuntNmd">named-Sunt--of-Lsrc</a>
+  McshTchInf000030:2978  level1 "<a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdroot">algo-root--of-Srcd_lago</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdroot">algo-root--of-Srcd_lago</a>
+  McshTchInf000030:3256  level1 "<a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>" has no gntr  || <a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>
+  McshTchInf000030:392  level1 "Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd" has no gntr  || Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd | Rust_lago_word_Gntr | ... entity_Gntr
+  McshTchInf000030:4349  level1 "compiled-language!@McshTchInf000006#idLSrcdCmpd" has no gntr  || compiled-language!@McshTchInf000006#idLSrcdCmpd | statically-typed-language!@McshTchInf000006#idLSrcdStctp | programing-language!@McshTchInf000006 | language_Gntr | ... entity_Gntr
+  McshTchInf000030:50  level2 "<a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>" has no gntr  || <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdarch">archetype-of--source-language</a>
+  McshTchInf000031:2976  level1 "middle-level--programing-language" has no gntr  || middle-level--programing-language | general-purpose--programing-language | object-oriented--programing-language | compiled--programing-language!@McshTchInf000006#idLSrcdCmpd | procedural--programing-language | generic-programing--programing-language | programing-language!@McshTchInf000006 | Cmpr_lago_Gntr | language_Gntr | mapping-method | method | modelConceptStructured!@McshCor000002 | info_Gntr | model_Gntr | entity_Gntr
+  McshTchInf000036:4967  level2 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || science_Gntr | techTool_Gntr | ... entity_Gntr | AI is being used to develop new drug discovery methods. | AI is being used to analyze large datasets of medical images and other data to improve diagnosis and treatment. | AI is being used to develop new environmental models to help us understand and mitigate climate change. | AI is being used to study the human brain and to develop new treatments for neurological disorders. | AI is being used to develop self-driving cars. | AI is being used to develop virtual assistants like Siri and Alexa. | AI is being used to develop fraud detection systems. | AI is being used to develop personalized recommendations systems. | AI is being used to develop new gaming experiences.
+  McshTchInf000036:6118  level3 "knowledgeBrain!@McshLag000002#idInfBrnBioKldg" has no gntr  || techAI_Gntr | ... entity_Gntr
+  McshTchInf000039:913  level1 "hard-soft-system" has no gntr  || hard-soft-system | ... entity_Gntr
+  McshTchPrgm000006:341  level1 "Google Chrome-Extension" has no gntr  || Google Chrome-Extension | ... entity_Gntr
+  McshWrdidxElln00:52  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln01alfa_1:14489  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln01alfa_2:28060  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln01alfa_3:22356  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln01alfa_4:23499  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln01alfa_5:24394  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln02vita:26720  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln03yama:24823  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln04dhelta:32171  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln05epsilon_1:5835  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln05epsilon_2:22856  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln05epsilon_3:26963  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln06zita:7010  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln07ita:5975  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln08thita:11004  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln09yxota:11336  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln10kapa_1:7356  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln10kapa_2:38810  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln10kapa_3:34080  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln11lamdha:22190  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln12mi_1:5645  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln12mi_2:11918  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln12mi_3:14438  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln12mi_4:13618  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln12mi_5:12205  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln13ni:17621  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln14ksi:9553  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln15omikron:21754  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln16pi_1:4827  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln16pi_2:31654  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln16pi_3:34358  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln17ro:13785  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln18siyma_1:5212  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln18siyma_2:30217  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln18siyma_3:28291  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln19taf:40588  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln20ipsilon:16850  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln21fi:24993  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln22hxi:21779  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln23psi:7944  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+  McshWrdidxElln24oméya:2243  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
+
+=== CYCLE (26) — chain loops back
+  McshHlth000002:3143  level2 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr
+  McshHlth000002:3173  level2 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr
+  McshHlth000002:3237  level1 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr | OganGland_Gntr | GlndEndocrine_Gntr | ... entity_Gntr
+  McshNtr000007:416  level1 ChmcElry back to McshNtr000007:416  || chemical-element, chemical-compound!@McshNtr000006 | MtrlChemical_Gntr, mixture | material-body!@McshNtr000002 | body_Gntr, doing_Gntr, relation_Gntr | entity_Gntr
+  McshStn000007:266  level1 societyOgsm back to McshStn000007:266  || society-of-organisms, organization-of-organisms, group-of-organisms | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | self-dynamic-system!@McshCor000011#idSys009spc001 | material-body--system!@McshCor000011#idSys004 | material-body--whole-entity!@McshCor000008#idWhl003 | material-body!@McshNtr000002 | body_Gntr | entity_Gntr | ... entity_Gntr
+  McshStn000009:8308  level1 society back to McshStn000009:8308  || human-society, ogmHmnNo-society | society-of-organisms!@McshStn000007 | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | SystDynamic_Gntr | system_Gntr | whole-entity!@McshCor000008 | entity_Gntr | Sctn_Gntr | ... entity_Gntr | human_Gntr | Ogzn_Gntr | governace-system | satisfier-system | language_Gntr | tech_Gntr
+  McshStn000021:693  level2 society back to McshStn000009:8308  || human-society!@McshStn000009 | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | self-dynamic-system!@McshCor000011#idSys009spc001 | material-body--systemMcshCor000011#idSys004 | material-body--whole-entity!@McshCor000008#idWhl003 | material-body!@McshNtr000002 | body_Gntr | entity_Gntr
+  McshStn000031:13772  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000035:3723  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000036:196  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000037:2161  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000038:1864  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000039:2278  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000040:1645  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000041:1576  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000043:1659  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000044:1912  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000045:298  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000046:282  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000047:298  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000048:5324  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000049:534  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000050:3844  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshStn000051:453  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+  McshTchInf000012:1443  level1 Jsndmc back to McshTchInf000012:1443  || Jsndmc_Gntr | Jsm_Gntr | ... entity_Gntr
+  McshTchPrgm000003:2405  level1 Atomedtr back to McshTchPrgm000003:2405  || Atomedtr | code-editor-built-with-Electronjs | Jselapp_Gntr | computer-program!@McshTchPrgm000002#idOverview | Pgmgalgo_Gntr | doc_Gntr | infoBrain!@McshLag000002 | infoBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
+
+=== EMPTY (4) — nothing (or only ...) after ===
+    
+  McshNtr000010:230  
+  McshOgm000007:989  
+  McshTchInf000012:1859  
+
+=== OK (2428) — already level1..3 + ... entity_Gntr (or level1 is entity)
+  (not listed)

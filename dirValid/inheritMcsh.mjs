@@ -68,7 +68,7 @@ const
   rRef = /!@(Mcsh[A-Za-z]*\d{6})?#(id[^\s,<"':]+)/g,
   // the-name of a-generic-tree, in its own generic-tree::  "<br>* McshEngl.system_Gntr,"
   rGntrDef = /<br>\*\s*McshEngl\.([^\s,<!]+_Gntr)[,!]/g,
-  // a-text-entry of a-generic: "<br>* system_Gntr,"; NOT "McshEngl.…", NOT "... entity_Gntr"
+  // a-text-entry of a-generic: "<br>* system_Gntr,"; NOT "McshEngl.…", NOT "...entity_Gntr"
   rGntrUse = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*]+_Gntr),/g
 
 /**

@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.26-1-0.2026-10-23: dblclick ...entity_Gntr inserts generic-chain',
     'mMcsh2.js.26-0-0.2026-10-18: !@ concept-reference preview + go-to',
     'mMcsh2.js.25-0-3.2026-09-13: configMcshapp.json',
     'mMcsh2.js.25-0-2.2026-09-02: Site-Menu',
@@ -723,6 +724,8 @@ let fContainersInsert = function () {
     // Skip inputs/textareas
     const sTag = (oEvtIn.target.closest('input, textarea, [contenteditable="true"]') || {}).tagName
     if (sTag === 'INPUT' || sTag === 'TEXTAREA') return
+    // '...entity_Gntr' of a-generic-tree: NO search, insert the-generic-chain up to entity
+    if (await fGntrChainInsert()) return
 
     // '!@'-concept-reference: set by fExpandSelectionRight when the clicked word
     // is followed by '!@McshDir000000#id' (the reference after '!@', name ignored).
@@ -1352,6 +1355,156 @@ let fContainersInsert = function () {
     if (!sHref) return false // caller decides (warn, or fall through to name-search)
     sPreviewRefHref = sHref // enables go-to on Enter / preview-click
     fPreviewUrl(sHref)
+    return true
+  }
+
+  /**
+   * created: {2026-10-23}
+   * DOING: on double-click on '...entity_Gntr' of a-generic-tree (p#id..gntr),
+   *   inserts before it the-generic-chain from the-last generic above it up to entity.
+   *   The-chain lives in the-page only (until reload or another page).
+   *   IF the-chain ends with 'entity_Gntr (the-most-generic)', the-'...entity_Gntr' line is hidden.
+   *   A-second double-click (on '...entity_Gntr' or on the-inserted entity line) removes it.
+   * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
+   */
+  async function fGntrChainInsert() {
+    const
+      sEnt = '...entity_Gntr',
+      sEntTop = 'entity_Gntr (the-most-generic)',
+      oSel = window.getSelection()
+    if (!oSel || oSel.rangeCount === 0) return false
+    const
+      oRange = oSel.getRangeAt(0),
+      oNode = oRange.startContainer
+    if (oNode.nodeType !== Node.TEXT_NODE) return false
+    // remove an-inserted chain and show again its hidden '...entity_Gntr' line
+    function fChainRemove(oChainIn) {
+      const oHid = oChainIn.parentElement.querySelector('.clsGntrEntHide')
+      if (oHid) oHid.replaceWith(...oHid.childNodes)
+      oChainIn.remove()
+    }
+    const oChainClicked = oNode.parentElement.closest('.clsGntrChain')
+    if (oChainClicked && oNode.textContent.includes(sEntTop)) {
+      oSel.removeAllRanges()
+      fChainRemove(oChainClicked)
+      return true
+    }
+    const nIdx = oNode.textContent.indexOf(sEnt)
+    if (nIdx < 0 || oRange.startOffset < nIdx || oRange.startOffset > nIdx + sEnt.length) return false
+    const oP = oNode.parentElement.closest('p')
+    if (!oP || !oP.id.endsWith('gntr')) return false
+    oSel.removeAllRanges()
+    const oOld = oP.querySelector('.clsGntrChain')
+    if (oOld) { fChainRemove(oOld); return true }
+
+    const
+      oDocs = {},          // url-without-hash -> Document
+      sUrlPage = location.href.split('#')[0],
+      oSetSeen = new Set([sUrlPage + '#' + oP.id]),
+      oSpan = document.createElement('span')
+    oDocs[sUrlPage] = document
+    oSpan.className = 'clsGntrChain'
+    oSpan.style.fontStyle = 'italic'
+    oSpan.style.opacity = '0.8'
+
+    // the-lines of a-gntr-paragraph (html between <br>s), trimmed
+    function fLines(oPIn) {
+      return oPIn.innerHTML.split(/<br\s*\/?>/i).map(s => s.trim())
+    }
+    // the-entity line ends the-chain
+    function fIsEntity(sLineIn) {
+      return /^\*\s*(\.\.\.\s*)?entity(_Gntr)?\b/.test(sLineIn)
+    }
+    async function fDoc(sUrlIn) {
+      const sU = sUrlIn.split('#')[0]
+      if (!oDocs[sU]) {
+        const oRes = await fetch(sU)
+        oDocs[sU] = (new DOMParser()).parseFromString(await oRes.text(), 'text/html')
+      }
+      return oDocs[sU]
+    }
+    // the-url of the-concept of a-name from the-English name-index, '' if none
+    async function fNameUrl(sNameIn) {
+      try {
+        const aa = await fSearchName(sNameIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'lagEngl')
+        const a = aa.find(aIn => aIn[0] === sNameIn)
+        return a ? sPathSite + sWorldview + '/' + a[1] : ''
+      } catch (oErr) { console.warn(oErr); return '' }
+    }
+    // the-gntr-paragraph a-url points to: #id..gntr, #id..nam -> ..gntr, #section -> section+gntr,
+    // #idOverview -> the-root gntr (the-gntr whose concept has no ..nam paragraph)
+    async function fGntrOfUrl(sUrlIn) {
+      const
+        oDoc = await fDoc(sUrlIn),
+        sId = sUrlIn.includes('#') ? sUrlIn.split('#')[1] : 'idOverview'
+      let oGntr = sId.endsWith('gntr') ? oDoc.getElementById(sId) : null
+      if (!oGntr && sId.endsWith('nam')) oGntr = oDoc.getElementById(sId.slice(0, -3) + 'gntr')
+      if (!oGntr) oGntr = oDoc.getElementById(sId + 'gntr')
+      if (!oGntr && sId === 'idOverview') {
+        oGntr = [...oDoc.querySelectorAll('p[id$="gntr"]')]
+          .find(oPIn => !oDoc.getElementById(oPIn.id.slice(0, -4) + 'nam')) || null
+      }
+      return oGntr ? {oGntr: oGntr, sUrl: sUrlIn.split('#')[0] + '#' + oGntr.id} : null
+    }
+    // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X_Gntr, name
+    async function fGntrOfLine(sLineIn, sUrlBaseIn) {
+      const sL = sLineIn.replace(/^\*\s*/, '')
+      let m = sL.match(/href="([^"]+)"/)
+      if (m) return fGntrOfUrl(new URL(m[1].replace(/&amp;/g, '&'), sUrlBaseIn).href)
+      m = sL.match(/!@(Mcsh\w+(#\w+)?)/)
+      if (m) {
+        const sUrl = await fRefToUrl(m[1])
+        return sUrl ? fGntrOfUrl(sUrl) : null
+      }
+      const sName = sL.replace(/,.*$/, '').trim()
+      const sUrl = sName ? await fNameUrl(sName) : ''
+      return sUrl ? fGntrOfUrl(sUrl) : null
+    }
+    // the-first generic line after '===' of a-gntr-paragraph
+    function fLevel1(oGntrIn) {
+      const aL = fLines(oGntrIn), n = aL.indexOf('===')
+      return n < 0 ? '' : (aL.slice(n + 1).find(s => s.startsWith('*')) || '')
+    }
+    function fAddLine(sHtmlIn) {
+      oSpan.appendChild(document.createElement('br'))
+      oSpan.insertAdjacentHTML('beforeend', '* ' + sHtmlIn + ',')
+    }
+
+    // the-last generic above '...entity_Gntr'
+    const aL = fLines(oP), nEnt = aL.findIndex(s => s.includes(sEnt))
+    let sLine = nEnt > 0 ? aL[nEnt - 1] : '', sUrlBase = sUrlPage
+    for (let n = 0; n < 30 && sLine.startsWith('*') && !fIsEntity(sLine); n++) {
+      const o = await fGntrOfLine(sLine, sUrlBase)
+      if (!o) {
+        // n === 0: the-line is already on the-page
+        fAddLine((n > 0 ? sLine.replace(/^\*\s*/, '').replace(/,\s*$/, '') + ' ' : '') + '?? (no generic-tree found)')
+        break
+      }
+      if (oSetSeen.has(o.sUrl)) { fAddLine('?? cycle at ' + o.oGntr.id); break }
+      oSetSeen.add(o.sUrl)
+      if (n > 0) {
+        // the-name of the-reached gntr: its first line '* McshEngl.X_Gntr,'
+        const mN = (fLines(o.oGntr).find(s => /McshEngl\.\S+_Gntr/.test(s)) || '').match(/McshEngl\.(\S+_Gntr)/)
+        fAddLine('<a class="clsPreview" href="' + o.sUrl + '">' + (mN ? mN[1] : o.oGntr.id) + '</a>')
+      }
+      sLine = fLevel1(o.oGntr)
+      sUrlBase = o.sUrl
+    }
+    // reached entity ('===' above '...entity_Gntr': the-generic is entity) -> it is the-last line
+    const bEntTop = fIsEntity(sLine) || sLine === '==='
+    if (bEntTop) fAddLine(sEntTop)
+    // insert before the-<br> of the-'...entity_Gntr' line
+    const oBr = oNode.previousSibling && oNode.previousSibling.nodeName === 'BR' ? oNode.previousSibling : oNode
+    oBr.before(oSpan)
+    if (bEntTop && oBr !== oNode) {
+      // hide the-'<br>* ...entity_Gntr,' line: the-chain already ends with entity
+      oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
+      const oHid = document.createElement('span')
+      oHid.className = 'clsGntrEntHide'
+      oHid.style.display = 'none'
+      oBr.before(oHid)
+      oHid.append(oBr, oNode)
+    }
     return true
   }
 

@@ -1,0 +1,390 @@
+generic-tree:: items that are only a name {2026-10-22}
+
+=== FIXED (80) — name is a mainname (has X_Gntr), now X_Gntr
+  McshCor000002:2769  Mcsview -> Mcsview_Gntr
+  McshCor000002:2770  Mcs -> Mcs_Gntr
+  McshCor000002:5159  infoBio -> infoBio_Gntr
+  McshEdu000002:915  infoBio -> infoBio_Gntr
+  McshEdu000005:5607  science -> science_Gntr
+  McshEdu000005:5766  sciMath -> sciMath_Gntr
+  McshEdu000005:5837  mathAppliedNo -> mathAppliedNo_Gntr
+  McshEdu000005:5940  sciMath -> sciMath_Gntr
+  McshEdu000009:151  science -> science_Gntr
+  McshEdu000009:847  sciMind -> sciMind_Gntr
+  McshEdu000010:2094  sciMind -> sciMind_Gntr
+  McshHlth000002:4558  TissConnective -> TissConnective_Gntr
+  McshHlth000002:12691  functing -> functing_Gntr
+  McshHlth000011:683  diagnosis -> diagnosis_Gntr
+  McshHlth000011:684  therapy -> therapy_Gntr
+  McshHlth000011:689  doing -> doing_Gntr
+  McshHlth000011:692  therapy -> therapy_Gntr
+  McshHlth000011:17868  disease -> disease_Gntr
+  McshHlth000013:186  nutrient -> nutrient_Gntr
+  McshHlth000014:2101  medication -> medication_Gntr
+  McshLag000008:822  language -> language_Gntr
+  McshLag000008:825  info -> info_Gntr
+  McshLag000008:826  model -> model_Gntr
+  McshLag000009:4317  language -> language_Gntr
+  McshLag000009:4320  info -> info_Gntr
+  McshLag000009:4321  model -> model_Gntr
+  McshLag000010:6008  language -> language_Gntr
+  McshLag000010:6011  info -> info_Gntr
+  McshLag000010:6012  model -> model_Gntr
+  McshLag000011:27444  termEngl -> termEngl_Gntr
+  McshLag000011:30134  language -> language_Gntr
+  McshLag000011:30137  info -> info_Gntr
+  McshLag000011:30138  model -> model_Gntr
+  McshLag000012:4838  termEspo -> termEspo_Gntr
+  McshLag000012:5204  language -> language_Gntr
+  McshLag000012:5207  info -> info_Gntr
+  McshLag000012:5208  model -> model_Gntr
+  McshLag000018:13003  Zhonname -> Zhonname_Gntr
+  McshLag000018:18582  language -> language_Gntr
+  McshLag000018:18585  info -> info_Gntr
+  McshLag000018:18586  model -> model_Gntr
+  McshLag000030:8099  language -> language_Gntr
+  McshLag000030:8102  info -> info_Gntr
+  McshLag000030:8103  model -> model_Gntr
+  McshLag000043:3694  language -> language_Gntr
+  McshLag000043:3697  info -> info_Gntr
+  McshLag000043:3698  model -> model_Gntr
+  McshNtr000005:1366  MtrlSysMols -> MtrlSysMols_Gntr
+  McshOgm000005:2930  medication -> medication_Gntr
+  McshOgm000006:1093  MolProtein -> MolProtein_Gntr
+  McshOgm000007:1950  cell -> cell_Gntr
+  McshOgm000008:644  ogmCellNo -> ogmCellNo_Gntr
+  McshStn000005:291  health -> health_Gntr
+  McshStn000005:292  science -> science_Gntr
+  McshStn000005:294  doing -> doing_Gntr
+  McshStn000009:8323  human -> human_Gntr
+  McshStn000009:8327  language -> language_Gntr
+  McshStn000020:180  Euhmbr -> Euhmbr_Gntr
+  McshStn000028:117  OgznPrdg -> OgznPrdg_Gntr
+  McshTchInf000003:875  machine -> machine_Gntr
+  McshTchInf000006:1511  language -> language_Gntr
+  McshTchInf000010:7346  info -> info_Gntr
+  McshTchInf000010:7347  model -> model_Gntr
+  McshTchInf000010:7424  info -> info_Gntr
+  McshTchInf000010:7425  model -> model_Gntr
+  McshTchInf000011:5160  info -> info_Gntr
+  McshTchInf000011:5161  model -> model_Gntr
+  McshTchInf000015:10006  law -> law_Gntr
+  McshTchInf000015:13696  Internet -> Internet_Gntr
+  McshTchInf000015:13702  satisfier -> satisfier_Gntr
+  McshTchInf000017:527  blockchain-protocol -> blockchain-protocol_Gntr
+  McshTchInf000030:4338  language -> language_Gntr
+  McshTchInf000031:2987  language -> language_Gntr
+  McshTchInf000031:2991  info -> info_Gntr
+  McshTchInf000031:2992  model -> model_Gntr
+  McshTchInf000036:4998  science -> science_Gntr
+  McshTchPrgm000002:428  app -> app_Gntr
+  McshTchPrgm000003:2415  infoBio -> infoBio_Gntr
+  Mcsh000000:402  info -> info_Gntr
+  Mcsh000000:403  model -> model_Gntr
+
+=== SELF (4) — item is the paragraph's own mainname, not changed
+    netAlgo (own name)
+    Atomedtr (own name)
+
+=== NOT-MAINNAME (362) — no X_Gntr with this name, not changed
+  McshCor000003:5116  entity = the-most-generic
+  McshCor000006:393  doing-of-Universe
+  McshCor000007:831  structure-of-entity
+  McshCor000010:212  information
+  McshCor000013:449  syntax-of-functing
+  McshCor000018:523  feeling
+  McshCor000019:134  performing-art
+  McshHlth000002:262  head-of-vertebrate
+  McshHlth000002:1082  McshEngl.nodeBodyHumn:node-of-system
+  McshHlth000002:1083  entity.body.material.node.part.body⧺cptEpistem741⧺
+  McshHlth000002:1084  entity.body.material.node.part⧺cptEpistem742.13⧺
+  McshHlth000002:1085  entity.body.material.node⧺cptEpistem742.12⧺
+  McshHlth000002:2056  McshEngl.gland:organ
+  McshHlth000002:2142  McshEngl.GlndEndocrine:OganGland
+  McshHlth000002:2315  McshEngl.GlndExocrine:organ
+  McshHlth000002:2380  McshEngl.GlndMixed:organ
+  McshHlth000002:2456  McshEngl.GlndLiver:OganGland
+  McshHlth000002:2752  McshEngl.GlndOvary:GlndMixed
+  McshHlth000002:2796  McshEngl.GlndPancreas:GlndMixed
+  McshHlth000002:2877  McshEngl.GlndSalivary:OganGland
+  McshHlth000002:2986  McshEngl.GlndSkin:OganGland
+  McshHlth000002:3026  McshEngl.GlndGonad:OganGland
+  McshHlth000002:3052  McshEngl.GlndThyroid:OganGland
+  McshHlth000002:3139  McshEngl.adrenal-cortex:GlndEndocrine
+  McshHlth000002:3169  McshEngl.adrenal-medulla:GlndEndocrine
+  McshHlth000002:3234  McshEngl.GlndAdrenal:GlndEndocrine
+  McshHlth000002:3297  McshEngl.GlndParathyroid:OganGland
+  McshHlth000002:3333  McshEngl.GlndThymus:OganGland
+  McshHlth000002:3509  McshEngl.GlndTesticle:GlndMixed
+  McshHlth000002:3582  McshEngl.HmbdSweatGland:GlndSkin
+  McshHlth000002:3621  McshEngl.GlndSebaceous:GlndSkin
+  McshHlth000002:3726  McshEngl.GlndBreast:GlndSkin
+  McshHlth000002:4101  McshEngl.tissue:nodeBodyHumn
+  McshHlth000002:4102  animal-tissue⧺cptEpistem20.1⧺
+  McshHlth000002:4212  McshEngl.TissEpithelial:tissue
+  McshHlth000002:4262  McshEngl.HmbdSkeletalTissue:tissue
+  McshHlth000002:4263  McshEngl.TissSkeletal:tissue
+  McshHlth000002:4306  McshEngl.TissSkeletal:TissSkeletal
+  McshHlth000002:4367  McshEngl.TissMuscle:tissue
+  McshHlth000002:4407  McshEngl.muscleStriated:TissMuscle
+  McshHlth000002:4437  McshEngl.muscleSmooth:TissMuscle
+  McshHlth000002:4502  McshEngl.TissConnective:TissSkeletal
+  McshHlth000002:4559  McshEngl.TissBone:TissConnective
+  McshHlth000002:4560  McshEngl.TissBone:TissSkeletal
+  McshHlth000002:4664  McshEngl.TissGlandular:TissEpithelial
+  McshHlth000002:5386  sulfur
+  McshHlth000002:5410  chlorine
+  McshHlth000002:5436  cobalt
+  McshHlth000002:5462  copper
+  McshHlth000002:5531  manganese
+  McshHlth000002:5555  molybdenum
+  McshHlth000002:5578  selenium
+  McshHlth000002:5607  zinc-atom
+  McshHlth000002:5632  iodine
+  McshHlth000002:5744  essential-nutrient
+  McshHlth000002:5802  phosphorus
+  McshHlth000002:5840  potassium
+  McshHlth000002:5866  sodium
+  McshHlth000002:5890  magnesiumAtom
+  McshHlth000002:5989  entity.body.material.pure.nutrient⧺cptEpistem580⧺
+  McshHlth000002:5990  entity.body.material.pure.chem_compound⧺cptEpistem942⧺
+  McshHlth000002:11043  entity.bodyNo.doing.functing⧺idSysOgnHmn008dong⧺
+  McshHlth000002:14058  entity.bodyNo.doing.chem_reacting⧺cptEpistem740.1⧺
+  McshHlth000002:14450  λειτουργία⧺cptEpistem475⧺
+  McshHlth000002:15430  bodyVertebrate
+  McshHlth000002:15431  bodyOgsm
+  McshHlth000003:3834  mamalian-brain⧺cptEpistem21.2
+  McshHlth000003:3835  brain⧺cptEpistem21⧺
+  McshHlth000004:185  cell-nucleus⧺cptEpistem658⧺
+  McshHlth000004:477  chromosome⧺cptEpistem730⧺
+  McshHlth000004:811  GENE⧺cptEpistem731⧺
+  McshHlth000005:4925  human-bone  => mainname OganBone_Gntr  (applied)
+  McshHlth000010:246  disorder-of-organism
+  McshHlth000011:675  disease-of-organism  => mainname DissOgsm_Gntr  (applied)
+  McshHlth000011:681  symptom
+  McshHlth000011:682  cause
+  McshHlth000011:685  protection
+  McshHlth000011:686  diet
+  McshHlth000011:687  stats
+  McshHlth000011:688  resource
+  McshHlth000011:690  evoluting  => mainname Enttevlg_Gntr  (applied)
+  McshHlth000011:1191  doing-of-disease
+  McshHlth000011:1995  disease.skeletal-system⧺cptDssHmn104⧺
+  McshHlth000011:2020  disease.skeletal-system⧺cptDssHmn104⧺
+  McshHlth000011:2049  disease.skeletal-system⧺cptDssHmn104⧺
+  McshHlth000011:2237  θρομβωση = πήξη του αίματος
+  McshHlth000011:3849  human-disease  => mainname disease_Gntr  (applied)
+  McshHlth000013:2646  drink-food
+  McshHlth000013:3497  water-general
+  McshHlth000014:537  drug-organization
+  McshHlth000014:885  antimicrobial-medication
+  McshHlth000019:3239  VISUAL_SYSTEM⧺cptEpistem84.6.12⧺
+  McshHlth000019:3707  SPINAL_CORD⧺cptEpistem84.6.11⧺
+  McshHlth000019:4556  signaling-molecule-of-cell
+  McshHlth000019:4938  neuronBio⧺cptEpistem1289⧺
+  McshHlth000019:5323  McshEngl.cellNeuroglia:cell
+  McshHlth000019:5766  worldview-management-system⧺cptEpistem402⧺
+  McshHlth000019:5769  entity.whole.system.governing.organism.animal⧺cptEpistem84.6⧺
+  McshLag000006:113  written-language-attribute
+  McshLag000008:823  mapping-method
+  McshLag000008:824  method
+  McshLag000009:4318  mapping-method
+  McshLag000009:4319  method
+  McshLag000010:2234  lagHmnm-syllabication
+  McshLag000010:6009  mapping-method
+  McshLag000010:6010  method
+  McshLag000011:2534  lagHmnm-syllabication
+  McshLag000011:27443  ConjHmnm
+  McshLag000011:30135  mapping-method
+  McshLag000011:30136  method
+  McshLag000012:1691  lagHmnm-syllabication
+  McshLag000012:4837  ConjHmnm
+  McshLag000012:5205  mapping-method
+  McshLag000012:5206  method
+  McshLag000018:689  Hmnm_lago-name-unit
+  McshLag000018:13002  ConjHmnm
+  McshLag000018:18583  mapping-method
+  McshLag000018:18584  method
+  McshLag000021:682  lagHmnm-syllabication
+  McshLag000030:8100  mapping-method
+  McshLag000030:8101  method
+  McshLag000043:3695  mapping-method
+  McshLag000043:3696  method
+  McshNtr000002:315  material'physical-property
+  McshNtr000003:382  body-node
+  McshNtr000003:383  body, doing, relation
+  McshNtr000005:109  attribute-of-MtrlSysMols
+  McshNtr000005:378  system-of-molecules  => mainname MtrlSysMols_Gntr  (applied)
+  McshNtr000005:379  material-object
+  McshNtr000006:120  MtrlChemical_Gntr, mixture
+  McshNtr000006:188  chemical-compound  => mainname ChmcCpd_Gntr  (applied)
+  McshNtr000006:378  chemical-compound  => mainname ChmcCpd_Gntr  (applied)
+  McshNtr000007:420  MtrlChemical_Gntr, mixture
+  McshNtr000007:1683  group1-ChmcElry
+  McshNtr000007:2964  group1-ChmcElry
+  McshOgm000004:743  polymer
+  McshOgm000005:302  substanceMcshNtr000005#idSysMols008
+  McshOgm000005:525  entity.body.product⧺cptEpistem475.371⧺
+  McshOgm000005:828  lipid
+  McshOgm000005:1191  chemical-compound  => mainname ChmcCpd_Gntr  (applied)
+  McshOgm000005:1453  animal-hormone
+  McshOgm000005:1655  hormone
+  McshOgm000005:2929  hormoneSex-steroid
+  McshOgm000006:987  biomaterial
+  McshOgm000007:1607  MtrlObject
+  McshOgm000007:1951  organism  => mainname Ogsm_Gntr  (applied)
+  McshOgm000008:646  pathogen
+  McshOgm000008:965  coronavirus
+  McshOgm000011:97  vertebrate-animal
+  McshStn000002:204  health-of-socialitation  => mainname healthStn_Gntr  (applied)
+  McshStn000002:362  McshEngl.SctnOgms:bio
+  McshStn000005:285  McshEngl.groupOgsm:stnOgsm
+  McshStn000005:290  governance-system
+  McshStn000005:293  resource
+  McshStn000006:236  McshEngl.oznOgsm:stnOgsm
+  McshStn000007:163  goverance-system
+  McshStn000007:266  society-of-organisms, organization-of-organisms, group-of-organisms
+  McshStn000007:276  McshEngl.societyOgsm:stnOgsm
+  McshStn000008:162  ogznOgnm'node
+  McshStn000008:1247  McshEngl.Ogzn:stnHumn
+  McshStn000008:1248  McshEngl.Ogzn:oznOgsm
+  McshStn000009:8309  human-society, ogmHmnNo-society
+  McshStn000009:8318  McshEngl.society:stnHumn
+  McshStn000009:8319  McshEngl.society:societyOgsm
+  McshStn000009:8324  organization  => mainname Ogzn_Gntr  (applied)
+  McshStn000009:8325  governace-system
+  McshStn000009:8326  satisfier-system
+  McshStn000009:8328  technology  => mainname tech_Gntr  (applied)
+  McshStn000010:300  legal-Sfrowner
+  McshStn000010:1501  economic-entity
+  McshStn000019:915  classless-society
+  McshStn000019:916  metacapitalist-society
+  McshStn000019:917  knowledge-society
+  McshStn000019:918  info-network-society
+  McshStn000019:919  complex-society
+  McshStn000021:700  material-body--systemMcshCor000011#idSys004
+  McshStnlaw000002:1264  McshEngl.law.generic
+  McshTchInf000003:874  info-machine
+  McshTchInf000005:1149  digital-document
+  McshTchInf000010:1029  JsoArrayprototype_Gntr, (<code>[].__proto__ === Array.prototype //true</code>)
+  McshTchInf000010:1030  Jsmgo_Gntr, (<code>[].__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:1128  Jsmgo_Gntr (<code>Array.prototype.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:1898  Boolean.prototype, (<code>true.__proto__ === Boolean.prototype //true</code>)
+  McshTchInf000010:1899  Jsmgo_Gntr, (<code>true.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:2261  Jsmgo_Gntr, (<code>f.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:3047  Jsmgo_Gntr, (<code>(3).__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:3341  Jsmgo_Gntr, (literal-objects <code>({}).__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:3345  objectX, (<code>var o = Object.create(objectX)</code>)
+  McshTchInf000010:3537  Jsmgo_Gntr, (<code>/r/.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:3665  Jsmgo_Gntr, (<code>''.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:4220  none
+  McshTchInf000010:5064  Definition-sentence
+  McshTchInf000010:7341  programing-language
+  McshTchInf000010:7342  computer-language  => mainname Cmpr_lago_Gntr  (applied)
+  McshTchInf000010:7343  mapping-method
+  McshTchInf000010:7344  method
+  McshTchInf000010:7420  programing-language
+  McshTchInf000010:7421  computer-language  => mainname Cmpr_lago_Gntr  (applied)
+  McshTchInf000010:7422  mapping-method
+  McshTchInf000010:7423  method
+  McshTchInf000011:1457  Window.prototype (<code>Window.prototype.isPrototypeOf(window) // true</code>)
+  McshTchInf000011:1458  WindowProperties.prototype (internal in Chrome)
+  McshTchInf000011:3450  ..
+  McshTchInf000011:5156  programing-language
+  McshTchInf000011:5157  computer-language  => mainname Cmpr_lago_Gntr  (applied)
+  McshTchInf000011:5158  mapping-method
+  McshTchInf000011:5159  method
+  McshTchInf000012:752  ?(Module.prototype) (<code>module.__proto__ === Object.prototype //false</code>)
+  McshTchInf000012:753  Jsmgo_Gntr (<code>module.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000012:1444  CommonJS-module  => mainname Jsndmc_Gntr  (applied)
+  McshTchInf000012:1619  Jsmgo_Gntr, (mfEvents.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:1810  Jsmgo_Gntr (mfStream.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:2224  Jsmgo_Gntr, (moHttp.__proto__ === Object.prototype //true)
+  McshTchInf000012:2956  Jsmgo_Gntr, (moUtil.__proto__ === Object.prototype //true)
+  McshTchInf000012:3270  global.__proto__ (?)
+  McshTchInf000012:3271  Jsmgo_Gntr (> global.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:3734  (process.__proto__)
+  McshTchInf000012:3735  events.EventEmitter.prototype (>  process.__proto__.__proto__ === events.EventEmitter.prototype //true)
+  McshTchInf000012:3736  Jsmgo_Gntr (> process.__proto__.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:7945  Jsgn-based-task-runner
+  McshTchInf000014:6205  web-programing-language
+  McshTchInf000015:711  p2p-network-protocol
+  McshTchInf000015:6697  application
+  McshTchInf000015:13697  computer-network
+  McshTchInf000015:13698  computer-system  => mainname techCmpr_Gntr  (applied)
+  McshTchInf000015:13699  info-tech  => mainname techInfo_Gntr  (applied)
+  McshTchInf000015:13700  technology  => mainname tech_Gntr  (applied)
+  McshTchInf000015:13701  product-satisfier
+  McshTchInf000015:13703  human-economic-entity
+  McshTchInf000015:13704  human-entity
+  McshTchInf000017:1535  file
+  McshTchInf000017:5401  global-digital-currency
+  McshTchInf000018:10713  LanguageComputerPrograming
+  McshTchInf000021:1482  blockchain-net'transaction
+  McshTchInf000021:1799  exchange-organization--of--blockchain-asset
+  McshTchInf000021:3161  company  => mainname OgznPrdg_Gntr  (applied)
+  McshTchInf000022:1600  Bitcoin-based-network
+  McshTchInf000024:2726  post-of--Steem-net
+  McshTchInf000024:3857  blogging-platform
+  McshTchInf000025:761  Eos-net--asset
+  McshTchInf000026:219  blockchain-network  => mainname AgntBkcn_Gntr  (applied)
+  McshTchInf000026:1654  web-app
+  McshTchInf000026:2137  decentralized-network
+  McshTchInf000028:1293  DnChain--programing-language
+  McshTchInf000029:603  data-representation--computer-language  => mainname lagDtrp_Gntr  (applied)
+  McshTchInf000030:1743  source-function--of-Srcd_lago
+  McshTchInf000031:2979  middle-level--programing-language
+  McshTchInf000031:2980  general-purpose--programing-language
+  McshTchInf000031:2981  object-oriented--programing-language
+  McshTchInf000031:2983  procedural--programing-language
+  McshTchInf000031:2984  generic-programing--programing-language
+  McshTchInf000031:2986  computer-language  => mainname Cmpr_lago_Gntr  (applied)
+  McshTchInf000031:2988  mapping-method
+  McshTchInf000031:2989  method
+  McshTchInf000036:4985  AI is being used to develop new drug discovery methods.
+  McshTchInf000036:4986  AI is being used to analyze large datasets of medical images and other data to improve diagnosis and treatment.
+  McshTchInf000036:4987  AI is being used to develop new environmental models to help us understand and mitigate climate change.
+  McshTchInf000036:4988  AI is being used to study the human brain and to develop new treatments for neurological disorders.
+  McshTchInf000036:4990  AI is being used to develop self-driving cars.
+  McshTchInf000036:4991  AI is being used to develop virtual assistants like Siri and Alexa.
+  McshTchInf000036:4992  AI is being used to develop fraud detection systems.
+  McshTchInf000036:4993  AI is being used to develop personalized recommendations systems.
+  McshTchInf000036:4994  AI is being used to develop new gaming experiences.
+  McshTchInf000036:4999  tool  => mainname techTool_Gntr  (applied)
+  McshTchInf000036:5811  deep-learning  => mainname techDl_Gntr  (applied)
+  McshTchInf000039:916  hard-soft-system
+  McshTchInf000039:3444  knowledge-language  => mainname Knlg_lago_Gntr  (applied)
+  McshTchPrgm000002:305  document  => mainname doc_Gntr  (applied)
+  McshTchPrgm000003:2409  code-editor-built-with-Electronjs
+  McshTchPrgm000003:2413  document  => mainname doc_Gntr  (applied)
+  McshTchPrgm000006:344  Google Chrome-Extension
+
+=== FIXED-BY-MAINNAME (28) — non-main name replaced with its mainname _Gntr
+  McshHlth000005:4925  human-bone -> OganBone_Gntr
+  McshHlth000011:675  disease-of-organism -> DissOgsm_Gntr
+  McshHlth000011:690  evoluting -> Enttevlg_Gntr
+  McshHlth000011:3849  human-disease -> disease_Gntr
+  McshNtr000005:378  system-of-molecules -> MtrlSysMols_Gntr
+  McshNtr000006:188  chemical-compound -> ChmcCpd_Gntr
+  McshNtr000006:378  chemical-compound -> ChmcCpd_Gntr
+  McshOgm000005:1191  chemical-compound -> ChmcCpd_Gntr
+  McshOgm000007:1951  organism -> Ogsm_Gntr
+  McshStn000002:204  health-of-socialitation -> healthStn_Gntr
+  McshStn000009:8324  organization -> Ogzn_Gntr
+  McshStn000009:8328  technology -> tech_Gntr
+  McshTchInf000010:7342  computer-language -> Cmpr_lago_Gntr
+  McshTchInf000010:7421  computer-language -> Cmpr_lago_Gntr
+  McshTchInf000011:5157  computer-language -> Cmpr_lago_Gntr
+  McshTchInf000012:1444  CommonJS-module -> Jsndmc_Gntr
+  McshTchInf000015:13698  computer-system -> techCmpr_Gntr
+  McshTchInf000015:13699  info-tech -> techInfo_Gntr
+  McshTchInf000015:13700  technology -> tech_Gntr
+  McshTchInf000021:3161  company -> OgznPrdg_Gntr
+  McshTchInf000026:219  blockchain-network -> AgntBkcn_Gntr
+  McshTchInf000029:603  data-representation--computer-language -> lagDtrp_Gntr
+  McshTchInf000031:2986  computer-language -> Cmpr_lago_Gntr
+  McshTchInf000036:4999  tool -> techTool_Gntr
+  McshTchInf000036:5811  deep-learning -> techDl_Gntr
+  McshTchInf000039:3444  knowledge-language -> Knlg_lago_Gntr
+  McshTchPrgm000002:305  document -> doc_Gntr
+  McshTchPrgm000003:2413  document -> doc_Gntr

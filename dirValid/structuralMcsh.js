@@ -468,6 +468,16 @@ function fGstrIndex(aoCnptFile) {
     }
     for (const oPara of oCnptFile.aoTitlePara ?? [])
       if (oPara.sNameId) oF.ooPara[oPara.sNameId] = { ...oPara, sIdSect: null };
+    // a-<div id> para-concept the-overview misses (e.g. a-specific-tree with an-<ol> list): from the-raw sections,
+    //   the-innermost section wins (aoRaw_sect has the-whole before its parts)
+    const ooDiv = {};
+    for (const oRaw of oCnptFile.aoRaw_sect ?? [])
+      for (const aD of (oRaw.sRawHtml ?? '').matchAll(/<div id="([^"]+)">\s*<p>([^:<\n]+)::/g))
+        if (!oF.ooPara[aD[1]]) {
+          const nEnd = oRaw.sRawHtml.indexOf('</div>', aD.index);
+          ooDiv[aD[1]] = { sNameId: aD[1], sNameTitle: aD[2].trim(), sPara: oRaw.sRawHtml.slice(aD.index, nEnd < 0 ? undefined : nEnd), sIdSect: oRaw.sNameId };
+        }
+    Object.assign(oF.ooPara, ooDiv);
     ooFile[oCnptFile.sNameFile.replace(/\.last\.html$/, '')] = oF;
   }
   // the-concept-key a-target (file, id) means
@@ -570,7 +580,8 @@ function fGstrIndex(aoCnptFile) {
     let bAfter = false, bWeb = false;
     for (const sLine of (sPara ?? '').split('\n').map(s => s.trim())) {
       if (/^<br>===/.test(sLine)) { bAfter = true; bWeb = /address/i.test(sLine); continue; }
-      if (bAfter && !bWeb && /^<br>\*/.test(sLine)) aOut.push(sLine);
+      // an-item "<br>* …", or a-list item "<li>…" of a-<div> specific-tree (e.g. the-blocks of Ucbk)
+      if (bAfter && !bWeb && /^(<br>\*|<li>)/.test(sLine)) aOut.push(sLine);
     }
     return aOut;
   };
@@ -635,7 +646,7 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
 // ⚠️ [MvrlGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
 //   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
 //   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
-//   Skipped: McshEngl head, "... entity_Gntr", an-addressWpg group, entity itself, a-first item that is NOT a-concept.
+//   Skipped: McshEngl head, "...entity_Gntr", an-addressWpg group, entity itself, a-first item that is NOT a-concept.
 function fCheckGstrGenericSpecific(aoCnptFile) {
   const aoIssue = [];
   const { ooFile, fHead, fKey, fGntr, fSptr, fRefs, fTreeItems, fNames, oNameGntr, fInside } = fGstrIndex(aoCnptFile);

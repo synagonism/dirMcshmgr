@@ -181,3 +181,14 @@ T52. {2026-10-22} DONE: MvrlGstr02 in McshNtr000007: MtrlAtom's specific-tree:: 
      118 atoms whose generic is MtrlAtom ("<br>* atomX!@McshNtr000007#idAtmX,", page order). 119 lines added, nothing else.
      McshNtr000007 119 -> 1; MvrlGstr02 1062 -> 944; MvrlGstr01 still 1. LEFT: ChmcElry (McshNtr000007:416) — its generic-tree's first line is
      "chemical-element, chemical-compound!@McshNtr000006", so the rule takes ChmcCpd as its generic; an element is not a compound: for the user.
+
+T53. {2026-10-22} DONE: MvrlGstr02 fixed: 653 -> 66 (MvrlGstr01 1 -> 0). Generic-trees NOT changed except 2 below.
+     Rule fixes in structuralMcsh.js: a specific-tree "<li>" item counts (the <ol> blocks of Ucbk); a <div id> para-concept the parser's overview
+     misses (e.g. Ucbk's <div> specific-tree) is read from the raw sections — this removed 291 false Ucbk warnings.
+     Pages (970 lines + relink, 65 files, only added lines): 143 specific-trees got a new "===" group "<br>* Smain!@SFile#id," with their missing S
+     (charUncd += 276 Ucbk.N..M'char); 48 new {G}sptr specific-tree:: paras (after G's generic-tree::, or at the end of G when it had no tree).
+     1 relink: DongargtDireSpace!@McshCor000004 -> …#idDngatt001DrnSpac. McshCor000004: generic-tree id typo idDngatt001DrnSpcgntr -> …DrnSpacgntr,
+     and += "=== argtDoing_Gntr" (2nd direct generic); McshTchInf000012 Jsnd_lago generic-tree += Jsgn_lago_Gntr.
+     LEFT 66: G has no specific-tree:: and no clear !⇒ main-name (49 G, e.g. McshTchInf000016#idDbcBig 5, McshStnlaw000003#idLawEus026 4).
+     GS-TREE report: 2528 of 2544 — 16 from the user's main-name renames in progress (title new, _Gntr old). Lists: dirReport/mvrlgstr02-fix-applied.txt,
+     mvrlgstr02-byfile-report.txt.

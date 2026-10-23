@@ -1,15 +1,11 @@
 RULE: IF generic X has specific Y THEN Y has generic X — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-22
 
-specific-tree:: paragraphs: 2917 | specific items with a link (checked): 4478 | items as plain text (not checked): 15070
+specific-tree:: paragraphs: 2965 | specific items with a link (checked): 4907 | items as plain text (not checked): 15346
 X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (its section, GS-TREE or generic-tree::)
 
   MISSING                 0  Y has a generic-tree:: but it does NOT list X
-  Y-NO-GENERIC-TREE       1  Y has no generic-tree:: (so X is not listed)
+  Y-NO-GENERIC-TREE       0  Y has no generic-tree:: (so X is not listed)
   ITEM-NOT-A-CONCEPT      0  the specific item links to a missing target
-  OK                   1599  Y lists X as generic (rule holds)
-  INDIRECT                2  Y does not list X, but reaches X through its generic chain
-  Y-NESTED-IN-X        2876  Y has no generic-tree:: but is a sub-section of X (generic by nesting)
-
-=== Y-NO-GENERIC-TREE (1) — Y has no generic-tree:: (so X is not listed)
-
-=== INDIRECT (2) — Y does not list X, but reaches X through its generic chain
+  OK                   2033  Y lists X as generic (rule holds)
+  INDIRECT                0  Y does not list X, but reaches X through its generic chain
+  Y-NESTED-IN-X        2874  Y has no generic-tree:: but is a sub-section of X (generic by nesting)

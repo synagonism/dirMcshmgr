@@ -1023,7 +1023,7 @@
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "gntr\">generic-tree::" }},
       { "command": "type", "args": { "text": "\n  <br>* McshEngl.mainmain_Gntr," } },
-      { "command": "type", "args": { "text": "\n<br>===\n<br>* ... entity_Gntr,\n<a class=\"clsHide\" href=\"#" } },
+      { "command": "type", "args": { "text": "\n<br>===\n<br>* ...entity_Gntr,\n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "gntr\"></a></p>" } },
       // copy mainname: text after previous "!⇒" to line end
@@ -1387,7 +1387,7 @@
       "editor.action.insertLineAfter",
       "cursorLineStartSelect",
       { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain_Gntr,\n    <br>===\n    <br>* ... entity_Gntr,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>* McshEngl.mainmain_Sptr,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
+        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain_Gntr,\n    <br>===\n    <br>* ...entity_Gntr,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>* McshEngl.mainmain_Sptr,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
       // id: of previous section, into every ididid
       { "command": "editor.actions.findWithArgs",
         "args": {
