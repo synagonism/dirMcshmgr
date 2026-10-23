@@ -1473,38 +1473,16 @@ generic-chain report {2026-10-22}: gntr shows 3 levels + ... entity_Gntr  (total
   McshWrdidxElln24oméya:2243  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
 
 === CYCLE (26) — chain loops back
-  McshHlth000002:3143  level2 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr
-  McshHlth000002:3173  level2 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr
-  McshHlth000002:3237  level1 HmbdAdrenalGland back to McshHlth000002:3237  || HmbdAdrenalGland_Gntr | OganGland_Gntr | GlndEndocrine_Gntr | ... entity_Gntr
-  McshNtr000007:416  level1 ChmcElry back to McshNtr000007:416  || chemical-element, chemical-compound!@McshNtr000006 | MtrlChemical_Gntr, mixture | material-body!@McshNtr000002 | body_Gntr, doing_Gntr, relation_Gntr | entity_Gntr
-  McshStn000007:266  level1 societyOgsm back to McshStn000007:266  || society-of-organisms, organization-of-organisms, group-of-organisms | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | self-dynamic-system!@McshCor000011#idSys009spc001 | material-body--system!@McshCor000011#idSys004 | material-body--whole-entity!@McshCor000008#idWhl003 | material-body!@McshNtr000002 | body_Gntr | entity_Gntr | ... entity_Gntr
-  McshStn000009:8308  level1 society back to McshStn000009:8308  || human-society, ogmHmnNo-society | society-of-organisms!@McshStn000007 | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | SystDynamic_Gntr | system_Gntr | whole-entity!@McshCor000008 | entity_Gntr | Sctn_Gntr | ... entity_Gntr | human_Gntr | Ogzn_Gntr | governace-system | satisfier-system | language_Gntr | tech_Gntr
-  McshStn000021:693  level2 society back to McshStn000009:8308  || human-society!@McshStn000009 | system-of-organisms!@McshStn000002 | biosystem!@McshOgm000002 | self-dynamic-system!@McshCor000011#idSys009spc001 | material-body--systemMcshCor000011#idSys004 | material-body--whole-entity!@McshCor000008#idWhl003 | material-body!@McshNtr000002 | body_Gntr | entity_Gntr
-  McshStn000031:13772  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000035:3723  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000036:196  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000037:2161  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000038:1864  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000039:2278  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000040:1645  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000041:1576  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000043:1659  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000044:1912  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000045:298  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshStn000046:282  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshStn000047:298  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshStn000048:5324  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshStn000049:534  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshStn000050:3844  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000051:453  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
+    level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
   McshTchInf000012:1443  level1 Jsndmc back to McshTchInf000012:1443  || Jsndmc_Gntr | Jsm_Gntr | ... entity_Gntr
   McshTchPrgm000003:2405  level1 Atomedtr back to McshTchPrgm000003:2405  || Atomedtr | code-editor-built-with-Electronjs | Jselapp_Gntr | computer-program!@McshTchPrgm000002#idOverview | Pgmgalgo_Gntr | doc_Gntr | infoBrain!@McshLag000002 | infoBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
 
 === EMPTY (4) — nothing (or only ...) after ===
-    
-  McshNtr000010:230  
-  McshOgm000007:989  
-  McshTchInf000012:1859  
 
 === OK (2428) — already level1..3 + ... entity_Gntr (or level1 is entity)
   (not listed)

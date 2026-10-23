@@ -1,0 +1,187 @@
+gntr-ref-to-gntr applied {2026-10-23}: in generic-tree:: name!@file#id → its X_Gntr
+
+=== REPLACED (89)
+  Mcsh000000:401  sensorial-concept-Mcs!@McshCor000002 → Mcs_Gntr
+  Mcsh000000:409  individual-worldview!@McshHmn000002#idHmnatt003 → Hmnsworldviewe_Gntr
+  Mcsh000000:418  senso-concept-Mcs!@McshCor000002 → Mcs_Gntr
+  McshCor000002:5167  informationBrain!@McshLag000003 → info_Gntr
+  McshCor000002:5169  model!@McshCor000012 → model_Gntr
+  McshCor000011:394  whole-entity!@McshCor000008 → whole_Gntr
+  McshCor000013:110  brain-info!@McshLag000002 → infoBrainBio_Gntr
+  McshCor000013:112  bio-info!@McshNtr000011 → infoBio_Gntr
+  McshCor000013:113  model!@McshCor000012#idOverview → model_Gntr
+  McshEdu000002:914  infoBrain!@McshLag000002 → infoBrainBio_Gntr
+  McshEdu000002:916  model!@McshCor000012#idOverview → model_Gntr
+  McshHlth000002:1082  node-of-system!@McshCor000011#idSysnodeF → Systnode_Gntr
+  McshHlth000008:463  bodyMtr!@McshNtr000002 → material_Gntr
+  McshHlth000008:1468  organism's-health!@McshHlth000007 → healthOgsm_Gntr
+  McshHlth000011:16735  DissImbalance!@McshHlth000011#idDssHmn226 → DissImbalance_Gntr
+  McshHlth000013:1187  foodHumn!@McshHlth000013 → food_Gntr
+  McshHlth000013:1480  foodHumn!@McshHlth000013 → food_Gntr
+  McshHlth000013:6105  foodHumn!@McshHlth000013 → food_Gntr
+  McshLag000002:204  bio-info!@McshNtr000011 → infoBio_Gntr
+  McshLag000002:205  model!@McshCor000012#idOverview → model_Gntr
+  McshLag000003:302  model!@McshCor000012#idOverview → model_Gntr
+  McshLag000005:170  model!@McshCor000012#idOverview → model_Gntr
+  McshLag000005:420  language-of-organisms!@McshLag000005 → Ogsm_lago_Gntr
+  McshLag000008:830  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000009:4322  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000010:315  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3 → Semuview_Gntr
+  McshLag000010:6011  alphabetic-language!@McshLag000008 → Alfa_lago_Gntr
+  McshLag000010:6012  oral-language!@McshLag000009 → Spch_lago_Gntr
+  McshLag000010:6014  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000011:30138  alphabetic-language!@McshLag000008 → Alfa_lago_Gntr
+  McshLag000011:30139  oral-language!@McshLag000009 → Spch_lago_Gntr
+  McshLag000011:30140  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000012:304  lagHmnm-semu-view!@McshLag000007#idLHmnmipt3 → Semuview_Gntr
+  McshLag000012:5206  alphabetic-language!@McshLag000008 → Alfa_lago_Gntr
+  McshLag000012:5207  oral-language!@McshLag000009 → Spch_lago_Gntr
+  McshLag000012:5209  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000014:197  information-resouce!@McshLag000013 → Infrsc_Gntr
+  McshLag000018:553  Hmnm_lago-semu-view!@McshLag000007#idLHmnmipt3 → Semuview_Gntr
+  McshLag000018:18595  written-language!@McshLag000008 → Alfa_lago_Gntr
+  McshLag000018:18596  oral-language!@McshLag000009 → Spch_lago_Gntr
+  McshLag000018:18597  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000019:156  information-resouce!@McshLag000013 → Infrsc_Gntr
+  McshLag000030:8103  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000031:194  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshLag000043:3693  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshNtr000011:116  model!@McshCor000012#idOverview → model_Gntr
+  McshOgm000002:236  whole-entity!@McshCor000008 → whole_Gntr
+  McshOgm000010:216  organism!@McshOgm000003 → Ogsm_Gntr
+  McshStn000002:362  biobody!@McshOgm000002 → bio_Gntr
+  McshStn000005:279  biosystem!@McshOgm000002 → bio_Gntr
+  McshStn000005:282  whole-entity!@McshCor000008 → whole_Gntr
+  McshStn000007:270  system-of-organisms!@McshStn000002 → SctnOgms_Gntr
+  McshStn000007:271  biosystem!@McshOgm000002 → bio_Gntr
+  McshStn000008:1246  organization-of-organisms!@McshStn000006 → oznOgsm_Gntr
+  McshStn000009:8312  society-of-organisms!@McshStn000007 → societyOgsm_Gntr
+  McshStn000009:8313  system-of-organisms!@McshStn000002 → SctnOgms_Gntr
+  McshStn000009:8314  biosystem!@McshOgm000002 → bio_Gntr
+  McshStn000009:8317  whole-entity!@McshCor000008 → whole_Gntr
+  McshStn000016:133  human-organization!@McshStn000008 → Ogzn_Gntr
+  McshStn000018:3827  international-organization!@McshStn000016 → ogznIntl_Gntr
+  McshStn000021:696  human-society!@McshStn000009 → society_Gntr
+  McshStn000021:697  system-of-organisms!@McshStn000002 → SctnOgms_Gntr
+  McshStn000021:698  biosystem!@McshOgm000002 → bio_Gntr
+  McshTchInf000005:567  human-mind-language!@McshLag000007 → Semuconj_Gntr
+  McshTchInf000005:572  model!@McshCor000012#idOverview → model_Gntr
+  McshTchInf000006:1510  computer-language!@McshTchInf000005 → Cmpr_lago_Gntr
+  McshTchInf000006:2494  sem-unit-of-Pgmg_lago!@McshTchInf000006#idLCpgmalgsunt → Pgmgalgo'Sunt_Gntr
+  McshTchInf000006:2881  sentence-of-Pgmg_lago!@McshTchInf000006#idLCpgmsntc → Pgmgsent_Gntr
+  McshTchInf000008:4027  computer-language!@McshTchInf000005 → Cmpr_lago_Gntr
+  McshTchInf000009:3920  concept-language!@McshTchInf000007 → Cnkn_lago_Gntr
+  McshTchInf000011:5162  JavaScript-programing-language!@McshTchInf000010 → Jsgn_lago_Gntr
+  McshTchInf000012:6372  Jsnd_lago-code-analysis-tool!@McshTchInf000012#idLJsndtolAns → JsndtoolCodeanalysis_Gntr
+  McshTchInf000017:9296  blockchain-network!@McshTchInf000016 → AgntBkcn_Gntr
+  McshTchInf000017:9297  cryptocurrency--blockchain-network!@McshTchInf000016#idDbcMoe → BkcnasstExvu_Gntr
+  McshTchInf000018:6656  blockchain-dApp!@McshTchInf000016#idDbcapp → Dapp_Gntr
+  McshTchInf000021:2719  blockchain-net'Dapp!@McshTchInf000016#idDbcapp → Dapp_Gntr
+  McshTchInf000021:3372  blockchain-network!@McshTchInf000016 → AgntBkcn_Gntr
+  McshTchInf000021:3373  chain-network!@McshTchInf000015 → Agntinfrsc_Gntr
+  McshTchInf000022:1604  blockchain-network!@McshTchInf000016 → AgntBkcn_Gntr
+  McshTchInf000022:1605  chain-network!@McshTchInf000015 → Agntinfrsc_Gntr
+  McshTchInf000024:1999  block-chain--app!@McshTchInf000016#idDbcapp → Dapp_Gntr
+  McshTchInf000024:4243  blockchain-network!@McshTchInf000016 → AgntBkcn_Gntr
+  McshTchInf000025:1219  blockchain-Dapp!@McshTchInf000016#idDbcapp → Dapp_Gntr
+  McshTchInf000030:4354  programing-language!@McshTchInf000006 → Pgmg_lago_Gntr
+  McshTchInf000031:2985  programing-language!@McshTchInf000006 → Pgmg_lago_Gntr
+  McshTchInf000031:2990  modelConceptStructured!@McshCor000002 → Mcs_Gntr
+  McshTchPrgm000003:2411  computer-program!@McshTchPrgm000002#idOverview → Cmprprgm_Gntr
+  McshTchPrgm000003:2414  infoBrain!@McshLag000002 → infoBrainBio_Gntr
+  McshTchPrgm000003:2416  model!@McshCor000012#idOverview → model_Gntr
+
+=== DROPPED-DUPLICATE (1) — X_Gntr already in the same === group; line removed
+  McshHlth000012:155  body!@McshNtr000002 → material_Gntr (already in group)
+
+=== NO-GNTR (90) — target has no generic-tree; left as is
+  Mcsh000000:411  semi monosemantic-worldview!@McshLag000003#idWldv012
+  Mcsh000000:415  sensorial-worldview!@McshLag000003#idWldv003
+  Mcsh000000:417  semi machine-readable-worldview!@McshLag000003#idWldv008
+  McshCor000002:2773  worldviewSensorial!@McshLag000003#idWldv003
+  McshCor000002:3523  worldview-management-tool!@McshLag000003#idWldvatt002
+  McshCor000018:1952  evaluatingBio!@McshCor000013#idBrngEvalg
+  McshEdu000002:913  knowledgeBrain!@McshLag000002#idInfBrnBioKldg
+  McshHlth000002:5333  positive-health-material!@McshHlth000008#idMtrHlthHmn001
+  McshHlth000002:11081  functingSysOrgnsHumn!@McshHlth000002#idSysOgnHmnftg
+  McshHlth000008:464  bodyMtrHumn!@McshHlth000002#idBdyHmnatt022
+  McshHlth000008:522  substance!@McshNtr000005#idSysMols008
+  McshHlth000008:524  body-system!@McshCor000011#idSys004
+  McshHlth000011:679  wellness!@McshHlth000008#idHlthHmnatt003
+  McshHlth000012:153  substance!@McshNtr000005#idSysMols008
+  McshHlth000014:795  antimicrobial!@McshHlth000014#idMedHmn030
+  McshHlth000019:5798  organism-managing-system!@McshCor000011#idSysMng001
+  McshLag000005:167  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshLag000005:168  method!@McshLag000003#idInfHmnBrn008
+  McshLag000007:1440  BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt
+  McshLag000007:21838  termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:21839  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:24738  termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000007:24739  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN
+  McshLag000007:25637  nameSemaso!@McshLag000007#idLHmnmname002
+  McshLag000009:626  main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn
+  McshLag000010:451  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000010:6013  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000011:435  lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000011:30137  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000012:438  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn
+  McshLag000012:5208  common-language!@McshLag000007#idLHmnmKmn
+  McshLag000018:403  Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl
+  McshLag000035:2613  polycentric-language!@McshLag000007#idLHmnm0031
+  McshLag000036:3054  polycentric-language!@McshLag000007#idLHmnm0031
+  McshNtr000002:503  body-system!@McshCor000011#idSys004
+  McshOgm000002:241  material-object!@McshNtr000005#idSysMols009
+  McshOgm000007:1906  cellEukariotic!@McshOgm000007#idCellOgm003
+  McshStn000004:454  managing-system-of-bio!@McshCor000011#idSysMng004
+  McshStn000007:272  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000007:273  material-body--system!@McshCor000011#idSys004
+  McshStn000007:274  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStn000014:1018  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000015:1261  economic-Ogzn!@McshStn000008#idOgznScdnSrpn
+  McshStn000019:914  stateless-society!@McshStn000009#idSocHumn026
+  McshStn000020:16701  policy!@McshStn000009#idSocadmndongPlc
+  McshStn000021:699  self-dynamic-system!@McshCor000011#idSys009spc001
+  McshStn000021:701  material-body--whole-entity!@McshCor000008#idWhl003
+  McshStnlaw000003:2298  binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016
+  McshTchInf000005:569  mapping-method!@McshCor000005#idRlnMpgmthd
+  McshTchInf000005:570  method!@McshLag000003#idInfHmnBrn008
+  McshTchInf000010:394  object-pmNo!@McshTchInf000010#idLJsgnopmN
+  McshTchInf000010:2260  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000010:3050  Number.prototype!@McshTchInf000010#idLJsgnNumberp
+  McshTchInf000010:3347  Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto
+  McshTchInf000010:3540  RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp
+  McshTchInf000010:3668  String.prototype!@McshTchInf000010#idLJsgnStringp
+  McshTchInf000010:7425  JavaScript-programing-language!@McshTchInf000010#idDescription
+  McshTchInf000011:85  Jsgn-archetype!@McshTchInf000010#idLJsgnarc
+  McshTchInf000011:4796  Jsgn-evaluation!@McshTchInf000010#idLJsgneval
+  McshTchInf000012:975  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1620  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:1811  Function.prototype!@McshTchInf000010#idLJsgnFunctionp
+  McshTchInf000012:7954  build-tool!@McshTchInf000012#idLJsndtolBld
+  McshTchInf000015:8700  ERC20-token!@McshTchInf000018#idEthevuCNErc20
+  McshTchInf000015:8701  utility-token!@McshTchInf000015#idAlgntevuUtlt
+  McshTchInf000016:6108  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:6282  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:7301  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:8384  Proof-of-work-network!@McshTchInf000016#idPownet
+  McshTchInf000016:10588  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:10590  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:10679  Proof-of-Stake-network!@McshTchInf000016#idPosnet
+  McshTchInf000016:10786  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:12282  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:13424  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:13970  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet
+  McshTchInf000016:14321  blockchain-network!@McshTchInf000016#idDescription
+  McshTchInf000016:15094  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig
+  McshTchInf000016:15338  dependent-bcnnet!@McshTchInf000016#idDbcDpt
+  McshTchInf000017:5494  exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt
+  McshTchInf000018:12882  Proof-of-work-blockchain-network!@McshTchInf000016#idPownet
+  McshTchInf000021:1289  blockchain!@McshTchInf000016#idDbddat
+  McshTchInf000021:1428  blockchain-net'block-explorer!@McshTchInf000016#idDbcbex
+  McshTchInf000021:2283  chain-net'voting!@McshTchInf000015#idAlgntgovvtg
+  McshTchInf000021:2578  blockchain-client!@McshTchInf000016#idDbcpgmClnt
+  McshTchInf000024:470  asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn
+  McshTchInf000030:395  Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd
+  McshTchInf000030:4352  compiled-language!@McshTchInf000006#idLSrcdCmpd
+  McshTchInf000030:4353  statically-typed-language!@McshTchInf000006#idLSrcdStctp
+  McshTchInf000031:2982  compiled--programing-language!@McshTchInf000006#idLSrcdCmpd

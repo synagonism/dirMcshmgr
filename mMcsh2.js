@@ -1467,12 +1467,25 @@ let fContainersInsert = function () {
     }
     function fAddLine(sHtmlIn) {
       oSpan.appendChild(document.createElement('br'))
-      oSpan.insertAdjacentHTML('beforeend', '* ' + sHtmlIn + ',')
+      oSpan.insertAdjacentHTML('beforeend', '* ' + sHtmlIn + (sHtmlIn === '===' ? '' : ','))
     }
 
-    // the-last generic above '...entity_Gntr'
+    // the-last generic above '...entity_Gntr'.
+    // IF it is entity (the-written chain is complete), start from level1 and recompute
+    // the-whole chain, to check that the-algo finds the-same chain.
     const aL = fLines(oP), nEnt = aL.findIndex(s => s.includes(sEnt))
-    let sLine = nEnt > 0 ? aL[nEnt - 1] : '', sUrlBase = sUrlPage
+    let sLine = nEnt > 0 ? aL[nEnt - 1] : '', sUrlBase = sUrlPage, bRecheck = false
+    if (fIsEntity(sLine)) {
+      const nSep = aL.lastIndexOf('===', nEnt)
+      const sL1 = nSep < 0 ? '' : (aL.slice(nSep + 1, nEnt).find(s => s.startsWith('*')) || '')
+      if (sL1 && !fIsEntity(sL1)) {
+        // the-recomputed chain goes AFTER '...entity_Gntr': '===', the-first generic looked, its chain
+        bRecheck = true
+        sLine = sL1
+        fAddLine('===')
+        fAddLine(sL1.replace(/^\*\s*/, '').replace(/,\s*$/, ''))
+      }
+    }
     for (let n = 0; n < 30 && sLine.startsWith('*') && !fIsEntity(sLine); n++) {
       const o = await fGntrOfLine(sLine, sUrlBase)
       if (!o) {
@@ -1493,6 +1506,12 @@ let fContainersInsert = function () {
     // reached entity ('===' above '...entity_Gntr': the-generic is entity) -> it is the-last line
     const bEntTop = fIsEntity(sLine) || sLine === '==='
     if (bEntTop) fAddLine(sEntTop)
+    if (bRecheck) {
+      // insert after the-'...entity_Gntr,' text
+      oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
+      oNode.after(oSpan)
+      return true
+    }
     // insert before the-<br> of the-'...entity_Gntr' line
     const oBr = oNode.previousSibling && oNode.previousSibling.nodeName === 'BR' ? oNode.previousSibling : oNode
     oBr.before(oSpan)

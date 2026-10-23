@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:\",<>/?.-⇒",
+    "editor.wordSeparators": "#'`~!@%^&*()=+[{]}\\|;:\",<>/?.-⇒",
     "editor.linkedEditing": true,
     "editor.stickyScroll.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
