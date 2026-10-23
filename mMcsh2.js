@@ -1392,8 +1392,15 @@ let fContainersInsert = function () {
     const oP = oNode.parentElement.closest('p')
     if (!oP || !oP.id.endsWith('gntr')) return false
     oSel.removeAllRanges()
-    const oOld = oP.querySelector('.clsGntrChain')
-    if (oOld) { fChainRemove(oOld); return true }
+    // the-chain of THIS '...entity_Gntr' is right after it; other '===' groups keep theirs
+    const oOld = oNode.nextSibling
+    if (oOld && oOld.classList && oOld.classList.contains('clsGntrChain')) { fChainRemove(oOld); return true }
+    // k: which '...entity_Gntr' of the-paragraph was clicked (0-based)
+    let k = 0
+    const oWalk = document.createTreeWalker(oP, NodeFilter.SHOW_TEXT)
+    for (let o = oWalk.nextNode(); o && o !== oNode; o = oWalk.nextNode()) {
+      if (o.textContent.includes(sEnt)) k++
+    }
 
     const
       oDocs = {},          // url-without-hash -> Document
@@ -1470,16 +1477,26 @@ let fContainersInsert = function () {
 
     // start from level1 (the-first generic of the-'===' group of '...entity_Gntr') and compute
     // the-whole chain, so it can be compared with the-written one
-    const
-      aL = fLines(oP),
-      nEnt = aL.findIndex(s => s.includes(sEnt)),
-      nSep = aL.lastIndexOf('===', nEnt)
+    // lines of the-paragraph WITHOUT chains inserted by other double-clicks
+    const oPClean = oP.cloneNode(true)
+    oPClean.querySelectorAll('.clsGntrChain').forEach(o => o.remove())
+    const aL = fLines(oPClean)
+    // the-line of the-k-th '...entity_Gntr'
+    let nEnt = -1
+    for (let n = 0, nK = 0; n < aL.length; n++) {
+      if (aL[n].includes(sEnt) && nK++ === k) { nEnt = n; break }
+    }
+    const nSep = aL.lastIndexOf('===', nEnt)
     let
       sLine = nSep < 0 ? '' : (aL.slice(nSep + 1, nEnt).find(s => s.startsWith('*')) || '==='),
       sUrlBase = sUrlPage
     fAddLine('===')
     if (sLine.startsWith('*') && !fIsEntity(sLine)) fAddLine(sLine.replace(/^\*\s*/, '').replace(/,\s*$/, ''))
     for (let n = 0; n < 30 && sLine.startsWith('*') && !fIsEntity(sLine); n++) {
+      if (!sLine.replace(/^\*\s*/, '').replace(/,\s*$/, '')) {
+        fAddLine('?? (empty generic line in <a class="clsPreview" href="' + sUrlBase + '">' + sUrlBase.split('#')[1] + '</a>)')
+        break
+      }
       const o = await fGntrOfLine(sLine, sUrlBase)
       if (!o) {
         // n === 0: the-line is already on the-page

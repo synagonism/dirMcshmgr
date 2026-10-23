@@ -5,12 +5,6 @@ generic-chain report {2026-10-22}: gntr shows 3 levels + ... entity_Gntr  (total
 === NO-ENTITY-END (3) — last line is not ... entity_Gntr; current → proposed
 
 === MULTI-GENERIC (236) — has lines not in the computed chain (2nd generic or other); not auto-changed
-  McshCor000002:2050  Mcsattr_Gntr | RltnAttributeThenEntity_Gntr | ... entity_Gntr
-      → Mcsattr_Gntr | ... entity_Gntr
-      extra: RltnAttributeThenEntity_Gntr
-  McshCor000002:2352  tree_node_chain_Gntr | Mcsattr_Gntr
-      → tree_node_chain_Gntr | ... entity_Gntr
-      extra: Mcsattr_Gntr
   McshCor000002:5162  concept_Gntr | infoSenso_Gntr | informationBrain!@McshLag000003 | infoBio_Gntr | model!@McshCor000012 | entity_Gntr
       → concept_Gntr | model_Gntr | system_Gntr | ... entity_Gntr
       extra: infoSenso_Gntr | informationBrain!@McshLag000003 | infoBio_Gntr | model!@McshCor000012 | entity_Gntr
