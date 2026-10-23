@@ -1361,9 +1361,9 @@ let fContainersInsert = function () {
   /**
    * created: {2026-10-23}
    * DOING: on double-click on '...entity_Gntr' of a-generic-tree (p#id..gntr),
-   *   inserts before it the-generic-chain from the-last generic above it up to entity.
+   *   shows after it '* ===', the-first generic of its group and the-chain computed from it
+   *   up to entity, to compare with the-written chain.
    *   The-chain lives in the-page only (until reload or another page).
-   *   IF the-chain ends with 'entity_Gntr (the-most-generic)', the-'...entity_Gntr' line is hidden.
    *   A-second double-click (on '...entity_Gntr' or on the-inserted entity line) removes it.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
    */
@@ -1377,10 +1377,8 @@ let fContainersInsert = function () {
       oRange = oSel.getRangeAt(0),
       oNode = oRange.startContainer
     if (oNode.nodeType !== Node.TEXT_NODE) return false
-    // remove an-inserted chain and show again its hidden '...entity_Gntr' line
+    // remove an-inserted chain
     function fChainRemove(oChainIn) {
-      const oHid = oChainIn.parentElement.querySelector('.clsGntrEntHide')
-      if (oHid) oHid.replaceWith(...oHid.childNodes)
       oChainIn.remove()
     }
     const oChainClicked = oNode.parentElement.closest('.clsGntrChain')
@@ -1470,22 +1468,17 @@ let fContainersInsert = function () {
       oSpan.insertAdjacentHTML('beforeend', '* ' + sHtmlIn + (sHtmlIn === '===' ? '' : ','))
     }
 
-    // the-last generic above '...entity_Gntr'.
-    // IF it is entity (the-written chain is complete), start from level1 and recompute
-    // the-whole chain, to check that the-algo finds the-same chain.
-    const aL = fLines(oP), nEnt = aL.findIndex(s => s.includes(sEnt))
-    let sLine = nEnt > 0 ? aL[nEnt - 1] : '', sUrlBase = sUrlPage, bRecheck = false
-    if (fIsEntity(sLine)) {
-      const nSep = aL.lastIndexOf('===', nEnt)
-      const sL1 = nSep < 0 ? '' : (aL.slice(nSep + 1, nEnt).find(s => s.startsWith('*')) || '')
-      if (sL1 && !fIsEntity(sL1)) {
-        // the-recomputed chain goes AFTER '...entity_Gntr': '===', the-first generic looked, its chain
-        bRecheck = true
-        sLine = sL1
-        fAddLine('===')
-        fAddLine(sL1.replace(/^\*\s*/, '').replace(/,\s*$/, ''))
-      }
-    }
+    // start from level1 (the-first generic of the-'===' group of '...entity_Gntr') and compute
+    // the-whole chain, so it can be compared with the-written one
+    const
+      aL = fLines(oP),
+      nEnt = aL.findIndex(s => s.includes(sEnt)),
+      nSep = aL.lastIndexOf('===', nEnt)
+    let
+      sLine = nSep < 0 ? '' : (aL.slice(nSep + 1, nEnt).find(s => s.startsWith('*')) || '==='),
+      sUrlBase = sUrlPage
+    fAddLine('===')
+    if (sLine.startsWith('*') && !fIsEntity(sLine)) fAddLine(sLine.replace(/^\*\s*/, '').replace(/,\s*$/, ''))
     for (let n = 0; n < 30 && sLine.startsWith('*') && !fIsEntity(sLine); n++) {
       const o = await fGntrOfLine(sLine, sUrlBase)
       if (!o) {
@@ -1506,24 +1499,9 @@ let fContainersInsert = function () {
     // reached entity ('===' above '...entity_Gntr': the-generic is entity) -> it is the-last line
     const bEntTop = fIsEntity(sLine) || sLine === '==='
     if (bEntTop) fAddLine(sEntTop)
-    if (bRecheck) {
-      // insert after the-'...entity_Gntr,' text
-      oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
-      oNode.after(oSpan)
-      return true
-    }
-    // insert before the-<br> of the-'...entity_Gntr' line
-    const oBr = oNode.previousSibling && oNode.previousSibling.nodeName === 'BR' ? oNode.previousSibling : oNode
-    oBr.before(oSpan)
-    if (bEntTop && oBr !== oNode) {
-      // hide the-'<br>* ...entity_Gntr,' line: the-chain already ends with entity
-      oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
-      const oHid = document.createElement('span')
-      oHid.className = 'clsGntrEntHide'
-      oHid.style.display = 'none'
-      oBr.before(oHid)
-      oHid.append(oBr, oNode)
-    }
+    // insert after the-'...entity_Gntr,' text
+    oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
+    oNode.after(oSpan)
     return true
   }
 

@@ -5,9 +5,6 @@ generic-chain report {2026-10-22}: gntr shows 3 levels + ... entity_Gntr  (total
 === NO-ENTITY-END (3) — last line is not ... entity_Gntr; current → proposed
 
 === MULTI-GENERIC (236) — has lines not in the computed chain (2nd generic or other); not auto-changed
-  McshCor000002:121  nameMcs_Gntr | nameMcsMind_Gntr | Mcsattr_Gntr | ... entity_Gntr
-      → nameMcs_Gntr | Mcsattr_Gntr | ... entity_Gntr
-      extra: nameMcsMind_Gntr
   McshCor000002:2050  Mcsattr_Gntr | RltnAttributeThenEntity_Gntr | ... entity_Gntr
       → Mcsattr_Gntr | ... entity_Gntr
       extra: RltnAttributeThenEntity_Gntr
@@ -1473,14 +1470,6 @@ generic-chain report {2026-10-22}: gntr shows 3 levels + ... entity_Gntr  (total
   McshWrdidxElln24oméya:2243  level1 "wordary_Gntr" has no gntr  || wordary_Gntr | ... entity_Gntr
 
 === CYCLE (26) — chain loops back
-  McshStn000046:282  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000047:298  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000048:5324  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000049:534  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshStn000050:3844  level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-    level2 society back to McshStn000009:8308  || society_Gntr | ... entity_Gntr
-  McshTchInf000012:1443  level1 Jsndmc back to McshTchInf000012:1443  || Jsndmc_Gntr | Jsm_Gntr | ... entity_Gntr
-  McshTchPrgm000003:2405  level1 Atomedtr back to McshTchPrgm000003:2405  || Atomedtr | code-editor-built-with-Electronjs | Jselapp_Gntr | computer-program!@McshTchPrgm000002#idOverview | Pgmgalgo_Gntr | doc_Gntr | infoBrain!@McshLag000002 | infoBio_Gntr | model!@McshCor000012#idOverview | entity_Gntr
 
 === EMPTY (4) — nothing (or only ...) after ===
 
