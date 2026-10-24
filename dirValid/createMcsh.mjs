@@ -68,25 +68,29 @@
  *   --nest: the-obvious Hvrw08 nesting-errors, same files as --headgap: a-whole
  *   whose parts from X on have its OWN level gets its </section> moved before X.
  *
+ *   --mainname: the-fix of MvrlMnnm01: a-main-name (after "!⇒") with "-" gets "_",
+ *   in every "!⇒X" and in its main-name-line; the-old form stays as a-synonym X!⇒X'.
+ *
  * INPUT: the-path of a-dirMcsh-worldview.
  * OUTPUT: dry-run by default: what it would do. With --fix it writes the-files,
  *   after it copies each one into dirValid/createMcsh-backup/<time>/.
  *   The-report goes to dirValid/createMcsh.txt.
  * RUN:
- *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest] [--fix]
+ *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname] [--fix]
  */
 
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
 import { fReadFileAllHitp } from './parserHitp.js'
-import { fReadFileMcsh, fStripTags } from './parserMcsh.js'
+import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
 import { rHeadArticle } from './structuralHitp.js'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-10-0.2026-10-24: --mainname, the-fix of MvrlMnnm01 no-hyphen',
     'createMcsh.mjs.0-9-0.2026-10-16: createMcsh.txt per kind, notes indented for folding',
     'createMcsh.mjs.0-8-0.2026-10-15: --nest, the-obvious Hvrw08 nesting errors',
     'createMcsh.mjs.0-7-0.2026-10-15: --headgap exempts law articles, law files included',
@@ -109,7 +113,9 @@ const
     FIXTITLE: 'a-typo description-title fixed',
     RENAME:   'the-name::-para id renamed to idName',
     HEADING:  'a-heading moved up (Hvrw07 gap)',
-    NEST:     'a-</section> moved up (Hvrw08 nesting)'
+    NEST:     'a-</section> moved up (Hvrw08 nesting)',
+    MAINNAME: 'a-name-line whose main-name got underscores (MvrlMnnm01)',
+    ADD:      "the-old main-name kept as a-synonym: X!⇒X'"
   },
   // the-dir of this script: the-report and the-backup go next to IT
   sDirScript = moPath.dirname(fileURLToPath(import.meta.url)),
@@ -769,6 +775,67 @@ function fPlanNest(sRawIn, sNameShortIn, oFileHitpIn) {
 }
 
 /**
+ * DOING: --mainname mode: the-fix of MvrlMnnm01 no-hyphen. A-main-name X (the-text
+ *   after "!⇒" in a-name-line) with "-" becomes X' with "_", as the-English names
+ *   were done (e-mail!⇒e_mail):
+ *   - every "!⇒X" of its McsLago, in every file → "!⇒X'",
+ *   - the-main-name-line "McshLago.X" of a-para that points to X → "McshLago.X'",
+ *     and right after it the-old form is KEPT as a-synonym: "McshLago.X!⇒X'"
+ *     (with the-!~PoS of the-main-line, if any).
+ *   Names that only CONTAIN X (ρήμα.ἀγανακτέω-ῶ) are other names: not changed.
+ *   A-main-name whose X' is a-name already in its McsLago is skipped by fMain.
+ * INPUT: oMapMainIn: 'Lago|X' → X' of the-main-names to change.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const fMainNew = (sLagoIn, sMainIn) => oMapMainIn.get(`${sLagoIn}|${sMainIn.trim()}`);
+
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const aName = aLine[nL].match(rNameLine);
+    if (!aName) continue;
+    const sLago = aName[1], sRest = aName[2];
+    const nStart = aName[0].length - 1 - sRest.length;
+    const nEnd = nStart + sRest.length;
+    const sName = sRest.split('!')[0].trim();
+
+    // every "!⇒X" → "!⇒X'"
+    let sRestNew = sRest.replace(/!⇒([^!]*)/g, (sAll, sMain) => {
+      const sMainNew = fMainNew(sLago, sMain);
+      return sMainNew ? '!⇒' + sMainNew : sAll;
+    });
+
+    // the-main-name-line: a-line of its para points to IT with "!⇒"
+    const aIns = [];
+    const sNameNew = fMainNew(sLago, sName);
+    if (sNameNew && !sRest.includes('!⇒')) {
+      let nOpen = nL, nClose = nL;
+      while (nOpen > 0 && !/<p\b/.test(aLine[nOpen])) nOpen--;
+      while (nClose < aLine.length - 1 && !aLine[nClose].includes('</p>')) nClose++;
+      const bPointed = aLine.slice(nOpen, nClose + 1).some(sLine => {
+        const aOther = sLine.match(rNameLine);
+        return aOther && aOther[1] === sLago &&
+          [...aOther[2].matchAll(/!⇒([^!]*)/g)].some(aM => aM[1].trim() === sName);
+      });
+      if (bPointed) {
+        sRestNew = sNameNew + sRestNew.slice(sRestNew.indexOf(sName) + sName.length);
+        const sPos = (sRest.match(/!~[^!]*/) ?? [''])[0];
+        aIns.push(aLine[nL].slice(0, nStart) + sName + sPos + '!⇒' + sNameNew + aLine[nL].slice(nEnd));
+      }
+    }
+    if (sRestNew === sRest) continue;
+
+    const sLineNew = aLine[nL].slice(0, nStart) + sRestNew + aLine[nL].slice(nEnd);
+    aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLineNew, ...aIns] });
+    aoNote.push(`MAINNAME ${sNameShortIn}:${nL + 1}  Mcsh${sLago}.${sRest}  ->  ${sRestNew}`);
+    for (const sIns of aIns) aoNote.push(`ADD    ${sNameShortIn}:${nL + 1}  ${fLineClean(sIns).trim()}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -796,15 +863,16 @@ async function fMain() {
   const bNameId = aArg.includes('--nameid');
   const bHeadGap = aArg.includes('--headgap');
   const bNest = aArg.includes('--nest');
-  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest].filter(Boolean).length > 1) {
-    console.error('--missing, --overview, --undated, --nameid, --headgap and --nest are separate runs: give one of them');
+  const bMainName = aArg.includes('--mainname');
+  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest, bMainName].filter(Boolean).length > 1) {
+    console.error('--missing, --overview, --undated, --nameid, --headgap, --nest and --mainname are separate runs: give one of them');
     process.exit(1);
   }
   if (!sNameDir) {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every Mvrw01-section');
@@ -815,6 +883,7 @@ async function fMain() {
     console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
+    console.log('  --mainname   MvrlMnnm01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt; with --fix also dirValid/createMcsh-backup/<time>/');
     process.exit(1);
@@ -857,7 +926,41 @@ async function fMain() {
   }
 
   let sCount;
-  if (bNest) {
+  if (bMainName) {
+    // all Mcsh-files read once: the-main-names to change, and every name for the-collisions
+    const aPath = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
+    const aRaw = aPath.map(sPath => moFs.readFileSync(sPath, 'utf8'));
+    const oSetName = new Set();
+    const oMapMainFirst = new Map(); // 'Lago|X' → the-first file:line pointing to X
+    aRaw.forEach((sRaw, nI) => sRaw.split('\n').forEach((sLine, nL) => {
+      const aName = sLine.match(rNameLine);
+      if (!aName) return;
+      oSetName.add(`${aName[1]}|${aName[2].split('!')[0].trim()}`);
+      for (const aM of aName[2].matchAll(/!⇒([^!]*)/g)) {
+        const sKey = `${aName[1]}|${aM[1].trim()}`;
+        if (aM[1].includes('-') && !oMapMainFirst.has(sKey)) {
+          oMapMainFirst.set(sKey, `${moPath.basename(aPath[nI], '.last.html')}:${nL + 1}`);
+        }
+      }
+    }));
+    const oMapMain = new Map();
+    for (const [sKey, sLoc] of oMapMainFirst) {
+      const [sLago, sMain] = sKey.split('|');
+      const sMainNew = sMain.replace(/-/g, '_');
+      if (oSetName.has(`${sLago}|${sMainNew}`)) {
+        aLineOut.push(`SKIP   ${sLoc}  Mcsh${sLago}.${sMain}: Mcsh${sLago}.${sMainNew} is a-name already`);
+        oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+        continue;
+      }
+      oMapMain.set(sKey, sMainNew);
+    }
+    aPath.forEach((sPath, nI) => {
+      const sNameShort = moPath.basename(sPath, '.last.html');
+      fWriteFile(sPath, aRaw[nI], sNameShort, fPlanMainName(aRaw[nI], sNameShort, oMapMain));
+    });
+    sCount = `${oMapMain.size} main-names with underscores · ${oCount.MAINNAME ?? 0} lines changed · ` +
+      `${oCount.ADD ?? 0} old forms kept as synonyms`;
+  } else if (bNest) {
     for (const oFile of fReadFileAllHitp(sNameDir)) {
       const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
       // the-files of --headgap: Mcsh*, and of the-Hitp* files only the-laws of dirStnlaw
@@ -944,7 +1047,7 @@ async function fMain() {
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  createMcsh${bMissing ? ' --missing' : ''}${bOverview ? ' --overview' : ''}` +
-      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''} ` +
+      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''}${bMainName ? ' --mainname' : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oCount.nFile} files ${bFix ? 'written' : 'to write'} · ${sCount} · ` +

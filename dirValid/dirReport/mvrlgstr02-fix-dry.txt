@@ -1,249 +1,79 @@
-MvrlGstr02 fix: G lists its specific S — 2026-10-22   DRY=true
+MvrlGstr02 fix: G lists its specific S — 2026-10-24   DRY=true
 
-warnings: 653 | generics G: 240 | specific-trees extended: 143 | new specific-trees: 48 | lines added: 970 | skipped: 49 | files (dry)
+warnings: 93 | generics G: 69 | specific-trees extended: 19 | new specific-trees: 46 | lines added: 337 | skipped: 5 | files (dry)
 
-=== ADDED-TO-SPECIFIC-TREE (143)
-  McshTchInf000016  idDbcwltsptr  Dblockchain_wallet_Gntr  += 2: Ddash-net'wallet!@McshTchInf000016#idDashwlt, Stemwalt!@McshTchInf000024#idSteemwlt   (from McshTchInf000016:13166, McshTchInf000024:2227)
-  McshTchInf000016  idDbcevuCsptr  appending-asset_Gntr  += 6: DashevuC!@McshTchInf000016#idDashevuC, LiskexvuC!@McshTchInf000016#idLskevuC, DvEOS!@McshTchInf000021#idEosevuEOS, Faircoin_currency!@McshTchInf000022#idFairnetevuC, …   (from McshTchInf000016:12896, McshTchInf000016:8542, McshTchInf000021:1861, …)
-  McshTchInf000016  idDbcEvusptr  BcnnetEvu_Gntr  += 2: AgntPivs!@McshTchInf000016#idPivxnet, AgntZcsh!@McshTchInf000016#idZecnet   (from McshTchInf000016:10587, McshTchInf000016:8294)
-  McshTchInf000016  idDbcnodsptr  Dblockchain_node_Gntr  += 2: Dcrdnode!@McshTchInf000016#idDcrnod, AgntEthr_node!@McshTchInf000018#idEthnod   (from McshTchInf000016:9262, McshTchInf000018:1397)
-  McshTchInf000015  idAlgntevuMoesptr  Agntexvu_Gntr  += 2: Bkcnexvu!@McshTchInf000016#idDbcevuMoe, DvLibra!@McshTchInf000028#idDnlbrtkn   (from McshTchInf000016:3234, McshTchInf000028:1684)
-  McshTchInf000015  idAlgntevuprcsptr  Agntasset_price_Gntr  += 2: Bkcnasset'price!@McshTchInf000016#idDbcprc, Agntexvu'price!@McshTchInf000015#idAlgntevuMoeprc   (from McshTchInf000016:1925, McshTchInf000015:4098)
-  McshCor000004  idDngsptr  doing_Gntr  += 2: Hmbddoing!@McshHlth000002#idBdyHmndong, Chmreaction!@McshNtr000013   (from McshHlth000002:13795, McshNtr000013:115)
-  McshHlth000002  idSysOgnHmnsptr  SystOrgans_Gntr  += 4: SystExcretory!@McshHlth000002#idSysOgnHmn012, SystCentralNervous!@McshHlth000019#idSysNrvsatt002, SystSkeletal!@McshHlth000005#idBdyHmn102, SystMuscular!@McshHlth000005#idBdyHmn331   (from McshHlth000002:12743, McshHlth000019:129, McshHlth000005:2849, …)
-  McshHlth000002  idGlndHmn002sptr  GlndExocrine_Gntr  += 1: GlndProstate!@McshHlth000002#idGlndHmn016   (from McshHlth000002:12194)
-  McshHlth000002  idBdyHmnatt002sptr  nodeBodyHumn_Gntr  += 5: palate!@McshHlth000002#idBdyHmn329, OganUvula!@McshHlth000002#idBdyHmn328, cheek!@McshHlth000002#idBdyHmn327, OganTooth!@McshHlth000002#idBdyHmn110, …   (from McshHlth000002:10215, McshHlth000002:10182, McshHlth000002:10146, …)
-  McshHlth000005  idMsclHmnsptr  OganMuscle_Gntr  += 1: muscleDiaphragm!@McshHlth000002#idMsclHmn022   (from McshHlth000002:9568)
-  McshHlth000011  idDssHmnsptr  disease_Gntr  += 1: DissThroatSore!@McshHlth000002#idBdyHmn220   (from McshHlth000002:8978)
-  McshHlth000002  idTissHmn008sptr  TissMuscle_Gntr  += 1: muscleMyocardium!@McshHlth000002#idHrtHmnatt005   (from McshHlth000002:6739)
-  McshHlth000002  idOgnHmnsptr  organ_Gntr  += 2: SystCirculatory'organ!@McshHlth000002#idSysOgnHmn002att002, OganSense!@McshHlth000019#idOgnHmn007   (from McshHlth000002:6495, McshHlth000019:1422)
-  McshNtr000007  idChmElrCalciumsptr  ChmcElrCa20_Gntr  += 1: calciumAtmHumn!@McshHlth000002#idBdyHmnatt015016   (from McshHlth000002:5753)
-  McshNtr000007  idChmElrIronsptr  ChmcElrFe26_Gntr  += 1: nutrientIron!@McshHlth000002#idBdyHmnatt015010   (from McshHlth000002:5470)
-  McshHlth000002  idGlndHmnsptr  OganGland_Gntr  += 1: HmbdSkinGland!@McshHlth000002#idGlndHmn009   (from McshHlth000002:2964)
-  McshTchInf000006  idLSrcdalgsptr  Srcdalgo_Gntr  += 1: Rust_lago_algo!@McshTchInf000030#idLRustalg   (from McshTchInf000030:2976)
-  McshTchInf000006  idLSrcdsctnsptr  Srcdalgosect_Gntr  += 1: Rustalgo'section!@McshTchInf000030#idLRustsctn   (from McshTchInf000030:2913)
-  McshTchInf000006  idLSrcdsntcsptr  Srcdsent_Gntr  += 1: Rust_lago_sentence!@McshTchInf000030#idLRustsntc   (from McshTchInf000030:2782)
-  McshTchInf000006  idLSrcdsuntFOprsptr  Srcd_lago_opr_Gntr  += 1: Rust_lago_opr!@McshTchInf000030#idLRustopr   (from McshTchInf000030:1798)
-  McshTchInf000006  idLSrcdsuntsptr  Srcd_lago_Sunt_Gntr  += 1: Rustsunt!@McshTchInf000030#idLRustsunt   (from McshTchInf000030:1211)
-  McshTchInf000006  idLSrcdwrdsptr  Srcdalgowork_Gntr  += 1: Rust_lago_word!@McshTchInf000030#idLRustwrd   (from McshTchInf000030:328)
-  McshTchInf000006  idLSrcdalgnodesptr  Srcd_lago_node_Gntr  += 1: Rust_lago_node!@McshTchInf000030#idLRustalgnode   (from McshTchInf000030:244)
-  McshLag000007  idLHmnm0033sptr  Cptg_lago_Gntr  += 1: Zhon_lago!@McshLag000018   (from McshLag000018:18575)
-  McshLag000007  idLHmnmverbmrfdrsptr  Hmnmverbmbrr_Gntr  += 1: verberZhon!@McshLag000018#idLZhonverbmrfdr   (from McshLag000018:12334)
-  McshLag000007  idLHmnmpronsptr  pronoun_Gntr  += 1: Zhonpron!@McshLag000018#idLZhonprn   (from McshLag000018:10922)
-  McshLag000007  idLHmnmnameTrmmrfrsptr  memberorHmnm_Gntr  += 6: Zhon_member_finder!@McshLag000018#idLZhonnameiflr, memberorEspo!@McshLag000012#idLEspotermiflr, memberorSngo!@McshLag000010#idL0014termiflr, Hmnmverbmbrr!@McshLag000007#idLHmnmverbmrfdr, …   (from McshLag000018:8027, McshLag000012:1875, McshLag000010:4839, …)
-  McshLag000007  idLHmnmuntsptr  HmnmUnit_Gntr  += 4: Zhon_unit!@McshLag000018#idLZhonunt, unitEspo!@McshLag000012#idLEspount, Sngu_unit!@McshLag000010#idL0014unt, Alfaunit!@McshLag000008#idL0016unt   (from McshLag000018:644, McshLag000012:392, McshLag000010:405, …)
-  McshLag000007  idLHmnmnodesptr  Hmnmnode_Gntr  += 7: Zhonnode!@McshLag000018#idLZhonnode, Esponode!@McshLag000012#idLEsponode, Sngunode!@McshLag000010#idL0014node, Spchnode!@McshLag000009#idL0017node, …   (from McshLag000018:611, McshLag000012:360, McshLag000010:373, …)
-  McshLag000007  idLHmnmsxtrsptr  syntax_Gntr  += 2: syntaxZhon!@McshLag000018#idLZhonsxtr, syntaxElln!@McshLag000020#idLEllnsxtr   (from McshLag000018:591, McshLag000020:169)
-  McshLag000007  idLHmnmipt3sptr  Semuview_Gntr  += 3: Zhonsemuview!@McshLag000018#idLZhonipt3, semasoEspo!@McshLag000012#idLEspoipt3, Sngu_logu_view!@McshLag000010#idL0014ipt3   (from McshLag000018:545, McshLag000012:300, McshLag000010:312)
-  McshLag000007  idLHmnmsmscnjsptr  Semuconj_Gntr  += 3: Zhonsemuconj!@McshLag000018#idLZhonsmscnj, ConjSmsEspo!@McshLag000012#idLEsposmscnj, Sngusemuconj!@McshLag000010#idL0014smscnj   (from McshLag000018:527, McshLag000012:279, McshLag000010:294)
-  McshLag000007  idLHmnmsmsvrbsptr  Semuverb_Gntr  += 4: Zhonsemuverb!@McshLag000018#idLZhonsmsvrb, Esposemuverb!@McshLag000012#idLEsposmsvrb, Sngusemuverb!@McshLag000010#idL0014smsvrb, Englsemuverb!@McshLag000011#idLEnglsmsvrb   (from McshLag000018:479, McshLag000012:256, McshLag000010:266, …)
-  McshLag000007  idLHmnmsmsondosptr  Semuargu_Gntr  += 1: Zhonsemuargu!@McshLag000018#idLZhonsmsnun   (from McshLag000018:438)
-  McshLag000007  idLHmnmsmscptsptr  Semucnpt_Gntr  += 2: Zhonsemucnpt!@McshLag000018#idLZhonsmscpt, Ellnsemucnpt!@McshLag000020#idLEllnsmscpt   (from McshLag000018:248, McshLag000020:134)
-  McshTchInf000010  idLJsgnmgosptr  Jsmgo_Gntr  += 5: Jso!@McshTchInf000010#idLJsgno, JsoArrayprototype!@McshTchInf000010#idLJsgnArrayp, JsndmcCoreUtil!@McshTchInf000012#idLJsndmcoUtil, JsndmcCoreHttp!@McshTchInf000012#idLJsndmcoHttp, …   (from McshTchInf000010:3288, McshTchInf000010:1116, McshTchInf000012:2953, …)
-  McshTchInf000010  idLJsgnosptr  Jso_Gntr  += 2: Jssut!@McshTchInf000010#idLJsgnsut, Jsbro!@McshTchInf000011#idLJsbro   (from McshTchInf000010:383, McshTchInf000011:896)
-  McshStnlaw000003  idLawEus017sptr  McshStnlaw000003#idLawEus017  += 2: EulawOpinion!@McshStnlaw000003#idLawEus024, EulawRecommedation!@McshStnlaw000003#idLawEus023   (from McshStnlaw000003:2418, McshStnlaw000003:2396)
-  McshTchInf000010  idLJsgnpgmsptr  Jsgnpgm_Gntr  += 2: Jsndpgm!@McshTchInf000012#idLJsndpgm, Jselapp!@McshTchInf000013#idLJselpgm   (from McshTchInf000012:4712, McshTchInf000013:1445)
-  McshTchInf000010  idLJsgnstcsptr  Jsgnsent_Gntr  += 1: Jsndsent!@McshTchInf000012#idLJsndstc   (from McshTchInf000012:3891)
-  McshTchInf000010  idLJsgnapiNtvsptr  JsapiNative_Gntr  += 1: JsndAPI!@McshTchInf000012#idLJsndapi   (from McshTchInf000012:3188)
-  McshTchInf000010  idLJsgnfsptr  Jsf_Gntr  += 2: Jsnd_lago_f!@McshTchInf000012#idLJsndf, Jsbrf!@McshTchInf000011#idLJsbrf   (from McshTchInf000012:314, McshTchInf000011:339)
-  McshTchInf000010  idLJsgnsutsptr  Jssut_Gntr  += 2: Jsndsut!@McshTchInf000012#idLJsndsut, Jsbrsut!@McshTchInf000011#idLJsbrsut   (from McshTchInf000012:258, McshTchInf000011:238)
-  McshTchInf000016  idDbcsptr  AgntBkcn_Gntr  += 3: Steem_net!@McshTchInf000024, Agnteos!@McshTchInf000021, AgntBtcn!@McshTchInf000017   (from McshTchInf000024:4222, McshTchInf000021:3362, McshTchInf000017:9291)
-  McshTchInf000015  idAlgntxsptr  AgntogznExch_Gntr  += 2: Stemexch!@McshTchInf000024#idSteemognExg, DvGEN'exchange-ogn!@McshTchInf000019#idDaostkgovcgenx   (from McshTchInf000024:3969, McshTchInf000019:3580)
-  McshTchInf000024  idSteemacntsptr  Stemacnt_Gntr  += 1: Steemit'account!@McshTchInf000024#idSteemitact   (from McshTchInf000024:3681)
-  McshTchInf000016  idDbcpgmsptr  Dblockchain_program_Gntr  += 2: Stemprgm!@McshTchInf000024#idSteempgm, Agnteos'program!@McshTchInf000021#idEospgm   (from McshTchInf000024:1054, McshTchInf000021:2441)
-  McshTchInf000016  idDbcevusptr  Bkcnasset_Gntr  += 1: Stemasset!@McshTchInf000024#idSteemast   (from McshTchInf000024:460)
-  McshTchInf000016  idDbctxsptr  Dblockchain_tx_Gntr  += 1: Stemtx!@McshTchInf000024#idSteemtx   (from McshTchInf000024:329)
-  McshTchInf000016  idDbcblksptr  Bkcnblock_Gntr  += 3: Stemblck!@McshTchInf000024#idSteemblk, Eoszblck!@McshTchInf000021#idEosblk, Frcnblck!@McshTchInf000022#idFairnetblk   (from McshTchInf000024:203, McshTchInf000021:1303, McshTchInf000022:830)
-  McshTchInf000016  idDbchmnsptr  Dblockchain_human_Gntr  += 1: Agnteos'human!@McshTchInf000021#idEoshmn   (from McshTchInf000021:2977)
-  McshTchInf000015  idDcntrtsptr  DeContract_Gntr  += 1: DcontractEos!@McshTchInf000021#idEospgmstct   (from McshTchInf000021:2606)
-  McshHlth000011  idDssHmn226sptr  DissImbalance_Gntr  += 1: DissNutrient!@McshHlth000011#idDssHmn026   (from McshHlth000011:16619)
-  McshHlth000011  idDssHmn272sptr  DissFctgPaining_Gntr  += 1: FctgPainingHead!@McshHlth000011#idDssHmn138   (from McshHlth000011:13683)
-  McshHlth000011  idDssHmn001sptr  DissInfectious_Gntr  += 1: DissFungal_infection!@McshHlth000011#idDssHmn190   (from McshHlth000011:11333)
-  McshTchInf000006  idLCpgmalgsctnsptr  Pgmgalgo'section_Gntr  += 1: Srcdalgosect!@McshTchInf000006#idLSrcdsctn   (from McshTchInf000006:2891)
-  McshTchInf000006  idLCpgmalgsuntsptr  Pgmgalgo'Sunt_Gntr  += 1: Srcd_lago_Sunt!@McshTchInf000006#idLSrcdsunt   (from McshTchInf000006:2436)
-  McshTchInf000006  idLCpgmalgwrdsptr  Prmgalgoword_Gntr  += 1: Srcdalgowork!@McshTchInf000006#idLSrcdwrd   (from McshTchInf000006:2271)
-  McshLag000008  idL0016ltrsptr  letter_Gntr  += 8: letterEspo!@McshLag000012#idLEspoltr, Sngu_letr!@McshLag000010#idL0014ltr, Hiurletr!@McshLag000037#idLHiurltr, Slv0letr!@McshLag000038#idLSlv0ltr, …   (from McshLag000012:1182, McshLag000010:1314, McshLag000037:1375, …)
-  McshTchInf000019  idDeOznskhrsptr  OgznDao'stakeholder_Gntr  += 3: eosDAC'stakeholder!@McshTchInf000019#idEosdacskhr, DAOstack'stakeholder!@McshTchInf000019#idDaostkskhr, DoAragon'stakeholder!@McshTchInf000019#idArgnskhr   (from McshTchInf000019:4455, McshTchInf000019:3235, McshTchInf000019:2664)
-  McshTchInf000018  idEthdapsptr  DappEth_Gntr  += 1: DAOstack'Alchemy!@McshTchInf000019#idDaostkAlcm   (from McshTchInf000019:4159)
-  McshTchInf000019  idEthdaosptr  DoEth_Gntr  += 1: Aragon_client!@McshTchInf000019#idArgnclnt   (from McshTchInf000019:2807)
-  McshTchInf000016  idDbccsasptr  Dblockchain_appending_algo_Gntr  += 2: Frcnpoco!@McshTchInf000022#idFairnetpoc, Ethrcalg!@McshTchInf000018#idEthcsa   (from McshTchInf000022:975, McshTchInf000018:2329)
-  McshCor000010  idQntSmssptr  attSemuNumber_Gntr  += 1: VerbCptAttNumber!@McshLag000007#idLHmnmsmsvrbattNbr   (from McshLag000007:4155)
-  McshLag000002  idInfBrnBioBrnnsptr  infoBrainInBio_Gntr  += 1: Semuinfo!@McshLag000007#idLHmnmsmsinf   (from McshLag000007:1102)
-  McshCor000002  idMcsvsptr  Mcsview_Gntr  += 1: HmnmSensoMindView!@McshLag000007#idLHmnmipt2   (from McshLag000007:956)
-  McshLag000003  idInfHmnMind002sptr  viewMind_Gntr  += 1: HmnmMindView!@McshLag000007#idLHmnmipt1   (from McshLag000007:885)
-  McshTchInf000010  idLJsgnsptr  Jsgn_lago_Gntr  += 1: Jsbr_lago!@McshTchInf000011   (from McshTchInf000011:5152)
-  McshTchInf000010  idLJsgnapisptr  Jsapi_Gntr  += 2: JsbrApi!@McshTchInf000011#idLJsbrapi, Jsel_lago_API!@McshTchInf000013#idLJselapi   (from McshTchInf000011:1403, McshTchInf000013:166)
-  McshHmn000002  idHmnatt003sptr  Hmnsworldviewe_Gntr  += 1: Mws!@Mcsh000000   (from Mcsh000000:397)
-  McshLag000003  idWldv005sptr  worldviewMind_Gntr  += 1: Mws!@Mcsh000000   (from Mcsh000000:397)
-  McshLag000003  idWldv003sptr  McshLag000003#idWldv003  += 2: Mws!@Mcsh000000, Mcswv!@McshCor000002#idMcswv   (from Mcsh000000:397, McshCor000002:2762)
-  McshCor000002  idMcsmsptr  Mcsmgr_Gntr  += 1: Mws'management-tool!@Mcsh000000#idMwstool   (from Mcsh000000:224)
-  McshCor000002  idMcsmdongsptr  Mcsmgrdong_Gntr  += 2: AAj'doing!@McshCor000002#idMcsmAajdong, Mcshmgr'doing!@McshTchInf000009#idLMcshmngrdong   (from McshCor000002:3921, McshTchInf000009:3227)
-  McshTchInf000039  idLKnlgmngrsptr  KnlgMngr_Gntr  += 1: Mcsmgr!@McshCor000002#idMcsm   (from McshCor000002:3506)
-  McshCor000011  idSys002nodepthsptr  tree_node_chain_Gntr  += 1: Mcsgenchn!@McshCor000002#idMcsattGncchn   (from McshCor000002:2350)
-  McshEdu000005  idSMath002sptr  mathAppliedNo_Gntr  += 5: mathTopology!@McshEdu000005#idSMath013, mathLogic!@McshEdu000005#idSMath009, mathGeometry!@McshEdu000005#idSMath007, mathAnalysis!@McshEdu000005#idSMath021, …   (from McshEdu000005:8146, McshEdu000005:7156, McshEdu000005:7021, …)
-  McshTchInf000012  idLJsndpkgjsnsptr  Pckgjson_Gntr  += 1: Jselapppckgjson!@McshTchInf000013#idLJselpgmpkgjsn   (from McshTchInf000013:1298)
-  McshTchInf000010  idLJsgnalgsptr  Jsalgo_Gntr  += 1: Jselalgo!@McshTchInf000013#idLJselalg   (from McshTchInf000013:93)
-  McshTchInf000015  idAlgntlawsptr  AnLaw_Gntr  += 1: lawAnasset!@McshTchInf000015#idAlgntevulaw   (from McshTchInf000015:2189)
-  McshCor000013  idBrngWntgsptr  FctgWantingBio_Gntr  += 1: wanting!@McshCor000018#idBrngHmnFct004001   (from McshCor000018:4132)
-  McshCor000013  idBrngEvalgsptr  McshCor000013#idBrngEvalg  += 1: FctgEvaluating!@McshCor000018#idBrngHmnFct002Evalg   (from McshCor000018:1947)
-  McshCor000013  idBrngThkgsptr  FctgThinkingBio_Gntr  += 1: FctgThinking!@McshCor000018#idBrngHmnFct002   (from McshCor000018:1118)
-  McshLag000007  idLHmnmdongsptr  HmnmLogoView'doing_Gntr  += 1: Spch_lago'doing!@McshLag000009#idL0017dong   (from McshLag000009:4175)
-  McshLag000007  idLHmnmwrdsptr  word_Gntr  += 2: Spchword!@McshLag000009#idL0017wrd, Alfa_lago_word!@McshLag000008#idL0016wrd   (from McshLag000009:3980, McshLag000008:628)
-  McshStn000020  idEuwkrsptr  Euzzworker_Gntr  += 1: EuwGvc!@McshStn000020#idEuzzadmnwkr   (from McshStn000020:16388)
-  McshHmn000002  idHmn016sptr  HumnCitizen_Gntr  += 1: Euhmbr!@McshStn000020#idSocEuzztt008   (from McshStn000020:113)
-  McshTchInf000016  idDbcdatsptr  Dblockchain_Gntr  += 1: Btcnchain!@McshTchInf000017#idBtcbcn   (from McshTchInf000017:1480)
-  McshHlth000007  idHlthOgmsptr  healthOgsm_Gntr  += 1: health!@McshHlth000008   (from McshHlth000008:1454)
-  McshNtr000002  idMtrlsptr  material_Gntr  += 2: MtrlHlth!@McshHlth000008#idHlthHmnatt005, SystMolsHumn!@McshOgm000005#idSysMolsHmn   (from McshHlth000008:452, McshOgm000005:235)
-  McshHmn000002  idHmnsptr  human_Gntr  += 1: health'human!@McshHlth000008#idHlthHmnatt001   (from McshHlth000008:56)
-  McshHlth000013  idFoodHmn050sptr  foodCooked_Gntr  += 2: foodBean_soup!@McshHlth000013#idFoodHmn182, foodLentils!@McshHlth000013#idFoodHmn115   (from McshHlth000013:8764, McshHlth000013:8720)
-  McshStn000010  idSfrHmnsptr  satisfier_Gntr  += 3: food!@McshHlth000013, sfrFin!@McshStn000029, tech!@McshTch000002   (from McshHlth000013:870, McshStn000029:166, McshTch000002:522)
-  McshOgm000005  idSysMolsHmn004sptr  BodyHumn'product_Gntr  += 2: salivaHumn!@McshOgm000005#idSysMolsHmn018, SystMolsHumnRelsHrmn!@McshOgm000005#idSysMolsHmn016   (from McshOgm000005:938, McshOgm000005:892)
-  McshOgm000003  idOgmsptr  Ogsm_Gntr  += 1: ogmPlant!@McshOgm000010   (from McshOgm000010:213)
-  McshStn000008  idOgznatt001sptr  admnOgzn_Gntr  += 1: Cmpnadmn!@McshStn000015#idOznPdnatt002   (from McshStn000015:714)
-  McshStn000008  idOgznatt018sptr  Ogzn'node_Gntr  += 1: OgznPrdg'node!@McshStn000015#idOznPdnatt025   (from McshStn000015:138)
-  McshTchInf000007  idLCnkntsptr  Cnkn_lago_Gntr  += 1: Mcsh_lago!@McshTchInf000009   (from McshTchInf000009:3914)
-  McshTchInf000015  idDcnetMoesptr  netAlgoCurrency_Gntr  += 1: DnDiem!@McshTchInf000028   (from McshTchInf000028:2679)
-  McshTchInf000015  idAlgntnodApdrsptr  DnodeAppender_Gntr  += 1: DnDiem_validator!@McshTchInf000028#idDnlbrnodeVdtr   (from McshTchInf000028:605)
-  McshCor000007  idSpcDrcnsptr  space_direction_Gntr  += 1: DongargtDireSpace!@McshCor000004   (from McshCor000004:484)
-  McshCor000004  idDngFctgsptr  functing_Gntr  += 1: FctgBrainingBio!@McshCor000013   (from McshCor000013:499)
-  McshNtr000011  idInfBiosptr  infoBio_Gntr  += 2: info!@McshLag000003, infoBrainBio!@McshLag000002   (from McshLag000003:297, McshLag000002:201)
-  McshCor000005  idRlnMpgsptr  RltnMapping_Gntr  += 1: RltnReferent!@McshLag000003#idInfHmnatt002   (from McshLag000003:85)
-  McshLag000006  idCharCmrsptr  computer-char_Gntr  += 1: charUncd!@McshLag000006#idCharUcd   (from McshLag000006:3524)
-  McshCor000010  idQntNbrsptr  number_Gntr  += 1: Uccp!@McshLag000006#idCharUcdstdcp   (from McshLag000006:1832)
-  McshLag000007  idLHmnmsptr  Hmnm_lago_Gntr  += 3: Turk_lago!@McshLag000030, Kora_lago!@McshLag000043, Cmpr_lago!@McshTchInf000005   (from McshLag000030:8095, McshLag000043:3690, McshTchInf000005:564)
-  McshLag000007  idLHmnmconjsptr  Hmnmconj_Gntr  += 1: Turkconj!@McshLag000030#idLTurkconj   (from McshLag000030:7819)
-  McshNtr000004  idMol013sptr  molPolymer_Gntr  += 1: MolProtein!@McshOgm000006   (from McshOgm000006:984)
-  McshNtr000006  idCmpAcd003sptr  acidCarboxylic_Gntr  += 2: acidAmin!@McshOgm000006#idPrtnOgmatt003, acidFatty!@McshNtr000006#idChmOgc004   (from McshOgm000006:80, McshNtr000006:328)
-  McshTchInf000005  idLCmprsptr  Cmpr_lago_Gntr  += 1: Hitp_lago!@McshTchInf000008   (from McshTchInf000008:4016)
-  McshStnlaw000002  idLawsptr  law_Gntr  += 1: HitpLaw!@McshTchInf000008#idLHitpwbpLaw   (from McshTchInf000008:3190)
-  McshCor000003  idEntattsptr  attribute_Gntr  += 1: doingNo!@McshCor000003#idEntDngN   (from McshCor000003:6396)
-  McshCor000009  idGnrcCntsptr  discreteNo_entity_Gntr  += 2: time!@McshCor000006, space!@McshCor000007   (from McshCor000006:389, McshCor000007:827)
-  McshCor000011  idSyssptr  system_Gntr  += 1: model!@McshCor000012   (from McshCor000012:437)
-  McshCor000011  idSys009sptr  SystDynamic_Gntr  += 1: SystNet!@McshCor000014   (from McshCor000014:183)
-  McshCor000012  idMdlatt016sptr  McshCor000012#idMdlatt016  += 1: DongReferenting!@McshCor000020   (from McshCor000020:146)
-  McshLag000002  idInfBrnBioKldgsptr  McshLag000002#idInfBrnBioKldg  += 1: science!@McshEdu000002   (from McshEdu000002:910)
-  McshHlth000002  idOgnHmn013sptr  OganVessel_Gntr  += 1: vesselBrain!@McshHlth000003#idBrnHmnatt055   (from McshHlth000003:3216)
-  McshCor000003  idEntevogtmptsptr  Enttstate_Gntr  += 2: healthBio!@McshHlth000006, healthOgsm!@McshHlth000007   (from McshHlth000006:384, McshHlth000007:174)
-  McshHlth000016  idThrpHmnsptr  therapy_Gntr  += 1: DongExercising!@McshHlth000018   (from McshHlth000018:157)
-  McshNtr000006  idChmCpdsptr  ChmcCpd_Gntr  += 1: ChmcElry!@McshNtr000007   (from McshNtr000007:416)
-  McshCor000012  idMdlsptr  model_Gntr  += 1: infoBio!@McshNtr000011   (from McshNtr000011:113)
-  McshCor000004  idDngActgsptr  acting_Gntr  += 1: force!@McshNtr000012   (from McshNtr000012:159)
-  McshOgm000002  idBiosptr  bio_Gntr  += 1: SctnOgms!@McshStn000002   (from McshStn000002:357)
-  McshCor000011  idSysMng004sptr  McshCor000011#idSysMng004  += 1: AdmnSctn!@McshStn000004   (from McshStn000004:451)
-  McshLag000005  idLagsptr  Ogsm_lago_Gntr  += 1: SoctOgsm'language!@McshStn000007#idSocOgmatt009   (from McshStn000007:207)
-  McshStn000006  idOznOgmsptr  oznOgsm_Gntr  += 1: Ogzn!@McshStn000008   (from McshStn000008:1235)
-  McshStn000008  idOgznsptr  Ogzn_Gntr  += 1: ogznIntl!@McshStn000016   (from McshStn000016:130)
-  McshStn000016  idOgznIntlsptr  ogznIntl_Gntr  += 1: ogznUn!@McshStn000018   (from McshStn000018:3824)
-  McshTchInf000039  idLKnlg014vocsptr  Rdfvoc_Gntr  += 1: scmo!@McshStn000023   (from McshStn000023:21618)
-  McshStn000009  idSocHumnsptr  society_Gntr  += 17: SocChna!@McshStn000031, SocItla!@McshStn000035, SocDeut!@McshStn000036, SocFrac!@McshStn000037, …   (from McshStn000031:13772, McshStn000035:3723, McshStn000036:196, …)
-  McshLag000003  idInfHmnsptr  info_Gntr  += 1: law!@McshStnlaw000002   (from McshStnlaw000002:1261)
-  McshTch000002  idTchsptr  tech_Gntr  += 1: techInfo!@McshTchInf000002   (from McshTchInf000002:674)
-  McshTchInf000002  idTchInfsptr  techInfo_Gntr  += 1: techFin!@McshTchInf000004   (from McshTchInf000004:113)
-  McshTchInf000018  idEthevuCNsptr  EthrassetCN_Gntr  += 1: ExvuTIME!@McshTchInf000020#idChbtmt   (from McshTchInf000020:2148)
-  McshTchInf000016  idBpmnetsptr  BkcnserviceSmct_Gntr  += 1: Neo_net!@McshTchInf000027   (from McshTchInf000027:221)
-  McshTchInf000005  idLtdocsptr  Tdoc_lago_Gntr  += 1: Html_lago!@McshTchInf000035   (from McshTchInf000035:464)
-  McshTchInf000003  idCmratt004Softsptr  Softinterface_Gntr  += 1: Softapi!@McshTchInf000037   (from McshTchInf000037:163)
-  McshTchInf000013  idLJselpgmsptr  Jselapp_Gntr  += 1: Vscode!@McshTchInf000041   (from McshTchInf000041:6130)
-  McshTchPrgm000002  idCpgm003sptr  prgmOs_Gntr  += 1: Winos!@McshTchPrgm000005   (from McshTchPrgm000005:696)
-  McshLag000006  idCharUcdsptr  charUncd_Gntr  += 276: Ucbk.0..127'char!@McshUcdU0000#idU0000chr, Ucbk.128..255'char!@McshUcdU0080#idU0080chr, Ucbk.256..383'char!@McshUcdU0100#idU0100chr, Ucbk.384..591'char!@McshUcdU0180#idU0180chr, …   (from McshUcdU0000:69, McshUcdU0080:68, McshUcdU0100:68, …)
+=== ADDED-TO-SPECIFIC-TREE (19)
+  McshCor000004  idDngFctgsptr  functing_Gntr  += 1: menstruation!@McshHlth000002#idBdyHmn031   (from McshHlth000002:12774)
+  McshHlth000002  idTissHmn005sptr  TissConnective_Gntr  += 1: TissBone!@McshHlth000002#idTissHmn004   (from McshHlth000002:4601)
+  McshStn000015  idOznPdnsptr  OgznPrdg_Gntr  += 2: EoszogznBlockone!@McshTchInf000021#idEosognBkon, ogznFin!@McshStn000028   (from McshTchInf000021:3198, McshStn000028:115)
+  McshStnlaw000002  idLawsptr  law_Gntr  += 1: AnLaw!@McshTchInf000015#idAlgntlaw   (from McshTchInf000015:10072)
+  McshCor000011  idSys001strrsptr  sequence_Gntr  += 1: Treenodepath!@McshCor000011#idSys002nodepth   (from McshCor000011:1696)
+  McshHlth000010  idDssOgmsptr  DissOgsm_Gntr  += 1: disease!@McshHlth000011   (from McshHlth000011:672)
+  McshHlth000016  idThrpHmnsptr  therapy_Gntr  += 1: disease!@McshHlth000011   (from McshHlth000011:672)
+  McshHlth000004  idCellHmnsptr  cell_Gntr  += 1: ogmCellOne!@McshOgm000007#idOgm003   (from McshOgm000007:1956)
+  McshEdu000002  idScisptr  science_Gntr  += 2: SciMind!@McshEdu000009, techAI!@McshTchInf000036   (from McshEdu000009:150, McshTchInf000036:4990)
+  McshHlth000002  idBdyHmnatt015sptr  nutrient_Gntr  += 1: food-nutrient!@McshHlth000013#idFoodHmnatt003   (from McshHlth000013:183)
+  McshLag000007  idLHmnmsmscnjsptr  Semuconj_Gntr  += 5: Spch_lago!@McshLag000009, Turk_lago!@McshLag000030, Gstr_lago!@McshLag000031, Kora_lago!@McshLag000043, …   (from McshLag000009:4325, McshLag000030:8109, McshLag000031:192, …)
+  McshNtr000006  idChmCpdsptr  ChmcCpd_Gntr  += 1: antioxidantHumn!@McshOgm000005#idSysMolsHmn023   (from McshOgm000005:1192)
+  McshHlth000009  idHlthStnsptr  healthStn_Gntr  += 1: SctnOgms'health!@McshStn000002#idStnOgmatt003   (from McshStn000002:202)
+  McshOgm000002  idBiosptr  bio_Gntr  += 1: groupOgsm!@McshStn000005   (from McshStn000005:276)
+  McshHmn000002  idHmnsptr  human_Gntr  += 1: society!@McshStn000009   (from McshStn000009:8325)
+  McshTchInf000016  idDbcsptr  AgntBkcn_Gntr  += 1: Agntbksk!@McshTchInf000026#idBkskBcnet   (from McshTchInf000026:216)
+  McshTchInf000005  idLCmpr006sptr  lagDtrp_Gntr  += 1: Json_lago!@McshTchInf000029   (from McshTchInf000029:604)
+  McshCor000008  idWhl001SetdongIsnsptr  set_Gntr  += 1: Website!@McshTchInf000040#idWwwsite   (from McshTchInf000040:665)
+  McshLag000003  idInfHmnSrl001sptr  doc_Gntr  += 1: Cmprprgm!@McshTchPrgm000002   (from McshTchPrgm000002:303)
 
-=== NEW-SPECIFIC-TREE (48)
-  McshTchInf000015  idAlgntevuMoeNsptr  DcurrencyNo_Sptr (G had no trees)  with 1: BkcnexvuNo!@McshTchInf000016#idDbcevuMoeN
-  McshHlth000019  idOgnHmn007sptr  OganSense_Sptr  with 2: HmbdTasteBud!@McshHlth000002#idBdyHmn446, olfactory-mucous!@McshHlth000019#idSysNrvsatt071
-  McshCor000011  idSysnodeFsptr  Sysnode_Sptr (G had no trees)  with 1: nodeBodyHumn!@McshHlth000002#idBdyHmnatt002
-  McshTchInf000030  idLRustsuntSrtsptr  Rust_lago_struct_Sptr (G had no trees)  with 1: Rust_lago_Vec!@McshTchInf000030#idLRustalgStdpldVec
-  McshTchInf000006  idLSrcdphrssptr  Srcdphrs_Sptr  with 1: Rustalgo'phrase!@McshTchInf000030#idLRustphrs
-  McshTchInf000006  idLSrcduntsptr  Srcalgounit_Sptr  with 1: Rustalgo'unit!@McshTchInf000030#idLRustunt
-  McshTchInf000006  idLSrcdarchsptr  Srcd_lago_archetype_Sptr  with 1: Rust_lago'archetype!@McshTchInf000030#idLRustarch
-  McshTchInf000010  idLJsgnFunctionpsptr  JsFunction.prototype_Sptr (G had no trees)  with 6: JsgnfObjectmebr!@McshTchInf000010#idLJsgnObjectmebr, Jsf!@McshTchInf000010#idLJsgnf, jsfFunction!@McshTchInf000010#idLJsgnFunction, JsndmcCoreFStream!@McshTchInf000012#idLJsndmcfStream, …
-  McshTchInf000010  idLJsgnfCsrsptr  Jsfconstructor_Sptr  with 1: JsoConstructor!@McshTchInf000010#idLJsgnoCsr
-  McshTchInf000010  idLJsgnNumberpsptr  JsoNumberprototype_Sptr (G had no trees)  with 1: Jsn!@McshTchInf000010#idLJsgnn
-  McshTchInf000010  idLJsgnArraypsptr  JsoArrayprototype_Sptr  with 1: Jsa!@McshTchInf000010#idLJsgna
-  McshStnlaw000003  idLawEus012sptr  EulawLegislativeNo_Sptr (G had no trees)  with 3: EulawImplementing!@McshStnlaw000003#idLawEus022, EulawDelegated!@McshStnlaw000003#idLawEus013, EulawSlit!@McshStnlaw000003#idLawEus021
-  McshStnlaw000003  idLawEus016sptr  EulawBinding_Sptr (G had no trees)  with 3: EulawDecision!@McshStnlaw000003#idLawEus020, EulawDirective!@McshStnlaw000003#idLawEus019, EulawRegulation!@McshStnlaw000003#idLawEus018
-  McshTchInf000012  idLJsndtolBldsptr  JsndtoolBuild_Sptr (G had no trees)  with 1: NpmpkgJake!@McshTchInf000012#idLJsndpkgJake
-  McshTchInf000012  idLJsndtolAnssptr  JsndtoolCodeanalysis_Sptr  with 1: NpmpkgEslint!@McshTchInf000012#idLJsndpkgEslint
-  McshTchInf000016  idDbcappsptr  Dapp_Sptr  with 3: Stemdapp!@McshTchInf000024#idSteemdap, Deos_Dapp!@McshTchInf000021#idEospgmApp, DappEth!@McshTchInf000018#idEthdap
-  McshTchInf000016  idDbcnodApdrsptr  BkcnnodeApdr_Sptr  with 1: Stemwitness!@McshTchInf000024#idSteemnodWtns
-  McshHlth000011  idDssHmn007sptr  DissIntegumentary_system_Sptr (G had no trees)  with 1: DissCholesterol!@McshHlth000011#idDssHmn015
-  McshHlth000011  idDssHmn068sptr  DissLeucocyte_Sptr  with 1: DissLeukemia!@McshHlth000011#idDssHmn069
-  McshHlth000011  idDssHmn057sptr  DissBlood_Sptr  with 3: DissHypertension!@McshHlth000011#idDssHmn042, DissLeucocyte!@McshHlth000011#idDssHmn068, DissHaemophilia!@McshHlth000011#idDssHmn198
-  McshHlth000011  idDssHmn198sptr  DissHaemophilia_Sptr  with 1: DissBlood!@McshHlth000011#idDssHmn057
-  McshHlth000008  idHlthHmnatt003sptr  disorderNo_Sptr (G had no trees)  with 1: disease!@McshHlth000011
-  McshTchInf000006  idLCpgmsntcsptr  Pgmgsent_Sptr  with 1: Srcdsent!@McshTchInf000006#idLSrcdsntc
-  McshTchInf000006  idLCpgmalgphrssptr  Pgmgphrase_Sptr  with 1: Srcdphrs!@McshTchInf000006#idLSrcdphrs
-  McshTchInf000006  idLCpgmalguntsptr  Pgmgunit_Sptr  with 1: Srcalgounit!@McshTchInf000006#idLSrcdunt
-  McshTchInf000006  idLCpgmarchcdsptr  Pgmg_lago'archo_code_Sptr (G had no trees)  with 1: Srcdarchcode!@McshTchInf000006#idLSrcdarchcd
-  McshTchInf000006  idLCpgmarchsptr  Pgmg_lago'archo_Sptr (G had no trees)  with 1: Srcd_lago_archetype!@McshTchInf000006#idLSrcdarch
-  McshLag000007  idLHmnmuntNmMnsptr  unitNameMain_Sptr (G had no trees)  with 3: Espo_lago-unit.term!@McshLag000012#idLEspountTrm, Sngu_lagu-unit.term!@McshLag000010#idL0014untTrm, phoneme!@McshLag000009#idL0017phnm
-  McshTchInf000019  idDeOzngovcsptr  OgznDao_govc_Sptr (G had no trees)  with 1: DAOstack_govc!@McshTchInf000019#idDaostkgovc
-  McshTchInf000010  idLJsgnevalsptr  Jsgn_lago'evaluation_Sptr (G had no trees)  with 1: Jsbreval!@McshTchInf000011#idLJsbreval
-  McshTchInf000010  idLJsgnarcsptr  Jsgnarcho_Sptr (G had no trees)  with 1: Jsbrarcho!@McshTchInf000011#idLJsbrarc
-  McshLag000003  idWldv012sptr  worldviewMonosemantic_Sptr (G had no trees)  with 1: Mws!@Mcsh000000
-  McshLag000003  idWldv008sptr  worldviewMachine_readable_Sptr (G had no trees)  with 1: Mws!@Mcsh000000
-  McshLag000007  idLHmnmKmnsptr  lagLfrk_Sptr (G had no trees)  with 1: Engl_lago!@McshLag000011
-  McshHlth000019  idOgnHmn006Snsrsptr  nerveSensory_Sptr  with 1: nerveSmelling!@McshHlth000019#idSysNrvsatt072
-  McshOgm000004  idMolOgm003sptr  biopolymer_Sptr  with 4: MoleOgsmRubber!@McshOgm000004#idMolOgm011, suberinOgsm!@McshOgm000004#idMolOgm010, melaninOgsm!@McshOgm000004#idMolOgm009, ligninOgsm!@McshOgm000004#idMolOgm008
-  McshStn000020  idEuoComoznSdsptr  EuoCom'service-department_Sptr (G had no trees)  with 1: EuoPbo!@McshStn000020#idSocEuzztt032
-  McshStn000009  idSocadmndongPlcsptr  Socpolicy_Sptr (G had no trees)  with 1: Eupolicy!@McshStn000020#idEuzzadmnplc
-  McshTchInf000016  idDbcevuCegrtsptr  Dblockchain-appending-asset'price_Sptr (G had no trees)  with 1: BtcexvuC'rate!@McshTchInf000017#idBtcevuCegrt
-  McshOgm000010  idPlnt041sptr  plantHerbMedicinal_Sptr (G had no trees)  with 1: plantHypericum_perforatum!@McshOgm000010#idPlnt039
-  McshOgm000010  idPlnt020sptr  plantHerb_Sptr (G had no trees)  with 1: plantUrtica!@McshOgm000010#idPlnt035
-  McshTchInf000008  idLHitpmgrsptr  Hitpmgr_Sptr (G had no trees)  with 1: Mcshmgr!@McshTchInf000009#idLMcshmngr
-  McshCor000012  idMdlatt001sptr  archo_Sptr (G had no trees)  with 1: FctgBrainingBio'archetype!@McshCor000013#idBrnginfarch
-  McshNtr000005  idSysMols008sptr  MtrlSubstance_Sptr (G had no trees)  with 1: foodBio!@McshHlth000012
-  McshHlth000014  idMedHmn030sptr  MdtnAntimicrobial_Sptr (G had no trees)  with 1: MdtnAntibiotic!@McshHlth000014#idMedHmn004
-  McshNtr000005  idSysMols009sptr  MtrlObject_Sptr (G had no trees)  with 1: bio!@McshOgm000002
-  McshStn000007  idSocOgmatt006sptr  SystGvcSocOgsm_Sptr  with 1: Socadmn!@McshStn000009#idSocadmn
-  McshStn000009  idSocHumn026sptr  SocStateNo_Sptr (G had no trees)  with 1: SocAlgo!@McshStn000019
+=== NEW-SPECIFIC-TREE (46)
+  McshTchInf000015  idAlgntnPblNsptr  AgntPblcNo_Sptr (G had no trees)  with 1: BkcnPblcNo!@McshTchInf000016#idDbcPbcN
+  McshTchInf000015  idAlgntnPblsptr  AgntPblc_Sptr (G had no trees)  with 1: BkchPblc!@McshTchInf000016#idDbcPbc
+  McshTchInf000015  idAlgntnPmsusrNsptr  AgntJoinPmsnNo_Sptr (G had no trees)  with 1: BkcnJoinPermNo!@McshTchInf000016#idDbcPmsjoinN
+  McshTchInf000015  idAlgntnPmsusrsptr  AgntJoinPmsn_Sptr (G had no trees)  with 1: BkcnJoinPerm!@McshTchInf000016#idDbcPmsjoin
+  McshTchInf000015  idAlgntnPmsapdNsptr  !⇒AgntApndPmsnNo_Sptr (G had no trees)  with 1: BkchApndPermNo!@McshTchInf000016#idDbcPmsapdN
+  McshTchInf000015  idAlgntnPmsapdsptr  AgntApndPmsn_Sptr (G had no trees)  with 1: BkchApndPerm!@McshTchInf000016#idDbcPmsapd
+  McshTchInf000016  idDbcDptsptr  BkcnDpdt_Sptr (G had no trees)  with 1: Humaniq!@McshTchInf000016#idHmqnet
+  McshTchInf000016  idDbcBigsptr  BkcnGvnc_Sptr (G had no trees)  with 5: AgntDfnt!@McshTchInf000016#idDfnnet, Ddash_net!@McshTchInf000016#idDashnet, AgntBtsh!@McshTchInf000016#idBtsnet, Dcrnet!@McshTchInf000016#idDcrnet, …
+  McshTchInf000016  idHswnetsptr  BkcnPospw_Sptr (G had no trees)  with 3: AgntPrcn!@McshTchInf000016#idPpcnet, AgntEmrcn!@McshTchInf000016#idEmcnet, AgntAete!@McshTchInf000016#idAenet
+  McshTchInf000015  idAlgntevubknsptr  Agntastbackness_Sptr (G had no trees)  with 2: Bkcnchain_asset'backness!@McshTchInf000016#idDbcevubkn, Agntexvu'backness!@McshTchInf000015#idAlgntevuMoebkns
+  McshCor000003  idEntevogtmilsptr  Enttevlgtmiv_Sptr (G had no trees)  with 2: HmbdLife!@McshHlth000002#idBdyHmnatt039, intrauterine-life!@McshHlth000002#idBdyHmnatt023
+  McshHlth000002  idSysOgnHmnftgsptr  SystOgnsfuncting_Sptr (G had no trees)  with 1: SystDigestive'functing!@McshHlth000002#idSysOgnHmn007functing
+  McshHlth000008  idMtrHlthHmn001sptr  MtrlHlthHarmNo_Sptr (G had no trees)  with 1: nutrient!@McshHlth000002#idBdyHmnatt015
+  McshTchInf000016  idDbcpgmClntsptr  Bkcnclient_Sptr (G had no trees)  with 1: Eos-client!@McshTchInf000021#idEospgmClnt
+  McshTchInf000016  idDbcwltacntsptr  Bkcnwlltaccount_Sptr (G had no trees)  with 1: Deos_account!@McshTchInf000021#idEosacnt
+  McshTchInf000016  idDbcbexsptr  Bkcnexplorer_Sptr (G had no trees)  with 2: Deos_explorer!@McshTchInf000021#idEosbex, Frcnblck_explorer!@McshTchInf000022#idFairnetber
+  McshTchInf000016  idDbcirscsptr  Bkchinfrsc_Sptr (G had no trees)  with 1: Frcnirsc!@McshTchInf000022
+  McshTchInf000015  idAlgntevuexratesptr  Agntastexrate_Sptr (G had no trees)  with 1: FrcnexvuC'rate!@McshTchInf000022#idFairnetevuCexr
+  McshTchInf000016  idDbcblktimGnrtsptr  BkcnblcktimeGeneration_Sptr (G had no trees)  with 1: Frcnblck'interval!@McshTchInf000022#idFairnetblktmbn
+  McshStnlaw000003  idLawEus026sptr  EulawScdrNlact_Sptr (G had no trees)  with 4: EulawResolution!@McshStnlaw000003#idLawEus030, EulawInta!@McshStnlaw000003#idLawEus029, EulawDeclaration!@McshStnlaw000003#idLawEus028, EulawSecoAction_programe!@McshStnlaw000003#idLawEus027
+  McshTchInf000018  idEthevuCNErc20sptr  EthrastErc20_Sptr (G had no trees)  with 1: Lykklyci!@McshTchInf000015#idLkxLyci
+  McshTchInf000015  idAlgntevusblsptr  Agntastticker_Sptr (G had no trees)  with 1: Lykklyci'ticker!@McshTchInf000015#idLkxLycitkr
+  McshTchInf000006  idLSrcdCmpdsptr  SrcdCompiled_Sptr (G had no trees)  with 1: Rust_lago!@McshTchInf000030
+  McshTchInf000006  idLSrcdrootsptr  Srcdroot_Sptr (G had no trees)  with 1: Rustroot!@McshTchInf000030#idLRustroot
+  McshTchInf000006  idLSrcdsuntNmdsptr  SrcdsuntNamed_Sptr (G had no trees)  with 1: Rust_lago_named_Sunt!@McshTchInf000030#idLRustsuntNmd
+  McshTchInf000006  idLSrcdwrdRsvdsptr  Srcdkeyword_Sptr (G had no trees)  with 1: Rust_lago_keyword!@McshTchInf000030#idLRustkwd
+  McshLag000007  idLHmnmverbmrfdgsptr  Verbmebrfinding_Sptr (G had no trees)  with 3: Englverbmbrg!@McshLag000011#idLEnglverbcjgn, Espoverbmbrg!@McshLag000012#idLEspoverbcjgn, Zhon_verb'member_finding!@McshLag000018#idLHmnmverbmrfdg
+  McshLag000007  idLHmnmnameTrmmbrSnmrsptr  TermmebrSyno_Sptr (G had no trees)  with 2: Engl_adve'syno_member!@McshLag000011#idLEngladvesnmrs, Engladjesyno!@McshLag000011#idLEngladjesnmrs
+  McshTchInf000010  idLJsgnStringpsptr  Jssproto_Sptr (G had no trees)  with 1: Jss!@McshTchInf000010#idLJsgns
+  McshTchInf000010  idLJsgnRegExppsptr  Jsrproto_Sptr (G had no trees)  with 1: Jsr!@McshTchInf000010#idLJsgnr
+  McshTchInf000010  idLJsgnopmNsptr  JssutOpmNo_Sptr (G had no trees)  with 1: Jsnull!@McshTchInf000010#idLJsgnl
+  McshCor000011  idSysMng001att002sptr  SystMnggOgsminfsys_Sptr (G had no trees)  with 1: Plantinfosyst!@McshCor000011#idSysMng003att003
+  McshOgm000007  idCellOgm003sptr  cellEukaryotic_Sptr (G had no trees)  with 1: cellPlant!@McshOgm000007#idCellPlnt
+  McshTchInf000006  idLCpgmirscsptr  Pgmginfrsc_Sptr (G had no trees)  with 1: Srcd_lago'info_resource!@McshTchInf000006#idLSrcdirsc
+  McshTchInf000006  idLCpgmarchdmnsptr  Pgmgarchdomain_Sptr (G had no trees)  with 1: Srcdalgo'domain!@McshTchInf000006#idLSrcdarchdmn
+  McshTchInf000016  idDbcadssptr  Bkcnadrs_Sptr (G had no trees)  with 1: Stmadrs!@McshTchInf000024#idSteemacntpbc
+  McshTchInf000015  idAlgntpgmClntsptr  Agntclient_Sptr (G had no trees)  with 1: Stemclnt!@McshTchInf000024#idSteemd
+  McshCor000011  idSys002GcscGcocsptr  Gnspgntree_Sptr (G had no trees)  with 1: Mcsspecdiv!@McshCor000002#idMcsattWhlNSpcdvn
+  McshCor000003  idEntBodyNvlcsptr  bodyNovalence_Sptr (G had no trees)  with 1: doing'valence!@McshCor000004#idDngatt002
+  McshCor000013  idBrngEmtgstmlsptr  FctgEmtgBiostimulus_Sptr (G had no trees)  with 1: FctgEmoting'stimulus!@McshCor000018#idBrngHmnFct004stml
+  McshLag000003  idInfHmnBrn001Cptsptr  CnptBrainin_Sptr (G had no trees)  with 1: Semucnpt!@McshLag000007#idLHmnmsmscpt
+  McshLag000007  idLHmnmprlgsptr  Hmnmpara_Sptr (G had no trees)  with 1: paralanguageElln!@McshLag000020#idLEllnpara
+  McshLag000007  idLHmnm0031sptr  HmnmPlcr_Sptr (G had no trees)  with 2: Span_lago!@McshLag000035, Arab_lago!@McshLag000036
+  McshCor000011  idSys009spc001sptr  SystDynaSelf_Sptr  with 1: bio!@McshOgm000002
+  McshStn000008  idOgznScdnSrpnsptr  OgznSpdvSfrpdg_Sptr (G had no trees)  with 2: ogznCsmg!@McshStn000014, OgznPrdg!@McshStn000015
+  McshTchInf000015  idAlgntdcrzTrstsptr  AgntdecentTrust_Sptr (G had no trees)  with 1: AgntEthr'trustless_attribute!@McshTchInf000018#idEthtrstls
 
-=== SKIPPED (49)
-  McshTchInf000015  idAlgntnPblN  McshTchInf000015#idAlgntnPblN  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntnPbl  McshTchInf000015#idAlgntnPbl  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntnPmsusrN  McshTchInf000015#idAlgntnPmsusrN  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntnPmsusr  McshTchInf000015#idAlgntnPmsusr  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntnPmsapdN  McshTchInf000015#idAlgntnPmsapdN  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntnPmsapd  McshTchInf000015#idAlgntnPmsapd  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcDpt  McshTchInf000016#idDbcDpt  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcBig  McshTchInf000016#idDbcBig  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idHswnet  McshTchInf000016#idHswnet  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntevubkn  McshTchInf000015#idAlgntevubkn  (G has no _Gntr name / no clear !⇒ main-name)
-  McshCor000003  idEntevogtmil  McshCor000003#idEntevogtmil  (G has no _Gntr name / no clear !⇒ main-name)
-  McshHlth000002  idSysOgnHmnftg  McshHlth000002#idSysOgnHmnftg  (G has no _Gntr name / no clear !⇒ main-name)
-  McshHlth000008  idMtrHlthHmn001  McshHlth000008#idMtrHlthHmn001  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLSrcdCmpd  McshTchInf000006#idLSrcdCmpd  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLSrcdroot  McshTchInf000006#idLSrcdroot  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLSrcdsuntNmd  McshTchInf000006#idLSrcdsuntNmd  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLSrcdwrdRsvd  McshTchInf000006#idLSrcdwrdRsvd  (G has no _Gntr name / no clear !⇒ main-name)
-  McshLag000007  idLHmnmverbmrfdg  McshLag000007#idLHmnmverbmrfdg  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000010  idLJsgnStringp  McshTchInf000010#idLJsgnStringp  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000010  idLJsgnRegExpp  McshTchInf000010#idLJsgnRegExpp  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000010  idLJsgnopmN  McshTchInf000010#idLJsgnopmN  (G has no _Gntr name / no clear !⇒ main-name)
-  McshStnlaw000003  idLawEus026  McshStnlaw000003#idLawEus026  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcads  McshTchInf000016#idDbcads  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntpgmClnt  McshTchInf000015#idAlgntpgmClnt  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcpgmClnt  McshTchInf000016#idDbcpgmClnt  (G has no _Gntr name / no clear !⇒ main-name)
+=== SKIPPED (5)
+  McshStn000007:214  SoctOgsm'language_Gntr -> McshLag000005#  (G not found / page without id)
   McshTchInf000015  idAlgntgovvtg  McshTchInf000015#idAlgntgovvtg  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcwltacnt  McshTchInf000016#idDbcwltacnt  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcbex  McshTchInf000016#idDbcbex  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLCpgmirsc  McshTchInf000006#idLCpgmirsc  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000006  idLCpgmarchdmn  McshTchInf000006#idLCpgmarchdmn  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000019  idDeOzngvnr  McshTchInf000019#idDeOzngvnr  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcirsc  McshTchInf000016#idDbcirsc  (G has no _Gntr name / no clear !⇒ main-name)
   McshTchInf000016  idDbcenrg  McshTchInf000016#idDbcenrg  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntevuexrate  McshTchInf000015#idAlgntevuexrate  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000016  idDbcblktimGnrt  McshTchInf000016#idDbcblktimGnrt  (G has no _Gntr name / no clear !⇒ main-name)
-  McshLag000003  idInfHmnBrn001Cpt  McshLag000003#idInfHmnBrn001Cpt  (G has no _Gntr name / no clear !⇒ main-name)
-  McshLag000007  idLHmnmnameTrmmbrSnmr  McshLag000007#idLHmnmnameTrmmbrSnmr  (G has no _Gntr name / no clear !⇒ main-name)
-  McshCor000011  idSys002GcscGcoc  McshCor000011#idSys002GcscGcoc  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000018  idEthevuCNErc20  McshTchInf000018#idEthevuCNErc20  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntevusbl  McshTchInf000015#idAlgntevusbl  (G has no _Gntr name / no clear !⇒ main-name)
-  McshTchInf000015  idAlgntdcrzTrst  McshTchInf000015#idAlgntdcrzTrst  (G has no _Gntr name / no clear !⇒ main-name)
-  McshCor000013  idBrngEmtgstml  McshCor000013#idBrngEmtgstml  (G has no _Gntr name / no clear !⇒ main-name)
-  McshLag000007  idLHmnmprlg  McshLag000007#idLHmnmprlg  (G has no _Gntr name / no clear !⇒ main-name)
-  McshStn000008  idOgznScdnSrpn  McshStn000008#idOgznScdnSrpn  (G has no _Gntr name / no clear !⇒ main-name)
-  McshCor000003  idEntBodyNvlc  McshCor000003#idEntBodyNvlc  (G has no _Gntr name / no clear !⇒ main-name)
-  McshCor000011  idSysMng001att002  McshCor000011#idSysMng001att002  (G has no _Gntr name / no clear !⇒ main-name)
   McshOgm000007  idCellOgmatt024  McshOgm000007#idCellOgmatt024  (G has no _Gntr name / no clear !⇒ main-name)
-  McshLag000007  idLHmnm0031  McshLag000007#idLHmnm0031  (G has no _Gntr name / no clear !⇒ main-name)
-  McshOgm000007  idCellOgm003  McshOgm000007#idCellOgm003  (G has no _Gntr name / no clear !⇒ main-name)
+  McshTchInf000019  idDeOzngvnr  McshTchInf000019#idDeOzngvnr  (G has no _Gntr name / no clear !⇒ main-name)

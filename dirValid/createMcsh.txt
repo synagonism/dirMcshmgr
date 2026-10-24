@@ -1,12 +1,378 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --undated dry-run: C:/dirNodews/dirMcsh
+  createMcsh --mainname dry-run: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  5 files to write · 10 descriptions dated · 0 of them EMPTY · date {2026-10-16} · 0 skipped
+  3 files to write · 122 main-names with underscores · 248 lines changed · 121 old forms kept as synonyms · 0 skipped
   nothing written: add --fix to write
 
-=== INSERT (5) — a-creation-date inserted in a-description::
-  McshCor000018  1 descriptions
-  McshHlth000002  4 descriptions
-  McshHlth000003  2 descriptions
-  McshHlth000019  1 descriptions
-  McshTchInf000010  2 descriptions
+=== MAINNAME (248) — a-name-line whose main-name got underscores (MvrlMnnm01)
+  McshLag000020:1570  McshElln.κλίσης-τύπος  ->  κλίσης_τύπος
+  McshLag000020:1576  McshElln.μέθοδος-κλίσης-Ελληνικής-λέξης!⇒κλίσης-τύπος  ->  μέθοδος-κλίσης-Ελληνικής-λέξης!⇒κλίσης_τύπος
+  McshLag000020:1577  McshElln.κλίσης-τύπος-Ελληνικής-λέξης!⇒κλίσης-τύπος  ->  κλίσης-τύπος-Ελληνικής-λέξης!⇒κλίσης_τύπος
+  McshLag000020:1578  McshElln.κλιτικό-παράδειγμα-Ελληνικής-λέξης!⇒κλίσης-τύπος  ->  κλιτικό-παράδειγμα-Ελληνικής-λέξης!⇒κλίσης_τύπος
+  McshLag000020:1579  McshElln.λεξηΕλλν'05-κλιτικό-παράδειγμα!⇒κλίσης-τύπος  ->  λεξηΕλλν'05-κλιτικό-παράδειγμα!⇒κλίσης_τύπος
+  McshLag000020:1580  McshElln.τύπος-κλίσης-Ελληνικής-λέξης!⇒κλίσης-τύπος  ->  τύπος-κλίσης-Ελληνικής-λέξης!⇒κλίσης_τύπος
+  McshLag000022:310  McshElla.αγανακτέω!~verbElla!⇒ἀγανακτέω-ῶ  ->  αγανακτέω!~verbElla!⇒ἀγανακτέω_ῶ
+  McshLag000022:311  McshElla.ἀγανακτέω-ῶ!~verbElla  ->  ἀγανακτέω_ῶ!~verbElla
+  McshLag000022:332  McshElla.αγαπάω!~verbElla!⇒ἀγαπάω-ῶ  ->  αγαπάω!~verbElla!⇒ἀγαπάω_ῶ
+  McshLag000022:333  McshElla.ἀγαπάω-ῶ!~verbElla  ->  ἀγαπάω_ῶ!~verbElla
+  McshLag000022:518  McshElla.αγνοέω!~verbElla!⇒ἀγνοέω-ῶ  ->  αγνοέω!~verbElla!⇒ἀγνοέω_ῶ
+  McshLag000022:519  McshElla.ἀγνοέω-ῶ!~verbElla  ->  ἀγνοέω_ῶ!~verbElla
+  McshLag000022:920  McshElla.αγωνιάω!~verbElla!⇒ἀγωνιάω-ῶ  ->  αγωνιάω!~verbElla!⇒ἀγωνιάω_ῶ
+  McshLag000022:921  McshElla.ἀγωνιάω-ῶ!~verbElla  ->  ἀγωνιάω_ῶ!~verbElla
+  McshLag000022:1120  McshElla.αδικέω!~verbElla!⇒ἀδικέω-ῶ  ->  αδικέω!~verbElla!⇒ἀδικέω_ῶ
+  McshLag000022:1121  McshElla.ἀδικέω-ῶ!~verbElla  ->  ἀδικέω_ῶ!~verbElla
+  McshLag000022:1488  McshElla.αθυμέω!~verbElla!⇒ἀθυμέω-ῶ  ->  αθυμέω!~verbElla!⇒ἀθυμέω_ῶ
+  McshLag000022:1489  McshElla.ἀθυμέω-ῶ!~verbElla  ->  ἀθυμέω_ῶ!~verbElla
+  McshLag000022:2117  McshElla.ακέομαι!~verbElla!⇒ἀκέομαι-οῦμαι  ->  ακέομαι!~verbElla!⇒ἀκέομαι_οῦμαι
+  McshLag000022:2118  McshElla.ἀκέομαι-οῦμαι!~verbElla  ->  ἀκέομαι_οῦμαι!~verbElla
+  McshLag000022:2191  McshElla.ακολουθέω!~verbElla!⇒ἀκολουθέω-ῶ  ->  ακολουθέω!~verbElla!⇒ἀκολουθέω_ῶ
+  McshLag000022:2192  McshElla.ἀκολουθέω-ῶ!~verbElla  ->  ἀκολουθέω_ῶ!~verbElla
+  McshLag000022:2433  McshElla.ακριβόω!~verbElla!⇒ἀκριβόω-ῶ  ->  ακριβόω!~verbElla!⇒ἀκριβόω_ῶ
+  McshLag000022:2434  McshElla.ἀκριβόω-ῶ!~verbElla  ->  ἀκριβόω_ῶ!~verbElla
+  McshLag000022:2467  McshElla.ακροάομαι!~verbElla!⇒ἀκροάομαι-ῶμαι  ->  ακροάομαι!~verbElla!⇒ἀκροάομαι_ῶμαι
+  McshLag000022:2468  McshElla.ἀκροάομαι-ῶμαι!~verbElla  ->  ἀκροάομαι_ῶμαι!~verbElla
+  McshLag000022:2707  McshElla.αλγέω!~verbElla!⇒ἀλγέω-ῶ  ->  αλγέω!~verbElla!⇒ἀλγέω_ῶ
+  McshLag000022:2708  McshElla.ἀλγέω-ῶ!~verbElla  ->  ἀλγέω_ῶ!~verbElla
+  McshLag000022:3122  McshElla.αλλοτριόω!~verbElla!⇒ἀλλοτριόω-ῶ  ->  αλλοτριόω!~verbElla!⇒ἀλλοτριόω_ῶ
+  McshLag000022:3123  McshElla.ἀλλοτριόω-ῶ!~verbElla  ->  ἀλλοτριόω_ῶ!~verbElla
+  McshLag000022:3767  McshElla.αναβιόω!~verbElla!⇒ἀναβιόω-ῶ  ->  αναβιόω!~verbElla!⇒ἀναβιόω_ῶ
+  McshLag000022:3768  McshElla.ἀναβιόω-ῶ!~verbElla  ->  ἀναβιόω_ῶ!~verbElla
+  McshLag000022:3910  McshElla.αναθεωρέω!~verbElla!⇒ἀναθεωρέω-ῶ  ->  αναθεωρέω!~verbElla!⇒ἀναθεωρέω_ῶ
+  McshLag000022:3911  McshElla.ἀναθεωρέω-ῶ!~verbElla  ->  ἀναθεωρέω_ῶ!~verbElla
+  McshLag000022:3947  McshElla.αναθρέω!~verbElla!⇒ἀναθρέω-ῶ  ->  αναθρέω!~verbElla!⇒ἀναθρέω_ῶ
+  McshLag000022:3948  McshElla.ἀναθρέω-ῶ!~verbElla  ->  ἀναθρέω_ῶ!~verbElla
+  McshLag000022:3993  McshElla.αναιρέω!~verbElla!⇒ἀναιρέω-ῶ  ->  αναιρέω!~verbElla!⇒ἀναιρέω_ῶ
+  McshLag000022:3994  McshElla.ἀναιρέω-ῶ!~verbElla  ->  ἀναιρέω_ῶ!~verbElla
+  McshLag000022:4072  McshElla.ανακαλέω!~verbElla!⇒ἀνακαλέω-ῶ  ->  ανακαλέω!~verbElla!⇒ἀνακαλέω_ῶ
+  McshLag000022:4073  McshElla.ἀνακαλέω-ῶ!~verbElla  ->  ἀνακαλέω_ῶ!~verbElla
+  McshLag000022:4466  McshElla.αναπληρόω!~verbElla!⇒ἀναπληρόω-ῶ  ->  αναπληρόω!~verbElla!⇒ἀναπληρόω_ῶ
+  McshLag000022:4467  McshElla.ἀναπληρόω-ῶ!~verbElla  ->  ἀναπληρόω_ῶ!~verbElla
+  McshLag000022:4528  McshElla.αναρτάω!~verbElla!⇒ἀναρτάω-ῶ  ->  αναρτάω!~verbElla!⇒ἀναρτάω_ῶ
+  McshLag000022:4529  McshElla.ἀναρτάω-ῶ!~verbElla  ->  ἀναρτάω_ῶ!~verbElla
+  McshLag000022:4972  McshElla.ανιάω!~verbElla!⇒ἀνιάω-ῶ  ->  ανιάω!~verbElla!⇒ἀνιάω_ῶ
+  McshLag000022:4973  McshElla.ἀνιάω-ῶ!~verbElla  ->  ἀνιάω_ῶ!~verbElla
+  McshLag000022:5299  McshElla.αξιόω!~verbElla!⇒ἀξιόω-ῶ  ->  αξιόω!~verbElla!⇒ἀξιόω_ῶ
+  McshLag000022:5300  McshElla.ἀξιόω-ῶ!~verbElla  ->  ἀξιόω_ῶ!~verbElla
+  McshLag000022:5494  McshElla.απαντάω!~verbElla!⇒ἀπαντάω-ῶ  ->  απαντάω!~verbElla!⇒ἀπαντάω_ῶ
+  McshLag000022:5495  McshElla.ἀπαντάω-ῶ!~verbElla  ->  ἀπαντάω_ῶ!~verbElla
+  McshLag000022:5533  McshElla.απαξιόω!~verbElla!⇒ἀπαξιόω-ῶ  ->  απαξιόω!~verbElla!⇒ἀπαξιόω_ῶ
+  McshLag000022:5534  McshElla.ἀπαξιόω-ῶ!~verbElla  ->  ἀπαξιόω_ῶ!~verbElla
+  McshLag000022:5598  McshElla.απειθέω!~verbElla!⇒ἀπειθέω-ῶ  ->  απειθέω!~verbElla!⇒ἀπειθέω_ῶ
+  McshLag000022:5599  McshElla.ἀπειθέω-ῶ!~verbElla  ->  ἀπειθέω_ῶ!~verbElla
+  McshLag000022:5832  McshElla.απιστέω!~verbElla!⇒ἀπιστέω-ῶ  ->  απιστέω!~verbElla!⇒ἀπιστέω_ῶ
+  McshLag000022:5833  McshElla.ἀπιστέω-ῶ!~verbElla  ->  ἀπιστέω_ῶ!~verbElla
+  McshLag000022:6052  McshElla.αποδειλιάω!~verbElla!⇒ἀποδειλιάω-ῶ  ->  αποδειλιάω!~verbElla!⇒ἀποδειλιάω_ῶ
+  McshLag000022:6053  McshElla.ἀποδειλιάω-ῶ!~verbElla  ->  ἀποδειλιάω_ῶ!~verbElla
+  McshLag000022:6070  McshElla.αποδεκατόω!~verbElla!⇒ἀποδεκατόω-ῶ  ->  αποδεκατόω!~verbElla!⇒ἀποδεκατόω_ῶ
+  McshLag000022:6071  McshElla.ἀποδεκατόω-ῶ!~verbElla  ->  ἀποδεκατόω_ῶ!~verbElla
+  McshLag000022:6110  McshElla.αποδημέω!~verbElla!⇒ἀποδημέω-ῶ  ->  αποδημέω!~verbElla!⇒ἀποδημέω_ῶ
+  McshLag000022:6111  McshElla.ἀποδημέω-ῶ!~verbElla  ->  ἀποδημέω_ῶ!~verbElla
+  McshLag000022:6216  McshElla.αποικέω!~verbElla!⇒ἀποικέω-ῶ  ->  αποικέω!~verbElla!⇒ἀποικέω_ῶ
+  McshLag000022:6217  McshElla.ἀποικέω-ῶ!~verbElla  ->  ἀποικέω_ῶ!~verbElla
+  McshLag000022:6308  McshElla.αποκληρόω!~verbElla!⇒ἀποκληρόω-ῶ  ->  αποκληρόω!~verbElla!⇒ἀποκληρόω_ῶ
+  McshLag000022:6309  McshElla.ἀποκληρόω-ῶ!~verbElla  ->  ἀποκληρόω_ῶ!~verbElla
+  McshLag000022:6511  McshElla.απολογέομαι!~verbElla!⇒ἀπολογέομαι-οῦμαι  ->  απολογέομαι!~verbElla!⇒ἀπολογέομαι_οῦμαι
+  McshLag000022:6512  McshElla.ἀπολογέομαι-οῦμαι!~verbElla  ->  ἀπολογέομαι_οῦμαι!~verbElla
+  McshLag000022:6588  McshElla.απορέω!~verbElla!⇒ἀπορέω-ῶ  ->  απορέω!~verbElla!⇒ἀπορέω_ῶ
+  McshLag000022:6589  McshElla.ἀπορέω-ῶ!~verbElla  ->  ἀπορέω_ῶ!~verbElla
+  McshLag000022:6657  McshElla.αποτελέω!~verbElla!⇒ἀποτελέω-ῶ  ->  αποτελέω!~verbElla!⇒ἀποτελέω_ῶ
+  McshLag000022:6658  McshElla.ἀποτελέω-ῶ!~verbElla  ->  ἀποτελέω_ῶ!~verbElla
+  McshLag000022:6913  McshElla.αριθμέω!~verbElla!⇒ἀριθμέω-ῶ  ->  αριθμέω!~verbElla!⇒ἀριθμέω_ῶ
+  McshLag000022:6914  McshElla.ἀριθμέω-ῶ!~verbElla  ->  ἀριθμέω_ῶ!~verbElla
+  McshLag000022:6935  McshElla.αριστάω!~verbElla!⇒ἀριστάω-ῶ  ->  αριστάω!~verbElla!⇒ἀριστάω_ῶ
+  McshLag000022:6936  McshElla.ἀριστάω-ῶ!~verbElla  ->  ἀριστάω_ῶ!~verbElla
+  McshLag000022:6974  McshElla.αριστοποιέω!~verbElla!⇒ἀριστοποιέω-ῶ  ->  αριστοποιέω!~verbElla!⇒ἀριστοποιέω_ῶ
+  McshLag000022:6975  McshElla.ἀριστοποιέω-ῶ!~verbElla  ->  ἀριστοποιέω_ῶ!~verbElla
+  McshLag000022:6987  McshElla.αρκέω!~verbElla!⇒ἀρκέω-ῶ  ->  αρκέω!~verbElla!⇒ἀρκέω_ῶ
+  McshLag000022:6988  McshElla.ἀρκέω-ῶ!~verbElla  ->  ἀρκέω_ῶ!~verbElla
+  McshLag000022:7039  McshElla.αρόω!~verbElla!⇒ἀρόω-ῶ  ->  αρόω!~verbElla!⇒ἀρόω_ῶ
+  McshLag000022:7040  McshElla.ἀρόω-ῶ!~verbElla  ->  ἀρόω_ῶ!~verbElla
+  McshLag000022:7109  McshElla.αρτάω!~verbElla!⇒ἀρτάω-ῶ  ->  αρτάω!~verbElla!⇒ἀρτάω_ῶ
+  McshLag000022:7110  McshElla.ἀρτάω-ῶ!~verbElla  ->  ἀρτάω_ῶ!~verbElla
+  McshLag000022:7513  McshElla.αφαιρέω!~verbElla!⇒ἀφαιρέω-ῶ  ->  αφαιρέω!~verbElla!⇒ἀφαιρέω_ῶ
+  McshLag000022:7514  McshElla.ἀφαιρέω-ῶ!~verbElla  ->  ἀφαιρέω_ῶ!~verbElla
+  McshLag000022:7658  McshElla.αφικνέομαι!~verbElla!⇒ἀφικνέομαι-οῦμαι  ->  αφικνέομαι!~verbElla!⇒ἀφικνέομαι_οῦμαι
+  McshLag000022:7659  McshElla.ἀφικνέομαι-οῦμαι!~verbElla  ->  ἀφικνέομαι_οῦμαι!~verbElla
+  McshLag000022:7754  McshElla.αχρειόω!~verbElla!⇒ἀχρειόω-ῶ  ->  αχρειόω!~verbElla!⇒ἀχρειόω_ῶ
+  McshLag000022:7755  McshElla.ἀχρειόω-ῶ!~verbElla  ->  ἀχρειόω_ῶ!~verbElla
+  McshLag000022:12815  McshElla.εάω!~verbElla!⇒ἐάω-ῶ  ->  εάω!~verbElla!⇒ἐάω_ῶ
+  McshLag000022:12816  McshElla.ἐάω-ῶ!~verbElla  ->  ἐάω_ῶ!~verbElla
+  McshLag000022:12883  McshElla.εγγυάω!~verbElla!⇒ἐγγυάω-ῶ  ->  εγγυάω!~verbElla!⇒ἐγγυάω_ῶ
+  McshLag000022:12884  McshElla.ἐγγυάω-ῶ!~verbElla  ->  ἐγγυάω_ῶ!~verbElla
+  McshLag000022:13025  McshElla.εγκαλέω!~verbElla!⇒ἐγκαλέω-ῶ  ->  εγκαλέω!~verbElla!⇒ἐγκαλέω_ῶ
+  McshLag000022:13026  McshElla.ἐγκαλέω-ῶ!~verbElla  ->  ἐγκαλέω_ῶ!~verbElla
+  McshLag000022:13233  McshElla.εγχειρέω!~verbElla!⇒ἐγχειρέω-ῶ  ->  εγχειρέω!~verbElla!⇒ἐγχειρέω_ῶ
+  McshLag000022:13234  McshElla.ἐγχειρέω-ῶ!~verbElla  ->  ἐγχειρέω_ῶ!~verbElla
+  McshLag000022:13286  McshElla.εγχωρέω!~verbElla!⇒ἐγχωρέω-ῶ  ->  εγχωρέω!~verbElla!⇒ἐγχωρέω_ῶ
+  McshLag000022:13287  McshElla.ἐγχωρέω-ῶ!~verbElla  ->  ἐγχωρέω_ῶ!~verbElla
+  McshLag000022:14360  McshElla.εκπληρόω!~verbElla!⇒ἐκπληρόω-ῶ  ->  εκπληρόω!~verbElla!⇒ἐκπληρόω_ῶ
+  McshLag000022:14361  McshElla.ἐκπληρόω-ῶ!~verbElla  ->  ἐκπληρόω_ῶ!~verbElla
+  McshLag000022:14683  McshElla.ελεέω!~verbElla!⇒ἐλεέω-ῶ  ->  ελεέω!~verbElla!⇒ἐλεέω_ῶ
+  McshLag000022:14684  McshElla.ἐλεέω-ῶ!~verbElla  ->  ἐλεέω_ῶ!~verbElla
+  McshLag000022:14746  McshElla.ελευθερόω!~verbElla!⇒ἐλευθερόω-ῶ  ->  ελευθερόω!~verbElla!⇒ἐλευθερόω_ῶ
+  McshLag000022:14747  McshElla.ἐλευθερόω-ῶ!~verbElla  ->  ἐλευθερόω_ῶ!~verbElla
+  McshLag000022:15311  McshElla.ενδημέω!~verbElla!⇒ἐνδημέω-ῶ  ->  ενδημέω!~verbElla!⇒ἐνδημέω_ῶ
+  McshLag000022:15312  McshElla.ἐνδημέω-ῶ!~verbElla  ->  ἐνδημέω_ῶ!~verbElla
+  McshLag000022:15535  McshElla.ενθυμέομαι!~verbElla!⇒ἐνθυμέομαι-οῦμαι  ->  ενθυμέομαι!~verbElla!⇒ἐνθυμέομαι_οῦμαι
+  McshLag000022:15536  McshElla.ἐνθυμέομαι-οῦμαι!~verbElla  ->  ἐνθυμέομαι_οῦμαι!~verbElla
+  McshLag000022:15644  McshElla.εννοέω!~verbElla!⇒ἐννοέω-ῶ  ->  εννοέω!~verbElla!⇒ἐννοέω_ῶ
+  McshLag000022:15645  McshElla.ἐννοέω-ῶ!~verbElla  ->  ἐννοέω_ῶ!~verbElla
+  McshLag000022:15827  McshElla.εξαιρέω!~verbElla!⇒ἐξαιρέω-ῶ  ->  εξαιρέω!~verbElla!⇒ἐξαιρέω_ῶ
+  McshLag000022:15828  McshElla.ἐξαιρέω-ῶ!~verbElla  ->  ἐξαιρέω_ῶ!~verbElla
+  McshLag000022:15870  McshElla.εξαιτέω!~verbElla!⇒ἐξαιτέω-ῶ  ->  εξαιτέω!~verbElla!⇒ἐξαιτέω_ῶ
+  McshLag000022:15871  McshElla.ἐξαιτέω-ῶ!~verbElla  ->  ἐξαιτέω_ῶ!~verbElla
+  McshLag000022:15961  McshElla.εξαρκέω!~verbElla!⇒ἐξαρκέω-ῶ  ->  εξαρκέω!~verbElla!⇒ἐξαρκέω_ῶ
+  McshLag000022:15962  McshElla.ἐξαρκέω-ῶ!~verbElla  ->  ἐξαρκέω_ῶ!~verbElla
+  McshLag000022:15978  McshElla.εξαρτάω!~verbElla!⇒ἐξαρτάω-ῶ  ->  εξαρτάω!~verbElla!⇒ἐξαρτάω_ῶ
+  McshLag000022:15979  McshElla.ἐξαρτάω-ῶ!~verbElla  ->  ἐξαρτάω_ῶ!~verbElla
+  McshLag000022:16127  McshElla.εξηγέομαι!~verbElla!⇒ἐξηγέομαι-οῦμαι  ->  εξηγέομαι!~verbElla!⇒ἐξηγέομαι_οῦμαι
+  McshLag000022:16128  McshElla.ἐξηγέομαι-οῦμαι!~verbElla  ->  ἐξηγέομαι_οῦμαι!~verbElla
+  McshLag000022:16169  McshElla.εξικνέομαι!~verbElla!⇒ἐξικνέομαι-οῦμαι  ->  εξικνέομαι!~verbElla!⇒ἐξικνέομαι_οῦμαι
+  McshLag000022:16170  McshElla.ἐξικνέομαι-οῦμαι!~verbElla  ->  ἐξικνέομαι_οῦμαι!~verbElla
+  McshLag000022:16274  McshElla.εξορμάω!~verbElla!⇒ἐξορμάω-ῶ  ->  εξορμάω!~verbElla!⇒ἐξορμάω_ῶ
+  McshLag000022:16275  McshElla.ἐξορμάω-ῶ!~verbElla  ->  ἐξορμάω_ῶ!~verbElla
+  McshLag000022:16340  McshElla.εξωθέω!~verbElla!⇒ἐξωθέω-ῶ  ->  εξωθέω!~verbElla!⇒ἐξωθέω_ῶ
+  McshLag000022:16341  McshElla.ἐξωθέω-ῶ!~verbElla  ->  ἐξωθέω_ῶ!~verbElla
+  McshLag000022:16465  McshElla.επαινέω!~verbElla!⇒ἐπαινέω-ῶ  ->  επαινέω!~verbElla!⇒ἐπαινέω_ῶ
+  McshLag000022:16466  McshElla.ἐπαινέω-ῶ!~verbElla  ->  ἐπαινέω_ῶ!~verbElla
+  McshLag000022:16509  McshElla.επαιτιάομαι!~verbElla!⇒ἐπαιτιάομαι-ῶμαι  ->  επαιτιάομαι!~verbElla!⇒ἐπαιτιάομαι_ῶμαι
+  McshLag000022:16510  McshElla.ἐπαιτιάομαι-ῶμαι!~verbElla  ->  ἐπαιτιάομαι_ῶμαι!~verbElla
+  McshLag000022:16604  McshElla.επανορθόω!~verbElla!⇒ἐπανορθόω-ῶ  ->  επανορθόω!~verbElla!⇒ἐπανορθόω_ῶ
+  McshLag000022:16605  McshElla.ἐπανορθόω-ῶ!~verbElla  ->  ἐπανορθόω_ῶ!~verbElla
+  McshLag000022:16628  McshElla.επαρκέω!~verbElla!⇒ἐπαρκέω-ῶ  ->  επαρκέω!~verbElla!⇒ἐπαρκέω_ῶ
+  McshLag000022:16629  McshElla.ἐπαρκέω-ῶ!~verbElla  ->  ἐπαρκέω_ῶ!~verbElla
+  McshLag000022:16796  McshElla.επερωτάω!~verbElla!⇒ἐπερωτάω-ῶ  ->  επερωτάω!~verbElla!⇒ἐπερωτάω_ῶ
+  McshLag000022:16797  McshElla.ἐπερωτάω-ῶ!~verbElla  ->  ἐπερωτάω_ῶ!~verbElla
+  McshLag000022:17135  McshElla.επιδημέω!~verbElla!⇒ἐπιδημέω-ῶ  ->  επιδημέω!~verbElla!⇒ἐπιδημέω_ῶ
+  McshLag000022:17136  McshElla.ἐπιδημέω-ῶ!~verbElla  ->  ἐπιδημέω_ῶ!~verbElla
+  McshLag000022:17250  McshElla.επικαλέω!~verbElla!⇒ἐπικαλέω-ῶ  ->  επικαλέω!~verbElla!⇒ἐπικαλέω_ῶ
+  McshLag000022:17251  McshElla.ἐπικαλέω-ῶ!~verbElla  ->  ἐπικαλέω_ῶ!~verbElla
+  McshLag000022:17330  McshElla.επικουρέω!~verbElla!⇒ἐπικουρέω-ῶ  ->  επικουρέω!~verbElla!⇒ἐπικουρέω_ῶ
+  McshLag000022:17331  McshElla.ἐπικουρέω-ῶ!~verbElla  ->  ἐπικουρέω_ῶ!~verbElla
+  McshLag000022:17388  McshElla.επικρατέω!~verbElla!⇒ἐπικρατέω-ῶ  ->  επικρατέω!~verbElla!⇒ἐπικρατέω_ῶ
+  McshLag000022:17389  McshElla.ἐπικρατέω-ῶ!~verbElla  ->  ἐπικρατέω_ῶ!~verbElla
+  McshLag000022:17409  McshElla.επικτάομαι!~verbElla!⇒ἐπικτάομαι-ῶμαι  ->  επικτάομαι!~verbElla!⇒ἐπικτάομαι_ῶμαι
+  McshLag000022:17410  McshElla.ἐπικτάομαι-ῶμαι!~verbElla  ->  ἐπικτάομαι_ῶμαι!~verbElla
+  McshLag000022:17560  McshElla.επιμελέομαι!~verbElla!⇒ἐπιμελέομαι-οῦμαι  ->  επιμελέομαι!~verbElla!⇒ἐπιμελέομαι_οῦμαι
+  McshLag000022:17561  McshElla.ἐπιμελέομαι-οῦμαι!~verbElla  ->  ἐπιμελέομαι_οῦμαι!~verbElla
+  McshLag000022:17629  McshElla.επινοέω!~verbElla!⇒ἐπινοέω-ῶ  ->  επινοέω!~verbElla!⇒ἐπινοέω_ῶ
+  McshLag000022:17630  McshElla.ἐπινοέω-ῶ!~verbElla  ->  ἐπινοέω_ῶ!~verbElla
+  McshLag000022:17661  McshElla.επιορκέω!~verbElla!⇒ἐπιορκέω-ῶ  ->  επιορκέω!~verbElla!⇒ἐπιορκέω_ῶ
+  McshLag000022:17662  McshElla.ἐπιορκέω-ῶ!~verbElla  ->  ἐπιορκέω_ῶ!~verbElla
+  McshLag000022:17777  McshElla.επισκοπέω!~verbElla!⇒ἐπισκοπέω-ῶ  ->  επισκοπέω!~verbElla!⇒ἐπισκοπέω_ῶ
+  McshLag000022:17778  McshElla.ἐπισκοπέω-ῶ!~verbElla  ->  ἐπισκοπέω_ῶ!~verbElla
+  McshLag000022:17818  McshElla.επιστατέω!~verbElla!⇒ἐπιστατέω-ῶ  ->  επιστατέω!~verbElla!⇒ἐπιστατέω_ῶ
+  McshLag000022:17819  McshElla.ἐπιστατέω-ῶ!~verbElla  ->  ἐπιστατέω_ῶ!~verbElla
+  McshLag000022:17928  McshElla.επιτελέω!~verbElla!⇒ἐπιτελέω-ῶ  ->  επιτελέω!~verbElla!⇒ἐπιτελέω_ῶ
+  McshLag000022:17929  McshElla.ἐπιτελέω-ῶ!~verbElla  ->  ἐπιτελέω_ῶ!~verbElla
+  McshLag000022:18042  McshElla.επιτιμάω!~verbElla!⇒ἐπιτιμάω-ῶ  ->  επιτιμάω!~verbElla!⇒ἐπιτιμάω_ῶ
+  McshLag000022:18043  McshElla.ἐπιτιμάω-ῶ!~verbElla  ->  ἐπιτιμάω_ῶ!~verbElla
+  McshLag000022:18177  McshElla.επιχειρέω!~verbElla!⇒ἐπιχειρέω-ῶ  ->  επιχειρέω!~verbElla!⇒ἐπιχειρέω_ῶ
+  McshLag000022:18178  McshElla.ἐπιχειρέω-ῶ!~verbElla  ->  ἐπιχειρέω_ῶ!~verbElla
+  McshLag000022:18241  McshElla.εποικέω!~verbElla!⇒ἐποικέω-ῶ  ->  εποικέω!~verbElla!⇒ἐποικέω_ῶ
+  McshLag000022:18242  McshElla.ἐποικέω-ῶ!~verbElla  ->  ἐποικέω_ῶ!~verbElla
+  McshLag000022:18367  McshElla.εράω!~verbElla!⇒ἐράω-ῶ  ->  εράω!~verbElla!⇒ἐράω_ῶ
+  McshLag000022:18368  McshElla.ἐράω-ῶ!~verbElla  ->  ἐράω_ῶ!~verbElla
+  McshLag000022:18616  McshElla.ερωτάω!~verbElla!⇒ἐρωτάω-ῶ  ->  ερωτάω!~verbElla!⇒ἐρωτάω_ῶ
+  McshLag000022:18617  McshElla.ἐρωτάω-ῶ!~verbElla  ->  ἐρωτάω_ῶ!~verbElla
+  McshLag000022:18699  McshElla.εστιάω!~verbElla!⇒ἑστιάω-ῶ  ->  εστιάω!~verbElla!⇒ἑστιάω_ῶ
+  McshLag000022:18700  McshElla.ἑστιάω-ῶ!~verbElla  ->  ἑστιάω_ῶ!~verbElla
+  McshLag000022:19661  McshElla.εφικνέομαι!~verbElla!⇒ἐφικνέομαι-οῦμαι  ->  εφικνέομαι!~verbElla!⇒ἐφικνέομαι_οῦμαι
+  McshLag000022:19662  McshElla.ἐφικνέομαι-οῦμαι!~verbElla  ->  ἐφικνέομαι_οῦμαι!~verbElla
+  McshLag000022:19703  McshElla.εφοράω!~verbElla!⇒ἐφοράω-ῶ  ->  εφοράω!~verbElla!⇒ἐφοράω_ῶ
+  McshLag000022:19704  McshElla.ἐφοράω-ῶ!~verbElla  ->  ἐφοράω_ῶ!~verbElla
+  McshLag000022:19721  McshElla.εφορμέω!~verbElla!⇒ἐφορμέω-ῶ  ->  εφορμέω!~verbElla!⇒ἐφορμέω_ῶ
+  McshLag000022:19722  McshElla.ἐφορμέω-ῶ!~verbElla  ->  ἐφορμέω_ῶ!~verbElla
+  McshLag000022:20393  McshElla.ηβάω!~verbElla!⇒ἡβάω-ῶ  ->  ηβάω!~verbElla!⇒ἡβάω_ῶ
+  McshLag000022:20394  McshElla.ἡβάω-ῶ!~verbElla  ->  ἡβάω_ῶ!~verbElla
+  McshLag000022:20476  McshElla.ηγέομαι!~verbElla!⇒ἡγέομαι-οῦμαι  ->  ηγέομαι!~verbElla!⇒ἡγέομαι_οῦμαι
+  McshLag000022:20477  McshElla.ἡγέομαι-οῦμαι!~verbElla  ->  ἡγέομαι_οῦμαι!~verbElla
+  McshLag000022:20829  McshElla.ημερόω!~verbElla!⇒ἡμερόω-ῶ  ->  ημερόω!~verbElla!⇒ἡμερόω_ῶ
+  McshLag000022:20830  McshElla.ἡμερόω-ῶ!~verbElla  ->  ἡμερόω_ῶ!~verbElla
+  McshLag000022:21056  McshElla.ηρεμέω!~verbElla!⇒ἠρεμέω-ῶ  ->  ηρεμέω!~verbElla!⇒ἠρεμέω_ῶ
+  McshLag000022:21057  McshElla.ἠρεμέω-ῶ!~verbElla  ->  ἠρεμέω_ῶ!~verbElla
+  McshLag000022:21161  McshElla.ηττάομαι!~verbElla!⇒ἡττάομαι-ῶμαι  ->  ηττάομαι!~verbElla!⇒ἡττάομαι_ῶμαι
+  McshLag000022:21162  McshElla.ἡττάομαι-ῶμαι!~verbElla  ->  ἡττάομαι_ῶμαι!~verbElla
+  McshLag000022:22607  McshElla.ιάομαι!~verbElla!⇒ἰάομαι-ῶμαι  ->  ιάομαι!~verbElla!⇒ἰάομαι_ῶμαι
+  McshLag000022:22608  McshElla.ἰάομαι-ῶμαι!~verbElla  ->  ἰάομαι_ῶμαι!~verbElla
+  McshLag000022:22969  McshElla.ικνέομαι!~verbElla!⇒ἱκνέομαι-οῦμαι  ->  ικνέομαι!~verbElla!⇒ἱκνέομαι_οῦμαι
+  McshLag000022:22970  McshElla.ἱκνέομαι-οῦμαι!~verbElla  ->  ἱκνέομαι_οῦμαι!~verbElla
+  McshLag000022:23020  McshElla.ιλιγγιάω!~verbElla!⇒ἰλιγγιάω-ῶ  ->  ιλιγγιάω!~verbElla!⇒ἰλιγγιάω_ῶ
+  McshLag000022:23021  McshElla.ἰλιγγιάω-ῶ!~verbElla  ->  ἰλιγγιάω_ῶ!~verbElla
+  McshLag000022:23277  McshElla.ισόω!~verbElla!⇒ἰσόω-ῶ  ->  ισόω!~verbElla!⇒ἰσόω_ῶ
+  McshLag000022:23278  McshElla.ἰσόω-ῶ!~verbElla  ->  ἰσόω_ῶ!~verbElla
+  McshLag000022:32746  McshElla.οδοιπορέω!~verbElla!⇒ὁδοιπορέω-ῶ  ->  οδοιπορέω!~verbElla!⇒ὁδοιπορέω_ῶ
+  McshLag000022:32747  McshElla.ὁδοιπορέω-ῶ!~verbElla  ->  ὁδοιπορέω_ῶ!~verbElla
+  McshLag000022:32778  McshElla.οδυνάω!~verbElla!⇒ὀδυνάω-ῶ  ->  οδυνάω!~verbElla!⇒ὀδυνάω_ῶ
+  McshLag000022:32779  McshElla.ὀδυνάω-ῶ!~verbElla  ->  ὀδυνάω_ῶ!~verbElla
+  McshLag000022:33310  McshElla.ολιγωρέω!~verbElla!⇒ὀλιγωρέω-ῶ  ->  ολιγωρέω!~verbElla!⇒ὀλιγωρέω_ῶ
+  McshLag000022:33311  McshElla.ὀλιγωρέω-ῶ!~verbElla  ->  ὀλιγωρέω_ῶ!~verbElla
+  McshLag000022:33455  McshElla.ομιλέω!~verbElla!⇒ὁμιλέω-ῶ  ->  ομιλέω!~verbElla!⇒ὁμιλέω_ῶ
+  McshLag000022:33456  McshElla.ὁμιλέω-ῶ!~verbElla  ->  ὁμιλέω_ῶ!~verbElla
+  McshLag000022:33551  McshElla.ομολογέω!~verbElla!⇒ὁμολογέω-ῶ  ->  ομολογέω!~verbElla!⇒ὁμολογέω_ῶ
+  McshLag000022:33552  McshElla.ὁμολογέω-ῶ!~verbElla  ->  ὁμολογέω_ῶ!~verbElla
+  McshLag000022:34008  McshElla.οπτάω!~verbElla!⇒ὀπτάω-ῶ  ->  οπτάω!~verbElla!⇒ὀπτάω_ῶ
+  McshLag000022:34009  McshElla.ὀπτάω-ῶ!~verbElla  ->  ὀπτάω_ῶ!~verbElla
+  McshLag000022:34044  McshElla.οράω!~verbElla!⇒ὁράω-ῶ  ->  οράω!~verbElla!⇒ὁράω_ῶ
+  McshLag000022:34045  McshElla.ὁράω-ῶ!~verbElla  ->  ὁράω_ῶ!~verbElla
+  McshLag000022:34242  McshElla.ορμάω!~verbElla!⇒ὁρμάω-ῶ  ->  ορμάω!~verbElla!⇒ὁρμάω_ῶ
+  McshLag000022:34243  McshElla.ὁρμάω-ῶ!~verbElla  ->  ὁρμάω_ῶ!~verbElla
+  McshLag000022:34274  McshElla.ορμέω!~verbElla!⇒ὁρμέω-ῶ  ->  ορμέω!~verbElla!⇒ὁρμέω_ῶ
+  McshLag000022:34275  McshElla.ὁρμέω-ῶ!~verbElla  ->  ὁρμέω_ῶ!~verbElla
+  McshLag000022:34355  McshElla.ορρωδέω!~verbElla!⇒ὀρρωδέω-ῶ  ->  ορρωδέω!~verbElla!⇒ὀρρωδέω_ῶ
+  McshLag000022:34356  McshElla.ὀρρωδέω-ῶ!~verbElla  ->  ὀρρωδέω_ῶ!~verbElla
+  McshLag000022:34418  McshElla.ορχέομαι!~verbElla!⇒ὀρχέομαι-οῦμαι  ->  ορχέομαι!~verbElla!⇒ὀρχέομαι_οῦμαι
+  McshLag000022:34419  McshElla.ὀρχέομαι-οῦμαι!~verbElla  ->  ὀρχέομαι_οῦμαι!~verbElla
+  McshLag000022:35067  McshElla.οψωνέω!~verbElla!⇒ὀψωνέω-ῶ  ->  οψωνέω!~verbElla!⇒ὀψωνέω_ῶ
+  McshLag000022:35068  McshElla.ὀψωνέω-ῶ!~verbElla  ->  ὀψωνέω_ῶ!~verbElla
+  McshLag000022:46218  McshElla.υλακτέω!~verbElla!⇒ὑλακτέω-ῶ  ->  υλακτέω!~verbElla!⇒ὑλακτέω_ῶ
+  McshLag000022:46219  McshElla.ὑλακτέω-ῶ!~verbElla  ->  ὑλακτέω_ῶ!~verbElla
+  McshLag000022:46323  McshElla.υπαντάω!~verbElla!⇒ὑπαντάω-ῶ  ->  υπαντάω!~verbElla!⇒ὑπαντάω_ῶ
+  McshLag000022:46324  McshElla.ὑπαντάω-ῶ!~verbElla  ->  ὑπαντάω_ῶ!~verbElla
+  McshLag000022:46539  McshElla.υπερφρονέω!~verbElla!⇒ὑπερφρονέω-ῶ  ->  υπερφρονέω!~verbElla!⇒ὑπερφρονέω_ῶ
+  McshLag000022:46540  McshElla.ὑπερφρονέω-ῶ!~verbElla  ->  ὑπερφρονέω_ῶ!~verbElla
+  McshLag000022:46581  McshElla.υπισχνέομαι!~verbElla!⇒ὑπισχνέομαι-οῦμαι  ->  υπισχνέομαι!~verbElla!⇒ὑπισχνέομαι_οῦμαι
+  McshLag000022:46582  McshElla.ὑπισχνέομαι-οῦμαι!~verbElla  ->  ὑπισχνέομαι_οῦμαι!~verbElla
+  McshLag000022:46679  McshElla.υποδέω!~verbElla!⇒ὑποδέω-ῶ  ->  υποδέω!~verbElla!⇒ὑποδέω_ῶ
+  McshLag000022:46680  McshElla.ὑποδέω-ῶ!~verbElla  ->  ὑποδέω_ῶ!~verbElla
+  McshLag000022:46829  McshElla.υπονοέω!~verbElla!⇒ὑπονοέω-ῶ  ->  υπονοέω!~verbElla!⇒ὑπονοέω_ῶ
+  McshLag000022:46830  McshElla.ὑπονοέω-ῶ!~verbElla  ->  ὑπονοέω_ῶ!~verbElla
+  McshLag000022:46926  McshElla.υπουργέω!~verbElla!⇒ὑπουργέω-ῶ  ->  υπουργέω!~verbElla!⇒ὑπουργέω_ῶ
+  McshLag000022:46927  McshElla.ὑπουργέω-ῶ!~verbElla  ->  ὑπουργέω_ῶ!~verbElla
+  McshLag000022:46968  McshElla.υποχωρέω!~verbElla!⇒ὑποχωρέω-ῶ  ->  υποχωρέω!~verbElla!⇒ὑποχωρέω_ῶ
+  McshLag000022:46969  McshElla.ὑποχωρέω-ῶ!~verbElla  ->  ὑποχωρέω_ῶ!~verbElla
+  McshLag000022:47015  McshElla.υστερέω!~verbElla!⇒ὑστερέω-ῶ  ->  υστερέω!~verbElla!⇒ὑστερέω_ῶ
+  McshLag000022:47016  McshElla.ὑστερέω-ῶ!~verbElla  ->  ὑστερέω_ῶ!~verbElla
+  McshLag000022:49205  McshElla.ωθέω!~verbElla!⇒ὠθέω-ῶ  ->  ωθέω!~verbElla!⇒ὠθέω_ῶ
+  McshLag000022:49206  McshElla.ὠθέω-ῶ!~verbElla  ->  ὠθέω_ῶ!~verbElla
+  McshLag000022:49237  McshElla.ωνέομαι!~verbElla!⇒ὠνέομαι-οῦμαι  ->  ωνέομαι!~verbElla!⇒ὠνέομαι_οῦμαι
+  McshLag000022:49238  McshElla.ὠνέομαι-οῦμαι!~verbElla  ->  ὠνέομαι_οῦμαι!~verbElla
+  McshTchInf000040:332  McshZhon.diànyóu-电邮!=e_mail  ->  diànyóu_电邮!=e_mail
+  McshTchInf000040:333  McshZhon.电邮-diànyóu!=e_mail  ->  电邮_diànyóu!=e_mail
+  McshTchInf000040:334  McshZhon.diànzǐ-yóujiàn-电子邮件!=e-mail!⇒diànyóu-电邮  ->  diànzǐ-yóujiàn-电子邮件!=e-mail!⇒diànyóu_电邮
+  McshTchInf000040:335  McshZhon.diànzǐ-yóujiàn-电子邮件!=e-mail!⇒电邮-diànyóu  ->  diànzǐ-yóujiàn-电子邮件!=e-mail!⇒电邮_diànyóu
+  McshTchInf000040:336  McshZhon.电子邮件-diànzǐ-yóujiàn!=e-mail!⇒电邮-diànyóu  ->  电子邮件-diànzǐ-yóujiàn!=e-mail!⇒电邮_diànyóu
+  McshTchInf000040:338  McshElln.ηλεκτρονικό-ταχυδρομείο!το!=e-mail!⇒η-ταχ  ->  ηλεκτρονικό-ταχυδρομείο!το!=e-mail!⇒η_ταχ
+
+=== ADD (121) — the-old main-name kept as a-synonym: X!⇒X'
+  McshLag000020:1570  <br>* McshElln.κλίσης-τύπος!⇒κλίσης_τύπος,
+  McshLag000022:311  <br>* McshElla.ἀγανακτέω-ῶ!~verbElla!⇒ἀγανακτέω_ῶ,
+  McshLag000022:333  <br>* McshElla.ἀγαπάω-ῶ!~verbElla!⇒ἀγαπάω_ῶ,
+  McshLag000022:519  <br>* McshElla.ἀγνοέω-ῶ!~verbElla!⇒ἀγνοέω_ῶ,
+  McshLag000022:921  <br>* McshElla.ἀγωνιάω-ῶ!~verbElla!⇒ἀγωνιάω_ῶ,
+  McshLag000022:1121  <br>* McshElla.ἀδικέω-ῶ!~verbElla!⇒ἀδικέω_ῶ,
+  McshLag000022:1489  <br>* McshElla.ἀθυμέω-ῶ!~verbElla!⇒ἀθυμέω_ῶ,
+  McshLag000022:2118  <br>* McshElla.ἀκέομαι-οῦμαι!~verbElla!⇒ἀκέομαι_οῦμαι,
+  McshLag000022:2192  <br>* McshElla.ἀκολουθέω-ῶ!~verbElla!⇒ἀκολουθέω_ῶ,
+  McshLag000022:2434  <br>* McshElla.ἀκριβόω-ῶ!~verbElla!⇒ἀκριβόω_ῶ,
+  McshLag000022:2468  <br>* McshElla.ἀκροάομαι-ῶμαι!~verbElla!⇒ἀκροάομαι_ῶμαι,
+  McshLag000022:2708  <br>* McshElla.ἀλγέω-ῶ!~verbElla!⇒ἀλγέω_ῶ,
+  McshLag000022:3123  <br>* McshElla.ἀλλοτριόω-ῶ!~verbElla!⇒ἀλλοτριόω_ῶ,
+  McshLag000022:3768  <br>* McshElla.ἀναβιόω-ῶ!~verbElla!⇒ἀναβιόω_ῶ,
+  McshLag000022:3911  <br>* McshElla.ἀναθεωρέω-ῶ!~verbElla!⇒ἀναθεωρέω_ῶ,
+  McshLag000022:3948  <br>* McshElla.ἀναθρέω-ῶ!~verbElla!⇒ἀναθρέω_ῶ,
+  McshLag000022:3994  <br>* McshElla.ἀναιρέω-ῶ!~verbElla!⇒ἀναιρέω_ῶ,
+  McshLag000022:4073  <br>* McshElla.ἀνακαλέω-ῶ!~verbElla!⇒ἀνακαλέω_ῶ,
+  McshLag000022:4467  <br>* McshElla.ἀναπληρόω-ῶ!~verbElla!⇒ἀναπληρόω_ῶ,
+  McshLag000022:4529  <br>* McshElla.ἀναρτάω-ῶ!~verbElla!⇒ἀναρτάω_ῶ,
+  McshLag000022:4973  <br>* McshElla.ἀνιάω-ῶ!~verbElla!⇒ἀνιάω_ῶ,
+  McshLag000022:5300  <br>* McshElla.ἀξιόω-ῶ!~verbElla!⇒ἀξιόω_ῶ,
+  McshLag000022:5495  <br>* McshElla.ἀπαντάω-ῶ!~verbElla!⇒ἀπαντάω_ῶ,
+  McshLag000022:5534  <br>* McshElla.ἀπαξιόω-ῶ!~verbElla!⇒ἀπαξιόω_ῶ,
+  McshLag000022:5599  <br>* McshElla.ἀπειθέω-ῶ!~verbElla!⇒ἀπειθέω_ῶ,
+  McshLag000022:5833  <br>* McshElla.ἀπιστέω-ῶ!~verbElla!⇒ἀπιστέω_ῶ,
+  McshLag000022:6053  <br>* McshElla.ἀποδειλιάω-ῶ!~verbElla!⇒ἀποδειλιάω_ῶ,
+  McshLag000022:6071  <br>* McshElla.ἀποδεκατόω-ῶ!~verbElla!⇒ἀποδεκατόω_ῶ,
+  McshLag000022:6111  <br>* McshElla.ἀποδημέω-ῶ!~verbElla!⇒ἀποδημέω_ῶ,
+  McshLag000022:6217  <br>* McshElla.ἀποικέω-ῶ!~verbElla!⇒ἀποικέω_ῶ,
+  McshLag000022:6309  <br>* McshElla.ἀποκληρόω-ῶ!~verbElla!⇒ἀποκληρόω_ῶ,
+  McshLag000022:6512  <br>* McshElla.ἀπολογέομαι-οῦμαι!~verbElla!⇒ἀπολογέομαι_οῦμαι,
+  McshLag000022:6589  <br>* McshElla.ἀπορέω-ῶ!~verbElla!⇒ἀπορέω_ῶ,
+  McshLag000022:6658  <br>* McshElla.ἀποτελέω-ῶ!~verbElla!⇒ἀποτελέω_ῶ,
+  McshLag000022:6914  <br>* McshElla.ἀριθμέω-ῶ!~verbElla!⇒ἀριθμέω_ῶ,
+  McshLag000022:6936  <br>* McshElla.ἀριστάω-ῶ!~verbElla!⇒ἀριστάω_ῶ,
+  McshLag000022:6975  <br>* McshElla.ἀριστοποιέω-ῶ!~verbElla!⇒ἀριστοποιέω_ῶ,
+  McshLag000022:6988  <br>* McshElla.ἀρκέω-ῶ!~verbElla!⇒ἀρκέω_ῶ,
+  McshLag000022:7040  <br>* McshElla.ἀρόω-ῶ!~verbElla!⇒ἀρόω_ῶ,
+  McshLag000022:7110  <br>* McshElla.ἀρτάω-ῶ!~verbElla!⇒ἀρτάω_ῶ,
+  McshLag000022:7514  <br>* McshElla.ἀφαιρέω-ῶ!~verbElla!⇒ἀφαιρέω_ῶ,
+  McshLag000022:7659  <br>* McshElla.ἀφικνέομαι-οῦμαι!~verbElla!⇒ἀφικνέομαι_οῦμαι,
+  McshLag000022:7755  <br>* McshElla.ἀχρειόω-ῶ!~verbElla!⇒ἀχρειόω_ῶ,
+  McshLag000022:12816  <br>* McshElla.ἐάω-ῶ!~verbElla!⇒ἐάω_ῶ,
+  McshLag000022:12884  <br>* McshElla.ἐγγυάω-ῶ!~verbElla!⇒ἐγγυάω_ῶ,
+  McshLag000022:13026  <br>* McshElla.ἐγκαλέω-ῶ!~verbElla!⇒ἐγκαλέω_ῶ,
+  McshLag000022:13234  <br>* McshElla.ἐγχειρέω-ῶ!~verbElla!⇒ἐγχειρέω_ῶ,
+  McshLag000022:13287  <br>* McshElla.ἐγχωρέω-ῶ!~verbElla!⇒ἐγχωρέω_ῶ,
+  McshLag000022:14361  <br>* McshElla.ἐκπληρόω-ῶ!~verbElla!⇒ἐκπληρόω_ῶ,
+  McshLag000022:14684  <br>* McshElla.ἐλεέω-ῶ!~verbElla!⇒ἐλεέω_ῶ,
+  McshLag000022:14747  <br>* McshElla.ἐλευθερόω-ῶ!~verbElla!⇒ἐλευθερόω_ῶ,
+  McshLag000022:15312  <br>* McshElla.ἐνδημέω-ῶ!~verbElla!⇒ἐνδημέω_ῶ,
+  McshLag000022:15536  <br>* McshElla.ἐνθυμέομαι-οῦμαι!~verbElla!⇒ἐνθυμέομαι_οῦμαι,
+  McshLag000022:15645  <br>* McshElla.ἐννοέω-ῶ!~verbElla!⇒ἐννοέω_ῶ,
+  McshLag000022:15828  <br>* McshElla.ἐξαιρέω-ῶ!~verbElla!⇒ἐξαιρέω_ῶ,
+  McshLag000022:15871  <br>* McshElla.ἐξαιτέω-ῶ!~verbElla!⇒ἐξαιτέω_ῶ,
+  McshLag000022:15962  <br>* McshElla.ἐξαρκέω-ῶ!~verbElla!⇒ἐξαρκέω_ῶ,
+  McshLag000022:15979  <br>* McshElla.ἐξαρτάω-ῶ!~verbElla!⇒ἐξαρτάω_ῶ,
+  McshLag000022:16128  <br>* McshElla.ἐξηγέομαι-οῦμαι!~verbElla!⇒ἐξηγέομαι_οῦμαι,
+  McshLag000022:16170  <br>* McshElla.ἐξικνέομαι-οῦμαι!~verbElla!⇒ἐξικνέομαι_οῦμαι,
+  McshLag000022:16275  <br>* McshElla.ἐξορμάω-ῶ!~verbElla!⇒ἐξορμάω_ῶ,
+  McshLag000022:16341  <br>* McshElla.ἐξωθέω-ῶ!~verbElla!⇒ἐξωθέω_ῶ,
+  McshLag000022:16466  <br>* McshElla.ἐπαινέω-ῶ!~verbElla!⇒ἐπαινέω_ῶ,
+  McshLag000022:16510  <br>* McshElla.ἐπαιτιάομαι-ῶμαι!~verbElla!⇒ἐπαιτιάομαι_ῶμαι,
+  McshLag000022:16605  <br>* McshElla.ἐπανορθόω-ῶ!~verbElla!⇒ἐπανορθόω_ῶ,
+  McshLag000022:16629  <br>* McshElla.ἐπαρκέω-ῶ!~verbElla!⇒ἐπαρκέω_ῶ,
+  McshLag000022:16797  <br>* McshElla.ἐπερωτάω-ῶ!~verbElla!⇒ἐπερωτάω_ῶ,
+  McshLag000022:17136  <br>* McshElla.ἐπιδημέω-ῶ!~verbElla!⇒ἐπιδημέω_ῶ,
+  McshLag000022:17251  <br>* McshElla.ἐπικαλέω-ῶ!~verbElla!⇒ἐπικαλέω_ῶ,
+  McshLag000022:17331  <br>* McshElla.ἐπικουρέω-ῶ!~verbElla!⇒ἐπικουρέω_ῶ,
+  McshLag000022:17389  <br>* McshElla.ἐπικρατέω-ῶ!~verbElla!⇒ἐπικρατέω_ῶ,
+  McshLag000022:17410  <br>* McshElla.ἐπικτάομαι-ῶμαι!~verbElla!⇒ἐπικτάομαι_ῶμαι,
+  McshLag000022:17561  <br>* McshElla.ἐπιμελέομαι-οῦμαι!~verbElla!⇒ἐπιμελέομαι_οῦμαι,
+  McshLag000022:17630  <br>* McshElla.ἐπινοέω-ῶ!~verbElla!⇒ἐπινοέω_ῶ,
+  McshLag000022:17662  <br>* McshElla.ἐπιορκέω-ῶ!~verbElla!⇒ἐπιορκέω_ῶ,
+  McshLag000022:17778  <br>* McshElla.ἐπισκοπέω-ῶ!~verbElla!⇒ἐπισκοπέω_ῶ,
+  McshLag000022:17819  <br>* McshElla.ἐπιστατέω-ῶ!~verbElla!⇒ἐπιστατέω_ῶ,
+  McshLag000022:17929  <br>* McshElla.ἐπιτελέω-ῶ!~verbElla!⇒ἐπιτελέω_ῶ,
+  McshLag000022:18043  <br>* McshElla.ἐπιτιμάω-ῶ!~verbElla!⇒ἐπιτιμάω_ῶ,
+  McshLag000022:18178  <br>* McshElla.ἐπιχειρέω-ῶ!~verbElla!⇒ἐπιχειρέω_ῶ,
+  McshLag000022:18242  <br>* McshElla.ἐποικέω-ῶ!~verbElla!⇒ἐποικέω_ῶ,
+  McshLag000022:18368  <br>* McshElla.ἐράω-ῶ!~verbElla!⇒ἐράω_ῶ,
+  McshLag000022:18617  <br>* McshElla.ἐρωτάω-ῶ!~verbElla!⇒ἐρωτάω_ῶ,
+  McshLag000022:18700  <br>* McshElla.ἑστιάω-ῶ!~verbElla!⇒ἑστιάω_ῶ,
+  McshLag000022:19662  <br>* McshElla.ἐφικνέομαι-οῦμαι!~verbElla!⇒ἐφικνέομαι_οῦμαι,
+  McshLag000022:19704  <br>* McshElla.ἐφοράω-ῶ!~verbElla!⇒ἐφοράω_ῶ,
+  McshLag000022:19722  <br>* McshElla.ἐφορμέω-ῶ!~verbElla!⇒ἐφορμέω_ῶ,
+  McshLag000022:20394  <br>* McshElla.ἡβάω-ῶ!~verbElla!⇒ἡβάω_ῶ,
+  McshLag000022:20477  <br>* McshElla.ἡγέομαι-οῦμαι!~verbElla!⇒ἡγέομαι_οῦμαι,
+  McshLag000022:20830  <br>* McshElla.ἡμερόω-ῶ!~verbElla!⇒ἡμερόω_ῶ,
+  McshLag000022:21057  <br>* McshElla.ἠρεμέω-ῶ!~verbElla!⇒ἠρεμέω_ῶ,
+  McshLag000022:21162  <br>* McshElla.ἡττάομαι-ῶμαι!~verbElla!⇒ἡττάομαι_ῶμαι,
+  McshLag000022:22608  <br>* McshElla.ἰάομαι-ῶμαι!~verbElla!⇒ἰάομαι_ῶμαι,
+  McshLag000022:22970  <br>* McshElla.ἱκνέομαι-οῦμαι!~verbElla!⇒ἱκνέομαι_οῦμαι,
+  McshLag000022:23021  <br>* McshElla.ἰλιγγιάω-ῶ!~verbElla!⇒ἰλιγγιάω_ῶ,
+  McshLag000022:23278  <br>* McshElla.ἰσόω-ῶ!~verbElla!⇒ἰσόω_ῶ,
+  McshLag000022:32747  <br>* McshElla.ὁδοιπορέω-ῶ!~verbElla!⇒ὁδοιπορέω_ῶ,
+  McshLag000022:32779  <br>* McshElla.ὀδυνάω-ῶ!~verbElla!⇒ὀδυνάω_ῶ,
+  McshLag000022:33311  <br>* McshElla.ὀλιγωρέω-ῶ!~verbElla!⇒ὀλιγωρέω_ῶ,
+  McshLag000022:33456  <br>* McshElla.ὁμιλέω-ῶ!~verbElla!⇒ὁμιλέω_ῶ,
+  McshLag000022:33552  <br>* McshElla.ὁμολογέω-ῶ!~verbElla!⇒ὁμολογέω_ῶ,
+  McshLag000022:34009  <br>* McshElla.ὀπτάω-ῶ!~verbElla!⇒ὀπτάω_ῶ,
+  McshLag000022:34045  <br>* McshElla.ὁράω-ῶ!~verbElla!⇒ὁράω_ῶ,
+  McshLag000022:34243  <br>* McshElla.ὁρμάω-ῶ!~verbElla!⇒ὁρμάω_ῶ,
+  McshLag000022:34275  <br>* McshElla.ὁρμέω-ῶ!~verbElla!⇒ὁρμέω_ῶ,
+  McshLag000022:34356  <br>* McshElla.ὀρρωδέω-ῶ!~verbElla!⇒ὀρρωδέω_ῶ,
+  McshLag000022:34419  <br>* McshElla.ὀρχέομαι-οῦμαι!~verbElla!⇒ὀρχέομαι_οῦμαι,
+  McshLag000022:35068  <br>* McshElla.ὀψωνέω-ῶ!~verbElla!⇒ὀψωνέω_ῶ,
+  McshLag000022:46219  <br>* McshElla.ὑλακτέω-ῶ!~verbElla!⇒ὑλακτέω_ῶ,
+  McshLag000022:46324  <br>* McshElla.ὑπαντάω-ῶ!~verbElla!⇒ὑπαντάω_ῶ,
+  McshLag000022:46540  <br>* McshElla.ὑπερφρονέω-ῶ!~verbElla!⇒ὑπερφρονέω_ῶ,
+  McshLag000022:46582  <br>* McshElla.ὑπισχνέομαι-οῦμαι!~verbElla!⇒ὑπισχνέομαι_οῦμαι,
+  McshLag000022:46680  <br>* McshElla.ὑποδέω-ῶ!~verbElla!⇒ὑποδέω_ῶ,
+  McshLag000022:46830  <br>* McshElla.ὑπονοέω-ῶ!~verbElla!⇒ὑπονοέω_ῶ,
+  McshLag000022:46927  <br>* McshElla.ὑπουργέω-ῶ!~verbElla!⇒ὑπουργέω_ῶ,
+  McshLag000022:46969  <br>* McshElla.ὑποχωρέω-ῶ!~verbElla!⇒ὑποχωρέω_ῶ,
+  McshLag000022:47016  <br>* McshElla.ὑστερέω-ῶ!~verbElla!⇒ὑστερέω_ῶ,
+  McshLag000022:49206  <br>* McshElla.ὠθέω-ῶ!~verbElla!⇒ὠθέω_ῶ,
+  McshLag000022:49238  <br>* McshElla.ὠνέομαι-οῦμαι!~verbElla!⇒ὠνέομαι_οῦμαι,
+  McshTchInf000040:332  <br>* McshZhon.diànyóu-电邮!⇒diànyóu_电邮,
+  McshTchInf000040:333  <br>* McshZhon.电邮-diànyóu!⇒电邮_diànyóu,

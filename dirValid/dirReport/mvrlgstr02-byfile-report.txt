@@ -5,34 +5,6 @@ warnings: 66 in 27 files | "does not list it": 0 | "G has NO specific-tree::": 6
 file:line = the line of S's generic-tree::; rows of one file are in line order
 
   count  not-listed  no-sptr  file
-     16           0       16  McshTchInf000016
-      5           0        5  McshTchInf000022
-      4           0        4  McshHlth000002
-      4           0        4  McshStnlaw000003
-      4           0        4  McshTchInf000021
-      4           0        4  McshTchInf000030
-      3           0        3  McshLag000011
-      3           0        3  McshTchInf000010
-      3           0        3  McshTchInf000015
-      2           0        2  McshTchInf000006
-      2           0        2  McshTchInf000024
-      1           0        1  McshCor000002
-      1           0        1  McshCor000004
-      1           0        1  McshCor000011
-      1           0        1  McshCor000018
-      1           0        1  McshHlth000004
-      1           0        1  McshLag000007
-      1           0        1  McshLag000012
-      1           0        1  McshLag000018
-      1           0        1  McshLag000020
-      1           0        1  McshLag000035
-      1           0        1  McshLag000036
-      1           0        1  McshOgm000007
-      1           0        1  McshStn000014
-      1           0        1  McshStn000015
-      1           0        1  McshTchInf000018
-      1           0        1  McshTchInf000019
-
 === BY-GENERIC (49) — the generics G with the most specifics not listed
       5  McshTchInf000016#idDbcBig
       4  McshStnlaw000003#idLawEus026
@@ -147,34 +119,34 @@ file:line = the line of S's generic-tree::; rows of one file are in line order
   McshHlth000004:699  Dna_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000007 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000007:1435  Semucnpt_Gntr  -> generic McshLag000003#idInfHmnBrn001Cpt  | G has NO specific-tree::
+  McshLag000007:1435  Semucnpt_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000012 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000012:4730  Espoverbmbrg_Gntr  -> generic McshLag000007#idLHmnmverbmrfdg  | G has NO specific-tree::
+  McshLag000012:4730  Espoverbmbrg_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000018 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000018:12358  Zhon_verb'member-finding_Gntr  -> generic McshLag000007#idLHmnmverbmrfdg  | G has NO specific-tree::
+  McshLag000018:12358  Zhon_verb'member-finding_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000020 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000020:12727  paralanguageElln_Gntr  -> generic McshLag000007#idLHmnmprlg  | G has NO specific-tree::
+  McshLag000020:12727  paralanguageElln_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000035 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000035:2610  Span_lago_Gntr  -> generic McshLag000007#idLHmnm0031  | G has NO specific-tree::
+  McshLag000035:2610  Span_lago_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000036 (1: 0 not listed, 1 G without specific-tree)
-  McshLag000036:3051  Arab_lago_Gntr  -> generic McshLag000007#idLHmnm0031  | G has NO specific-tree::
+  McshLag000036:3051  Arab_lago_Gntr  -> generic   | G has NO specific-tree::
 
 === McshOgm000007 (1: 0 not listed, 1 G without specific-tree)
-  McshOgm000007:1901  cellPlant_Gntr  -> generic McshOgm000007#idCellOgm003  | G has NO specific-tree::
+  McshOgm000007:1901  cellPlant_Gntr  -> generic   | G has NO specific-tree::
 
 === McshStn000014 (1: 0 not listed, 1 G without specific-tree)
-  McshStn000014:1015  ogznCsmg_Gntr  -> generic McshStn000008#idOgznScdnSrpn  | G has NO specific-tree::
+  McshStn000014:1015  ogznCsmg_Gntr  -> generic   | G has NO specific-tree::
 
 === McshStn000015 (1: 0 not listed, 1 G without specific-tree)
-  McshStn000015:1258  OgznPrdg_Gntr  -> generic McshStn000008#idOgznScdnSrpn  | G has NO specific-tree::
+  McshStn000015:1258  OgznPrdg_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000018 (1: 0 not listed, 1 G without specific-tree)
-  McshTchInf000018:220  AgntEthr'trustless-attribute_Gntr  -> generic McshTchInf000015#idAlgntdcrzTrst  | G has NO specific-tree::
+  McshTchInf000018:220  AgntEthr'trustless-attribute_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000019 (1: 0 not listed, 1 G without specific-tree)
-  McshTchInf000019:3307  DAOstack_governor_Gntr  -> generic McshTchInf000019#idDeOzngvnr  | G has NO specific-tree::
+  McshTchInf000019:3307  DAOstack_governor_Gntr  -> generic   | G has NO specific-tree::

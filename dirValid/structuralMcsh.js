@@ -43,12 +43,16 @@
  *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
  *  MvrlGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
  *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
+ *
+ *  MvrlMnnm01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
+ *             createMcsh.mjs --mainname fixes it
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-28-0.2026-10-24: MvrlMnnm01 no-hyphen, main-names with underscores',
     'structuralMcsh.js.0-27-0.2026-10-22: MvrlGstr02 generic_has_specific, fGstrIndex shared',
     'structuralMcsh.js.0-26-0.2026-10-20: MvrlGstr01 specific_has_generic',
     'structuralMcsh.js.0-25-0.2026-10-19: MvrlId12 sptr_specific_tree_suffix, fCheckIdParaSuffix rEndIn',
@@ -444,6 +448,42 @@ function fCheckIdSptr(aoCnptFile) {
     /sptr[A-Z0-9]?$/);
 }
 
+// ❌ [MvrlMnnm01] no-hyphen: a-main-name, the-text after "!⇒" in a-name-line, has NO
+//   hyphen "-": rltnAttribute_then_entity, NOT rltnAttribute-then-entity.
+//   ONE issue per concept, McsLago and main-name, on the-first name-line that points to it.
+//   createMcsh.mjs --mainname changes the-hyphens to underscores.
+function fCheckMainNameHyphen(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    const aoCnpt = [
+      { ...fFindCnptOfFile(oCnptFile), aoTitlePara: oCnptFile.aoTitlePara },
+      ...fFindCnpt(oCnptFile)
+    ];
+    for (const oCnpt of aoCnpt) {
+      // the-name::-para of a-cnptSect or cnptFile; a-cnptPara IS its name-para
+      const oParaName = fFindParaAll(oCnpt, 'name')[0];
+      const sIdPara = oCnpt.sType === 'cnptPara' ? oCnpt.sNameId : (oParaName?.sNameId ?? oCnpt.sNameId);
+      const aLinePara = String(oCnpt.sType === 'cnptPara' ? oCnpt.sPara : oParaName?.sPara ?? '').split('\n');
+      const nLinePara = oCnptFile.oMapIdLine.get(sIdPara) ?? null;
+      for (const oLago of Object.values(oCnpt.ooNameLago ?? {})) {
+        const oSetMain = new Set((oLago.aoName ?? [])
+          .map(oName => oName.sNameFormal).filter(sMain => sMain.includes('-')));
+        for (const sMain of oSetMain) {
+          const sLago = oLago.aoName.find(oName => oName.sNameFormal === sMain).sLago;
+          // the-line of the-first "!⇒main-name" inside the-para, when the-para is known
+          const nOffset = aLinePara.findIndex(sLine => sLine.includes(`!⇒${sMain}`));
+          const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset : nLinePara;
+          aoIssue.push(fIssue('ERROR', 'MvrlMnnm01', oCnptFile.sNameFile, oCnpt,
+            `no-hyphen: main-name "Mcsh${sLago}.${sMain}" has "-" — use "${sMain.replace(/-/g, '_')}"`,
+            nLine));
+        }
+      }
+    }
+  }
+  return aoIssue;
+}
+
 // ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
 //   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
@@ -814,6 +854,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoGstrGncSpc = fCheckGstrGenericSpecific(aoCnptFile);
   aoAll.push(...aoGstrGncSpc);
   fLog(`${aoGstrGncSpc.length} issues`);
+
+  fWrite('   MvrlMnnm01 Main-names no-hyphen... ');
+  const aoMainHyphen = fCheckMainNameHyphen(aoCnptFile);
+  aoAll.push(...aoMainHyphen);
+  fLog(`${aoMainHyphen.length} issues`);
 
   return aoAll;
 }

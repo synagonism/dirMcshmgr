@@ -53,6 +53,7 @@ import { fRunChecksHitp } from './structuralHitp.js'
 const
   // contains the-versions of reportMcsh.mjs
   aVersion = [
+    'reportMcsh.mjs.0-5-0.2026-10-24: usage lists MvrlMnnm01, Hvrw08',
     'reportMcsh.mjs.0-4-0.2026-10-16: one === heading per code, entries indented for folding',
     'reportMcsh.mjs.0-3-0.2026-10-09: and Hitp-rules (Hvr.. codes)',
     'reportMcsh.mjs.0-2-0.2026-10-04: the-report goes to reportMcsh.txt',
@@ -93,8 +94,8 @@ async function fMain() {
     console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07] [--line] [--file McshDir000000]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --code       one or more codes, comma-separated:');
-    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06 MvrlId01 MvrlId02 MvrlId03 MvrlId04 MvrlId05 MvrlId06 MvrlId07 MvrlId08 MvrlId09 MvrlId10 MvrlId11 MvrlId12 MvrlGstr01 MvrlGstr02');
-    console.log('                 Hitp: Hvre01 ... Hvre07  Hvrw01 ... Hvrw07');
+    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06 MvrlId01 MvrlId02 MvrlId03 MvrlId04 MvrlId05 MvrlId06 MvrlId07 MvrlId08 MvrlId09 MvrlId10 MvrlId11 MvrlId12 MvrlGstr01 MvrlGstr02 MvrlMnnm01');
+    console.log('                 Hitp: Hvre01 ... Hvre07  Hvrw01 ... Hvrw08');
     console.log('  --line       per file, every issue: its line and its message');
     console.log('  --file       one file only, given as McshDir000000');
     console.log('  OUTPUT: dirValid/reportMcsh.txt, overwritten on every run');

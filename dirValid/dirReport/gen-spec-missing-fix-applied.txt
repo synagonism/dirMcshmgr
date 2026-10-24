@@ -1,9 +1,9 @@
-gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-22   DRY=false
+gen-spec MISSING fix: X added to Y's generic-tree:: — 2026-10-24   DRY=false
 
-MISSING rows: 1 | generic-trees extended: 1 | lines added: 1 | skipped: 0 | files written: 1
+MISSING rows: 2 | generic-trees extended: 1 | lines added: 1 | skipped: 0 | files written: 1
 
 === ADDED (1)
-  McshLag000033:488  idLDeutphnmgntr  += DeutUnit_Gntr,   (Y phoneme)
+  McshLag000005:333  idLOgsmMindgntr  += Ogsm_lago_Gntr,   (Y brain-language)
 
 === Y-IS-A-PAGE (0)
   (none)
