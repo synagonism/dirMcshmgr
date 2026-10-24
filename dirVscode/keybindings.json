@@ -1022,7 +1022,7 @@
       { "command": "closeFindWidget" },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "gntr\">generic-tree::" }},
-      { "command": "type", "args": { "text": "\n  <br>* McshEngl.mainmain_Gntr," } },
+      { "command": "type", "args": { "text": "\n<br>* McshEngl.mainmain_Gntr," } },
       { "command": "type", "args": { "text": "\n<br>===\n<br>* ...entity_Gntr,\n<a class=\"clsHide\" href=\"#" } },
       { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
       { "command": "type", "args": { "text": "gntr\"></a></p>" } },

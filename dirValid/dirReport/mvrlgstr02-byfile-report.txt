@@ -85,91 +85,66 @@ file:line = the line of S's generic-tree::; rows of one file are in line order
       1  McshTchInf000019#idDeOzngvnr
 
 === McshTchInf000016 (16: 0 not listed, 16 G without specific-tree)
-  McshTchInf000016:2019  Dblockchain-asset'backness_Gntr  -> generic McshTchInf000015#idAlgntevubkn  | G has NO specific-tree::
-  McshTchInf000016:6256  AgntAete_Gntr  -> generic McshTchInf000016#idHswnet  | G has NO specific-tree::
-  McshTchInf000016:7275  AgntBosc_Gntr  -> generic McshTchInf000016#idDbcBig  | G has NO specific-tree::
-  McshTchInf000016:10557  Dcrnet_Gntr  -> generic McshTchInf000016#idDbcBig  | G has NO specific-tree::
-  McshTchInf000016:10755  AgntBtsh_Gntr  -> generic McshTchInf000016#idDbcBig  | G has NO specific-tree::
-  McshTchInf000016:12249  Ddash_net_Gntr  -> generic McshTchInf000016#idDbcBig  | G has NO specific-tree::
-  McshTchInf000016:13390  AgntEmrcn_Gntr  -> generic McshTchInf000016#idHswnet  | G has NO specific-tree::
-  McshTchInf000016:13932  AgntPrcn_Gntr  -> generic McshTchInf000016#idHswnet  | G has NO specific-tree::
-  McshTchInf000016:15050  AgntDfnt_Gntr  -> generic McshTchInf000016#idDbcBig  | G has NO specific-tree::
-  McshTchInf000016:15294  Humaniq_Gntr  -> generic McshTchInf000016#idDbcDpt  | G has NO specific-tree::
-  McshTchInf000016:16053  BkchApndPerm_Gntr  -> generic McshTchInf000015#idAlgntnPmsapd  | G has NO specific-tree::
-  McshTchInf000016:16071  BkchApndPermNo_Gntr  -> generic McshTchInf000015#idAlgntnPmsapdN  | G has NO specific-tree::
-  McshTchInf000016:16089  BkcnJoinPerm_Gntr  -> generic McshTchInf000015#idAlgntnPmsusr  | G has NO specific-tree::
-  McshTchInf000016:16107  BkcnJoinPermNo_Gntr  -> generic McshTchInf000015#idAlgntnPmsusrN  | G has NO specific-tree::
-  McshTchInf000016:16130  BkchPblc_Gntr  -> generic McshTchInf000015#idAlgntnPbl  | G has NO specific-tree::
-  McshTchInf000016:16154  BkcnPblcNo_Gntr  -> generic McshTchInf000015#idAlgntnPblN  | G has NO specific-tree::
 
 === McshTchInf000022 (5: 0 not listed, 5 G without specific-tree)
-  McshTchInf000022:915  Frcnblck'interval_Gntr  -> generic McshTchInf000016#idDbcblktimGnrt  | G has NO specific-tree::
-  McshTchInf000022:937  Frcnblck-explorer_Gntr  -> generic McshTchInf000016#idDbcbex  | G has NO specific-tree::
-  McshTchInf000022:1056  FrcnexvuC'rate_Gntr  -> generic McshTchInf000015#idAlgntevuexrate  | G has NO specific-tree::
-  McshTchInf000022:1269  Frcnenergy_Gntr  -> generic McshTchInf000016#idDbcenrg  | G has NO specific-tree::
-  McshTchInf000022:1554  Frcnirsc_Gntr  -> generic McshTchInf000016#idDbcirsc  | G has NO specific-tree::
 
 === McshHlth000002 (4: 0 not listed, 4 G without specific-tree)
-  McshHlth000002:5301  nutrient_Gntr  -> generic McshHlth000008#idMtrHlthHmn001  | G has NO specific-tree::
-  McshHlth000002:11039  SystDigestive'functing_Gntr  -> generic McshHlth000002#idSysOgnHmnftg  | G has NO specific-tree::
-  McshHlth000002:14958  intrauterine-life_Gntr  -> generic McshCor000003#idEntevogtmil  | G has NO specific-tree::
-  McshHlth000002:15219  HmbdLife_Gntr  -> generic McshCor000003#idEntevogtmil  | G has NO specific-tree::
+  McshHlth000002:5301  nutrient_Gntr  -> generic   | G has NO specific-tree::
+  McshHlth000002:11039  SystDigestive'functing_Gntr  -> generic   | G has NO specific-tree::
+  McshHlth000002:14958  intrauterine-life_Gntr  -> generic   | G has NO specific-tree::
+  McshHlth000002:15219  HmbdLife_Gntr  -> generic   | G has NO specific-tree::
 
 === McshStnlaw000003 (4: 0 not listed, 4 G without specific-tree)
-  McshStnlaw000003:2466  EulawSecoAction_programe_Gntr  -> generic McshStnlaw000003#idLawEus026  | G has NO specific-tree::
-  McshStnlaw000003:2488  EulawDeclaration_Gntr  -> generic McshStnlaw000003#idLawEus026  | G has NO specific-tree::
-  McshStnlaw000003:2509  EulawInta_Gntr  -> generic McshStnlaw000003#idLawEus026  | G has NO specific-tree::
-  McshStnlaw000003:2568  EulawResolution_Gntr  -> generic McshStnlaw000003#idLawEus026  | G has NO specific-tree::
 
 === McshTchInf000021 (4: 0 not listed, 4 G without specific-tree)
-  McshTchInf000021:1424  Deos_explorer_Gntr  -> generic McshTchInf000016#idDbcbex  | G has NO specific-tree::
-  McshTchInf000021:1575  Deos_account_Gntr  -> generic McshTchInf000016#idDbcwltacnt  | G has NO specific-tree::
-  McshTchInf000021:2278  Agnteos'voting_Gntr  -> generic McshTchInf000015#idAlgntgovvtg  | G has NO specific-tree::
-  McshTchInf000021:2572  Eos-client_Gntr  -> generic McshTchInf000016#idDbcpgmClnt  | G has NO specific-tree::
+  McshTchInf000021:1424  Deos_explorer_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000021:1575  Deos_account_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000021:2278  Agnteos'voting_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000021:2572  Eos-client_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000030 (4: 0 not listed, 4 G without specific-tree)
-  McshTchInf000030:387  Rust_lago_keyword_Gntr  -> generic McshTchInf000006#idLSrcdwrdRsvd  | G has NO specific-tree::
-  McshTchInf000030:2576  Rust_lago_named_Sunt_Gntr  -> generic McshTchInf000006#idLSrcdsuntNmd  | G has NO specific-tree::
-  McshTchInf000030:2963  Rustroot_Gntr  -> generic McshTchInf000006#idLSrcdroot  | G has NO specific-tree::
-  McshTchInf000030:4332  Rust_lago_Gntr  -> generic McshTchInf000006#idLSrcdCmpd  | G has NO specific-tree::
+  McshTchInf000030:387  Rust_lago_keyword_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000030:2576  Rust_lago_named_Sunt_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000030:2963  Rustroot_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000030:4332  Rust_lago_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000011 (3: 0 not listed, 3 G without specific-tree)
-  McshLag000011:8121  Engladjesyno_Gntr  -> generic McshLag000007#idLHmnmnameTrmmbrSnmr  | G has NO specific-tree::
-  McshLag000011:9734  Engl_adve'syno_member_Gntr  -> generic McshLag000007#idLHmnmnameTrmmbrSnmr  | G has NO specific-tree::
-  McshLag000011:26768  Englverbmbrg_Gntr  -> generic McshLag000007#idLHmnmverbmrfdg  | G has NO specific-tree::
+  McshLag000011:8121  Engladjesyno_Gntr  -> generic   | G has NO specific-tree::
+  McshLag000011:9734  Engl_adve'syno_member_Gntr  -> generic   | G has NO specific-tree::
+  McshLag000011:26768  Englverbmbrg_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000010 (3: 0 not listed, 3 G without specific-tree)
-  McshTchInf000010:2997  Jsnull_Gntr  -> generic McshTchInf000010#idLJsgnopmN  | G has NO specific-tree::
-  McshTchInf000010:3533  Jsr_Gntr  -> generic McshTchInf000010#idLJsgnRegExpp  | G has NO specific-tree::
-  McshTchInf000010:3661  Jss_Gntr  -> generic McshTchInf000010#idLJsgnStringp  | G has NO specific-tree::
+  McshTchInf000010:2997  Jsnull_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000010:3533  Jsr_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000010:3661  Jss_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000015 (3: 0 not listed, 3 G without specific-tree)
-  McshTchInf000015:4047  Agntexvu'backness_Gntr  -> generic McshTchInf000015#idAlgntevubkn  | G has NO specific-tree::
-  McshTchInf000015:8517  Lykklyci'ticker_Gntr  -> generic McshTchInf000015#idAlgntevusbl  | G has NO specific-tree::
-  McshTchInf000015:8681  Lykklyci_Gntr  -> generic McshTchInf000018#idEthevuCNErc20  | G has NO specific-tree::
+  McshTchInf000015:4047  Agntexvu'backness_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000015:8517  Lykklyci'ticker_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000015:8681  Lykklyci_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000006 (2: 0 not listed, 2 G without specific-tree)
-  McshTchInf000006:2090  Srcdalgo'domain_Gntr  -> generic McshTchInf000006#idLCpgmarchdmn  | G has NO specific-tree::
-  McshTchInf000006:3038  Srcd_lago'info-resource_Gntr  -> generic McshTchInf000006#idLCpgmirsc  | G has NO specific-tree::
+  McshTchInf000006:2090  Srcdalgo'domain_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000006:3038  Srcd_lago'info-resource_Gntr  -> generic   | G has NO specific-tree::
 
 === McshTchInf000024 (2: 0 not listed, 2 G without specific-tree)
-  McshTchInf000024:1096  Stemclnt_Gntr  -> generic McshTchInf000015#idAlgntpgmClnt  | G has NO specific-tree::
-  McshTchInf000024:2419  Stmadrs_Gntr  -> generic McshTchInf000016#idDbcads  | G has NO specific-tree::
+  McshTchInf000024:1096  Stemclnt_Gntr  -> generic   | G has NO specific-tree::
+  McshTchInf000024:2419  Stmadrs_Gntr  -> generic   | G has NO specific-tree::
 
 === McshCor000002 (1: 0 not listed, 1 G without specific-tree)
-  McshCor000002:2425  Mcsspecdiv_Gntr  -> generic McshCor000011#idSys002GcscGcoc  | G has NO specific-tree::
+  McshCor000002:2425  Mcsspecdiv_Gntr  -> generic   | G has NO specific-tree::
 
 === McshCor000004 (1: 0 not listed, 1 G without specific-tree)
-  McshCor000004:1207  doing'valence_Gntr  -> generic McshCor000003#idEntBodyNvlc  | G has NO specific-tree::
+  McshCor000004:1207  doing'valence_Gntr  -> generic   | G has NO specific-tree::
 
 === McshCor000011 (1: 0 not listed, 1 G without specific-tree)
-  McshCor000011:3181  Plantinfosyst_Gntr  -> generic McshCor000011#idSysMng001att002  | G has NO specific-tree::
+  McshCor000011:3181  Plantinfosyst_Gntr  -> generic   | G has NO specific-tree::
 
 === McshCor000018 (1: 0 not listed, 1 G without specific-tree)
-  McshCor000018:2721  FctgEmoting'stimulus_Gntr  -> generic McshCor000013#idBrngEmtgstml  | G has NO specific-tree::
+  McshCor000018:2721  FctgEmoting'stimulus_Gntr  -> generic   | G has NO specific-tree::
 
 === McshHlth000004 (1: 0 not listed, 1 G without specific-tree)
-  McshHlth000004:699  Dna_Gntr  -> generic McshOgm000007#idCellOgmatt024  | G has NO specific-tree::
+  McshHlth000004:699  Dna_Gntr  -> generic   | G has NO specific-tree::
 
 === McshLag000007 (1: 0 not listed, 1 G without specific-tree)
   McshLag000007:1435  Semucnpt_Gntr  -> generic McshLag000003#idInfHmnBrn001Cpt  | G has NO specific-tree::

@@ -811,6 +811,9 @@ let fContainersInsert = function () {
     }
     if (sSelection !== '') {
       sSelection = sSelection.replace(/[-_'.:/;@+]*$/, '')
+      // drop a-leading English article so 'the-name'/'a-name' search as 'name'
+      if (sSelection.startsWith('the-'))  sSelection = sSelection.slice(4)
+      else if (sSelection.startsWith('a-'))  sSelection = sSelection.slice(2)
       if (sSelection.startsWith('_'))  sSelection = sSelection.slice(1) //_DESCRIPTION
       if (sSelection.startsWith('cpt'))  sSelection = 'concept' + sSelection.slice(3)
       oEltTabSearchIpt.value = sSelection + ' '
@@ -907,6 +910,9 @@ let fContainersInsert = function () {
    */
   function fSelectionModify(sSelectionIn) {
     sSelectionIn = sSelectionIn.replace(/[-_'.:/;@+]*$/, '') // clears end
+    // drop a-leading English article so 'the-name'/'a-name' search as 'name'
+    if (sSelectionIn.startsWith('the-'))  sSelectionIn = sSelectionIn.slice(4)
+    else if (sSelectionIn.startsWith('a-'))  sSelectionIn = sSelectionIn.slice(2)
     if (sSelectionIn.startsWith('_'))  sSelectionIn = sSelectionIn.slice(1) //_DESCRIPTION
     if (sSelectionIn.startsWith('cpt'))  sSelectionIn = 'concept' + sSelectionIn.slice(3)
     sSelectionIn = sSelectionIn + ' ' // for exact searching
