@@ -49,12 +49,25 @@
  *
  *  MvrlMnnm01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
+ *  MvrlMnnm02 (warning) evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" cnptSect
+ *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
+ *  MvrlMnnm03 (warning) evalg_evaluating_main: the-main-name of an "evaluation|evaluating of X" | "X'evaluation" cnptSect
+ *             does not end in "evalg" or does not start with a-capital letter (Xevalg)
+ *  MvrlMnnm04 (warning) doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" cnptSect
+ *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
+ *  MvrlMnnm05 (warning) infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" cnptSect
+ *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-35-0.2026-10-26: MvrlMnnm05 infrsc_info_resource_main',
+    'structuralMcsh.js.0-34-0.2026-10-26: MvrlMnnm04 doing_DOING_main; no apostrophe before the-suffix',
+    'structuralMcsh.js.0-33-0.2026-10-26: MvrlMnnm03 evalg_evaluating_main, fCheckMainNameSuffix shared',
+    'structuralMcsh.js.0-32-0.2026-10-26: MvrlMnnm02 main-name starts with a-capital letter',
+    'structuralMcsh.js.0-31-0.2026-10-26: MvrlMnnm02 evolg_evoluting_main',
     'structuralMcsh.js.0-30-0.2026-10-24: generic-tree:: "=== label:" groups are NOT generics (MvrlGstr01/02)',
     'structuralMcsh.js.0-29-0.2026-10-24: MvrlId13 srtr_structure_suffix',
     'structuralMcsh.js.0-28-0.2026-10-24: MvrlMnnm01 no-hyphen, main-names with underscores',
@@ -495,6 +508,70 @@ function fCheckMainNameHyphen(aoCnptFile) {
   return aoIssue;
 }
 
+/**
+ * DOING: the-main-name of a-cnptSect whose title matches rTitle ends in sSuffix, without an-apostrophe
+ *   before it, and starts with a-capital letter (a-multiword attribute): Humanevolg, NOT humanevolg | Human'evolg.
+ * OUTPUT: array of WARN-issues with code sCode.
+ */
+function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
+      if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
+      const sMain = oSect.sNameFormal ?? '';
+      const bSuffix = sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix), bCapital = /^[A-Z]/.test(sMain);
+      if (bSuffix && bCapital) continue;
+      // the-line of the-main-name inside the-name::-para, when the-para is known
+      const oParaName = fFindParaAll(oSect, 'name')[0];
+      const nLinePara = oParaName ? oCnptFile.oMapIdLine.get(oParaName.sNameId) ?? null : null;
+      const aLinePara = String(oParaName?.sPara ?? '').split('\n');
+      const nOffset = aLinePara.findIndex(sLine => sLine.includes(`McshEngl.${sMain}`) || sLine.includes(`!⇒${sMain}`));
+      const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset
+        : nLinePara ?? oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null;
+      aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oSect,
+        `${sNameRule}: main-name "McshEngl.${sMain}" of "${oSect.sNameTitle}" ` +
+        (bSuffix ? 'does not start with a-capital letter'
+          : sMain.endsWith("'" + sSuffix) ? `has an-apostrophe before "${sSuffix}": use X${sSuffix}`
+          : `does not end in "${sSuffix}"`),
+        nLine));
+    }
+  }
+  return aoIssue;
+}
+
+// ⚠️ [MvrlMnnm02] evolg_evoluting_main: the-main-name of an-evoluting-concept
+//   ("evoluting of X", "NN_evoluting of X", "X'evoluting") is Xevolg, capital first,
+//   NOT evoluting-of-X | X'evoluting | Xevlg | Xevg | Xevog | humanevolg.
+function fCheckMainNameEvolg(aoCnptFile) {
+  return fCheckMainNameSuffix(aoCnptFile, 'MvrlMnnm02', 'evolg_evoluting_main',
+    /^(\d+_)?evoluting of |^[^\s.']+'evoluting$/i, 'evolg');
+}
+
+// ⚠️ [MvrlMnnm03] evalg_evaluating_main: the-main-name of an-evaluating-concept
+//   ("evaluation of X", "evaluating of X", "NN_evaluation of X", "X'evaluation", "X'evaluating")
+//   is Xevalg, capital first, NOT X'evaluation | Xeval | Xeval.
+function fCheckMainNameEvalg(aoCnptFile) {
+  return fCheckMainNameSuffix(aoCnptFile, 'MvrlMnnm03', 'evalg_evaluating_main',
+    /^(\d+_)?evaluat(ion|ing) of |^[^\s.']+'evaluat(ion|ing)$/i, 'evalg');
+}
+
+// ⚠️ [MvrlMnnm04] doing_DOING_main: the-main-name of a-DOING-concept
+//   ("DOING of X", "NN_DOING of X", "X'DOING") is Xdoing, capital first,
+//   NOT X'doing | entity'doing | Xdong | DongX.
+function fCheckMainNameDoing(aoCnptFile) {
+  return fCheckMainNameSuffix(aoCnptFile, 'MvrlMnnm04', 'doing_DOING_main',
+    /^(\d+_)?DOING of |^[^\s.']+'DOING$/i, 'doing');
+}
+
+// ⚠️ [MvrlMnnm05] infrsc_info_resource_main: the-main-name of an-info-resource-concept
+//   ("info-resource of X", "NN_info-resource of X", "X'info-resource") is Xinfrsc, capital first,
+//   NOT X'info_resource | X'info-resource | info-resource-of-X | Xirsc | Xrsc.
+function fCheckMainNameInfrsc(aoCnptFile) {
+  return fCheckMainNameSuffix(aoCnptFile, 'MvrlMnnm05', 'infrsc_info_resource_main',
+    /^(\d+_)?info-resource of |^[^\s.']+'info-resource$/i, 'infrsc');
+}
+
 // ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
 //   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
@@ -887,6 +964,26 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoMainHyphen = fCheckMainNameHyphen(aoCnptFile);
   aoAll.push(...aoMainHyphen);
   fLog(`${aoMainHyphen.length} issues`);
+
+  fWrite('   MvrlMnnm02 Main-names evolg_evoluting... ');
+  const aoMainEvolg = fCheckMainNameEvolg(aoCnptFile);
+  aoAll.push(...aoMainEvolg);
+  fLog(`${aoMainEvolg.length} issues`);
+
+  fWrite('   MvrlMnnm03 Main-names evalg_evaluating... ');
+  const aoMainEvalg = fCheckMainNameEvalg(aoCnptFile);
+  aoAll.push(...aoMainEvalg);
+  fLog(`${aoMainEvalg.length} issues`);
+
+  fWrite('   MvrlMnnm04 Main-names doing_DOING... ');
+  const aoMainDoing = fCheckMainNameDoing(aoCnptFile);
+  aoAll.push(...aoMainDoing);
+  fLog(`${aoMainDoing.length} issues`);
+
+  fWrite('   MvrlMnnm05 Main-names infrsc_info_resource... ');
+  const aoMainInfrsc = fCheckMainNameInfrsc(aoCnptFile);
+  aoAll.push(...aoMainInfrsc);
+  fLog(`${aoMainInfrsc.length} issues`);
 
   return aoAll;
 }

@@ -1,0 +1,608 @@
+INFO-RESOURCE MAIN-NAME Xinfrsc (MvrlMnnm05) APPLIED — 2026-10-26
+renamed: 543 | trees: 2 | skipped: 3 | already infrsc: 3 | files: 199
+
+=== SKIPPED (3)
+  McshLag000003:233  no name:: — info-resource of info
+  McshTchInf000015:8728  COLLISION Lykklyciinfrsc (old Lykklyci'info_resource)
+  McshTchInf000026:1832  no name:: — info-resource of Graphite
+
+=== X FROM THE TITLE (50)
+  McshCor000011:244  system'attResource  ->  Systeminfrsc  (X from the title "info-resource of system")
+  McshCor000012:885  modelAbstract'resouce  ->  ModelAbstractinfrsc  (X from the title "info-resource of modelAbstract")
+  McshCor000012:1184  modelCmpr'resouce  ->  ModelCmprinfrsc  (X from the title "info-resource of modelCmpr")
+  McshEdu000002:574  science'attResource  ->  Scienceinfrsc  (X from the title "info-resource of science")
+  McshHlth000002:12706  OganVulva'resource  ->  OganVulvainfrsc  (X from the title "info-resource of OganVulva")
+  McshHlth000003:3524  OganBrain'attResource  ->  OganBraininfrsc  (X from the title "info-resource of OganBrain")
+  McshHlth000004:1090  cell'att010-resource  ->  Cellinfrsc  (X from the title "info-resource of cell")
+  McshHlth000005:5872  SystMusculoskeletal'attResource  ->  SystMusculoskeletalinfrsc  (X from the title "info-resource of SystMusculoskeletal")
+  McshHlth000011:564  disease'attResource  ->  Diseaseinfrsc  (X from the title "info-resource of disease")
+  McshHlth000011:6434  DissCancerSkin'resource  ->  DissCancer.skininfrsc  (X from the title "info-resource of DissCancer.skin")
+  McshHlth000011:11741  MultipleSclerosisInfoResource  ->  DissMultiple_sclerosisinfrsc  (X from the title "info-resource of DissMultiple_sclerosis")
+  McshHlth000013:8949  foodMeat'resource  ->  FoodMeatinfrsc  (X from the title "info-resource of foodMeat")
+  McshHlth000014:570  medication'attResource  ->  Medicationinfrsc  (X from the title "info-resource of medication")
+  McshHlth000014:1881  MdtnFinasteride'resouce  ->  MdtnFinasterideinfrsc  (X from the title "info-resource of MdtnFinasteride")
+  McshHlth000019:3017  SystSense'resource  ->  SystSenseinfrsc  (X from the title "info-resource of SystSense")
+  McshHmn000003:274  HumnSngu/resource  ->  HumnSnguinfrsc  (X from the title "info-resource of HumnSngu")
+  McshLag000003:1209  worldview'resouce  ->  Worldviewinfrsc  (X from the title "info-resource of worldview")
+  McshLag000006:3065  charUncd'standard'resource  ->  Unicodeinfrsc  (X from the title "info-resource of Unicode")
+  McshLag000027:7112  Ella_rsrc  ->  Ella_lagoinfrsc  (X from the title "info-resource of Ella_lago")
+  McshNtr000002:326  material'attResource  ->  Materialinfrsc  (X from the title "info-resource of material")
+  McshNtr000003:307  MtrlAtom'attResource  ->  MtrlAtominfrsc  (X from the title "info-resource of MtrlAtom")
+  McshNtr000004:154  MtrlMol'attResource  ->  MtrlMolinfrsc  (X from the title "info-resource of MtrlMol")
+  McshOgm000005:121  SystMolsOgsm'attResource  ->  SystMolsOgsminfrsc  (X from the title "info-resource of SystMolsOgsm")
+  McshOgm000006:713  MolProtein'attResource  ->  MolProteininfrsc  (X from the title "info-resource of MolProtein")
+  McshOgm000009:400  ogsmAnimal'attResource  ->  OgsmAnimalinfrsc  (X from the title "info-resource of ogsmAnimal")
+  McshStn000004:78  AdmnSctn'transparency'resource  ->  AdmnSctn'transparencyinfrsc  (X from the title "info-resource of AdmnSctn'transparency")
+  McshStn000008:834  Ogzn'tax'resource  ->  Taxinfrsc  (X from the title "info-resource of tax")
+  McshStn000011:111  Wkrqualification'resource  ->  Wkrqualificationinfrsc  (X from the title "info-resource of Wkrqualification")
+  McshStn000011:1049  job'searching'resource  ->  Job'searchinginfrsc  (X from the title "info-resource of job'searching")
+  McshStn000017:159  ogznStrd'resource  ->  OgznStrdinfrsc  (X from the title "info-resource of ogznStrd")
+  McshStn000023:21527  scmo/resource  ->  Scmoinfrsc  (X from the title "info-resource of scmo")
+  McshStn000024:65  StndRfc'resource  ->  StndRfcinfrsc  (X from the title "info-resource of StndRfc")
+  McshTchInf000003:664  techCmpr'attResource  ->  TechCmprinfrsc  (X from the title "info-resource of techCmpr")
+  McshTchInf000009:3864  Mcsh_lago'resource  ->  Mcsh_lagoinfrsc  (X from the title "info-resource of Mcsh_lago")
+  McshTchInf000010:4784  Jspromise'resource  ->  Jspromiseinfrsc  (X from the title "info-resource of Jspromise")
+  McshTchInf000011:1330  Jsesm'resource  ->  Jsesminfrsc  (X from the title "info-resource of Jsesm")
+  McshTchInf000012:8594  Jsnd_lago_resource  ->  Jsnd_lagoinfrsc  (X from the title "info-resource of Jsnd_lago")
+  McshTchInf000015:6274  DeContract'attResource  ->  DeContractinfrsc  (X from the title "info-resource of DeContract")
+  McshTchInf000015:9997  netAlgo'scalability'resource  ->  NetAlgo'scalabilityinfrsc  (X from the title "info-resource of netAlgo'scalability")
+  McshTchInf000015:10184  AnLaw'resource  ->  AnLawinfrsc  (X from the title "info-resource of AnLaw")
+  McshTchInf000018:12543  Ethereum-resource  ->  AgntEthrinfrsc  (X from the title "info-resource of AgntEthr")
+  McshTchInf000019:1086  OgznDao'resource  ->  OgznDaoinfrsc  (X from the title "info-resource of OgznDao")
+  McshTchInf000021:2292  Agnteos'resource.voting  ->  Agnteos'votinginfrsc  (X from the title "info-resource of Agnteos'voting")
+  McshTchInf000022:775  Faircoin_net'CVN'resource  ->  CVNinfrsc  (X from the title "info-resource of CVN")
+  McshTchInf000022:1433  Faircoin_net'FairCoop'resource  ->  FairCoopinfrsc  (X from the title "info-resource of FairCoop")
+  McshTchInf000023:204  Iota-net'resource  ->  DnIotainfrsc  (X from the title "info-resource of DnIota")
+  McshTchInf000024:3866  Steemit'resource  ->  Steemitinfrsc  (X from the title "info-resource of Steemit")
+  McshTchInf000026:307  Blockstack_net'Stacks_net'resource  ->  Stacks_netinfrsc  (X from the title "info-resource of Stacks-net")
+  McshTchInf000026:1531  Blockstack_net'app_mining'resource  ->  App_mininginfrsc  (X from the title "info-resource of app-mining")
+  McshTchInf000029:546  Json_lago_resource  ->  Json_lagoinfrsc  (X from the title "info-resource of Json_lago")
+
+=== TREES + GS-TREE HEADINGS (2)
+  McshTchInf000006:3139  <br>* McshEngl.Srcd_lago'info_resource_Gntr,  ->  <br>* McshEngl.Srcd_lagoinfrsc_Gntr,
+  McshTchInf000022:1584  <br>* McshEngl.Frcnirsc_Gntr,  ->  <br>* McshEngl.Frcninfrsc_Gntr,
+
+=== RENAMED (543)
+  Mcsh000000:241  Mws'info_resource  ->  Mwsinfrsc
+  McshCor000002:3784  McsMgrAAj'info_resource  ->  McsMgrAAjinfrsc
+  McshCor000002:4680  Mcs'info_resource  ->  Mcsinfrsc
+  McshCor000003:679  entity'info_resource  ->  Entityinfrsc
+  McshCor000004:1260  doing'info_resource  ->  Doinginfrsc
+  McshCor000005:313  relation'info_resource  ->  Relationinfrsc
+  McshCor000006:4323  hour'info_resource  ->  Hourinfrsc
+  McshCor000007:802  space'info_resource  ->  Spaceinfrsc
+  McshCor000008:471  whole'info_resource  ->  Wholeinfrsc
+  McshCor000009:403  generic'info_resource  ->  Genericinfrsc
+  McshCor000010:181  quanto'info_resource  ->  Quantoinfrsc
+  McshCor000011:244  system'attResource  ->  Systeminfrsc
+  McshCor000011:2063  SystTree'info_resource  ->  SystTreeinfrsc
+  McshCor000011:2546  SystComplex'info_resource  ->  SystComplexinfrsc
+  McshCor000011:2636  SystDyna'info_resource  ->  SystDynainfrsc
+  McshCor000011:2913  Mnggsyst'info_resource  ->  Mnggsystinfrsc
+  McshCor000011:2996  SciCybernetics'info_resource  ->  SciCyberneticsinfrsc
+  McshCor000012:249  model'info_resource  ->  Modelinfrsc
+  McshCor000012:885  modelAbstract'resouce  ->  ModelAbstractinfrsc
+  McshCor000012:1184  modelCmpr'resouce  ->  ModelCmprinfrsc
+  McshCor000013:1290  FctgEmotingBio'info_resource  ->  FctgEmotingBioinfrsc
+  McshCor000015:203  McshExml'info_resource  ->  McshExmlinfrsc
+  McshCor000018:138  braining'info_resource  ->  Braininginfrsc
+  McshCor000018:1118  FctgThinking'info_resource  ->  FctgThinkinginfrsc
+  McshCor000018:3470  FctgEmotingHappiness'info_resource  ->  FctgEmotingHappinessinfrsc
+  McshCor000018:4588  FctgMemorizing'info-resource  ->  FctgMemorizinginfrsc
+  McshCor000019:77  dancing'info_resource  ->  Dancinginfrsc
+  McshCor000020:99  DongReferenting'info_resource  ->  DongReferentinginfrsc
+  McshCor000020:527  DongProvingZk'info_resource  ->  DongProvingZkinfrsc
+  McshCor000021:83  energy'info_resource  ->  Energyinfrsc
+  McshEdu000002:574  science'attResource  ->  Scienceinfrsc
+  McshEdu000002:687  researching'info_resource  ->  Researchinginfrsc
+  McshEdu000002:1451  open_access'info_resource  ->  Open_accessinfrsc
+  McshEdu000002:1555  SciOpen'info_resource  ->  SciOpeninfrsc
+  McshEdu000003:178  MathGraph'info_resource  ->  MathGraphinfrsc
+  McshEdu000005:120  MathNotation'info_resource  ->  MathNotationinfrsc
+  McshEdu000005:1069  LaTeX'info-resource  ->  LaTeXinfrsc
+  McshEdu000005:1896  MathFn'info_resource  ->  MathFninfrsc
+  McshEdu000005:5472  SciMath'info_resource  ->  SciMathinfrsc
+  McshEdu000006:335  SciSophy'info_resource  ->  SciSophyinfrsc
+  McshEdu000007:84  SciCmpr'info_resource  ->  SciCmprinfrsc
+  McshEdu000008:99  SciInfo'info_resource  ->  SciInfoinfrsc
+  McshEdu000009:71  SciMind'info_resource  ->  SciMindinfrsc
+  McshEdu000009:513  SciCognitive'info_resource  ->  SciCognitiveinfrsc
+  McshEdu000009:1752  SciSemiotics'info_resource  ->  SciSemioticsinfrsc
+  McshEdu000010:979  anthroponomastics'info_resource  ->  Anthroponomasticsinfrsc
+  McshEdu000010:1891  SciLago'info_resource  ->  SciLagoinfrsc
+  McshEdu000010:2496  SciLagoComputational'info_resource  ->  SciLagoComputationalinfrsc
+  McshEdu000011:219  art'info_resource  ->  Artinfrsc
+  McshEdu000012:58  SciGovernance'info_resource  ->  SciGovernanceinfrsc
+  McshEdu000013:83  SciPhys'info_resource  ->  SciPhysinfrsc
+  McshEdu000014:226  SciEcon'info_resource  ->  SciEconinfrsc
+  McshEdu000014:848  SciEvonomics'info_resource  ->  SciEvonomicsinfrsc
+  McshEdu000014:977  SciEconCmpl'info_resource  ->  SciEconCmplinfrsc
+  McshEdu000014:1095  SciEconCmplAb'info_resource  ->  SciEconCmplAbinfrsc
+  McshEdu000015:261  music'info_resource  ->  Musicinfrsc
+  McshHlth000002:10172  OganTooth'info_resource  ->  OganToothinfrsc
+  McshHlth000002:12085  SystUrinary'info_resource  ->  SystUrinaryinfrsc
+  McshHlth000002:12593  SystReproductiveMale'info_resource  ->  SystReproductiveMaleinfrsc
+  McshHlth000002:12706  OganVulva'resource  ->  OganVulvainfrsc
+  McshHlth000002:13038  SystNeuroendocrine'info_resource  ->  SystNeuroendocrineinfrsc
+  McshHlth000002:13917  bodyHumn'info-resource  ->  BodyHumninfrsc
+  McshHlth000003:1955  mind'info_resource  ->  Mindinfrsc
+  McshHlth000003:3524  OganBrain'attResource  ->  OganBraininfrsc
+  McshHlth000004:1090  cell'att010-resource  ->  Cellinfrsc
+  McshHlth000005:3012  SystSkeletal'info_resource  ->  SystSkeletalinfrsc
+  McshHlth000005:5872  SystMusculoskeletal'attResource  ->  SystMusculoskeletalinfrsc
+  McshHlth000006:166  disorderBio'info_resource  ->  DisorderBioinfrsc
+  McshHlth000006:328  healthBio'info_resource  ->  HealthBioinfrsc
+  McshHlth000009:45  healthStn'info_resource  ->  HealthStninfrsc
+  McshHlth000010:452  DissPlnt'info-resource  ->  DissPlntinfrsc
+  McshHlth000010:558  DissPlntOQDS'info_resource  ->  DissPlntOQDSinfrsc
+  McshHlth000011:564  disease'attResource  ->  Diseaseinfrsc
+  McshHlth000011:1176  DissInfectious'info_resource  ->  DissInfectiousinfrsc
+  McshHlth000011:1486  DissPandemic'info_resource  ->  DissPandemicinfrsc
+  McshHlth000011:1818  DissSkeletal'info-resource  ->  DissSkeletalinfrsc
+  McshHlth000011:2053  DissSprain'info_resource  ->  DissSpraininfrsc
+  McshHlth000011:2184  DissSystCirculatory'info_resource  ->  DissSystCirculatoryinfrsc
+  McshHlth000011:3085  DissHypertension'info-resource  ->  DissHypertensioninfrsc
+  McshHlth000011:6017  UsaNci'info_resource  ->  UsaNciinfrsc
+  McshHlth000011:6052  DissCancer'info_resource  ->  DissCancerinfrsc
+  McshHlth000011:6199  mastectomy'info_resource  ->  Mastectomyinfrsc
+  McshHlth000011:6434  DissCancerSkin'resource  ->  DissCancer.skininfrsc
+  McshHlth000011:7786  DissAnxiety'info_resource  ->  DissAnxietyinfrsc
+  McshHlth000011:7984  DissPanic'info_resource  ->  DissPanicinfrsc
+  McshHlth000011:8591  DissAids'info-resource  ->  DissAidsinfrsc
+  McshHlth000011:8731  DissAlzheimer'info-resource  ->  DissAlzheimerinfrsc
+  McshHlth000011:8821  DissDementia'info-resource  ->  DissDementiainfrsc
+  McshHlth000011:9163  DissCoughing'info-resource  ->  DissCoughinginfrsc
+  McshHlth000011:9692  DissDiarrheaTravel'info-resource  ->  DissDiarrheaTravelinfrsc
+  McshHlth000011:9988  DissHepatitis'info-resource  ->  DissHepatitisinfrsc
+  McshHlth000011:11741  MultipleSclerosisInfoResource  ->  DissMultiple_sclerosisinfrsc
+  McshHlth000011:13223  DissCramp'info-resource  ->  DissCrampinfrsc
+  McshHlth000011:13476  DissParkinson'info-resource  ->  DissParkinsoninfrsc
+  McshHlth000011:13875  FctgPainingHead'info-resource  ->  FctgPainingHeadinfrsc
+  McshHlth000011:15542  DissCholesterol'info-resource  ->  DissCholesterolinfrsc
+  McshHlth000013:745  food'info_resource  ->  Foodinfrsc
+  McshHlth000013:1398  foodCooked'info_resource  ->  FoodCookedinfrsc
+  McshHlth000013:2060  foodProtein'info_resource  ->  FoodProteininfrsc
+  McshHlth000013:3505  drinkWater'info-resource  ->  DrinkWaterinfrsc
+  McshHlth000013:5305  foodProbiotic'info_resource  ->  FoodProbioticinfrsc
+  McshHlth000013:8949  foodMeat'resource  ->  FoodMeatinfrsc
+  McshHlth000014:570  medication'attResource  ->  Medicationinfrsc
+  McshHlth000014:1881  MdtnFinasteride'resouce  ->  MdtnFinasterideinfrsc
+  McshHlth000015:204  drugNarcotic'info_resource  ->  DrugNarcoticinfrsc
+  McshHlth000016:206  therapy'info_resource  ->  Therapyinfrsc
+  McshHlth000016:653  therapyCCB'info_resource  ->  TherapyCCBinfrsc
+  McshHlth000018:100  DongExercising'info_resource  ->  DongExercisinginfrsc
+  McshHlth000019:3017  SystSense'resource  ->  SystSenseinfrsc
+  McshHlth000019:5631  SystNervous'info_resource  ->  SystNervousinfrsc
+  McshHmn000002:1155  human'qualification'info_resource  ->  Human'qualificationinfrsc
+  McshHmn000002:3747  human'info_resource  ->  Humaninfrsc
+  McshHmn000003:274  HumnSngu/resource  ->  HumnSnguinfrsc
+  McshHmn000005:672  Arstproduct'info_resource  ->  Arstproductinfrsc
+  McshHmn000005:1244  hmnB0384Arst'info_resource  ->  HmnB0384Arstinfrsc
+  McshLag000002:74  infoBrainBio'info_resource  ->  InfoBrainBioinfrsc
+  McshLag000003:665  cptMind'info_resource  ->  CptMindinfrsc
+  McshLag000003:874  viewMind'info_resource  ->  ViewMindinfrsc
+  McshLag000003:1209  worldview'resouce  ->  Worldviewinfrsc
+  McshLag000003:1671  knowledge'info_resource  ->  Knowledgeinfrsc
+  McshLag000004:130  lagoCmnr'info_resource  ->  LagoCmnrinfrsc
+  McshLag000005:125  Ogms_lago'info_resource  ->  Ogms_lagoinfrsc
+  McshLag000006:83  char'info_resource  ->  Charinfrsc
+  McshLag000006:176  char-encoding'info-resource  ->  Char_encodinginfrsc
+  McshLag000006:3065  charUncd'standard'resource  ->  Unicodeinfrsc
+  McshLag000006:3562  charUncd'info_resource  ->  CharUncdinfrsc
+  McshLag000007:27756  Hmnmsbjc'info_resource  ->  Hmnmsbjcinfrsc
+  McshLag000007:30767  Hmnm_lago'info_resource  ->  Hmnm_lagoinfrsc
+  McshLag000007:31574  Hmnm_lago'change'info_resource  ->  Hmnm_lago'changeinfrsc
+  McshLag000007:32124  lagoCnrd'info_resource  ->  LagoCnrdinfrsc
+  McshLag000007:32868  lagAliv'info_resource  ->  LagAlivinfrsc
+  McshLag000008:745  Alfa_lago'info_resource  ->  Alfa_lagoinfrsc
+  McshLag000009:557  phoneme'info_resource  ->  Phonemeinfrsc
+  McshLag000009:807  IPA'info_resource  ->  IPAinfrsc
+  McshLag000009:993  VowlPhnm'info_resource  ->  VowlPhnminfrsc
+  McshLag000009:4115  Spch_lago'info_resource  ->  Spch_lagoinfrsc
+  McshLag000010:5904  Sngu_lagu'info_resource  ->  Sngu_laguinfrsc
+  McshLag000011:747  Engl_phnm'info_resource  ->  Engl_phnminfrsc
+  McshLag000011:9914  Engladve'info_resource  ->  Engladveinfrsc
+  McshLag000011:30048  Engl_lago'info_resource  ->  Engl_lagoinfrsc
+  McshLag000011:30276  lagoSpchEngl'info_resource  ->  LagoSpchEnglinfrsc
+  McshLag000012:5111  Espo_lago'info_resource  ->  Espo_lagoinfrsc
+  McshLag000013:434  Infrsc'info_resource  ->  Infrscinfrsc
+  McshLag000014:111  irBook'info_resource  ->  IrBookinfrsc
+  McshLag000018:1200  Zhon_phnm'info_resource  ->  Zhon_phnminfrsc
+  McshLag000018:7291  Zhon_char'info_resource  ->  Zhon_charinfrsc
+  McshLag000018:9303  Zhonadve'info_resource  ->  Zhonadveinfrsc
+  McshLag000018:12457  Zhonverb'info_resource  ->  Zhonverbinfrsc
+  McshLag000018:13071  Zhonconj'info_resource  ->  Zhonconjinfrsc
+  McshLag000018:15594  Zhonsent'info_resource  ->  Zhonsentinfrsc
+  McshLag000018:16455  Zhon_lago'info_resource  ->  Zhon_lagoinfrsc
+  McshLag000018:20593  Zhon_Spch_lago'info_resource  ->  Zhon_Spch_lagoinfrsc
+  McshLag000019:81  irPaper'info_resource  ->  IrPaperinfrsc
+  McshLag000020:277  Elln_phnm'info_resource  ->  Elln_phnminfrsc
+  McshLag000020:1691  Elln_word'info_resource  ->  Elln_wordinfrsc
+  McshLag000020:1802  Ellnsylb'info_resource  ->  Ellnsylbinfrsc
+  McshLag000020:2327  Ellnnoun'info_resource  ->  Ellnnouninfrsc
+  McshLag000020:9978  Ellnconj'info-resource  ->  Ellnconjinfrsc
+  McshLag000020:12769  Elln_lago'info_resource  ->  Elln_lagoinfrsc
+  McshLag000021:50  Zhonunitsyst'info_resource  ->  Zhonunitsystinfrsc
+  McshLag000022:49365  wordSetElla'info_resource  ->  WordSetEllainfrsc
+  McshLag000023:671  wordSetZhon'info_resource  ->  WordSetZhoninfrsc
+  McshLag000024:5955  wordSetEngl'info_resource  ->  WordSetEnglinfrsc
+  McshLag000025:389  wordSetElln'info_resource  ->  WordSetEllninfrsc
+  McshLag000026:1568  Ellnverb'info_resource  ->  Ellnverbinfrsc
+  McshLag000027:138  Ella_phnm'info_resource  ->  Ella_phnminfrsc
+  McshLag000027:1530  Ellanoun'info_resource  ->  Ellanouninfrsc
+  McshLag000027:7112  Ella_rsrc  ->  Ella_lagoinfrsc
+  McshLag000027:8148  Ella_pitch'info_resource  ->  Ella_pitchinfrsc
+  McshLag000027:8186  lagoSpchElla'info_resource  ->  LagoSpchEllainfrsc
+  McshLag000027:8374  EllaHomeric'info_resource  ->  EllaHomericinfrsc
+  McshLag000028:1364  Ell0Lago'info_resource  ->  Ell0Lagoinfrsc
+  McshLag000028:1603  Ellkrsc  ->  Ellkinfrsc
+  McshLag000029:47  Eng0Lago'info_resource  ->  Eng0Lagoinfrsc
+  McshLag000030:1575  Turkname'info_resource  ->  Turknameinfrsc
+  McshLag000030:5995  Turkverb'info_resource  ->  Turkverbinfrsc
+  McshLag000030:8044  Turk_lago'info_resource  ->  Turk_lagoinfrsc
+  McshLag000031:128  Gstr_lago'info_resource  ->  Gstr_lagoinfrsc
+  McshLag000032:438  lagoFrml'info_resource  ->  LagoFrmlinfrsc
+  McshLag000033:3642  Deut_lago'info_resource  ->  Deut_lagoinfrsc
+  McshLag000034:2772  Bcms_lago'info_resource  ->  Bcms_lagoinfrsc
+  McshLag000035:2505  Span_lago'info_resource  ->  Span_lagoinfrsc
+  McshLag000036:2932  Arab_lago'info_resource  ->  Arab_lagoinfrsc
+  McshLag000037:2246  Hiur_lago'info_resource  ->  Hiur_lagoinfrsc
+  McshLag000037:4531  Hind_lago'info_resource  ->  Hind_lagoinfrsc
+  McshLag000037:5039  Urdu_lago'info_resource  ->  Urdu_lagoinfrsc
+  McshLag000038:1756  Slv0Lago'info_resource  ->  Slv0Lagoinfrsc
+  McshLag000039:1403  Ide0_lago'info_resource  ->  Ide0_lagoinfrsc
+  McshLag000040:1630  Afa0_lago'info_resource  ->  Afa0_lagoinfrsc
+  McshLag000041:1543  Tur0_lago'info_resource  ->  Tur0_lagoinfrsc
+  McshLag000042:1535  Asa0_lago'info_resource  ->  Asa0_lagoinfrsc
+  McshLag000043:3631  Kora_lago'info_resource  ->  Kora_lagoinfrsc
+  McshNtr000002:326  material'attResource  ->  Materialinfrsc
+  McshNtr000003:262  electron'info_resource  ->  Electroninfrsc
+  McshNtr000003:307  MtrlAtom'attResource  ->  MtrlAtominfrsc
+  McshNtr000004:154  MtrlMol'attResource  ->  MtrlMolinfrsc
+  McshNtr000005:267  MtrlSysMols'info_resource  ->  MtrlSysMolsinfrsc
+  McshNtr000005:801  color'info_resource  ->  Colorinfrsc
+  McshNtr000006:80  ChmcCpd'info_resource  ->  ChmcCpdinfrsc
+  McshNtr000007:327  ChmcElry'info_resource  ->  ChmcElryinfrsc
+  McshNtr000007:522  periodic-table'info-resource  ->  Periodic_tableinfrsc
+  McshNtr000007:1050  ChmcElrGnc'info_resource  ->  ChmcElrGncinfrsc
+  McshNtr000008:48  bioNosys'info_resource  ->  BioNosysinfrsc
+  McshNtr000009:65  alloy'info_resource  ->  Alloyinfrsc
+  McshNtr000010:178  brainBio'info_resource  ->  BrainBioinfrsc
+  McshNtr000011:64  infoBio'info_resource  ->  InfoBioinfrsc
+  McshNtr000012:112  force'info_resource  ->  Forceinfrsc
+  McshNtr000013:68  Chmreaction'info_resource  ->  Chmreactioninfrsc
+  McshNtr000014:115  Nature'info_resource  ->  Natureinfrsc
+  McshNtr000015:560  Earth'info_resource  ->  Earthinfrsc
+  McshNtr000017:147  sky'info_resource  ->  Skyinfrsc
+  McshOgm000002:144  bio'info_resource  ->  Bioinfrsc
+  McshOgm000003:537  Ogsm'info_resource  ->  Ogsminfrsc
+  McshOgm000003:577  SciBio'info_resource  ->  SciBioinfrsc
+  McshOgm000004:109  MoleOgsm'info_resource  ->  MoleOgsminfrsc
+  McshOgm000004:1246  cholesterolHumn'info_resource  ->  CholesterolHumninfrsc
+  McshOgm000005:121  SystMolsOgsm'attResource  ->  SystMolsOgsminfrsc
+  McshOgm000006:713  MolProtein'attResource  ->  MolProteininfrsc
+  McshOgm000006:1110  proteinHumn'info_resource  ->  ProteinHumninfrsc
+  McshOgm000007:394  cellOgsm'info_resource  ->  CellOgsminfrsc
+  McshOgm000007:1559  ferroptosis'info_resource  ->  Ferroptosisinfrsc
+  McshOgm000007:2214  neuronOgsm'info_resource  ->  NeuronOgsminfrsc
+  McshOgm000008:141  ogmCellNo'info_resource  ->  OgmCellNoinfrsc
+  McshOgm000008:400  ogmVirus'info_resource  ->  OgmVirusinfrsc
+  McshOgm000009:400  ogsmAnimal'attResource  ->  OgsmAnimalinfrsc
+  McshOgm000010:103  ogmPlant'info_resource  ->  OgmPlantinfrsc
+  McshOgm000010:1264  plantCactus'info_resource  ->  PlantCactusinfrsc
+  McshOgm000011:48  ogmMammal'info_resource  ->  OgmMammalinfrsc
+  McshStn000003:44  StfrOgsm'info_resource  ->  StfrOgsminfrsc
+  McshStn000004:78  AdmnSctn'transparency'resource  ->  AdmnSctn'transparencyinfrsc
+  McshStn000004:173  AdmnSctn'info_resource  ->  AdmnSctninfrsc
+  McshStn000004:204  sociocracy'info_resource  ->  Sociocracyinfrsc
+  McshStn000004:952  budge'info_resource  ->  Budgeinfrsc
+  McshStn000004:1297  admnAlgo'info_resource  ->  AdmnAlgoinfrsc
+  McshStn000007:416  societyHntn'info_resource  ->  SocietyHntninfrsc
+  McshStn000008:427  Mcaccg'info_resource  ->  Mcaccginfrsc
+  McshStn000008:834  Ogzn'tax'resource  ->  Taxinfrsc
+  McshStn000008:890  admnOgzn'info_resource  ->  AdmnOgzninfrsc
+  McshStn000008:1038  Ogzn'info_resource  ->  Ogzninfrsc
+  McshStn000008:1512  ogznSfmt'info_resource  ->  OgznSfmtinfrsc
+  McshStn000009:4955  Socadmn'info_resource  ->  Socadmninfrsc
+  McshStn000009:5736  SoctAdmnDigi'info_resource  ->  SoctAdmnDigiinfrsc
+  McshStn000009:6401  SoctInequality'info_resource  ->  SoctInequalityinfrsc
+  McshStn000009:6714  society'info_resource  ->  Societyinfrsc
+  McshStn000009:9749  SoctCptl'info_resource  ->  SoctCptlinfrsc
+  McshStn000009:9968  SoctCptlAftr'info_resource  ->  SoctCptlAftrinfrsc
+  McshStn000009:10236  SoctNtwk'info_resource  ->  SoctNtwkinfrsc
+  McshStn000010:544  satisfier'info_resource  ->  Satisfierinfrsc
+  McshStn000010:2625  sfrCommons'info_resource  ->  SfrCommonsinfrsc
+  McshStn000010:3052  sfrPublic'info_resource  ->  SfrPublicinfrsc
+  McshStn000011:111  Wkrqualification'resource  ->  Wkrqualificationinfrsc
+  McshStn000011:442  Wrkr'info_resource  ->  Wrkrinfrsc
+  McshStn000011:1015  job'info_resource  ->  Jobinfrsc
+  McshStn000011:1049  job'searching'resource  ->  Job'searchinginfrsc
+  McshStn000011:1175  jobRemote'info_resource  ->  JobRemoteinfrsc
+  McshStn000011:1531  WrkrFreelancer'info_resource  ->  WrkrFreelancerinfrsc
+  McshStn000012:342  PdcrIncome'info_resource  ->  PdcrIncomeinfrsc
+  McshStn000012:1326  Sna'info_resource  ->  Snainfrsc
+  McshStn000012:1416  Sna2008'info_resource  ->  Sna2008infrsc
+  McshStn000012:1497  Esa'info_resource  ->  Esainfrsc
+  McshStn000012:2516  eecon'info_resource  ->  Eeconinfrsc
+  McshStn000012:2994  SoctEcon'info_resource  ->  SoctEconinfrsc
+  McshStn000012:3664  econCptl.Infrsc  ->  EconCptlinfrsc
+  McshStn000012:4377  econEco'info_resource  ->  EconEcoinfrsc
+  McshStn000012:4440  econCircular'info_resource  ->  EconCircularinfrsc
+  McshStn000013:149  project'info_resource  ->  Projectinfrsc
+  McshStn000014:873  ogznCsmg'info_resource  ->  OgznCsmginfrsc
+  McshStn000015:300  OgznPrdg'hiring'info_resource  ->  OgznPrdg'hiringinfrsc
+  McshStn000015:354  idOznPdnatt008rscF'info_resource  ->  IdOznPdnatt008rscFinfrsc
+  McshStn000015:1069  OgznPrdg'info_resource  ->  OgznPrdginfrsc
+  McshStn000015:1477  ogznSocial'info_resource  ->  OgznSocialinfrsc
+  McshStn000015:5061  ogznCoop'info_resource  ->  OgznCoopinfrsc
+  McshStn000015:5242  ogznCoopWorker'info_resource  ->  OgznCoopWorkerinfrsc
+  McshStn000015:5355  ogznAgro'info_resource  ->  OgznAgroinfrsc
+  McshStn000015:5697  Elln_cmpn'info_resource  ->  Elln_cmpninfrsc
+  McshStn000017:159  ogznStrd'resource  ->  OgznStrdinfrsc
+  McshStn000017:356  StndW3c'info_resource  ->  StndW3cinfrsc
+  McshStn000017:14845  oznW3c'info_resource  ->  OznW3cinfrsc
+  McshStn000017:14935  oznIetf'info_resource  ->  OznIetfinfrsc
+  McshStn000017:15028  oznIso'info_resource  ->  OznIsoinfrsc
+  McshStn000018:2747  ogznUn'info_resource  ->  OgznUninfrsc
+  McshStn000019:416  AlgoSocAdmn'info_resource  ->  AlgoSocAdmninfrsc
+  McshStn000019:585  Algoogzn'info_resource  ->  Algoogzninfrsc
+  McshStn000019:766  SoctAlgo'info_resource  ->  SoctAlgoinfrsc
+  McshStn000020:1412  EussctrRat'info_resource  ->  EussctrRatinfrsc
+  McshStn000020:1568  Euzzworker'info_resource  ->  Euzzworkerinfrsc
+  McshStn000020:1611  EuzzEcon'info_resource  ->  EuzzEconinfrsc
+  McshStn000020:2079  EuoMin'info_resource  ->  EuoMininfrsc
+  McshStn000020:2603  EuwCommissioner'info_resource  ->  EuwCommissionerinfrsc
+  McshStn000020:3806  EuoErc'info_resource  ->  EuoErcinfrsc
+  McshStn000020:3890  EuoCom'info_resource  ->  EuoCominfrsc
+  McshStn000020:4255  Euogvc'info_resource  ->  Euogvcinfrsc
+  McshStn000020:4348  EuoIstn'info_resource  ->  EuoIstninfrsc
+  McshStn000020:5390  Eubudget'info_resource  ->  Eubudgetinfrsc
+  McshStn000020:5557  EuoStat'info_resource  ->  EuoStatinfrsc
+  McshStn000020:6040  Euinfsys'info_resource  ->  Euinfsysinfrsc
+  McshStn000020:16053  EuDep'info_resource  ->  EuDepinfrsc
+  McshStn000020:16176  EuCef'info_resource  ->  EuCefinfrsc
+  McshStn000020:16224  EuEif'info_resource  ->  EuEifinfrsc
+  McshStn000020:16392  Euzzegvc'info_resource  ->  Euzzegvcinfrsc
+  McshStn000020:16509  EuwGvc'info_resource  ->  EuwGvcinfrsc
+  McshStn000020:16551  EuzzAdmn'info_resource  ->  EuzzAdmninfrsc
+  McshStn000020:16788  Eupolicy'info_resource  ->  Eupolicyinfrsc
+  McshStn000020:17177  EupolicyDigi'info_resource  ->  EupolicyDigiinfrsc
+  McshStn000020:17227  EuzzAdmnService'info_resource  ->  EuzzAdmnServiceinfrsc
+  McshStn000020:17451  Euzzesoc'info_resource  ->  Euzzesocinfrsc
+  McshStn000020:17537  SoctEuzz'info_resource  ->  SoctEuzzinfrsc
+  McshStn000020:17766  Eudoc'info_resource  ->  Eudocinfrsc
+  McshStn000021:510  SocGlbl'info_resource  ->  SocGlblinfrsc
+  McshStn000022:411  house'info_resource  ->  Houseinfrsc
+  McshStn000023:21527  scmo/resource  ->  Scmoinfrsc
+  McshStn000024:65  StndRfc'resource  ->  StndRfcinfrsc
+  McshStn000026:89  ogznService'info_resource  ->  OgznServiceinfrsc
+  McshStn000027:189  sfrBuilding'info_resource  ->  SfrBuildinginfrsc
+  McshStn000028:57  ogznFin'info_resource  ->  OgznFininfrsc
+  McshStn000029:109  sfrFin'info_resource  ->  SfrFininfrsc
+  McshStn000029:912  money'info_resource  ->  Moneyinfrsc
+  McshStn000030:828  SoctGrca'info_resource  ->  SoctGrcainfrsc
+  McshStn000031:4916  Chna_trsm'info_resource  ->  Chna_trsminfrsc
+  McshStn000031:12201  ChnaAdmn'info_resource  ->  ChnaAdmninfrsc
+  McshStn000031:12748  Chnahealth'info_resource  ->  Chnahealthinfrsc
+  McshStn000031:12789  SoctChna'info_resource  ->  SoctChnainfrsc
+  McshStn000032:607  SoctUsaz'info_resource  ->  SoctUsazinfrsc
+  McshStn000033:409  SoctTurk'info_resource  ->  SoctTurkinfrsc
+  McshStn000034:4142  SoctVtnm'info_resource  ->  SoctVtnminfrsc
+  McshStn000035:3585  lagoItln'info_resource  ->  LagoItlninfrsc
+  McshStn000037:2112  Frac_lago'info_resource  ->  Frac_lagoinfrsc
+  McshStn000038:1738  Sbul_lago'info_resource  ->  Sbul_lagoinfrsc
+  McshStn000039:2101  Sqip_lago'info_resource  ->  Sqip_lagoinfrsc
+  McshStn000040:1478  Smkd_lago'info_resource  ->  Smkd_lagoinfrsc
+  McshStn000041:1358  Sslv_lago'info_resource  ->  Sslv_lagoinfrsc
+  McshStn000042:2557  sectorEdu'info_resource  ->  SectorEduinfrsc
+  McshStn000042:3816  Chnaeduc'info_resource  ->  Chnaeducinfrsc
+  McshStn000043:1478  Srus_lago'info_resource  ->  Srus_lagoinfrsc
+  McshStn000044:1728  Romn_lago'info_resource  ->  Romn_lagoinfrsc
+  McshStn000048:5016  Jpns_lago'info_resource  ->  Jpns_lagoinfrsc
+  McshStn000050:3574  Khmr_lago'info_resource  ->  Khmr_lagoinfrsc
+  McshStnlaw000002:904  law'info-resource  ->  Lawinfrsc
+  McshStnlaw000002:2041  lawTax'info_resource  ->  LawTaxinfrsc
+  McshStnlaw000002:2382  lawDigital'info_resource  ->  LawDigitalinfrsc
+  McshStnlaw000003:376  lawEus'info_resource  ->  LawEusinfrsc
+  McshStnlaw000003:848  Celex-nbr'info-resource  ->  Celex_nbrinfrsc
+  McshStnlaw000003:892  EulawEli'info_resource  ->  EulawEliinfrsc
+  McshStnlaw000003:1010  Eulmanaging'info_resource  ->  Eulmanaginginfrsc
+  McshStnlaw000003:1301  EulawTreaty'info_resource  ->  EulawTreatyinfrsc
+  McshStnlaw000003:1828  EulawTfeu'info_resource  ->  EulawTfeuinfrsc
+  McshStnlaw000003:2018  EulawTcfr'info_resource  ->  EulawTcfrinfrsc
+  McshStnlaw000003:3110  EulawCitizen'info_resource  ->  EulawCitizeninfrsc
+  McshStnlaw000004:285  ogznIcc'info_resource  ->  OgznIccinfrsc
+  McshStnlaw000004:382  lawIntl'info-resource  ->  LawIntlinfrsc
+  McshStnlaw000006:701  lawGrca'info_resource  ->  LawGrcainfrsc
+  McshTchInf000002:373  techInfo'info_resource  ->  TechInfoinfrsc
+  McshTchInf000003:664  techCmpr'attResource  ->  TechCmprinfrsc
+  McshTchInf000003:998  cmprVtube'info_resource  ->  CmprVtubeinfrsc
+  McshTchInf000003:2118  cmprQntm'info_resource  ->  CmprQntminfrsc
+  McshTchInf000004:45  techFin'info_resource  ->  TechFininfrsc
+  McshTchInf000005:483  Cmpr_lago'info_resource  ->  Cmpr_lagoinfrsc
+  McshTchInf000005:1389  lagMrkp'info_resource  ->  LagMrkpinfrsc
+  McshTchInf000006:1124  editorPrgm'info_resource  ->  EditorPrgminfrsc
+  McshTchInf000006:3132  Srcd_lago'info_resource  ->  Srcd_lagoinfrsc
+  McshTchInf000007:404  Cnknmngr'info_resource  ->  Cnknmngrinfrsc
+  McshTchInf000007:1018  Cnptlrsc  ->  Cnptlinfrsc
+  McshTchInf000007:1623  lagFram'info_resource  ->  LagFraminfrsc
+  McshTchInf000007:3170  lagXmlg'info_resource  ->  LagXmlginfrsc
+  McshTchInf000009:3864  Mcsh_lago'resource  ->  Mcsh_lagoinfrsc
+  McshTchInf000010:2979  Jsm'info_resource  ->  Jsminfrsc
+  McshTchInf000010:4784  Jspromise'resource  ->  Jspromiseinfrsc
+  McshTchInf000010:6884  Jsgntool'info_resource  ->  Jsgntoolinfrsc
+  McshTchInf000010:6995  Jsgnengine'info_resource  ->  Jsgnengineinfrsc
+  McshTchInf000011:1330  Jsesm'resource  ->  Jsesminfrsc
+  McshTchInf000011:5155  Jsbr_lago'info_resource  ->  Jsbr_lagoinfrsc
+  McshTchInf000012:404  Jsndm'info_resource  ->  Jsndminfrsc
+  McshTchInf000012:460  Jsndme'info_resource  ->  Jsndmeinfrsc
+  McshTchInf000012:8594  Jsnd_lago_resource  ->  Jsnd_lagoinfrsc
+  McshTchInf000012:9139  Gulp.js_plugin'info_resource  ->  Gulp.js_plugininfrsc
+  McshTchInf000012:10183  npm'info_resource  ->  Npminfrsc
+  McshTchInf000013:1624  Jsel_lago'info_resource  ->  Jsel_lagoinfrsc
+  McshTchInf000014:1806  Wasmcmnd'info_resource  ->  Wasmcmndinfrsc
+  McshTchInf000014:6218  WebAssembly'info-resource  ->  WebAssemblyinfrsc
+  McshTchInf000014:6332  info-resource-of-text-Wasm  ->  Text_Wasminfrsc
+  McshTchInf000015:563  human.Szabo.Nick'info_resource  ->  Human.Szabo.Nickinfrsc
+  McshTchInf000015:1560  Agnetchain-crypto'info-resource  ->  Agnetchain_cryptoinfrsc
+  McshTchInf000015:2135  Agntasset-price'info-resource  ->  Agntasset_priceinfrsc
+  McshTchInf000015:2400  Agntasset'info_resource  ->  Agntassetinfrsc
+  McshTchInf000015:4208  Agntexvu'info-resource  ->  Agntexvuinfrsc
+  McshTchInf000015:4565  CBDC'info_resource  ->  CBDCinfrsc
+  McshTchInf000015:4786  stable_Agntexvu'info_resource  ->  Stable_Agntexvuinfrsc
+  McshTchInf000015:5732  netAlgo-govc'info-resource  ->  NetAlgo_govcinfrsc
+  McshTchInf000015:6274  DeContract'attResource  ->  DeContractinfrsc
+  McshTchInf000015:6480  Scatter'info_resource  ->  Scatterinfrsc
+  McshTchInf000015:6755  DeApp'info-resource  ->  DeAppinfrsc
+  McshTchInf000015:7022  Agnetwllt'info_resource  ->  Agnetwlltinfrsc
+  McshTchInf000015:7277  ICO'info_resource  ->  ICOinfrsc
+  McshTchInf000015:7836  AgntogznExch'info_resource  ->  AgntogznExchinfrsc
+  McshTchInf000015:8510  Lykklyci'info_resource  ->  Lykklyciinfrsc
+  McshTchInf000015:8846  Lykke'info_resource  ->  Lykkeinfrsc
+  McshTchInf000015:9471  info-resource-of-netAlgo'evaluation  ->  NetAlgo'evaluationinfrsc
+  McshTchInf000015:9536  chain_benefit'info_resource  ->  Chain_benefitinfrsc
+  McshTchInf000015:9663  netAlgo_benefitNo'info_resource  ->  NetAlgo_benefitNoinfrsc
+  McshTchInf000015:9997  netAlgo'scalability'resource  ->  NetAlgo'scalabilityinfrsc
+  McshTchInf000015:10184  AnLaw'resource  ->  AnLawinfrsc
+  McshTchInf000015:10430  Agntdecent'info_resource  ->  Agntdecentinfrsc
+  McshTchInf000015:11005  Agntsrvc'info_resource  ->  Agntsrvcinfrsc
+  McshTchInf000015:11876  AnserviceArbitration'info_resource  ->  AnserviceArbitrationinfrsc
+  McshTchInf000015:13884  netAlgo-evoluting'info-resource  ->  NetAlgo_evolutinginfrsc
+  McshTchInf000016:1302  Pow'info_resource  ->  Powinfrsc
+  McshTchInf000016:2354  Bkcnchain_asset'info_resource  ->  Bkcnchain_assetinfrsc
+  McshTchInf000016:4658  info-resource-of-blockchain-wallet  ->  Blockchain_walletinfrsc
+  McshTchInf000016:5591  info-resource-of-upgrading  ->  Upgradinginfrsc
+  McshTchInf000016:6441  info-resource-of-Cosmos-net  ->  Cosmos_netinfrsc
+  McshTchInf000016:7419  Dae-net'info-resource  ->  Dae_netinfrsc
+  McshTchInf000016:8318  Bos-net'info-resource  ->  Bos_netinfrsc
+  McshTchInf000016:13363  Dashproposal'info_resource  ->  Dashproposalinfrsc
+  McshTchInf000016:13535  Ddash-net'info-resource  ->  Ddash_netinfrsc
+  McshTchInf000016:15535  DKomode'info_resource  ->  DKomodeinfrsc
+  McshTchInf000017:7768  AgntBtcncon'info_resource  ->  AgntBtcnconinfrsc
+  McshTchInf000017:9027  AgntBtcn'info-resource  ->  AgntBtcninfrsc
+  McshTchInf000018:6134  info-resource-of-Token-client  ->  Token_clientinfrsc
+  McshTchInf000018:10448  Solx_lago'info_resource  ->  Solx_lagoinfrsc
+  McshTchInf000018:12173  HumnBtrn1994'info_resource  ->  HumnBtrn1994infrsc
+  McshTchInf000018:12543  Ethereum-resource  ->  AgntEthrinfrsc
+  McshTchInf000019:1022  OgznDao_law'info_resource  ->  OgznDao_lawinfrsc
+  McshTchInf000019:1086  OgznDao'resource  ->  OgznDaoinfrsc
+  McshTchInf000019:1355  DeOznDef'info_resource  ->  DeOznDefinfrsc
+  McshTchInf000019:1558  info-resource-of-DoEth  ->  DoEthinfrsc
+  McshTchInf000019:2555  info-resource-of-The-DAO  ->  The_DAOinfrsc
+  McshTchInf000019:2634  info-resource-of-MakerDAO  ->  MakerDAOinfrsc
+  McshTchInf000019:3046  DoAragon_template'info_resource  ->  DoAragon_templateinfrsc
+  McshTchInf000019:3169  DoAragon'info_resource  ->  DoAragoninfrsc
+  McshTchInf000019:3441  DAOstack_reputation'info_resource  ->  DAOstack_reputationinfrsc
+  McshTchInf000019:3681  DvGEN'info_resource  ->  DvGENinfrsc
+  McshTchInf000019:4293  DAOstack'info_resource  ->  DAOstackinfrsc
+  McshTchInf000019:4389  Genesis-DAO'info-resource  ->  Genesis_DAOinfrsc
+  McshTchInf000019:4482  dxDAO'info_resource  ->  DxDAOinfrsc
+  McshTchInf000019:4511  PolkaDAO'info_resource  ->  PolkaDAOinfrsc
+  McshTchInf000019:4757  info-resource-of-Stokes.Luke  ->  Stokes.Lukeinfrsc
+  McshTchInf000019:5994  eosDAC_proposal'info_resource  ->  EosDAC_proposalinfrsc
+  McshTchInf000019:6045  eosDAC_govc'info_resource  ->  EosDAC_govcinfrsc
+  McshTchInf000019:6204  eosDAC'info_resource  ->  EosDACinfrsc
+  McshTchInf000020:3250  Chrono.tech'info_resource  ->  Chrono.techinfrsc
+  McshTchInf000021:1833  info-resource-of-Dasset  ->  Dassetinfrsc
+  McshTchInf000021:2292  Agnteos'resource.voting  ->  Agnteos'votinginfrsc
+  McshTchInf000021:2590  Agnteos-client'info-resource  ->  Agnteos_clientinfrsc
+  McshTchInf000021:2733  Agnteos-Dapp'info-resource  ->  Agnteos_Dappinfrsc
+  McshTchInf000021:2961  Agnteos_Voice'info_resource  ->  Agnteos_Voiceinfrsc
+  McshTchInf000021:3339  Agnteos'info_resource  ->  Agnteosinfrsc
+  McshTchInf000022:775  Faircoin_net'CVN'resource  ->  CVNinfrsc
+  McshTchInf000022:1433  Faircoin_net'FairCoop'resource  ->  FairCoopinfrsc
+  McshTchInf000022:1577  Frcnirsc  ->  Frcninfrsc
+  McshTchInf000023:97  info-resource-of-Dagchain  ->  Dagchaininfrsc
+  McshTchInf000023:204  Iota-net'resource  ->  DnIotainfrsc
+  McshTchInf000024:945  info-resource-of-STEEM-Dollar  ->  STEEM_Dollarinfrsc
+  McshTchInf000024:2849  info-resource-of-Stemacnt  ->  Stemacntinfrsc
+  McshTchInf000024:3132  info-resource-of-witness-account  ->  Witness_accountinfrsc
+  McshTchInf000024:3866  Steemit'resource  ->  Steemitinfrsc
+  McshTchInf000024:4211  Stemirsc  ->  Steminfrsc
+  McshTchInf000025:1126  Everipedia'info_resource  ->  Everipediainfrsc
+  McshTchInf000026:307  Blockstack_net'Stacks_net'resource  ->  Stacks_netinfrsc
+  McshTchInf000026:808  Blockstack_net'subdomain'info_resource  ->  Blockstack_net'subdomaininfrsc
+  McshTchInf000026:1015  Blockstack_Gaia'info_resource  ->  Blockstack_Gaiainfrsc
+  McshTchInf000026:1531  Blockstack_net'app_mining'resource  ->  App_mininginfrsc
+  McshTchInf000026:1551  Blockstack_Dapp'info_resource  ->  Blockstack_Dappinfrsc
+  McshTchInf000026:2024  Blockstack-net'info-resource  ->  Blockstack_netinfrsc
+  McshTchInf000027:164  Neo_net'resource  ->  Neo_netinfrsc
+  McshTchInf000028:97  DnDiem_developer'info_resource  ->  DnDiem_developerinfrsc
+  McshTchInf000028:1623  DnDiem_chain'info_resource  ->  DnDiem_chaininfrsc
+  McshTchInf000028:1877  DnDiem_reserve'info_resource  ->  DnDiem_reserveinfrsc
+  McshTchInf000028:1994  DnDiem-Association'info-resource  ->  DnDiem_Associationinfrsc
+  McshTchInf000028:2361  DnDiem-Cli'info-resource  ->  DnDiem_Cliinfrsc
+  McshTchInf000028:2379  DnDiem_program'info_resource  ->  DnDiem_programinfrsc
+  McshTchInf000028:2666  DnDiem'info_resource  ->  DnDieminfrsc
+  McshTchInf000029:546  Json_lago_resource  ->  Json_lagoinfrsc
+  McshTchInf000029:726  Jnld'info_resource  ->  Jnldinfrsc
+  McshTchInf000029:1910  Jnst'info_resource  ->  Jnstinfrsc
+  McshTchInf000030:3142  Rust_lago-std'info-resource  ->  Rust_lago_stdinfrsc
+  McshTchInf000030:3348  info-resource-of-clip-of-Rust_lago  ->  Clip_of_Rust_lagoinfrsc
+  McshTchInf000030:3534  Rust_lago_rustc'info_resource  ->  Rust_lago_rustcinfrsc
+  McshTchInf000030:4083  Rust_lago_Cargo'info_resource  ->  Rust_lago_Cargoinfrsc
+  McshTchInf000030:4198  Rust_lago'info_resource  ->  Rust_lagoinfrsc
+  McshTchInf000031:2877  Cppz_lago'info_resource  ->  Cppz_lagoinfrsc
+  McshTchInf000032:807  Git'info-resource  ->  Gitinfrsc
+  McshTchInf000032:1108  info-resource-of-Gitrepo  ->  Gitrepoinfrsc
+  McshTchInf000035:383  Html_lago'info_resource  ->  Html_lagoinfrsc
+  McshTchInf000036:596  techAI'info_resource  ->  TechAIinfrsc
+  McshTchInf000036:908  Vais'info_resource  ->  Vaisinfrsc
+  McshTchInf000036:3522  espeakng'info_resource  ->  Espeaknginfrsc
+  McshTchInf000036:4105  TechMalr'info_resource  ->  TechMalrinfrsc
+  McshTchInf000036:4819  prompting'info_resource  ->  Promptinginfrsc
+  McshTchInf000036:5327  techAIResponsible'info_resource  ->  TechAIResponsibleinfrsc
+  McshTchInf000036:5419  techAIGeneral'info_resource  ->  TechAIGeneralinfrsc
+  McshTchInf000036:6097  techNn'info_resource  ->  TechNninfrsc
+  McshTchInf000037:106  Softapi'info_resource  ->  Softapiinfrsc
+  McshTchInf000038:701  techLlm'info_resource  ->  TechLlminfrsc
+  McshTchInf000038:1085  ollama'info_resource  ->  Ollamainfrsc
+  McshTchInf000038:1149  LangChain'info_resource  ->  LangChaininfrsc
+  McshTchInf000038:1874  llmGrok'info_resource  ->  LlmGrokinfrsc
+  McshTchInf000039:1653  klmrErgoai'info_resource  ->  KlmrErgoaiinfrsc
+  McshTchInf000039:1814  klmrFramenet'info_resource  ->  KlmrFramenetinfrsc
+  McshTchInf000039:2450  klmrConceptbase'info_resource  ->  KlmrConceptbaseinfrsc
+  McshTchInf000039:2587  Wnkm'info_resource  ->  Wnkminfrsc
+  McshTchInf000039:2918  klmrIkarus'info_resource  ->  KlmrIkarusinfrsc
+  McshTchInf000039:3037  Knlg_lago'info_resource  ->  Knlg_lagoinfrsc
+  McshTchInf000039:3634  lagoCdnl'info_resource  ->  LagoCdnlinfrsc
+  McshTchInf000039:3754  lagoAcen'info_resource  ->  LagoAceninfrsc
+  McshTchInf000039:4257  Wkdtproperty'info_resource  ->  Wkdtpropertyinfrsc
+  McshTchInf000039:4538  lagoWkdt'info_resource  ->  LagoWkdtinfrsc
+  McshTchInf000039:5532  lagoCgaf'info_resource  ->  LagoCgafinfrsc
+  McshTchInf000039:6243  lagoCmlc'info_resource  ->  LagoCmlcinfrsc
+  McshTchInf000039:8134  Cycl_lago'info_resource  ->  Cycl_lagoinfrsc
+  McshTchInf000039:8680  ontgSumo'info_resource  ->  OntgSumoinfrsc
+  McshTchInf000039:10173  foaf'info_resource  ->  Foafinfrsc
+  McshTchInf000039:10586  lagoOntg'info_resource  ->  LagoOntginfrsc
+  McshTchInf000039:11144  lagoOwlg'info_resource  ->  LagoOwlginfrsc
+  McshTchInf000039:11492  lagoRift'info_resource  ->  LagoRiftinfrsc
+  McshTchInf000039:11578  lagoLddt'info_resource  ->  LagoLddtinfrsc
+  McshTchInf000039:13583  Rdfw_lago'info_resource  ->  Rdfw_lagoinfrsc
+  McshTchInf000039:14542  Wlfmlnbi'info_resource  ->  Wlfmlnbiinfrsc
+  McshTchInf000039:14576  Wlfmlitpr'info_resource  ->  Wlfmlitprinfrsc
+  McshTchInf000039:14606  Wlfmlsys'info_resource  ->  Wlfmlsysinfrsc
+  McshTchInf000039:14745  Wlfmlcloud'info_resource  ->  Wlfmlcloudinfrsc
+  McshTchInf000039:15129  Wlfmlen'info_resource  ->  Wlfmleninfrsc
+  McshTchInf000039:16039  Wlfmlpn'info_resource  ->  Wlfmlpninfrsc
+  McshTchInf000039:16260  HumnWlfm'info_resource  ->  HumnWlfminfrsc
+  McshTchInf000039:16366  Wlfm_lago'info_resource  ->  Wlfm_lagoinfrsc
+  McshTchInf000040:218  techIot'info_resource  ->  TechIotinfrsc
+  McshTchInf000040:285  Internet'info_resource  ->  Internetinfrsc
+  McshTchInf000040:940  appNwjs'info_resource  ->  AppNwjsinfrsc
+  McshTchInf000041:713  Vscagent'info_resource  ->  Vscagentinfrsc
+  McshTchInf000041:6050  Vscode'info_resource  ->  Vscodeinfrsc
+  McshTchInf000042:73  Vsccmdi'info_resource  ->  Vsccmdiinfrsc
+  McshTchPrgm000002:169  Cmprprgm'info_resource  ->  Cmprprgminfrsc
+  McshTchPrgm000002:380  app'info_resource  ->  Appinfrsc
+  McshTchPrgm000002:735  prgmOs'info_resource  ->  PrgmOsinfrsc
+  McshTchPrgm000002:978  AdrdWinlator'info_resource  ->  AdrdWinlatorinfrsc
+  McshTchPrgm000002:2357  appVideo'info_resource  ->  AppVideoinfrsc
+  McshTchPrgm000002:2392  prgmTranspiler'info_resource  ->  PrgmTranspilerinfrsc
+  McshTchPrgm000003:789  Atompckg'info_resource  ->  Atompckginfrsc
+  McshTchPrgm000003:2338  Atomedtr'info_resource  ->  Atomedtrinfrsc
+  McshTchPrgm000005:639  Winos'info_resource  ->  Winosinfrsc
+  McshTch000002:228  tech'info_resource  ->  Techinfrsc
+  McshTch000002:1251  techSatellite'info_resource  ->  TechSatelliteinfrsc
+  McshTch000003:60  machine'info_resource  ->  Machineinfrsc
+  McshTch000005:106  techRobo'info_resource  ->  TechRoboinfrsc

@@ -1,31 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   MvrlGstr01,MvrlGstr02: ../dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  591 Mcsh-files · 6 files with issues · 6 issues
-
-=== MvrlGstr01 (3 issues in 3 files) — file:lines, the-biggest line first
-  McshHlth000008:407
-  McshHlth000016:292
-  McshHmn000002:4690
-
-=== MvrlGstr01 --line — every issue, its line and its message
-  McshHlth000008.last.html
-    407  specific_has_generic: "human-disease" is a specific of disorderNo_Gntr, but its generic-tree:: (McshHlth000011:677) does not list it
-  McshHlth000016.last.html
-    292  specific_has_generic: "human-disease" is a specific of therapy_Gntr, but its generic-tree:: (McshHlth000011:677) does not list it
-  McshHmn000002.last.html
-    4690  specific_has_generic: "human-society" is a specific of human_Gntr, but its generic-tree:: (McshStn000009:8330) does not list it
-
-=== MvrlGstr02 (3 issues in 3 files) — file:lines, the-biggest line first
-  McshTchInf000019:3310
-  McshTchInf000021:2327
-  McshTchInf000022:1286
-
-=== MvrlGstr02 --line — every issue, its line and its message
-  McshTchInf000019.last.html
-    3310  generic_has_specific: "DAOstack_governor_Gntr" has generic McshTchInf000019#idDeOzngvnr, but McshTchInf000019#idDeOzngvnr has no specific-tree::
-  McshTchInf000021.last.html
-    2327  generic_has_specific: "Agnteos'voting_Gntr" has generic McshTchInf000015#idAlgntgovvtg, but McshTchInf000015#idAlgntgovvtg has no specific-tree::
-  McshTchInf000022.last.html
-    1286  generic_has_specific: "Frcnenergy_Gntr" has generic McshTchInf000016#idDbcenrg, but McshTchInf000016#idDbcenrg has no specific-tree::
-
+  591 Mcsh-files · 0 files with issues · 0 issues
+  codes with issues now: Mvre01, Mvre02, MvrlId01, MvrlId04, MvrlId06, MvrlId13, MvrlMnnm01, MvrlMnnm02, MvrlMnnm03, MvrlMnnm05, Mvrw01, Mvrw06

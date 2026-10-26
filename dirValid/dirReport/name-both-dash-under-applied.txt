@@ -1,0 +1,277 @@
+name-both-dash-under-applied {2026-10-26}
+formal names (. or ') with BOTH-DASH "--" -> "_" and "__"; 104 formal-names, 21 files
+
+=== SUMMARY
+  main     104  formal-name lines renamed (X, / X!=I / X!@file)
+  keep     104  old dash formal-name kept as X!⇒N — REMOVED {2026-10-26}, see name-dash-keep-removed-applied.txt
+  alias    20  alias A!⇒T: copy line with "_" added before the old line
+  title    1  h3 titles renamed
+  ref      0  "* M!@file#id" references renamed
+  derived  0  !⇒M targets, M_Gntr / M_Sptr / M.specific / M'tree renamed
+
+=== FILES (21)
+  McshCor000002
+  McshEdu000009
+  McshLag000007
+  McshLag000011
+  McshLag000018
+  McshLag000020
+  McshNtr000007
+  McshStn000016
+  McshStn000017
+  McshStn000024
+  McshStn000030
+  McshStn000031
+  McshTchInf000007
+  McshTchInf000008
+  McshTchInf000009
+  McshTchInf000010
+  McshTchInf000012
+  McshTchInf000015
+  McshTchInf000021
+  McshTchInf000024
+  McshTchInf000031
+
+=== MAIN (104) — formal-name lines renamed (X, / X!=I / X!@file)
+  McshCor000002:1425  Mcs'parts-complement--of-att  ->  Mcs'parts_complement__of_att
+  McshCor000002:1448  Mcs'specifics-complement--of-att  ->  Mcs'specifics_complement__of_att
+  McshCor000002:4609  Mcs'relation-to--human-concept  ->  Mcs'relation_to__human_concept
+  McshCor000002:4611  cptMind'relation-to--sensorial-concept  ->  cptMind'relation_to__sensorial_concept
+  McshCor000002:4653  entity'relation-to--sensorial-concept  ->  entity'relation_to__sensorial_concept
+  McshCor000002:4670  Oop'relation-to--sensorial-concept  ->  Oop'relation_to__sensorial_concept
+  McshEdu000009:809  SciLogic'relation-to--mathematical-logic  ->  SciLogic'relation_to__mathematical_logic
+  McshEdu000009:1038  logicFormal'relation-to--mathematical-logic  ->  logicFormal'relation_to__mathematical_logic
+  McshEdu000009:1088  SciLogicFormal'relation-to--informal-logic  ->  SciLogicFormal'relation_to__informal_logic
+  McshEdu000009:1089  SciLogicFormalNo'relation-to--formal-logic  ->  SciLogicFormalNo'relation_to__formal_logic
+  McshEdu000009:1090  logicFormal'relation-to--informal-logic  ->  logicFormal'relation_to__informal_logic
+  McshLag000007:1377  Hmnmsemucnpt'relation-to--mind-concept  ->  Hmnmsemucnpt'relation_to__mind_concept
+  McshLag000007:16199  HmnmviewSemu'relation-to--senso-mind  ->  HmnmviewSemu'relation_to__senso_mind
+  McshLag000007:21993  Hmnmargu'relation-to--semu-view  ->  Hmnmargu'relation_to__semu_view
+  McshLag000007:22006  Hmnmargu'relation-to--senso-mind  ->  Hmnmargu'relation_to__senso_mind
+  McshLag000007:27120  phraseArgu.noun-phrase--participle-phrase  ->  phraseArgu.noun_phrase__participle_phrase
+  McshLag000018:15377  Zhonsent_wo.subject-verb--subject-complement  ->  Zhonsent_wo.subject_verb__subject_complement
+  McshLag000018:15426  Zhonsent_wo.timePoint-subject--subject-complement  ->  Zhonsent_wo.timePoint_subject__subject_complement
+  McshLag000020:1506  Webapp.Greek-word-to--phonemic-notation  ->  Webapp.Greek_word_to__phonemic_notation
+  McshNtr000007:82  Chmatm'relation-to--chemical-element  ->  Chmatm'relation_to__chemical_element
+  McshNtr000007:83  ChmcElry'relation-to--chemical-atom  ->  ChmcElry'relation_to__chemical_atom
+  McshStn000016:95  lawIntl'relation-to--international-organization  ->  lawIntl'relation_to__international_organization
+  McshStn000016:96  ogznIntl'relation-to--international-law  ->  ogznIntl'relation_to__international_law
+  McshStn000024:699  StndRfc.0066-NIC--third-level-ideas-and-other-noise  ->  StndRfc.0066_NIC__third_level_ideas_and_other_noise
+  McshStn000024:1631  StndRfc.0174-UCLA--Computer-Science-Graphics-Overview  ->  StndRfc.0174_UCLA__Computer_Science_Graphics_Overview
+  McshStn000024:1888  StndRfc.0205-NETCRT--a-character-display-protocol  ->  StndRfc.0205_NETCRT__a_character_display_protocol
+  McshStn000024:2570  StndRfc.0295-Report-of-the-Protocol-Workshop--12-October-1971  ->  StndRfc.0295_Report_of_the_Protocol_Workshop__12_October_1971
+  McshStn000024:4389  StndRfc.0525-MIT-MATHLAB-meets-UCSB-OLS--an-example-of-resource-sharing  ->  StndRfc.0525_MIT_MATHLAB_meets_UCSB_OLS__an_example_of_resource_sharing
+  McshStn000024:4566  StndRfc.0549-Minutes-of-Network-Graphics-Group-meeting--15-17-July-1973  ->  StndRfc.0549_Minutes_of_Network_Graphics_Group_meeting__15_17_July_1973
+  McshStn000024:5538  StndRfc.0683-FTPSRV--Tenex-extension-for-paged-files  ->  StndRfc.0683_FTPSRV__Tenex_extension_for_paged_files
+  McshStn000024:6009  StndRfc.0744-MARS--a-Message-Archiving-and-Retrieval-Service  ->  StndRfc.0744_MARS__a_Message_Archiving_and_Retrieval_Service
+  McshStn000024:8214  StndRfc.0994-Final-text-of-DIS-8473--Protocol-for-Providing-the-Connectionless-mode-Network-Service  ->  StndRfc.0994_Final_text_of_DIS_8473__Protocol_for_Providing_the_Connectionless_mode_Network_Service
+  McshStn000024:8588  StndRfc.1037-NFILE--a-file-access-protocol  ->  StndRfc.1037_NFILE__a_file_access_protocol
+  McshStn000024:12550  StndRfc.1492-An-Access-Control-Protocol--Sometimes-Called-TACACS  ->  StndRfc.1492_An_Access_Control_Protocol__Sometimes_Called_TACACS
+  McshStn000024:12680  StndRfc.1507-DASS--Distributed-Authentication-Security-Service  ->  StndRfc.1507_DASS__Distributed_Authentication_Security_Service
+  McshStn000024:13861  StndRfc.1642-UTF-7--A-Mail-Safe-Transformation-Format-of-Unicode  ->  StndRfc.1642_UTF_7__A_Mail_Safe_Transformation_Format_of_Unicode
+  McshStn000024:15145  StndRfc.1790-An-Agreement-between-the-Internet-Society-and-Sun-Microsystems--Inc-in-the-Matter-of-ONC-RPC-and-XDR-Protocols  ->  StndRfc.1790_An_Agreement_between_the_Internet_Society_and_Sun_Microsystems__Inc_in_the_Matter_of_ONC_RPC_and_XDR_Protocols
+  McshStn000024:15581  StndRfc.1843-HZ--A-Data-Format-for-Exchanging-Files-of-Arbitrarily-Mixed-Chinese-and-ASCII-characters  ->  StndRfc.1843_HZ__A_Data_Format_for_Exchanging_Files_of_Arbitrarily_Mixed_Chinese_and_ASCII_characters
+  McshStn000024:16952  StndRfc.2001-TCP-Slow-Start--Congestion-Avoidance--Fast-Retransmit--and-Fast-Recovery-Algorithms  ->  StndRfc.2001_TCP_Slow_Start__Congestion_Avoidance__Fast_Retransmit__and_Fast_Recovery_Algorithms
+  McshStn000024:17295  StndRfc.2040-The-RC5--RC5-CBC--RC5-CBC-Pad--and-RC5-CTS-Algorithms  ->  StndRfc.2040_The_RC5__RC5_CBC__RC5_CBC_Pad__and_RC5_CTS_Algorithms
+  McshStn000024:17328  StndRfc.2044-UTF-8--a-transformation-format-of-Unicode-and-ISO-10646  ->  StndRfc.2044_UTF_8__a_transformation_format_of_Unicode_and_ISO_10646
+  McshStn000024:17630  StndRfc.2078-Generic-Security-Service-Application-Program-Interface--Version-2  ->  StndRfc.2078_Generic_Security_Service_Application_Program_Interface__Version_2
+  McshStn000024:18181  StndRfc.2142-Mailbox-Names-for-Common-Services--Roles-and-Functions  ->  StndRfc.2142_Mailbox_Names_for_Common_Services__Roles_and_Functions
+  McshStn000024:18603  StndRfc.2191-VENUS--Very-Extensive-Non-Unicast-Service  ->  StndRfc.2191_VENUS__Very_Extensive_Non_Unicast_Service
+  McshStn000024:18992  StndRfc.2236-Internet-Group-Management-Protocol--Version-2  ->  StndRfc.2236_Internet_Group_Management_Protocol__Version_2
+  McshStn000024:19298  StndRfc.2270-Using-a-Dedicated-AS-for-Sites--Homed-to-a-Single-Provider  ->  StndRfc.2270_Using_a_Dedicated_AS_for_Sites__Homed_to_a_Single_Provider
+  McshStn000024:19385  StndRfc.2279-UTF-8--a-transformation-format-of-ISO-10646  ->  StndRfc.2279_UTF_8__a_transformation_format_of_ISO_10646
+  McshStn000024:20142  StndRfc.2367-PF_KEY-Key-Management-API--Version-2  ->  StndRfc.2367_PF_KEY_Key_Management_API__Version_2
+  McshStn000024:21990  StndRfc.2576-Coexistence-between-Version-1--Version-2--and-Version-3-of-the-Internet-standard-Network-Management-Framework  ->  StndRfc.2576_Coexistence_between_Version_1__Version_2__and_Version_3_of_the_Internet_standard_Network_Management_Framework
+  McshStn000024:22158  StndRfc.2595-Using-TLS-with-IMAP--POP3-and-ACAP  ->  StndRfc.2595_Using_TLS_with_IMAP__POP3_and_ACAP
+  McshStn000024:22273  StndRfc.2608-Service-Location-Protocol--Version-2  ->  StndRfc.2608_Service_Location_Protocol__Version_2
+  McshStn000024:22847  StndRfc.2674-Definitions-of-Managed-Objects-for-Bridges-with-Traffic-Classes--Multicast-Filtering-and-Virtual-LAN-Extensions  ->  StndRfc.2674_Definitions_of_Managed_Objects_for_Bridges_with_Traffic_Classes__Multicast_Filtering_and_Virtual_LAN_Extensions
+  McshStn000024:23434  StndRfc.2743-Generic-Security-Service-Application-Program-Interface-Version-2--Update-1  ->  StndRfc.2743_Generic_Security_Service_Application_Program_Interface_Version_2__Update_1
+  McshStn000024:23570  StndRfc.2759-Microsoft-PPP-CHAP-Extensions--Version-2  ->  StndRfc.2759_Microsoft_PPP_CHAP_Extensions__Version_2
+  McshStn000024:23758  StndRfc.2781-UTF-16--an-encoding-of-ISO-10646  ->  StndRfc.2781_UTF_16__an_encoding_of_ISO_10646
+  McshStn000024:23776  StndRfc.2783-Pulse-Per-Second-API-for-UNIX-like-Operating-Systems--Version-1.0  ->  StndRfc.2783_Pulse_Per_Second_API_for_UNIX_like_Operating_Systems__Version_1.0
+  McshStn000024:24215  StndRfc.2833-RTP-Payload-for-DTMF-Digits--Telephony-Tones-and-Telephony-Signals  ->  StndRfc.2833_RTP_Payload_for_DTMF_Digits__Telephony_Tones_and_Telephony_Signals
+  McshStn000024:24338  StndRfc.2847-LIPKEY--A-Low-Infrastructure-Public-Key-Mechanism-Using-SPKM  ->  StndRfc.2847_LIPKEY__A_Low_Infrastructure_Public_Key_Mechanism_Using_SPKM
+  McshStn000024:25371  StndRfc.2967-TISDAG--Technical-Infrastructure-for-Swedish-Directory-Access-Gateways  ->  StndRfc.2967_TISDAG__Technical_Infrastructure_for_Swedish_Directory_Access_Gateways
+  McshStn000024:26255  StndRfc.3071-Reflections-on-the-DNS--RFC-1591--and-Categories-of-Domains  ->  StndRfc.3071_Reflections_on_the_DNS__RFC_1591__and_Categories_of_Domains
+  McshStn000024:27249  StndRfc.3190-RTP-Payload-Format-for-12-bit-DAT-Audio-and-20--and-24-bit-Linear-Sampled-Audio  ->  StndRfc.3190_RTP_Payload_Format_for_12_bit_DAT_Audio_and_20__and_24_bit_Linear_Sampled_Audio
+  McshStn000024:27525  StndRfc.3224-Vendor-Extensions-for-Service-Location-Protocol--Version-2  ->  StndRfc.3224_Vendor_Extensions_for_Service_Location_Protocol__Version_2
+  McshStn000024:28803  StndRfc.3376-Internet-Group-Management-Protocol--Version-3  ->  StndRfc.3376_Internet_Group_Management_Protocol__Version_3
+  McshStn000024:30593  StndRfc.3584-Coexistence-between-Version-1--Version-2--and-Version-3-of-the-Internet-standard-Network-Management-Framework  ->  StndRfc.3584_Coexistence_between_Version_1__Version_2__and_Version_3_of_the_Internet_standard_Network_Management_Framework
+  McshStn000024:30973  StndRfc.3629-UTF-8--a-transformation-format-of-ISO-10646  ->  StndRfc.3629_UTF_8__a_transformation_format_of_ISO_10646
+  McshStn000024:31932  StndRfc.3741-Exclusive-XML-Canonicalization--Version-1.0  ->  StndRfc.3741_Exclusive_XML_Canonicalization__Version_1.0
+  McshStn000024:32268  StndRfc.3780-SMIng--Next-Generation-Structure-of-Management-Information  ->  StndRfc.3780_SMIng__Next_Generation_Structure_of_Management_Information
+  McshStn000024:33445  StndRfc.3926-FLUTE--File-Delivery-over-Unidirectional-Transport  ->  StndRfc.3926_FLUTE__File_Delivery_over_Unidirectional_Transport
+  McshStn000024:35041  StndRfc.4115-A-Differentiated-Service-Two-Rate--Three-Color-Marker-with-Efficient-Handling-of-in-Profile-Traffic  ->  StndRfc.4115_A_Differentiated_Service_Two_Rate__Three_Color_Marker_with_Efficient_Handling_of_in_Profile_Traffic
+  McshStn000024:35514  StndRfc.4172-iFCP--A-Protocol-for-Internet-Fibre-Channel-Storage-Networking  ->  StndRfc.4172_iFCP__A_Protocol_for_Internet_Fibre_Channel_Storage_Networking
+  McshStn000024:36003  StndRfc.4231-Identifiers-and-Test-Vectors-for-HMAC-SHA-224--HMAC-SHA-256--HMAC-SHA-384--and-HMAC-SHA-512  ->  StndRfc.4231_Identifiers_and_Test_Vectors_for_HMAC_SHA_224__HMAC_SHA_256__HMAC_SHA_384__and_HMAC_SHA_512
+  McshStn000024:37066  StndRfc.4357-Additional-Cryptographic-Algorithms-for-Use-with-GOST-28147-89--GOST-R-34.10-94--GOST-R-34.10-2001--and-GOST-R-34.11-94-Algorithms  ->  StndRfc.4357_Additional_Cryptographic_Algorithms_for_Use_with_GOST_28147_89__GOST_R_34.10_94__GOST_R_34.10_2001__and_GOST_R_34.11_94_Algorithms
+  McshStn000024:37120  StndRfc.4363-Definitions-of-Managed-Objects-for-Bridges-with-Traffic-Classes--Multicast-Filtering--and-Virtual-LAN-Extensions  ->  StndRfc.4363_Definitions_of_Managed_Objects_for_Bridges_with_Traffic_Classes__Multicast_Filtering__and_Virtual_LAN_Extensions
+  McshStn000024:38195  StndRfc.4491-Using-the-GOST-R-34.10-94--GOST-R-34.10-2001--and-GOST-R-34.11-94-Algorithms-with-the-Internet-X.509-Public-Key-Infrastructure-Certificate-and-CRL-Profile  ->  StndRfc.4491_Using_the_GOST_R_34.10_94__GOST_R_34.10_2001__and_GOST_R_34.11_94_Algorithms_with_the_Internet_X.509_Public_Key_Infrastructure_Certificate_and_CRL_Profile
+  McshStn000024:40190  StndRfc.4733-RTP-Payload-for-DTMF-Digits--Telephony-Tones--and-Telephony-Signals  ->  StndRfc.4733_RTP_Payload_for_DTMF_Digits__Telephony_Tones__and_Telephony_Signals
+  McshStn000024:40610  StndRfc.4783-GMPLS--Communication-of-Alarm-Information  ->  StndRfc.4783_GMPLS__Communication_of_Alarm_Information
+  McshStn000024:41313  StndRfc.4868-Using-HMAC-SHA-256--HMAC-SHA-384--and-HMAC-SHA-512-with-IPsec  ->  StndRfc.4868_Using_HMAC_SHA_256__HMAC_SHA_384__and_HMAC_SHA_512_with_IPsec
+  McshStn000024:41978  StndRfc.4949-Internet-Security-Glossary--Version-2  ->  StndRfc.4949_Internet_Security_Glossary__Version_2
+  McshStn000024:42115  StndRfc.4965-CableLabs--IETF-Standardization-Collaboration  ->  StndRfc.4965_CableLabs__IETF_Standardization_Collaboration
+  McshStn000024:52741  StndRfc.6247-Moving-the-Undeployed-TCP-Extensions-RFC-1072--RFC-1106--RFC-1110--RFC-1145--RFC-1146--RFC-1379--RFC-1644--and-RFC-1693-to-Historic-Status  ->  StndRfc.6247_Moving_the_Undeployed_TCP_Extensions_RFC_1072__RFC_1106__RFC_1110__RFC_1145__RFC_1146__RFC_1379__RFC_1644__and_RFC_1693_to_Historic_Status
+  McshStn000024:54259  StndRfc.6428-Proactive-Connectivity-Verification--Continuity-Check--and-Remote-Defect-Indication-for-the-MPLS-Transport-Profile  ->  StndRfc.6428_Proactive_Connectivity_Verification__Continuity_Check__and_Remote_Defect_Indication_for_the_MPLS_Transport_Profile
+  McshStn000024:56066  StndRfc.6649-Deprecate-DES--RC4-HMAC-EXP--and-Other-Weak-Cryptographic-Algorithms-in-Kerberos  ->  StndRfc.6649_Deprecate_DES__RC4_HMAC_EXP__and_Other_Weak_Cryptographic_Algorithms_in_Kerberos
+  McshStn000024:56698  StndRfc.6726-FLUTE--File-Delivery-over-Unidirectional-Transport  ->  StndRfc.6726_FLUTE__File_Delivery_over_Unidirectional_Transport
+  McshStn000024:57156  StndRfc.6781-DNSSEC-Operational-Practices--Version-2  ->  StndRfc.6781_DNSSEC_Operational_Practices__Version_2
+  McshStn000024:66018  StndRfc.7842-Requirements-for-Improvements-to-the-IETF-Email-List-Archiving--Web-Based-Browsing--and-Search-Tool  ->  StndRfc.7842_Requirements_for_Improvements_to_the_IETF_Email_List_Archiving__Web_Based_Browsing__and_Search_Tool
+  McshStn000024:69086  StndRfc.8208-BGPsec-Algorithms--Key-Formats--and-Signature-Formats  ->  StndRfc.8208_BGPsec_Algorithms__Key_Formats__and_Signature_Formats
+  McshStn000024:69095  StndRfc.8209-A-Profile-for-BGPsec-Router-Certificates--Certificate-Revocation-Lists--and-Certification-Requests  ->  StndRfc.8209_A_Profile_for_BGPsec_Router_Certificates__Certificate_Revocation_Lists__and_Certification_Requests
+  McshStn000024:72399  StndRfc.8608-BGPsec-Algorithms--Key-Formats--and-Signature-Formats  ->  StndRfc.8608_BGPsec_Algorithms__Key_Formats__and_Signature_Formats
+  McshStn000024:73221  StndRfc.8711-Structure-of-the-IETF-Administrative-Support-Activity--Version-2.0  ->  StndRfc.8711_Structure_of_the_IETF_Administrative_Support_Activity__Version_2.0
+  McshTchInf000007:1944  kbOnto'relation-to--knowledge-graph  ->  kbOnto'relation_to__knowledge_graph
+  McshTchInf000008:1990  Hitp_lago'page-whole-path--of--info-container  ->  Hitp_lago'page_whole_path__of__info_container
+  McshTchInf000008:1991  Hitp_lago'whole-path--of--info-container  ->  Hitp_lago'whole_path__of__info_container
+  McshTchInf000008:2020  oHitp'tabs-container--of-fContainersInsert  ->  oHitp'tabs_container__of_fContainersInsert
+  McshTchInf000009:3861  Mcsh_lago'add-new-language--in-Mcshmgr  ->  Mcsh_lago'add_new_language__in_Mcshmgr
+  McshTchInf000010:831  Jsgn_lago'mixedNo-name-value-pair--semantic-unit  ->  Jsgn_lago'mixedNo_name_value_pair__semantic_unit
+  McshTchInf000012:2887  Jsnd_lago'string-decoder--core-object-module  ->  Jsnd_lago'string_decoder__core_object_module
+  McshTchInf000015:6301  DeContract'10_relation-to--legal-contract  ->  DeContract'10_relation_to__legal_contract
+  McshTchInf000015:6302  DeContract'att010-relation-to--legal-contract  ->  DeContract'att010_relation_to__legal_contract
+  McshTchInf000015:6303  DeContract'relation-to--legal-contract-att010  ->  DeContract'relation_to__legal_contract_att010
+  McshTchInf000024:768  STEEM'converting-to--STEEM-power  ->  STEEM'converting_to__STEEM_power
+  McshTchInf000031:1526  Cppz_lago'identifier-of--src-doc  ->  Cppz_lago'identifier_of__src_doc
+  McshTchInf000031:1527  Cppz_lago'name-of--src-sem-unit  ->  Cppz_lago'name_of__src_sem_unit
+  McshTchInf000031:1571  Cppz_lago'variable-of--src-doc  ->  Cppz_lago'variable_of__src_doc
+  McshTchInf000031:1642  Cppz_lago'constant-of--src-doc  ->  Cppz_lago'constant_of__src_doc
+
+=== KEEP (104) — old dash formal-name kept as X!⇒N — REMOVED {2026-10-26}, see name-dash-keep-removed-applied.txt
+  McshCor000002:1434  Mcs'parts-complement--of-att!⇒Mcs'parts_complement__of_att
+  McshCor000002:1457  Mcs'specifics-complement--of-att!⇒Mcs'specifics_complement__of_att
+  McshCor000002:4617  cptMind'relation-to--sensorial-concept!⇒cptMind'relation_to__sensorial_concept
+  McshCor000002:4617  Mcs'relation-to--human-concept!⇒Mcs'relation_to__human_concept
+  McshCor000002:4657  entity'relation-to--sensorial-concept!⇒entity'relation_to__sensorial_concept
+  McshCor000002:4676  Oop'relation-to--sensorial-concept!⇒Oop'relation_to__sensorial_concept
+  McshEdu000009:810  SciLogic'relation-to--mathematical-logic!⇒SciLogic'relation_to__mathematical_logic
+  McshEdu000009:1039  logicFormal'relation-to--mathematical-logic!⇒logicFormal'relation_to__mathematical_logic
+  McshEdu000009:1091  logicFormal'relation-to--informal-logic!⇒logicFormal'relation_to__informal_logic
+  McshEdu000009:1091  SciLogicFormalNo'relation-to--formal-logic!⇒SciLogicFormalNo'relation_to__formal_logic
+  McshEdu000009:1091  SciLogicFormal'relation-to--informal-logic!⇒SciLogicFormal'relation_to__informal_logic
+  McshLag000007:1378  Hmnmsemucnpt'relation-to--mind-concept!⇒Hmnmsemucnpt'relation_to__mind_concept
+  McshLag000007:16200  HmnmviewSemu'relation-to--senso-mind!⇒HmnmviewSemu'relation_to__senso_mind
+  McshLag000007:21995  Hmnmargu'relation-to--semu-view!⇒Hmnmargu'relation_to__semu_view
+  McshLag000007:22009  Hmnmargu'relation-to--senso-mind!⇒Hmnmargu'relation_to__senso_mind
+  McshLag000007:27121  phraseArgu.noun-phrase--participle-phrase!⇒phraseArgu.noun_phrase__participle_phrase
+  McshLag000018:15378  Zhonsent_wo.subject-verb--subject-complement!⇒Zhonsent_wo.subject_verb__subject_complement
+  McshLag000018:15427  Zhonsent_wo.timePoint-subject--subject-complement!⇒Zhonsent_wo.timePoint_subject__subject_complement
+  McshLag000020:1515  Webapp.Greek-word-to--phonemic-notation!⇒Webapp.Greek_word_to__phonemic_notation
+  McshNtr000007:85  ChmcElry'relation-to--chemical-atom!⇒ChmcElry'relation_to__chemical_atom
+  McshNtr000007:85  Chmatm'relation-to--chemical-element!⇒Chmatm'relation_to__chemical_element
+  McshStn000016:98  ogznIntl'relation-to--international-law!⇒ogznIntl'relation_to__international_law
+  McshStn000016:98  lawIntl'relation-to--international-organization!⇒lawIntl'relation_to__international_organization
+  McshStn000024:700  StndRfc.0066-NIC--third-level-ideas-and-other-noise!⇒StndRfc.0066_NIC__third_level_ideas_and_other_noise
+  McshStn000024:1632  StndRfc.0174-UCLA--Computer-Science-Graphics-Overview!⇒StndRfc.0174_UCLA__Computer_Science_Graphics_Overview
+  McshStn000024:1889  StndRfc.0205-NETCRT--a-character-display-protocol!⇒StndRfc.0205_NETCRT__a_character_display_protocol
+  McshStn000024:2571  StndRfc.0295-Report-of-the-Protocol-Workshop--12-October-1971!⇒StndRfc.0295_Report_of_the_Protocol_Workshop__12_October_1971
+  McshStn000024:4390  StndRfc.0525-MIT-MATHLAB-meets-UCSB-OLS--an-example-of-resource-sharing!⇒StndRfc.0525_MIT_MATHLAB_meets_UCSB_OLS__an_example_of_resource_sharing
+  McshStn000024:4567  StndRfc.0549-Minutes-of-Network-Graphics-Group-meeting--15-17-July-1973!⇒StndRfc.0549_Minutes_of_Network_Graphics_Group_meeting__15_17_July_1973
+  McshStn000024:5539  StndRfc.0683-FTPSRV--Tenex-extension-for-paged-files!⇒StndRfc.0683_FTPSRV__Tenex_extension_for_paged_files
+  McshStn000024:6010  StndRfc.0744-MARS--a-Message-Archiving-and-Retrieval-Service!⇒StndRfc.0744_MARS__a_Message_Archiving_and_Retrieval_Service
+  McshStn000024:8215  StndRfc.0994-Final-text-of-DIS-8473--Protocol-for-Providing-the-Connectionless-mode-Network-Service!⇒StndRfc.0994_Final_text_of_DIS_8473__Protocol_for_Providing_the_Connectionless_mode_Network_Service
+  McshStn000024:8589  StndRfc.1037-NFILE--a-file-access-protocol!⇒StndRfc.1037_NFILE__a_file_access_protocol
+  McshStn000024:12551  StndRfc.1492-An-Access-Control-Protocol--Sometimes-Called-TACACS!⇒StndRfc.1492_An_Access_Control_Protocol__Sometimes_Called_TACACS
+  McshStn000024:12681  StndRfc.1507-DASS--Distributed-Authentication-Security-Service!⇒StndRfc.1507_DASS__Distributed_Authentication_Security_Service
+  McshStn000024:13862  StndRfc.1642-UTF-7--A-Mail-Safe-Transformation-Format-of-Unicode!⇒StndRfc.1642_UTF_7__A_Mail_Safe_Transformation_Format_of_Unicode
+  McshStn000024:15146  StndRfc.1790-An-Agreement-between-the-Internet-Society-and-Sun-Microsystems--Inc-in-the-Matter-of-ONC-RPC-and-XDR-Protocols!⇒StndRfc.1790_An_Agreement_between_the_Internet_Society_and_Sun_Microsystems__Inc_in_the_Matter_of_ONC_RPC_and_XDR_Protocols
+  McshStn000024:15582  StndRfc.1843-HZ--A-Data-Format-for-Exchanging-Files-of-Arbitrarily-Mixed-Chinese-and-ASCII-characters!⇒StndRfc.1843_HZ__A_Data_Format_for_Exchanging_Files_of_Arbitrarily_Mixed_Chinese_and_ASCII_characters
+  McshStn000024:16953  StndRfc.2001-TCP-Slow-Start--Congestion-Avoidance--Fast-Retransmit--and-Fast-Recovery-Algorithms!⇒StndRfc.2001_TCP_Slow_Start__Congestion_Avoidance__Fast_Retransmit__and_Fast_Recovery_Algorithms
+  McshStn000024:17296  StndRfc.2040-The-RC5--RC5-CBC--RC5-CBC-Pad--and-RC5-CTS-Algorithms!⇒StndRfc.2040_The_RC5__RC5_CBC__RC5_CBC_Pad__and_RC5_CTS_Algorithms
+  McshStn000024:17329  StndRfc.2044-UTF-8--a-transformation-format-of-Unicode-and-ISO-10646!⇒StndRfc.2044_UTF_8__a_transformation_format_of_Unicode_and_ISO_10646
+  McshStn000024:17631  StndRfc.2078-Generic-Security-Service-Application-Program-Interface--Version-2!⇒StndRfc.2078_Generic_Security_Service_Application_Program_Interface__Version_2
+  McshStn000024:18182  StndRfc.2142-Mailbox-Names-for-Common-Services--Roles-and-Functions!⇒StndRfc.2142_Mailbox_Names_for_Common_Services__Roles_and_Functions
+  McshStn000024:18604  StndRfc.2191-VENUS--Very-Extensive-Non-Unicast-Service!⇒StndRfc.2191_VENUS__Very_Extensive_Non_Unicast_Service
+  McshStn000024:18993  StndRfc.2236-Internet-Group-Management-Protocol--Version-2!⇒StndRfc.2236_Internet_Group_Management_Protocol__Version_2
+  McshStn000024:19299  StndRfc.2270-Using-a-Dedicated-AS-for-Sites--Homed-to-a-Single-Provider!⇒StndRfc.2270_Using_a_Dedicated_AS_for_Sites__Homed_to_a_Single_Provider
+  McshStn000024:19386  StndRfc.2279-UTF-8--a-transformation-format-of-ISO-10646!⇒StndRfc.2279_UTF_8__a_transformation_format_of_ISO_10646
+  McshStn000024:20143  StndRfc.2367-PF_KEY-Key-Management-API--Version-2!⇒StndRfc.2367_PF_KEY_Key_Management_API__Version_2
+  McshStn000024:21991  StndRfc.2576-Coexistence-between-Version-1--Version-2--and-Version-3-of-the-Internet-standard-Network-Management-Framework!⇒StndRfc.2576_Coexistence_between_Version_1__Version_2__and_Version_3_of_the_Internet_standard_Network_Management_Framework
+  McshStn000024:22159  StndRfc.2595-Using-TLS-with-IMAP--POP3-and-ACAP!⇒StndRfc.2595_Using_TLS_with_IMAP__POP3_and_ACAP
+  McshStn000024:22274  StndRfc.2608-Service-Location-Protocol--Version-2!⇒StndRfc.2608_Service_Location_Protocol__Version_2
+  McshStn000024:22848  StndRfc.2674-Definitions-of-Managed-Objects-for-Bridges-with-Traffic-Classes--Multicast-Filtering-and-Virtual-LAN-Extensions!⇒StndRfc.2674_Definitions_of_Managed_Objects_for_Bridges_with_Traffic_Classes__Multicast_Filtering_and_Virtual_LAN_Extensions
+  McshStn000024:23435  StndRfc.2743-Generic-Security-Service-Application-Program-Interface-Version-2--Update-1!⇒StndRfc.2743_Generic_Security_Service_Application_Program_Interface_Version_2__Update_1
+  McshStn000024:23571  StndRfc.2759-Microsoft-PPP-CHAP-Extensions--Version-2!⇒StndRfc.2759_Microsoft_PPP_CHAP_Extensions__Version_2
+  McshStn000024:23759  StndRfc.2781-UTF-16--an-encoding-of-ISO-10646!⇒StndRfc.2781_UTF_16__an_encoding_of_ISO_10646
+  McshStn000024:23777  StndRfc.2783-Pulse-Per-Second-API-for-UNIX-like-Operating-Systems--Version-1.0!⇒StndRfc.2783_Pulse_Per_Second_API_for_UNIX_like_Operating_Systems__Version_1.0
+  McshStn000024:24216  StndRfc.2833-RTP-Payload-for-DTMF-Digits--Telephony-Tones-and-Telephony-Signals!⇒StndRfc.2833_RTP_Payload_for_DTMF_Digits__Telephony_Tones_and_Telephony_Signals
+  McshStn000024:24339  StndRfc.2847-LIPKEY--A-Low-Infrastructure-Public-Key-Mechanism-Using-SPKM!⇒StndRfc.2847_LIPKEY__A_Low_Infrastructure_Public_Key_Mechanism_Using_SPKM
+  McshStn000024:25372  StndRfc.2967-TISDAG--Technical-Infrastructure-for-Swedish-Directory-Access-Gateways!⇒StndRfc.2967_TISDAG__Technical_Infrastructure_for_Swedish_Directory_Access_Gateways
+  McshStn000024:26256  StndRfc.3071-Reflections-on-the-DNS--RFC-1591--and-Categories-of-Domains!⇒StndRfc.3071_Reflections_on_the_DNS__RFC_1591__and_Categories_of_Domains
+  McshStn000024:27250  StndRfc.3190-RTP-Payload-Format-for-12-bit-DAT-Audio-and-20--and-24-bit-Linear-Sampled-Audio!⇒StndRfc.3190_RTP_Payload_Format_for_12_bit_DAT_Audio_and_20__and_24_bit_Linear_Sampled_Audio
+  McshStn000024:27526  StndRfc.3224-Vendor-Extensions-for-Service-Location-Protocol--Version-2!⇒StndRfc.3224_Vendor_Extensions_for_Service_Location_Protocol__Version_2
+  McshStn000024:28804  StndRfc.3376-Internet-Group-Management-Protocol--Version-3!⇒StndRfc.3376_Internet_Group_Management_Protocol__Version_3
+  McshStn000024:30594  StndRfc.3584-Coexistence-between-Version-1--Version-2--and-Version-3-of-the-Internet-standard-Network-Management-Framework!⇒StndRfc.3584_Coexistence_between_Version_1__Version_2__and_Version_3_of_the_Internet_standard_Network_Management_Framework
+  McshStn000024:30974  StndRfc.3629-UTF-8--a-transformation-format-of-ISO-10646!⇒StndRfc.3629_UTF_8__a_transformation_format_of_ISO_10646
+  McshStn000024:31933  StndRfc.3741-Exclusive-XML-Canonicalization--Version-1.0!⇒StndRfc.3741_Exclusive_XML_Canonicalization__Version_1.0
+  McshStn000024:32269  StndRfc.3780-SMIng--Next-Generation-Structure-of-Management-Information!⇒StndRfc.3780_SMIng__Next_Generation_Structure_of_Management_Information
+  McshStn000024:33446  StndRfc.3926-FLUTE--File-Delivery-over-Unidirectional-Transport!⇒StndRfc.3926_FLUTE__File_Delivery_over_Unidirectional_Transport
+  McshStn000024:35042  StndRfc.4115-A-Differentiated-Service-Two-Rate--Three-Color-Marker-with-Efficient-Handling-of-in-Profile-Traffic!⇒StndRfc.4115_A_Differentiated_Service_Two_Rate__Three_Color_Marker_with_Efficient_Handling_of_in_Profile_Traffic
+  McshStn000024:35515  StndRfc.4172-iFCP--A-Protocol-for-Internet-Fibre-Channel-Storage-Networking!⇒StndRfc.4172_iFCP__A_Protocol_for_Internet_Fibre_Channel_Storage_Networking
+  McshStn000024:36004  StndRfc.4231-Identifiers-and-Test-Vectors-for-HMAC-SHA-224--HMAC-SHA-256--HMAC-SHA-384--and-HMAC-SHA-512!⇒StndRfc.4231_Identifiers_and_Test_Vectors_for_HMAC_SHA_224__HMAC_SHA_256__HMAC_SHA_384__and_HMAC_SHA_512
+  McshStn000024:37067  StndRfc.4357-Additional-Cryptographic-Algorithms-for-Use-with-GOST-28147-89--GOST-R-34.10-94--GOST-R-34.10-2001--and-GOST-R-34.11-94-Algorithms!⇒StndRfc.4357_Additional_Cryptographic_Algorithms_for_Use_with_GOST_28147_89__GOST_R_34.10_94__GOST_R_34.10_2001__and_GOST_R_34.11_94_Algorithms
+  McshStn000024:37121  StndRfc.4363-Definitions-of-Managed-Objects-for-Bridges-with-Traffic-Classes--Multicast-Filtering--and-Virtual-LAN-Extensions!⇒StndRfc.4363_Definitions_of_Managed_Objects_for_Bridges_with_Traffic_Classes__Multicast_Filtering__and_Virtual_LAN_Extensions
+  McshStn000024:38196  StndRfc.4491-Using-the-GOST-R-34.10-94--GOST-R-34.10-2001--and-GOST-R-34.11-94-Algorithms-with-the-Internet-X.509-Public-Key-Infrastructure-Certificate-and-CRL-Profile!⇒StndRfc.4491_Using_the_GOST_R_34.10_94__GOST_R_34.10_2001__and_GOST_R_34.11_94_Algorithms_with_the_Internet_X.509_Public_Key_Infrastructure_Certificate_and_CRL_Profile
+  McshStn000024:40191  StndRfc.4733-RTP-Payload-for-DTMF-Digits--Telephony-Tones--and-Telephony-Signals!⇒StndRfc.4733_RTP_Payload_for_DTMF_Digits__Telephony_Tones__and_Telephony_Signals
+  McshStn000024:40611  StndRfc.4783-GMPLS--Communication-of-Alarm-Information!⇒StndRfc.4783_GMPLS__Communication_of_Alarm_Information
+  McshStn000024:41314  StndRfc.4868-Using-HMAC-SHA-256--HMAC-SHA-384--and-HMAC-SHA-512-with-IPsec!⇒StndRfc.4868_Using_HMAC_SHA_256__HMAC_SHA_384__and_HMAC_SHA_512_with_IPsec
+  McshStn000024:41979  StndRfc.4949-Internet-Security-Glossary--Version-2!⇒StndRfc.4949_Internet_Security_Glossary__Version_2
+  McshStn000024:42116  StndRfc.4965-CableLabs--IETF-Standardization-Collaboration!⇒StndRfc.4965_CableLabs__IETF_Standardization_Collaboration
+  McshStn000024:52742  StndRfc.6247-Moving-the-Undeployed-TCP-Extensions-RFC-1072--RFC-1106--RFC-1110--RFC-1145--RFC-1146--RFC-1379--RFC-1644--and-RFC-1693-to-Historic-Status!⇒StndRfc.6247_Moving_the_Undeployed_TCP_Extensions_RFC_1072__RFC_1106__RFC_1110__RFC_1145__RFC_1146__RFC_1379__RFC_1644__and_RFC_1693_to_Historic_Status
+  McshStn000024:54260  StndRfc.6428-Proactive-Connectivity-Verification--Continuity-Check--and-Remote-Defect-Indication-for-the-MPLS-Transport-Profile!⇒StndRfc.6428_Proactive_Connectivity_Verification__Continuity_Check__and_Remote_Defect_Indication_for_the_MPLS_Transport_Profile
+  McshStn000024:56067  StndRfc.6649-Deprecate-DES--RC4-HMAC-EXP--and-Other-Weak-Cryptographic-Algorithms-in-Kerberos!⇒StndRfc.6649_Deprecate_DES__RC4_HMAC_EXP__and_Other_Weak_Cryptographic_Algorithms_in_Kerberos
+  McshStn000024:56699  StndRfc.6726-FLUTE--File-Delivery-over-Unidirectional-Transport!⇒StndRfc.6726_FLUTE__File_Delivery_over_Unidirectional_Transport
+  McshStn000024:57157  StndRfc.6781-DNSSEC-Operational-Practices--Version-2!⇒StndRfc.6781_DNSSEC_Operational_Practices__Version_2
+  McshStn000024:66019  StndRfc.7842-Requirements-for-Improvements-to-the-IETF-Email-List-Archiving--Web-Based-Browsing--and-Search-Tool!⇒StndRfc.7842_Requirements_for_Improvements_to_the_IETF_Email_List_Archiving__Web_Based_Browsing__and_Search_Tool
+  McshStn000024:69087  StndRfc.8208-BGPsec-Algorithms--Key-Formats--and-Signature-Formats!⇒StndRfc.8208_BGPsec_Algorithms__Key_Formats__and_Signature_Formats
+  McshStn000024:69096  StndRfc.8209-A-Profile-for-BGPsec-Router-Certificates--Certificate-Revocation-Lists--and-Certification-Requests!⇒StndRfc.8209_A_Profile_for_BGPsec_Router_Certificates__Certificate_Revocation_Lists__and_Certification_Requests
+  McshStn000024:72400  StndRfc.8608-BGPsec-Algorithms--Key-Formats--and-Signature-Formats!⇒StndRfc.8608_BGPsec_Algorithms__Key_Formats__and_Signature_Formats
+  McshStn000024:73222  StndRfc.8711-Structure-of-the-IETF-Administrative-Support-Activity--Version-2.0!⇒StndRfc.8711_Structure_of_the_IETF_Administrative_Support_Activity__Version_2.0
+  McshTchInf000007:1945  kbOnto'relation-to--knowledge-graph!⇒kbOnto'relation_to__knowledge_graph
+  McshTchInf000008:1995  Hitp_lago'whole-path--of--info-container!⇒Hitp_lago'whole_path__of__info_container
+  McshTchInf000008:1995  Hitp_lago'page-whole-path--of--info-container!⇒Hitp_lago'page_whole_path__of__info_container
+  McshTchInf000008:2021  oHitp'tabs-container--of-fContainersInsert!⇒oHitp'tabs_container__of_fContainersInsert
+  McshTchInf000009:3863  Mcsh_lago'add-new-language--in-Mcshmgr!⇒Mcsh_lago'add_new_language__in_Mcshmgr
+  McshTchInf000010:835  Jsgn_lago'mixedNo-name-value-pair--semantic-unit!⇒Jsgn_lago'mixedNo_name_value_pair__semantic_unit
+  McshTchInf000012:2891  Jsnd_lago'string-decoder--core-object-module!⇒Jsnd_lago'string_decoder__core_object_module
+  McshTchInf000015:6304  DeContract'relation-to--legal-contract-att010!⇒DeContract'relation_to__legal_contract_att010
+  McshTchInf000015:6304  DeContract'att010-relation-to--legal-contract!⇒DeContract'att010_relation_to__legal_contract
+  McshTchInf000015:6304  DeContract'10_relation-to--legal-contract!⇒DeContract'10_relation_to__legal_contract
+  McshTchInf000024:771  STEEM'converting-to--STEEM-power!⇒STEEM'converting_to__STEEM_power
+  McshTchInf000031:1529  Cppz_lago'name-of--src-sem-unit!⇒Cppz_lago'name_of__src_sem_unit
+  McshTchInf000031:1529  Cppz_lago'identifier-of--src-doc!⇒Cppz_lago'identifier_of__src_doc
+  McshTchInf000031:1575  Cppz_lago'variable-of--src-doc!⇒Cppz_lago'variable_of__src_doc
+  McshTchInf000031:1646  Cppz_lago'constant-of--src-doc!⇒Cppz_lago'constant_of__src_doc
+
+=== ALIAS (20) — alias A!⇒T: copy line with "_" added before the old line
+  McshLag000007:1228  Hmnm_lago'concept-of--semu-view  +  Hmnm_lago'concept_of__semu_view!⇒Hmnmsemucnpt
+  McshLag000007:1232  language's-concept--of-Hmnm_lago  +  language's_concept__of_Hmnm_lago!⇒Hmnmsemucnpt
+  McshLag000007:16012  Hmnm_lago'sentence-of--semu-view  +  Hmnm_lago'sentence_of__semu_view!⇒Hmnmsemusent
+  McshLag000007:28167  syntax.subject-other--verb-argument  +  syntax.subject_other__verb_argument!⇒VerbargtOther
+  McshLag000011:6808  Webapp.form-finder--of-Englnoun  +  Webapp.form_finder__of_Englnoun!⇒EnglishNounFormFinder
+  McshLag000011:23661  Webapp.form-finder--of-Englverb  +  Webapp.form_finder__of_Englverb!⇒Engl_verbFormFinder
+  McshLag000020:2308  Webapp.member-finder--of-Ellnnoun  +  Webapp.member_finder__of_Ellnnoun!⇒GreekNounMemberFinder
+  McshStn000017:557  StndW3c.Architecture-of-the-World-Wide-Web--Volume-One  +  StndW3c.Architecture_of_the_World_Wide_Web__Volume_One!⇒StndW3c.0470
+  McshStn000017:2473  StndW3c.Service-Modeling-Language--Version-1.1  +  StndW3c.Service_Modeling_Language__Version_1.1!⇒StndW3c.0643
+  McshStn000017:5557  StndW3c.Challenges-with-Accessibility-Guidelines-Conformance-and-Testing--and-Approaches-for-Mitigating-Them  +  StndW3c.Challenges_with_Accessibility_Guidelines_Conformance_and_Testing__and_Approaches_for_Mitigating_Them!⇒StndW3c.1061
+  McshStn000017:11637  StndW3c.XML-Fragment-Interchange-Requirements--Version-1.0  +  StndW3c.XML_Fragment_Interchange_Requirements__Version_1.0!⇒StndW3c.0400
+  McshStn000017:12500  StndW3c.Cascading-Style-Sheets--level-1  +  StndW3c.Cascading_Style_Sheets__level_1!⇒StndW3c.0782
+  McshStn000017:12911  StndW3c.HTML-Canvas-2D-Context--Level-2  +  StndW3c.HTML_Canvas_2D_Context__Level_2!⇒StndW3c.0820
+  McshStn000017:14224  StndW3c.Uniform-Messaging-Policy--Level-One  +  StndW3c.Uniform_Messaging_Policy__Level_One!⇒StndW3c.0938
+  McshStn000030:84  Grcahmns'node-of-humans--of-Greece  +  Grcahmns'node_of_humans__of_Greece!⇒Grcahmns
+  McshStn000031:6767  people's-democratic-dictatorship--of-SoctChna  +  people's_democratic_dictatorship__of_SoctChna!⇒people's_democratic_dictatorship
+  McshTchInf000010:910  Jsgn_lago'first-class--semantic-unit  +  Jsgn_lago'first_class__semantic_unit!⇒JssutFirstclass
+  McshTchInf000010:977  Jsgn_lago'non-literal--semantic-unit  +  Jsgn_lago'non_literal__semantic_unit!⇒JssutLiteralNo
+  McshTchInf000012:497  Jsnd_lago'CommonJS-module--semantic-unit  +  Jsnd_lago'CommonJS_module__semantic_unit!⇒Jsndmc
+  McshTchInf000021:3389  Agnteos'environment'relation-to--Ethereum-net  +  Agnteos'environment'relation_to__Ethereum_net!⇒Agnteos'relation_to__Ethereum_net
+
+=== TITLE (1) — h3 titles renamed
+  McshLag000007:27111  <h3 id="idLHmnmphrsNounPPtplPH3">phraseArgu.noun-phrase--participle-phrase  ->  <h3 id="idLHmnmphrsNounPPtplPH3">phraseArgu.noun_phrase__participle_phrase
+
+=== REF (0) — "* M!@file#id" references renamed
+
+
+=== DERIVED (0) — !⇒M targets, M_Gntr / M_Sptr / M.specific / M'tree renamed
+
+

@@ -1,0 +1,32 @@
+name-specific-letters-dash-dry {2026-10-26}
+McshEngl specific formal names of English letters only (X.a-b) -> "_" (X.a_b); 0 main-names, 0 files
+
+=== SUMMARY
+  main     0  main-name lines renamed (M, / M!=I / M!@file)
+  keep     0  old dash main-name kept as M!⇒N
+  alias    0  alias A!⇒T: copy line with "_" added before the old line
+  title    0  h3 titles renamed
+  ref      0  "* M!@file#id" references renamed
+  derived  0  !⇒M targets, M_Gntr / M_Sptr / M.specific / M'tree renamed
+
+=== FILES (0)
+
+
+=== MAIN (0) — main-name lines renamed (M, / M!=I / M!@file)
+
+
+=== KEEP (0) — old dash main-name kept as M!⇒N
+
+
+=== ALIAS (0) — alias A!⇒T: copy line with "_" added before the old line
+
+
+=== TITLE (0) — h3 titles renamed
+
+
+=== REF (0) — "* M!@file#id" references renamed
+
+
+=== DERIVED (0) — !⇒M targets, M_Gntr / M_Sptr / M.specific / M'tree renamed
+
+

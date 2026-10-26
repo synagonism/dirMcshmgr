@@ -1,0 +1,11 @@
+gstr-fix2 applied {2026-10-26}: MvrlGstr02 fixes
+
+=== DONE (5)
+  McshTchInf000019:218  idDeOzngvnrgntr + idDeOzngvnrsptr  McshEngl.Daogvnr_Gntr / Daogvnr_Sptr  + DAOstack-governor!@McshTchInf000019#idDaostkskhrGvnr  — MvrlGstr02 DAOstack_governor_Gntr
+  McshTchInf000015:5608  idAlgntgovvtggntr + idAlgntgovvtgsptr  McshEngl.Agntvoting_Gntr / Agntvoting_Sptr  + Agnteos'goverance'voting!@McshTchInf000021#idEosgovvtg  — MvrlGstr02 Agnteos'voting_Gntr
+  McshTchInf000016:5165  idDbcenrggntr + idDbcenrgsptr  McshEngl.BkcnstatEnergy_Gntr / BkcnstatEnergy_Sptr  + Faircoin-net'energy-consuption!@McshTchInf000022#idFairnetstatEnrg  — MvrlGstr02 Frcnenergy_Gntr
+  McshTchInf000010:3391  idLJsgnosptr  + most-generic-object-of-JavaScript!@McshTchInf000010#idLJsgnmgo  — MvrlGstr02 Jsmgo_Gntr
+  McshTchInf000015:5608  idAlgntgovvtggntr  generic Agnetgovg_Gntr added  — MvrlGstr01 "voting" is a specific of Agnetgovg_Gntr
+
+=== NO-MAIN (0)
+

@@ -1,0 +1,128 @@
+name-none-dash-plain-dry {2026-10-26}
+plain names (no . or ') with a "--" without dashes on either side: that "--" -> "-"
+50 plain names, 6 files; renamed in place, no old-spelling line
+
+=== SUMMARY
+  name    50  <br>* McshEngl.X lines renamed in place
+  target  0  !⇒X targets renamed
+  ref     1  "* X!@file#id" / "* X," list references renamed
+  title   2  section titles renamed
+  other   0  other
+
+=== NAMES (50)
+  title--Mcsattr  ->  title-Mcsattr
+  externalNo--Mcsattr  ->  externalNo-Mcsattr
+  internal--Mcsattr  ->  internal-Mcsattr
+  intrinsic--Mcsattr  ->  intrinsic-Mcsattr
+  part--Mcsattr  ->  part-Mcsattr
+  description--Mcsattr  ->  description-Mcsattr
+  definition--Mcsattr  ->  definition-Mcsattr
+  external--Mcsattr  ->  external-Mcsattr
+  extrinsic--Mcsattr  ->  extrinsic-Mcsattr
+  intrinsicNo--Mcsattr  ->  intrinsicNo-Mcsattr
+  partNo--Mcsattr  ->  partNo-Mcsattr
+  whole--Mcsattr  ->  whole-Mcsattr
+  archetype--Mcsattr  ->  archetype-Mcsattr
+  referent--Mcsattr  ->  referent-Mcsattr
+  evaluation--Mcsattr  ->  evaluation-Mcsattr
+  doing--Mcsattr  ->  doing-Mcsattr
+  evoluting--Mcsattr  ->  evoluting-Mcsattr
+  doingNo--Mcsattr  ->  doingNo-Mcsattr
+  probability--Semuverb_mood  ->  probability-Semuverb_mood
+  affirmativeNo--Semuverbattr  ->  affirmativeNo-Semuverbattr
+  Semuverb--Semuconj  ->  Semuverb-Semuconj
+  Semuverb--argument  ->  Semuverb-argument
+  time--Hmnmsemuverbargt  ->  time-Hmnmsemuverbargt
+  noun_conj_noun--Hmnmargu_phrase  ->  noun_conj_noun-Hmnmargu_phrase
+  noun_sent--Hmnmargu_phrase  ->  noun_sent-Hmnmargu_phrase
+  adje_noun--phraseArgu  ->  adje_noun-phraseArgu
+  Analects--Zhol_lago  ->  Analects-Zhol_lago
+  state--society  ->  state-society
+  Education--Youth--Sport-and-Culture-EuoDgComm  ->  Education-Youth--Sport-and-Culture-EuoDgComm
+  centralized--AgntogznExch  ->  centralized-AgntogznExch
+  Binance--AgntogznExch  ->  Binance-AgntogznExch
+  Bitfinex--AgntogznExch  ->  Bitfinex-AgntogznExch
+  BitPay--AgntogznExch  ->  BitPay-AgntogznExch
+  Bittrex--AgntogznExch  ->  Bittrex-AgntogznExch
+  Blockchain--AgntogznExch  ->  Blockchain-AgntogznExch
+  Changenlly--AgntogznExch  ->  Changenlly-AgntogznExch
+  Coinbase--AgntogznExch  ->  Coinbase-AgntogznExch
+  Kraken--AgntogznExch  ->  Kraken-AgntogznExch
+  KuCoin--AgntogznExch  ->  KuCoin-AgntogznExch
+  LakeBTC--AgntogznExch  ->  LakeBTC-AgntogznExch
+  Liqui--AgntogznExch  ->  Liqui-AgntogznExch
+  LiteBit--AgntogznExch  ->  LiteBit-AgntogznExch
+  Lykke--AgntogznExch  ->  Lykke-AgntogznExch
+  Poloniex--AgntogznExch  ->  Poloniex-AgntogznExch
+  QuadrigaCX--AgntogznExch  ->  QuadrigaCX-AgntogznExch
+  central--Algonet  ->  central-Algonet
+  asset-of--central--Algonet  ->  asset-of--central-Algonet
+  public--Algonet  ->  public-Algonet
+  currency--Algonet  ->  currency-Algonet
+  Graphene--Algonet  ->  Graphene-Algonet
+
+=== NAME (50) — <br>* McshEngl.X lines renamed in place
+  McshCor000002:120  <br>* McshEngl.title--Mcsattr!⇒McsnameTitle,  ->  <br>* McshEngl.title-Mcsattr!⇒McsnameTitle,
+  McshCor000002:1656  <br>* McshEngl.externalNo--Mcsattr!⇒Mcspart,  ->  <br>* McshEngl.externalNo-Mcsattr!⇒Mcspart,
+  McshCor000002:1657  <br>* McshEngl.internal--Mcsattr!⇒Mcspart,  ->  <br>* McshEngl.internal-Mcsattr!⇒Mcspart,
+  McshCor000002:1658  <br>* McshEngl.intrinsic--Mcsattr!⇒Mcspart,  ->  <br>* McshEngl.intrinsic-Mcsattr!⇒Mcspart,
+  McshCor000002:1669  <br>* McshEngl.part--Mcsattr!⇒Mcspart,  ->  <br>* McshEngl.part-Mcsattr!⇒Mcspart,
+  McshCor000002:1784  <br>* McshEngl.description--Mcsattr,  ->  <br>* McshEngl.description-Mcsattr,
+  McshCor000002:1819  <br>* McshEngl.definition--Mcsattr!⇒definitionMcs,  ->  <br>* McshEngl.definition-Mcsattr!⇒definitionMcs,
+  McshCor000002:2046  <br>* McshEngl.external--Mcsattr!⇒McspartNo,  ->  <br>* McshEngl.external-Mcsattr!⇒McspartNo,
+  McshCor000002:2047  <br>* McshEngl.extrinsic--Mcsattr!⇒McspartNo,  ->  <br>* McshEngl.extrinsic-Mcsattr!⇒McspartNo,
+  McshCor000002:2048  <br>* McshEngl.intrinsicNo--Mcsattr!⇒McspartNo,  ->  <br>* McshEngl.intrinsicNo-Mcsattr!⇒McspartNo,
+  McshCor000002:2049  <br>* McshEngl.partNo--Mcsattr!⇒McspartNo,  ->  <br>* McshEngl.partNo-Mcsattr!⇒McspartNo,
+  McshCor000002:2114  <br>* McshEngl.whole--Mcsattr!⇒Mcs_whole, {2019-03-09}  ->  <br>* McshEngl.whole-Mcsattr!⇒Mcs_whole, {2019-03-09}
+  McshCor000002:2202  <br>* McshEngl.archetype--Mcsattr!⇒Mcsarcho,  ->  <br>* McshEngl.archetype-Mcsattr!⇒Mcsarcho,
+  McshCor000002:2209  <br>* McshEngl.referent--Mcsattr!⇒Mcsarcho,  ->  <br>* McshEngl.referent-Mcsattr!⇒Mcsarcho,
+  McshCor000002:2231  <br>* McshEngl.evaluation--Mcsattr,  ->  <br>* McshEngl.evaluation-Mcsattr,
+  McshCor000002:2299  <br>* McshEngl.doing--Mcsattr,  ->  <br>* McshEngl.doing-Mcsattr,
+  McshCor000002:2314  <br>* McshEngl.evoluting--Mcsattr,  ->  <br>* McshEngl.evoluting-Mcsattr,
+  McshCor000002:2329  <br>* McshEngl.doingNo--Mcsattr,  ->  <br>* McshEngl.doingNo-Mcsattr,
+  McshLag000007:3451  <br>* McshEngl.probability--Semuverb_mood!⇒Semuverb_moodProbability,  ->  <br>* McshEngl.probability-Semuverb_mood!⇒Semuverb_moodProbability,
+  McshLag000007:4172  <br>* McshEngl.affirmativeNo--Semuverbattr,  ->  <br>* McshEngl.affirmativeNo-Semuverbattr,
+  McshLag000007:15100  <br>* McshEngl.Semuverb--Semuconj!⇒SemuconjVerb,  ->  <br>* McshEngl.Semuverb-Semuconj!⇒SemuconjVerb,
+  McshLag000007:15474  <br>* McshEngl.Semuverb--argument!⇒Hmnmsemuverbargt,  ->  <br>* McshEngl.Semuverb-argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15755  <br>* McshEngl.time--Hmnmsemuverbargt!⇒Semutime,  ->  <br>* McshEngl.time-Hmnmsemuverbargt!⇒Semutime,
+  McshLag000007:27040  <br>* McshEngl.noun_conj_noun--Hmnmargu_phrase,  ->  <br>* McshEngl.noun_conj_noun-Hmnmargu_phrase,
+  McshLag000007:27056  <br>* McshEngl.noun_sent--Hmnmargu_phrase,  ->  <br>* McshEngl.noun_sent-Hmnmargu_phrase,
+  McshLag000007:27086  <br>* McshEngl.adje_noun--phraseArgu,  ->  <br>* McshEngl.adje_noun-phraseArgu,
+  McshLag000018:17909  <br>* McshEngl.Analects--Zhol_lago!⇒Analects,  ->  <br>* McshEngl.Analects-Zhol_lago!⇒Analects,
+  McshStn000009:8624  <br>* McshEngl.state--society!⇒SoctState,  ->  <br>* McshEngl.state-society!⇒SoctState,
+  McshStn000020:2973  <br>* McshEngl.Education--Youth--Sport-and-Culture-EuoDgComm!⇒EuoDgEac,  ->  <br>* McshEngl.Education-Youth--Sport-and-Culture-EuoDgComm!⇒EuoDgEac,
+  McshTchInf000015:7882  <br>* McshEngl.centralized--AgntogznExch,  ->  <br>* McshEngl.centralized-AgntogznExch,
+  McshTchInf000015:7958  <br>* McshEngl.Binance--AgntogznExch,  ->  <br>* McshEngl.Binance-AgntogznExch,
+  McshTchInf000015:7978  <br>* McshEngl.Bitfinex--AgntogznExch,  ->  <br>* McshEngl.Bitfinex-AgntogznExch,
+  McshTchInf000015:7996  <br>* McshEngl.BitPay--AgntogznExch,  ->  <br>* McshEngl.BitPay-AgntogznExch,
+  McshTchInf000015:8100  <br>* McshEngl.Bittrex--AgntogznExch,  ->  <br>* McshEngl.Bittrex-AgntogznExch,
+  McshTchInf000015:8118  <br>* McshEngl.Blockchain--AgntogznExch,  ->  <br>* McshEngl.Blockchain-AgntogznExch,
+  McshTchInf000015:8138  <br>* McshEngl.Changenlly--AgntogznExch,  ->  <br>* McshEngl.Changenlly-AgntogznExch,
+  McshTchInf000015:8210  <br>* McshEngl.Coinbase--AgntogznExch,  ->  <br>* McshEngl.Coinbase-AgntogznExch,
+  McshTchInf000015:8272  <br>* McshEngl.Kraken--AgntogznExch,  ->  <br>* McshEngl.Kraken-AgntogznExch,
+  McshTchInf000015:8287  <br>* McshEngl.KuCoin--AgntogznExch,  ->  <br>* McshEngl.KuCoin-AgntogznExch,
+  McshTchInf000015:8305  <br>* McshEngl.LakeBTC--AgntogznExch,  ->  <br>* McshEngl.LakeBTC-AgntogznExch,
+  McshTchInf000015:8343  <br>* McshEngl.Liqui--AgntogznExch,  ->  <br>* McshEngl.Liqui-AgntogznExch,
+  McshTchInf000015:8361  <br>* McshEngl.LiteBit--AgntogznExch,  ->  <br>* McshEngl.LiteBit-AgntogznExch,
+  McshTchInf000015:8381  <br>* McshEngl.Lykke--AgntogznExch!⇒Lykke,  ->  <br>* McshEngl.Lykke-AgntogznExch!⇒Lykke,
+  McshTchInf000015:8908  <br>* McshEngl.Poloniex--AgntogznExch,  ->  <br>* McshEngl.Poloniex-AgntogznExch,
+  McshTchInf000015:8922  <br>* McshEngl.QuadrigaCX--AgntogznExch,  ->  <br>* McshEngl.QuadrigaCX-AgntogznExch,
+  McshTchInf000015:14123  <br>* McshEngl.central--Algonet!⇒AgntCtrl, {2019-03-09}  ->  <br>* McshEngl.central-Algonet!⇒AgntCtrl, {2019-03-09}
+  McshTchInf000015:14143  <br>* McshEngl.asset-of--central--Algonet,  ->  <br>* McshEngl.asset-of--central-Algonet,
+  McshTchInf000015:14351  <br>* McshEngl.public--Algonet!⇒AgntPblc,  ->  <br>* McshEngl.public-Algonet!⇒AgntPblc,
+  McshTchInf000015:14482  <br>* McshEngl.currency--Algonet!⇒netAlgoCurrency, {2019-03-09}  ->  <br>* McshEngl.currency-Algonet!⇒netAlgoCurrency, {2019-03-09}
+  McshTchInf000015:14635  <br>* McshEngl.Graphene--Algonet,  ->  <br>* McshEngl.Graphene-Algonet,
+
+=== TARGET (0) — !⇒X targets renamed
+
+
+=== REF (1) — "* X!@file#id" / "* X," list references renamed
+  McshLag000007:15069  <br>* Semuverb--Semuconj,  ->  <br>* Semuverb-Semuconj,
+
+=== TITLE (2) — section titles renamed
+  McshLag000007:15089  <br>· <span class="clsColorRed">Semuverb--Semuconj of Hmnm_lago</span> is <a class="clsPreview" href="#idLHmnmsmscnj">a-Semuconj</a> between <a class=  ->  <br>· <span class="clsColorRed">Semuverb-Semuconj of Hmnm_lago</span> is <a class="clsPreview" href="#idLHmnmsmscnj">a-Semuconj</a> between <a class="
+  McshLag000007:15465  <h2 id="idLHmnmsmsvbatH2">Semuverb--argument of Hmnmsemusent  ->  <h2 id="idLHmnmsmsvbatH2">Semuverb-argument of Hmnmsemusent
+
+=== OTHER (0) — other
+
+

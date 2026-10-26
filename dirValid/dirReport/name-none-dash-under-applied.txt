@@ -1,0 +1,1129 @@
+name-none-dash-under-applied {2026-10-26}
+formal-names (. or ') with a "--" without dashes on either side: that "--" -> "-", then "-" -> "_", other "--" -> "__"
+546 formal-names, 18 files; renamed in place, no old-spelling line
+
+=== SUMMARY
+  name    546  <br>* McshEngl.X lines renamed in place
+  target  0  !⇒X targets renamed
+  ref     11  "* X!@file#id" / "* X," list references renamed
+  title   0  section titles renamed
+  other   0  other
+
+=== NAMES (546)
+  division.dichotomous--Mcsattr  ->  division.dichotomous_Mcsattr
+  division.doing--Mcsattr  ->  division.doing_Mcsattr
+  division.part--Mcsattr  ->  division.part_Mcsattr
+  division.specifics--Mcsattr  ->  division.specifics_Mcsattr
+  from..to--direction  ->  from..to_direction
+  whole'03_part--relation  ->  whole'03_part_relation
+  cerebrospinal-fluid.024--disease  ->  cerebrospinal_fluid.024_disease
+  interrogation.positive--Semuverbattr  ->  interrogation.positive_Semuverbattr
+  interrogation.negative--Semuverbattr  ->  interrogation.negative_Semuverbattr
+  affirmative.positive--Semuverbattr  ->  affirmative.positive_Semuverbattr
+  affirmation.negative--Semuverbattr  ->  affirmation.negative_Semuverbattr
+  HmnmviewSemu'Semuargu--system  ->  HmnmviewSemu'Semuargu_system
+  HmnmviewSemu'Semuverb--argument  ->  HmnmviewSemu'Semuverb_argument
+  Hmnmsemusent'Semuverb--argument  ->  Hmnmsemusent'Semuverb_argument
+  lagoAbkhazian--ab.Iso1  ->  lagoAbkhazian_ab.Iso1
+  lagoAfar--aa.Iso1  ->  lagoAfar_aa.Iso1
+  lagoAfrikaans--af.Iso1  ->  lagoAfrikaans_af.Iso1
+  lagoAkan--ak.Iso1  ->  lagoAkan_ak.Iso1
+  lagoAlbanian--sq.Iso1  ->  lagoAlbanian_sq.Iso1
+  lagoAmharic--am.Iso1  ->  lagoAmharic_am.Iso1
+  lagoArabic--ar.Iso1  ->  lagoArabic_ar.Iso1
+  lagoAragonese--an.Iso1  ->  lagoAragonese_an.Iso1
+  lagoArmenian--hy.Iso1  ->  lagoArmenian_hy.Iso1
+  lagoAssamese--as.Iso1  ->  lagoAssamese_as.Iso1
+  lagoAvaric--av.Iso1  ->  lagoAvaric_av.Iso1
+  lagoAvestan--ae.Iso1  ->  lagoAvestan_ae.Iso1
+  lagoAymara--ay.Iso1  ->  lagoAymara_ay.Iso1
+  lagoAzerbaijani--az.Iso1  ->  lagoAzerbaijani_az.Iso1
+  lagoBambara--bm.Iso1  ->  lagoBambara_bm.Iso1
+  lagoBashkir--ba.Iso1  ->  lagoBashkir_ba.Iso1
+  lagoBasque--eu.Iso1  ->  lagoBasque_eu.Iso1
+  lagoBelarusian--be.Iso1  ->  lagoBelarusian_be.Iso1
+  lagoBengali--bn.Iso1  ->  lagoBengali_bn.Iso1
+  lagoBislama--bi.Iso1  ->  lagoBislama_bi.Iso1
+  lagoBosnian--bs.Iso1  ->  lagoBosnian_bs.Iso1
+  lagoBreton--br.Iso1  ->  lagoBreton_br.Iso1
+  lagoBulgarian--bg.Iso1  ->  lagoBulgarian_bg.Iso1
+  lagoBurmese--my.Iso1  ->  lagoBurmese_my.Iso1
+  lagoChamorro--ch.Iso1  ->  lagoChamorro_ch.Iso1
+  lagoChechen--ce.Iso1  ->  lagoChechen_ce.Iso1
+  lagoChinese--zh.Iso1  ->  lagoChinese_zh.Iso1
+  lagoChuvash--cv.Iso1  ->  lagoChuvash_cv.Iso1
+  lagoCornish--kw.Iso1  ->  lagoCornish_kw.Iso1
+  lagoCorsican--co.Iso1  ->  lagoCorsican_co.Iso1
+  lagoCree--cr.Iso1  ->  lagoCree_cr.Iso1
+  lagoCroatian--hr.Iso1  ->  lagoCroatian_hr.Iso1
+  lagoCzech--cs.Iso1  ->  lagoCzech_cs.Iso1
+  lagoDanish--da.Iso1  ->  lagoDanish_da.Iso1
+  lagoDzongkha--dz.Iso1  ->  lagoDzongkha_dz.Iso1
+  lagoEnglish--en.Iso1  ->  lagoEnglish_en.Iso1
+  lagoEsperanto--eo.Iso1  ->  lagoEsperanto_eo.Iso1
+  lagoEstonian--et.Iso1  ->  lagoEstonian_et.Iso1
+  lagoEwe--ee.Iso1  ->  lagoEwe_ee.Iso1
+  lagoFaroese--fo.Iso1  ->  lagoFaroese_fo.Iso1
+  lagoFijian--fj.Iso1  ->  lagoFijian_fj.Iso1
+  lagoFinnish--fi.Iso1  ->  lagoFinnish_fi.Iso1
+  lagoFulah--ff.Iso1  ->  lagoFulah_ff.Iso1
+  lagoGalician--gl.Iso1  ->  lagoGalician_gl.Iso1
+  lagoGanda--lg.Iso1  ->  lagoGanda_lg.Iso1
+  lagoGeorgian--ka.Iso1  ->  lagoGeorgian_ka.Iso1
+  lagoGerman--de.Iso1  ->  lagoGerman_de.Iso1
+  lagoGuarani--gn.Iso1  ->  lagoGuarani_gn.Iso1
+  lagoGujarati--gu.Iso1  ->  lagoGujarati_gu.Iso1
+  lagoHausa--ha.Iso1  ->  lagoHausa_ha.Iso1
+  lagoHebrew--he.Iso1  ->  lagoHebrew_he.Iso1
+  lagoHerero--hz.Iso1  ->  lagoHerero_hz.Iso1
+  lagoHungarian--hu.Iso1  ->  lagoHungarian_hu.Iso1
+  lagoIcelandic--is.Iso1  ->  lagoIcelandic_is.Iso1
+  lagoIdo--io.Iso1  ->  lagoIdo_io.Iso1
+  lagoIgbo--ig.Iso1  ->  lagoIgbo_ig.Iso1
+  lagoIndonesian--id.Iso1  ->  lagoIndonesian_id.Iso1
+  lagoInuktitut--iu.Iso1  ->  lagoInuktitut_iu.Iso1
+  lagoInupiaq--ik.Iso1  ->  lagoInupiaq_ik.Iso1
+  lagoIrish--ga.Iso1  ->  lagoIrish_ga.Iso1
+  lagoItalian--it.Iso1  ->  lagoItalian_it.Iso1
+  lagoJapanese--ja.Iso1  ->  lagoJapanese_ja.Iso1
+  lagoJavanese--jv.Iso1  ->  lagoJavanese_jv.Iso1
+  lagoKannada--kn.Iso1  ->  lagoKannada_kn.Iso1
+  lagoKanuri--kr.Iso1  ->  lagoKanuri_kr.Iso1
+  lagoKashmiri--ks.Iso1  ->  lagoKashmiri_ks.Iso1
+  lagoKazakh--kk.Iso1  ->  lagoKazakh_kk.Iso1
+  lagoKinyarwanda--rw.Iso1  ->  lagoKinyarwanda_rw.Iso1
+  lagoKomi--kv.Iso1  ->  lagoKomi_kv.Iso1
+  lagoKongo--kg.Iso1  ->  lagoKongo_kg.Iso1
+  lagoKorean--ko.Iso1  ->  lagoKorean_ko.Iso1
+  lagoKurdish--ku.Iso1  ->  lagoKurdish_ku.Iso1
+  lagoLao--lo.Iso1  ->  lagoLao_lo.Iso1
+  lagoLatin--la.Iso1  ->  lagoLatin_la.Iso1
+  lagoLatvian--lv.Iso1  ->  lagoLatvian_lv.Iso1
+  lagoLingala--ln.Iso1  ->  lagoLingala_ln.Iso1
+  lagoLithuanian--lt.Iso1  ->  lagoLithuanian_lt.Iso1
+  lagoMacedonian--mk.Iso1  ->  lagoMacedonian_mk.Iso1
+  lagoMalagasy--mg.Iso1  ->  lagoMalagasy_mg.Iso1
+  lagoMalay--ms.Iso1  ->  lagoMalay_ms.Iso1
+  lagoMalayalam--ml.Iso1  ->  lagoMalayalam_ml.Iso1
+  lagoMaltese--mt.Iso1  ->  lagoMaltese_mt.Iso1
+  lagoManx--gv.Iso1  ->  lagoManx_gv.Iso1
+  lagoMaori--mi.Iso1  ->  lagoMaori_mi.Iso1
+  lagoMarathi--mr.Iso1  ->  lagoMarathi_mr.Iso1
+  lagoMarshallese--mh.Iso1  ->  lagoMarshallese_mh.Iso1
+  lagoMongolian--mn.Iso1  ->  lagoMongolian_mn.Iso1
+  lagoNauru--na.Iso1  ->  lagoNauru_na.Iso1
+  lagoNdonga--ng.Iso1  ->  lagoNdonga_ng.Iso1
+  lagoNepali--ne.Iso1  ->  lagoNepali_ne.Iso1
+  lagoNorwegian--no.Iso1  ->  lagoNorwegian_no.Iso1
+  lagoOccitan--oc.Iso1  ->  lagoOccitan_oc.Iso1
+  lagoOjibwa--oj.Iso1  ->  lagoOjibwa_oj.Iso1
+  lagoOriya--or.Iso1  ->  lagoOriya_or.Iso1
+  lagoOromo--om.Iso1  ->  lagoOromo_om.Iso1
+  lagoPali--pi.Iso1  ->  lagoPali_pi.Iso1
+  lagoPersian--fa.Iso1  ->  lagoPersian_fa.Iso1
+  lagoPolish--pl.Iso1  ->  lagoPolish_pl.Iso1
+  lagoPortuguese--pt.Iso1  ->  lagoPortuguese_pt.Iso1
+  lagoQuechua--qu.Iso1  ->  lagoQuechua_qu.Iso1
+  lagoRomansh--rm.Iso1  ->  lagoRomansh_rm.Iso1
+  lagoRundi--rn.Iso1  ->  lagoRundi_rn.Iso1
+  lagoRussian--ru.Iso1  ->  lagoRussian_ru.Iso1
+  lagoSamoan--sm.Iso1  ->  lagoSamoan_sm.Iso1
+  lagoSango--sg.Iso1  ->  lagoSango_sg.Iso1
+  lagoSanskrit--sa.Iso1  ->  lagoSanskrit_sa.Iso1
+  lagoSardinian--sc.Iso1  ->  lagoSardinian_sc.Iso1
+  lagoSerbian--sr.Iso1  ->  lagoSerbian_sr.Iso1
+  lagoShona--sn.Iso1  ->  lagoShona_sn.Iso1
+  lagoSindhi--sd.Iso1  ->  lagoSindhi_sd.Iso1
+  lagoSlovak--sk.Iso1  ->  lagoSlovak_sk.Iso1
+  lagoSlovenian--sl.Iso1  ->  lagoSlovenian_sl.Iso1
+  lagoSomali--so.Iso1  ->  lagoSomali_so.Iso1
+  lagoSundanese--su.Iso1  ->  lagoSundanese_su.Iso1
+  lagoSwahili--sw.Iso1  ->  lagoSwahili_sw.Iso1
+  lagoSwati--ss.Iso1  ->  lagoSwati_ss.Iso1
+  lagoSwedish--sv.Iso1  ->  lagoSwedish_sv.Iso1
+  lagoTagalog--tl.Iso1  ->  lagoTagalog_tl.Iso1
+  lagoTahitian--ty.Iso1  ->  lagoTahitian_ty.Iso1
+  lagoTajik--tg.Iso1  ->  lagoTajik_tg.Iso1
+  lagoTamil--ta.Iso1  ->  lagoTamil_ta.Iso1
+  lagoTatar--tt.Iso1  ->  lagoTatar_tt.Iso1
+  lagoTelugu--te.Iso1  ->  lagoTelugu_te.Iso1
+  lagoThai--th.Iso1  ->  lagoThai_th.Iso1
+  lagoTibetan--bo.Iso1  ->  lagoTibetan_bo.Iso1
+  lagoTigrinya--ti.Iso1  ->  lagoTigrinya_ti.Iso1
+  lagoTsonga--ts.Iso1  ->  lagoTsonga_ts.Iso1
+  lagoTswana--tn.Iso1  ->  lagoTswana_tn.Iso1
+  lagoTurkish--tr.Iso1  ->  lagoTurkish_tr.Iso1
+  lagoTurkmen--tk.Iso1  ->  lagoTurkmen_tk.Iso1
+  lagoTwi--tw.Iso1  ->  lagoTwi_tw.Iso1
+  lagoUkrainian--uk.Iso1  ->  lagoUkrainian_uk.Iso1
+  lagoUrdu--ur.Iso1  ->  lagoUrdu_ur.Iso1
+  lagoUzbek--uz.Iso1  ->  lagoUzbek_uz.Iso1
+  lagoVenda--ve.Iso1  ->  lagoVenda_ve.Iso1
+  lagoVietnamese--vi.Iso1  ->  lagoVietnamese_vi.Iso1
+  lagoWalloon--wa.Iso1  ->  lagoWalloon_wa.Iso1
+  lagoWelsh--cy.Iso1  ->  lagoWelsh_cy.Iso1
+  lagoWolof--wo.Iso1  ->  lagoWolof_wo.Iso1
+  lagoXhosa--xh.Iso1  ->  lagoXhosa_xh.Iso1
+  lagoYiddish--yi.Iso1  ->  lagoYiddish_yi.Iso1
+  lagoYoruba--yo.Iso1  ->  lagoYoruba_yo.Iso1
+  lagoZulu--zu.Iso1  ->  lagoZulu_zu.Iso1
+  Ellnargu'adjective--name  ->  Ellnargu'adjective_name
+  Ellnargu'adverb--name  ->  Ellnargu'adverb_name
+  SoctAfghanistan--AF.Iso2  ->  SoctAfghanistan_AF.Iso2
+  SoctAlbania--AL.Iso2  ->  SoctAlbania_AL.Iso2
+  SoctAlgeria--DZ.Iso2  ->  SoctAlgeria_DZ.Iso2
+  SoctAndorra--AD.Iso2  ->  SoctAndorra_AD.Iso2
+  SoctAngola--AO.Iso2  ->  SoctAngola_AO.Iso2
+  SoctAnguilla--AI.Iso2  ->  SoctAnguilla_AI.Iso2
+  SoctAntarctica--AQ.Iso2  ->  SoctAntarctica_AQ.Iso2
+  SoctArgentina--AR.Iso2  ->  SoctArgentina_AR.Iso2
+  SoctArmenia--AM.Iso2  ->  SoctArmenia_AM.Iso2
+  SoctAruba--AW.Iso2  ->  SoctAruba_AW.Iso2
+  SoctAustralia--AU.Iso2  ->  SoctAustralia_AU.Iso2
+  SoctAustria--AT.Iso2  ->  SoctAustria_AT.Iso2
+  SoctAzerbaijan--AZ.Iso2  ->  SoctAzerbaijan_AZ.Iso2
+  SoctBahamas--BS.Iso2  ->  SoctBahamas_BS.Iso2
+  SoctBahrain--BH.Iso2  ->  SoctBahrain_BH.Iso2
+  SoctBangladesh--BD.Iso2  ->  SoctBangladesh_BD.Iso2
+  SoctBarbados--BB.Iso2  ->  SoctBarbados_BB.Iso2
+  SoctBelarus--BY.Iso2  ->  SoctBelarus_BY.Iso2
+  SoctBelgium--BE.Iso2  ->  SoctBelgium_BE.Iso2
+  SoctBelize--BZ.Iso2  ->  SoctBelize_BZ.Iso2
+  SoctBenin--BJ.Iso2  ->  SoctBenin_BJ.Iso2
+  SoctBermuda--BM.Iso2  ->  SoctBermuda_BM.Iso2
+  SoctBhutan--BT.Iso2  ->  SoctBhutan_BT.Iso2
+  SoctBolivia--BO.Iso2  ->  SoctBolivia_BO.Iso2
+  SoctBotswana--BW.Iso2  ->  SoctBotswana_BW.Iso2
+  SoctBrazil--BR.Iso2  ->  SoctBrazil_BR.Iso2
+  SoctBurundi--BI.Iso2  ->  SoctBurundi_BI.Iso2
+  SoctCambodia--KH.Iso2  ->  SoctCambodia_KH.Iso2
+  SoctCameroon--CM.Iso2  ->  SoctCameroon_CM.Iso2
+  SoctCanada--CA.Iso2  ->  SoctCanada_CA.Iso2
+  SoctChad--TD.Iso2  ->  SoctChad_TD.Iso2
+  SoctChile--CL.Iso2  ->  SoctChile_CL.Iso2
+  SoctColombia--CO.Iso2  ->  SoctColombia_CO.Iso2
+  SoctComoros--KM.Iso2  ->  SoctComoros_KM.Iso2
+  SoctCongo--CG.Iso2  ->  SoctCongo_CG.Iso2
+  SoctCuba--CU.Iso2  ->  SoctCuba_CU.Iso2
+  SoctCyprus--CY.Iso2  ->  SoctCyprus_CY.Iso2
+  SoctDenmark--DK.Iso2  ->  SoctDenmark_DK.Iso2
+  SoctDjibouti--DJ.Iso2  ->  SoctDjibouti_DJ.Iso2
+  SoctDominica--DM.Iso2  ->  SoctDominica_DM.Iso2
+  SoctEcuador--EC.Iso2  ->  SoctEcuador_EC.Iso2
+  SoctEgypt--EG.Iso2  ->  SoctEgypt_EG.Iso2
+  SoctEritrea--ER.Iso2  ->  SoctEritrea_ER.Iso2
+  SoctEstonia--EE.Iso2  ->  SoctEstonia_EE.Iso2
+  SoctEthiopia--ET.Iso2  ->  SoctEthiopia_ET.Iso2
+  SoctFiji--FJ.Iso2  ->  SoctFiji_FJ.Iso2
+  SoctFinland--FI.Iso2  ->  SoctFinland_FI.Iso2
+  SoctFrance--FR.Iso2  ->  SoctFrance_FR.Iso2
+  SoctGabon--GA.Iso2  ->  SoctGabon_GA.Iso2
+  SoctGambia--GM.Iso2  ->  SoctGambia_GM.Iso2
+  SoctGeorgia--GE.Iso2  ->  SoctGeorgia_GE.Iso2
+  SoctGermany--DE.Iso2  ->  SoctGermany_DE.Iso2
+  SoctGhana--GH.Iso2  ->  SoctGhana_GH.Iso2
+  SoctGibraltar--GI.Iso2  ->  SoctGibraltar_GI.Iso2
+  SoctGreece--GR.Iso2  ->  SoctGreece_GR.Iso2
+  SoctGreenland--GL.Iso2  ->  SoctGreenland_GL.Iso2
+  SoctGrenada--GD.Iso2  ->  SoctGrenada_GD.Iso2
+  SoctGuadeloupe--GP.Iso2  ->  SoctGuadeloupe_GP.Iso2
+  SoctGuam--GU.Iso2  ->  SoctGuam_GU.Iso2
+  SoctGuatemala--GT.Iso2  ->  SoctGuatemala_GT.Iso2
+  SoctGuinea--GN.Iso2  ->  SoctGuinea_GN.Iso2
+  SoctGuyana--GY.Iso2  ->  SoctGuyana_GY.Iso2
+  SoctHaiti--HT.Iso2  ->  SoctHaiti_HT.Iso2
+  SoctHonduras--HN.Iso2  ->  SoctHonduras_HN.Iso2
+  SoctHungary--HU.Iso2  ->  SoctHungary_HU.Iso2
+  SoctIceland--IS.Iso2  ->  SoctIceland_IS.Iso2
+  SoctIndia--IN.Iso2  ->  SoctIndia_IN.Iso2
+  SoctIndonesia--ID.Iso2  ->  SoctIndonesia_ID.Iso2
+  SoctIran--IR.Iso2  ->  SoctIran_IR.Iso2
+  SoctIraq--IQ.Iso2  ->  SoctIraq_IQ.Iso2
+  SoctItaly--IT.Iso2  ->  SoctItaly_IT.Iso2
+  SoctJamaica--JM.Iso2  ->  SoctJamaica_JM.Iso2
+  SoctJordan--JO.Iso2  ->  SoctJordan_JO.Iso2
+  SoctKazakhstan--KZ.Iso2  ->  SoctKazakhstan_KZ.Iso2
+  SoctKenya--KE.Iso2  ->  SoctKenya_KE.Iso2
+  SoctKiribati--KI.Iso2  ->  SoctKiribati_KI.Iso2
+  SoctKuwait--KW.Iso2  ->  SoctKuwait_KW.Iso2
+  SoctKyrgyzstan--KG.Iso2  ->  SoctKyrgyzstan_KG.Iso2
+  SoctLaos--LA.Iso2  ->  SoctLaos_LA.Iso2
+  SoctLatvia--LV.Iso2  ->  SoctLatvia_LV.Iso2
+  SoctLebanon--LB.Iso2  ->  SoctLebanon_LB.Iso2
+  SoctLesotho--LS.Iso2  ->  SoctLesotho_LS.Iso2
+  SoctLiberia--LR.Iso2  ->  SoctLiberia_LR.Iso2
+  SoctLibya--LY.Iso2  ->  SoctLibya_LY.Iso2
+  SoctLiechtenstein--LI.Iso2  ->  SoctLiechtenstein_LI.Iso2
+  SoctLithuania--LT.Iso2  ->  SoctLithuania_LT.Iso2
+  SoctLuxembourg--LU.Iso2  ->  SoctLuxembourg_LU.Iso2
+  SoctMacau--MO.Iso2  ->  SoctMacau_MO.Iso2
+  SoctMacedonia--MK.Iso2  ->  SoctMacedonia_MK.Iso2
+  SoctMadagascar--MG.Iso2  ->  SoctMadagascar_MG.Iso2
+  SoctMalawi--MW.Iso2  ->  SoctMalawi_MW.Iso2
+  SoctMalaysia--MY.Iso2  ->  SoctMalaysia_MY.Iso2
+  SoctMaldives--MV.Iso2  ->  SoctMaldives_MV.Iso2
+  SoctMali--ML.Iso2  ->  SoctMali_ML.Iso2
+  SoctMalta--MT.Iso2  ->  SoctMalta_MT.Iso2
+  SoctMartinique--MQ.Iso2  ->  SoctMartinique_MQ.Iso2
+  SoctMauritania--MR.Iso2  ->  SoctMauritania_MR.Iso2
+  SoctMauritius--MU.Iso2  ->  SoctMauritius_MU.Iso2
+  SoctMayotte--YT.Iso2  ->  SoctMayotte_YT.Iso2
+  SoctMexico--MX.Iso2  ->  SoctMexico_MX.Iso2
+  SoctMicronesia--FM.Iso2  ->  SoctMicronesia_FM.Iso2
+  SoctMoldova--MD.Iso2  ->  SoctMoldova_MD.Iso2
+  SoctMonaco--MC.Iso2  ->  SoctMonaco_MC.Iso2
+  SoctMongolia--MN.Iso2  ->  SoctMongolia_MN.Iso2
+  SoctMontserrat--MS.Iso2  ->  SoctMontserrat_MS.Iso2
+  SoctMorocco--MA.Iso2  ->  SoctMorocco_MA.Iso2
+  SoctMozambique--MZ.Iso2  ->  SoctMozambique_MZ.Iso2
+  SoctMyanmar--MM.Iso2  ->  SoctMyanmar_MM.Iso2
+  SoctNamibia--NA.Iso2  ->  SoctNamibia_NA.Iso2
+  SoctNauru--NR.Iso2  ->  SoctNauru_NR.Iso2
+  SoctNepal--NP.Iso2  ->  SoctNepal_NP.Iso2
+  SoctNetherlands--NL.Iso2  ->  SoctNetherlands_NL.Iso2
+  SoctNicaragua--NI.Iso2  ->  SoctNicaragua_NI.Iso2
+  SoctNiger--NE.Iso2  ->  SoctNiger_NE.Iso2
+  SoctNigeria--NG.Iso2  ->  SoctNigeria_NG.Iso2
+  SoctNiue--NU.Iso2  ->  SoctNiue_NU.Iso2
+  SoctNorway--NO.Iso2  ->  SoctNorway_NO.Iso2
+  SoctOman--OM.Iso2  ->  SoctOman_OM.Iso2
+  SoctPakistan--PK.Iso2  ->  SoctPakistan_PK.Iso2
+  SoctPalau--PW.Iso2  ->  SoctPalau_PW.Iso2
+  SoctPanama--PA.Iso2  ->  SoctPanama_PA.Iso2
+  SoctParaguay--PY.Iso2  ->  SoctParaguay_PY.Iso2
+  SoctPeru--PE.Iso2  ->  SoctPeru_PE.Iso2
+  SoctPhilippines--PH.Iso2  ->  SoctPhilippines_PH.Iso2
+  SoctPitcairn--PN.Iso2  ->  SoctPitcairn_PN.Iso2
+  SoctPoland--PL.Iso2  ->  SoctPoland_PL.Iso2
+  SoctPortugal--PT.Iso2  ->  SoctPortugal_PT.Iso2
+  SoctQatar--QA.Iso2  ->  SoctQatar_QA.Iso2
+  SoctReunion--RE.Iso2  ->  SoctReunion_RE.Iso2
+  SoctRomania--RO.Iso2  ->  SoctRomania_RO.Iso2
+  SoctRwanda--RW.Iso2  ->  SoctRwanda_RW.Iso2
+  SoctSamoa--WS.Iso2  ->  SoctSamoa_WS.Iso2
+  SoctSenegal--SN.Iso2  ->  SoctSenegal_SN.Iso2
+  SoctSeychelles--SC.Iso2  ->  SoctSeychelles_SC.Iso2
+  SoctSingapore--SG.Iso2  ->  SoctSingapore_SG.Iso2
+  SoctSlovenia--SI.Iso2  ->  SoctSlovenia_SI.Iso2
+  SoctSomalia--SO.Iso2  ->  SoctSomalia_SO.Iso2
+  SoctSpain--ES.Iso2  ->  SoctSpain_ES.Iso2
+  SoctSt.Helena--SH.Iso2  ->  SoctSt.Helena_SH.Iso2
+  SoctSudan--SD.Iso2  ->  SoctSudan_SD.Iso2
+  SoctSuriname--SR.Iso2  ->  SoctSuriname_SR.Iso2
+  SoctSwaziland--SZ.Iso2  ->  SoctSwaziland_SZ.Iso2
+  SoctSweden--SE.Iso2  ->  SoctSweden_SE.Iso2
+  SoctSwitzerland--CH.Iso2  ->  SoctSwitzerland_CH.Iso2
+  SoctSyria--SY.Iso2  ->  SoctSyria_SY.Iso2
+  SoctTaiwan--TW.Iso2  ->  SoctTaiwan_TW.Iso2
+  SoctTajikistan--TJ.Iso2  ->  SoctTajikistan_TJ.Iso2
+  SoctTanzania--TZ.Iso2  ->  SoctTanzania_TZ.Iso2
+  SoctThailand--TH.Iso2  ->  SoctThailand_TH.Iso2
+  SoctTogo--TG.Iso2  ->  SoctTogo_TG.Iso2
+  SoctTokelau--TK.Iso2  ->  SoctTokelau_TK.Iso2
+  SoctTonga--TO.Iso2  ->  SoctTonga_TO.Iso2
+  SoctTunisia--TN.Iso2  ->  SoctTunisia_TN.Iso2
+  SoctTurkey--TR.Iso2  ->  SoctTurkey_TR.Iso2
+  SoctTurkmenistan--TM.Iso2  ->  SoctTurkmenistan_TM.Iso2
+  SoctTuvalu--TV.Iso2  ->  SoctTuvalu_TV.Iso2
+  SoctUganda--UG.Iso2  ->  SoctUganda_UG.Iso2
+  SoctUkraine--UA.Iso2  ->  SoctUkraine_UA.Iso2
+  SoctUruguay--UY.Iso2  ->  SoctUruguay_UY.Iso2
+  SoctUzbekistan--UZ.Iso2  ->  SoctUzbekistan_UZ.Iso2
+  SoctVanuatu--VU.Iso2  ->  SoctVanuatu_VU.Iso2
+  SoctVenezuela--VE.Iso2  ->  SoctVenezuela_VE.Iso2
+  SoctYemen--YE.Iso2  ->  SoctYemen_YE.Iso2
+  SoctYugoslavia--YU.Iso2  ->  SoctYugoslavia_YU.Iso2
+  SoctZaire--ZR.Iso2  ->  SoctZaire_ZR.Iso2
+  SoctZambia--ZM.Iso2  ->  SoctZambia_ZM.Iso2
+  SoctZimbabwe--ZW.Iso2  ->  SoctZimbabwe_ZW.Iso2
+  SoctAfghanistan--AFG.Iso3  ->  SoctAfghanistan_AFG.Iso3
+  SoctAlbania--ALB.Iso3  ->  SoctAlbania_ALB.Iso3
+  SoctAlgeria--DZA.Iso3  ->  SoctAlgeria_DZA.Iso3
+  SoctAndorra--AND.Iso3  ->  SoctAndorra_AND.Iso3
+  SoctAngola--AGO.Iso3  ->  SoctAngola_AGO.Iso3
+  SoctAnguilla--AIA.Iso3  ->  SoctAnguilla_AIA.Iso3
+  SoctAntarctica--ATA.Iso3  ->  SoctAntarctica_ATA.Iso3
+  SoctArgentina--ARG.Iso3  ->  SoctArgentina_ARG.Iso3
+  SoctArmenia--ARM.Iso3  ->  SoctArmenia_ARM.Iso3
+  SoctAruba--ABW.Iso3  ->  SoctAruba_ABW.Iso3
+  SoctAustralia--AUS.Iso3  ->  SoctAustralia_AUS.Iso3
+  SoctAustria--AUT.Iso3  ->  SoctAustria_AUT.Iso3
+  SoctAzerbaijan--AZE.Iso3  ->  SoctAzerbaijan_AZE.Iso3
+  SoctBahamas--BHS.Iso3  ->  SoctBahamas_BHS.Iso3
+  SoctBahrain--BHR.Iso3  ->  SoctBahrain_BHR.Iso3
+  SoctBangladesh--BGD.Iso3  ->  SoctBangladesh_BGD.Iso3
+  SoctBarbados--BRB.Iso3  ->  SoctBarbados_BRB.Iso3
+  SoctBelarus--BLR.Iso3  ->  SoctBelarus_BLR.Iso3
+  SoctBelgium--BEL.Iso3  ->  SoctBelgium_BEL.Iso3
+  SoctBelize--BLZ.Iso3  ->  SoctBelize_BLZ.Iso3
+  SoctBenin--BEN.Iso3  ->  SoctBenin_BEN.Iso3
+  SoctBermuda--BMU.Iso3  ->  SoctBermuda_BMU.Iso3
+  SoctBhutan--BTN.Iso3  ->  SoctBhutan_BTN.Iso3
+  SoctBotswana--BWA.Iso3  ->  SoctBotswana_BWA.Iso3
+  SoctBrazil--BRA.Iso3  ->  SoctBrazil_BRA.Iso3
+  SoctBurundi--BDI.Iso3  ->  SoctBurundi_BDI.Iso3
+  SoctCambodia--KHM.Iso3  ->  SoctCambodia_KHM.Iso3
+  SoctCameroon--CMR.Iso3  ->  SoctCameroon_CMR.Iso3
+  SoctCanada--CAN.Iso3  ->  SoctCanada_CAN.Iso3
+  SoctChad--TCD.Iso3  ->  SoctChad_TCD.Iso3
+  SoctChile--CHL.Iso3  ->  SoctChile_CHL.Iso3
+  SoctColombia--COL.Iso3  ->  SoctColombia_COL.Iso3
+  SoctComoros--COM.Iso3  ->  SoctComoros_COM.Iso3
+  SoctCongo--COG.Iso3  ->  SoctCongo_COG.Iso3
+  SoctCroatia--HRV.Iso3  ->  SoctCroatia_HRV.Iso3
+  SoctCuba--CUB.Iso3  ->  SoctCuba_CUB.Iso3
+  SoctCyprus--CYP.Iso3  ->  SoctCyprus_CYP.Iso3
+  SoctDenmark--DNK.Iso3  ->  SoctDenmark_DNK.Iso3
+  SoctDjibouti--DJI.Iso3  ->  SoctDjibouti_DJI.Iso3
+  SoctDominica--DMA.Iso3  ->  SoctDominica_DMA.Iso3
+  SoctEcuador--ECU.Iso3  ->  SoctEcuador_ECU.Iso3
+  SoctEgypt--EGY.Iso3  ->  SoctEgypt_EGY.Iso3
+  SoctEritrea--ERI.Iso3  ->  SoctEritrea_ERI.Iso3
+  SoctEstonia--EST.Iso3  ->  SoctEstonia_EST.Iso3
+  SoctEthiopia--ETH.Iso3  ->  SoctEthiopia_ETH.Iso3
+  SoctFiji--FJI.Iso3  ->  SoctFiji_FJI.Iso3
+  SoctFinland--FIN.Iso3  ->  SoctFinland_FIN.Iso3
+  SoctFrance--FRA.Iso3  ->  SoctFrance_FRA.Iso3
+  SoctGabon--GAB.Iso3  ->  SoctGabon_GAB.Iso3
+  SoctGambia--GMB.Iso3  ->  SoctGambia_GMB.Iso3
+  SoctGeorgia--GEO.Iso3  ->  SoctGeorgia_GEO.Iso3
+  SoctGermany--DEU.Iso3  ->  SoctGermany_DEU.Iso3
+  SoctGhana--GHA.Iso3  ->  SoctGhana_GHA.Iso3
+  SoctGibraltar--GIB.Iso3  ->  SoctGibraltar_GIB.Iso3
+  SoctGreece--GRC.Iso3  ->  SoctGreece_GRC.Iso3
+  SoctGreenland--GRL.Iso3  ->  SoctGreenland_GRL.Iso3
+  SoctGrenada--GRD.Iso3  ->  SoctGrenada_GRD.Iso3
+  SoctGuadeloupe--GLP.Iso3  ->  SoctGuadeloupe_GLP.Iso3
+  SoctGuam--GUM.Iso3  ->  SoctGuam_GUM.Iso3
+  SoctGuatemala--GTM.Iso3  ->  SoctGuatemala_GTM.Iso3
+  SoctGuernsey--GGY.Iso3  ->  SoctGuernsey_GGY.Iso3
+  SoctGuinea--GIN.Iso3  ->  SoctGuinea_GIN.Iso3
+  SoctGuyana--GUY.Iso3  ->  SoctGuyana_GUY.Iso3
+  SoctHaiti--HTI.Iso3  ->  SoctHaiti_HTI.Iso3
+  SoctHonduras--HND.Iso3  ->  SoctHonduras_HND.Iso3
+  SoctHungary--HUN.Iso3  ->  SoctHungary_HUN.Iso3
+  SoctIceland--ISL.Iso3  ->  SoctIceland_ISL.Iso3
+  SoctIndia--IND.Iso3  ->  SoctIndia_IND.Iso3
+  SoctIndonesia--IDN.Iso3  ->  SoctIndonesia_IDN.Iso3
+  SoctIraq--IRQ.Iso3  ->  SoctIraq_IRQ.Iso3
+  SoctIreland--IRL.Iso3  ->  SoctIreland_IRL.Iso3
+  SoctIsrael--ISR.Iso3  ->  SoctIsrael_ISR.Iso3
+  SoctItaly--ITA.Iso3  ->  SoctItaly_ITA.Iso3
+  SoctJamaica--JAM.Iso3  ->  SoctJamaica_JAM.Iso3
+  SoctJersey--JEY.Iso3  ->  SoctJersey_JEY.Iso3
+  SoctJordan--JOR.Iso3  ->  SoctJordan_JOR.Iso3
+  SoctKazakhsctan--KAZ.Iso3  ->  SoctKazakhsctan_KAZ.Iso3
+  SoctKenya--KEN.Iso3  ->  SoctKenya_KEN.Iso3
+  SoctKiribati--KIR.Iso3  ->  SoctKiribati_KIR.Iso3
+  SoctKuwait--KWT.Iso3  ->  SoctKuwait_KWT.Iso3
+  SoctKyrgyzstan--KGZ.Iso3  ->  SoctKyrgyzstan_KGZ.Iso3
+  SoctLatvia--LVA.Iso3  ->  SoctLatvia_LVA.Iso3
+  SoctLebanon--LBN.Iso3  ->  SoctLebanon_LBN.Iso3
+  SoctLesotho--LSO.Iso3  ->  SoctLesotho_LSO.Iso3
+  SoctLiberia--LBR.Iso3  ->  SoctLiberia_LBR.Iso3
+  SoctLibya--LBY.Iso3  ->  SoctLibya_LBY.Iso3
+  SoctLiechtenstein--LIE.Iso3  ->  SoctLiechtenstein_LIE.Iso3
+  SoctLithuania--LTU.Iso3  ->  SoctLithuania_LTU.Iso3
+  SoctLuxembourg--LUX.Iso3  ->  SoctLuxembourg_LUX.Iso3
+  SoctMacao--MAC.Iso3  ->  SoctMacao_MAC.Iso3
+  SoctMadagascar--MDG.Iso3  ->  SoctMadagascar_MDG.Iso3
+  SoctMalawi--MWI.Iso3  ->  SoctMalawi_MWI.Iso3
+  SoctMalaysia--MYS.Iso3  ->  SoctMalaysia_MYS.Iso3
+  SoctMaldives--MDV.Iso3  ->  SoctMaldives_MDV.Iso3
+  SoctMali--MLI.Iso3  ->  SoctMali_MLI.Iso3
+  SoctMalta--MLT.Iso3  ->  SoctMalta_MLT.Iso3
+  SoctMartinique--MTQ.Iso3  ->  SoctMartinique_MTQ.Iso3
+  SoctMauritania--MRT.Iso3  ->  SoctMauritania_MRT.Iso3
+  SoctMauritius--MUS.Iso3  ->  SoctMauritius_MUS.Iso3
+  SoctMayotte--MYT.Iso3  ->  SoctMayotte_MYT.Iso3
+  SoctMexico--MEX.Iso3  ->  SoctMexico_MEX.Iso3
+  SoctMonaco--MCO.Iso3  ->  SoctMonaco_MCO.Iso3
+  SoctMongolia--MNG.Iso3  ->  SoctMongolia_MNG.Iso3
+  SoctMontenegro--MNE.Iso3  ->  SoctMontenegro_MNE.Iso3
+  SoctMontserrat--MSR.Iso3  ->  SoctMontserrat_MSR.Iso3
+  SoctMorocco--MAR.Iso3  ->  SoctMorocco_MAR.Iso3
+  SoctMozambique--MOZ.Iso3  ->  SoctMozambique_MOZ.Iso3
+  SoctMyanmar--MMR.Iso3  ->  SoctMyanmar_MMR.Iso3
+  SoctNamibia--NAM.Iso3  ->  SoctNamibia_NAM.Iso3
+  SoctNauru--NRU.Iso3  ->  SoctNauru_NRU.Iso3
+  SoctNepal--NPL.Iso3  ->  SoctNepal_NPL.Iso3
+  SoctNetherlands--NLD.Iso3  ->  SoctNetherlands_NLD.Iso3
+  SoctNicaragua--NIC.Iso3  ->  SoctNicaragua_NIC.Iso3
+  SoctNiger--NER.Iso3  ->  SoctNiger_NER.Iso3
+  SoctNigeria--NGA.Iso3  ->  SoctNigeria_NGA.Iso3
+  SoctNiue--NIU.Iso3  ->  SoctNiue_NIU.Iso3
+  SoctNorway--NOR.Iso3  ->  SoctNorway_NOR.Iso3
+  SoctOman--OMN.Iso3  ->  SoctOman_OMN.Iso3
+  SoctPakistan--PAK.Iso3  ->  SoctPakistan_PAK.Iso3
+  SoctPalau--PLW.Iso3  ->  SoctPalau_PLW.Iso3
+  SoctPanama--PAN.Iso3  ->  SoctPanama_PAN.Iso3
+  SoctParaguay--PRY.Iso3  ->  SoctParaguay_PRY.Iso3
+  SoctPeru--PER.Iso3  ->  SoctPeru_PER.Iso3
+  SoctPhilippines--PHL.Iso3  ->  SoctPhilippines_PHL.Iso3
+  SoctPitcairn--PCN.Iso3  ->  SoctPitcairn_PCN.Iso3
+  SoctPoland--POL.Iso3  ->  SoctPoland_POL.Iso3
+  SoctPortugal--PRT.Iso3  ->  SoctPortugal_PRT.Iso3
+  SoctQatar--QAT.Iso3  ->  SoctQatar_QAT.Iso3
+  SoctRomania--ROU.Iso3  ->  SoctRomania_ROU.Iso3
+  SoctRwanda--RWA.Iso3  ->  SoctRwanda_RWA.Iso3
+  SoctSamoa--WSM.Iso3  ->  SoctSamoa_WSM.Iso3
+  SoctSenegal--SEN.Iso3  ->  SoctSenegal_SEN.Iso3
+  SoctSerbia--SRB.Iso3  ->  SoctSerbia_SRB.Iso3
+  SoctSeychelles--SYC.Iso3  ->  SoctSeychelles_SYC.Iso3
+  SoctSingapore--SGP.Iso3  ->  SoctSingapore_SGP.Iso3
+  SoctSlovakia--SVK.Iso3  ->  SoctSlovakia_SVK.Iso3
+  SoctSlovenia--SVN.Iso3  ->  SoctSlovenia_SVN.Iso3
+  SoctSomalia--SOM.Iso3  ->  SoctSomalia_SOM.Iso3
+  SoctSpain--ESP.Iso3  ->  SoctSpain_ESP.Iso3
+  SoctSudan--SDN.Iso3  ->  SoctSudan_SDN.Iso3
+  SoctSuriname--SUR.Iso3  ->  SoctSuriname_SUR.Iso3
+  SoctSwaziland--SWZ.Iso3  ->  SoctSwaziland_SWZ.Iso3
+  SoctSweden--SWE.Iso3  ->  SoctSweden_SWE.Iso3
+  SoctSwitzerland--CHE.Iso3  ->  SoctSwitzerland_CHE.Iso3
+  SoctTajikistan--TJK.Iso3  ->  SoctTajikistan_TJK.Iso3
+  SoctThailand--THA.Iso3  ->  SoctThailand_THA.Iso3
+  SoctTogo--TGO.Iso3  ->  SoctTogo_TGO.Iso3
+  SoctTokelau--TKL.Iso3  ->  SoctTokelau_TKL.Iso3
+  SoctTonga--TON.Iso3  ->  SoctTonga_TON.Iso3
+  SoctTunisia--TUN.Iso3  ->  SoctTunisia_TUN.Iso3
+  SoctTurkey--TUR.Iso3  ->  SoctTurkey_TUR.Iso3
+  SoctTurkmenistan--TKM.Iso3  ->  SoctTurkmenistan_TKM.Iso3
+  SoctTuvalu--TUV.Iso3  ->  SoctTuvalu_TUV.Iso3
+  SoctUganda--UGA.Iso3  ->  SoctUganda_UGA.Iso3
+  SoctUkraine--UKR.Iso3  ->  SoctUkraine_UKR.Iso3
+  SoctUruguay--URY.Iso3  ->  SoctUruguay_URY.Iso3
+  SoctUzbekistan--UZB.Iso3  ->  SoctUzbekistan_UZB.Iso3
+  SoctVanuatu--VUT.Iso3  ->  SoctVanuatu_VUT.Iso3
+  SoctYemen--YEM.Iso3  ->  SoctYemen_YEM.Iso3
+  SoctZambia--ZMB.Iso3  ->  SoctZambia_ZMB.Iso3
+  SoctZimbabwe--ZWE.Iso3  ->  SoctZimbabwe_ZWE.Iso3
+  Euzz_lago.en--English  ->  Euzz_lago.en_English
+  Euzz_lago.Eng--English--en  ->  Euzz_lago.Eng_English_en
+  Euzz_lago.Croatian-hrvatski--hr--Hrv  ->  Euzz_lago.Croatian_hrvatski__hr_Hrv
+  Euzz_lago.Czech-Cestina--cs--Ces  ->  Euzz_lago.Czech_Cestina__cs_Ces
+  Euzz_lago.Danish-Dansk--da--Dan  ->  Euzz_lago.Danish_Dansk__da_Dan
+  Euzz_lago.Dutch-Nederlands--nl--Nld  ->  Euzz_lago.Dutch_Nederlands__nl_Nld
+  Euzz_lago.English--en--Eng  ->  Euzz_lago.English_en_Eng
+  Euzz_lago.Estonian-Eesti--et--Est  ->  Euzz_lago.Estonian_Eesti__et_Est
+  Euzz_lago.Finnish-Suomi--fi--Fin  ->  Euzz_lago.Finnish_Suomi__fi_Fin
+  Euzz_lago.French-Francais--fr--Fra  ->  Euzz_lago.French_Francais__fr_Fra
+  Euzz_lago.German-Deutsch--de--Deu  ->  Euzz_lago.German_Deutsch__de_Deu
+  Euzz_lago.Hungarian-Magyar--hu--Hun  ->  Euzz_lago.Hungarian_Magyar__hu_Hun
+  Euzz_lago.Irish-Gaeilge--ga--Gle  ->  Euzz_lago.Irish_Gaeilge__ga_Gle
+  Euzz_lago.Italian-Iitaliano--it--Ita  ->  Euzz_lago.Italian_Iitaliano__it_Ita
+  Euzz_lago.Latvian-Latviesu-valoda--lv--Lav  ->  Euzz_lago.Latvian_Latviesu_valoda__lv_Lav
+  Euzz_lago.Lithuanian-Lietuviu-kalba--lt--Lit  ->  Euzz_lago.Lithuanian_Lietuviu_kalba__lt_Lit
+  Euzz_lago.Maltese-Malti--mt--Mlt  ->  Euzz_lago.Maltese_Malti__mt_Mlt
+  Euzz_lago.Polish-Polski--pl--Pol  ->  Euzz_lago.Polish_Polski__pl_Pol
+  Euzz_lago.Spanish-Espanol--es--Spa  ->  Euzz_lago.Spanish_Espanol__es_Spa
+  Euzz_lago.Swidish-svenska--sv--Swe  ->  Euzz_lago.Swidish_svenska__sv_Swe
+  StndRfc.0101-Notes-on-the-Network-Working-Group-meeting--Urbana--Illinois--February-17--1971  ->  StndRfc.0101_Notes_on_the_Network_Working_Group_meeting__Urbana_Illinois__February_17__1971
+  StndRfc.0814-Name--addresses--ports--and-routes  ->  StndRfc.0814_Name__addresses_ports__and_routes
+  StndRfc.3718-A-Summary-of-Unicode-Consortium-Procedures--Policies--Stability--and-Public-Access  ->  StndRfc.3718_A_Summary_of_Unicode_Consortium_Procedures__Policies_Stability__and_Public_Access
+  StndRfc.3895-Definitions-of-Managed-Objects-for-the-DS1--E1--DS2--and-E2-Interface-Types  ->  StndRfc.3895_Definitions_of_Managed_Objects_for_the_DS1__E1_DS2__and_E2_Interface_Types
+  StndRfc.4355-IANA-Registration-for-Enumservices-email--fax--mms--ems--and-sms  ->  StndRfc.4355_IANA_Registration_for_Enumservices_email__fax_mms_ems__and_sms
+  StndRfc.4727-Experimental-Values-In-IPv4--IPv6--ICMPv4--ICMPv6--UDP--and-TCP-Headers  ->  StndRfc.4727_Experimental_Values_In_IPv4__IPv6_ICMPv4_ICMPv6_UDP__and_TCP_Headers
+  StndRfc.4805-Definitions-of-Managed-Objects-for-the-DS1--J1--E1--DS2--and-E2-Interface-Types  ->  StndRfc.4805_Definitions_of_Managed_Objects_for_the_DS1__J1_E1_DS2__and_E2_Interface_Types
+  StndRfc.8093-Deprecation-of-BGP-Path-Attribute-Values-30--31--129--241--242--and-243  ->  StndRfc.8093_Deprecation_of_BGP_Path_Attribute_Values_30__31_129_241_242__and_243
+  StndRfc.8410-Algorithm-Identifiers-for-Ed25519--Ed448--X25519--and-X448-for-Use-in-the-Internet-X.509-Public-Key-Infrastructure  ->  StndRfc.8410_Algorithm_Identifiers_for_Ed25519__Ed448_X25519__and_X448_for_Use_in_the_Internet_X.509_Public_Key_Infrastructure
+  SoctBulgaria--BG.Iso2  ->  SoctBulgaria_BG.Iso2
+  SoctBulgaria--BGR.Iso3  ->  SoctBulgaria_BGR.Iso3
+  SoctJapan--JP.Iso2  ->  SoctJapan_JP.Iso2
+  SoctJapan--JPN.Iso3  ->  SoctJapan_JPN.Iso3
+  operating-system.no--computer  ->  operating_system.no_computer
+  assert--Node.js-core-function-module  ->  assert_Node.js_core_function_module
+  events--Node.js-core-function-module  ->  events_Node.js_core_function_module
+  stream--Node.js-core-function-module  ->  stream_Node.js_core_function_module
+  buffer--Node.js-core-object-module  ->  buffer_Node.js_core_object_module
+  cluster--Node.js-core-object-module  ->  cluster_Node.js_core_object_module
+  crypto--Node.js-core-object-module  ->  crypto_Node.js_core_object_module
+  dns--Node.js-core-object-module  ->  dns_Node.js_core_object_module
+  fs--Node.js-core-object-module  ->  fs_Node.js_core_object_module
+  http--Node.js-core-object-module  ->  http_Node.js_core_object_module
+  https--Node.js-core-object-module  ->  https_Node.js_core_object_module
+  net--Node.js-core-object-module  ->  net_Node.js_core_object_module
+  os--Node.js-core-object-module  ->  os_Node.js_core_object_module
+  path--Node.js-core-object-module  ->  path_Node.js_core_object_module
+  readline--Node.js-core-object-module  ->  readline_Node.js_core_object_module
+  tls--Node.js-core-object-module  ->  tls_Node.js_core_object_module
+  url--Node.js-core-object-module  ->  url_Node.js_core_object_module
+  util--Node.js-core-object-module  ->  util_Node.js_core_object_module
+  vm--Node.js-core-object-module  ->  vm_Node.js_core_object_module
+  zlib--Node.js-core-object-module  ->  zlib_Node.js_core_object_module
+  decentralized-crypto-chain.block--network  ->  decentralized_crypto_chain.block_network
+  Rust_lago'.46--opr  ->  Rust_lago'.46_opr
+  Rust_lago'..4646--opr  ->  Rust_lago'..4646_opr
+  Rust_lago'...464646--opr  ->  Rust_lago'...464646_opr
+  Atomedtr'intentions--package  ->  Atomedtr'intentions_package
+  Atomedtr'linter--package  ->  Atomedtr'linter_package
+
+=== NAME (546) — <br>* McshEngl.X lines renamed in place
+  McshCor000002:1502  <br>* McshEngl.division.dichotomous--Mcsattr!⇒dichotomous_division__Mcsattr,  ->  <br>* McshEngl.division.dichotomous_Mcsattr!⇒dichotomous_division__Mcsattr,
+  McshCor000002:1625  <br>* McshEngl.division.doing--Mcsattr,  ->  <br>* McshEngl.division.doing_Mcsattr,
+  McshCor000002:2007  <br>* McshEngl.division.part--Mcsattr!⇒Mcspartdivi,  ->  <br>* McshEngl.division.part_Mcsattr!⇒Mcspartdivi,
+  McshCor000002:2441  <br>* McshEngl.division.specifics--Mcsattr!⇒Mcsspecdiv,  ->  <br>* McshEngl.division.specifics_Mcsattr!⇒Mcsspecdiv,
+  McshCor000007:2316  <br>* McshEngl.from..to--direction!⇒direFromTo,  ->  <br>* McshEngl.from..to_direction!⇒direFromTo,
+  McshCor000008:331  <br>* McshEngl.whole'03_part--relation!⇒RltnWholePartU,  ->  <br>* McshEngl.whole'03_part_relation!⇒RltnWholePartU,
+  McshHlth000011:3553  <br>* McshEngl.cerebrospinal-fluid.024--disease!⇒DissCerebrospinal_fluid,  ->  <br>* McshEngl.cerebrospinal_fluid.024_disease!⇒DissCerebrospinal_fluid,
+  McshLag000007:4102  <br>* McshEngl.interrogation.positive--Semuverbattr,  ->  <br>* McshEngl.interrogation.positive_Semuverbattr,
+  McshLag000007:4117  <br>* McshEngl.interrogation.negative--Semuverbattr,  ->  <br>* McshEngl.interrogation.negative_Semuverbattr,
+  McshLag000007:4154  <br>* McshEngl.affirmative.positive--Semuverbattr,  ->  <br>* McshEngl.affirmative.positive_Semuverbattr,
+  McshLag000007:4171  <br>* McshEngl.affirmation.negative--Semuverbattr,  ->  <br>* McshEngl.affirmation.negative_Semuverbattr,
+  McshLag000007:15459  <br>* McshEngl.HmnmviewSemu'Semuargu--system!⇒Hmnmsemuargusyst,  ->  <br>* McshEngl.HmnmviewSemu'Semuargu_system!⇒Hmnmsemuargusyst,
+  McshLag000007:15480  <br>* McshEngl.HmnmviewSemu'Semuverb--argument!⇒Hmnmsemuverbargt,  ->  <br>* McshEngl.HmnmviewSemu'Semuverb_argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15481  <br>* McshEngl.Hmnmsemusent'Semuverb--argument!⇒Hmnmsemuverbargt,  ->  <br>* McshEngl.Hmnmsemusent'Semuverb_argument!⇒Hmnmsemuverbargt,
+  McshLag000017:60  <br>* McshEngl.lagoAbkhazian--ab.Iso1,  ->  <br>* McshEngl.lagoAbkhazian_ab.Iso1,
+  McshLag000017:61  <br>* McshEngl.lagoAfar--aa.Iso1,  ->  <br>* McshEngl.lagoAfar_aa.Iso1,
+  McshLag000017:62  <br>* McshEngl.lagoAfrikaans--af.Iso1,  ->  <br>* McshEngl.lagoAfrikaans_af.Iso1,
+  McshLag000017:63  <br>* McshEngl.lagoAkan--ak.Iso1,  ->  <br>* McshEngl.lagoAkan_ak.Iso1,
+  McshLag000017:64  <br>* McshEngl.lagoAlbanian--sq.Iso1,  ->  <br>* McshEngl.lagoAlbanian_sq.Iso1,
+  McshLag000017:65  <br>* McshEngl.lagoAmharic--am.Iso1,  ->  <br>* McshEngl.lagoAmharic_am.Iso1,
+  McshLag000017:66  <br>* McshEngl.lagoArabic--ar.Iso1,  ->  <br>* McshEngl.lagoArabic_ar.Iso1,
+  McshLag000017:67  <br>* McshEngl.lagoAragonese--an.Iso1,  ->  <br>* McshEngl.lagoAragonese_an.Iso1,
+  McshLag000017:68  <br>* McshEngl.lagoArmenian--hy.Iso1,  ->  <br>* McshEngl.lagoArmenian_hy.Iso1,
+  McshLag000017:69  <br>* McshEngl.lagoAssamese--as.Iso1,  ->  <br>* McshEngl.lagoAssamese_as.Iso1,
+  McshLag000017:70  <br>* McshEngl.lagoAvaric--av.Iso1,  ->  <br>* McshEngl.lagoAvaric_av.Iso1,
+  McshLag000017:71  <br>* McshEngl.lagoAvestan--ae.Iso1,  ->  <br>* McshEngl.lagoAvestan_ae.Iso1,
+  McshLag000017:72  <br>* McshEngl.lagoAymara--ay.Iso1,  ->  <br>* McshEngl.lagoAymara_ay.Iso1,
+  McshLag000017:73  <br>* McshEngl.lagoAzerbaijani--az.Iso1,  ->  <br>* McshEngl.lagoAzerbaijani_az.Iso1,
+  McshLag000017:74  <br>* McshEngl.lagoBambara--bm.Iso1,  ->  <br>* McshEngl.lagoBambara_bm.Iso1,
+  McshLag000017:75  <br>* McshEngl.lagoBashkir--ba.Iso1,  ->  <br>* McshEngl.lagoBashkir_ba.Iso1,
+  McshLag000017:76  <br>* McshEngl.lagoBasque--eu.Iso1,  ->  <br>* McshEngl.lagoBasque_eu.Iso1,
+  McshLag000017:77  <br>* McshEngl.lagoBelarusian--be.Iso1,  ->  <br>* McshEngl.lagoBelarusian_be.Iso1,
+  McshLag000017:78  <br>* McshEngl.lagoBengali--bn.Iso1,  ->  <br>* McshEngl.lagoBengali_bn.Iso1,
+  McshLag000017:80  <br>* McshEngl.lagoBislama--bi.Iso1,  ->  <br>* McshEngl.lagoBislama_bi.Iso1,
+  McshLag000017:81  <br>* McshEngl.lagoBosnian--bs.Iso1,  ->  <br>* McshEngl.lagoBosnian_bs.Iso1,
+  McshLag000017:82  <br>* McshEngl.lagoBreton--br.Iso1,  ->  <br>* McshEngl.lagoBreton_br.Iso1,
+  McshLag000017:83  <br>* McshEngl.lagoBulgarian--bg.Iso1,  ->  <br>* McshEngl.lagoBulgarian_bg.Iso1,
+  McshLag000017:84  <br>* McshEngl.lagoBurmese--my.Iso1,  ->  <br>* McshEngl.lagoBurmese_my.Iso1,
+  McshLag000017:87  <br>* McshEngl.lagoChamorro--ch.Iso1,  ->  <br>* McshEngl.lagoChamorro_ch.Iso1,
+  McshLag000017:88  <br>* McshEngl.lagoChechen--ce.Iso1,  ->  <br>* McshEngl.lagoChechen_ce.Iso1,
+  McshLag000017:90  <br>* McshEngl.lagoChinese--zh.Iso1,  ->  <br>* McshEngl.lagoChinese_zh.Iso1,
+  McshLag000017:92  <br>* McshEngl.lagoChuvash--cv.Iso1,  ->  <br>* McshEngl.lagoChuvash_cv.Iso1,
+  McshLag000017:93  <br>* McshEngl.lagoCornish--kw.Iso1,  ->  <br>* McshEngl.lagoCornish_kw.Iso1,
+  McshLag000017:94  <br>* McshEngl.lagoCorsican--co.Iso1,  ->  <br>* McshEngl.lagoCorsican_co.Iso1,
+  McshLag000017:95  <br>* McshEngl.lagoCree--cr.Iso1,  ->  <br>* McshEngl.lagoCree_cr.Iso1,
+  McshLag000017:96  <br>* McshEngl.lagoCroatian--hr.Iso1,  ->  <br>* McshEngl.lagoCroatian_hr.Iso1,
+  McshLag000017:97  <br>* McshEngl.lagoCzech--cs.Iso1,  ->  <br>* McshEngl.lagoCzech_cs.Iso1,
+  McshLag000017:98  <br>* McshEngl.lagoDanish--da.Iso1,  ->  <br>* McshEngl.lagoDanish_da.Iso1,
+  McshLag000017:101  <br>* McshEngl.lagoDzongkha--dz.Iso1,  ->  <br>* McshEngl.lagoDzongkha_dz.Iso1,
+  McshLag000017:102  <br>* McshEngl.lagoEnglish--en.Iso1,  ->  <br>* McshEngl.lagoEnglish_en.Iso1,
+  McshLag000017:103  <br>* McshEngl.lagoEsperanto--eo.Iso1,  ->  <br>* McshEngl.lagoEsperanto_eo.Iso1,
+  McshLag000017:104  <br>* McshEngl.lagoEstonian--et.Iso1,  ->  <br>* McshEngl.lagoEstonian_et.Iso1,
+  McshLag000017:105  <br>* McshEngl.lagoEwe--ee.Iso1,  ->  <br>* McshEngl.lagoEwe_ee.Iso1,
+  McshLag000017:106  <br>* McshEngl.lagoFaroese--fo.Iso1,  ->  <br>* McshEngl.lagoFaroese_fo.Iso1,
+  McshLag000017:107  <br>* McshEngl.lagoFijian--fj.Iso1,  ->  <br>* McshEngl.lagoFijian_fj.Iso1,
+  McshLag000017:108  <br>* McshEngl.lagoFinnish--fi.Iso1,  ->  <br>* McshEngl.lagoFinnish_fi.Iso1,
+  McshLag000017:110  <br>* McshEngl.lagoFulah--ff.Iso1,  ->  <br>* McshEngl.lagoFulah_ff.Iso1,
+  McshLag000017:112  <br>* McshEngl.lagoGalician--gl.Iso1,  ->  <br>* McshEngl.lagoGalician_gl.Iso1,
+  McshLag000017:113  <br>* McshEngl.lagoGanda--lg.Iso1,  ->  <br>* McshEngl.lagoGanda_lg.Iso1,
+  McshLag000017:114  <br>* McshEngl.lagoGeorgian--ka.Iso1,  ->  <br>* McshEngl.lagoGeorgian_ka.Iso1,
+  McshLag000017:115  <br>* McshEngl.lagoGerman--de.Iso1,  ->  <br>* McshEngl.lagoGerman_de.Iso1,
+  McshLag000017:117  <br>* McshEngl.lagoGuarani--gn.Iso1,  ->  <br>* McshEngl.lagoGuarani_gn.Iso1,
+  McshLag000017:118  <br>* McshEngl.lagoGujarati--gu.Iso1,  ->  <br>* McshEngl.lagoGujarati_gu.Iso1,
+  McshLag000017:120  <br>* McshEngl.lagoHausa--ha.Iso1,  ->  <br>* McshEngl.lagoHausa_ha.Iso1,
+  McshLag000017:121  <br>* McshEngl.lagoHebrew--he.Iso1,  ->  <br>* McshEngl.lagoHebrew_he.Iso1,
+  McshLag000017:122  <br>* McshEngl.lagoHerero--hz.Iso1,  ->  <br>* McshEngl.lagoHerero_hz.Iso1,
+  McshLag000017:125  <br>* McshEngl.lagoHungarian--hu.Iso1,  ->  <br>* McshEngl.lagoHungarian_hu.Iso1,
+  McshLag000017:126  <br>* McshEngl.lagoIcelandic--is.Iso1,  ->  <br>* McshEngl.lagoIcelandic_is.Iso1,
+  McshLag000017:127  <br>* McshEngl.lagoIdo--io.Iso1,  ->  <br>* McshEngl.lagoIdo_io.Iso1,
+  McshLag000017:128  <br>* McshEngl.lagoIgbo--ig.Iso1,  ->  <br>* McshEngl.lagoIgbo_ig.Iso1,
+  McshLag000017:129  <br>* McshEngl.lagoIndonesian--id.Iso1,  ->  <br>* McshEngl.lagoIndonesian_id.Iso1,
+  McshLag000017:132  <br>* McshEngl.lagoInuktitut--iu.Iso1,  ->  <br>* McshEngl.lagoInuktitut_iu.Iso1,
+  McshLag000017:133  <br>* McshEngl.lagoInupiaq--ik.Iso1,  ->  <br>* McshEngl.lagoInupiaq_ik.Iso1,
+  McshLag000017:134  <br>* McshEngl.lagoIrish--ga.Iso1,  ->  <br>* McshEngl.lagoIrish_ga.Iso1,
+  McshLag000017:135  <br>* McshEngl.lagoItalian--it.Iso1,  ->  <br>* McshEngl.lagoItalian_it.Iso1,
+  McshLag000017:136  <br>* McshEngl.lagoJapanese--ja.Iso1,  ->  <br>* McshEngl.lagoJapanese_ja.Iso1,
+  McshLag000017:137  <br>* McshEngl.lagoJavanese--jv.Iso1,  ->  <br>* McshEngl.lagoJavanese_jv.Iso1,
+  McshLag000017:139  <br>* McshEngl.lagoKannada--kn.Iso1,  ->  <br>* McshEngl.lagoKannada_kn.Iso1,
+  McshLag000017:140  <br>* McshEngl.lagoKanuri--kr.Iso1,  ->  <br>* McshEngl.lagoKanuri_kr.Iso1,
+  McshLag000017:141  <br>* McshEngl.lagoKashmiri--ks.Iso1,  ->  <br>* McshEngl.lagoKashmiri_ks.Iso1,
+  McshLag000017:142  <br>* McshEngl.lagoKazakh--kk.Iso1,  ->  <br>* McshEngl.lagoKazakh_kk.Iso1,
+  McshLag000017:144  <br>* McshEngl.lagoKinyarwanda--rw.Iso1,  ->  <br>* McshEngl.lagoKinyarwanda_rw.Iso1,
+  McshLag000017:146  <br>* McshEngl.lagoKomi--kv.Iso1,  ->  <br>* McshEngl.lagoKomi_kv.Iso1,
+  McshLag000017:147  <br>* McshEngl.lagoKongo--kg.Iso1,  ->  <br>* McshEngl.lagoKongo_kg.Iso1,
+  McshLag000017:148  <br>* McshEngl.lagoKorean--ko.Iso1,  ->  <br>* McshEngl.lagoKorean_ko.Iso1,
+  McshLag000017:150  <br>* McshEngl.lagoKurdish--ku.Iso1,  ->  <br>* McshEngl.lagoKurdish_ku.Iso1,
+  McshLag000017:151  <br>* McshEngl.lagoLao--lo.Iso1,  ->  <br>* McshEngl.lagoLao_lo.Iso1,
+  McshLag000017:152  <br>* McshEngl.lagoLatin--la.Iso1,  ->  <br>* McshEngl.lagoLatin_la.Iso1,
+  McshLag000017:153  <br>* McshEngl.lagoLatvian--lv.Iso1,  ->  <br>* McshEngl.lagoLatvian_lv.Iso1,
+  McshLag000017:155  <br>* McshEngl.lagoLingala--ln.Iso1,  ->  <br>* McshEngl.lagoLingala_ln.Iso1,
+  McshLag000017:156  <br>* McshEngl.lagoLithuanian--lt.Iso1,  ->  <br>* McshEngl.lagoLithuanian_lt.Iso1,
+  McshLag000017:159  <br>* McshEngl.lagoMacedonian--mk.Iso1,  ->  <br>* McshEngl.lagoMacedonian_mk.Iso1,
+  McshLag000017:160  <br>* McshEngl.lagoMalagasy--mg.Iso1,  ->  <br>* McshEngl.lagoMalagasy_mg.Iso1,
+  McshLag000017:161  <br>* McshEngl.lagoMalay--ms.Iso1,  ->  <br>* McshEngl.lagoMalay_ms.Iso1,
+  McshLag000017:162  <br>* McshEngl.lagoMalayalam--ml.Iso1,  ->  <br>* McshEngl.lagoMalayalam_ml.Iso1,
+  McshLag000017:163  <br>* McshEngl.lagoMaltese--mt.Iso1,  ->  <br>* McshEngl.lagoMaltese_mt.Iso1,
+  McshLag000017:164  <br>* McshEngl.lagoManx--gv.Iso1,  ->  <br>* McshEngl.lagoManx_gv.Iso1,
+  McshLag000017:165  <br>* McshEngl.lagoMaori--mi.Iso1,  ->  <br>* McshEngl.lagoMaori_mi.Iso1,
+  McshLag000017:166  <br>* McshEngl.lagoMarathi--mr.Iso1,  ->  <br>* McshEngl.lagoMarathi_mr.Iso1,
+  McshLag000017:167  <br>* McshEngl.lagoMarshallese--mh.Iso1,  ->  <br>* McshEngl.lagoMarshallese_mh.Iso1,
+  McshLag000017:168  <br>* McshEngl.lagoMongolian--mn.Iso1,  ->  <br>* McshEngl.lagoMongolian_mn.Iso1,
+  McshLag000017:169  <br>* McshEngl.lagoNauru--na.Iso1,  ->  <br>* McshEngl.lagoNauru_na.Iso1,
+  McshLag000017:171  <br>* McshEngl.lagoNdonga--ng.Iso1,  ->  <br>* McshEngl.lagoNdonga_ng.Iso1,
+  McshLag000017:172  <br>* McshEngl.lagoNepali--ne.Iso1,  ->  <br>* McshEngl.lagoNepali_ne.Iso1,
+  McshLag000017:175  <br>* McshEngl.lagoNorwegian--no.Iso1,  ->  <br>* McshEngl.lagoNorwegian_no.Iso1,
+  McshLag000017:178  <br>* McshEngl.lagoOccitan--oc.Iso1,  ->  <br>* McshEngl.lagoOccitan_oc.Iso1,
+  McshLag000017:179  <br>* McshEngl.lagoOjibwa--oj.Iso1,  ->  <br>* McshEngl.lagoOjibwa_oj.Iso1,
+  McshLag000017:180  <br>* McshEngl.lagoOriya--or.Iso1,  ->  <br>* McshEngl.lagoOriya_or.Iso1,
+  McshLag000017:181  <br>* McshEngl.lagoOromo--om.Iso1,  ->  <br>* McshEngl.lagoOromo_om.Iso1,
+  McshLag000017:183  <br>* McshEngl.lagoPali--pi.Iso1,  ->  <br>* McshEngl.lagoPali_pi.Iso1,
+  McshLag000017:185  <br>* McshEngl.lagoPersian--fa.Iso1,  ->  <br>* McshEngl.lagoPersian_fa.Iso1,
+  McshLag000017:186  <br>* McshEngl.lagoPolish--pl.Iso1,  ->  <br>* McshEngl.lagoPolish_pl.Iso1,
+  McshLag000017:187  <br>* McshEngl.lagoPortuguese--pt.Iso1,  ->  <br>* McshEngl.lagoPortuguese_pt.Iso1,
+  McshLag000017:189  <br>* McshEngl.lagoQuechua--qu.Iso1,  ->  <br>* McshEngl.lagoQuechua_qu.Iso1,
+  McshLag000017:191  <br>* McshEngl.lagoRomansh--rm.Iso1,  ->  <br>* McshEngl.lagoRomansh_rm.Iso1,
+  McshLag000017:192  <br>* McshEngl.lagoRundi--rn.Iso1,  ->  <br>* McshEngl.lagoRundi_rn.Iso1,
+  McshLag000017:193  <br>* McshEngl.lagoRussian--ru.Iso1,  ->  <br>* McshEngl.lagoRussian_ru.Iso1,
+  McshLag000017:194  <br>* McshEngl.lagoSamoan--sm.Iso1,  ->  <br>* McshEngl.lagoSamoan_sm.Iso1,
+  McshLag000017:195  <br>* McshEngl.lagoSango--sg.Iso1,  ->  <br>* McshEngl.lagoSango_sg.Iso1,
+  McshLag000017:196  <br>* McshEngl.lagoSanskrit--sa.Iso1,  ->  <br>* McshEngl.lagoSanskrit_sa.Iso1,
+  McshLag000017:197  <br>* McshEngl.lagoSardinian--sc.Iso1,  ->  <br>* McshEngl.lagoSardinian_sc.Iso1,
+  McshLag000017:198  <br>* McshEngl.lagoSerbian--sr.Iso1,  ->  <br>* McshEngl.lagoSerbian_sr.Iso1,
+  McshLag000017:199  <br>* McshEngl.lagoShona--sn.Iso1,  ->  <br>* McshEngl.lagoShona_sn.Iso1,
+  McshLag000017:201  <br>* McshEngl.lagoSindhi--sd.Iso1,  ->  <br>* McshEngl.lagoSindhi_sd.Iso1,
+  McshLag000017:203  <br>* McshEngl.lagoSlovak--sk.Iso1,  ->  <br>* McshEngl.lagoSlovak_sk.Iso1,
+  McshLag000017:204  <br>* McshEngl.lagoSlovenian--sl.Iso1,  ->  <br>* McshEngl.lagoSlovenian_sl.Iso1,
+  McshLag000017:205  <br>* McshEngl.lagoSomali--so.Iso1,  ->  <br>* McshEngl.lagoSomali_so.Iso1,
+  McshLag000017:209  <br>* McshEngl.lagoSundanese--su.Iso1,  ->  <br>* McshEngl.lagoSundanese_su.Iso1,
+  McshLag000017:210  <br>* McshEngl.lagoSwahili--sw.Iso1,  ->  <br>* McshEngl.lagoSwahili_sw.Iso1,
+  McshLag000017:211  <br>* McshEngl.lagoSwati--ss.Iso1,  ->  <br>* McshEngl.lagoSwati_ss.Iso1,
+  McshLag000017:212  <br>* McshEngl.lagoSwedish--sv.Iso1,  ->  <br>* McshEngl.lagoSwedish_sv.Iso1,
+  McshLag000017:213  <br>* McshEngl.lagoTagalog--tl.Iso1,  ->  <br>* McshEngl.lagoTagalog_tl.Iso1,
+  McshLag000017:214  <br>* McshEngl.lagoTahitian--ty.Iso1,  ->  <br>* McshEngl.lagoTahitian_ty.Iso1,
+  McshLag000017:215  <br>* McshEngl.lagoTajik--tg.Iso1,  ->  <br>* McshEngl.lagoTajik_tg.Iso1,
+  McshLag000017:216  <br>* McshEngl.lagoTamil--ta.Iso1,  ->  <br>* McshEngl.lagoTamil_ta.Iso1,
+  McshLag000017:217  <br>* McshEngl.lagoTatar--tt.Iso1,  ->  <br>* McshEngl.lagoTatar_tt.Iso1,
+  McshLag000017:218  <br>* McshEngl.lagoTelugu--te.Iso1,  ->  <br>* McshEngl.lagoTelugu_te.Iso1,
+  McshLag000017:219  <br>* McshEngl.lagoThai--th.Iso1,  ->  <br>* McshEngl.lagoThai_th.Iso1,
+  McshLag000017:220  <br>* McshEngl.lagoTibetan--bo.Iso1,  ->  <br>* McshEngl.lagoTibetan_bo.Iso1,
+  McshLag000017:221  <br>* McshEngl.lagoTigrinya--ti.Iso1,  ->  <br>* McshEngl.lagoTigrinya_ti.Iso1,
+  McshLag000017:223  <br>* McshEngl.lagoTsonga--ts.Iso1,  ->  <br>* McshEngl.lagoTsonga_ts.Iso1,
+  McshLag000017:224  <br>* McshEngl.lagoTswana--tn.Iso1,  ->  <br>* McshEngl.lagoTswana_tn.Iso1,
+  McshLag000017:225  <br>* McshEngl.lagoTurkish--tr.Iso1,  ->  <br>* McshEngl.lagoTurkish_tr.Iso1,
+  McshLag000017:226  <br>* McshEngl.lagoTurkmen--tk.Iso1,  ->  <br>* McshEngl.lagoTurkmen_tk.Iso1,
+  McshLag000017:227  <br>* McshEngl.lagoTwi--tw.Iso1,  ->  <br>* McshEngl.lagoTwi_tw.Iso1,
+  McshLag000017:229  <br>* McshEngl.lagoUkrainian--uk.Iso1,  ->  <br>* McshEngl.lagoUkrainian_uk.Iso1,
+  McshLag000017:230  <br>* McshEngl.lagoUrdu--ur.Iso1,  ->  <br>* McshEngl.lagoUrdu_ur.Iso1,
+  McshLag000017:231  <br>* McshEngl.lagoUzbek--uz.Iso1,  ->  <br>* McshEngl.lagoUzbek_uz.Iso1,
+  McshLag000017:232  <br>* McshEngl.lagoVenda--ve.Iso1,  ->  <br>* McshEngl.lagoVenda_ve.Iso1,
+  McshLag000017:233  <br>* McshEngl.lagoVietnamese--vi.Iso1,  ->  <br>* McshEngl.lagoVietnamese_vi.Iso1,
+  McshLag000017:235  <br>* McshEngl.lagoWalloon--wa.Iso1,  ->  <br>* McshEngl.lagoWalloon_wa.Iso1,
+  McshLag000017:236  <br>* McshEngl.lagoWelsh--cy.Iso1,  ->  <br>* McshEngl.lagoWelsh_cy.Iso1,
+  McshLag000017:238  <br>* McshEngl.lagoWolof--wo.Iso1,  ->  <br>* McshEngl.lagoWolof_wo.Iso1,
+  McshLag000017:239  <br>* McshEngl.lagoXhosa--xh.Iso1,  ->  <br>* McshEngl.lagoXhosa_xh.Iso1,
+  McshLag000017:240  <br>* McshEngl.lagoYiddish--yi.Iso1,  ->  <br>* McshEngl.lagoYiddish_yi.Iso1,
+  McshLag000017:241  <br>* McshEngl.lagoYoruba--yo.Iso1,  ->  <br>* McshEngl.lagoYoruba_yo.Iso1,
+  McshLag000017:243  <br>* McshEngl.lagoZulu--zu.Iso1,  ->  <br>* McshEngl.lagoZulu_zu.Iso1,
+  McshLag000020:9590  <br>* McshEngl.Ellnargu'adjective--name!⇒Ellnadje,  ->  <br>* McshEngl.Ellnargu'adjective_name!⇒Ellnadje,
+  McshLag000020:9655  <br>* McshEngl.Ellnargu'adverb--name!⇒Ellnadve,  ->  <br>* McshEngl.Ellnargu'adverb_name!⇒Ellnadve,
+  McshStn000009:11177  <br>* McshEngl.SoctAfghanistan--AF.Iso2,  ->  <br>* McshEngl.SoctAfghanistan_AF.Iso2,
+  McshStn000009:11178  <br>* McshEngl.SoctAlbania--AL.Iso2,  ->  <br>* McshEngl.SoctAlbania_AL.Iso2,
+  McshStn000009:11179  <br>* McshEngl.SoctAlgeria--DZ.Iso2,  ->  <br>* McshEngl.SoctAlgeria_DZ.Iso2,
+  McshStn000009:11181  <br>* McshEngl.SoctAndorra--AD.Iso2,  ->  <br>* McshEngl.SoctAndorra_AD.Iso2,
+  McshStn000009:11182  <br>* McshEngl.SoctAngola--AO.Iso2,  ->  <br>* McshEngl.SoctAngola_AO.Iso2,
+  McshStn000009:11183  <br>* McshEngl.SoctAnguilla--AI.Iso2,  ->  <br>* McshEngl.SoctAnguilla_AI.Iso2,
+  McshStn000009:11184  <br>* McshEngl.SoctAntarctica--AQ.Iso2,  ->  <br>* McshEngl.SoctAntarctica_AQ.Iso2,
+  McshStn000009:11186  <br>* McshEngl.SoctArgentina--AR.Iso2,  ->  <br>* McshEngl.SoctArgentina_AR.Iso2,
+  McshStn000009:11187  <br>* McshEngl.SoctArmenia--AM.Iso2,  ->  <br>* McshEngl.SoctArmenia_AM.Iso2,
+  McshStn000009:11188  <br>* McshEngl.SoctAruba--AW.Iso2,  ->  <br>* McshEngl.SoctAruba_AW.Iso2,
+  McshStn000009:11189  <br>* McshEngl.SoctAustralia--AU.Iso2,  ->  <br>* McshEngl.SoctAustralia_AU.Iso2,
+  McshStn000009:11190  <br>* McshEngl.SoctAustria--AT.Iso2,  ->  <br>* McshEngl.SoctAustria_AT.Iso2,
+  McshStn000009:11191  <br>* McshEngl.SoctAzerbaijan--AZ.Iso2,  ->  <br>* McshEngl.SoctAzerbaijan_AZ.Iso2,
+  McshStn000009:11192  <br>* McshEngl.SoctBahamas--BS.Iso2,  ->  <br>* McshEngl.SoctBahamas_BS.Iso2,
+  McshStn000009:11193  <br>* McshEngl.SoctBahrain--BH.Iso2,  ->  <br>* McshEngl.SoctBahrain_BH.Iso2,
+  McshStn000009:11194  <br>* McshEngl.SoctBangladesh--BD.Iso2,  ->  <br>* McshEngl.SoctBangladesh_BD.Iso2,
+  McshStn000009:11195  <br>* McshEngl.SoctBarbados--BB.Iso2,  ->  <br>* McshEngl.SoctBarbados_BB.Iso2,
+  McshStn000009:11196  <br>* McshEngl.SoctBelarus--BY.Iso2,  ->  <br>* McshEngl.SoctBelarus_BY.Iso2,
+  McshStn000009:11197  <br>* McshEngl.SoctBelgium--BE.Iso2,  ->  <br>* McshEngl.SoctBelgium_BE.Iso2,
+  McshStn000009:11198  <br>* McshEngl.SoctBelize--BZ.Iso2,  ->  <br>* McshEngl.SoctBelize_BZ.Iso2,
+  McshStn000009:11199  <br>* McshEngl.SoctBenin--BJ.Iso2,  ->  <br>* McshEngl.SoctBenin_BJ.Iso2,
+  McshStn000009:11200  <br>* McshEngl.SoctBermuda--BM.Iso2,  ->  <br>* McshEngl.SoctBermuda_BM.Iso2,
+  McshStn000009:11201  <br>* McshEngl.SoctBhutan--BT.Iso2,  ->  <br>* McshEngl.SoctBhutan_BT.Iso2,
+  McshStn000009:11202  <br>* McshEngl.SoctBolivia--BO.Iso2,  ->  <br>* McshEngl.SoctBolivia_BO.Iso2,
+  McshStn000009:11204  <br>* McshEngl.SoctBotswana--BW.Iso2,  ->  <br>* McshEngl.SoctBotswana_BW.Iso2,
+  McshStn000009:11206  <br>* McshEngl.SoctBrazil--BR.Iso2,  ->  <br>* McshEngl.SoctBrazil_BR.Iso2,
+  McshStn000009:11211  <br>* McshEngl.SoctBurundi--BI.Iso2,  ->  <br>* McshEngl.SoctBurundi_BI.Iso2,
+  McshStn000009:11212  <br>* McshEngl.SoctCambodia--KH.Iso2,  ->  <br>* McshEngl.SoctCambodia_KH.Iso2,
+  McshStn000009:11213  <br>* McshEngl.SoctCameroon--CM.Iso2,  ->  <br>* McshEngl.SoctCameroon_CM.Iso2,
+  McshStn000009:11214  <br>* McshEngl.SoctCanada--CA.Iso2,  ->  <br>* McshEngl.SoctCanada_CA.Iso2,
+  McshStn000009:11218  <br>* McshEngl.SoctChad--TD.Iso2,  ->  <br>* McshEngl.SoctChad_TD.Iso2,
+  McshStn000009:11219  <br>* McshEngl.SoctChile--CL.Iso2,  ->  <br>* McshEngl.SoctChile_CL.Iso2,
+  McshStn000009:11223  <br>* McshEngl.SoctColombia--CO.Iso2,  ->  <br>* McshEngl.SoctColombia_CO.Iso2,
+  McshStn000009:11224  <br>* McshEngl.SoctComoros--KM.Iso2,  ->  <br>* McshEngl.SoctComoros_KM.Iso2,
+  McshStn000009:11225  <br>* McshEngl.SoctCongo--CG.Iso2,  ->  <br>* McshEngl.SoctCongo_CG.Iso2,
+  McshStn000009:11230  <br>* McshEngl.SoctCuba--CU.Iso2,  ->  <br>* McshEngl.SoctCuba_CU.Iso2,
+  McshStn000009:11231  <br>* McshEngl.SoctCyprus--CY.Iso2,  ->  <br>* McshEngl.SoctCyprus_CY.Iso2,
+  McshStn000009:11234  <br>* McshEngl.SoctDenmark--DK.Iso2,  ->  <br>* McshEngl.SoctDenmark_DK.Iso2,
+  McshStn000009:11235  <br>* McshEngl.SoctDjibouti--DJ.Iso2,  ->  <br>* McshEngl.SoctDjibouti_DJ.Iso2,
+  McshStn000009:11236  <br>* McshEngl.SoctDominica--DM.Iso2,  ->  <br>* McshEngl.SoctDominica_DM.Iso2,
+  McshStn000009:11239  <br>* McshEngl.SoctEcuador--EC.Iso2,  ->  <br>* McshEngl.SoctEcuador_EC.Iso2,
+  McshStn000009:11240  <br>* McshEngl.SoctEgypt--EG.Iso2,  ->  <br>* McshEngl.SoctEgypt_EG.Iso2,
+  McshStn000009:11243  <br>* McshEngl.SoctEritrea--ER.Iso2,  ->  <br>* McshEngl.SoctEritrea_ER.Iso2,
+  McshStn000009:11244  <br>* McshEngl.SoctEstonia--EE.Iso2,  ->  <br>* McshEngl.SoctEstonia_EE.Iso2,
+  McshStn000009:11245  <br>* McshEngl.SoctEthiopia--ET.Iso2,  ->  <br>* McshEngl.SoctEthiopia_ET.Iso2,
+  McshStn000009:11248  <br>* McshEngl.SoctFiji--FJ.Iso2,  ->  <br>* McshEngl.SoctFiji_FJ.Iso2,
+  McshStn000009:11249  <br>* McshEngl.SoctFinland--FI.Iso2,  ->  <br>* McshEngl.SoctFinland_FI.Iso2,
+  McshStn000009:11251  <br>* McshEngl.SoctFrance--FR.Iso2,  ->  <br>* McshEngl.SoctFrance_FR.Iso2,
+  McshStn000009:11255  <br>* McshEngl.SoctGabon--GA.Iso2,  ->  <br>* McshEngl.SoctGabon_GA.Iso2,
+  McshStn000009:11256  <br>* McshEngl.SoctGambia--GM.Iso2,  ->  <br>* McshEngl.SoctGambia_GM.Iso2,
+  McshStn000009:11257  <br>* McshEngl.SoctGeorgia--GE.Iso2,  ->  <br>* McshEngl.SoctGeorgia_GE.Iso2,
+  McshStn000009:11258  <br>* McshEngl.SoctGermany--DE.Iso2,  ->  <br>* McshEngl.SoctGermany_DE.Iso2,
+  McshStn000009:11259  <br>* McshEngl.SoctGhana--GH.Iso2,  ->  <br>* McshEngl.SoctGhana_GH.Iso2,
+  McshStn000009:11260  <br>* McshEngl.SoctGibraltar--GI.Iso2,  ->  <br>* McshEngl.SoctGibraltar_GI.Iso2,
+  McshStn000009:11262  <br>* McshEngl.SoctGreece--GR.Iso2,  ->  <br>* McshEngl.SoctGreece_GR.Iso2,
+  McshStn000009:11263  <br>* McshEngl.SoctGreenland--GL.Iso2,  ->  <br>* McshEngl.SoctGreenland_GL.Iso2,
+  McshStn000009:11264  <br>* McshEngl.SoctGrenada--GD.Iso2,  ->  <br>* McshEngl.SoctGrenada_GD.Iso2,
+  McshStn000009:11265  <br>* McshEngl.SoctGuadeloupe--GP.Iso2,  ->  <br>* McshEngl.SoctGuadeloupe_GP.Iso2,
+  McshStn000009:11266  <br>* McshEngl.SoctGuam--GU.Iso2,  ->  <br>* McshEngl.SoctGuam_GU.Iso2,
+  McshStn000009:11267  <br>* McshEngl.SoctGuatemala--GT.Iso2,  ->  <br>* McshEngl.SoctGuatemala_GT.Iso2,
+  McshStn000009:11269  <br>* McshEngl.SoctGuinea--GN.Iso2,  ->  <br>* McshEngl.SoctGuinea_GN.Iso2,
+  McshStn000009:11270  <br>* McshEngl.SoctGuyana--GY.Iso2,  ->  <br>* McshEngl.SoctGuyana_GY.Iso2,
+  McshStn000009:11271  <br>* McshEngl.SoctHaiti--HT.Iso2,  ->  <br>* McshEngl.SoctHaiti_HT.Iso2,
+  McshStn000009:11273  <br>* McshEngl.SoctHonduras--HN.Iso2,  ->  <br>* McshEngl.SoctHonduras_HN.Iso2,
+  McshStn000009:11275  <br>* McshEngl.SoctHungary--HU.Iso2,  ->  <br>* McshEngl.SoctHungary_HU.Iso2,
+  McshStn000009:11276  <br>* McshEngl.SoctIceland--IS.Iso2,  ->  <br>* McshEngl.SoctIceland_IS.Iso2,
+  McshStn000009:11277  <br>* McshEngl.SoctIndia--IN.Iso2,  ->  <br>* McshEngl.SoctIndia_IN.Iso2,
+  McshStn000009:11278  <br>* McshEngl.SoctIndonesia--ID.Iso2,  ->  <br>* McshEngl.SoctIndonesia_ID.Iso2,
+  McshStn000009:11279  <br>* McshEngl.SoctIran--IR.Iso2,  ->  <br>* McshEngl.SoctIran_IR.Iso2,
+  McshStn000009:11280  <br>* McshEngl.SoctIraq--IQ.Iso2,  ->  <br>* McshEngl.SoctIraq_IQ.Iso2,
+  McshStn000009:11283  <br>* McshEngl.SoctItaly--IT.Iso2,  ->  <br>* McshEngl.SoctItaly_IT.Iso2,
+  McshStn000009:11285  <br>* McshEngl.SoctJamaica--JM.Iso2,  ->  <br>* McshEngl.SoctJamaica_JM.Iso2,
+  McshStn000009:11287  <br>* McshEngl.SoctJordan--JO.Iso2,  ->  <br>* McshEngl.SoctJordan_JO.Iso2,
+  McshStn000009:11288  <br>* McshEngl.SoctKazakhstan--KZ.Iso2,  ->  <br>* McshEngl.SoctKazakhstan_KZ.Iso2,
+  McshStn000009:11289  <br>* McshEngl.SoctKenya--KE.Iso2,  ->  <br>* McshEngl.SoctKenya_KE.Iso2,
+  McshStn000009:11290  <br>* McshEngl.SoctKiribati--KI.Iso2,  ->  <br>* McshEngl.SoctKiribati_KI.Iso2,
+  McshStn000009:11293  <br>* McshEngl.SoctKuwait--KW.Iso2,  ->  <br>* McshEngl.SoctKuwait_KW.Iso2,
+  McshStn000009:11294  <br>* McshEngl.SoctKyrgyzstan--KG.Iso2,  ->  <br>* McshEngl.SoctKyrgyzstan_KG.Iso2,
+  McshStn000009:11295  <br>* McshEngl.SoctLaos--LA.Iso2,  ->  <br>* McshEngl.SoctLaos_LA.Iso2,
+  McshStn000009:11296  <br>* McshEngl.SoctLatvia--LV.Iso2,  ->  <br>* McshEngl.SoctLatvia_LV.Iso2,
+  McshStn000009:11297  <br>* McshEngl.SoctLebanon--LB.Iso2,  ->  <br>* McshEngl.SoctLebanon_LB.Iso2,
+  McshStn000009:11298  <br>* McshEngl.SoctLesotho--LS.Iso2,  ->  <br>* McshEngl.SoctLesotho_LS.Iso2,
+  McshStn000009:11299  <br>* McshEngl.SoctLiberia--LR.Iso2,  ->  <br>* McshEngl.SoctLiberia_LR.Iso2,
+  McshStn000009:11300  <br>* McshEngl.SoctLibya--LY.Iso2,  ->  <br>* McshEngl.SoctLibya_LY.Iso2,
+  McshStn000009:11301  <br>* McshEngl.SoctLiechtenstein--LI.Iso2,  ->  <br>* McshEngl.SoctLiechtenstein_LI.Iso2,
+  McshStn000009:11302  <br>* McshEngl.SoctLithuania--LT.Iso2,  ->  <br>* McshEngl.SoctLithuania_LT.Iso2,
+  McshStn000009:11303  <br>* McshEngl.SoctLuxembourg--LU.Iso2,  ->  <br>* McshEngl.SoctLuxembourg_LU.Iso2,
+  McshStn000009:11304  <br>* McshEngl.SoctMacau--MO.Iso2,  ->  <br>* McshEngl.SoctMacau_MO.Iso2,
+  McshStn000009:11305  <br>* McshEngl.SoctMacedonia--MK.Iso2,  ->  <br>* McshEngl.SoctMacedonia_MK.Iso2,
+  McshStn000009:11306  <br>* McshEngl.SoctMadagascar--MG.Iso2,  ->  <br>* McshEngl.SoctMadagascar_MG.Iso2,
+  McshStn000009:11307  <br>* McshEngl.SoctMalawi--MW.Iso2,  ->  <br>* McshEngl.SoctMalawi_MW.Iso2,
+  McshStn000009:11308  <br>* McshEngl.SoctMalaysia--MY.Iso2,  ->  <br>* McshEngl.SoctMalaysia_MY.Iso2,
+  McshStn000009:11309  <br>* McshEngl.SoctMaldives--MV.Iso2,  ->  <br>* McshEngl.SoctMaldives_MV.Iso2,
+  McshStn000009:11310  <br>* McshEngl.SoctMali--ML.Iso2,  ->  <br>* McshEngl.SoctMali_ML.Iso2,
+  McshStn000009:11311  <br>* McshEngl.SoctMalta--MT.Iso2,  ->  <br>* McshEngl.SoctMalta_MT.Iso2,
+  McshStn000009:11313  <br>* McshEngl.SoctMartinique--MQ.Iso2,  ->  <br>* McshEngl.SoctMartinique_MQ.Iso2,
+  McshStn000009:11314  <br>* McshEngl.SoctMauritania--MR.Iso2,  ->  <br>* McshEngl.SoctMauritania_MR.Iso2,
+  McshStn000009:11315  <br>* McshEngl.SoctMauritius--MU.Iso2,  ->  <br>* McshEngl.SoctMauritius_MU.Iso2,
+  McshStn000009:11316  <br>* McshEngl.SoctMayotte--YT.Iso2,  ->  <br>* McshEngl.SoctMayotte_YT.Iso2,
+  McshStn000009:11317  <br>* McshEngl.SoctMexico--MX.Iso2,  ->  <br>* McshEngl.SoctMexico_MX.Iso2,
+  McshStn000009:11318  <br>* McshEngl.SoctMicronesia--FM.Iso2,  ->  <br>* McshEngl.SoctMicronesia_FM.Iso2,
+  McshStn000009:11319  <br>* McshEngl.SoctMoldova--MD.Iso2,  ->  <br>* McshEngl.SoctMoldova_MD.Iso2,
+  McshStn000009:11320  <br>* McshEngl.SoctMonaco--MC.Iso2,  ->  <br>* McshEngl.SoctMonaco_MC.Iso2,
+  McshStn000009:11321  <br>* McshEngl.SoctMongolia--MN.Iso2,  ->  <br>* McshEngl.SoctMongolia_MN.Iso2,
+  McshStn000009:11322  <br>* McshEngl.SoctMontserrat--MS.Iso2,  ->  <br>* McshEngl.SoctMontserrat_MS.Iso2,
+  McshStn000009:11323  <br>* McshEngl.SoctMorocco--MA.Iso2,  ->  <br>* McshEngl.SoctMorocco_MA.Iso2,
+  McshStn000009:11324  <br>* McshEngl.SoctMozambique--MZ.Iso2,  ->  <br>* McshEngl.SoctMozambique_MZ.Iso2,
+  McshStn000009:11325  <br>* McshEngl.SoctMyanmar--MM.Iso2,  ->  <br>* McshEngl.SoctMyanmar_MM.Iso2,
+  McshStn000009:11326  <br>* McshEngl.SoctNamibia--NA.Iso2,  ->  <br>* McshEngl.SoctNamibia_NA.Iso2,
+  McshStn000009:11327  <br>* McshEngl.SoctNauru--NR.Iso2,  ->  <br>* McshEngl.SoctNauru_NR.Iso2,
+  McshStn000009:11328  <br>* McshEngl.SoctNepal--NP.Iso2,  ->  <br>* McshEngl.SoctNepal_NP.Iso2,
+  McshStn000009:11330  <br>* McshEngl.SoctNetherlands--NL.Iso2,  ->  <br>* McshEngl.SoctNetherlands_NL.Iso2,
+  McshStn000009:11334  <br>* McshEngl.SoctNicaragua--NI.Iso2,  ->  <br>* McshEngl.SoctNicaragua_NI.Iso2,
+  McshStn000009:11335  <br>* McshEngl.SoctNiger--NE.Iso2,  ->  <br>* McshEngl.SoctNiger_NE.Iso2,
+  McshStn000009:11336  <br>* McshEngl.SoctNigeria--NG.Iso2,  ->  <br>* McshEngl.SoctNigeria_NG.Iso2,
+  McshStn000009:11337  <br>* McshEngl.SoctNiue--NU.Iso2,  ->  <br>* McshEngl.SoctNiue_NU.Iso2,
+  McshStn000009:11340  <br>* McshEngl.SoctNorway--NO.Iso2,  ->  <br>* McshEngl.SoctNorway_NO.Iso2,
+  McshStn000009:11341  <br>* McshEngl.SoctOman--OM.Iso2,  ->  <br>* McshEngl.SoctOman_OM.Iso2,
+  McshStn000009:11342  <br>* McshEngl.SoctPakistan--PK.Iso2,  ->  <br>* McshEngl.SoctPakistan_PK.Iso2,
+  McshStn000009:11343  <br>* McshEngl.SoctPalau--PW.Iso2,  ->  <br>* McshEngl.SoctPalau_PW.Iso2,
+  McshStn000009:11344  <br>* McshEngl.SoctPanama--PA.Iso2,  ->  <br>* McshEngl.SoctPanama_PA.Iso2,
+  McshStn000009:11346  <br>* McshEngl.SoctParaguay--PY.Iso2,  ->  <br>* McshEngl.SoctParaguay_PY.Iso2,
+  McshStn000009:11347  <br>* McshEngl.SoctPeru--PE.Iso2,  ->  <br>* McshEngl.SoctPeru_PE.Iso2,
+  McshStn000009:11348  <br>* McshEngl.SoctPhilippines--PH.Iso2,  ->  <br>* McshEngl.SoctPhilippines_PH.Iso2,
+  McshStn000009:11349  <br>* McshEngl.SoctPitcairn--PN.Iso2,  ->  <br>* McshEngl.SoctPitcairn_PN.Iso2,
+  McshStn000009:11350  <br>* McshEngl.SoctPoland--PL.Iso2,  ->  <br>* McshEngl.SoctPoland_PL.Iso2,
+  McshStn000009:11351  <br>* McshEngl.SoctPortugal--PT.Iso2,  ->  <br>* McshEngl.SoctPortugal_PT.Iso2,
+  McshStn000009:11353  <br>* McshEngl.SoctQatar--QA.Iso2,  ->  <br>* McshEngl.SoctQatar_QA.Iso2,
+  McshStn000009:11354  <br>* McshEngl.SoctReunion--RE.Iso2,  ->  <br>* McshEngl.SoctReunion_RE.Iso2,
+  McshStn000009:11355  <br>* McshEngl.SoctRomania--RO.Iso2,  ->  <br>* McshEngl.SoctRomania_RO.Iso2,
+  McshStn000009:11357  <br>* McshEngl.SoctRwanda--RW.Iso2,  ->  <br>* McshEngl.SoctRwanda_RW.Iso2,
+  McshStn000009:11362  <br>* McshEngl.SoctSamoa--WS.Iso2,  ->  <br>* McshEngl.SoctSamoa_WS.Iso2,
+  McshStn000009:11366  <br>* McshEngl.SoctSenegal--SN.Iso2,  ->  <br>* McshEngl.SoctSenegal_SN.Iso2,
+  McshStn000009:11367  <br>* McshEngl.SoctSeychelles--SC.Iso2,  ->  <br>* McshEngl.SoctSeychelles_SC.Iso2,
+  McshStn000009:11369  <br>* McshEngl.SoctSingapore--SG.Iso2,  ->  <br>* McshEngl.SoctSingapore_SG.Iso2,
+  McshStn000009:11371  <br>* McshEngl.SoctSlovenia--SI.Iso2,  ->  <br>* McshEngl.SoctSlovenia_SI.Iso2,
+  McshStn000009:11372  <br>* McshEngl.SoctSomalia--SO.Iso2,  ->  <br>* McshEngl.SoctSomalia_SO.Iso2,
+  McshStn000009:11375  <br>* McshEngl.SoctSpain--ES.Iso2,  ->  <br>* McshEngl.SoctSpain_ES.Iso2,
+  McshStn000009:11377  <br>* McshEngl.SoctSt.Helena--SH.Iso2,  ->  <br>* McshEngl.SoctSt.Helena_SH.Iso2,
+  McshStn000009:11379  <br>* McshEngl.SoctSudan--SD.Iso2,  ->  <br>* McshEngl.SoctSudan_SD.Iso2,
+  McshStn000009:11380  <br>* McshEngl.SoctSuriname--SR.Iso2,  ->  <br>* McshEngl.SoctSuriname_SR.Iso2,
+  McshStn000009:11382  <br>* McshEngl.SoctSwaziland--SZ.Iso2,  ->  <br>* McshEngl.SoctSwaziland_SZ.Iso2,
+  McshStn000009:11383  <br>* McshEngl.SoctSweden--SE.Iso2,  ->  <br>* McshEngl.SoctSweden_SE.Iso2,
+  McshStn000009:11384  <br>* McshEngl.SoctSwitzerland--CH.Iso2,  ->  <br>* McshEngl.SoctSwitzerland_CH.Iso2,
+  McshStn000009:11385  <br>* McshEngl.SoctSyria--SY.Iso2,  ->  <br>* McshEngl.SoctSyria_SY.Iso2,
+  McshStn000009:11386  <br>* McshEngl.SoctTaiwan--TW.Iso2,  ->  <br>* McshEngl.SoctTaiwan_TW.Iso2,
+  McshStn000009:11387  <br>* McshEngl.SoctTajikistan--TJ.Iso2,  ->  <br>* McshEngl.SoctTajikistan_TJ.Iso2,
+  McshStn000009:11388  <br>* McshEngl.SoctTanzania--TZ.Iso2,  ->  <br>* McshEngl.SoctTanzania_TZ.Iso2,
+  McshStn000009:11389  <br>* McshEngl.SoctThailand--TH.Iso2,  ->  <br>* McshEngl.SoctThailand_TH.Iso2,
+  McshStn000009:11390  <br>* McshEngl.SoctTogo--TG.Iso2,  ->  <br>* McshEngl.SoctTogo_TG.Iso2,
+  McshStn000009:11391  <br>* McshEngl.SoctTokelau--TK.Iso2,  ->  <br>* McshEngl.SoctTokelau_TK.Iso2,
+  McshStn000009:11392  <br>* McshEngl.SoctTonga--TO.Iso2,  ->  <br>* McshEngl.SoctTonga_TO.Iso2,
+  McshStn000009:11394  <br>* McshEngl.SoctTunisia--TN.Iso2,  ->  <br>* McshEngl.SoctTunisia_TN.Iso2,
+  McshStn000009:11395  <br>* McshEngl.SoctTurkey--TR.Iso2,  ->  <br>* McshEngl.SoctTurkey_TR.Iso2,
+  McshStn000009:11396  <br>* McshEngl.SoctTurkmenistan--TM.Iso2,  ->  <br>* McshEngl.SoctTurkmenistan_TM.Iso2,
+  McshStn000009:11398  <br>* McshEngl.SoctTuvalu--TV.Iso2,  ->  <br>* McshEngl.SoctTuvalu_TV.Iso2,
+  McshStn000009:11401  <br>* McshEngl.SoctUganda--UG.Iso2,  ->  <br>* McshEngl.SoctUganda_UG.Iso2,
+  McshStn000009:11402  <br>* McshEngl.SoctUkraine--UA.Iso2,  ->  <br>* McshEngl.SoctUkraine_UA.Iso2,
+  McshStn000009:11406  <br>* McshEngl.SoctUruguay--UY.Iso2,  ->  <br>* McshEngl.SoctUruguay_UY.Iso2,
+  McshStn000009:11407  <br>* McshEngl.SoctUzbekistan--UZ.Iso2,  ->  <br>* McshEngl.SoctUzbekistan_UZ.Iso2,
+  McshStn000009:11408  <br>* McshEngl.SoctVanuatu--VU.Iso2,  ->  <br>* McshEngl.SoctVanuatu_VU.Iso2,
+  McshStn000009:11410  <br>* McshEngl.SoctVenezuela--VE.Iso2,  ->  <br>* McshEngl.SoctVenezuela_VE.Iso2,
+  McshStn000009:11416  <br>* McshEngl.SoctYemen--YE.Iso2,  ->  <br>* McshEngl.SoctYemen_YE.Iso2,
+  McshStn000009:11417  <br>* McshEngl.SoctYugoslavia--YU.Iso2,  ->  <br>* McshEngl.SoctYugoslavia_YU.Iso2,
+  McshStn000009:11418  <br>* McshEngl.SoctZaire--ZR.Iso2,  ->  <br>* McshEngl.SoctZaire_ZR.Iso2,
+  McshStn000009:11419  <br>* McshEngl.SoctZambia--ZM.Iso2,  ->  <br>* McshEngl.SoctZambia_ZM.Iso2,
+  McshStn000009:11420  <br>* McshEngl.SoctZimbabwe--ZW.Iso2,  ->  <br>* McshEngl.SoctZimbabwe_ZW.Iso2,
+  McshStn000009:11695  <br>* McshEngl.SoctAfghanistan--AFG.Iso3,  ->  <br>* McshEngl.SoctAfghanistan_AFG.Iso3,
+  McshStn000009:11697  <br>* McshEngl.SoctAlbania--ALB.Iso3,  ->  <br>* McshEngl.SoctAlbania_ALB.Iso3,
+  McshStn000009:11698  <br>* McshEngl.SoctAlgeria--DZA.Iso3,  ->  <br>* McshEngl.SoctAlgeria_DZA.Iso3,
+  McshStn000009:11700  <br>* McshEngl.SoctAndorra--AND.Iso3,  ->  <br>* McshEngl.SoctAndorra_AND.Iso3,
+  McshStn000009:11701  <br>* McshEngl.SoctAngola--AGO.Iso3,  ->  <br>* McshEngl.SoctAngola_AGO.Iso3,
+  McshStn000009:11702  <br>* McshEngl.SoctAnguilla--AIA.Iso3,  ->  <br>* McshEngl.SoctAnguilla_AIA.Iso3,
+  McshStn000009:11703  <br>* McshEngl.SoctAntarctica--ATA.Iso3,  ->  <br>* McshEngl.SoctAntarctica_ATA.Iso3,
+  McshStn000009:11705  <br>* McshEngl.SoctArgentina--ARG.Iso3,  ->  <br>* McshEngl.SoctArgentina_ARG.Iso3,
+  McshStn000009:11706  <br>* McshEngl.SoctArmenia--ARM.Iso3,  ->  <br>* McshEngl.SoctArmenia_ARM.Iso3,
+  McshStn000009:11707  <br>* McshEngl.SoctAruba--ABW.Iso3,  ->  <br>* McshEngl.SoctAruba_ABW.Iso3,
+  McshStn000009:11708  <br>* McshEngl.SoctAustralia--AUS.Iso3,  ->  <br>* McshEngl.SoctAustralia_AUS.Iso3,
+  McshStn000009:11709  <br>* McshEngl.SoctAustria--AUT.Iso3,  ->  <br>* McshEngl.SoctAustria_AUT.Iso3,
+  McshStn000009:11710  <br>* McshEngl.SoctAzerbaijan--AZE.Iso3,  ->  <br>* McshEngl.SoctAzerbaijan_AZE.Iso3,
+  McshStn000009:11711  <br>* McshEngl.SoctBahamas--BHS.Iso3,  ->  <br>* McshEngl.SoctBahamas_BHS.Iso3,
+  McshStn000009:11712  <br>* McshEngl.SoctBahrain--BHR.Iso3,  ->  <br>* McshEngl.SoctBahrain_BHR.Iso3,
+  McshStn000009:11713  <br>* McshEngl.SoctBangladesh--BGD.Iso3,  ->  <br>* McshEngl.SoctBangladesh_BGD.Iso3,
+  McshStn000009:11714  <br>* McshEngl.SoctBarbados--BRB.Iso3,  ->  <br>* McshEngl.SoctBarbados_BRB.Iso3,
+  McshStn000009:11715  <br>* McshEngl.SoctBelarus--BLR.Iso3,  ->  <br>* McshEngl.SoctBelarus_BLR.Iso3,
+  McshStn000009:11716  <br>* McshEngl.SoctBelgium--BEL.Iso3,  ->  <br>* McshEngl.SoctBelgium_BEL.Iso3,
+  McshStn000009:11717  <br>* McshEngl.SoctBelize--BLZ.Iso3,  ->  <br>* McshEngl.SoctBelize_BLZ.Iso3,
+  McshStn000009:11718  <br>* McshEngl.SoctBenin--BEN.Iso3,  ->  <br>* McshEngl.SoctBenin_BEN.Iso3,
+  McshStn000009:11719  <br>* McshEngl.SoctBermuda--BMU.Iso3,  ->  <br>* McshEngl.SoctBermuda_BMU.Iso3,
+  McshStn000009:11720  <br>* McshEngl.SoctBhutan--BTN.Iso3,  ->  <br>* McshEngl.SoctBhutan_BTN.Iso3,
+  McshStn000009:11724  <br>* McshEngl.SoctBotswana--BWA.Iso3,  ->  <br>* McshEngl.SoctBotswana_BWA.Iso3,
+  McshStn000009:11726  <br>* McshEngl.SoctBrazil--BRA.Iso3,  ->  <br>* McshEngl.SoctBrazil_BRA.Iso3,
+  McshStn000009:11731  <br>* McshEngl.SoctBurundi--BDI.Iso3,  ->  <br>* McshEngl.SoctBurundi_BDI.Iso3,
+  McshStn000009:11732  <br>* McshEngl.SoctCambodia--KHM.Iso3,  ->  <br>* McshEngl.SoctCambodia_KHM.Iso3,
+  McshStn000009:11733  <br>* McshEngl.SoctCameroon--CMR.Iso3,  ->  <br>* McshEngl.SoctCameroon_CMR.Iso3,
+  McshStn000009:11734  <br>* McshEngl.SoctCanada--CAN.Iso3,  ->  <br>* McshEngl.SoctCanada_CAN.Iso3,
+  McshStn000009:11738  <br>* McshEngl.SoctChad--TCD.Iso3,  ->  <br>* McshEngl.SoctChad_TCD.Iso3,
+  McshStn000009:11739  <br>* McshEngl.SoctChile--CHL.Iso3,  ->  <br>* McshEngl.SoctChile_CHL.Iso3,
+  McshStn000009:11743  <br>* McshEngl.SoctColombia--COL.Iso3,  ->  <br>* McshEngl.SoctColombia_COL.Iso3,
+  McshStn000009:11744  <br>* McshEngl.SoctComoros--COM.Iso3,  ->  <br>* McshEngl.SoctComoros_COM.Iso3,
+  McshStn000009:11745  <br>* McshEngl.SoctCongo--COG.Iso3,  ->  <br>* McshEngl.SoctCongo_COG.Iso3,
+  McshStn000009:11749  <br>* McshEngl.SoctCroatia--HRV.Iso3,  ->  <br>* McshEngl.SoctCroatia_HRV.Iso3,
+  McshStn000009:11750  <br>* McshEngl.SoctCuba--CUB.Iso3,  ->  <br>* McshEngl.SoctCuba_CUB.Iso3,
+  McshStn000009:11752  <br>* McshEngl.SoctCyprus--CYP.Iso3,  ->  <br>* McshEngl.SoctCyprus_CYP.Iso3,
+  McshStn000009:11755  <br>* McshEngl.SoctDenmark--DNK.Iso3,  ->  <br>* McshEngl.SoctDenmark_DNK.Iso3,
+  McshStn000009:11756  <br>* McshEngl.SoctDjibouti--DJI.Iso3,  ->  <br>* McshEngl.SoctDjibouti_DJI.Iso3,
+  McshStn000009:11757  <br>* McshEngl.SoctDominica--DMA.Iso3,  ->  <br>* McshEngl.SoctDominica_DMA.Iso3,
+  McshStn000009:11759  <br>* McshEngl.SoctEcuador--ECU.Iso3,  ->  <br>* McshEngl.SoctEcuador_ECU.Iso3,
+  McshStn000009:11760  <br>* McshEngl.SoctEgypt--EGY.Iso3,  ->  <br>* McshEngl.SoctEgypt_EGY.Iso3,
+  McshStn000009:11763  <br>* McshEngl.SoctEritrea--ERI.Iso3,  ->  <br>* McshEngl.SoctEritrea_ERI.Iso3,
+  McshStn000009:11764  <br>* McshEngl.SoctEstonia--EST.Iso3,  ->  <br>* McshEngl.SoctEstonia_EST.Iso3,
+  McshStn000009:11765  <br>* McshEngl.SoctEthiopia--ETH.Iso3,  ->  <br>* McshEngl.SoctEthiopia_ETH.Iso3,
+  McshStn000009:11768  <br>* McshEngl.SoctFiji--FJI.Iso3,  ->  <br>* McshEngl.SoctFiji_FJI.Iso3,
+  McshStn000009:11769  <br>* McshEngl.SoctFinland--FIN.Iso3,  ->  <br>* McshEngl.SoctFinland_FIN.Iso3,
+  McshStn000009:11770  <br>* McshEngl.SoctFrance--FRA.Iso3,  ->  <br>* McshEngl.SoctFrance_FRA.Iso3,
+  McshStn000009:11774  <br>* McshEngl.SoctGabon--GAB.Iso3,  ->  <br>* McshEngl.SoctGabon_GAB.Iso3,
+  McshStn000009:11775  <br>* McshEngl.SoctGambia--GMB.Iso3,  ->  <br>* McshEngl.SoctGambia_GMB.Iso3,
+  McshStn000009:11776  <br>* McshEngl.SoctGeorgia--GEO.Iso3,  ->  <br>* McshEngl.SoctGeorgia_GEO.Iso3,
+  McshStn000009:11777  <br>* McshEngl.SoctGermany--DEU.Iso3,  ->  <br>* McshEngl.SoctGermany_DEU.Iso3,
+  McshStn000009:11778  <br>* McshEngl.SoctGhana--GHA.Iso3,  ->  <br>* McshEngl.SoctGhana_GHA.Iso3,
+  McshStn000009:11779  <br>* McshEngl.SoctGibraltar--GIB.Iso3,  ->  <br>* McshEngl.SoctGibraltar_GIB.Iso3,
+  McshStn000009:11780  <br>* McshEngl.SoctGreece--GRC.Iso3,  ->  <br>* McshEngl.SoctGreece_GRC.Iso3,
+  McshStn000009:11781  <br>* McshEngl.SoctGreenland--GRL.Iso3,  ->  <br>* McshEngl.SoctGreenland_GRL.Iso3,
+  McshStn000009:11782  <br>* McshEngl.SoctGrenada--GRD.Iso3,  ->  <br>* McshEngl.SoctGrenada_GRD.Iso3,
+  McshStn000009:11783  <br>* McshEngl.SoctGuadeloupe--GLP.Iso3,  ->  <br>* McshEngl.SoctGuadeloupe_GLP.Iso3,
+  McshStn000009:11784  <br>* McshEngl.SoctGuam--GUM.Iso3,  ->  <br>* McshEngl.SoctGuam_GUM.Iso3,
+  McshStn000009:11785  <br>* McshEngl.SoctGuatemala--GTM.Iso3,  ->  <br>* McshEngl.SoctGuatemala_GTM.Iso3,
+  McshStn000009:11786  <br>* McshEngl.SoctGuernsey--GGY.Iso3,  ->  <br>* McshEngl.SoctGuernsey_GGY.Iso3,
+  McshStn000009:11787  <br>* McshEngl.SoctGuinea--GIN.Iso3,  ->  <br>* McshEngl.SoctGuinea_GIN.Iso3,
+  McshStn000009:11789  <br>* McshEngl.SoctGuyana--GUY.Iso3,  ->  <br>* McshEngl.SoctGuyana_GUY.Iso3,
+  McshStn000009:11790  <br>* McshEngl.SoctHaiti--HTI.Iso3,  ->  <br>* McshEngl.SoctHaiti_HTI.Iso3,
+  McshStn000009:11793  <br>* McshEngl.SoctHonduras--HND.Iso3,  ->  <br>* McshEngl.SoctHonduras_HND.Iso3,
+  McshStn000009:11795  <br>* McshEngl.SoctHungary--HUN.Iso3,  ->  <br>* McshEngl.SoctHungary_HUN.Iso3,
+  McshStn000009:11796  <br>* McshEngl.SoctIceland--ISL.Iso3,  ->  <br>* McshEngl.SoctIceland_ISL.Iso3,
+  McshStn000009:11797  <br>* McshEngl.SoctIndia--IND.Iso3,  ->  <br>* McshEngl.SoctIndia_IND.Iso3,
+  McshStn000009:11798  <br>* McshEngl.SoctIndonesia--IDN.Iso3,  ->  <br>* McshEngl.SoctIndonesia_IDN.Iso3,
+  McshStn000009:11800  <br>* McshEngl.SoctIraq--IRQ.Iso3,  ->  <br>* McshEngl.SoctIraq_IRQ.Iso3,
+  McshStn000009:11801  <br>* McshEngl.SoctIreland--IRL.Iso3,  ->  <br>* McshEngl.SoctIreland_IRL.Iso3,
+  McshStn000009:11803  <br>* McshEngl.SoctIsrael--ISR.Iso3,  ->  <br>* McshEngl.SoctIsrael_ISR.Iso3,
+  McshStn000009:11804  <br>* McshEngl.SoctItaly--ITA.Iso3,  ->  <br>* McshEngl.SoctItaly_ITA.Iso3,
+  McshStn000009:11805  <br>* McshEngl.SoctJamaica--JAM.Iso3,  ->  <br>* McshEngl.SoctJamaica_JAM.Iso3,
+  McshStn000009:11807  <br>* McshEngl.SoctJersey--JEY.Iso3,  ->  <br>* McshEngl.SoctJersey_JEY.Iso3,
+  McshStn000009:11808  <br>* McshEngl.SoctJordan--JOR.Iso3,  ->  <br>* McshEngl.SoctJordan_JOR.Iso3,
+  McshStn000009:11809  <br>* McshEngl.SoctKazakhsctan--KAZ.Iso3,  ->  <br>* McshEngl.SoctKazakhsctan_KAZ.Iso3,
+  McshStn000009:11810  <br>* McshEngl.SoctKenya--KEN.Iso3,  ->  <br>* McshEngl.SoctKenya_KEN.Iso3,
+  McshStn000009:11811  <br>* McshEngl.SoctKiribati--KIR.Iso3,  ->  <br>* McshEngl.SoctKiribati_KIR.Iso3,
+  McshStn000009:11814  <br>* McshEngl.SoctKuwait--KWT.Iso3,  ->  <br>* McshEngl.SoctKuwait_KWT.Iso3,
+  McshStn000009:11815  <br>* McshEngl.SoctKyrgyzstan--KGZ.Iso3,  ->  <br>* McshEngl.SoctKyrgyzstan_KGZ.Iso3,
+  McshStn000009:11817  <br>* McshEngl.SoctLatvia--LVA.Iso3,  ->  <br>* McshEngl.SoctLatvia_LVA.Iso3,
+  McshStn000009:11818  <br>* McshEngl.SoctLebanon--LBN.Iso3,  ->  <br>* McshEngl.SoctLebanon_LBN.Iso3,
+  McshStn000009:11819  <br>* McshEngl.SoctLesotho--LSO.Iso3,  ->  <br>* McshEngl.SoctLesotho_LSO.Iso3,
+  McshStn000009:11820  <br>* McshEngl.SoctLiberia--LBR.Iso3,  ->  <br>* McshEngl.SoctLiberia_LBR.Iso3,
+  McshStn000009:11821  <br>* McshEngl.SoctLibya--LBY.Iso3,  ->  <br>* McshEngl.SoctLibya_LBY.Iso3,
+  McshStn000009:11822  <br>* McshEngl.SoctLiechtenstein--LIE.Iso3,  ->  <br>* McshEngl.SoctLiechtenstein_LIE.Iso3,
+  McshStn000009:11823  <br>* McshEngl.SoctLithuania--LTU.Iso3,  ->  <br>* McshEngl.SoctLithuania_LTU.Iso3,
+  McshStn000009:11824  <br>* McshEngl.SoctLuxembourg--LUX.Iso3,  ->  <br>* McshEngl.SoctLuxembourg_LUX.Iso3,
+  McshStn000009:11825  <br>* McshEngl.SoctMacao--MAC.Iso3,  ->  <br>* McshEngl.SoctMacao_MAC.Iso3,
+  McshStn000009:11827  <br>* McshEngl.SoctMadagascar--MDG.Iso3,  ->  <br>* McshEngl.SoctMadagascar_MDG.Iso3,
+  McshStn000009:11828  <br>* McshEngl.SoctMalawi--MWI.Iso3,  ->  <br>* McshEngl.SoctMalawi_MWI.Iso3,
+  McshStn000009:11829  <br>* McshEngl.SoctMalaysia--MYS.Iso3,  ->  <br>* McshEngl.SoctMalaysia_MYS.Iso3,
+  McshStn000009:11830  <br>* McshEngl.SoctMaldives--MDV.Iso3,  ->  <br>* McshEngl.SoctMaldives_MDV.Iso3,
+  McshStn000009:11831  <br>* McshEngl.SoctMali--MLI.Iso3,  ->  <br>* McshEngl.SoctMali_MLI.Iso3,
+  McshStn000009:11832  <br>* McshEngl.SoctMalta--MLT.Iso3,  ->  <br>* McshEngl.SoctMalta_MLT.Iso3,
+  McshStn000009:11834  <br>* McshEngl.SoctMartinique--MTQ.Iso3,  ->  <br>* McshEngl.SoctMartinique_MTQ.Iso3,
+  McshStn000009:11835  <br>* McshEngl.SoctMauritania--MRT.Iso3,  ->  <br>* McshEngl.SoctMauritania_MRT.Iso3,
+  McshStn000009:11836  <br>* McshEngl.SoctMauritius--MUS.Iso3,  ->  <br>* McshEngl.SoctMauritius_MUS.Iso3,
+  McshStn000009:11837  <br>* McshEngl.SoctMayotte--MYT.Iso3,  ->  <br>* McshEngl.SoctMayotte_MYT.Iso3,
+  McshStn000009:11838  <br>* McshEngl.SoctMexico--MEX.Iso3,  ->  <br>* McshEngl.SoctMexico_MEX.Iso3,
+  McshStn000009:11841  <br>* McshEngl.SoctMonaco--MCO.Iso3,  ->  <br>* McshEngl.SoctMonaco_MCO.Iso3,
+  McshStn000009:11842  <br>* McshEngl.SoctMongolia--MNG.Iso3,  ->  <br>* McshEngl.SoctMongolia_MNG.Iso3,
+  McshStn000009:11843  <br>* McshEngl.SoctMontenegro--MNE.Iso3,  ->  <br>* McshEngl.SoctMontenegro_MNE.Iso3,
+  McshStn000009:11844  <br>* McshEngl.SoctMontserrat--MSR.Iso3,  ->  <br>* McshEngl.SoctMontserrat_MSR.Iso3,
+  McshStn000009:11845  <br>* McshEngl.SoctMorocco--MAR.Iso3,  ->  <br>* McshEngl.SoctMorocco_MAR.Iso3,
+  McshStn000009:11846  <br>* McshEngl.SoctMozambique--MOZ.Iso3,  ->  <br>* McshEngl.SoctMozambique_MOZ.Iso3,
+  McshStn000009:11847  <br>* McshEngl.SoctMyanmar--MMR.Iso3,  ->  <br>* McshEngl.SoctMyanmar_MMR.Iso3,
+  McshStn000009:11848  <br>* McshEngl.SoctNamibia--NAM.Iso3,  ->  <br>* McshEngl.SoctNamibia_NAM.Iso3,
+  McshStn000009:11849  <br>* McshEngl.SoctNauru--NRU.Iso3,  ->  <br>* McshEngl.SoctNauru_NRU.Iso3,
+  McshStn000009:11850  <br>* McshEngl.SoctNepal--NPL.Iso3,  ->  <br>* McshEngl.SoctNepal_NPL.Iso3,
+  McshStn000009:11851  <br>* McshEngl.SoctNetherlands--NLD.Iso3,  ->  <br>* McshEngl.SoctNetherlands_NLD.Iso3,
+  McshStn000009:11854  <br>* McshEngl.SoctNicaragua--NIC.Iso3,  ->  <br>* McshEngl.SoctNicaragua_NIC.Iso3,
+  McshStn000009:11855  <br>* McshEngl.SoctNiger--NER.Iso3,  ->  <br>* McshEngl.SoctNiger_NER.Iso3,
+  McshStn000009:11856  <br>* McshEngl.SoctNigeria--NGA.Iso3,  ->  <br>* McshEngl.SoctNigeria_NGA.Iso3,
+  McshStn000009:11857  <br>* McshEngl.SoctNiue--NIU.Iso3,  ->  <br>* McshEngl.SoctNiue_NIU.Iso3,
+  McshStn000009:11860  <br>* McshEngl.SoctNorway--NOR.Iso3,  ->  <br>* McshEngl.SoctNorway_NOR.Iso3,
+  McshStn000009:11861  <br>* McshEngl.SoctOman--OMN.Iso3,  ->  <br>* McshEngl.SoctOman_OMN.Iso3,
+  McshStn000009:11862  <br>* McshEngl.SoctPakistan--PAK.Iso3,  ->  <br>* McshEngl.SoctPakistan_PAK.Iso3,
+  McshStn000009:11863  <br>* McshEngl.SoctPalau--PLW.Iso3,  ->  <br>* McshEngl.SoctPalau_PLW.Iso3,
+  McshStn000009:11865  <br>* McshEngl.SoctPanama--PAN.Iso3,  ->  <br>* McshEngl.SoctPanama_PAN.Iso3,
+  McshStn000009:11867  <br>* McshEngl.SoctParaguay--PRY.Iso3,  ->  <br>* McshEngl.SoctParaguay_PRY.Iso3,
+  McshStn000009:11868  <br>* McshEngl.SoctPeru--PER.Iso3,  ->  <br>* McshEngl.SoctPeru_PER.Iso3,
+  McshStn000009:11869  <br>* McshEngl.SoctPhilippines--PHL.Iso3,  ->  <br>* McshEngl.SoctPhilippines_PHL.Iso3,
+  McshStn000009:11870  <br>* McshEngl.SoctPitcairn--PCN.Iso3,  ->  <br>* McshEngl.SoctPitcairn_PCN.Iso3,
+  McshStn000009:11871  <br>* McshEngl.SoctPoland--POL.Iso3,  ->  <br>* McshEngl.SoctPoland_POL.Iso3,
+  McshStn000009:11872  <br>* McshEngl.SoctPortugal--PRT.Iso3,  ->  <br>* McshEngl.SoctPortugal_PRT.Iso3,
+  McshStn000009:11874  <br>* McshEngl.SoctQatar--QAT.Iso3,  ->  <br>* McshEngl.SoctQatar_QAT.Iso3,
+  McshStn000009:11875  <br>* McshEngl.SoctRomania--ROU.Iso3,  ->  <br>* McshEngl.SoctRomania_ROU.Iso3,
+  McshStn000009:11877  <br>* McshEngl.SoctRwanda--RWA.Iso3,  ->  <br>* McshEngl.SoctRwanda_RWA.Iso3,
+  McshStn000009:11886  <br>* McshEngl.SoctSamoa--WSM.Iso3,  ->  <br>* McshEngl.SoctSamoa_WSM.Iso3,
+  McshStn000009:11890  <br>* McshEngl.SoctSenegal--SEN.Iso3,  ->  <br>* McshEngl.SoctSenegal_SEN.Iso3,
+  McshStn000009:11891  <br>* McshEngl.SoctSerbia--SRB.Iso3,  ->  <br>* McshEngl.SoctSerbia_SRB.Iso3,
+  McshStn000009:11892  <br>* McshEngl.SoctSeychelles--SYC.Iso3,  ->  <br>* McshEngl.SoctSeychelles_SYC.Iso3,
+  McshStn000009:11894  <br>* McshEngl.SoctSingapore--SGP.Iso3,  ->  <br>* McshEngl.SoctSingapore_SGP.Iso3,
+  McshStn000009:11896  <br>* McshEngl.SoctSlovakia--SVK.Iso3,  ->  <br>* McshEngl.SoctSlovakia_SVK.Iso3,
+  McshStn000009:11897  <br>* McshEngl.SoctSlovenia--SVN.Iso3,  ->  <br>* McshEngl.SoctSlovenia_SVN.Iso3,
+  McshStn000009:11899  <br>* McshEngl.SoctSomalia--SOM.Iso3,  ->  <br>* McshEngl.SoctSomalia_SOM.Iso3,
+  McshStn000009:11903  <br>* McshEngl.SoctSpain--ESP.Iso3,  ->  <br>* McshEngl.SoctSpain_ESP.Iso3,
+  McshStn000009:11905  <br>* McshEngl.SoctSudan--SDN.Iso3,  ->  <br>* McshEngl.SoctSudan_SDN.Iso3,
+  McshStn000009:11906  <br>* McshEngl.SoctSuriname--SUR.Iso3,  ->  <br>* McshEngl.SoctSuriname_SUR.Iso3,
+  McshStn000009:11908  <br>* McshEngl.SoctSwaziland--SWZ.Iso3,  ->  <br>* McshEngl.SoctSwaziland_SWZ.Iso3,
+  McshStn000009:11909  <br>* McshEngl.SoctSweden--SWE.Iso3,  ->  <br>* McshEngl.SoctSweden_SWE.Iso3,
+  McshStn000009:11910  <br>* McshEngl.SoctSwitzerland--CHE.Iso3,  ->  <br>* McshEngl.SoctSwitzerland_CHE.Iso3,
+  McshStn000009:11913  <br>* McshEngl.SoctTajikistan--TJK.Iso3,  ->  <br>* McshEngl.SoctTajikistan_TJK.Iso3,
+  McshStn000009:11915  <br>* McshEngl.SoctThailand--THA.Iso3,  ->  <br>* McshEngl.SoctThailand_THA.Iso3,
+  McshStn000009:11917  <br>* McshEngl.SoctTogo--TGO.Iso3,  ->  <br>* McshEngl.SoctTogo_TGO.Iso3,
+  McshStn000009:11918  <br>* McshEngl.SoctTokelau--TKL.Iso3,  ->  <br>* McshEngl.SoctTokelau_TKL.Iso3,
+  McshStn000009:11919  <br>* McshEngl.SoctTonga--TON.Iso3,  ->  <br>* McshEngl.SoctTonga_TON.Iso3,
+  McshStn000009:11921  <br>* McshEngl.SoctTunisia--TUN.Iso3,  ->  <br>* McshEngl.SoctTunisia_TUN.Iso3,
+  McshStn000009:11922  <br>* McshEngl.SoctTurkey--TUR.Iso3,  ->  <br>* McshEngl.SoctTurkey_TUR.Iso3,
+  McshStn000009:11923  <br>* McshEngl.SoctTurkmenistan--TKM.Iso3,  ->  <br>* McshEngl.SoctTurkmenistan_TKM.Iso3,
+  McshStn000009:11925  <br>* McshEngl.SoctTuvalu--TUV.Iso3,  ->  <br>* McshEngl.SoctTuvalu_TUV.Iso3,
+  McshStn000009:11926  <br>* McshEngl.SoctUganda--UGA.Iso3,  ->  <br>* McshEngl.SoctUganda_UGA.Iso3,
+  McshStn000009:11927  <br>* McshEngl.SoctUkraine--UKR.Iso3,  ->  <br>* McshEngl.SoctUkraine_UKR.Iso3,
+  McshStn000009:11932  <br>* McshEngl.SoctUruguay--URY.Iso3,  ->  <br>* McshEngl.SoctUruguay_URY.Iso3,
+  McshStn000009:11933  <br>* McshEngl.SoctUzbekistan--UZB.Iso3,  ->  <br>* McshEngl.SoctUzbekistan_UZB.Iso3,
+  McshStn000009:11934  <br>* McshEngl.SoctVanuatu--VUT.Iso3,  ->  <br>* McshEngl.SoctVanuatu_VUT.Iso3,
+  McshStn000009:11941  <br>* McshEngl.SoctYemen--YEM.Iso3,  ->  <br>* McshEngl.SoctYemen_YEM.Iso3,
+  McshStn000009:11942  <br>* McshEngl.SoctZambia--ZMB.Iso3,  ->  <br>* McshEngl.SoctZambia_ZMB.Iso3,
+  McshStn000009:11943  <br>* McshEngl.SoctZimbabwe--ZWE.Iso3,  ->  <br>* McshEngl.SoctZimbabwe_ZWE.Iso3,
+  McshStn000020:650  <br>* McshEngl.Euzz_lago.en--English,  ->  <br>* McshEngl.Euzz_lago.en_English,
+  McshStn000020:675  <br>* McshEngl.Euzz_lago.Eng--English--en,  ->  <br>* McshEngl.Euzz_lago.Eng_English_en,
+  McshStn000020:696  <br>* McshEngl.Euzz_lago.Croatian-hrvatski--hr--Hrv,  ->  <br>* McshEngl.Euzz_lago.Croatian_hrvatski__hr_Hrv,
+  McshStn000020:697  <br>* McshEngl.Euzz_lago.Czech-Cestina--cs--Ces,  ->  <br>* McshEngl.Euzz_lago.Czech_Cestina__cs_Ces,
+  McshStn000020:698  <br>* McshEngl.Euzz_lago.Danish-Dansk--da--Dan,  ->  <br>* McshEngl.Euzz_lago.Danish_Dansk__da_Dan,
+  McshStn000020:699  <br>* McshEngl.Euzz_lago.Dutch-Nederlands--nl--Nld,  ->  <br>* McshEngl.Euzz_lago.Dutch_Nederlands__nl_Nld,
+  McshStn000020:700  <br>* McshEngl.Euzz_lago.English--en--Eng,  ->  <br>* McshEngl.Euzz_lago.English_en_Eng,
+  McshStn000020:701  <br>* McshEngl.Euzz_lago.Estonian-Eesti--et--Est,  ->  <br>* McshEngl.Euzz_lago.Estonian_Eesti__et_Est,
+  McshStn000020:702  <br>* McshEngl.Euzz_lago.Finnish-Suomi--fi--Fin,  ->  <br>* McshEngl.Euzz_lago.Finnish_Suomi__fi_Fin,
+  McshStn000020:703  <br>* McshEngl.Euzz_lago.French-Francais--fr--Fra,  ->  <br>* McshEngl.Euzz_lago.French_Francais__fr_Fra,
+  McshStn000020:704  <br>* McshEngl.Euzz_lago.German-Deutsch--de--Deu,  ->  <br>* McshEngl.Euzz_lago.German_Deutsch__de_Deu,
+  McshStn000020:706  <br>* McshEngl.Euzz_lago.Hungarian-Magyar--hu--Hun,  ->  <br>* McshEngl.Euzz_lago.Hungarian_Magyar__hu_Hun,
+  McshStn000020:707  <br>* McshEngl.Euzz_lago.Irish-Gaeilge--ga--Gle,  ->  <br>* McshEngl.Euzz_lago.Irish_Gaeilge__ga_Gle,
+  McshStn000020:708  <br>* McshEngl.Euzz_lago.Italian-Iitaliano--it--Ita,  ->  <br>* McshEngl.Euzz_lago.Italian_Iitaliano__it_Ita,
+  McshStn000020:709  <br>* McshEngl.Euzz_lago.Latvian-Latviesu-valoda--lv--Lav,  ->  <br>* McshEngl.Euzz_lago.Latvian_Latviesu_valoda__lv_Lav,
+  McshStn000020:710  <br>* McshEngl.Euzz_lago.Lithuanian-Lietuviu-kalba--lt--Lit,  ->  <br>* McshEngl.Euzz_lago.Lithuanian_Lietuviu_kalba__lt_Lit,
+  McshStn000020:711  <br>* McshEngl.Euzz_lago.Maltese-Malti--mt--Mlt,  ->  <br>* McshEngl.Euzz_lago.Maltese_Malti__mt_Mlt,
+  McshStn000020:712  <br>* McshEngl.Euzz_lago.Polish-Polski--pl--Pol,  ->  <br>* McshEngl.Euzz_lago.Polish_Polski__pl_Pol,
+  McshStn000020:717  <br>* McshEngl.Euzz_lago.Spanish-Espanol--es--Spa,  ->  <br>* McshEngl.Euzz_lago.Spanish_Espanol__es_Spa,
+  McshStn000020:718  <br>* McshEngl.Euzz_lago.Swidish-svenska--sv--Swe,  ->  <br>* McshEngl.Euzz_lago.Swidish_svenska__sv_Swe,
+  McshStn000024:985  <br>* McshEngl.StndRfc.0101-Notes-on-the-Network-Working-Group-meeting--Urbana--Illinois--February-17--1971,  ->  <br>* McshEngl.StndRfc.0101_Notes_on_the_Network_Working_Group_meeting__Urbana_Illinois__February_17__1971,
+  McshStn000024:6618  <br>* McshEngl.StndRfc.0814-Name--addresses--ports--and-routes,  ->  <br>* McshEngl.StndRfc.0814_Name__addresses_ports__and_routes,
+  McshStn000024:31736  <br>* McshEngl.StndRfc.3718-A-Summary-of-Unicode-Consortium-Procedures--Policies--Stability--and-Public-Access,  ->  <br>* McshEngl.StndRfc.3718_A_Summary_of_Unicode_Consortium_Procedures__Policies_Stability__and_Public_Access,
+  McshStn000024:33218  <br>* McshEngl.StndRfc.3895-Definitions-of-Managed-Objects-for-the-DS1--E1--DS2--and-E2-Interface-Types,  ->  <br>* McshEngl.StndRfc.3895_Definitions_of_Managed_Objects_for_the_DS1__E1_DS2__and_E2_Interface_Types,
+  McshStn000024:37050  <br>* McshEngl.StndRfc.4355-IANA-Registration-for-Enumservices-email--fax--mms--ems--and-sms,  ->  <br>* McshEngl.StndRfc.4355_IANA_Registration_for_Enumservices_email__fax_mms_ems__and_sms,
+  McshStn000024:40140  <br>* McshEngl.StndRfc.4727-Experimental-Values-In-IPv4--IPv6--ICMPv4--ICMPv6--UDP--and-TCP-Headers,  ->  <br>* McshEngl.StndRfc.4727_Experimental_Values_In_IPv4__IPv6_ICMPv4_ICMPv6_UDP__and_TCP_Headers,
+  McshStn000024:40783  <br>* McshEngl.StndRfc.4805-Definitions-of-Managed-Objects-for-the-DS1--J1--E1--DS2--and-E2-Interface-Types,  ->  <br>* McshEngl.StndRfc.4805_Definitions_of_Managed_Objects_for_the_DS1__J1_E1_DS2__and_E2_Interface_Types,
+  McshStn000024:68123  <br>* McshEngl.StndRfc.8093-Deprecation-of-BGP-Path-Attribute-Values-30--31--129--241--242--and-243,  ->  <br>* McshEngl.StndRfc.8093_Deprecation_of_BGP_Path_Attribute_Values_30__31_129_241_242__and_243,
+  McshStn000024:70779  <br>* McshEngl.StndRfc.8410-Algorithm-Identifiers-for-Ed25519--Ed448--X25519--and-X448-for-Use-in-the-Internet-X.509-Public-Key-Infrastructure,  ->  <br>* McshEngl.StndRfc.8410_Algorithm_Identifiers_for_Ed25519__Ed448_X25519__and_X448_for_Use_in_the_Internet_X.509_Public_Key_Infrastructure,
+  McshStn000038:88  <br>* McshEngl.SoctBulgaria--BG.Iso2!⇒SoctBgra,  ->  <br>* McshEngl.SoctBulgaria_BG.Iso2!⇒SoctBgra,
+  McshStn000038:89  <br>* McshEngl.SoctBulgaria--BGR.Iso3!⇒SoctBgra,  ->  <br>* McshEngl.SoctBulgaria_BGR.Iso3!⇒SoctBgra,
+  McshStn000048:80  <br>* McshEngl.SoctJapan--JP.Iso2!⇒SoctJpna,  ->  <br>* McshEngl.SoctJapan_JP.Iso2!⇒SoctJpna,
+  McshStn000048:81  <br>* McshEngl.SoctJapan--JPN.Iso3!⇒SoctJpna,  ->  <br>* McshEngl.SoctJapan_JPN.Iso3!⇒SoctJpna,
+  McshTchInf000003:1267  <br>* McshEngl.operating-system.no--computer!⇒cmprOsNo,  ->  <br>* McshEngl.operating_system.no_computer!⇒cmprOsNo,
+  McshTchInf000012:1584  <br>* McshEngl.assert--Node.js-core-function-module,  ->  <br>* McshEngl.assert_Node.js_core_function_module,
+  McshTchInf000012:1617  <br>* McshEngl.events--Node.js-core-function-module!⇒JsndmcCoreFEvents,  ->  <br>* McshEngl.events_Node.js_core_function_module!⇒JsndmcCoreFEvents,
+  McshTchInf000012:1779  <br>* McshEngl.stream--Node.js-core-function-module!⇒JsndmcCoreFStream,  ->  <br>* McshEngl.stream_Node.js_core_function_module!⇒JsndmcCoreFStream,
+  McshTchInf000012:1916  <br>* McshEngl.buffer--Node.js-core-object-module,  ->  <br>* McshEngl.buffer_Node.js_core_object_module,
+  McshTchInf000012:1975  <br>* McshEngl.cluster--Node.js-core-object-module,  ->  <br>* McshEngl.cluster_Node.js_core_object_module,
+  McshTchInf000012:1997  <br>* McshEngl.crypto--Node.js-core-object-module,  ->  <br>* McshEngl.crypto_Node.js_core_object_module,
+  McshTchInf000012:2030  <br>* McshEngl.dns--Node.js-core-object-module,  ->  <br>* McshEngl.dns_Node.js_core_object_module,
+  McshTchInf000012:2109  <br>* McshEngl.fs--Node.js-core-object-module,  ->  <br>* McshEngl.fs_Node.js_core_object_module,
+  McshTchInf000012:2227  <br>* McshEngl.http--Node.js-core-object-module!⇒JsndmcCoreHttp,  ->  <br>* McshEngl.http_Node.js_core_object_module!⇒JsndmcCoreHttp,
+  McshTchInf000012:2617  <br>* McshEngl.https--Node.js-core-object-module,  ->  <br>* McshEngl.https_Node.js_core_object_module,
+  McshTchInf000012:2683  <br>* McshEngl.net--Node.js-core-object-module,  ->  <br>* McshEngl.net_Node.js_core_object_module,
+  McshTchInf000012:2733  <br>* McshEngl.os--Node.js-core-object-module,  ->  <br>* McshEngl.os_Node.js_core_object_module,
+  McshTchInf000012:2781  <br>* McshEngl.path--Node.js-core-object-module,  ->  <br>* McshEngl.path_Node.js_core_object_module,
+  McshTchInf000012:2824  <br>* McshEngl.readline--Node.js-core-object-module,  ->  <br>* McshEngl.readline_Node.js_core_object_module,
+  McshTchInf000012:2894  <br>* McshEngl.tls--Node.js-core-object-module,  ->  <br>* McshEngl.tls_Node.js_core_object_module,
+  McshTchInf000012:2922  <br>* McshEngl.url--Node.js-core-object-module,  ->  <br>* McshEngl.url_Node.js_core_object_module,
+  McshTchInf000012:2961  <br>* McshEngl.util--Node.js-core-object-module!⇒JsndmcCoreUtil,  ->  <br>* McshEngl.util_Node.js_core_object_module!⇒JsndmcCoreUtil,
+  McshTchInf000012:3033  <br>* McshEngl.vm--Node.js-core-object-module,  ->  <br>* McshEngl.vm_Node.js_core_object_module,
+  McshTchInf000012:3061  <br>* McshEngl.zlib--Node.js-core-object-module,  ->  <br>* McshEngl.zlib_Node.js_core_object_module,
+  McshTchInf000016:70  <br>* McshEngl.decentralized-crypto-chain.block--network!⇒AgntBkcn, {2018-01-21}  ->  <br>* McshEngl.decentralized_crypto_chain.block_network!⇒AgntBkcn, {2018-01-21}
+  McshTchInf000030:1953  <br>* McshEngl.Rust_lago'.46--opr,  ->  <br>* McshEngl.Rust_lago'.46_opr,
+  McshTchInf000030:1970  <br>* McshEngl.Rust_lago'..4646--opr,  ->  <br>* McshEngl.Rust_lago'..4646_opr,
+  McshTchInf000030:2000  <br>* McshEngl.Rust_lago'...464646--opr,  ->  <br>* McshEngl.Rust_lago'...464646_opr,
+  McshTchPrgm000003:2264  <br>* McshEngl.Atomedtr'intentions--package,  ->  <br>* McshEngl.Atomedtr'intentions_package,
+  McshTchPrgm000003:2283  <br>* McshEngl.Atomedtr'linter--package,  ->  <br>* McshEngl.Atomedtr'linter_package,
+
+=== TARGET (0) — !⇒X targets renamed
+
+
+=== REF (11) — "* X!@file#id" / "* X," list references renamed
+  McshCor000002:1170  <br>* division.part--Mcsattr!@McshCor000002#idMcsattPrtdvn,  ->  <br>* division.part_Mcsattr!@McshCor000002#idMcsattPrtdvn,
+  McshCor000002:1478  <br>* division.part--Mcsattr!@McshCor000002#idMcsattPrtdvn,  ->  <br>* division.part_Mcsattr!@McshCor000002#idMcsattPrtdvn,
+  McshCor000002:1479  <br>* division.part--Mcsattr!@McshCor000002#idMcsattPrtdvn,  ->  <br>* division.part_Mcsattr!@McshCor000002#idMcsattPrtdvn,
+  McshStn000009:11209  <br>* SoctBulgaria--BG.Iso2,  ->  <br>* SoctBulgaria_BG.Iso2,
+  McshStn000009:11286  <br>* SoctJapan--JP.Iso2,  ->  <br>* SoctJapan_JP.Iso2,
+  McshStn000009:11729  <br>* SoctBulgaria--BGR.Iso3,  ->  <br>* SoctBulgaria_BGR.Iso3,
+  McshStn000009:11806  <br>* SoctJapan--JPN.Iso3,  ->  <br>* SoctJapan_JPN.Iso3,
+  McshTchInf000010:2229  <br>* stream--Node.js-core-function-module!@McshTchInf000012#idLJsndmcfStream,  ->  <br>* stream_Node.js_core_function_module!@McshTchInf000012#idLJsndmcfStream,
+  McshTchInf000010:2230  <br>* events--Node.js-core-function-module!@McshTchInf000012#idLJsndmcfEvents,  ->  <br>* events_Node.js_core_function_module!@McshTchInf000012#idLJsndmcfEvents,
+  McshTchInf000010:4319  <br>* util--Node.js-core-object-module!@McshTchInf000012#idLJsndmcoUtil,  ->  <br>* util_Node.js_core_object_module!@McshTchInf000012#idLJsndmcoUtil,
+  McshTchInf000010:4320  <br>* http--Node.js-core-object-module!@McshTchInf000012#idLJsndmcoHttp,  ->  <br>* http_Node.js_core_object_module!@McshTchInf000012#idLJsndmcoHttp,
+
+=== TITLE (0) — section titles renamed
+
+
+=== OTHER (0) — other
+
+
