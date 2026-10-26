@@ -1771,12 +1771,13 @@ let fContainersInsert = function () {
       if (oEltAIn.getAttribute('href') === sIdScn) {
         oTreeUl.fTreeUlExpandParent(oEltAIn)
         fTocTreeHighlightNode(oEltCnrMainInfoDiv, oEltAIn)
-        if (oEltAIn.scrollIntoViewIfNeeded) {
-          oEltAIn.scrollIntoViewIfNeeded(true)
-        } else {
-          oEltAIn.scrollIntoView(false)
-        }
-        document.getElementById('idCnrMainInfoDiv').scrollLeft = 0
+        // center the-highlighted title vertically in the-scrolling toc-panel
+        const
+          oCnrRect = oEltCnrMainInfoDiv.getBoundingClientRect(),
+          oElmRect = oEltAIn.getBoundingClientRect()
+        oEltCnrMainInfoDiv.scrollTop += (oElmRect.top - oCnrRect.top)
+          - (oEltCnrMainInfoDiv.clientHeight / 2) + (oElmRect.height / 2)
+        oEltCnrMainInfoDiv.scrollLeft = 0
       }
     })
 
