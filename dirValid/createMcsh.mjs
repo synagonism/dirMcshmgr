@@ -71,12 +71,16 @@
  *   --mainname: the-fix of MvrlMnnm01: a-main-name (after "!⇒") with "-" gets "_",
  *   in every "!⇒X" and in its main-name-line; the-old form stays as a-synonym X!⇒X'.
  *
+ *   --srtr: the-fix of MvrlId13: a-structure-concept's id gets the-suffix srtr
+ *   (idXsrtrF → idXsrtr, idXstcr → idXsrtr, idX → idXsrtr), with its own ids that
+ *   start with it, and every link to them in every .last.html file (json index files are NOT touched).
+ *
  * INPUT: the-path of a-dirMcsh-worldview.
  * OUTPUT: dry-run by default: what it would do. With --fix it writes the-files,
- *   after it copies each one into dirValid/createMcsh-backup/<time>/.
+ *   without backup: the-worldview is in git.
  *   The-report goes to dirValid/createMcsh.txt.
  * RUN:
- *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname] [--fix]
+ *   node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr] [--fix]
  */
 
 import moFs from 'fs'
@@ -90,6 +94,9 @@ import { rHeadArticle } from './structuralHitp.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-13-0.2026-10-24: --fix writes NO backup (git is the-backup)',
+    'createMcsh.mjs.0-12-0.2026-10-24: --srtr no longer touches json index files',
+    'createMcsh.mjs.0-11-0.2026-10-24: --srtr, the-fix of MvrlId13 srtr_structure_suffix',
     'createMcsh.mjs.0-10-0.2026-10-24: --mainname, the-fix of MvrlMnnm01 no-hyphen',
     'createMcsh.mjs.0-9-0.2026-10-16: createMcsh.txt per kind, notes indented for folding',
     'createMcsh.mjs.0-8-0.2026-10-15: --nest, the-obvious Hvrw08 nesting errors',
@@ -115,9 +122,11 @@ const
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
     MAINNAME: 'a-name-line whose main-name got underscores (MvrlMnnm01)',
-    ADD:      "the-old main-name kept as a-synonym: X!⇒X'"
+    ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
+    IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrlId13), with its own ids',
+    LINK:     'a-line whose ids or links to a-renamed id changed'
   },
-  // the-dir of this script: the-report and the-backup go next to IT
+  // the-dir of this script: the-report goes next to IT
   sDirScript = moPath.dirname(fileURLToPath(import.meta.url)),
   // the-lines of a-creation-para
   rParaOpen  = /^( *)<p id="([^"]+)">\{([0-9-]+)\}::\s*$/,
@@ -170,14 +179,14 @@ function fFindDateLocal(bTimeIn = false) {
  * DOING: it finds the-files *.last.html under a-dir, not in node_modules|.git|backups.
  * OUTPUT: [sPathFile]
  */
-function fFindFileAll(sDirIn) {
+function fFindFileAll(sDirIn, sEndIn = '.last.html') {
   const aPath = [];
   for (const oEnt of moFs.readdirSync(sDirIn, { withFileTypes: true })) {
     const sPath = moPath.join(sDirIn, oEnt.name);
     if (oEnt.isDirectory()) {
       if (['node_modules', '.git'].includes(oEnt.name) || oEnt.name.startsWith('createMcsh-backup')) continue;
-      aPath.push(...fFindFileAll(sPath));
-    } else if (oEnt.name.endsWith('.last.html')) {
+      aPath.push(...fFindFileAll(sPath, sEndIn));
+    } else if (oEnt.name.endsWith(sEndIn)) {
       aPath.push(sPath);
     }
   }
@@ -836,6 +845,93 @@ function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
 }
 
 /**
+ * OUTPUT: the-new id of a-structure-concept (MvrlId13), ending in "srtr":
+ *   idBdyHmnsrtrF → idBdyHmnsrtr, idSys002stcr | strr | sctr | structure → idSys002srtr,
+ *   anything else gets srtr appended: idGlndHmnatt006 → idGlndHmnatt006srtr.
+ */
+function fFindIdSrtr(sIdIn) {
+  if (/srtrF$/.test(sIdIn)) return sIdIn.slice(0, -1);
+  if (/(strrF|strr|stcr|sctr|[Ss]tructure)$/.test(sIdIn)) {
+    return sIdIn.replace(/(strrF|strr|stcr|sctr|[Ss]tructure)$/, 'srtr');
+  }
+  return sIdIn + 'srtr';
+}
+
+/**
+ * DOING: --srtr mode, the-fix of MvrlId13: it plans the-renames of ONE file's
+ *   structure-concepts. A-section's own ids that START with its id (its heading
+ *   ...H1, ...dsn, ...nam, a-child ...gstr) get the-new start too.
+ *   It SKIPS a-section whose id is not unique, whose <section> is not found, or
+ *   whose new ids are taken.
+ * INPUT: aIdSectIn: the-section-ids the-validator reports as MvrlId13.
+ * OUTPUT: { oMapId: old → new, aoNote }
+ */
+function fPlanSrtrMap(sRawIn, sNameShortIn, aIdSectIn) {
+  const aLine = sRawIn.split('\n');
+  const oSetIdFile = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
+  const oMapId = new Map();
+  const aoNote = [];
+  for (const sIdSect of aIdSectIn) {
+    const sIdNew = fFindIdSrtr(sIdSect);
+    const nSect = aLine.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdSect);
+    const sLoc = `${sNameShortIn}:${nSect + 1}`;
+    const fSkip = sWhy => aoNote.push(`SKIP   ${sLoc}  #${sIdSect}: ${sWhy}`);
+    if (fCount(sRawIn, `id="${sIdSect}"`) !== 1) { fSkip('its id is not unique'); continue; }
+    if (nSect === -1) { fSkip('no <section id> with it'); continue; }
+    // the-section's lines: to its own </section>
+    let nDepth = 0, nEnd = nSect;
+    for (let nL = nSect; nL < aLine.length; nL++) {
+      nDepth += (aLine[nL].match(/<section\b/g) ?? []).length - (aLine[nL].match(/<\/section>/g) ?? []).length;
+      if (nDepth <= 0) { nEnd = nL; break; }
+    }
+    const aIdOwn = [...new Set(aLine.slice(nSect, nEnd + 1).join('\n').match(/\bid="[^"]+"/g)
+      .map(sM => sM.slice(4, -1)).filter(sId => sId.startsWith(sIdSect)))];
+    const aoPair = aIdOwn.map(sId => [sId, sIdNew + sId.slice(sIdSect.length)]);
+    const oPairTaken = aoPair.find(([, sNew]) => oSetIdFile.has(sNew) || [...oMapId.values()].includes(sNew));
+    if (oPairTaken) { fSkip(`the-new id ${oPairTaken[1]} is taken`); continue; }
+    if (aoPair.some(([sOld]) => fCount(sRawIn, `id="${sOld}"`) !== 1)) { fSkip('one of its ids is not unique'); continue; }
+    for (const [sOld, sNew] of aoPair) oMapId.set(sOld, sNew);
+    aoNote.push(`IDSRTR ${sLoc}  #${sIdSect} -> #${sIdNew}` +
+      (aoPair.length > 1 ? `  (+${aoPair.length - 1} own ids: ${aoPair.slice(1).map(([sOld]) => sOld.slice(sIdSect.length)).join(' ')})` : ''));
+  }
+  return { oMapId, aoNote };
+}
+
+/**
+ * DOING: --srtr mode: it applies the-renames to ONE .last.html file: in the-file
+ *   of the-ids their id="..." and href="#...", in every file the-links <file>#id".
+ * INPUT: ooMapIdIn: the-file-name (McshHlth000002.last.html) → its Map old → new.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanSrtrApply(sRawIn, sNameShortIn, sNameFileIn, ooMapIdIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMapOwn = ooMapIdIn[sNameFileIn];
+  for (let nL = 0; nL < aLine.length; nL++) {
+    let sLine = aLine[nL];
+    if (!sLine.includes('id') && !sLine.includes('#')) continue;
+    if (oMapOwn) {
+      sLine = sLine.replace(/\b(id|href)="(#?)([^"#]+)"/g, (sAll, sAttr, sHash, sId) =>
+        (sAttr === 'id' || sHash) && oMapOwn.has(sId) ? `${sAttr}="${sHash}${oMapOwn.get(sId)}"` : sAll);
+    }
+    for (const sNameFile of Object.keys(ooMapIdIn)) {
+      if (!sLine.includes(sNameFile + '#')) continue;
+      const oMap = ooMapIdIn[sNameFile];
+      sLine = sLine.split(sNameFile + '#').map((sPart, nI) => {
+        if (nI === 0) return sPart;
+        const aId = sPart.match(/^([^"#\s]+)"/);
+        return aId && oMap.has(aId[1]) ? oMap.get(aId[1]) + sPart.slice(aId[1].length) : sPart;
+      }).join(sNameFile + '#');
+    }
+    if (sLine === aLine[nL]) continue;
+    aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+    aoNote.push(`LINK   ${sNameShortIn}:${nL + 1}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -864,15 +960,16 @@ async function fMain() {
   const bHeadGap = aArg.includes('--headgap');
   const bNest = aArg.includes('--nest');
   const bMainName = aArg.includes('--mainname');
-  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest, bMainName].filter(Boolean).length > 1) {
-    console.error('--missing, --overview, --undated, --nameid, --headgap, --nest and --mainname are separate runs: give one of them');
+  const bSrtr = aArg.includes('--srtr');
+  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest, bMainName, bSrtr].filter(Boolean).length > 1) {
+    console.error('--missing, --overview, --undated, --nameid, --headgap, --nest, --mainname and --srtr are separate runs: give one of them');
     process.exit(1);
   }
   if (!sNameDir) {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every Mvrw01-section');
@@ -884,22 +981,17 @@ async function fMain() {
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
     console.log('  --mainname   MvrlMnnm01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
+    console.log('  --srtr       MvrlId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
-    console.log('  OUTPUT: dirValid/createMcsh.txt; with --fix also dirValid/createMcsh-backup/<time>/');
+    console.log('  OUTPUT: dirValid/createMcsh.txt');
     process.exit(1);
   }
 
-  // a-NEW backup-folder per run: a-second run must never overwrite the-originals of a-first
-  const sTime = fFindDateLocal(true);
-  let sDirBackup = moPath.join(sDirScript, 'createMcsh-backup', sTime);
-  for (let nN = 2; moFs.existsSync(sDirBackup); nN++) {
-    sDirBackup = moPath.join(sDirScript, 'createMcsh-backup', `${sTime}-${nN}`);
-  }
   const aLineOut = [];
   const oCount = { nFile: 0, nBad: 0 };
 
   /**
-   * DOING: it counts the-notes of a-file, checks its new text, backs it up and writes it.
+   * DOING: it counts the-notes of a-file, checks its new text and writes it.
    */
   function fWriteFile(sPathFileIn, sRawIn, sNameShortIn, oPlanIn) {
     aLineOut.push(...oPlanIn.aoNote);
@@ -915,18 +1007,41 @@ async function fMain() {
       return;
     }
     oCount.nFile++;
-    if (bFix) {
-      // the-backup first, then the-file
-      const sPathBackup = moPath.join(sDirBackup, moPath.relative(sNameDir, sPathFileIn));
-      moFs.mkdirSync(moPath.dirname(sPathBackup), { recursive: true });
-      // COPYFILE_EXCL: it fails rather than overwrite a-backup
-      moFs.copyFileSync(sPathFileIn, sPathBackup, moFs.constants.COPYFILE_EXCL);
-      moFs.writeFileSync(sPathFileIn, oPlanIn.sRawNew);
-    }
+    if (bFix) moFs.writeFileSync(sPathFileIn, oPlanIn.sRawNew);
   }
 
   let sCount;
-  if (bMainName) {
+  if (bSrtr) {
+    // the-structure-concepts are what the-VALIDATOR says: MvrlId13
+    const aoFileHitp = fReadFileAllHitp(sNameDir).filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+    const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
+      fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
+    const ooIdSect = {};
+    for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+      if (oIssue.sCode === 'MvrlId13') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
+    }
+    // 1. the-renames per file
+    const ooMapId = {};
+    const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
+    for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
+      const sRaw = moFs.readFileSync(oPathFile[sNameFile], 'utf8');
+      const oPlan = fPlanSrtrMap(sRaw, sNameFile.replace(/\.last\.html$/, ''), aIdSect);
+      for (const sNote of oPlan.aoNote) {
+        aLineOut.push(sNote);
+        oCount[sNote.split(' ')[0]] = (oCount[sNote.split(' ')[0]] ?? 0) + 1;
+      }
+      if (oPlan.oMapId.size > 0) ooMapId[sNameFile] = oPlan.oMapId;
+    }
+    // 2. the-ids and every link to them, in every .last.html file; the-json index files (dirNamidx, dirNamurl) are NEVER touched: they are generated
+    for (const sPath of fFindFileAll(sNameDir)) {
+      const sRaw = moFs.readFileSync(sPath, 'utf8');
+      const sNameFile = moPath.basename(sPath);
+      const sNameShort = sNameFile.endsWith('.last.html')
+        ? sNameFile.replace(/\.last\.html$/, '') : moPath.relative(sNameDir, sPath).split(moPath.sep).join('/');
+      fWriteFile(sPath, sRaw, sNameShort, fPlanSrtrApply(sRaw, sNameShort, sNameFile, ooMapId));
+    }
+    sCount = `${oCount.IDSRTR ?? 0} structure-ids renamed · ${oCount.LINK ?? 0} lines changed`;
+  } else if (bMainName) {
     // all Mcsh-files read once: the-main-names to change, and every name for the-collisions
     const aPath = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
     const aRaw = aPath.map(sPath => moFs.readFileSync(sPath, 'utf8'));
@@ -1047,12 +1162,12 @@ async function fMain() {
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  createMcsh${bMissing ? ' --missing' : ''}${bOverview ? ' --overview' : ''}` +
-      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''}${bMainName ? ' --mainname' : ''} ` +
+      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''}${bMainName ? ' --mainname' : ''}${bSrtr ? ' --srtr' : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oCount.nFile} files ${bFix ? 'written' : 'to write'} · ${sCount} · ` +
       `${oCount.SKIP ?? 0} skipped` + (oCount.nBad ? ` · ${oCount.nBad} BAD` : ''),
-    bFix ? `  backup: ${sDirBackup}` : '  nothing written: add --fix to write',
+    bFix ? '  written, no backup: see git diff' : '  nothing written: add --fix to write',
     ''
   ];
   // in the-report: one "=== KIND (count) — description" heading per kind, its notes

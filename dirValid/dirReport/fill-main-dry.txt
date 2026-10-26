@@ -1,0 +1,20 @@
+FILL MAIN-NAME (plain names -> !⇒M) DRY — 2026-10-25
+names filled: 17 in 10 name:: paragraphs, 7 files | paragraphs with 2+ !⇒ targets and plain names (not changed): 1
+
+=== NOT CHANGED: 2+ TARGETS (1)
+
+=== NOT CHANGED: TARGET HAS NO OWN LINE (5)
+
+=== FILLED (17)
+- report concepts without mainname to use in fix MvrlGstr01 and MvrlGstr01
+
+  McshLag000009:1241  McshEngl.[æ]-/a1/-(a-front)  ->  !⇒/a1/_(a_front)_[æ]
+  McshLag000009:1243  McshEngl.IPA.æ-/a1/-(a-front)  ->  !⇒/a1/_(a_front)_[æ]
+  McshLag000009:1244  McshEngl.IPA.230-æ-/a1/-(a-front)  ->  !⇒/a1/_(a_front)_[æ]
+  McshLag000009:1245  McshEngl.phoneme./a1/-(front)  ->  !⇒/a1/_(a_front)_[æ]
+  McshLag000009:1248  McshEngl.VowlPhnm./a1/-(front)  ->  !⇒/a1/_(a_front)_[æ]
+  McshLag000009:3376  McshEngl.ConsPhnm./kk/-(ki)-cute  ->  !⇒/kk/_(ki)_cute
+  McshLag000009:3377  McshEngl.phoneme./kk/-(ki)-cute  ->  !⇒/kk/_(ki)_cute
+  McshLag000009:3394  McshEngl.ConsPhnm./gg/-(gi)-[ɟ]  ->  !⇒/gg/_(gi)_[ɟ]
+    McshEngl.phoneme./gg/-(gi)-[ɟ]  ->  !⇒/gg/_(gi)_[ɟ]
+  

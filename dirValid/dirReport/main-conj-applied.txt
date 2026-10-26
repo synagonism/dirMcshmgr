@@ -1,0 +1,337 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 21 | renamed: 21 | name:: paragraphs: 21 | tree/reference lines: 90 | old names kept (M!⇒N added): 21 | files: 20
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (20)
+  McshLag000007         53
+  McshLag000010         16
+  McshLag000012          9
+  McshLag000027         11
+  McshLag000033         12
+  McshLag000034         13
+  McshLag000035         14
+  McshLag000036         14
+  McshLag000037         14
+  McshLag000038         14
+  McshLag000039         14
+  McshLag000040         14
+  McshLag000041         14
+  McshLag000042         14
+  McshLag000043         14
+  McshStn000034          7
+  McshStn000035          6
+  McshStn000038          5
+  McshStn000048          6
+  McshStn000050          4
+
+=== McshLag000007 (53)
+  McshLag000007:25278  <br>* McshEngl.Hmnm_conj_form,  ->  <br>* McshEngl.Hmnmconj_form,
+  McshLag000007:25279  <br>* McshEngl.Conj-form!⇒Hmnm_conj_form,  ->  <br>* McshEngl.Conj-form!⇒Hmnmconj_form,
+  McshLag000007:25280  <br>* McshEngl.auxiliaryNo-partA-of-Conj!⇒Hmnm_conj_form,  ->  <br>* McshEngl.auxiliaryNo-partA-of-Conj!⇒Hmnmconj_form,
+  McshLag000007:25281  <br>* McshEngl.Conj'partA!⇒Hmnm_conj_form,  ->  <br>* McshEngl.Conj'partA!⇒Hmnmconj_form,
+  McshLag000007:25282  <br>* McshEngl.content-part-of-conjunction!⇒Hmnm_conj_form,  ->  <br>* McshEngl.content-part-of-conjunction!⇒Hmnmconj_form,
+  McshLag000007:25283  <br>* McshEngl.Conj'form!⇒Hmnm_conj_form,  ->  <br>* McshEngl.Conj'form!⇒Hmnmconj_form,
+  McshLag000007:25279  ADD  McshEngl.Hmnm_conj_form!⇒Hmnmconj_form,
+  McshLag000007:25124  <br>* McshEngl.conjunction-of-lagoHmnm!⇒Conj,  ->  <br>* McshEngl.conjunction-of-lagoHmnm!⇒Hmnmconj,
+  McshLag000007:25125  <br>* McshEngl.Conj!=conjunction-of-lagoHmnm, {2026-07-09}  ->  <br>* McshEngl.Hmnmconj!=conjunction-of-lagoHmnm, {2026-07-09}
+  McshLag000007:25126  <br>* McshEngl.Conjname!⇒Conj,  ->  <br>* McshEngl.Conjname!⇒Hmnmconj,
+  McshLag000007:25127  <br>* McshEngl.Conj.lagoElln!=σύνδεσμος!ο,  ->  <br>* McshEngl.Hmnmconj.lagoElln!=σύνδεσμος!ο,
+  McshLag000007:25128  <br>* McshEngl.Conj.Espo_lago!=konjunkcio!⇒Conj,  ->  <br>* McshEngl.Conj.Espo_lago!=konjunkcio!⇒Hmnmconj,
+  McshLag000007:25129  <br>* McshEngl.Conj.lagoTurk!=bağlaç/baalaC/,  ->  <br>* McshEngl.Hmnmconj.lagoTurk!=bağlaç/baalaC/,
+  McshLag000007:25130  <br>* McshEngl.Conj.lagoZhon!=连词-liáncí!~connection-word,  ->  <br>* McshEngl.Hmnmconj.lagoZhon!=连词-liáncí!~connection-word,
+  McshLag000007:25131  <br>* McshEngl.Hmnm_lago'conjunction!⇒Conj,  ->  <br>* McshEngl.Hmnm_lago'conjunction!⇒Hmnmconj,
+  McshLag000007:25132  <br>* McshEngl.Hmnm_lago-conjunction!⇒Conj,  ->  <br>* McshEngl.Hmnm_lago-conjunction!⇒Hmnmconj,
+  McshLag000007:25133  <br>* McshEngl.Hmnmconj!⇒Conj,  ->  <br>* McshEngl.Hmnmconj!⇒Hmnmconj,
+  McshLag000007:25134  <br>* McshEngl.cnjHmnm!⇒Conj,  ->  <br>* McshEngl.cnjHmnm!⇒Hmnmconj,
+  McshLag000007:25135  <br>* McshEngl.Conj-name!⇒Conj,  ->  <br>* McshEngl.Conj-name!⇒Hmnmconj,
+  McshLag000007:25136  <br>* McshEngl.ConjHmnm!⇒Conj, {2021-05-29}  ->  <br>* McshEngl.ConjHmnm!⇒Hmnmconj, {2021-05-29}
+  McshLag000007:25137  <br>* McshEngl.conjo!⇒Conj, {2021-06-19}  ->  <br>* McshEngl.conjo!⇒Hmnmconj, {2021-06-19}
+  McshLag000007:25138  <br>* McshEngl.conjunction!⇒Conj,  ->  <br>* McshEngl.conjunction!⇒Hmnmconj,
+  McshLag000007:25139  <br>* McshEngl.conjunction-term!⇒Conj,  ->  <br>* McshEngl.conjunction-term!⇒Hmnmconj,
+  McshLag000007:25140  <br>* McshEngl.conjunctive!⇒Conj,  ->  <br>* McshEngl.conjunctive!⇒Hmnmconj,
+  McshLag000007:25141  <br>* McshEngl.connective!⇒Conj,  ->  <br>* McshEngl.connective!⇒Hmnmconj,
+  McshLag000007:25142  <br>* McshEngl.linker!⇒Conj,  ->  <br>* McshEngl.linker!⇒Hmnmconj,
+  McshLag000007:25143  <br>* McshEngl.linking-word!⇒Conj,  ->  <br>* McshEngl.linking-word!⇒Hmnmconj,
+  McshLag000007:25144  <br>* McshEngl.logo-Conj!⇒Conj,  ->  <br>* McshEngl.logo-Conj!⇒Hmnmconj,
+  McshLag000007:25145  <br>* McshEngl.logo-conjunction!⇒Conj,  ->  <br>* McshEngl.logo-conjunction!⇒Hmnmconj,
+  McshLag000007:25146  <br>* McshEngl.name.conjunction!⇒Conj,  ->  <br>* McshEngl.name.conjunction!⇒Hmnmconj,
+  McshLag000007:25147  <br>* McshEngl.nameConj!⇒Conj, {2020-06-12}  ->  <br>* McshEngl.nameConj!⇒Hmnmconj, {2020-06-12}
+  McshLag000007:25148  <br>* McshEngl.relational-word!⇒Conj,  ->  <br>* McshEngl.relational-word!⇒Hmnmconj,
+  McshLag000007:25149  <br>* McshEngl.relator!⇒Conj,  ->  <br>* McshEngl.relator!⇒Hmnmconj,
+  McshLag000007:25150  <br>* McshEngl.termSemu.conjunction!⇒Conj,  ->  <br>* McshEngl.termSemu.conjunction!⇒Hmnmconj,
+  McshLag000007:25151  <br>* McshEngl.HmnmviewLogo'Conj-name!⇒Conj,  ->  <br>* McshEngl.HmnmviewLogo'Conj-name!⇒Hmnmconj,
+  McshLag000007:25158  <br>* McshEspo.konjunkcio!=Conj,  ->  <br>* McshEspo.konjunkcio!=Hmnmconj,
+  McshLag000007:25160  <br>* McshDeut.Konjunktion!~die!=Conj,  ->  <br>* McshDeut.Konjunktion!~die!=Hmnmconj,
+  McshLag000007:25162  <br>* McshElln.συνδ!=Conj,  ->  <br>* McshElln.συνδ!=Hmnmconj,
+  McshLag000007:25163  <br>* McshElln.σύνδεσμος!ο!=Conj,  ->  <br>* McshElln.σύνδεσμος!ο!=Hmnmconj,
+  McshLag000007:25165  <br>* McshItln.congiunzione!la!=Conj,  ->  <br>* McshItln.congiunzione!la!=Hmnmconj,
+  McshLag000007:25167  <br>* McshTurk.bağlaç/baalaC/!=Conj,  ->  <br>* McshTurk.bağlaç/baalaC/!=Hmnmconj,
+  McshLag000007:25126  ADD  McshEngl.Conj!⇒Hmnmconj,
+  McshLag000007:18946  <br>* Conj!@McshLag000007#idLHmnmconj,  ->  <br>* Hmnmconj!@McshLag000007#idLHmnmconj,
+  McshLag000007:19396  <br>* Conj!@McshLag000007#idLHmnmconj,  ->  <br>* Hmnmconj!@McshLag000007#idLHmnmconj,
+  McshLag000007:19444  <br>* Conj!@McshLag000007#idLHmnmconj,  ->  <br>* Hmnmconj!@McshLag000007#idLHmnmconj,
+  McshLag000007:19677  <br>* Conj!@McshLag000007#idLHmnmconj,  ->  <br>* Hmnmconj!@McshLag000007#idLHmnmconj,
+  McshLag000007:25737  <h3 id="idLHmnmconjgstrH3">GENERIC-SPECIFIC-TREE of Conj  ->  <h3 id="idLHmnmconjgstrH3">GENERIC-SPECIFIC-TREE of Hmnmconj
+  McshLag000007:25743  <br>* McshEngl.Conj'generic-specific-tree,  ->  <br>* McshEngl.Hmnmconj'generic-specific-tree,
+  McshLag000007:25744  <br>* McshEngl.Conj'specific-generic-tree,  ->  <br>* McshEngl.Hmnmconj'specific-generic-tree,
+  McshLag000007:25747  <br>* McshEngl.Conj_Gntr,  ->  <br>* McshEngl.Hmnmconj_Gntr,
+  McshLag000007:25756  <br>* McshEngl.Conj.specific,  ->  <br>* McshEngl.Hmnmconj.specific,
+  McshLag000007:25757  <br>* McshEngl.Conj_Sptr,  ->  <br>* McshEngl.Hmnmconj_Sptr,
+  McshLag000007:26018  <br>* Conj_Gntr,  ->  <br>* Hmnmconj_Gntr,
+
+=== McshLag000010 (16)
+  McshLag000010:5509  <br>* McshEngl.Sngu_conj,  ->  <br>* McshEngl.Snguconj,
+  McshLag000010:5510  <br>* McshEngl.sinagu-conjunction!⇒Sngu_conj,  ->  <br>* McshEngl.sinagu-conjunction!⇒Snguconj,
+  McshLag000010:5511  <br>* McshEngl.Sngu_name.conjunction!⇒Sngu_conj,  ->  <br>* McshEngl.Sngu_name.conjunction!⇒Snguconj,
+  McshLag000010:5512  <br>* McshEngl.lagoSinagu-conjunction!⇒Sngu_conj,  ->  <br>* McshEngl.lagoSinagu-conjunction!⇒Snguconj,
+  McshLag000010:5513  <br>* McshEngl.ConjHmnm.sinagu!⇒Sngu_conj,  ->  <br>* McshEngl.ConjHmnm.sinagu!⇒Snguconj,
+  McshLag000010:5514  <br>* McshEngl.ConjSngu!⇒Sngu_conj,  ->  <br>* McshEngl.ConjSngu!⇒Snguconj,
+  McshLag000010:5515  <br>* McshEngl.Sngu_lagu'conjunction!⇒Sngu_conj,  ->  <br>* McshEngl.Sngu_lagu'conjunction!⇒Snguconj,
+  McshLag000010:5516  <br>* McshEngl.Sngu_lagu-conjunction!⇒Sngu_conj,  ->  <br>* McshEngl.Sngu_lagu-conjunction!⇒Snguconj,
+  McshLag000010:5517  <br>* McshEngl.SnguviewLogo'conjunction-name!⇒Sngu_conj,  ->  <br>* McshEngl.SnguviewLogo'conjunction-name!⇒Snguconj,
+  McshLag000010:5510  ADD  McshEngl.Sngu_conj!⇒Snguconj,
+  McshLag000010:5527  <h3 id="idL0014conjgstrH3">GENERIC-SPECIFIC-TREE of Sngu_conj  ->  <h3 id="idL0014conjgstrH3">GENERIC-SPECIFIC-TREE of Snguconj
+  McshLag000010:5533  <br>* McshEngl.Sngu_conj'generic-specific-tree,  ->  <br>* McshEngl.Snguconj'generic-specific-tree,
+  McshLag000010:5534  <br>* McshEngl.Sngu_conj'specific-generic-tree,  ->  <br>* McshEngl.Snguconj'specific-generic-tree,
+  McshLag000010:5537  <br>* McshEngl.Sngu_conj_Gntr,  ->  <br>* McshEngl.Snguconj_Gntr,
+  McshLag000010:5545  <br>* McshEngl.Sngu_conj.specific,  ->  <br>* McshEngl.Snguconj.specific,
+  McshLag000010:5546  <br>* McshEngl.Sngu_conj_Sptr,  ->  <br>* McshEngl.Snguconj_Sptr,
+
+=== McshLag000012 (9)
+  McshLag000012:4859  <br>* McshEngl.Esperanto-conjunction!⇒EspoConj,  ->  <br>* McshEngl.Esperanto-conjunction!⇒Espoconj,
+  McshLag000012:4860  <br>* McshEngl.EspoConj!=Esperanto-conjunction,  ->  <br>* McshEngl.Espoconj!=Esperanto-conjunction,
+  McshLag000012:4861  <br>* McshEngl.Hmnmconj.Esperanto!⇒EspoConj,  ->  <br>* McshEngl.Hmnmconj.Esperanto!⇒Espoconj,
+  McshLag000012:4862  <br>* McshEngl.ConjEspo!⇒EspoConj,  ->  <br>* McshEngl.ConjEspo!⇒Espoconj,
+  McshLag000012:4863  <br>* McshEngl.nameEspo.conjunction!⇒EspoConj,  ->  <br>* McshEngl.nameEspo.conjunction!⇒Espoconj,
+  McshLag000012:4864  <br>* McshEngl.Espo_lago'conjunction!⇒EspoConj,  ->  <br>* McshEngl.Espo_lago'conjunction!⇒Espoconj,
+  McshLag000012:4865  <br>* McshEngl.logoEspo'conjunction-name!⇒EspoConj,  ->  <br>* McshEngl.logoEspo'conjunction-name!⇒Espoconj,
+  McshLag000012:4861  ADD  McshEngl.EspoConj!⇒Espoconj,
+  McshLag000012:4869  <br>* McshEngl.EspoConj_Gntr,  ->  <br>* McshEngl.Espoconj_Gntr,
+
+=== McshLag000027 (11)
+  McshLag000027:5223  <br>* McshEngl.conjunction-of-Ella_logo!⇒Ella_conj,  ->  <br>* McshEngl.conjunction-of-Ella_logo!⇒Ellaconj,
+  McshLag000027:5224  <br>* McshEngl.Ella_conj!=conjunction-of-Ella_logo,  ->  <br>* McshEngl.Ellaconj!=conjunction-of-Ella_logo,
+  McshLag000027:5225  <br>* McshEngl.Ella_logo'Conj!⇒Ella_conj,  ->  <br>* McshEngl.Ella_logo'Conj!⇒Ellaconj,
+  McshLag000027:5227  <br>* McshElla.σύνδεσμος!=Ella_conj,  ->  <br>* McshElla.σύνδεσμος!=Ellaconj,
+  McshLag000027:5225  ADD  McshEngl.Ella_conj!⇒Ellaconj,
+  McshLag000027:5232  <h3 id="idLEllaconjgstrH3">GENERIC-SPECIFIC-TREE of Ella_conj  ->  <h3 id="idLEllaconjgstrH3">GENERIC-SPECIFIC-TREE of Ellaconj
+  McshLag000027:5238  <br>* McshEngl.Ella_conj'generic-specific-tree,  ->  <br>* McshEngl.Ellaconj'generic-specific-tree,
+  McshLag000027:5239  <br>* McshEngl.Ella_conj'specific-generic-tree,  ->  <br>* McshEngl.Ellaconj'specific-generic-tree,
+  McshLag000027:5242  <br>* McshEngl.Ella_conj_Gntr,  ->  <br>* McshEngl.Ellaconj_Gntr,
+  McshLag000027:5248  <br>* McshEngl.Ella_conj.specific,  ->  <br>* McshEngl.Ellaconj.specific,
+  McshLag000027:5249  <br>* McshEngl.Ella_conj_Sptr,  ->  <br>* McshEngl.Ellaconj_Sptr,
+
+=== McshLag000033 (12)
+  McshLag000033:3212  <br>* McshEngl.conjunction-of-Deut_lago!⇒DeutConj,  ->  <br>* McshEngl.conjunction-of-Deut_lago!⇒Deutconj,
+  McshLag000033:3213  <br>* McshEngl.DeutConj!=conjunction-of-Deut_lago,  ->  <br>* McshEngl.Deutconj!=conjunction-of-Deut_lago,
+  McshLag000033:3214  <br>* McshEngl.German-conjunction!⇒DeutConj,  ->  <br>* McshEngl.German-conjunction!⇒Deutconj,
+  McshLag000033:3215  <br>* McshEngl.logoDeut'conjunction!⇒DeutConj,  ->  <br>* McshEngl.logoDeut'conjunction!⇒Deutconj,
+  McshLag000033:3216  <br>* McshEngl.DeutLogoView'conjunction-name!⇒DeutConj,  ->  <br>* McshEngl.DeutLogoView'conjunction-name!⇒Deutconj,
+  McshLag000033:3214  ADD  McshEngl.DeutConj!⇒Deutconj,
+  McshLag000033:3221  <h3 id="idLDeutconjgstrH3">GENERIC-SPECIFIC-TREE of DeutConj  ->  <h3 id="idLDeutconjgstrH3">GENERIC-SPECIFIC-TREE of Deutconj
+  McshLag000033:3227  <br>* McshEngl.DeutConj'generic-specific-tree,  ->  <br>* McshEngl.Deutconj'generic-specific-tree,
+  McshLag000033:3228  <br>* McshEngl.DeutConj'specific-generic-tree,  ->  <br>* McshEngl.Deutconj'specific-generic-tree,
+  McshLag000033:3231  <br>* McshEngl.DeutConj_Gntr,  ->  <br>* McshEngl.Deutconj_Gntr,
+  McshLag000033:3237  <br>* McshEngl.DeutConj.specific,  ->  <br>* McshEngl.Deutconj.specific,
+  McshLag000033:3238  <br>* McshEngl.DeutConj_Sptr,  ->  <br>* McshEngl.Deutconj_Sptr,
+
+=== McshLag000034 (13)
+  McshLag000034:2120  <br>* McshEngl.conjunction-of-Bcms_lago!⇒BcmsConj,  ->  <br>* McshEngl.conjunction-of-Bcms_lago!⇒Bcmsconj,
+  McshLag000034:2121  <br>* McshEngl.BcmsConj!=conjunction-of-Bcms_lago,  ->  <br>* McshEngl.Bcmsconj!=conjunction-of-Bcms_lago,
+  McshLag000034:2122  <br>* McshEngl.BcmsName.conjunction!⇒BcmsConj,  ->  <br>* McshEngl.BcmsName.conjunction!⇒Bcmsconj,
+  McshLag000034:2123  <br>* McshEngl.Bcms_lago'conjunction!⇒BcmsConj,  ->  <br>* McshEngl.Bcms_lago'conjunction!⇒Bcmsconj,
+  McshLag000034:2124  <br>* McshEngl.ConjBcms!⇒BcmsConj,  ->  <br>* McshEngl.ConjBcms!⇒Bcmsconj,
+  McshLag000034:2125  <br>* McshEngl.BcmsLogoView'conjunction-name!⇒BcmsConj,  ->  <br>* McshEngl.BcmsLogoView'conjunction-name!⇒Bcmsconj,
+  McshLag000034:2122  ADD  McshEngl.BcmsConj!⇒Bcmsconj,
+  McshLag000034:2130  <h3 id="idLBcmsconjgstrH3">GENERIC-SPECIFIC-TREE of BcmsConj  ->  <h3 id="idLBcmsconjgstrH3">GENERIC-SPECIFIC-TREE of Bcmsconj
+  McshLag000034:2136  <br>* McshEngl.BcmsConj'generic-specific-tree,  ->  <br>* McshEngl.Bcmsconj'generic-specific-tree,
+  McshLag000034:2137  <br>* McshEngl.BcmsConj'specific-generic-tree,  ->  <br>* McshEngl.Bcmsconj'specific-generic-tree,
+  McshLag000034:2140  <br>* McshEngl.BcmsConj_Gntr,  ->  <br>* McshEngl.Bcmsconj_Gntr,
+  McshLag000034:2146  <br>* McshEngl.BcmsConj.specific,  ->  <br>* McshEngl.Bcmsconj.specific,
+  McshLag000034:2147  <br>* McshEngl.BcmsConj_Sptr,  ->  <br>* McshEngl.Bcmsconj_Sptr,
+
+=== McshLag000035 (14)
+  McshLag000035:1964  <br>* McshEngl.conjunction-of-Span_lago!⇒SpanConj,  ->  <br>* McshEngl.conjunction-of-Span_lago!⇒Spanconj,
+  McshLag000035:1965  <br>* McshEngl.SpanConj!=conjunction-of-Span_lago,  ->  <br>* McshEngl.Spanconj!=conjunction-of-Span_lago,
+  McshLag000035:1966  <br>* McshEngl.Spanish-conjunction!⇒SpanConj,  ->  <br>* McshEngl.Spanish-conjunction!⇒Spanconj,
+  McshLag000035:1967  <br>* McshEngl.SpanName.conjunction!⇒SpanConj,  ->  <br>* McshEngl.SpanName.conjunction!⇒Spanconj,
+  McshLag000035:1968  <br>* McshEngl.Span_lago'conjunction!⇒SpanConj,  ->  <br>* McshEngl.Span_lago'conjunction!⇒Spanconj,
+  McshLag000035:1969  <br>* McshEngl.ConjSpan!⇒SpanConj,  ->  <br>* McshEngl.ConjSpan!⇒Spanconj,
+  McshLag000035:1970  <br>* McshEngl.SpanLogoView'conjunction-name!⇒SpanConj,  ->  <br>* McshEngl.SpanLogoView'conjunction-name!⇒Spanconj,
+  McshLag000035:1966  ADD  McshEngl.SpanConj!⇒Spanconj,
+  McshLag000035:1975  <h3 id="idLSpanconjgstrH3">GENERIC-SPECIFIC-TREE of SpanConj  ->  <h3 id="idLSpanconjgstrH3">GENERIC-SPECIFIC-TREE of Spanconj
+  McshLag000035:1981  <br>* McshEngl.SpanConj'generic-specific-tree,  ->  <br>* McshEngl.Spanconj'generic-specific-tree,
+  McshLag000035:1982  <br>* McshEngl.SpanConj'specific-generic-tree,  ->  <br>* McshEngl.Spanconj'specific-generic-tree,
+  McshLag000035:1985  <br>* McshEngl.SpanConj_Gntr,  ->  <br>* McshEngl.Spanconj_Gntr,
+  McshLag000035:1991  <br>* McshEngl.SpanConj.specific,  ->  <br>* McshEngl.Spanconj.specific,
+  McshLag000035:1992  <br>* McshEngl.SpanConj_Sptr,  ->  <br>* McshEngl.Spanconj_Sptr,
+
+=== McshLag000036 (14)
+  McshLag000036:2439  <br>* McshEngl.conjunction-of-Arab_lago!⇒ArabConj,  ->  <br>* McshEngl.conjunction-of-Arab_lago!⇒Arabconj,
+  McshLag000036:2440  <br>* McshEngl.ArabConj!=conjunction-of-Arab_lago,  ->  <br>* McshEngl.Arabconj!=conjunction-of-Arab_lago,
+  McshLag000036:2441  <br>* McshEngl.Arabic-conjunction!⇒ArabConj,  ->  <br>* McshEngl.Arabic-conjunction!⇒Arabconj,
+  McshLag000036:2442  <br>* McshEngl.ArabName.conjunction!⇒ArabConj,  ->  <br>* McshEngl.ArabName.conjunction!⇒Arabconj,
+  McshLag000036:2443  <br>* McshEngl.Arab_lago'conjunction!⇒ArabConj,  ->  <br>* McshEngl.Arab_lago'conjunction!⇒Arabconj,
+  McshLag000036:2444  <br>* McshEngl.ConjArab!⇒ArabConj,  ->  <br>* McshEngl.ConjArab!⇒Arabconj,
+  McshLag000036:2445  <br>* McshEngl.ArabLogoView'conjunction-name!⇒ArabConj,  ->  <br>* McshEngl.ArabLogoView'conjunction-name!⇒Arabconj,
+  McshLag000036:2441  ADD  McshEngl.ArabConj!⇒Arabconj,
+  McshLag000036:2450  <h3 id="idLArabconjgstrH3">GENERIC-SPECIFIC-TREE of ArabConj  ->  <h3 id="idLArabconjgstrH3">GENERIC-SPECIFIC-TREE of Arabconj
+  McshLag000036:2456  <br>* McshEngl.ArabConj'generic-specific-tree,  ->  <br>* McshEngl.Arabconj'generic-specific-tree,
+  McshLag000036:2457  <br>* McshEngl.ArabConj'specific-generic-tree,  ->  <br>* McshEngl.Arabconj'specific-generic-tree,
+  McshLag000036:2460  <br>* McshEngl.ArabConj_Gntr,  ->  <br>* McshEngl.Arabconj_Gntr,
+  McshLag000036:2466  <br>* McshEngl.ArabConj.specific,  ->  <br>* McshEngl.Arabconj.specific,
+  McshLag000036:2467  <br>* McshEngl.ArabConj_Sptr,  ->  <br>* McshEngl.Arabconj_Sptr,
+
+=== McshLag000037 (14)
+  McshLag000037:1969  <br>* McshEngl.conjunction-of-Hiur_lago!⇒HiurConj,  ->  <br>* McshEngl.conjunction-of-Hiur_lago!⇒Hiurconj,
+  McshLag000037:1970  <br>* McshEngl.HiurConj!=conjunction-of-Hiur_lago,  ->  <br>* McshEngl.Hiurconj!=conjunction-of-Hiur_lago,
+  McshLag000037:1971  <br>* McshEngl.Hidi-Urdu-conjunction!⇒HiurConj,  ->  <br>* McshEngl.Hidi-Urdu-conjunction!⇒Hiurconj,
+  McshLag000037:1972  <br>* McshEngl.HiurName.conjunction!⇒HiurConj,  ->  <br>* McshEngl.HiurName.conjunction!⇒Hiurconj,
+  McshLag000037:1973  <br>* McshEngl.Hiur_lago'conjunction!⇒HiurConj,  ->  <br>* McshEngl.Hiur_lago'conjunction!⇒Hiurconj,
+  McshLag000037:1974  <br>* McshEngl.ConjHiur!⇒HiurConj,  ->  <br>* McshEngl.ConjHiur!⇒Hiurconj,
+  McshLag000037:1975  <br>* McshEngl.HiurLogoView'conjunction-name!⇒HiurConj,  ->  <br>* McshEngl.HiurLogoView'conjunction-name!⇒Hiurconj,
+  McshLag000037:1971  ADD  McshEngl.HiurConj!⇒Hiurconj,
+  McshLag000037:1980  <h3 id="idLHiurconjgstrH3">GENERIC-SPECIFIC-TREE of HiurConj  ->  <h3 id="idLHiurconjgstrH3">GENERIC-SPECIFIC-TREE of Hiurconj
+  McshLag000037:1986  <br>* McshEngl.HiurConj'generic-specific-tree,  ->  <br>* McshEngl.Hiurconj'generic-specific-tree,
+  McshLag000037:1987  <br>* McshEngl.HiurConj'specific-generic-tree,  ->  <br>* McshEngl.Hiurconj'specific-generic-tree,
+  McshLag000037:1990  <br>* McshEngl.HiurConj_Gntr,  ->  <br>* McshEngl.Hiurconj_Gntr,
+  McshLag000037:1996  <br>* McshEngl.HiurConj.specific,  ->  <br>* McshEngl.Hiurconj.specific,
+  McshLag000037:1997  <br>* McshEngl.HiurConj_Sptr,  ->  <br>* McshEngl.Hiurconj_Sptr,
+
+=== McshLag000038 (14)
+  McshLag000038:1466  <br>* McshEngl.conjunction-of-Slv0Lago!⇒Slv0Conj,  ->  <br>* McshEngl.conjunction-of-Slv0Lago!⇒Slv0conj,
+  McshLag000038:1467  <br>* McshEngl.Slv0Conj!=conjunction-of-Slv0Lago,  ->  <br>* McshEngl.Slv0conj!=conjunction-of-Slv0Lago,
+  McshLag000038:1468  <br>* McshEngl.Slavic-conjunction!⇒Slv0Conj,  ->  <br>* McshEngl.Slavic-conjunction!⇒Slv0conj,
+  McshLag000038:1469  <br>* McshEngl.Slv0Name.conjunction!⇒Slv0Conj,  ->  <br>* McshEngl.Slv0Name.conjunction!⇒Slv0conj,
+  McshLag000038:1470  <br>* McshEngl.Slv0Lago'conjunction!⇒Slv0Conj,  ->  <br>* McshEngl.Slv0Lago'conjunction!⇒Slv0conj,
+  McshLag000038:1471  <br>* McshEngl.ConjSlv0!⇒Slv0Conj,  ->  <br>* McshEngl.ConjSlv0!⇒Slv0conj,
+  McshLag000038:1472  <br>* McshEngl.Slv0LogoView'conjunction-name!⇒Slv0Conj,  ->  <br>* McshEngl.Slv0LogoView'conjunction-name!⇒Slv0conj,
+  McshLag000038:1468  ADD  McshEngl.Slv0Conj!⇒Slv0conj,
+  McshLag000038:1477  <h3 id="idLSlv0conjgstrH3">GENERIC-SPECIFIC-TREE of Slv0Conj  ->  <h3 id="idLSlv0conjgstrH3">GENERIC-SPECIFIC-TREE of Slv0conj
+  McshLag000038:1483  <br>* McshEngl.Slv0Conj'generic-specific-tree,  ->  <br>* McshEngl.Slv0conj'generic-specific-tree,
+  McshLag000038:1484  <br>* McshEngl.Slv0Conj'specific-generic-tree,  ->  <br>* McshEngl.Slv0conj'specific-generic-tree,
+  McshLag000038:1487  <br>* McshEngl.Slv0Conj_Gntr,  ->  <br>* McshEngl.Slv0conj_Gntr,
+  McshLag000038:1493  <br>* McshEngl.Slv0Conj.specific,  ->  <br>* McshEngl.Slv0conj.specific,
+  McshLag000038:1494  <br>* McshEngl.Slv0Conj_Sptr,  ->  <br>* McshEngl.Slv0conj_Sptr,
+
+=== McshLag000039 (14)
+  McshLag000039:1132  <br>* McshEngl.conjunction-of-Ide0_lago!⇒Ide0Conj,  ->  <br>* McshEngl.conjunction-of-Ide0_lago!⇒Ide0conj,
+  McshLag000039:1133  <br>* McshEngl.Ide0Conj!=conjunction-of-Ide0_lago,  ->  <br>* McshEngl.Ide0conj!=conjunction-of-Ide0_lago,
+  McshLag000039:1134  <br>* McshEngl.IndoEuropean-conjunction!⇒Ide0Conj,  ->  <br>* McshEngl.IndoEuropean-conjunction!⇒Ide0conj,
+  McshLag000039:1135  <br>* McshEngl.Ide0Name.conjunction!⇒Ide0Conj,  ->  <br>* McshEngl.Ide0Name.conjunction!⇒Ide0conj,
+  McshLag000039:1136  <br>* McshEngl.Ide0_lago'conjunction!⇒Ide0Conj,  ->  <br>* McshEngl.Ide0_lago'conjunction!⇒Ide0conj,
+  McshLag000039:1137  <br>* McshEngl.ConjIde0!⇒Ide0Conj,  ->  <br>* McshEngl.ConjIde0!⇒Ide0conj,
+  McshLag000039:1138  <br>* McshEngl.Ide0LogoView'conjunction-name!⇒Ide0Conj,  ->  <br>* McshEngl.Ide0LogoView'conjunction-name!⇒Ide0conj,
+  McshLag000039:1134  ADD  McshEngl.Ide0Conj!⇒Ide0conj,
+  McshLag000039:1143  <h3 id="idLIde0conjgstrH3">GENERIC-SPECIFIC-TREE of Ide0Conj  ->  <h3 id="idLIde0conjgstrH3">GENERIC-SPECIFIC-TREE of Ide0conj
+  McshLag000039:1149  <br>* McshEngl.Ide0Conj'generic-specific-tree,  ->  <br>* McshEngl.Ide0conj'generic-specific-tree,
+  McshLag000039:1150  <br>* McshEngl.Ide0Conj'specific-generic-tree,  ->  <br>* McshEngl.Ide0conj'specific-generic-tree,
+  McshLag000039:1153  <br>* McshEngl.Ide0Conj_Gntr,  ->  <br>* McshEngl.Ide0conj_Gntr,
+  McshLag000039:1159  <br>* McshEngl.Ide0Conj.specific,  ->  <br>* McshEngl.Ide0conj.specific,
+  McshLag000039:1160  <br>* McshEngl.Ide0Conj_Sptr,  ->  <br>* McshEngl.Ide0conj_Sptr,
+
+=== McshLag000040 (14)
+  McshLag000040:1357  <br>* McshEngl.conjunction-of-Afa0_lago!⇒Afa0Conj,  ->  <br>* McshEngl.conjunction-of-Afa0_lago!⇒Afa0conj,
+  McshLag000040:1358  <br>* McshEngl.Afa0Conj!=conjunction-of-Afa0_lago,  ->  <br>* McshEngl.Afa0conj!=conjunction-of-Afa0_lago,
+  McshLag000040:1359  <br>* McshEngl.AfroAsiatic-conjunction!⇒Afa0Conj,  ->  <br>* McshEngl.AfroAsiatic-conjunction!⇒Afa0conj,
+  McshLag000040:1360  <br>* McshEngl.Afa0Name.conjunction!⇒Afa0Conj,  ->  <br>* McshEngl.Afa0Name.conjunction!⇒Afa0conj,
+  McshLag000040:1361  <br>* McshEngl.Afa0_lago'conjunction!⇒Afa0Conj,  ->  <br>* McshEngl.Afa0_lago'conjunction!⇒Afa0conj,
+  McshLag000040:1362  <br>* McshEngl.ConjAfa0!⇒Afa0Conj,  ->  <br>* McshEngl.ConjAfa0!⇒Afa0conj,
+  McshLag000040:1363  <br>* McshEngl.Afa0LogoView'conjunction-name!⇒Afa0Conj,  ->  <br>* McshEngl.Afa0LogoView'conjunction-name!⇒Afa0conj,
+  McshLag000040:1359  ADD  McshEngl.Afa0Conj!⇒Afa0conj,
+  McshLag000040:1368  <h3 id="idLAfa0conjgstrH3">GENERIC-SPECIFIC-TREE of Afa0Conj  ->  <h3 id="idLAfa0conjgstrH3">GENERIC-SPECIFIC-TREE of Afa0conj
+  McshLag000040:1374  <br>* McshEngl.Afa0Conj'generic-specific-tree,  ->  <br>* McshEngl.Afa0conj'generic-specific-tree,
+  McshLag000040:1375  <br>* McshEngl.Afa0Conj'specific-generic-tree,  ->  <br>* McshEngl.Afa0conj'specific-generic-tree,
+  McshLag000040:1378  <br>* McshEngl.Afa0Conj_Gntr,  ->  <br>* McshEngl.Afa0conj_Gntr,
+  McshLag000040:1384  <br>* McshEngl.Afa0Conj.specific,  ->  <br>* McshEngl.Afa0conj.specific,
+  McshLag000040:1385  <br>* McshEngl.Afa0Conj_Sptr,  ->  <br>* McshEngl.Afa0conj_Sptr,
+
+=== McshLag000041 (14)
+  McshLag000041:1269  <br>* McshEngl.conjunction-of-Tur0_lago!⇒Tur0Conj,  ->  <br>* McshEngl.conjunction-of-Tur0_lago!⇒Tur0conj,
+  McshLag000041:1270  <br>* McshEngl.Tur0Conj!=conjunction-of-Tur0_lago,  ->  <br>* McshEngl.Tur0conj!=conjunction-of-Tur0_lago,
+  McshLag000041:1271  <br>* McshEngl.Turkic-conjunction!⇒Tur0Conj,  ->  <br>* McshEngl.Turkic-conjunction!⇒Tur0conj,
+  McshLag000041:1272  <br>* McshEngl.Tur0Name.conjunction!⇒Tur0Conj,  ->  <br>* McshEngl.Tur0Name.conjunction!⇒Tur0conj,
+  McshLag000041:1273  <br>* McshEngl.Tur0_lago'conjunction!⇒Tur0Conj,  ->  <br>* McshEngl.Tur0_lago'conjunction!⇒Tur0conj,
+  McshLag000041:1274  <br>* McshEngl.ConjTur0!⇒Tur0Conj,  ->  <br>* McshEngl.ConjTur0!⇒Tur0conj,
+  McshLag000041:1275  <br>* McshEngl.Tur0LogoView'conjunction-name!⇒Tur0Conj,  ->  <br>* McshEngl.Tur0LogoView'conjunction-name!⇒Tur0conj,
+  McshLag000041:1271  ADD  McshEngl.Tur0Conj!⇒Tur0conj,
+  McshLag000041:1280  <h3 id="idLTur0conjgstrH3">GENERIC-SPECIFIC-TREE of Tur0Conj  ->  <h3 id="idLTur0conjgstrH3">GENERIC-SPECIFIC-TREE of Tur0conj
+  McshLag000041:1286  <br>* McshEngl.Tur0Conj'generic-specific-tree,  ->  <br>* McshEngl.Tur0conj'generic-specific-tree,
+  McshLag000041:1287  <br>* McshEngl.Tur0Conj'specific-generic-tree,  ->  <br>* McshEngl.Tur0conj'specific-generic-tree,
+  McshLag000041:1290  <br>* McshEngl.Tur0Conj_Gntr,  ->  <br>* McshEngl.Tur0conj_Gntr,
+  McshLag000041:1296  <br>* McshEngl.Tur0Conj.specific,  ->  <br>* McshEngl.Tur0conj.specific,
+  McshLag000041:1297  <br>* McshEngl.Tur0Conj_Sptr,  ->  <br>* McshEngl.Tur0conj_Sptr,
+
+=== McshLag000042 (14)
+  McshLag000042:1278  <br>* McshEngl.conjunction-of-Asa0_lago!⇒Asa0Conj,  ->  <br>* McshEngl.conjunction-of-Asa0_lago!⇒Asa0conj,
+  McshLag000042:1279  <br>* McshEngl.Asa0Conj!=conjunction-of-Asa0_lago,  ->  <br>* McshEngl.Asa0conj!=conjunction-of-Asa0_lago,
+  McshLag000042:1280  <br>* McshEngl.AustroAsiatic-conjunction!⇒Asa0Conj,  ->  <br>* McshEngl.AustroAsiatic-conjunction!⇒Asa0conj,
+  McshLag000042:1281  <br>* McshEngl.Asa0Name.conjunction!⇒Asa0Conj,  ->  <br>* McshEngl.Asa0Name.conjunction!⇒Asa0conj,
+  McshLag000042:1282  <br>* McshEngl.Asa0_lago'conjunction!⇒Asa0Conj,  ->  <br>* McshEngl.Asa0_lago'conjunction!⇒Asa0conj,
+  McshLag000042:1283  <br>* McshEngl.ConjAsa0!⇒Asa0Conj,  ->  <br>* McshEngl.ConjAsa0!⇒Asa0conj,
+  McshLag000042:1284  <br>* McshEngl.Asa0LogoView'conjunction-name!⇒Asa0Conj,  ->  <br>* McshEngl.Asa0LogoView'conjunction-name!⇒Asa0conj,
+  McshLag000042:1280  ADD  McshEngl.Asa0Conj!⇒Asa0conj,
+  McshLag000042:1289  <h3 id="idLAsa0conjgstrH3">GENERIC-SPECIFIC-TREE of Asa0Conj  ->  <h3 id="idLAsa0conjgstrH3">GENERIC-SPECIFIC-TREE of Asa0conj
+  McshLag000042:1295  <br>* McshEngl.Asa0Conj'generic-specific-tree,  ->  <br>* McshEngl.Asa0conj'generic-specific-tree,
+  McshLag000042:1296  <br>* McshEngl.Asa0Conj'specific-generic-tree,  ->  <br>* McshEngl.Asa0conj'specific-generic-tree,
+  McshLag000042:1299  <br>* McshEngl.Asa0Conj_Gntr,  ->  <br>* McshEngl.Asa0conj_Gntr,
+  McshLag000042:1305  <br>* McshEngl.Asa0Conj.specific,  ->  <br>* McshEngl.Asa0conj.specific,
+  McshLag000042:1306  <br>* McshEngl.Asa0Conj_Sptr,  ->  <br>* McshEngl.Asa0conj_Sptr,
+
+=== McshLag000043 (14)
+  McshLag000043:2943  <br>* McshEngl.conjunction-of-Kora_lago!⇒KoraConj,  ->  <br>* McshEngl.conjunction-of-Kora_lago!⇒Koraconj,
+  McshLag000043:2944  <br>* McshEngl.KoraConj!=conjunction-of-Kora_lago,  ->  <br>* McshEngl.Koraconj!=conjunction-of-Kora_lago,
+  McshLag000043:2945  <br>* McshEngl.Korean-conjunction!⇒KoraConj,  ->  <br>* McshEngl.Korean-conjunction!⇒Koraconj,
+  McshLag000043:2946  <br>* McshEngl.KoraName.conjunction!⇒KoraConj,  ->  <br>* McshEngl.KoraName.conjunction!⇒Koraconj,
+  McshLag000043:2947  <br>* McshEngl.Kora_lago'conjunction!⇒KoraConj,  ->  <br>* McshEngl.Kora_lago'conjunction!⇒Koraconj,
+  McshLag000043:2948  <br>* McshEngl.ConjKora!⇒KoraConj,  ->  <br>* McshEngl.ConjKora!⇒Koraconj,
+  McshLag000043:2949  <br>* McshEngl.Kora_logo_view'conjunction-name!⇒KoraConj,  ->  <br>* McshEngl.Kora_logo_view'conjunction-name!⇒Koraconj,
+  McshLag000043:2945  ADD  McshEngl.KoraConj!⇒Koraconj,
+  McshLag000043:2954  <h3 id="idLKoraconjgstrH3">GENERIC-SPECIFIC-TREE of KoraConj  ->  <h3 id="idLKoraconjgstrH3">GENERIC-SPECIFIC-TREE of Koraconj
+  McshLag000043:2960  <br>* McshEngl.KoraConj'generic-specific-tree,  ->  <br>* McshEngl.Koraconj'generic-specific-tree,
+  McshLag000043:2961  <br>* McshEngl.KoraConj'specific-generic-tree,  ->  <br>* McshEngl.Koraconj'specific-generic-tree,
+  McshLag000043:2964  <br>* McshEngl.KoraConj_Gntr,  ->  <br>* McshEngl.Koraconj_Gntr,
+  McshLag000043:2970  <br>* McshEngl.KoraConj.specific,  ->  <br>* McshEngl.Koraconj.specific,
+  McshLag000043:2971  <br>* McshEngl.KoraConj_Sptr,  ->  <br>* McshEngl.Koraconj_Sptr,
+
+=== McshStn000034 (7)
+  McshStn000034:3354  <br>* McshEngl.Vietnamese-conjunction!⇒VnmaConj,  ->  <br>* McshEngl.Vietnamese-conjunction!⇒Vnmaconj,
+  McshStn000034:3355  <br>* McshEngl.VnmaConj!=Vietnamese-conjunction,  ->  <br>* McshEngl.Vnmaconj!=Vietnamese-conjunction,
+  McshStn000034:3356  <br>* McshEngl.logoVnma'conjunction!⇒VnmaConj,  ->  <br>* McshEngl.logoVnma'conjunction!⇒Vnmaconj,
+  McshStn000034:3357  <br>* McshEngl.ConjVnma!⇒VnmaConj,  ->  <br>* McshEngl.ConjVnma!⇒Vnmaconj,
+  McshStn000034:3358  <br>* McshEngl.logoVnma'conjunction-name!⇒VnmaConj,  ->  <br>* McshEngl.logoVnma'conjunction-name!⇒Vnmaconj,
+  McshStn000034:3360  <br>* McshVnma.liên-từ-tiếng-Việt!=VnmaConj,  ->  <br>* McshVnma.liên-từ-tiếng-Việt!=Vnmaconj,
+  McshStn000034:3356  ADD  McshEngl.VnmaConj!⇒Vnmaconj,
+
+=== McshStn000035 (6)
+  McshStn000035:3154  <br>* McshEngl.Italian-conjunction!⇒ItlnConj,  ->  <br>* McshEngl.Italian-conjunction!⇒Itlnconj,
+  McshStn000035:3155  <br>* McshEngl.ItlnConj!=Italian-conjunction,  ->  <br>* McshEngl.Itlnconj!=Italian-conjunction,
+  McshStn000035:3156  <br>* McshEngl.logoItln'conjunction!⇒ItlnConj,  ->  <br>* McshEngl.logoItln'conjunction!⇒Itlnconj,
+  McshStn000035:3157  <br>* McshEngl.ConjItln!⇒ItlnConj,  ->  <br>* McshEngl.ConjItln!⇒Itlnconj,
+  McshStn000035:3158  <br>* McshEngl.logoItln'conjunction-name!⇒ItlnConj,  ->  <br>* McshEngl.logoItln'conjunction-name!⇒Itlnconj,
+  McshStn000035:3156  ADD  McshEngl.ItlnConj!⇒Itlnconj,
+
+=== McshStn000038 (5)
+  McshStn000038:1391  <br>* McshEngl.Bulgarian-conjunction!⇒SbulConj,  ->  <br>* McshEngl.Bulgarian-conjunction!⇒Sbulconj,
+  McshStn000038:1392  <br>* McshEngl.SbulConj!=Bulgarian-conjunction,  ->  <br>* McshEngl.Sbulconj!=Bulgarian-conjunction,
+  McshStn000038:1393  <br>* McshEngl.logSbul'conjunction!⇒SbulConj,  ->  <br>* McshEngl.logSbul'conjunction!⇒Sbulconj,
+  McshStn000038:1394  <br>* McshEngl.logoSbul'conjunction-name!⇒SbulConj,  ->  <br>* McshEngl.logoSbul'conjunction-name!⇒Sbulconj,
+  McshStn000038:1393  ADD  McshEngl.SbulConj!⇒Sbulconj,
+
+=== McshStn000048 (6)
+  McshStn000048:4381  <br>* McshEngl.Japanese-conjunction!⇒JpnsConj,  ->  <br>* McshEngl.Japanese-conjunction!⇒Jpnsconj,
+  McshStn000048:4382  <br>* McshEngl.JpnsConj!=Japanese-conjunction,  ->  <br>* McshEngl.Jpnsconj!=Japanese-conjunction,
+  McshStn000048:4383  <br>* McshEngl.ConjJpns!⇒JpnsConj,  ->  <br>* McshEngl.ConjJpns!⇒Jpnsconj,
+  McshStn000048:4384  <br>* McshEngl.conjunction.Japanese!⇒JpnsConj,  ->  <br>* McshEngl.conjunction.Japanese!⇒Jpnsconj,
+  McshStn000048:4385  <br>* McshEngl.JpnsLogoView'conjunction-name!⇒JpnsConj,  ->  <br>* McshEngl.JpnsLogoView'conjunction-name!⇒Jpnsconj,
+  McshStn000048:4383  ADD  McshEngl.JpnsConj!⇒Jpnsconj,
+
+=== McshStn000050 (4)
+  McshStn000050:3303  <br>* McshEngl.KhmrConj,  ->  <br>* McshEngl.Khmrconj,
+  McshStn000050:3304  <br>* McshEngl.Khmr_lago'conjunction!⇒KhmrConj,  ->  <br>* McshEngl.Khmr_lago'conjunction!⇒Khmrconj,
+  McshStn000050:3305  <br>* McshEngl.KhmrLogoView'conjunction-name!⇒KhmrConj,  ->  <br>* McshEngl.KhmrLogoView'conjunction-name!⇒Khmrconj,
+  McshStn000050:3304  ADD  McshEngl.KhmrConj!⇒Khmrconj,

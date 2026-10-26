@@ -1,0 +1,26 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 1 | renamed: 1 | name:: paragraphs: 1 | tree/reference lines: 6 | old names kept (M!⇒N added): 1 | files: 1
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (1)
+  McshLag000007         14
+
+=== McshLag000007 (14)
+  McshLag000007:15440  <br>* McshEngl.Semuverb--argument!⇒SemuVerbargt,  ->  <br>* McshEngl.Semuverb--argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15441  <br>* McshEngl.SemuVerbargt!=Semuverb--argument,  ->  <br>* McshEngl.Hmnmsemuverbargt!=Semuverb--argument,
+  McshLag000007:15442  <br>* McshEngl.Semuverb'argument!⇒SemuVerbargt,  ->  <br>* McshEngl.Semuverb'argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15444  <br>* McshEngl.argument-of-Semuverb!⇒SemuVerbargt,  ->  <br>* McshEngl.argument-of-Semuverb!⇒Hmnmsemuverbargt,
+  McshLag000007:15445  <br>* McshEngl.Hmnm_lago-semu-node.SemuVerbargt!⇒SemuVerbargt,  ->  <br>* McshEngl.Hmnm_lago-semu-node.SemuVerbargt!⇒Hmnmsemuverbargt,
+  McshLag000007:15446  <br>* McshEngl.HmnmviewSemu'Semuverb--argument!⇒SemuVerbargt,  ->  <br>* McshEngl.HmnmviewSemu'Semuverb--argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15447  <br>* McshEngl.Semusent'Semuverb--argument!⇒SemuVerbargt,  ->  <br>* McshEngl.Semusent'Semuverb--argument!⇒Hmnmsemuverbargt,
+  McshLag000007:15442  ADD  McshEngl.SemuVerbargt!⇒Hmnmsemuverbargt,
+  McshLag000007:15470  <h3 id="idLHmnmsmsvbatgstrH3">GENERIC-SPECIFIC-TREE of SemuVerbargt  ->  <h3 id="idLHmnmsmsvbatgstrH3">GENERIC-SPECIFIC-TREE of Hmnmsemuverbargt
+  McshLag000007:15476  <br>* McshEngl.SemuVerbargt'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsemuverbargt'generic-specific-tree,
+  McshLag000007:15477  <br>* McshEngl.SemuVerbargt'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsemuverbargt'specific-generic-tree,
+  McshLag000007:15480  <br>* McshEngl.SemuVerbargt_Gntr,  ->  <br>* McshEngl.Hmnmsemuverbargt_Gntr,
+  McshLag000007:15486  <br>* McshEngl.SemuVerbargt.specific,  ->  <br>* McshEngl.Hmnmsemuverbargt.specific,
+  McshLag000007:15487  <br>* McshEngl.SemuVerbargt_Sptr,  ->  <br>* McshEngl.Hmnmsemuverbargt_Sptr,

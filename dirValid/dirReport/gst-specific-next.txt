@@ -192,3 +192,10 @@ T53. {2026-10-22} DONE: MvrlGstr02 fixed: 653 -> 66 (MvrlGstr01 1 -> 0). Generic
      LEFT 66: G has no specific-tree:: and no clear !⇒ main-name (49 G, e.g. McshTchInf000016#idDbcBig 5, McshStnlaw000003#idLawEus026 4).
      GS-TREE report: 2528 of 2544 — 16 from the user's main-name renames in progress (title new, _Gntr old). Lists: dirReport/mvrlgstr02-fix-applied.txt,
      mvrlgstr02-byfile-report.txt.
+
+T54. {2026-10-25} DONE: GS-TREE position — a "GENERIC-SPECIFIC-TREE of X" section now stands right BEFORE the first sibling "X.name"
+     (a specific) of its whole, else it is the LAST child of its whole (page level: before idMeta). 782 moves in 382 files:
+     106 before a specific, 676 to last. Whole sections moved; levels, ids, links unchanged (dangling links 2895 -> 2895).
+     NOT moved: 47 MISPLACED (their own whole {B} is a section elsewhere): 5 page-level algo GS-TREEs (Jsalgo, Jsndalgo, Wasmalgo,
+     Rust_lago_algo, Cppzalgo), McshCor000008 idWhl001SetdongIsngstr, 41 in McshWrdidxElln*. GS-TREE report, MvrlGstr01/02 unchanged.
+     Script: scratchpad/gstr-position.js. List: dirReport/gstr-position-applied.txt.

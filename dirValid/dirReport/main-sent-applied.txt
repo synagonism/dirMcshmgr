@@ -1,0 +1,225 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 18 | renamed: 18 | name:: paragraphs: 18 | tree/reference lines: 19 | old names kept (M!⇒N added): 18 | files: 17
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (17)
+  McshLag000007         30
+  McshLag000010         14
+  McshLag000011         13
+  McshLag000018         37
+  McshLag000020          6
+  McshLag000035          6
+  McshLag000036          6
+  McshLag000037          6
+  McshLag000038          6
+  McshLag000039          6
+  McshLag000040          6
+  McshLag000041          6
+  McshLag000042          6
+  McshLag000043          6
+  McshStn000034          5
+  McshStn000035          5
+  McshTchInf000006       1
+
+=== McshLag000007 (30)
+  McshLag000007:28778  <br>* McshEngl.sentence, {2021-05-30}  ->  <br>* McshEngl.Hmnmsent, {2021-05-30}
+  McshLag000007:28779  <br>* McshEngl.Hmnm_lago'sentence!⇒sentence,  ->  <br>* McshEngl.Hmnm_lago'sentence!⇒Hmnmsent,
+  McshLag000007:28780  <br>* McshEngl.Hmnm_lago-sentence!⇒sentence,  ->  <br>* McshEngl.Hmnm_lago-sentence!⇒Hmnmsent,
+  McshLag000007:28781  <br>* McshEngl.Hmnm_sent!⇒sentence,  ->  <br>* McshEngl.Hmnm_sent!⇒Hmnmsent,
+  McshLag000007:28782  <br>* McshEngl.logo-sentence!⇒sentence,  ->  <br>* McshEngl.logo-sentence!⇒Hmnmsent,
+  McshLag000007:28783  <br>* McshEngl.logo-sentence--of-Hmnm_lago!⇒sentence,  ->  <br>* McshEngl.logo-sentence--of-Hmnm_lago!⇒Hmnmsent,
+  McshLag000007:28784  <br>* McshEngl.sentence/séntence/!⇒sentence,  ->  <br>* McshEngl.sentence/séntence/!⇒Hmnmsent,
+  McshLag000007:28785  <br>* McshEngl.sentence.lagoElln!=πρόταση!η,  ->  <br>* McshEngl.Hmnmsent.lagoElln!=πρόταση!η,
+  McshLag000007:28786  <br>* McshEngl.sentence.Espo_lago!=frazo!⇒sentence,  ->  <br>* McshEngl.sentence.Espo_lago!=frazo!⇒Hmnmsent,
+  McshLag000007:28787  <br>* McshEngl.sentence.lagoZhon!=jù-句,  ->  <br>* McshEngl.Hmnmsent.lagoZhon!=jù-句,
+  McshLag000007:28788  <br>* McshEngl.sentHumn!⇒sentence,  ->  <br>* McshEngl.sentHumn!⇒Hmnmsent,
+  McshLag000007:28789  <br>* McshEngl.sentenceHumn!⇒sentence,  ->  <br>* McshEngl.sentenceHumn!⇒Hmnmsent,
+  McshLag000007:28790  <br>* McshEngl.sentence-of-Hmnm_lago!⇒sentence,  ->  <br>* McshEngl.sentence-of-Hmnm_lago!⇒Hmnmsent,
+  McshLag000007:28791  <br>* McshEngl.sntLogHumn!⇒sentence,  ->  <br>* McshEngl.sntLogHumn!⇒Hmnmsent,
+  McshLag000007:28792  <br>* McshEngl.statement-of-Hmnm_lago!⇒sentence,  ->  <br>* McshEngl.statement-of-Hmnm_lago!⇒Hmnmsent,
+  McshLag000007:28793  <br>* McshEngl.system-of-verb!⇒sentence,  ->  <br>* McshEngl.system-of-verb!⇒Hmnmsent,
+  McshLag000007:28794  <br>* McshEngl.SystVerb!⇒sentence,  ->  <br>* McshEngl.SystVerb!⇒Hmnmsent,
+  McshLag000007:28795  <br>* McshEngl.HmnmviewLogo'sentence!⇒sentence,  ->  <br>* McshEngl.HmnmviewLogo'sentence!⇒Hmnmsent,
+  McshLag000007:28797  <br>* McshZhon.jù-句!=sentence,  ->  <br>* McshZhon.jù-句!=Hmnmsent,
+  McshLag000007:28798  <br>* McshZhon.句-jù!=sentence,  ->  <br>* McshZhon.句-jù!=Hmnmsent,
+  McshLag000007:28800  <br>* McshEspo.frazo!=sentence,  ->  <br>* McshEspo.frazo!=Hmnmsent,
+  McshLag000007:28802  <br>* McshDeut.Aussage!~die!=sentence,  ->  <br>* McshDeut.Aussage!~die!=Hmnmsent,
+  McshLag000007:28804  <br>* McshElln.πρόταση!η!=sentence,  ->  <br>* McshElln.πρόταση!η!=Hmnmsent,
+  McshLag000007:28779  ADD  McshEngl.sentence!⇒Hmnmsent,
+  McshLag000007:29251  <h3 id="idLHmnmsntcgstrH3">GENERIC-SPECIFIC-TREE of sentence  ->  <h3 id="idLHmnmsntcgstrH3">GENERIC-SPECIFIC-TREE of Hmnmsent
+  McshLag000007:29257  <br>* McshEngl.sentence'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsent'generic-specific-tree,
+  McshLag000007:29258  <br>* McshEngl.sentence'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsent'specific-generic-tree,
+  McshLag000007:29261  <br>* McshEngl.sentence_Gntr,  ->  <br>* McshEngl.Hmnmsent_Gntr,
+  McshLag000007:29267  <br>* McshEngl.sentence.specific,  ->  <br>* McshEngl.Hmnmsent.specific,
+  McshLag000007:29268  <br>* McshEngl.sentence_Sptr,  ->  <br>* McshEngl.Hmnmsent_Sptr,
+
+=== McshLag000010 (14)
+  McshLag000010:5725  <br>* McshEngl.sentence-of-Sngu_lagu!⇒Sngu_sent,  ->  <br>* McshEngl.sentence-of-Sngu_lagu!⇒Sngusent,
+  McshLag000010:5726  <br>* McshEngl.Sngu_sent!=sentence-of-Sngu_lagu,  ->  <br>* McshEngl.Sngusent!=sentence-of-Sngu_lagu,
+  McshLag000010:5727  <br>* McshEngl.Sngu_lagu'sentence!⇒Sngu_sent,  ->  <br>* McshEngl.Sngu_lagu'sentence!⇒Sngusent,
+  McshLag000010:5728  <br>* McshEngl.Sngu_lagu-node.sentence!⇒Sngu_sent,  ->  <br>* McshEngl.Sngu_lagu-node.sentence!⇒Sngusent,
+  McshLag000010:5729  <br>* McshEngl.Sngu_lagu-sentence!⇒Sngu_sent,  ->  <br>* McshEngl.Sngu_lagu-sentence!⇒Sngusent,
+  McshLag000010:5730  <br>* McshEngl.logo-sentence--of-Sngu_lagu!⇒Sngu_sent,  ->  <br>* McshEngl.logo-sentence--of-Sngu_lagu!⇒Sngusent,
+  McshLag000010:5731  <br>* McshEngl.sentSngo!⇒Sngu_sent,  ->  <br>* McshEngl.sentSngo!⇒Sngusent,
+  McshLag000010:5732  <br>* McshEngl.sentence.lango.sinagu!⇒Sngu_sent,  ->  <br>* McshEngl.sentence.lango.sinagu!⇒Sngusent,
+  McshLag000010:5733  <br>* McshEngl.sentenceLogSngo!⇒Sngu_sent,  ->  <br>* McshEngl.sentenceLogSngo!⇒Sngusent,
+  McshLag000010:5734  <br>* McshEngl.sentenceSngo!⇒Sngu_sent,  ->  <br>* McshEngl.sentenceSngo!⇒Sngusent,
+  McshLag000010:5735  <br>* McshEngl.sntLogSngo!⇒Sngu_sent,  ->  <br>* McshEngl.sntLogSngo!⇒Sngusent,
+  McshLag000010:5736  <br>* McshEngl.statement-of-Sngu_lagu!⇒Sngu_sent,  ->  <br>* McshEngl.statement-of-Sngu_lagu!⇒Sngusent,
+  McshLag000010:5737  <br>* McshEngl.SnguviewLogo'sentence!⇒Sngu_sent,  ->  <br>* McshEngl.SnguviewLogo'sentence!⇒Sngusent,
+  McshLag000010:5727  ADD  McshEngl.Sngu_sent!⇒Sngusent,
+
+=== McshLag000011 (13)
+  McshLag000011:29903  <br>* McshEngl.English-sentence!⇒Engl_sent,  ->  <br>* McshEngl.English-sentence!⇒Englsent,
+  McshLag000011:29904  <br>* McshEngl.Engl_sent!=English-sentence,  ->  <br>* McshEngl.Englsent!=English-sentence,
+  McshLag000011:29905  <br>* McshEngl.Engl_lago'sentence!⇒Engl_sent,  ->  <br>* McshEngl.Engl_lago'sentence!⇒Englsent,
+  McshLag000011:29906  <br>* McshEngl.Engl_lago-node.sentence!⇒Engl_sent,  ->  <br>* McshEngl.Engl_lago-node.sentence!⇒Englsent,
+  McshLag000011:29907  <br>* McshEngl.Engl_lago-sentence!⇒Engl_sent,  ->  <br>* McshEngl.Engl_lago-sentence!⇒Englsent,
+  McshLag000011:29908  <br>* McshEngl.logo-sentence--of-Engl_lago!⇒Engl_sent,  ->  <br>* McshEngl.logo-sentence--of-Engl_lago!⇒Englsent,
+  McshLag000011:29909  <br>* McshEngl.sentence.lango.English!⇒Engl_sent,  ->  <br>* McshEngl.sentence.lango.English!⇒Englsent,
+  McshLag000011:29910  <br>* McshEngl.sentence-of-Engl_lago!⇒Engl_sent,  ->  <br>* McshEngl.sentence-of-Engl_lago!⇒Englsent,
+  McshLag000011:29911  <br>* McshEngl.sentenceLogEngl!⇒Engl_sent,  ->  <br>* McshEngl.sentenceLogEngl!⇒Englsent,
+  McshLag000011:29912  <br>* McshEngl.sntLogEngl!⇒Engl_sent,  ->  <br>* McshEngl.sntLogEngl!⇒Englsent,
+  McshLag000011:29913  <br>* McshEngl.statement-of-Engl_lago!⇒Engl_sent,  ->  <br>* McshEngl.statement-of-Engl_lago!⇒Englsent,
+  McshLag000011:29914  <br>* McshEngl.Engl_logo_view'sentence!⇒Engl_sent,  ->  <br>* McshEngl.Engl_logo_view'sentence!⇒Englsent,
+  McshLag000011:29905  ADD  McshEngl.Engl_sent!⇒Englsent,
+
+=== McshLag000018 (37)
+  McshLag000018:15309  <br>* McshEngl.Zhon_sent_wo.SV,  ->  <br>* McshEngl.Zhonsent_wo.SV,
+  McshLag000018:15310  ADD  McshEngl.Zhon_sent_wo.SV!⇒Zhonsent_wo.SV,
+  McshLag000018:15264  <br>* McshEngl.Zhon_sent_wo,  ->  <br>* McshEngl.Zhonsent_wo,
+  McshLag000018:15265  <br>* McshEngl.Zhon_sent'word-order!⇒Zhon_sent_wo,  ->  <br>* McshEngl.Zhon_sent'word-order!⇒Zhonsent_wo,
+  McshLag000018:15266  <br>* McshEngl.Zhon_sent.Specsdiv.word-order!⇒Zhon_sent_wo,  ->  <br>* McshEngl.Zhon_sent.Specsdiv.word-order!⇒Zhonsent_wo,
+  McshLag000018:15267  <br>* McshEngl.Zhon_sent.word-order!⇒Zhon_sent_wo,  ->  <br>* McshEngl.Zhon_sent.word-order!⇒Zhonsent_wo,
+  McshLag000018:15268  <br>* McshEngl.word-order-of-Zhon_sent!⇒Zhon_sent_wo,  ->  <br>* McshEngl.word-order-of-Zhon_sent!⇒Zhonsent_wo,
+  McshLag000018:15265  ADD  McshEngl.Zhon_sent_wo!⇒Zhonsent_wo,
+  McshLag000018:15233  <br>* McshEngl.Chinese-sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Chinese-sentence!⇒Zhonsent,
+  McshLag000018:15234  <br>* McshEngl.Zhon_sent!=Chinese-sentence,  ->  <br>* McshEngl.Zhonsent!=Chinese-sentence,
+  McshLag000018:15235  <br>* McshEngl.Zhonsentence!⇒Zhon_sent,  ->  <br>* McshEngl.Zhonsentence!⇒Zhonsent,
+  McshLag000018:15236  <br>* McshEngl.Standard-Chinese-sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Standard-Chinese-sentence!⇒Zhonsent,
+  McshLag000018:15237  <br>* McshEngl.Zhon_lago'sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Zhon_lago'sentence!⇒Zhonsent,
+  McshLag000018:15238  <br>* McshEngl.Zhon_lago-node.sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Zhon_lago-node.sentence!⇒Zhonsent,
+  McshLag000018:15239  <br>* McshEngl.Zhon_lago-sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Zhon_lago-sentence!⇒Zhonsent,
+  McshLag000018:15240  <br>* McshEngl.logo-sentence--of-Zhon_lago!⇒Zhon_sent,  ->  <br>* McshEngl.logo-sentence--of-Zhon_lago!⇒Zhonsent,
+  McshLag000018:15241  <br>* McshEngl.sentZhon!⇒Zhon_sent,  ->  <br>* McshEngl.sentZhon!⇒Zhonsent,
+  McshLag000018:15242  <br>* McshEngl.sentence.lango.Standard-Chinese!⇒Zhon_sent,  ->  <br>* McshEngl.sentence.lango.Standard-Chinese!⇒Zhonsent,
+  McshLag000018:15243  <br>* McshEngl.sentence-of-Zhon_lago!⇒Zhon_sent,  ->  <br>* McshEngl.sentence-of-Zhon_lago!⇒Zhonsent,
+  McshLag000018:15244  <br>* McshEngl.sentenceZhon!⇒Zhon_sent,  ->  <br>* McshEngl.sentenceZhon!⇒Zhonsent,
+  McshLag000018:15245  <br>* McshEngl.sentenceLogZhon!⇒Zhon_sent,  ->  <br>* McshEngl.sentenceLogZhon!⇒Zhonsent,
+  McshLag000018:15246  <br>* McshEngl.sntLogZhon!⇒Zhon_sent,  ->  <br>* McshEngl.sntLogZhon!⇒Zhonsent,
+  McshLag000018:15247  <br>* McshEngl.statement-of-Zhon_lago!⇒Zhon_sent,  ->  <br>* McshEngl.statement-of-Zhon_lago!⇒Zhonsent,
+  McshLag000018:15248  <br>* McshEngl.Zhon_logo'sentence!⇒Zhon_sent,  ->  <br>* McshEngl.Zhon_logo'sentence!⇒Zhonsent,
+  McshLag000018:15235  ADD  McshEngl.Zhon_sent!⇒Zhonsent,
+  McshLag000018:15274  <h4 id="idLZhonsntcwdorgstrH4">GENERIC-SPECIFIC-TREE of Zhon_sent_wo  ->  <h4 id="idLZhonsntcwdorgstrH4">GENERIC-SPECIFIC-TREE of Zhonsent_wo
+  McshLag000018:15280  <br>* McshEngl.Zhon_sent_wo'generic-specific-tree,  ->  <br>* McshEngl.Zhonsent_wo'generic-specific-tree,
+  McshLag000018:15281  <br>* McshEngl.Zhon_sent_wo'specific-generic-tree,  ->  <br>* McshEngl.Zhonsent_wo'specific-generic-tree,
+  McshLag000018:15284  <br>* McshEngl.Zhon_sent_wo_Gntr,  ->  <br>* McshEngl.Zhonsent_wo_Gntr,
+  McshLag000018:15289  <br>* McshEngl.Zhon_sent_wo.specific,  ->  <br>* McshEngl.Zhonsent_wo.specific,
+  McshLag000018:15290  <br>* McshEngl.Zhon_sent_wo_Sptr,  ->  <br>* McshEngl.Zhonsent_wo_Sptr,
+  McshLag000018:15772  <h3 id="idLZhonsntcgstrH3">GENERIC-SPECIFIC-TREE of Zhon_sent  ->  <h3 id="idLZhonsntcgstrH3">GENERIC-SPECIFIC-TREE of Zhonsent
+  McshLag000018:15778  <br>* McshEngl.Zhon_sent'generic-specific-tree,  ->  <br>* McshEngl.Zhonsent'generic-specific-tree,
+  McshLag000018:15779  <br>* McshEngl.Zhon_sent'specific-generic-tree,  ->  <br>* McshEngl.Zhonsent'specific-generic-tree,
+  McshLag000018:15782  <br>* McshEngl.Zhon_sent_Gntr,  ->  <br>* McshEngl.Zhonsent_Gntr,
+  McshLag000018:15787  <br>* McshEngl.Zhon_sent.specific,  ->  <br>* McshEngl.Zhonsent.specific,
+  McshLag000018:15788  <br>* McshEngl.Zhon_sent_Sptr,  ->  <br>* McshEngl.Zhonsent_Sptr,
+
+=== McshLag000020 (6)
+  McshLag000020:12414  <br>* McshEngl.Greek-sentence!⇒Elln_sent,  ->  <br>* McshEngl.Greek-sentence!⇒Ellnsent,
+  McshLag000020:12415  <br>* McshEngl.Elln_sent!=Greek-sentence,  ->  <br>* McshEngl.Ellnsent!=Greek-sentence,
+  McshLag000020:12416  <br>* McshEngl.Elln_logo'sentence!⇒Elln_sent,  ->  <br>* McshEngl.Elln_logo'sentence!⇒Ellnsent,
+  McshLag000020:12418  <br>* McshElln.Ελλν_προτ!η!=Elln_sent,  ->  <br>* McshElln.Ελλν_προτ!η!=Ellnsent,
+  McshLag000020:12419  <br>* McshElln.πρόταση-Ελληνική!η!=Elln_sent,  ->  <br>* McshElln.πρόταση-Ελληνική!η!=Ellnsent,
+  McshLag000020:12416  ADD  McshEngl.Elln_sent!⇒Ellnsent,
+
+=== McshLag000035 (6)
+  McshLag000035:2141  <br>* McshEngl.sentence-of-Span_lago!⇒SpanSent,  ->  <br>* McshEngl.sentence-of-Span_lago!⇒Spansent,
+  McshLag000035:2142  <br>* McshEngl.SpanSent!=sentence-of-Span_lago,  ->  <br>* McshEngl.Spansent!=sentence-of-Span_lago,
+  McshLag000035:2143  <br>* McshEngl.Span_lago'sentence!⇒SpanSent,  ->  <br>* McshEngl.Span_lago'sentence!⇒Spansent,
+  McshLag000035:2144  <br>* McshEngl.sentSpan!⇒SpanSent,  ->  <br>* McshEngl.sentSpan!⇒Spansent,
+  McshLag000035:2145  <br>* McshEngl.SpanLogoView'sentence!⇒SpanSent,  ->  <br>* McshEngl.SpanLogoView'sentence!⇒Spansent,
+  McshLag000035:2143  ADD  McshEngl.SpanSent!⇒Spansent,
+
+=== McshLag000036 (6)
+  McshLag000036:2568  <br>* McshEngl.sentence-of-Arab_lago!⇒ArabSent,  ->  <br>* McshEngl.sentence-of-Arab_lago!⇒Arabsent,
+  McshLag000036:2569  <br>* McshEngl.ArabSent!=sentence-of-Arab_lago,  ->  <br>* McshEngl.Arabsent!=sentence-of-Arab_lago,
+  McshLag000036:2570  <br>* McshEngl.Arab_lago'sentence!⇒ArabSent,  ->  <br>* McshEngl.Arab_lago'sentence!⇒Arabsent,
+  McshLag000036:2571  <br>* McshEngl.sentArab!⇒ArabSent,  ->  <br>* McshEngl.sentArab!⇒Arabsent,
+  McshLag000036:2572  <br>* McshEngl.ArabLogoView'sentence!⇒ArabSent,  ->  <br>* McshEngl.ArabLogoView'sentence!⇒Arabsent,
+  McshLag000036:2570  ADD  McshEngl.ArabSent!⇒Arabsent,
+
+=== McshLag000037 (6)
+  McshLag000037:2043  <br>* McshEngl.sentence-of-Hiur_lago!⇒HiurSent,  ->  <br>* McshEngl.sentence-of-Hiur_lago!⇒Hiursent,
+  McshLag000037:2044  <br>* McshEngl.HiurSent!=sentence-of-Hiur_lago,  ->  <br>* McshEngl.Hiursent!=sentence-of-Hiur_lago,
+  McshLag000037:2045  <br>* McshEngl.Hiur_lago'sentence!⇒HiurSent,  ->  <br>* McshEngl.Hiur_lago'sentence!⇒Hiursent,
+  McshLag000037:2046  <br>* McshEngl.sentHiur!⇒HiurSent,  ->  <br>* McshEngl.sentHiur!⇒Hiursent,
+  McshLag000037:2047  <br>* McshEngl.HiurLogoView'sentence!⇒HiurSent,  ->  <br>* McshEngl.HiurLogoView'sentence!⇒Hiursent,
+  McshLag000037:2045  ADD  McshEngl.HiurSent!⇒Hiursent,
+
+=== McshLag000038 (6)
+  McshLag000038:1538  <br>* McshEngl.sentence-of-Slv0Lago!⇒Slv0Sent,  ->  <br>* McshEngl.sentence-of-Slv0Lago!⇒Slv0sent,
+  McshLag000038:1539  <br>* McshEngl.Slv0Sent!=sentence-of-Slv0Lago,  ->  <br>* McshEngl.Slv0sent!=sentence-of-Slv0Lago,
+  McshLag000038:1540  <br>* McshEngl.Slv0Lago'sentence!⇒Slv0Sent,  ->  <br>* McshEngl.Slv0Lago'sentence!⇒Slv0sent,
+  McshLag000038:1541  <br>* McshEngl.sentSlv0!⇒Slv0Sent,  ->  <br>* McshEngl.sentSlv0!⇒Slv0sent,
+  McshLag000038:1542  <br>* McshEngl.Slv0LogoView'sentence!⇒Slv0Sent,  ->  <br>* McshEngl.Slv0LogoView'sentence!⇒Slv0sent,
+  McshLag000038:1540  ADD  McshEngl.Slv0Sent!⇒Slv0sent,
+
+=== McshLag000039 (6)
+  McshLag000039:1206  <br>* McshEngl.sentence-of-Ide0_lago!⇒Ide0Sent,  ->  <br>* McshEngl.sentence-of-Ide0_lago!⇒Ide0sent,
+  McshLag000039:1207  <br>* McshEngl.Ide0Sent!=sentence-of-Ide0_lago,  ->  <br>* McshEngl.Ide0sent!=sentence-of-Ide0_lago,
+  McshLag000039:1208  <br>* McshEngl.Ide0_lago'sentence!⇒Ide0Sent,  ->  <br>* McshEngl.Ide0_lago'sentence!⇒Ide0sent,
+  McshLag000039:1209  <br>* McshEngl.sentIde0!⇒Ide0Sent,  ->  <br>* McshEngl.sentIde0!⇒Ide0sent,
+  McshLag000039:1210  <br>* McshEngl.Ide0LogoView'sentence!⇒Ide0Sent,  ->  <br>* McshEngl.Ide0LogoView'sentence!⇒Ide0sent,
+  McshLag000039:1208  ADD  McshEngl.Ide0Sent!⇒Ide0sent,
+
+=== McshLag000040 (6)
+  McshLag000040:1431  <br>* McshEngl.sentence-of-Afa0_lago!⇒Afa0Sent,  ->  <br>* McshEngl.sentence-of-Afa0_lago!⇒Afa0sent,
+  McshLag000040:1432  <br>* McshEngl.Afa0Sent!=sentence-of-Afa0_lago,  ->  <br>* McshEngl.Afa0sent!=sentence-of-Afa0_lago,
+  McshLag000040:1433  <br>* McshEngl.Afa0_lago'sentence!⇒Afa0Sent,  ->  <br>* McshEngl.Afa0_lago'sentence!⇒Afa0sent,
+  McshLag000040:1434  <br>* McshEngl.sentAfa0!⇒Afa0Sent,  ->  <br>* McshEngl.sentAfa0!⇒Afa0sent,
+  McshLag000040:1435  <br>* McshEngl.Afa0LogoView'sentence!⇒Afa0Sent,  ->  <br>* McshEngl.Afa0LogoView'sentence!⇒Afa0sent,
+  McshLag000040:1433  ADD  McshEngl.Afa0Sent!⇒Afa0sent,
+
+=== McshLag000041 (6)
+  McshLag000041:1341  <br>* McshEngl.sentence-of-Tur0_lago!⇒Tur0Sent,  ->  <br>* McshEngl.sentence-of-Tur0_lago!⇒Tur0sent,
+  McshLag000041:1342  <br>* McshEngl.Tur0Sent!=sentence-of-Tur0_lago,  ->  <br>* McshEngl.Tur0sent!=sentence-of-Tur0_lago,
+  McshLag000041:1343  <br>* McshEngl.Tur0_lago'sentence!⇒Tur0Sent,  ->  <br>* McshEngl.Tur0_lago'sentence!⇒Tur0sent,
+  McshLag000041:1344  <br>* McshEngl.sentTur0!⇒Tur0Sent,  ->  <br>* McshEngl.sentTur0!⇒Tur0sent,
+  McshLag000041:1345  <br>* McshEngl.Tur0LogoView'sentence!⇒Tur0Sent,  ->  <br>* McshEngl.Tur0LogoView'sentence!⇒Tur0sent,
+  McshLag000041:1343  ADD  McshEngl.Tur0Sent!⇒Tur0sent,
+
+=== McshLag000042 (6)
+  McshLag000042:1352  <br>* McshEngl.sentence-of-Asa0_lago!⇒Asa0Sent,  ->  <br>* McshEngl.sentence-of-Asa0_lago!⇒Asa0sent,
+  McshLag000042:1353  <br>* McshEngl.Asa0Sent!=sentence-of-Asa0_lago,  ->  <br>* McshEngl.Asa0sent!=sentence-of-Asa0_lago,
+  McshLag000042:1354  <br>* McshEngl.Asa0_lago'sentence!⇒Asa0Sent,  ->  <br>* McshEngl.Asa0_lago'sentence!⇒Asa0sent,
+  McshLag000042:1355  <br>* McshEngl.sentAsa0!⇒Asa0Sent,  ->  <br>* McshEngl.sentAsa0!⇒Asa0sent,
+  McshLag000042:1356  <br>* McshEngl.Asa0LogoView'sentence!⇒Asa0Sent,  ->  <br>* McshEngl.Asa0LogoView'sentence!⇒Asa0sent,
+  McshLag000042:1354  ADD  McshEngl.Asa0Sent!⇒Asa0sent,
+
+=== McshLag000043 (6)
+  McshLag000043:3183  <br>* McshEngl.sentence-of-Kora_lago!⇒KoraSent,  ->  <br>* McshEngl.sentence-of-Kora_lago!⇒Korasent,
+  McshLag000043:3184  <br>* McshEngl.KoraSent!=sentence-of-Kora_lago,  ->  <br>* McshEngl.Korasent!=sentence-of-Kora_lago,
+  McshLag000043:3185  <br>* McshEngl.Kora_lago'sentence!⇒KoraSent,  ->  <br>* McshEngl.Kora_lago'sentence!⇒Korasent,
+  McshLag000043:3186  <br>* McshEngl.sentKora!⇒KoraSent,  ->  <br>* McshEngl.sentKora!⇒Korasent,
+  McshLag000043:3187  <br>* McshEngl.Kora_logo_view'sentence!⇒KoraSent,  ->  <br>* McshEngl.Kora_logo_view'sentence!⇒Korasent,
+  McshLag000043:3185  ADD  McshEngl.KoraSent!⇒Korasent,
+
+=== McshStn000034 (5)
+  McshStn000034:3672  <br>* McshEngl.Vietnamese-sentence!⇒VnmaSent,  ->  <br>* McshEngl.Vietnamese-sentence!⇒Vnmasent,
+  McshStn000034:3673  <br>* McshEngl.VnmaSent!=Vietnamese-sentence,  ->  <br>* McshEngl.Vnmasent!=Vietnamese-sentence,
+  McshStn000034:3674  <br>* McshEngl.logoVnma'sentence!⇒VnmaSent,  ->  <br>* McshEngl.logoVnma'sentence!⇒Vnmasent,
+  McshStn000034:3675  <br>* McshEngl.sentVnma!⇒VnmaSent,  ->  <br>* McshEngl.sentVnma!⇒Vnmasent,
+  McshStn000034:3674  ADD  McshEngl.VnmaSent!⇒Vnmasent,
+
+=== McshStn000035 (5)
+  McshStn000035:3348  <br>* McshEngl.Italian-sentence!⇒ItlnSent,  ->  <br>* McshEngl.Italian-sentence!⇒Itlnsent,
+  McshStn000035:3349  <br>* McshEngl.ItlnSent!=Italian-sentence,  ->  <br>* McshEngl.Itlnsent!=Italian-sentence,
+  McshStn000035:3350  <br>* McshEngl.logoItln'sentence!⇒ItlnSent,  ->  <br>* McshEngl.logoItln'sentence!⇒Itlnsent,
+  McshStn000035:3351  <br>* McshEngl.sentItln!⇒ItlnSent,  ->  <br>* McshEngl.sentItln!⇒Itlnsent,
+  McshStn000035:3350  ADD  McshEngl.ItlnSent!⇒Itlnsent,
+
+=== McshTchInf000006 (1)
+  McshTchInf000006:231  <br>* sentence!@McshTchInf000006#idLCpgmsntc,  ->  <br>* Hmnmsent!@McshTchInf000006#idLCpgmsntc,

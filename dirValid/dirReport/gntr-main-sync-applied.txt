@@ -1,0 +1,300 @@
+GENERIC-TREE NAME = MAIN-NAME APPLIED — 2026-10-24
+generic-trees: 283 | renamed X_Gntr: 75 (dash-only 24, other 51) | lines changed (heads + references): 112 in 24 files
+not changed: other-concept GS-TREE 11, misplaced 1, no main-name 196, collision 0, duplicate head 0
+
+=== DASH-ONLY (24)
+  McshHlth000002:3191  adrenal-medulla_Gntr -> adrenal_medulla_Gntr
+  McshHlth000002:11922  OganUrinary-bladder_Gntr -> OganUrinary_bladder_Gntr
+  McshHlth000002:15065  intrauterine-life_Gntr -> intrauterine_life_Gntr
+  McshHlth000019:404  sensory-center_Gntr -> sensory_center_Gntr
+  McshHlth000019:437  auditory-center_Gntr -> auditory_center_Gntr
+  McshHlth000019:522  language-center_Gntr -> language_center_Gntr
+  McshHlth000019:575  premotor-center_Gntr -> premotor_center_Gntr
+  McshHlth000019:601  touch-center_Gntr -> touch_center_Gntr
+  McshHlth000019:629  tasting-center_Gntr -> tasting_center_Gntr
+  McshHlth000019:660  temperature-center_Gntr -> temperature_center_Gntr
+  McshHlth000019:687  pressure-center_Gntr -> pressure_center_Gntr
+  McshHlth000019:714  pain-center_Gntr -> pain_center_Gntr
+  McshHlth000019:740  sleep-center_Gntr -> sleep_center_Gntr
+  McshHlth000019:896  dura-matter_Gntr -> dura_matter_Gntr
+  McshHlth000019:927  arachnoid-matter_Gntr -> arachnoid_matter_Gntr
+  McshHlth000019:958  pia-mater_Gntr -> pia_mater_Gntr
+  McshHlth000019:1820  lacrimal-apparatus_Gntr -> lacrimal_apparatus_Gntr
+  McshHlth000019:3107  balance-system_Gntr -> balance_system_Gntr
+  McshHlth000019:3205  pain-system_Gntr -> pain_system_Gntr
+  McshHlth000019:3359  olfactory-mucous_Gntr -> olfactory_mucous_Gntr
+  McshHlth000019:3529  temperature-sensory-system_Gntr -> temperature_sensory_system_Gntr
+  McshHlth000019:3565  touching-system_Gntr -> touching_system_Gntr
+  McshHlth000019:3729  OganSpinal-cord_Gntr -> OganSpinal_cord_Gntr
+  McshStn000010:298  usage-Sfrowner_Gntr -> usage_Sfrowner_Gntr
+
+=== OTHER (51)
+  McshCor000002:1463  Mcs_division_Gntr -> Mcsdivision_Gntr
+  McshCor000002:3956  AAj'doing_Gntr -> McsMgrAAj'doing_Gntr
+  McshCor000004:2157  DongCleaning_Gntr -> ActgCleaning_Gntr
+  McshCor000009:580  measuring_Gntr -> ActgMeasuring_Gntr
+  McshCor000011:1727  tree_node_Gntr -> Treenode_Gntr
+  McshCor000018:4141  wanting_Gntr -> FctgEmotingWanting_Gntr
+  McshHlth000002:5806  mineral_Gntr -> mineral_nutrient_Gntr
+  McshHlth000002:14036  bodyHumn'moving_Gntr -> Hmbdmoving_Gntr
+  McshHlth000002:14552  excreting_Gntr -> FctgExcreting_Gntr
+  McshHlth000002:14657  fooding_Gntr -> FctgFooding_Gntr
+  McshHlth000011:1558  DissCauseExternal_Gntr -> DissExternal_cause_Gntr
+  McshHlth000011:2770  DissHaemophilia_Gntr -> DissHemophilia_Gntr
+  McshHlth000011:2837  DissAnemia_Gntr -> DissAnaemia_Gntr
+  McshHlth000011:3166  DissUraemia_Gntr -> DissUremia_Gntr
+  McshHlth000011:4399  DissSeasickness_Gntr -> DissMotion_sickness_Gntr
+  McshHlth000011:5007  DissSuddenDeath_Gntr -> DissSudden_death_Gntr
+  McshHlth000011:9569  DissDiarrheaTravel_Gntr -> DissTravel_diarrhea_Gntr
+  McshHlth000011:10199  DissPoliomyelitis_Gntr -> DissPolio_Gntr
+  McshHlth000011:10349  DissScarletfever_Gntr -> DissScarlet_fever_Gntr
+  McshHlth000011:11454  DissFungal_infection_Gntr -> DissFungal_Gntr
+  McshHlth000011:12155  DissLibido_Gntr -> DissSexual_desire_Gntr
+  McshHlth000011:12403  DissPepticulcer_Gntr -> DissPeptic_ulcer_Gntr
+  McshHlth000011:12682  DissStingJellyfish_Gntr -> DissJellyfish_stinging_Gntr
+  McshHlth000011:12724  DissStingInsect_Gntr -> DissInsect_bite_Gntr
+  McshHlth000011:13572  DissAcute_mountain_sickness_Gntr -> DissAms_Gntr
+  McshHlth000011:13943  DissSigella_Gntr -> DissGastroenteritis_sigkella_Gntr
+  McshHlth000011:14270  DissAsthma_Gntr -> DissBronchial_asthma_Gntr
+  McshHlth000011:14856  dssSIDS_Gntr -> DissSIDS_Gntr
+  McshLag000007:21812  nouner_Gntr -> memberorArgo_Gntr
+  McshLag000018:601  syntaxZhon_Gntr -> Zhon_syntax_Gntr
+  McshLag000018:12370  verberZhon_Gntr -> HmnmverbmbrrZhon_Gntr
+  McshLag000020:170  syntaxElln_Gntr -> SntxElln_Gntr
+  McshOgm000005:1794  hormoneCortisol_Gntr -> hormoneHmnCortisol_Gntr
+  McshOgm000005:1842  hormoneAldosterone_Gntr -> HrmnHumnAldosterone_Gntr
+  McshOgm000005:2011  hormoneMelatonine_Gntr -> HrmnHumnMelatonine_Gntr
+  McshOgm000006:279  phenylanine_Gntr -> phenylalanine_Gntr
+  McshStn000008:162  Ogzn'node_Gntr -> Oznnode_Gntr
+  McshStn000008:763  OgznBudget_Gntr -> Ogznbudget_Gntr
+  McshTchInf000015:1189  Agnetchain_tx_Gntr -> Agnttx_Gntr
+  McshTchInf000015:6998  Dwallet_Gntr -> Agnetwllt_Gntr
+  McshTchInf000016:5206  blockchain-con_Gntr -> Bkcncon_Gntr
+  McshTchInf000016:6231  BcnnetEvu_Gntr -> Bkcnasset_Gntr
+  McshTchInf000016:10732  Dcrnet_Gntr -> AgntDcrd_Gntr
+  McshTchInf000016:10822  AgntPivs_Gntr -> AgntPivx_Gntr
+  McshTchInf000016:12433  Ddash_net_Gntr -> AgntDash_Gntr
+  McshTchInf000016:13580  AgntEmrcn_Gntr -> AgntEmcn_Gntr
+  McshTchInf000016:14486  Ripple_net_Gntr -> AgntRppl_Gntr
+  McshTchInf000036:4202  techMl_Gntr -> TechMalr_Gntr
+  McshTchInf000036:4414  techDl_Gntr -> TechDplr_Gntr
+  McshTchInf000039:8114  lagoCycl_Gntr -> Cycl_lago_Gntr
+  McshTchInf000039:13556  lagoRdfw_Gntr -> Rdfw_lago_Gntr
+
+=== MISPLACED (1)
+  McshHlth000004:701  Dna_Gntr  is in section idCellHmnatt015_3 (main-name Dna'relation_to_Neanderthal); it is the tree of the whole, not changed
+
+=== OTHER-CONCEPT (11)
+  McshHlth000002:3536  HmbdTesticle_Gntr  in "GENERIC-SPECIFIC-TREE of HmbdTesticle" (whole idGlndHmn017: GlndTesticle) — another concept's GS-TREE, not changed
+  McshTchInf000006:3067  Srcdalgo_Gntr  in "GENERIC-SPECIFIC-TREE of Srcdalgo" (whole idLSrcd: Srcd_lago) — another concept's GS-TREE, not changed
+  McshTchInf000010:5349  Jsalgo_Gntr  in "GENERIC-SPECIFIC-TREE of Jsalgo" (whole idOverview: Jsgn_lago) — another concept's GS-TREE, not changed
+  McshTchInf000012:3974  Jsndalgo_Gntr  in "GENERIC-SPECIFIC-TREE of Jsndalgo" (whole idOverview: Jsnd_lago) — another concept's GS-TREE, not changed
+  McshTchInf000014:4612  Wasmalgo_Gntr  in "GENERIC-SPECIFIC-TREE of Wasmalgo" (whole idOverview: Wasm_lago) — another concept's GS-TREE, not changed
+  McshTchInf000016:3467  appending-asset_Gntr  in "GENERIC-SPECIFIC-TREE of appending-asset" (whole idDbcevuC: BkcnassetApdg) — another concept's GS-TREE, not changed
+  McshTchInf000016:15516  Humaniq_Gntr  in "GENERIC-SPECIFIC-TREE of Humaniq" (whole idHmqnet: AgntHmiq) — another concept's GS-TREE, not changed
+  McshTchInf000023:261  Iota-net_Gntr  in "GENERIC-SPECIFIC-TREE of Iota-net" (whole idOverview: DnIota) — another concept's GS-TREE, not changed
+  McshTchInf000028:1026  Movealgo_Gntr  in "GENERIC-SPECIFIC-TREE of Movealgo" (whole idLMove: Move_lago) — another concept's GS-TREE, not changed
+  McshTchInf000030:3002  Rust_lago_algo_Gntr  in "GENERIC-SPECIFIC-TREE of Rust_lago_algo" (whole idOverview: Rust_lago) — another concept's GS-TREE, not changed
+  McshTchInf000031:2387  Cppzalgo_Gntr  in "GENERIC-SPECIFIC-TREE of Cppzalgo" (whole idOverview: Cppz_lago) — another concept's GS-TREE, not changed
+
+=== NO-MAIN (196)
+  Mcsh000000:225  Mws'management-tool_Gntr  (concept idMwstool has no clear main-name)
+  McshCor000004:1210  doing'valence_Gntr  (concept idDngatt002 has no clear main-name)
+  McshCor000006:3695  day_Gntr  (concept idTimeUomDay has no clear main-name)
+  McshCor000010:1708  quantoDefiNo_Gntr  (concept idQntDftN has no clear main-name)
+  McshCor000011:1394  order.relative_Gntr  (concept idSys001ordrRlv has no clear main-name)
+  McshCor000012:224  model-evaluation_Gntr  (concept idMdleval has no clear main-name)
+  McshCor000016:88  McsTest_Gntr  (concept idOverview has no clear main-name)
+  McshCor000018:5063  FctgBrainingCreating_Gntr  (concept idBrngHmnFct009 has no clear main-name)
+  McshEdu000005:5772  mathAppliedNo_Gntr  (concept idSMath002 has no clear main-name)
+  McshEdu000005:5843  mathNumber_theory_Gntr  (concept idSMath015 has no clear main-name)
+  McshEdu000005:7045  mathGeometry_Gntr  (concept idSMath007 has no clear main-name)
+  McshEdu000005:8172  mathTopology_Gntr  (concept idSMath013 has no clear main-name)
+  McshEdu000006:99  SophyWrkr_Gntr  (concept idSSophywrkr has no clear main-name)
+  McshEdu000010:2521  SciLagoComputational_Gntr  (concept idSLang003 has no clear main-name)
+  McshHlth000002:3161  adrenal-cortex_Gntr  (concept idBdyHmn545 has no clear main-name)
+  McshHlth000002:4345  TissCartilage_Gntr  (concept idBdyHmn099 has no clear main-name)
+  McshHlth000002:5447  nutrientSulfur_Gntr  (concept idBdyHmnatt015006 has no clear main-name)
+  McshHlth000002:5471  nutrientChlorine_Gntr  (concept idBdyHmnatt015007 has no clear main-name)
+  McshHlth000002:5497  nutrientCobalt_Gntr  (concept idBdyHmnatt015008 has no clear main-name)
+  McshHlth000002:5523  nutrientCopper_Gntr  (concept idBdyHmnatt015009 has no clear main-name)
+  McshHlth000002:5554  nutrientIron_Gntr  (concept idBdyHmnatt015010 has no clear main-name)
+  McshHlth000002:5593  nutritionManganese_Gntr  (concept idBdyHmnatt015011 has no clear main-name)
+  McshHlth000002:5617  nutrientMolybdenum_Gntr  (concept idBdyHmnatt015012 has no clear main-name)
+  McshHlth000002:5640  nutrientSelenium_Gntr  (concept idBdyHmnatt015013 has no clear main-name)
+  McshHlth000002:5669  nutrientZinc_Gntr  (concept idBdyHmnatt015014 has no clear main-name)
+  McshHlth000002:5694  nutrientIodine_Gntr  (concept idBdyHmnatt015015 has no clear main-name)
+  McshHlth000002:5838  calciumAtmHumn_Gntr  (concept idBdyHmnatt015016 has no clear main-name)
+  McshHlth000002:5864  nutrientPhosphorus_Gntr  (concept idBdyHmnatt015017 has no clear main-name)
+  McshHlth000002:5902  nutrientPotassium_Gntr  (concept idBdyHmnatt015018 has no clear main-name)
+  McshHlth000002:5928  nutrientSodium_Gntr  (concept idBdyHmnatt015019 has no clear main-name)
+  McshHlth000002:5952  nutrientMagnesium_Gntr  (concept idBdyHmnatt015020 has no clear main-name)
+  McshHlth000002:9082  DissThroatSore_Gntr  (concept idBdyHmn220 has no clear main-name)
+  McshHlth000002:10145  OganTooth_Gntr  (concept idBdyHmn110 has no clear main-name)
+  McshHlth000002:10289  OganUvula_Gntr  (concept idBdyHmn328 has no clear main-name)
+  McshHlth000002:10657  OganIntestine_Gntr  (concept idOgnHmn030 has no clear main-name)
+  McshHlth000002:10691  OganIntestineSmall_Gntr  (concept idOgnHmn033 has no clear main-name)
+  McshHlth000002:12583  OganVulva_Gntr  (concept idOgnHmn014 has no clear main-name)
+  McshHlth000002:13322  ogmHstHumn_Gntr  (concept idBdyHmnOgmMicr has no clear main-name)
+  McshHlth000002:14129  homeostasis_Gntr  (concept idBdyHmn377 has no clear main-name)
+  McshHlth000002:14479  HmbdCommunicating_Gntr  (concept idBdyHmn298 has no clear main-name)
+  McshHlth000002:14519  digesting_Gntr  (concept idBdyHmn334 has no clear main-name)
+  McshHlth000002:14826  HmbdHarmfulExternalProcess_Gntr  (concept idBdyHmn216 has no clear main-name)
+  McshHlth000002:15422  HmbdDeath_Gntr  (concept idBdyHmnatt038 has no clear main-name)
+  McshHlth000002:15580  bodyHmnMan_Gntr  (concept idBdyHmn205 has no clear main-name)
+  McshHlth000004:475  chromosome_Gntr  (concept idCellHmnatt016 has no clear main-name)
+  McshHlth000004:663  DnaBase_Gntr  (concept idCellHmnatt015_2 has no clear main-name)
+  McshHlth000004:810  DnaGene_Gntr  (concept idCellHmnatt013 has no clear main-name)
+  McshHlth000004:1514  cellGamete_Gntr  (concept idCellHmn011 has no clear main-name)
+  McshHlth000004:1549  lymph-cell_Gntr  (concept idCellHmn012 has no clear main-name)
+  McshHlth000004:1788  cardiac-muscle-cell_Gntr  (concept idCellHmn022 has no clear main-name)
+  McshHlth000004:1871  cellOvum_Gntr  (concept idCellHmn014 has no clear main-name)
+  McshHlth000004:1911  photoreceptor-cell_Gntr  (concept idCellHmn015 has no clear main-name)
+  McshHlth000004:2059  red-blood-cell_Gntr  (concept idCellHmn009 has no clear main-name)
+  McshHlth000004:2249  spermatozoon_Gntr  (concept idCellHmn017 has no clear main-name)
+  McshHlth000004:2321  taste-receptor-cell_Gntr  (concept idCellHmn018 has no clear main-name)
+  McshHlth000004:2458  cellLeucocyte_Gntr  (concept idCellHmn019 has no clear main-name)
+  McshHlth000008:520  substanceHlth_Gntr  (concept idHlthHmnsbtc has no clear main-name)
+  McshHlth000008:635  harmful-external-object_Gntr  (concept idMtrlHrmHmn001 has no clear main-name)
+  McshHlth000011:2926  DissThalassemia_Gntr  (concept idDssHmnAnmThlsm has no clear main-name)
+  McshHlth000011:7565  AnxietyFood_Gntr  (concept idDssHmn079therapyfood has no clear main-name)
+  McshHlth000011:12814  DissHair_loss_Gntr  (concept idDssHmn204 has no clear main-name)
+  McshHlth000013:184  food-nutrient_Gntr  (concept idFoodHmnatt003 has no clear main-name)
+  McshHlth000013:2650  drinkAlchoholic_Gntr  (concept idFoodHmn022 has no clear main-name)
+  McshHlth000013:3086  drinkCocoa_Gntr  (concept idFoodHmn014 has no clear main-name)
+  McshHlth000013:5544  foodSuper_Gntr  (concept idFoodHmn067 has no clear main-name)
+  McshHlth000013:6114  foodCondiment_Gntr  (concept idFoodHmn082 has no clear main-name)
+  McshHlth000013:7755  foodPilaf_Gntr  (concept idFoodHmn122 has no clear main-name)
+  McshHlth000013:7848  foodRice_soup_Gntr  (concept idFoodHmn123 has no clear main-name)
+  McshHlth000013:7949  foodMeatball_Gntr  (concept idFoodHmn128 has no clear main-name)
+  McshHlth000013:8063  foodMousaka_Gntr  (concept idFoodHmn130 has no clear main-name)
+  McshHlth000013:8171  foodPastitsio_Gntr  (concept idFoodHmn132 has no clear main-name)
+  McshHlth000013:8232  foodSpaghetti_Gntr  (concept idFoodHmn133 has no clear main-name)
+  McshHlth000013:8302  foodSouffle_spaghetti_Gntr  (concept idFoodHmn135 has no clear main-name)
+  McshHlth000013:8428  foodStuffed_tomatoes_Gntr  (concept idFoodHmn137 has no clear main-name)
+  McshHlth000013:8630  foodTaramosalata_Gntr  (concept idFoodHmn140 has no clear main-name)
+  McshHlth000013:8682  foodBechamel_Gntr  (concept idFoodHmn141 has no clear main-name)
+  McshHlth000013:9234  meatLemonish_Gntr  (concept idFoodHmn147 has no clear main-name)
+  McshHlth000013:9619  meatHashed_Gntr  (concept idFoodHmn151 has no clear main-name)
+  McshHlth000013:9714  foodSoupKnorr_Gntr  (concept idFoodHmn176 has no clear main-name)
+  McshHlth000013:9739  foodSoupAvgolemono_Gntr  (concept idFoodHmn185 has no clear main-name)
+  McshHlth000013:9777  foodOmelet_Gntr  (concept idFoodHmn177 has no clear main-name)
+  McshHlth000013:9816  foodPotatosBloom_Gntr  (concept idFoodHmn178 has no clear main-name)
+  McshHlth000013:9854  foodPotatosLemonish_Gntr  (concept idFoodHmn179 has no clear main-name)
+  McshHlth000013:9893  foodSauceTomato_Gntr  (concept idFoodHmn184 has no clear main-name)
+  McshHlth000013:9941  meatLiver_Gntr  (concept idFoodHmn186 has no clear main-name)
+  McshHlth000013:9974  foodSauceTzatziki_Gntr  (concept idFoodHmn187 has no clear main-name)
+  McshHlth000013:10014  foodOctopusVinegarish_Gntr  (concept idFoodHmn189 has no clear main-name)
+  McshHlth000013:10053  foodOnion_Gntr  (concept idFoodHmn193 has no clear main-name)
+  McshHlth000013:10347  foodYogurt_Gntr  (concept idFoodHmn197 has no clear main-name)
+  McshHlth000013:10516  foodSquid_Gntr  (concept idFoodHmn200 has no clear main-name)
+  McshHlth000013:10884  dessertHhalvaIcecream_Gntr  (concept idFoodHmn205 has no clear main-name)
+  McshHlth000013:11170  foodSaladBean_Gntr  (concept idFoodHmn188 has no clear main-name)
+  McshHlth000013:11207  foodGreens_Gntr  (concept idFoodHmn124 has no clear main-name)
+  McshHlth000013:11306  foodSaladTahini_Gntr  (concept idFoodHmn208 has no clear main-name)
+  McshHlth000013:11369  foodSaladPotato_Gntr  (concept idFoodHmn180 has no clear main-name)
+  McshHlth000013:11456  foodPepper_Gntr  (concept idFoodHmn181 has no clear main-name)
+  McshHlth000019:472  visual-center_Gntr  (concept idSysNrvsatt021 has no clear main-name)
+  McshHlth000019:549  primary-motor-center_Gntr  (concept idSysNrvsatt023 has no clear main-name)
+  McshHmn000002:3234  human'relative-human_Gntr  (concept idHmnatt126 has no clear main-name)
+  McshHmn000002:5709  asylum-seaker_Gntr  (concept idHmn027 has no clear main-name)
+  McshLag000000:83  dirLag'McsTodo_Gntr  (concept idMwsdirLagTodo has no clear main-name)
+  McshLag000006:309  computer-char_Gntr  (concept idCharCmr has no clear main-name)
+  McshLag000006:1151  charUncd'Line_Break_property_Gntr  (concept idCharUcdlnbk has no clear main-name)
+  McshLag000010:2237  Sngu_lagu'syllabication_Gntr  (concept idL0014sylbn has no clear main-name)
+  McshLag000010:4846  memberorSngo_Gntr  (concept idL0014termiflr has no clear main-name)
+  McshLag000020:12862  paralanguageElln_Gntr  (concept idLEllnpara has no clear main-name)
+  McshLag000030:7832  Turkconj_Gntr  (concept idLTurkconj has no clear main-name)
+  McshNtr000002:313  material'weight_Gntr  (concept idMtrlatt007 has no clear main-name)
+  McshNtr000005:107  physical-property_Gntr  (concept idSysMolsatt004 has no clear main-name)
+  McshOgm000004:741  biopolymer_Gntr  (concept idMolOgm003 has no clear main-name)
+  McshOgm000004:851  ligninOgsm_Gntr  (concept idMolOgm008 has no clear main-name)
+  McshOgm000004:873  melaninOgsm_Gntr  (concept idMolOgm009 has no clear main-name)
+  McshOgm000004:893  suberinOgsm_Gntr  (concept idMolOgm010 has no clear main-name)
+  McshOgm000005:829  sterol_Gntr  (concept idSysMolsHmn013Strd has no clear main-name)
+  McshOgm000006:302  valine_Gntr  (concept idPrtnOgmatt003003valn has no clear main-name)
+  McshOgm000006:325  threonine_Gntr  (concept idPrtnOgmatt003003Trnn has no clear main-name)
+  McshOgm000006:347  tryptophan_Gntr  (concept idPrtnOgmatt003003Trpfn has no clear main-name)
+  McshOgm000006:370  methionine_Gntr  (concept idPrtnOgmatt003003Mtnn has no clear main-name)
+  McshOgm000006:420  isoleucine_Gntr  (concept idPrtnOgmatt003003Iscn has no clear main-name)
+  McshOgm000006:446  lysine_Gntr  (concept idPrtnOgmatt003003Lysn has no clear main-name)
+  McshOgm000006:469  histidine_Gntr  (concept idPrtnOgmatt003003Hsdn has no clear main-name)
+  McshOgm000007:993  co-receptor_Gntr  (concept idCellOgmatt041009 has no clear main-name)
+  McshOgm000007:1793  cellAnimal_Gntr  (concept idCellAnml has no clear main-name)
+  McshOgm000007:1917  cellPlant_Gntr  (concept idCellPlnt has no clear main-name)
+  McshStn000009:8816  SoctEmpire_Gntr  (concept idSocHumn029 has no clear main-name)
+  McshStn000010:2490  satisfierOgzn_Gntr  (concept idSfrHmn029 has no clear main-name)
+  McshStn000011:199  worker_Gntr  (concept idWkratt008 has no clear main-name)
+  McshStn000015:139  OgznPrdg'node_Gntr  (concept idOznPdnatt025 has no clear main-name)
+  McshStnlaw000002:377  oznCourt_Gntr  (concept idLawatt006Cort has no clear main-name)
+  McshStnlaw000004:1304  lawIntlTreaty_Gntr  (concept idLawInl002 has no clear main-name)
+  McshTchInf000003:609  Softinterface_Gntr  (concept idCmratt004Soft has no clear main-name)
+  McshTchInf000006:2959  Srcd_lago-sentence.definition_Gntr  (concept idLSrcdsntcDef has no clear main-name)
+  McshTchInf000007:1484  lagCnklMrkp_Gntr  (concept idLCnknt039 has no clear main-name)
+  McshTchInf000010:6960  Jsgnengine_Gntr  (concept idLJsgntolEgn has no clear main-name)
+  McshTchInf000015:2231  lawAnasset_Gntr  (concept idAlgntevulaw has no clear main-name)
+  McshTchInf000015:5323  netAlgo-govc'rule_Gntr  (concept idAlgntgovrule has no clear main-name)
+  McshTchInf000015:7050  chain-stats_Gntr  (concept idAlgntstat has no clear main-name)
+  McshTchInf000015:8703  LykklyciPro_Gntr  (concept idLkxLycibnft has no clear main-name)
+  McshTchInf000015:9958  netAlgo'scalability_Gntr  (concept idAlgntsclbt has no clear main-name)
+  McshTchInf000015:11422  AgntserviceMoney_Gntr  (concept idAlgntsvcMoe has no clear main-name)
+  McshTchInf000016:13414  Ddash-net'wallet_Gntr  (concept idDashwlt has no clear main-name)
+  McshTchInf000021:2602  Eos-client_Gntr  (concept idEospgmClnt has no clear main-name)
+  McshTchInf000021:2785  Agnteos-Dapp.game_Gntr  (concept idEospgmAppGam has no clear main-name)
+  McshTchInf000024:391  Steem-transaction'operation_Gntr  (concept idSteemtxopn has no clear main-name)
+  McshTchInf000024:2535  Steem--key-pair_Gntr  (concept idSteemacntkey has no clear main-name)
+  McshTchInf000024:3905  Steemit_Gntr  (concept idSteemit has no clear main-name)
+  McshTchInf000026:1873  Blockstack-net'human_Gntr  (concept idBkskhmnFT has no clear main-name)
+  McshTchInf000028:2323  DnDiem-Cli'command_Gntr  (concept idDnlbrclicmd has no clear main-name)
+  McshTchInf000031:1878  Cppzsunt.process_Gntr  (concept idLCppsuntPrcs has no clear main-name)
+  McshTchInf000031:1914  Cppzsunt.processNo_Gntr  (concept idLCppsuntPrcsN has no clear main-name)
+  McshTchInf000031:1957  Cppzsunt.process-and-processNo_Gntr  (concept idLCppsuntPrcsB has no clear main-name)
+  McshTchInf000038:860  LlmApp_Gntr  (concept idTchLlmusag has no clear main-name)
+  McshTchInf000039:8773  ontologyUpperNo_Gntr  (concept idLKnlg010otptDmin has no clear main-name)
+  McshTchInf000040:821  Webframework_Gntr  (concept idWwwfmwk has no clear main-name)
+  McshTchInf000041:1006  Vsc_ai_cstm_insn_Gntr  (concept idVscodecmin has no clear main-name)
+  McshWrdidxElln00:53  McshWrdidxElln00_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln01alfa_1:14490  McshWrdidxElln01alfa_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln01alfa_2:28061  McshWrdidxElln01alfa_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln01alfa_3:22357  McshWrdidxElln01alfa_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln01alfa_4:23500  McshWrdidxElln01alfa_4_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln01alfa_5:24395  McshWrdidxElln01alfa_5_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln02vita:26721  McshWrdidxElln02vita_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln03yama:24824  McshWrdidxElln03yama_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln04dhelta:32172  McshWrdidxElln04dhelta_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln05epsilon_1:5836  McshWrdidxElln05epsilon_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln05epsilon_2:22857  McshWrdidxElln05epsilon_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln05epsilon_3:26964  McshWrdidxElln05epsilon_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln06zita:7011  McshWrdidxElln06zita_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln07ita:5976  McshWrdidxElln07ita_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln08thita:11005  McshWrdidxElln08thita_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln09yxota:11337  McshWrdidxElln09yxota_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln10kapa_1:7357  McshWrdidxElln10kapa_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln10kapa_2:38811  McshWrdidxElln10kapa_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln10kapa_3:34081  McshWrdidxElln10kapa_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln11lamdha:22191  McshWrdidxElln11lamdha_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln12mi_1:5646  McshWrdidxElln12mi_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln12mi_2:11919  McshWrdidxElln12mi_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln12mi_3:14439  McshWrdidxElln12mi_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln12mi_4:13619  McshWrdidxElln12mi_4_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln12mi_5:12206  McshWrdidxElln12mi_5_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln13ni:17622  McshWrdidxElln13ni_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln14ksi:9554  McshWrdidxElln14ksi_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln15omikron:21755  McshWrdidxElln15omikron_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln16pi_1:4828  McshWrdidxElln16pi_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln16pi_2:31655  McshWrdidxElln16pi_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln16pi_3:34359  McshWrdidxElln16pi_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln17ro:13786  McshWrdidxElln17ro_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln18siyma_1:5213  McshWrdidxElln18siyma_1_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln18siyma_2:30218  McshWrdidxElln18siyma_2_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln18siyma_3:28292  McshWrdidxElln18siyma_3_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln19taf:40589  McshWrdidxElln19taf_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln20ipsilon:16851  McshWrdidxElln20ipsilon_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln21fi:24994  McshWrdidxElln21fi_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln22hxi:21780  McshWrdidxElln22hxi_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln23psi:7945  McshWrdidxElln23psi_Gntr  (concept idOverview has no clear main-name)
+  McshWrdidxElln24oméya:2244  McshWrdidxElln24oméya_Gntr  (concept idOverview has no clear main-name)
+
+=== COLLISION (0)
+
+=== DUPLICATE-HEAD (0)

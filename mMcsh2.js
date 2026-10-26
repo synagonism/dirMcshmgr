@@ -212,6 +212,11 @@ let
   // % of window width of pageinfo-container
   nCfgPageinfoWidth = 30,
 
+  // info|content splitter drag-state (mouse drag / touch long-press)
+  bSplitDrag = false,
+  nSplitPressTimer = 0,
+  nSplitDownX = 0,
+
   // holds the-object of the-Html-element a-user clicks on
   oEltClicked =  document.body,
   // holds the-site-structure
@@ -276,6 +281,8 @@ let fContainersInsert = function () {
     oEltCnrMainDiv = document.createElement('div'),
     oEltCnrMainContentDiv = document.createElement('div'),
     oEltCnrMainInfoDiv = document.createElement('div'),
+    // draggable vertical splitter between info and content,
+    oEltCnrSplitDiv = document.createElement('div'),
     // extra containers,
     oEltCnrWidthDiv = document.createElement('div'),
     // Page-info-cnr: PathP, TabHeadersUl, TabCntDiv,
@@ -1659,24 +1666,70 @@ let fContainersInsert = function () {
 
   // insert MainPginf-cnr in Main-cnr */
   oEltCnrMainDiv.insertBefore(oEltCnrMainInfoDiv, oEltCnrMainDiv.firstChild)
+  // splitter sits at the-info|content boundary
+  oEltCnrSplitDiv.id = 'idCnrSplitDiv'
+  oEltCnrMainDiv.appendChild(oEltCnrSplitDiv)
 
-  // Sets width of MainPginf-cnr
+  // Sets info|content widths from a-px boundary (shared by radios, resize, drag).
+  // Positions the-splitter on the-boundary too.
+  function fSetPageinfoPx(nPxIn) {
+    let nPx = nPxIn
+    if (nPx < 0) nPx = 0
+    if (nPx > window.innerWidth) nPx = window.innerWidth
+    oEltCnrMainInfoDiv.style.width = nPx + 'px'
+    oEltCnrMainContentDiv.style.width = (oEltCnrMainDiv.offsetWidth - nPx) + 'px'
+    oEltCnrMainContentDiv.style.left = nPx + 'px'
+    oEltCnrSplitDiv.style.left = nPx + 'px'
+  }
+
+  // Sets width of MainPginf-cnr from a-percent of the-window-width
   function fWidthPageinfo(nPercentIn) {
-    let
-      nWidthPagecont,
-      nWidthPageinfo
-
-    nWidthPageinfo = parseInt(window.innerWidth * (nPercentIn / 100))
-    nWidthPagecont = oEltCnrMainDiv.offsetWidth - nWidthPageinfo
-    oEltCnrMainInfoDiv.style.width = nWidthPageinfo + 'px'
-    oEltCnrMainContentDiv.style.width = nWidthPagecont + 'px'
-    oEltCnrMainContentDiv.style.left = nWidthPageinfo + 'px'
+    fSetPageinfoPx(parseInt(window.innerWidth * (nPercentIn / 100)))
   }
   fWidthPageinfo(nCfgPageinfoWidth)
   // needed for proper zoom
   window.addEventListener('resize', function () {
     fWidthPageinfo(nCfgPageinfoWidth)
   })
+
+  // DRAG the-splitter: mouse drags immediately, touch needs a-long-press first
+  // (so a-plain touch still scrolls). One Pointer-Events path for both.
+  function fSplitDragStart() {
+    bSplitDrag = true
+    oEltCnrSplitDiv.classList.add('clsSplitActive')
+    if (navigator.vibrate) navigator.vibrate(30)
+  }
+  function fSplitDragEnd() {
+    if (nSplitPressTimer) { clearTimeout(nSplitPressTimer); nSplitPressTimer = 0 }
+    if (bSplitDrag) {
+      bSplitDrag = false
+      oEltCnrSplitDiv.classList.remove('clsSplitActive')
+      // persist like the-radios do (in-memory percent, used on resize/reload)
+      nCfgPageinfoWidth = Math.round(parseInt(oEltCnrMainInfoDiv.style.width) /
+        window.innerWidth * 100)
+    }
+  }
+  oEltCnrSplitDiv.addEventListener('pointerdown', function (oEvtIn) {
+    oEvtIn.preventDefault()
+    // capture keeps pointermove on the-handle while the-pointer leaves the-thin strip
+    try { oEltCnrSplitDiv.setPointerCapture(oEvtIn.pointerId) } catch (oErr) { /* no active pointer */ }
+    nSplitDownX = oEvtIn.clientX
+    if (oEvtIn.pointerType === 'mouse') {
+      fSplitDragStart()
+    } else {
+      // touch/pen: engage only after a-long-press
+      nSplitPressTimer = setTimeout(function () { nSplitPressTimer = 0; fSplitDragStart() }, 400)
+    }
+  })
+  oEltCnrSplitDiv.addEventListener('pointermove', function (oEvtIn) {
+    // a-finger that moves before the-long-press fires = scroll, not resize
+    if (nSplitPressTimer && Math.abs(oEvtIn.clientX - nSplitDownX) > 8) {
+      clearTimeout(nSplitPressTimer); nSplitPressTimer = 0
+    }
+    if (bSplitDrag) fSetPageinfoPx(oEvtIn.clientX)
+  })
+  oEltCnrSplitDiv.addEventListener('pointerup', fSplitDragEnd)
+  oEltCnrSplitDiv.addEventListener('pointercancel', fSplitDragEnd)
 
   // on MainPgcnt-cnr get-id, highlight toc, highlight links, remove popup, remove clicked link
   fEvtContentClick = function (oEvtIn) {

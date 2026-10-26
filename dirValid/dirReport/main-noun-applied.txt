@@ -1,0 +1,212 @@
+NOUN MAIN-NAME -> <Code>noun APPLIED — 2026-10-25
+noun main-names: 23 | renamed: 23 | name:: paragraphs: 23 | tree/reference lines: 18 | old names kept (M!⇒N added): 23 | files: 20
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (20)
+  McshLag000007         19
+  McshLag000018         26
+  McshLag000020         16
+  McshLag000027          5
+  McshLag000033          7
+  McshLag000034          5
+  McshLag000035          5
+  McshLag000036          5
+  McshLag000037          5
+  McshLag000038          5
+  McshLag000039          5
+  McshLag000040          5
+  McshLag000041          5
+  McshLag000042          5
+  McshLag000043          5
+  McshStn000034          4
+  McshStn000035          4
+  McshStn000038          4
+  McshStn000048          5
+  McshStn000050          3
+
+=== McshLag000007 (19)
+  McshLag000007:21016  <br>* McshEngl.noun-of-Hmnm_lago!⇒Hmnm_noun,  ->  <br>* McshEngl.noun-of-Hmnm_lago!⇒Hmnmnoun,
+  McshLag000007:21017  <br>* McshEngl.Hmnm_noun!=noun-of-Hmnm_lago, {2025-11-01}  ->  <br>* McshEngl.Hmnmnoun!=noun-of-Hmnm_lago, {2025-11-01}
+  McshLag000007:21018  <br>* McshEngl.noun!⇒Hmnm_noun, {2022-03-25}  ->  <br>* McshEngl.noun!⇒Hmnmnoun, {2022-03-25}
+  McshLag000007:21019  <br>* McshEngl.noun.lagoElln!=ουσιαστικό!το!⇒Hmnm_noun,  ->  <br>* McshEngl.noun.lagoElln!=ουσιαστικό!το!⇒Hmnmnoun,
+  McshLag000007:21020  <br>* McshEngl.noun.lagoZhon!=名词-míngcí!⇒Hmnm_noun,  ->  <br>* McshEngl.noun.lagoZhon!=名词-míngcí!⇒Hmnmnoun,
+  McshLag000007:21021  <br>* McshEngl.nounHmnm!⇒Hmnm_noun, {2022-03-27}  ->  <br>* McshEngl.nounHmnm!⇒Hmnmnoun, {2022-03-27}
+  McshLag000007:21022  <br>* McshEngl.Hmnmargu'noun-name!⇒Hmnm_noun,  ->  <br>* McshEngl.Hmnmargu'noun-name!⇒Hmnmnoun,
+  McshLag000007:21033  <br>* McshZhon.gé-格!=Hmnm_noun,  ->  <br>* McshZhon.gé-格!=Hmnmnoun,
+  McshLag000007:21034  <br>* McshZhon.格-gé!=Hmnm_noun,  ->  <br>* McshZhon.格-gé!=Hmnmnoun,
+  McshLag000007:21036  <br>* McshEspo.substantivo!=Hmnm_noun,  ->  <br>* McshEspo.substantivo!=Hmnmnoun,
+  McshLag000007:21038  <br>* McshElln.ουσιαστικό!το!=Hmnm_noun, {2022-03-25}  ->  <br>* McshElln.ουσιαστικό!το!=Hmnmnoun, {2022-03-25}
+  McshLag000007:21040  <br>* McshTurk.önemli!=Hmnm_noun,  ->  <br>* McshTurk.önemli!=Hmnmnoun,
+  McshLag000007:21018  ADD  McshEngl.Hmnm_noun!⇒Hmnmnoun,
+  McshLag000007:21305  <h4 id="idLHmnmnoungstrH4">GENERIC-SPECIFIC-TREE of Hmnm_noun  ->  <h4 id="idLHmnmnoungstrH4">GENERIC-SPECIFIC-TREE of Hmnmnoun
+  McshLag000007:21311  <br>* McshEngl.Hmnm_noun'generic-specific-tree,  ->  <br>* McshEngl.Hmnmnoun'generic-specific-tree,
+  McshLag000007:21312  <br>* McshEngl.Hmnm_noun'specific-generic-tree,  ->  <br>* McshEngl.Hmnmnoun'specific-generic-tree,
+  McshLag000007:21315  <br>* McshEngl.Hmnm_noun_Gntr,  ->  <br>* McshEngl.Hmnmnoun_Gntr,
+  McshLag000007:21321  <br>* McshEngl.Hmnm_noun.specific,  ->  <br>* McshEngl.Hmnmnoun.specific,
+  McshLag000007:21322  <br>* McshEngl.Hmnm_noun_Sptr,  ->  <br>* McshEngl.Hmnmnoun_Sptr,
+
+=== McshLag000018 (26)
+  McshLag000018:8498  <br>* McshEngl.Zhon_noun_auxi.men_们,  ->  <br>* McshEngl.Zhonnoun_auxi.men_们,
+  McshLag000018:8499  <br>* McshEngl.Zhon_noun_auxi.men-们!⇒Zhon_noun_auxi.men_们,  ->  <br>* McshEngl.Zhon_noun_auxi.men-们!⇒Zhonnoun_auxi.men_们,
+  McshLag000018:8499  ADD  McshEngl.Zhon_noun_auxi.men_们!⇒Zhonnoun_auxi.men_们,
+  McshLag000018:8448  <br>* McshEngl.Zhon_noun_auxi,  ->  <br>* McshEngl.Zhonnoun_auxi,
+  McshLag000018:8449  <br>* McshEngl.Zhon_noun'auxiliary-part!⇒Zhon_noun_auxi,  ->  <br>* McshEngl.Zhon_noun'auxiliary-part!⇒Zhonnoun_auxi,
+  McshLag000018:8450  <br>* McshEngl.Zhon_noun'partB!⇒Zhon_noun_auxi,  ->  <br>* McshEngl.Zhon_noun'partB!⇒Zhonnoun_auxi,
+  McshLag000018:8451  <br>* McshEngl.auxiliary-part-of-Zhon_noun!⇒Zhon_noun_auxi,  ->  <br>* McshEngl.auxiliary-part-of-Zhon_noun!⇒Zhonnoun_auxi,
+  McshLag000018:8449  ADD  McshEngl.Zhon_noun_auxi!⇒Zhonnoun_auxi,
+  McshLag000018:8432  <br>* McshEngl.Zhon_noun_form,  ->  <br>* McshEngl.Zhonnoun_form,
+  McshLag000018:8433  <br>* McshEngl.auxiliaryNo-part-of-Zhon_noun!⇒Zhon_noun_form,  ->  <br>* McshEngl.auxiliaryNo-part-of-Zhon_noun!⇒Zhonnoun_form,
+  McshLag000018:8434  <br>* McshEngl.Zhon_noun'form-part!⇒Zhon_noun_form,  ->  <br>* McshEngl.Zhon_noun'form-part!⇒Zhonnoun_form,
+  McshLag000018:8435  <br>* McshEngl.Zhon_noun'partA!⇒Zhon_noun_form,  ->  <br>* McshEngl.Zhon_noun'partA!⇒Zhonnoun_form,
+  McshLag000018:8433  ADD  McshEngl.Zhon_noun_form!⇒Zhonnoun_form,
+  McshLag000018:8415  <br>* McshEngl.Chinese-noun!⇒Zhon_noun,  ->  <br>* McshEngl.Chinese-noun!⇒Zhonnoun,
+  McshLag000018:8416  <br>* McshEngl.Zhon_noun!=Chinese-noun,  ->  <br>* McshEngl.Zhonnoun!=Chinese-noun,
+  McshLag000018:8417  <br>* McshEngl.Zhonargu_mebr.noun!⇒Zhon_noun,  ->  <br>* McshEngl.Zhonargu_mebr.noun!⇒Zhonnoun,
+  McshLag000018:8418  <br>* McshEngl.nounZhon!⇒Zhon_noun,  ->  <br>* McshEngl.nounZhon!⇒Zhonnoun,
+  McshLag000018:8419  <br>* McshEngl.noun-of-Zhon_lago!⇒Zhon_noun,  ->  <br>* McshEngl.noun-of-Zhon_lago!⇒Zhonnoun,
+  McshLag000018:8420  <br>* McshEngl.Zhonargu'noun-name!⇒Zhon_noun,  ->  <br>* McshEngl.Zhonargu'noun-name!⇒Zhonnoun,
+  McshLag000018:8417  ADD  McshEngl.Zhon_noun!⇒Zhonnoun,
+  McshLag000018:8882  <h4 id="idLZhonnoungstrH4">GENERIC-SPECIFIC-TREE of Zhon_noun  ->  <h4 id="idLZhonnoungstrH4">GENERIC-SPECIFIC-TREE of Zhonnoun
+  McshLag000018:8888  <br>* McshEngl.Zhon_noun'generic-specific-tree,  ->  <br>* McshEngl.Zhonnoun'generic-specific-tree,
+  McshLag000018:8889  <br>* McshEngl.Zhon_noun'specific-generic-tree,  ->  <br>* McshEngl.Zhonnoun'specific-generic-tree,
+  McshLag000018:8892  <br>* McshEngl.Zhon_noun_Gntr,  ->  <br>* McshEngl.Zhonnoun_Gntr,
+  McshLag000018:8898  <br>* McshEngl.Zhon_noun.specific,  ->  <br>* McshEngl.Zhonnoun.specific,
+  McshLag000018:8899  <br>* McshEngl.Zhon_noun_Sptr,  ->  <br>* McshEngl.Zhonnoun_Sptr,
+
+=== McshLag000020 (16)
+  McshLag000020:2036  <br>* McshEngl.Greek-noun!⇒Elln_noun,  ->  <br>* McshEngl.Greek-noun!⇒Ellnnoun,
+  McshLag000020:2037  <br>* McshEngl.Elln_noun!=Greek-noun,  ->  <br>* McshEngl.Ellnnoun!=Greek-noun,
+  McshLag000020:2038  <br>* McshEngl.Elln_logo'noun!⇒Elln_noun,  ->  <br>* McshEngl.Elln_logo'noun!⇒Ellnnoun,
+  McshLag000020:2039  <br>* McshEngl.nounElln!⇒Elln_noun,  ->  <br>* McshEngl.nounElln!⇒Ellnnoun,
+  McshLag000020:2040  <br>* McshEngl.Elln_argu'noun-name!⇒Elln_noun,  ->  <br>* McshEngl.Elln_argu'noun-name!⇒Ellnnoun,
+  McshLag000020:2042  <br>* McshElln.Ελλν_ουσι!το!=Elln_noun,  ->  <br>* McshElln.Ελλν_ουσι!το!=Ellnnoun,
+  McshLag000020:2043  <br>* McshElln.ουσιαστικό!το!=Elln_noun,  ->  <br>* McshElln.ουσιαστικό!το!=Ellnnoun,
+  McshLag000020:2044  <br>* McshElln.ουσιαστικόΕλλν!=Elln_noun,  ->  <br>* McshElln.ουσιαστικόΕλλν!=Ellnnoun,
+  McshLag000020:2045  <br>* McshElln.ουσιΕλλν!=Elln_noun,  ->  <br>* McshElln.ουσιΕλλν!=Ellnnoun,
+  McshLag000020:2038  ADD  McshEngl.Elln_noun!⇒Ellnnoun,
+  McshLag000020:2312  <h4 id="idLEllnnoungstrH4">GENERIC-SPECIFIC-TREE of Elln_noun  ->  <h4 id="idLEllnnoungstrH4">GENERIC-SPECIFIC-TREE of Ellnnoun
+  McshLag000020:2318  <br>* McshEngl.Elln_noun'generic-specific-tree,  ->  <br>* McshEngl.Ellnnoun'generic-specific-tree,
+  McshLag000020:2319  <br>* McshEngl.Elln_noun'specific-generic-tree,  ->  <br>* McshEngl.Ellnnoun'specific-generic-tree,
+  McshLag000020:2322  <br>* McshEngl.Elln_noun_Gntr,  ->  <br>* McshEngl.Ellnnoun_Gntr,
+  McshLag000020:2327  <br>* McshEngl.Elln_noun.specific,  ->  <br>* McshEngl.Ellnnoun.specific,
+  McshLag000020:2328  <br>* McshEngl.Elln_noun_Sptr,  ->  <br>* McshEngl.Ellnnoun_Sptr,
+
+=== McshLag000027 (5)
+  McshLag000027:1354  <br>* McshEngl.Ella_noun,  ->  <br>* McshEngl.Ellanoun,
+  McshLag000027:1355  <br>* McshEngl.Ella_logo'noun!⇒Ella_noun,  ->  <br>* McshEngl.Ella_logo'noun!⇒Ellanoun,
+  McshLag000027:1357  <br>* McshElln.ουσιΕλλα!=Ella_noun,  ->  <br>* McshElln.ουσιΕλλα!=Ellanoun,
+  McshLag000027:1359  <br>* McshElla.ουσιΕλλα!=Ella_noun,  ->  <br>* McshElla.ουσιΕλλα!=Ellanoun,
+  McshLag000027:1355  ADD  McshEngl.Ella_noun!⇒Ellanoun,
+
+=== McshLag000033 (7)
+  McshLag000033:2302  <br>* McshEngl.noun-of-Deut_lago!⇒DeutNoun,  ->  <br>* McshEngl.noun-of-Deut_lago!⇒Deutnoun,
+  McshLag000033:2303  <br>* McshEngl.DeutNoun!=noun-of-Deut_lago,  ->  <br>* McshEngl.Deutnoun!=noun-of-Deut_lago,
+  McshLag000033:2304  <br>* McshEngl.Deutargu'noun!⇒DeutNoun,  ->  <br>* McshEngl.Deutargu'noun!⇒Deutnoun,
+  McshLag000033:2305  <br>* McshEngl.logoDeut'noun!⇒DeutNoun,  ->  <br>* McshEngl.logoDeut'noun!⇒Deutnoun,
+  McshLag000033:2306  <br>* McshEngl.Deutargu'noun-name!⇒DeutNoun,  ->  <br>* McshEngl.Deutargu'noun-name!⇒Deutnoun,
+  McshLag000033:2308  <br>* McshDeut.Nomen.Deutsch!das!=DeutNoun,  ->  <br>* McshDeut.Nomen.Deutsch!das!=Deutnoun,
+  McshLag000033:2304  ADD  McshEngl.DeutNoun!⇒Deutnoun,
+
+=== McshLag000034 (5)
+  McshLag000034:1783  <br>* McshEngl.BcmsNoun,  ->  <br>* McshEngl.Bcmsnoun,
+  McshLag000034:1784  <br>* McshEngl.BcmsArgoMebr.noun!⇒BcmsNoun,  ->  <br>* McshEngl.BcmsArgoMebr.noun!⇒Bcmsnoun,
+  McshLag000034:1785  <br>* McshEngl.nounBcms!⇒BcmsNoun,  ->  <br>* McshEngl.nounBcms!⇒Bcmsnoun,
+  McshLag000034:1786  <br>* McshEngl.BcmsArgo'noun-name!⇒BcmsNoun,  ->  <br>* McshEngl.BcmsArgo'noun-name!⇒Bcmsnoun,
+  McshLag000034:1784  ADD  McshEngl.BcmsNoun!⇒Bcmsnoun,
+
+=== McshLag000035 (5)
+  McshLag000035:1394  <br>* McshEngl.SpanNoun,  ->  <br>* McshEngl.Spannoun,
+  McshLag000035:1395  <br>* McshEngl.SpanArgoMebr.noun!⇒SpanNoun,  ->  <br>* McshEngl.SpanArgoMebr.noun!⇒Spannoun,
+  McshLag000035:1396  <br>* McshEngl.nounSpan!⇒SpanNoun,  ->  <br>* McshEngl.nounSpan!⇒Spannoun,
+  McshLag000035:1397  <br>* McshEngl.SpanArgo'noun-name!⇒SpanNoun,  ->  <br>* McshEngl.SpanArgo'noun-name!⇒Spannoun,
+  McshLag000035:1395  ADD  McshEngl.SpanNoun!⇒Spannoun,
+
+=== McshLag000036 (5)
+  McshLag000036:1890  <br>* McshEngl.ArabNoun,  ->  <br>* McshEngl.Arabnoun,
+  McshLag000036:1891  <br>* McshEngl.ArabArgoMebr.noun!⇒ArabNoun,  ->  <br>* McshEngl.ArabArgoMebr.noun!⇒Arabnoun,
+  McshLag000036:1892  <br>* McshEngl.nounArab!⇒ArabNoun,  ->  <br>* McshEngl.nounArab!⇒Arabnoun,
+  McshLag000036:1893  <br>* McshEngl.ArabArgo'noun-name!⇒ArabNoun,  ->  <br>* McshEngl.ArabArgo'noun-name!⇒Arabnoun,
+  McshLag000036:1891  ADD  McshEngl.ArabNoun!⇒Arabnoun,
+
+=== McshLag000037 (5)
+  McshLag000037:1632  <br>* McshEngl.HiurNoun,  ->  <br>* McshEngl.Hiurnoun,
+  McshLag000037:1633  <br>* McshEngl.HiurArgoMebr.noun!⇒HiurNoun,  ->  <br>* McshEngl.HiurArgoMebr.noun!⇒Hiurnoun,
+  McshLag000037:1634  <br>* McshEngl.nounHiur!⇒HiurNoun,  ->  <br>* McshEngl.nounHiur!⇒Hiurnoun,
+  McshLag000037:1635  <br>* McshEngl.HiurArgo'noun-name!⇒HiurNoun,  ->  <br>* McshEngl.HiurArgo'noun-name!⇒Hiurnoun,
+  McshLag000037:1633  ADD  McshEngl.HiurNoun!⇒Hiurnoun,
+
+=== McshLag000038 (5)
+  McshLag000038:1129  <br>* McshEngl.Slv0Noun,  ->  <br>* McshEngl.Slv0noun,
+  McshLag000038:1130  <br>* McshEngl.Slv0ArgoMebr.noun!⇒Slv0Noun,  ->  <br>* McshEngl.Slv0ArgoMebr.noun!⇒Slv0noun,
+  McshLag000038:1131  <br>* McshEngl.nounSlv0!⇒Slv0Noun,  ->  <br>* McshEngl.nounSlv0!⇒Slv0noun,
+  McshLag000038:1132  <br>* McshEngl.Slv0Argo'noun-name!⇒Slv0Noun,  ->  <br>* McshEngl.Slv0Argo'noun-name!⇒Slv0noun,
+  McshLag000038:1130  ADD  McshEngl.Slv0Noun!⇒Slv0noun,
+
+=== McshLag000039 (5)
+  McshLag000039:795  <br>* McshEngl.Ide0Noun,  ->  <br>* McshEngl.Ide0noun,
+  McshLag000039:796  <br>* McshEngl.Ide0ArgoMebr.noun!⇒Ide0Noun,  ->  <br>* McshEngl.Ide0ArgoMebr.noun!⇒Ide0noun,
+  McshLag000039:797  <br>* McshEngl.nounIde0!⇒Ide0Noun,  ->  <br>* McshEngl.nounIde0!⇒Ide0noun,
+  McshLag000039:798  <br>* McshEngl.Ide0Argo'noun-name!⇒Ide0Noun,  ->  <br>* McshEngl.Ide0Argo'noun-name!⇒Ide0noun,
+  McshLag000039:796  ADD  McshEngl.Ide0Noun!⇒Ide0noun,
+
+=== McshLag000040 (5)
+  McshLag000040:1020  <br>* McshEngl.Afa0Noun,  ->  <br>* McshEngl.Afa0noun,
+  McshLag000040:1021  <br>* McshEngl.Afa0ArgoMebr.noun!⇒Afa0Noun,  ->  <br>* McshEngl.Afa0ArgoMebr.noun!⇒Afa0noun,
+  McshLag000040:1022  <br>* McshEngl.nounAfa0!⇒Afa0Noun,  ->  <br>* McshEngl.nounAfa0!⇒Afa0noun,
+  McshLag000040:1023  <br>* McshEngl.Afa0Argo'noun-name!⇒Afa0Noun,  ->  <br>* McshEngl.Afa0Argo'noun-name!⇒Afa0noun,
+  McshLag000040:1021  ADD  McshEngl.Afa0Noun!⇒Afa0noun,
+
+=== McshLag000041 (5)
+  McshLag000041:932  <br>* McshEngl.Tur0Noun,  ->  <br>* McshEngl.Tur0noun,
+  McshLag000041:933  <br>* McshEngl.Tur0ArgoMebr.noun!⇒Tur0Noun,  ->  <br>* McshEngl.Tur0ArgoMebr.noun!⇒Tur0noun,
+  McshLag000041:934  <br>* McshEngl.nounTur0!⇒Tur0Noun,  ->  <br>* McshEngl.nounTur0!⇒Tur0noun,
+  McshLag000041:935  <br>* McshEngl.Tur0Argo'noun-name!⇒Tur0Noun,  ->  <br>* McshEngl.Tur0Argo'noun-name!⇒Tur0noun,
+  McshLag000041:933  ADD  McshEngl.Tur0Noun!⇒Tur0noun,
+
+=== McshLag000042 (5)
+  McshLag000042:941  <br>* McshEngl.Asa0Noun,  ->  <br>* McshEngl.Asa0noun,
+  McshLag000042:942  <br>* McshEngl.Asa0ArgoMebr.noun!⇒Asa0Noun,  ->  <br>* McshEngl.Asa0ArgoMebr.noun!⇒Asa0noun,
+  McshLag000042:943  <br>* McshEngl.nounAsa0!⇒Asa0Noun,  ->  <br>* McshEngl.nounAsa0!⇒Asa0noun,
+  McshLag000042:944  <br>* McshEngl.Asa0Argo'noun-name!⇒Asa0Noun,  ->  <br>* McshEngl.Asa0Argo'noun-name!⇒Asa0noun,
+  McshLag000042:942  ADD  McshEngl.Asa0Noun!⇒Asa0noun,
+
+=== McshLag000043 (5)
+  McshLag000043:2291  <br>* McshEngl.KoraNoun,  ->  <br>* McshEngl.Koranoun,
+  McshLag000043:2292  <br>* McshEngl.KoraArgoMebr.noun!⇒KoraNoun,  ->  <br>* McshEngl.KoraArgoMebr.noun!⇒Koranoun,
+  McshLag000043:2293  <br>* McshEngl.nounKora!⇒KoraNoun,  ->  <br>* McshEngl.nounKora!⇒Koranoun,
+  McshLag000043:2294  <br>* McshEngl.KoraArgo'noun-name!⇒KoraNoun,  ->  <br>* McshEngl.KoraArgo'noun-name!⇒Koranoun,
+  McshLag000043:2292  ADD  McshEngl.KoraNoun!⇒Koranoun,
+
+=== McshStn000034 (4)
+  McshStn000034:2985  <br>* McshEngl.VnmaNoun,  ->  <br>* McshEngl.Vnmanoun,
+  McshStn000034:2986  <br>* McshEngl.logoVnma'noun!⇒VnmaNoun,  ->  <br>* McshEngl.logoVnma'noun!⇒Vnmanoun,
+  McshStn000034:2987  <br>* McshEngl.nounVnma!⇒VnmaNoun,  ->  <br>* McshEngl.nounVnma!⇒Vnmanoun,
+  McshStn000034:2986  ADD  McshEngl.VnmaNoun!⇒Vnmanoun,
+
+=== McshStn000035 (4)
+  McshStn000035:1976  <br>* McshEngl.ItlnNoun,  ->  <br>* McshEngl.Itlnnoun,
+  McshStn000035:1977  <br>* McshEngl.logoItln'noun!⇒ItlnNoun,  ->  <br>* McshEngl.logoItln'noun!⇒Itlnnoun,
+  McshStn000035:1978  <br>* McshEngl.nounItln!⇒ItlnNoun,  ->  <br>* McshEngl.nounItln!⇒Itlnnoun,
+  McshStn000035:1977  ADD  McshEngl.ItlnNoun!⇒Itlnnoun,
+
+=== McshStn000038 (4)
+  McshStn000038:1096  <br>* McshEngl.SbulNoun!=Bulgarian-noun,  ->  <br>* McshEngl.Sbulnoun!=Bulgarian-noun,
+  McshStn000038:1097  <br>* McshEngl.logoSbul'noun!⇒SbulNoun,  ->  <br>* McshEngl.logoSbul'noun!⇒Sbulnoun,
+  McshStn000038:1098  <br>* McshEngl.SbulArgo'noun-name!⇒SbulNoun,  ->  <br>* McshEngl.SbulArgo'noun-name!⇒Sbulnoun,
+  McshStn000038:1097  ADD  McshEngl.SbulNoun!⇒Sbulnoun,
+
+=== McshStn000048 (5)
+  McshStn000048:4185  <br>* McshEngl.Japanese-noun!⇒JpnsNoun,  ->  <br>* McshEngl.Japanese-noun!⇒Jpnsnoun,
+  McshStn000048:4186  <br>* McshEngl.JpnsNoun!=Japanese-noun,  ->  <br>* McshEngl.Jpnsnoun!=Japanese-noun,
+  McshStn000048:4187  <br>* McshEngl.noun.Japanese!⇒JpnsNoun,  ->  <br>* McshEngl.noun.Japanese!⇒Jpnsnoun,
+  McshStn000048:4188  <br>* McshEngl.JpnsLogoView'argu-name'noun-name!⇒JpnsNoun,  ->  <br>* McshEngl.JpnsLogoView'argu-name'noun-name!⇒Jpnsnoun,
+  McshStn000048:4187  ADD  McshEngl.JpnsNoun!⇒Jpnsnoun,
+
+=== McshStn000050 (3)
+  McshStn000050:2912  <br>* McshEngl.KhmrNoun,  ->  <br>* McshEngl.Khmrnoun,
+  McshStn000050:2913  <br>* McshEngl.KhmrLogoView'argu-name'noun-name!⇒KhmrNoun,  ->  <br>* McshEngl.KhmrLogoView'argu-name'noun-name!⇒Khmrnoun,
+  McshStn000050:2913  ADD  McshEngl.KhmrNoun!⇒Khmrnoun,

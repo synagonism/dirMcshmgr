@@ -1,0 +1,527 @@
+gntr-list-to-gntr applied {2026-10-24}: in generic-tree:: generic lines → X_Gntr,
+
+=== REPLACED (146)
+  McshCor000007:833  structure-of-entity, → structure_Gntr
+  McshHlth000002:5557  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrIron">iron</a>, → ChmcElrFe26_Gntr
+  McshHlth000002:5841  <a class="clsPreview" href="../dirNtr/McshNtr000007.last.html#idChmElrCalcium">calcium</a>, → ChmcElrCa20_Gntr
+  McshHlth000011:2238  <a class="clsPreview" href="#idOverview">disease</a>, → disease_Gntr
+  McshHlth000011:2244  <a class="clsPreview" href="#idDssHmn132">αρτηριακη-υπόταση</a>, → DissHypotension_Gntr
+  McshHlth000011:2839  <a class="clsPreview" href="#idOverview">disease</a>, → disease_Gntr
+  McshHlth000014:2440  <a class="clsPreview" href="#idOverview">medication</a>, → medication_Gntr
+  McshLag000007:889  <a class="clsPreview" href="../dirLag/McshLag000003.last.html#idInfHmnMind002">viewMind</a>, → viewMind_Gntr
+  McshLag000009:4188  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmdong">lagHmnm-doing</a>, → HmnmLogoView'doing_Gntr
+  McshLag000011:27485  ConjHmnm, → Hmnmconj_Gntr
+  McshLag000012:4870  ConjHmnm, → Hmnmconj_Gntr
+  McshLag000018:13044  ConjHmnm, → Hmnmconj_Gntr
+  McshNtr000007:420  chemical-element, → ChmcElry_Gntr
+  McshNtr000007:1082  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1124  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1162  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1200  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1238  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1276  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1315  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1368  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1406  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1444  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1482  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1520  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1557  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1595  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1633  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1672  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1808  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1856  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1894  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1932  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:1970  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2008  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2059  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2097  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2135  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2173  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2211  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2249  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2287  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2325  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2363  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2401  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2438  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2476  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2538  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2576  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2614  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2698  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2736  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2774  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2815  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2870  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:2918  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3016  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3053  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3091  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3154  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3192  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3230  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3268  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3306  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3360  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3398  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3480  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3518  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3556  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3594  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3632  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3670  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3708  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3746  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3784  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3822  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3860  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3907  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3945  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:3983  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4074  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4139  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4192  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4230  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4268  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4306  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4382  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4420  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4458  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4496  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4535  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4591  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4629  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4667  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4705  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4743  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4781  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4819  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4857  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4895  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4933  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:4971  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5009  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5047  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5085  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5122  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5160  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5198  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5236  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5274  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5312  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5350  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5388  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5426  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5464  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5501  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5538  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5575  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5610  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5647  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5684  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5721  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5775  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5812  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5849  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5886  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5924  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5962  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:5999  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:6037  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshNtr000007:6075  <a class="clsPreview" href="../dirLagNtr/McshNtr000003.last.html#idOverview">material-atom</a>, → MtrlAtom_Gntr
+  McshStn000007:217  <a class="clsPreview" href="../dirLag/McshLag000005.last.html#idOverview">languageOgsm</a>, → Ogsm_lago_Gntr
+  McshStn000015:721  <a class="clsPreview" href="../dirStn/McshStn000008.last.html#idOgznatt001">admnOgzn</a>, → admnOgzn_Gntr
+  McshStn000020:181  <a class="clsPreview" href="../dirHmn/McshHmn000002.last.html#idOverview">human</a>, → human_Gntr
+  McshTchInf000006:2307  <a class="clsPreview" href="#idLCpgmalgunt">unit-of-Pgmg_lago</a>, → Pgmgunit_Gntr
+  McshTchInf000006:2877  <a class="clsPreview" href="#idLCpgmalgphrs">phrase-of-Pgmg_lago</a>, → Pgmgphrase_Gntr
+  McshTchInf000010:7392  programing-language, → Pgmg_lago_Gntr
+  McshTchInf000010:7471  programing-language, → Pgmg_lago_Gntr
+  McshTchInf000011:5175  programing-language, → Pgmg_lago_Gntr
+  McshTchInf000019:2834  <a class="clsPreview" href="#idEthdao">Ethereum-DAO-dApp</a>, → DoEth_Gntr
+  McshTchInf000022:950  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcbex">blockchain--block-explorer</a>, → Bkcnexplorer_Gntr
+  McshTchInf000024:136  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcnodApdr">appender-node--of--blockchain-net</a>, → BkcnnodeApdr_Gntr
+  McshTchInf000024:3737  <a class="clsPreview" href="#idSteemacnt">Stemacnt</a>, → Stemacnt_Gntr
+  McshTchInf000030:53  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdarch">archetype-of--source-language</a>, → Srcd_lago_archetype_Gntr
+  McshTchInf000030:300  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdunt">unit-of--source-language</a>, → Srcalgounit_Gntr
+  McshTchInf000030:2771  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdphrs">phrase-of-Lsrc</a>, → Srcdphrs_Gntr
+
+=== DROPPED-DUPLICATE (0) — X_Gntr already in the same === group
+
+=== LEFT-REF (98)
+  Mcsh000000:412  semi monosemantic-worldview!@McshLag000003#idWldv012,
+  Mcsh000000:416  sensorial-worldview!@McshLag000003#idWldv003,
+  Mcsh000000:418  semi machine-readable-worldview!@McshLag000003#idWldv008,
+  McshCor000002:2788  worldviewSensorial!@McshLag000003#idWldv003,
+  McshCor000002:3541  worldview-management-tool!@McshLag000003#idWldvatt002,
+  McshCor000018:1957  evaluatingBio!@McshCor000013#idBrngEvalg,
+  McshCor000020:150  model-evaluating!@McshCor000012#idMdlatt016
+  McshEdu000002:915  knowledgeBrain!@McshLag000002#idInfBrnBioKldg,
+  McshHlth000002:5366  positive-health-material!@McshHlth000008#idMtrHlthHmn001,
+  McshHlth000002:11129  functingSysOrgnsHumn!@McshHlth000002#idSysOgnHmnftg,
+  McshHlth000008:523  substance!@McshNtr000005#idSysMols008,
+  McshHlth000008:525  body-system!@McshCor000011#idSys004,
+  McshHlth000011:679  wellness!@McshHlth000008#idHlthHmnatt003,
+  McshHlth000012:153  substance!@McshNtr000005#idSysMols008,
+  McshHlth000014:795  antimicrobial!@McshHlth000014#idMedHmn030,
+  McshHlth000019:5800  organism-managing-system!@McshCor000011#idSysMng001,
+  McshLag000005:168  mapping-method!@McshCor000005#idRlnMpgmthd,
+  McshLag000005:169  method!@McshLag000003#idInfHmnBrn008,
+  McshLag000007:1441  BrainIn-concept!@McshLag000003#idInfHmnBrn001Cpt,
+  McshLag000007:21865  termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002,
+  McshLag000007:21866  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN,
+  McshLag000007:24777  termSemu_Gntr : nameSemaso!@McshLag000007#idLHmnmname002,
+  McshLag000007:24778  termGeneric!@McshLag000007#idLHmnmnameTrmAtmN,
+  McshLag000007:25677  nameSemaso!@McshLag000007#idLHmnmname002,
+  McshLag000009:627  main-name-unit--of-lagHmnm!@McshLag000007#idLHmnmuntNmMn,
+  McshLag000010:452  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn,
+  McshLag000010:6016  common-language!@McshLag000007#idLHmnmKmn,
+  McshLag000011:436  lagHmnm-lago-special-noun-member!@McshLag000007#idLHmnmsmsondombrSpl,
+  McshLag000011:30174  common-language!@McshLag000007#idLHmnmKmn,
+  McshLag000012:440  termHmnm-unit!@McshLag000007#idLHmnmuntNmMn,
+  McshLag000012:5237  common-language!@McshLag000007#idLHmnmKmn,
+  McshLag000018:403  Hmnm_lago-semu-special-argu-member!@McshLag000007#idLHmnmsmsondombrSpl,
+  McshLag000035:2617  polycentric-language!@McshLag000007#idLHmnm0031,
+  McshLag000036:3060  polycentric-language!@McshLag000007#idLHmnm0031,
+  McshNtr000002:503  body-system!@McshCor000011#idSys004,
+  McshOgm000002:242  material-object!@McshNtr000005#idSysMols009,
+  McshOgm000007:1919  cellEukariotic!@McshOgm000007#idCellOgm003,
+  McshStn000004:456  managing-system-of-bio!@McshCor000011#idSysMng004,
+  McshStn000007:271  self-dynamic-system!@McshCor000011#idSys009spc001,
+  McshStn000007:272  material-body--system!@McshCor000011#idSys004,
+  McshStn000007:273  material-body--whole-entity!@McshCor000008#idWhl003,
+  McshStn000014:1019  economic-Ogzn!@McshStn000008#idOgznScdnSrpn,
+  McshStn000015:1267  economic-Ogzn!@McshStn000008#idOgznScdnSrpn,
+  McshStn000019:919  stateless-society!@McshStn000009#idSocHumn026,
+  McshStn000020:16739  policy!@McshStn000009#idSocadmndongPlc,
+  McshStn000021:700  self-dynamic-system!@McshCor000011#idSys009spc001,
+  McshStn000021:702  material-body--whole-entity!@McshCor000008#idWhl003,
+  McshStnlaw000003:2325  binding-legal-instrument-of-Eu!@McshStnlaw000003#idLawEus016,
+  McshTchInf000002:678  technology!@McshTch000002
+  McshTchInf000005:572  mapping-method!@McshCor000005#idRlnMpgmthd,
+  McshTchInf000005:573  method!@McshLag000003#idInfHmnBrn008,
+  McshTchInf000010:394  object-pmNo!@McshTchInf000010#idLJsgnopmN,
+  McshTchInf000010:2272  Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (<code>var f = function(){}; f.__proto__ === Function.prototype //true</code>)
+  McshTchInf000010:3064  Number.prototype!@McshTchInf000010#idLJsgnNumberp, (<code>(3).__proto__ === Number.prototype //true</code>)
+  McshTchInf000010:3361  Constructor.prototype!@McshTchInf000010#idLJsgnfCsrproto, (constructor-objects!@McshTchInf000010#idLJsgnoCsr)
+  McshTchInf000010:3561  RegExp.prototype!@McshTchInf000010#idLJsgnRegExpp, (<code>/r/.__proto__ === RegExp.prototype //true</code>)
+  McshTchInf000010:3691  String.prototype!@McshTchInf000010#idLJsgnStringp, (<code>''.__proto__ === String.prototype //true</code>)
+  McshTchInf000010:7470  JavaScript-programing-language!@McshTchInf000010#idDescription,
+  McshTchInf000011:85  Jsgn-archetype!@McshTchInf000010#idLJsgnarc,
+  McshTchInf000011:1469  EventTarget.prototype!@McshTchInf000011#idLJsbrEventTargetp (<code>Window.prototype.__proto__.__proto__ === EventTarget.prototype // true</code>),
+  McshTchInf000011:4805  Jsgn-evaluation!@McshTchInf000010#idLJsgneval,
+  McshTchInf000012:979  Function.prototype!@McshTchInf000010#idLJsgnFunctionp,
+  McshTchInf000012:1629  Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfEvents.__proto__ === Function.prototype //true)
+  McshTchInf000012:1822  Function.prototype!@McshTchInf000010#idLJsgnFunctionp, (mfStream.__proto__ === Function.prototype //true)
+  McshTchInf000012:8022  build-tool!@McshTchInf000012#idLJsndtolBld,
+  McshTchInf000015:8770  ERC20-token!@McshTchInf000018#idEthevuCNErc20,
+  McshTchInf000015:8771  utility-token!@McshTchInf000015#idAlgntevuUtlt,
+  McshTchInf000016:5213  problem-of--chain-network!@McshTchInf000015#idAlgntelnScon (broken),
+  McshTchInf000016:6238  blockchain-network!@McshTchInf000016#idDescription,
+  McshTchInf000016:6413  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet,
+  McshTchInf000016:7433  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig,
+  McshTchInf000016:8519  Proof-of-work-network!@McshTchInf000016#idPownet,
+  McshTchInf000016:10739  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig,
+  McshTchInf000016:10741  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet,
+  McshTchInf000016:10830  Proof-of-Stake-network!@McshTchInf000016#idPosnet,
+  McshTchInf000016:10939  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig,
+  McshTchInf000016:10940  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken),
+  McshTchInf000016:12440  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig,
+  McshTchInf000016:12441  Exchange-value-unit-blockchain-network!@McshTchInf000016#idDbcEvtkn (broken),
+  McshTchInf000016:13587  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet,
+  McshTchInf000016:14141  Hybrid-pos-pow-blockchain-network!@McshTchInf000016#idHswnet,
+  McshTchInf000016:14493  blockchain-network!@McshTchInf000016#idDescription,
+  McshTchInf000016:15276  Blockchain-network-with-builtin-decentralized-governance!@McshTchInf000016#idDbcBig,
+  McshTchInf000016:15523  dependent-bcnnet!@McshTchInf000016#idDbcDpt, (Ethereum)
+  McshTchInf000017:5013  cryptographic-hash-function!@McshTchInf000016#idDbccrptchf (broken),
+  McshTchInf000017:5545  exchange-rate-of-bcnevuC!@McshTchInf000016#idDbcevuCegrt,
+  McshTchInf000018:12991  Proof-of-work-blockchain-network!@McshTchInf000016#idPownet,
+  McshTchInf000021:1301  blockchain!@McshTchInf000016#idDbddat,
+  McshTchInf000021:1440  blockchain-net'block-explorer!@McshTchInf000016#idDbcbex,
+  McshTchInf000021:2309  chain-net'voting!@McshTchInf000015#idAlgntgovvtg,
+  McshTchInf000021:2604  blockchain-client!@McshTchInf000016#idDbcpgmClnt,
+  McshTchInf000024:473  asset-of-blockchain-net!@McshTchInf000016#idDbcevudsn,
+  McshTchInf000028:64  stakeholder-of-DnChain!@McshTchInf000015.last.html#idAlgntprlFT,
+  McshTchInf000030:395  Srcd_lago-keyword!@McshTchInf000006#idLSrcdwrdRsvd,
+  McshTchInf000030:3008  SrcdCompiled!@McshTchInf000006#idLSrcdCmpd,
+  McshTchInf000030:4364  compiled-language!@McshTchInf000006#idLSrcdCmpd,
+  McshTchInf000030:4365  statically-typed-language!@McshTchInf000006#idLSrcdStctp,
+  McshTchInf000031:3000  compiled--programing-language!@McshTchInf000006#idLSrcdCmpd,
+
+=== LEFT-ANCHOR (94)
+  McshCor000002:2445  <a class="clsPreview" href="../dirCor/McshCor000011.last.html#idSys002GcscGcoc">generic-tree</a>,
+  McshCor000004:1212  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntBodyNvlc">bodyNo'valence</a>,
+  McshCor000011:3281  <a class="clsPreview" href="#idSysMng001att002">Infosyst-of-organism</a>,
+  McshCor000013:430  <a class="clsPreview" href="../dirCor/McshCor000012.last.html#idMdlatt001">archetype-of-model</a>,
+  McshCor000018:2731  <a class="clsPreview" href="../dirCor/McshCor000013.last.html#idBrngEmtgstml">stimulus-of-emotingBio</a>,
+  McshHlth000002:15068  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stageEvoluting</a>,
+  McshHlth000002:15331  <a class="clsPreview" href="../dirCor/McshCor000003.last.html#idEntevogtmil">stage-of-evolution</a>,
+  McshHlth000005:726  <a class="clsPreview" href="#idMsclHmn019">muscleStriatedNo</a>,
+  McshHlth000011:15435  <a class="clsPreview" href="#idDssHmn007">entity.model.information.evaluation.problem.disease.animal.human</a>,
+  McshHmn000002:4167  <a class="clsPreview" href="../dirOgm/McshOgm000003.last.html#idOgmatt012gtr">Ogsm'lifetime-gtr</a>,
+  McshLag000011:8156  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-Termmebr</a>,
+  McshLag000011:9769  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmnameTrmmbrSnmr">syno_members-of-Termmebr</a>,
+  McshLag000011:26813  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>,
+  McshLag000012:4766  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>,
+  McshLag000018:12400  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmverbmrfdg">member-finding-of-verb</a>,
+  McshLag000020:12864  <a class="clsPreview" href="../dirLag/McshLag000007.last.html#idLHmnmprlg">paralanguage</a>,
+  McshNtr000007:229  <a class="clsPreview" href="../dirLagNtr/McshNtr000002.last.html#idMtrl006prty">chemical-property</a>,
+  McshNtr000012:102  <a class="clsPreview" href="../dirCor/McshCor000004.last.html#idDngatt001Drnstr">doing--space-direction</a>,
+  McshOgm000005:3648  <a class="clsPreview" href="#idDssHmn010">therapy</a>,
+  McshOgm000010:1565  <a class="clsPreview" href="#idPlnt020">plantHerb</a>,
+  McshOgm000010:1566  <a class="clsPreview" href="#idPlnt036">plantWeed</a>,
+  McshOgm000010:1765  <a class="clsPreview" href="#idPlnt041">medicinal-herb</a>,
+  McshStn000020:17489  <a class="clsPreview" href="#idEuoComoznSd">service-department-of-EuoCom</a>,
+  McshStnlaw000003:2271  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>,
+  McshStnlaw000003:2361  <a class="clsPreview" href="#idLawEus016">binding-legal-instrument-of-Eu</a>,
+  McshStnlaw000003:2382  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>,
+  McshStnlaw000003:2404  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>,
+  McshStnlaw000003:2424  <a class="clsPreview" href="#idLawEus012">non-legislative-act-of-Eu</a>,
+  McshStnlaw000003:2446  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>,
+  McshStnlaw000003:2468  <a class="clsPreview" href="#idLawEus017">non-binding-lawEu</a>,
+  McshStnlaw000003:2497  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2519  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2540  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshStnlaw000003:2600  <a class="clsPreview" href="#idLawEus026">non-legal-act-of-Eu</a>,
+  McshTchInf000006:2072  <a class="clsPreview" href="#idLCpgmarch">archetype-of-Pgmg_lago</a>,
+  McshTchInf000006:2097  <a class="clsPreview" href="#idLCpgmarchcd">archo-code-of-Pgmg_lago</a>,
+  McshTchInf000006:2115  <a class="clsPreview" href="#idLCpgmarchdmn">domain-of-Pgmg_lago</a>,
+  McshTchInf000006:3097  <a class="clsPreview" href="#idLCpgmirsc">resource-of-Pgmg_lago</a>,
+  McshTchInf000009:2297  <a class="clsPreview" href="../dirTchInf/McshTchInf000008.last.html#idLHitpmgr">Hitp-manager</a>,
+  McshTchInf000010:3018  <a class="clsPreview" href="#idLJsgnopmN">object-pmNo</a>,
+  McshTchInf000010:3398  <a class="clsPreview" href="#idLJsgnfCsrproto">Constructor.prototype</a>,
+  McshTchInf000010:4161  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>,
+  McshTchInf000011:3465  <a class="clsPreview" href="#idLJsbrNodep">Node.prototype</a>,
+  McshTchInf000011:3466  <a class="clsPreview" href="#idLJsbrEventTargetp">EventTarget.prototype</a>,
+  McshTchInf000015:4093  <a class="clsPreview" href="#idAlgntevubkn">backness-of-asset</a>,
+  McshTchInf000015:8602  <a class="clsPreview" href="#idAlgntevusbl">ticker of Agntasset</a>,
+  McshTchInf000016:337  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntwprFT">chain--white-paper</a>,
+  McshTchInf000016:2072  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevubkn">backness-of--chain-asset</a>,
+  McshTchInf000016:3374  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuMoeN">chain-currencyNo</a>,
+  McshTchInf000016:5180  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntelnSpro">chain-net-pro</a>,
+  McshTchInf000016:5615  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntsvcF">chain-service</a>,
+  McshTchInf000016:16285  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapd">permission-to-append--chain-net</a>,
+  McshTchInf000016:16303  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsapdN">permissionless-to-append--chain-net</a>,
+  McshTchInf000016:16321  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusr">permission-to-join--chain-net</a>,
+  McshTchInf000016:16339  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPmsusrN">permissionless-to-join--chain-net</a>,
+  McshTchInf000016:16362  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPbl">public--chain-net</a>,
+  McshTchInf000016:16386  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnPblN">publicNo--chain-net</a>,
+  McshTchInf000018:224  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntdcrzTrst">chain-net'decentralized-trust</a>,
+  McshTchInf000019:3333  <a class="clsPreview" href="#idDeOzngvnr">OgznDao-governor</a>,
+  McshTchInf000019:3521  <a class="clsPreview" href="#idDeOzngovc">OgznDao-govc</a>,
+  McshTchInf000021:65  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>,
+  McshTchInf000021:87  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-net'white-paper</a>,
+  McshTchInf000021:948  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-net'node</a>,
+  McshTchInf000021:1594  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcwltacnt">blockchain-net'account</a>,
+  McshTchInf000021:1804  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdevu">blockchain-net'asset</a>,
+  McshTchInf000021:1981  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-net'governance</a>,
+  McshTchInf000021:2975  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-net'wallet</a>,
+  McshTchInf000021:3178  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-net'organization</a>,
+  McshTchInf000021:3343  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddng">blockchain-net'doing</a>,
+  McshTchInf000022:61  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>,
+  McshTchInf000022:79  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwpr">blockchain-white-paper</a>,
+  McshTchInf000022:683  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdnod">blockchain-node</a>,
+  McshTchInf000022:823  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbddat">blockchain</a>,
+  McshTchInf000022:927  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcblktimGnrt">blockchain-block-interval</a>,
+  McshTchInf000022:1071  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntevuexrate">chain-asset--exchange-rate</a>,
+  McshTchInf000022:1122  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdgov">blockchain-governance-system</a>,
+  McshTchInf000022:1249  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdwlt">blockchain-wallet</a>,
+  McshTchInf000022:1270  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdstat">blockchain-statistics</a>,
+  McshTchInf000022:1289  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcenrg">blockchain-energy-consumption</a>,
+  McshTchInf000022:1308  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdhmn">blockchain-human</a>,
+  McshTchInf000022:1341  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdogn">blockchain-organization</a>,
+  McshTchInf000022:1451  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdeln">blockchain-evaluation</a>,
+  McshTchInf000022:1468  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdpbm">blockchain-problem</a>,
+  McshTchInf000022:1539  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdlaw">blockchain-law</a>,
+  McshTchInf000022:1578  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcirsc">blockchain-resource</a>,
+  McshTchInf000024:61  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbdprl">blockchain-protocol</a>,
+  McshTchInf000024:86  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">node-of--chain-net</a>,
+  McshTchInf000024:1116  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntpgmClnt">client-program--of--chain-net</a>,
+  McshTchInf000024:2450  <a class="clsPreview" href="../dirTchInf/McshTchInf000016.last.html#idDbcads">address-of--blockchain-account</a>,
+  McshTchInf000028:180  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntprlFT">protocol-of-DnChain</a>,
+  McshTchInf000028:587  <a class="clsPreview" href="../dirTchInf/McshTchInf000015.last.html#idAlgntnodFT">Dnode</a>,
+  McshTchInf000030:2588  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdsuntNmd">named-Sunt--of-Lsrc</a>,
+  McshTchInf000030:2985  <a class="clsPreview" href="../dirTchInf/McshTchInf000006.last.html#idLSrcdroot">algo-root--of-Srcd_lago</a>,
+  McshTchInf000030:3266  <a class="clsPreview" href="#idLRustsuntSrt">Rust_lago-struct</a>,
+
+=== LEFT-NAME (129)
+  McshCor000003:5152  none,
+  McshCor000006:394  doing-of-Universe,
+  McshCor000010:213  information,
+  McshCor000013:450  syntax-of-functing,
+  McshCor000018:528  feeling,
+  McshCor000019:135  performing-art,
+  McshHlth000002:262  head-of-vertebrate,
+  McshHlth000002:5450  sulfur,
+  McshHlth000002:5474  chlorine,
+  McshHlth000002:5500  cobalt,
+  McshHlth000002:5526  copper,
+  McshHlth000002:5596  manganese,
+  McshHlth000002:5620  molybdenum,
+  McshHlth000002:5643  selenium,
+  McshHlth000002:5672  zinc-atom,
+  McshHlth000002:5697  iodine,
+  McshHlth000002:5809  essential-nutrient,
+  McshHlth000002:5867  phosphorus,
+  McshHlth000002:5905  potassium,
+  McshHlth000002:5931  sodium,
+  McshHlth000002:5955  magnesiumAtom,
+  McshHlth000002:15539  bodyVertebrate,
+  McshHlth000002:15540  bodyOgsm,
+  McshHlth000010:246  disorder-of-organism,
+  McshHlth000011:681  symptom,
+  McshHlth000011:682  cause,
+  McshHlth000011:685  protection,
+  McshHlth000011:686  diet,
+  McshHlth000011:687  stats,
+  McshHlth000011:688  resource,
+  McshHlth000011:1193  doing-of-disease,
+  McshHlth000013:2652  drink-food,
+  McshHlth000013:3506  water-general,
+  McshHlth000014:537  drug-organization,
+  McshHlth000014:886  antimicrobial-medication,
+  McshHlth000019:4588  signaling-molecule-of-cell,
+  McshLag000006:114  written-language-attribute,
+  McshLag000008:836  mapping-method,
+  McshLag000008:837  method,
+  McshLag000009:4330  mapping-method,
+  McshLag000009:4331  method,
+  McshLag000010:2239  lagHmnm-syllabication,
+  McshLag000010:6019  mapping-method,
+  McshLag000010:6020  method,
+  McshLag000011:2564  lagHmnm-syllabication,
+  McshLag000011:30179  mapping-method,
+  McshLag000011:30180  method,
+  McshLag000012:1697  lagHmnm-syllabication,
+  McshLag000012:5240  mapping-method,
+  McshLag000012:5241  method,
+  McshLag000018:701  Hmnm_lago-name-unit,
+  McshLag000018:18635  mapping-method,
+  McshLag000018:18636  method,
+  McshLag000021:683  lagHmnm-syllabication,
+  McshLag000030:8114  mapping-method,
+  McshLag000030:8115  method,
+  McshLag000043:3699  mapping-method,
+  McshLag000043:3700  method,
+  McshNtr000002:315  material'physical-property,
+  McshNtr000003:383  body-node,
+  McshNtr000005:109  attribute-of-MtrlSysMols,
+  McshNtr000005:381  material-object,
+  McshNtr000007:1689  group1-ChmcElry,
+  McshNtr000007:2972  group1-ChmcElry,
+  McshOgm000004:744  polymer,
+  McshOgm000005:304  substanceMcshNtr000005#idSysMols008,
+  McshOgm000005:831  lipid,
+  McshOgm000005:1460  animal-hormone,
+  McshOgm000005:1662  hormone,
+  McshOgm000005:2939  hormoneSex-steroid,
+  McshOgm000006:1019  biomaterial,
+  McshOgm000007:1614  MtrlObject,
+  McshOgm000008:648  pathogen,
+  McshOgm000008:967  coronavirus,
+  McshOgm000011:98  vertebrate-animal,
+  McshStn000005:290  governance-system,
+  McshStn000005:293  resource,
+  McshStn000007:164  goverance-system,
+  McshStn000008:164  ogznOgnm'node,
+  McshStn000009:8342  governace-system,
+  McshStn000009:8343  satisfier-system,
+  McshStn000010:300  legal-Sfrowner,
+  McshStn000010:1504  economic-entity,
+  McshStn000019:920  classless-society,
+  McshStn000019:921  metacapitalist-society,
+  McshStn000019:922  knowledge-society,
+  McshStn000019:923  info-network-society,
+  McshStn000019:924  complex-society,
+  McshStn000021:701  material-body--systemMcshCor000011#idSys004,
+  McshTchInf000003:874  info-machine,
+  McshTchInf000005:1158  digital-document,
+  McshTchInf000010:4255  none,
+  McshTchInf000010:5106  Definition-sentence,
+  McshTchInf000010:7394  mapping-method,
+  McshTchInf000010:7395  method,
+  McshTchInf000010:7473  mapping-method,
+  McshTchInf000010:7474  method,
+  McshTchInf000011:3464  ..,
+  McshTchInf000011:5177  mapping-method,
+  McshTchInf000011:5178  method,
+  McshTchInf000012:8023  Jsgn-based-task-runner,
+  McshTchInf000014:6246  web-programing-language,
+  McshTchInf000015:715  p2p-network-protocol,
+  McshTchInf000015:6766  application,
+  McshTchInf000015:13832  computer-network,
+  McshTchInf000015:13836  product-satisfier,
+  McshTchInf000015:13838  human-economic-entity,
+  McshTchInf000015:13839  human-entity,
+  McshTchInf000017:1546  file,
+  McshTchInf000017:5453  global-digital-currency,
+  McshTchInf000018:10814  LanguageComputerPrograming,
+  McshTchInf000021:1495  blockchain-net'transaction,
+  McshTchInf000021:1820  exchange-organization--of--blockchain-asset,
+  McshTchInf000022:1621  Bitcoin-based-network,
+  McshTchInf000024:2759  post-of--Steem-net,
+  McshTchInf000024:3909  blogging-platform,
+  McshTchInf000025:771  Eos-net--asset,
+  McshTchInf000026:1704  web-app,
+  McshTchInf000026:2193  decentralized-network,
+  McshTchInf000028:1309  DnChain--programing-language,
+  McshTchInf000030:1751  source-function--of-Srcd_lago,
+  McshTchInf000031:2997  middle-level--programing-language,
+  McshTchInf000031:2998  general-purpose--programing-language,
+  McshTchInf000031:2999  object-oriented--programing-language,
+  McshTchInf000031:3001  procedural--programing-language,
+  McshTchInf000031:3002  generic-programing--programing-language,
+  McshTchInf000031:3006  mapping-method,
+  McshTchInf000031:3007  method,
+  McshTchInf000039:933  hard-soft-system,
+
+=== LEFT-CPTEPISTEM (14)
+  McshHlth000002:4143  animal-tissue⧺cptEpistem20.1⧺,
+  McshHlth000002:14555  λειτουργία⧺cptEpistem475⧺,
+  McshHlth000003:3845  mamalian-brain⧺cptEpistem21.2,
+  McshHlth000003:3846  brain⧺cptEpistem21⧺,
+  McshHlth000004:185  cell-nucleus⧺cptEpistem658⧺,
+  McshHlth000004:477  chromosome⧺cptEpistem730⧺,
+  McshHlth000004:829  GENE⧺cptEpistem731⧺,
+  McshHlth000011:2001  disease.skeletal-system⧺cptDssHmn104⧺,
+  McshHlth000011:2026  disease.skeletal-system⧺cptDssHmn104⧺,
+  McshHlth000011:2055  disease.skeletal-system⧺cptDssHmn104⧺,
+  McshHlth000019:3252  VISUAL_SYSTEM⧺cptEpistem84.6.12⧺,
+  McshHlth000019:3731  SPINAL_CORD⧺cptEpistem84.6.11⧺,
+  McshHlth000019:4970  neuronBio⧺cptEpistem1289⧺,
+  McshHlth000019:5799  worldview-management-system⧺cptEpistem402⧺,
+
+=== LEFT-TEXT (32)
+  McshHlth000011:2245  θρομβωση = πήξη του αίματος,
+  McshLag000010:6013  lagoCnrd_Gntr
+  McshLag000012:5234  lagoCnrd_Gntr
+  McshNtr000003:384  body, doing, relation,
+  McshTchInf000010:1139  Jsmgo_Gntr (<code>Array.prototype.__proto__ === Object.prototype //true</code>),
+  McshTchInf000010:1909  Boolean.prototype, (<code>true.__proto__ === Boolean.prototype //true</code>)
+  McshTchInf000010:2238  <a class="clsPreview" href="#idLJsgnFunctionp">Function.prototype</a>,  (<code>Function.__proto__ === Function.prototype //true</code>),
+  McshTchInf000010:2240  <a class="clsPreview" href="#idLJsgnObject">Object.prototype</a>, (<code>Function.__proto__.__proto__ === Object.prototype //true</code>)
+  McshTchInf000010:3363  objectX, (<code>var o = Object.create(objectX)</code>)
+  McshTchInf000011:1467  Window.prototype (<code>Window.prototype.isPrototypeOf(window) // true</code>),
+  McshTchInf000011:1468  WindowProperties.prototype (internal in Chrome)
+  McshTchInf000012:757  ?(Module.prototype) (<code>module.__proto__ === Object.prototype //false</code>),
+  McshTchInf000012:758  Jsmgo_Gntr (<code>module.__proto__.__proto__ === Object.prototype //true</code>),
+  McshTchInf000012:1823  Jsmgo_Gntr (mfStream.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:3301  global.__proto__ (?)
+  McshTchInf000012:3302  Jsmgo_Gntr (> global.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000012:3766  (process.__proto__)
+  McshTchInf000012:3767  events.EventEmitter.prototype (>  process.__proto__.__proto__ === events.EventEmitter.prototype //true)
+  McshTchInf000012:3768  Jsmgo_Gntr (> process.__proto__.__proto__.__proto__ === Object.prototype //true)
+  McshTchInf000015:13830  <a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer-network</a>,
+  McshTchInf000022:867  <a class="clsPreview" href="../dirTchInf/McsTchInf000016Btc.last.html#idBtcblkpld">Bitcoin-block-payload</a>,
+  McshTchInf000036:5008  AI is being used to develop new drug discovery methods.
+  McshTchInf000036:5009  AI is being used to analyze large datasets of medical images and other data to improve diagnosis and treatment.
+  McshTchInf000036:5010  AI is being used to develop new environmental models to help us understand and mitigate climate change.
+  McshTchInf000036:5011  AI is being used to study the human brain and to develop new treatments for neurological disorders.
+  McshTchInf000036:5013  AI is being used to develop self-driving cars.
+  McshTchInf000036:5014  AI is being used to develop virtual assistants like Siri and Alexa.
+  McshTchInf000036:5015  AI is being used to develop fraud detection systems.
+  McshTchInf000036:5016  AI is being used to develop personalized recommendations systems.
+  McshTchInf000036:5017  AI is being used to develop new gaming experiences.
+  McshTchPrgm000006:344  Google Chrome-Extension

@@ -1,0 +1,103 @@
+SEMU-ARGU MAIN-NAME <Code>semuargu APPLIED — 2026-10-25
+name:: changed: 7 | tree lines: 43 | files: 11 | skipped: 8
+
+=== MAP old -> new (7)
+  Semuargu -> Hmnmsemuargu
+  ArgocptTurk -> Turksemuargu
+  Slv0_Semuargu -> Slv0semuargu
+  Ide0_Semuargu -> Ide0semuargu
+  Afa0_Semuargu -> Afa0semuargu
+  Tur0_Semuargu -> Tur0semuargu
+  Asa0_Semuargu -> Asa0semuargu
+
+=== SKIPPED (8)
+  McshLag000010:187  Sngusemuargu already
+  McshLag000011:195  Englsemuargu already
+  McshLag000033:206  Deutsemuargu already
+  McshLag000034:186  Bcmssemuargu already
+  McshLag000035:213  Spansemuargu already
+  McshLag000036:210  Arabsemuargu already
+  McshLag000037:208  Hiursemuargu already
+  McshLag000043:200  Korasemuargu already
+
+=== CHANGED (7)
+  McshLag000007:1536  Semuargu -> Hmnmsemuargu
+      <br>* McshEngl.semu-argu--of-Hmnm_lago!⇒Hmnmsemuargu,
+      <br>* McshEngl.Hmnmsemuargu!=semu-argu--of-Hmnm_lago,
+      <br>* McshEngl.argu--semu-concept!⇒Hmnmsemuargu,
+      <br>* McshEngl.Semuargu!⇒Hmnmsemuargu, {2026-07-10}
+  McshLag000030:96  ArgocptTurk -> Turksemuargu
+      <br>* McshEngl.semu-argu--of-Turk_lago!⇒Turksemuargu,
+      <br>* McshEngl.Turksemuargu!=semu-argu--of-Turk_lago,
+      <br>* McshEngl.ArgocptTurk!⇒Turksemuargu,
+      <br>* McshEngl.Turk_lago'ArgoCpt!⇒Turksemuargu,
+  McshLag000038:241  Slv0_Semuargu -> Slv0semuargu
+      <br>* McshEngl.semu-argu--of-Slv0Lago!⇒Slv0semuargu,
+      <br>* McshEngl.Slv0semuargu!=semu-argu--of-Slv0Lago,
+      <br>* McshEngl.Semuargu-of-Slv0Lago!⇒Slv0semuargu,
+      <br>* McshEngl.Slv0_Semuargu!⇒Slv0semuargu,
+  McshLag000039:237  Ide0_Semuargu -> Ide0semuargu
+      <br>* McshEngl.semu-argu--of-Ide0_lago!⇒Ide0semuargu,
+      <br>* McshEngl.Ide0semuargu!=semu-argu--of-Ide0_lago,
+      <br>* McshEngl.Semuargu-of-Ide0_lago!⇒Ide0semuargu,
+      <br>* McshEngl.Ide0_Semuargu!⇒Ide0semuargu,
+  McshLag000040:253  Afa0_Semuargu -> Afa0semuargu
+      <br>* McshEngl.semu-argu--of-Afa0_lago!⇒Afa0semuargu,
+      <br>* McshEngl.Afa0semuargu!=semu-argu--of-Afa0_lago,
+      <br>* McshEngl.Semuargu-of-Afa0_lago!⇒Afa0semuargu,
+      <br>* McshEngl.Afa0_Semuargu!⇒Afa0semuargu,
+  McshLag000041:243  Tur0_Semuargu -> Tur0semuargu
+      <br>* McshEngl.semu-argu--of-Tur0_lago!⇒Tur0semuargu,
+      <br>* McshEngl.Tur0semuargu!=semu-argu--of-Tur0_lago,
+      <br>* McshEngl.Semuargu-of-Tur0_lago!⇒Tur0semuargu,
+      <br>* McshEngl.Tur0_Semuargu!⇒Tur0semuargu,
+  McshLag000042:216  Asa0_Semuargu -> Asa0semuargu
+      <br>* McshEngl.semu-argu--of-Asa0_lago!⇒Asa0semuargu,
+      <br>* McshEngl.Asa0semuargu!=semu-argu--of-Asa0_lago,
+      <br>* McshEngl.Semuargu-of-Asa0_lago!⇒Asa0semuargu,
+      <br>* McshEngl.Asa0_Semuargu!⇒Asa0semuargu,
+
+=== TREES (43)
+  McshLag000007:2106  <h3 id="idLHmnmsmsondogstrH3">GENERIC-SPECIFIC-TREE of Semuargu  ->  <h3 id="idLHmnmsmsondogstrH3">GENERIC-SPECIFIC-TREE of Hmnmsemuargu
+  McshLag000007:2112  <br>* McshEngl.Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsemuargu'generic-specific-tree,
+  McshLag000007:2113  <br>* McshEngl.Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsemuargu'generic-specific-tree,
+  McshLag000007:2114  <br>* McshEngl.Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsemuargu'specific-generic-tree,
+  McshLag000007:2115  <br>* McshEngl.Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsemuargu'specific-generic-tree,
+  McshLag000007:2118  <br>* McshEngl.Semuargu_Gntr,  ->  <br>* McshEngl.Hmnmsemuargu_Gntr,
+  McshLag000007:2125  <br>* McshEngl.Semuargu.specific,  ->  <br>* McshEngl.Hmnmsemuargu.specific,
+  McshLag000007:2126  <br>* McshEngl.Semuargu.specific,  ->  <br>* McshEngl.Hmnmsemuargu.specific,
+  McshLag000007:2127  <br>* McshEngl.Semuargu_Sptr,  ->  <br>* McshEngl.Hmnmsemuargu_Sptr,
+  McshLag000010:235  <br>* Semuargu_Gntr,  ->  <br>* Hmnmsemuargu_Gntr,
+  McshLag000011:476  <br>* Semuargu_Gntr,  ->  <br>* Hmnmsemuargu_Gntr,
+  McshLag000012:172  <br>* Semuargu_Gntr,  ->  <br>* Hmnmsemuargu_Gntr,
+  McshLag000018:443  <br>* Semuargu_Gntr,  ->  <br>* Hmnmsemuargu_Gntr,
+  McshLag000038:272  <h3 id="idLSlv0smsondogstrH3">GENERIC-SPECIFIC-TREE of Slv0_Semuargu  ->  <h3 id="idLSlv0smsondogstrH3">GENERIC-SPECIFIC-TREE of Slv0semuargu
+  McshLag000038:278  <br>* McshEngl.Slv0_Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Slv0semuargu'generic-specific-tree,
+  McshLag000038:279  <br>* McshEngl.Slv0_Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Slv0semuargu'specific-generic-tree,
+  McshLag000038:282  <br>* McshEngl.Slv0_Semuargu_Gntr,  ->  <br>* McshEngl.Slv0semuargu_Gntr,
+  McshLag000038:288  <br>* McshEngl.Slv0_Semuargu.specific,  ->  <br>* McshEngl.Slv0semuargu.specific,
+  McshLag000038:289  <br>* McshEngl.Slv0_Semuargu_Sptr,  ->  <br>* McshEngl.Slv0semuargu_Sptr,
+  McshLag000039:268  <h3 id="idLIde0smsondogstrH3">GENERIC-SPECIFIC-TREE of Ide0_Semuargu  ->  <h3 id="idLIde0smsondogstrH3">GENERIC-SPECIFIC-TREE of Ide0semuargu
+  McshLag000039:274  <br>* McshEngl.Ide0_Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Ide0semuargu'generic-specific-tree,
+  McshLag000039:275  <br>* McshEngl.Ide0_Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Ide0semuargu'specific-generic-tree,
+  McshLag000039:278  <br>* McshEngl.Ide0_Semuargu_Gntr,  ->  <br>* McshEngl.Ide0semuargu_Gntr,
+  McshLag000039:284  <br>* McshEngl.Ide0_Semuargu.specific,  ->  <br>* McshEngl.Ide0semuargu.specific,
+  McshLag000039:285  <br>* McshEngl.Ide0_Semuargu_Sptr,  ->  <br>* McshEngl.Ide0semuargu_Sptr,
+  McshLag000040:284  <h3 id="idLAfa0smsondogstrH3">GENERIC-SPECIFIC-TREE of Afa0_Semuargu  ->  <h3 id="idLAfa0smsondogstrH3">GENERIC-SPECIFIC-TREE of Afa0semuargu
+  McshLag000040:290  <br>* McshEngl.Afa0_Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Afa0semuargu'generic-specific-tree,
+  McshLag000040:291  <br>* McshEngl.Afa0_Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Afa0semuargu'specific-generic-tree,
+  McshLag000040:294  <br>* McshEngl.Afa0_Semuargu_Gntr,  ->  <br>* McshEngl.Afa0semuargu_Gntr,
+  McshLag000040:300  <br>* McshEngl.Afa0_Semuargu.specific,  ->  <br>* McshEngl.Afa0semuargu.specific,
+  McshLag000040:301  <br>* McshEngl.Afa0_Semuargu_Sptr,  ->  <br>* McshEngl.Afa0semuargu_Sptr,
+  McshLag000041:274  <h3 id="idLTur0smsondogstrH3">GENERIC-SPECIFIC-TREE of Tur0_Semuargu  ->  <h3 id="idLTur0smsondogstrH3">GENERIC-SPECIFIC-TREE of Tur0semuargu
+  McshLag000041:280  <br>* McshEngl.Tur0_Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Tur0semuargu'generic-specific-tree,
+  McshLag000041:281  <br>* McshEngl.Tur0_Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Tur0semuargu'specific-generic-tree,
+  McshLag000041:284  <br>* McshEngl.Tur0_Semuargu_Gntr,  ->  <br>* McshEngl.Tur0semuargu_Gntr,
+  McshLag000041:290  <br>* McshEngl.Tur0_Semuargu.specific,  ->  <br>* McshEngl.Tur0semuargu.specific,
+  McshLag000041:291  <br>* McshEngl.Tur0_Semuargu_Sptr,  ->  <br>* McshEngl.Tur0semuargu_Sptr,
+  McshLag000042:247  <h3 id="idLAsa0smsondogstrH3">GENERIC-SPECIFIC-TREE of Asa0_Semuargu  ->  <h3 id="idLAsa0smsondogstrH3">GENERIC-SPECIFIC-TREE of Asa0semuargu
+  McshLag000042:253  <br>* McshEngl.Asa0_Semuargu'generic-specific-tree,  ->  <br>* McshEngl.Asa0semuargu'generic-specific-tree,
+  McshLag000042:254  <br>* McshEngl.Asa0_Semuargu'specific-generic-tree,  ->  <br>* McshEngl.Asa0semuargu'specific-generic-tree,
+  McshLag000042:257  <br>* McshEngl.Asa0_Semuargu_Gntr,  ->  <br>* McshEngl.Asa0semuargu_Gntr,
+  McshLag000042:263  <br>* McshEngl.Asa0_Semuargu.specific,  ->  <br>* McshEngl.Asa0semuargu.specific,
+  McshLag000042:264  <br>* McshEngl.Asa0_Semuargu_Sptr,  ->  <br>* McshEngl.Asa0semuargu_Sptr,

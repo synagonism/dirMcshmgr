@@ -1,0 +1,48 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 7 | renamed: 7 | name:: paragraphs: 7 | tree/reference lines: 0 | old names kept (M!⇒N added): 7 | files: 6
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (6)
+  McshLag000037          6
+  McshStn000039          3
+  McshStn000040          3
+  McshStn000041          3
+  McshStn000043          3
+  McshStn000044          3
+
+=== McshLag000037 (6)
+  McshLag000037:4893  <br>* McshEngl.UrduLogoView'conjunction_name,  ->  <br>* McshEngl.Urduconj,
+  McshLag000037:4894  <br>* McshEngl.UrduLogoView'conjunction-name!⇒UrduLogoView'conjunction_name,  ->  <br>* McshEngl.UrduLogoView'conjunction-name!⇒Urduconj,
+  McshLag000037:4894  ADD  McshEngl.UrduLogoView'conjunction_name!⇒Urduconj,
+  McshLag000037:4198  <br>* McshEngl.HindLogoView'conjunction_name,  ->  <br>* McshEngl.Hindconj,
+  McshLag000037:4199  <br>* McshEngl.HindLogoView'conjunction-name!⇒HindLogoView'conjunction_name,  ->  <br>* McshEngl.HindLogoView'conjunction-name!⇒Hindconj,
+  McshLag000037:4199  ADD  McshEngl.HindLogoView'conjunction_name!⇒Hindconj,
+
+=== McshStn000039 (3)
+  McshStn000039:1785  <br>* McshEngl.SqipLogo'conjunction_name,  ->  <br>* McshEngl.Sqipconj,
+  McshStn000039:1786  <br>* McshEngl.SqipLogo'conjunction-name!⇒SqipLogo'conjunction_name,  ->  <br>* McshEngl.SqipLogo'conjunction-name!⇒Sqipconj,
+  McshStn000039:1786  ADD  McshEngl.SqipLogo'conjunction_name!⇒Sqipconj,
+
+=== McshStn000040 (3)
+  McshStn000040:1216  <br>* McshEngl.SmkdLogoView'conjunction_name,  ->  <br>* McshEngl.Smkdconj,
+  McshStn000040:1217  <br>* McshEngl.SmkdLogoView'conjunction-name!⇒SmkdLogoView'conjunction_name,  ->  <br>* McshEngl.SmkdLogoView'conjunction-name!⇒Smkdconj,
+  McshStn000040:1217  ADD  McshEngl.SmkdLogoView'conjunction_name!⇒Smkdconj,
+
+=== McshStn000041 (3)
+  McshStn000041:1095  <br>* McshEngl.SslvLogoView'conjunction_name,  ->  <br>* McshEngl.Sslvconj,
+  McshStn000041:1096  <br>* McshEngl.SslvLogoView'conjunction-name!⇒SslvLogoView'conjunction_name,  ->  <br>* McshEngl.SslvLogoView'conjunction-name!⇒Sslvconj,
+  McshStn000041:1096  ADD  McshEngl.SslvLogoView'conjunction_name!⇒Sslvconj,
+
+=== McshStn000043 (3)
+  McshStn000043:1216  <br>* McshEngl.SrusLogoView'conjunction_name,  ->  <br>* McshEngl.Srusconj,
+  McshStn000043:1217  <br>* McshEngl.SrusLogoView'conjunction-name!⇒SrusLogoView'conjunction_name,  ->  <br>* McshEngl.SrusLogoView'conjunction-name!⇒Srusconj,
+  McshStn000043:1217  ADD  McshEngl.SrusLogoView'conjunction_name!⇒Srusconj,
+
+=== McshStn000044 (3)
+  McshStn000044:1466  <br>* McshEngl.RomnLogoView'conjunction_name,  ->  <br>* McshEngl.Romnconj,
+  McshStn000044:1467  <br>* McshEngl.RomnLogoView'conjunction-name!⇒RomnLogoView'conjunction_name,  ->  <br>* McshEngl.RomnLogoView'conjunction-name!⇒Romnconj,
+  McshStn000044:1467  ADD  McshEngl.RomnLogoView'conjunction_name!⇒Romnconj,

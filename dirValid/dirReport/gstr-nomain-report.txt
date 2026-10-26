@@ -1,0 +1,53 @@
+concepts WITHOUT main-name {2026-10-26} — they block MvrlGstr01/MvrlGstr02
+
+A main-name = the !⇒M target, or the M of an M!=I line, or the only English name.
+Now (reportMcsh.mjs --code MvrlGstr01,MvrlGstr02): MvrlGstr01 3, MvrlGstr02 3.
+Items of a "=== label:" group in generic-tree:: are not generics.
+
+=== BLOCKS-MvrlGstr02 (3) — the generic has NO main-name, so it cannot get the specific-tree:: the rule asks for
+  McshTchInf000016:5091  idDbcenrg  "statistics.energy-consumption"   is the generic of Frcnenergy_Gntr (McshTchInf000022:1286), needs a specific-tree:: (McshEngl.M.specific, M_Sptr)
+      names: blockchain-energy-consumption | AgntBkcn'energy-consumption | blockchain-statistics.energy-consumption | electricity-consumption--of-blockchain | energy-consumption--of--blockchain-network | power-consumption--of--blockchain-network
+
+=== A-nomain (0) — generic-tree:: WITHOUT head, concept has NO main-name — add !⇒Main to its name::, then the head McshEngl.Main_Gntr
+
+=== B-nomain (12) — used as a generic (link/!@ in another generic-tree::), has NO generic-tree:: and NO main-name — add main-name, then generic-tree::
+  McshCor000008:1150  idWhl003  "whole.body-003"  used as generic in 2: McshStn000007:266 McshStn000021:694
+      names: body:whole | whole.003-body | whole.body
+  McshCor000012:336  idMdlatt016  "evaluating of model"  used as generic in 1: McshCor000020:147
+      names: model'att016-evaluating | model'evaluating | model'validation
+  McshLag000003:1174  idWldvatt002  "04_management_tool of worldview"  used as generic in 1: McshCor000002:3537
+      names: worldview'04_management-tool | worldview'04_management_tool | worldview'att002-tool-for-management | worldview'management-tool | worldview'tool-for-management | worldview-management-tool
+  McshTchInf000006:1302  idLCpgmirsc  "info-resource of Pgmg_lago"  used as generic in 1: McshTchInf000006:3126
+      names: (no name::)
+  McshTchInf000011:3515  idLJsbrEventTargetp  "Jsbrevent'EventTarget.prototype"  used as generic in 2: McshTchInf000011:2250 McshTchInf000011:3436
+      names: Jsbr_lago'EventTarget.prototype | Jsbr_lago'eventTarget.prototype | Jsbrevent.prototype
+  McshTchInf000011:4190  idLJsbrNodep  "JsbralgoHtml'Node.prototype"  used as generic in 1: McshTchInf000011:3436
+      names: Node.prototype-JavascriptBrowser | Jsbr_lago'Node.prototype | JsbralgoHtml.prototype
+  McshTchInf000015:5561  idAlgntgovvtg  "voting of Agntgovc"  used as generic in 1: McshTchInf000021:2327
+      names: netAlgo-govc'voting | Agnetchain-governing'voting | Agnetchain_governing'voting | Agntgovc'voting
+  McshTchInf000016:5091  idDbcenrg  "statistics.energy-consumption"  used as generic in 1: McshTchInf000022:1286
+      names: blockchain-energy-consumption | AgntBkcn'energy-consumption | blockchain-statistics.energy-consumption | electricity-consumption--of-blockchain | energy-consumption--of--blockchain-network | power-consumption--of--blockchain-network
+  McshTchInf000016:5443  idDbcirsc  "info-resource of AgntBkcn"  used as generic in 1: McshTchInf000022:1575
+      names: (no name::)
+  McshTchInf000016:5934  idPosnet  "AgntBkcn.PROOF-OF-STAKE"  used as generic in 1: McshTchInf000016:10937
+      names: AgntBkcn.Pos | AgntBkcn.proof-of-stake | Pos-blockchain-network | proof-of-stake-blockchain-network
+  McshTchInf000016:5917  idPownet  "AgntBkcn.PROOF-OF-WORK"  used as generic in 2: McshTchInf000016:8626 McshTchInf000018:13079
+      names: AgntBkcn.Pow | AgntBkcn.proof-of-work | proof-of-work--blockchain-network
+  McshTchInf000019:205  idDeOzngvnr  "stakeholder.GOVERNOR"  used as generic in 1: McshTchInf000019:3310
+      names: OgznDao'governor | Daostkholder.governor | governor-of-OgznDao
+
+=== C-nomain (2) — a plain name in a generic-tree:: is a name of this concept; it has NO generic-tree:: and NO main-name
+  McshStn000009:10592  idSocHumn041  "society.complex"  named as generic in 1: McshStn000019:916 "complex-society"
+      names: complex-society | society.041-complex | society.complex
+  McshStn000009:10164  idSocHumn046  "society.network"  named as generic in 1: McshStn000019:916 "info-network-society"
+      names: info-network-society | network-society | SoctNtwk | society.046-network | society.network
+
+=== A-main (0) — generic-tree:: WITHOUT head, concept HAS a main-name — only the head line is missing
+
+=== B-main (0) — used as a generic, has NO generic-tree:: but HAS a main-name — add generic-tree:: (then the line can become M_Gntr)
+
+=== C-main (0) — a plain name in a generic-tree:: is a name of this concept; it has NO generic-tree:: but HAS a main-name
+
+=== C-ambiguous (2) — a plain name in a generic-tree:: is a name of several concepts — choose one (write its X_Gntr or a link)
+  McshCor000003:5154 "none" = 2 concepts: McshCor000003#idEntSmsNone McshCor000010#idQntNbr0
+  McshTchInf000010:4287 "none" = 2 concepts: McshCor000003#idEntSmsNone McshCor000010#idQntNbr0

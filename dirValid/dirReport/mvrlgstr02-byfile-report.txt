@@ -61,15 +61,10 @@ file:line = the line of S's generic-tree::; rows of one file are in line order
 === McshTchInf000022 (5: 0 not listed, 5 G without specific-tree)
 
 === McshHlth000002 (4: 0 not listed, 4 G without specific-tree)
-  McshHlth000002:5301  nutrient_Gntr  -> generic   | G has NO specific-tree::
-  McshHlth000002:11039  SystDigestive'functing_Gntr  -> generic   | G has NO specific-tree::
-  McshHlth000002:14958  intrauterine-life_Gntr  -> generic   | G has NO specific-tree::
-  McshHlth000002:15219  HmbdLife_Gntr  -> generic   | G has NO specific-tree::
 
 === McshStnlaw000003 (4: 0 not listed, 4 G without specific-tree)
 
 === McshTchInf000021 (4: 0 not listed, 4 G without specific-tree)
-  McshTchInf000021:1424  Deos_explorer_Gntr  -> generic   | G has NO specific-tree::
   McshTchInf000021:1575  Deos_account_Gntr  -> generic   | G has NO specific-tree::
   McshTchInf000021:2278  Agnteos'voting_Gntr  -> generic   | G has NO specific-tree::
   McshTchInf000021:2572  Eos-client_Gntr  -> generic   | G has NO specific-tree::

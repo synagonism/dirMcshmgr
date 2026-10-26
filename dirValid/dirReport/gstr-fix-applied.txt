@@ -1,0 +1,32 @@
+gstr-fix applied {2026-10-26}: MvrlGstr01/MvrlGstr02 fixes
+
+=== DONE (25)
+  McshLag000036:1964  idLArabadjegntr  McshEngl.Arabadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Arabic-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000034:1827  idLBcmsadjegntr  McshEngl.Bcmsadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Bosnian-Croatian-Montenegrin-Serbian--adjective" is a specific of Hmnmadje_Gntr
+  McshStn000038:1184  idSbuladjegntr  McshEngl.Sbuladje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Bulgarian-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000033:2635  idLDeutadjegntr  McshEngl.Deutadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "German-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000020:9584  idLEllnadjegntr  McshEngl.Ellnadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Greek-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000012:2257  idLEspoadjegntr  McshEngl.AdjeEspo_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "AdjeEspo" is a specific of Hmnmadje_Gntr
+  McshLag000037:1676  idLHiuradjegntr  McshEngl.Hiuradje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Hindi-Urdu--adjective" is a specific of Hmnmadje_Gntr
+  McshStn000035:2121  idLItlnadjegntr  McshEngl.Itlnadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Italian-adjective" is a specific of Hmnmadje_Gntr
+  McshStn000050:3002  idLKhmradjegntr  McshEngl.Khmradje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Khmer-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000043:2391  idLKoraadjegntr  McshEngl.Koraadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Korean-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000035:1483  idLSpanadjegntr  McshEngl.Spanadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Spanish-adjective" is a specific of Hmnmadje_Gntr
+  McshStn000039:1756  idLSqipadjegntr  McshEngl.Sqipadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Albanian-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000030:2238  idLTurkadjegntr  McshEngl.AdjeTurk_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "AdjeTurk" is a specific of Hmnmadje_Gntr
+  McshStn000034:3073  idLVnmaadjegntr  McshEngl.Vnmaadje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Vietnamese-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000040:1066  idLAfa0adjegntr  McshEngl.Afa0adje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Afro-Asiatic--adjective" is a specific of Hmnmadje_Gntr
+  McshLag000042:987  idLAsa0adjegntr  McshEngl.Asa0adje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Austroasiatic-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000039:841  idLIde0adjegntr  McshEngl.Ide0adje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Indo-European--adjective" is a specific of Hmnmadje_Gntr
+  McshLag000038:1175  idLSlv0adjegntr  McshEngl.Slv0adje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Slavic-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000041:978  idLTur0adjegntr  McshEngl.Tur0adje_Gntr  generic Hmnmadje_Gntr  — MvrlGstr01 "Turkic-adjective" is a specific of Hmnmadje_Gntr
+  McshLag000011:8219  idLEngladjegntr  new === group Hmnmadje_Gntr  — MvrlGstr01 English-adjective
+  McshLag000018:9106  idLZhonadjegntr  new === group Hmnmadje_Gntr  — MvrlGstr01 Chinese-adjective
+  McshLag000007:31826  idLHmnmgntr  new === group Ogmm_lago_Gntr  — MvrlGstr01 human-Ogmm_lago
+  McshLag000007:1441  idLHmnmsmscptsptr  + semu-concept--of-Sngu_lagu!@McshLag000010#idL0014smscpt  — MvrlGstr02 Sngusemucnpt_Gntr
+  McshTchInf000006:1548  idLCpgmsptr  + JavaScript-language!@McshTchInf000010  — MvrlGstr02 Jsgn_lago_Gntr
+  McshCor000011:1549  GS-TREE of sequence: 10× idSys001strr… → idSys001… (its whole is idSys001)  — MvrlGstr02 Treenodepath_Gntr
+
+=== NO-MAIN (0) — concept has no main-name: give it one, then the fix can be made
+
+=== SKIP (0)

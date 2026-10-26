@@ -1,0 +1,37 @@
+ARGU MAIN-NAME -> <Code>argu DRY — 2026-10-25
+argu main-names: 1 | renamed: 1 | name:: paragraphs: 1 | tree/reference lines: 6 | old names kept (M!⇒N added): 1 | files: 1
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (1)
+  McshLag000007         25
+
+=== McshLag000007 (25)
+  McshLag000007:15933  <br>* McshEngl.semu-sentence!⇒Semusent,  ->  <br>* McshEngl.semu-sentence!⇒Hmnmsemusent,
+  McshLag000007:15934  <br>* McshEngl.Semusent!=semu-sentence, {2025-04-14}  ->  <br>* McshEngl.Hmnmsemusent!=semu-sentence, {2025-04-14}
+  McshLag000007:15936  <br>* McshEngl.SemoSent!⇒Semusent, {2025-04-14}  ->  <br>* McshEngl.SemoSent!⇒Hmnmsemusent, {2025-04-14}
+  McshLag000007:15938  <br>* McshEngl.Semosentence!⇒Semusent, {2024-10-10}  ->  <br>* McshEngl.Semosentence!⇒Hmnmsemusent, {2024-10-10}
+  McshLag000007:15939  <br>* McshEngl.Lagvsentence!⇒Semusent, {2024-10-09}  ->  <br>* McshEngl.Lagvsentence!⇒Hmnmsemusent, {2024-10-09}
+  McshLag000007:15940  <br>* McshEngl.sentenceSemo!⇒Semusent, {2023-07-10}  ->  <br>* McshEngl.sentenceSemo!⇒Hmnmsemusent, {2023-07-10}
+  McshLag000007:15941  <br>* McshEngl.sentenceSms!⇒Semusent, {2021-05-30}  ->  <br>* McshEngl.sentenceSms!⇒Hmnmsemusent, {2021-05-30}
+  McshLag000007:15942  <br>* McshEngl.lago-sentence!⇒Semusent,  ->  <br>* McshEngl.lago-sentence!⇒Hmnmsemusent,
+  McshLag000007:15943  <br>* McshEngl.semu-view--sentence!⇒Semusent,  ->  <br>* McshEngl.semu-view--sentence!⇒Hmnmsemusent,
+  McshLag000007:15944  <br>* McshEngl.Hmnm_lago'sentence-of--semu-view!⇒Semusent,  ->  <br>* McshEngl.Hmnm_lago'sentence-of--semu-view!⇒Hmnmsemusent,
+  McshLag000007:15945  <br>* McshEngl.Hmnm_lago-semu-node.sentence!⇒Semusent,  ->  <br>* McshEngl.Hmnm_lago-semu-node.sentence!⇒Hmnmsemusent,
+  McshLag000007:15946  <br>* McshEngl.Hmnm_lago-semu-sentence!⇒Semusent,  ->  <br>* McshEngl.Hmnm_lago-semu-sentence!⇒Hmnmsemusent,
+  McshLag000007:15947  <br>* McshEngl.semu-view-sentence!⇒Semusent,  ->  <br>* McshEngl.semu-view-sentence!⇒Hmnmsemusent,
+  McshLag000007:15948  <br>* McshEngl.semu-proposition--of-Hmnm_lago!⇒Semusent,  ->  <br>* McshEngl.semu-proposition--of-Hmnm_lago!⇒Hmnmsemusent,
+  McshLag000007:15949  <br>* McshEngl.semu-sentence--of-Hmnm_lago!⇒Semusent,  ->  <br>* McshEngl.semu-sentence--of-Hmnm_lago!⇒Hmnmsemusent,
+  McshLag000007:15950  <br>* McshEngl.semu-statement--of-Hmnm_lago!⇒Semusent,  ->  <br>* McshEngl.semu-statement--of-Hmnm_lago!⇒Hmnmsemusent,
+  McshLag000007:15951  <br>* McshEngl.sentSmsHumn!⇒Semusent,  ->  <br>* McshEngl.sentSmsHumn!⇒Hmnmsemusent,
+  McshLag000007:15952  <br>* McshEngl.HmnmviewSemu'semu-sentence!⇒Semusent,  ->  <br>* McshEngl.HmnmviewSemu'semu-sentence!⇒Hmnmsemusent,
+  McshLag000007:15935  ADD  McshEngl.Semusent!⇒Hmnmsemusent,
+  McshLag000007:15988  <h3 id="idLHmnmsmssntcgstrH3">GENERIC-SPECIFIC-TREE of Semusent  ->  <h3 id="idLHmnmsmssntcgstrH3">GENERIC-SPECIFIC-TREE of Hmnmsemusent
+  McshLag000007:15994  <br>* McshEngl.Semusent'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsemusent'generic-specific-tree,
+  McshLag000007:15995  <br>* McshEngl.Semusent'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsemusent'specific-generic-tree,
+  McshLag000007:15998  <br>* McshEngl.Semusent_Gntr,  ->  <br>* McshEngl.Hmnmsemusent_Gntr,
+  McshLag000007:16004  <br>* McshEngl.Semusent.specific,  ->  <br>* McshEngl.Hmnmsemusent.specific,
+  McshLag000007:16005  <br>* McshEngl.Semusent_Sptr,  ->  <br>* McshEngl.Hmnmsemusent_Sptr,

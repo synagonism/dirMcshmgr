@@ -173,6 +173,34 @@ body {
   overflow-wrap: break-word; /* break long URLs/names so a narrow content box doesn't show a horizontal scrollbar */
   word-break: break-word; /* also break spaceless McsEngl.…//dirCor//… tokens */
 }
+#idCnrSplitDiv {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 9px;
+  margin-left: -4px;            /* center the 9px grab-zone on the boundary */
+  z-index: 30;                  /* above info (20) and content (0) */
+  cursor: col-resize;
+  touch-action: none;           /* let the handle own touch gestures */
+  background: transparent;
+}
+/* VS Code-style sash: a thin accent line centered on the boundary, shown on
+   hover (slight delay) or while dragging. */
+#idCnrSplitDiv::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background: transparent;
+  transition: background 0.1s ease 0.25s;
+}
+#idCnrSplitDiv:hover::after,
+#idCnrSplitDiv.clsSplitActive::after {
+  background: #0078d4;          /* VS Code sash hover accent */
+}
 #idCnrMainInfoDiv > input[type="button"] {
   padding: 2px 7px 2px 7px;
   margin-left: 5px;

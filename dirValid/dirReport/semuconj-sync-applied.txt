@@ -1,0 +1,119 @@
+SEMU-CONJUNCTION MAIN-NAME <Code>semuconj APPLIED — 2026-10-25
+name:: changed: 13 | tree lines: 29 | files: 20 | skipped: 2
+
+=== MAP old -> new (13)
+  Semuconj -> Hmnmsemuconj
+  Englconj_cnpt -> Englsemuconj
+  ConjcptTurk -> Turksemuconj
+  BcmsConjCnpt -> Bcmssemuconj
+  SpanConjCnpt -> Spansemuconj
+  ArabConjCnpt -> Arabsemuconj
+  HiurConjCnpt -> Hiursemuconj
+  Slv0ConjCnpt -> Slv0semuconj
+  Ide0ConjCnpt -> Ide0semuconj
+  Afa0ConjCnpt -> Afa0semuconj
+  Tur0ConjCnpt -> Tur0semuconj
+  Asa0ConjCnpt -> Asa0semuconj
+  KoraConjCnpt -> Korasemuconj
+
+=== SKIPPED (2)
+  McshLag000010:284  Sngusemuconj already
+  McshLag000033:297  Deutsemuconj already
+
+=== CHANGED (13)
+  McshLag000007:14933  Semuconj -> Hmnmsemuconj
+      <br>* McshEngl.semu-conjunction--of-Hmnm_lago!⇒Hmnmsemuconj,
+      <br>* McshEngl.Hmnmsemuconj!=semu-conjunction--of-Hmnm_lago,
+      <br>* McshEngl.conjunction--semu-concept!⇒Hmnmsemuconj,
+      <br>* McshEngl.Semuconj!⇒Hmnmsemuconj, {2026-07-10}
+  McshLag000011:547  Englconj_cnpt -> Englsemuconj
+      <br>* McshEngl.semu-conjunction--of-Engl_lago!⇒Englsemuconj,
+      <br>* McshEngl.Englsemuconj!=semu-conjunction--of-Engl_lago,
+      <br>* McshEngl.conjunction-concept-of-Engl_lago!⇒Englsemuconj,
+      <br>* McshEngl.Englconj_cnpt!⇒Englsemuconj,
+  McshLag000030:142  ConjcptTurk -> Turksemuconj
+      <br>* McshEngl.semu-conjunction--of-Turk_lago!⇒Turksemuconj,
+      <br>* McshEngl.Turksemuconj!=semu-conjunction--of-Turk_lago,
+      <br>* McshEngl.ConjcptTurk!⇒Turksemuconj,
+      <br>* McshEngl.Turk_lago'ConjCpt!⇒Turksemuconj,
+  McshLag000034:279  BcmsConjCnpt -> Bcmssemuconj
+      <br>* McshEngl.semu-conjunction--of-Bcms_lago!⇒Bcmssemuconj,
+      <br>* McshEngl.Bcmssemuconj!=semu-conjunction--of-Bcms_lago,
+      <br>* McshEngl.conjunction-concept-of-Bcms_lago!⇒Bcmssemuconj,
+      <br>* McshEngl.BcmsConjCnpt!⇒Bcmssemuconj,
+  McshLag000035:306  SpanConjCnpt -> Spansemuconj
+      <br>* McshEngl.semu-conjunction--of-Span_lago!⇒Spansemuconj,
+      <br>* McshEngl.Spansemuconj!=semu-conjunction--of-Span_lago,
+      <br>* McshEngl.conjunction-concept-of-Span_lago!⇒Spansemuconj,
+      <br>* McshEngl.SpanConjCnpt!⇒Spansemuconj,
+  McshLag000036:303  ArabConjCnpt -> Arabsemuconj
+      <br>* McshEngl.semu-conjunction--of-Arab_lago!⇒Arabsemuconj,
+      <br>* McshEngl.Arabsemuconj!=semu-conjunction--of-Arab_lago,
+      <br>* McshEngl.conjunction-concept-of-Arab_lago!⇒Arabsemuconj,
+      <br>* McshEngl.ArabConjCnpt!⇒Arabsemuconj,
+  McshLag000037:301  HiurConjCnpt -> Hiursemuconj
+      <br>* McshEngl.semu-conjunction--of-Hiur_lago!⇒Hiursemuconj,
+      <br>* McshEngl.Hiursemuconj!=semu-conjunction--of-Hiur_lago,
+      <br>* McshEngl.conjunction-concept-of-Hiur_lago!⇒Hiursemuconj,
+      <br>* McshEngl.HiurConjCnpt!⇒Hiursemuconj,
+  McshLag000038:335  Slv0ConjCnpt -> Slv0semuconj
+      <br>* McshEngl.semu-conjunction--of-Slv0Lago!⇒Slv0semuconj,
+      <br>* McshEngl.Slv0semuconj!=semu-conjunction--of-Slv0Lago,
+      <br>* McshEngl.conjunction-concept-of-Slv0Lago!⇒Slv0semuconj,
+      <br>* McshEngl.Slv0ConjCnpt!⇒Slv0semuconj,
+  McshLag000039:331  Ide0ConjCnpt -> Ide0semuconj
+      <br>* McshEngl.semu-conjunction--of-Ide0_lago!⇒Ide0semuconj,
+      <br>* McshEngl.Ide0semuconj!=semu-conjunction--of-Ide0_lago,
+      <br>* McshEngl.conjunction-concept-of-Ide0_lago!⇒Ide0semuconj,
+      <br>* McshEngl.Ide0ConjCnpt!⇒Ide0semuconj,
+  McshLag000040:347  Afa0ConjCnpt -> Afa0semuconj
+      <br>* McshEngl.semu-conjunction--of-Afa0_lago!⇒Afa0semuconj,
+      <br>* McshEngl.Afa0semuconj!=semu-conjunction--of-Afa0_lago,
+      <br>* McshEngl.conjunction-concept-of-Afa0_lago!⇒Afa0semuconj,
+      <br>* McshEngl.Afa0ConjCnpt!⇒Afa0semuconj,
+  McshLag000041:337  Tur0ConjCnpt -> Tur0semuconj
+      <br>* McshEngl.semu-conjunction--of-Tur0_lago!⇒Tur0semuconj,
+      <br>* McshEngl.Tur0semuconj!=semu-conjunction--of-Tur0_lago,
+      <br>* McshEngl.conjunction-concept-of-Tur0_lago!⇒Tur0semuconj,
+      <br>* McshEngl.Tur0ConjCnpt!⇒Tur0semuconj,
+  McshLag000042:310  Asa0ConjCnpt -> Asa0semuconj
+      <br>* McshEngl.semu-conjunction--of-Asa0_lago!⇒Asa0semuconj,
+      <br>* McshEngl.Asa0semuconj!=semu-conjunction--of-Asa0_lago,
+      <br>* McshEngl.conjunction-concept-of-Asa0_lago!⇒Asa0semuconj,
+      <br>* McshEngl.Asa0ConjCnpt!⇒Asa0semuconj,
+  McshLag000043:293  KoraConjCnpt -> Korasemuconj
+      <br>* McshEngl.semu-conjunction--of-Kora_lago!⇒Korasemuconj,
+      <br>* McshEngl.Korasemuconj!=semu-conjunction--of-Kora_lago,
+      <br>* McshEngl.conjunction-concept-of-Kora_lago!⇒Korasemuconj,
+      <br>* McshEngl.KoraConjCnpt!⇒Korasemuconj,
+
+=== TREES (29)
+  McshLag000007:15019  <h3 id="idLHmnmsmscnjgstrH3">GENERIC-SPECIFIC-TREE of Semuconj  ->  <h3 id="idLHmnmsmscnjgstrH3">GENERIC-SPECIFIC-TREE of Hmnmsemuconj
+  McshLag000007:15025  <br>* McshEngl.Semuconj'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsemuconj'generic-specific-tree,
+  McshLag000007:15026  <br>* McshEngl.Semuconj'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsemuconj'specific-generic-tree,
+  McshLag000007:15029  <br>* McshEngl.Semuconj_Gntr,  ->  <br>* McshEngl.Hmnmsemuconj_Gntr,
+  McshLag000007:15036  <br>* McshEngl.Semuconj.specific,  ->  <br>* McshEngl.Hmnmsemuconj.specific,
+  McshLag000007:15037  <br>* McshEngl.Semuconj_Sptr,  ->  <br>* McshEngl.Hmnmsemuconj_Sptr,
+  McshLag000008:835  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000009:4329  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000010:306  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000010:6052  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000011:30206  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000012:287  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000012:5250  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000018:536  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000018:18672  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000030:8129  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000031:195  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshLag000034:298  <br>* McshEngl.BcmsConjCnpt_Gntr,  ->  <br>* McshEngl.Bcmssemuconj_Gntr,
+  McshLag000035:325  <br>* McshEngl.SpanConjCnpt_Gntr,  ->  <br>* McshEngl.Spansemuconj_Gntr,
+  McshLag000036:322  <br>* McshEngl.ArabConjCnpt_Gntr,  ->  <br>* McshEngl.Arabsemuconj_Gntr,
+  McshLag000037:320  <br>* McshEngl.HiurConjCnpt_Gntr,  ->  <br>* McshEngl.Hiursemuconj_Gntr,
+  McshLag000038:354  <br>* McshEngl.Slv0ConjCnpt_Gntr,  ->  <br>* McshEngl.Slv0semuconj_Gntr,
+  McshLag000039:350  <br>* McshEngl.Ide0ConjCnpt_Gntr,  ->  <br>* McshEngl.Ide0semuconj_Gntr,
+  McshLag000040:366  <br>* McshEngl.Afa0ConjCnpt_Gntr,  ->  <br>* McshEngl.Afa0semuconj_Gntr,
+  McshLag000041:356  <br>* McshEngl.Tur0ConjCnpt_Gntr,  ->  <br>* McshEngl.Tur0semuconj_Gntr,
+  McshLag000042:329  <br>* McshEngl.Asa0ConjCnpt_Gntr,  ->  <br>* McshEngl.Asa0semuconj_Gntr,
+  McshLag000043:312  <br>* McshEngl.KoraConjCnpt_Gntr,  ->  <br>* McshEngl.Korasemuconj_Gntr,
+  McshLag000043:3728  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,
+  McshTchInf000005:570  <br>* Semuconj_Gntr,  ->  <br>* Hmnmsemuconj_Gntr,

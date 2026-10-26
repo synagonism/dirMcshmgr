@@ -1,0 +1,65 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 5 | renamed: 5 | name:: paragraphs: 5 | tree/reference lines: 12 | old names kept (M!⇒N added): 5 | files: 4
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (4)
+  McshLag000010         18
+  McshLag000011         14
+  McshLag000020          9
+  McshLag000027          3
+
+=== McshLag000010 (18)
+  McshLag000010:4962  <br>* McshEngl.Sngu_argu_membr,  ->  <br>* McshEngl.Snguargu_membr,
+  McshLag000010:4963  <br>* McshEngl.Sngu_argu'member!⇒Sngu_argu_membr,  ->  <br>* McshEngl.Sngu_argu'member!⇒Snguargu_membr,
+  McshLag000010:4963  ADD  McshEngl.Sngu_argu_membr!⇒Snguargu_membr,
+  McshLag000010:4943  <br>* McshEngl.Sngu_argu,  ->  <br>* McshEngl.Snguargu,
+  McshLag000010:4944  <br>* McshEngl.arguSngu!⇒Sngu_argu,  ->  <br>* McshEngl.arguSngu!⇒Snguargu,
+  McshLag000010:4945  <br>* McshEngl.lagoSinagu-argu!⇒Sngu_argu,  ->  <br>* McshEngl.lagoSinagu-argu!⇒Snguargu,
+  McshLag000010:4946  <br>* McshEngl.Sngu_lagu'argu!⇒Sngu_argu,  ->  <br>* McshEngl.Sngu_lagu'argu!⇒Snguargu,
+  McshLag000010:4947  <br>* McshEngl.Sngu_lagu-argu!⇒Sngu_argu,  ->  <br>* McshEngl.Sngu_lagu-argu!⇒Snguargu,
+  McshLag000010:4948  <br>* McshEngl.Sngu_name.argu!⇒Sngu_argu,  ->  <br>* McshEngl.Sngu_name.argu!⇒Snguargu,
+  McshLag000010:4949  <br>* McshEngl.nounSngu!⇒Sngu_argu,  ->  <br>* McshEngl.nounSngu!⇒Snguargu,
+  McshLag000010:4950  <br>* McshEngl.SnguviewLogo'argu-name!⇒Sngu_argu,  ->  <br>* McshEngl.SnguviewLogo'argu-name!⇒Snguargu,
+  McshLag000010:4944  ADD  McshEngl.Sngu_argu!⇒Snguargu,
+  McshLag000010:5144  <h3 id="idL0014ondogstrH3">GENERIC-SPECIFIC-TREE of Sngu_argu  ->  <h3 id="idL0014ondogstrH3">GENERIC-SPECIFIC-TREE of Snguargu
+  McshLag000010:5150  <br>* McshEngl.Sngu_argu'generic-specific-tree,  ->  <br>* McshEngl.Snguargu'generic-specific-tree,
+  McshLag000010:5151  <br>* McshEngl.Sngu_argu'specific-generic-tree,  ->  <br>* McshEngl.Snguargu'specific-generic-tree,
+  McshLag000010:5154  <br>* McshEngl.Sngu_argu_Gntr,  ->  <br>* McshEngl.Snguargu_Gntr,
+  McshLag000010:5162  <br>* McshEngl.Sngu_argu.specific,  ->  <br>* McshEngl.Snguargu.specific,
+  McshLag000010:5163  <br>* McshEngl.Sngu_argu_Sptr,  ->  <br>* McshEngl.Snguargu_Sptr,
+
+=== McshLag000011 (14)
+  McshLag000011:6211  <br>* McshEngl.Engl_argu,  ->  <br>* McshEngl.Englargu,
+  McshLag000011:6212  <br>* McshEngl.English-ondoname!⇒Engl_argu,  ->  <br>* McshEngl.English-ondoname!⇒Englargu,
+  McshLag000011:6213  <br>* McshEngl.Engl_lago'ondoname!⇒Engl_argu,  ->  <br>* McshEngl.Engl_lago'ondoname!⇒Englargu,
+  McshLag000011:6214  <br>* McshEngl.Engl_lago-ondoname!⇒Engl_argu,  ->  <br>* McshEngl.Engl_lago-ondoname!⇒Englargu,
+  McshLag000011:6215  <br>* McshEngl.Englname.argu!⇒Engl_argu,  ->  <br>* McshEngl.Englname.argu!⇒Englargu,
+  McshLag000011:6216  <br>* McshEngl.ondoHmnm.English!⇒Engl_argu,  ->  <br>* McshEngl.ondoHmnm.English!⇒Englargu,
+  McshLag000011:6217  <br>* McshEngl.Engl_logo_view'argu-name!⇒Engl_argu,  ->  <br>* McshEngl.Engl_logo_view'argu-name!⇒Englargu,
+  McshLag000011:6212  ADD  McshEngl.Engl_argu!⇒Englargu,
+  McshLag000011:14950  <h3 id="idLEnglondogstrH3">GENERIC-SPECIFIC-TREE of Engl_argu  ->  <h3 id="idLEnglondogstrH3">GENERIC-SPECIFIC-TREE of Englargu
+  McshLag000011:14956  <br>* McshEngl.Engl_argu'generic-specific-tree,  ->  <br>* McshEngl.Englargu'generic-specific-tree,
+  McshLag000011:14957  <br>* McshEngl.Engl_argu'specific-generic-tree,  ->  <br>* McshEngl.Englargu'specific-generic-tree,
+  McshLag000011:14960  <br>* McshEngl.Engl_argu_Gntr,  ->  <br>* McshEngl.Englargu_Gntr,
+  McshLag000011:14967  <br>* McshEngl.Engl_argu.specific,  ->  <br>* McshEngl.Englargu.specific,
+  McshLag000011:14968  <br>* McshEngl.Engl_argu_Sptr,  ->  <br>* McshEngl.Englargu_Sptr,
+
+=== McshLag000020 (9)
+  McshLag000020:2010  <br>* McshEngl.Elln_argu,  ->  <br>* McshEngl.Ellnargu,
+  McshLag000020:2011  <br>* McshEngl.Elln_logo'argu!⇒Elln_argu,  ->  <br>* McshEngl.Elln_logo'argu!⇒Ellnargu,
+  McshLag000020:2012  <br>* McshEngl.argu.Greek!⇒Elln_argu,  ->  <br>* McshEngl.argu.Greek!⇒Ellnargu,
+  McshLag000020:2013  <br>* McshEngl.Elln_logo'argu-name!⇒Elln_argu,  ->  <br>* McshEngl.Elln_logo'argu-name!⇒Ellnargu,
+  McshLag000020:2015  <br>* McshElln.Ελλν_αργκ!=Elln_argu,  ->  <br>* McshElln.Ελλν_αργκ!=Ellnargu,
+  McshLag000020:2016  <br>* McshElln.άργκουΕλλν!=Elln_argu,  ->  <br>* McshElln.άργκουΕλλν!=Ellnargu,
+  McshLag000020:2017  <br>* McshElln.οντοόνομαΕλλν!=Elln_argu,  ->  <br>* McshElln.οντοόνομαΕλλν!=Ellnargu,
+  McshLag000020:2018  <br>* McshElln.όντοΕλλν!=Elln_argu,  ->  <br>* McshElln.όντοΕλλν!=Ellnargu,
+  McshLag000020:2011  ADD  McshEngl.Elln_argu!⇒Ellnargu,
+
+=== McshLag000027 (3)
+  McshLag000027:1328  <br>* McshEngl.Ella_argu,  ->  <br>* McshEngl.Ellaargu,
+  McshLag000027:1329  <br>* McshEngl.Ella_logo'argu!⇒Ella_argu,  ->  <br>* McshEngl.Ella_logo'argu!⇒Ellaargu,
+  McshLag000027:1329  ADD  McshEngl.Ella_argu!⇒Ellaargu,

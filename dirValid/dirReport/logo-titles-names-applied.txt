@@ -1,0 +1,1186 @@
+OLD OUTPUT-VIEW NAMES IN TITLES AND name:: APPLIED — 2026-10-25
+names: 32 | lines changed: 1151 in 29 files
+
+=== PER FILE (29)
+  McshLag000011        30
+  McshLag000012        28
+  McshLag000018        33
+  McshLag000020        45
+  McshLag000027        21
+  McshLag000028         2
+  McshLag000030        16
+  McshLag000033        32
+  McshLag000034        34
+  McshLag000035        34
+  McshLag000036        34
+  McshLag000037       125
+  McshLag000038        32
+  McshLag000039        32
+  McshLag000040        32
+  McshLag000041        32
+  McshLag000042        32
+  McshLag000043        34
+  McshStn000034        49
+  McshStn000035        46
+  McshStn000037        43
+  McshStn000038        49
+  McshStn000039        48
+  McshStn000040        48
+  McshStn000041        48
+  McshStn000043        48
+  McshStn000044        48
+  McshStn000048        47
+  McshStn000050        49
+
+=== CHANGED (1151)
+  McshLag000011:583  <h2 id="idLEnglsxtrH2">syntax-tree of Engl_logo_view  ->  <h2 id="idLEnglsxtrH2">syntax-tree of EnglviewLogo
+  McshLag000011:597  <br>* McshEngl.Engl_logo_view'syntax-tree!⇒Engl_sntx,  ->  <br>* McshEngl.EnglviewLogo'syntax-tree!⇒Engl_sntx,
+  McshLag000011:605  <h2 id="idLEnglnodeH2">node of Engl_logo_view  ->  <h2 id="idLEnglnodeH2">node of EnglviewLogo
+  McshLag000011:614  <br>* McshEngl.Engl_logo_view'node,  ->  <br>* McshEngl.EnglviewLogo'node,
+  McshLag000011:620  <h2 id="idLEngluntH2">unit of Engl_logo_view  ->  <h2 id="idLEngluntH2">unit of EnglviewLogo
+  McshLag000011:631  <br>* McshEngl.Engl_logo_view'unit!⇒Engl_unit,  ->  <br>* McshEngl.EnglviewLogo'unit!⇒Engl_unit,
+  McshLag000011:2190  <h2 id="idLEnglutsmH2">unit-system of Engl_logo_view  ->  <h2 id="idLEnglutsmH2">unit-system of EnglviewLogo
+  McshLag000011:2204  <br>* McshEngl.Engl_logo_view'unit-system!⇒SystUnitEngl,  ->  <br>* McshEngl.EnglviewLogo'unit-system!⇒SystUnitEngl,
+  McshLag000011:5918  <h2 id="idLEnglnameH2">name-(decoding-unit) of Engl_logo_view  ->  <h2 id="idLEnglnameH2">name-(decoding-unit) of EnglviewLogo
+  McshLag000011:5937  <br>* McshEngl.Engl_logo_view'name-(decoding-unit)!⇒Englname,  ->  <br>* McshEngl.EnglviewLogo'name-(decoding-unit)!⇒Englname,
+  McshLag000011:6203  <h2 id="idLEnglondoH2">argu-name of Engl_logo_view  ->  <h2 id="idLEnglondoH2">argu-name of EnglviewLogo
+  McshLag000011:6220  <br>* McshEngl.Engl_logo_view'argu-name!⇒Englargu,  ->  <br>* McshEngl.EnglviewLogo'argu-name!⇒Englargu,
+  McshLag000011:16141  <h2 id="idLEnglverbH2">verb-name of Engl_logo_view  ->  <h2 id="idLEnglverbH2">verb-name of EnglviewLogo
+  McshLag000011:16160  <br>* McshEngl.Engl_logo_view'verb-name!⇒Englverb,  ->  <br>* McshEngl.EnglviewLogo'verb-name!⇒Englverb,
+  McshLag000011:27460  <h2 id="idLEnglconjH2">conjunction-name of Engl_logo_view  ->  <h2 id="idLEnglconjH2">conjunction-name of EnglviewLogo
+  McshLag000011:27477  <br>* McshEngl.Engl_logo_view'conjunction-name!⇒Englconj,  ->  <br>* McshEngl.EnglviewLogo'conjunction-name!⇒Englconj,
+  McshLag000011:29722  <h2 id="idLEnglodsmH2">argu-system of Engl_logo_view  ->  <h2 id="idLEnglodsmH2">argu-system of EnglviewLogo
+  McshLag000011:29731  <br>* McshEngl.Engl_logo_view'argu-system!⇒phraseArguEngl,  ->  <br>* McshEngl.EnglviewLogo'argu-system!⇒phraseArguEngl,
+  McshLag000011:29765  <h2 id="idLEnglverbarguH2">verb-argument of Engl_logo_view  ->  <h2 id="idLEnglverbarguH2">verb-argument of EnglviewLogo
+  McshLag000011:29891  <br>* McshEngl.Engl_logo_view'verb-argument!⇒Engl_Verbargt,  ->  <br>* McshEngl.EnglviewLogo'verb-argument!⇒Engl_Verbargt,
+  McshLag000011:29896  <h2 id="idLEnglsntcH2">sentence of Engl_logo_view  ->  <h2 id="idLEnglsntcH2">sentence of EnglviewLogo
+  McshLag000011:29916  <br>* McshEngl.Engl_logo_view'sentence!⇒Englsent,  ->  <br>* McshEngl.EnglviewLogo'sentence!⇒Englsent,
+  McshLag000011:29934  <h2 id="idLEnglsctnH2">section of Engl_logo_view  ->  <h2 id="idLEnglsctnH2">section of EnglviewLogo
+  McshLag000011:29950  <br>* McshEngl.Engl_logo_view'section!⇒sectionEngl,  ->  <br>* McshEngl.EnglviewLogo'section!⇒sectionEngl,
+  McshLag000011:29955  <h2 id="idLEnglrootH2">root-node of Engl_logo_view  ->  <h2 id="idLEnglrootH2">root-node of EnglviewLogo
+  McshLag000011:29968  <br>* McshEngl.Engl_logo_view'root-node!⇒rootEngl,  ->  <br>* McshEngl.EnglviewLogo'root-node!⇒rootEngl,
+  McshLag000011:29973  <h2 id="idLEnglspchH2">Engl_logo_view.speech  ->  <h2 id="idLEnglspchH2">EnglviewLogo.speech
+  McshLag000011:29988  <br>* McshEngl.Engl_logo_view.speech!⇒speechEngl,  ->  <br>* McshEngl.EnglviewLogo.speech!⇒speechEngl,
+  McshLag000011:29993  <h2 id="idLEngltxtH2">Engl_logo_view.alphabetic  ->  <h2 id="idLEngltxtH2">EnglviewLogo.alphabetic
+  McshLag000011:30009  <br>* McshEngl.Engl_logo_view.alphabetic!⇒textEngl,  ->  <br>* McshEngl.EnglviewLogo.alphabetic!⇒textEngl,
+  McshLag000012:337  <h2 id="idLEsposxtrH2">syntax-tree of logoEspo  ->  <h2 id="idLEsposxtrH2">syntax-tree of EspoviewLogo
+  McshLag000012:346  <br>* McshEngl.logoEspo'syntax-tree,  ->  <br>* McshEngl.EspoviewLogo'syntax-tree,
+  McshLag000012:351  <h2 id="idLEsponodeH2">node of logoEspo  ->  <h2 id="idLEsponodeH2">node of EspoviewLogo
+  McshLag000012:360  <br>* McshEngl.logoEspo'node!⇒Esponode,  ->  <br>* McshEngl.EspoviewLogo'node!⇒Esponode,
+  McshLag000012:372  <h2 id="idLEspountH2">unit of logoEspo  ->  <h2 id="idLEspountH2">unit of EspoviewLogo
+  McshLag000012:383  <br>* McshEngl.logoEspo'unit!⇒unitEspo,  ->  <br>* McshEngl.EspoviewLogo'unit!⇒unitEspo,
+  McshLag000012:1614  <h2 id="idLEspoutsrH2">unit-structure of logoEspo  ->  <h2 id="idLEspoutsrH2">unit-structure of EspoviewLogo
+  McshLag000012:1628  <br>* McshEngl.logoEspo'unit-structure!⇒SystUnitEspo,  ->  <br>* McshEngl.EspoviewLogo'unit-structure!⇒SystUnitEspo,
+  McshLag000012:1805  <h2 id="idLEsponameH2">name-(decoding-unit) of logoEspo  ->  <h2 id="idLEsponameH2">name-(decoding-unit) of EspoviewLogo
+  McshLag000012:1823  <br>* McshEngl.logoEspo'name-(decoding-unit)!⇒nameEspo,  ->  <br>* McshEngl.EspoviewLogo'name-(decoding-unit)!⇒nameEspo,
+  McshLag000012:1939  <h2 id="idLEspoondoH2">argu-name of logoEspo  ->  <h2 id="idLEspoondoH2">argu-name of EspoviewLogo
+  McshLag000012:1954  <br>* McshEngl.logoEspo'argu-name!⇒ondoEspo,  ->  <br>* McshEngl.EspoviewLogo'argu-name!⇒ondoEspo,
+  McshLag000012:2735  <h2 id="idLEspoverbH2">verb-name of logoEspo  ->  <h2 id="idLEspoverbH2">verb-name of EspoviewLogo
+  McshLag000012:2751  <br>* McshEngl.logoEspo'verb-name!⇒verbEspo,  ->  <br>* McshEngl.EspoviewLogo'verb-name!⇒verbEspo,
+  McshLag000012:4797  <h2 id="idLEspoconjH2">conjunction-name of logoEspo  ->  <h2 id="idLEspoconjH2">conjunction-name of EspoviewLogo
+  McshLag000012:4867  <br>* McshEngl.logoEspo'conjunction-name!⇒Espoconj,  ->  <br>* McshEngl.EspoviewLogo'conjunction-name!⇒Espoconj,
+  McshLag000012:4878  <h2 id="idLEspoverbarguH2">verb-argument of logoEspo  ->  <h2 id="idLEspoverbarguH2">verb-argument of EspoviewLogo
+  McshLag000012:4965  <br>* McshEngl.logoEspo'verb-argument!⇒EspoVerbArgu,  ->  <br>* McshEngl.EspoviewLogo'verb-argument!⇒EspoVerbArgu,
+  McshLag000012:4970  <h2 id="idLEsposntcH2">sentence of logoEspo  ->  <h2 id="idLEsposntcH2">sentence of EspoviewLogo
+  McshLag000012:4989  <br>* McshEngl.logoEspo'sentence!⇒sentenceEspo,  ->  <br>* McshEngl.EspoviewLogo'sentence!⇒sentenceEspo,
+  McshLag000012:4994  <h2 id="idLEsposctnH2">section of logoEspo  ->  <h2 id="idLEsposctnH2">section of EspoviewLogo
+  McshLag000012:5010  <br>* McshEngl.logoEspo'section!⇒sectLogEspo,  ->  <br>* McshEngl.EspoviewLogo'section!⇒sectLogEspo,
+  McshLag000012:5015  <h2 id="idLEsporootH2">root-node of logoEspo  ->  <h2 id="idLEsporootH2">root-node of EspoviewLogo
+  McshLag000012:5028  <br>* McshEngl.logoEspo'root-node!⇒rootLogEspo,  ->  <br>* McshEngl.EspoviewLogo'root-node!⇒rootLogEspo,
+  McshLag000012:5033  <h2 id="idLEspospchH2">logoEspo.speech  ->  <h2 id="idLEspospchH2">EspoviewLogo.speech
+  McshLag000012:5047  <br>* McshEngl.logoEspo.speech!⇒speechEspo,  ->  <br>* McshEngl.EspoviewLogo.speech!⇒speechEspo,
+  McshLag000012:5052  <h2 id="idLEspotxtH2">logoEspo.text  ->  <h2 id="idLEspotxtH2">EspoviewLogo.text
+  McshLag000012:5066  <br>* McshEngl.logoEspo.text!⇒textEspo,  ->  <br>* McshEngl.EspoviewLogo.text!⇒textEspo,
+  McshLag000018:586  <h2 id="idLZhonsxtrH2">syntax-tree of Zhon_logo  ->  <h2 id="idLZhonsxtrH2">syntax-tree of ZhonviewLogo
+  McshLag000018:596  <br>* McshEngl.Zhon_logo'syntax-tree!⇒Zhon_syntax,  ->  <br>* McshEngl.ZhonviewLogo'syntax-tree!⇒Zhon_syntax,
+  McshLag000018:610  <h2 id="idLZhonnodeH2">node of Zhon_logo  ->  <h2 id="idLZhonnodeH2">node of ZhonviewLogo
+  McshLag000018:619  <br>* McshEngl.Zhon_logo'node!⇒Zhonnode,  ->  <br>* McshEngl.ZhonviewLogo'node!⇒Zhonnode,
+  McshLag000018:631  <h2 id="idLZhonuntH2">unit of Zhon_logo  ->  <h2 id="idLZhonuntH2">unit of ZhonviewLogo
+  McshLag000018:643  <br>* McshEngl.Zhon_logo'unit!⇒Zhon_unit,  ->  <br>* McshEngl.ZhonviewLogo'unit!⇒Zhon_unit,
+  McshLag000018:7956  <h2 id="idLZhonutsmH2">unit-system of Zhon_logo (<a class="clsPreview" href="../dirLag/McshLag000021.last.html#idOverview">link</a>)  ->  <h2 id="idLZhonutsmH2">unit-system of ZhonviewLogo (<a class="clsPreview" href="../dirLag/McshLag000021.last.html#idOverview">link</a>)
+  McshLag000018:7961  <h2 id="idLZhonnameH2">name-(decoding-unit) of Zhon_logo  ->  <h2 id="idLZhonnameH2">name-(decoding-unit) of ZhonviewLogo
+  McshLag000018:7982  <br>* McshEngl.Zhon_logo'name-(decoding-unit)!⇒Zhonname,  ->  <br>* McshEngl.ZhonviewLogo'name-(decoding-unit)!⇒Zhonname,
+  McshLag000018:8336  <h2 id="idLZhonargoH2">argu-name of Zhon_logo  ->  <h2 id="idLZhonargoH2">argu-name of ZhonviewLogo
+  McshLag000018:8354  <br>* McshEngl.Zhon_logo'argu-name!⇒Zhonargu,  ->  <br>* McshEngl.ZhonviewLogo'argu-name!⇒Zhonargu,
+  McshLag000018:11204  <h2 id="idLZhonverbH2">verb-name of Zhon_logo  ->  <h2 id="idLZhonverbH2">verb-name of ZhonviewLogo
+  McshLag000018:11225  <br>* McshEngl.Zhon_logo'verb-name!⇒Zhonverb,  ->  <br>* McshEngl.ZhonviewLogo'verb-name!⇒Zhonverb,
+  McshLag000018:12998  <h2 id="idLZhonconjH2">conjunction-name of Zhon_logo  ->  <h2 id="idLZhonconjH2">conjunction-name of ZhonviewLogo
+  McshLag000018:13014  <br>* McshEngl.Zhon_logo'conjunction-name!⇒Zhonconj,  ->  <br>* McshEngl.ZhonviewLogo'conjunction-name!⇒Zhonconj,
+  McshLag000018:14893  <h2 id="idLZhonnnsmH2">argu-phrase of Zhon_logo  ->  <h2 id="idLZhonnnsmH2">argu-phrase of ZhonviewLogo
+  McshLag000018:14902  <br>* McshEngl.Zhon_logo'argu-phrase!⇒phraseArguZhon,  ->  <br>* McshEngl.ZhonviewLogo'argu-phrase!⇒phraseArguZhon,
+  McshLag000018:14975  <br>* McshEngl.Zhon_logo'verb-argument!⇒Zhon_Verbargt,  ->  <br>* McshEngl.ZhonviewLogo'verb-argument!⇒Zhon_Verbargt,
+  McshLag000018:15225  <h2 id="idLZhonsntcH2">sentence of Zhon_logo  ->  <h2 id="idLZhonsntcH2">sentence of ZhonviewLogo
+  McshLag000018:15250  <br>* McshEngl.Zhon_logo'sentence!⇒Zhonsent,  ->  <br>* McshEngl.ZhonviewLogo'sentence!⇒Zhonsent,
+  McshLag000018:15587  <br>* McshEngl.Zhon_logo'basic-expression!⇒Zhon_expr,  ->  <br>* McshEngl.ZhonviewLogo'basic-expression!⇒Zhon_expr,
+  McshLag000018:16279  <h2 id="idLZhonsctnH2">section of Zhon_logo  ->  <h2 id="idLZhonsctnH2">section of ZhonviewLogo
+  McshLag000018:16295  <br>* McshEngl.Zhon_logo'section!⇒sectionZhon,  ->  <br>* McshEngl.ZhonviewLogo'section!⇒sectionZhon,
+  McshLag000018:16300  <h2 id="idLZhonrootH2">root-node of Zhon_logo  ->  <h2 id="idLZhonrootH2">root-node of ZhonviewLogo
+  McshLag000018:16313  <br>* McshEngl.Zhon_logo'root-node!⇒rootZhon,  ->  <br>* McshEngl.ZhonviewLogo'root-node!⇒rootZhon,
+  McshLag000018:16318  <h2 id="idLZhonspchH2">Zhon_logo.speech  ->  <h2 id="idLZhonspchH2">ZhonviewLogo.speech
+  McshLag000018:16333  <br>* McshEngl.Zhon_logo.speech!⇒speechZhon,  ->  <br>* McshEngl.ZhonviewLogo.speech!⇒speechZhon,
+  McshLag000018:16338  <h2 id="idLZhontxtH2">Zhon_logo.written  ->  <h2 id="idLZhontxtH2">ZhonviewLogo.written
+  McshLag000018:16353  <br>* McshEngl.Zhon_logo.written!⇒textZhon,  ->  <br>* McshEngl.ZhonviewLogo.written!⇒textZhon,
+  McshLag000018:17510  <br>* McshEngl.Zhol_lago'output'word!⇒wordZhol,  ->  <br>* McshEngl.ZholviewLogo'word!⇒wordZhol,
+  McshLag000018:17558  <br>* McshEngl.Zhol_lago'output'part-of-speech,  ->  <br>* McshEngl.ZholviewLogo'part-of-speech,
+  McshLag000018:17655  <br>* McshEngl.Zhol_lago'output'verb!⇒Zholverb,  ->  <br>* McshEngl.ZholviewLogo'verb!⇒Zholverb,
+  McshLag000018:17722  <br>* McshEngl.Zhol_lago'output'conjunction!⇒Zhol_lago'conjunction,  ->  <br>* McshEngl.ZholviewLogo'conjunction!⇒Zhol_lago'conjunction,
+  McshLag000020:157  <h2 id="idLEllnsxtrH2">syntax-tree of Elln_logo  ->  <h2 id="idLEllnsxtrH2">syntax-tree of EllnviewLogo
+  McshLag000020:167  <br>* McshEngl.Elln_logo'syntax-tree!⇒SntxElln,  ->  <br>* McshEngl.EllnviewLogo'syntax-tree!⇒SntxElln,
+  McshLag000020:179  <h2 id="idLEllnnodeH2">node of Elln_logo  ->  <h2 id="idLEllnnodeH2">node of EllnviewLogo
+  McshLag000020:188  <br>* McshEngl.Elln_logo'node!⇒nodeElln,  ->  <br>* McshEngl.EllnviewLogo'node!⇒nodeElln,
+  McshLag000020:199  <h2 id="idLEllnuntH2">unit of Elln_logo  ->  <h2 id="idLEllnuntH2">unit of EllnviewLogo
+  McshLag000020:207  <br>* McshEngl.Elln_logo'unit!⇒Elln_unit,  ->  <br>* McshEngl.EllnviewLogo'unit!⇒Elln_unit,
+  McshLag000020:1429  <h2 id="idLEllnutsmH2">unit-system of Elln_logo  ->  <h2 id="idLEllnutsmH2">unit-system of EllnviewLogo
+  McshLag000020:1437  <br>* McshEngl.Elln_logo'unit-system!⇒SystUnitElln,  ->  <br>* McshEngl.EllnviewLogo'unit-system!⇒SystUnitElln,
+  McshLag000020:1438  <br>* McshEngl.unit-system--of-Elln_logo!⇒SystUnitElln,  ->  <br>* McshEngl.unit-system--of-EllnviewLogo!⇒SystUnitElln,
+  McshLag000020:1981  <h2 id="idLEllnnameH2">name-(decoding-unit) of Elln_logo  ->  <h2 id="idLEllnnameH2">name-(decoding-unit) of EllnviewLogo
+  McshLag000020:1989  <br>* McshEngl.Elln_logo'name!⇒nameElln,  ->  <br>* McshEngl.EllnviewLogo'name!⇒nameElln,
+  McshLag000020:1990  <br>* McshEngl.Elln_logo'name-(decoding-unit)!⇒nameElln,  ->  <br>* McshEngl.EllnviewLogo'name-(decoding-unit)!⇒nameElln,
+  McshLag000020:2002  <h2 id="idEllnondoH2">argu-name of Elln_logo  ->  <h2 id="idEllnondoH2">argu-name of EllnviewLogo
+  McshLag000020:2014  <br>* McshEngl.Elln_logo'argu!⇒Ellnargu,  ->  <br>* McshEngl.EllnviewLogo'argu!⇒Ellnargu,
+  McshLag000020:2016  <br>* McshEngl.Elln_logo'argu-name!⇒Ellnargu,  ->  <br>* McshEngl.EllnviewLogo'argu-name!⇒Ellnargu,
+  McshLag000020:2042  <br>* McshEngl.Elln_logo'noun!⇒Ellnnoun,  ->  <br>* McshEngl.EllnviewLogo'noun!⇒Ellnnoun,
+  McshLag000020:9565  <br>* McshEngl.Elln_logo'adjective!⇒Ellnadje,  ->  <br>* McshEngl.EllnviewLogo'adjective!⇒Ellnadje,
+  McshLag000020:9624  <br>* McshEngl.Elln_logo'adverb!⇒Ellnadve,  ->  <br>* McshEngl.EllnviewLogo'adverb!⇒Ellnadve,
+  McshLag000020:9919  <h2 id="idLEllnvrbH2">verb-name of Elln_logo (<a class="clsPreview" href="../dirLag/McshLag000026.last.html#idOverview">link</a>)  ->  <h2 id="idLEllnvrbH2">verb-name of EllnviewLogo (<a class="clsPreview" href="../dirLag/McshLag000026.last.html#idOverview">link</a>)
+  McshLag000020:9924  <h2 id="idLEllnconjH2">conjunction-name of Elln_logo  ->  <h2 id="idLEllnconjH2">conjunction-name of EllnviewLogo
+  McshLag000020:9935  <br>* McshEngl.Elln_logo'conjunction!⇒Ellnconj,  ->  <br>* McshEngl.EllnviewLogo'conjunction!⇒Ellnconj,
+  McshLag000020:9937  <br>* McshEngl.Elln_logo'conjunction-name!⇒Ellnconj,  ->  <br>* McshEngl.EllnviewLogo'conjunction-name!⇒Ellnconj,
+  McshLag000020:12261  <h2 id="idLEllnodsmH2">argu-system of Elln_logo  ->  <h2 id="idLEllnodsmH2">argu-system of EllnviewLogo
+  McshLag000020:12268  <br>* McshEngl.Elln_logo'argu-system!⇒phraseArguElln,  ->  <br>* McshEngl.EllnviewLogo'argu-system!⇒phraseArguElln,
+  McshLag000020:12391  <br>* McshEngl.Elln_logo'verb-argument!⇒Elln_Verbargt,  ->  <br>* McshEngl.EllnviewLogo'verb-argument!⇒Elln_Verbargt,
+  McshLag000020:12396  <h2 id="idLEllncnsmH2">conjunction-system of Elln_logo  ->  <h2 id="idLEllncnsmH2">conjunction-system of EllnviewLogo
+  McshLag000020:12403  <br>* McshEngl.Elln_logo'conjunction-system!⇒SystConjElln,  ->  <br>* McshEngl.EllnviewLogo'conjunction-system!⇒SystConjElln,
+  McshLag000020:12408  <h2 id="idLEllnsntcH2">sentence of Elln_logo  ->  <h2 id="idLEllnsntcH2">sentence of EllnviewLogo
+  McshLag000020:12418  <br>* McshEngl.Elln_logo'sentence!⇒Ellnsent,  ->  <br>* McshEngl.EllnviewLogo'sentence!⇒Ellnsent,
+  McshLag000020:12435  <br>* McshEngl.Elln_logo'basic-expression!⇒Elln_expr,  ->  <br>* McshEngl.EllnviewLogo'basic-expression!⇒Elln_expr,
+  McshLag000020:12602  <h2 id="idLEllntsscsmH2">titless-sentence-system of Elln_logo  ->  <h2 id="idLEllntsscsmH2">titless-sentence-system of EllnviewLogo
+  McshLag000020:12610  <br>* McshEngl.Elln_logo'titless-sentence-system!⇒SystSentTitlessElln,  ->  <br>* McshEngl.EllnviewLogo'titless-sentence-system!⇒SystSentTitlessElln,
+  McshLag000020:12611  <br>* McshEngl.titless-sentence-system--of-Elln_logo!⇒SystSentTitlessElln,  ->  <br>* McshEngl.titless-sentence-system--of-EllnviewLogo!⇒SystSentTitlessElln,
+  McshLag000020:12641  <h2 id="idLEllnsctnH2">section of Elln_logo  ->  <h2 id="idLEllnsctnH2">section of EllnviewLogo
+  McshLag000020:12649  <br>* McshEngl.Elln_logo'section!⇒sectionElln,  ->  <br>* McshEngl.EllnviewLogo'section!⇒sectionElln,
+  McshLag000020:12655  <h2 id="idLEllnrootH2">root-node of Elln_logo  ->  <h2 id="idLEllnrootH2">root-node of EllnviewLogo
+  McshLag000020:12663  <br>* McshEngl.Elln_logo'root!⇒rootElln,  ->  <br>* McshEngl.EllnviewLogo'root!⇒rootElln,
+  McshLag000020:12664  <br>* McshEngl.Elln_logo'root-node!⇒rootElln,  ->  <br>* McshEngl.EllnviewLogo'root-node!⇒rootElln,
+  McshLag000020:12669  <h2 id="idLEllnoptddrnH2">lago-relation of Elln_logo  ->  <h2 id="idLEllnoptddrnH2">lago-relation of EllnviewLogo
+  McshLag000020:12676  <br>* McshEngl.Elln_logo'lago_relation,  ->  <br>* McshEngl.EllnviewLogo'lago_relation,
+  McshLag000020:12677  <br>* McshEngl.Elln_logo'lago-relation!⇒Elln_logo'lago_relation,  ->  <br>* McshEngl.EllnviewLogo'lago-relation!⇒EllnviewLogo'lago_relation,
+  McshLag000020:12706  <h2 id="idLEllnspchH2">Elln_logo.speech  ->  <h2 id="idLEllnspchH2">EllnviewLogo.speech
+  McshLag000020:12714  <br>* McshEngl.Elln_logo.speech!⇒spchElln,  ->  <br>* McshEngl.EllnviewLogo.speech!⇒spchElln,
+  McshLag000020:12719  <h2 id="idLEllntextH2">Elln_logo.text  ->  <h2 id="idLEllntextH2">EllnviewLogo.text
+  McshLag000020:12727  <br>* McshEngl.Elln_logo.text!⇒textElln,  ->  <br>* McshEngl.EllnviewLogo.text!⇒textElln,
+  McshLag000027:63  <h2 id="idLEllauntH2">unit of Ella_logo  ->  <h2 id="idLEllauntH2">unit of EllaviewLogo
+  McshLag000027:71  <br>* McshEngl.Ella_logo'unit!⇒Ella_unit,  ->  <br>* McshEngl.EllaviewLogo'unit!⇒Ella_unit,
+  McshLag000027:1131  <h2 id="idLEllasylbH2">syllable of Ella_logo  ->  <h2 id="idLEllasylbH2">syllable of EllaviewLogo
+  McshLag000027:1142  <br>* McshEngl.Ella_logo'syllable!⇒Ella_sylb,  ->  <br>* McshEngl.EllaviewLogo'syllable!⇒Ella_sylb,
+  McshLag000027:1184  <h2 id="idLEllawordH2">word of Ella_logo  ->  <h2 id="idLEllawordH2">word of EllaviewLogo
+  McshLag000027:1193  <br>* McshEngl.Ella_logo'word!⇒Ella_word,  ->  <br>* McshEngl.EllaviewLogo'word!⇒Ella_word,
+  McshLag000027:1293  <h2 id="idLEllatrmsmsH2">name of Ella_logo  ->  <h2 id="idLEllatrmsmsH2">name of EllaviewLogo
+  McshLag000027:1301  <br>* McshEngl.Ella_logo'name!⇒Ella_name,  ->  <br>* McshEngl.EllaviewLogo'name!⇒Ella_name,
+  McshLag000027:1322  <h2 id="idLEllaondoH2">argu of Ella_logo  ->  <h2 id="idLEllaondoH2">argu of EllaviewLogo
+  McshLag000027:1332  <br>* McshEngl.Ella_logo'argu!⇒Ellaargu,  ->  <br>* McshEngl.EllaviewLogo'argu!⇒Ellaargu,
+  McshLag000027:1350  <h2 id="idLEllanounH2">noun of Ella_logo  ->  <h2 id="idLEllanounH2">noun of EllaviewLogo
+  McshLag000027:1360  <br>* McshEngl.Ella_logo'noun!⇒Ellanoun,  ->  <br>* McshEngl.EllaviewLogo'noun!⇒Ellanoun,
+  McshLag000027:3692  <h2 id="idLEllaadveH2">Adve of Ella_logo  ->  <h2 id="idLEllaadveH2">Adve of EllaviewLogo
+  McshLag000027:3811  <br>* McshEngl.Ella_logo'Adve!⇒Ellaadve,  ->  <br>* McshEngl.EllaviewLogo'Adve!⇒Ellaadve,
+  McshLag000027:4067  <h2 id="idLEllaverbH2">verb of Ella_logo  ->  <h2 id="idLEllaverbH2">verb of EllaviewLogo
+  McshLag000027:4077  <br>* McshEngl.Ella_logo'verb!⇒Ellaverb,  ->  <br>* McshEngl.EllaviewLogo'verb!⇒Ellaverb,
+  McshLag000027:5219  <h2 id="idLEllaconjH2">Conj of Ella_logo  ->  <h2 id="idLEllaconjH2">Conj of EllaviewLogo
+  McshLag000027:5228  <br>* McshEngl.conjunction-of-Ella_logo!⇒Ellaconj,  ->  <br>* McshEngl.conjunction-of-EllaviewLogo!⇒Ellaconj,
+  McshLag000027:5230  <br>* McshEngl.Ella_logo'Conj!⇒Ellaconj,  ->  <br>* McshEngl.EllaviewLogo'Conj!⇒Ellaconj,
+  McshLag000027:6952  <h2 id="idLEllaverbargtH2">verb-argument of Ella_logo  ->  <h2 id="idLEllaverbargtH2">verb-argument of EllaviewLogo
+  McshLag000027:7035  <br>* McshEngl.Ella_logo'verb-argument!⇒Ella_Verbargt,  ->  <br>* McshEngl.EllaviewLogo'verb-argument!⇒Ella_Verbargt,
+  McshLag000028:55  <h2 id="idLEll0untH2">unit of logoEll0  ->  <h2 id="idLEll0untH2">unit of Ell0viewLogo
+  McshLag000028:63  <br>* McshEngl.logoEll0'unit!⇒unitEll0,  ->  <br>* McshEngl.Ell0viewLogo'unit!⇒unitEll0,
+  McshLag000030:163  <h2 id="idLTurkuntH2">unit of logoTurk  ->  <h2 id="idLTurkuntH2">unit of TurkviewLogo
+  McshLag000030:171  <br>* McshEngl.logoTurk'unit!⇒unitTurk,  ->  <br>* McshEngl.TurkviewLogo'unit!⇒unitTurk,
+  McshLag000030:1365  <h2 id="idLTurkwordH2">word of logoTurk  ->  <h2 id="idLTurkwordH2">word of TurkviewLogo
+  McshLag000030:1374  <br>* McshEngl.logoTurk'word!⇒wordTurk,  ->  <br>* McshEngl.TurkviewLogo'word!⇒wordTurk,
+  McshLag000030:1541  <h2 id="idLTurknameH2">name of logoTurk  ->  <h2 id="idLTurknameH2">name of TurkviewLogo
+  McshLag000030:1550  <br>* McshEngl.logoTurk'name!⇒nameTurk,  ->  <br>* McshEngl.TurkviewLogo'name!⇒nameTurk,
+  McshLag000030:1592  <h2 id="idLTurkondoH2">argu-name of logoTurk  ->  <h2 id="idLTurkondoH2">argu-name of TurkviewLogo
+  McshLag000030:1601  <br>* McshEngl.logoTurk'argu-name!⇒Turkargu,  ->  <br>* McshEngl.TurkviewLogo'argu-name!⇒Turkargu,
+  McshLag000030:2679  <h2 id="idLTurkverbH2">verb-name of logoTurk  ->  <h2 id="idLTurkverbH2">verb-name of TurkviewLogo
+  McshLag000030:2697  <br>* McshEngl.logoTurk'verb-name!⇒Turkverb,  ->  <br>* McshEngl.TurkviewLogo'verb-name!⇒Turkverb,
+  McshLag000030:7769  <h2 id="idLTurkconjH2">conjunction-name of logoTurk  ->  <h2 id="idLTurkconjH2">conjunction-name of TurkviewLogo
+  McshLag000030:7778  <br>* McshEngl.logoTurk'conjunction-name,  ->  <br>* McshEngl.TurkviewLogo'conjunction-name,
+  McshLag000030:7879  <h2 id="idLTurkverbarguH2">verb-argument of logoTurk  ->  <h2 id="idLTurkverbarguH2">verb-argument of TurkviewLogo
+  McshLag000030:7948  <br>* McshEngl.logoTurk'verb-argument!⇒TurkVerbArgu,  ->  <br>* McshEngl.TurkviewLogo'verb-argument!⇒TurkVerbArgu,
+  McshLag000030:7953  <h2 id="idLTurksentH2">sentence of logoTurk  ->  <h2 id="idLTurksentH2">sentence of TurkviewLogo
+  McshLag000030:7974  <br>* McshEngl.logoTurk'sentence!⇒Turksent,  ->  <br>* McshEngl.TurkviewLogo'sentence!⇒Turksent,
+  McshLag000033:342  <h2 id="idLDeutsxtrH2">syntax-tree of DeutLogoView  ->  <h2 id="idLDeutsxtrH2">syntax-tree of DeutviewLogo
+  McshLag000033:351  <br>* McshEngl.DeutLogoView'syntax-tree,  ->  <br>* McshEngl.DeutviewLogo'syntax-tree,
+  McshLag000033:356  <h2 id="idLDeutnodeH2">node of DeutLogoView  ->  <h2 id="idLDeutnodeH2">node of DeutviewLogo
+  McshLag000033:365  <br>* McshEngl.DeutLogoView'node!⇒Deutnode,  ->  <br>* McshEngl.DeutviewLogo'node!⇒Deutnode,
+  McshLag000033:377  <h2 id="idLDeutuntH2">unit of DeutLogoView  ->  <h2 id="idLDeutuntH2">unit of DeutviewLogo
+  McshLag000033:387  <br>* McshEngl.DeutLogoView'unit!⇒DeutUnit,  ->  <br>* McshEngl.DeutviewLogo'unit!⇒DeutUnit,
+  McshLag000033:2061  <h2 id="idLDeututsmH2">unit-system of DeutLogoView  ->  <h2 id="idLDeututsmH2">unit-system of DeutviewLogo
+  McshLag000033:2071  <br>* McshEngl.DeutLogoView'unit-system!⇒DeutUnitSyst,  ->  <br>* McshEngl.DeutviewLogo'unit-system!⇒DeutUnitSyst,
+  McshLag000033:2161  <h2 id="idLDeutnameH2">name-(decoding-unit) of DeutLogoView  ->  <h2 id="idLDeutnameH2">name-(decoding-unit) of DeutviewLogo
+  McshLag000033:2173  <br>* McshEngl.DeutLogoView'name-(decoding-unit)!⇒Deutname,  ->  <br>* McshEngl.DeutviewLogo'name-(decoding-unit)!⇒Deutname,
+  McshLag000033:2209  <h2 id="idLDeutondoH2">argu-name of DeutLogoView  ->  <h2 id="idLDeutondoH2">argu-name of DeutviewLogo
+  McshLag000033:2222  <br>* McshEngl.DeutLogoView'argu-name!⇒Deutargu,  ->  <br>* McshEngl.DeutviewLogo'argu-name!⇒Deutargu,
+  McshLag000033:2889  <h2 id="idLDeutverbH2">verb-name of DeutLogoView  ->  <h2 id="idLDeutverbH2">verb-name of DeutviewLogo
+  McshLag000033:3015  <br>* McshEngl.DeutLogoView'verb-name!⇒Deutverb,  ->  <br>* McshEngl.DeutviewLogo'verb-name!⇒Deutverb,
+  McshLag000033:3163  <h2 id="idLDeutconjH2">conjunction-name of DeutLogoView  ->  <h2 id="idLDeutconjH2">conjunction-name of DeutviewLogo
+  McshLag000033:3219  <br>* McshEngl.DeutLogoView'conjunction-name!⇒Deutconj,  ->  <br>* McshEngl.DeutviewLogo'conjunction-name!⇒Deutconj,
+  McshLag000033:3319  <h2 id="idLDeutagsmH2">argu-phrase of DeutLogoView  ->  <h2 id="idLDeutagsmH2">argu-phrase of DeutviewLogo
+  McshLag000033:3325  <br>* McshEngl.DeutLogoView'argu_phrase,  ->  <br>* McshEngl.DeutviewLogo'argu_phrase,
+  McshLag000033:3326  <br>* McshEngl.DeutLogoView'argu-phrase!⇒DeutLogoView'argu_phrase,  ->  <br>* McshEngl.DeutviewLogo'argu-phrase!⇒DeutviewLogo'argu_phrase,
+  McshLag000033:3331  <h2 id="idLDeutvbatH2">verb-argument of DeutLogoView  ->  <h2 id="idLDeutvbatH2">verb-argument of DeutviewLogo
+  McshLag000033:3337  <br>* McshEngl.DeutLogoView'verb_argument,  ->  <br>* McshEngl.DeutviewLogo'verb_argument,
+  McshLag000033:3338  <br>* McshEngl.DeutLogoView'verb-argument!⇒DeutLogoView'verb_argument,  ->  <br>* McshEngl.DeutviewLogo'verb-argument!⇒DeutviewLogo'verb_argument,
+  McshLag000033:3343  <h2 id="idLDeutsentH2">sentence of DeutLogoView  ->  <h2 id="idLDeutsentH2">sentence of DeutviewLogo
+  McshLag000033:3349  <br>* McshEngl.DeutLogoView'sentence,  ->  <br>* McshEngl.DeutviewLogo'sentence,
+  McshLag000033:3353  <h3 id="idLDeutsntcbcexH3">basic-expression of DeutLogoView  ->  <h3 id="idLDeutsntcbcexH3">basic-expression of DeutviewLogo
+  McshLag000033:3363  <br>* McshEngl.DeutLogoView'sentence'basic-expression!⇒DeutExpr,  ->  <br>* McshEngl.DeutviewLogo'sentence'basic-expression!⇒DeutExpr,
+  McshLag000033:3364  <br>* McshEngl.DeutLogoView'basic-expression!⇒DeutExpr,  ->  <br>* McshEngl.DeutviewLogo'basic-expression!⇒DeutExpr,
+  McshLag000033:3530  <h2 id="idLDeutsectH2">section of DeutLogoView  ->  <h2 id="idLDeutsectH2">section of DeutviewLogo
+  McshLag000033:3536  <br>* McshEngl.DeutLogoView'section,  ->  <br>* McshEngl.DeutviewLogo'section,
+  McshLag000033:3541  <h2 id="idLDeutrtndH2">root-node of DeutLogoView  ->  <h2 id="idLDeutrtndH2">root-node of DeutviewLogo
+  McshLag000033:3547  <br>* McshEngl.DeutLogoView'root_node,  ->  <br>* McshEngl.DeutviewLogo'root_node,
+  McshLag000033:3548  <br>* McshEngl.DeutLogoView'root-node!⇒DeutLogoView'root_node,  ->  <br>* McshEngl.DeutviewLogo'root-node!⇒DeutviewLogo'root_node,
+  McshLag000034:319  <h2 id="idLBcmssxtrH2">syntax-tree of BcmsLogoView  ->  <h2 id="idLBcmssxtrH2">syntax-tree of BcmsviewLogo
+  McshLag000034:328  <br>* McshEngl.BcmsLogoView'syntax-tree,  ->  <br>* McshEngl.BcmsviewLogo'syntax-tree,
+  McshLag000034:333  <h2 id="idLBcmsnodeH2">node of BcmsLogoView  ->  <h2 id="idLBcmsnodeH2">node of BcmsviewLogo
+  McshLag000034:341  <br>* McshEngl.BcmsLogoView'node,  ->  <br>* McshEngl.BcmsviewLogo'node,
+  McshLag000034:347  <h2 id="idLBcmsuntH2">unit of BcmsLogoView  ->  <h2 id="idLBcmsuntH2">unit of BcmsviewLogo
+  McshLag000034:360  <br>* McshEngl.BcmsLogoView'unit!⇒BcmsUnit,  ->  <br>* McshEngl.BcmsviewLogo'unit!⇒BcmsUnit,
+  McshLag000034:1506  <h2 id="idLBcmsutsmH2">unit-system of BcmsLogoView  ->  <h2 id="idLBcmsutsmH2">unit-system of BcmsviewLogo
+  McshLag000034:1516  <br>* McshEngl.BcmsLogoView'unit-system!⇒BcmsUnitSyst,  ->  <br>* McshEngl.BcmsviewLogo'unit-system!⇒BcmsUnitSyst,
+  McshLag000034:1647  <h2 id="idLBcmsnameH2">name-(decoding-unit) of BcmsLogoView  ->  <h2 id="idLBcmsnameH2">name-(decoding-unit) of BcmsviewLogo
+  McshLag000034:1659  <br>* McshEngl.BcmsLogoView'name-(decoding-unit)!⇒BcmsName,  ->  <br>* McshEngl.BcmsviewLogo'name-(decoding-unit)!⇒BcmsName,
+  McshLag000034:1695  <h2 id="idLBcmsondoH2">argu-name of BcmsLogoView  ->  <h2 id="idLBcmsondoH2">argu-name of BcmsviewLogo
+  McshLag000034:1709  <br>* McshEngl.BcmsLogoView'argu-name!⇒Bcmsargu,  ->  <br>* McshEngl.BcmsviewLogo'argu-name!⇒Bcmsargu,
+  McshLag000034:2013  <h2 id="idLBcmsverbH2">verb-name of BcmsLogoView  ->  <h2 id="idLBcmsverbH2">verb-name of BcmsviewLogo
+  McshLag000034:2027  <br>* McshEngl.BcmsLogoView'verb-name!⇒Bcmsverb,  ->  <br>* McshEngl.BcmsviewLogo'verb-name!⇒Bcmsverb,
+  McshLag000034:2115  <h2 id="idLBcmsconjH2">conjunction-name of BcmsLogoView  ->  <h2 id="idLBcmsconjH2">conjunction-name of BcmsviewLogo
+  McshLag000034:2129  <br>* McshEngl.BcmsLogoView'conjunction-name!⇒Bcmsconj,  ->  <br>* McshEngl.BcmsviewLogo'conjunction-name!⇒Bcmsconj,
+  McshLag000034:2157  <h2 id="idLBcmsodsmH2">argu-phrase of BcmsLogoView  ->  <h2 id="idLBcmsodsmH2">argu-phrase of BcmsviewLogo
+  McshLag000034:2166  <br>* McshEngl.BcmsLogoView'argu-phrase,  ->  <br>* McshEngl.BcmsviewLogo'argu-phrase,
+  McshLag000034:2171  <h2 id="idLBcmsverbarguH2">verb-argument of BcmsLogoView  ->  <h2 id="idLBcmsverbarguH2">verb-argument of BcmsviewLogo
+  McshLag000034:2181  <br>* McshEngl.BcmsLogoView'verb-argument!⇒BcmsVerbArgu,  ->  <br>* McshEngl.BcmsviewLogo'verb-argument!⇒BcmsVerbArgu,
+  McshLag000034:2186  <h2 id="idLBcmssntcH2">sentence of BcmsLogoView  ->  <h2 id="idLBcmssntcH2">sentence of BcmsviewLogo
+  McshLag000034:2198  <br>* McshEngl.BcmsLogoView'sentence!⇒Bcmssent,  ->  <br>* McshEngl.BcmsviewLogo'sentence!⇒Bcmssent,
+  McshLag000034:2202  <h3 id="idLBcmssntcbcexH3">basic-expression of BcmsLogoView  ->  <h3 id="idLBcmssntcbcexH3">basic-expression of BcmsviewLogo
+  McshLag000034:2213  <br>* McshEngl.BcmsLogoView'basic-expression!⇒BcmsExpr,  ->  <br>* McshEngl.BcmsviewLogo'basic-expression!⇒BcmsExpr,
+  McshLag000034:2615  <h2 id="idLBcmstNssH2">titleNo-sentence-system of BcmsLogoView  ->  <h2 id="idLBcmstNssH2">titleNo-sentence-system of BcmsviewLogo
+  McshLag000034:2624  <br>* McshEngl.BcmsLogoView'titleNo-sentence-system,  ->  <br>* McshEngl.BcmsviewLogo'titleNo-sentence-system,
+  McshLag000034:2629  <h2 id="idLBcmssctnH2">title-sentence-system-(section) of BcmsLogoView  ->  <h2 id="idLBcmssctnH2">title-sentence-system-(section) of BcmsviewLogo
+  McshLag000034:2640  <br>* McshEngl.BcmsLogoView'title-sentence-system-(section)!⇒BcmsSect,  ->  <br>* McshEngl.BcmsviewLogo'title-sentence-system-(section)!⇒BcmsSect,
+  McshLag000034:2645  <h2 id="idLBcmsrootH2">root-node of BcmsLogoView  ->  <h2 id="idLBcmsrootH2">root-node of BcmsviewLogo
+  McshLag000034:2655  <br>* McshEngl.BcmsLogoView'root-node!⇒BcmsRoot,  ->  <br>* McshEngl.BcmsviewLogo'root-node!⇒BcmsRoot,
+  McshLag000034:2660  <h2 id="idLBcmsspchH2">BcmsLogoView.speech  ->  <h2 id="idLBcmsspchH2">BcmsviewLogo.speech
+  McshLag000034:2671  <br>* McshEngl.BcmsLogoView.speech!⇒BcmsSpch,  ->  <br>* McshEngl.BcmsviewLogo.speech!⇒BcmsSpch,
+  McshLag000034:2676  <h2 id="idLBcmstextH2">BcmsLogoView.text  ->  <h2 id="idLBcmstextH2">BcmsviewLogo.text
+  McshLag000034:2687  <br>* McshEngl.BcmsLogoView.text!⇒BcmsText,  ->  <br>* McshEngl.BcmsviewLogo.text!⇒BcmsText,
+  McshLag000035:346  <h2 id="idLSpansxtrH2">syntax-tree of SpanLogoView  ->  <h2 id="idLSpansxtrH2">syntax-tree of SpanviewLogo
+  McshLag000035:355  <br>* McshEngl.SpanLogoView'syntax-tree,  ->  <br>* McshEngl.SpanviewLogo'syntax-tree,
+  McshLag000035:360  <h2 id="idLSpannodeH2">node of SpanLogoView  ->  <h2 id="idLSpannodeH2">node of SpanviewLogo
+  McshLag000035:368  <br>* McshEngl.SpanLogoView'node,  ->  <br>* McshEngl.SpanviewLogo'node,
+  McshLag000035:374  <h2 id="idLSpanuntH2">unit of SpanLogoView  ->  <h2 id="idLSpanuntH2">unit of SpanviewLogo
+  McshLag000035:387  <br>* McshEngl.SpanLogoView'unit!⇒SpanUnit,  ->  <br>* McshEngl.SpanviewLogo'unit!⇒SpanUnit,
+  McshLag000035:1067  <h2 id="idLSpanutsmH2">unit-system of SpanLogoView  ->  <h2 id="idLSpanutsmH2">unit-system of SpanviewLogo
+  McshLag000035:1077  <br>* McshEngl.SpanLogoView'unit-system!⇒SpanUnitSyst,  ->  <br>* McshEngl.SpanviewLogo'unit-system!⇒SpanUnitSyst,
+  McshLag000035:1167  <h2 id="idLSpannameH2">name-(decoding-unit) of SpanLogoView  ->  <h2 id="idLSpannameH2">name-(decoding-unit) of SpanviewLogo
+  McshLag000035:1179  <br>* McshEngl.SpanLogoView'name-(decoding-unit)!⇒SpanName,  ->  <br>* McshEngl.SpanviewLogo'name-(decoding-unit)!⇒SpanName,
+  McshLag000035:1215  <h2 id="idLSpanondoH2">argu-name of SpanLogoView  ->  <h2 id="idLSpanondoH2">argu-name of SpanviewLogo
+  McshLag000035:1229  <br>* McshEngl.SpanLogoView'argu-name!⇒Spanargu,  ->  <br>* McshEngl.SpanviewLogo'argu-name!⇒Spanargu,
+  McshLag000035:1725  <h2 id="idLSpanverbH2">verb-name of SpanLogoView  ->  <h2 id="idLSpanverbH2">verb-name of SpanviewLogo
+  McshLag000035:1739  <br>* McshEngl.SpanLogoView'verb-name!⇒Spanverb,  ->  <br>* McshEngl.SpanviewLogo'verb-name!⇒Spanverb,
+  McshLag000035:1878  <h2 id="idLSpanconjH2">conjunction-name of SpanLogoView  ->  <h2 id="idLSpanconjH2">conjunction-name of SpanviewLogo
+  McshLag000035:1973  <br>* McshEngl.SpanLogoView'conjunction-name!⇒Spanconj,  ->  <br>* McshEngl.SpanviewLogo'conjunction-name!⇒Spanconj,
+  McshLag000035:2106  <h2 id="idLSpanodsmH2">argu-phrase of SpanLogoView  ->  <h2 id="idLSpanodsmH2">argu-phrase of SpanviewLogo
+  McshLag000035:2115  <br>* McshEngl.SpanLogoView'argu-phrase,  ->  <br>* McshEngl.SpanviewLogo'argu-phrase,
+  McshLag000035:2120  <h2 id="idLSpanverbarguH2">verb-argument of SpanLogoView  ->  <h2 id="idLSpanverbarguH2">verb-argument of SpanviewLogo
+  McshLag000035:2130  <br>* McshEngl.SpanLogoView'verb-argument!⇒SpanVerbArgu,  ->  <br>* McshEngl.SpanviewLogo'verb-argument!⇒SpanVerbArgu,
+  McshLag000035:2135  <h2 id="idLSpansntcH2">sentence of SpanLogoView  ->  <h2 id="idLSpansntcH2">sentence of SpanviewLogo
+  McshLag000035:2148  <br>* McshEngl.SpanLogoView'sentence!⇒Spansent,  ->  <br>* McshEngl.SpanviewLogo'sentence!⇒Spansent,
+  McshLag000035:2152  <h3 id="idLSpansntcbcexH3">basic-expression of SpanLogoView  ->  <h3 id="idLSpansntcbcexH3">basic-expression of SpanviewLogo
+  McshLag000035:2163  <br>* McshEngl.SpanLogoView'basic-expression!⇒SpanExpr,  ->  <br>* McshEngl.SpanviewLogo'basic-expression!⇒SpanExpr,
+  McshLag000035:2341  <h2 id="idLSpantNssH2">titleNo-sentence-system of SpanLogoView  ->  <h2 id="idLSpantNssH2">titleNo-sentence-system of SpanviewLogo
+  McshLag000035:2350  <br>* McshEngl.SpanLogoView'titleNo-sentence-system,  ->  <br>* McshEngl.SpanviewLogo'titleNo-sentence-system,
+  McshLag000035:2355  <h2 id="idLSpansctnH2">title-sentence-system-(section) of SpanLogoView  ->  <h2 id="idLSpansctnH2">title-sentence-system-(section) of SpanviewLogo
+  McshLag000035:2366  <br>* McshEngl.SpanLogoView'title-sentence-system-(section)!⇒SpanSect,  ->  <br>* McshEngl.SpanviewLogo'title-sentence-system-(section)!⇒SpanSect,
+  McshLag000035:2371  <h2 id="idLSpanrootH2">root-node of SpanLogoView  ->  <h2 id="idLSpanrootH2">root-node of SpanviewLogo
+  McshLag000035:2381  <br>* McshEngl.SpanLogoView'root-node!⇒SpanRoot,  ->  <br>* McshEngl.SpanviewLogo'root-node!⇒SpanRoot,
+  McshLag000035:2386  <h2 id="idLSpanspchH2">SpanLogoView.speech  ->  <h2 id="idLSpanspchH2">SpanviewLogo.speech
+  McshLag000035:2397  <br>* McshEngl.SpanLogoView.speech!⇒SpanSpch,  ->  <br>* McshEngl.SpanviewLogo.speech!⇒SpanSpch,
+  McshLag000035:2402  <h2 id="idLSpantextH2">SpanLogoView.text  ->  <h2 id="idLSpantextH2">SpanviewLogo.text
+  McshLag000035:2413  <br>* McshEngl.SpanLogoView.text!⇒SpanText,  ->  <br>* McshEngl.SpanviewLogo.text!⇒SpanText,
+  McshLag000036:343  <h2 id="idLArabsxtrH2">syntax-tree of ArabLogoView  ->  <h2 id="idLArabsxtrH2">syntax-tree of ArabviewLogo
+  McshLag000036:352  <br>* McshEngl.ArabLogoView'syntax-tree,  ->  <br>* McshEngl.ArabviewLogo'syntax-tree,
+  McshLag000036:357  <h2 id="idLArabnodeH2">node of ArabLogoView  ->  <h2 id="idLArabnodeH2">node of ArabviewLogo
+  McshLag000036:365  <br>* McshEngl.ArabLogoView'node,  ->  <br>* McshEngl.ArabviewLogo'node,
+  McshLag000036:371  <h2 id="idLArabuntH2">unit of ArabLogoView  ->  <h2 id="idLArabuntH2">unit of ArabviewLogo
+  McshLag000036:384  <br>* McshEngl.ArabLogoView'unit!⇒ArabUnit,  ->  <br>* McshEngl.ArabviewLogo'unit!⇒ArabUnit,
+  McshLag000036:1616  <h2 id="idLArabutsmH2">unit-system of ArabLogoView  ->  <h2 id="idLArabutsmH2">unit-system of ArabviewLogo
+  McshLag000036:1626  <br>* McshEngl.ArabLogoView'unit-system!⇒ArabUnitSyst,  ->  <br>* McshEngl.ArabviewLogo'unit-system!⇒ArabUnitSyst,
+  McshLag000036:1716  <h2 id="idLArabnameH2">name-(decoding-unit) of ArabLogoView  ->  <h2 id="idLArabnameH2">name-(decoding-unit) of ArabviewLogo
+  McshLag000036:1728  <br>* McshEngl.ArabLogoView'name-(decoding-unit)!⇒ArabName,  ->  <br>* McshEngl.ArabviewLogo'name-(decoding-unit)!⇒ArabName,
+  McshLag000036:1764  <h2 id="idLArabondoH2">argu-name of ArabLogoView  ->  <h2 id="idLArabondoH2">argu-name of ArabviewLogo
+  McshLag000036:1778  <br>* McshEngl.ArabLogoView'argu-name!⇒Arabargu,  ->  <br>* McshEngl.ArabviewLogo'argu-name!⇒Arabargu,
+  McshLag000036:2250  <h2 id="idLArabverbH2">verb-name of ArabLogoView  ->  <h2 id="idLArabverbH2">verb-name of ArabviewLogo
+  McshLag000036:2305  <br>* McshEngl.ArabLogoView'verb-name!⇒Arabverb,  ->  <br>* McshEngl.ArabviewLogo'verb-name!⇒Arabverb,
+  McshLag000036:2393  <h2 id="idLArabconjH2">conjunction-name of ArabLogoView  ->  <h2 id="idLArabconjH2">conjunction-name of ArabviewLogo
+  McshLag000036:2448  <br>* McshEngl.ArabLogoView'conjunction-name!⇒Arabconj,  ->  <br>* McshEngl.ArabviewLogo'conjunction-name!⇒Arabconj,
+  McshLag000036:2533  <h2 id="idLArabodsmH2">argu-phrase of ArabLogoView  ->  <h2 id="idLArabodsmH2">argu-phrase of ArabviewLogo
+  McshLag000036:2542  <br>* McshEngl.ArabLogoView'argu-phrase,  ->  <br>* McshEngl.ArabviewLogo'argu-phrase,
+  McshLag000036:2547  <h2 id="idLArabverbarguH2">verb-argument of ArabLogoView  ->  <h2 id="idLArabverbarguH2">verb-argument of ArabviewLogo
+  McshLag000036:2557  <br>* McshEngl.ArabLogoView'verb-argument!⇒ArabVerbArgu,  ->  <br>* McshEngl.ArabviewLogo'verb-argument!⇒ArabVerbArgu,
+  McshLag000036:2562  <h2 id="idLArabsntcH2">sentence of ArabLogoView  ->  <h2 id="idLArabsntcH2">sentence of ArabviewLogo
+  McshLag000036:2575  <br>* McshEngl.ArabLogoView'sentence!⇒Arabsent,  ->  <br>* McshEngl.ArabviewLogo'sentence!⇒Arabsent,
+  McshLag000036:2579  <h3 id="idLArabsntcbcexH3">basic-expression of ArabLogoView  ->  <h3 id="idLArabsntcbcexH3">basic-expression of ArabviewLogo
+  McshLag000036:2590  <br>* McshEngl.ArabLogoView'basic-expression!⇒ArabExpr,  ->  <br>* McshEngl.ArabviewLogo'basic-expression!⇒ArabExpr,
+  McshLag000036:2768  <h2 id="idLArabtNssH2">titleNo-sentence-system of ArabLogoView  ->  <h2 id="idLArabtNssH2">titleNo-sentence-system of ArabviewLogo
+  McshLag000036:2777  <br>* McshEngl.ArabLogoView'titleNo-sentence-system,  ->  <br>* McshEngl.ArabviewLogo'titleNo-sentence-system,
+  McshLag000036:2782  <h2 id="idLArabsctnH2">title-sentence-system-(section) of ArabLogoView  ->  <h2 id="idLArabsctnH2">title-sentence-system-(section) of ArabviewLogo
+  McshLag000036:2793  <br>* McshEngl.ArabLogoView'title-sentence-system-(section)!⇒ArabSect,  ->  <br>* McshEngl.ArabviewLogo'title-sentence-system-(section)!⇒ArabSect,
+  McshLag000036:2798  <h2 id="idLArabrootH2">root-node of ArabLogoView  ->  <h2 id="idLArabrootH2">root-node of ArabviewLogo
+  McshLag000036:2808  <br>* McshEngl.ArabLogoView'root-node!⇒ArabRoot,  ->  <br>* McshEngl.ArabviewLogo'root-node!⇒ArabRoot,
+  McshLag000036:2813  <h2 id="idLArabspchH2">ArabLogoView.speech  ->  <h2 id="idLArabspchH2">ArabviewLogo.speech
+  McshLag000036:2824  <br>* McshEngl.ArabLogoView.speech!⇒ArabSpch,  ->  <br>* McshEngl.ArabviewLogo.speech!⇒ArabSpch,
+  McshLag000036:2829  <h2 id="idLArabtextH2">ArabLogoView.text  ->  <h2 id="idLArabtextH2">ArabviewLogo.text
+  McshLag000036:2840  <br>* McshEngl.ArabLogoView.text!⇒ArabText,  ->  <br>* McshEngl.ArabviewLogo.text!⇒ArabText,
+  McshLag000037:341  <h2 id="idLHiursxtrH2">syntax-tree of HiurLogoView  ->  <h2 id="idLHiursxtrH2">syntax-tree of HiurviewLogo
+  McshLag000037:350  <br>* McshEngl.HiurLogoView'syntax-tree,  ->  <br>* McshEngl.HiurviewLogo'syntax-tree,
+  McshLag000037:355  <h2 id="idLHiurnodeH2">node of HiurLogoView  ->  <h2 id="idLHiurnodeH2">node of HiurviewLogo
+  McshLag000037:363  <br>* McshEngl.HiurLogoView'node,  ->  <br>* McshEngl.HiurviewLogo'node,
+  McshLag000037:369  <h2 id="idLHiuruntH2">unit of HiurLogoView  ->  <h2 id="idLHiuruntH2">unit of HiurviewLogo
+  McshLag000037:382  <br>* McshEngl.HiurLogoView'unit!⇒HiurUnit,  ->  <br>* McshEngl.HiurviewLogo'unit!⇒HiurUnit,
+  McshLag000037:1396  <h2 id="idLHiurutsmH2">unit-system of HiurLogoView  ->  <h2 id="idLHiurutsmH2">unit-system of HiurviewLogo
+  McshLag000037:1406  <br>* McshEngl.HiurLogoView'unit-system!⇒HiurUnitSyst,  ->  <br>* McshEngl.HiurviewLogo'unit-system!⇒HiurUnitSyst,
+  McshLag000037:1496  <h2 id="idLHiurnameH2">name-(decoding-unit) of HiurLogoView  ->  <h2 id="idLHiurnameH2">name-(decoding-unit) of HiurviewLogo
+  McshLag000037:1508  <br>* McshEngl.HiurLogoView'name-(decoding-unit)!⇒HiurName,  ->  <br>* McshEngl.HiurviewLogo'name-(decoding-unit)!⇒HiurName,
+  McshLag000037:1544  <h2 id="idLHiurondoH2">argu-name of HiurLogoView  ->  <h2 id="idLHiurondoH2">argu-name of HiurviewLogo
+  McshLag000037:1558  <br>* McshEngl.HiurLogoView'argu-name!⇒Hiurargu,  ->  <br>* McshEngl.HiurviewLogo'argu-name!⇒Hiurargu,
+  McshLag000037:1862  <h2 id="idLHiurverbH2">verb-name of HiurLogoView  ->  <h2 id="idLHiurverbH2">verb-name of HiurviewLogo
+  McshLag000037:1877  <br>* McshEngl.HiurLogoView'verb-name!⇒Hiurverb,  ->  <br>* McshEngl.HiurviewLogo'verb-name!⇒Hiurverb,
+  McshLag000037:1965  <h2 id="idLHiurconjH2">conjunction-name of HiurLogoView  ->  <h2 id="idLHiurconjH2">conjunction-name of HiurviewLogo
+  McshLag000037:1980  <br>* McshEngl.HiurLogoView'conjunction-name!⇒Hiurconj,  ->  <br>* McshEngl.HiurviewLogo'conjunction-name!⇒Hiurconj,
+  McshLag000037:2008  <h2 id="idLHiurodsmH2">argu-phrase of HiurLogoView  ->  <h2 id="idLHiurodsmH2">argu-phrase of HiurviewLogo
+  McshLag000037:2017  <br>* McshEngl.HiurLogoView'argu-phrase,  ->  <br>* McshEngl.HiurviewLogo'argu-phrase,
+  McshLag000037:2022  <h2 id="idLHiurverbarguH2">verb-argument of HiurLogoView  ->  <h2 id="idLHiurverbarguH2">verb-argument of HiurviewLogo
+  McshLag000037:2032  <br>* McshEngl.HiurLogoView'verb-argument!⇒HiurVerbArgu,  ->  <br>* McshEngl.HiurviewLogo'verb-argument!⇒HiurVerbArgu,
+  McshLag000037:2037  <h2 id="idLHiursntcH2">sentence of HiurLogoView  ->  <h2 id="idLHiursntcH2">sentence of HiurviewLogo
+  McshLag000037:2050  <br>* McshEngl.HiurLogoView'sentence!⇒Hiursent,  ->  <br>* McshEngl.HiurviewLogo'sentence!⇒Hiursent,
+  McshLag000037:2067  <h2 id="idLHiurtNssH2">titleNo-sentence-system of HiurLogoView  ->  <h2 id="idLHiurtNssH2">titleNo-sentence-system of HiurviewLogo
+  McshLag000037:2076  <br>* McshEngl.HiurLogoView'titleNo-sentence-system,  ->  <br>* McshEngl.HiurviewLogo'titleNo-sentence-system,
+  McshLag000037:2081  <h2 id="idLHiursctnH2">title-sentence-system-(section) of HiurLogoView  ->  <h2 id="idLHiursctnH2">title-sentence-system-(section) of HiurviewLogo
+  McshLag000037:2092  <br>* McshEngl.HiurLogoView'title-sentence-system-(section)!⇒HiurSect,  ->  <br>* McshEngl.HiurviewLogo'title-sentence-system-(section)!⇒HiurSect,
+  McshLag000037:2097  <h2 id="idLHiurrootH2">root-node of HiurLogoView  ->  <h2 id="idLHiurrootH2">root-node of HiurviewLogo
+  McshLag000037:2107  <br>* McshEngl.HiurLogoView'root-node!⇒HiurRoot,  ->  <br>* McshEngl.HiurviewLogo'root-node!⇒HiurRoot,
+  McshLag000037:2112  <h2 id="idLHiurspchH2">HiurLogoView.speech  ->  <h2 id="idLHiurspchH2">HiurviewLogo.speech
+  McshLag000037:2123  <br>* McshEngl.HiurLogoView.speech!⇒HiurSpch,  ->  <br>* McshEngl.HiurviewLogo.speech!⇒HiurSpch,
+  McshLag000037:2128  <h2 id="idLHiurtextH2">HiurLogoView.text  ->  <h2 id="idLHiurtextH2">HiurviewLogo.text
+  McshLag000037:2139  <br>* McshEngl.HiurLogoView.text!⇒HiurText,  ->  <br>* McshEngl.HiurviewLogo.text!⇒HiurText,
+  McshLag000037:2534  <h3 id="idLHindsxtrH3">syntax-tree of HindLogoView  ->  <h3 id="idLHindsxtrH3">syntax-tree of HindviewLogo
+  McshLag000037:2540  <br>* McshEngl.HindLogoView'syntax_tree,  ->  <br>* McshEngl.HindviewLogo'syntax_tree,
+  McshLag000037:2541  <br>* McshEngl.HindLogoView'syntax-tree!⇒HindLogoView'syntax_tree,  ->  <br>* McshEngl.HindviewLogo'syntax-tree!⇒HindviewLogo'syntax_tree,
+  McshLag000037:2546  <h3 id="idLHindnodeH3">node of HindLogoView  ->  <h3 id="idLHindnodeH3">node of HindviewLogo
+  McshLag000037:2552  <br>* McshEngl.HindLogoView'node,  ->  <br>* McshEngl.HindviewLogo'node,
+  McshLag000037:2557  <h3 id="idLHindunitH3">unit of HindLogoView  ->  <h3 id="idLHindunitH3">unit of HindviewLogo
+  McshLag000037:2566  <br>* McshEngl.unit-of-HindLogoView!⇒HindUnit,  ->  <br>* McshEngl.unit-of-HindviewLogo!⇒HindUnit,
+  McshLag000037:2567  <br>* McshEngl.HindUnit!=unit-of-HindLogoView,  ->  <br>* McshEngl.HindUnit!=unit-of-HindviewLogo,
+  McshLag000037:2568  <br>* McshEngl.HindLogoView'unit!⇒HindUnit,  ->  <br>* McshEngl.HindviewLogo'unit!⇒HindUnit,
+  McshLag000037:2583  <br>* McshEngl.HindLogoView'phoneme!=HindPhnm,  ->  <br>* McshEngl.HindviewLogo'phoneme!=HindPhnm,
+  McshLag000037:2626  <br>* McshEngl.HindLogoView'letter!⇒HindLetr,  ->  <br>* McshEngl.HindviewLogo'letter!⇒HindLetr,
+  McshLag000037:4061  <h3 id="idLHindutsmH3">unit-system of HindLogoView  ->  <h3 id="idLHindutsmH3">unit-system of HindviewLogo
+  McshLag000037:4069  <br>* McshEngl.HindLogoView'unit_system,  ->  <br>* McshEngl.HindviewLogo'unit_system,
+  McshLag000037:4070  <br>* McshEngl.HindLogoView'unit-system!⇒HindLogoView'unit_system,  ->  <br>* McshEngl.HindviewLogo'unit-system!⇒HindviewLogo'unit_system,
+  McshLag000037:4074  <h4 id="idLHindsylbH4">syllable of HindLogoView  ->  <h4 id="idLHindsylbH4">syllable of HindviewLogo
+  McshLag000037:4083  <br>* McshEngl.HindLogoView'syllable!⇒HindSylb,  ->  <br>* McshEngl.HindviewLogo'syllable!⇒HindSylb,
+  McshLag000037:4084  <br>* McshEngl.HindLogoView'unit-system'syllable!⇒HindSylb,  ->  <br>* McshEngl.HindviewLogo'unit-system'syllable!⇒HindSylb,
+  McshLag000037:4113  <h4 id="idLHindwordH4">word of HindLogoView  ->  <h4 id="idLHindwordH4">word of HindviewLogo
+  McshLag000037:4121  <br>* McshEngl.HindLogoView'word,  ->  <br>* McshEngl.HindviewLogo'word,
+  McshLag000037:4123  <br>* McshEngl.HindLogoView'unit-system'word,  ->  <br>* McshEngl.HindviewLogo'unit-system'word,
+  McshLag000037:4129  <h3 id="idLHindnameH3">name of HindLogoView  ->  <h3 id="idLHindnameH3">name of HindviewLogo
+  McshLag000037:4135  <br>* McshEngl.HindLogoView'name,  ->  <br>* McshEngl.HindviewLogo'name,
+  McshLag000037:4140  <h3 id="idLHindargoH3">argu-name of HindLogoView  ->  <h3 id="idLHindargoH3">argu-name of HindviewLogo
+  McshLag000037:4148  <br>* McshEngl.HindLogoView'argu_name!⇒Hindargu,  ->  <br>* McshEngl.HindviewLogo'argu_name!⇒Hindargu,
+  McshLag000037:4149  <br>* McshEngl.HindLogoView'argu-name!⇒Hindargu,  ->  <br>* McshEngl.HindviewLogo'argu-name!⇒Hindargu,
+  McshLag000037:4175  <br>* McshEngl.HindLogoView'argu-name.pronoun!⇒Hindargu.pronoun,  ->  <br>* McshEngl.HindviewLogo'argu-name.pronoun!⇒Hindargu.pronoun,
+  McshLag000037:4186  <h3 id="idLHindverbH3">verb-name of HindLogoView  ->  <h3 id="idLHindverbH3">verb-name of HindviewLogo
+  McshLag000037:4192  <br>* McshEngl.HindLogoView'verb_name,  ->  <br>* McshEngl.HindviewLogo'verb_name,
+  McshLag000037:4193  <br>* McshEngl.HindLogoView'verb-name!⇒HindLogoView'verb_name,  ->  <br>* McshEngl.HindviewLogo'verb-name!⇒HindviewLogo'verb_name,
+  McshLag000037:4198  <h3 id="idLHindconjH3">conjunction-name of HindLogoView  ->  <h3 id="idLHindconjH3">conjunction-name of HindviewLogo
+  McshLag000037:4206  <br>* McshEngl.HindLogoView'conjunction_name!⇒Hindconj,  ->  <br>* McshEngl.HindviewLogo'conjunction_name!⇒Hindconj,
+  McshLag000037:4207  <br>* McshEngl.HindLogoView'conjunction-name!⇒Hindconj,  ->  <br>* McshEngl.HindviewLogo'conjunction-name!⇒Hindconj,
+  McshLag000037:4212  <h3 id="idLHindagsmH3">argu-phrase of HindLogoView  ->  <h3 id="idLHindagsmH3">argu-phrase of HindviewLogo
+  McshLag000037:4218  <br>* McshEngl.HindLogoView'argu_phrase,  ->  <br>* McshEngl.HindviewLogo'argu_phrase,
+  McshLag000037:4219  <br>* McshEngl.HindLogoView'argu-phrase!⇒HindLogoView'argu_phrase,  ->  <br>* McshEngl.HindviewLogo'argu-phrase!⇒HindviewLogo'argu_phrase,
+  McshLag000037:4224  <h3 id="idLHindvbatH3">verb-argument of HindLogoView  ->  <h3 id="idLHindvbatH3">verb-argument of HindviewLogo
+  McshLag000037:4230  <br>* McshEngl.HindLogoView'verb_argument,  ->  <br>* McshEngl.HindviewLogo'verb_argument,
+  McshLag000037:4231  <br>* McshEngl.HindLogoView'verb-argument!⇒HindLogoView'verb_argument,  ->  <br>* McshEngl.HindviewLogo'verb-argument!⇒HindviewLogo'verb_argument,
+  McshLag000037:4236  <h3 id="idLHindsentH3">sentence of HindLogoView  ->  <h3 id="idLHindsentH3">sentence of HindviewLogo
+  McshLag000037:4242  <br>* McshEngl.HindLogoView'sentence,  ->  <br>* McshEngl.HindviewLogo'sentence,
+  McshLag000037:4246  <h4 id="idLHindsntcbcexH4">basic-expression of HindLogoView  ->  <h4 id="idLHindsntcbcexH4">basic-expression of HindviewLogo
+  McshLag000037:4256  <br>* McshEngl.HindLogoView'sentence'basic-expression!⇒HindExpr,  ->  <br>* McshEngl.HindviewLogo'sentence'basic-expression!⇒HindExpr,
+  McshLag000037:4257  <br>* McshEngl.HindLogoView'basic-expression!⇒HindExpr,  ->  <br>* McshEngl.HindviewLogo'basic-expression!⇒HindExpr,
+  McshLag000037:4423  <h3 id="idLHindsectH3">section of HindLogoView  ->  <h3 id="idLHindsectH3">section of HindviewLogo
+  McshLag000037:4429  <br>* McshEngl.HindLogoView'section,  ->  <br>* McshEngl.HindviewLogo'section,
+  McshLag000037:4434  <h3 id="idLHindrtndH3">root-node of HindLogoView  ->  <h3 id="idLHindrtndH3">root-node of HindviewLogo
+  McshLag000037:4440  <br>* McshEngl.HindLogoView'root_node,  ->  <br>* McshEngl.HindviewLogo'root_node,
+  McshLag000037:4441  <br>* McshEngl.HindLogoView'root-node!⇒HindLogoView'root_node,  ->  <br>* McshEngl.HindviewLogo'root-node!⇒HindviewLogo'root_node,
+  McshLag000037:4585  <h3 id="idLUrdusxtrH3">syntax-tree of UrduLogoView  ->  <h3 id="idLUrdusxtrH3">syntax-tree of UrduviewLogo
+  McshLag000037:4591  <br>* McshEngl.UrduLogoView'syntax_tree,  ->  <br>* McshEngl.UrduviewLogo'syntax_tree,
+  McshLag000037:4592  <br>* McshEngl.UrduLogoView'syntax-tree!⇒UrduLogoView'syntax_tree,  ->  <br>* McshEngl.UrduviewLogo'syntax-tree!⇒UrduviewLogo'syntax_tree,
+  McshLag000037:4597  <h3 id="idLUrdunodeH3">node of UrduLogoView  ->  <h3 id="idLUrdunodeH3">node of UrduviewLogo
+  McshLag000037:4603  <br>* McshEngl.UrduLogoView'node,  ->  <br>* McshEngl.UrduviewLogo'node,
+  McshLag000037:4608  <h3 id="idLUrduunitH3">unit of UrduLogoView  ->  <h3 id="idLUrduunitH3">unit of UrduviewLogo
+  McshLag000037:4617  <br>* McshEngl.unit-of-UrduLogoView!⇒UrduUnit,  ->  <br>* McshEngl.unit-of-UrduviewLogo!⇒UrduUnit,
+  McshLag000037:4618  <br>* McshEngl.UrduUnit!=unit-of-UrduLogoView,  ->  <br>* McshEngl.UrduUnit!=unit-of-UrduviewLogo,
+  McshLag000037:4619  <br>* McshEngl.UrduLogoView'unit!⇒UrduUnit,  ->  <br>* McshEngl.UrduviewLogo'unit!⇒UrduUnit,
+  McshLag000037:4634  <br>* McshEngl.UrduLogoView'phoneme!=UrduPhnm,  ->  <br>* McshEngl.UrduviewLogo'phoneme!=UrduPhnm,
+  McshLag000037:4677  <br>* McshEngl.UrduLogoView'letter!⇒UrduLetr,  ->  <br>* McshEngl.UrduviewLogo'letter!⇒UrduLetr,
+  McshLag000037:4759  <h3 id="idLUrduutsmH3">unit-system of UrduLogoView  ->  <h3 id="idLUrduutsmH3">unit-system of UrduviewLogo
+  McshLag000037:4767  <br>* McshEngl.UrduLogoView'unit_system,  ->  <br>* McshEngl.UrduviewLogo'unit_system,
+  McshLag000037:4768  <br>* McshEngl.UrduLogoView'unit-system!⇒UrduLogoView'unit_system,  ->  <br>* McshEngl.UrduviewLogo'unit-system!⇒UrduviewLogo'unit_system,
+  McshLag000037:4772  <h4 id="idLUrdusylbH4">syllable of UrduLogoView  ->  <h4 id="idLUrdusylbH4">syllable of UrduviewLogo
+  McshLag000037:4781  <br>* McshEngl.UrduLogoView'syllable!⇒UrduSylb,  ->  <br>* McshEngl.UrduviewLogo'syllable!⇒UrduSylb,
+  McshLag000037:4782  <br>* McshEngl.UrduLogoView'unit-system'syllable!⇒UrduSylb,  ->  <br>* McshEngl.UrduviewLogo'unit-system'syllable!⇒UrduSylb,
+  McshLag000037:4811  <h4 id="idLUrduwordH4">word of UrduLogoView  ->  <h4 id="idLUrduwordH4">word of UrduviewLogo
+  McshLag000037:4819  <br>* McshEngl.UrduLogoView'word,  ->  <br>* McshEngl.UrduviewLogo'word,
+  McshLag000037:4821  <br>* McshEngl.UrduLogoView'unit-system'word,  ->  <br>* McshEngl.UrduviewLogo'unit-system'word,
+  McshLag000037:4827  <h3 id="idLUrdunameH3">name of UrduLogoView  ->  <h3 id="idLUrdunameH3">name of UrduviewLogo
+  McshLag000037:4833  <br>* McshEngl.UrduLogoView'name,  ->  <br>* McshEngl.UrduviewLogo'name,
+  McshLag000037:4838  <h3 id="idLUrduargoH3">argu-name of UrduLogoView  ->  <h3 id="idLUrduargoH3">argu-name of UrduviewLogo
+  McshLag000037:4846  <br>* McshEngl.UrduLogoView'argu_name!⇒Urduargu,  ->  <br>* McshEngl.UrduviewLogo'argu_name!⇒Urduargu,
+  McshLag000037:4847  <br>* McshEngl.UrduLogoView'argu-name!⇒Urduargu,  ->  <br>* McshEngl.UrduviewLogo'argu-name!⇒Urduargu,
+  McshLag000037:4873  <br>* McshEngl.UrduLogoView'argu-name.pronoun!⇒Urduargu.pronoun,  ->  <br>* McshEngl.UrduviewLogo'argu-name.pronoun!⇒Urduargu.pronoun,
+  McshLag000037:4884  <h3 id="idLUrduverbH3">verb-name of UrduLogoView  ->  <h3 id="idLUrduverbH3">verb-name of UrduviewLogo
+  McshLag000037:4890  <br>* McshEngl.UrduLogoView'verb_name,  ->  <br>* McshEngl.UrduviewLogo'verb_name,
+  McshLag000037:4891  <br>* McshEngl.UrduLogoView'verb-name!⇒UrduLogoView'verb_name,  ->  <br>* McshEngl.UrduviewLogo'verb-name!⇒UrduviewLogo'verb_name,
+  McshLag000037:4896  <h3 id="idLUrduconjH3">conjunction-name of UrduLogoView  ->  <h3 id="idLUrduconjH3">conjunction-name of UrduviewLogo
+  McshLag000037:4904  <br>* McshEngl.UrduLogoView'conjunction_name!⇒Urduconj,  ->  <br>* McshEngl.UrduviewLogo'conjunction_name!⇒Urduconj,
+  McshLag000037:4905  <br>* McshEngl.UrduLogoView'conjunction-name!⇒Urduconj,  ->  <br>* McshEngl.UrduviewLogo'conjunction-name!⇒Urduconj,
+  McshLag000037:4910  <h3 id="idLUrduagsmH3">argu-phrase of UrduLogoView  ->  <h3 id="idLUrduagsmH3">argu-phrase of UrduviewLogo
+  McshLag000037:4916  <br>* McshEngl.UrduLogoView'argu_phrase,  ->  <br>* McshEngl.UrduviewLogo'argu_phrase,
+  McshLag000037:4917  <br>* McshEngl.UrduLogoView'argu-phrase!⇒UrduLogoView'argu_phrase,  ->  <br>* McshEngl.UrduviewLogo'argu-phrase!⇒UrduviewLogo'argu_phrase,
+  McshLag000037:4922  <h3 id="idLUrduvbatH3">verb-argument of UrduLogoView  ->  <h3 id="idLUrduvbatH3">verb-argument of UrduviewLogo
+  McshLag000037:4928  <br>* McshEngl.UrduLogoView'verb_argument,  ->  <br>* McshEngl.UrduviewLogo'verb_argument,
+  McshLag000037:4929  <br>* McshEngl.UrduLogoView'verb-argument!⇒UrduLogoView'verb_argument,  ->  <br>* McshEngl.UrduviewLogo'verb-argument!⇒UrduviewLogo'verb_argument,
+  McshLag000037:4934  <h3 id="idLUrdusentH3">sentence of UrduLogoView  ->  <h3 id="idLUrdusentH3">sentence of UrduviewLogo
+  McshLag000037:4940  <br>* McshEngl.UrduLogoView'sentence,  ->  <br>* McshEngl.UrduviewLogo'sentence,
+  McshLag000037:4945  <h3 id="idLUrdusectH3">section of UrduLogoView  ->  <h3 id="idLUrdusectH3">section of UrduviewLogo
+  McshLag000037:4951  <br>* McshEngl.UrduLogoView'section,  ->  <br>* McshEngl.UrduviewLogo'section,
+  McshLag000037:4956  <h3 id="idLUrdurtndH3">root-node of UrduLogoView  ->  <h3 id="idLUrdurtndH3">root-node of UrduviewLogo
+  McshLag000037:4962  <br>* McshEngl.UrduLogoView'root_node,  ->  <br>* McshEngl.UrduviewLogo'root_node,
+  McshLag000037:4963  <br>* McshEngl.UrduLogoView'root-node!⇒UrduLogoView'root_node,  ->  <br>* McshEngl.UrduviewLogo'root-node!⇒UrduviewLogo'root_node,
+  McshLag000038:373  <h2 id="idLSlv0sxtrH2">syntax-tree of Slv0LogoView  ->  <h2 id="idLSlv0sxtrH2">syntax-tree of Slv0viewLogo
+  McshLag000038:382  <br>* McshEngl.Slv0LogoView'syntax-tree,  ->  <br>* McshEngl.Slv0viewLogo'syntax-tree,
+  McshLag000038:387  <h2 id="idLSlv0nodeH2">node of Slv0LogoView  ->  <h2 id="idLSlv0nodeH2">node of Slv0viewLogo
+  McshLag000038:395  <br>* McshEngl.Slv0LogoView'node,  ->  <br>* McshEngl.Slv0viewLogo'node,
+  McshLag000038:401  <h2 id="idLSlv0untH2">unit of Slv0LogoView  ->  <h2 id="idLSlv0untH2">unit of Slv0viewLogo
+  McshLag000038:414  <br>* McshEngl.Slv0LogoView'unit!⇒Slv0Unit,  ->  <br>* McshEngl.Slv0viewLogo'unit!⇒Slv0Unit,
+  McshLag000038:768  <h2 id="idLSlv0utsmH2">unit-system of Slv0LogoView  ->  <h2 id="idLSlv0utsmH2">unit-system of Slv0viewLogo
+  McshLag000038:778  <br>* McshEngl.Slv0LogoView'unit-system!⇒Slv0UnitSyst,  ->  <br>* McshEngl.Slv0viewLogo'unit-system!⇒Slv0UnitSyst,
+  McshLag000038:993  <h2 id="idLSlv0nameH2">name-(decoding-unit) of Slv0LogoView  ->  <h2 id="idLSlv0nameH2">name-(decoding-unit) of Slv0viewLogo
+  McshLag000038:1005  <br>* McshEngl.Slv0LogoView'name-(decoding-unit)!⇒Slv0Name,  ->  <br>* McshEngl.Slv0viewLogo'name-(decoding-unit)!⇒Slv0Name,
+  McshLag000038:1041  <h2 id="idLSlv0ondoH2">argu-name of Slv0LogoView  ->  <h2 id="idLSlv0ondoH2">argu-name of Slv0viewLogo
+  McshLag000038:1055  <br>* McshEngl.Slv0LogoView'argu-name!⇒Slv0argu,  ->  <br>* McshEngl.Slv0viewLogo'argu-name!⇒Slv0argu,
+  McshLag000038:1359  <h2 id="idLSlv0verbH2">verb-name of Slv0LogoView  ->  <h2 id="idLSlv0verbH2">verb-name of Slv0viewLogo
+  McshLag000038:1373  <br>* McshEngl.Slv0LogoView'verb-name!⇒Slv0verb,  ->  <br>* McshEngl.Slv0viewLogo'verb-name!⇒Slv0verb,
+  McshLag000038:1461  <h2 id="idLSlv0conjH2">conjunction-name of Slv0LogoView  ->  <h2 id="idLSlv0conjH2">conjunction-name of Slv0viewLogo
+  McshLag000038:1475  <br>* McshEngl.Slv0LogoView'conjunction-name!⇒Slv0conj,  ->  <br>* McshEngl.Slv0viewLogo'conjunction-name!⇒Slv0conj,
+  McshLag000038:1503  <h2 id="idLSlv0odsmH2">argu-phrase of Slv0LogoView  ->  <h2 id="idLSlv0odsmH2">argu-phrase of Slv0viewLogo
+  McshLag000038:1512  <br>* McshEngl.Slv0LogoView'argu-phrase,  ->  <br>* McshEngl.Slv0viewLogo'argu-phrase,
+  McshLag000038:1517  <h2 id="idLSlv0verbarguH2">verb-argument of Slv0LogoView  ->  <h2 id="idLSlv0verbarguH2">verb-argument of Slv0viewLogo
+  McshLag000038:1527  <br>* McshEngl.Slv0LogoView'verb-argument!⇒Slv0VerbArgu,  ->  <br>* McshEngl.Slv0viewLogo'verb-argument!⇒Slv0VerbArgu,
+  McshLag000038:1532  <h2 id="idLSlv0sntcH2">sentence of Slv0LogoView  ->  <h2 id="idLSlv0sntcH2">sentence of Slv0viewLogo
+  McshLag000038:1545  <br>* McshEngl.Slv0LogoView'sentence!⇒Slv0sent,  ->  <br>* McshEngl.Slv0viewLogo'sentence!⇒Slv0sent,
+  McshLag000038:1562  <h2 id="idLSlv0tNssH2">titleNo-sentence-system of Slv0LogoView  ->  <h2 id="idLSlv0tNssH2">titleNo-sentence-system of Slv0viewLogo
+  McshLag000038:1571  <br>* McshEngl.Slv0LogoView'titleNo-sentence-system,  ->  <br>* McshEngl.Slv0viewLogo'titleNo-sentence-system,
+  McshLag000038:1576  <h2 id="idLSlv0sctnH2">title-sentence-system-(section) of Slv0LogoView  ->  <h2 id="idLSlv0sctnH2">title-sentence-system-(section) of Slv0viewLogo
+  McshLag000038:1587  <br>* McshEngl.Slv0LogoView'title-sentence-system-(section)!⇒Slv0Sect,  ->  <br>* McshEngl.Slv0viewLogo'title-sentence-system-(section)!⇒Slv0Sect,
+  McshLag000038:1592  <h2 id="idLSlv0rootH2">root-node of Slv0LogoView  ->  <h2 id="idLSlv0rootH2">root-node of Slv0viewLogo
+  McshLag000038:1602  <br>* McshEngl.Slv0LogoView'root-node!⇒Slv0Root,  ->  <br>* McshEngl.Slv0viewLogo'root-node!⇒Slv0Root,
+  McshLag000038:1607  <h2 id="idLSlv0spchH2">Slv0LogoView.speech  ->  <h2 id="idLSlv0spchH2">Slv0viewLogo.speech
+  McshLag000038:1618  <br>* McshEngl.Slv0LogoView.speech!⇒Slv0Spch,  ->  <br>* McshEngl.Slv0viewLogo.speech!⇒Slv0Spch,
+  McshLag000038:1623  <h2 id="idLSlv0textH2">Slv0LogoView.text  ->  <h2 id="idLSlv0textH2">Slv0viewLogo.text
+  McshLag000038:1634  <br>* McshEngl.Slv0LogoView.text!⇒Slv0Text,  ->  <br>* McshEngl.Slv0viewLogo.text!⇒Slv0Text,
+  McshLag000039:369  <h2 id="idLIde0sxtrH2">syntax-tree of Ide0LogoView  ->  <h2 id="idLIde0sxtrH2">syntax-tree of Ide0viewLogo
+  McshLag000039:378  <br>* McshEngl.Ide0LogoView'syntax-tree,  ->  <br>* McshEngl.Ide0viewLogo'syntax-tree,
+  McshLag000039:383  <h2 id="idLIde0nodeH2">node of Ide0LogoView  ->  <h2 id="idLIde0nodeH2">node of Ide0viewLogo
+  McshLag000039:391  <br>* McshEngl.Ide0LogoView'node,  ->  <br>* McshEngl.Ide0viewLogo'node,
+  McshLag000039:397  <h2 id="idLIde0untH2">unit of Ide0LogoView  ->  <h2 id="idLIde0untH2">unit of Ide0viewLogo
+  McshLag000039:410  <br>* McshEngl.Ide0LogoView'unit!⇒Ide0Unit,  ->  <br>* McshEngl.Ide0viewLogo'unit!⇒Ide0Unit,
+  McshLag000039:559  <h2 id="idLIde0utsmH2">unit-system of Ide0LogoView  ->  <h2 id="idLIde0utsmH2">unit-system of Ide0viewLogo
+  McshLag000039:569  <br>* McshEngl.Ide0LogoView'unit-system!⇒Ide0UnitSyst,  ->  <br>* McshEngl.Ide0viewLogo'unit-system!⇒Ide0UnitSyst,
+  McshLag000039:659  <h2 id="idLIde0nameH2">name-(decoding-unit) of Ide0LogoView  ->  <h2 id="idLIde0nameH2">name-(decoding-unit) of Ide0viewLogo
+  McshLag000039:671  <br>* McshEngl.Ide0LogoView'name-(decoding-unit)!⇒Ide0Name,  ->  <br>* McshEngl.Ide0viewLogo'name-(decoding-unit)!⇒Ide0Name,
+  McshLag000039:707  <h2 id="idLIde0ondoH2">argu-name of Ide0LogoView  ->  <h2 id="idLIde0ondoH2">argu-name of Ide0viewLogo
+  McshLag000039:721  <br>* McshEngl.Ide0LogoView'argu-name!⇒Ide0argu,  ->  <br>* McshEngl.Ide0viewLogo'argu-name!⇒Ide0argu,
+  McshLag000039:1025  <h2 id="idLIde0verbH2">verb-name of Ide0LogoView  ->  <h2 id="idLIde0verbH2">verb-name of Ide0viewLogo
+  McshLag000039:1040  <br>* McshEngl.Ide0LogoView'verb-name!⇒Ide0verb,  ->  <br>* McshEngl.Ide0viewLogo'verb-name!⇒Ide0verb,
+  McshLag000039:1128  <h2 id="idLIde0conjH2">conjunction-name of Ide0LogoView  ->  <h2 id="idLIde0conjH2">conjunction-name of Ide0viewLogo
+  McshLag000039:1143  <br>* McshEngl.Ide0LogoView'conjunction-name!⇒Ide0conj,  ->  <br>* McshEngl.Ide0viewLogo'conjunction-name!⇒Ide0conj,
+  McshLag000039:1171  <h2 id="idLIde0odsmH2">argu-phrase of Ide0LogoView  ->  <h2 id="idLIde0odsmH2">argu-phrase of Ide0viewLogo
+  McshLag000039:1180  <br>* McshEngl.Ide0LogoView'argu-phrase,  ->  <br>* McshEngl.Ide0viewLogo'argu-phrase,
+  McshLag000039:1185  <h2 id="idLIde0verbarguH2">verb-argument of Ide0LogoView  ->  <h2 id="idLIde0verbarguH2">verb-argument of Ide0viewLogo
+  McshLag000039:1195  <br>* McshEngl.Ide0LogoView'verb-argument!⇒Ide0VerbArgu,  ->  <br>* McshEngl.Ide0viewLogo'verb-argument!⇒Ide0VerbArgu,
+  McshLag000039:1200  <h2 id="idLIde0sntcH2">sentence of Ide0LogoView  ->  <h2 id="idLIde0sntcH2">sentence of Ide0viewLogo
+  McshLag000039:1213  <br>* McshEngl.Ide0LogoView'sentence!⇒Ide0sent,  ->  <br>* McshEngl.Ide0viewLogo'sentence!⇒Ide0sent,
+  McshLag000039:1230  <h2 id="idLIde0tNssH2">titleNo-sentence-system of Ide0LogoView  ->  <h2 id="idLIde0tNssH2">titleNo-sentence-system of Ide0viewLogo
+  McshLag000039:1239  <br>* McshEngl.Ide0LogoView'titleNo-sentence-system,  ->  <br>* McshEngl.Ide0viewLogo'titleNo-sentence-system,
+  McshLag000039:1244  <h2 id="idLIde0sctnH2">title-sentence-system-(section) of Ide0LogoView  ->  <h2 id="idLIde0sctnH2">title-sentence-system-(section) of Ide0viewLogo
+  McshLag000039:1255  <br>* McshEngl.Ide0LogoView'title-sentence-system-(section)!⇒Ide0Sect,  ->  <br>* McshEngl.Ide0viewLogo'title-sentence-system-(section)!⇒Ide0Sect,
+  McshLag000039:1260  <h2 id="idLIde0rootH2">root-node of Ide0LogoView  ->  <h2 id="idLIde0rootH2">root-node of Ide0viewLogo
+  McshLag000039:1270  <br>* McshEngl.Ide0LogoView'root-node!⇒Ide0Root,  ->  <br>* McshEngl.Ide0viewLogo'root-node!⇒Ide0Root,
+  McshLag000039:1275  <h2 id="idLIde0spchH2">Ide0LogoView.speech  ->  <h2 id="idLIde0spchH2">Ide0viewLogo.speech
+  McshLag000039:1286  <br>* McshEngl.Ide0LogoView.speech!⇒Ide0Spch,  ->  <br>* McshEngl.Ide0viewLogo.speech!⇒Ide0Spch,
+  McshLag000039:1291  <h2 id="idLIde0textH2">Ide0LogoView.text  ->  <h2 id="idLIde0textH2">Ide0viewLogo.text
+  McshLag000039:1302  <br>* McshEngl.Ide0LogoView.text!⇒Ide0Text,  ->  <br>* McshEngl.Ide0viewLogo.text!⇒Ide0Text,
+  McshLag000040:385  <h2 id="idLAfa0sxtrH2">syntax-tree of Afa0LogoView  ->  <h2 id="idLAfa0sxtrH2">syntax-tree of Afa0viewLogo
+  McshLag000040:394  <br>* McshEngl.Afa0LogoView'syntax-tree,  ->  <br>* McshEngl.Afa0viewLogo'syntax-tree,
+  McshLag000040:399  <h2 id="idLAfa0nodeH2">node of Afa0LogoView  ->  <h2 id="idLAfa0nodeH2">node of Afa0viewLogo
+  McshLag000040:407  <br>* McshEngl.Afa0LogoView'node,  ->  <br>* McshEngl.Afa0viewLogo'node,
+  McshLag000040:413  <h2 id="idLAfa0untH2">unit of Afa0LogoView  ->  <h2 id="idLAfa0untH2">unit of Afa0viewLogo
+  McshLag000040:426  <br>* McshEngl.Afa0LogoView'unit!⇒Afa0Unit,  ->  <br>* McshEngl.Afa0viewLogo'unit!⇒Afa0Unit,
+  McshLag000040:784  <h2 id="idLAfa0utsmH2">unit-system of Afa0LogoView  ->  <h2 id="idLAfa0utsmH2">unit-system of Afa0viewLogo
+  McshLag000040:794  <br>* McshEngl.Afa0LogoView'unit-system!⇒Afa0UnitSyst,  ->  <br>* McshEngl.Afa0viewLogo'unit-system!⇒Afa0UnitSyst,
+  McshLag000040:884  <h2 id="idLAfa0nameH2">name-(decoding-unit) of Afa0LogoView  ->  <h2 id="idLAfa0nameH2">name-(decoding-unit) of Afa0viewLogo
+  McshLag000040:896  <br>* McshEngl.Afa0LogoView'name-(decoding-unit)!⇒Afa0Name,  ->  <br>* McshEngl.Afa0viewLogo'name-(decoding-unit)!⇒Afa0Name,
+  McshLag000040:932  <h2 id="idLAfa0ondoH2">argu-name of Afa0LogoView  ->  <h2 id="idLAfa0ondoH2">argu-name of Afa0viewLogo
+  McshLag000040:946  <br>* McshEngl.Afa0LogoView'argu-name!⇒Afa0argu,  ->  <br>* McshEngl.Afa0viewLogo'argu-name!⇒Afa0argu,
+  McshLag000040:1250  <h2 id="idLAfa0verbH2">verb-name of Afa0LogoView  ->  <h2 id="idLAfa0verbH2">verb-name of Afa0viewLogo
+  McshLag000040:1265  <br>* McshEngl.Afa0LogoView'verb-name!⇒Afa0verb,  ->  <br>* McshEngl.Afa0viewLogo'verb-name!⇒Afa0verb,
+  McshLag000040:1353  <h2 id="idLAfa0conjH2">conjunction-name of Afa0LogoView  ->  <h2 id="idLAfa0conjH2">conjunction-name of Afa0viewLogo
+  McshLag000040:1368  <br>* McshEngl.Afa0LogoView'conjunction-name!⇒Afa0conj,  ->  <br>* McshEngl.Afa0viewLogo'conjunction-name!⇒Afa0conj,
+  McshLag000040:1396  <h2 id="idLAfa0odsmH2">argu-phrase of Afa0LogoView  ->  <h2 id="idLAfa0odsmH2">argu-phrase of Afa0viewLogo
+  McshLag000040:1405  <br>* McshEngl.Afa0LogoView'argu-phrase,  ->  <br>* McshEngl.Afa0viewLogo'argu-phrase,
+  McshLag000040:1410  <h2 id="idLAfa0verbarguH2">verb-argument of Afa0LogoView  ->  <h2 id="idLAfa0verbarguH2">verb-argument of Afa0viewLogo
+  McshLag000040:1420  <br>* McshEngl.Afa0LogoView'verb-argument!⇒Afa0VerbArgu,  ->  <br>* McshEngl.Afa0viewLogo'verb-argument!⇒Afa0VerbArgu,
+  McshLag000040:1425  <h2 id="idLAfa0sntcH2">sentence of Afa0LogoView  ->  <h2 id="idLAfa0sntcH2">sentence of Afa0viewLogo
+  McshLag000040:1438  <br>* McshEngl.Afa0LogoView'sentence!⇒Afa0sent,  ->  <br>* McshEngl.Afa0viewLogo'sentence!⇒Afa0sent,
+  McshLag000040:1455  <h2 id="idLAfa0tNssH2">titleNo-sentence-system of Afa0LogoView  ->  <h2 id="idLAfa0tNssH2">titleNo-sentence-system of Afa0viewLogo
+  McshLag000040:1464  <br>* McshEngl.Afa0LogoView'titleNo-sentence-system,  ->  <br>* McshEngl.Afa0viewLogo'titleNo-sentence-system,
+  McshLag000040:1469  <h2 id="idLAfa0sctnH2">title-sentence-system-(section) of Afa0LogoView  ->  <h2 id="idLAfa0sctnH2">title-sentence-system-(section) of Afa0viewLogo
+  McshLag000040:1480  <br>* McshEngl.Afa0LogoView'title-sentence-system-(section)!⇒Afa0Sect,  ->  <br>* McshEngl.Afa0viewLogo'title-sentence-system-(section)!⇒Afa0Sect,
+  McshLag000040:1485  <h2 id="idLAfa0rootH2">root-node of Afa0LogoView  ->  <h2 id="idLAfa0rootH2">root-node of Afa0viewLogo
+  McshLag000040:1495  <br>* McshEngl.Afa0LogoView'root-node!⇒Afa0Root,  ->  <br>* McshEngl.Afa0viewLogo'root-node!⇒Afa0Root,
+  McshLag000040:1500  <h2 id="idLAfa0spchH2">Afa0LogoView.speech  ->  <h2 id="idLAfa0spchH2">Afa0viewLogo.speech
+  McshLag000040:1511  <br>* McshEngl.Afa0LogoView.speech!⇒Afa0Spch,  ->  <br>* McshEngl.Afa0viewLogo.speech!⇒Afa0Spch,
+  McshLag000040:1516  <h2 id="idLAfa0textH2">Afa0LogoView.text  ->  <h2 id="idLAfa0textH2">Afa0viewLogo.text
+  McshLag000040:1527  <br>* McshEngl.Afa0LogoView.text!⇒Afa0Text,  ->  <br>* McshEngl.Afa0viewLogo.text!⇒Afa0Text,
+  McshLag000041:375  <h2 id="idLTur0sxtrH2">syntax-tree of Tur0LogoView  ->  <h2 id="idLTur0sxtrH2">syntax-tree of Tur0viewLogo
+  McshLag000041:384  <br>* McshEngl.Tur0LogoView'syntax-tree,  ->  <br>* McshEngl.Tur0viewLogo'syntax-tree,
+  McshLag000041:389  <h2 id="idLTur0nodeH2">node of Tur0LogoView  ->  <h2 id="idLTur0nodeH2">node of Tur0viewLogo
+  McshLag000041:397  <br>* McshEngl.Tur0LogoView'node,  ->  <br>* McshEngl.Tur0viewLogo'node,
+  McshLag000041:403  <h2 id="idLTur0untH2">unit of Tur0LogoView  ->  <h2 id="idLTur0untH2">unit of Tur0viewLogo
+  McshLag000041:416  <br>* McshEngl.Tur0LogoView'unit!⇒Tur0Unit,  ->  <br>* McshEngl.Tur0viewLogo'unit!⇒Tur0Unit,
+  McshLag000041:696  <h2 id="idLTur0utsmH2">unit-system of Tur0LogoView  ->  <h2 id="idLTur0utsmH2">unit-system of Tur0viewLogo
+  McshLag000041:706  <br>* McshEngl.Tur0LogoView'unit-system!⇒Tur0UnitSyst,  ->  <br>* McshEngl.Tur0viewLogo'unit-system!⇒Tur0UnitSyst,
+  McshLag000041:796  <h2 id="idLTur0nameH2">name-(decoding-unit) of Tur0LogoView  ->  <h2 id="idLTur0nameH2">name-(decoding-unit) of Tur0viewLogo
+  McshLag000041:808  <br>* McshEngl.Tur0LogoView'name-(decoding-unit)!⇒Tur0Name,  ->  <br>* McshEngl.Tur0viewLogo'name-(decoding-unit)!⇒Tur0Name,
+  McshLag000041:844  <h2 id="idLTur0ondoH2">argu-name of Tur0LogoView  ->  <h2 id="idLTur0ondoH2">argu-name of Tur0viewLogo
+  McshLag000041:858  <br>* McshEngl.Tur0LogoView'argu-name!⇒Tur0argu,  ->  <br>* McshEngl.Tur0viewLogo'argu-name!⇒Tur0argu,
+  McshLag000041:1162  <h2 id="idLTur0verbH2">verb-name of Tur0LogoView  ->  <h2 id="idLTur0verbH2">verb-name of Tur0viewLogo
+  McshLag000041:1176  <br>* McshEngl.Tur0LogoView'verb-name!⇒Tur0verb,  ->  <br>* McshEngl.Tur0viewLogo'verb-name!⇒Tur0verb,
+  McshLag000041:1264  <h2 id="idLTur0conjH2">conjunction-name of Tur0LogoView  ->  <h2 id="idLTur0conjH2">conjunction-name of Tur0viewLogo
+  McshLag000041:1278  <br>* McshEngl.Tur0LogoView'conjunction-name!⇒Tur0conj,  ->  <br>* McshEngl.Tur0viewLogo'conjunction-name!⇒Tur0conj,
+  McshLag000041:1306  <h2 id="idLTur0odsmH2">argu-phrase of Tur0LogoView  ->  <h2 id="idLTur0odsmH2">argu-phrase of Tur0viewLogo
+  McshLag000041:1315  <br>* McshEngl.Tur0LogoView'argu-phrase,  ->  <br>* McshEngl.Tur0viewLogo'argu-phrase,
+  McshLag000041:1320  <h2 id="idLTur0verbarguH2">verb-argument of Tur0LogoView  ->  <h2 id="idLTur0verbarguH2">verb-argument of Tur0viewLogo
+  McshLag000041:1330  <br>* McshEngl.Tur0LogoView'verb-argument!⇒Tur0VerbArgu,  ->  <br>* McshEngl.Tur0viewLogo'verb-argument!⇒Tur0VerbArgu,
+  McshLag000041:1335  <h2 id="idLTur0sntcH2">sentence of Tur0LogoView  ->  <h2 id="idLTur0sntcH2">sentence of Tur0viewLogo
+  McshLag000041:1348  <br>* McshEngl.Tur0LogoView'sentence!⇒Tur0sent,  ->  <br>* McshEngl.Tur0viewLogo'sentence!⇒Tur0sent,
+  McshLag000041:1365  <h2 id="idLTur0tNssH2">titleNo-sentence-system of Tur0LogoView  ->  <h2 id="idLTur0tNssH2">titleNo-sentence-system of Tur0viewLogo
+  McshLag000041:1374  <br>* McshEngl.Tur0LogoView'titleNo-sentence-system,  ->  <br>* McshEngl.Tur0viewLogo'titleNo-sentence-system,
+  McshLag000041:1379  <h2 id="idLTur0sctnH2">title-sentence-system-(section) of Tur0LogoView  ->  <h2 id="idLTur0sctnH2">title-sentence-system-(section) of Tur0viewLogo
+  McshLag000041:1390  <br>* McshEngl.Tur0LogoView'title-sentence-system-(section)!⇒Tur0Sect,  ->  <br>* McshEngl.Tur0viewLogo'title-sentence-system-(section)!⇒Tur0Sect,
+  McshLag000041:1395  <h2 id="idLTur0rootH2">root-node of Tur0LogoView  ->  <h2 id="idLTur0rootH2">root-node of Tur0viewLogo
+  McshLag000041:1405  <br>* McshEngl.Tur0LogoView'root-node!⇒Tur0Root,  ->  <br>* McshEngl.Tur0viewLogo'root-node!⇒Tur0Root,
+  McshLag000041:1410  <h2 id="idLTur0spchH2">Tur0LogoView.speech  ->  <h2 id="idLTur0spchH2">Tur0viewLogo.speech
+  McshLag000041:1421  <br>* McshEngl.Tur0LogoView.speech!⇒Tur0Spch,  ->  <br>* McshEngl.Tur0viewLogo.speech!⇒Tur0Spch,
+  McshLag000041:1426  <h2 id="idLTur0textH2">Tur0LogoView.text  ->  <h2 id="idLTur0textH2">Tur0viewLogo.text
+  McshLag000041:1437  <br>* McshEngl.Tur0LogoView.text!⇒Tur0Text,  ->  <br>* McshEngl.Tur0viewLogo.text!⇒Tur0Text,
+  McshLag000042:348  <h2 id="idLAsa0sxtrH2">syntax-tree of Asa0LogoView  ->  <h2 id="idLAsa0sxtrH2">syntax-tree of Asa0viewLogo
+  McshLag000042:357  <br>* McshEngl.Asa0LogoView'syntax-tree,  ->  <br>* McshEngl.Asa0viewLogo'syntax-tree,
+  McshLag000042:362  <h2 id="idLAsa0nodeH2">node of Asa0LogoView  ->  <h2 id="idLAsa0nodeH2">node of Asa0viewLogo
+  McshLag000042:370  <br>* McshEngl.Asa0LogoView'node,  ->  <br>* McshEngl.Asa0viewLogo'node,
+  McshLag000042:376  <h2 id="idLAsa0untH2">unit of Asa0LogoView  ->  <h2 id="idLAsa0untH2">unit of Asa0viewLogo
+  McshLag000042:389  <br>* McshEngl.Asa0LogoView'unit!⇒Asa0Unit,  ->  <br>* McshEngl.Asa0viewLogo'unit!⇒Asa0Unit,
+  McshLag000042:705  <h2 id="idLAsa0utsmH2">unit-system of Asa0LogoView  ->  <h2 id="idLAsa0utsmH2">unit-system of Asa0viewLogo
+  McshLag000042:715  <br>* McshEngl.Asa0LogoView'unit-system!⇒Asa0UnitSyst,  ->  <br>* McshEngl.Asa0viewLogo'unit-system!⇒Asa0UnitSyst,
+  McshLag000042:805  <h2 id="idLAsa0nameH2">name-(decoding-unit) of Asa0LogoView  ->  <h2 id="idLAsa0nameH2">name-(decoding-unit) of Asa0viewLogo
+  McshLag000042:817  <br>* McshEngl.Asa0LogoView'name-(decoding-unit)!⇒Asa0Name,  ->  <br>* McshEngl.Asa0viewLogo'name-(decoding-unit)!⇒Asa0Name,
+  McshLag000042:853  <h2 id="idLAsa0ondoH2">argu-name of Asa0LogoView  ->  <h2 id="idLAsa0ondoH2">argu-name of Asa0viewLogo
+  McshLag000042:867  <br>* McshEngl.Asa0LogoView'argu-name!⇒Asa0argu,  ->  <br>* McshEngl.Asa0viewLogo'argu-name!⇒Asa0argu,
+  McshLag000042:1171  <h2 id="idLAsa0verbH2">verb-name of Asa0LogoView  ->  <h2 id="idLAsa0verbH2">verb-name of Asa0viewLogo
+  McshLag000042:1186  <br>* McshEngl.Asa0LogoView'verb-name!⇒Asa0verb,  ->  <br>* McshEngl.Asa0viewLogo'verb-name!⇒Asa0verb,
+  McshLag000042:1274  <h2 id="idLAsa0conjH2">conjunction-name of Asa0LogoView  ->  <h2 id="idLAsa0conjH2">conjunction-name of Asa0viewLogo
+  McshLag000042:1289  <br>* McshEngl.Asa0LogoView'conjunction-name!⇒Asa0conj,  ->  <br>* McshEngl.Asa0viewLogo'conjunction-name!⇒Asa0conj,
+  McshLag000042:1317  <h2 id="idLAsa0odsmH2">argu-phrase of Asa0LogoView  ->  <h2 id="idLAsa0odsmH2">argu-phrase of Asa0viewLogo
+  McshLag000042:1326  <br>* McshEngl.Asa0LogoView'argu-phrase,  ->  <br>* McshEngl.Asa0viewLogo'argu-phrase,
+  McshLag000042:1331  <h2 id="idLAsa0verbarguH2">verb-argument of Asa0LogoView  ->  <h2 id="idLAsa0verbarguH2">verb-argument of Asa0viewLogo
+  McshLag000042:1341  <br>* McshEngl.Asa0LogoView'verb-argument!⇒Asa0VerbArgu,  ->  <br>* McshEngl.Asa0viewLogo'verb-argument!⇒Asa0VerbArgu,
+  McshLag000042:1346  <h2 id="idLAsa0sntcH2">sentence of Asa0LogoView  ->  <h2 id="idLAsa0sntcH2">sentence of Asa0viewLogo
+  McshLag000042:1359  <br>* McshEngl.Asa0LogoView'sentence!⇒Asa0sent,  ->  <br>* McshEngl.Asa0viewLogo'sentence!⇒Asa0sent,
+  McshLag000042:1376  <h2 id="idLAsa0tNssH2">titleNo-sentence-system of Asa0LogoView  ->  <h2 id="idLAsa0tNssH2">titleNo-sentence-system of Asa0viewLogo
+  McshLag000042:1385  <br>* McshEngl.Asa0LogoView'titleNo-sentence-system,  ->  <br>* McshEngl.Asa0viewLogo'titleNo-sentence-system,
+  McshLag000042:1390  <h2 id="idLAsa0sctnH2">title-sentence-system-(section) of Asa0LogoView  ->  <h2 id="idLAsa0sctnH2">title-sentence-system-(section) of Asa0viewLogo
+  McshLag000042:1401  <br>* McshEngl.Asa0LogoView'title-sentence-system-(section)!⇒Asa0Sect,  ->  <br>* McshEngl.Asa0viewLogo'title-sentence-system-(section)!⇒Asa0Sect,
+  McshLag000042:1406  <h2 id="idLAsa0rootH2">root-node of Asa0LogoView  ->  <h2 id="idLAsa0rootH2">root-node of Asa0viewLogo
+  McshLag000042:1416  <br>* McshEngl.Asa0LogoView'root-node!⇒Asa0Root,  ->  <br>* McshEngl.Asa0viewLogo'root-node!⇒Asa0Root,
+  McshLag000042:1421  <h2 id="idLAsa0spchH2">Asa0LogoView.speech  ->  <h2 id="idLAsa0spchH2">Asa0viewLogo.speech
+  McshLag000042:1432  <br>* McshEngl.Asa0LogoView.speech!⇒Asa0Spch,  ->  <br>* McshEngl.Asa0viewLogo.speech!⇒Asa0Spch,
+  McshLag000042:1437  <h2 id="idLAsa0textH2">Asa0LogoView.text  ->  <h2 id="idLAsa0textH2">Asa0viewLogo.text
+  McshLag000042:1448  <br>* McshEngl.Asa0LogoView.text!⇒Asa0Text,  ->  <br>* McshEngl.Asa0viewLogo.text!⇒Asa0Text,
+  McshLag000043:333  <h2 id="idLKorasxtrH2">syntax-tree of Kora_logo_view  ->  <h2 id="idLKorasxtrH2">syntax-tree of KoraviewLogo
+  McshLag000043:342  <br>* McshEngl.Kora_logo_view'syntax-tree,  ->  <br>* McshEngl.KoraviewLogo'syntax-tree,
+  McshLag000043:347  <h2 id="idLKoranodeH2">node of Kora_logo_view  ->  <h2 id="idLKoranodeH2">node of KoraviewLogo
+  McshLag000043:355  <br>* McshEngl.Kora_logo_view'node,  ->  <br>* McshEngl.KoraviewLogo'node,
+  McshLag000043:361  <h2 id="idLKorauntH2">unit of Kora_logo_view  ->  <h2 id="idLKorauntH2">unit of KoraviewLogo
+  McshLag000043:374  <br>* McshEngl.Kora_logo_view'unit!⇒KoraUnit,  ->  <br>* McshEngl.KoraviewLogo'unit!⇒KoraUnit,
+  McshLag000043:1983  <h2 id="idLKorautsmH2">unit-system of Kora_logo_view  ->  <h2 id="idLKorautsmH2">unit-system of KoraviewLogo
+  McshLag000043:1993  <br>* McshEngl.Kora_logo_view'unit-system!⇒KoraUnitSyst,  ->  <br>* McshEngl.KoraviewLogo'unit-system!⇒KoraUnitSyst,
+  McshLag000043:2083  <h2 id="idLKoranameH2">name-(decoding-unit) of Kora_logo_view  ->  <h2 id="idLKoranameH2">name-(decoding-unit) of KoraviewLogo
+  McshLag000043:2095  <br>* McshEngl.Kora_logo_view'name-(decoding-unit)!⇒KoraName,  ->  <br>* McshEngl.KoraviewLogo'name-(decoding-unit)!⇒KoraName,
+  McshLag000043:2131  <h2 id="idLKoraondoH2">argu-name of Kora_logo_view  ->  <h2 id="idLKoraondoH2">argu-name of KoraviewLogo
+  McshLag000043:2145  <br>* McshEngl.Kora_logo_view'argu-name!⇒Koraargu,  ->  <br>* McshEngl.KoraviewLogo'argu-name!⇒Koraargu,
+  McshLag000043:2671  <h2 id="idLKoraverbH2">verb-name of Kora_logo_view  ->  <h2 id="idLKoraverbH2">verb-name of KoraviewLogo
+  McshLag000043:2766  <br>* McshEngl.Kora_logo_view'verb-name!⇒Koraverb,  ->  <br>* McshEngl.KoraviewLogo'verb-name!⇒Koraverb,
+  McshLag000043:2854  <h2 id="idLKoraconjH2">conjunction-name of Kora_logo_view  ->  <h2 id="idLKoraconjH2">conjunction-name of KoraviewLogo
+  McshLag000043:2952  <br>* McshEngl.Kora_logo_view'conjunction-name!⇒Koraconj,  ->  <br>* McshEngl.KoraviewLogo'conjunction-name!⇒Koraconj,
+  McshLag000043:3148  <h2 id="idLKoraodsmH2">argu-phrase of Kora_logo_view  ->  <h2 id="idLKoraodsmH2">argu-phrase of KoraviewLogo
+  McshLag000043:3157  <br>* McshEngl.Kora_logo_view'argu-phrase,  ->  <br>* McshEngl.KoraviewLogo'argu-phrase,
+  McshLag000043:3162  <h2 id="idLKoraverbarguH2">verb-argument of Kora_logo_view  ->  <h2 id="idLKoraverbarguH2">verb-argument of KoraviewLogo
+  McshLag000043:3172  <br>* McshEngl.Kora_logo_view'verb-argument!⇒KoraVerbArgu,  ->  <br>* McshEngl.KoraviewLogo'verb-argument!⇒KoraVerbArgu,
+  McshLag000043:3177  <h2 id="idLKorasntcH2">sentence of Kora_logo_view  ->  <h2 id="idLKorasntcH2">sentence of KoraviewLogo
+  McshLag000043:3190  <br>* McshEngl.Kora_logo_view'sentence!⇒Korasent,  ->  <br>* McshEngl.KoraviewLogo'sentence!⇒Korasent,
+  McshLag000043:3194  <h3 id="idLKorasntcbcexH3">basic-expression of Kora_logo_view  ->  <h3 id="idLKorasntcbcexH3">basic-expression of KoraviewLogo
+  McshLag000043:3206  <br>* McshEngl.Kora_logo_view'basic-expression!⇒KoraExpr,  ->  <br>* McshEngl.KoraviewLogo'basic-expression!⇒KoraExpr,
+  McshLag000043:3384  <h2 id="idLKoratNssH2">titleNo-sentence-system of Kora_logo_view  ->  <h2 id="idLKoratNssH2">titleNo-sentence-system of KoraviewLogo
+  McshLag000043:3393  <br>* McshEngl.Kora_logo_view'titleNo-sentence-system,  ->  <br>* McshEngl.KoraviewLogo'titleNo-sentence-system,
+  McshLag000043:3398  <h2 id="idLKorasctnH2">title-sentence-system-(section) of Kora_logo_view  ->  <h2 id="idLKorasctnH2">title-sentence-system-(section) of KoraviewLogo
+  McshLag000043:3409  <br>* McshEngl.Kora_logo_view'title-sentence-system-(section)!⇒KoraSect,  ->  <br>* McshEngl.KoraviewLogo'title-sentence-system-(section)!⇒KoraSect,
+  McshLag000043:3414  <h2 id="idLKorarootH2">root-node of Kora_logo_view  ->  <h2 id="idLKorarootH2">root-node of KoraviewLogo
+  McshLag000043:3424  <br>* McshEngl.Kora_logo_view'root-node!⇒KoraRoot,  ->  <br>* McshEngl.KoraviewLogo'root-node!⇒KoraRoot,
+  McshLag000043:3429  <h2 id="idLKoraspchH2">Kora_logo_view.speech  ->  <h2 id="idLKoraspchH2">KoraviewLogo.speech
+  McshLag000043:3440  <br>* McshEngl.Kora_logo_view.speech!⇒KoraSpch,  ->  <br>* McshEngl.KoraviewLogo.speech!⇒KoraSpch,
+  McshLag000043:3445  <h2 id="idLKoratextH2">Kora_logo_view.text  ->  <h2 id="idLKoratextH2">KoraviewLogo.text
+  McshLag000043:3456  <br>* McshEngl.Kora_logo_view.text!⇒KoraText,  ->  <br>* McshEngl.KoraviewLogo.text!⇒KoraText,
+  McshStn000034:331  <h3 id="idLVnmasxtrH3">syntax-tree of logoVnma  ->  <h3 id="idLVnmasxtrH3">syntax-tree of VnmaviewLogo
+  McshStn000034:337  <br>* McshEngl.logoVnma'syntax_tree,  ->  <br>* McshEngl.VnmaviewLogo'syntax_tree,
+  McshStn000034:338  <br>* McshEngl.logoVnma'syntax-tree!⇒logoVnma'syntax_tree,  ->  <br>* McshEngl.VnmaviewLogo'syntax-tree!⇒VnmaviewLogo'syntax_tree,
+  McshStn000034:343  <h3 id="idLVnmanodeH3">node of logoVnma  ->  <h3 id="idLVnmanodeH3">node of VnmaviewLogo
+  McshStn000034:349  <br>* McshEngl.logoVnma'node,  ->  <br>* McshEngl.VnmaviewLogo'node,
+  McshStn000034:354  <h3 id="idLVnmaunitH3">unit of logoVnma  ->  <h3 id="idLVnmaunitH3">unit of VnmaviewLogo
+  McshStn000034:363  <br>* McshEngl.unit-of-logoVnma!⇒VnmaUnit,  ->  <br>* McshEngl.unit-of-VnmaviewLogo!⇒VnmaUnit,
+  McshStn000034:364  <br>* McshEngl.VnmaUnit!=unit-of-logoVnma,  ->  <br>* McshEngl.VnmaUnit!=unit-of-VnmaviewLogo,
+  McshStn000034:365  <br>* McshEngl.logoVnma'unit!⇒VnmaUnit,  ->  <br>* McshEngl.VnmaviewLogo'unit!⇒VnmaUnit,
+  McshStn000034:665  <br>* McshEngl.logoVnma'phoneme!⇒VnmaPhnm,  ->  <br>* McshEngl.VnmaviewLogo'phoneme!⇒VnmaPhnm,
+  McshStn000034:1629  <br>* McshEngl.logoVnma'letter!⇒VnmaLetr,  ->  <br>* McshEngl.VnmaviewLogo'letter!⇒VnmaLetr,
+  McshStn000034:2434  <h3 id="idLVnmautsmH3">unit-system of logoVnma  ->  <h3 id="idLVnmautsmH3">unit-system of VnmaviewLogo
+  McshStn000034:2442  <br>* McshEngl.logoVnma'unit_system,  ->  <br>* McshEngl.VnmaviewLogo'unit_system,
+  McshStn000034:2443  <br>* McshEngl.logoVnma'unit-system!⇒logoVnma'unit_system,  ->  <br>* McshEngl.VnmaviewLogo'unit-system!⇒VnmaviewLogo'unit_system,
+  McshStn000034:2447  <h4 id="idLVnmasylbH4">syllable of logoVnma  ->  <h4 id="idLVnmasylbH4">syllable of VnmaviewLogo
+  McshStn000034:2522  <br>* McshEngl.logoVnma'syllable!⇒VnmaSylb,  ->  <br>* McshEngl.VnmaviewLogo'syllable!⇒VnmaSylb,
+  McshStn000034:2523  <br>* McshEngl.logoVnma'unit-system'syllable!⇒VnmaSylb,  ->  <br>* McshEngl.VnmaviewLogo'unit-system'syllable!⇒VnmaSylb,
+  McshStn000034:2682  <h4 id="idLVnmatoneH4">tone-of-syllable of logoVnma  ->  <h4 id="idLVnmatoneH4">tone-of-syllable of VnmaviewLogo
+  McshStn000034:2726  <br>* McshEngl.logoVnma'unit-system'tone-of-syllable!⇒VnmaTone,  ->  <br>* McshEngl.VnmaviewLogo'unit-system'tone-of-syllable!⇒VnmaTone,
+  McshStn000034:2727  <br>* McshEngl.logoVnma'tone-of-syllable!⇒VnmaTone,  ->  <br>* McshEngl.VnmaviewLogo'tone-of-syllable!⇒VnmaTone,
+  McshStn000034:2883  <h4 id="idLVnmawordH4">word of logoVnma  ->  <h4 id="idLVnmawordH4">word of VnmaviewLogo
+  McshStn000034:2894  <br>* McshEngl.logoVnma'word,  ->  <br>* McshEngl.VnmaviewLogo'word,
+  McshStn000034:2896  <br>* McshEngl.logoVnma'unit-system'word,  ->  <br>* McshEngl.VnmaviewLogo'unit-system'word,
+  McshStn000034:2902  <h3 id="idLVnmanameH3">name of logoVnma  ->  <h3 id="idLVnmanameH3">name of VnmaviewLogo
+  McshStn000034:2908  <br>* McshEngl.logoVnma'name,  ->  <br>* McshEngl.VnmaviewLogo'name,
+  McshStn000034:2913  <h3 id="idLVnmaargoH3">argu-name of logoVnma  ->  <h3 id="idLVnmaargoH3">argu-name of VnmaviewLogo
+  McshStn000034:2926  <br>* McshEngl.logoVnma'argu!⇒Vnmaargu,  ->  <br>* McshEngl.VnmaviewLogo'argu!⇒Vnmaargu,
+  McshStn000034:2927  <br>* McshEngl.logoVnma'argu-name!⇒Vnmaargu,  ->  <br>* McshEngl.VnmaviewLogo'argu-name!⇒Vnmaargu,
+  McshStn000034:2991  <br>* McshEngl.logoVnma'noun!⇒Vnmanoun,  ->  <br>* McshEngl.VnmaviewLogo'noun!⇒Vnmanoun,
+  McshStn000034:3058  <br>* McshEngl.logoVnma'adjective!⇒Vnmaadje,  ->  <br>* McshEngl.VnmaviewLogo'adjective!⇒Vnmaadje,
+  McshStn000034:3123  <br>* McshEngl.logoVnma'adverb!⇒Vnmaadve,  ->  <br>* McshEngl.VnmaviewLogo'adverb!⇒Vnmaadve,
+  McshStn000034:3190  <h3 id="idLVnmaverbH3">verb-name of logoVnma  ->  <h3 id="idLVnmaverbH3">verb-name of VnmaviewLogo
+  McshStn000034:3275  <br>* McshEngl.logoVnma'verb!⇒Vnmaverb,  ->  <br>* McshEngl.VnmaviewLogo'verb!⇒Vnmaverb,
+  McshStn000034:3277  <br>* McshEngl.logoVnma'verb-name!⇒Vnmaverb,  ->  <br>* McshEngl.VnmaviewLogo'verb-name!⇒Vnmaverb,
+  McshStn000034:3284  <h3 id="idLVnmaconjH3">conjunction-name of logoVnma  ->  <h3 id="idLVnmaconjH3">conjunction-name of VnmaviewLogo
+  McshStn000034:3359  <br>* McshEngl.logoVnma'conjunction!⇒Vnmaconj,  ->  <br>* McshEngl.VnmaviewLogo'conjunction!⇒Vnmaconj,
+  McshStn000034:3361  <br>* McshEngl.logoVnma'conjunction-name!⇒Vnmaconj,  ->  <br>* McshEngl.VnmaviewLogo'conjunction-name!⇒Vnmaconj,
+  McshStn000034:3469  <h3 id="idLVnmaagsmH3">argu-phrase of logoVnma  ->  <h3 id="idLVnmaagsmH3">argu-phrase of VnmaviewLogo
+  McshStn000034:3475  <br>* McshEngl.logoVnma'argu_phrase,  ->  <br>* McshEngl.VnmaviewLogo'argu_phrase,
+  McshStn000034:3476  <br>* McshEngl.logoVnma'argu-phrase!⇒logoVnma'argu_phrase,  ->  <br>* McshEngl.VnmaviewLogo'argu-phrase!⇒VnmaviewLogo'argu_phrase,
+  McshStn000034:3481  <h3 id="idLVnmavbatH3">verb-argument of logoVnma  ->  <h3 id="idLVnmavbatH3">verb-argument of VnmaviewLogo
+  McshStn000034:3594  <br>* McshEngl.logoVnma'verb-argument!⇒Vnmaverbargt,  ->  <br>* McshEngl.VnmaviewLogo'verb-argument!⇒Vnmaverbargt,
+  McshStn000034:3599  <h3 id="idLVnmasentH3">sentence of logoVnma  ->  <h3 id="idLVnmasentH3">sentence of VnmaviewLogo
+  McshStn000034:3676  <br>* McshEngl.logoVnma'sentence!⇒Vnmasent,  ->  <br>* McshEngl.VnmaviewLogo'sentence!⇒Vnmasent,
+  McshStn000034:3682  <h3 id="idLVnmasectH3">section of logoVnma  ->  <h3 id="idLVnmasectH3">section of VnmaviewLogo
+  McshStn000034:3688  <br>* McshEngl.logoVnma'section,  ->  <br>* McshEngl.VnmaviewLogo'section,
+  McshStn000034:3693  <h3 id="idLVnmartndH3">root-node of logoVnma  ->  <h3 id="idLVnmartndH3">root-node of VnmaviewLogo
+  McshStn000034:3699  <br>* McshEngl.logoVnma'root_node,  ->  <br>* McshEngl.VnmaviewLogo'root_node,
+  McshStn000034:3700  <br>* McshEngl.logoVnma'root-node!⇒logoVnma'root_node,  ->  <br>* McshEngl.VnmaviewLogo'root-node!⇒VnmaviewLogo'root_node,
+  McshStn000035:295  <h3 id="idLItlnsxtrH3">syntax-tree of logoItln  ->  <h3 id="idLItlnsxtrH3">syntax-tree of ItlnviewLogo
+  McshStn000035:301  <br>* McshEngl.logoItln'syntax_tree,  ->  <br>* McshEngl.ItlnviewLogo'syntax_tree,
+  McshStn000035:302  <br>* McshEngl.logoItln'syntax-tree!⇒logoItln'syntax_tree,  ->  <br>* McshEngl.ItlnviewLogo'syntax-tree!⇒ItlnviewLogo'syntax_tree,
+  McshStn000035:307  <h3 id="idLItlnnodeH3">node of logoItln  ->  <h3 id="idLItlnnodeH3">node of ItlnviewLogo
+  McshStn000035:313  <br>* McshEngl.logoItln'node,  ->  <br>* McshEngl.ItlnviewLogo'node,
+  McshStn000035:318  <h3 id="idLItlnunitH3">unit of logoItln  ->  <h3 id="idLItlnunitH3">unit of ItlnviewLogo
+  McshStn000035:327  <br>* McshEngl.unit-of-logoItln!⇒ItlnUnit,  ->  <br>* McshEngl.unit-of-ItlnviewLogo!⇒ItlnUnit,
+  McshStn000035:328  <br>* McshEngl.ItlnUnit!=unit-of-logoItln,  ->  <br>* McshEngl.ItlnUnit!=unit-of-ItlnviewLogo,
+  McshStn000035:329  <br>* McshEngl.logoItln'unit!⇒ItlnUnit,  ->  <br>* McshEngl.ItlnviewLogo'unit!⇒ItlnUnit,
+  McshStn000035:525  <br>* McshEngl.logoItln'phoneme!⇒ItlnPhnm,  ->  <br>* McshEngl.ItlnviewLogo'phoneme!⇒ItlnPhnm,
+  McshStn000035:1203  <br>* McshEngl.logoItln'letter!⇒ItlnLetr,  ->  <br>* McshEngl.ItlnviewLogo'letter!⇒ItlnLetr,
+  McshStn000035:1717  <h3 id="idLItlnutsmH3">unit-system of logoItln  ->  <h3 id="idLItlnutsmH3">unit-system of ItlnviewLogo
+  McshStn000035:1725  <br>* McshEngl.logoItln'unit_system,  ->  <br>* McshEngl.ItlnviewLogo'unit_system,
+  McshStn000035:1726  <br>* McshEngl.logoItln'unit-system!⇒logoItln'unit_system,  ->  <br>* McshEngl.ItlnviewLogo'unit-system!⇒ItlnviewLogo'unit_system,
+  McshStn000035:1730  <h4 id="idLItlnsylbH4">syllable of logoItln  ->  <h4 id="idLItlnsylbH4">syllable of ItlnviewLogo
+  McshStn000035:1749  <br>* McshEngl.logoItln'syllable!⇒ItlnSylb,  ->  <br>* McshEngl.ItlnviewLogo'syllable!⇒ItlnSylb,
+  McshStn000035:1750  <br>* McshEngl.logoItln'unit-system'syllable!⇒ItlnSylb,  ->  <br>* McshEngl.ItlnviewLogo'unit-system'syllable!⇒ItlnSylb,
+  McshStn000035:1755  <h4 id="idLItlnwordH4">word of logoItln  ->  <h4 id="idLItlnwordH4">word of ItlnviewLogo
+  McshStn000035:1828  <br>* McshEngl.logoItln'word!⇒ItlnWord,  ->  <br>* McshEngl.ItlnviewLogo'word!⇒ItlnWord,
+  McshStn000035:1830  <br>* McshEngl.logoItln'unit-system'word!⇒ItlnWord,  ->  <br>* McshEngl.ItlnviewLogo'unit-system'word!⇒ItlnWord,
+  McshStn000035:1851  <h3 id="idLItlnnameH3">name of logoItln  ->  <h3 id="idLItlnnameH3">name of ItlnviewLogo
+  McshStn000035:1860  <br>* McshEngl.logoItln'name,  ->  <br>* McshEngl.ItlnviewLogo'name,
+  McshStn000035:1865  <h3 id="idLItlnargoH3">argu-name of logoItln  ->  <h3 id="idLItlnargoH3">argu-name of ItlnviewLogo
+  McshStn000035:1877  <br>* McshEngl.logoItln'argu-name!⇒Itlnargu,  ->  <br>* McshEngl.ItlnviewLogo'argu-name!⇒Itlnargu,
+  McshStn000035:1982  <br>* McshEngl.logoItln'noun!⇒Itlnnoun,  ->  <br>* McshEngl.ItlnviewLogo'noun!⇒Itlnnoun,
+  McshStn000035:2105  <br>* McshEngl.logoItln'adjective!⇒Itlnadje,  ->  <br>* McshEngl.ItlnviewLogo'adjective!⇒Itlnadje,
+  McshStn000035:2223  <br>* McshEngl.logoItln'adverb!⇒Itlnadve,  ->  <br>* McshEngl.ItlnviewLogo'adverb!⇒Itlnadve,
+  McshStn000035:2419  <h3 id="idLItlnverbH3">verb-name of logoItln  ->  <h3 id="idLItlnverbH3">verb-name of ItlnviewLogo
+  McshStn000035:2510  <br>* McshEngl.logoItln'verb!⇒Itlnverb,  ->  <br>* McshEngl.ItlnviewLogo'verb!⇒Itlnverb,
+  McshStn000035:2512  <br>* McshEngl.logoItln'verb-name!⇒Itlnverb,  ->  <br>* McshEngl.ItlnviewLogo'verb-name!⇒Itlnverb,
+  McshStn000035:3101  <h3 id="idLItlnconjH3">conjunction-name of logoItln  ->  <h3 id="idLItlnconjH3">conjunction-name of ItlnviewLogo
+  McshStn000035:3160  <br>* McshEngl.logoItln'conjunction!⇒Itlnconj,  ->  <br>* McshEngl.ItlnviewLogo'conjunction!⇒Itlnconj,
+  McshStn000035:3162  <br>* McshEngl.logoItln'conjunction-name!⇒Itlnconj,  ->  <br>* McshEngl.ItlnviewLogo'conjunction-name!⇒Itlnconj,
+  McshStn000035:3210  <h3 id="idLItlnagsmH3">argu-phrase of logoItln  ->  <h3 id="idLItlnagsmH3">argu-phrase of ItlnviewLogo
+  McshStn000035:3216  <br>* McshEngl.logoItln'argu_phrase,  ->  <br>* McshEngl.ItlnviewLogo'argu_phrase,
+  McshStn000035:3217  <br>* McshEngl.logoItln'argu-phrase!⇒logoItln'argu_phrase,  ->  <br>* McshEngl.ItlnviewLogo'argu-phrase!⇒ItlnviewLogo'argu_phrase,
+  McshStn000035:3222  <h3 id="idLItlnvbatH3">verb-argument of logoItln  ->  <h3 id="idLItlnvbatH3">verb-argument of ItlnviewLogo
+  McshStn000035:3309  <br>* McshEngl.logoItln'verb-argument!⇒ItlnVerbArgu,  ->  <br>* McshEngl.ItlnviewLogo'verb-argument!⇒ItlnVerbArgu,
+  McshStn000035:3314  <h3 id="idLItlnsentH3">sentence of logoItln  ->  <h3 id="idLItlnsentH3">sentence of ItlnviewLogo
+  McshStn000035:3352  <br>* McshEngl.logoItln'sentence!⇒Itlnsent,  ->  <br>* McshEngl.ItlnviewLogo'sentence!⇒Itlnsent,
+  McshStn000035:3366  <br>* McshEngl.logoItln'basic-expression!⇒ItlnExpr,  ->  <br>* McshEngl.ItlnviewLogo'basic-expression!⇒ItlnExpr,
+  McshStn000035:3533  <h3 id="idLItlnsectH3">section of logoItln  ->  <h3 id="idLItlnsectH3">section of ItlnviewLogo
+  McshStn000035:3539  <br>* McshEngl.logoItln'section,  ->  <br>* McshEngl.ItlnviewLogo'section,
+  McshStn000035:3544  <h3 id="idLItlnrtndH3">root-node of logoItln  ->  <h3 id="idLItlnrtndH3">root-node of ItlnviewLogo
+  McshStn000035:3550  <br>* McshEngl.logoItln'root_node,  ->  <br>* McshEngl.ItlnviewLogo'root_node,
+  McshStn000035:3551  <br>* McshEngl.logoItln'root-node!⇒logoItln'root_node,  ->  <br>* McshEngl.ItlnviewLogo'root-node!⇒ItlnviewLogo'root_node,
+  McshStn000037:292  <h3 id="idLFracsxtrH3">syntax-tree of logoFrac  ->  <h3 id="idLFracsxtrH3">syntax-tree of FracviewLogo
+  McshStn000037:298  <br>* McshEngl.logoFrac'syntax_tree,  ->  <br>* McshEngl.FracviewLogo'syntax_tree,
+  McshStn000037:299  <br>* McshEngl.logoFrac'syntax-tree!⇒logoFrac'syntax_tree,  ->  <br>* McshEngl.FracviewLogo'syntax-tree!⇒FracviewLogo'syntax_tree,
+  McshStn000037:304  <h3 id="idLFracnodeH3">node of logoFrac  ->  <h3 id="idLFracnodeH3">node of FracviewLogo
+  McshStn000037:310  <br>* McshEngl.logoFrac'node,  ->  <br>* McshEngl.FracviewLogo'node,
+  McshStn000037:315  <h3 id="idLFracunitH3">unit of logoFrac  ->  <h3 id="idLFracunitH3">unit of FracviewLogo
+  McshStn000037:324  <br>* McshEngl.unit-of-logoFrac!⇒FracUnit,  ->  <br>* McshEngl.unit-of-FracviewLogo!⇒FracUnit,
+  McshStn000037:325  <br>* McshEngl.FracUnit!=unit-of-logoFrac,  ->  <br>* McshEngl.FracUnit!=unit-of-FracviewLogo,
+  McshStn000037:326  <br>* McshEngl.logoFrac'unit!⇒FracUnit,  ->  <br>* McshEngl.FracviewLogo'unit!⇒FracUnit,
+  McshStn000037:395  <br>* McshEngl.logoFrac'phoneme!⇒FracPhnm,  ->  <br>* McshEngl.FracviewLogo'phoneme!⇒FracPhnm,
+  McshStn000037:1407  <br>* McshEngl.logoFrac'letter!⇒FracLetr,  ->  <br>* McshEngl.FracviewLogo'letter!⇒FracLetr,
+  McshStn000037:1883  <h3 id="idLFracutsmH3">unit-system of logoFrac  ->  <h3 id="idLFracutsmH3">unit-system of FracviewLogo
+  McshStn000037:1891  <br>* McshEngl.logoFrac'unit_system,  ->  <br>* McshEngl.FracviewLogo'unit_system,
+  McshStn000037:1892  <br>* McshEngl.logoFrac'unit-system!⇒logoFrac'unit_system,  ->  <br>* McshEngl.FracviewLogo'unit-system!⇒FracviewLogo'unit_system,
+  McshStn000037:1896  <h4 id="idLFracsylbH4">syllable of logoFrac  ->  <h4 id="idLFracsylbH4">syllable of FracviewLogo
+  McshStn000037:1905  <br>* McshEngl.logoFrac'syllable!⇒FracSylb,  ->  <br>* McshEngl.FracviewLogo'syllable!⇒FracSylb,
+  McshStn000037:1906  <br>* McshEngl.logoFrac'unit-system'syllable!⇒FracSylb,  ->  <br>* McshEngl.FracviewLogo'unit-system'syllable!⇒FracSylb,
+  McshStn000037:1935  <h4 id="idLFracwordH4">word of logoFrac  ->  <h4 id="idLFracwordH4">word of FracviewLogo
+  McshStn000037:1943  <br>* McshEngl.logoFrac'word,  ->  <br>* McshEngl.FracviewLogo'word,
+  McshStn000037:1945  <br>* McshEngl.logoFrac'unit-system'word,  ->  <br>* McshEngl.FracviewLogo'unit-system'word,
+  McshStn000037:1951  <h3 id="idLFracnameH3">name of logoFrac  ->  <h3 id="idLFracnameH3">name of FracviewLogo
+  McshStn000037:1957  <br>* McshEngl.logoFrac'name,  ->  <br>* McshEngl.FracviewLogo'name,
+  McshStn000037:1962  <h3 id="idLFracargoH3">argu-name of logoFrac  ->  <h3 id="idLFracargoH3">argu-name of FracviewLogo
+  McshStn000037:1970  <br>* McshEngl.logoFrac'argu_name!⇒Fracargu,  ->  <br>* McshEngl.FracviewLogo'argu_name!⇒Fracargu,
+  McshStn000037:1971  <br>* McshEngl.logoFrac'argu-name!⇒Fracargu,  ->  <br>* McshEngl.FracviewLogo'argu-name!⇒Fracargu,
+  McshStn000037:1997  <br>* McshEngl.logoFrac'argu-name.pronoun!⇒Fracargu.pronoun,  ->  <br>* McshEngl.FracviewLogo'argu-name.pronoun!⇒Fracargu.pronoun,
+  McshStn000037:2008  <h3 id="idLFracverbH3">verb-name of logoFrac  ->  <h3 id="idLFracverbH3">verb-name of FracviewLogo
+  McshStn000037:2016  <br>* McshEngl.logoFrac'verb-name!⇒Fracverb,  ->  <br>* McshEngl.FracviewLogo'verb-name!⇒Fracverb,
+  McshStn000037:2021  <h3 id="idLFracconjH3">conjunction-name of logoFrac  ->  <h3 id="idLFracconjH3">conjunction-name of FracviewLogo
+  McshStn000037:2029  <br>* McshEngl.logoFrac'conjunction-name!⇒Fracconj,  ->  <br>* McshEngl.FracviewLogo'conjunction-name!⇒Fracconj,
+  McshStn000037:2034  <h3 id="idLFracagsmH3">argu-phrase of logoFrac  ->  <h3 id="idLFracagsmH3">argu-phrase of FracviewLogo
+  McshStn000037:2040  <br>* McshEngl.logoFrac'argu_phrase,  ->  <br>* McshEngl.FracviewLogo'argu_phrase,
+  McshStn000037:2041  <br>* McshEngl.logoFrac'argu-phrase!⇒logoFrac'argu_phrase,  ->  <br>* McshEngl.FracviewLogo'argu-phrase!⇒FracviewLogo'argu_phrase,
+  McshStn000037:2046  <h3 id="idLFracvbatH3">verb-argument of logoFrac  ->  <h3 id="idLFracvbatH3">verb-argument of FracviewLogo
+  McshStn000037:2052  <br>* McshEngl.logoFrac'verb_argument,  ->  <br>* McshEngl.FracviewLogo'verb_argument,
+  McshStn000037:2053  <br>* McshEngl.logoFrac'verb-argument!⇒logoFrac'verb_argument,  ->  <br>* McshEngl.FracviewLogo'verb-argument!⇒FracviewLogo'verb_argument,
+  McshStn000037:2058  <h3 id="idLFracsentH3">sentence of logoFrac  ->  <h3 id="idLFracsentH3">sentence of FracviewLogo
+  McshStn000037:2064  <br>* McshEngl.logoFrac'sentence,  ->  <br>* McshEngl.FracviewLogo'sentence,
+  McshStn000037:2069  <h3 id="idLFracsectH3">section of logoFrac  ->  <h3 id="idLFracsectH3">section of FracviewLogo
+  McshStn000037:2075  <br>* McshEngl.logoFrac'section,  ->  <br>* McshEngl.FracviewLogo'section,
+  McshStn000037:2080  <h3 id="idLFracrtndH3">root-node of logoFrac  ->  <h3 id="idLFracrtndH3">root-node of FracviewLogo
+  McshStn000037:2086  <br>* McshEngl.logoFrac'root_node,  ->  <br>* McshEngl.FracviewLogo'root_node,
+  McshStn000037:2087  <br>* McshEngl.logoFrac'root-node!⇒logoFrac'root_node,  ->  <br>* McshEngl.FracviewLogo'root-node!⇒FracviewLogo'root_node,
+  McshStn000038:301  <h3 id="idSbulsxtrH3">syntax-tree of logoSbul  ->  <h3 id="idSbulsxtrH3">syntax-tree of SbulviewLogo
+  McshStn000038:307  <br>* McshEngl.logoSbul'syntax_tree,  ->  <br>* McshEngl.SbulviewLogo'syntax_tree,
+  McshStn000038:308  <br>* McshEngl.logoSbul'syntax-tree!⇒logoSbul'syntax_tree,  ->  <br>* McshEngl.SbulviewLogo'syntax-tree!⇒SbulviewLogo'syntax_tree,
+  McshStn000038:313  <h3 id="idSbulnodeH3">node of logoSbul  ->  <h3 id="idSbulnodeH3">node of SbulviewLogo
+  McshStn000038:319  <br>* McshEngl.logoSbul'node,  ->  <br>* McshEngl.SbulviewLogo'node,
+  McshStn000038:324  <h3 id="idSbulunitH3">unit of logoSbul  ->  <h3 id="idSbulunitH3">unit of SbulviewLogo
+  McshStn000038:333  <br>* McshEngl.unit-of-logoSbul!⇒SbulUnit,  ->  <br>* McshEngl.unit-of-SbulviewLogo!⇒SbulUnit,
+  McshStn000038:334  <br>* McshEngl.SbulUnit!=unit-of-logoSbul,  ->  <br>* McshEngl.SbulUnit!=unit-of-SbulviewLogo,
+  McshStn000038:335  <br>* McshEngl.logoSbul'unit!⇒SbulUnit,  ->  <br>* McshEngl.SbulviewLogo'unit!⇒SbulUnit,
+  McshStn000038:379  <br>* McshEngl.logoSbul'phoneme!⇒SbulPhnm,  ->  <br>* McshEngl.SbulviewLogo'phoneme!⇒SbulPhnm,
+  McshStn000038:911  <br>* McshEngl.logoSbul'letter!⇒Sbulletr,  ->  <br>* McshEngl.SbulviewLogo'letter!⇒Sbulletr,
+  McshStn000038:978  <h3 id="idSbulutsmH3">unit-system of logoSbul  ->  <h3 id="idSbulutsmH3">unit-system of SbulviewLogo
+  McshStn000038:986  <br>* McshEngl.logoSbul'unit_system,  ->  <br>* McshEngl.SbulviewLogo'unit_system,
+  McshStn000038:987  <br>* McshEngl.logoSbul'unit-system!⇒logoSbul'unit_system,  ->  <br>* McshEngl.SbulviewLogo'unit-system!⇒SbulviewLogo'unit_system,
+  McshStn000038:991  <h4 id="idSbulsylbH4">syllable of logoSbul  ->  <h4 id="idSbulsylbH4">syllable of SbulviewLogo
+  McshStn000038:1000  <br>* McshEngl.logoSbul'syllable!⇒SbulSylb,  ->  <br>* McshEngl.SbulviewLogo'syllable!⇒SbulSylb,
+  McshStn000038:1001  <br>* McshEngl.logoSbul'unit-system'syllable!⇒SbulSylb,  ->  <br>* McshEngl.SbulviewLogo'unit-system'syllable!⇒SbulSylb,
+  McshStn000038:1030  <h4 id="idSbulwordH4">word of logoSbul  ->  <h4 id="idSbulwordH4">word of SbulviewLogo
+  McshStn000038:1038  <br>* McshEngl.logoSbul'word,  ->  <br>* McshEngl.SbulviewLogo'word,
+  McshStn000038:1040  <br>* McshEngl.logoSbul'unit-system'word,  ->  <br>* McshEngl.SbulviewLogo'unit-system'word,
+  McshStn000038:1046  <h3 id="idSbulnameH3">name of logoSbul  ->  <h3 id="idSbulnameH3">name of SbulviewLogo
+  McshStn000038:1055  <br>* McshEngl.logoSbul'name!⇒SbulName,  ->  <br>* McshEngl.SbulviewLogo'name!⇒SbulName,
+  McshStn000038:1060  <h3 id="idSbulargoH3">argu-name of logoSbul  ->  <h3 id="idSbulargoH3">argu-name of SbulviewLogo
+  McshStn000038:1071  <br>* McshEngl.logoSbul'argu-name!⇒Sbulargu,  ->  <br>* McshEngl.SbulviewLogo'argu-name!⇒Sbulargu,
+  McshStn000038:1102  <br>* McshEngl.logoSbul'noun!⇒Sbulnoun,  ->  <br>* McshEngl.SbulviewLogo'noun!⇒Sbulnoun,
+  McshStn000038:1168  <br>* McshEngl.logoSbul'adjective!⇒Sbuladje,  ->  <br>* McshEngl.SbulviewLogo'adjective!⇒Sbuladje,
+  McshStn000038:1228  <br>* McshEngl.logoSbul'adverb!⇒Sbuladve,  ->  <br>* McshEngl.SbulviewLogo'adverb!⇒Sbuladve,
+  McshStn000038:1269  <br>* McshEngl.logoSbul'personal-pronoun!=SbulPersPron,  ->  <br>* McshEngl.SbulviewLogo'personal-pronoun!=SbulPersPron,
+  McshStn000038:1277  <h3 id="idSbulverbH3">verb-name of logoSbul  ->  <h3 id="idSbulverbH3">verb-name of SbulviewLogo
+  McshStn000038:1335  <br>* McshEngl.logoSbul'verb!⇒Sbulverb,  ->  <br>* McshEngl.SbulviewLogo'verb!⇒Sbulverb,
+  McshStn000038:1336  <br>* McshEngl.logoSbul'verb-name!⇒Sbulverb,  ->  <br>* McshEngl.SbulviewLogo'verb-name!⇒Sbulverb,
+  McshStn000038:1341  <h3 id="idSbulconjH3">conjunction-name of logoSbul  ->  <h3 id="idSbulconjH3">conjunction-name of SbulviewLogo
+  McshStn000038:1397  <br>* McshEngl.logoSbul'conjunction-name!⇒Sbulconj,  ->  <br>* McshEngl.SbulviewLogo'conjunction-name!⇒Sbulconj,
+  McshStn000038:1402  <h3 id="idSbulagsmH3">argu-phrase of logoSbul  ->  <h3 id="idSbulagsmH3">argu-phrase of SbulviewLogo
+  McshStn000038:1408  <br>* McshEngl.logoSbul'argu_phrase,  ->  <br>* McshEngl.SbulviewLogo'argu_phrase,
+  McshStn000038:1409  <br>* McshEngl.logoSbul'argu-phrase!⇒logoSbul'argu_phrase,  ->  <br>* McshEngl.SbulviewLogo'argu-phrase!⇒SbulviewLogo'argu_phrase,
+  McshStn000038:1414  <h3 id="idSbulvbatH3">verb-argument of logoSbul  ->  <h3 id="idSbulvbatH3">verb-argument of SbulviewLogo
+  McshStn000038:1420  <br>* McshEngl.logoSbul'verb_argument,  ->  <br>* McshEngl.SbulviewLogo'verb_argument,
+  McshStn000038:1421  <br>* McshEngl.logoSbul'verb-argument!⇒logoSbul'verb_argument,  ->  <br>* McshEngl.SbulviewLogo'verb-argument!⇒SbulviewLogo'verb_argument,
+  McshStn000038:1426  <h3 id="idSbulsentH3">sentence of logoSbul  ->  <h3 id="idSbulsentH3">sentence of SbulviewLogo
+  McshStn000038:1432  <br>* McshEngl.logoSbul'sentence,  ->  <br>* McshEngl.SbulviewLogo'sentence,
+  McshStn000038:1436  <h4 id="idSbulsentBcexH4">basic-expression of logoSbul  ->  <h4 id="idSbulsentBcexH4">basic-expression of SbulviewLogo
+  McshStn000038:1445  <br>* McshEngl.logoSbul'basic-expression!⇒SbulExpr,  ->  <br>* McshEngl.SbulviewLogo'basic-expression!⇒SbulExpr,
+  McshStn000038:1446  <br>* McshEngl.logoSbul'sentence'basic-expression!⇒SbulExpr,  ->  <br>* McshEngl.SbulviewLogo'sentence'basic-expression!⇒SbulExpr,
+  McshStn000038:1602  <h3 id="idSbulsectH3">section of logoSbul  ->  <h3 id="idSbulsectH3">section of SbulviewLogo
+  McshStn000038:1608  <br>* McshEngl.logoSbul'section,  ->  <br>* McshEngl.SbulviewLogo'section,
+  McshStn000038:1613  <h3 id="idSbulrtndH3">root-node of logoSbul  ->  <h3 id="idSbulrtndH3">root-node of SbulviewLogo
+  McshStn000038:1619  <br>* McshEngl.logoSbul'root_node,  ->  <br>* McshEngl.SbulviewLogo'root_node,
+  McshStn000038:1620  <br>* McshEngl.logoSbul'root-node!⇒logoSbul'root_node,  ->  <br>* McshEngl.SbulviewLogo'root-node!⇒SbulviewLogo'root_node,
+  McshStn000039:328  <h3 id="idLSqipsxtrH3">syntax-tree of SqipLogo  ->  <h3 id="idLSqipsxtrH3">syntax-tree of SqipviewLogo
+  McshStn000039:334  <br>* McshEngl.SqipLogo'syntax_tree,  ->  <br>* McshEngl.SqipviewLogo'syntax_tree,
+  McshStn000039:335  <br>* McshEngl.SqipLogo'syntax-tree!⇒SqipLogo'syntax_tree,  ->  <br>* McshEngl.SqipviewLogo'syntax-tree!⇒SqipviewLogo'syntax_tree,
+  McshStn000039:340  <h3 id="idLSqipnodeH3">node of SqipLogo  ->  <h3 id="idLSqipnodeH3">node of SqipviewLogo
+  McshStn000039:346  <br>* McshEngl.SqipLogo'node,  ->  <br>* McshEngl.SqipviewLogo'node,
+  McshStn000039:351  <h3 id="idLSqipunitH3">unit of SqipLogo  ->  <h3 id="idLSqipunitH3">unit of SqipviewLogo
+  McshStn000039:360  <br>* McshEngl.unit-of-SqipLogo!⇒SqipUnit,  ->  <br>* McshEngl.unit-of-SqipviewLogo!⇒SqipUnit,
+  McshStn000039:361  <br>* McshEngl.SqipUnit!=unit-of-SqipLogo,  ->  <br>* McshEngl.SqipUnit!=unit-of-SqipviewLogo,
+  McshStn000039:362  <br>* McshEngl.SqipLogo'unit!⇒SqipUnit,  ->  <br>* McshEngl.SqipviewLogo'unit!⇒SqipUnit,
+  McshStn000039:415  <br>* McshEngl.SqipLogo'phoneme!⇒SqipPhnm,  ->  <br>* McshEngl.SqipviewLogo'phoneme!⇒SqipPhnm,
+  McshStn000039:1040  <br>* McshEngl.SqipLogo'letter!⇒SqipLetr,  ->  <br>* McshEngl.SqipviewLogo'letter!⇒SqipLetr,
+  McshStn000039:1563  <h3 id="idLSqiputsmH3">unit-system of SqipLogo  ->  <h3 id="idLSqiputsmH3">unit-system of SqipviewLogo
+  McshStn000039:1571  <br>* McshEngl.SqipLogo'unit_system,  ->  <br>* McshEngl.SqipviewLogo'unit_system,
+  McshStn000039:1572  <br>* McshEngl.SqipLogo'unit-system!⇒SqipLogo'unit_system,  ->  <br>* McshEngl.SqipviewLogo'unit-system!⇒SqipviewLogo'unit_system,
+  McshStn000039:1576  <h4 id="idLSqipsylbH4">syllable of SqipLogo  ->  <h4 id="idLSqipsylbH4">syllable of SqipviewLogo
+  McshStn000039:1585  <br>* McshEngl.SqipLogo'syllable!⇒SqipSylb,  ->  <br>* McshEngl.SqipviewLogo'syllable!⇒SqipSylb,
+  McshStn000039:1586  <br>* McshEngl.SqipLogo'unit-system'syllable!⇒SqipSylb,  ->  <br>* McshEngl.SqipviewLogo'unit-system'syllable!⇒SqipSylb,
+  McshStn000039:1615  <h4 id="idLSqipwordH4">word of SqipLogo  ->  <h4 id="idLSqipwordH4">word of SqipviewLogo
+  McshStn000039:1623  <br>* McshEngl.SqipLogo'word,  ->  <br>* McshEngl.SqipviewLogo'word,
+  McshStn000039:1625  <br>* McshEngl.SqipLogo'unit-system'word,  ->  <br>* McshEngl.SqipviewLogo'unit-system'word,
+  McshStn000039:1631  <h3 id="idLSqipnameH3">name of SqipLogo  ->  <h3 id="idLSqipnameH3">name of SqipviewLogo
+  McshStn000039:1642  <br>* McshEngl.SqipLogo'name,  ->  <br>* McshEngl.SqipviewLogo'name,
+  McshStn000039:1647  <h3 id="idLSqipargoH3">argu-name of SqipLogo  ->  <h3 id="idLSqipargoH3">argu-name of SqipviewLogo
+  McshStn000039:1655  <br>* McshEngl.SqipLogo'argu_name!⇒Sqipargu,  ->  <br>* McshEngl.SqipviewLogo'argu_name!⇒Sqipargu,
+  McshStn000039:1656  <br>* McshEngl.SqipLogo'argu-name!⇒Sqipargu,  ->  <br>* McshEngl.SqipviewLogo'argu-name!⇒Sqipargu,
+  McshStn000039:1740  <br>* McshEngl.SqipLogo'argu-name'adjective-name!⇒Sqipadje,  ->  <br>* McshEngl.SqipviewLogo'argu-name'adjective-name!⇒Sqipadje,
+  McshStn000039:1757  <br>* McshEngl.SqipLogo'argu-name.pronoun!⇒Sqipargu.pronoun,  ->  <br>* McshEngl.SqipviewLogo'argu-name.pronoun!⇒Sqipargu.pronoun,
+  McshStn000039:1768  <h3 id="idLSqipverbH3">verb-name of SqipLogo  ->  <h3 id="idLSqipverbH3">verb-name of SqipviewLogo
+  McshStn000039:1774  <br>* McshEngl.SqipLogo'verb_name,  ->  <br>* McshEngl.SqipviewLogo'verb_name,
+  McshStn000039:1775  <br>* McshEngl.SqipLogo'verb-name!⇒SqipLogo'verb_name,  ->  <br>* McshEngl.SqipviewLogo'verb-name!⇒SqipviewLogo'verb_name,
+  McshStn000039:1780  <h3 id="idLSqipconjH3">conjunction-name of SqipLogo  ->  <h3 id="idLSqipconjH3">conjunction-name of SqipviewLogo
+  McshStn000039:1788  <br>* McshEngl.SqipLogo'conjunction_name!⇒Sqipconj,  ->  <br>* McshEngl.SqipviewLogo'conjunction_name!⇒Sqipconj,
+  McshStn000039:1789  <br>* McshEngl.SqipLogo'conjunction-name!⇒Sqipconj,  ->  <br>* McshEngl.SqipviewLogo'conjunction-name!⇒Sqipconj,
+  McshStn000039:1794  <h3 id="idLSqipagsmH3">argu-phrase of SqipLogo  ->  <h3 id="idLSqipagsmH3">argu-phrase of SqipviewLogo
+  McshStn000039:1800  <br>* McshEngl.SqipLogo'argu_phrase,  ->  <br>* McshEngl.SqipviewLogo'argu_phrase,
+  McshStn000039:1801  <br>* McshEngl.SqipLogo'argu-phrase!⇒SqipLogo'argu_phrase,  ->  <br>* McshEngl.SqipviewLogo'argu-phrase!⇒SqipviewLogo'argu_phrase,
+  McshStn000039:1806  <h3 id="idLSqipvbatH3">verb-argument of SqipLogo  ->  <h3 id="idLSqipvbatH3">verb-argument of SqipviewLogo
+  McshStn000039:1812  <br>* McshEngl.SqipLogo'verb_argument,  ->  <br>* McshEngl.SqipviewLogo'verb_argument,
+  McshStn000039:1813  <br>* McshEngl.SqipLogo'verb-argument!⇒SqipLogo'verb_argument,  ->  <br>* McshEngl.SqipviewLogo'verb-argument!⇒SqipviewLogo'verb_argument,
+  McshStn000039:1818  <h3 id="idLSqipsentH3">sentence of SqipLogo  ->  <h3 id="idLSqipsentH3">sentence of SqipviewLogo
+  McshStn000039:1824  <br>* McshEngl.SqipLogo'sentence,  ->  <br>* McshEngl.SqipviewLogo'sentence,
+  McshStn000039:1837  <br>* McshEngl.SqipLogo'basic-expression!⇒SqipExpr,  ->  <br>* McshEngl.SqipviewLogo'basic-expression!⇒SqipExpr,
+  McshStn000039:1838  <br>* McshEngl.SqipLogo'sentence'basic-expression!⇒SqipExpr,  ->  <br>* McshEngl.SqipviewLogo'sentence'basic-expression!⇒SqipExpr,
+  McshStn000039:1994  <h3 id="idLSqipsectH3">section of SqipLogo  ->  <h3 id="idLSqipsectH3">section of SqipviewLogo
+  McshStn000039:2000  <br>* McshEngl.SqipLogo'section,  ->  <br>* McshEngl.SqipviewLogo'section,
+  McshStn000039:2005  <h3 id="idLSqiprtndH3">root-node of SqipLogo  ->  <h3 id="idLSqiprtndH3">root-node of SqipviewLogo
+  McshStn000039:2011  <br>* McshEngl.SqipLogo'root_node,  ->  <br>* McshEngl.SqipviewLogo'root_node,
+  McshStn000039:2012  <br>* McshEngl.SqipLogo'root-node!⇒SqipLogo'root_node,  ->  <br>* McshEngl.SqipviewLogo'root-node!⇒SqipviewLogo'root_node,
+  McshStn000040:372  <h3 id="idLSmkdsxtrH3">syntax-tree of SmkdLogoView  ->  <h3 id="idLSmkdsxtrH3">syntax-tree of SmkdviewLogo
+  McshStn000040:378  <br>* McshEngl.SmkdLogoView'syntax_tree,  ->  <br>* McshEngl.SmkdviewLogo'syntax_tree,
+  McshStn000040:379  <br>* McshEngl.SmkdLogoView'syntax-tree!⇒SmkdLogoView'syntax_tree,  ->  <br>* McshEngl.SmkdviewLogo'syntax-tree!⇒SmkdviewLogo'syntax_tree,
+  McshStn000040:384  <h3 id="idLSmkdnodeH3">node of SmkdLogoView  ->  <h3 id="idLSmkdnodeH3">node of SmkdviewLogo
+  McshStn000040:390  <br>* McshEngl.SmkdLogoView'node,  ->  <br>* McshEngl.SmkdviewLogo'node,
+  McshStn000040:395  <h3 id="idLSmkdunitH3">unit of SmkdLogoView  ->  <h3 id="idLSmkdunitH3">unit of SmkdviewLogo
+  McshStn000040:404  <br>* McshEngl.unit-of-SmkdLogoView!⇒SmkdUnit,  ->  <br>* McshEngl.unit-of-SmkdviewLogo!⇒SmkdUnit,
+  McshStn000040:405  <br>* McshEngl.SmkdUnit!=unit-of-SmkdLogoView,  ->  <br>* McshEngl.SmkdUnit!=unit-of-SmkdviewLogo,
+  McshStn000040:406  <br>* McshEngl.SmkdLogoView'unit!⇒SmkdUnit,  ->  <br>* McshEngl.SmkdviewLogo'unit!⇒SmkdUnit,
+  McshStn000040:421  <br>* McshEngl.SmkdLogoView'phoneme!=SmkdPhnm,  ->  <br>* McshEngl.SmkdviewLogo'phoneme!=SmkdPhnm,
+  McshStn000040:522  <br>* McshEngl.SmkdLogoView'letter!⇒SmkdLetr,  ->  <br>* McshEngl.SmkdviewLogo'letter!⇒SmkdLetr,
+  McshStn000040:1074  <h3 id="idLSmkdutsmH3">unit-system of SmkdLogoView  ->  <h3 id="idLSmkdutsmH3">unit-system of SmkdviewLogo
+  McshStn000040:1082  <br>* McshEngl.SmkdLogoView'unit_system,  ->  <br>* McshEngl.SmkdviewLogo'unit_system,
+  McshStn000040:1083  <br>* McshEngl.SmkdLogoView'unit-system!⇒SmkdLogoView'unit_system,  ->  <br>* McshEngl.SmkdviewLogo'unit-system!⇒SmkdviewLogo'unit_system,
+  McshStn000040:1087  <h4 id="idLSmkdsylbH4">syllable of SmkdLogoView  ->  <h4 id="idLSmkdsylbH4">syllable of SmkdviewLogo
+  McshStn000040:1096  <br>* McshEngl.SmkdLogoView'syllable!⇒SmkdSylb,  ->  <br>* McshEngl.SmkdviewLogo'syllable!⇒SmkdSylb,
+  McshStn000040:1097  <br>* McshEngl.SmkdLogoView'unit-system'syllable!⇒SmkdSylb,  ->  <br>* McshEngl.SmkdviewLogo'unit-system'syllable!⇒SmkdSylb,
+  McshStn000040:1126  <h4 id="idLSmkdwordH4">word of SmkdLogoView  ->  <h4 id="idLSmkdwordH4">word of SmkdviewLogo
+  McshStn000040:1134  <br>* McshEngl.SmkdLogoView'word,  ->  <br>* McshEngl.SmkdviewLogo'word,
+  McshStn000040:1136  <br>* McshEngl.SmkdLogoView'unit-system'word,  ->  <br>* McshEngl.SmkdviewLogo'unit-system'word,
+  McshStn000040:1142  <h3 id="idLSmkdnameH3">name of SmkdLogoView  ->  <h3 id="idLSmkdnameH3">name of SmkdviewLogo
+  McshStn000040:1148  <br>* McshEngl.SmkdLogoView'name,  ->  <br>* McshEngl.SmkdviewLogo'name,
+  McshStn000040:1153  <h3 id="idLSmkdargoH3">argu-name of SmkdLogoView  ->  <h3 id="idLSmkdargoH3">argu-name of SmkdviewLogo
+  McshStn000040:1161  <br>* McshEngl.SmkdLogoView'argu_name!⇒Smkdargu,  ->  <br>* McshEngl.SmkdviewLogo'argu_name!⇒Smkdargu,
+  McshStn000040:1162  <br>* McshEngl.SmkdLogoView'argu-name!⇒Smkdargu,  ->  <br>* McshEngl.SmkdviewLogo'argu-name!⇒Smkdargu,
+  McshStn000040:1188  <br>* McshEngl.SmkdLogoView'argu-name.pronoun!⇒Smkdargu.pronoun,  ->  <br>* McshEngl.SmkdviewLogo'argu-name.pronoun!⇒Smkdargu.pronoun,
+  McshStn000040:1199  <h3 id="idLSmkdverbH3">verb-name of SmkdLogoView  ->  <h3 id="idLSmkdverbH3">verb-name of SmkdviewLogo
+  McshStn000040:1205  <br>* McshEngl.SmkdLogoView'verb_name,  ->  <br>* McshEngl.SmkdviewLogo'verb_name,
+  McshStn000040:1206  <br>* McshEngl.SmkdLogoView'verb-name!⇒SmkdLogoView'verb_name,  ->  <br>* McshEngl.SmkdviewLogo'verb-name!⇒SmkdviewLogo'verb_name,
+  McshStn000040:1211  <h3 id="idLSmkdconjH3">conjunction-name of SmkdLogoView  ->  <h3 id="idLSmkdconjH3">conjunction-name of SmkdviewLogo
+  McshStn000040:1219  <br>* McshEngl.SmkdLogoView'conjunction_name!⇒Smkdconj,  ->  <br>* McshEngl.SmkdviewLogo'conjunction_name!⇒Smkdconj,
+  McshStn000040:1220  <br>* McshEngl.SmkdLogoView'conjunction-name!⇒Smkdconj,  ->  <br>* McshEngl.SmkdviewLogo'conjunction-name!⇒Smkdconj,
+  McshStn000040:1225  <h3 id="idLSmkdagsmH3">argu-phrase of SmkdLogoView  ->  <h3 id="idLSmkdagsmH3">argu-phrase of SmkdviewLogo
+  McshStn000040:1231  <br>* McshEngl.SmkdLogoView'argu_phrase,  ->  <br>* McshEngl.SmkdviewLogo'argu_phrase,
+  McshStn000040:1232  <br>* McshEngl.SmkdLogoView'argu-phrase!⇒SmkdLogoView'argu_phrase,  ->  <br>* McshEngl.SmkdviewLogo'argu-phrase!⇒SmkdviewLogo'argu_phrase,
+  McshStn000040:1237  <h3 id="idLSmkdvbatH3">verb-argument of SmkdLogoView  ->  <h3 id="idLSmkdvbatH3">verb-argument of SmkdviewLogo
+  McshStn000040:1243  <br>* McshEngl.SmkdLogoView'verb_argument,  ->  <br>* McshEngl.SmkdviewLogo'verb_argument,
+  McshStn000040:1244  <br>* McshEngl.SmkdLogoView'verb-argument!⇒SmkdLogoView'verb_argument,  ->  <br>* McshEngl.SmkdviewLogo'verb-argument!⇒SmkdviewLogo'verb_argument,
+  McshStn000040:1249  <h3 id="idLSmkdsentH3">sentence of SmkdLogoView  ->  <h3 id="idLSmkdsentH3">sentence of SmkdviewLogo
+  McshStn000040:1255  <br>* McshEngl.SmkdLogoView'sentence,  ->  <br>* McshEngl.SmkdviewLogo'sentence,
+  McshStn000040:1259  <h4 id="idLSmkdsentbcexH4">basic-expression of SmkdLogoView  ->  <h4 id="idLSmkdsentbcexH4">basic-expression of SmkdviewLogo
+  McshStn000040:1268  <br>* McshEngl.SmkdLogoView'basic-expression!⇒SmkdExpr,  ->  <br>* McshEngl.SmkdviewLogo'basic-expression!⇒SmkdExpr,
+  McshStn000040:1269  <br>* McshEngl.SmkdLogoView'sentence'basic-expression!⇒SmkdExpr,  ->  <br>* McshEngl.SmkdviewLogo'sentence'basic-expression!⇒SmkdExpr,
+  McshStn000040:1435  <h3 id="idLSmkdsectH3">section of SmkdLogoView  ->  <h3 id="idLSmkdsectH3">section of SmkdviewLogo
+  McshStn000040:1441  <br>* McshEngl.SmkdLogoView'section,  ->  <br>* McshEngl.SmkdviewLogo'section,
+  McshStn000040:1446  <h3 id="idLSmkdrtndH3">root-node of SmkdLogoView  ->  <h3 id="idLSmkdrtndH3">root-node of SmkdviewLogo
+  McshStn000040:1452  <br>* McshEngl.SmkdLogoView'root_node,  ->  <br>* McshEngl.SmkdviewLogo'root_node,
+  McshStn000040:1453  <br>* McshEngl.SmkdLogoView'root-node!⇒SmkdLogoView'root_node,  ->  <br>* McshEngl.SmkdviewLogo'root-node!⇒SmkdviewLogo'root_node,
+  McshStn000041:386  <h3 id="idLSslvsxtrH3">syntax-tree of SslvLogoView  ->  <h3 id="idLSslvsxtrH3">syntax-tree of SslvviewLogo
+  McshStn000041:392  <br>* McshEngl.SslvLogoView'syntax_tree,  ->  <br>* McshEngl.SslvviewLogo'syntax_tree,
+  McshStn000041:393  <br>* McshEngl.SslvLogoView'syntax-tree!⇒SslvLogoView'syntax_tree,  ->  <br>* McshEngl.SslvviewLogo'syntax-tree!⇒SslvviewLogo'syntax_tree,
+  McshStn000041:398  <h3 id="idLSslvnodeH3">node of SslvLogoView  ->  <h3 id="idLSslvnodeH3">node of SslvviewLogo
+  McshStn000041:404  <br>* McshEngl.SslvLogoView'node,  ->  <br>* McshEngl.SslvviewLogo'node,
+  McshStn000041:409  <h3 id="idLSslvunitH3">unit of SslvLogoView  ->  <h3 id="idLSslvunitH3">unit of SslvviewLogo
+  McshStn000041:418  <br>* McshEngl.unit-of-SslvLogoView!⇒SslvUnit,  ->  <br>* McshEngl.unit-of-SslvviewLogo!⇒SslvUnit,
+  McshStn000041:419  <br>* McshEngl.SslvUnit!=unit-of-SslvLogoView,  ->  <br>* McshEngl.SslvUnit!=unit-of-SslvviewLogo,
+  McshStn000041:420  <br>* McshEngl.SslvLogoView'unit!⇒SslvUnit,  ->  <br>* McshEngl.SslvviewLogo'unit!⇒SslvUnit,
+  McshStn000041:454  <br>* McshEngl.SslvLogoView'phoneme!=SslvPhnm,  ->  <br>* McshEngl.SslvviewLogo'phoneme!=SslvPhnm,
+  McshStn000041:534  <br>* McshEngl.SslvLogoView'letter!⇒SslvLetr,  ->  <br>* McshEngl.SslvviewLogo'letter!⇒SslvLetr,
+  McshStn000041:953  <h3 id="idLSslvutsmH3">unit-system of SslvLogoView  ->  <h3 id="idLSslvutsmH3">unit-system of SslvviewLogo
+  McshStn000041:961  <br>* McshEngl.SslvLogoView'unit_system,  ->  <br>* McshEngl.SslvviewLogo'unit_system,
+  McshStn000041:962  <br>* McshEngl.SslvLogoView'unit-system!⇒SslvLogoView'unit_system,  ->  <br>* McshEngl.SslvviewLogo'unit-system!⇒SslvviewLogo'unit_system,
+  McshStn000041:966  <h4 id="idLSslvsylbH4">syllable of SslvLogoView  ->  <h4 id="idLSslvsylbH4">syllable of SslvviewLogo
+  McshStn000041:975  <br>* McshEngl.SslvLogoView'syllable!⇒SslvSylb,  ->  <br>* McshEngl.SslvviewLogo'syllable!⇒SslvSylb,
+  McshStn000041:976  <br>* McshEngl.SslvLogoView'unit-system'syllable!⇒SslvSylb,  ->  <br>* McshEngl.SslvviewLogo'unit-system'syllable!⇒SslvSylb,
+  McshStn000041:1005  <h4 id="idLSslvwordH4">word of SslvLogoView  ->  <h4 id="idLSslvwordH4">word of SslvviewLogo
+  McshStn000041:1013  <br>* McshEngl.SslvLogoView'word,  ->  <br>* McshEngl.SslvviewLogo'word,
+  McshStn000041:1015  <br>* McshEngl.SslvLogoView'unit-system'word,  ->  <br>* McshEngl.SslvviewLogo'unit-system'word,
+  McshStn000041:1021  <h3 id="idLSslvnameH3">name of SslvLogoView  ->  <h3 id="idLSslvnameH3">name of SslvviewLogo
+  McshStn000041:1027  <br>* McshEngl.SslvLogoView'name,  ->  <br>* McshEngl.SslvviewLogo'name,
+  McshStn000041:1032  <h3 id="idLSslvargoH3">argu-name of SslvLogoView  ->  <h3 id="idLSslvargoH3">argu-name of SslvviewLogo
+  McshStn000041:1040  <br>* McshEngl.SslvLogoView'argu_name!⇒Sslvargu,  ->  <br>* McshEngl.SslvviewLogo'argu_name!⇒Sslvargu,
+  McshStn000041:1041  <br>* McshEngl.SslvLogoView'argu-name!⇒Sslvargu,  ->  <br>* McshEngl.SslvviewLogo'argu-name!⇒Sslvargu,
+  McshStn000041:1067  <br>* McshEngl.SslvLogoView'argu-name.pronoun!⇒Sslvargu.pronoun,  ->  <br>* McshEngl.SslvviewLogo'argu-name.pronoun!⇒Sslvargu.pronoun,
+  McshStn000041:1078  <h3 id="idLSslvverbH3">verb-name of SslvLogoView  ->  <h3 id="idLSslvverbH3">verb-name of SslvviewLogo
+  McshStn000041:1084  <br>* McshEngl.SslvLogoView'verb_name,  ->  <br>* McshEngl.SslvviewLogo'verb_name,
+  McshStn000041:1085  <br>* McshEngl.SslvLogoView'verb-name!⇒SslvLogoView'verb_name,  ->  <br>* McshEngl.SslvviewLogo'verb-name!⇒SslvviewLogo'verb_name,
+  McshStn000041:1090  <h3 id="idLSslvconjH3">conjunction-name of SslvLogoView  ->  <h3 id="idLSslvconjH3">conjunction-name of SslvviewLogo
+  McshStn000041:1098  <br>* McshEngl.SslvLogoView'conjunction_name!⇒Sslvconj,  ->  <br>* McshEngl.SslvviewLogo'conjunction_name!⇒Sslvconj,
+  McshStn000041:1099  <br>* McshEngl.SslvLogoView'conjunction-name!⇒Sslvconj,  ->  <br>* McshEngl.SslvviewLogo'conjunction-name!⇒Sslvconj,
+  McshStn000041:1104  <h3 id="idLSslvagsmH3">argu-phrase of SslvLogoView  ->  <h3 id="idLSslvagsmH3">argu-phrase of SslvviewLogo
+  McshStn000041:1110  <br>* McshEngl.SslvLogoView'argu_phrase,  ->  <br>* McshEngl.SslvviewLogo'argu_phrase,
+  McshStn000041:1111  <br>* McshEngl.SslvLogoView'argu-phrase!⇒SslvLogoView'argu_phrase,  ->  <br>* McshEngl.SslvviewLogo'argu-phrase!⇒SslvviewLogo'argu_phrase,
+  McshStn000041:1116  <h3 id="idLSslvvbatH3">verb-argument of SslvLogoView  ->  <h3 id="idLSslvvbatH3">verb-argument of SslvviewLogo
+  McshStn000041:1122  <br>* McshEngl.SslvLogoView'verb_argument,  ->  <br>* McshEngl.SslvviewLogo'verb_argument,
+  McshStn000041:1123  <br>* McshEngl.SslvLogoView'verb-argument!⇒SslvLogoView'verb_argument,  ->  <br>* McshEngl.SslvviewLogo'verb-argument!⇒SslvviewLogo'verb_argument,
+  McshStn000041:1128  <h3 id="idLSslvsentH3">sentence of SslvLogoView  ->  <h3 id="idLSslvsentH3">sentence of SslvviewLogo
+  McshStn000041:1134  <br>* McshEngl.SslvLogoView'sentence,  ->  <br>* McshEngl.SslvviewLogo'sentence,
+  McshStn000041:1138  <h4 id="idLSslvsntcbcexH4">basic-expression of SslvLogoView  ->  <h4 id="idLSslvsntcbcexH4">basic-expression of SslvviewLogo
+  McshStn000041:1148  <br>* McshEngl.SslvLogoView'sentence'basic-expression!⇒SslvExpr,  ->  <br>* McshEngl.SslvviewLogo'sentence'basic-expression!⇒SslvExpr,
+  McshStn000041:1149  <br>* McshEngl.SslvLogoView'basic-expression!⇒SslvExpr,  ->  <br>* McshEngl.SslvviewLogo'basic-expression!⇒SslvExpr,
+  McshStn000041:1315  <h3 id="idLSslvsectH3">section of SslvLogoView  ->  <h3 id="idLSslvsectH3">section of SslvviewLogo
+  McshStn000041:1321  <br>* McshEngl.SslvLogoView'section,  ->  <br>* McshEngl.SslvviewLogo'section,
+  McshStn000041:1326  <h3 id="idLSslvrtndH3">root-node of SslvLogoView  ->  <h3 id="idLSslvrtndH3">root-node of SslvviewLogo
+  McshStn000041:1332  <br>* McshEngl.SslvLogoView'root_node,  ->  <br>* McshEngl.SslvviewLogo'root_node,
+  McshStn000041:1333  <br>* McshEngl.SslvLogoView'root-node!⇒SslvLogoView'root_node,  ->  <br>* McshEngl.SslvviewLogo'root-node!⇒SslvviewLogo'root_node,
+  McshStn000043:277  <h3 id="idLSrussxtrH3">syntax-tree of SrusLogoView  ->  <h3 id="idLSrussxtrH3">syntax-tree of SrusviewLogo
+  McshStn000043:283  <br>* McshEngl.SrusLogoView'syntax_tree,  ->  <br>* McshEngl.SrusviewLogo'syntax_tree,
+  McshStn000043:284  <br>* McshEngl.SrusLogoView'syntax-tree!⇒SrusLogoView'syntax_tree,  ->  <br>* McshEngl.SrusviewLogo'syntax-tree!⇒SrusviewLogo'syntax_tree,
+  McshStn000043:289  <h3 id="idLSrusnodeH3">node of SrusLogoView  ->  <h3 id="idLSrusnodeH3">node of SrusviewLogo
+  McshStn000043:295  <br>* McshEngl.SrusLogoView'node,  ->  <br>* McshEngl.SrusviewLogo'node,
+  McshStn000043:300  <h3 id="idLSrusunitH3">unit of SrusLogoView  ->  <h3 id="idLSrusunitH3">unit of SrusviewLogo
+  McshStn000043:309  <br>* McshEngl.unit-of-SrusLogoView!⇒SrusUnit,  ->  <br>* McshEngl.unit-of-SrusviewLogo!⇒SrusUnit,
+  McshStn000043:310  <br>* McshEngl.SrusUnit!=unit-of-SrusLogoView,  ->  <br>* McshEngl.SrusUnit!=unit-of-SrusviewLogo,
+  McshStn000043:311  <br>* McshEngl.SrusLogoView'unit!⇒SrusUnit,  ->  <br>* McshEngl.SrusviewLogo'unit!⇒SrusUnit,
+  McshStn000043:326  <br>* McshEngl.SrusLogoView'phoneme!=SrusPhnm,  ->  <br>* McshEngl.SrusviewLogo'phoneme!=SrusPhnm,
+  McshStn000043:424  <br>* McshEngl.SrusLogoView'letter!⇒SrusLetr,  ->  <br>* McshEngl.SrusviewLogo'letter!⇒SrusLetr,
+  McshStn000043:1074  <h3 id="idLSrusutsmH3">unit-system of SrusLogoView  ->  <h3 id="idLSrusutsmH3">unit-system of SrusviewLogo
+  McshStn000043:1082  <br>* McshEngl.SrusLogoView'unit_system,  ->  <br>* McshEngl.SrusviewLogo'unit_system,
+  McshStn000043:1083  <br>* McshEngl.SrusLogoView'unit-system!⇒SrusLogoView'unit_system,  ->  <br>* McshEngl.SrusviewLogo'unit-system!⇒SrusviewLogo'unit_system,
+  McshStn000043:1087  <h4 id="idLSrussylbH4">syllable of SrusLogoView  ->  <h4 id="idLSrussylbH4">syllable of SrusviewLogo
+  McshStn000043:1096  <br>* McshEngl.SrusLogoView'syllable!⇒SrusSylb,  ->  <br>* McshEngl.SrusviewLogo'syllable!⇒SrusSylb,
+  McshStn000043:1097  <br>* McshEngl.SrusLogoView'unit-system'syllable!⇒SrusSylb,  ->  <br>* McshEngl.SrusviewLogo'unit-system'syllable!⇒SrusSylb,
+  McshStn000043:1126  <h4 id="idLSruswordH4">word of SrusLogoView  ->  <h4 id="idLSruswordH4">word of SrusviewLogo
+  McshStn000043:1134  <br>* McshEngl.SrusLogoView'word,  ->  <br>* McshEngl.SrusviewLogo'word,
+  McshStn000043:1136  <br>* McshEngl.SrusLogoView'unit-system'word,  ->  <br>* McshEngl.SrusviewLogo'unit-system'word,
+  McshStn000043:1142  <h3 id="idLSrusnameH3">name of SrusLogoView  ->  <h3 id="idLSrusnameH3">name of SrusviewLogo
+  McshStn000043:1148  <br>* McshEngl.SrusLogoView'name,  ->  <br>* McshEngl.SrusviewLogo'name,
+  McshStn000043:1153  <h3 id="idLSrusargoH3">argu-name of SrusLogoView  ->  <h3 id="idLSrusargoH3">argu-name of SrusviewLogo
+  McshStn000043:1161  <br>* McshEngl.SrusLogoView'argu_name!⇒Srusargu,  ->  <br>* McshEngl.SrusviewLogo'argu_name!⇒Srusargu,
+  McshStn000043:1162  <br>* McshEngl.SrusLogoView'argu-name!⇒Srusargu,  ->  <br>* McshEngl.SrusviewLogo'argu-name!⇒Srusargu,
+  McshStn000043:1188  <br>* McshEngl.SrusLogoView'argu-name.pronoun!⇒Srusargu.pronoun,  ->  <br>* McshEngl.SrusviewLogo'argu-name.pronoun!⇒Srusargu.pronoun,
+  McshStn000043:1199  <h3 id="idLSrusverbH3">verb-name of SrusLogoView  ->  <h3 id="idLSrusverbH3">verb-name of SrusviewLogo
+  McshStn000043:1205  <br>* McshEngl.SrusLogoView'verb_name,  ->  <br>* McshEngl.SrusviewLogo'verb_name,
+  McshStn000043:1206  <br>* McshEngl.SrusLogoView'verb-name!⇒SrusLogoView'verb_name,  ->  <br>* McshEngl.SrusviewLogo'verb-name!⇒SrusviewLogo'verb_name,
+  McshStn000043:1211  <h3 id="idLSrusconjH3">conjunction-name of SrusLogoView  ->  <h3 id="idLSrusconjH3">conjunction-name of SrusviewLogo
+  McshStn000043:1219  <br>* McshEngl.SrusLogoView'conjunction_name!⇒Srusconj,  ->  <br>* McshEngl.SrusviewLogo'conjunction_name!⇒Srusconj,
+  McshStn000043:1220  <br>* McshEngl.SrusLogoView'conjunction-name!⇒Srusconj,  ->  <br>* McshEngl.SrusviewLogo'conjunction-name!⇒Srusconj,
+  McshStn000043:1225  <h3 id="idLSrusagsmH3">argu-phrase of SrusLogoView  ->  <h3 id="idLSrusagsmH3">argu-phrase of SrusviewLogo
+  McshStn000043:1231  <br>* McshEngl.SrusLogoView'argu_phrase,  ->  <br>* McshEngl.SrusviewLogo'argu_phrase,
+  McshStn000043:1232  <br>* McshEngl.SrusLogoView'argu-phrase!⇒SrusLogoView'argu_phrase,  ->  <br>* McshEngl.SrusviewLogo'argu-phrase!⇒SrusviewLogo'argu_phrase,
+  McshStn000043:1237  <h3 id="idLSrusvbatH3">verb-argument of SrusLogoView  ->  <h3 id="idLSrusvbatH3">verb-argument of SrusviewLogo
+  McshStn000043:1243  <br>* McshEngl.SrusLogoView'verb_argument,  ->  <br>* McshEngl.SrusviewLogo'verb_argument,
+  McshStn000043:1244  <br>* McshEngl.SrusLogoView'verb-argument!⇒SrusLogoView'verb_argument,  ->  <br>* McshEngl.SrusviewLogo'verb-argument!⇒SrusviewLogo'verb_argument,
+  McshStn000043:1249  <h3 id="idLSrussentH3">sentence of SrusLogoView  ->  <h3 id="idLSrussentH3">sentence of SrusviewLogo
+  McshStn000043:1255  <br>* McshEngl.SrusLogoView'sentence,  ->  <br>* McshEngl.SrusviewLogo'sentence,
+  McshStn000043:1259  <h4 id="idLSrussentbcexH4">basic-expression of SrusLogoView  ->  <h4 id="idLSrussentbcexH4">basic-expression of SrusviewLogo
+  McshStn000043:1268  <br>* McshEngl.SrusLogoView'basic-expression!⇒SrusExpr,  ->  <br>* McshEngl.SrusviewLogo'basic-expression!⇒SrusExpr,
+  McshStn000043:1269  <br>* McshEngl.SrusLogoView'sentence'basic-expression!⇒SrusExpr,  ->  <br>* McshEngl.SrusviewLogo'sentence'basic-expression!⇒SrusExpr,
+  McshStn000043:1435  <h3 id="idLSrussectH3">section of SrusLogoView  ->  <h3 id="idLSrussectH3">section of SrusviewLogo
+  McshStn000043:1441  <br>* McshEngl.SrusLogoView'section,  ->  <br>* McshEngl.SrusviewLogo'section,
+  McshStn000043:1446  <h3 id="idLSrusrtndH3">root-node of SrusLogoView  ->  <h3 id="idLSrusrtndH3">root-node of SrusviewLogo
+  McshStn000043:1452  <br>* McshEngl.SrusLogoView'root_node,  ->  <br>* McshEngl.SrusviewLogo'root_node,
+  McshStn000043:1453  <br>* McshEngl.SrusLogoView'root-node!⇒SrusLogoView'root_node,  ->  <br>* McshEngl.SrusviewLogo'root-node!⇒SrusviewLogo'root_node,
+  McshStn000044:315  <h3 id="idLRomnsxtrH3">syntax-tree of RomnLogoView  ->  <h3 id="idLRomnsxtrH3">syntax-tree of RomnviewLogo
+  McshStn000044:321  <br>* McshEngl.RomnLogoView'syntax_tree,  ->  <br>* McshEngl.RomnviewLogo'syntax_tree,
+  McshStn000044:322  <br>* McshEngl.RomnLogoView'syntax-tree!⇒RomnLogoView'syntax_tree,  ->  <br>* McshEngl.RomnviewLogo'syntax-tree!⇒RomnviewLogo'syntax_tree,
+  McshStn000044:327  <h3 id="idLRomnnodeH3">node of RomnLogoView  ->  <h3 id="idLRomnnodeH3">node of RomnviewLogo
+  McshStn000044:333  <br>* McshEngl.RomnLogoView'node,  ->  <br>* McshEngl.RomnviewLogo'node,
+  McshStn000044:338  <h3 id="idLRomnunitH3">unit of RomnLogoView  ->  <h3 id="idLRomnunitH3">unit of RomnviewLogo
+  McshStn000044:347  <br>* McshEngl.unit-of-RomnLogoView!⇒RomnUnit,  ->  <br>* McshEngl.unit-of-RomnviewLogo!⇒RomnUnit,
+  McshStn000044:348  <br>* McshEngl.RomnUnit!=unit-of-RomnLogoView,  ->  <br>* McshEngl.RomnUnit!=unit-of-RomnviewLogo,
+  McshStn000044:349  <br>* McshEngl.RomnLogoView'unit!⇒RomnUnit,  ->  <br>* McshEngl.RomnviewLogo'unit!⇒RomnUnit,
+  McshStn000044:364  <br>* McshEngl.RomnLogoView'phoneme!=RomnPhnm,  ->  <br>* McshEngl.RomnviewLogo'phoneme!=RomnPhnm,
+  McshStn000044:848  <br>* McshEngl.RomnLogoView'letter!⇒RomnLetr,  ->  <br>* McshEngl.RomnviewLogo'letter!⇒RomnLetr,
+  McshStn000044:1324  <h3 id="idLRomnutsmH3">unit-system of RomnLogoView  ->  <h3 id="idLRomnutsmH3">unit-system of RomnviewLogo
+  McshStn000044:1332  <br>* McshEngl.RomnLogoView'unit_system,  ->  <br>* McshEngl.RomnviewLogo'unit_system,
+  McshStn000044:1333  <br>* McshEngl.RomnLogoView'unit-system!⇒RomnLogoView'unit_system,  ->  <br>* McshEngl.RomnviewLogo'unit-system!⇒RomnviewLogo'unit_system,
+  McshStn000044:1337  <h4 id="idLRomnsylbH4">syllable of RomnLogoView  ->  <h4 id="idLRomnsylbH4">syllable of RomnviewLogo
+  McshStn000044:1346  <br>* McshEngl.RomnLogoView'syllable!⇒RomnSylb,  ->  <br>* McshEngl.RomnviewLogo'syllable!⇒RomnSylb,
+  McshStn000044:1347  <br>* McshEngl.RomnLogoView'unit-system'syllable!⇒RomnSylb,  ->  <br>* McshEngl.RomnviewLogo'unit-system'syllable!⇒RomnSylb,
+  McshStn000044:1376  <h4 id="idLRomnwordH4">word of RomnLogoView  ->  <h4 id="idLRomnwordH4">word of RomnviewLogo
+  McshStn000044:1384  <br>* McshEngl.RomnLogoView'word,  ->  <br>* McshEngl.RomnviewLogo'word,
+  McshStn000044:1386  <br>* McshEngl.RomnLogoView'unit-system'word,  ->  <br>* McshEngl.RomnviewLogo'unit-system'word,
+  McshStn000044:1392  <h3 id="idLRomnnameH3">name of RomnLogoView  ->  <h3 id="idLRomnnameH3">name of RomnviewLogo
+  McshStn000044:1398  <br>* McshEngl.RomnLogoView'name,  ->  <br>* McshEngl.RomnviewLogo'name,
+  McshStn000044:1403  <h3 id="idLRomnargoH3">argu-name of RomnLogoView  ->  <h3 id="idLRomnargoH3">argu-name of RomnviewLogo
+  McshStn000044:1411  <br>* McshEngl.RomnLogoView'argu_name!⇒Romnargu,  ->  <br>* McshEngl.RomnviewLogo'argu_name!⇒Romnargu,
+  McshStn000044:1412  <br>* McshEngl.RomnLogoView'argu-name!⇒Romnargu,  ->  <br>* McshEngl.RomnviewLogo'argu-name!⇒Romnargu,
+  McshStn000044:1438  <br>* McshEngl.RomnLogoView'argu-name.pronoun!⇒Romnargu.pronoun,  ->  <br>* McshEngl.RomnviewLogo'argu-name.pronoun!⇒Romnargu.pronoun,
+  McshStn000044:1449  <h3 id="idLRomnverbH3">verb-name of RomnLogoView  ->  <h3 id="idLRomnverbH3">verb-name of RomnviewLogo
+  McshStn000044:1455  <br>* McshEngl.RomnLogoView'verb_name,  ->  <br>* McshEngl.RomnviewLogo'verb_name,
+  McshStn000044:1456  <br>* McshEngl.RomnLogoView'verb-name!⇒RomnLogoView'verb_name,  ->  <br>* McshEngl.RomnviewLogo'verb-name!⇒RomnviewLogo'verb_name,
+  McshStn000044:1461  <h3 id="idLRomnconjH3">conjunction-name of RomnLogoView  ->  <h3 id="idLRomnconjH3">conjunction-name of RomnviewLogo
+  McshStn000044:1469  <br>* McshEngl.RomnLogoView'conjunction_name!⇒Romnconj,  ->  <br>* McshEngl.RomnviewLogo'conjunction_name!⇒Romnconj,
+  McshStn000044:1470  <br>* McshEngl.RomnLogoView'conjunction-name!⇒Romnconj,  ->  <br>* McshEngl.RomnviewLogo'conjunction-name!⇒Romnconj,
+  McshStn000044:1475  <h3 id="idLRomnagsmH3">argu-phrase of RomnLogoView  ->  <h3 id="idLRomnagsmH3">argu-phrase of RomnviewLogo
+  McshStn000044:1481  <br>* McshEngl.RomnLogoView'argu_phrase,  ->  <br>* McshEngl.RomnviewLogo'argu_phrase,
+  McshStn000044:1482  <br>* McshEngl.RomnLogoView'argu-phrase!⇒RomnLogoView'argu_phrase,  ->  <br>* McshEngl.RomnviewLogo'argu-phrase!⇒RomnviewLogo'argu_phrase,
+  McshStn000044:1487  <h3 id="idLRomnvbatH3">verb-argument of RomnLogoView  ->  <h3 id="idLRomnvbatH3">verb-argument of RomnviewLogo
+  McshStn000044:1493  <br>* McshEngl.RomnLogoView'verb_argument,  ->  <br>* McshEngl.RomnviewLogo'verb_argument,
+  McshStn000044:1494  <br>* McshEngl.RomnLogoView'verb-argument!⇒RomnLogoView'verb_argument,  ->  <br>* McshEngl.RomnviewLogo'verb-argument!⇒RomnviewLogo'verb_argument,
+  McshStn000044:1499  <h3 id="idLRomnsentH3">sentence of RomnLogoView  ->  <h3 id="idLRomnsentH3">sentence of RomnviewLogo
+  McshStn000044:1505  <br>* McshEngl.RomnLogoView'sentence,  ->  <br>* McshEngl.RomnviewLogo'sentence,
+  McshStn000044:1509  <h4 id="idLRomnsentbcexH4">basic-expression of RomnLogoView  ->  <h4 id="idLRomnsentbcexH4">basic-expression of RomnviewLogo
+  McshStn000044:1518  <br>* McshEngl.RomnLogoView'basic-expression!⇒RomnExpr,  ->  <br>* McshEngl.RomnviewLogo'basic-expression!⇒RomnExpr,
+  McshStn000044:1519  <br>* McshEngl.RomnLogoView'sentence'basic-expression!⇒RomnExpr,  ->  <br>* McshEngl.RomnviewLogo'sentence'basic-expression!⇒RomnExpr,
+  McshStn000044:1685  <h3 id="idLRomnsectH3">section of RomnLogoView  ->  <h3 id="idLRomnsectH3">section of RomnviewLogo
+  McshStn000044:1691  <br>* McshEngl.RomnLogoView'section,  ->  <br>* McshEngl.RomnviewLogo'section,
+  McshStn000044:1696  <h3 id="idLRomnrtndH3">root-node of RomnLogoView  ->  <h3 id="idLRomnrtndH3">root-node of RomnviewLogo
+  McshStn000044:1702  <br>* McshEngl.RomnLogoView'root_node,  ->  <br>* McshEngl.RomnviewLogo'root_node,
+  McshStn000044:1703  <br>* McshEngl.RomnLogoView'root-node!⇒RomnLogoView'root_node,  ->  <br>* McshEngl.RomnviewLogo'root-node!⇒RomnviewLogo'root_node,
+  McshStn000048:364  <h3 id="idLJpnssxtrH3">syntax-tree of JpnsLogoView  ->  <h3 id="idLJpnssxtrH3">syntax-tree of JpnsviewLogo
+  McshStn000048:370  <br>* McshEngl.JpnsLogoView'syntax_tree,  ->  <br>* McshEngl.JpnsviewLogo'syntax_tree,
+  McshStn000048:371  <br>* McshEngl.JpnsLogoView'syntax-tree!⇒JpnsLogoView'syntax_tree,  ->  <br>* McshEngl.JpnsviewLogo'syntax-tree!⇒JpnsviewLogo'syntax_tree,
+  McshStn000048:376  <h3 id="idLJpnsnodeH3">node of JpnsLogoView  ->  <h3 id="idLJpnsnodeH3">node of JpnsviewLogo
+  McshStn000048:382  <br>* McshEngl.JpnsLogoView'node,  ->  <br>* McshEngl.JpnsviewLogo'node,
+  McshStn000048:387  <h3 id="idLJpnsunitH3">unit of JpnsLogoView  ->  <h3 id="idLJpnsunitH3">unit of JpnsviewLogo
+  McshStn000048:396  <br>* McshEngl.unit-of-JpnsLogoView!⇒JpnsUnit,  ->  <br>* McshEngl.unit-of-JpnsviewLogo!⇒JpnsUnit,
+  McshStn000048:397  <br>* McshEngl.JpnsUnit!=unit-of-JpnsLogoView,  ->  <br>* McshEngl.JpnsUnit!=unit-of-JpnsviewLogo,
+  McshStn000048:398  <br>* McshEngl.JpnsLogoView'unit!⇒JpnsUnit,  ->  <br>* McshEngl.JpnsviewLogo'unit!⇒JpnsUnit,
+  McshStn000048:413  <br>* McshEngl.JpnsLogoView'phoneme!=JpnsPhnm,  ->  <br>* McshEngl.JpnsviewLogo'phoneme!=JpnsPhnm,
+  McshStn000048:651  <br>* McshEngl.JpnsLogoView'script!⇒JpnsChar,  ->  <br>* McshEngl.JpnsviewLogo'script!⇒JpnsChar,
+  McshStn000048:3991  <h3 id="idLJpnsutsmH3">unit-system of JpnsLogoView  ->  <h3 id="idLJpnsutsmH3">unit-system of JpnsviewLogo
+  McshStn000048:3999  <br>* McshEngl.JpnsLogoView'unit_system,  ->  <br>* McshEngl.JpnsviewLogo'unit_system,
+  McshStn000048:4000  <br>* McshEngl.JpnsLogoView'unit-system!⇒JpnsLogoView'unit_system,  ->  <br>* McshEngl.JpnsviewLogo'unit-system!⇒JpnsviewLogo'unit_system,
+  McshStn000048:4004  <h4 id="idLJpnssylbH4">syllable of JpnsLogoView  ->  <h4 id="idLJpnssylbH4">syllable of JpnsviewLogo
+  McshStn000048:4013  <br>* McshEngl.JpnsLogoView'syllable!⇒JpnsSylb,  ->  <br>* McshEngl.JpnsviewLogo'syllable!⇒JpnsSylb,
+  McshStn000048:4014  <br>* McshEngl.JpnsLogoView'unit-system'syllable!⇒JpnsSylb,  ->  <br>* McshEngl.JpnsviewLogo'unit-system'syllable!⇒JpnsSylb,
+  McshStn000048:4043  <h4 id="idLJpnswordH4">word of JpnsLogoView  ->  <h4 id="idLJpnswordH4">word of JpnsviewLogo
+  McshStn000048:4051  <br>* McshEngl.JpnsLogoView'word,  ->  <br>* McshEngl.JpnsviewLogo'word,
+  McshStn000048:4053  <br>* McshEngl.JpnsLogoView'unit-system'word,  ->  <br>* McshEngl.JpnsviewLogo'unit-system'word,
+  McshStn000048:4059  <h3 id="idLJpnsnameH3">name of JpnsLogoView  ->  <h3 id="idLJpnsnameH3">name of JpnsviewLogo
+  McshStn000048:4065  <br>* McshEngl.JpnsLogoView'name,  ->  <br>* McshEngl.JpnsviewLogo'name,
+  McshStn000048:4070  <h3 id="idLJpnsargoH3">argu-name of JpnsLogoView  ->  <h3 id="idLJpnsargoH3">argu-name of JpnsviewLogo
+  McshStn000048:4078  <br>* McshEngl.JpnsLogoView'argu_name!⇒Jpnsargu,  ->  <br>* McshEngl.JpnsviewLogo'argu_name!⇒Jpnsargu,
+  McshStn000048:4079  <br>* McshEngl.JpnsLogoView'argu-name!⇒Jpnsargu,  ->  <br>* McshEngl.JpnsviewLogo'argu-name!⇒Jpnsargu,
+  McshStn000048:4192  <br>* McshEngl.JpnsLogoView'argu-name'noun-name!⇒Jpnsnoun,  ->  <br>* McshEngl.JpnsviewLogo'argu-name'noun-name!⇒Jpnsnoun,
+  McshStn000048:4214  <br>* McshEngl.JpnsLogoView'argu-name.pronoun!⇒Jpnsargu.pronoun,  ->  <br>* McshEngl.JpnsviewLogo'argu-name.pronoun!⇒Jpnsargu.pronoun,
+  McshStn000048:4225  <h3 id="idLJpnsverbH3">verb-name of JpnsLogoView  ->  <h3 id="idLJpnsverbH3">verb-name of JpnsviewLogo
+  McshStn000048:4306  <br>* McshEngl.JpnsLogoView'verb-name!⇒Jpnsverb,  ->  <br>* McshEngl.JpnsviewLogo'verb-name!⇒Jpnsverb,
+  McshStn000048:4311  <h3 id="idLJpnsconjH3">conjunction-name of JpnsLogoView  ->  <h3 id="idLJpnsconjH3">conjunction-name of JpnsviewLogo
+  McshStn000048:4389  <br>* McshEngl.JpnsLogoView'conjunction-name!⇒Jpnsconj,  ->  <br>* McshEngl.JpnsviewLogo'conjunction-name!⇒Jpnsconj,
+  McshStn000048:4646  <h3 id="idLJpnsagsmH3">argu-phrase of JpnsLogoView  ->  <h3 id="idLJpnsagsmH3">argu-phrase of JpnsviewLogo
+  McshStn000048:4652  <br>* McshEngl.JpnsLogoView'argu_phrase,  ->  <br>* McshEngl.JpnsviewLogo'argu_phrase,
+  McshStn000048:4653  <br>* McshEngl.JpnsLogoView'argu-phrase!⇒JpnsLogoView'argu_phrase,  ->  <br>* McshEngl.JpnsviewLogo'argu-phrase!⇒JpnsviewLogo'argu_phrase,
+  McshStn000048:4658  <h3 id="idLJpnsvbatH3">verb-argument of JpnsLogoView  ->  <h3 id="idLJpnsvbatH3">verb-argument of JpnsviewLogo
+  McshStn000048:4666  <br>* McshEngl.JpnsLogoView'verb-argument,  ->  <br>* McshEngl.JpnsviewLogo'verb-argument,
+  McshStn000048:4779  <br>* McshEngl.JpnsLogoView.topic!⇒JpnsTopic,  ->  <br>* McshEngl.JpnsviewLogo.topic!⇒JpnsTopic,
+  McshStn000048:4787  <h3 id="idLJpnssentH3">sentence of JpnsLogoView  ->  <h3 id="idLJpnssentH3">sentence of JpnsviewLogo
+  McshStn000048:4793  <br>* McshEngl.JpnsLogoView'sentence,  ->  <br>* McshEngl.JpnsviewLogo'sentence,
+  McshStn000048:4797  <h4 id="idLJpnssentbcexH4">basic-expression of JpnsLogoView  ->  <h4 id="idLJpnssentbcexH4">basic-expression of JpnsviewLogo
+  McshStn000048:4806  <br>* McshEngl.JpnsLogoView'basic-expression!⇒JpnsExpr,  ->  <br>* McshEngl.JpnsviewLogo'basic-expression!⇒JpnsExpr,
+  McshStn000048:4807  <br>* McshEngl.JpnsLogoView'sentence'basic-expression!⇒JpnsExpr,  ->  <br>* McshEngl.JpnsviewLogo'sentence'basic-expression!⇒JpnsExpr,
+  McshStn000048:4973  <h3 id="idLJpnssectH3">section of JpnsLogoView  ->  <h3 id="idLJpnssectH3">section of JpnsviewLogo
+  McshStn000048:4979  <br>* McshEngl.JpnsLogoView'section,  ->  <br>* McshEngl.JpnsviewLogo'section,
+  McshStn000048:4984  <h3 id="idLJpnsrtndH3">root-node of JpnsLogoView  ->  <h3 id="idLJpnsrtndH3">root-node of JpnsviewLogo
+  McshStn000048:4990  <br>* McshEngl.JpnsLogoView'root_node,  ->  <br>* McshEngl.JpnsviewLogo'root_node,
+  McshStn000048:4991  <br>* McshEngl.JpnsLogoView'root-node!⇒JpnsLogoView'root_node,  ->  <br>* McshEngl.JpnsviewLogo'root-node!⇒JpnsviewLogo'root_node,
+  McshStn000050:353  <h3 id="idLKhmrsxtrH3">syntax-tree of KhmrLogoView  ->  <h3 id="idLKhmrsxtrH3">syntax-tree of KhmrviewLogo
+  McshStn000050:359  <br>* McshEngl.KhmrLogoView'syntax_tree,  ->  <br>* McshEngl.KhmrviewLogo'syntax_tree,
+  McshStn000050:360  <br>* McshEngl.KhmrLogoView'syntax-tree!⇒KhmrLogoView'syntax_tree,  ->  <br>* McshEngl.KhmrviewLogo'syntax-tree!⇒KhmrviewLogo'syntax_tree,
+  McshStn000050:365  <h3 id="idLKhmrnodeH3">node of KhmrLogoView  ->  <h3 id="idLKhmrnodeH3">node of KhmrviewLogo
+  McshStn000050:371  <br>* McshEngl.KhmrLogoView'node,  ->  <br>* McshEngl.KhmrviewLogo'node,
+  McshStn000050:376  <h3 id="idLKhmrunitH3">unit of KhmrLogoView  ->  <h3 id="idLKhmrunitH3">unit of KhmrviewLogo
+  McshStn000050:385  <br>* McshEngl.unit-of-KhmrLogoView!⇒KhmrUnit,  ->  <br>* McshEngl.unit-of-KhmrviewLogo!⇒KhmrUnit,
+  McshStn000050:386  <br>* McshEngl.KhmrUnit!=unit-of-KhmrLogoView,  ->  <br>* McshEngl.KhmrUnit!=unit-of-KhmrviewLogo,
+  McshStn000050:387  <br>* McshEngl.KhmrLogoView'unit!⇒KhmrUnit,  ->  <br>* McshEngl.KhmrviewLogo'unit!⇒KhmrUnit,
+  McshStn000050:492  <br>* McshEngl.KhmrLogoView'phoneme!=KhmrPhnm,  ->  <br>* McshEngl.KhmrviewLogo'phoneme!=KhmrPhnm,
+  McshStn000050:778  <br>* McshEngl.KhmrLogoView'letter!⇒KhmrLetr,  ->  <br>* McshEngl.KhmrviewLogo'letter!⇒KhmrLetr,
+  McshStn000050:2759  <h3 id="idLKhmrutsmH3">unit-system of KhmrLogoView  ->  <h3 id="idLKhmrutsmH3">unit-system of KhmrviewLogo
+  McshStn000050:2767  <br>* McshEngl.KhmrLogoView'unit_system,  ->  <br>* McshEngl.KhmrviewLogo'unit_system,
+  McshStn000050:2768  <br>* McshEngl.KhmrLogoView'unit-system!⇒KhmrLogoView'unit_system,  ->  <br>* McshEngl.KhmrviewLogo'unit-system!⇒KhmrviewLogo'unit_system,
+  McshStn000050:2772  <h4 id="idLKhmrsylbH4">syllable of KhmrLogoView  ->  <h4 id="idLKhmrsylbH4">syllable of KhmrviewLogo
+  McshStn000050:2781  <br>* McshEngl.KhmrLogoView'syllable!⇒KhmrSylb,  ->  <br>* McshEngl.KhmrviewLogo'syllable!⇒KhmrSylb,
+  McshStn000050:2782  <br>* McshEngl.KhmrLogoView'unit-system'syllable!⇒KhmrSylb,  ->  <br>* McshEngl.KhmrviewLogo'unit-system'syllable!⇒KhmrSylb,
+  McshStn000050:2811  <h4 id="idLKhmrwordH4">word of KhmrLogoView  ->  <h4 id="idLKhmrwordH4">word of KhmrviewLogo
+  McshStn000050:2819  <br>* McshEngl.KhmrLogoView'word,  ->  <br>* McshEngl.KhmrviewLogo'word,
+  McshStn000050:2821  <br>* McshEngl.KhmrLogoView'unit-system'word,  ->  <br>* McshEngl.KhmrviewLogo'unit-system'word,
+  McshStn000050:2827  <h3 id="idLKhmrnameH3">name of KhmrLogoView  ->  <h3 id="idLKhmrnameH3">name of KhmrviewLogo
+  McshStn000050:2833  <br>* McshEngl.KhmrLogoView'name,  ->  <br>* McshEngl.KhmrviewLogo'name,
+  McshStn000050:2838  <h3 id="idLKhmrargoH3">argu-name of KhmrLogoView  ->  <h3 id="idLKhmrargoH3">argu-name of KhmrviewLogo
+  McshStn000050:2846  <br>* McshEngl.KhmrLogoView'argu_name!⇒Khmrargu,  ->  <br>* McshEngl.KhmrviewLogo'argu_name!⇒Khmrargu,
+  McshStn000050:2847  <br>* McshEngl.KhmrLogoView'argu-name!⇒Khmrargu,  ->  <br>* McshEngl.KhmrviewLogo'argu-name!⇒Khmrargu,
+  McshStn000050:2918  <br>* McshEngl.KhmrLogoView'argu-name'noun-name!⇒Khmrnoun,  ->  <br>* McshEngl.KhmrviewLogo'argu-name'noun-name!⇒Khmrnoun,
+  McshStn000050:2987  <br>* McshEngl.KhmrLogoView'argu-name'adjective-name!⇒Khmradje,  ->  <br>* McshEngl.KhmrviewLogo'argu-name'adjective-name!⇒Khmradje,
+  McshStn000050:3065  <br>* McshEngl.KhmrLogoView'argu-name'adverb-name!⇒Khmradve,  ->  <br>* McshEngl.KhmrviewLogo'argu-name'adverb-name!⇒Khmradve,
+  McshStn000050:3077  <br>* McshEngl.KhmrLogoView'argu-name.pronoun!⇒Khmrargu.pronoun,  ->  <br>* McshEngl.KhmrviewLogo'argu-name.pronoun!⇒Khmrargu.pronoun,
+  McshStn000050:3158  <h3 id="idLKhmrverbH3">verb-name of KhmrLogoView  ->  <h3 id="idLKhmrverbH3">verb-name of KhmrviewLogo
+  McshStn000050:3237  <br>* McshEngl.KhmrLogoView'verb-name!⇒Khmrverb,  ->  <br>* McshEngl.KhmrviewLogo'verb-name!⇒Khmrverb,
+  McshStn000050:3242  <h3 id="idLKhmrconjH3">conjunction-name of KhmrLogoView  ->  <h3 id="idLKhmrconjH3">conjunction-name of KhmrviewLogo
+  McshStn000050:3310  <br>* McshEngl.KhmrLogoView'conjunction-name!⇒Khmrconj,  ->  <br>* McshEngl.KhmrviewLogo'conjunction-name!⇒Khmrconj,
+  McshStn000050:3315  <h3 id="idLKhmragsmH3">argu-phrase of KhmrLogoView  ->  <h3 id="idLKhmragsmH3">argu-phrase of KhmrviewLogo
+  McshStn000050:3321  <br>* McshEngl.KhmrLogoView'argu_phrase,  ->  <br>* McshEngl.KhmrviewLogo'argu_phrase,
+  McshStn000050:3322  <br>* McshEngl.KhmrLogoView'argu-phrase!⇒KhmrLogoView'argu_phrase,  ->  <br>* McshEngl.KhmrviewLogo'argu-phrase!⇒KhmrviewLogo'argu_phrase,
+  McshStn000050:3327  <h3 id="idLKhmrvbatH3">verb-argument of KhmrLogoView  ->  <h3 id="idLKhmrvbatH3">verb-argument of KhmrviewLogo
+  McshStn000050:3333  <br>* McshEngl.KhmrLogoView'verb_argument,  ->  <br>* McshEngl.KhmrviewLogo'verb_argument,
+  McshStn000050:3334  <br>* McshEngl.KhmrLogoView'verb-argument!⇒KhmrLogoView'verb_argument,  ->  <br>* McshEngl.KhmrviewLogo'verb-argument!⇒KhmrviewLogo'verb_argument,
+  McshStn000050:3339  <h3 id="idLKhmrsentH3">sentence of KhmrLogoView  ->  <h3 id="idLKhmrsentH3">sentence of KhmrviewLogo
+  McshStn000050:3345  <br>* McshEngl.KhmrLogoView'sentence,  ->  <br>* McshEngl.KhmrviewLogo'sentence,
+  McshStn000050:3349  <h4 id="idLKhmrsentbcexH4">basic-expression of KhmrLogoView  ->  <h4 id="idLKhmrsentbcexH4">basic-expression of KhmrviewLogo
+  McshStn000050:3358  <br>* McshEngl.KhmrLogoView'basic-expression!⇒KhmrExpr,  ->  <br>* McshEngl.KhmrviewLogo'basic-expression!⇒KhmrExpr,
+  McshStn000050:3359  <br>* McshEngl.KhmrLogoView'sentence'basic-expression!⇒KhmrExpr,  ->  <br>* McshEngl.KhmrviewLogo'sentence'basic-expression!⇒KhmrExpr,
+  McshStn000050:3525  <h3 id="idLKhmrsectH3">section of KhmrLogoView  ->  <h3 id="idLKhmrsectH3">section of KhmrviewLogo
+  McshStn000050:3531  <br>* McshEngl.KhmrLogoView'section,  ->  <br>* McshEngl.KhmrviewLogo'section,
+  McshStn000050:3536  <h3 id="idLKhmrrtndH3">root-node of KhmrLogoView  ->  <h3 id="idLKhmrrtndH3">root-node of KhmrviewLogo
+  McshStn000050:3542  <br>* McshEngl.KhmrLogoView'root_node,  ->  <br>* McshEngl.KhmrviewLogo'root_node,
+  McshStn000050:3543  <br>* McshEngl.KhmrLogoView'root-node!⇒KhmrLogoView'root_node,  ->  <br>* McshEngl.KhmrviewLogo'root-node!⇒KhmrviewLogo'root_node,

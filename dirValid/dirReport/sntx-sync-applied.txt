@@ -1,0 +1,199 @@
+SYNTAX-TREE MAIN-NAME <Code>sntx APPLIED — 2026-10-25
+name:: changed: 28 | tree lines: 9 | files: 27 | skipped: 0
+
+=== MAP old -> new (40)
+  syntax -> Hmnmsntx
+  Engl_sntx -> Englsntx
+  Espo_lago'syntax-tree -> Esposntx
+  EspoviewLogo'syntax-tree -> Esposntx
+  Zhon_syntax -> Zhonsntx
+  Deut_lago'syntax-tree -> Deutsntx
+  DeutviewLogo'syntax-tree -> Deutsntx
+  Bcms_lago'syntax-tree -> Bcmssntx
+  BcmsviewLogo'syntax-tree -> Bcmssntx
+  Span_lago'syntax-tree -> Spansntx
+  SpanviewLogo'syntax-tree -> Spansntx
+  Arab_lago'syntax-tree -> Arabsntx
+  ArabviewLogo'syntax-tree -> Arabsntx
+  Hiur_lago'syntax-tree -> Hiursntx
+  HiurviewLogo'syntax-tree -> Hiursntx
+  HindviewLogo'syntax_tree -> Hindsntx
+  UrduviewLogo'syntax_tree -> Urdusntx
+  Slv0Lago'syntax-tree -> Slv0sntx
+  Slv0viewLogo'syntax-tree -> Slv0sntx
+  Ide0_lago'syntax-tree -> Ide0sntx
+  Ide0viewLogo'syntax-tree -> Ide0sntx
+  Afa0_lago'syntax-tree -> Afa0sntx
+  Afa0viewLogo'syntax-tree -> Afa0sntx
+  Tur0_lago'syntax-tree -> Tur0sntx
+  Tur0viewLogo'syntax-tree -> Tur0sntx
+  Asa0_lago'syntax-tree -> Asa0sntx
+  Asa0viewLogo'syntax-tree -> Asa0sntx
+  Kora_lago'syntax-tree -> Korasntx
+  KoraviewLogo'syntax-tree -> Korasntx
+  VnmaviewLogo'syntax_tree -> Vnmasntx
+  ItlnviewLogo'syntax_tree -> Itlnsntx
+  FracviewLogo'syntax_tree -> Fracsntx
+  SbulviewLogo'syntax_tree -> Sbulsntx
+  SqipviewLogo'syntax_tree -> Sqipsntx
+  SmkdviewLogo'syntax_tree -> Smkdsntx
+  SslvviewLogo'syntax_tree -> Sslvsntx
+  SrusviewLogo'syntax_tree -> Srussntx
+  RomnviewLogo'syntax_tree -> Romnsntx
+  JpnsviewLogo'syntax_tree -> Jpnssntx
+  KhmrviewLogo'syntax_tree -> Khmrsntx
+
+=== SKIPPED (0)
+
+=== CHANGED (28)
+  McshLag000007:16444  syntax -> Hmnmsntx
+      <br>* McshEngl.syntax-tree--of-Hmnm_lago!⇒Hmnmsntx,
+      <br>* McshEngl.Hmnmsntx!=syntax-tree--of-Hmnm_lago,
+      <br>* McshEngl.syntax!⇒Hmnmsntx,
+      <br>* McshEngl.Hmnmsyntax!⇒Hmnmsntx,
+  McshLag000011:584  Engl_sntx -> Englsntx
+      <br>* McshEngl.syntax-tree--of-Engl_lago!⇒Englsntx,
+      <br>* McshEngl.Englsntx!=syntax-tree--of-Engl_lago,
+      <br>* McshEngl.syntax-tree-of-Engl_logo-view!⇒Englsntx,
+      <br>* McshEngl.Engl_sntx!⇒Englsntx,
+  McshLag000012:338  Espo_lago'syntax-tree | EspoviewLogo'syntax-tree -> Esposntx
+      <br>* McshEngl.syntax-tree--of-Espo_lago!⇒Esposntx,
+      <br>* McshEngl.Esposntx!=syntax-tree--of-Espo_lago,
+      <br>* McshEngl.Espo_lago'syntax-tree!⇒Esposntx,
+      <br>* McshEngl.EspoviewLogo'syntax-tree!⇒Esposntx,
+  McshLag000018:587  Zhon_syntax -> Zhonsntx
+      <br>* McshEngl.syntax-tree--of-Zhon_lago!⇒Zhonsntx,
+      <br>* McshEngl.Zhonsntx!=syntax-tree--of-Zhon_lago,
+      <br>* McshEngl.Zhon_syntax!⇒Zhonsntx,
+      <br>* McshEngl.Zhon_lago'syntax-tree!⇒Zhonsntx,
+  McshLag000033:343  Deut_lago'syntax-tree | DeutviewLogo'syntax-tree -> Deutsntx
+      <br>* McshEngl.syntax-tree--of-Deut_lago!⇒Deutsntx,
+      <br>* McshEngl.Deutsntx!=syntax-tree--of-Deut_lago,
+      <br>* McshEngl.Deut_lago'syntax-tree!⇒Deutsntx,
+      <br>* McshEngl.DeutviewLogo'syntax-tree!⇒Deutsntx,
+  McshLag000034:320  Bcms_lago'syntax-tree | BcmsviewLogo'syntax-tree -> Bcmssntx
+      <br>* McshEngl.syntax-tree--of-Bcms_lago!⇒Bcmssntx,
+      <br>* McshEngl.Bcmssntx!=syntax-tree--of-Bcms_lago,
+      <br>* McshEngl.Bcms_lago'syntax-tree!⇒Bcmssntx,
+      <br>* McshEngl.BcmsviewLogo'syntax-tree!⇒Bcmssntx,
+  McshLag000035:347  Span_lago'syntax-tree | SpanviewLogo'syntax-tree -> Spansntx
+      <br>* McshEngl.syntax-tree--of-Span_lago!⇒Spansntx,
+      <br>* McshEngl.Spansntx!=syntax-tree--of-Span_lago,
+      <br>* McshEngl.Span_lago'syntax-tree!⇒Spansntx,
+      <br>* McshEngl.SpanviewLogo'syntax-tree!⇒Spansntx,
+  McshLag000036:344  Arab_lago'syntax-tree | ArabviewLogo'syntax-tree -> Arabsntx
+      <br>* McshEngl.syntax-tree--of-Arab_lago!⇒Arabsntx,
+      <br>* McshEngl.Arabsntx!=syntax-tree--of-Arab_lago,
+      <br>* McshEngl.Arab_lago'syntax-tree!⇒Arabsntx,
+      <br>* McshEngl.ArabviewLogo'syntax-tree!⇒Arabsntx,
+  McshLag000037:342  Hiur_lago'syntax-tree | HiurviewLogo'syntax-tree -> Hiursntx
+      <br>* McshEngl.syntax-tree--of-Hiur_lago!⇒Hiursntx,
+      <br>* McshEngl.Hiursntx!=syntax-tree--of-Hiur_lago,
+      <br>* McshEngl.Hiur_lago'syntax-tree!⇒Hiursntx,
+      <br>* McshEngl.HiurviewLogo'syntax-tree!⇒Hiursntx,
+  McshLag000037:2538  HindviewLogo'syntax_tree -> Hindsntx
+      <br>* McshEngl.syntax-tree--of-Hind_lago!⇒Hindsntx,
+      <br>* McshEngl.Hindsntx!=syntax-tree--of-Hind_lago,
+      <br>* McshEngl.HindviewLogo'syntax_tree!⇒Hindsntx,
+      <br>* McshEngl.HindviewLogo'syntax-tree!⇒Hindsntx,
+  McshLag000037:4592  UrduviewLogo'syntax_tree -> Urdusntx
+      <br>* McshEngl.syntax-tree--of-Urdu_lago!⇒Urdusntx,
+      <br>* McshEngl.Urdusntx!=syntax-tree--of-Urdu_lago,
+      <br>* McshEngl.UrduviewLogo'syntax_tree!⇒Urdusntx,
+      <br>* McshEngl.UrduviewLogo'syntax-tree!⇒Urdusntx,
+  McshLag000038:374  Slv0Lago'syntax-tree | Slv0viewLogo'syntax-tree -> Slv0sntx
+      <br>* McshEngl.syntax-tree--of-Slv0Lago!⇒Slv0sntx,
+      <br>* McshEngl.Slv0sntx!=syntax-tree--of-Slv0Lago,
+      <br>* McshEngl.Slv0Lago'syntax-tree!⇒Slv0sntx,
+      <br>* McshEngl.Slv0viewLogo'syntax-tree!⇒Slv0sntx,
+  McshLag000039:370  Ide0_lago'syntax-tree | Ide0viewLogo'syntax-tree -> Ide0sntx
+      <br>* McshEngl.syntax-tree--of-Ide0_lago!⇒Ide0sntx,
+      <br>* McshEngl.Ide0sntx!=syntax-tree--of-Ide0_lago,
+      <br>* McshEngl.Ide0_lago'syntax-tree!⇒Ide0sntx,
+      <br>* McshEngl.Ide0viewLogo'syntax-tree!⇒Ide0sntx,
+  McshLag000040:386  Afa0_lago'syntax-tree | Afa0viewLogo'syntax-tree -> Afa0sntx
+      <br>* McshEngl.syntax-tree--of-Afa0_lago!⇒Afa0sntx,
+      <br>* McshEngl.Afa0sntx!=syntax-tree--of-Afa0_lago,
+      <br>* McshEngl.Afa0_lago'syntax-tree!⇒Afa0sntx,
+      <br>* McshEngl.Afa0viewLogo'syntax-tree!⇒Afa0sntx,
+  McshLag000041:376  Tur0_lago'syntax-tree | Tur0viewLogo'syntax-tree -> Tur0sntx
+      <br>* McshEngl.syntax-tree--of-Tur0_lago!⇒Tur0sntx,
+      <br>* McshEngl.Tur0sntx!=syntax-tree--of-Tur0_lago,
+      <br>* McshEngl.Tur0_lago'syntax-tree!⇒Tur0sntx,
+      <br>* McshEngl.Tur0viewLogo'syntax-tree!⇒Tur0sntx,
+  McshLag000042:349  Asa0_lago'syntax-tree | Asa0viewLogo'syntax-tree -> Asa0sntx
+      <br>* McshEngl.syntax-tree--of-Asa0_lago!⇒Asa0sntx,
+      <br>* McshEngl.Asa0sntx!=syntax-tree--of-Asa0_lago,
+      <br>* McshEngl.Asa0_lago'syntax-tree!⇒Asa0sntx,
+      <br>* McshEngl.Asa0viewLogo'syntax-tree!⇒Asa0sntx,
+  McshLag000043:334  Kora_lago'syntax-tree | KoraviewLogo'syntax-tree -> Korasntx
+      <br>* McshEngl.syntax-tree--of-Kora_lago!⇒Korasntx,
+      <br>* McshEngl.Korasntx!=syntax-tree--of-Kora_lago,
+      <br>* McshEngl.Kora_lago'syntax-tree!⇒Korasntx,
+      <br>* McshEngl.KoraviewLogo'syntax-tree!⇒Korasntx,
+  McshStn000034:332  VnmaviewLogo'syntax_tree -> Vnmasntx
+      <br>* McshEngl.syntax-tree--of-Vnma_lago!⇒Vnmasntx,
+      <br>* McshEngl.Vnmasntx!=syntax-tree--of-Vnma_lago,
+      <br>* McshEngl.VnmaviewLogo'syntax_tree!⇒Vnmasntx,
+      <br>* McshEngl.VnmaviewLogo'syntax-tree!⇒Vnmasntx,
+  McshStn000035:296  ItlnviewLogo'syntax_tree -> Itlnsntx
+      <br>* McshEngl.syntax-tree--of-lagoItln!⇒Itlnsntx,
+      <br>* McshEngl.Itlnsntx!=syntax-tree--of-lagoItln,
+      <br>* McshEngl.ItlnviewLogo'syntax_tree!⇒Itlnsntx,
+      <br>* McshEngl.ItlnviewLogo'syntax-tree!⇒Itlnsntx,
+  McshStn000037:293  FracviewLogo'syntax_tree -> Fracsntx
+      <br>* McshEngl.syntax-tree--of-Frac_lago!⇒Fracsntx,
+      <br>* McshEngl.Fracsntx!=syntax-tree--of-Frac_lago,
+      <br>* McshEngl.FracviewLogo'syntax_tree!⇒Fracsntx,
+      <br>* McshEngl.FracviewLogo'syntax-tree!⇒Fracsntx,
+  McshStn000038:302  SbulviewLogo'syntax_tree -> Sbulsntx
+      <br>* McshEngl.syntax-tree--of-Sbul_lago!⇒Sbulsntx,
+      <br>* McshEngl.Sbulsntx!=syntax-tree--of-Sbul_lago,
+      <br>* McshEngl.SbulviewLogo'syntax_tree!⇒Sbulsntx,
+      <br>* McshEngl.SbulviewLogo'syntax-tree!⇒Sbulsntx,
+  McshStn000039:330  SqipviewLogo'syntax_tree -> Sqipsntx
+      <br>* McshEngl.syntax-tree--of-Sqip_lago!⇒Sqipsntx,
+      <br>* McshEngl.Sqipsntx!=syntax-tree--of-Sqip_lago,
+      <br>* McshEngl.SqipviewLogo'syntax_tree!⇒Sqipsntx,
+      <br>* McshEngl.SqipviewLogo'syntax-tree!⇒Sqipsntx,
+  McshStn000040:373  SmkdviewLogo'syntax_tree -> Smkdsntx
+      <br>* McshEngl.syntax-tree--of-Smkd_lago!⇒Smkdsntx,
+      <br>* McshEngl.Smkdsntx!=syntax-tree--of-Smkd_lago,
+      <br>* McshEngl.SmkdviewLogo'syntax_tree!⇒Smkdsntx,
+      <br>* McshEngl.SmkdviewLogo'syntax-tree!⇒Smkdsntx,
+  McshStn000041:387  SslvviewLogo'syntax_tree -> Sslvsntx
+      <br>* McshEngl.syntax-tree--of-Sslv_lago!⇒Sslvsntx,
+      <br>* McshEngl.Sslvsntx!=syntax-tree--of-Sslv_lago,
+      <br>* McshEngl.SslvviewLogo'syntax_tree!⇒Sslvsntx,
+      <br>* McshEngl.SslvviewLogo'syntax-tree!⇒Sslvsntx,
+  McshStn000043:278  SrusviewLogo'syntax_tree -> Srussntx
+      <br>* McshEngl.syntax-tree--of-Srus_lago!⇒Srussntx,
+      <br>* McshEngl.Srussntx!=syntax-tree--of-Srus_lago,
+      <br>* McshEngl.SrusviewLogo'syntax_tree!⇒Srussntx,
+      <br>* McshEngl.SrusviewLogo'syntax-tree!⇒Srussntx,
+  McshStn000044:316  RomnviewLogo'syntax_tree -> Romnsntx
+      <br>* McshEngl.syntax-tree--of-Romn_lago!⇒Romnsntx,
+      <br>* McshEngl.Romnsntx!=syntax-tree--of-Romn_lago,
+      <br>* McshEngl.RomnviewLogo'syntax_tree!⇒Romnsntx,
+      <br>* McshEngl.RomnviewLogo'syntax-tree!⇒Romnsntx,
+  McshStn000048:365  JpnsviewLogo'syntax_tree -> Jpnssntx
+      <br>* McshEngl.syntax-tree--of-Jpns_lago!⇒Jpnssntx,
+      <br>* McshEngl.Jpnssntx!=syntax-tree--of-Jpns_lago,
+      <br>* McshEngl.JpnsviewLogo'syntax_tree!⇒Jpnssntx,
+      <br>* McshEngl.JpnsviewLogo'syntax-tree!⇒Jpnssntx,
+  McshStn000050:354  KhmrviewLogo'syntax_tree -> Khmrsntx
+      <br>* McshEngl.syntax-tree--of-Khmr_lago!⇒Khmrsntx,
+      <br>* McshEngl.Khmrsntx!=syntax-tree--of-Khmr_lago,
+      <br>* McshEngl.KhmrviewLogo'syntax_tree!⇒Khmrsntx,
+      <br>* McshEngl.KhmrviewLogo'syntax-tree!⇒Khmrsntx,
+
+=== TREES (9)
+  McshLag000007:16520  <h3 id="idLHmnmsxtrgstrH3">GENERIC-SPECIFIC-TREE of syntax  ->  <h3 id="idLHmnmsxtrgstrH3">GENERIC-SPECIFIC-TREE of Hmnmsntx
+  McshLag000007:16526  <br>* McshEngl.syntax'generic-specific-tree,  ->  <br>* McshEngl.Hmnmsntx'generic-specific-tree,
+  McshLag000007:16527  <br>* McshEngl.syntax'specific-generic-tree,  ->  <br>* McshEngl.Hmnmsntx'specific-generic-tree,
+  McshLag000007:16530  <br>* McshEngl.syntax_Gntr,  ->  <br>* McshEngl.Hmnmsntx_Gntr,
+  McshLag000007:16535  <br>* McshEngl.syntax.specific,  ->  <br>* McshEngl.Hmnmsntx.specific,
+  McshLag000007:16536  <br>* McshEngl.syntax_Sptr,  ->  <br>* McshEngl.Hmnmsntx_Sptr,
+  McshLag000018:605  <br>* McshEngl.Zhon_syntax_Gntr,  ->  <br>* McshEngl.Zhonsntx_Gntr,
+  McshLag000018:607  <br>* syntax_Gntr,  ->  <br>* Hmnmsntx_Gntr,
+  McshLag000020:176  <br>* syntax_Gntr,  ->  <br>* Hmnmsntx_Gntr,

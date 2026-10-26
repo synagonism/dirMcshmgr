@@ -1,0 +1,17 @@
+SEMU-INFO MAIN-NAME <Code>semuinfo APPLIED — 2026-10-25
+name:: changed: 1 | tree lines: 1 | files: 1 | skipped: 0
+
+=== MAP old -> new (1)
+  Semuinfo -> Hmnmsemuinfo
+
+=== SKIPPED (0)
+
+=== CHANGED (1)
+  McshLag000007:1053  Semuinfo -> Hmnmsemuinfo
+      <br>* McshEngl.semu-info--of-Hmnm_lago!⇒Hmnmsemuinfo,
+      <br>* McshEngl.Hmnmsemuinfo!=semu-info--of-Hmnm_lago,
+      <br>* McshEngl.semu-info!⇒Hmnmsemuinfo,
+      <br>* McshEngl.Semuinfo!⇒Hmnmsemuinfo,
+
+=== TREES (1)
+  McshLag000007:1084  <br>* McshEngl.Semuinfo_Gntr,  ->  <br>* McshEngl.Hmnmsemuinfo_Gntr,

@@ -1,0 +1,507 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 47 | renamed: 47 | name:: paragraphs: 47 | tree/reference lines: 138 | old names kept (M!⇒N added): 47 | files: 24
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (24)
+  McshLag000007         80
+  McshLag000010         27
+  McshLag000011         36
+  McshLag000012          1
+  McshLag000018         90
+  McshLag000022          1
+  McshLag000026         17
+  McshLag000027         12
+  McshLag000030          1
+  McshLag000033         12
+  McshLag000034         13
+  McshLag000035         13
+  McshLag000036         13
+  McshLag000037         13
+  McshLag000038         13
+  McshLag000039         13
+  McshLag000040         13
+  McshLag000041         13
+  McshLag000042         13
+  McshLag000043         13
+  McshStn000035          6
+  McshStn000038          5
+  McshStn000048          4
+  McshStn000050          4
+
+=== McshLag000007 (80)
+  McshLag000007:24088  <br>* McshEngl.auxiliary-part-of-verb!⇒verb_auxi,  ->  <br>* McshEngl.auxiliary-part-of-verb!⇒Hmnmverb_auxi,
+  McshLag000007:24089  <br>* McshEngl.verb_auxi!=auxiliary-part-of-verb, {2025-10-24}  ->  <br>* McshEngl.Hmnmverb_auxi!=auxiliary-part-of-verb, {2025-10-24}
+  McshLag000007:24090  <br>* McshEngl.VerbAux!⇒verb_auxi,  ->  <br>* McshEngl.VerbAux!⇒Hmnmverb_auxi,
+  McshLag000007:24091  <br>* McshEngl.Verbmebr'auxiliary-part!⇒verb_auxi,  ->  <br>* McshEngl.Verbmebr'auxiliary-part!⇒Hmnmverb_auxi,
+  McshLag000007:24092  <br>* McshEngl.Verbmebr'partB!⇒verb_auxi,  ->  <br>* McshEngl.Verbmebr'partB!⇒Hmnmverb_auxi,
+  McshLag000007:24093  <br>* McshEngl.verb'auxiliary-part!⇒verb_auxi,  ->  <br>* McshEngl.verb'auxiliary-part!⇒Hmnmverb_auxi,
+  McshLag000007:24090  ADD  McshEngl.verb_auxi!⇒Hmnmverb_auxi,
+  McshLag000007:24067  <br>* McshEngl.verb_form,  ->  <br>* McshEngl.Hmnmverb_form,
+  McshLag000007:24068  <br>* McshEngl.auxiliaryNo-part-of-verb!⇒verb_form,  ->  <br>* McshEngl.auxiliaryNo-part-of-verb!⇒Hmnmverb_form,
+  McshLag000007:24069  <br>* McshEngl.content-part-of-verb!⇒verb_form,  ->  <br>* McshEngl.content-part-of-verb!⇒Hmnmverb_form,
+  McshLag000007:24070  <br>* McshEngl.form-of-Verbmebr!⇒verb_form,  ->  <br>* McshEngl.form-of-Verbmebr!⇒Hmnmverb_form,
+  McshLag000007:24071  <br>* McshEngl.form-part-of-verb!⇒verb_form,  ->  <br>* McshEngl.form-part-of-verb!⇒Hmnmverb_form,
+  McshLag000007:24072  <br>* McshEngl.Verbmebr'partA!⇒verb_form,  ->  <br>* McshEngl.Verbmebr'partA!⇒Hmnmverb_form,
+  McshLag000007:24073  <br>* McshEngl.Verbmebr'form!⇒verb_form,  ->  <br>* McshEngl.Verbmebr'form!⇒Hmnmverb_form,
+  McshLag000007:24074  <br>* McshEngl.verb-form!⇒verb_form,  ->  <br>* McshEngl.verb-form!⇒Hmnmverb_form,
+  McshLag000007:24075  <br>* McshEngl.verb'form!⇒verb_form,  ->  <br>* McshEngl.verb'form!⇒Hmnmverb_form,
+  McshLag000007:24076  <br>* McshEngl.Verbmebr'form-part!⇒verb_form,  ->  <br>* McshEngl.Verbmebr'form-part!⇒Hmnmverb_form,
+  McshLag000007:24068  ADD  McshEngl.verb_form!⇒Hmnmverb_form,
+  McshLag000007:23067  <br>* McshEngl.present-Verbmebr!⇒verb_present,  ->  <br>* McshEngl.present-Verbmebr!⇒Hmnmverb_present,
+  McshLag000007:23068  <br>* McshEngl.verb_present!=present-Verbmebr,  ->  <br>* McshEngl.Hmnmverb_present!=present-Verbmebr,
+  McshLag000007:23069  <br>* McshEngl.Verbmebr.present!⇒verb_present,  ->  <br>* McshEngl.Verbmebr.present!⇒Hmnmverb_present,
+  McshLag000007:23069  ADD  McshEngl.verb_present!⇒Hmnmverb_present,
+  McshLag000007:22893  <br>* McshEngl.verb_mood,  ->  <br>* McshEngl.Hmnmverb_mood,
+  McshLag000007:22894  <br>* McshEngl.verb'mood!⇒verb_mood,  ->  <br>* McshEngl.verb'mood!⇒Hmnmverb_mood,
+  McshLag000007:22895  <br>* McshEngl.Verbmebr.mood!⇒verb_mood,  ->  <br>* McshEngl.Verbmebr.mood!⇒Hmnmverb_mood,
+  McshLag000007:22894  ADD  McshEngl.verb_mood!⇒Hmnmverb_mood,
+  McshLag000007:22450  <br>* McshEngl.verb, {2021-05-30}  ->  <br>* McshEngl.Hmnmverb, {2021-05-30}
+  McshLag000007:22451  <br>* McshEngl.Hmnm_lago'verb!⇒verb,  ->  <br>* McshEngl.Hmnm_lago'verb!⇒Hmnmverb,
+  McshLag000007:22452  <br>* McshEngl.Hmnm_lago-verb!⇒verb,  ->  <br>* McshEngl.Hmnm_lago-verb!⇒Hmnmverb,
+  McshLag000007:22453  <br>* McshEngl.Hmnm_verb!⇒verb,  ->  <br>* McshEngl.Hmnm_verb!⇒Hmnmverb,
+  McshLag000007:22454  <br>* McshEngl.Hmnm_lagoVerb!⇒verb,  ->  <br>* McshEngl.Hmnm_lagoVerb!⇒Hmnmverb,
+  McshLag000007:22455  <br>* McshEngl.HmnmVerb!⇒verb,  ->  <br>* McshEngl.HmnmVerb!⇒Hmnmverb,
+  McshLag000007:22456  <br>* McshEngl.VerbName!⇒verb,  ->  <br>* McshEngl.VerbName!⇒Hmnmverb,
+  McshLag000007:22457  <br>* McshEngl.logo-verb!⇒verb,  ->  <br>* McshEngl.logo-verb!⇒Hmnmverb,
+  McshLag000007:22458  <br>* McshEngl.name.verb!⇒verb,  ->  <br>* McshEngl.name.verb!⇒Hmnmverb,
+  McshLag000007:22459  <br>* McshEngl.nameVerb!⇒verb, {2020-06-12}  ->  <br>* McshEngl.nameVerb!⇒Hmnmverb, {2020-06-12}
+  McshLag000007:22460  <br>* McshEngl.sentence'verb!⇒verb,  ->  <br>* McshEngl.sentence'verb!⇒Hmnmverb,
+  McshLag000007:22461  <br>* McshEngl.sentence/verb!⇒verb,  ->  <br>* McshEngl.sentence/verb!⇒Hmnmverb,
+  McshLag000007:22462  <br>* McshEngl.termSemu.verb!⇒verb,  ->  <br>* McshEngl.termSemu.verb!⇒Hmnmverb,
+  McshLag000007:22463  <br>* McshEngl.verb.lagoElln!=ρήμα,  ->  <br>* McshEngl.Hmnmverb.lagoElln!=ρήμα,
+  McshLag000007:22464  <br>* McshEngl.verb.lagoSbul!=глагол,  ->  <br>* McshEngl.Hmnmverb.lagoSbul!=глагол,
+  McshLag000007:22465  <br>* McshEngl.verb.lagoSqip!=folje,  ->  <br>* McshEngl.Hmnmverb.lagoSqip!=folje,
+  McshLag000007:22466  <br>* McshEngl.verb.lagoTurk!=fiil,  ->  <br>* McshEngl.Hmnmverb.lagoTurk!=fiil,
+  McshLag000007:22467  <br>* McshEngl.verb.lagoZhon!=dòngcí-动词,  ->  <br>* McshEngl.Hmnmverb.lagoZhon!=dòngcí-动词,
+  McshLag000007:22468  <br>* McshEngl.verbHmnm!⇒verb, {2021-05-29}  ->  <br>* McshEngl.verbHmnm!⇒Hmnmverb, {2021-05-29}
+  McshLag000007:22469  <br>* McshEngl.verb-of-Hmnm_lago!⇒verb,  ->  <br>* McshEngl.verb-of-Hmnm_lago!⇒Hmnmverb,
+  McshLag000007:22470  <br>* McshEngl.verb-term!⇒verb,  ->  <br>* McshEngl.verb-term!⇒Hmnmverb,
+  McshLag000007:22471  <br>* McshEngl.verbLοgHumn!⇒verb,  ->  <br>* McshEngl.verbLοgHumn!⇒Hmnmverb,
+  McshLag000007:22472  <br>* McshEngl.HmnmviewLogo'verb-name!⇒verb,  ->  <br>* McshEngl.HmnmviewLogo'verb-name!⇒Hmnmverb,
+  McshLag000007:22474  <br>* McshSngu.namo-ro!=verb,  ->  <br>* McshSngu.namo-ro!=Hmnmverb,
+  McshLag000007:22476  <br>* McshZhon.dòngcí-动词!=verb,  ->  <br>* McshZhon.dòngcí-动词!=Hmnmverb,
+  McshLag000007:22477  <br>* McshZhon.动词-dòngcí!=verb,  ->  <br>* McshZhon.动词-dòngcí!=Hmnmverb,
+  McshLag000007:22479  <br>* McshEspo.verbo!=verb,  ->  <br>* McshEspo.verbo!=Hmnmverb,
+  McshLag000007:22481  <br>* McshDeut.Verb!=verb,  ->  <br>* McshDeut.Verb!=Hmnmverb,
+  McshLag000007:22483  <br>* McshElln.ρήμα!το!=verb,  ->  <br>* McshElln.ρήμα!το!=Hmnmverb,
+  McshLag000007:22485  <br>* McshItln.verbo!il!=verb,  ->  <br>* McshItln.verbo!il!=Hmnmverb,
+  McshLag000007:22487  <br>* McshTurk.fiil!=verb,  ->  <br>* McshTurk.fiil!=Hmnmverb,
+  McshLag000007:22451  ADD  McshEngl.verb!⇒Hmnmverb,
+  McshLag000007:18944  <br>* verb!@McshLag000007#idLHmnmverb,  ->  <br>* Hmnmverb!@McshLag000007#idLHmnmverb,
+  McshLag000007:19395  <br>* verb!@McshLag000007#idLHmnmverb,  ->  <br>* Hmnmverb!@McshLag000007#idLHmnmverb,
+  McshLag000007:19443  <br>* verb!@McshLag000007#idLHmnmverb,  ->  <br>* Hmnmverb!@McshLag000007#idLHmnmverb,
+  McshLag000007:19676  <br>* verb!@McshLag000007#idLHmnmverb,  ->  <br>* Hmnmverb!@McshLag000007#idLHmnmverb,
+  McshLag000007:22901  <h5 id="idLHmnmverbmoodgstrH5">GENERIC-SPECIFIC-TREE of verb_mood  ->  <h5 id="idLHmnmverbmoodgstrH5">GENERIC-SPECIFIC-TREE of Hmnmverb_mood
+  McshLag000007:22907  <br>* McshEngl.verb_mood'generic-specific-tree,  ->  <br>* McshEngl.Hmnmverb_mood'generic-specific-tree,
+  McshLag000007:22908  <br>* McshEngl.verb_mood'specific-generic-tree,  ->  <br>* McshEngl.Hmnmverb_mood'specific-generic-tree,
+  McshLag000007:22911  <br>* McshEngl.verb_mood_Gntr,  ->  <br>* McshEngl.Hmnmverb_mood_Gntr,
+  McshLag000007:22916  <br>* McshEngl.verb_mood.specific,  ->  <br>* McshEngl.Hmnmverb_mood.specific,
+  McshLag000007:22917  <br>* McshEngl.verb_mood_Sptr,  ->  <br>* McshEngl.Hmnmverb_mood_Sptr,
+  McshLag000007:23331  <h5 id="idLHmnmverbmbrPrstgstrH5">GENERIC-SPECIFIC-TREE of verb_present  ->  <h5 id="idLHmnmverbmbrPrstgstrH5">GENERIC-SPECIFIC-TREE of Hmnmverb_present
+  McshLag000007:23337  <br>* McshEngl.verb_present'generic-specific-tree,  ->  <br>* McshEngl.Hmnmverb_present'generic-specific-tree,
+  McshLag000007:23338  <br>* McshEngl.verb_present'specific-generic-tree,  ->  <br>* McshEngl.Hmnmverb_present'specific-generic-tree,
+  McshLag000007:23341  <br>* McshEngl.verb_present_Gntr,  ->  <br>* McshEngl.Hmnmverb_present_Gntr,
+  McshLag000007:23346  <br>* McshEngl.verb_present.specific,  ->  <br>* McshEngl.Hmnmverb_present.specific,
+  McshLag000007:23347  <br>* McshEngl.verb_present_Sptr,  ->  <br>* McshEngl.Hmnmverb_present_Sptr,
+  McshLag000007:24844  <h3 id="idLHmnmverbgstrH3">GENERIC-SPECIFIC-TREE of verb  ->  <h3 id="idLHmnmverbgstrH3">GENERIC-SPECIFIC-TREE of Hmnmverb
+  McshLag000007:24850  <br>* McshEngl.verb'generic-specific-tree,  ->  <br>* McshEngl.Hmnmverb'generic-specific-tree,
+  McshLag000007:24851  <br>* McshEngl.verb'specific-generic-tree,  ->  <br>* McshEngl.Hmnmverb'specific-generic-tree,
+  McshLag000007:24854  <br>* McshEngl.verb_Gntr,  ->  <br>* McshEngl.Hmnmverb_Gntr,
+  McshLag000007:24863  <br>* McshEngl.verb.specific,  ->  <br>* McshEngl.Hmnmverb.specific,
+  McshLag000007:24864  <br>* McshEngl.verb_Sptr,  ->  <br>* McshEngl.Hmnmverb_Sptr,
+
+=== McshLag000010 (27)
+  McshLag000010:5413  <br>* McshEngl.Sngu_verb_mebr'sibling,  ->  <br>* McshEngl.Snguverb_mebr'sibling,
+  McshLag000010:5414  ADD  McshEngl.Sngu_verb_mebr'sibling!⇒Snguverb_mebr'sibling,
+  McshLag000010:5362  <br>* McshEngl.Sngu_verb_mebr,  ->  <br>* McshEngl.Snguverb_mebr,
+  McshLag000010:5363  <br>* McshEngl.Sngu_verb'member!⇒Sngu_verb_mebr,  ->  <br>* McshEngl.Sngu_verb'member!⇒Snguverb_mebr,
+  McshLag000010:5363  ADD  McshEngl.Sngu_verb_mebr!⇒Snguverb_mebr,
+  McshLag000010:5343  <br>* McshEngl.Sngu_verb,  ->  <br>* McshEngl.Snguverb,
+  McshLag000010:5344  <br>* McshEngl.sinagu-verb!⇒Sngu_verb,  ->  <br>* McshEngl.sinagu-verb!⇒Snguverb,
+  McshLag000010:5345  <br>* McshEngl.lagoSinagu-verb!⇒Sngu_verb,  ->  <br>* McshEngl.lagoSinagu-verb!⇒Snguverb,
+  McshLag000010:5346  <br>* McshEngl.Sngu_lagu'verb!⇒Sngu_verb,  ->  <br>* McshEngl.Sngu_lagu'verb!⇒Snguverb,
+  McshLag000010:5347  <br>* McshEngl.logo-verb--of-Sngu_lagu!⇒Sngu_verb,  ->  <br>* McshEngl.logo-verb--of-Sngu_lagu!⇒Snguverb,
+  McshLag000010:5348  <br>* McshEngl.Sngu_name.verb!⇒Sngu_verb,  ->  <br>* McshEngl.Sngu_name.verb!⇒Snguverb,
+  McshLag000010:5349  <br>* McshEngl.verbSngo!⇒Sngu_verb,  ->  <br>* McshEngl.verbSngo!⇒Snguverb,
+  McshLag000010:5350  <br>* McshEngl.verbLogHumn!⇒Sngu_verb,  ->  <br>* McshEngl.verbLogHumn!⇒Snguverb,
+  McshLag000010:5351  <br>* McshEngl.SnguviewLogo'verb-name!⇒Sngu_verb,  ->  <br>* McshEngl.SnguviewLogo'verb-name!⇒Snguverb,
+  McshLag000010:5344  ADD  McshEngl.Sngu_verb!⇒Snguverb,
+  McshLag000010:5421  <h4 id="idL0014verbmbrgstrH4">GENERIC-SPECIFIC-TREE of Sngu_verb_mebr  ->  <h4 id="idL0014verbmbrgstrH4">GENERIC-SPECIFIC-TREE of Snguverb_mebr
+  McshLag000010:5427  <br>* McshEngl.Sngu_verb_mebr'generic-specific-tree,  ->  <br>* McshEngl.Snguverb_mebr'generic-specific-tree,
+  McshLag000010:5428  <br>* McshEngl.Sngu_verb_mebr'specific-generic-tree,  ->  <br>* McshEngl.Snguverb_mebr'specific-generic-tree,
+  McshLag000010:5431  <br>* McshEngl.Sngu_verb_mebr_Gntr,  ->  <br>* McshEngl.Snguverb_mebr_Gntr,
+  McshLag000010:5437  <br>* McshEngl.Sngu_verb_mebr.specific,  ->  <br>* McshEngl.Snguverb_mebr.specific,
+  McshLag000010:5438  <br>* McshEngl.Sngu_verb_mebr_Sptr,  ->  <br>* McshEngl.Snguverb_mebr_Sptr,
+  McshLag000010:5474  <h3 id="idL0014verbgstrH3">GENERIC-SPECIFIC-TREE of Sngu_verb  ->  <h3 id="idL0014verbgstrH3">GENERIC-SPECIFIC-TREE of Snguverb
+  McshLag000010:5480  <br>* McshEngl.Sngu_verb'generic-specific-tree,  ->  <br>* McshEngl.Snguverb'generic-specific-tree,
+  McshLag000010:5481  <br>* McshEngl.Sngu_verb'specific-generic-tree,  ->  <br>* McshEngl.Snguverb'specific-generic-tree,
+  McshLag000010:5484  <br>* McshEngl.Sngu_verb_Gntr,  ->  <br>* McshEngl.Snguverb_Gntr,
+  McshLag000010:5491  <br>* McshEngl.Sngu_verb.specific,  ->  <br>* McshEngl.Snguverb.specific,
+  McshLag000010:5492  <br>* McshEngl.Sngu_verb_Sptr,  ->  <br>* McshEngl.Snguverb_Sptr,
+
+=== McshLag000011 (36)
+  McshLag000011:23678  <br>* McshEngl.Engl_verb_auxi,  ->  <br>* McshEngl.Englverb_auxi,
+  McshLag000011:23679  <br>* McshEngl.auxiliary-part--of-Englverb!⇒Engl_verb_auxi,  ->  <br>* McshEngl.auxiliary-part--of-Englverb!⇒Englverb_auxi,
+  McshLag000011:23680  <br>* McshEngl.Englverb'auxiliary-part!⇒Engl_verb_auxi,  ->  <br>* McshEngl.Englverb'auxiliary-part!⇒Englverb_auxi,
+  McshLag000011:23681  <br>* McshEngl.Englverb'partB!⇒Engl_verb_auxi,  ->  <br>* McshEngl.Englverb'partB!⇒Englverb_auxi,
+  McshLag000011:23679  ADD  McshEngl.Engl_verb_auxi!⇒Englverb_auxi,
+  McshLag000011:23508  <br>* McshEngl.Engl_verb_form'ending,  ->  <br>* McshEngl.Englverb_form'ending,
+  McshLag000011:23509  ADD  McshEngl.Engl_verb_form'ending!⇒Englverb_form'ending,
+  McshLag000011:23473  <br>* McshEngl.Engl_verb_form,  ->  <br>* McshEngl.Englverb_form,
+  McshLag000011:23474  <br>* McshEngl.auxiliaryNo-part--of-Englverb!⇒Engl_verb_form,  ->  <br>* McshEngl.auxiliaryNo-part--of-Englverb!⇒Englverb_form,
+  McshLag000011:23475  <br>* McshEngl.form-part--of-Englverb!⇒Engl_verb_form,  ->  <br>* McshEngl.form-part--of-Englverb!⇒Englverb_form,
+  McshLag000011:23476  <br>* McshEngl.non-auxiliary-part--of-Englverb!⇒Engl_verb_form,  ->  <br>* McshEngl.non-auxiliary-part--of-Englverb!⇒Englverb_form,
+  McshLag000011:23477  <br>* McshEngl.Englverb'auxiliaryNo-part!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb'auxiliaryNo-part!⇒Englverb_form,
+  McshLag000011:23478  <br>* McshEngl.Englverb'form!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb'form!⇒Englverb_form,
+  McshLag000011:23479  <br>* McshEngl.Englverb'main-part!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb'main-part!⇒Englverb_form,
+  McshLag000011:23480  <br>* McshEngl.Englverb'partA!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb'partA!⇒Englverb_form,
+  McshLag000011:23481  <br>* McshEngl.Englverb-form!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb-form!⇒Englverb_form,
+  McshLag000011:23482  <br>* McshEngl.Englverb'form-part!⇒Engl_verb_form,  ->  <br>* McshEngl.Englverb'form-part!⇒Englverb_form,
+  McshLag000011:23474  ADD  McshEngl.Engl_verb_form!⇒Englverb_form,
+  McshLag000011:18818  <br>* McshEngl.Engl_verb_idiv, {2022-11-27}  ->  <br>* McshEngl.Englverb_idiv, {2022-11-27}
+  McshLag000011:18819  <br>* McshEngl.English-verb-form!⇒Engl_verb_idiv, (literature)  ->  <br>* McshEngl.English-verb-form!⇒Englverb_idiv, (literature)
+  McshLag000011:18820  <br>* McshEngl.VerbatmEngl!⇒Engl_verb_idiv,  ->  <br>* McshEngl.VerbatmEngl!⇒Englverb_idiv,
+  McshLag000011:18821  <br>* McshEngl.Engl_Vm.individual!⇒Engl_verb_idiv,  ->  <br>* McshEngl.Engl_Vm.individual!⇒Englverb_idiv,
+  McshLag000011:18822  <br>* McshEngl.atomic-member--of-Englverb!⇒Engl_verb_idiv,  ->  <br>* McshEngl.atomic-member--of-Englverb!⇒Englverb_idiv,
+  McshLag000011:18823  <br>* McshEngl.atomic-verb-member-of-Engl_lago!⇒Engl_verb_idiv,  ->  <br>* McshEngl.atomic-verb-member-of-Engl_lago!⇒Englverb_idiv,
+  McshLag000011:18824  <br>* McshEngl.atomic-term--of-Englverb!⇒Engl_verb_idiv,  ->  <br>* McshEngl.atomic-term--of-Englverb!⇒Englverb_idiv,
+  McshLag000011:18825  <br>* McshEngl.avm-of-Engl_lago!⇒Engl_verb_idiv,  ->  <br>* McshEngl.avm-of-Engl_lago!⇒Englverb_idiv,
+  McshLag000011:18826  <br>* McshEngl.individual-verb-member-of-Engl_lago!⇒Engl_verb_idiv,  ->  <br>* McshEngl.individual-verb-member-of-Engl_lago!⇒Englverb_idiv,
+  McshLag000011:18827  <br>* McshEngl.Engl_lago'individual-verb-member!⇒Engl_verb_idiv,  ->  <br>* McshEngl.Engl_lago'individual-verb-member!⇒Englverb_idiv,
+  McshLag000011:18819  ADD  McshEngl.Engl_verb_idiv!⇒Englverb_idiv,
+  McshLag000011:18832  <h5 id="idLEnglverbmbrAtmgstrH5">GENERIC-SPECIFIC-TREE of Engl_verb_idiv  ->  <h5 id="idLEnglverbmbrAtmgstrH5">GENERIC-SPECIFIC-TREE of Englverb_idiv
+  McshLag000011:18838  <br>* McshEngl.Engl_verb_idiv'generic-specific-tree,  ->  <br>* McshEngl.Englverb_idiv'generic-specific-tree,
+  McshLag000011:18839  <br>* McshEngl.Engl_verb_idiv'specific-generic-tree,  ->  <br>* McshEngl.Englverb_idiv'specific-generic-tree,
+  McshLag000011:18842  <br>* McshEngl.Engl_verb_idiv_Gntr,  ->  <br>* McshEngl.Englverb_idiv_Gntr,
+  McshLag000011:18849  <br>* McshEngl.Engl_verb_idiv.specific,  ->  <br>* McshEngl.Englverb_idiv.specific,
+  McshLag000011:18850  <br>* McshEngl.Engl_verb_idiv_Sptr,  ->  <br>* McshEngl.Englverb_idiv_Sptr,
+  McshLag000011:26844  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+
+=== McshLag000012 (1)
+  McshLag000012:4784  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+
+=== McshLag000018 (90)
+  McshLag000018:17629  <br>* McshEngl.ZholVerb,  ->  <br>* McshEngl.Zholverb,
+  McshLag000018:17630  <br>* McshEngl.Zhol_lago'verb!⇒ZholVerb,  ->  <br>* McshEngl.Zhol_lago'verb!⇒Zholverb,
+  McshLag000018:17631  <br>* McshEngl.Zhol_lago'output'verb!⇒ZholVerb,  ->  <br>* McshEngl.Zhol_lago'output'verb!⇒Zholverb,
+  McshLag000018:17630  ADD  McshEngl.ZholVerb!⇒Zholverb,
+  McshLag000018:12236  <br>* McshEngl.Zhon_verb_auxi.modal_particle,  ->  <br>* McshEngl.Zhonverb_auxi.modal_particle,
+  McshLag000018:12237  <br>* McshEngl.Zhon_verb_auxi.modal-particle!⇒Zhon_verb_auxi.modal_particle,  ->  <br>* McshEngl.Zhon_verb_auxi.modal-particle!⇒Zhonverb_auxi.modal_particle,
+  McshLag000018:12237  ADD  McshEngl.Zhon_verb_auxi.modal_particle!⇒Zhonverb_auxi.modal_particle,
+  McshLag000018:12103  <br>* McshEngl.Zhon_verb_auxi.zhe_着_continuation,  ->  <br>* McshEngl.Zhonverb_auxi.zhe_着_continuation,
+  McshLag000018:12104  <br>* McshEngl.Zhon_verb_auxi.zhe-着-continuation!⇒Zhon_verb_auxi.zhe_着_continuation,  ->  <br>* McshEngl.Zhon_verb_auxi.zhe-着-continuation!⇒Zhonverb_auxi.zhe_着_continuation,
+  McshLag000018:12104  ADD  McshEngl.Zhon_verb_auxi.zhe_着_continuation!⇒Zhonverb_auxi.zhe_着_continuation,
+  McshLag000018:12058  <br>* McshEngl.Zhon_verb_auxi.zài_再_continuation,  ->  <br>* McshEngl.Zhonverb_auxi.zài_再_continuation,
+  McshLag000018:12059  <br>* McshEngl.Zhon_verb_auxi.zài-再-continuation!⇒Zhon_verb_auxi.zài_再_continuation,  ->  <br>* McshEngl.Zhon_verb_auxi.zài-再-continuation!⇒Zhonverb_auxi.zài_再_continuation,
+  McshLag000018:12059  ADD  McshEngl.Zhon_verb_auxi.zài_再_continuation!⇒Zhonverb_auxi.zài_再_continuation,
+  McshLag000018:11933  <br>* McshEngl.Zhon_verb_auxi.méiyǒu_没有_negation_past,  ->  <br>* McshEngl.Zhonverb_auxi.méiyǒu_没有_negation_past,
+  McshLag000018:11934  <br>* McshEngl.Zhon_verb_auxi.méiyǒu-没有-negation-past!⇒Zhon_verb_auxi.méiyǒu_没有_negation_past,  ->  <br>* McshEngl.Zhon_verb_auxi.méiyǒu-没有-negation-past!⇒Zhonverb_auxi.méiyǒu_没有_negation_past,
+  McshLag000018:11934  ADD  McshEngl.Zhon_verb_auxi.méiyǒu_没有_negation_past!⇒Zhonverb_auxi.méiyǒu_没有_negation_past,
+  McshLag000018:11908  <br>* McshEngl.Zhon_verb_auxi.méi_没_negation,  ->  <br>* McshEngl.Zhonverb_auxi.méi_没_negation,
+  McshLag000018:11909  <br>* McshEngl.Zhon_verb_auxi.méi-没-negation!⇒Zhon_verb_auxi.méi_没_negation,  ->  <br>* McshEngl.Zhon_verb_auxi.méi-没-negation!⇒Zhonverb_auxi.méi_没_negation,
+  McshLag000018:11909  ADD  McshEngl.Zhon_verb_auxi.méi_没_negation!⇒Zhonverb_auxi.méi_没_negation,
+  McshLag000018:11866  <br>* McshEngl.Zhon_verb_auxi.guò_过_past,  ->  <br>* McshEngl.Zhonverb_auxi.guò_过_past,
+  McshLag000018:11867  <br>* McshEngl.Zhon_verb_auxi.guò-过-past!⇒Zhon_verb_auxi.guò_过_past,  ->  <br>* McshEngl.Zhon_verb_auxi.guò-过-past!⇒Zhonverb_auxi.guò_过_past,
+  McshLag000018:11867  ADD  McshEngl.Zhon_verb_auxi.guò_过_past!⇒Zhonverb_auxi.guò_过_past,
+  McshLag000018:11780  <br>* McshEngl.Zhon_verb_auxi.jiù_就_sooness,  ->  <br>* McshEngl.Zhonverb_auxi.jiù_就_sooness,
+  McshLag000018:11781  <br>* McshEngl.Zhon_verb_auxi.jiù-就-sooness!⇒Zhon_verb_auxi.jiù_就_sooness,  ->  <br>* McshEngl.Zhon_verb_auxi.jiù-就-sooness!⇒Zhonverb_auxi.jiù_就_sooness,
+  McshLag000018:11781  ADD  McshEngl.Zhon_verb_auxi.jiù_就_sooness!⇒Zhonverb_auxi.jiù_就_sooness,
+  McshLag000018:11727  <br>* McshEngl.Zhon_verb_auxi.dào_到_achievement,  ->  <br>* McshEngl.Zhonverb_auxi.dào_到_achievement,
+  McshLag000018:11728  <br>* McshEngl.Zhon_verb_auxi.dào-到-achievement!⇒Zhon_verb_auxi.dào_到_achievement,  ->  <br>* McshEngl.Zhon_verb_auxi.dào-到-achievement!⇒Zhonverb_auxi.dào_到_achievement,
+  McshLag000018:11728  ADD  McshEngl.Zhon_verb_auxi.dào_到_achievement!⇒Zhonverb_auxi.dào_到_achievement,
+  McshLag000018:11708  <br>* McshEngl.Zhon_verb_auxi.bùyào_不要_imperative_negation,  ->  <br>* McshEngl.Zhonverb_auxi.bùyào_不要_imperative_negation,
+  McshLag000018:11709  <br>* McshEngl.Zhon_verb_auxi.bùyào-不要-imperative-negation!⇒Zhon_verb_auxi.bùyào_不要_imperative_negation,  ->  <br>* McshEngl.Zhon_verb_auxi.bùyào-不要-imperative-negation!⇒Zhonverb_auxi.bùyào_不要_imperative_negation,
+  McshLag000018:11709  ADD  McshEngl.Zhon_verb_auxi.bùyào_不要_imperative_negation!⇒Zhonverb_auxi.bùyào_不要_imperative_negation,
+  McshLag000018:11584  <br>* McshEngl.Zhon_verb_auxi.a_啊_reduces_forcefulness,  ->  <br>* McshEngl.Zhonverb_auxi.a_啊_reduces_forcefulness,
+  McshLag000018:11585  <br>* McshEngl.Zhon_verb_auxi.a-啊-reduces-forcefulness!⇒Zhon_verb_auxi.a_啊_reduces_forcefulness,  ->  <br>* McshEngl.Zhon_verb_auxi.a-啊-reduces-forcefulness!⇒Zhonverb_auxi.a_啊_reduces_forcefulness,
+  McshLag000018:11585  ADD  McshEngl.Zhon_verb_auxi.a_啊_reduces_forcefulness!⇒Zhonverb_auxi.a_啊_reduces_forcefulness,
+  McshLag000018:11559  <br>* McshEngl.auxiliary-part-of-Zhon_verb!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.auxiliary-part-of-Zhon_verb!⇒Zhonverb_auxi,
+  McshLag000018:11560  <br>* McshEngl.Zhon_verb_auxi!=auxiliary-part-of-Zhon_verb,  ->  <br>* McshEngl.Zhonverb_auxi!=auxiliary-part-of-Zhon_verb,
+  McshLag000018:11561  <br>* McshEngl.auxiliary-part--of-Zhon_verb!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.auxiliary-part--of-Zhon_verb!⇒Zhonverb_auxi,
+  McshLag000018:11562  <br>* McshEngl.Zhon_verb'auxiliary-part!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.Zhon_verb'auxiliary-part!⇒Zhonverb_auxi,
+  McshLag000018:11563  <br>* McshEngl.Zhon_verb'partB!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.Zhon_verb'partB!⇒Zhonverb_auxi,
+  McshLag000018:11564  <br>* McshEngl.verbauxZhon!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.verbauxZhon!⇒Zhonverb_auxi,
+  McshLag000018:11565  <br>* McshEngl.Zhon_verb_mebr'auxiliary-part!⇒Zhon_verb_auxi,  ->  <br>* McshEngl.Zhon_verb_mebr'auxiliary-part!⇒Zhonverb_auxi,
+  McshLag000018:11561  ADD  McshEngl.Zhon_verb_auxi!⇒Zhonverb_auxi,
+  McshLag000018:11526  <br>* McshEngl.Zhon_verb_form,  ->  <br>* McshEngl.Zhonverb_form,
+  McshLag000018:11527  <br>* McshEngl.auxiliaryNo-part--of-Zhon_verb!⇒Zhon_verb_form,  ->  <br>* McshEngl.auxiliaryNo-part--of-Zhon_verb!⇒Zhonverb_form,
+  McshLag000018:11528  <br>* McshEngl.form-part--of-Zhon_verb!⇒Zhon_verb_form,  ->  <br>* McshEngl.form-part--of-Zhon_verb!⇒Zhonverb_form,
+  McshLag000018:11529  <br>* McshEngl.non-auxiliary-part--of-Zhon_verb!⇒Zhon_verb_form,  ->  <br>* McshEngl.non-auxiliary-part--of-Zhon_verb!⇒Zhonverb_form,
+  McshLag000018:11530  <br>* McshEngl.Zhon_verb'auxiliaryNo-part!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb'auxiliaryNo-part!⇒Zhonverb_form,
+  McshLag000018:11531  <br>* McshEngl.Zhon_verb'form!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb'form!⇒Zhonverb_form,
+  McshLag000018:11532  <br>* McshEngl.Zhon_verb'main-part!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb'main-part!⇒Zhonverb_form,
+  McshLag000018:11533  <br>* McshEngl.Zhon_verb'partA!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb'partA!⇒Zhonverb_form,
+  McshLag000018:11534  <br>* McshEngl.Zhon_verb-form!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb-form!⇒Zhonverb_form,
+  McshLag000018:11535  <br>* McshEngl.Zhon_verb_mebr'form-part!⇒Zhon_verb_form,  ->  <br>* McshEngl.Zhon_verb_mebr'form-part!⇒Zhonverb_form,
+  McshLag000018:11527  ADD  McshEngl.Zhon_verb_form!⇒Zhonverb_form,
+  McshLag000018:11474  <br>* McshEngl.Zhon_verb_mebr.activeness,  ->  <br>* McshEngl.Zhonverb_mebr.activeness,
+  McshLag000018:11475  ADD  McshEngl.Zhon_verb_mebr.activeness!⇒Zhonverb_mebr.activeness,
+  McshLag000018:11324  <br>* McshEngl.Zhon_verb_mebr.aggregate_semu,  ->  <br>* McshEngl.Zhonverb_mebr.aggregate_semu,
+  McshLag000018:11325  <br>* McshEngl.Zhon_verb_mebr.aggregate-semu!⇒Zhon_verb_mebr.aggregate_semu,  ->  <br>* McshEngl.Zhon_verb_mebr.aggregate-semu!⇒Zhonverb_mebr.aggregate_semu,
+  McshLag000018:11325  ADD  McshEngl.Zhon_verb_mebr.aggregate_semu!⇒Zhonverb_mebr.aggregate_semu,
+  McshLag000018:11267  <br>* McshEngl.Zhon_verb_mebr'sibling,  ->  <br>* McshEngl.Zhonverb_mebr'sibling,
+  McshLag000018:11268  ADD  McshEngl.Zhon_verb_mebr'sibling!⇒Zhonverb_mebr'sibling,
+  McshLag000018:11239  <br>* McshEngl.Zhon_verb_mebr,  ->  <br>* McshEngl.Zhonverb_mebr,
+  McshLag000018:11240  <br>* McshEngl.VerbmbrZhon!⇒Zhon_verb_mebr,  ->  <br>* McshEngl.VerbmbrZhon!⇒Zhonverb_mebr,
+  McshLag000018:11241  <br>* McshEngl.Zhon_verb'member!⇒Zhon_verb_mebr,  ->  <br>* McshEngl.Zhon_verb'member!⇒Zhonverb_mebr,
+  McshLag000018:11240  ADD  McshEngl.Zhon_verb_mebr!⇒Zhonverb_mebr,
+  McshLag000018:11212  <br>* McshEngl.Chinese-verb!⇒Zhon_verb,  ->  <br>* McshEngl.Chinese-verb!⇒Zhonverb,
+  McshLag000018:11213  <br>* McshEngl.Zhon_verb!=Chinese-verb,  ->  <br>* McshEngl.Zhonverb!=Chinese-verb,
+  McshLag000018:11214  <br>* McshEngl.Standard-Chinese-verb!⇒Zhon_verb,  ->  <br>* McshEngl.Standard-Chinese-verb!⇒Zhonverb,
+  McshLag000018:11215  <br>* McshEngl.Zhon_lago'verb!⇒Zhon_verb,  ->  <br>* McshEngl.Zhon_lago'verb!⇒Zhonverb,
+  McshLag000018:11216  <br>* McshEngl.Zhonname.verb!⇒Zhon_verb,  ->  <br>* McshEngl.Zhonname.verb!⇒Zhonverb,
+  McshLag000018:11218  <br>* McshEngl.Zhon_lago-verb!⇒Zhon_verb,  ->  <br>* McshEngl.Zhon_lago-verb!⇒Zhonverb,
+  McshLag000018:11219  <br>* McshEngl.logo-verb--of-Zhon_lago!⇒Zhon_verb,  ->  <br>* McshEngl.logo-verb--of-Zhon_lago!⇒Zhonverb,
+  McshLag000018:11220  <br>* McshEngl.verbLogZhon!⇒Zhon_verb,  ->  <br>* McshEngl.verbLogZhon!⇒Zhonverb,
+  McshLag000018:11221  <br>* McshEngl.verbZhon!⇒Zhon_verb,  ->  <br>* McshEngl.verbZhon!⇒Zhonverb,
+  McshLag000018:11222  <br>* McshEngl.verb-of-Zhon_lago!⇒Zhon_verb,  ->  <br>* McshEngl.verb-of-Zhon_lago!⇒Zhonverb,
+  McshLag000018:11223  <br>* McshEngl.Zhon_logo'verb-name!⇒Zhon_verb,  ->  <br>* McshEngl.Zhon_logo'verb-name!⇒Zhonverb,
+  McshLag000018:11214  ADD  McshEngl.Zhon_verb!⇒Zhonverb,
+  McshLag000018:11275  <h4 id="idLZhonverbmbrgstrH4">GENERIC-SPECIFIC-TREE of Zhon_verb_mebr  ->  <h4 id="idLZhonverbmbrgstrH4">GENERIC-SPECIFIC-TREE of Zhonverb_mebr
+  McshLag000018:11281  <br>* McshEngl.Zhon_verb_mebr'generic-specific-tree,  ->  <br>* McshEngl.Zhonverb_mebr'generic-specific-tree,
+  McshLag000018:11282  <br>* McshEngl.Zhon_verb_mebr'specific-generic-tree,  ->  <br>* McshEngl.Zhonverb_mebr'specific-generic-tree,
+  McshLag000018:11285  <br>* McshEngl.Zhon_verb_mebr_Gntr,  ->  <br>* McshEngl.Zhonverb_mebr_Gntr,
+  McshLag000018:11291  <br>* McshEngl.Zhon_verb_mebr.specific,  ->  <br>* McshEngl.Zhonverb_mebr.specific,
+  McshLag000018:11292  <br>* McshEngl.Zhon_verb_mebr_Sptr,  ->  <br>* McshEngl.Zhonverb_mebr_Sptr,
+  McshLag000018:11367  <br>* Zhon_verb_mebr_Gntr,  ->  <br>* Zhonverb_mebr_Gntr,
+  McshLag000018:12443  <h3 id="idLZhonverbgstrH3">GENERIC-SPECIFIC-TREE of Zhon_verb  ->  <h3 id="idLZhonverbgstrH3">GENERIC-SPECIFIC-TREE of Zhonverb
+  McshLag000018:12449  <br>* McshEngl.Zhon_verb'generic-specific-tree,  ->  <br>* McshEngl.Zhonverb'generic-specific-tree,
+  McshLag000018:12450  <br>* McshEngl.Zhon_verb'specific-generic-tree,  ->  <br>* McshEngl.Zhonverb'specific-generic-tree,
+  McshLag000018:12453  <br>* McshEngl.Zhon_verb_Gntr,  ->  <br>* McshEngl.Zhonverb_Gntr,
+  McshLag000018:12455  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+  McshLag000018:12460  <br>* McshEngl.Zhon_verb.specific,  ->  <br>* McshEngl.Zhonverb.specific,
+  McshLag000018:12461  <br>* McshEngl.Zhon_verb_Sptr,  ->  <br>* McshEngl.Zhonverb_Sptr,
+
+=== McshLag000022 (1)
+  McshLag000022:49433  <br>* Ella_verb_Gntr,  ->  <br>* Ellaverb_Gntr,
+
+=== McshLag000026 (17)
+  McshLag000026:28  <br>* McshEngl.Greek-verb!⇒Elln_verb,  ->  <br>* McshEngl.Greek-verb!⇒Ellnverb,
+  McshLag000026:29  <br>* McshEngl.Elln_verb!=Greek-verb,  ->  <br>* McshEngl.Ellnverb!=Greek-verb,
+  McshLag000026:30  <br>* McshEngl.McshLag000026.last.html//dirLag//dirMcsh!⇒Elln_verb,  ->  <br>* McshEngl.McshLag000026.last.html//dirLag//dirMcsh!⇒Ellnverb,
+  McshLag000026:31  <br>* McshEngl.dirLag/McshLag000026.last.html!⇒Elln_verb,  ->  <br>* McshEngl.dirLag/McshLag000026.last.html!⇒Ellnverb,
+  McshLag000026:32  <br>* McshEngl.logoElln'verb!⇒Elln_verb,  ->  <br>* McshEngl.logoElln'verb!⇒Ellnverb,
+  McshLag000026:33  <br>* McshEngl.verbElln!⇒Elln_verb,  ->  <br>* McshEngl.verbElln!⇒Ellnverb,
+  McshLag000026:35  <br>* McshElln.Ελλν_ρημα!το!=Elln_verb,  ->  <br>* McshElln.Ελλν_ρημα!το!=Ellnverb,
+  McshLag000026:36  <br>* McshElln.Ελληνικό-ρήμα!το!=Elln_verb,  ->  <br>* McshElln.Ελληνικό-ρήμα!το!=Ellnverb,
+  McshLag000026:37  <br>* McshElln.ρήμαΕλλν!=Elln_verb,  ->  <br>* McshElln.ρήμαΕλλν!=Ellnverb,
+  McshLag000026:30  ADD  McshEngl.Elln_verb!⇒Ellnverb,
+  McshLag000026:1641  <h1 id="idLEllnverbgstrH1">GENERIC-SPECIFIC-TREE of Elln_verb  ->  <h1 id="idLEllnverbgstrH1">GENERIC-SPECIFIC-TREE of Ellnverb
+  McshLag000026:1647  <br>* McshEngl.Elln_verb'generic-specific-tree,  ->  <br>* McshEngl.Ellnverb'generic-specific-tree,
+  McshLag000026:1648  <br>* McshEngl.Elln_verb'specific-generic-tree,  ->  <br>* McshEngl.Ellnverb'specific-generic-tree,
+  McshLag000026:1651  <br>* McshEngl.Elln_verb_Gntr,  ->  <br>* McshEngl.Ellnverb_Gntr,
+  McshLag000026:1653  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+  McshLag000026:1657  <br>* McshEngl.Elln_verb.specific,  ->  <br>* McshEngl.Ellnverb.specific,
+  McshLag000026:1658  <br>* McshEngl.Elln_verb_Sptr,  ->  <br>* McshEngl.Ellnverb_Sptr,
+
+=== McshLag000027 (12)
+  McshLag000027:4072  <br>* McshEngl.Ella_verb,  ->  <br>* McshEngl.Ellaverb,
+  McshLag000027:4073  <br>* McshEngl.Ella_lago'verb!⇒Ella_verb,  ->  <br>* McshEngl.Ella_lago'verb!⇒Ellaverb,
+  McshLag000027:4074  <br>* McshEngl.Ella_logo'verb!⇒Ella_verb,  ->  <br>* McshEngl.Ella_logo'verb!⇒Ellaverb,
+  McshLag000027:4076  <br>* McshElln.ρήμαΕλλα!=Ella_verb,  ->  <br>* McshElln.ρήμαΕλλα!=Ellaverb,
+  McshLag000027:4073  ADD  McshEngl.Ella_verb!⇒Ellaverb,
+  McshLag000027:5178  <h3 id="idLEllaverbgstrH3">GENERIC-SPECIFIC-TREE of Ella_verb  ->  <h3 id="idLEllaverbgstrH3">GENERIC-SPECIFIC-TREE of Ellaverb
+  McshLag000027:5184  <br>* McshEngl.Ella_verb'generic-specific-tree,  ->  <br>* McshEngl.Ellaverb'generic-specific-tree,
+  McshLag000027:5185  <br>* McshEngl.Ella_verb'specific-generic-tree,  ->  <br>* McshEngl.Ellaverb'specific-generic-tree,
+  McshLag000027:5188  <br>* McshEngl.Ella_verb_Gntr,  ->  <br>* McshEngl.Ellaverb_Gntr,
+  McshLag000027:5190  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+  McshLag000027:5194  <br>* McshEngl.Ella_verb.specific,  ->  <br>* McshEngl.Ellaverb.specific,
+  McshLag000027:5195  <br>* McshEngl.Ella_verb_Sptr,  ->  <br>* McshEngl.Ellaverb_Sptr,
+
+=== McshLag000030 (1)
+  McshLag000030:5988  <br>* verb_Gntr,  ->  <br>* Hmnmverb_Gntr,
+
+=== McshLag000033 (12)
+  McshLag000033:3009  <br>* McshEngl.verb-of-Deut_lago!⇒DeutVerb,  ->  <br>* McshEngl.verb-of-Deut_lago!⇒Deutverb,
+  McshLag000033:3010  <br>* McshEngl.DeutVerb!=verb-of-Deut_lago,  ->  <br>* McshEngl.Deutverb!=verb-of-Deut_lago,
+  McshLag000033:3011  <br>* McshEngl.German-verb!⇒DeutVerb,  ->  <br>* McshEngl.German-verb!⇒Deutverb,
+  McshLag000033:3012  <br>* McshEngl.logoDeut'verb!⇒DeutVerb,  ->  <br>* McshEngl.logoDeut'verb!⇒Deutverb,
+  McshLag000033:3013  <br>* McshEngl.DeutLogoView'verb-name!⇒DeutVerb,  ->  <br>* McshEngl.DeutLogoView'verb-name!⇒Deutverb,
+  McshLag000033:3011  ADD  McshEngl.DeutVerb!⇒Deutverb,
+  McshLag000033:3134  <h3 id="idLDeutverbgstrH3">GENERIC-SPECIFIC-TREE of DeutVerb  ->  <h3 id="idLDeutverbgstrH3">GENERIC-SPECIFIC-TREE of Deutverb
+  McshLag000033:3140  <br>* McshEngl.DeutVerb'generic-specific-tree,  ->  <br>* McshEngl.Deutverb'generic-specific-tree,
+  McshLag000033:3141  <br>* McshEngl.DeutVerb'specific-generic-tree,  ->  <br>* McshEngl.Deutverb'specific-generic-tree,
+  McshLag000033:3144  <br>* McshEngl.DeutVerb_Gntr,  ->  <br>* McshEngl.Deutverb_Gntr,
+  McshLag000033:3150  <br>* McshEngl.DeutVerb.specific,  ->  <br>* McshEngl.Deutverb.specific,
+  McshLag000033:3151  <br>* McshEngl.DeutVerb_Sptr,  ->  <br>* McshEngl.Deutverb_Sptr,
+
+=== McshLag000034 (13)
+  McshLag000034:2020  <br>* McshEngl.Bosnian-Croatian-Montenegrin-Serbian--verb!⇒BcmsVerb,  ->  <br>* McshEngl.Bosnian-Croatian-Montenegrin-Serbian--verb!⇒Bcmsverb,
+  McshLag000034:2021  <br>* McshEngl.BcmsVerb!=Bosnian-Croatian-Montenegrin-Serbian--verb,  ->  <br>* McshEngl.Bcmsverb!=Bosnian-Croatian-Montenegrin-Serbian--verb,
+  McshLag000034:2022  <br>* McshEngl.Bcms_lago'verb!⇒BcmsVerb,  ->  <br>* McshEngl.Bcms_lago'verb!⇒Bcmsverb,
+  McshLag000034:2023  <br>* McshEngl.BcmsName.verb!⇒BcmsVerb,  ->  <br>* McshEngl.BcmsName.verb!⇒Bcmsverb,
+  McshLag000034:2024  <br>* McshEngl.verbBcms!⇒BcmsVerb,  ->  <br>* McshEngl.verbBcms!⇒Bcmsverb,
+  McshLag000034:2025  <br>* McshEngl.BcmsLogoView'verb-name!⇒BcmsVerb,  ->  <br>* McshEngl.BcmsLogoView'verb-name!⇒Bcmsverb,
+  McshLag000034:2022  ADD  McshEngl.BcmsVerb!⇒Bcmsverb,
+  McshLag000034:2086  <h3 id="idLBcmsverbgstrH3">GENERIC-SPECIFIC-TREE of BcmsVerb  ->  <h3 id="idLBcmsverbgstrH3">GENERIC-SPECIFIC-TREE of Bcmsverb
+  McshLag000034:2092  <br>* McshEngl.BcmsVerb'generic-specific-tree,  ->  <br>* McshEngl.Bcmsverb'generic-specific-tree,
+  McshLag000034:2093  <br>* McshEngl.BcmsVerb'specific-generic-tree,  ->  <br>* McshEngl.Bcmsverb'specific-generic-tree,
+  McshLag000034:2096  <br>* McshEngl.BcmsVerb_Gntr,  ->  <br>* McshEngl.Bcmsverb_Gntr,
+  McshLag000034:2102  <br>* McshEngl.BcmsVerb.specific,  ->  <br>* McshEngl.Bcmsverb.specific,
+  McshLag000034:2103  <br>* McshEngl.BcmsVerb_Sptr,  ->  <br>* McshEngl.Bcmsverb_Sptr,
+
+=== McshLag000035 (13)
+  McshLag000035:1732  <br>* McshEngl.SpanVerb,  ->  <br>* McshEngl.Spanverb,
+  McshLag000035:1733  <br>* McshEngl.Spanish-verb!⇒SpanVerb,  ->  <br>* McshEngl.Spanish-verb!⇒Spanverb,
+  McshLag000035:1734  <br>* McshEngl.Span_lago'verb!⇒SpanVerb,  ->  <br>* McshEngl.Span_lago'verb!⇒Spanverb,
+  McshLag000035:1735  <br>* McshEngl.SpanName.verb!⇒SpanVerb,  ->  <br>* McshEngl.SpanName.verb!⇒Spanverb,
+  McshLag000035:1736  <br>* McshEngl.verbSpan!⇒SpanVerb,  ->  <br>* McshEngl.verbSpan!⇒Spanverb,
+  McshLag000035:1737  <br>* McshEngl.SpanLogoView'verb-name!⇒SpanVerb,  ->  <br>* McshEngl.SpanLogoView'verb-name!⇒Spanverb,
+  McshLag000035:1733  ADD  McshEngl.SpanVerb!⇒Spanverb,
+  McshLag000035:1849  <h3 id="idLSpanverbgstrH3">GENERIC-SPECIFIC-TREE of SpanVerb  ->  <h3 id="idLSpanverbgstrH3">GENERIC-SPECIFIC-TREE of Spanverb
+  McshLag000035:1855  <br>* McshEngl.SpanVerb'generic-specific-tree,  ->  <br>* McshEngl.Spanverb'generic-specific-tree,
+  McshLag000035:1856  <br>* McshEngl.SpanVerb'specific-generic-tree,  ->  <br>* McshEngl.Spanverb'specific-generic-tree,
+  McshLag000035:1859  <br>* McshEngl.SpanVerb_Gntr,  ->  <br>* McshEngl.Spanverb_Gntr,
+  McshLag000035:1865  <br>* McshEngl.SpanVerb.specific,  ->  <br>* McshEngl.Spanverb.specific,
+  McshLag000035:1866  <br>* McshEngl.SpanVerb_Sptr,  ->  <br>* McshEngl.Spanverb_Sptr,
+
+=== McshLag000036 (13)
+  McshLag000036:2298  <br>* McshEngl.ArabVerb,  ->  <br>* McshEngl.Arabverb,
+  McshLag000036:2299  <br>* McshEngl.Arabic-verb!⇒ArabVerb,  ->  <br>* McshEngl.Arabic-verb!⇒Arabverb,
+  McshLag000036:2300  <br>* McshEngl.Arab_lago'verb!⇒ArabVerb,  ->  <br>* McshEngl.Arab_lago'verb!⇒Arabverb,
+  McshLag000036:2301  <br>* McshEngl.ArabName.verb!⇒ArabVerb,  ->  <br>* McshEngl.ArabName.verb!⇒Arabverb,
+  McshLag000036:2302  <br>* McshEngl.verbArab!⇒ArabVerb,  ->  <br>* McshEngl.verbArab!⇒Arabverb,
+  McshLag000036:2303  <br>* McshEngl.ArabLogoView'verb-name!⇒ArabVerb,  ->  <br>* McshEngl.ArabLogoView'verb-name!⇒Arabverb,
+  McshLag000036:2299  ADD  McshEngl.ArabVerb!⇒Arabverb,
+  McshLag000036:2364  <h3 id="idLArabverbgstrH3">GENERIC-SPECIFIC-TREE of ArabVerb  ->  <h3 id="idLArabverbgstrH3">GENERIC-SPECIFIC-TREE of Arabverb
+  McshLag000036:2370  <br>* McshEngl.ArabVerb'generic-specific-tree,  ->  <br>* McshEngl.Arabverb'generic-specific-tree,
+  McshLag000036:2371  <br>* McshEngl.ArabVerb'specific-generic-tree,  ->  <br>* McshEngl.Arabverb'specific-generic-tree,
+  McshLag000036:2374  <br>* McshEngl.ArabVerb_Gntr,  ->  <br>* McshEngl.Arabverb_Gntr,
+  McshLag000036:2380  <br>* McshEngl.ArabVerb.specific,  ->  <br>* McshEngl.Arabverb.specific,
+  McshLag000036:2381  <br>* McshEngl.ArabVerb_Sptr,  ->  <br>* McshEngl.Arabverb_Sptr,
+
+=== McshLag000037 (13)
+  McshLag000037:1869  <br>* McshEngl.HiurVerb,  ->  <br>* McshEngl.Hiurverb,
+  McshLag000037:1870  <br>* McshEngl.Hidi-Urdu-verb!⇒HiurVerb,  ->  <br>* McshEngl.Hidi-Urdu-verb!⇒Hiurverb,
+  McshLag000037:1871  <br>* McshEngl.Hiur_lago'verb!⇒HiurVerb,  ->  <br>* McshEngl.Hiur_lago'verb!⇒Hiurverb,
+  McshLag000037:1872  <br>* McshEngl.HiurName.verb!⇒HiurVerb,  ->  <br>* McshEngl.HiurName.verb!⇒Hiurverb,
+  McshLag000037:1873  <br>* McshEngl.verbHiur!⇒HiurVerb,  ->  <br>* McshEngl.verbHiur!⇒Hiurverb,
+  McshLag000037:1874  <br>* McshEngl.HiurLogoView'verb-name!⇒HiurVerb,  ->  <br>* McshEngl.HiurLogoView'verb-name!⇒Hiurverb,
+  McshLag000037:1870  ADD  McshEngl.HiurVerb!⇒Hiurverb,
+  McshLag000037:1935  <h3 id="idLHiurverbgstrH3">GENERIC-SPECIFIC-TREE of HiurVerb  ->  <h3 id="idLHiurverbgstrH3">GENERIC-SPECIFIC-TREE of Hiurverb
+  McshLag000037:1941  <br>* McshEngl.HiurVerb'generic-specific-tree,  ->  <br>* McshEngl.Hiurverb'generic-specific-tree,
+  McshLag000037:1942  <br>* McshEngl.HiurVerb'specific-generic-tree,  ->  <br>* McshEngl.Hiurverb'specific-generic-tree,
+  McshLag000037:1945  <br>* McshEngl.HiurVerb_Gntr,  ->  <br>* McshEngl.Hiurverb_Gntr,
+  McshLag000037:1951  <br>* McshEngl.HiurVerb.specific,  ->  <br>* McshEngl.Hiurverb.specific,
+  McshLag000037:1952  <br>* McshEngl.HiurVerb_Sptr,  ->  <br>* McshEngl.Hiurverb_Sptr,
+
+=== McshLag000038 (13)
+  McshLag000038:1366  <br>* McshEngl.Slv0Verb,  ->  <br>* McshEngl.Slv0verb,
+  McshLag000038:1367  <br>* McshEngl.Slavic-verb!⇒Slv0Verb,  ->  <br>* McshEngl.Slavic-verb!⇒Slv0verb,
+  McshLag000038:1368  <br>* McshEngl.Slv0Lago'verb!⇒Slv0Verb,  ->  <br>* McshEngl.Slv0Lago'verb!⇒Slv0verb,
+  McshLag000038:1369  <br>* McshEngl.Slv0Name.verb!⇒Slv0Verb,  ->  <br>* McshEngl.Slv0Name.verb!⇒Slv0verb,
+  McshLag000038:1370  <br>* McshEngl.verbSlv0!⇒Slv0Verb,  ->  <br>* McshEngl.verbSlv0!⇒Slv0verb,
+  McshLag000038:1371  <br>* McshEngl.Slv0LogoView'verb-name!⇒Slv0Verb,  ->  <br>* McshEngl.Slv0LogoView'verb-name!⇒Slv0verb,
+  McshLag000038:1367  ADD  McshEngl.Slv0Verb!⇒Slv0verb,
+  McshLag000038:1432  <h3 id="idLSlv0verbgstrH3">GENERIC-SPECIFIC-TREE of Slv0Verb  ->  <h3 id="idLSlv0verbgstrH3">GENERIC-SPECIFIC-TREE of Slv0verb
+  McshLag000038:1438  <br>* McshEngl.Slv0Verb'generic-specific-tree,  ->  <br>* McshEngl.Slv0verb'generic-specific-tree,
+  McshLag000038:1439  <br>* McshEngl.Slv0Verb'specific-generic-tree,  ->  <br>* McshEngl.Slv0verb'specific-generic-tree,
+  McshLag000038:1442  <br>* McshEngl.Slv0Verb_Gntr,  ->  <br>* McshEngl.Slv0verb_Gntr,
+  McshLag000038:1448  <br>* McshEngl.Slv0Verb.specific,  ->  <br>* McshEngl.Slv0verb.specific,
+  McshLag000038:1449  <br>* McshEngl.Slv0Verb_Sptr,  ->  <br>* McshEngl.Slv0verb_Sptr,
+
+=== McshLag000039 (13)
+  McshLag000039:1032  <br>* McshEngl.Ide0Verb,  ->  <br>* McshEngl.Ide0verb,
+  McshLag000039:1033  <br>* McshEngl.IndoEuropean-verb!⇒Ide0Verb,  ->  <br>* McshEngl.IndoEuropean-verb!⇒Ide0verb,
+  McshLag000039:1034  <br>* McshEngl.Ide0_lago'verb!⇒Ide0Verb,  ->  <br>* McshEngl.Ide0_lago'verb!⇒Ide0verb,
+  McshLag000039:1035  <br>* McshEngl.Ide0Name.verb!⇒Ide0Verb,  ->  <br>* McshEngl.Ide0Name.verb!⇒Ide0verb,
+  McshLag000039:1036  <br>* McshEngl.verbIde0!⇒Ide0Verb,  ->  <br>* McshEngl.verbIde0!⇒Ide0verb,
+  McshLag000039:1037  <br>* McshEngl.Ide0LogoView'verb-name!⇒Ide0Verb,  ->  <br>* McshEngl.Ide0LogoView'verb-name!⇒Ide0verb,
+  McshLag000039:1033  ADD  McshEngl.Ide0Verb!⇒Ide0verb,
+  McshLag000039:1098  <h3 id="idLIde0verbgstrH3">GENERIC-SPECIFIC-TREE of Ide0Verb  ->  <h3 id="idLIde0verbgstrH3">GENERIC-SPECIFIC-TREE of Ide0verb
+  McshLag000039:1104  <br>* McshEngl.Ide0Verb'generic-specific-tree,  ->  <br>* McshEngl.Ide0verb'generic-specific-tree,
+  McshLag000039:1105  <br>* McshEngl.Ide0Verb'specific-generic-tree,  ->  <br>* McshEngl.Ide0verb'specific-generic-tree,
+  McshLag000039:1108  <br>* McshEngl.Ide0Verb_Gntr,  ->  <br>* McshEngl.Ide0verb_Gntr,
+  McshLag000039:1114  <br>* McshEngl.Ide0Verb.specific,  ->  <br>* McshEngl.Ide0verb.specific,
+  McshLag000039:1115  <br>* McshEngl.Ide0Verb_Sptr,  ->  <br>* McshEngl.Ide0verb_Sptr,
+
+=== McshLag000040 (13)
+  McshLag000040:1257  <br>* McshEngl.Afa0Verb,  ->  <br>* McshEngl.Afa0verb,
+  McshLag000040:1258  <br>* McshEngl.AfroAsiatic-verb!⇒Afa0Verb,  ->  <br>* McshEngl.AfroAsiatic-verb!⇒Afa0verb,
+  McshLag000040:1259  <br>* McshEngl.Afa0_lago'verb!⇒Afa0Verb,  ->  <br>* McshEngl.Afa0_lago'verb!⇒Afa0verb,
+  McshLag000040:1260  <br>* McshEngl.Afa0Name.verb!⇒Afa0Verb,  ->  <br>* McshEngl.Afa0Name.verb!⇒Afa0verb,
+  McshLag000040:1261  <br>* McshEngl.verbAfa0!⇒Afa0Verb,  ->  <br>* McshEngl.verbAfa0!⇒Afa0verb,
+  McshLag000040:1262  <br>* McshEngl.Afa0LogoView'verb-name!⇒Afa0Verb,  ->  <br>* McshEngl.Afa0LogoView'verb-name!⇒Afa0verb,
+  McshLag000040:1258  ADD  McshEngl.Afa0Verb!⇒Afa0verb,
+  McshLag000040:1323  <h3 id="idLAfa0verbgstrH3">GENERIC-SPECIFIC-TREE of Afa0Verb  ->  <h3 id="idLAfa0verbgstrH3">GENERIC-SPECIFIC-TREE of Afa0verb
+  McshLag000040:1329  <br>* McshEngl.Afa0Verb'generic-specific-tree,  ->  <br>* McshEngl.Afa0verb'generic-specific-tree,
+  McshLag000040:1330  <br>* McshEngl.Afa0Verb'specific-generic-tree,  ->  <br>* McshEngl.Afa0verb'specific-generic-tree,
+  McshLag000040:1333  <br>* McshEngl.Afa0Verb_Gntr,  ->  <br>* McshEngl.Afa0verb_Gntr,
+  McshLag000040:1339  <br>* McshEngl.Afa0Verb.specific,  ->  <br>* McshEngl.Afa0verb.specific,
+  McshLag000040:1340  <br>* McshEngl.Afa0Verb_Sptr,  ->  <br>* McshEngl.Afa0verb_Sptr,
+
+=== McshLag000041 (13)
+  McshLag000041:1169  <br>* McshEngl.Tur0Verb,  ->  <br>* McshEngl.Tur0verb,
+  McshLag000041:1170  <br>* McshEngl.Turkic-verb!⇒Tur0Verb,  ->  <br>* McshEngl.Turkic-verb!⇒Tur0verb,
+  McshLag000041:1171  <br>* McshEngl.Tur0_lago'verb!⇒Tur0Verb,  ->  <br>* McshEngl.Tur0_lago'verb!⇒Tur0verb,
+  McshLag000041:1172  <br>* McshEngl.Tur0Name.verb!⇒Tur0Verb,  ->  <br>* McshEngl.Tur0Name.verb!⇒Tur0verb,
+  McshLag000041:1173  <br>* McshEngl.verbTur0!⇒Tur0Verb,  ->  <br>* McshEngl.verbTur0!⇒Tur0verb,
+  McshLag000041:1174  <br>* McshEngl.Tur0LogoView'verb-name!⇒Tur0Verb,  ->  <br>* McshEngl.Tur0LogoView'verb-name!⇒Tur0verb,
+  McshLag000041:1170  ADD  McshEngl.Tur0Verb!⇒Tur0verb,
+  McshLag000041:1235  <h3 id="idLTur0verbgstrH3">GENERIC-SPECIFIC-TREE of Tur0Verb  ->  <h3 id="idLTur0verbgstrH3">GENERIC-SPECIFIC-TREE of Tur0verb
+  McshLag000041:1241  <br>* McshEngl.Tur0Verb'generic-specific-tree,  ->  <br>* McshEngl.Tur0verb'generic-specific-tree,
+  McshLag000041:1242  <br>* McshEngl.Tur0Verb'specific-generic-tree,  ->  <br>* McshEngl.Tur0verb'specific-generic-tree,
+  McshLag000041:1245  <br>* McshEngl.Tur0Verb_Gntr,  ->  <br>* McshEngl.Tur0verb_Gntr,
+  McshLag000041:1251  <br>* McshEngl.Tur0Verb.specific,  ->  <br>* McshEngl.Tur0verb.specific,
+  McshLag000041:1252  <br>* McshEngl.Tur0Verb_Sptr,  ->  <br>* McshEngl.Tur0verb_Sptr,
+
+=== McshLag000042 (13)
+  McshLag000042:1178  <br>* McshEngl.Asa0Verb,  ->  <br>* McshEngl.Asa0verb,
+  McshLag000042:1179  <br>* McshEngl.AustroAsiatic-verb!⇒Asa0Verb,  ->  <br>* McshEngl.AustroAsiatic-verb!⇒Asa0verb,
+  McshLag000042:1180  <br>* McshEngl.Asa0_lago'verb!⇒Asa0Verb,  ->  <br>* McshEngl.Asa0_lago'verb!⇒Asa0verb,
+  McshLag000042:1181  <br>* McshEngl.Asa0Name.verb!⇒Asa0Verb,  ->  <br>* McshEngl.Asa0Name.verb!⇒Asa0verb,
+  McshLag000042:1182  <br>* McshEngl.verbAsa0!⇒Asa0Verb,  ->  <br>* McshEngl.verbAsa0!⇒Asa0verb,
+  McshLag000042:1183  <br>* McshEngl.Asa0LogoView'verb-name!⇒Asa0Verb,  ->  <br>* McshEngl.Asa0LogoView'verb-name!⇒Asa0verb,
+  McshLag000042:1179  ADD  McshEngl.Asa0Verb!⇒Asa0verb,
+  McshLag000042:1244  <h3 id="idLAsa0verbgstrH3">GENERIC-SPECIFIC-TREE of Asa0Verb  ->  <h3 id="idLAsa0verbgstrH3">GENERIC-SPECIFIC-TREE of Asa0verb
+  McshLag000042:1250  <br>* McshEngl.Asa0Verb'generic-specific-tree,  ->  <br>* McshEngl.Asa0verb'generic-specific-tree,
+  McshLag000042:1251  <br>* McshEngl.Asa0Verb'specific-generic-tree,  ->  <br>* McshEngl.Asa0verb'specific-generic-tree,
+  McshLag000042:1254  <br>* McshEngl.Asa0Verb_Gntr,  ->  <br>* McshEngl.Asa0verb_Gntr,
+  McshLag000042:1260  <br>* McshEngl.Asa0Verb.specific,  ->  <br>* McshEngl.Asa0verb.specific,
+  McshLag000042:1261  <br>* McshEngl.Asa0Verb_Sptr,  ->  <br>* McshEngl.Asa0verb_Sptr,
+
+=== McshLag000043 (13)
+  McshLag000043:2759  <br>* McshEngl.KoraVerb,  ->  <br>* McshEngl.Koraverb,
+  McshLag000043:2760  <br>* McshEngl.Korean-verb!⇒KoraVerb,  ->  <br>* McshEngl.Korean-verb!⇒Koraverb,
+  McshLag000043:2761  <br>* McshEngl.Kora_lago'verb!⇒KoraVerb,  ->  <br>* McshEngl.Kora_lago'verb!⇒Koraverb,
+  McshLag000043:2762  <br>* McshEngl.KoraName.verb!⇒KoraVerb,  ->  <br>* McshEngl.KoraName.verb!⇒Koraverb,
+  McshLag000043:2763  <br>* McshEngl.verbKora!⇒KoraVerb,  ->  <br>* McshEngl.verbKora!⇒Koraverb,
+  McshLag000043:2764  <br>* McshEngl.Kora_logo_view'verb-name!⇒KoraVerb,  ->  <br>* McshEngl.Kora_logo_view'verb-name!⇒Koraverb,
+  McshLag000043:2760  ADD  McshEngl.KoraVerb!⇒Koraverb,
+  McshLag000043:2825  <h3 id="idLKoraverbgstrH3">GENERIC-SPECIFIC-TREE of KoraVerb  ->  <h3 id="idLKoraverbgstrH3">GENERIC-SPECIFIC-TREE of Koraverb
+  McshLag000043:2831  <br>* McshEngl.KoraVerb'generic-specific-tree,  ->  <br>* McshEngl.Koraverb'generic-specific-tree,
+  McshLag000043:2832  <br>* McshEngl.KoraVerb'specific-generic-tree,  ->  <br>* McshEngl.Koraverb'specific-generic-tree,
+  McshLag000043:2835  <br>* McshEngl.KoraVerb_Gntr,  ->  <br>* McshEngl.Koraverb_Gntr,
+  McshLag000043:2841  <br>* McshEngl.KoraVerb.specific,  ->  <br>* McshEngl.Koraverb.specific,
+  McshLag000043:2842  <br>* McshEngl.KoraVerb_Sptr,  ->  <br>* McshEngl.Koraverb_Sptr,
+
+=== McshStn000035 (6)
+  McshStn000035:2506  <br>* McshEngl.ItlnVerb,  ->  <br>* McshEngl.Itlnverb,
+  McshStn000035:2507  <br>* McshEngl.logoItln'verb!⇒ItlnVerb,  ->  <br>* McshEngl.logoItln'verb!⇒Itlnverb,
+  McshStn000035:2508  <br>* McshEngl.verbItln!⇒ItlnVerb,  ->  <br>* McshEngl.verbItln!⇒Itlnverb,
+  McshStn000035:2509  <br>* McshEngl.logoItln'verb-name!⇒ItlnVerb,  ->  <br>* McshEngl.logoItln'verb-name!⇒Itlnverb,
+  McshStn000035:2511  <br>* McshItln.verbo-Italiano!=ItlnVerb,  ->  <br>* McshItln.verbo-Italiano!=Itlnverb,
+  McshStn000035:2507  ADD  McshEngl.ItlnVerb!⇒Itlnverb,
+
+=== McshStn000038 (5)
+  McshStn000038:1331  <br>* McshEngl.Bulgarian-verb!⇒SbulVerb,  ->  <br>* McshEngl.Bulgarian-verb!⇒Sbulverb,
+  McshStn000038:1332  <br>* McshEngl.SbulVerb!=Bulgarian-verb,  ->  <br>* McshEngl.Sbulverb!=Bulgarian-verb,
+  McshStn000038:1333  <br>* McshEngl.logoSbul'verb!⇒SbulVerb,  ->  <br>* McshEngl.logoSbul'verb!⇒Sbulverb,
+  McshStn000038:1334  <br>* McshEngl.logoSbul'verb-name!⇒SbulVerb,  ->  <br>* McshEngl.logoSbul'verb-name!⇒Sbulverb,
+  McshStn000038:1333  ADD  McshEngl.SbulVerb!⇒Sbulverb,
+
+=== McshStn000048 (4)
+  McshStn000048:4301  <br>* McshEngl.JpnsVerb!=Japanese-verb,  ->  <br>* McshEngl.Jpnsverb!=Japanese-verb,
+  McshStn000048:4302  <br>* McshEngl.verb.Japanese.JpnsVerb!⇒JpnsVerb,  ->  <br>* McshEngl.verb.Japanese.JpnsVerb!⇒Jpnsverb,
+  McshStn000048:4303  <br>* McshEngl.JpnsLogoView'verb-name!⇒JpnsVerb,  ->  <br>* McshEngl.JpnsLogoView'verb-name!⇒Jpnsverb,
+  McshStn000048:4302  ADD  McshEngl.JpnsVerb!⇒Jpnsverb,
+
+=== McshStn000050 (4)
+  McshStn000050:3232  <br>* McshEngl.KhmrVerb,  ->  <br>* McshEngl.Khmrverb,
+  McshStn000050:3233  <br>* McshEngl.Khmr_lago'verb!⇒KhmrVerb,  ->  <br>* McshEngl.Khmr_lago'verb!⇒Khmrverb,
+  McshStn000050:3234  <br>* McshEngl.KhmrLogoView'verb-name!⇒KhmrVerb,  ->  <br>* McshEngl.KhmrLogoView'verb-name!⇒Khmrverb,
+  McshStn000050:3233  ADD  McshEngl.KhmrVerb!⇒Khmrverb,

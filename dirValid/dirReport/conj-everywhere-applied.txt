@@ -1,0 +1,452 @@
+OLD ARGU NAMES EVERYWHERE APPLIED — 2026-10-25
+names: 20 | lines changed: 427 in 17 files | duplicate lines dropped: 0
+
+=== PER FILE (17)
+  McshLag000007        58
+  McshLag000010         4
+  McshLag000027       302
+  McshLag000033         3
+  McshLag000034         1
+  McshLag000035         3
+  McshLag000036         3
+  McshLag000037         1
+  McshLag000038         1
+  McshLag000039         1
+  McshLag000040         1
+  McshLag000041         1
+  McshLag000042         1
+  McshLag000043         3
+  McshStn000034         2
+  McshStn000035         2
+  McshStn000048        40
+
+=== DROPPED (0)
+
+=== CHANGED (427)
+  McshLag000007:16544  <br>* conjunction-syntax, (search: syntax.Conj...)  ->  <br>* conjunction-syntax, (search: syntax.Hmnmconj...)
+  McshLag000007:21649  <br>* McshEngl.Conj'relation-to-adverb,  ->  <br>* McshEngl.Hmnmconj'relation-to-adverb,
+  McshLag000007:25117  <br>"In grammar, a conjunction (abbreviated Conj or cnj) is a part of speech that connects words, phrases, or clauses that are called the conjuncts of the conjunctions. The term discourse marker is mostly used for conjunctions joining sentences. This definition may overlap with that of other parts of speech, so what constitutes a "conjunction" must be defined for each language. In English a given word may have several senses, being either a preposition or a conjunction depending on the syntax of the sentence (for example, "after" being a preposition in "he left after the fight" versus it being a conjunction in "he left after they fought"). In general, a conjunction is an invariable (noninflected) grammatical particle and it may or may not stand between the items conjoined.  ->  <br>"In grammar, a conjunction (abbreviated Hmnmconj or cnj) is a part of speech that connects words, phrases, or clauses that are called the conjuncts of the conjunctions. The term discourse marker is mostly used for conjunctions joining sentences. This definition may overlap with that of other parts of speech, so what constitutes a "conjunction" must be defined for each language. In English a given word may have several senses, being either a preposition or a conjunction depending on the syntax of the sentence (for example, "after" being a preposition in "he left after the fight" versus it being a conjunction in "he left after they fought"). In general, a conjunction is an invariable (noninflected) grammatical particle and it may or may not stand between the items conjoined.
+  McshLag000007:25129  <br>* McshEngl.Conj.Espo_lago!=konjunkcio!⇒Hmnmconj,  ->  <br>* McshEngl.Hmnmconj.Espo_lago!=konjunkcio!⇒Hmnmconj,
+  McshLag000007:25154  <br>* namo-rao!=Conj,  ->  <br>* namo-rao!=Hmnmconj,
+  McshLag000007:25272  <h3 id="idLHmnmconjprtAH3">form of Conj  ->  <h3 id="idLHmnmconjprtAH3">form of Hmnmconj
+  McshLag000007:25283  <br>* McshEngl.Conj'partA!⇒Hmnmconj_form,  ->  <br>* McshEngl.Hmnmconj'partA!⇒Hmnmconj_form,
+  McshLag000007:25285  <br>* McshEngl.Conj'form!⇒Hmnmconj_form,  ->  <br>* McshEngl.Hmnmconj'form!⇒Hmnmconj_form,
+  McshLag000007:25290  <h3 id="idLHmnmconjprtBH3">auxiliary-part of Conj  ->  <h3 id="idLHmnmconjprtBH3">auxiliary-part of Hmnmconj
+  McshLag000007:25298  <br>* McshEngl.Conj'partB,  ->  <br>* McshEngl.Hmnmconj'partB,
+  McshLag000007:25299  <br>* McshEngl.Conj'auxiliary-part,  ->  <br>* McshEngl.Hmnmconj'auxiliary-part,
+  McshLag000007:25304  <h3 id="idLHmnmconjelemH3">conjunct of Conj  ->  <h3 id="idLHmnmconjelemH3">conjunct of Hmnmconj
+  McshLag000007:25311  <br>* McshEngl.Conj'conjunct,  ->  <br>* McshEngl.Hmnmconj'conjunct,
+  McshLag000007:25317  <h3 id="idLHmnmconjclmtH3">complement of Conj  ->  <h3 id="idLHmnmconjclmtH3">complement of Hmnmconj
+  McshLag000007:25326  <br>* McshEngl.Conj'complement,  ->  <br>* McshEngl.Hmnmconj'complement,
+  McshLag000007:25334  <h3 id="idLHmnmconjddrnH3">semu-view-relation of Conj  ->  <h3 id="idLHmnmconjddrnH3">semu-view-relation of Hmnmconj
+  McshLag000007:25338  <br>× Conj: <a class="clsPreview" href="#idLHmnmsmscnj">Semuconjunction</a>  ->  <br>× Hmnmconj: <a class="clsPreview" href="#idLHmnmsmscnj">Semuconjunction</a>
+  McshLag000007:25341  <br>* McshEngl.Conj'decoding-relation,  ->  <br>* McshEngl.Hmnmconj'decoding-relation,
+  McshLag000007:25342  <br>* McshEngl.Conj'semu-relation,  ->  <br>* McshEngl.Hmnmconj'semu-relation,
+  McshLag000007:25343  <br>* McshEngl.Conj'semu-view-relation,  ->  <br>* McshEngl.Hmnmconj'semu-view-relation,
+  McshLag000007:25348  <h3 id="idLHmnmconjsmdrnH3">senso-mind-relation of Conj  ->  <h3 id="idLHmnmconjsmdrnH3">senso-mind-relation of Hmnmconj
+  McshLag000007:25355  <br>* McshEngl.Conj'senso_mind_relation,  ->  <br>* McshEngl.Hmnmconj'senso_mind_relation,
+  McshLag000007:25356  <br>* McshEngl.Conj'senso-mind-relation!⇒Conj'senso_mind_relation,  ->  <br>* McshEngl.Hmnmconj'senso-mind-relation!⇒Hmnmconj'senso_mind_relation,
+  McshLag000007:25361  <h3 id="idLHmnmconjstxH3">syntax of Conj  ->  <h3 id="idLHmnmconjstxH3">syntax of Hmnmconj
+  McshLag000007:25379  <br>* McshEngl.Conj'syntax,  ->  <br>* McshEngl.Hmnmconj'syntax,
+  McshLag000007:25380  <br>* McshEngl.syntax.Conj,  ->  <br>* McshEngl.syntax.Hmnmconj,
+  McshLag000007:25385  <h3 id="idLHmnmconjrltadveH3">relation-to-adverb of Conj (<a class="clsPreview" href="#idLHmnmadvertconj">link</a>)  ->  <h3 id="idLHmnmconjrltadveH3">relation-to-adverb of Hmnmconj (<a class="clsPreview" href="#idLHmnmadvertconj">link</a>)
+  McshLag000007:25390  <h3 id="idLHmnmconjcrtgH3">creation of Conj  ->  <h3 id="idLHmnmconjcrtgH3">creation of Hmnmconj
+  McshLag000007:25591  <br>* McshEngl.Conj'creation,  ->  <br>* McshEngl.Hmnmconj'creation,
+  McshLag000007:25596  <h3 id="idLHmnmconjevogH3">evoluting of Conj  ->  <h3 id="idLHmnmconjevogH3">evoluting of Hmnmconj
+  McshLag000007:25732  <br>* McshEngl.Conj'evoluting,  ->  <br>* McshEngl.Hmnmconj'evoluting,
+  McshLag000007:25898  <h3 id="idLHmnmConjArguH3">Conj.argu  ->  <h3 id="idLHmnmConjArguH3">Hmnmconj.argu
+  McshLag000007:25909  <br>* McshEngl.Conj.argu!⇒ConjArgu,  ->  <br>* McshEngl.Hmnmconj.argu!⇒ConjArgu,
+  McshLag000007:25916  <h3 id="idLHmnmConjVerbH3">Conj.verb  ->  <h3 id="idLHmnmConjVerbH3">Hmnmconj.verb
+  McshLag000007:25926  <br>* McshEngl.Conj.verb!⇒ConjVerb,  ->  <br>* McshEngl.Hmnmconj.verb!⇒ConjVerb,
+  McshLag000007:25932  <h3 id="idLHmnmConjSentH3">Conj.sentence  ->  <h3 id="idLHmnmConjSentH3">Hmnmconj.sentence
+  McshLag000007:26001  <br>* McshEngl.Conj.sentence!⇒ConjSent,  ->  <br>* McshEngl.Hmnmconj.sentence!⇒ConjSent,
+  McshLag000007:26045  <br>* McshEngl.Conj.coordinating-sentence!⇒ConjSent.subordinatingNo,  ->  <br>* McshEngl.Hmnmconj.coordinating-sentence!⇒ConjSent.subordinatingNo,
+  McshLag000007:26046  <br>* McshEngl.Conj.subordinatingNo-sentence!⇒ConjSent.subordinatingNo,  ->  <br>* McshEngl.Hmnmconj.subordinatingNo-sentence!⇒ConjSent.subordinatingNo,
+  McshLag000007:26075  <h3 id="idLHmnmConjAdpnH3">Conj.adposition  ->  <h3 id="idLHmnmConjAdpnH3">Hmnmconj.adposition
+  McshLag000007:26088  <br>* McshEngl.Conj.adposition,  ->  <br>* McshEngl.Hmnmconj.adposition,
+  McshLag000007:26113  <br>* McshEngl.Conj.preposition!⇒Hmnmprep,  ->  <br>* McshEngl.Hmnmconj.preposition!⇒Hmnmprep,
+  McshLag000007:26208  <br>* McshEngl.Conj.postposition!⇒Hmnmpost,  ->  <br>* McshEngl.Hmnmconj.postposition!⇒Hmnmpost,
+  McshLag000007:26234  <h3 id="idLHmnmConjCrdtH3">Conj.coordinating  ->  <h3 id="idLHmnmConjCrdtH3">Hmnmconj.coordinating
+  McshLag000007:26330  <br>* McshEngl.Conj.coordinating,  ->  <br>* McshEngl.Hmnmconj.coordinating,
+  McshLag000007:26465  <h3 id="idLHmnmConjSbdnH3">Conj.subordinating  ->  <h3 id="idLHmnmConjSbdnH3">Hmnmconj.subordinating
+  McshLag000007:26599  <br>* McshEngl.Conj.subordinating!⇒ConjSubordinating,  ->  <br>* McshEngl.Hmnmconj.subordinating!⇒ConjSubordinating,
+  McshLag000007:26601  <br>* McshEngl.Conj.subordinating!⇒ConjSubordinating,  ->  <br>* McshEngl.Hmnmconj.subordinating!⇒ConjSubordinating,
+  McshLag000007:26611  <h3 id="idLHmnmConjWrdoneH3">Conj.word-one  ->  <h3 id="idLHmnmConjWrdoneH3">Hmnmconj.word-one
+  McshLag000007:26619  <br>* McshEngl.Conj.word-one,  ->  <br>* McshEngl.Hmnmconj.word-one,
+  McshLag000007:26624  <h3 id="idLHmnmConjWrdmnyH3">Conj.word-many  ->  <h3 id="idLHmnmConjWrdmnyH3">Hmnmconj.word-many
+  McshLag000007:26633  <br>* McshEngl.Conj.multiword!⇒ConjWordMany,  ->  <br>* McshEngl.Hmnmconj.multiword!⇒ConjWordMany,
+  McshLag000007:26634  <br>* McshEngl.Conj.word-many!⇒ConjWordMany,  ->  <br>* McshEngl.Hmnmconj.word-many!⇒ConjWordMany,
+  McshLag000007:26649  <h3 id="idLHmnmConjPerdH3">Conj.paired  ->  <h3 id="idLHmnmConjPerdH3">Hmnmconj.paired
+  McshLag000007:26762  <br>* McshEngl.Conj.paired,  ->  <br>* McshEngl.Hmnmconj.paired,
+  McshLag000007:26763  <br>* McshEngl.Conj.correlative,  ->  <br>* McshEngl.Hmnmconj.correlative,
+  McshLag000007:26769  <h3 id="idLHmnmConjPerdNH3">Conj.pairedNo  ->  <h3 id="idLHmnmConjPerdNH3">Hmnmconj.pairedNo
+  McshLag000007:26776  <br>* McshEngl.Conj.pairedNo,  ->  <br>* McshEngl.Hmnmconj.pairedNo,
+  McshLag000010:4646  <br>* McshEngl.Sngu_conj'naming,  ->  <br>* McshEngl.Snguconj'naming,
+  McshLag000010:5522  <h3 id="idL0014conjnamgH3">naming of Sngu_conj (<a class="clsPreview" href="../dirLag/McshLag000010.last.html#idL0014namemgrrule03">link</a>)  ->  <h3 id="idL0014conjnamgH3">naming of Snguconj (<a class="clsPreview" href="../dirLag/McshLag000010.last.html#idL0014namemgrrule03">link</a>)
+  McshLag000010:5659  <h4 id="idL0014conjstrCoorH4">Sngu_conj.coordinating  ->  <h4 id="idL0014conjstrCoorH4">Snguconj.coordinating
+  McshLag000010:5667  <br>* McshEngl.Sngu_conj.coordinating,  ->  <br>* McshEngl.Snguconj.coordinating,
+  McshLag000027:5377  <p id="idLEllaconj_006">Ella_conj.ἀλλά::  ->  <p id="idLEllaconj_006">Ellaconj.ἀλλά::
+  McshLag000027:5402  <br>* McshEngl.Ella_conj.006-ἀλλά,  ->  <br>* McshEngl.Ellaconj.006-ἀλλά,
+  McshLag000027:5403  <br>* McshElla.αλλὰ!=ἀλλὰ!~Ella_conj,  ->  <br>* McshElla.αλλὰ!=ἀλλὰ!~Ellaconj,
+  McshLag000027:5404  <br>* McshElla.ἀλλά!~Ella_conj,  ->  <br>* McshElla.ἀλλά!~Ellaconj,
+  McshLag000027:5407  <p id="idLEllaconj_001">Ella_conj.ἀλλ_ἢ::  ->  <p id="idLEllaconj_001">Ellaconj.ἀλλ_ἢ::
+  McshLag000027:5414  <br>* McshEngl.Ella_conj.001-ἀλλ_ἢ,  ->  <br>* McshEngl.Ellaconj.001-ἀλλ_ἢ,
+  McshLag000027:5415  <br>* McshElla.αλλ'η!=ἀλλ_ἢ!~Ella_conj,  ->  <br>* McshElla.αλλ'η!=ἀλλ_ἢ!~Ellaconj,
+  McshLag000027:5416  <br>* McshElla.ἀλλ_ἢ!~Ella_conj,  ->  <br>* McshElla.ἀλλ_ἢ!~Ellaconj,
+  McshLag000027:5419  <p id="idLEllaconj_007">Ella_conj.ἀλλὰ_μήν::  ->  <p id="idLEllaconj_007">Ellaconj.ἀλλὰ_μήν::
+  McshLag000027:5424  <br>* McshEngl.Ella_conj.007-ἀλλὰ_μήν,  ->  <br>* McshEngl.Ellaconj.007-ἀλλὰ_μήν,
+  McshLag000027:5425  <br>* McshElla.αλλά_μήν!=ἀλλὰ_μήν!~Ella_conj,  ->  <br>* McshElla.αλλά_μήν!=ἀλλὰ_μήν!~Ellaconj,
+  McshLag000027:5426  <br>* McshElla.ἀλλὰ_μήν!~Ella_conj,  ->  <br>* McshElla.ἀλλὰ_μήν!~Ellaconj,
+  McshLag000027:5429  <p id="idLEllaconj_002">Ella_conj.ἅμα-επίρρημα-πρόθεση-σύνδεσμος::  ->  <p id="idLEllaconj_002">Ellaconj.ἅμα-επίρρημα-πρόθεση-σύνδεσμος::
+  McshLag000027:5457  <br>* McshEngl.Ella_conj.002-ἅμα-επίρρημα-πρόθεση-σύνδεσμος,  ->  <br>* McshEngl.Ellaconj.002-ἅμα-επίρρημα-πρόθεση-σύνδεσμος,
+  McshLag000027:5462  <br>* McshElla.άμα!=ἅμα!~Ella_conj,  ->  <br>* McshElla.άμα!=ἅμα!~Ellaconj,
+  McshLag000027:5463  <br>* McshElla.ἅμα!~Ella_conj,  ->  <br>* McshElla.ἅμα!~Ellaconj,
+  McshLag000027:5466  <p id="idLEllaconj_008">Ella_conj.άν::  ->  <p id="idLEllaconj_008">Ellaconj.άν::
+  McshLag000027:5470  <br>* McshEngl.Ella_conj.008-άν,  ->  <br>* McshEngl.Ellaconj.008-άν,
+  McshLag000027:5471  <br>* McshElla.άν!~Ella_conj,  ->  <br>* McshElla.άν!~Ellaconj,
+  McshLag000027:5474  <p id="idLEllaconj_009">Ella_conj.άν_καί::  ->  <p id="idLEllaconj_009">Ellaconj.άν_καί::
+  McshLag000027:5479  <br>* McshEngl.Ella_conj.009-άν_καί,  ->  <br>* McshEngl.Ellaconj.009-άν_καί,
+  McshLag000027:5480  <br>* McshElla.άν_καί!~Ella_conj,  ->  <br>* McshElla.άν_καί!~Ellaconj,
+  McshLag000027:5483  <p id="idLEllaconj_010">Ella_conj.άντε::  ->  <p id="idLEllaconj_010">Ellaconj.άντε::
+  McshLag000027:5488  <br>* McshEngl.Ella_conj.010-άντε,  ->  <br>* McshEngl.Ellaconj.010-άντε,
+  McshLag000027:5489  <br>* McshElla.άντε!~Ella_conj,  ->  <br>* McshElla.άντε!~Ellaconj,
+  McshLag000027:5492  <p id="idLEllaconj_011">Ella_conj.ἄρα::  ->  <p id="idLEllaconj_011">Ellaconj.ἄρα::
+  McshLag000027:5505  <br>* McshEngl.Ella_conj.011-ἄρα,  ->  <br>* McshEngl.Ellaconj.011-ἄρα,
+  McshLag000027:5506  <br>* McshElla.άρα!=ἄρα!~Ella_conj,  ->  <br>* McshElla.άρα!=ἄρα!~Ellaconj,
+  McshLag000027:5507  <br>* McshElla.ἄρα!~Ella_conj,  ->  <br>* McshElla.ἄρα!~Ellaconj,
+  McshLag000027:5510  <p id="idLEllaconj_012">Ella_conj.ατάρ::  ->  <p id="idLEllaconj_012">Ellaconj.ατάρ::
+  McshLag000027:5516  <br>* McshEngl.Ella_conj.012-ατάρ,  ->  <br>* McshEngl.Ellaconj.012-ατάρ,
+  McshLag000027:5517  <br>* McshElla.ατάρ!~Ella_conj,  ->  <br>* McshElla.ατάρ!~Ellaconj,
+  McshLag000027:5520  <p id="idLEllaconj_013">Ella_conj.ἄχρι::  ->  <p id="idLEllaconj_013">Ellaconj.ἄχρι::
+  McshLag000027:5541  <br>* McshEngl.Ella_conj.013-ἄχρι,  ->  <br>* McshEngl.Ellaconj.013-ἄχρι,
+  McshLag000027:5542  <br>* McshElla.ἄχρι!~Ella_conj,  ->  <br>* McshElla.ἄχρι!~Ellaconj,
+  McshLag000027:5549  <br>* McshElla.ἄχρις!~Ella_conj,  ->  <br>* McshElla.ἄχρις!~Ellaconj,
+  McshLag000027:5552  <p id="idLEllaconj_014">Ella_conj.γάρ::  ->  <p id="idLEllaconj_014">Ellaconj.γάρ::
+  McshLag000027:5566  <br>* McshEngl.Ella_conj.014-γάρ,  ->  <br>* McshEngl.Ellaconj.014-γάρ,
+  McshLag000027:5567  <br>* McshElla.γάρ!~Ella_conj,  ->  <br>* McshElla.γάρ!~Ellaconj,
+  McshLag000027:5570  <p id="idLEllaconj_015">Ella_conj.γούν::  ->  <p id="idLEllaconj_015">Ellaconj.γούν::
+  McshLag000027:5573  <br>* McshEngl.Ella_conj.015-γούν,  ->  <br>* McshEngl.Ellaconj.015-γούν,
+  McshLag000027:5574  <br>* McshElla.γούν!~Ella_conj,  ->  <br>* McshElla.γούν!~Ellaconj,
+  McshLag000027:5577  <p id="idLEllaconj_016">Ella_conj.δέ::  ->  <p id="idLEllaconj_016">Ellaconj.δέ::
+  McshLag000027:5581  <br>* McshEngl.Ella_conj.016-δέ,  ->  <br>* McshEngl.Ellaconj.016-δέ,
+  McshLag000027:5582  <br>* McshElla.δέ!~Ella_conj,  ->  <br>* McshElla.δέ!~Ellaconj,
+  McshLag000027:5585  <p id="idLEllaconj_017">Ella_conj.δή::  ->  <p id="idLEllaconj_017">Ellaconj.δή::
+  McshLag000027:5590  <br>* McshEngl.Ella_conj.017-δή,  ->  <br>* McshEngl.Ellaconj.017-δή,
+  McshLag000027:5591  <br>* McshElla.δή!~Ella_conj,  ->  <br>* McshElla.δή!~Ellaconj,
+  McshLag000027:5594  <p id="idLEllaconj_018">Ella_conj.δή_ώστε::  ->  <p id="idLEllaconj_018">Ellaconj.δή_ώστε::
+  McshLag000027:5597  <br>* McshEngl.Ella_conj.018-δή_ώστε,  ->  <br>* McshEngl.Ellaconj.018-δή_ώστε,
+  McshLag000027:5598  <br>* McshElla.δή_ώστε!~Ella_conj,  ->  <br>* McshElla.δή_ώστε!~Ellaconj,
+  McshLag000027:5601  <p id="idLEllaconj_019">Ella_conj.δήτα::  ->  <p id="idLEllaconj_019">Ellaconj.δήτα::
+  McshLag000027:5607  <br>* McshEngl.Ella_conj.019-δήτα,  ->  <br>* McshEngl.Ellaconj.019-δήτα,
+  McshLag000027:5608  <br>* McshElla.δήτα!~Ella_conj,  ->  <br>* McshElla.δήτα!~Ellaconj,
+  McshLag000027:5611  <p id="idLEllaconj_020">Ella_conj.διότι::  ->  <p id="idLEllaconj_020">Ellaconj.διότι::
+  McshLag000027:5615  <br>* McshEngl.Ella_conj.020-διότι,  ->  <br>* McshEngl.Ellaconj.020-διότι,
+  McshLag000027:5616  <br>* McshElla.διότι!~Ella_conj,  ->  <br>* McshElla.διότι!~Ellaconj,
+  McshLag000027:5619  <p id="idLEllaconj_021">Ella_conj.εάν::  ->  <p id="idLEllaconj_021">Ellaconj.εάν::
+  McshLag000027:5623  <br>* McshEngl.Ella_conj.021-εάν,  ->  <br>* McshEngl.Ellaconj.021-εάν,
+  McshLag000027:5624  <br>* McshElla.εάν!~Ella_conj,  ->  <br>* McshElla.εάν!~Ellaconj,
+  McshLag000027:5627  <p id="idLEllaconj_022">Ella_conj.εάντε::  ->  <p id="idLEllaconj_022">Ellaconj.εάντε::
+  McshLag000027:5632  <br>* McshEngl.Ella_conj.022-εάντε,  ->  <br>* McshEngl.Ellaconj.022-εάντε,
+  McshLag000027:5633  <br>* McshElla.εάντε!~Ella_conj,  ->  <br>* McshElla.εάντε!~Ellaconj,
+  McshLag000027:5636  <p id="idLEllaconj_023">Ella_conj.εἰ::  ->  <p id="idLEllaconj_023">Ellaconj.εἰ::
+  McshLag000027:5664  <br>* McshEngl.Ella_conj.023-εἰ,  ->  <br>* McshEngl.Ellaconj.023-εἰ,
+  McshLag000027:5667  <br>* McshElla.ει!=εἰ!~Ella_conj,  ->  <br>* McshElla.ει!=εἰ!~Ellaconj,
+  McshLag000027:5668  <br>* McshElla.εἰ!~Ella_conj,  ->  <br>* McshElla.εἰ!~Ellaconj,
+  McshLag000027:5671  <p id="idLEllaconj_024">Ella_conj.ει_καί::  ->  <p id="idLEllaconj_024">Ellaconj.ει_καί::
+  McshLag000027:5676  <br>* McshEngl.Ella_conj.024-ει_καί,  ->  <br>* McshEngl.Ellaconj.024-ει_καί,
+  McshLag000027:5677  <br>* McshElla.ει_καί!~Ella_conj,  ->  <br>* McshElla.ει_καί!~Ellaconj,
+  McshLag000027:5680  <p id="idLEllaconj_025">Ella_conj.είτε::  ->  <p id="idLEllaconj_025">Ellaconj.είτε::
+  McshLag000027:5686  <br>* McshEngl.Ella_conj.025-είτε,  ->  <br>* McshEngl.Ellaconj.025-είτε,
+  McshLag000027:5687  <br>* McshElla.είτε!~Ella_conj,  ->  <br>* McshElla.είτε!~Ellaconj,
+  McshLag000027:5690  <p id="idLEllaconj_003">Ella_conj.εἴπερ::  ->  <p id="idLEllaconj_003">Ellaconj.εἴπερ::
+  McshLag000027:5697  <br>* McshEngl.Ella_conj.003-εἴπερ,  ->  <br>* McshEngl.Ellaconj.003-εἴπερ,
+  McshLag000027:5698  <br>* McshElla.είπερ!=εἴπερ!~Ella_conj,  ->  <br>* McshElla.είπερ!=εἴπερ!~Ellaconj,
+  McshLag000027:5699  <br>* McshElla.εἴπερ!~Ella_conj,  ->  <br>* McshElla.εἴπερ!~Ellaconj,
+  McshLag000027:5702  <p id="idLEllaconj_026">Ella_conj.επάν::  ->  <p id="idLEllaconj_026">Ellaconj.επάν::
+  McshLag000027:5707  <br>* McshEngl.Ella_conj.026-επάν,  ->  <br>* McshEngl.Ellaconj.026-επάν,
+  McshLag000027:5708  <br>* McshElla.επάν!~Ella_conj,  ->  <br>* McshElla.επάν!~Ellaconj,
+  McshLag000027:5711  <p id="idLEllaconj_027">Ella_conj.ἐπεί::  ->  <p id="idLEllaconj_027">Ellaconj.ἐπεί::
+  McshLag000027:5733  <br>* McshEngl.Ella_conj.027-ἐπεί,  ->  <br>* McshEngl.Ellaconj.027-ἐπεί,
+  McshLag000027:5734  <br>* McshElla.επεὶ!=ἐπεὶ!~Ella_conj,  ->  <br>* McshElla.επεὶ!=ἐπεὶ!~Ellaconj,
+  McshLag000027:5735  <br>* McshElla.ἐπεί!~Ella_conj,  ->  <br>* McshElla.ἐπεί!~Ellaconj,
+  McshLag000027:5738  <p id="idLEllaconj_028">Ella_conj.ἐπειδάν::  ->  <p id="idLEllaconj_028">Ellaconj.ἐπειδάν::
+  McshLag000027:5752  <br>* McshEngl.Ella_conj.028-ἐπειδάν,  ->  <br>* McshEngl.Ellaconj.028-ἐπειδάν,
+  McshLag000027:5753  <br>* McshElla.επειδὰν!=ἐπειδὰν!~Ella_conj,  ->  <br>* McshElla.επειδὰν!=ἐπειδὰν!~Ellaconj,
+  McshLag000027:5754  <br>* McshElla.ἐπειδάν!~Ella_conj,  ->  <br>* McshElla.ἐπειδάν!~Ellaconj,
+  McshLag000027:5757  <p id="idLEllaconj_029">Ella_conj.ἐπειδή::  ->  <p id="idLEllaconj_029">Ellaconj.ἐπειδή::
+  McshLag000027:5779  <br>* McshEngl.Ella_conj.029-ἐπειδή,  ->  <br>* McshEngl.Ellaconj.029-ἐπειδή,
+  McshLag000027:5780  <br>* McshElla.επειδὴ!=ἐπειδὴ!~Ella_conj,  ->  <br>* McshElla.επειδὴ!=ἐπειδὴ!~Ellaconj,
+  McshLag000027:5781  <br>* McshElla.ἐπειδή!~Ella_conj,  ->  <br>* McshElla.ἐπειδή!~Ellaconj,
+  McshLag000027:5784  <p id="idLEllaconj_004">Ella_conj.ἐπείπερ::  ->  <p id="idLEllaconj_004">Ellaconj.ἐπείπερ::
+  McshLag000027:5793  <br>* McshEngl.Ella_conj.004-ἐπείπερ,  ->  <br>* McshEngl.Ellaconj.004-ἐπείπερ,
+  McshLag000027:5794  <br>* McshElla.επείπερ!=ἐπείπερ!~Ella_conj,  ->  <br>* McshElla.επείπερ!=ἐπείπερ!~Ellaconj,
+  McshLag000027:5795  <br>* McshElla.ἐπείπερ!~Ella_conj,  ->  <br>* McshElla.ἐπείπερ!~Ellaconj,
+  McshLag000027:5798  <p id="idLEllaconj_005">Ella_conj.ἐπὴν::  ->  <p id="idLEllaconj_005">Ellaconj.ἐπὴν::
+  McshLag000027:5809  <br>* McshEngl.Ella_conj.005-ἐπὴν,  ->  <br>* McshEngl.Ellaconj.005-ἐπὴν,
+  McshLag000027:5810  <br>* McshElla.επὴν!=ἐπὴν!~Ella_conj,  ->  <br>* McshElla.επὴν!=ἐπὴν!~Ellaconj,
+  McshLag000027:5811  <br>* McshElla.ἐπὴν!~Ella_conj,  ->  <br>* McshElla.ἐπὴν!~Ellaconj,
+  McshLag000027:5814  <p id="idLEllaconj_030">Ella_conj.ἔστε::  ->  <p id="idLEllaconj_030">Ellaconj.ἔστε::
+  McshLag000027:5840  <br>* McshEngl.Ella_conj.030-ἔστε,  ->  <br>* McshEngl.Ellaconj.030-ἔστε,
+  McshLag000027:5841  <br>* McshElla.έστε!=ἔστε!~Ella_conj,  ->  <br>* McshElla.έστε!=ἔστε!~Ellaconj,
+  McshLag000027:5842  <br>* McshElla.ἔστε!~Ella_conj,  ->  <br>* McshElla.ἔστε!~Ellaconj,
+  McshLag000027:5845  <p id="idLEllaconj_031">Ella_conj.έως::  ->  <p id="idLEllaconj_031">Ellaconj.έως::
+  McshLag000027:5850  <br>* McshEngl.Ella_conj.031-έως,  ->  <br>* McshEngl.Ellaconj.031-έως,
+  McshLag000027:5851  <br>* McshElla.έως!~Ella_conj,  ->  <br>* McshElla.έως!~Ellaconj,
+  McshLag000027:5854  <p id="idLEllaconj_032">Ella_conj.ἤ::  ->  <p id="idLEllaconj_032">Ellaconj.ἤ::
+  McshLag000027:5870  <br>* McshEngl.Ella_conj.032-ἤ,  ->  <br>* McshEngl.Ellaconj.032-ἤ,
+  McshLag000027:5871  <br>* McshElla.ή!=ἤ!~Ella_conj,  ->  <br>* McshElla.ή!=ἤ!~Ellaconj,
+  McshLag000027:5872  <br>* McshElla.ἤ!~Ella_conj,  ->  <br>* McshElla.ἤ!~Ellaconj,
+  McshLag000027:5875  <p id="idLEllaconj_033">Ella_conj.ἢν-ἤν::  ->  <p id="idLEllaconj_033">Ellaconj.ἢν-ἤν::
+  McshLag000027:5891  <br>* McshEngl.Ella_conj.033-ἢν,  ->  <br>* McshEngl.Ellaconj.033-ἢν,
+  McshLag000027:5892  <br>* McshElla.ήν!=ἢν!~Ella_conj,  ->  <br>* McshElla.ήν!=ἢν!~Ellaconj,
+  McshLag000027:5893  <br>* McshElla.ἤν!~Ella_conj,  ->  <br>* McshElla.ἤν!~Ellaconj,
+  McshLag000027:5894  <br>* McshElla.ἢν!~Ella_conj,  ->  <br>* McshElla.ἢν!~Ellaconj,
+  McshLag000027:5897  <p id="idLEllaconj_034">Ella_conj.ἤντε::  ->  <p id="idLEllaconj_034">Ellaconj.ἤντε::
+  McshLag000027:5904  <br>* McshEngl.Ella_conj.034-ἤντε,  ->  <br>* McshEngl.Ellaconj.034-ἤντε,
+  McshLag000027:5905  <br>* McshElla.ήντε!=ἤντε!~Ella_conj,  ->  <br>* McshElla.ήντε!=ἤντε!~Ellaconj,
+  McshLag000027:5908  <p id="idLEllaconj_035">Ella_conj.ἤτοι::  ->  <p id="idLEllaconj_035">Ellaconj.ἤτοι::
+  McshLag000027:5915  <br>* McshEngl.Ella_conj.035-ἤτοι,  ->  <br>* McshEngl.Ellaconj.035-ἤτοι,
+  McshLag000027:5916  <br>* McshElla.ήτοι!=ἤτοι!~Ella_conj,  ->  <br>* McshElla.ήτοι!=ἤτοι!~Ellaconj,
+  McshLag000027:5919  <p id="idLEllaconj_036">Ella_conj.ἵνα::  ->  <p id="idLEllaconj_036">Ellaconj.ἵνα::
+  McshLag000027:5946  <br>* McshEngl.Ella_conj.036-ἵνα,  ->  <br>* McshEngl.Ellaconj.036-ἵνα,
+  McshLag000027:5947  <br>* McshElla.ίνα!=ἵνα!~Ella_conj,  ->  <br>* McshElla.ίνα!=ἵνα!~Ellaconj,
+  McshLag000027:5948  <br>* McshElla.ἵνα!~Ella_conj,  ->  <br>* McshElla.ἵνα!~Ellaconj,
+  McshLag000027:5951  <p id="idLEllaconj_037">Ella_conj.κ'άν::  ->  <p id="idLEllaconj_037">Ellaconj.κ'άν::
+  McshLag000027:5954  <br>* McshEngl.Ella_conj.037-κ'άν,  ->  <br>* McshEngl.Ellaconj.037-κ'άν,
+  McshLag000027:5955  <br>* McshElla.κ'άν!~Ella_conj,  ->  <br>* McshElla.κ'άν!~Ellaconj,
+  McshLag000027:5958  <p id="idLEllaconj_038">Ella_conj.καὶ::  ->  <p id="idLEllaconj_038">Ellaconj.καὶ::
+  McshLag000027:5999  <br>* McshEngl.Ella_conj.038-καὶ,  ->  <br>* McshEngl.Ellaconj.038-καὶ,
+  McshLag000027:6000  <br>* McshElla.καί!=καὶ!~Ella_conj,  ->  <br>* McshElla.καί!=καὶ!~Ellaconj,
+  McshLag000027:6001  <br>* McshElla.καὶ!~Ella_conj,  ->  <br>* McshElla.καὶ!~Ellaconj,
+  McshLag000027:6004  <p id="idLEllaconj_039">Ella_conj.καὶ_ἄν::  ->  <p id="idLEllaconj_039">Ellaconj.καὶ_ἄν::
+  McshLag000027:6030  <br>* McshEngl.Ella_conj.039-κἄν,  ->  <br>* McshEngl.Ellaconj.039-κἄν,
+  McshLag000027:6031  <br>* McshEngl.Ella_conj.κἄν,  ->  <br>* McshEngl.Ellaconj.κἄν,
+  McshLag000027:6032  <br>* McshEngl.Ella_conj.καὶ_ἄν,  ->  <br>* McshEngl.Ellaconj.καὶ_ἄν,
+  McshLag000027:6033  <br>* McshElla.καί_άν!=καὶ_ἄν!~Ella_conj,  ->  <br>* McshElla.καί_άν!=καὶ_ἄν!~Ellaconj,
+  McshLag000027:6034  <br>* McshElla.κἄν!~Ella_conj,  ->  <br>* McshElla.κἄν!~Ellaconj,
+  McshLag000027:6035  <br>* McshElla.καὶ_ἄν!~Ella_conj,  ->  <br>* McshElla.καὶ_ἄν!~Ellaconj,
+  McshLag000027:6039  <p id="idLEllaconj_075">Ella_conj.καὶ_εἰ::  ->  <p id="idLEllaconj_075">Ellaconj.καὶ_εἰ::
+  McshLag000027:6045  <br>* McshEngl.Ella_conj.075-καὶ_εἰ,  ->  <br>* McshEngl.Ellaconj.075-καὶ_εἰ,
+  McshLag000027:6046  <br>* McshElla.καὶ_εἰ!~Ella_conj,  ->  <br>* McshElla.καὶ_εἰ!~Ellaconj,
+  McshLag000027:6049  <p id="idLEllaconj_040">Ella_conj.καὶ_μήν::  ->  <p id="idLEllaconj_040">Ellaconj.καὶ_μήν::
+  McshLag000027:6056  <br>* McshEngl.Ella_conj.040-καὶ_μήν,  ->  <br>* McshEngl.Ellaconj.040-καὶ_μήν,
+  McshLag000027:6057  <br>* McshElla.καὶ_μήν!~Ella_conj,  ->  <br>* McshElla.καὶ_μήν!~Ellaconj,
+  McshLag000027:6060  <p id="idLEllaconj_041">Ella_conj.καίτοι::  ->  <p id="idLEllaconj_041">Ellaconj.καίτοι::
+  McshLag000027:6067  <br>* McshEngl.Ella_conj.041-καίτοι,  ->  <br>* McshEngl.Ellaconj.041-καίτοι,
+  McshLag000027:6068  <br>* McshElla.καίτοι!~Ella_conj,  ->  <br>* McshElla.καίτοι!~Ellaconj,
+  McshLag000027:6071  <p id="idLEllaconj_042">Ella_conj.μέxρι-μέχρις::  ->  <p id="idLEllaconj_042">Ellaconj.μέxρι-μέχρις::
+  McshLag000027:6095  <br>* McshEngl.Ella_conj.042-μέxρι,  ->  <br>* McshEngl.Ellaconj.042-μέxρι,
+  McshLag000027:6096  <br>* McshElla.μέxρι!~Ella_conj,  ->  <br>* McshElla.μέxρι!~Ellaconj,
+  McshLag000027:6098  <br>* McshEngl.Ella_conj.μέxρις,  ->  <br>* McshEngl.Ellaconj.μέxρις,
+  McshLag000027:6099  <br>* McshElla.μέxρις!~Ella_conj,  ->  <br>* McshElla.μέxρις!~Ellaconj,
+  McshLag000027:6102  <p id="idLEllaconj_043">Ella_conj.μέν-μὲν::  ->  <p id="idLEllaconj_043">Ellaconj.μέν-μὲν::
+  McshLag000027:6109  <br>* McshEngl.Ella_conj.043-μέν,  ->  <br>* McshEngl.Ellaconj.043-μέν,
+  McshLag000027:6110  <br>* McshElla.μέν!~Ella_conj,  ->  <br>* McshElla.μέν!~Ellaconj,
+  McshLag000027:6112  <br>* McshEngl.Ella_conj.μὲν,  ->  <br>* McshEngl.Ellaconj.μὲν,
+  McshLag000027:6113  <br>* McshElla.μὲν!~Ella_conj,  ->  <br>* McshElla.μὲν!~Ellaconj,
+  McshLag000027:6116  <p id="idLEllaconj_044">Ella_conj.μέντοι::  ->  <p id="idLEllaconj_044">Ellaconj.μέντοι::
+  McshLag000027:6123  <br>* McshEngl.Ella_conj.044-μέντοι,  ->  <br>* McshEngl.Ellaconj.044-μέντοι,
+  McshLag000027:6124  <br>* McshElla.μέντοι!~Ella_conj,  ->  <br>* McshElla.μέντοι!~Ellaconj,
+  McshLag000027:6127  <p id="idLEllaconj_045">Ella_conj.μή-μὴ::  ->  <p id="idLEllaconj_045">Ellaconj.μή-μὴ::
+  McshLag000027:6152  <br>* McshEngl.Ella_conj.045-μή,  ->  <br>* McshEngl.Ellaconj.045-μή,
+  McshLag000027:6153  <br>* McshElla.μή!~Ella_conj,  ->  <br>* McshElla.μή!~Ellaconj,
+  McshLag000027:6155  <br>* McshEngl.Ella_conj.μὴ,  ->  <br>* McshEngl.Ellaconj.μὴ,
+  McshLag000027:6156  <br>* McshElla.μὴ!~Ella_conj,  ->  <br>* McshElla.μὴ!~Ellaconj,
+  McshLag000027:6159  <p id="idLEllaconj_070">Ella_conj.μηδὲ::  ->  <p id="idLEllaconj_070">Ellaconj.μηδὲ::
+  McshLag000027:6182  <br>* McshEngl.Ella_conj.050-μηδὲ,  ->  <br>* McshEngl.Ellaconj.050-μηδὲ,
+  McshLag000027:6183  <br>* McshElla.μηδὲ!~Ella_conj,  ->  <br>* McshElla.μηδὲ!~Ellaconj,
+  McshLag000027:6186  <p id="idLEllaconj_046">Ella_conj.μὴ_οὐ::  ->  <p id="idLEllaconj_046">Ellaconj.μὴ_οὐ::
+  McshLag000027:6193  <br>* McshEngl.Ella_conj.046-μὴ_οὐ,  ->  <br>* McshEngl.Ellaconj.046-μὴ_οὐ,
+  McshLag000027:6194  <br>* McshElla.μή_ου!=μὴ_οὐ!~Ella_conj,  ->  <br>* McshElla.μή_ου!=μὴ_οὐ!~Ellaconj,
+  McshLag000027:6195  <br>* McshElla.μὴ_οὐ!~Ella_conj,  ->  <br>* McshElla.μὴ_οὐ!~Ellaconj,
+  McshLag000027:6198  <p id="idLEllaconj_047">Ella_conj.μὴν::  ->  <p id="idLEllaconj_047">Ellaconj.μὴν::
+  McshLag000027:6205  <br>* McshEngl.Ella_conj.047-μὴν,  ->  <br>* McshEngl.Ellaconj.047-μὴν,
+  McshLag000027:6206  <br>* McshElla.μήν!=μὴν!~Ella_conj,  ->  <br>* McshElla.μήν!=μὴν!~Ellaconj,
+  McshLag000027:6207  <br>* McshElla.μήν!~Ella_conj,  ->  <br>* McshElla.μήν!~Ellaconj,
+  McshLag000027:6210  <p id="idLEllaconj_048">Ella_conj.μήτε-οὐδέ::  ->  <p id="idLEllaconj_048">Ellaconj.μήτε-οὐδέ::
+  McshLag000027:6224  <br>* McshEngl.Ella_conj.048-μήτε,  ->  <br>* McshEngl.Ellaconj.048-μήτε,
+  McshLag000027:6225  <br>* McshElla.μήτε!~Ella_conj,  ->  <br>* McshElla.μήτε!~Ellaconj,
+  McshLag000027:6227  <br>* McshEngl.Ella_conj.οὐδέ,  ->  <br>* McshEngl.Ellaconj.οὐδέ,
+  McshLag000027:6228  <br>* McshElla.οὐδέ!~Ella_conj,  ->  <br>* McshElla.οὐδέ!~Ellaconj,
+  McshLag000027:6231  <p id="idLEllaconj_049">Ella_conj.μηδ_ἐὰν-καίπερ::  ->  <p id="idLEllaconj_049">Ellaconj.μηδ_ἐὰν-καίπερ::
+  McshLag000027:6242  <br>* McshEngl.Ella_conj.049-καίπερ,  ->  <br>* McshEngl.Ellaconj.049-καίπερ,
+  McshLag000027:6243  <br>* McshElla.καίπερ!~Ella_conj,  ->  <br>* McshElla.καίπερ!~Ellaconj,
+  McshLag000027:6245  <br>* McshEngl.Ella_conj.μηδ_ἐὰν,  ->  <br>* McshEngl.Ellaconj.μηδ_ἐὰν,
+  McshLag000027:6246  <br>* McshElla.μηδ'εάν!=μηδ_ἐὰν!~Ella_conj,  ->  <br>* McshElla.μηδ'εάν!=μηδ_ἐὰν!~Ellaconj,
+  McshLag000027:6247  <br>* McshElla.μηδ_ἐὰν!~Ella_conj,  ->  <br>* McshElla.μηδ_ἐὰν!~Ellaconj,
+  McshLag000027:6250  <p id="idLEllaconj_051">Ella_conj.ὅμως::  ->  <p id="idLEllaconj_051">Ellaconj.ὅμως::
+  McshLag000027:6258  <br>* McshEngl.Ella_conj.051-ὅμως,  ->  <br>* McshEngl.Ellaconj.051-ὅμως,
+  McshLag000027:6259  <br>* McshElla.όμως!=ὅμως!~Ella_conj,  ->  <br>* McshElla.όμως!=ὅμως!~Ellaconj,
+  McshLag000027:6260  <br>* McshElla.ὅμως!~Ella_conj,  ->  <br>* McshElla.ὅμως!~Ellaconj,
+  McshLag000027:6263  <p id="idLEllaconj_052">Ella_conj.ὁπηνίκα::  ->  <p id="idLEllaconj_052">Ellaconj.ὁπηνίκα::
+  McshLag000027:6270  <br>* McshEngl.Ella_conj.052-ὁπηνίκα,  ->  <br>* McshEngl.Ellaconj.052-ὁπηνίκα,
+  McshLag000027:6271  <br>* McshElla.οπηνίκα!=ὁπηνίκα!~Ella_conj,  ->  <br>* McshElla.οπηνίκα!=ὁπηνίκα!~Ellaconj,
+  McshLag000027:6272  <br>* McshElla.ὁπηνίκα!~Ella_conj,  ->  <br>* McshElla.ὁπηνίκα!~Ellaconj,
+  McshLag000027:6275  <p id="idLEllaconj_053">Ella_conj.ὁποσάκις-ἡνίκα::  ->  <p id="idLEllaconj_053">Ellaconj.ὁποσάκις-ἡνίκα::
+  McshLag000027:6286  <br>* McshEngl.Ella_conj.053-ἡνίκα,  ->  <br>* McshEngl.Ellaconj.053-ἡνίκα,
+  McshLag000027:6287  <br>* McshEngl.Ella_conj.ὁποσάκις,  ->  <br>* McshEngl.Ellaconj.ὁποσάκις,
+  McshLag000027:6288  <br>* McshElla.ηνίκα!=ἡνίκα!~Ella_conj,  ->  <br>* McshElla.ηνίκα!=ἡνίκα!~Ellaconj,
+  McshLag000027:6289  <br>* McshElla.ἡνίκα!~Ella_conj,  ->  <br>* McshElla.ἡνίκα!~Ellaconj,
+  McshLag000027:6290  <br>* McshElla.οποσάκις!=ὁποσάκις!~Ella_conj,  ->  <br>* McshElla.οποσάκις!=ὁποσάκις!~Ellaconj,
+  McshLag000027:6291  <br>* McshElla.ὁποσάκις!~Ella_conj,  ->  <br>* McshElla.ὁποσάκις!~Ellaconj,
+  McshLag000027:6295  <p id="idLEllaconj_054">Ella_conj.ὀπόταν::  ->  <p id="idLEllaconj_054">Ellaconj.ὀπόταν::
+  McshLag000027:6302  <br>* McshEngl.Ella_conj.054-ὀπόταν,  ->  <br>* McshEngl.Ellaconj.054-ὀπόταν,
+  McshLag000027:6303  <br>* McshElla.οπόταν!=ὀπόταν!~Ella_conj,  ->  <br>* McshElla.οπόταν!=ὀπόταν!~Ellaconj,
+  McshLag000027:6304  <br>* McshElla.ὀπόταν!~Ella_conj,  ->  <br>* McshElla.ὀπόταν!~Ellaconj,
+  McshLag000027:6307  <p id="idLEllaconj_055">Ella_conj.ὁπότε::  ->  <p id="idLEllaconj_055">Ellaconj.ὁπότε::
+  McshLag000027:6322  <br>* McshEngl.Ella_conj.055-ὁπότε,  ->  <br>* McshEngl.Ellaconj.055-ὁπότε,
+  McshLag000027:6323  <br>* McshElla.οπότε!=ὁπότε!~Ella_conj,  ->  <br>* McshElla.οπότε!=ὁπότε!~Ellaconj,
+  McshLag000027:6324  <br>* McshElla.ὁπότε!~Ella_conj,  ->  <br>* McshElla.ὁπότε!~Ellaconj,
+  McshLag000027:6326  <br>* McshEngl.Ella_conj.ὁσάκις,  ->  <br>* McshEngl.Ellaconj.ὁσάκις,
+  McshLag000027:6327  <br>* McshElla.οσάκις!=ὁσάκις!~Ella_conj,  ->  <br>* McshElla.οσάκις!=ὁσάκις!~Ellaconj,
+  McshLag000027:6328  <br>* McshElla.ὁσάκις!~Ella_conj,  ->  <br>* McshElla.ὁσάκις!~Ellaconj,
+  McshLag000027:6331  <p id="idLEllaconj_056">Ella_conj.ὅπως::  ->  <p id="idLEllaconj_056">Ellaconj.ὅπως::
+  McshLag000027:6361  <br>* McshEngl.Ella_conj.056-ὅπως,  ->  <br>* McshEngl.Ellaconj.056-ὅπως,
+  McshLag000027:6362  <br>* McshElla.όπως!=ὅπως!~Ella_conj,  ->  <br>* McshElla.όπως!=ὅπως!~Ellaconj,
+  McshLag000027:6363  <br>* McshElla.ὅπως!~Ella_conj,  ->  <br>* McshElla.ὅπως!~Ellaconj,
+  McshLag000027:6368  <p id="idLEllaconj_057">Ella_conj.ότι::  ->  <p id="idLEllaconj_057">Ellaconj.ότι::
+  McshLag000027:6373  <br>* McshEngl.Ella_conj.057-ότι,  ->  <br>* McshEngl.Ellaconj.057-ότι,
+  McshLag000027:6374  <br>* McshElla.ότι!~Ella_conj,  ->  <br>* McshElla.ότι!~Ellaconj,
+  McshLag000027:6377  <p id="idLEllaconj_058">Ella_conj.ουδ_εάν::  ->  <p id="idLEllaconj_058">Ellaconj.ουδ_εάν::
+  McshLag000027:6380  <br>* McshEngl.Ella_conj.058-ουδ_εάν,  ->  <br>* McshEngl.Ellaconj.058-ουδ_εάν,
+  McshLag000027:6381  <br>* McshElla.ουδ_εάν!~Ella_conj,  ->  <br>* McshElla.ουδ_εάν!~Ellaconj,
+  McshLag000027:6384  <p id="idLEllaconj_071">Ella_conj.ὅταν::  ->  <p id="idLEllaconj_071">Ellaconj.ὅταν::
+  McshLag000027:6399  <br>* McshEngl.Ella_conj.071-ὅταν,  ->  <br>* McshEngl.Ellaconj.071-ὅταν,
+  McshLag000027:6400  <br>* McshElla.όταν!=ὅταν!~Ella_conj,  ->  <br>* McshElla.όταν!=ὅταν!~Ellaconj,
+  McshLag000027:6401  <br>* McshElla.ὅταν!~Ella_conj,  ->  <br>* McshElla.ὅταν!~Ellaconj,
+  McshLag000027:6404  <p id="idLEllaconj_072">Ella_conj.ὅτε::  ->  <p id="idLEllaconj_072">Ellaconj.ὅτε::
+  McshLag000027:6424  <br>* McshEngl.Ella_conj.072-ὅτε,  ->  <br>* McshEngl.Ellaconj.072-ὅτε,
+  McshLag000027:6425  <br>* McshElla.ότε!=ὅτε!~Ella_conj,  ->  <br>* McshElla.ότε!=ὅτε!~Ellaconj,
+  McshLag000027:6426  <br>* McshElla.ὅτε!~Ella_conj,  ->  <br>* McshElla.ὅτε!~Ellaconj,
+  McshLag000027:6429  <p id="idLEllaconj_073">Ella_conj.ὅτι::  ->  <p id="idLEllaconj_073">Ellaconj.ὅτι::
+  McshLag000027:6452  <br>* McshEngl.Ella_conj.073-ὅτι,  ->  <br>* McshEngl.Ellaconj.073-ὅτι,
+  McshLag000027:6453  <br>* McshElla.ότι!=ὅτι!~Ella_conj,  ->  <br>* McshElla.ότι!=ὅτι!~Ellaconj,
+  McshLag000027:6454  <br>* McshElla.ὅτι!~Ella_conj,  ->  <br>* McshElla.ὅτι!~Ellaconj,
+  McshLag000027:6457  <p id="idLEllaconj_077">Ella_conj.οὐδ_ἐὰν::  ->  <p id="idLEllaconj_077">Ellaconj.οὐδ_ἐὰν::
+  McshLag000027:6463  <br>* McshEngl.Ella_conj.077-οὐδ_ἐὰν,  ->  <br>* McshEngl.Ellaconj.077-οὐδ_ἐὰν,
+  McshLag000027:6464  <br>* McshElla.ουδ_εάν!=οὐδ_ἐὰν!~Ella_conj,  ->  <br>* McshElla.ουδ_εάν!=οὐδ_ἐὰν!~Ellaconj,
+  McshLag000027:6465  <br>* McshElla.οὐδ_ἐὰν!~Ella_conj,  ->  <br>* McshElla.οὐδ_ἐὰν!~Ellaconj,
+  McshLag000027:6468  <p id="idLEllaconj_078">Ella_conj.οὐδ_εἰ::  ->  <p id="idLEllaconj_078">Ellaconj.οὐδ_εἰ::
+  McshLag000027:6474  <br>* McshEngl.Ella_conj.078-οὐδ_εἰ,  ->  <br>* McshEngl.Ellaconj.078-οὐδ_εἰ,
+  McshLag000027:6475  <br>* McshElla.ουδ_ει!=οὐδ_εἰ!~Ella_conj,  ->  <br>* McshElla.ουδ_ει!=οὐδ_εἰ!~Ellaconj,
+  McshLag000027:6476  <br>* McshElla.οὐδ_εἰ!~Ella_conj,  ->  <br>* McshElla.οὐδ_εἰ!~Ellaconj,
+  McshLag000027:6479  <p id="idLEllaconj_074">Ella_conj.οὐδὲ::  ->  <p id="idLEllaconj_074">Ellaconj.οὐδὲ::
+  McshLag000027:6496  <br>* McshEngl.Ella_conj.074-οὐδὲ,  ->  <br>* McshEngl.Ellaconj.074-οὐδὲ,
+  McshLag000027:6497  <br>* McshElla.οὐδὲ!~Ella_conj,  ->  <br>* McshElla.οὐδὲ!~Ellaconj,
+  McshLag000027:6502  <p id="idLEllaconj_059">Ella_conj.οὐκοῦν::  ->  <p id="idLEllaconj_059">Ellaconj.οὐκοῦν::
+  McshLag000027:6509  <br>* McshEngl.Ella_conj.059-οὐκοῦν,  ->  <br>* McshEngl.Ellaconj.059-οὐκοῦν,
+  McshLag000027:6510  <br>* McshElla.ουκούν!=οὐκοῦν!~Ella_conj,  ->  <br>* McshElla.ουκούν!=οὐκοῦν!~Ellaconj,
+  McshLag000027:6511  <br>* McshElla.οὐκοῦν!~Ella_conj,  ->  <br>* McshElla.οὐκοῦν!~Ellaconj,
+  McshLag000027:6514  <p id="idLEllaconj_076">Ella_conj.οὔκουν::  ->  <p id="idLEllaconj_076">Ellaconj.οὔκουν::
+  McshLag000027:6520  <br>* McshEngl.Ella_conj.076-οὔκουν,  ->  <br>* McshEngl.Ellaconj.076-οὔκουν,
+  McshLag000027:6521  <br>* McshElla.ούκουν!=οὔκουν!~Ella_conj,  ->  <br>* McshElla.ούκουν!=οὔκουν!~Ellaconj,
+  McshLag000027:6522  <br>* McshElla.οὔκουν!~Ella_conj,  ->  <br>* McshElla.οὔκουν!~Ellaconj,
+  McshLag000027:6525  <p id="idLEllaconj_060">Ella_conj.ού_μήν_ἀλλά::  ->  <p id="idLEllaconj_060">Ellaconj.ού_μήν_ἀλλά::
+  McshLag000027:6532  <br>* McshEngl.Ella_conj.060-ού_μήν_ἀλλά,  ->  <br>* McshEngl.Ellaconj.060-ού_μήν_ἀλλά,
+  McshLag000027:6533  <br>* McshElla.ου_μήν_αλλά!=ού_μήν_ἀλλά!~Ella_conj,  ->  <br>* McshElla.ου_μήν_αλλά!=ού_μήν_ἀλλά!~Ellaconj,
+  McshLag000027:6534  <br>* McshElla.ού_μήν_ἀλλά!~Ella_conj,  ->  <br>* McshElla.ού_μήν_ἀλλά!~Ellaconj,
+  McshLag000027:6537  <p id="idLEllaconj_061">Ella_conj.οὖν::  ->  <p id="idLEllaconj_061">Ellaconj.οὖν::
+  McshLag000027:6544  <br>* McshEngl.Ella_conj.061-οὖν,  ->  <br>* McshEngl.Ellaconj.061-οὖν,
+  McshLag000027:6545  <br>* McshElla.ούν!=οὖν!~Ella_conj,  ->  <br>* McshElla.ούν!=οὖν!~Ellaconj,
+  McshLag000027:6546  <br>* McshElla.οὖν!~Ella_conj,  ->  <br>* McshElla.οὖν!~Ellaconj,
+  McshLag000027:6549  <p id="idLEllaconj_062">Ella_conj.οὔτε::  ->  <p id="idLEllaconj_062">Ellaconj.οὔτε::
+  McshLag000027:6564  <br>* McshEngl.Ella_conj.062-οὔτε,  ->  <br>* McshEngl.Ellaconj.062-οὔτε,
+  McshLag000027:6565  <br>* McshElla.ούτε!=οὔτε!~Ella_conj,  ->  <br>* McshElla.ούτε!=οὔτε!~Ellaconj,
+  McshLag000027:6566  <br>* McshElla.ούτε!~Ella_conj,  ->  <br>* McshElla.ούτε!~Ellaconj,
+  McshLag000027:6569  <p id="idLEllaconj_063">Ella_conj.πρὶν::  ->  <p id="idLEllaconj_063">Ellaconj.πρὶν::
+  McshLag000027:6576  <br>* McshEngl.Ella_conj.063-πρὶν,  ->  <br>* McshEngl.Ellaconj.063-πρὶν,
+  McshLag000027:6577  <br>* McshElla.πριν!=πρὶν!~Ella_conj,  ->  <br>* McshElla.πριν!=πρὶν!~Ellaconj,
+  McshLag000027:6578  <br>* McshElla.πρὶν!~Ella_conj,  ->  <br>* McshElla.πρὶν!~Ellaconj,
+  McshLag000027:6581  <p id="idLEllaconj_064">Ella_conj.τε::  ->  <p id="idLEllaconj_064">Ellaconj.τε::
+  McshLag000027:6589  <br>* McshEngl.Ella_conj.064-τε,  ->  <br>* McshEngl.Ellaconj.064-τε,
+  McshLag000027:6590  <br>* McshElla.τε!~Ella_conj,  ->  <br>* McshElla.τε!~Ellaconj,
+  McshLag000027:6593  <p id="idLEllaconj_065">Ella_conj.τοίνυν::  ->  <p id="idLEllaconj_065">Ellaconj.τοίνυν::
+  McshLag000027:6600  <br>* McshEngl.Ella_conj.065-τοίνυν,  ->  <br>* McshEngl.Ellaconj.065-τοίνυν,
+  McshLag000027:6601  <br>* McshElla.τοίνυν!~Ella_conj,  ->  <br>* McshElla.τοίνυν!~Ellaconj,
+  McshLag000027:6604  <p id="idLEllaconj_066">Ella_conj.τοιγάρτοι::  ->  <p id="idLEllaconj_066">Ellaconj.τοιγάρτοι::
+  McshLag000027:6611  <br>* McshEngl.Ella_conj.066-τοιγάρτοι,  ->  <br>* McshEngl.Ellaconj.066-τοιγάρτοι,
+  McshLag000027:6612  <br>* McshElla.τοιγάρτοι!~Ella_conj,  ->  <br>* McshElla.τοιγάρτοι!~Ellaconj,
+  McshLag000027:6615  <p id="idLEllaconj_067">Ella_conj.τοιγαροῦν::  ->  <p id="idLEllaconj_067">Ellaconj.τοιγαροῦν::
+  McshLag000027:6622  <br>* McshEngl.Ella_conj.067-τοιγαροῦν,  ->  <br>* McshEngl.Ellaconj.067-τοιγαροῦν,
+  McshLag000027:6623  <br>* McshElla.τοιγαρούν!=τοιγαροῦν!~Ella_conj,  ->  <br>* McshElla.τοιγαρούν!=τοιγαροῦν!~Ellaconj,
+  McshLag000027:6624  <br>* McshElla.τοιγαροῦν!~Ella_conj,  ->  <br>* McshElla.τοιγαροῦν!~Ellaconj,
+  McshLag000027:6627  <p id="idLEllaconj_069">Ella_conj.ὡς::  ->  <p id="idLEllaconj_069">Ellaconj.ὡς::
+  McshLag000027:6696  <br>* McshEngl.Ella_conj.069-ὡς,  ->  <br>* McshEngl.Ellaconj.069-ὡς,
+  McshLag000027:6700  <br>* McshElla.ὡς!~Ella_conj,  ->  <br>* McshElla.ὡς!~Ellaconj,
+  McshLag000027:6705  <p id="idLEllaconj_068">Ella_conj.ὥστε::  ->  <p id="idLEllaconj_068">Ellaconj.ὥστε::
+  McshLag000027:6725  <br>* McshEngl.Ella_conj.068-ὥστε,  ->  <br>* McshEngl.Ellaconj.068-ὥστε,
+  McshLag000027:6726  <br>* McshElla.ώστε!=ὥστε!~Ella_conj,  ->  <br>* McshElla.ώστε!=ὥστε!~Ellaconj,
+  McshLag000027:6727  <br>* McshElla.ὥστε!~Ella_conj,  ->  <br>* McshElla.ὥστε!~Ellaconj,
+  McshLag000027:6733  <h3 id="idLEllaConjPrepH3">Ella_conj.preposition  ->  <h3 id="idLEllaConjPrepH3">Ellaconj.preposition
+  McshLag000027:6797  <br>* McshEngl.Ella_conj.preposition!⇒Ellaprep,  ->  <br>* McshEngl.Ellaconj.preposition!⇒Ellaprep,
+  McshLag000027:6863  <h3 id="idLEllaConjPostH3">Ella_conj.postposition  ->  <h3 id="idLEllaConjPostH3">Ellaconj.postposition
+  McshLag000027:6873  <br>* McshEngl.Ella_conj.postposition,  ->  <br>* McshEngl.Ellaconj.postposition,
+  McshLag000027:6874  <br>* McshEngl.Ella_conj.postpositive,  ->  <br>* McshEngl.Ellaconj.postpositive,
+  McshLag000027:6875  <br>* McshEngl.postpositive-Ella_conj,  ->  <br>* McshEngl.postpositive-Ellaconj,
+  McshLag000027:6880  <h3 id="idLEllaConjCoorH3">Ella_conj.coordinating  ->  <h3 id="idLEllaConjCoorH3">Ellaconj.coordinating
+  McshLag000027:6887  <br>* McshEngl.Ella_conj.coordinating,  ->  <br>* McshEngl.Ellaconj.coordinating,
+  McshLag000027:6892  <h3 id="idLEllaConjSuboH3">Ella_conj.subordinating  ->  <h3 id="idLEllaConjSuboH3">Ellaconj.subordinating
+  McshLag000027:6942  <br>* McshEngl.Ella_conj.subordinating,  ->  <br>* McshEngl.Ellaconj.subordinating,
+  McshLag000033:299  <br>× logo-relation: <a class="clsPreview" href="../dirLag/McshLag000033.last.html#idLDeutconj">DeutConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="../dirLag/McshLag000033.last.html#idLDeutconj">Deutconj</a>,
+  McshLag000033:3245  <h3 id="idLDeutprepH3">DeutConj.preposition  ->  <h3 id="idLDeutprepH3">Deutconj.preposition
+  McshLag000033:3311  <br>* McshEngl.DeutConj.preposition!⇒DeutPrep,  ->  <br>* McshEngl.Deutconj.preposition!⇒DeutPrep,
+  McshLag000034:279  <br>× logo-relation: <a class="clsPreview" href="#idLBcmsconj">BcmsConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLBcmsconj">Bcmsconj</a>,
+  McshLag000035:306  <br>× logo-relation: <a class="clsPreview" href="#idLSpanconj">SpanConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLSpanconj">Spanconj</a>,
+  McshLag000035:1998  <h3 id="idLSpanConjPrepH3">SpanConj.preposition  ->  <h3 id="idLSpanConjPrepH3">Spanconj.preposition
+  McshLag000035:2098  <br>* McshEngl.SpanConj.preposition!⇒SpanPrep,  ->  <br>* McshEngl.Spanconj.preposition!⇒SpanPrep,
+  McshLag000036:303  <br>× logo-relation: <a class="clsPreview" href="#idLArabconj">ArabConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLArabconj">Arabconj</a>,
+  McshLag000036:2473  <h3 id="idLArabConjPrepH3">ArabConj.preposition  ->  <h3 id="idLArabConjPrepH3">Arabconj.preposition
+  McshLag000036:2524  <br>* McshEngl.ArabConj.preposition,  ->  <br>* McshEngl.Arabconj.preposition,
+  McshLag000037:301  <br>× logo-relation: <a class="clsPreview" href="#idLHiurconj">HiurConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLHiurconj">Hiurconj</a>,
+  McshLag000038:333  <br>× logo-relation: <a class="clsPreview" href="#idLSlv0conj">Slv0Conj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLSlv0conj">Slv0conj</a>,
+  McshLag000039:329  <br>× logo-relation: <a class="clsPreview" href="#idLIde0conj">Ide0Conj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLIde0conj">Ide0conj</a>,
+  McshLag000040:345  <br>× logo-relation: <a class="clsPreview" href="#idLAfa0conj">Afa0Conj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLAfa0conj">Afa0conj</a>,
+  McshLag000041:335  <br>× logo-relation: <a class="clsPreview" href="#idLTur0conj">Tur0Conj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLTur0conj">Tur0conj</a>,
+  McshLag000042:308  <br>× logo-relation: <a class="clsPreview" href="#idLAsa0conj">Asa0Conj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLAsa0conj">Asa0conj</a>,
+  McshLag000043:293  <br>× logo-relation: <a class="clsPreview" href="#idLKoraconj">KoraConj</a>,  ->  <br>× logo-relation: <a class="clsPreview" href="#idLKoraconj">Koraconj</a>,
+  McshLag000043:2977  <h3 id="idLKoraConjPtklH3">KoraConj.particle  ->  <h3 id="idLKoraConjPtklH3">Koraconj.particle
+  McshLag000043:3136  <br>* McshEngl.KoraConj.particle!⇒particle,  ->  <br>* McshEngl.Koraconj.particle!⇒particle,
+  McshStn000034:3365  <h4 id="idLVnmaprepH4">VnmaConj.preposition  ->  <h4 id="idLVnmaprepH4">Vnmaconj.preposition
+  McshStn000034:3461  <br>* McshEngl.VnmaConj.preposition!⇒VnmaPrep,  ->  <br>* McshEngl.Vnmaconj.preposition!⇒VnmaPrep,
+  McshStn000035:3163  <h4 id="idLItlnConjPrepH4">ItlnConj.preposition  ->  <h4 id="idLItlnConjPrepH4">Itlnconj.preposition
+  McshStn000035:3201  <br>* McshEngl.ItlnConj.preposition,  ->  <br>* McshEngl.Itlnconj.preposition,
+  McshStn000048:4390  <h4 id="idLJpnsConjPtclH4">JpnsConj.particle  ->  <h4 id="idLJpnsConjPtclH4">Jpnsconj.particle
+  McshStn000048:4443  <br>* McshEngl.JpnsConj.particle!⇒JpnsParticle,  ->  <br>* McshEngl.Jpnsconj.particle!⇒JpnsParticle,
+  McshStn000048:4452  <h4 id="idLJpnsConjWaH4">JpnsConj.は-wa-topic  ->  <h4 id="idLJpnsConjWaH4">Jpnsconj.は-wa-topic
+  McshStn000048:4461  <br>* McshEngl.JpnsConj.は-wa-Topic,  ->  <br>* McshEngl.Jpnsconj.は-wa-Topic,
+  McshStn000048:4462  <br>* McshEngl.JpnsConj.wa-は-Topic,  ->  <br>* McshEngl.Jpnsconj.wa-は-Topic,
+  McshStn000048:4463  <br>* McshEngl.JpnsConj.topic-は-wa,  ->  <br>* McshEngl.Jpnsconj.topic-は-wa,
+  McshStn000048:4465  <br>* McshJpns.wa-は-Topic-JpnsConj,  ->  <br>* McshJpns.wa-は-Topic-Jpnsconj,
+  McshStn000048:4466  <br>* McshJpns.は-wa-Topic-JpnsConj,  ->  <br>* McshJpns.は-wa-Topic-Jpnsconj,
+  McshStn000048:4471  <h4 id="idLJpnsConjGaH4">JpnsConj.が-ga-Subject  ->  <h4 id="idLJpnsConjGaH4">Jpnsconj.が-ga-Subject
+  McshStn000048:4480  <br>* McshEngl.JpnsConj.ga-が-Subject,  ->  <br>* McshEngl.Jpnsconj.ga-が-Subject,
+  McshStn000048:4481  <br>* McshEngl.JpnsConj.が-ga-Subject,  ->  <br>* McshEngl.Jpnsconj.が-ga-Subject,
+  McshStn000048:4482  <br>* McshEngl.JpnsConj.Subject-が-ga,  ->  <br>* McshEngl.Jpnsconj.Subject-が-ga,
+  McshStn000048:4484  <br>* McshJpns.が-ga-Subject-JpnsConj,  ->  <br>* McshJpns.が-ga-Subject-Jpnsconj,
+  McshStn000048:4489  <h4 id="idLJpnsConjWoH4">JpnsConj.を-o|wo-DirectObject  ->  <h4 id="idLJpnsConjWoH4">Jpnsconj.を-o|wo-DirectObject
+  McshStn000048:4499  <br>* McshEngl.JpnsConj.o|wo-を-DirectObject,  ->  <br>* McshEngl.Jpnsconj.o|wo-を-DirectObject,
+  McshStn000048:4500  <br>* McshEngl.JpnsConj.wo|o-を-DirectObject,  ->  <br>* McshEngl.Jpnsconj.wo|o-を-DirectObject,
+  McshStn000048:4501  <br>* McshEngl.JpnsConj.を-o|wo-DirectObject,  ->  <br>* McshEngl.Jpnsconj.を-o|wo-DirectObject,
+  McshStn000048:4506  <h4 id="idLJpnsConjMoH4">JpnsConj.も-mo-Also  ->  <h4 id="idLJpnsConjMoH4">Jpnsconj.も-mo-Also
+  McshStn000048:4516  <br>* McshEngl.JpnsConj.mo-も-Also,  ->  <br>* McshEngl.Jpnsconj.mo-も-Also,
+  McshStn000048:4517  <br>* McshEngl.JpnsConj.も-mo-Also,  ->  <br>* McshEngl.Jpnsconj.も-mo-Also,
+  McshStn000048:4522  <h4 id="idLJpnsConjDeH4">JpnsConj.で-de-LocationOfAction  ->  <h4 id="idLJpnsConjDeH4">Jpnsconj.で-de-LocationOfAction
+  McshStn000048:4534  <br>* McshEngl.JpnsConj.で-de-LocationOfAction,  ->  <br>* McshEngl.Jpnsconj.で-de-LocationOfAction,
+  McshStn000048:4539  <h4 id="idLJpnsConjNiH4">JpnsConj.に-ni-LocationOfExistence  ->  <h4 id="idLJpnsConjNiH4">Jpnsconj.に-ni-LocationOfExistence
+  McshStn000048:4551  <br>* McshEngl.JpnsConj.ni-に-LocationOfExistence,  ->  <br>* McshEngl.Jpnsconj.ni-に-LocationOfExistence,
+  McshStn000048:4552  <br>* McshEngl.JpnsConj.に-ni-LocationOfExistence,  ->  <br>* McshEngl.Jpnsconj.に-ni-LocationOfExistence,
+  McshStn000048:4557  <h4 id="idLJpnsconjEH4">JpnsConj.へ-e-Direction  ->  <h4 id="idLJpnsconjEH4">Jpnsconj.へ-e-Direction
+  McshStn000048:4567  <br>* McshEngl.JpnsConj.e-へ-Direction,  ->  <br>* McshEngl.Jpnsconj.e-へ-Direction,
+  McshStn000048:4568  <br>* McshEngl.JpnsConj.へ-e-Direction,  ->  <br>* McshEngl.Jpnsconj.へ-e-Direction,
+  McshStn000048:4573  <h4 id="idLJpnsconjOH4">JpnsConj.を-o-Through  ->  <h4 id="idLJpnsconjOH4">Jpnsconj.を-o-Through
+  McshStn000048:4585  <br>* McshEngl.JpnsConj.o-を-Through,  ->  <br>* McshEngl.Jpnsconj.o-を-Through,
+  McshStn000048:4586  <br>* McshEngl.JpnsConj.を-o-Through,  ->  <br>* McshEngl.Jpnsconj.を-o-Through,
+  McshStn000048:4591  <h4 id="idLJpnsConjNoH4">JpnsConj.の-no-Possession  ->  <h4 id="idLJpnsConjNoH4">Jpnsconj.の-no-Possession
+  McshStn000048:4602  <br>* McshEngl.JpnsConj.no-の-Possession,  ->  <br>* McshEngl.Jpnsconj.no-の-Possession,
+  McshStn000048:4603  <br>* McshEngl.JpnsConj.の-no-Possession,  ->  <br>* McshEngl.Jpnsconj.の-no-Possession,
+  McshStn000048:4608  <h4 id="idLJpnsConjToH4">JpnsConj.と-to-And  ->  <h4 id="idLJpnsConjToH4">Jpnsconj.と-to-And
+  McshStn000048:4620  <br>* McshEngl.JpnsConj.to-と-And,  ->  <br>* McshEngl.Jpnsconj.to-と-And,
+  McshStn000048:4621  <br>* McshEngl.JpnsConj.と-to-And,  ->  <br>* McshEngl.Jpnsconj.と-to-And,
+  McshStn000048:4626  <h4 id="idLJpnsConjYaH4">JpnsConj.や-ya-And  ->  <h4 id="idLJpnsConjYaH4">Jpnsconj.や-ya-And
+  McshStn000048:4636  <br>* McshEngl.JpnsConj.ya-や-And,  ->  <br>* McshEngl.Jpnsconj.ya-や-And,
+  McshStn000048:4637  <br>* McshEngl.JpnsConj.や-ya-And,  ->  <br>* McshEngl.Jpnsconj.や-ya-And,

@@ -1,0 +1,233 @@
+ADVERB MAIN-NAME -> <Code>adve APPLIED — 2026-10-25
+adverb main-names: 21 | renamed: 21 | name:: paragraphs: 21 | tree/reference lines: 26 | old names kept (M!⇒N added): 21 | files: 20
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (20)
+  McshLag000007         33
+  McshLag000010          5
+  McshLag000011         20
+  McshLag000018         20
+  McshLag000020         14
+  McshLag000033          4
+  McshLag000034          5
+  McshLag000035          6
+  McshLag000036          5
+  McshLag000037          5
+  McshLag000038          5
+  McshLag000039          5
+  McshLag000040          5
+  McshLag000041          5
+  McshLag000042          5
+  McshLag000043          5
+  McshStn000034          4
+  McshStn000035          5
+  McshStn000038          5
+  McshStn000050          3
+
+=== McshLag000007 (33)
+  McshLag000007:21559  <br>* McshEngl.adverb-of-Hmnm_lago!⇒Hmnm_adve,  ->  <br>* McshEngl.adverb-of-Hmnm_lago!⇒Hmnmadve,
+  McshLag000007:21560  <br>* McshEngl.Hmnm_adve!=adverb-of-Hmnm_lago,  ->  <br>* McshEngl.Hmnmadve!=adverb-of-Hmnm_lago,
+  McshLag000007:21561  <br>* McshEngl.argu_mebr.adverb!⇒Hmnm_adve,  ->  <br>* McshEngl.argu_mebr.adverb!⇒Hmnmadve,
+  McshLag000007:21562  <br>* McshEngl.HmnmAdve!⇒Hmnm_adve, {2025-11-01}  ->  <br>* McshEngl.HmnmAdve!⇒Hmnmadve, {2025-11-01}
+  McshLag000007:21563  <br>* McshEngl.Hmnm_lago'adverb!⇒Hmnm_adve,  ->  <br>* McshEngl.Hmnm_lago'adverb!⇒Hmnmadve,
+  McshLag000007:21564  <br>* McshEngl.Hmnm_lago-adverb!⇒Hmnm_adve,  ->  <br>* McshEngl.Hmnm_lago-adverb!⇒Hmnmadve,
+  McshLag000007:21565  <br>* McshEngl.argu_mebrRltn.adverb!⇒Hmnm_adve,  ->  <br>* McshEngl.argu_mebrRltn.adverb!⇒Hmnmadve,
+  McshLag000007:21566  <br>* McshEngl.adjective-modifier!⇒Hmnm_adve,  ->  <br>* McshEngl.adjective-modifier!⇒Hmnmadve,
+  McshLag000007:21567  <br>* McshEngl.adverb.lagoElln!=επίρρημα!το!⇒Hmnm_adve,  ->  <br>* McshEngl.adverb.lagoElln!=επίρρημα!το!⇒Hmnmadve,
+  McshLag000007:21568  <br>* McshEngl.adverb.lagoZhon!=副词-fùcí!⇒Hmnm_adve,  ->  <br>* McshEngl.adverb.lagoZhon!=副词-fùcí!⇒Hmnmadve,
+  McshLag000007:21569  <br>* McshEngl.adverbero!⇒Hmnm_adve,  ->  <br>* McshEngl.adverbero!⇒Hmnmadve,
+  McshLag000007:21570  <br>* McshEngl.adnameVerb!⇒Hmnm_adve,  ->  <br>* McshEngl.adnameVerb!⇒Hmnmadve,
+  McshLag000007:21571  <br>* McshEngl.advHumn!⇒Hmnm_adve,  ->  <br>* McshEngl.advHumn!⇒Hmnmadve,
+  McshLag000007:21572  <br>* McshEngl.advbHumn!⇒Hmnm_adve,  ->  <br>* McshEngl.advbHumn!⇒Hmnmadve,
+  McshLag000007:21573  <br>* McshEngl.AdveHmnm!⇒Hmnm_adve,  ->  <br>* McshEngl.AdveHmnm!⇒Hmnmadve,
+  McshLag000007:21574  <br>* McshEngl.logo-adverb!⇒Hmnm_adve,  ->  <br>* McshEngl.logo-adverb!⇒Hmnmadve,
+  McshLag000007:21575  <br>* McshEngl.logo-adverb--of-Hmnm_lago!⇒Hmnm_adve,  ->  <br>* McshEngl.logo-adverb--of-Hmnm_lago!⇒Hmnmadve,
+  McshLag000007:21576  <br>* McshEngl.modifier-of-adjective!⇒Hmnm_adve,  ->  <br>* McshEngl.modifier-of-adjective!⇒Hmnmadve,
+  McshLag000007:21577  <br>* McshEngl.nameAdverb!⇒Hmnm_adve,  ->  <br>* McshEngl.nameAdverb!⇒Hmnmadve,
+  McshLag000007:21578  <br>* McshEngl.ondoAdvb!⇒Hmnm_adve,  ->  <br>* McshEngl.ondoAdvb!⇒Hmnmadve,
+  McshLag000007:21579  <br>* McshEngl.nounAdvb!⇒Hmnm_adve,  ->  <br>* McshEngl.nounAdvb!⇒Hmnmadve,
+  McshLag000007:21580  <br>* McshEngl.Hmnmargu'adverb-name!⇒Hmnm_adve,  ->  <br>* McshEngl.Hmnmargu'adverb-name!⇒Hmnmadve,
+  McshLag000007:21582  <br>* McshZhon.fùcí-副词!=Hmnm_adve,  ->  <br>* McshZhon.fùcí-副词!=Hmnmadve,
+  McshLag000007:21583  <br>* McshZhon.副词-fùcí!=Hmnm_adve,  ->  <br>* McshZhon.副词-fùcí!=Hmnmadve,
+  McshLag000007:21585  <br>* McshElln.επίρρημα!το!=Hmnm_adve,  ->  <br>* McshElln.επίρρημα!το!=Hmnmadve,
+  McshLag000007:21587  <br>* McshTurk.zarf!=Hmnm_adve,  ->  <br>* McshTurk.zarf!=Hmnmadve,
+  McshLag000007:21561  ADD  McshEngl.Hmnm_adve!⇒Hmnmadve,
+  McshLag000007:21663  <h4 id="idLHmnmadvegstrH4">GENERIC-SPECIFIC-TREE of Hmnm_adve  ->  <h4 id="idLHmnmadvegstrH4">GENERIC-SPECIFIC-TREE of Hmnmadve
+  McshLag000007:21669  <br>* McshEngl.Hmnm_adve'generic-specific-tree,  ->  <br>* McshEngl.Hmnmadve'generic-specific-tree,
+  McshLag000007:21670  <br>* McshEngl.Hmnm_adve'specific-generic-tree,  ->  <br>* McshEngl.Hmnmadve'specific-generic-tree,
+  McshLag000007:21673  <br>* McshEngl.Hmnm_adve_Gntr,  ->  <br>* McshEngl.Hmnmadve_Gntr,
+  McshLag000007:21679  <br>* McshEngl.Hmnm_adve.specific,  ->  <br>* McshEngl.Hmnmadve.specific,
+  McshLag000007:21680  <br>* McshEngl.Hmnm_adve_Sptr,  ->  <br>* McshEngl.Hmnmadve_Sptr,
+
+=== McshLag000010 (5)
+  McshLag000010:5131  <br>* McshEngl.sinagu-adverb!⇒Sngu_adve,  ->  <br>* McshEngl.sinagu-adverb!⇒Snguadve,
+  McshLag000010:5132  <br>* McshEngl.Sngu_adve!=sinagu-adverb,  ->  <br>* McshEngl.Snguadve!=sinagu-adverb,
+  McshLag000010:5133  <br>* McshEngl.Sngu_argu_membr.adverb!⇒Sngu_adve,  ->  <br>* McshEngl.Sngu_argu_membr.adverb!⇒Snguadve,
+  McshLag000010:5134  <br>* McshEngl.AdveSngu!⇒Sngu_adve,  ->  <br>* McshEngl.AdveSngu!⇒Snguadve,
+  McshLag000010:5133  ADD  McshEngl.Sngu_adve!⇒Snguadve,
+
+=== McshLag000011 (20)
+  McshLag000011:9673  <br>* McshEngl.member-of-English-adverb!⇒Engl_adve_mebr,  ->  <br>* McshEngl.member-of-English-adverb!⇒Engladve_mebr,
+  McshLag000011:9674  <br>* McshEngl.Engl_adve_mebr!=member-of-English-adverb,  ->  <br>* McshEngl.Engladve_mebr!=member-of-English-adverb,
+  McshLag000011:9675  <br>* McshEngl.Engl_adve'member!⇒Engl_adve_mebr,  ->  <br>* McshEngl.Engl_adve'member!⇒Engladve_mebr,
+  McshLag000011:9675  ADD  McshEngl.Engl_adve_mebr!⇒Engladve_mebr,
+  McshLag000011:9655  <br>* McshEngl.English-adverb!⇒Engl_adve,  ->  <br>* McshEngl.English-adverb!⇒Engladve,
+  McshLag000011:9656  <br>* McshEngl.Engl_adve!=English-adverb,  ->  <br>* McshEngl.Engladve!=English-adverb,
+  McshLag000011:9657  <br>* McshEngl.advEngl!⇒Engl_adve,  ->  <br>* McshEngl.advEngl!⇒Engladve,
+  McshLag000011:9658  <br>* McshEngl.adverbEngl!⇒Engl_adve,  ->  <br>* McshEngl.adverbEngl!⇒Engladve,
+  McshLag000011:9659  <br>* McshEngl.logo-adverb--of-Engl_lago!⇒Engl_adve,  ->  <br>* McshEngl.logo-adverb--of-Engl_lago!⇒Engladve,
+  McshLag000011:9660  <br>* McshEngl.Engl_lago'adverb!⇒Engl_adve,  ->  <br>* McshEngl.Engl_lago'adverb!⇒Engladve,
+  McshLag000011:9661  <br>* McshEngl.OndombrRltnEngl.adverb!⇒Engl_adve,  ->  <br>* McshEngl.OndombrRltnEngl.adverb!⇒Engladve,
+  McshLag000011:9662  <br>* McshEngl.Engl_argu'adverb-name!⇒Engl_adve,  ->  <br>* McshEngl.Engl_argu'adverb-name!⇒Engladve,
+  McshLag000011:9657  ADD  McshEngl.Engl_adve!⇒Engladve,
+  McshLag000011:9899  <h4 id="idLEngladvegstrH4">GENERIC-SPECIFIC-TREE of Engl_adve  ->  <h4 id="idLEngladvegstrH4">GENERIC-SPECIFIC-TREE of Engladve
+  McshLag000011:9905  <br>* McshEngl.Engl_adve'generic-specific-tree,  ->  <br>* McshEngl.Engladve'generic-specific-tree,
+  McshLag000011:9906  <br>* McshEngl.Engl_adve'specific-generic-tree,  ->  <br>* McshEngl.Engladve'specific-generic-tree,
+  McshLag000011:9909  <br>* McshEngl.Engl_adve_Gntr,  ->  <br>* McshEngl.Engladve_Gntr,
+  McshLag000011:9911  <br>* Hmnm_adve_Gntr,  ->  <br>* Hmnmadve_Gntr,
+  McshLag000011:9916  <br>* McshEngl.Engl_adve.specific,  ->  <br>* McshEngl.Engladve.specific,
+  McshLag000011:9917  <br>* McshEngl.Engl_adve_Sptr,  ->  <br>* McshEngl.Engladve_Sptr,
+
+=== McshLag000018 (20)
+  McshLag000018:9221  <br>* McshEngl.Chinese-adverb!⇒Zhon_adve,  ->  <br>* McshEngl.Chinese-adverb!⇒Zhonadve,
+  McshLag000018:9222  <br>* McshEngl.Zhon_adve!=Chinese-adverb,  ->  <br>* McshEngl.Zhonadve!=Chinese-adverb,
+  McshLag000018:9223  <br>* McshEngl.Standard-Chinese-adverb!⇒Zhon_adve,  ->  <br>* McshEngl.Standard-Chinese-adverb!⇒Zhonadve,
+  McshLag000018:9224  <br>* McshEngl.Zhon_lago'adverb!⇒Zhon_adve,  ->  <br>* McshEngl.Zhon_lago'adverb!⇒Zhonadve,
+  McshLag000018:9225  <br>* McshEngl.advZhon!⇒Zhon_adve,  ->  <br>* McshEngl.advZhon!⇒Zhonadve,
+  McshLag000018:9226  <br>* McshEngl.AdveZhon!⇒Zhon_adve,  ->  <br>* McshEngl.AdveZhon!⇒Zhonadve,
+  McshLag000018:9227  <br>* McshEngl.adverbZhon!⇒Zhon_adve,  ->  <br>* McshEngl.adverbZhon!⇒Zhonadve,
+  McshLag000018:9228  <br>* McshEngl.logo-adverb--of-Zhon_lago!⇒Zhon_adve,  ->  <br>* McshEngl.logo-adverb--of-Zhon_lago!⇒Zhonadve,
+  McshLag000018:9229  <br>* McshEngl.NounmbrRltnZhon.adverb!⇒Zhon_adve,  ->  <br>* McshEngl.NounmbrRltnZhon.adverb!⇒Zhonadve,
+  McshLag000018:9230  <br>* McshEngl.Zhonargu'adverb-name!⇒Zhon_adve,  ->  <br>* McshEngl.Zhonargu'adverb-name!⇒Zhonadve,
+  McshLag000018:9232  <br>* McshZhon.fùcí-副词-(副詞)!=Zhon_adve,  ->  <br>* McshZhon.fùcí-副词-(副詞)!=Zhonadve,
+  McshLag000018:9233  <br>* McshZhon.副词-(副詞)-fùcí!=Zhon_adve,  ->  <br>* McshZhon.副词-(副詞)-fùcí!=Zhonadve,
+  McshLag000018:9223  ADD  McshEngl.Zhon_adve!⇒Zhonadve,
+  McshLag000018:9289  <h4 id="idLZhonadvegstrH4">GENERIC-SPECIFIC-TREE of Zhon_adve  ->  <h4 id="idLZhonadvegstrH4">GENERIC-SPECIFIC-TREE of Zhonadve
+  McshLag000018:9295  <br>* McshEngl.Zhon_adve'generic-specific-tree,  ->  <br>* McshEngl.Zhonadve'generic-specific-tree,
+  McshLag000018:9296  <br>* McshEngl.Zhon_adve'specific-generic-tree,  ->  <br>* McshEngl.Zhonadve'specific-generic-tree,
+  McshLag000018:9299  <br>* McshEngl.Zhon_adve_Gntr,  ->  <br>* McshEngl.Zhonadve_Gntr,
+  McshLag000018:9301  <br>* Hmnm_adve_Gntr,  ->  <br>* Hmnmadve_Gntr,
+  McshLag000018:9306  <br>* McshEngl.Zhon_adve.specific,  ->  <br>* McshEngl.Zhonadve.specific,
+  McshLag000018:9307  <br>* McshEngl.Zhon_adve_Sptr,  ->  <br>* McshEngl.Zhonadve_Sptr,
+
+=== McshLag000020 (14)
+  McshLag000020:9616  <br>* McshEngl.Greek-adverb!⇒Elln_adve,  ->  <br>* McshEngl.Greek-adverb!⇒Ellnadve,
+  McshLag000020:9617  <br>* McshEngl.Elln_adve!=Greek-adverb,  ->  <br>* McshEngl.Ellnadve!=Greek-adverb,
+  McshLag000020:9618  <br>* McshEngl.AdveElln!⇒Elln_adve,  ->  <br>* McshEngl.AdveElln!⇒Ellnadve,
+  McshLag000020:9619  <br>* McshEngl.Elln_logo'adverb!⇒Elln_adve,  ->  <br>* McshEngl.Elln_logo'adverb!⇒Ellnadve,
+  McshLag000020:9620  <br>* McshEngl.Elln_argu'adverb--name!⇒Elln_adve,  ->  <br>* McshEngl.Elln_argu'adverb--name!⇒Ellnadve,
+  McshLag000020:9622  <br>* McshElln.Ελλν_επιρ!το!=Elln_adve,  ->  <br>* McshElln.Ελλν_επιρ!το!=Ellnadve,
+  McshLag000020:9623  <br>* McshElln.επίρρημα!το!=Elln_adve,  ->  <br>* McshElln.επίρρημα!το!=Ellnadve,
+  McshLag000020:9618  ADD  McshEngl.Elln_adve!⇒Ellnadve,
+  McshLag000020:9628  <h4 id="idLEllnadvegstrH4">GENERIC-SPECIFIC-TREE of Elln_adve  ->  <h4 id="idLEllnadvegstrH4">GENERIC-SPECIFIC-TREE of Ellnadve
+  McshLag000020:9634  <br>* McshEngl.Elln_adve'generic-specific-tree,  ->  <br>* McshEngl.Ellnadve'generic-specific-tree,
+  McshLag000020:9635  <br>* McshEngl.Elln_adve'specific-generic-tree,  ->  <br>* McshEngl.Ellnadve'specific-generic-tree,
+  McshLag000020:9638  <br>* McshEngl.Elln_adve_Gntr,  ->  <br>* McshEngl.Ellnadve_Gntr,
+  McshLag000020:9643  <br>* McshEngl.Elln_adve.specific,  ->  <br>* McshEngl.Ellnadve.specific,
+  McshLag000020:9644  <br>* McshEngl.Elln_adve_Sptr,  ->  <br>* McshEngl.Ellnadve_Sptr,
+
+=== McshLag000033 (4)
+  McshLag000033:2754  <br>* McshEngl.adverb-of-Deut_lago!⇒DeutAdve,  ->  <br>* McshEngl.adverb-of-Deut_lago!⇒Deutadve,
+  McshLag000033:2755  <br>* McshEngl.DeutAdve!=adverb-of-Deut_lago,  ->  <br>* McshEngl.Deutadve!=adverb-of-Deut_lago,
+  McshLag000033:2756  <br>* McshEngl.Deutargu'adverb!⇒DeutAdve,  ->  <br>* McshEngl.Deutargu'adverb!⇒Deutadve,
+  McshLag000033:2756  ADD  McshEngl.DeutAdve!⇒Deutadve,
+
+=== McshLag000034 (5)
+  McshLag000034:1815  <br>* McshEngl.BcmsAdve,  ->  <br>* McshEngl.Bcmsadve,
+  McshLag000034:1816  <br>* McshEngl.BcmsArgoMebr.adverb!⇒BcmsAdve,  ->  <br>* McshEngl.BcmsArgoMebr.adverb!⇒Bcmsadve,
+  McshLag000034:1817  <br>* McshEngl.AdveBcms!⇒BcmsAdve,  ->  <br>* McshEngl.AdveBcms!⇒Bcmsadve,
+  McshLag000034:1818  <br>* McshEngl.BcmsArgo'adverb-name!⇒BcmsAdve,  ->  <br>* McshEngl.BcmsArgo'adverb-name!⇒Bcmsadve,
+  McshLag000034:1816  ADD  McshEngl.BcmsAdve!⇒Bcmsadve,
+
+=== McshLag000035 (6)
+  McshLag000035:1527  <br>* McshEngl.Spanish-adverb!⇒SpanAdve,  ->  <br>* McshEngl.Spanish-adverb!⇒Spanadve,
+  McshLag000035:1528  <br>* McshEngl.SpanAdve!=Spanish-adverb,  ->  <br>* McshEngl.Spanadve!=Spanish-adverb,
+  McshLag000035:1529  <br>* McshEngl.SpanArgoMebr.adverb!⇒SpanAdve,  ->  <br>* McshEngl.SpanArgoMebr.adverb!⇒Spanadve,
+  McshLag000035:1530  <br>* McshEngl.AdveSpan!⇒SpanAdve,  ->  <br>* McshEngl.AdveSpan!⇒Spanadve,
+  McshLag000035:1531  <br>* McshEngl.SpanArgo'adverb-name!⇒SpanAdve,  ->  <br>* McshEngl.SpanArgo'adverb-name!⇒Spanadve,
+  McshLag000035:1529  ADD  McshEngl.SpanAdve!⇒Spanadve,
+
+=== McshLag000036 (5)
+  McshLag000036:1980  <br>* McshEngl.ArabAdve,  ->  <br>* McshEngl.Arabadve,
+  McshLag000036:1981  <br>* McshEngl.ArabArgoMebr.adverb!⇒ArabAdve,  ->  <br>* McshEngl.ArabArgoMebr.adverb!⇒Arabadve,
+  McshLag000036:1982  <br>* McshEngl.AdveArab!⇒ArabAdve,  ->  <br>* McshEngl.AdveArab!⇒Arabadve,
+  McshLag000036:1983  <br>* McshEngl.ArabArgo'adverb-name!⇒ArabAdve,  ->  <br>* McshEngl.ArabArgo'adverb-name!⇒Arabadve,
+  McshLag000036:1981  ADD  McshEngl.ArabAdve!⇒Arabadve,
+
+=== McshLag000037 (5)
+  McshLag000037:1664  <br>* McshEngl.HiurAdve,  ->  <br>* McshEngl.Hiuradve,
+  McshLag000037:1665  <br>* McshEngl.HiurArgoMebr.adverb!⇒HiurAdve,  ->  <br>* McshEngl.HiurArgoMebr.adverb!⇒Hiuradve,
+  McshLag000037:1666  <br>* McshEngl.AdveHiur!⇒HiurAdve,  ->  <br>* McshEngl.AdveHiur!⇒Hiuradve,
+  McshLag000037:1667  <br>* McshEngl.HiurArgo'adverb-name!⇒HiurAdve,  ->  <br>* McshEngl.HiurArgo'adverb-name!⇒Hiuradve,
+  McshLag000037:1665  ADD  McshEngl.HiurAdve!⇒Hiuradve,
+
+=== McshLag000038 (5)
+  McshLag000038:1161  <br>* McshEngl.Slv0Adve,  ->  <br>* McshEngl.Slv0adve,
+  McshLag000038:1162  <br>* McshEngl.Slv0ArgoMebr.adverb!⇒Slv0Adve,  ->  <br>* McshEngl.Slv0ArgoMebr.adverb!⇒Slv0adve,
+  McshLag000038:1163  <br>* McshEngl.adveSlv0!⇒Slv0Adve,  ->  <br>* McshEngl.adveSlv0!⇒Slv0adve,
+  McshLag000038:1164  <br>* McshEngl.Slv0Argo'adverb-name!⇒Slv0Adve,  ->  <br>* McshEngl.Slv0Argo'adverb-name!⇒Slv0adve,
+  McshLag000038:1162  ADD  McshEngl.Slv0Adve!⇒Slv0adve,
+
+=== McshLag000039 (5)
+  McshLag000039:827  <br>* McshEngl.Ide0Adve,  ->  <br>* McshEngl.Ide0adve,
+  McshLag000039:828  <br>* McshEngl.Ide0ArgoMebr.adverb!⇒Ide0Adve,  ->  <br>* McshEngl.Ide0ArgoMebr.adverb!⇒Ide0adve,
+  McshLag000039:829  <br>* McshEngl.adveIde0!⇒Ide0Adve,  ->  <br>* McshEngl.adveIde0!⇒Ide0adve,
+  McshLag000039:830  <br>* McshEngl.Ide0Argo'adverb-name!⇒Ide0Adve,  ->  <br>* McshEngl.Ide0Argo'adverb-name!⇒Ide0adve,
+  McshLag000039:828  ADD  McshEngl.Ide0Adve!⇒Ide0adve,
+
+=== McshLag000040 (5)
+  McshLag000040:1052  <br>* McshEngl.Afa0Adve,  ->  <br>* McshEngl.Afa0adve,
+  McshLag000040:1053  <br>* McshEngl.Afa0ArgoMebr.adverb!⇒Afa0Adve,  ->  <br>* McshEngl.Afa0ArgoMebr.adverb!⇒Afa0adve,
+  McshLag000040:1054  <br>* McshEngl.adveAfa0!⇒Afa0Adve,  ->  <br>* McshEngl.adveAfa0!⇒Afa0adve,
+  McshLag000040:1055  <br>* McshEngl.Afa0Argo'adverb-name!⇒Afa0Adve,  ->  <br>* McshEngl.Afa0Argo'adverb-name!⇒Afa0adve,
+  McshLag000040:1053  ADD  McshEngl.Afa0Adve!⇒Afa0adve,
+
+=== McshLag000041 (5)
+  McshLag000041:964  <br>* McshEngl.Tur0Adve,  ->  <br>* McshEngl.Tur0adve,
+  McshLag000041:965  <br>* McshEngl.Tur0ArgoMebr.adverb!⇒Tur0Adve,  ->  <br>* McshEngl.Tur0ArgoMebr.adverb!⇒Tur0adve,
+  McshLag000041:966  <br>* McshEngl.adveTur0!⇒Tur0Adve,  ->  <br>* McshEngl.adveTur0!⇒Tur0adve,
+  McshLag000041:967  <br>* McshEngl.Tur0Argo'adverb-name!⇒Tur0Adve,  ->  <br>* McshEngl.Tur0Argo'adverb-name!⇒Tur0adve,
+  McshLag000041:965  ADD  McshEngl.Tur0Adve!⇒Tur0adve,
+
+=== McshLag000042 (5)
+  McshLag000042:973  <br>* McshEngl.Asa0Adve,  ->  <br>* McshEngl.Asa0adve,
+  McshLag000042:974  <br>* McshEngl.Asa0ArgoMebr.adverb!⇒Asa0Adve,  ->  <br>* McshEngl.Asa0ArgoMebr.adverb!⇒Asa0adve,
+  McshLag000042:975  <br>* McshEngl.adveAsa0!⇒Asa0Adve,  ->  <br>* McshEngl.adveAsa0!⇒Asa0adve,
+  McshLag000042:976  <br>* McshEngl.Asa0Argo'adverb-name!⇒Asa0Adve,  ->  <br>* McshEngl.Asa0Argo'adverb-name!⇒Asa0adve,
+  McshLag000042:974  ADD  McshEngl.Asa0Adve!⇒Asa0adve,
+
+=== McshLag000043 (5)
+  McshLag000043:2473  <br>* McshEngl.KoraAdve,  ->  <br>* McshEngl.Koraadve,
+  McshLag000043:2474  <br>* McshEngl.KoraArgoMebr.adverb!⇒KoraAdve,  ->  <br>* McshEngl.KoraArgoMebr.adverb!⇒Koraadve,
+  McshLag000043:2475  <br>* McshEngl.AdveKora!⇒KoraAdve,  ->  <br>* McshEngl.AdveKora!⇒Koraadve,
+  McshLag000043:2476  <br>* McshEngl.KoraArgo'adverb-name!⇒KoraAdve,  ->  <br>* McshEngl.KoraArgo'adverb-name!⇒Koraadve,
+  McshLag000043:2474  ADD  McshEngl.KoraAdve!⇒Koraadve,
+
+=== McshStn000034 (4)
+  McshStn000034:3114  <br>* McshEngl.VnmaAdve!=Vietnamese-adverb,  ->  <br>* McshEngl.Vnmaadve!=Vietnamese-adverb,
+  McshStn000034:3115  <br>* McshEngl.AdveVnma!⇒VnmaAdve,  ->  <br>* McshEngl.AdveVnma!⇒Vnmaadve,
+  McshStn000034:3116  <br>* McshEngl.logoVnma'adverb!⇒VnmaAdve,  ->  <br>* McshEngl.logoVnma'adverb!⇒Vnmaadve,
+  McshStn000034:3115  ADD  McshEngl.VnmaAdve!⇒Vnmaadve,
+
+=== McshStn000035 (5)
+  McshStn000035:2215  <br>* McshEngl.Italian-adverb!⇒ItlnAdve,  ->  <br>* McshEngl.Italian-adverb!⇒Itlnadve,
+  McshStn000035:2216  <br>* McshEngl.ItlnAdve!=Italian-adverb,  ->  <br>* McshEngl.Itlnadve!=Italian-adverb,
+  McshStn000035:2217  <br>* McshEngl.logoItln'adverb!⇒ItlnAdve,  ->  <br>* McshEngl.logoItln'adverb!⇒Itlnadve,
+  McshStn000035:2218  <br>* McshEngl.AdveItln!⇒ItlnAdve,  ->  <br>* McshEngl.AdveItln!⇒Itlnadve,
+  McshStn000035:2217  ADD  McshEngl.ItlnAdve!⇒Itlnadve,
+
+=== McshStn000038 (5)
+  McshStn000038:1220  <br>* McshEngl.Bulgarian-adverb!⇒SbulAdve,  ->  <br>* McshEngl.Bulgarian-adverb!⇒Sbuladve,
+  McshStn000038:1221  <br>* McshEngl.SbulAdve!=Bulgarian-adverb,  ->  <br>* McshEngl.Sbuladve!=Bulgarian-adverb,
+  McshStn000038:1222  <br>* McshEngl.logoSbul'adverb!⇒SbulAdve,  ->  <br>* McshEngl.logoSbul'adverb!⇒Sbuladve,
+  McshStn000038:1223  <br>* McshEngl.SbulArgo'adverb-name!⇒SbulAdve,  ->  <br>* McshEngl.SbulArgo'adverb-name!⇒Sbuladve,
+  McshStn000038:1222  ADD  McshEngl.SbulAdve!⇒Sbuladve,
+
+=== McshStn000050 (3)
+  McshStn000050:3057  <br>* McshEngl.KhmrAdve,  ->  <br>* McshEngl.Khmradve,
+  McshStn000050:3058  <br>* McshEngl.KhmrLogoView'argu-name'adverb-name!⇒KhmrAdve,  ->  <br>* McshEngl.KhmrLogoView'argu-name'adverb-name!⇒Khmradve,
+  McshStn000050:3058  ADD  McshEngl.KhmrAdve!⇒Khmradve,

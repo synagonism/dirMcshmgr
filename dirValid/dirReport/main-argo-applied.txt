@@ -1,0 +1,234 @@
+ARGU MAIN-NAME -> <Code>argu APPLIED — 2026-10-25
+argu main-names: 23 | renamed: 23 | name:: paragraphs: 23 | tree/reference lines: 60 | old names kept (M!⇒N added): 23 | files: 21
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (21)
+  McshLag000034         12
+  McshLag000035         12
+  McshLag000036         12
+  McshLag000037         18
+  McshLag000038         12
+  McshLag000039         12
+  McshLag000040         12
+  McshLag000041         12
+  McshLag000042         12
+  McshLag000043         12
+  McshStn000034          5
+  McshStn000035          3
+  McshStn000037          3
+  McshStn000038          4
+  McshStn000039          3
+  McshStn000040          3
+  McshStn000041          3
+  McshStn000043          3
+  McshStn000044          3
+  McshStn000048          3
+  McshStn000050          3
+
+=== McshLag000034 (12)
+  McshLag000034:1702  <br>* McshEngl.BcmsArgo,  ->  <br>* McshEngl.Bcmsargu,
+  McshLag000034:1703  <br>* McshEngl.Bcms_lago'argu!⇒BcmsArgo,  ->  <br>* McshEngl.Bcms_lago'argu!⇒Bcmsargu,
+  McshLag000034:1704  <br>* McshEngl.BcmsName.argu!⇒BcmsArgo,  ->  <br>* McshEngl.BcmsName.argu!⇒Bcmsargu,
+  McshLag000034:1705  <br>* McshEngl.argoBcms!⇒BcmsArgo,  ->  <br>* McshEngl.argoBcms!⇒Bcmsargu,
+  McshLag000034:1706  <br>* McshEngl.BcmsLogoView'argu-name!⇒BcmsArgo,  ->  <br>* McshEngl.BcmsLogoView'argu-name!⇒Bcmsargu,
+  McshLag000034:1703  ADD  McshEngl.BcmsArgo!⇒Bcmsargu,
+  McshLag000034:1828  <h3 id="idLBcmsondogstrH3">GENERIC-SPECIFIC-TREE of BcmsArgo  ->  <h3 id="idLBcmsondogstrH3">GENERIC-SPECIFIC-TREE of Bcmsargu
+  McshLag000034:1834  <br>* McshEngl.BcmsArgo'generic-specific-tree,  ->  <br>* McshEngl.Bcmsargu'generic-specific-tree,
+  McshLag000034:1835  <br>* McshEngl.BcmsArgo'specific-generic-tree,  ->  <br>* McshEngl.Bcmsargu'specific-generic-tree,
+  McshLag000034:1838  <br>* McshEngl.BcmsArgo_Gntr,  ->  <br>* McshEngl.Bcmsargu_Gntr,
+  McshLag000034:1844  <br>* McshEngl.BcmsArgo.specific,  ->  <br>* McshEngl.Bcmsargu.specific,
+  McshLag000034:1845  <br>* McshEngl.BcmsArgo_Sptr,  ->  <br>* McshEngl.Bcmsargu_Sptr,
+
+=== McshLag000035 (12)
+  McshLag000035:1222  <br>* McshEngl.SpanArgo,  ->  <br>* McshEngl.Spanargu,
+  McshLag000035:1223  <br>* McshEngl.Span_lago'argu!⇒SpanArgo,  ->  <br>* McshEngl.Span_lago'argu!⇒Spanargu,
+  McshLag000035:1224  <br>* McshEngl.SpanName.argu!⇒SpanArgo,  ->  <br>* McshEngl.SpanName.argu!⇒Spanargu,
+  McshLag000035:1225  <br>* McshEngl.argoSpan!⇒SpanArgo,  ->  <br>* McshEngl.argoSpan!⇒Spanargu,
+  McshLag000035:1226  <br>* McshEngl.SpanLogoView'argu-name!⇒SpanArgo,  ->  <br>* McshEngl.SpanLogoView'argu-name!⇒Spanargu,
+  McshLag000035:1223  ADD  McshEngl.SpanArgo!⇒Spanargu,
+  McshLag000035:1540  <h3 id="idLSpanondogstrH3">GENERIC-SPECIFIC-TREE of SpanArgo  ->  <h3 id="idLSpanondogstrH3">GENERIC-SPECIFIC-TREE of Spanargu
+  McshLag000035:1546  <br>* McshEngl.SpanArgo'generic-specific-tree,  ->  <br>* McshEngl.Spanargu'generic-specific-tree,
+  McshLag000035:1547  <br>* McshEngl.SpanArgo'specific-generic-tree,  ->  <br>* McshEngl.Spanargu'specific-generic-tree,
+  McshLag000035:1550  <br>* McshEngl.SpanArgo_Gntr,  ->  <br>* McshEngl.Spanargu_Gntr,
+  McshLag000035:1556  <br>* McshEngl.SpanArgo.specific,  ->  <br>* McshEngl.Spanargu.specific,
+  McshLag000035:1557  <br>* McshEngl.SpanArgo_Sptr,  ->  <br>* McshEngl.Spanargu_Sptr,
+
+=== McshLag000036 (12)
+  McshLag000036:1771  <br>* McshEngl.ArabArgo,  ->  <br>* McshEngl.Arabargu,
+  McshLag000036:1772  <br>* McshEngl.Arab_lago'argu!⇒ArabArgo,  ->  <br>* McshEngl.Arab_lago'argu!⇒Arabargu,
+  McshLag000036:1773  <br>* McshEngl.ArabName.argu!⇒ArabArgo,  ->  <br>* McshEngl.ArabName.argu!⇒Arabargu,
+  McshLag000036:1774  <br>* McshEngl.argoArab!⇒ArabArgo,  ->  <br>* McshEngl.argoArab!⇒Arabargu,
+  McshLag000036:1775  <br>* McshEngl.ArabLogoView'argu-name!⇒ArabArgo,  ->  <br>* McshEngl.ArabLogoView'argu-name!⇒Arabargu,
+  McshLag000036:1772  ADD  McshEngl.ArabArgo!⇒Arabargu,
+  McshLag000036:1993  <h3 id="idLArabondogstrH3">GENERIC-SPECIFIC-TREE of ArabArgo  ->  <h3 id="idLArabondogstrH3">GENERIC-SPECIFIC-TREE of Arabargu
+  McshLag000036:1999  <br>* McshEngl.ArabArgo'generic-specific-tree,  ->  <br>* McshEngl.Arabargu'generic-specific-tree,
+  McshLag000036:2000  <br>* McshEngl.ArabArgo'specific-generic-tree,  ->  <br>* McshEngl.Arabargu'specific-generic-tree,
+  McshLag000036:2003  <br>* McshEngl.ArabArgo_Gntr,  ->  <br>* McshEngl.Arabargu_Gntr,
+  McshLag000036:2009  <br>* McshEngl.ArabArgo.specific,  ->  <br>* McshEngl.Arabargu.specific,
+  McshLag000036:2010  <br>* McshEngl.ArabArgo_Sptr,  ->  <br>* McshEngl.Arabargu_Sptr,
+
+=== McshLag000037 (18)
+  McshLag000037:4829  <br>* McshEngl.UrduLogoView'argu_name,  ->  <br>* McshEngl.Urduargu,
+  McshLag000037:4830  <br>* McshEngl.UrduLogoView'argu-name!⇒UrduLogoView'argu_name,  ->  <br>* McshEngl.UrduLogoView'argu-name!⇒Urduargu,
+  McshLag000037:4830  ADD  McshEngl.UrduLogoView'argu_name!⇒Urduargu,
+  McshLag000037:4136  <br>* McshEngl.HindLogoView'argu_name,  ->  <br>* McshEngl.Hindargu,
+  McshLag000037:4137  <br>* McshEngl.HindLogoView'argu-name!⇒HindLogoView'argu_name,  ->  <br>* McshEngl.HindLogoView'argu-name!⇒Hindargu,
+  McshLag000037:4137  ADD  McshEngl.HindLogoView'argu_name!⇒Hindargu,
+  McshLag000037:1551  <br>* McshEngl.HiurArgo,  ->  <br>* McshEngl.Hiurargu,
+  McshLag000037:1552  <br>* McshEngl.Hiur_lago'argu!⇒HiurArgo,  ->  <br>* McshEngl.Hiur_lago'argu!⇒Hiurargu,
+  McshLag000037:1553  <br>* McshEngl.HiurName.argu!⇒HiurArgo,  ->  <br>* McshEngl.HiurName.argu!⇒Hiurargu,
+  McshLag000037:1554  <br>* McshEngl.argoHiur!⇒HiurArgo,  ->  <br>* McshEngl.argoHiur!⇒Hiurargu,
+  McshLag000037:1555  <br>* McshEngl.HiurLogoView'argu-name!⇒HiurArgo,  ->  <br>* McshEngl.HiurLogoView'argu-name!⇒Hiurargu,
+  McshLag000037:1552  ADD  McshEngl.HiurArgo!⇒Hiurargu,
+  McshLag000037:1677  <h3 id="idLHiurondogstrH3">GENERIC-SPECIFIC-TREE of HiurArgo  ->  <h3 id="idLHiurondogstrH3">GENERIC-SPECIFIC-TREE of Hiurargu
+  McshLag000037:1683  <br>* McshEngl.HiurArgo'generic-specific-tree,  ->  <br>* McshEngl.Hiurargu'generic-specific-tree,
+  McshLag000037:1684  <br>* McshEngl.HiurArgo'specific-generic-tree,  ->  <br>* McshEngl.Hiurargu'specific-generic-tree,
+  McshLag000037:1687  <br>* McshEngl.HiurArgo_Gntr,  ->  <br>* McshEngl.Hiurargu_Gntr,
+  McshLag000037:1693  <br>* McshEngl.HiurArgo.specific,  ->  <br>* McshEngl.Hiurargu.specific,
+  McshLag000037:1694  <br>* McshEngl.HiurArgo_Sptr,  ->  <br>* McshEngl.Hiurargu_Sptr,
+
+=== McshLag000038 (12)
+  McshLag000038:1048  <br>* McshEngl.Slv0Argo,  ->  <br>* McshEngl.Slv0argu,
+  McshLag000038:1049  <br>* McshEngl.Slv0Lago'argu!⇒Slv0Argo,  ->  <br>* McshEngl.Slv0Lago'argu!⇒Slv0argu,
+  McshLag000038:1050  <br>* McshEngl.Slv0Name.argu!⇒Slv0Argo,  ->  <br>* McshEngl.Slv0Name.argu!⇒Slv0argu,
+  McshLag000038:1051  <br>* McshEngl.argoSlv0!⇒Slv0Argo,  ->  <br>* McshEngl.argoSlv0!⇒Slv0argu,
+  McshLag000038:1052  <br>* McshEngl.Slv0LogoView'argu-name!⇒Slv0Argo,  ->  <br>* McshEngl.Slv0LogoView'argu-name!⇒Slv0argu,
+  McshLag000038:1049  ADD  McshEngl.Slv0Argo!⇒Slv0argu,
+  McshLag000038:1174  <h3 id="idLSlv0ondogstrH3">GENERIC-SPECIFIC-TREE of Slv0Argo  ->  <h3 id="idLSlv0ondogstrH3">GENERIC-SPECIFIC-TREE of Slv0argu
+  McshLag000038:1180  <br>* McshEngl.Slv0Argo'generic-specific-tree,  ->  <br>* McshEngl.Slv0argu'generic-specific-tree,
+  McshLag000038:1181  <br>* McshEngl.Slv0Argo'specific-generic-tree,  ->  <br>* McshEngl.Slv0argu'specific-generic-tree,
+  McshLag000038:1184  <br>* McshEngl.Slv0Argo_Gntr,  ->  <br>* McshEngl.Slv0argu_Gntr,
+  McshLag000038:1190  <br>* McshEngl.Slv0Argo.specific,  ->  <br>* McshEngl.Slv0argu.specific,
+  McshLag000038:1191  <br>* McshEngl.Slv0Argo_Sptr,  ->  <br>* McshEngl.Slv0argu_Sptr,
+
+=== McshLag000039 (12)
+  McshLag000039:714  <br>* McshEngl.Ide0Argo,  ->  <br>* McshEngl.Ide0argu,
+  McshLag000039:715  <br>* McshEngl.Ide0_lago'argu!⇒Ide0Argo,  ->  <br>* McshEngl.Ide0_lago'argu!⇒Ide0argu,
+  McshLag000039:716  <br>* McshEngl.Ide0Name.argu!⇒Ide0Argo,  ->  <br>* McshEngl.Ide0Name.argu!⇒Ide0argu,
+  McshLag000039:717  <br>* McshEngl.argoIde0!⇒Ide0Argo,  ->  <br>* McshEngl.argoIde0!⇒Ide0argu,
+  McshLag000039:718  <br>* McshEngl.Ide0LogoView'argu-name!⇒Ide0Argo,  ->  <br>* McshEngl.Ide0LogoView'argu-name!⇒Ide0argu,
+  McshLag000039:715  ADD  McshEngl.Ide0Argo!⇒Ide0argu,
+  McshLag000039:840  <h3 id="idLIde0ondogstrH3">GENERIC-SPECIFIC-TREE of Ide0Argo  ->  <h3 id="idLIde0ondogstrH3">GENERIC-SPECIFIC-TREE of Ide0argu
+  McshLag000039:846  <br>* McshEngl.Ide0Argo'generic-specific-tree,  ->  <br>* McshEngl.Ide0argu'generic-specific-tree,
+  McshLag000039:847  <br>* McshEngl.Ide0Argo'specific-generic-tree,  ->  <br>* McshEngl.Ide0argu'specific-generic-tree,
+  McshLag000039:850  <br>* McshEngl.Ide0Argo_Gntr,  ->  <br>* McshEngl.Ide0argu_Gntr,
+  McshLag000039:856  <br>* McshEngl.Ide0Argo.specific,  ->  <br>* McshEngl.Ide0argu.specific,
+  McshLag000039:857  <br>* McshEngl.Ide0Argo_Sptr,  ->  <br>* McshEngl.Ide0argu_Sptr,
+
+=== McshLag000040 (12)
+  McshLag000040:939  <br>* McshEngl.Afa0Argo,  ->  <br>* McshEngl.Afa0argu,
+  McshLag000040:940  <br>* McshEngl.Afa0_lago'argu!⇒Afa0Argo,  ->  <br>* McshEngl.Afa0_lago'argu!⇒Afa0argu,
+  McshLag000040:941  <br>* McshEngl.Afa0Name.argu!⇒Afa0Argo,  ->  <br>* McshEngl.Afa0Name.argu!⇒Afa0argu,
+  McshLag000040:942  <br>* McshEngl.argoAfa0!⇒Afa0Argo,  ->  <br>* McshEngl.argoAfa0!⇒Afa0argu,
+  McshLag000040:943  <br>* McshEngl.Afa0LogoView'argu-name!⇒Afa0Argo,  ->  <br>* McshEngl.Afa0LogoView'argu-name!⇒Afa0argu,
+  McshLag000040:940  ADD  McshEngl.Afa0Argo!⇒Afa0argu,
+  McshLag000040:1065  <h3 id="idLAfa0ondogstrH3">GENERIC-SPECIFIC-TREE of Afa0Argo  ->  <h3 id="idLAfa0ondogstrH3">GENERIC-SPECIFIC-TREE of Afa0argu
+  McshLag000040:1071  <br>* McshEngl.Afa0Argo'generic-specific-tree,  ->  <br>* McshEngl.Afa0argu'generic-specific-tree,
+  McshLag000040:1072  <br>* McshEngl.Afa0Argo'specific-generic-tree,  ->  <br>* McshEngl.Afa0argu'specific-generic-tree,
+  McshLag000040:1075  <br>* McshEngl.Afa0Argo_Gntr,  ->  <br>* McshEngl.Afa0argu_Gntr,
+  McshLag000040:1081  <br>* McshEngl.Afa0Argo.specific,  ->  <br>* McshEngl.Afa0argu.specific,
+  McshLag000040:1082  <br>* McshEngl.Afa0Argo_Sptr,  ->  <br>* McshEngl.Afa0argu_Sptr,
+
+=== McshLag000041 (12)
+  McshLag000041:851  <br>* McshEngl.Tur0Argo,  ->  <br>* McshEngl.Tur0argu,
+  McshLag000041:852  <br>* McshEngl.Tur0_lago'argu!⇒Tur0Argo,  ->  <br>* McshEngl.Tur0_lago'argu!⇒Tur0argu,
+  McshLag000041:853  <br>* McshEngl.Tur0Name.argu!⇒Tur0Argo,  ->  <br>* McshEngl.Tur0Name.argu!⇒Tur0argu,
+  McshLag000041:854  <br>* McshEngl.argoTur0!⇒Tur0Argo,  ->  <br>* McshEngl.argoTur0!⇒Tur0argu,
+  McshLag000041:855  <br>* McshEngl.Tur0LogoView'argu-name!⇒Tur0Argo,  ->  <br>* McshEngl.Tur0LogoView'argu-name!⇒Tur0argu,
+  McshLag000041:852  ADD  McshEngl.Tur0Argo!⇒Tur0argu,
+  McshLag000041:977  <h3 id="idLTur0ondogstrH3">GENERIC-SPECIFIC-TREE of Tur0Argo  ->  <h3 id="idLTur0ondogstrH3">GENERIC-SPECIFIC-TREE of Tur0argu
+  McshLag000041:983  <br>* McshEngl.Tur0Argo'generic-specific-tree,  ->  <br>* McshEngl.Tur0argu'generic-specific-tree,
+  McshLag000041:984  <br>* McshEngl.Tur0Argo'specific-generic-tree,  ->  <br>* McshEngl.Tur0argu'specific-generic-tree,
+  McshLag000041:987  <br>* McshEngl.Tur0Argo_Gntr,  ->  <br>* McshEngl.Tur0argu_Gntr,
+  McshLag000041:993  <br>* McshEngl.Tur0Argo.specific,  ->  <br>* McshEngl.Tur0argu.specific,
+  McshLag000041:994  <br>* McshEngl.Tur0Argo_Sptr,  ->  <br>* McshEngl.Tur0argu_Sptr,
+
+=== McshLag000042 (12)
+  McshLag000042:860  <br>* McshEngl.Asa0Argo,  ->  <br>* McshEngl.Asa0argu,
+  McshLag000042:861  <br>* McshEngl.Asa0_lago'argu!⇒Asa0Argo,  ->  <br>* McshEngl.Asa0_lago'argu!⇒Asa0argu,
+  McshLag000042:862  <br>* McshEngl.Asa0Name.argu!⇒Asa0Argo,  ->  <br>* McshEngl.Asa0Name.argu!⇒Asa0argu,
+  McshLag000042:863  <br>* McshEngl.argoAsa0!⇒Asa0Argo,  ->  <br>* McshEngl.argoAsa0!⇒Asa0argu,
+  McshLag000042:864  <br>* McshEngl.Asa0LogoView'argu-name!⇒Asa0Argo,  ->  <br>* McshEngl.Asa0LogoView'argu-name!⇒Asa0argu,
+  McshLag000042:861  ADD  McshEngl.Asa0Argo!⇒Asa0argu,
+  McshLag000042:986  <h3 id="idLAsa0ondogstrH3">GENERIC-SPECIFIC-TREE of Asa0Argo  ->  <h3 id="idLAsa0ondogstrH3">GENERIC-SPECIFIC-TREE of Asa0argu
+  McshLag000042:992  <br>* McshEngl.Asa0Argo'generic-specific-tree,  ->  <br>* McshEngl.Asa0argu'generic-specific-tree,
+  McshLag000042:993  <br>* McshEngl.Asa0Argo'specific-generic-tree,  ->  <br>* McshEngl.Asa0argu'specific-generic-tree,
+  McshLag000042:996  <br>* McshEngl.Asa0Argo_Gntr,  ->  <br>* McshEngl.Asa0argu_Gntr,
+  McshLag000042:1002  <br>* McshEngl.Asa0Argo.specific,  ->  <br>* McshEngl.Asa0argu.specific,
+  McshLag000042:1003  <br>* McshEngl.Asa0Argo_Sptr,  ->  <br>* McshEngl.Asa0argu_Sptr,
+
+=== McshLag000043 (12)
+  McshLag000043:2138  <br>* McshEngl.KoraArgo,  ->  <br>* McshEngl.Koraargu,
+  McshLag000043:2139  <br>* McshEngl.Kora_lago'argu!⇒KoraArgo,  ->  <br>* McshEngl.Kora_lago'argu!⇒Koraargu,
+  McshLag000043:2140  <br>* McshEngl.KoraName.argu!⇒KoraArgo,  ->  <br>* McshEngl.KoraName.argu!⇒Koraargu,
+  McshLag000043:2141  <br>* McshEngl.argoKora!⇒KoraArgo,  ->  <br>* McshEngl.argoKora!⇒Koraargu,
+  McshLag000043:2142  <br>* McshEngl.Kora_logo_view'argu-name!⇒KoraArgo,  ->  <br>* McshEngl.Kora_logo_view'argu-name!⇒Koraargu,
+  McshLag000043:2139  ADD  McshEngl.KoraArgo!⇒Koraargu,
+  McshLag000043:2486  <h3 id="idLKoraondogstrH3">GENERIC-SPECIFIC-TREE of KoraArgo  ->  <h3 id="idLKoraondogstrH3">GENERIC-SPECIFIC-TREE of Koraargu
+  McshLag000043:2492  <br>* McshEngl.KoraArgo'generic-specific-tree,  ->  <br>* McshEngl.Koraargu'generic-specific-tree,
+  McshLag000043:2493  <br>* McshEngl.KoraArgo'specific-generic-tree,  ->  <br>* McshEngl.Koraargu'specific-generic-tree,
+  McshLag000043:2496  <br>* McshEngl.KoraArgo_Gntr,  ->  <br>* McshEngl.Koraargu_Gntr,
+  McshLag000043:2502  <br>* McshEngl.KoraArgo.specific,  ->  <br>* McshEngl.Koraargu.specific,
+  McshLag000043:2503  <br>* McshEngl.KoraArgo_Sptr,  ->  <br>* McshEngl.Koraargu_Sptr,
+
+=== McshStn000034 (5)
+  McshStn000034:2921  <br>* McshEngl.VnmaArgo,  ->  <br>* McshEngl.Vnmaargu,
+  McshStn000034:2922  <br>* McshEngl.argoVnma!⇒VnmaArgo,  ->  <br>* McshEngl.argoVnma!⇒Vnmaargu,
+  McshStn000034:2923  <br>* McshEngl.logoVnma'argu!⇒VnmaArgo,  ->  <br>* McshEngl.logoVnma'argu!⇒Vnmaargu,
+  McshStn000034:2924  <br>* McshEngl.logoVnma'argu-name!⇒VnmaArgo,  ->  <br>* McshEngl.logoVnma'argu-name!⇒Vnmaargu,
+  McshStn000034:2922  ADD  McshEngl.VnmaArgo!⇒Vnmaargu,
+
+=== McshStn000035 (3)
+  McshStn000035:1873  <br>* McshEngl.ItlnArgo,  ->  <br>* McshEngl.Itlnargu,
+  McshStn000035:1874  <br>* McshEngl.logoItln'argu-name!⇒ItlnArgo,  ->  <br>* McshEngl.logoItln'argu-name!⇒Itlnargu,
+  McshStn000035:1874  ADD  McshEngl.ItlnArgo!⇒Itlnargu,
+
+=== McshStn000037 (3)
+  McshStn000037:1967  <br>* McshEngl.logoFrac'argu_name,  ->  <br>* McshEngl.Fracargu,
+  McshStn000037:1968  <br>* McshEngl.logoFrac'argu-name!⇒logoFrac'argu_name,  ->  <br>* McshEngl.logoFrac'argu-name!⇒Fracargu,
+  McshStn000037:1968  ADD  McshEngl.logoFrac'argu_name!⇒Fracargu,
+
+=== McshStn000038 (4)
+  McshStn000038:1066  <br>* McshEngl.Bulgarian--argu-name!⇒SbulArgo,  ->  <br>* McshEngl.Bulgarian--argu-name!⇒Sbulargu,
+  McshStn000038:1067  <br>* McshEngl.SbulArgo!=Bulgarian--argu-name,  ->  <br>* McshEngl.Sbulargu!=Bulgarian--argu-name,
+  McshStn000038:1068  <br>* McshEngl.logoSbul'argu-name!⇒SbulArgo,  ->  <br>* McshEngl.logoSbul'argu-name!⇒Sbulargu,
+  McshStn000038:1068  ADD  McshEngl.SbulArgo!⇒Sbulargu,
+
+=== McshStn000039 (3)
+  McshStn000039:1652  <br>* McshEngl.SqipLogo'argu_name,  ->  <br>* McshEngl.Sqipargu,
+  McshStn000039:1653  <br>* McshEngl.SqipLogo'argu-name!⇒SqipLogo'argu_name,  ->  <br>* McshEngl.SqipLogo'argu-name!⇒Sqipargu,
+  McshStn000039:1653  ADD  McshEngl.SqipLogo'argu_name!⇒Sqipargu,
+
+=== McshStn000040 (3)
+  McshStn000040:1158  <br>* McshEngl.SmkdLogoView'argu_name,  ->  <br>* McshEngl.Smkdargu,
+  McshStn000040:1159  <br>* McshEngl.SmkdLogoView'argu-name!⇒SmkdLogoView'argu_name,  ->  <br>* McshEngl.SmkdLogoView'argu-name!⇒Smkdargu,
+  McshStn000040:1159  ADD  McshEngl.SmkdLogoView'argu_name!⇒Smkdargu,
+
+=== McshStn000041 (3)
+  McshStn000041:1037  <br>* McshEngl.SslvLogoView'argu_name,  ->  <br>* McshEngl.Sslvargu,
+  McshStn000041:1038  <br>* McshEngl.SslvLogoView'argu-name!⇒SslvLogoView'argu_name,  ->  <br>* McshEngl.SslvLogoView'argu-name!⇒Sslvargu,
+  McshStn000041:1038  ADD  McshEngl.SslvLogoView'argu_name!⇒Sslvargu,
+
+=== McshStn000043 (3)
+  McshStn000043:1158  <br>* McshEngl.SrusLogoView'argu_name,  ->  <br>* McshEngl.Srusargu,
+  McshStn000043:1159  <br>* McshEngl.SrusLogoView'argu-name!⇒SrusLogoView'argu_name,  ->  <br>* McshEngl.SrusLogoView'argu-name!⇒Srusargu,
+  McshStn000043:1159  ADD  McshEngl.SrusLogoView'argu_name!⇒Srusargu,
+
+=== McshStn000044 (3)
+  McshStn000044:1408  <br>* McshEngl.RomnLogoView'argu_name,  ->  <br>* McshEngl.Romnargu,
+  McshStn000044:1409  <br>* McshEngl.RomnLogoView'argu-name!⇒RomnLogoView'argu_name,  ->  <br>* McshEngl.RomnLogoView'argu-name!⇒Romnargu,
+  McshStn000044:1409  ADD  McshEngl.RomnLogoView'argu_name!⇒Romnargu,
+
+=== McshStn000048 (3)
+  McshStn000048:4075  <br>* McshEngl.JpnsLogoView'argu_name,  ->  <br>* McshEngl.Jpnsargu,
+  McshStn000048:4076  <br>* McshEngl.JpnsLogoView'argu-name!⇒JpnsLogoView'argu_name,  ->  <br>* McshEngl.JpnsLogoView'argu-name!⇒Jpnsargu,
+  McshStn000048:4076  ADD  McshEngl.JpnsLogoView'argu_name!⇒Jpnsargu,
+
+=== McshStn000050 (3)
+  McshStn000050:2843  <br>* McshEngl.KhmrLogoView'argu_name,  ->  <br>* McshEngl.Khmrargu,
+  McshStn000050:2844  <br>* McshEngl.KhmrLogoView'argu-name!⇒KhmrLogoView'argu_name,  ->  <br>* McshEngl.KhmrLogoView'argu-name!⇒Khmrargu,
+  McshStn000050:2844  ADD  McshEngl.KhmrLogoView'argu_name!⇒Khmrargu,

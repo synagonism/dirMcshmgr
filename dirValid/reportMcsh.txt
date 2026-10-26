@@ -1,137 +1,31 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrlMnnm01: C:/dirNodews/dirMcsh
+  MvrlGstr01,MvrlGstr02: ../dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  591 Mcsh-files · 3 files with issues · 122 issues
+  591 Mcsh-files · 6 files with issues · 6 issues
 
-=== MvrlMnnm01 (122 issues in 3 files) — file:lines, the-biggest line first
-  McshLag000022:49237;49205;47015;46968;46926;46829;46679;46581;46539;46323;46218;35067;34418;34355;34274;34242;34044;34008;33551;33455;33310;32778;32746;23277;23020;22969;22607;21161;21056;20829;20476;20393;19721;19703;19661;18699;18616;18367;18241;18177;18042;17928;17818;17777;17661;17629;17560;17409;17388;17330;17250;17135;16796;16628;16604;16509;16465;16340;16274;16169;16127;15978;15961;15870;15827;15644;15535;15311;14746;14683;14360;13286;13233;13025;12883;12815;7754;7658;7513;7109;7039;6987;6974;6935;6913;6657;6588;6511;6308;6216;6110;6070;6052;5832;5598;5533;5494;5299;4972;4528;4466;4072;3993;3947;3910;3767;3122;2707;2467;2433;2191;2117;1488;1120;920;518;332;310
-  McshTchInf000040:338;335;334
-  McshLag000020:1576
+=== MvrlGstr01 (3 issues in 3 files) — file:lines, the-biggest line first
+  McshHlth000008:407
+  McshHlth000016:292
+  McshHmn000002:4690
 
-=== MvrlMnnm01 --line — every issue, its line and its message
-  McshLag000022.last.html
-    49237  no-hyphen: main-name "McshElla.ὠνέομαι-οῦμαι" has "-" — use "ὠνέομαι_οῦμαι"
-    49205  no-hyphen: main-name "McshElla.ὠθέω-ῶ" has "-" — use "ὠθέω_ῶ"
-    47015  no-hyphen: main-name "McshElla.ὑστερέω-ῶ" has "-" — use "ὑστερέω_ῶ"
-    46968  no-hyphen: main-name "McshElla.ὑποχωρέω-ῶ" has "-" — use "ὑποχωρέω_ῶ"
-    46926  no-hyphen: main-name "McshElla.ὑπουργέω-ῶ" has "-" — use "ὑπουργέω_ῶ"
-    46829  no-hyphen: main-name "McshElla.ὑπονοέω-ῶ" has "-" — use "ὑπονοέω_ῶ"
-    46679  no-hyphen: main-name "McshElla.ὑποδέω-ῶ" has "-" — use "ὑποδέω_ῶ"
-    46581  no-hyphen: main-name "McshElla.ὑπισχνέομαι-οῦμαι" has "-" — use "ὑπισχνέομαι_οῦμαι"
-    46539  no-hyphen: main-name "McshElla.ὑπερφρονέω-ῶ" has "-" — use "ὑπερφρονέω_ῶ"
-    46323  no-hyphen: main-name "McshElla.ὑπαντάω-ῶ" has "-" — use "ὑπαντάω_ῶ"
-    46218  no-hyphen: main-name "McshElla.ὑλακτέω-ῶ" has "-" — use "ὑλακτέω_ῶ"
-    35067  no-hyphen: main-name "McshElla.ὀψωνέω-ῶ" has "-" — use "ὀψωνέω_ῶ"
-    34418  no-hyphen: main-name "McshElla.ὀρχέομαι-οῦμαι" has "-" — use "ὀρχέομαι_οῦμαι"
-    34355  no-hyphen: main-name "McshElla.ὀρρωδέω-ῶ" has "-" — use "ὀρρωδέω_ῶ"
-    34274  no-hyphen: main-name "McshElla.ὁρμέω-ῶ" has "-" — use "ὁρμέω_ῶ"
-    34242  no-hyphen: main-name "McshElla.ὁρμάω-ῶ" has "-" — use "ὁρμάω_ῶ"
-    34044  no-hyphen: main-name "McshElla.ὁράω-ῶ" has "-" — use "ὁράω_ῶ"
-    34008  no-hyphen: main-name "McshElla.ὀπτάω-ῶ" has "-" — use "ὀπτάω_ῶ"
-    33551  no-hyphen: main-name "McshElla.ὁμολογέω-ῶ" has "-" — use "ὁμολογέω_ῶ"
-    33455  no-hyphen: main-name "McshElla.ὁμιλέω-ῶ" has "-" — use "ὁμιλέω_ῶ"
-    33310  no-hyphen: main-name "McshElla.ὀλιγωρέω-ῶ" has "-" — use "ὀλιγωρέω_ῶ"
-    32778  no-hyphen: main-name "McshElla.ὀδυνάω-ῶ" has "-" — use "ὀδυνάω_ῶ"
-    32746  no-hyphen: main-name "McshElla.ὁδοιπορέω-ῶ" has "-" — use "ὁδοιπορέω_ῶ"
-    23277  no-hyphen: main-name "McshElla.ἰσόω-ῶ" has "-" — use "ἰσόω_ῶ"
-    23020  no-hyphen: main-name "McshElla.ἰλιγγιάω-ῶ" has "-" — use "ἰλιγγιάω_ῶ"
-    22969  no-hyphen: main-name "McshElla.ἱκνέομαι-οῦμαι" has "-" — use "ἱκνέομαι_οῦμαι"
-    22607  no-hyphen: main-name "McshElla.ἰάομαι-ῶμαι" has "-" — use "ἰάομαι_ῶμαι"
-    21161  no-hyphen: main-name "McshElla.ἡττάομαι-ῶμαι" has "-" — use "ἡττάομαι_ῶμαι"
-    21056  no-hyphen: main-name "McshElla.ἠρεμέω-ῶ" has "-" — use "ἠρεμέω_ῶ"
-    20829  no-hyphen: main-name "McshElla.ἡμερόω-ῶ" has "-" — use "ἡμερόω_ῶ"
-    20476  no-hyphen: main-name "McshElla.ἡγέομαι-οῦμαι" has "-" — use "ἡγέομαι_οῦμαι"
-    20393  no-hyphen: main-name "McshElla.ἡβάω-ῶ" has "-" — use "ἡβάω_ῶ"
-    19721  no-hyphen: main-name "McshElla.ἐφορμέω-ῶ" has "-" — use "ἐφορμέω_ῶ"
-    19703  no-hyphen: main-name "McshElla.ἐφοράω-ῶ" has "-" — use "ἐφοράω_ῶ"
-    19661  no-hyphen: main-name "McshElla.ἐφικνέομαι-οῦμαι" has "-" — use "ἐφικνέομαι_οῦμαι"
-    18699  no-hyphen: main-name "McshElla.ἑστιάω-ῶ" has "-" — use "ἑστιάω_ῶ"
-    18616  no-hyphen: main-name "McshElla.ἐρωτάω-ῶ" has "-" — use "ἐρωτάω_ῶ"
-    18367  no-hyphen: main-name "McshElla.ἐράω-ῶ" has "-" — use "ἐράω_ῶ"
-    18241  no-hyphen: main-name "McshElla.ἐποικέω-ῶ" has "-" — use "ἐποικέω_ῶ"
-    18177  no-hyphen: main-name "McshElla.ἐπιχειρέω-ῶ" has "-" — use "ἐπιχειρέω_ῶ"
-    18042  no-hyphen: main-name "McshElla.ἐπιτιμάω-ῶ" has "-" — use "ἐπιτιμάω_ῶ"
-    17928  no-hyphen: main-name "McshElla.ἐπιτελέω-ῶ" has "-" — use "ἐπιτελέω_ῶ"
-    17818  no-hyphen: main-name "McshElla.ἐπιστατέω-ῶ" has "-" — use "ἐπιστατέω_ῶ"
-    17777  no-hyphen: main-name "McshElla.ἐπισκοπέω-ῶ" has "-" — use "ἐπισκοπέω_ῶ"
-    17661  no-hyphen: main-name "McshElla.ἐπιορκέω-ῶ" has "-" — use "ἐπιορκέω_ῶ"
-    17629  no-hyphen: main-name "McshElla.ἐπινοέω-ῶ" has "-" — use "ἐπινοέω_ῶ"
-    17560  no-hyphen: main-name "McshElla.ἐπιμελέομαι-οῦμαι" has "-" — use "ἐπιμελέομαι_οῦμαι"
-    17409  no-hyphen: main-name "McshElla.ἐπικτάομαι-ῶμαι" has "-" — use "ἐπικτάομαι_ῶμαι"
-    17388  no-hyphen: main-name "McshElla.ἐπικρατέω-ῶ" has "-" — use "ἐπικρατέω_ῶ"
-    17330  no-hyphen: main-name "McshElla.ἐπικουρέω-ῶ" has "-" — use "ἐπικουρέω_ῶ"
-    17250  no-hyphen: main-name "McshElla.ἐπικαλέω-ῶ" has "-" — use "ἐπικαλέω_ῶ"
-    17135  no-hyphen: main-name "McshElla.ἐπιδημέω-ῶ" has "-" — use "ἐπιδημέω_ῶ"
-    16796  no-hyphen: main-name "McshElla.ἐπερωτάω-ῶ" has "-" — use "ἐπερωτάω_ῶ"
-    16628  no-hyphen: main-name "McshElla.ἐπαρκέω-ῶ" has "-" — use "ἐπαρκέω_ῶ"
-    16604  no-hyphen: main-name "McshElla.ἐπανορθόω-ῶ" has "-" — use "ἐπανορθόω_ῶ"
-    16509  no-hyphen: main-name "McshElla.ἐπαιτιάομαι-ῶμαι" has "-" — use "ἐπαιτιάομαι_ῶμαι"
-    16465  no-hyphen: main-name "McshElla.ἐπαινέω-ῶ" has "-" — use "ἐπαινέω_ῶ"
-    16340  no-hyphen: main-name "McshElla.ἐξωθέω-ῶ" has "-" — use "ἐξωθέω_ῶ"
-    16274  no-hyphen: main-name "McshElla.ἐξορμάω-ῶ" has "-" — use "ἐξορμάω_ῶ"
-    16169  no-hyphen: main-name "McshElla.ἐξικνέομαι-οῦμαι" has "-" — use "ἐξικνέομαι_οῦμαι"
-    16127  no-hyphen: main-name "McshElla.ἐξηγέομαι-οῦμαι" has "-" — use "ἐξηγέομαι_οῦμαι"
-    15978  no-hyphen: main-name "McshElla.ἐξαρτάω-ῶ" has "-" — use "ἐξαρτάω_ῶ"
-    15961  no-hyphen: main-name "McshElla.ἐξαρκέω-ῶ" has "-" — use "ἐξαρκέω_ῶ"
-    15870  no-hyphen: main-name "McshElla.ἐξαιτέω-ῶ" has "-" — use "ἐξαιτέω_ῶ"
-    15827  no-hyphen: main-name "McshElla.ἐξαιρέω-ῶ" has "-" — use "ἐξαιρέω_ῶ"
-    15644  no-hyphen: main-name "McshElla.ἐννοέω-ῶ" has "-" — use "ἐννοέω_ῶ"
-    15535  no-hyphen: main-name "McshElla.ἐνθυμέομαι-οῦμαι" has "-" — use "ἐνθυμέομαι_οῦμαι"
-    15311  no-hyphen: main-name "McshElla.ἐνδημέω-ῶ" has "-" — use "ἐνδημέω_ῶ"
-    14746  no-hyphen: main-name "McshElla.ἐλευθερόω-ῶ" has "-" — use "ἐλευθερόω_ῶ"
-    14683  no-hyphen: main-name "McshElla.ἐλεέω-ῶ" has "-" — use "ἐλεέω_ῶ"
-    14360  no-hyphen: main-name "McshElla.ἐκπληρόω-ῶ" has "-" — use "ἐκπληρόω_ῶ"
-    13286  no-hyphen: main-name "McshElla.ἐγχωρέω-ῶ" has "-" — use "ἐγχωρέω_ῶ"
-    13233  no-hyphen: main-name "McshElla.ἐγχειρέω-ῶ" has "-" — use "ἐγχειρέω_ῶ"
-    13025  no-hyphen: main-name "McshElla.ἐγκαλέω-ῶ" has "-" — use "ἐγκαλέω_ῶ"
-    12883  no-hyphen: main-name "McshElla.ἐγγυάω-ῶ" has "-" — use "ἐγγυάω_ῶ"
-    12815  no-hyphen: main-name "McshElla.ἐάω-ῶ" has "-" — use "ἐάω_ῶ"
-     7754  no-hyphen: main-name "McshElla.ἀχρειόω-ῶ" has "-" — use "ἀχρειόω_ῶ"
-     7658  no-hyphen: main-name "McshElla.ἀφικνέομαι-οῦμαι" has "-" — use "ἀφικνέομαι_οῦμαι"
-     7513  no-hyphen: main-name "McshElla.ἀφαιρέω-ῶ" has "-" — use "ἀφαιρέω_ῶ"
-     7109  no-hyphen: main-name "McshElla.ἀρτάω-ῶ" has "-" — use "ἀρτάω_ῶ"
-     7039  no-hyphen: main-name "McshElla.ἀρόω-ῶ" has "-" — use "ἀρόω_ῶ"
-     6987  no-hyphen: main-name "McshElla.ἀρκέω-ῶ" has "-" — use "ἀρκέω_ῶ"
-     6974  no-hyphen: main-name "McshElla.ἀριστοποιέω-ῶ" has "-" — use "ἀριστοποιέω_ῶ"
-     6935  no-hyphen: main-name "McshElla.ἀριστάω-ῶ" has "-" — use "ἀριστάω_ῶ"
-     6913  no-hyphen: main-name "McshElla.ἀριθμέω-ῶ" has "-" — use "ἀριθμέω_ῶ"
-     6657  no-hyphen: main-name "McshElla.ἀποτελέω-ῶ" has "-" — use "ἀποτελέω_ῶ"
-     6588  no-hyphen: main-name "McshElla.ἀπορέω-ῶ" has "-" — use "ἀπορέω_ῶ"
-     6511  no-hyphen: main-name "McshElla.ἀπολογέομαι-οῦμαι" has "-" — use "ἀπολογέομαι_οῦμαι"
-     6308  no-hyphen: main-name "McshElla.ἀποκληρόω-ῶ" has "-" — use "ἀποκληρόω_ῶ"
-     6216  no-hyphen: main-name "McshElla.ἀποικέω-ῶ" has "-" — use "ἀποικέω_ῶ"
-     6110  no-hyphen: main-name "McshElla.ἀποδημέω-ῶ" has "-" — use "ἀποδημέω_ῶ"
-     6070  no-hyphen: main-name "McshElla.ἀποδεκατόω-ῶ" has "-" — use "ἀποδεκατόω_ῶ"
-     6052  no-hyphen: main-name "McshElla.ἀποδειλιάω-ῶ" has "-" — use "ἀποδειλιάω_ῶ"
-     5832  no-hyphen: main-name "McshElla.ἀπιστέω-ῶ" has "-" — use "ἀπιστέω_ῶ"
-     5598  no-hyphen: main-name "McshElla.ἀπειθέω-ῶ" has "-" — use "ἀπειθέω_ῶ"
-     5533  no-hyphen: main-name "McshElla.ἀπαξιόω-ῶ" has "-" — use "ἀπαξιόω_ῶ"
-     5494  no-hyphen: main-name "McshElla.ἀπαντάω-ῶ" has "-" — use "ἀπαντάω_ῶ"
-     5299  no-hyphen: main-name "McshElla.ἀξιόω-ῶ" has "-" — use "ἀξιόω_ῶ"
-     4972  no-hyphen: main-name "McshElla.ἀνιάω-ῶ" has "-" — use "ἀνιάω_ῶ"
-     4528  no-hyphen: main-name "McshElla.ἀναρτάω-ῶ" has "-" — use "ἀναρτάω_ῶ"
-     4466  no-hyphen: main-name "McshElla.ἀναπληρόω-ῶ" has "-" — use "ἀναπληρόω_ῶ"
-     4072  no-hyphen: main-name "McshElla.ἀνακαλέω-ῶ" has "-" — use "ἀνακαλέω_ῶ"
-     3993  no-hyphen: main-name "McshElla.ἀναιρέω-ῶ" has "-" — use "ἀναιρέω_ῶ"
-     3947  no-hyphen: main-name "McshElla.ἀναθρέω-ῶ" has "-" — use "ἀναθρέω_ῶ"
-     3910  no-hyphen: main-name "McshElla.ἀναθεωρέω-ῶ" has "-" — use "ἀναθεωρέω_ῶ"
-     3767  no-hyphen: main-name "McshElla.ἀναβιόω-ῶ" has "-" — use "ἀναβιόω_ῶ"
-     3122  no-hyphen: main-name "McshElla.ἀλλοτριόω-ῶ" has "-" — use "ἀλλοτριόω_ῶ"
-     2707  no-hyphen: main-name "McshElla.ἀλγέω-ῶ" has "-" — use "ἀλγέω_ῶ"
-     2467  no-hyphen: main-name "McshElla.ἀκροάομαι-ῶμαι" has "-" — use "ἀκροάομαι_ῶμαι"
-     2433  no-hyphen: main-name "McshElla.ἀκριβόω-ῶ" has "-" — use "ἀκριβόω_ῶ"
-     2191  no-hyphen: main-name "McshElla.ἀκολουθέω-ῶ" has "-" — use "ἀκολουθέω_ῶ"
-     2117  no-hyphen: main-name "McshElla.ἀκέομαι-οῦμαι" has "-" — use "ἀκέομαι_οῦμαι"
-     1488  no-hyphen: main-name "McshElla.ἀθυμέω-ῶ" has "-" — use "ἀθυμέω_ῶ"
-     1120  no-hyphen: main-name "McshElla.ἀδικέω-ῶ" has "-" — use "ἀδικέω_ῶ"
-      920  no-hyphen: main-name "McshElla.ἀγωνιάω-ῶ" has "-" — use "ἀγωνιάω_ῶ"
-      518  no-hyphen: main-name "McshElla.ἀγνοέω-ῶ" has "-" — use "ἀγνοέω_ῶ"
-      332  no-hyphen: main-name "McshElla.ἀγαπάω-ῶ" has "-" — use "ἀγαπάω_ῶ"
-      310  no-hyphen: main-name "McshElla.ἀγανακτέω-ῶ" has "-" — use "ἀγανακτέω_ῶ"
-  McshTchInf000040.last.html
-    338  no-hyphen: main-name "McshElln.η-ταχ" has "-" — use "η_ταχ"
-    335  no-hyphen: main-name "McshZhon.电邮-diànyóu" has "-" — use "电邮_diànyóu"
-    334  no-hyphen: main-name "McshZhon.diànyóu-电邮" has "-" — use "diànyóu_电邮"
-  McshLag000020.last.html
-    1576  no-hyphen: main-name "McshElln.κλίσης-τύπος" has "-" — use "κλίσης_τύπος"
+=== MvrlGstr01 --line — every issue, its line and its message
+  McshHlth000008.last.html
+    407  specific_has_generic: "human-disease" is a specific of disorderNo_Gntr, but its generic-tree:: (McshHlth000011:677) does not list it
+  McshHlth000016.last.html
+    292  specific_has_generic: "human-disease" is a specific of therapy_Gntr, but its generic-tree:: (McshHlth000011:677) does not list it
+  McshHmn000002.last.html
+    4690  specific_has_generic: "human-society" is a specific of human_Gntr, but its generic-tree:: (McshStn000009:8330) does not list it
+
+=== MvrlGstr02 (3 issues in 3 files) — file:lines, the-biggest line first
+  McshTchInf000019:3310
+  McshTchInf000021:2327
+  McshTchInf000022:1286
+
+=== MvrlGstr02 --line — every issue, its line and its message
+  McshTchInf000019.last.html
+    3310  generic_has_specific: "DAOstack_governor_Gntr" has generic McshTchInf000019#idDeOzngvnr, but McshTchInf000019#idDeOzngvnr has no specific-tree::
+  McshTchInf000021.last.html
+    2327  generic_has_specific: "Agnteos'voting_Gntr" has generic McshTchInf000015#idAlgntgovvtg, but McshTchInf000015#idAlgntgovvtg has no specific-tree::
+  McshTchInf000022.last.html
+    1286  generic_has_specific: "Frcnenergy_Gntr" has generic McshTchInf000016#idDbcenrg, but McshTchInf000016#idDbcenrg has no specific-tree::
 

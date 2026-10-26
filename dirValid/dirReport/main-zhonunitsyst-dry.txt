@@ -1,0 +1,35 @@
+ARGU MAIN-NAME -> <Code>argu DRY — 2026-10-25
+argu main-names: 1 | renamed: 1 | name:: paragraphs: 1 | tree/reference lines: 11 | old names kept (M!⇒N added): 1 | files: 1
+collisions: 0 | with a space: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== PER FILE (1)
+  McshLag000021         23
+
+=== McshLag000021 (23)
+  McshLag000021:28  <br>* McshEngl.unit-system-of-logoZhon!⇒Zhon_unit_syst,  ->  <br>* McshEngl.unit-system-of-logoZhon!⇒Zhonunitsyst,
+  McshLag000021:29  <br>* McshEngl.Zhon_unit_syst!=unit-system-of-logoZhon,  ->  <br>* McshEngl.Zhonunitsyst!=unit-system-of-logoZhon,
+  McshLag000021:30  <br>* McshEngl.McshLag000021.last.html//dirLag//dirMcsh!⇒Zhon_unit_syst,  ->  <br>* McshEngl.McshLag000021.last.html//dirLag//dirMcsh!⇒Zhonunitsyst,
+  McshLag000021:31  <br>* McshEngl.dirLag/McshLag000021.last.html!⇒Zhon_unit_syst,  ->  <br>* McshEngl.dirLag/McshLag000021.last.html!⇒Zhonunitsyst,
+  McshLag000021:32  <br>* McshEngl.Zhon_lago'unit-system!⇒Zhon_unit_syst,  ->  <br>* McshEngl.Zhon_lago'unit-system!⇒Zhonunitsyst,
+  McshLag000021:33  <br>* McshEngl.Zhon_lago-node.unit-system!⇒Zhon_unit_syst,  ->  <br>* McshEngl.Zhon_lago-node.unit-system!⇒Zhonunitsyst,
+  McshLag000021:34  <br>* McshEngl.Zhon_lago-unit-system!⇒Zhon_unit_syst,  ->  <br>* McshEngl.Zhon_lago-unit-system!⇒Zhonunitsyst,
+  McshLag000021:35  <br>* McshEngl.logo-unit-system--of-lagoZhon!⇒Zhon_unit_syst,  ->  <br>* McshEngl.logo-unit-system--of-lagoZhon!⇒Zhonunitsyst,
+  McshLag000021:36  <br>* McshEngl.output-unit-system--of-lagoZhon!⇒Zhon_unit_syst,  ->  <br>* McshEngl.output-unit-system--of-lagoZhon!⇒Zhonunitsyst,
+  McshLag000021:37  <br>* McshEngl.SystUnitZhon!⇒Zhon_unit_syst,  ->  <br>* McshEngl.SystUnitZhon!⇒Zhonunitsyst,
+  McshLag000021:38  <br>* McshEngl.unit-system-of-lagoZhon!⇒Zhon_unit_syst,  ->  <br>* McshEngl.unit-system-of-lagoZhon!⇒Zhonunitsyst,
+  McshLag000021:30  ADD  McshEngl.Zhon_unit_syst!⇒Zhonunitsyst,
+  McshLag000021:86  <br>* McshEngl.Zhon_unit_syst'part-whole-tree,  ->  <br>* McshEngl.Zhonunitsyst'part-whole-tree,
+  McshLag000021:87  <br>* McshEngl.Zhon_unit_syst'whole-part-tree,  ->  <br>* McshEngl.Zhonunitsyst'whole-part-tree,
+  McshLag000021:91  <br>* McshEngl.Zhon_unit_syst_Wltr,  ->  <br>* McshEngl.Zhonunitsyst_Wltr,
+  McshLag000021:94  <br>* McshEngl.Zhon_unit_syst_Prtr,  ->  <br>* McshEngl.Zhonunitsyst_Prtr,
+  McshLag000021:99  <h1 id="idLZhonunsmgstrH1">GENERIC-SPECIFIC-TREE of Zhon_unit_syst  ->  <h1 id="idLZhonunsmgstrH1">GENERIC-SPECIFIC-TREE of Zhonunitsyst
+  McshLag000021:105  <br>* McshEngl.Zhon_unit_syst'generic-specific-tree,  ->  <br>* McshEngl.Zhonunitsyst'generic-specific-tree,
+  McshLag000021:106  <br>* McshEngl.Zhon_unit_syst'specific-generic-tree,  ->  <br>* McshEngl.Zhonunitsyst'specific-generic-tree,
+  McshLag000021:109  <br>* McshEngl.Zhon_unit_syst_Gntr,  ->  <br>* McshEngl.Zhonunitsyst_Gntr,
+  McshLag000021:114  <br>* McshEngl.Zhon_unit_syst.specific,  ->  <br>* McshEngl.Zhonunitsyst.specific,
+  McshLag000021:115  <br>* McshEngl.Zhon_unit_syst_Sptr,  ->  <br>* McshEngl.Zhonunitsyst_Sptr,
+  McshLag000021:178  <br>* Zhon_unit_syst_Gntr,  ->  <br>* Zhonunitsyst_Gntr,

@@ -1,0 +1,169 @@
+LOGO-NODE MAIN-NAME <Code>node APPLIED — 2026-10-25
+name:: changed: 24 | tree lines: 1 | files: 22 | skipped: 6
+
+=== MAP old -> new (45)
+  Engl_lago'node -> Englnode
+  Engl_logo-view'node -> Englnode
+  EnglviewLogo'node -> Englnode
+  Engl_node -> Englnode
+  nodeElln -> Ellnnode
+  Bcms_lago'node -> Bcmsnode
+  BcmsviewLogo'node -> Bcmsnode
+  BcmsNode -> Bcmsnode
+  Span_lago'node -> Spannode
+  SpanviewLogo'node -> Spannode
+  SpanNode -> Spannode
+  Arab_lago'node -> Arabnode
+  ArabviewLogo'node -> Arabnode
+  ArabNode -> Arabnode
+  Hiur_lago'node -> Hiurnode
+  HiurviewLogo'node -> Hiurnode
+  HiurNode -> Hiurnode
+  HindviewLogo'node -> Hindnode
+  UrduviewLogo'node -> Urdunode
+  Slv0Lago'node -> Slv0node
+  Slv0viewLogo'node -> Slv0node
+  Slv0Node -> Slv0node
+  Ide0_lago'node -> Ide0node
+  Ide0viewLogo'node -> Ide0node
+  Ide0Node -> Ide0node
+  Afa0_lago'node -> Afa0node
+  Afa0viewLogo'node -> Afa0node
+  Afa0Node -> Afa0node
+  Tur0_lago'node -> Tur0node
+  Tur0viewLogo'node -> Tur0node
+  Tur0Node -> Tur0node
+  Asa0_lago'node -> Asa0node
+  Asa0viewLogo'node -> Asa0node
+  Asa0Node -> Asa0node
+  VnmaviewLogo'node -> Vnmanode
+  ItlnviewLogo'node -> Itlnnode
+  FracviewLogo'node -> Fracnode
+  SbulviewLogo'node -> Sbulnode
+  SqipviewLogo'node -> Sqipnode
+  SmkdviewLogo'node -> Smkdnode
+  SslvviewLogo'node -> Sslvnode
+  SrusviewLogo'node -> Srusnode
+  RomnviewLogo'node -> Romnnode
+  JpnsviewLogo'node -> Jpnsnode
+  KhmrviewLogo'node -> Khmrnode
+
+=== SKIPPED (6)
+  McshLag000007:16560  Hmnmnode already
+  McshLag000010:374  Sngunode already
+  McshLag000012:354  Esponode already
+  McshLag000018:613  Zhonnode already
+  McshLag000033:359  Deutnode already
+  McshLag000043:350  Koranode already
+
+=== CHANGED (24)
+  McshLag000011:608  Engl_lago'node | Engl_logo-view'node | EnglviewLogo'node | Engl_node -> Englnode
+      <br>* McshEngl.logo-node--of-Engl_lago!⇒Englnode,
+      <br>* McshEngl.Englnode!=logo-node--of-Engl_lago,
+      <br>* McshEngl.Engl_lago'node!⇒Englnode,
+      <br>* McshEngl.Engl_logo-view'node!⇒Englnode,
+  McshLag000020:182  nodeElln -> Ellnnode
+      <br>* McshEngl.logo-node--of-Elln_lago!⇒Ellnnode,
+      <br>* McshEngl.Ellnnode!=logo-node--of-Elln_lago,
+      <br>* McshEngl.nodeElln!⇒Ellnnode,
+      <br>* McshEngl.Elln_lago'node!⇒Ellnnode,
+  McshLag000034:336  Bcms_lago'node | BcmsviewLogo'node | BcmsNode -> Bcmsnode
+      <br>* McshEngl.logo-node--of-Bcms_lago!⇒Bcmsnode,
+      <br>* McshEngl.Bcmsnode!=logo-node--of-Bcms_lago,
+      <br>* McshEngl.Bcms_lago'node!⇒Bcmsnode,
+      <br>* McshEngl.BcmsviewLogo'node!⇒Bcmsnode,
+  McshLag000035:363  Span_lago'node | SpanviewLogo'node | SpanNode -> Spannode
+      <br>* McshEngl.logo-node--of-Span_lago!⇒Spannode,
+      <br>* McshEngl.Spannode!=logo-node--of-Span_lago,
+      <br>* McshEngl.Span_lago'node!⇒Spannode,
+      <br>* McshEngl.SpanviewLogo'node!⇒Spannode,
+  McshLag000036:360  Arab_lago'node | ArabviewLogo'node | ArabNode -> Arabnode
+      <br>* McshEngl.logo-node--of-Arab_lago!⇒Arabnode,
+      <br>* McshEngl.Arabnode!=logo-node--of-Arab_lago,
+      <br>* McshEngl.Arab_lago'node!⇒Arabnode,
+      <br>* McshEngl.ArabviewLogo'node!⇒Arabnode,
+  McshLag000037:358  Hiur_lago'node | HiurviewLogo'node | HiurNode -> Hiurnode
+      <br>* McshEngl.logo-node--of-Hiur_lago!⇒Hiurnode,
+      <br>* McshEngl.Hiurnode!=logo-node--of-Hiur_lago,
+      <br>* McshEngl.Hiur_lago'node!⇒Hiurnode,
+      <br>* McshEngl.HiurviewLogo'node!⇒Hiurnode,
+  McshLag000037:2554  HindviewLogo'node -> Hindnode
+      <br>* McshEngl.logo-node--of-Hind_lago!⇒Hindnode,
+      <br>* McshEngl.Hindnode!=logo-node--of-Hind_lago,
+      <br>* McshEngl.HindviewLogo'node!⇒Hindnode,
+  McshLag000037:4610  UrduviewLogo'node -> Urdunode
+      <br>* McshEngl.logo-node--of-Urdu_lago!⇒Urdunode,
+      <br>* McshEngl.Urdunode!=logo-node--of-Urdu_lago,
+      <br>* McshEngl.UrduviewLogo'node!⇒Urdunode,
+  McshLag000038:390  Slv0Lago'node | Slv0viewLogo'node | Slv0Node -> Slv0node
+      <br>* McshEngl.logo-node--of-Slv0Lago!⇒Slv0node,
+      <br>* McshEngl.Slv0node!=logo-node--of-Slv0Lago,
+      <br>* McshEngl.Slv0Lago'node!⇒Slv0node,
+      <br>* McshEngl.Slv0viewLogo'node!⇒Slv0node,
+  McshLag000039:386  Ide0_lago'node | Ide0viewLogo'node | Ide0Node -> Ide0node
+      <br>* McshEngl.logo-node--of-Ide0_lago!⇒Ide0node,
+      <br>* McshEngl.Ide0node!=logo-node--of-Ide0_lago,
+      <br>* McshEngl.Ide0_lago'node!⇒Ide0node,
+      <br>* McshEngl.Ide0viewLogo'node!⇒Ide0node,
+  McshLag000040:402  Afa0_lago'node | Afa0viewLogo'node | Afa0Node -> Afa0node
+      <br>* McshEngl.logo-node--of-Afa0_lago!⇒Afa0node,
+      <br>* McshEngl.Afa0node!=logo-node--of-Afa0_lago,
+      <br>* McshEngl.Afa0_lago'node!⇒Afa0node,
+      <br>* McshEngl.Afa0viewLogo'node!⇒Afa0node,
+  McshLag000041:392  Tur0_lago'node | Tur0viewLogo'node | Tur0Node -> Tur0node
+      <br>* McshEngl.logo-node--of-Tur0_lago!⇒Tur0node,
+      <br>* McshEngl.Tur0node!=logo-node--of-Tur0_lago,
+      <br>* McshEngl.Tur0_lago'node!⇒Tur0node,
+      <br>* McshEngl.Tur0viewLogo'node!⇒Tur0node,
+  McshLag000042:365  Asa0_lago'node | Asa0viewLogo'node | Asa0Node -> Asa0node
+      <br>* McshEngl.logo-node--of-Asa0_lago!⇒Asa0node,
+      <br>* McshEngl.Asa0node!=logo-node--of-Asa0_lago,
+      <br>* McshEngl.Asa0_lago'node!⇒Asa0node,
+      <br>* McshEngl.Asa0viewLogo'node!⇒Asa0node,
+  McshStn000034:346  VnmaviewLogo'node -> Vnmanode
+      <br>* McshEngl.logo-node--of-Vnma_lago!⇒Vnmanode,
+      <br>* McshEngl.Vnmanode!=logo-node--of-Vnma_lago,
+      <br>* McshEngl.VnmaviewLogo'node!⇒Vnmanode,
+  McshStn000035:310  ItlnviewLogo'node -> Itlnnode
+      <br>* McshEngl.logo-node--of-lagoItln!⇒Itlnnode,
+      <br>* McshEngl.Itlnnode!=logo-node--of-lagoItln,
+      <br>* McshEngl.ItlnviewLogo'node!⇒Itlnnode,
+  McshStn000037:307  FracviewLogo'node -> Fracnode
+      <br>* McshEngl.logo-node--of-Frac_lago!⇒Fracnode,
+      <br>* McshEngl.Fracnode!=logo-node--of-Frac_lago,
+      <br>* McshEngl.FracviewLogo'node!⇒Fracnode,
+  McshStn000038:316  SbulviewLogo'node -> Sbulnode
+      <br>* McshEngl.logo-node--of-Sbul_lago!⇒Sbulnode,
+      <br>* McshEngl.Sbulnode!=logo-node--of-Sbul_lago,
+      <br>* McshEngl.SbulviewLogo'node!⇒Sbulnode,
+  McshStn000039:344  SqipviewLogo'node -> Sqipnode
+      <br>* McshEngl.logo-node--of-Sqip_lago!⇒Sqipnode,
+      <br>* McshEngl.Sqipnode!=logo-node--of-Sqip_lago,
+      <br>* McshEngl.SqipviewLogo'node!⇒Sqipnode,
+  McshStn000040:387  SmkdviewLogo'node -> Smkdnode
+      <br>* McshEngl.logo-node--of-Smkd_lago!⇒Smkdnode,
+      <br>* McshEngl.Smkdnode!=logo-node--of-Smkd_lago,
+      <br>* McshEngl.SmkdviewLogo'node!⇒Smkdnode,
+  McshStn000041:401  SslvviewLogo'node -> Sslvnode
+      <br>* McshEngl.logo-node--of-Sslv_lago!⇒Sslvnode,
+      <br>* McshEngl.Sslvnode!=logo-node--of-Sslv_lago,
+      <br>* McshEngl.SslvviewLogo'node!⇒Sslvnode,
+  McshStn000043:292  SrusviewLogo'node -> Srusnode
+      <br>* McshEngl.logo-node--of-Srus_lago!⇒Srusnode,
+      <br>* McshEngl.Srusnode!=logo-node--of-Srus_lago,
+      <br>* McshEngl.SrusviewLogo'node!⇒Srusnode,
+  McshStn000044:330  RomnviewLogo'node -> Romnnode
+      <br>* McshEngl.logo-node--of-Romn_lago!⇒Romnnode,
+      <br>* McshEngl.Romnnode!=logo-node--of-Romn_lago,
+      <br>* McshEngl.RomnviewLogo'node!⇒Romnnode,
+  McshStn000048:379  JpnsviewLogo'node -> Jpnsnode
+      <br>* McshEngl.logo-node--of-Jpns_lago!⇒Jpnsnode,
+      <br>* McshEngl.Jpnsnode!=logo-node--of-Jpns_lago,
+      <br>* McshEngl.JpnsviewLogo'node!⇒Jpnsnode,
+  McshStn000050:368  KhmrviewLogo'node -> Khmrnode
+      <br>* McshEngl.logo-node--of-Khmr_lago!⇒Khmrnode,
+      <br>* McshEngl.Khmrnode!=logo-node--of-Khmr_lago,
+      <br>* McshEngl.KhmrviewLogo'node!⇒Khmrnode,
+
+=== TREES (1)
+  McshLag000020:196  <br>* McshEngl.nodeElln_Gntr,  ->  <br>* McshEngl.Ellnnode_Gntr,

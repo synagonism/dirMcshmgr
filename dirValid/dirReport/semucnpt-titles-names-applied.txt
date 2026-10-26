@@ -1,0 +1,108 @@
+OLD SEMU-CONCEPT NAMES IN TITLES AND name:: APPLIED — 2026-10-25
+names: 8 | lines changed: 94 in 8 files
+
+=== PER FILE (8)
+  McshLag000007        49
+  McshLag000012         8
+  McshLag000018         2
+  McshLag000038         7
+  McshLag000039         7
+  McshLag000040         7
+  McshLag000041         7
+  McshLag000042         7
+
+=== CHANGED (94)
+  McshLag000007:1197  <br>* LagoCnpt!⇒Semucnpt, {2024-11-14}  ->  <br>* LagoCnpt!⇒Hmnmsemucnpt, {2024-11-14}
+  McshLag000007:1198  <br>* Lagocpt!⇒Semucnpt, {2024-10-07}  ->  <br>* Lagocpt!⇒Hmnmsemucnpt, {2024-10-07}
+  McshLag000007:1244  <h3 id="idLHmnmsmscptattH3">attribute of Semucnpt  ->  <h3 id="idLHmnmsmscptattH3">attribute of Hmnmsemucnpt
+  McshLag000007:1257  <br>* McshEngl.attribute-of-Semucnpt!⇒Semucnpt_attr,  ->  <br>* McshEngl.attribute-of-Hmnmsemucnpt!⇒Semucnpt_attr,
+  McshLag000007:1258  <br>* McshEngl.Semucnpt_attr!=attribute-of-Semucnpt, {2024-10-07}  ->  <br>* McshEngl.Semucnpt_attr!=attribute-of-Hmnmsemucnpt, {2024-10-07}
+  McshLag000007:1259  <br>* McshEngl.Semucnpt'attribute!⇒Semucnpt_attr,  ->  <br>* McshEngl.Hmnmsemucnpt'attribute!⇒Semucnpt_attr,
+  McshLag000007:1264  <br>* McshEngl.human-Semucnpt-attribute!⇒Semucnpt_attr,  ->  <br>* McshEngl.human-Hmnmsemucnpt-attribute!⇒Semucnpt_attr,
+  McshLag000007:1265  <br>* McshEngl.Hmnm_lago'Semucnpt-attribute!⇒Semucnpt_attr,  ->  <br>* McshEngl.Hmnm_lago'Hmnmsemucnpt-attribute!⇒Semucnpt_attr,
+  McshLag000007:1301  <h4 id="idLHmnmsmscptattNbrH4">Semucnpt_attr.number of Semucnpt (<a class="clsPreview" href="../dirCor/McshCor000010.last.html#idQntSms">link</a>)  ->  <h4 id="idLHmnmsmscptattNbrH4">Semucnpt_attr.number of Hmnmsemucnpt (<a class="clsPreview" href="../dirCor/McshCor000010.last.html#idQntSms">link</a>)
+  McshLag000007:1306  <h4 id="idLHmnmsmscptattIdvlH4">Semucnpt_attr.individual of Semucnpt  ->  <h4 id="idLHmnmsmscptattIdvlH4">Semucnpt_attr.individual of Hmnmsemucnpt
+  McshLag000007:1315  <br>* McshEngl.individual-Semucnpt-attribute-of-Hmnm_lago,  ->  <br>* McshEngl.individual-Hmnmsemucnpt-attribute-of-Hmnm_lago,
+  McshLag000007:1316  <br>* McshEngl.Semucnpt-attribute-value--of-Hmnm_lago,  ->  <br>* McshEngl.Hmnmsemucnpt-attribute-value--of-Hmnm_lago,
+  McshLag000007:1317  <br>* McshEngl.Semucnpt'Semucnpt_attr.individual,  ->  <br>* McshEngl.Hmnmsemucnpt'Semucnpt_attr.individual,
+  McshLag000007:1322  <h4 id="idLHmnmsmscptattIdvlNH4">Semucnpt_attr.individualNo of Semucnpt  ->  <h4 id="idLHmnmsmscptattIdvlNH4">Semucnpt_attr.individualNo of Hmnmsemucnpt
+  McshLag000007:1331  <br>* McshEngl.generic-Semucnpt-attribute-of-Hmnm_lago,  ->  <br>* McshEngl.generic-Hmnmsemucnpt-attribute-of-Hmnm_lago,
+  McshLag000007:1332  <br>* McshEngl.individualNo-Semucnpt-attribute-of-Hmnm_lago,  ->  <br>* McshEngl.individualNo-Hmnmsemucnpt-attribute-of-Hmnm_lago,
+  McshLag000007:1333  <br>* McshEngl.Semucnpt'Semucnpt_attr.individualNo,  ->  <br>* McshEngl.Hmnmsemucnpt'Semucnpt_attr.individualNo,
+  McshLag000007:1339  <h3 id="idLHmnmsmscptmbrH3">member of Semucnpt  ->  <h3 id="idLHmnmsmscptmbrH3">member of Hmnmsemucnpt
+  McshLag000007:1348  <br>* McshEngl.Semucnpt'member,  ->  <br>* McshEngl.Hmnmsemucnpt'member,
+  McshLag000007:1349  <br>* McshEngl.member-of-Semucnpt,  ->  <br>* McshEngl.member-of-Hmnmsemucnpt,
+  McshLag000007:1356  <h3 id="idLHmnmsmscptrntmcH3">relation-to--mind-concept of Semucnpt  ->  <h3 id="idLHmnmsmscptrntmcH3">relation-to--mind-concept of Hmnmsemucnpt
+  McshLag000007:1368  <br>* McshEngl.Semucnpt'relation-to-mind-concept,  ->  <br>* McshEngl.Hmnmsemucnpt'relation-to-mind-concept,
+  McshLag000007:1369  <br>* McshEngl.Semucnpt'relation-to--mind-concept,  ->  <br>* McshEngl.Hmnmsemucnpt'relation-to--mind-concept,
+  McshLag000007:1374  <h3 id="idLHmnmsmscptmdrnH3">relation-to-senso-mind of Semucnpt  ->  <h3 id="idLHmnmsmscptmdrnH3">relation-to-senso-mind of Hmnmsemucnpt
+  McshLag000007:1382  <br>* McshEngl.Semucnpt'decoding-relation,  ->  <br>* McshEngl.Hmnmsemucnpt'decoding-relation,
+  McshLag000007:1383  <br>* McshEngl.Semucnpt'senso-mind-relation,  ->  <br>* McshEngl.Hmnmsemucnpt'senso-mind-relation,
+  McshLag000007:1384  <br>* McshEngl.Semucnpt'relation-to-senso-mind,  ->  <br>* McshEngl.Hmnmsemucnpt'relation-to-senso-mind,
+  McshLag000007:1389  <h3 id="idLHmnmsmscptlgrnH3">relation-to-logo of Semucnpt  ->  <h3 id="idLHmnmsmscptlgrnH3">relation-to-logo of Hmnmsemucnpt
+  McshLag000007:1397  <br>* McshEngl.Semucnpt'encoding-relation,  ->  <br>* McshEngl.Hmnmsemucnpt'encoding-relation,
+  McshLag000007:1398  <br>* McshEngl.Semucnpt'logo-relation,  ->  <br>* McshEngl.Hmnmsemucnpt'logo-relation,
+  McshLag000007:1399  <br>* McshEngl.Semucnpt'relation-to-logo,  ->  <br>* McshEngl.Hmnmsemucnpt'relation-to-logo,
+  McshLag000007:1404  <h3 id="idLHmnmsmscptevogH3">evoluting of Semucnpt  ->  <h3 id="idLHmnmsmscptevogH3">evoluting of Hmnmsemucnpt
+  McshLag000007:1416  <br>* McshEngl.Semucnpt'evoluting,  ->  <br>* McshEngl.Hmnmsemucnpt'evoluting,
+  McshLag000007:1460  <h3 id="idLHmnmsmscptSplH3">Semucnpt.special  ->  <h3 id="idLHmnmsmscptSplH3">Hmnmsemucnpt.special
+  McshLag000007:1467  <br>* McshEngl.Semucnpt.special,  ->  <br>* McshEngl.Hmnmsemucnpt.special,
+  McshLag000007:1477  <h3 id="idLHmnmsmscptSplNH3">Semucnpt.specialNo  ->  <h3 id="idLHmnmsmscptSplNH3">Hmnmsemucnpt.specialNo
+  McshLag000007:1486  <br>* McshEngl.Semucnpt.ordinary,  ->  <br>* McshEngl.Hmnmsemucnpt.ordinary,
+  McshLag000007:1487  <br>* McshEngl.Semucnpt.specialNo,  ->  <br>* McshEngl.Hmnmsemucnpt.specialNo,
+  McshLag000007:1495  <h3 id="idLHmnmsmscptIdvlH3">Semucnpt.individual  ->  <h3 id="idLHmnmsmscptIdvlH3">Hmnmsemucnpt.individual
+  McshLag000007:1506  <br>* McshEngl.Semucnpt.individual,  ->  <br>* McshEngl.Hmnmsemucnpt.individual,
+  McshLag000007:1515  <h3 id="idLHmnmsmscptIdvlNH3">Semucnpt.individualNo  ->  <h3 id="idLHmnmsmscptIdvlNH3">Hmnmsemucnpt.individualNo
+  McshLag000007:1522  <br>* McshEngl.Semucnpt.generic,  ->  <br>* McshEngl.Hmnmsemucnpt.generic,
+  McshLag000007:1563  <br>* McshEngl.Semucnpt.noun!⇒Semuargu,  ->  <br>* McshEngl.Hmnmsemucnpt.noun!⇒Semuargu,
+  McshLag000007:1598  <br>* McshEngl.Semuargu'Semucnpt-attribute!⇒Semuargu_attr,  ->  <br>* McshEngl.Semuargu'Hmnmsemucnpt-attribute!⇒Semuargu_attr,
+  McshLag000007:1604  <br>* McshEngl.Semucnpt-attribute-of-Semuargu--of-Hmnm_lago!⇒Semuargu_attr,  ->  <br>* McshEngl.Hmnmsemucnpt-attribute-of-Semuargu--of-Hmnm_lago!⇒Semuargu_attr,
+  McshLag000007:2805  <br>* McshEngl.Semucnpt.verb!⇒Semuverb,  ->  <br>* McshEngl.Hmnmsemucnpt.verb!⇒Semuverb,
+  McshLag000007:2866  <br>* McshEngl.Semuverb'Semucnpt-attribute!⇒Semuverbattr,  ->  <br>* McshEngl.Semuverb'Hmnmsemucnpt-attribute!⇒Semuverbattr,
+  McshLag000007:14959  <br>* McshEngl.Semucnpt.conjunction!⇒Semuconj,  ->  <br>* McshEngl.Hmnmsemucnpt.conjunction!⇒Semuconj,
+  McshLag000007:15397  <br>* McshEngl.Semucnpt-attribute-entity-conjunction!⇒SemuconjAte,  ->  <br>* McshEngl.Hmnmsemucnpt-attribute-entity-conjunction!⇒SemuconjAte,
+  McshLag000012:118  <h3 id="idLEsposmsSplH3">cptSmsEspo.special  ->  <h3 id="idLEsposmsSplH3">Esposemucnpt.special
+  McshLag000012:124  <br>* McshEngl.cptSmsEspo.special,  ->  <br>* McshEngl.Esposemucnpt.special,
+  McshLag000012:129  <h3 id="idLEsposmsondoH3">cptSmsEspo.argu  ->  <h3 id="idLEsposmsondoH3">Esposemucnpt.argu
+  McshLag000012:137  <br>* McshEngl.cptSmsEspo.argu!⇒Esposemuargu,  ->  <br>* McshEngl.Esposemucnpt.argu!⇒Esposemuargu,
+  McshLag000012:232  <h3 id="idLEsposmsvrbH3">cptSmsEspo.verb  ->  <h3 id="idLEsposmsvrbH3">Esposemucnpt.verb
+  McshLag000012:242  <br>* McshEngl.cptSmsEspo.verb!⇒Esposemuverb,  ->  <br>* McshEngl.Esposemucnpt.verb!⇒Esposemuverb,
+  McshLag000012:268  <h3 id="idLEsposmscnjH3">cptSmsEspo.conjunction  ->  <h3 id="idLEsposmscnjH3">Esposemucnpt.conjunction
+  McshLag000012:277  <br>* McshEngl.cptSmsEspo.conjunction!⇒ConjSmsEspo,  ->  <br>* McshEngl.Esposemucnpt.conjunction!⇒ConjSmsEspo,
+  McshLag000018:224  <h2 id="idLZhonsmscptH2">Semucnpt of Zhonsemuview  ->  <h2 id="idLZhonsmscptH2">Hmnmsemucnpt of Zhonsemuview
+  McshLag000018:235  <br>* McshEngl.Zhonsemuview'Semucnpt!⇒Zhonsemucnpt,  ->  <br>* McshEngl.Zhonsemuview'Hmnmsemucnpt!⇒Zhonsemucnpt,
+  McshLag000038:188  <h3 id="idLSlv0smscptattH3">attribute of Slv0LagoCnpt  ->  <h3 id="idLSlv0smscptattH3">attribute of Slv0semucnpt
+  McshLag000038:195  <br>* McshEngl.Slv0LagoCnpt'attribute,  ->  <br>* McshEngl.Slv0semucnpt'attribute,
+  McshLag000038:200  <h3 id="idLSlv0smscptmbrH3">member of Slv0LagoCnpt  ->  <h3 id="idLSlv0smscptmbrH3">member of Slv0semucnpt
+  McshLag000038:207  <br>* McshEngl.Slv0LagoCnpt'member,  ->  <br>* McshEngl.Slv0semucnpt'member,
+  McshLag000038:249  <br>* McshEngl.Slv0LagoCnpt.argu!⇒Slv0_Semuargu,  ->  <br>* McshEngl.Slv0semucnpt.argu!⇒Slv0_Semuargu,
+  McshLag000038:315  <br>* McshEngl.Slv0LagoCnpt.verb!⇒Slv0semuverb,  ->  <br>* McshEngl.Slv0semucnpt.verb!⇒Slv0semuverb,
+  McshLag000038:341  <br>* McshEngl.Slv0LagoCnpt.conjunction!⇒Slv0ConjCnpt,  ->  <br>* McshEngl.Slv0semucnpt.conjunction!⇒Slv0ConjCnpt,
+  McshLag000039:184  <h3 id="idLIde0smscptattH3">attribute of Ide0LagoCnpt  ->  <h3 id="idLIde0smscptattH3">attribute of Ide0semucnpt
+  McshLag000039:191  <br>* McshEngl.Ide0LagoCnpt'attribute,  ->  <br>* McshEngl.Ide0semucnpt'attribute,
+  McshLag000039:196  <h3 id="idLIde0smscptmbrH3">member of Ide0LagoCnpt  ->  <h3 id="idLIde0smscptmbrH3">member of Ide0semucnpt
+  McshLag000039:203  <br>* McshEngl.Ide0LagoCnpt'member,  ->  <br>* McshEngl.Ide0semucnpt'member,
+  McshLag000039:245  <br>* McshEngl.Ide0LagoCnpt.argu!⇒Ide0_Semuargu,  ->  <br>* McshEngl.Ide0semucnpt.argu!⇒Ide0_Semuargu,
+  McshLag000039:311  <br>* McshEngl.Ide0LagoCnpt.verb!⇒Ide0semuverb,  ->  <br>* McshEngl.Ide0semucnpt.verb!⇒Ide0semuverb,
+  McshLag000039:337  <br>* McshEngl.Ide0LagoCnpt.conjunction!⇒Ide0ConjCnpt,  ->  <br>* McshEngl.Ide0semucnpt.conjunction!⇒Ide0ConjCnpt,
+  McshLag000040:200  <h3 id="idLAfa0smscptattH3">attribute of Afa0LagoCnpt  ->  <h3 id="idLAfa0smscptattH3">attribute of Afa0semucnpt
+  McshLag000040:207  <br>* McshEngl.Afa0LagoCnpt'attribute,  ->  <br>* McshEngl.Afa0semucnpt'attribute,
+  McshLag000040:212  <h3 id="idLAfa0smscptmbrH3">member of Afa0LagoCnpt  ->  <h3 id="idLAfa0smscptmbrH3">member of Afa0semucnpt
+  McshLag000040:219  <br>* McshEngl.Afa0LagoCnpt'member,  ->  <br>* McshEngl.Afa0semucnpt'member,
+  McshLag000040:261  <br>* McshEngl.Afa0LagoCnpt.argu!⇒Afa0_Semuargu,  ->  <br>* McshEngl.Afa0semucnpt.argu!⇒Afa0_Semuargu,
+  McshLag000040:327  <br>* McshEngl.Afa0LagoCnpt.verb!⇒Afa0semuverb,  ->  <br>* McshEngl.Afa0semucnpt.verb!⇒Afa0semuverb,
+  McshLag000040:353  <br>* McshEngl.Afa0LagoCnpt.conjunction!⇒Afa0ConjCnpt,  ->  <br>* McshEngl.Afa0semucnpt.conjunction!⇒Afa0ConjCnpt,
+  McshLag000041:190  <h3 id="idLTur0smscptattH3">attribute of Tur0LagoCnpt  ->  <h3 id="idLTur0smscptattH3">attribute of Tur0semucnpt
+  McshLag000041:197  <br>* McshEngl.Tur0LagoCnpt'attribute,  ->  <br>* McshEngl.Tur0semucnpt'attribute,
+  McshLag000041:202  <h3 id="idLTur0smscptmbrH3">member of Tur0LagoCnpt  ->  <h3 id="idLTur0smscptmbrH3">member of Tur0semucnpt
+  McshLag000041:209  <br>* McshEngl.Tur0LagoCnpt'member,  ->  <br>* McshEngl.Tur0semucnpt'member,
+  McshLag000041:251  <br>* McshEngl.Tur0LagoCnpt.argu!⇒Tur0_Semuargu,  ->  <br>* McshEngl.Tur0semucnpt.argu!⇒Tur0_Semuargu,
+  McshLag000041:317  <br>* McshEngl.Tur0LagoCnpt.verb!⇒Tur0semuverb,  ->  <br>* McshEngl.Tur0semucnpt.verb!⇒Tur0semuverb,
+  McshLag000041:343  <br>* McshEngl.Tur0LagoCnpt.conjunction!⇒Tur0ConjCnpt,  ->  <br>* McshEngl.Tur0semucnpt.conjunction!⇒Tur0ConjCnpt,
+  McshLag000042:163  <h3 id="idLAsa0smscptattH3">attribute of Asa0LagoCnpt  ->  <h3 id="idLAsa0smscptattH3">attribute of Asa0semucnpt
+  McshLag000042:170  <br>* McshEngl.Asa0LagoCnpt'attribute,  ->  <br>* McshEngl.Asa0semucnpt'attribute,
+  McshLag000042:175  <h3 id="idLAsa0smscptmbrH3">member of Asa0LagoCnpt  ->  <h3 id="idLAsa0smscptmbrH3">member of Asa0semucnpt
+  McshLag000042:182  <br>* McshEngl.Asa0LagoCnpt'member,  ->  <br>* McshEngl.Asa0semucnpt'member,
+  McshLag000042:224  <br>* McshEngl.Asa0LagoCnpt.argu!⇒Asa0_Semuargu,  ->  <br>* McshEngl.Asa0semucnpt.argu!⇒Asa0_Semuargu,
+  McshLag000042:290  <br>* McshEngl.Asa0LagoCnpt.verb!⇒Asa0semuverb,  ->  <br>* McshEngl.Asa0semucnpt.verb!⇒Asa0semuverb,
+  McshLag000042:316  <br>* McshEngl.Asa0LagoCnpt.conjunction!⇒Asa0ConjCnpt,  ->  <br>* McshEngl.Asa0semucnpt.conjunction!⇒Asa0ConjCnpt,

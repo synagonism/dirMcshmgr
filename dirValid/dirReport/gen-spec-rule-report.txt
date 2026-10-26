@@ -1,17 +1,51 @@
-RULE: IF generic X has specific Y THEN Y has generic X — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-24
+RULE: IF generic X has specific Y THEN Y has generic X — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-25
 
-specific-tree:: paragraphs: 3013 | specific items with a link (checked): 5002 | items as plain text (not checked): 15342
+specific-tree:: paragraphs: 3013 | specific items with a link (checked): 5032 | items as plain text (not checked): 15343
 X is listed in Y's generic-tree:: as X_Gntr, or as a link / name!@file#id to X (its section, GS-TREE or generic-tree::)
 
-  MISSING                 2  Y has a generic-tree:: but it does NOT list X
-  Y-NO-GENERIC-TREE       0  Y has no generic-tree:: (so X is not listed)
-  ITEM-NOT-A-CONCEPT      0  the specific item links to a missing target
-  OK                   2124  Y lists X as generic (rule holds)
+  MISSING                 3  Y has a generic-tree:: but it does NOT list X
+  Y-NO-GENERIC-TREE      27  Y has no generic-tree:: (so X is not listed)
+  ITEM-NOT-A-CONCEPT      1  the specific item links to a missing target
+  OK                   2139  Y lists X as generic (rule holds)
   INDIRECT                0  Y does not list X, but reaches X through its generic chain
-  Y-NESTED-IN-X        2876  Y has no generic-tree:: but is a sub-section of X (generic by nesting)
+  Y-NESTED-IN-X        2862  Y has no generic-tree:: but is a sub-section of X (generic by nesting)
 
-=== MISSING (2) — Y has a generic-tree:: but it does NOT list X
-  McshLag000005:185  brain-language (McshLag000005#idLOgsmMind)  generic-tree McshLag000005:333 lacks Ogsm_lago_Gntr
-      its generics: (none)
-  McshLag000005:186  brainNo-language (McshLag000005#idLOgsmMind)  generic-tree McshLag000005:333 lacks Ogsm_lago_Gntr
-      its generics: (none)
+=== MISSING (3) — Y has a generic-tree:: but it does NOT list X
+  McshLag000005:326  human-Ogmm_lago (McshLag000007#(page))  generic-tree McshLag000007:31806 lacks Ogmm_lago_Gntr
+      its generics: language_Gntr, | mapping-relation_Gntr, | relation_Gntr, | bodyNo_Gntr, | entity_Gntr (the-most-generic),
+  McshLag000007:21547  English-adjective (McshLag000011#idLEngladje)  generic-tree McshLag000011:8215 lacks Hmnmadje_Gntr
+      its generics: Englargumebr_Gntr,
+  McshLag000007:21565  Chinese-adjective (McshLag000018#idLZhonadje)  generic-tree McshLag000018:9105 lacks Hmnmadje_Gntr
+      its generics: Zhonargu_mebr_Gntr,
+
+=== Y-NO-GENERIC-TREE (27) — Y has no generic-tree:: (so X is not listed)
+  McshLag000007:21542  Arabic-adjective (McshLag000036#idLArabadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21543  Bosnian-Croatian-Montenegrin-Serbian--adjective (McshLag000034#idLBcmsadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21544  Bulgarian-adjective (McshStn000038#idSbuladje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21545  German-adjective (McshLag000033#idLDeutadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21546  Greek-adjective (McshLag000020#idLEllnadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21548  AdjeEspo (McshLag000012#idLEspoadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21549  French-adjective (McshStn000037#idLFracadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21550  Hindi-adjective (McshLag000037#idLHindadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21551  Hindi-Urdu--adjective (McshLag000037#idLHiuradje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21552  Italian-adjective (McshStn000035#idLItlnadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21553  Japanese-adjective (McshStn000048#idLJpnsadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21554  Khmer-adjective (McshStn000050#idLKhmradje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21555  Korean-adjective (McshLag000043#idLKoraadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21556  Macedonian-adjective (McshStn000040#idLSmkdadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21557  Romanian-adjective (McshStn000044#idLRomnadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21558  Russian-adjective (McshStn000043#idLSrusadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21559  Slovenian-adjective (McshStn000041#idLSslvadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21560  Spanish-adjective (McshLag000035#idLSpanadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21561  Albanian-adjective (McshStn000039#idLSqipadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21562  AdjeTurk (McshLag000030#idLTurkadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21563  Urdu-adjective (McshLag000037#idLUrduadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21564  Vietnamese-adjective (McshStn000034#idLVnmaadje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21567  Afro-Asiatic--adjective (McshLag000040#idLAfa0adje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21568  Austroasiatic-adjective (McshLag000042#idLAsa0adje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21569  Indo-European--adjective (McshLag000039#idLIde0adje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21570  Slavic-adjective (McshLag000038#idLSlv0adje)  has no generic-tree::  — should list Hmnmadje_Gntr
+  McshLag000007:21571  Turkic-adjective (McshLag000041#idLTur0adje)  has no generic-tree::  — should list Hmnmadje_Gntr
+
+=== ITEM-NOT-A-CONCEPT (1) — the specific item links to a missing target
+  McshLag000005:191  SoctOgms'language  (McshStn000007#idSoctOgmsatt009 not found)  in specific-tree of Ogms_lago_Gntr

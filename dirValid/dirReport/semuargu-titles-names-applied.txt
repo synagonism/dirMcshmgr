@@ -1,0 +1,35 @@
+OLD SEMU-ARGU NAMES IN TITLES AND name:: APPLIED — 2026-10-25
+names: 6 | lines changed: 23 in 6 files
+
+=== PER FILE (6)
+  McshLag000030         3
+  McshLag000038         4
+  McshLag000039         4
+  McshLag000040         4
+  McshLag000041         4
+  McshLag000042         4
+
+=== CHANGED (23)
+  McshLag000030:111  <h3 id="idLTurksmsondoattH3">semu-attribute of ArgocptTurk  ->  <h3 id="idLTurksmsondoattH3">semu-attribute of Turksemuargu
+  McshLag000030:119  <br>* McshEngl.ArgocptTurk'attribute,  ->  <br>* McshEngl.Turksemuargu'attribute,
+  McshLag000030:120  <br>* McshEngl.ArgocptTurk'semu-attribute,  ->  <br>* McshEngl.Turksemuargu'semu-attribute,
+  McshLag000038:260  <h3 id="idLSlv0smsondoattH3">attribute of Slv0_Semuargu  ->  <h3 id="idLSlv0smsondoattH3">attribute of Slv0semuargu
+  McshLag000038:267  <br>* McshEngl.Slv0_Semuargu'attribute,  ->  <br>* McshEngl.Slv0semuargu'attribute,
+  McshLag000038:296  <h3 id="idLSlv0smsondoRfrcH3">Slv0_Semuargu.reference  ->  <h3 id="idLSlv0smsondoRfrcH3">Slv0semuargu.reference
+  McshLag000038:304  <br>* McshEngl.Slv0_Semuargu.reference,  ->  <br>* McshEngl.Slv0semuargu.reference,
+  McshLag000039:256  <h3 id="idLIde0smsondoattH3">attribute of Ide0_Semuargu  ->  <h3 id="idLIde0smsondoattH3">attribute of Ide0semuargu
+  McshLag000039:263  <br>* McshEngl.Ide0_Semuargu'attribute,  ->  <br>* McshEngl.Ide0semuargu'attribute,
+  McshLag000039:292  <h3 id="idLIde0smsondoRfrcH3">Ide0_Semuargu.reference  ->  <h3 id="idLIde0smsondoRfrcH3">Ide0semuargu.reference
+  McshLag000039:300  <br>* McshEngl.Ide0_Semuargu.reference,  ->  <br>* McshEngl.Ide0semuargu.reference,
+  McshLag000040:272  <h3 id="idLAfa0smsondoattH3">attribute of Afa0_Semuargu  ->  <h3 id="idLAfa0smsondoattH3">attribute of Afa0semuargu
+  McshLag000040:279  <br>* McshEngl.Afa0_Semuargu'attribute,  ->  <br>* McshEngl.Afa0semuargu'attribute,
+  McshLag000040:308  <h3 id="idLAfa0smsondoRfrcH3">Afa0_Semuargu.reference  ->  <h3 id="idLAfa0smsondoRfrcH3">Afa0semuargu.reference
+  McshLag000040:316  <br>* McshEngl.Afa0_Semuargu.reference,  ->  <br>* McshEngl.Afa0semuargu.reference,
+  McshLag000041:262  <h3 id="idLTur0smsondoattH3">attribute of Tur0_Semuargu  ->  <h3 id="idLTur0smsondoattH3">attribute of Tur0semuargu
+  McshLag000041:269  <br>* McshEngl.Tur0_Semuargu'attribute,  ->  <br>* McshEngl.Tur0semuargu'attribute,
+  McshLag000041:298  <h3 id="idLTur0smsondoRfrcH3">Tur0_Semuargu.reference  ->  <h3 id="idLTur0smsondoRfrcH3">Tur0semuargu.reference
+  McshLag000041:306  <br>* McshEngl.Tur0_Semuargu.reference,  ->  <br>* McshEngl.Tur0semuargu.reference,
+  McshLag000042:235  <h3 id="idLAsa0smsondoattH3">attribute of Asa0_Semuargu  ->  <h3 id="idLAsa0smsondoattH3">attribute of Asa0semuargu
+  McshLag000042:242  <br>* McshEngl.Asa0_Semuargu'attribute,  ->  <br>* McshEngl.Asa0semuargu'attribute,
+  McshLag000042:271  <h3 id="idLAsa0smsondoRfrcH3">Asa0_Semuargu.reference  ->  <h3 id="idLAsa0smsondoRfrcH3">Asa0semuargu.reference
+  McshLag000042:279  <br>* McshEngl.Asa0_Semuargu.reference,  ->  <br>* McshEngl.Asa0semuargu.reference,

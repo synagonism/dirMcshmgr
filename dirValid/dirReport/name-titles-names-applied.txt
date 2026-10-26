@@ -1,0 +1,86 @@
+OLD LOGO-NAME NAMES IN TITLES AND name:: APPLIED — 2026-10-25
+names: 30 | lines changed: 66 in 14 files
+
+=== PER FILE (14)
+  McshLag000010        23
+  McshLag000012         7
+  McshLag000027         3
+  McshLag000030         3
+  McshLag000034         3
+  McshLag000035         3
+  McshLag000036         3
+  McshLag000037         3
+  McshLag000038         3
+  McshLag000039         3
+  McshLag000040         3
+  McshLag000041         3
+  McshLag000042         3
+  McshLag000043         3
+
+=== CHANGED (66)
+  McshLag000010:4520  <h3 id="idL0014namemgrH3">manager of Sngu_name  ->  <h3 id="idL0014namemgrH3">manager of Snguname
+  McshLag000010:4531  <br>* McshEngl.Sngu_name-manager!⇒Sngu_name_mngr,  ->  <br>* McshEngl.Snguname-manager!⇒Sngu_name_mngr,
+  McshLag000010:4532  <br>* McshEngl.Sngu_name_mngr!=Sngu_name-manager,  ->  <br>* McshEngl.Sngu_name_mngr!=Snguname-manager,
+  McshLag000010:4533  <br>* McshEngl.Sngu_name'manager!⇒Sngu_name_mngr,  ->  <br>* McshEngl.Snguname'manager!⇒Sngu_name_mngr,
+  McshLag000010:4538  <h4 id="idL0014namemgrruleH4">rule of Sngu_name  ->  <h4 id="idL0014namemgrruleH4">rule of Snguname
+  McshLag000010:4545  <br>* McshEngl.Sngu_name-rule!⇒Sngu_name_rule,  ->  <br>* McshEngl.Snguname-rule!⇒Sngu_name_rule,
+  McshLag000010:4546  <br>* McshEngl.Sngu_name_rule!=Sngu_name-rule,  ->  <br>* McshEngl.Sngu_name_rule!=Snguname-rule,
+  McshLag000010:4547  <br>* McshEngl.Sngu_name'rule!⇒Sngu_name_rule,  ->  <br>* McshEngl.Snguname'rule!⇒Sngu_name_rule,
+  McshLag000010:4598  <br>* McshEngl.argu-Sngu_name-rule,  ->  <br>* McshEngl.argu-Snguname-rule,
+  McshLag000010:4624  <br>* McshEngl.verb-Sngu_name-rule,  ->  <br>* McshEngl.verb-Snguname-rule,
+  McshLag000010:4655  <br>* McshEngl.conjunction-Sngu_name-rule,  ->  <br>* McshEngl.conjunction-Snguname-rule,
+  McshLag000010:4679  <br>* McshEngl.relation-Sngu_name-rule,  ->  <br>* McshEngl.relation-Snguname-rule,
+  McshLag000010:4750  <br>* McshEngl.multiword-Sngu_name-rule,  ->  <br>* McshEngl.multiword-Snguname-rule,
+  McshLag000010:4778  <br>* McshEngl.Sngu_name-validator!⇒Sngu_name_vldr,  ->  <br>* McshEngl.Snguname-validator!⇒Sngu_name_vldr,
+  McshLag000010:4779  <br>* McshEngl.Sngu_name_vldr!=Sngu_name-validator,  ->  <br>* McshEngl.Sngu_name_vldr!=Snguname-validator,
+  McshLag000010:4782  <br>* McshEngl.validator-of-Sngu_name!⇒Sngu_name_vldr,  ->  <br>* McshEngl.validator-of-Snguname!⇒Sngu_name_vldr,
+  McshLag000010:4822  <h3 id="idL0014termH3">Sngu_name.term  ->  <h3 id="idL0014termH3">Snguname.term
+  McshLag000010:4830  <br>* McshEngl.Sngu_name.term!⇒Sngu_term,  ->  <br>* McshEngl.Snguname.term!⇒Sngu_term,
+  McshLag000010:4920  <h3 id="idL0014termNH3">Sngu_name.termNo  ->  <h3 id="idL0014termNH3">Snguname.termNo
+  McshLag000010:4930  <br>* McshEngl.Sngu_name.termNo!⇒Sngu_termNo,  ->  <br>* McshEngl.Snguname.termNo!⇒Sngu_termNo,
+  McshLag000010:4956  <br>* McshEngl.Sngu_name.argu!⇒Snguargu,  ->  <br>* McshEngl.Snguname.argu!⇒Snguargu,
+  McshLag000010:5356  <br>* McshEngl.Sngu_name.verb!⇒Snguverb,  ->  <br>* McshEngl.Snguname.verb!⇒Snguverb,
+  McshLag000010:5523  <br>* McshEngl.Sngu_name.conjunction!⇒Snguconj,  ->  <br>* McshEngl.Snguname.conjunction!⇒Snguconj,
+  McshLag000012:1866  <h3 id="idLEspotermH3">nameEspo.term  ->  <h3 id="idLEspotermH3">Esponame.term
+  McshLag000012:1876  <br>* McshEngl.nameEspo.term!⇒termEspo,  ->  <br>* McshEngl.Esponame.term!⇒termEspo,
+  McshLag000012:1929  <h3 id="idLEspotermNH3">nameEspo.termNo  ->  <h3 id="idLEspotermNH3">Esponame.termNo
+  McshLag000012:1939  <br>* McshEngl.nameEspo.termNo!⇒termNoEspo,  ->  <br>* McshEngl.Esponame.termNo!⇒termNoEspo,
+  McshLag000012:1959  <br>* McshEngl.nameEspo.argu!⇒ondoEspo,  ->  <br>* McshEngl.Esponame.argu!⇒ondoEspo,
+  McshLag000012:2753  <br>* McshEngl.nameEspo.verb!⇒verbEspo,  ->  <br>* McshEngl.Esponame.verb!⇒verbEspo,
+  McshLag000012:4871  <br>* McshEngl.nameEspo.conjunction!⇒Espoconj,  ->  <br>* McshEngl.Esponame.conjunction!⇒Espoconj,
+  McshLag000027:1310  <h3 id="idLEllatrmsmsnbrH3">number of Ella_name  ->  <h3 id="idLEllatrmsmsnbrH3">number of Ellaname
+  McshLag000027:1320  <br>* McshEngl.number-of-Ella_name,  ->  <br>* McshEngl.number-of-Ellaname,
+  McshLag000027:1321  <br>* McshEngl.Ella_name'number,  ->  <br>* McshEngl.Ellaname'number,
+  McshLag000030:1559  <h3 id="idLTurknameirscH3">info-resource of nameTurk  ->  <h3 id="idLTurknameirscH3">info-resource of Turkname
+  McshLag000030:1566  <br>* McshEngl.nameTurk'info_resource,  ->  <br>* McshEngl.Turkname'info_resource,
+  McshLag000030:1567  <br>* McshEngl.nameTurk'info-resource!⇒nameTurk'info_resource,  ->  <br>* McshEngl.Turkname'info-resource!⇒Turkname'info_resource,
+  McshLag000034:1717  <br>* McshEngl.BcmsName.argu!⇒Bcmsargu,  ->  <br>* McshEngl.Bcmsname.argu!⇒Bcmsargu,
+  McshLag000034:2035  <br>* McshEngl.BcmsName.verb!⇒Bcmsverb,  ->  <br>* McshEngl.Bcmsname.verb!⇒Bcmsverb,
+  McshLag000034:2136  <br>* McshEngl.BcmsName.conjunction!⇒Bcmsconj,  ->  <br>* McshEngl.Bcmsname.conjunction!⇒Bcmsconj,
+  McshLag000035:1237  <br>* McshEngl.SpanName.argu!⇒Spanargu,  ->  <br>* McshEngl.Spanname.argu!⇒Spanargu,
+  McshLag000035:1747  <br>* McshEngl.SpanName.verb!⇒Spanverb,  ->  <br>* McshEngl.Spanname.verb!⇒Spanverb,
+  McshLag000035:1980  <br>* McshEngl.SpanName.conjunction!⇒Spanconj,  ->  <br>* McshEngl.Spanname.conjunction!⇒Spanconj,
+  McshLag000036:1786  <br>* McshEngl.ArabName.argu!⇒Arabargu,  ->  <br>* McshEngl.Arabname.argu!⇒Arabargu,
+  McshLag000036:2313  <br>* McshEngl.ArabName.verb!⇒Arabverb,  ->  <br>* McshEngl.Arabname.verb!⇒Arabverb,
+  McshLag000036:2455  <br>* McshEngl.ArabName.conjunction!⇒Arabconj,  ->  <br>* McshEngl.Arabname.conjunction!⇒Arabconj,
+  McshLag000037:1566  <br>* McshEngl.HiurName.argu!⇒Hiurargu,  ->  <br>* McshEngl.Hiurname.argu!⇒Hiurargu,
+  McshLag000037:1885  <br>* McshEngl.HiurName.verb!⇒Hiurverb,  ->  <br>* McshEngl.Hiurname.verb!⇒Hiurverb,
+  McshLag000037:1987  <br>* McshEngl.HiurName.conjunction!⇒Hiurconj,  ->  <br>* McshEngl.Hiurname.conjunction!⇒Hiurconj,
+  McshLag000038:1063  <br>* McshEngl.Slv0Name.argu!⇒Slv0argu,  ->  <br>* McshEngl.Slv0name.argu!⇒Slv0argu,
+  McshLag000038:1381  <br>* McshEngl.Slv0Name.verb!⇒Slv0verb,  ->  <br>* McshEngl.Slv0name.verb!⇒Slv0verb,
+  McshLag000038:1482  <br>* McshEngl.Slv0Name.conjunction!⇒Slv0conj,  ->  <br>* McshEngl.Slv0name.conjunction!⇒Slv0conj,
+  McshLag000039:729  <br>* McshEngl.Ide0Name.argu!⇒Ide0argu,  ->  <br>* McshEngl.Ide0name.argu!⇒Ide0argu,
+  McshLag000039:1048  <br>* McshEngl.Ide0Name.verb!⇒Ide0verb,  ->  <br>* McshEngl.Ide0name.verb!⇒Ide0verb,
+  McshLag000039:1150  <br>* McshEngl.Ide0Name.conjunction!⇒Ide0conj,  ->  <br>* McshEngl.Ide0name.conjunction!⇒Ide0conj,
+  McshLag000040:954  <br>* McshEngl.Afa0Name.argu!⇒Afa0argu,  ->  <br>* McshEngl.Afa0name.argu!⇒Afa0argu,
+  McshLag000040:1273  <br>* McshEngl.Afa0Name.verb!⇒Afa0verb,  ->  <br>* McshEngl.Afa0name.verb!⇒Afa0verb,
+  McshLag000040:1375  <br>* McshEngl.Afa0Name.conjunction!⇒Afa0conj,  ->  <br>* McshEngl.Afa0name.conjunction!⇒Afa0conj,
+  McshLag000041:866  <br>* McshEngl.Tur0Name.argu!⇒Tur0argu,  ->  <br>* McshEngl.Tur0name.argu!⇒Tur0argu,
+  McshLag000041:1184  <br>* McshEngl.Tur0Name.verb!⇒Tur0verb,  ->  <br>* McshEngl.Tur0name.verb!⇒Tur0verb,
+  McshLag000041:1285  <br>* McshEngl.Tur0Name.conjunction!⇒Tur0conj,  ->  <br>* McshEngl.Tur0name.conjunction!⇒Tur0conj,
+  McshLag000042:875  <br>* McshEngl.Asa0Name.argu!⇒Asa0argu,  ->  <br>* McshEngl.Asa0name.argu!⇒Asa0argu,
+  McshLag000042:1194  <br>* McshEngl.Asa0Name.verb!⇒Asa0verb,  ->  <br>* McshEngl.Asa0name.verb!⇒Asa0verb,
+  McshLag000042:1296  <br>* McshEngl.Asa0Name.conjunction!⇒Asa0conj,  ->  <br>* McshEngl.Asa0name.conjunction!⇒Asa0conj,
+  McshLag000043:2152  <br>* McshEngl.KoraName.argu!⇒Koraargu,  ->  <br>* McshEngl.Koraname.argu!⇒Koraargu,
+  McshLag000043:2773  <br>* McshEngl.KoraName.verb!⇒Koraverb,  ->  <br>* McshEngl.Koraname.verb!⇒Koraverb,
+  McshLag000043:2958  <br>* McshEngl.KoraName.conjunction!⇒Koraconj,  ->  <br>* McshEngl.Koraname.conjunction!⇒Koraconj,

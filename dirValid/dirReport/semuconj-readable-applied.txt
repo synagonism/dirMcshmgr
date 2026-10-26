@@ -1,0 +1,19 @@
+SEMU-CONJUNCTION HUMAN-READABLE MAIN-NAME APPLIED — 2026-10-25
+changed: 3 | not found: Ellnsemuconj, Esposemuconj
+
+=== CHANGED (3)
+  McshLag000010:291  Sngusemuconj
+      <br>* McshEngl.semu-conjunction--of-Sngu_lagu!⇒Sngusemuconj,
+      <br>* McshEngl.Sngusemuconj!=semu-conjunction--of-Sngu_lagu,
+      <br>* McshEngl.Semuconjunction-of-Sngu_lagu!⇒Sngusemuconj,
+      <br>* McshEngl.Semuconjunction--of-Sngu_lagu!⇒Sngusemuconj,
+  McshLag000018:523  Zhonsemuconj
+      <br>* McshEngl.semu-conjunction--of-Zhon_lago!⇒Zhonsemuconj,
+      <br>* McshEngl.Zhonsemuconj!=semu-conjunction--of-Zhon_lago,
+      <br>* McshEngl.Chinese-Conj-cnpt!⇒Zhonsemuconj,
+      <br>* McshEngl.Conj-cnpt.Standard-Chinese!⇒Zhonsemuconj,
+  McshLag000033:305  Deutsemuconj
+      <br>* McshEngl.semu-conjunction--of-Deut_lago!⇒Deutsemuconj,
+      <br>* McshEngl.Deutsemuconj!=semu-conjunction--of-Deut_lago,
+      <br>* McshEngl.Deutsemucnpt.conjunction!⇒Deutsemuconj,
+      <br>* McshEngl.conjunction-concept--of-Deut_lago!⇒Deutsemuconj,

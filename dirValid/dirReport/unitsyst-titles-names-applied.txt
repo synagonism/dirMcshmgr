@@ -1,0 +1,121 @@
+OLD LOGO-UNIT-SYSTEM NAMES IN TITLES AND name:: APPLIED — 2026-10-25
+names: 29 | lines changed: 99 in 16 files
+
+=== PER FILE (16)
+  McshLag000007        21
+  McshLag000010         8
+  McshLag000011         8
+  McshLag000020         4
+  McshLag000021        14
+  McshLag000033         4
+  McshLag000034         4
+  McshLag000035         4
+  McshLag000036         4
+  McshLag000037         4
+  McshLag000038         4
+  McshLag000039         4
+  McshLag000040         4
+  McshLag000041         4
+  McshLag000042         4
+  McshLag000043         4
+
+=== CHANGED (99)
+  McshLag000007:17256  <h3 id="idLHmnmutsmMainH3">SystUnitHmnm.main-name  ->  <h3 id="idLHmnmutsmMainH3">Hmnmunitsyst.main-name
+  McshLag000007:17264  <br>* McshEngl.SystUnitHmnm.main-name,  ->  <br>* McshEngl.Hmnmunitsyst.main-name,
+  McshLag000007:17269  <h3 id="idLHmnmutsmMainNH3">SystUnitHmnm.mainNo-name  ->  <h3 id="idLHmnmutsmMainNH3">Hmnmunitsyst.mainNo-name
+  McshLag000007:17277  <br>* McshEngl.SystUnitHmnm.mainNo-name,  ->  <br>* McshEngl.Hmnmunitsyst.mainNo-name,
+  McshLag000007:17282  <h3 id="idLHmnmutsmUsdH3">SystUnitHmnm.used  ->  <h3 id="idLHmnmutsmUsdH3">Hmnmunitsyst.used
+  McshLag000007:17291  <br>* McshEngl.SystUnitHmnm.used,  ->  <br>* McshEngl.Hmnmunitsyst.used,
+  McshLag000007:17297  <h3 id="idLHmnmutsmUsdNH3">SystUnitHmnm.usedNo  ->  <h3 id="idLHmnmutsmUsdNH3">Hmnmunitsyst.usedNo
+  McshLag000007:17304  <br>* McshEngl.SystUnitHmnm.usedNo,  ->  <br>* McshEngl.Hmnmunitsyst.usedNo,
+  McshLag000007:17310  <h3 id="idLHmnmutsmFreH3">SystUnitHmnm.free  ->  <h3 id="idLHmnmutsmFreH3">Hmnmunitsyst.free
+  McshLag000007:17317  <br>* McshEngl.SystUnitHmnm.free,  ->  <br>* McshEngl.Hmnmunitsyst.free,
+  McshLag000007:17323  <h3 id="idLHmnmutsmFreNH3">SystUnitHmnm.freeNo  ->  <h3 id="idLHmnmutsmFreNH3">Hmnmunitsyst.freeNo
+  McshLag000007:17330  <br>* McshEngl.SystUnitHmnm.freeNo,  ->  <br>* McshEngl.Hmnmunitsyst.freeNo,
+  McshLag000007:17336  <h3 id="idLHmnmwrdH3">SystUnitHmnm.word  ->  <h3 id="idLHmnmwrdH3">Hmnmunitsyst.word
+  McshLag000007:17349  <br>* McshEngl.SystUnitHmnm.word!⇒word,  ->  <br>* McshEngl.Hmnmunitsyst.word!⇒word,
+  McshLag000007:18094  <h3 id="idLHmnmutsmNameH3">SystUnitHmnm.name (<a class="clsPreview" href="#idLHmnmname">link</a>)  ->  <h3 id="idLHmnmutsmNameH3">Hmnmunitsyst.name (<a class="clsPreview" href="#idLHmnmname">link</a>)
+  McshLag000007:18099  <h3 id="idLHmnmsylbH3">SystUnitHmnm.syllable  ->  <h3 id="idLHmnmsylbH3">Hmnmunitsyst.syllable
+  McshLag000007:18116  <br>* McshEngl.SystUnitHmnm.HmnmSylb!⇒HmnmSylb,  ->  <br>* McshEngl.Hmnmunitsyst.HmnmSylb!⇒HmnmSylb,
+  McshLag000007:18352  <h3 id="idLHmnmsmwdH3">SystUnitHmnm.semiword  ->  <h3 id="idLHmnmsmwdH3">Hmnmunitsyst.semiword
+  McshLag000007:18363  <br>* McshEngl.SystUnitHmnm.semiword!⇒semiword,  ->  <br>* McshEngl.Hmnmunitsyst.semiword!⇒semiword,
+  McshLag000007:18381  <h3 id="idLHmnmafxH3">SystUnitHmnm.affix  ->  <h3 id="idLHmnmafxH3">Hmnmunitsyst.affix
+  McshLag000007:18395  <br>* McshEngl.SystUnitHmnm.affix!⇒affixHmnm,  ->  <br>* McshEngl.Hmnmunitsyst.affix!⇒affixHmnm,
+  McshLag000010:2214  <h3 id="idL0014wrdH3">SystUnitSngo.word  ->  <h3 id="idL0014wrdH3">Snguunitsyst.word
+  McshLag000010:2230  <br>* McshEngl.SystUnitSngo.word!⇒Sngu_word,  ->  <br>* McshEngl.Snguunitsyst.word!⇒Sngu_word,
+  McshLag000010:3775  <h3 id="idL0014sylbH3">SystUnitSngo.syllable  ->  <h3 id="idL0014sylbH3">Snguunitsyst.syllable
+  McshLag000010:3788  <br>* McshEngl.SystUnitSngo.syllable!⇒Sngu_sylb,  ->  <br>* McshEngl.Snguunitsyst.syllable!⇒Sngu_sylb,
+  McshLag000010:4462  <h3 id="idL0014afxH3">SystUnitSngo.affix  ->  <h3 id="idL0014afxH3">Snguunitsyst.affix
+  McshLag000010:4473  <br>* McshEngl.SystUnitSngo.affix,  ->  <br>* McshEngl.Snguunitsyst.affix,
+  McshLag000010:4478  <h3 id="idL0014smwdH3">SystUnitSngo.semiword  ->  <h3 id="idL0014smwdH3">Snguunitsyst.semiword
+  McshLag000010:4486  <br>* McshEngl.SystUnitSngo.semiword,  ->  <br>* McshEngl.Snguunitsyst.semiword,
+  McshLag000011:2238  <h3 id="idLEnglwrdH3">SystUnitEngl.word  ->  <h3 id="idLEnglwrdH3">Englunitsyst.word
+  McshLag000011:2254  <br>* McshEngl.SystUnitEngl.word!⇒Engl_word,  ->  <br>* McshEngl.Englunitsyst.word!⇒Engl_word,
+  McshLag000011:2452  <h3 id="idLEnglsylbH3">SystUnitEngl.syllable  ->  <h3 id="idLEnglsylbH3">Englunitsyst.syllable
+  McshLag000011:2462  <br>* McshEngl.SystUnitEngl.syllable!⇒Engl_sylb,  ->  <br>* McshEngl.Englunitsyst.syllable!⇒Engl_sylb,
+  McshLag000011:5267  <h3 id="idLEnglsffxH3">SystUnitEngl.suffix  ->  <h3 id="idLEnglsffxH3">Englunitsyst.suffix
+  McshLag000011:5341  <br>* McshEngl.SystUnitEngl.suffix!⇒Engl_sufx,  ->  <br>* McshEngl.Englunitsyst.suffix!⇒Engl_sufx,
+  McshLag000011:5620  <h3 id="idLEnglprfxH3">SystUnitEngl.prefix  ->  <h3 id="idLEnglprfxH3">Englunitsyst.prefix
+  McshLag000011:5684  <br>* McshEngl.SystUnitEngl.prefix!⇒Engl_prfx,  ->  <br>* McshEngl.Englunitsyst.prefix!⇒Engl_prfx,
+  McshLag000020:1451  <h3 id="idLEllnwrdH3">SystUnitElln.word  ->  <h3 id="idLEllnwrdH3">Ellnunitsyst.word
+  McshLag000020:1460  <br>* McshEngl.SystUnitElln.word!⇒Elln_word,  ->  <br>* McshEngl.Ellnunitsyst.word!⇒Elln_word,
+  McshLag000020:1776  <h3 id="idLEllnsylbH3">SystUnitElln.syllable  ->  <h3 id="idLEllnsylbH3">Ellnunitsyst.syllable
+  McshLag000020:1784  <br>* McshEngl.SystUnitElln.syllable!⇒Ellnsylb,  ->  <br>* McshEngl.Ellnunitsyst.syllable!⇒Ellnsylb,
+  McshLag000021:21  <h1 id="idOverviewH1">overview of Zhon_unit_syst  ->  <h1 id="idOverviewH1">overview of Zhonunitsyst
+  McshLag000021:45  <h1 id="idLZhonunsmirscH1">info-resource of Zhon_unit_syst  ->  <h1 id="idLZhonunsmirscH1">info-resource of Zhonunitsyst
+  McshLag000021:51  <br>* McshEngl.Zhon_unit_syst'info_resource,  ->  <br>* McshEngl.Zhonunitsyst'info_resource,
+  McshLag000021:52  <br>* McshEngl.Zhon_unit_syst'info-resource!⇒Zhon_unit_syst'info_resource,  ->  <br>* McshEngl.Zhonunitsyst'info-resource!⇒Zhonunitsyst'info_resource,
+  McshLag000021:57  <h1 id="idLZhonunsmdongH1">DOING of Zhon_unit_syst  ->  <h1 id="idLZhonunsmdongH1">DOING of Zhonunitsyst
+  McshLag000021:63  <br>* McshEngl.Zhon_unit_syst'doing,  ->  <br>* McshEngl.Zhonunitsyst'doing,
+  McshLag000021:68  <h1 id="idLZhonunsmevogH1">evoluting of Zhon_unit_syst  ->  <h1 id="idLZhonunsmevogH1">evoluting of Zhonunitsyst
+  McshLag000021:75  <br>* McshEngl.evoluting-of-Zhon_unit_syst,  ->  <br>* McshEngl.evoluting-of-Zhonunitsyst,
+  McshLag000021:76  <br>* McshEngl.Zhon_unit_syst'evoluting,  ->  <br>* McshEngl.Zhonunitsyst'evoluting,
+  McshLag000021:81  <h1 id="idLZhonunsmwptrH1">WHOLE-PART-TREE of Zhon_unit_syst  ->  <h1 id="idLZhonunsmwptrH1">WHOLE-PART-TREE of Zhonunitsyst
+  McshLag000021:123  <h1 id="idLZhonwrdH1">Zhon_unit_syst.word  ->  <h1 id="idLZhonwrdH1">Zhonunitsyst.word
+  McshLag000021:140  <br>* McshEngl.Zhon_unit_syst.word!⇒Zhon_word,  ->  <br>* McshEngl.Zhonunitsyst.word!⇒Zhon_word,
+  McshLag000021:196  <h1 id="idLZhonsylbH1">Zhon_unit_syst.syllable  ->  <h1 id="idLZhonsylbH1">Zhonunitsyst.syllable
+  McshLag000021:209  <br>* McshEngl.Zhon_unit_syst.syllable!⇒Zhonsylb,  ->  <br>* McshEngl.Zhonunitsyst.syllable!⇒Zhonsylb,
+  McshLag000033:2107  <h3 id="idLDeutwrdH3">DeutUnitSyst.word  ->  <h3 id="idLDeutwrdH3">Deutunitsyst.word
+  McshLag000033:2118  <br>* McshEngl.DeutUnitSyst.word!⇒Deutword,  ->  <br>* McshEngl.Deutunitsyst.word!⇒Deutword,
+  McshLag000033:2151  <h3 id="idLDeutsylbH3">DeutUnitSyst.syllable  ->  <h3 id="idLDeutsylbH3">Deutunitsyst.syllable
+  McshLag000033:2161  <br>* McshEngl.DeutUnitSyst.syllable!⇒DeutSylb,  ->  <br>* McshEngl.Deutunitsyst.syllable!⇒DeutSylb,
+  McshLag000034:1552  <h3 id="idLBcmswrdH3">BcmsUnitSyst.word  ->  <h3 id="idLBcmswrdH3">Bcmsunitsyst.word
+  McshLag000034:1563  <br>* McshEngl.BcmsUnitSyst.word!⇒BcmsWord,  ->  <br>* McshEngl.Bcmsunitsyst.word!⇒BcmsWord,
+  McshLag000034:1596  <h3 id="idLBcmssylbH3">BcmsUnitSyst.syllable  ->  <h3 id="idLBcmssylbH3">Bcmsunitsyst.syllable
+  McshLag000034:1606  <br>* McshEngl.BcmsUnitSyst.syllable!⇒Bcmssylb,  ->  <br>* McshEngl.Bcmsunitsyst.syllable!⇒Bcmssylb,
+  McshLag000035:1113  <h3 id="idLSpanwrdH3">SpanUnitSyst.word  ->  <h3 id="idLSpanwrdH3">Spanunitsyst.word
+  McshLag000035:1124  <br>* McshEngl.SpanUnitSyst.word!⇒SpanWord,  ->  <br>* McshEngl.Spanunitsyst.word!⇒SpanWord,
+  McshLag000035:1157  <h3 id="idLSpansylbH3">SpanUnitSyst.syllable  ->  <h3 id="idLSpansylbH3">Spanunitsyst.syllable
+  McshLag000035:1167  <br>* McshEngl.SpanUnitSyst.syllable!⇒SpanSylb,  ->  <br>* McshEngl.Spanunitsyst.syllable!⇒SpanSylb,
+  McshLag000036:1662  <h3 id="idLArabwrdH3">ArabUnitSyst.word  ->  <h3 id="idLArabwrdH3">Arabunitsyst.word
+  McshLag000036:1673  <br>* McshEngl.ArabUnitSyst.word!⇒ArabWord,  ->  <br>* McshEngl.Arabunitsyst.word!⇒ArabWord,
+  McshLag000036:1706  <h3 id="idLArabsylbH3">ArabUnitSyst.syllable  ->  <h3 id="idLArabsylbH3">Arabunitsyst.syllable
+  McshLag000036:1716  <br>* McshEngl.ArabUnitSyst.syllable!⇒ArabSylb,  ->  <br>* McshEngl.Arabunitsyst.syllable!⇒ArabSylb,
+  McshLag000037:1442  <h3 id="idLHiurwrdH3">HiurUnitSyst.word  ->  <h3 id="idLHiurwrdH3">Hiurunitsyst.word
+  McshLag000037:1453  <br>* McshEngl.HiurUnitSyst.word!⇒HiurWord,  ->  <br>* McshEngl.Hiurunitsyst.word!⇒HiurWord,
+  McshLag000037:1486  <h3 id="idLHiursylbH3">HiurUnitSyst.syllable  ->  <h3 id="idLHiursylbH3">Hiurunitsyst.syllable
+  McshLag000037:1496  <br>* McshEngl.HiurUnitSyst.syllable!⇒HiurSylb,  ->  <br>* McshEngl.Hiurunitsyst.syllable!⇒HiurSylb,
+  McshLag000038:814  <h3 id="idLSlv0wrdH3">Slv0UnitSyst.word  ->  <h3 id="idLSlv0wrdH3">Slv0unitsyst.word
+  McshLag000038:825  <br>* McshEngl.Slv0UnitSyst.word!⇒Slv0Word,  ->  <br>* McshEngl.Slv0unitsyst.word!⇒Slv0Word,
+  McshLag000038:858  <h3 id="idLSlv0sylbH3">Slv0UnitSyst.syllable  ->  <h3 id="idLSlv0sylbH3">Slv0unitsyst.syllable
+  McshLag000038:868  <br>* McshEngl.Slv0UnitSyst.syllable!⇒Slv0Sylb,  ->  <br>* McshEngl.Slv0unitsyst.syllable!⇒Slv0Sylb,
+  McshLag000039:605  <h3 id="idLIde0wrdH3">Ide0UnitSyst.word  ->  <h3 id="idLIde0wrdH3">Ide0unitsyst.word
+  McshLag000039:616  <br>* McshEngl.Ide0UnitSyst.word!⇒Ide0Word,  ->  <br>* McshEngl.Ide0unitsyst.word!⇒Ide0Word,
+  McshLag000039:649  <h3 id="idLIde0sylbH3">Ide0UnitSyst.syllable  ->  <h3 id="idLIde0sylbH3">Ide0unitsyst.syllable
+  McshLag000039:659  <br>* McshEngl.Ide0UnitSyst.syllable!⇒Ide0Sylb,  ->  <br>* McshEngl.Ide0unitsyst.syllable!⇒Ide0Sylb,
+  McshLag000040:830  <h3 id="idLAfa0wrdH3">Afa0UnitSyst.word  ->  <h3 id="idLAfa0wrdH3">Afa0unitsyst.word
+  McshLag000040:841  <br>* McshEngl.Afa0UnitSyst.word!⇒Afa0Word,  ->  <br>* McshEngl.Afa0unitsyst.word!⇒Afa0Word,
+  McshLag000040:874  <h3 id="idLAfa0sylbH3">Afa0UnitSyst.syllable  ->  <h3 id="idLAfa0sylbH3">Afa0unitsyst.syllable
+  McshLag000040:884  <br>* McshEngl.Afa0UnitSyst.syllable!⇒Afa0Sylb,  ->  <br>* McshEngl.Afa0unitsyst.syllable!⇒Afa0Sylb,
+  McshLag000041:742  <h3 id="idLTur0wrdH3">Tur0UnitSyst.word  ->  <h3 id="idLTur0wrdH3">Tur0unitsyst.word
+  McshLag000041:753  <br>* McshEngl.Tur0UnitSyst.word!⇒Tur0Word,  ->  <br>* McshEngl.Tur0unitsyst.word!⇒Tur0Word,
+  McshLag000041:786  <h3 id="idLTur0sylbH3">Tur0UnitSyst.syllable  ->  <h3 id="idLTur0sylbH3">Tur0unitsyst.syllable
+  McshLag000041:796  <br>* McshEngl.Tur0UnitSyst.syllable!⇒Tur0Sylb,  ->  <br>* McshEngl.Tur0unitsyst.syllable!⇒Tur0Sylb,
+  McshLag000042:751  <h3 id="idLAsa0wrdH3">Asa0UnitSyst.word  ->  <h3 id="idLAsa0wrdH3">Asa0unitsyst.word
+  McshLag000042:762  <br>* McshEngl.Asa0UnitSyst.word!⇒Asa0Word,  ->  <br>* McshEngl.Asa0unitsyst.word!⇒Asa0Word,
+  McshLag000042:795  <h3 id="idLAsa0sylbH3">Asa0UnitSyst.syllable  ->  <h3 id="idLAsa0sylbH3">Asa0unitsyst.syllable
+  McshLag000042:805  <br>* McshEngl.Asa0UnitSyst.syllable!⇒Asa0Sylb,  ->  <br>* McshEngl.Asa0unitsyst.syllable!⇒Asa0Sylb,
+  McshLag000043:2028  <h3 id="idLKorawrdH3">KoraUnitSyst.word  ->  <h3 id="idLKorawrdH3">Koraunitsyst.word
+  McshLag000043:2039  <br>* McshEngl.KoraUnitSyst.word!⇒KoraWord,  ->  <br>* McshEngl.Koraunitsyst.word!⇒KoraWord,
+  McshLag000043:2072  <h3 id="idLKorasylbH3">KoraUnitSyst.syllable  ->  <h3 id="idLKorasylbH3">Koraunitsyst.syllable
+  McshLag000043:2082  <br>* McshEngl.KoraUnitSyst.syllable!⇒KoraSylb,  ->  <br>* McshEngl.Koraunitsyst.syllable!⇒KoraSylb,

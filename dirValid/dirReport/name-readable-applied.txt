@@ -1,0 +1,19 @@
+LOGO-NAME HUMAN-READABLE MAIN-NAME APPLIED — 2026-10-25
+changed: 3 | not found: -
+
+=== CHANGED (3)
+  McshLag000011:5931  Englname
+      <br>* McshEngl.logo-name--of-Engl_lago!⇒Englname,
+      <br>* McshEngl.Englname!=logo-name--of-Engl_lago,
+      <br>* McshEngl.decoding-unit--of-Engl_lago!⇒Englname,
+      <br>* McshEngl.Engl_lago'mapping-unit!⇒Englname,
+  McshLag000018:7973  Zhonname
+      <br>* McshEngl.logo-name--of-Zhon_lago!⇒Zhonname,
+      <br>* McshEngl.Zhonname!=logo-name--of-Zhon_lago,
+      <br>* McshEngl.name-of-Chinese-language!⇒Zhonname,
+      <br>* McshEngl.decoding-unit--of-Zhon_lago!⇒Zhonname,
+  McshLag000033:2175  Deutname
+      <br>* McshEngl.logo-name--of-Deut_lago!⇒Deutname,
+      <br>* McshEngl.Deutname!=logo-name--of-Deut_lago,
+      <br>* McshEngl.decoding-unit-of-Deut_lago!⇒Deutname,
+      <br>* McshEngl.decoding-unit--of-Deut_lago!⇒Deutname,

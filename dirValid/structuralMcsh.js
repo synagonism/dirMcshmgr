@@ -38,11 +38,14 @@
  *  MvrlId10  (warning) prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
  *  MvrlId11  (warning) gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
  *  MvrlId12  (warning) sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
+ *  MvrlId13  (warning) srtr_structure_suffix: the-id of a "structure of X" | "X'structure" cnptSect does not end in "srtr"
  *
  *  MvrlGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
  *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
  *  MvrlGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
  *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
+ *             In a-"generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
+ *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
  *
  *  MvrlMnnm01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
@@ -52,6 +55,8 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-30-0.2026-10-24: generic-tree:: "=== label:" groups are NOT generics (MvrlGstr01/02)',
+    'structuralMcsh.js.0-29-0.2026-10-24: MvrlId13 srtr_structure_suffix',
     'structuralMcsh.js.0-28-0.2026-10-24: MvrlMnnm01 no-hyphen, main-names with underscores',
     'structuralMcsh.js.0-27-0.2026-10-22: MvrlGstr02 generic_has_specific, fGstrIndex shared',
     'structuralMcsh.js.0-26-0.2026-10-20: MvrlGstr01 specific_has_generic',
@@ -448,6 +453,12 @@ function fCheckIdSptr(aoCnptFile) {
     /sptr[A-Z0-9]?$/);
 }
 
+// ⚠️ [MvrlId13] srtr_structure_suffix: the-id of a-structure-concept ends in "srtr",
+//   ("structure of X", "NN_structure of X", "X'structure").
+function fCheckIdSrtr(aoCnptFile) {
+  return fCheckIdSuffix(aoCnptFile, 'MvrlId13', 'srtr_structure_suffix', 'structure', 'srtr');
+}
+
 // ❌ [MvrlMnnm01] no-hyphen: a-main-name, the-text after "!⇒" in a-name-line, has NO
 //   hyphen "-": rltnAttribute_then_entity, NOT rltnAttribute-then-entity.
 //   ONE issue per concept, McsLago and main-name, on the-first name-line that points to it.
@@ -555,6 +566,16 @@ function fGstrIndex(aoCnptFile) {
     return aoRef;
   };
   const fItems = sPara => (sPara ?? '').split('\n').map(s => s.trim()).filter(s => /^<br>\*/.test(s));
+  // the-item-lines of a-generic-tree:: that are generics: NOT in a-"=== label:" group
+  const fGntrItems = sPara => {
+    const aOut = [];
+    let bLabel = false;
+    for (const sLine of (sPara ?? '').split('\n').map(s => s.trim())) {
+      if (/^<br>===/.test(sLine)) { bLabel = !/^<br>===\s*$/.test(sLine); continue; }
+      if (!bLabel && /^<br>\*/.test(sLine)) aOut.push(sLine);
+    }
+    return aOut;
+  };
   // X_Gntr name → concept-key
   const oNameGntr = {};
   for (const [sFile, oF] of Object.entries(ooFile)) {
@@ -573,7 +594,7 @@ function fGstrIndex(aoCnptFile) {
     const oG = fGntr(sKey);
     if (!oG) return (ooGeneric[sKey] = null);
     const oSetKey = new Set();
-    for (const sLine of fItems(oG.oP.sPara)) {
+    for (const sLine of fGntrItems(oG.oP.sPara)) {
       if (/^<br>\*\s*(McshEngl\.|\.\.\.)/.test(sLine)) continue;
       for (const aN of sLine.matchAll(/([^\s*,]+_Gntr)(?=[,\s]|$)/g)) if (oNameGntr[aN[1]]) oSetKey.add(oNameGntr[aN[1]]);
       for (const oR of fRefs(oG.sFile, sLine)) { const sK = fKey(oR.sFile, oR.sId); if (sK) oSetKey.add(sK); }
@@ -686,7 +707,8 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
 // ⚠️ [MvrlGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
 //   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
 //   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
-//   Skipped: McshEngl head, "...entity_Gntr", an-addressWpg group, entity itself, a-first item that is NOT a-concept.
+//   Skipped: McshEngl head, "...entity_Gntr", a-"=== label:" group (addressWpg, sibling-of-X: ...), entity itself,
+//   a-first item that is NOT a-concept.
 function fCheckGstrGenericSpecific(aoCnptFile) {
   const aoIssue = [];
   const { ooFile, fHead, fKey, fGntr, fSptr, fRefs, fTreeItems, fNames, oNameGntr, fInside } = fGstrIndex(aoCnptFile);
@@ -703,7 +725,8 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
       const aFirst = [];
       let bNew = false, bWeb = false;
       for (const sLine of (oP.sPara ?? '').split('\n').map(s => s.trim())) {
-        if (/^<br>===/.test(sLine)) { bNew = true; bWeb = /address/i.test(sLine); continue; }
+        // a-"=== label:" group (addressWpg, sibling-of-X:, att-tree-of-X: ...) holds NO generics
+        if (/^<br>===/.test(sLine)) { bNew = true; bWeb = !/^<br>===\s*$/.test(sLine); continue; }
         if (!bNew || bWeb || !/^<br>\*/.test(sLine) || /^<br>\*\s*(McshEngl\.|\.\.\.)/.test(sLine)) continue;
         aFirst.push(sLine); bNew = false;
       }
@@ -844,6 +867,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoIdSptr = fCheckIdSptr(aoCnptFile);
   aoAll.push(...aoIdSptr);
   fLog(`${aoIdSptr.length} issues`);
+
+  fWrite('   MvrlId13  Ids srtr_structure_suffix... ');
+  const aoIdSrtr = fCheckIdSrtr(aoCnptFile);
+  aoAll.push(...aoIdSrtr);
+  fLog(`${aoIdSrtr.length} issues`);
 
   fWrite('   MvrlGstr01 specific_has_generic... ');
   const aoGstrSpcGnc = fCheckGstrSpecificGeneric(aoCnptFile);

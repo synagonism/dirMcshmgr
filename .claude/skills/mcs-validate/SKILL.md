@@ -112,6 +112,7 @@ if the user wants a record — the repo already keeps these for past runs.
   name; Hvre06: which target was meant). Ask the user instead of guessing —
   a wrong guess is silent damage in a hand-written worldview.
 - dirMcsh is its own repository. Don't commit there unless asked.
+- Never modify the generated JSON index files (`dirNamidx/**/*.json`, `dirManager/dirNamurl/*.json`): fixes and link re-pointing touch `*.last.html` only.
 
 ### 4. Verify
 
