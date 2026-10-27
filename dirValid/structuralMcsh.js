@@ -57,12 +57,15 @@
  *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
  *  MvrlMnnm05 (warning) infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" cnptSect
  *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
+ *  MvrlMnnm06 (warning) srtr_structure_main: the-main-name of a "structure of X" | "X'structure" cnptSect
+ *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-36-0.2026-10-27: MvrlMnnm06 srtr_structure_main',
     'structuralMcsh.js.0-35-0.2026-10-26: MvrlMnnm05 infrsc_info_resource_main',
     'structuralMcsh.js.0-34-0.2026-10-26: MvrlMnnm04 doing_DOING_main; no apostrophe before the-suffix',
     'structuralMcsh.js.0-33-0.2026-10-26: MvrlMnnm03 evalg_evaluating_main, fCheckMainNameSuffix shared',
@@ -572,6 +575,14 @@ function fCheckMainNameInfrsc(aoCnptFile) {
     /^(\d+_)?info-resource of |^[^\s.']+'info-resource$/i, 'infrsc');
 }
 
+// ⚠️ [MvrlMnnm06] srtr_structure_main: the-main-name of a-structure-concept
+//   ("structure of X", "NN_structure of X", "X'structure") is Xsrtr, capital first,
+//   NOT X'structure | X'attStructure | structure-of-X.
+function fCheckMainNameSrtr(aoCnptFile) {
+  return fCheckMainNameSuffix(aoCnptFile, 'MvrlMnnm06', 'srtr_structure_main',
+    /^(\d+_)?structure of |^[^\s.']+'structure$/i, 'srtr');
+}
+
 // ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
 //   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
@@ -984,6 +995,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoMainInfrsc = fCheckMainNameInfrsc(aoCnptFile);
   aoAll.push(...aoMainInfrsc);
   fLog(`${aoMainInfrsc.length} issues`);
+
+  fWrite('   MvrlMnnm06 Main-names srtr_structure... ');
+  const aoMainSrtr = fCheckMainNameSrtr(aoCnptFile);
+  aoAll.push(...aoMainSrtr);
+  fLog(`${aoMainSrtr.length} issues`);
 
   return aoAll;
 }

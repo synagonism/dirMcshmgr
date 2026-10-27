@@ -91,6 +91,23 @@
       },
       "problemMatcher": []
     },
+    // Index names of DIR-LIST (dirManager/namidxDir.txt) and upload
+    {
+      "label": "Index names of DIR-LIST and upload",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxDirList.mjs"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
     // Sftp ONLY files in <worldview>/dirManager/sftp.json
     {
       "label": "Sftp ONLY sftp.json",

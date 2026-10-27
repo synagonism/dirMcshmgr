@@ -1,0 +1,207 @@
+STRUCTURE MAIN-NAME Xsrtr (MvrlMnnm06) APPLIED — 2026-10-27
+renamed: 188 | trees: 4 | skipped: 1 | already srtr: 0 | files: 59
+
+=== SKIPPED (1)
+  McshTchInf000018:3240  no name:: — Deth-account'Structure
+
+=== X FROM THE TITLE (4)
+  McshCor000003:4985  structure  ->  Entitysrtr  (X from the title "structure of entity")
+  McshCor000011:2080  Treestructure  ->  SystTreesrtr  (X from the title "structure of SystTree")
+  McshEdu000005:1323  SciMath'structure-concept  ->  SciMathsrtr  (X from the title "structure of SciMath")
+  McshHlth000002:2000  OganGland'structure-006  ->  OganGlandsrtr  (X from the title "structure of OganGland")
+
+=== TREES + GS-TREE HEADINGS (4)
+  McshCor000003:5130  <h3 id="idEntsrtrgstrH3">GENERIC-SPECIFIC-TREE of structure  ->  <h3 id="idEntsrtrgstrH3">GENERIC-SPECIFIC-TREE of Entitysrtr
+  McshCor000003:5140  <br>* McshEngl.structure_Gntr,  ->  <br>* McshEngl.Entitysrtr_Gntr,
+  McshCor000003:5146  <br>* McshEngl.structure_Sptr,  ->  <br>* McshEngl.Entitysrtr_Sptr,
+  McshCor000007:839  <br>* structure_Gntr,  ->  <br>* Entitysrtr_Gntr,
+
+=== RENAMED (188)
+  Mcsh000000:261  Mws'structure  ->  Mwssrtr
+  McshCor000002:3837  McsMgrAAj'structure  ->  McsMgrAAjsrtr
+  McshCor000002:5218  Mcs'structure  ->  Mcssrtr
+  McshCor000003:4985  structure  ->  Entitysrtr
+  McshCor000008:487  whole'structure  ->  Wholesrtr
+  McshCor000011:307  system'attStructure  ->  Systemsrtr
+  McshCor000011:1549  sequence'structure  ->  Sequencesrtr
+  McshCor000011:2080  Treestructure  ->  SystTreesrtr
+  McshCor000011:2691  SystDyna'structure  ->  SystDynasrtr
+  McshCor000012:263  model'structure  ->  Modelsrtr
+  McshCor000015:249  McshExml'structure  ->  McshExmlsrtr
+  McshCor000018:4676  FctgMemorizing'structure  ->  FctgMemorizingsrtr
+  McshEdu000003:193  MathGraph'structure  ->  MathGraphsrtr
+  McshEdu000005:1323  SciMath'structure-concept  ->  SciMathsrtr
+  McshHlth000002:134  Hmbdnode'structure  ->  Hmbdnodesrtr
+  McshHlth000002:478  bodyHumn'neck'structure  ->  BodyHumn'necksrtr
+  McshHlth000002:1223  SystOgans'attStructure  ->  SystOganssrtr
+  McshHlth000002:1675  organ'structure  ->  Organsrtr
+  McshHlth000002:2000  OganGland'structure-006  ->  OganGlandsrtr
+  McshHlth000002:2268  GlndExocrine'structure  ->  GlndExocrinesrtr
+  McshHlth000002:2399  GlndMixed'structure  ->  GlndMixedsrtr
+  McshHlth000002:2635  GlndLiver'structure  ->  GlndLiversrtr
+  McshHlth000002:2782  HmbdOvary'structure  ->  HmbdOvarysrtr
+  McshHlth000002:3136  GlndThyroid'structure  ->  GlndThyroidsrtr
+  McshHlth000002:3278  GlndAdrenal'structure  ->  GlndAdrenalsrtr
+  McshHlth000002:3426  GlndThymus'structure  ->  GlndThymussrtr
+  McshHlth000002:3566  HmbdTesticle'structure  ->  HmbdTesticlesrtr
+  McshHlth000002:4145  extracellular-fluid'structure  ->  Extracellular_fluidsrtr
+  McshHlth000002:4182  tissue'structure  ->  Tissuesrtr
+  McshHlth000002:4296  HmbdEpithelialTissue'structure  ->  HmbdEpithelialTissuesrtr
+  McshHlth000002:4456  TissMuscle'structure  ->  TissMusclesrtr
+  McshHlth000002:4603  TissConnective'structure  ->  TissConnectivesrtr
+  McshHlth000002:4729  osteoid'structure  ->  Osteoidsrtr
+  McshHlth000002:4764  TissBone'structure  ->  TissBonesrtr
+  McshHlth000002:7219  OganHeart'structure  ->  OganHeartsrtr
+  McshHlth000002:7583  vesselBlood'structure  ->  VesselBloodsrtr
+  McshHlth000002:7709  HmbdArtery'structure  ->  HmbdArterysrtr
+  McshHlth000002:7826  HmbdCapillaryVesser'structure  ->  HmbdCapillaryVessersrtr
+  McshHlth000002:7858  vesselLymph'structure  ->  VesselLymphsrtr
+  McshHlth000002:7918  vesselSystem'structure  ->  VesselSystemsrtr
+  McshHlth000002:7967  vesselSysLymph'structure  ->  VesselSysLymphsrtr
+  McshHlth000002:8019  HmbdVein'structure  ->  HmbdVeinsrtr
+  McshHlth000002:8182  lymph'structure  ->  Lymphsrtr
+  McshHlth000002:8314  SystCirculatory'structure  ->  SystCirculatorysrtr
+  McshHlth000002:8500  epidermis_cortex'structure  ->  Epidermis_cortexsrtr
+  McshHlth000002:8555  epidermis'structure  ->  Epidermissrtr
+  McshHlth000002:8602  subcutaneous_tissue'structure  ->  Subcutaneous_tissuesrtr
+  McshHlth000002:8671  corium'structure  ->  Coriumsrtr
+  McshHlth000002:8823  OganSkin'structure  ->  OganSkinsrtr
+  McshHlth000002:9134  OganNose'structure  ->  OganNosesrtr
+  McshHlth000002:9317  OganPharyns'structure  ->  OganPharynssrtr
+  McshHlth000002:9458  OganThroat'structure  ->  OganThroatsrtr
+  McshHlth000002:9505  OganTrachea'structure  ->  OganTracheasrtr
+  McshHlth000002:9658  HmbdLung'structure  ->  HmbdLungsrtr
+  McshHlth000002:9887  SystRespiratory'structure  ->  SystRespiratorysrtr
+  McshHlth000002:10289  OganTooth'structure  ->  OganToothsrtr
+  McshHlth000002:10500  palate'structure  ->  Palatesrtr
+  McshHlth000002:10528  OganMouth'structure  ->  OganMouthsrtr
+  McshHlth000002:10617  HmbdTasteBud'structure  ->  HmbdTasteBudsrtr
+  McshHlth000002:10635  OganTongue'structure  ->  OganTonguesrtr
+  McshHlth000002:10794  OganStomach'structure  ->  OganStomachsrtr
+  McshHlth000002:10941  OganIntestineSmall'structure  ->  OganIntestineSmallsrtr
+  McshHlth000002:11081  OganIntestine'structure  ->  OganIntestinesrtr
+  McshHlth000002:11141  OganGallbladder'structure  ->  OganGallbladdersrtr
+  McshHlth000002:11282  SystDigestive'structure  ->  SystDigestivesrtr
+  McshHlth000002:11465  renal-medulla'structure  ->  Renal_medullasrtr
+  McshHlth000002:11530  renal-abdomen'structure  ->  Renal_abdomensrtr
+  McshHlth000002:11606  HmbdRenalPelvis'structure  ->  HmbdRenalPelvissrtr
+  McshHlth000002:11670  renal-tubule'structure  ->  Renal_tubulesrtr
+  McshHlth000002:11714  Bowman's_capsule'structure  ->  Bowman's_capsulesrtr
+  McshHlth000002:11796  HmbdRenalPyramid'structure  ->  HmbdRenalPyramidsrtr
+  McshHlth000002:11883  nephron'structure  ->  Nephronsrtr
+  McshHlth000002:11924  renal-corpuscle'structure  ->  Renal_corpusclesrtr
+  McshHlth000002:11989  OganKidney'structure  ->  OganKidneysrtr
+  McshHlth000002:12237  SystUrinary'structure  ->  SystUrinarysrtr
+  McshHlth000002:12370  SystReproductive'structure  ->  SystReproductivesrtr
+  McshHlth000002:12746  SystReproductiveMale'structure  ->  SystReproductiveMalesrtr
+  McshHlth000002:12966  SystReproductiveFemale'structure  ->  SystReproductiveFemalesrtr
+  McshHlth000002:13135  SystExcretory'structure  ->  SystExcretorysrtr
+  McshHlth000002:14108  bodyHumn'attStructure  ->  BodyHumnsrtr
+  McshHlth000002:14359  metabolism'structure  ->  Metabolismsrtr
+  McshHlth000003:1027  cerebrum'structure  ->  Cerebrumsrtr
+  McshHlth000003:1169  hypothalamus'structure  ->  Hypothalamussrtr
+  McshHlth000003:1414  GlndHypophysis'structure  ->  GlndHypophysissrtr
+  McshHlth000003:1485  midbrain'structure  ->  Midbrainsrtr
+  McshHlth000003:1617  brainstem'structure  ->  Brainstemsrtr
+  McshHlth000003:1701  cerebellum'structure  ->  Cerebellumsrtr
+  McshHlth000003:3557  OganBrain'structure  ->  OganBrainsrtr
+  McshHlth000003:3790  forebrain'structure  ->  Forebrainsrtr
+  McshHlth000003:3863  hindbrain'structure  ->  Hindbrainsrtr
+  McshHlth000004:231  nucleus'structure  ->  Nucleussrtr
+  McshHlth000004:461  chromosome'structure  ->  Chromosomesrtr
+  McshHlth000004:720  Dna'structure  ->  Dnasrtr
+  McshHlth000004:863  DnaGene'structure  ->  DnaGenesrtr
+  McshHlth000004:1131  cell'att008-structure  ->  Cellsrtr
+  McshHlth000004:1674  cellMuscle'structure  ->  CellMusclesrtr
+  McshHlth000004:1848  cardiac_muscle_cell'structure  ->  Cardiac_muscle_cellsrtr
+  McshHlth000004:1982  photoreceptor_cell'structure  ->  Photoreceptor_cellsrtr
+  McshHlth000004:2029  platelet'structure  ->  Plateletsrtr
+  McshHlth000004:2169  red_blood_cell'structure  ->  Red_blood_cellsrtr
+  McshHlth000004:2335  spermatozoon'structure  ->  Spermatozoonsrtr
+  McshHlth000004:2456  cellLeucocyte'structure  ->  CellLeucocytesrtr
+  McshHlth000005:309  OganMuscle'structure  ->  OganMusclesrtr
+  McshHlth000005:663  muscleSkeletal'structure  ->  MuscleSkeletalsrtr
+  McshHlth000005:747  muscleSmooth'structure  ->  MuscleSmoothsrtr
+  McshHlth000005:3073  SystSkeletal'structure  ->  SystSkeletalsrtr
+  McshHlth000005:3348  OganBone'structure  ->  OganBonesrtr
+  McshHlth000005:3588  skeletonHead'structure  ->  SkeletonHeadsrtr
+  McshHlth000005:3932  skeletonTrunk'structure  ->  SkeletonTrunksrtr
+  McshHlth000005:3974  skeletonThorax'structure  ->  SkeletonThoraxsrtr
+  McshHlth000005:4018  boneVertebra'structure  ->  BoneVertebrasrtr
+  McshHlth000005:4127  vertebral_column'structure  ->  Vertebral_columnsrtr
+  McshHlth000005:4490  skeletonAppendicular'structure  ->  SkeletonAppendicularsrtr
+  McshHlth000005:4532  skeletonLimbUpper'structure  ->  SkeletonLimbUppersrtr
+  McshHlth000005:4589  boneScapula'structure  ->  BoneScapulasrtr
+  McshHlth000005:4703  skeletonArm'structure  ->  SkeletonArmsrtr
+  McshHlth000005:4762  skeletonArmLower'structure  ->  SkeletonArmLowersrtr
+  McshHlth000005:5014  skeletonHand'structure  ->  SkeletonHandsrtr
+  McshHlth000005:5200  skeletonLimbLower'structure  ->  SkeletonLimbLowersrtr
+  McshHlth000005:5241  skeletonPelvic'structure  ->  SkeletonPelvicsrtr
+  McshHlth000005:5341  skeletonLegUpper'structure  ->  SkeletonLegUppersrtr
+  McshHlth000005:5382  skeletonLegLower'structure  ->  SkeletonLegLowersrtr
+  McshHlth000005:5639  skeletonFoot'structure  ->  SkeletonFootsrtr
+  McshHlth000005:5683  skeletonTarsus'structure  ->  SkeletonTarsussrtr
+  McshHlth000005:5826  boneLong'structure  ->  BoneLongsrtr
+  McshHlth000014:2127  vaccine'structure  ->  Vaccinesrtr
+  McshHlth000019:1074  SystCentralNervous'structure  ->  SystCentralNervoussrtr
+  McshHlth000019:1295  SystAutonomicNervous'structure  ->  SystAutonomicNervoussrtr
+  McshHlth000019:1366  SystPeripheralNervous'structure  ->  SystPeripheralNervoussrtr
+  McshHlth000019:1521  OganSense'structure  ->  OganSensesrtr
+  McshHlth000019:1664  OganEyelid'structure  ->  OganEyelidsrtr
+  McshHlth000019:2639  OganEye'structure  ->  OganEyesrtr
+  McshHlth000019:3043  SystSense'structure  ->  SystSensesrtr
+  McshHlth000019:3811  OganSpinal-cord'structure  ->  OganSpinal_cordsrtr
+  McshHlth000019:3932  OganNerve'structure  ->  OganNervesrtr
+  McshHlth000019:4306  TissSysNervous'structure  ->  TissSysNervoussrtr
+  McshHlth000019:4816  cellNeuron'structure  ->  CellNeuronsrtr
+  McshHlth000019:5681  SystNervous'structure  ->  SystNervoussrtr
+  McshHmn000002:3825  human'structure  ->  Humansrtr
+  McshHmn000003:288  HumnSngu/structure  ->  HumnSngusrtr
+  McshLag000003:688  cptMind'structure  ->  CptMindsrtr
+  McshLag000003:1220  worldview'structure  ->  Worldviewsrtr
+  McshLag000004:144  lagoCmnr'structure  ->  LagoCmnrsrtr
+  McshLag000013:444  Infrsc'structure  ->  Infrscsrtr
+  McshLag000014:125  irBook'structure  ->  IrBooksrtr
+  McshLag000019:95  irPaper'structure  ->  IrPapersrtr
+  McshLag000021:260  Zhonsylb'structure  ->  Zhonsylbsrtr
+  McshNtr000002:429  material'attStructure  ->  Materialsrtr
+  McshNtr000003:321  MtrlAtom'attStructure  ->  MtrlAtomsrtr
+  McshNtr000004:169  MtrlMol'structure  ->  MtrlMolsrtr
+  McshNtr000005:282  MtrlSysMols'structure  ->  MtrlSysMolssrtr
+  McshNtr000015:574  Earth'structure  ->  Earthsrtr
+  McshOgm000005:135  SystMolsOgsm'attStructure  ->  SystMolsOgsmsrtr
+  McshOgm000005:499  BodyHumn'product'structure  ->  BodyHumn'productsrtr
+  McshOgm000005:3511  bloodHumn'structure  ->  BloodHumnsrtr
+  McshOgm000006:774  MolProtein'attStructure  ->  MolProteinsrtr
+  McshOgm000007:472  cellOgsm'structure  ->  CellOgsmsrtr
+  McshOgm000007:2227  neuronOgsm'structure  ->  NeuronOgsmsrtr
+  McshOgm000008:155  ogmCellNo'structure  ->  OgmCellNosrtr
+  McshOgm000008:434  ogmVirus'structure  ->  OgmVirussrtr
+  McshOgm000008:869  virusHumn'structure  ->  VirusHumnsrtr
+  McshStn000003:58  StfrOgsm'structure  ->  StfrOgsmsrtr
+  McshStn000008:1112  Ogzn'structure  ->  Ogznsrtr
+  McshStn000009:7062  society'structure  ->  Societysrtr
+  McshStn000011:456  Wrkr'structure  ->  Wrkrsrtr
+  McshStn000012:3013  SoctEcon'structure  ->  SoctEconsrtr
+  McshStn000013:163  project'structure  ->  Projectsrtr
+  McshStn000017:174  ogznStrd'structure  ->  OgznStrdsrtr
+  McshStn000020:17896  SoctEuzz'structure  ->  SoctEuzzsrtr
+  McshStn000022:425  house'structure  ->  Housesrtr
+  McshStn000023:21546  scmo/structure  ->  Scmosrtr
+  McshStn000024:79  StndRfc'structure  ->  StndRfcsrtr
+  McshStnlaw000003:915  lawEus'structure  ->  LawEussrtr
+  McshTchInf000003:680  techCmpr'attStructure  ->  TechCmprsrtr
+  McshTchInf000004:59  techFin'structure  ->  TechFinsrtr
+  McshTchInf000006:816  Pgmgalgo'structure  ->  Pgmgalgosrtr
+  McshTchInf000007:422  Cnknmngr'structure  ->  Cnknmngrsrtr
+  McshTchInf000013:1343  Jselapp'structure  ->  Jselappsrtr
+  McshTchInf000015:6310  DeContract'attStructure  ->  DeContractsrtr
+  McshTchInf000016:13331  Dashproposal'structure  ->  Dashproposalsrtr
+  McshTchInf000018:6615  DappEth'structure  ->  DappEthsrtr
+  McshTchInf000018:7539  structure-of-Solxalgo  ->  Solxalgosrtr
+  McshTchInf000028:1408  DnDiem_state'structure  ->  DnDiem_statesrtr
+  McshTchInf000039:14640  Wlfmlsys'structure  ->  Wlfmlsyssrtr
+  McshTchInf000039:15174  Wlfmlen'structure  ->  Wlfmlensrtr
+  McshTchPrgm000002:195  Cmprprgm'structure  ->  Cmprprgmsrtr
+  McshTch000002:242  tech'structure  ->  Techsrtr
+  McshTch000003:74  machine'structure  ->  Machinesrtr
