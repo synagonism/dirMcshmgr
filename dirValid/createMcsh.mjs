@@ -68,7 +68,7 @@
  *   --nest: the-obvious Hvrw08 nesting-errors, same files as --headgap: a-whole
  *   whose parts from X on have its OWN level gets its </section> moved before X.
  *
- *   --mainname: the-fix of MvrlMnnm01: a-main-name (after "!⇒") with "-" gets "_",
+ *   --mainname: the-fix of MvrlMmn01: a-main-name (after "!⇒") with "-" gets "_",
  *   in every "!⇒X" and in its main-name-line; the-old form stays as a-synonym X!⇒X'.
  *
  *   --srtr: the-fix of MvrlId13: a-structure-concept's id gets the-suffix srtr
@@ -94,10 +94,11 @@ import { rHeadArticle } from './structuralHitp.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-14-0.2026-10-28: MvrlMnnm01 renamed MvrlMmn01',
     'createMcsh.mjs.0-13-0.2026-10-24: --fix writes NO backup (git is the-backup)',
     'createMcsh.mjs.0-12-0.2026-10-24: --srtr no longer touches json index files',
     'createMcsh.mjs.0-11-0.2026-10-24: --srtr, the-fix of MvrlId13 srtr_structure_suffix',
-    'createMcsh.mjs.0-10-0.2026-10-24: --mainname, the-fix of MvrlMnnm01 no-hyphen',
+    'createMcsh.mjs.0-10-0.2026-10-24: --mainname, the-fix of MvrlMmn01 no-hyphen',
     'createMcsh.mjs.0-9-0.2026-10-16: createMcsh.txt per kind, notes indented for folding',
     'createMcsh.mjs.0-8-0.2026-10-15: --nest, the-obvious Hvrw08 nesting errors',
     'createMcsh.mjs.0-7-0.2026-10-15: --headgap exempts law articles, law files included',
@@ -121,7 +122,7 @@ const
     RENAME:   'the-name::-para id renamed to idName',
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
-    MAINNAME: 'a-name-line whose main-name got underscores (MvrlMnnm01)',
+    MAINNAME: 'a-name-line whose main-name got underscores (MvrlMmn01)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
     IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrlId13), with its own ids',
     LINK:     'a-line whose ids or links to a-renamed id changed'
@@ -784,7 +785,7 @@ function fPlanNest(sRawIn, sNameShortIn, oFileHitpIn) {
 }
 
 /**
- * DOING: --mainname mode: the-fix of MvrlMnnm01 no-hyphen. A-main-name X (the-text
+ * DOING: --mainname mode: the-fix of MvrlMmn01 no-hyphen. A-main-name X (the-text
  *   after "!⇒" in a-name-line) with "-" becomes X' with "_", as the-English names
  *   were done (e-mail!⇒e_mail):
  *   - every "!⇒X" of its McsLago, in every file → "!⇒X'",
@@ -980,7 +981,7 @@ async function fMain() {
     console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
-    console.log('  --mainname   MvrlMnnm01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
+    console.log('  --mainname   MvrlMmn01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
     console.log('  --srtr       MvrlId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt');

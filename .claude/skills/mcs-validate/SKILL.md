@@ -22,7 +22,12 @@ Mcsh rules (`structuralMcsh.js`, Mcsh* files only):
 | Mvrw03 | concept-section missing name:: |
 | Mvrw04 | name:: has zero valid Mcsh* entries |
 | Mvrw06 | date not in {YYYY-MM-DD} format |
-| MvrlMnnm01 | (error) main-name, the text after `!⇒`, has a hyphen: use underscores |
+| MvrlMmn01 | (error) main-name, the text after `!⇒`, has a hyphen: use underscores |
+| MvrlMmn02 | (warning) main-name of a "evoluting of X" section is `Xevolg`, capital first, no apostrophe |
+| MvrlMmn03 | (warning) main-name of a "evaluation/evaluating of X" section is `Xevalg`, capital first, no apostrophe |
+| MvrlMmn04 | (warning) main-name of a "DOING of X" section is `Xdoing`, capital first, no apostrophe |
+| MvrlMmn05 | (warning) main-name of a "info-resource of X" section is `Xinfrsc`, capital first, no apostrophe |
+| MvrlMmn06 | (warning) main-name of a "structure of X" section is `Xsrtr`, capital first, no apostrophe |
 
 Hitp rules (`structuralHitp.js`, every .last.html file):
 
@@ -85,7 +90,7 @@ the backup) or copy the affected files before running it.
 | Mvrw01 (no description::) | `node dirValid/createMcsh.mjs <dir> --missing` |
 | Hvrw07 (obvious heading gaps) | `node dirValid/createMcsh.mjs <dir> --headgap` |
 | Hvrw08 (obvious nesting errors) | `node dirValid/createMcsh.mjs <dir> --nest` |
-| MvrlMnnm01 (main-name with "-") | `node dirValid/createMcsh.mjs <dir> --mainname` (keeps the old form as synonym `X!⇒X_`) |
+| MvrlMmn01 (main-name with "-") | `node dirValid/createMcsh.mjs <dir> --mainname` (keeps the old form as synonym `X!⇒X_`) |
 | idOverview description without creation date | `--overview` |
 | any description without creation date | `--undated` |
 | idOverview name:: para without id idName | `--nameid` |
