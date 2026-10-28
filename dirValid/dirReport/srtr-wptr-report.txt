@@ -1,0 +1,58 @@
+STRUCTURE-of-X sections vs WHOLE-PART-TREE of X
+rule: when a concept has both a structure section (Xsrtr) and a whole-part-tree,
+the structure section must be nested INSIDE the WHOLE-PART-TREE of X section.
+basename:line = the 'structure of X' heading; wptr: = line of 'WHOLE-PART-TREE of X' to move it into.
+
+=== MOVE-STRUCTURE-INTO-WPTREE (0) — structure section is a sibling; nest it inside the wptree
+
+=== ALREADY-INSIDE (49) — model cases, no action
+  McshNtr000015:618  structure of Earth
+  McshHmn000003:346  structure of HumnSngu
+  McshLag000013:485  structure of Infrsc
+  McshEdu000003:241  structure of Mathgrph
+  McshCor000002:5362  structure of Mcs
+  McshCor000015:311  structure of McshExml
+  McshOgm000006:990  structure of MolProtein
+  McshNtr000003:369  structure of MtrlAtom
+  McshNtr000004:208  structure of MtrlMol
+  McshNtr000005:319  structure of MtrlSysMols
+  Mcsh000000:302  structure of Mws
+  McshHlth000003:3806  structure of OganBrain
+  McshStn000008:1243  structure of Ogzn
+  McshEdu000005:5600  structure of SciMath
+  McshStn000012:3140  structure of SoctEcon
+  McshStn000020:18059  structure of SoctEuzz
+  McshStn000003:96  structure of StfrOgsm
+  McshStn000024:118  structure of StndRfc
+  McshOgm000005:173  structure of SystMolsOgsm
+  McshHlth000019:5818  structure of SystNervous
+  McshHlth000002:1296  structure of SystOgans
+  McshHlth000002:12444  structure of SystReproductive
+  McshStn000011:1325  structure of Wrkr
+  McshOgm000005:3725  structure of bloodHumn
+  McshHlth000002:15793  structure of bodyHumn
+  McshHlth000004:1361  structure of cell
+  McshHlth000019:4972  structure of cellNeuron
+  McshOgm000007:1612  structure of cellOgsm
+  McshCor000003:4979  structure of entity
+  McshStn000022:462  structure of house
+  McshHmn000002:4703  structure of human
+  McshLag000014:177  structure of irBook
+  McshLag000019:134  structure of irPaper
+  McshLag000004:200  structure of lagoCmnr
+  McshStnlaw000003:1078  structure of lawEus
+  McshTch000003:112  structure of machine
+  McshNtr000002:483  structure of material
+  McshCor000012:437  structure of model
+  McshOgm000008:191  structure of ogmCellNo
+  McshStn000017:213  structure of ogznStrd
+  McshHlth000002:1762  structure of organ
+  McshStn000013:248  structure of project
+  McshStn000023:21602  structure of scmo
+  McshStn000009:8360  structure of society
+  McshCor000011:367  structure of system
+  McshTch000002:512  structure of tech
+  McshTchInf000003:854  structure of techCmpr
+  McshTchInf000004:97  structure of techFin
+  McshCor000008:530  structure of whole
+

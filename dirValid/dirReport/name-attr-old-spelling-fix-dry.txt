@@ -1,0 +1,68 @@
+name-attr-old-spelling-fix-dry {2026-10-28}
+attribute old spellings "X'a-b!⇒X'a_b,": removed when the same name:: has a line for X'a_b
+
+=== SUMMARY
+  removed 57 in 25 files
+  kept 0 (no X'a_b line in the same paragraph)
+
+=== REMOVED (57)
+  McshCor000005:2603  causality'relation-to-correlation!⇒causality'relation_to_correlation
+  McshHlth000002:1072  body'lower-leg!⇒body'lower_leg
+  McshHlth000002:3510  HmbdTesticle'substance-produced!⇒HmbdTesticle'substance_produced
+  McshHlth000002:3791  HmbdBreast'secretory-product!⇒HmbdBreast'secretory_product
+  McshHlth000002:5665  nutrientIron'food-source!⇒nutrientIron'food_source
+  McshHlth000002:6078  nutrientMagnesium'food-source!⇒nutrientMagnesium'food_source
+  McshHlth000013:11483  foodPepper'antidote-to-burn!⇒foodPepper'antidote_to_burn
+  McshLag000027:7461  Ella_rsrc'meliki-poetry!⇒Ella_rsrc'meliki_poetry
+  McshLag000027:7594  Ella_rsrc'satirical-drama!⇒Ella_rsrc'satirical_drama
+  McshOgm000005:2065  homoneMelatonine'node-producing!⇒homoneMelatonine'node_producing
+  McshOgm000007:608  cellOgsm'att007-protein-synthesis!⇒cellOgsm'att007_protein_synthesis
+  McshStn000017:3948  W3c'candidate-recommendation!⇒W3c'candidate_recommendation
+  McshStn000020:3646  EuoErc'project-funde!⇒EuoErc'project_funde
+  McshStn000020:3735  EuoErc'vice-president!⇒EuoErc'vice_president
+  McshStn000030:439  GrcaAdmn'governance-organization!⇒GrcaAdmn'governance_organization
+  McshTchInf000006:122  Pgmg_lago'archo-code!⇒Pgmg_lago'archo_code
+  McshTchInf000011:5079  Jsbr_lago'binary-doc!⇒Jsbr_lago'binary_doc
+  McshTchInf000014:813  Wasm-function'index-space!⇒Wasm_function'index_space
+  McshTchInf000014:1149  Wasm-local'index-space!⇒Wasm_local'index_space
+  McshTchInf000014:1418  Wasm-memory'index-space!⇒Wasm_memory'index_space
+  McshTchInf000014:4564  Wasm_lago'magic_cookie-of-header!⇒Wasm_lago'magic_cookie_of_header
+  McshTchInf000014:4578  Wasm_lago'version-of-header!⇒Wasm_lago'version_of_header
+  McshTchInf000015:6412  Dconctract'info-resource!⇒Dconctract'info_resource
+  McshTchInf000015:8454  Lykke'blockchain-explorer!⇒Lykke'blockchain_explorer
+  McshTchInf000015:10657  netAlgo'double-counting-of-assets-prevention!⇒netAlgo'double_counting_of_assets_prevention
+  McshTchInf000016:6483  Dae-net'white-paper!⇒Dae_net'white_paper
+  McshTchInf000019:1182  OgznDao'relation-to-cooperative!⇒OgznDao'relation_to_cooperative
+  McshTchInf000019:3917  DAOstack-proposal'confidence-score!⇒DAOstack_proposal'confidence_score
+  McshTchInf000019:3918  DAOstack_proposal'confidence-score!⇒DAOstack_proposal'confidence_score
+  McshTchInf000019:4001  DAOstack-proposal'boosting-threshold!⇒DAOstack_proposal'boosting_threshold
+  McshTchInf000019:4016  DAOstack-proposal'pending-period!⇒DAOstack_proposal'pending_period
+  McshTchInf000019:4719  eosDAC-custodian'staked-EOSDAC!⇒eosDAC_custodian'staked_EOSDAC
+  McshTchInf000019:4720  eosDAC_custodian'staked-EOSDAC!⇒eosDAC_custodian'staked_EOSDAC
+  McshTchInf000021:1050  Agnteos-BP'unpaid-block!⇒Agnteos_BP'unpaid_block
+  McshTchInf000021:1820  Agnteos-Dasset'exchange-organization!⇒Agnteos_Dasset'exchange_organization
+  McshTchInf000021:2206  Agnteos-voting'decay-of-vote!⇒Agnteos_voting'decay_of_vote
+  McshTchInf000022:762  Faircoin-net'CVN'private-key!⇒Faircoin_net'CVN'private_key
+  McshTchInf000022:1387  Faircoin-net'FairCoop'local-node!⇒Faircoin_net'FairCoop'local_node
+  McshTchInf000024:3697  Steem-net'cost-of-blogging!⇒Steem_net'cost_of_blogging
+  McshTchInf000025:179  Everipedia'article'main-image!⇒Everipedia'article'main_image
+  McshTchInf000025:211  Everipedia'article'internal-infobox!⇒Everipedia'article'internal_infobox
+  McshTchInf000026:415  Blockstack-net'ID'secret-recovery-code!⇒Blockstack_net'ID'secret_recovery_code
+  McshTchInf000026:432  Blockstack-net'ID'magic-recovery-code!⇒Blockstack_net'ID'magic_recovery_code
+  McshTchInf000028:1547  DnDiem-tx'execution-result!⇒DnDiem_tx'execution_result
+  McshTchInf000028:1548  DnDiem_tx'execution-result!⇒DnDiem_tx'execution_result
+  McshTchInf000028:2462  DnDiem-account'Move-resource!⇒DnDiem_account'Move_resource
+  McshTchInf000028:2463  DnDiem_account'Move-resource!⇒DnDiem_account'Move_resource
+  McshTchInf000028:2477  DnDiem-account'Move-module!⇒DnDiem_account'Move_module
+  McshTchInf000028:2478  DnDiem_account'Move-module!⇒DnDiem_account'Move_module
+  McshTchInf000028:2493  DnDiem-account'relation-to--human-entity!⇒DnDiem_account'relation_to__human_entity
+  McshTchInf000028:2494  DnDiem_account'relation-to--human-entity!⇒DnDiem_account'relation_to__human_entity
+  McshTchInf000031:2421  Cppz_lago_library'relation-to-header-files!⇒Cppz_lago_library'relation_to_header_files
+  McshTchInf000036:4351  TechDplr'relation-to-Deep-Neural-Network!⇒TechDplr'relation_to_Deep_Neural_Network
+  McshTchInf000038:690  klmrLlm'relation-to-KRS!⇒klmrLlm'relation_to_KRS
+  McshTchInf000041:545  Vscode'GitHub-Copilot!⇒Vscode'GitHub_Copilot
+  McshTchInf000041:896  Vscode'inline-chat!⇒Vscode'inline_chat
+  McshTchInf000041:957  Vscode'smart-action!⇒Vscode'smart_action
+
+=== KEPT (0) — no X'a_b line in the same paragraph
+

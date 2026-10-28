@@ -1,9 +1,0 @@
-name-attr-dash-keep-removed-dry {2026-10-28}
-attribute formal-name "N," directly followed by its old spelling "A!⇒N," (A with "-", N with "_"): second line removed
-
-=== SUMMARY
-  removed 2 lines in 2 files
-
-=== REMOVED (2)
-  McshTchInf000030:3133  Rust_lago_crate'main-module!⇒Rust_lago_crate'main_module
-  McshTchInf000031:2425  Cppz_lago_library'relation-to-header-files!⇒Cppz_lago_library'relation_to_header_files

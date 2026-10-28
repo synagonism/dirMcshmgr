@@ -1115,6 +1115,7 @@ let fContainersInsert = function () {
           if (sTxt.indexOf('!⇒') > 0) {
             // found main-name, search for this
             oEltTabSearchIpt.value = sTxt.substring(sTxt.indexOf('!⇒') + 2)
+            oEltTabSearchSlct.options[0].selected = true // main-name is English
             fSearchSuggest()
           } else {
             // go to name's address
@@ -1134,6 +1135,7 @@ let fContainersInsert = function () {
             if (sTxt.indexOf('!⇒') > 0) {
               // found main-name, search for this
               oEltTabSearchIpt.value = sTxt.substring(sTxt.indexOf('!⇒') + 2)
+              oEltTabSearchSlct.options[0].selected = true // main-name is English
               fSearchSuggest()
             } else {
               // go to name's address
@@ -2473,6 +2475,7 @@ async function fSearchSuggest(sIdxfileIn) {
           // don't link, set main-name as search-name, search for this.
           oEvtIn.preventDefault()
           oEltTabSearchIpt.value = sTxt.substring(sTxt.indexOf('!⇒') + 2)
+          oEltTabSearchSlct.options[0].selected = true // main-name is English
           fSearchSuggest()
         })
       } else {

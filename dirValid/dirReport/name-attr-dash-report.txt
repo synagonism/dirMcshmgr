@@ -1,0 +1,2185 @@
+name-attr-dash-report {2026-10-28}
+attribute formal-names X'a-b: a hyphen after the first ' (rule: "-" -> "_")
+scanned 297 Mcsh*.last.html (subfolders included, dirUcd excluded); names with spaces skipped; BY-HEAD / BY-FILE count only the first 6 categories
+total 2132
+
+=== SUMMARY
+  NAME                     0  X'a-b as a name line (X'a-b, / X'a-b!=I / X'a-b!@file)
+  ALIAS                    0  X'a-b!⇒T, pointing to another name
+  OLD-SPELLING             0  X'a-b!⇒X'a_b, old spelling of an "_" name, not directly under it
+  OTHER                    1  X'a-b with !~ or other notation after the name
+  REF                      0  "* X'a-b!@file#id" references
+  LIST                     1  "* X'a-b," list items without McshEngl.
+  TREE-SUFFIX              0  X'generic-specific-tree, X'whole-part-tree, ... (fixed tree names)
+  OTHER-CHARS              1258  with ( ) | / : ? or other signs (Celex_nbr'04_docnbr-(4-digits))
+  APOSTROPHE               263  ' inside a word, not an attribute (Bowman's-capsule, I-don't-understand)
+  DATE                     250  {X'date}-... notation
+  NON-ENGLISH              359  non-English letters (Greek word tables, ...)
+
+=== BY-HEAD top 40 of 2 — X before the '
+  StndRfc.6305-I' 1
+  INSTITUTION' 1
+
+=== BY-FILE (2)
+  McshStn000024 1
+  McshStnlaw000003 1
+
+=== NAME (0) — X'a-b as a name line (X'a-b, / X'a-b!=I / X'a-b!@file)
+
+
+=== ALIAS (0) — X'a-b!⇒T, pointing to another name
+
+
+=== OLD-SPELLING (0) — X'a-b!⇒X'a_b, old spelling of an "_" name, not directly under it
+
+
+=== OTHER (1) — X'a-b with !~ or other notation after the name
+  McshStn000024:53218  StndRfc.6305-I'm-Being-Attacked-by-PRISONER.IANA.ORG  !
+
+=== REF (0) — "* X'a-b!@file#id" references
+
+
+=== LIST (1) — "* X'a-b," list items without McshEngl.
+  McshStnlaw000003:2108  INSTITUTION'S-INTERNAL-REGULATION
+
+=== TREE-SUFFIX (0) — X'generic-specific-tree, X'whole-part-tree, ... (fixed tree names)
+
+
+=== OTHER-CHARS (1258) — with ( ) | / : ? or other signs (Celex_nbr'04_docnbr-(4-digits))
+  McshCor000002:321  attribute(')--Mcs-name-notation  !⇒McsnotnAttr
+  McshCor000003:3778  entity'millennium.Bce1000-{Bce1000..Bce0001}  
+  McshCor000003:3812  Enttevlg'century.Bce0100-{Bce0100..Bce0001}  
+  McshCor000003:3848  Enttevlg'century.Bce0200-{Bce0200..Bce0101}  
+  McshCor000003:3885  Enttevlg'century.Bce0300-{Bce0300..Bce0201}  
+  McshCor000003:3922  Enttevlg'century.Bce0400-{Bce0400..Bce0301}  
+  McshCor000003:3962  Enttevlg'century.Bce0500-{Bce0500..Bce0401}  
+  McshCor000003:4004  Enttevlg'century.Bce0600-{Bce0600..Bce0501}  
+  McshCor000003:4043  Enttevlg'century.Bce0700-{Bce0700..Bce0601}  
+  McshCor000003:4082  Enttevlg'century.Bce0800-{Bce0800..Bce0701}  
+  McshCor000003:4117  Enttevlg'century.Bce0900-{Bce0900..Bce0801}  
+  McshCor000003:4153  Enttevlg'century.Bce1000-{Bce1000..Bce0901}  
+  McshCor000003:4198  entity'millennium.Bce2000-{Bce2000..Bce1001}  
+  McshCor000003:4241  Enttevlg'century.Bce1100-{Bce1100..Bce1001}  
+  McshCor000003:4275  Enttevlg'century.Bce1200-{Bce1200..Bce1101}  
+  McshCor000003:4327  entity'millennium.Bce3000-{Bce3000..Bce2001}  
+  McshCor000003:4379  entity'millennium.Bce4000-{Bce4000..Bce3001}  
+  McshCor000003:4426  entity'millennium.Bce5000-{Bce5000..Bce4001}  
+  McshCor000003:4465  entity'millennium.Bce6000-{Bce6000..Bce5001}  
+  McshCor000003:4509  entity'millennium.Bce7000-{Bce7000..Bce6001}  
+  McshCor000003:4556  entity'millennium.Bce8000-{Bce8000..Bce7001}  
+  McshCor000003:4593  entity'millennium.Bce9000-{Bce9000..Bce8001}  
+  McshCor000003:4630  entity'millennium.Bce10000-{Bce10000..Bce9001}  
+  McshCor000003:4664  entity'millennium.Bce11000-{Bce11000..Bce10001}  
+  McshCor000003:4712  entity'millennium.Bce12000-{Bce12000..Bce11001}  
+  McshCor000006:152  time'notation-{}  !⇒McsnotnTime
+  McshCor000006:3450  day'PM-(post-meridies=after-midday)  !⇒pm//day
+  McshCor000006:3539  morning//day'early-morning  !⇒early_morning
+  McshCor000006:3562  morning//day'late-morning  !⇒before_afternoon
+  McshCor000011:2470  SystGraph'vertex-(node)  
+  McshCor000011:2486  SystGraph'edge-(node-relation)  
+  McshEdu000003:292  grphBipt'(bipartite-graph  !⇒grphBipt
+  McshEdu000010:727  SciName'ISO/TC-37  
+  McshEdu000010:728  SciName'iso/tc-37  
+  McshHlth000002:5238  Hmbdnutrient'rcmdtn'dietary-reference-intake-(DRI)-system  
+  McshHlth000002:5240  Hmbdnutrient'dietary-reference-intake-(DRI)-system-003-6  
+  McshHlth000002:5260  Hmbdnutrient'rcmdtn'estimated-average-requirements-(EAR)  
+  McshHlth000002:5262  Hmbdnutrient'estimated-average-requirements-(EAR)-003-1  
+  McshHlth000002:5265  Hmbdnutrient'estimated-average-requirements-(EAR)  
+  McshHlth000002:5281  Hmbdnutrient'rcmdtn'recommended-Dietary-allowances-(RDA)  
+  McshHlth000002:5283  Hmbdnutrient'recommended-Dietary-allowances-(RDA)-003-2  
+  McshHlth000002:5289  Hmbdnutrient'recommended-Dietary-allowances-(RDA)  
+  McshHlth000002:5305  Hmbdnutrient'rcmdtn'adequate-intake-(AI)  
+  McshHlth000002:5307  Hmbdnutrient'adequate-intake-(AI)-003-3  
+  McshHlth000002:5309  Hmbdnutrient'adequate-intake-(AI)  
+  McshHlth000002:5341  Hmbdnutrient'rcmdtn'acceptable-macronutrient-distribution-ranges-(AMDR)  
+  McshHlth000002:5342  Hmbdnutrient'acceptable-macronutrient-distribution-ranges-(AMDR)-003-5  
+  McshHlth000002:5373  Hmbdnutrient'rcmdtn'reference-daily-intake-(RDI)  
+  McshHlth000002:5375  Hmbdnutrient'reference-daily-intake-(RDI)-003-7  
+  McshHlth000002:5378  Hmbdnutrient'reference-daily-intake-(RDI)  
+  McshHlth000002:5391  Hmbdnutrient'rcmdtn'daily-value-(DV)  
+  McshHlth000002:5393  Hmbdnutrient'daily-value-(DV)-003-8  
+  McshHlth000002:5396  Hmbdnutrient'daily-value-(DV)  
+  McshHlth000002:5528  bodyHumn'sulfur-S-(0.3%)  
+  McshHlth000002:5531  bodyHumn'trace-atom.sulfur-S-(0.3%)  
+  McshHlth000002:5552  bodyHumn'chlorine-Cl-(0.2%)  
+  McshHlth000002:5556  bodyHumn'trace-atom.chlorine-Cl-(0.2%)  
+  McshHlth000002:5933  bodyHumn'calcium-Ca-(1.5%)  
+  McshHlth000002:5937  bodyHumn'mineral.calcium-Ca-(1.5%)  
+  McshHlth000002:5960  bodyHumn'phosphorus-P-(1%)  
+  McshHlth000002:5964  bodyHumn'mineral.phosphorus-P-(1%)  
+  McshHlth000002:5999  bodyHumn'potassium-K-(0.4%)  
+  McshHlth000002:6003  bodyHumn'mineral.potassium-K-(0.4%)  
+  McshHlth000002:6026  bodyHumn'sodium-Na-(0.2%)  
+  McshHlth000002:6030  bodyHumn'mineral.sodium-Na-(0.2%)  
+  McshHlth000002:6051  bodyHumn'magnesium-Mg-(0.1%)  
+  McshHlth000002:6055  bodyHumn'mineral.magnesium-Mg-(0.1%)  
+  McshHmn000002:607  TIN'(taxpayer-identification-number)  
+  McshLag000006:2930  Unicode'database-(UCD)  !⇒Uncddb
+  McshLag000007:885  Hmnm_lago'01_input1-(mind-view)  !⇒HmnmviewMind
+  McshLag000007:956  Hmnm_lago'02_input2-(senso-mind--view)  !⇒HmnmviewMindSenso
+  McshLag000007:1043  Hmnm_lago'03_input3-(semu-view)  !⇒HmnmviewSemu
+  McshLag000007:16266  Hmnm_lago'04_output-(logo-view)  !⇒HmnmviewLogo
+  McshLag000007:18613  HmnmviewLogo'name-(decoding-unit)  !⇒Hmnmname
+  McshLag000007:28872  HmnmviewLogo'Verbargt.with-what-(instrument)  !⇒Hmnm_with_VA
+  McshLag000008:83  Alfa_lago'output-(text-view)  !⇒AlfaviewText
+  McshLag000008:655  AlfaviewText'mapping-unit-(text-name)  !⇒Alfa_lago_name
+  McshLag000009:1204  Spch_lago'a-(26-central-open)  
+  McshLag000009:1365  Spch_lago'e-(15-front-mid)  
+  McshLag000009:1471  Spch_lago'i-(14-front-closed)  
+  McshLag000009:4094  speech'mapping-unit-(speech-name)  !⇒Spch_lago_name
+  McshLag000010:109  Sngu_lagu'input1-(mind-view)  
+  McshLag000010:128  Sngu_lagu'input3-(semu-view)  !⇒SnguviewSemu
+  McshLag000010:4555  SnguviewLogo'name-(decoding-unit)  !⇒Snguname
+  McshLag000010:5861  SnguviewLogo'title-sentence-system-(section)  !⇒Sngu_sect
+  McshLag000011:88  Engl_lago'input1-(mind-view)  !⇒Engl_mind_view
+  McshLag000011:110  Engl_lago'input3-(semu-view)  !⇒EnglviewSemu
+  McshLag000011:5979  EnglviewLogo'name-(decoding-unit)  !⇒Englname
+  McshLag000012:75  Espo_lago'input3-(semu-view)  !⇒EspoviewSemu
+  McshLag000012:1869  EspoviewLogo'name-(decoding-unit)  !⇒Esponame
+  McshLag000017:373  lagoIa'(Interlingua-(International-Auxiliary-Language-Association)).Iso1  
+  McshLag000017:374  lago2.Ia'(Interlingua-(International-Auxiliary-Language-Association)).Iso1  
+  McshLag000017:571  lagoTo'(Tonga-(Tonga-Islands)).Iso1  
+  McshLag000017:572  lago2.To'(Tonga-(Tonga-Islands)).Iso1  
+  McshLag000017:975  lagoAib'(Ainu-(China)-L).Iso3  
+  McshLag000017:976  lago3.Aib'(Ainu-(China)-L).Iso3  
+  McshLag000017:999  lagoAin'(Ainu-(Japan)-L).Iso3  
+  McshLag000017:1000  lago3.Ain'(Ainu-(Japan)-L).Iso3  
+  McshLag000017:1017  lagoAja'(Aja-(South-Sudan)-L).Iso3  
+  McshLag000017:1018  lago3.Aja'(Aja-(South-Sudan)-L).Iso3  
+  McshLag000017:1019  lagoAjg'(Aja-(Benin)-L).Iso3  
+  McshLag000017:1020  lago3.Ajg'(Aja-(Benin)-L).Iso3  
+  McshLag000017:1153  lagoAmm'(Ama-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1154  lago3.Amm'(Ama-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1193  lagoAng'(Old-English-(ca.-450-1100)-H).Iso3  
+  McshLag000017:1194  lago3.Ang'(Old-English-(ca.-450-1100)-H).Iso3  
+  McshLag000017:1213  lagoAnq'(Jarawa-(India)-L).Iso3  
+  McshLag000017:1214  lago3.Anq'(Jarawa-(India)-L).Iso3  
+  McshLag000017:1263  lagoAot'(Atong-(India)-L).Iso3  
+  McshLag000017:1264  lago3.Aot'(Atong-(India)-L).Iso3  
+  McshLag000017:1343  lagoArc'(Official-Aramaic-(700-300-BCE)-A).Iso3  
+  McshLag000017:1344  lago3.Arc'(Official-Aramaic-(700-300-BCE)-A).Iso3  
+  McshLag000017:1369  lagoArr'(Karo-(Brazil)-L).Iso3  
+  McshLag000017:1370  lago3.Arr'(Karo-(Brazil)-L).Iso3  
+  McshLag000017:1385  lagoAsa'(Asu-(Tanzania)-L).Iso3  
+  McshLag000017:1386  lago3.Asa'(Asu-(Tanzania)-L).Iso3  
+  McshLag000017:1459  lagoAto'(Atong-(Cameroon)-L).Iso3  
+  McshLag000017:1460  lago3.Ato'(Atong-(Cameroon)-L).Iso3  
+  McshLag000017:1503  lagoAum'(Asu-(Nigeria)-L).Iso3  
+  McshLag000017:1504  lago3.Aum'(Asu-(Nigeria)-L).Iso3  
+  McshLag000017:1557  lagoAwb'(Awa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1558  lago3.Awb'(Awa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1599  lagoAxk'(Yaka-(Central-African-Republic)-L).Iso3  
+  McshLag000017:1600  lago3.Axk'(Yaka-(Central-African-Republic)-L).Iso3  
+  McshLag000017:1635  lagoAyq'(Ayi-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1636  lago3.Ayq'(Ayi-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1702  lagoBas'(Basa-(Cameroon)-L).Iso3  
+  McshLag000017:1703  lago3.Bas'(Basa-(Cameroon)-L).Iso3  
+  McshLag000017:1704  lagoBau'(Bada-(Nigeria)-L).Iso3  
+  McshLag000017:1705  lago3.Bau'(Bada-(Nigeria)-L).Iso3  
+  McshLag000017:1754  lagoBbu'(Kulung-(Nigeria)-L).Iso3  
+  McshLag000017:1755  lago3.Bbu'(Kulung-(Nigeria)-L).Iso3  
+  McshLag000017:1790  lagoBcn'(Bali-(Nigeria)-L).Iso3  
+  McshLag000017:1791  lago3.Bcn'(Bali-(Nigeria)-L).Iso3  
+  McshLag000017:1794  lagoBcp'(Bali-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:1795  lago3.Bcp'(Bali-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:1828  lagoBdh'(Baka-(South-Sudan)-L).Iso3  
+  McshLag000017:1829  lago3.Bdh'(Baka-(South-Sudan)-L).Iso3  
+  McshLag000017:1832  lagoBdj'(Bai-(South-Sudan)-L).Iso3  
+  McshLag000017:1833  lago3.Bdj'(Bai-(South-Sudan)-L).Iso3  
+  McshLag000017:1890  lagoBem'(Bemba-(Zambia)-L).Iso3  
+  McshLag000017:1891  lago3.Bem'(Bemba-(Zambia)-L).Iso3  
+  McshLag000017:1912  lagoBey'(Beli-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1913  lago3.Bey'(Beli-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:1914  lagoBez'(Bena-(Tanzania)-L).Iso3  
+  McshLag000017:1915  lago3.Bez'(Bena-(Tanzania)-L).Iso3  
+  McshLag000017:1986  lagoBgl'(Bo-(Laos)-L).Iso3  
+  McshLag000017:1987  lago3.Bgl'(Bo-(Laos)-L).Iso3  
+  McshLag000017:2062  lagoBhz'(Bada-(Indonesia)-L).Iso3  
+  McshLag000017:2063  lago3.Bhz'(Bada-(Indonesia)-L).Iso3  
+  McshLag000017:2104  lagoBiw'(Kol-(Cameroon)-L).Iso3  
+  McshLag000017:2105  lago3.Biw'(Kol-(Cameroon)-L).Iso3  
+  McshLag000017:2132  lagoBjl'(Bulu-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:2133  lago3.Bjl'(Bulu-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:2162  lagoBkc'(Baka-(Cameroon)-L).Iso3  
+  McshLag000017:2163  lago3.Bkc'(Baka-(Cameroon)-L).Iso3  
+  McshLag000017:2180  lagoBkm'(Kom-(Cameroon)-L).Iso3  
+  McshLag000017:2181  lago3.Bkm'(Kom-(Cameroon)-L).Iso3  
+  McshLag000017:2186  lagoBkp'(Boko-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:2187  lago3.Bkp'(Boko-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:2232  lagoBlm'(Beli-(South-Sudan)-L).Iso3  
+  McshLag000017:2233  lago3.Blm'(Beli-(South-Sudan)-L).Iso3  
+  McshLag000017:2284  lagoBmn'(Bina-(Papua-New-Guinea)-E).Iso3  
+  McshLag000017:2285  lago3.Bmn'(Bina-(Papua-New-Guinea)-E).Iso3  
+  McshLag000017:2314  lagoBnd'(Banda-(Indonesia)-L).Iso3  
+  McshLag000017:2315  lago3.Bnd'(Banda-(Indonesia)-L).Iso3  
+  McshLag000017:2402  lagoBoy'(Bodo-(Central-African-Republic)-L).Iso3  
+  McshLag000017:2403  lago3.Boy'(Bodo-(Central-African-Republic)-L).Iso3  
+  McshLag000017:2442  lagoBpw'(Bo-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:2443  lago3.Bpw'(Bo-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:2454  lagoBqc'(Boko-(Benin)-L).Iso3  
+  McshLag000017:2455  lago3.Bqc'(Boko-(Benin)-L).Iso3  
+  McshLag000017:2492  lagoBqw'(Buru-(Nigeria)-L).Iso3  
+  McshLag000017:2493  lago3.Bqw'(Buru-(Nigeria)-L).Iso3  
+  McshLag000017:2546  lagoBrx'(Bodo-(India)-L).Iso3  
+  McshLag000017:2547  lago3.Brx'(Bodo-(India)-L).Iso3  
+  McshLag000017:2602  lagoBtc'(Bati-(Cameroon)-L).Iso3  
+  McshLag000017:2603  lago3.Btc'(Bati-(Cameroon)-L).Iso3  
+  McshLag000017:2670  lagoBum'(Bulu-(Cameroon)-L).Iso3  
+  McshLag000017:2671  lago3.Bum'(Bulu-(Cameroon)-L).Iso3  
+  McshLag000017:2732  lagoBvt'(Bati-(Indonesia)-L).Iso3  
+  McshLag000017:2733  lago3.Bvt'(Bati-(Indonesia)-L).Iso3  
+  McshLag000017:2774  lagoBwo'(Boro-(Ethiopia)-L).Iso3  
+  McshLag000017:2775  lago3.Bwo'(Boro-(Ethiopia)-L).Iso3  
+  McshLag000017:2786  lagoBwu'(Buli-(Ghana)-L).Iso3  
+  McshLag000017:2787  lago3.Bwu'(Buli-(Ghana)-L).Iso3  
+  McshLag000017:2860  lagoByj'(Bina-(Nigeria)-L).Iso3  
+  McshLag000017:2861  lago3.Byj'(Bina-(Nigeria)-L).Iso3  
+  McshLag000017:2912  lagoBzl'(Boano-(Sulawesi)-L).Iso3  
+  McshLag000017:2913  lago3.Bzl'(Boano-(Sulawesi)-L).Iso3  
+  McshLag000017:2916  lagoBzn'(Boano-(Maluku)-L).Iso3  
+  McshLag000017:2917  lago3.Bzn'(Boano-(Maluku)-L).Iso3  
+  McshLag000017:2922  lagoBzq'(Buli-(Indonesia)-L).Iso3  
+  McshLag000017:2923  lago3.Bzq'(Buli-(Indonesia)-L).Iso3  
+  McshLag000017:2934  lagoBzw'(Basa-(Nigeria)-L).Iso3  
+  McshLag000017:2935  lago3.Bzw'(Basa-(Nigeria)-L).Iso3  
+  McshLag000017:3131  lagoChm'(Mari-(Russia)-L).Iso3  
+  McshLag000017:3132  lago3.Chm'(Mari-(Russia)-L).Iso3  
+  McshLag000017:3692  lagoDdn'(Dendi-(Benin)-L).Iso3  
+  McshLag000017:3693  lago3.Ddn'(Dendi-(Benin)-L).Iso3  
+  McshLag000017:3722  lagoDen'(Slave-(Athapascan)-L).Iso3  
+  McshLag000017:3723  lago3.Den'(Slave-(Athapascan)-L).Iso3  
+  McshLag000017:3726  lagoDeq'(Dendi-(Central-African-Republic)-L).Iso3  
+  McshLag000017:3727  lago3.Deq'(Dendi-(Central-African-Republic)-L).Iso3  
+  McshLag000017:3760  lagoDgo'(Dogri-(individual-language)-L).Iso3  
+  McshLag000017:3761  lago3.Dgo'(Dogri-(individual-language)-L).Iso3  
+  McshLag000017:3796  lagoDhw'(Dhanwar-(Nepal)-L).Iso3  
+  McshLag000017:3797  lago3.Dhw'(Dhanwar-(Nepal)-L).Iso3  
+  McshLag000017:3830  lagoDiq'(Dimli-(individual-language)-L).Iso3  
+  McshLag000017:3831  lago3.Diq'(Dimli-(individual-language)-L).Iso3  
+  McshLag000017:3974  lagoDoi'(Dogri-(macrolanguage)-L).Iso3  
+  McshLag000017:3975  lago3.Doi'(Dogri-(macrolanguage)-L).Iso3  
+  McshLag000017:3980  lagoDon'(Toura-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:3981  lago3.Don'(Toura-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:4102  lagoDum'(Middle-Dutch-(ca.-1050-1350)-H).Iso3  
+  McshLag000017:4103  lago3.Dum'(Middle-Dutch-(ca.-1050-1350)-H).Iso3  
+  McshLag000017:4215  lagoEgy'(Egyptian-(Ancient)-A).Iso3  
+  McshLag000017:4216  lago3.Egy'(Egyptian-(Ancient)-A).Iso3  
+  McshLag000017:4237  lagoEkl'(Kol-(Bangladesh)-L).Iso3  
+  McshLag000017:4238  lago3.Ekl'(Kol-(Bangladesh)-L).Iso3  
+  McshLag000017:4309  lagoEnm'(Middle-English-(1100-1500)-H).Iso3  
+  McshLag000017:4310  lago3.Enm'(Middle-English-(1100-1500)-H).Iso3  
+  McshLag000017:4321  lagoEnv'(Enwan-(Edu-State)-L).Iso3  
+  McshLag000017:4322  lago3.Env'(Enwan-(Edu-State)-L).Iso3  
+  McshLag000017:4323  lagoEnw'(Enwan-(Akwa-Ibom-State)-L).Iso3  
+  McshLag000017:4324  lago3.Enw'(Enwan-(Akwa-Ibom-State)-L).Iso3  
+  McshLag000017:4387  lagoEtn'(Eton-(Vanuatu)-L).Iso3  
+  McshLag000017:4388  lago3.Etn'(Eton-(Vanuatu)-L).Iso3  
+  McshLag000017:4389  lagoEto'(Eton-(Cameroon)-L).Iso3  
+  McshLag000017:4390  lago3.Eto'(Eton-(Cameroon)-L).Iso3  
+  McshLag000017:4446  lagoFak'(Fang-(Cameroon)-L).Iso3  
+  McshLag000017:4447  lago3.Fak'(Fang-(Cameroon)-L).Iso3  
+  McshLag000017:4452  lagoFan'(Fang-(Equatorial-Guinea)-L).Iso3  
+  McshLag000017:4453  lago3.Fan'(Fang-(Equatorial-Guinea)-L).Iso3  
+  McshLag000017:4556  lagoFrm'(Middle-French-(ca.-1400-1600)-H).Iso3  
+  McshLag000017:4557  lago3.Frm'(Middle-French-(ca.-1400-1600)-H).Iso3  
+  McshLag000017:4558  lagoFro'(Old-French-(842-ca.-1400)-H).Iso3  
+  McshLag000017:4559  lago3.Fro'(Old-French-(842-ca.-1400)-H).Iso3  
+  McshLag000017:4671  lagoGba'(Gbaya-(Central-African-Republic)-L).Iso3  
+  McshLag000017:4672  lago3.Gba'(Gbaya-(Central-African-Republic)-L).Iso3  
+  McshLag000017:4875  lagoGim'(Gimi-(Eastern-Highlands)-L).Iso3  
+  McshLag000017:4876  lago3.Gim'(Gimi-(Eastern-Highlands)-L).Iso3  
+  McshLag000017:4879  lagoGip'(Gimi-(West-New-Britain)-L).Iso3  
+  McshLag000017:4880  lago3.Gip'(Gimi-(West-New-Britain)-L).Iso3  
+  McshLag000017:4913  lagoGkd'(Magi-(Madang-Province)-L).Iso3  
+  McshLag000017:4914  lago3.Gkd'(Magi-(Madang-Province)-L).Iso3  
+  McshLag000017:4949  lagoGlu'(Gula-(Chad)-L).Iso3  
+  McshLag000017:4950  lago3.Glu'(Gula-(Chad)-L).Iso3  
+  McshLag000017:4965  lagoGmh'(Middle-High-German-(ca.-1050-1500)-H).Iso3  
+  McshLag000017:4966  lago3.Gmh'(Middle-High-German-(ca.-1050-1500)-H).Iso3  
+  McshLag000017:5039  lagoGoh'(Old-High-German-(ca.-750-1050)-H).Iso3  
+  McshLag000017:5040  lago3.Goh'(Old-High-German-(ca.-750-1050)-H).Iso3  
+  McshLag000017:5085  lagoGqn'(Guana-(Brazil)-E).Iso3  
+  McshLag000017:5086  lago3.Gqn'(Guana-(Brazil)-E).Iso3  
+  McshLag000017:5095  lagoGrc'(Ancient-Greek-(to-1453)-H).Iso3  
+  McshLag000017:5096  lago3.Grc'(Ancient-Greek-(to-1453)-H).Iso3  
+  McshLag000017:5203  lagoGva'(Guana-(Paraguay)-L).Iso3  
+  McshLag000017:5204  lago3.Gva'(Guana-(Paraguay)-L).Iso3  
+  McshLag000017:5504  lagoHna'(Mina-(Cameroon)-L).Iso3  
+  McshLag000017:5505  lago3.Hna'(Mina-(Cameroon)-L).Iso3  
+  McshLag000017:5528  lagoHob'(Mari-(Madang-Province)-L).Iso3  
+  McshLag000017:5529  lago3.Hob'(Mari-(Madang-Province)-L).Iso3  
+  McshLag000017:5566  lagoHps'(Hawai'i-Sign-Language-(HSL)-L).Iso3  
+  McshLag000017:5567  lago3.Hps'(Hawai'i-Sign-Language-(HSL)-L).Iso3  
+  McshLag000017:5847  lagoIlm'(Iranun-(Malaysia)-L).Iso3  
+  McshLag000017:5848  lago3.Ilm'(Iranun-(Malaysia)-L).Iso3  
+  McshLag000017:5851  lagoIlp'(Iranun-(Philippines)-L).Iso3  
+  McshLag000017:5852  lago3.Ilp'(Iranun-(Philippines)-L).Iso3  
+  McshLag000017:5875  lagoIna'(Interlingua-(International-Auxiliary-Language-Association)-C).Iso3  
+  McshLag000017:5876  lago3.Ina'(Interlingua-(International-Auxiliary-Language-Association)-C).Iso3  
+  McshLag000017:5965  lagoIsu'(Isu-(Menchum-Division)-L).Iso3  
+  McshLag000017:5966  lago3.Isu'(Isu-(Menchum-Division)-L).Iso3  
+  McshLag000017:6023  lagoIyx'(Yaka-(Congo)-L).Iso3  
+  McshLag000017:6024  lago3.Iyx'(Yaka-(Congo)-L).Iso3  
+  McshLag000017:6156  lagoJim'(Jimi-(Cameroon)-L).Iso3  
+  McshLag000017:6157  lago3.Jim'(Jimi-(Cameroon)-L).Iso3  
+  McshLag000017:6182  lagoJkr'(Koro-(India)-L).Iso3  
+  McshLag000017:6183  lago3.Jkr'(Koro-(India)-L).Iso3  
+  McshLag000017:6198  lagoJmi'(Jimi-(Nigeria)-L).Iso3  
+  McshLag000017:6199  lago3.Jmi'(Jimi-(Nigeria)-L).Iso3  
+  McshLag000017:6206  lagoJms'(Mashi-(Nigeria)-L).Iso3  
+  McshLag000017:6207  lago3.Jms'(Mashi-(Nigeria)-L).Iso3  
+  McshLag000017:6323  lagoKah'(Kara-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6324  lago3.Kah'(Kara-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6333  lagoKam'(Kamba-(Kenya)-L).Iso3  
+  McshLag000017:6334  lago3.Kam'(Kamba-(Kenya)-L).Iso3  
+  McshLag000017:6383  lagoKbn'(Kare-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6384  lago3.Kbn'(Kare-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6399  lagoKbv'(Dera-(Indonesia)-L).Iso3  
+  McshLag000017:6400  lago3.Kbv'(Dera-(Indonesia)-L).Iso3  
+  McshLag000017:6431  lagoKcl'(Kela-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:6432  lago3.Kcl'(Kela-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:6433  lagoKcm'(Gula-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6434  lago3.Kcm'(Gula-(Central-African-Republic)-L).Iso3  
+  McshLag000017:6449  lagoKcu'(Kami-(Tanzania)-L).Iso3  
+  McshLag000017:6450  lago3.Kcu'(Kami-(Tanzania)-L).Iso3  
+  McshLag000017:6527  lagoKel'(Kela-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6528  lago3.Kel'(Kela-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6565  lagoKfe'(Kota-(India)-L).Iso3  
+  McshLag000017:6566  lago3.Kfe'(Kota-(India)-L).Iso3  
+  McshLag000017:6699  lagoKhy'(Kele-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6700  lago3.Khy'(Kele-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6743  lagoKiu'(Kirmanjki-(individual-language)-L).Iso3  
+  McshLag000017:6744  lago3.Kiu'(Kirmanjki-(individual-language)-L).Iso3  
+  McshLag000017:6863  lagoKle'(Kulung-(Nepal)-L).Iso3  
+  McshLag000017:6864  lago3.Kle'(Kulung-(Nepal)-L).Iso3  
+  McshLag000017:6875  lagoKlk'(Kono-(Nigeria)-L).Iso3  
+  McshLag000017:6876  lago3.Klk'(Kono-(Nigeria)-L).Iso3  
+  McshLag000017:6917  lagoKmf'(Kare-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:6918  lago3.Kmf'(Kare-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:6923  lagoKmi'(Kami-(Nigeria)-L).Iso3  
+  McshLag000017:6924  lago3.Kmi'(Kami-(Nigeria)-L).Iso3  
+  McshLag000017:6931  lagoKmm'(Kom-(India)-L).Iso3  
+  McshLag000017:6932  lago3.Kmm'(Kom-(India)-L).Iso3  
+  McshLag000017:6951  lagoKmw'(Komo-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6952  lago3.Kmw'(Komo-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:6959  lagoKna'(Dera-(Nigeria)-L).Iso3  
+  McshLag000017:6960  lago3.Kna'(Dera-(Nigeria)-L).Iso3  
+  McshLag000017:6983  lagoKnn'(Konkani-(individual-language)-L).Iso3  
+  McshLag000017:6984  lago3.Knn'(Konkani-(individual-language)-L).Iso3  
+  McshLag000017:6985  lagoKno'(Kono-(Sierra-Leone)-L).Iso3  
+  McshLag000017:6986  lago3.Kno'(Kono-(Sierra-Leone)-L).Iso3  
+  McshLag000017:6997  lagoKnu'(Kono-(Guinea)-L).Iso3  
+  McshLag000017:6998  lago3.Knu'(Kono-(Guinea)-L).Iso3  
+  McshLag000017:7025  lagoKok'(Konkani-(macrolanguage)-L).Iso3  
+  McshLag000017:7026  lago3.Kok'(Konkani-(macrolanguage)-L).Iso3  
+  McshLag000017:7027  lagoKol'(Kol-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7028  lago3.Kol'(Kol-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7037  lagoKoq'(Kota-(Gabon)-L).Iso3  
+  McshLag000017:7038  lago3.Koq'(Kota-(Gabon)-L).Iso3  
+  McshLag000017:7167  lagoKrf'(Koro-(Vanuatu)-L).Iso3  
+  McshLag000017:7168  lago3.Krf'(Koro-(Vanuatu)-L).Iso3  
+  McshLag000017:7185  lagoKrs'(Gbaya-(Sudan)-L).Iso3  
+  McshLag000017:7186  lago3.Krs'(Gbaya-(Sudan)-L).Iso3  
+  McshLag000017:7291  lagoKtu'(Kituba-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:7292  lago3.Ktu'(Kituba-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:7311  lagoKue'(Kuman-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7312  lago3.Kue'(Kuman-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7361  lagoKvd'(Kui-(Indonesia)-L).Iso3  
+  McshLag000017:7362  lago3.Kvd'(Kui-(Indonesia)-L).Iso3  
+  McshLag000017:7465  lagoKxh'(Karo-(Ethiopia)-L).Iso3  
+  McshLag000017:7466  lago3.Kxh'(Karo-(Ethiopia)-L).Iso3  
+  McshLag000017:7483  lagoKxr'(Koro-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7484  lago3.Kxr'(Koro-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7618  lagoLaj'(Lango-(Uganda)-L).Iso3  
+  McshLag000017:7619  lago3.Laj'(Lango-(Uganda)-L).Iso3  
+  McshLag000017:7620  lagoLak'(Laka-(Nigeria)-L).Iso3  
+  McshLag000017:7621  lago3.Lak'(Laka-(Nigeria)-L).Iso3  
+  McshLag000017:7630  lagoLap'(Laka-(Chad)-L).Iso3  
+  McshLag000017:7631  lago3.Lap'(Laka-(Chad)-L).Iso3  
+  McshLag000017:7636  lagoLas'(Lama-(Togo)-L).Iso3  
+  McshLag000017:7637  lago3.Las'(Lama-(Togo)-L).Iso3  
+  McshLag000017:7764  lagoLel'(Lele-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:7765  lago3.Lel'(Lele-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:7770  lagoLeo'(Leti-(Cameroon)-L).Iso3  
+  McshLag000017:7771  lago3.Leo'(Leti-(Cameroon)-L).Iso3  
+  McshLag000017:7782  lagoLeu'(Kara-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7783  lago3.Leu'(Kara-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7826  lagoLha'(Laha-(Viet-Nam)-L).Iso3  
+  McshLag000017:7827  lago3.Lha'(Laha-(Viet-Nam)-L).Iso3  
+  McshLag000017:7828  lagoLhh'(Laha-(Indonesia)-L).Iso3  
+  McshLag000017:7829  lago3.Lhh'(Laha-(Indonesia)-L).Iso3  
+  McshLag000017:7948  lagoLlc'(Lele-(Guinea)-L).Iso3  
+  McshLag000017:7949  lago3.Llc'(Lele-(Guinea)-L).Iso3  
+  McshLag000017:7952  lagoLle'(Lele-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7953  lago3.Lle'(Lele-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:7970  lagoLln'(Lele-(Chad)-L).Iso3  
+  McshLag000017:7971  lago3.Lln'(Lele-(Chad)-L).Iso3  
+  McshLag000017:8046  lagoLno'(Lango-(South-Sudan)-L).Iso3  
+  McshLag000017:8047  lago3.Lno'(Lango-(South-Sudan)-L).Iso3  
+  McshLag000017:8078  lagoLom'(Loma-(Liberia)-L).Iso3  
+  McshLag000017:8079  lago3.Lom'(Loma-(Liberia)-L).Iso3  
+  McshLag000017:8180  lagoLti'(Leti-(Indonesia)-L).Iso3  
+  McshLag000017:8181  lago3.Lti'(Leti-(Indonesia)-L).Iso3  
+  McshLag000017:8218  lagoLuo'(Luo-(Kenya-and-Tanzania)-L).Iso3  
+  McshLag000017:8219  lago3.Luo'(Luo-(Kenya-and-Tanzania)-L).Iso3  
+  McshLag000017:8234  lagoLuw'(Luo-(Cameroon)-L).Iso3  
+  McshLag000017:8235  lago3.Luw'(Luo-(Cameroon)-L).Iso3  
+  McshLag000017:8359  lagoMbo'(Mbo-(Cameroon)-L).Iso3  
+  McshLag000017:8360  lago3.Mbo'(Mbo-(Cameroon)-L).Iso3  
+  McshLag000017:8377  lagoMbx'(Mari-(East-Sepik-Province)-L).Iso3  
+  McshLag000017:8378  lago3.Mbx'(Mari-(East-Sepik-Province)-L).Iso3  
+  McshLag000017:8427  lagoMcw'(Mawa-(Chad)-L).Iso3  
+  McshLag000017:8428  lago3.Mcw'(Mawa-(Chad)-L).Iso3  
+  McshLag000017:8435  lagoMda'(Mada-(Nigeria)-L).Iso3  
+  McshLag000017:8436  lago3.Mda'(Mada-(Nigeria)-L).Iso3  
+  McshLag000017:8439  lagoMdc'(Male-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8440  lago3.Mdc'(Male-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8443  lagoMde'(Maba-(Chad)-L).Iso3  
+  McshLag000017:8444  lago3.Mde'(Maba-(Chad)-L).Iso3  
+  McshLag000017:8469  lagoMds'(Maria-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8470  lago3.Mds'(Maria-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8481  lagoMdy'(Male-(Ethiopia)-L).Iso3  
+  McshLag000017:8482  lago3.Mdy'(Male-(Ethiopia)-L).Iso3  
+  McshLag000017:8509  lagoMen'(Mende-(Sierra-Leone)-L).Iso3  
+  McshLag000017:8510  lago3.Men'(Mende-(Sierra-Leone)-L).Iso3  
+  McshLag000017:8585  lagoMga'(Middle-Irish-(900-1200)-H).Iso3  
+  McshLag000017:8586  lago3.Mga'(Middle-Irish-(900-1200)-H).Iso3  
+  McshLag000017:8621  lagoMgs'(Manda-(Tanzania)-L).Iso3  
+  McshLag000017:8622  lago3.Mgs'(Manda-(Tanzania)-L).Iso3  
+  McshLag000017:8635  lagoMha'(Manda-(India)-L).Iso3  
+  McshLag000017:8636  lago3.Mha'(Manda-(India)-L).Iso3  
+  McshLag000017:8661  lagoMho'(Mashi-(Zambia)-L).Iso3  
+  McshLag000017:8662  lago3.Mho'(Mashi-(Zambia)-L).Iso3  
+  McshLag000017:8669  lagoMhs'(Buru-(Indonesia)-L).Iso3  
+  McshLag000017:8670  lago3.Mhs'(Buru-(Indonesia)-L).Iso3  
+  McshLag000017:8681  lagoMhz'(Mor-(Mor-Islands)-L).Iso3  
+  McshLag000017:8682  lago3.Mhz'(Mor-(Mor-Islands)-L).Iso3  
+  McshLag000017:8743  lagoMjh'(Mwera-(Nyasa)-L).Iso3  
+  McshLag000017:8744  lago3.Mjh'(Mwera-(Nyasa)-L).Iso3  
+  McshLag000017:8755  lagoMjn'(Ma-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8756  lago3.Mjn'(Ma-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:8793  lagoMkg'(Mak-(China)-L).Iso3  
+  McshLag000017:8794  lago3.Mkg'(Mak-(China)-L).Iso3  
+  McshLag000017:8823  lagoMkw'(Kituba-(Congo)-L).Iso3  
+  McshLag000017:8824  lago3.Mkw'(Kituba-(Congo)-L).Iso3  
+  McshLag000017:8943  lagoMnh'(Mono-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:8944  lago3.Mnh'(Mono-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:8961  lagoMnr'(Mono-(USA)-L).Iso3  
+  McshLag000017:8962  lago3.Mnr'(Mono-(USA)-L).Iso3  
+  McshLag000017:9003  lagoMoq'(Mor-(Bomberai-Peninsula)-L).Iso3  
+  McshLag000017:9004  lago3.Moq'(Mor-(Bomberai-Peninsula)-L).Iso3  
+  McshLag000017:9015  lagoMow'(Moi-(Congo)-L).Iso3  
+  McshLag000017:9016  lago3.Mow'(Moi-(Congo)-L).Iso3  
+  McshLag000017:9041  lagoMpk'(Mbara-(Chad)-L).Iso3  
+  McshLag000017:9042  lago3.Mpk'(Mbara-(Chad)-L).Iso3  
+  McshLag000017:9073  lagoMqa'(Maba-(Indonesia)-L).Iso3  
+  McshLag000017:9074  lago3.Mqa'(Maba-(Indonesia)-L).Iso3  
+  McshLag000017:9157  lagoMrr'(Maria-(India)-L).Iso3  
+  McshLag000017:9158  lago3.Mrr'(Maria-(India)-L).Iso3  
+  McshLag000017:9163  lagoMru'(Mono-(Cameroon)-L).Iso3  
+  McshLag000017:9164  lago3.Mru'(Mono-(Cameroon)-L).Iso3  
+  McshLag000017:9175  lagoMsa'(Malay-(macrolanguage)-L).Iso3  
+  McshLag000017:9176  lago3.Msa'(Malay-(macrolanguage)-L).Iso3  
+  McshLag000017:9193  lagoMsj'(Ma-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:9194  lago3.Msj'(Ma-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:9233  lagoMte'(Mono-(Solomon-Islands)-L).Iso3  
+  McshLag000017:9234  lago3.Mte'(Mono-(Solomon-Islands)-L).Iso3  
+  McshLag000017:9235  lagoMtf'(Murik-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:9236  lago3.Mtf'(Murik-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:9241  lagoMti'(Maiwa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:9242  lago3.Mti'(Maiwa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:9327  lagoMve'(Marwari-(Pakistan)-L).Iso3  
+  McshLag000017:9328  lago3.Mve'(Marwari-(Pakistan)-L).Iso3  
+  McshLag000017:9339  lagoMvl'(Mbara-(Australia)-E).Iso3  
+  McshLag000017:9340  lago3.Mvl'(Mbara-(Australia)-E).Iso3  
+  McshLag000017:9375  lagoMwe'(Mwera-(Chimwera)-L).Iso3  
+  McshLag000017:9376  lago3.Mwe'(Mwera-(Chimwera)-L).Iso3  
+  McshLag000017:9439  lagoMxn'(Moi-(Indonesia)-L).Iso3  
+  McshLag000017:9440  lago3.Mxn'(Moi-(Indonesia)-L).Iso3  
+  McshLag000017:9447  lagoMxr'(Murik-(Malaysia)-L).Iso3  
+  McshLag000017:9448  lago3.Mxr'(Murik-(Malaysia)-L).Iso3  
+  McshLag000017:9453  lagoMxu'(Mada-(Cameroon)-L).Iso3  
+  McshLag000017:9454  lago3.Mxu'(Mada-(Cameroon)-L).Iso3  
+  McshLag000017:9776  lagoNep'(Nepali-(macrolanguage)-L).Iso3  
+  McshLag000017:9777  lago3.Nep'(Nepali-(macrolanguage)-L).Iso3  
+  McshLag000017:9812  lagoNgc'(Ngombe-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:9813  lago3.Ngc'(Ngombe-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:9814  lagoNgd'(Ngando-(Central-African-Republic)-L).Iso3  
+  McshLag000017:9815  lago3.Ngd'(Ngando-(Central-African-Republic)-L).Iso3  
+  McshLag000017:9916  lagoNih'(Nyiha-(Tanzania)-L).Iso3  
+  McshLag000017:9917  lago3.Nih'(Nyiha-(Tanzania)-L).Iso3  
+  McshLag000017:10022  lagoNkt'(Nyika-(Tanzania)-L).Iso3  
+  McshLag000017:10023  lago3.Nkt'(Nyika-(Tanzania)-L).Iso3  
+  McshLag000017:10026  lagoNkv'(Nyika-(Malawi-and-Zambia)-L).Iso3  
+  McshLag000017:10027  lago3.Nkv'(Nyika-(Malawi-and-Zambia)-L).Iso3  
+  McshLag000017:10080  lagoNmf'(Tangkhul-Naga-(India)-L).Iso3  
+  McshLag000017:10081  lago3.Nmf'(Tangkhul-Naga-(India)-L).Iso3  
+  McshLag000017:10088  lagoNmj'(Ngombe-(Central-African-Republic)-L).Iso3  
+  McshLag000017:10089  lago3.Nmj'(Ngombe-(Central-African-Republic)-L).Iso3  
+  McshLag000017:10116  lagoNmx'(Nama-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:10117  lago3.Nmx'(Nama-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:10162  lagoNnv'(Nugunu-(Australia)-E).Iso3  
+  McshLag000017:10163  lago3.Nnv'(Nugunu-(Australia)-E).Iso3  
+  McshLag000017:10226  lagoNpi'(Nepali-(individual-language)-L).Iso3  
+  McshLag000017:10227  lago3.Npi'(Nepali-(individual-language)-L).Iso3  
+  McshLag000017:10366  lagoNtx'(Tangkhul-Naga-(Myanmar)-L).Iso3  
+  McshLag000017:10367  lago3.Ntx'(Tangkhul-Naga-(Myanmar)-L).Iso3  
+  McshLag000017:10408  lagoNut'(Nung-(Viet-Nam)-L).Iso3  
+  McshLag000017:10409  lago3.Nut'(Nung-(Viet-Nam)-L).Iso3  
+  McshLag000017:10452  lagoNxd'(Ngando-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:10453  lago3.Nxd'(Ngando-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:10492  lagoNyi'(Ama-(Sudan)-L).Iso3  
+  McshLag000017:10493  lago3.Nyi'(Ama-(Sudan)-L).Iso3  
+  McshLag000017:10510  lagoNyr'(Nyiha-(Malawi)-L).Iso3  
+  McshLag000017:10511  lago3.Nyr'(Nyiha-(Malawi)-L).Iso3  
+  McshLag000017:10553  lagoOar'(Old-Aramaic-(up-to-700-BCE)-A).Iso3  
+  McshLag000017:10554  lago3.Oar'(Old-Aramaic-(up-to-700-BCE)-A).Iso3  
+  McshLag000017:10577  lagoOci'(Occitan-(post-1500)-L).Iso3  
+  McshLag000017:10578  lago3.Oci'(Occitan-(post-1500)-L).Iso3  
+  McshLag000017:10639  lagoOke'(Okpe-(Southwestern-Edo)-L).Iso3  
+  McshLag000017:10640  lago3.Oke'(Okpe-(Southwestern-Edo)-L).Iso3  
+  McshLag000017:10653  lagoOkm'(Middle-Korean-(10th-16th-cent.)-H).Iso3  
+  McshLag000017:10654  lago3.Okm'(Middle-Korean-(10th-16th-cent.)-H).Iso3  
+  McshLag000017:10657  lagoOko'(Old-Korean-(3rd-9th-cent.)-H).Iso3  
+  McshLag000017:10658  lago3.Oko'(Old-Korean-(3rd-9th-cent.)-H).Iso3  
+  McshLag000017:10667  lagoOkx'(Okpe-(Northwestern-Edo)-L).Iso3  
+  McshLag000017:10668  lago3.Okx'(Okpe-(Northwestern-Edo)-L).Iso3  
+  McshLag000017:10781  lagoOri'(Oriya-(macrolanguage)-L).Iso3  
+  McshLag000017:10782  lago3.Ori'(Oriya-(macrolanguage)-L).Iso3  
+  McshLag000017:10825  lagoOta'(Ottoman-Turkish-(1500-1928)-H).Iso3  
+  McshLag000017:10826  lago3.Ota'(Ottoman-Turkish-(1500-1928)-H).Iso3  
+  McshLag000017:10952  lagoPbl'(Mak-(Nigeria)-L).Iso3  
+  McshLag000017:10953  lago3.Pbl'(Mak-(Nigeria)-L).Iso3  
+  McshLag000017:10972  lagoPby'(Pyu-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:10973  lago3.Pby'(Pyu-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:11024  lagoPed'(Mala-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:11025  lago3.Ped'(Mala-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:11044  lagoPeo'(Old-Persian-(ca.-600-400-B.C.)-H).Iso3  
+  McshLag000017:11045  lago3.Peo'(Old-Persian-(ca.-600-400-B.C.)-H).Iso3  
+  McshLag000017:11306  lagoPnq'(Pana-(Burkina-Faso)-L).Iso3  
+  McshLag000017:11307  lago3.Pnq'(Pana-(Burkina-Faso)-L).Iso3  
+  McshLag000017:11324  lagoPnz'(Pana-(Central-African-Republic)-L).Iso3  
+  McshLag000017:11325  lago3.Pnz'(Pana-(Central-African-Republic)-L).Iso3  
+  McshLag000017:11570  lagoPyx'(Pyu-(Myanmar)-A).Iso3  
+  McshLag000017:11571  lago3.Pyx'(Pyu-(Myanmar)-A).Iso3  
+  McshLag000017:11659  lagoQwm'(Kuman-(Russia)-E).Iso3  
+  McshLag000017:11660  lago3.Qwm'(Kuman-(Russia)-E).Iso3  
+  McshLag000017:11766  lagoReg'(Kara-(Tanzania)-L).Iso3  
+  McshLag000017:11767  lago3.Reg'(Kara-(Tanzania)-L).Iso3  
+  McshLag000017:11804  lagoRia'(Riang-(India)-L).Iso3  
+  McshLag000017:11805  lago3.Ria'(Riang-(India)-L).Iso3  
+  McshLag000017:11988  lagoRuy'(Mala-(Nigeria)-L).Iso3  
+  McshLag000017:11989  lago3.Ruy'(Mala-(Nigeria)-L).Iso3  
+  McshLag000017:11996  lagoRwm'(Amba-(Uganda)-L).Iso3  
+  McshLag000017:11997  lago3.Rwm'(Amba-(Uganda)-L).Iso3  
+  McshLag000017:12000  lagoRwr'(Marwari-(India)-L).Iso3  
+  McshLag000017:12001  lago3.Rwr'(Marwari-(India)-L).Iso3  
+  McshLag000017:12067  lagoSbc'(Kele-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12068  lago3.Sbc'(Kele-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12093  lagoSbp'(Sangu-(Tanzania)-L).Iso3  
+  McshLag000017:12094  lago3.Sbp'(Sangu-(Tanzania)-L).Iso3  
+  McshLag000017:12249  lagoSga'(Old-Irish-(to-900)-H).Iso3  
+  McshLag000017:12250  lago3.Sga'(Old-Irish-(to-900)-H).Iso3  
+  McshLag000017:12361  lagoSim'(Mende-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12362  lago3.Sim'(Mende-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12425  lagoSke'(Seke-(Vanuatu)-L).Iso3  
+  McshLag000017:12426  lago3.Ske'(Seke-(Vanuatu)-L).Iso3  
+  McshLag000017:12435  lagoSkj'(Seke-(Nepal)-L).Iso3  
+  McshLag000017:12436  lago3.Skj'(Seke-(Nepal)-L).Iso3  
+  McshLag000017:12573  lagoSng'(Sanga-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:12574  lago3.Sng'(Sanga-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:12591  lagoSnq'(Sangu-(Gabon)-L).Iso3  
+  McshLag000017:12592  lago3.Snq'(Sangu-(Gabon)-L).Iso3  
+  McshLag000017:12613  lagoSoc'(So-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:12614  lago3.Soc'(So-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:12659  lagoSpb'(Sepa-(Indonesia)-L).Iso3  
+  McshLag000017:12660  lago3.Spb'(Sepa-(Indonesia)-L).Iso3  
+  McshLag000017:12665  lagoSpe'(Sepa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12666  lago3.Spe'(Sepa-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:12921  lagoSwa'(Swahili-(macrolanguage)-L).Iso3  
+  McshLag000017:12922  lago3.Swa'(Swahili-(macrolanguage)-L).Iso3  
+  McshLag000017:12933  lagoSwh'(Swahili-(individual-language)-L).Iso3  
+  McshLag000017:12934  lago3.Swh'(Swahili-(individual-language)-L).Iso3  
+  McshLag000017:13043  lagoSzv'(Isu-(Fako-Division)-L).Iso3  
+  McshLag000017:13044  lago3.Szv'(Isu-(Fako-Division)-L).Iso3  
+  McshLag000017:13136  lagoTbt'(Tembo-(Kitembo)-L).Iso3  
+  McshLag000017:13137  lago3.Tbt'(Tembo-(Kitembo)-L).Iso3  
+  McshLag000017:13170  lagoTcl'(Taman-(Myanmar)-E).Iso3  
+  McshLag000017:13171  lago3.Tcl'(Taman-(Myanmar)-E).Iso3  
+  McshLag000017:13264  lagoTen'(Tama-(Colombia)-E).Iso3  
+  McshLag000017:13265  lago3.Ten'(Tama-(Colombia)-E).Iso3  
+  McshLag000017:13282  lagoTew'(Tewa-(USA)-L).Iso3  
+  McshLag000017:13283  lago3.Tew'(Tewa-(USA)-L).Iso3  
+  McshLag000017:13540  lagoTma'(Tama-(Chad)-L).Iso3  
+  McshLag000017:13541  lago3.Tma'(Tama-(Chad)-L).Iso3  
+  McshLag000017:13566  lagoTmn'(Taman-(Indonesia)-L).Iso3  
+  McshLag000017:13567  lago3.Tmn'(Taman-(Indonesia)-L).Iso3  
+  McshLag000017:13572  lagoTmr'(Jewish-Babylonian-Aramaic-(ca.-200-1200-CE)-E).Iso3  
+  McshLag000017:13573  lago3.Tmr'(Jewish-Babylonian-Aramaic-(ca.-200-1200-CE)-E).Iso3  
+  McshLag000017:13580  lagoTmv'(Tembo-(Motembo)-L).Iso3  
+  McshLag000017:13581  lago3.Tmv'(Tembo-(Motembo)-L).Iso3  
+  McshLag000017:13642  lagoTog'(Tonga-(Nyasa)-L).Iso3  
+  McshLag000017:13643  lago3.Tog'(Tonga-(Nyasa)-L).Iso3  
+  McshLag000017:13646  lagoToi'(Tonga-(Zambia)-L).Iso3  
+  McshLag000017:13647  lago3.Toi'(Tonga-(Zambia)-L).Iso3  
+  McshLag000017:13654  lagoTon'(Tonga-(Tonga-Islands)-L).Iso3  
+  McshLag000017:13655  lago3.Ton'(Tonga-(Tonga-Islands)-L).Iso3  
+  McshLag000017:13976  lagoTwe'(Tewa-(Indonesia)-L).Iso3  
+  McshLag000017:13977  lago3.Twe'(Tewa-(Indonesia)-L).Iso3  
+  McshLag000017:14163  lagoUki'(Kui-(India)-L).Iso3  
+  McshLag000017:14164  lago3.Uki'(Kui-(India)-L).Iso3  
+  McshLag000017:14287  lagoUro'(Ura-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:14288  lago3.Uro'(Ura-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:14327  lagoUtp'(Amba-(Solomon-Islands)-L).Iso3  
+  McshLag000017:14328  lago3.Utp'(Amba-(Solomon-Islands)-L).Iso3  
+  McshLag000017:14337  lagoUur'(Ura-(Vanuatu)-L).Iso3  
+  McshLag000017:14338  lago3.Uur'(Ura-(Vanuatu)-L).Iso3  
+  McshLag000017:14542  lagoVwa'(Awa-(China)-L).Iso3  
+  McshLag000017:14543  lago3.Vwa'(Awa-(China)-L).Iso3  
+  McshLag000017:14579  lagoWar'(Waray-(Philippines)-L).Iso3  
+  McshLag000017:14580  lago3.War'(Waray-(Philippines)-L).Iso3  
+  McshLag000017:14765  lagoWll'(Wali-(Sudan)-L).Iso3  
+  McshLag000017:14766  lago3.Wll'(Wali-(Sudan)-L).Iso3  
+  McshLag000017:14783  lagoWlx'(Wali-(Ghana)-L).Iso3  
+  McshLag000017:14784  lago3.Wlx'(Wali-(Ghana)-L).Iso3  
+  McshLag000017:14787  lagoWma'(Mawa-(Nigeria)-E).Iso3  
+  McshLag000017:14788  lago3.Wma'(Mawa-(Nigeria)-E).Iso3  
+  McshLag000017:14801  lagoWmm'(Maiwa-(Indonesia)-L).Iso3  
+  McshLag000017:14802  lago3.Wmm'(Maiwa-(Indonesia)-L).Iso3  
+  McshLag000017:14805  lagoWmo'(Wom-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:14806  lago3.Wmo'(Wom-(Papua-New-Guinea)-L).Iso3  
+  McshLag000017:14863  lagoWom'(Wom-(Nigeria)-L).Iso3  
+  McshLag000017:14864  lago3.Wom'(Wom-(Nigeria)-L).Iso3  
+  McshLag000017:14917  lagoWrz'(Waray-(Australia)-E).Iso3  
+  McshLag000017:14918  lago3.Wrz'(Waray-(Australia)-E).Iso3  
+  McshLag000017:15256  lagoXlg'(Ligurian-(Ancient)-A).Iso3  
+  McshLag000017:15257  lago3.Xlg'(Ligurian-(Ancient)-A).Iso3  
+  McshLag000017:15362  lagoXom'(Komo-(Sudan)-L).Iso3  
+  McshLag000017:15363  lago3.Xom'(Komo-(Sudan)-L).Iso3  
+  McshLag000017:15474  lagoXsn'(Sanga-(Nigeria)-L).Iso3  
+  McshLag000017:15475  lago3.Xsn'(Sanga-(Nigeria)-L).Iso3  
+  McshLag000017:15596  lagoXxb'(Boro-(Ghana)-E).Iso3  
+  McshLag000017:15597  lago3.Xxb'(Boro-(Ghana)-E).Iso3  
+  McshLag000017:15639  lagoYaf'(Yaka-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:15640  lago3.Yaf'(Yaka-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:15665  lagoYas'(Nugunu-(Cameroon)-L).Iso3  
+  McshLag000017:15666  lago3.Yas'(Nugunu-(Cameroon)-L).Iso3  
+  McshLag000017:15993  lagoYso'(Nisi-(China)-L).Iso3  
+  McshLag000017:15994  lago3.Yso'(Nisi-(China)-L).Iso3  
+  McshLag000017:16037  lagoYun'(Bena-(Nigeria)-L).Iso3  
+  McshLag000017:16038  lago3.Yun'(Bena-(Nigeria)-L).Iso3  
+  McshLag000017:16047  lagoYuw'(Yau-(Morobe-Province)-L).Iso3  
+  McshLag000017:16048  lago3.Yuw'(Yau-(Morobe-Province)-L).Iso3  
+  McshLag000017:16091  lagoYyu'(Yau-(Sandaun-Province)-L).Iso3  
+  McshLag000017:16092  lago3.Yyu'(Yau-(Sandaun-Province)-L).Iso3  
+  McshLag000017:16250  lagoZlm'(Malay-(individual-language)-L).Iso3  
+  McshLag000017:16251  lago3.Zlm'(Malay-(individual-language)-L).Iso3  
+  McshLag000017:16256  lagoZma'(Manda-(Australia)-L).Iso3  
+  McshLag000017:16257  lago3.Zma'(Manda-(Australia)-L).Iso3  
+  McshLag000017:16300  lagoZmw'(Mbo-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:16301  lago3.Zmw'(Mbo-(Democratic-Republic-of-Congo)-L).Iso3  
+  McshLag000017:16310  lagoZne'(Zande-(individual-language)-L).Iso3  
+  McshLag000017:16311  lago3.Zne'(Zande-(individual-language)-L).Iso3  
+  McshLag000017:16386  lagoZra'(Kara-(Korea)-A).Iso3  
+  McshLag000017:16387  lago3.Zra'(Kara-(Korea)-A).Iso3  
+  McshLag000017:21099  lago3.Hawai'i-Sign-Language-(HSL)-L--hps.Iso3  
+  McshLag000017:21100  lagoHawai'i-Sign-Language-(HSL)-L--hps.Iso3  
+  McshLag000017:21869  lago3.Ju/'hoan-L--ktz.Iso3  
+  McshLag000017:21870  lagoJu/'hoan-L--ktz.Iso3  
+  McshLag000018:218  Zhon_lago'03_input3-(semu-view)  !⇒ZhonviewSemu
+  McshLag000018:8729  ZhonviewLogo'name-(decoding-unit)  !⇒Zhonname
+  McshLag000020:37  lagEll'(Modern-Greek-{1453}-L).Iso3  !⇒Elln_lago
+  McshLag000020:81  Elln_lago'input1-(mind-view)  !⇒Elln_mind_view
+  McshLag000020:100  Elln_lago'input2-(senso-mind--view)  !⇒Elln_senso_mind_view
+  McshLag000020:121  Elln_lago'input3-(semu-view)  !⇒EllnviewSemu
+  McshLag000020:2032  EllnviewLogo'name-(decoding-unit)  !⇒Ellnname
+  McshLag000020:2140  Ellnnoun'Gender.12-masculine|feminine  
+  McshLag000020:13074  Elln_lago'evoluting-(link)  !⇒Ellnevolg
+  McshLag000027:7953  Ella_lago'Dark-{Bce1100..Bce0800}  !⇒EllaDark
+  McshLag000027:7971  Ella_lago'Archaic-{Bce0800..Bce0500}  !⇒EllaArchaic
+  McshLag000027:7991  Ella_lago'Classical-{Bce0500..Bce0300}  !⇒EllaClassical
+  McshLag000028:1427  Ell0Lago'monotonic-orthography-{1982}  
+  McshLag000028:1432  Ell0Lago'Dimotiki-{1976}  
+  McshLag000028:1437  Ell0Lago'Linear-B-decipherment-{1952}  
+  McshLag000028:1445  Ell0Lago'Modern-Greek-{1100i100}  
+  McshLag000028:1457  Ell0Lago'Medieval-Greek-{0600i100}  
+  McshLag000028:1464  Ell0Lago'new-pronunciation-{0200}  
+  McshLag000028:1470  Ell0Lago'Atticism-{0100..0300i100}  
+  McshLag000028:1476  Ell0Lago'pronunciation-orthography-{Bce0200}  
+  McshLag000028:1482  Ell0Lago'dialects-{Bce0300}  
+  McshLag000028:1488  Ell0Lago'Ionic-alphabet-{Bce0403}  
+  McshLag000028:1494  Ell0Lago'alphabet-{Bce0750}  
+  McshLag000028:1500  Ell0Lago'written-{Bce1400}  
+  McshLag000029:259  RP'(received-pronunciation)  
+  McshLag000030:75  Turk_lago'03_input3-(semu-view)  !⇒TurkviewSemu
+  McshLag000032:61  lagoFrml'input1-(mind-view)  
+  McshLag000032:89  lagoFrml'input2-(senso-mind-view)  
+  McshLag000032:104  lagoFrml'input3-(semu-view)  !⇒FrmlviewSemu
+  McshLag000032:117  lagoFrml'output-(logo-view)  
+  McshLag000032:302  lagoFrml'decoding-relation-(interpretation)  
+  McshLag000033:99  Deut_lago'input1-(mind-view)  !⇒DeutMindView
+  McshLag000033:119  Deut_lago'input2-(senso-mind--view)  !⇒DeutSensoMindView
+  McshLag000033:140  Deut_lago'input3-(semu-view)  !⇒DeutviewSemu
+  McshLag000033:2216  DeutviewLogo'name-(decoding-unit)  !⇒Deutname
+  McshLag000034:62  Bcms_lago'input1-(mind-view)  !⇒BcmsMindView
+  McshLag000034:82  Bcms_lago'input2-(senso-mind--view)  !⇒BcmsSensoMindView
+  McshLag000034:104  Bcms_lago'input3-(semu-view)  !⇒BcmsviewSemu
+  McshLag000034:1679  BcmsviewLogo'name-(decoding-unit)  !⇒Bcmsname
+  McshLag000034:2676  BcmsviewLogo'title-sentence-system-(section)  !⇒BcmsSect
+  McshLag000035:107  Span_lago'input1-(mind-view)  !⇒SpanMindView
+  McshLag000035:129  Span_lago'input3-(semu-view)  !⇒SpanviewSemu
+  McshLag000035:1198  SpanviewLogo'name-(decoding-unit)  !⇒Spanname
+  McshLag000035:2401  SpanviewLogo'title-sentence-system-(section)  !⇒SpanSect
+  McshLag000036:104  Arab_lago'input1-(mind-view)  !⇒ArabMindView
+  McshLag000036:126  Arab_lago'input3-(semu-view)  !⇒ArabviewSemu
+  McshLag000036:1775  ArabviewLogo'name-(decoding-unit)  !⇒Arabname
+  McshLag000036:2856  ArabviewLogo'title-sentence-system-(section)  !⇒ArabSect
+  McshLag000037:84  Hiur_lago'input1-(mind-view)  !⇒HiurMindView
+  McshLag000037:104  Hiur_lago'input2-(senso-mind--view)  !⇒HiurSensoMindView
+  McshLag000037:126  Hiur_lago'input3-(semu-view)  !⇒HiurviewSemu
+  McshLag000037:1574  HiurviewLogo'name-(decoding-unit)  !⇒Hiurname
+  McshLag000037:2174  HiurviewLogo'title-sentence-system-(section)  !⇒HiurSect
+  McshLag000037:2561  Hind_lago'01_input1-(mind-view)  
+  McshLag000037:2578  Hind_lago'02_input2-(senso-mind-view)  
+  McshLag000037:2597  Hind_lago'03_input3-(semu-view)  !⇒HindviewSemu
+  McshLag000037:2618  Hind_lago'04_output-(logo-view)  !⇒HindviewLogo
+  McshLag000037:4681  Urdu_lago'01_input1-(mind-view)  
+  McshLag000037:4698  Urdu_lago'02_input2-(senso-mind-view)  
+  McshLag000037:4717  Urdu_lago'03_input3-(semu-view)  !⇒UrduviewSemu
+  McshLag000037:4738  Urdu_lago'04_output-(logo-view)  !⇒UrduviewLogo
+  McshLag000038:116  Slv0Lago'input1-(mind-view)  !⇒Slv0MindView
+  McshLag000038:135  Slv0Lago'input2-(senso-mind--view)  !⇒Slv0SensoMindView
+  McshLag000038:157  Slv0Lago'input3-(semu-view)  !⇒Slv0viewSemu
+  McshLag000038:1028  Slv0viewLogo'name-(decoding-unit)  !⇒Slv0name
+  McshLag000038:1626  Slv0viewLogo'title-sentence-system-(section)  !⇒Slv0Sect
+  McshLag000039:112  Ide0_lago'input1-(mind-view)  !⇒Ide0MindView
+  McshLag000039:131  Ide0_lago'input2-(senso-mind--view)  !⇒Ide0SensoMindView
+  McshLag000039:153  Ide0_lago'input3-(semu-view)  !⇒Ide0viewSemu
+  McshLag000039:693  Ide0viewLogo'name-(decoding-unit)  !⇒Ide0name
+  McshLag000039:1293  Ide0viewLogo'title-sentence-system-(section)  !⇒Ide0Sect
+  McshLag000040:128  Afa0_lago'input1-(mind-view)  !⇒Afa0MindView
+  McshLag000040:147  Afa0_lago'input2-(senso-mind--view)  !⇒Afa0SensoMindView
+  McshLag000040:169  Afa0_lago'input3-(semu-view)  !⇒Afa0viewSemu
+  McshLag000040:918  Afa0viewLogo'name-(decoding-unit)  !⇒Afa0name
+  McshLag000040:1518  Afa0viewLogo'title-sentence-system-(section)  !⇒Afa0Sect
+  McshLag000041:118  Tur0_lago'input1-(mind-view)  !⇒Tur0MindView
+  McshLag000041:137  Tur0_lago'input2-(senso-mind--view)  !⇒Tur0SensoMindView
+  McshLag000041:159  Tur0_lago'input3-(semu-view)  !⇒Tur0viewSemu
+  McshLag000041:830  Tur0viewLogo'name-(decoding-unit)  !⇒Tur0name
+  McshLag000041:1428  Tur0viewLogo'title-sentence-system-(section)  !⇒Tur0Sect
+  McshLag000042:91  Asa0_lago'input1-(mind-view)  !⇒Asa0MindView
+  McshLag000042:110  Asa0_lago'input2-(senso-mind--view)  !⇒Asa0SensoMindView
+  McshLag000042:132  Asa0_lago'input3-(semu-view)  !⇒Asa0viewSemu
+  McshLag000042:839  Asa0viewLogo'name-(decoding-unit)  !⇒Asa0name
+  McshLag000042:1439  Asa0viewLogo'title-sentence-system-(section)  !⇒Asa0Sect
+  McshLag000043:94  Kora_lago'input1-(mind-view)  !⇒KoraMindView
+  McshLag000043:116  Kora_lago'input3-(semu-view)  !⇒KoraviewSemu
+  McshLag000043:2127  KoraviewLogo'name-(decoding-unit)  !⇒Koraname
+  McshLag000043:3457  KoraviewLogo'title-sentence-system-(section)  !⇒KoraSect
+  McshNtr000007:166  ChmcElry'03_mass-number-(A)  
+  McshNtr000007:188  ChmcElry'04_atomic-number-(Z)  
+  McshNtr000007:472  periodic_table'period-(row)  !⇒ChmcElrPeriod
+  McshNtr000007:492  periodic_table'group-(column)  !⇒ChmcElrGroup
+  McshStn000009:7254  society'millennium-3000-{2001..3000}  
+  McshStn000009:7265  society'century-2100-{2001..2100}  
+  McshStn000009:7276  society'decade-2030-{2021..2030}  
+  McshStn000009:7292  society'decade-2020-{2011..2020}  
+  McshStn000009:7312  society'decade-2010-{2001..2010}  
+  McshStn000009:7335  society'millennium-2000-{1001..2000}  
+  McshStn000009:7357  society'century-2000-{1901..2000}  
+  McshStn000009:7368  society'decade-2000-{1991..2000}  
+  McshStn000009:7411  society'decade-1990-{1981..1990}  
+  McshStn000009:7444  society'decade-1980-{1971..1980}  
+  McshStn000009:7490  society'decade-1970-{1961..1970}  
+  McshStn000009:7540  society'decade-1960-{1951..1960}  
+  McshStn000009:7593  society'decade-1950-{1941..1950}  
+  McshStn000009:7634  society'decade-1940-{1931..1940}  
+  McshStn000009:7660  society'decade-1930-{1921..1930}  
+  McshStn000009:7688  society'decade-1920-{1911..1920}  
+  McshStn000009:7723  society'decade-1910-{1901..1910}  
+  McshStn000009:7747  society'century-1900-{1801..1900}  
+  McshStn000009:7827  society'century-1800-{1701..1800}  
+  McshStn000009:7851  society'century-1700-{1601..1700}  
+  McshStn000009:7868  society'century-1600-{1501..1600}  
+  McshStn000009:7887  society'century-1500-{1401..1500}  
+  McshStn000009:7904  society'century-1400-{1301..1400}  
+  McshStn000009:7921  society'century-1300-{1201..1300}  
+  McshStn000009:7945  society'century-1200-{1101..1200}  
+  McshStn000009:7965  society'century-1100-{1001..1100}  
+  McshStn000009:7985  society'millennium-1000-{0001..1000}  
+  McshStn000009:7996  society'century-1000-{0901..1000}  
+  McshStn000009:8018  society'century-0900-{0801..0900}  
+  McshStn000009:8042  society'century-0800-{0701..0800}  
+  McshStn000009:8061  society'century-0700-{0601..0700}  
+  McshStn000009:8080  society'century-0600-{0501..0600}  
+  McshStn000009:8097  society'century-0500-{0401..0500}  
+  McshStn000009:8115  society'century-0400-{0301..0400}  
+  McshStn000009:8132  society'century-0300-{0201..0300}  
+  McshStn000009:8144  society'century-0200-{0101..0200}  
+  McshStn000009:8156  society'century-0100-{0001..0100}  
+  McshStn000009:8169  society'millennium-Bce1000-{Bce1000..Bce0001}  
+  McshStn000009:8180  society'century-Bce0100-{Bce0001..Bce0100}  
+  McshStn000009:8192  society'century-Bce0200-{Bce0101..Bce0200}  
+  McshStn000009:8204  society'century-Bce0300-{Bce0201..Bce0300}  
+  McshStn000009:8221  society'century-Bce0400-{Bce0301..Bce0400}  
+  McshStn000009:8233  society'century-Bce0500-{Bce0401..Bce0500}  
+  McshStn000009:8245  society'century-Bce0600-{Bce0501..Bce0600}  
+  McshStn000009:8257  society'century-Bce0700-{Bce0601..Bce0700}  
+  McshStn000009:8269  society'century-Bce0800-{Bce0701..Bce0800}  
+  McshStn000009:8281  society'century-Bce0900-{Bce0801..Bce0900}  
+  McshStn000009:8293  society'century-Bce1000-{Bce0901..Bce1000}  
+  McshStn000009:8306  society'millennium-Bce2000-{Bce2000..Bce1001}  
+  McshStn000009:8318  society'millennium-Bce3000-{Bce3000..Bce2001}  
+  McshStn000009:8330  society'millennium-Bce4000-{Bce4000..Bce3001}  
+  McshStn000009:11257  SoctCote-D'Ivoire-(Ivory-Coast)--CI.Iso2  
+  McshStn000009:11313  SoctIvory-Coast-(Cote-D'Ivoire)--CI.Iso2  
+  McshStn000012:64  nodeSatisfier'(human-economy)  !⇒SoctEcon
+  McshStn000015:96  VATID'(value-added-tax-identification-number)  
+  McshStn000015:116  DUNS'(data-universal-numbering-system)  
+  McshStn000015:1172  OgznPrdg'att037-R&D  
+  McshStn000015:1335  ISIC'(international-standard-industrial-classification)  
+  McshStn000015:1370  NAICS'(North-American-industry-classification-system)  
+  McshStn000015:1387  SIC'(standard-industrial-classification)  
+  McshStn000015:1404  GICS'(global-industry-classification-system)  
+  McshStn000015:4684  KAU'(kind-of-activity-unit)  !/EuNace
+  McshStn000017:9255  StndW3c.ISO-Common-Encryption-('cenc')-Protection-Scheme-for-ISO-Base-Media-File-Format-Stream-Format  !⇒StndW3c.0180
+  McshStn000020:981  EuzzEcon'euro-area-(20)  
+  McshStn000020:2620  EuoCom'DG'(directorate-general)  !⇒EuoDgCom
+  McshStn000020:2701  EuoCom'Agriculture-and-Rural-Development|AGRI|DG  
+  McshStn000020:2703  EuoCom'Climate-Action|CLIMA|DG  
+  McshStn000020:2704  EuoCom'Communications-Networks--Content-and-Technology|CONNECT|DG  
+  McshStn000020:2707  EuoCom'Defence-Industry-and-Space|DEFIS|DG  
+  McshStn000020:2708  EuoCom'Economic-and-Financial-Affairs|ECFIN|DG  
+  McshStn000020:2709  EuoCom'Education--Youth--Sport-and-Culture|EAC|DG  
+  McshStn000020:2710  EuoCom'Employment--Social-Affairs-and-Inclusion|EMPL|DG  
+  McshStn000020:2713  EuoCom'European-Civil-Protection-and-Humanitarian-Aid-Operations|ECHO|DG  
+  McshStn000020:2714  EuoCom'European-Neighbourhood-and-Enlargement-Negotiations|NEAR|DG  
+  McshStn000020:2716  EuoCom'Financial-Stability--Financial-Services-and-Capital-Markets-Union|FISMA|DG  
+  McshStn000020:2717  EuoCom'Health-and-Food-Safety|SANTE|DG  
+  McshStn000020:2718  EuoCom'Human-Resources-and-Security|HR|DG  
+  McshStn000020:2720  EuoCom'Internal-Market--Industry--Entrepreneurship-and-SMEs|GROW|DG  
+  McshStn000020:2721  EuoCom'International-Cooperation-and-Development|DEVCO|DG  
+  McshStn000020:2723  EuoCom'Joint-Research-Centre|JRC|DG  
+  McshStn000020:2724  EuoCom'Justice-and-Consumers|JUST|DG  
+  McshStn000020:2725  EuoCom'Maritime-Affairs-and-Fisheries|MARE|DG  
+  McshStn000020:2726  EuoCom'Migration-and-Home-Affairs|HOME|DG  
+  McshStn000020:2727  EuoCom'Mobility-and-Transport|MOVE|DG  
+  McshStn000020:2728  EuoCom'Regional-and-Urban-Policy|REGIO|DG  
+  McshStn000020:2729  EuoCom'Research-and-Innovation|RTD|DG  
+  McshStn000020:2730  EuoCom'Structural-Reform-Support|REFORM|DG  
+  McshStn000020:2731  EuoCom'Taxation-and-Customs-Union|TAXUD|DG  
+  McshStn000020:3508  EuoCom'Administration-and-Payment-of-Individual-Entitlements|PMO|service-dep  
+  McshStn000020:3509  EuoCom'Data-Protection-Officer|DPO|service-dep  
+  McshStn000020:3510  EuoCom'European-Anti-Fraud-Office|OLAF|service-dep  
+  McshStn000020:3512  EuoCom'European-School-of-Administration|EUSA|service-dep  
+  McshStn000020:3513  EuoCom'Foreign-Policy-Instruments|FPI|service-dep  
+  McshStn000020:3514  EuoCom'Historical-Archives-Service|-|service-dep  
+  McshStn000020:3515  EuoCom'Infrastructure-and-Logistics-in-Brussels|OIB|service-dep  
+  McshStn000020:3516  EuoCom'Infrastructure-and-Logistics-in-Luxembourg|OIL|service-dep  
+  McshStn000020:3517  EuoCom'Inspire--Debate--Engage-and-Accelerate-Action|IDEA|service-dep  
+  McshStn000020:3518  EuoCom'Internal-Audit-Service|IAS|service-dep  
+  McshStn000020:3519  EuoCom'Legal-Service|SJ|service-dep  
+  McshStn000020:3520  EuoCom'Library-and-e-Resources-Centre|-|service-dep  
+  McshStn000020:3521  EuoCom'Recovery-and-Resilience-Task-Force|RECOVER|service-dep  
+  McshStn000020:3522  EuoCom'Secretariat-General|SG|service-dep  
+  McshStn000020:3523  EuoCom'Task-Force-for-Relations-with-the-United-Kingdom|UKTF|service-dep  
+  McshStn000020:3566  EuoCom'Consumers--Health--Agriculture-and-Food-Executive-Agency|CHAFEA  
+  McshStn000020:3567  EuoCom'Education--Audiovisual-and-Culture-Executive-Agency|EACEA  
+  McshStn000020:3568  EuoCom'Executive-Agency-for-Small-and-Medium-sized-Enterprises|EASME  
+  McshStn000020:3570  EuoCom'Innovation-and-Networks-Executive-Agency|INEA  
+  McshStn000020:3571  EuoCom'Research-Executive-Agency|REA  
+  McshStn000020:3580  CHAFEA'(Consumers--Health--Agriculture-and-Food-Executive-Agency-of-EuoCom)  
+  McshStn000020:3581  EACEA'(Education--Audiovisual-and-Culture-Executive-Agency-of-EuoCom)  
+  McshStn000020:3582  EASME'(Executive-Agency-for-Small-and-Medium-sized-Enterprises-of-EuoCom)  
+  McshStn000020:3584  INEA'(Innovation-and-Networks-Executive-Agency-of-EuoCom)  
+  McshStn000020:3585  REA'(Research-Executive-Agency-of-EuoCom)  
+  McshStn000020:3843  EuoCom'European-Personnel-Selection-Office|EPSO|service-dep  !⇒EuoEpso
+  McshStn000020:4431  ACER'(Agency-for-the-Cooperation-of-Energy-Regulators-EuoAgency)  
+  McshStn000020:4432  BEREC-Office'(Office-of-the-Body-of-European-Regulators-for-Electronic-Communications-EuoAgency)  
+  McshStn000020:4433  CEPOL'(European-Union-Agency-for-Law-Enforcement-Training-EuoAgency)  
+  McshStn000020:4434  CPVO'(Community-Plant-Variety-Office-EuoAgency)  
+  McshStn000020:4435  CdT'(Translation-Centre-for-the-Bodies-of-the-European-Union-EuoAgency)  
+  McshStn000020:4436  Cedefop'(European-Centre-for-the-Development-of-Vocational-Training-EuoAgency)  
+  McshStn000020:4437  Chafea'(Consumers--Health--Agriculture-and-Food-Executive-Agency-EuoAgency)  
+  McshStn000020:4438  EACEA'(Education--Audiovisual-and-Culture-Executive-Agency-EuoAgency)  
+  McshStn000020:4439  EASA'(European-Aviation-Safety-Agency-EuoAgency)  
+  McshStn000020:4440  EASME'(Executive-Agency-for-Small-and-Medium-sized-enterprises-EuoAgency)  
+  McshStn000020:4441  EASO'(European-Asylum-Support-Office-EuoAgency)  
+  McshStn000020:4442  EBA'(European-Banking-Authority-EuoAgency)  
+  McshStn000020:4443  ECDC'(European-Centre-for-Disease-Prevention-and-Control-EuoAgency)  
+  McshStn000020:4444  ECHA'(European-Chemicals-Agency-EuoAgency)  
+  McshStn000020:4446  EDA'(European-Defence-Agency-EuoAgency)  
+  McshStn000020:4447  EEA'(European-Environment-Agency-EuoAgency)  
+  McshStn000020:4448  EFCA'(European-Fisheries-Control-Agency-EuoAgency)  
+  McshStn000020:4449  EFSA'(European-Food-Safety-Authority-EuoAgency)  
+  McshStn000020:4450  EIGE'(European-Institute-for-Gender-Equality-EuoAgency)  
+  McshStn000020:4451  EIOPA'(European-Insurance-and-Occupational-Pensions-Authority-EuoAgency)  
+  McshStn000020:4452  EIT'(European-Institute-of-Innovation-and-Technology-EuoAgency)  
+  McshStn000020:4453  ELA'(European-Labour-Authority-EuoAgency)  
+  McshStn000020:4454  EMA'(European-Medicines-Agency-EuoAgency)  
+  McshStn000020:4455  EMCDDA'(European-Monitoring-Centre-for-Drugs-and-Addiction-EuoAgency)  
+  McshStn000020:4456  EMCDDA'(European-Monitoring-Centre-for-Drugs-and-Drug-Addiction-EuoAgency)  
+  McshStn000020:4457  EMSA'(European-Maritime-Safety-Agency-EuoAgency)  
+  McshStn000020:4458  ENISA'(European-Union-Agency-for-Cybersecurity-EuoAgency)  
+  McshStn000020:4459  ERA'(European-Union-Agency-for-Railways-EuoAgency)  
+  McshStn000020:4461  ESMA'(European-Securities-and-Markets-Authority-EuoAgency)  
+  McshStn000020:4462  ETF'(European-Training-Foundation-EuoAgency)  
+  McshStn000020:4463  EU-OSHA'(European-Agency-for-Safety-and-Health-at-Work-EuoAgency)  
+  McshStn000020:4464  EUIPO'(European-Union-Intellectual-Property-Office-EuoAgency)  
+  McshStn000020:4465  EUISS'(European-Union-Institute-for-Security-Studies-EuoAgency)  
+  McshStn000020:4466  Eurofound'(European-Foundation-for-the-Improvement-of-Living-and-Working-Conditions-EuoAgency)  
+  McshStn000020:4467  Eurojust'(European-Union-Agency-for-Criminal-Justice-Cooperation-EuoAgency)  
+  McshStn000020:4468  Europol'(European-Police-Office-EuoAgency)  
+  McshStn000020:4469  FRA'(European-Union-Agency-for-Fundamental-Rights-EuoAgency)  
+  McshStn000020:4470  Frontex'(European-Border-and-Coast-Guard-Agency-EuoAgency)  
+  McshStn000020:4471  GSA'(European-GNSS-Agency-EuoAgency)  
+  McshStn000020:4472  IMI-2-JU'(IMI-2-Joint-Undertaking-EuoAgency)  
+  McshStn000020:4473  INEA'(Innovation-&-Networks-Executive-Agency-EuoAgency)  
+  McshStn000020:4474  REA'(Research-Executive-Agency-EuoAgency)  
+  McshStn000020:4475  SRB'(The-Single-Resolution-Board-EuoAgency)  
+  McshStn000020:4476  Satcen'(European-Union-Satellite-Centre-EuoAgency)  
+  McshStn000020:4477  eu-LISA'(European-Union-Agency-for-large-scale-IT-systems-EuoAgency)  
+  McshStn000020:4510  ACER'(Agency-for-the-Cooperation-of-Energy-Regulators)  
+  McshStn000020:4511  BEREC-Office'(Agency-for-Support-for-BEREC)  
+  McshStn000020:4512  CEPOL'(European-Union-Agency-for-Law-Enforcement-Training)  
+  McshStn000020:4513  CPVO'(Community-Plant-Variety-Office)  
+  McshStn000020:4514  CdT'(Translation-Centre-for-the-Bodies-of-the-European-Union)  
+  McshStn000020:4515  Cedefop'(European-Centre-for-the-Development-of-Vocational-Training)  
+  McshStn000020:4516  EASA'(European-Union-Aviation-Safety-Agency)  
+  McshStn000020:4517  EASO'(European-Asylum-Support-Office)  
+  McshStn000020:4518  EBA'(European-Banking-Authority)  
+  McshStn000020:4519  ECDC'(European-Centre-for-Disease-Prevention-and-Control)  
+  McshStn000020:4520  ECHA'(European-Chemicals-Agency)  
+  McshStn000020:4521  EEA'(European-Environment-Agency)  
+  McshStn000020:4522  EFCA'(European-Fisheries-Control-Agency)  
+  McshStn000020:4523  EFSA'(European-Food-Safety-Authority)  
+  McshStn000020:4524  EIGE'(European-Institute-for-Gender-Equality)  
+  McshStn000020:4525  EIOPA'(European-Insurance-and-Occupational-Pensions-Authority)  
+  McshStn000020:4526  ELA'(European-Labour-Authority)  
+  McshStn000020:4527  EMA'(European-Medicines-Agency)  
+  McshStn000020:4528  EMCDDA'(European-Monitoring-Centre-for-Drugs-and-Drug-Addiction)  
+  McshStn000020:4529  EMSA'(European-Maritime-Safety-Agency)  
+  McshStn000020:4530  ENISA'(European-Union-Agency-for-Cybersecurity)  
+  McshStn000020:4531  ERA'(European-Union-Agency-for-Railways)  
+  McshStn000020:4532  ESMA'(The-European-Securities-and-Markets-Authority)  
+  McshStn000020:4533  ETF'(European-Training-Foundation)  
+  McshStn000020:4534  EU-OSHA'(European-Agency-for-Safety-and-Health-at-Work)  
+  McshStn000020:4535  EUIPO'(European-Union-Intellectual-Property-Office)  
+  McshStn000020:4536  Eurofound'(European-Foundation-for-the-Improvement-of-Living-and-Working-Conditions)  
+  McshStn000020:4537  Eurojust'(European-Union-Agency-for-Criminal-Justice-Cooperation)  
+  McshStn000020:4538  Europol'(European-Police-Office)  
+  McshStn000020:4539  FRA'(European-Union-Agency-for-Fundamental-Rights)  
+  McshStn000020:4540  Frontex'(European-Border-and-Coast-Guard-Agency)  
+  McshStn000020:4541  GSA'(European-GNSS-Agency)  
+  McshStn000020:4542  SRB'(Single-Resolution-Board)  
+  McshStn000020:4543  eu-LISA'(European-Agency-for-the-operational-management-of-large-scale-IT-systems-in-the-area-of-freedom  
+  McshStn000020:5478  EuoCom'DG.EUROSTAT|Eurostat-European-statistics  !⇒EuoStat
+  McshStn000020:5479  EuoCom'Eurostat-European-statistics|EUROSTAT|DG  !⇒EuoStat
+  McshStn000020:5675  ESSC'(European-statistical-system-committee)  
+  McshStn000020:5798  ESF'(European-statistical-forum)  
+  McshStn000020:5975  HBS'(household-budget-survey-of-Eu)  
+  McshStn000020:5989  HFCS'(household-finance-and-consumption-survey)  
+  McshStn000020:6021  ESP'(European-statistical-program)  
+  McshStn000020:6037  EMOS'(European-master-in-official-statistics)  
+  McshStn000020:16151  EuCef'Digital-Service-Infrastructure-(DSI)  
+  McshStn000020:16214  EIF'European-interoperability-framework)  !⇒EuEif
+  McshStn000020:17566  EuoCom'Publications-Office|OP|service-dep  !⇒EuoPbo
+  McshStn000020:17939  SoctEuzz'decade-2030-{2021..2030}  
+  McshStn000020:17955  SoctEuzz'decade-2020-{2011..2020}  
+  McshStn000020:17974  SoctEuzz'decade-2010-{2001..2010}  
+  McshStn000020:17988  SoctEuzz'decade-2000-{1991..2000}  
+  McshStn000020:18003  SoctEuzz'decade-1990-{1981..1990}  
+  McshStn000020:18019  SoctEuzz'decade-1980-{1971..1980}  
+  McshStn000020:18032  SoctEuzz'decade-1970-{1961..1970}  
+  McshStn000020:18048  SoctEuzz'decade-1960-{1951..1960}  
+  McshStn000024:20022  StndRfc.2353-APPN/HPR-in-IP-Networks-APPN-Implementers'-Workshop-Closed-Pages-Document  
+  McshStn000024:22513  StndRfc.2635-DON'T-SPEW-A-Set-of-Guidelines-for-Mass-Unsolicited-Mailings-and-Postings-(spam*)  
+  McshStn000024:24402  StndRfc.2854-The-'text/html'-Media-Type  
+  McshStn000024:27631  StndRfc.3236-The-'application/xhtml+xml'-Media-Type  
+  McshStn000024:28860  StndRfc.3382-Internet-Printing-Protocol-(IPP):-The-'collection'-attribute-syntax  
+  McshStn000024:29264  StndRfc.3429-Assignment-of-the-'OAM-Alert-Label'-for-Multiprotocol-Label-Switching-Architecture-(MPLS)-Operation-and-Maintenance-(OAM)-Functions  
+  McshStn000024:30890  StndRfc.3619-Extreme-Networks'-Ethernet-Automatic-Protection-Switching-(EAPS)-Version-1  
+  McshStn000024:34066  StndRfc.3996-Internet-Printing-Protocol-(IPP):-The-'ippget'-Delivery-Method-for-Event-Notifications  
+  McshStn000024:37969  StndRfc.4464-Signaling-Compression-(SigComp)-Users'-Guide  
+  McshStn000024:46692  StndRfc.5517-Cisco-Systems'-Private-VLANs:-Scalable-Security-in-a-Multi-Client-Environment  
+  McshStn000024:49621  StndRfc.5870-A-Uniform-Resource-Identifier-for-Geographic-Locations-('geo'-URI)  
+  McshStn000024:50013  StndRfc.5918-Label-Distribution-Protocol-(LDP)-'Typed-Wildcard'-Forward-Equivalence-Class-(FEC)  
+  McshStn000024:50997  StndRfc.6037-Cisco-Systems'-Solution-for-Multicast-in-BGP/MPLS-IP-VPNs  
+  McshStn000024:51753  StndRfc.6129-The-'application/tei+xml'-Media-Type  
+  McshStn000024:53873  StndRfc.6381-The-'Codecs'-and-'Profiles'-Parameters-for-&#34;Bucket&#34;-Media-Types  
+  McshStn000024:54580  StndRfc.6466-IANA-Registration-of-the-'image'-Media-Type-for-the-Session-Description-Protocol-(SDP)  
+  McshStn000024:55991  StndRfc.6640-IETF-Meeting-Attendees'-Frequently-Asked-(Travel)-Questions  
+  McshStn000024:56219  StndRfc.6667-LDP-'Typed-Wildcard'-Forwarding-Equivalence-Class-(FEC)-for-PWid-and-Generalized-PWid-FEC-Elements  
+  McshStn000024:56588  StndRfc.6713-The-'application/zlib'-and-'application/gzip'-Media-Types  
+  McshStn000024:62915  StndRfc.7472-Internet-Printing-Protocol-(IPP)-over-HTTPS-Transport-Binding-and-the-'ipps'-URI-Scheme  
+  McshStn000029:1501  Maldives'(Maldive-Islands)-Rufiyaa-currency-(MVR)  
+  McshStn000029:1509  Myanmar'(Burma)-Kyat-currency-(MMK)  
+  McshStn000029:1552  Tonga-Pa'anga-currency-(TOP)  
+  McshStn000031:4516  ChnaAttraction.Mount-Tai-(5A)-Tai'an-Shandong  
+  McshStn000031:4524  ChnaAttraction.Daming-Palace-National-Heritage-Park-(5A)-Xi'an-Shaanxi  
+  McshStn000031:4733  Chna_train'hard|soft-sleeper  !⇒Chna_train'hard|soft_sleeper
+  McshStn000031:6006  Chna_econ'att083-ChnaPlan5.{2026..2030}-15  
+  McshStn000031:6007  Chna_econ'ChnaPlan5.{2026..2030}-15  
+  McshStn000031:6045  Chna_econ'att024-ChnaPlan5.{2021..2025}-14  
+  McshStn000031:6046  Chna_econ'ChnaPlan5.{2021..2025}-14  
+  McshStn000031:6080  Chna_econ'att037-ChnaPlan5.{2016..2020}-13  
+  McshStn000031:6081  Chna_econ'ChnaPlan5.{2016..2020}-13  
+  McshStn000031:6120  Chna_econ'att038-ChnaPlan5.{2011..2015}-12  
+  McshStn000031:6121  Chna_econ'ChnaPlan5.{2011..2015}-12  
+  McshStn000031:6153  Chna_econ'att039-ChnaPlan5.{2006..2010}-11  
+  McshStn000031:6154  Chna_econ'ChnaPlan5.{2006..2010}-11  
+  McshStn000031:6185  Chna_econ'att040-ChnaPlan5.{2001..2005}-10  
+  McshStn000031:6186  Chna_econ'ChnaPlan5.{2001..2005}-10  
+  McshStn000031:6224  Chna_econ'att041-ChnaPlan5.{1996..2000}-09  
+  McshStn000031:6225  Chna_econ'ChnaPlan5.{1996..2000}-09  
+  McshStn000031:6262  Chna_econ'att042-ChnaPlan5.{1991..1995}-08  
+  McshStn000031:6263  Chna_econ'ChnaPlan5.{1991..1995}-08  
+  McshStn000031:6305  Chna_econ'att043-ChnaPlan5.{1986..1990}-07  
+  McshStn000031:6306  Chna_econ'ChnaPlan5.{1986..1990}-07  
+  McshStn000031:6345  Chna_econ'att044-ChnaPlan5.{1981..1985}-06  
+  McshStn000031:6346  Chna_econ'ChnaPlan5.{1981..1985}-06  
+  McshStn000031:6383  Chna_econ'att045-ChnaPlan5.{1976..1980}-05  
+  McshStn000031:6384  Chna_econ'ChnaPlan5.{1976..1980}-05  
+  McshStn000031:6428  Chna_econ'att046-ChnaPlan5.{1971..1975}-04  
+  McshStn000031:6429  Chna_econ'ChnaPlan5.{1971..1975}-04  
+  McshStn000031:6463  Chna_econ'att047-ChnaPlan5.{1966..1970}-03  
+  McshStn000031:6464  Chna_econ'ChnaPlan5.{1966..1970}-03  
+  McshStn000031:6497  Chna_econ'att048-ChnaPlan5.{1958..1962}-02  
+  McshStn000031:6498  Chna_econ'ChnaPlan5.{1958..1962}-02  
+  McshStn000031:6532  Chna_econ'att049-ChnaPlan5.{1953..1957}-01  
+  McshStn000031:6533  Chna_econ'ChnaPlan5.{1953..1957}-01  
+  McshStn000031:6597  Chna_econ'att074-National-New-Type-Urbanization-Plan-{2014..2020}  
+  McshStn000031:6598  Chna_econ'National-New-Type-Urbanization-Plan-{2014..2020}  
+  McshStn000031:13018  SoctChna'removed-family-size-limits-{2021}  
+  McshStn000031:13024  SoctChna'COVID-19-pandemic-{2020}  
+  McshStn000031:13030  SoctChna'Constitution-removal-presidential-limits-{2018}  
+  McshStn000031:13036  SoctChna'economy-1st-by-PPP-GDP-{2016}  
+  McshStn000031:13042  SoctChna'1st-in-GDP-PPP-{2014}  
+  McshStn000031:13048  SoctChna'Xi-Jinping-General-Secretary-{2013}  
+  McshStn000031:13054  SoctChna'economy-2nd-largest-{2010}  
+  McshStn000031:13060  SoctChna'host-Olympic-Games-{2008}  
+  McshStn000031:13066  SoctChna'SASAC-creation-{2003}  
+  McshStn000031:13072  SoctChna'Hu-Jintao-General-Secretary-{2002..2012}  
+  McshStn000031:13078  SoctChna'WTO-member-{2001}  
+  McshStn000031:13084  SoctChna'Macau-returning-{1999}  
+  McshStn000031:13090  SoctChna'HongKong-returning-{1997}  
+  McshStn000031:13097  SoctChna'socialist-market-economy-{1992}  
+  McshStn000031:13103  SoctChna'Jiang-Zemin-paramount-leader-{1989.2002}  
+  McshStn000031:13109  SoctChna'Tiananmen-Square-protests-{1989}  
+  McshStn000031:13115  SoctChna'Sino-Vietnamese-war-{1979}  
+  McshStn000031:13121  SoctChna'Deng-Xiaoping-paramount-leader-{1978.1989}  
+  McshStn000031:13127  SoctChna'normalized-relations-with-Japan-{1978}  
+  McshStn000031:13133  SoctChna'Mao-Zedong-death-{1976}  
+  McshStn000031:13139  SoctChna'Nixon-visit-{1972}  
+  McshStn000031:13145  SoctChna'UN-member-{1971}  
+  McshStn000031:13176  SoctChna'enter-Korean-War-{1950..1953}  
+  McshStn000031:13190  SoctChna'PRC-creation-{1949-10-01}  
+  McshStn000031:13196  SoctChna'Mao-Zedong-paramount-leader-{1943..1976}  
+  McshStn000031:13233  SoctChna'Cultural-Revolution-{1966..1976}  
+  McshStn000031:13234  SoctChna'{1966..1976}-Cultural-Revolution  
+  McshStn000031:13269  SoctChna'Great-Leap-Forward-{1958..1961}  
+  McshStn000031:13270  SoctChna'{1958..1961}-Great-Leap-Forward  
+  McshStn000031:13291  SoctChna'three-years-of-great-famine-{1959..1961}  
+  McshStn000031:13292  SoctChna'{1959..1961}-three-years-of-great-famine  
+  McshStn000031:13449  SoctChna'May-Fourth-Movement-{1919}  
+  McshStn000031:13534  SoctChna'opium-war.first-{1839..1842}  
+  McshStn000031:13548  SoctChna'Qing-dynasty-{1644..1912}  
+  McshStn000031:13573  SoctChna'Ming-dynasty-{1368..1644}  
+  McshStn000031:13599  SoctChna'Mongols-Yuan-dynasty-{1271..1368}  
+  McshStn000031:13623  SoctChna'Jin-dynasty-{1115..1234}  
+  McshStn000031:13648  SoctChna'Song-Dynasty-{0960..1279}  
+  McshStn000031:13654  SoctChna'Tang-dynasty-{0618..0907}  
+  McshStn000031:13660  SoctChna'Sui-Dynasty-{0581..0618}  
+  McshStn000031:13666  SoctChna'Northern-and-Southern-Dynasties-{0420..0589}  
+  McshStn000031:13672  SoctChna'Jin-Dynasty-{0266..0420}  
+  McshStn000031:13678  SoctChna'Three-Kingdoms-{0220..0280}  
+  McshStn000031:13684  SoctChna'paper-{0105}  
+  McshStn000031:13691  SoctChna'Han-dynasty-{Bce0206..0220}  
+  McshStn000031:13732  McshZhon.SoctChna'Qin-dynasty-{Bce0221..Bce0206}  
+  McshStn000031:13746  SoctChna'Warring-States-period-{Bce0475..Bce0221}  
+  McshStn000031:13793  SoctChna'Spring-and-Autumn-period-{Bce0771..Bce0476}  
+  McshStn000031:13809  SoctChna'Zhou-dynasty-{Bce1046..Bce0256}  
+  McshStn000031:13826  SoctChna'Shang-dynasty-{Bce1600..Bce1046}  
+  McshStn000031:13832  SoctChna'Xia-dynasty-{Bce2070..Bce1600}  
+  McshStn000031:13838  SoctChna'agriculture-{Bce3000c}  
+  McshStn000034:275  Vnma_lago'01_input1-(mind-view)  
+  McshStn000034:292  Vnma_lago'02_input2-(senso-mind-view)  
+  McshStn000034:311  Vnma_lago'03_input3-(semu-view)  !⇒VnmaviewSemu
+  McshStn000034:332  Vnma_lago'04_output-(logo-view)  !⇒VnmaviewLogo
+  McshStn000035:239  lagoItln'01_input1-(mind-view)  
+  McshStn000035:256  lagoItln'02_input2-(senso-mind-view)  
+  McshStn000035:275  lagoItln'03_input3-(semu-view)  !⇒ItlnviewSemu
+  McshStn000035:296  lagoItln'04_output-(logo-view)  !⇒ItlnviewLogo
+  McshStn000035:2743  Itlnverb'present-perfect|simple-past  
+  McshStn000037:235  Frac_lago'01_input1-(mind-view)  
+  McshStn000037:252  Frac_lago'02_input2-(senso-mind-view)  
+  McshStn000037:271  Frac_lago'03_input3-(semu-view)  !⇒FracviewSemu
+  McshStn000037:293  Frac_lago'04_output-(logo-view)  !⇒FracviewLogo
+  McshStn000038:244  Sbul_lago'01_input1-(mind-view)  
+  McshStn000038:261  Sbul_lago'02_input2-(senso-mind-view)  
+  McshStn000038:280  Sbul_lago'03_input3-(semu-view)  !⇒SbulviewSemu
+  McshStn000038:302  Sbul_lago'04_output-(logo-view)  !⇒SbulviewLogo
+  McshStn000039:269  Sqip_lago'01_input1-(mind-view)  
+  McshStn000039:286  Sqip_lago'02_input2-(senso-mind-view)  
+  McshStn000039:305  Sqip_lago'03_input3-(semu-view)  !⇒SqipviewSemu
+  McshStn000039:328  Sqip_lago'04_output-(logo-view)  !⇒SqipviewLogo
+  McshStn000040:317  Smkd_lago'01_input1-(mind-view)  
+  McshStn000040:334  Smkd_lago'02_input2-(senso-mind-view)  
+  McshStn000040:353  Smkd_lago'03_input3-(semu-view)  !⇒SmkdviewSemu
+  McshStn000040:374  Smkd_lago'04_output-(logo-view)  !⇒SmkdviewLogo
+  McshStn000041:331  Sslv_lago'01_input1-(mind-view)  
+  McshStn000041:348  Sslv_lago'02_input2-(senso-mind-view)  
+  McshStn000041:367  Sslv_lago'03_input3-(semu-view)  !⇒SslvviewSemu
+  McshStn000041:388  Sslv_lago'04_output-(logo-view)  !⇒SslvviewLogo
+  McshStn000042:3356  Chnaeduc'Education-Informatization-2.0-Plan-(2018-2022)--of-PRC  !⇒Education_Informatization_2.0_Plan
+  McshStn000042:3694  ChnaSchoolBook'China-Education-Publishing-&-Media-Group-Ltd  
+  McshStn000042:5391  IIOE'Building-Your-Own-AI-Chatbot:-From-Basics-to-Implementation  
+  McshStn000043:222  Srus_lago'01_input1-(mind-view)  
+  McshStn000043:239  Srus_lago'02_input2-(senso-mind-view)  
+  McshStn000043:258  Srus_lago'03_input3-(semu-view)  !⇒SrusviewSemu
+  McshStn000043:279  Srus_lago'04_output-(logo-view)  !⇒SrusviewLogo
+  McshStn000044:260  Romn_lago'01_input1-(mind-view)  
+  McshStn000044:277  Romn_lago'02_input2-(senso-mind-view)  
+  McshStn000044:296  Romn_lago'03_input3-(semu-view)  !⇒RomnviewSemu
+  McshStn000044:317  Romn_lago'04_output-(logo-view)  !⇒RomnviewLogo
+  McshStn000048:309  Jpns_lago'01_input1-(mind-view)  
+  McshStn000048:326  Jpns_lago'02_input2-(senso-mind-view)  
+  McshStn000048:345  Jpns_lago'03_input3-(semu-view)  !⇒JpnsviewSemu
+  McshStn000048:366  Jpns_lago'04_output-(logo-view)  !⇒JpnsviewLogo
+  McshStn000050:298  Khmr_lago'01_input1-(mind-view)  
+  McshStn000050:315  Khmr_lago'02_input2-(senso-mind-view)  
+  McshStn000050:334  Khmr_lago'03_input3-(semu-view)  !⇒KhmrviewSemu
+  McshStn000050:355  Khmr_lago'04_output-(logo-view)  !⇒KhmrviewLogo
+  McshStnlaw000003:760  Celex_nbr'sector-(1-digit|letter)  
+  McshStnlaw000003:761  Celex_nbr'01_sector-(1-digit|letter)  
+  McshStnlaw000003:777  Celex_nbr'year-(4-digits)  
+  McshStnlaw000003:778  Celex_nbr'02_year-(4-digits)  
+  McshStnlaw000003:810  Celex_nbr'doctype-(1|2-letters)  
+  McshStnlaw000003:811  Celex_nbr'03_doctype-(1|2-letters)  
+  McshStnlaw000003:828  Celex_nbr'docnbr-(4-digits)  
+  McshStnlaw000003:829  Celex_nbr'04_docnbr-(4-digits)  
+  McshStnlaw000004:2094  lawIntl.Universal_declaration_of_human_rights_(Unudhr)'generic-specific-tree  
+  McshStnlaw000004:2095  lawIntl.Universal_declaration_of_human_rights_(Unudhr)'specific-generic-tree  
+  McshTchInf000007:1105  FCA'(formal-concept-analysis)  
+  McshTchInf000008:3831  Hitp_lago'v18-{2021-05-25}-module  
+  McshTchInf000008:3840  Hitp_lago'v17-{2018-09-17}-search-scalability  
+  McshTchInf000008:3847  Hitp_lago'v16-{2017-06-05}-Mcs-searching  
+  McshTchInf000008:3861  Hitp_lago'v15-{2016-10-27}-any-machine-size  
+  McshTchInf000008:3868  Hitp_lago'v14-{2016-06-09}-recursive-document  
+  McshTchInf000008:3875  Hitp_lago'v13-{2016-06-07}.preview  
+  McshTchInf000008:3881  Hitp_lago'v12-{2016-01-24}-Toc-icons  
+  McshTchInf000008:3889  Hitp_lago'v11-{2015-10-26}-user-preferences  
+  McshTchInf000008:3907  Hitp_lago'v10-{2014-08-05}-JavaScript-with-valuenames  
+  McshTchInf000008:3914  Hitp_lago'v09-{2014-08-02}-no-jQuery  
+  McshTchInf000008:3922  Hitp_lago'v08-{2014-01-09}-Toc  
+  McshTchInf000008:3928  Hitp_lago'v07-{2013-11-06}-tabs  
+  McshTchInf000008:3934  Hitp_lago'v06-{2013-08-21}-site-structure  
+  McshTchInf000008:3943  Hitp_lago'v05-{2013-07-15}-Toc-algo  
+  McshTchInf000008:3951  Hitp_lago'v04-{2013-06-27}-Hitp  
+  McshTchInf000008:3957  Hitp_lago'v03-{2013-04-14}-Html5.Id.Toc.Preview  
+  McshTchInf000008:3966  Hitp_lago'v02-{2013-04-01}-Html5.Id.Toc  
+  McshTchInf000008:3973  Hitp_lago'v01-{2011-02-17}-Html5.Id  
+  McshTchInf000010:2761  Jsgn_lago'+(addition-operator)  
+  McshTchInf000010:2931  IIFE'(immediately-invoked-function-expression)//JavaScript  
+  McshTchInf000010:3157  Number.prototype'toLocaleString-function//JavaScript  
+  McshTchInf000010:4130  Jsgn_lago'Wpt-API(JavaScript--whole-part-tree-API)  !⇒Jsmwo'whole_part_tree
+  McshTchInf000010:5591  Jsgn_lago'array-of-array.sort//JavaScript  
+  McshTchInf000011:885  Jsbr_lago'o-(Browser-js-object)  !⇒Jsbro
+  McshTchInf000011:933  Jsbr_lago'r-(Browser-js-regexp)  
+  McshTchInf000011:959  Jsbr_lago'u-(Browser-js-undefined)  
+  McshTchInf000011:973  Jsbr_lago'nvp-(name-value-pair)  
+  McshTchInf000011:988  Jsbr_lago'x-(Mixed-sut)  
+  McshTchInf000011:1485  Jsbr_lago'wpt-(whole-part-tree-of-API)  !⇒Jsbrwptr
+  McshTchInf000011:2727  Jsbr_lago'lbr-(library)  !⇒Jsbrlib
+  McshTchInf000011:4049  Jsbr_lago'DOM-(Document-Object-Model)  
+  McshTchInf000011:4050  Jsbr_lago'Document-Object-Model-(DOM)  
+  McshTchInf000012:248  Jsnd_lago'Sut'(Node.js-semantic-unit)  !⇒Jsndsut
+  McshTchInf000012:745  Jsnd_lago'mobt-(module-object)  !⇒Jsndmcmodule
+  McshTchInf000012:3252  Jsnd_lago'Mwo'(most-whole-object)  !⇒Jsndmwo
+  McshTchInf000012:3370  Jsnd_lago'wpt-of-apiNtv-(whole-part-tree)  !⇒Jsndwpt
+  McshTchInf000012:3525  Jsnd_lago'Mgo'(most-generic-object)  !⇒Jsndmgo
+  McshTchInf000015:4972  NFT'(Non-Fungible-Token)  
+  McshTchInf000015:6732  DeApp'DAU-(daily-active-user)  
+  McshTchInf000015:6734  DeApp'daily-active-user-(DAU)  
+  McshTchInf000015:13277  DIF'(decentralized-identity-foundation)  
+  McshTchInf000016:9389  waves-net'Service-(wavsvc).DEX  !⇒wavsvc.DEX
+  McshTchInf000017:924  AgntBtcn'BIP-(Bitcoin-Improvement-Proposals)  
+  McshTchInf000017:925  AgntBtcn'Bitcoin-Improvement-Proposals-(BIP)  
+  McshTchInf000017:926  Bitcoin-prcl'BIP-(Bitcoin-Improvement-Proposals)  
+  McshTchInf000017:5928  AgntBtcn'cBTC-(1/100-BTC)  
+  McshTchInf000017:5943  AgntBtcn'mBTC-(1/1000-BTC)  
+  McshTchInf000017:6198  AgntBtcn'SPV-(Bitcoin-simplified-payment-verification)  
+  McshTchInf000017:6307  AgntBtcn'core-(Bitcoin-core)  
+  McshTchInf000017:6441  AgntBtcn'RPC-(Bitcoin-remote-procedure-call)  
+  McshTchInf000017:8783  AgntBtcn'law-(Bitcoin-law)  
+  McshTchInf000018:1673  DnEth-block'H-(Ethereu-block-header)  
+  McshTchInf000018:1964  DnEth-block'T-(Ethereu-block-transaction-list)  
+  McshTchInf000018:1980  DnEth-block'U-(Ethereu-block-ommer-list)  
+  McshTchInf000018:2561  DnEth-tx'v-(value)  
+  McshTchInf000018:2562  DnEth-tx'Tw-(value)  
+  McshTchInf000018:6181  Ethereum_tflcmd_(truffle_command)'generic-specific-tree  
+  McshTchInf000018:6182  Ethereum_tflcmd_(truffle_command)'specific-generic-tree  
+  McshTchInf000018:12500  AgntEthr'resource-(Ethereum-resource)  !⇒AgntEthrinfrsc
+  McshTchInf000018:12529  AgntEthr'resource.EIP-(Ethereum-Improvement-Proposal)  
+  McshTchInf000018:12530  AgntEthr'EIP-(Ethereum-Improvement-Proposal)  
+  McshTchInf000018:12531  AgntEthr'Ethereum-Improvement-Proposal-(EIP)  
+  McshTchInf000018:12549  AgntEthr'resource.ERC-(Ethereum-Request-for-Comment)  
+  McshTchInf000018:12550  AgntEthr'ERC-(Ethereum-Request-for-Comment)  
+  McshTchInf000018:12551  AgntEthr'Ethereum-Request-for-Comment-(ERC)  
+  McshTchInf000021:1292  Agnteos'NET|bandwidth-resource  
+  McshTchInf000021:1554  Deos_tx'transaction-per-second-(tps)  
+  McshTchInf000026:678  Blockstack-net'TLD-(Top-Level-Domain)  !⇒Blockstack_namespace
+  McshTchInf000030:1803  Rust_lago'%37--opr  
+  McshTchInf000030:1818  Rust_lago'%=3761--opr  
+  McshTchInf000030:1835  Rust_lago'&amp;38--opr  
+  McshTchInf000030:1850  Rust_lago'&amp;=3861--opr  
+  McshTchInf000030:1865  Rust_lago'&amp;&amp;3838--opr  
+  McshTchInf000030:1882  Rust_lago'*42--opr  
+  McshTchInf000030:1897  Rust_lago'*=4261--opr  
+  McshTchInf000030:1913  Rust_lago'+43--opr  
+  McshTchInf000030:1928  Rust_lago'+=4361--opr  
+  McshTchInf000030:1943  Rust_lago'&#44;44--opr  
+  McshTchInf000030:1975  Rust_lago'=4561--opr  
+  McshTchInf000030:1990  Rust_lago'->4562--opr  
+  McshTchInf000030:1993  Rust_lago'opr.->4562  
+  McshTchInf000030:2038  Rust_lago'..=464661--opr  
+  McshTchInf000030:2068  Rust_lago'/47--opr  
+  McshTchInf000030:2083  Rust_lago'/=4761--opr  
+  McshTchInf000030:2100  Rust_lago':58--opr  
+  McshTchInf000030:2116  Rust_lago';59--opr  
+  McshTchInf000030:2131  Rust_lago';6060--opr  
+  McshTchInf000030:2146  Rust_lago';606061--opr  
+  McshTchInf000030:2161  Rust_lago';60--opr  
+  McshTchInf000030:2176  Rust_lago';6061--opr  
+  McshTchInf000030:2191  Rust_lago'=61--opr  
+  McshTchInf000030:2206  Rust_lago'==6161--opr  
+  McshTchInf000030:2221  Rust_lago'=>6162--opr  
+  McshTchInf000030:2236  Rust_lago'>62--opr  
+  McshTchInf000030:2251  Rust_lago'>=6261--opr  
+  McshTchInf000030:2266  Rust_lago'>>6262--opr  
+  McshTchInf000030:2281  Rust_lago'>>=626261--opr  
+  McshTchInf000030:2296  Rust_lago'@64--opr  
+  McshTchInf000030:2311  Rust_lago'^94--opr  
+  McshTchInf000030:2326  Rust_lago'^=9461--opr  
+  McshTchInf000030:2342  Rust_lago'|124--opr  
+  McshTchInf000030:2357  Rust_lago'|=12461--opr  
+  McshTchInf000030:2372  Rust_lago'||124124--opr  
+  McshTchInf000030:2387  Rust_lago'?63--opr  
+  McshTchInf000030:3271  Rust_lago_prelude'std::string::String-struct  !⇒Rust_lago_String
+  McshTchInf000030:3294  Rust_lago_prelude'std::vec::Vec-struct  !⇒Rust_lago_Vec
+  McshTchInf000031:2541  C++-STL'header-file  !⇒C++_STL'header_file
+  McshTchInf000035:67  Html_lago'output-doc(webpage)  !⇒Html_doc
+  McshTchInf000036:5393  ANI'(Artificial-Narrow-Inteligence)  
+  McshTchInf000036:5394  ASI'(Artificial-Specific-Inteligence)  
+  McshTchInf000036:5515  ASI'(Artificial-Superintelligence)  
+  McshTchInf000039:3673  ACE'(attempto-controlled-English)-lagoCdnl  
+  McshTchInf000039:3674  CLCE'(common-logic-controlled-English)-lagoCdnl  
+  McshTchInf000039:3676  CPL'(computer-processable-language)-lagoCdnl  
+  McshTchInf000039:3679  PENG'(processable-English)-lagoCdnl  
+  McshTchInf000039:3681  SOS'(Sydney-OWL-Syntax)-lagoCdnl  
+  McshTchInf000039:6771  klmrCyc'TMS'(truth-maintenance-system)  
+  McshTchInf000039:6881  Cycl_lago'FORT'(first-order-reified-term)  !⇒Cyclfort
+  McshTchInf000039:6913  Cycl_lago'NAT'(non-atomic-term)  !⇒Cyclnat
+  McshTchInf000039:6956  Cycl_lago'IBQE'(interval-based-quantity-expression)  
+  McshTchInf000039:7540  Cyclassertion'CNF-(conjunctive-normal-form)  
+  McshTchInf000039:7542  Cycl_lago'CNF-(conjunctive-normal-form)  
+  McshTchInf000039:8254  Cycl_lago.EL'(expressive-language)  
+  McshTchInf000039:8277  Cycl_lago.HL'(heuristic-language)  
+  McshTchInf000039:10293  SKOS'(simple-knowledge-organization-system)  
+  McshTchInf000039:12777  datatype@Rdfw_lago'lexical-space  
+  McshTchInf000039:12793  datatype@Rdfw_lago'value-space  
+  McshTchInf000039:12809  datatype@Rdfw_lago'lexical-to-value-mapping  
+  McshTchInf000039:14559  CDF'(computable-document-format)  
+  McshTchInf000039:14561  Wlfm_lago'CDF'(computable-document-format)  
+  McshTchInf000039:14889  Wlfmloutput'expression-(en)  !⇒Wlfmlen
+  McshTchInf000039:15315  Wlfmloutput'atom-(am)  !⇒Wlfmlam
+  McshTchInf000039:15786  Wlfmloutput'function-(fn)  !⇒Wlfmlfn
+  McshTchInf000039:15918  Wlfmloutput'list-(lt)  !⇒Wlfmllt
+  McshTchInf000039:15979  Wlfmloutput'association-(an)  !⇒Wlfmlan
+  McshTchInf000039:16054  Wlfmloutput'pattern-(pn)  !⇒Wlfmlpn
+  McshTchInf000039:16388  Wlfm_lago'NLU'(natural-language-understanding)  
+  McshTchInf000039:16390  Wlfm_lago'natural-language-understanding)  
+  McshTchInf000041:461  Vscchat'/create-prompt  
+  McshTchInf000041:465  Vscchat'/create-instruction  
+  McshTchInf000041:469  Vscchat'/create-skill  
+  McshTchInf000041:473  Vscchat'/create-agent  
+  McshTchInf000041:477  Vscchat'/create-hook  
+
+=== APOSTROPHE (263) — ' inside a word, not an attribute (Bowman's-capsule, I-don't-understand)
+  McshCor000003:580  entity's-attribute  !⇒RltnEntityThenAttribute
+  McshCor000005:2464  that's-why  !⇒causeDeictic
+  McshCor000008:226  whole's-part  !⇒part
+  McshCor000012:1298  society's-modelCmpr  
+  McshHlth000002:457  bodyHumn'Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:458  bodyHumn'neck'03_Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:459  bodyHumn'neck'Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:460  bodyHumn'att066-Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:461  Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:462  Hmbdneck'03_Adam's-apple  !⇒HmbdAdam_apple
+  McshHlth000002:11732  Bowman's-capsule  !⇒Bowman's_capsule
+  McshHlth000002:11733  OganKidney'Bowman's-capsule  !⇒Bowman's_capsule
+  McshHlth000002:11734  OganKidney'att009-Bowman's-capsule  !⇒Bowman's_capsule
+  McshHlth000002:11735  OganKidney'bowman's-capsule  !⇒Bowman's_capsule
+  McshHlth000002:11742  Bowman's-capsule//OganKidney  
+  McshHlth000002:11745  Bowman's-capsule_Wltr  
+  McshHlth000002:11760  Bowman's-capsule'structure  !⇒Bowman's_capsulesrtr
+  McshHlth000002:13334  peyer's-patches  
+  McshHlth000003:410  Broca's-area  
+  McshHlth000003:412  Broca's-area//lobeFrontal  
+  McshHlth000003:413  lobeFrontal/Broca's-area  
+  McshHlth000003:414  OganBrain'att065-Broca's-area  
+  McshHlth000003:415  OganBrain'Broca's-area  
+  McshHlth000003:416  lobeFrontal'Broca's-area  
+  McshHlth000003:758  Wernicke's-area//lobeTemporal  
+  McshHlth000003:760  lobeTemporal/Wernicke's-area  
+  McshHlth000003:761  OganBrain'att066-Wernicke's-area  
+  McshHlth000003:762  OganBrain'Wernicke's-area  
+  McshHlth000003:763  lobeTemporal'Wernicke's-area  
+  McshLag000007:1230  language's-concept--of-Hmnm_lago  !⇒Hmnmsemucnpt
+  McshLag000007:19224  term's-form  !⇒TerbForm
+  McshLag000007:19432  term's-formation  !⇒term'creating
+  McshLag000011:19139  Engl_verb_idiv.196-let's-write  !@McshLag000011#idLEnglverb196
+  McshLag000011:22958  Englverb_idiv.196-let's-write  
+  McshLag000011:22960  Englverb_idiv.let's-write  
+  McshLag000011:22961  let's-write-Englverb_idiv.196  
+  McshLag000011:24444  Engl_verb_idiv.196-let's-write
+  McshLag000011:24447  let's-Englverb_auxi  
+  McshLag000016:118  Don't-Repeat-Yourself  !=DRY
+  McshLag000017:26134  lagoNgatik-Men's-Creole-L--ngm.Iso3  
+  McshLag000018:16514  Zhon_expr.I-don't-understand  !=wǒ-bù-míngbái-我不明白
+  McshLag000018:16515  I-don't-understand.lagoZhon  !=wǒ-bù-míngbái-我不明白
+  McshLag000018:16526  Zhon_expr.what's-your-name  !=nǐ-jiào-shénme-míngzì-你叫什么名字
+  McshLag000018:16527  what's-your-name.lagoZhon  !=nǐ-jiào-shénme-míngzì-你叫什么名字
+  McshLag000020:12683  Elln_expr.I-don't-understand  !=δεν-καταλαβαίνω
+  McshLag000020:12684  I-don't-understand.lagoElln  !=δεν-καταλαβαίνω
+  McshLag000020:12693  Elln_expr.what's-your-name  !=πως είναι το-όνομά σας
+  McshLag000020:12694  what's-your-name.lagoElln  !=πως είναι το-όνομά σας
+  McshLag000033:3499  DeutExpr.I-don't-understand  !=Ich-verstehe-nicht
+  McshLag000033:3500  I-don't-understand.lagoDeut  !=Ich-verstehe-nicht
+  McshLag000033:3509  DeutExpr.what's-your-name  !=Wie-heißen-Sie
+  McshLag000033:3510  what's-your-name.lagoDeut  !=Wie-heißen-Sie
+  McshLag000034:2453  BcmsExpr.I-don't-understand  
+  McshLag000034:2454  I-don't-understand.lagoSbos  !=ne-razumijem
+  McshLag000034:2455  I-don't-understand.lagoShrv  !=ne-razumijem
+  McshLag000034:2456  I-don't-understand.lagoScnr  !=ne razumijem
+  McshLag000034:2457  I-don't-understand.lagoSsrp  !=не разумем
+  McshLag000034:2477  BcmsExpr.what's-your-name  
+  McshLag000034:2478  what's-your-name.lagoSbos  !=kako se zoveš
+  McshLag000034:2479  what's-your-name.lagoShrv  !=kako-se-zoves
+  McshLag000034:2480  what's-your-name.lagoScnr  !=kako se zoveš
+  McshLag000034:2481  what's-your-name.lagoSsrp  !=како се зовеш
+  McshLag000035:2283  SpanExpr.I-don't-understand  !=no-entiendo
+  McshLag000035:2284  I-don't-understand.lagoSpan  !=no-entiendo
+  McshLag000035:2293  SpanExpr.what's-your-name  !=cómo-te-llamas
+  McshLag000035:2294  what's-your-name.lagoSpan  !=cómo-te-llamas
+  McshLag000036:2738  ArabExpr.I-don't-understand  !=لا أفهم
+  McshLag000036:2739  I-don't-understand.lagoArab  !=لا أفهم
+  McshLag000036:2748  ArabExpr.what's-your-name  !=ما اسمك؟
+  McshLag000036:2749  what's-your-name.lagoArab  !=ما اسمك؟
+  McshLag000037:4495  HindExpr.I-don't-understand  !=मैं-नहीं-समझता
+  McshLag000037:4496  I-don't-understand.lagoHind  !=मैं-नहीं-समझता
+  McshLag000037:4505  HindExpr.what's-your-name  !=तुम्हारा-नाम-क्या-है
+  McshLag000037:4506  what's-your-name.lagoHind  !=तुम्हारा-नाम-क्या-है
+  McshLag000043:3339  KoraExpr.I-don't-understand  !=모르겠어요-moleugess-eoyo
+  McshLag000043:3340  I-don't-understand.lagoKora  !=모르겠어요-moleugess-eoyo
+  McshLag000043:3349  KoraExpr.what's-your-name  !=도와주시겠어요?-dowajusigess-eoyo?
+  McshLag000043:3350  what's-your-name.lagoKora  !=도와주시겠어요?-dowajusigess-eoyo?
+  McshNtr000003:39  chemical-element's-atom  !⇒MtrlAtom
+  McshOgm000003:618  influence-of--organism's-behavior  
+  McshOgm000010:1773  St-John's-wort  !⇒plantHypericum_perforatum
+  McshOgm000010:1774  common-St-John's-wort  !⇒plantHypericum_perforatum
+  McshOgm000010:1778  perforate-St-John's-wort  !⇒plantHypericum_perforatum
+  McshStn000009:6116  people's-sense-of-security  
+  McshStn000009:8413  People's-Republic-of-China-{1949..}  !@McshStn000031
+  McshStn000009:11841  SoctKorea-Democratic-People's-Republic-of--PRK.Iso3  
+  McshStn000009:11845  SoctLao-People's-Democratic-Republic--LAO.Iso3  
+  McshStn000009:12347  soc4.Korea-Democratic-People's-Republic-of  !=Prka
+  McshStn000009:12351  soc4.Lao-People's-Democratic-Republic  !=Laoa
+  McshStn000012:2564  economy's-law  !⇒lawEconomy
+  McshStn000017:4588  StndW3c.Identifiers-for-WebRTC's-Statistics-API  !⇒StndW3c.0052
+  McshStn000017:13826  StndW3c.SVG's-XML-Binding-Language-(sXBL)  !⇒StndW3c.0902
+  McshStn000024:415  StndRfc.0032-Some-Thoughts-on-SRI's-Proposed-Real-Time-Clock  
+  McshStn000024:542  StndRfc.0047-BBN's-Comments-on-NWG/RFC-#33  
+  McshStn000024:851  StndRfc.0084-List-of-NWG/RFC's-1-80  
+  McshStn000024:936  StndRfc.0095-Distribution-of-NWG/RFC's-through-the-NIC  
+  McshStn000024:1169  StndRfc.0122-Network-specifications-for-UCSB's-Simple-Minded-File-System  
+  McshStn000024:1984  StndRfc.0216-Telnet-Access-to-UCSB's-On-Line-System  
+  McshStn000024:2009  StndRfc.0219-User's-View-of-the-Datacomputer  
+  McshStn000024:2030  StndRfc.0222-Subject:-System-programmer's-workshop  
+  McshStn000024:2107  StndRfc.0231-Service-center-standards-for-remote-usage:-A-user's-view  
+  McshStn000024:3508  StndRfc.0409-Tenex-interface-to-UCSB's-Simple-Minded-File-System  
+  McshStn000024:3991  StndRfc.0472-Illinois'-reply-to-Maxwell's-request-for-graphics-information-(NIC-14925)  
+  McshStn000024:4201  StndRfc.0499-Harvard's-network-RJE  
+  McshStn000024:4440  StndRfc.0531-Feast-or-famine?-A-response-to-two-recent-RFC's-about-network-information  
+  McshStn000024:6747  StndRfc.0828-Data-communications:-IFIP's-international-&#34;network&#34;-of-experts  
+  McshStn000024:8656  StndRfc.1044-Internet-Protocol-on-Network-System's-HYPERchannel:-Protocol-Specification  
+  McshStn000024:10467  StndRfc.1251-Who's-Who-in-the-Internet:-Biographies-of-IAB--IESG-and-IRSG-Members  
+  McshStn000024:10796  StndRfc.1290-There's-Gold-in-them-thar-Networks  !-or-Searching-for-Treasure-in-all-the-Wrong-Places
+  McshStn000024:10993  StndRfc.1313-Today's-Programming-for-KRFC-AM-1313-Internet-Talk-Radio  
+  McshStn000024:11201  StndRfc.1336-Who's-Who-in-the-Internet:-Biographies-of-IAB--IESG-and-IRSG-Members  
+  McshStn000024:11780  StndRfc.1402-There's-Gold-in-them-thar-Networks  !-or-Searching-for-Treasure-in-all-the-Wrong-Places
+  McshStn000024:13731  StndRfc.1627-Network-10-Considered-Harmful-(Some-Practices-Shouldn't-be-Codified)  
+  McshStn000024:14254  StndRfc.1687-A-Large-Corporate-User's-View-of-IPng  
+  McshStn000024:14828  StndRfc.1754-IP-over-ATM-Working-Group's-Recommendations-for-the-ATM-Forum's-Multiprotocol-BOF-Version-1  
+  McshStn000024:16377  StndRfc.1934-Ascend's-Multilink-Protocol-Plus-(MP+)  
+  McshStn000024:16831  StndRfc.1987-Ipsilon's-General-Switch-Management-Protocol-Specification-Version-1.1  
+  McshStn000024:16839  StndRfc.1988-Conditional-Grant-of-Rights-to-Specific-Hewlett-Packard-Patents-In-Conjunction-With-the-Internet-Engineering-Task-Force's-Internet-Standard-Network-Management-Framework  
+  McshStn000024:17202  StndRfc.2029-RTP-Payload-Format-of-Sun's-CellB-Video-Encoding  
+  McshStn000024:17800  StndRfc.2098-Toshiba's-Router-Architecture-Extensions-for-ATM-:-Overview  
+  McshStn000024:18023  StndRfc.2124-Cabletron's-Light-weight-Flow-Admission-Protocol-Specification-Version-1.0  
+  McshStn000024:18064  StndRfc.2129-Toshiba's-Flow-Attribute-Notification-Protocol-(FANP)-Specification  
+  McshStn000024:18392  StndRfc.2166-APPN-Implementer's-Workshop-Closed-Pages-Document-DLSw-v2.0-Enhancements  
+  McshStn000024:18581  StndRfc.2188-AT&T/Neda's-Efficient-Short-Remote-Operations-(ESRO)-Protocol-Specification-Version-1.2  
+  McshStn000024:19545  StndRfc.2297-Ipsilon's-General-Switch-Management-Protocol-Specification-Version-2.0  
+  McshStn000024:19908  StndRfc.2340-Nortel's-Virtual-Network-Switching-(VNS)-Overview  
+  McshStn000024:20048  StndRfc.2356-Sun's-SKIP-Firewall-Traversal-for-Mobile-IP  
+  McshStn000024:20560  StndRfc.2414-Increasing-TCP's-Initial-Window  
+  McshStn000024:20861  StndRfc.2448-AT&T's-Error-Resilient-Video-Transmission-Technique  
+  McshStn000024:21196  StndRfc.2485-DHCP-Option-for-The-Open-Group's-User-Authentication-Protocol  
+  McshStn000024:21533  StndRfc.2524-Neda's-Efficient-Mail-Submission-and-Delivery-(EMSD)-Protocol-Specification-Version-1.3  
+  McshStn000024:22050  StndRfc.2582-The-NewReno-Modification-to-TCP's-Fast-Recovery-Algorithm  
+  McshStn000024:22410  StndRfc.2623-NFS-Version-2-and-Version-3-Security-Issues-and-the-NFS-Protocol's-Use-of-RPCSEC_GSS-and-Kerberos-V5  
+  McshStn000024:22547  StndRfc.2639-Internet-Printing-Protocol/1.0:-Implementer's-Guide  
+  McshStn000024:22564  StndRfc.2641-Cabletron's-VlanHello-Protocol-Specification-Version-4  
+  McshStn000024:22572  StndRfc.2642-Cabletron's-VLS-Protocol-Specification  
+  McshStn000024:22580  StndRfc.2643-Cabletron's-SecureFast-VLAN-Operational-Model  
+  McshStn000024:25548  StndRfc.2988-Computing-TCP's-Retransmission-Timer  
+  McshStn000024:26013  StndRfc.3042-Enhancing-TCP's-Loss-Recovery-Using-Limited-Transmit  
+  McshStn000024:26442  StndRfc.3094-Tekelec's-Transport-Adapter-Layer-Interface  
+  McshStn000024:26989  StndRfc.3160-The-Tao-of-IETF---A-Novice's-Guide-to-the-Internet-Engineering-Task-Force  
+  McshStn000024:27129  StndRfc.3176-InMon-Corporation's-sFlow:-A-Method-for-Monitoring-Traffic-in-Switched-and-Routed-Networks  
+  McshStn000024:27305  StndRfc.3196-Internet-Printing-Protocol/1.1:-Implementor's-Guide  
+  McshStn000024:28928  StndRfc.3390-Increasing-TCP's-Initial-Window  
+  McshStn000024:29212  StndRfc.3423-XACCT's-Common-Reliable-Accounting-for-Network-Element-(CRANE)-Protocol-Specification-Version-1.0  
+  McshStn000024:32288  StndRfc.3782-The-NewReno-Modification-to-TCP's-Fast-Recovery-Algorithm  
+  McshStn000024:36747  StndRfc.4320-Actions-Addressing-Identified-Issues-with-the-Session-Initiation-Protocol's-(SIP)-Non-INVITE-Transaction  
+  McshStn000024:36755  StndRfc.4321-Problems-Identified-Associated-with-the-Session-Initiation-Protocol's-(SIP)-Non-INVITE-Transaction  
+  McshStn000024:36851  StndRfc.4332-Cisco's-Mobile-IPv4-Host-Configuration-Extensions  
+  McshStn000024:37160  StndRfc.4367-What's-in-a-Name:-False-Assumptions-about-DNS-Names  
+  McshStn000024:37416  StndRfc.4397-A-Lexicography-for-the-Interpretation-of-Generalized-Multiprotocol-Label-Switching-(GMPLS)-Terminology-within-the-Context-of-the-ITU-T's-Automatically-Switched-Optical-Network-(ASON)-Architecture  
+  McshStn000024:38604  StndRfc.4540-NEC's-Simple-Middlebox-Configuration-(SIMCO)-Protocol-Version-3.0  
+  McshStn000024:39312  StndRfc.4626-MIB-for-Fibre-Channel's-Fabric-Shortest-Path-First-(FSPF)-Protocol  
+  McshStn000024:39742  StndRfc.4677-The-Tao-of-IETF---A-Novice's-Guide-to-the-Internet-Engineering-Task-Force  
+  McshStn000024:40563  StndRfc.4777-IBM's-iSeries-Telnet-Enhancements  
+  McshStn000024:43203  StndRfc.5093-BT's-eXtended-Network-Quality-RTP-Control-Protocol-Extended-Reports-(RTCP-XR-XNQ)  
+  McshStn000024:45820  StndRfc.5411-A-Hitchhiker's-Guide-to-the-Session-Initiation-Protocol-(SIP)  
+  McshStn000024:46242  StndRfc.5461-TCP's-Reaction-to-Soft-Errors  
+  McshStn000024:47073  StndRfc.5562-Adding-Explicit-Congestion-Notification-(ECN)-Capability-to-TCP's-SYN/ACK-Packets  
+  McshStn000024:47650  StndRfc.5632-Comcast's-ISP-Experiences-in-a-Proactive-Network-Provider-Participation-for-P2P-(P4P)-Technical-Trial  
+  McshStn000024:48967  StndRfc.5786-Advertising-a-Router's-Local-Addresses-in-OSPF-Traffic-Engineering-(TE)-Extensions  
+  McshStn000024:50379  StndRfc.5961-Improving-TCP's-Robustness-to-Blind-In-Window-Attacks  
+  McshStn000024:51171  StndRfc.6057-Comcast's-Protocol-Agnostic-Congestion-Management-System  
+  McshStn000024:51570  StndRfc.6108-Comcast's-Web-Notification-System-Design  
+  McshStn000024:52112  StndRfc.6171-The-Lightweight-Directory-Access-Protocol-(LDAP)-Don't-Use-Copy-Control  
+  McshStn000024:53029  StndRfc.6281-Understanding-Apple's-Back-to-My-Mac-(BTMM)-Service  
+  McshStn000024:53173  StndRfc.6298-Computing-TCP's-Retransmission-Timer  
+  McshStn000024:55530  StndRfc.6582-The-NewReno-Modification-to-TCP's-Fast-Recovery-Algorithm  
+  McshStn000024:57943  StndRfc.6875-The-P2P-Network-Experiment-Council's-Activities-and-Experiments-with-Application-Layer-Traffic-Optimization-(ALTO)-in-Japan  
+  McshStn000024:58125  StndRfc.6896-SCS:-KoanLogic's-Secure-Cookie-Sessions-for-HTTP  
+  McshStn000024:58373  StndRfc.6928-Increasing-TCP's-Initial-Window  
+  McshStn000024:59083  StndRfc.7016-Adobe's-Secure-Real-Time-Media-Flow-Protocol  
+  McshStn000024:59583  StndRfc.7076-P6R's-Secure-Shell-Public-Key-Subsystem  
+  McshStn000024:59674  StndRfc.7087-A-Thesaurus-for-the-Interpretation-of-Terminology-Used-in-MPLS-Transport-Profile-(MPLS-TP)-Internet-Drafts-and-RFCs-in-the-Context-of-the-ITU-T's-Transport-Network-Recommendations  
+  McshStn000024:62521  StndRfc.7425-Adobe's-RTMFP-Profile-for-Flash-Communication  
+  McshStn000024:64065  StndRfc.7609-IBM's-Shared-Memory-Communications-over-RDMA-(SMC-R)-Protocol  
+  McshStn000024:66240  StndRfc.7868-Cisco's-Enhanced-Interior-Gateway-Routing-Protocol-(EIGRP)  
+  McshStn000024:66556  StndRfc.7906-NSA's-Cryptographic-Message-Syntax-(CMS)-Key-Management-Attributes  
+  McshStn000024:68656  StndRfc.8157-Huawei's-GRE-Tunnel-Bonding-Protocol  
+  McshStn000024:71429  StndRfc.8488-RIPE-NCC's-Implementation-of-Resource-Public-Key-Infrastructure-(RPKI)-Certificate-Tree-Validation  
+  McshStn000024:73675  StndRfc.8764-Apple's-DNS-Long-Lived-Queries-Protocol  
+  McshStn000031:50  People's-Republic-of-China-{1949..}  !⇒SoctChna
+  McshStn000031:57  People's-Republic-of-China  !⇒SoctChna
+  McshStn000031:2227  ChnaFood.Xiangxi-Grandma's-Dish  
+  McshStn000031:2897  currency-of-People's-Republic-of-China  !⇒ChnaRmb
+  McshStn000031:3911  people's-daily-of-SoctChna  !⇒people's_daily_of_SocChna
+  McshStn000031:3912  Chna_econ'att027-people's-daily  !⇒people's_daily_of_SocChna
+  McshStn000031:3913  Chna_econ'people's-daily  !⇒people's_daily_of_SocChna
+  McshStn000031:3914  Chnammedia'people's-daily  !⇒people's_daily_of_SocChna
+  McshStn000031:4520  ChnaAttraction.Emperor-Qinshihuang's-Mausoleum-Site-Museum-(Terracotta-Army-Museum)-(5A)-Xi'an-Shaanxi  
+  McshStn000031:5353  People's-Liberation-Army-of-SoctChna  !⇒Chnapla
+  McshStn000031:5356  Chna_econ'att055-People's-Liberation-Army  !⇒Chnapla
+  McshStn000031:5357  Chna_econ'People's-Liberation-Army  !⇒Chnapla
+  McshStn000031:5359  ChnasectorPublic'People's-Liberation-Army  !⇒Chnapla
+  McshStn000031:6727  people's-democratic-dictatorship  !⇒people's_democratic_dictatorship
+  McshStn000031:6728  ChnaAdmn'att021-people's-democratic-dictatorship  !⇒people's_democratic_dictatorship
+  McshStn000031:6729  ChnaAdmn'people's-democratic-dictatorship  !⇒people's_democratic_dictatorship
+  McshStn000031:6731  people's-democratic-dictatorship--of-SoctChna  !⇒people's_democratic_dictatorship
+  McshStn000031:6733  whole-process-people's-democracy  !⇒people's_democratic_dictatorship
+  McshStn000031:8052  Chinese-People's-Political-Consultative-Conference  !⇒CPPCC
+  McshStn000031:8055  Chnacp'Chinese-People's-Political-Consultative-Conference  !⇒CPPCC
+  McshStn000031:8056  Chnacpwf'Chinese-People's-Political-Consultative-Conference  !⇒CPPCC
+  McshStn000031:8300  National-People's-Congress-of-China  !⇒Chnaadmnnpc
+  McshStn000031:8303  National-People's-Congress--of-China  !⇒Chnaadmnnpc
+  McshStn000031:8304  ChnaAdmn'att006-National-People's-Congress  !⇒Chnaadmnnpc
+  McshStn000031:8305  ChnaAdmn'National-People's-Congress  !⇒Chnaadmnnpc
+  McshStn000031:8327  Central-People's-Government  !⇒Chnaadmnsc
+  McshStn000031:8329  State-Council-of-the-People's-Republic-of-China  !⇒Chnaadmnsc
+  McshStn000031:10890  China's-smart-court  
+  McshStn000035:3490  ItlnExpr.I-don't-understand  !=non-capisco
+  McshStn000035:3491  I-don't-understand.lagoItln  !=non-capisco
+  McshStn000035:3500  ItlnExpr.what's-your-name  !=come-ti-chiami?
+  McshStn000035:3501  what's-your-name.lagoItln  !=come-ti-chiami?
+  McshStn000038:1575  SbulExpr.I-don't-understand  !=не-разбирам/ne-rázbiram/
+  McshStn000038:1576  I-don't-understand.lagoSbul  !=не-разбирам/ne-rázbiram/
+  McshStn000038:1585  SbulExpr.what's-your-name  !=как-се-казваш
+  McshStn000038:1586  what's-your-name.lagoSbul  !=как-се-казваш
+  McshStn000039:1976  SqipExpr.I-don't-understand  !=nuk-e-kuptoj
+  McshStn000039:1977  I-don't-understand.lagoSqip  !=nuk-e-kuptoj
+  McshStn000039:1986  SqipExpr.what's-your-name  !=si-e-ke-emrin
+  McshStn000039:1987  what's-your-name.lagoSqip  !=si-e-ke-emrin
+  McshStn000040:1399  SmkdExpr.I-don't-understand  !=не разбирам
+  McshStn000040:1400  I-don't-understand.lagoSmkd  !=не разбирам
+  McshStn000040:1409  SmkdExpr.what's-your-name  !=како се викаш
+  McshStn000040:1410  what's-your-name.lagoSmkd  !=како се викаш
+  McshStn000041:1248  SslvExpr.I-don't-understand  !=ne-razumem
+  McshStn000041:1249  I-don't-understand.lagoSslv  !=ne-razumem
+  McshStn000041:1258  SslvExpr.what's-your-name  !=kako-ti-je-ime
+  McshStn000041:1259  what's-your-name.lagoSslv  !=kako-ti-je-ime
+  McshStn000042:3754  Chnaeduc'People's-Education-Press  !⇒People's_Education_Press
+  McshStn000042:3755  ChnaSchoolBook'People's-Education-Press  !⇒People's_Education_Press
+  McshStn000042:3758  People's-Education-Press-of-Chnaeduc  !⇒People's_Education_Press
+  McshStn000043:1399  SrusExpr.I-don't-understand  !=я не-понимаю
+  McshStn000043:1400  I-don't-understand.lagoSrus  !=я не-понимаю
+  McshStn000043:1409  SrusExpr.what's-your-name  !=как тебя зовут
+  McshStn000043:1410  what's-your-name.lagoSrus  !=как тебя зовут
+  McshStn000044:1624  RomnExpr.I-don't-understand  !=nu-înțeleg
+  McshStn000044:1625  I-don't-understand.lagoRomn  !=nu-înțeleg
+  McshStn000044:1634  RomnExpr.what's-your-name  !=care e numele tău
+  McshStn000044:1635  what's-your-name.lagoRomn  !=care e numele tău
+  McshStn000048:4946  JpnsExpr.I-don't-understand  !=理解できない/ríkai dekinái/
+  McshStn000048:4947  I-don't-understand.lagoJpns  !=理解できない/ríkai dekinái/
+  McshStn000048:4956  JpnsExpr.what's-your-name  !=助けていただけますか/taskétei tadakemás ka/
+  McshStn000048:4957  what's-your-name.lagoJpns  !=助けていただけますか/taskétei tadakemás ka/
+  McshStn000050:3505  KhmrExpr.I-don't-understand  !=ខ្ញុំមិនយល់ទេ
+  McshStn000050:3506  I-don't-understand.lagoKhmr  !=ខ្ញុំមិនយល់ទេ
+  McshStn000050:3515  KhmrExpr.what's-your-name  !=តើអ្នកឈ្មោះអ្វី?
+  McshStn000050:3516  what's-your-name.lagoKhmr  !=តើអ្នកឈ្មោះអ្វី?
+  McshStnlaw000003:3130  citizen's-initiative-of-lawEus  !⇒EulawCitizen
+  McshStnlaw000003:3131  lawEus.citizen's-initiative  !⇒EulawCitizen
+  McshStnlaw000006:51  Greece's-law  !⇒lawGrca
+  McshTchInf000003:2079  Grover's-algorithm  
+  McshTchInf000003:2110  Shor's-algorithm  
+  McshTchInf000011:946  Jsbr_lago's-(Browser-js-string)  
+  McshTchInf000012:9873  npm's-cmd  
+  McshTchInf000015:2649  Company's-share-Agntasset  
+  McshTchInf000015:5089  Agntasset.founder's-token  
+  McshTchInf000015:5091  founder's-token  
+  McshTchInf000015:11110  decentralized-autonomous-economy's-service  !@McshTchInf000015#idAlgntsvcDecm
+  McshTchInf000015:13043  decentralized-autonomous-economy's-service  !⇒AgntsrvcEcon
+  McshTchInf000016:1323  Pow.CryptoNote's-CryptoNight  
+  McshTchInf000017:5115  AgntBtcn'Satoshi's-encoding  
+  McshTchInf000018:6454  Genoil's-CUDA-miner  
+
+=== DATE (250) — {X'date}-... notation
+  McshCor000002:5234  {Mcs'2020-10-18}-paragraph-Mcs  
+  McshCor000002:5239  {Mcs'2020-04-04}-200'000-names  
+  McshCor000002:5250  {Mcs'2017-11-17}-McsHitp-publication-GitHub  
+  McshCor000002:5257  {Mcs'2013}-synagonism.net  
+  McshCor000002:5270  {Mcs'2010}-Html-worldview  
+  McshCor000002:5274  {Mcs'2002-02-18}-GWCreator-Applet  
+  McshCor000002:5278  {Mcs'2001-04-18}-WordForms-Applet  
+  McshCor000002:5283  {Mcs'1997..2010}-Mcs-java-manager  
+  McshCor000002:5289  {Mcs'1994..1995}-analytical-synthetical-definition  
+  McshCor000002:5300  {Mcs'1992}-hypertext-FolioViews-worldview  
+  McshCor000002:5304  {Mcs'1990}-Science-Support-System-papper  
+  McshCor000002:5315  {Mcs'1985..1989}-paper-worldview  
+  McshCor000002:5319  {Mcs'1985}-Hellenic-Mathematical-Society  
+  McshCor000002:5325  {Mcs'1978}-picture-of-my-worldview  
+  McshEdu000002:768  {science'1800i100}-science-institutionalization  
+  McshEdu000002:774  {science'1665}-science-first-journal  
+  McshEdu000006:320  {human'Bce0551..Bce0479}-Confucius  !⇒HumnBce0551Cnfc
+  McshEdu000007:181  {science'1960..1970i10}-SciCmpr-distinct-branch  
+  McshEdu000007:187  {science'1962}-SciCmpr-first-department  
+  McshEdu000007:193  {science'1953}-SciCmpr-first-degre-program  
+  McshEdu000007:199  {science'1946}-SciCmpr-first-academic-course  
+  McshEdu000010:2022  {science'1982}-SciLago-stage-of-development  
+  McshEdu000010:2028  {science'1967}-SciLago-linguistic-wars  
+  McshEdu000010:2039  {SciLago'Bce0170..Bce0090}-Greek-Dionysius-Thrax-Art-of-Grammar  
+  McshEdu000010:2040  {science'Bce0170..Bce0090}-SciLago-Greek-Dionysius-Thrax-Art-of-Grammar  
+  McshEdu000010:2046  {science'Bce0500i100ca.}-SciLago-Indian-Panini  
+  McshHmn000005:1281  {hmnB0384Arst'1891}-Athenians-governance  
+  McshHmn000005:1286  {hmnB0384Arst'1853}-Organon-Owen-English-translation  
+  McshHmn000005:1291  {hmnB0384Arst'1831}-Bekker-numbers  
+  McshHmn000005:1296  {hmnB0384Arst'1500-i100}-Organon-name  
+  McshHmn000005:1301  {hmnB0384Arst'1300-i100}-West-interest  
+  McshHmn000005:1306  {hmnB0384Arst'0900-i100}-Arab-interest  
+  McshHmn000005:1311  {hmnB0384Arst'0600-i100}-Organon-latin  
+  McshHmn000005:1316  {hmnB0384Arst'Bce040}-Organon  
+  McshHmn000005:1320  {hmnB0384Arst'Bce322}-died  
+  McshHmn000005:1324  {hmnB0384Arst'Bce335}-Lyceum  
+  McshHmn000005:1328  {hmnB0384Arst'Bce343}-tutored-Alexander-the-Great  
+  McshHmn000005:1332  {hmnB0384Arst'Bce347}-left-Academy  
+  McshHmn000005:1336  {hmnB0384Arst'Bce367}-education-at-Plato  
+  McshHmn000005:1340  {hmnB0384Arst'Bce371}-orphan  
+  McshHmn000005:1344  {hmnB0384Arst'Bce384}-born  
+  McshLag000007:31615  {Hmnm_lago'Bce1250}-Chinese-written  
+  McshLag000007:31621  {Hmnm_lago'Bce2800}-syllabic  
+  McshLag000007:31627  {Hmnm_lago'Bce3200}-written-Egypt  
+  McshLag000007:31633  {Hmnm_lago'iK1.BceK1x004}-written-Mesopotamia  
+  McshLag000007:31639  {Hmnm_lago'iK2.BpK2x002}-genesis  
+  McshLag000018:17718  {Zhon_lago'1987}-The-Language-Atlas-of-China  
+  McshLag000018:17724  {Zhon_lago'1958}-pinyin-introduction  
+  McshLag000018:17731  {Zhon_lago'1956}-Standard-Mandarin-adoption  
+  McshLag000018:17737  {Zhon_lago'1919}-Old-National-Pronunciation  
+  McshLag000018:17744  {Zhon_lago'0601}-Qieyun-rhyme-dictionary  
+  McshLag000018:17786  {Zhon_lago'0100}-Shuowen-Jiezi-dictionary  
+  McshLag000018:17794  {Zhon_lago'Bce0300..0201}-Erya-dictionary  
+  McshLag000018:17802  {Bce1200}-Zhon_lago'oracle-bone-script  
+  McshLag000018:17803  {Zhon_lago'Bce1200}-oracle-bone-script  
+  McshLag000028:1426  {Ell0Lago'1982}-Ell0Lago-monotonic-orthography  
+  McshLag000028:1431  {Ell0Lago'1976}-Dimotiki  
+  McshLag000028:1444  {Ell0Lago'i100.1100}-Modern-Greek  
+  McshLag000028:1450  {Ell0Lago'i100.0900}-polytonic-orthography  
+  McshLag000028:1456  {Ell0Lago'i100.0600}-Medieval-Greek  
+  McshLag000028:1463  {Ell0Lago'0200}-new-pronunciation  
+  McshLag000028:1469  {Ell0Lago'i100.0100..0300}-Atticism  
+  McshLag000028:1475  {Ell0Lago'Bce0200}-pronunciation-orthography  
+  McshLag000028:1481  {Ell0Lago'Bce0300}-dialects  
+  McshLag000028:1487  {Ell0Lago'Bce0403}-Ionic-alphabet  
+  McshLag000028:1493  {Ell0Lago'Bce0750}-alphabet  
+  McshLag000028:1499  {Ell0Lago'Bce1400}-written  
+  McshLag000029:86  {Eng0Lago'i100.0700}-alphabet  
+  McshNtr000002:402  {science'1953}-SciChem--electron-discovery  
+  McshNtr000002:407  {science'1897}-SciChem--electron-discovery  
+  McshNtr000002:412  {science'1869}-SciChem--periodic-table  
+  McshNtr000002:417  {science'1803}-SciChem--Dalton-atomic-theory  
+  McshOgm000009:1234  {BpK2x065}-animalMammal'on-trees  
+  McshStn000020:328  {SoctEuzz'2020-01-31}-Euzzmbr-27-Uk-leaves-Eu  
+  McshStn000020:339  {SoctEuzz'2013}-Euzzmbr-28-Croatia-joined  
+  McshStn000020:352  {SoctEuzz'2007}-Euzzmbr-27-Bulgaria-Romania-joined  
+  McshStn000020:357  {SoctEuzz'2004}-Euzzmbr-25-Cyprus-Czech-Estonia-Hungary-Latvia-Lithuania-Malta-Poland-Slovakia-Slovenia-joined  
+  McshStn000020:365  {SoctEuzz'1995}-Euzzmbr-15-Austria-Finland-Sweden-joined  
+  McshStn000020:374  {SoctEuzz'1985}-Euzzmbr-12-Spain-Portugal-joined  
+  McshStn000020:379  {SoctEuzz'1981}-Euzzmbr-10-Greece-joined  
+  McshStn000020:384  {SoctEuzz'1973}-Euzzmbr-9-Denmark-Ireland-UK-joined  
+  McshStn000020:389  {SoctEuzz'1952}-Euzzmbr-6-Belgium-France-WestGermany-Italy-Luxembourg-Netherlands-founded  
+  McshStn000020:2339  {SoctEuzz'2016-09-01}-Civil-Service-Tribunal-dissolution  
+  McshStn000020:17951  {SoctEuzz'i10.2020}-Uk-leaves  
+  McshStn000020:17970  {SoctEuzz'i10.2010}-Euro-introduction--economic-crisis  
+  McshStn000020:17984  {SoctEuzz'i10.2000}-EU-creation  
+  McshStn000020:18044  {SoctEuzz'i10.1960}-EC-creation  
+  McshStn000031:13017  {SoctChna'2021}-removed-family-size-limits  
+  McshStn000031:13023  {SoctChna'2020}-COVID-19-pandemic  
+  McshStn000031:13029  {SoctChna'2018}-Constitution-removal-presidential-limits  
+  McshStn000031:13035  {SoctChna'2016}-economy-1st-by-PPP-GDP  
+  McshStn000031:13041  {SoctChna'2014}-1st-in-GDP-PPP  
+  McshStn000031:13047  {SoctChna'2013}-Xi-Jinping-General-Secretary  
+  McshStn000031:13053  {SoctChna'2010}-economy-2nd-largest  
+  McshStn000031:13059  {SoctChna'2008}-host-Olympic-Games  
+  McshStn000031:13065  {SoctChna'2003}-SASAC-creation  
+  McshStn000031:13071  {SoctChna'2002..2012}-Hu-Jintao-General-Secretary  
+  McshStn000031:13077  {SoctChna'2001}-WTO-member  
+  McshStn000031:13083  {SoctChna'1999}-Macau-returning  
+  McshStn000031:13089  {SoctChna'1997}-HongKong-returning  
+  McshStn000031:13096  {SoctChna'1992}-socialist-market-economy  
+  McshStn000031:13102  {SoctChna'1989..2002}-Jiang-Zemin-paramount-leader  
+  McshStn000031:13108  {SoctChna'1989}-Tiananmen-Square-protests  
+  McshStn000031:13114  {SoctChna'1979}-Sino-Vietnamese-war  
+  McshStn000031:13120  {SoctChna'1978..1989}-Deng-Xiaoping-paramount-leader  
+  McshStn000031:13126  {SoctChna'1978}-normalized-relations-with-Japan  
+  McshStn000031:13132  {SoctChna'1976}-Mao-Zedong-death  
+  McshStn000031:13138  {SoctChna'1972}-Nixon-visit  
+  McshStn000031:13144  {SoctChna'1971}-UN-member  
+  McshStn000031:13150  {SoctChna'1966..1976}-Cultural-Revolution  
+  McshStn000031:13155  {SoctChna'1963}-USSR-denouncement  
+  McshStn000031:13160  {SoctChna'1958..1961}-Great-Leap-Forward  
+  McshStn000031:13165  {SoctChna'1958}-commune-system  
+  McshStn000031:13170  {SoctChna'1956}-hukou-introduction  
+  McshStn000031:13175  {SoctChna'1950..1953}-enter-Korean-War  
+  McshStn000031:13189  {SoctChna'1949-10-01}-PRC-creation  
+  McshStn000031:13195  {SoctChna'1943..1976}-Mao-Zedong-paramount-leader  
+  McshStn000031:13289  {SoctChna'1959..1961}-three-years-of-great-famine  
+  McshStn000031:13354  {SoctChna'1938}-Chongqing-capital  
+  McshStn000031:13448  {SoctChna'1919}-May-Fourth-Movement  
+  McshStn000031:13533  {SoctChna'1839..1842}-first-opium-war  
+  McshStn000031:13547  {SoctChna'1644..1912}-Qing-dynasty  
+  McshStn000031:13572  {SoctChna'1368..1644}-Ming-dynasty  
+  McshStn000031:13598  {SoctChna'1271..1368}-Mongols-Yuan-dynasty  
+  McshStn000031:13622  {SoctChna'1115..1234}-Jin-dynasty  
+  McshStn000031:13628  {SoctChna'1001..1100}-currency  
+  McshStn000031:13647  {SoctChna'0960..1279}-Song-Dynasty  
+  McshStn000031:13653  {SoctChna'0618..0907}-Tang-dynasty  
+  McshStn000031:13659  {SoctChna'0581..0618}-Sui-Dynasty  
+  McshStn000031:13665  {SoctChna'0420..0589}-Northern-and-Southern-Dynasties  
+  McshStn000031:13671  {SoctChna'0266..0420}-Jin-Dynasty  
+  McshStn000031:13677  {SoctChna'0220..0280}-Three-Kingdoms  
+  McshStn000031:13683  {SoctChna'0105}-paper  
+  McshStn000031:13690  {SoctChna'Bce0206..0220}-Han-dynasty  
+  McshStn000031:13731  {SoctChna'Bce0221..Bce0206}-Qin-dynasty  
+  McshStn000031:13745  {SoctChna'Bce0475..Bce0221}-Warring-States-period  
+  McshStn000031:13792  {SoctChna'Bce0771..Bce0476}-Spring-and-Autumn-period  
+  McshStn000031:13808  {SoctChna'Bce1046..Bce0256}-Zhou-dynasty  
+  McshStn000031:13825  {SoctChna'Bce1600..Bce1046}-Shang-dynasty  
+  McshStn000031:13831  {SoctChna'Bce2070..Bce1600}-Xia-dynasty  
+  McshStn000031:13837  {SoctChna'Bce3000c}-agriculture  
+  McshStn000042:2746  {Edu'2020}-1st-Global-Smart-Education-Conference  
+  McshStn000042:2750  {Edu'2015}-Education-2030  
+  McshStn000042:4067  {Chnaeduc'2025-05}-smart-education-white-paper  
+  McshStn000042:4071  {Chnaeduc'2025-03}-smart-education-.20  
+  McshStn000042:4075  {Chnaeduc'{2024}-AI-Plus  
+  McshStn000042:4081  {Chnaeduc'2022}-National-Smart-Education  
+  McshStn000042:4082  {Chnaeduc'2022}-standardization  
+  McshStn000042:4087  {Chnaeduc'2021}-Double-Reduction-Policy  
+  McshStn000042:4092  {Chnaeduc'2019}-Education-Modernization-2035  
+  McshStn000042:4096  {Chnaeduc'2018..2022}-Education-Informatization-2.0-Plan  
+  McshStn000042:4100  {Chnaeduc'2017}-Double-First-Class-Initiative  
+  McshStn000042:4105  {Chnaeduc'2010..2017}-Education-Informatization-1.0-Plan  
+  McshStnlaw000002:1197  {law'2002}-Modreal-Declaration-on-Free-Access-to-Law--ICC-creation  
+  McshStnlaw000002:1203  {law'1948}-Universal-Declaration-of-Human-Rights  
+  McshStnlaw000002:1208  {law'1945}-United-Nations  
+  McshStnlaw000002:1213  {law'1919}-League-of-Nations  
+  McshStnlaw000002:1218  {law'1907}-Hague-Conferences  
+  McshStnlaw000002:1223  {law'1648}-Westphalian-system  
+  McshStnlaw000002:1229  {law'1625}-natural-law  
+  McshStnlaw000002:1234  {law'1609}-maritime-law  
+  McshStnlaw000002:1239  {law'Bce1754}-Code-of-Hammurabi  
+  McshStnlaw000003:1510  {SoctEuzz'2009-12-01}-Treaty-of-Lisbon-inforce  
+  McshStnlaw000003:1564  {SoctEuzz'2003}-Treaty-of-Nice  
+  McshStnlaw000003:1601  {SoctEuzz'1999}-Treaty-of-Amsterdam  
+  McshStnlaw000003:1642  {SoctEuzz'1993}-lawEus-Treaty-on-European-Union  
+  McshStnlaw000003:1784  {SoctEuzz'1958}-lawEu-Treaty-establishing-the-European-Economic-Community  
+  McshStnlaw000003:1875  {SoctEuzz'1952}-lawEus-ECSC-treaty-inforce  
+  McshStnlaw000003:1950  {SoctEuzz'2009-12-01}-lawEus-Charter-of-fundamental-rights-inforce  
+  McshTchInf000003:793  {science'1975}-techCmpr-portable-computer  
+  McshTchInf000003:799  {science'1956}-operating-system  
+  McshTchInf000003:805  {science'1953-11}-techCmpr-transistor-computer  
+  McshTchInf000003:811  {science'1948}-techCmpr-strored-program-computer  
+  McshTchInf000003:817  {science'1942}-techCmpr-electronic-binary-computer  
+  McshTchInf000003:826  {science'1941}-techCmpr-elecromechanical-program-controlled-binary  
+  McshTchInf000003:832  {science'1840i10}-techCmpr-design-program-controlled-computer  
+  McshTchInf000007:1150  {Cnkn_lago'2020-05}-Google-knowledge-graph  
+  McshTchInf000007:1156  {Cnkn_lago'2014-11-06}-Microsoft-Cortana  
+  McshTchInf000007:1162  {Cnkn_lago'2014-04-02}-Amazon-Alexa  
+  McshTchInf000007:1169  {Cnkn_lago'2009-05-18}-WolframAlpha  
+  McshTchInf000007:1174  {Cnkn_lago'2004-02-10}-OWL  
+  McshTchInf000007:1179  {Cnkn_lago'i10-2000}-www  
+  McshTchInf000007:1186  {Cnkn_lago'i10-1990}-expert-system  
+  McshTchInf000007:1192  {Cnkn_lago'1984}-Cyc-project  
+  McshTchInf000007:1200  {Cnkn_lago'i10-1980}-frame-based-representation  
+  McshTchInf000007:1205  {Cnkn_lago'1972}-Prolog  
+  McshTchInf000007:1210  {Cnkn_lago'1969}-logic-programing  
+  McshTchInf000007:1215  {Cnkn_lago'i10-1970}-frames  
+  McshTchInf000007:3267  {Cnkn_lago'2001-05}-XML-Schema  
+  McshTchInf000007:3272  {Cnkn_lago'1996}-XML-creation  
+  McshTchInf000008:3832  {Hitp_lago'2021-05-25}-v18-module  
+  McshTchInf000008:3841  {Hitp_lago'2018-09-17}-v17-search-scalability  
+  McshTchInf000008:3848  {Hitp_lago'2017-06-05}-v16-Mcs-searching  
+  McshTchInf000008:3849  {Mcs'2017-06-05}-searching  
+  McshTchInf000008:3862  {Hitp_lago'2016-10-27}-v15-any-machine-size  
+  McshTchInf000008:3869  {Hitp_lago'2016-06-09}-v14-recursive-document  
+  McshTchInf000008:3876  {Hitp_lago'2016-06-07}-v13.preview  
+  McshTchInf000008:3882  {Hitp_lago'2016-01-24}-v12-Toc-icons  
+  McshTchInf000008:3890  {Hitp_lago'2015-10-26}-v11-user-preferences  
+  McshTchInf000008:3908  {Hitp_lago'2014-08-05}-v10-JavaScript-with-valuenames  
+  McshTchInf000008:3915  {Hitp_lago'2014-08-02}-v09-no-jQuery  
+  McshTchInf000008:3923  {Hitp_lago'2014-01-09}-v08-Toc  
+  McshTchInf000008:3929  {Hitp_lago'2013-11-06}-v07-tabs  
+  McshTchInf000008:3935  {Hitp_lago'2013-08-21}-v06-site-structure  
+  McshTchInf000008:3944  {Hitp_lago'2013-07-15}-v05-Toc-algo  
+  McshTchInf000008:3952  {Hitp_lago'2013-06-27}-v04-Hitp  
+  McshTchInf000008:3958  {Hitp_lago'2013-04-14}-v03-Html5.Id.Toc.Preview  
+  McshTchInf000008:3959  {Mcs'2013-04-14}-Hitp_lago'v03-Html5.Id.Toc.Preview  
+  McshTchInf000008:3967  {Hitp_lago'2013-04-01}-v02-Html5.Id.Toc  
+  McshTchInf000008:3974  {Hitp_lago'2011-02-17}-v01-Html5.Id  
+  McshTchInf000009:3972  {2020-10-18}-Hitp_Mcs'indexes-para-Mcs  
+  McshTchInf000009:3977  {2018-10-16}-Hitp_Mcs'uses-Mcs-instead-cpt-in-names  
+  McshTchInf000009:3985  {2018-09-15}-Hitp_Mcs'search-scalability  
+  McshTchInf000010:7427  {Jsgn_lago'2015}-Node.js-v4.0  
+  McshTchInf000010:7439  {Jsgn_lago'2013}-ISOMORPHIC  
+  McshTchInf000010:7447  {Jsgn_lago'2009}-Node.js  
+  McshTchInf000010:7461  {Jsgn_lago'2008}-V8-performance  
+  McshTchInf000010:7471  {Jsgn_lago'2005}-Google-Maps-Ajax  
+  McshTchInf000010:7482  {Jsgn_lago'2004}-Gmail  
+  McshTchInf000010:7488  {Jsgn_lago'1998}-international-standard  
+  McshTchInf000010:7495  {Jsgn_lago'1995}-ANNOUNCEMENT  
+  McshTchInf000015:10300  {techInfo'2023-04-20}-MiCA-EU-regulation  
+  McshTchInf000036:2319  {science'2018}-techAI-LLM  
+  McshTchInf000036:4891  {techInfo'2026-03-06}-AMI-Labs  
+  McshTchInf000036:4897  {techInfo'2023-03-14}-techAI-GPT-4  
+  McshTchInf000036:4903  {science'2022-11-30}-techAI-ChatGPT  
+  McshTchInf000036:4904  {techInfo'2022-11-30}-techAI-ChatGPT  
+  McshTchInf000036:4911  {science'2017}-techAI-Transformers  
+  McshTchInf000036:4912  {techInfo'2017}-techAI-Transformers  
+  McshTchInf000036:4919  {science'2015}-techAI-landmark-year  
+  McshTchInf000036:4920  {techInfo'2015}-techAI-landmark-year  
+  McshTchInf000036:4927  {science'1987..1993}-techAI-2nd-winter  
+  McshTchInf000036:4928  {techInfo'1987..1993}-techAI-2nd-winter  
+  McshTchInf000036:4934  {science'1980s}-techAI-expert-systems  
+  McshTchInf000036:4935  {techInfo'1980s}-techAI-expert-systems  
+  McshTchInf000036:4942  {science'1974..1980}-techAI-1st-winter  
+  McshTchInf000036:4943  {techInfo'1974..1980}-techAI-1st-winter  
+  McshTchInf000036:4977  {science'1943}-techAI-first-work  
+  McshTchInf000036:4978  {techInfo'1943}-techAI-first-work  
+  McshTchInf000039:3167  {techInfo'2030i10}-techKnlg  
+  McshTchInf000039:3190  {techInfo'2020i10}-techKnlg  
+  McshTchInf000039:3209  {techInfo'2010i10}-techKnlg  
+  McshTchInf000039:3231  {techInfo'2000i10}-techKnlg  
+  McshTchInf000039:3250  {techInfo'1990i10}-techKnlg  
+  McshTchInf000039:3266  {techInfo'1980i10}-techKnlg  
+  McshTchInf000039:3282  {techInfo'1970i10}-techKnlg  
+  McshTchInf000039:3298  {techInfo'1960i10}-techKnlg  
+  McshTchInf000039:3312  {techInfo'1950i10}-techKnlg  
+  McshTchInf000039:5657  {lagoCnpt'1976}-Sowa-Conceptual-graphs  
+  McshTchInf000039:8198  {Cnkn_lago'1995}-Cyc-project-at-Cycorp  
+
+=== NON-ENGLISH (359) — non-English letters (Greek word tables, ...)
+  McshCor000002:5244  {Mcs'2020-01-06}-Sympan≡entity  
+  McshCor000004:6722  McshZhon.ǒu'ěr-偶尔-(偶爾)  !⇒RltnFreqOccasionally
+  McshCor000007:951  McshZhon.zhè'er-这儿  !⇒spaceDeicticNearA
+  McshCor000010:1116  McshZhon.shí'èr-十二  !⇒12
+  McshCor000018:4685  FctgMemorizing'μυστήρια-της-μνήμης  !⇒FctgMemorizing'μυστήρια_της_μνήμης
+  McshCor000018:4686  FctgMemorizing'info-resource'μυστήρια-της-μνήμης  
+  McshCor000018:4687  FctgMemorizing'μυστήρια-της-μνήμης  
+  McshEdu000006:263  {human'1927..1925}-Μπιτσάκης.Ευτύχης  
+  McshHlth000002:263  McshZhon.qián'é-前额  !⇒forhead
+  McshHlth000011:18177  DissFctgPaining'Ελληνική-Εταιρεία-Αλγολογίας-ΕΕΑ  
+  McshHlth000011:18179  DissFctgPaining'ελληνική-εταιρεία-αλγολογίας-εεα  
+  McshHlth000019:1351  SystNervous'att015-somatic⇒SystSomaticNervous  !⇒SystSomaticNervous
+  McshHmn000002:4344  McshZhon.yīng'ér-婴儿  !⇒infant
+  McshHmn000005:113  Arstwv'λεγόμενον.ἄνευ-συμπλοκῆς  
+  McshHmn000005:188  Arstwv/mind-and-logos'πρός-τι  !⇒Arstwv/relative
+  McshHmn000005:189  Arstwv'πρός-τι  !⇒Arstwv/relative
+  McshHmn000005:309  Arstwv'λεγόμενον.κατὰ-συμπλοκὴν  
+  McshLag000007:17533  McshElln.λέξη'01-λειτουργικότητα  
+  McshLag000007:28396  nǎ'er-哪儿  !=where
+  McshLag000017:317  lagoEl'(Greek|Modern-(1453–)).Iso1  
+  McshLag000017:318  lago2.El'(Greek|Modern-(1453–)).Iso1  
+  McshLag000017:1373  lagoAru'(Aruá-(Amazonas-State)-E).Iso3  
+  McshLag000017:1374  lago3.Aru'(Aruá-(Amazonas-State)-E).Iso3  
+  McshLag000017:1379  lagoArx'(Aruá-(Rodonia-State)-L).Iso3  
+  McshLag000017:1380  lago3.Arx'(Aruá-(Rodonia-State)-L).Iso3  
+  McshLag000017:4327  lagoEot'(Beti-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:4328  lago3.Eot'(Beti-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:6585  lagoKfo'(Koro-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:6586  lago3.Kfo'(Koro-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:7299  lagoKty'(Kango-(Bas-Uélé-District)-L).Iso3  
+  McshLag000017:7300  lago3.Kty'(Kango-(Bas-Uélé-District)-L).Iso3  
+  McshLag000017:8070  lagoLoi'(Loma-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:8071  lago3.Loi'(Loma-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:9750  lagoNeb'(Toura-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:9751  lago3.Neb'(Toura-(Côte-d'Ivoire)-L).Iso3  
+  McshLag000017:11416  lagoPro'(Old-Provençal-(to-1500)-H).Iso3  
+  McshLag000017:11417  lago3.Pro'(Old-Provençal-(to-1500)-H).Iso3  
+  McshLag000017:17455  lago3.Azoyú-Me'phaa-L--tpc.Iso3  
+  McshLag000017:17456  lagoAzoyú-Me'phaa-L--tpc.Iso3  
+  McshLag000017:18045  lago3.Beti-(Côte-d'Ivoire)-L--eot.Iso3  
+  McshLag000017:18046  lagoBeti-(Côte-d'Ivoire)-L--eot.Iso3  
+  McshLag000017:19349  lago3.Daats'i´in-L--dtn.Iso3  
+  McshLag000017:19350  lagoDaats'i´in-L--dtn.Iso3  
+  McshLag000017:19871  lago3.E'ńapa-Woromaipu-L--pbh.Iso3  
+  McshLag000017:19872  lagoE'ńapa-Woromaipu-L--pbh.Iso3  
+  McshLag000017:20645  lago3.Ghomálá'-L--bbj.Iso3  
+  McshLag000017:20646  lagoGhomálá'-L--bbj.Iso3  
+  McshLag000017:22995  lago3.Koro-(Côte-d'Ivoire)-L--kfo.Iso3  
+  McshLag000017:22996  lagoKoro-(Côte-d'Ivoire)-L--kfo.Iso3  
+  McshLag000017:24005  lago3.Loma-(Côte-d'Ivoire)-L--loi.Iso3  
+  McshLag000017:24006  lagoLoma-(Côte-d'Ivoire)-L--loi.Iso3  
+  McshLag000017:30347  lago3.Toura-(Côte-d'Ivoire)-L--neb.Iso3  
+  McshLag000017:30348  lagoToura-(Côte-d'Ivoire)-L--neb.Iso3  
+  McshLag000017:30385  lago3.Ts'ün-Lao-L--tsl.Iso3  
+  McshLag000017:30386  lagoTs'ün-Lao-L--tsl.Iso3  
+  McshLag000017:32161  lago3.Zo'é-L--pto.Iso3  
+  McshLag000017:32162  lagoZo'é-L--pto.Iso3  
+  McshLag000018:11030  Zhonadve.052-ǒu'ěr-偶尔  !=occasionally
+  McshLag000018:11032  McshZhon.fùcí.ǒu'ěr-偶尔  !=occasionally
+  McshLag000018:11033  McshZhon.ǒu'ěr-偶尔  !~Zhonadve!=occasionally
+  McshLag000018:11034  McshZhon.偶尔-ǒu'ěr-  !~Zhonadve!=occasionally
+  McshLag000018:11873  zhè'er-这儿;zhèlǐ-这里  !=here
+  McshLag000018:16492  McshZhon.wǎn'ān-晚安  !=good-night
+  McshLag000020:1519  McshElln.λεξηΕλλν'01-λειτουργικότητα  
+  McshLag000020:1545  McshElln.λεξηΕλλν'02-προφορά  
+  McshLag000020:1569  McshElln.λεξηΕλλν'03-μέρος-του-λόγου  
+  McshLag000020:1570  McshElln.λεξηΕλλν'μέρος-του-λόγου  
+  McshLag000020:1586  McshElln.λεξηΕλλν'03-γένος  
+  McshLag000020:1602  McshElln.λεξηΕλλν'04-βασική-μορφή  
+  McshLag000020:1622  McshElln.λεξηΕλλν'05-κλιτικό-παράδειγμα  !⇨κλίσης-τύπος
+  McshLag000020:1639  McshElln.λεξηΕλλν'06-μέλη  
+  McshLag000020:1655  McshElln.λεξηΕλλν'07-όνομα-ολότητας  
+  McshLag000020:1671  McshElln.λεξηΕλλν'08-άλλη-μορφή  
+  McshLag000020:1687  McshElln.λεξηΕλλν'09-σημασία  
+  McshLag000020:1703  McshElln.λεξηΕλλν'10-ετυμολογία  
+  McshLag000020:2109  McshElln.ουσιΕλλν'1-Μέθοδος  
+  McshLag000020:2110  McshElln.ουσιΕλλν'Μέθοδος-1  
+  McshLag000020:2129  McshElln.ουσιΕλλν'2-Γένος  
+  McshLag000020:2130  McshElln.ουσιΕλλν'Γένος-2  
+  McshLag000020:2143  McshElln.ουσιΕλλν'Γένος.12-αρσενικό|θηλυκό  
+  McshLag000020:2161  Ellnnoun'X-suffiΧ-3  
+  McshLag000020:2162  Ellnnoun'suffiΧ-3  
+  McshLag000020:2165  McshElln.ουσιΕλλν'3-Κατάληξη  
+  McshLag000020:2166  McshElln.ουσιΕλλν'Κατάληξη-3  
+  McshLag000020:2186  McshElln.ουσιΕλλν'4-Τόνος-συλλαβής-4  
+  McshLag000020:2187  McshElln.ουσιΕλλν'Τόνος-συλλαβής-4  
+  McshLag000020:2207  McshElln.ουσιΕλλν'5-αριθμόςΣυλλαβών  
+  McshLag000020:2208  McshElln.ουσιΕλλν'Σ-αριθμόςΣυλλαβών-5  
+  McshLag000020:2209  McshElln.ουσιΕλλν'αριθμόςΣυλλαβών-5  
+  McshLag000020:2231  McshElln.ουσιΕλλν'Ν-τόΝου-μεταβολή-6  
+  McshLag000020:2232  McshElln.ουσιΕλλν'τόΝου-μεταβολή-6  
+  McshLag000020:2250  McshElln.ουσιΕλλν'7-μορΦές  
+  McshLag000020:2251  McshElln.ουσιΕλλν'Φ-μορΦές-7  
+  McshLag000020:2252  McshElln.ουσιΕλλν'μορΦές-7  
+  McshLag000020:2285  McshElln.ουσιΕλλν'8-μέΛη  !⇒Ellnnoun'member
+  McshLag000020:2286  McshElln.ουσιΕλλν'Λ-μέΛη-8  !⇒Ellnnoun'member
+  McshLag000020:2287  McshElln.ουσιΕλλν'μέΛη-8  !⇒Ellnnoun'member
+  McshLag000020:3460  Ellnnoun.αρσενικό-ας-προ-φύλακ-ας-α-ες-'ων-Elln_nounMnG1XasT3SeNcF1Ba  
+  McshLag000020:3463  McshElln.αρσενικό-ας-προ-φύλακ-ας-α-ες-'ων-Elln_nounMnG1XasT3SeNcF1Ba  
+  McshLag000020:4459  Ellnnoun.αρσενικό|θηλυκό-ης-προπαροξύτονο-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4460  Elln_nounMnaG12XisT3SeNcF2Ba-αρσενικό|θηλυκό-ης-προπαροξύτονο-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4462  McshElln.αρσενικό|θηλυκό-ης-προ-πρύταν-ης-η|'εως-η-'εις-'εων-Elln_nounMnaG12XisT3SeNcF2Ba  
+  McshLag000020:4463  McshElln.ουσιαστικό-ης-προ-αρσ|θηλ-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4464  McshElln.ουσιαστικό-ης-προ-θηλ|αρσ-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4465  McshElln.ουσιαστικό-ης-αρσ|θηλ-προ-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4466  McshElln.ουσιαστικό-ης-θηλ|αρσ-προ-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4467  McshElln.ουσιΕλλν.πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4468  McshElln.ουσιΕλλνΜναΓ12ΚηςΤ3ΣιΝμΦ2Λο-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4469  McshElln.ουσιΕλλνΚηςΤ3Γ12ΜναΣιΝμΦ2Λο-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:4500  Ellnnoun.αρσενικό-ις-προ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων-Elln_nounMaG1XisT3SuNcF2Ba  
+  McshLag000020:4501  Elln_nounMaG1XisT3SuNcF2Ba-αρσενικό-ις-προ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4503  McshElln.αρσενικό-ις-προ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων-Elln_nounMaG1XisT3SuNcF2Ba  
+  McshLag000020:4504  McshElln.ουσιαστικό-ις-προ-αρσ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4505  McshElln.ουσιαστικό-ις-αρσ-προ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4506  McshElln.ουσιΕλλν.ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4507  McshElln.ουσιΕλλνΜαΓ1ΚιςΤ3ΣαΝμΦ2Λο-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4508  McshElln.ουσιΕλλνΚιςΤ3Γ1ΜαΣαΝμΦ2Λο-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:4952  Ellnnoun.αρσενικό-ος-προ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους-Elln_nounMnG1XosT3SeNcF1Ba  
+  McshLag000020:4953  Elln_nounMnG1XosT3SeNcF1Ba-αρσενικό-ος-προ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4955  McshElln.αρσενικό-ος-προ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους-Elln_nounMnG1XosT3SeNcF1Ba  
+  McshLag000020:4956  McshElln.ουσιαστικό-ος-προ-αρσ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4957  McshElln.ουσιαστικό-ος-αρσ-προ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4958  McshElln.ουσιΕλλν.χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4959  McshElln.ουσιΕλλνΜνΓ1ΚοςΤ3ΣιΝμΦ1Λο-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4960  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜνΣιΝμΦ1Λο-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4994  Ellnnoun.αρσενικό-ος-προ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους-Elln_nounMnG1XosT3SeNc2F1Ba  
+  McshLag000020:4995  Elln_nounMnG1XosT3SeNc2F1Ba-αρσενικό-ος-προ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4997  McshElln.αρσενικό-ος-προ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους-Elln_nounMnG1XosT3SeNc2F1Ba  
+  McshLag000020:4998  McshElln.ουσιαστικό-ος-προ-αρσ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:4999  McshElln.ουσιαστικό-ος-αρσ-προ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5000  McshElln.ουσιΕλλν.άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5001  McshElln.ουσιΕλλνΜνΓ1ΚοςΤ3ΣιΝμ2Φ1Λο-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5002  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜνΣιΝμ2Φ1Λο-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5046  Ellnnoun.αρσενικό-ος-προ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους-Elln_nounManG1XosT3SeNcF2Ba  
+  McshLag000020:5047  Elln_nounManG1XosT3SeNcF2Ba-αρσενικό-ος-προ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5049  McshElln.αρσενικό-ος-προ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους-Elln_nounManG1XosT3SeNcF2Ba  
+  McshLag000020:5050  McshElln.ουσιαστικό-ος-προ-αρσ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5051  McshElln.ουσιαστικό-ος-αρσ-προ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5052  McshElln.ουσιΕλλν.όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5053  McshElln.ουσιΕλλνΜανΓ1ΚοςΤ3ΣιΝμΦ2Λο-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5054  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜανΣιΝμΦ2Λο-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:5099  Ellnnoun.αρσενικό-ος-προ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους-Elln_nounManG1XosT3SeNc2F2Ba  
+  McshLag000020:5100  Elln_nounManG1XosT3SeNc2F2Ba-αρσενικό-ος-προ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5102  McshElln.αρσενικό-ος-προ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους-Elln_nounManG1XosT3SeNc2F2Ba  
+  McshLag000020:5103  McshElln.ουσιαστικό-ος-προ-αρσ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5104  McshElln.ουσιαστικό-ος-αρσ-προ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5105  McshElln.ουσιΕλλν.δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5106  McshElln.ουσιΕλλνΜανΓ1ΚοςΤ3ΣιΝμ2Φ2Λο-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5107  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜανΣιΝμ2Φ2Λο-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:5156  Ellnnoun.αρσενικό-ος-προ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους-Elln_nounMnaG1XosT3SeNucF2Ba  
+  McshLag000020:5157  Elln_nounMnaG1XosT3SeNucF2Ba-αρσενικό-ος-προ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5159  McshElln.αρσενικό-ος-προ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους-Elln_nounMnaG1XosT3SeNucF2Ba  
+  McshLag000020:5160  McshElln.ουσιαστικό-ος-προ-αρσ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5161  McshElln.ουσιαστικό-ος-αρσ-προ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5162  McshElln.ουσιΕλλν.καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5163  McshElln.ουσιΕλλνΜναΓ1ΚοςΤ3ΣιΝαμΦ2Λο-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5164  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜναΣιΝαμΦ2Λο-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:5217  Ellnnoun.αρσενικό-ος-προ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους-Elln_nounMnG1XosT3SeuNucF2Ba  
+  McshLag000020:5218  Elln_nounMnG1XosT3SeuNucF2Ba-αρσενικό-ος-προ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5220  McshElln.αρσενικό-ος-προ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους-Elln_nounMnG1XosT3SeuNucF2Ba  
+  McshLag000020:5221  McshElln.ουσιαστικό-ος-προ-αρσ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5222  McshElln.ουσιαστικό-ος-αρσ-προ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5223  McshElln.ουσιΕλλν.Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5224  McshElln.ουσιΕλλνΜνΓ1ΚοςΤ3ΣιαΝαμΦ2Λο-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5225  McshElln.ουσιΕλλνΚοςΤ3Γ1ΜνΣιαΝαμΦ2Λο-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:5953  Ellnnoun.θηλυκό-α-προ-σάλπιγγ-α-ας-ες-'ων-Elln_nounMnG2XaT3SeNc2F1Ba  
+  McshLag000020:5956  McshElln.θηλυκό-α-προ-σάλπιγγ-α-ας-ες-'ων-Elln_nounMnG2XaT3SeNc2F1Ba  
+  McshLag000020:6524  Ellnnoun.θηλυκό-η-προ-διανοούμεν-η-ης-ες-ων|'ων-Elln_nounMnG2XiT3SeNucF2Ba  
+  McshLag000020:6527  McshElln.θηλυκό-η-προ-διανοούμεν-η-ης-ες-ων|'ων-Elln_nounMnG2XiT3SeNucF2Ba  
+  McshLag000020:6568  Ellnnoun.θηλυκό-η-προ-δύναμ-η-ης|'εως-'εις-'εων-Elln_nounMnG2XiT3SeaNucF2Ba  
+  McshLag000020:6569  Elln_nounMnG2XiT3SeaNucF2Ba-θηλυκό-η-προ-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6571  McshElln.θηλυκό-η-προ-δύναμ-η-ης|'εως-'εις-'εων-Elln_nounMnG2XiT3SeaNucF2Ba  
+  McshLag000020:6572  McshElln.ουσιαστικό-η-προ-θηλ-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6573  McshElln.ουσιαστικό-η-θηλ-προ-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6574  McshElln.ουσιΕλλν.δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6575  McshElln.ουσιΕλλνΜναΓ2ΚιΤ3ΣιαΝαμΦ2Λο-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6576  McshElln.ουσιΕλλνΚιΤ3Γ2ΜναΣιαΝαμΦ2Λο-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:6629  Ellnnoun.θηλυκό-η-προ-αγανάχτησ-η-ης-'εις-'εων-Elln_nounMnG2XiT3SeuNucF1Ba  
+  McshLag000020:6630  Elln_nounMnG2XiT3SeuNucF1Ba-θηλυκό-η-προ-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6632  McshElln.θηλυκό-η-προ-αγανάχτησ-η-ης-'εις-'εων-Elln_nounMnG2XiT3SeuNucF1Ba  
+  McshLag000020:6633  McshElln.ουσιαστικό-η-προ-θηλ-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6634  McshElln.ουσιαστικό-η-θηλ-προ-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6635  McshElln.ουσιΕλλν.αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6636  McshElln.ουσιΕλλνΜναΓ2ΚιςΤ3ΣιαΝαμΦ1Λο-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6637  McshElln.ουσιΕλλνΚιςΤ3Γ2ΜναΣιαΝαμΦ1Λο-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:6890  Ellnnoun.θηλυκό-ος-προ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους-Elln_nounMnG2XosT3SeNcF1Ba  
+  McshLag000020:6891  Elln_nounMnG2XosT3SeNcF1Ba-θηλυκό-ος-προ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6893  McshElln.θηλυκό-ος-προ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους-Elln_nounMnG2XosT3SeNcF1Ba  
+  McshLag000020:6894  McshElln.ουσιαστικό-ος-προ-θηλ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6895  McshElln.ουσιαστικό-ος-θηλ-προ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6896  McshElln.ουσιΕλλν.άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6897  McshElln.ουσιΕλλνΜνΓ2ΚοςΤ3ΣιΝμΦ1Λο-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6898  McshElln.ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ1Λο-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:6945  Ellnnoun.θηλυκό-ος-προ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους-Elln_nounMnG2XosT3SeNcF2Ba  
+  McshLag000020:6946  Elln_nounMnG2XosT3SeNcF2Ba-θηλυκό-ος-προ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6948  McshElln.θηλυκό-ος-προ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους-Elln_nounMnG2XosT3SeNcF2Ba  
+  McshLag000020:6949  McshElln.ουσιαστικό-ος-προ-θηλ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6950  McshElln.ουσιαστικό-ος-θηλ-προ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6951  McshElln.ουσιΕλλν.ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6952  McshElln.ουσιΕλλνΜνΓ2ΚοςΤ3ΣιΝμΦ2Λο-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6953  McshElln.ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ2Λο-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:6992  Ellnnoun.θηλυκό-ος-προ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες-Elln_nounMnG2XosT3SeNcF2bBa  
+  McshLag000020:6993  Elln_nounMnG2XosT3SeNcF2bBa-θηλυκό-ος-προ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:6995  McshElln.θηλυκό-ος-προ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες-Elln_nounMnG2XosT3SeNcF2bBa  
+  McshLag000020:6996  McshElln.ουσιαστικό-ος-προ-θηλ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:6997  McshElln.ουσιαστικό-ος-θηλ-προ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:6998  McshElln.ουσιΕλλν.διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:6999  McshElln.ουσιΕλλνΜνΓ2ΚοςΤ3ΣιΝμΦ2βΛο-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:7000  McshElln.ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ2βΛο-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:7043  Ellnnoun.θηλυκό-ος-προ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους-Elln_nounMnaG2XosT3SeNucF2Ba  
+  McshLag000020:7044  Elln_nounMnaG2XosT3SeNucF2Ba-θηλυκό-ος-προ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7046  McshElln.θηλυκό-ος-προ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους-Elln_nounMnaG2XosT3SeNucF2Ba  
+  McshLag000020:7047  McshElln.ουσιαστικό-ος-προ-θηλ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7048  McshElln.ουσιαστικό-ος-θηλ-προ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7049  McshElln.ουσιΕλλν.πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7050  McshElln.ουσιΕλλνΜναΓ2ΚοςΤ3ΣιΝαμΦ2Λο-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7051  McshElln.ουσιΕλλνΚοςΤ3Γ2ΜναΣιΝαμΦ2Λο-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:7358  Ellnnoun.ουδέτερο-α-προ-όνομ-α-'ατος-'ατα-άτων-Elln_nounMnG3XaT3SuNcF1Ba  
+  McshLag000020:7359  Elln_nounMnG3XaT3SuNcF1Ba-ουδέτερο-α-προ-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:7361  McshElln.ουδέτερο-α-προ-όνομ-α-'ατος-'ατα-άτων-Elln_nounMnG3XaT3SuNcF1Ba  
+  McshLag000020:7362  McshElln.ουσιαστικό-α-προ-ουδ-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:7363  McshElln.ουσιαστικό-α-ουδ-προ-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:7364  McshElln.ουσιΕλλν.όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:7365  McshElln.ουσιΕλλνΚαΤ3Γ3ΜνΣαΝμΦ1Λο-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:8198  Ellnnoun.ουδέτερο-ο-προ-άτομ-ο-'ου-α-'ων-Elln_nounMaG3XoT3SeNcF1Ba  
+  McshLag000020:8199  Elln_nounMaG3XoT3SeNcF1Ba-ουδέτερο-ο-προ-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8201  McshElln.ουδέτερο-ο-προ-άτομ-ο-'ου-α-'ων-Elln_nounMaG3XoT3SeNcF1Ba  
+  McshLag000020:8202  McshElln.ουσιαστικό-ο-προ-ουδ-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8203  McshElln.ουσιαστικό-ο-ουδ-προ-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8204  McshElln.ουσιΕλλν.άτομ-ο-'ου-α-'ων  
+  McshLag000020:8205  McshElln.ουσιΕλλνΜαΓ3ΚοΤ3ΣιΝμΦ1Λο-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8206  McshElln.ουσιΕλλνΚοΤ3Γ3ΜαΣιΝμΦ1Λο-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8237  Ellnnoun.ουδέτερο-ο-προ-πρόσωπ-ο-'ου|ου-α-'ων-Elln_nounManG3XoT3SeNcuF2Ba  
+  McshLag000020:8238  Elln_nounManG3XoT3SeNcuF2Ba-ουδέτερο-ο-προ-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8240  McshElln.ουδέτερο-ο-προ-πρόσωπ-ο-'ου|ου-α-'ων-Elln_nounManG3XoT3SeNcuF2Ba  
+  McshLag000020:8241  McshElln.ουσιαστικό-ο-προ-ουδ-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8242  McshElln.ουσιαστικό-ο-ουδ-προ-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8243  McshElln.ουσιΕλλν.πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8244  McshElln.ουσιΕλλνΜανΓ3ΚοΤ3ΣιΝμαΦ2Λο-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8245  McshElln.ουσιΕλλνΚοΤ3Γ3ΜανΣιΝμαΦ2Λο-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8298  Ellnnoun.ουδέτερο-ο-προ-βούτυρ-ο-ου|'ου-α-ων|'ων-Elln_nounMnaG3XoT3SeNucF2Ba  
+  McshLag000020:8299  Elln_nounMnaG3XoT3SeNucF2Ba-ουδέτερο-ο-προ-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8301  McshElln.ουδέτερο-ο-προ-βούτυρ-ο-ου|'ου-α-ων|'ων-Elln_nounMnaG3XoT3SeNucF2Ba  
+  McshLag000020:8302  McshElln.ουσιαστικό-ο-προ-ουδ-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8303  McshElln.ουσιαστικό-ο-ουδ-προ-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8304  McshElln.ουσιΕλλν.βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8305  McshElln.ουσιΕλλνΜναΓ3ΚοΤ3ΣιΝαμΦ2Λο-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8306  McshElln.ουσιΕλλνΚοΤ3Γ3ΜναΣιΝαμΦ2Λο-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8359  Ellnnoun.ουδέτερο-ο-προ-δέσιμ-ο-'ατος-'ατα-άτων-Elln_nounMnG3XoT3SuNcF1Ba  
+  McshLag000020:8360  Elln_nounMnG3XoT3SuNcF1Ba-ουδέτερο-ο-προ-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8362  McshElln.ουδέτερο-ο-προ-δέσιμ-ο-'ατος-'ατα-άτων-Elln_nounMnG3XoT3SuNcF1Ba  
+  McshLag000020:8363  McshElln.ουσιαστικό-ο-προ-ουδ-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8364  McshElln.ουσιαστικό-ο-ουδ-προ-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8365  McshElln.ουσιΕλλν.δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8366  McshElln.ουσιΕλλνΜνΓ3ΚοΤ3ΣαΝμΦ1Λο-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8367  McshElln.ουσιΕλλνΚοΤ3Γ3ΜνΣαΝμΦ1Λο-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8597  Ellnnoun.ουδέτερο-ος-προ-έδαφ-ος-'ους-'η-ών-Elln_nounMnG3XosT3SeNcF1Ba  
+  McshLag000020:8598  Elln_nounMnG3XosT3SeNcF1Ba-ουδέτερο-ος-προ-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8600  McshElln.ουδέτερο-ος-προ-έδαφ-ος-'ους-'η-ών-Elln_nounMnG3XosT3SeNcF1Ba  
+  McshLag000020:8601  McshElln.ουσιαστικό-ος-προ-ουδ-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8602  McshElln.ουσιαστικό-ος-ουδ-προ-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8603  McshElln.ουσιΕλλν.έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8604  McshElln.ουσιΕλλνΜνΓ3ΚοςΤ3ΣιΝμΦ1Λο-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8605  McshElln.ουσιΕλλνΚοςΤ3Γ3ΜνΣιΝμΦ1Λο-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8751  Elln_nounMnG3XaT3SuNcF1Ba-ουδέτερο-α-προ-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:8764  ουσιΕλλνΚαΤ3Γ3ΜνΣαΝμΦ1Λο-όνομ-α-'ατος-'ατα-άτων  
+  McshLag000020:8846  Elln_nounMaG1XisT3SuNcF2Ba-αρσενικό-ις-προ-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:8858  Elln_nounMnG2XiT3SeaNucF2Ba-θηλυκό-η-προ-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:8859  Elln_nounMnG2XiT3SeuNucF1Ba-θηλυκό-η-προ-αγανάχτησ-η-ης-'εις-'εων  
+  McshLag000020:8884  ουσιΕλλνΚηςΤ3Γ12ΜναΣιΝμΦ2Λο-πρύταν-ης-η|'εως-η-'εις-'εων  
+  McshLag000020:8903  ουσιΕλλνΚιΤ3Γ2ΜναΣιαΝαμΦ2Λο-δύναμ-η-ης|'εως-'εις-'εων  
+  McshLag000020:8905  ουσιΕλλνΚιςΤ3Γ1ΜαΣαΝμΦ2Λο-ρίψασπ-ις-'ιδος-ι|ιν-'ιδες-ίδων|'ιδων  
+  McshLag000020:8906  ουσιΕλλνΚιςΤ3Γ2ΜναΣιαΝαμΦ1Λο-παγκοσμιοποίησ-η-ης-'εις-'εων  
+  McshLag000020:8940  Elln_nounMnG1XosT3SeNcF1Ba-αρσενικό-ος-προ-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8941  Elln_nounMnG1XosT3SeNc2F1Ba-αρσενικό-ος-προ-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8942  Elln_nounManG1XosT3SeNcF2Ba-αρσενικό-ος-προ-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8943  Elln_nounManG1XosT3SeNc2F2Ba-αρσενικό-ος-προ-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:8944  Elln_nounMnaG1XosT3SeNucF2Ba-αρσενικό-ος-προ-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:8945  Elln_nounMnG1XosT3SeuNucF2Ba-αρσενικό-ος-προ-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:8949  Elln_nounMnG2XosT3SeNcF1Ba-θηλυκό-ος-προ-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:8950  Elln_nounMnG2XosT3SeNcF2Ba-θηλυκό-ος-προ-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:8951  Elln_nounMnG2XosT3SeNcF2bBa-θηλυκό-ος-προ-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:8952  Elln_nounMnaG2XosT3SeNucF2Ba-θηλυκό-ος-προ-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:8958  Elln_nounMaG3XoT3SeNcF1Ba-ουδέτερο-ο-προ-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8959  Elln_nounManG3XoT3SeNcuF2Ba-ουδέτερο-ο-προ-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8960  Elln_nounMnaG3XoT3SeNucF2Ba-ουδέτερο-ο-προ-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8961  Elln_nounMnG3XoT3SuNcF1Ba-ουδέτερο-ο-προ-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8966  Elln_nounMnG3XosT3SeNcF1Ba-ουδέτερο-ος-προ-έδαφ-ος-'ους-'η-ών  
+  McshLag000020:8971  ουσιΕλλνΚοΤ3Γ3ΜαΣιΝμΦ1Λο-άτομ-ο-'ου-α-'ων  
+  McshLag000020:8972  ουσιΕλλνΚοΤ3Γ3ΜανΣιΝμαΦ2Λο-πρόσωπ-ο-'ου|ου-α-'ων  
+  McshLag000020:8973  ουσιΕλλνΚοΤ3Γ3ΜνΣαΝμΦ1Λο-δέσιμ-ο-'ατος-'ατα-άτων  
+  McshLag000020:8975  ουσιΕλλνΚοΤ3Γ3ΜναΣιΝαμΦ2Λο-βούτυρ-ο-ου|'ου-α-ων|'ων  
+  McshLag000020:8989  ουσιΕλλνΚοςΤ3Γ1ΜανΣιΝμ2Φ2Λο-δάσκαλ-ος-'ου|ου-ο-ε-οι-'ων-'ους|ους  
+  McshLag000020:8990  ουσιΕλλνΚοςΤ3Γ1ΜανΣιΝμΦ2Λο-όροφ-ος-'ου|ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8992  ουσιΕλλνΚοςΤ3Γ1ΜνΣιΝμ2Φ1Λο-άνθρωπ-ος-'ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8993  ουσιΕλλνΚοςΤ3Γ1ΜνΣιΝμΦ1Λο-χοντράνθρωπ-ος-ου-ο-ε-οι-'ων-ους  
+  McshLag000020:8994  ουσιΕλλνΚοςΤ3Γ1ΜνΣιαΝαμΦ2Λο-Παπαδόπουλ-ος-ου|'ου-ο-ε-οι|αίοι-ων|αίων-ους|αίους  
+  McshLag000020:8995  ουσιΕλλνΚοςΤ3Γ1ΜναΣιΝαμΦ2Λο-καρδινάλι-ος-ου|'ου-ο-ε-οι-ων|'ων-ους|'ους  
+  McshLag000020:8996  ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ1Λο-άμπελ-ος-'ου-ο-ε-οι-'ων-'ους  
+  McshLag000020:8997  ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ2Λο-ήπειρ-ος-'ου-ο-ε|ο-οι-'ων-'ους  
+  McshLag000020:8998  ουσιΕλλνΚοςΤ3Γ2ΜνΣιΝμΦ2βΛο-διάμετρ-ος-'ου-ο-ε|ο-οι|ες-'ων-'ους|ες  
+  McshLag000020:8999  ουσιΕλλνΚοςΤ3Γ2ΜναΣιΝαμΦ2Λο-πανσέλην-ος-ου|'ου-ο-ε|ο-οι-ων|'ων-ους|'ους  
+  McshLag000020:9000  ουσιΕλλνΚοςΤ3Γ3ΜνΣιΝμΦ1Λο-έδαφ-ος-'ους-'η-ών  
+  McshLag000027:2769  Ellanoun.αρσενικό-ς-παρ-γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν-nounEllaG1XsT2SuNcMoF1Ba  
+  McshLag000027:2770  nounEllaG1XsT2SuNcMoF1Ba-αρσενικό-ς-παρ-γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν  
+  McshLag000027:2772  McshElla.αρσεΕλλα-ς-παρ-γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν-nounEllaG1XsT2SuNcMoF1Ba  
+  McshLag000027:2773  McshElla.ουσιΕλλα.ς-παρ-γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν  
+  McshLag000027:2774  McshElla.ουσιΕλλα.γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν  
+  McshLag000027:2775  McshElla.ουσιΕλλαΓ1ΚςΤ2ΣαΝμΜοΦ1Λο-γίγα-ς-ντος-ντι-ντα-ντες-'ντων-σι-ντας-ντε-ντοιν  
+  McshLag000027:7351  Ella_rsrc'ομηρικοι-υμνοι  
+  McshLag000027:7365  Ella_rsrc'λυρικη-ποιηση  
+  McshLag000027:7389  Ella_rsrc'lyric-poetry'ΙΑΜΒΟΣ  !⇒Ella_rsrc'iamb
+  McshLag000027:7420  Ella_rsrc'lyric-poetry'ΕΛΕΓΕΙΑ  !⇒Ella_rsrc'elegy/éleji/
+  McshLag000027:7461  Ella_rsrc'lyric-poetry'ΜΕΛΙΚΗ-ΠΟΙΗΣΗ  !⇒Ella_rsrc'meliki_poetry
+  McshLag000027:7462  Ella_rsrc'μελικη-ποιηση  !⇒Ella_rsrc'meliki_poetry
+  McshLag000027:7483  Ella_rsrc'lyric-poetry'ΕΠΙΓΡΑΜΜΑ  !⇒Ella_rsrc'epigram
+  McshLag000027:7508  Ella_rsrc'προσωκρατικη-φιλοσοφια  
+  McshLag000027:7527  Ella_rsrc'απαρχες-πεζου-λογου  
+  McshLag000027:7593  Ella_rsrc'drama'ΣΑΤΥΡΙΚΟ-ΔΡΑΜΑ  !⇒Ella_rsrc'satirical_drama
+  McshLag000027:7594  Ella_rsrc'σατυρικο-δραμα  !⇒Ella_rsrc'satirical_drama
+  McshLag000027:7778  Ella_rsrc'επιγραφικα-κειμενα  
+  McshLag000028:231  McshElln.γλωσΕλλ0'τονικό-σημάδι  
+  McshLag000028:232  McshElln.γλωσΕλλα'τονικό-σημάδι  
+  McshLag000028:322  Ell0Lago'grave-`-8175  
+  McshLag000028:323  Ell0Lago'varia-`-8175  
+  McshLag000028:325  lagElla'grave-`-8175  
+  McshLag000028:326  lagElla'varia-`-8175  
+  McshLag000030:40  McshZhon.tǔ'ěrqí-yǔ-土耳其语  !⇒Turk_lago
+  McshLag000030:41  McshZhon.土耳其语-tǔ'ěrqí-yǔ  !⇒Turk_lago
+  McshLag000030:3762  McshTurk.di'li-geçmiş-zaman  
+  McshLag000036:801  ArabLetr'1614-fatha-/a/ـَ  
+  McshLag000036:802  ArabLetr'fatha-/a/-1614ـَ  
+  McshLag000036:815  ArabLetr'1616-kasra-/i/ـِ  
+  McshLag000036:816  ArabLetr'kasra-/i/-1616ـِ  
+  McshLag000036:830  ArabLetr'1615-damma-/u/ـُ  
+  McshLag000036:831  ArabLetr'damma-/u/-1615ـُ  
+  McshLag000036:844  ArabLetr'1618-sukunـْ  
+  McshLag000036:845  ArabLetr'sukun-1618ـْ  
+  McshLag000036:870  ArabLetr'hamza-1569-ء  
+  McshNtr000007:4373  ChmcElrΚ19'usage'nutritional-value  !⇒ChmcElrΚ19'nutritional_value
+  McshStn000009:11783  socCτte-d'Ivoire--CIV.Iso3  
+  McshStn000030:711  IAPR'income-tax-report|φορολογική-δήλωση  !⇒income_tax_report@IAPR
+  McshStn000031:11081  ChnaAdmnDiv1'province-省-Shěng  !⇒ChnaProvince
+  McshStn000031:11908  ChnaAdmnDiv1'special-administrative-region-特别行政区-TóbiéXíngzhóngqū  !⇒Chnasar
+  McshStn000031:12153  ChnaAdmnDiv4'townships-乡-xiāng-vs-towns-镇-zhón  
+  McshStn000033:81  McshZhon.tǔ'ěrqí-gònghéguó-土耳其共和国  !⇒SoctTurk
+  McshStn000033:82  McshZhon.土耳其共和国-tǔ'ěrqí-gònghéguó  !⇒SoctTurk
+  McshStn000034:4121  VtnmEcon'Đổi-Mới-reforms  
+  McshStn000042:3415  Chnaeduc'Education-Informatization-1.0-Plan-(2010–2017)--of-PRC  
+  McshStnlaw000006:596  lawGrca'ESDI-(Εθνική-Σχολή-Δικαστικών-Λειτουργών)  !⇒Εθνική_Σχολή_Δικαστικών_Λειτουργών
+  McshStnlaw000006:598  lawGrca'esdi-(εθνική-σχολή-δικαστικών-λειτουργών)  !⇒Εθνική_Σχολή_Δικαστικών_Λειτουργών
+  McshTchInf000003:839  {science'Bce100≈}-techCmpr-first-analog  
+  McshTchInf000015:11583  netAlgo'đ-currency  
+  McshTchInf000024:271  Đ-Steem'block-explorer  
+  McshTchInf000024:2887  Đ-Steem'sign-up--service  
+  McshTchInf000040:355  McshZhon.diànyóu'zhǔtí-电邮'主题  !=e-mail'subject
+  McshTchInf000040:356  McshZhon.电邮'主题-diànyóu'zhǔtí  !=e-mail'subject
+  McshWrdidxElln24oméya:2240  McshWrdidxElln24oméya'generic-specific-tree  
+  McshWrdidxElln24oméya:2241  McshWrdidxElln24oméya'specific-generic-tree  
+
