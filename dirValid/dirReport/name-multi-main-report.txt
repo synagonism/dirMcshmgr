@@ -1,11 +1,14 @@
-NAME:: WITH MORE THAN ONE MAIN-NAME (Mmn) — 2026-10-28
-name:: paragraphs: 26455 | with 2 main-names: 44 (0 Zhon radicals) | with 3+: 0
+NAME:: WITH MORE THAN ONE MAIN-NAME (Mmn) — 2026-10-29
+name:: paragraphs: 26455 | with 2 main-names: 24 (0 Zhon radicals) | with 3+: 0
 entry: file:line #para-id  main-name (lines pointing to it, :first line) | ...
 
 === 3+ MAIN-NAMES (0)
 
-=== 2 MAIN-NAMES (44)
-  McshLag000010:1533  #idL0014ltr03nam  Sngu_letr.03-d-[d] (1, :1535) | Sngu_letrDu (1, :1540)
+=== 2 MAIN-NAMES (24)
+  McshCor000002:38  #idName  Mcs (40, :39) | Mes (1, :71)
+  McshCor000005:665  #idRlnAdtnnam  RltnAddition (71, :667) | bùdàn..érqiě-不但..而且 (1, :715)
+  McshLag000007:1554  #idLHmnmsmsondonam  Hmnmsemuargu (34, :1555) | Semuargu (1, :1562)
+  McshLag000007:2817  #idLHmnmsmsvrbnam  Hmnmsemuverb (28, :2818) | Semuverb (1, :2825)
   McshLag000013:267  #idInflcs003nam  licenseEupl (4, :269) | EUPL (1, :270)
   McshLag000018:12864  #idLZhonverbauxZainam  ZhonverbauxiHappeningZài (4, :12866) | Zhonverbauxi.zài-在 (1, :12867)
   McshLag000030:3805  #idLTurkverbmbrPastPgsvnam  past_continuous_mVTurk (7, :3807) | imperfect-Turkvm (1, :3811)
@@ -20,7 +23,6 @@ entry: file:line #para-id  main-name (lines pointing to it, :first line) | ...
   McshStn000042:3478  #idSctrEduChnaNiesnam  National_Institute_of_Education_Sciences (7, :3480) | CNAES (1, :3483)
   McshStn000042:3752  #idSctrEduChnaskbkpepnam  People's_Education_Press (7, :3754) | PEP (1, :3757)
   McshStnlaw000003:2417  #idLawEus021nam  EulawSlit (7, :2419) | EulawSlin (1, :2422)
-
   McshTchInf000006:1860  #idLtnrnam  lagTnr (8, :1862) | Ltnr (1, :1864)
   McshTchInf000010:6794  #idLjes2011nam  Jses2011 (9, :6796) | Jses (1, :6804)
   McshTchInf000011:3646  #idLJsbralgHmlnam  JsbralgoHtml (5, :3647) | 'Html_ (1, :3653)

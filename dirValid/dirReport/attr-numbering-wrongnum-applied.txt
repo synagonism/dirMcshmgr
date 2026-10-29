@@ -1,0 +1,238 @@
+INH-WRONGNUM fix {2026-10-29}: passes 1-4, then rounds with the collision fix (extra*, post*)
+
+######## wrong-pass1
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 88 | NN taken (left): 12 | files written: 46
+
+=== RENUMBERED (88)
+  Mcsh000000:206  "20_management_tool of Mws"  20_ -> 21_   (refines worldview'21_management_tool@McshLag000003#idWldvatt002)
+  McshCor000004:1616  "03_syntax of acting"  03_ -> 07_   (refines doing'07_syntax@McshCor000004#idDngstx)
+  McshCor000004:1635  "04_risk of acting"  04_ -> 09_   (refines doing'09_risk@McshCor000004#idDngatt004)
+  McshCor000004:3163  "03_syntax of functing"  03_ -> 07_   (refines doing'07_syntax@McshCor000004#idDngstx)
+  McshCor000004:3179  "04_risk of functing"  04_ -> 09_   (refines doing'09_risk@McshCor000004#idDngatt004)
+  McshCor000008:865  "01_element of collection"  01_ -> 02_   (refines whole'02_part@McshCor000008#idWhlprt)
+  McshCor000013:432  "05_syntax of FctgBrainingBio"  05_ -> 03_   (refines functing'03_syntax@McshCor000004#idDngFctgstx)
+  McshCor000013:1263  "10_relation of FctgEmotingBio"  10_ -> 08_   (refines doing'08_relation@McshCor000004#idDngatt008)
+  McshCor000018:2764  "13_syntax of FctgEmoting"  13_ -> 07_   (refines doing'07_syntax@McshCor000004#idDngstx)
+  McshCor000018:2789  "14_relation of FctgEmoting"  14_ -> 08_   (refines doing'08_relation@McshCor000004#idDngatt008)
+  McshEdu000002:296  "03_rlnReferent of science"  03_ -> 14_   (refines model'14_mapping_relation@McshCor000012#idMdlatt002)
+  McshHlth000003:3181  "05_cell of OganBrain"  05_ -> 03_   (refines organ'03_cell@McshHlth000002#idOgnHmnatt012)
+  McshHlth000004:242  "05_organelle of cell"  05_ -> 04_   (refines cellOgsm'04_organelle@McshOgm000007#idCellOgmatt003)
+  McshHlth000004:960  "09_SystMaterial of cell"  09_ -> 06_   (refines cellOgsm'06_SystMaterial@McshOgm000007#idCellOgmatt034)
+  McshHlth000004:975  "10_SystMolecules of cell"  10_ -> 07_   (refines cellOgsm'07_SystMolecules@McshOgm000007#idCellOgmatt014)
+  McshHlth000008:435  "05_material of health"  05_ -> 04_   (refines healthOgsm'04_material@McshHlth000007#idHlthOgmatt004)
+  McshHlth000008:764  "07_environment of health"  07_ -> 06_   (refines healthOgsm'06_environment@McshHlth000007#idHlthOgmenvF)
+  McshHlth000013:6955  "05_price of foodFruit"  05_ -> 21_   (refines food'21_price@McshHlth000013#idFoodHmnatt012)
+  McshHlth000013:6969  "06_sector of foodFruit"  06_ -> 22_   (refines food'22_sector@McshHlth000013#idFoodHmnatt013)
+  McshHlth000013:7016  "10_popularity of foodFruit"  10_ -> 23_   (refines food'23_popularity@McshHlth000013#idFoodHmnatt014)
+  McshHlth000019:3632  "06_organ of SystNervous"  06_ -> 02_   (refines SystOgans'02_organ@McshHlth000002#idSysOgnHmnatt001)
+  McshHmn000002:738  "29_managing_system of human"  29_ -> 18_   (refines bio'18_managing_system@McshOgm000002#idBioatt002)
+  McshHmn000002:1182  "07_satisfier of human"  07_ -> 25_   (refines Ogsm'25_satisfier@McshOgm000003#idOgmatt023)
+  McshLag000007:30736  "22_grammar of Hmnm_lago"  22_ -> 21_   (refines Ogmslago'21_grammar@McshLag000005#idLOgmsgrmr)
+  McshLag000011:72  "24_input1-(mind-view) of Engl_lago"  24_ -> 28_   (refines Hmnm_lago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1)
+  McshLag000011:569  "17_output (logo-view) of Engl_lago"  17_ -> 20_   (refines Hmnm_lago'20_output_(logo_view)@McshLag000007#idLHmnmopt)
+  McshLag000014:88  "10_citation_format of irBook"  10_ -> 07_   (refines Infrsc'07_citation_format@McshLag000013#idInfrscfrmt)
+  McshLag000018:193  "24_input1_(mind_view) of Zhon_lago"  24_ -> 28_   (refines Hmnm_lago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1)
+  McshLag000018:17413  "26_science of Zhon_lago"  26_ -> 08_   (refines system'08_science@McshCor000011#idSyssciF)
+  McshLag000019:60  "10_citation_format of irPaper"  10_ -> 07_   (refines Infrsc'07_citation_format@McshLag000013#idInfrscfrmt)
+  McshLag000020:1523  "02_pronunciation of Elln_word"  02_ -> 03_   (refines word'03_pronunciation@McshLag000007#idLHmnmwrdspch)
+  McshLag000020:1643  "07_name_entirety of Elln_word"  07_ -> 06_   (refines word'06_name_entirety@McshLag000007#idLHmnmwrdnmet)
+  McshLag000030:50  "24_input1_(mind_view) of Turk_lago"  24_ -> 28_   (refines Hmnm_lago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1)
+  McshLag000031:52  "13_human of Gstr_lago"  13_ -> 11_   (refines Hmnm_lago'11_human@McshLag000007#idLHmnmhmn)
+  McshNtr000007:90  "15_molecule of ChmcElry"  15_ -> 01_   (refines MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001)
+  McshNtr000007:137  "16_atom of ChmcElry"  16_ -> 02_   (refines MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002)
+  McshNtr000007:212  "06_chemical_property of ChmcElry"  06_ -> 11_   (refines material'11_chemical_property@McshNtr000002#idMtrlatt009)
+  McshOgm000003:517  "10_size of Ogsm"  10_ -> 16_   (refines bio'16_size@McshOgm000002#idBioatt008)
+  McshOgm000003:1385  "04_tissue of ogmCellMany"  04_ -> 32_   (refines Ogsm'32_tissue@McshOgm000003#idOgmatt029)
+  McshOgm000004:91  "04_size of MoleOgsm"  04_ -> 05_   (refines MtrlMol'05_size@McshNtr000004#idMolatt006)
+  McshOgm000006:673  "06_shape of MolProtein"  06_ -> 03_   (refines MoleOgsm'03_shape@McshOgm000004#idMolOgmatt004)
+  McshOgm000007:2198  "07_membrane of neuronOgsm"  07_ -> 02_   (refines cellOgsm'02_membrane@McshOgm000007#idCellOgmatt001)
+  McshStn000002:54  "09_node of SctnOgms"  09_ -> 06_   (refines system'06_node@McshCor000011#idSysnodeF)
+  McshStn000002:188  "05_health of SctnOgms"  05_ -> 19_   (refines bio'19_health@McshOgm000002#idBioatt003)
+  McshStn000005:41  "18_node of groupOgsm"  18_ -> 06_   (refines system'06_node@McshCor000011#idSysnodeF)
+  McshStn000005:57  "32_node_of_organisms of groupOgsm"  32_ -> 25_   (refines SctnOgms'25_node_of_organisms@McshStn000002#idStnOgmatt011)
+  McshStn000005:78  "29_node_of_satisfiers of groupOgsm"  29_ -> 26_   (refines SctnOgms'26_node_of_satisfiers@McshStn000002#idStnOgmatt007)
+  McshStn000005:99  "30_admin_system of groupOgsm"  30_ -> 27_   (refines SctnOgms'27_admin_system@McshStn000002#idStnOgmatt005)
+  McshStn000006:127  "07_health of oznOgsm"  07_ -> 05_   (refines SctnOgms'05_health@McshStn000002#idStnOgmatt003)
+  McshStn000006:141  "08_place of oznOgsm"  08_ -> 24_   (refines SctnOgms'24_place@McshStn000002#idStnOgmatt010)
+  McshStn000008:992  "06_health of Ogzn"  06_ -> 05_   (refines Sctn'05_health@McshStn000002#idStnHmnatt005)
+  McshStn000008:1034  "24_place of Ogzn"  24_ -> 08_   (refines oznOgsm'08_place@McshStn000006#idOznOgmatt007)
+  McshStn000009:6752  "20_science of society"  20_ -> 08_   (refines system'08_science@McshCor000011#idSyssciF)
+  McshStn000014:240  "17_admin_sys of ogznCsmg"  17_ -> 35_   (refines Ogzn'35_admin_sys@McshStn000008#idOgznatt001)
+  McshStn000014:682  "32_stakeholder of ogznCsmg"  32_ -> 33_   (refines Ogzn'33_stakeholder_node@McshStn000008#idOgznatt024)
+  McshStn000014:714  "12_health of ogznCsmg"  12_ -> 05_   (refines Sctn'05_health@McshStn000002#idStnHmnatt005)
+  McshStn000015:149  "32_stakeholder of OgznPrdg"  32_ -> 33_   (refines Ogzn'33_stakeholder_node@McshStn000008#idOgznatt024)
+  McshStn000015:645  "16_admin_system of OgznPrdg"  16_ -> 35_   (refines Ogzn'35_admin_sys@McshStn000008#idOgznatt001)
+  McshStn000015:807  "07_health of OgznPrdg"  07_ -> 05_   (refines Sctn'05_health@McshStn000002#idStnHmnatt005)
+  McshStn000015:849  "08_place of OgznPrdg"  08_ -> 24_   (refines Ogzn'24_place@McshStn000008#idOgznatt007)
+  McshStn000018:61  "22_node_of_humans of ogznUn"  22_ -> 28_   (refines Sctn'28_node_of_humans@McshStn000002#idStnHmnatt002)
+  McshStn000018:544  "30_node_of_satisfiers of ogznUn"  30_ -> 26_   (refines Sctn'26_node_of_satisfiers@McshStn000002#idStnHmnatt003)
+  McshStn000018:2629  "05_health of ogznUn"  05_ -> 06_   (refines Ogzn'06_health@McshStn000008#idOgznatt005)
+  McshStn000021:166  "28_node_of_satisfiers of SocGlbl"  28_ -> 26_   (refines SctnOgms'26_node_of_satisfiers@McshStn000002#idStnOgmatt007)
+  McshStn000021:334  "30_health of SocGlbl"  30_ -> 19_   (refines bio'19_health@McshOgm000002#idBioatt003)
+  McshStnlaw000002:913  "19_science of law"  19_ -> 08_   (refines system'08_science@McshCor000011#idSyssciF)
+  McshStnlaw000003:1230  "08_time-of-validation of EulawTreaty"  08_ -> 05_   (refines lawEus'05_time_in_force@McshStnlaw000003#idLawEuzztt011)
+  McshTchInf000002:337  "04_law of techInfo"  04_ -> 06_   (refines satisfier'06_law@McshStn000010#idSfrHmnatt011)
+  McshTchInf000005:40  "24_computer of Cmpr_lago"  24_ -> 26_   (refines Hmnm_lago'26_tech@McshLag000007#idLHmnmtech)
+  McshTchInf000005:71  "02_input of Cmpr_lago"  02_ -> 13_   (refines model'13_archetype@McshCor000012#idMdlatt001)
+  McshTchInf000005:86  "17_output of Cmpr_lago"  17_ -> 20_   (refines Hmnm_lago'20_output_(logo_view)@McshLag000007#idLHmnmopt)
+  McshTchInf000006:1067  "04_evaluation of Pgmg_lago"  04_ -> 12_   (refines model'12_evaluation@McshCor000012#idMdleval)
+  McshTchInf000007:57  "01_user of Cnkn_lago"  01_ -> 11_   (refines Hmnm_lago'11_human@McshLag000007#idLHmnmhmn)
+  McshTchInf000007:114  "24_input of Cnkn_lago"  24_ -> 13_   (refines model'13_archetype@McshCor000012#idMdlatt001)
+  McshTchInf000007:217  "03_output of Cnkn_lago"  03_ -> 20_   (refines Hmnm_lago'20_output_(logo_view)@McshLag000007#idLHmnmopt)
+  McshTchInf000007:991  "05_evaluation of Cnkn_lago"  05_ -> 12_   (refines model'12_evaluation@McshCor000012#idMdleval)
+  McshTchInf000008:3557  "06_evaluation of Hitp_lago"  06_ -> 12_   (refines model'12_evaluation@McshCor000012#idMdleval)
+  McshTchInf000011:125  "02_algorithm of Jsbr_lago"  02_ -> 17_   (refines Pgmg_lago'17_output|algo@McshTchInf000006#idLCpgmalg)
+  McshTchInf000011:4803  "03_evaluation of Jsbr_lago"  03_ -> 04_   (refines Pgmg_lago'04_evaluation@McshTchInf000006#idLCpgmeval)
+  McshTchInf000011:159  "19_node of Jsbralgo"  19_ -> 06_   (refines model'06_node@McshCor000012#idMdlatt005)
+  McshTchInf000015:738  "03_node of netAlgo"  03_ -> 06_   (refines SystNet'06_node@McshCor000014#idNetatt002)
+  McshTchInf000015:9433  "12_evaluation of netAlgo"  12_ -> 01_   (refines techInfo'01_evaluation@McshTchInf000002#idTchInfeval)
+  McshTchInf000015:10149  "13_law of netAlgo"  13_ -> 04_   (refines techInfo'04_law@McshTchInf000002#idTchInfatt003)
+  McshTchInf000016:5161  "11_evaluation of AgntBkcn"  11_ -> 12_   (refines netAlgo'12_evaluation@McshTchInf000015#idAlgnteval)
+  McshTchPrgm000002:148  "06_evaluation of Cmprprgm"  06_ -> 12_   (refines model'12_evaluation@McshCor000012#idMdleval)
+  McshTchPrgm000003:47  "01_installing of Atomedtr"  01_ -> 26_   (refines Cmprprgm'26_installing@McshTchPrgm000002#idCpgmatt007)
+  McshTchPrgm000003:76  "02_using of Atomedtr"  02_ -> 19_   (refines Cmprprgm'19_using@McshTchPrgm000002#idCpgmatt008)
+  McshTchPrgm000003:223  "03_developing of Atomedtr"  03_ -> 20_   (refines Cmprprgm'20_developing@McshTchPrgm000002#idCpgmatt009)
+
+=== TAKEN (12)
+  Mcsh000000:135  "26_view of Mws"  -> 20_ is taken by "20_management_tool of Mws"
+  McshHlth000004:561  "08_genetic_material of cell"  -> 05_ is taken by "05_organelle of cell"
+  McshHlth000004:990  "11_molecule of cell"  -> 08_ is taken by "08_genetic_material of cell"
+  McshHlth000004:1005  "12_atom of cell"  -> 09_ is taken by "09_SystMaterial of cell"
+  McshHlth000004:1045  "14_size of cell"  -> 10_ is taken by "10_SystMolecules of cell"
+  McshHlth000004:1060  "15_shape of cell"  -> 11_ is taken by "11_molecule of cell"
+  McshLag000020:1675  "09_meaning of Elln_word"  -> 02_ is taken by "02_pronunciation of Elln_word"
+  McshStn000015:912  "09_size of OgznPrdg"  -> 16_ is taken by "16_admin_system of OgznPrdg"
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+  McshTchInf000007:308  "04_manager of Cnkn_lago"  -> 24_ is taken by "24_input of Cnkn_lago"
+  McshTchInf000011:55  "13_archetype of Jsbr_lago"  -> 02_ is taken by "02_algorithm of Jsbr_lago"
+  McshTchPrgm000002:83  "02_node of Cmprprgm"  -> 06_ is taken by "06_evaluation of Cmprprgm"
+
+######## wrong-pass2
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 29 | NN taken (left): 5 | files written: 18
+
+=== RENUMBERED (29)
+  Mcsh000000:135  "26_view of Mws"  26_ -> 20_   (refines worldview'20_view@McshLag000003#idWldvatt004)
+  McshCor000013:432  "03_syntax of FctgBrainingBio"  03_ -> 07_   (refines functing'07_syntax@McshCor000004#idDngFctgstx)
+  McshHlth000004:561  "08_genetic_material of cell"  08_ -> 05_   (refines cellOgsm'05_genetic_material@McshOgm000007#idCellOgmatt002)
+  McshHlth000004:1005  "12_atom of cell"  12_ -> 09_   (refines cellOgsm'09_atom@McshOgm000007#idCellOgmatt016)
+  McshHlth000004:1045  "14_size of cell"  14_ -> 10_   (refines cellOgsm'10_size@McshOgm000007#idCellOgmatt011)
+  McshLag000020:1675  "09_meaning of Elln_word"  09_ -> 02_   (refines word'02_meaning@McshLag000007#idLHmnmwrdmeng)
+  McshNtr000012:62  "03_syntax of force"  03_ -> 07_   (refines acting'07_syntax@McshCor000004#idDngActgstx)
+  McshNtr000012:75  "04_risk of force"  04_ -> 09_   (refines acting'09_risk@McshCor000004#idDngActgrsk)
+  McshOgm000006:690  "04_size of MolProtein"  04_ -> 05_   (refines MoleOgsm'05_size@McshOgm000004#idMolOgmatt005)
+  McshStn000002:441  "09_node of Sctn"  09_ -> 06_   (refines SctnOgms'06_node@McshStn000002#idStnOgmatt004)
+  McshStn000002:488  "05_health of Sctn"  05_ -> 19_   (refines SctnOgms'19_health@McshStn000002#idStnOgmatt003)
+  McshStn000006:127  "05_health of oznOgsm"  05_ -> 19_   (refines SctnOgms'19_health@McshStn000002#idStnOgmatt003)
+  McshStn000007:54  "09_node of societyOgsm"  09_ -> 06_   (refines SctnOgms'06_node@McshStn000002#idStnOgmatt004)
+  McshStn000007:173  "05_health of societyOgsm"  05_ -> 19_   (refines SctnOgms'19_health@McshStn000002#idStnOgmatt003)
+  McshStn000008:1034  "08_place of Ogzn"  08_ -> 24_   (refines oznOgsm'24_place@McshStn000006#idOznOgmatt007)
+  McshStn000015:849  "24_place of OgznPrdg"  24_ -> 08_   (refines Ogzn'08_place@McshStn000008#idOgznatt007)
+  McshStn000015:912  "09_size of OgznPrdg"  09_ -> 16_   (refines bio'16_size@McshOgm000002#idBioatt008)
+  McshStn000018:2629  "06_health of ogznUn"  06_ -> 05_   (refines Ogzn'05_health@McshStn000008#idOgznatt005)
+  McshTchInf000006:56  "24_tech of Pgmg_lago"  24_ -> 26_   (refines Cmpr_lago'26_computer@McshTchInf000005#idLCmpruser)
+  McshTchInf000006:83  "02_input|archetype of Pgmg_lago"  02_ -> 13_   (refines Cmpr_lago'13_input@McshTchInf000005#idLCmpript)
+  McshTchInf000006:167  "17_output|algo of Pgmg_lago"  17_ -> 20_   (refines Cmpr_lago'20_output@McshTchInf000005#idLCmpropt)
+  McshTchInf000007:308  "04_manager of Cnkn_lago"  04_ -> 24_   (refines Hmnm_lago'24_manager@McshLag000007#idLHmnmmngr)
+  McshTchInf000008:79  "24_machine of Hitp_lago"  24_ -> 26_   (refines Cmpr_lago'26_computer@McshTchInf000005#idLCmpruser)
+  McshTchInf000008:413  "17_web-app-doc (output) of Hitp_lago"  17_ -> 20_   (refines Cmpr_lago'20_output@McshTchInf000005#idLCmpropt)
+  McshTchInf000011:55  "13_archetype of Jsbr_lago"  13_ -> 02_   (refines Pgmg_lago'02_input|archetype@McshTchInf000006#idLCpgmarch)
+  McshTchInf000011:4803  "04_evaluation of Jsbr_lago"  04_ -> 12_   (refines Pgmg_lago'12_evaluation@McshTchInf000006#idLCpgmeval)
+  McshTchInf000016:395  "03_node of AgntBkcn"  03_ -> 06_   (refines netAlgo'06_node@McshTchInf000015#idAlgntnod)
+  McshTchInf000016:5161  "12_evaluation of AgntBkcn"  12_ -> 01_   (refines netAlgo'01_evaluation@McshTchInf000015#idAlgnteval)
+  McshTchPrgm000002:83  "02_node of Cmprprgm"  02_ -> 06_   (refines model'06_node@McshCor000012#idMdlatt005)
+
+=== TAKEN (5)
+  McshHlth000004:990  "11_molecule of cell"  -> 08_ is taken by "08_genetic_material of cell"
+  McshHlth000004:1060  "15_shape of cell"  -> 11_ is taken by "11_molecule of cell"
+  McshNtr000012:87  "11_direction of force"  -> 03_ is taken by "03_syntax of force"
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+  McshTchInf000008:3683  "37_manager of Hitp_lago"  -> 24_ is taken by "24_machine of Hitp_lago"
+
+######## wrong-pass3
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 13 | NN taken (left): 2 | files written: 8
+
+=== RENUMBERED (13)
+  McshHlth000004:990  "11_molecule of cell"  11_ -> 08_   (refines cellOgsm'08_molecule@McshOgm000007#idCellOgmatt015)
+  McshNtr000012:87  "11_direction of force"  11_ -> 03_   (refines bodyNo'03_sequence@McshCor000003#idEntBodyNdrn)
+  McshStn000008:146  "09_node of Ogzn"  09_ -> 06_   (refines Sctn'06_node@McshStn000002#idStnHmnatt001)
+  McshStn000008:992  "05_health of Ogzn"  05_ -> 19_   (refines Sctn'19_health@McshStn000002#idStnHmnatt005)
+  McshStn000009:125  "09_node of society"  09_ -> 06_   (refines societyOgsm'06_node@McshStn000007#idSoctOgsmatt011)
+  McshStn000014:118  "09_node of ogznCsmg"  09_ -> 06_   (refines Sctn'06_node@McshStn000002#idStnHmnatt001)
+  McshStn000014:714  "05_health of ogznCsmg"  05_ -> 19_   (refines Sctn'19_health@McshStn000002#idStnHmnatt005)
+  McshStn000015:125  "09_node of OgznPrdg"  09_ -> 06_   (refines Sctn'06_node@McshStn000002#idStnHmnatt001)
+  McshStn000015:807  "05_health of OgznPrdg"  05_ -> 19_   (refines Sctn'19_health@McshStn000002#idStnHmnatt005)
+  McshStn000015:849  "08_place of OgznPrdg"  08_ -> 24_   (refines Ogzn'24_place@McshStn000008#idOgznatt007)
+  McshTchInf000008:3683  "37_manager of Hitp_lago"  37_ -> 24_   (refines Hmnm_lago'24_manager@McshLag000007#idLHmnmmngr)
+  McshTchInf000011:55  "02_archetype of Jsbr_lago"  02_ -> 13_   (refines Pgmg_lago'13_input|archetype@McshTchInf000006#idLCpgmarch)
+  McshTchInf000011:125  "17_algorithm of Jsbr_lago"  17_ -> 20_   (refines Pgmg_lago'20_output|algo@McshTchInf000006#idLCpgmalg)
+
+=== TAKEN (2)
+  McshHlth000004:1060  "15_shape of cell"  -> 11_ is taken by "11_molecule of cell"
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+
+######## wrong-pass4
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 4 | NN taken (left): 1 | files written: 3
+
+=== RENUMBERED (4)
+  McshHlth000004:1060  "15_shape of cell"  15_ -> 11_   (refines cellOgsm'11_shape@McshOgm000007#idCellOgmatt017)
+  McshStn000018:47  "09_node of ogznUn"  09_ -> 06_   (refines Ogzn'06_node@McshStn000008#idOgznatt018)
+  McshStn000018:2629  "05_health of ogznUn"  05_ -> 19_   (refines Ogzn'19_health@McshStn000008#idOgznatt005)
+  McshStn000021:68  "09_node of SocGlbl"  09_ -> 06_   (refines society'06_node@McshStn000009#idSocHumnatt020)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+
+######## wrong-extra1
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 0 | NN taken (left): 1 | files written: 0
+
+=== RENUMBERED (0)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+
+######## wrong-post1
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 1 | NN taken (left): 1 | files written: 1
+
+=== RENUMBERED (1)
+  McshEdu000002:140  "28_area_of_study of science"  28_ -> 13_   (refines infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+
+######## wrong-post2
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 3 | NN taken (left): 1 | files written: 3
+
+=== RENUMBERED (3)
+  McshEdu000005:54  "28_area-of-study of SciMath"  28_ -> 13_   (refines science'13_area_of_study@McshEdu000002#idSciatt001)
+  McshEdu000009:41  "28_area-of-study of SciMind"  28_ -> 13_   (refines science'13_area_of_study@McshEdu000002#idSciatt001)
+  McshEdu000010:55  "28_area-of-study of SciLago"  28_ -> 13_   (refines science'13_area_of_study@McshEdu000002#idSciatt001)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"
+
+######## wrong-post3
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=false
+
+renumbered: 3 | NN taken (left): 1 | files written: 2
+
+=== RENUMBERED (3)
+  McshEdu000009:385  "28_area-of-study of SciCognitive"  28_ -> 13_   (refines SciMind'13_area-of-study@McshEdu000009#idSMindaos)
+  McshEdu000010:2313  "28_area-of-study of SciLagoCognitive"  28_ -> 13_   (refines SciLago'13_area-of-study@McshEdu000010#idSLangaos)
+  McshEdu000010:2468  "28_area-of-study of SciLagoComputational"  28_ -> 13_   (refines SciLago'13_area-of-study@McshEdu000010#idSLangaos)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"

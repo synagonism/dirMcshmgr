@@ -59,12 +59,16 @@
  *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
  *  MvrlMmn06 (warning) srtr_structure_main: the-main-name of a "structure of X" | "X'structure" cnptSect
  *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
+ *  MvrlMmn07 (warning) attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
+ *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
+ *             or is badly written
  */
 
 import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-39-0.2026-10-29: MvrlMmn07 attrbase_line',
     'structuralMcsh.js.0-38-0.2026-10-28: MvrlMmn03 evaluation → Xevaln, evaluating → Xevalg',
     'structuralMcsh.js.0-37-0.2026-10-28: rules MvrlMnnm01..06 renamed MvrlMmn01..06',
     'structuralMcsh.js.0-36-0.2026-10-27: MvrlMmn06 srtr_structure_main',
@@ -591,6 +595,44 @@ function fCheckMainNameSrtr(aoCnptFile) {
     /^(\d+_)?structure of |^[^\s.']+'structure$/i, 'srtr');
 }
 
+// ⚠️ [MvrlMmn07] attrbase_line: the-main-names of the-attributes of a-concept are-created of
+//   a-base plus text, the-Attrbase. It is-denoted in the-name::-para of the-concept with
+//   "McshEngl.B!Attrbase," (B = the-main-name) or "McshEngl.B!Attrbase!⇒M," (B another name),
+//   on the-3rd name-line, after "M!=I", or on the-4th, after "M!@McshXxx" of a-file-concept.
+//   Warns on a-misplaced or badly-written Attrbase line (e.g. "Cmpl!Attrbase⇒Cmpr_lago").
+function fCheckMainNameAttrbase(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
+      const oParaName = oCnpt.sType === 'cnptFile'
+        ? (oCnptFile.aoTitlePara ?? []).find(oPara => oPara.sNameTitle === 'name')
+        : fFindParaAll(oCnpt, 'name')[0];
+      if (!oParaName || !String(oParaName.sPara ?? '').includes('!Attrbase')) continue;
+      const nLinePara = oCnptFile.oMapIdLine.get(oParaName.sNameId) ?? null;
+      const aLinePara = String(oParaName.sPara).split('\n');
+      // the-name-lines "<br>* McshXxxx.…", with their offset in the-para
+      const aoLineName = aLinePara.map((sLine, nOffset) => ({ sLine: sLine.trim(), nOffset }))
+        .filter(o => /^<br>\*\s*Mcsh[A-Z][a-z]+\./.test(o.sLine));
+      const bFile = aoLineName.some(o => /^<br>\*\s*McshEngl\.[^!,]+!@Mcsh/.test(o.sLine));
+      // the-line before it: "M!@McshXxx" of a-file-concept, else "M!=I"
+      const rBefore = bFile ? /^<br>\*\s*McshEngl\.[^!,]+!@Mcsh/ : /^<br>\*\s*McshEngl\.[^!,]+![=][^!,]+,/;
+      aoLineName.forEach((o, nIndex) => {
+        if (!o.sLine.includes('!Attrbase')) return;
+        const nLine = nLinePara != null ? nLinePara + o.nOffset : null;
+        const aMsg = [];
+        if (!/^<br>\*\s*McshEngl\.[^!,\s]+!Attrbase(!⇒[^!,\s]+)?,/.test(o.sLine))
+          aMsg.push('is not "McshEngl.B!Attrbase," or "McshEngl.B!Attrbase!⇒M,"');
+        if (nIndex === 0 || !rBefore.test(aoLineName[nIndex - 1].sLine))
+          aMsg.push(`is not right after "M!${bFile ? '@McshXxx' : '=I'}" (3rd name-line, or 4th of a-file-concept)`);
+        if (aMsg.length) aoIssue.push(fIssue('WARN', 'MvrlMmn07', oCnptFile.sNameFile, oCnpt,
+          `attrbase_line: "${fStripTags(o.sLine).replace(/^\*\s*/, '')}" ${aMsg.join('; ')}`, nLine));
+      });
+    }
+  }
+  return aoIssue;
+}
+
 // ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
 //   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
@@ -1008,6 +1050,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoMainSrtr = fCheckMainNameSrtr(aoCnptFile);
   aoAll.push(...aoMainSrtr);
   fLog(`${aoMainSrtr.length} issues`);
+
+  fWrite('   MvrlMmn07 Main-names attrbase_line... ');
+  const aoMainAttrbase = fCheckMainNameAttrbase(aoCnptFile);
+  aoAll.push(...aoMainAttrbase);
+  fLog(`${aoMainAttrbase.length} issues`);
 
   return aoAll;
 }

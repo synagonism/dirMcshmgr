@@ -1,0 +1,174 @@
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-10-29
+
+GS-TREE sections: 2547   fully conforming: 2471   with issues: 76
+specific-tree ids: 2546 {whole}sptr, 0 old {whole}str
+heading levels: h1 555, h2 813, h3 614, h4 357, h5 163, h6 41, h7 4
+
+Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
+  {id}dsn with Mcsh-creation date, {id}nam with X'generic-specific-tree + X'specific-generic-tree,
+  {whole}gntr generic-tree:: starting "McshEngl.X_Gntr," and holding "... entity_Gntr,",
+  {whole}sptr specific-tree:: with "McshEngl.X.specific," + "McshEngl.X_Sptr,", X = the whole's main-name, no extra content.
+
+ISSUES (a GS-TREE can have several):
+  OLD          0  old-style title (not "GENERIC-SPECIFIC-TREE of X")
+  NOPARENT     0  top-level GS-TREE whose id does not end in gstr
+  ID           1  section id is not {whole}gstr
+  LEVEL        2  heading level is not whole + 1
+  HID          0  heading id is not {id}H{level}
+  DSN          0  no {id}dsn description:: (or no Mcsh-creation date)
+  NAM         30  name:: lacks X'generic_specific_tree / X'specific_generic_tree (or -)
+  GTR          1  no {whole}gntr generic-tree:: paragraph
+  GTRN        14  generic-tree:: does not start with McshEngl.X_Gntr,
+  GTRE         0  generic-tree:: neither has "... entity_Gntr," nor ends at entity
+  STR          1  no {whole}sptr specific-tree:: paragraph
+  STRN        66  specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
+  XNAME       11  X differs from the whole's !⇒ main-name
+  EXTRA        1  other paragraphs / blocks inside the GS-TREE
+  KIDS         0  GS-TREE has child sections that are not spec-div, specifics (X.name) or SPECIFIC-COMPLEMENT
+  TWO          0  whole has more than one GS-TREE
+  SELF         0  self-link does not match its paragraph id
+
+=== ID (1) — section id is not {whole}gstr
+  McshCor000008:1106  idWhl001SetdongIsngstr  h3  "GENERIC-SPECIFIC-TREE of set"  whole idWhl001Set
+
+=== LEVEL (2) — heading level is not whole + 1
+  McshCor000002:1072  idMcsattNamMaingstr  h2  "GENERIC-SPECIFIC-TREE of McsnameMain"  whole h2
+  McshHlth000004:483  idCellHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Dna"  whole h2
+
+=== NAM (30) — name:: lacks X'generic_specific_tree / X'specific_generic_tree (or -)
+  McshCor000002:3575  idMcsmdonggstr  h3  "GENERIC-SPECIFIC-TREE of Mcsmgrdoing"
+  McshCor000002:4890  idMcsdonggstr  h2  "GENERIC-SPECIFIC-TREE of Mcsdoing"
+  McshCor000003:1726  idEntevoggstr  h2  "GENERIC-SPECIFIC-TREE of Enttevolg"
+  McshCor000003:5124  idEntsrtrgstr  h3  "GENERIC-SPECIFIC-TREE of Entitysrtr"
+  McshHlth000003:385  idMinddonggstr  h3  "GENERIC-SPECIFIC-TREE of Minddoing"
+  McshHlth000019:5739  idSysNrvsdonggstr  h2  "GENERIC-SPECIFIC-TREE of SystNervousdoing"
+  McshLag000002:130  idInfBrnBiodonggstr  h2  "GENERIC-SPECIFIC-TREE of InfoBrainBiodoing"
+  McshLag000007:31551  idLHmnmdonggstr  h2  "GENERIC-SPECIFIC-TREE of HmnmviewLogodoing"
+  McshOgm000002:179  idBiodonggstr  h2  "GENERIC-SPECIFIC-TREE of Biodoing"
+  McshStn000004:357  idGvcOgmdonggstr  h2  "GENERIC-SPECIFIC-TREE of AdmnSctndoing"
+  McshStn000009:2756  idSocadmndonggstr  h3  "GENERIC-SPECIFIC-TREE of SoctAdmndoing"
+  McshStn000010:564  idSfrHmndonggstr  h2  "GENERIC-SPECIFIC-TREE of Satisfierdoing"
+  McshTchInf000003:737  idCmrdonggstr  h2  "GENERIC-SPECIFIC-TREE of TechCmprdoing"
+  McshTchInf000006:834  idLCpgmalgdonggstr  h3  "GENERIC-SPECIFIC-TREE of Pgmgalgodoing"
+  McshTchInf000008:4034  idLHitpevoggstr  h2  "GENERIC-SPECIFIC-TREE of Hitpevolg"
+  McshTchInf000009:1827  idMcsHitpgstr  h3  "GENERIC-SPECIFIC-TREE of Mcshcpt"
+  McshTchInf000011:70  idLJsbrevalgstr  h2  "GENERIC-SPECIFIC-TREE of Jsbrevaln"
+  McshTchInf000015:255  idAlgntevalgstr  h2  "GENERIC-SPECIFIC-TREE of NetAlgoevaln"
+  McshTchInf000015:2475  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"
+  McshTchInf000015:9384  idLkxLycievalgstr  h7  "GENERIC-SPECIFIC-TREE of Lykklycievaln"
+  McshTchInf000015:13947  idAlgntevoggstr  h2  "GENERIC-SPECIFIC-TREE of NetAlgoevolg"
+  McshTchInf000016:264  idDbcevalgstr  h2  "GENERIC-SPECIFIC-TREE of Bkchevaln"
+  McshTchInf000016:5367  idDbcdatdonggstr  h3  "GENERIC-SPECIFIC-TREE of Bkcnchaindoing"
+  McshTchInf000016:5626  idDbcdonggstr  h2  "GENERIC-SPECIFIC-TREE of AgntBkcndoing"
+  McshTchInf000019:1255  idDeOzndonggstr  h2  "GENERIC-SPECIFIC-TREE of OgznDaodoing"
+  McshTchInf000021:568  idEosnodBpevalgstr  h4  "GENERIC-SPECIFIC-TREE of Agnteos_BPevaln"
+  McshTchInf000024:2726  idSteemactdonggstr  h3  "GENERIC-SPECIFIC-TREE of Stemacntdoing"
+  McshTchInf000024:4236  idSteemdonggstr  h2  "GENERIC-SPECIFIC-TREE of Steem_netdoing"
+  McshTchInf000030:4355  idLRustdonggstr  h2  "GENERIC-SPECIFIC-TREE of Rustdoing"
+  McshTchInf000031:2388  idLCppbdocdonggstr  h3  "GENERIC-SPECIFIC-TREE of Cppz_lago_bin_algodoing"
+
+=== GTR (1) — no {whole}gntr generic-tree:: paragraph
+  McshCor000008:1106  idWhl001SetdongIsngstr  h3  "GENERIC-SPECIFIC-TREE of set"
+
+=== GTRN (14) — generic-tree:: does not start with McshEngl.X_Gntr,
+  McshHlth000002:5440  idBdyHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Hmbdnutrient"  <br>* McshEngl.nutrient_Gntr,
+  McshHmn000002:2227  idHmnatt126gstr  h4  "GENERIC-SPECIFIC-TREE of human'relative-human"  <br>* McshEngl.human'relative_human_Gntr,
+  McshLag000007:1549  idLHmnmuntTextgstr  h4  "GENERIC-SPECIFIC-TREE of Textunit"  <br>* McshEngl.TextUnit_Gntr,
+  McshLag000007:33126  idLHmnm0024gstr  h2  "GENERIC-SPECIFIC-TREE of lagoOfcl"  <br>* McshEngl.lagOfcl_Gntr,
+  McshStn000009:883  idSocHumnatt019gstr  h2  "GENERIC-SPECIFIC-TREE of SciSoct"  <br>* McshEngl.SciSoc_Gntr,
+  McshTchInf000006:2956  idLSrcdsntcDefgstr  h4  "GENERIC-SPECIFIC-TREE of Srcd_lago-sentence.definition"  <br>* McshEngl.Srcd_lago_sentence.definition_Gntr,
+  McshTchInf000009:1736  idMcsHitpdtgstr  h4  "GENERIC-SPECIFIC-TREE of Mcshdata"  <br>* McshEngl.Mcsh'data_Gntr,
+  McshTchInf000009:1827  idMcsHitpgstr  h3  "GENERIC-SPECIFIC-TREE of Mcshcpt"  <br>* McshEngl.Mcsh_Gntr,
+  McshTchInf000015:2475  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"  <br>* McshEngl.Agnetchain_Gntr,
+  McshTchInf000016:6189  idBpmnetgstr  h4  "GENERIC-SPECIFIC-TREE of BkchSrvcSmct"  <br>* McshEngl.BkcnserviceSmct_Gntr,
+  McshTchInf000016:6266  idDbcEvugstr  h4  "GENERIC-SPECIFIC-TREE of BkchAsset"  <br>* McshEngl.BcnnetEvu_Gntr,
+  McshTchInf000021:2896  idEospgmAppGamgstr  h3  "GENERIC-SPECIFIC-TREE of Agnteos-Dapp.game"  <br>* McshEngl.Agnteos_Dapp.game_Gntr,
+  McshTchInf000031:1648  idLCppsuntPrcsBgstr  h3  "GENERIC-SPECIFIC-TREE of Cppzsunt.process-and-processNo"  <br>* McshEngl.Cppzsunt.process_and_processNo_Gntr,
+  McshTchInf000038:853  idTchLlmusaggstr  h2  "GENERIC-SPECIFIC-TREE of Llmapp"  <br>* McshEngl.LlmApp_Gntr,
+
+=== STR (1) — no {whole}sptr specific-tree:: paragraph
+  McshCor000008:1106  idWhl001SetdongIsngstr  h3  "GENERIC-SPECIFIC-TREE of set"
+
+=== STRN (66) — specific-tree:: lacks McshEngl.X.specific, / McshEngl.X_Sptr,
+  McshCor000002:1625  idMcsattDvsngstr  h3  "GENERIC-SPECIFIC-TREE of Mcsdvsn"
+  McshCor000002:3575  idMcsmdonggstr  h3  "GENERIC-SPECIFIC-TREE of Mcsmgrdoing"
+  McshCor000002:4890  idMcsdonggstr  h2  "GENERIC-SPECIFIC-TREE of Mcsdoing"
+  McshCor000003:1726  idEntevoggstr  h2  "GENERIC-SPECIFIC-TREE of Enttevolg"
+  McshCor000003:5124  idEntsrtrgstr  h3  "GENERIC-SPECIFIC-TREE of Entitysrtr"
+  McshCor000011:1731  idSys002nodegstr  h3  "GENERIC-SPECIFIC-TREE of Treenode"
+  McshCor000011:2752  idSys009gstr  h2  "GENERIC-SPECIFIC-TREE of SystDyna"
+  McshHlth000002:5440  idBdyHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Hmbdnutrient"
+  McshHlth000003:385  idMinddonggstr  h3  "GENERIC-SPECIFIC-TREE of Minddoing"
+  McshHlth000008:294  idMtrlHrmHmn001gstr  h4  "GENERIC-SPECIFIC-TREE of harmful-external-object"
+  McshHlth000013:348  idFoodHmnatt003gstr  h3  "GENERIC-SPECIFIC-TREE of food-nutrient"
+  McshHlth000019:5739  idSysNrvsdonggstr  h2  "GENERIC-SPECIFIC-TREE of SystNervousdoing"
+  McshHmn000002:2227  idHmnatt126gstr  h4  "GENERIC-SPECIFIC-TREE of human'relative-human"
+  McshHmn000002:5738  idHmn027gstr  h2  "GENERIC-SPECIFIC-TREE of asylum-seaker"
+  McshLag000002:130  idInfBrnBiodonggstr  h2  "GENERIC-SPECIFIC-TREE of InfoBrainBiodoing"
+  McshLag000006:304  idCharCmrgstr  h2  "GENERIC-SPECIFIC-TREE of computer-char"
+  McshLag000007:1549  idLHmnmuntTextgstr  h4  "GENERIC-SPECIFIC-TREE of Textunit"
+  McshLag000007:31551  idLHmnmdonggstr  h2  "GENERIC-SPECIFIC-TREE of HmnmviewLogodoing"
+  McshLag000007:33126  idLHmnm0024gstr  h2  "GENERIC-SPECIFIC-TREE of lagoOfcl"
+  McshNtr000005:95  idSysMolsatt004gstr  h2  "GENERIC-SPECIFIC-TREE of physical-property"
+  McshOgm000002:179  idBiodonggstr  h2  "GENERIC-SPECIFIC-TREE of Biodoing"
+  McshStn000004:357  idGvcOgmdonggstr  h2  "GENERIC-SPECIFIC-TREE of AdmnSctndoing"
+  McshStn000009:883  idSocHumnatt019gstr  h2  "GENERIC-SPECIFIC-TREE of SciSoct"
+  McshStn000009:2756  idSocadmndonggstr  h3  "GENERIC-SPECIFIC-TREE of SoctAdmndoing"
+  McshStn000010:564  idSfrHmndonggstr  h2  "GENERIC-SPECIFIC-TREE of Satisfierdoing"
+  McshTchInf000003:737  idCmrdonggstr  h2  "GENERIC-SPECIFIC-TREE of TechCmprdoing"
+  McshTchInf000006:834  idLCpgmalgdonggstr  h3  "GENERIC-SPECIFIC-TREE of Pgmgalgodoing"
+  McshTchInf000006:2956  idLSrcdsntcDefgstr  h4  "GENERIC-SPECIFIC-TREE of Srcd_lago-sentence.definition"
+  McshTchInf000008:4034  idLHitpevoggstr  h2  "GENERIC-SPECIFIC-TREE of Hitpevolg"
+  McshTchInf000009:1736  idMcsHitpdtgstr  h4  "GENERIC-SPECIFIC-TREE of Mcshdata"
+  McshTchInf000009:1827  idMcsHitpgstr  h3  "GENERIC-SPECIFIC-TREE of Mcshcpt"
+  McshTchInf000011:70  idLJsbrevalgstr  h2  "GENERIC-SPECIFIC-TREE of Jsbrevaln"
+  McshTchInf000015:255  idAlgntevalgstr  h2  "GENERIC-SPECIFIC-TREE of NetAlgoevaln"
+  McshTchInf000015:1910  idAlgnttxgstr  h3  "GENERIC-SPECIFIC-TREE of Agnttx"
+  McshTchInf000015:2475  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"
+  McshTchInf000015:7825  idAlgntwltgstr  h2  "GENERIC-SPECIFIC-TREE of Agnetwllt"
+  McshTchInf000015:7896  idAlgntstatgstr  h2  "GENERIC-SPECIFIC-TREE of chain-stats"
+  McshTchInf000015:9384  idLkxLycievalgstr  h7  "GENERIC-SPECIFIC-TREE of Lykklycievaln"
+  McshTchInf000015:13947  idAlgntevoggstr  h2  "GENERIC-SPECIFIC-TREE of NetAlgoevolg"
+  McshTchInf000016:160  idDbcpbmgstr  h3  "GENERIC-SPECIFIC-TREE of Bkcncon"
+  McshTchInf000016:264  idDbcevalgstr  h2  "GENERIC-SPECIFIC-TREE of Bkchevaln"
+  McshTchInf000016:2541  idDbcevuCgstr  h3  "GENERIC-SPECIFIC-TREE of appending-asset"
+  McshTchInf000016:5367  idDbcdatdonggstr  h3  "GENERIC-SPECIFIC-TREE of Bkcnchaindoing"
+  McshTchInf000016:5626  idDbcdonggstr  h2  "GENERIC-SPECIFIC-TREE of AgntBkcndoing"
+  McshTchInf000016:6189  idBpmnetgstr  h4  "GENERIC-SPECIFIC-TREE of BkchSrvcSmct"
+  McshTchInf000016:10758  idDcrnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDcrd"
+  McshTchInf000016:10917  idPivxnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntPivx"
+  McshTchInf000016:13548  idDashnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntDash"
+  McshTchInf000016:13690  idEmcnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEmcn"
+  McshTchInf000016:14960  idXrpnetgstr  h2  "GENERIC-SPECIFIC-TREE of AgntRppl"
+  McshTchInf000019:1255  idDeOzndonggstr  h2  "GENERIC-SPECIFIC-TREE of OgznDaodoing"
+  McshTchInf000021:568  idEosnodBpevalgstr  h4  "GENERIC-SPECIFIC-TREE of Agnteos_BPevaln"
+  McshTchInf000021:2515  idEospgmClntgstr  h2  "GENERIC-SPECIFIC-TREE of Eos-client"
+  McshTchInf000021:2896  idEospgmAppGamgstr  h3  "GENERIC-SPECIFIC-TREE of Agnteos-Dapp.game"
+  McshTchInf000023:258  idIotagstr  h1  "GENERIC-SPECIFIC-TREE of Iota-net"
+  McshTchInf000024:2343  idSteemacntkeygstr  h3  "GENERIC-SPECIFIC-TREE of Steem--key-pair"
+  McshTchInf000024:2726  idSteemactdonggstr  h3  "GENERIC-SPECIFIC-TREE of Stemacntdoing"
+  McshTchInf000024:4236  idSteemdonggstr  h2  "GENERIC-SPECIFIC-TREE of Steem_netdoing"
+  McshTchInf000030:4355  idLRustdonggstr  h2  "GENERIC-SPECIFIC-TREE of Rustdoing"
+  McshTchInf000031:1648  idLCppsuntPrcsBgstr  h3  "GENERIC-SPECIFIC-TREE of Cppzsunt.process-and-processNo"
+  McshTchInf000031:2388  idLCppbdocdonggstr  h3  "GENERIC-SPECIFIC-TREE of Cppz_lago_bin_algodoing"
+  McshTchInf000036:4205  idTchInf008gstr  h3  "GENERIC-SPECIFIC-TREE of TechMalr"
+  McshTchInf000036:4417  idTchInf008Dplrgstr  h4  "GENERIC-SPECIFIC-TREE of TechDplr"
+  McshTchInf000038:853  idTchLlmusaggstr  h2  "GENERIC-SPECIFIC-TREE of Llmapp"
+  McshTchInf000039:8182  idLCyclgstr  h2  "GENERIC-SPECIFIC-TREE of Cycl_lago"
+  McshTchInf000039:13651  idLKnlg014gstr  h3  "GENERIC-SPECIFIC-TREE of Rdfw_lago"
+
+=== XNAME (11) — X differs from the whole's !⇒ main-name
+  McshHlth000002:3563  idGlndHmn017gstr  h3  "GENERIC-SPECIFIC-TREE of HmbdTesticle"  main-name GlndTesticle
+  McshHlth000008:294  idMtrlHrmHmn001gstr  h4  "GENERIC-SPECIFIC-TREE of harmful-external-object"  main-name MtrlHlthHarm.001_external
+  McshHlth000013:4882  idFoodHmn039gstr  h2  "GENERIC-SPECIFIC-TREE of foodFlavoring"  main-name foodFlavoringNaturalDriedNo
+  McshTchInf000010:7073  idLJsgntolEgngstr  h3  "GENERIC-SPECIFIC-TREE of Jsgnengine"  main-name Jsgn_lago'engine
+  McshTchInf000015:2475  idAlgntchngstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo"  main-name Agnetchain
+  McshTchInf000016:16190  idHmqnetgstr  h2  "GENERIC-SPECIFIC-TREE of Humaniq"  main-name AgntHmiq
+  McshTchInf000021:2515  idEospgmClntgstr  h2  "GENERIC-SPECIFIC-TREE of Eos-client"  main-name EOS.IO_software
+  McshTchInf000024:2343  idSteemacntkeygstr  h3  "GENERIC-SPECIFIC-TREE of Steem--key-pair"  main-name Stemacnt'key_pair
+  McshTchInf000031:1648  idLCppsuntPrcsBgstr  h3  "GENERIC-SPECIFIC-TREE of Cppzsunt.process-and-processNo"  main-name Cppzsunt.process_and_processNo
+  McshTchInf000040:816  idWwwfmwkgstr  h3  "GENERIC-SPECIFIC-TREE of Webframework"  main-name Www'framework
+  McshTchInf000041:996  idVscodecmingstr  h3  "GENERIC-SPECIFIC-TREE of Vsc_ai_cstm_insn"  main-name Vscdai'custom_instructions
+
+=== EXTRA (1) — other paragraphs / blocks inside the GS-TREE
+  McshCor000008:1106  idWhl001SetdongIsngstr  h3  "GENERIC-SPECIFIC-TREE of set"  idWhl001SetdongIsngntr(generic-tree::), idWhl001SetdongIsnsptr(specific-tree::)

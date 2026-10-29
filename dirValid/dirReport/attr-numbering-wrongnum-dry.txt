@@ -1,0 +1,8 @@
+INH-WRONGNUM: refining attributes take the NN of their generic attribute — 2026-10-29   DRY=true
+
+renumbered: 0 | NN taken (left): 1 | files to write: 0
+
+=== RENUMBERED (0)
+
+=== TAKEN (1)
+  McshTchInf000002:63  "02_human of techInfo"  -> 01_ is taken by "01_evaluation of techInfo"

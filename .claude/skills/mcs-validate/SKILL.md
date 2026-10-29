@@ -28,6 +28,7 @@ Mcsh rules (`structuralMcsh.js`, Mcsh* files only):
 | MvrlMmn04 | (warning) main-name of a "DOING of X" section is `Xdoing`, capital first, no apostrophe |
 | MvrlMmn05 | (warning) main-name of a "info-resource of X" section is `Xinfrsc`, capital first, no apostrophe |
 | MvrlMmn06 | (warning) main-name of a "structure of X" section is `Xsrtr`, capital first, no apostrophe |
+| MvrlMmn07 | (warning) the Attrbase line `B!Attrbase,` / `B!Attrbase!⇒M,` comes right after `M!=I` (3rd name line), or after `M!@McshXxx` (4th) in a file-concept |
 
 Hitp rules (`structuralHitp.js`, every .last.html file):
 

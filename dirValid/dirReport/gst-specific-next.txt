@@ -1,0 +1,25 @@
+
+T55. {2026-10-29} REPORT + DONE: attribute numbering (proposal: a generic numbers its attributes, a specific's OWN attributes continue
+     after the max inherited NN). Report: dirReport/attr-numbering-report.txt (scratchpad/attrnum.mjs, inheritMcsh.mjs model, read-only).
+     Done: the 57 GEN-PARTLY generics — 173 unnumbered attribute headings got NN_ ("expression of doing" -> "06_expression of doing"):
+     the NN of the generic attribute it refines (4), else the next free NN after the highest one (169); headings only, names unchanged.
+     Not numbered: fixed attributes (DOING, evoluting, evaluation, info-resource, structure) and MISC-ATTRIBUTE (user's choice).
+     Now GEN-NUMBERED 115, GEN-PARTLY 0, GEN-UNNUMBERED 757. List: dirReport/attr-numbering-genpartly-applied.txt.
+     gstree-report.js NAM now accepts X'generic_specific_tree (underscore, the user's new spelling) as well as the dash form.
+
+T56. {2026-10-29} DONE: OWN-COLLIDES 77 -> 0 — a specific's own attribute numbered at/below the max inherited NN was renumbered after it,
+     in old-NN order; refining attributes below with the same old NN followed (cascade). 8 passes (each raised the maxima below):
+     ~1000 heading changes, 67 files, headings only (NN_ prefix); highest NN now 47 (was 20). E.g. bodyNo/doing/acting "01_argument" -> "06_",
+     Mws 01..12 -> 13..; model, system, FctgBrainingBio renumbered after entity's 01-05.
+     Side effects (inheritMcsh.mjs, before -> after): INH-WRONGNUM 71 -> 100 (refining attrs that already differed did not follow),
+     INH-ORDER 33 -> 145 (own attrs now numbered after inherited ones but placed before them), INH-NONUM 757 -> 848. OPEN for the user.
+     List: dirReport/attr-numbering-collides-applied.txt (per pass).
+
+T57. {2026-10-29} DONE: (1) INH-WRONGNUM: a refining attribute takes its generic attribute's NN when free (134 + rounds; 100 -> 2);
+     the collision fix re-run between rounds (2 more own attrs moved, e.g. AgntBkcn 28_blockchain -> 30_). (2) inheritMcsh.mjs --fix:
+     847 titles got the NN of the generic attribute they match (INH-NONUM 848 -> 5). (3) inheritMcsh.mjs --fix-order: attribute sections
+     put in NN order (INH-ORDER 145 -> 0). 136 files vs the pre-round copy: only NN_ prefixes and section order changed; sections balanced,
+     no new duplicate id, dangling links 2895 -> 2895. OWN-COLLIDES 0. GS-TREE report and MvrlGstr01/02 unaffected.
+     LEFT: INH-WRONGNUM 2 (techInfo 02_human -> 01_ taken by "01_evaluation of techInfo"; science 14_rlnReferent ~ model'12_evaluation looks
+     like a false attr-word match), INH-NONUM 5 (own numbering of the specific: ActgMeasuring, Zhon_lago, SocGlbl — by hand),
+     GEN-PARTLY 83 (generics --fix numbered partly). Lists: dirReport/attr-numbering-wrongnum-applied.txt, dirValid/inheritMcsh.txt.

@@ -1,0 +1,7 @@
+ATTRBASE LINE FIX DRY — 2026-10-29
+changes: 3
+
+=== CHANGED (3)
+  McshCor000002:41  MOVE  <br>* McshEngl.Mcs!Attrbase,  ->  line 42
+  McshHlth000002:36  MOVE  <br>* McshEngl.Hmbd!Attrbase!⇒bodyHumn,  ->  line 37
+  McshTchInf000005:31  <br>* McshEngl.Cmpl!Attrbase⇒Cmpr_lago,  ->  <br>* McshEngl.Cmpl!Attrbase!⇒Cmpr_lago,
