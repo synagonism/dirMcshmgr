@@ -58,6 +58,11 @@
         "command": "mcshv.openByCodeOnly",
         "title": "Open McsHitp file by code only (no visual)",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.makeSectFile",
+        "title": "Make current-sect-concept McshFile-concept",
+        "category": "Mcs"
       }
     ],
     "menus": {

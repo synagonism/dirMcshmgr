@@ -198,8 +198,49 @@ function fCoreStart(text, msg) {
   return oLoc ? oLoc.s : null;
 }
 
+/**
+ * Is `sId` a sect-concept of `sText`: one <section id>, not a page-part, with a name:: para
+ * in its own text (before its first child section).
+ * @returns {{ sWhy: string, sNameFirst: string }} sWhy '' when it is; sNameFirst the
+ *   first name of its name:: without `McshLago.`, '' when none.
+ */
+function fFindSectConcept(sText, sId) {
+  if (!sId) return { sWhy: 'the address bar has no #id', sNameFirst: '' };
+  if (['idOverview', 'idMeta', 'idSupport', 'idHeader'].includes(sId)) return { sWhy: '#' + sId + ' is not a sect-concept', sNameFirst: '' };
+  const aLine = sText.split('\n');
+  const aOpen = [];
+  aLine.forEach((sLine, nL) => { if ((sLine.match(/<section\b[^>]*\bid="([^"]+)"/) || [])[1] === sId) aOpen.push(nL); });
+  if (aOpen.length === 0) return { sWhy: '#' + sId + ' is not a section: it is not a sect-concept', sNameFirst: '' };
+  if (aOpen.length > 1) return { sWhy: '#' + sId + ' occurs ' + aOpen.length + ' times as a section', sNameFirst: '' };
+  for (let nL = aOpen[0] + 1; nL < aLine.length; nL++) {
+    if (/<section\b|<\/section>/.test(aLine[nL])) break;
+    if (!/^ *<p id="[^"]+">name::\s*$/.test(aLine[nL])) continue;
+    const aName = (aLine[nL + 1] || '').match(/^\s*<br>\*\s*Mcsh[A-Z][a-z]{3}\.([^\n,]+),/);
+    return { sWhy: '', sNameFirst: aName ? aName[1].trim() : '' };
+  }
+  return { sWhy: '#' + sId + ' has no name:: para: it is not a sect-concept', sNameFirst: '' };
+}
+
+/**
+ * Informal and main name from a first name-line: `A!⇒B` → informal A, main B;
+ * `A!=B` → main A, informal B; a plain name → nothing, the caller asks.
+ * @returns {{ sInformal: string, sMain: string }}
+ */
+function fParseNameFirst(sName) {
+  const fPart = (sMark) => {
+    const nI = sName.indexOf(sMark);
+    return nI < 0 ? '' : sName.slice(nI + sMark.length).split('!')[0].trim();
+  };
+  const sHead = sName.split('!')[0].trim();
+  const sTo = fPart('!⇒');
+  if (sTo) return { sInformal: sHead, sMain: sTo };
+  const sEq = fPart('!=');
+  if (sEq) return { sInformal: sEq, sMain: sHead };
+  return { sInformal: '', sMain: '' };
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
-  fFlattenCores, fCoreAtOffset,
+  fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
 };

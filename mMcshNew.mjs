@@ -33,6 +33,8 @@
  * OUTPUT: McsDir000000.last.html
  * RUN from dirMcsh:
  *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <true|false>
+ *  with a-sect-concept to move into the-new file (see mMcshSectMove.mjs):
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <true|false> <sPassword> <sFileOld> <sIdSect> [--no-upload]
  *
  * ISSUE: IF you want to recreate the-file,
  * you have to delete IT from SitePagesArr.json
@@ -42,10 +44,12 @@ import moFs from 'fs'
 import * as moUtil from './mUtil.mjs'
 import {fNamidx} from './mNamidx.mjs'
 import {fSftp, fAskHidden} from './mSftp.mjs'
+import {fPlanSectMove, fReadRawOther} from './mMcshSectMove.mjs'
 
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-11-0.2026-10-30: moves a-sect-concept into the-new file (Make-current-file)',
     'mMcshNew.mjs.1-10-0.2026-10-19: tree-names with underscore _Wltr|_Sptr|_Prtr|_Chtr|_Pntr|Sympan_Wltr',
     'mMcshNew.mjs.1-9-0.2026-10-19: tree-ids gntr|chtr|wltr|prtr, child-tree::, entity_Gntr, names -Wltr|-Sptr|-Prtr|-Chtr|-Pntr|Sympan-Wltr',
     'mMcshNew.mjs.1-8-0.2026-09-30: entity-gtr|Sympan-wtr',
@@ -243,8 +247,8 @@ s =
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'pctrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'parent-child-tree,\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'child-parent-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'parent_child_tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'child_parent_tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'pntr">parent-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Pntr,\n' +
@@ -263,8 +267,8 @@ s =
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'wptrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'whole-part-tree,\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'part-whole-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'whole_part_tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'part_whole_tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'wltr">whole-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Wltr,\n' +
@@ -284,8 +288,8 @@ s =
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'gstrnam">name::\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'generic-specific-tree,\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'specific-generic-tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'generic_specific_tree,\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'specific_generic_tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'gntr">generic-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Gntr,\n' +
@@ -361,7 +365,38 @@ s = s +
   '</body>\n' +
   '</html>'
 
+// a-sect-concept to move: we plan it BEFORE we write anything.
+// argv[8]=sFileOld  argv[9]=sIdSect  argv[10]=--no-upload
+const
+  sFileOld = process.argv[8],
+  sIdSect = process.argv[9],
+  bUpload = process.argv[10] !== '--no-upload'
+let oMove = null
+if (sFileOld) {
+  try {
+    if (moFs.existsSync(sDir + '/' + sNameFile)) throw new Error(sNameFile + ' exists')
+    oMove = fPlanSectMove({
+      sRawOld: moFs.readFileSync(sFileOld, 'utf8'),
+      sRawNew: s,
+      sIdSect,
+      sIdNew: sNameId,
+      sFileOld,
+      sFileNew: sDir + '/' + sNameFile,
+      sNameMain,
+      oRawOther: fReadRawOther('.', sFileOld)
+    })
+  } catch (oErr) {
+    console.error('Make-current-file, NOTHING written: ' + oErr.message)
+    process.exit(1)
+  }
+  s = oMove.sRawNew
+}
+
 moFs.writeFileSync(sDir + '/' + sNameFile, s)
+if (oMove) {
+  moFs.writeFileSync(sFileOld, oMove.sRawOld)
+  for (const sPath of Object.keys(oMove.oRawOther)) moFs.writeFileSync(sPath, oMove.oRawOther[sPath])
+}
 
 if (bCounter) {
   moFs.writeFileSync('../dirPgm/dirCntr/dirCntrfiles/' + sNameFileNaked + '.txt', '1')
@@ -375,13 +410,15 @@ SitePagesArr.sort((aA, aB) => {
 moUtil.fWriteJsonArray('../dirMcsh/SitePagesArr.json', SitePagesArr)
 
 // index new file
-fNamidx(sDir + '/' + sNameFile)
+fNamidx(oMove ? [sDir + '/' + sNameFile, sFileOld] : sDir + '/' + sNameFile)
 
 //add extra files to upload
 let aSftp = JSON.parse(moFs.readFileSync('../dirMcsh/dirManager/sftp.json'))
 aSftp.push('../dirMcsh/SitePagesArr.json')
 aSftp.push('../dirPgm/dirCntr/dirCntrfiles/' + sNameFileNaked + '.txt')
+if (oMove) aSftp.push(...Object.keys(oMove.oRawOther))
 moUtil.fWriteJsonArray('../dirMcsh/dirManager/sftp.json', aSftp)
+if (!bUpload) process.exit(0)
 //upload files (argv[7] = SFTP password from the VS Code task; else prompt when run alone)
 let sSftpPwd = process.argv[7]
 if (!sSftpPwd) sSftpPwd = await fAskHidden('Enter password: ')

@@ -34,6 +34,8 @@ let oShortcutsCache = { path: '', mtimeMs: -1, list: [] };
 let sVisualFile = '';
 /** Navigate fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fNavigateVisual = null;
+/** Make-current-file fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
+let fMakeSectVisual = null;
 
 function fActivate(context) {
   const oProvider = fCreateProvider(context);
@@ -191,6 +193,14 @@ function fActivate(context) {
       await fRevealSource(vscode.Uri.file(sPath), nLine);   // nLine 0 → opens at top
     })
   );
+  // Make the sect-concept of the address bar a McshFile-concept: only the visual editor
+  // has an address bar, so without one we report.
+  context.subscriptions.push(
+    vscode.commands.registerCommand('mcshv.makeSectFile', () => {
+      if (fMakeSectVisual) return fMakeSectVisual();
+      vscode.window.showWarningMessage('Mcsh-visual-manager: open the visual editor, its address bar gives the sect-concept.');
+    })
+  );
   // Source -> Visual: when the active source tab becomes a different editable page
   // (e.g. closing a tab shifts focus to another Mcs/Hitp tab, or clicking one), the
   // open visual editor navigates to it — keeping the two panes mirrored. The reverse
@@ -245,7 +255,7 @@ function fCreateProvider(context) {
     // page now shown, so edits/saves follow. `null` = a view-only page.
     let oActiveDoc = document;
     sVisualFile = document.uri.fsPath;           // seed ${command:mcshv.currentFile}
-    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; fNavigateVisual = fNavigate; } });
+    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; fNavigateVisual = fNavigate; fMakeSectVisual = fMakeSect; } });
     const oSetAddedKeys = new Set();             // docs we added to `oSetUriManaged` (cleanup on dispose)
     const sDocRootBase = fDocRootBase(document);
 
@@ -273,8 +283,63 @@ function fCreateProvider(context) {
     const fIndexUpload = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names of current-file and upload');
     // File → Index only (and Ctrl+Alt+P X O): name-index the current file, no upload.
     const fIndexOnly = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names ONLY of current-file');
-    // File → New McsHitp (and Ctrl+Alt+P K M): run the task that creates a new page.
+    // File → New McsHitp (and Ctrl+Alt+P K N): run the task that creates a new page.
     const fNewFile = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Create new McsHitp file');
+    // The address bar's URL, as the bridge last reported it (`nav` and `url` messages).
+    let sHrefCurrent = '';
+    // File → Make-current-file (and Ctrl+Alt+P K M): the sect-concept of the address bar
+    // becomes a new McshFile-concept. Asks like the 'Create new McsHitp file' task, runs
+    // mMcshNew.mjs with the section to move, then navigates to the new file.
+    const fMakeSect = async () => {
+      const fReport = (sIn) => { vscode.window.showWarningMessage('Mcsh-visual-manager: ' + sIn); };
+      if (!oActiveDoc) return fReport('this page is not an editable file.');
+      const sFs = oActiveDoc.uri.fsPath;
+      const sBase = path.basename(sFs);
+      const nHash = sHrefCurrent.indexOf('#');
+      const sId = nHash < 0 ? '' : decodeURIComponent(sHrefCurrent.slice(nHash + 1));
+      const oSect = omModel.fFindSectConcept(oActiveDoc.getText(), sId);
+      if (oSect.sWhy) return fReport(oSect.sWhy + '.');
+      const sDir = path.basename(path.dirname(sFs));
+      if (!/^Mcsh/.test(sBase) || !/^dir./.test(sDir)) return fReport(sBase + ' is not a Mcsh file of a dir<Cat>.');
+      if (oActiveDoc.isDirty) await oActiveDoc.save();
+
+      const oName = omModel.fParseNameFirst(oSect.sNameFirst);
+      const fAsk = (sPrompt, sValue, bPassword) => vscode.window.showInputBox({ prompt: sPrompt, value: sValue, password: !!bPassword, ignoreFocusOut: true });
+      const sInformal = oName.sInformal || await fAsk('Informal title, e.g. Ethereum--blockchain-net', oSect.sNameFirst.split('!')[0].trim());
+      if (!sInformal) return;
+      const sMain = oName.sMain || await fAsk('Formal short-name, e.g. Mcsmgr', oSect.sNameFirst.split('!')[0].trim());
+      if (!sMain) return;
+      const sIdNew = await fAsk('ID stem of the new file', sId);
+      if (!sIdNew) return;
+      const sCounter = await vscode.window.showQuickPick(['true', 'false'], { placeHolder: 'Add visit counter?', ignoreFocusOut: true });
+      if (!sCounter) return;
+      const sPassword = await fAsk('SFTP password (for upload to synagonism.net)', '', true);
+      if (!sPassword) return;
+
+      // the worldview root, and the new file: its number as mMcshNew.mjs computes it
+      const sRoot = path.dirname(path.dirname(sFs));
+      let aPage = [];
+      try { aPage = JSON.parse(fs.readFileSync(path.join(sRoot, 'SitePagesArr.json'), 'utf8')); }
+      catch (oErr) { return fReport('cannot read SitePagesArr.json: ' + oErr.message); }
+      const sDirShort = sDir.slice(3);
+      const rPage = new RegExp('^Mcsh' + sDirShort + '[0-9]+\\.txt');
+      const nFile = aPage.filter((aItem) => rPage.test(aItem[0])).length;
+      const sFileNew = path.join(sRoot, sDir, 'Mcsh' + sDirShort + String(nFile).padStart(6, '0') + '.last.html');
+
+      const oTask = new vscode.Task(
+        { type: 'shell', task: 'Make-current-file' }, vscode.TaskScope.Workspace, 'Make-current-file', 'mcshv',
+        new vscode.ShellExecution('node', ['../dirMcshmgr/mMcshNew.mjs', sDir, sInformal, sMain, sIdNew, sCounter, sPassword, sDir + '/' + sBase, sId], { cwd: sRoot })
+      );
+      const oExec = await vscode.tasks.executeTask(oTask);
+      const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
+        if (oEvt.execution !== oExec) return;
+        oEnd.dispose();
+        if (oEvt.exitCode !== 0) return fReport('Make-current-file failed, see the terminal.');
+        const sUrl = fDisplayUrlForPath(sFileNew);
+        if (sUrl) fNavigate(sUrl);
+      });
+    };
+    fMakeSectVisual = fMakeSect;                 // this editor is the active one at resolve time
 
     // --- source <-> visual cursor sync ----------------------------------------
     // Flattened cores, cached per document version so cursor-move sync doesn't
@@ -322,6 +387,7 @@ function fCreateProvider(context) {
 
     // Retarget the edit file when the page navigates (bridge `nav` message).
     const fOnNavigate = async (href) => {
+      sHrefCurrent = href || '';
       fToChrome({ type: 'setUrl', url: href });               // address bar
       const oUri = fPathFromUrl(href, sDocRootBase);
       if (oUri && fs.existsSync(oUri.fsPath)) {
@@ -421,6 +487,7 @@ function fCreateProvider(context) {
             case 'indexUpload': fIndexUpload(); break;
             case 'indexOnly': fIndexOnly(); break;
             case 'newFile': fNewFile(); break;
+            case 'makeSectFile': fMakeSect(); break;
             case 'cmd': fToChrome({ type: 'cmd', cmd: msg.cmd }); break; // relay to bridge
             case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P
             case 'openRaw': vscode.commands.executeCommand('vscode.openWith', (oActiveDoc || document).uri, 'default'); break;
@@ -435,11 +502,12 @@ function fCreateProvider(context) {
           case 'open': fOpenByCode(); break;                           // Ctrl+Alt+P O from the iframe
           case 'indexUpload': fIndexUpload(); break;                   // Ctrl+Alt+P X U from the iframe
           case 'indexOnly': fIndexOnly(); break;                       // Ctrl+Alt+P X O from the iframe
-          case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K M from the iframe
+          case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K N from the iframe
+          case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K M from the iframe
           case 'maximizeGroup': vscode.commands.executeCommand('workbench.action.toggleMaximizeEditorGroup'); break; // Ctrl+K Ctrl+M
           case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P from the iframe
           case 'nav': await fOnNavigate(msg.href); break;
-          case 'url': fToChrome({ type: 'setUrl', url: msg.href }); break; // hash jump: address bar only
+          case 'url': sHrefCurrent = msg.href || ''; fToChrome({ type: 'setUrl', url: msg.href }); break; // hash jump: address bar only
 
           case 'edit': {
             const sPlain = String(msg.text == null ? '' : msg.text).replace(/\r?\n/g, ' ');
@@ -488,6 +556,7 @@ function fCreateProvider(context) {
 
     panel.onDidDispose(() => {
       if (fNavigateVisual === fNavigate) fNavigateVisual = null;   // no visual reuse target once closed
+      if (fMakeSectVisual === fMakeSect) fMakeSectVisual = null;
       oSetUriManaged.delete(sKey); oSetUriSaving.delete(sKey);
       oSetAddedKeys.forEach((k) => { oSetUriManaged.delete(k); oSetUriSaving.delete(k); }); // files we retargeted to while browsing
       if (oSyncTimer) clearTimeout(oSyncTimer);
@@ -735,12 +804,13 @@ function fBuildShell(webview, url) {
     <div id="idMenu">
       <div class="clsItem clsHasSub">File<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">New McsHitp<span class="clsKbd">Ctrl+Alt+P K M</span></div>
+          <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">New-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
+          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">Make-current-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
           <div class="clsItem" title="Open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">Open<span class="clsKbd">Ctrl+Alt+P O</span></div>
           <div class="clsItem" data-cmd="cmdSave">Save<span class="clsKbd">Ctrl+S</span></div>
           <div class="clsItem" data-cmd="cmdOpenRaw">Open in source</div>
-          <div class="clsItem" title="Index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">Index and upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
-          <div class="clsItem" title="Index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">Index only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
+          <div class="clsItem" title="Index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">Index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
+          <div class="clsItem" title="Index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">Index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
         </div>
       </div>
       <div class="clsItem clsHasSub">Edit<span class="clsCaret">&#9656;</span>
@@ -846,6 +916,7 @@ function fBuildShell(webview, url) {
     if(sCmd==='cmdSave') fToChrome({type:'save'});
     else if(sCmd==='cmdOpen') fToChrome({type:'open'});
     else if(sCmd==='cmdNewFile') fToChrome({type:'newFile'});
+    else if(sCmd==='cmdMakeSectFile') fToChrome({type:'makeSectFile'});
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
     else if(sCmd==='cmdOpenRaw') fToChrome({type:'openRaw'});
