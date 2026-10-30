@@ -34,7 +34,7 @@ let oShortcutsCache = { path: '', mtimeMs: -1, list: [] };
 let sVisualFile = '';
 /** Navigate fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fNavigateVisual = null;
-/** Make-current-file fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
+/** Make-sect-file fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fMakeSectVisual = null;
 
 function fActivate(context) {
@@ -287,7 +287,7 @@ function fCreateProvider(context) {
     const fNewFile = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Create new McsHitp file');
     // The address bar's URL, as the bridge last reported it (`nav` and `url` messages).
     let sHrefCurrent = '';
-    // File → Make-current-file (and Ctrl+Alt+P K M): the sect-concept of the address bar
+    // File → Make-sect-file (and Ctrl+Alt+P K M): the sect-concept of the address bar
     // becomes a new McshFile-concept. Asks like the 'Create new McsHitp file' task, runs
     // mMcshNew.mjs with the section to move, then navigates to the new file.
     const fMakeSect = async () => {
@@ -311,8 +311,8 @@ function fCreateProvider(context) {
       if (!sMain) return;
       const sIdNew = await fAsk('ID stem of the new file', sId);
       if (!sIdNew) return;
-      const sCounter = await vscode.window.showQuickPick(['true', 'false'], { placeHolder: 'Add visit counter?', ignoreFocusOut: true });
-      if (!sCounter) return;
+      const sAttrbase = await fAsk('Prefix for attribute main-names, e.g. Auto', sMain);
+      if (!sAttrbase) return;
       const sPassword = await fAsk('SFTP password (for upload to synagonism.net)', '', true);
       if (!sPassword) return;
 
@@ -327,14 +327,14 @@ function fCreateProvider(context) {
       const sFileNew = path.join(sRoot, sDir, 'Mcsh' + sDirShort + String(nFile).padStart(6, '0') + '.last.html');
 
       const oTask = new vscode.Task(
-        { type: 'shell', task: 'Make-current-file' }, vscode.TaskScope.Workspace, 'Make-current-file', 'mcshv',
-        new vscode.ShellExecution('node', ['../dirMcshmgr/mMcshNew.mjs', sDir, sInformal, sMain, sIdNew, sCounter, sPassword, sDir + '/' + sBase, sId], { cwd: sRoot })
+        { type: 'shell', task: 'Make-sect-file' }, vscode.TaskScope.Workspace, 'Make-sect-file', 'mcshv',
+        new vscode.ShellExecution('node', ['../dirMcshmgr/mMcshNew.mjs', sDir, sInformal, sMain, sIdNew, sAttrbase, sDir + '/' + sBase, sId], { cwd: sRoot, env: { MCSH_SFTP_PASSWORD: sPassword } })
       );
       const oExec = await vscode.tasks.executeTask(oTask);
       const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
         if (oEvt.execution !== oExec) return;
         oEnd.dispose();
-        if (oEvt.exitCode !== 0) return fReport('Make-current-file failed, see the terminal.');
+        if (oEvt.exitCode !== 0) return fReport('Make-sect-file failed, see the terminal.');
         const sUrl = fDisplayUrlForPath(sFileNew);
         if (sUrl) fNavigate(sUrl);
       });
@@ -805,7 +805,7 @@ function fBuildShell(webview, url) {
       <div class="clsItem clsHasSub">File<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
           <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">New-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
-          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">Make-current-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
+          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">Make-sect-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
           <div class="clsItem" title="Open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">Open<span class="clsKbd">Ctrl+Alt+P O</span></div>
           <div class="clsItem" data-cmd="cmdSave">Save<span class="clsKbd">Ctrl+S</span></div>
           <div class="clsItem" data-cmd="cmdOpenRaw">Open in source</div>

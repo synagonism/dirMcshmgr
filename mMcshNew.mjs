@@ -32,9 +32,11 @@
  * INPUT:
  * OUTPUT: McsDir000000.last.html
  * RUN from dirMcsh:
- *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <true|false>
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <sAttrbase>
  *  with a-sect-concept to move into the-new file (see mMcshSectMove.mjs):
- *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <true|false> <sPassword> <sFileOld> <sIdSect> [--no-upload]
+ *  node ../dirMcshmgr/mMcshNew.mjs <sDir> <sNameInformal> <sNameMain> <sNameId> <sAttrbase> <sFileOld> <sIdSect> [--no-upload]
+ *  the-SFTP password comes from the-env-variable MCSH_SFTP_PASSWORD, else it is asked:
+ *  on the-command-line the-terminal would show it.
  *
  * ISSUE: IF you want to recreate the-file,
  * you have to delete IT from SitePagesArr.json
@@ -49,6 +51,8 @@ import {fPlanSectMove, fReadRawOther} from './mMcshSectMove.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-13-0.2026-10-30: SFTP password from env MCSH_SFTP_PASSWORD, not argv',
+    'mMcshNew.mjs.1-12-0.2026-10-30: sAttrbase, main-names of infrsc|doing|evolg, always counter',
     'mMcshNew.mjs.1-11-0.2026-10-30: moves a-sect-concept into the-new file (Make-current-file)',
     'mMcshNew.mjs.1-10-0.2026-10-19: tree-names with underscore _Wltr|_Sptr|_Prtr|_Chtr|_Pntr|Sympan_Wltr',
     'mMcshNew.mjs.1-9-0.2026-10-19: tree-ids gntr|chtr|wltr|prtr, child-tree::, entity_Gntr, names -Wltr|-Sptr|-Prtr|-Chtr|-Pntr|Sympan-Wltr',
@@ -112,18 +116,21 @@ let
 
   //1. Directory of the-concept dirCor|dirEdu|dirHlth|dirHmn|dirLag|dirNtr|
   //   dirOgm|dirStn|dirStnlaw|dirTch|dirTchPrgm|dirTchInf
-  sDir = 'dirHmn',
+  sDir = 'dirCor',
 
   //2. Name of the-title: Ethereum--blockchain-net
-  sNameInformal = 'Human A',
+  sNameInformal = 'whole-with-parts-and-relations',
 
   //3. SHORT-name: sysNet, ogn, DnChain, DnEth, Dchain-net, lagoSngu,
-  sNameMain = 'humnA',
+  sNameMain = 'system',
 
-  //4. Name for IDs, unique in this file: Net, Dtc, LTurk, SocGrca,
-  sNameId = 'HumnA',
+  //4. Name for IDs, unique in this file: Net, Dtc, LTurk, SocGrca => idNet, idLTurk, ...
+  sNameId = 'Syst',
 
-  //5. Add counter or not
+  //5. prefix for attributes main-mind-name
+  sAttrbase = "Syst",
+
+  //Add counter or not
   bCounter = true,
 
   sNameFile = '',
@@ -134,12 +141,12 @@ let
 
 
 // INPUT VALUES may be supplied as CLI args (VS Code task inputs); else defaults above.
-// argv[2]=sDir  argv[3]=sNameInformal  argv[4]=sNameMain  argv[5]=sNameId  argv[6]=bCounter
+// argv[2]=sDir  argv[3]=sNameInformal  argv[4]=sNameMain  argv[5]=sNameId  argv[6]=sAttrbase
 if (process.argv[2]) sDir          = process.argv[2]
 if (process.argv[3]) sNameInformal = process.argv[3]
-if (process.argv[4]) sNameMain   = process.argv[4]
+if (process.argv[4]) sNameMain     = process.argv[4]
 if (process.argv[5]) sNameId       = process.argv[5]
-if (process.argv[6]) bCounter      = process.argv[6] === 'true'
+if (process.argv[6]) sAttrbase     = process.argv[6]
 sDirShort = sDir.substring(3)
 
 
@@ -187,8 +194,8 @@ s =
   '    <br>* McshEngl.' + sNameInformal + '!⇒' + sNameMain + ',\n' +
   '    <br>* McshEngl.' + sNameMain + '!=' + sNameInformal + ',\n' +
   '    <br>* McshEngl.' + sNameMain + '!@' + sNameFileNaked + ',\n' +
+  '    <br>* McshEngl.' + (sAttrbase === sNameMain ? sNameMain + '!Attrbase' : sAttrbase + '!Attrbase!⇒' + sNameMain) + ',\n' +
   '    <br>* McshEngl.' + sNameFile + '//' + sDir + '//dirMcsh!⇒' + sNameMain + ',\n' +
-  '    <br>* McshEngl.' + sDir + '//dirMcsh!⇒' + sNameMain + ',\n' +
   '    <br>* McshEngl.' + sDir +'/' + sNameFile + '!⇒' + sNameMain + ',\n' +
   '    <a class="clsHide" href="#idName"></a></p>\n' +
   '  </section>\n' +
@@ -200,7 +207,9 @@ s =
   '    <br>* \n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'irscnam">name::\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'InfRsc,\n' +
+  '    <br>* McshEngl.info-resource--of-' + sNameMain + '!⇒' + sAttrbase + 'infrsc,\n' +
+  '    <br>* McshEngl.' + sAttrbase + 'infrsc!=info-resource--of-' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'info_resource!⇒' + sAttrbase + 'infrsc,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscnam"></a></p>\n' +
   '  </section>\n' +
   //'\n' +
@@ -223,7 +232,9 @@ s =
   '    <br>* \n' +
   '    <a class="clsHide" href="#' + sNameId + 'dongdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'dongnam">name::\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'doing,\n' +
+  '    <br>* McshEngl.doing-of-' + sNameMain + '!⇒' + sAttrbase + 'doing,\n' +
+  '    <br>* McshEngl.' + sAttrbase + 'doing!=doing-of-' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'doing!⇒' + sAttrbase + 'doing,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'dongnam"></a></p>\n' +
   '  </section>\n' +
   '\n' +
@@ -235,8 +246,9 @@ s =
   '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McshTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
   '    <a class="clsHide" href="#' + sNameId + 'evogdsn"></a></p>\n' +
   '  <p id="' + sNameId + 'evognam">name::\n' +
-  '    <br>* McshEngl.evoluting-of-' + sNameMain + ',\n' +
-  '    <br>* McshEngl.' + sNameMain + '\'evoluting,\n' +
+  '    <br>* McshEngl.evoluting-of-' + sNameMain + '!⇒' + sAttrbase + 'evolg,\n' +
+  '    <br>* McshEngl.' + sAttrbase + 'evolg!=evoluting-of-' + sNameMain + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '\'evoluting!⇒' + sAttrbase + 'evolg,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'evognam"></a></p>\n' +
   '  </section>\n' +
   '\n' +
@@ -273,7 +285,7 @@ s =
   '  <p id="' + sNameId + 'wltr">whole-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Wltr,\n' +
   '    <br>===\n' +
-  '    <br>* ... Sympan_Wltr.\n' +
+  '    <br>* ...sympan_Wltr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wltr"></a></p>\n' +
   '  <p id="' + sNameId + 'prtr">part-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Prtr,\n' +
@@ -294,7 +306,7 @@ s =
   '  <p id="' + sNameId + 'gntr">generic-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Gntr,\n' +
   '    <br>===\n' +
-  '    <br>* ...entity_Gntr.\n' +
+  '    <br>* ...entity_Gntr,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gntr"></a></p>\n' +
   '  <p id="' + sNameId + 'sptr">specific-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Sptr,\n' +
@@ -366,11 +378,11 @@ s = s +
   '</html>'
 
 // a-sect-concept to move: we plan it BEFORE we write anything.
-// argv[8]=sFileOld  argv[9]=sIdSect  argv[10]=--no-upload
+// argv[7]=sFileOld  argv[8]=sIdSect  argv[9]=--no-upload
 const
-  sFileOld = process.argv[8],
-  sIdSect = process.argv[9],
-  bUpload = process.argv[10] !== '--no-upload'
+  sFileOld = process.argv[7],
+  sIdSect = process.argv[8],
+  bUpload = process.argv[9] !== '--no-upload'
 let oMove = null
 if (sFileOld) {
   try {
@@ -419,7 +431,7 @@ aSftp.push('../dirPgm/dirCntr/dirCntrfiles/' + sNameFileNaked + '.txt')
 if (oMove) aSftp.push(...Object.keys(oMove.oRawOther))
 moUtil.fWriteJsonArray('../dirMcsh/dirManager/sftp.json', aSftp)
 if (!bUpload) process.exit(0)
-//upload files (argv[7] = SFTP password from the VS Code task; else prompt when run alone)
-let sSftpPwd = process.argv[7]
+//upload files (env MCSH_SFTP_PASSWORD from the VS Code task; else prompt when run alone)
+let sSftpPwd = process.env.MCSH_SFTP_PASSWORD
 if (!sSftpPwd) sSftpPwd = await fAskHidden('Enter password: ')
 fSftp(sSftpPwd)

@@ -121,6 +121,40 @@ function fSplitOwn(aLineIn, nFromIn, nToIn, sIdIn) {
 }
 
 /**
+ * OUTPUT: [{sId, nFrom, nTo}] the-sections of a-file as mMcshNew makes it, without nesting.
+ */
+function fFindSectFlat(aLineIn) {
+  const aoSect = []
+  let oSect = null
+  aLineIn.forEach((sLine, nL) => {
+    const sId = sLine.match(rSectOpen)?.[1]
+    if (sId) oSect = { sId, nFrom: nL, nTo: nL }
+    if (oSect && sLine.includes('</section>')) {
+      oSect.nTo = nL
+      aoSect.push(oSect)
+      oSect = null
+    }
+  })
+  return aoSect
+}
+
+/**
+ * OUTPUT: [{sId, aLine}] the-child-sections of a-section, each with its parts.
+ *   A-non-blank line between them stays with the-section before it.
+ */
+function fSplitBlock(aLineIn) {
+  const aoBlock = []
+  let nDepth = 0
+  for (const sLine of aLineIn) {
+    const sId = sLine.match(rSectOpen)?.[1]
+    if (sId && nDepth === 0) aoBlock.push({ sId, aLine: [] })
+    if (aoBlock.length && (nDepth > 0 || sLine.trim() !== '')) aoBlock[aoBlock.length - 1].aLine.push(sLine)
+    nDepth += (sLine.match(/<section\b/g) ?? []).length - (sLine.match(/<\/section>/g) ?? []).length
+  }
+  return aoBlock
+}
+
+/**
  * OUTPUT: the-text with its links through fHrefIn(sPath, sFragment), which returns
  *   the-new href or null to keep it, and with the-"name!@McshCor000012#idX" of sFileNakedIn.
  */
@@ -206,7 +240,17 @@ function fPlanSectMove(oIn) {
     const nCount = sTextOldRest.split(`id="${sId}"`).length - 1
     if (nCount !== 1) throw new Error(`#${sId} occurs ${nCount} times as an-id in ${sBaseOld}`)
   }
-  const oSetIdTaken = new Set([...oIn.sRawNew.matchAll(rIdAttr)].map(aM => aM[1]))
+  // a-moved section with the-id of a-section of the-new file (irsc, dong, evog, gstr..)
+  // takes its place: the-empty section of the-new file is dropped, with its ids.
+  const aNew = oIn.sRawNew.split('\n')
+  const oSetIdSectMoved = new Set(aChild.flatMap(sLine => {
+    const sId = sLine.match(rSectOpen)?.[1]
+    return sId ? [oMapId.get(sId)] : []
+  }))
+  const aoSectDrop = fFindSectFlat(aNew).filter(oSect => oSetIdSectMoved.has(oSect.sId))
+  const oSetIdTaken = new Set(aNew
+    .filter((sLine, nL) => !aoSectDrop.some(oSect => nL >= oSect.nFrom && nL <= oSect.nTo))
+    .flatMap(sLine => [...sLine.matchAll(rIdAttr)].map(aM => aM[1])))
   const aValue = [...oMapId.entries()].filter(([sOld]) =>
     sOld !== sIdSect && sOld !== oDesc?.sId && sOld !== oName.sId && oMapId.get(sOld) !== 'idOverviewH1')
     .map(aE => aE[1])
@@ -236,10 +280,9 @@ function fPlanSectMove(oIn) {
   const aDescText = aDescIn.filter(sLine => !rCreation.test(sLine))
   const aNameIn = oName.aInner.map(fMoved)
   const aOtherIn = aOther.map(fMoved)
-  const aChildIn = aChild.map(fMoved)
+  const aoBlock = fSplitBlock(aChild.map(fMoved))
 
   // ── the-new file ─────────────────────────────────────────────────────────────
-  const aNew = oIn.sRawNew.split('\n')
   const nDescNew = aNew.findIndex(sLine => sLine.includes('<p id="idDescription">description::'))
   const nNameNew = aNew.findIndex(sLine => sLine.includes('<p id="idName">name::'))
   const nNameEnd = aNew.findIndex(sLine => sLine.includes('<a class="clsHide" href="#idName"></a></p>'))
@@ -251,7 +294,14 @@ function fPlanSectMove(oIn) {
   const aNameAdd = aNameIn.filter(sLine =>
     !oSetNameNew.has(sLine.trim()) && sLine.trim() !== `<br>* McshEngl.${sNameMain},`)
   // bottom-up, so the-indexes above stay right
-  if (aChildIn.length) aNew.splice(nOverEnd + 1, 0, '', ...aChildIn)
+  for (const oSect of aoSectDrop.slice().sort((oA, oB) => oB.nFrom - oA.nFrom)) {
+    const oBlock = aoBlock.find(oB => oB.sId === oSect.sId)
+    const aIns = oBlock ? oBlock.aLine : []
+    if (oBlock) oBlock.bPlaced = true
+    aNew.splice(oSect.nFrom, oSect.nTo - oSect.nFrom + 1, ...aIns)
+  }
+  const aChildRest = aoBlock.filter(oB => !oB.bPlaced).flatMap(oB => ['', ...oB.aLine])
+  if (aChildRest.length) aNew.splice(nOverEnd + 1, 0, ...aChildRest)
   if (aOtherIn.length) aNew.splice(nNameEnd + 1, 0, ...aOtherIn)
   aNew.splice(nNameEnd, 0, ...aNameAdd)
   // the-current date first, then the-old ones

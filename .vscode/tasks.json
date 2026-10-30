@@ -174,11 +174,13 @@
         "${input:sNameInformal}",
         "${input:sNameFormal}",
         "${input:sNameId}",
-        "${input:bCounter}",
-        "${input:sftpPassword}"
+        "${input:sAttrbase}"
       ],
       "options": {
-        "cwd": "${command:mcshv.currentWorldview}"
+        "cwd": "${command:mcshv.currentWorldview}",
+        "env": {
+          "MCSH_SFTP_PASSWORD": "${input:sftpPassword}"
+        }
       },
       "presentation": {
         "reveal": "always",
@@ -224,14 +226,9 @@
       "description": "ID stem, e.g. idLZhon, idSocChna"
     },
     {
-      "id": "bCounter",
-      "type": "pickString",
-      "description": "Add visit counter?",
-      "options": [
-        "true",
-        "false"
-      ],
-      "default": "true"
+      "id": "sAttrbase",
+      "type": "promptString",
+      "description": "Prefix for attribute main-names, e.g. Auto"
     },
     {
       "id": "sftpPassword",
