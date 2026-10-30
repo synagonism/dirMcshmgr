@@ -1,5 +1,15 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrlMmn07: c:/dirNodews/dirMcsh
+  MvrlGstr02: c:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  591 Mcsh-files · 0 files with issues · 0 issues
-  codes with issues now: Mvre01, Mvre02, MvrlGstr01, MvrlGstr02, MvrlId01, MvrlId04, MvrlId06, MvrlId13, MvrlMmn01, MvrlMmn05, Mvrw01, Mvrw06
+  591 Mcsh-files · 2 files with issues · 2 issues
+
+=== MvrlGstr02 (2 issues in 2 files) — file:lines, the-biggest line first
+  McshTchInf000009:1289
+  McshTchInf000012:10262
+
+=== MvrlGstr02 --line — every issue, its line and its message
+  McshTchInf000009.last.html
+    1289  generic_has_specific: "McshnameMain_Gntr" has generic Mcsname_Gntr, but its specific-tree:: (McshCor000002:778) does not list it
+  McshTchInf000012.last.html
+    10262  generic_has_specific: "npm_Gntr" has generic JsgntoolPkgmgr_Gntr, but its specific-tree:: (McshTchInf000010:7267) does not list it
+

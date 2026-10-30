@@ -1,0 +1,101 @@
+MMN -> ATTRBASE PREFIX RENAME APPLIED — 2026-10-29
+main-names with a dash: 17 | renamed: 17 | name:: paragraphs: 17 | tree/reference lines: 0 | old names kept (M!⇒N added): 17 | files: 5
+collisions: 0 | with a space: 0 | notation: 0
+
+=== COLLISION (0) — N is already another concept's main-name
+
+=== SKIPPED-SPACE (0)
+
+=== SKIPPED-NOTATION /a/-⟨a⟩-[a] (0)
+
+=== PER FILE (5)
+  McshEdu000010         12
+  McshEdu000014         12
+  McshHlth000002        16
+  McshHmn000002         16
+  McshTchInf000018      19
+
+=== McshEdu000010 (12)
+  McshEdu000010:1944  <br>* McshEngl.evoluting-of-SciLago!⇒SciLagoevolg,  ->  <br>* McshEngl.evoluting-of-SciLago!⇒Lagoscievolg,
+  McshEdu000010:1945  <br>* McshEngl.SciLagoevolg!=evoluting-of-SciLago,  ->  <br>* McshEngl.Lagoscievolg!=evoluting-of-SciLago,
+  McshEdu000010:1946  <br>* McshEngl.SciLago'evoluting!⇒SciLagoevolg,  ->  <br>* McshEngl.SciLago'evoluting!⇒Lagoscievolg,
+  McshEdu000010:1946  ADD  McshEngl.SciLagoevolg!⇒Lagoscievolg,
+  McshEdu000010:1930  <br>* McshEngl.doing-of-SciLago!⇒SciLagodoing,  ->  <br>* McshEngl.doing-of-SciLago!⇒Lagoscidoing,
+  McshEdu000010:1931  <br>* McshEngl.SciLagodoing!=doing-of-SciLago,  ->  <br>* McshEngl.Lagoscidoing!=doing-of-SciLago,
+  McshEdu000010:1932  <br>* McshEngl.SciLago'doing!⇒SciLagodoing,  ->  <br>* McshEngl.SciLago'doing!⇒Lagoscidoing,
+  McshEdu000010:1932  ADD  McshEngl.SciLagodoing!⇒Lagoscidoing,
+  McshEdu000010:1917  <br>* McshEngl.info-resource--of-SciLago!⇒SciLagoinfrsc,  ->  <br>* McshEngl.info-resource--of-SciLago!⇒Lagosciinfrsc,
+  McshEdu000010:1918  <br>* McshEngl.SciLagoinfrsc!=info-resource--of-SciLago,  ->  <br>* McshEngl.Lagosciinfrsc!=info-resource--of-SciLago,
+  McshEdu000010:1919  <br>* McshEngl.SciLago'info_resource!⇒SciLagoinfrsc,  ->  <br>* McshEngl.SciLago'info_resource!⇒Lagosciinfrsc,
+  McshEdu000010:1919  ADD  McshEngl.SciLagoinfrsc!⇒Lagosciinfrsc,
+
+=== McshEdu000014 (12)
+  McshEdu000014:304  <br>* McshEngl.evoluting-of-SciEcon!⇒SciEconevolg,  ->  <br>* McshEngl.evoluting-of-SciEcon!⇒Econscievolg,
+  McshEdu000014:305  <br>* McshEngl.SciEconevolg!=evoluting-of-SciEcon,  ->  <br>* McshEngl.Econscievolg!=evoluting-of-SciEcon,
+  McshEdu000014:306  <br>* McshEngl.SciEcon'evoluting!⇒SciEconevolg,  ->  <br>* McshEngl.SciEcon'evoluting!⇒Econscievolg,
+  McshEdu000014:306  ADD  McshEngl.SciEconevolg!⇒Econscievolg,
+  McshEdu000014:244  <br>* McshEngl.doing-of-SciEcon!⇒SciEcondoing,  ->  <br>* McshEngl.doing-of-SciEcon!⇒Econscidoing,
+  McshEdu000014:245  <br>* McshEngl.SciEcondoing!=doing-of-SciEcon,  ->  <br>* McshEngl.Econscidoing!=doing-of-SciEcon,
+  McshEdu000014:246  <br>* McshEngl.SciEcon'doing!⇒SciEcondoing,  ->  <br>* McshEngl.SciEcon'doing!⇒Econscidoing,
+  McshEdu000014:246  ADD  McshEngl.SciEcondoing!⇒Econscidoing,
+  McshEdu000014:231  <br>* McshEngl.info-resource--of-SciEcon!⇒SciEconinfrsc,  ->  <br>* McshEngl.info-resource--of-SciEcon!⇒Econsciinfrsc,
+  McshEdu000014:232  <br>* McshEngl.SciEconinfrsc!=info-resource--of-SciEcon,  ->  <br>* McshEngl.Econsciinfrsc!=info-resource--of-SciEcon,
+  McshEdu000014:233  <br>* McshEngl.SciEcon'info_resource!⇒SciEconinfrsc,  ->  <br>* McshEngl.SciEcon'info_resource!⇒Econsciinfrsc,
+  McshEdu000014:233  ADD  McshEngl.SciEconinfrsc!⇒Econsciinfrsc,
+
+=== McshHlth000002 (16)
+  McshHlth000002:15833  <br>* McshEngl.structure-of-bodyHumn!⇒BodyHumnsrtr,  ->  <br>* McshEngl.structure-of-bodyHumn!⇒Hmbdsrtr,
+  McshHlth000002:15834  <br>* McshEngl.BodyHumnsrtr!=structure-of-bodyHumn,  ->  <br>* McshEngl.Hmbdsrtr!=structure-of-bodyHumn,
+  McshHlth000002:15835  <br>* McshEngl.bodyHumn'attStructure!⇒BodyHumnsrtr,  ->  <br>* McshEngl.bodyHumn'attStructure!⇒Hmbdsrtr,
+  McshHlth000002:15836  <br>* McshEngl.bodyHumn'structure!⇒BodyHumnsrtr,  ->  <br>* McshEngl.bodyHumn'structure!⇒Hmbdsrtr,
+  McshHlth000002:15835  ADD  McshEngl.BodyHumnsrtr!⇒Hmbdsrtr,
+  McshHlth000002:15121  <br>* McshEngl.evoluting-of-bodyHumn!⇒BodyHumnevolg,  ->  <br>* McshEngl.evoluting-of-bodyHumn!⇒Hmbdevolg,
+  McshHlth000002:15122  <br>* McshEngl.BodyHumnevolg!=evoluting-of-bodyHumn,  ->  <br>* McshEngl.Hmbdevolg!=evoluting-of-bodyHumn,
+  McshHlth000002:15123  <br>* McshEngl.bodyHumn'evoluting!⇒BodyHumnevolg,  ->  <br>* McshEngl.bodyHumn'evoluting!⇒Hmbdevolg,
+  McshHlth000002:15124  <br>* McshEngl.bodyHumn'attEvoluting!⇒BodyHumnevolg,  ->  <br>* McshEngl.bodyHumn'attEvoluting!⇒Hmbdevolg,
+  McshHlth000002:15125  <br>* McshEngl.bodyHumn'development!⇒BodyHumnevolg,  ->  <br>* McshEngl.bodyHumn'development!⇒Hmbdevolg,
+  McshHlth000002:15123  ADD  McshEngl.BodyHumnevolg!⇒Hmbdevolg,
+  McshHlth000002:14108  <br>* McshEngl.info-resource--of-bodyHumn!⇒BodyHumninfrsc,  ->  <br>* McshEngl.info-resource--of-bodyHumn!⇒Hmbdinfrsc,
+  McshHlth000002:14109  <br>* McshEngl.BodyHumninfrsc!=info-resource--of-bodyHumn,  ->  <br>* McshEngl.Hmbdinfrsc!=info-resource--of-bodyHumn,
+  McshHlth000002:14110  <br>* McshEngl.bodyHumn'info_resource!⇒BodyHumninfrsc,  ->  <br>* McshEngl.bodyHumn'info_resource!⇒Hmbdinfrsc,
+  McshHlth000002:14111  <br>* McshEngl.bodyHumn'attResource!⇒BodyHumninfrsc,  ->  <br>* McshEngl.bodyHumn'attResource!⇒Hmbdinfrsc,
+  McshHlth000002:14110  ADD  McshEngl.BodyHumninfrsc!⇒Hmbdinfrsc,
+
+=== McshHmn000002 (16)
+  McshHmn000002:4703  <br>* McshEngl.structure-of-human!⇒Humansrtr,  ->  <br>* McshEngl.structure-of-human!⇒Humnsrtr,
+  McshHmn000002:4704  <br>* McshEngl.Humansrtr!=structure-of-human,  ->  <br>* McshEngl.Humnsrtr!=structure-of-human,
+  McshHmn000002:4705  <br>* McshEngl.human'structure!⇒Humansrtr,  ->  <br>* McshEngl.human'structure!⇒Humnsrtr,
+  McshHmn000002:4705  ADD  McshEngl.Humansrtr!⇒Humnsrtr,
+  McshHmn000002:4165  <br>* McshEngl.evoluting-of-human!⇒Humanevolg,  ->  <br>* McshEngl.evoluting-of-human!⇒Humnevolg,
+  McshHmn000002:4166  <br>* McshEngl.Humanevolg!=evoluting-of-human,  ->  <br>* McshEngl.Humnevolg!=evoluting-of-human,
+  McshHmn000002:4167  <br>* McshEngl.human'evoluting!⇒Humanevolg,  ->  <br>* McshEngl.human'evoluting!⇒Humnevolg,
+  McshHmn000002:4167  ADD  McshEngl.Humanevolg!⇒Humnevolg,
+  McshHmn000002:3851  <br>* McshEngl.doing-of-human!⇒Humandoing,  ->  <br>* McshEngl.doing-of-human!⇒Humndoing,
+  McshHmn000002:3852  <br>* McshEngl.Humandoing!=doing-of-human,  ->  <br>* McshEngl.Humndoing!=doing-of-human,
+  McshHmn000002:3853  <br>* McshEngl.human'doing!⇒Humandoing,  ->  <br>* McshEngl.human'doing!⇒Humndoing,
+  McshHmn000002:3853  ADD  McshEngl.Humandoing!⇒Humndoing,
+  McshHmn000002:3775  <br>* McshEngl.info-resource--of-human!⇒Humaninfrsc,  ->  <br>* McshEngl.info-resource--of-human!⇒Humninfrsc,
+  McshHmn000002:3776  <br>* McshEngl.Humaninfrsc!=info-resource--of-human,  ->  <br>* McshEngl.Humninfrsc!=info-resource--of-human,
+  McshHmn000002:3777  <br>* McshEngl.human'info_resource!⇒Humaninfrsc,  ->  <br>* McshEngl.human'info_resource!⇒Humninfrsc,
+  McshHmn000002:3777  ADD  McshEngl.Humaninfrsc!⇒Humninfrsc,
+
+=== McshTchInf000018 (19)
+  McshTchInf000018:12738  <br>* McshEngl.evoluting-of-AgntEthr!⇒AgntEthrevolg,  ->  <br>* McshEngl.evoluting-of-AgntEthr!⇒Ethrevolg,
+  McshTchInf000018:12739  <br>* McshEngl.AgntEthrevolg!=evoluting-of-AgntEthr,  ->  <br>* McshEngl.Ethrevolg!=evoluting-of-AgntEthr,
+  McshTchInf000018:12740  <br>* McshEngl.AgntEthr'evoluting!⇒AgntEthrevolg,  ->  <br>* McshEngl.AgntEthr'evoluting!⇒Ethrevolg,
+  McshTchInf000018:12740  ADD  McshEngl.AgntEthrevolg!⇒Ethrevolg,
+  McshTchInf000018:12540  <br>* McshEngl.doing-of-AgntEthr!⇒AgntEthrdoing,  ->  <br>* McshEngl.doing-of-AgntEthr!⇒Ethrdoing,
+  McshTchInf000018:12541  <br>* McshEngl.AgntEthrdoing!=doing-of-AgntEthr,  ->  <br>* McshEngl.Ethrdoing!=doing-of-AgntEthr,
+  McshTchInf000018:12542  <br>* McshEngl.AgntEthr'doing!⇒AgntEthrdoing,  ->  <br>* McshEngl.AgntEthr'doing!⇒Ethrdoing,
+  McshTchInf000018:12542  ADD  McshEngl.AgntEthrdoing!⇒Ethrdoing,
+  McshTchInf000018:12466  <br>* McshEngl.info-resource--of-AgntEthr!⇒AgntEthrinfrsc,  ->  <br>* McshEngl.info-resource--of-AgntEthr!⇒Ethrinfrsc,
+  McshTchInf000018:12467  <br>* McshEngl.AgntEthrinfrsc!=info-resource--of-AgntEthr,  ->  <br>* McshEngl.Ethrinfrsc!=info-resource--of-AgntEthr,
+  McshTchInf000018:12468  <br>* McshEngl.AgntEthr'info_resource!⇒AgntEthrinfrsc,  ->  <br>* McshEngl.AgntEthr'info_resource!⇒Ethrinfrsc,
+  McshTchInf000018:12469  <br>* McshEngl.Ethereum-resource!⇒AgntEthrinfrsc,  ->  <br>* McshEngl.Ethereum-resource!⇒Ethrinfrsc,
+  McshTchInf000018:12470  <br>* McshEngl.AgntEthr'resource-(Ethereum-resource)!⇒AgntEthrinfrsc,  ->  <br>* McshEngl.AgntEthr'resource-(Ethereum-resource)!⇒Ethrinfrsc,
+  McshTchInf000018:12468  ADD  McshEngl.AgntEthrinfrsc!⇒Ethrinfrsc,
+  McshTchInf000018:298  <br>* McshEngl.evaluation-of-AgntEthr!⇒AgntEthrevaln,  ->  <br>* McshEngl.evaluation-of-AgntEthr!⇒Ethrevaln,
+  McshTchInf000018:299  <br>* McshEngl.AgntEthrevaln!=evaluation-of-AgntEthr,  ->  <br>* McshEngl.Ethrevaln!=evaluation-of-AgntEthr,
+  McshTchInf000018:300  <br>* McshEngl.AgntEthrevalg!⇒AgntEthrevaln,  ->  <br>* McshEngl.AgntEthrevalg!⇒Ethrevaln,
+  McshTchInf000018:301  <br>* McshEngl.AgntEthr'evaluation!⇒AgntEthrevaln,  ->  <br>* McshEngl.AgntEthr'evaluation!⇒Ethrevaln,
+  McshTchInf000018:300  ADD  McshEngl.AgntEthrevaln!⇒Ethrevaln,

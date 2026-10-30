@@ -733,6 +733,8 @@ let fContainersInsert = function () {
     if (sTag === 'INPUT' || sTag === 'TEXTAREA') return
     // '...entity_Gntr' of a-generic-tree: NO search, insert the-generic-chain up to entity
     if (await fGntrChainInsert()) return
+    // '<Mmn>.specific' / '<Mmn>_Sptr' of a-specific-tree: NO search, insert direct-specifics
+    if (await fSptrInsert()) return
 
     // '!@'-concept-reference: set by fExpandSelectionRight when the clicked word
     // is followed by '!@McshDir000000#id' (the reference after '!@', name ignored).
@@ -1373,6 +1375,65 @@ let fContainersInsert = function () {
     return true
   }
 
+  // --- shared generic-tree helpers (used by fGntrChainInsert and fSptrInsert) ---
+  const oDocs = {} // url-without-hash -> parsed Document (session cache)
+  // the-lines of a-paragraph (html between <br>s), trimmed
+  function fLines(oPIn) {
+    return oPIn.innerHTML.split(/<br\s*\/?>/i).map(s => s.trim())
+  }
+  // parsed Document for a-url (the-current page is served directly; others fetched+cached)
+  async function fDoc(sUrlIn) {
+    const sU = sUrlIn.split('#')[0]
+    if (sU === location.href.split('#')[0]) return document
+    if (!oDocs[sU]) {
+      const oRes = await fetch(sU)
+      oDocs[sU] = (new DOMParser()).parseFromString(await oRes.text(), 'text/html')
+    }
+    return oDocs[sU]
+  }
+  // the-url of the-concept of a-name from the-English name-index, '' if none
+  async function fNameUrl(sNameIn) {
+    try {
+      const aaNu = await fSearchName(sNameIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'lagEngl')
+      const aNu = aaNu.find(aIn => aIn[0] === sNameIn)
+      return aNu ? sPathSite + sWorldview + '/' + aNu[1] : ''
+    } catch (oErr) { console.warn(oErr); return '' }
+  }
+  // the-gntr-paragraph a-url points to: #id..gntr, #id..nam -> ..gntr, #section -> section+gntr,
+  // #idOverview -> the-root gntr (the-gntr whose concept has no ..nam paragraph)
+  async function fGntrOfUrl(sUrlIn) {
+    const
+      oDoc = await fDoc(sUrlIn),
+      sId = sUrlIn.includes('#') ? sUrlIn.split('#')[1] : 'idOverview'
+    let oGntr = sId.endsWith('gntr') ? oDoc.getElementById(sId) : null
+    if (!oGntr && sId.endsWith('nam')) oGntr = oDoc.getElementById(sId.slice(0, -3) + 'gntr')
+    if (!oGntr) oGntr = oDoc.getElementById(sId + 'gntr')
+    if (!oGntr && sId === 'idOverview') {
+      oGntr = [...oDoc.querySelectorAll('p[id$="gntr"]')]
+        .find(oPIn => !oDoc.getElementById(oPIn.id.slice(0, -4) + 'nam')) || null
+    }
+    return oGntr ? {oGntr: oGntr, sUrl: sUrlIn.split('#')[0] + '#' + oGntr.id} : null
+  }
+  // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X_Gntr, name
+  async function fGntrOfLine(sLineIn, sUrlBaseIn) {
+    const sL = sLineIn.replace(/^\*\s*/, '')
+    let aM = sL.match(/href="([^"]+)"/)
+    if (aM) return fGntrOfUrl(new URL(aM[1].replace(/&amp;/g, '&'), sUrlBaseIn).href)
+    aM = sL.match(/!@(Mcsh\w+(#\w+)?)/)
+    if (aM) {
+      const sUrl = await fRefToUrl(aM[1])
+      return sUrl ? fGntrOfUrl(sUrl) : null
+    }
+    const sName = sL.replace(/,.*$/, '').trim()
+    const sUrl = sName ? await fNameUrl(sName) : ''
+    return sUrl ? fGntrOfUrl(sUrl) : null
+  }
+  // the-first generic line after '===' of a-gntr-paragraph
+  function fLevel1(oGntrIn) {
+    const aL = fLines(oGntrIn), n = aL.indexOf('===')
+    return n < 0 ? '' : (aL.slice(n + 1).find(s => s.startsWith('*')) || '')
+  }
+
   /**
    * created: {2026-10-23}
    * DOING: on double-click on '...entity_Gntr' of a-generic-tree (p#id..gntr),
@@ -1418,72 +1479,16 @@ let fContainersInsert = function () {
     }
 
     const
-      oDocs = {},          // url-without-hash -> Document
       sUrlPage = location.href.split('#')[0],
       oSetSeen = new Set([sUrlPage + '#' + oP.id]),
       oSpan = document.createElement('span')
-    oDocs[sUrlPage] = document
     oSpan.className = 'clsGntrChain'
     oSpan.style.fontStyle = 'italic'
     oSpan.style.opacity = '0.8'
 
-    // the-lines of a-gntr-paragraph (html between <br>s), trimmed
-    function fLines(oPIn) {
-      return oPIn.innerHTML.split(/<br\s*\/?>/i).map(s => s.trim())
-    }
     // the-entity line ends the-chain
     function fIsEntity(sLineIn) {
       return /^\*\s*(\.\.\.\s*)?entity(_Gntr)?\b/.test(sLineIn)
-    }
-    async function fDoc(sUrlIn) {
-      const sU = sUrlIn.split('#')[0]
-      if (!oDocs[sU]) {
-        const oRes = await fetch(sU)
-        oDocs[sU] = (new DOMParser()).parseFromString(await oRes.text(), 'text/html')
-      }
-      return oDocs[sU]
-    }
-    // the-url of the-concept of a-name from the-English name-index, '' if none
-    async function fNameUrl(sNameIn) {
-      try {
-        const aa = await fSearchName(sNameIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'lagEngl')
-        const a = aa.find(aIn => aIn[0] === sNameIn)
-        return a ? sPathSite + sWorldview + '/' + a[1] : ''
-      } catch (oErr) { console.warn(oErr); return '' }
-    }
-    // the-gntr-paragraph a-url points to: #id..gntr, #id..nam -> ..gntr, #section -> section+gntr,
-    // #idOverview -> the-root gntr (the-gntr whose concept has no ..nam paragraph)
-    async function fGntrOfUrl(sUrlIn) {
-      const
-        oDoc = await fDoc(sUrlIn),
-        sId = sUrlIn.includes('#') ? sUrlIn.split('#')[1] : 'idOverview'
-      let oGntr = sId.endsWith('gntr') ? oDoc.getElementById(sId) : null
-      if (!oGntr && sId.endsWith('nam')) oGntr = oDoc.getElementById(sId.slice(0, -3) + 'gntr')
-      if (!oGntr) oGntr = oDoc.getElementById(sId + 'gntr')
-      if (!oGntr && sId === 'idOverview') {
-        oGntr = [...oDoc.querySelectorAll('p[id$="gntr"]')]
-          .find(oPIn => !oDoc.getElementById(oPIn.id.slice(0, -4) + 'nam')) || null
-      }
-      return oGntr ? {oGntr: oGntr, sUrl: sUrlIn.split('#')[0] + '#' + oGntr.id} : null
-    }
-    // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X_Gntr, name
-    async function fGntrOfLine(sLineIn, sUrlBaseIn) {
-      const sL = sLineIn.replace(/^\*\s*/, '')
-      let m = sL.match(/href="([^"]+)"/)
-      if (m) return fGntrOfUrl(new URL(m[1].replace(/&amp;/g, '&'), sUrlBaseIn).href)
-      m = sL.match(/!@(Mcsh\w+(#\w+)?)/)
-      if (m) {
-        const sUrl = await fRefToUrl(m[1])
-        return sUrl ? fGntrOfUrl(sUrl) : null
-      }
-      const sName = sL.replace(/,.*$/, '').trim()
-      const sUrl = sName ? await fNameUrl(sName) : ''
-      return sUrl ? fGntrOfUrl(sUrl) : null
-    }
-    // the-first generic line after '===' of a-gntr-paragraph
-    function fLevel1(oGntrIn) {
-      const aL = fLines(oGntrIn), n = aL.indexOf('===')
-      return n < 0 ? '' : (aL.slice(n + 1).find(s => s.startsWith('*')) || '')
     }
     function fAddLine(sHtmlIn) {
       oSpan.appendChild(document.createElement('br'))
@@ -1534,6 +1539,143 @@ let fContainersInsert = function () {
     // insert after the-'...entity_Gntr,' text
     oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
     oNode.after(oSpan)
+    return true
+  }
+
+  /**
+   * created: {2026-10-30}
+   * DOING: on double-click on the '<Mmn>.specific' or '<Mmn>_Sptr' line of a
+   *   specific-tree (p#id..sptr), finds the-concept's DIRECT-specifics and inserts
+   *   them after '===' as '* informal-name!@file#id,' lines (page-only).
+   *   '<Mmn>.specific' finds from the-English name-index; '<Mmn>_Sptr' scans all
+   *   generic-trees. A-second double-click on the-line removes the-inserted list.
+   * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
+   */
+  async function fSptrInsert() {
+    const oSel = window.getSelection()
+    if (!oSel || oSel.rangeCount === 0) return false
+    const oNode = oSel.getRangeAt(0).startContainer
+    if (oNode.nodeType !== Node.TEXT_NODE) return false
+    const oP = oNode.parentElement.closest('p')
+    if (!oP || !oP.id.endsWith('sptr')) return false
+    // which trigger? parse the-clicked line's text
+    const sTxt = oNode.textContent
+    let bScan = false, sMmn = ''
+    let aM = sTxt.match(/McshEngl\.(.+?)\.specific(?=[,!\s]|$)/)
+    if (aM) {
+      sMmn = aM[1]
+    } else {
+      aM = sTxt.match(/McshEngl\.(.+?)_Sptr(?=[,!\s]|$)/)
+      if (aM) { bScan = true; sMmn = aM[1] }
+    }
+    if (!sMmn) return false
+    oSel.removeAllRanges()
+    // toggle off: remove a-previously inserted list in this paragraph
+    const oOld = oP.querySelector('.clsSptrList')
+    if (oOld) { oOld.remove(); return true }
+
+    // the-direct-specifics from the-English name-index: names '<Mmn>.<child>',
+    // one level, excluding attribute/part/whole/generic/child/parent/worldview markers
+    async function fSpecNamidx(sMmnIn) {
+      const sEsc = sMmnIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      let aaNu = []
+      try { aaNu = await fSearchName(sEsc + '\\.', 'lagEngl') } catch (oErr) { console.warn(oErr) }
+      const
+        rSep = /^['/:;@]/,
+        aoOut = [],
+        oSeen = new Set()
+      aaNu.forEach(function (aNu) {
+        const sName = aNu[0], sUrl = aNu[1]
+        if (!sName.startsWith(sMmnIn + '.')) return
+        let sChild = sName.slice(sMmnIn.length + 1)
+        const nR = sChild.search(/!(⇒|=|~|⇨)/) // cut at main-name/translation/pos/other-main
+        if (nR >= 0) sChild = sChild.slice(0, nR)
+        sChild = sChild.trim()
+        if (!sChild || sChild === 'specific') return
+        if (sChild.indexOf('.') >= 0) return // deeper than one level
+        if (rSep.test(sChild)) return        // not a-specific (attribute/part/etc.)
+        const
+          sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : '',
+          sFile = sUrl.split('#')[0],
+          sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
+          sRef = sStem + sHash
+        if (oSeen.has(sRef)) return // dedupe by concept (same target => one line)
+        oSeen.add(sRef)
+        aoOut.push({ sInformal: sChild.replace(/^\d+_/, ''), sRef: sRef })
+      })
+      return aoOut
+    }
+
+    // the-direct-specifics by scanning ALL generic-trees: concepts whose level-1
+    // generic resolves to THIS concept's generic-tree (sibling '...gntr' paragraph)
+    async function fSpecScan(oPIn) {
+      const
+        sGId = oPIn.id.replace(/sptr$/, 'gntr'),
+        sGUrl = location.href.split('#')[0] + '#' + sGId
+      let aPages = []
+      try {
+        const oRes = await fetch(sPathSite + sWorldview + '/SitePagesArr.json') // nnnFv
+        aPages = await oRes.json()
+      } catch (oErr) { console.warn(oErr); return [] }
+      const
+        aoOut = [],
+        oSeen = new Set(),
+        sWvPrefix = sWorldview.substring(3)
+      for (let n = 0; n < aPages.length; n++) {
+        const sStem = (aPages[n][0] || '').replace(/\.txt$/, '')
+        if (!sStem.startsWith(sWvPrefix)) continue // only Mcsh pages (skip Hitp)
+        const sPageUrl = await fRefToUrl(sStem)
+        if (!sPageUrl) continue
+        let oDoc
+        try { oDoc = await fDoc(sPageUrl) } catch (oErr) { continue }
+        const aGntr = oDoc.querySelectorAll('p[id$="gntr"]')
+        for (let nG = 0; nG < aGntr.length; nG++) {
+          const oG = aGntr[nG], sL1 = fLevel1(oG)
+          if (!sL1) continue
+          let oRes2
+          try { oRes2 = await fGntrOfLine(sL1, sPageUrl.split('#')[0] + '#' + oG.id) }
+          catch (oErr) { oRes2 = null }
+          if (oRes2 && oRes2.sUrl === sGUrl) {
+            const
+              sSecId = oG.id.replace(/gntr$/, ''),
+              aMn = (fLines(oG).find(s => /McshEngl\.\S+_Gntr/.test(s)) || '').match(/McshEngl\.(\S+?)_Gntr/),
+              sRef = sStem + '#' + sSecId
+            if (!oSeen.has(sRef)) {
+              oSeen.add(sRef)
+              aoOut.push({ sInformal: (aMn ? aMn[1] : sSecId).replace(/^\d+_/, ''), sRef: sRef })
+            }
+          }
+        }
+      }
+      return aoOut
+    }
+
+    const aoSpec = bScan ? await fSpecScan(oP) : await fSpecNamidx(sMmn)
+    aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
+    // build the-list and insert after the-'===' text node of the-paragraph
+    const oSpan = document.createElement('span')
+    oSpan.className = 'clsSptrList'
+    oSpan.style.fontStyle = 'italic'
+    oSpan.style.opacity = '0.8'
+    if (aoSpec.length === 0) {
+      oSpan.appendChild(document.createElement('br'))
+      oSpan.insertAdjacentHTML('beforeend', '* ?? (no direct-specific found)')
+    } else {
+      aoSpec.forEach(function (oSpc) {
+        oSpan.appendChild(document.createElement('br'))
+        oSpan.insertAdjacentHTML('beforeend', '* ' + oSpc.sInformal + '!@' + oSpc.sRef + ',')
+      })
+    }
+    // a-closing '===' so the-inserted list is-separated from the-existing specifics
+    oSpan.appendChild(document.createElement('br'))
+    oSpan.insertAdjacentHTML('beforeend', '===')
+    let oEq = null
+    const oWalk = document.createTreeWalker(oP, NodeFilter.SHOW_TEXT)
+    for (let o = oWalk.nextNode(); o; o = oWalk.nextNode()) {
+      if (o.textContent.trim() === '===') { oEq = o; break }
+    }
+    if (oEq) oEq.after(oSpan)
+    else oNode.after(oSpan)
     return true
   }
 
