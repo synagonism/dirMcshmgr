@@ -280,9 +280,9 @@ function fCreateProvider(context) {
     const fOpenByCode = () => vscode.commands.executeCommand('mcshv.openByCode');
     // File → Index and upload (and Ctrl+Alt+P X U): run the workspace task that
     // name-indexes the current file and uploads the changed files.
-    const fIndexUpload = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names of current-file and upload');
+    const fIndexUpload = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names of current-FILE and upload');
     // File → Index only (and Ctrl+Alt+P X O): name-index the current file, no upload.
-    const fIndexOnly = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names ONLY of current-file');
+    const fIndexOnly = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Index names ONLY of current-FILE');
     // File → New McsHitp (and Ctrl+Alt+P K N): run the task that creates a new page.
     const fNewFile = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Create new McsHitp file');
     // The address bar's URL, as the bridge last reported it (`nav` and `url` messages).
@@ -383,6 +383,44 @@ function fCreateProvider(context) {
       bSelfEditing = false;
       if (bOk && fIsNavigated()) { bNavDirty = true; fUpdateTitle(); }   // mark visual tab unsaved
       return bOk;
+    };
+
+    // Valid → Validate-current: run the task 'validate current-FILE', then open its report
+    // in the default browser (openExternal, not VS Code's Simple Browser). The validator
+    // writes the report on every run, findings or not, next to itself.
+    const fValidCurrent = async () => {
+      const sLabel = 'validate current-FILE';
+      const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
+      if (!sRoot) return fStatus('no current file to validate');
+      const sReport = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'validator-report.html');
+      const nStart = Date.now();
+      const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
+        if (oEvt.execution.task.name !== sLabel) return;
+        oEnd.dispose();
+        // an old report must not pass as this run's: mtime has at least 1s resolution here
+        let nMtime = 0;
+        try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
+        if (nMtime < nStart - 1000) return fStatus('validator wrote no report, see the terminal');
+        vscode.env.openExternal(vscode.Uri.file(sReport));
+      });
+      await vscode.commands.executeCommand('workbench.action.tasks.runTask', sLabel);
+    };
+
+    // Valid → Name01-duplicate-line: remove the duplicated name-lines of each name:: para
+    // of the current file, then save: format + write + reload via onDidSave.
+    const fValidName01 = async () => {
+      if (!oActiveDoc) return fStatus('this page is not editable');
+      const sText = oActiveDoc.getText();
+      const oDup = omModel.fRemoveNameDup(sText);
+      if (oDup.nRemoved === 0) return fStatus('name:: no duplicated lines');
+      const oWe = new vscode.WorkspaceEdit();
+      oWe.replace(oActiveDoc.uri, new vscode.Range(oActiveDoc.positionAt(0), oActiveDoc.positionAt(sText.length)), oDup.sText);
+      bSelfEditing = true;
+      const bOk = await vscode.workspace.applyEdit(oWe);
+      bSelfEditing = false;
+      if (!bOk) return fStatus('name:: the edit failed');
+      await oActiveDoc.save();
+      fStatus('name:: ' + oDup.nRemoved + ' duplicated lines removed');
     };
 
     // Retarget the edit file when the page navigates (bridge `nav` message).
@@ -488,6 +526,8 @@ function fCreateProvider(context) {
             case 'indexOnly': fIndexOnly(); break;
             case 'newFile': fNewFile(); break;
             case 'makeSectFile': fMakeSect(); break;
+            case 'validCurrent': await fValidCurrent(); break;
+            case 'validName01': await fValidName01(); break;
             case 'cmd': fToChrome({ type: 'cmd', cmd: msg.cmd }); break; // relay to bridge
             case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P
             case 'openRaw': vscode.commands.executeCommand('vscode.openWith', (oActiveDoc || document).uri, 'default'); break;
@@ -841,6 +881,12 @@ function fBuildShell(webview, url) {
           <div class="clsItem" data-cmd="cmdUrl">Url&#8230;</div>
         </div>
       </div>
+      <div class="clsItem clsHasSub">Valid<span class="clsCaret">&#9656;</span>
+        <div class="clsSubmenu">
+          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-current</div>
+          <div class="clsItem" title="name:: remove duplicated lines" data-cmd="cmdValidName01">Name01-duplicate-line</div>
+        </div>
+      </div>
     </div>
   </div>
   <input id="idUrl" spellcheck="false" value="">
@@ -917,6 +963,8 @@ function fBuildShell(webview, url) {
     else if(sCmd==='cmdOpen') fToChrome({type:'open'});
     else if(sCmd==='cmdNewFile') fToChrome({type:'newFile'});
     else if(sCmd==='cmdMakeSectFile') fToChrome({type:'makeSectFile'});
+    else if(sCmd==='cmdValidCurrent') fToChrome({type:'validCurrent'});
+    else if(sCmd==='cmdValidName01') fToChrome({type:'validName01'});
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
     else if(sCmd==='cmdOpenRaw') fToChrome({type:'openRaw'});

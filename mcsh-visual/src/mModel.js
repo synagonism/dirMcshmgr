@@ -239,8 +239,31 @@ function fParseNameFirst(sName) {
   return { sInformal: '', sMain: '' };
 }
 
+/**
+ * Remove the name-lines (`<br>* McshLago.…,`) that repeat an earlier line of the SAME
+ * name:: para; the first stays. Other lines and other paras are not touched.
+ * @returns {{ sText: string, nRemoved: number }}
+ */
+function fRemoveNameDup(sText) {
+  const aLine = sText.split('\n');
+  const aOut = [];
+  let oSetSeen = null;    // the name-lines of the open name:: para, null outside one
+  let nRemoved = 0;
+  for (const sLine of aLine) {
+    if (/^ *<p id="[^"]+">name::\s*$/.test(sLine)) oSetSeen = new Set();
+    else if (oSetSeen && /^\s*<br>\*\s*Mcsh[A-Z][a-z]{3}\./.test(sLine)) {
+      const sKey = sLine.trim();
+      if (oSetSeen.has(sKey)) { nRemoved++; continue; }
+      oSetSeen.add(sKey);
+    }
+    aOut.push(sLine);
+    if (oSetSeen && sLine.includes('</p>')) oSetSeen = null;
+  }
+  return { sText: aOut.join('\n'), nRemoved };
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
-  fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
+  fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst, fRemoveNameDup,
 };

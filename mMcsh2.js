@@ -1544,11 +1544,15 @@ let fContainersInsert = function () {
 
   /**
    * created: {2026-10-30}
-   * DOING: on double-click on the '<Mmn>.specific' or '<Mmn>_Sptr' line of a
-   *   specific-tree (p#id..sptr), finds the-concept's DIRECT-specifics and inserts
-   *   them after '===' as '* informal-name!@file#id,' lines (page-only).
-   *   '<Mmn>.specific' finds from the-English name-index; '<Mmn>_Sptr' scans all
-   *   generic-trees. A-second double-click on the-line removes the-inserted list.
+   * DOING: on double-click on a-relation-trigger line '* <Mmn><mark><word>,'
+   *   (a-legacy 'McshEngl.' prefix is-optional), finds the-concept's DIRECT-related
+   *   concepts and inserts them right under the-trigger-line, below a-'---', as
+   *   '* <Mmn><mark><child>!@file#id,' lines (page-only). Triggers:
+   *   '<Mmn>.specific' (.), "<Mmn>'attribute" ('), '<Mmn>:generic' (:),
+   *   '<Mmn>/part' (/), '<Mmn>//whole' (//), '<Mmn>;child' (;), '<Mmn>;;parent' (;;)
+   *   find from the-English name-index; '<Mmn>_Sptr' scans all generic-trees (specifics
+   *   only). Attribute-opposites (open/openNo) that point the-same concept are-both kept.
+   *   A-second double-click on the-line removes the-inserted list.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
    */
   async function fSptrInsert() {
@@ -1557,51 +1561,78 @@ let fContainersInsert = function () {
     const oNode = oSel.getRangeAt(0).startContainer
     if (oNode.nodeType !== Node.TEXT_NODE) return false
     const oP = oNode.parentElement.closest('p')
-    if (!oP || !oP.id.endsWith('sptr')) return false
-    // which trigger? parse the-clicked line's text
-    const sTxt = oNode.textContent
-    let bScan = false, sMmn = ''
-    let aM = sTxt.match(/McshEngl\.(.+?)\.specific(?=[,!\s]|$)/)
-    if (aM) {
-      sMmn = aM[1]
-    } else {
-      aM = sTxt.match(/McshEngl\.(.+?)_Sptr(?=[,!\s]|$)/)
+    if (!oP || !oP.id) return false // any relation-paragraph; the-trigger-word below decides
+    // which trigger? parse the-clicked line's text. relation-markers map to a-word:
+    const
+      sTxt = oNode.textContent,
+      fEscMark = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
+      aoRel = [
+        { sWord: 'specific', sMark: '.' },
+        { sWord: 'attribute', sMark: "'", bHoldOpp: true }, // opposites (open/openNo) kept
+        { sWord: 'generic', sMark: ':' },
+        { sWord: 'whole', sMark: '//' },
+        { sWord: 'part', sMark: '/' },
+        { sWord: 'parent', sMark: ';;' },
+        { sWord: 'child', sMark: ';' }
+      ]
+    let bScan = false, sMmn = '', sMark = '.', sWord = 'specific', bHoldOpp = false, aM = null
+    // a-trigger-line is '* <Mmn><mark><word>,' (a-legacy 'McshEngl.' prefix is-optional)
+    for (let n = 0; n < aoRel.length; n++) {
+      aM = sTxt.match(new RegExp('\\*\\s*(?:McshEngl\\.)?(.+?)' + fEscMark(aoRel[n].sMark) + aoRel[n].sWord + '(?=[,!\\s]|$)'))
+      if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
+    }
+    if (!sMmn) { // '<Mmn>_Sptr' => scan all generic-trees (specifics only)
+      aM = sTxt.match(/\*\s*(?:McshEngl\.)?(.+?)_Sptr(?=[,!\s]|$)/)
       if (aM) { bScan = true; sMmn = aM[1] }
     }
     if (!sMmn) return false
     oSel.removeAllRanges()
-    // toggle off: remove a-previously inserted list in this paragraph
-    const oOld = oP.querySelector('.clsSptrList')
-    if (oOld) { oOld.remove(); return true }
+    // toggle off: a-findings-list already sits right under THIS trigger-line
+    const oNext = oNode.nextElementSibling
+    if (oNext && oNext.classList.contains('clsSptrList')) { oNext.remove(); return true }
 
-    // the-direct-specifics from the-English name-index: names '<Mmn>.<child>',
-    // one level, excluding attribute/part/whole/generic/child/parent/worldview markers
-    async function fSpecNamidx(sMmnIn) {
-      const sEsc = sMmnIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-      let aaNu = []
-      try { aaNu = await fSearchName(sEsc + '\\.', 'lagEngl') } catch (oErr) { console.warn(oErr) }
+    // the-direct-related concepts from the-English name-index: names
+    // '<Mmn><mark><child>' for the-given relation-marker (sMarkIn: '.' specific,
+    // "'" attribute, ':' generic, '/' part, '//' whole, ';' child, ';;' parent),
+    // ONE level only. sWordIn is the-trigger keyword on the-line (such as 'specific'),
+    // skipped in results. bHoldOppIn: keep a-positive and a-'No'-negated value per
+    // target-concept, so an X/XNo pair (open/openNo) survives while same-concept aliases collapse.
+    async function fSpecNamidx(sMmnIn, sMarkIn, sWordIn, bHoldOppIn) {
       const
-        rSep = /^['/:;@]/,
+        fEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
+        sPrefix = sMmnIn + sMarkIn,
+        sMarkChar = sMarkIn[0] // primary char; a-repeat of it is the-nested variant (/ vs //, ; vs ;;)
+      let aaNu = []
+      try { aaNu = await fSearchName(fEsc(sMmnIn) + fEsc(sMarkIn), 'lagEngl') } catch (oErr) { console.warn(oErr) }
+      const
+        // other relation-markers: a-child starting with one belongs to another relation
+        rSep = new RegExp('^[' + ".'/:;@".replace(sMarkChar, '') + ']'),
         aoOut = [],
         oSeen = new Set()
       aaNu.forEach(function (aNu) {
         const sName = aNu[0], sUrl = aNu[1]
-        if (!sName.startsWith(sMmnIn + '.')) return
-        let sChild = sName.slice(sMmnIn.length + 1)
+        if (!sName.startsWith(sPrefix)) return
+        let sChild = sName.slice(sPrefix.length)
         const nR = sChild.search(/!(⇒|=|~|⇨)/) // cut at main-name/translation/pos/other-main
         if (nR >= 0) sChild = sChild.slice(0, nR)
         sChild = sChild.trim()
-        if (!sChild || sChild === 'specific') return
-        if (sChild.indexOf('.') >= 0) return // deeper than one level
-        if (rSep.test(sChild)) return        // not a-specific (attribute/part/etc.)
+        if (!sChild || sChild === sWordIn) return
+        if (sChild.indexOf(sMarkChar) >= 0) return // deeper / nested variant (// or ;;)
+        if (rSep.test(sChild)) return              // starts with another relation-marker
         const
           sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : '',
           sFile = sUrl.split('#')[0],
           sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
           sRef = sStem + sHash
-        if (oSeen.has(sRef)) return // dedupe by concept (same target => one line)
-        oSeen.add(sRef)
-        aoOut.push({ sInformal: sChild.replace(/^\d+_/, ''), sRef: sRef })
+        // full relation-name '<Mmn><mark><child>' (only a-leading NNN_ ordering-number removed)
+        const sClean = sPrefix + sChild.replace(/^\d+_/, '')
+        // dedupe by target-concept (one line per concept); for opposite-holding
+        // relations split each concept into a-positive and a-'No'-negated bucket, so an
+        // X/XNo pair (open/openNo) survives while other same-concept aliases collapse
+        const sKey = bHoldOppIn ? (sRef + (sClean.endsWith('No') ? '#No' : '#')) : sRef
+        if (oSeen.has(sKey)) return
+        oSeen.add(sKey)
+        aoOut.push({ sInformal: sClean, sRef: sRef })
       })
       return aoOut
     }
@@ -1650,32 +1681,25 @@ let fContainersInsert = function () {
       return aoOut
     }
 
-    const aoSpec = bScan ? await fSpecScan(oP) : await fSpecNamidx(sMmn)
+    const aoSpec = bScan ? await fSpecScan(oP) : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
-    // build the-list and insert after the-'===' text node of the-paragraph
+    // build the-findings-list and insert it right under THIS trigger-line, below a-'---'
     const oSpan = document.createElement('span')
     oSpan.className = 'clsSptrList'
     oSpan.style.fontStyle = 'italic'
     oSpan.style.opacity = '0.8'
+    oSpan.appendChild(document.createElement('br'))
+    oSpan.insertAdjacentHTML('beforeend', '---') // separator under the-trigger
     if (aoSpec.length === 0) {
       oSpan.appendChild(document.createElement('br'))
-      oSpan.insertAdjacentHTML('beforeend', '* ?? (no direct-specific found)')
+      oSpan.insertAdjacentHTML('beforeend', '* ?? (no finding)')
     } else {
       aoSpec.forEach(function (oSpc) {
         oSpan.appendChild(document.createElement('br'))
         oSpan.insertAdjacentHTML('beforeend', '* ' + oSpc.sInformal + '!@' + oSpc.sRef + ',')
       })
     }
-    // a-closing '===' so the-inserted list is-separated from the-existing specifics
-    oSpan.appendChild(document.createElement('br'))
-    oSpan.insertAdjacentHTML('beforeend', '===')
-    let oEq = null
-    const oWalk = document.createTreeWalker(oP, NodeFilter.SHOW_TEXT)
-    for (let o = oWalk.nextNode(); o; o = oWalk.nextNode()) {
-      if (o.textContent.trim() === '===') { oEq = o; break }
-    }
-    if (oEq) oEq.after(oSpan)
-    else oNode.after(oSpan)
+    oNode.after(oSpan)
     return true
   }
 
