@@ -51,6 +51,7 @@ import {fPlanSectMove, fReadRawOther} from './mMcshSectMove.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-12-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'mMcshNew.mjs.1-13-0.2026-10-30: SFTP password from env MCSH_SFTP_PASSWORD, not argv',
     'mMcshNew.mjs.1-12-0.2026-10-30: sAttrbase, main-names of infrsc|doing|evolg, always counter',
     'mMcshNew.mjs.1-11-0.2026-10-30: moves a-sect-concept into the-new file (Make-current-file)',
@@ -304,9 +305,9 @@ s =
   '    <br>* McshEngl.' + sNameMain + '\'specific_generic_tree,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrnam"></a></p>\n' +
   '  <p id="' + sNameId + 'gntr">generic-tree::\n' +
-  '    <br>* McshEngl.' + sNameMain + '_Gntr,\n' +
+  '    <br>* McshEngl.' + sNameMain + ':generic,\n' +
   '    <br>===\n' +
-  '    <br>* ...entity_Gntr,\n' +
+  '    <br>* ...entity:generic,\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gntr"></a></p>\n' +
   '  <p id="' + sNameId + 'sptr">specific-tree::\n' +
   '    <br>* McshEngl.' + sNameMain + '_Sptr,\n' +

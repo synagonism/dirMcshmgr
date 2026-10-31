@@ -1,0 +1,8 @@
+parent-tree:: and child-tree:: reformatted like generic-tree::  (applied 2026-10-31)
+  parent head:  <br>* McshEngl.<mainname>;;parent,   then ===   then entries
+  child  head:  <br>* McshEngl.<mainname>;child,      then ===   then entries
+  mainname from sibling generic-tree:: head (idXXXgntr); old self-names (X_Pntr/'parent/;;parent, X_Chtr/'child/;child) consolidated into the head.
+
+=== PARENT-APPLIED (58)
+=== CHILD-APPLIED (58)
+=== SKIPPED-AMBIGUOUS (0)

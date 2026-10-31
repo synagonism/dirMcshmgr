@@ -1,0 +1,9 @@
+part-tree:: reformatted like generic-tree::  (applied 2026-10-31)
+  head:  <br>* McshEngl.<mainname>/part,
+         <br>===
+         <existing entries>
+  mainname from the concept's sibling generic-tree:: head (idXXXgntr -> McshEngl.M:generic),
+  fallback to own _Prtr/'part base. old self-names (X_Prtr / X'part / X/part) consolidated into the /part head.
+
+=== APPLIED (178) — part-tree:: paragraphs reformatted in 178 Mcsh*.last.html files
+=== SKIPPED-AMBIGUOUS (0)

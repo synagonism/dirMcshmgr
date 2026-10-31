@@ -1,0 +1,10 @@
+whole-tree:: reformatted like generic-tree::  (applied 2026-10-31)
+  head:  <br>* McshEngl.<mainname>//whole,
+         <br>===
+         <existing entries>
+  mainname taken from the concept's sibling generic-tree:: head (idXXXgntr -> McshEngl.M:generic).
+  old self-name lines (McshEngl.X_Wltr, / X'whole, / X//whole,) consolidated into the single //whole head.
+
+=== APPLIED (242) — whole-tree:: paragraphs reformatted across 224 Mcsh*.last.html files
+=== SKIPPED-AMBIGUOUS (56) — no sibling generic-tree head and no ASCII own-name; left unchanged
+  see wltr-head-ambiguous.txt

@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-0-0.2026-10-31: generic-tree names X:generic (was X_Gntr), dblclick on generic expands left, only the-head lists generics',
     'mMcsh2.js.26-1-0.2026-10-23: dblclick ...entity_Gntr inserts generic-chain',
     'mMcsh2.js.26-0-0.2026-10-18: !@ concept-reference preview + go-to',
     'mMcsh2.js.25-0-3.2026-09-13: configMcshapp.json',
@@ -731,7 +732,7 @@ let fContainersInsert = function () {
     // Skip inputs/textareas
     const sTag = (oEvtIn.target.closest('input, textarea, [contenteditable="true"]') || {}).tagName
     if (sTag === 'INPUT' || sTag === 'TEXTAREA') return
-    // '...entity_Gntr' of a-generic-tree: NO search, insert the-generic-chain up to entity
+    // '...entity:generic' of a-generic-tree: NO search, insert the-generic-chain up to entity
     if (await fGntrChainInsert()) return
     // '<Mmn>.specific' / '<Mmn>_Sptr' of a-specific-tree: NO search, insert direct-specifics
     if (await fSptrInsert()) return
@@ -767,7 +768,12 @@ let fContainersInsert = function () {
           return oSel.toString().trim()
         } else {
           const sText = oNode.textContent
-          const nStart = oRange.startOffset
+          let nStart = oRange.startOffset
+          // click on 'generic' of 'X:generic': the-browser selects only 'generic', take X too
+          if (sText.startsWith('generic', nStart) && sText[nStart - 1] === ':') {
+            nStart--
+            while (nStart > 0 && fIsWord(sText[nStart - 1])) nStart--
+          }
           let nEnd
           if (oNode === oRange.endContainer) {
             nEnd = oRange.endOffset
@@ -1414,7 +1420,7 @@ let fContainersInsert = function () {
     }
     return oGntr ? {oGntr: oGntr, sUrl: sUrlIn.split('#')[0] + '#' + oGntr.id} : null
   }
-  // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X_Gntr, name
+  // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X:generic, name
   async function fGntrOfLine(sLineIn, sUrlBaseIn) {
     const sL = sLineIn.replace(/^\*\s*/, '')
     let aM = sL.match(/href="([^"]+)"/)
@@ -1436,17 +1442,17 @@ let fContainersInsert = function () {
 
   /**
    * created: {2026-10-23}
-   * DOING: on double-click on '...entity_Gntr' of a-generic-tree (p#id..gntr),
+   * DOING: on double-click on '...entity:generic' of a-generic-tree (p#id..gntr),
    *   shows after it '* ===', the-first generic of its group and the-chain computed from it
    *   up to entity, to compare with the-written chain.
    *   The-chain lives in the-page only (until reload or another page).
-   *   A-second double-click (on '...entity_Gntr' or on the-inserted entity line) removes it.
+   *   A-second double-click (on '...entity:generic' or on the-inserted entity line) removes it.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
    */
   async function fGntrChainInsert() {
     const
-      sEnt = '...entity_Gntr',
-      sEntTop = 'entity_Gntr (the-most-generic)',
+      sEnt = '...entity:generic',
+      sEntTop = 'entity:generic (the-most-generic)',
       oSel = window.getSelection()
     if (!oSel || oSel.rangeCount === 0) return false
     const
@@ -1468,10 +1474,10 @@ let fContainersInsert = function () {
     const oP = oNode.parentElement.closest('p')
     if (!oP || !oP.id.endsWith('gntr')) return false
     oSel.removeAllRanges()
-    // the-chain of THIS '...entity_Gntr' is right after it; other '===' groups keep theirs
+    // the-chain of THIS '...entity:generic' is right after it; other '===' groups keep theirs
     const oOld = oNode.nextSibling
     if (oOld && oOld.classList && oOld.classList.contains('clsGntrChain')) { fChainRemove(oOld); return true }
-    // k: which '...entity_Gntr' of the-paragraph was clicked (0-based)
+    // k: which '...entity:generic' of the-paragraph was clicked (0-based)
     let k = 0
     const oWalk = document.createTreeWalker(oP, NodeFilter.SHOW_TEXT)
     for (let o = oWalk.nextNode(); o && o !== oNode; o = oWalk.nextNode()) {
@@ -1488,20 +1494,20 @@ let fContainersInsert = function () {
 
     // the-entity line ends the-chain
     function fIsEntity(sLineIn) {
-      return /^\*\s*(\.\.\.\s*)?entity(_Gntr)?\b/.test(sLineIn)
+      return /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(sLineIn)
     }
     function fAddLine(sHtmlIn) {
       oSpan.appendChild(document.createElement('br'))
       oSpan.insertAdjacentHTML('beforeend', '* ' + sHtmlIn + (sHtmlIn === '===' ? '' : ','))
     }
 
-    // start from level1 (the-first generic of the-'===' group of '...entity_Gntr') and compute
+    // start from level1 (the-first generic of the-'===' group of '...entity:generic') and compute
     // the-whole chain, so it can be compared with the-written one
     // lines of the-paragraph WITHOUT chains inserted by other double-clicks
     const oPClean = oP.cloneNode(true)
     oPClean.querySelectorAll('.clsGntrChain').forEach(o => o.remove())
     const aL = fLines(oPClean)
-    // the-line of the-k-th '...entity_Gntr'
+    // the-line of the-k-th '...entity:generic'
     let nEnt = -1
     for (let n = 0, nK = 0; n < aL.length; n++) {
       if (aL[n].includes(sEnt) && nK++ === k) { nEnt = n; break }
@@ -1526,17 +1532,17 @@ let fContainersInsert = function () {
       if (oSetSeen.has(o.sUrl)) { fAddLine('?? cycle at ' + o.oGntr.id); break }
       oSetSeen.add(o.sUrl)
       if (n > 0) {
-        // the-name of the-reached gntr: its first line '* McshEngl.X_Gntr,'
-        const mN = (fLines(o.oGntr).find(s => /McshEngl\.\S+_Gntr/.test(s)) || '').match(/McshEngl\.(\S+_Gntr)/)
+        // the-name of the-reached gntr: its first line '* McshEngl.X:generic,'
+        const mN = (fLines(o.oGntr).find(s => /McshEngl\.\S+:generic/.test(s)) || '').match(/McshEngl\.(\S+:generic)/)
         fAddLine('<a class="clsPreview" href="' + o.sUrl + '">' + (mN ? mN[1] : o.oGntr.id) + '</a>')
       }
       sLine = fLevel1(o.oGntr)
       sUrlBase = o.sUrl
     }
-    // reached entity ('===' above '...entity_Gntr': the-generic is entity) -> it is the-last line
+    // reached entity ('===' above '...entity:generic': the-generic is entity) -> it is the-last line
     const bEntTop = fIsEntity(sLine) || sLine === '==='
     if (bEntTop) fAddLine(sEntTop)
-    // insert after the-'...entity_Gntr,' text
+    // insert after the-'...entity:generic,' text
     oNode.splitText(nIdx + sEnt.length + (oNode.textContent[nIdx + sEnt.length] === ',' ? 1 : 0))
     oNode.after(oSpan)
     return true
@@ -1550,8 +1556,8 @@ let fContainersInsert = function () {
    *   '* <Mmn><mark><child>!@file#id,' lines (page-only). Triggers:
    *   '<Mmn>.specific' (.), "<Mmn>'attribute" ('), '<Mmn>:generic' (:),
    *   '<Mmn>/part' (/), '<Mmn>//whole' (//), '<Mmn>;child' (;), '<Mmn>;;parent' (;;)
-   *   find from the-English name-index; '<Mmn>_Sptr' scans all generic-trees (specifics
-   *   only). Attribute-opposites (open/openNo) that point the-same concept are-both kept.
+   *   find from the-English name-index. Attribute-opposites (open/openNo) that point
+   *   the-same concept are-both kept.
    *   A-second double-click on the-line removes the-inserted list.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
    */
@@ -1575,17 +1581,15 @@ let fContainersInsert = function () {
         { sWord: 'parent', sMark: ';;' },
         { sWord: 'child', sMark: ';' }
       ]
-    let bScan = false, sMmn = '', sMark = '.', sWord = 'specific', bHoldOpp = false, aM = null
+    let sMmn = '', sMark = '.', sWord = 'specific', bHoldOpp = false, aM = null
     // a-trigger-line is '* <Mmn><mark><word>,' (a-legacy 'McshEngl.' prefix is-optional)
     for (let n = 0; n < aoRel.length; n++) {
       aM = sTxt.match(new RegExp('\\*\\s*(?:McshEngl\\.)?(.+?)' + fEscMark(aoRel[n].sMark) + aoRel[n].sWord + '(?=[,!\\s]|$)'))
       if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
     }
-    if (!sMmn) { // '<Mmn>_Sptr' => scan all generic-trees (specifics only)
-      aM = sTxt.match(/\*\s*(?:McshEngl\.)?(.+?)_Sptr(?=[,!\s]|$)/)
-      if (aM) { bScan = true; sMmn = aM[1] }
-    }
     if (!sMmn) return false
+    // '* X:generic,' of a-generic-tree is a-generic: search it; only the-head 'McshEngl.X:generic' lists generics
+    if (sWord === 'generic' && !/\*\s*McshEngl\./.test(sTxt)) return false
     oSel.removeAllRanges()
     // toggle off: a-findings-list already sits right under THIS trigger-line
     const oNext = oNode.nextElementSibling
@@ -1637,51 +1641,7 @@ let fContainersInsert = function () {
       return aoOut
     }
 
-    // the-direct-specifics by scanning ALL generic-trees: concepts whose level-1
-    // generic resolves to THIS concept's generic-tree (sibling '...gntr' paragraph)
-    async function fSpecScan(oPIn) {
-      const
-        sGId = oPIn.id.replace(/sptr$/, 'gntr'),
-        sGUrl = location.href.split('#')[0] + '#' + sGId
-      let aPages = []
-      try {
-        const oRes = await fetch(sPathSite + sWorldview + '/SitePagesArr.json') // nnnFv
-        aPages = await oRes.json()
-      } catch (oErr) { console.warn(oErr); return [] }
-      const
-        aoOut = [],
-        oSeen = new Set(),
-        sWvPrefix = sWorldview.substring(3)
-      for (let n = 0; n < aPages.length; n++) {
-        const sStem = (aPages[n][0] || '').replace(/\.txt$/, '')
-        if (!sStem.startsWith(sWvPrefix)) continue // only Mcsh pages (skip Hitp)
-        const sPageUrl = await fRefToUrl(sStem)
-        if (!sPageUrl) continue
-        let oDoc
-        try { oDoc = await fDoc(sPageUrl) } catch (oErr) { continue }
-        const aGntr = oDoc.querySelectorAll('p[id$="gntr"]')
-        for (let nG = 0; nG < aGntr.length; nG++) {
-          const oG = aGntr[nG], sL1 = fLevel1(oG)
-          if (!sL1) continue
-          let oRes2
-          try { oRes2 = await fGntrOfLine(sL1, sPageUrl.split('#')[0] + '#' + oG.id) }
-          catch (oErr) { oRes2 = null }
-          if (oRes2 && oRes2.sUrl === sGUrl) {
-            const
-              sSecId = oG.id.replace(/gntr$/, ''),
-              aMn = (fLines(oG).find(s => /McshEngl\.\S+_Gntr/.test(s)) || '').match(/McshEngl\.(\S+?)_Gntr/),
-              sRef = sStem + '#' + sSecId
-            if (!oSeen.has(sRef)) {
-              oSeen.add(sRef)
-              aoOut.push({ sInformal: (aMn ? aMn[1] : sSecId).replace(/^\d+_/, ''), sRef: sRef })
-            }
-          }
-        }
-      }
-      return aoOut
-    }
-
-    const aoSpec = bScan ? await fSpecScan(oP) : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
+    const aoSpec = await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
     // build the-findings-list and insert it right under THIS trigger-line, below a-'---'
     const oSpan = document.createElement('span')

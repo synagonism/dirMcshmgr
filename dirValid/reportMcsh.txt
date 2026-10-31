@@ -1,15 +1,28 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrlGstr02: c:/dirNodews/dirMcsh
+  MvrlGstr01,MvrlGstr02: ../dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  591 Mcsh-files · 2 files with issues · 2 issues
+  593 Mcsh-files · 5 files with issues · 5 issues
 
-=== MvrlGstr02 (2 issues in 2 files) — file:lines, the-biggest line first
-  McshTchInf000009:1289
-  McshTchInf000012:10262
+=== MvrlGstr01 (2 issues in 2 files) — file:lines, the-biggest line first
+  McshCor000002:2437
+  McshCor000003:4963
+
+=== MvrlGstr01 --line — every issue, its line and its message
+  McshCor000002.last.html
+    2437  specific_has_generic: "Mcsh-main-name" is a specific of McsnameMain:generic, but its generic-tree:: (McshTchInf000009:1285) does not list it
+  McshCor000003.last.html
+    4963  specific_has_generic: "node-of-system" (McshCor000011#idSyspart) is a specific of entity:generic, but has no generic-tree::
+
+=== MvrlGstr02 (3 issues in 3 files) — file:lines, the-biggest line first
+  McshHlth000002:151
+  McshTchInf000009:1285
+  McshTchInf000012:10218
 
 === MvrlGstr02 --line — every issue, its line and its message
+  McshHlth000002.last.html
+    151  generic_has_specific: "Hmbdnode:generic" has generic Systnode:generic, but Systnode:generic has no specific-tree::
   McshTchInf000009.last.html
-    1289  generic_has_specific: "McshnameMain_Gntr" has generic Mcsname_Gntr, but its specific-tree:: (McshCor000002:778) does not list it
+    1285  generic_has_specific: "McshnameMain:generic" has generic Mcsname:generic, but its specific-tree:: (McshCor000002:2130) does not list it
   McshTchInf000012.last.html
-    10262  generic_has_specific: "npm_Gntr" has generic JsgntoolPkgmgr_Gntr, but its specific-tree:: (McshTchInf000010:7267) does not list it
+    10218  generic_has_specific: "npm:generic" has generic JsgntoolPkgmgr:generic, but its specific-tree:: (McshTchInf000010:7219) does not list it
 

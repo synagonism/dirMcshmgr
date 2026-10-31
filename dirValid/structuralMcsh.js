@@ -68,6 +68,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-40-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'structuralMcsh.js.0-39-0.2026-10-29: MvrlMmn07 attrbase_line',
     'structuralMcsh.js.0-38-0.2026-10-28: MvrlMmn03 evaluation → Xevaln, evaluating → Xevalg',
     'structuralMcsh.js.0-37-0.2026-10-28: rules MvrlMnnm01..06 renamed MvrlMmn01..06',
@@ -634,7 +635,7 @@ function fCheckMainNameAttrbase(aoCnptFile) {
 }
 
 // ⚠️ [MvrlGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
-//   THEN Y has X as generic: X is in Y's "generic-tree::" (as X_Gntr or a-link to X),
+//   THEN Y has X as generic: X is in Y's "generic-tree::" (as X:generic or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
 //   A-concept is a-key "McshDir000000#id" ("McshDir000000#" the-file-concept);
 //   a-GS-TREE means its whole, a-para means its section.
@@ -643,7 +644,7 @@ const oWeakGstrIndex = new WeakMap();
 function fGstrIndex(aoCnptFile) {
   if (oWeakGstrIndex.has(aoCnptFile)) return oWeakGstrIndex.get(aoCnptFile);
   const rGs = /^GENERIC-SPECIFIC-TREE of /;   // NOT "Name'GENERIC-SPECIFIC-TREE" of another concept
-  const fHead = sPara => (/<br>\*\s*McshEngl\.(\S+?_Gntr)\b/.exec(sPara ?? '') ?? [])[1] ?? null;
+  const fHead = sPara => (/<br>\*\s*McshEngl\.(\S+?:generic)\b/.exec(sPara ?? '') ?? [])[1] ?? null;
   // index per file: the-cnptSect by id, the-para by id (with its section), the-top GS-TREE
   const ooFile = {};
   for (const oCnptFile of aoCnptFile) {
@@ -714,7 +715,7 @@ function fGstrIndex(aoCnptFile) {
     }
     return aOut;
   };
-  // X_Gntr name → concept-key
+  // X:generic name → concept-key
   const oNameGntr = {};
   for (const [sFile, oF] of Object.entries(ooFile)) {
     for (const [sId, oP] of Object.entries(oF.ooPara)) {
@@ -734,7 +735,7 @@ function fGstrIndex(aoCnptFile) {
     const oSetKey = new Set();
     for (const sLine of fGntrItems(oG.oP.sPara)) {
       if (/^<br>\*\s*(McshEngl\.|\.\.\.)/.test(sLine)) continue;
-      for (const aN of sLine.matchAll(/([^\s*,]+_Gntr)(?=[,\s]|$)/g)) if (oNameGntr[aN[1]]) oSetKey.add(oNameGntr[aN[1]]);
+      for (const aN of sLine.matchAll(/([^\s*,]+:generic)(?=[,\s]|$)/g)) if (oNameGntr[aN[1]]) oSetKey.add(oNameGntr[aN[1]]);
       for (const oR of fRefs(oG.sFile, sLine)) { const sK = fKey(oR.sFile, oR.sId); if (sK) oSetKey.add(sK); }
     }
     return (ooGeneric[sKey] = { oSetKey, oG });
@@ -784,7 +785,7 @@ function fGstrIndex(aoCnptFile) {
     }
     return aOut;
   };
-  // the-English names of a-concept (lower case): McshEngl names, !⇒ main-name, X of X_Gntr
+  // the-English names of a-concept (lower case): McshEngl names, !⇒ main-name, X of X:generic
   const fNames = sKey => {
     const [sFile, sId] = sKey.split('#');
     const oF = ooFile[sFile];
@@ -797,7 +798,7 @@ function fGstrIndex(aoCnptFile) {
         if (aM) oSet.add(aM[1].toLowerCase());
       }
     const oG = fGntr(sKey), sHead = oG && fHead(oG.oP.sPara);
-    if (sHead) oSet.add(sHead.replace(/_Gntr$/, '').toLowerCase());
+    if (sHead) oSet.add(sHead.replace(/:generic$/, '').toLowerCase());
     return oSet;
   };
   const oIndex = { rGs, ooFile, fHead, fKey, fGntr, fSptr, fRefs, fItems, fTreeItems, fNames, oNameGntr, fGenerics, fReaches, fInside };
@@ -845,7 +846,7 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
 // ⚠️ [MvrlGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
 //   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
 //   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
-//   Skipped: McshEngl head, "...entity_Gntr", a-"=== label:" group (addressWpg, sibling-of-X: ...), entity itself,
+//   Skipped: McshEngl head, "...entity:generic", a-"=== label:" group (addressWpg, sibling-of-X: ...), entity itself,
 //   a-first item that is NOT a-concept.
 function fCheckGstrGenericSpecific(aoCnptFile) {
   const aoIssue = [];
@@ -870,7 +871,7 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
       }
       let oNamesS = null;
       for (const sLine of aFirst) {
-        const aN = /^<br>\*\s*([^\s*,]+_Gntr)(?=[,\s]|$)/.exec(sLine);
+        const aN = /^<br>\*\s*([^\s*,]+:generic)(?=[,\s]|$)/.exec(sLine);
         const oR = aN ? null : fRefs(sFile, sLine)[0];
         const sKeyG = aN ? oNameGntr[aN[1]] : (oR ? fKey(oR.sFile, oR.sId) : null);
         if (!sKeyG || sKeyG === sKeyS || sKeyG === 'McshCor000003#') continue;   // not a-concept, itself, entity
@@ -886,7 +887,7 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
         const aItem = fTreeItems(oSp.oP.sPara);
         if (aItem.some(s => fRefs(oSp.sFile, s).some(o => fKey(o.sFile, o.sId) === sKeyS))) continue;
         oNamesS ??= fNames(sKeyS);
-        if (aItem.some(s => { const sT = fStripItem(s); return oNamesS.has(sT) || oNamesS.has(sT.replace(/_gntr$/, '')); })) continue;
+        if (aItem.some(s => { const sT = fStripItem(s); return oNamesS.has(sT) || oNamesS.has(sT.replace(/:generic$/, '')); })) continue;
         const sWhere = `${oSp.sFile}:${ooFile[oSp.sFile].oCnptFile.oMapIdLine?.get(oSp.oP.sNameId) ?? '?'}`;
         aoIssue.push(fIssue('WARN', 'MvrlGstr02', oF.oCnptFile.sNameFile, oSectS,
           `generic_has_specific: "${sNameS}" has generic ${sNameG}, but its specific-tree:: (${sWhere}) does not list it`,
