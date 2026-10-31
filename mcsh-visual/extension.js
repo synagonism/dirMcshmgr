@@ -21,6 +21,7 @@ const os = require('os');
 const path = require('path');
 const omModel = require('./src/mModel');
 const omFormat = require('./src/mFormat');
+const omRelInsert = require('./src/mRelInsert');
 const fFormat = omFormat.fFormat;
 
 const sViewType = 'mcshv.editorVisual';
@@ -113,6 +114,60 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.currentFileBasename', () => { const s = fTaskFile(); return s ? path.basename(s) : ''; }),
     vscode.commands.registerCommand('mcshv.currentWorldview', () => fTaskWorldview())
   );
+  // Double-click on a relation-line of a Mcsh source ("* Mcs'attribute,", "* Mcs:generic,"…)
+  // inserts its findings after the line, like the browser (mMcsh2.js fSptrInsert).
+  // VS Code has no double-click event, so: an empty mouse-selection followed quickly
+  // by a whole-word mouse-selection around it.
+  let oLastClick = { sUri: '', oPos: null, nTime: 0 };
+  const fWholeWord = (oEd, oSel) => {
+    const sSep = vscode.workspace.getConfiguration('editor', oEd.document.uri).get('wordSeparators') || '';
+    const fIsSep = c => !c || /\s/.test(c) || sSep.indexOf(c) >= 0;
+    const sLine = oEd.document.lineAt(oSel.start.line).text;
+    const sWord = sLine.slice(oSel.start.character, oSel.end.character);
+    return !Array.from(sWord).some(fIsSep)
+      && fIsSep(sLine[oSel.start.character - 1]) && fIsSep(sLine[oSel.end.character]);
+  };
+  context.subscriptions.push(vscode.window.onDidChangeTextEditorSelection((e) => {
+    if (e.kind !== vscode.TextEditorSelectionChangeKind.Mouse || e.selections.length !== 1) return;
+    const oEd = e.textEditor, oDoc = oEd.document, oSel = e.selections[0];
+    const sUri = oDoc.uri.toString();
+    if (oSel.isEmpty) { oLastClick = { sUri, oPos: oSel.active, nTime: Date.now() }; return; }
+    const bDouble = oLastClick.sUri === sUri && oLastClick.oPos && oSel.isSingleLine
+      && Date.now() - oLastClick.nTime <= 500 && oSel.contains(oLastClick.oPos);
+    oLastClick = { sUri: '', oPos: null, nTime: 0 };
+    if (!bDouble || !fWholeWord(oEd, oSel)) return;
+    if (oDoc.uri.scheme !== 'file' || !/^Mcsh.*\.last\.html$/i.test(path.basename(oDoc.uri.fsPath))) return;
+    const oLine = oDoc.lineAt(oSel.start.line);
+    // a '!@' reference-line goes to its target, like openByCodeOnly
+    const sRef = omRelInsert.fRefOfLine(oLine.text);
+    if (sRef) {
+      const sCur = oDoc.uri.fsPath;
+      const { sPath, nLine } = fResolveCode(sRef, sCur, path.basename(sCur).replace(/\.last\.html$/i, ''));
+      if (sPath) fRevealSource(vscode.Uri.file(sPath), nLine);
+      return;
+    }
+    const oTrig = omRelInsert.fTrigger(oLine.text);
+    if (!oTrig) return;
+    if (oLine.lineNumber + 1 < oDoc.lineCount && /^\s*<br>---/.test(oDoc.lineAt(oLine.lineNumber + 1).text)) {
+      vscode.window.setStatusBarMessage('Mcsh: findings are already under this line.', 4000);
+      return;
+    }
+    let sRoot = path.dirname(oDoc.uri.fsPath);
+    while (!fs.existsSync(path.join(sRoot, 'dirNamidx'))) {
+      const sUp = path.dirname(sRoot);
+      if (sUp === sRoot) { vscode.window.showWarningMessage('Mcsh: no dirNamidx above this file.'); return; }
+      sRoot = sUp;
+    }
+    let aLine;
+    try {
+      aLine = omRelInsert.fFormatLines(omRelInsert.fFindRelated(sRoot, oTrig), oLine.text.match(/^\s*/)[0]);
+    } catch (oErr) {
+      vscode.window.showWarningMessage('Mcsh: name-index read failed: ' + oErr.message);
+      return;
+    }
+    const sEol = oDoc.eol === vscode.EndOfLine.CRLF ? '\r\n' : '\n';
+    oEd.edit((oB) => oB.insert(oLine.range.end, aLine.map(s => sEol + s).join('')));
+  }));
   // Open a McsHitp page BY CODE: prompt a Mcs-code prefilled with the current file's
   // code, resolve it to dir<Cat>/<code>.last.html (Hitp → dir<Cat>/dirHitp/…) and open
   // it in Mcsh-visual-manager (source + visual). Works from the visual editor and from a raw
@@ -137,6 +192,11 @@ function fActivate(context) {
       valueSelection: sCurCode ? [0, sCurCode.length] : undefined,
     });
     if (!sInput) return { sPath: '', nLine: 0, sId: '' };
+    return fResolveCode(sInput, sCur, sCurCode);
+  };
+  // Resolve 'code', 'code:<line>' or 'code#<id>' to { sPath, nLine, sId }. Shared by the
+  // prompt above and the double-click on a '!@' reference-line.
+  const fResolveCode = (sInput, sCur, sCurCode) => {
     // Split off a trailing `:<line>`, then a trailing `#<id>`, BEFORE stripping
     // `.last.html`, so `code:59`, `code.last.html:59`, `code#idX` and
     // `code.last.html#idX` all parse.

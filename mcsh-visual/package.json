@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.4.0",
+  "version": "0.5.1",
   "date": "2026-09-10",
   "publisher": "synagonism",
   "private": true,
