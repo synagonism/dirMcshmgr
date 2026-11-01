@@ -47,6 +47,161 @@ function fRefOfLine(sLineIn) {
   return aM ? aM[1] : null;
 }
 
+/**
+ * DOING: it finds the-name on a-generic of a-generic-tree: '* X:generic,' or '* ...X:generic,'.
+ *   Only the-head '* McshEngl.X:generic,' lists generics, so it returns null for it.
+ * OUTPUT: 'X:generic' or null
+ */
+function fGenericName(sLineIn) {
+  const aM = sLineIn.match(/^\s*(?:<br>)?\s*\*\s*(?:\.\.\.\s*)?(?!McshEngl\.)([^\s,!]+:generic)(?=[,!\s<]|$)/);
+  return aM ? aM[1] : null;
+}
+
+/**
+ * DOING: it finds the-place of an-exact name in the-English name-index
+ * OUTPUT: 'McshCor000011#idSysgntr' or ''
+ */
+function fNameRef(sRootIn, sNameIn) {
+  const aNu = fSearchName(sRootIn, fEsc(sNameIn), 'lagEngl').find(a => a[0] === sNameIn);
+  return aNu ? aNu[1].slice(aNu[1].lastIndexOf('/') + 1).replace('.last.html', '') : '';
+}
+
+/**
+ * DOING: it finds the-generics of a-generic-tree paragraph: the-lines after its first '==='.
+ *   A-labeled group ('=== label:') is NOT generics, so it stops there.
+ * INPUT: sTextIn: file-text, sIdIn: 'idSysgntr'
+ * OUTPUT: array of lines without indent and <br>, such as '* whole:generic,'
+ */
+function fGenericsOfTree(sTextIn, sIdIn) {
+  const
+    aLine = sTextIn.split(/\r?\n/),
+    sMark = 'id="' + sIdIn + '"',
+    aOut = [];
+  let n = aLine.findIndex(s => s.indexOf(sMark) >= 0);
+  if (n < 0) return aOut;
+  let bFound = false;
+  for (n++; n < aLine.length; n++) {
+    const aM = aLine[n].match(/^\s*<br>(.*?)\s*$/);
+    if (!aM) break;
+    if (!bFound) { bFound = aM[1] === '==='; continue; }
+    if (aM[1].startsWith('===') && aM[1] !== '===') break;
+    if (aM[1].startsWith('*') || aM[1] === '===') aOut.push(aM[1]); // not notes ('· ...')
+  }
+  while (aOut.length && aOut[aOut.length - 1] === '===') aOut.pop();
+  return aOut;
+}
+
+// the-lines of a-paragraph (html between <br>s), trimmed; null if no such id
+function fParaLines(sTextIn, sIdIn) {
+  const nId = sTextIn.indexOf('id="' + sIdIn + '"');
+  if (nId < 0) return null;
+  const nGt = sTextIn.indexOf('>', nId), nEnd = sTextIn.indexOf('</p>', nGt);
+  return sTextIn.slice(nGt + 1, nEnd < 0 ? undefined : nEnd).split(/<br\s*\/?>/i).map(s => s.trim());
+}
+
+// { sStem: path } of the-Mcsh pages under the-root
+function fPageMap(sRootIn) {
+  const oOut = {};
+  (function fWalk(sDir) {
+    for (const oE of fs.readdirSync(sDir, { withFileTypes: true })) {
+      if (oE.isDirectory()) { if (!/^(\.git|dirNamidx)$|\.files$/.test(oE.name)) fWalk(path.join(sDir, oE.name)); }
+      else if (/^Mcsh.*\.last\.html$/.test(oE.name)) oOut[oE.name.replace(/\.last\.html$/, '')] = path.join(sDir, oE.name);
+    }
+  })(sRootIn);
+  return oOut;
+}
+
+/**
+ * DOING: it computes the-generic-chain of a-'...entity:generic' line up to entity:
+ *   Node port of fGntrChainInsert of Mcsmgr/mMcsh2.js, lines to write in the-source.
+ * INPUT:
+ *  - sRootIn: worldview-root, sStemIn: current page,
+ *  - aLineIn: lines of the-current document, nLineIn: 0-based clicked line,
+ *  - fTextIn: path -> text of a-page (an-open document may hold unsaved text)
+ * OUTPUT: array of lines without indent and <br>; null if the-line is not in a-generic-tree
+ */
+function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
+  const sEntTop = 'entity:generic (the-most-generic)';
+  // the-paragraph and the-'===' above the-clicked line
+  let nSep = -1, nP = nLineIn;
+  for (; nP >= 0 && !/<p\s[^>]*id="/.test(aLineIn[nP]); nP--) {
+    if (nSep < 0 && /^\s*<br>===\s*$/.test(aLineIn[nP])) nSep = nP;
+  }
+  const aMP = nP >= 0 ? aLineIn[nP].match(/<p\s[^>]*id="([^"]+)"/) : null;
+  if (!aMP || !aMP[1].endsWith('gntr')) return null;
+
+  const
+    oPage = fPageMap(sRootIn),
+    fPageText = sStem => oPage[sStem] ? fTextIn(oPage[sStem]) : null,
+    fClean = s => s.replace(/^\*\s*/, '').replace(/,\s*$/, ''),
+    fIsEntity = s => /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(s),
+    oSeen = new Set([sStemIn + '#' + aMP[1]]),
+    aOut = ['* ==='];
+  const fAdd = s => aOut.push('* ' + s + ',');
+
+  // the-gntr-paragraph a-page#id points to: #id..gntr, #id..nam -> ..gntr, #section -> section+gntr,
+  // #idOverview -> the-root gntr (the-gntr whose concept has no ..nam paragraph)
+  function fGntrOfRef(sStem, sId) {
+    const sText = fPageText(sStem);
+    if (sText === null) return null;
+    const fHas = s => sText.indexOf('id="' + s + '"') >= 0;
+    let sG = '';
+    if (sId.endsWith('gntr') && fHas(sId)) sG = sId;
+    else if (sId.endsWith('nam') && fHas(sId.slice(0, -3) + 'gntr')) sG = sId.slice(0, -3) + 'gntr';
+    else if (fHas(sId + 'gntr')) sG = sId + 'gntr';
+    else if (sId === 'idOverview') {
+      for (const aM of sText.matchAll(/<p\s[^>]*id="([^"]+gntr)"/g)) {
+        if (!fHas(aM[1].slice(0, -4) + 'nam')) { sG = aM[1]; break; }
+      }
+    }
+    return sG ? { sStem, sId: sG, aLine: fParaLines(sText, sG) } : null;
+  }
+  // the-gntr-paragraph a-generic-line points to: <a href>, name!@Ref, X:generic, name
+  function fGntrOfLine(sLine, sStemBase) {
+    const sL = sLine.replace(/^\*\s*/, '');
+    let aM = sL.match(/href="([^"]+)"/);
+    if (aM) {
+      const aU = aM[1].replace(/&amp;/g, '&').split('#'), sFile = aU[0].slice(aU[0].lastIndexOf('/') + 1);
+      return fGntrOfRef(sFile ? sFile.replace(/\.last\.html$/, '') : sStemBase, aU[1] || 'idOverview');
+    }
+    aM = sL.match(/!@(Mcsh\w+)(?:#(\w+))?/);
+    if (aM) return fGntrOfRef(aM[1], aM[2] || 'idOverview');
+    const sName = sL.replace(/,.*$/, '').trim();
+    const sRef = sName ? fNameRef(sRootIn, sName) : '';
+    if (!sRef) return null;
+    const aR = sRef.split('#');
+    return fGntrOfRef(aR[0], aR[1] || 'idOverview');
+  }
+  // the-first generic line after '===' of a-gntr-paragraph
+  function fLevel1(aLine) {
+    const n = aLine.indexOf('===');
+    return n < 0 ? '' : (aLine.slice(n + 1).find(s => s.startsWith('*')) || '');
+  }
+
+  let sLine = '', sStemBase = sStemIn;
+  if (nSep >= 0) {
+    const aGroup = aLineIn.slice(nSep + 1, nLineIn).map(s => s.replace(/^\s*<br>/, '').trim());
+    sLine = aGroup.find(s => s.startsWith('*')) || '===';
+  }
+  if (sLine.startsWith('*') && !fIsEntity(sLine)) fAdd(fClean(sLine));
+  for (let n = 0; n < 30 && sLine.startsWith('*') && !fIsEntity(sLine); n++) {
+    if (!fClean(sLine)) { fAdd('?? (empty generic line in ' + sStemBase + ')'); break; }
+    const o = fGntrOfLine(sLine, sStemBase);
+    if (!o) { fAdd((n > 0 ? fClean(sLine) + ' ' : '') + '?? (no generic-tree found)'); break; }
+    if (oSeen.has(o.sStem + '#' + o.sId)) { fAdd('?? cycle at ' + o.sId); break; }
+    oSeen.add(o.sStem + '#' + o.sId);
+    if (n > 0) {
+      // the-name of the-reached gntr: its first line '* McshEngl.X:generic,'
+      const mN = (o.aLine.find(s => /McshEngl\.\S+:generic/.test(s)) || '').match(/McshEngl\.(\S+:generic)/);
+      fAdd((mN ? mN[1] : o.sId).replace(/,$/, ''));
+    }
+    sLine = fLevel1(o.aLine);
+    sStemBase = o.sStem;
+  }
+  if (fIsEntity(sLine) || sLine === '===') fAdd(sEntTop);
+  return aOut;
+}
+
 function fReadJson(sPathIn) {
   return JSON.parse(fs.readFileSync(sPathIn, 'utf8'));
 }
@@ -152,4 +307,4 @@ function fFormatLines(aoIn, sIndentIn) {
   return ['---'].concat(aBody).map(s => sIndentIn + '<br>' + s);
 }
 
-module.exports = { fTrigger, fRefOfLine, fFindRelated, fFormatLines };
+module.exports = { fTrigger, fRefOfLine, fGenericName, fNameRef, fGenericsOfTree, fGntrChain, fFindRelated, fFormatLines };

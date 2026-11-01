@@ -143,12 +143,14 @@ function fActivate(context) {
     if (sRef) {
       const sCur = oDoc.uri.fsPath;
       const { sPath, nLine } = fResolveCode(sRef, sCur, path.basename(sCur).replace(/\.last\.html$/i, ''));
-      if (sPath) fRevealSource(vscode.Uri.file(sPath), nLine);
+      // after the-mouse-up: a-held mouse would pull a-same-file selection back to the-click
+      if (sPath) setTimeout(() => fRevealSource(vscode.Uri.file(sPath), nLine), 300);
       return;
     }
     const oTrig = omRelInsert.fTrigger(oLine.text);
     if (!oTrig) return;
-    if (oLine.lineNumber + 1 < oDoc.lineCount && /^\s*<br>---/.test(oDoc.lineAt(oLine.lineNumber + 1).text)) {
+    const sGeneric = omRelInsert.fGenericName(oLine.text);
+    if (oLine.lineNumber + 1 < oDoc.lineCount && /^\s*<br>(---|\* ===)/.test(oDoc.lineAt(oLine.lineNumber + 1).text)) {
       vscode.window.setStatusBarMessage('Mcsh: findings are already under this line.', 4000);
       return;
     }
@@ -158,9 +160,35 @@ function fActivate(context) {
       if (sUp === sRoot) { vscode.window.showWarningMessage('Mcsh: no dirNamidx above this file.'); return; }
       sRoot = sUp;
     }
+    const sIndent = oLine.text.match(/^\s*/)[0];
+    // an-open document may hold unsaved text
+    const fPageText = (sPath) => {
+      const oOpen = vscode.workspace.textDocuments.find(d => d.uri.scheme === 'file' && d.uri.fsPath.toLowerCase() === sPath.toLowerCase());
+      return oOpen ? oOpen.getText() : fs.readFileSync(sPath, 'utf8');
+    };
     let aLine;
     try {
-      aLine = omRelInsert.fFormatLines(omRelInsert.fFindRelated(sRoot, oTrig), oLine.text.match(/^\s*/)[0]);
+      // '...entity:generic' of a-generic-tree: the-generic-chain up to entity
+      const aChain = /\*\s*\.\.\.entity:generic\b/.test(oLine.text)
+        ? omRelInsert.fGntrChain(sRoot, path.basename(oDoc.uri.fsPath).replace(/\.last\.html$/i, ''),
+            oDoc.getText().split(/\r?\n/), oLine.lineNumber, fPageText)
+        : null;
+      if (aChain) {
+        aLine = aChain.map(s => sIndent + '<br>' + s);
+      } else if (sGeneric) {
+        // '* X:generic,' is a-generic: insert the-generics of its generic-tree;
+        // only the-head 'McshEngl.X:generic' lists from the-name-index
+        const sTarget = omRelInsert.fNameRef(sRoot, sGeneric);
+        if (!sTarget) { vscode.window.showWarningMessage('Mcsh: name “' + sGeneric + '” is not in the name-index.'); return; }
+        const [sCode, sId] = sTarget.split('#');
+        const sCur = oDoc.uri.fsPath;
+        const { sPath } = fResolveCode(sCode, sCur, path.basename(sCur).replace(/\.last\.html$/i, ''));
+        if (!sPath) return;
+        const aBody = omRelInsert.fGenericsOfTree(fPageText(sPath), sId);
+        aLine = ['---'].concat(aBody.length ? aBody : ['* ?? (no finding)']).map(s => sIndent + '<br>' + s);
+      } else {
+        aLine = omRelInsert.fFormatLines(omRelInsert.fFindRelated(sRoot, oTrig), sIndent);
+      }
     } catch (oErr) {
       vscode.window.showWarningMessage('Mcsh: name-index read failed: ' + oErr.message);
       return;
