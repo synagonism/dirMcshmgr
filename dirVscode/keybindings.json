@@ -446,11 +446,16 @@
 },
 
 // HITP FILE
-// p k m:: hitP (K)create new McsHitp file
+// p k n:: hitP (K)create New McsHitp file
 {
-  "key": "ctrl+alt+p k m",
+  "key": "ctrl+alt+p k n",
   "command": "workbench.action.tasks.runTask",
   "args": "Create new McsHitp file"
+},
+// p k m:: hitP (K)Make current-sect-concept McshFile-concept
+{
+  "key": "ctrl+alt+p k m",
+  "command": "mcshv.makeSectFile"
 },
 
 // HITP LINK
@@ -1202,7 +1207,7 @@
       "cursorUp",
       "cursorLineEnd",
       "editor.action.insertLineAfter",
-      { "command": "type", "args": {"text": "<br>[<a class=\"clsPreview\" href=\"../dirHmn/McshHmn000003.last.html#idOverview\">humnSngu</a>."}
+      { "command": "type", "args": {"text": "<br>[HumnSngu."}
       },
       {"command": "editor.action.insertSnippet",
         "args": { "snippet": "{${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}]" }
@@ -1387,7 +1392,7 @@
       "editor.action.insertLineAfter",
       "cursorLineStartSelect",
       { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain:generic,\n    <br>===\n    <br>* ...entity:generic,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>* McshEngl.mainmain_Sptr,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
+        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain:generic,\n    <br>===\n    <br>* ...entity:generic,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
       // id: of previous section, into every ididid
       { "command": "editor.actions.findWithArgs",
         "args": {
@@ -1545,14 +1550,14 @@
 {
   "key": "ctrl+alt+p x u",
   "command": "workbench.action.tasks.runTask",
-  "args": "Index names of current-file and upload",
+  "args": "Index names of current-FILE and upload",
   "when": "resourceFilename =~ /\\.last\\.html$/"
 },
 // p x o:: hitP indeX names Only of current-file (no upload)
 {
   "key": "ctrl+alt+p x o",
   "command": "workbench.action.tasks.runTask",
-  "args": "Index names ONLY of current-file",
+  "args": "Index names ONLY of current-FILE",
   "when": "resourceFilename =~ /\\.last\\.html$/"
 },
 

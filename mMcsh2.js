@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-1-0.2026-11-01: dblclick on * X:generic inserts the-generics of its generic-tree',
     'mMcsh2.js.27-0-0.2026-10-31: generic-tree names X:generic (was X_Gntr), dblclick on generic expands left, only the-head lists generics',
     'mMcsh2.js.26-1-0.2026-10-23: dblclick ...entity_Gntr inserts generic-chain',
     'mMcsh2.js.26-0-0.2026-10-18: !@ concept-reference preview + go-to',
@@ -1588,12 +1589,27 @@ let fContainersInsert = function () {
       if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
     }
     if (!sMmn) return false
-    // '* X:generic,' of a-generic-tree is a-generic: search it; only the-head 'McshEngl.X:generic' lists generics
-    if (sWord === 'generic' && !/\*\s*McshEngl\./.test(sTxt)) return false
-    oSel.removeAllRanges()
+    const
+      // '* X:generic,' is a-generic: insert the-generics of ITS generic-tree;
+      // only the-head 'McshEngl.X:generic' lists from the-name-index
+      bGeneric = sWord === 'generic' && !/\*\s*McshEngl\./.test(sTxt),
+      oNext = oNode.nextElementSibling
     // toggle off: a-findings-list already sits right under THIS trigger-line
-    const oNext = oNode.nextElementSibling
-    if (oNext && oNext.classList.contains('clsSptrList')) { oNext.remove(); return true }
+    if (oNext && oNext.classList.contains('clsSptrList')) { oSel.removeAllRanges(); oNext.remove(); return true }
+    let aGeneric = []
+    if (bGeneric) {
+      const sUrlName = await fNameUrl(sMmn.replace(/^\.\.\./, '') + ':generic')
+      const oGntr = sUrlName ? await fGntrOfUrl(sUrlName) : null
+      if (!oGntr) return false // unknown name: the-caller searches it
+      const aL = fLines(oGntr.oGntr).map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim())
+      // the-lines after the-first '===', up to a-labeled group ('=== label:' is NOT generics)
+      for (let n = aL.indexOf('===') + 1; n > 0 && n < aL.length; n++) {
+        if (aL[n].startsWith('===') && aL[n] !== '===') break
+        if (aL[n].startsWith('*') || aL[n] === '===') aGeneric.push(aL[n])
+      }
+      while (aGeneric[aGeneric.length - 1] === '===') aGeneric.pop()
+    }
+    oSel.removeAllRanges()
 
     // the-direct-related concepts from the-English name-index: names
     // '<Mmn><mark><child>' for the-given relation-marker (sMarkIn: '.' specific,
@@ -1641,7 +1657,7 @@ let fContainersInsert = function () {
       return aoOut
     }
 
-    const aoSpec = await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
+    const aoSpec = bGeneric ? [] : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
     // build the-findings-list and insert it right under THIS trigger-line, below a-'---'
     const oSpan = document.createElement('span')
@@ -1650,7 +1666,12 @@ let fContainersInsert = function () {
     oSpan.style.opacity = '0.8'
     oSpan.appendChild(document.createElement('br'))
     oSpan.insertAdjacentHTML('beforeend', '---') // separator under the-trigger
-    if (aoSpec.length === 0) {
+    if (aGeneric.length > 0) {
+      aGeneric.forEach(function (sLine) {
+        oSpan.appendChild(document.createElement('br'))
+        oSpan.insertAdjacentHTML('beforeend', sLine)
+      })
+    } else if (aoSpec.length === 0) {
       oSpan.appendChild(document.createElement('br'))
       oSpan.insertAdjacentHTML('beforeend', '* ?? (no finding)')
     } else {

@@ -69,7 +69,7 @@ node dirValid/reportMcsh.mjs C:/dirNodews/dirMcsh --code Hvre07,Hvrw08 [--file M
   issues first. Read the header: it gives files / files-with-issues / issues.
 - `--line` adds the detail per issue; use it when you are about to fix a file.
 - For a full multi-rule HTML report use
-  `node dirValid/validator.js C:/dirNodews/dirMcsh [--file X.last.html]`
+  `node dirValid/validatorMcsh.js C:/dirNodews/dirMcsh [dirCor/X.last.html]`
   → `dirValid/validator-report.html`. Do not pass `--ai` unless the user asks:
   it calls the DeepSeek API and costs money.
 

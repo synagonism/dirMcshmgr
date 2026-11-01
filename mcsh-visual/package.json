@@ -63,6 +63,11 @@
         "command": "mcshv.makeSectFile",
         "title": "Make current-sect-concept McshFile-concept",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.validCurrent",
+        "title": "Validate current file and focus the report in the browser",
+        "category": "Mcs"
       }
     ],
     "menus": {

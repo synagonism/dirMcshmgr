@@ -78,7 +78,8 @@ export function fReporter() {
     console.log('💡 HTML report written to dirMcshmgr/dirValid/validator-report.html\n');
   }
 
-  function fSaveHtml(sPathOut) {
+  // sLogIn: the-run's terminal lines (the-rules used), shown after the-date
+  function fSaveHtml(sPathOut, sLogIn = '') {
     const sRows = aoIssue.map(oIssue => {
       const sLevel = oIssue.sLevel;
       const sClassRow = sLevel === 'ERROR' ? 'err' : sLevel === 'WARN' ? 'wrn' : 'inf';
@@ -110,11 +111,13 @@ export function fReporter() {
   tr.inf td:first-child { color: #069; }
   td:last-child { max-width: 500px; }
   input { padding: 6px; width: 300px; margin-bottom: 1rem; }
+  pre.log { font-size: 0.85rem; line-height: 1.35; margin: 1rem 0; }
 </style>
 </head>
 <body>
 <h1>Hitp|Mcsh Consistency Report</h1>
 <p>Generated: ${new Date().toLocaleString()}</p>
+${sLogIn ? `<pre class="log">${fEsc(sLogIn.trim())}</pre>` : ''}
 <div class="summary">
   <span style="color:#c00">❌ ${fError().length} errors</span>
   <span style="color:#c60">⚠️ ${fWarn().length} warnings</span>
@@ -135,6 +138,12 @@ function filterRows(q) {
   document.querySelectorAll('#tbody tr').forEach(row => {
     row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
+}
+// one browser-tab for all runs: a-new report tab (it has the-focus) closes the-older ones
+if (window.BroadcastChannel) {
+  const oChannel = new BroadcastChannel('validator-report');
+  oChannel.onmessage = () => window.close();
+  oChannel.postMessage('new');
 }
 </script>
 </body>

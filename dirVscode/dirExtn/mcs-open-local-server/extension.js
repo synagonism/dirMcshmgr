@@ -11,7 +11,7 @@ const cp = require('child_process')
  *   mcs.openInLocalServer   Map the active file to its http://localhost/… URL
  *                           and show it in the integrated Simple Browser.
  *
- *   mcs.validateAndReport   Run dirMcshmgr/dirValid/validator on the active
+ *   mcs.validateAndReport   Run dirMcshmgr/dirValid/validatorMcsh on the active
  *                           *.last.html, then — when it reports errors or
  *                           warnings — open validator-report.html in the
  *                           integrated Simple Browser (served by server.mjs).
@@ -53,7 +53,7 @@ function fFindUp(sFromDir, ...aSeg) {
   }
   return null
 }
-const fFindValidator = sFromDir => fFindUp(sFromDir, 'dirMcshmgr', 'dirValid', 'validator.js')
+const fFindValidator = sFromDir => fFindUp(sFromDir, 'dirMcshmgr', 'dirValid', 'validatorMcsh.js')
 const fFindServer = sFromDir => fFindUp(sFromDir, 'dirMcshmgr', 'server.mjs')
 
 // Resolve true when the origin answers (any HTTP response), false otherwise.
@@ -171,7 +171,7 @@ function activate(context) {
     const sBase = path.basename(sFile)
     const sValidator = fFindValidator(sDirFile)
     if (!sValidator) {
-      vscode.window.showErrorMessage('Mcs: could not locate dirMcshmgr/dirValid/validator.js above the current file.')
+      vscode.window.showErrorMessage('Mcs: could not locate dirMcshmgr/dirValid/validatorMcsh.js above the current file.')
       return
     }
     const sReport = path.join(path.dirname(sValidator), 'validator-report.html')

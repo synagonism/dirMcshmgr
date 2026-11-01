@@ -17,6 +17,7 @@
 
 const vscode = require('vscode');
 const fs = require('fs');
+const http = require('http');
 const os = require('os');
 const path = require('path');
 const omModel = require('./src/mModel');
@@ -281,6 +282,11 @@ function fActivate(context) {
       await fRevealSource(vscode.Uri.file(sPath), nLine);   // nLine 0 → opens at top
     })
   );
+  // Ctrl+Alt+P V V from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
+  context.subscriptions.push(
+    vscode.commands.registerCommand('mcshv.validCurrent', () =>
+      fRunValidCurrent((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000)))
+  );
   // Make the sect-concept of the address bar a McshFile-concept: only the visual editor
   // has an address bar, so without one we report.
   context.subscriptions.push(
@@ -475,26 +481,8 @@ function fCreateProvider(context) {
       return bOk;
     };
 
-    // Valid → Validate-current: run the task 'validate current-FILE', then open its report
-    // in the default browser (openExternal, not VS Code's Simple Browser). The validator
-    // writes the report on every run, findings or not, next to itself.
-    const fValidCurrent = async () => {
-      const sLabel = 'validate current-FILE';
-      const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
-      if (!sRoot) return fStatus('no current file to validate');
-      const sReport = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'validator-report.html');
-      const nStart = Date.now();
-      const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
-        if (oEvt.execution.task.name !== sLabel) return;
-        oEnd.dispose();
-        // an old report must not pass as this run's: mtime has at least 1s resolution here
-        let nMtime = 0;
-        try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
-        if (nMtime < nStart - 1000) return fStatus('validator wrote no report, see the terminal');
-        vscode.env.openExternal(vscode.Uri.file(sReport));
-      });
-      await vscode.commands.executeCommand('workbench.action.tasks.runTask', sLabel);
-    };
+    // Valid → Validate-current (and Ctrl+Alt+P V V from the iframe)
+    const fValidCurrent = () => fRunValidCurrent(fStatus);
 
     // Valid → Name01-duplicate-line: remove the duplicated name-lines of each name:: para
     // of the current file, then save: format + write + reload via onDidSave.
@@ -634,6 +622,7 @@ function fCreateProvider(context) {
           case 'indexOnly': fIndexOnly(); break;                       // Ctrl+Alt+P X O from the iframe
           case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K N from the iframe
           case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K M from the iframe
+          case 'validCurrent': await fValidCurrent(); break;           // Ctrl+Alt+P V V from the iframe
           case 'maximizeGroup': vscode.commands.executeCommand('workbench.action.toggleMaximizeEditorGroup'); break; // Ctrl+K Ctrl+M
           case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P from the iframe
           case 'nav': await fOnNavigate(msg.href); break;
@@ -973,7 +962,7 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">Valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-current</div>
+          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-current<span class="clsKbd">Ctrl+Alt+P V V</span></div>
           <div class="clsItem" title="name:: remove duplicated lines" data-cmd="cmdValidName01">Name01-duplicate-line</div>
         </div>
       </div>
@@ -1174,6 +1163,45 @@ function fMakeNonce() {
   const sChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   for (let i = 0; i < 24; i++) s += sChars.charAt(Math.floor(Math.random() * sChars.length));
   return s;
+}
+
+/** OUTPUT: true when the-local server answers. */
+function fIsServerUp() {
+  return new Promise((fResolve) => {
+    const oReq = http.get(fOrigin() + '/', (oRes) => { oRes.resume(); fResolve(true); });
+    oReq.setTimeout(1000, () => oReq.destroy());
+    oReq.on('error', () => fResolve(false));
+  });
+}
+
+/**
+ * DOING: Validate-current: it saves the-current file, runs the-task 'validate current-FILE',
+ *   then opens the-report in the-default browser, which gets the-focus. Every run opens
+ *   a-new tab, the-page closes the-older report tabs (see reporter.js), so ONE tab stays.
+ *   The-validator writes the-report on every run, findings or not, next to itself.
+ * INPUT: fStatusIn: it shows a-message.
+ */
+async function fRunValidCurrent(fStatusIn) {
+  const sLabel = 'validate current-FILE';
+  const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
+  if (!sRoot) return fStatusIn('no current file to validate');
+  const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
+  const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath === sFile);
+  if (oDoc) await oDoc.save();
+  const sReport = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'validator-report.html');
+  const nStart = Date.now();
+  const oEnd = vscode.tasks.onDidEndTaskProcess(async (oEvt) => {
+    if (oEvt.execution.task.name !== sLabel) return;
+    oEnd.dispose();
+    // an old report must not pass as this run's: mtime has at least 1s resolution here
+    let nMtime = 0;
+    try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
+    if (nMtime < nStart - 1000) return fStatusIn('validator wrote no report, see the terminal');
+    // file:// without the-server: it opens, but older tabs stay
+    const sUrl = await fIsServerUp() ? fDisplayUrlForPath(sReport) : '';
+    vscode.env.openExternal(sUrl ? vscode.Uri.parse(sUrl + '?_r=' + Date.now()) : vscode.Uri.file(sReport));
+  });
+  await vscode.commands.executeCommand('workbench.action.tasks.runTask', sLabel);
 }
 
 function fDeactivate() {}

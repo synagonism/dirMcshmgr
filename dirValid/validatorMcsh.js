@@ -27,6 +27,7 @@ const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
+    'validatorMcsh.js.0-5-0.2026-11-01: the-report shows the-rules used, as the-terminal',
     'validator.js.0-4-0.2026-09-05: merge Hitp+Mcsh',
     'validator.js.0-3-0.2026-09-04: naming convention',
     'validator.js.0-2-0.2026-04-27: working structural',
@@ -55,6 +56,14 @@ async function fMain() {
   console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   console.log('  Mcsh/Hitp Consistency Checker');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+
+  // ── what the-run prints, also goes to the-HTML report: the-rules used ─────
+  let sLog = '';
+  const fWriteOut = process.stdout.write;
+  process.stdout.write = function (sChunk, ...aRest) {
+    sLog += String(sChunk);
+    return fWriteOut.call(process.stdout, sChunk, ...aRest);
+  };
 
   // ── parse every file as generic Hitp ──────────────────────────────────────
   let aoFileHitp;
@@ -88,6 +97,7 @@ async function fMain() {
     oReporter.fAddAll(await fRunChecksAi(aoFileMcsh));
   }
 
+  process.stdout.write = fWriteOut;   // the-results are in the-report's table
   oReporter.fPrint();
 
   // ── save the HTML report next to this script (dirMcshmgr/dirValid), ────────
@@ -96,7 +106,7 @@ async function fMain() {
   //    (command "mcs.validateAndReport"), which runs this validator and then
   //    serves + shows the report when errors/warnings are found.
   const sPathReport = path.join(sDirScript, 'validator-report.html');
-  oReporter.fSaveHtml(sPathReport);
+  oReporter.fSaveHtml(sPathReport, sLog);
 }
 
 fMain().catch(oErr => {

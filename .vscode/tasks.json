@@ -131,7 +131,7 @@
       "type": "shell",
       "command": "node",
       "args": [
-        "../dirMcshmgr/dirValid/validator",
+        "../dirMcshmgr/dirValid/validatorMcsh",
         "${command:mcshv.currentFileDirname}",
         "--file",
         "${command:mcshv.currentFileBasename}"
@@ -151,7 +151,7 @@
       "type": "shell",
       "command": "node",
       "args": [
-        "../dirMcshmgr/dirValid/validator",
+        "../dirMcshmgr/dirValid/validatorMcsh",
         "${command:mcshv.currentFileDirname}"
       ],
       "options": {
