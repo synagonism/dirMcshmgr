@@ -373,8 +373,10 @@ function fCreateProvider(context) {
       if (!sIdNew) return;
       const sAttrbase = await fAsk('Prefix for attribute main-names, e.g. Auto', sMain);
       if (!sAttrbase) return;
-      const sPassword = await fAsk('SFTP password (for upload to synagonism.net)', '', true);
-      if (!sPassword) return;
+      // the-upload authenticates with the-ssh-key (<home>/.ssh/mcsh_upload).
+      // Enter alone ⇒ no password, mSftp.mjs uses the-key; Esc ⇒ cancel.
+      const sPassword = await fAsk('SFTP password — Enter alone to use the ssh-key', '', true);
+      if (sPassword === undefined) return;
 
       // the worldview root, and the new file: its number as mMcshNew.mjs computes it
       const sRoot = path.dirname(path.dirname(sFs));
@@ -388,7 +390,7 @@ function fCreateProvider(context) {
 
       const oTask = new vscode.Task(
         { type: 'shell', task: 'Make-sect-file' }, vscode.TaskScope.Workspace, 'Make-sect-file', 'mcshv',
-        new vscode.ShellExecution('node', ['../dirMcshmgr/mMcshNew.mjs', sDir, sInformal, sMain, sIdNew, sAttrbase, sDir + '/' + sBase, sId], { cwd: sRoot, env: { MCSH_SFTP_PASSWORD: sPassword } })
+        new vscode.ShellExecution('node', ['../dirMcshmgr/mMcshNew.mjs', sDir, sInformal, sMain, sIdNew, sAttrbase, sDir + '/' + sBase, sId], { cwd: sRoot, env: sPassword ? { MCSH_SFTP_PASSWORD: sPassword } : {} })
       );
       const oExec = await vscode.tasks.executeTask(oTask);
       const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {

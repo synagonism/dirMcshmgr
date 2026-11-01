@@ -34,7 +34,7 @@
 import moFs from 'fs'
 import moPath from 'path'
 import {fNamidx} from './mNamidx.mjs'
-import {oSftp, fSftp, fAskHidden} from './mSftp.mjs'
+import {fSftp} from './mSftp.mjs'
 
 const
   // contains the-versions of mNamidxFile.mjs
@@ -51,12 +51,7 @@ if (process.argv.length !== 3) {
 }
 
 let
-  sFilename = process.argv[2],
-  pwd;
-
-if (!pwd) {
-  pwd = await fAskHidden('Enter password: ');
-}
+  sFilename = process.argv[2];
 
 // namidx-files not accept '\'
 sFilename = sFilename.replace(/\\/g, '/')
@@ -69,6 +64,5 @@ if (!sFilename.endsWith('.last.html')) {
 // so the same tool works in any worldview folder (e.g. dirMcsh, dirMcs..., dirHitp...)
 sFilename = moPath.relative(process.cwd(), sFilename).replace(/\\/g, '/')
 
-oSftp.password = pwd
-
+// fSftp authenticates with the-ssh-key, or asks the-password when there is none
 fNamidx(sFilename, fSftp)

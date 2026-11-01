@@ -177,10 +177,7 @@
         "${input:sAttrbase}"
       ],
       "options": {
-        "cwd": "${command:mcshv.currentWorldview}",
-        "env": {
-          "MCSH_SFTP_PASSWORD": "${input:sftpPassword}"
-        }
+        "cwd": "${command:mcshv.currentWorldview}"
       },
       "presentation": {
         "reveal": "always",
@@ -229,12 +226,6 @@
       "id": "sAttrbase",
       "type": "promptString",
       "description": "Prefix for attribute main-names, e.g. Auto"
-    },
-    {
-      "id": "sftpPassword",
-      "type": "promptString",
-      "description": "SFTP password (for upload to synagonism.net)",
-      "password": true
     }
   ]
 }

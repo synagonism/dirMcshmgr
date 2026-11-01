@@ -45,12 +45,13 @@
 import moFs from 'fs'
 import * as moUtil from './mUtil.mjs'
 import {fNamidx} from './mNamidx.mjs'
-import {fSftp, fAskHidden} from './mSftp.mjs'
+import {fSftp} from './mSftp.mjs'
 import {fPlanSectMove, fReadRawOther} from './mMcshSectMove.mjs'
 
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-14-0.2026-11-01: SFTP ssh-key, password only as fallback',
     'mMcshNew.mjs.1-12-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'mMcshNew.mjs.1-13-0.2026-10-30: SFTP password from env MCSH_SFTP_PASSWORD, not argv',
     'mMcshNew.mjs.1-12-0.2026-10-30: sAttrbase, main-names of infrsc|doing|evolg, always counter',
@@ -433,6 +434,5 @@ if (oMove) aSftp.push(...Object.keys(oMove.oRawOther))
 moUtil.fWriteJsonArray('../dirMcsh/dirManager/sftp.json', aSftp)
 if (!bUpload) process.exit(0)
 //upload files (env MCSH_SFTP_PASSWORD from the VS Code task; else prompt when run alone)
-let sSftpPwd = process.env.MCSH_SFTP_PASSWORD
-if (!sSftpPwd) sSftpPwd = await fAskHidden('Enter password: ')
-fSftp(sSftpPwd)
+// no password given ⇒ fSftp authenticates with the-ssh-key
+fSftp(process.env.MCSH_SFTP_PASSWORD)

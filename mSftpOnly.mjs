@@ -2,7 +2,7 @@
  * DOING: sftp the-files in dirManager/sftp.json
  * INPUT:
  * OUTPUT:
- * RUN(dirMcsh): node ../dirMcshmgr/mSftpOnly.mjs   (prompts for password)
+ * RUN(dirMcsh): node ../dirMcshmgr/mSftpOnly.mjs   (ssh-key: no password)
  *
  * modified: {2026-09-25} import its code
  * modified: {2026-09-09} single persistent connection + sequential upload with retry (fixes ECONNRESET)
@@ -14,7 +14,7 @@
  */
 
 import moFs from 'fs'
-import {fAskHidden, fSftp, oSftp} from './mSftp.mjs'
+import {fSftp} from './mSftp.mjs'
 
-oSftp.password = await fAskHidden('Enter password: ')
+// fSftp authenticates with the-ssh-key, or asks the-password when there is none
 fSftp()

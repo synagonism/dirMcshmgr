@@ -28,7 +28,7 @@
  * DOING: watch changes on files ending .last.html
  * INPUT:
  * OUTPUT:
- * RUN from worldview: node ../dirMcshmgr/mWatch.mjs   (prompts for password)
+ * RUN from worldview: node ../dirMcshmgr/mWatch.mjs   (ssh-key: no password)
  *
  */
 
@@ -36,12 +36,13 @@ import moFs from 'fs'
 import moCrypto from 'crypto'
 import moPath from 'path'
 import {fNamidx} from './mNamidx.mjs'
-import {fAskHidden, oSftp, fSftp} from './mSftp.mjs'
+import {fAuthSftp, fSftp} from './mSftp.mjs'
 import {fWriteJsonObject} from './mUtil.mjs'
 
 const
   // contains the-versions of mHitp.js 
   aVersion = [
+    'mWatch.mjs.0-7-0.2026-11-01: ssh-key, no password-prompt',
     'mWatch.mjs.0-6-0.2026-09-25: prompt for password',
     'mWatch.mjs.0-5-0.2026-09-13: dirManager/oHash',
     'mWatch.mjs.0-4-0.2021-12-14: save ordered oHash',
@@ -56,7 +57,8 @@ let
   sCwd = process.cwd() + moPath.sep
 
 sCwd = sCwd.replace(/\\/g, '/')
-oSftp.password = await fAskHidden('Enter password: ')
+// authenticate ONCE, at start-up: the-watcher must not stop to ask on a-save
+await fAuthSftp()
 
 moFs.watch(sCwd, {recursive: true}, (eventType, sFilename) => {
   if (sFilename && eventType === 'change' && sFilename.endsWith('.last.html')) {
