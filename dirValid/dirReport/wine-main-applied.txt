@@ -1,0 +1,123 @@
+WINE MMN APPLIED — 2026-11-02
+paragraphs: 23 | skipped: 0
+
+=== SKIPPED (0)
+
+
+=== McshHlth000013:4100  Mmn wineLaw_division
+  4101  <br>* McshEngl.food.153_wine.law_division,  ->  <br>* McshEngl.food.153_wine.law_division!⇒wineLaw_division,
+  4102  <br>* McshEngl.food.wine.law_division_153,  ->  <br>* McshEngl.food.wine.law_division_153!⇒wineLaw_division,
+  4103  <br>* McshEngl.drinkWine.law_division_153,  ->  <br>* McshEngl.drinkWine.law_division_153!⇒wineLaw_division,
+  ADD 4101  <br>* McshEngl.wineLaw_division,
+=== McshHlth000013:4118  Mmn wineDesignation_of_origin
+  4119  <br>* McshEngl.food.wine.designation_of_origin,  ->  <br>* McshEngl.food.wine.designation_of_origin!⇒wineDesignation_of_origin,
+  4120  <br>* McshEngl.drinkWine.designation_of_origin,  ->  <br>* McshEngl.drinkWine.designation_of_origin!⇒wineDesignation_of_origin,
+  ADD 4119  <br>* McshEngl.wineDesignation_of_origin,
+=== McshHlth000013:4136  Mmn wineTable
+  4137  <br>* McshEngl.food.162_wine.table,  ->  <br>* McshEngl.food.162_wine.table!⇒wineTable,
+  4138  <br>* McshEngl.food.wine.table_162,  ->  <br>* McshEngl.food.wine.table_162!⇒wineTable,
+  4139  <br>* McshEngl.drinkWine.table_162,  ->  <br>* McshEngl.drinkWine.table_162!⇒wineTable,
+  ADD 4137  <br>* McshEngl.wineTable,
+=== McshHlth000013:4165  Mmn wineTraditional_name
+  4166  <br>* McshEngl.food.164_wine.traditional_name,  ->  <br>* McshEngl.food.164_wine.traditional_name!⇒wineTraditional_name,
+  4167  <br>* McshEngl.food.wine.traditional_name_164,  ->  <br>* McshEngl.food.wine.traditional_name_164!⇒wineTraditional_name,
+  4168  <br>* McshEngl.drinkWine.traditional_name_164,  ->  <br>* McshEngl.drinkWine.traditional_name_164!⇒wineTraditional_name,
+  ADD 4166  <br>* McshEngl.wineTraditional_name,
+=== McshHlth000013:4180  Mmn wineBrand
+  4181  <br>* McshEngl.food.165_wine.brand,  ->  <br>* McshEngl.food.165_wine.brand!⇒wineBrand,
+  4182  <br>* McshEngl.food.wine.brand_165,  ->  <br>* McshEngl.food.wine.brand_165!⇒wineBrand,
+  4183  <br>* McshEngl.drinkWine.brand_165,  ->  <br>* McshEngl.drinkWine.brand_165!⇒wineBrand,
+  ADD 4181  <br>* McshEngl.wineBrand,
+=== McshHlth000013:4197  Mmn wineColor_division
+  4198  <br>* McshEngl.food.154_wine.color_division,  ->  <br>* McshEngl.food.154_wine.color_division!⇒wineColor_division,
+  4199  <br>* McshEngl.food.wine.color_division_154,  ->  <br>* McshEngl.food.wine.color_division_154!⇒wineColor_division,
+  4200  <br>* McshEngl.wine.color_division_154,  ->  <br>* McshEngl.wine.color_division_154!⇒wineColor_division,
+  ADD 4198  <br>* McshEngl.wineColor_division,
+=== McshHlth000013:4213  Mmn wineWhite
+  4214  <br>* McshEngl.food.166_wine.white,  ->  <br>* McshEngl.food.166_wine.white!⇒wineWhite,
+  4215  <br>* McshEngl.food.wine.white_166,  ->  <br>* McshEngl.food.wine.white_166!⇒wineWhite,
+  4216  <br>* McshEngl.wine.white_166,  ->  <br>* McshEngl.wine.white_166!⇒wineWhite,
+  ADD 4214  <br>* McshEngl.wineWhite,
+=== McshHlth000013:4229  Mmn wineRosé
+  4230  <br>* McshEngl.food.167-wine.rosé,  ->  <br>* McshEngl.food.167-wine.rosé!⇒wineRosé,
+  4231  <br>* McshEngl.food.wine.rosé-167,  ->  <br>* McshEngl.food.wine.rosé-167!⇒wineRosé,
+  4232  <br>* McshEngl.wine.rosé-167,  ->  <br>* McshEngl.wine.rosé-167!⇒wineRosé,
+  ADD 4230  <br>* McshEngl.wineRosé,
+=== McshHlth000013:4245  Mmn wineRed
+  4246  <br>* McshEngl.food.168_wine.red,  ->  <br>* McshEngl.food.168_wine.red!⇒wineRed,
+  4247  <br>* McshEngl.food.wine.red_168,  ->  <br>* McshEngl.food.wine.red_168!⇒wineRed,
+  4248  <br>* McshEngl.wine.red_168,  ->  <br>* McshEngl.wine.red_168!⇒wineRed,
+  ADD 4246  <br>* McshEngl.wineRed,
+=== McshHlth000013:4261  Mmn wineSweetness
+  4262  <br>* McshEngl.food.155_wine.sweetness,  ->  <br>* McshEngl.food.155_wine.sweetness!⇒wineSweetness,
+  4263  <br>* McshEngl.food.wine.sweetness_155,  ->  <br>* McshEngl.food.wine.sweetness_155!⇒wineSweetness,
+  4264  <br>* McshEngl.wine.sweetness_155,  ->  <br>* McshEngl.wine.sweetness_155!⇒wineSweetness,
+  ADD 4262  <br>* McshEngl.wineSweetness,
+=== McshHlth000013:4275  Mmn wineDry
+  4276  <br>* McshEngl.food.169_wine.dry,  ->  <br>* McshEngl.food.169_wine.dry!⇒wineDry,
+  4277  <br>* McshEngl.food.wine.dry_169,  ->  <br>* McshEngl.food.wine.dry_169!⇒wineDry,
+  4278  <br>* McshEngl.wine.dry_169,  ->  <br>* McshEngl.wine.dry_169!⇒wineDry,
+  ADD 4276  <br>* McshEngl.wineDry,
+=== McshHlth000013:4290  Mmn wineSemi_dry
+  4291  <br>* McshEngl.food.170_wine.semi_dry,  ->  <br>* McshEngl.food.170_wine.semi_dry!⇒wineSemi_dry,
+  4292  <br>* McshEngl.food.wine.semi_dry_170,  ->  <br>* McshEngl.food.wine.semi_dry_170!⇒wineSemi_dry,
+  4293  <br>* McshEngl.wine.semi_dry_170,  ->  <br>* McshEngl.wine.semi_dry_170!⇒wineSemi_dry,
+  ADD 4291  <br>* McshEngl.wineSemi_dry,
+=== McshHlth000013:4305  Mmn wineSemi_sweet
+  4306  <br>* McshEngl.food.171_wine.semi_sweet,  ->  <br>* McshEngl.food.171_wine.semi_sweet!⇒wineSemi_sweet,
+  4307  <br>* McshEngl.food.wine.semi_sweet_171,  ->  <br>* McshEngl.food.wine.semi_sweet_171!⇒wineSemi_sweet,
+  4308  <br>* McshEngl.wine.semi_sweet_171,  ->  <br>* McshEngl.wine.semi_sweet_171!⇒wineSemi_sweet,
+  ADD 4306  <br>* McshEngl.wineSemi_sweet,
+=== McshHlth000013:4320  Mmn wineSweet
+  4321  <br>* McshEngl.food.172_wine.sweet,  ->  <br>* McshEngl.food.172_wine.sweet!⇒wineSweet,
+  4322  <br>* McshEngl.food.wine.sweet_172,  ->  <br>* McshEngl.food.wine.sweet_172!⇒wineSweet,
+  4323  <br>* McshEngl.wine.sweet_172,  ->  <br>* McshEngl.wine.sweet_172!⇒wineSweet,
+  ADD 4321  <br>* McshEngl.wineSweet,
+=== McshHlth000013:4336  Mmn wineCorbon_dioxide_division
+  4337  <br>* McshEngl.food.078_wine.corbon_dioxide_division,  ->  <br>* McshEngl.food.078_wine.corbon_dioxide_division!⇒wineCorbon_dioxide_division,
+  4338  <br>* McshEngl.food.wine.corbon_dioxide_division_078,  ->  <br>* McshEngl.food.wine.corbon_dioxide_division_078!⇒wineCorbon_dioxide_division,
+  4339  <br>* McshEngl.wine.corbon_dioxide_division_078,  ->  <br>* McshEngl.wine.corbon_dioxide_division_078!⇒wineCorbon_dioxide_division,
+  ADD 4337  <br>* McshEngl.wineCorbon_dioxide_division,
+=== McshHlth000013:4350  Mmn wineSparklingNo
+  4351  <br>* McshEngl.food.173_wine.sparklingNo,  ->  <br>* McshEngl.food.173_wine.sparklingNo!⇒wineSparklingNo,
+  4352  <br>* McshEngl.food.wine.sparklingNo_173,  ->  <br>* McshEngl.food.wine.sparklingNo_173!⇒wineSparklingNo,
+  4353  <br>* McshEngl.wine.sparklingNo_173,  ->  <br>* McshEngl.wine.sparklingNo_173!⇒wineSparklingNo,
+  ADD 4351  <br>* McshEngl.wineSparklingNo,
+=== McshHlth000013:4365  Mmn wineSemi_sparkling
+  4366  <br>* McshEngl.food.174_wine.semi_sparkling,  ->  <br>* McshEngl.food.174_wine.semi_sparkling!⇒wineSemi_sparkling,
+  4367  <br>* McshEngl.food.wine.semi_sparkling_174,  ->  <br>* McshEngl.food.wine.semi_sparkling_174!⇒wineSemi_sparkling,
+  4368  <br>* McshEngl.wine.semi_sparkling_174,  ->  <br>* McshEngl.wine.semi_sparkling_174!⇒wineSemi_sparkling,
+  ADD 4366  <br>* McshEngl.wineSemi_sparkling,
+=== McshHlth000013:4380  Mmn wineSparkling
+  4381  <br>* McshEngl.food.175_wine.sparkling,  ->  <br>* McshEngl.food.175_wine.sparkling!⇒wineSparkling,
+  4382  <br>* McshEngl.food.wine.sparkling_175,  ->  <br>* McshEngl.food.wine.sparkling_175!⇒wineSparkling,
+  4383  <br>* McshEngl.wine.sparkling_175,  ->  <br>* McshEngl.wine.sparkling_175!⇒wineSparkling,
+  ADD 4381  <br>* McshEngl.wineSparkling,
+=== McshHlth000013:4403  Mmn wineOldness_division
+  4404  <br>* McshEngl.food.156_wine.oldness_division,  ->  <br>* McshEngl.food.156_wine.oldness_division!⇒wineOldness_division,
+  4405  <br>* McshEngl.food.wine.oldness_division_156,  ->  <br>* McshEngl.food.wine.oldness_division_156!⇒wineOldness_division,
+  4406  <br>* McshEngl.wine.oldness_division_156,  ->  <br>* McshEngl.wine.oldness_division_156!⇒wineOldness_division,
+  ADD 4404  <br>* McshEngl.wineOldness_division,
+=== McshHlth000013:4461  Mmn wineSocietyMost
+  4462  <br>* McshEngl.food.wine.societyMost_157,  ->  <br>* McshEngl.food.wine.societyMost_157!⇒wineSocietyMost,
+  4463  <br>* McshEngl.wine.societyMost_157,  ->  <br>* McshEngl.wine.societyMost_157!⇒wineSocietyMost,
+  4464  <br>* McshEngl.wine.Specsdiv.society_consuming,  ->  <br>* McshEngl.wine.Specsdiv.society_consuming!⇒wineSocietyMost,
+  ADD 4462  <br>* McshEngl.wineSocietyMost,
+=== McshHlth000013:4477  Mmn wineVerdéa
+  4478  <br>* McshEngl.food.158-wine.verdéa,  ->  <br>* McshEngl.food.158-wine.verdéa!⇒wineVerdéa,
+  4479  <br>* McshEngl.food.wine.verdéa-158,  ->  <br>* McshEngl.food.wine.verdéa-158!⇒wineVerdéa,
+  4480  <br>* McshEngl.wine.verdéa-158,  ->  <br>* McshEngl.wine.verdéa-158!⇒wineVerdéa,
+  4481  <br>* McshEngl.drinkWine.βερντέα,  ->  <br>* McshEngl.drinkWine.βερντέα!⇒wineVerdéa,
+  ADD 4478  <br>* McshEngl.wineVerdéa,
+=== McshHlth000013:4494  Mmn wineRecína
+  4495  <br>* McshEngl.food.159-wine.recína,  ->  <br>* McshEngl.food.159-wine.recína!⇒wineRecína,
+  4496  <br>* McshEngl.food.wine.recína-159,  ->  <br>* McshEngl.food.wine.recína-159!⇒wineRecína,
+  4497  <br>* McshEngl.wine.recína-159,  ->  <br>* McshEngl.wine.recína-159!⇒wineRecína,
+  4498  <br>* McshEngl.drinkWine.ρετσίνα,  ->  <br>* McshEngl.drinkWine.ρετσίνα!⇒wineRecína,
+  ADD 4495  <br>* McshEngl.wineRecína,
+=== McshHlth000013:4510  Mmn wineRobσla
+  4511  <br>* McshEngl.food.160-wine.robσla,  ->  <br>* McshEngl.food.160-wine.robσla!⇒wineRobσla,
+  4512  <br>* McshEngl.food.wine.robσla-160,  ->  <br>* McshEngl.food.wine.robσla-160!⇒wineRobσla,
+  4513  <br>* McshEngl.wine.robσla-160,  ->  <br>* McshEngl.wine.robσla-160!⇒wineRobσla,
+  4514  <br>* McshEngl.drinkWine.ρομπόλα,  ->  <br>* McshEngl.drinkWine.ρομπόλα!⇒wineRobσla,
+  ADD 4511  <br>* McshEngl.wineRobσla,

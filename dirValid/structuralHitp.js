@@ -9,9 +9,9 @@
  *   oElmt → { sType:'head'|'para', sSubtype, sNameId, nLevel, sHrefSelf, nLine, sIdSect }
  *
  * types:
- * ❌ ERROR
- * ⚠️ WARN
- * ℹ️ INFO
+ * 🔴 ERROR
+ * 🔶 WARN
+ * 🔵 INFO
  * 
  * Checks:
  *  Hvre01  Duplicate id within a file (IDs must be unique)
@@ -96,8 +96,8 @@ function fSectOf(oElmt) {
 
 // ─── individual checks ────────────────────────────────────────────────────────
 
-// ⚠️ Hvrw01  file <title> version string
-// ⚠️ Hvrw02  file version string malformed
+// 🔶 Hvrw01  file <title> version string
+// 🔶 Hvrw02  file version string malformed
 function fCheckVersion(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -114,7 +114,7 @@ function fCheckVersion(aoFile) {
   return aoIssue;
 }
 
-// ❌ Hvre01  duplicate id in a file
+// 🔴 Hvre01  duplicate id in a file
 function fCheckIdDuplicate(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -126,7 +126,7 @@ function fCheckIdDuplicate(aoFile) {
   return aoIssue;
 }
 
-// ❌ Hvre02 heading without id  | ❌  Hvre03 paragraph without id  |  ❌ Hvre04 section without id
+// 🔴 Hvre02 heading without id  | 🔴  Hvre03 paragraph without id  |  🔴 Hvre04 section without id
 function fCheckIdMissing(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -155,8 +155,8 @@ function fCheckIdMissing(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hvrw03  clsHide self-anchor
-// ⚠️ Hvrw04  clsHide self-anchor mismatched (paragraphs only)
+// 🔶 Hvrw03  clsHide self-anchor
+// 🔶 Hvrw04  clsHide self-anchor mismatched (paragraphs only)
 // Headings are exempt: they are reachable via the auto-generated TOC, so they do
 // not need a clsHide self-anchor.
 function fCheckSelfAnchor(aoFile) {
@@ -180,7 +180,7 @@ function fCheckSelfAnchor(aoFile) {
   return aoIssue;
 }
 
-// ❌ Hvre05 broken file link  |  ⚠️ Hvre06 broken internal anchor
+// 🔴 Hvre05 broken file link  |  🔶 Hvre06 broken internal anchor
 function fCheckLink(aoFile, sPathDir) {
   const aoIssue = [];
   const oMapAnchor = fBuildMapAnchor(aoFile, sPathDir);
@@ -224,7 +224,7 @@ function fCheckLink(aoFile, sPathDir) {
   return aoIssue;
 }
 
-// ❌ Hvre07  missing HTML tag pair (unclosed open or stray close)
+// 🔴 Hvre07  missing HTML tag pair (unclosed open or stray close)
 function fCheckTagPair(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -238,7 +238,7 @@ function fCheckTagPair(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hvrw05  HTML element name is not lowercase
+// 🔶 Hvrw05  HTML element name is not lowercase
 function fCheckTagCase(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -251,7 +251,7 @@ function fCheckTagCase(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hvrw06  attribute value not double-quoted (single-quoted or unquoted)
+// 🔶 Hvrw06  attribute value not double-quoted (single-quoted or unquoted)
 function fCheckAttrQuote(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -265,14 +265,14 @@ function fCheckAttrQuote(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ Hvrw07  Html-heading gaps
+// 🔶 Hvrw07  Html-heading gaps
 // A-part's heading is ONE level below its whole's (h1 → h2), and a-section's next
 // sibling has the-same level (h2 → h2). Sections without id, line or heading are
 // skipped (a-missing id is Hvre04).
 // A-law-article (rHeadArticle) is exempt from the-part-rule, and articles are
 // siblings only of articles: consecutive articles have the-same level, and so
 // do the-consecutive other sections, with the-articles between them skipped.
-// ⚠️ Hvrw08  Html-section nesting
+// 🔶 Hvrw08  Html-section nesting
 // A-part at its whole's level or above (h2 in h2, h1 in h2) means a-wrong nesting:
 // the-</section> of the-whole is missing before that part (and with balanced tags
 // it sits further down). ONE issue per whole, on its first such part; its other

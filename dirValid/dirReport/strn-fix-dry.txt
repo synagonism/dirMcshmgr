@@ -1,0 +1,54 @@
+STRN fix: specific-tree head -> McshEngl.X.specific, (X of the title) — 2026-11-02   DRY=true
+
+STRN rows: 44 | renamed: 27 | skipped: 17
+
+=== RENAMED (27)
+  McshCor000002:3551  idMcsmdongsptr  Mcsmgrdong.specific -> Mcsmgrdoing.specific
+  McshCor000002:4862  idMcsdongsptr  Mcsmng.specific -> Mcsdoing.specific
+  McshCor000003:1738  idEntevogsptr  Enttevlg.specific -> Enttevolg.specific
+  McshHlth000003:400  idMinddongsptr  DongMinding.specific -> Minddoing.specific
+  McshHlth000019:5702  idSysNrvsdongsptr  SystNervous'doing.specific -> SystNervousdoing.specific
+  McshLag000002:143  idInfBrnBiodongsptr  infoBrainBio'doing.specific -> InfoBrainBiodoing.specific
+  McshLag000007:31434  idLHmnmdongsptr  HmnmviewLogo'doing.specific -> HmnmviewLogodoing.specific
+  McshOgm000002:193  idBiodongsptr  bio'doing.specific -> Biodoing.specific
+  McshStn000004:372  idGvcOgmdongsptr  admgSctn.specific -> AdmnSctndoing.specific
+  McshStn000009:2757  idSocadmndongsptr  SoctAdmndng.specific -> SoctAdmndoing.specific
+  McshStn000010:575  idSfrHmndongsptr  DongSatisfier.specific -> Satisfierdoing.specific
+  McshTchInf000003:738  idCmrdongsptr  techCmpr_doing.specific -> TechCmprdoing.specific
+  McshTchInf000006:833  idLCpgmalgdongsptr  Pgmgalgo'doing.specific -> Pgmgalgodoing.specific
+  McshTchInf000008:4091  idLHitpevogsptr  Hitpevog.specific -> Hitpevolg.specific
+  McshTchInf000011:86  idLJsbrevalsptr  Jsbreval.specific -> Jsbrevaln.specific
+  McshTchInf000015:270  idAlgntevalsptr  netAlgo'evaluation.specific -> NetAlgoevaln.specific
+  McshTchInf000015:9296  idLkxLycievalsptr  Lykklyci'evaluation.specific -> Lykklycievaln.specific
+  McshTchInf000015:13809  idAlgntevogsptr  netAlgo_evoluting.specific -> NetAlgoevolg.specific
+  McshTchInf000016:276  idDbcevalsptr  Bkcheval.specific -> Bkchevaln.specific
+  McshTchInf000016:5315  idDbcdatdongsptr  Bkcnchain'doing.specific -> Bkcnchaindoing.specific
+  McshTchInf000016:5570  idDbcdongsptr  AgntBkcn'doing.specific -> AgntBkcndoing.specific
+  McshTchInf000019:1255  idDeOzndongsptr  OgznDao'doing.specific -> OgznDaodoing.specific
+  McshTchInf000021:581  idEosnodBpevalsptr  Agnteos_BP'evaluation.specific -> Agnteos_BPevaln.specific
+  McshTchInf000024:2727  idSteemactdongsptr  Stemacnt'doing.specific -> Stemacntdoing.specific
+  McshTchInf000024:4231  idSteemdongsptr  Steem_net'doing.specific -> Steem_netdoing.specific
+  McshTchInf000030:4335  idLRustdongsptr  Rustlago'doing.specific -> Rustdoing.specific
+  McshTchInf000031:2365  idLCppbdocdongsptr  Cppzlago_bin_algo'doing.specific -> Cppzlago_bin_algodoing.specific
+
+=== OLD-NAME-ELSEWHERE (0)
+  (none)
+
+=== SKIPPED (17)
+  McshCor000022:147  idSys016sptr  title=SystAuto nam=SystAuto gntr=SystAuto sptr=null  (no McshEngl.X.specific head)
+  McshHlth000008:302  idMtrlHrmHmn001sptr  title=harmful-external-object nam=harmful_external_object gntr=harmful-external-object sptr=harmful_external_object  (title / name / generic-tree X differ)
+  McshHlth000013:365  idFoodHmnatt003sptr  title=food-nutrient nam=food_nutrient gntr=food-nutrient sptr=food_nutrient  (title / name / generic-tree X differ)
+  McshHmn000002:2230  idHmnatt126sptr  title=human'relative-human nam=human'relative_human gntr=human'relative_human sptr=human'relative_human  (title / name / generic-tree X differ)
+  McshHmn000002:5734  idHmn027sptr  title=asylum-seaker nam=asylum_seaker gntr=asylum-seaker sptr=asylum_seaker  (title / name / generic-tree X differ)
+  McshLag000006:316  idCharCmrsptr  title=computer-char nam=computer_char gntr=computer-char sptr=computer_char  (title / name / generic-tree X differ)
+  McshNtr000005:111  idSysMolsatt004sptr  title=physical-property nam=physical_property gntr=physical-property sptr=physical_property  (title / name / generic-tree X differ)
+  McshTchInf000006:2921  idLSrcdsntcDefsptr  title=Srcdlago-sentence.definition nam=Srcdlago_sentence.definition gntr=Srcdlago_sentence.definition sptr=Srcdlago_sentence.definition  (title / name / generic-tree X differ)
+  McshTchInf000009:1829  idMcsHitpsptr  title=Mcshcpt nam=Mcsh gntr=Mcsh sptr=Mcsh  (title / name / generic-tree X differ)
+  McshTchInf000015:2454  idAlgntchnsptr  title=netAlgo nam=Agnetchain gntr=Agnetchain sptr=Agnetchain  (title / name / generic-tree X differ)
+  McshTchInf000015:7820  idAlgntstatsptr  title=chain-stats nam=chain_stats gntr=chain-stats sptr=chain_stats  (title / name / generic-tree X differ)
+  McshTchInf000016:2524  idDbcevuCsptr  title=appending-asset nam=appending_asset gntr=appending-asset sptr=appending_asset  (title / name / generic-tree X differ)
+  McshTchInf000021:2520  idEospgmClntsptr  title=Eos-client nam=Eos_client gntr=Eos-client sptr=Eos_client  (title / name / generic-tree X differ)
+  McshTchInf000021:2894  idEospgmAppGamsptr  title=Agnteos-Dapp.game nam=Agnteos_Dapp.game gntr=Agnteos_Dapp.game sptr=Agnteos_Dapp.game  (title / name / generic-tree X differ)
+  McshTchInf000023:276  idIotasptr  title=Iota-net nam=Iota_net gntr=Iota-net sptr=Iota_net  (title / name / generic-tree X differ)
+  McshTchInf000024:2345  idSteemacntkeysptr  title=Steem--key-pair nam=Steem__key_pair gntr=Steem--key-pair sptr=Steem_key_pair  (title / name / generic-tree X differ)
+  McshTchInf000031:1638  idLCppsuntPrcsBsptr  title=Cppzsunt.process-and-processNo nam=Cppzsunt.process_and_processNo gntr=Cppzsunt.process_and_processNo sptr=Cppzsunt.process_and_processNo  (title / name / generic-tree X differ)

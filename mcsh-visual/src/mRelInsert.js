@@ -202,6 +202,27 @@ function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
   return aOut;
 }
 
+/**
+ * DOING: it finds the-term of a-'search_for:X.' request (after ':', before '.')
+ * OUTPUT: 'Mvre' or null
+ */
+function fSearchFor(sLineIn) {
+  const aM = sLineIn.match(/search_for:([^\s.,<]+)/);
+  return aM ? aM[1] : null;
+}
+
+/**
+ * DOING: it searches the-names that begin with sTermIn, like the-browser name-search
+ * OUTPUT: array of lines '* name!@stem#id,' (name cut at its first '!')
+ */
+function fSearchLines(sRootIn, sTermIn) {
+  const aOut = fSearchName(sRootIn, fEsc(sTermIn), 'lagEngl').map(function (aNu) {
+    const sName = aNu[0].split('!')[0], sUrl = aNu[1];
+    return '* ' + sName + '!@' + sUrl.slice(sUrl.lastIndexOf('/') + 1).replace('.last.html', '') + ',';
+  });
+  return aOut.length ? aOut : ['* ?? (no finding)'];
+}
+
 function fReadJson(sPathIn) {
   return JSON.parse(fs.readFileSync(sPathIn, 'utf8'));
 }
@@ -307,4 +328,4 @@ function fFormatLines(aoIn, sIndentIn) {
   return ['---'].concat(aBody).map(s => sIndentIn + '<br>' + s);
 }
 
-module.exports = { fTrigger, fRefOfLine, fGenericName, fNameRef, fGenericsOfTree, fGntrChain, fFindRelated, fFormatLines };
+module.exports = { fSearchFor, fSearchLines, fTrigger, fRefOfLine, fGenericName, fNameRef, fGenericsOfTree, fGntrChain, fFindRelated, fFormatLines };

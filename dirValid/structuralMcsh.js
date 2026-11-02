@@ -12,9 +12,9 @@
  *   oPara → { sType, sNameId, sNameTitle, sText, aoName, aName, aLinks }
  *
  * types:
- * ❌ ERROR
- * ⚠️ WARN
- * ℹ️ INFO
+ * 🔴 ERROR
+ * 🔶 WARN
+ * 🔵 INFO
  * 
  * Checks (Mcsh-specific; Hitp-covered ones removed):
  *  MvreFile01  cnptFile missing idOverview section
@@ -23,8 +23,6 @@
  *  MvrwSect02  cnptSect has description:: but it is empty (only placeholder "·")
  *  MvrwSect03  cnptSect missing name::-paragraph
  *  MvrwSect04  cnptSect name:: has zero valid Mcsh* entries
- * 
- *  MvrwDate01  dates not in {YYYY-MM-DD} format
  * 
  *  MvreName01  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
  *
@@ -42,13 +40,6 @@
  *  MvrwId12  (warning) sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
  *  MvrwId13  (warning) srtr_structure_suffix: the-id of a "structure of X" | "X'structure" cnptSect does not end in "srtr"
  *
- *  MvrwGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
- *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
- *  MvrwGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
- *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
- *             In a-"generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
- *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
- *
  *  MvreMain01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
  *  MvrwMain02 (warning) evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" cnptSect
@@ -64,6 +55,15 @@
  *  MvrwMain07 (warning) attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
  *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
  *             or is badly written
+ *
+ *  MvrwGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
+ *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
+ *  MvrwGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
+ *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
+ *             In a-"generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
+ *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
+ * 
+ *  MvrwMisc01  dates not in {YYYY-MM-DD} format
  */
 
 import { fStripTags } from './parserMcsh.js';
@@ -106,7 +106,7 @@ const
     'structuralMcsh.js.0-8-0.2026-10-03: MvreName01 keys the-whole-name-line',
     'structuralMcsh.js.0-7-0.2026-10-02: MvreName01 sees cnptFile-names and duplicates',
     'structuralMcsh.js.0-6-0.2026-10-02: parserMcsh-model (ooIdRelaCnpt, aoTitlePara)',
-    'structural.js.0-5-0.2026-10-01: MvrwDate01 per-token, set-notation not a date',
+    'structural.js.0-5-0.2026-10-01: MvrwMisc01 per-token, set-notation not a date',
     'structural.js.0-4-0.2026-09-05: Mcsh-only (S→M), Hitp checks removed',
     'structural.js.0-3-0.2026-09-04: naming convention',
     'structural.js.0-2-0.2026-05-02: DATE not TeX',
@@ -214,7 +214,7 @@ function fBuildMapName(aoCnptFile) {
 
 // ─── individual checks ────────────────────────────────────────────────────────
 
-// ❌ MvreFile01  cnptFile missing idOverview section
+// 🔴 MvreFile01  cnptFile missing idOverview section
 //   two causes, two messages: the-file has NO id="idOverview", or it HAS the-id
 //   but the-parser could-not read a-section from IT (an-unclosed <section>).
 function fCheckCnptFile(aoCnptFile) {
@@ -242,8 +242,8 @@ function fCheckCnptFile(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwSect01] cnptSect  has no description::-paragraph
-// ⚠️ [MvrwSect02] cnptSect  has an empty/placeholder description:: (only "·" or "×")
+// 🔶 [MvrwSect01] cnptSect  has no description::-paragraph
+// 🔶 [MvrwSect02] cnptSect  has an empty/placeholder description:: (only "·" or "×")
 function fCheckDescription(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
@@ -274,8 +274,8 @@ function fCheckDescription(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwSect03] cnptSect  has no name::-paragraph
-// ⚠️ [MvrwSect04] cnptSect  name::-paragraph has no valid Mcsh* entries
+// 🔶 [MvrwSect03] cnptSect  has no name::-paragraph
+// 🔶 [MvrwSect04] cnptSect  name::-paragraph has no valid Mcsh* entries
 function fCheckName(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
@@ -297,7 +297,7 @@ function fCheckName(aoCnptFile) {
   return aoIssue;
 }
 
-// ❌ [MvreName01] Duplicated names:
+// 🔴 [MvreName01] Duplicated names:
 function fCheckDuplicateName(aoCnptFile) {
   const aoIssue = [];
   const oMapName = fBuildMapName(aoCnptFile);
@@ -332,7 +332,7 @@ function fIsDateCandidate(sTok) {
   return nDigitYear === 4 || (nDigitYear >= 3 && aGroup.length > 1);
 }
 
-// ⚠️ [MvrwDate01] DATE "{2022-4-27}" has NO {YYYY-MM-DD} format, judged per {token}, not per line
+// 🔶 [MvrwMisc01] DATE "{2022-4-27}" has NO {YYYY-MM-DD} format, judged per {token}, not per line
 function fCheckDate(aoCnptFile) {
   const aoIssue = [];
   const rDateGood = /^\{\d{4}(?:-\d{2}(?:-\d{2})?)?\}$/;
@@ -348,7 +348,7 @@ function fCheckDate(aoCnptFile) {
             if (fIsDateCandidate(sTok) && !rDateGood.test(sTok)) oSetTokBad.add(sTok);
           }
           for (const sTok of oSetTokBad) {
-            aoIssue.push(fIssue('WARN', 'MvrwDate01', oCnptFile.sNameFile, oSect,
+            aoIssue.push(fIssue('WARN', 'MvrwMisc01', oCnptFile.sNameFile, oSect,
               `DATE "${sTok}" has NO {YYYY-MM-DD} format in line: "${sLine.trim()}" in file: "${oCnptFile.sNameFile}"`,
               oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
           }
@@ -359,7 +359,7 @@ function fCheckDate(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwId01] non-english-letters: an-id has a-letter outside A-Z a-z (Greek Η, é, µ ...)
+// 🔶 [MvrwId01] non-english-letters: an-id has a-letter outside A-Z a-z (Greek Η, é, µ ...)
 //   a-Greek Η looks like a-Latin H, but it is another id, so links to IT break silently.
 //   only letters are judged, NOT punctuation.
 function fCheckIdLetter(aoCnptFile) {
@@ -399,25 +399,25 @@ function fCheckIdSuffix(aoCnptFile, sCode, sNameRule, sTitle, sSuffix) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwId02] dong_DOING_suffix: the-id of a-DOING-concept ends in "dong",
+// 🔶 [MvrwId02] dong_DOING_suffix: the-id of a-DOING-concept ends in "dong",
 //   NOT dng | dngF | dngFT | doing.
 function fCheckIdDong(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId02', 'dong_DOING_suffix', 'DOING', 'dong');
 }
 
-// ⚠️ [MvrwId04] eval_evaluation_suffix: the-id of an-evaluation-concept ends in "eval",
+// 🔶 [MvrwId04] eval_evaluation_suffix: the-id of an-evaluation-concept ends in "eval",
 //   NOT eln | evln | evaln | evaluation | evalF | evalFT | attNNN.
 function fCheckIdEval(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId04', 'eval_evaluation_suffix', 'evaluation', 'eval');
 }
 
-// ⚠️ [MvrwId05] evog_evoluting_suffix: the-id of an-evoluting-concept ends in "evog",
+// 🔶 [MvrwId05] evog_evoluting_suffix: the-id of an-evoluting-concept ends in "evog",
 //   NOT evg | Evg | evlg | evltg | evoluting | evgF | evgFT | attNNN.
 function fCheckIdEvog(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId05', 'evog_evoluting_suffix', 'evoluting', 'evog');
 }
 
-// ⚠️ [MvrwId06] irsc_info_resource_suffix: the-id of an-info-resource-concept ends in "irsc",
+// 🔶 [MvrwId06] irsc_info_resource_suffix: the-id of an-info-resource-concept ends in "irsc",
 //   NOT rsc | infrsc | resource | ircs.
 function fCheckIdIrsc(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId06', 'irsc_info_resource_suffix', 'info-resource', 'irsc');
@@ -446,46 +446,46 @@ function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix, r
   return aoIssue;
 }
 
-// ⚠️ [MvrwId07] pntr_parent_tree_suffix: the-id of a "parent-tree::" para ends in "pntr", NOT rtr.
+// 🔶 [MvrwId07] pntr_parent_tree_suffix: the-id of a "parent-tree::" para ends in "pntr", NOT rtr.
 function fCheckIdPntr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId07', 'pntr_parent_tree_suffix', 'parent-tree', 'pntr');
 }
 
-// ⚠️ [MvrwId08] chtr_child_tree_suffix: the-id of a "child-tree::" para ends in "chtr", NOT ctr.
+// 🔶 [MvrwId08] chtr_child_tree_suffix: the-id of a "child-tree::" para ends in "chtr", NOT ctr.
 function fCheckIdChtr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId08', 'chtr_child_tree_suffix', 'child-tree', 'chtr');
 }
 
-// ⚠️ [MvrwId09] wltr_whole_tree_suffix: the-id of a "whole-tree::" para ends in "wltr",
+// 🔶 [MvrwId09] wltr_whole_tree_suffix: the-id of a "whole-tree::" para ends in "wltr",
 //   NOT wtr | whlchn | whl | P1.
 function fCheckIdWltr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId09', 'wltr_whole_tree_suffix', 'whole-tree', 'wltr');
 }
 
-// ⚠️ [MvrwId10] prtr_part_tree_suffix: the-id of a "part-tree::" para ends in "prtr", NOT ptr | rtr | prt.
+// 🔶 [MvrwId10] prtr_part_tree_suffix: the-id of a "part-tree::" para ends in "prtr", NOT ptr | rtr | prt.
 function fCheckIdPrtr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId10', 'prtr_part_tree_suffix', 'part-tree', 'prtr');
 }
 
-// ⚠️ [MvrwId11] gntr_generic_tree_suffix: the-id of a "generic-tree::" para ends in "gntr", NOT gtr.
+// 🔶 [MvrwId11] gntr_generic_tree_suffix: the-id of a "generic-tree::" para ends in "gntr", NOT gtr.
 function fCheckIdGntr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId11', 'gntr_generic_tree_suffix', 'generic-tree', 'gntr');
 }
 
-// ⚠️ [MvrwId12] sptr_specific_tree_suffix: the-id of a "specific-tree::" para ends in "sptr", NOT str;
+// 🔶 [MvrwId12] sptr_specific_tree_suffix: the-id of a "specific-tree::" para ends in "sptr", NOT str;
 //   a-list of specific-trees may add ONE letter or digit: idLHmnm0011sptrA, idLHmnm0011sptr2.
 function fCheckIdSptr(aoCnptFile) {
   return fCheckIdParaSuffix(aoCnptFile, 'MvrwId12', 'sptr_specific_tree_suffix', 'specific-tree', 'sptr',
     /sptr[A-Z0-9]?$/);
 }
 
-// ⚠️ [MvrwId13] srtr_structure_suffix: the-id of a-structure-concept ends in "srtr",
+// 🔶 [MvrwId13] srtr_structure_suffix: the-id of a-structure-concept ends in "srtr",
 //   ("structure of X", "NN_structure of X", "X'structure").
 function fCheckIdSrtr(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId13', 'srtr_structure_suffix', 'structure', 'srtr');
 }
 
-// ❌ [MvreMain01] no-hyphen: a-main-name, the-text after "!⇒" in a-name-line, has NO
+// 🔴 [MvreMain01] no-hyphen: a-main-name, the-text after "!⇒" in a-name-line, has NO
 //   hyphen "-": rltnAttribute_then_entity, NOT rltnAttribute-then-entity.
 //   ONE issue per concept, McsLago and main-name, on the-first name-line that points to it.
 //   createMcsh.mjs --mainname changes the-hyphens to underscores.
@@ -553,7 +553,7 @@ function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwMain02] evolg_evoluting_main: the-main-name of an-evoluting-concept
+// 🔶 [MvrwMain02] evolg_evoluting_main: the-main-name of an-evoluting-concept
 //   ("evoluting of X", "NN_evoluting of X", "X'evoluting") is Xevolg, capital first,
 //   NOT evoluting-of-X | X'evoluting | Xevlg | Xevg | Xevog | humanevolg.
 function fCheckMainNameEvolg(aoCnptFile) {
@@ -561,7 +561,7 @@ function fCheckMainNameEvolg(aoCnptFile) {
     /^(\d+_)?evoluting of |^[^\s.']+'evoluting$/i, 'evolg');
 }
 
-// ⚠️ [MvrwMain03] evaln_evaluation_main: the-main-name of an-evaluation-concept
+// 🔶 [MvrwMain03] evaln_evaluation_main: the-main-name of an-evaluation-concept
 //   ("evaluation of X", "NN_evaluation of X", "X'evaluation") is Xevaln, capital first,
 //   NOT X'evaluation | Xeval | Xevalg (evalg until 2026-10-28);
 //   the-main-name of an-evaluating-concept, the-process ("evaluating of X", "X'evaluating") is Xevalg,
@@ -575,7 +575,7 @@ function fCheckMainNameEvalg(aoCnptFile) {
   ];
 }
 
-// ⚠️ [MvrwMain04] doing_DOING_main: the-main-name of a-DOING-concept
+// 🔶 [MvrwMain04] doing_DOING_main: the-main-name of a-DOING-concept
 //   ("DOING of X", "NN_DOING of X", "X'DOING") is Xdoing, capital first,
 //   NOT X'doing | entity'doing | Xdong | DongX.
 function fCheckMainNameDoing(aoCnptFile) {
@@ -583,7 +583,7 @@ function fCheckMainNameDoing(aoCnptFile) {
     /^(\d+_)?DOING of |^[^\s.']+'DOING$/i, 'doing');
 }
 
-// ⚠️ [MvrwMain05] infrsc_info_resource_main: the-main-name of an-info-resource-concept
+// 🔶 [MvrwMain05] infrsc_info_resource_main: the-main-name of an-info-resource-concept
 //   ("info-resource of X", "NN_info-resource of X", "X'info-resource") is Xinfrsc, capital first,
 //   NOT X'info_resource | X'info-resource | info-resource-of-X | Xirsc | Xrsc.
 function fCheckMainNameInfrsc(aoCnptFile) {
@@ -591,7 +591,7 @@ function fCheckMainNameInfrsc(aoCnptFile) {
     /^(\d+_)?info-resource of |^[^\s.']+'info-resource$/i, 'infrsc');
 }
 
-// ⚠️ [MvrwMain06] srtr_structure_main: the-main-name of a-structure-concept
+// 🔶 [MvrwMain06] srtr_structure_main: the-main-name of a-structure-concept
 //   ("structure of X", "NN_structure of X", "X'structure") is Xsrtr, capital first,
 //   NOT X'structure | X'attStructure | structure-of-X.
 function fCheckMainNameSrtr(aoCnptFile) {
@@ -599,7 +599,7 @@ function fCheckMainNameSrtr(aoCnptFile) {
     /^(\d+_)?structure of |^[^\s.']+'structure$/i, 'srtr');
 }
 
-// ⚠️ [MvrwMain07] attrbase_line: the-main-names of the-attributes of a-concept are-created of
+// 🔶 [MvrwMain07] attrbase_line: the-main-names of the-attributes of a-concept are-created of
 //   a-base plus text, the-Attrbase. It is-denoted in the-name::-para of the-concept with
 //   "McshEngl.B!Attrbase," (B = the-main-name) or "McshEngl.B!Attrbase!⇒M," (B another name),
 //   on the-3rd name-line, after "M!=I", or on the-4th, after "M!@McshXxx" of a-file-concept.
@@ -637,7 +637,7 @@ function fCheckMainNameAttrbase(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
+// 🔶 [MvrwGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
 //   THEN Y has X as generic: X is in Y's "generic-tree::" (as X:generic or a-link to X),
 //   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
 //   A-concept is a-key "McshDir000000#id" ("McshDir000000#" the-file-concept);
@@ -809,7 +809,7 @@ function fGstrIndex(aoCnptFile) {
   return oIndex;
 }
 
-// ⚠️ [MvrwGstr01] specific_has_generic (see above fGstrIndex)
+// 🔶 [MvrwGstr01] specific_has_generic (see above fGstrIndex)
 function fCheckGstrSpecificGeneric(aoCnptFile) {
   const aoIssue = [];
   const { ooFile, fHead, fKey, fGntr, fRefs, fGenerics, fReaches, fInside } = fGstrIndex(aoCnptFile);
@@ -846,7 +846,7 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
+// 🔶 [MvrwGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
 //   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
 //   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
 //   Skipped: McshEngl head, "...entity:generic", a-"=== label:" group (addressWpg, sibling-of-X: ...), entity itself,
@@ -901,7 +901,7 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
   return aoIssue;
 }
 
-// ⚠️ [MvrwId03] space_in_id: an-id="..." or a-link href="...#..." (NOT http) has a-space
+// 🔶 [MvrwId03] space_in_id: an-id="..." or a-link href="...#..." (NOT http) has a-space
 //   (any whitespace), the-browser can-not reach IT.
 function fCheckIdSpace(aoCnptFile) {
   const aoIssue = [];
@@ -935,6 +935,11 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   aoAll.push(...aoDup);
   fLog(`${aoDup.length} issues`);
 
+  fWrite('   MvreMain01 Main-names no-hyphen... ');
+  const aoMainHyphen = fCheckMainNameHyphen(aoCnptFile);
+  aoAll.push(...aoMainHyphen);
+  fLog(`${aoMainHyphen.length} issues`);
+
   fWrite('   MvrwSect01/MvrwSect02 Section descriptions... ');
   const aoDesc = fCheckDescription(aoCnptFile);
   aoAll.push(...aoDesc);
@@ -945,7 +950,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   aoAll.push(...aoName);
   fLog(`${aoName.length} issues`);
 
-  fWrite('   MvrwDate01    Dates... ');
+  fWrite('   MvrwMisc01    Dates... ');
   const aoDate = fCheckDate(aoCnptFile);
   aoAll.push(...aoDate);
   fLog(`${aoDate.length} issues`);
@@ -1024,11 +1029,6 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
   const aoGstrGncSpc = fCheckGstrGenericSpecific(aoCnptFile);
   aoAll.push(...aoGstrGncSpc);
   fLog(`${aoGstrGncSpc.length} issues`);
-
-  fWrite('   MvreMain01 Main-names no-hyphen... ');
-  const aoMainHyphen = fCheckMainNameHyphen(aoCnptFile);
-  aoAll.push(...aoMainHyphen);
-  fLog(`${aoMainHyphen.length} issues`);
 
   fWrite('   MvrwMain02 Main-names evolg_evoluting... ');
   const aoMainEvolg = fCheckMainNameEvolg(aoCnptFile);

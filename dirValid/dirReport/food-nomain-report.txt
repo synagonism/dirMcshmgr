@@ -1,0 +1,88 @@
+FOOD NAME:: WITHOUT MMN — 2026-11-02
+McshHlth000013 name:: with food.NNN_x names, no !⇒ and no foodX / drinkX name: 101
+entry: file:line #id  name | name | ...
+
+=== NO MMN (101)
+  McshHlth000013:1026 #idFoodHmn121nam  food.121_mainNo | food.mainNo_121 | mainNo-food | side-dish | meal'course.mainNo_121 | McshElln.συνοδευτική-τροφή
+  McshHlth000013:1889 #idFoodHmn045nam  food.045_fruitarianism | food.fruitarianism_045 | diet.fruitarianism_045
+  McshHlth000013:1907 #idFoodHmn210nam  food.210_ketogenic_diet | food.ketogenic_diet_210 | ketogenic-diet-210 | diet.ketogenic_diet_210
+  McshHlth000013:1922 #idFoodHmn001nam  food.001_aggregate | food.aggregate_001
+  McshHlth000013:1946 #idFoodHmn002nam  food.002_exported | food.exported_002
+  McshHlth000013:1976 #idFoodHmn003nam  food.003_adulterated | food.adulterated_003 | adulterated-food | McshElln.τροφή.νοθευμένη
+  McshHlth000013:1992 #idFoodHmn004nam  baked-food | food.004_baked | food.baked_004 | McshElln.φαγητό-φούρνου | McshElln.φουρναριστό-φαγητό
+  McshHlth000013:2018 #idFoodHmn005nam  food.005_barbeque | food.barbeque_005
+  McshHlth000013:2059 #idFoodHmn211nam  food.211_protein_complete | food.protein_complete_211 | complete-protein-food-211 | protein-complete-food-211 | whole-protein-food-211 | foodProtein.protein_complete_211
+  McshHlth000013:2088 #idFoodHmn006nam  food.006_beens | food.beens_006 | beens.food
+  McshHlth000013:2114 #idFoodHmn007nam  food.007_blueberries | food.blueberries_007 | blueberries
+  McshHlth000013:2130 #idFoodHmn008nam  food.008_broccoli | food.broccoli_008 | McshElln.μπρόκολο
+  McshHlth000013:2145 #idFoodHmn009nam  food.009_buckwheat | food.buckwheat_009 | buckwheat | McshElln.φαγόπυρο.τροφή
+  McshHlth000013:2166 #idFoodHmn010nam  food.010_carrot | food.carrot_010 | McshElln.καρότα.τροφή
+  McshHlth000013:2189 #idFoodHmn011nam  food.011_caviar | food.caviar_011
+  McshHlth000013:2219 #idFoodHmn012nam  food.012_cereal | food.cereal_012 | cereal.food | McshElln.δημητριακά.φαγητό
+  McshHlth000013:2248 #idFoodHmn013nam  food.013_corn_flakes | food.corn_flakes_013 | corn-flakes
+  McshHlth000013:2276 #idFoodHmn015nam  food.015_cookies | food.cookies_015
+  McshHlth000013:2341 #idFoodHmn018nam  food.018_reading | food.reading_018
+  McshHlth000013:2610 #idFoodHmn021nam  food.021_carbonated_beverage | food.carbonated_beverage_021 | soda-drink | drink.beverage.carbonated
+  McshHlth000013:2913 #idFoodHmn024nam  food.024_soft_drink | food.soft_drink_024 | drink.beverage.soft
+  McshHlth000013:2941 #idFoodHmn025nam  food.025_7_up | food.7_up_025
+  McshHlth000013:3252 #idFoodHmn027nam  food.027_coffee.decaffeinated | food.coffee.decaffeinated_027 | coffee.decaffeinated | drinkCoffee.decaffeinated
+  McshHlth000013:3362 #idFoodHmn030nam  food.030_energy_drink | food.energy_drink_030 | energy-drink | drink.energy
+  McshHlth000013:3683 #idFoodHmn035nam  food.035_water.fluricated | food.water.fluricated_035 | drinkWater.fluridated
+  McshHlth000013:3705 #idFoodHmn036nam  food.036_water.fresh | food.water.fresh_036 | drinkWater.fresh
+  McshHlth000013:3798 #idFoodHmn037nam  food.037_water.Singapore | food.water.Singapore_037
+  McshHlth000013:4591 #idFoodHmn038nam  food.038_fish_oil | food.fish_oil_038 | fish-oil
+  McshHlth000013:4677 #idFoodHmn040nam  food.040_garlic | food.garlic_040 | garlic | foodFlavoring.garlic_040 | McshElln.σκόρδο
+  McshHlth000013:4882 #idFoodHmn042nam  food.042_oregano | food.oregano_042 | oregano | foodFlavoring.oregano_042 | McshElln.ρίγανη
+  McshHlth000013:4900 #idFoodHmn043nam  food.043_fried | food.fried_043 | McshElln.φαγητό-τηγανιτό!το | McshElln.τηγανιτό-φαγητό!το
+  McshHlth000013:4917 #idFoodHmn044nam  food.044_frozen | food.frozen_044 | frozen_food.human
+  McshHlth000013:4950 #idFoodHmn046nam  food.046_junk | food.junk_046 | junk-food
+  McshHlth000013:4966 #idFoodHmn047nam  food.047_legumes | food.legumes_047 | legumes-food | McshElln.όσπρια.τροφή
+  McshHlth000013:5039 #idFoodHmn080nam  food.080_festal | food.festal_080 | McshElln.τροφή.γιορτινή | McshElln.εορταστική-τροφή
+  McshHlth000013:5071 #idFoodHmn051nam  food.051_haddock | food.haddock_051 | haddock-food | McshElln.μπακαλιάρος
+  McshHlth000013:5096 #idFoodHmn052nam  food.052_seafood | food.seafood_052 | seafood
+  McshHlth000013:5128 #idFoodHmn053nam  food.053_pizza | food.pizza_053 | pizza-food
+  McshHlth000013:5158 #idFoodHmn054nam  food.054_popular | food.popular_054 | popular-food
+  McshHlth000013:5191 #idFoodHmn055nam  food.055_potato | food.potato_055 | potato.food
+  McshHlth000013:5244 #idFoodHmn057nam  food.057_potato_chips | food.potato_chips_057
+  McshHlth000013:5307 #idFoodHmn059nam  food.059_measure | food.measure_059
+  McshHlth000013:5371 #idFoodHmn062nam  food.062_hamburger_sandwich | food.hamburger_sandwich_062 | hamburger-sandwich | sandwitc.hamburger
+  McshHlth000013:5475 #idFoodHmn064nam  food.064_Usa | food.Usa_064
+  McshHlth000013:5490 #idFoodHmn065nam  food.065_spinach | food.spinach_065 | McshElln.σπανάκι
+  McshHlth000013:5515 #idFoodHmn066nam  food.066_stolen | food.stolen_066
+  McshHlth000013:5601 #idFoodHmn068nam  food.068_sea_buckthorn | food.sea_buckthorn_068 | sea-buckthorn
+  McshHlth000013:5641 #idFoodHmn069nam  food.069_quinoa | food.quinoa_069 | quinoa | McshElln.κινόα
+  McshHlth000013:5793 #idFoodHmn074nam  food.074_sweet | food.sweet_074
+  McshHlth000013:5806 #idFoodHmn075nam  food.075_summer | food.summer_075
+  McshHlth000013:5830 #idFoodHmn076nam  food.076_turmeric | food.turmeric_076 | McshElln.κουρκουμάς
+  McshHlth000013:5852 #idFoodHmn077nam  food.077_vegan | food.vegan_077
+  McshHlth000013:6148 #idFoodHmn083nam  food.083_honey | food.honey_083
+  McshHlth000013:6167 #idFoodHmn084nam  food.084_ketchup | food.ketchup_084
+  McshHlth000013:6180 #idFoodHmn085nam  food.085_salt | food.salt_085 | salt
+  McshHlth000013:6200 #idFoodHmn086nam  food.086_salt.Usa | food.salt.Usa_086
+  McshHlth000013:6226 #idFoodHmn087nam  food.087_salt.ocean | food.salt.ocean_087
+  McshHlth000013:6242 #idFoodHmn088nam  food.088_spice | food.spice_088
+  McshHlth000013:6267 #idFoodHmn089nam  food.089_pepper | food.pepper_089 | McshElln.πιπέρι
+  McshHlth000013:6370 #idFoodHmn090nam  food.090_cayenne_pepper | food.cayenne_pepper_090 | cayenne-pepper | Guinea-spice | cow-horn-pepper | red-hot-chili-pepper | aleva | bird-pepper | red-pepper | McshElln.κόκκινο-πιπέρι | McshElln.πιπέρι-καγιέν
+  McshHlth000013:6759 #idFoodHmn101nam  food.101_cheese.parmesan | food.cheese.parmesan_101 | cheese.παρμεζάνα | McshElln.τυρί.παρμεζάνα
+  McshHlth000013:6827 #idFoodHmn105nam  food.105_cheese.stilton | food.cheese.stilton_105 | cheese.stilton
+  McshHlth000013:7070 #idFoodHmn107nam  food.107_apricot | food.apricot_107 | foodFruit.apricot | apricot | McshElln.φρούτο.βερύκοκο | McshElln.βερύκοκο
+  McshHlth000013:7096 #idFoodHmn108nam  food.108_berry | food.berry_108 | berry | foodFruit.berry
+  McshHlth000013:7113 #idFoodHmn109nam  food.109_culinary_fruit | food.culinary_fruit_109 | culinary-fruit | foodFruit.culinary | McshElln.μαγειρικής-φρούτα
+  McshHlth000013:7208 #idFoodHmn111nam  food.111_cashews | food.cashews_111 | cashews | foodNuts.cashews
+  McshHlth000013:7235 #idFoodHmn112nam  food.112_hazelnut | food.hazelnut_112 | hazelnut | foodNuts.hazelnut | McshElln.φουντούκια
+  McshHlth000013:7342 #idFoodHmn114nam  food.114_walnut | food.walnut_114 | walnut | foodNuts.walnut | McshElln.καρύδια
+  McshHlth000013:7421 #idFoodHmn116nam  food.116_pomegranate | food.pomegranate_116 | pomegranate | foodFruit.pomegranate | McshElln.ρόδι
+  McshHlth000013:7451 #idFoodHmn117nam  food.117_superfruit | food.superfruit_117 | foodFruit.superfruit
+  McshHlth000013:7517 #idFoodHmn118nam  food.118_tomato_fruit | food.tomato_fruit_118 | tomato-fruit | foodFruit.tomato
+  McshHlth000013:7541 #idFoodHmn119nam  food.119_watermelon | food.watermelon_119 | watermelon | foodFruit.watermelon
+  McshHlth000013:7625 #idFoodHmn190nam  food.190_orange | food.orange_190 | fruitOrange | orange | júzi-橘子!=fruitOrange | foodFruit.orange | McshElln.πορτοκάλι!το!=fruitOrange, {2013-02-10}
+  McshHlth000013:9151 #idFoodHmn147nam  food.147_meat_with_lemon | food.meat_with_lemon_147 | meat-with-lemon | meatLemonish | foodMeat.with_lemon | McshElln.κρέας-λεμονάτο | McshElln.κρέας.λεμονάτο
+  McshHlth000013:9402 #idFoodHmn150nam  food.150_beef_fillet | food.beef_fillet_150 | meatBeefFillet | foodMeat.beef_fillet | McshElln.φιλετο-μοσχαρίσιο
+  McshHlth000013:9602 #idFoodHmn151nam  food.151_hashed_meat | food.hashed_meat_151 | hashed-meat | meatHashed | McshElln.κιμας
+  McshHlth000013:9911 #idFoodHmn186nam  food.186_liver | food.liver_186 | liver-food | meatLiver | McshElln.συκωτάκια
+  McshHlth000013:10791 #idFoodHmn203nam  food.203_sweet.yogurt_lemon | food.sweet.yogurt_lemon_203 | sweet.yogurt_lemon_203 | foodDessert.γιαουρτολέμονο | McshElln.γιαουρτολέμονο!το
+  McshHlth000013:10871 #idFoodHmn205nam  dessertHhalvaIcecream | food.205_halva_with_icecream | food.halva_with_icecream_205 | halva-with-icecream | foodDessert.halva_with_icecream | McshElln.χαλβας-με-παγωτο
+  McshHlth000013:11739 #idFoodHmn223nam  food.223_individual_human | food.individual_human | human'food
+  McshHlth000013:11753 #idFoodHmn224nam  food.224_group | food.group | group'food
+  McshHlth000013:11767 #idFoodHmn225nam  food.225_organization | food.organization | ozn'food
+  McshHlth000013:11786 #idFoodHmn226nam  Sochumnview/culture/cuisine | cuisine//culture//Sochumnview//society | food.226_society | food.society | food//culture//Sochumnview//society | SoctFood | society'att008_food | society'food

@@ -1,0 +1,30 @@
+NAM 4: GS-TREE title, generic-tree head (+refs), specific-tree head -> N — 2026-11-02   DRY=true
+
+rows: 4 | files to write: 4
+
+=== TITLE (4)
+  McshTchInf000016  idDashwltgstr  Ddash-net'wallet -> Ddash_net'wallet
+  McshTchInf000024  idSteemtxopngstr  Steem-transaction'operation -> Steem_transaction'operation
+  McshTchInf000026  idBkskhmnFTgstr  Blockstack-net'human -> Blockstack_net'human
+  McshTchInf000028  idDnlbrclicmdgstr  DnDiem-Cli'command -> DnDiem_Cli'command
+
+=== GNTR-HEAD (4)
+  McshTchInf000016  idDashwltgntr  Ddash-net'wallet:generic -> Ddash_net'wallet:generic
+  McshTchInf000024  idSteemtxopngntr  Steem-transaction'operation:generic -> Steem_transaction'operation:generic
+  McshTchInf000026  idBkskhmnFTgntr  Blockstack-net'human:generic -> Blockstack_net'human:generic
+  McshTchInf000028  idDnlbrclicmdgntr  DnDiem-Cli'command:generic -> DnDiem_Cli'command:generic
+
+=== GNTR-REFS (4)
+  Ddash-net'wallet:generic -> Ddash_net'wallet:generic  1x (head included) in 1 files: McshTchInf000016
+  Steem-transaction'operation:generic -> Steem_transaction'operation:generic  1x (head included) in 1 files: McshTchInf000024
+  Blockstack-net'human:generic -> Blockstack_net'human:generic  1x (head included) in 1 files: McshTchInf000026
+  DnDiem-Cli'command:generic -> DnDiem_Cli'command:generic  1x (head included) in 1 files: McshTchInf000028
+
+=== SPTR-HEAD (4)
+  McshTchInf000016  idDashwltsptr  Ddash-net'wallet.specific -> Ddash_net'wallet.specific
+  McshTchInf000024  idSteemtxopnsptr  Steem-transaction'operation.specific -> Steem_transaction'operation.specific
+  McshTchInf000026  idBkskhmnFTsptr  Blockstack-net'human.specific -> Blockstack_net'human.specific
+  McshTchInf000028  idDnlbrclicmdsptr  DnDiem-Cli'command.specific -> DnDiem_Cli'command.specific
+
+=== SKIPPED (0)
+  (none)

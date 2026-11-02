@@ -10,7 +10,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const oLevelIcon  = { ERROR: '❌', WARN: '⚠️ ', INFO: 'ℹ️ ' };
+const oLevelIcon  = { ERROR: '🔴', WARN: '🔶', INFO: '🔵' };
 const oLevelOrder = { ERROR: 0, WARN: 1, INFO: 2 };
 
 /** Normalize an issue's concept to a title string.
@@ -84,7 +84,7 @@ export function fReporter() {
       const sLevel = oIssue.sLevel;
       const sClassRow = sLevel === 'ERROR' ? 'err' : sLevel === 'WARN' ? 'wrn' : 'inf';
       return `<tr class="${sClassRow}">
-        <td>${sLevel}</td>
+        <td>${oLevelIcon[sLevel]}${sLevel}</td>
         <td>${oIssue.sCode}</td>
         <td>${fEsc(oIssue.sNameFile ?? '')}</td>
         <td>${fEsc(fTitleConcept(oIssue.sConcept) ?? '')}</td>
@@ -119,9 +119,9 @@ export function fReporter() {
 <p>Generated: ${new Date().toLocaleString()}</p>
 ${sLogIn ? `<pre class="log">${fEsc(sLogIn.trim())}</pre>` : ''}
 <div class="summary">
-  <span style="color:#c00">❌ ${fError().length} errors</span>
-  <span style="color:#c60">⚠️ ${fWarn().length} warnings</span>
-  <span style="color:#069">ℹ️ ${fInfo().length} info</span>
+  <span style="color:#c00">🔴 ${fError().length} errors</span>
+  <span style="color:#c60">🔶 ${fWarn().length} warnings</span>
+  <span style="color:#069">🔵 ${fInfo().length} info</span>
 </div>
 <input type="text" id="filter" placeholder="Filter by file or message..." oninput="filterRows(this.value)">
 <table>

@@ -139,6 +139,29 @@ function fActivate(context) {
     if (!bDouble || !fWholeWord(oEd, oSel)) return;
     if (oDoc.uri.scheme !== 'file' || !/^Mcsh.*\.last\.html$/i.test(path.basename(oDoc.uri.fsPath))) return;
     const oLine = oDoc.lineAt(oSel.start.line);
+    const sEol = oDoc.eol === vscode.EndOfLine.CRLF ? '\r\n' : '\n';
+    // 'search_for:X.': insert '===' and the-names that begin with X
+    const sTerm = omRelInsert.fSearchFor(oLine.text);
+    if (sTerm) {
+      if (oLine.lineNumber + 1 < oDoc.lineCount && /^\s*<br>===/.test(oDoc.lineAt(oLine.lineNumber + 1).text)) {
+        vscode.window.setStatusBarMessage('Mcsh: search results are already under this line.', 4000);
+        return;
+      }
+      let sRootS = path.dirname(oDoc.uri.fsPath);
+      while (!fs.existsSync(path.join(sRootS, 'dirNamidx'))) {
+        const sUp = path.dirname(sRootS);
+        if (sUp === sRootS) { vscode.window.showWarningMessage('Mcsh: no dirNamidx above this file.'); return; }
+        sRootS = sUp;
+      }
+      let aFound;
+      try { aFound = omRelInsert.fSearchLines(sRootS, sTerm); } catch (oErr) {
+        vscode.window.showWarningMessage('Mcsh: name-index read failed: ' + oErr.message);
+        return;
+      }
+      const sIndentS = oLine.text.match(/^\s*/)[0];
+      oEd.edit((oB) => oB.insert(oLine.range.end, ['==='].concat(aFound).map(s => sEol + sIndentS + '<br>' + s).join('')));
+      return;
+    }
     // a '!@' reference-line goes to its target, like openByCodeOnly
     const sRef = omRelInsert.fRefOfLine(oLine.text);
     if (sRef) {
@@ -194,7 +217,6 @@ function fActivate(context) {
       vscode.window.showWarningMessage('Mcsh: name-index read failed: ' + oErr.message);
       return;
     }
-    const sEol = oDoc.eol === vscode.EndOfLine.CRLF ? '\r\n' : '\n';
     oEd.edit((oB) => oB.insert(oLine.range.end, aLine.map(s => sEol + s).join('')));
   }));
   // Open a McsHitp page BY CODE: prompt a Mcs-code prefilled with the current file's
@@ -962,7 +984,7 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">Valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-current<span class="clsKbd">Ctrl+Alt+P V V</span></div>
+          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
           <div class="clsItem" title="name:: remove duplicated lines" data-cmd="cmdValidName01">Name01-duplicate-line</div>
         </div>
       </div>

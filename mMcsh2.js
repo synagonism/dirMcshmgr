@@ -58,6 +58,8 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-3-0.2026-11-02: dblclick on the-head McshEngl.X:generic lists the-generics of its own generic-tree (links from the-name-index), no X:Y names',
+    'mMcsh2.js.27-2-0.2026-11-02: dblclick on search_for:X. searches X',
     'mMcsh2.js.27-1-0.2026-11-01: dblclick on * X:generic inserts the-generics of its generic-tree',
     'mMcsh2.js.27-0-0.2026-10-31: generic-tree names X:generic (was X_Gntr), dblclick on generic expands left, only the-head lists generics',
     'mMcsh2.js.26-1-0.2026-10-23: dblclick ...entity_Gntr inserts generic-chain',
@@ -825,6 +827,14 @@ let fContainersInsert = function () {
     if (sSelection.startsWith(sWvPrefix) && /^[A-Za-z]/.test(sSelection.slice(sWvPrefix.length))) {
       if (await fPreviewReference(sSelection.replace(/[.:/;@+'-]+$/, ''))) return
     }
+    // 'search_for:Mvre.': search the-term after ':' and before '.'
+    // (a-click on 'search_for' selects 'search_for:Mvre.', a-click on 'Mvre' selects 'Mvre.')
+    const
+      oSelSF = window.getSelection(),
+      aLineSF = oSelSF && oSelSF.rangeCount ? oSelSF.getRangeAt(0).startContainer.textContent.match(/search_for:([^\s.,<]+)/) : null,
+      aSearchFor = sSelection.match(/search_for:([^\s.,<]+)/) ||
+        (aLineSF && sSelection.replace(/\.+$/, '') === aLineSF[1] ? aLineSF : null)
+    if (aSearchFor) sSelection = aSearchFor[1]
     if (sSelection !== '') {
       sSelection = sSelection.replace(/[-_'.:/;@+]*$/, '')
       // drop a-leading English article so 'the-name'/'a-name' search as 'name'
@@ -832,7 +842,8 @@ let fContainersInsert = function () {
       else if (sSelection.startsWith('a-'))  sSelection = sSelection.slice(2)
       if (sSelection.startsWith('_'))  sSelection = sSelection.slice(1) //_DESCRIPTION
       if (sSelection.startsWith('cpt'))  sSelection = 'concept' + sSelection.slice(3)
-      oEltTabSearchIpt.value = sSelection + ' '
+      // a-trailing space searches whole names; search_for searches names that begin with the-term
+      oEltTabSearchIpt.value = sSelection + (aSearchFor ? '' : ' ')
       if (sSelection.startsWith('http')) {
         window.open(sSelection, '_blank')
       } else {
@@ -1591,7 +1602,7 @@ let fContainersInsert = function () {
     if (!sMmn) return false
     const
       // '* X:generic,' is a-generic: insert the-generics of ITS generic-tree;
-      // only the-head 'McshEngl.X:generic' lists from the-name-index
+      // the-head 'McshEngl.X:generic' lists the-generics of its OWN generic-tree (fGenericOwn)
       bGeneric = sWord === 'generic' && !/\*\s*McshEngl\./.test(sTxt),
       oNext = oNode.nextElementSibling
     // toggle off: a-findings-list already sits right under THIS trigger-line
@@ -1657,7 +1668,34 @@ let fContainersInsert = function () {
       return aoOut
     }
 
-    const aoSpec = bGeneric ? [] : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
+    // the-head 'McshEngl.X:generic' lists the-generics of its OWN generic-tree (the-lines after
+    // the-first '===', up to a-labeled group): a-'Y:generic' item gets its link from the-name-index,
+    // any other item (a-link, a-name!@ref) is-kept as-is. NO 'X:Y' names are-needed.
+    async function fGenericOwn(oPIn) {
+      const
+        aL = fLines(oPIn).map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim()),
+        aOut = []
+      for (let n = aL.indexOf('===') + 1; n > 0 && n < aL.length; n++) {
+        if (aL[n].startsWith('===') && aL[n] !== '===') break
+        if (aL[n] === '===') { aOut.push('==='); continue }
+        if (!aL[n].startsWith('*')) continue
+        // '...entity:generic' is the-chain trigger: kept as-is
+        const aG = /^\*\s*\.\.\./.test(aL[n]) ? null : aL[n].match(/^\*\s*([^\s,<!*]+):generic(?=[,!\s]|$)/)
+        if (!aG) { aOut.push(aL[n]); continue }
+        const sUrl = await fNameUrl(aG[1] + ':generic')
+        if (!sUrl) { aOut.push(aL[n]); continue }
+        const
+          sFile = sUrl.split('#')[0],
+          sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
+          sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : ''
+        // the-rest of the-line stays: 'entity:generic (the-most-generic),'
+        aOut.push('* ' + aG[1] + ':generic!@' + sStem + sHash + aL[n].slice(aG[0].length))
+      }
+      while (aOut[aOut.length - 1] === '===') aOut.pop()
+      return aOut
+    }
+    if (sWord === 'generic' && !bGeneric) aGeneric = await fGenericOwn(oP)
+    const aoSpec = (bGeneric || sWord === 'generic') ? [] : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
     // build the-findings-list and insert it right under THIS trigger-line, below a-'---'
     const oSpan = document.createElement('span')

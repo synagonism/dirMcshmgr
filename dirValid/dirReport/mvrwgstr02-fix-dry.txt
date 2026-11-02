@@ -1,0 +1,19 @@
+MvrwGstr02 fix: G lists its specific S — 2026-11-02   DRY=true
+
+warnings: 12 | generics G: 9 | specific-trees extended: 8 | new specific-trees: 1 | lines added: 24 | skipped: 0 | files (dry)
+
+=== ADDED-TO-SPECIFIC-TREE (8)
+  McshHlth000002  idOgnHmnsptr  organ:generic  += 2: OganTooth!@McshHlth000002#idBdyHmn110, OganSpinal_cord!@McshHlth000019#idOgnHmn037   (from McshHlth000002:10122, McshHlth000019:5488)
+  McshHlth000005  idMsclHmnsptr  OganMuscle:generic  += 1: muscleMyocardium!@McshHlth000002#idHrtHmnatt005   (from McshHlth000002:6849)
+  McshHlth000002  idGlndHmn001sptr  GlndEndocrine:generic  += 2: adrenal_medulla!@McshHlth000002#idBdyHmn546, adrenal-cortex!@McshHlth000002#idBdyHmn545   (from McshHlth000002:3171, McshHlth000002:3140)
+  McshCor000018  idBrngHmnFct001sptr  FctgFeeling:generic  += 2: FctgEmoting!@McshCor000018#idBrngHmnFct004, FctgSensing!@McshCor000018#idBrngHmnFct003   (from McshCor000018:2792, McshCor000018:282)
+  McshCor000018  idBrngHmnFct006sptr  FctgCognizing:generic  += 1: FctgSensing!@McshCor000018#idBrngHmnFct003   (from McshCor000018:282)
+  McshHlth000002  idBdyHmnatt002sptr  Hmbdnode:generic  += 1: SystCentralNervous!@McshHlth000019#idSysNrvsatt002   (from McshHlth000019:1980)
+  McshStn000009  idSocHumnatt053sptr  culture:generic  += 1: dayWorkNo!@McshCor000006#idTimeUomDayWorkN   (from McshCor000006:3749)
+  McshTch000003  idMchn001sptr  vehicle:generic  += 1: metro!@McshTch000003#idMchn009   (from McshTch000003:1115)
+
+=== NEW-SPECIFIC-TREE (1)
+  McshHlth000003  idMinddongEdtgsptr  DongEducating.specific  with 1: DongLearning!@McshHlth000003#idMinddongLrng
+
+=== SKIPPED (0)
+  (none)

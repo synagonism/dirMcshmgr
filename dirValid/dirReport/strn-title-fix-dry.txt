@@ -1,0 +1,51 @@
+STRN rest: GS-TREE title, generic-tree head (+refs), specific-tree head -> N — 2026-11-02   DRY=true
+
+rows: 16 | files to write: 293
+
+=== TITLE (16)
+  McshHlth000008  idMtrlHrmHmn001gstr  harmful-external-object -> harmful_external_object
+  McshHlth000013  idFoodHmnatt003gstr  food-nutrient -> food_nutrient
+  McshHmn000002  idHmnatt126gstr  human'relative-human -> human'relative_human
+  McshHmn000002  idHmn027gstr  asylum-seaker -> asylum_seaker
+  McshLag000006  idCharCmrgstr  computer-char -> computer_char
+  McshNtr000005  idSysMolsatt004gstr  physical-property -> physical_property
+  McshTchInf000006  idLSrcdsntcDefgstr  Srcdlago-sentence.definition -> Srcdlago_sentence.definition
+  McshTchInf000009  idMcsHitpgstr  Mcshcpt -> Mcsh
+  McshTchInf000015  idAlgntchngstr  netAlgo -> Agnetchain
+  McshTchInf000015  idAlgntstatgstr  chain-stats -> chain_stats
+  McshTchInf000016  idDbcevuCgstr  appending-asset -> appending_asset
+  McshTchInf000021  idEospgmClntgstr  Eos-client -> Eos_client
+  McshTchInf000021  idEospgmAppGamgstr  Agnteos-Dapp.game -> Agnteos_Dapp.game
+  McshTchInf000023  idIotagstr  Iota-net -> Iota_net
+  McshTchInf000024  idSteemacntkeygstr  Steem--key-pair -> Steem__key_pair
+  McshTchInf000031  idLCppsuntPrcsBgstr  Cppzsunt.process-and-processNo -> Cppzsunt.process_and_processNo
+
+=== GNTR-HEAD (10)
+  McshHlth000008  idMtrlHrmHmn001gntr  harmful-external-object:generic -> harmful_external_object:generic
+  McshHlth000013  idFoodHmnatt003gntr  food-nutrient:generic -> food_nutrient:generic
+  McshHmn000002  idHmn027gntr  asylum-seaker:generic -> asylum_seaker:generic
+  McshLag000006  idCharCmrgntr  computer-char:generic -> computer_char:generic
+  McshNtr000005  idSysMolsatt004gntr  physical-property:generic -> physical_property:generic
+  McshTchInf000015  idAlgntstatgntr  chain-stats:generic -> chain_stats:generic
+  McshTchInf000016  idDbcevuCgntr  appending-asset:generic -> appending_asset:generic
+  McshTchInf000021  idEospgmClntgntr  Eos-client:generic -> Eos_client:generic
+  McshTchInf000023  idIotagntr  Iota-net:generic -> Iota_net:generic
+  McshTchInf000024  idSteemacntkeygntr  Steem--key-pair:generic -> Steem__key_pair:generic
+
+=== GNTR-REFS (10)
+  harmful-external-object:generic -> harmful_external_object:generic  2x (head included) in 2 files: McshHlth000002, McshHlth000008
+  food-nutrient:generic -> food_nutrient:generic  1x (head included) in 1 files: McshHlth000013
+  asylum-seaker:generic -> asylum_seaker:generic  1x (head included) in 1 files: McshHmn000002
+  computer-char:generic -> computer_char:generic  278x (head included) in 277 files: McshLag000006, McshUcdU0000, McshUcdU0080, McshUcdU0100, McshUcdU0180, McshUcdU0250, …
+  physical-property:generic -> physical_property:generic  1x (head included) in 1 files: McshNtr000005
+  chain-stats:generic -> chain_stats:generic  2x (head included) in 2 files: McshTchInf000015, McshTchInf000016
+  appending-asset:generic -> appending_asset:generic  7x (head included) in 5 files: McshTchInf000016, McshTchInf000017, McshTchInf000018, McshTchInf000021, McshTchInf000022
+  Eos-client:generic -> Eos_client:generic  1x (head included) in 1 files: McshTchInf000021
+  Iota-net:generic -> Iota_net:generic  1x (head included) in 1 files: McshTchInf000023
+  Steem--key-pair:generic -> Steem__key_pair:generic  1x (head included) in 1 files: McshTchInf000024
+
+=== SPTR-HEAD (1)
+  McshTchInf000024  idSteemacntkeysptr  Steem_key_pair.specific -> Steem__key_pair.specific
+
+=== SKIPPED (0)
+  (none)

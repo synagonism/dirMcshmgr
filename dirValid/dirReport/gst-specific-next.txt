@@ -23,3 +23,48 @@ T57. {2026-10-29} DONE: (1) INH-WRONGNUM: a refining attribute takes its generic
      LEFT: INH-WRONGNUM 2 (techInfo 02_human -> 01_ taken by "01_evaluation of techInfo"; science 14_rlnReferent ~ model'12_evaluation looks
      like a false attr-word match), INH-NONUM 5 (own numbering of the specific: ActgMeasuring, Zhon_lago, SocGlbl — by hand),
      GEN-PARTLY 83 (generics --fix numbered partly). Lists: dirReport/attr-numbering-wrongnum-applied.txt, dirValid/inheritMcsh.txt.
+
+T58. {2026-11-02} DONE: S:G names removed (mMcsh2.js 27-3-0 lists the head's generics from its own generic-tree, so X:Y names are redundant).
+     Before removing a name, G:generic became the FIRST member of S's generic-tree (its own === group right after the head),
+     e.g. McshEngl.acting:generic, === doing:generic, ... (from acting:doing!⇒acting). 210 S:G names: 139 removed in 15 files, 2 passes:
+     REMOVED-ONLY 95 (G already first), INSERTED-FIRST 23, MOVED-FIRST 13, NEW-GENERIC-TREE 6+2 (wholeBody, AskArgoCnpt, literature, metro,
+     JssutOpm, ExophoricArgoCnpt, EsophoricArgoCnpt; GS-TREE for SemuarguDeictic).
+     KEPT 71 (reported): 63 G unresolved (no generic-tree / not in the name-index), 3 reversed Zhon lines, S=G OganStomach,
+     6 without a main-name for a new tree (lambda-calculus, architecture x2, formal-language, rdf:HTML, rdf:subject).
+     Checks: only S:G name lines removed; added only G:generic / === / new-tree lines; sections balanced, no new duplicate id;
+     dangling links 3014 -> 3014; GS-TREE report unchanged (2547 -> 2548 sections, the new one conforming).
+     Browser: dblclick McshEngl.acting:generic lists doing:generic!@McshCor000004#idDnggntr first.
+     gstree-report.js updated to the current conventions (X:generic, ...entity:generic, X.specific only, X'generic_specific_tree).
+     OPEN: NAM 619 GS-TREEs still have the dash names X'generic-specific-tree + X'specific-generic-tree (not X'generic_specific_tree).
+     List: dirReport/sg-names-fix-applied.txt, dirReport/gst-report.txt.
+     CORRECTION {2026-11-02}: the validator codes are now MvrwGstr01/02 (MvrlGstr01/02 found nothing): T58 raised MvrwGstr02 5 -> 17
+     (G inserted first in S's generic-tree, but G's specific-tree lacked S). Fixed with scratchpad/gstr02-fix2.js (the T53 fix on :generic):
+     12 items added to 8 specific-trees (organ, OganMuscle, GlndEndocrine, FctgFeeling, FctgCognizing, Hmbdnode, culture, vehicle)
+     + a new specific-tree idMinddongEdtgsptr (DongEducating.specific: DongLearning). MvrwGstr01/02 now 1 + 5 = 6, as before T58.
+     List: dirReport/mvrwgstr02-fix-applied.txt.
+
+T59. {2026-11-02} DONE: GS-TREE name:: -> one line McshEngl.X'generic_specific_tree, (NAM 619 -> 21).
+     571 paragraphs in 295 files: the dash pair X'generic-specific-tree + X'specific-generic-tree became X'generic_specific_tree
+     (no other lines in them). 27 had an old X (Mcsmng, bio'doing, Enttevlg, ...), renamed to the title's X = main-name = generic-tree head.
+     Only these name lines changed (diff: -571 -571 -27 / +598); MvrwGstr01/02 6 -> 6; GS-TREE conforming 1911 -> 2482.
+     LEFT NAM 21 (not changed): 18 titles still with dashes while name:: has the underscore (computer-char / computer_char, Iota-net,
+     Steem--key-pair, ...: a title sync), 2 titles differ from the main-name (netAlgo / Agnetchain, Mcshcpt / Mcsh), McshWrdidxElln24oméya.
+     Also open: STRN 44 (specific-tree heads with the old X, e.g. McshEngl.Mcsmng.specific), GTRN 15, XNAME 11.
+     Lists: dirReport/gstrnam-fix-applied.txt, dirReport/gstrnam-stale-applied.txt, dirReport/gst-report.txt.
+
+T60. {2026-11-02} DONE: STRN 44 -> 0 (specific-tree:: head McshEngl.X.specific, with the GS-TREE's X).
+     27 heads with the old X renamed to the title X (Mcsmng.specific -> Mcsdoing.specific, bio'doing -> Biodoing, ...);
+     SystAuto (McshCor000022) got its missing head McshEngl.SystAuto.specific.
+     16 stale titles (user's choice "titles + gntr heads"): N = the GS-TREE name X (no dash); title -> N (computer-char -> computer_char,
+     netAlgo -> Agnetchain, Mcshcpt -> Mcsh, ...); 10 dashed generic-tree heads -> N:generic with all refs (computer_char:generic 278x
+     in 277 files, 276 of them McshUcd; appending_asset 7x; 293 files written); Steem_key_pair.specific -> Steem__key_pair.specific.
+     No old head name left; no dirMcshmgr generator writes computer-char. GS-TREE conforming 2482 -> 2523; NAM 21 -> 5, GTRN 15 -> 9,
+     XNAME 11 -> 9; MvrwGstr01/02 6 -> 6.
+     LEFT NAM 4 (all-dash GS-TREEs: Ddash-net'wallet, Steem-transaction'operation, Blockstack-net'human, DnDiem-Cli'command) + McshWrdidx.
+     Lists: dirReport/strn-fix-applied.txt, dirReport/strn-title-fix-applied.txt.
+
+T61. {2026-11-02} DONE: NAM 4 -> 0 (all-dash GS-TREEs): title, generic-tree head and specific-tree head -> the GS-TREE name X
+     (Ddash_net'wallet, Steem_transaction'operation, Blockstack_net'human, DnDiem_Cli'command); 4 files (McshTchInf000016/24/26/28),
+     no other refs to the heads. GS-TREE conforming 2523 -> 2527; MvrwGstr01/02 6 -> 6. NAM left 1: McshWrdidxElln24oméya.
+     Not changed: the wholes' own name:: still have the dash names (e.g. McshTchInf000016:13294 McshEngl.Ddash-net'wallet,).
+     List: dirReport/nam4-fix-applied.txt.
