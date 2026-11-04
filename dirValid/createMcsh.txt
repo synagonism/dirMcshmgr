@@ -1,10 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --name --file McshTchInf000009 --fix: C:\dirNodews\dirMcsh
+  createMcsh --code Hvre01 --all --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · 3 names created · 0 skipped
+  0 files written · Hvre01: 0 issues · 0 fixed · 0 skipped
   written, no backup: see git diff
 
-=== NAME (3) — a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name
-  McshTchInf000009:3377  #idLMcshvmmenuValdnam  McshEngl.Mhvmmenu.valid
-  McshTchInf000009:3260  #idLMcshvmmenuFileIxaunam  McshEngl.Mhvmfile.Index_and_upload
-  McshTchInf000009:3268  #idLMcshvmmenuFileIxolnam  McshEngl.Mhvmfile.Index_only
+=== NOISSUE (1) — the-rule has no issue in the-file
+  worldview  Hvre01: nothing to fix in 623 files

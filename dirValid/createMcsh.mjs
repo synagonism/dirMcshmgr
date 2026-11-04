@@ -1213,6 +1213,9 @@ function fPlanIdMap(sRawIn, sNameShortIn, aoIssueIn, fIdNewIn) {
 /**
  * DOING: Hvre01: a-duplicated id keeps its FIRST element, the-links go there; every
  *   later element gets X_2, X_3 ... with its own clsHide self-anchor.
+ *   The-number goes BEFORE the-heading-level of a-heading id: idXH3 → idX_2H3, because
+ *   "H3" says <h3>. A-duplicated section X takes its own duplicated ids along:
+ *   X → X_2, XH3 → X_2H3, Xdsn → X_2dsn (the-ids inside it that start with X).
  */
 function fPlanIdDup(sRawIn, sNameShortIn, aoIssueIn) {
   const aLine = sRawIn.split('\n');
@@ -1221,33 +1224,57 @@ function fPlanIdDup(sRawIn, sNameShortIn, aoIssueIn) {
   const oSetIdFile = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
   // a-line can hold 2 duplicated ids: its changes add up here, ONE edit per line
   const oMapEdit = new Map();
-  for (const oIssue of aoIssueIn) {
-    const sId = oIssue.sMessage.match(/Duplicate id "([^"]+)"/)?.[1];
-    if (!sId) continue;
+  // the-new form of X with number nK: idXH3 → idX_2H3, idX → idX_2
+  const fIdNumbered = (sIdIn, nKIn) => {
+    const aH = sIdIn.match(/^(.+?)(H[1-9])$/);
+    return aH ? `${aH[1]}_${nKIn}${aH[2]}` : `${sIdIn}_${nKIn}`;
+  };
+  // the-duplicated ids, the-SHORTEST first: a-section X goes before its XH3, Xdsn
+  const aIdDup = [...new Set(aoIssueIn.map(oIssue => oIssue.sMessage.match(/Duplicate id "([^"]+)"/)?.[1]).filter(Boolean))]
+    .sort((sA, sB) => sA.length - sB.length);
+  const oSetIdDup = new Set(aIdDup);
+  const oSetDone = new Set();    // "id@line": renamed already, with its whole
+  for (const sId of aIdDup) {
     const aAt = aLine.map((sLine, nL) => [sLine, nL]).filter(([sLine]) => sLine.includes(`id="${sId}"`)).map(aP => aP[1]);
-    let nNext = 2;
     for (const nAt of aAt.slice(1)) {
+      if (oSetDone.has(`${sId}@${nAt}`)) continue;
       if (fCount(aLine[nAt], `id="${sId}"`) !== 1) {
         aoNote.push(`SKIP   ${sNameShortIn}:${nAt + 1}  #${sId} twice on one line: fix by hand`);
         continue;
       }
-      while (oSetIdFile.has(`${sId}_${nNext}`)) nNext++;
-      const sIdNew = `${sId}_${nNext++}`;
-      oSetIdFile.add(sIdNew);
       const [, nTo] = fFindElmtRange(aLine, nAt);
-      // its own self-anchor: the-first clsHide to #X after its id, before a-next element
-      let nAnchor = -1;
+      // the-element's own duplicated ids: X itself, and inside it the-ids that start with X
+      const aoOwn = [];
       for (let nL = nAt; nL <= nTo; nL++) {
-        if (nL > nAt && /<(p|section|div|h[1-9])\b[^>]*\bid=/.test(aLine[nL])) break;
-        if (aLine[nL].includes(`class="clsHide" href="#${sId}"`)) { nAnchor = nL; break; }
+        for (const aM of aLine[nL].matchAll(/\bid="([^"]+)"/g)) {
+          const sOwn = aM[1];
+          if ((nL === nAt && sOwn === sId) || (sOwn !== sId && sOwn.startsWith(sId) && oSetIdDup.has(sOwn) && !oSetDone.has(`${sOwn}@${nL}`))) {
+            aoOwn.push({ sOwn, nL });
+          }
+        }
       }
-      for (const nL of new Set([nAt, nAnchor].filter(n => n !== -1))) {
+      // the-first free number for ALL of them
+      let nK = 2;
+      const fNewOf = (sOwnIn, nKIn) => sOwnIn === sId ? fIdNumbered(sId, nKIn)
+        : fIdNumbered(sId.replace(/H[1-9]$/, ''), nKIn).replace(/H[1-9]$/, '') + sOwnIn.slice(sId.replace(/H[1-9]$/, '').length);
+      while (aoOwn.some(oO => oSetIdFile.has(fNewOf(oO.sOwn, nK)))) nK++;
+      for (const { sOwn, nL } of aoOwn) {
+        const sIdNew = fNewOf(sOwn, nK);
+        oSetIdFile.add(sIdNew);
+        oSetDone.add(`${sOwn}@${nL}`);
         let sLine = oMapEdit.get(nL) ?? aLine[nL];
-        if (nL === nAt) sLine = sLine.replace(`id="${sId}"`, `id="${sIdNew}"`);
-        if (nL === nAnchor) sLine = sLine.replace(`class="clsHide" href="#${sId}"`, `class="clsHide" href="#${sIdNew}"`);
+        sLine = sLine.replace(`id="${sOwn}"`, `id="${sIdNew}"`);
         oMapEdit.set(nL, sLine);
+        // its own self-anchor: the-first clsHide to #sOwn after its id, inside the-element
+        for (let nA = nL; nA <= nTo; nA++) {
+          const sNow = oMapEdit.get(nA) ?? aLine[nA];
+          if (sNow.includes(`class="clsHide" href="#${sOwn}"`)) {
+            oMapEdit.set(nA, sNow.replace(`class="clsHide" href="#${sOwn}"`, `class="clsHide" href="#${sIdNew}"`));
+            break;
+          }
+        }
+        aoNote.push(`IDDUP  ${sNameShortIn}:${nL + 1}  #${sOwn} -> #${sIdNew} (the-first keeps #${sOwn})`);
       }
-      aoNote.push(`IDDUP  ${sNameShortIn}:${nAt + 1}  #${sId} -> #${sIdNew} (the-first keeps #${sId})`);
     }
   }
   for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
@@ -1935,7 +1962,7 @@ async function fMain() {
       if (oFix.sKind === 'link') {
         // a-link's target can be any file: the-whole worldview is parsed ONCE (~40 s)
         aoFileHitpAll = fReadFileAllHitp(sNameDir);
-        aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true);
+        aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true, [sCodeOne]);
       }
       let nIssue = 0;
       for (const sPathFile of aPathFile) {
@@ -1947,9 +1974,9 @@ async function fMain() {
       if (aoIssueAll) {
         aoIssue = aoIssueAll;
       } else if (sCodeOne.startsWith('H')) {
-        aoIssue = fRunChecksHitp([fReadFileHitp(sPathFile)], sNameDir, true);
+        aoIssue = fRunChecksHitp([fReadFileHitp(sPathFile)], sNameDir, true, [sCodeOne]);
       } else if (sNameFile.startsWith('Mcsh')) {
-        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile))], sNameDir, true);
+        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile))], sNameDir, true, [sCodeOne]);
       }
       aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeOne && oIssue.sNameFile === sNameFile);
       nIssue += aoIssue.length;

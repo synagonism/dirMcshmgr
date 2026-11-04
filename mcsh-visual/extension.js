@@ -1259,19 +1259,30 @@ async function fRunValidCurrent(fStatusIn) {
 
   const nStart = Date.now();
   await fRunTaskWait('validate current-FILE');
-  await fOpenReport(sDirValid, nStart, fStatusIn);
+  await fOpenReport(sDirValid, nStart, fStatusIn, oPick.sMode === 'fix');
 }
 
 /**
  * DOING: it opens the-validator-report of a-run that started at nStartIn, in the-default
  *   browser, in a-new tab. An-older report is NOT opened: the-run wrote none.
+ *   After a-fix (bFixIn), the-fix report createMcsh.txt is added at the-report's end:
+ *   what was fixed and skipped, under what the-validator found after it.
  */
-async function fOpenReport(sDirValidIn, nStartIn, fStatusIn) {
+async function fOpenReport(sDirValidIn, nStartIn, fStatusIn, bFixIn = false) {
   const sReport = path.join(sDirValidIn, 'validator-report.html');
   // an old report must not pass as this run's: mtime has at least 1s resolution here
   let nMtime = 0;
   try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
   if (nMtime < nStartIn - 1000) return fStatusIn('validator wrote no report, see the terminal');
+  if (bFixIn) {
+    try {
+      const sFixLog = fs.readFileSync(path.join(sDirValidIn, 'createMcsh.txt'), 'utf8');
+      const sEsc = sFixLog.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const sHtml = fs.readFileSync(sReport, 'utf8');
+      const sAdd = `<h2 id="idFix">the fix: createMcsh.txt</h2>\n<pre class="log">${sEsc.trim()}</pre>\n`;
+      fs.writeFileSync(sReport, sHtml.includes('</body>') ? sHtml.replace('</body>', sAdd + '</body>') : sHtml + sAdd);
+    } catch (oErr) { /* no fix report: the-validator report alone */ }
+  }
   // a-new ?_r per run: a-new URL, so the-browser opens a-new tab
   const sUrl = await fIsServerUp() ? fDisplayUrlForPath(sReport) : '';
   vscode.env.openExternal(sUrl ? vscode.Uri.parse(sUrl + '?_r=' + Date.now()) : vscode.Uri.file(sReport));
@@ -1464,7 +1475,7 @@ async function fRunValidRule(fStatusIn, sScopeIn = 'file') {
     : bDirIn
     ? ['../dirMcshmgr/dirValid/validatorMcsh', sDirAbs, '--code', oRule.sCode]
     : ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', sBase, '--code', oRule.sCode], sRoot);
-  await fOpenReport(sDirValid, nStart, fStatusIn);
+  await fOpenReport(sDirValid, nStart, fStatusIn, oPick.bFix);
 }
 
 function fDeactivate() {}

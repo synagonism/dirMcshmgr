@@ -387,14 +387,45 @@ export function fReadFileHitp(sPathFile) {
 // ─── directory scanner ────────────────────────────────────────────────────────
 
 export function fReadFileAllHitp(sPathDir) {
-  let aPathFile;
+  return fFindPathAllHitp(sPathDir).map(sPath => fReadFileHitp(sPath));
+}
+
+/**
+ * OUTPUT: the-paths of the-.last.html files under a-dir (node_modules skipped).
+ */
+function fFindPathAllHitp(sPathDir) {
   try {
     const sPattern = path.join(sPathDir, '**/*.last.html').replace(/\\/g, '/');
-    aPathFile = globSync(sPattern, { ignore: '**/node_modules/**' });
+    return globSync(sPattern, { ignore: '**/node_modules/**' });
   } catch {
-    aPathFile = fWalkDir(sPathDir);
+    return fWalkDir(sPathDir);
   }
-  return aPathFile.map(sPath => fReadFileHitp(sPath));
+}
+
+/**
+ * DOING: a-LIGHT read for the-duplicate-id check (Hvre01) alone: only the-ids, as
+ *   fReadFileHitp finds them (<code>/<pre> examples blanked), without the-full parse,
+ *   which is ~35 ms a-file; the-other fields are empty.
+ * OUTPUT: a-file object with sNameFile, sPathFile, oSetId, aoIdDup, oMapIdLine.
+ */
+export function fReadFileHitpIdOnly(sPathFile) {
+  const oFile = {
+    sType: 'fileHitp', sPathFile, sNameFile: path.basename(sPathFile),
+    sNameDir: path.basename(path.dirname(sPathFile)), sError: null,
+    sNameTitle: '', sVersion: null, nLineTitle: null, aoSect: [], aoElmt: [],
+    oSetId: new Set(), aoIdDup: [], aLinks: [], oMapIdLine: new Map(), oMapLinkLine: new Map(),
+    aoTagBad: [], aoTagCase: [], aoAttrBad: [],
+  };
+  let sFileRaw;
+  try { sFileRaw = fs.readFileSync(sPathFile, 'utf8'); } catch (e) { oFile.sError = e.message; return oFile; }
+  const sHtmlId = fBlankCodePre(sFileRaw);
+  oFile.oSetId = fExtractId(sHtmlId);
+  oFile.aoIdDup = fFindIdDuplicate(sHtmlId);
+  return oFile;
+}
+
+export function fReadFileAllHitpIdOnly(sPathDir) {
+  return fFindPathAllHitp(sPathDir).map(sPath => fReadFileHitpIdOnly(sPath));
 }
 
 function fWalkDir(sDir) {

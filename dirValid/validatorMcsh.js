@@ -15,7 +15,7 @@
  *                                             # the-report keeps ONLY these rules
  */
 
-import { fReadFileHitp, fReadFileAllHitp } from './parserHitp.js';
+import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly, fReadFileAllHitpIdOnly } from './parserHitp.js';
 import { fRunChecksHitp } from './structuralHitp.js';
 import { fReadFileMcsh } from './parserMcsh.js';
 import { fRunChecksMcsh } from './structuralMcsh.js';
@@ -30,6 +30,8 @@ const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
+    'validatorMcsh.js.0-8-0.2026-11-04: --code Hvre01 alone reads only the-ids (fReadFileHitpIdOnly), ~5 s for the-worldview, not ~24 s',
+    'validatorMcsh.js.0-7-0.2026-11-04: --code runs ONLY the-checks of its rules; a-Hitp rule does not read the-Mcsh files',
     'validatorMcsh.js.0-6-0.2026-11-04: --code, the-report keeps only the-given rules',
     'validatorMcsh.js.0-5-0.2026-11-01: the-report shows the-rules used, as the-terminal',
     'validator.js.0-4-0.2026-09-05: merge Hitp+Mcsh',
@@ -110,6 +112,9 @@ async function fMain() {
   };
 
   // ── parse every file as generic Hitp ──────────────────────────────────────
+  // --code Hvre01 alone needs only the-ids of the-files: the-light read, not the-full parse
+  const bIdOnly = aCode.length > 0 && aCode.every(sCode => sCode === 'Hvre01') && !bUseAi;
+  const fReadOne = bIdOnly ? fReadFileHitpIdOnly : fReadFileHitp;
   let aoFileHitp;
   if (sPathList) {
     const sPathListAbs = path.isAbsolute(sPathList) ? sPathList : path.join(sNameDir, sPathList);
@@ -117,33 +122,41 @@ async function fMain() {
     console.log(`📋 List: ${sPathList} (${aEntry.length} entries)`);
     if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
     for (const sMissing of aMissing) console.log(`   ⚠️  not found: ${sMissing}`);
-    aoFileHitp = aPathFile.map(sPath => fReadFileHitp(sPath));
+    aoFileHitp = aPathFile.map(sPath => fReadOne(sPath));
     console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
   } else if (sNameIdRela) {
     const sPathFile = path.isAbsolute(sNameIdRela) ? sNameIdRela : path.join(sNameDir, sNameIdRela);
     console.log(`📄 Single-file mode: ${sNameIdRela}`);
     if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
-    aoFileHitp = [fReadFileHitp(sPathFile)];
+    aoFileHitp = [fReadOne(sPathFile)];
   } else {
     console.log(`📂 Scanning: ${sNameDir}`);
     if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
-    aoFileHitp = fReadFileAllHitp(sNameDir);
+    aoFileHitp = bIdOnly ? fReadFileAllHitpIdOnly(sNameDir) : fReadFileAllHitp(sNameDir);
     console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
   }
 
+  // with --code ONLY the-checks of these rules run: Hvr.. are Hitp-checks, Mvr.. Mcsh-checks
+  const bCheckHitp = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('H'));
+  const bCheckMcsh = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('M')) || bUseAi;
+
   // ── 1. Hitp checks (every file) ────────────────────────────────────────────
-  console.log('🔍 Running Hitp checks...');
-  oReporter.fAddAll(fKeepCode(fRunChecksHitp(aoFileHitp, sNameDir)));
+  if (bCheckHitp) {
+    console.log('🔍 Running Hitp checks...');
+    oReporter.fAddAll(fKeepCode(fRunChecksHitp(aoFileHitp, sNameDir, false, aCode)));
+  }
 
   // ── 2. Mcsh checks (files named Mcsh* only) ─────────────────────────────────
   // fReadFileMcsh(sNameDir, sNameIdRela) is async: await them all, and give it
-  // the-worldview-relative-id, NOT the-full-path.
-  const aoFileMcsh = await Promise.all(
+  // the-worldview-relative-id, NOT the-full-path. A-Hitp rule alone does not read them (the-slow part).
+  const aoFileMcsh = !bCheckMcsh ? [] : await Promise.all(
     aoFileHitp
       .filter(oFile => oFile.sNameFile.startsWith('Mcsh'))
       .map(oFile => fReadFileMcsh(sNameDir, path.relative(sNameDir, oFile.sPathFile))));
-  console.log(`\n🔍 Running Mcsh checks (${aoFileMcsh.length} Mcsh files)...`);
-  oReporter.fAddAll(fKeepCode(fRunChecksMcsh(aoFileMcsh, sNameDir)));
+  if (bCheckMcsh) {
+    console.log(`\n🔍 Running Mcsh checks (${aoFileMcsh.length} Mcsh files)...`);
+    oReporter.fAddAll(fKeepCode(fRunChecksMcsh(aoFileMcsh, sNameDir, false, aCode)));
+  }
 
   // ── 3. AI semantic checks (Mcsh files, requires DeepSeek API key) ──────────
   if (bUseAi) {

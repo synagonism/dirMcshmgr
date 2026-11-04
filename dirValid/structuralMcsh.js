@@ -70,6 +70,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-43-0.2026-11-04: fRunChecksMcsh aCodeIn: only the-checks of these rules',
     'structuralMcsh.js.0-42-0.2026-11-04: MvrwSect01..04 check also the-sections without valid names',
     'structuralMcsh.js.0-41-0.2026-11-01: code change to Mvrw or Mvre',
     'structuralMcsh.js.0-40-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
@@ -938,147 +939,48 @@ function fCheckIdSpace(aoCnptFile) {
   return aoIssue;
 }
 
-function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false) {
+function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
   const aoAll = [];
   // bQuietIn: no progress-lines, for reportMcsh.mjs which prints its own report
   const fWrite = sIn => { if (!bQuietIn) process.stdout.write(sIn); };
   const fLog   = sIn => { if (!bQuietIn) console.log(sIn); };
-
-  fWrite('   MvreFile01    File-Mcsh (idOverview)... ');
-  const aoFileMcs = fCheckCnptFile(aoCnptFile);
-  aoAll.push(...aoFileMcs);
-  fLog(`${aoFileMcs.length} issues`);
-
-  fWrite('   MvreName01    Duplicate names (every McsLago)... ');
-  const aoDup = fCheckDuplicateName(aoCnptFile);
-  aoAll.push(...aoDup);
-  fLog(`${aoDup.length} issues`);
-
-  fWrite('   MvreMain01 Main-names no-hyphen... ');
-  const aoMainHyphen = fCheckMainNameHyphen(aoCnptFile);
-  aoAll.push(...aoMainHyphen);
-  fLog(`${aoMainHyphen.length} issues`);
-
-  fWrite('   MvrwSect01/MvrwSect02 Section descriptions... ');
-  const aoDesc = fCheckDescription(aoCnptFile);
-  aoAll.push(...aoDesc);
-  fLog(`${aoDesc.length} issues`);
-
-  fWrite('   MvrwSect03/MvrwSect04 Section names... ');
-  const aoName = fCheckName(aoCnptFile);
-  aoAll.push(...aoName);
-  fLog(`${aoName.length} issues`);
-
-  fWrite('   MvrwMisc01    Dates... ');
-  const aoDate = fCheckDate(aoCnptFile);
-  aoAll.push(...aoDate);
-  fLog(`${aoDate.length} issues`);
-
-  fWrite('   MvrwId01  Ids non-english-letters... ');
-  const aoIdLetter = fCheckIdLetter(aoCnptFile);
-  aoAll.push(...aoIdLetter);
-  fLog(`${aoIdLetter.length} issues`);
-
-  fWrite('   MvrwId02  Ids dong_DOING_suffix... ');
-  const aoIdDong = fCheckIdDong(aoCnptFile);
-  aoAll.push(...aoIdDong);
-  fLog(`${aoIdDong.length} issues`);
-
-  fWrite('   MvrwId03  Ids space_in_id... ');
-  const aoIdSpace = fCheckIdSpace(aoCnptFile);
-  aoAll.push(...aoIdSpace);
-  fLog(`${aoIdSpace.length} issues`);
-
-  fWrite('   MvrwId04  Ids eval_evaluation_suffix... ');
-  const aoIdEval = fCheckIdEval(aoCnptFile);
-  aoAll.push(...aoIdEval);
-  fLog(`${aoIdEval.length} issues`);
-
-  fWrite('   MvrwId05  Ids evog_evoluting_suffix... ');
-  const aoIdEvog = fCheckIdEvog(aoCnptFile);
-  aoAll.push(...aoIdEvog);
-  fLog(`${aoIdEvog.length} issues`);
-
-  fWrite('   MvrwId06  Ids irsc_info_resource_suffix... ');
-  const aoIdIrsc = fCheckIdIrsc(aoCnptFile);
-  aoAll.push(...aoIdIrsc);
-  fLog(`${aoIdIrsc.length} issues`);
-
-  fWrite('   MvrwId07  Ids pntr_parent_tree_suffix... ');
-  const aoIdPntr = fCheckIdPntr(aoCnptFile);
-  aoAll.push(...aoIdPntr);
-  fLog(`${aoIdPntr.length} issues`);
-
-  fWrite('   MvrwId08  Ids chtr_child_tree_suffix... ');
-  const aoIdChtr = fCheckIdChtr(aoCnptFile);
-  aoAll.push(...aoIdChtr);
-  fLog(`${aoIdChtr.length} issues`);
-
-  fWrite('   MvrwId09  Ids wltr_whole_tree_suffix... ');
-  const aoIdWltr = fCheckIdWltr(aoCnptFile);
-  aoAll.push(...aoIdWltr);
-  fLog(`${aoIdWltr.length} issues`);
-
-  fWrite('   MvrwId10  Ids prtr_part_tree_suffix... ');
-  const aoIdPrtr = fCheckIdPrtr(aoCnptFile);
-  aoAll.push(...aoIdPrtr);
-  fLog(`${aoIdPrtr.length} issues`);
-
-  fWrite('   MvrwId11  Ids gntr_generic_tree_suffix... ');
-  const aoIdGntr = fCheckIdGntr(aoCnptFile);
-  aoAll.push(...aoIdGntr);
-  fLog(`${aoIdGntr.length} issues`);
-
-  fWrite('   MvrwId12  Ids sptr_specific_tree_suffix... ');
-  const aoIdSptr = fCheckIdSptr(aoCnptFile);
-  aoAll.push(...aoIdSptr);
-  fLog(`${aoIdSptr.length} issues`);
-
-  fWrite('   MvrwId13  Ids srtr_structure_suffix... ');
-  const aoIdSrtr = fCheckIdSrtr(aoCnptFile);
-  aoAll.push(...aoIdSrtr);
-  fLog(`${aoIdSrtr.length} issues`);
-
-  fWrite('   MvrwGstr01 specific_has_generic... ');
-  const aoGstrSpcGnc = fCheckGstrSpecificGeneric(aoCnptFile);
-  aoAll.push(...aoGstrSpcGnc);
-  fLog(`${aoGstrSpcGnc.length} issues`);
-
-  fWrite('   MvrwGstr02 generic_has_specific... ');
-  const aoGstrGncSpc = fCheckGstrGenericSpecific(aoCnptFile);
-  aoAll.push(...aoGstrGncSpc);
-  fLog(`${aoGstrGncSpc.length} issues`);
-
-  fWrite('   MvrwMain02 Main-names evolg_evoluting... ');
-  const aoMainEvolg = fCheckMainNameEvolg(aoCnptFile);
-  aoAll.push(...aoMainEvolg);
-  fLog(`${aoMainEvolg.length} issues`);
-
-  fWrite('   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... ');
-  const aoMainEvalg = fCheckMainNameEvalg(aoCnptFile);
-  aoAll.push(...aoMainEvalg);
-  fLog(`${aoMainEvalg.length} issues`);
-
-  fWrite('   MvrwMain04 Main-names doing_DOING... ');
-  const aoMainDoing = fCheckMainNameDoing(aoCnptFile);
-  aoAll.push(...aoMainDoing);
-  fLog(`${aoMainDoing.length} issues`);
-
-  fWrite('   MvrwMain05 Main-names infrsc_info_resource... ');
-  const aoMainInfrsc = fCheckMainNameInfrsc(aoCnptFile);
-  aoAll.push(...aoMainInfrsc);
-  fLog(`${aoMainInfrsc.length} issues`);
-
-  fWrite('   MvrwMain06 Main-names srtr_structure... ');
-  const aoMainSrtr = fCheckMainNameSrtr(aoCnptFile);
-  aoAll.push(...aoMainSrtr);
-  fLog(`${aoMainSrtr.length} issues`);
-
-  fWrite('   MvrwMain07 Main-names attrbase_line... ');
-  const aoMainAttrbase = fCheckMainNameAttrbase(aoCnptFile);
-  aoAll.push(...aoMainAttrbase);
-  fLog(`${aoMainAttrbase.length} issues`);
-
+  // aCodeIn: run ONLY the-checks of these rules (validatorMcsh --code); empty: all
+  const aoCheck = [
+    { aCode: ['MvreFile01'], sLabel: '   MvreFile01    File-Mcsh (idOverview)... ', fCheck: () => fCheckCnptFile(aoCnptFile) },
+    { aCode: ['MvreName01'], sLabel: '   MvreName01    Duplicate names (every McsLago)... ', fCheck: () => fCheckDuplicateName(aoCnptFile) },
+    { aCode: ['MvreMain01'], sLabel: '   MvreMain01 Main-names no-hyphen... ', fCheck: () => fCheckMainNameHyphen(aoCnptFile) },
+    { aCode: ['MvrwSect01', 'MvrwSect02'], sLabel: '   MvrwSect01/MvrwSect02 Section descriptions... ', fCheck: () => fCheckDescription(aoCnptFile) },
+    { aCode: ['MvrwSect03', 'MvrwSect04'], sLabel: '   MvrwSect03/MvrwSect04 Section names... ', fCheck: () => fCheckName(aoCnptFile) },
+    { aCode: ['MvrwMisc01'], sLabel: '   MvrwMisc01    Dates... ', fCheck: () => fCheckDate(aoCnptFile) },
+    { aCode: ['MvrwId01'], sLabel: '   MvrwId01  Ids non-english-letters... ', fCheck: () => fCheckIdLetter(aoCnptFile) },
+    { aCode: ['MvrwId02'], sLabel: '   MvrwId02  Ids dong_DOING_suffix... ', fCheck: () => fCheckIdDong(aoCnptFile) },
+    { aCode: ['MvrwId03'], sLabel: '   MvrwId03  Ids space_in_id... ', fCheck: () => fCheckIdSpace(aoCnptFile) },
+    { aCode: ['MvrwId04'], sLabel: '   MvrwId04  Ids eval_evaluation_suffix... ', fCheck: () => fCheckIdEval(aoCnptFile) },
+    { aCode: ['MvrwId05'], sLabel: '   MvrwId05  Ids evog_evoluting_suffix... ', fCheck: () => fCheckIdEvog(aoCnptFile) },
+    { aCode: ['MvrwId06'], sLabel: '   MvrwId06  Ids irsc_info_resource_suffix... ', fCheck: () => fCheckIdIrsc(aoCnptFile) },
+    { aCode: ['MvrwId07'], sLabel: '   MvrwId07  Ids pntr_parent_tree_suffix... ', fCheck: () => fCheckIdPntr(aoCnptFile) },
+    { aCode: ['MvrwId08'], sLabel: '   MvrwId08  Ids chtr_child_tree_suffix... ', fCheck: () => fCheckIdChtr(aoCnptFile) },
+    { aCode: ['MvrwId09'], sLabel: '   MvrwId09  Ids wltr_whole_tree_suffix... ', fCheck: () => fCheckIdWltr(aoCnptFile) },
+    { aCode: ['MvrwId10'], sLabel: '   MvrwId10  Ids prtr_part_tree_suffix... ', fCheck: () => fCheckIdPrtr(aoCnptFile) },
+    { aCode: ['MvrwId11'], sLabel: '   MvrwId11  Ids gntr_generic_tree_suffix... ', fCheck: () => fCheckIdGntr(aoCnptFile) },
+    { aCode: ['MvrwId12'], sLabel: '   MvrwId12  Ids sptr_specific_tree_suffix... ', fCheck: () => fCheckIdSptr(aoCnptFile) },
+    { aCode: ['MvrwId13'], sLabel: '   MvrwId13  Ids srtr_structure_suffix... ', fCheck: () => fCheckIdSrtr(aoCnptFile) },
+    { aCode: ['MvrwGstr01'], sLabel: '   MvrwGstr01 specific_has_generic... ', fCheck: () => fCheckGstrSpecificGeneric(aoCnptFile) },
+    { aCode: ['MvrwGstr02'], sLabel: '   MvrwGstr02 generic_has_specific... ', fCheck: () => fCheckGstrGenericSpecific(aoCnptFile) },
+    { aCode: ['MvrwMain02'], sLabel: '   MvrwMain02 Main-names evolg_evoluting... ', fCheck: () => fCheckMainNameEvolg(aoCnptFile) },
+    { aCode: ['MvrwMain03'], sLabel: '   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... ', fCheck: () => fCheckMainNameEvalg(aoCnptFile) },
+    { aCode: ['MvrwMain04'], sLabel: '   MvrwMain04 Main-names doing_DOING... ', fCheck: () => fCheckMainNameDoing(aoCnptFile) },
+    { aCode: ['MvrwMain05'], sLabel: '   MvrwMain05 Main-names infrsc_info_resource... ', fCheck: () => fCheckMainNameInfrsc(aoCnptFile) },
+    { aCode: ['MvrwMain06'], sLabel: '   MvrwMain06 Main-names srtr_structure... ', fCheck: () => fCheckMainNameSrtr(aoCnptFile) },
+    { aCode: ['MvrwMain07'], sLabel: '   MvrwMain07 Main-names attrbase_line... ', fCheck: () => fCheckMainNameAttrbase(aoCnptFile) },
+  ];
+  for (const oCheck of aoCheck) {
+    if (aCodeIn.length && !oCheck.aCode.some(sCode => aCodeIn.includes(sCode))) continue;
+    fWrite(oCheck.sLabel);
+    const aoIssue = oCheck.fCheck();
+    aoAll.push(...aoIssue);
+    fLog(`${aoIssue.length} issues`);
+  }
   return aoAll;
 }
 

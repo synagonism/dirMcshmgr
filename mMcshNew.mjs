@@ -187,7 +187,7 @@ s =
   '\n' +
   '  <section id="idOverview">\n' +
   '  <h1 id="idOverviewH1">overview of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#idOverviewH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="idDescription">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>· \n' +
@@ -204,7 +204,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'irsc">\n' +
   '  <h1 id="' + sNameId + 'irscH1">info-resource of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'irscH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'irscdsn">description::\n' +
   '    <br>* \n' +
   '    <a class="clsHide" href="#' + sNameId + 'irscdsn"></a></p>\n' +
@@ -217,7 +217,7 @@ s =
   //'\n' +
   //'  <section id="' + sNameId + 'srtr">\n' +
   //'  <h1 id="' + sNameId + 'srtrH1">structure of ' + sNameMain + '\n' +
-  //'    <a class="clsHide" href="#' + sNameId + 'srtrH1"></a></h1>\n' +
+  //'    </h1>\n' +
   //'  <p id="' + sNameId + 'srtrnam">name::\n' +
   //'    <br>* McshEngl.' + sNameMain + '\'structure,\n' +
   //'    <a class="clsHide" href="#' + sNameId + 'srtrnam"></a></p>\n' +
@@ -228,7 +228,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'dong">\n' +
   '  <h1 id="' + sNameId + 'dongH1">DOING of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'dongH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'dongdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>* \n' +
@@ -242,7 +242,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'evog">\n' +
   '  <h1 id="' + sNameId + 'evogH1">evoluting of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'evogH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'evogdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <br>· creation of current <a class="clsPreview" href="../dirTchInf/McshTchInf000009.last.html#idMcsHitp">concept</a>.\n' +
@@ -256,7 +256,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'pctr">\n' +
   '  <h1 id="' + sNameId + 'pctrH1">PARENT-CHILD-TREE of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'pctrH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'pctrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'pctrdsn"></a></p>\n' +
@@ -276,7 +276,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'wptr">\n' +
   '  <h1 id="' + sNameId + 'wptrH1">WHOLE-PART-TREE of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'wptrH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'wptrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'wptrdsn"></a></p>\n' +
@@ -297,7 +297,7 @@ s =
   '\n' +
   '  <section id="' + sNameId + 'gstr">\n' +
   '  <h1 id="' + sNameId + 'gstrH1">GENERIC-SPECIFIC-TREE of ' + sNameMain + '\n' +
-  '    <a class="clsHide" href="#' + sNameId + 'gstrH1"></a></h1>\n' +
+  '    </h1>\n' +
   '  <p id="' + sNameId + 'gstrdsn">description::\n' +
   '    <br>× Mcsh-creation: {' + moUtil.fDateYMD() + '}\n' +
   '    <a class="clsHide" href="#' + sNameId + 'gstrdsn"></a></p>\n' +
@@ -318,7 +318,7 @@ s =
   '\n' +
   '  <section id="idMeta">\n' +
   '  <h1 id="idMetaH1">meta-info\n' +
-  '    <a class="clsHide" href="#idMetaH1"></a></h1>\n';
+  '    </h1>\n';
 if (bCounter) {
   s = s +
   '  <p id="idMetaCounter" class="clsCenter">this page was-visited\n' +

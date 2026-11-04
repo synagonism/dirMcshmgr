@@ -349,57 +349,29 @@ function fCheckHeadingGap(aoFile) {
 
 // ─── main export ──────────────────────────────────────────────────────────────
 
-export function fRunChecksHitp(aoFile, sPathDir, bQuietIn = false) {
+export function fRunChecksHitp(aoFile, sPathDir, bQuietIn = false, aCodeIn = []) {
   const aoAll = [];
   // bQuietIn: no progress-lines, for reportMcsh.mjs which prints its own report
   const fWrite = sIn => { if (!bQuietIn) process.stdout.write(sIn); };
   const fLog   = sIn => { if (!bQuietIn) console.log(sIn); };
-
-  fWrite('   Hvre01    Duplicate ids... ');
-  const aoDup = fCheckIdDuplicate(aoFile);
-  aoAll.push(...aoDup);
-  fLog(`${aoDup.length} issues`);
-
-  fWrite('   Hvre02/Hvre03/Hvre04 Missing ids... ');
-  const aoIdMissing = fCheckIdMissing(aoFile);
-  aoAll.push(...aoIdMissing);
-  fLog(`${aoIdMissing.length} issues`);
-
-  fWrite('   Hvre06/Hvre05 Links & anchors... ');
-  const aoLink = fCheckLink(aoFile, sPathDir);
-  aoAll.push(...aoLink);
-  fLog(`${aoLink.length} issues`);
-
-  fWrite('   Hvre07    Tag pairs... ');
-  const aoTag = fCheckTagPair(aoFile);
-  aoAll.push(...aoTag);
-  fLog(`${aoTag.length} issues`);
-
-
-  fWrite('   Hvrw01    Version strings... ');
-  const aoVersion = fCheckVersion(aoFile);
-  aoAll.push(...aoVersion);
-  fLog(`${aoVersion.length} issues`);
-
-  fWrite('   Hvrw03    clsHide self-anchors... ');
-  const aoSelf = fCheckSelfAnchor(aoFile);
-  aoAll.push(...aoSelf);
-  fLog(`${aoSelf.length} issues`);
-
-  fWrite('   Hvrw05    Tag lowercase... ');
-  const aoTagCase = fCheckTagCase(aoFile);
-  aoAll.push(...aoTagCase);
-  fLog(`${aoTagCase.length} issues`);
-
-  fWrite('   Hvrw06    Attr double-quote... ');
-  const aoAttr = fCheckAttrQuote(aoFile);
-  aoAll.push(...aoAttr);
-  fLog(`${aoAttr.length} issues`);
-
-  fWrite('   Hvrw07/Hvrw08 Heading gaps & section nesting... ');
-  const aoHeadingGap = fCheckHeadingGap(aoFile);
-  aoAll.push(...aoHeadingGap);
-  fLog(`${aoHeadingGap.length} issues`);
-
+  // aCodeIn: run ONLY the-checks of these rules (validatorMcsh --code); empty: all
+  const aoCheck = [
+    { aCode: ['Hvre01'], sLabel: '   Hvre01    Duplicate ids... ', fCheck: () => fCheckIdDuplicate(aoFile) },
+    { aCode: ['Hvre02', 'Hvre03', 'Hvre04'], sLabel: '   Hvre02/Hvre03/Hvre04 Missing ids... ', fCheck: () => fCheckIdMissing(aoFile) },
+    { aCode: ['Hvre05', 'Hvre06'], sLabel: '   Hvre06/Hvre05 Links & anchors... ', fCheck: () => fCheckLink(aoFile, sPathDir) },
+    { aCode: ['Hvre07'], sLabel: '   Hvre07    Tag pairs... ', fCheck: () => fCheckTagPair(aoFile) },
+    { aCode: ['Hvrw01', 'Hvrw02'], sLabel: '   Hvrw01    Version strings... ', fCheck: () => fCheckVersion(aoFile) },
+    { aCode: ['Hvrw03', 'Hvrw04'], sLabel: '   Hvrw03    clsHide self-anchors... ', fCheck: () => fCheckSelfAnchor(aoFile) },
+    { aCode: ['Hvrw05'], sLabel: '   Hvrw05    Tag lowercase... ', fCheck: () => fCheckTagCase(aoFile) },
+    { aCode: ['Hvrw06'], sLabel: '   Hvrw06    Attr double-quote... ', fCheck: () => fCheckAttrQuote(aoFile) },
+    { aCode: ['Hvrw07', 'Hvrw08'], sLabel: '   Hvrw07/Hvrw08 Heading gaps & section nesting... ', fCheck: () => fCheckHeadingGap(aoFile) },
+  ];
+  for (const oCheck of aoCheck) {
+    if (aCodeIn.length && !oCheck.aCode.some(sCode => aCodeIn.includes(sCode))) continue;
+    fWrite(oCheck.sLabel);
+    const aoIssue = oCheck.fCheck();
+    aoAll.push(...aoIssue);
+    fLog(`${aoIssue.length} issues`);
+  }
   return aoAll;
 }
