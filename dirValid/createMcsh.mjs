@@ -1671,6 +1671,8 @@ async function fMain() {
   // --dir dirCor (relative to the-worldview): the-fixes START in the-files of that dir and its sub-dirs
   const nIdxDir = aArg.indexOf('--dir');
   const sDirOnly = nIdxDir === -1 ? '' : String(aArg[nIdxDir + 1] ?? '').replace(/\\/g, '/').replace(/\/+$/, '');
+  // --all: every file of the-worldview (--code needs --file, --dir or --all)
+  const bAll = aArg.includes('--all');
   const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') &&
     (nIdxFile === -1 || nI !== nIdxFile + 1) && (nIdxCode === -1 || nI !== nIdxCode + 1) &&
     (nIdxDir === -1 || nI !== nIdxDir + 1));
@@ -1684,8 +1686,8 @@ async function fMain() {
     console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')}, --code are separate runs: give one of them`);
     process.exit(1);
   }
-  if (sCodeOne && (!(sNameFileOnly || sDirOnly) || !(ooFixCode[sCodeOne] || ooModeOfCode[sCodeOne]))) {
-    console.error(`--code needs --file McshDir000000 or --dir dirXxx, and one of: ${[...Object.keys(ooFixCode), ...Object.keys(ooModeOfCode)].sort().join(' ')}`);
+  if (sCodeOne && (!(sNameFileOnly || sDirOnly || bAll) || !(ooFixCode[sCodeOne] || ooModeOfCode[sCodeOne]))) {
+    console.error(`--code needs --file McshDir000000, --dir dirXxx or --all, and one of: ${[...Object.keys(ooFixCode), ...Object.keys(ooModeOfCode)].sort().join(' ')}`);
     process.exit(1);
   }
   // no mode: the-creation-paras of evoluting-sections
@@ -1710,6 +1712,7 @@ async function fMain() {
     console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
     console.log('  --code X     with --file or --dir: the-fix of validator rule X (every rule), or NOFIX with why');
     console.log('  --dir D      the-fixes START in the-files of dir D of the-worldview (dirCor), and its sub-dirs');
+    console.log('  --all        with --code: every file of the-worldview');
     console.log('  --name       MvrwSect03: a-name:: McshEngl.<heading> for every section without name::');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
@@ -1991,7 +1994,7 @@ async function fMain() {
         fWriteFile(sPathFile, sRaw, sNameShort, fPlanLink(sRaw, sNameShort, aoIssue, sPathFile, sNameDir, oMapFile, ooSetId));
       }
       }   // the-files
-      if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly}  ${sCodeOne}: nothing to fix in ${aPathFile.length} files`);
+      if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly || 'worldview'}  ${sCodeOne}: nothing to fix in ${aPathFile.length} files`);
       for (const sNote of aLineOut.slice(nNoteFix)) {
         const sKind = sNote.split(' ')[0];
         if (['NOISSUE', 'NOFIX'].includes(sKind)) oCount[sKind] = (oCount[sKind] ?? 0) + 1;
@@ -2034,7 +2037,7 @@ async function fMain() {
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  createMcsh` +
-      `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sCodeOne ? ' ' + sCodeOne : ''}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''}${sDirOnly ? ' --dir ' + sDirOnly : ''} ` +
+      `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sCodeOne ? ' ' + sCodeOne : ''}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''}${sDirOnly ? ' --dir ' + sDirOnly : ''}${bAll ? ' --all' : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oSetPathWritten.size} files ${bFix ? 'written' : 'to write'} · ${aStep.join(' · ')} · ` +

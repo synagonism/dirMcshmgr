@@ -78,6 +78,11 @@
         "command": "mcshv.validDirRule",
         "title": "validate-directory-with-rule: report, or fix and report, one rule, a directory",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.validWorldRule",
+        "title": "validate-worldview-with-rule: report, or fix and report, one rule, the whole worldview",
+        "category": "Mcs"
       }
     ],
     "menus": {
