@@ -40,7 +40,8 @@ import { pathToFileURL } from 'url'
 const
   // contains the-versions of parserMcsh.js
   aVersion = [
-    'parserMcsh.js.0-4-0.2026-11-04: faster: fCountNl; fReadMcsLago_names skips a-para without <br>*, ONE scan (rNameLineAll)',
+    'parserMcsh.js.0-5-0.2026-11-04: fReadFileMcsh sRawIn, the-text already read',
+    'parserMcsh.js.0-4-0.2026-11-04: faster: fCountNl; fReadMcsLago_names skips a-para without <br>*, ONE scan (rNameLineAll), a-Set per PoS',
     'parserMcsh.js.0-3-0.2026-11-04: aoSectNoName, the-sections without valid names, with title and paras',
     'parserMcsh.js.0-2-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
     'parserMcsh.js.0-1-0.2026-10-01: Nodejs-version of mConcept.js',
@@ -104,7 +105,8 @@ function fToPosix(sPathIn) {
  *   ooIdRelaCnpt,   // {'sNameIdRela': oCnpt} the-part concepts
  * }
  */
-async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
+// sRawIn: the-text when the-caller has read it already (createMcsh), else it is read here
+async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn, sRawIn = null) {
   // FIRST: check if this file-cnpt is known
   // LAST: add this file-cnpt on ooFile_cnpt
   // the-relative-id uses '/' on every OS, so moPath.posix reads it right on Windows.
@@ -119,7 +121,7 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
   const ooIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}}
 
   try {
-    sFileRaw = await moFs.promises.readFile(sNameIdAbso, 'utf8');
+    sFileRaw = sRawIn ?? await moFs.promises.readFile(sNameIdAbso, 'utf8');
   } catch (e) {
     return {
       sType: 'CnptFile',
@@ -470,19 +472,24 @@ function fReadMcsLago_names(sTextIn) {
 
   // ── 2. group the-names per McsLago and per PoS ────────────────────────────
   const oLagoname = {};
+  // the-names already in each PoS-array: a-Set, NOT aPos.includes, which is slow on
+  // a-specific-tree para with thousands of names
+  const oMapSetPos = new Map();   // aPos → Set of its names
   for (const oName of aoName) {
     const sLagokey = 'oLago' + oName.sLago;
     if (!oLagoname[sLagokey]) oLagoname[sLagokey] = fNewLago_name();
     // the-raw-name-lines, duplicates KEPT: a-name written twice is an-error to find.
     oLagoname[sLagokey].aoName.push(oName);
     const aPos = oLagoname[sLagokey][fFindPos_key(oName.sPos)];
-    if (!aPos.includes(oName.sName)) aPos.push(oName.sName);
+    if (!oMapSetPos.has(aPos)) oMapSetPos.set(aPos, new Set());
+    const oSetPos = oMapSetPos.get(aPos);
+    if (!oSetPos.has(oName.sName)) { oSetPos.add(oName.sName); aPos.push(oName.sName); }
   }
 
   // ── 3. find the-formal and informal main-name of each McsLago ─────────────
   for (const sLagokey of Object.keys(oLagoname)) {
     const oLago = oLagoname[sLagokey];
-    const aoLago_name = aoName.filter(o => 'oLago' + o.sLago === sLagokey);
+    const aoLago_name = oLago.aoName;   // the-names of this McsLago, in document order
 
     // formal-name: the-text after '!⇒', the-most-used one when they differ
     oLago.sNameFormal = fFindName_frequent(aoLago_name.filter(o => o.sNameFormal).map(o => o.sNameFormal));

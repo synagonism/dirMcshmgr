@@ -44,6 +44,7 @@ import {
 
 const
   aVersion = [
+    'parserHitp.js.0-5-0.2026-11-04: fReadFileHitp/fReadFileHitpIdOnly sRawIn, the-text already read',
     'parserHitp.js.0-4-0.2026-11-04: aoElmt nLineOwn, the-line of the-element itself, also without id',
     'parserHitp.js.0-3-0.2026-11-04: aoSect nLineOpen, the-line of <section, also without id',
     'parserHitp.js.0-2-0.2026-11-04: faster: lines looked up (fMakeLineAt) only for what is reported, script/style blanked once, light reads IdOnly/PathOnly',
@@ -252,10 +253,11 @@ function fReadElmtHitp(sElmtHtml) {
  * INPUT: one Hitp file given its path.
  * OUTPUT: one oFileHitp object (see header).
  */
-export function fReadFileHitp(sPathFile) {
+// sRawIn: the-text when the-caller has read it already (createMcsh), else it is read here
+export function fReadFileHitp(sPathFile, sRawIn = null) {
   let sFileRaw;
   try {
-    sFileRaw = fs.readFileSync(sPathFile, 'utf8');
+    sFileRaw = sRawIn ?? fs.readFileSync(sPathFile, 'utf8');
   } catch (e) {
     return {
       sType: 'fileHitp',
@@ -435,7 +437,7 @@ function fFindPathAllHitp(sPathDir) {
  *   which is ~35 ms a-file; the-other fields are empty.
  * OUTPUT: a-file object with sNameFile, sPathFile, oSetId, aoIdDup, oMapIdLine.
  */
-export function fReadFileHitpIdOnly(sPathFile) {
+export function fReadFileHitpIdOnly(sPathFile, sRawIn = null) {
   const oFile = {
     sType: 'fileHitp', sPathFile, sNameFile: path.basename(sPathFile),
     sNameDir: path.basename(path.dirname(sPathFile)), sError: null,
@@ -444,7 +446,7 @@ export function fReadFileHitpIdOnly(sPathFile) {
     aoTagBad: [], aoTagCase: [], aoAttrBad: [],
   };
   let sFileRaw;
-  try { sFileRaw = fs.readFileSync(sPathFile, 'utf8'); } catch (e) { oFile.sError = e.message; return oFile; }
+  try { sFileRaw = sRawIn ?? fs.readFileSync(sPathFile, 'utf8'); } catch (e) { oFile.sError = e.message; return oFile; }
   const sHtmlId = fBlankCodePre(sFileRaw);
   oFile.oSetId = fExtractId(sHtmlId);
   oFile.aoIdDup = fFindIdDuplicate(sHtmlId);

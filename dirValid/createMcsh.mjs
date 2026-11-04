@@ -94,7 +94,7 @@
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
-import { fReadFileHitp, fReadFileAllHitp } from './parserHitp.js'
+import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
@@ -103,6 +103,7 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-19-0.2026-11-04: faster: the-Mcsh modes do not parse Hitp and run only their rule; a-file is read once',
     'createMcsh.mjs.0-18-0.2026-11-04: Hvre04, a-<section> without id takes the-id of its heading without HN; Hvre02/03/04 got sNameDir as sKindIn, they fixed nothing',
     'createMcsh.mjs.0-17-0.2026-11-04: --code <rule>, a-fix (or NOFIX with why) for every validator rule',
     'createMcsh.mjs.0-16-0.2026-11-04: --name, the-fix of MvrwSect03: a-name:: from the-heading',
@@ -1769,6 +1770,10 @@ async function fMain() {
     (oSetPathList !== null && !oSetPathList.has(moPath.resolve(sPathIn).toLowerCase()));
   // the-files a-step parses: with --file only that one (a-whole-worldview parse takes ~40 s)
   const fReadHitpSome = () => fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath)).map(sPath => fReadFileHitp(sPath));
+  // the-Mcsh files of the-scope, NOT parsed as Hitp: the-Mcsh modes read them with fReadFileMcsh,
+  // they need only the-name and the-path (the-Hitp parse of the-worldview is ~10 s)
+  const fListMcshSome = () => fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath) &&
+    moPath.basename(sPath).startsWith('Mcsh')).map(sPath => ({ sNameFile: moPath.basename(sPath), sPathFile: sPath }));
   if (!sNameDir) {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
@@ -1831,11 +1836,11 @@ async function fMain() {
     const nNoteBefore = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length;
     if (sMode === 'srtr') {
       // the-structure-concepts are what the-VALIDATOR says: MvrwId13
-      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooIdSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwId13'])) {
         if (oIssue.sCode === 'MvrwId13') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
       }
       // 1. the-renames per file
@@ -1964,11 +1969,11 @@ async function fMain() {
     } else if (sMode === 'missing') {
       // the-sections without description:: are what the-VALIDATOR says: MvrwSect01
       const sDate = fFindDateLocal();
-      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooIdSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect01'])) {
         if (oIssue.sCode === 'MvrwSect01') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
       }
       const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
@@ -2002,9 +2007,11 @@ async function fMain() {
       if (aoIssueAll) {
         aoIssue = aoIssueAll;
       } else if (sCodeOne.startsWith('H')) {
-        aoIssue = fRunChecksHitp([fReadFileHitp(sPathFile)], sNameDir, true, [sCodeOne]);
+        // the-text read above is parsed, not read again; Hvre01 needs only the-ids
+        const fReadOne = sCodeOne === 'Hvre01' ? fReadFileHitpIdOnly : fReadFileHitp;
+        aoIssue = fRunChecksHitp([fReadOne(sPathFile, sRaw)], sNameDir, true, [sCodeOne]);
       } else if (sNameFile.startsWith('Mcsh')) {
-        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile))], sNameDir, true, [sCodeOne]);
+        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile), sRaw)], sNameDir, true, [sCodeOne]);
       }
       aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeOne && oIssue.sNameFile === sNameFile);
       nIssue += aoIssue.length;
@@ -2072,11 +2079,11 @@ async function fMain() {
         (oCount.NOFIX ? ' · no automatic fix' : '');
     } else if (sMode === 'name') {
       // the-sections without name:: are what the-VALIDATOR says: MvrwSect03
-      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect03'])) {
         if (oIssue.sCode === 'MvrwSect03') {
           (ooSect[oIssue.sNameFile] ??= []).push({ sIdSect: oIssue.sIdConcept, sTitle: oIssue.sConcept });
         }
