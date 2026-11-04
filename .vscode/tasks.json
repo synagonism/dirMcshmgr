@@ -145,6 +145,28 @@
       },
       "problemMatcher": []
     },
+    // Fix current-file: the-unambiguous fixes (createMcsh --auto), before validate-file reports
+    {
+      "label": "fix current-FILE",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/dirValid/createMcsh.mjs",
+        "${command:mcshv.currentWorldview}",
+        "--auto",
+        "--file",
+        "${command:mcshv.currentFileBasename}",
+        "--fix"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
     // Validate current-DIR
     {
       "label": "validate current-DIRECTORY",

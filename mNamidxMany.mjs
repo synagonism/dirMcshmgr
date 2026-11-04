@@ -41,11 +41,12 @@
 
 import moFs from 'fs'
 import {fNamidx} from './mNamidx.mjs'
-import {oSftp, fSftp, fAskHidden} from './mSftp.mjs'
+import {fSftp} from './mSftp.mjs'
 
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mNamidxMany.mjs.0-11-0.2026-11-03: ssh-key, no password prompt',
     'mNamidxMany.mjs.0-10-0.2026-10-09: password',
     'mNamidxMany.mjs.0-9-0.2026-10-04: changed name',
     'mNamidxSftp.mjs.0-8-0.2026-09-24: auto-add + sort new DIRS in Mcshqnt.root.json',
@@ -106,7 +107,6 @@ for (let n = 0; n < aFileMcsInComments.length; n++) {
   }
 }
 
-oSftp.password = await fAskHidden('Enter password: ')
-
+// fSftp authenticates with the-ssh-key, or asks the-password when there is none
 // create name-indices and upload files
 fNamidx(aFileMcsTxt, fSftp)

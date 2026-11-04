@@ -1,0 +1,24 @@
+stale generic-tree refs -> renamed heads — 2026-11-03   DRY=false
+
+heads: 5 | refs renamed: 16 | duplicates removed: 0 | files written: 7
+
+=== RENAMED (16)
+  McshHlth000002:5373  idBdyHmnatt015gntr  MtrlHlthHarmNo:generic -> HlthmtrlHarmNo:generic
+  McshLag000007:1868  idLHmnmuntCpgmgntr  TextUnit:generic -> Textunit:generic
+  McshLag000007:32553  idLSylbuntgntr  TextUnit:generic -> Textunit:generic
+  McshLag000008:287  idL0016ltrgntr  TextUnit:generic -> Textunit:generic
+  McshTchInf000016:8278  idBosnetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:8359  idTzsnetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:8397  idRsknetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:8437  idQtmnetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:8850  idLsknetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:15288  idDfnnetgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000018:12938  idEthgntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000027:232  idNeogntr  BkcnserviceSmct:generic -> BkchSrvcSmct:generic
+  McshTchInf000016:8538  idZecnetgntr  BcnnetEvu:generic -> BkchAsset:generic
+  McshTchInf000016:10672  idDcrnetgntr  BcnnetEvu:generic -> BkchAsset:generic
+  McshTchInf000016:10828  idPivxnetgntr  BcnnetEvu:generic -> BkchAsset:generic
+  McshTchInf000036:1267  idTechAi005Llmgntr  LlmApp:generic -> Llmapp:generic
+
+=== DUPLICATE-REMOVED (0)
+  (none)

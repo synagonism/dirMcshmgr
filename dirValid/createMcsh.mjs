@@ -71,7 +71,7 @@
  *   --mainname: the-fix of MvrlMmn01: a-main-name (after "!⇒") with "-" gets "_",
  *   in every "!⇒X" and in its main-name-line; the-old form stays as a-synonym X!⇒X'.
  *
- *   --srtr: the-fix of MvrlId13: a-structure-concept's id gets the-suffix srtr
+ *   --srtr: the-fix of MvrwId13: a-structure-concept's id gets the-suffix srtr
  *   (idXsrtrF → idXsrtr, idXstcr → idXsrtr, idX → idXsrtr), with its own ids that
  *   start with it, and every link to them in every .last.html file (json index files are NOT touched).
  *
@@ -86,7 +86,7 @@
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
-import { fReadFileAllHitp } from './parserHitp.js'
+import { fReadFileHitp } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
 import { rHeadArticle } from './structuralHitp.js'
@@ -94,6 +94,7 @@ import { rHeadArticle } from './structuralHitp.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-15-0.2026-11-03: --file, --dupname, --auto; codes MvrwSect01, MvrwId13',
     'createMcsh.mjs.0-14-0.2026-10-28: MvrlMnnm01 renamed MvrlMmn01',
     'createMcsh.mjs.0-13-0.2026-10-24: --fix writes NO backup (git is the-backup)',
     'createMcsh.mjs.0-12-0.2026-10-24: --srtr no longer touches json index files',
@@ -109,6 +110,9 @@ const
     'creaMcsh.mjs.0-2-0.2026-10-04: --missing, a-description for every Mcsh02-section',
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
+  // the-modes, one per run; --auto runs aModeAuto in this order
+  aModeAll = ['missing', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'auto'],
+  aModeAuto = ['dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
     NODESC:   'idOverview without description::',
@@ -122,9 +126,10 @@ const
     RENAME:   'the-name::-para id renamed to idName',
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
-    MAINNAME: 'a-name-line whose main-name got underscores (MvrlMmn01)',
+    DUPNAME:  'a-name-line written twice in ONE para: the-second deleted (MvreName01)',
+    MAINNAME: 'a-name-line whose main-name got underscores (MvreMain01)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
-    IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrlId13), with its own ids',
+    IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids',
     LINK:     'a-line whose ids or links to a-renamed id changed'
   },
   // the-dir of this script: the-report goes next to IT
@@ -846,7 +851,7 @@ function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
 }
 
 /**
- * OUTPUT: the-new id of a-structure-concept (MvrlId13), ending in "srtr":
+ * OUTPUT: the-new id of a-structure-concept (MvrwId13), ending in "srtr":
  *   idBdyHmnsrtrF → idBdyHmnsrtr, idSys002stcr | strr | sctr | structure → idSys002srtr,
  *   anything else gets srtr appended: idGlndHmnatt006 → idGlndHmnatt006srtr.
  */
@@ -859,12 +864,12 @@ function fFindIdSrtr(sIdIn) {
 }
 
 /**
- * DOING: --srtr mode, the-fix of MvrlId13: it plans the-renames of ONE file's
+ * DOING: --srtr mode, the-fix of MvrwId13: it plans the-renames of ONE file's
  *   structure-concepts. A-section's own ids that START with its id (its heading
  *   ...H1, ...dsn, ...nam, a-child ...gstr) get the-new start too.
  *   It SKIPS a-section whose id is not unique, whose <section> is not found, or
  *   whose new ids are taken.
- * INPUT: aIdSectIn: the-section-ids the-validator reports as MvrlId13.
+ * INPUT: aIdSectIn: the-section-ids the-validator reports as MvrwId13.
  * OUTPUT: { oMapId: old → new, aoNote }
  */
 function fPlanSrtrMap(sRawIn, sNameShortIn, aIdSectIn) {
@@ -933,6 +938,35 @@ function fPlanSrtrApply(sRawIn, sNameShortIn, sNameFileIn, ooMapIdIn) {
 }
 
 /**
+ * DOING: --dupname mode, the-fix of MvreName01 kind A: a-name-line that is written
+ *   again in the-SAME para is deleted, the-first stays (as mModel.js fRemoveNameDup,
+ *   dupMcsh.mjs --fix). The-whole line is compared, so a-line with other text after
+ *   its comma is kept.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+function fPlanDupName(sRawIn, sNameShortIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  let oSetSeen = null;   // the-name-lines of the-open para, null outside a-para
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const sLine = fLineClean(aLine[nL]);
+    if (/<p\b/.test(sLine)) oSetSeen = new Set();
+    if (oSetSeen && rNameLine.test(sLine)) {
+      const sKey = sLine.trim();
+      if (oSetSeen.has(sKey)) {
+        aoEdit.push({ nAt: nL, nDel: 1, aIns: [] });
+        aoNote.push(`DUPNAME ${sNameShortIn}:${nL + 1}  ${sKey.replace(/^<br>\*\s*/, '')}`);
+      } else {
+        oSetSeen.add(sKey);
+      }
+    }
+    if (sLine.includes('</p>')) oSetSeen = null;
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -952,28 +986,35 @@ function fCheckFile(sRawOldIn, sRawNewIn) {
 
 async function fMain() {
   const aArg = process.argv.slice(2);
-  const sNameDir = aArg.find(sArg => !sArg.startsWith('--'));
+  const nIdxFile = aArg.indexOf('--file');
+  // --file McshDir000000 (or McshDir000000.last.html): the-fixes START in that file only
+  const sNameFileOnly = nIdxFile === -1 ? '' : String(aArg[nIdxFile + 1] ?? '').replace(/\.last\.html$/, '');
+  const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') && (nIdxFile === -1 || nI !== nIdxFile + 1));
   const bFix = aArg.includes('--fix');
-  const bMissing = aArg.includes('--missing');
-  const bOverview = aArg.includes('--overview');
-  const bUndated = aArg.includes('--undated');
-  const bNameId = aArg.includes('--nameid');
-  const bHeadGap = aArg.includes('--headgap');
-  const bNest = aArg.includes('--nest');
-  const bMainName = aArg.includes('--mainname');
-  const bSrtr = aArg.includes('--srtr');
-  if ([bMissing, bOverview, bUndated, bNameId, bHeadGap, bNest, bMainName, bSrtr].filter(Boolean).length > 1) {
-    console.error('--missing, --overview, --undated, --nameid, --headgap, --nest, --mainname and --srtr are separate runs: give one of them');
+  const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
+  if (aModeGiven.length > 1) {
+    console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')} are separate runs: give one of them`);
     process.exit(1);
   }
+  // no mode: the-creation-paras of evoluting-sections
+  const sModeOne = aModeGiven[0] ?? 'evoluting';
+  if (sModeOne === 'auto' && !sNameFileOnly) {
+    console.error('--auto needs --file McshDir000000');
+    process.exit(1);
+  }
+  const aMode = sModeOne === 'auto' ? aModeAuto : [sModeOne];
+  const fShort = sPathIn => moPath.basename(String(sPathIn)).replace(/\.last\.html$/, '');
+  const fSkipFile = sPathIn => sNameFileOnly !== '' && fShort(sPathIn) !== sNameFileOnly;
+  // the-files a-step parses: with --file only that one (a-whole-worldview parse takes ~40 s)
+  const fReadHitpSome = () => fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath)).map(sPath => fReadFileHitp(sPath));
   if (!sNameDir) {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--auto] [--file McshDir000000] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
-    console.log('  --missing    a-description:: with the-run-date for every Mvrw01-section');
+    console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
     console.log('  --undated    EVERY description:: without × Mcsh-creation gets the-run-date');
@@ -981,15 +1022,19 @@ async function fMain() {
     console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
-    console.log('  --mainname   MvrlMmn01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
-    console.log('  --srtr       MvrlId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
+    console.log('  --mainname   MvreMain01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
+    console.log('  --srtr       MvrwId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
+    console.log('  --dupname    MvreName01: a-name-line twice in ONE para, all but the-first deleted');
+    console.log('  --auto       with --file: --dupname, --nest, --headgap, --missing, --mainname, --srtr in order');
+    console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt');
     process.exit(1);
   }
 
   const aLineOut = [];
-  const oCount = { nFile: 0, nBad: 0 };
+  const oCount = { nBad: 0 };
+  const oSetPathWritten = new Set();   // a-file written by 2 steps of --auto counts once
 
   /**
    * DOING: it counts the-notes of a-file, checks its new text and writes it.
@@ -1007,166 +1052,187 @@ async function fMain() {
       oCount.nBad++;
       return;
     }
-    oCount.nFile++;
+    oSetPathWritten.add(sPathFileIn);
     if (bFix) moFs.writeFileSync(sPathFileIn, oPlanIn.sRawNew);
   }
 
-  let sCount;
-  if (bSrtr) {
-    // the-structure-concepts are what the-VALIDATOR says: MvrlId13
-    const aoFileHitp = fReadFileAllHitp(sNameDir).filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
-    const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
-      fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
-    const ooIdSect = {};
-    for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
-      if (oIssue.sCode === 'MvrlId13') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
-    }
-    // 1. the-renames per file
-    const ooMapId = {};
-    const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
-    for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
-      const sRaw = moFs.readFileSync(oPathFile[sNameFile], 'utf8');
-      const oPlan = fPlanSrtrMap(sRaw, sNameFile.replace(/\.last\.html$/, ''), aIdSect);
-      for (const sNote of oPlan.aoNote) {
-        aLineOut.push(sNote);
-        oCount[sNote.split(' ')[0]] = (oCount[sNote.split(' ')[0]] ?? 0) + 1;
+  // one mode, or the-steps of --auto in order: each step reads the-files again,
+  // so it sees what the-previous step wrote
+  const aStep = [];
+  for (const sMode of aMode) {
+    let sCount;
+    const nNoteBefore = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length;
+    if (sMode === 'srtr') {
+      // the-structure-concepts are what the-VALIDATOR says: MvrwId13
+      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
+        fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
+      const ooIdSect = {};
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+        if (oIssue.sCode === 'MvrwId13') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
       }
-      if (oPlan.oMapId.size > 0) ooMapId[sNameFile] = oPlan.oMapId;
-    }
-    // 2. the-ids and every link to them, in every .last.html file; the-json index files (dirNamidx, dirNamurl) are NEVER touched: they are generated
-    for (const sPath of fFindFileAll(sNameDir)) {
-      const sRaw = moFs.readFileSync(sPath, 'utf8');
-      const sNameFile = moPath.basename(sPath);
-      const sNameShort = sNameFile.endsWith('.last.html')
-        ? sNameFile.replace(/\.last\.html$/, '') : moPath.relative(sNameDir, sPath).split(moPath.sep).join('/');
-      fWriteFile(sPath, sRaw, sNameShort, fPlanSrtrApply(sRaw, sNameShort, sNameFile, ooMapId));
-    }
-    sCount = `${oCount.IDSRTR ?? 0} structure-ids renamed · ${oCount.LINK ?? 0} lines changed`;
-  } else if (bMainName) {
-    // all Mcsh-files read once: the-main-names to change, and every name for the-collisions
-    const aPath = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
-    const aRaw = aPath.map(sPath => moFs.readFileSync(sPath, 'utf8'));
-    const oSetName = new Set();
-    const oMapMainFirst = new Map(); // 'Lago|X' → the-first file:line pointing to X
-    aRaw.forEach((sRaw, nI) => sRaw.split('\n').forEach((sLine, nL) => {
-      const aName = sLine.match(rNameLine);
-      if (!aName) return;
-      oSetName.add(`${aName[1]}|${aName[2].split('!')[0].trim()}`);
-      for (const aM of aName[2].matchAll(/!⇒([^!]*)/g)) {
-        const sKey = `${aName[1]}|${aM[1].trim()}`;
-        if (aM[1].includes('-') && !oMapMainFirst.has(sKey)) {
-          oMapMainFirst.set(sKey, `${moPath.basename(aPath[nI], '.last.html')}:${nL + 1}`);
+      // 1. the-renames per file
+      const ooMapId = {};
+      const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
+      for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
+        const sRaw = moFs.readFileSync(oPathFile[sNameFile], 'utf8');
+        const oPlan = fPlanSrtrMap(sRaw, sNameFile.replace(/\.last\.html$/, ''), aIdSect);
+        for (const sNote of oPlan.aoNote) {
+          aLineOut.push(sNote);
+          oCount[sNote.split(' ')[0]] = (oCount[sNote.split(' ')[0]] ?? 0) + 1;
         }
+        if (oPlan.oMapId.size > 0) ooMapId[sNameFile] = oPlan.oMapId;
       }
-    }));
-    const oMapMain = new Map();
-    for (const [sKey, sLoc] of oMapMainFirst) {
-      const [sLago, sMain] = sKey.split('|');
-      const sMainNew = sMain.replace(/-/g, '_');
-      if (oSetName.has(`${sLago}|${sMainNew}`)) {
-        aLineOut.push(`SKIP   ${sLoc}  Mcsh${sLago}.${sMain}: Mcsh${sLago}.${sMainNew} is a-name already`);
-        oCount.SKIP = (oCount.SKIP ?? 0) + 1;
-        continue;
+      // 2. the-ids and every link to them, in every .last.html file; the-json index files (dirNamidx, dirNamurl) are NEVER touched: they are generated
+      for (const sPath of fFindFileAll(sNameDir)) {
+        const sRaw = moFs.readFileSync(sPath, 'utf8');
+        const sNameFile = moPath.basename(sPath);
+        const sNameShort = sNameFile.endsWith('.last.html')
+          ? sNameFile.replace(/\.last\.html$/, '') : moPath.relative(sNameDir, sPath).split(moPath.sep).join('/');
+        fWriteFile(sPath, sRaw, sNameShort, fPlanSrtrApply(sRaw, sNameShort, sNameFile, ooMapId));
       }
-      oMapMain.set(sKey, sMainNew);
+      sCount = `${oCount.IDSRTR ?? 0} structure-ids renamed · ${oCount.LINK ?? 0} lines changed`;
+    } else if (sMode === 'mainname') {
+      // all Mcsh-files read once: the-main-names to change, and every name for the-collisions
+      const aPath = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
+      const aRaw = aPath.map(sPath => moFs.readFileSync(sPath, 'utf8'));
+      const oSetName = new Set();
+      const oMapMainFirst = new Map(); // 'Lago|X' → the-first file:line pointing to X
+      aRaw.forEach((sRaw, nI) => sRaw.split('\n').forEach((sLine, nL) => {
+        const aName = sLine.match(rNameLine);
+        if (!aName) return;
+        oSetName.add(`${aName[1]}|${aName[2].split('!')[0].trim()}`);
+        for (const aM of aName[2].matchAll(/!⇒([^!]*)/g)) {
+          const sKey = `${aName[1]}|${aM[1].trim()}`;
+          if (aM[1].includes('-') && !oMapMainFirst.has(sKey) && !fSkipFile(aPath[nI])) {
+            oMapMainFirst.set(sKey, `${moPath.basename(aPath[nI], '.last.html')}:${nL + 1}`);
+          }
+        }
+      }));
+      const oMapMain = new Map();
+      for (const [sKey, sLoc] of oMapMainFirst) {
+        const [sLago, sMain] = sKey.split('|');
+        const sMainNew = sMain.replace(/-/g, '_');
+        if (oSetName.has(`${sLago}|${sMainNew}`)) {
+          aLineOut.push(`SKIP   ${sLoc}  Mcsh${sLago}.${sMain}: Mcsh${sLago}.${sMainNew} is a-name already`);
+          oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+          continue;
+        }
+        oMapMain.set(sKey, sMainNew);
+      }
+      aPath.forEach((sPath, nI) => {
+        const sNameShort = moPath.basename(sPath, '.last.html');
+        fWriteFile(sPath, aRaw[nI], sNameShort, fPlanMainName(aRaw[nI], sNameShort, oMapMain));
+      });
+      sCount = `${oMapMain.size} main-names with underscores · ${oCount.MAINNAME ?? 0} lines changed · ` +
+        `${oCount.ADD ?? 0} old forms kept as synonyms`;
+    } else if (sMode === 'nest') {
+      for (const oFile of fReadHitpSome()) {
+        const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
+        // the-files of --headgap: Mcsh*, and of the-Hitp* files only the-laws of dirStnlaw
+        const bLaw = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).includes('dirStnlaw');
+        if (!oFile.sNameFile.startsWith('Mcsh') && !bLaw) continue;
+        if (fSkipFile(oFile.sPathFile)) continue;
+        const sRaw = moFs.readFileSync(oFile.sPathFile, 'utf8');
+        fWriteFile(oFile.sPathFile, sRaw, sNameShort, fPlanNest(sRaw, sNameShort, oFile));
+      }
+      sCount = `${oCount.NEST ?? 0} </section> moved`;
+    } else if (sMode === 'headgap') {
+      // all files read once: a-move is skipped when ANY file links to the-old heading-id;
+      // parsed are only the-files to fix
+      const aPathAll = fFindFileAll(sNameDir);
+      const aRawAll = aPathAll.map(sPath => moFs.readFileSync(sPath, 'utf8'));
+      aPathAll.forEach((sPath, nI) => {
+        const sNameFile = moPath.basename(sPath);
+        // Mcsh* files, and of the-Hitp* files only the-laws of dirStnlaw
+        const bLaw = moPath.relative(sNameDir, sPath).split(moPath.sep).includes('dirStnlaw');
+        if (!sNameFile.startsWith('Mcsh') && !bLaw) return;
+        if (fSkipFile(sPath)) return;
+        fWriteFile(sPath, aRawAll[nI], fShort(sPath),
+          fPlanHeadGap(aRawAll[nI], fShort(sPath), sNameFile, fReadFileHitp(sPath), aRawAll));
+      });
+      sCount = `${oCount.HEADING ?? 0} headings moved up`;
+    } else if (sMode === 'nameid') {
+      // all files read once: a-rename is skipped when ANY file links to the-old id
+      const aPathAll = fFindFileAll(sNameDir);
+      const aRawAll = aPathAll.map(sPathFile => moFs.readFileSync(sPathFile, 'utf8'));
+      aPathAll.forEach((sPathFile, nI) => {
+        const sNameFile = moPath.basename(sPathFile);
+        const sNameShort = sNameFile.replace(/\.last\.html$/, '');
+        if (fSkipFile(sPathFile)) return;
+        fWriteFile(sPathFile, aRawAll[nI], sNameShort, fPlanNameId(aRawAll[nI], sNameShort, sNameFile, aRawAll));
+      });
+      sCount = `${oCount.RENAME ?? 0} ids renamed to idName`;
+    } else if (sMode === 'undated') {
+      const sDate = fFindDateLocal();
+      for (const sPathFile of fFindFileAll(sNameDir)) {
+        if (!moPath.basename(sPathFile).startsWith('Mcsh') || fSkipFile(sPathFile)) continue;
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanUndated(sRaw, sNameShort, sDate));
+      }
+      // one INSERT-note per file carries the-count of its descriptions
+      const nDesc = aLineOut.reduce((nSum, sLine) =>
+        nSum + Number(sLine.match(/^INSERT \S+  (\d+) descriptions$/)?.[1] ?? 0), 0);
+      sCount = `${nDesc} descriptions dated · ${oCount.EMPTY ?? 0} of them EMPTY · date {${sDate}}`;
+    } else if (sMode === 'overview') {
+      for (const sPathFile of fFindFileAll(sNameDir)) {
+        if (!moPath.basename(sPathFile).startsWith('Mcsh') || fSkipFile(sPathFile)) continue;
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanOverview(sRaw, sNameShort));
+      }
+      sCount = `${oCount.INSERT ?? 0} dates inserted · ${oCount.NODESC ?? 0} idOverview without description::`;
+    } else if (sMode === 'evoluting') {
+      for (const sPathFile of fFindFileAll(sNameDir)) {
+        if (fSkipFile(sPathFile)) continue;
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        if (!sRaw.includes('=== McsHitp-creation:') && !sRaw.includes('=== webpage creation:')) continue;
+        const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanFile(sRaw, sNameShort));
+      }
+      const nCreate = oCount.CREATE ?? 0, nInsert = oCount.INSERT ?? 0, nDelete = oCount.DELETE ?? 0;
+      sCount = `${nCreate + nInsert + nDelete} paras deleted · ${nCreate} descriptions created · ` +
+        `${nInsert} lines inserted`;
+    } else if (sMode === 'missing') {
+      // the-sections without description:: are what the-VALIDATOR says: MvrwSect01
+      const sDate = fFindDateLocal();
+      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
+        fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
+      const ooIdSect = {};
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+        if (oIssue.sCode === 'MvrwSect01') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
+      }
+      const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
+      for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
+        const sPathFile = oPathFile[sNameFile];
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        const sNameShort = sNameFile.replace(/\.last\.html$/, '');
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanMissing(sRaw, sNameShort, aIdSect, sDate));
+      }
+      sCount = `${oCount.CREATE ?? 0} descriptions created · ${oCount.FIXTITLE ?? 0} titles fixed · ` +
+        `date {${sDate}}`;
+    } else if (sMode === 'dupname') {
+      for (const sPathFile of fFindFileAll(sNameDir)) {
+        if (!moPath.basename(sPathFile).startsWith('Mcsh') || fSkipFile(sPathFile)) continue;
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        fWriteFile(sPathFile, sRaw, fShort(sPathFile), fPlanDupName(sRaw, fShort(sPathFile)));
+      }
+      sCount = `${oCount.DUPNAME ?? 0} duplicate name-lines deleted`;
     }
-    aPath.forEach((sPath, nI) => {
-      const sNameShort = moPath.basename(sPath, '.last.html');
-      fWriteFile(sPath, aRaw[nI], sNameShort, fPlanMainName(aRaw[nI], sNameShort, oMapMain));
-    });
-    sCount = `${oMapMain.size} main-names with underscores · ${oCount.MAINNAME ?? 0} lines changed · ` +
-      `${oCount.ADD ?? 0} old forms kept as synonyms`;
-  } else if (bNest) {
-    for (const oFile of fReadFileAllHitp(sNameDir)) {
-      const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
-      // the-files of --headgap: Mcsh*, and of the-Hitp* files only the-laws of dirStnlaw
-      const bLaw = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).includes('dirStnlaw');
-      if (!oFile.sNameFile.startsWith('Mcsh') && !bLaw) continue;
-      const sRaw = moFs.readFileSync(oFile.sPathFile, 'utf8');
-      fWriteFile(oFile.sPathFile, sRaw, sNameShort, fPlanNest(sRaw, sNameShort, oFile));
-    }
-    sCount = `${oCount.NEST ?? 0} </section> moved`;
-  } else if (bHeadGap) {
-    // all files read once: a-move is skipped when ANY file links to the-old heading-id
-    const aoFileHitp = fReadFileAllHitp(sNameDir);
-    const aRawAll = aoFileHitp.map(oFile => moFs.readFileSync(oFile.sPathFile, 'utf8'));
-    aoFileHitp.forEach((oFile, nI) => {
-      const sNameShort = oFile.sNameFile.replace(/\.last\.html$/, '');
-      // Mcsh* files, and of the-Hitp* files only the-laws of dirStnlaw
-      const bLaw = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).includes('dirStnlaw');
-      if (!oFile.sNameFile.startsWith('Mcsh') && !bLaw) return;
-      fWriteFile(oFile.sPathFile, aRawAll[nI], sNameShort,
-        fPlanHeadGap(aRawAll[nI], sNameShort, oFile.sNameFile, oFile, aRawAll));
-    });
-    sCount = `${oCount.HEADING ?? 0} headings moved up`;
-  } else if (bNameId) {
-    // all files read once: a-rename is skipped when ANY file links to the-old id
-    const aPathAll = fFindFileAll(sNameDir);
-    const aRawAll = aPathAll.map(sPathFile => moFs.readFileSync(sPathFile, 'utf8'));
-    aPathAll.forEach((sPathFile, nI) => {
-      const sNameFile = moPath.basename(sPathFile);
-      const sNameShort = sNameFile.replace(/\.last\.html$/, '');
-      fWriteFile(sPathFile, aRawAll[nI], sNameShort, fPlanNameId(aRawAll[nI], sNameShort, sNameFile, aRawAll));
-    });
-    sCount = `${oCount.RENAME ?? 0} ids renamed to idName`;
-  } else if (bUndated) {
-    const sDate = fFindDateLocal();
-    for (const sPathFile of fFindFileAll(sNameDir)) {
-      if (!moPath.basename(sPathFile).startsWith('Mcsh')) continue;
-      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
-      const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
-      fWriteFile(sPathFile, sRaw, sNameShort, fPlanUndated(sRaw, sNameShort, sDate));
-    }
-    // one INSERT-note per file carries the-count of its descriptions
-    const nDesc = aLineOut.reduce((nSum, sLine) =>
-      nSum + Number(sLine.match(/^INSERT \S+  (\d+) descriptions$/)?.[1] ?? 0), 0);
-    sCount = `${nDesc} descriptions dated · ${oCount.EMPTY ?? 0} of them EMPTY · date {${sDate}}`;
-  } else if (bOverview) {
-    for (const sPathFile of fFindFileAll(sNameDir)) {
-      if (!moPath.basename(sPathFile).startsWith('Mcsh')) continue;
-      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
-      const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
-      fWriteFile(sPathFile, sRaw, sNameShort, fPlanOverview(sRaw, sNameShort));
-    }
-    sCount = `${oCount.INSERT ?? 0} dates inserted · ${oCount.NODESC ?? 0} idOverview without description::`;
-  } else if (!bMissing) {
-    for (const sPathFile of fFindFileAll(sNameDir)) {
-      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
-      if (!sRaw.includes('=== McsHitp-creation:') && !sRaw.includes('=== webpage creation:')) continue;
-      const sNameShort = moPath.basename(sPathFile).replace(/\.last\.html$/, '');
-      fWriteFile(sPathFile, sRaw, sNameShort, fPlanFile(sRaw, sNameShort));
-    }
-    const nCreate = oCount.CREATE ?? 0, nInsert = oCount.INSERT ?? 0, nDelete = oCount.DELETE ?? 0;
-    sCount = `${nCreate + nInsert + nDelete} paras deleted · ${nCreate} descriptions created · ` +
-      `${nInsert} lines inserted`;
-  } else {
-    // the-sections without description:: are what the-VALIDATOR says: Mvrw01
-    const sDate = fFindDateLocal();
-    const aoFileHitp = fReadFileAllHitp(sNameDir).filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
-    const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
-      fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
-    const ooIdSect = {};
-    for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
-      if (oIssue.sCode === 'Mvrw01') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
-    }
-    const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
-    for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
-      const sPathFile = oPathFile[sNameFile];
-      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
-      const sNameShort = sNameFile.replace(/\.last\.html$/, '');
-      fWriteFile(sPathFile, sRaw, sNameShort, fPlanMissing(sRaw, sNameShort, aIdSect, sDate));
-    }
-    sCount = `${oCount.CREATE ?? 0} descriptions created · ${oCount.FIXTITLE ?? 0} titles fixed · ` +
-      `date {${sDate}}`;
+    // --auto: per step only its count of changes, the-detail is in createMcsh.txt
+    const nNote = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length - nNoteBefore;
+    aStep.push(aMode.length > 1 ? `${sMode} ${nNote}` : sCount);
   }
 
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    `  createMcsh${bMissing ? ' --missing' : ''}${bOverview ? ' --overview' : ''}` +
-      `${bUndated ? ' --undated' : ''}${bNameId ? ' --nameid' : ''}${bHeadGap ? ' --headgap' : ''}${bNest ? ' --nest' : ''}${bMainName ? ' --mainname' : ''}${bSrtr ? ' --srtr' : ''} ` +
+    `  createMcsh` +
+      `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    `  ${oCount.nFile} files ${bFix ? 'written' : 'to write'} · ${sCount} · ` +
+    `  ${oSetPathWritten.size} files ${bFix ? 'written' : 'to write'} · ${aStep.join(' · ')} · ` +
       `${oCount.SKIP ?? 0} skipped` + (oCount.nBad ? ` · ${oCount.nBad} BAD` : ''),
     bFix ? '  written, no backup: see git diff' : '  nothing written: add --fix to write',
     ''

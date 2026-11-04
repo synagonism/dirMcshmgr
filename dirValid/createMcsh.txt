@@ -1,30 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --srtr dry-run: C:/dirNodews/dirMcsh
+  createMcsh --auto --file McshCor000003 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files to write · 3 structure-ids renamed · 18 lines changed · 0 skipped
-  nothing written: add --fix to write
-
-=== IDSRTR (3) — a-structure-concept id renamed to end in srtr (MvrlId13), with its own ids
-  McshHlth000002:1057  #idBdyHmnatt002structure -> #idBdyHmnatt002srtr  (+3 own ids: H2 dsn nam)
-  McshHlth000002:1974  #idGlndHmnatt006 -> #idGlndHmnatt006srtr  (+3 own ids: H3 dsn nam)
-  McshHlth000002:2237  #idGlndHmn002att006 -> #idGlndHmn002att006srtr  (+3 own ids: H3 dsn nam)
-
-=== LINK (18) — a-line whose ids or links to a-renamed id changed
-  McshHlth000002:1057
-  McshHlth000002:1058
-  McshHlth000002:1060
-  McshHlth000002:1063
-  McshHlth000002:1064
-  McshHlth000002:1066
-  McshHlth000002:1974
-  McshHlth000002:1975
-  McshHlth000002:1977
-  McshHlth000002:1980
-  McshHlth000002:1981
-  McshHlth000002:1985
-  McshHlth000002:2237
-  McshHlth000002:2238
-  McshHlth000002:2240
-  McshHlth000002:2244
-  McshHlth000002:2245
-  McshHlth000002:2247
+  0 files written · dupname 0 · nest 0 · headgap 0 · missing 0 · mainname 0 · srtr 0 · 0 skipped
+  written, no backup: see git diff

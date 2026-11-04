@@ -66,7 +66,7 @@
       },
       {
         "command": "mcshv.validCurrent",
-        "title": "Validate current file and focus the report in the browser",
+        "title": "validate-file: report, or fix unambiguous and report",
         "category": "Mcs"
       }
     ],

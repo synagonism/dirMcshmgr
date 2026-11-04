@@ -86,10 +86,9 @@ export function fReporter() {
       return `<tr class="${sClassRow}">
         <td>${oLevelIcon[sLevel]}${sLevel}</td>
         <td>${oIssue.sCode}</td>
-        <td>${fEsc(oIssue.sNameFile ?? '')}</td>
-        <td>${fEsc(fTitleConcept(oIssue.sConcept) ?? '')}</td>
-        <td>${oIssue.nLine ?? ''}</td>
+        <td>${fEsc(String(oIssue.sNameFile ?? '').replace(/\.last\.html$/, ''))}${oIssue.nLine ? ':' + oIssue.nLine : ''}</td>
         <td>${fEsc(oIssue.sMessage)}</td>
+        <td>${fEsc(fTitleConcept(oIssue.sConcept) ?? '')}</td>
       </tr>`;
     }).join('\n');
 
@@ -97,7 +96,7 @@ export function fReporter() {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hitp|Mcsh Consistency Report</title>
+<title>Report ${new Date().toTimeString().slice(0, 8)}</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -109,7 +108,7 @@ export function fReporter() {
   tr.err td:first-child { color: #c00; font-weight: bold; }
   tr.wrn td:first-child { color: #c60; font-weight: bold; }
   tr.inf td:first-child { color: #069; }
-  td:last-child { max-width: 500px; }
+  td:nth-child(4) { max-width: 500px; }   /* the-message */
   input { padding: 6px; width: 300px; margin-bottom: 1rem; }
   pre.log { font-size: 0.85rem; line-height: 1.35; margin: 1rem 0; }
 </style>
@@ -126,7 +125,7 @@ ${sLogIn ? `<pre class="log">${fEsc(sLogIn.trim())}</pre>` : ''}
 <input type="text" id="filter" placeholder="Filter by file or message..." oninput="filterRows(this.value)">
 <table>
   <thead>
-    <tr><th>Level</th><th>Code</th><th>File</th><th>Concept</th><th>Line</th><th>Message</th></tr>
+    <tr><th>Level</th><th>Code</th><th>File:line</th><th>Message</th><th>Concept</th></tr>
   </thead>
   <tbody id="tbody">
     ${sRows}
@@ -138,12 +137,6 @@ function filterRows(q) {
   document.querySelectorAll('#tbody tr').forEach(row => {
     row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
-}
-// one browser-tab for all runs: a-new report tab (it has the-focus) closes the-older ones
-if (window.BroadcastChannel) {
-  const oChannel = new BroadcastChannel('validator-report');
-  oChannel.onmessage = () => window.close();
-  oChannel.postMessage('new');
 }
 </script>
 </body>

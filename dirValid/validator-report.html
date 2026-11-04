@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hitp|Mcsh Consistency Report</title>
+<title>Report 07:46:09</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -14,185 +14,71 @@
   tr.err td:first-child { color: #c00; font-weight: bold; }
   tr.wrn td:first-child { color: #c60; font-weight: bold; }
   tr.inf td:first-child { color: #069; }
-  td:last-child { max-width: 500px; }
+  td:nth-child(4) { max-width: 500px; }   /* the-message */
   input { padding: 6px; width: 300px; margin-bottom: 1rem; }
   pre.log { font-size: 0.85rem; line-height: 1.35; margin: 1rem 0; }
 </style>
 </head>
 <body>
 <h1>Hitp|Mcsh Consistency Report</h1>
-<p>Generated: 11/2/2026, 10:22:52 AM</p>
+<p>Generated: 11/4/2026, 7:46:09 AM</p>
+<pre class="log">📄 Single-file mode: McshCor000003.last.html
+🔍 Running Hitp checks...
+   Hvre01    Duplicate ids... 0 issues
+   Hvre02/Hvre03/Hvre04 Missing ids... 0 issues
+   Hvre06/Hvre05 Links &amp; anchors... 1 issues
+   Hvre07    Tag pairs... 0 issues
+   Hvrw01    Version strings... 0 issues
+   Hvrw03    clsHide self-anchors... 0 issues
+   Hvrw05    Tag lowercase... 0 issues
+   Hvrw06    Attr double-quote... 0 issues
+   Hvrw07/Hvrw08 Heading gaps &amp; section nesting... 0 issues
 
+🔍 Running Mcsh checks (1 Mcsh files)...
+   MvreFile01    File-Mcsh (idOverview)... 0 issues
+   MvreName01    Duplicate names (every McsLago)... 0 issues
+   MvreMain01 Main-names no-hyphen... 0 issues
+   MvrwSect01/MvrwSect02 Section descriptions... 0 issues
+   MvrwSect03/MvrwSect04 Section names... 0 issues
+   MvrwMisc01    Dates... 0 issues
+   MvrwId01  Ids non-english-letters... 0 issues
+   MvrwId02  Ids dong_DOING_suffix... 0 issues
+   MvrwId03  Ids space_in_id... 0 issues
+   MvrwId04  Ids eval_evaluation_suffix... 0 issues
+   MvrwId05  Ids evog_evoluting_suffix... 0 issues
+   MvrwId06  Ids irsc_info_resource_suffix... 0 issues
+   MvrwId07  Ids pntr_parent_tree_suffix... 0 issues
+   MvrwId08  Ids chtr_child_tree_suffix... 0 issues
+   MvrwId09  Ids wltr_whole_tree_suffix... 0 issues
+   MvrwId10  Ids prtr_part_tree_suffix... 0 issues
+   MvrwId11  Ids gntr_generic_tree_suffix... 0 issues
+   MvrwId12  Ids sptr_specific_tree_suffix... 0 issues
+   MvrwId13  Ids srtr_structure_suffix... 0 issues
+   MvrwGstr01 specific_has_generic... 0 issues
+   MvrwGstr02 generic_has_specific... 0 issues
+   MvrwMain02 Main-names evolg_evoluting... 0 issues
+   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... 0 issues
+   MvrwMain04 Main-names doing_DOING... 0 issues
+   MvrwMain05 Main-names infrsc_info_resource... 0 issues
+   MvrwMain06 Main-names srtr_structure... 0 issues
+   MvrwMain07 Main-names attrbase_line... 0 issues</pre>
 <div class="summary">
   <span style="color:#c00">🔴 0 errors</span>
-  <span style="color:#c60">🔶 20 warnings</span>
+  <span style="color:#c60">🔶 1 warnings</span>
   <span style="color:#069">🔵 0 info</span>
 </div>
 <input type="text" id="filter" placeholder="Filter by file or message..." oninput="filterRows(this.value)">
 <table>
   <thead>
-    <tr><th>Level</th><th>Code</th><th>File</th><th>Concept</th><th>Line</th><th>Message</th></tr>
+    <tr><th>Level</th><th>Code</th><th>File:line</th><th>Message</th><th>Concept</th></tr>
   </thead>
   <tbody id="tbody">
     <tr class="wrn">
         <td>🔶WARN</td>
         <td>Hvre06</td>
-        <td>McshCor000021.last.html</td>
-        <td></td>
-        <td>130</td>
-        <td>Broken anchor: #idEntwltr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000016.last.html</td>
-        <td></td>
-        <td>47</td>
-        <td>Broken anchor: #idMcsattDfnstr not found in "McshCor000002.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000016.last.html</td>
-        <td></td>
-        <td>68</td>
-        <td>Broken anchor: #idEntwltr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000015.last.html</td>
-        <td></td>
-        <td>45</td>
-        <td>Broken anchor: #idMcsattDfnstr not found in "McshCor000002.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000013.last.html</td>
-        <td></td>
-        <td>478</td>
-        <td>Broken anchor: #idEntwltr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000011.last.html</td>
-        <td></td>
-        <td>25</td>
+        <td>McshCor000003:1155</td>
         <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000011.last.html</td>
         <td></td>
-        <td>2473</td>
-        <td>Broken anchor: #idWhlprtrln not found in "McshCor000008.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000009.last.html</td>
-        <td></td>
-        <td>1451</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000008.last.html</td>
-        <td></td>
-        <td>302</td>
-        <td>Broken anchor: #idWhlatt001 not found in "McshCor000008.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000008.last.html</td>
-        <td></td>
-        <td>618</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000007.last.html</td>
-        <td></td>
-        <td>25</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000005.last.html</td>
-        <td></td>
-        <td>25</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000004.last.html</td>
-        <td></td>
-        <td>25</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000003.last.html</td>
-        <td></td>
-        <td>1156</td>
-        <td>Broken anchor: #idEntsrtr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvre06</td>
-        <td>McshCor000002.last.html</td>
-        <td></td>
-        <td>5248</td>
-        <td>Broken anchor: #idEntwltr not found in "McshCor000003.last.html"</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvrw07</td>
-        <td>McshCor000004.last.html</td>
-        <td>07_syntax of doing</td>
-        <td>1179</td>
-        <td>&lt;h1&gt; section "idOverview" has next sibling &lt;h2&gt; "idDngstx" — expected &lt;h1&gt;</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvrw07</td>
-        <td>McshCor000004.last.html</td>
-        <td>08_relation of doing</td>
-        <td>1194</td>
-        <td>&lt;h2&gt; section "idDngstx" has next sibling &lt;h1&gt; "idDngatt008" — expected &lt;h2&gt;</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvrw07</td>
-        <td>McshCor000004.last.html</td>
-        <td>10_expression of doing</td>
-        <td>1231</td>
-        <td>&lt;h1&gt; section "idDngatt004" has next sibling &lt;h2&gt; "idDngatt003" — expected &lt;h1&gt;</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvrw07</td>
-        <td>McshCor000004.last.html</td>
-        <td>info-resource of doing</td>
-        <td>1251</td>
-        <td>&lt;h2&gt; section "idDngatt003" has next sibling &lt;h1&gt; "idDngirsc" — expected &lt;h2&gt;</td>
-      </tr>
-<tr class="wrn">
-        <td>🔶WARN</td>
-        <td>Hvrw08</td>
-        <td>McshCor000004.last.html</td>
-        <td>overview of doing</td>
-        <td>72</td>
-        <td>&lt;h1&gt; section "idOverview" (line 20) contains &lt;h1&gt; "idDngatt002" and 1 more at its level or above — its &lt;/section&gt; missing before line 72? now at line 1177</td>
       </tr>
   </tbody>
 </table>
@@ -202,12 +88,6 @@ function filterRows(q) {
   document.querySelectorAll('#tbody tr').forEach(row => {
     row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
   });
-}
-// one browser-tab for all runs: a-new report tab (it has the-focus) closes the-older ones
-if (window.BroadcastChannel) {
-  const oChannel = new BroadcastChannel('validator-report');
-  oChannel.onmessage = () => window.close();
-  oChannel.postMessage('new');
 }
 </script>
 </body>

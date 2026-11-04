@@ -68,3 +68,40 @@ T61. {2026-11-02} DONE: NAM 4 -> 0 (all-dash GS-TREEs): title, generic-tree head
      no other refs to the heads. GS-TREE conforming 2523 -> 2527; MvrwGstr01/02 6 -> 6. NAM left 1: McshWrdidxElln24oméya.
      Not changed: the wholes' own name:: still have the dash names (e.g. McshTchInf000016:13294 McshEngl.Ddash-net'wallet,).
      List: dirReport/nam4-fix-applied.txt.
+
+T58b. {2026-11-03} REPORT: sg-names-fix.js re-run: 4 S:G names left (the other 67 kept ones were handled by the user), none fixable:
+     stageEvoluting (McshHlth000002:15131, :15429) and stnHumn (McshStn000005:313) are no concept names; memoryConscious
+     (McshHlth000003:1493) is idBrnHmnatt061cncs, which has no generic-tree::. 0 files written. List: dirReport/sg-names-fix-applied.txt.
+
+T62. {2026-11-03} DONE: memoryConscious (McshHlth000003 idBrnHmnatt061cncs) got generic-tree:: idBrnHmnatt061cncsgntr
+     (McshEngl.memoryConscious:generic, === Hmbrmemr:generic, ...entity:generic — as its children semantic/episodic).
+     Then sg-names-fix.js: memoryEpisodic:memoryConscious removed, HmbrmemrEpisodic's tree starts "=== memoryConscious:generic, ===".
+     S:G names left 3 (stageEvoluting x2, stnHumn). MvrwGstr01/02 now 18 + 14 = 32 — from the user's commits after T61
+     (4aed0d14 main:generic-location, c67fe872 Hmmdlago), none from this change. Hmbrmemr and memoryLong still have no generic-tree.
+
+T63. {2026-11-03} DONE: MvrwGstr01 18 -> 0. 15 were stale generic-tree refs after the user's head renames (commits since 9a1e8703):
+     16 refs renamed in 7 files (scratchpad head-renames.js + head-refs-fix.js): BkcnserviceSmct -> BkchSrvcSmct (9), BcnnetEvu -> BkchAsset (3),
+     TextUnit -> Textunit (3), MtrlHlthHarmNo -> HlthmtrlHarmNo, LlmApp -> Llmapp. 3 by hand: McshHlth000002:5074 sun's tree
+     harmful_external_object:generic (T60 name) -> HlthmtrlHarmExte:generic; McshTchInf000009:1283 McshnameMain gets McsnameMain:generic
+     before Mcsname:generic; McshStn000005:352 group gets Sctn:generic before SctnOgms:generic (human-group = SctnOgms.human).
+     MvrwGstr02 14 -> 12. List: dirReport/head-refs-fix-applied.txt.
+
+T64. {2026-11-03} DONE: MvrwGstr02 12 -> 0 (scratchpad gstr02-fix2.js, items now use S's informal name I of "M!=I", else M).
+     9 specific-trees extended: Enttstage (stage-of-Hmbdevolg), method (rule-of-Mcshvalidator), infoData (data-of-Mcshcnpt),
+     timeItvl (timeinterval-of-evoluting), culture (architecture), infoBrain (method), JsgntoolPkgmgr (Node.js-package-manager),
+     app (application-of-LLM), info (Website). New specific-trees: idBdyHmnevogstagsptr (Hmbdstage.specific: Hmbdlife,
+     intrauterine_life), idEntWholeNsptr (unit.specific: Textunit). 7 files. MvrwGstr01/02 now 0 + 0.
+     List: dirReport/mvrwgstr02-fix-applied.txt.
+
+T65. {2026-11-03} DONE: specific-tree:: items -> "* M.specific!@file#id," (user's format; M = main-name of the linked concept).
+     scratchpad sptr-format.js: 3,983 linked items converted in 129 files ("Name!@file#id", "Name!@file", <a class="clsPreview"> links;
+     ** depth kept, link kept). Kept: 1,479 linked items whose target name:: has no clear !⇒ main-name (1,468) or a missing id (11),
+     9,103 plain names, 5,675 free text, 227 "!@" items with extra text, 98 other <a>. The mMcsh2.js dblclick on "* M.specific" lists M's specifics.
+     MvrwGstr02 0; MvrwGstr01 0 -> 4: hidden before (items "MoleMacro.oligomer!@…" skipped by the validator), now visible:
+     MoleMacro's specifics MolePolymer (its generic-tree lacks MoleMacro), MoleOligomer, MoleHumnMacro, MoleOgmMacro (no generic-tree).
+     gstr02-fix2.js now writes M.specific!@file#id. List: dirReport/sptr-format-applied.txt.
+T65b. {2026-11-03} CORRECTED (user: "misunderstanding ... Mcsattr(main).Mcsauthor(specific)!@"): the T65 items "M.specific!@" became
+     "X.M!@file#id" (X = the tree owner from its head McshEngl.X.specific; head-less trees: the {B}gntr head or the one !⇒ of {B}nam, 41).
+     A dotted M is written itself without NNN_ (user: Hmbdnutrient.iron_Fe): 1,476 items, 739 lost a number. 3,978 items, 129 files
+     (scratchpad sptr-format2.js). Left as "M.specific!@": 5 in head-less trees without an owner. MvrwGstr01/02 4 + 0 (the MoleMacro 4).
+     gstr02-fix2.js writes X.M!@file#id. List: dirReport/sptr-format2-applied.txt.

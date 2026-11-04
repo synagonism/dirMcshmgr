@@ -1,8 +1,8 @@
-GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-11-02
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-11-03
 
-GS-TREE sections: 2548   fully conforming: 2527   with issues: 21
-specific-tree ids: 2547 {whole}sptr, 0 old {whole}str
-heading levels: h1 557, h2 810, h3 615, h4 357, h5 164, h6 41, h7 4
+GS-TREE sections: 2549   fully conforming: 2543   with issues: 6
+specific-tree ids: 2549 {whole}sptr, 0 old {whole}str
+heading levels: h1 557, h2 810, h3 616, h4 357, h5 164, h6 41, h7 4
 
 Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
   {id}dsn with Mcsh-creation date, {id}nam with X'generic_specific_tree,
@@ -12,48 +12,33 @@ Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GEN
 ISSUES (a GS-TREE can have several):
   OLD          0  old-style title (not "GENERIC-SPECIFIC-TREE of X")
   NOPARENT     0  top-level GS-TREE whose id does not end in gstr
-  ID           1  section id is not {whole}gstr
+  ID           0  section id is not {whole}gstr
   LEVEL        1  heading level is not whole + 1
   HID          0  heading id is not {id}H{level}
   DSN          0  no {id}dsn description:: (or no Mcsh-creation date)
   NAM          1  name:: lacks X'generic_specific_tree
-  GTR          1  no {whole}gntr generic-tree:: paragraph
-  GTRN         9  generic-tree:: does not start with McshEngl.X:generic,
+  GTR          0  no {whole}gntr generic-tree:: paragraph
+  GTRN         2  generic-tree:: does not start with McshEngl.X:generic,
   GTRE         0  generic-tree:: neither has "...entity:generic," nor ends at entity
-  STR          1  no {whole}sptr specific-tree:: paragraph
+  STR          0  no {whole}sptr specific-tree:: paragraph
   STRN         0  specific-tree:: lacks McshEngl.X.specific,
-  XNAME        9  X differs from the whole's !⇒ main-name
-  EXTRA        1  other paragraphs / blocks inside the GS-TREE
+  XNAME        3  X differs from the whole's !⇒ main-name
+  EXTRA        0  other paragraphs / blocks inside the GS-TREE
   KIDS         0  GS-TREE has child sections that are not spec-div, specifics (X.name) or SPECIFIC-COMPLEMENT
   TWO          0  whole has more than one GS-TREE
   SELF         0  self-link does not match its paragraph id
 
-=== ID (1) — section id is not {whole}gstr
-
 === LEVEL (1) — heading level is not whole + 1
+  McshLag000011:24162  idLEnglverbauxNgstr  h2  "GENERIC-SPECIFIC-TREE of Englvf"  whole h3
 
 === NAM (1) — name:: lacks X'generic_specific_tree
+  McshLag000011:24162  idLEnglverbauxNgstr  h2  "GENERIC-SPECIFIC-TREE of Englvf"
 
-=== GTR (1) — no {whole}gntr generic-tree:: paragraph
+=== GTRN (2) — generic-tree:: does not start with McshEngl.X:generic,
+  McshHlth000002:5361  idBdyHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Hmbdnutrient"  <br>* McshEngl.nutrient:generic,
+  McshTchInf000007:2964  idLxmlgXsdgstr  h5  "GENERIC-SPECIFIC-TREE of xsd"  <br>* McshEngl.xsd&#58;generic,
 
-=== GTRN (9) — generic-tree:: does not start with McshEngl.X:generic,
-    idSocHumnatt019gstr  h2  "GENERIC-SPECIFIC-TREE of SciSoct"  <br>* McshEngl.SciSoc:generic,
-    idMcsHitpdtgstr  h4  "GENERIC-SPECIFIC-TREE of Mcshdata"  <br>* McshEngl.Mcsh'data:generic,
-    idBpmnetgstr  h4  "GENERIC-SPECIFIC-TREE of BkchSrvcSmct"  <br>* McshEngl.BkcnserviceSmct:generic,
-    idDbcEvugstr  h4  "GENERIC-SPECIFIC-TREE of BkchAsset"  <br>* McshEngl.BcnnetEvu:generic,
-    idTchLlmusaggstr  h2  "GENERIC-SPECIFIC-TREE of Llmapp"  <br>* McshEngl.LlmApp:generic,
-
-=== STR (1) — no {whole}sptr specific-tree:: paragraph
-
-=== XNAME (9) — X differs from the whole's !⇒ main-name
-    idGlndHmn017gstr  h3  "GENERIC-SPECIFIC-TREE of HmbdTesticle"  main-name GlndTesticle
-    idMtrlHrmHmn001gstr  h4  "GENERIC-SPECIFIC-TREE of harmful_external_object"  main-name MtrlHlthHarm.001_external
-    idFoodHmn039gstr  h2  "GENERIC-SPECIFIC-TREE of foodFlavoring"  main-name foodFlavoringNaturalDriedNo
-    idLJsgntolEgngstr  h3  "GENERIC-SPECIFIC-TREE of Jsgnengine"  main-name Jsgnlago'engine
-    idHmqnetgstr  h2  "GENERIC-SPECIFIC-TREE of Humaniq"  main-name AgntHmiq
-    idEospgmClntgstr  h2  "GENERIC-SPECIFIC-TREE of Eos_client"  main-name EOS.IO_software
-    idSteemacntkeygstr  h3  "GENERIC-SPECIFIC-TREE of Steem__key_pair"  main-name Stemacnt'key_pair
-    idWwwfmwkgstr  h3  "GENERIC-SPECIFIC-TREE of Webframework"  main-name Www'framework
-    idVscodecmingstr  h3  "GENERIC-SPECIFIC-TREE of Vsc_ai_cstm_insn"  main-name Vscdai'custom_instructions
-
-=== EXTRA (1) — other paragraphs / blocks inside the GS-TREE
+=== XNAME (3) — X differs from the whole's !⇒ main-name
+  McshHlth000013:10011  idFoodHmn186gstr  h2  "GENERIC-SPECIFIC-TREE of meatLiver"  main-name foodLiver
+  McshLag000007:4027  idLHmnmnameTrmcrtggstr  h5  "GENERIC-SPECIFIC-TREE of term'creating"  main-name Hmmdterm'creating
+  McshLag000007:4059  idLHmnmnameTrmgstr  h4  "GENERIC-SPECIFIC-TREE of term"  main-name Hmmdterm

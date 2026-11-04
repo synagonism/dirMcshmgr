@@ -984,7 +984,7 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">Valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate current file and open report" data-cmd="cmdValidCurrent">Validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
+          <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
           <div class="clsItem" title="name:: remove duplicated lines" data-cmd="cmdValidName01">Name01-duplicate-line</div>
         </div>
       </div>
@@ -1197,33 +1197,64 @@ function fIsServerUp() {
 }
 
 /**
- * DOING: Validate-current: it saves the-current file, runs the-task 'validate current-FILE',
- *   then opens the-report in the-default browser, which gets the-focus. Every run opens
- *   a-new tab, the-page closes the-older report tabs (see reporter.js), so ONE tab stays.
- *   The-validator writes the-report on every run, findings or not, next to itself.
+ * DOING: it runs a-task of tasks.json by its label and waits for its end.
+ * OUTPUT: the-exit-code of the-task.
+ */
+function fRunTaskWait(sLabelIn) {
+  return new Promise((fResolve) => {
+    const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
+      if (oEvt.execution.task.name !== sLabelIn) return;
+      oEnd.dispose();
+      fResolve(oEvt.exitCode);
+    });
+    vscode.commands.executeCommand('workbench.action.tasks.runTask', sLabelIn);
+  });
+}
+
+/**
+ * DOING: validate-file: it saves the-current file and asks
+ *   a) report: only report,
+ *   b) fix: the-task 'fix current-FILE' (createMcsh.mjs --auto --file: the-unambiguous
+ *      fixes), then report.
+ *   The-report: the-task 'validate current-FILE', then the-report in the-default
+ *   browser, which gets the-focus. Every run opens a-new tab and the-older tabs stay
+ *   open with their report, to compare before and after a-fix; the-tab title has the-time
+ *   of the-run (see reporter.js). The-validator writes the-report on every run, findings
+ *   or not, next to itself.
  * INPUT: fStatusIn: it shows a-message.
  */
 async function fRunValidCurrent(fStatusIn) {
-  const sLabel = 'validate current-FILE';
   const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
   if (!sRoot) return fStatusIn('no current file to validate');
   const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
+  const oPick = await vscode.window.showQuickPick([
+    { label: 'report', description: 'only report', sMode: 'report' },
+    { label: 'fix', description: 'fix unambiguous, then report', sMode: 'fix' }
+  ], { placeHolder: 'validate-file: ' + path.basename(sFile || '') });
+  if (!oPick) return;                                     // Escape: nothing
   const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath === sFile);
   if (oDoc) await oDoc.save();
-  const sReport = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'validator-report.html');
+  const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
+
+  if (oPick.sMode === 'fix') {
+    const nExit = await fRunTaskWait('fix current-FILE');
+    if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
+    // createMcsh.txt line 4: "  N files written · dupname 3 · nest 0 · …"
+    let sTotal = '';
+    try { sTotal = fs.readFileSync(path.join(sDirValid, 'createMcsh.txt'), 'utf8').split('\n')[3].trim(); } catch (oErr) { /* no report */ }
+    fStatusIn('fix: ' + (sTotal || 'done') + ' (createMcsh.txt)');
+  }
+
+  const sReport = path.join(sDirValid, 'validator-report.html');
   const nStart = Date.now();
-  const oEnd = vscode.tasks.onDidEndTaskProcess(async (oEvt) => {
-    if (oEvt.execution.task.name !== sLabel) return;
-    oEnd.dispose();
-    // an old report must not pass as this run's: mtime has at least 1s resolution here
-    let nMtime = 0;
-    try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
-    if (nMtime < nStart - 1000) return fStatusIn('validator wrote no report, see the terminal');
-    // file:// without the-server: it opens, but older tabs stay
-    const sUrl = await fIsServerUp() ? fDisplayUrlForPath(sReport) : '';
-    vscode.env.openExternal(sUrl ? vscode.Uri.parse(sUrl + '?_r=' + Date.now()) : vscode.Uri.file(sReport));
-  });
-  await vscode.commands.executeCommand('workbench.action.tasks.runTask', sLabel);
+  await fRunTaskWait('validate current-FILE');
+  // an old report must not pass as this run's: mtime has at least 1s resolution here
+  let nMtime = 0;
+  try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
+  if (nMtime < nStart - 1000) return fStatusIn('validator wrote no report, see the terminal');
+  // a-new ?_r per run: a-new URL, so the-browser opens a-new tab
+  const sUrl = await fIsServerUp() ? fDisplayUrlForPath(sReport) : '';
+  vscode.env.openExternal(sUrl ? vscode.Uri.parse(sUrl + '?_r=' + Date.now()) : vscode.Uri.file(sReport));
 }
 
 function fDeactivate() {}

@@ -88,14 +88,20 @@ the backup) or copy the affected files before running it.
 
 | Finding | Fixer |
 |---------|-------|
-| Mvrw01 (no description::) | `node dirValid/createMcsh.mjs <dir> --missing` |
+| MvrwSect01 (no description::) | `node dirValid/createMcsh.mjs <dir> --missing` |
 | Hvrw07 (obvious heading gaps) | `node dirValid/createMcsh.mjs <dir> --headgap` |
 | Hvrw08 (obvious nesting errors) | `node dirValid/createMcsh.mjs <dir> --nest` |
-| MvrlMmn01 (main-name with "-") | `node dirValid/createMcsh.mjs <dir> --mainname` (keeps the old form as synonym `X!⇒X_`) |
+| MvreMain01 (main-name with "-") | `node dirValid/createMcsh.mjs <dir> --mainname` (keeps the old form as synonym `X!⇒X_`) |
 | idOverview description without creation date | `--overview` |
 | any description without creation date | `--undated` |
 | idOverview name:: para without id idName | `--nameid` |
-| Mvre02 kind-A duplicates (same name-line twice) | `node dirValid/dupMcsh.mjs <dir> --fix` (inspect first with `--summary` / `--line`) |
+| MvreName01 kind-A duplicates (same name-line twice) | `node dirValid/dupMcsh.mjs <dir> --fix` (inspect first with `--summary` / `--line`) |
+| MvreName01 kind A, with no extra text after the comma | `node dirValid/createMcsh.mjs <dir> --dupname` |
+| MvrwId13 (structure id not ending in srtr) | `node dirValid/createMcsh.mjs <dir> --srtr` (re-points links in every `.last.html`) |
+| ALL of the above that apply, for ONE file | `node dirValid/createMcsh.mjs <dir> --auto --file McshDir000000` (`--dupname`, `--nest`, `--headgap`, `--missing`, `--mainname`, `--srtr` in order; = the visual's validate-file → fix) |
+
+Every createMcsh mode takes `--file McshDir000000`: its fixes start in that file only
+(`--mainname`, `--srtr` still re-point the other files).
 
 The fixers SKIP what is not obvious and say why (e.g. "the-file has an-unclosed
 or stray <section> (Hvre07)", "a-duplicated id", "is <h1>, not <h2>"). Those

@@ -1,19 +1,21 @@
-MvrwGstr02 fix: G lists its specific S — 2026-11-02   DRY=false
+MvrwGstr02 fix: G lists its specific S — 2026-11-03   DRY=false
 
-warnings: 12 | generics G: 9 | specific-trees extended: 8 | new specific-trees: 1 | lines added: 24 | skipped: 0 | files written: 6
+warnings: 12 | generics G: 11 | specific-trees extended: 9 | new specific-trees: 2 | lines added: 29 | skipped: 0 | files written: 7
 
-=== ADDED-TO-SPECIFIC-TREE (8)
-  McshHlth000002  idOgnHmnsptr  organ:generic  += 2: OganTooth!@McshHlth000002#idBdyHmn110, OganSpinal_cord!@McshHlth000019#idOgnHmn037   (from McshHlth000002:10122, McshHlth000019:5488)
-  McshHlth000005  idMsclHmnsptr  OganMuscle:generic  += 1: muscleMyocardium!@McshHlth000002#idHrtHmnatt005   (from McshHlth000002:6849)
-  McshHlth000002  idGlndHmn001sptr  GlndEndocrine:generic  += 2: adrenal_medulla!@McshHlth000002#idBdyHmn546, adrenal-cortex!@McshHlth000002#idBdyHmn545   (from McshHlth000002:3171, McshHlth000002:3140)
-  McshCor000018  idBrngHmnFct001sptr  FctgFeeling:generic  += 2: FctgEmoting!@McshCor000018#idBrngHmnFct004, FctgSensing!@McshCor000018#idBrngHmnFct003   (from McshCor000018:2792, McshCor000018:282)
-  McshCor000018  idBrngHmnFct006sptr  FctgCognizing:generic  += 1: FctgSensing!@McshCor000018#idBrngHmnFct003   (from McshCor000018:282)
-  McshHlth000002  idBdyHmnatt002sptr  Hmbdnode:generic  += 1: SystCentralNervous!@McshHlth000019#idSysNrvsatt002   (from McshHlth000019:1980)
-  McshStn000009  idSocHumnatt053sptr  culture:generic  += 1: dayWorkNo!@McshCor000006#idTimeUomDayWorkN   (from McshCor000006:3749)
-  McshTch000003  idMchn001sptr  vehicle:generic  += 1: metro!@McshTch000003#idMchn009   (from McshTch000003:1115)
+=== ADDED-TO-SPECIFIC-TREE (9)
+  McshCor000003  idEntevogtmilsptr  Enttstage:generic  += 1: stage-of-Hmbdevolg!@McshHlth000002#idBdyHmnevogstag   (from McshHlth000002:14954)
+  McshLag000003  idInfHmnBrn008sptr  method:generic  += 1: rule-of-Mcshvalidator!@McshTchInf000009#idLMcshmngrvldgMcshrule   (from McshTchInf000009:3717)
+  McshLag000003  idInfHmnBrn010sptr  infoData:generic  += 1: data-of-Mcshcnpt!@McshTchInf000009#idMcsHitpdt   (from McshTchInf000009:1546)
+  McshCor000006  idTimePntNsptr  timeItvl:generic  += 1: timeinterval-of-evoluting!@McshCor000003#idEntevogtmil   (from McshCor000003:1215)
+  McshStn000009  idSocHumnatt053sptr  culture:generic  += 1: architecture!@McshEdu000011#idArt003   (from McshEdu000011:429)
+  McshLag000003  idInfHmnBrnsptr  infoBrain:generic  += 1: method!@McshLag000003#idInfHmnBrn008   (from McshLag000003:1852)
+  McshTchInf000010  idLJsgntolPkgsptr  JsgntoolPkgmgr:generic  += 1: Node.js-package-manager!@McshTchInf000012#idLJsndnpm   (from McshTchInf000012:10192)
+  McshTchPrgm000002  idCpgm001sptr  app:generic  += 1: application-of-LLM!@McshTchInf000038#idTchLlmusag   (from McshTchInf000038:863)
+  McshLag000003  idInfHmnsptr  info:generic  += 1: Website!@McshTchInf000040#idWwwsite   (from McshTchInf000040:683)
 
-=== NEW-SPECIFIC-TREE (1)
-  McshHlth000003  idMinddongEdtgsptr  DongEducating.specific  with 1: DongLearning!@McshHlth000003#idMinddongLrng
+=== NEW-SPECIFIC-TREE (2)
+  McshHlth000002  idBdyHmnevogstagsptr  Hmbdstage.specific  with 2: Hmbdlife!@McshHlth000002#idBdyHmnatt039, intrauterine_life!@McshHlth000002#idBdyHmnatt023
+  McshCor000003  idEntWholeNsptr  unit.specific  with 1: Textunit!@McshLag000007#idLHmnmuntText
 
 === SKIPPED (0)
   (none)

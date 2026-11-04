@@ -35,11 +35,12 @@
 import moFs from 'fs'
 import moPath from 'path'
 import {fNamidx} from './mNamidx.mjs'
-import {oSftp, fSftp, fAskHidden} from './mSftp.mjs'
+import {fSftp} from './mSftp.mjs'
 
 const
   // contains the-versions of mNamidxDir.mjs
   aVersion = [
+    'mNamidxDir.mjs.0-2-0.2026-11-03: ssh-key, no password prompt',
     'mNamidxDir.mjs.0-1-0.2026-10-04: creation'
   ]
 
@@ -73,6 +74,5 @@ if (aFilename.length === 0) {
 
 console.log(aFilename.length + ' files to index in: ' + sDir)
 
-oSftp.password = await fAskHidden('Enter password: ')
-
+// fSftp authenticates with the-ssh-key, or asks the-password when there is none
 fNamidx(aFilename, fSftp)
