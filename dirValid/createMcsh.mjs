@@ -1668,8 +1668,12 @@ async function fMain() {
   // --code <rule>: the-fix of ONE validator rule (ooFixCode), with --file
   const nIdxCode = aArg.indexOf('--code');
   const sCodeOne = nIdxCode === -1 ? '' : String(aArg[nIdxCode + 1] ?? '');
+  // --dir dirCor (relative to the-worldview): the-fixes START in the-files of that dir and its sub-dirs
+  const nIdxDir = aArg.indexOf('--dir');
+  const sDirOnly = nIdxDir === -1 ? '' : String(aArg[nIdxDir + 1] ?? '').replace(/\\/g, '/').replace(/\/+$/, '');
   const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') &&
-    (nIdxFile === -1 || nI !== nIdxFile + 1) && (nIdxCode === -1 || nI !== nIdxCode + 1));
+    (nIdxFile === -1 || nI !== nIdxFile + 1) && (nIdxCode === -1 || nI !== nIdxCode + 1) &&
+    (nIdxDir === -1 || nI !== nIdxDir + 1));
   const bFix = aArg.includes('--fix');
   const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
   // a-rule with its own mode runs that mode: --code MvreName01 = --dupname
@@ -1680,8 +1684,8 @@ async function fMain() {
     console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')}, --code are separate runs: give one of them`);
     process.exit(1);
   }
-  if (sCodeOne && (!sNameFileOnly || !(ooFixCode[sCodeOne] || ooModeOfCode[sCodeOne]))) {
-    console.error(`--code needs --file McshDir000000 and one of: ${[...Object.keys(ooFixCode), ...Object.keys(ooModeOfCode)].sort().join(' ')}`);
+  if (sCodeOne && (!(sNameFileOnly || sDirOnly) || !(ooFixCode[sCodeOne] || ooModeOfCode[sCodeOne]))) {
+    console.error(`--code needs --file McshDir000000 or --dir dirXxx, and one of: ${[...Object.keys(ooFixCode), ...Object.keys(ooModeOfCode)].sort().join(' ')}`);
     process.exit(1);
   }
   // no mode: the-creation-paras of evoluting-sections
@@ -1692,7 +1696,8 @@ async function fMain() {
   }
   const aMode = sModeOne === 'auto' ? aModeAuto : [sModeOne];
   const fShort = sPathIn => moPath.basename(String(sPathIn)).replace(/\.last\.html$/, '');
-  const fSkipFile = sPathIn => sNameFileOnly !== '' && fShort(sPathIn) !== sNameFileOnly;
+  const fSkipFile = sPathIn => (sNameFileOnly !== '' && fShort(sPathIn) !== sNameFileOnly) ||
+    (sDirOnly !== '' && !(moPath.relative(sNameDir, moPath.dirname(sPathIn)).split(moPath.sep).join('/') + '/').startsWith(sDirOnly + '/'));
   // the-files a-step parses: with --file only that one (a-whole-worldview parse takes ~40 s)
   const fReadHitpSome = () => fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath)).map(sPath => fReadFileHitp(sPath));
   if (!sNameDir) {
@@ -1703,7 +1708,8 @@ async function fMain() {
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
-    console.log('  --code X     with --file: the-fix of validator rule X (every rule), or NOFIX with why');
+    console.log('  --code X     with --file or --dir: the-fix of validator rule X (every rule), or NOFIX with why');
+    console.log('  --dir D      the-fixes START in the-files of dir D of the-worldview (dirCor), and its sub-dirs');
     console.log('  --name       MvrwSect03: a-name:: McshEngl.<heading> for every section without name::');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
@@ -1904,26 +1910,35 @@ async function fMain() {
       sCount = `${oCount.CREATE ?? 0} descriptions created · ${oCount.FIXTITLE ?? 0} titles fixed · ` +
         `date {${sDate}}`;
     } else if (sMode === 'code') {
-      // the-issues of ONE rule in the-file, as the-VALIDATOR reports them
+      // the-issues of ONE rule in each file (--file: one, --dir: every file there), as the-VALIDATOR reports them
       const oFix = ooFixCode[sCodeOne];
       const nNoteFix = aLineOut.length;
-      const sPathFile = fFindFileAll(sNameDir).find(sPath => !fSkipFile(sPath));
-      if (!sPathFile) throw new Error(`--file ${sNameFileOnly}: no such .last.html file`);
+      const aPathFile = fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath));
+      if (!aPathFile.length) throw new Error(`--file ${sNameFileOnly} --dir ${sDirOnly}: no such .last.html file`);
+      let aoFileHitpAll = null, aoIssueAll = null;
+      if (oFix.sKind === 'link') {
+        // a-link's target can be any file: the-whole worldview is parsed ONCE (~40 s)
+        aoFileHitpAll = fReadFileAllHitp(sNameDir);
+        aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true);
+      }
+      let nIssue = 0;
+      for (const sPathFile of aPathFile) {
+      // each file is read when its turn comes: an-earlier file's renames may have re-pointed its links
       const sRaw = moFs.readFileSync(sPathFile, 'utf8');
       const sNameShort = fShort(sPathFile);
       const sNameFile = moPath.basename(sPathFile);
       let aoIssue = [];
-      let aoFileHitpAll = null;
-      if (oFix.sKind === 'link') {
-        // a-link's target can be any file: the-whole worldview is parsed (~40 s)
-        aoFileHitpAll = fReadFileAllHitp(sNameDir);
-        aoIssue = fRunChecksHitp(aoFileHitpAll, sNameDir, true);
+      if (aoIssueAll) {
+        aoIssue = aoIssueAll;
       } else if (sCodeOne.startsWith('H')) {
         aoIssue = fRunChecksHitp([fReadFileHitp(sPathFile)], sNameDir, true);
       } else if (sNameFile.startsWith('Mcsh')) {
         aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile))], sNameDir, true);
       }
       aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeOne && oIssue.sNameFile === sNameFile);
+      nIssue += aoIssue.length;
+      // with --dir a-file without issues is not noted: only what was found
+      if (aoIssue.length === 0 && aPathFile.length > 1) continue;
 
       if (aoIssue.length === 0) {
         aLineOut.push(`NOISSUE ${sNameShort}  ${sCodeOne}: nothing to fix`);
@@ -1975,12 +1990,14 @@ async function fMain() {
         }
         fWriteFile(sPathFile, sRaw, sNameShort, fPlanLink(sRaw, sNameShort, aoIssue, sPathFile, sNameDir, oMapFile, ooSetId));
       }
+      }   // the-files
+      if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly}  ${sCodeOne}: nothing to fix in ${aPathFile.length} files`);
       for (const sNote of aLineOut.slice(nNoteFix)) {
         const sKind = sNote.split(' ')[0];
         if (['NOISSUE', 'NOFIX'].includes(sKind)) oCount[sKind] = (oCount[sKind] ?? 0) + 1;
       }
       const nChange = aLineOut.slice(nNoteFix).filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|LINK )/.test(sLine)).length;
-      sCount = `${sCodeOne}: ${aoIssue.length} issues · ${nChange} fixed` +
+      sCount = `${sCodeOne}: ${nIssue} issues · ${nChange} fixed` +
         (oCount.NOFIX ? ' · no automatic fix' : '');
     } else if (sMode === 'name') {
       // the-sections without name:: are what the-VALIDATOR says: MvrwSect03
@@ -2017,7 +2034,7 @@ async function fMain() {
   const aHead = [
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  createMcsh` +
-      `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''} ` +
+      `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sCodeOne ? ' ' + sCodeOne : ''}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''}${sDirOnly ? ' --dir ' + sDirOnly : ''} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
     `  ${oSetPathWritten.size} files ${bFix ? 'written' : 'to write'} · ${aStep.join(' · ')} · ` +

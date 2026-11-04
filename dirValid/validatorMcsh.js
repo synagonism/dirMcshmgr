@@ -113,6 +113,7 @@ async function fMain() {
     aoFileHitp = [fReadFileHitp(sPathFile)];
   } else {
     console.log(`📂 Scanning: ${sNameDir}`);
+    if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
     aoFileHitp = fReadFileAllHitp(sNameDir);
     console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
   }

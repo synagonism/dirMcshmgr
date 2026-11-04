@@ -73,6 +73,11 @@
         "command": "mcshv.validRule",
         "title": "validate-file-with-rule: report, or fix and report, one rule",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.validDirRule",
+        "title": "validate-directory-with-rule: report, or fix and report, one rule, a directory",
+        "category": "Mcs"
       }
     ],
     "menus": {

@@ -309,7 +309,9 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.validCurrent', () =>
       fRunValidCurrent((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
     vscode.commands.registerCommand('mcshv.validRule', () =>
-      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000)))
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
+    vscode.commands.registerCommand('mcshv.validDirRule', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), true))
   );
   // Make the sect-concept of the address bar a McshFile-concept: only the visual editor
   // has an address bar, so without one we report.
@@ -509,6 +511,8 @@ function fCreateProvider(context) {
     const fValidCurrent = () => fRunValidCurrent(fStatus);
     // Valid → validate-file-with-rule
     const fValidRule = () => fRunValidRule(fStatus);
+    // Valid → validate-directory-with-rule
+    const fValidDirRule = () => fRunValidRule(fStatus, true);
 
     // Retarget the edit file when the page navigates (bridge `nav` message).
     const fOnNavigate = async (href) => {
@@ -615,6 +619,7 @@ function fCreateProvider(context) {
             case 'makeSectFile': fMakeSect(); break;
             case 'validCurrent': await fValidCurrent(); break;
             case 'validRule': await fValidRule(); break;
+            case 'validDirRule': await fValidDirRule(); break;
             case 'cmd': fToChrome({ type: 'cmd', cmd: msg.cmd }); break; // relay to bridge
             case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P
             case 'openRaw': vscode.commands.executeCommand('vscode.openWith', (oActiveDoc || document).uri, 'default'); break;
@@ -632,6 +637,8 @@ function fCreateProvider(context) {
           case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K N from the iframe
           case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K M from the iframe
           case 'validCurrent': await fValidCurrent(); break;           // Ctrl+Alt+P V V from the iframe
+          case 'validRule': await fValidRule(); break;                 // Ctrl+Alt+V V R from the iframe
+          case 'validDirRule': await fValidDirRule(); break;           // Ctrl+Alt+V D R from the iframe
           case 'maximizeGroup': vscode.commands.executeCommand('workbench.action.toggleMaximizeEditorGroup'); break; // Ctrl+K Ctrl+M
           case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P from the iframe
           case 'nav': await fOnNavigate(msg.href); break;
@@ -932,13 +939,13 @@ function fBuildShell(webview, url) {
     <div id="idMenu">
       <div class="clsItem clsHasSub">file<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">new-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
-          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">make-sect-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
-          <div class="clsItem" title="Open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">open<span class="clsKbd">Ctrl+Alt+P O</span></div>
+          <div class="clsItem" title="create new McshFile-concept" data-cmd="cmdNewFile">new-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
+          <div class="clsItem" title="transform current-McshSect-concept to McshFile" data-cmd="cmdMakeSectFile">make-McshSect-to-McshFile<span class="clsKbd">Ctrl+Alt+P K M</span></div>
+          <div class="clsItem" title="open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">open<span class="clsKbd">Ctrl+Alt+P O</span></div>
           <div class="clsItem" data-cmd="cmdSave">save<span class="clsKbd">Ctrl+S</span></div>
-          <div class="clsItem" data-cmd="cmdOpenRaw">open in source</div>
-          <div class="clsItem" title="Index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
-          <div class="clsItem" title="Index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
+          <div class="clsItem" data-cmd="cmdOpenRaw">open-in-source</div>
+          <div class="clsItem" title="index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
+          <div class="clsItem" title="index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
         </div>
       </div>
       <div class="clsItem clsHasSub">edit<span class="clsCaret">&#9656;</span>
@@ -972,7 +979,8 @@ function fBuildShell(webview, url) {
       <div class="clsItem clsHasSub">valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
           <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
-          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule</div>
+          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">Ctrl+Alt+V V R</span></div>
+          <div class="clsItem" title="validate a directory (the current one, or chosen) with one rule: report, or fix and report" data-cmd="cmdValidDirRule">validate-directory-with-rule<span class="clsKbd">Ctrl+Alt+V D R</span></div>
         </div>
       </div>
     </div>
@@ -1053,6 +1061,7 @@ function fBuildShell(webview, url) {
     else if(sCmd==='cmdMakeSectFile') fToChrome({type:'makeSectFile'});
     else if(sCmd==='cmdValidCurrent') fToChrome({type:'validCurrent'});
     else if(sCmd==='cmdValidRule') fToChrome({type:'validRule'});
+    else if(sCmd==='cmdValidDirRule') fToChrome({type:'validDirRule'});
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
     else if(sCmd==='cmdOpenRaw') fToChrome({type:'openRaw'});
@@ -1300,18 +1309,63 @@ function fReadRuleAll(sDirValidIn) {
 }
 
 /**
- * DOING: validate-file-with-rule: it asks a-rule, then
- *   a) report: only report that rule,
- *   b) fix and report: the-rule's createMcsh.mjs mode with --file --fix, then report.
- *   The-report is validatorMcsh --code <rule> on the-current file, in a-new browser tab.
- * INPUT: fStatusIn: it shows a-message.
+ * OUTPUT: the-dirs of a-worldview that hold .last.html files, relative ('dirCor',
+ *   'dirStn/dirHitp'), alphabetically; '.' for the-worldview's own files.
  */
-async function fRunValidRule(fStatusIn) {
+function fReadDirAll(sRootIn) {
+  const aDir = [];
+  const fWalk = (sDirIn) => {
+    let aoEnt = [];
+    try { aoEnt = fs.readdirSync(sDirIn, { withFileTypes: true }); } catch (oErr) { return; }
+    if (aoEnt.some((oEnt) => oEnt.isFile() && oEnt.name.endsWith('.last.html'))) {
+      aDir.push(path.relative(sRootIn, sDirIn).split(path.sep).join('/') || '.');
+    }
+    for (const oEnt of aoEnt) {
+      if (oEnt.isDirectory() && !['.git', 'node_modules'].includes(oEnt.name) && !/\.files$/i.test(oEnt.name)) {
+        fWalk(path.join(sDirIn, oEnt.name));
+      }
+    }
+  };
+  fWalk(sRootIn);
+  return aDir.sort((sA, sB) => sA.localeCompare(sB, 'en'));
+}
+// the-dir chosen last in validate-directory-with-rule
+let sDirLast = '';
+
+/**
+ * DOING: validate-file-with-rule | validate-directory-with-rule: it asks (the-dir,) a-rule, then
+ *   a) report: only report that rule,
+ *   b) fix and report: the-rule's createMcsh.mjs mode with --file (--dir) --fix, then report.
+ *   The-report is validatorMcsh --code <rule> on the-current file (the-dir), in a-new browser tab.
+ *   The-dir: the-current file's dir is highlighted, any dir of the-worldview can be chosen.
+ * INPUT: fStatusIn: it shows a-message; bDirIn: the-directory version.
+ */
+async function fRunValidRule(fStatusIn, bDirIn = false) {
   const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
   if (!sRoot) return fStatusIn('no current file to validate');
   const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
-  const sBase = path.basename(sFile || '');
   const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
+  const sCmd = bDirIn ? 'validate-directory-with-rule' : 'validate-file-with-rule';
+
+  // the-dir: current file's dir first highlighted (else the-last chosen), any other can be chosen
+  let sDirRel = '';
+  if (bDirIn) {
+    const sDirCur = path.relative(sRoot, path.dirname(sFile || sRoot)).split(path.sep).join('/') || '.';
+    const oQpDir = vscode.window.createQuickPick();
+    oQpDir.items = fReadDirAll(sRoot).map((sIn) => ({ label: sIn, description: sIn === sDirCur ? 'current' : '' }));
+    oQpDir.placeholder = sCmd + ': choose directory (the-current one is highlighted)';
+    const oItemCur = oQpDir.items.find((oIn) => oIn.label === sDirCur) ?? oQpDir.items.find((oIn) => oIn.label === sDirLast);
+    if (oItemCur) oQpDir.activeItems = [oItemCur];
+    const oDir = await new Promise((fResolve) => {
+      oQpDir.onDidAccept(() => { fResolve(oQpDir.selectedItems[0]); oQpDir.hide(); });
+      oQpDir.onDidHide(() => { fResolve(undefined); oQpDir.dispose(); });
+      oQpDir.show();
+    });
+    if (!oDir) return;
+    sDirRel = sDirLast = oDir.label;
+  }
+  // what the-run is on: the-file, or the-dir
+  const sBase = bDirIn ? sDirRel : path.basename(sFile || '');
 
   const aoRule = fReadRuleAll(sDirValid);
   if (!aoRule.length) return fStatusIn('no rules found in dirValid/structural*.js');
@@ -1321,7 +1375,7 @@ async function fRunValidRule(fStatusIn) {
   oQp.items = aoRule.map((oIn) => ({
     label: oIn.sCode, description: oIn.sDesc, sCode: oIn.sCode
   }));
-  oQp.placeholder = 'validate-file-with-rule: ' + sBase + ': choose rule';
+  oQp.placeholder = sCmd + ': ' + sBase + ': choose rule';
   oQp.matchOnDescription = true;
   const oItemLast = oQp.items.find((oIn) => oIn.sCode === sCodeLast);
   if (oItemLast) oQp.activeItems = [oItemLast];
@@ -1340,12 +1394,18 @@ async function fRunValidRule(fStatusIn) {
   const oPick = await vscode.window.showQuickPick(aoPick, { placeHolder: oRule.sCode + ': ' + sBase });
   if (!oPick) return;
 
-  const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath === sFile);
-  if (oDoc) await oDoc.save();
+  // save what the-run reads: the-file, or every open file of the-dir
+  const sDirAbs = path.join(sRoot, sDirRel);
+  for (const oDoc of vscode.workspace.textDocuments.filter((oIn) => oIn.isDirty)) {
+    const bIn = bDirIn ? (oDoc.uri.fsPath + path.sep).toLowerCase().startsWith((sDirAbs + path.sep).toLowerCase())
+      : oDoc.uri.fsPath === sFile;
+    if (bIn) await oDoc.save();
+  }
+  const aArgWhere = bDirIn ? ['--dir', sDirRel] : ['--file', sBase];
 
   if (oPick.bFix) {
     const nExit = await fRunShellWait('fix ' + oRule.sCode,
-      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRoot, ...aArgFix, '--file', sBase, '--fix'], sRoot);
+      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRoot, ...aArgFix, ...aArgWhere, '--fix'], sRoot);
     if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
     // createMcsh.txt line 4: "  N files written · …"
     let sTotal = '';
@@ -1354,8 +1414,9 @@ async function fRunValidRule(fStatusIn) {
   }
 
   const nStart = Date.now();
-  await fRunShellWait('validate ' + oRule.sCode,
-    ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', sBase, '--code', oRule.sCode], sRoot);
+  await fRunShellWait('validate ' + oRule.sCode, bDirIn
+    ? ['../dirMcshmgr/dirValid/validatorMcsh', sDirAbs, '--code', oRule.sCode]
+    : ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', sBase, '--code', oRule.sCode], sRoot);
   await fOpenReport(sDirValid, nStart, fStatusIn);
 }
 
