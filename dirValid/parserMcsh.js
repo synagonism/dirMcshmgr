@@ -40,6 +40,7 @@ import { pathToFileURL } from 'url'
 const
   // contains the-versions of parserMcsh.js
   aVersion = [
+    'parserMcsh.js.0-4-0.2026-11-04: faster: fCountNl; fReadMcsLago_names skips a-para without <br>*, ONE scan (rNameLineAll)',
     'parserMcsh.js.0-3-0.2026-11-04: aoSectNoName, the-sections without valid names, with title and paras',
     'parserMcsh.js.0-2-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
     'parserMcsh.js.0-1-0.2026-10-01: Nodejs-version of mConcept.js',
@@ -52,6 +53,10 @@ const
   //   group1: the-McsLago (Engl, Elln, ...), group2: the-whole-name to the-comma.
   //   dupMcsh.mjs imports IT, so the-report reads the-name-lines as the-parser does.
   rNameLine = /^\s*<br>\*\s*Mcsh([A-Z][a-z]{3})\.([^\n,]+),/,
+  // rNameLine on EVERY line of a-text: [^\S\n] is \s without the-newline, so a-match
+  //   stays in its line, as when each line is matched alone; a-line starts after "\n" only
+  //   (NOT the-m flag: IT starts a-line after the-CR and the-LINE-SEPARATOR too, split('\n') does not)
+  rNameLineAll = /(?<=^|\n)[^\S\n]*<br>\*[^\S\n]*Mcsh([A-Z][a-z]{3})\.([^\n,]+),/g,
   // the-PoS-keys of a-lagoName-object,
   aPosKey = ['aNoun', 'aCase', 'aAdje', 'aAdve', 'aVerb', 'aConj'],
   ooFile_cnpt = {}; // {sNameIdRela: oFile_cnpt}
@@ -430,12 +435,17 @@ function fFindSect_overview(sRawSect) {
  *   sNameFull: the-whole-line to the-comma, "young!~adjeEngl:animal".
  */
 function fReadMcsLago_names(sTextIn) {
+  // a-name-line needs "<br>*" (rNameLine): a-para without IT has no names, the-common case
+  const sText = String(sTextIn ?? '');
+  if (sText.indexOf('<br>*') === -1) return {};
   // ── 1. read the-name-lines ────────────────────────────────────────────────
   const aoName = []; // { sLago, sName, sNameFormal, sNameTransl, sPos } in document order
-  for (const sLine of String(sTextIn ?? '').split('\n')) {
+  // ONE scan of the-text with rNameLineAll (rNameLine per line), not a-split and a-regex per line:
+  // a-specific-tree para can be 400 KB
+  rNameLineAll.lastIndex = 0;
+  let aNameMatch;
+  while ((aNameMatch = rNameLineAll.exec(sText)) !== null) {
     // a-name-line: " <br>* McshEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
-    const aNameMatch = sLine.match(rNameLine);
-    if (!aNameMatch) continue;
 
     const sLago = aNameMatch[1];                      // Engl, Elln, Zhon, ...
     const sRest = aNameMatch[2].trim();               // name + its !-notations
@@ -791,6 +801,16 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
 }
 
 /**
+ * OUTPUT: the-count of newlines in sIn from nFrom to nTo (nTo excluded).
+ *   indexOf jumps line to line, much faster than testing every char.
+ */
+function fCountNl(sIn, nFrom, nTo) {
+  let nCount = 0;
+  for (let nNl = sIn.indexOf('\n', nFrom); nNl !== -1 && nNl < nTo; nNl = sIn.indexOf('\n', nNl + 1)) nCount++;
+  return nCount;
+}
+
+/**
  * DOING: map each first-group capture of rPattern to its 1-based line number.
  *   Single O(n) pass — the regex must be global and its matches monotonic.
  *   Keeps the FIRST line an equal key appears on.
@@ -801,7 +821,7 @@ export function fBuildMapLine(sHtmlIn, rPattern) {
   let aMatch, nLine = 1, nPos = 0;
   rPattern.lastIndex = 0;
   while ((aMatch = rPattern.exec(sHtmlIn)) !== null) {
-    while (nPos < aMatch.index) { if (sHtmlIn.charCodeAt(nPos) === 10) nLine++; nPos++; }
+    nLine += fCountNl(sHtmlIn, nPos, aMatch.index); nPos = aMatch.index;
     if (!oMap.has(aMatch[1])) oMap.set(aMatch[1], nLine);
   }
   return oMap;

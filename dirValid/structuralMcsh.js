@@ -70,6 +70,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-44-0.2026-11-04: faster: fFindCnpt once per file, MvrwMisc01 skips a-para without {',
     'structuralMcsh.js.0-43-0.2026-11-04: fRunChecksMcsh aCodeIn: only the-checks of these rules',
     'structuralMcsh.js.0-42-0.2026-11-04: MvrwSect01..04 check also the-sections without valid names',
     'structuralMcsh.js.0-41-0.2026-11-01: code change to Mvrw or Mvre',
@@ -133,14 +134,21 @@ function fIssue(sLevel, sCode, sNameFile, oSectOrNull, sMessage, nLine = null) {
  * DOING: finds the-concepts of a-file, the-CnptSect and CnptPara of ooIdRelaCnpt.
  * INPUT: one CnptFile-object and the-sType wanted, '' for both.
  * OUTPUT: array of concept-objects, each with its sNameIdRela as sIdCnpt.
+ *   Made ONCE per file and type (oMapCnptOfFile), the-checks only read them; frozen,
+ *   so no check can change what the-next check sees.
  */
+const oMapCnptOfFile = new WeakMap();   // oCnptFile → { sTypeIn: aoCnpt }
 function fFindCnpt(oCnptFile, sTypeIn = '') {
+  let ooByType = oMapCnptOfFile.get(oCnptFile);
+  if (!ooByType) { ooByType = {}; oMapCnptOfFile.set(oCnptFile, ooByType); }
+  if (ooByType[sTypeIn]) return ooByType[sTypeIn];
   const aoCnpt = [];
   for (const [sIdCnpt, oCnpt] of Object.entries(oCnptFile.ooIdRelaCnpt ?? {})) {
     if (sTypeIn !== '' && oCnpt.sType !== sTypeIn) continue;
-    aoCnpt.push({ ...oCnpt, sIdCnpt });
+    aoCnpt.push(Object.freeze({ ...oCnpt, sIdCnpt }));
   }
-  return aoCnpt;
+  ooByType[sTypeIn] = Object.freeze(aoCnpt);
+  return ooByType[sTypeIn];
 }
 
 /**
@@ -362,6 +370,8 @@ function fCheckDate(aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       for (const oPara of oSect.aoTitlePara ?? []) {
+        // a-date is "{..}": a-para without "{" has none, no need to strip its tags
+        if ((oPara.sPara ?? '').indexOf('{') === -1) continue;
         for (const sLine of fFindParaText(oPara).split('\n')) {
           const oSetTokBad = new Set();       // one issue per distinct token on the line
           for (const [sTok] of sLine.replace(rTex, ' ').matchAll(rBrace)) {

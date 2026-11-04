@@ -103,6 +103,7 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-18-0.2026-11-04: Hvre04, a-<section> without id takes the-id of its heading without HN; Hvre02/03/04 got sNameDir as sKindIn, they fixed nothing',
     'createMcsh.mjs.0-17-0.2026-11-04: --code <rule>, a-fix (or NOFIX with why) for every validator rule',
     'createMcsh.mjs.0-16-0.2026-11-04: --name, the-fix of MvrwSect03: a-name:: from the-heading',
     'createMcsh.mjs.0-15-0.2026-11-03: --file, --dupname, --auto; codes MvrwSect01, MvrwId13',
@@ -1148,9 +1149,9 @@ const ooFixCode = {
   MvrwId12: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'sptr', ['str']) },
   MvrwId13: { sKind: 'idmap', fIdNew: sId => fFindIdSrtr(sId) },
   Hvre01:   { sKind: 'line', fPlan: (...a) => fPlanIdDup(...a) },
-  Hvre02:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'head') },
-  Hvre03:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'para') },
-  Hvre04:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'section') },
+  Hvre02:   { sKind: 'line', fPlan: (sRaw, sName, aoIssue) => fPlanIdAdd(sRaw, sName, aoIssue, 'head') },
+  Hvre03:   { sKind: 'line', fPlan: (sRaw, sName, aoIssue) => fPlanIdAdd(sRaw, sName, aoIssue, 'para') },
+  Hvre04:   { sKind: 'line', fPlan: (sRaw, sName, aoIssue) => fPlanIdAdd(sRaw, sName, aoIssue, 'section') },
   Hvre05:   { sKind: 'link' },
   Hvre06:   { sKind: 'link' },
   Hvre07:   { sKind: 'line', fPlan: (...a) => fPlanTagPair(...a) },
@@ -1282,9 +1283,29 @@ function fPlanIdDup(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
+ * DOING: the-heading of the-<section> without id on line nLIn: the-first tag after IT of
+ *   <hN>, <section> or </section>; a-heading counts only if no section starts or ends first.
+ * OUTPUT: the-id of that heading, or null (no heading, or a-heading without id).
+ */
+function fFindIdHeadNext(aLineIn, nLIn, sLineIn) {
+  const rTag = /<h[1-9]\b[^>]*>|<\/?section\b[^>]*>/gi;
+  const nAfter = sLineIn.search(/<section\b(?![^>]*\bid=)[^>]*>/);
+  for (let nL = nLIn, nN = 0; nL < aLineIn.length && nN < 200; nL++, nN++) {
+    let sText = nL === nLIn ? sLineIn : aLineIn[nL];
+    if (nL === nLIn) sText = sText.slice(sText.indexOf('>', nAfter) + 1);
+    rTag.lastIndex = 0;
+    const aTag = rTag.exec(sText);
+    if (!aTag) continue;
+    if (!/^<h/i.test(aTag[0])) return null;
+    return aTag[0].match(/\bid="([^"]+)"/)?.[1] ?? null;
+  }
+  return null;
+}
+
+/**
  * DOING: Hvre02 | Hvre03 | Hvre04: an-element without id gets one from its section:
  *   a-heading <hN> → <section-id>HN, a-<p> → <section-id>pN (with its clsHide self-anchor),
- *   a-<section> → <whole-id>sN. The-file is scanned: the-issues name only the-section.
+ *   a-<section> → the-id of its heading "XH1" without "H1" (X), else <whole-id>sN. The-file is scanned: the-issues name only the-section.
  *   A-<p> inside a-<div id> needs no id (the-div has it), as the-validator.
  */
 function fPlanIdAdd(sRawIn, sNameShortIn, aoIssueIn, sKindIn) {
@@ -1300,10 +1321,17 @@ function fPlanIdAdd(sRawIn, sNameShortIn, aoIssueIn, sKindIn) {
     let sLine = oSetEdit.get(nL) ?? aLine[nL];
     const sSectNow = aSect[aSect.length - 1] ?? 'id';
     if (sKindIn === 'section' && /<section\b(?![^>]*\bid=)[^>]*>/.test(sLine)) {
-      const sId = fFree(sSectNow + 's');
+      // its heading has an-id "XH1": the-section is "X"; else a-new "<whole-id>sN"
+      const sIdHead = fFindIdHeadNext(aLine, nL, sLine);
+      const sIdFromHead = sIdHead?.match(/^(.+)H[1-9]$/)?.[1] ?? null;
+      const bFromHead = sIdFromHead !== null && !oSetIdFile.has(sIdFromHead);
+      if (bFromHead) oSetIdFile.add(sIdFromHead);
+      else if (sIdFromHead !== null) aoNote.push(`NOTE   ${sNameShortIn}:${nL + 1}  #${sIdFromHead} (from its heading #${sIdHead}) is used, a-new id is made`);
+      const sId = bFromHead ? sIdFromHead : fFree(sSectNow + 's');
       sLine = sLine.replace(/<section\b(?![^>]*\bid=)/, `<section id="${sId}"`);
       oSetEdit.set(nL, sLine);
-      aoNote.push(`IDADD  ${sNameShortIn}:${nL + 1}  <section> gets #${sId}`);
+      aoNote.push(`IDADD  ${sNameShortIn}:${nL + 1}  <section> gets #${sId}` +
+        (bFromHead ? ` (its heading #${sIdHead})` : ''));
     }
     for (const aM of sLine.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)) aSect.push(aM[1]);
     if (/<div\b[^>]*\bid=/.test(sLine)) nDivId++;

@@ -1,8 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code Hvre01 --all --fix: C:\dirNodews\dirMcsh
+  createMcsh --code Hvre04 --file McshCor000015 --fix: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · Hvre01: 0 issues · 0 fixed · 0 skipped
+  1 files written · Hvre04: 1 issues · 1 fixed · 0 skipped
   written, no backup: see git diff
 
-=== NOISSUE (1) — the-rule has no issue in the-file
-  worldview  Hvre01: nothing to fix in 623 files
+=== IDADD (1) — an-element without id got one (Hvre02 heading, Hvre03 <p>, Hvre04 <section>)
+  McshCor000015:164  <section> gets #idMcshExmlenvt (its heading #idMcshExmlenvtH1)

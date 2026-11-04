@@ -37,6 +37,8 @@ import fs from 'fs';
 
 const
   aVersion = [
+    'structuralHitp.js.0-8-0.2026-11-04: Hvre02/Hvre03 report the-line of the-element itself',
+    'structuralHitp.js.0-7-0.2026-11-04: Hvre04 reports the-line of the-<section without id',
     'structuralHitp.js.0-6-0.2026-10-15: Hvrw08 Html-section nesting, split from Hvrw07',
     'structuralHitp.js.0-5-0.2026-10-15: Hvrw07 exempts law articles',
     'structuralHitp.js.0-4-0.2026-10-09: fRunChecksHitp bQuietIn, for reportMcsh.mjs',
@@ -135,7 +137,7 @@ function fCheckIdMissing(aoFile) {
       if (!oSect.sNameId) {
         aoIssue.push(fIssue('ERROR', 'Hvre04', oFile.sNameFile, null,
           `<section> without id (heading "${oSect.sNameTitle}") — cannot be referenced`,
-          null));
+          oSect.nLineOpen ?? null));
       }
     }
     // Hvre02/Hvre03: heading / paragraph without id
@@ -144,11 +146,11 @@ function fCheckIdMissing(aoFile) {
       if (oElmt.sType === 'head') {
         aoIssue.push(fIssue('ERROR', 'Hvre02', oFile.sNameFile, fSectOf(oElmt),
           `<${oElmt.sSubtype}> heading without id in section "${oElmt.sIdSect}" — cannot be a link/preview target`,
-          oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
+          oElmt.nLineOwn ?? oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       } else if (!oElmt.bInDivId) { // <p> inside a <div id="…"> is exempt — the div carries the id
         aoIssue.push(fIssue('ERROR', 'Hvre03', oFile.sNameFile, fSectOf(oElmt),
           `<p> without id in section "${oElmt.sIdSect}"`,
-          oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
+          oElmt.nLineOwn ?? oFile.oMapIdLine.get(oElmt.sIdSect) ?? null));
       }
     }
   }

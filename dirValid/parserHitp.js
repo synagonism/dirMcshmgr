@@ -15,9 +15,10 @@
  *   sNameTitle,     // <title> text (name part only)
  *   sVersion,       // e.g. "HitpStnStd000.8-2-3.2024-05-26"
  *   nLineTitle,     // line of the <title>
- *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt, nLine, nLineClose }]
+ *   aoSect,         // [{ sNameId, sNameTitle, nHeadingLevel, nDepth, sIdWhole_elmt, nLine, nLineOpen, nLineClose }]
  *   aoElmt,         // heading+paragraph elements of content sections:
- *                   //   [{ sType:'head'|'para', sNameId, nLevel, sHrefSelf, nLine, sIdSect }]
+ *                   //   [{ sType:'head'|'para', sNameId, nLevel, sHrefSelf, nLine, nLineOwn, sIdSect }]
+ *                   //   nLine: of its id, else of its section's id; nLineOwn: of its own tag
  *   oSetId,         // Set<string> of every id= in the file
  *   aoIdDup,        // [{ sName, nLine }] ids that appear more than once
  *   aLinks,         // content hrefs (clsHide self-anchors removed)
@@ -35,6 +36,7 @@ import {
   fExtractId,
   fBuildMapLine,
   fFindLineAt,
+  fMakeLineAt,
   fExtractContentHrefs,
   fSplit_sections,
   fFindSect_overview,
@@ -42,6 +44,9 @@ import {
 
 const
   aVersion = [
+    'parserHitp.js.0-4-0.2026-11-04: aoElmt nLineOwn, the-line of the-element itself, also without id',
+    'parserHitp.js.0-3-0.2026-11-04: aoSect nLineOpen, the-line of <section, also without id',
+    'parserHitp.js.0-2-0.2026-11-04: faster: lines looked up (fMakeLineAt) only for what is reported, script/style blanked once, light reads IdOnly/PathOnly',
     'parserHitp.js.0-1-0.2026-09-04: creation'
   ]
 
@@ -52,20 +57,22 @@ const aoIdSectInfra = ['idMeta', 'idComment', 'idSupport'];
  * DOING: scan every id="X" and return the ones appearing more than once.
  * OUTPUT: [{ sName, nLine }] (nLine = 1-based line of the FIRST occurrence).
  */
-function fFindIdDuplicate(sHtmlIn) {
+function fFindIdDuplicate(sHtmlIn, fLineAtIn = null) {
   const rId = /\bid="([^"]+)"/g;
   const oMapCount = new Map();   // id → count
-  const oMapFirstLine = new Map(); // id → first line
-  let aMatch, nLine = 1, nPos = 0;
+  const oMapFirstIdx = new Map(); // id → offset of its first occurrence
+  let aMatch;
   while ((aMatch = rId.exec(sHtmlIn)) !== null) {
-    while (nPos < aMatch.index) { if (sHtmlIn.charCodeAt(nPos) === 10) nLine++; nPos++; }
     const sName = aMatch[1];
     oMapCount.set(sName, (oMapCount.get(sName) ?? 0) + 1);
-    if (!oMapFirstLine.has(sName)) oMapFirstLine.set(sName, nLine);
+    if (!oMapFirstIdx.has(sName)) oMapFirstIdx.set(sName, aMatch.index);
   }
   const aoIdDup = [];
+  let fLineAt = fLineAtIn;   // the-lines of the-duplicates only
   for (const [sName, nCount] of oMapCount) {
-    if (nCount > 1) aoIdDup.push({ sName, nLine: oMapFirstLine.get(sName) });
+    if (nCount <= 1) continue;
+    fLineAt ??= fMakeLineAt(sHtmlIn);
+    aoIdDup.push({ sName, nLine: fLineAt(oMapFirstIdx.get(sName)) });
   }
   return aoIdDup;
 }
@@ -108,15 +115,13 @@ function fBlankCodePre(sHtmlIn) {
  * OUTPUT: [{ sKind:'unclosed'|'stray', sTag, nLine }]
  *   unclosed → line where the tag was OPENED; stray → line of the extra close.
  */
-function fScanTagPairs(sHtmlIn) {
-  const sScan = fBlankNonHtml(sHtmlIn);
+function fScanTagPairs(sScan, fLineAt) {
 
   const aoBad = [];
-  const aoStack = []; // { sTag, nLine }
+  const aoStack = []; // { sTag, nIdx }: the-line is found only for a-bad tag
   const rTag = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>/g;
-  let aMatch, nLine = 1, nPos = 0;
+  let aMatch;
   while ((aMatch = rTag.exec(sScan)) !== null) {
-    while (nPos < aMatch.index) { if (sScan.charCodeAt(nPos) === 10) nLine++; nPos++; }
     const bClose = aMatch[1] === '/';
     const sTag = aMatch[2].toLowerCase();
     const sAtts = aMatch[3];
@@ -124,7 +129,7 @@ function fScanTagPairs(sHtmlIn) {
     if (!bClose && /\/\s*$/.test(sAtts)) continue; // self-closing <tag/>
 
     if (!bClose) {
-      aoStack.push({ sTag, nLine });
+      aoStack.push({ sTag, nIdx: aMatch.index });
     } else {
       // find nearest matching open from the top of the stack
       let nIdx = -1;
@@ -132,11 +137,11 @@ function fScanTagPairs(sHtmlIn) {
         if (aoStack[k].sTag === sTag) { nIdx = k; break; }
       }
       if (nIdx === -1) {
-        aoBad.push({ sKind: 'stray', sTag, nLine });
+        aoBad.push({ sKind: 'stray', sTag, nLine: fLineAt(aMatch.index) });
       } else {
         // everything above the match was left unclosed
         for (let k = aoStack.length - 1; k > nIdx; k--) {
-          aoBad.push({ sKind: 'unclosed', sTag: aoStack[k].sTag, nLine: aoStack[k].nLine });
+          aoBad.push({ sKind: 'unclosed', sTag: aoStack[k].sTag, nLine: fLineAt(aoStack[k].nIdx) });
         }
         aoStack.length = nIdx; // pop through the match
       }
@@ -144,7 +149,7 @@ function fScanTagPairs(sHtmlIn) {
   }
   // anything still open at EOF is unclosed
   for (const oOpen of aoStack) {
-    aoBad.push({ sKind: 'unclosed', sTag: oOpen.sTag, nLine: oOpen.nLine });
+    aoBad.push({ sKind: 'unclosed', sTag: oOpen.sTag, nLine: fLineAt(oOpen.nIdx) });
   }
   return aoBad;
 }
@@ -154,15 +159,13 @@ function fScanTagPairs(sHtmlIn) {
  *   HTML element names must be lowercase in Hitp.
  * OUTPUT: [{ sTag, nLine }] — sTag keeps the original (offending) casing.
  */
-function fScanTagCase(sHtmlIn) {
-  const sScan = fBlankNonHtml(sHtmlIn);
+function fScanTagCase(sScan, fLineAt) {
   const aoCase = [];
   const rTag = /<\/?([a-zA-Z][a-zA-Z0-9]*)/g;
-  let aMatch, nLine = 1, nPos = 0;
+  let aMatch;
   while ((aMatch = rTag.exec(sScan)) !== null) {
-    while (nPos < aMatch.index) { if (sScan.charCodeAt(nPos) === 10) nLine++; nPos++; }
     const sTag = aMatch[1];
-    if (sTag !== sTag.toLowerCase()) aoCase.push({ sTag, nLine });
+    if (sTag !== sTag.toLowerCase()) aoCase.push({ sTag, nLine: fLineAt(aMatch.index) });
   }
   return aoCase;
 }
@@ -174,15 +177,17 @@ function fScanTagCase(sHtmlIn) {
  *   content="…, initial-scale=1") is consumed whole and never mistaken for an attr.
  * OUTPUT: [{ sAttr, sKind:'single'|'unquoted', sValue, nLine }]
  */
-function fScanAttrQuote(sHtmlIn) {
-  const sScan = fBlankNonHtml(sHtmlIn);
+function fScanAttrQuote(sScan, fLineAt) {
   const aoAttrBad = [];
   const rTag = /<([a-zA-Z][a-zA-Z0-9]*)\b([^>]*)>/g; // start/void tags only
   const rAttr = /([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*("[^"]*"|'[^']*'|[^\s"'=<>`]+)/g;
-  let aMatch, nLine = 1, nPos = 0;
+  // a-bad value starts, after "=", with a-char that is not '"': without one, all are double-quoted
+  const rMaybeBad = /=\s*[^\s"]/;
+  let aMatch;
   while ((aMatch = rTag.exec(sScan)) !== null) {
-    while (nPos < aMatch.index) { if (sScan.charCodeAt(nPos) === 10) nLine++; nPos++; }
     const sAtts = aMatch[2];
+    if (!rMaybeBad.test(sAtts)) continue;
+    const nLine = fLineAt(aMatch.index);
     let aAttrMatch;
     rAttr.lastIndex = 0;
     while ((aAttrMatch = rAttr.exec(sAtts)) !== null) {
@@ -281,11 +286,15 @@ export function fReadFileHitp(sPathFile) {
   const sHtmlId = fBlankCodePre(sFileRaw);
   const oMapIdLine   = fBuildMapLine(sHtmlId, /\bid="([^"]+)"/g);
   const oMapLinkLine = fBuildMapLine(sFileRaw, /<a\b[^>]*?\bhref="([^"]+)"/g);
-  const aoTagBad = fScanTagPairs(sFileRaw);
-  const aoTagCase = fScanTagCase(sFileRaw);
-  const aoAttrBad = fScanAttrQuote(sFileRaw);
+  // <script>/<style>/<!-- --> blanked ONCE, for the-three tag scanners
+  const sScan = fBlankNonHtml(sFileRaw);
+  // the-blanking keeps every newline, so ONE line-lookup serves all three strings
+  const fLineAt = fMakeLineAt(sFileRaw);
+  const aoTagBad = fScanTagPairs(sScan, fLineAt);
+  const aoTagCase = fScanTagCase(sScan, fLineAt);
+  const aoAttrBad = fScanAttrQuote(sScan, fLineAt);
   const oSetId  = fExtractId(sHtmlId);
-  const aoIdDup = fFindIdDuplicate(sHtmlId);
+  const aoIdDup = fFindIdDuplicate(sHtmlId, fLineAt);
 
   // ── <title> + version ─────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
@@ -326,9 +335,12 @@ export function fReadFileHitp(sPathFile) {
       sIdWhole_elmt: oRawSect.sIdWhole_elmt,
       // the-line of <section id>: aoSect is NOT in document order, Hvrw07 sorts by it
       nLine: oMapIdLine.get(oRawSect.sNameId) ?? null,
+      // the-line of the-<section tag itself, ALSO for a-section without id (Hvre04)
+      nLineOpen: fLineAt(oRawSect.nIdxStart),
       // the-line of its </section>: sRawHtml runs from <section to </section>
+      //   its newlines from the-file's newline-offsets, NOT by re-scanning every nested section
       nLineClose: oMapIdLine.has(oRawSect.sNameId)
-        ? oMapIdLine.get(oRawSect.sNameId) + oRawSect.sRawHtml.split('\n').length - 1 : null,
+        ? oMapIdLine.get(oRawSect.sNameId) + fLineAt(oRawSect.nIdxEnd) - fLineAt(oRawSect.nIdxStart) : null,
     });
 
     // element-level checks skip infrastructure sections (idMeta/idComment/idSupport);
@@ -342,16 +354,30 @@ export function fReadFileHitp(sPathFile) {
     // headings (h1..6) directly in this section's overview
     const rHead = /<h([1-6])\b[^>]*>[\s\S]*?<\/h\1>/gi;
     let aMatch;
+    // the-line of an-element's OWN tag (Hvre02/Hvre03, an-element without id): the-overview
+    //   is pieces of sRawHtml in order, so each element is found from the-previous one on
+    const fMakeLineOwn = () => {
+      let nCursor = 0;
+      return sElmtIn => {
+        const nIdx = oRawSect.sRawHtml.indexOf(sElmtIn, nCursor);
+        if (nIdx === -1) return null;
+        nCursor = nIdx + sElmtIn.length;
+        return fLineAt(oRawSect.nIdxStart + nIdx);
+      };
+    };
+    const fLineOwnHead = fMakeLineOwn();
     while ((aMatch = rHead.exec(sOverview)) !== null) {
       const { sNameId, sHrefSelf } = fReadElmtHitp(aMatch[0]);
       aoElmt.push({
         sType: 'head', sSubtype: 'h' + aMatch[1], sNameId, nLevel: parseInt(aMatch[1]),
         sHrefSelf, nLine: oMapIdLine.get(sNameId) ?? oMapIdLine.get(sIdSect) ?? null, sIdSect,
+        nLineOwn: fLineOwnHead(aMatch[0]),
       });
     }
 
     // paragraphs (<p>) directly in this section's overview
     const rP = /<p\b[^>]*>[\s\S]*?<\/p>/gi;
+    const fLineOwnPara = fMakeLineOwn();
     while ((aMatch = rP.exec(sOverview)) !== null) {
       const { sNameId, sHrefSelf } = fReadElmtHitp(aMatch[0]);
       const nLine = oMapIdLine.get(sNameId) ?? oMapIdLine.get(sIdSect) ?? null;
@@ -359,6 +385,7 @@ export function fReadFileHitp(sPathFile) {
       aoElmt.push({
         sType: 'para', sSubtype: 'p', sNameId, nLevel: null,
         sHrefSelf, nLine, sIdSect, bUnclosed: oSetLineUnclosedP.has(nLine), bInDivId,
+        nLineOwn: fLineOwnPara(aMatch[0]),
       });
     }
   }
@@ -426,6 +453,20 @@ export function fReadFileHitpIdOnly(sPathFile) {
 
 export function fReadFileAllHitpIdOnly(sPathDir) {
   return fFindPathAllHitp(sPathDir).map(sPath => fReadFileHitpIdOnly(sPath));
+}
+
+/**
+ * DOING: NO read, for the-Mcsh rules alone: parserMcsh reads the-Mcsh files itself,
+ *   the-validator needs only their paths and names.
+ * OUTPUT: a-file object with sPathFile, sNameFile, sNameDir.
+ */
+export function fReadFileHitpPathOnly(sPathFile) {
+  return { sType: 'fileHitp', sPathFile, sNameFile: path.basename(sPathFile),
+    sNameDir: path.basename(path.dirname(sPathFile)), sError: null };
+}
+
+export function fReadFileAllHitpPathOnly(sPathDir) {
+  return fFindPathAllHitp(sPathDir).map(sPath => fReadFileHitpPathOnly(sPath));
 }
 
 function fWalkDir(sDir) {

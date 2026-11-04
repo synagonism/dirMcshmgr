@@ -15,7 +15,8 @@
  *                                             # the-report keeps ONLY these rules
  */
 
-import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly, fReadFileAllHitpIdOnly } from './parserHitp.js';
+import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly, fReadFileAllHitpIdOnly,
+  fReadFileHitpPathOnly, fReadFileAllHitpPathOnly } from './parserHitp.js';
 import { fRunChecksHitp } from './structuralHitp.js';
 import { fReadFileMcsh } from './parserMcsh.js';
 import { fRunChecksMcsh } from './structuralMcsh.js';
@@ -30,6 +31,7 @@ const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
+    'validatorMcsh.js.0-9-0.2026-11-04: --code with Mcsh rules alone does NOT parse the-files as Hitp (fReadFileHitpPathOnly)',
     'validatorMcsh.js.0-8-0.2026-11-04: --code Hvre01 alone reads only the-ids (fReadFileHitpIdOnly), ~5 s for the-worldview, not ~24 s',
     'validatorMcsh.js.0-7-0.2026-11-04: --code runs ONLY the-checks of its rules; a-Hitp rule does not read the-Mcsh files',
     'validatorMcsh.js.0-6-0.2026-11-04: --code, the-report keeps only the-given rules',
@@ -111,10 +113,19 @@ async function fMain() {
     return fWriteOut.call(process.stdout, sChunk, ...aRest);
   };
 
+  // with --code ONLY the-checks of these rules run: Hvr.. are Hitp-checks, Mvr.. Mcsh-checks
+  const bCheckHitp = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('H'));
+  const bCheckMcsh = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('M')) || bUseAi;
+
   // ── parse every file as generic Hitp ──────────────────────────────────────
-  // --code Hvre01 alone needs only the-ids of the-files: the-light read, not the-full parse
+  // the-read is as light as the-rules allow:
+  //   Mcsh rules alone: NO Hitp read, parserMcsh reads the-Mcsh files (the-paths only)
+  //   Hvre01 alone: only the-ids of the-files
+  //   else: the-full Hitp parse
+  const bPathOnly = !bCheckHitp;
   const bIdOnly = aCode.length > 0 && aCode.every(sCode => sCode === 'Hvre01') && !bUseAi;
-  const fReadOne = bIdOnly ? fReadFileHitpIdOnly : fReadFileHitp;
+  const fReadOne = bPathOnly ? fReadFileHitpPathOnly : bIdOnly ? fReadFileHitpIdOnly : fReadFileHitp;
+  const fReadAll = bPathOnly ? fReadFileAllHitpPathOnly : bIdOnly ? fReadFileAllHitpIdOnly : fReadFileAllHitp;
   let aoFileHitp;
   if (sPathList) {
     const sPathListAbs = path.isAbsolute(sPathList) ? sPathList : path.join(sNameDir, sPathList);
@@ -132,13 +143,9 @@ async function fMain() {
   } else {
     console.log(`📂 Scanning: ${sNameDir}`);
     if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
-    aoFileHitp = bIdOnly ? fReadFileAllHitpIdOnly(sNameDir) : fReadFileAllHitp(sNameDir);
+    aoFileHitp = fReadAll(sNameDir);
     console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
   }
-
-  // with --code ONLY the-checks of these rules run: Hvr.. are Hitp-checks, Mvr.. Mcsh-checks
-  const bCheckHitp = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('H'));
-  const bCheckMcsh = aCode.length === 0 || aCode.some(sCode => sCode.startsWith('M')) || bUseAi;
 
   // ── 1. Hitp checks (every file) ────────────────────────────────────────────
   if (bCheckHitp) {

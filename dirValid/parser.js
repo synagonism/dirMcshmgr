@@ -52,6 +52,7 @@ import { globSync } from 'glob';
 
 const
   aVersion = [
+    'parser.js.0-5-0.2026-11-04: fCountNl, the-line numbers by indexOf, not char by char',
     'parser.js.0-4-0.2026-09-04: naming convention',
     'parser.js.0-3-0.2026-06-25: name changes',
     'parser.js.0-2-0.2026-05-0: div-paragraph',
@@ -89,6 +90,31 @@ export function fExtractId(sHtmlIn) {
 }
 
 /**
+ * OUTPUT: the-count of newlines in sIn from nFrom to nTo (nTo excluded).
+ *   indexOf jumps line to line, much faster than testing every char.
+ */
+export function fCountNl(sIn, nFrom, nTo) {
+  let nCount = 0;
+  for (let nNl = sIn.indexOf('\n', nFrom); nNl !== -1 && nNl < nTo; nNl = sIn.indexOf('\n', nNl + 1)) nCount++;
+  return nCount;
+}
+
+/**
+ * DOING: the-newline offsets of sIn, found ONCE.
+ * OUTPUT: a-function nIdx → its 1-based line, by binary search, for scanners that
+ *   need the-line of few matches only (a-bad tag), not of every match.
+ */
+export function fMakeLineAt(sIn) {
+  const aNlIdx = [];
+  for (let nNl = sIn.indexOf('\n'); nNl !== -1; nNl = sIn.indexOf('\n', nNl + 1)) aNlIdx.push(nNl);
+  return nIdxIn => {
+    let nLo = 0, nHi = aNlIdx.length;
+    while (nLo < nHi) { const nMid = (nLo + nHi) >> 1; if (aNlIdx[nMid] < nIdxIn) nLo = nMid + 1; else nHi = nMid; }
+    return nLo + 1;
+  };
+}
+
+/**
  * DOING: map each first-group capture of rPattern to its 1-based line number.
  *   Single O(n) pass — the regex must be global and its matches monotonic.
  *   Keeps the FIRST line an equal key appears on.
@@ -99,7 +125,7 @@ export function fBuildMapLine(sHtmlIn, rPattern) {
   let aMatch, nLine = 1, nPos = 0;
   rPattern.lastIndex = 0;
   while ((aMatch = rPattern.exec(sHtmlIn)) !== null) {
-    while (nPos < aMatch.index) { if (sHtmlIn.charCodeAt(nPos) === 10) nLine++; nPos++; }
+    nLine += fCountNl(sHtmlIn, nPos, aMatch.index); nPos = aMatch.index;
     if (!oMap.has(aMatch[1])) oMap.set(aMatch[1], nLine);
   }
   return oMap;
@@ -108,9 +134,7 @@ export function fBuildMapLine(sHtmlIn, rPattern) {
 /** 1-based line number of character offset nIdx in sHtmlIn (null if nIdx < 0). */
 export function fFindLineAt(sHtmlIn, nIdx) {
   if (nIdx == null || nIdx < 0) return null;
-  let nLine = 1;
-  for (let i = 0; i < nIdx && i < sHtmlIn.length; i++) if (sHtmlIn.charCodeAt(i) === 10) nLine++;
-  return nLine;
+  return 1 + fCountNl(sHtmlIn, 0, Math.min(nIdx, sHtmlIn.length));
 }
 
 
@@ -246,6 +270,9 @@ export function fSplit_sections(sHtmlIn) {
         sRawHtml: sHtmlIn.slice(oSectStartLast.nStart, aMatch.index + sTagSect.length),
         nDepth: oSectStartLast.nDepth,
         sIdWhole_elmt,
+        // where sRawHtml is in sHtmlIn, so a-caller finds its lines without re-scanning IT
+        nIdxStart: oSectStartLast.nStart,
+        nIdxEnd: aMatch.index + sTagSect.length,
       });
     }
   }
