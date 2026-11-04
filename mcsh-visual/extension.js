@@ -307,7 +307,9 @@ function fActivate(context) {
   // Ctrl+Alt+P V V from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.validCurrent', () =>
-      fRunValidCurrent((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000)))
+      fRunValidCurrent((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
+    vscode.commands.registerCommand('mcshv.validRule', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000)))
   );
   // Make the sect-concept of the address bar a McshFile-concept: only the visual editor
   // has an address bar, so without one we report.
@@ -505,23 +507,8 @@ function fCreateProvider(context) {
 
     // Valid → Validate-current (and Ctrl+Alt+P V V from the iframe)
     const fValidCurrent = () => fRunValidCurrent(fStatus);
-
-    // Valid → Name01-duplicate-line: remove the duplicated name-lines of each name:: para
-    // of the current file, then save: format + write + reload via onDidSave.
-    const fValidName01 = async () => {
-      if (!oActiveDoc) return fStatus('this page is not editable');
-      const sText = oActiveDoc.getText();
-      const oDup = omModel.fRemoveNameDup(sText);
-      if (oDup.nRemoved === 0) return fStatus('name:: no duplicated lines');
-      const oWe = new vscode.WorkspaceEdit();
-      oWe.replace(oActiveDoc.uri, new vscode.Range(oActiveDoc.positionAt(0), oActiveDoc.positionAt(sText.length)), oDup.sText);
-      bSelfEditing = true;
-      const bOk = await vscode.workspace.applyEdit(oWe);
-      bSelfEditing = false;
-      if (!bOk) return fStatus('name:: the edit failed');
-      await oActiveDoc.save();
-      fStatus('name:: ' + oDup.nRemoved + ' duplicated lines removed');
-    };
+    // Valid → validate-file-with-rule
+    const fValidRule = () => fRunValidRule(fStatus);
 
     // Retarget the edit file when the page navigates (bridge `nav` message).
     const fOnNavigate = async (href) => {
@@ -627,7 +614,7 @@ function fCreateProvider(context) {
             case 'newFile': fNewFile(); break;
             case 'makeSectFile': fMakeSect(); break;
             case 'validCurrent': await fValidCurrent(); break;
-            case 'validName01': await fValidName01(); break;
+            case 'validRule': await fValidRule(); break;
             case 'cmd': fToChrome({ type: 'cmd', cmd: msg.cmd }); break; // relay to bridge
             case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P
             case 'openRaw': vscode.commands.executeCommand('vscode.openWith', (oActiveDoc || document).uri, 'default'); break;
@@ -943,49 +930,49 @@ function fBuildShell(webview, url) {
   <div id="idMenuWrap">
     <button class="clsNavbtn" id="idMore" title="Commands">&#8943;</button>
     <div id="idMenu">
-      <div class="clsItem clsHasSub">File<span class="clsCaret">&#9656;</span>
+      <div class="clsItem clsHasSub">file<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">New-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
-          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">Make-sect-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
-          <div class="clsItem" title="Open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">Open<span class="clsKbd">Ctrl+Alt+P O</span></div>
-          <div class="clsItem" data-cmd="cmdSave">Save<span class="clsKbd">Ctrl+S</span></div>
-          <div class="clsItem" data-cmd="cmdOpenRaw">Open in source</div>
-          <div class="clsItem" title="Index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">Index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
-          <div class="clsItem" title="Index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">Index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
+          <div class="clsItem" title="Create new McsHitp file" data-cmd="cmdNewFile">new-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
+          <div class="clsItem" title="Make current-sect-concept McshFile-concept" data-cmd="cmdMakeSectFile">make-sect-file<span class="clsKbd">Ctrl+Alt+P K M</span></div>
+          <div class="clsItem" title="Open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">open<span class="clsKbd">Ctrl+Alt+P O</span></div>
+          <div class="clsItem" data-cmd="cmdSave">save<span class="clsKbd">Ctrl+S</span></div>
+          <div class="clsItem" data-cmd="cmdOpenRaw">open in source</div>
+          <div class="clsItem" title="Index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
+          <div class="clsItem" title="Index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
         </div>
       </div>
-      <div class="clsItem clsHasSub">Edit<span class="clsCaret">&#9656;</span>
+      <div class="clsItem clsHasSub">edit<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem clsHasSub">Character<span class="clsCaret">&#9656;</span>
+          <div class="clsItem clsHasSub">character<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
-              <div class="clsItem" data-cmd="cmdCharArrow1">Arrow 1 &#11106;<span class="clsKbd">Ctrl+Alt+C A 1</span></div>
-              <div class="clsItem" data-cmd="cmdCharArrow2">Arrow 2 &#8658;<span class="clsKbd">Ctrl+Alt+C A 2</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlGt">Html &amp;gt;<span class="clsKbd">Ctrl+Alt+C H G</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlLt">Html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlNbsp">Html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
+              <div class="clsItem" data-cmd="cmdCharArrow1">arrow 1 &#11106;<span class="clsKbd">Ctrl+Alt+C A 1</span></div>
+              <div class="clsItem" data-cmd="cmdCharArrow2">arrow 2 &#8658;<span class="clsKbd">Ctrl+Alt+C A 2</span></div>
+              <div class="clsItem" data-cmd="cmdCharHtmlGt">html &amp;gt;<span class="clsKbd">Ctrl+Alt+C H G</span></div>
+              <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
+              <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
               <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">Ctrl+Alt+C P M</span></div>
             </div>
           </div>
-          <div class="clsItem" data-cmd="cmdAddLine">Add line</div>
-          <div class="clsItem" data-cmd="cmdRemoveLine">Remove line</div>
+          <div class="clsItem" data-cmd="cmdAddLine">add line</div>
+          <div class="clsItem" data-cmd="cmdRemoveLine">remove line</div>
         </div>
       </div>
-      <div class="clsItem clsHasSub">Format<span class="clsCaret">&#9656;</span>
+      <div class="clsItem clsHasSub">format<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" data-cmd="cmdBold"><b>Bold</b></div>
-          <div class="clsItem clsHasSub">Color<span class="clsCaret">&#9656;</span>
+          <div class="clsItem" data-cmd="cmdBold"><b>bold</b></div>
+          <div class="clsItem clsHasSub">color<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
-              <div class="clsItem" data-cmd="cmdRed"><span style="color:#e06">Red</span></div>
-              <div class="clsItem" data-cmd="cmdGreen"><span style="color:#3c3">Green</span></div>
+              <div class="clsItem" data-cmd="cmdRed"><span style="color:#e06">red</span></div>
+              <div class="clsItem" data-cmd="cmdGreen"><span style="color:#3c3">green</span></div>
             </div>
           </div>
-          <div class="clsItem" data-cmd="cmdUrl">Url&#8230;</div>
+          <div class="clsItem" data-cmd="cmdUrl">url&#8230;</div>
         </div>
       </div>
-      <div class="clsItem clsHasSub">Valid<span class="clsCaret">&#9656;</span>
+      <div class="clsItem clsHasSub">valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
           <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
-          <div class="clsItem" title="name:: remove duplicated lines" data-cmd="cmdValidName01">Name01-duplicate-line</div>
+          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule</div>
         </div>
       </div>
     </div>
@@ -1065,7 +1052,7 @@ function fBuildShell(webview, url) {
     else if(sCmd==='cmdNewFile') fToChrome({type:'newFile'});
     else if(sCmd==='cmdMakeSectFile') fToChrome({type:'makeSectFile'});
     else if(sCmd==='cmdValidCurrent') fToChrome({type:'validCurrent'});
-    else if(sCmd==='cmdValidName01') fToChrome({type:'validName01'});
+    else if(sCmd==='cmdValidRule') fToChrome({type:'validRule'});
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
     else if(sCmd==='cmdOpenRaw') fToChrome({type:'openRaw'});
@@ -1245,16 +1232,131 @@ async function fRunValidCurrent(fStatusIn) {
     fStatusIn('fix: ' + (sTotal || 'done') + ' (createMcsh.txt)');
   }
 
-  const sReport = path.join(sDirValid, 'validator-report.html');
   const nStart = Date.now();
   await fRunTaskWait('validate current-FILE');
+  await fOpenReport(sDirValid, nStart, fStatusIn);
+}
+
+/**
+ * DOING: it opens the-validator-report of a-run that started at nStartIn, in the-default
+ *   browser, in a-new tab. An-older report is NOT opened: the-run wrote none.
+ */
+async function fOpenReport(sDirValidIn, nStartIn, fStatusIn) {
+  const sReport = path.join(sDirValidIn, 'validator-report.html');
   // an old report must not pass as this run's: mtime has at least 1s resolution here
   let nMtime = 0;
   try { nMtime = fs.statSync(sReport).mtimeMs; } catch (oErr) { /* no report */ }
-  if (nMtime < nStart - 1000) return fStatusIn('validator wrote no report, see the terminal');
+  if (nMtime < nStartIn - 1000) return fStatusIn('validator wrote no report, see the terminal');
   // a-new ?_r per run: a-new URL, so the-browser opens a-new tab
   const sUrl = await fIsServerUp() ? fDisplayUrlForPath(sReport) : '';
   vscode.env.openExternal(sUrl ? vscode.Uri.parse(sUrl + '?_r=' + Date.now()) : vscode.Uri.file(sReport));
+}
+
+/**
+ * DOING: it runs `node aArgIn` in sCwdIn as a-task in the-shared task-terminal and waits.
+ * OUTPUT: the-exit-code.
+ */
+function fRunShellWait(sNameIn, aArgIn, sCwdIn) {
+  return new Promise((fResolve) => {
+    const oTask = new vscode.Task({ type: 'shell', task: sNameIn }, vscode.TaskScope.Workspace, sNameIn, 'mcshv',
+      new vscode.ShellExecution('node', aArgIn, { cwd: sCwdIn }));
+    oTask.presentationOptions = { reveal: vscode.TaskRevealKind.Always, panel: vscode.TaskPanelKind.Shared };
+    // listen BEFORE the-start: a-fast failure can end before executeTask resolves
+    const oEnd = vscode.tasks.onDidEndTaskProcess((oEvt) => {
+      if (oEvt.execution.task.name !== sNameIn || oEvt.execution.task.source !== 'mcshv') return;
+      oEnd.dispose();
+      fResolve(oEvt.exitCode);
+    });
+    vscode.tasks.executeTask(oTask);
+  });
+}
+
+// the-rules with their own createMcsh.mjs mode (see its --help; the-same modes --auto runs);
+// every other rule is fixed by createMcsh.mjs --code <rule> (its ooFixCode: a-fix, or why none)
+const oModeFixByCode = {
+  MvreName01: 'dupname', Hvrw08: 'nest', Hvrw07: 'headgap',
+  MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname', MvrwId13: 'srtr'
+};
+// OUTPUT: the-createMcsh.mjs arguments that fix a-rule
+const fArgFix = (sCodeIn) => oModeFixByCode[sCodeIn] ? ['--' + oModeFixByCode[sCodeIn]] : ['--code', sCodeIn];
+// the-rule chosen last: highlighted in the-list next time
+let sCodeLast = '';
+
+/**
+ * OUTPUT: [{sCode, sDesc}] the-validator rules, from the-header comments of
+ *   structuralMcsh.js (Mvr..) and structuralHitp.js (Hvr..): " *  MvrwSect01  CnptSect ...".
+ */
+function fReadRuleAll(sDirValidIn) {
+  const aoRule = [];
+  for (const sName of ['structuralMcsh.js', 'structuralHitp.js']) {
+    let sText = '';
+    try { sText = fs.readFileSync(path.join(sDirValidIn, sName), 'utf8'); } catch (oErr) { continue; }
+    const sHead = sText.slice(0, sText.indexOf('*/'));
+    for (const aM of sHead.matchAll(/^ \*\s+((?:Mvr|Hvr)[A-Za-z]*\d+)\s+(.+)$/gm)) {
+      if (!aoRule.some((oRule) => oRule.sCode === aM[1])) aoRule.push({ sCode: aM[1], sDesc: aM[2].trim() });
+    }
+  }
+  return aoRule;
+}
+
+/**
+ * DOING: validate-file-with-rule: it asks a-rule, then
+ *   a) report: only report that rule,
+ *   b) fix and report: the-rule's createMcsh.mjs mode with --file --fix, then report.
+ *   The-report is validatorMcsh --code <rule> on the-current file, in a-new browser tab.
+ * INPUT: fStatusIn: it shows a-message.
+ */
+async function fRunValidRule(fStatusIn) {
+  const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
+  if (!sRoot) return fStatusIn('no current file to validate');
+  const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
+  const sBase = path.basename(sFile || '');
+  const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
+
+  const aoRule = fReadRuleAll(sDirValid);
+  if (!aoRule.length) return fStatusIn('no rules found in dirValid/structural*.js');
+  // alphabetically by code; the-last chosen is highlighted, not moved
+  aoRule.sort((oA, oB) => oA.sCode.localeCompare(oB.sCode, 'en'));
+  const oQp = vscode.window.createQuickPick();
+  oQp.items = aoRule.map((oIn) => ({
+    label: oIn.sCode, description: oIn.sDesc, sCode: oIn.sCode
+  }));
+  oQp.placeholder = 'validate-file-with-rule: ' + sBase + ': choose rule';
+  oQp.matchOnDescription = true;
+  const oItemLast = oQp.items.find((oIn) => oIn.sCode === sCodeLast);
+  if (oItemLast) oQp.activeItems = [oItemLast];
+  const oRule = await new Promise((fResolve) => {
+    oQp.onDidAccept(() => { fResolve(oQp.selectedItems[0]); oQp.hide(); });
+    oQp.onDidHide(() => { fResolve(undefined); oQp.dispose(); });
+    oQp.show();
+  });
+  if (!oRule) return;                                     // Escape: nothing
+  sCodeLast = oRule.sCode;
+  const aArgFix = fArgFix(oRule.sCode);
+  const aoPick = [
+    { label: 'report', description: 'only report ' + oRule.sCode, bFix: false },
+    { label: 'fix and report', description: 'createMcsh ' + aArgFix.join(' ') + ', then report', bFix: true }
+  ];
+  const oPick = await vscode.window.showQuickPick(aoPick, { placeHolder: oRule.sCode + ': ' + sBase });
+  if (!oPick) return;
+
+  const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath === sFile);
+  if (oDoc) await oDoc.save();
+
+  if (oPick.bFix) {
+    const nExit = await fRunShellWait('fix ' + oRule.sCode,
+      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRoot, ...aArgFix, '--file', sBase, '--fix'], sRoot);
+    if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
+    // createMcsh.txt line 4: "  N files written · …"
+    let sTotal = '';
+    try { sTotal = fs.readFileSync(path.join(sDirValid, 'createMcsh.txt'), 'utf8').split('\n')[3].trim(); } catch (oErr) { /* no report */ }
+    fStatusIn('fix ' + oRule.sCode + ': ' + (sTotal || 'done') + ' (createMcsh.txt)');
+  }
+
+  const nStart = Date.now();
+  await fRunShellWait('validate ' + oRule.sCode,
+    ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', sBase, '--code', oRule.sCode], sRoot);
+  await fOpenReport(sDirValid, nStart, fStatusIn);
 }
 
 function fDeactivate() {}

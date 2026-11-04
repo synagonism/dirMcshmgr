@@ -75,6 +75,14 @@
  *   (idXsrtrF → idXsrtr, idXstcr → idXsrtr, idX → idXsrtr), with its own ids that
  *   start with it, and every link to them in every .last.html file (json index files are NOT touched).
  *
+ *   --code <rule> --file <file>: the-fix of ONE validator rule in one file, for EVERY
+ *   rule (ooFixCode): it changes only the-clear cases and SKIPs the-rest with why; a-rule
+ *   that needs you (MvreFile01, MvrwSect02, MvrwGstr01/02) gets NOFIX with why. A-rule
+ *   with its own mode runs it (--code MvreName01 = --dupname).
+ *
+ *   --name: the-fix of MvrwSect03: a-section without name:: gets a-name::-para with
+ *   McshEngl.<its heading>, after its description::. It SKIPS a-heading with "," or "!".
+ *
  * INPUT: the-path of a-dirMcsh-worldview.
  * OUTPUT: dry-run by default: what it would do. With --fix it writes the-files,
  *   without backup: the-worldview is in git.
@@ -86,14 +94,16 @@
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
-import { fReadFileHitp } from './parserHitp.js'
+import { fReadFileHitp, fReadFileAllHitp } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh } from './structuralMcsh.js'
-import { rHeadArticle } from './structuralHitp.js'
+import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-17-0.2026-11-04: --code <rule>, a-fix (or NOFIX with why) for every validator rule',
+    'createMcsh.mjs.0-16-0.2026-11-04: --name, the-fix of MvrwSect03: a-name:: from the-heading',
     'createMcsh.mjs.0-15-0.2026-11-03: --file, --dupname, --auto; codes MvrwSect01, MvrwId13',
     'createMcsh.mjs.0-14-0.2026-10-28: MvrlMnnm01 renamed MvrlMmn01',
     'createMcsh.mjs.0-13-0.2026-10-24: --fix writes NO backup (git is the-backup)',
@@ -111,7 +121,7 @@ const
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
   // the-modes, one per run; --auto runs aModeAuto in this order
-  aModeAll = ['missing', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'auto'],
+  aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'auto'],
   aModeAuto = ['dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
@@ -121,6 +131,20 @@ const
     BAD:      'the-file is NOT written: its check failed',
     DELETE:   'a-creation-para deleted, its date put in the-description::',
     CREATE:   'a-new description:: created',
+    NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name',
+    NOFIX:    'no automatic fix for this rule: it needs you',
+    NOISSUE:  'the-rule has no issue in the-file',
+    IDNEW:    'an-id renamed (MvrwId01..13), with its own ids; links re-pointed in every file',
+    IDDUP:    'a-duplicated id: the-later element renamed X_2.. (Hvre01), the-first keeps X',
+    IDADD:    'an-element without id got one (Hvre02 heading, Hvre03 <p>, Hvre04 <section>)',
+    ANCHOR:   'a-clsHide self-anchor added or re-pointed (Hvrw03, Hvrw04)',
+    CASE:     'a-tag made lowercase (Hvrw05)',
+    QUOTE:    'an-attribute value double-quoted (Hvrw06)',
+    CLOSE:    'a-</p> added where the-browser closes the-<p> (Hvre07)',
+    TITLE:    'the-<title> got the-version of idMetaVersion (Hvrw01, Hvrw02)',
+    MOVE:     'the-Attrbase-line moved after M!@McshXxx | M!=I (MvrwMain07)',
+    DATE:     'a-date padded to {YYYY-MM-DD} (MvrwMisc01)',
+    LINKFX:   'a-broken link re-pointed to its ONE certain target (Hvre05, Hvre06)',
     INSERT:   'a-creation-date inserted in a-description::',
     FIXTITLE: 'a-typo description-title fixed',
     RENAME:   'the-name::-para id renamed to idName',
@@ -428,6 +452,97 @@ function fPlanMissing(sRawIn, sNameShortIn, aIdSectIn, sDateIn) {
     }
     aoEdit.push(fMakeDescNew(aLine, nSect, nHeadEnd, nOwnEnd, sIdDesc, sDateIn));
     aoNote.push(`CREATE ${sLoc}  {${sDateIn}} as #${sIdDesc}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: --name mode, the-fix of MvrwSect03: a-section without name:: gets
+ *     <p id="<section-id>nam">name::
+ *       <br>* McshEngl.<its heading>,
+ *   right after its description:: (else after its heading), with the-indentation of
+ *   the-section's own lines.
+ *   It SKIPS and reports: a-section-id not unique, no heading, a-taken <section-id>nam,
+ *   a-heading with "," or "!" (they end a-name-line or mark a-relation).
+ * INPUT: aoSectIn: [{sIdSect, sTitle}] the-sections the-validator reports as MvrwSect03.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+// the-name-lines of the-worldview, read once: a-new name must not be one of them (MvreName01)
+let oSetNameAllCache = null;
+function fFindNameAll(sNameDirIn) {
+  if (oSetNameAllCache) return oSetNameAllCache;
+  oSetNameAllCache = new Set();
+  for (const sPath of fFindFileAll(sNameDirIn)) {
+    for (const aM of moFs.readFileSync(sPath, 'utf8').matchAll(/<br>\*\s*(Mcsh[A-Z][a-z]{3}\.[^,\n]+),/g)) {
+      oSetNameAllCache.add(aM[1].trim());
+    }
+  }
+  return oSetNameAllCache;
+}
+
+/**
+ * OUTPUT: why a-heading can NOT be a-name, '' when it can: empty, "," or "!" (they end
+ *   a-name-line or mark a-relation), "{" (a-date-token), an-attribute heading (DOING of X,
+ *   structure of X: its main-name follows a-rule, MvrwMain02..06), a-name that exists already.
+ *   A-name taken here is added to oSetNameAllIn.
+ */
+function fFindNameBad(sNameIn, oSetNameAllIn) {
+  if (!sNameIn || /[,!]/.test(sNameIn)) return 'is empty or has "," or "!"';
+  if (sNameIn.includes('{')) return 'has "{"';
+  if (/^(\d+_)?(DOING|doing|evoluting|evaluation|evaluating|info-resource|structure) of |'(doing|evoluting|evaluation|evaluating|info-resource|structure)$/i.test(sNameIn)) {
+    return 'is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...)';
+  }
+  if (oSetNameAllIn.has('McshEngl.' + sNameIn)) return 'is a-name already in the-worldview (MvreName01)';
+  oSetNameAllIn.add('McshEngl.' + sNameIn);
+  return '';
+}
+
+function fPlanName(sRawIn, sNameShortIn, aoSectIn, oSetNameAllIn = new Set()) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+
+  for (const { sIdSect, sTitle } of aoSectIn) {
+    const aIdx = [];
+    aLine.forEach((sLine, nL) => {
+      if (fLineClean(sLine).match(rSectOpen)?.[1] === sIdSect) aIdx.push(nL);
+    });
+    if (aIdx.length !== 1) {
+      aoNote.push(`SKIP   ${sNameShortIn}  #${sIdSect} occurs ${aIdx.length} times as <section id>`);
+      continue;
+    }
+    const nSect = aIdx[0];
+    const sLoc = `${sNameShortIn}:${nSect + 1}`;
+    const nOwnEnd = fFindSectOwnEnd(aLine, nSect);
+    const nHeadEnd = fFindHeadEnd(aLine, nSect, nOwnEnd);
+    if (nHeadEnd === -1) { aoNote.push(`SKIP   ${sLoc}  #${sIdSect} has no heading`); continue; }
+    const sName = String(sTitle ?? '').replace(/\s+/g, ' ').trim();
+    const sWhyBad = fFindNameBad(sName, oSetNameAllIn);
+    if (sWhyBad) {
+      aoNote.push(`SKIP   ${sLoc}  #${sIdSect} heading "${sName}" ${sWhyBad}: give the-name by hand`);
+      continue;
+    }
+    const sIdName = sIdSect + 'nam';
+    if (sRawIn.includes(`id="${sIdName}"`)) {
+      aoNote.push(`SKIP   ${sLoc}  #${sIdSect} has no name:: and id ${sIdName} is taken`);
+      continue;
+    }
+    // after the-description:: if any, else after the-heading
+    let nAt = nHeadEnd + 1;
+    for (let nD = nHeadEnd + 1; nD < nOwnEnd; nD++) {
+      if (!rDescOpen.test(fLineClean(aLine[nD]))) continue;
+      let nDescEnd = nD;
+      while (nDescEnd < nOwnEnd && !aLine[nDescEnd].includes('</p>')) nDescEnd++;
+      nAt = nDescEnd + 1;
+      break;
+    }
+    const sIndent = (aLine[nSect + 1] ?? '').match(/^( *)/)[1];
+    aoEdit.push({ nAt, nDel: 0, aIns: [
+      `${sIndent}<p id="${sIdName}">name::`,
+      `${sIndent}  <br>* McshEngl.${sName},`,
+      `${sIndent}  <a class="clsHide" href="#${sIdName}"></a></p>`
+    ] });
+    aoNote.push(`NAME   ${sLoc}  #${sIdName}  McshEngl.${sName}`);
   }
   return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
 }
@@ -970,6 +1085,567 @@ function fPlanDupName(sRawIn, sNameShortIn) {
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
+// ═══ --code <rule>: the-fix of ONE validator rule in ONE file (with --file) ═══════════════
+// Every rule of structuralMcsh.js and structuralHitp.js is here: a-fix that changes only
+// the-clear cases and SKIPs the-rest with why, or NOFIX with why a-fix needs you.
+
+/**
+ * OUTPUT: [nFrom, nTo] the-lines of the-element on line nLineIn (0-based): a-<section> to
+ *   its </section>, a-<div> to its </div>, else to the-first line with </p> (or nLineIn).
+ */
+function fFindElmtRange(aLineIn, nLineIn) {
+  const sLine = aLineIn[nLineIn];
+  for (const sTag of ['section', 'div']) {
+    if (!new RegExp(`<${sTag}\\b[^>]*\\bid=`).test(sLine)) continue;
+    let nDepth = 0;
+    for (let nL = nLineIn; nL < aLineIn.length; nL++) {
+      nDepth += fCount(aLineIn[nL], `<${sTag}`) - fCount(aLineIn[nL], `</${sTag}>`);
+      if (nDepth <= 0) return [nLineIn, nL];
+    }
+    return [nLineIn, aLineIn.length - 1];
+  }
+  for (let nL = nLineIn; nL < aLineIn.length; nL++) {
+    if (aLineIn[nL].includes('</p>')) return [nLineIn, nL];
+    if (nL > nLineIn && /<(p|section|div|h[1-9])\b/.test(aLineIn[nL])) return [nLineIn, nL - 1];
+  }
+  return [nLineIn, nLineIn];
+}
+
+/**
+ * OUTPUT: the-id with the-wanted suffix: a-trailing "F"|"FT" after it goes, a-bad ending
+ *   (the-longest first) becomes the-suffix, else the-suffix is appended (idXatt010 → idXatt010irsc).
+ */
+function fFindIdSuffix(sIdIn, sSuffixIn, aBadIn) {
+  if (new RegExp(`${sSuffixIn}FT?$`).test(sIdIn)) return sIdIn.replace(/FT?$/, '');
+  for (const sBad of [...aBadIn].sort((sA, sB) => sB.length - sA.length)) {
+    if (sIdIn.endsWith(sBad)) return sIdIn.slice(0, -sBad.length) + sSuffixIn;
+  }
+  return sIdIn + sSuffixIn;
+}
+
+// the-look-alike letters of MvrwId01: Greek and Cyrillic → Latin
+const oLetterLatin = {
+  'ο': 'o', 'α': 'a', 'ε': 'e', 'ι': 'i', 'κ': 'k', 'ν': 'v', 'ρ': 'p', 'τ': 't', 'υ': 'u', 'χ': 'x',
+  'Ο': 'O', 'Α': 'A', 'Ε': 'E', 'Ι': 'I', 'Κ': 'K', 'Ν': 'N', 'Ρ': 'P', 'Τ': 'T', 'Χ': 'X', 'Β': 'B', 'Η': 'H', 'Μ': 'M', 'Ζ': 'Z',
+  'о': 'o', 'а': 'a', 'е': 'e', 'р': 'p', 'с': 'c', 'х': 'x', 'у': 'y', 'О': 'O', 'А': 'A', 'Е': 'E', 'Р': 'P', 'С': 'C', 'Х': 'X'
+};
+
+// the-fix of each rule: sKind idmap (rename ids, re-point links in every file), line
+// (edits in the-file), main (rename main-names), none (sWhy: it needs you)
+const ooFixCode = {
+  MvrwId01: { sKind: 'idmap', fIdNew: sId => { const s = [...sId].map(sC => oLetterLatin[sC] ?? sC).join(''); return /^[A-Za-z0-9_:.-]+$/.test(s) ? s : null; } },
+  MvrwId02: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'dong', ['dngFT', 'dngF', 'dng', 'doing']) },
+  MvrwId03: { sKind: 'idmap', fIdNew: sId => sId.trim().replace(/\s+/g, '_') },
+  MvrwId04: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'eval', ['evaluation', 'evaln', 'evln', 'eln']) },
+  MvrwId05: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evltg', 'evlg', 'evg', 'Evg']) },
+  MvrwId06: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'irsc', ['resource', 'infrsc', 'ircs', 'rsc']) },
+  MvrwId07: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'pntr', ['rtr']) },
+  MvrwId08: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'chtr', ['ctr']) },
+  MvrwId09: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'wltr', ['whlchn', 'whl', 'wtr', 'P1']) },
+  MvrwId10: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'prtr', ['prt', 'ptr', 'rtr']) },
+  MvrwId11: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'gntr', ['gtr']) },
+  MvrwId12: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'sptr', ['str']) },
+  MvrwId13: { sKind: 'idmap', fIdNew: sId => fFindIdSrtr(sId) },
+  Hvre01:   { sKind: 'line', fPlan: (...a) => fPlanIdDup(...a) },
+  Hvre02:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'head') },
+  Hvre03:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'para') },
+  Hvre04:   { sKind: 'line', fPlan: (...a) => fPlanIdAdd(...a, 'section') },
+  Hvre05:   { sKind: 'link' },
+  Hvre06:   { sKind: 'link' },
+  Hvre07:   { sKind: 'line', fPlan: (...a) => fPlanTagPair(...a) },
+  Hvrw01:   { sKind: 'line', fPlan: (...a) => fPlanVersion(...a) },
+  Hvrw02:   { sKind: 'line', fPlan: (...a) => fPlanVersion(...a) },
+  Hvrw03:   { sKind: 'line', fPlan: (...a) => fPlanSelfAnchor(...a) },
+  Hvrw04:   { sKind: 'line', fPlan: (...a) => fPlanSelfAnchor(...a) },
+  Hvrw05:   { sKind: 'line', fPlan: (...a) => fPlanTagCase(...a) },
+  Hvrw06:   { sKind: 'line', fPlan: (...a) => fPlanAttrQuote(...a) },
+  MvrwSect04: { sKind: 'line', fPlan: (...a) => fPlanNameEmpty(...a) },
+  MvrwMain02: { sKind: 'main', sSuffix: 'evolg' },
+  MvrwMain03: { sKind: 'main' },
+  MvrwMain04: { sKind: 'main', sSuffix: 'doing' },
+  MvrwMain05: { sKind: 'main', sSuffix: 'infrsc' },
+  MvrwMain06: { sKind: 'main', sSuffix: 'srtr' },
+  MvrwMain07: { sKind: 'line', fPlan: (...a) => fPlanAttrbase(...a) },
+  MvrwMisc01: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
+  MvreFile01: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
+  MvrwSect02: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
+  MvrwGstr01: { sKind: 'none', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
+  MvrwGstr02: { sKind: 'none', sWhy: 'where the-specific goes in the-specific-tree:: is a-choice: add it by hand' }
+};
+
+/**
+ * DOING: idmap: the-renames of ONE file from its issues: the-old id from the-message
+ *   (id="X", href="#X"), the-new by fIdNewIn; the-element's own ids that START with X
+ *   (heading XH2, Xdsn, Xnam, a-child Xgstr) get the-new start too.
+ *   It SKIPS an-id that is not unique, a-new id that is taken, an-id without a-new form.
+ * OUTPUT: { oMapId: old → new, aoNote }
+ */
+function fPlanIdMap(sRawIn, sNameShortIn, aoIssueIn, fIdNewIn) {
+  const aLine = sRawIn.split('\n');
+  const oSetIdFile = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
+  const oMapId = new Map();
+  const aoNote = [];
+  for (const oIssue of aoIssueIn) {
+    const sIdOld = (oIssue.sMessage.match(/\bid="([^"]+)"/) ?? oIssue.sMessage.match(/href="#([^"]+)"/))?.[1]
+      ?? oIssue.sIdConcept;
+    if (!sIdOld || oMapId.has(sIdOld)) continue;
+    const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
+    const fSkip = sWhy => aoNote.push(`SKIP   ${sLoc}  #${sIdOld}: ${sWhy}`);
+    const sIdNew = fIdNewIn(sIdOld);
+    if (!sIdNew || sIdNew === sIdOld) { fSkip('no new form of the-id: rename it by hand'); continue; }
+    if (fCount(sRawIn, `id="${sIdOld}"`) !== 1) { fSkip(`its id occurs ${fCount(sRawIn, `id="${sIdOld}"`)} times`); continue; }
+    const nLine = aLine.findIndex(sLine => sLine.includes(`id="${sIdOld}"`));
+    const [nFrom, nTo] = fFindElmtRange(aLine, nLine);
+    const aIdOwn = [...new Set(aLine.slice(nFrom, nTo + 1).join('\n').match(/\bid="[^"]+"/g)
+      .map(sM => sM.slice(4, -1)).filter(sId => sId.startsWith(sIdOld)))];
+    const aoPair = aIdOwn.map(sId => [sId, sIdNew + sId.slice(sIdOld.length)]);
+    const oPairTaken = aoPair.find(([, sNew]) => oSetIdFile.has(sNew) || [...oMapId.values()].includes(sNew));
+    if (oPairTaken) { fSkip(`the-new id ${oPairTaken[1]} is taken`); continue; }
+    if (aoPair.some(([sOld]) => fCount(sRawIn, `id="${sOld}"`) !== 1)) { fSkip('one of its own ids is not unique'); continue; }
+    for (const [sOld, sNew] of aoPair) oMapId.set(sOld, sNew);
+    aoNote.push(`IDNEW  ${sLoc}  #${sIdOld} -> #${sIdNew}` +
+      (aoPair.length > 1 ? `  (+${aoPair.length - 1} own ids)` : ''));
+  }
+  return { oMapId, aoNote };
+}
+
+/**
+ * DOING: Hvre01: a-duplicated id keeps its FIRST element, the-links go there; every
+ *   later element gets X_2, X_3 ... with its own clsHide self-anchor.
+ */
+function fPlanIdDup(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oSetIdFile = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
+  // a-line can hold 2 duplicated ids: its changes add up here, ONE edit per line
+  const oMapEdit = new Map();
+  for (const oIssue of aoIssueIn) {
+    const sId = oIssue.sMessage.match(/Duplicate id "([^"]+)"/)?.[1];
+    if (!sId) continue;
+    const aAt = aLine.map((sLine, nL) => [sLine, nL]).filter(([sLine]) => sLine.includes(`id="${sId}"`)).map(aP => aP[1]);
+    let nNext = 2;
+    for (const nAt of aAt.slice(1)) {
+      if (fCount(aLine[nAt], `id="${sId}"`) !== 1) {
+        aoNote.push(`SKIP   ${sNameShortIn}:${nAt + 1}  #${sId} twice on one line: fix by hand`);
+        continue;
+      }
+      while (oSetIdFile.has(`${sId}_${nNext}`)) nNext++;
+      const sIdNew = `${sId}_${nNext++}`;
+      oSetIdFile.add(sIdNew);
+      const [, nTo] = fFindElmtRange(aLine, nAt);
+      // its own self-anchor: the-first clsHide to #X after its id, before a-next element
+      let nAnchor = -1;
+      for (let nL = nAt; nL <= nTo; nL++) {
+        if (nL > nAt && /<(p|section|div|h[1-9])\b[^>]*\bid=/.test(aLine[nL])) break;
+        if (aLine[nL].includes(`class="clsHide" href="#${sId}"`)) { nAnchor = nL; break; }
+      }
+      for (const nL of new Set([nAt, nAnchor].filter(n => n !== -1))) {
+        let sLine = oMapEdit.get(nL) ?? aLine[nL];
+        if (nL === nAt) sLine = sLine.replace(`id="${sId}"`, `id="${sIdNew}"`);
+        if (nL === nAnchor) sLine = sLine.replace(`class="clsHide" href="#${sId}"`, `class="clsHide" href="#${sIdNew}"`);
+        oMapEdit.set(nL, sLine);
+      }
+      aoNote.push(`IDDUP  ${sNameShortIn}:${nAt + 1}  #${sId} -> #${sIdNew} (the-first keeps #${sId})`);
+    }
+  }
+  for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvre02 | Hvre03 | Hvre04: an-element without id gets one from its section:
+ *   a-heading <hN> → <section-id>HN, a-<p> → <section-id>pN (with its clsHide self-anchor),
+ *   a-<section> → <whole-id>sN. The-file is scanned: the-issues name only the-section.
+ *   A-<p> inside a-<div id> needs no id (the-div has it), as the-validator.
+ */
+function fPlanIdAdd(sRawIn, sNameShortIn, aoIssueIn, sKindIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oSetIdFile = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
+  const fFree = sBase => { let n = 1; while (oSetIdFile.has(sBase + n)) n++; oSetIdFile.add(sBase + n); return sBase + n; };
+  const aSect = [];          // the-open section ids
+  let nDivId = 0;            // depth inside a-<div id>
+  const oSetEdit = new Map(); // nL → new text
+  for (let nL = 0; nL < aLine.length; nL++) {
+    let sLine = oSetEdit.get(nL) ?? aLine[nL];
+    const sSectNow = aSect[aSect.length - 1] ?? 'id';
+    if (sKindIn === 'section' && /<section\b(?![^>]*\bid=)[^>]*>/.test(sLine)) {
+      const sId = fFree(sSectNow + 's');
+      sLine = sLine.replace(/<section\b(?![^>]*\bid=)/, `<section id="${sId}"`);
+      oSetEdit.set(nL, sLine);
+      aoNote.push(`IDADD  ${sNameShortIn}:${nL + 1}  <section> gets #${sId}`);
+    }
+    for (const aM of sLine.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)) aSect.push(aM[1]);
+    if (/<div\b[^>]*\bid=/.test(sLine)) nDivId++;
+    if (sKindIn === 'head') {
+      const aHead = sLine.match(/<h([1-9])\b(?![^>]*\bid=)[^>]*>/);
+      if (aHead) {
+        const sId = oSetIdFile.has(`${sSectNow}H${aHead[1]}`) ? fFree(`${sSectNow}H${aHead[1]}_`) : `${sSectNow}H${aHead[1]}`;
+        oSetIdFile.add(sId);
+        sLine = sLine.replace(/<h([1-9])\b(?![^>]*\bid=)/, `<h$1 id="${sId}"`);
+        oSetEdit.set(nL, sLine);
+        aoNote.push(`IDADD  ${sNameShortIn}:${nL + 1}  <h${aHead[1]}> gets #${sId}`);
+      }
+    }
+    if (sKindIn === 'para' && nDivId === 0 && /<p\b(?![^>]*\bid=)[^>]*>/.test(sLine)) {
+      const sId = fFree(sSectNow + 'p');
+      sLine = sLine.replace(/<p\b(?![^>]*\bid=)/, `<p id="${sId}"`);
+      oSetEdit.set(nL, sLine);
+      // its self-anchor before its </p>
+      const [, nTo] = fFindElmtRange(aLine, nL);
+      const sClose = oSetEdit.get(nTo) ?? aLine[nTo];
+      if (sClose.includes('</p>')) {
+        const nIdx = sClose.lastIndexOf('</p>');
+        oSetEdit.set(nTo, sClose.slice(0, nIdx) + `<a class="clsHide" href="#${sId}"></a>` + sClose.slice(nIdx));
+      }
+      aoNote.push(`IDADD  ${sNameShortIn}:${nL + 1}  <p> gets #${sId}`);
+    }
+    nDivId = Math.max(0, nDivId - (nDivId > 0 ? fCount(sLine, '</div>') : 0));
+    for (let n = fCount(sLine, '</section>'); n > 0; n--) aSect.pop();
+  }
+  for (const [nL, sLine] of oSetEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  if (aoIssueIn.length && !aoEdit.length) aoNote.push(`SKIP   ${sNameShortIn}  no element without id found by the-scan`);
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvrw03 | Hvrw04: the-clsHide self-anchor of a-para (or div) with id X:
+ *   missing → <a class="clsHide" href="#X"></a> before its </p> (</div>); pointing
+ *   elsewhere → it points to #X.
+ */
+function fPlanSelfAnchor(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMapEdit = new Map();
+  for (const oIssue of aoIssueIn) {
+    const sId = oIssue.sMessage.match(/> "([^"]+)"/)?.[1];
+    const sTag = oIssue.sMessage.match(/^<(\w+)>/)?.[1] ?? 'p';
+    const nLine = aLine.findIndex(sLine => sLine.includes(`id="${sId}"`));
+    if (!sId || nLine === -1) continue;
+    const sLoc = `${sNameShortIn}:${nLine + 1}`;
+    const [, nTo] = fFindElmtRange(aLine, nLine);
+    const sCloseTag = sTag === 'div' ? '</div>' : '</p>';
+    const sAnchor = `<a class="clsHide" href="#${sId}"></a>`;
+    if (oIssue.sCode === 'Hvrw03') {
+      const sClose = oMapEdit.get(nTo) ?? aLine[nTo];
+      if (!sClose.includes(sCloseTag)) { aoNote.push(`SKIP   ${sLoc}  #${sId}: its ${sCloseTag} is not found`); continue; }
+      const nIdx = sClose.lastIndexOf(sCloseTag);
+      oMapEdit.set(nTo, fLineClean(sClose).trim() === sCloseTag
+        ? sClose.replace(sCloseTag, `  ${sAnchor}${sCloseTag}`)
+        : sClose.slice(0, nIdx) + sAnchor + sClose.slice(nIdx));
+      aoNote.push(`ANCHOR ${sLoc}  #${sId} gets its clsHide self-anchor`);
+    } else {
+      const sHrefOld = oIssue.sMessage.match(/points to #(\S+)/)?.[1];
+      let bDone = false;
+      for (let nL = nTo; nL >= nLine && !bDone; nL--) {
+        const sNow = oMapEdit.get(nL) ?? aLine[nL];
+        if (sNow.includes(`class="clsHide" href="#${sHrefOld}"`)) {
+          oMapEdit.set(nL, sNow.replace(`class="clsHide" href="#${sHrefOld}"`, `class="clsHide" href="#${sId}"`));
+          bDone = true;
+        }
+      }
+      aoNote.push(bDone ? `ANCHOR ${sLoc}  #${sId}: its self-anchor #${sHrefOld} -> #${sId}`
+        : `SKIP   ${sLoc}  #${sId}: its self-anchor #${sHrefOld} is not found`);
+    }
+  }
+  for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvrw05: <P> → <p>, </P> → </p> on the-issue's line.
+ */
+function fPlanTagCase(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMapEdit = new Map();
+  for (const oIssue of aoIssueIn) {
+    const sTag = oIssue.sMessage.match(/element <([^>\s]+)>/)?.[1];
+    const nL = (oIssue.nLine ?? 0) - 1;
+    if (!sTag || nL < 0) continue;
+    const sNow = oMapEdit.get(nL) ?? aLine[nL];
+    const sNew = sNow.replace(new RegExp(`<(/?)${sTag}\\b`, 'g'), (sAll, sSlash) => `<${sSlash}${sTag.toLowerCase()}`);
+    if (sNew === sNow) { aoNote.push(`SKIP   ${sNameShortIn}:${nL + 1}  <${sTag}> is not on its line`); continue; }
+    oMapEdit.set(nL, sNew);
+    aoNote.push(`CASE   ${sNameShortIn}:${nL + 1}  <${sTag}> -> <${sTag.toLowerCase()}>`);
+  }
+  for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvrw06: attr='v' | attr=v → attr="v" on the-issue's line; a-value with " is skipped.
+ */
+function fPlanAttrQuote(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMapEdit = new Map();
+  for (const oIssue of aoIssueIn) {
+    const aM = oIssue.sMessage.match(/^Attribute (\S+?)=('?)(.*?)\2 (?:uses|is unquoted)/);
+    const nL = (oIssue.nLine ?? 0) - 1;
+    if (!aM || nL < 0) continue;
+    const [, sAttr, sQuote, sValue] = aM;
+    const sLoc = `${sNameShortIn}:${nL + 1}`;
+    if (sValue.includes('"')) { aoNote.push(`SKIP   ${sLoc}  ${sAttr}: its value has "`); continue; }
+    const sNow = oMapEdit.get(nL) ?? aLine[nL];
+    const sOld = `${sAttr}=${sQuote}${sValue}${sQuote}`;
+    if (!sNow.includes(sOld)) { aoNote.push(`SKIP   ${sLoc}  ${sOld} is not on its line`); continue; }
+    oMapEdit.set(nL, sNow.replace(sOld, `${sAttr}="${sValue}"`));
+    aoNote.push(`QUOTE  ${sLoc}  ${sOld} -> ${sAttr}="${sValue}"`);
+  }
+  for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvre07: an-unclosed <p> gets its </p> where the-browser closes it anyway:
+ *   at the-end of its last line before the-next <p>, <section>, </section>, <div>, <hN>.
+ *   A-stray close tag, or another unclosed tag, needs you: SKIP.
+ */
+function fPlanTagPair(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  // a-heading opened <h4> and closed </h3>: "Unclosed <h4>" + "Stray </h3>" up to 3 lines below it
+  const oSetDone = new Set();
+  for (const oOpen of aoIssueIn) {
+    const aOpen = oOpen.sMessage.match(/^Unclosed <(h[1-9])>/);
+    if (!aOpen) continue;
+    const oStray = aoIssueIn.find(oIn => !oSetDone.has(oIn) && /^Stray <\/h[1-9]>/.test(oIn.sMessage) &&
+      oIn.nLine >= oOpen.nLine && oIn.nLine <= oOpen.nLine + 3);
+    if (!oStray) continue;
+    const sStray = oStray.sMessage.match(/^Stray <\/(h[1-9])>/)[1];
+    const nL = oStray.nLine - 1;
+    aoEdit.push({ nAt: nL, nDel: 1, aIns: [aLine[nL].replace(`</${sStray}>`, `</${aOpen[1]}>`)] });
+    aoNote.push(`CLOSE  ${sNameShortIn}:${nL + 1}  </${sStray}> -> </${aOpen[1]}> of the-<${aOpen[1]}> of line ${oOpen.nLine}`);
+    oSetDone.add(oOpen); oSetDone.add(oStray);
+  }
+  for (const oIssue of aoIssueIn) {
+    if (oSetDone.has(oIssue)) continue;
+    const nL = (oIssue.nLine ?? 0) - 1;
+    const sLoc = `${sNameShortIn}:${nL + 1}`;
+    if (!/^Unclosed <p>/.test(oIssue.sMessage) || nL < 0) {
+      aoNote.push(`SKIP   ${sLoc}  ${oIssue.sMessage.split(' —')[0]}: fix by hand`);
+      continue;
+    }
+    let nEnd = nL;
+    for (let nN = nL + 1; nN < aLine.length; nN++) {
+      if (/^\s*(<p\b|<section\b|<\/section>|<div\b|<h[1-9]\b)/.test(aLine[nN])) break;
+      if (aLine[nN].trim() !== '') nEnd = nN;
+    }
+    const sLast = fLineClean(aLine[nEnd]);
+    aoEdit.push({ nAt: nEnd, nDel: 1, aIns: [aLine[nEnd].replace(sLast, sLast + '</p>')] });
+    aoNote.push(`CLOSE  ${sNameShortIn}:${nEnd + 1}  </p> of the-<p> of line ${nL + 1}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: Hvrw01 | Hvrw02: the-<title> gets the-version of the-file's end,
+ *   <p id="idMetaVersion">: its latest "version.N-N-N.YYYY-MM-DD" line, as
+ *   "(McshXxx000000.N-N-N.YYYY-MM-DD)". Without such a-line: SKIP.
+ */
+function fPlanVersion(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  if (!aoIssueIn.length) return { aoEdit, aoNote, sRawNew: sRawIn };
+  const sParaVer = sRawIn.match(/<p id="idMetaVersion">[\s\S]*?<\/p>/)?.[0] ?? '';
+  const aoVer = [...sParaVer.matchAll(/version\.(\d+-\d+-\d+)\.(\d{4}-\d{2}-\d{2})/g)]
+    .map(aM => ({ sVer: aM[1], sDate: aM[2] })).sort((oA, oB) => oB.sDate.localeCompare(oA.sDate));
+  const nTitle = aLine.findIndex(sLine => /<title\b/i.test(sLine));
+  if (!aoVer.length || nTitle === -1) {
+    aoNote.push(`SKIP   ${sNameShortIn}  no <title> or no dated version-line in idMetaVersion: fix by hand`);
+    return { aoEdit, aoNote, sRawNew: sRawIn };
+  }
+  let nClose = nTitle;
+  while (nClose < aLine.length - 1 && !/<\/title>/i.test(aLine[nClose])) nClose++;
+  const sVersion = `${sNameShortIn}.${aoVer[0].sVer}.${aoVer[0].sDate}`;
+  const sTitle = aLine.slice(nTitle, nClose + 1).join('\n');
+  // a-malformed "(...)" is replaced, else the-version is added before </title>
+  const sTitleNew = /\([^)]*\)/.test(sTitle)
+    ? sTitle.replace(/\([^)]*\)/, `(${sVersion})`)
+    : sTitle.replace(/\s*<\/title>/i, `\n    (${sVersion})</title>`);
+  aoEdit.push({ nAt: nTitle, nDel: nClose - nTitle + 1, aIns: sTitleNew.split('\n') });
+  aoNote.push(`TITLE  ${sNameShortIn}:${nTitle + 1}  <title> gets (${sVersion})`);
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: MvrwSect04: a-name::-para without a-valid Mcsh-name gets "<br>* McshEngl.<heading>,"
+ *   as its first line. A-heading with "," or "!" is skipped.
+ */
+function fPlanNameEmpty(sRawIn, sNameShortIn, aoIssueIn, sNameDirIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oSetNameAll = fFindNameAll(sNameDirIn);
+  for (const oIssue of aoIssueIn) {
+    const sIdSect = oIssue.sIdConcept;
+    const nSect = aLine.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdSect);
+    const sLoc = `${sNameShortIn}:${nSect + 1}`;
+    const sName = String(oIssue.sConcept ?? '').replace(/\s+/g, ' ').trim();
+    if (nSect === -1) { aoNote.push(`SKIP   ${sNameShortIn}  #${sIdSect}: no <section id> with it`); continue; }
+    const sWhyBad = fFindNameBad(sName, oSetNameAll);
+    if (sWhyBad) { aoNote.push(`SKIP   ${sLoc}  #${sIdSect} heading "${sName}" ${sWhyBad}: give the-name by hand`); continue; }
+    const nOwnEnd = fFindSectOwnEnd(aLine, nSect);
+    const nName = aLine.findIndex((sLine, nL) => nL > nSect && nL < nOwnEnd && rNameOpen.test(fLineClean(sLine)));
+    if (nName === -1) { aoNote.push(`SKIP   ${sLoc}  #${sIdSect}: its name::-para is not a-plain <p id> one`); continue; }
+    aoEdit.push({ nAt: nName + 1, nDel: 0, aIns: [fFindIndentNext(aLine, nName, aLine[nName].match(/^( *)/)[1]) + `<br>* McshEngl.${sName},`] });
+    aoNote.push(`NAME   ${sLoc}  #${sIdSect}  McshEngl.${sName}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: MvrwMain07: a-misplaced Attrbase-line "McshEngl.B!Attrbase[!⇒M]," moves right after
+ *   "M!@McshXxx" (a-file-concept) or "M!=I" of its name::-para. A-badly written line is skipped.
+ */
+function fPlanAttrbase(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  for (const oIssue of aoIssueIn) {
+    const nL = (oIssue.nLine ?? 0) - 1;
+    const sLoc = `${sNameShortIn}:${nL + 1}`;
+    if (nL < 0 || !/^\s*<br>\*\s*McshEngl\.[^!,\s]+!Attrbase(!⇒[^!,\s]+)?,/.test(aLine[nL] ?? '')) {
+      aoNote.push(`SKIP   ${sLoc}  the-Attrbase-line is not "McshEngl.B!Attrbase," or "McshEngl.B!Attrbase!⇒M,": fix by hand`);
+      continue;
+    }
+    // its para: up to <p ... name:: above, down to </p>
+    let nOpen = nL; while (nOpen > 0 && !/name::/.test(aLine[nOpen])) nOpen--;
+    let nClose = nL; while (nClose < aLine.length - 1 && !aLine[nClose].includes('</p>')) nClose++;
+    const aIdx = [];
+    for (let nN = nOpen + 1; nN < nClose; nN++) if (nN !== nL && /^\s*<br>\*\s*McshEngl\./.test(aLine[nN])) aIdx.push(nN);
+    const nAfter = aIdx.find(nN => /^\s*<br>\*\s*McshEngl\.[^!,]+!@Mcsh/.test(aLine[nN]))
+      ?? aIdx.find(nN => /^\s*<br>\*\s*McshEngl\.[^!,]+![=][^!,]+,/.test(aLine[nN]));
+    if (nAfter === undefined) { aoNote.push(`SKIP   ${sLoc}  its name::-para has no "M!=I" or "M!@McshXxx" line`); continue; }
+    if (nAfter === nL - 1) continue;   // in place already
+    aoEdit.push({ nAt: nL, nDel: 1, aIns: [] });
+    aoEdit.push({ nAt: nAfter + 1, nDel: 0, aIns: [aLine[nL]] });
+    aoNote.push(`MOVE   ${sLoc}  the-Attrbase-line goes after line ${nAfter + 1}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: MvrwMisc01: a-date {2022-4-7} → {2022-04-07} (one digit month|day padded),
+ *   everywhere in the-file; other forms are skipped.
+ */
+function fPlanDate(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMap = new Map();
+  for (const oIssue of aoIssueIn) {
+    const sTok = oIssue.sMessage.match(/DATE "(\{[^}]*\})"/)?.[1];
+    if (!sTok || oMap.has(sTok)) continue;
+    const aM = sTok.match(/^\{(\d{4})-(\d{1,2})(?:-(\d{1,2}))?\}$/);
+    if (!aM) { aoNote.push(`SKIP   ${sNameShortIn}  ${sTok}: not a-YYYY-M-D date, fix by hand`); continue; }
+    oMap.set(sTok, `{${aM[1]}-${aM[2].padStart(2, '0')}${aM[3] ? '-' + aM[3].padStart(2, '0') : ''}}`);
+  }
+  aLine.forEach((sLine, nL) => {
+    let sNew = sLine;
+    for (const [sOld, sGood] of oMap) sNew = sNew.split(sOld).join(sGood);
+    if (sNew === sLine) return;
+    aoEdit.push({ nAt: nL, nDel: 1, aIns: [sNew] });
+    aoNote.push(`DATE   ${sNameShortIn}:${nL + 1}  ${[...oMap.keys()].filter(s => sLine.includes(s)).join(' ')}`);
+  });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * OUTPUT: the-new main-name of MvrwMain02..06 or null: capital first, no apostrophe before
+ *   the-suffix (Food'evaln → Foodevaln, foodLemonevaln → FoodLemonevaln). A-main-name
+ *   WITHOUT the-suffix needs a-new name: null.
+ */
+function fFindMainNew(sMainIn, sSuffixIn, sAttrbaseIn = '') {
+  let sMain = sMainIn;
+  if (sMain.endsWith("'" + sSuffixIn)) sMain = sMain.slice(0, -sSuffixIn.length - 1) + sSuffixIn;
+  // without the-suffix: the-Attrbase of its whole + the-suffix (Smp → Smpsrtr), as mMcshNew.mjs
+  if (!sMain.endsWith(sSuffixIn)) sMain = sAttrbaseIn ? sAttrbaseIn + sSuffixIn : '';
+  if (!sMain) return null;
+  return sMain.charAt(0).toUpperCase() + sMain.slice(1);
+}
+
+/**
+ * OUTPUT: the-Attrbase B of the-nearest whole of a-section that has one
+ *   ("McshEngl.B!Attrbase[!⇒M],"), up to the-file's idName; '' when none.
+ */
+function fFindAttrbase(aLineIn, sIdSectIn) {
+  const fOfPara = (nFromIn, nToIn) => {
+    for (let nL = nFromIn; nL < nToIn; nL++) {
+      const aM = aLineIn[nL].match(/^\s*<br>\*\s*McshEngl\.([^!,\s]+)!Attrbase\b/);
+      if (aM) return aM[1];
+    }
+    return '';
+  };
+  let nSect = aLineIn.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdSectIn);
+  while (nSect > 0) {
+    nSect = fFindSectOpen(aLineIn, nSect);       // its whole
+    if (nSect === -1) break;
+    const sB = fOfPara(nSect, fFindSectOwnEnd(aLineIn, nSect));
+    if (sB) return sB;
+  }
+  const nName = aLineIn.findIndex(sLine => sLine.includes('<p id="idName">name::'));
+  if (nName === -1) return '';
+  let nEnd = nName; while (nEnd < aLineIn.length - 1 && !aLineIn[nEnd].includes('</p>')) nEnd++;
+  return fOfPara(nName, nEnd);
+}
+
+/**
+ * DOING: Hvre05 | Hvre06: a-broken link is re-pointed ONLY when ONE target is certain:
+ *   a-missing file → the-ONE .last.html of the-worldview with its name;
+ *   a-missing #id → the-ONE id of the-target file equal to it in any letter case.
+ * INPUT: oMapFileIn: name → [relative paths]; ooSetIdIn: relative path → Set of its ids.
+ */
+function fPlanLink(sRawIn, sNameShortIn, aoIssueIn, sPathFileIn, sNameDirIn, oMapFileIn, ooSetIdIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oMapEdit = new Map();
+  const sDirFile = moPath.dirname(sPathFileIn);
+  for (const oIssue of aoIssueIn) {
+    const nL = (oIssue.nLine ?? 0) - 1;
+    const sLoc = `${sNameShortIn}:${nL + 1}`;
+    const fSkip = sWhy => aoNote.push(`SKIP   ${sLoc}  ${sWhy}`);
+    if (nL < 0) { fSkip('no line: ' + oIssue.sMessage.slice(0, 80)); continue; }
+    const sNow = oMapEdit.get(nL) ?? aLine[nL];
+    if (oIssue.sCode === 'Hvre05') {
+      const sHref = oIssue.sMessage.match(/from "[^"]*?\.last\.html\/(.+)"\)/)?.[1] ?? oIssue.sMessage.match(/from "[^/]+\/(.+)"\)/)?.[1];
+      if (!sHref || !sNow.includes(`href="${sHref}"`)) { fSkip(`the-link is not on its line: ${oIssue.sMessage.slice(0, 80)}`); continue; }
+      const [sPathPart, sAnchor] = sHref.split('#');
+      const aCand = oMapFileIn.get(moPath.posix.basename(sPathPart)) ?? [];
+      if (aCand.length !== 1) { fSkip(`${sPathPart}: ${aCand.length} files with its name, fix by hand`); continue; }
+      let sRel = moPath.relative(sDirFile, moPath.join(sNameDirIn, aCand[0])).split(moPath.sep).join('/');
+      if (!sRel.startsWith('.')) sRel = './' + sRel;
+      if (sPathPart.startsWith('../') && sRel.startsWith('./')) sRel = sRel.slice(2);
+      const sHrefNew = sRel + (sAnchor ? '#' + sAnchor : '');
+      oMapEdit.set(nL, sNow.split(`href="${sHref}"`).join(`href="${sHrefNew}"`));
+      aoNote.push(`LINKFX ${sLoc}  ${sHref} -> ${sHrefNew}`);
+    } else {
+      const aM = oIssue.sMessage.match(/#(\S+) not found in "([^"]+)"/);
+      if (!aM) { fSkip(oIssue.sMessage.slice(0, 80)); continue; }
+      const [, sAnchor, sTarget] = aM;
+      const oSetId = ooSetIdIn.get(sTarget) ?? ooSetIdIn.get(moPath.posix.basename(sTarget));
+      const aCand = oSetId ? [...oSetId].filter(sId => sId.toLowerCase() === sAnchor.toLowerCase()) : [];
+      if (aCand.length !== 1 || !sNow.includes(`#${sAnchor}"`)) {
+        fSkip(`#${sAnchor} in ${sTarget}: ${aCand.length} ids differ only in case, fix by hand`);
+        continue;
+      }
+      oMapEdit.set(nL, sNow.split(`#${sAnchor}"`).join(`#${aCand[0]}"`));
+      aoNote.push(`LINKFX ${sLoc}  #${sAnchor} -> #${aCand[0]}`);
+    }
+  }
+  for (const [nL, sLine] of oMapEdit) aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLine] });
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
 function fCheckFile(sRawOldIn, sRawNewIn) {
   for (const sTag of ['<section', '</section>']) {
     if (fCount(sRawOldIn, sTag) !== fCount(sRawNewIn, sTag)) return `${sTag} count changed`;
@@ -989,11 +1665,23 @@ async function fMain() {
   const nIdxFile = aArg.indexOf('--file');
   // --file McshDir000000 (or McshDir000000.last.html): the-fixes START in that file only
   const sNameFileOnly = nIdxFile === -1 ? '' : String(aArg[nIdxFile + 1] ?? '').replace(/\.last\.html$/, '');
-  const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') && (nIdxFile === -1 || nI !== nIdxFile + 1));
+  // --code <rule>: the-fix of ONE validator rule (ooFixCode), with --file
+  const nIdxCode = aArg.indexOf('--code');
+  const sCodeOne = nIdxCode === -1 ? '' : String(aArg[nIdxCode + 1] ?? '');
+  const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') &&
+    (nIdxFile === -1 || nI !== nIdxFile + 1) && (nIdxCode === -1 || nI !== nIdxCode + 1));
   const bFix = aArg.includes('--fix');
   const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
+  // a-rule with its own mode runs that mode: --code MvreName01 = --dupname
+  const ooModeOfCode = { MvreName01: 'dupname', Hvrw08: 'nest', Hvrw07: 'headgap',
+    MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname' };
+  if (sCodeOne) aModeGiven.push(ooModeOfCode[sCodeOne] ?? 'code');
   if (aModeGiven.length > 1) {
-    console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')} are separate runs: give one of them`);
+    console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')}, --code are separate runs: give one of them`);
+    process.exit(1);
+  }
+  if (sCodeOne && (!sNameFileOnly || !(ooFixCode[sCodeOne] || ooModeOfCode[sCodeOne]))) {
+    console.error(`--code needs --file McshDir000000 and one of: ${[...Object.keys(ooFixCode), ...Object.keys(ooModeOfCode)].sort().join(' ')}`);
     process.exit(1);
   }
   // no mode: the-creation-paras of evoluting-sections
@@ -1011,10 +1699,12 @@ async function fMain() {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--auto] [--file McshDir000000] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--name|--auto] [--file McshDir000000] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
+    console.log('  --code X     with --file: the-fix of validator rule X (every rule), or NOFIX with why');
+    console.log('  --name       MvrwSect03: a-name:: McshEngl.<heading> for every section without name::');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
     console.log('  --undated    EVERY description:: without × Mcsh-creation gets the-run-date');
@@ -1213,6 +1903,104 @@ async function fMain() {
       }
       sCount = `${oCount.CREATE ?? 0} descriptions created · ${oCount.FIXTITLE ?? 0} titles fixed · ` +
         `date {${sDate}}`;
+    } else if (sMode === 'code') {
+      // the-issues of ONE rule in the-file, as the-VALIDATOR reports them
+      const oFix = ooFixCode[sCodeOne];
+      const nNoteFix = aLineOut.length;
+      const sPathFile = fFindFileAll(sNameDir).find(sPath => !fSkipFile(sPath));
+      if (!sPathFile) throw new Error(`--file ${sNameFileOnly}: no such .last.html file`);
+      const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+      const sNameShort = fShort(sPathFile);
+      const sNameFile = moPath.basename(sPathFile);
+      let aoIssue = [];
+      let aoFileHitpAll = null;
+      if (oFix.sKind === 'link') {
+        // a-link's target can be any file: the-whole worldview is parsed (~40 s)
+        aoFileHitpAll = fReadFileAllHitp(sNameDir);
+        aoIssue = fRunChecksHitp(aoFileHitpAll, sNameDir, true);
+      } else if (sCodeOne.startsWith('H')) {
+        aoIssue = fRunChecksHitp([fReadFileHitp(sPathFile)], sNameDir, true);
+      } else if (sNameFile.startsWith('Mcsh')) {
+        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile))], sNameDir, true);
+      }
+      aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeOne && oIssue.sNameFile === sNameFile);
+
+      if (aoIssue.length === 0) {
+        aLineOut.push(`NOISSUE ${sNameShort}  ${sCodeOne}: nothing to fix`);
+      } else if (oFix.sKind === 'none') {
+        aLineOut.push(`NOFIX  ${sNameShort}  ${sCodeOne} (${aoIssue.length}): ${oFix.sWhy}`);
+      } else if (oFix.sKind === 'line') {
+        fWriteFile(sPathFile, sRaw, sNameShort, oFix.fPlan(sRaw, sNameShort, aoIssue, sNameDir));
+      } else if (oFix.sKind === 'idmap') {
+        const oPlan = fPlanIdMap(sRaw, sNameShort, aoIssue, oFix.fIdNew);
+        aLineOut.push(...oPlan.aoNote);
+        for (const sNote of oPlan.aoNote) oCount[sNote.split(' ')[0]] = (oCount[sNote.split(' ')[0]] ?? 0) + 1;
+        if (oPlan.oMapId.size > 0) {
+          const ooMapId = { [sNameFile]: oPlan.oMapId };
+          // the-ids and every link to them, in every .last.html file (json index files: NEVER)
+          for (const sPath of fFindFileAll(sNameDir)) {
+            const sRawOne = sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8');
+            if (sPath !== sPathFile && !sRawOne.includes(sNameFile + '#')) continue;
+            fWriteFile(sPath, sRawOne, fShort(sPath), fPlanSrtrApply(sRawOne, fShort(sPath), moPath.basename(sPath), ooMapId));
+          }
+        }
+      } else if (oFix.sKind === 'main') {
+        // the-new main-name of each issue; then every "!⇒X" and main-line of X, in every file
+        const oMapMain = new Map();
+        for (const oIssue of aoIssue) {
+          const sMain = oIssue.sMessage.match(/main-name "McshEngl\.([^"]+)"/)?.[1];
+          const sSuffix = oIssue.sMessage.split('_')[0];
+          const sMainNew = sMain ? fFindMainNew(sMain, sSuffix, fFindAttrbase(sRaw.split('\n'), oIssue.sIdConcept)) : null;
+          if (!sMainNew) {
+            aLineOut.push(`SKIP   ${sNameShort}:${oIssue.nLine ?? '?'}  "${sMain}" does not end in "${sSuffix}" and its whole has no !Attrbase: give the-main-name by hand`);
+            oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+          } else if (sMainNew !== sMain) {
+            oMapMain.set(`Engl|${sMain}`, sMainNew);
+          }
+        }
+        if (oMapMain.size > 0) {
+          for (const sPath of fFindFileAll(sNameDir)) {
+            const sRawOne = sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8');
+            if (![...oMapMain.keys()].some(sKey => sRawOne.includes(sKey.slice(5)))) continue;
+            fWriteFile(sPath, sRawOne, fShort(sPath), fPlanMainName(sRawOne, fShort(sPath), oMapMain));
+          }
+        }
+      } else if (oFix.sKind === 'link') {
+        const oMapFile = new Map();
+        const ooSetId = new Map();
+        for (const oFile of aoFileHitpAll) {
+          const sRel = moPath.relative(sNameDir, oFile.sPathFile).split(moPath.sep).join('/');
+          oMapFile.set(oFile.sNameFile, [...(oMapFile.get(oFile.sNameFile) ?? []), sRel]);
+          ooSetId.set(sRel, oFile.oSetId);
+        }
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanLink(sRaw, sNameShort, aoIssue, sPathFile, sNameDir, oMapFile, ooSetId));
+      }
+      for (const sNote of aLineOut.slice(nNoteFix)) {
+        const sKind = sNote.split(' ')[0];
+        if (['NOISSUE', 'NOFIX'].includes(sKind)) oCount[sKind] = (oCount[sKind] ?? 0) + 1;
+      }
+      const nChange = aLineOut.slice(nNoteFix).filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|LINK )/.test(sLine)).length;
+      sCount = `${sCodeOne}: ${aoIssue.length} issues · ${nChange} fixed` +
+        (oCount.NOFIX ? ' · no automatic fix' : '');
+    } else if (sMode === 'name') {
+      // the-sections without name:: are what the-VALIDATOR says: MvrwSect03
+      const aoFileHitp = fReadHitpSome().filter(oFile => oFile.sNameFile.startsWith('Mcsh'));
+      const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
+        fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
+      const ooSect = {};
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true)) {
+        if (oIssue.sCode === 'MvrwSect03') {
+          (ooSect[oIssue.sNameFile] ??= []).push({ sIdSect: oIssue.sIdConcept, sTitle: oIssue.sConcept });
+        }
+      }
+      const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
+      for (const [sNameFile, aoSect] of Object.entries(ooSect).sort()) {
+        const sPathFile = oPathFile[sNameFile];
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        const sNameShort = sNameFile.replace(/\.last\.html$/, '');
+        fWriteFile(sPathFile, sRaw, sNameShort, fPlanName(sRaw, sNameShort, aoSect, fFindNameAll(sNameDir)));
+      }
+      sCount = `${oCount.NAME ?? 0} names created`;
     } else if (sMode === 'dupname') {
       for (const sPathFile of fFindFileAll(sNameDir)) {
         if (!moPath.basename(sPathFile).startsWith('Mcsh') || fSkipFile(sPathFile)) continue;

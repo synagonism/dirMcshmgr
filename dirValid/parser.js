@@ -4,14 +4,14 @@
  *
  * The three Mcsh types in the whole-part structure:
  *
- *  1) cnptFile
+ *  1) CnptFile
  *     The file itself is a concept. Its identity is in <section id="idOverview">.
  *     - <title> holds the canonical name + version string
  *     - <section id="idOverview"> contains the file's description:: and name:: paragraphs
  *
- *  2) cnptSect   (the main type)
+ *  2) CnptSect   (the main type)
  *     Every <section id="idXxx"> that contains a <p> whose text starts with "name::"
- *     and has at least one Mcsh* entry is a cnptSect. Structure:
+ *     and has at least one Mcsh* entry is a CnptSect. Structure:
  *     - sNameId             the section's id= attribute
  *     - sNameTitle          text of the first <h1|h2|h3|h4> in the section
  *     - nHeadingLevel       1–9
@@ -22,7 +22,7 @@
  *     - aName               parsed Mcsh* entries from the name:: paragraph
  *     - aLinks              all hrefs found in this section
  *
- *  3) cnptPara
+ *  3) CnptPara
  *     A <p id="idXxx"> that does NOT have a known section-keyword (description::, name::…)
  *     but contains at least one "* McsEngl." or "* McsElln." name entry.
  *     These are inline concept-anchors embedded inside a section's content.
@@ -30,12 +30,12 @@
  *
  * Returned per file:
  * {
- *   sType: 'cnptFile',
+ *   sType: 'CnptFile',
  *   sNameIdAbso, sNameFile, sNameDir,
  *   sNameTitle,     // text from <title> (name part only)
  *   sVersion,       // e.g. "McsCor000015.1-4-0.2026-03-30"
- *   oSectOverview,  // the idOverview cnptSect (= the file's own concept)
- *   aoCnptSect,     // all cnptSect objects
+ *   oSectOverview,  // the idOverview CnptSect (= the file's own concept)
+ *   aoCnptSect,     // all CnptSect objects
  *   aoPara,         // all paragraph objects
  *   oSetId,         // Set<string> of every id= in the file (for link checking)
  *   aLinks,         // all unique hrefs in the file (content links only)
@@ -164,7 +164,7 @@ function fReadNameEntries(sTextIn) {
  * INPUT: sBlockHtml — the block's raw HTML; sTag — 'p' or 'div'.
  * OUTPUT: one object paragraph:
  * {
- *   sType,         // 'paraP'/'paraDiv' or 'cnptPara'
+ *   sType,         // 'paraP'/'paraDiv' or 'CnptPara'
  *   sSubtype,      // 'p' or 'div'
  *   sNameId,       // value of id= attribute, or null
  *   sNameTitle,    // keyword before "::" in the first text line, or null
@@ -202,13 +202,13 @@ function fReadBlockMcshPara(sBlockHtml, sTag) {
   const aName = aoName.map(oName => oName.sName);
 
   // A paragraph-concept: has an id AND has Mcsh* names AND is NOT a name:: paragraph
-  // (name::-paragraphs belong to the cnptSect, not a separate concept)
+  // (name::-paragraphs belong to the CnptSect, not a separate concept)
   const bIsCnptPara =
     sNameId !== null &&
     aoName.length > 0 &&
     sNameTitle !== 'name';
 
-  const sTypePara = bIsCnptPara ? 'cnptPara' : (sTag === 'p' ? 'paraP' : 'paraDiv');
+  const sTypePara = bIsCnptPara ? 'CnptPara' : (sTag === 'p' ? 'paraP' : 'paraDiv');
   return {
     sType: sTypePara, sSubtype: sTag,
     sNameId, sNameTitle, sText, aoName, aName, aLinks,
@@ -354,7 +354,7 @@ export function fFindSect_overview(sRawSect) {
 
 /**
  * INPUT: one raw-sect object.
- * OUTPUT: one cnptSect or 'sect' object.
+ * OUTPUT: one CnptSect or 'sect' object.
  * We only parse McshParagraphs that are DIRECTLY in this section, not inside
  * nested part <section> elements, to avoid double-counting.
  */
@@ -399,13 +399,13 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   // All content hrefs across the entire section (including nested children)
   const aLinks = fExtractContentHrefs(sRawHtml);
 
-  // A cnptSect is a section that carries a name:: paragraph with at least one
+  // A CnptSect is a section that carries a name:: paragraph with at least one
   // valid Mcsh* entry. Structural sections (TOC, headers, plain prose) have no
   // name:: and are labelled 'sect' so they are not treated as concepts.
   const bIsCnptSect = (oParaByTitle['name'] ?? []).length > 0 && aName.length > 0;
 
   return {
-    sType: bIsCnptSect ? 'cnptSect' : 'sect',
+    sType: bIsCnptSect ? 'CnptSect' : 'sect',
     sNameId,
     sNameTitle,
     nHeadingLevel,
@@ -422,7 +422,7 @@ function fReadRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
 // ─── public file parser ───────────────────────────────────────────────────────
 /**
  * INPUT: one McsFile given its path.
- * OUTPUT: one cnptFile object (see header of this file).
+ * OUTPUT: one CnptFile object (see header of this file).
  */
 export function fReadFile(sNameIdAbso) {
   // sNameIdAbso: C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
@@ -431,7 +431,7 @@ export function fReadFile(sNameIdAbso) {
     sFileRaw = fs.readFileSync(sNameIdAbso, 'utf8');
   } catch (e) {
     return {
-      sType: 'cnptFile',
+      sType: 'CnptFile',
       sNameIdAbso,
       sNameFile: path.basename(sNameIdAbso), // McshCor000015.last.html
       sNameDir: path.basename(path.dirname(sNameIdAbso)), // dirCor
@@ -478,10 +478,10 @@ export function fReadFile(sNameIdAbso) {
     if (oRawSect.sNameId === 'idMeta' || oRawSect.sNameId === 'idHeader'
        || oRawSect.sNameId === 'idSupport' || oRawSect.sNameId === 'idComment') continue;
 
-    // Parse as a cnptSect candidate
+    // Parse as a CnptSect candidate
     const oSect = fReadRaw_sect(oRawSect);
     // console.log(`Parsed section id=${oSect.sNameId} title="${oSect.sNameTitle}" with ${oSect.aName.length} names and ${oSect.aoPara.length} paragraphs.`);
-    if (oSect.sType === 'cnptSect') aoCnptSect.push(oSect);
+    if (oSect.sType === 'CnptSect') aoCnptSect.push(oSect);
     if (oSect.sNameId === 'idOverview') oSectOverview = oSect;
 
     // Collect this section's direct paragraphs — already parsed by fReadRaw_sect
@@ -490,7 +490,7 @@ export function fReadFile(sNameIdAbso) {
   }
 
   return {
-    sType: 'cnptFile',
+    sType: 'CnptFile',
     sNameIdAbso,
     sNameFile: path.basename(sNameIdAbso),
     sNameDir: path.basename(path.dirname(sNameIdAbso)),
@@ -517,7 +517,7 @@ export function fReadFileAll(sPathDir) {
   } catch {
     aPathFile = fWalkDir(sPathDir);
   }
-  // returns array of cnptFile objects
+  // returns array of CnptFile objects
   return aPathFile.map(sPath => fReadFile(sPath));
 }
 

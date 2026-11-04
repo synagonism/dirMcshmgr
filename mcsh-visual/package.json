@@ -68,6 +68,11 @@
         "command": "mcshv.validCurrent",
         "title": "validate-file: report, or fix unambiguous and report",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.validRule",
+        "title": "validate-file-with-rule: report, or fix and report, one rule",
+        "category": "Mcs"
       }
     ],
     "menus": {

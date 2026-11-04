@@ -12,12 +12,12 @@
  *   oPara → { sType, sNameId, sNameTitle, sText, aoName, aName, aLinks }
  *
  * Checks (Mcsh-specific; Hitp-covered ones removed):
- *  M01  cnptFile missing idOverview section
- *  M02  cnptSect missing description:: paragraph
- *  M03  cnptSect has description:: but it is empty (only placeholder "·")
- *  M04  cnptSect missing name:: paragraph
- *  M05  cnptSect name:: has zero valid Mcsh* entries
- *  M06  cnptSect has no title
+ *  M01  CnptFile missing idOverview section
+ *  M02  CnptSect missing description:: paragraph
+ *  M03  CnptSect has description:: but it is empty (only placeholder "·")
+ *  M04  CnptSect missing name:: paragraph
+ *  M05  CnptSect name:: has zero valid Mcsh* entries
+ *  M06  CnptSect has no title
  *  M07  Duplicate McshEngl sName across entire worldview
  *  M08  evoluting:: dates not in YYYY-MM-DD format
  */
@@ -49,7 +49,7 @@ function fIssue(sLevel, sCode, sNameFile, oSectOrNull, sMessage, nLine = null) {
 function fBuildMapName(aoFile) {
   const oMap = new Map();
   for (const oFile of aoFile) {
-    // cnptSect names
+    // CnptSect names
     for (const oSect of oFile.aoCnptSect) {
       for (const oName of oSect.aoName) {
         if (oName.sLago !== 'lagEngl') continue; // only check McshEngl for duplicates
@@ -73,20 +73,20 @@ function fBuildMapName(aoFile) {
 
 // ─── individual checks ────────────────────────────────────────────────────────
 
-// ❌ M01  cnptFile missing idOverview section
+// ❌ M01  CnptFile missing idOverview section
 function fCheckCnptFile(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     if (!oFile.oSectOverview) {
       aoIssue.push(fIssue('ERROR', 'M01', oFile.sNameFile, null,
-        `File has no <section id="idOverview"> — cnptFile identity section is missing`));
+        `File has no <section id="idOverview"> — CnptFile identity section is missing`));
     }
   }
   return aoIssue;
 }
 
-// ⚠️ [M02] cnptSect  has no description:: paragraph
-// ⚠️ [M03] cnptSect  has an empty/placeholder description:: (only "·" or "×")
+// ⚠️ [M02] CnptSect  has no description:: paragraph
+// ⚠️ [M03] CnptSect  has an empty/placeholder description:: (only "·" or "×")
 function fCheckDescription(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
@@ -95,7 +95,7 @@ function fCheckDescription(aoFile) {
       const aoParaDesc = oSect.oParaByTitle['description'] ?? [];
       if (aoParaDesc.length === 0) {
         aoIssue.push(fIssue('WARN', 'M02', oFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no description:: paragraph`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no description:: paragraph`,
           oFile.oMapIdLine.get(oSect.sNameId) ?? null));
         continue;
       }
@@ -107,7 +107,7 @@ function fCheckDescription(aoFile) {
           .trim();
         if (sContent.length === 0) {
           aoIssue.push(fIssue('WARN', 'M03', oFile.sNameFile, oSect,
-            `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has an empty/placeholder description:: (only "·" or "×")`,
+            `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has an empty/placeholder description:: (only "·" or "×")`,
             oFile.oMapIdLine.get(oPara.sNameId) ?? oFile.oMapIdLine.get(oSect.sNameId) ?? null));
         }
       }
@@ -116,21 +116,21 @@ function fCheckDescription(aoFile) {
   return aoIssue;
 }
 
-// ⚠️ [M04] cnptSect  has no name:: paragraph
-//⚠️  [M05] cnptSect  name:: paragraph has no valid Mcsh* entries
+// ⚠️ [M04] CnptSect  has no name:: paragraph
+//⚠️  [M05] CnptSect  name:: paragraph has no valid Mcsh* entries
 function fCheckName(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     for (const oSect of oFile.aoCnptSect) {
       if (oSect.sNameTitle.indexOf('( link )') > 1) continue;
       if (!oSect.oParaByTitle['name']) {
-        // This shouldn't happen (cnptSect requires names), but guard anyway
+        // This shouldn't happen (CnptSect requires names), but guard anyway
         aoIssue.push(fIssue('WARN', 'M04', oFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no name:: paragraph`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no name:: paragraph`,
           oFile.oMapIdLine.get(oSect.sNameId) ?? null));
       } else if (oSect.aName.length === 0) {
         aoIssue.push(fIssue('WARN', 'M05', oFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) name:: paragraph has no valid Mcsh* entries`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) name:: paragraph has no valid Mcsh* entries`,
           oFile.oMapIdLine.get(oSect.sNameId) ?? null));
       }
     }
@@ -138,14 +138,14 @@ function fCheckName(aoFile) {
   return aoIssue;
 }
 
-// ⚠️  [M06] cnptSect  has no TITLE
+// ⚠️  [M06] CnptSect  has no TITLE
 function fCheckTitle(aoFile) {
   const aoIssue = [];
   for (const oFile of aoFile) {
     for (const oSect of oFile.aoCnptSect) {
       if (!oSect.sNameTitle || oSect.sNameTitle.trim() === '') {
         aoIssue.push(fIssue('WARN', 'M06', oFile.sNameFile, oSect,
-          `cnptSect (${oSect.sNameId}) has no TITLE`,
+          `CnptSect (${oSect.sNameId}) has no TITLE`,
           oFile.oMapIdLine.get(oSect.sNameId) ?? null));
       }
     }

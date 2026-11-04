@@ -50637,11 +50637,11 @@ total 110034
   McshTchInf000009:3446  Hvrl.Hvrw06-html-attribute-value-not-double-quoted
   McshTchInf000009:3452  Hvrl.Hvrw07-html-heading-gaps
   McshTchInf000009:3458  Hvrl.Hvrw08-html-nesting
-  McshTchInf000009:3531  Mvrl.Mvre01-cnptFile-missing-idOverview
-  McshTchInf000009:3537  Mvrl.Mvrw01-cnptSect-missing-description
-  McshTchInf000009:3543  Mvrl.Mvrw02-cnptSect-empty-description
-  McshTchInf000009:3549  Mvrl.Mvrw03-cnptSect-missing-name
-  McshTchInf000009:3555  Mvrl.Mvrw04-cnptSect-name-without-Mcsh-entries
+  McshTchInf000009:3531  Mvrl.Mvre01-CnptFile-missing-idOverview
+  McshTchInf000009:3537  Mvrl.Mvrw01-CnptSect-missing-description
+  McshTchInf000009:3543  Mvrl.Mvrw02-CnptSect-empty-description
+  McshTchInf000009:3549  Mvrl.Mvrw03-CnptSect-missing-name
+  McshTchInf000009:3555  Mvrl.Mvrw04-CnptSect-name-without-Mcsh-entries
   McshTchInf000009:3561  Mvrl.Mvrw06-dates-not-in-YYYY-MM-DD-format
   McshTchInf000009:3587  Mvrl.Mvre02-duplicate-line
   McshTchInf000009:3704  Mvrl.generic-specific-tree

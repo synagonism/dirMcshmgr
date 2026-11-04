@@ -229,7 +229,7 @@ export async function fRunChecksAi(aoFile) {
     return aoIssue;
   }
 
-  // Flatten all cnptSect with file reference; filter to those with descriptions
+  // Flatten all CnptSect with file reference; filter to those with descriptions
   const aoSect = [];
   for (const oFile of aoFile) {
     for (const oSect of oFile.aoCnptSect) {
@@ -245,7 +245,7 @@ export async function fRunChecksAi(aoFile) {
     .slice(0, nMaxConcept);
 
   const nTotal = aoSample.length;
-  console.log(`   Checking ${nTotal} cnptSect (of ${aoSect.length} total)`);
+  console.log(`   Checking ${nTotal} CnptSect (of ${aoSect.length} total)`);
   console.log(`   Model: ${sModel}  (DeepSeek Cloud API)`);
   console.log(`   API Key: ${sApiKey ? '✓ Set' : '✗ Missing'}\n`);
 

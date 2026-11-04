@@ -17,40 +17,40 @@
  * 🔵 INFO
  * 
  * Checks (Mcsh-specific; Hitp-covered ones removed):
- *  MvreFile01  cnptFile missing idOverview section
+ *  MvreFile01  CnptFile missing idOverview section
  * 
- *  MvrwSect01  cnptSect missing description::-paragraph
- *  MvrwSect02  cnptSect has description:: but it is empty (only placeholder "·")
- *  MvrwSect03  cnptSect missing name::-paragraph
- *  MvrwSect04  cnptSect name:: has zero valid Mcsh* entries
+ *  MvrwSect01  CnptSect missing description::-paragraph
+ *  MvrwSect02  CnptSect has description:: but it is empty (only placeholder "·")
+ *  MvrwSect03  CnptSect missing name::-paragraph
+ *  MvrwSect04  CnptSect name:: has zero valid Mcsh* entries
  * 
  *  MvreName01  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
  *
  *  MvrwId01  (warning) non-english-letters: id="..." has a letter outside A-Z a-z
- *  MvrwId02  (warning) dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" cnptSect does not end in "dong"
+ *  MvrwId02  (warning) dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" CnptSect does not end in "dong"
  *  MvrwId03  (warning) space_in_id: id="..." or href="#..." has a space
- *  MvrwId04  (warning) eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" cnptSect does not end in "eval"
- *  MvrwId05  (warning) evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" cnptSect does not end in "evog"
- *  MvrwId06  (warning) irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" cnptSect does not end in "irsc"
+ *  MvrwId04  (warning) eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" CnptSect does not end in "eval"
+ *  MvrwId05  (warning) evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" CnptSect does not end in "evog"
+ *  MvrwId06  (warning) irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" CnptSect does not end in "irsc"
  *  MvrwId07  (warning) pntr_parent_tree_suffix: the-id of a "parent-tree::" para does not end in "pntr"
  *  MvrwId08  (warning) chtr_child_tree_suffix: the-id of a "child-tree::" para does not end in "chtr"
  *  MvrwId09  (warning) wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
  *  MvrwId10  (warning) prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
  *  MvrwId11  (warning) gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
  *  MvrwId12  (warning) sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
- *  MvrwId13  (warning) srtr_structure_suffix: the-id of a "structure of X" | "X'structure" cnptSect does not end in "srtr"
+ *  MvrwId13  (warning) srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
  *
  *  MvreMain01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
- *  MvrwMain02 (warning) evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" cnptSect
+ *  MvrwMain02 (warning) evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
  *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
- *  MvrwMain03 (warning) evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" cnptSect
- *             is not Xevaln, of an "evaluating of X" | "X'evaluating" cnptSect is not Xevalg (capital first, no apostrophe)
- *  MvrwMain04 (warning) doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" cnptSect
+ *  MvrwMain03 (warning) evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
+ *             is not Xevaln, of an "evaluating of X" | "X'evaluating" CnptSect is not Xevalg (capital first, no apostrophe)
+ *  MvrwMain04 (warning) doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" CnptSect
  *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
- *  MvrwMain05 (warning) infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" cnptSect
+ *  MvrwMain05 (warning) infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
  *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
- *  MvrwMain06 (warning) srtr_structure_main: the-main-name of a "structure of X" | "X'structure" cnptSect
+ *  MvrwMain06 (warning) srtr_structure_main: the-main-name of a "structure of X" | "X'structure" CnptSect
  *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
  *  MvrwMain07 (warning) attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
  *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
@@ -70,6 +70,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-42-0.2026-11-04: MvrwSect01..04 check also the-sections without valid names',
     'structuralMcsh.js.0-41-0.2026-11-01: code change to Mvrw or Mvre',
     'structuralMcsh.js.0-40-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'structuralMcsh.js.0-39-0.2026-10-29: MvrwMain07 attrbase_line',
@@ -104,7 +105,7 @@ const
     'structuralMcsh.js.0-10-0.2026-10-03: fFindIdElmt removed, every cnpt has sNameId',
     'structuralMcsh.js.0-9-0.2026-10-03: MvreName01 checks every McsLago, not only Engl',
     'structuralMcsh.js.0-8-0.2026-10-03: MvreName01 keys the-whole-name-line',
-    'structuralMcsh.js.0-7-0.2026-10-02: MvreName01 sees cnptFile-names and duplicates',
+    'structuralMcsh.js.0-7-0.2026-10-02: MvreName01 sees CnptFile-names and duplicates',
     'structuralMcsh.js.0-6-0.2026-10-02: parserMcsh-model (ooIdRelaCnpt, aoTitlePara)',
     'structural.js.0-5-0.2026-10-01: MvrwMisc01 per-token, set-notation not a date',
     'structural.js.0-4-0.2026-09-05: Mcsh-only (S→M), Hitp checks removed',
@@ -128,8 +129,8 @@ function fIssue(sLevel, sCode, sNameFile, oSectOrNull, sMessage, nLine = null) {
 }
 
 /**
- * DOING: finds the-concepts of a-file, the-cnptSect and cnptPara of ooIdRelaCnpt.
- * INPUT: one cnptFile-object and the-sType wanted, '' for both.
+ * DOING: finds the-concepts of a-file, the-CnptSect and CnptPara of ooIdRelaCnpt.
+ * INPUT: one CnptFile-object and the-sType wanted, '' for both.
  * OUTPUT: array of concept-objects, each with its sNameIdRela as sIdCnpt.
  */
 function fFindCnpt(oCnptFile, sTypeIn = '') {
@@ -170,14 +171,14 @@ function fCountName(oCnptIn) {
 }
 
 /**
- * DOING: the-cnptFile is a-concept too: its names are in the name::-para of
+ * DOING: the-CnptFile is a-concept too: its names are in the name::-para of
  *   idOverview, NOT in ooIdRelaCnpt, so we build a-concept-object for it.
  * OUTPUT: one concept-like object of the-file itself.
  */
 function fFindCnptOfFile(oCnptFile) {
   const oParaName = (oCnptFile.aoTitlePara ?? []).find(oPara => oPara.sNameTitle === 'name');
   return {
-    sType: 'cnptFile',
+    sType: 'CnptFile',
     ooNameLago: oCnptFile.ooNameLago,
     sNameTitle: oCnptFile.sNameTitle,
     sNameId: oParaName?.sNameId ?? 'idOverview'
@@ -189,7 +190,7 @@ function fBuildMapName(aoCnptFile) {
   const oMap = new Map();
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    // the-names of the-cnptFile, the-cnptSect and the-cnptPara, in EVERY McsLago.
+    // the-names of the-CnptFile, the-CnptSect and the-CnptPara, in EVERY McsLago.
     // aoName keeps the-duplicates of one name::-para, which the-aNoun|aVerb|...
     // arrays deduplicate away.
     for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
@@ -214,7 +215,7 @@ function fBuildMapName(aoCnptFile) {
 
 // ─── individual checks ────────────────────────────────────────────────────────
 
-// 🔴 MvreFile01  cnptFile missing idOverview section
+// 🔴 MvreFile01  CnptFile missing idOverview section
 //   two causes, two messages: the-file has NO id="idOverview", or it HAS the-id
 //   but the-parser could-not read a-section from IT (an-unclosed <section>).
 function fCheckCnptFile(aoCnptFile) {
@@ -235,25 +236,43 @@ function fCheckCnptFile(aoCnptFile) {
           nLineOverview));
       } else {
         aoIssue.push(fIssue('ERROR', 'MvreFile01', oCnptFile.sNameFile, null,
-          `File has no <section id="idOverview"> — cnptFile identity section is missing`));
+          `File has no <section id="idOverview"> — CnptFile identity section is missing`));
       }
     }
   }
   return aoIssue;
 }
 
-// 🔶 [MvrwSect01] cnptSect  has no description::-paragraph
-// 🔶 [MvrwSect02] cnptSect  has an empty/placeholder description:: (only "·" or "×")
+/**
+ * OUTPUT: the-sections the-MvrwSect rules check: the-CnptSect AND the-sections without
+ *   valid names (parserMcsh aoSectNoName), else a-section without name:: is never seen.
+ *   A-section without names counts only INSIDE a-named whole: its whole is the-file or
+ *   a-CnptSect, or a-sibling is a-CnptSect. So the-parts of a-quoted document (law
+ *   Articles in an-unnamed Chapter, white-paper sections) are not reported.
+ */
+function fFindSectAll(oCnptFile) {
+  const aoCnptSect = fFindCnpt(oCnptFile, 'CnptSect');
+  const oSetIdNamed = new Set(aoCnptSect.map(oSect => oSect.sNameId));
+  const oSetIdWholeOfNamed = new Set(aoCnptSect.map(oSect => oSect.sIdWhole_elmt ?? null));
+  const aoSectNoName = (oCnptFile.aoSectNoName ?? []).filter(oSect => {
+    const sIdWhole = oSect.sIdWhole_elmt ?? null;
+    return sIdWhole === null || oSetIdNamed.has(sIdWhole) || oSetIdWholeOfNamed.has(sIdWhole);
+  });
+  return [...aoCnptSect, ...aoSectNoName];
+}
+
+// 🔶 [MvrwSect01] CnptSect  has no description::-paragraph
+// 🔶 [MvrwSect02] CnptSect  has an empty/placeholder description:: (only "·" or "×")
 function fCheckDescription(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
-      if ((oSect.sNameTitle ?? '').indexOf('( link )') > 1) continue;
+    for (const oSect of fFindSectAll(oCnptFile)) {
+      if (/\(\s*link\s*\)/.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)"
       const aoParaDesc = fFindParaAll(oSect, 'description');
       if (aoParaDesc.length === 0) {
         aoIssue.push(fIssue('WARN', 'MvrwSect01', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no description::-paragraph`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no description::-paragraph`,
           oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
         continue;
       }
@@ -265,7 +284,7 @@ function fCheckDescription(aoCnptFile) {
           .trim();
         if (sContent.length === 0) {
           aoIssue.push(fIssue('WARN', 'MvrwSect02', oCnptFile.sNameFile, oSect,
-            `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has an empty/placeholder description:: (only "·" or "×")`,
+            `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has an empty/placeholder description:: (only "·" or "×")`,
             oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
         }
       }
@@ -274,22 +293,22 @@ function fCheckDescription(aoCnptFile) {
   return aoIssue;
 }
 
-// 🔶 [MvrwSect03] cnptSect  has no name::-paragraph
-// 🔶 [MvrwSect04] cnptSect  name::-paragraph has no valid Mcsh* entries
+// 🔶 [MvrwSect03] CnptSect  has no name::-paragraph
+// 🔶 [MvrwSect04] CnptSect  name::-paragraph has no valid Mcsh* entries
 function fCheckName(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
-      if ((oSect.sNameTitle ?? '').indexOf('( link )') > 1) continue;
+    for (const oSect of fFindSectAll(oCnptFile)) {
+      if (/\(\s*link\s*\)/.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)"
       if (fFindParaAll(oSect, 'name').length === 0) {
-        // This shouldn't happen (cnptSect requires names), but guard anyway
+        // a-section without name:: (aoSectNoName): a-CnptSect always has names
         aoIssue.push(fIssue('WARN', 'MvrwSect03', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no name::-paragraph`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) has no name::-paragraph`,
           oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
       } else if (fCountName(oSect) === 0) {
         aoIssue.push(fIssue('WARN', 'MvrwSect04', oCnptFile.sNameFile, oSect,
-          `cnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) name::-paragraph has no valid Mcsh* entries`,
+          `CnptSect "${oSect.sNameTitle}" (${oSect.sNameId}) name::-paragraph has no valid Mcsh* entries`,
           oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
       }
     }
@@ -340,7 +359,7 @@ function fCheckDate(aoCnptFile) {
   const rBrace    = /\{[^{}]*\}/g;
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
+    for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       for (const oPara of oSect.aoTitlePara ?? []) {
         for (const sLine of fFindParaText(oPara).split('\n')) {
           const oSetTokBad = new Set();       // one issue per distinct token on the line
@@ -378,7 +397,7 @@ function fCheckIdLetter(aoCnptFile) {
 }
 
 /**
- * DOING: the-id of an-attribute-cnptSect titled "<sTitle> of X" (with or without
+ * DOING: the-id of an-attribute-CnptSect titled "<sTitle> of X" (with or without
  *   "NN_") or "X'<sTitle>" must end in sSuffix.
  *   "<sTitle>.X" (a-specific) and "GENERIC-SPECIFIC-TREE of X'<sTitle>" are NOT judged.
  * OUTPUT: array of WARN-issues with code sCode.
@@ -388,7 +407,7 @@ function fCheckIdSuffix(aoCnptFile, sCode, sNameRule, sTitle, sSuffix) {
   const rTitle = new RegExp(`^(\\d+_)?${sTitle} of |^[^\\s.']+'${sTitle}$`, 'i');
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
+    for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
       if (oSect.sNameId.endsWith(sSuffix)) continue;
       aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oSect,
@@ -424,7 +443,7 @@ function fCheckIdIrsc(aoCnptFile) {
 }
 
 /**
- * DOING: the-id of a-para-concept "<sTitlePara>::" (of the-cnptFile or of any concept)
+ * DOING: the-id of a-para-concept "<sTitlePara>::" (of the-CnptFile or of any concept)
  *   must end in sSuffix (or match rEndIn, when given).
  * OUTPUT: array of WARN-issues with code sCode.
  */
@@ -433,11 +452,11 @@ function fCheckIdParaSuffix(aoCnptFile, sCode, sNameRule, sTitlePara, sSuffix, r
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
-      const aoPara = oCnpt.sType === 'cnptFile' ? oCnptFile.aoTitlePara : oCnpt.aoTitlePara;
+      const aoPara = oCnpt.sType === 'CnptFile' ? oCnptFile.aoTitlePara : oCnpt.aoTitlePara;
       for (const oPara of aoPara ?? []) {
         if (oPara.sNameTitle !== sTitlePara || !oPara.sNameId) continue;
         if (rEndIn ? rEndIn.test(oPara.sNameId) : oPara.sNameId.endsWith(sSuffix)) continue;
-        aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oCnpt.sType === 'cnptFile' ? null : oCnpt,
+        aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oCnpt.sType === 'CnptFile' ? null : oCnpt,
           `${sNameRule}: id="${oPara.sNameId}" of "${sTitlePara}::" does not end in "${sSuffix}"`,
           oCnptFile.oMapIdLine.get(oPara.sNameId) ?? null));
       }
@@ -498,10 +517,10 @@ function fCheckMainNameHyphen(aoCnptFile) {
       ...fFindCnpt(oCnptFile)
     ];
     for (const oCnpt of aoCnpt) {
-      // the-name::-para of a-cnptSect or cnptFile; a-cnptPara IS its name-para
+      // the-name::-para of a-CnptSect or CnptFile; a-CnptPara IS its name-para
       const oParaName = fFindParaAll(oCnpt, 'name')[0];
-      const sIdPara = oCnpt.sType === 'cnptPara' ? oCnpt.sNameId : (oParaName?.sNameId ?? oCnpt.sNameId);
-      const aLinePara = String(oCnpt.sType === 'cnptPara' ? oCnpt.sPara : oParaName?.sPara ?? '').split('\n');
+      const sIdPara = oCnpt.sType === 'CnptPara' ? oCnpt.sNameId : (oParaName?.sNameId ?? oCnpt.sNameId);
+      const aLinePara = String(oCnpt.sType === 'CnptPara' ? oCnpt.sPara : oParaName?.sPara ?? '').split('\n');
       const nLinePara = oCnptFile.oMapIdLine.get(sIdPara) ?? null;
       for (const oLago of Object.values(oCnpt.ooNameLago ?? {})) {
         const oSetMain = new Set((oLago.aoName ?? [])
@@ -522,7 +541,7 @@ function fCheckMainNameHyphen(aoCnptFile) {
 }
 
 /**
- * DOING: the-main-name of a-cnptSect whose title matches rTitle ends in sSuffix, without an-apostrophe
+ * DOING: the-main-name of a-CnptSect whose title matches rTitle ends in sSuffix, without an-apostrophe
  *   before it, and starts with a-capital letter (a-multiword attribute): Humanevolg, NOT humanevolg | Human'evolg.
  * OUTPUT: array of WARN-issues with code sCode.
  */
@@ -530,7 +549,7 @@ function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const oSect of fFindCnpt(oCnptFile, 'cnptSect')) {
+    for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
       const sMain = oSect.sNameFormal ?? '';
       const bSuffix = sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix), bCapital = /^[A-Z]/.test(sMain);
@@ -609,7 +628,7 @@ function fCheckMainNameAttrbase(aoCnptFile) {
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
-      const oParaName = oCnpt.sType === 'cnptFile'
+      const oParaName = oCnpt.sType === 'CnptFile'
         ? (oCnptFile.aoTitlePara ?? []).find(oPara => oPara.sNameTitle === 'name')
         : fFindParaAll(oCnpt, 'name')[0];
       if (!oParaName || !String(oParaName.sPara ?? '').includes('!Attrbase')) continue;
@@ -648,12 +667,12 @@ function fGstrIndex(aoCnptFile) {
   if (oWeakGstrIndex.has(aoCnptFile)) return oWeakGstrIndex.get(aoCnptFile);
   const rGs = /^GENERIC-SPECIFIC-TREE of /;   // NOT "Name'GENERIC-SPECIFIC-TREE" of another concept
   const fHead = sPara => (/<br>\*\s*McshEngl\.(\S+?:generic)\b/.exec(sPara ?? '') ?? [])[1] ?? null;
-  // index per file: the-cnptSect by id, the-para by id (with its section), the-top GS-TREE
+  // index per file: the-CnptSect by id, the-para by id (with its section), the-top GS-TREE
   const ooFile = {};
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     const oF = { oCnptFile, ooSect: {}, ooPara: {}, sIdTopGs: null };
-    for (const oCnpt of fFindCnpt(oCnptFile, 'cnptSect')) {
+    for (const oCnpt of fFindCnpt(oCnptFile, 'CnptSect')) {
       oF.ooSect[oCnpt.sNameId] = oCnpt;
       for (const oPara of oCnpt.aoTitlePara ?? [])
         if (oPara.sNameId) oF.ooPara[oPara.sNameId] = { ...oPara, sIdSect: oCnpt.sNameId };

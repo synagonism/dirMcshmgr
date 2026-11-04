@@ -1,5 +1,10 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --auto --file McshCor000003 --fix: C:\dirNodews\dirMcsh
+  createMcsh --name --file McshTchInf000009 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · dupname 0 · nest 0 · headgap 0 · missing 0 · mainname 0 · srtr 0 · 0 skipped
+  1 files written · 3 names created · 0 skipped
   written, no backup: see git diff
+
+=== NAME (3) — a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name
+  McshTchInf000009:3377  #idLMcshvmmenuValdnam  McshEngl.Mhvmmenu.valid
+  McshTchInf000009:3260  #idLMcshvmmenuFileIxaunam  McshEngl.Mhvmfile.Index_and_upload
+  McshTchInf000009:3268  #idLMcshvmmenuFileIxolnam  McshEngl.Mhvmfile.Index_only

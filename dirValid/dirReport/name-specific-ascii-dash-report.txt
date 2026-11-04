@@ -5984,11 +5984,11 @@ total 26816
   McshTchInf000009:3453  Hvrl.Hvrw06-html-attribute-value-not-double-quoted  ->  Hvrl.Hvrw06_html_attribute_value_not_double_quoted
   McshTchInf000009:3459  Hvrl.Hvrw07-html-heading-gaps  ->  Hvrl.Hvrw07_html_heading_gaps
   McshTchInf000009:3465  Hvrl.Hvrw08-html-nesting  ->  Hvrl.Hvrw08_html_nesting
-  McshTchInf000009:3538  Mvrl.Mvre01-cnptFile-missing-idOverview  ->  Mvrl.Mvre01_cnptFile_missing_idOverview
-  McshTchInf000009:3544  Mvrl.Mvrw01-cnptSect-missing-description  ->  Mvrl.Mvrw01_cnptSect_missing_description
-  McshTchInf000009:3550  Mvrl.Mvrw02-cnptSect-empty-description  ->  Mvrl.Mvrw02_cnptSect_empty_description
-  McshTchInf000009:3556  Mvrl.Mvrw03-cnptSect-missing-name  ->  Mvrl.Mvrw03_cnptSect_missing_name
-  McshTchInf000009:3562  Mvrl.Mvrw04-cnptSect-name-without-Mcsh-entries  ->  Mvrl.Mvrw04_cnptSect_name_without_Mcsh_entries
+  McshTchInf000009:3538  Mvrl.Mvre01-CnptFile-missing-idOverview  ->  Mvrl.Mvre01_cnptFile_missing_idOverview
+  McshTchInf000009:3544  Mvrl.Mvrw01-CnptSect-missing-description  ->  Mvrl.Mvrw01_cnptSect_missing_description
+  McshTchInf000009:3550  Mvrl.Mvrw02-CnptSect-empty-description  ->  Mvrl.Mvrw02_cnptSect_empty_description
+  McshTchInf000009:3556  Mvrl.Mvrw03-CnptSect-missing-name  ->  Mvrl.Mvrw03_cnptSect_missing_name
+  McshTchInf000009:3562  Mvrl.Mvrw04-CnptSect-name-without-Mcsh-entries  ->  Mvrl.Mvrw04_cnptSect_name_without_Mcsh_entries
   McshTchInf000009:3568  Mvrl.Mvrw06-dates-not-in-YYYY-MM-DD-format  ->  Mvrl.Mvrw06_dates_not_in_YYYY_MM_DD_format
   McshTchInf000009:3594  Mvrl.Mvre02-duplicate-line  ->  Mvrl.Mvre02_duplicate_line
   McshTchInf000009:3739  Mvrl.generic-specific-tree  ->  Mvrl.generic_specific_tree

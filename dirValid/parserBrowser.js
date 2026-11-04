@@ -63,7 +63,7 @@ let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}
  * INPUT: one file-concept given its relative-path (dirCor/McshCor000015.last.html).
  * OUTPUT: one file-concept-object:
  * {
- *   sType,          // 'cnptFile',
+ *   sType,          // 'CnptFile',
  *   sNameFile,      // McshCor000015.last.html
  *   sNameDir,       // dirCor
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
@@ -99,7 +99,7 @@ async function fReadFileMcsh(sNameIdRela) {
     sFileRaw = await oResponse.text();
   } catch (e) {
     return {
-      sType: 'cnptFile',
+      sType: 'CnptFile',
       sNameIdAbso, // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
       sError: e.message,
     };
@@ -175,13 +175,13 @@ async function fReadFileMcsh(sNameIdRela) {
 
     // Parse sect-cnpt candidate
     const oSect = fReadMcshRaw_sect(oRaw_sect)
-    if ( oSect.sType === 'cnptSect') {
+    if ( oSect.sType === 'CnptSect') {
       oFileIdRelaCnpt[oSect.sNameIdRela] = oSect;
     }
   }
 
   return {
-    sType: 'cnptFile',
+    sType: 'CnptFile',
     sNameIdAbso,
     sNameIdRela,
     sNameFile: oPath.basename(sNameIdRela),
@@ -530,7 +530,7 @@ function fFindName_frequent(aNameIn) {
  * We only parse Mcsh-para that are DIRECTLY part in this section, not inside
  * nested part <section> elements, to avoid double-counting.
  * {
- *   sType,          // 'cnptSect',
+ *   sType,          // 'CnptSect',
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idSection
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idSection
  *   sNameTitle,     // text from <h?>title::
@@ -575,7 +575,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   if ((oNameLago != null && Object.keys(oNameLago).length > 0) &&
       sNameId !== 'idOverview') {
     return {
-      sType: 'cnptSect',
+      sType: 'CnptSect',
       sNameIdAbso,
       sNameIdRela,
       sNameTitle,
@@ -627,14 +627,14 @@ function fParseOverview(sOverviewIn, sNameId) {
     const oP = fReadParaP(aParaMatch[0], sNameId);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
     // if oP is concept add oFileIdRelaCnpt
-    if (oP.sType === 'cnptPara') {
+    if (oP.sType === 'CnptPara') {
       oFileIdRelaCnpt[oP.sNameIdRela] = oP;
     }
   }
   while ((aParaMatch = rDiv.exec(sOverviewIn)) !== null) {
     const oP = fReadParaDiv(aParaMatch[0], sNameId);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sPara: oP.sPara});
-    if (oP.sType === 'cnptPara') {
+    if (oP.sType === 'CnptPara') {
       oFileIdRelaCnpt[oP.sNameIdRela] = oP;
     }
   }
@@ -646,7 +646,7 @@ function fParseOverview(sOverviewIn, sNameId) {
  * DOING: Parse a single <p ...>...</p> HTML string.
  * OUTPUT: one object para:
  * {
- *   sType,          // 'cnptPara',
+ *   sType,          // 'CnptPara',
  *   sSubtype,       // 'p',
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
@@ -686,7 +686,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
 
   if (bIsCnptPara) {
     return {
-      sType: 'cnptPara',
+      sType: 'CnptPara',
       sSubtype: 'p',
       sNameIdAbso,
       sNameIdRela,
@@ -709,7 +709,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
  * DOING: Parse a single <div ...>...</div> HTML string.
  * OUTPUT: Returns one object paragraph:
  * {
- *   sType,          // 'cnptPara',
+ *   sType,          // 'CnptPara',
  *   sSubtype,       // 'div',
  *   sNameId,        // value of id= attribute, or null
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
@@ -750,7 +750,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
 
   if (bIsCnptPara) {
     return {
-      sType: 'cnptPara',
+      sType: 'CnptPara',
       sSubtype: 'div',
       sNameIdAbso,
       sNameIdRela,

@@ -40,6 +40,7 @@ import { pathToFileURL } from 'url'
 const
   // contains the-versions of parserMcsh.js
   aVersion = [
+    'parserMcsh.js.0-3-0.2026-11-04: aoSectNoName, the-sections without valid names, with title and paras',
     'parserMcsh.js.0-2-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
     'parserMcsh.js.0-1-0.2026-10-01: Nodejs-version of mConcept.js',
     'mConcept.js.0-3-0.2026-08-23: Claude review',
@@ -79,7 +80,7 @@ function fToPosix(sPathIn) {
  *   and the-path of dirMcsh (default: the-current-dir, we run from dirMcsh).
  * OUTPUT: one file-concept-object:
  * {
- *   sType,          // 'cnptFile',
+ *   sType,          // 'CnptFile',
  *   sNameFile,      // McshCor000015.last.html
  *   sNameDir,       // dirCor
  *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
@@ -116,7 +117,7 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
     sFileRaw = await moFs.promises.readFile(sNameIdAbso, 'utf8');
   } catch (e) {
     return {
-      sType: 'cnptFile',
+      sType: 'CnptFile',
       sNameIdAbso, // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html
       sNameIdRela, // dirCor/McshCor000015.last.html
       sError: e.message,
@@ -155,6 +156,10 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
   // overview-section is the-text of heading and Mcsh-paragraphs only.
   // console.log( fFindSect_overview(aoRaw_sect.find(oObj => oObj.sNameId === "idOverview").sRawHtml));
 
+  // the-sections WITHOUT valid names: no CnptSect, but the-validator reports them
+  // (MvrwSect01..04), else a-section without name:: is never seen
+  const aoSectNoName = [];
+
   // iterate over raw-section-objects
   for (const oRaw_sect of aoRaw_sect) {
     // Skip infrastructure sections
@@ -181,13 +186,15 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
 
     // Parse sect-cnpt candidate
     const oSect = fReadMcshRaw_sect(oRaw_sect, oCtxFile, ooIdRelaCnpt)
-    if ( oSect.sType === 'cnptSect') {
+    if ( oSect.sType === 'CnptSect') {
       ooIdRelaCnpt[oSect.sNameIdRela] = oSect;
+    } else {
+      aoSectNoName.push(oSect);
     }
   }
 
   return {
-    sType: 'cnptFile',
+    sType: 'CnptFile',
     sNameIdAbso,
     sNameIdRela,
     sNameFile: moPath.posix.basename(sNameIdRela),
@@ -198,11 +205,12 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn) {
     sError: null,
     ooNameLago,
     sOverview,
-    aoTitlePara,   // the-title-para of idOverview, they belong to the-cnptFile
+    aoTitlePara,   // the-title-para of idOverview, they belong to the-CnptFile
     aoRaw_sect,
     oMapIdLine,
     oMapLinkLine,
-    ooIdRelaCnpt
+    ooIdRelaCnpt,
+    aoSectNoName
   };
 }
 
@@ -540,7 +548,7 @@ function fFindName_frequent(aNameIn) {
  * We only parse Mcsh-para that are DIRECTLY part in this section, not inside
  * nested part <section> elements, to avoid double-counting.
  * {
- *   sType,          // 'cnptSect',
+ *   sType,          // 'CnptSect',
  *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idSection
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idSection
  *   sNameTitle,     // text from <h?>title::
@@ -584,7 +592,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }, oCtxFil
   if ((ooNameLago != null && Object.keys(ooNameLago).length > 0) &&
       sNameId !== 'idOverview') {
     return {
-      sType: 'cnptSect',
+      sType: 'CnptSect',
       sNameIdAbso,
       sNameIdRela,
       sNameId,
@@ -600,6 +608,9 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }, oCtxFil
     return {
       sType: 'sect',
       sNameId,
+      sNameTitle,
+      nHeadingLevel,
+      aoTitlePara,
       sRawHtml,
       nDepth,
       sIdWhole_elmt
@@ -637,14 +648,14 @@ function fParseOverview(sOverviewIn, sNameId, oCtxFileIn, oFileIdRelaCnptIn) {
     const oP = fReadParaP(aParaMatch[0], sNameId, oCtxFileIn);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sNameId: oP.sNameId ?? null, sPara: oP.sPara});
     // if oP is concept add oFileIdRelaCnptIn
-    if (oP.sType === 'cnptPara') {
+    if (oP.sType === 'CnptPara') {
       oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
     }
   }
   while ((aParaMatch = rDiv.exec(sOverviewIn)) !== null) {
     const oP = fReadParaDiv(aParaMatch[0], sNameId, oCtxFileIn);
     aoTitlePara.push({sNameTitle: oP.sNameTitle, sNameId: oP.sNameId ?? null, sPara: oP.sPara});
-    if (oP.sType === 'cnptPara') {
+    if (oP.sType === 'CnptPara') {
       oFileIdRelaCnptIn[oP.sNameIdRela] = oP;
     }
   }
@@ -656,7 +667,7 @@ function fParseOverview(sOverviewIn, sNameId, oCtxFileIn, oFileIdRelaCnptIn) {
  * DOING: Parse a single <p ...>...</p> HTML string.
  * OUTPUT: one object para:
  * {
- *   sType,          // 'cnptPara',
+ *   sType,          // 'CnptPara',
  *   sSubtype,       // 'p',
  *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
@@ -694,7 +705,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
 
   if (bIsCnptPara) {
     return {
-      sType: 'cnptPara',
+      sType: 'CnptPara',
       sSubtype: 'p',
       sNameIdAbso,
       sNameIdRela,
@@ -719,7 +730,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
  * DOING: Parse a single <div ...>...</div> HTML string.
  * OUTPUT: Returns one object paragraph:
  * {
- *   sType,          // 'cnptPara',
+ *   sType,          // 'CnptPara',
  *   sSubtype,       // 'div',
  *   sNameId,        // value of id= attribute, or null
  *   sNameIdAbso,    // C:\xampp\htdocs\dirMcsh\dirCor\McshCor000015.last.html#idPara
@@ -758,7 +769,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn, oCtxFileIn) {
 
   if (bIsCnptPara) {
     return {
-      sType: 'cnptPara',
+      sType: 'CnptPara',
       sSubtype: 'div',
       sNameIdAbso,
       sNameIdRela,
