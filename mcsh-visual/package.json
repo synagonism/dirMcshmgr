@@ -83,6 +83,11 @@
         "command": "mcshv.validWorldRule",
         "title": "validate-worldview-with-rule: report, or fix and report, one rule, the whole worldview",
         "category": "Mcs"
+      },
+      {
+        "command": "mcshv.validListRule",
+        "title": "validate-list-with-rule: report, or fix and report, one rule, the files and dirs of dirManager/validate.txt",
+        "category": "Mcs"
       }
     ],
     "menus": {

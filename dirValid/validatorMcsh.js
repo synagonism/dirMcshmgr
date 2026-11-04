@@ -21,6 +21,7 @@ import { fReadFileMcsh } from './parserMcsh.js';
 import { fRunChecksMcsh } from './structuralMcsh.js';
 import { fRunChecksAi } from './ai-checks.js';
 import { fReporter } from './reporter.js';
+import { fReadListValidate } from './listValidate.js';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
@@ -39,7 +40,7 @@ const
   aArg = process.argv.slice(2);
 
 if (aArg.length === 0) {
-  console.error('Usage: node validator <sNameDir> <sNameIdRela> [--ai] [--code MvreName01[,Hvrw07]]');
+  console.error('Usage: node validator <sNameDir> <sNameIdRela> [--ai] [--code MvreName01[,Hvrw07]] [--list dirManager/validate.txt]');
   process.exit(1);
 }
 
@@ -48,7 +49,11 @@ const nIdxCode     = aArg.indexOf('--code');
 // the-rules to report; empty: all
 const aCode        = nIdxCode === -1 ? []
   : String(aArg[nIdxCode + 1] ?? '').split(',').map(sCode => sCode.trim()).filter(Boolean);
-const aArgPath     = aArg.filter((sArg, nI) => !sArg.startsWith('--') && (nIdxCode === -1 || nI !== nIdxCode + 1));
+// --list dirManager/validate.txt: the-files and dirs of that list only (listValidate.js)
+const nIdxList     = aArg.indexOf('--list');
+const sPathList    = nIdxList === -1 ? '' : String(aArg[nIdxList + 1] ?? '');
+const aArgPath     = aArg.filter((sArg, nI) => !sArg.startsWith('--') &&
+  (nIdxCode === -1 || nI !== nIdxCode + 1) && (nIdxList === -1 || nI !== nIdxList + 1));
 const sNameDir     = aArgPath[0];
 const sNameIdRela  = aArgPath[1] ? aArgPath[1] : null;
 
@@ -106,7 +111,15 @@ async function fMain() {
 
   // ── parse every file as generic Hitp ──────────────────────────────────────
   let aoFileHitp;
-  if (sNameIdRela) {
+  if (sPathList) {
+    const sPathListAbs = path.isAbsolute(sPathList) ? sPathList : path.join(sNameDir, sPathList);
+    const { aPathFile, aEntry, aMissing } = fReadListValidate(sNameDir, sPathListAbs);
+    console.log(`📋 List: ${sPathList} (${aEntry.length} entries)`);
+    if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
+    for (const sMissing of aMissing) console.log(`   ⚠️  not found: ${sMissing}`);
+    aoFileHitp = aPathFile.map(sPath => fReadFileHitp(sPath));
+    console.log(`   Found ${aoFileHitp.length} .last.html files\n`);
+  } else if (sNameIdRela) {
     const sPathFile = path.isAbsolute(sNameIdRela) ? sNameIdRela : path.join(sNameDir, sNameIdRela);
     console.log(`📄 Single-file mode: ${sNameIdRela}`);
     if (aCode.length) console.log(`🔎 Rule: ${aCode.join(', ')}`);
