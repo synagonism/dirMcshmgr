@@ -1,5 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --dupname --all --fix: C:\dirNodews\dirMcsh
+  createMcsh --code MvrwGstr01 --all --fix: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · 0 duplicate name-lines deleted · 0 skipped
+  1 files written · MvrwGstr01: 1 issues · 1 fixed · 0 skipped
   written, no backup: see git diff
+
+=== GNTRADD (1) — a-specific's generic-tree:: got its generic G: in its empty group, else a-new === group (MvrwGstr01)
+  McshNtr000004:672  #idMol013gntr  MoleMacro:generic in its first group  (from McshNtr000004:603)

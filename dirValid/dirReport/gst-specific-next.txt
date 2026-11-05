@@ -105,3 +105,21 @@ T65b. {2026-11-03} CORRECTED (user: "misunderstanding ... Mcsattr(main).Mcsautho
      A dotted M is written itself without NNN_ (user: Hmbdnutrient.iron_Fe): 1,476 items, 739 lost a number. 3,978 items, 129 files
      (scratchpad sptr-format2.js). Left as "M.specific!@": 5 in head-less trees without an owner. MvrwGstr01/02 4 + 0 (the MoleMacro 4).
      gstr02-fix2.js writes X.M!@file#id. List: dirReport/sptr-format2-applied.txt.
+
+T66. {2026-11-05} DONE: createMcsh.mjs 0-23-0 "--code MvrwGstr01" (user: "if specific has main-name create its generic-tree:: paragraph ... in fix"):
+     a-specific S without generic-tree:: whose name:: has ONE !⇒ main-name M gets {S}gntr right after its name::
+     ("McshEngl.M:generic, === G:generic, ...entity:generic", G = the-generic whose specific-tree lists S; G without head -> M_G!@file#id);
+     the-worldview is checked once, S's file is written (any file). SKIPS: "does not list it", file-concept S, no/several !⇒,
+     id {S}gntr or head M:generic taken. Run --all --fix: 4 created (MoleOligomer, MoleHumnMacro, MoleOgmMacro <- MoleMacro;
+     Wholepartrltn <- RltnDialectic), 1 skipped (MolePolymer: its generic-tree lacks MoleMacro). MvrwGstr01 now 1, MvrwGstr02 1 (Hitpmgr, new).
+
+T67. {2026-11-05} DONE: createMcsh.mjs 0-24-0 "--code MvrwGstr02 --all [--fix]": G (X:generic, first item of a "===" group of S's
+     generic-tree::) lists S as "G.S!@file#id" (dotted S itself without NNN_): a new === group at the end of G's specific-tree::
+     (before "=== addressWpg"), or a new {G}sptr "McshEngl.G.specific, ===" right after G's generic-tree::. SKIPS: G not a head,
+     S's generic-tree not {S}gntr of a section, a <div> specific-tree. Run: 1 -> SPTRNEW McshTchInf000009 idLMcshmngrsptr
+     (Mcshmgr.Hitpmgr!@McshTchInf000008#idLHitpmgr). The add-to-existing branch tested on a sample. MvrwGstr02 0, MvrwGstr01 1 (MolePolymer).
+
+T68. {2026-11-05} DONE: createMcsh.mjs 0-25-0 "--code MvrwGstr01" also fixes "does not list it" (user's rule): S's generic-tree:: gets G —
+     a tree with no generic yet ("=== ...entity:generic") gets G before ...entity:generic; a tree with generics gets a new group
+     "=== G:generic, ...entity:generic" at its end (before a "=== label:" group). Run: McshNtr000004 idMol013gntr MolePolymer
+     "=== MoleMacro:generic, ...entity:generic". The new-group case tested on a sample. MvrwGstr01/02 now 0 + 0.

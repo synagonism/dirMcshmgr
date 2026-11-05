@@ -77,8 +77,17 @@
  *
  *   --code <rule> --file <file>: the-fix of ONE validator rule in one file, for EVERY
  *   rule (ooFixCode): it changes only the-clear cases and SKIPs the-rest with why; a-rule
- *   that needs you (MvreFile01, MvrwSect02, MvrwGstr01/02) gets NOFIX with why. A-rule
+ *   that needs you (MvreFile01, MvrwSect02) gets NOFIX with why. A-rule
  *   with its own mode runs it (--code MvreName01 = --dupname).
+ *   --code MvrwGstr01: a-specific S WITHOUT generic-tree:: that HAS a-main-name M (one !⇒ target
+ *   in its name::) gets the-para {S}gntr "McshEngl.M:generic, === G:generic, ...entity:generic"
+ *   right after its name::, in S's file (any file); G = the-generic whose specific-tree lists S.
+ *   The-worldview is checked ONCE (S can be in another file). "does not list it": S's generic-tree::
+ *   gets G: a-tree with no generic yet ("=== ...entity:generic") gets G before ...entity:generic,
+ *   a-tree with generics gets a-new group "=== G:generic, ...entity:generic" at its end.
+ *   --code MvrwGstr02: a-generic G (X:generic, the-first item of a-"===" group of S's generic-tree::)
+ *   lists S as "G.S!@file#id" (a-dotted S itself, without NNN_): a-new "===" group at the-end of
+ *   G's specific-tree::, or a-new {G}sptr para "McshEngl.G.specific, ===" right after G's generic-tree::.
  *
  *   --name: the-fix of MvrwSect03: a-section without name:: gets a-name::-para with
  *   McshEngl.<its heading>, after its description::. It SKIPS a-heading with "," or "!".
@@ -103,6 +112,9 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-25-0.2026-11-05: --code MvrwGstr01 "does not list it": G goes in the-generic-tree:: of S (its empty group, else a-new === group)',
+    'createMcsh.mjs.0-24-0.2026-11-05: --code MvrwGstr02, a-generic lists its specific "G.S!@file#id" (new === group, or a-new specific-tree:: para)',
+    'createMcsh.mjs.0-23-0.2026-11-05: --code MvrwGstr01, a-specific without generic-tree:: but with a-main-name gets its generic-tree:: para',
     'createMcsh.mjs.0-22-0.2026-11-05: Hvrw02 title version (N-N-N.YYYY-MM-DD) gets the-file name in front',
     'createMcsh.mjs.0-21-0.2026-11-05: Hvre06 reads the-href of the-new message: ID not found href="X"',
     'createMcsh.mjs.0-20-0.2026-11-05: Hvre05 reads the-href of the-new message: FILE not found href="X"',
@@ -151,6 +163,10 @@ const
     MOVE:     'the-Attrbase-line moved after M!@McshXxx | M!=I (MvrwMain07)',
     DATE:     'a-date padded to {YYYY-MM-DD} (MvrwMisc01)',
     LINKFX:   'a-broken link re-pointed to its ONE certain target (Hvre05, Hvre06)',
+    GNTRNEW:  'a-specific without generic-tree:: got its {S}gntr para, its generic G first (MvrwGstr01)',
+    GNTRADD:  'a-specific\'s generic-tree:: got its generic G: in its empty group, else a-new === group (MvrwGstr01)',
+    SPTRADD:  'a-generic\'s specific-tree:: got its specific S "G.S!@file#id" in a-new === group (MvrwGstr02)',
+    SPTRNEW:  'a-generic without specific-tree:: got its {G}sptr para after its generic-tree:: (MvrwGstr02)',
     INSERT:   'a-creation-date inserted in a-description::',
     FIXTITLE: 'a-typo description-title fixed',
     RENAME:   'the-name::-para id renamed to idName',
@@ -1175,8 +1191,8 @@ const ooFixCode = {
   MvrwMisc01: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
   MvreFile01: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
   MvrwSect02: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
-  MvrwGstr01: { sKind: 'none', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
-  MvrwGstr02: { sKind: 'none', sWhy: 'where the-specific goes in the-specific-tree:: is a-choice: add it by hand' }
+  MvrwGstr01: { sKind: 'gstr01', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
+  MvrwGstr02: { sKind: 'gstr02', sWhy: 'its generic is not a-generic-tree:: name (X:generic) or not found: add it by hand' }
 };
 
 /**
@@ -1726,6 +1742,157 @@ function fPlanLink(sRawIn, sNameShortIn, aoIssueIn, sPathFileIn, sNameDirIn, oMa
   return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
 }
 
+/**
+ * OUTPUT: { nName, nNameEnd, sMain } of the-section sIdSectIn: its name::-para (in its OWN text)
+ *   and its main-name = the-ONE !⇒ target of that para; sMain '' when none, null when several.
+ *   null when the-section or its name:: is not found.
+ */
+function fFindMainOfSect(aLineIn, sIdSectIn) {
+  const nSect = aLineIn.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdSectIn);
+  if (nSect === -1) return null;
+  const nOwnEnd = fFindSectOwnEnd(aLineIn, nSect);
+  const nName = aLineIn.findIndex((sLine, nL) => nL > nSect && nL < nOwnEnd && sLine.includes(`<p id="${sIdSectIn}nam">name::`));
+  if (nName === -1) return null;
+  let nNameEnd = nName; while (nNameEnd < aLineIn.length - 1 && !aLineIn[nNameEnd].includes('</p>')) nNameEnd++;
+  const oSetMain = new Set();
+  for (let nL = nName; nL <= nNameEnd; nL++)
+    for (const aM of aLineIn[nL].matchAll(/!⇒\s*([^,\s<]+),/g)) oSetMain.add(aM[1]);
+  return { nName, nNameEnd, sMain: oSetMain.size === 1 ? [...oSetMain][0] : oSetMain.size === 0 ? '' : null };
+}
+
+/**
+ * DOING: MvrwGstr01 "does not list it": S's generic-tree:: (oJobIn.sIdGntr) gets its generics G
+ *   (user {2026-11-05}): a-tree with NO generic yet ("=== ...entity:generic") gets G in that group,
+ *   before "...entity:generic"; a-tree WITH a-generic gets a-new group "=== G:generic, ...entity:generic"
+ *   at its end, before a-"=== label:" group (not generics).
+ */
+function fPlanGntrList(aLineIn, sNameShortIn, oJobIn, sFromIn, aoEditIn, aoNoteIn) {
+  const nOpen = aLineIn.findIndex(sLine => sLine.includes(`<p id="${oJobIn.sIdGntr}">generic-tree::`));
+  if (nOpen === -1) { aoNoteIn.push(`SKIP   ${sNameShortIn}  #${oJobIn.sIdGntr}: no <p> generic-tree:: with it ${sFromIn}`); return; }
+  let nEnd = nOpen; while (nEnd < aLineIn.length - 1 && !aLineIn[nEnd].includes('</p>')) nEnd++;
+  const sPara = aLineIn.slice(nOpen, nEnd + 1).join('\n');
+  const aItemG = oJobIn.aItemG.filter(sG => !new RegExp(`[\\s*>.]${sG.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[,\\s]`).test(sPara));
+  if (!aItemG.length) return;
+  const sIn = fFindIndentNext(aLineIn, nOpen, aLineIn[nOpen].match(/^( *)/)[1]);
+  // the-lines after the-head; the-end of the-generic groups: a-"=== label:" line, else the-clsHide line
+  let nLast = nEnd;
+  for (let nL = nOpen + 2; nL < nEnd; nL++) if (/^\s*<br>===\s*[^=\s]/.test(aLineIn[nL])) { nLast = nL; break; }
+  const aBody = aLineIn.slice(nOpen + 2, nLast).map(s => s.trim());
+  const bEntityOnly = aBody.every(s => /^<br>(===\s*|\*\s*\.\.\.entity:generic,?)$/.test(s) || s === '');
+  const nEntity = aLineIn.findIndex((sLine, nL) => nL > nOpen && nL < nLast && /^\s*<br>\*\s*\.\.\.entity:generic,?\s*$/.test(sLine));
+  if (bEntityOnly) {
+    // "=== ...entity:generic": G in that group, before ...entity:generic (or at the-group's end)
+    const nAt = nEntity === -1 ? nLast : nEntity;
+    const aIns = aItemG.flatMap((sG, nG) => [...(nG ? [`${sIn}<br>* ...entity:generic,`, `${sIn}<br>===`] : []), `${sIn}<br>* ${sG},`]);
+    if (!aBody.some(s => /^<br>===\s*$/.test(s))) aIns.unshift(`${sIn}<br>===`);
+    if (nEntity === -1) aIns.push(`${sIn}<br>* ...entity:generic,`);
+    aoEditIn.push({ nAt, nDel: 0, aIns });
+    aoNoteIn.push(`GNTRADD ${sNameShortIn}:${nOpen + 1}  #${oJobIn.sIdGntr}  ${aItemG.join(' === ')} in its first group  (from ${oJobIn.aFrom.join(', ')})`);
+    return;
+  }
+  // a-tree with generics: a-new group per G at the-end of the-generic groups
+  aoEditIn.push({ nAt: nLast, nDel: 0, aIns: aItemG.flatMap(sG => [`${sIn}<br>===`, `${sIn}<br>* ${sG},`, `${sIn}<br>* ...entity:generic,`]) });
+  aoNoteIn.push(`GNTRADD ${sNameShortIn}:${nOpen + 1}  #${oJobIn.sIdGntr}  === ${aItemG.join(' === ')} as a-new group  (from ${oJobIn.aFrom.join(', ')})`);
+}
+
+/**
+ * DOING: MvrwGstr01: each specific S of ONE file (aoJobIn: { sIdS, aItemG, aFrom }) that has
+ *   no generic-tree:: gets "{S}gntr" right after its name::-para:
+ *     generic-tree::  McshEngl.M:generic,  ===  G:generic,  [===  G2:generic,]  ...entity:generic,
+ *   M = S's main-name (the-ONE !⇒ target). It SKIPS: no name::, no or several main-names,
+ *   the-id {S}gntr taken, the-name M:generic taken (oSetHeadIn).
+ */
+function fPlanGntrNew(sRawIn, sNameShortIn, aoJobIn, oSetHeadIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const oSetId = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
+  for (const oJob of aoJobIn) {
+    const sFrom = `(specific of ${oJob.aItemG.join(', ')}, from ${oJob.aFrom.join(', ')})`;
+    if (oJob.sIdGntr) { fPlanGntrList(aLine, sNameShortIn, oJob, sFrom, aoEdit, aoNote); continue; }
+    const oMain = fFindMainOfSect(aLine, oJob.sIdS);
+    if (!oMain) { aoNote.push(`SKIP   ${sNameShortIn}  #${oJob.sIdS}: no section or no name::-para ${sFrom}`); continue; }
+    const sLoc = `${sNameShortIn}:${oMain.nName + 1}`;
+    if (oMain.sMain === '') { aoNote.push(`SKIP   ${sLoc}  #${oJob.sIdS}: its name:: has no main-name (no !⇒): give it one ${sFrom}`); continue; }
+    if (oMain.sMain === null) { aoNote.push(`SKIP   ${sLoc}  #${oJob.sIdS}: its name:: has several !⇒ targets ${sFrom}`); continue; }
+    const sIdGntr = oJob.sIdS + 'gntr';
+    if (oSetId.has(sIdGntr)) { aoNote.push(`SKIP   ${sLoc}  #${sIdGntr} exists but is not a-generic-tree:: ${sFrom}`); continue; }
+    const sHead = oMain.sMain + ':generic';
+    if (oSetHeadIn.has(sHead)) { aoNote.push(`SKIP   ${sLoc}  #${oJob.sIdS}: ${sHead} is the-head of another generic-tree:: ${sFrom}`); continue; }
+    const sIndent = aLine[oMain.nName].match(/^( *)/)[1];
+    const sIn = fFindIndentNext(aLine, oMain.nName, sIndent);
+    const aGroup = oJob.aItemG.flatMap((sG, nG) => [...(nG ? [`${sIn}<br>===`] : []), `${sIn}<br>* ${sG},`]);
+    aoEdit.push({ nAt: oMain.nNameEnd + 1, nDel: 0, aIns: [
+      `${sIndent}<p id="${sIdGntr}">generic-tree::`,
+      `${sIn}<br>* McshEngl.${sHead},`,
+      `${sIn}<br>===`,
+      ...aGroup,
+      `${sIn}<br>* ...entity:generic,`,
+      `${sIndent}  <a class="clsHide" href="#${sIdGntr}"></a></p>`
+    ] });
+    oSetHeadIn.add(sHead);
+    aoNote.push(`GNTRNEW ${sLoc}  #${sIdGntr}  McshEngl.${sHead} === ${oJob.aItemG.join(' === ')}  (from ${oJob.aFrom.join(', ')})`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * OUTPUT: the-item of specific S in G's specific-tree:: "G.S!@file#id" (user {2026-11-03}):
+ *   a-dotted main-name S (Hmbdnutrient.010_iron_Fe) is written itself, without its NNN_ numbers.
+ */
+function fFindItemSptr(sMainGIn, sMainSIn, sFileSIn, sIdSIn) {
+  const sName = sMainSIn.includes('.') ? sMainSIn.replace(/\.\d+_/g, '.') : `${sMainGIn}.${sMainSIn}`;
+  return `${sName}!@${sFileSIn}#${sIdSIn}`;
+}
+
+/**
+ * DOING: MvrwGstr02: each generic G of ONE file (aoJobIn: { sIdG, sMainG, aItem, aFrom }) lists
+ *   its specifics S: a-new "===" group at the-end of G's specific-tree:: (before an-"=== address" part),
+ *   or, when G has none, a-new "{G}sptr" para "McshEngl.G.specific, === items" right after G's generic-tree::.
+ *   An-item whose link is in the-para already is not added. A-<div> specific-tree is SKIPPED.
+ */
+function fPlanSptrAdd(sRawIn, sNameShortIn, aoJobIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  for (const oJob of aoJobIn) {
+    const sFrom = `(from ${oJob.aFrom.join(', ')})`;
+    const sIdSptr = oJob.sIdG + 'sptr';
+    const nSptr = aLine.findIndex(sLine => sLine.includes(`<p id="${sIdSptr}">specific-tree::`));
+    if (nSptr === -1 && aLine.some(sLine => sLine.includes(`id="${sIdSptr}"`))) {
+      aoNote.push(`SKIP   ${sNameShortIn}  #${sIdSptr} is not a-<p> specific-tree:: (a-<div>?): add ${oJob.aItem.join(', ')} by hand ${sFrom}`);
+      continue;
+    }
+    if (nSptr !== -1) {
+      let nEnd = nSptr; while (nEnd < aLine.length - 1 && !aLine[nEnd].includes('</p>')) nEnd++;
+      const sPara = aLine.slice(nSptr, nEnd + 1).join('\n');
+      const aItem = oJob.aItem.filter(sItem => !sPara.includes(sItem.slice(sItem.indexOf('!@'))));
+      if (!aItem.length) continue;
+      // before an-"=== addressWpg" part, else before the-clsHide line
+      let nAt = nEnd;
+      for (let nL = nSptr + 1; nL < nEnd; nL++) if (/^\s*<br>===\s*address/i.test(aLine[nL])) { nAt = nL; break; }
+      const sIn = fFindIndentNext(aLine, nSptr, aLine[nSptr].match(/^( *)/)[1]);
+      aoEdit.push({ nAt, nDel: 0, aIns: [`${sIn}<br>===`, ...aItem.map(sItem => `${sIn}<br>* ${sItem},`)] });
+      aoNote.push(`SPTRADD ${sNameShortIn}:${nSptr + 1}  #${sIdSptr}  += ${aItem.join(', ')}  ${sFrom}`);
+      continue;
+    }
+    const nGntr = aLine.findIndex(sLine => sLine.includes(`<p id="${oJob.sIdG}gntr">generic-tree::`));
+    if (nGntr === -1) { aoNote.push(`SKIP   ${sNameShortIn}  #${oJob.sIdG}: no generic-tree:: to put its specific-tree:: after ${sFrom}`); continue; }
+    let nGntrEnd = nGntr; while (nGntrEnd < aLine.length - 1 && !aLine[nGntrEnd].includes('</p>')) nGntrEnd++;
+    const sIndent = aLine[nGntr].match(/^( *)/)[1];
+    const sIn = fFindIndentNext(aLine, nGntr, sIndent);
+    aoEdit.push({ nAt: nGntrEnd + 1, nDel: 0, aIns: [
+      `${sIndent}<p id="${sIdSptr}">specific-tree::`,
+      `${sIn}<br>* McshEngl.${oJob.sMainG}.specific,`,
+      `${sIn}<br>===`,
+      ...oJob.aItem.map(sItem => `${sIn}<br>* ${sItem},`),
+      `${sIndent}  <a class="clsHide" href="#${sIdSptr}"></a></p>`
+    ] });
+    aoNote.push(`SPTRNEW ${sNameShortIn}:${nGntrEnd + 2}  #${sIdSptr}  McshEngl.${oJob.sMainG}.specific === ${oJob.aItem.join(', ')}  ${sFrom}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
 function fCheckFile(sRawOldIn, sRawNewIn) {
   for (const sTag of ['<section', '</section>']) {
     if (fCount(sRawOldIn, sTag) !== fCount(sRawNewIn, sTag)) return `${sTag} count changed`;
@@ -2020,6 +2187,26 @@ async function fMain() {
         aoFileHitpAll = fReadFileAllHitp(sNameDir);
         aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true, [sCodeOne]);
       }
+      // MvrwGstr01: a-specific S can be in any file: every Mcsh file is parsed ONCE and checked together;
+      //   the-jobs are collected per S-file (ooJobGstr) and written after the-files of the-scope
+      let ooRawAll = null, oSetHead = null, ooJobGstr = null, oMapHead = null;
+      if (['gstr01', 'gstr02'].includes(oFix.sKind)) {
+        const aPathMcsh = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
+        ooRawAll = new Map(aPathMcsh.map(sPath => [fShort(sPath), { sPath, sRaw: moFs.readFileSync(sPath, 'utf8') }]));
+        const aoCnptFile = await Promise.all([...ooRawAll.values()].map(o =>
+          fReadFileMcsh(sNameDir, moPath.relative(sNameDir, o.sPath), o.sRaw)));
+        aoIssueAll = fRunChecksMcsh(aoCnptFile, sNameDir, true, [sCodeOne]);
+        // the-heads of every generic-tree:: (a-new head must not be one of them)
+        oSetHead = new Set();
+        // MvrwGstr02: the-head X:generic → { sFile, sIdB } of its "{B}gntr" para
+        oMapHead = new Map();
+        for (const [sFile, { sRaw }] of ooRawAll)
+          for (const aM of sRaw.matchAll(/<p id="([^"]+)gntr">generic-tree::\r?\n\s*<br>\*\s*McshEngl\.(\S+?:generic),/g)) {
+            oSetHead.add(aM[2]);
+            oMapHead.set(aM[2], oMapHead.has(aM[2]) ? null : { sFile, sIdB: aM[1] });   // null: the-head twice
+          }
+        ooJobGstr = new Map();
+      }
       let nIssue = 0;
       for (const sPathFile of aPathFile) {
       // each file is read when its turn comes: an-earlier file's renames may have re-pointed its links
@@ -2090,8 +2277,74 @@ async function fMain() {
           ooSetId.set(sRel, oFile.oSetId);
         }
         fWriteFile(sPathFile, sRaw, sNameShort, fPlanLink(sRaw, sNameShort, aoIssue, sPathFile, sNameDir, oMapFile, ooSetId));
+      } else if (oFix.sKind === 'gstr01') {
+        // the-issues are in G's file; the-new generic-tree:: goes in S's file
+        const fSkipGstr = (sLocIn, sWhyIn) => { aLineOut.push(`SKIP   ${sLocIn}  ${sWhyIn}`); oCount.SKIP = (oCount.SKIP ?? 0) + 1; };
+        for (const oIssue of aoIssue) {
+          const sLoc = `${sNameShort}:${oIssue.nLine ?? '?'}`;
+          let aM = oIssue.sMessage.match(/"([^"]*)" \((Mcsh[A-Za-z0-9]+)#([^)]*)\) is a specific of (\S+), but has no generic-tree::/);
+          // "does not list it": S HAS a-generic-tree:: (file:line): G goes in it (fPlanGntrList)
+          let sIdGntr = null;
+          const aL = aM ? null : oIssue.sMessage.match(/"([^"]*)" is a specific of (\S+), but its generic-tree:: \((Mcsh[A-Za-z0-9]+):(\d+)\) does not list it/);
+          if (aL) {
+            sIdGntr = ((ooRawAll.get(aL[3])?.sRaw.split('\n')[+aL[4] - 1] ?? '').match(/<p id="([^"]+)">generic-tree::/) ?? [])[1] ?? null;
+            if (!sIdGntr) { fSkipGstr(sLoc, `"${aL[1]}": no <p id> generic-tree:: on ${aL[3]}:${aL[4]}`); continue; }
+            aM = [null, aL[1], aL[3], '', aL[2]];
+          }
+          if (!aM) { fSkipGstr(sLoc, `${oIssue.sMessage.replace(/^gnsp_then_spgn: /, '').slice(0, 160)}: ${oFix.sWhy}`); continue; }
+          const [, sTextS, sFileS, sIdS, sNameG] = aM;
+          if (!sIdS && !sIdGntr) { fSkipGstr(sLoc, `"${sTextS}" is the-file-concept ${sFileS}: its generic-tree:: goes in its GS-TREE, by hand`); continue; }
+          let sItemG = sNameG;
+          if (!sNameG.endsWith(':generic')) {
+            // G without generic-tree name: a-link with G's main-name
+            const [sFileG, sIdG] = sNameG.split('#');
+            const oG = ooRawAll.get(sFileG);
+            const oMainG = oG && sIdG ? fFindMainOfSect(oG.sRaw.split('\n'), sIdG) : null;
+            if (!oMainG?.sMain) { fSkipGstr(sLoc, `"${sTextS}": its generic ${sNameG} has no generic-tree:: name and no main-name`); continue; }
+            sItemG = `${oMainG.sMain}!@${sFileG}#${sIdG}`;
+          }
+          if (!ooJobGstr.has(sFileS)) ooJobGstr.set(sFileS, []);
+          const aJob = ooJobGstr.get(sFileS);
+          let oJob = aJob.find(o => sIdGntr ? o.sIdGntr === sIdGntr : !o.sIdGntr && o.sIdS === sIdS);
+          if (!oJob) aJob.push(oJob = { sIdS, sIdGntr, aItemG: [], aFrom: [] });
+          if (!oJob.aItemG.includes(sItemG)) oJob.aItemG.push(sItemG);
+          oJob.aFrom.push(sLoc);
+        }
+      } else if (oFix.sKind === 'gstr02') {
+        // the-issues are in S's file (the-line of S's generic-tree::); the-item goes in G's file
+        const fSkipGstr = (sLocIn, sWhyIn) => { aLineOut.push(`SKIP   ${sLocIn}  ${sWhyIn}`); oCount.SKIP = (oCount.SKIP ?? 0) + 1; };
+        const aLineRaw = sRaw.split('\n');
+        for (const oIssue of aoIssue) {
+          const sLoc = `${sNameShort}:${oIssue.nLine ?? '?'}`;
+          const aM = oIssue.sMessage.match(/"(\S+?):generic" has generic (\S+?:generic), but/);
+          const oG = aM ? oMapHead.get(aM[2]) : null;
+          if (!oG) { fSkipGstr(sLoc, `${oIssue.sMessage.replace(/^spgn_then_gnsp: /, '').slice(0, 160)}: ${oFix.sWhy}`); continue; }
+          // S: the-section of the-generic-tree:: on the-issue's line
+          const sIdS = ((aLineRaw[(oIssue.nLine ?? 0) - 1] ?? '').match(/<p id="([^"]+)gntr">generic-tree::/) ?? [])[1];
+          if (!sIdS || !aLineRaw.some(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdS)) {
+            fSkipGstr(sLoc, `"${aM[1]}:generic": its generic-tree:: is not "{S}gntr" of a-section (a-GS-TREE of the-file?): add it by hand`);
+            continue;
+          }
+          const sMainG = aM[2].replace(/:generic$/, '');
+          const sItem = fFindItemSptr(sMainG, aM[1], sNameShort, sIdS);
+          if (!ooJobGstr.has(oG.sFile)) ooJobGstr.set(oG.sFile, []);
+          const aJob = ooJobGstr.get(oG.sFile);
+          let oJob = aJob.find(o => o.sIdG === oG.sIdB);
+          if (!oJob) aJob.push(oJob = { sIdG: oG.sIdB, sMainG, aItem: [], aFrom: [] });
+          if (!oJob.aItem.includes(sItem)) oJob.aItem.push(sItem);
+          oJob.aFrom.push(sLoc);
+        }
       }
       }   // the-files
+      // MvrwGstr01: each S-file, MvrwGstr02: each G-file, read as it is now (an-earlier write of this run included)
+      for (const [sFileOne, aJob] of ooJobGstr ?? []) {
+        const oOne = ooRawAll.get(sFileOne);
+        if (!oOne) { aLineOut.push(`SKIP   ${sFileOne}  no such Mcsh file`); oCount.SKIP = (oCount.SKIP ?? 0) + 1; continue; }
+        const sRawOne = moFs.readFileSync(oOne.sPath, 'utf8');
+        fWriteFile(oOne.sPath, sRawOne, sFileOne, oFix.sKind === 'gstr01'
+          ? fPlanGntrNew(sRawOne, sFileOne, aJob, oSetHead)
+          : fPlanSptrAdd(sRawOne, sFileOne, aJob));
+      }
       if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly || (sPathList ? 'list' : 'worldview')}  ${sCodeOne}: nothing to fix in ${aPathFile.length} files`);
       for (const sNote of aLineOut.slice(nNoteFix)) {
         const sKind = sNote.split(' ')[0];
