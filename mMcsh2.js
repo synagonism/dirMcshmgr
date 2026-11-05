@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-4-0.2026-11-05: dblclick on see_by_dbclick:X. searches X (prefix removed like articles)',
     'mMcsh2.js.27-3-0.2026-11-02: dblclick on the-head McshEngl.X:generic lists the-generics of its own generic-tree (links from the-name-index), no X:Y names',
     'mMcsh2.js.27-2-0.2026-11-02: dblclick on search_for:X. searches X',
     'mMcsh2.js.27-1-0.2026-11-01: dblclick on * X:generic inserts the-generics of its generic-tree',
@@ -840,6 +841,8 @@ let fContainersInsert = function () {
       // drop a-leading English article so 'the-name'/'a-name' search as 'name'
       if (sSelection.startsWith('the-'))  sSelection = sSelection.slice(4)
       else if (sSelection.startsWith('a-'))  sSelection = sSelection.slice(2)
+      // drop the-hint 'see_by_dbclick:' so 'see_by_dbclick:X' searches X
+      if (sSelection.startsWith('see_by_dbclick:'))  sSelection = sSelection.slice(15)
       if (sSelection.startsWith('_'))  sSelection = sSelection.slice(1) //_DESCRIPTION
       if (sSelection.startsWith('cpt'))  sSelection = 'concept' + sSelection.slice(3)
       // a-trailing space searches whole names; search_for searches names that begin with the-term
@@ -940,6 +943,8 @@ let fContainersInsert = function () {
     // drop a-leading English article so 'the-name'/'a-name' search as 'name'
     if (sSelectionIn.startsWith('the-'))  sSelectionIn = sSelectionIn.slice(4)
     else if (sSelectionIn.startsWith('a-'))  sSelectionIn = sSelectionIn.slice(2)
+    // drop the-hint 'see_by_dbclick:' so 'see_by_dbclick:X' searches X
+    if (sSelectionIn.startsWith('see_by_dbclick:'))  sSelectionIn = sSelectionIn.slice(15)
     if (sSelectionIn.startsWith('_'))  sSelectionIn = sSelectionIn.slice(1) //_DESCRIPTION
     if (sSelectionIn.startsWith('cpt'))  sSelectionIn = 'concept' + sSelectionIn.slice(3)
     sSelectionIn = sSelectionIn + ' ' // for exact searching

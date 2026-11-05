@@ -37,6 +37,8 @@ import fs from 'fs';
 
 const
   aVersion = [
+    'structuralHitp.js.0-10-0.2026-11-05: Hvre06 message: ID not found href="X", the-href as written',
+    'structuralHitp.js.0-9-0.2026-11-05: Hvre05 message: FILE not found href="X", the-href as written',
     'structuralHitp.js.0-8-0.2026-11-04: Hvre02/Hvre03 report the-line of the-element itself',
     'structuralHitp.js.0-7-0.2026-11-04: Hvre04 reports the-line of the-<section without id',
     'structuralHitp.js.0-6-0.2026-10-15: Hvrw08 Html-section nesting, split from Hvrw07',
@@ -203,7 +205,7 @@ function fCheckLink(aoFile, sPathDir) {
         const bExists = oSetRel.has(oResolved.sRelFile) || fs.existsSync(oResolved.sPathAbs);
         if (!bExists) {
           aoIssue.push(fIssue('ERROR', 'Hvre05', oFile.sNameFile, null,
-            `Broken link: FILE not found "${oResolved.sRelFile}" (from "${oFile.sNameFile}/${sHref}")`, nLine));
+            `Broken link: FILE not found href="${sHref}"`, nLine));
           continue;
         }
         if (oResolved.sAnchor) {
@@ -211,14 +213,14 @@ function fCheckLink(aoFile, sPathDir) {
             ?? oMapAnchor.get(path.basename(oResolved.sRelFile));
           if (oSetIdTarget && !oSetIdTarget.has(oResolved.sAnchor)) {
             aoIssue.push(fIssue('WARN', 'Hvre06', oFile.sNameFile, null,
-              `Broken anchor: #${oResolved.sAnchor} not found in "${oResolved.sRelFile}"`, nLine));
+              `Broken anchor: ID not found href="${sHref}"`, nLine));
           }
         }
       } else if (oResolved.sAnchor) {
         // same-file anchor → Hvre06
         if (!oFile.oSetId.has(oResolved.sAnchor)) {
           aoIssue.push(fIssue('WARN', 'Hvre06', oFile.sNameFile, null,
-            `Broken anchor: #${oResolved.sAnchor} not found in "${oFile.sNameFile}"`, nLine));
+            `Broken anchor: ID not found href="${sHref}"`, nLine));
         }
       }
     }

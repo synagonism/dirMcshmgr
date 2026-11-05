@@ -44,6 +44,7 @@ import {
 
 const
   aVersion = [
+    'parserHitp.js.0-6-0.2026-11-05: aLinks/oMapLinkLine skip <script>/<style>/<!-- -->, script code is not a-link',
     'parserHitp.js.0-5-0.2026-11-04: fReadFileHitp/fReadFileHitpIdOnly sRawIn, the-text already read',
     'parserHitp.js.0-4-0.2026-11-04: aoElmt nLineOwn, the-line of the-element itself, also without id',
     'parserHitp.js.0-3-0.2026-11-04: aoSect nLineOpen, the-line of <section, also without id',
@@ -287,9 +288,10 @@ export function fReadFileHitp(sPathFile, sRawIn = null) {
   // line numbers stay exact.
   const sHtmlId = fBlankCodePre(sFileRaw);
   const oMapIdLine   = fBuildMapLine(sHtmlId, /\bid="([^"]+)"/g);
-  const oMapLinkLine = fBuildMapLine(sFileRaw, /<a\b[^>]*?\bhref="([^"]+)"/g);
-  // <script>/<style>/<!-- --> blanked ONCE, for the-three tag scanners
+  // <script>/<style>/<!-- --> blanked ONCE, for the-three tag scanners + the-links
   const sScan = fBlankNonHtml(sFileRaw);
+  // links from sScan: an-href inside script code ('<a href="../' + x + '">') is not a-link
+  const oMapLinkLine = fBuildMapLine(sScan, /<a\b[^>]*?\bhref="([^"]+)"/g);
   // the-blanking keeps every newline, so ONE line-lookup serves all three strings
   const fLineAt = fMakeLineAt(sFileRaw);
   const aoTagBad = fScanTagPairs(sScan, fLineAt);
@@ -307,7 +309,7 @@ export function fReadFileHitp(sPathFile, sRawIn = null) {
   const sNameTitle = sTitleRaw.replace(/\s*\([^)]*\)\s*/g, '').trim();
 
   // ── all content hrefs in the file ─────────────────────────────────────────
-  const aLinks = fExtractContentHrefs(sFileRaw);
+  const aLinks = fExtractContentHrefs(sScan);
 
   // ── sections → aoSect + aoElmt ────────────────────────────────────────────
   const aoRawSect = fSplit_sections(sFileRaw);

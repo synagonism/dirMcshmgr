@@ -56,11 +56,11 @@
  *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
  *             or is badly written
  *
- *  MvrwGstr01 (warning) specific_has_generic: generic X has specific Y (a-linked item of X's "specific-tree::"),
- *             but Y does NOT have X as generic (in its "generic-tree::", by nesting, or through its generic-chain)
- *  MvrwGstr02 (warning) generic_has_specific: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
+ *  MvrwGstr01 gnsp_then_spgn: generic G has specific S (a-linked item of G's "specific-tree::"),
+ *             but S does NOT have G as generic (in its "generic-tree::", by nesting, or through its generic-chain)
+ *  MvrwGstr02 spgn_then_gnsp: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
  *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
- *             In a-"generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
+ *             In "generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
  *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
  * 
  *  MvrwMisc01  dates not in {YYYY-MM-DD} format
@@ -70,6 +70,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-45-0.2026-11-05: MvrwGstr01 gnsp_then_spgn (G, S), MvrwGstr02 spgn_then_gnsp',
     'structuralMcsh.js.0-44-0.2026-11-04: faster: fFindCnpt once per file, MvrwMisc01 skips a-para without {',
     'structuralMcsh.js.0-43-0.2026-11-04: fRunChecksMcsh aCodeIn: only the-checks of these rules',
     'structuralMcsh.js.0-42-0.2026-11-04: MvrwSect01..04 check also the-sections without valid names',
@@ -667,9 +668,9 @@ function fCheckMainNameAttrbase(aoCnptFile) {
   return aoIssue;
 }
 
-// 🔶 [MvrwGstr01] specific_has_generic: IF generic X has specific Y (a-linked item of X's "specific-tree::")
-//   THEN Y has X as generic: X is in Y's "generic-tree::" (as X:generic or a-link to X),
-//   or Y is a-part-section of X (without own generic-tree), or Y reaches X through its generic-chain.
+// 🔶 [MvrwGstr01] gnsp_then_spgn: IF generic G has specific S (a-linked item of G's "specific-tree::")
+//   THEN S has G as generic: G is in S's "generic-tree::" (as G:generic or a-link to G),
+//   or S is a-part-section of G (without own generic-tree), or S reaches G through its generic-chain.
 //   A-concept is a-key "McshDir000000#id" ("McshDir000000#" the-file-concept);
 //   a-GS-TREE means its whole, a-para means its section.
 // the-GS index of the-worldview, shared by MvrwGstr01 and MvrwGstr02, built once per aoCnptFile.
@@ -773,29 +774,29 @@ function fGstrIndex(aoCnptFile) {
     }
     return (ooGeneric[sKey] = { oSetKey, oG });
   };
-  // Y reaches X through its generic-chain
-  const fReaches = (sKeyY, sKeyX) => {
-    const oSeen = new Set([sKeyY]);
-    let aQueue = [sKeyY];
+  // S reaches G through its generic-chain
+  const fReaches = (sKeyS, sKeyG) => {
+    const oSeen = new Set([sKeyS]);
+    let aQueue = [sKeyS];
     for (let n = 0; n < 12 && aQueue.length; n++) {
       const aNext = [];
       for (const sK of aQueue) for (const sG of fGenerics(sK)?.oSetKey ?? []) {
-        if (sG === sKeyX) return true;
+        if (sG === sKeyG) return true;
         if (!oSeen.has(sG)) { oSeen.add(sG); aNext.push(sG); }
       }
       aQueue = aNext;
     }
     return false;
   };
-  // Y is a-part-section of X
-  const fInside = (sKeyY, sKeyX) => {
-    const [sFileY, sIdY] = sKeyY.split('#'), [sFileX, sIdX] = sKeyX.split('#');
-    if (sFileY !== sFileX || !sIdY) return false;
-    if (!sIdX) return true;
-    let oS = ooFile[sFileY].ooSect[sIdY];
+  // S is a-part-section of G
+  const fInside = (sKeyS, sKeyG) => {
+    const [sFileS, sIdS] = sKeyS.split('#'), [sFileG, sIdG] = sKeyG.split('#');
+    if (sFileS !== sFileG || !sIdS) return false;
+    if (!sIdG) return true;
+    let oS = ooFile[sFileS].ooSect[sIdS];
     while (oS && oS.sIdWhole_elmt) {
-      if (oS.sIdWhole_elmt === sIdX) return true;
-      oS = ooFile[sFileY].ooSect[oS.sIdWhole_elmt];
+      if (oS.sIdWhole_elmt === sIdG) return true;
+      oS = ooFile[sFileS].ooSect[oS.sIdWhole_elmt];
     }
     return false;
   };
@@ -839,7 +840,7 @@ function fGstrIndex(aoCnptFile) {
   return oIndex;
 }
 
-// 🔶 [MvrwGstr01] specific_has_generic (see above fGstrIndex)
+// 🔶 [MvrwGstr01] gnsp_then_spgn (see above fGstrIndex)
 function fCheckGstrSpecificGeneric(aoCnptFile) {
   const aoIssue = [];
   const { ooFile, fHead, fKey, fGntr, fRefs, fGenerics, fReaches, fInside } = fGstrIndex(aoCnptFile);
@@ -847,27 +848,27 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
     for (const [sIdPara, oP] of Object.entries(oF.ooPara)) {
       if (oP.sNameTitle !== 'specific-tree') continue;
       const sB = sIdPara.replace(/sptr[A-Z0-9]?$/, '');
-      const sKeyX = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sIdPara);
-      if (!sKeyX) continue;
-      const oGX = fGntr(sKeyX);
-      const sNameX = (oGX && fHead(oGX.oP.sPara)) || sKeyX;
-      const oSectX = oF.ooSect[sKeyX.split('#')[1]] ?? null;
+      const sKeyG = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sIdPara);
+      if (!sKeyG) continue;
+      const oGntrG = fGntr(sKeyG);
+      const sNameG = (oGntrG && fHead(oGntrG.oP.sPara)) || sKeyG;
+      const oSectG = oF.ooSect[sKeyG.split('#')[1]] ?? null;
       let bAfter = false, bWeb = false;
       for (const sLine of (oP.sPara ?? '').split('\n').map(s => s.trim())) {
         if (/^<br>===/.test(sLine)) { bAfter = true; bWeb = /address/i.test(sLine); continue; }
         if (!bAfter || bWeb || !/^<br>\*/.test(sLine)) continue;
         for (const oR of fRefs(sFile, sLine)) {
-          const sKeyY = fKey(oR.sFile, oR.sId);
-          if (!sKeyY || sKeyY === sKeyX) continue;
-          const oGen = fGenerics(sKeyY);
-          if (oGen && oGen.oSetKey.has(sKeyX)) continue;
-          if (!oGen && fInside(sKeyY, sKeyX)) continue;
-          if (oGen && fReaches(sKeyY, sKeyX)) continue;
+          const sKeyS = fKey(oR.sFile, oR.sId);
+          if (!sKeyS || sKeyS === sKeyG) continue;
+          const oGen = fGenerics(sKeyS);
+          if (oGen && oGen.oSetKey.has(sKeyG)) continue;
+          if (!oGen && fInside(sKeyS, sKeyG)) continue;
+          if (oGen && fReaches(sKeyS, sKeyG)) continue;
           const sWhere = oGen ? `${oGen.oG.sFile}:${ooFile[oGen.oG.sFile].oCnptFile.oMapIdLine?.get(oGen.oG.oP.sNameId) ?? '?'}` : '';
-          aoIssue.push(fIssue('WARN', 'MvrwGstr01', oF.oCnptFile.sNameFile, oSectX,
+          aoIssue.push(fIssue('WARN', 'MvrwGstr01', oF.oCnptFile.sNameFile, oSectG,
             oGen
-              ? `specific_has_generic: "${oR.sText}" is a specific of ${sNameX}, but its generic-tree:: (${sWhere}) does not list it`
-              : `specific_has_generic: "${oR.sText}" (${sKeyY}) is a specific of ${sNameX}, but has no generic-tree::`,
+              ? `gnsp_then_spgn: "${oR.sText}" is a specific of ${sNameG}, but its generic-tree:: (${sWhere}) does not list it`
+              : `gnsp_then_spgn: "${oR.sText}" (${sKeyS}) is a specific of ${sNameG}, but has no generic-tree::`,
             oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
         }
       }
@@ -876,7 +877,7 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
   return aoIssue;
 }
 
-// 🔶 [MvrwGstr02] generic_has_specific: IF specific S has generic G (the-FIRST item of a-"===" group of S's
+// 🔶 [MvrwGstr02] spgn_then_gnsp: IF specific S has generic G (the-FIRST item of a-"===" group of S's
 //   "generic-tree::"; the-next items of the-group are its chain) THEN G has S in its "specific-tree::"
 //   (a-link to S, or a-text item = a-name of S), or S is a-part-section of G.
 //   Skipped: McshEngl head, "...entity:generic", a-"=== label:" group (addressWpg, sibling-of-X: ...), entity itself,
@@ -913,7 +914,7 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
         const oSp = fSptr(sKeyG);
         if (!oSp) {
           aoIssue.push(fIssue('WARN', 'MvrwGstr02', oF.oCnptFile.sNameFile, oSectS,
-            `generic_has_specific: "${sNameS}" has generic ${sNameG}, but ${sNameG} has no specific-tree::`,
+            `spgn_then_gnsp: "${sNameS}" has generic ${sNameG}, but ${sNameG} has no specific-tree::`,
             oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
           continue;
         }
@@ -923,7 +924,7 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
         if (aItem.some(s => { const sT = fStripItem(s); return oNamesS.has(sT) || oNamesS.has(sT.replace(/:generic$/, '')); })) continue;
         const sWhere = `${oSp.sFile}:${ooFile[oSp.sFile].oCnptFile.oMapIdLine?.get(oSp.oP.sNameId) ?? '?'}`;
         aoIssue.push(fIssue('WARN', 'MvrwGstr02', oF.oCnptFile.sNameFile, oSectS,
-          `generic_has_specific: "${sNameS}" has generic ${sNameG}, but its specific-tree:: (${sWhere}) does not list it`,
+          `spgn_then_gnsp: "${sNameS}" has generic ${sNameG}, but its specific-tree:: (${sWhere}) does not list it`,
           oF.oCnptFile.oMapIdLine?.get(sIdPara) ?? null));
       }
     }
@@ -975,8 +976,8 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwId11'], sLabel: '   MvrwId11  Ids gntr_generic_tree_suffix... ', fCheck: () => fCheckIdGntr(aoCnptFile) },
     { aCode: ['MvrwId12'], sLabel: '   MvrwId12  Ids sptr_specific_tree_suffix... ', fCheck: () => fCheckIdSptr(aoCnptFile) },
     { aCode: ['MvrwId13'], sLabel: '   MvrwId13  Ids srtr_structure_suffix... ', fCheck: () => fCheckIdSrtr(aoCnptFile) },
-    { aCode: ['MvrwGstr01'], sLabel: '   MvrwGstr01 specific_has_generic... ', fCheck: () => fCheckGstrSpecificGeneric(aoCnptFile) },
-    { aCode: ['MvrwGstr02'], sLabel: '   MvrwGstr02 generic_has_specific... ', fCheck: () => fCheckGstrGenericSpecific(aoCnptFile) },
+    { aCode: ['MvrwGstr01'], sLabel: '   MvrwGstr01 gnsp_then_spgn... ', fCheck: () => fCheckGstrSpecificGeneric(aoCnptFile) },
+    { aCode: ['MvrwGstr02'], sLabel: '   MvrwGstr02 spgn_then_gnsp... ', fCheck: () => fCheckGstrGenericSpecific(aoCnptFile) },
     { aCode: ['MvrwMain02'], sLabel: '   MvrwMain02 Main-names evolg_evoluting... ', fCheck: () => fCheckMainNameEvolg(aoCnptFile) },
     { aCode: ['MvrwMain03'], sLabel: '   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... ', fCheck: () => fCheckMainNameEvalg(aoCnptFile) },
     { aCode: ['MvrwMain04'], sLabel: '   MvrwMain04 Main-names doing_DOING... ', fCheck: () => fCheckMainNameDoing(aoCnptFile) },

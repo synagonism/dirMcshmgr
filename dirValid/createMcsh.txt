@@ -1,8 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code Hvre04 --file McshCor000015 --fix: C:/dirNodews/dirMcsh
+  createMcsh --dupname --all --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · Hvre04: 1 issues · 1 fixed · 0 skipped
+  0 files written · 0 duplicate name-lines deleted · 0 skipped
   written, no backup: see git diff
-
-=== IDADD (1) — an-element without id got one (Hvre02 heading, Hvre03 <p>, Hvre04 <section>)
-  McshCor000015:164  <section> gets #idMcshExmlenvt (its heading #idMcshExmlenvtH1)

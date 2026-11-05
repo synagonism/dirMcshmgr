@@ -103,6 +103,9 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-22-0.2026-11-05: Hvrw02 title version (N-N-N.YYYY-MM-DD) gets the-file name in front',
+    'createMcsh.mjs.0-21-0.2026-11-05: Hvre06 reads the-href of the-new message: ID not found href="X"',
+    'createMcsh.mjs.0-20-0.2026-11-05: Hvre05 reads the-href of the-new message: FILE not found href="X"',
     'createMcsh.mjs.0-19-0.2026-11-04: faster: the-Mcsh modes do not parse Hitp and run only their rule; a-file is read once',
     'createMcsh.mjs.0-18-0.2026-11-04: Hvre04, a-<section> without id takes the-id of its heading without HN; Hvre02/03/04 got sNameDir as sKindIn, they fixed nothing',
     'createMcsh.mjs.0-17-0.2026-11-04: --code <rule>, a-fix (or NOFIX with why) for every validator rule',
@@ -1503,7 +1506,8 @@ function fPlanTagPair(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: Hvrw01 | Hvrw02: the-<title> gets the-version of the-file's end,
+ * DOING: Hvrw01 | Hvrw02: a-title version "(N-N-N.YYYY-MM-DD)" gets the-file name in front;
+ *   else the-<title> gets the-version of the-file's end,
  *   <p id="idMetaVersion">: its latest "version.N-N-N.YYYY-MM-DD" line, as
  *   "(McshXxx000000.N-N-N.YYYY-MM-DD)". Without such a-line: SKIP.
  */
@@ -1512,6 +1516,20 @@ function fPlanVersion(sRawIn, sNameShortIn, aoIssueIn) {
   const aoEdit = [];
   const aoNote = [];
   if (!aoIssueIn.length) return { aoEdit, aoNote, sRawNew: sRawIn };
+  // a-title version "(N-N-N.YYYY-MM-DD)" without the-file name: the-name is added in front
+  const nTitleNoName = aLine.findIndex(sLine => /<title\b/i.test(sLine));
+  if (nTitleNoName !== -1) {
+    let nCloseNoName = nTitleNoName;
+    while (nCloseNoName < aLine.length - 1 && !/<\/title>/i.test(aLine[nCloseNoName])) nCloseNoName++;
+    const rVerNoName = /\((\d+-\d+-\d+\.\d{4}-\d{2}-\d{2})\)/;
+    for (let nL = nTitleNoName; nL <= nCloseNoName; nL++) {
+      if (!rVerNoName.test(aLine[nL])) continue;
+      const sLineNew = aLine[nL].replace(rVerNoName, `(${sNameShortIn}.$1)`);
+      aoEdit.push({ nAt: nL, nDel: 1, aIns: [sLineNew] });
+      aoNote.push(`TITLE  ${sNameShortIn}:${nL + 1}  <title> version gets the-file name: ${sLineNew.trim()}`);
+      return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+    }
+  }
   const sParaVer = sRawIn.match(/<p id="idMetaVersion">[\s\S]*?<\/p>/)?.[0] ?? '';
   const aoVer = [...sParaVer.matchAll(/version\.(\d+-\d+-\d+)\.(\d{4}-\d{2}-\d{2})/g)]
     .map(aM => ({ sVer: aM[1], sDate: aM[2] })).sort((oA, oB) => oB.sDate.localeCompare(oA.sDate));
@@ -1674,7 +1692,8 @@ function fPlanLink(sRawIn, sNameShortIn, aoIssueIn, sPathFileIn, sNameDirIn, oMa
     if (nL < 0) { fSkip('no line: ' + oIssue.sMessage.slice(0, 80)); continue; }
     const sNow = oMapEdit.get(nL) ?? aLine[nL];
     if (oIssue.sCode === 'Hvre05') {
-      const sHref = oIssue.sMessage.match(/from "[^"]*?\.last\.html\/(.+)"\)/)?.[1] ?? oIssue.sMessage.match(/from "[^/]+\/(.+)"\)/)?.[1];
+      // the-message: Broken link: FILE not found href="X"
+      const sHref = oIssue.sMessage.match(/FILE not found href="([^"]+)"/)?.[1];
       if (!sHref || !sNow.includes(`href="${sHref}"`)) { fSkip(`the-link is not on its line: ${oIssue.sMessage.slice(0, 80)}`); continue; }
       const [sPathPart, sAnchor] = sHref.split('#');
       const aCand = oMapFileIn.get(moPath.posix.basename(sPathPart)) ?? [];
@@ -1686,9 +1705,13 @@ function fPlanLink(sRawIn, sNameShortIn, aoIssueIn, sPathFileIn, sNameDirIn, oMa
       oMapEdit.set(nL, sNow.split(`href="${sHref}"`).join(`href="${sHrefNew}"`));
       aoNote.push(`LINKFX ${sLoc}  ${sHref} -> ${sHrefNew}`);
     } else {
-      const aM = oIssue.sMessage.match(/#(\S+) not found in "([^"]+)"/);
-      if (!aM) { fSkip(oIssue.sMessage.slice(0, 80)); continue; }
-      const [, sAnchor, sTarget] = aM;
+      // the-message: Broken anchor: ID not found href="X#Y" (or "#Y"); the-target file is
+      //   resolved as the-validator does: worldview-relative, this file for "#Y"
+      const sHrefBad = oIssue.sMessage.match(/ID not found href="([^"]*#[^"]*)"/)?.[1];
+      if (!sHrefBad) { fSkip(oIssue.sMessage.slice(0, 80)); continue; }
+      const [sFilePart, sAnchor] = sHrefBad.split('#');
+      const sTarget = moPath.relative(sNameDirIn, sFilePart ? moPath.resolve(sDirFile, sFilePart) : sPathFileIn)
+        .split(moPath.sep).join('/');
       const oSetId = ooSetIdIn.get(sTarget) ?? ooSetIdIn.get(moPath.posix.basename(sTarget));
       const aCand = oSetId ? [...oSetId].filter(sId => sId.toLowerCase() === sAnchor.toLowerCase()) : [];
       if (aCand.length !== 1 || !sNow.includes(`#${sAnchor}"`)) {
