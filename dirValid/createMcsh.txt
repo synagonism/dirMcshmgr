@@ -1,8 +1,16 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code MvrwGstr01 --all --fix: C:/dirNodews/dirMcsh
+  createMcsh --srtr --all --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · MvrwGstr01: 1 issues · 1 fixed · 0 skipped
+  1 files written · 1 structure-ids renamed · 6 lines changed · 0 skipped
   written, no backup: see git diff
 
-=== GNTRADD (1) — a-specific's generic-tree:: got its generic G: in its empty group, else a-new === group (MvrwGstr01)
-  McshNtr000004:672  #idMol013gntr  MoleMacro:generic in its first group  (from McshNtr000004:603)
+=== IDSRTR (1) — a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids
+  McshHlth000002:128  #idBdyHmnatt002structure -> #idBdyHmnatt002srtr  (+3 own ids: H2 dsn nam)
+
+=== LINK (6) — a-line whose ids or links to a-renamed id changed
+  McshHlth000002:128
+  McshHlth000002:129
+  McshHlth000002:131
+  McshHlth000002:134
+  McshHlth000002:135
+  McshHlth000002:139

@@ -17,6 +17,7 @@
  * 🔵 INFO
  * 
  * Checks (Mcsh-specific; Hitp-covered ones removed):
+ * 
  *  MvreFile01  CnptFile missing idOverview section
  * 
  *  MvrwSect01  CnptSect missing description::-paragraph
@@ -26,33 +27,34 @@
  * 
  *  MvreName01  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
  *
- *  MvrwId01  (warning) non-english-letters: id="..." has a letter outside A-Z a-z
- *  MvrwId02  (warning) dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" CnptSect does not end in "dong"
- *  MvrwId03  (warning) space_in_id: id="..." or href="#..." has a space
- *  MvrwId04  (warning) eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" CnptSect does not end in "eval"
- *  MvrwId05  (warning) evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" CnptSect does not end in "evog"
- *  MvrwId06  (warning) irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" CnptSect does not end in "irsc"
- *  MvrwId07  (warning) pntr_parent_tree_suffix: the-id of a "parent-tree::" para does not end in "pntr"
- *  MvrwId08  (warning) chtr_child_tree_suffix: the-id of a "child-tree::" para does not end in "chtr"
- *  MvrwId09  (warning) wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
- *  MvrwId10  (warning) prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
- *  MvrwId11  (warning) gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
- *  MvrwId12  (warning) sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
- *  MvrwId13  (warning) srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
+ *  MvrwId01 non-english-letters: id="..." has a letter outside A-Z a-z
+ *  MvrwId02 dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" CnptSect does not end in "dong"
+ *  MvrwId03 space_in_id: id="..." or href="#..." has a space
+ *  MvrwId04 eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" CnptSect does not end in "eval"
+ *  MvrwId05 evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" CnptSect does not end in "evog"
+ *  MvrwId06 irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" CnptSect does not end in "irsc"
+ *  MvrwId07 pntr_parent_tree_suffix: the-id of a "parent-tree::" para does not end in "pntr"
+ *  MvrwId08 chtr_child_tree_suffix: the-id of a "child-tree::" para does not end in "chtr"
+ *  MvrwId09 wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
+ *  MvrwId10 prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
+ *  MvrwId11 gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
+ *  MvrwId12 sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
+ *  MvrwId13 srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
  *
- *  MvreMain01 (error) no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
+ *  MvreMain01 no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
- *  MvrwMain02 (warning) evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
+ *  MvrwMain02 evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
  *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
- *  MvrwMain03 (warning) evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
- *             is not Xevaln, of an "evaluating of X" | "X'evaluating" CnptSect is not Xevalg (capital first, no apostrophe)
- *  MvrwMain04 (warning) doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" CnptSect
+ *  MvrwMain03 evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
+ *             is not Xevaln, of an "evaluating of X" | "X'evaluating" CnptSect is not Xevalg (capital first, no apostrophe;
+ *             a-genericSpecific X starts with its small-letter word: foodGingerevaln)
+ *  MvrwMain04 doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" CnptSect
  *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
- *  MvrwMain05 (warning) infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
+ *  MvrwMain05 infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
  *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
- *  MvrwMain06 (warning) srtr_structure_main: the-main-name of a "structure of X" | "X'structure" CnptSect
+ *  MvrwMain06 srtr_structure_main: the-main-name of a "structure of X" | "X'structure" CnptSect
  *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
- *  MvrwMain07 (warning) attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
+ *  MvrwMain07 attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
  *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
  *             or is badly written
  *
@@ -70,6 +72,7 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-46-0.2026-11-06: MvrwMain02-06 a-genericSpecific main-name starts small: foodGingerevaln',
     'structuralMcsh.js.0-45-0.2026-11-05: MvrwGstr01 gnsp_then_spgn (G, S), MvrwGstr02 spgn_then_gnsp',
     'structuralMcsh.js.0-44-0.2026-11-04: faster: fFindCnpt once per file, MvrwMisc01 skips a-para without {',
     'structuralMcsh.js.0-43-0.2026-11-04: fRunChecksMcsh aCodeIn: only the-checks of these rules',
@@ -554,7 +557,8 @@ function fCheckMainNameHyphen(aoCnptFile) {
 
 /**
  * DOING: the-main-name of a-CnptSect whose title matches rTitle ends in sSuffix, without an-apostrophe
- *   before it, and starts with a-capital letter (a-multiword attribute): Humanevolg, NOT humanevolg | Human'evolg.
+ *   before it, and starts with a-capital letter (a-multiword attribute): Humanevolg, NOT humanevolg | Human'evolg;
+ *   a-genericSpecific name starts with its small-letter word: foodGingerevaln (word "food" + "Ginger").
  * OUTPUT: array of WARN-issues with code sCode.
  */
 function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
@@ -564,7 +568,9 @@ function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
     for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
       const sMain = oSect.sNameFormal ?? '';
-      const bSuffix = sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix), bCapital = /^[A-Z]/.test(sMain);
+      // capital first, unless it starts with a-word of a-genericSpecific name: foodGingerevaln
+      const bSuffix = sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix),
+        bCapital = /^[A-Z]/.test(sMain) || /^[a-z]+[A-Z]/.test(sMain);
       if (bSuffix && bCapital) continue;
       // the-line of the-main-name inside the-name::-para, when the-para is known
       const oParaName = fFindParaAll(oSect, 'name')[0];

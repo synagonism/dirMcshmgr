@@ -1429,12 +1429,18 @@ async function fRunValidRule(fStatusIn, sScopeIn = 'file') {
   }));
   oQp.placeholder = sCmd + ': ' + sBase + ': choose rule';
   oQp.matchOnDescription = true;
-  const oItemLast = oQp.items.find((oIn) => oIn.sCode === sCodeLast);
-  if (oItemLast) oQp.activeItems = [oItemLast];
+  const nItemLast = oQp.items.findIndex((oIn) => oIn.sCode === sCodeLast);
   const oRule = await new Promise((fResolve) => {
     oQp.onDidAccept(() => { fResolve(oQp.selectedItems[0]); oQp.hide(); });
     oQp.onDidHide(() => { fResolve(undefined); oQp.dispose(); });
     oQp.show();
+    if (nItemLast === -1) return;
+    // the-last chosen in the-MIDDLE of the-list: the-quick-pick scrolls only as far as
+    //   needed, so the-item half a-page BELOW is made active first (that scrolls it to
+    //   the-bottom), then the-chosen one (already visible: no scroll)
+    const nRowHalf = 5;
+    oQp.activeItems = [oQp.items[Math.min(nItemLast + nRowHalf, oQp.items.length - 1)]];
+    setTimeout(() => { oQp.activeItems = [oQp.items[nItemLast]]; }, 50);
   });
   if (!oRule) return;                                     // Escape: nothing
   sCodeLast = oRule.sCode;
