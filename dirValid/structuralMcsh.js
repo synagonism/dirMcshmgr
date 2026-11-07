@@ -43,6 +43,10 @@
  *
  *  MvreMain01 no-hyphen: a-main-name (the-text after "!⇒") has a-hyphen "-": use underscores;
  *             createMcsh.mjs --mainname fixes it
+ *  MvrwMain01 Attrbase: the-main-names of the-attributes of a-concept with Attrbase B begin with B
+ *             (Attrbase "McshEngl.B!Attrbase,"; attributes: its direct parts with a-main-name, "Y of X" and "X.Y");
+ *             exempt: an-alias that begins with B ("McshEngl.Systsector!⇒sector_vs_system,") keeps its own
+ *             main-name; SciX | DissX | RltnX need such an-alias; createMcsh fixes the-rest
  *  MvrwMain02 evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
  *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
  *  MvrwMain03 evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
@@ -72,6 +76,8 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-51-0.2026-11-07: MvrwMain01 attributes: every direct part with a-main-name, specifics "X.Y" too; an-alias B… exempts',
+    'structuralMcsh.js.0-50-0.2026-11-07: MvrwMain01 Attrbase',
     'structuralMcsh.js.0-49-0.2026-11-07: MvrwSect01..04 skip also the-clsText section itself, not only its parts',
     'structuralMcsh.js.0-48-0.2026-11-07: MvrwSect01..04 a-link section is also "X ( link!=Y )"',
     'structuralMcsh.js.0-47-0.2026-11-06: MvrwSect01..04 skip the-sections inside a <section class="clsText"> (a-displayed text)',
@@ -664,6 +670,61 @@ function fCheckMainNameSrtr(aoCnptFile) {
     /^(\d+_)?structure of |^[^\s.']+'structure$/i, 'srtr');
 }
 
+// 🔶 [MvrwMain01] Attrbase: IF a-concept has Attrbase B ("McshEngl.B!Attrbase[!⇒M],"),
+//   THEN the-main-names of its attributes begin with B: system (B Syst) → Systnode, Systsrtr,
+//   NOT Systemdoing | sector_vs_system.
+//   Its attributes: its direct part-sections (of a-file-concept: the-top sections) with a-main-name,
+//   "Y of X" | "X'Y" AND its specifics "X.Y"; NOT its tree-views (they have no main-name),
+//   NOT link sections, NOT the-parts of parts, NOT clsText sections.
+//   EXEMPT: a-section with an-alias that begins with B keeps its own main-name:
+//   "McshEngl.Systsector!⇒sector_vs_system,". SciX | DissX | RltnX… always need such an-alias
+//   (a-prefix from the-concept's own main-name is not "own": SciLago'organization → Lagosci…).
+const rMainPrefixOwn = /^(Sci|Diss|Rltn)[A-Z]/;
+function fCheckMainNameAttrbaseBegin(aoCnptFile) {
+  const aoIssue = [];
+  // the-Attrbase B of a-concept, from its English names: "B!Attrbase" | "B!Attrbase!⇒M"
+  const fFindBase = oCnptIn => {
+    const oName = (oCnptIn.ooNameLago?.oLagoEngl?.aoName ?? []).find(o => /!Attrbase\b/.test(o.sNameFull ?? ''));
+    return oName ? oName.sNameFull.split('!')[0].trim() : '';
+  };
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    const aoSect = fFindSectAll(oCnptFile).filter(oSect => oSect.sType === 'CnptSect');
+    const aoCnptBase = [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile, 'CnptSect')]
+      .map(oCnpt => ({ oCnpt, sBase: fFindBase(oCnpt) })).filter(o => o.sBase);
+    for (const { oCnpt, sBase } of aoCnptBase) {
+      const sIdWhole = oCnpt.sType === 'CnptFile' ? null : oCnpt.sNameId;
+      // the-main-name of the-concept: SciLago'organization takes "Sci" from it, it is NOT its own prefix
+      const sMainCnpt = oCnpt.ooNameLago?.oLagoEngl?.sNameFormal ?? '';
+      for (const oSect of aoSect) {
+        if ((oSect.sIdWhole_elmt ?? null) !== sIdWhole || oSect.sNameId === 'idOverview') continue;
+        const sTitle = (oSect.sNameTitle ?? '').trim();
+        // a-link section is described elsewhere
+        if (rSectLink.test(sTitle)) continue;
+        // only a-section WITH a-main-name ("X!⇒M"): a-tree-view has names but no main-name
+        if (!(oSect.ooNameLago?.oLagoEngl?.aoName ?? []).some(o => o.sNameFormal)) continue;
+        const sMain = oSect.sNameFormal ?? '';
+        if (!sMain || sMain.startsWith(sBase)) continue;
+        // an-alias that begins with B ("Systsector!⇒sector_vs_system"): it keeps its own main-name
+        if ((oSect.ooNameLago?.oLagoEngl?.aoName ?? []).some(o => (o.sName ?? '').startsWith(sBase))) continue;
+        const bOwn = rMainPrefixOwn.test(sMain) && !(sMainCnpt && sMain.startsWith(sMainCnpt));
+        // the-line of the-main-name inside the-name::-para
+        const oParaName = fFindParaAll(oSect, 'name')[0];
+        const nLinePara = oParaName ? oCnptFile.oMapIdLine.get(oParaName.sNameId) ?? null : null;
+        const nOffset = String(oParaName?.sPara ?? '').split('\n').findIndex(sLine => sLine.includes(`!⇒${sMain},`));
+        const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset
+          : nLinePara ?? oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null;
+        aoIssue.push(fIssue('WARN', 'MvrwMain01', oCnptFile.sNameFile, oSect,
+          `Attrbase: main-name "McshEngl.${sMain}" of "${sTitle}" ` +
+          (bOwn ? `has no alias beginning with the-Attrbase "${sBase}"`
+            : `does not begin with the-Attrbase "${sBase}"`) + ` of concept "${sMainCnpt}"`,
+          nLine));
+      }
+    }
+  }
+  return aoIssue;
+}
+
 // 🔶 [MvrwMain07] attrbase_line: the-main-names of the-attributes of a-concept are-created of
 //   a-base plus text, the-Attrbase. It is-denoted in the-name::-para of the-concept with
 //   "McshEngl.B!Attrbase," (B = the-main-name) or "McshEngl.B!Attrbase!⇒M," (B another name),
@@ -1012,6 +1073,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwId13'], sLabel: '   MvrwId13  Ids srtr_structure_suffix... ', fCheck: () => fCheckIdSrtr(aoCnptFile) },
     { aCode: ['MvrwGstr01'], sLabel: '   MvrwGstr01 gnsp_then_spgn... ', fCheck: () => fCheckGstrSpecificGeneric(aoCnptFile) },
     { aCode: ['MvrwGstr02'], sLabel: '   MvrwGstr02 spgn_then_gnsp... ', fCheck: () => fCheckGstrGenericSpecific(aoCnptFile) },
+    { aCode: ['MvrwMain01'], sLabel: '   MvrwMain01 Main-names Attrbase... ', fCheck: () => fCheckMainNameAttrbaseBegin(aoCnptFile) },
     { aCode: ['MvrwMain02'], sLabel: '   MvrwMain02 Main-names evolg_evoluting... ', fCheck: () => fCheckMainNameEvolg(aoCnptFile) },
     { aCode: ['MvrwMain03'], sLabel: '   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... ', fCheck: () => fCheckMainNameEvalg(aoCnptFile) },
     { aCode: ['MvrwMain04'], sLabel: '   MvrwMain04 Main-names doing_DOING... ', fCheck: () => fCheckMainNameDoing(aoCnptFile) },

@@ -112,6 +112,8 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-29-0.2026-11-07: --code MvrwMain01 a-specific WRest → BRest (SystDynaSelf → DynaSelf)',
+    'createMcsh.mjs.0-28-0.2026-11-07: --code MvrwMain01 attrbase_begin: an-attribute main-name W\'rest → B+rest',
     'createMcsh.mjs.0-27-0.2026-11-06: --mainname X_ only a-synonym "X_!⇒X-": swapped to "X-!⇒X_", not skipped',
     'createMcsh.mjs.0-26-0.2026-11-06: MvrwMain02-06 no !Attrbase: the-main-name of the-whole + suffix; genericSpecific stays small',
     'createMcsh.mjs.0-25-0.2026-11-05: --code MvrwGstr01 "does not list it": G goes in the-generic-tree:: of S (its empty group, else a-new === group)',
@@ -175,7 +177,7 @@ const
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
     DUPNAME:  'a-name-line written twice in ONE para: the-second deleted (MvreName01)',
-    MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain02..06 suffix)',
+    MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
     IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids',
     LINK:     'a-line whose ids or links to a-renamed id changed'
@@ -1199,6 +1201,7 @@ const ooFixCode = {
   Hvrw05:   { sKind: 'line', fPlan: (...a) => fPlanTagCase(...a) },
   Hvrw06:   { sKind: 'line', fPlan: (...a) => fPlanAttrQuote(...a) },
   MvrwSect04: { sKind: 'line', fPlan: (...a) => fPlanNameEmpty(...a) },
+  MvrwMain01: { sKind: 'main' },
   MvrwMain02: { sKind: 'main', sSuffix: 'evolg' },
   MvrwMain03: { sKind: 'main' },
   MvrwMain04: { sKind: 'main', sSuffix: 'doing' },
@@ -2309,8 +2312,45 @@ async function fMain() {
           }
           return nInPara > 0 && nAll === nInPara;
         };
+        // MvrwMain01: every file's text, read once, for "is X' a-name already"
+        let oMapRawAll = null;
+        const fIsNameFree = (sNameIn, sIdSectIn) => {
+          oMapRawAll ??= new Map(fFindFileAll(sNameDir).map(sPath => [sPath, sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8')]));
+          const rName = new RegExp(`(McshEngl\\.|!⇒)${sNameIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[,!]`, 'g');
+          const oName = fFindMainOfSect(aLineMain, sIdSectIn);
+          const nInPara = oName ? (aLineMain.slice(oName.nName, oName.nNameEnd + 1).join('\n').match(rName) ?? []).length : 0;
+          let nAll = 0;
+          for (const sRawOne of oMapRawAll.values()) nAll += (sRawOne.match(rName) ?? []).length;
+          return nAll === nInPara;
+        };
         for (const oIssue of aoIssue) {
           const sMain = oIssue.sMessage.match(/main-name "McshEngl\.([^"]+)"/)?.[1];
+          if (sCodeOne === 'MvrwMain01') {
+            // B + the-rest after the-concept's main-name W: bodyHumn'16_weight (W bodyHumn, B Hmbd) → Hmbdweight
+            const [, sBase, sMainCnpt] = oIssue.sMessage.match(/the-Attrbase "([^"]+)" of concept "([^"]*)"/) ?? [];
+            if (!sMain || !sBase || oIssue.sMessage.includes('has no alias')) {
+              fSkipMain(oIssue, `"${sMain}" keeps its own prefix but needs an-alias beginning with "${sBase}"`);
+              continue;
+            }
+            let sRest = '';
+            if (sMainCnpt && sMain.toLowerCase().startsWith(sMainCnpt.toLowerCase())) sRest = sMain.slice(sMainCnpt.length);
+            else sRest = ['doing', 'evolg', 'evaln', 'evalg', 'infrsc', 'srtr'].find(sSuf => sMain.endsWith(sSuf)) ?? '';
+            // without the-order number: '16_weight → weight, 'att077_odor → odor
+            sRest = sRest.replace(/^['_/.]+/, '').replace(/^(att)?\d+_/, '');
+            // a-specific keeps its capital: SystDynaSelf (W SystDyna, B Dyna) → DynaSelf; NOT B + SciX | RltnX
+            if (!sRest || !/^[A-Za-z][A-Za-z0-9_]*$/.test(sRest) || /^(Sci|Diss|Rltn)[A-Z]/.test(sRest)) {
+              fSkipMain(oIssue, `"${sMain}" does not begin with the-concept's main-name "${sMainCnpt}" + a-word`);
+              continue;
+            }
+            const sMainNew = sBase + sRest;
+            if (!fIsNameFree(sMainNew, oIssue.sIdConcept)) {
+              fSkipMain(oIssue, `"${sMain}" → "${sMainNew}": "${sMainNew}" is a-name already`);
+              continue;
+            }
+            oSetMainAlways.add(`Engl|${sMain}`);
+            oMapMain.set(`Engl|${sMain}`, sMainNew);
+            continue;
+          }
           const sSuffix = oIssue.sMessage.split('_')[0];
           let sBase = fFindAttrbase(aLineMain, oIssue.sIdConcept);
           // no !Attrbase: the-main-name of its whole (nerveCranial → nerveCranialinfrsc)

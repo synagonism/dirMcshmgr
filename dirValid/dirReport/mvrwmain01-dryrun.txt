@@ -1,0 +1,306 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --code MvrwMain01 --all dry-run: .
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  10 files to write · MvrwMain01: 119 issues · 222 fixed · 73 skipped
+  nothing written: add --fix to write
+
+=== SKIP (73) — skipped, with why: fix by hand
+  McshCor000003:158  "attribute" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:501  "RltnEntityAttribute" keeps its own prefix but needs an-alias beginning with "Entt": give the-main-name by hand
+  McshCor000003:5388  "definite" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:5593  "definiteNo" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:5738  "body" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:5932  "bodyNo" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6276  "doingNo" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6326  "unit" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6413  "humanNo" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6504  "mentalNo" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6522  "young" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000003:6658  "example" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshCor000011:425  "sector_vs_system" does not begin with the-concept's main-name "system" + a-word: give the-main-name by hand
+  McshCor000011:456  "SciSystem" keeps its own prefix but needs an-alias beginning with "Syst": give the-main-name by hand
+  McshEdu000010:101  "SciLago/RltnEncoding" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:123  "SciLago/RltnDecoding" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:591  "SciName" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:1214  "SciGstr" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:1230  "SciSpch" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:1314  "SciText" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:1630  "WrkrSciLang" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000014:834  "SciEvonomics" keeps its own prefix but needs an-alias beginning with "Econsci": give the-main-name by hand
+  McshHlth000002:1139  "SystOgans" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:1403  "organ" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:3929  "tissue" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:6550  "SystCirculatory" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:8307  "SystIntegumentary" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:8841  "SystEndocrine" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:8940  "SystRespiratory" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:9837  "SystDigestive" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:11246  "SystUrinary" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:12178  "SystReproductive" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:12351  "SystReproductiveMale" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:12655  "SystReproductiveFemale" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:12971  "SystExcretory" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:13094  "SystImmune" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000008:54  "disorder" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:77  "disorderNo" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:473  "OgznHealth" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:1678  "socialNo_health" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHmn000002:166  "Hmnsfr" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:335  "Hmnproduct" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:626  "Hmnplace" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2332  "personality" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2497  "identificationHumn" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:5282  "manwoman" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshStn000007:179  "SoctOgsm'language" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000007:215  "SystGvcSocOgsm" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000007:317  "societyHmnN" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000007:389  "societyHntn" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000014:237  "admnHshd" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:414  "cscHousehold" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:853  "family'relation_to_ogznCsmg" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:1071  "sectorCsmg" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshTchInf000005:621  "lagCpgmNo" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:667  "lagCpgmBo" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:684  "lagCdat" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:731  "lagBnr" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:855  "lagChar" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:871  "lagDtrp" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:946  "Tdoclago" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:1350  "lagMrkp" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:1411  "lagFile" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000018:5711  "DcontractEth" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:10617  "DappEth" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:11007  "Algoethrbkcn" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:12846  "DnEth.TEST" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000021:331  "Deos_RAM" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:376  "Deos_CPU" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:685  "Deos_account" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:2541  "DcontractEos" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:2813  "Deos_Dapp" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:3437  "Deos_mainnet" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+
+=== MAINNAME (176) — a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)
+  McshCor000003:5699  McshEngl.entityDefined  ->  EnttDefined
+  McshCor000003:5700  McshEngl.defined-entity!⇒entityDefined  ->  defined-entity!⇒EnttDefined
+  McshCor000003:5701  McshEngl.entity.defined!⇒entityDefined  ->  entity.defined!⇒EnttDefined
+  McshCor000003:5702  McshEngl.entity-with-definition!⇒entityDefined  ->  entity-with-definition!⇒EnttDefined
+  McshCor000003:5718  McshEngl.entityDefinedNo  ->  EnttDefinedNo
+  McshCor000003:5719  McshEngl.entity.definedNo!⇒entityDefinedNo  ->  entity.definedNo!⇒EnttDefinedNo
+  McshCor000003:5720  McshEngl.entity-without-definition!⇒entityDefinedNo  ->  entity-without-definition!⇒EnttDefinedNo
+  McshCor000003:5721  McshEngl.undefined-entity!⇒entityDefinedNo  ->  undefined-entity!⇒EnttDefinedNo
+  McshCor000003:6572  McshEngl.entityYoungNo  ->  EnttYoungNo
+  McshCor000003:6573  McshEngl.entity.youngNo!⇒entityYoungNo  ->  entity.youngNo!⇒EnttYoungNo
+  McshCor000023:267  McshEngl.self-organized-system!⇒SystDynaSelf  ->  self-organized-system!⇒DynaSelf
+  McshCor000023:268  McshEngl.SystDynaSelf!=self-organized-system  ->  DynaSelf!=self-organized-system
+  McshCor000023:269  McshEngl.SystDyna.self_001!⇒SystDynaSelf  ->  SystDyna.self_001!⇒DynaSelf
+  McshCor000023:270  McshEngl.SystDyna.001_self!⇒SystDynaSelf  ->  SystDyna.001_self!⇒DynaSelf
+  McshCor000023:271  McshEngl.self-dynamic-system!⇒SystDynaSelf  ->  self-dynamic-system!⇒DynaSelf
+  McshCor000023:299  McshEngl.non-self-organized-system!⇒SystDynaSelfNo  ->  non-self-organized-system!⇒DynaSelfNo
+  McshCor000023:300  McshEngl.SystDynaSelfNo!=non-self-organized-system  ->  DynaSelfNo!=non-self-organized-system
+  McshCor000023:301  McshEngl.SystDyna.selfNo_002!⇒SystDynaSelfNo  ->  SystDyna.selfNo_002!⇒DynaSelfNo
+  McshCor000023:302  McshEngl.SystDyna.002_selfNo!⇒SystDynaSelfNo  ->  SystDyna.002_selfNo!⇒DynaSelfNo
+  McshEdu000010:1330  McshEngl.SciLago/classification  ->  Lagosciclassification
+  McshEdu000010:1331  McshEngl.SciLago'science_of_language_classification!⇒SciLago/classification  ->  SciLago'science_of_language_classification!⇒Lagosciclassification
+  McshEdu000010:1498  McshEngl.SciLago.019_science_of_language_and_society  ->  Lagosciscience_of_language_and_society
+  McshEdu000010:1499  McshEngl.SciLago'science_of_language_and_society!⇒SciLago.019_science_of_language_and_society  ->  SciLago'science_of_language_and_society!⇒Lagosciscience_of_language_and_society
+  McshEdu000010:2303  McshEngl.SciLagoCognitive  ->  LagosciCognitive
+  McshEdu000010:2304  McshEngl.cognitive-linguistics!⇒SciLagoCognitive  ->  cognitive-linguistics!⇒LagosciCognitive
+  McshEdu000010:2305  McshEngl.SciLago.002_cognitive_linguistics!⇒SciLagoCognitive  ->  SciLago.002_cognitive_linguistics!⇒LagosciCognitive
+  McshEdu000010:2306  McshEngl.SciLago.cognitive_linguistics!⇒SciLagoCognitive  ->  SciLago.cognitive_linguistics!⇒LagosciCognitive
+  McshEdu000014:397  McshEngl.capitalist-economics!⇒SciEconCptl  ->  capitalist-economics!⇒EconsciCptl
+  McshEdu000014:398  McshEngl.SciEconCptl!=capitalist-economics  ->  EconsciCptl!=capitalist-economics
+  McshEdu000014:399  McshEngl.mainstream-economics!⇒SciEconCptl  ->  mainstream-economics!⇒EconsciCptl
+  McshEdu000014:400  McshEngl.SciEcon.008_capitalist!⇒SciEconCptl  ->  SciEcon.008_capitalist!⇒EconsciCptl
+  McshEdu000014:401  McshEngl.SciEcon.capitalist!⇒SciEconCptl  ->  SciEcon.capitalist!⇒EconsciCptl
+  McshEdu000014:740  McshEngl.meta-capitalist-economics!⇒SciEconCptlMeta  ->  meta-capitalist-economics!⇒EconsciCptlMeta
+  McshEdu000014:741  McshEngl.SciEconCptlMeta!=meta-capitalist-economics  ->  EconsciCptlMeta!=meta-capitalist-economics
+  McshEdu000014:742  McshEngl.post-capitalist-economics!⇒SciEconCptlMeta  ->  post-capitalist-economics!⇒EconsciCptlMeta
+  McshEdu000014:743  McshEngl.SciEcon.009_capitalistAfter!⇒SciEconCptlMeta  ->  SciEcon.009_capitalistAfter!⇒EconsciCptlMeta
+  McshEdu000014:744  McshEngl.SciEcon.capitalistAfter!⇒SciEconCptlMeta  ->  SciEcon.capitalistAfter!⇒EconsciCptlMeta
+  McshEdu000014:882  McshEngl.complexity-economics!⇒SciEconClxt  ->  complexity-economics!⇒EconsciClxt
+  McshEdu000014:883  McshEngl.SciEconClxt!=complexity-economics  ->  EconsciClxt!=complexity-economics
+  McshEdu000014:884  McshEngl.SciEcon.002_complexity!⇒SciEconClxt  ->  SciEcon.002_complexity!⇒EconsciClxt
+  McshEdu000014:885  McshEngl.SciEcon.complexity!⇒SciEconClxt  ->  SciEcon.complexity!⇒EconsciClxt
+  McshEdu000014:961  McshEngl.computational-economics!⇒SciEconCmpl  ->  computational-economics!⇒EconsciCmpl
+  McshEdu000014:962  McshEngl.SciEconCmpl!=computational-economics  ->  EconsciCmpl!=computational-economics
+  McshEdu000014:963  McshEngl.SciEcon.001_computational!⇒SciEconCmpl  ->  SciEcon.001_computational!⇒EconsciCmpl
+  McshEdu000014:964  McshEngl.SciEcon.computational!⇒SciEconCmpl  ->  SciEcon.computational!⇒EconsciCmpl
+  McshEdu000014:1126  McshEngl.behavioral-economics!⇒SciEconBehav  ->  behavioral-economics!⇒EconsciBehav
+  McshEdu000014:1127  McshEngl.SciEconBehav!=behavioral-economics  ->  EconsciBehav!=behavioral-economics
+  McshEdu000014:1128  McshEngl.SciEcon.006_behavioral!⇒SciEconBehav  ->  SciEcon.006_behavioral!⇒EconsciBehav
+  McshEdu000014:1129  McshEngl.SciEcon.behavioral!⇒SciEconBehav  ->  SciEcon.behavioral!⇒EconsciBehav
+  McshEdu000014:1232  McshEngl.evolutionary-economics!⇒SciEconEvol  ->  evolutionary-economics!⇒EconsciEvol
+  McshEdu000014:1233  McshEngl.SciEconEvol!=evolutionary-economics  ->  EconsciEvol!=evolutionary-economics
+  McshEdu000014:1234  McshEngl.SciEcon.005_evolutionary!⇒SciEconEvol  ->  SciEcon.005_evolutionary!⇒EconsciEvol
+  McshEdu000014:1235  McshEngl.SciEcon.evolutionary!⇒SciEconEvol  ->  SciEcon.evolutionary!⇒EconsciEvol
+  McshEdu000014:1309  McshEngl.institutional-economics!⇒SciEconInst  ->  institutional-economics!⇒EconsciInst
+  McshEdu000014:1310  McshEngl.SciEconInst!=institutional-economics  ->  EconsciInst!=institutional-economics
+  McshEdu000014:1311  McshEngl.SciEcon.007_institutional!⇒SciEconInst  ->  SciEcon.007_institutional!⇒EconsciInst
+  McshEdu000014:1312  McshEngl.SciEcon.institutional!⇒SciEconInst  ->  SciEcon.institutional!⇒EconsciInst
+  McshEdu000014:1388  McshEngl.technocratic-economics!⇒SciEconTech  ->  technocratic-economics!⇒EconsciTech
+  McshEdu000014:1389  McshEngl.SciEconTech!=technocratic-economics  ->  EconsciTech!=technocratic-economics
+  McshEdu000014:1390  McshEngl.SciEcon.010_technocratic!⇒SciEconTech  ->  SciEcon.010_technocratic!⇒EconsciTech
+  McshEdu000014:1391  McshEngl.SciEcon.technocratic!⇒SciEconTech  ->  SciEcon.technocratic!⇒EconsciTech
+  McshEdu000014:1458  McshEngl.Marxian-economics!⇒SciEconMarx  ->  Marxian-economics!⇒EconsciMarx
+  McshEdu000014:1459  McshEngl.SciEconMarx!=Marxian-economics  ->  EconsciMarx!=Marxian-economics
+  McshEdu000014:1460  McshEngl.SciEcon.015_Marxian!⇒SciEconMarx  ->  SciEcon.015_Marxian!⇒EconsciMarx
+  McshEdu000014:1461  McshEngl.SciEcon.Marxian!⇒SciEconMarx  ->  SciEcon.Marxian!⇒EconsciMarx
+  McshHlth000008:861  McshEngl.health'att010_right_to_health  ->  Hlthright_to_health
+  McshHlth000008:862  McshEngl.health'right_to_health!⇒health'att010_right_to_health  ->  health'right_to_health!⇒Hlthright_to_health
+  McshHlth000008:898  McshEngl.health'att008_public_spending  ->  Hlthpublic_spending
+  McshHlth000008:899  McshEngl.health'public_spending!⇒health'att008_public_spending  ->  health'public_spending!⇒Hlthpublic_spending
+  McshHlth000008:1052  McshEngl.health'human  ->  Hlthhuman
+  McshHlth000008:1053  McshEngl.health'01_human!⇒health'human  ->  health'01_human!⇒Hlthhuman
+  McshHlth000008:1054  McshEngl.health'att001_human!⇒health'human  ->  health'att001_human!⇒Hlthhuman
+  McshHlth000008:1422  McshEngl.evaluation-of-health!⇒Healthevaln  ->  evaluation-of-health!⇒Hlthevaln
+  McshHlth000008:1423  McshEngl.Healthevaln!=evaluation-of-health  ->  Hlthevaln!=evaluation-of-health
+  McshHlth000008:1424  McshEngl.Healthevalg!⇒Healthevaln  ->  Healthevalg!⇒Hlthevaln
+  McshHlth000008:1425  McshEngl.health'att011_evaluation!⇒Healthevaln  ->  health'att011_evaluation!⇒Hlthevaln
+  McshHlth000008:1426  McshEngl.health'evaluation!⇒Healthevaln  ->  health'evaluation!⇒Hlthevaln
+  McshHlth000008:1455  McshEngl.evoluting-of-health!⇒Healthevolg  ->  evoluting-of-health!⇒Hlthevolg
+  McshHlth000008:1456  McshEngl.Healthevolg!=evoluting-of-health  ->  Hlthevolg!=evoluting-of-health
+  McshHlth000008:1457  McshEngl.health'evoluting!⇒Healthevolg  ->  health'evoluting!⇒Hlthevolg
+  McshHlth000008:1555  McshEngl.body-health!⇒healthBody  ->  body-health!⇒HlthBody
+  McshHlth000008:1556  McshEngl.healthBody!=body-health  ->  HlthBody!=body-health
+  McshHlth000008:1557  McshEngl.health.body!⇒healthBody  ->  health.body!⇒HlthBody
+  McshHlth000008:1558  McshEngl.health.physical!⇒healthBody  ->  health.physical!⇒HlthBody
+  McshHlth000008:1559  McshEngl.physical-health!⇒healthBody  ->  physical-health!⇒HlthBody
+  McshHlth000008:1594  McshEngl.health.mental  ->  Hlthmental
+  McshHlth000008:1595  McshEngl.health.mind!⇒health.mental  ->  health.mind!⇒Hlthmental
+  McshHlth000008:1596  McshEngl.health.psyche!⇒health.mental  ->  health.psyche!⇒Hlthmental
+  McshHlth000008:1597  McshEngl.healthMind!⇒health.mental  ->  healthMind!⇒Hlthmental
+  McshHlth000008:1598  McshEngl.mental-health!⇒health.mental  ->  mental-health!⇒Hlthmental
+  McshHlth000008:1639  McshEngl.social-health!⇒healthSocial  ->  social-health!⇒HlthSocial
+  McshHlth000008:1640  McshEngl.healthSocial!=social-health  ->  HlthSocial!=social-health
+  McshHlth000008:1641  McshEngl.health.social!⇒healthSocial  ->  health.social!⇒HlthSocial
+  McshHmn000002:735  McshEngl.human'appearance  ->  Humnappearance
+  McshHmn000002:736  McshEngl.human'10_physical_appearance!⇒human'appearance  ->  human'10_physical_appearance!⇒Humnappearance
+  McshHmn000002:737  McshEngl.human'att048_physical_appearance!⇒human'appearance  ->  human'att048_physical_appearance!⇒Humnappearance
+  McshHmn000002:738  McshEngl.human'outlook!⇒human'appearance  ->  human'outlook!⇒Humnappearance
+  McshHmn000002:739  McshEngl.human'physical_appearance!⇒human'appearance  ->  human'physical_appearance!⇒Humnappearance
+  McshHmn000002:740  McshEngl.physical-appearance-of-human!⇒human'appearance  ->  physical-appearance-of-human!⇒Humnappearance
+  McshHmn000002:5213  McshEngl.humanMale  ->  HumnMale
+  McshHmn000002:5214  McshEngl.human.007_male!⇒humanMale  ->  human.007_male!⇒HumnMale
+  McshHmn000002:5215  McshEngl.human.male!⇒humanMale  ->  human.male!⇒HumnMale
+  McshHmn000002:5217  McshEngl.hoUmo!⇒humanMale  ->  hoUmo!⇒HumnMale
+  McshHmn000002:5231  McshEngl.humanFemale  ->  HumnFemale
+  McshHmn000002:5232  McshEngl.human.008_female!⇒humanFemale  ->  human.008_female!⇒HumnFemale
+  McshHmn000002:5233  McshEngl.human.female!⇒humanFemale  ->  human.female!⇒HumnFemale
+  McshHmn000002:5570  McshEngl.human.centenarian  ->  Humncentenarian
+  McshHmn000002:5571  McshEngl.centenarian!⇒human.centenarian  ->  centenarian!⇒Humncentenarian
+  McshHmn000002:5572  McshEngl.human.age.100plus!⇒human.centenarian  ->  human.age.100plus!⇒Humncentenarian
+  McshHmn000002:5573  McshEngl.human.100plus!⇒human.centenarian  ->  human.100plus!⇒Humncentenarian
+  McshStn000014:870  McshEngl.info-resource--of-OgznCsmg!⇒OgznCsmginfrsc  ->  info-resource--of-OgznCsmg!⇒Hshdinfrsc
+  McshStn000014:871  McshEngl.OgznCsmginfrsc!=info-resource--of-OgznCsmg  ->  Hshdinfrsc!=info-resource--of-OgznCsmg
+  McshStn000014:872  McshEngl.OgznCsmg'info_resource!⇒OgznCsmginfrsc  ->  OgznCsmg'info_resource!⇒Hshdinfrsc
+  McshStn000014:895  McshEngl.doing-of-OgznCsmg!⇒OgznCsmgdoing  ->  doing-of-OgznCsmg!⇒Hshddoing
+  McshStn000014:896  McshEngl.OgznCsmgdoing!=doing-of-OgznCsmg  ->  Hshddoing!=doing-of-OgznCsmg
+  McshStn000014:897  McshEngl.OgznCsmg'doing!⇒OgznCsmgdoing  ->  OgznCsmg'doing!⇒Hshddoing
+  McshStn000014:982  McshEngl.evoluting-of-OgznCsmg!⇒OgznCsmgevolg  ->  evoluting-of-OgznCsmg!⇒Hshdevolg
+  McshStn000014:983  McshEngl.OgznCsmgevolg!=evoluting-of-OgznCsmg  ->  Hshdevolg!=evoluting-of-OgznCsmg
+  McshStn000014:984  McshEngl.OgznCsmg'evoluting!⇒OgznCsmgevolg  ->  OgznCsmg'evoluting!⇒Hshdevolg
+  McshTchInf000009:1071  McshEngl.Mcsh'language_of_names  ->  Mcshcnptlanguage_of_names
+  McshTchInf000009:1072  McshEngl.Mcsh'name_language!⇒Mcsh'language_of_names  ->  Mcsh'name_language!⇒Mcshcnptlanguage_of_names
+  McshTchInf000009:1087  McshEngl.name-of-Mcsh!⇒Mcshname  ->  name-of-Mcsh!⇒Mcshcnptname
+  McshTchInf000009:1088  McshEngl.Mcshname!=name-of-Mcsh  ->  Mcshcnptname!=name-of-Mcsh
+  McshTchInf000009:1089  McshEngl.Mcsh'name!⇒Mcshname  ->  Mcsh'name!⇒Mcshcnptname
+  McshTchInf000009:1090  McshEngl.Mcsh-name!⇒Mcshname  ->  Mcsh-name!⇒Mcshcnptname
+  McshTchInf000009:1091  McshEngl.Mcsh_name!⇒Mcshname  ->  Mcsh_name!⇒Mcshcnptname
+  McshTchInf000009:1092  McshEngl.nameMcsh!⇒Mcshname  ->  nameMcsh!⇒Mcshcnptname
+  McshTchInf000009:1532  McshEngl.data-of-Mcshcnpt!⇒Mcshdata  ->  data-of-Mcshcnpt!⇒Mcshcnptdata
+  McshTchInf000009:1533  McshEngl.Mcshdata!=data-of-Mcshcnpt  ->  Mcshcnptdata!=data-of-Mcshcnpt
+  McshTchInf000009:1534  McshEngl.Mcsh'data!⇒Mcshdata  ->  Mcsh'data!⇒Mcshcnptdata
+  McshTchInf000009:1765  McshEngl.type-of-Mcsh!⇒Mcsh_type  ->  type-of-Mcsh!⇒Mcshcnpttype
+  McshTchInf000009:1766  McshEngl.Mcsh_type!=type-of-Mcsh  ->  Mcshcnpttype!=type-of-Mcsh
+  McshTchInf000009:1767  McshEngl.Mcsh'type!⇒Mcsh_type  ->  Mcsh'type!⇒Mcshcnpttype
+  McshTchInf000009:1779  McshEngl.Mcsh'attribute!⇒Mcshattr  ->  Mcsh'attribute!⇒Mcshcnptattr
+  McshTchInf000009:1780  McshEngl.Mcshattr!=Mcsh'attribute  ->  Mcshcnptattr!=Mcsh'attribute
+  McshTchInf000018:711  McshEngl.AgntEthr_node  ->  Ethrnode
+  McshTchInf000018:712  McshEngl.AgntEthr-node!⇒AgntEthr_node  ->  AgntEthr-node!⇒Ethrnode
+  McshTchInf000018:713  McshEngl.AgntEthr'node!⇒AgntEthr_node  ->  AgntEthr'node!⇒Ethrnode
+  McshTchInf000018:714  McshEngl.DnEth-node!⇒AgntEthr_node  ->  DnEth-node!⇒Ethrnode
+  McshTchInf000018:715  McshEngl.Ethereum-node!⇒AgntEthr_node  ->  Ethereum-node!⇒Ethrnode
+  McshTchInf000018:984  McshEngl.AgntEthr_account  ->  Ethraccount
+  McshTchInf000018:985  McshEngl.AgntEthr-account!⇒AgntEthr_account  ->  AgntEthr-account!⇒Ethraccount
+  McshTchInf000018:986  McshEngl.DnEth-account!⇒AgntEthr_account  ->  DnEth-account!⇒Ethraccount
+  McshTchInf000018:987  McshEngl.Ethereum-account!⇒AgntEthr_account  ->  Ethereum-account!⇒Ethraccount
+  McshTchInf000018:988  McshEngl.AgntEthr'account!⇒AgntEthr_account  ->  AgntEthr'account!⇒Ethraccount
+  McshTchInf000018:1666  McshEngl.AgntEthr_protocol  ->  Ethrprotocol
+  McshTchInf000018:1667  McshEngl.AgntEthr-protocol!⇒AgntEthr_protocol  ->  AgntEthr-protocol!⇒Ethrprotocol
+  McshTchInf000018:1668  McshEngl.AgntEthr'protocol!⇒AgntEthr_protocol  ->  AgntEthr'protocol!⇒Ethrprotocol
+  McshTchInf000018:1669  McshEngl.DnEth-protocol!⇒AgntEthr_protocol  ->  DnEth-protocol!⇒Ethrprotocol
+  McshTchInf000018:1670  McshEngl.Ethereum-protocol!⇒AgntEthr_protocol  ->  Ethereum-protocol!⇒Ethrprotocol
+  McshTchInf000018:1671  McshEngl.protocol-of-Ethereum!⇒AgntEthr_protocol  ->  protocol-of-Ethereum!⇒Ethrprotocol
+  McshTchInf000018:2766  McshEngl.AgntEthr_gas  ->  Ethrgas
+  McshTchInf000018:2767  McshEngl.AgntEthr-gas!⇒AgntEthr_gas  ->  AgntEthr-gas!⇒Ethrgas
+  McshTchInf000018:2768  McshEngl.DnEth-gas!⇒AgntEthr_gas  ->  DnEth-gas!⇒Ethrgas
+  McshTchInf000018:2769  McshEngl.Ethereum-gas!⇒AgntEthr_gas  ->  Ethereum-gas!⇒Ethrgas
+  McshTchInf000018:2770  McshEngl.AgntEthr'gas!⇒AgntEthr_gas  ->  AgntEthr'gas!⇒Ethrgas
+  McshTchInf000018:3593  McshEngl.AgntEthr_program  ->  Ethrprogram
+  McshTchInf000018:3594  McshEngl.AgntEthr-program!⇒AgntEthr_program  ->  AgntEthr-program!⇒Ethrprogram
+  McshTchInf000018:3595  McshEngl.AgntEthr'program!⇒AgntEthr_program  ->  AgntEthr'program!⇒Ethrprogram
+  McshTchInf000018:3596  McshEngl.DnEth-program!⇒AgntEthr_program  ->  DnEth-program!⇒Ethrprogram
+  McshTchInf000018:3597  McshEngl.Ethereum-program!⇒AgntEthr_program  ->  Ethereum-program!⇒Ethrprogram
+  McshTchInf000021:60  McshEngl.evaluation-of-Agnteos!⇒Agnteosevaln  ->  evaluation-of-Agnteos!⇒Eoszevaln
+  McshTchInf000021:61  McshEngl.Agnteosevaln!=evaluation-of-Agnteos  ->  Eoszevaln!=evaluation-of-Agnteos
+  McshTchInf000021:62  McshEngl.Agnteosevalg!⇒Agnteosevaln  ->  Agnteosevalg!⇒Eoszevaln
+  McshTchInf000021:63  McshEngl.Agnteos-evaluation!⇒Agnteosevaln  ->  Agnteos-evaluation!⇒Eoszevaln
+  McshTchInf000021:64  McshEngl.Agnteos'evaluation!⇒Agnteosevaln  ->  Agnteos'evaluation!⇒Eoszevaln
+  McshTchInf000021:394  McshEngl.Agnteos_bandwidth  ->  Eoszbandwidth
+  McshTchInf000021:395  McshEngl.Agnteos-bandwidth!⇒Agnteos_bandwidth  ->  Agnteos-bandwidth!⇒Eoszbandwidth
+  McshTchInf000021:396  McshEngl.Agnteos'NET|bandwidth_resource!⇒Agnteos_bandwidth  ->  Agnteos'NET|bandwidth_resource!⇒Eoszbandwidth
+  McshTchInf000021:3100  McshEngl.info-resource--of-Agnteos!⇒Agnteosinfrsc  ->  info-resource--of-Agnteos!⇒Eoszinfrsc
+  McshTchInf000021:3101  McshEngl.Agnteosinfrsc!=info-resource--of-Agnteos  ->  Eoszinfrsc!=info-resource--of-Agnteos
+  McshTchInf000021:3102  McshEngl.Agnteos'info_resource!⇒Agnteosinfrsc  ->  Agnteos'info_resource!⇒Eoszinfrsc
+  McshTchInf000021:3113  McshEngl.doing-of-Agnteos!⇒Agnteosdoing  ->  doing-of-Agnteos!⇒Eoszdoing
+  McshTchInf000021:3114  McshEngl.Agnteosdoing!=doing-of-Agnteos  ->  Eoszdoing!=doing-of-Agnteos
+  McshTchInf000021:3115  McshEngl.Agnteos'doing!⇒Agnteosdoing  ->  Agnteos'doing!⇒Eoszdoing
+  McshTchInf000021:3116  McshEngl.Agnteos-doing!⇒Agnteosdoing  ->  Agnteos-doing!⇒Eoszdoing
+
+=== ADD (46) — the-old main-name kept as a-synonym: X!⇒X'
+  McshCor000003:5699  <br>* McshEngl.entityDefined!⇒EnttDefined,
+  McshCor000003:5718  <br>* McshEngl.entityDefinedNo!⇒EnttDefinedNo,
+  McshCor000003:6572  <br>* McshEngl.entityYoungNo!⇒EnttYoungNo,
+  McshCor000023:268  <br>* McshEngl.SystDynaSelf!⇒DynaSelf,
+  McshCor000023:300  <br>* McshEngl.SystDynaSelfNo!⇒DynaSelfNo,
+  McshEdu000010:1330  <br>* McshEngl.SciLago/classification!⇒Lagosciclassification,
+  McshEdu000010:1498  <br>* McshEngl.SciLago.019_science_of_language_and_society!⇒Lagosciscience_of_language_and_society,
+  McshEdu000010:2303  <br>* McshEngl.SciLagoCognitive!⇒LagosciCognitive,
+  McshEdu000014:398  <br>* McshEngl.SciEconCptl!⇒EconsciCptl,
+  McshEdu000014:741  <br>* McshEngl.SciEconCptlMeta!⇒EconsciCptlMeta,
+  McshEdu000014:883  <br>* McshEngl.SciEconClxt!⇒EconsciClxt,
+  McshEdu000014:962  <br>* McshEngl.SciEconCmpl!⇒EconsciCmpl,
+  McshEdu000014:1127  <br>* McshEngl.SciEconBehav!⇒EconsciBehav,
+  McshEdu000014:1233  <br>* McshEngl.SciEconEvol!⇒EconsciEvol,
+  McshEdu000014:1310  <br>* McshEngl.SciEconInst!⇒EconsciInst,
+  McshEdu000014:1389  <br>* McshEngl.SciEconTech!⇒EconsciTech,
+  McshEdu000014:1459  <br>* McshEngl.SciEconMarx!⇒EconsciMarx,
+  McshHlth000008:861  <br>* McshEngl.health'att010_right_to_health!⇒Hlthright_to_health,
+  McshHlth000008:898  <br>* McshEngl.health'att008_public_spending!⇒Hlthpublic_spending,
+  McshHlth000008:1052  <br>* McshEngl.health'human!⇒Hlthhuman,
+  McshHlth000008:1423  <br>* McshEngl.Healthevaln!⇒Hlthevaln,
+  McshHlth000008:1456  <br>* McshEngl.Healthevolg!⇒Hlthevolg,
+  McshHlth000008:1556  <br>* McshEngl.healthBody!⇒HlthBody,
+  McshHlth000008:1594  <br>* McshEngl.health.mental!⇒Hlthmental,
+  McshHlth000008:1640  <br>* McshEngl.healthSocial!⇒HlthSocial,
+  McshHmn000002:735  <br>* McshEngl.human'appearance!⇒Humnappearance,
+  McshHmn000002:5213  <br>* McshEngl.humanMale!⇒HumnMale,
+  McshHmn000002:5231  <br>* McshEngl.humanFemale!⇒HumnFemale,
+  McshHmn000002:5570  <br>* McshEngl.human.centenarian!⇒Humncentenarian,
+  McshStn000014:871  <br>* McshEngl.OgznCsmginfrsc!⇒Hshdinfrsc,
+  McshStn000014:896  <br>* McshEngl.OgznCsmgdoing!⇒Hshddoing,
+  McshStn000014:983  <br>* McshEngl.OgznCsmgevolg!⇒Hshdevolg,
+  McshTchInf000009:1071  <br>* McshEngl.Mcsh'language_of_names!⇒Mcshcnptlanguage_of_names,
+  McshTchInf000009:1088  <br>* McshEngl.Mcshname!⇒Mcshcnptname,
+  McshTchInf000009:1533  <br>* McshEngl.Mcshdata!⇒Mcshcnptdata,
+  McshTchInf000009:1766  <br>* McshEngl.Mcsh_type!⇒Mcshcnpttype,
+  McshTchInf000009:1780  <br>* McshEngl.Mcshattr!⇒Mcshcnptattr,
+  McshTchInf000018:711  <br>* McshEngl.AgntEthr_node!⇒Ethrnode,
+  McshTchInf000018:984  <br>* McshEngl.AgntEthr_account!⇒Ethraccount,
+  McshTchInf000018:1666  <br>* McshEngl.AgntEthr_protocol!⇒Ethrprotocol,
+  McshTchInf000018:2766  <br>* McshEngl.AgntEthr_gas!⇒Ethrgas,
+  McshTchInf000018:3593  <br>* McshEngl.AgntEthr_program!⇒Ethrprogram,
+  McshTchInf000021:61  <br>* McshEngl.Agnteosevaln!⇒Eoszevaln,
+  McshTchInf000021:394  <br>* McshEngl.Agnteos_bandwidth!⇒Eoszbandwidth,
+  McshTchInf000021:3101  <br>* McshEngl.Agnteosinfrsc!⇒Eoszinfrsc,
+  McshTchInf000021:3114  <br>* McshEngl.Agnteosdoing!⇒Eoszdoing,
