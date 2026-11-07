@@ -20,7 +20,7 @@
  * 
  *  MvreFile01  CnptFile missing idOverview section
  * 
- *  MvrwSect01  CnptSect missing description::-paragraph
+ *  MvrwSect01  CnptSect missing description::-paragraph (MvrwSect01..04: not a <section class="clsText"> or inside one)
  *  MvrwSect02  CnptSect has description:: but it is empty (only placeholder "·")
  *  MvrwSect03  CnptSect missing name::-paragraph
  *  MvrwSect04  CnptSect name:: has zero valid Mcsh* entries
@@ -72,6 +72,9 @@ import { fStripTags } from './parserMcsh.js';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-49-0.2026-11-07: MvrwSect01..04 skip also the-clsText section itself, not only its parts',
+    'structuralMcsh.js.0-48-0.2026-11-07: MvrwSect01..04 a-link section is also "X ( link!=Y )"',
+    'structuralMcsh.js.0-47-0.2026-11-06: MvrwSect01..04 skip the-sections inside a <section class="clsText"> (a-displayed text)',
     'structuralMcsh.js.0-46-0.2026-11-06: MvrwMain02-06 a-genericSpecific main-name starts small: foodGingerevaln',
     'structuralMcsh.js.0-45-0.2026-11-05: MvrwGstr01 gnsp_then_spgn (G, S), MvrwGstr02 spgn_then_gnsp',
     'structuralMcsh.js.0-44-0.2026-11-04: faster: fFindCnpt once per file, MvrwMisc01 skips a-para without {',
@@ -256,12 +259,20 @@ function fCheckCnptFile(aoCnptFile) {
   return aoIssue;
 }
 
+// a-link section, a-concept described in another place: its heading ends in "(link)",
+//   "( link!=animal )", "( Link )", or ends in the-word link: "X link", "X link,", "X link )"
+//   (MvrwSect01..04 skip it)
+const rSectLink = /\(\s*link\b[^)]*\)|\blink[\s,)]*$/i;
+
 /**
  * OUTPUT: the-sections the-MvrwSect rules check: the-CnptSect AND the-sections without
  *   valid names (parserMcsh aoSectNoName), else a-section without name:: is never seen.
  *   A-section without names counts only INSIDE a-named whole: its whole is the-file or
  *   a-CnptSect, or a-sibling is a-CnptSect. So the-parts of a-quoted document (law
  *   Articles in an-unnamed Chapter, white-paper sections) are not reported.
+ *   A-displayed text (<section class="clsText">: law, white-paper, charter, quoted article)
+ *   is not checked, the-clsText section itself AND every section inside it: the-text is
+ *   shown as it is.
  */
 function fFindSectAll(oCnptFile) {
   const aoCnptSect = fFindCnpt(oCnptFile, 'CnptSect');
@@ -271,7 +282,24 @@ function fFindSectAll(oCnptFile) {
     const sIdWhole = oSect.sIdWhole_elmt ?? null;
     return sIdWhole === null || oSetIdNamed.has(sIdWhole) || oSetIdWholeOfNamed.has(sIdWhole);
   });
-  return [...aoCnptSect, ...aoSectNoName];
+  const aoSect = [...aoCnptSect, ...aoSectNoName];
+  if (!(oCnptFile.aoRaw_sect ?? []).some(oRaw => /^<section\b[^>]*\bclsText\b/.test(oRaw.sRawHtml ?? ''))) return aoSect;
+  // id → its whole id, and the-ids of the-clsText sections
+  const oMapIdWhole = new Map();
+  const oSetIdText = new Set();
+  for (const oRaw of oCnptFile.aoRaw_sect) {
+    if (!oRaw.sNameId) continue;
+    oMapIdWhole.set(oRaw.sNameId, oRaw.sIdWhole_elmt ?? null);
+    if (/^<section\b[^>]*\bclass="[^"]*\bclsText\b/.test(oRaw.sRawHtml ?? '')) oSetIdText.add(oRaw.sNameId);
+  }
+  // the-section itself or one of its wholes is clsText
+  const fInText = sIdIn => {
+    for (let sId = sIdIn, nGuard = 0; sId && nGuard < 64; sId = oMapIdWhole.get(sId), nGuard++) {
+      if (oSetIdText.has(sId)) return true;
+    }
+    return false;
+  };
+  return aoSect.filter(oSect => !fInText(oSect.sNameId));
 }
 
 // 🔶 [MvrwSect01] CnptSect  has no description::-paragraph
@@ -281,7 +309,7 @@ function fCheckDescription(aoCnptFile) {
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindSectAll(oCnptFile)) {
-      if (/\(\s*link\s*\)/.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)"
+      if (rSectLink.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)", "X ( link!=Y )"
       const aoParaDesc = fFindParaAll(oSect, 'description');
       if (aoParaDesc.length === 0) {
         aoIssue.push(fIssue('WARN', 'MvrwSect01', oCnptFile.sNameFile, oSect,
@@ -313,7 +341,7 @@ function fCheckName(aoCnptFile) {
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const oSect of fFindSectAll(oCnptFile)) {
-      if (/\(\s*link\s*\)/.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)"
+      if (rSectLink.test(oSect.sNameTitle ?? '')) continue;   // a-link section: "X (link)", "X ( link!=Y )"
       if (fFindParaAll(oSect, 'name').length === 0) {
         // a-section without name:: (aoSectNoName): a-CnptSect always has names
         aoIssue.push(fIssue('WARN', 'MvrwSect03', oCnptFile.sNameFile, oSect,

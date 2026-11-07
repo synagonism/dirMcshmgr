@@ -112,6 +112,8 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-27-0.2026-11-06: --mainname X_ only a-synonym "X_!⇒X-": swapped to "X-!⇒X_", not skipped',
+    'createMcsh.mjs.0-26-0.2026-11-06: MvrwMain02-06 no !Attrbase: the-main-name of the-whole + suffix; genericSpecific stays small',
     'createMcsh.mjs.0-25-0.2026-11-05: --code MvrwGstr01 "does not list it": G goes in the-generic-tree:: of S (its empty group, else a-new === group)',
     'createMcsh.mjs.0-24-0.2026-11-05: --code MvrwGstr02, a-generic lists its specific "G.S!@file#id" (new === group, or a-new specific-tree:: para)',
     'createMcsh.mjs.0-23-0.2026-11-05: --code MvrwGstr01, a-specific without generic-tree:: but with a-main-name gets its generic-tree:: para',
@@ -173,7 +175,7 @@ const
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
     DUPNAME:  'a-name-line written twice in ONE para: the-second deleted (MvreName01)',
-    MAINNAME: 'a-name-line whose main-name got underscores (MvreMain01)',
+    MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain02..06 suffix)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
     IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids',
     LINK:     'a-line whose ids or links to a-renamed id changed'
@@ -937,13 +939,17 @@ function fPlanNest(sRawIn, sNameShortIn, oFileHitpIn) {
  *   Names that only CONTAIN X (ρήμα.ἀγανακτέω-ῶ) are other names: not changed.
  *   A-main-name whose X' is a-name already in its McsLago is skipped by fMain.
  * INPUT: oMapMainIn: 'Lago|X' → X' of the-main-names to change.
+ *   oSetMainAlwaysIn: 'Lago|X' whose line "McshLago.X" is the-main-name-line also when
+ *   nothing points to it (the-ONE name of its para: MvrwMain02..06 from the-whole's main-name).
  * OUTPUT: { aoEdit, aoNote, sRawNew }
  */
-function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
+function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn, oSetMainAlwaysIn = new Set()) {
   const aLine = sRawIn.split('\n');
   const aoEdit = [];
   const aoNote = [];
   const fMainNew = (sLagoIn, sMainIn) => oMapMainIn.get(`${sLagoIn}|${sMainIn.trim()}`);
+  // 'Lago|X'' → X: the-old main-name of a-new one
+  const oMapOld = new Map([...oMapMainIn].map(([sKey, sNew]) => [`${sKey.split('|')[0]}|${sNew}`, sKey.split('|')[1]]));
 
   for (let nL = 0; nL < aLine.length; nL++) {
     const aName = aLine[nL].match(rNameLine);
@@ -966,7 +972,7 @@ function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
       let nOpen = nL, nClose = nL;
       while (nOpen > 0 && !/<p\b/.test(aLine[nOpen])) nOpen--;
       while (nClose < aLine.length - 1 && !aLine[nClose].includes('</p>')) nClose++;
-      const bPointed = aLine.slice(nOpen, nClose + 1).some(sLine => {
+      const bPointed = oSetMainAlwaysIn.has(`${sLago}|${sName}`) || aLine.slice(nOpen, nClose + 1).some(sLine => {
         const aOther = sLine.match(rNameLine);
         return aOther && aOther[1] === sLago &&
           [...aOther[2].matchAll(/!⇒([^!]*)/g)].some(aM => aM[1].trim() === sName);
@@ -974,8 +980,19 @@ function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn) {
       if (bPointed) {
         sRestNew = sNameNew + sRestNew.slice(sRestNew.indexOf(sName) + sName.length);
         const sPos = (sRest.match(/!~[^!]*/) ?? [''])[0];
-        aIns.push(aLine[nL].slice(0, nStart) + sName + sPos + '!⇒' + sNameNew + aLine[nL].slice(nEnd));
+        // X' already a-synonym of the-para ("X'!⇒X"): it becomes "X!⇒X'" (below), nothing added
+        const bSynNew = aLine.slice(nOpen, nClose + 1).some(sLine => {
+          const aOther = sLine.match(rNameLine);
+          return aOther && aOther[1] === sLago && aOther[2].split('!')[0].trim() === sNameNew;
+        });
+        if (!bSynNew) aIns.push(aLine[nL].slice(0, nStart) + sName + sPos + '!⇒' + sNameNew + aLine[nL].slice(nEnd));
       }
+    }
+    // a-synonym "X'!⇒X" became "X'!⇒X'": it is swapped to "X!⇒X'", the-old form kept
+    const sMainOld = oMapOld.get(`${sLago}|${sName}`);
+    if (sMainOld && sRestNew.split('!')[0].trim() === sName &&
+        [...sRestNew.matchAll(/!⇒([^!]*)/g)].some(aM => aM[1].trim() === sName)) {
+      sRestNew = sMainOld + sRestNew.slice(sRestNew.indexOf(sName) + sName.length);
     }
     if (sRestNew === sRest) continue;
 
@@ -1652,16 +1669,30 @@ function fPlanDate(sRawIn, sNameShortIn, aoIssueIn) {
 
 /**
  * OUTPUT: the-new main-name of MvrwMain02..06 or null: capital first, no apostrophe before
- *   the-suffix (Food'evaln → Foodevaln, foodLemonevaln → FoodLemonevaln). A-main-name
- *   WITHOUT the-suffix needs a-new name: null.
+ *   the-suffix (Food'evaln → Foodevaln); a-genericSpecific name keeps its small-letter word
+ *   (foodLemon'evaln → foodLemonevaln), as the-validator. A-main-name WITHOUT the-suffix
+ *   gets sBaseIn + the-suffix; without sBaseIn: null.
  */
-function fFindMainNew(sMainIn, sSuffixIn, sAttrbaseIn = '') {
+function fFindMainNew(sMainIn, sSuffixIn, sBaseIn = '') {
   let sMain = sMainIn;
   if (sMain.endsWith("'" + sSuffixIn)) sMain = sMain.slice(0, -sSuffixIn.length - 1) + sSuffixIn;
-  // without the-suffix: the-Attrbase of its whole + the-suffix (Smp → Smpsrtr), as mMcshNew.mjs
-  if (!sMain.endsWith(sSuffixIn)) sMain = sAttrbaseIn ? sAttrbaseIn + sSuffixIn : '';
+  // without the-suffix: the-Attrbase (or main-name) of its whole + the-suffix (Smp → Smpsrtr), as mMcshNew.mjs
+  if (!sMain.endsWith(sSuffixIn)) sMain = sBaseIn ? sBaseIn + sSuffixIn : '';
   if (!sMain) return null;
+  if (/^[a-z]+[A-Z]/.test(sMain)) return sMain;
   return sMain.charAt(0).toUpperCase() + sMain.slice(1);
+}
+
+/**
+ * OUTPUT: the-main-name of the-whole of section sIdSectIn (its name::-para's ONE !⇒ target);
+ *   '' when the-whole or its main-name is not found.
+ */
+function fFindMainOfWhole(aLineIn, sIdSectIn) {
+  const nSect = aLineIn.findIndex(sLine => fLineClean(sLine).match(rSectOpen)?.[1] === sIdSectIn);
+  if (nSect <= 0) return '';
+  const nWhole = fFindSectOpen(aLineIn, nSect);
+  const sIdWhole = nWhole === -1 ? '' : fLineClean(aLineIn[nWhole]).match(rSectOpen)?.[1] ?? '';
+  return sIdWhole ? fFindMainOfSect(aLineIn, sIdWhole)?.sMain ?? '' : '';
 }
 
 /**
@@ -2059,11 +2090,16 @@ async function fMain() {
       const aPath = fFindFileAll(sNameDir).filter(sPath => moPath.basename(sPath).startsWith('Mcsh'));
       const aRaw = aPath.map(sPath => moFs.readFileSync(sPath, 'utf8'));
       const oSetName = new Set();
+      // 'Lago|Y' → Set of what its name-lines point to ('' = a-line without "!⇒")
+      const oMapNameTarget = new Map();
       const oMapMainFirst = new Map(); // 'Lago|X' → the-first file:line pointing to X
       aRaw.forEach((sRaw, nI) => sRaw.split('\n').forEach((sLine, nL) => {
         const aName = sLine.match(rNameLine);
         if (!aName) return;
-        oSetName.add(`${aName[1]}|${aName[2].split('!')[0].trim()}`);
+        const sKeyName = `${aName[1]}|${aName[2].split('!')[0].trim()}`;
+        oSetName.add(sKeyName);
+        if (!oMapNameTarget.has(sKeyName)) oMapNameTarget.set(sKeyName, new Set());
+        oMapNameTarget.get(sKeyName).add(aName[2].match(/!⇒([^!]*)/)?.[1].trim() ?? '');
         for (const aM of aName[2].matchAll(/!⇒([^!]*)/g)) {
           const sKey = `${aName[1]}|${aM[1].trim()}`;
           if (aM[1].includes('-') && !oMapMainFirst.has(sKey) && !fSkipFile(aPath[nI])) {
@@ -2075,7 +2111,10 @@ async function fMain() {
       for (const [sKey, sLoc] of oMapMainFirst) {
         const [sLago, sMain] = sKey.split('|');
         const sMainNew = sMain.replace(/-/g, '_');
-        if (oSetName.has(`${sLago}|${sMainNew}`)) {
+        // X' only as a-synonym of X ("X'!⇒X"): swapped, not a-collision
+        const oSetTarget = oMapNameTarget.get(`${sLago}|${sMainNew}`);
+        const bSynOfMain = oSetTarget?.size === 1 && oSetTarget.has(sMain);
+        if (oSetName.has(`${sLago}|${sMainNew}`) && !bSynOfMain) {
           aLineOut.push(`SKIP   ${sLoc}  Mcsh${sLago}.${sMain}: Mcsh${sLago}.${sMainNew} is a-name already`);
           oCount.SKIP = (oCount.SKIP ?? 0) + 1;
           continue;
@@ -2250,14 +2289,41 @@ async function fMain() {
       } else if (oFix.sKind === 'main') {
         // the-new main-name of each issue; then every "!⇒X" and main-line of X, in every file
         const oMapMain = new Map();
+        const aLineMain = sRaw.split('\n');
+        const fSkipMain = (oIssueIn, sWhyIn) => {
+          aLineOut.push(`SKIP   ${sNameShort}:${oIssueIn.nLine ?? '?'}  ${sWhyIn}: give the-main-name by hand`);
+          oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+        };
+        // the-main-names from the-whole's main-name: their only line is the-main-name-line
+        const oSetMainAlways = new Set();
+        // true: "McshEngl.X" | "!⇒X" is ONLY in the-name::-para of section sIdSectIn, in the-whole worldview
+        const fIsNameOnlyInPara = (sMainIn, sIdSectIn) => {
+          const oName = fFindMainOfSect(aLineMain, sIdSectIn);
+          if (!oName) return false;
+          const rName = new RegExp(`(McshEngl\\.|!⇒)${sMainIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[,!]`, 'g');
+          const nInPara = (aLineMain.slice(oName.nName, oName.nNameEnd + 1).join('\n').match(rName) ?? []).length;
+          let nAll = 0;
+          for (const sPath of fFindFileAll(sNameDir)) {
+            nAll += ((sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8')).match(rName) ?? []).length;
+            if (nAll > nInPara) return false;
+          }
+          return nInPara > 0 && nAll === nInPara;
+        };
         for (const oIssue of aoIssue) {
           const sMain = oIssue.sMessage.match(/main-name "McshEngl\.([^"]+)"/)?.[1];
           const sSuffix = oIssue.sMessage.split('_')[0];
-          const sMainNew = sMain ? fFindMainNew(sMain, sSuffix, fFindAttrbase(sRaw.split('\n'), oIssue.sIdConcept)) : null;
+          let sBase = fFindAttrbase(aLineMain, oIssue.sIdConcept);
+          // no !Attrbase: the-main-name of its whole (nerveCranial → nerveCranialinfrsc)
+          const bBaseMain = !sBase && !!sMain && !sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix);
+          if (bBaseMain) sBase = fFindMainOfWhole(aLineMain, oIssue.sIdConcept);
+          const sMainNew = sMain ? fFindMainNew(sMain, sSuffix, sBase) : null;
           if (!sMainNew) {
-            aLineOut.push(`SKIP   ${sNameShort}:${oIssue.nLine ?? '?'}  "${sMain}" does not end in "${sSuffix}" and its whole has no !Attrbase: give the-main-name by hand`);
-            oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+            fSkipMain(oIssue, `"${sMain}" does not end in "${sSuffix}" and its whole has no !Attrbase and no main-name`);
+          } else if (bBaseMain && !fIsNameOnlyInPara(sMain, oIssue.sIdConcept)) {
+            // the-rename runs in EVERY file: a-name like "resource" of other concepts is not touched
+            fSkipMain(oIssue, `"${sMain}" → "${sMainNew}": "${sMain}" is a-name outside its name::-para too`);
           } else if (sMainNew !== sMain) {
+            if (bBaseMain) oSetMainAlways.add(`Engl|${sMain}`);
             oMapMain.set(`Engl|${sMain}`, sMainNew);
           }
         }
@@ -2265,7 +2331,7 @@ async function fMain() {
           for (const sPath of fFindFileAll(sNameDir)) {
             const sRawOne = sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8');
             if (![...oMapMain.keys()].some(sKey => sRawOne.includes(sKey.slice(5)))) continue;
-            fWriteFile(sPath, sRawOne, fShort(sPath), fPlanMainName(sRawOne, fShort(sPath), oMapMain));
+            fWriteFile(sPath, sRawOne, fShort(sPath), fPlanMainName(sRawOne, fShort(sPath), oMapMain, oSetMainAlways));
           }
         }
       } else if (oFix.sKind === 'link') {

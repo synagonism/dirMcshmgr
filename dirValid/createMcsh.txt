@@ -1,16 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --srtr --all --fix: C:\dirNodews\dirMcsh
+  createMcsh --auto --file McshHlth000016 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · 1 structure-ids renamed · 6 lines changed · 0 skipped
+  1 files written · dupname 0 · nest 0 · headgap 0 · missing 1 · mainname 0 · srtr 0 · 0 skipped
   written, no backup: see git diff
 
-=== IDSRTR (1) — a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids
-  McshHlth000002:128  #idBdyHmnatt002structure -> #idBdyHmnatt002srtr  (+3 own ids: H2 dsn nam)
-
-=== LINK (6) — a-line whose ids or links to a-renamed id changed
-  McshHlth000002:128
-  McshHlth000002:129
-  McshHlth000002:131
-  McshHlth000002:134
-  McshHlth000002:135
-  McshHlth000002:139
+=== CREATE (1) — a-new description:: created
+  McshHlth000016:982  {2026-11-06} as #idThrpHmnHdrrscdsn

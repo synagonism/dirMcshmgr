@@ -329,7 +329,7 @@
   McshHlth000011:1751  <br>* McshEngl.DissSkeletal'cause,
   McshHlth000011:1756  <h3 id="idDssHmn005_1protectionH3">protection of DissSkeletal
   McshHlth000011:1767  <br>* McshEngl.DissSkeletal'protection,
-  McshHlth000011:1772  <h3 id="idDssHmn005_1resourceH3">resource of DissSkeletal
+  McshHlth000011:1772  <h3 id="idDssHmn005_1resourceH3">info-resource of DissSkeletal
   McshHlth000011:1779  <br>* McshEngl.DissSkeletal'info-resource,
   McshHlth000011:1784  <h3 id="idDssHmn005_1gstrH3">GENERIC-SPECIFIC-TREE of DissSkeletal
   McshHlth000011:1790  <br>* McshEngl.DissSkeletal'generic-specific-tree,
@@ -563,7 +563,7 @@
   McshHlth000011:2877  <br>* DissBlood_Gntr,
   McshHlth000011:2881  <h3 id="idDssHmn042symptomH3">symptom of DissHypertension
   McshHlth000011:2902  <br>* McshEngl.DissHypertension'symptom,
-  McshHlth000011:2907  <h3 id="idDssHmn042resourceH3">resource of DissHypertension
+  McshHlth000011:2907  <h3 id="idDssHmn042resourceH3">info-resource of DissHypertension
   McshHlth000011:2914  <br>* McshEngl.DissHypertension'info-resource,
   McshHlth000011:2919  <h3 id="idDssHmn042therapyH3">therapy of DissHypertension
   McshHlth000011:2946  <br>* McshEngl.DissHypertension'therapy,
@@ -861,7 +861,7 @@
   McshHlth000011:6139  <br>* McshEngl.DissCancer.skin.106,
   McshHlth000011:6147  <h3 id="idDssHmn106protectionH3">protection of DissCancerSkin
   McshHlth000011:6161  <br>* McshEngl.DissCancerSkin'protection,
-  McshHlth000011:6166  <h3 id="idDssHmn106resourceH3">resource of DissCancerSkin
+  McshHlth000011:6166  <h3 id="idDssHmn106resourceH3">info-resource of DissCancerSkin
   McshHlth000011:6174  <br>* McshEngl.DissCancerSkin'resource,
   McshHlth000011:6179  <h3 id="idDssHmn106gstrH3">GENERIC-SPECIFIC-TREE of DissCancerSkin
   McshHlth000011:6185  <br>* McshEngl.DissCancerSkin'generic-specific-tree,
@@ -1131,7 +1131,7 @@
   McshHlth000011:8247  <br>* McshEngl.DissAids'protection,
   McshHlth000011:8252  <h2 id="idDssHmn114statsH2">stats of DissAids
   McshHlth000011:8260  <br>* McshEngl.DissAids'stats,
-  McshHlth000011:8265  <h2 id="idDssHmn114resourceH2">resource of DissAids
+  McshHlth000011:8265  <h2 id="idDssHmn114resourceH2">info-resource of DissAids
   McshHlth000011:8274  <br>* McshEngl.DissAids'info-resource,
   McshHlth000011:8279  <h2 id="idDssHmn114evogH2">evoluting of DissAids
   McshHlth000011:8319  <br>* McshEngl.DissAids'evoluting,
@@ -1141,7 +1141,7 @@
   McshHlth000011:8384  <br>* McshEngl.DissAlzheimer'therapy,
   McshHlth000011:8389  <h2 id="idDssHmn115statsH2">stats of DissAlzheimer
   McshHlth000011:8396  <br>* McshEngl.DissAlzheimer'stats,
-  McshHlth000011:8401  <h2 id="idDssHmn115resourceH2">resource of DissAlzheimer
+  McshHlth000011:8401  <h2 id="idDssHmn115resourceH2">info-resource of DissAlzheimer
   McshHlth000011:8408  <br>* McshEngl.DissAlzheimer'info-resource,
   McshHlth000011:8425  <br>* McshEngl.DissDementia,
   McshHlth000011:8426  <br>* McshEngl.disease.116-dementia!⇒DissDementia,
@@ -1157,7 +1157,7 @@
   McshHlth000011:8469  <br>* McshEngl.DissDementia'therapy,
   McshHlth000011:8474  <h2 id="idDssHmn116helpH2">help of DissDementia
   McshHlth000011:8481  <br>* McshEngl.DissDementia'help,
-  McshHlth000011:8486  <h2 id="idDssHmn116resourceH2">resource of DissDementia
+  McshHlth000011:8486  <h2 id="idDssHmn116resourceH2">info-resource of DissDementia
   McshHlth000011:8494  <br>* McshEngl.DissDementia'info-resource,
   McshHlth000011:8499  <h2 id="idDssHmn116gstrH2">GENERIC-SPECIFIC-TREE of DissDementia
   McshHlth000011:8505  <br>* McshEngl.DissDementia'generic-specific-tree,
@@ -1187,7 +1187,7 @@
   McshHlth000011:8787  <br>* McshEngl.DissCoughing_Gntr,
   McshHlth000011:8793  <h3 id="idDssHmn120therapyH3">therapy of DissCoughing
   McshHlth000011:8820  <br>* McshEngl.DissCoughing'therapy,
-  McshHlth000011:8825  <h3 id="idDssHmn120resourceH3">resource of DissCoughing
+  McshHlth000011:8825  <h3 id="idDssHmn120resourceH3">info-resource of DissCoughing
   McshHlth000011:8832  <br>* McshEngl.DissCoughing'info-resource,
   McshHlth000011:8855  <br>* McshEngl.DissBronchitis,
   McshHlth000011:8862  <br>* McshEngl.DissBronchitis_Gntr,
@@ -1238,7 +1238,7 @@
   McshHlth000011:9320  <br>* McshEngl.DissDiarrheaTravel'therapy,
   McshHlth000011:9325  <h3 id="idDssHmn139protectionH3">protection of DissDiarrheaTravel
   McshHlth000011:9337  <br>* McshEngl.DissDiarrheaTravel'protection,
-  McshHlth000011:9342  <h3 id="idDssHmn139resourceH3">resource of DissDiarrheaTravel
+  McshHlth000011:9342  <h3 id="idDssHmn139resourceH3">info-resource of DissDiarrheaTravel
   McshHlth000011:9349  <br>* McshEngl.DissDiarrheaTravel'info-resource,
   McshHlth000011:9366  <br>* McshEngl.DissChicken_pox,
   McshHlth000011:9373  <br>* McshEngl.DissChicken_pox_Gntr,
@@ -1271,7 +1271,7 @@
   McshHlth000011:9568  <br>* McshEngl.DissHepatitis'therapy,
   McshHlth000011:9573  <h2 id="idDssHmn166protectionH2">protection of DissHepatitis
   McshHlth000011:9592  <br>* McshEngl.DissHepatitis'protection,
-  McshHlth000011:9597  <h2 id="idDssHmn166resourceH2">resource of DissHepatitis
+  McshHlth000011:9597  <h2 id="idDssHmn166resourceH2">info-resource of DissHepatitis
   McshHlth000011:9636  <br>* McshEngl.DissHepatitis'info-resource,
   McshHlth000011:9641  <h2 id="idDssHmn166evogH2">evoluting of DissHepatitis
   McshHlth000011:9649  <br>* McshEngl.DissHepatitis'evoluting,
@@ -1489,7 +1489,7 @@
   McshHlth000011:11179  <br>* McshEngl.DissMultiple_sclerosis'cause,
   McshHlth000011:11184  <h2 id="idDssHmn195therapyH2">therapy of DissMultiple_sclerosis
   McshHlth000011:11191  <br>* McshEngl.DissMultiple_sclerosis'therapy,
-  McshHlth000011:11340  <h2 id="idDssHmn195resourceH2">resource of DissMultiple_sclerosis
+  McshHlth000011:11340  <h2 id="idDssHmn195resourceH2">info-resource of DissMultiple_sclerosis
   McshHlth000011:11347  <br>* McshEngl.DissMultiple_sclerosis'info-resource,
   McshHlth000011:11412  <h2 id="idDssHmn195statsH2">stats of DissMultiple_sclerosis
   McshHlth000011:11420  <br>* McshEngl.DissMultiple_sclerosis'stats,
@@ -1650,7 +1650,7 @@
   McshHlth000011:12698  <br>* McshEngl.DissCramp_Wltr,
   McshHlth000011:12702  <h3 id="idDssHmn135therapyH3">therapy of DissCramp
   McshHlth000011:12711  <br>* McshEngl.DissCramp'therapy,
-  McshHlth000011:12716  <h3 id="idDssHmn135resourceH3">resource of DissCramp
+  McshHlth000011:12716  <h3 id="idDssHmn135resourceH3">info-resource of DissCramp
   McshHlth000011:12794  <br>* McshEngl.DissCramp'info-resource,
   McshHlth000011:12814  <br>* McshEngl.DissCaries,
   McshHlth000011:12815  <br>* McshEngl.disease.177-dental-caries!⇒DissCaries,
@@ -1672,7 +1672,7 @@
   McshHlth000011:12995  <br>* McshEngl.DissCryptorchidism'symptom,
   McshHlth000011:13010  <br>* McshEngl.DissParkinson,
   McshHlth000011:13017  <br>* McshEngl.DissParkinson_Gntr,
-  McshHlth000011:13023  <h2 id="idDssHmn129resourceH2">resource of DissParkinson
+  McshHlth000011:13023  <h2 id="idDssHmn129resourceH2">info-resource of DissParkinson
   McshHlth000011:13030  <br>* McshEngl.DissParkinson'info-resource,
   McshHlth000011:13035  <h2 id="idDssHmn129symptomH2">symptom of DissParkinson
   McshHlth000011:13043  <br>* McshEngl.DissParkinson'symptom,
@@ -1802,7 +1802,7 @@
   McshHlth000011:14999  <br>* McshEngl.DissCholesterol_Wltr,
   McshHlth000011:15003  <h2 id="idDssHmn015symptomH2">symptom of DissCholesterol
   McshHlth000011:15012  <br>* McshEngl.DissCholesterol'symptom,
-  McshHlth000011:15017  <h2 id="idDssHmn015resourceH2">resource of DissCholesterol
+  McshHlth000011:15017  <h2 id="idDssHmn015resourceH2">info-resource of DissCholesterol
   McshHlth000011:15024  <br>* McshEngl.DissCholesterol'info-resource,
   McshHlth000011:15029  <h2 id="idDssHmn015therapyH2">therapy of DissCholesterol
   McshHlth000011:15037  <br>* McshEngl.DissCholesterol'therapy!⇒CholesterolTherapy,
