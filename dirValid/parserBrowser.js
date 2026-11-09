@@ -30,7 +30,8 @@ import * as omMcsh from '../mMcsh2.js'
 const
   // contains the-versions of mConcept.js 
   aVersion = [
-    'mConcept.js.0-4-0.2026-10-01: sNameFormal on cnpt, div-para indentation',
+    'mConcept.js.0-5-0.2026-11-07: sNameMainFrml is the-Mmn (main-mind-name): the-first name with its own line that a-"!⇒" points to, ONE per concept, any McsLago (fFindMmn)',
+    'mConcept.js.0-4-0.2026-10-01: sNameMainFrml on cnpt, div-para indentation',
     'mConcept.js.0-3-0.2026-08-23: Claude review',
     'mConcept.js.0-3-0.2026-08-14: fReadMcsLago_names',
     'mConcept.js.0-2-0.2026-06-25: fReadFileCnpt',
@@ -69,7 +70,7 @@ let oFileIdRelaCnpt = {}; //{'dirTchInf/McshTchInf000010.last.html#idLjstol': {}
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html
  *   sNameIdRela,    // dirCor/McshCor000015.last.html
  *   sNameTitle,     // text from <title> (name part only)
- *   sNameFormal,    // the English formal-name
+ *   sNameMainFrml,    // the-Mmn (main-mind-name), any McsLago, '' when none
  *   sVersion,       // e.g. "McsCor000015.1-4-0.2026-03-30"
  *   sCreation,      // {2026-08-17}
  *   aoRaw_sect,     // raw-section objects.
@@ -90,7 +91,7 @@ async function fReadFileMcsh(sNameIdRela) {
   let sOverview = '';
   let sFileRaw = '';
   let oNameLago = {};
-  let sNameFormal = '';
+  let sNameMainFrml = '';
   oFileIdRelaCnpt = {};
 
   try {
@@ -167,7 +168,7 @@ async function fReadFileMcsh(sNameIdRela) {
       if (sParaName !== null) {
         // Name entries — from the name:: para only
         oNameLago = fReadMcsLago_names(sParaName);
-        sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
+        sNameMainFrml = fFindMmn(oNameLago);
       } else console.log("error: no name-para");
 
       continue;
@@ -187,7 +188,7 @@ async function fReadFileMcsh(sNameIdRela) {
     sNameFile: oPath.basename(sNameIdRela),
     sNameDir: oPath.basename(oPath.dirname(sNameIdRela)),
     sNameTitle,
-    sNameFormal,
+    sNameMainFrml,
     sVersion,
     sError: null,
     oNameLago,
@@ -408,13 +409,13 @@ function fFindSect_overview(sRawSect) {
  * DOING: find the-McsLago-names: " <br>* McshEngl.McshExml'att001-attribute, {2026-04-23}"
  * INPUT: the-text of a-Mcsh_para, one name per line.
  * OUTPUT: an object of lagoName-objects
- *   { oLagoEngl: {sNameFormal, sNameInformal, aoName, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
+ *   { oLagoEngl: {sNameMainFrml, sNameMainIfml, aoName, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
  *   aoName holds every name-line, duplicates kept, each one with its
  *   sNameFull: the-whole-line to the-comma, "young!~adjeEngl:animal".
  */
 function fReadMcsLago_names(sTextIn) {
   // ── 1. read the-name-lines ────────────────────────────────────────────────
-  const aoName = []; // { sLago, sName, sNameFormal, sNameTransl, sPos } in document order
+  const aoName = []; // { sLago, sName, sNameMainFrml, sNameTransl, sPos } in document order
   for (const sLine of String(sTextIn ?? '').split('\n')) {
     // a-name-line: " <br>* McshEngl.name!-inflection!~PoS!=translation, {2026-04-23}"
     const aNameMatch = sLine.match(rNameLine);
@@ -426,19 +427,19 @@ function fReadMcsLago_names(sTextIn) {
     if (sName === '' || fIsName_id(sName)) continue;
 
     // !-notations: "!⇒main-name", "!=translation", "!~PoS", "!-inflection|!extra-info"
-    let sNameFormal = '', sNameTransl = '', sPos = '';
+    let sNameMainFrml = '', sNameTransl = '', sPos = '';
     const rNotation = /!(⇒|=|~)?([^!]*)/g;
     let aNotationMatch;
     while ((aNotationMatch = rNotation.exec(sRest)) !== null) {
       const sMark  = aNotationMatch[1] ?? '';
       const sValue = aNotationMatch[2].trim();
-      if      (sMark === '⇒' && !sNameFormal) sNameFormal   = sValue;
+      if      (sMark === '⇒' && !sNameMainFrml) sNameMainFrml   = sValue;
       else if (sMark === '=' && !sNameTransl)  sNameTransl  = sValue;
       else if (sMark === '~' && !sPos)         sPos         = sValue;
     }
     // sNameFull is the-whole-line to the-comma: "young!~adjeEngl:animal".
     // Mcsh07 keys the-duplicates on IT, so name-notations do-not collide.
-    aoName.push({ sLago, sName, sNameFull: sRest, sNameFormal, sNameTransl, sPos });
+    aoName.push({ sLago, sName, sNameFull: sRest, sNameMainFrml, sNameTransl, sPos });
   }
 
   // ── 2. group the-names per McsLago and per PoS ────────────────────────────
@@ -452,23 +453,20 @@ function fReadMcsLago_names(sTextIn) {
     if (!aPos.includes(oName.sName)) aPos.push(oName.sName);
   }
 
-  // ── 3. find the-formal and informal main-name of each McsLago ─────────────
-  for (const sLagokey of Object.keys(oLagoname)) {
-    const oLago = oLagoname[sLagokey];
-    const aoLago_name = aoName.filter(o => 'oLago' + o.sLago === sLagokey);
-
-    // formal-name: the-text after '!⇒', the-most-used one when they differ
-    oLago.sNameFormal = fFindName_frequent(aoLago_name.filter(o => o.sNameFormal).map(o => o.sNameFormal));
-    if (!oLago.sNameFormal) {
-      // no synonym points to a-main-name: the-name of a "name!=translation"-line
-      const oFormal = aoLago_name.find(o => o.sNameTransl && !o.sPos);
-      oLago.sNameFormal = oFormal ? oFormal.sName : aoLago_name[0].sName;
-    }
-
-    // informal-name: the-text after '!=' of the-formal-name
-    const oInformal = aoLago_name.find(o =>
-      o.sName === oLago.sNameFormal && o.sNameTransl && !o.sPos && !fIsName_id(o.sNameTransl));
-    oLago.sNameInformal = oInformal ? oInformal.sNameTransl : '';
+  // ── 3. find the-Mmn (main-mind-name), ONE per concept ─────────────────────
+  // a-concept can-have many main-names (the-"!⇒" targets); its Mmn is the-first of them,
+  // written on its own line, in any McsLago:
+  //   1) "informal-Mmn!⇒Mmn" and "Mmn!=informal-Mmn"
+  //   2) "Mmn,"               and "name!⇒Mmn"
+  // many concepts have no Mmn: no line points to a-name with its own line.
+  // The-Mmn goes to the-McsLago of its line; the-other McsLago have sNameMainFrml ''.
+  const oSetTarget = new Set(aoName.map(o => o.sNameMainFrml).filter(Boolean));
+  const oMmn = aoName.find(o => !o.sNameMainFrml && oSetTarget.has(o.sName));
+  if (oMmn && oLagoname['oLago' + oMmn.sLago]) {
+    const oLago = oLagoname['oLago' + oMmn.sLago];
+    oLago.sNameMainFrml = oMmn.sName;
+    // informal-Mmn: the-text after '!=' of the-Mmn line (pattern 1)
+    oLago.sNameMainIfml = oMmn.sNameTransl && !oMmn.sPos && !fIsName_id(oMmn.sNameTransl) ? oMmn.sNameTransl : '';
   }
 
   return oLagoname;
@@ -479,10 +477,10 @@ function fReadMcsLago_names(sTextIn) {
  */
 function fNewLago_name() {
   return {
-    sNameFormal: '',
-    sNameInformal: '',
+    sNameMainFrml: '',
+    sNameMainIfml: '',
     // every name-line of this McsLago in document-order, duplicates kept:
-    // [{sLago, sName, sNameFull, sNameFormal, sNameTransl, sPos}]
+    // [{sLago, sName, sNameFull, sNameMainFrml, sNameTransl, sPos}]
     aoName: [],
     aNoun: [], aCase: [], aAdje: [], aAdve: [], aVerb: [], aConj: []
   };
@@ -512,16 +510,11 @@ function fIsName_id(sNameIn) {
 }
 
 /**
- * OUTPUT: the-most-frequent string of an-array, the-first one on ties, '' on empty.
+ * INPUT: the-oNameLago of a-concept (fReadMcsLago_names).
+ * OUTPUT: the-Mmn (main-mind-name) of the-concept, in whatever McsLago it is, '' when none.
  */
-function fFindName_frequent(aNameIn) {
-  const oCount = {};
-  let sNameTop = '', nCountTop = 0;
-  for (const sName of aNameIn) {
-    oCount[sName] = (oCount[sName] ?? 0) + 1;
-    if (oCount[sName] > nCountTop) { nCountTop = oCount[sName]; sNameTop = sName; }
-  }
-  return sNameTop;
+function fFindMmn(oNameLagoIn) {
+  return Object.values(oNameLagoIn ?? {}).find(oLago => oLago.sNameMainFrml)?.sNameMainFrml ?? '';
 }
 
 /**
@@ -534,7 +527,7 @@ function fFindName_frequent(aNameIn) {
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idSection
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idSection
  *   sNameTitle,     // text from <h?>title::
- *   sNameFormal,    // the English formal-name
+ *   sNameMainFrml,    // the-Mmn (main-mind-name), any McsLago, '' when none
  *   oNameLago,      // {oNameEngl, oNameZhon, ...}
  *   sCreation,      // from × Mcsh-creation:
  *   sOverview,      // h, p, div direct children
@@ -558,7 +551,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   const sNameIdRela = sFileNameRela + '#' + sNameId;
   console.log(sNameIdRela)
   let oNameLago = {};
-  let sNameFormal = '';
+  let sNameMainFrml = '';
 
   // All direct-child Mcsh-para
   const aoTitlePara = fParseOverview(sOverview, sNameId);
@@ -568,7 +561,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
   if (sParaName !== null) {
     // Name entries — from the name:: para only
     oNameLago = fReadMcsLago_names(sParaName);
-    sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
+    sNameMainFrml = fFindMmn(oNameLago);
   } else console.log("error: no name-para");
 
   // if aNames.length > 0, this is a sect-cnpt
@@ -579,7 +572,7 @@ function fReadMcshRaw_sect({ sNameId, sRawHtml, nDepth, sIdWhole_elmt }) {
       sNameIdAbso,
       sNameIdRela,
       sNameTitle,
-      sNameFormal,
+      sNameMainFrml,
       oNameLago,
       nHeadingLevel,
       nDepth,
@@ -651,7 +644,7 @@ function fParseOverview(sOverviewIn, sNameId) {
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
- *   sNameFormal,    // the English formal-name
+ *   sNameMainFrml,    // the-Mmn (main-mind-name), any McsLago, '' when none
  *   oNameLago,     // contains oNameEngl, oNameZhon, ...
  *   sCreation,      // from × Mcsh-creation:
  *   sPara,          // p element 
@@ -675,7 +668,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
 
   // Name entries — parse regardless of sNameTitle, so para-concepts can be detected
   const oNameLago = fReadMcsLago_names(sPHtmlIn);
-  const sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
+  const sNameMainFrml = fFindMmn(oNameLago);
 
   // A para-concept: has an id AND has McsLago-names AND is NOT a name::-para
   // (name::-para belong to the sect-cnpt, not a separate concept)
@@ -691,7 +684,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
       sNameIdAbso,
       sNameIdRela,
       sNameTitle,
-      sNameFormal,
+      sNameMainFrml,
       oNameLago,
       sPara,
       sIdWhole_elmt: sIdWhole_elmtIn
@@ -715,7 +708,7 @@ function fReadParaP(sPHtmlIn, sIdWhole_elmtIn) {
  *   sNameIdAbso,    // http://localhost/dirMcsh/dirCor/McshCor000015.last.html#idPara
  *   sNameIdRela,    // dirCor/McshCor000015.last.html#idPara
  *   sNameTitle,     // text from <p>title::
- *   sNameFormal,    // the English formal-name
+ *   sNameMainFrml,    // the-Mmn (main-mind-name), any McsLago, '' when none
  *   sCreation,      // from × Mcsh-creation:
  *   sPara_overview, // div element
  *   oNameLago,     // contains oNameEngl, oNameZhon, ...
@@ -739,7 +732,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
 
   // Name entries — parse regardless of sNameTitle, so para-concepts can be detected
   const oNameLago = fReadMcsLago_names(sDivHtmlIn);
-  const sNameFormal = oNameLago?.oLagoEngl?.sNameFormal ?? '';
+  const sNameMainFrml = fFindMmn(oNameLago);
 
   // A para-concept: has an id AND has McsLago-names AND is NOT a name::-para
   // (name::-para belong to the sect-cnpt, not a separate concept)
@@ -755,7 +748,7 @@ function fReadParaDiv(sDivHtmlIn, sIdWhole_elmtIn) {
       sNameIdAbso,
       sNameIdRela,
       sNameTitle,
-      sNameFormal,
+      sNameMainFrml,
       oNameLago,
       sPara,
       sIdWhole_elmt: sIdWhole_elmtIn
@@ -789,4 +782,5 @@ export {
   fIsRelation,
   fReadFileMcsh,
   fReadMcsLago_names,
+  fFindMmn,
 }

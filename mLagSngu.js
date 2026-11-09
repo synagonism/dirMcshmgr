@@ -27,7 +27,8 @@
 
 import * as omLagUtil from './mLagUtil.js'
 import * as omMcsh from './mMcsh2.js'
-import * as omConcept from './dirValid/mConcept.js'
+// mConcept.js was renamed to dirValid/parserBrowser.js (2026-10-02); unused here
+//import * as omConcept from './dirValid/parserBrowser.js'
 
 const
   // contains the-versions of mLagSngu.js

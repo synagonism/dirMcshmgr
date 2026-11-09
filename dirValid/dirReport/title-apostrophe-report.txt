@@ -1,0 +1,2068 @@
+section titles X'Y — 1196 in 52 files (ATTRIBUTE 1002, SPECIFIC 189, TREE 5)
+each: the-title → its "Y of X" form (the-last apostrophe of the-first word); possessives (Bowman's) not counted
+
+=== Y (793) — the-word after the-last apostrophe, by count
+    64  resource
+    23  doing
+    12  block-explorer
+    11  member
+    10  blockchain
+    10  exchange-value-unit.consensus
+     9  000
+     9  address
+     9  api
+     9  exchange-rate
+     9  protocol
+     9  unit
+     8  consensus-algorithm
+     8  security
+     7  creating
+     7  file
+     7  node
+     7  organization
+     7  semantic-unit
+     7  sentence
+     7  white-paper
+     6  000th
+     6  block
+     6  fee
+     6  transaction
+     6  wallet
+     6  word
+     5  001}
+     5  human
+     5  installing
+     5  mining
+     5  problem
+     5  service
+     4  distribution
+     4  evaluation
+     4  exchange-value-unit
+     4  grammar
+     4  hash
+     4  phrase
+     4  section
+     4  updating
+     3  argument
+     3  balance
+     3  call
+     3  directory
+     3  execution
+     3  explorer
+     3  governance-system
+     3  individual
+     3  issuance
+     3  location
+     3  memory-area
+     3  misc
+     3  name
+     3  ognexchange
+     3  part
+     3  program
+     3  root
+     3  size
+     3  stack-area
+     3  storage-area
+     3  synopsis
+     3  title
+     3  wealth
+     2  000..present}
+     2  abi
+     2  age
+     2  attribute
+     2  changing
+     2  cloud-mining
+     2  code
+     2  command
+     2  compiler
+     2  configuring
+     2  content
+     2  contract-program
+     2  dapp
+     2  dapp-structure
+     2  data-folder
+     2  deleting
+     2  evm
+     2  funding
+     2  generic-specific-tree
+     2  hardware
+     2  header
+     2  implementation-language
+     2  input
+     2  law
+     2  message-call
+     2  mining-pool
+     2  most-generic-object
+     2  most-whole-object
+     2  namespace
+     2  nonce
+     2  number
+     2  option
+     2  output
+     2  part.header
+     2  price
+     2  proof-of-work
+     2  propensity
+     2  rating
+     2  reward
+     2  s-area
+     2  s-political-consultative-conference
+     2  state
+     2  store-of-data
+     2  structure
+     2  syntax-tree
+     2  time
+     2  timestamp
+     2  todo
+     2  tool
+     2  visibility
+     2  whole-part-tree--structure
+     1  001
+     1  001st
+     1  1-0-0.1991
+     1  1-0-1.1992
+     1  1-1-0.1993
+     1  10-0-0.2017
+     1  11-0-0.2018
+     1  14-0-0.2021
+     1  18-0-0.2026
+     1  2-0-0.1996
+     1  2-1-0.1998
+     1  2.0
+     1  2009
+     1  2010
+     1  2011
+     1  2012
+     1  2013
+     1  2014
+     1  2015
+     1  2016
+     1  2017
+     1  2018
+     1  2019
+     1  3-0-0.2000
+     1  3-1-0.2000
+     1  3-2-0.2000
+     1  4-0-0.2003
+     1  4-0-1.2003
+     1  4-1-0.2005
+     1  5-0-0.2007
+     1  5-1-0.2007
+     1  5-2-0.2009
+     1  51-percent-attack
+     1  6-0-0.2011
+     1  6-1-0.2012
+     1  6-2-0.2012
+     1  6-3-0.2013
+     1  7-0-0.2014
+     1  8-0-0.2015
+     1  9-0-0.2016
+     1  999
+     1  999th
+     1  a-function-is-an-object
+     1  abundance_or_scarcity
+     1  account
+     1  acquiring
+     1  act
+     1  activity-points
+     1  adding
+     1  address-of-contract-account
+     1  adoption
+     1  agntdcrd_development
+     1  an_china_international_travel_service
+     1  api.ethplorer
+     1  api.javascript
+     1  app_object
+     1  app.server
+     1  application-directory
+     1  archaic-{bce0800..bce0500}
+     1  argv-array
+     1  array_function
+     1  array.prototype
+     1  arraybuffer-function
+     1  artifact
+     1  atm
+     1  atom-object
+     1  atom.commands-object
+     1  atom.config-object
+     1  atom.keymaps-object
+     1  atom.menu-object
+     1  atom.packages-object
+     1  atom.project-object
+     1  atom.styles-object
+     1  atom.views-object
+     1  atom.workspace-object
+     1  attr.prototype
+     1  autoupdater_object
+     1  backend
+     1  backness
+     1  backup
+     1  baker
+     1  balance-number
+     1  balance.subtoken
+     1  ballance
+     1  bapp
+     1  base58
+     1  base58check
+     1  beneficiary
+     1  benefit
+     1  bip
+     1  bitcoin-cli
+     1  bitcoin-core
+     1  bitcoin-qt
+     1  bitcoin.conf
+     1  bitcoind
+     1  block-time
+     1  blockchain.info-site
+     1  blocktime
+     1  book.general-theory
+     1  book.treatise-on-money
+     1  boolean.prototype
+     1  browserview_function
+     1  browserwindow_function
+     1  browserwindow-object
+     1  buffer-function
+     1  building
+     1  builtin-check
+     1  business-outline
+     1  byte-order
+     1  bytes
+     1  caching
+     1  callcode
+     1  calldata
+     1  canceling-job
+     1  capitalization
+     1  card
+     1  carrying_cost
+     1  chain-code
+     1  characterdata.prototype
+     1  checking
+     1  child-key
+     1  chronobank.io-website
+     1  classical
+     1  classical-{bce0500..bce0300}
+     1  client-program
+     1  clipboard_object
+     1  code-executing
+     1  codeassembly
+     1  codebinary
+     1  codepointat_function
+     1  coinbase
+     1  command.wallet
+     1  commitee
+     1  compactsize
+     1  company
+     1  compensation-per-hour
+     1  compiling
+     1  compiling-project
+     1  computer
+     1  concensous-exval-tokent
+     1  concensus-evt
+     1  configuration-file
+     1  configuration-rule
+     1  confirmation
+     1  connecting-to-network
+     1  consensus
+     1  consensus-rule
+     1  consenus-algorithm
+     1  console
+     1  console_object
+     1  console-object
+     1  constitution
+     1  consumption-system
+     1  content_unit
+     1  content-unit
+     1  contenttracing_object
+     1  contract-account
+     1  contract-name
+     1  controling
+     1  controller
+     1  convert-to-array
+     1  converting
+     1  converting-amd-to-nodejs-modules
+     1  core-modules
+     1  crashreporter_object
+     1  creation
+     1  creator
+     1  creator-account
+     1  crypto
+     1  css
+     1  dapps-dir
+     1  dark-{bce1100..bce0800}
+     1  data-location
+     1  debugger-statement
+     1  debugging
+     1  decodeuri_function
+     1  decred-assembly
+     1  definition
+     1  delegatecall
+     1  demand_price
+     1  dependency
+     1  depth
+     1  depth|height
+     1  desktopcapturer-object
+     1  destructuring-assignment
+     1  developing
+     1  dialog_object
+     1  dialog.showopendialog-function
+     1  difficulty
+     1  dirbuild
+     1  dircontracts
+     1  dirmigrations
+     1  dirtests
+     1  document-object
+     1  document.prototype
+     1  documentfragment.prototype
+     1  documenttype.prototype
+     1  doing.compiling
+     1  doing.creating
+     1  doing.deploying
+     1  doing.developing
+     1  doing.executing
+     1  doing.fork
+     1  doing.interacting
+     1  doing.intersection
+     1  doing.removing
+     1  doing.service
+     1  doing.testing
+     1  doing.union
+     1  doing.updating
+     1  dom
+     1  double-spending
+     1  ecdsa
+     1  electron_object.render
+     1  electron-object.main-process
+     1  element
+     1  element-adding
+     1  element-checking
+     1  element-removing
+     1  element.prototype
+     1  elliptic-curve-arithmetic
+     1  embarkjs
+     1  employer
+     1  en
+     1  environment-variables
+     1  error
+     1  error-detection-checksum
+     1  error-function
+     1  etherscan-disassembler
+     1  evaluation.benefit
+     1  evaluation.benefitno
+     1  evaluator
+     1  event-function
+     1  event-object
+     1  event.prototype
+     1  eventlistener-function
+     1  eventtarget-function
+     1  eventtarget-object
+     1  eventtarget.prototype
+     1  evoluting
+     1  exchange
+     1  exchange-rate-chart
+     1  exchange-rate-volatility
+     1  exchange-value-unit.consensous
+     1  executing
+     1  exporting
+     1  external-vs
+     1  extra-nonce
+     1  extradata
+     1  exvuxrp
+     1  faucet-of-btc
+     1  fault
+     1  fetch-api
+     1  fetch-function
+     1  field-of-work
+     1  filmigration
+     1  filtruffle.js
+     1  fork.hard
+     1  fork.soft
+     1  format.binary
+     1  frontend
+     1  frontier
+     1  function-function
+     1  function.prototype
+     1  gain
+     1  gas
+     1  gas-cost
+     1  gas-limit
+     1  gaslimit
+     1  gasused
+     1  gateway
+     1  gaw-karen
+     1  generation
+     1  geting
+     1  global_object
+     1  global-member
+     1  globalshortcut_object
+     1  halving
+     1  hash-function
+     1  hash-rate
+     1  hash-type
+     1  hash160
+     1  hash256
+     1  hashrate
+     1  hd-protocoll
+     1  height
+     1  hml
+     1  holder
+     1  homestead
+     1  html5
+     1  htmldocument.prototype
+     1  htmlelement.prototype
+     1  human.aggregate
+     1  human.block_producer
+     1  human.developer
+     1  human.healthy
+     1  human.larimer.daniel
+     1  human.miner
+     1  human.token-holder
+     1  human.voter
+     1  human.whale
+     1  icon
+     1  id
+     1  ids
+     1  illegal
+     1  implementation
+     1  import-by-searching
+     1  import-core-module
+     1  import-from-absolute-path
+     1  import-from-relative-path
+     1  import-json-file
+     1  import-member-of-module
+     1  importing
+     1  increase
+     1  increase.no
+     1  index
+     1  indexed-visibility-attribute
+     1  inducement
+     1  info-resource
+     1  infrsc
+     1  inheritance
+     1  installing-truffle
+     1  instanceof
+     1  int
+     1  int8
+     1  interest
+     1  interface
+     1  internal-byte-order
+     1  internal-vs
+     1  ipcmain_object
+     1  ipcrenderer-object
+     1  issuing
+     1  job
+     1  job-board
+     1  json-object
+     1  json.parse-function
+     1  json.stringify-function
+     1  key-pool
+     1  key.private
+     1  keyfile
+     1  keynes
+     1  keypair
+     1  keystore
+     1  laborx-core
+     1  laborx-dapp-frontend
+     1  laborx-white-paper
+     1  language
+     1  language.lll
+     1  language.mutan
+     1  language.serpent
+     1  language.solidity
+     1  language.viper
+     1  legal
+     1  level
+     1  light-wallet
+     1  lightning_network
+     1  limit
+     1  linking
+     1  links
+     1  liquidity_premium
+     1  listener-function
+     1  log
+     1  logsbloom
+     1  loss
+     1  machine-memory
+     1  mailing-list
+     1  main-process
+     1  managing
+     1  marginal_efficiency
+     1  marginal_efficiency_schedule
+     1  match_function
+     1  match-function
+     1  matching
+     1  math_object
+     1  math-formulas
+     1  mathematical
+     1  member.children-array
+     1  member.filename-string
+     1  member.id-string
+     1  member.loaded-boolean
+     1  member.module.exports-object
+     1  member.parent-object
+     1  member.paths-object
+     1  menu_function
+     1  menu_object
+     1  menuitem_function
+     1  menuitem_object
+     1  merkle-tree
+     1  meron
+     1  messaging
+     1  metropolis
+     1  migrating-project
+     1  miner
+     1  mining.pool
+     1  mining.solo
+     1  mixhash
+     1  mixing
+     1  mobile-wallet
+     1  module
+     1  module-object
+     1  module-sut
+     1  money
+     1  money-used
+     1  mosaic
+     1  name_string_member
+     1  naming-mechanism
+     1  nanowallet
+     1  nativeimage_object
+     1  nem-foundation
+     1  net_object
+     1  neuron
+     1  node_modules-directory
+     1  node-modules.com
+     1  node-server
+     1  node.prototype
+     1  notation.arrow
+     1  notation.dot
+     1  notation.functional
+     1  notation.index
+     1  notation.specialized
+     1  npm-registry
+     1  npm-tool
+     1  number-of-transaction-entries
+     1  number.prototype
+     1  number.root
+     1  number.βοττομ
+     1  o-karen-tone-mark
+     1  object-scope
+     1  object.prototype
+     1  office
+     1  ognexcange
+     1  ommershash
+     1  opcode
+     1  os
+     1  owner
+     1  owner_of_masternode
+     1  paragraph
+     1  parameter
+     1  parent-key
+     1  parenthash
+     1  part.amount
+     1  part.data
+     1  part.gaslimit
+     1  part.gasprice
+     1  part.index-implied
+     1  part.init
+     1  part.input
+     1  part.input-array
+     1  part.locktime
+     1  part.nonce
+     1  part.ommer-list
+     1  part.outpoint
+     1  part.output
+     1  part.output-array
+     1  part.payload
+     1  part.pubkey|output-script
+     1  part.r
+     1  part.s
+     1  part.sequence-number
+     1  part.signature-script
+     1  part.to
+     1  part.transaction-list
+     1  part.v
+     1  part.value
+     1  part.version
+     1  party
+     1  passphrase
+     1  path-of-files
+     1  pc
+     1  peer
+     1  period
+     1  plasma
+     1  powermonitor_object
+     1  powersaveblocker_object
+     1  pre-mining
+     1  pre-processing
+     1  priority
+     1  private-key
+     1  private-vs
+     1  process
+     1  process-object
+     1  production-system
+     1  profile
+     1  proof-of-authority
+     1  proposal
+     1  protection
+     1  protocol_object
+     1  provider
+     1  provider-used
+     1  public-key
+     1  public-key-hash
+     1  public-vs
+     1  qr-code
+     1  rate_of_interest
+     1  rate-of-issuance
+     1  rating-system
+     1  receiptsroot
+     1  recommender
+     1  recruitmen-sector
+     1  reference-implementation
+     1  refund
+     1  relation_to_language
+     1  relation-to-array
+     1  relation-to-bitcoin-block
+     1  relation-to-contract-account
+     1  relation-to-ethereum
+     1  relation-to-normal-account
+     1  relation-to-wallet
+     1  reletion-to-ethereum
+     1  remote-object
+     1  renderer-process
+     1  replace_function
+     1  replace-function
+     1  repository
+     1  require
+     1  requirements
+     1  resource-sunt
+     1  response-function
+     1  restricted
+     1  return
+     1  rogram
+     1  root-seed
+     1  root-tree
+     1  rpc
+     1  s-capsule
+     1  s-congress
+     1  s-daily
+     1  s-democratic-dictatorship
+     1  s-education-press
+     1  s-initiative-035
+     1  s-law
+     1  s-liberation-army
+     1  s-republic-of-china
+     1  s-reputation
+     1  s-token
+     1  s-write
+     1  satisfier
+     1  schema
+     1  scope
+     1  screen_object
+     1  script
+     1  script-language
+     1  script.null-data
+     1  script.pubkey-script
+     1  script.signature-script
+     1  searching
+     1  searching-for-worker
+     1  secp256k1-signature
+     1  semantic_unit
+     1  send-function
+     1  sender-account
+     1  sending-to-address
+     1  series.c
+     1  series.l
+     1  server
+     1  session_object
+     1  set-function
+     1  sharing_economy
+     1  shell_object
+     1  short-name
+     1  sidechain
+     1  signature
+     1  similar
+     1  simplicity
+     1  skills
+     1  smart-contract
+     1  software
+     1  split
+     1  split_function
+     1  split-function
+     1  stability-index
+     1  stage
+     1  stateroot
+     1  statistics
+     1  storage
+     1  storage-medium
+     1  stream-object
+     1  style
+     1  submitting
+     1  subsidy
+     1  substring_function
+     1  sunt
+     1  supply_price
+     1  supply-price.total
+     1  sut.module
+     1  synchronizing
+     1  systempreferences_object
+     1  t-be-evil
+     1  table_of_contents
+     1  table-of-contents
+     1  taint-analysis
+     1  task
+     1  task.directory
+     1  task.file
+     1  taxon
+     1  tech
+     1  technical-paper.2017-01-31
+     1  testing-project
+     1  threshold-relay
+     1  time-due
+     1  time.release
+     1  timer-functions
+     1  title-construction
+     1  title-content-tree--document
+     1  title.root
+     1  titled-section
+     1  titledno-section
+     1  to-hash
+     1  token-supported
+     1  tolocalestring-function
+     1  tool.binary-to-assembly
+     1  tool.disassembler
+     1  tool.embark
+     1  touchbar_function
+     1  trade-cycle
+     1  traditional-asset-tokenization
+     1  transaction-created-by
+     1  transaction-fee
+     1  transaction-list
+     1  transaction-sent
+     1  transaction.in
+     1  transaction.out
+     1  transactionsroot
+     1  trasactionreceived
+     1  trasactionsend
+     1  tray_function
+     1  tree-info
+     1  trust-system
+     1  type
+     1  uint
+     1  uint8
+     1  unl
+     1  usage
+     1  uscid
+     1  use
+     1  utxo
+     1  v13
+     1  validation-rule
+     1  validation-tower
+     1  validation-tree
+     1  value
+     1  vector-of-transactions
+     1  verifier
+     1  version-number
+     1  versions-object
+     1  visibility-specifier
+     1  vote
+     1  voting
+     1  vout
+     1  wallet.db
+     1  webcontents_object
+     1  webframe-object
+     1  whisper
+     1  white-paper.2015-12-18
+     1  white-paper.2017-02-02
+     1  whole-part-tree
+     1  whole-part-tree.chrome
+     1  whole.dao
+     1  window-function
+     1  work-description
+     1  worker
+     1  wraper
+     1  writing
+     1  xmlhttprequest-function
+     1  yellow-paper
+     1  yield
+     1  yield.expected
+     1  α::
+     1  γ::
+     1  δ::
+     1  ε::
+     1  κ::
+     1  μ::
+     1  π::
+     1  σ::
+     1  υ::
+     1  φ::
+     1  ώστε
+
+=== ATTRIBUTE (1002)
+  --- Mcsh000000 (1)
+  Mcsh000000:370  Mws_viewDir.socialitation'law (  → law of Mws_viewDir.socialitation (
+  --- McshCor000002 (1)
+  McshCor000002:4951  Mcs'searching'TODO  → TODO of Mcs'searching
+  --- McshCor000010 (11)
+  McshCor000010:1335  number.1'000  (1000^1)  → 000 of number.1  (1000^1)
+  McshCor000010:1368  number.1'001  → 001 of number.1
+  McshCor000010:1394  number.2'000  → 000 of number.2
+  McshCor000010:1421  number.10'000  → 000 of number.10
+  McshCor000010:1441  number.999'999  → 999 of number.999
+  McshCor000010:1464  number.1'000'000  (1000^2)  → 000 of number.1'000  (1000^2)
+  McshCor000010:1488  number.2'000'000  → 000 of number.2'000
+  McshCor000010:1511  number.100'000'000  → 000 of number.100'000
+  McshCor000010:1532  number.1'000'000'000 (1000^3)  → 000 of number.1'000'000 (1000^3)
+  McshCor000010:1558  number.1'000'000'000'000 (1000^4)  → 000 of number.1'000'000'000 (1000^4)
+  McshCor000010:1580  number.1'000'000'000'000'000 (1000^5)  → 000 of number.1'000'000'000'000 (1000^5)
+  --- McshCor000011 (10)
+  McshCor000011:1340  order.1'000th  (1000^1)  → 000th of order.1  (1000^1)
+  McshCor000011:1362  order.1'001st  → 001st of order.1
+  McshCor000011:1408  order.999'999th  → 999th of order.999
+  McshCor000011:1429  order.1'000'000th  (1000^2)  → 000th of order.1'000  (1000^2)
+  McshCor000011:1451  order.2'000'000th  → 000th of order.2'000
+  McshCor000011:1474  order.1'000'000'000th (1000^3)  → 000th of order.1'000'000 (1000^3)
+  McshCor000011:1496  order.1'000'000'000'000th (1000^4)  → 000th of order.1'000'000'000 (1000^4)
+  McshCor000011:1518  order.1'000'000'000'000'000th (1000^5)  → 000th of order.1'000'000'000'000 (1000^5)
+  McshCor000011:2349  Gstree'taxon  → taxon of Gstree
+  McshCor000011:2500  Wptree'meron  → meron of Wptree
+  --- McshHlth000002 (3)
+  McshHlth000002:6504  weight'gain of bodyHumn  → gain of weight of bodyHumn
+  McshHlth000002:6522  weight'loss of bodyHumn  → loss of weight of bodyHumn
+  McshHlth000002:11622  bowman's-capsule of OganKidney  → s-capsule of bowman of OganKidney
+  --- McshHlth000003 (2)
+  McshHlth000003:1789  Broca's-area of lobeFrontal  → s-area of Broca of lobeFrontal
+  McshHlth000003:2132  Wernicke's-area of lobeTemporal  → s-area of Wernicke of lobeTemporal
+  --- McshHlth000011 (1)
+  McshHlth000011:777  disease.Specsdiv.body'doing  → doing of disease.Specsdiv.body
+  --- McshLag000007 (2)
+  McshLag000007:14995  section'title  → title of section
+  McshLag000007:15219  grammar'relation_to_language  → relation_to_language of grammar
+  --- McshLag000011 (1)
+  McshLag000011:23146  EnglvmIndi.196-let's-write  → s-write of EnglvmIndi.196-let
+  --- McshLag000013 (1)
+  McshLag000013:15  info'resource  → resource of info
+  --- McshLag000018 (1)
+  McshLag000018:15232  Zhon_post'type  → type of Zhon_post
+  --- McshLag000020 (1)
+  McshLag000020:11062  Ellnconj.έτσι'ώστε  → ώστε of Ellnconj.έτσι
+  --- McshLag000033 (1)
+  McshLag000033:2286  Deutnoun'capitalization  → capitalization of Deutnoun
+  --- McshStn000003 (1)
+  McshStn000003:15  organism'satisfier  → satisfier of organism
+  --- McshStn000031 (8)
+  McshStn000031:15  People's-Republic-of-China {1949..}  → s-Republic-of-China of People {1949..}
+  McshStn000031:427  people's-democratic-dictatorship of ChnaAdmn  → s-democratic-dictatorship of people of ChnaAdmn
+  McshStn000031:1778  Chinese-People's-Political-Consultative-Conference of Chnacpwf  → s-Political-Consultative-Conference of Chinese-People of Chnacpwf
+  McshStn000031:2027  National-People's-Congress of ChnaAdmn  → s-Congress of National-People of ChnaAdmn
+  McshStn000031:6248  Chinese-People's-Political-Consultative-Conference (  → s-Political-Consultative-Conference of Chinese-People (
+  McshStn000031:10373  people's-daily of Chnammedia  → s-daily of people of Chnammedia
+  McshStn000031:11158  ChnaTravelAgent.Xi'an_China_International_Travel_Service  → an_China_International_Travel_Service of ChnaTravelAgent.Xi
+  McshStn000031:11821  People's-Liberation-Army of ChnasectorPublic  → s-Liberation-Army of People of ChnasectorPublic
+  --- McshStn000042 (1)
+  McshStn000042:3693  People's-Education-Press of ChnaSchoolBook  → s-Education-Press of People of ChnaSchoolBook
+  --- HitpStnEcon000 (37)
+  HitpStnEcon000:7857  Mcs.Economy'FAULT  → FAULT of Mcs.Economy
+  HitpStnEcon000:7875  Mcs.Economy'TRADE-CYCLE  → TRADE-CYCLE of Mcs.Economy
+  HitpStnEcon000:8003  Mcs.ECONOMY'INDIVIDUAL  → INDIVIDUAL of Mcs.ECONOMY
+  HitpStnEcon000:8053  Mcs.ECONOMY'WEALTH  → WEALTH of Mcs.ECONOMY
+  HitpStnEcon000:8098  Mcs.Wealth'ABUNDANCE_OR_SCARCITY  → ABUNDANCE_OR_SCARCITY of Mcs.Wealth
+  HitpStnEcon000:8120  Mcs.Wealth'DISTRIBUTION  → DISTRIBUTION of Mcs.Wealth
+  HitpStnEcon000:8384  Mcs.ECONOMY'MISC  → MISC of Mcs.ECONOMY
+  HitpStnEcon000:8534  Mcs.ECONOMY'PRODUCTION-SYSTEM  → PRODUCTION-SYSTEM of Mcs.ECONOMY
+  HitpStnEcon000:8561  Mcs.Production'PERIOD  → PERIOD of Mcs.Production
+  HitpStnEcon000:8677  Mcs.PRODUCTION'INDIVIDUAL  → INDIVIDUAL of Mcs.PRODUCTION
+  HitpStnEcon000:8798  Mcs.PRODUCTION'WEALTH (Capital)  → WEALTH of Mcs.PRODUCTION (Capital)
+  HitpStnEcon000:8848  Mcs.Capital'DEMAND_PRICE  → DEMAND_PRICE of Mcs.Capital
+  HitpStnEcon000:8867  Mcs.Capital'MARGINAL_EFFICIENCY  → MARGINAL_EFFICIENCY of Mcs.Capital
+  HitpStnEcon000:8884  Mcs.Capital'MARGINAL_EFFICIENCY_SCHEDULE  → MARGINAL_EFFICIENCY_SCHEDULE of Mcs.Capital
+  HitpStnEcon000:8900  Mcs.Capital'INTEREST  → INTEREST of Mcs.Capital
+  HitpStnEcon000:8914  Mcs.Capital'RATE_OF_INTEREST (r)  → RATE_OF_INTEREST of Mcs.Capital (r)
+  HitpStnEcon000:8951  Mcs.Capital'RETURN  → RETURN of Mcs.Capital
+  HitpStnEcon000:8972  Mcs.Capital'YIELD  → YIELD of Mcs.Capital
+  HitpStnEcon000:9014  Mcs.Capital'SUPPLY_PRICE  → SUPPLY_PRICE of Mcs.Capital
+  HitpStnEcon000:9084  Mcs.Asset'CARRYING_COST  → CARRYING_COST of Mcs.Asset
+  HitpStnEcon000:9104  Mcs.Asset'LIQUIDITY_PREMIUM  → LIQUIDITY_PREMIUM of Mcs.Asset
+  HitpStnEcon000:9237  Mcs.CAPITAL'INCREASE  → INCREASE of Mcs.CAPITAL
+  HitpStnEcon000:9449  Mcs.Investment'INDUCEMENT  → INDUCEMENT of Mcs.Investment
+  HitpStnEcon000:9764  Mcs.Income'DISTRIBUTION  → DISTRIBUTION of Mcs.Income
+  HitpStnEcon000:10140  Mcs.PRODUCTION'MISC  → MISC of Mcs.PRODUCTION
+  HitpStnEcon000:10311  Mcs.ECONOMY'CONSUMPTION-SYSTEM  → CONSUMPTION-SYSTEM of Mcs.ECONOMY
+  HitpStnEcon000:10315  Mcs.CONSUMPTION'INDIVIDUAL (CONSUMER)  → INDIVIDUAL of Mcs.CONSUMPTION (CONSUMER)
+  HitpStnEcon000:10376  Mcs.CONSUMPTION'WEALTH (CAPITAL.NO)  → WEALTH of Mcs.CONSUMPTION (CAPITAL.NO)
+  HitpStnEcon000:10456  Mcs.Consumption'PROPENSITY  → PROPENSITY of Mcs.Consumption
+  HitpStnEcon000:10577  Mcs.Saving'ACT  → ACT of Mcs.Saving
+  HitpStnEcon000:10593  Mcs.Saving'PROPENSITY  → PROPENSITY of Mcs.Saving
+  HitpStnEcon000:10624  Mcs.CONSUMPTION'MISC  → MISC of Mcs.CONSUMPTION
+  HitpStnEcon000:10743  Mcs.economics'CLASSICAL  → CLASSICAL of Mcs.economics
+  HitpStnEcon000:10776  Mcs.economics'KEYNES  → KEYNES of Mcs.economics
+  HitpStnEcon000:10858  Mcs.economics'MATHEMATICAL  → MATHEMATICAL of Mcs.economics
+  HitpStnEcon000:11046  Mcs.Concept'NAME (Name)  → NAME of Mcs.Concept (Name)
+  HitpStnEcon000:11088  Mcs.Concept'DEFINITION (Definition)  → DEFINITION of Mcs.Concept (Definition)
+  --- McshStnlaw000003 (2)
+  McshStnlaw000003:1119  Eulaw.Specsdiv.Eu'part  → part of Eulaw.Specsdiv.Eu
+  McshStnlaw000003:3097  Eulaw.citizen's-initiative-035  → s-initiative-035 of Eulaw.citizen
+  --- McshStnlaw000006 (1)
+  McshStnlaw000006:15  Greece's-law  → s-law of Greece
+  --- McshTchInf000005 (3)
+  McshTchInf000005:739  09_output'unit of lagBnr  → unit of 09_output of lagBnr
+  McshTchInf000005:802  output'word of lagBnr  → word of output of lagBnr
+  McshTchInf000005:834  output'Sunt of lagBnr  → Sunt of output of lagBnr
+  --- McshTchInf000006 (8)
+  McshTchInf000006:2063  06_Srcdalgo'node of Srcdlago  → node of 06_Srcdalgo of Srcdlago
+  McshTchInf000006:2140  09_Srcdalgo'unit of Srcdlago  → unit of 09_Srcdalgo of Srcdlago
+  McshTchInf000006:2325  Srcdalgo'word of Srcdlago  → word of Srcdalgo of Srcdlago
+  McshTchInf000006:2505  Srcdalgo'semantic-unit of Srcdlago  → semantic-unit of Srcdalgo of Srcdlago
+  McshTchInf000006:2864  Srcdalgo'phrase of Srcdlago  → phrase of Srcdalgo of Srcdlago
+  McshTchInf000006:2894  Srcdalgo'sentence of Srcdlago  → sentence of Srcdalgo of Srcdlago
+  McshTchInf000006:2974  Srcdalgo'section of Srcdlago  → section of Srcdalgo of Srcdlago
+  McshTchInf000006:3032  Srcdalgo'root of Srcdlago  → root of Srcdalgo of Srcdlago
+  --- McshTchInf000007 (1)
+  McshTchInf000007:2412  Xmlnamespace'name  → name of Xmlnamespace
+  --- McshTchInf000008 (21)
+  McshTchInf000008:361  Hitphtml'Html5  → Html5 of Hitphtml
+  McshTchInf000008:375  Hitphtml'title-content-tree--document  → title-content-tree--document of Hitphtml
+  McshTchInf000008:592  Hitphtml'title  → title of Hitphtml
+  McshTchInf000008:612  Hitphtml'content  → content of Hitphtml
+  McshTchInf000008:627  Hitphtml'content-unit  → content-unit of Hitphtml
+  McshTchInf000008:737  Hitphtml'file  → file of Hitphtml
+  McshTchInf000008:759  Hitphtml'IDs  → IDs of Hitphtml
+  McshTchInf000008:828  Hitphtml'links  → links of Hitphtml
+  McshTchInf000008:846  Hitphtml'math-formulas  → math-formulas of Hitphtml
+  McshTchInf000008:1320  Hitpjsbr'file  → file of Hitpjsbr
+  McshTchInf000008:1341  Hitpjsbr'API  → API of Hitpjsbr
+  McshTchInf000008:2545  Hitpjsbr'table-of-contents  → table-of-contents of Hitpjsbr
+  McshTchInf000008:2613  Hitpjsbr'tree-info  → tree-info of Hitpjsbr
+  McshTchInf000008:3514  Hitparcho'title  → title of Hitparcho
+  McshTchInf000008:3567  Hitparcho'content  → content of Hitparcho
+  McshTchInf000008:3582  Hitparcho'content_unit  → content_unit of Hitparcho
+  McshTchInf000008:3600  Hitparcho'node  → node of Hitparcho
+  McshTchInf000008:3613  Hitp_archo_node'number  → number of Hitp_archo_node
+  McshTchInf000008:3744  Hitparcho'level  → level of Hitparcho
+  McshTchInf000008:3756  Hitparcho'depth|height  → depth|height of Hitparcho
+  McshTchInf000008:3769  Hitparcho'table_of_contents  → table_of_contents of Hitparcho
+  --- McshTchInf000010 (57)
+  McshTchInf000010:73  09_Jsalgo'UNIT of Jsgnlago  → UNIT of 09_Jsalgo of Jsgnlago
+  McshTchInf000010:116  Jsgnlago'benefit  → benefit of Jsgnlago
+  McshTchInf000010:120  Jsgnlago'simplicity  → simplicity of Jsgnlago
+  McshTchInf000010:127  Jsgnlago'inheritance  → inheritance of Jsgnlago
+  McshTchInf000010:151  Jsgnlago'problem  → problem of Jsgnlago
+  McshTchInf000010:155  Jsgnlago'naming-mechanism  → naming-mechanism of Jsgnlago
+  McshTchInf000010:164  Jsgnlago'instanceof  → instanceof of Jsgnlago
+  McshTchInf000010:194  Jsgnlago'object-scope  → object-scope of Jsgnlago
+  McshTchInf000010:213  Jsgnlago'todo  → todo of Jsgnlago
+  McshTchInf000010:256  Jsalgo'WORD of Jsgnlago  → WORD of Jsalgo of Jsgnlago
+  McshTchInf000010:271  Jsalgo'SEMANTIC-UNIT of Jsgnlago  → SEMANTIC-UNIT of Jsalgo of Jsgnlago
+  McshTchInf000010:1137  Jsa'element  → element of Jsa
+  McshTchInf000010:1152  Jsa'index  → index of Jsa
+  McshTchInf000010:1164  Jsa'member  → member of Jsa
+  McshTchInf000010:1188  Jsa'Array_function  → Array_function of Jsa
+  McshTchInf000010:1944  Jsa'creating  → creating of Jsa
+  McshTchInf000010:2091  Jsf'creation  → creation of Jsf
+  McshTchInf000010:2117  Jsf'call  → call of Jsf
+  McshTchInf000010:2137  Jsf'input  → input of Jsf
+  McshTchInf000010:2148  Jsf'parameter  → parameter of Jsf
+  McshTchInf000010:2163  Jsf'argument  → argument of Jsf
+  McshTchInf000010:2178  Jsf'output  → output of Jsf
+  McshTchInf000010:2207  Jsf'name  → name of Jsf
+  McshTchInf000010:2224  Jsf'member  → member of Jsf
+  McshTchInf000010:2237  Jsf'scope (  → scope of Jsf (
+  McshTchInf000010:2249  Jsf'a-function-is-an-object  → a-function-is-an-object of Jsf
+  McshTchInf000010:2327  Jsf'Function-function  → Function-function of Jsf
+  McshTchInf000010:3216  Number.prototype'toLocaleString-function  → toLocaleString-function of Number.prototype
+  McshTchInf000010:3661  String.prototype'match-function (  → match-function of String.prototype (
+  McshTchInf000010:3666  String.prototype'replace-function (  → replace-function of String.prototype (
+  McshTchInf000010:3671  String.prototype'split-function (  → split-function of String.prototype (
+  McshTchInf000010:3849  String.prototype'codePointAt_function  → codePointAt_function of String.prototype
+  McshTchInf000010:3867  String.prototype'match_function  → match_function of String.prototype
+  McshTchInf000010:3893  String.prototype'replace_function  → replace_function of String.prototype
+  McshTchInf000010:3930  String.prototype'split_function  → split_function of String.prototype
+  McshTchInf000010:3963  String.prototype'substring_function  → substring_function of String.prototype
+  McshTchInf000010:4078  Jsalgo'API of Jsgnlago  → API of Jsalgo of Jsgnlago
+  McshTchInf000010:4100  jsAPI'most-whole-object (global)  → most-whole-object of jsAPI (global)
+  McshTchInf000010:4134  Jsmwo'member  → member of Jsmwo
+  McshTchInf000010:4173  Jsmwo'whole-part-tree  → whole-part-tree of Jsmwo
+  McshTchInf000010:4213  jsAPI'most-generic-object (Object.prototype)  → most-generic-object of jsAPI (Object.prototype)
+  McshTchInf000010:4423  Jsgnlago'Error-function  → Error-function of Jsgnlago
+  McshTchInf000010:4472  Jsgnlago'JSON-object  → JSON-object of Jsgnlago
+  McshTchInf000010:4531  Jsgnlago'Math_object  → Math_object of Jsgnlago
+  McshTchInf000010:4558  Jsgnlago'Set-function  → Set-function of Jsgnlago
+  McshTchInf000010:4590  set'element-checking  → element-checking of set
+  McshTchInf000010:4605  set'element-adding  → element-adding of set
+  McshTchInf000010:4620  set'element-removing  → element-removing of set
+  McshTchInf000010:4636  set'convert-to-array  → convert-to-array of set
+  McshTchInf000010:4651  set'relation-to-array  → relation-to-array of set
+  McshTchInf000010:4666  Jsgnlago'console_object  → console_object of Jsgnlago
+  McshTchInf000010:4691  Jsgnlago'decodeURI_function  → decodeURI_function of Jsgnlago
+  McshTchInf000010:4984  Jsalgo'PHRASE of Jsgnlago  → PHRASE of Jsalgo of Jsgnlago
+  McshTchInf000010:5010  Jsalgo'SENTENCE of Jsgnlago  → SENTENCE of Jsalgo of Jsgnlago
+  McshTchInf000010:5424  Jsalgo'SECTION of Jsgnlago  → SECTION of Jsalgo of Jsgnlago
+  McshTchInf000010:5438  Jsalgo'ROOT of Jsgnlago  → ROOT of Jsalgo of Jsgnlago
+  McshTchInf000010:6256  pgm'Execution  → Execution of pgm
+  --- McshTchInf000011 (17)
+  McshTchInf000011:142  Jsbrlago-archo'HML  → HML of Jsbrlago-archo
+  McshTchInf000011:149  Jsbrlago-archo'CSS  → CSS of Jsbrlago-archo
+  McshTchInf000011:1537  Jsbrmwo'member  → member of Jsbrmwo
+  McshTchInf000011:2792  Jsbrlib'adding  → adding of Jsbrlib
+  McshTchInf000011:2885  Jsbrpgm'execution  → execution of Jsbrpgm
+  McshTchInf000011:3082  JsbralgoBrowser'Window-function  → Window-function of JsbralgoBrowser
+  McshTchInf000011:3397  Jsbrevent'Event-object (oEvt)  → Event-object of Jsbrevent (oEvt)
+  McshTchInf000011:3467  Jsbrevent'EventListener-function (fEvtlnr)  → EventListener-function of Jsbrevent (fEvtlnr)
+  McshTchInf000011:3485  Jsbrevent'EventTarget-object (oEvttgt)  → EventTarget-object of Jsbrevent (oEvttgt)
+  McshTchInf000011:3546  Jsbrevent'Event-function  → Event-function of Jsbrevent
+  McshTchInf000011:3618  Jsbrevent'EventTarget-function  → EventTarget-function of Jsbrevent
+  McshTchInf000011:4094  'Html_'DOM  → DOM of 'Html_
+  McshTchInf000011:4111  'Html_'document-object  → document-object of 'Html_
+  McshTchInf000011:4771  Jsbr'fetch-Api  → fetch-Api of Jsbr
+  McshTchInf000011:4789  Jsbr'fetch-function  → fetch-function of Jsbr
+  McshTchInf000011:4812  Jsbr'Response-function  → Response-function of Jsbr
+  McshTchInf000011:4832  Jsbr'XMLHttpRequest-function  → XMLHttpRequest-function of Jsbr
+  --- McshTchInf000012 (65)
+  McshTchInf000012:214  algo'UNIT  → UNIT of algo
+  McshTchInf000012:229  algo'WORD  → WORD of algo
+  McshTchInf000012:242  algo'SEMANTIC-UNIT  → SEMANTIC-UNIT of algo
+  McshTchInf000012:528  Jsndmc'caching  → caching of Jsndmc
+  McshTchInf000012:553  Jsndmc'member  → member of Jsndmc
+  McshTchInf000012:565  Jsndmmbr'exporting  → exporting of Jsndmmbr
+  McshTchInf000012:578  Jsndmmbr'importing  → importing of Jsndmmbr
+  McshTchInf000012:750  Jsndmobt'member  → member of Jsndmobt
+  McshTchInf000012:971  Jsndlago-require'Destructuring-assignment  → Destructuring-assignment of Jsndlago-require
+  McshTchInf000012:988  Jsndlago-require'Import-core-module  → Import-core-module of Jsndlago-require
+  McshTchInf000012:1006  Jsndlago-require'Import-member-of-module  → Import-member-of-module of Jsndlago-require
+  McshTchInf000012:1019  Jsndlago-require'Import-from-relative-path  → Import-from-relative-path of Jsndlago-require
+  McshTchInf000012:1036  Jsndlago-require'Import-from-absolute-path  → Import-from-absolute-path of Jsndlago-require
+  McshTchInf000012:1051  Jsndlago-require'Import-by-searching  → Import-by-searching of Jsndlago-require
+  McshTchInf000012:1073  Jsndlago-require'Import-JSON-file  → Import-JSON-file of Jsndlago-require
+  McshTchInf000012:1087  Jsndlago-require'Member  → Member of Jsndlago-require
+  McshTchInf000012:1208  Jsndmc'npm-tool (  → npm-tool of Jsndmc (
+  McshTchInf000012:1213  Jsndmc'repository  → repository of Jsndmc
+  McshTchInf000012:1225  Jsndmc'npm-registry (npmjs.org)  → npm-registry of Jsndmc (npmjs.org)
+  McshTchInf000012:1249  Jsndmc'node_modules-directory  → node_modules-directory of Jsndmc
+  McshTchInf000012:1321  Jsndmc'Infrsc  → Infrsc of Jsndmc
+  McshTchInf000012:1339  Jsndmc'Converting-AMD-to-NodeJs-modules  → Converting-AMD-to-NodeJs-modules of Jsndmc
+  McshTchInf000012:1357  Jsndmc'stability-index (0 - 3)  → stability-index of Jsndmc (0 - 3)
+  McshTchInf000012:1414  Jsndmc'wraper  → wraper of Jsndmc
+  McshTchInf000012:1614  mfEvents'member  → member of mfEvents
+  McshTchInf000012:1701  mfEvents'listener-function  → listener-function of mfEvents
+  McshTchInf000012:1805  Jsndlago'stream-object  → stream-object of Jsndlago
+  McshTchInf000012:2222  moHttp'member  → member of moHttp
+  McshTchInf000012:2932  lagJsndutil'member  → member of lagJsndutil
+  McshTchInf000012:3181  algo'API  → API of algo
+  McshTchInf000012:3198  JsndAPI'most-whole-object (global)  → most-whole-object of JsndAPI (global)
+  McshTchInf000012:3256  JsndAPI'global-member  → global-member of JsndAPI
+  McshTchInf000012:3475  JsndAPI'most-generic-object (Object.prototype)  → most-generic-object of JsndAPI (Object.prototype)
+  McshTchInf000012:3587  JsndAPI'ArrayBuffer-function  → ArrayBuffer-function of JsndAPI
+  McshTchInf000012:3630  JsndAPI'Buffer-function (2.stable)  → Buffer-function of JsndAPI (2.stable)
+  McshTchInf000012:3655  JsndAPI'console-object  → console-object of JsndAPI
+  McshTchInf000012:3683  JsndAPI'module-object (  → module-object of JsndAPI (
+  McshTchInf000012:3688  JsndAPI'process-object  → process-object of JsndAPI
+  McshTchInf000012:3716  Jsndlago-process'member  → member of Jsndlago-process
+  McshTchInf000012:3733  Jsndlago-process'argv-array  → argv-array of Jsndlago-process
+  McshTchInf000012:3766  Jsndlago-process'versions-object  → versions-object of Jsndlago-process
+  McshTchInf000012:3806  JsndAPI'require  → require of JsndAPI
+  McshTchInf000012:3811  JsndAPI'CORE-MODULES  → CORE-MODULES of JsndAPI
+  McshTchInf000012:3816  JsndAPI'TIMER-FUNCTIONS  → TIMER-FUNCTIONS of JsndAPI
+  McshTchInf000012:3871  algo'PHRASE  → PHRASE of algo
+  McshTchInf000012:3885  algo'SENTENCE  → SENTENCE of algo
+  McshTchInf000012:4549  Jsndpgm'Installing  → Installing of Jsndpgm
+  McshTchInf000012:4570  Jsndpgm'Executing  → Executing of Jsndpgm
+  McshTchInf000012:4594  Jsndpgm'Debugging (ljndbg)  → Debugging of Jsndpgm (ljndbg)
+  McshTchInf000012:4620  lagJsnddbg'debugger-statement  → debugger-statement of lagJsnddbg
+  McshTchInf000012:4637  Jsndpgm'Dependency  → Dependency of Jsndpgm
+  McshTchInf000012:6390  ESLint'configuring  → configuring of ESLint
+  McshTchInf000012:6407  ESLint'configuration-file  → configuration-file of ESLint
+  McshTchInf000012:6438  ESLint'configuration-rule  → configuration-rule of ESLint
+  McshTchInf000012:7870  lagJsndexpress'API  → API of lagJsndexpress
+  McshTchInf000012:7878  lagJsndexpress'Resource  → Resource of lagJsndexpress
+  McshTchInf000012:7961  lagJsndjake'namespace  → namespace of lagJsndjake
+  McshTchInf000012:7999  lagJsndjake'task  → task of lagJsndjake
+  McshTchInf000012:8063  lagJsndjake'usage  → usage of lagJsndjake
+  McshTchInf000012:10281  Jsndlago-Repl'module (core 2.stable)  → module of Jsndlago-Repl (core 2.stable)
+  McshTchInf000012:10339  runtime'Synopsis  → Synopsis of runtime
+  McshTchInf000012:10351  runtime'option  → option of runtime
+  McshTchInf000012:10767  runtime'argument  → argument of runtime
+  McshTchInf000012:10800  runtime'installing  → installing of runtime
+  McshTchInf000012:10858  runtime'environment-variables  → environment-variables of runtime
+  --- McshTchInf000013 (37)
+  McshTchInf000013:144  algo'API  → API of algo
+  McshTchInf000013:159  Jselapi'process  → process of Jselapi
+  McshTchInf000013:185  Jselapi'global_object  → global_object of Jselapi
+  McshTchInf000013:230  Jselapi'MAIN-PROCESS  → MAIN-PROCESS of Jselapi
+  McshTchInf000013:292  Jselapi'BrowserView_function  → BrowserView_function of Jselapi
+  McshTchInf000013:312  Jselapi'BrowserWindow_function  → BrowserWindow_function of Jselapi
+  McshTchInf000013:350  Jselapi'BrowserWindow-object  → BrowserWindow-object of Jselapi
+  McshTchInf000013:373  Jselapi'Menu_function  → Menu_function of Jselapi
+  McshTchInf000013:392  Jselapi'Menu_object  → Menu_object of Jselapi
+  McshTchInf000013:415  Jselapi'MenuItem_function  → MenuItem_function of Jselapi
+  McshTchInf000013:430  Jselapi'MenuItem_object  → MenuItem_object of Jselapi
+  McshTchInf000013:489  Jselapi'TouchBar_function  → TouchBar_function of Jselapi
+  McshTchInf000013:502  Jselapi'Tray_function  → Tray_function of Jselapi
+  McshTchInf000013:515  Jselapi'app_object  → app_object of Jselapi
+  McshTchInf000013:546  Jselapi'autoUpdater_object  → autoUpdater_object of Jselapi
+  McshTchInf000013:572  Jselapi'clipboard_object  → clipboard_object of Jselapi
+  McshTchInf000013:594  Jselapi'contentTracing_object  → contentTracing_object of Jselapi
+  McshTchInf000013:618  Jselapi'crashReporter_object  → crashReporter_object of Jselapi
+  McshTchInf000013:642  Jselapi'dialog_object  → dialog_object of Jselapi
+  McshTchInf000013:697  Jselapi'globalShortcut_object  → globalShortcut_object of Jselapi
+  McshTchInf000013:723  Jselapi'ipcMain_object  → ipcMain_object of Jselapi
+  McshTchInf000013:748  Jselapi'nativeImage_object  → nativeImage_object of Jselapi
+  McshTchInf000013:771  Jselapi'net_object  → net_object of Jselapi
+  McshTchInf000013:804  Jselapi'powerMonitor_object  → powerMonitor_object of Jselapi
+  McshTchInf000013:831  Jselapi'powerSaveBlocker_object  → powerSaveBlocker_object of Jselapi
+  McshTchInf000013:855  Jselapi'protocol_object  → protocol_object of Jselapi
+  McshTchInf000013:875  Jselapi'screen_object  → screen_object of Jselapi
+  McshTchInf000013:916  Jselapi'session_object  → session_object of Jselapi
+  McshTchInf000013:940  Jselapi'shell_object  → shell_object of Jselapi
+  McshTchInf000013:966  Jselapi'systemPreferences_object  → systemPreferences_object of Jselapi
+  McshTchInf000013:996  Jselapi'webContents_object  → webContents_object of Jselapi
+  McshTchInf000013:1051  Jselapi'RENDERER-PROCESS  → RENDERER-PROCESS of Jselapi
+  McshTchInf000013:1088  Jselapi'desktopCapturer-object  → desktopCapturer-object of Jselapi
+  McshTchInf000013:1101  Jselapi'ipcRenderer-object  → ipcRenderer-object of Jselapi
+  McshTchInf000013:1124  Jselapi'remote-object  → remote-object of Jselapi
+  McshTchInf000013:1149  Jselapi'webFrame-object  → webFrame-object of Jselapi
+  McshTchInf000013:1292  Jselapppkgjson'name_string_member  → name_string_member of Jselapppkgjson
+  --- McshTchInf000014 (1)
+  McshTchInf000014:5239  bnr-algo'file of Wasmlago  → file of bnr-algo of Wasmlago
+  --- McshTchInf000015 (23)
+  McshTchInf000015:5727  Agntasset.FOUNDER'S-TOKEN  → S-TOKEN of Agntasset.FOUNDER
+  McshTchInf000015:8652  bitpay'Card  → Card of bitpay
+  McshTchInf000015:8692  bitstamp'office  → office of bitstamp
+  McshTchInf000015:8792  ognChangelly'Fee  → Fee of ognChangelly
+  McshTchInf000015:8806  ognChangelly'exchange-rate-chart  → exchange-rate-chart of ognChangelly
+  McshTchInf000015:8867  coinbase'exchange  → exchange of coinbase
+  McshTchInf000015:8880  coinbase'API  → API of coinbase
+  McshTchInf000015:8962  lakebtc'security  → security of lakebtc
+  McshTchInf000015:12203  AgntsrvcEcon'recruitmen-sector  → recruitmen-sector of AgntsrvcEcon
+  McshTchInf000015:12235  AgntsrvcEcon'sharing_economy  → sharing_economy of AgntsrvcEcon
+  McshTchInf000015:12276  AgntsrvcEcon'traditional-asset-tokenization  → traditional-asset-tokenization of AgntsrvcEcon
+  McshTchInf000015:12305  AgntsrvcEcon'resource  → resource of AgntsrvcEcon
+  McshTchInf000015:13408  netAlgo'2019  → 2019 of netAlgo
+  McshTchInf000015:13423  netAlgo'2018  → 2018 of netAlgo
+  McshTchInf000015:13445  netAlgo'2017  → 2017 of netAlgo
+  McshTchInf000015:13487  netAlgo'2016  → 2016 of netAlgo
+  McshTchInf000015:13509  netAlgo'2015  → 2015 of netAlgo
+  McshTchInf000015:13533  netAlgo'2014  → 2014 of netAlgo
+  McshTchInf000015:13555  netAlgo'2013  → 2013 of netAlgo
+  McshTchInf000015:13585  netAlgo'2012  → 2012 of netAlgo
+  McshTchInf000015:13606  netAlgo'2011  → 2011 of netAlgo
+  McshTchInf000015:13643  netAlgo'2010  → 2010 of netAlgo
+  McshTchInf000015:13664  netAlgo'2009  → 2009 of netAlgo
+  --- McshTchInf000016 (193)
+  McshTchInf000016:208  security'consensus-algorithm (  → consensus-algorithm of security (
+  McshTchInf000016:213  security'51-percent-attack  → 51-percent-attack of security
+  McshTchInf000016:224  security'resource  → resource of security
+  McshTchInf000016:422  miner-node'mining  → mining of miner-node
+  McshTchInf000016:451  miner-node'Pre-mining  → Pre-mining of miner-node
+  McshTchInf000016:468  miner-node'CLOUD-MINING  → CLOUD-MINING of miner-node
+  McshTchInf000016:488  miner-node'MINING-POOL  → MINING-POOL of miner-node
+  McshTchInf000016:505  Bkcnmnpl'fee  → fee of Bkcnmnpl
+  McshTchInf000016:510  Bkcnmnpl'token-supported  → token-supported of Bkcnmnpl
+  McshTchInf000016:1005  Bkcnasset'short-name  → short-name of Bkcnasset
+  McshTchInf000016:1019  Bkcnasset'icon  → icon of Bkcnasset
+  McshTchInf000016:1099  Bkcnasset'exchange-rate-volatility  → exchange-rate-volatility of Bkcnasset
+  McshTchInf000016:1458  Bkcnasset'acquiring  → acquiring of Bkcnasset
+  McshTchInf000016:1480  Bkcnasset'issuing  → issuing of Bkcnasset
+  McshTchInf000016:1496  Bkcnasset'rate-of-issuance  → rate-of-issuance of Bkcnasset
+  McshTchInf000016:1817  bynevuC'exchange-rate  → exchange-rate of bynevuC
+  McshTchInf000016:3765  jaxwlt'exchange-value-unit  → exchange-value-unit of jaxwlt
+  McshTchInf000016:3787  jaxwlt'Fee  → Fee of jaxwlt
+  McshTchInf000016:3807  jaxwlt'Doing  → Doing of jaxwlt
+  McshTchInf000016:3827  jaxwlt'Updating  → Updating of jaxwlt
+  McshTchInf000016:4198  Wings'organization  → organization of Wings
+  McshTchInf000016:4220  Dogn'managing  → managing of Dogn
+  McshTchInf000016:4263  Wings'resource  → resource of Wings
+  McshTchInf000016:4443  part'header of Bkcnblock  → header of part of Bkcnblock
+  McshTchInf000016:4462  part'transaction-list of Bkcnblock  → transaction-list of part of Bkcnblock
+  McshTchInf000016:6058  scnet'Resource  → Resource of scnet
+  McshTchInf000016:8331  Tzs-net'Resource  → Resource of Tzs-net
+  McshTchInf000016:8476  zecnet'Blockchain (zecbcn)  → Blockchain of zecnet (zecbcn)
+  McshTchInf000016:8480  zecnet'Block-explorer (zecber)  → Block-explorer of zecnet (zecber)
+  McshTchInf000016:8489  zecnet'Consensus-algorithm  → Consensus-algorithm of zecnet
+  McshTchInf000016:8529  zecnet'Resource  → Resource of zecnet
+  McshTchInf000016:8589  ĐLisk'Protocol  → Protocol of ĐLisk
+  McshTchInf000016:8597  ĐLisk'Node  → Node of ĐLisk
+  McshTchInf000016:8605  lsknodeMnr'Mining  → Mining of lsknodeMnr
+  McshTchInf000016:8626  ĐLisk'Blockchain  → Blockchain of ĐLisk
+  McshTchInf000016:8638  Lsk-bcn'Block-Explorer  → Block-Explorer of Lsk-bcn
+  McshTchInf000016:8656  Lsk-bcn'Consensus-algorithm (lskcsa)  → Consensus-algorithm of Lsk-bcn (lskcsa)
+  McshTchInf000016:8698  LSK'exchange-rate  → exchange-rate of LSK
+  McshTchInf000016:8709  LSK'Organization  → Organization of LSK
+  McshTchInf000016:8753  ĐLisk'Bapp  → Bapp of ĐLisk
+  McshTchInf000016:8779  ĐLisk'Problem  → Problem of ĐLisk
+  McshTchInf000016:8798  ĐLisk'Human  → Human of ĐLisk
+  McshTchInf000016:8807  ĐLisk'Relation-to-ethereum  → Relation-to-ethereum of ĐLisk
+  McshTchInf000016:8827  ĐLisk'resource  → resource of ĐLisk
+  McshTchInf000016:8899  waves-net'Protocol (wavprl)  → Protocol of waves-net (wavprl)
+  McshTchInf000016:8903  wavprl'White-paper  → White-paper of wavprl
+  McshTchInf000016:9132  waves-net'Blockchain (wavbcn)  → Blockchain of waves-net (wavbcn)
+  McshTchInf000016:9136  wavbcn'Block-Explorer (wavbex)  → Block-Explorer of wavbcn (wavbex)
+  McshTchInf000016:9145  wavbcn'Consenus-algorithm  → Consenus-algorithm of wavbcn
+  McshTchInf000016:9186  wavesevuC'OgnExchange  → OgnExchange of wavesevuC
+  McshTchInf000016:9200  waves-net'Funding  → Funding of waves-net
+  McshTchInf000016:9214  waves-net'Reletion-to-ethereum  → Reletion-to-ethereum of waves-net
+  McshTchInf000016:9232  waves-net'Resource  → Resource of waves-net
+  McshTchInf000016:9248  waves-net'Service (wavsvc)  → Service of waves-net (wavsvc)
+  McshTchInf000016:9330  AgntDcrd'Protocol  → Protocol of AgntDcrd
+  McshTchInf000016:9334  dcrprl'Constitution (dcrcttn)  → Constitution of dcrprl (dcrcttn)
+  McshTchInf000016:9428  AgntDcrd'node  → node of AgntDcrd
+  McshTchInf000016:9439  Dcrdnode'Peer  → Peer of Dcrdnode
+  McshTchInf000016:9482  AgntDcrd'Mining  → Mining of AgntDcrd
+  McshTchInf000016:9559  AgntDcrd'Blockchain (dcrbcn)  → Blockchain of AgntDcrd (dcrbcn)
+  McshTchInf000016:9563  dcrbcn'Block (dcrblk)  → Block of dcrbcn (dcrblk)
+  McshTchInf000016:9573  dcrblk'Hash  → Hash of dcrblk
+  McshTchInf000016:9580  dcrblk'Header  → Header of dcrblk
+  McshTchInf000016:9716  dcrbcn'Block-Explorer (dcrbex)  → Block-Explorer of dcrbcn (dcrbex)
+  McshTchInf000016:9725  dcrbcn'Consensus-algorithm  → Consensus-algorithm of dcrbcn
+  McshTchInf000016:9774  dcrbcn'Address  → Address of dcrbcn
+  McshTchInf000016:9797  dcrbcn'Hash-rate  → Hash-rate of dcrbcn
+  McshTchInf000016:9829  AgntDcrd'Governance-system (dcrgov)  → Governance-system of AgntDcrd (dcrgov)
+  McshTchInf000016:9846  dcrgov'Decred-Assembly (dcrasl)  → Decred-Assembly of dcrgov (dcrasl)
+  McshTchInf000016:9878  AgntDcrd'rogram  → rogram of AgntDcrd
+  McshTchInf000016:9889  Dcrpgm'AgntDcrd_development  → AgntDcrd_development of Dcrpgm
+  McshTchInf000016:9905  Dcrpgm'API  → API of Dcrpgm
+  McshTchInf000016:9937  Dcrpgm'File  → File of Dcrpgm
+  McshTchInf000016:9980  dcrd'Option  → Option of dcrd
+  McshTchInf000016:10075  dcrctl'Command (dcrctl [command])  → Command of dcrctl (dcrctl [command])
+  McshTchInf000016:10412  AgntDcrd'Wallet (dcrwlt)  → Wallet of AgntDcrd (dcrwlt)
+  McshTchInf000016:10428  dcrwlt'Account  → Account of dcrwlt
+  McshTchInf000016:10469  dcrwltCli'Directory  → Directory of dcrwltCli
+  McshTchInf000016:10474  dcrwltCli'File  → File of dcrwltCli
+  McshTchInf000016:10541  dcrwltCli'Money  → Money of dcrwltCli
+  McshTchInf000016:10545  dcrwltCli'Sending-to-address  → Sending-to-address of dcrwltCli
+  McshTchInf000016:10557  dcrwltCli'Ballance  → Ballance of dcrwltCli
+  McshTchInf000016:10566  dcrwltCli'Passphrase  → Passphrase of dcrwltCli
+  McshTchInf000016:10578  dcrwltCli'Creating  → Creating of dcrwltCli
+  McshTchInf000016:10592  dcrwltCli'Connecting-to-network  → Connecting-to-network of dcrwltCli
+  McshTchInf000016:10605  dcrwltCli'Deleting  → Deleting of dcrwltCli
+  McshTchInf000016:10648  AgntDcrd'Security  → Security of AgntDcrd
+  McshTchInf000016:10661  AgntDcrd'Resource  → Resource of AgntDcrd
+  McshTchInf000016:10822  pivxnet'Resource  → Resource of pivxnet
+  McshTchInf000016:10893  btsnet'Protocol (btsprl)  → Protocol of btsnet (btsprl)
+  McshTchInf000016:11654  btsnet'Blockchain (btsbcn)  → Blockchain of btsnet (btsbcn)
+  McshTchInf000016:11658  btsbcn'Block (btsblk)  → Block of btsbcn (btsblk)
+  McshTchInf000016:11677  btsbcn'Block-Explorer (btsbex)  → Block-Explorer of btsbcn (btsbex)
+  McshTchInf000016:11716  btsnet'Governance-system (btsgov)  → Governance-system of btsnet (btsgov)
+  McshTchInf000016:11728  btsnet'Commitee  → Commitee of btsnet
+  McshTchInf000016:11744  btsnet'Human (btshmn)  → Human of btsnet (btshmn)
+  McshTchInf000016:11768  btsnet'Organization (btsogn)  → Organization of btsnet (btsogn)
+  McshTchInf000016:11794  btsnet'Resource (btsrsc)  → Resource of btsnet (btsrsc)
+  McshTchInf000016:11903  xemnet'Protocol  → Protocol of xemnet
+  McshTchInf000016:11907  xemprl'Implementation-language  → Implementation-language of xemprl
+  McshTchInf000016:11921  xemprl'Resource  → Resource of xemprl
+  McshTchInf000016:11936  xemnet'Node  → Node of xemnet
+  McshTchInf000016:11940  xemnod'Node-server (NIS)  → Node-server of xemnod (NIS)
+  McshTchInf000016:11960  xemnet'Blockchain  → Blockchain of xemnet
+  McshTchInf000016:11972  xembcn'Block (xemblk)  → Block of xembcn (xemblk)
+  McshTchInf000016:11976  xemblk'Block-time  → Block-time of xemblk
+  McshTchInf000016:11986  xembcn'Block-Explorer (xembex)  → Block-Explorer of xembcn (xembex)
+  McshTchInf000016:11997  xemnet'Consensus-algorithm  → Consensus-algorithm of xemnet
+  McshTchInf000016:12012  xembcn'Address  → Address of xembcn
+  McshTchInf000016:12069  XemevuC'OgnExchange  → OgnExchange of XemevuC
+  McshTchInf000016:12089  XemevuC'exchange-rate  → exchange-rate of XemevuC
+  McshTchInf000016:12104  XemevuC'Distribution  → Distribution of XemevuC
+  McshTchInf000016:12117  XemevuC'Issuance  → Issuance of XemevuC
+  McshTchInf000016:12154  xemnet'Program  → Program of xemnet
+  McshTchInf000016:12179  xemnet'Wallet  → Wallet of xemnet
+  McshTchInf000016:12183  xemnet'Light-wallet  → Light-wallet of xemnet
+  McshTchInf000016:12188  xemnet'Mobile-wallet  → Mobile-wallet of xemnet
+  McshTchInf000016:12193  xemnet'Nanowallet  → Nanowallet of xemnet
+  McshTchInf000016:12199  xemnet'Organization  → Organization of xemnet
+  McshTchInf000016:12203  xemnet'NEM-Foundation  → NEM-Foundation of xemnet
+  McshTchInf000016:12218  xemnet'Problem  → Problem of xemnet
+  McshTchInf000016:12245  xemnet'Resource  → Resource of xemnet
+  McshTchInf000016:12261  xemnet'DOING  → DOING of xemnet
+  McshTchInf000016:12266  xemnet'Service  → Service of xemnet
+  McshTchInf000016:12278  xemnet'Namespace  → Namespace of xemnet
+  McshTchInf000016:12294  xemnet'Mosaic  → Mosaic of xemnet
+  McshTchInf000016:12405  masternode'owner (  → owner of masternode (
+  McshTchInf000016:13144  Ddash-govc'funding  → funding of Ddash-govc
+  McshTchInf000016:13157  Ddash_govc'owner_of_masternode  → owner_of_masternode of Ddash_govc
+  McshTchInf000016:13173  Ddash-govc'proposal  → proposal of Ddash-govc
+  McshTchInf000016:13277  Ddash-govc'vote  → vote of Ddash-govc
+  McshTchInf000016:13293  Ddash-govc'resource  → resource of Ddash-govc
+  McshTchInf000016:13375  dashbcn'Block-Explorer (dashbex)  → Block-Explorer of dashbcn (dashbex)
+  McshTchInf000016:13432  Dash-net'v13  → v13 of Dash-net
+  McshTchInf000016:13515  emcnet'Blockchain  → Blockchain of emcnet
+  McshTchInf000016:13519  emcbcn'Block-explorer  → Block-explorer of emcbcn
+  McshTchInf000016:13543  emcevuC'exchange-rate (emcexr)  → exchange-rate of emcevuC (emcexr)
+  McshTchInf000016:13551  emcevuC'Geting  → Geting of emcevuC
+  McshTchInf000016:13565  emcnet'Resource  → Resource of emcnet
+  McshTchInf000016:13578  emcnet'DOING  → DOING of emcnet
+  McshTchInf000016:13582  emcnet'Service  → Service of emcnet
+  McshTchInf000016:13641  Nxt-net'Blockchain (nxtbcn)  → Blockchain of Nxt-net (nxtbcn)
+  McshTchInf000016:13645  nxtbcn'Block-Explorer (nxtbex)  → Block-Explorer of nxtbcn (nxtbex)
+  McshTchInf000016:13657  Nxt-net'exchange-value-unit (Nxtzasset)  → exchange-value-unit of Nxt-net (Nxtzasset)
+  McshTchInf000016:13792  Nxt-net'Program  → Program of Nxt-net
+  McshTchInf000016:13815  Nxt-net'Wallet  → Wallet of Nxt-net
+  McshTchInf000016:13829  Nxt-net'Security  → Security of Nxt-net
+  McshTchInf000016:13842  Nxt-net'Human  → Human of Nxt-net
+  McshTchInf000016:13890  Nxt-net'Organization  → Organization of Nxt-net
+  McshTchInf000016:13924  Nxt-net'Resource  → Resource of Nxt-net
+  McshTchInf000016:13939  Nxt-net'Doing  → Doing of Nxt-net
+  McshTchInf000016:14060  ppcnet'Protocol  → Protocol of ppcnet
+  McshTchInf000016:14064  ppcprl'White-paper {2012}  → White-paper of ppcprl {2012}
+  McshTchInf000016:14286  ppcnet'Concensous-exval-tokent (PPCevuC)  → Concensous-exval-tokent of ppcnet (PPCevuC)
+  McshTchInf000016:14344  ppcnet'Resource  → Resource of ppcnet
+  McshTchInf000016:14410  Ripple-net'Protocol  → Protocol of Ripple-net
+  McshTchInf000016:14424  Ripple-net'Node  → Node of Ripple-net
+  McshTchInf000016:14428  xrpnod'UNL  → UNL of xrpnod
+  McshTchInf000016:14501  Ripple-net'Blockchain  → Blockchain of Ripple-net
+  McshTchInf000016:14521  blockchain'Consensus-algorithm  → Consensus-algorithm of blockchain
+  McshTchInf000016:14548  blockchain'Transaction  → Transaction of blockchain
+  McshTchInf000016:14586  Ripple-net'ExvuXRP  → ExvuXRP of Ripple-net
+  McshTchInf000016:14619  DvXRP'exchange-rate  → exchange-rate of DvXRP
+  McshTchInf000016:14630  DvXRP'OgnEXCANGE  → OgnEXCANGE of DvXRP
+  McshTchInf000016:14643  DvXRP'Resource  → Resource of DvXRP
+  McshTchInf000016:14699  Ripple-net'Statistics  → Statistics of Ripple-net
+  McshTchInf000016:14718  Ripple-net'Program  → Program of Ripple-net
+  McshTchInf000016:14770  Ripple-net'Security  → Security of Ripple-net
+  McshTchInf000016:14785  Ripple-net'Human  → Human of Ripple-net
+  McshTchInf000016:14806  Ripple-net'Organization  → Organization of Ripple-net
+  McshTchInf000016:14824  xrpogn'Gateway  → Gateway of xrpogn
+  McshTchInf000016:14843  Ripple-net'Resource  → Resource of Ripple-net
+  McshTchInf000016:15000  ltcnet'Resource  → Resource of ltcnet
+  McshTchInf000016:15032  nmcnet'Blockchain  → Blockchain of nmcnet
+  McshTchInf000016:15036  nmcnet'Block-explorer  → Block-explorer of nmcnet
+  McshTchInf000016:15046  nmcnet'Concensus-evt (NMCevuC)  → Concensus-evt of nmcnet (NMCevuC)
+  McshTchInf000016:15182  Dfn-net'Protocol  → Protocol of Dfn-net
+  McshTchInf000016:15192  Dfn-prl'Threshold-Relay  → Threshold-Relay of Dfn-prl
+  McshTchInf000016:15205  Dfn-prl'Validation-Tower  → Validation-Tower of Dfn-prl
+  McshTchInf000016:15210  Dfn-prl'Validation-Tree  → Validation-Tree of Dfn-prl
+  McshTchInf000016:15215  Dfn-prl'USCID (Unique State Copy IDs)  → USCID of Dfn-prl (Unique State Copy IDs)
+  McshTchInf000016:15221  Dfn-net'Governance-system  → Governance-system of Dfn-net
+  McshTchInf000016:15257  Dfn-gov'Neuron  → Neuron of Dfn-gov
+  McshTchInf000016:15261  dfnnrn'Controller  → Controller of dfnnrn
+  McshTchInf000016:15272  dfnnrn'Creating  → Creating of dfnnrn
+  McshTchInf000016:15277  dfnnrn'Voting  → Voting of dfnnrn
+  McshTchInf000016:15284  Dfn-net'Resource  → Resource of Dfn-net
+  McshTchInf000016:15426  AgntHmiq'Protocol  → Protocol of AgntHmiq
+  McshTchInf000016:15430  AgntHmiq'White-paper  → White-paper of AgntHmiq
+  McshTchInf000016:16056  AgntHmiq'exchange-value-unit (HMQevuCN)  → exchange-value-unit of AgntHmiq (HMQevuCN)
+  McshTchInf000016:16070  AgntHmiq'Resource  → Resource of AgntHmiq
+  McshTchInf000016:16130  snrnet'exchange-value-unit (AMPevu)  → exchange-value-unit of snrnet (AMPevu)
+  McshTchInf000016:16172  snrnet'Resource  → Resource of snrnet
+  --- McshTchInf000017 (140)
+  McshTchInf000017:664  Bitcoin-hmn'mailing-list  → mailing-list of Bitcoin-hmn
+  McshTchInf000017:688  Bitcoin-miner'reward (  → reward of Bitcoin-miner (
+  McshTchInf000017:891  Bitcoin-node'Consensus  → Consensus of Bitcoin-node
+  McshTchInf000017:906  Bitcoin-node'Hardware  → Hardware of Bitcoin-node
+  McshTchInf000017:911  Bitcoin-node'Software  → Software of Bitcoin-node
+  McshTchInf000017:916  Bitcoin-node'Resource  → Resource of Bitcoin-node
+  McshTchInf000017:980  Bitcoin-nodFul'Bitcoin-Core (  → Bitcoin-Core of Bitcoin-nodFul (
+  McshTchInf000017:985  Bitcoin-nodFul'requirements  → requirements of Bitcoin-nodFul
+  McshTchInf000017:1081  Bitcoin-nodMnr'mining  → mining of Bitcoin-nodMnr
+  McshTchInf000017:1110  Bitcoin-nodMnr'Resource  → Resource of Bitcoin-nodMnr
+  McshTchInf000017:1125  Bitcoin-nodMnr'CLOUD-MINING  → CLOUD-MINING of Bitcoin-nodMnr
+  McshTchInf000017:1141  Bitcoin-nodMnr'COMPANY  → COMPANY of Bitcoin-nodMnr
+  McshTchInf000017:1238  BtcnexvuC'Adoption  → Adoption of BtcnexvuC
+  McshTchInf000017:1269  BtcnexvuC'Distribution  → Distribution of BtcnexvuC
+  McshTchInf000017:1282  BtcnexvuC'exchange-rate  → exchange-rate of BtcnexvuC
+  McshTchInf000017:1308  BtcnexvuC-rate'price  → price of BtcnexvuC-rate
+  McshTchInf000017:1347  BtcnexvuC-rate'API  → API of BtcnexvuC-rate
+  McshTchInf000017:1356  BtcnexvuC-rate'resource  → resource of BtcnexvuC-rate
+  McshTchInf000017:1525  BtcnexvuC'Issuance (link)  → Issuance of BtcnexvuC (link)
+  McshTchInf000017:1530  BtcnexvuC'Law (  → Law of BtcnexvuC (
+  McshTchInf000017:1535  BtcnexvuC'Wallet (  → Wallet of BtcnexvuC (
+  McshTchInf000017:1540  BtcnexvuC'ATM  → ATM of BtcnexvuC
+  McshTchInf000017:1607  BtcnexvuC'Resource  → Resource of BtcnexvuC
+  McshTchInf000017:1622  BtcnexvuC'DOING  → DOING of BtcnexvuC
+  McshTchInf000017:1626  BtcnexvuC'Double-spending  → Double-spending of BtcnexvuC
+  McshTchInf000017:1643  BtcnexvuC'Mixing  → Mixing of BtcnexvuC
+  McshTchInf000017:1855  Bitcoin-prcl'white-paper {2008}  → white-paper of Bitcoin-prcl {2008}
+  McshTchInf000017:2227  Bitcoin-prcl'implementation  → implementation of Bitcoin-prcl
+  McshTchInf000017:2237  Bitcoin-prcl'reference-implementation (  → reference-implementation of Bitcoin-prcl (
+  McshTchInf000017:2243  Bitcoin-prcl'BIP (Bitcoin-Improvement-Proposals | btcbip)  → BIP of Bitcoin-prcl (Bitcoin-Improvement-Proposals | btcbip)
+  McshTchInf000017:2274  Bitcoin-bip'Attribute  → Attribute of Bitcoin-bip
+  McshTchInf000017:2292  Bitcoin-prcl'sidechain  → sidechain of Bitcoin-prcl
+  McshTchInf000017:2309  Bitcoin_prcl'lightning_network  → lightning_network of Bitcoin_prcl
+  McshTchInf000017:2375  Bitcoin-prcl'Resource  → Resource of Bitcoin-prcl
+  McshTchInf000017:2737  Bitcoin-bcr'application-directory  → application-directory of Bitcoin-bcr
+  McshTchInf000017:2776  Bitcoin-bcr'bitcoind  → bitcoind of Bitcoin-bcr
+  McshTchInf000017:2797  Bitcoin-bcr'Bitcoin-cli  → Bitcoin-cli of Bitcoin-bcr
+  McshTchInf000017:2810  Bitcoin-bcr'Bitcoin-qt  → Bitcoin-qt of Bitcoin-bcr
+  McshTchInf000017:2823  Bitcoin-bcr'Internal-byte-order  → Internal-byte-order of Bitcoin-bcr
+  McshTchInf000017:2839  Bitcoin-bcr'RPC  → RPC of Bitcoin-bcr
+  McshTchInf000017:2852  Bitcoin-bcrrpc'Byte-order  → Byte-order of Bitcoin-bcrrpc
+  McshTchInf000017:2874  Bitcoin-bcr'Resource  → Resource of Bitcoin-bcr
+  McshTchInf000017:3213  Btcnwallet'Address (  → Address of Btcnwallet (
+  McshTchInf000017:3218  Btcnwallet'Security  → Security of Btcnwallet
+  McshTchInf000017:3248  Btcnwallet'Storage-medium  → Storage-medium of Btcnwallet
+  McshTchInf000017:3272  Btcnwallet'Key-pool  → Key-pool of Btcnwallet
+  McshTchInf000017:3291  Btcnwallet'Resource  → Resource of Btcnwallet
+  McshTchInf000017:3303  Btcnwallet'Doing  → Doing of Btcnwallet
+  McshTchInf000017:3449  Btcnwltpgm'doing  → doing of Btcnwltpgm
+  McshTchInf000017:3865  bwlns'Resource  → Resource of bwlns
+  McshTchInf000017:3928  Bitcoin-wltHd'HD-protocoll  → HD-protocoll of Bitcoin-wltHd
+  McshTchInf000017:3948  Bitcoin-wltHd'chain-code  → chain-code of Bitcoin-wltHd
+  McshTchInf000017:3976  Bitcoin-wltHd'child-key  → child-key of Bitcoin-wltHd
+  McshTchInf000017:3991  Bitcoin-wltHd'parent-key  → parent-key of Bitcoin-wltHd
+  McshTchInf000017:4005  Bitcoin-wltHd'Root-seed  → Root-seed of Bitcoin-wltHd
+  McshTchInf000017:4527  Btcnexch'Resource  → Resource of Btcnexch
+  McshTchInf000017:4868  Bitcoin-law'LEGAL  → LEGAL of Bitcoin-law
+  McshTchInf000017:4908  Bitcoin-law'RESTRICTED  → RESTRICTED of Bitcoin-law
+  McshTchInf000017:4923  Bitcoin-law'ILLEGAL  → ILLEGAL of Bitcoin-law
+  McshTchInf000017:5039  blockchain'Block  → Block of blockchain
+  McshTchInf000017:5070  block'PART  → PART of block
+  McshTchInf000017:5386  block'number-of-transaction-entries  → number-of-transaction-entries of block
+  McshTchInf000017:5391  block'vector-of-transactions  → vector-of-transactions of block
+  McshTchInf000017:5397  block'Height  → Height of block
+  McshTchInf000017:5425  block'Miner (  → Miner of block (
+  McshTchInf000017:5430  block'Proof-of-work (  → Proof-of-work of block (
+  McshTchInf000017:5435  block'Reward  → Reward of block
+  McshTchInf000017:5500  blockrwd'Transaction-fee (  → Transaction-fee of blockrwd (
+  McshTchInf000017:5505  blockrwd'Subsidy  → Subsidy of blockrwd
+  McshTchInf000017:5525  blockrwd'Halving  → Halving of blockrwd
+  McshTchInf000017:5558  block'Hash  → Hash of block
+  McshTchInf000017:5593  block'Size  → Size of block
+  McshTchInf000017:5652  block'Depth  → Depth of block
+  McshTchInf000017:5667  block'Blocktime  → Blocktime of block
+  McshTchInf000017:5680  block'Validation-rule (  → Validation-rule of block (
+  McshTchInf000017:5685  block'Explorer (  → Explorer of block (
+  McshTchInf000017:5703  block'DOING  → DOING of block
+  McshTchInf000017:5761  btc-mining'Mining-pool  → Mining-pool of btc-mining
+  McshTchInf000017:6059  blockchain'Block-explorer  → Block-explorer of blockchain
+  McshTchInf000017:6092  blockchain'Consensus-algorithm  → Consensus-algorithm of blockchain
+  McshTchInf000017:6133  blockchain'Consensus-rule  → Consensus-rule of blockchain
+  McshTchInf000017:6149  blockchaincsa'Proof-of-work (PoW)  → Proof-of-work of blockchaincsa (PoW)
+  McshTchInf000017:6190  blockchain'Address (Đbtc-ads)  → Address of blockchain (Đbtc-ads)
+  McshTchInf000017:6312  Bitcoin-ads'QR-code  → QR-code of Bitcoin-ads
+  McshTchInf000017:6327  Bitcoin-ads'Private-key  → Private-key of Bitcoin-ads
+  McshTchInf000017:6367  Bitcoin-ads'Public-key  → Public-key of Bitcoin-ads
+  McshTchInf000017:6392  Bitcoin-ads'Version-number  → Version-number of Bitcoin-ads
+  McshTchInf000017:6405  Bitcoin-ads'Public-key-hash  → Public-key-hash of Bitcoin-ads
+  McshTchInf000017:6422  Bitcoin-ads'Hash160  → Hash160 of Bitcoin-ads
+  McshTchInf000017:6439  Bitcoin-ads'Error-detection-checksum  → Error-detection-checksum of Bitcoin-ads
+  McshTchInf000017:6464  Bitcoin-ads'Base58  → Base58 of Bitcoin-ads
+  McshTchInf000017:6480  Bitcoin-ads'Base58check  → Base58check of Bitcoin-ads
+  McshTchInf000017:6502  Bitcoin-ads'Explorer  → Explorer of Bitcoin-ads
+  McshTchInf000017:6510  Bitcoin-ads'Taint-analysis  → Taint-analysis of Bitcoin-ads
+  McshTchInf000017:6524  Bitcoin-ads'DOING  → DOING of Bitcoin-ads
+  McshTchInf000017:6528  Bitcoin-ads'Creating  → Creating of Bitcoin-ads
+  McshTchInf000017:6540  Bitcoin-ads'Changing  → Changing of Bitcoin-ads
+  McshTchInf000017:6649  blockchain'Transaction (btctx)  → Transaction of blockchain (btctx)
+  McshTchInf000017:6700  Btcntx'PART  → PART of Btcntx
+  McshTchInf000017:6815  btc-txinpt'id (32B)  → id of btc-txinpt (32B)
+  McshTchInf000017:6835  btc-txinpt'vout (4B)  → vout of btc-txinpt (4B)
+  McshTchInf000017:6878  Bitcoin-txinpt'Coinbase  → Coinbase of Bitcoin-txinpt
+  McshTchInf000017:6898  Bitcoin-txinpt'Hash-type  → Hash-type of Bitcoin-txinpt
+  McshTchInf000017:7174  Btcntx'Bytes  → Bytes of Btcntx
+  McshTchInf000017:7187  Btcntx'Fee  → Fee of Btcntx
+  McshTchInf000017:7259  Btcntx'Script-language  → Script-language of Btcntx
+  McshTchInf000017:7294  Script'script  → script of Script
+  McshTchInf000017:7321  Script'script'Opcode  → Opcode of Script'script
+  McshTchInf000017:7457  btc-scriptSig'secp256k1-signature  → secp256k1-signature of btc-scriptSig
+  McshTchInf000017:7591  Script'evaluation  → evaluation of Script
+  McshTchInf000017:7623  Script'execution  → execution of Script
+  McshTchInf000017:7668  Script'resource  → resource of Script
+  McshTchInf000017:7681  Btcntx'Priority  → Priority of Btcntx
+  McshTchInf000017:7695  Btcntx'Time  → Time of Btcntx
+  McshTchInf000017:7703  Btcntx'Visibility  → Visibility of Btcntx
+  McshTchInf000017:7719  Btcntx'DOING  → DOING of Btcntx
+  McshTchInf000017:7723  Btcntx'Confirmation  → Confirmation of Btcntx
+  McshTchInf000017:7760  Btcntx'Resource  → Resource of Btcntx
+  McshTchInf000017:7925  Bitcoin-txCnbs'Extra-nonce  → Extra-nonce of Bitcoin-txCnbs
+  McshTchInf000017:7941  Bitcoin-txCnbs'UTXO  → UTXO of Bitcoin-txCnbs
+  McshTchInf000017:8329  blockchain'Hashrate (btchhrt )  → Hashrate of blockchain (btchhrt )
+  McshTchInf000017:8361  Bitcoin-hhrt'Resource  → Resource of Bitcoin-hhrt
+  McshTchInf000017:8488  blockchain'Crypto (btccrpt)  → Crypto of blockchain (btccrpt)
+  McshTchInf000017:8498  Bitcoin-crpt'Hash-function  → Hash-function of Bitcoin-crpt
+  McshTchInf000017:8513  Bitcoin-crpt'To-hash  → To-hash of Bitcoin-crpt
+  McshTchInf000017:8552  Bitcoin-crpt'Hash256  → Hash256 of Bitcoin-crpt
+  McshTchInf000017:8603  Bitcoin-crpt'Signature  → Signature of Bitcoin-crpt
+  McshTchInf000017:8625  Bitcoin-crpt'Elliptic-Curve-Arithmetic  → Elliptic-Curve-Arithmetic of Bitcoin-crpt
+  McshTchInf000017:8645  Bitcoin-crpt'ECDSA  → ECDSA of Bitcoin-crpt
+  McshTchInf000017:8666  Bitcoin-crpt'CompactSize  → CompactSize of Bitcoin-crpt
+  McshTchInf000017:8689  blockchain'Evaluation  → Evaluation of blockchain
+  McshTchInf000017:8706  blockchain'Size  → Size of blockchain
+  McshTchInf000017:8719  blockchain'Resource  → Resource of blockchain
+  McshTchInf000017:8732  blockchain'Doing  → Doing of blockchain
+  McshTchInf000017:8740  blockchain'Changing  → Changing of blockchain
+  McshTchInf000017:8748  blockchain'Synchronizing  → Synchronizing of blockchain
+  McshTchInf000017:8761  blockchain'Split  → Split of blockchain
+  McshTchInf000017:8784  blockchain'Service (  → Service of blockchain (
+  McshTchInf000017:9406  Bitcoin-testnet'faucet-of-BTC  → faucet-of-BTC of Bitcoin-testnet
+  McshTchInf000017:9414  Bitcoin-testnet'use  → use of Bitcoin-testnet
+  --- McshTchInf000018 (244)
+  McshTchInf000018:265  Deth-state'updating  → updating of Deth-state
+  McshTchInf000018:557  HumnBtrn1994'info-resource  → info-resource of HumnBtrn1994
+  McshTchInf000018:748  Deth-node'client-program (  → client-program of Deth-node (
+  McshTchInf000018:753  Deth-node'OS  → OS of Deth-node
+  McshTchInf000018:758  Deth-node'computer  → computer of Deth-node
+  McshTchInf000018:771  Deth-node'EVM (  → EVM of Deth-node (
+  McshTchInf000018:876  miner-node'Hardware  → Hardware of miner-node
+  McshTchInf000018:893  miner-node'mining  → mining of miner-node
+  McshTchInf000018:919  Deth-mining'Resource  → Resource of Deth-mining
+  McshTchInf000018:994  Deth-account'Keypair  → Keypair of Deth-account
+  McshTchInf000018:1009  Deth-account'Keyfile  → Keyfile of Deth-account
+  McshTchInf000018:1027  Deth-account'keystore  → keystore of Deth-account
+  McshTchInf000018:1045  Deth-account'address (20-byte|160-bit|40-hex+2-0x)  → address of Deth-account (20-byte|160-bit|40-hex+2-0x)
+  McshTchInf000018:1076  address'Builtin-check  → Builtin-check of address
+  McshTchInf000018:1089  address'Resource  → Resource of address
+  McshTchInf000018:1118  Deth-account'balance  → balance of Deth-account
+  McshTchInf000018:1143  Deth-account'Nonce  → Nonce of Deth-account
+  McshTchInf000018:1158  Deth-account'Code (  → Code of Deth-account (
+  McshTchInf000018:1163  Deth-account'Location  → Location of Deth-account
+  McshTchInf000018:1176  Deth-account'Store-of-data  → Store-of-data of Deth-account
+  McshTchInf000018:1186  Deth-account'Stack-area (  → Stack-area of Deth-account (
+  McshTchInf000018:1191  Deth-account'Storage-area (  → Storage-area of Deth-account (
+  McshTchInf000018:1196  Deth-account'Memory-area (  → Memory-area of Deth-account (
+  McshTchInf000018:1202  Deth-account'Structure  → Structure of Deth-account
+  McshTchInf000018:1215  Deth-account'Transaction  → Transaction of Deth-account
+  McshTchInf000018:1279  Deth-account'Resource  → Resource of Deth-account
+  McshTchInf000018:1291  Deth-account'State  → State of Deth-account
+  McshTchInf000018:1305  Deth-account'DOING  → DOING of Deth-account
+  McshTchInf000018:1309  Deth-account'Controling  → Controling of Deth-account
+  McshTchInf000018:1362  contract-account'address  → address of contract-account
+  McshTchInf000018:1379  contract-account'transaction-created-by  → transaction-created-by of contract-account
+  McshTchInf000018:1384  contract-account'balance  → balance of contract-account
+  McshTchInf000018:1389  contract-account'contract-name  → contract-name of contract-account
+  McshTchInf000018:1394  contract-account'contract-program (  → contract-program of contract-account (
+  McshTchInf000018:1399  contract-account'transaction-sent  → transaction-sent of contract-account
+  McshTchInf000018:1419  contract-account'message-call  → message-call of contract-account
+  McshTchInf000018:1431  contract-account'relation-to-normal-account  → relation-to-normal-account of contract-account
+  McshTchInf000018:1450  contract-account'resource  → resource of contract-account
+  McshTchInf000018:1464  contract-account'creating  → creating of contract-account
+  McshTchInf000018:1509  normal-account'address  → address of normal-account
+  McshTchInf000018:1526  normal-account'balance  → balance of normal-account
+  McshTchInf000018:1531  normal-account'trasactionReceived  → trasactionReceived of normal-account
+  McshTchInf000018:1536  normal-account'TrasactionSend  → TrasactionSend of normal-account
+  McshTchInf000018:1541  normal-account'relation-to-contract-account (  → relation-to-contract-account of normal-account (
+  McshTchInf000018:1546  normal-account'relation-to-wallet  → relation-to-wallet of normal-account
+  McshTchInf000018:1563  normal-account'resource  → resource of normal-account
+  McshTchInf000018:1577  normal-account'creating  → creating of normal-account
+  McshTchInf000018:1678  Deth-protocol'implementation-language  → implementation-language of Deth-protocol
+  McshTchInf000018:1693  Deth-protocol'resource  → resource of Deth-protocol
+  McshTchInf000018:1705  Deth-protocol'white-paper  → white-paper of Deth-protocol
+  McshTchInf000018:2638  Deth-protocol'Plasma  → Plasma of Deth-protocol
+  McshTchInf000018:2653  Deth-protocol'yellow-paper  → yellow-paper of Deth-protocol
+  McshTchInf000018:2667  Deth-protocol'Whisper  → Whisper of Deth-protocol
+  McshTchInf000018:2778  gas'price  → price of gas
+  McshTchInf000018:2800  gas'fee  → fee of gas
+  McshTchInf000018:2817  gas'limit  → limit of gas
+  McshTchInf000018:2830  gas'refund  → refund of gas
+  McshTchInf000018:2843  gas'resource  → resource of gas
+  McshTchInf000018:3242  EthrassetCN'Backness  → Backness of EthrassetCN
+  McshTchInf000018:3254  EthrassetCN'Contract-program  → Contract-program of EthrassetCN
+  McshTchInf000018:3259  EthrassetCN'Address-of-contract-account  → Address-of-contract-account of EthrassetCN
+  McshTchInf000018:3264  EthrassetCN'Holder  → Holder of EthrassetCN
+  McshTchInf000018:3276  EthrassetCN'Exchange-rate  → Exchange-rate of EthrassetCN
+  McshTchInf000018:3281  EthrassetCN'Transaction  → Transaction of EthrassetCN
+  McshTchInf000018:3302  EthrassetCN'Resource  → Resource of EthrassetCN
+  McshTchInf000018:3832  web3.js'transaction  → transaction of web3.js
+  McshTchInf000018:3861  web3.js'resource  → resource of web3.js
+  McshTchInf000018:3910  Ethpm'resource  → resource of Ethpm
+  McshTchInf000018:3963  Algoethrvm'stack-area  → stack-area of Algoethrvm
+  McshTchInf000018:3991  Algoethrvm'storage-area (persistent)  → storage-area of Algoethrvm (persistent)
+  McshTchInf000018:4027  Algoethrvm'memory-area (non-persistent)  → memory-area of Algoethrvm (non-persistent)
+  McshTchInf000018:4053  Algoethrvm'calldata  → calldata of Algoethrvm
+  McshTchInf000018:4068  Algoethrvm'PC (Program-Counter)  → PC of Algoethrvm (Program-Counter)
+  McshTchInf000018:4073  Algoethrvm'ABI (App-Binary-Interface) (  → ABI of Algoethrvm (App-Binary-Interface) (
+  McshTchInf000018:4078  Algoethrvm'code  → code of Algoethrvm
+  McshTchInf000018:4163  Algoethropcode'argument  → argument of Algoethropcode
+  McshTchInf000018:4276  Algoethropcode'gas-cost (  → gas-cost of Algoethropcode (
+  McshTchInf000018:4409  Algoethrvm'compiler  → compiler of Algoethrvm
+  McshTchInf000018:4423  Algoethrvm'security  → security of Algoethrvm
+  McshTchInf000018:4446  Algoethrvm'resource  → resource of Algoethrvm
+  McshTchInf000018:4458  Algoethrvm'code-executing  → code-executing of Algoethrvm
+  McshTchInf000018:4557  geth'Synopsis  → Synopsis of geth
+  McshTchInf000018:4691  geth'Console  → Console of geth
+  McshTchInf000018:4750  MetaMask'Resource  → Resource of MetaMask
+  McshTchInf000018:4789  testrpc'Resource  → Resource of testrpc
+  McshTchInf000018:4801  testrpc'Installing  → Installing of testrpc
+  McshTchInf000018:4832  Mist'API  → API of Mist
+  McshTchInf000018:4847  Mist'data-folder  → data-folder of Mist
+  McshTchInf000018:4858  Mist'resource  → resource of Mist
+  McshTchInf000018:4870  Mist'doing  → doing of Mist
+  McshTchInf000018:4877  Mist'updating  → updating of Mist
+  McshTchInf000018:4942  Parity'Server  → Server of Parity
+  McshTchInf000018:4955  Parity'Wallet  → Wallet of Parity
+  McshTchInf000018:4981  Parity'Directory  → Directory of Parity
+  McshTchInf000018:4985  Parity'Dapps-dir  → Dapps-dir of Parity
+  McshTchInf000018:5003  Parity'Proof-of-Authority  → Proof-of-Authority of Parity
+  McshTchInf000018:5024  Parity'Problem  → Problem of Parity
+  McshTchInf000018:5037  Parity'Resource  → Resource of Parity
+  McshTchInf000018:5055  Parity'DOING  → DOING of Parity
+  McshTchInf000018:5059  Parity'Installing  → Installing of Parity
+  McshTchInf000018:5067  Parity'Configuring  → Configuring of Parity
+  McshTchInf000018:5153  Truffle'Synopsis  → Synopsis of Truffle
+  McshTchInf000018:5185  Truffle'Command  → Command of Truffle
+  McshTchInf000018:5233  Truffle'Dapp  → Dapp of Truffle
+  McshTchInf000018:5237  Truffle'Dapp-structure  → Dapp-structure of Truffle
+  McshTchInf000018:5251  Truffle'Directory  → Directory of Truffle
+  McshTchInf000018:5255  Truffle'DirBuild  → DirBuild of Truffle
+  McshTchInf000018:5259  eth-tfl'Artifact  → Artifact of eth-tfl
+  McshTchInf000018:5276  Truffle'DirContracts  → DirContracts of Truffle
+  McshTchInf000018:5289  Truffle'DirMigrations  → DirMigrations of Truffle
+  McshTchInf000018:5302  Truffle'DirTests  → DirTests of Truffle
+  McshTchInf000018:5316  Truffle'File  → File of Truffle
+  McshTchInf000018:5320  Truffle'FilMigration  → FilMigration of Truffle
+  McshTchInf000018:5369  Truffle'Problem  → Problem of Truffle
+  McshTchInf000018:5377  Truffle'Resource  → Resource of Truffle
+  McshTchInf000018:5396  Truffle'doing  → doing of Truffle
+  McshTchInf000018:5400  Truffle'Installing-truffle  → Installing-truffle of Truffle
+  McshTchInf000018:5424  Truffle'Compiling-project  → Compiling-project of Truffle
+  McshTchInf000018:5429  Truffle'Migrating-project  → Migrating-project of Truffle
+  McshTchInf000018:5434  Truffle'Testing-project  → Testing-project of Truffle
+  McshTchInf000018:5555  walletMst'Backup  → Backup of walletMst
+  McshTchInf000018:5560  walletMst'Data-folder  → Data-folder of walletMst
+  McshTchInf000018:5571  walletMst'Resource  → Resource of walletMst
+  McshTchInf000018:5584  walletMst'Installing  → Installing of walletMst
+  McshTchInf000018:5589  walletMst'Updating  → Updating of walletMst
+  McshTchInf000018:5597  walletMst'Deleting  → Deleting of walletMst
+  McshTchInf000018:5734  DcontractEth'unit  → unit of DcontractEth
+  McshTchInf000018:5745  DcontractEth'semantic_unit  → semantic_unit of DcontractEth
+  McshTchInf000018:5800  DcontractEth'sentence  → sentence of DcontractEth
+  McshTchInf000018:5812  DcontractEth'paragraph  → paragraph of DcontractEth
+  McshTchInf000018:5824  DcontractEth'title-construction  → title-construction of DcontractEth
+  McshTchInf000018:5835  DcontractEth'contract-account (  → contract-account of DcontractEth (
+  McshTchInf000018:5840  DcontractEth'creator-account  → creator-account of DcontractEth
+  McshTchInf000018:5854  DcontractEth'party  → party of DcontractEth
+  McshTchInf000018:5870  DcontractEth'address  → address of DcontractEth
+  McshTchInf000018:5885  DcontractEth'store-of-data  → store-of-data of DcontractEth
+  McshTchInf000018:5897  DcontractEth'stack-area (  → stack-area of DcontractEth (
+  McshTchInf000018:5902  DcontractEth'storage-area (  → storage-area of DcontractEth (
+  McshTchInf000018:5907  DcontractEth'memory-area (  → memory-area of DcontractEth (
+  McshTchInf000018:5913  DcontractEth'message-call  → message-call of DcontractEth
+  McshTchInf000018:5983  DcontractEth'language  → language of DcontractEth
+  McshTchInf000018:6257  Solxsource'UNIT  → UNIT of Solxsource
+  McshTchInf000018:6269  Solxsource'SEMANTIC-UNIT  → SEMANTIC-UNIT of Solxsource
+  McshTchInf000018:6282  Solxsunt'location  → location of Solxsunt
+  McshTchInf000018:6301  Solxsunt'visibility  → visibility of Solxsunt
+  McshTchInf000018:6314  Solxsunt'Visibility-specifier  → Visibility-specifier of Solxsunt
+  McshTchInf000018:6325  Solxsunt'Public-vs  → Public-vs of Solxsunt
+  McshTchInf000018:6355  Solxsunt'Private-vs  → Private-vs of Solxsunt
+  McshTchInf000018:6374  Solxsunt'External-vs  → External-vs of Solxsunt
+  McshTchInf000018:6392  Solxsunt'Internal-vs  → Internal-vs of Solxsunt
+  McshTchInf000018:6408  Solxsunt'Indexed-visibility-attribute  → Indexed-visibility-attribute of Solxsunt
+  McshTchInf000018:6423  Solxsunt'Doing  → Doing of Solxsunt
+  McshTchInf000018:6427  Solxsunt'Checking  → Checking of Solxsunt
+  McshTchInf000018:6448  eth-sosut'Converting  → Converting of eth-sosut
+  McshTchInf000018:6532  Solxsunt'Data-location  → Data-location of Solxsunt
+  McshTchInf000018:6635  Lsolad'balance-number  → balance-number of Lsolad
+  McshTchInf000018:6652  Lsolad'call  → call of Lsolad
+  McshTchInf000018:6670  Lsolad'callcode  → callcode of Lsolad
+  McshTchInf000018:6675  Lsolad'delegatecall  → delegatecall of Lsolad
+  McshTchInf000018:6680  Lsolad'send-function  → send-function of Lsolad
+  McshTchInf000018:6843  Solxc'Stage  → Stage of Solxc
+  McshTchInf000018:7070  Lsolf'Input  → Input of Lsolf
+  McshTchInf000018:7075  Lsolf'Output  → Output of Lsolf
+  McshTchInf000018:7095  Lsolf'Call  → Call of Lsolf
+  McshTchInf000018:7108  Lsolf'Interface  → Interface of Lsolf
+  McshTchInf000018:7540  Solxlago'int (ethsoln)  → int of Solxlago (ethsoln)
+  McshTchInf000018:7552  Solxlago'int8 (ethsoln8)  → int8 of Solxlago (ethsoln8)
+  McshTchInf000018:7563  Solxlago'uint (ethsolnu)  → uint of Solxlago (ethsolnu)
+  McshTchInf000018:7582  Solxlago'uint8 (ethsolnu8)  → uint8 of Solxlago (ethsolnu8)
+  McshTchInf000018:7717  Lsolv'value  → value of Lsolv
+  McshTchInf000018:8137  Solxsource'SENTENCE  → SENTENCE of Solxsource
+  McshTchInf000018:8270  eth-sol'path-of-files  → path-of-files of eth-sol
+  McshTchInf000018:8414  Solxsource'error  → error of Solxsource
+  McshTchInf000018:8428  Solxsource'style  → style of Solxsource
+  McshTchInf000018:9439  langLLL'Compiler  → Compiler of langLLL
+  McshTchInf000018:9455  langLLL'Resource  → Resource of langLLL
+  McshTchInf000018:9516  langViper'resource  → resource of langViper
+  McshTchInf000018:9550  DcontractEth'ABI  → ABI of DcontractEth
+  McshTchInf000018:9573  Deth-abi'Resource  → Resource of Deth-abi
+  McshTchInf000018:9588  DcontractEth'security  → security of DcontractEth
+  McshTchInf000018:9633  DcontractEth'EVM (  → EVM of DcontractEth (
+  McshTchInf000018:9638  DcontractEth'tool  → tool of DcontractEth
+  McshTchInf000018:9652  DcontractEth'Etherscan-disassembler  → Etherscan-disassembler of DcontractEth
+  McshTchInf000018:9683  DcontractEth'organization  → organization of DcontractEth
+  McshTchInf000018:9702  DcontractEth'resource  → resource of DcontractEth
+  McshTchInf000018:9719  DcontractEth'STATE  → STATE of DcontractEth
+  McshTchInf000018:9732  DcontractEth'DOING  → DOING of DcontractEth
+  McshTchInf000018:10217  contract-bytecode'storage  → storage of contract-bytecode
+  McshTchInf000018:10566  Deth-core'Human  → Human of Deth-core
+  McshTchInf000018:10651  DappEth'backend (contract)  → backend of DappEth (contract)
+  McshTchInf000018:10663  DappEth'frontend  → frontend of DappEth
+  McshTchInf000018:10674  DappEth'structure  → structure of DappEth
+  McshTchInf000018:10689  DappEth'tool  → tool of DappEth
+  McshTchInf000018:10717  Embark'Dapp-structure  → Dapp-structure of Embark
+  McshTchInf000018:10740  Embark'EmbarkJS  → EmbarkJS of Embark
+  McshTchInf000018:10754  DappEth'resource  → resource of DappEth
+  McshTchInf000018:10776  DappEth'DOING  → DOING of DappEth
+  McshTchInf000018:10780  DappEth'service (  → service of DappEth (
+  McshTchInf000018:11038  Algoethrbkcn'Block  → Block of Algoethrbkcn
+  McshTchInf000018:11089  block'parentHash (ethblkHp)  → parentHash of block (ethblkHp)
+  McshTchInf000018:11104  block'ommersHash (ethblkHo)  → ommersHash of block (ethblkHo)
+  McshTchInf000018:11119  block'beneficiary (ethblkHc)  → beneficiary of block (ethblkHc)
+  McshTchInf000018:11140  block'stateRoot (ethblkHr)  → stateRoot of block (ethblkHr)
+  McshTchInf000018:11154  block'transactionsRoot (ethblkHt)  → transactionsRoot of block (ethblkHt)
+  McshTchInf000018:11168  block'receiptsRoot (ethblkHe)  → receiptsRoot of block (ethblkHe)
+  McshTchInf000018:11182  block'logsBloom (ethblkHb)  → logsBloom of block (ethblkHb)
+  McshTchInf000018:11196  block'difficulty (ethblkHd)  → difficulty of block (ethblkHd)
+  McshTchInf000018:11214  block'number (ethblkHi)  → number of block (ethblkHi)
+  McshTchInf000018:11265  block'gasLimit (ethblkHl)  → gasLimit of block (ethblkHl)
+  McshTchInf000018:11279  block'gasUsed (ethblkHg)  → gasUsed of block (ethblkHg)
+  McshTchInf000018:11293  block'timestamp (ethblkHs)  → timestamp of block (ethblkHs)
+  McshTchInf000018:11310  block'extraData (ethblkHx)  → extraData of block (ethblkHx)
+  McshTchInf000018:11328  block'mixHash (ethblkHm)  → mixHash of block (ethblkHm)
+  McshTchInf000018:11343  block'nonce (ethblkHn)  → nonce of block (ethblkHn)
+  McshTchInf000018:11401  block'Hash  → Hash of block
+  McshTchInf000018:11418  block'Gas  → Gas of block
+  McshTchInf000018:11432  block'Merkle-tree  → Merkle-tree of block
+  McshTchInf000018:11505  block'Time  → Time of block
+  McshTchInf000018:11515  block'Age  → Age of block
+  McshTchInf000018:11520  block'Timestamp (  → Timestamp of block (
+  McshTchInf000018:11525  block'Generation (Time-between-blocks)  → Generation of block (Time-between-blocks)
+  McshTchInf000018:11541  block'Explorer (  → Explorer of block (
+  McshTchInf000018:11546  block'Relation-to-bitcoin-block  → Relation-to-bitcoin-block of block
+  McshTchInf000018:11687  Algoethrbkcn'block-explorer  → block-explorer of Algoethrbkcn
+  McshTchInf000018:11704  Algoethrbkcn'consensus-algorithm  → consensus-algorithm of Algoethrbkcn
+  McshTchInf000018:11776  Algoethrbkcn'Size  → Size of Algoethrbkcn
+  McshTchInf000018:11791  Algoethrbkcn'transaction  → transaction of Algoethrbkcn
+  McshTchInf000018:11999  tx'Hash  → Hash of tx
+  McshTchInf000018:12006  tx'Block  → Block of tx
+  McshTchInf000018:12018  tx'age  → age of tx
+  McshTchInf000018:12030  tx'sender-account  → sender-account of tx
+  McshTchInf000018:12051  tx'fee  → fee of tx
+  McshTchInf000018:12075  tx'gas-limit  → gas-limit of tx
+  McshTchInf000018:12089  tx'log  → log of tx
+  McshTchInf000018:12106  tx'security  → security of tx
+  McshTchInf000018:12121  tx'resource  → resource of tx
+  McshTchInf000018:12136  tx'DOING  → DOING of tx
+  McshTchInf000018:12150  tx'creating  → creating of tx
+  McshTchInf000018:12161  tx'submitting  → submitting of tx
+  McshTchInf000018:12526  Ethrservice'Dapp (  → Dapp of Ethrservice (
+  McshTchInf000018:12796  Deth-net'METROPOLIS  → METROPOLIS of Deth-net
+  McshTchInf000018:12815  Deth-net'HOMESTEAD {2016-02-29},  → HOMESTEAD of Deth-net {2016-02-29},
+  McshTchInf000018:12837  Deth-net'FRONTIER (1-0.2015-07-26)  → FRONTIER of Deth-net (1-0.2015-07-26)
+  McshTchInf000018:12914  Etc-Net'resource  → resource of Etc-Net
+  --- McshTchInf000019 (1)
+  McshTchInf000019:3394  proposal's-reputation (  → s-reputation of proposal (
+  --- McshTchInf000020 (55)
+  McshTchInf000020:77  protocol'white-paper {2017-03-20},  → white-paper of protocol {2017-03-20},
+  McshTchInf000020:709  protocol'LaborX-white-paper (chblxw)  → LaborX-white-paper of protocol (chblxw)
+  McshTchInf000020:1259  protocol'business-outline  → business-outline of protocol
+  McshTchInf000020:1309  program'Doing  → Doing of program
+  McshTchInf000020:1313  program'Developing  → Developing of program
+  McshTchInf000020:1973  EvuLH'Baker  → Baker of EvuLH
+  McshTchInf000020:1986  EvuLH'Smart-contract (  → Smart-contract of EvuLH (
+  McshTchInf000020:1991  EvuLH'Issuance  → Issuance of EvuLH
+  McshTchInf000020:2014  EvuLH'Exchange-rate  → Exchange-rate of EvuLH
+  McshTchInf000020:2105  ExvuTIME'exchange-rate  → exchange-rate of ExvuTIME
+  McshTchInf000020:2129  ExvuTIME'creator  → creator of ExvuTIME
+  McshTchInf000020:2138  ExvuTIME'address  → address of ExvuTIME
+  McshTchInf000020:2146  ExvuTIME'codeBinary  → codeBinary of ExvuTIME
+  McshTchInf000020:2155  ExvuTIME'codeAssembly  → codeAssembly of ExvuTIME
+  McshTchInf000020:2170  ExvuTIME'ognExchange  → ognExchange of ExvuTIME
+  McshTchInf000020:2210  ExvuTIME'similar  → similar of ExvuTIME
+  McshTchInf000020:2220  ExvuTIME'resource  → resource of ExvuTIME
+  McshTchInf000020:2395  LaborX'attribute  → attribute of LaborX
+  McshTchInf000020:2405  LaborX'LaborX-Core  → LaborX-Core of LaborX
+  McshTchInf000020:2433  LaborX'LaborX-DApp-frontend  → LaborX-DApp-frontend of LaborX
+  McshTchInf000020:2465  LaborX'canceling-job  → canceling-job of LaborX
+  McshTchInf000020:2481  LaborX'worker (job-seeker | employee)  → worker of LaborX (job-seeker | employee)
+  McshTchInf000020:2497  worker'compensation-per-hour (rate)  → compensation-per-hour of worker (rate)
+  McshTchInf000020:2515  worker'evaluation  → evaluation of worker
+  McshTchInf000020:2538  worker'profile  → profile of worker
+  McshTchInf000020:2551  worker'rating  → rating of worker
+  McshTchInf000020:2605  LaborX'employer  → employer of LaborX
+  McshTchInf000020:2621  employer'evaluation  → evaluation of employer
+  McshTchInf000020:2643  employer'searching-for-worker  → searching-for-worker of employer
+  McshTchInf000020:2657  employer'protection  → protection of employer
+  McshTchInf000020:2671  LaborX'provider (mediator)  → provider of LaborX (mediator)
+  McshTchInf000020:2700  LaborX'Job-board  → Job-board of LaborX
+  McshTchInf000020:2733  LaborX'Trust-system  → Trust-system of LaborX
+  McshTchInf000020:2746  LaborX'Recommender  → Recommender of LaborX
+  McshTchInf000020:2759  LaborX'evaluator  → evaluator of LaborX
+  McshTchInf000020:2772  LaborX'verifier  → verifier of LaborX
+  McshTchInf000020:2785  LaborX'Job  → Job of LaborX
+  McshTchInf000020:2804  LaborX-job'work-description  → work-description of LaborX-job
+  McshTchInf000020:2815  LaborX-job'field-of-work  → field-of-work of LaborX-job
+  McshTchInf000020:2820  LaborX-job'skills  → skills of LaborX-job
+  McshTchInf000020:2831  LaborX-job'time-due  → time-due of LaborX-job
+  McshTchInf000020:2844  LaborX-job'money-used (token)  → money-used of LaborX-job (token)
+  McshTchInf000020:2856  LaborX-job'location  → location of LaborX-job
+  McshTchInf000020:2873  LaborX-job'provider-used  → provider-used of LaborX-job
+  McshTchInf000020:2885  LaborX'rating-system  → rating-system of LaborX
+  McshTchInf000020:2900  LaborX'Activity-points  → Activity-points of LaborX
+  McshTchInf000020:2928  LaborX'Rating  → Rating of LaborX
+  McshTchInf000020:2945  LaborX'Wallet  → Wallet of LaborX
+  McshTchInf000020:2963  LaborX'resource  → resource of LaborX
+  McshTchInf000020:2981  LaborX'White-paper (  → White-paper of LaborX (
+  McshTchInf000020:2987  LaborX'DOING  → DOING of LaborX
+  McshTchInf000020:2991  LaborX'messaging  → messaging of LaborX
+  McshTchInf000020:3005  LaborX'searching  → searching of LaborX
+  McshTchInf000020:3024  LaborX'matching  → matching of LaborX
+  McshTchInf000020:3039  LaborX'EVOLUTING  → EVOLUTING of LaborX
+  --- McshTchInf000026 (1)
+  McshTchInf000026:1670  can't-be-evil  → t-be-evil of can
+  --- McshTchInf000028 (2)
+  McshTchInf000028:403  Movealgo'resource-sunt of Movelago  → resource-sunt of Movealgo of Movelago
+  McshTchInf000028:536  Movealgo'module-sut of Movelago  → module-sut of Movealgo of Movelago
+  --- McshTchInf000029 (8)
+  McshTchInf000029:83  JsonDoc'unit  → unit of JsonDoc
+  McshTchInf000029:104  JsonDoc'semantic-unit  → semantic-unit of JsonDoc
+  McshTchInf000029:199  Jsonlago-string'grammar  → grammar of Jsonlago-string
+  McshTchInf000029:245  Jsonlago-number'grammar  → grammar of Jsonlago-number
+  McshTchInf000029:307  JsonArr'grammar  → grammar of JsonArr
+  McshTchInf000029:364  JsonOjt'grammar  → grammar of JsonOjt
+  McshTchInf000029:397  JsonDoc'syntax-tree  → syntax-tree of JsonDoc
+  McshTchInf000029:410  JsonDoc'schema  → schema of JsonDoc
+  --- McshTchInf000030 (10)
+  McshTchInf000030:222  02_algo'node of Rustlago  → node of 02_algo of Rustlago
+  McshTchInf000030:303  03_algo'unit of Rustlago  → unit of 03_algo of Rustlago
+  McshTchInf000030:325  algo'semantic-unit of Rustlago  → semantic-unit of algo of Rustlago
+  McshTchInf000030:1883  algo'phrase of Rustlago  → phrase of algo of Rustlago
+  McshTchInf000030:1904  algo'sentence of Rustlago  → sentence of algo of Rustlago
+  McshTchInf000030:2055  04_algo'word of Rustlago  → word of 04_algo of Rustlago
+  McshTchInf000030:3036  algo'root of Rustlago  → root of algo of Rustlago
+  McshTchInf000030:3106  08_algo'section of Rustlago  → section of 08_algo of Rustlago
+  McshTchInf000030:3126  algo'titledNo-section of Rustlago  → titledNo-section of algo of Rustlago
+  McshTchInf000030:3140  algo'titled-section of Rustlago  → titled-section of algo of Rustlago
+  --- McshTchInf000031 (14)
+  McshTchInf000031:49  09_algo'unit of Cppzlago  → unit of 09_algo of Cppzlago
+  McshTchInf000031:146  algo'word of Cppzlago  → word of algo of Cppzlago
+  McshTchInf000031:211  algo'semantic-unit of Cppzlago  → semantic-unit of algo of Cppzlago
+  McshTchInf000031:1722  algo'sentence of Cppzlago  → sentence of algo of Cppzlago
+  McshTchInf000031:1909  algo'section of Cppzlago  → section of algo of Cppzlago
+  McshTchInf000031:2001  algo'DOING of Cppzlago  → DOING of algo of Cppzlago
+  McshTchInf000031:2014  algo'writing  → writing of algo
+  McshTchInf000031:2025  algo'building  → building of algo
+  McshTchInf000031:2049  algo'pre-processing  → pre-processing of algo
+  McshTchInf000031:2067  algo'compiling  → compiling of algo
+  McshTchInf000031:2083  algo'linking  → linking of algo
+  McshTchInf000031:2409  algo'machine-memory  → machine-memory of algo
+  McshTchInf000031:2428  algo'syntax-tree  → syntax-tree of algo
+  McshTchInf000031:2443  algo'file  → file of algo
+  --- McshTchInf000039 (1)
+  McshTchInf000039:6362  lagFlr2'tech  → tech of lagFlr2
+  --- HitpTchInf002 (10)
+  HitpTchInf002:284  McsEll.Κτμπ'Α::  → Α:: of McsEll.Κτμπ
+  HitpTchInf002:378  McsEll.Κτμπ'Γ::  → Γ:: of McsEll.Κτμπ
+  HitpTchInf002:459  McsEll.Κτμπ'Δ::  → Δ:: of McsEll.Κτμπ
+  HitpTchInf002:553  McsEll.Κτμπ'Ε::  → Ε:: of McsEll.Κτμπ
+  HitpTchInf002:688  McsEll.Κτμπ'Κ::  → Κ:: of McsEll.Κτμπ
+  HitpTchInf002:884  McsEll.Κτμπ'Μ::  → Μ:: of McsEll.Κτμπ
+  HitpTchInf002:1149  McsEll.Κτμπ'Π::  → Π:: of McsEll.Κτμπ
+  HitpTchInf002:1319  McsEll.Κτμπ'Σ::  → Σ:: of McsEll.Κτμπ
+  HitpTchInf002:1609  McsEll.Κτμπ'Υ::  → Υ:: of McsEll.Κτμπ
+  HitpTchInf002:1626  McsEll.Κτμπ'Φ::  → Φ:: of McsEll.Κτμπ
+  --- McshUcdU1000 (1)
+  McshUcdU1000:288  char.Extensions-for-S'gaw-Karen  → gaw-Karen of char.Extensions-for-S
+  --- McshUcdU2D80 (1)
+  McshUcdU2D80:59  char.Syllables-for-Me'en  → en of char.Syllables-for-Me
+  --- McshUcdUAA60 (1)
+  McshUcdUAA60:119  char.Pa'o-Karen-tone-mark  → o-Karen-tone-mark of char.Pa
+  --- McshTchPrgm000003 (1)
+  McshTchPrgm000003:289  API'atom-object  → atom-object of API
+
+=== SPECIFIC (189)
+  --- McshCor000003 (7)
+  McshCor000003:4708  megannium.BpK2x001!={Bp1'000'000..present} of entity
+  McshCor000003:4744  megannium.BpK2x002!={Bp2'000'000..Bp1'000'001} of entity
+  McshCor000003:4759  gigannium.BpK3x001!={Bp1'000'000'000..present} of entity
+  McshCor000003:4864  gigannium.BpK3x002!={Bp2'000'000'000..Bp1'000'000'001} of entity
+  McshCor000003:4879  gigannium.BpK3x003!={Bp3'000'000'000..Bp2'000'000'001} of entity
+  McshCor000003:4894  gigannium.BpK3x004!={Bp4'000'000'000..Bp3'000'000'001} of entity
+  McshCor000003:4909  gigannium.BpK3x005!={Bp5'000'000'000..Bp4'000'000'001} of entity
+  --- McshCor000008 (2)
+  McshCor000008:937  set'doing.union
+  McshCor000008:963  set'doing.intersection
+  --- McshEdu000005 (5)
+  McshEdu000005:1774  MathFn'notation.functional
+  McshEdu000005:1790  MathFn'notation.arrow
+  McshEdu000005:1809  MathFn'notation.index
+  McshEdu000005:1823  MathFn'notation.dot
+  McshEdu000005:1842  MathFn'notation.specialized
+  --- McshHlth000008 (1)
+  McshHlth000008:1068  health'human.healthy
+  --- McshLag000006 (25)
+  McshLag000006:3065  Unicode'18-0-0.2026
+  McshLag000006:3080  Unicode'14-0-0.2021
+  McshLag000006:3097  Unicode'11-0-0.2018
+  McshLag000006:3117  Unicode'10-0-0.2017
+  McshLag000006:3136  Unicode'9-0-0.2016
+  McshLag000006:3155  Unicode'8-0-0.2015
+  McshLag000006:3174  Unicode'7-0-0.2014
+  McshLag000006:3193  Unicode'6-3-0.2013
+  McshLag000006:3212  Unicode'6-2-0.2012
+  McshLag000006:3231  Unicode'6-1-0.2012
+  McshLag000006:3250  Unicode'6-0-0.2011
+  McshLag000006:3269  Unicode'5-2-0.2009
+  McshLag000006:3288  Unicode'5-1-0.2007
+  McshLag000006:3307  Unicode'5-0-0.2007
+  McshLag000006:3325  Unicode'4-1-0.2005
+  McshLag000006:3343  Unicode'4-0-1.2003
+  McshLag000006:3358  Unicode'4-0-0.2003
+  McshLag000006:3377  Unicode'3-2-0.2000
+  McshLag000006:3398  Unicode'3-1-0.2000
+  McshLag000006:3419  Unicode'3-0-0.2000
+  McshLag000006:3439  Unicode'2-1-0.1998
+  McshLag000006:3457  Unicode'2-0-0.1996
+  McshLag000006:3476  Unicode'1-1-0.1993
+  McshLag000006:3494  Unicode'1-0-1.1992
+  McshLag000006:3512  Unicode'1-0-0.1991
+  --- McshLag000027 (3)
+  McshLag000027:7985  Ellalago'Dark-{Bce1100..Bce0800}
+  McshLag000027:8001  Ellalago'Archaic-{Bce0800..Bce0500}
+  McshLag000027:8019  Ellalago'Classical-{Bce0500..Bce0300}
+  --- HitpStnEcon000 (5)
+  HitpStnEcon000:8995  Mcs.Capital'YIELD.EXPECTED
+  HitpStnEcon000:9028  Mcs.Capital'SUPPLY-PRICE.TOTAL (Z)
+  HitpStnEcon000:9541  Mcs.CAPITAL'INCREASE.NO (COST)
+  HitpStnEcon000:10807  Mcs.Keynes'book.GENERAL-THEORY
+  HitpStnEcon000:10826  Mcs.Keynes'book.TREATISE-ON-MONEY
+  --- McshStnlaw000003 (2)
+  McshStnlaw000003:428  Euoj'series.L
+  McshStnlaw000003:507  Euoj'series.C
+  --- McshTchInf000008 (3)
+  McshTchInf000008:3529  Hitparcho'title.Root
+  McshTchInf000008:3627  Hitp_archo_node'number.ΒΟΤΤΟΜ
+  McshTchInf000008:3645  Hitp_archo_node'number.ROOT
+  --- McshTchInf000010 (6)
+  McshTchInf000010:1205  Jsa'Array.prototype
+  McshTchInf000010:2004  Jsgnlago'Boolean.prototype
+  McshTchInf000010:2268  Jsf'Function.prototype
+  McshTchInf000010:3171  Jsn'Number.prototype
+  McshTchInf000010:4495  Jsgnlago'JSON.parse-function
+  McshTchInf000010:4515  Jsgnlago'JSON.stringify-function
+  --- McshTchInf000011 (12)
+  McshTchInf000011:1570  JsbrApi'whole-part-tree.Chrome
+  McshTchInf000011:3512  Jsbrevent'Event.prototype
+  McshTchInf000011:3580  Jsbrevent'EventTarget.prototype
+  McshTchInf000011:4162  'Html_'HTMLDocument.prototype
+  McshTchInf000011:4213  JsbralgoHtml'Document.prototype
+  McshTchInf000011:4259  JsbralgoHtml'Node.prototype
+  McshTchInf000011:4310  JsbralgoHtml'Attr.prototype
+  McshTchInf000011:4356  JsbralgoHtml'CharacterData.prototype
+  McshTchInf000011:4393  JsbralgoHtml'DocumentFragment.prototype
+  McshTchInf000011:4442  JsbralgoHtml'DocumentType.prototype
+  McshTchInf000011:4490  JsbralgoHtml'Element.prototype
+  McshTchInf000011:4539  JsbralgoHtml'HTMLElement.prototype
+  --- McshTchInf000012 (12)
+  McshTchInf000012:383  algo'sut.MODULE (Jsndm)
+  McshTchInf000012:764  Jsndmobt'member.children-array
+  McshTchInf000012:781  Jsndmobt'member.module.exports-object
+  McshTchInf000012:847  Jsndmobt'member.filename-string
+  McshTchInf000012:864  Jsndmobt'member.id-string
+  McshTchInf000012:879  Jsndmobt'member.loaded-boolean
+  McshTchInf000012:894  Jsndmobt'member.parent-object
+  McshTchInf000012:909  Jsndmobt'member.paths-object
+  McshTchInf000012:1278  Jsndmc'node-modules.com
+  McshTchInf000012:7832  lagJsndexpress'app.SERVER
+  McshTchInf000012:8014  lagJsndjake'task.DIRECTORY
+  McshTchInf000012:8037  lagJsndjake'task.FILE
+  --- McshTchInf000013 (4)
+  McshTchInf000013:215  Jselapi'Object.prototype
+  McshTchInf000013:268  Jselapi'electron-object.main-process
+  McshTchInf000013:669  Jselapi'dialog.showOpenDialog-function
+  McshTchInf000013:1072  Jselapi'electron_object.render
+  --- McshTchInf000015 (3)
+  McshTchInf000015:280  netAlgo'evaluation.BENEFIT
+  McshTchInf000015:387  netAlgo'evaluation.benefitNo
+  McshTchInf000015:7329  DeApp'human.DEVELOPER
+  --- McshTchInf000016 (22)
+  McshTchInf000016:394  miner-node'human.miner
+  McshTchInf000016:1384  Bkcnasset'time.release
+  McshTchInf000016:4177  Wings'exchange-value-unit.Consensous (WINGSevuC)
+  McshTchInf000016:7404  protocol'white-paper.2017-02-02
+  McshTchInf000016:7975  protocol'technical-paper.2017-01-31
+  McshTchInf000016:8504  zecnet'exchange-value-unit.Consensus (ZECevuC)
+  McshTchInf000016:8677  ĐLisk'exchange-value-unit.Consensus (LSKevuC {2016})
+  McshTchInf000016:9162  waves-net'exchange-value-unit.Consensus (WAVESevuC)
+  McshTchInf000016:9487  AgntDcrd'mining.POOL
+  McshTchInf000016:9521  AgntDcrd'mining.SOLO
+  McshTchInf000016:9814  AgntDcrd'exchange-value-unit.Consensus (DCRcevu)
+  McshTchInf000016:10216  dcrctl'Command.wallet (dcrctl --wallet [command])
+  McshTchInf000016:10478  dcrwltCli'wallet.db
+  McshTchInf000016:10504  dcrwltCli'Key.PRIVATE (Seed)
+  McshTchInf000016:10768  pivxnet'exchange-value-unit.Consensus (PIVXevuC)
+  McshTchInf000016:10875  btsnet'whole.Dao (btsdac)
+  McshTchInf000016:10897  btsprl'White-paper.2015-12-18 (btswpr)
+  McshTchInf000016:11686  btsnet'exchange-value-unit.Consensus (BTScevu)
+  McshTchInf000016:12031  xemnet'exchange-value-unit.Consensus (XemevuC)
+  McshTchInf000016:13530  emcnet'exchange-value-unit.Consensus (EMCevuC)
+  McshTchInf000016:13705  Nxt-net'exchange-value-unit.Consensus (NXTevuC)
+  McshTchInf000016:14953  ltcnet'exchange-value-unit.Consensus (LTCevuC)
+  --- McshTchInf000017 (23)
+  McshTchInf000017:2756  Bitcoin-bcr'bitcoin.conf
+  McshTchInf000017:5095  block'part.HEADER (80B)
+  McshTchInf000017:5365  block'part.PAYLOAD
+  McshTchInf000017:6705  Btcntx'part.VERSION (4B)
+  McshTchInf000017:6732  Btcntx'part.INPUT-ARRAY
+  McshTchInf000017:6745  Btcntx'part.INPUT
+  McshTchInf000017:6798  Bitcoin-txinpt'part.OUTPOINT (32B+4B)
+  McshTchInf000017:6850  Bitcoin-txinpt'part.SEQUENCE-NUMBER
+  McshTchInf000017:6873  Bitcoin-txinpt'part.SIGNATURE-SCRIPT (
+  McshTchInf000017:6921  Btcntx'part.OUTPUT-ARRAY
+  McshTchInf000017:6934  Btcntx'part.OUTPUT (btctxout)
+  McshTchInf000017:6980  Bitcoin-txout'part.INDEX-implied
+  McshTchInf000017:6993  Bitcoin-txout'part.AMOUNT
+  McshTchInf000017:7006  Bitcoin-txout'part.PUBKEY|OUTPUT-SCRIPT (
+  McshTchInf000017:7139  Btcntx'part.LOCKTIME (4Bytes)
+  McshTchInf000017:7242  Btcntx'Format.Binary
+  McshTchInf000017:7355  Script'script.Signature-Script (input)
+  McshTchInf000017:7389  Script'script.Pubkey-script (output)
+  McshTchInf000017:7563  Script'script.Null-data
+  McshTchInf000017:7772  Btcntx'blockchain.info-site
+  McshTchInf000017:8790  blockchain'doing.FORK
+  McshTchInf000017:8823  blockchain'fork.HARD
+  McshTchInf000017:8842  blockchain'fork.SOFT
+  --- McshTchInf000018 (38)
+  McshTchInf000018:1131  Deth-account'balance.Subtoken
+  McshTchInf000018:1226  Deth-account'transaction.IN
+  McshTchInf000018:1252  Deth-account'transaction.OUT
+  McshTchInf000018:3606  program'API.Ethplorer
+  McshTchInf000018:3623  program'API.javascript
+  McshTchInf000018:5344  Truffle'FilTruffle.js
+  McshTchInf000018:5998  DcontractEth'language.Mutan (deprecated)
+  McshTchInf000018:6040  DcontractEth'language.SOLIDITY
+  McshTchInf000018:9377  DcontractEth'language.Serpent
+  McshTchInf000018:9406  DcontractEth'language.LLL
+  McshTchInf000018:9494  DcontractEth'language.VIPER
+  McshTchInf000018:9642  DcontractEth'tool.DISASSEMBLER
+  McshTchInf000018:9736  DcontractEth'doing.EXECUTING
+  McshTchInf000018:9749  DcontractEth'doing.DEVELOPING
+  McshTchInf000018:9762  DcontractEth'doing.CREATING
+  McshTchInf000018:9782  DcontractEth'doing.COMPILING
+  McshTchInf000018:9793  DcontractEth'doing.TESTING
+  McshTchInf000018:9804  DcontractEth'doing.DEPLOYING
+  McshTchInf000018:9822  DcontractEth'doing.INTERACTING
+  McshTchInf000018:9854  DcontractEth'doing.UPDATING
+  McshTchInf000018:10012  DcontractEth'doing.REMOVING
+  McshTchInf000018:10049  DcontractEth'doing.SERVICE
+  McshTchInf000018:10245  Deth-asm'tool.binary-to-assembly
+  McshTchInf000018:10703  DappEth'tool.EMBARK
+  McshTchInf000018:11057  block'part.Header
+  McshTchInf000018:11364  block'part.Transaction-list
+  McshTchInf000018:11380  block'part.Ommer-list
+  McshTchInf000018:11867  tx'part.nonce
+  McshTchInf000018:11882  tx'part.gasPrice
+  McshTchInf000018:11897  tx'part.gasLimit (Tg)
+  McshTchInf000018:11913  tx'part.to (Tt)
+  McshTchInf000018:11938  tx'part.value (Tv)
+  McshTchInf000018:11957  tx'part.v (Tw)
+  McshTchInf000018:11971  tx'part.r (Tr)
+  McshTchInf000018:11985  tx'part.s (Ts)
+  McshTchInf000018:12190  Deth-txMc'part.data (ethtxTd)
+  McshTchInf000018:12275  Deth-txCac'part.init (ethtxTi)
+  McshTchInf000018:12771  Deth-net'2.0 (Serenity, Pos)
+  --- McshTchInf000020 (1)
+  McshTchInf000020:3215  chbrsc'ChronoBank.io-website
+  --- McshTchInf000021 (6)
+  McshTchInf000021:189  Agnteos'human.AGGREGATE
+  McshTchInf000021:203  Agnteos'human.BLOCK_PRODUCER
+  McshTchInf000021:223  Agnteos'human.TOKEN-HOLDER
+  McshTchInf000021:246  Agnteos'human.VOTER
+  McshTchInf000021:259  Agnteos'human.WHALE
+  McshTchInf000021:273  Agnteos'human.Larimer.Daniel
+  --- McshTchPrgm000003 (9)
+  McshTchPrgm000003:317  API'atom.commands-object
+  McshTchPrgm000003:346  API'atom.config-object
+  McshTchPrgm000003:373  API'atom.keymaps-object
+  McshTchPrgm000003:403  API'atom.menu-object
+  McshTchPrgm000003:428  API'atom.packages-object
+  McshTchPrgm000003:460  API'atom.project-object
+  McshTchPrgm000003:483  API'atom.styles-object
+  McshTchPrgm000003:509  API'atom.views-object
+  McshTchPrgm000003:531  API'atom.workspace-object
+
+=== TREE (5)
+  --- McshTchInf000006 (1)
+  McshTchInf000006:3058  Srcdalgo'GENERIC-SPECIFIC-TREE
+  --- McshTchInf000011 (1)
+  McshTchInf000011:1550  Jsbrmwo'WHOLE-PART-TREE--STRUCTURE
+  --- McshTchInf000012 (2)
+  McshTchInf000012:3322  JsndAPI'WHOLE-PART-TREE--STRUCTURE
+  McshTchInf000012:3931  algo'ROOT-TREE
+  --- McshTchInf000028 (1)
+  McshTchInf000028:711  Movealgo'GENERIC-SPECIFIC-TREE

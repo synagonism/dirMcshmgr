@@ -112,6 +112,8 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-31-0.2026-11-08: --namecomma, the-fix of MvreName02: a-name-line without a-comma gets it at the-end',
+    'createMcsh.mjs.0-30-0.2026-11-07: --mainname skips a-main-name without an-English start (όγδοος-η-ο): by hand',
     'createMcsh.mjs.0-29-0.2026-11-07: --code MvrwMain01 a-specific WRest → BRest (SystDynaSelf → DynaSelf)',
     'createMcsh.mjs.0-28-0.2026-11-07: --code MvrwMain01 attrbase_begin: an-attribute main-name W\'rest → B+rest',
     'createMcsh.mjs.0-27-0.2026-11-06: --mainname X_ only a-synonym "X_!⇒X-": swapped to "X-!⇒X_", not skipped',
@@ -143,8 +145,8 @@ const
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
   // the-modes, one per run; --auto runs aModeAuto in this order
-  aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'auto'],
-  aModeAuto = ['dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr'],
+  aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'namecomma', 'auto'],
+  aModeAuto = ['namecomma', 'dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
     NODESC:   'idOverview without description::',
@@ -177,6 +179,7 @@ const
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
     DUPNAME:  'a-name-line written twice in ONE para: the-second deleted (MvreName01)',
+    NAMECOMMA: 'a-name-line without a-comma: the-comma added at the-end (MvreName02)',
     MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
     IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids',
@@ -1123,6 +1126,32 @@ function fPlanDupName(sRawIn, sNameShortIn) {
 }
 
 /**
+ * DOING: --namecomma mode, the-fix of MvreName02: a-name-line "<br>* McshLago.name" without
+ *   a-comma gets it at the-end: "<br>* McshLago.name,". A-comma in the-middle
+ *   ("food.060_rice,!⇒foodRice") is reported (SKIP), by hand: after the-comma all is comment.
+ * OUTPUT: { aoEdit, aoNote, sRawNew }
+ */
+const rNameLineNoComma = /^(\s*<br>\*\s*Mcsh[A-Z][a-z]{3}\.[^,]*?)(\s*)$/;
+const rNameCommaMid = /^\s*<br>\*\s*Mcsh[A-Z][a-z]{3}\.[^,]*,(?=[!,\-\p{L}\p{N}])/u;
+function fPlanNameComma(sRawIn, sNameShortIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const sLine = aLine[nL];
+    if (!/^\s*<br>\*\s*Mcsh[A-Z][a-z]{3}\./.test(sLine)) continue;
+    const aNo = sLine.includes(',') ? null : sLine.match(rNameLineNoComma);
+    if (aNo) {
+      aoEdit.push({ nAt: nL, nDel: 1, aIns: [aNo[1] + ',' + aNo[2]] });
+      aoNote.push(`NAMECOMMA ${sNameShortIn}:${nL + 1}  ${aNo[1].trim()}  ->  ${aNo[1].trim()},`);
+    } else if (rNameCommaMid.test(sLine)) {
+      aoNote.push(`SKIP   ${sNameShortIn}:${nL + 1}  ${sLine.trim()}: a-comma in the-middle of the-name-line, by hand`);
+    }
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
  * DOING: it checks a-planned-file before it is written.
  * OUTPUT: '' when good, else the-problem.
  */
@@ -1970,7 +1999,7 @@ async function fMain() {
   const bFix = aArg.includes('--fix');
   const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
   // a-rule with its own mode runs that mode: --code MvreName01 = --dupname
-  const ooModeOfCode = { MvreName01: 'dupname', Hvrw08: 'nest', Hvrw07: 'headgap',
+  const ooModeOfCode = { MvreName01: 'dupname', MvreName02: 'namecomma', Hvrw08: 'nest', Hvrw07: 'headgap',
     MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname' };
   if (sCodeOne) aModeGiven.push(ooModeOfCode[sCodeOne] ?? 'code');
   if (aModeGiven.length > 1) {
@@ -2002,7 +2031,7 @@ async function fMain() {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--name|--auto] [--file McshDir000000] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--namecomma|--name|--auto] [--file McshDir000000] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
@@ -2018,10 +2047,11 @@ async function fMain() {
     console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
-    console.log('  --mainname   MvreMain01: main-names (after !⇒) with "-" get "_", the-old form kept as synonym');
+    console.log('  --mainname   MvreMain01: English main-names (after !⇒) with "-" get "_", the-old form kept as synonym; a-non-English one is skipped');
     console.log('  --srtr       MvrwId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
     console.log('  --dupname    MvreName01: a-name-line twice in ONE para, all but the-first deleted');
-    console.log('  --auto       with --file: --dupname, --nest, --headgap, --missing, --mainname, --srtr in order');
+    console.log('  --namecomma  MvreName02: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
+    console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr in order');
     console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt');
@@ -2114,6 +2144,12 @@ async function fMain() {
       for (const [sKey, sLoc] of oMapMainFirst) {
         const [sLago, sMain] = sKey.split('|');
         const sMainNew = sMain.replace(/-/g, '_');
+        // an-Mmn starts with an-English letter | digit: όγδοος-η-ο is NOT όγδοος_η_ο, by hand
+        if (!/^[A-Za-z0-9]/.test(sMainNew)) {
+          aLineOut.push(`SKIP   ${sLoc}  Mcsh${sLago}.${sMain}: not an-English main-name, give an-English one or none, by hand`);
+          oCount.SKIP = (oCount.SKIP ?? 0) + 1;
+          continue;
+        }
         // X' only as a-synonym of X ("X'!⇒X"): swapped, not a-collision
         const oSetTarget = oMapNameTarget.get(`${sLago}|${sMainNew}`);
         const bSynOfMain = oSetTarget?.size === 1 && oSetTarget.has(sMain);
@@ -2324,7 +2360,8 @@ async function fMain() {
           return nAll === nInPara;
         };
         for (const oIssue of aoIssue) {
-          const sMain = oIssue.sMessage.match(/main-name "McshEngl\.([^"]+)"/)?.[1];
+          // MvrwMain02..06: main-name "McshEngl.X"; MvrwMain01: main-name "X"
+          const sMain = oIssue.sMessage.match(/main-name "(?:McshEngl\.)?([^"]+)"/)?.[1];
           if (sCodeOne === 'MvrwMain01') {
             // B + the-rest after the-concept's main-name W: bodyHumn'16_weight (W bodyHumn, B Hmbd) → Hmbdweight
             const [, sBase, sMainCnpt] = oIssue.sMessage.match(/the-Attrbase "([^"]+)" of concept "([^"]*)"/) ?? [];
@@ -2485,6 +2522,14 @@ async function fMain() {
         fWriteFile(sPathFile, sRaw, fShort(sPathFile), fPlanDupName(sRaw, fShort(sPathFile)));
       }
       sCount = `${oCount.DUPNAME ?? 0} duplicate name-lines deleted`;
+    } else if (sMode === 'namecomma') {
+      for (const sPathFile of fFindFileAll(sNameDir)) {
+        if (fSkipFile(sPathFile)) continue;
+        const sRaw = moFs.readFileSync(sPathFile, 'utf8');
+        if (!sRaw.includes('<br>* Mcsh') && !/<br>\*\s*Mcsh/.test(sRaw)) continue;
+        fWriteFile(sPathFile, sRaw, fShort(sPathFile), fPlanNameComma(sRaw, fShort(sPathFile)));
+      }
+      sCount = `${oCount.NAMECOMMA ?? 0} name-lines got their comma · ${oCount.SKIP ?? 0} with a-comma in the-middle, by hand`;
     }
     // --auto: per step only its count of changes, the-detail is in createMcsh.txt
     const nNote = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length - nNoteBefore;

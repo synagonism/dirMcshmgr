@@ -1,0 +1,38 @@
+=== RENAME (28)
+  McshLag000018:12644  <br>* McshEngl.negationEmphasis,  →  <br>* McshEngl.negationEmphasisZhonYòubù,
+  McshLag000018:13823  <br>* McshEngl.RltnAddition,  →  <br>* McshEngl.RltnAdditionZhonBìng,
+  McshLag000018:13958  <br>* McshEngl.to,  →  <br>* McshEngl.toZhonDào_到,
+  McshLag000018:14211  <br>* McshEngl.RltnAddition!=and_also,  →  <br>* McshEngl.RltnAdditionZhonHái!=and_also,
+  McshLag000018:14212  <br>* McshEngl.RltnAddition!=and-also!=and_also,  →  <br>* McshEngl.RltnAdditionZhonHái!=and-also!=and_also,
+  McshLag000018:14232  <br>* McshEngl.RltnAddition!=and_also,  →  <br>* McshEngl.RltnAdditionZhonHáiyǒu!=and_also,
+  McshLag000018:14258  <br>* McshEngl.RltnAddition,  →  <br>* McshEngl.RltnAdditionZhonHé,
+  McshLag000018:14300  <br>* McshEngl.RltnDisunionInclusive,  →  <br>* McshEngl.RltnDisunionInclusiveZhonHuò,
+  McshLag000018:14321  <br>* McshEngl.RltnDisunionInclusive,  →  <br>* McshEngl.RltnDisunionInclusiveZhonHuòzhě,
+  McshLag000018:14341  <br>* McshEngl.RltnAddition!=and_also,  →  <br>* McshEngl.RltnAdditionZhonJí!=and_also,
+  McshLag000018:14361  <br>* McshEngl.RltnCauseThenEffect!=consequently,  →  <br>* McshEngl.RltnCauseThenEffectZhonJiéguǒ!=consequently,
+  McshLag000018:14381  <br>* McshEngl.RltnOpposition!=although,  →  <br>* McshEngl.RltnOppositionZhonJǐnguǎn!=although,
+  McshLag000018:14401  <br>* McshEngl.RltnCauseThenEffect!=then,  →  <br>* McshEngl.RltnCauseThenEffectZhonJiù!=then,
+  McshLag000018:14440  <br>* McshEngl.RltnGoal,  →  <br>* McshEngl.RltnGoalZhonLái,
+  McshLag000018:14527  <br>* McshEngl.RltnCauseThenEffect!=then,  →  <br>* McshEngl.RltnCauseThenEffectZhonNà!=then,
+  McshLag000018:14545  <br>* McshEngl.RltnCauseThenEffect!=then,  →  <br>* McshEngl.RltnCauseThenEffectZhonNàme!=then,
+  McshLag000018:14601  <br>* McshEngl.RltnOpposition!=But|However,  →  <br>* McshEngl.RltnOppositionZhonQuè!=But|However,
+  McshLag000018:14620  <br>* McshEngl.RltnOpposition!=But|However,  →  <br>* McshEngl.RltnOppositionZhonRánér!=But|However,
+  McshLag000018:14675  <br>* McshEngl.RltnOpposition!=although,  →  <br>* McshEngl.RltnOppositionZhonSuīránDànshì!=although,
+  McshLag000018:14695  <br>* McshEngl.RltnOpposition!=although,  →  <br>* McshEngl.RltnOppositionZhonSuīránKěshì!=although,
+  McshLag000018:14713  <br>* McshEngl.RltnCauseThenEffect!=so,  →  <br>* McshEngl.RltnCauseThenEffectZhonSuǒyǐ!=so,
+  McshLag000018:14733  <br>* McshEngl.RltnAddition!=and_also,  →  <br>* McshEngl.RltnAdditionZhonTóng!=and_also,
+  McshLag000018:14845  <br>* McshEngl.RltnAddition,  →  <br>* McshEngl.RltnAdditionZhonYě,
+  McshLag000018:14918  <br>* McshEngl.RltnCauseThenEffect!=therefore,  →  <br>* McshEngl.RltnCauseThenEffectZhonYīncǐ!=therefore,
+  McshLag000018:14989  <br>* McshEngl.between,  →  <br>* McshEngl.betweenZhonYǔ_zhījiān,
+  McshLag000018:15009  <br>* McshEngl.to,  →  <br>* McshEngl.toZhonZhì_至,
+  McshLag000018:15030  <br>* McshEngl.between,  →  <br>* McshEngl.betweenZhonZhījiān,
+  McshLag000018:15069  <br>* McshEngl.RltnCauseThenEffect!=finally,  →  <br>* McshEngl.RltnCauseThenEffectZhonZuìhòu!=finally,
+
+=== SKIP (3)
+  McshLag000018:12664  <br>* McshEngl.negationEmphasis,  (no ZhonnegationEmphasis… in its paragraph)
+  McshLag000018:13881  <br>* McshEngl.regardless..still,  (no Zhonregardless..still… in its paragraph)
+  McshLag000018:13900  <br>* McshEngl.regardless..still,  (no Zhonregardless..still… in its paragraph)
+
+=== HAND (2)
+  McshLag000018:13881  regardless..still  →  regardless..stillZhonBùguǎnDōu
+  McshLag000018:13900  regardless..still  →  regardless..stillZhonBùguǎnYě

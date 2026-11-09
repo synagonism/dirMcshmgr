@@ -1,0 +1,1717 @@
+=== REMOVE (495)
+  McshCor000003:920  <br>* McshEngl.summarized-before-current-era!⇒summarized_before_current_era,
+  McshCor000003:1058  <br>* McshEngl.{summarized-1001..2000}!⇒{summarized_1001..2000},
+  McshCor000003:1086  <br>* McshEngl.{summarized-2001..3000}!⇒{summarized_2001..3000},
+  McshCor000005:3343  <br>* McshEngl._SntxEngl:_SntxSubj=brain-entity:[...]_SntxVerb:{believe}_SntxObj1=arhetype:[...]!⇒_SntxEngl:_SntxSubj=brain_entity:[...]_SntxVerb:{believe}_SntxObj1=arhetype:[...],
+  McshCor000005:3356  <br>* McshEngl._SntxEngl:_SntxSubj=brain-entity:[..]_SntxVerb:{believe}_SntxObj1=brain-entity2:[...]!⇒_SntxEngl:_SntxSubj=brain_entity:[..]_SntxVerb:{believe}_SntxObj1=brain_entity2:[...],
+  McshCor000013:843  <br>* McshEngl._SntxEngl:_SntxSubj=brain-entity:[...]_SntxVerbActive:(sense)_SntxObj1=stimulus:[...]!⇒_SntxEngl:_SntxSubj=brain_entity:[...]_SntxVerbActive:(sense)_SntxObj1=stimulus:[...],
+  McshCor000013:856  <br>* McshEngl._SntxEngl:_SntxSubj=stimulus:[]_SntxVerbPassive:(am-sensed)_SntxOther:[...]!⇒_SntxEngl:_SntxSubj=stimulus:[]_SntxVerbPassive:(am_sensed)_SntxOther:[...],
+  McshCor000013:869  <br>* McshEngl._SntxEngl:_SntxSubj=stimulus:[...]_SntxVerb:{sense-relation}_SntxObj1=sensation:[...]!⇒_SntxEngl:_SntxSubj=stimulus:[...]_SntxVerb:{sense_relation}_SntxObj1=sensation:[...],
+  McshCor000018:94  <br>* McshEngl.individual-consciousness!⇒individual_consciousness,
+  McshEdu000007:573  <br>* McshEngl.computational-problem!⇒computational_problem,
+  McshHlth000002:9631  <br>* McshEngl.alveolar-duct!⇒alveolar_duct,
+  McshHlth000002:9680  <br>* McshEngl.pulmonary-pleura!⇒pulmonary_pleura,
+  McshHlth000008:736  <br>* McshEngl.universal-health-insurance!⇒universal_health_insurance,
+  McshHlth000008:990  <br>* McshEngl.education-on-health-of-citizens!⇒education_on_health_of_citizens,
+  McshHlth000013:3362  <br>* McshEngl.drinkTea.τσάι-του-βουνού!⇒drinkTea.τσάι_του_βουνού,
+  McshHlth000013:3595  <br>* McshEngl.bottle-of-water!⇒bottle_of_water,
+  McshHlth000019:2172  <br>* McshEngl.spinal-cord-center!⇒spinal_cord_center,
+  McshLag000010:838  <br>* McshEngl.Sngu_cons_phnm./th/-[θ]!⇒Sngu_cons_phnm./th/_[θ],
+  McshLag000010:852  <br>* McshEngl.Sngu_cons_phnm./dh/-[ð]!⇒Sngu_cons_phnm./dh/_[ð],
+  McshLag000010:944  <br>* McshEngl.Sngu_cons_phnm./c/-[t͡s]!⇒Sngu_cons_phnm./c/_[t͡s],
+  McshLag000010:971  <br>* McshEngl.Sngu_cons_phnm./j/-[d͡z]!⇒Sngu_cons_phnm./j/_[d͡z],
+  McshLag000010:1011  <br>* McshEngl.Sngu_cons_phnm./kk/-[c]!⇒Sngu_cons_phnm./kk/_[c],
+  McshLag000010:1038  <br>* McshEngl.Sngu_cons_phnm./gg/-[ɟ]!⇒Sngu_cons_phnm./gg/_[ɟ],
+  McshLag000010:1065  <br>* McshEngl.Sngu_cons_phnm./hh/-[ç]!⇒Sngu_cons_phnm./hh/_[ç],
+  McshLag000010:1092  <br>* McshEngl.Sngu_cons_phnm./yy/-[ʝ]!⇒Sngu_cons_phnm./yy/_[ʝ],
+  McshLag000010:1132  <br>* McshEngl.Sngu_cons_phnm./nn/-[ɲ]!⇒Sngu_cons_phnm./nn/_[ɲ],
+  McshLag000010:1172  <br>* McshEngl.Sngu_cons_phnm./ll/-[ʎ]!⇒Sngu_cons_phnm./ll/_[ʎ],
+  McshLag000010:1405  <br>* McshEngl.Snguletr.03-d-[d]!⇒Snguletr.03_d_[d],
+  McshLag000011:1239  <br>* McshEngl.Engl_letr.A-/ei/!⇒Engl_letr.A_/ei/,
+  McshLag000011:1254  <br>* McshEngl.Engl_letr.B-/bi/!⇒Engl_letr.B_/bi/,
+  McshLag000011:1276  <br>* McshEngl.Engl_letr.C-/si/!⇒Engl_letr.C_/si/,
+  McshLag000011:1292  <br>* McshEngl.Engl_letr.D-/di/!⇒Engl_letr.D_/di/,
+  McshLag000011:1323  <br>* McshEngl.Engl_letr.E-/i/!⇒Engl_letr.E_/i/,
+  McshLag000011:1338  <br>* McshEngl.Engl_letr.F-/ef/!⇒Engl_letr.F_/ef/,
+  McshLag000011:1362  <br>* McshEngl.Engl_letr.G-/ji/!⇒Engl_letr.G_/ji/,
+  McshLag000011:1377  <br>* McshEngl.Engl_letr.H-/eic/!⇒Engl_letr.H_/eic/,
+  McshLag000011:1405  <br>* McshEngl.Engl_letr.I-/ai/!⇒Engl_letr.I_/ai/,
+  McshLag000011:1420  <br>* McshEngl.Engl_letr.J-/jei/!⇒Engl_letr.J_/jei/,
+  McshLag000011:1436  <br>* McshEngl.Engl_letr.K-/kei/!⇒Engl_letr.K_/kei/,
+  McshLag000011:1451  <br>* McshEngl.Engl_letr.L-/el/!⇒Engl_letr.L_/el/,
+  McshLag000011:1467  <br>* McshEngl.Engl_letr.M-/em/!⇒Engl_letr.M_/em/,
+  McshLag000011:1483  <br>* McshEngl.Engl_letr.N-/en/!⇒Engl_letr.N_/en/,
+  McshLag000011:1523  <br>* McshEngl.Engl_letr.O-/ou/!⇒Engl_letr.O_/ou/,
+  McshLag000011:1539  <br>* McshEngl.Engl_letr.P-/pi/!⇒Engl_letr.P_/pi/,
+  McshLag000011:1554  <br>* McshEngl.Engl_letr.Q-/kku/!⇒Engl_letr.Q_/kku/,
+  McshLag000011:1569  <br>* McshEngl.Engl_letr.R-/ar/!⇒Engl_letr.R_/ar/,
+  McshLag000011:1589  <br>* McshEngl.Engl_letr.S-/es/!⇒Engl_letr.S_/es/,
+  McshLag000011:1608  <br>* McshEngl.Engl_letr.T-/ti/!⇒Engl_letr.T_/ti/,
+  McshLag000011:1632  <br>* McshEngl.Engl_letr.U-/yyu/!⇒Engl_letr.U_/yyu/,
+  McshLag000011:1647  <br>* McshEngl.Engl_letr.V-/vi/!⇒Engl_letr.V_/vi/,
+  McshLag000011:1666  <br>* McshEngl.Engl_letr.W-/dábliyyu/!⇒Engl_letr.W_/dábliyyu/,
+  McshLag000011:1684  <br>* McshEngl.Engl_letr.X-/eks/!⇒Engl_letr.X_/eks/,
+  McshLag000011:1701  <br>* McshEngl.Engl_letr.Y-/yuai/!⇒Engl_letr.Y_/yuai/,
+  McshLag000011:1716  <br>* McshEngl.Engl_letr.Z-/zet/!⇒Engl_letr.Z_/zet/,
+  McshLag000012:811  <br>* McshEngl.EspoConsPhnm./S/-[ʃ]-ŝ!⇒EspoConsPhnm./S/_[ʃ]_ŝ,
+  McshLag000012:825  <br>* McshEngl.EspoConsPhnm./Z/-[ʒ]-ĵ!⇒EspoConsPhnm./Z/_[ʒ]_ĵ,
+  McshLag000012:839  <br>* McshEngl.EspoConsPhnm./c/-[ts]-c!⇒EspoConsPhnm./c/_[ts]_c,
+  McshLag000012:853  <br>* McshEngl.EspoConsPhnm./C/-[tʃ]-ĉ!⇒EspoConsPhnm./C/_[tʃ]_ĉ,
+  McshLag000012:867  <br>* McshEngl.EspoConsPhnm./J/-[dʒ]-ĝ!⇒EspoConsPhnm./J/_[dʒ]_ĝ,
+  McshLag000012:907  <br>* McshEngl.EspoConsPhnm./h/-[h]-h!⇒EspoConsPhnm./h/_[h]_h,
+  McshLag000012:921  <br>* McshEngl.EspoConsPhnm./H/-[x]-ĥ!⇒EspoConsPhnm./H/_[x]_ĥ,
+  McshLag000012:974  <br>* McshEngl.EspoConsPhnm./nj/-[ɲ]-nj!⇒EspoConsPhnm./nj/_[ɲ]_nj,
+  McshLag000012:1061  <br>* McshEngl.letterEspo.01-a-/a/!⇒letterEspo.01_a_/a/,
+  McshLag000012:1076  <br>* McshEngl.letterEspo.02-b-/bo/!⇒letterEspo.02_b_/bo/,
+  McshLag000012:1091  <br>* McshEngl.letterEspo.03-c-/co/!⇒letterEspo.03_c_/co/,
+  McshLag000012:1106  <br>* McshEngl.letterEspo.04-ĉ-/Co/!⇒letterEspo.04_ĉ_/Co/,
+  McshLag000012:1121  <br>* McshEngl.letterEspo.05-d-/do/!⇒letterEspo.05_d_/do/,
+  McshLag000012:1137  <br>* McshEngl.letterEspo.06-e-/e/!⇒letterEspo.06_e_/e/,
+  McshLag000012:1152  <br>* McshEngl.letterEspo.07-f-/fo/!⇒letterEspo.07_f_/fo/,
+  McshLag000012:1167  <br>* McshEngl.letterEspo.08-g-/go/!⇒letterEspo.08_g_/go/,
+  McshLag000012:1182  <br>* McshEngl.letterEspo.09-ĝ-/Jo/!⇒letterEspo.09_ĝ_/Jo/,
+  McshLag000012:1197  <br>* McshEngl.letterEspo.10-h-/ho/!⇒letterEspo.10_h_/ho/,
+  McshLag000012:1229  <br>* McshEngl.letterEspo.12-i-/i/!⇒letterEspo.12_i_/i/,
+  McshLag000012:1268  <br>* McshEngl.letterEspo.14-ĵ-/Zo/!⇒letterEspo.14_ĵ_/Zo/,
+  McshLag000012:1283  <br>* McshEngl.letterEspo.15-k-/ko/!⇒letterEspo.15_k_/ko/,
+  McshLag000012:1298  <br>* McshEngl.letterEspo.16-l-/lo/!⇒letterEspo.16_l_/lo/,
+  McshLag000012:1313  <br>* McshEngl.letterEspo.17-m-/mo/!⇒letterEspo.17_m_/mo/,
+  McshLag000012:1328  <br>* McshEngl.letterEspo.18-n-/no/!⇒letterEspo.18_n_/no/,
+  McshLag000012:1344  <br>* McshEngl.letterEspo.19-o-/o/!⇒letterEspo.19_o_/o/,
+  McshLag000012:1359  <br>* McshEngl.letterEspo.20-p-/po/!⇒letterEspo.20_p_/po/,
+  McshLag000012:1374  <br>* McshEngl.letterEspo.21-r-/ro/!⇒letterEspo.21_r_/ro/,
+  McshLag000012:1389  <br>* McshEngl.letterEspo.22-s-/so/!⇒letterEspo.22_s_/so/,
+  McshLag000012:1420  <br>* McshEngl.letterEspo.24-t-/to/!⇒letterEspo.24_t_/to/,
+  McshLag000012:1436  <br>* McshEngl.letterEspo.25-u-/u/!⇒letterEspo.25_u_/u/,
+  McshLag000012:1451  <br>* McshEngl.letterEspo.26-ŭ-/yu/!⇒letterEspo.26_ŭ_/yu/,
+  McshLag000012:1466  <br>* McshEngl.letterEspo.27-v-/vo/!⇒letterEspo.27_v_/vo/,
+  McshLag000012:1481  <br>* McshEngl.letterEspo.28-z-/zo/!⇒letterEspo.28_z_/zo/,
+  McshLag000018:12238  <br>* McshEngl.Zhonverbauxi.ba-吧!⇒Zhonverbauxi.ba_吧,
+  McshLag000018:12282  <br>* McshEngl.Zhonverbauxi.bèi-被!⇒Zhonverbauxi.bèi_被,
+  McshLag000018:12381  <br>* McshEngl.Zhonverbauxi.huì-会-will!⇒Zhonverbauxi.huì_会_will,
+  McshLag000018:12473  <br>* McshEngl.Zhonverbauxi.le-了!⇒Zhonverbauxi.le_了,
+  McshLag000018:12775  <br>* McshEngl.Zhonverbauxi.zhèngzài-正在!⇒Zhonverbauxi.zhèngzài_正在,
+  McshLag000018:13809  <br>* McshEngl.Zhonconj.005-bǎ-把RltnObj1!⇒Zhonconj.005_bǎ_把RltnObj1,
+  McshLag000018:16632  <br>* McshEngl.Zhon_sentAsk.ba-吧!⇒Zhon_sentAsk.ba_吧,
+  McshLag000018:16652  <br>* McshEngl.Zhon_sentAsk.duō-多!⇒Zhon_sentAsk.duō_多,
+  McshLag000018:16718  <br>* McshEngl.Zhon_sentAsk.juédé-觉得!⇒Zhon_sentAsk.juédé_觉得,
+  McshLag000018:16736  <br>* McshEngl.Zhon_sentAsk.méiyŏu-没有!⇒Zhon_sentAsk.méiyŏu_没有,
+  McshLag000018:16753  <br>* McshEngl.Zhon_sentAsk.ne-呢!⇒Zhon_sentAsk.ne_呢,
+  McshLag000018:16775  <br>* McshEngl.Zhon_sentAsk.zěnmeyàng-怎么样!⇒Zhon_sentAsk.zěnmeyàng_怎么样,
+  McshLag000020:637  <br>* McshEngl.Elln_cons_phnm./th/-/θ/ipa!⇒Elln_cons_phnm./th/_/θ/ipa,
+  McshLag000020:653  <br>* McshEngl.Elln_cons_phnm./dh/-/ð/ipa!⇒Elln_cons_phnm./dh/_/ð/ipa,
+  McshLag000020:740  <br>* McshEngl.Elln_cons_phnm./c/-/ts/ipa!⇒Elln_cons_phnm./c/_/ts/ipa,
+  McshLag000020:756  <br>* McshEngl.Elln_cons_phnm./j/-/dz/ipa!⇒Elln_cons_phnm./j/_/dz/ipa,
+  McshLag000020:799  <br>* McshEngl.Elln_cons_phnm./h/-/x/ipa!⇒Elln_cons_phnm./h/_/x/ipa,
+  McshLag000020:814  <br>* McshEngl.Elln_cons_phnm./hh/-/ç/ipa!⇒Elln_cons_phnm./hh/_/ç/ipa,
+  McshLag000020:830  <br>* McshEngl.Elln_cons_phnm./y/-/ɣ/ipa!⇒Elln_cons_phnm./y/_/ɣ/ipa,
+  McshLag000020:888  <br>* McshEngl.Elln_cons_phnm./nn/-/ɲ/ipa!⇒Elln_cons_phnm./nn/_/ɲ/ipa,
+  McshLag000020:10412  <br>* McshEngl.Ellnconj.007-αντί|αντίς!⇒Ellnconj.007_αντί|αντίς,
+  McshLag000020:10445  <br>* McshEngl.Ellnconj.009-από|απ!⇒Ellnconj.009_από|απ,
+  McshLag000020:10580  <br>* McshEngl.Ellnconj.017-για|γι!⇒Ellnconj.017_για|γι,
+  McshLag000020:11122  <br>* McshEngl.Ellnconj.044-ίσαμε|ισαμ!⇒Ellnconj.044_ίσαμε|ισαμ,
+  McshLag000020:11190  <br>* McshEngl.Ellnconj.048-και|κι!⇒Ellnconj.048_και|κι,
+  McshLag000020:11258  <br>* McshEngl.Ellnconj.051-κατά|κατ!⇒Ellnconj.051_κατά|κατ,
+  McshLag000020:11359  <br>* McshEngl.Ellnconj.057-με|μ!⇒Ellnconj.057_με|μ,
+  McshLag000020:11462  <br>* McshEngl.Ellnconj.063-μη|μην!⇒Ellnconj.063_μη|μην,
+  McshLag000020:12114  <br>* McshEngl.Ellnconj.099-σε|σ!⇒Ellnconj.099_σε|σ,
+  McshLag000023:389  <br>* McshEngl.Zhon_particle.modal-(sentence-final)!⇒Zhon_particle.modal_(sentence_final),
+  McshLag000023:492  <br>* McshEngl.Zhon_particle.嗎-mā|ma!⇒Zhon_particle.嗎_mā|ma,
+  McshLag000028:1183  <br>* McshEngl.Ell0diphthong.αυ-ευ!⇒Ell0diphthong.αυ_ευ,
+  McshLag000030:683  <br>* McshEngl.TurkConsPhnm./r/-[ɾ]!⇒TurkConsPhnm./r/_[ɾ],
+  McshLag000030:794  <br>* McshEngl.letterTurk.01-a-/a/!⇒letterTurk.01_a_/a/,
+  McshLag000030:808  <br>* McshEngl.letterTurk.02-b-/be/!⇒letterTurk.02_b_/be/,
+  McshLag000030:822  <br>* McshEngl.letterTurk.03-c-/Je/!⇒letterTurk.03_c_/Je/,
+  McshLag000030:836  <br>* McshEngl.letterTurk.04-ç-/Ce/!⇒letterTurk.04_ç_/Ce/,
+  McshLag000030:850  <br>* McshEngl.letterTurk.05-d-/de/!⇒letterTurk.05_d_/de/,
+  McshLag000030:864  <br>* McshEngl.letterTurk.06-e-/e/!⇒letterTurk.06_e_/e/,
+  McshLag000030:878  <br>* McshEngl.letterTurk.07-f-/fe/!⇒letterTurk.07_f_/fe/,
+  McshLag000030:892  <br>* McshEngl.letterTurk.08-g-/ge/!⇒letterTurk.08_g_/ge/,
+  McshLag000030:922  <br>* McshEngl.letterTurk.10-h-/he/!⇒letterTurk.10_h_/he/,
+  McshLag000030:936  <br>* McshEngl.letterTurk.11-ı-/i2/!⇒letterTurk.11_ı_/i2/,
+  McshLag000030:950  <br>* McshEngl.letterTurk.12-i-/i/!⇒letterTurk.12_i_/i/,
+  McshLag000030:964  <br>* McshEngl.letterTurk.13-j-/Ze/!⇒letterTurk.13_j_/Ze/,
+  McshLag000030:978  <br>* McshEngl.letterTurk.14-k-/ke/!⇒letterTurk.14_k_/ke/,
+  McshLag000030:992  <br>* McshEngl.letterTurk.15-l-/le/!⇒letterTurk.15_l_/le/,
+  McshLag000030:1006  <br>* McshEngl.letterTurk.16-m-/me/!⇒letterTurk.16_m_/me/,
+  McshLag000030:1020  <br>* McshEngl.letterTurk.17-n-/ne/!⇒letterTurk.17_n_/ne/,
+  McshLag000030:1035  <br>* McshEngl.letterTurk.18-o-/o/!⇒letterTurk.18_o_/o/,
+  McshLag000030:1062  <br>* McshEngl.letterTurk.19-ö-/e3/!⇒letterTurk.19_ö_/e3/,
+  McshLag000030:1076  <br>* McshEngl.letterTurk.20-p-/pe/!⇒letterTurk.20_p_/pe/,
+  McshLag000030:1090  <br>* McshEngl.letterTurk.21-r-/re/!⇒letterTurk.21_r_/re/,
+  McshLag000030:1104  <br>* McshEngl.letterTurk.22-s-/se/!⇒letterTurk.22_s_/se/,
+  McshLag000030:1118  <br>* McshEngl.letterTurk.23-ş-/Se/!⇒letterTurk.23_ş_/Se/,
+  McshLag000030:1132  <br>* McshEngl.letterTurk.24-t-/te/!⇒letterTurk.24_t_/te/,
+  McshLag000030:1147  <br>* McshEngl.letterTurk.25-u-/u/!⇒letterTurk.25_u_/u/,
+  McshLag000030:1170  <br>* McshEngl.letterTurk.26-ü-/i3/!⇒letterTurk.26_ü_/i3/,
+  McshLag000030:1184  <br>* McshEngl.letterTurk.27-v-/ve/!⇒letterTurk.27_v_/ve/,
+  McshLag000030:1198  <br>* McshEngl.letterTurk.28-y-/ye/!⇒letterTurk.28_y_/ye/,
+  McshLag000030:1212  <br>* McshEngl.letterTurk.29-z-/ze/!⇒letterTurk.29_z_/ze/,
+  McshLag000033:1092  <br>* McshEngl.DeutConsPhnm./S/-/ʃ/ipa!⇒DeutConsPhnm./S/_/ʃ/ipa,
+  McshLag000033:1109  <br>* McshEngl.DeutConsPhnm./Z/-/ʒ/ipa!⇒DeutConsPhnm./Z/_/ʒ/ipa,
+  McshLag000033:1143  <br>* McshEngl.DeutConsPhnm./H/-/x/ipa!⇒DeutConsPhnm./H/_/x/ipa,
+  McshLag000033:1160  <br>* McshEngl.DeutConsPhnm./hj/-/ç/ipa!⇒DeutConsPhnm./hj/_/ç/ipa,
+  McshLag000033:1209  <br>* McshEngl.DeutConsPhnm./ng/-/ŋ/ipa!⇒DeutConsPhnm./ng/_/ŋ/ipa,
+  McshLag000033:1243  <br>* McshEngl.DeutConsPhnm./r/-/ʁ/ipa!⇒DeutConsPhnm./r/_/ʁ/ipa,
+  McshLag000033:1260  <br>* McshEngl.DeutConsPhnm./yy/-/j/ipa!⇒DeutConsPhnm./yy/_/j/ipa,
+  McshLag000033:1277  <br>* McshEngl.DeutConsPhnm./c/-/t͡s/ipa!⇒DeutConsPhnm./c/_/t͡s/ipa,
+  McshLag000033:1294  <br>* McshEngl.DeutConsPhnm./C/-/t͡ʃ/ipa!⇒DeutConsPhnm./C/_/t͡ʃ/ipa,
+  McshLag000033:1311  <br>* McshEngl.DeutConsPhnm./pf/-/p͡f/ipa!⇒DeutConsPhnm./pf/_/p͡f/ipa,
+  McshLag000033:1471  <br>* McshEngl.DeutLetr.A-/a/!⇒DeutLetr.A_/a/,
+  McshLag000033:1488  <br>* McshEngl.DeutLetr.Ä-(a-umlaut)-/e/!⇒DeutLetr.Ä_(a_umlaut)_/e/,
+  McshLag000033:1502  <br>* McshEngl.DeutLetr.B-/bi/!⇒DeutLetr.B_/bi/,
+  McshLag000033:1521  <br>* McshEngl.DeutLetr.C-/ci/!⇒DeutLetr.C_/ci/,
+  McshLag000033:1535  <br>* McshEngl.DeutLetr.D-/di/!⇒DeutLetr.D_/di/,
+  McshLag000033:1552  <br>* McshEngl.DeutLetr.E-/e/!⇒DeutLetr.E_/e/,
+  McshLag000033:1564  <br>* McshEngl.DeutLetr.F-/ef/!⇒DeutLetr.F_/ef/,
+  McshLag000033:1580  <br>* McshEngl.DeutLetr.G-/gi/!⇒DeutLetr.G_/gi/,
+  McshLag000033:1609  <br>* McshEngl.DeutLetr.H-/ha/!⇒DeutLetr.H_/ha/,
+  McshLag000033:1624  <br>* McshEngl.DeutLetr.I-/i/!⇒DeutLetr.I_/i/,
+  McshLag000033:1637  <br>* McshEngl.DeutLetr.J-/yyot/!⇒DeutLetr.J_/yyot/,
+  McshLag000033:1649  <br>* McshEngl.DeutLetr.K-/ka/!⇒DeutLetr.K_/ka/,
+  McshLag000033:1661  <br>* McshEngl.DeutLetr.L-/el/!⇒DeutLetr.L_/el/,
+  McshLag000033:1673  <br>* McshEngl.DeutLetr.M-/em/!⇒DeutLetr.M_/em/,
+  McshLag000033:1685  <br>* McshEngl.DeutLetr.N-/en/!⇒DeutLetr.N_/en/,
+  McshLag000033:1698  <br>* McshEngl.DeutLetr.O-/o/!⇒DeutLetr.O_/o/,
+  McshLag000033:1714  <br>* McshEngl.DeutLetr.Ö-(o-umlaut)-/e8/!⇒DeutLetr.Ö_(o_umlaut)_/e8/,
+  McshLag000033:1727  <br>* McshEngl.DeutLetr.P-/pe/!⇒DeutLetr.P_/pe/,
+  McshLag000033:1739  <br>* McshEngl.DeutLetr.Q-/ku/!⇒DeutLetr.Q_/ku/,
+  McshLag000033:1752  <br>* McshEngl.DeutLetr.R-/er/!⇒DeutLetr.R_/er/,
+  McshLag000033:1769  <br>* McshEngl.DeutLetr.S-/es/!⇒DeutLetr.S_/es/,
+  McshLag000033:1784  <br>* McshEngl.DeutLetr.ẞ-/escet/!⇒DeutLetr.ẞ_/escet/,
+  McshLag000033:1797  <br>* McshEngl.DeutLetr.T-/ti/!⇒DeutLetr.T_/ti/,
+  McshLag000033:1811  <br>* McshEngl.DeutLetr.U-/u/!⇒DeutLetr.U_/u/,
+  McshLag000033:1827  <br>* McshEngl.DeutLetr.Ü-(u-umlaut)-/i8/!⇒DeutLetr.Ü_(u_umlaut)_/i8/,
+  McshLag000033:1839  <br>* McshEngl.DeutLetr.V-/fau/!⇒DeutLetr.V_/fau/,
+  McshLag000033:1853  <br>* McshEngl.DeutLetr.W-/ve/!⇒DeutLetr.W_/ve/,
+  McshLag000033:1865  <br>* McshEngl.DeutLetr.X-/iks/!⇒DeutLetr.X_/iks/,
+  McshLag000033:1877  <br>* McshEngl.DeutLetr.Y-/i8psilon/!⇒DeutLetr.Y_/i8psilon/,
+  McshLag000033:1890  <br>* McshEngl.DeutLetr.Z-/cet/!⇒DeutLetr.Z_/cet/,
+  McshLag000035:739  <br>* McshEngl.SpanLetr.Ñ-/nj/!⇒SpanLetr.Ñ_/nj/,
+  McshLag000037:692  <br>* McshEngl.HiurConsPhnm./p/-[p]!⇒HiurConsPhnm./p/_[p],
+  McshLag000037:707  <br>* McshEngl.HiurConsPhnm./pd/-[pʰ]!⇒HiurConsPhnm./pd/_[pʰ],
+  McshLag000037:722  <br>* McshEngl.HiurConsPhnm./b/-[b]!⇒HiurConsPhnm./b/_[b],
+  McshLag000037:737  <br>* McshEngl.HiurConsPhnm./bb/-[bʱ]!⇒HiurConsPhnm./bb/_[bʱ],
+  McshLag000037:752  <br>* McshEngl.HiurConsPhnm./t/-[t̪]!⇒HiurConsPhnm./t/_[t̪],
+  McshLag000037:767  <br>* McshEngl.HiurConsPhnm./td/-[t̪ʰ]!⇒HiurConsPhnm./td/_[t̪ʰ],
+  McshLag000037:782  <br>* McshEngl.HiurConsPhnm./d/-[d̪]!⇒HiurConsPhnm./d/_[d̪],
+  McshLag000037:797  <br>* McshEngl.HiurConsPhnm./db/-[d̪ʱ]!⇒HiurConsPhnm./db/_[d̪ʱ],
+  McshLag000037:812  <br>* McshEngl.HiurConsPhnm./tr/-[ʈ]!⇒HiurConsPhnm./tr/_[ʈ],
+  McshLag000037:827  <br>* McshEngl.HiurConsPhnm./trd/-[ʈʰ]!⇒HiurConsPhnm./trd/_[ʈʰ],
+  McshLag000037:842  <br>* McshEngl.HiurConsPhnm./dr/-[ɖ]!⇒HiurConsPhnm./dr/_[ɖ],
+  McshLag000037:857  <br>* McshEngl.HiurConsPhnm./drb/-[ɖʱ]!⇒HiurConsPhnm./drb/_[ɖʱ],
+  McshLag000037:872  <br>* McshEngl.HiurConsPhnm./k/-[k]!⇒HiurConsPhnm./k/_[k],
+  McshLag000037:887  <br>* McshEngl.HiurConsPhnm./kd/-[kʰ]!⇒HiurConsPhnm./kd/_[kʰ],
+  McshLag000037:902  <br>* McshEngl.HiurConsPhnm./g/-[ɡ]!⇒HiurConsPhnm./g/_[ɡ],
+  McshLag000037:917  <br>* McshEngl.HiurConsPhnm./gb/-[ɡʱ]!⇒HiurConsPhnm./gb/_[ɡʱ],
+  McshLag000037:932  <br>* McshEngl.HiurConsPhnm./C/-[t͡ʃ]!⇒HiurConsPhnm./C/_[t͡ʃ],
+  McshLag000037:947  <br>* McshEngl.HiurConsPhnm./Cd/-[t͡ʃʰ]!⇒HiurConsPhnm./Cd/_[t͡ʃʰ],
+  McshLag000037:962  <br>* McshEngl.HiurConsPhnm./J/-[d͡ʒ]!⇒HiurConsPhnm./J/_[d͡ʒ],
+  McshLag000037:977  <br>* McshEngl.HiurConsPhnm./Jb/-[d͡ʒʱ]!⇒HiurConsPhnm./Jb/_[d͡ʒʱ],
+  McshLag000037:992  <br>* McshEngl.HiurConsPhnm./s/-[s]!⇒HiurConsPhnm./s/_[s],
+  McshLag000037:1007  <br>* McshEngl.HiurConsPhnm./S/-[ʃ]!⇒HiurConsPhnm./S/_[ʃ],
+  McshLag000037:1022  <br>* McshEngl.HiurConsPhnm./z/-[z]!⇒HiurConsPhnm./z/_[z],
+  McshLag000037:1037  <br>* McshEngl.HiurConsPhnm./h/-[h]!⇒HiurConsPhnm./h/_[h],
+  McshLag000037:1052  <br>* McshEngl.HiurConsPhnm./f/-[f]!⇒HiurConsPhnm./f/_[f],
+  McshLag000037:1067  <br>* McshEngl.HiurConsPhnm./H/-[x]!⇒HiurConsPhnm./H/_[x],
+  McshLag000037:1082  <br>* McshEngl.HiurConsPhnm./y/-[ɣ]!⇒HiurConsPhnm./y/_[ɣ],
+  McshLag000037:1097  <br>* McshEngl.HiurConsPhnm./m/-[m]!⇒HiurConsPhnm./m/_[m],
+  McshLag000037:1112  <br>* McshEngl.HiurConsPhnm./n/-[n]!⇒HiurConsPhnm./n/_[n],
+  McshLag000037:1127  <br>* McshEngl.HiurConsPhnm./nr/-[ɳ]!⇒HiurConsPhnm./nr/_[ɳ],
+  McshLag000037:1142  <br>* McshEngl.HiurConsPhnm./nj/-[ɲ]!⇒HiurConsPhnm./nj/_[ɲ],
+  McshLag000037:1157  <br>* McshEngl.HiurConsPhnm./ng/-[ŋ]!⇒HiurConsPhnm./ng/_[ŋ],
+  McshLag000037:1172  <br>* McshEngl.HiurConsPhnm./l/-[l]!⇒HiurConsPhnm./l/_[l],
+  McshLag000037:1187  <br>* McshEngl.HiurConsPhnm./r/-[ɾ]!⇒HiurConsPhnm./r/_[ɾ],
+  McshLag000037:1202  <br>* McshEngl.HiurConsPhnm./v/-[ʋ]!⇒HiurConsPhnm./v/_[ʋ],
+  McshLag000037:1217  <br>* McshEngl.HiurConsPhnm./yj/-[j]!⇒HiurConsPhnm./yj/_[j],
+  McshOgm000005:1208  <br>* McshEngl.urinary-tract-infection!⇒urinary_tract_infection,
+  McshStn000009:3175  <br>* McshEngl.social-control!⇒social_control,
+  McshStn000018:1213  <br>* McshEngl.Uncharter/article-011!⇒Uncharter/article_011,
+  McshStn000018:1230  <br>* McshEngl.Uncharter/article-012!⇒Uncharter/article_012,
+  McshStn000018:1243  <br>* McshEngl.Uncharter/article-013!⇒Uncharter/article_013,
+  McshStn000018:1257  <br>* McshEngl.Uncharter/article-014!⇒Uncharter/article_014,
+  McshStn000018:1268  <br>* McshEngl.Uncharter/article-015!⇒Uncharter/article_015,
+  McshStn000018:1281  <br>* McshEngl.Uncharter/article-016!⇒Uncharter/article_016,
+  McshStn000018:1292  <br>* McshEngl.Uncharter/article-017!⇒Uncharter/article_017,
+  McshStn000018:1312  <br>* McshEngl.Uncharter/article-018!⇒Uncharter/article_018,
+  McshStn000018:1327  <br>* McshEngl.Uncharter/article-019!⇒Uncharter/article_019,
+  McshStn000018:1343  <br>* McshEngl.Uncharter/article-020!⇒Uncharter/article_020,
+  McshStn000018:1354  <br>* McshEngl.Uncharter/article-021!⇒Uncharter/article_021,
+  McshStn000018:1365  <br>* McshEngl.Uncharter/article-022!⇒Uncharter/article_022,
+  McshStn000018:1410  <br>* McshEngl.Uncharter/article-024!⇒Uncharter/article_024,
+  McshStn000018:1425  <br>* McshEngl.Uncharter/article-025!⇒Uncharter/article_025,
+  McshStn000018:1436  <br>* McshEngl.Uncharter/article-026!⇒Uncharter/article_026,
+  McshStn000018:1452  <br>* McshEngl.Uncharter/article-027!⇒Uncharter/article_027,
+  McshStn000018:1472  <br>* McshEngl.Uncharter/article-028!⇒Uncharter/article_028,
+  McshStn000018:1487  <br>* McshEngl.Uncharter/article-029!⇒Uncharter/article_029,
+  McshStn000018:1498  <br>* McshEngl.Uncharter/article-030!⇒Uncharter/article_030,
+  McshStn000018:1509  <br>* McshEngl.Uncharter/article-031!⇒Uncharter/article_031,
+  McshStn000018:1520  <br>* McshEngl.Uncharter/article-032!⇒Uncharter/article_032,
+  McshStn000018:1540  <br>* McshEngl.Uncharter/article-033!⇒Uncharter/article_033,
+  McshStn000018:1553  <br>* McshEngl.Uncharter/article-034!⇒Uncharter/article_034,
+  McshStn000018:1564  <br>* McshEngl.Uncharter/article-035!⇒Uncharter/article_035,
+  McshStn000018:1579  <br>* McshEngl.Uncharter/article-036!⇒Uncharter/article_036,
+  McshStn000018:1594  <br>* McshEngl.Uncharter/article-037!⇒Uncharter/article_037,
+  McshStn000018:1607  <br>* McshEngl.Uncharter/article-038!⇒Uncharter/article_038,
+  McshStn000018:1627  <br>* McshEngl.Uncharter/article-039!⇒Uncharter/article_039,
+  McshStn000018:1638  <br>* McshEngl.Uncharter/article-040!⇒Uncharter/article_040,
+  McshStn000018:1649  <br>* McshEngl.Uncharter/article-041!⇒Uncharter/article_041,
+  McshStn000018:1660  <br>* McshEngl.Uncharter/article-042!⇒Uncharter/article_042,
+  McshStn000018:1671  <br>* McshEngl.Uncharter/article-043!⇒Uncharter/article_043,
+  McshStn000018:1686  <br>* McshEngl.Uncharter/article-044!⇒Uncharter/article_044,
+  McshStn000018:1697  <br>* McshEngl.Uncharter/article-045!⇒Uncharter/article_045,
+  McshStn000018:1708  <br>* McshEngl.Uncharter/article-046!⇒Uncharter/article_046,
+  McshStn000018:1719  <br>* McshEngl.Uncharter/article-047!⇒Uncharter/article_047,
+  McshStn000018:1736  <br>* McshEngl.Uncharter/article-048!⇒Uncharter/article_048,
+  McshStn000018:1749  <br>* McshEngl.Uncharter/article-049!⇒Uncharter/article_049,
+  McshStn000018:1760  <br>* McshEngl.Uncharter/article-050!⇒Uncharter/article_050,
+  McshStn000018:1771  <br>* McshEngl.Uncharter/article-051!⇒Uncharter/article_051,
+  McshStn000018:1791  <br>* McshEngl.Uncharter/article-052!⇒Uncharter/article_052,
+  McshStn000018:1808  <br>* McshEngl.Uncharter/article-053!⇒Uncharter/article_053,
+  McshStn000018:1821  <br>* McshEngl.Uncharter/article-054!⇒Uncharter/article_054,
+  McshStn000018:1855  <br>* McshEngl.Uncharter/article-056!⇒Uncharter/article_056,
+  McshStn000018:1879  <br>* McshEngl.Uncharter/article-058!⇒Uncharter/article_058,
+  McshStn000018:1890  <br>* McshEngl.Uncharter/article-059!⇒Uncharter/article_059,
+  McshStn000018:1948  <br>* McshEngl.Uncharter/article-062!⇒Uncharter/article_062,
+  McshStn000018:1965  <br>* McshEngl.Uncharter/article-063!⇒Uncharter/article_063,
+  McshStn000018:1978  <br>* McshEngl.Uncharter/article-064!⇒Uncharter/article_064,
+  McshStn000018:1991  <br>* McshEngl.Uncharter/article-065!⇒Uncharter/article_065,
+  McshStn000018:2002  <br>* McshEngl.Uncharter/article-066!⇒Uncharter/article_066,
+  McshStn000018:2022  <br>* McshEngl.Uncharter/article-067!⇒Uncharter/article_067,
+  McshStn000018:2040  <br>* McshEngl.Uncharter/article-068!⇒Uncharter/article_068,
+  McshStn000018:2051  <br>* McshEngl.Uncharter/article-069!⇒Uncharter/article_069,
+  McshStn000018:2062  <br>* McshEngl.Uncharter/article-070!⇒Uncharter/article_070,
+  McshStn000018:2073  <br>* McshEngl.Uncharter/article-071!⇒Uncharter/article_071,
+  McshStn000018:2084  <br>* McshEngl.Uncharter/article-072!⇒Uncharter/article_072,
+  McshStn000018:2122  <br>* McshEngl.Uncharter/article-074!⇒Uncharter/article_074,
+  McshStn000018:2153  <br>* McshEngl.Uncharter/article-076!⇒Uncharter/article_076,
+  McshStn000018:2168  <br>* McshEngl.Uncharter/article-077!⇒Uncharter/article_077,
+  McshStn000018:2184  <br>* McshEngl.Uncharter/article-078!⇒Uncharter/article_078,
+  McshStn000018:2195  <br>* McshEngl.Uncharter/article-079!⇒Uncharter/article_079,
+  McshStn000018:2206  <br>* McshEngl.Uncharter/article-080!⇒Uncharter/article_080,
+  McshStn000018:2219  <br>* McshEngl.Uncharter/article-081!⇒Uncharter/article_081,
+  McshStn000018:2230  <br>* McshEngl.Uncharter/article-082!⇒Uncharter/article_082,
+  McshStn000018:2241  <br>* McshEngl.Uncharter/article-083!⇒Uncharter/article_083,
+  McshStn000018:2256  <br>* McshEngl.Uncharter/article-084!⇒Uncharter/article_084,
+  McshStn000018:2267  <br>* McshEngl.Uncharter/article-085!⇒Uncharter/article_085,
+  McshStn000018:2315  <br>* McshEngl.Uncharter/article-087!⇒Uncharter/article_087,
+  McshStn000018:2330  <br>* McshEngl.Uncharter/article-088!⇒Uncharter/article_088,
+  McshStn000018:2346  <br>* McshEngl.Uncharter/article-089!⇒Uncharter/article_089,
+  McshStn000018:2364  <br>* McshEngl.Uncharter/article-090!⇒Uncharter/article_090,
+  McshStn000018:2377  <br>* McshEngl.Uncharter/article-091!⇒Uncharter/article_091,
+  McshStn000018:2397  <br>* McshEngl.Uncharter/article-092!⇒Uncharter/article_092,
+  McshStn000018:2408  <br>* McshEngl.Uncharter/article-093!⇒Uncharter/article_093,
+  McshStn000018:2421  <br>* McshEngl.Uncharter/article-094!⇒Uncharter/article_094,
+  McshStn000018:2434  <br>* McshEngl.Uncharter/article-095!⇒Uncharter/article_095,
+  McshStn000018:2445  <br>* McshEngl.Uncharter/article-096!⇒Uncharter/article_096,
+  McshStn000018:2478  <br>* McshEngl.Uncharter/article-098!⇒Uncharter/article_098,
+  McshStn000018:2489  <br>* McshEngl.Uncharter/article-099!⇒Uncharter/article_099,
+  McshStn000018:2500  <br>* McshEngl.Uncharter/article-100!⇒Uncharter/article_100,
+  McshStn000018:2513  <br>* McshEngl.Uncharter/article-101!⇒Uncharter/article_101,
+  McshStn000018:2537  <br>* McshEngl.Uncharter/article-102!⇒Uncharter/article_102,
+  McshStn000018:2550  <br>* McshEngl.Uncharter/article-103!⇒Uncharter/article_103,
+  McshStn000018:2561  <br>* McshEngl.Uncharter/article-104!⇒Uncharter/article_104,
+  McshStn000018:2572  <br>* McshEngl.Uncharter/article-105!⇒Uncharter/article_105,
+  McshStn000018:2596  <br>* McshEngl.Uncharter/article-106!⇒Uncharter/article_106,
+  McshStn000018:2607  <br>* McshEngl.Uncharter/article-107!⇒Uncharter/article_107,
+  McshStn000018:2628  <br>* McshEngl.Uncharter/article-108!⇒Uncharter/article_108,
+  McshStn000018:2639  <br>* McshEngl.Uncharter/article-109!⇒Uncharter/article_109,
+  McshStn000018:2663  <br>* McshEngl.Uncharter/article-110!⇒Uncharter/article_110,
+  McshStn000018:2680  <br>* McshEngl.Uncharter/article-111!⇒Uncharter/article_111,
+  McshStn000028:254  <br>* McshEngl.unbanking-people!⇒unbanking_people,
+  McshStn000034:1638  <br>* McshEngl.VnmaLetr.Ă-back-unrounded-open-short!⇒VnmaLetr.Ă_back_unrounded_open_short,
+  McshStn000034:1658  <br>* McshEngl.VnmaLetr.Â-back-unrounded-mid-short!⇒VnmaLetr.Â_back_unrounded_mid_short,
+  McshStn000034:1756  <br>* McshEngl.VnmaLetr.Ê-front-mid!⇒VnmaLetr.Ê_front_mid,
+  McshStn000034:1918  <br>* McshEngl.VnmaLetr.Ô-back-rounded-mid!⇒VnmaLetr.Ô_back_rounded_mid,
+  McshStn000034:1938  <br>* McshEngl.VnmaLetr.Ơ-back-unrounded-mid!⇒VnmaLetr.Ơ_back_unrounded_mid,
+  McshStn000034:2072  <br>* McshEngl.VnmaLetr.Ư-back-unrounded-closed!⇒VnmaLetr.Ư_back_unrounded_closed,
+  McshStn000034:2804  <br>* McshEngl.VnmaTone.high-a-á-ã!⇒VnmaTone.high_a_á_ã,
+  McshStn000035:1197  <br>* McshEngl.ItlnLetr.A-/a/!⇒ItlnLetr.A_/a/,
+  McshStn000035:1209  <br>* McshEngl.ItlnLetr.B-/bi/!⇒ItlnLetr.B_/bi/,
+  McshStn000035:1243  <br>* McshEngl.ItlnLetr.C-/ci/!⇒ItlnLetr.C_/ci/,
+  McshStn000035:1256  <br>* McshEngl.ItlnLetr.D-/di/!⇒ItlnLetr.D_/di/,
+  McshStn000035:1275  <br>* McshEngl.ItlnLetr.E-/e/!⇒ItlnLetr.E_/e/,
+  McshStn000035:1288  <br>* McshEngl.ItlnLetr.F-/éfe/!⇒ItlnLetr.F_/éfe/,
+  McshStn000035:1335  <br>* McshEngl.ItlnLetr.G-/ji/!⇒ItlnLetr.G_/ji/,
+  McshStn000035:1349  <br>* McshEngl.ItlnLetr.H-/áka/!⇒ItlnLetr.H_/áka/,
+  McshStn000035:1365  <br>* McshEngl.ItlnLetr.I-/i/!⇒ItlnLetr.I_/i/,
+  McshStn000035:1378  <br>* McshEngl.ItlnLetr.L-/éle/!⇒ItlnLetr.L_/éle/,
+  McshStn000035:1391  <br>* McshEngl.ItlnLetr.M-/éme/!⇒ItlnLetr.M_/éme/,
+  McshStn000035:1404  <br>* McshEngl.ItlnLetr.N-/éne/!⇒ItlnLetr.N_/éne/,
+  McshStn000035:1417  <br>* McshEngl.ItlnLetr.O-/o/!⇒ItlnLetr.O_/o/,
+  McshStn000035:1433  <br>* McshEngl.ItlnLetr.P-/pi/!⇒ItlnLetr.P_/pi/,
+  McshStn000035:1447  <br>* McshEngl.ItlnLetr.Q-/ku/!⇒ItlnLetr.Q_/ku/,
+  McshStn000035:1460  <br>* McshEngl.ItlnLetr.R-/ére/!⇒ItlnLetr.R_/ére/,
+  McshStn000035:1487  <br>* McshEngl.ItlnLetr.S-/ése/!⇒ItlnLetr.S_/ése/,
+  McshStn000035:1503  <br>* McshEngl.ItlnLetr.T-/ti/!⇒ItlnLetr.T_/ti/,
+  McshStn000035:1516  <br>* McshEngl.ItlnLetr.U-/u/!⇒ItlnLetr.U_/u/,
+  McshStn000035:1529  <br>* McshEngl.ItlnLetr.V-/vi/!⇒ItlnLetr.V_/vi/,
+  McshStn000035:1548  <br>* McshEngl.ItlnLetr.Z-/jéta/!⇒ItlnLetr.Z_/jéta/,
+  McshStn000037:1087  <br>* McshEngl.FracConsPhnm./nj/-ipa[ɲ]!⇒FracConsPhnm./nj/_ipa[ɲ],
+  McshStn000037:1105  <br>* McshEngl.FracConsPhnm./ng/-ipa[ŋ]!⇒FracConsPhnm./ng/_ipa[ŋ],
+  McshStn000037:1191  <br>* McshEngl.FracConsPhnm./S/-/ʃ]!⇒FracConsPhnm./S/_/ʃ],
+  McshStn000037:1209  <br>* McshEngl.FracConsPhnm./Z/-/ʒ]!⇒FracConsPhnm./Z/_/ʒ],
+  McshStn000037:1227  <br>* McshEngl.FracConsPhnm./r/-/ʁ]!⇒FracConsPhnm./r/_/ʁ],
+  McshStn000037:1260  <br>* McshEngl.FracConsPhnm./lj/-(li)!⇒FracConsPhnm./lj/_(li),
+  McshStn000037:1506  <br>* McshEngl.FracLetr.A-/a/!⇒FracLetr.A_/a/,
+  McshStn000037:1518  <br>* McshEngl.FracLetr.B-/be/!⇒FracLetr.B_/be/,
+  McshStn000037:1533  <br>* McshEngl.FracLetr.C-/se/!⇒FracLetr.C_/se/,
+  McshStn000037:1545  <br>* McshEngl.FracLetr.D-/de/!⇒FracLetr.D_/de/,
+  McshStn000037:1559  <br>* McshEngl.FracLetr.E-/e8/!⇒FracLetr.E_/e8/,
+  McshStn000037:1571  <br>* McshEngl.FracLetr.F-/ef/!⇒FracLetr.F_/ef/,
+  McshStn000037:1583  <br>* McshEngl.FracLetr.G-/Ze/!⇒FracLetr.G_/Ze/,
+  McshStn000037:1595  <br>* McshEngl.FracLetr.H-/aS/!⇒FracLetr.H_/aS/,
+  McshStn000037:1609  <br>* McshEngl.FracLetr.I-/i/!⇒FracLetr.I_/i/,
+  McshStn000037:1621  <br>* McshEngl.FracLetr.J-/Zi/!⇒FracLetr.J_/Zi/,
+  McshStn000037:1633  <br>* McshEngl.FracLetr.K-/ka/!⇒FracLetr.K_/ka/,
+  McshStn000037:1645  <br>* McshEngl.FracLetr.L-/el/!⇒FracLetr.L_/el/,
+  McshStn000037:1657  <br>* McshEngl.FracLetr.M-/em/!⇒FracLetr.M_/em/,
+  McshStn000037:1669  <br>* McshEngl.FracLetr.N-/en/!⇒FracLetr.N_/en/,
+  McshStn000037:1683  <br>* McshEngl.FracLetr.O-/o/!⇒FracLetr.O_/o/,
+  McshStn000037:1695  <br>* McshEngl.FracLetr.P-/pe/!⇒FracLetr.P_/pe/,
+  McshStn000037:1707  <br>* McshEngl.FracLetr.Q-/kku/!⇒FracLetr.Q_/kku/,
+  McshStn000037:1719  <br>* McshEngl.FracLetr.R-/er/!⇒FracLetr.R_/er/,
+  McshStn000037:1731  <br>* McshEngl.FracLetr.S-/es/!⇒FracLetr.S_/es/,
+  McshStn000037:1743  <br>* McshEngl.FracLetr.T-/te/!⇒FracLetr.T_/te/,
+  McshStn000037:1757  <br>* McshEngl.FracLetr.U-/i8/!⇒FracLetr.U_/i8/,
+  McshStn000037:1769  <br>* McshEngl.FracLetr.V-/ve/!⇒FracLetr.V_/ve/,
+  McshStn000037:1781  <br>* McshEngl.FracLetr.W-/dublevé/!⇒FracLetr.W_/dublevé/,
+  McshStn000037:1793  <br>* McshEngl.FracLetr.X-/iks/!⇒FracLetr.X_/iks/,
+  McshStn000037:1806  <br>* McshEngl.FracLetr.Y-/igrek/!⇒FracLetr.Y_/igrek/,
+  McshStn000037:1818  <br>* McshEngl.FracLetr.Z-/zet/!⇒FracLetr.Z_/zet/,
+  McshStn000039:1035  <br>* McshEngl.SqipLetr.A-/a/!⇒SqipLetr.A_/a/,
+  McshStn000039:1047  <br>* McshEngl.SqipLetr.B-/b/!⇒SqipLetr.B_/b/,
+  McshStn000039:1059  <br>* McshEngl.SqipLetr.C-/c/-[t͡s]!⇒SqipLetr.C_/c/_[t͡s],
+  McshStn000039:1071  <br>* McshEngl.SqipLetr.Ç-/C/-[t͡ʃ]!⇒SqipLetr.Ç_/C/_[t͡ʃ],
+  McshStn000039:1083  <br>* McshEngl.SqipLetr.D-/d/!⇒SqipLetr.D_/d/,
+  McshStn000039:1095  <br>* McshEngl.SqipLetr.Dh-/dh/-[ð]!⇒SqipLetr.Dh_/dh/_[ð],
+  McshStn000039:1107  <br>* McshEngl.SqipLetr.E-/e/!⇒SqipLetr.E_/e/,
+  McshStn000039:1119  <br>* McshEngl.SqipLetr.Ë-/e5/-[ə]!⇒SqipLetr.Ë_/e5/_[ə],
+  McshStn000039:1131  <br>* McshEngl.SqipLetr.F-/f/!⇒SqipLetr.F_/f/,
+  McshStn000039:1143  <br>* McshEngl.SqipLetr.G-/g/!⇒SqipLetr.G_/g/,
+  McshStn000039:1155  <br>* McshEngl.SqipLetr.Gj-/gj/-[ɟ]!⇒SqipLetr.Gj_/gj/_[ɟ],
+  McshStn000039:1167  <br>* McshEngl.SqipLetr.H-/h/!⇒SqipLetr.H_/h/,
+  McshStn000039:1179  <br>* McshEngl.SqipLetr.I-/i/!⇒SqipLetr.I_/i/,
+  McshStn000039:1191  <br>* McshEngl.SqipLetr.J-/y/-[j]!⇒SqipLetr.J_/y/_[j],
+  McshStn000039:1203  <br>* McshEngl.SqipLetr.K-/k/!⇒SqipLetr.K_/k/,
+  McshStn000039:1215  <br>* McshEngl.SqipLetr.L-/l/!⇒SqipLetr.L_/l/,
+  McshStn000039:1227  <br>* McshEngl.SqipLetr.Ll-/L/-[ɫ]!⇒SqipLetr.Ll_/L/_[ɫ],
+  McshStn000039:1239  <br>* McshEngl.SqipLetr.M-/m/!⇒SqipLetr.M_/m/,
+  McshStn000039:1263  <br>* McshEngl.SqipLetr.Nj-/nj/-[ɲ]!⇒SqipLetr.Nj_/nj/_[ɲ],
+  McshStn000039:1275  <br>* McshEngl.SqipLetr.O-/o/-[ɔ]!⇒SqipLetr.O_/o/_[ɔ],
+  McshStn000039:1287  <br>* McshEngl.SqipLetr.P-/p/!⇒SqipLetr.P_/p/,
+  McshStn000039:1299  <br>* McshEngl.SqipLetr.Q-/kj/-[c]!⇒SqipLetr.Q_/kj/_[c],
+  McshStn000039:1311  <br>* McshEngl.SqipLetr.R-/r/!⇒SqipLetr.R_/r/,
+  McshStn000039:1323  <br>* McshEngl.SqipLetr.S-/s/!⇒SqipLetr.S_/s/,
+  McshStn000039:1335  <br>* McshEngl.SqipLetr.Sh-/S/-[ʃ]!⇒SqipLetr.Sh_/S/_[ʃ],
+  McshStn000039:1347  <br>* McshEngl.SqipLetr.T-/t/!⇒SqipLetr.T_/t/,
+  McshStn000039:1359  <br>* McshEngl.SqipLetr.U-/u/!⇒SqipLetr.U_/u/,
+  McshStn000039:1371  <br>* McshEngl.SqipLetr.V-/v/!⇒SqipLetr.V_/v/,
+  McshStn000039:1383  <br>* McshEngl.SqipLetr.X-/j/-[d͡z]!⇒SqipLetr.X_/j/_[d͡z],
+  McshStn000039:1395  <br>* McshEngl.SqipLetr.Xh-/J/-[d͡ʒ]!⇒SqipLetr.Xh_/J/_[d͡ʒ],
+  McshStn000039:1407  <br>* McshEngl.SqipLetr.Y-/i8/-[y]!⇒SqipLetr.Y_/i8/_[y],
+  McshStn000039:1419  <br>* McshEngl.SqipLetr.Z-/z/!⇒SqipLetr.Z_/z/,
+  McshStn000039:1431  <br>* McshEngl.SqipLetr.Zh-/Z/-[ʒ]!⇒SqipLetr.Zh_/Z/_[ʒ],
+  McshStn000041:541  <br>* McshEngl.SslvLetr.C-[ts]!⇒SslvLetr.C_[ts],
+  McshStn000041:553  <br>* McshEngl.SslvLetr.Č-[tʃ]!⇒SslvLetr.Č_[tʃ],
+  McshStn000041:731  <br>* McshEngl.SslvLetr.Š-[ʃ]!⇒SslvLetr.Š_[ʃ],
+  McshStn000041:787  <br>* McshEngl.SslvLetr.Ž-[ʒ]!⇒SslvLetr.Ž_[ʒ],
+  McshStn000042:3216  <br>* McshEngl.Education-Modernization-2035-policy--of-PRC!⇒Education_Modernization_2035_policy__of_PRC,
+  McshStn000043:587  <br>* McshEngl.SrusLetr.07.Ё-/yjo/!⇒SrusLetr.07.Ё_/yjo/,
+  McshStn000043:980  <br>* McshEngl.SrusLetr.31.Э-/e/!⇒SrusLetr.31.Э_/e/,
+  McshStn000050:950  <br>* McshEngl.KhmrLetr.6016-ក-[k-kʔ]-KA!⇒KhmrLetr.6016_ក_[k_kʔ]_KA,
+  McshStn000050:970  <br>* McshEngl.KhmrLetr.6017-ខ-[kʰ]-KHA!⇒KhmrLetr.6017_ខ_[kʰ]_KHA,
+  McshStn000050:992  <br>* McshEngl.KhmrLetr.6018-គ-[kʰ-k]-KO!⇒KhmrLetr.6018_គ_[kʰ_k]_KO,
+  McshStn000050:1012  <br>* McshEngl.KhmrLetr.6019-ឃ-[kʰ-kʰ]-KHO!⇒KhmrLetr.6019_ឃ_[kʰ_kʰ]_KHO,
+  McshStn000050:1036  <br>* McshEngl.KhmrLetr.6020-ង-NGO!⇒KhmrLetr.6020_ង_NGO,
+  McshStn000050:1057  <br>* McshEngl.KhmrLetr.6021-ច-[c-cʔ]-CA!⇒KhmrLetr.6021_ច_[c_cʔ]_CA,
+  McshStn000050:1075  <br>* McshEngl.KhmrLetr.6022-ឆ-[cʰ]-CHA!⇒KhmrLetr.6022_ឆ_[cʰ]_CHA,
+  McshStn000050:1098  <br>* McshEngl.KhmrLetr.6023-ជ-[cʰ-c]-CO!⇒KhmrLetr.6023_ជ_[cʰ_c]_CO,
+  McshStn000050:1116  <br>* McshEngl.KhmrLetr.6024-ឈ-[cʰ-cʰ]-CHO!⇒KhmrLetr.6024_ឈ_[cʰ_cʰ]_CHO,
+  McshStn000050:1134  <br>* McshEngl.KhmrLetr.6025-ញ-NYO!⇒KhmrLetr.6025_ញ_NYO,
+  McshStn000050:1152  <br>* McshEngl.KhmrLetr.6026-ដ-[ɗ]-DA!⇒KhmrLetr.6026_ដ_[ɗ]_DA,
+  McshStn000050:1173  <br>* McshEngl.KhmrLetr.6027-ឋ-[tʰ]-TTHA!⇒KhmrLetr.6027_ឋ_[tʰ]_TTHA,
+  McshStn000050:1192  <br>* McshEngl.KhmrLetr.6028-ឌ-DO!⇒KhmrLetr.6028_ឌ_DO,
+  McshStn000050:1206  <br>* McshEngl.KhmrLetr.6029-ឍ-TTHO!⇒KhmrLetr.6029_ឍ_TTHO,
+  McshStn000050:1221  <br>* McshEngl.KhmrLetr.6030-ណ-[n]-NNO!⇒KhmrLetr.6030_ណ_[n]_NNO,
+  McshStn000050:1241  <br>* McshEngl.KhmrLetr.6031-ត-[tʰ-tʰ]-TA!⇒KhmrLetr.6031_ត_[tʰ_tʰ]_TA,
+  McshStn000050:1261  <br>* McshEngl.KhmrLetr.6032-ថ-THA!⇒KhmrLetr.6032_ថ_THA,
+  McshStn000050:1282  <br>* McshEngl.KhmrLetr.6033-ទ-[t-tʰ]-TO!⇒KhmrLetr.6033_ទ_[t_tʰ]_TO,
+  McshStn000050:1302  <br>* McshEngl.KhmrLetr.6034-ធ-THO!⇒KhmrLetr.6034_ធ_THO,
+  McshStn000050:1319  <br>* McshEngl.KhmrLetr.6035-ន-[n-n]-NO!⇒KhmrLetr.6035_ន_[n_n]_NO,
+  McshStn000050:1342  <br>* McshEngl.KhmrLetr.6036-ប-[ɓ-p]-BA!⇒KhmrLetr.6036_ប_[ɓ_p]_BA,
+  McshStn000050:1363  <br>* McshEngl.KhmrLetr.6037-ផ-[pʰ]-PHA!⇒KhmrLetr.6037_ផ_[pʰ]_PHA,
+  McshStn000050:1383  <br>* McshEngl.KhmrLetr.6038-ព-[p-pʰ]-PO!⇒KhmrLetr.6038_ព_[p_pʰ]_PO,
+  McshStn000050:1402  <br>* McshEngl.KhmrLetr.6039-ភ-PHO!⇒KhmrLetr.6039_ភ_PHO,
+  McshStn000050:1420  <br>* McshEngl.KhmrLetr.6040-ម-[m-m]-MO!⇒KhmrLetr.6040_ម_[m_m]_MO,
+  McshStn000050:1439  <br>* McshEngl.KhmrLetr.6041-យ-[j-j]-YO!⇒KhmrLetr.6041_យ_[j_j]_YO,
+  McshStn000050:1459  <br>* McshEngl.KhmrLetr.6042-រ-[r]-RO!⇒KhmrLetr.6042_រ_[r]_RO,
+  McshStn000050:1479  <br>* McshEngl.KhmrLetr.6043-ល-[l-l]-LO!⇒KhmrLetr.6043_ល_[l_l]_LO,
+  McshStn000050:1500  <br>* McshEngl.KhmrLetr.6044-វ-[ʋ-w]-VO!⇒KhmrLetr.6044_វ_[ʋ_w]_VO,
+  McshStn000050:1519  <br>* McshEngl.KhmrLetr.6045-ឝ-[s]-SHA!⇒KhmrLetr.6045_ឝ_[s]_SHA,
+  McshStn000050:1541  <br>* McshEngl.KhmrLetr.6046-ឞ-[s]-SSO!⇒KhmrLetr.6046_ឞ_[s]_SSO,
+  McshStn000050:1563  <br>* McshEngl.KhmrLetr.6047-ស-[s-h]-SA!⇒KhmrLetr.6047_ស_[s_h]_SA,
+  McshStn000050:1594  <br>* McshEngl.KhmrLetr.6048-ហ-[h-h]-HA!⇒KhmrLetr.6048_ហ_[h_h]_HA,
+  McshStn000050:1612  <br>* McshEngl.KhmrLetr.6049-ឡ-[l-l]-LA!⇒KhmrLetr.6049_ឡ_[l_l]_LA,
+  McshStn000050:1634  <br>* McshEngl.KhmrLetr.6050-អ-QA!⇒KhmrLetr.6050_អ_QA,
+  McshStnlaw000004:1591  <br>* McshEngl.lawIntl.Universal-declaration-of-human-rights-(Unudhr)!⇒lawIntl.Universal_declaration_of_human_rights_(Unudhr),
+  McshStnlaw000006:1490  <br>* McshEngl.lawGrca.European-Union-(link)!⇒lawGrca.European_Union_(link),
+  McshTch000002:220  <br>* McshEngl.sociology-of-techology!⇒sociology_of_techology,
+  McshTch000003:1156  <br>* McshEngl.bus-station!⇒bus_station,
+  McshTchInf000010:2488  <br>* McshEngl.async-await--JavaScript-function!⇒async_await__JavaScript_function,
+  McshTchInf000015:786  <br>* McshEngl.sharding-of-Agnetchain!⇒sharding_of_Agnetchain,
+  McshTchInf000015:4589  <br>* McshEngl.market-capitalization--of--aggregate-Agntasset!⇒market_capitalization__of__aggregate_Agntasset,
+  McshTchInf000015:10688  <br>* McshEngl.Neufund-ogn!⇒Neufund_ogn,
+  McshTchInf000016:3635  <br>* McshEngl.StaticNo-wallet-of-blockchain!⇒StaticNo_wallet_of_blockchain,
+  McshTchInf000016:5976  <br>* McshEngl.Counterparty-network-(XcpNet)!⇒Counterparty_network_(XcpNet),
+  McshTchInf000016:8910  <br>* McshEngl.white-paper--of--ĐWaves-network!⇒white_paper__of__ĐWaves_network,
+  McshTchInf000016:9537  <br>* McshEngl.PoW-Mining!⇒PoW_Mining,
+  McshTchInf000016:9551  <br>* McshEngl.PoS-Mining!⇒PoS_Mining,
+  McshTchInf000016:9792  <br>* McshEngl.Decred-address!⇒Decred_address,
+  McshTchInf000016:10436  <br>* McshEngl.Decred-account!⇒Decred_account,
+  McshTchInf000016:10465  <br>* McshEngl.Dcrwallet-cli-program!⇒Dcrwallet_cli_program,
+  McshTchInf000016:10817  <br>* McshEngl.Đgovernance-of-Dpivxnet!⇒Đgovernance_of_Dpivxnet,
+  McshTchInf000016:10904  <br>* McshEngl.white-paper--of--ĐBitshares-network!⇒white_paper__of__ĐBitshares_network,
+  McshTchInf000016:11757  <br>* McshEngl.btshmn.SHAREHOLDER-(btshsh)!⇒btshmn.SHAREHOLDER_(btshsh),
+  McshTchInf000016:11788  <br>* McshEngl.Cryptonomex-Inc!⇒Cryptonomex_Inc,
+  McshTchInf000016:12212  <br>* McshEngl.NEM-Foundation!⇒NEM_Foundation,
+  McshTchInf000016:14071  <br>* McshEngl.white-paper--of--ĐPpcoin-network!⇒white_paper__of__ĐPpcoin_network,
+  McshTchInf000016:14712  <br>* McshEngl.Riple-Charts!⇒Riple_Charts,
+  McshTchInf000016:15437  <br>* McshEngl.white-paper--of--Humaniq-network!⇒white_paper__of__Humaniq_network,
+  McshTchInf000017:2834  <br>* McshEngl.Internal-Byte-Order!⇒Internal_Byte_Order,
+  McshTchInf000017:4452  <br>* McshEngl.Bitcoin-Foundation!⇒Bitcoin_Foundation,
+  McshTchInf000017:9149  <br>* McshEngl.Tuition-payment-with-bitcoin!⇒Tuition_payment_with_bitcoin,
+  McshTchInf000018:362  <br>* McshEngl.Polkadot-of-Ethereum-Parity!⇒Polkadot_of_Ethereum_Parity,
+  McshTchInf000018:5192  <br>* McshEngl.Ethereum-tflcmd-(truffle-command)!⇒Ethereum_tflcmd_(truffle_command),
+  McshTchInf000018:9696  <br>* McshEngl.DappHub-ogn!⇒DappHub_ogn,
+  McshTchInf000018:11461  <br>* McshEngl.Merkle-proof!⇒Merkle_proof,
+  McshTchInf000018:11482  <br>* McshEngl.Merkle-application!⇒Merkle_application,
+  McshTchInf000018:11499  <br>* McshEngl.Ethereum-application!⇒Ethereum_application,
+  McshTchInf000021:254  <br>* McshEngl.Agnteos-voter!⇒Agnteos_voter,
+  McshTchInf000022:1499  <br>* McshEngl.Frcnblck-explorer!⇒Frcnblck_explorer,
+  McshTchInf000024:2047  <br>* McshEngl.Steem-wales-program!⇒Steem_wales_program,
+  McshTchInf000024:2308  <br>* McshEngl.Steem-key-generator!⇒Steem_key_generator,
+  McshTchInf000031:2448  <br>* McshEngl.Cppzlago-src-file!⇒Cppzlago_src_file,
+  McshTchInf000036:586  <br>* McshEngl.introduction-to-AI-XueTangX!⇒introduction_to_AI_XueTangX,
+  McshTchInf000036:4509  <br>* McshEngl.backpropagation-algorithm!⇒backpropagation_algorithm,
+
+=== KEEP_OTHER_POINTER (1219)
+  McshCor000002:329  <br>* McshEngl.Mcs-complement!⇒Mcs_complement,  (7 pointers to Mcs_complement)
+  McshCor000002:2615  <br>* McshEngl.Mcs-text!⇒Mcs_text,  (4 pointers to Mcs_text)
+  McshCor000002:5010  <br>* McshEngl.Mcs-validating!⇒Mcs_validating,  (4 pointers to Mcs_validating)
+  McshCor000003:1100  <br>* McshEngl.parent-of-entity!⇒parent_of_entity,  (3 pointers to parent_of_entity)
+  McshCor000004:374  <br>* McshEngl.space-of-doing!⇒space_of_doing,  (3 pointers to space_of_doing)
+  McshCor000004:1004  <br>* McshEngl.very-fast!⇒very_fast,  (2 pointers to very_fast)
+  McshCor000004:2311  <br>* McshEngl.false-flag-provocation!⇒false_flag_provocation,  (2 pointers to false_flag_provocation)
+  McshCor000004:4332  <br>* McshEngl.cleaned-entity!⇒cleaned_entity,  (4 pointers to cleaned_entity)
+  McshCor000005:119  <br>* McshEngl.valence-of-relation!⇒valence_of_relation,  (2 pointers to valence_of_relation)
+  McshCor000005:1087  <br>* McshEngl.remainder-of-subtraction!⇒remainder_of_subtraction,  (3 pointers to remainder_of_subtraction)
+  McshCor000005:3179  <br>* McshEngl.archetype-info--relation!⇒archetype_info__relation,  (2 pointers to archetype_info__relation)
+  McshCor000006:1990  <br>* McshEngl.before-Current-era!⇒before_Current_era,  (7 pointers to before_Current_era)
+  McshCor000006:2014  <br>* McshEngl.Current-era!⇒Current_era,  (7 pointers to Current_era)
+  McshCor000006:2553  <br>* McshEngl.spring-season!⇒spring_season,  (6 pointers to spring_season)
+  McshCor000006:3287  <br>* McshEngl.last-week!⇒last_week,  (2 pointers to last_week)
+  McshCor000006:3855  <br>* McshEngl.New-Year!⇒New_Year,  (5 pointers to New_Year)
+  McshCor000006:4162  <br>* McshEngl.day-before-yesterday!⇒day_before_yesterday,  (5 pointers to day_before_yesterday)
+  McshCor000006:4268  <br>* McshEngl.day-after-tomorrow!⇒day_after_tomorrow,  (5 pointers to day_after_tomorrow)
+  McshCor000006:4290  <br>* McshEngl.day-after-after-tomorrow!⇒day_after_after_tomorrow,  (4 pointers to day_after_after_tomorrow)
+  McshCor000006:4395  <br>* McshEngl.time-zone!⇒time_zone,  (2 pointers to time_zone)
+  McshCor000007:1079  <br>* McshEngl.address-of-place!⇒address_of_place,  (2 pointers to address_of_place)
+  McshCor000007:1102  <br>* McshEngl.coordinates-of-place!⇒coordinates_of_place,  (2 pointers to coordinates_of_place)
+  McshCor000007:2186  <br>* McshEngl.space-direction!⇒space_direction,  (2 pointers to space_direction)
+  McshCor000007:2697  <br>* McshEngl.meter-UomDistance!⇒meter_UomDistance,  (3 pointers to meter_UomDistance)
+  McshCor000007:2762  <br>* McshEngl.length-of-body!⇒length_of_body,  (2 pointers to length_of_body)
+  McshCor000007:2815  <br>* McshEngl.width-of-body!⇒width_of_body,  (4 pointers to width_of_body)
+  McshCor000007:2880  <br>* McshEngl.height-of-body!⇒height_of_body,  (2 pointers to height_of_body)
+  McshCor000007:2996  <br>* McshEngl.address-of-Earth-surface!⇒address_of_Earth_surface,  (2 pointers to address_of_Earth_surface)
+  McshCor000007:3075  <br>* McshEngl.bay-gulf!⇒bay_gulf,  (5 pointers to bay_gulf)
+  McshCor000009:1414  <br>* McshEngl.discreteNo-entity!⇒discreteNo_entity,  (7 pointers to discreteNo_entity)
+  McshCor000011:490  <br>* McshEngl.systems-theory!⇒systems_theory,  (4 pointers to systems_theory)
+  McshCor000011:843  <br>* McshEngl.ordinal-number!⇒ordinal_number,  (3 pointers to ordinal_number)
+  McshCor000011:1656  <br>* McshEngl.order-relation!⇒order_relation,  (2 pointers to order_relation)
+  McshCor000011:2018  <br>* McshEngl.tree-level!⇒tree_level,  (5 pointers to tree_level)
+  McshCor000011:2580  <br>* McshEngl.edge-of-SystGraph!⇒edge_of_SystGraph,  (2 pointers to edge_of_SystGraph)
+  McshCor000011:2838  <br>* McshEngl.control-theory!⇒control_theory,  (2 pointers to control_theory)
+  McshCor000011:3172  <br>* McshEngl.sensory-sys-of-plant!⇒sensory_sys_of_plant,  (2 pointers to sensory_sys_of_plant)
+  McshCor000013:1609  <br>* McshEngl.disliking-emoting!⇒disliking_emoting,  (2 pointers to disliking_emoting)
+  McshCor000013:1870  <br>* McshEngl.insecurity-emoting!⇒insecurity_emoting,  (3 pointers to insecurity_emoting)
+  McshCor000014:102  <br>* McshEngl.network-science!⇒network_science,  (2 pointers to network_science)
+  McshCor000014:121  <br>* McshEngl.network-theory!⇒network_theory,  (2 pointers to network_theory)
+  McshCor000018:3179  <br>* McshEngl.curiosity-FctgEmoting!⇒curiosity_FctgEmoting,  (2 pointers to curiosity_FctgEmoting)
+  McshCor000018:3670  <br>* McshEngl.societal-need!⇒societal_need,  (2 pointers to societal_need)
+  McshCor000018:4571  <br>* McshEngl.coffeine-relation-to-memory!⇒coffeine_relation_to_memory,  (2 pointers to coffeine_relation_to_memory)
+  McshCor000020:297  <br>* McshEngl.practical-proving!⇒practical_proving,  (3 pointers to practical_proving)
+  McshCor000023:126  <br>* McshEngl.dynamical-systems-theory!⇒dynamical_systems_theory,  (3 pointers to dynamical_systems_theory)
+  McshCor000023:142  <br>* McshEngl.system-dynamics!⇒system_dynamics,  (4 pointers to system_dynamics)
+  McshEdu000002:445  <br>* McshEngl.academic-school--of-science!⇒academic_school__of_science,  (2 pointers to academic_school__of_science)
+  McshEdu000002:463  <br>* McshEngl.academic-department--of-science!⇒academic_department__of_science,  (2 pointers to academic_department__of_science)
+  McshEdu000002:481  <br>* McshEngl.academic-association!⇒academic_association,  (2 pointers to academic_association)
+  McshEdu000002:1170  <br>* McshEngl.domain-of-discource//SciFormal!⇒domain_of_discource//SciFormal,  (2 pointers to domain_of_discource//SciFormal)
+  McshEdu000002:1323  <br>* McshEngl.open-data-of-SciOpen!⇒open_data_of_SciOpen,  (2 pointers to open_data_of_SciOpen)
+  McshEdu000002:1340  <br>* McshEngl.open-access-of-SciOpen!⇒open_access_of_SciOpen,  (2 pointers to open_access_of_SciOpen)
+  McshEdu000002:1503  <br>* McshEngl.open-methodology-of-SciOpen!⇒open_methodology_of_SciOpen,  (2 pointers to open_methodology_of_SciOpen)
+  McshEdu000002:1519  <br>* McshEngl.open-source-of-SciOpen!⇒open_source_of_SciOpen,  (2 pointers to open_source_of_SciOpen)
+  McshEdu000002:1535  <br>* McshEngl.open-peer-review-of-SciOpen!⇒open_peer_review_of_SciOpen,  (2 pointers to open_peer_review_of_SciOpen)
+  McshEdu000002:1551  <br>* McshEngl.open-education-of-SciOpen!⇒open_education_of_SciOpen,  (2 pointers to open_education_of_SciOpen)
+  McshEdu000005:1570  <br>* McshEngl.indepedent-variable//MathFn!⇒indepedent_variable//MathFn,  (3 pointers to indepedent_variable//MathFn)
+  McshEdu000005:7698  <br>* McshEngl.Cartesian-product!⇒Cartesian_product,  (2 pointers to Cartesian_product)
+  McshEdu000007:526  <br>* McshEngl.theory-of-computation!⇒theory_of_computation,  (3 pointers to theory_of_computation)
+  McshEdu000007:870  <br>* McshEngl.computer-algebra-system!⇒computer_algebra_system,  (2 pointers to computer_algebra_system)
+  McshEdu000009:310  <br>* McshEngl.evoluting-of-SciMindData!⇒evoluting_of_SciMindData,  (2 pointers to evoluting_of_SciMindData)
+  McshEdu000010:221  <br>* McshEngl.formal-semantics!⇒formal_semantics,  (2 pointers to formal_semantics)
+  McshEdu000010:347  <br>* McshEngl.cognitive-semantics!⇒cognitive_semantics,  (2 pointers to cognitive_semantics)
+  McshEdu000010:387  <br>* McshEngl.computational-semantics!⇒computational_semantics,  (2 pointers to computational_semantics)
+  McshEdu000010:429  <br>* McshEngl.frame-semantics!⇒frame_semantics,  (2 pointers to frame_semantics)
+  McshEdu000010:503  <br>* McshEngl.lexical-semantics!⇒lexical_semantics,  (2 pointers to lexical_semantics)
+  McshEdu000010:735  <br>* McshEngl.ISO/TC-37//SciName!⇒ISO/TC_37//SciName,  (2 pointers to ISO/TC_37//SciName)
+  McshEdu000010:893  <br>* McshEngl.chimical-nomenclature!⇒chimical_nomenclature,  (2 pointers to chimical_nomenclature)
+  McshEdu000010:1874  <br>* McshEngl.corpus-data!⇒corpus_data,  (2 pointers to corpus_data)
+  McshEdu000010:2720  <br>* McshEngl.desciptive-linguistics-relation-to-prescriptive!⇒desciptive_linguistics_relation_to_prescriptive,  (2 pointers to desciptive_linguistics_relation_to_prescriptive)
+  McshHlth000002:802  <br>* McshEngl.upper-arm!⇒upper_arm,  (5 pointers to upper_arm)
+  McshHlth000002:2677  <br>* McshEngl.ovarian-follicle!⇒ovarian_follicle,  (4 pointers to ovarian_follicle)
+  McshHlth000002:3150  <br>* McshEngl.cptBdyHmn545-adrenal-cortex!⇒cptBdyHmn545_adrenal_cortex,  (2 pointers to cptBdyHmn545_adrenal_cortex)
+  McshHlth000002:3182  <br>* McshEngl.adrenal-medulla!⇒adrenal_medulla,  (3 pointers to adrenal_medulla)
+  McshHlth000002:3436  <br>* McshEngl.sperm-tube!⇒sperm_tube,  (3 pointers to sperm_tube)
+  McshHlth000002:3713  <br>* McshEngl.cptBdyHmn549-breast-milk!⇒cptBdyHmn549_breast_milk,  (2 pointers to cptBdyHmn549_breast_milk)
+  McshHlth000002:4059  <br>* McshEngl.extracellular-fluid!⇒extracellular_fluid,  (4 pointers to extracellular_fluid)
+  McshHlth000002:5441  <br>* McshEngl.trace-element!⇒trace_element,  (5 pointers to trace_element)
+  McshHlth000002:5471  <br>* McshEngl.Hbnutrient.006-sulfur-S-(0.3%)!⇒Hbnutrient.006_sulfur_S_(0.3%),  (2 pointers to Hbnutrient.006_sulfur_S_(0.3%))
+  McshHlth000002:5496  <br>* McshEngl.Hbnutrient.007-chlorine-Cl-(0.2%)!⇒Hbnutrient.007_chlorine_Cl_(0.2%),  (2 pointers to Hbnutrient.007_chlorine_Cl_(0.2%))
+  McshHlth000002:5847  <br>* McshEngl.mineral-nutrient!⇒mineral_nutrient,  (5 pointers to mineral_nutrient)
+  McshHlth000002:5879  <br>* McshEngl.Hbnutrient.016-calcium-Ca-(1.5%)!⇒Hbnutrient.016_calcium_Ca_(1.5%),  (2 pointers to Hbnutrient.016_calcium_Ca_(1.5%))
+  McshHlth000002:5907  <br>* McshEngl.Hbnutrient.017-phosphorus-P-(1%)!⇒Hbnutrient.017_phosphorus_P_(1%),  (2 pointers to Hbnutrient.017_phosphorus_P_(1%))
+  McshHlth000002:5947  <br>* McshEngl.Hbnutrient.018-potassium-K-(0.4%)!⇒Hbnutrient.018_potassium_K_(0.4%),  (2 pointers to Hbnutrient.018_potassium_K_(0.4%))
+  McshHlth000002:5975  <br>* McshEngl.Hbnutrient.019-sodium-Na-(0.2%)!⇒Hbnutrient.019_sodium_Na_(0.2%),  (2 pointers to Hbnutrient.019_sodium_Na_(0.2%))
+  McshHlth000002:6001  <br>* McshEngl.Hbnutrient.020-magnesium-Mg-(0.1%)!⇒Hbnutrient.020_magnesium_Mg_(0.1%),  (2 pointers to Hbnutrient.020_magnesium_Mg_(0.1%))
+  McshHlth000002:6445  <br>* McshEngl.dietary-fiber!⇒dietary_fiber,  (5 pointers to dietary_fiber)
+  McshHlth000002:7299  <br>* McshEngl.heart-beat!⇒heart_beat,  (5 pointers to heart_beat)
+  McshHlth000002:9328  <br>* McshEngl.vocal-fold!⇒vocal_fold,  (2 pointers to vocal_fold)
+  McshHlth000002:9365  <br>* McshEngl.arytenoid-cartilage!⇒arytenoid_cartilage,  (2 pointers to arytenoid_cartilage)
+  McshHlth000002:10084  <br>* McshEngl.cptBdyHmn270-tooth-mill!⇒cptBdyHmn270_tooth_mill,  (2 pointers to cptBdyHmn270_tooth_mill)
+  McshHlth000002:10103  <br>* McshEngl.cptBdyHmn271-tooth-root!⇒cptBdyHmn271_tooth_root,  (2 pointers to cptBdyHmn271_tooth_root)
+  McshHlth000002:11388  <br>* McshEngl.renal-medulla!⇒renal_medulla,  (3 pointers to renal_medulla)
+  McshHlth000002:11428  <br>* McshEngl.renal-cortex!⇒renal_cortex,  (3 pointers to renal_cortex)
+  McshHlth000002:11451  <br>* McshEngl.renal-abdomen!⇒renal_abdomen,  (3 pointers to renal_abdomen)
+  McshHlth000002:11492  <br>* McshEngl.renal-hilum!⇒renal_hilum,  (3 pointers to renal_hilum)
+  McshHlth000002:11567  <br>* McshEngl.renal-capsule!⇒renal_capsule,  (3 pointers to renal_capsule)
+  McshHlth000002:11591  <br>* McshEngl.renal-tubule!⇒renal_tubule,  (3 pointers to renal_tubule)
+  McshHlth000002:11721  <br>* McshEngl.renal-pyramid!⇒renal_pyramid,  (4 pointers to renal_pyramid)
+  McshHlth000002:11782  <br>* McshEngl.renal-papilla!⇒renal_papilla,  (4 pointers to renal_papilla)
+  McshHlth000002:11845  <br>* McshEngl.renal-corpuscle!⇒renal_corpuscle,  (3 pointers to renal_corpuscle)
+  McshHlth000002:11887  <br>* McshEngl.cortical-collecting-duct!⇒cortical_collecting_duct,  (3 pointers to cortical_collecting_duct)
+  McshHlth000002:12045  <br>* McshEngl.OganUrinary-bladder!⇒OganUrinary_bladder,  (7 pointers to OganUrinary_bladder)
+  McshHlth000002:12507  <br>* McshEngl.seminal-vesicle!⇒seminal_vesicle,  (2 pointers to seminal_vesicle)
+  McshHlth000002:12531  <br>* McshEngl.vas-deferens!⇒vas_deferens,  (3 pointers to vas_deferens)
+  McshHlth000002:14053  <br>* McshEngl.biological-rhythm--of-bodyHumn!⇒biological_rhythm__of_bodyHumn,  (2 pointers to biological_rhythm__of_bodyHumn)
+  McshHlth000002:15191  <br>* McshEngl.intrauterine-life!⇒intrauterine_life,  (5 pointers to intrauterine_life)
+  McshHlth000003:1293  <br>* McshEngl.concsiousNo-mind!⇒concsiousNo_mind,  (2 pointers to concsiousNo_mind)
+  McshHlth000003:1608  <br>* McshEngl.left-hemisphere!⇒left_hemisphere,  (3 pointers to left_hemisphere)
+  McshHlth000003:1649  <br>* McshEngl.right-hemisphere!⇒right_hemisphere,  (3 pointers to right_hemisphere)
+  McshHlth000003:1892  <br>* McshEngl.angular-gyrus//lobeParietal!⇒angular_gyrus//lobeParietal,  (2 pointers to angular_gyrus//lobeParietal)
+  McshHlth000003:1927  <br>* McshEngl.lobeParietal/supramarginal-gyrus!⇒lobeParietal/supramarginal_gyrus,  (2 pointers to lobeParietal/supramarginal_gyrus)
+  McshHlth000003:2311  <br>* McshEngl.cerebral-cortex!⇒cerebral_cortex,  (5 pointers to cerebral_cortex)
+  McshHlth000003:2740  <br>* McshEngl.pars-intermedia!⇒pars_intermedia,  (3 pointers to pars_intermedia)
+  McshHlth000003:2880  <br>* McshEngl.pons-of-brainstem!⇒pons_of_brainstem,  (7 pointers to pons_of_brainstem)
+  McshHlth000003:2925  <br>* McshEngl.medulla-oblongata!⇒medulla_oblongata,  (5 pointers to medulla_oblongata)
+  McshHlth000003:3394  <br>* McshEngl.Sylvian-fissure!⇒Sylvian_fissure,  (2 pointers to Sylvian_fissure)
+  McshHlth000003:3653  <br>* McshEngl.embryonic-brain!⇒embryonic_brain,  (2 pointers to embryonic_brain)
+  McshHlth000005:1183  <br>* McshEngl.musclePharyngeal-constrictor!⇒musclePharyngeal_constrictor,  (5 pointers to musclePharyngeal_constrictor)
+  McshHlth000005:1372  <br>* McshEngl.muscleSplenius-cervicis!⇒muscleSplenius_cervicis,  (5 pointers to muscleSplenius_cervicis)
+  McshHlth000005:1393  <br>* McshEngl.muscleSplenius-capitis!⇒muscleSplenius_capitis,  (5 pointers to muscleSplenius_capitis)
+  McshHlth000005:1886  <br>* McshEngl.muscleLatissimus-dorsi!⇒muscleLatissimus_dorsi,  (5 pointers to muscleLatissimus_dorsi)
+  McshHlth000005:1936  <br>* McshEngl.muscleLevator-scapulae!⇒muscleLevator_scapulae,  (5 pointers to muscleLevator_scapulae)
+  McshHlth000005:1955  <br>* McshEngl.muscleTeres-major!⇒muscleTeres_major,  (5 pointers to muscleTeres_major)
+  McshHlth000005:1977  <br>* McshEngl.muscleTeres-minor!⇒muscleTeres_minor,  (5 pointers to muscleTeres_minor)
+  McshHlth000005:2111  <br>* McshEngl.musclePectoralis-major!⇒musclePectoralis_major,  (5 pointers to musclePectoralis_major)
+  McshHlth000005:4068  <br>* McshEngl.intervertebral-disc!⇒intervertebral_disc,  (2 pointers to intervertebral_disc)
+  McshHlth000005:5500  <br>* McshEngl.foot-arch!⇒foot_arch,  (3 pointers to foot_arch)
+  McshHlth000008:508  <br>* McshEngl.hospital-bed!⇒hospital_bed,  (2 pointers to hospital_bed)
+  McshHlth000008:613  <br>* McshEngl.healthcare-sector-vs-healthcare-system!⇒healthcare_sector_vs_healthcare_system,  (2 pointers to healthcare_sector_vs_healthcare_system)
+  McshHlth000008:660  <br>* McshEngl.health-insurance!⇒health_insurance,  (2 pointers to health_insurance)
+  McshHlth000008:1686  <br>* McshEngl.socialNo-health!⇒socialNo_health,  (4 pointers to socialNo_health)
+  McshHlth000011:352  <br>* McshEngl.CT-scan!⇒CT_scan,  (5 pointers to CT_scan)
+  McshHlth000011:6104  <br>* McshEngl.breast-cancer!⇒breast_cancer,  (2 pointers to breast_cancer)
+  McshHlth000011:8302  <br>* McshEngl.DissSubstance-dependence!⇒DissSubstance_dependence,  (7 pointers to DissSubstance_dependence)
+  McshHlth000011:8324  <br>* McshEngl.DissBody-dysmorphic!⇒DissBody_dysmorphic,  (7 pointers to DissBody_dysmorphic)
+  McshHlth000011:15148  <br>* McshEngl.stomach-pain!⇒stomach_pain,  (5 pointers to stomach_pain)
+  McshHlth000011:17920  <br>* McshEngl.DissGlobus-pharyngis!⇒DissGlobus_pharyngis,  (6 pointers to DissGlobus_pharyngis)
+  McshHlth000013:2406  <br>* McshEngl.glass-of-drink!⇒glass_of_drink,  (2 pointers to glass_of_drink)
+  McshHlth000013:2424  <br>* McshEngl.bottle-of-drink!⇒bottle_of_drink,  (2 pointers to bottle_of_drink)
+  McshHlth000013:5845  <br>* McshEngl.food-supplement!⇒food_supplement,  (5 pointers to food_supplement)
+  McshHlth000013:9120  <br>* McshEngl.calf-reddish!⇒calf_reddish,  (6 pointers to calf_reddish)
+  McshHlth000015:332  <br>* McshEngl.tobacco-smoke!⇒tobacco_smoke,  (2 pointers to tobacco_smoke)
+  McshHlth000016:175  <br>* McshEngl.therapy-receiver!⇒therapy_receiver,  (6 pointers to therapy_receiver)
+  McshHlth000016:1258  <br>* McshEngl.ozone-therapy!⇒ozone_therapy,  (2 pointers to ozone_therapy)
+  McshHlth000018:357  <br>* McshEngl.Olympic-games!⇒Olympic_games,  (2 pointers to Olympic_games)
+  McshHlth000019:1202  <br>* McshEngl.action-potential-of-neurons!⇒action_potential_of_neurons,  (2 pointers to action_potential_of_neurons)
+  McshHlth000019:1804  <br>* McshEngl.SGC-satellite-glial-cell!⇒SGC_satellite_glial_cell,  (2 pointers to SGC_satellite_glial_cell)
+  McshHlth000019:2026  <br>* McshEngl.nervous-center!⇒nervous_center,  (6 pointers to nervous_center)
+  McshHlth000019:2065  <br>* McshEngl.cerebrum-center!⇒cerebrum_center,  (5 pointers to cerebrum_center)
+  McshHlth000019:2205  <br>* McshEngl.sensory-center!⇒sensory_center,  (7 pointers to sensory_center)
+  McshHlth000019:2240  <br>* McshEngl.auditory-center!⇒auditory_center,  (6 pointers to auditory_center)
+  McshHlth000019:2310  <br>* McshEngl.language-center!⇒language_center,  (6 pointers to language_center)
+  McshHlth000019:2379  <br>* McshEngl.premotor-center!⇒premotor_center,  (5 pointers to premotor_center)
+  McshHlth000019:2405  <br>* McshEngl.touch-center!⇒touch_center,  (5 pointers to touch_center)
+  McshHlth000019:2432  <br>* McshEngl.tasting-center!⇒tasting_center,  (6 pointers to tasting_center)
+  McshHlth000019:2460  <br>* McshEngl.temperature-center!⇒temperature_center,  (5 pointers to temperature_center)
+  McshHlth000019:2491  <br>* McshEngl.pressure-center!⇒pressure_center,  (5 pointers to pressure_center)
+  McshHlth000019:2518  <br>* McshEngl.pain-center!⇒pain_center,  (5 pointers to pain_center)
+  McshHlth000019:2545  <br>* McshEngl.sleep-center!⇒sleep_center,  (4 pointers to sleep_center)
+  McshHlth000019:2640  <br>* McshEngl.grey-matter!⇒grey_matter,  (7 pointers to grey_matter)
+  McshHlth000019:2662  <br>* McshEngl.SystCentralNervous/white-matter!⇒SystCentralNervous/white_matter,  (2 pointers to SystCentralNervous/white_matter)
+  McshHlth000019:2722  <br>* McshEngl.dura-matter!⇒dura_matter,  (4 pointers to dura_matter)
+  McshHlth000019:2752  <br>* McshEngl.arachnoid-matter!⇒arachnoid_matter,  (4 pointers to arachnoid_matter)
+  McshHlth000019:2782  <br>* McshEngl.pia-mater!⇒pia_mater,  (4 pointers to pia_mater)
+  McshHlth000019:2812  <br>* McshEngl.subarachnoid-space!⇒subarachnoid_space,  (4 pointers to subarachnoid_space)
+  McshHlth000019:2866  <br>* McshEngl.cerebrospinal-fluid!⇒cerebrospinal_fluid,  (5 pointers to cerebrospinal_fluid)
+  McshHlth000019:3465  <br>* McshEngl.eye-appendage!⇒eye_appendage,  (5 pointers to eye_appendage)
+  McshHlth000019:3630  <br>* McshEngl.eye-muscle!⇒eye_muscle,  (7 pointers to eye_muscle)
+  McshHlth000019:3679  <br>* McshEngl.lacrimal-apparatus!⇒lacrimal_apparatus,  (7 pointers to lacrimal_apparatus)
+  McshHlth000019:3814  <br>* McshEngl.exterior-bulbus-oculi!⇒exterior_bulbus_oculi,  (4 pointers to exterior_bulbus_oculi)
+  McshHlth000019:3838  <br>* McshEngl.interior-bulbus-oculi!⇒interior_bulbus_oculi,  (4 pointers to interior_bulbus_oculi)
+  McshHlth000019:3881  <br>* McshEngl.fibrous-tunic!⇒fibrous_tunic,  (4 pointers to fibrous_tunic)
+  McshHlth000019:4117  <br>* McshEngl.ciliary-body!⇒ciliary_body,  (5 pointers to ciliary_body)
+  McshHlth000019:4198  <br>* McshEngl.crystalline-lens!⇒crystalline_lens,  (5 pointers to crystalline_lens)
+  McshHlth000019:4224  <br>* McshEngl.aqueous-humouraqueous-humour!⇒aqueous_humouraqueous_humour,  (6 pointers to aqueous_humouraqueous_humour)
+  McshHlth000019:4250  <br>* McshEngl.vitreous-humor!⇒vitreous_humor,  (5 pointers to vitreous_humor)
+  McshHlth000019:4315  <br>* McshEngl.optic-disk!⇒optic_disk,  (6 pointers to optic_disk)
+  McshHlth000019:4722  <br>* McshEngl.outer-ear!⇒outer_ear,  (4 pointers to outer_ear)
+  McshHlth000019:4766  <br>* McshEngl.middle-ear!⇒middle_ear,  (4 pointers to middle_ear)
+  McshHlth000019:4815  <br>* McshEngl.inner-ear!⇒inner_ear,  (4 pointers to inner_ear)
+  McshHlth000019:5102  <br>* McshEngl.balance-system!⇒balance_system,  (6 pointers to balance_system)
+  McshHlth000019:5416  <br>* McshEngl.olfactory-mucous!⇒olfactory_mucous,  (4 pointers to olfactory_mucous)
+  McshHlth000019:5754  <br>* McshEngl.OganSpinal-cord!⇒OganSpinal_cord,  (7 pointers to OganSpinal_cord)
+  McshHmn000002:756  <br>* McshEngl.facial-symmetry-of-human!⇒facial_symmetry_of_human,  (2 pointers to facial_symmetry_of_human)
+  McshHmn000002:1772  <br>* McshEngl.surrogate-mother!⇒surrogate_mother,  (2 pointers to surrogate_mother)
+  McshHmn000002:2366  <br>* McshEngl.big-five-personality-traits!⇒big_five_personality_traits,  (2 pointers to big_five_personality_traits)
+  McshHmn000002:2470  <br>* McshEngl.cultural-identity--of-human!⇒cultural_identity__of_human,  (2 pointers to cultural_identity__of_human)
+  McshHmn000002:2569  <br>* McshEngl.last-name!⇒last_name,  (10 pointers to last_name)
+  McshHmn000002:2742  <br>* McshEngl.first-name!⇒first_name,  (8 pointers to first_name)
+  McshHmn000002:2806  <br>* McshEngl.honorific-prefix-of-human!⇒honorific_prefix_of_human,  (2 pointers to honorific_prefix_of_human)
+  McshHmn000002:2824  <br>* McshEngl.honorific-suffix-of-human!⇒honorific_suffix_of_human,  (2 pointers to honorific_suffix_of_human)
+  McshHmn000002:3170  <br>* McshEngl.prctical-skill!⇒prctical_skill,  (6 pointers to prctical_skill)
+  McshHmn000002:3189  <br>* McshEngl.mind-skill!⇒mind_skill,  (2 pointers to mind_skill)
+  McshHmn000002:3208  <br>* McshEngl.communication-skill!⇒communication_skill,  (2 pointers to communication_skill)
+  McshHmn000002:3266  <br>* McshEngl.opportunity-cost!⇒opportunity_cost,  (3 pointers to opportunity_cost)
+  McshHmn000002:3445  <br>* McshEngl.curriculum-vitae!⇒curriculum_vitae,  (5 pointers to curriculum_vitae)
+  McshHmn000002:4144  <br>* McshEngl.human-event!⇒human_event,  (6 pointers to human_event)
+  McshHmn000005:75  <br>* McshEngl.Arstwv/mind-and-logos!⇒Arstwv/mind_and_logos,  (2 pointers to Arstwv/mind_and_logos)
+  McshLag000003:1532  <br>* McshEngl.worldviewMachine-readable!⇒worldviewMachine_readable,  (5 pointers to worldviewMachine_readable)
+  McshLag000003:1559  <br>* McshEngl.worldviewMachine-readable-no!⇒worldviewMachine_readable_no,  (6 pointers to worldviewMachine_readable_no)
+  McshLag000005:491  <br>* McshEngl.body-language!⇒body_language,  (2 pointers to body_language)
+  McshLag000006:155  <br>* McshEngl.char-encoding!⇒char_encoding,  (4 pointers to char_encoding)
+  McshLag000006:245  <br>* McshEngl.UTF-8--char-encoding!⇒UTF_8__char_encoding,  (2 pointers to UTF_8__char_encoding)
+  McshLag000006:265  <br>* McshEngl.UTF-16--char-encoding!⇒UTF_16__char_encoding,  (2 pointers to UTF_16__char_encoding)
+  McshLag000006:291  <br>* McshEngl.UTF-32--char-encoding!⇒UTF_32__char_encoding,  (2 pointers to UTF_32__char_encoding)
+  McshLag000006:2691  <br>* McshEngl.known-script-code-point--of-Unicode!⇒known_script_code_point__of_Unicode,  (2 pointers to known_script_code_point__of_Unicode)
+  McshLag000006:4093  <br>* McshEngl.Unicode-script!⇒Unicode_script,  (5 pointers to Unicode_script)
+  McshLag000007:2206  <br>* McshEngl.dynamic-accent!⇒dynamic_accent,  (2 pointers to dynamic_accent)
+  McshLag000007:2222  <br>* McshEngl.tonal-accent!⇒tonal_accent,  (2 pointers to tonal_accent)
+  McshLag000007:5389  <br>* McshEngl.argu-form!⇒argu_form,  (8 pointers to argu_form)
+  McshLag000007:6075  <br>* McshEngl.proper-noun!⇒proper_noun,  (3 pointers to proper_noun)
+  McshLag000007:6093  <br>* McshEngl.common-noun!⇒common_noun,  (3 pointers to common_noun)
+  McshLag000007:6495  <br>* McshEngl.yes-no!⇒yes_no,  (7 pointers to yes_no)
+  McshLag000007:8196  <br>* McshEngl.Hmmdlago-past-simple-passive!⇒Hmmdlago_past_simple_passive,  (2 pointers to Hmmdlago_past_simple_passive)
+  McshLag000007:8227  <br>* McshEngl.Hmmdlago-past-perfect-passive!⇒Hmmdlago_past_perfect_passive,  (2 pointers to Hmmdlago_past_perfect_passive)
+  McshLag000007:8284  <br>* McshEngl.Hmmdlago-past-perfect-continuous!⇒Hmmdlago_past_perfect_continuous,  (2 pointers to Hmmdlago_past_perfect_continuous)
+  McshLag000007:8314  <br>* McshEngl.Hmmdlago-past-continuous-passive!⇒Hmmdlago_past_continuous_passive,  (2 pointers to Hmmdlago_past_continuous_passive)
+  McshLag000007:8344  <br>* McshEngl.Hmmdlago-past-perfect-continuous-passive!⇒Hmmdlago_past_perfect_continuous_passive,  (2 pointers to Hmmdlago_past_perfect_continuous_passive)
+  McshLag000007:8926  <br>* McshEngl.conjunction-synomind--of-verb!⇒conjunction_synomind__of_verb,  (2 pointers to conjunction_synomind__of_verb)
+  McshLag000007:10048  <br>* McshEngl.auxiliary-part-of-Conj!⇒auxiliary_part_of_Conj,  (2 pointers to auxiliary_part_of_Conj)
+  McshLag000007:14135  <br>* McshEngl.subordinate-clause!⇒subordinate_clause,  (6 pointers to subordinate_clause)
+  McshLag000007:14522  <br>* McshEngl.affirmative-sentence!⇒affirmative_sentence,  (2 pointers to affirmative_sentence)
+  McshLag000007:14538  <br>* McshEngl.negative-sentence!⇒negative_sentence,  (2 pointers to negative_sentence)
+  McshLag000007:15592  <br>* McshEngl.senso_mind-semu-relation!⇒senso_mind_semu_relation,  (2 pointers to senso_mind_semu_relation)
+  McshLag000007:16476  <br>* McshEngl.comparative-minus-degree!⇒comparative_minus_degree,  (2 pointers to comparative_minus_degree)
+  McshLag000007:17804  <br>* McshEngl.command-Semuverb_mood!⇒command_Semuverb_mood,  (3 pointers to command_Semuverb_mood)
+  McshLag000007:17821  <br>* McshEngl.request-Semuverb_mood!⇒request_Semuverb_mood,  (3 pointers to request_Semuverb_mood)
+  McshLag000007:17844  <br>* McshEngl.volition-Semuverb_mood!⇒volition_Semuverb_mood,  (6 pointers to volition_Semuverb_mood)
+  McshLag000007:17876  <br>* McshEngl.ability-Semuverb_mood!⇒ability_Semuverb_mood,  (4 pointers to ability_Semuverb_mood)
+  McshLag000007:17893  <br>* McshEngl.advisability-Semuverb_mood!⇒advisability_Semuverb_mood,  (3 pointers to advisability_Semuverb_mood)
+  McshLag000007:17910  <br>* McshEngl.certainty-Semuverb_mood!⇒certainty_Semuverb_mood,  (3 pointers to certainty_Semuverb_mood)
+  McshLag000007:17934  <br>* McshEngl.conditional-Semuverb_mood!⇒conditional_Semuverb_mood,  (5 pointers to conditional_Semuverb_mood)
+  McshLag000007:17956  <br>* McshEngl.intention-Semuverb_mood!⇒intention_Semuverb_mood,  (3 pointers to intention_Semuverb_mood)
+  McshLag000007:17993  <br>* McshEngl.necessative-Semuverb_mood!⇒necessative_Semuverb_mood,  (5 pointers to necessative_Semuverb_mood)
+  McshLag000007:18022  <br>* McshEngl.oblicatory-Semuverb_mood!⇒oblicatory_Semuverb_mood,  (3 pointers to oblicatory_Semuverb_mood)
+  McshLag000007:18046  <br>* McshEngl.permission-Semuverb_mood!⇒permission_Semuverb_mood,  (3 pointers to permission_Semuverb_mood)
+  McshLag000007:18071  <br>* McshEngl.possibility-Semuverb_mood!⇒possibility_Semuverb_mood,  (5 pointers to possibility_Semuverb_mood)
+  McshLag000007:18668  <br>* McshEngl.active-VerbCptAttDirection!⇒active_VerbCptAttDirection,  (2 pointers to active_VerbCptAttDirection)
+  McshLag000007:18684  <br>* McshEngl.passive-VerbCptAttDirection!⇒passive_VerbCptAttDirection,  (2 pointers to passive_VerbCptAttDirection)
+  McshLag000007:18716  <br>* McshEngl.functive-VerbCptAttDirection!⇒functive_VerbCptAttDirection,  (3 pointers to functive_VerbCptAttDirection)
+  McshLag000007:18733  <br>* McshEngl.relational-VerbCptAttDirection!⇒relational_VerbCptAttDirection,  (2 pointers to relational_VerbCptAttDirection)
+  McshLag000007:30955  <br>* McshEngl.Hmmdlago-knower!⇒Hmmdlago_knower,  (4 pointers to Hmmdlago_knower)
+  McshLag000007:31120  <br>* McshEngl.European-Day-of-Languages-26-September!⇒European_Day_of_Languages_26_September,  (2 pointers to European_Day_of_Languages_26_September)
+  McshLag000007:31137  <br>* McshEngl.International-Mother-Language-Day-21-February!⇒International_Mother_Language_Day_21_February,  (2 pointers to International_Mother_Language_Day_21_February)
+  McshLag000007:32412  <br>* McshEngl.read-aloud!⇒read_aloud,  (5 pointers to read_aloud)
+  McshLag000007:32862  <br>* McshEngl.native-language!⇒native_language,  (5 pointers to native_language)
+  McshLag000007:32919  <br>* McshEngl.foreign-language!⇒foreign_language,  (4 pointers to foreign_language)
+  McshLag000008:73  <br>* McshEngl.Alfalago-knower!⇒Alfalago_knower,  (3 pointers to Alfalago_knower)
+  McshLag000008:270  <br>* McshEngl.diacritic-mark!⇒diacritic_mark,  (2 pointers to diacritic_mark)
+  McshLag000008:553  <br>* McshEngl.capital-letter--of-Alfalago!⇒capital_letter__of_Alfalago,  (2 pointers to capital_letter__of_Alfalago)
+  McshLag000008:639  <br>* McshEngl.Alfalago-word!⇒Alfalago_word,  (7 pointers to Alfalago_word)
+  McshLag000008:688  <br>* McshEngl.Alfalago-name!⇒Alfalago_name,  (9 pointers to Alfalago_name)
+  McshLag000008:716  <br>* McshEngl.Alfalago-sentence!⇒Alfalago_sentence,  (6 pointers to Alfalago_sentence)
+  McshLag000008:735  <br>* McshEngl.Alfalago-section!⇒Alfalago_section,  (5 pointers to Alfalago_section)
+  McshLag000009:90  <br>* McshEngl.Spchlago-knower!⇒Spchlago_knower,  (3 pointers to Spchlago_knower)
+  McshLag000009:188  <br>* McshEngl.info-of-speech!⇒info_of_speech,  (2 pointers to info_of_speech)
+  McshLag000009:1252  <br>* McshEngl./v26/-/a/-(central-open)!⇒/v26/_/a/_(central_open),  (2 pointers to /v26/_/a/_(central_open))
+  McshLag000009:1277  <br>* McshEngl./v25/-/a5/-(cental-mid)-[ə]!⇒/v25/_/a5/_(cental_mid)_[ə],  (2 pointers to /v25/_/a5/_(cental_mid)_[ə])
+  McshLag000009:1306  <br>* McshEngl./a1/-(a-front)-[æ]!⇒/a1/_(a_front)_[æ],  (10 pointers to /a1/_(a_front)_[æ])
+  McshLag000009:1331  <br>* McshEngl./a37/-[ʌ]-(back-unrounded)!⇒/a37/_[ʌ]_(back_unrounded),  (2 pointers to /a37/_[ʌ]_(back_unrounded))
+  McshLag000009:1352  <br>* McshEngl./a9/-(a-nasal)!⇒/a9/_(a_nasal),  (2 pointers to /a9/_(a_nasal))
+  McshLag000009:1368  <br>* McshEngl./a10/-(aspirated)!⇒/a10/_(aspirated),  (2 pointers to /a10/_(aspirated))
+  McshLag000009:1385  <br>* McshEngl./a11/-(a-short)!⇒/a11/_(a_short),  (2 pointers to /a11/_(a_short))
+  McshLag000009:1402  <br>* McshEngl./a12/-a-(long)!⇒/a12/_a_(long),  (2 pointers to /a12/_a_(long))
+  McshLag000009:1420  <br>* McshEngl./v14/-/e/-(front-mid)!⇒/v14/_/e/_(front_mid),  (2 pointers to /v14/_/e/_(front_mid))
+  McshLag000009:1440  <br>* McshEngl./e12/-e-(long)!⇒/e12/_e_(long),  (2 pointers to /e12/_e_(long))
+  McshLag000009:1461  <br>* McshEngl./e6/-(open)-[ɛ]!⇒/e6/_(open)_[ɛ],  (2 pointers to /e6/_(open)_[ɛ])
+  McshLag000009:1489  <br>* McshEngl.[ø]-/e8/-(round)!⇒[ø]_/e8/_(round),  (2 pointers to [ø]_/e8/_(round))
+  McshLag000009:1512  <br>* McshEngl./e9/-(nasal)!⇒/e9/_(nasal),  (2 pointers to /e9/_(nasal))
+  McshLag000009:1531  <br>* McshEngl./v14/-/i/-(front-closed)!⇒/v14/_/i/_(front_closed),  (2 pointers to /v14/_/i/_(front_closed))
+  McshLag000009:1556  <br>* McshEngl./i2/-(central)-[ɨ]!⇒/i2/_(central)_[ɨ],  (2 pointers to /i2/_(central)_[ɨ])
+  McshLag000009:1583  <br>* McshEngl./i3/-(back)!⇒/i3/_(back),  (12 pointers to /i3/_(back))
+  McshLag000009:1612  <br>* McshEngl./i8/-[y]-(round)!⇒/i8/_[y]_(round),  (12 pointers to /i8/_[y]_(round))
+  McshLag000009:1636  <br>* McshEngl./i12/-(long)!⇒/i12/_(long),  (2 pointers to /i12/_(long))
+  McshLag000009:1654  <br>* McshEngl./v35/-/o/-(back-mid)!⇒/v35/_/o/_(back_mid),  (2 pointers to /v35/_/o/_(back_mid))
+  McshLag000009:1675  <br>* McshEngl./o12/-o-(long)!⇒/o12/_o_(long),  (2 pointers to /o12/_o_(long))
+  McshLag000009:1696  <br>* McshEngl./o6/-(open)-[ɔ]!⇒/o6/_(open)_[ɔ],  (2 pointers to /o6/_(open)_[ɔ])
+  McshLag000009:1718  <br>* McshEngl./o8/-(round)!⇒/o8/_(round),  (2 pointers to /o8/_(round))
+  McshLag000009:1737  <br>* McshEngl./v34/-/u/-(back-close)!⇒/v34/_/u/_(back_close),  (2 pointers to /v34/_/u/_(back_close))
+  McshLag000009:1757  <br>* McshEngl./u12/-u-(long)!⇒/u12/_u_(long),  (2 pointers to /u12/_u_(long))
+  McshLag000009:1779  <br>* McshEngl./u7/-(unround)-[ɤ]!⇒/u7/_(unround)_[ɤ],  (2 pointers to /u7/_(unround)_[ɤ])
+  McshLag000009:2306  <br>* McshEngl.post-alveolar!⇒post_alveolar,  (4 pointers to post_alveolar)
+  McshLag000009:2820  <br>* McshEngl.phoneme.th-[θ]!⇒phoneme.th_[θ],  (11 pointers to phoneme.th_[θ])
+  McshLag000009:2855  <br>* McshEngl.phoneme.dh-[ð]!⇒phoneme.dh_[ð],  (13 pointers to phoneme.dh_[ð])
+  McshLag000009:3091  <br>* McshEngl.phoneme.y-[j|γ]!⇒phoneme.y_[j|γ],  (14 pointers to phoneme.y_[j|γ])
+  McshLag000009:3199  <br>* McshEngl./ng/-[ŋ]!⇒/ng/_[ŋ],  (2 pointers to /ng/_[ŋ])
+  McshLag000009:3271  <br>* McshEngl./H/-[x]-strong-/h/!⇒/H/_[x]_strong_/h/,  (2 pointers to /H/_[x]_strong_/h/)
+  McshLag000009:3320  <br>* McshEngl./L/-[ɫ]-strong-/l/!⇒/L/_[ɫ]_strong_/l/,  (2 pointers to /L/_[ɫ]_strong_/l/)
+  McshLag000009:3482  <br>* McshEngl./jj/-(ji)!⇒/jj/_(ji),  (2 pointers to /jj/_(ji))
+  McshLag000009:3504  <br>* McshEngl./kk/-(ki)-cute!⇒/kk/_(ki)_cute,  (6 pointers to /kk/_(ki)_cute)
+  McshLag000009:3523  <br>* McshEngl./gg/-(gi)-[ɟ]!⇒/gg/_(gi)_[ɟ],  (6 pointers to /gg/_(gi)_[ɟ])
+  McshLag000009:3541  <br>* McshEngl./hh/-(hi)-[ç]-Huge!⇒/hh/_(hi)_[ç]_Huge,  (2 pointers to /hh/_(hi)_[ç]_Huge)
+  McshLag000009:3572  <br>* McshEngl./yy/-(yi)-You!⇒/yy/_(yi)_You,  (2 pointers to /yy/_(yi)_You)
+  McshLag000009:3596  <br>* McshEngl./nn/-(ni)-[ɲ]-New!⇒/nn/_(ni)_[ɲ]_New,  (2 pointers to /nn/_(ni)_[ɲ]_New)
+  McshLag000009:3625  <br>* McshEngl./ll/-(li)-[ʎ]!⇒/ll/_(li)_[ʎ],  (10 pointers to /ll/_(li)_[ʎ])
+  McshLag000009:3647  <br>* McshEngl./kd/-[kʰ]-aspirated-k!⇒/kd/_[kʰ]_aspirated_k,  (2 pointers to /kd/_[kʰ]_aspirated_k)
+  McshLag000009:3668  <br>* McshEngl./pd/-[pʰ]-aspirated-p!⇒/pd/_[pʰ]_aspirated_p,  (2 pointers to /pd/_[pʰ]_aspirated_p)
+  McshLag000009:3690  <br>* McshEngl./td/-[tʰ]-aspirated-t!⇒/td/_[tʰ]_aspirated_t,  (2 pointers to /td/_[tʰ]_aspirated_t)
+  McshLag000009:3710  <br>* McshEngl./df/-[dˤ]-pharyngeal-Arabic!⇒/df/_[dˤ]_pharyngeal_Arabic,  (2 pointers to /df/_[dˤ]_pharyngeal_Arabic)
+  McshLag000009:3729  <br>* McshEngl./dhf/-[dhˤ]-pharyngeal-Arabic!⇒/dhf/_[dhˤ]_pharyngeal_Arabic,  (2 pointers to /dhf/_[dhˤ]_pharyngeal_Arabic)
+  McshLag000009:3748  <br>* McshEngl./hf/-[hˤ]-pharyngeal-Arabic!⇒/hf/_[hˤ]_pharyngeal_Arabic,  (2 pointers to /hf/_[hˤ]_pharyngeal_Arabic)
+  McshLag000009:3767  <br>* McshEngl./kf/-[kˤ]-pharyngeal-Arabic!⇒/kf/_[kˤ]_pharyngeal_Arabic,  (2 pointers to /kf/_[kˤ]_pharyngeal_Arabic)
+  McshLag000009:3786  <br>* McshEngl./sf/-[sˤ]-pharyngeal-Arabic!⇒/sf/_[sˤ]_pharyngeal_Arabic,  (2 pointers to /sf/_[sˤ]_pharyngeal_Arabic)
+  McshLag000009:3805  <br>* McshEngl./tf/-[tˤ]-pharyngeal-Arabic!⇒/tf/_[tˤ]_pharyngeal_Arabic,  (2 pointers to /tf/_[tˤ]_pharyngeal_Arabic)
+  McshLag000009:3824  <br>* McshEngl./bb/-[bʱ]-breathy-b!⇒/bb/_[bʱ]_breathy_b,  (2 pointers to /bb/_[bʱ]_breathy_b)
+  McshLag000009:3843  <br>* McshEngl./db/-[d̪ʱ]-breathy-d!⇒/db/_[d̪ʱ]_breathy_d,  (2 pointers to /db/_[d̪ʱ]_breathy_d)
+  McshLag000009:3862  <br>* McshEngl./gb/-[ɡʱ]-breathy-g!⇒/gb/_[ɡʱ]_breathy_g,  (2 pointers to /gb/_[ɡʱ]_breathy_g)
+  McshLag000009:3881  <br>* McshEngl./Jb/-[d͡ʒʱ]-breathy-J!⇒/Jb/_[d͡ʒʱ]_breathy_J,  (2 pointers to /Jb/_[d͡ʒʱ]_breathy_J)
+  McshLag000009:3900  <br>* McshEngl./dr/-[ɖ]-retroflex!⇒/dr/_[ɖ]_retroflex,  (2 pointers to /dr/_[ɖ]_retroflex)
+  McshLag000009:3916  <br>* McshEngl./drb/-[ɖʱ]-retroflex-breathy!⇒/drb/_[ɖʱ]_retroflex_breathy,  (2 pointers to /drb/_[ɖʱ]_retroflex_breathy)
+  McshLag000009:3932  <br>* McshEngl./nr/-[ɳ]-retroflex!⇒/nr/_[ɳ]_retroflex,  (2 pointers to /nr/_[ɳ]_retroflex)
+  McshLag000009:3948  <br>* McshEngl./rr/-[ɽ]-retroflex!⇒/rr/_[ɽ]_retroflex,  (2 pointers to /rr/_[ɽ]_retroflex)
+  McshLag000009:3964  <br>* McshEngl./rrb/-[ɽʱ]-retroflex-breathy!⇒/rrb/_[ɽʱ]_retroflex_breathy,  (2 pointers to /rrb/_[ɽʱ]_retroflex_breathy)
+  McshLag000009:3980  <br>* McshEngl./sr/-[ʂ]-retroflex!⇒/sr/_[ʂ]_retroflex,  (2 pointers to /sr/_[ʂ]_retroflex)
+  McshLag000009:3996  <br>* McshEngl./tr/-[ʈ]-retroflex!⇒/tr/_[ʈ]_retroflex,  (2 pointers to /tr/_[ʈ]_retroflex)
+  McshLag000009:4012  <br>* McshEngl./trd/-[ʈʰ]-retroflex-aspirated!⇒/trd/_[ʈʰ]_retroflex_aspirated,  (2 pointers to /trd/_[ʈʰ]_retroflex_aspirated)
+  McshLag000009:4141  <br>* McshEngl.stress-of-word--of-Spchlago!⇒stress_of_word__of_Spchlago,  (2 pointers to stress_of_word__of_Spchlago)
+  McshLag000009:4181  <br>* McshEngl.Spchlago-name!⇒Spchlago_name,  (8 pointers to Spchlago_name)
+  McshLag000009:4233  <br>* McshEngl.Spchlago-section!⇒Spchlago_section,  (6 pointers to Spchlago_section)
+  McshLag000009:4251  <br>* McshEngl.Spchlago-root!⇒Spchlago_root,  (6 pointers to Spchlago_root)
+  McshLag000010:132  <br>* McshEngl.Sngu_lagu-knower!⇒Sngu_lagu_knower,  (3 pointers to Sngu_lagu_knower)
+  McshLag000010:4858  <br>* McshEngl.part-of-speech--of-Sngu_lagu!⇒part_of_speech__of_Sngu_lagu,  (2 pointers to part_of_speech__of_Sngu_lagu)
+  McshLag000010:4937  <br>* McshEngl.Snguargu-form!⇒Snguargu_form,  (5 pointers to Snguargu_form)
+  McshLag000010:4950  <br>* McshEngl.base-form-of-Snguargu!⇒base_form_of_Snguargu,  (2 pointers to base_form_of_Snguargu)
+  McshLag000010:4966  <br>* McshEngl.Sngu_arguf2-langos!⇒Sngu_arguf2_langos,  (2 pointers to Sngu_arguf2_langos)
+  McshLag000010:4988  <br>* McshEngl.auxiliary-part-of-Snguargu!⇒auxiliary_part_of_Snguargu,  (2 pointers to auxiliary_part_of_Snguargu)
+  McshLag000010:5341  <br>* McshEngl.auxiliaryNo-part--of-Snguvm!⇒auxiliaryNo_part__of_Snguvm,  (2 pointers to auxiliaryNo_part__of_Snguvm)
+  McshLag000010:5361  <br>* McshEngl.auxiliary-part--of-Snguvm!⇒auxiliary_part__of_Snguvm,  (2 pointers to auxiliary_part__of_Snguvm)
+  McshLag000011:415  <br>* McshEngl.Engl_phnm./a6/-/æ/ipa!⇒Engl_phnm./a6/_/æ/ipa,  (2 pointers to Engl_phnm./a6/_/æ/ipa)
+  McshLag000011:526  <br>* McshEngl.Engl_phnm./ee/-/ɜː/ipa!⇒Engl_phnm./ee/_/ɜː/ipa,  (2 pointers to Engl_phnm./ee/_/ɜː/ipa)
+  McshLag000011:568  <br>* McshEngl.Engl_phnm./i/-/ɪ/ipa!⇒Engl_phnm./i/_/ɪ/ipa,  (2 pointers to Engl_phnm./i/_/ɪ/ipa)
+  McshLag000011:589  <br>* McshEngl.Engl_phnm./ii/-/iː/ipa!⇒Engl_phnm./ii/_/iː/ipa,  (2 pointers to Engl_phnm./ii/_/iː/ipa)
+  McshLag000011:651  <br>* McshEngl.Engl_phnm./oo/-/ɔː/ipa!⇒Engl_phnm./oo/_/ɔː/ipa,  (2 pointers to Engl_phnm./oo/_/ɔː/ipa)
+  McshLag000011:712  <br>* McshEngl.Engl_phnm./u/-/ʊ/ipa!⇒Engl_phnm./u/_/ʊ/ipa,  (2 pointers to Engl_phnm./u/_/ʊ/ipa)
+  McshLag000011:733  <br>* McshEngl.Engl_phnm./uu/-/uː/ipa!⇒Engl_phnm./uu/_/uː/ipa,  (2 pointers to Engl_phnm./uu/_/uː/ipa)
+  McshLag000011:752  <br>* McshEngl.Engl_phnm./ua/-/ʊə/ipa!⇒Engl_phnm./ua/_/ʊə/ipa,  (2 pointers to Engl_phnm./ua/_/ʊə/ipa)
+  McshLag000011:885  <br>* McshEngl.Engl_phnm./th/-/θ/ipa!⇒Engl_phnm./th/_/θ/ipa,  (2 pointers to Engl_phnm./th/_/θ/ipa)
+  McshLag000011:901  <br>* McshEngl.Engl_phnm./dh/-/ð/ipa!⇒Engl_phnm./dh/_/ð/ipa,  (2 pointers to Engl_phnm./dh/_/ð/ipa)
+  McshLag000011:973  <br>* McshEngl.Engl_phnm./S/-/ʃ/ipa!⇒Engl_phnm./S/_/ʃ/ipa,  (2 pointers to Engl_phnm./S/_/ʃ/ipa)
+  McshLag000011:989  <br>* McshEngl.Engl_phnm./Z/-/ʒ/ipa!⇒Engl_phnm./Z/_/ʒ/ipa,  (2 pointers to Engl_phnm./Z/_/ʒ/ipa)
+  McshLag000011:1120  <br>* McshEngl.Engl_phnm./ng/-/ŋ/ipa!⇒Engl_phnm./ng/_/ŋ/ipa,  (2 pointers to Engl_phnm./ng/_/ŋ/ipa)
+  McshLag000011:5871  <br>* McshEngl.auxiliary-part-of-Englargumebr!⇒auxiliary_part_of_Englargumebr,  (2 pointers to auxiliary_part_of_Englargumebr)
+  McshLag000011:6156  <br>* McshEngl.OndombrEngl01-car!⇒OndombrEngl01_car,  (2 pointers to OndombrEngl01_car)
+  McshLag000011:6172  <br>* McshEngl.OndombrEngl02-cars!⇒OndombrEngl02_cars,  (2 pointers to OndombrEngl02_cars)
+  McshLag000011:6188  <br>* McshEngl.OndombrEngl03-the-car!⇒OndombrEngl03_the_car,  (2 pointers to OndombrEngl03_the_car)
+  McshLag000011:6204  <br>* McshEngl.OndombrEngl04-the-cars!⇒OndombrEngl04_the_cars,  (2 pointers to OndombrEngl04_the_cars)
+  McshLag000011:6220  <br>* McshEngl.OndombrEngl05-a-car!⇒OndombrEngl05_a_car,  (2 pointers to OndombrEngl05_a_car)
+  McshLag000011:6236  <br>* McshEngl.OndombrEngl06-some-cars!⇒OndombrEngl06_some_cars,  (2 pointers to OndombrEngl06_some_cars)
+  McshLag000011:6315  <br>* McshEngl.OndombrEngl11-a-car's!⇒OndombrEngl11_a_car's,  (2 pointers to OndombrEngl11_a_car's)
+  McshLag000011:6669  <br>* McshEngl.English-case!⇒English_case,  (2 pointers to English_case)
+  McshLag000011:15278  <br>* McshEngl.English-declensor!⇒English_declensor,  (2 pointers to English_declensor)
+  McshLag000011:23311  <br>* McshEngl.atomicNo-Englvm!⇒atomicNo_Englvm,  (2 pointers to atomicNo_Englvm)
+  McshLag000011:23421  <br>* McshEngl.present-perfect-continuous-Engllago!⇒present_perfect_continuous_Engllago,  (2 pointers to present_perfect_continuous_Engllago)
+  McshLag000011:23437  <br>* McshEngl.present-passive-simple-Engllago!⇒present_passive_simple_Engllago,  (2 pointers to present_passive_simple_Engllago)
+  McshLag000011:23453  <br>* McshEngl.present-passive-continuous-Engllago!⇒present_passive_continuous_Engllago,  (2 pointers to present_passive_continuous_Engllago)
+  McshLag000011:23469  <br>* McshEngl.present-passive-perfect-Engllago!⇒present_passive_perfect_Engllago,  (2 pointers to present_passive_perfect_Engllago)
+  McshLag000011:23485  <br>* McshEngl.present-passive-perfect-continuous-Engllago!⇒present_passive_perfect_continuous_Engllago,  (2 pointers to present_passive_perfect_continuous_Engllago)
+  McshLag000011:23569  <br>* McshEngl.past-perfect-continuous-Engllago!⇒past_perfect_continuous_Engllago,  (2 pointers to past_perfect_continuous_Engllago)
+  McshLag000011:23585  <br>* McshEngl.past-passive-simple-Engllago!⇒past_passive_simple_Engllago,  (2 pointers to past_passive_simple_Engllago)
+  McshLag000011:23601  <br>* McshEngl.past-passive-continuous-Engllago!⇒past_passive_continuous_Engllago,  (2 pointers to past_passive_continuous_Engllago)
+  McshLag000011:23617  <br>* McshEngl.past-passive-perfect-Engllago!⇒past_passive_perfect_Engllago,  (2 pointers to past_passive_perfect_Engllago)
+  McshLag000011:23633  <br>* McshEngl.past-passive-perfect-continuous-Engllago!⇒past_passive_perfect_continuous_Engllago,  (2 pointers to past_passive_perfect_continuous_Engllago)
+  McshLag000011:23742  <br>* McshEngl.future-perfect-continuous-Engllago!⇒future_perfect_continuous_Engllago,  (2 pointers to future_perfect_continuous_Engllago)
+  McshLag000011:23758  <br>* McshEngl.future-passive-simple-Engllago!⇒future_passive_simple_Engllago,  (2 pointers to future_passive_simple_Engllago)
+  McshLag000011:23774  <br>* McshEngl.future-passive-continuous-Engllago!⇒future_passive_continuous_Engllago,  (2 pointers to future_passive_continuous_Engllago)
+  McshLag000011:23790  <br>* McshEngl.future-passive-perfect-Engllago!⇒future_passive_perfect_Engllago,  (2 pointers to future_passive_perfect_Engllago)
+  McshLag000011:23806  <br>* McshEngl.future-passive-perfect-continuous-Engllago!⇒future_passive_perfect_continuous_Engllago,  (2 pointers to future_passive_perfect_continuous_Engllago)
+  McshLag000011:28296  <br>* McshEngl.direction-Engl_prep!⇒direction_Engl_prep,  (2 pointers to direction_Engl_prep)
+  McshLag000012:87  <br>* McshEngl.Espolago-knower!⇒Espolago_knower,  (3 pointers to Espolago_knower)
+  McshLag000012:1212  <br>* McshEngl.letterEspo.11-ĥ-/h20/!⇒letterEspo.11_ĥ_/h20/,  (2 pointers to letterEspo.11_ĥ_/h20/)
+  McshLag000012:1404  <br>* McshEngl.letterEspo.23-ŝo-/So/!⇒letterEspo.23_ŝo_/So/,  (2 pointers to letterEspo.23_ŝo_/So/)
+  McshLag000012:2046  <br>* McshEngl.logo-case1--of-Espolago!⇒logo_case1__of_Espolago,  (2 pointers to logo_case1__of_Espolago)
+  McshLag000012:3067  <br>* McshEngl.verbEspo-form!⇒verbEspo_form,  (6 pointers to verbEspo_form)
+  McshLag000012:3120  <br>* McshEngl.past-tense-partA--of-verbEspo!⇒past_tense_partA__of_verbEspo,  (2 pointers to past_tense_partA__of_verbEspo)
+  McshLag000012:3137  <br>* McshEngl.gerund--of-verbEspo!⇒gerund__of_verbEspo,  (2 pointers to gerund__of_verbEspo)
+  McshLag000012:3156  <br>* McshEngl.past-participle-5--of-verbEspo!⇒past_participle_5__of_verbEspo,  (2 pointers to past_participle_5__of_verbEspo)
+  McshLag000012:3174  <br>* McshEngl.past-participle-6--of-verbEspo!⇒past_participle_6__of_verbEspo,  (2 pointers to past_participle_6__of_verbEspo)
+  McshLag000012:3192  <br>* McshEngl.past-participle-7--of-verbEspo!⇒past_participle_7__of_verbEspo,  (2 pointers to past_participle_7__of_verbEspo)
+  McshLag000012:3210  <br>* McshEngl.past-participle-8--of-verbEspo!⇒past_participle_8__of_verbEspo,  (2 pointers to past_participle_8__of_verbEspo)
+  McshLag000012:3228  <br>* McshEngl.past-participle-9--of-verbEspo!⇒past_participle_9__of_verbEspo,  (2 pointers to past_participle_9__of_verbEspo)
+  McshLag000012:3246  <br>* McshEngl.past-participle-10--of-verbEspo!⇒past_participle_10__of_verbEspo,  (2 pointers to past_participle_10__of_verbEspo)
+  McshLag000012:3264  <br>* McshEngl.past-participle-11--of-verbEspo!⇒past_participle_11__of_verbEspo,  (2 pointers to past_participle_11__of_verbEspo)
+  McshLag000012:3282  <br>* McshEngl.past-participle-12--of-verbEspo!⇒past_participle_12__of_verbEspo,  (2 pointers to past_participle_12__of_verbEspo)
+  McshLag000012:5113  <br>* McshEngl.Esperanto-semoattributive-argu!⇒Esperanto_semoattributive_argu,  (2 pointers to Esperanto_semoattributive_argu)
+  McshLag000013:53  <br>* McshEngl.author-of-Infrsc!⇒author_of_Infrsc,  (2 pointers to author_of_Infrsc)
+  McshLag000013:70  <br>* McshEngl.title-of-Infrsc!⇒title_of_Infrsc,  (2 pointers to title_of_Infrsc)
+  McshLag000013:87  <br>* McshEngl.subject-of-Infrsc!⇒subject_of_Infrsc,  (2 pointers to subject_of_Infrsc)
+  McshLag000013:116  <br>* McshEngl.place-of-publication--of-Infrsc!⇒place_of_publication__of_Infrsc,  (2 pointers to place_of_publication__of_Infrsc)
+  McshLag000013:133  <br>* McshEngl.language-of-Infrsc!⇒language_of_Infrsc,  (2 pointers to language_of_Infrsc)
+  McshLag000013:247  <br>* McshEngl.public-domain!⇒public_domain,  (3 pointers to public_domain)
+  McshLag000013:937  <br>* McshEngl.stage-play!⇒stage_play,  (3 pointers to stage_play)
+  McshLag000016:665  <br>* McshEngl.for-example-abbreviation!⇒for_example_abbreviation,  (3 pointers to for_example_abbreviation)
+  McshLag000018:342  <br>* McshEngl.Institute-of-Linguistics-at-CASS!⇒Institute_of_Linguistics_at_CASS,  (2 pointers to Institute_of_Linguistics_at_CASS)
+  McshLag000018:598  <br>* McshEngl.enumeration-comma!⇒enumeration_comma,  (3 pointers to enumeration_comma)
+  McshLag000018:616  <br>* McshEngl.question-mark!⇒question_mark,  (3 pointers to question_mark)
+  McshLag000018:634  <br>* McshEngl.exclamation-mark!⇒exclamation_mark,  (3 pointers to exclamation_mark)
+  McshLag000018:703  <br>* McshEngl.em-dash!⇒em_dash,  (3 pointers to em_dash)
+  McshLag000018:721  <br>* McshEngl.title-marks!⇒title_marks,  (3 pointers to title_marks)
+  McshLag000018:739  <br>* McshEngl.single-title-marks!⇒single_title_marks,  (3 pointers to single_title_marks)
+  McshLag000018:757  <br>* McshEngl.double-quotation-mark!⇒double_quotation_mark,  (3 pointers to double_quotation_mark)
+  McshLag000018:775  <br>* McshEngl.single-quotation-mark!⇒single_quotation_mark,  (3 pointers to single_quotation_mark)
+  McshLag000018:810  <br>* McshEngl.square-brackets!⇒square_brackets,  (3 pointers to square_brackets)
+  McshLag000018:1266  <br>* McshEngl.Zhon_phnm./u7/-unround-[ɤ]!⇒Zhon_phnm./u7/_unround_[ɤ],  (2 pointers to Zhon_phnm./u7/_unround_[ɤ])
+  McshLag000018:1387  <br>* McshEngl.Zhonlago-semivowel!⇒Zhonlago_semivowel,  (5 pointers to Zhonlago_semivowel)
+  McshLag000018:7947  <br>* McshEngl.List-of-Commonly-Used-Standard-Chinese-Characters!⇒List_of_Commonly_Used_Standard_Chinese_Characters,  (2 pointers to List_of_Commonly_Used_Standard_Chinese_Characters)
+  McshLag000018:8843  <br>* McshEngl.zài-在!⇒zài_在,  (2 pointers to zài_在)
+  McshLag000018:9018  <br>* McshEngl.Zhonnoun_auxi.men-们!⇒Zhonnoun_auxi.men_们,  (2 pointers to Zhonnoun_auxi.men_们)
+  McshLag000018:12004  <br>* McshEngl.Zhon_verbAtom.001-写-xiě-write!⇒Zhon_verbAtom.001_写_xiě_write,  (2 pointers to Zhon_verbAtom.001_写_xiě_write)
+  McshLag000018:12019  <br>* McshEngl.Zhon_verbAtom.002-不写-bùxiě-do-not-write!⇒Zhon_verbAtom.002_不写_bùxiě_do_not_write,  (2 pointers to Zhon_verbAtom.002_不写_bùxiě_do_not_write)
+  McshLag000018:12034  <br>* McshEngl.Zhon_verbAtom.003-写..吗-xiěma-do-(I)-write!⇒Zhon_verbAtom.003_写..吗_xiěma_do_(I)_write,  (2 pointers to Zhon_verbAtom.003_写..吗_xiěma_do_(I)_write)
+  McshLag000018:12160  <br>* McshEngl.Zhonverb-form!⇒Zhonverb_form,  (10 pointers to Zhonverb_form)
+  McshLag000018:12213  <br>* McshEngl.Zhonverbauxi.a-啊-reduces-forcefulness!⇒Zhonverbauxi.a_啊_reduces_forcefulness,  (3 pointers to Zhonverbauxi.a_啊_reduces_forcefulness)
+  McshLag000018:12322  <br>* McshEngl.Zhonverbauxi.bù-不!⇒Zhonverbauxi.bù_不,  (2 pointers to Zhonverbauxi.bù_不)
+  McshLag000018:12343  <br>* McshEngl.Zhonverbauxi.bùyào-不要-imperative-negation!⇒Zhonverbauxi.bùyào_不要_imperative_negation,  (3 pointers to Zhonverbauxi.bùyào_不要_imperative_negation)
+  McshLag000018:12363  <br>* McshEngl.Zhonverbauxi.dào-到-achievement!⇒Zhonverbauxi.dào_到_achievement,  (2 pointers to Zhonverbauxi.dào_到_achievement)
+  McshLag000018:12418  <br>* McshEngl.Zhonverbauxi.jiù-就-sooness!⇒Zhonverbauxi.jiù_就_sooness,  (2 pointers to Zhonverbauxi.jiù_就_sooness)
+  McshLag000018:12506  <br>* McshEngl.Zhonverbauxi.guò-过-past!⇒Zhonverbauxi.guò_过_past,  (2 pointers to Zhonverbauxi.guò_过_past)
+  McshLag000018:12526  <br>* McshEngl.Zhonverbauxi.ma-吗!⇒Zhonverbauxi.ma_吗,  (2 pointers to Zhonverbauxi.ma_吗)
+  McshLag000018:12552  <br>* McshEngl.Zhonverbauxi.méi-没-negation!⇒Zhonverbauxi.méi_没_negation,  (3 pointers to Zhonverbauxi.méi_没_negation)
+  McshLag000018:12579  <br>* McshEngl.Zhonverbauxi.méiyǒu-没有-negation-past!⇒Zhonverbauxi.méiyǒu_没有_negation_past,  (3 pointers to Zhonverbauxi.méiyǒu_没有_negation_past)
+  McshLag000018:12755  <br>* McshEngl.Zhonverbauxi.zhe-着-continuation!⇒Zhonverbauxi.zhe_着_continuation,  (3 pointers to Zhonverbauxi.zhe_着_continuation)
+  McshLag000018:12825  <br>* McshEngl.aspect-particle--of-Zhonverbauxi!⇒aspect_particle__of_Zhonverbauxi,  (2 pointers to aspect_particle__of_Zhonverbauxi)
+  McshLag000018:13588  <br>* McshEngl.Zhonverb.yuǎnlí-远离!⇒Zhonverb.yuǎnlí_远离,  (3 pointers to Zhonverb.yuǎnlí_远离)
+  McshLag000018:14055  <br>* McshEngl.Zhonconj.002-de-地!⇒Zhonconj.002_de_地,  (2 pointers to Zhonconj.002_de_地)
+  McshLag000018:14533  <br>* McshEngl.in-front-of!⇒in_front_of,  (2 pointers to in_front_of)
+  McshLag000018:14589  <br>* McshEngl.beside|next-to!⇒beside|next_to,  (2 pointers to beside|next_to)
+  McshLag000018:14609  <br>* McshEngl.in-front-of|before!⇒in_front_of|before,  (2 pointers to in_front_of|before)
+  McshLag000018:14907  <br>* McshEngl.and/as-well-as/along-with!⇒and/as_well_as/along_with,  (2 pointers to and/as_well_as/along_with)
+  McshLag000018:14981  <br>* McshEngl.due-to/owing-to/because-of!⇒due_to/owing_to/because_of,  (2 pointers to due_to/owing_to/because_of)
+  McshLag000018:16589  <br>* McshEngl.affirmative-negative--Zhon_sentAsk!⇒affirmative_negative__Zhon_sentAsk,  (2 pointers to affirmative_negative__Zhon_sentAsk)
+  McshLag000018:16613  <br>* McshEngl.or-Zhon_sentAsk-háishì-还是!⇒or_Zhon_sentAsk_háishì_还是,  (2 pointers to or_Zhon_sentAsk_háishì_还是)
+  McshLag000018:16982  <br>* McshEngl.Zhonsent.shì..de-是..的!⇒Zhonsent.shì..de_是..的,  (2 pointers to Zhonsent.shì..de_是..的)
+  McshLag000018:17633  <br>* McshEngl.Chinese-Classics!⇒Chinese_Classics,  (2 pointers to Chinese_Classics)
+  McshLag000018:18745  <br>* McshEngl.Chinese-Text-Project!⇒Chinese_Text_Project,  (2 pointers to Chinese_Text_Project)
+  McshLag000018:21280  <br>* McshEngl.high-level-tone-(first-ā)!⇒high_level_tone_(first_ā),  (7 pointers to high_level_tone_(first_ā))
+  McshLag000018:21316  <br>* McshEngl.rising-tone-(second-á)!⇒rising_tone_(second_á),  (7 pointers to rising_tone_(second_á))
+  McshLag000018:21339  <br>* McshEngl.low/dipping-tone-(third-ǎ)!⇒low/dipping_tone_(third_ǎ),  (7 pointers to low/dipping_tone_(third_ǎ))
+  McshLag000018:21362  <br>* McshEngl.falling-tone-(forth-à)!⇒falling_tone_(forth_à),  (7 pointers to falling_tone_(forth_à))
+  McshLag000018:21701  <br>* McshEngl.Small-Seal-Script-of-Zho0Textlago!⇒Small_Seal_Script_of_Zho0Textlago,  (2 pointers to Small_Seal_Script_of_Zho0Textlago)
+  McshLag000020:1021  <br>* McshEngl.Elln_letr./a/-/álfa/-Α!⇒Elln_letr./a/_/álfa/_Α,  (2 pointers to Elln_letr./a/_/álfa/_Α)
+  McshLag000020:1036  <br>* McshEngl.Elln_letr./v/-/víta/-Β!⇒Elln_letr./v/_/víta/_Β,  (2 pointers to Elln_letr./v/_/víta/_Β)
+  McshLag000020:1053  <br>* McshEngl.Elln_letr./y/-/yáma/-Γ!⇒Elln_letr./y/_/yáma/_Γ,  (2 pointers to Elln_letr./y/_/yáma/_Γ)
+  McshLag000020:1068  <br>* McshEngl.Elln_letr./dh/-/dhélta/-Δ!⇒Elln_letr./dh/_/dhélta/_Δ,  (2 pointers to Elln_letr./dh/_/dhélta/_Δ)
+  McshLag000020:1087  <br>* McshEngl.Elln_letr./e/-/épsilon/-Ε!⇒Elln_letr./e/_/épsilon/_Ε,  (2 pointers to Elln_letr./e/_/épsilon/_Ε)
+  McshLag000020:1102  <br>* McshEngl.Elln_letr./z/-/zíta/-Ζ!⇒Elln_letr./z/_/zíta/_Ζ,  (2 pointers to Elln_letr./z/_/zíta/_Ζ)
+  McshLag000020:1118  <br>* McshEngl.Elln_letr./i/-/íta/-Η!⇒Elln_letr./i/_/íta/_Η,  (2 pointers to Elln_letr./i/_/íta/_Η)
+  McshLag000020:1133  <br>* McshEngl.Elln_letr./th/-/thíta/-Θ!⇒Elln_letr./th/_/thíta/_Θ,  (2 pointers to Elln_letr./th/_/thíta/_Θ)
+  McshLag000020:1152  <br>* McshEngl.Elln_letr./i/-/yyóta/-Ι!⇒Elln_letr./i/_/yyóta/_Ι,  (2 pointers to Elln_letr./i/_/yyóta/_Ι)
+  McshLag000020:1168  <br>* McshEngl.Elln_letr./k/-/kápa/-Κ!⇒Elln_letr./k/_/kápa/_Κ,  (2 pointers to Elln_letr./k/_/kápa/_Κ)
+  McshLag000020:1184  <br>* McshEngl.Elln_letr./l/-/lámdha/-Λ!⇒Elln_letr./l/_/lámdha/_Λ,  (2 pointers to Elln_letr./l/_/lámdha/_Λ)
+  McshLag000020:1201  <br>* McshEngl.Elln_letr./m/-/mi/-Μ!⇒Elln_letr./m/_/mi/_Μ,  (2 pointers to Elln_letr./m/_/mi/_Μ)
+  McshLag000020:1218  <br>* McshEngl.Elln_letr./n/-/ni/-Ν!⇒Elln_letr./n/_/ni/_Ν,  (2 pointers to Elln_letr./n/_/ni/_Ν)
+  McshLag000020:1233  <br>* McshEngl.Elln_letr./ks/-/ksi/-Ξ!⇒Elln_letr./ks/_/ksi/_Ξ,  (2 pointers to Elln_letr./ks/_/ksi/_Ξ)
+  McshLag000020:1250  <br>* McshEngl.Elln_letr./o/-/ómikron/-Ο!⇒Elln_letr./o/_/ómikron/_Ο,  (2 pointers to Elln_letr./o/_/ómikron/_Ο)
+  McshLag000020:1265  <br>* McshEngl.Elln_letr./p/-/pi/-Π!⇒Elln_letr./p/_/pi/_Π,  (2 pointers to Elln_letr./p/_/pi/_Π)
+  McshLag000020:1280  <br>* McshEngl.Elln_letr./r/-/ro/-Ρ!⇒Elln_letr./r/_/ro/_Ρ,  (2 pointers to Elln_letr./r/_/ro/_Ρ)
+  McshLag000020:1296  <br>* McshEngl.Elln_letr./s/-/síyma/-Σ!⇒Elln_letr./s/_/síyma/_Σ,  (2 pointers to Elln_letr./s/_/síyma/_Σ)
+  McshLag000020:1311  <br>* McshEngl.Elln_letr./t/-/taf/-Τ!⇒Elln_letr./t/_/taf/_Τ,  (2 pointers to Elln_letr./t/_/taf/_Τ)
+  McshLag000020:1332  <br>* McshEngl.Elln_letr./i/-/ípsilon/-Υ!⇒Elln_letr./i/_/ípsilon/_Υ,  (2 pointers to Elln_letr./i/_/ípsilon/_Υ)
+  McshLag000020:1347  <br>* McshEngl.Elln_letr./f/-/fi/-Φ!⇒Elln_letr./f/_/fi/_Φ,  (2 pointers to Elln_letr./f/_/fi/_Φ)
+  McshLag000020:1362  <br>* McshEngl.Elln_letr./h/-/hi/-Χ!⇒Elln_letr./h/_/hi/_Χ,  (2 pointers to Elln_letr./h/_/hi/_Χ)
+  McshLag000020:1377  <br>* McshEngl.Elln_letr./ps/-/psi/-Ψ!⇒Elln_letr./ps/_/psi/_Ψ,  (2 pointers to Elln_letr./ps/_/psi/_Ψ)
+  McshLag000020:1393  <br>* McshEngl.Elln_letr./o/-/oméya/-Ω!⇒Elln_letr./o/_/oméya/_Ω,  (2 pointers to Elln_letr./o/_/oméya/_Ω)
+  McshLag000020:10310  <br>* McshEngl.Ellnconj.001-αλλά!⇒Ellnconj.001_αλλά,  (2 pointers to Ellnconj.001_αλλά)
+  McshLag000020:10328  <br>* McshEngl.Ellnconj.002-αλλά_και!⇒Ellnconj.002_αλλά_και,  (2 pointers to Ellnconj.002_αλλά_και)
+  McshLag000020:10345  <br>* McshEngl.Ellnconj.003-άμα!⇒Ellnconj.003_άμα,  (2 pointers to Ellnconj.003_άμα)
+  McshLag000020:10362  <br>* McshEngl.Ellnconj.004-αν!⇒Ellnconj.004_αν,  (2 pointers to Ellnconj.004_αν)
+  McshLag000020:10379  <br>* McshEngl.Ellnconj.005-αν-και!⇒Ellnconj.005_αν_και,  (2 pointers to Ellnconj.005_αν_και)
+  McshLag000020:10396  <br>* McshEngl.Ellnconj.006-ανάλογα-με!⇒Ellnconj.006_ανάλογα_με,  (2 pointers to Ellnconj.006_ανάλογα_με)
+  McshLag000020:10429  <br>* McshEngl.Ellnconj.008-αντί-για!⇒Ellnconj.008_αντί_για,  (2 pointers to Ellnconj.008_αντί_για)
+  McshLag000020:10462  <br>* McshEngl.Ellnconj.010-από..ίσαμε!⇒Ellnconj.010_από..ίσαμε,  (2 pointers to Ellnconj.010_από..ίσαμε)
+  McshLag000020:10479  <br>* McshEngl.Ellnconj.011-από..μέχρι!⇒Ellnconj.011_από..μέχρι,  (2 pointers to Ellnconj.011_από..μέχρι)
+  McshLag000020:10496  <br>* McshEngl.Ellnconj.012-από..ως!⇒Ellnconj.012_από..ως,  (2 pointers to Ellnconj.012_από..ως)
+  McshLag000020:10513  <br>* McshEngl.Ellnconj.013-άρα!⇒Ellnconj.013_άρα,  (2 pointers to Ellnconj.013_άρα)
+  McshLag000020:10530  <br>* McshEngl.Ellnconj.014-αφού!⇒Ellnconj.014_αφού,  (2 pointers to Ellnconj.014_αφού)
+  McshLag000020:10547  <br>* McshEngl.Ellnconj.015-αφού-πρώτα!⇒Ellnconj.015_αφού_πρώτα,  (2 pointers to Ellnconj.015_αφού_πρώτα)
+  McshLag000020:10564  <br>* McshEngl.Ellnconj.016-αφότου!⇒Ellnconj.016_αφότου,  (2 pointers to Ellnconj.016_αφότου)
+  McshLag000020:10598  <br>* McshEngl.Ellnconj.018-γι-αυτό!⇒Ellnconj.018_γι_αυτό,  (2 pointers to Ellnconj.018_γι_αυτό)
+  McshLag000020:10615  <br>* McshEngl.Ellnconj.019-για-να!⇒Ellnconj.019_για_να,  (2 pointers to Ellnconj.019_για_να)
+  McshLag000020:10632  <br>* McshEngl.Ellnconj.020-γιατί!⇒Ellnconj.020_γιατί,  (2 pointers to Ellnconj.020_γιατί)
+  McshLag000020:10649  <br>* McshEngl.Ellnconj.021-δηλαδή!⇒Ellnconj.021_δηλαδή,  (2 pointers to Ellnconj.021_δηλαδή)
+  McshLag000020:10666  <br>* McshEngl.Ellnconj.022-δια-(απαρχαιωμένη)!⇒Ellnconj.022_δια_(απαρχαιωμένη),  (2 pointers to Ellnconj.022_δια_(απαρχαιωμένη))
+  McshLag000020:10683  <br>* McshEngl.Ellnconj.023-δια-μέσου!⇒Ellnconj.023_δια_μέσου,  (2 pointers to Ellnconj.023_δια_μέσου)
+  McshLag000020:10700  <br>* McshEngl.Ellnconj.024-δίχως!⇒Ellnconj.024_δίχως,  (2 pointers to Ellnconj.024_δίχως)
+  McshLag000020:10731  <br>* McshEngl.Ellnconj.121-ειδικά!⇒Ellnconj.121_ειδικά,  (2 pointers to Ellnconj.121_ειδικά)
+  McshLag000020:10748  <br>* McshEngl.Ellnconj.025-είτε..είτε!⇒Ellnconj.025_είτε..είτε,  (2 pointers to Ellnconj.025_είτε..είτε)
+  McshLag000020:10765  <br>* McshEngl.Ellnconj.026-εκ-(απαρχαιωμένη)!⇒Ellnconj.026_εκ_(απαρχαιωμένη),  (2 pointers to Ellnconj.026_εκ_(απαρχαιωμένη))
+  McshLag000020:10782  <br>* McshEngl.Ellnconj.027-εν-(απαρχαιωμένη)!⇒Ellnconj.027_εν_(απαρχαιωμένη),  (2 pointers to Ellnconj.027_εν_(απαρχαιωμένη))
+  McshLag000020:10799  <br>* McshEngl.Ellnconj.028-ενάντια!⇒Ellnconj.028_ενάντια,  (2 pointers to Ellnconj.028_ενάντια)
+  McshLag000020:10816  <br>* McshEngl.Ellnconj.029-εναντίον!⇒Ellnconj.029_εναντίον,  (2 pointers to Ellnconj.029_εναντίον)
+  McshLag000020:10833  <br>* McshEngl.Ellnconj.030-ενώ!⇒Ellnconj.030_ενώ,  (2 pointers to Ellnconj.030_ενώ)
+  McshLag000020:10850  <br>* McshEngl.Ellnconj.031-εξ-(απαρχαιωμένη)!⇒Ellnconj.031_εξ_(απαρχαιωμένη),  (2 pointers to Ellnconj.031_εξ_(απαρχαιωμένη))
+  McshLag000020:10867  <br>* McshEngl.Ellnconj.032-εξ-άλλου!⇒Ellnconj.032_εξ_άλλου,  (2 pointers to Ellnconj.032_εξ_άλλου)
+  McshLag000020:10884  <br>* McshEngl.Ellnconj.033-εξαιτίας!⇒Ellnconj.033_εξαιτίας,  (2 pointers to Ellnconj.033_εξαιτίας)
+  McshLag000020:10901  <br>* McshEngl.Ellnconj.034-επειδή!⇒Ellnconj.034_επειδή,  (2 pointers to Ellnconj.034_επειδή)
+  McshLag000020:10918  <br>* McshEngl.Ellnconj.035-έπειτα!⇒Ellnconj.035_έπειτα,  (2 pointers to Ellnconj.035_έπειτα)
+  McshLag000020:10935  <br>* McshEngl.Ellnconj.036-επί-(απαρχαιωμένη)!⇒Ellnconj.036_επί_(απαρχαιωμένη),  (2 pointers to Ellnconj.036_επί_(απαρχαιωμένη))
+  McshLag000020:10952  <br>* McshEngl.Ellnconj.037-επιπλέον!⇒Ellnconj.037_επιπλέον,  (2 pointers to Ellnconj.037_επιπλέον)
+  McshLag000020:10969  <br>* McshEngl.Ellnconj.114-επιπρόσθετα!⇒Ellnconj.114_επιπρόσθετα,  (2 pointers to Ellnconj.114_επιπρόσθετα)
+  McshLag000020:10986  <br>* McshEngl.Ellnconj.115-επιπροσθέτως-(αρχαία)!⇒Ellnconj.115_επιπροσθέτως_(αρχαία),  (2 pointers to Ellnconj.115_επιπροσθέτως_(αρχαία))
+  McshLag000020:11003  <br>* McshEngl.Ellnconj.038-επίσης!⇒Ellnconj.038_επίσης,  (2 pointers to Ellnconj.038_επίσης)
+  McshLag000020:11020  <br>* McshEngl.Ellnconj.119-επομένως!⇒Ellnconj.119_επομένως,  (2 pointers to Ellnconj.119_επομένως)
+  McshLag000020:11037  <br>* McshEngl.Ellnconj.039-έτσι!⇒Ellnconj.039_έτσι,  (2 pointers to Ellnconj.039_έτσι)
+  McshLag000020:11054  <br>* McshEngl.Ellnconj.040-έτσι-και!⇒Ellnconj.040_έτσι_και,  (2 pointers to Ellnconj.040_έτσι_και)
+  McshLag000020:11089  <br>* McshEngl.Ellnconj.042-έως!⇒Ellnconj.042_έως,  (2 pointers to Ellnconj.042_έως)
+  McshLag000020:11106  <br>* McshEngl.Ellnconj.043-ή!⇒Ellnconj.043_ή,  (2 pointers to Ellnconj.043_ή)
+  McshLag000020:11139  <br>* McshEngl.Ellnconj.045-καθόσον!⇒Ellnconj.045_καθόσον,  (2 pointers to Ellnconj.045_καθόσον)
+  McshLag000020:11156  <br>* McshEngl.Ellnconj.046-καθώς!⇒Ellnconj.046_καθώς,  (2 pointers to Ellnconj.046_καθώς)
+  McshLag000020:11173  <br>* McshEngl.Ellnconj.047-καθώς-και!⇒Ellnconj.047_καθώς_και,  (2 pointers to Ellnconj.047_καθώς_και)
+  McshLag000020:11208  <br>* McshEngl.Ellnconj.049-και-επομένως!⇒Ellnconj.049_και_επομένως,  (2 pointers to Ellnconj.049_και_επομένως)
+  McshLag000020:11225  <br>* McshEngl.Ellnconj.117-κάτω-από!⇒Ellnconj.117_κάτω_από,  (2 pointers to Ellnconj.117_κάτω_από)
+  McshLag000020:11242  <br>* McshEngl.Ellnconj.050-κι-όμως!⇒Ellnconj.050_κι_όμως,  (2 pointers to Ellnconj.050_κι_όμως)
+  McshLag000020:11275  <br>* McshEngl.Ellnconj.052-κατά-μήκος!⇒Ellnconj.052_κατά_μήκος,  (2 pointers to Ellnconj.052_κατά_μήκος)
+  McshLag000020:11292  <br>* McshEngl.Ellnconj.053-κατόπιν!⇒Ellnconj.053_κατόπιν,  (2 pointers to Ellnconj.053_κατόπιν)
+  McshLag000020:11309  <br>* McshEngl.Ellnconj.054-λοιπόν!⇒Ellnconj.054_λοιπόν,  (2 pointers to Ellnconj.054_λοιπόν)
+  McshLag000020:11326  <br>* McshEngl.Ellnconj.055-μα!⇒Ellnconj.055_μα,  (2 pointers to Ellnconj.055_μα)
+  McshLag000020:11343  <br>* McshEngl.Ellnconj.056-μαζί-με!⇒Ellnconj.056_μαζί_με,  (2 pointers to Ellnconj.056_μαζί_με)
+  McshLag000020:11376  <br>* McshEngl.Ellnconj.058-μείον-(αρχαία)!⇒Ellnconj.058_μείον_(αρχαία),  (2 pointers to Ellnconj.058_μείον_(αρχαία))
+  McshLag000020:11393  <br>* McshEngl.Ellnconj.059-μέσα-από!⇒Ellnconj.059_μέσα_από,  (2 pointers to Ellnconj.059_μέσα_από)
+  McshLag000020:11410  <br>* McshEngl.Ellnconj.060-μετά!⇒Ellnconj.060_μετά,  (2 pointers to Ellnconj.060_μετά)
+  McshLag000020:11427  <br>* McshEngl.Ellnconj.061-μέχρι!⇒Ellnconj.061_μέχρι,  (2 pointers to Ellnconj.061_μέχρι)
+  McshLag000020:11444  <br>* McshEngl.Ellnconj.062-μηδέ!⇒Ellnconj.062_μηδέ,  (2 pointers to Ellnconj.062_μηδέ)
+  McshLag000020:11482  <br>* McshEngl.Ellnconj.064-μήπως!⇒Ellnconj.064_μήπως,  (2 pointers to Ellnconj.064_μήπως)
+  McshLag000020:11499  <br>* McshEngl.Ellnconj.065-μήτε!⇒Ellnconj.065_μήτε,  (2 pointers to Ellnconj.065_μήτε)
+  McshLag000020:11516  <br>* McshEngl.Ellnconj.066-μια-και!⇒Ellnconj.066_μια_και,  (2 pointers to Ellnconj.066_μια_και)
+  McshLag000020:11533  <br>* McshEngl.Ellnconj.067-μόλις!⇒Ellnconj.067_μόλις,  (2 pointers to Ellnconj.067_μόλις)
+  McshLag000020:11550  <br>* McshEngl.Ellnconj.068-μόλο-που!⇒Ellnconj.068_μόλο_που,  (2 pointers to Ellnconj.068_μόλο_που)
+  McshLag000020:11567  <br>* McshEngl.Ellnconj.069-μολονότι!⇒Ellnconj.069_μολονότι,  (2 pointers to Ellnconj.069_μολονότι)
+  McshLag000020:11584  <br>* McshEngl.Ellnconj.070-μόνο!⇒Ellnconj.070_μόνο,  (2 pointers to Ellnconj.070_μόνο)
+  McshLag000020:11601  <br>* McshEngl.Ellnconj.071-μόνο-αλλά!⇒Ellnconj.071_μόνο_αλλά,  (2 pointers to Ellnconj.071_μόνο_αλλά)
+  McshLag000020:11618  <br>* McshEngl.Ellnconj.116-μόνο-που!⇒Ellnconj.116_μόνο_που,  (2 pointers to Ellnconj.116_μόνο_που)
+  McshLag000020:11635  <br>* McshEngl.Ellnconj.072-μπροστά-από!⇒Ellnconj.072_μπροστά_από,  (2 pointers to Ellnconj.072_μπροστά_από)
+  McshLag000020:11652  <br>* McshEngl.Ellnconj.073-να!⇒Ellnconj.073_να,  (2 pointers to Ellnconj.073_να)
+  McshLag000020:11669  <br>* McshEngl.Ellnconj.074-όμως!⇒Ellnconj.074_όμως,  (2 pointers to Ellnconj.074_όμως)
+  McshLag000020:11686  <br>* McshEngl.Ellnconj.075-όσο-που!⇒Ellnconj.075_όσο_που,  (2 pointers to Ellnconj.075_όσο_που)
+  McshLag000020:11703  <br>* McshEngl.Ellnconj.076-όποτε!⇒Ellnconj.076_όποτε,  (2 pointers to Ellnconj.076_όποτε)
+  McshLag000020:11720  <br>* McshEngl.Ellnconj.077-οπότε!⇒Ellnconj.077_οπότε,  (2 pointers to Ellnconj.077_οπότε)
+  McshLag000020:11737  <br>* McshEngl.Ellnconj.078-όπως-επίσης!⇒Ellnconj.078_όπως_επίσης,  (2 pointers to Ellnconj.078_όπως_επίσης)
+  McshLag000020:11754  <br>* McshEngl.Ellnconj.079-ότι!⇒Ellnconj.079_ότι,  (2 pointers to Ellnconj.079_ότι)
+  McshLag000020:11771  <br>* McshEngl.Ellnconj.080-όταν!⇒Ellnconj.080_όταν,  (2 pointers to Ellnconj.080_όταν)
+  McshLag000020:11788  <br>* McshEngl.Ellnconj.081-ουδέ!⇒Ellnconj.081_ουδέ,  (2 pointers to Ellnconj.081_ουδέ)
+  McshLag000020:11805  <br>* McshEngl.Ellnconj.082-ούτε!⇒Ellnconj.082_ούτε,  (2 pointers to Ellnconj.082_ούτε)
+  McshLag000020:11823  <br>* McshEngl.Ellnconj.120-όχι_μόνο..αλλά!⇒Ellnconj.120_όχι_μόνο..αλλά,  (2 pointers to Ellnconj.120_όχι_μόνο..αλλά)
+  McshLag000020:11842  <br>* McshEngl.Ellnconj.083-όχι_μόνο..αλλά_και!⇒Ellnconj.083_όχι_μόνο..αλλά_και,  (2 pointers to Ellnconj.083_όχι_μόνο..αλλά_και)
+  McshLag000020:11859  <br>* McshEngl.Ellnconj.084-παρά!⇒Ellnconj.084_παρά,  (2 pointers to Ellnconj.084_παρά)
+  McshLag000020:11876  <br>* McshEngl.Ellnconj.085-παρά-μόνο!⇒Ellnconj.085_παρά_μόνο,  (2 pointers to Ellnconj.085_παρά_μόνο)
+  McshLag000020:11893  <br>* McshEngl.Ellnconj.086-περί!⇒Ellnconj.086_περί,  (2 pointers to Ellnconj.086_περί)
+  McshLag000020:11910  <br>* McshEngl.Ellnconj.087-περίπου!⇒Ellnconj.087_περίπου,  (2 pointers to Ellnconj.087_περίπου)
+  McshLag000020:11927  <br>* McshEngl.Ellnconj.088-πίσω-από!⇒Ellnconj.088_πίσω_από,  (2 pointers to Ellnconj.088_πίσω_από)
+  McshLag000020:11944  <br>* McshEngl.Ellnconj.089-πλην-(αρχαία)!⇒Ellnconj.089_πλην_(αρχαία),  (2 pointers to Ellnconj.089_πλην_(αρχαία))
+  McshLag000020:11962  <br>* McshEngl.Ellnconj.090-που!⇒Ellnconj.090_που,  (2 pointers to Ellnconj.090_που)
+  McshLag000020:11979  <br>* McshEngl.Ellnconj.091-πριν!⇒Ellnconj.091_πριν,  (2 pointers to Ellnconj.091_πριν)
+  McshLag000020:11996  <br>* McshEngl.Ellnconj.092-πριν-να!⇒Ellnconj.092_πριν_να,  (2 pointers to Ellnconj.092_πριν_να)
+  McshLag000020:12013  <br>* McshEngl.Ellnconj.093-προ-(απαρχαιωμένη)!⇒Ellnconj.093_προ_(απαρχαιωμένη),  (2 pointers to Ellnconj.093_προ_(απαρχαιωμένη))
+  McshLag000020:12030  <br>* McshEngl.Ellnconj.094-προς!⇒Ellnconj.094_προς,  (2 pointers to Ellnconj.094_προς)
+  McshLag000020:12047  <br>* McshEngl.Ellnconj.095-προτού!⇒Ellnconj.095_προτού,  (2 pointers to Ellnconj.095_προτού)
+  McshLag000020:12064  <br>* McshEngl.Ellnconj.096-πως!⇒Ellnconj.096_πως,  (2 pointers to Ellnconj.096_πως)
+  McshLag000020:12081  <br>* McshEngl.Ellnconj.097-σαν!⇒Ellnconj.097_σαν,  (2 pointers to Ellnconj.097_σαν)
+  McshLag000020:12098  <br>* McshEngl.Ellnconj.098-σα!⇒Ellnconj.098_σα,  (2 pointers to Ellnconj.098_σα)
+  McshLag000020:12141  <br>* McshEngl.Ellnconj.100-συν-(αρχαία)!⇒Ellnconj.100_συν_(αρχαία),  (2 pointers to Ellnconj.100_συν_(αρχαία))
+  McshLag000020:12158  <br>* McshEngl.Ellnconj.101-συνεπώς!⇒Ellnconj.101_συνεπώς,  (2 pointers to Ellnconj.101_συνεπώς)
+  McshLag000020:12175  <br>* McshEngl.Ellnconj.102-τι!⇒Ellnconj.102_τι,  (2 pointers to Ellnconj.102_τι)
+  McshLag000020:12192  <br>* McshEngl.Ellnconj.103-τίποτε-άλλο-παρά!⇒Ellnconj.103_τίποτε_άλλο_παρά,  (2 pointers to Ellnconj.103_τίποτε_άλλο_παρά)
+  McshLag000020:12239  <br>* McshEngl.Ellnconj.106-χωρίς!⇒Ellnconj.106_χωρίς,  (2 pointers to Ellnconj.106_χωρίς)
+  McshLag000020:12256  <br>* McshEngl.Ellnconj.107-ωσότου!⇒Ellnconj.107_ωσότου,  (2 pointers to Ellnconj.107_ωσότου)
+  McshLag000020:12273  <br>* McshEngl.Ellnconj.108-ώσπου!⇒Ellnconj.108_ώσπου,  (2 pointers to Ellnconj.108_ώσπου)
+  McshLag000020:12290  <br>* McshEngl.Ellnconj.109-ώστε!⇒Ellnconj.109_ώστε,  (2 pointers to Ellnconj.109_ώστε)
+  McshLag000020:12307  <br>* McshEngl.Ellnconj.110-ώστε-να!⇒Ellnconj.110_ώστε_να,  (2 pointers to Ellnconj.110_ώστε_να)
+  McshLag000020:12324  <br>* McshEngl.Ellnconj.111-ως!⇒Ellnconj.111_ως,  (2 pointers to Ellnconj.111_ως)
+  McshLag000020:12341  <br>* McshEngl.Ellnconj.118-ως-εκ-τούτου!⇒Ellnconj.118_ως_εκ_τούτου,  (2 pointers to Ellnconj.118_ως_εκ_τούτου)
+  McshLag000020:12358  <br>* McshEngl.Ellnconj.112-ως-προς!⇒Ellnconj.112_ως_προς,  (2 pointers to Ellnconj.112_ως_προς)
+  McshLag000020:12375  <br>* McshEngl.Ellnconj.113-ωστόσο!⇒Ellnconj.113_ωστόσο,  (2 pointers to Ellnconj.113_ωστόσο)
+  McshLag000021:36439  <br>* McshEngl.Zhonsylb.187-lü!⇒Zhonsylb.187_lü,  (2 pointers to Zhonsylb.187_lü)
+  McshLag000021:36454  <br>* McshEngl.Zhonsylb.188-lüe!⇒Zhonsylb.188_lüe,  (2 pointers to Zhonsylb.188_lüe)
+  McshLag000021:41354  <br>* McshEngl.Zhonsylb.231-nü!⇒Zhonsylb.231_nü,  (2 pointers to Zhonsylb.231_nü)
+  McshLag000021:41369  <br>* McshEngl.Zhonsylb.232-nüe!⇒Zhonsylb.232_nüe,  (2 pointers to Zhonsylb.232_nüe)
+  McshLag000023:430  <br>* McshEngl.Zhon_particle.了-le!⇒Zhon_particle.了_le,  (2 pointers to Zhon_particle.了_le)
+  McshLag000023:457  <br>* McshEngl.Zhon_particle.吧-bā!⇒Zhon_particle.吧_bā,  (2 pointers to Zhon_particle.吧_bā)
+  McshLag000023:475  <br>* McshEngl.Zhon_particle.呢-ne!⇒Zhon_particle.呢_ne,  (2 pointers to Zhon_particle.呢_ne)
+  McshLag000023:511  <br>* McshEngl.Zhon_particle.在-zài!⇒Zhon_particle.在_zài,  (2 pointers to Zhon_particle.在_zài)
+  McshLag000023:530  <br>* McshEngl.Zhon_particle.地-de!⇒Zhon_particle.地_de,  (2 pointers to Zhon_particle.地_de)
+  McshLag000023:552  <br>* McshEngl.Zhon_particle.得-dé!⇒Zhon_particle.得_dé,  (2 pointers to Zhon_particle.得_dé)
+  McshLag000023:649  <br>* McshEngl.Zhon_particle.著-zhù!⇒Zhon_particle.著_zhù,  (2 pointers to Zhon_particle.著_zhù)
+  McshLag000023:667  <br>* McshEngl.Zhon_particle.過-guò!⇒Zhon_particle.過_guò,  (2 pointers to Zhon_particle.過_guò)
+  McshLag000030:906  <br>* McshEngl.letterTurk.09-ğ-/yumuSak-ge/-soft-g!⇒letterTurk.09_ğ_/yumuSak_ge/_soft_g,  (2 pointers to letterTurk.09_ğ_/yumuSak_ge/_soft_g)
+  McshLag000030:1629  <br>* McshEngl.absolute-case-(bare)!⇒absolute_case_(bare),  (6 pointers to absolute_case_(bare))
+  McshLag000030:1656  <br>* McshEngl.definite-accusative-(clarifying)!⇒definite_accusative_(clarifying),  (5 pointers to definite_accusative_(clarifying))
+  McshLag000030:1701  <br>* McshEngl.dative-case-(facing-towards)!⇒dative_case_(facing_towards),  (4 pointers to dative_case_(facing_towards))
+  McshLag000030:1732  <br>* McshEngl.locative-case-(being-present)!⇒locative_case_(being_present),  (5 pointers to locative_case_(being_present))
+  McshLag000030:1804  <br>* McshEngl.genitive-case-(compounding)!⇒genitive_case_(compounding),  (4 pointers to genitive_case_(compounding))
+  McshLag000030:3616  <br>* McshEngl.definite-past-Turkvm!⇒definite_past_Turkvm,  (2 pointers to definite_past_Turkvm)
+  McshLag000030:3993  <br>* McshEngl.mVTurkPast.miş-past-past!⇒mVTurkPast.miş_past_past,  (2 pointers to mVTurkPast.miş_past_past)
+  McshLag000030:4710  <br>* McshEngl.indicative-moodTurk!⇒indicative_moodTurk,  (2 pointers to indicative_moodTurk)
+  McshLag000030:4878  <br>* McshEngl.volition-present-Turkvm!⇒volition_present_Turkvm,  (2 pointers to volition_present_Turkvm)
+  McshLag000030:5343  <br>* McshEngl.ability-mood-Turkvm!⇒ability_mood_Turkvm,  (2 pointers to ability_mood_Turkvm)
+  McshLag000033:504  <br>* McshEngl.DeutPhnm./a/-/a/ipa!⇒DeutPhnm./a/_/a/ipa,  (2 pointers to DeutPhnm./a/_/a/ipa)
+  McshLag000033:522  <br>* McshEngl.DeutPhnm./e/-/ɛ/ipa!⇒DeutPhnm./e/_/ɛ/ipa,  (2 pointers to DeutPhnm./e/_/ɛ/ipa)
+  McshLag000033:540  <br>* McshEngl.DeutPhnm./e8/-/œ/ipa!⇒DeutPhnm./e8/_/œ/ipa,  (2 pointers to DeutPhnm./e8/_/œ/ipa)
+  McshLag000033:558  <br>* McshEngl.DeutPhnm./i/-/ɪ/ipa!⇒DeutPhnm./i/_/ɪ/ipa,  (2 pointers to DeutPhnm./i/_/ɪ/ipa)
+  McshLag000033:576  <br>* McshEngl.DeutPhnm./i8/-/ʏ/ipa!⇒DeutPhnm./i8/_/ʏ/ipa,  (2 pointers to DeutPhnm./i8/_/ʏ/ipa)
+  McshLag000033:598  <br>* McshEngl.DeutPhnm./o/-/ɔ/ipa!⇒DeutPhnm./o/_/ɔ/ipa,  (2 pointers to DeutPhnm./o/_/ɔ/ipa)
+  McshLag000033:616  <br>* McshEngl.DeutPhnm./u/-/ʊ/ipa!⇒DeutPhnm./u/_/ʊ/ipa,  (2 pointers to DeutPhnm./u/_/ʊ/ipa)
+  McshLag000033:632  <br>* McshEngl.DeutPhnm.ipa/ə/-schwa!⇒DeutPhnm.ipa/ə/_schwa,  (2 pointers to DeutPhnm.ipa/ə/_schwa)
+  McshLag000033:650  <br>* McshEngl.DeutPhnm./aa/-/aː/ipa!⇒DeutPhnm./aa/_/aː/ipa,  (2 pointers to DeutPhnm./aa/_/aː/ipa)
+  McshLag000033:689  <br>* McshEngl.DeutPhnm./e8e8/-/øː/ipa!⇒DeutPhnm./e8e8/_/øː/ipa,  (2 pointers to DeutPhnm./e8e8/_/øː/ipa)
+  McshLag000033:707  <br>* McshEngl.DeutPhnm./ii/-/iː/ipa!⇒DeutPhnm./ii/_/iː/ipa,  (2 pointers to DeutPhnm./ii/_/iː/ipa)
+  McshLag000033:725  <br>* McshEngl.DeutPhnm./i8i8/-/yː/ipa!⇒DeutPhnm./i8i8/_/yː/ipa,  (2 pointers to DeutPhnm./i8i8/_/yː/ipa)
+  McshLag000033:743  <br>* McshEngl.DeutPhnm./oo/-/oː/ipa!⇒DeutPhnm./oo/_/oː/ipa,  (2 pointers to DeutPhnm./oo/_/oː/ipa)
+  McshLag000033:761  <br>* McshEngl.DeutPhnm./uu/-/uː/ipa!⇒DeutPhnm./uu/_/uː/ipa,  (2 pointers to DeutPhnm./uu/_/uː/ipa)
+  McshLag000034:412  <br>* McshEngl.BcmsLetrC.А-⟨A⟩!⇒BcmsLetrC.А_⟨A⟩,  (2 pointers to BcmsLetrC.А_⟨A⟩)
+  McshLag000034:426  <br>* McshEngl.BcmsLetrC.Б-⟨B⟩!⇒BcmsLetrC.Б_⟨B⟩,  (2 pointers to BcmsLetrC.Б_⟨B⟩)
+  McshLag000034:440  <br>* McshEngl.BcmsLetrC.В-⟨V⟩!⇒BcmsLetrC.В_⟨V⟩,  (2 pointers to BcmsLetrC.В_⟨V⟩)
+  McshLag000034:454  <br>* McshEngl.BcmsLetrC.Г-⟨G⟩!⇒BcmsLetrC.Г_⟨G⟩,  (2 pointers to BcmsLetrC.Г_⟨G⟩)
+  McshLag000034:468  <br>* McshEngl.BcmsLetrC.Д-⟨D⟩!⇒BcmsLetrC.Д_⟨D⟩,  (2 pointers to BcmsLetrC.Д_⟨D⟩)
+  McshLag000034:482  <br>* McshEngl.BcmsLetrC.Ђ-⟨Đ⟩-/ji/!⇒BcmsLetrC.Ђ_⟨Đ⟩_/ji/,  (2 pointers to BcmsLetrC.Ђ_⟨Đ⟩_/ji/)
+  McshLag000034:496  <br>* McshEngl.BcmsLetrC.Е-⟨E⟩!⇒BcmsLetrC.Е_⟨E⟩,  (2 pointers to BcmsLetrC.Е_⟨E⟩)
+  McshLag000034:510  <br>* McshEngl.BcmsLetrC.Ж-⟨Ž⟩-/Z/!⇒BcmsLetrC.Ж_⟨Ž⟩_/Z/,  (2 pointers to BcmsLetrC.Ж_⟨Ž⟩_/Z/)
+  McshLag000034:524  <br>* McshEngl.BcmsLetrC.З-⟨Z⟩!⇒BcmsLetrC.З_⟨Z⟩,  (2 pointers to BcmsLetrC.З_⟨Z⟩)
+  McshLag000034:538  <br>* McshEngl.BcmsLetrC.И-⟨I⟩!⇒BcmsLetrC.И_⟨I⟩,  (2 pointers to BcmsLetrC.И_⟨I⟩)
+  McshLag000034:552  <br>* McshEngl.BcmsLetrC.Ј-⟨J⟩-/y/!⇒BcmsLetrC.Ј_⟨J⟩_/y/,  (2 pointers to BcmsLetrC.Ј_⟨J⟩_/y/)
+  McshLag000034:566  <br>* McshEngl.BcmsLetrC.К-⟨K⟩!⇒BcmsLetrC.К_⟨K⟩,  (2 pointers to BcmsLetrC.К_⟨K⟩)
+  McshLag000034:580  <br>* McshEngl.BcmsLetrC.Л-⟨L⟩!⇒BcmsLetrC.Л_⟨L⟩,  (2 pointers to BcmsLetrC.Л_⟨L⟩)
+  McshLag000034:594  <br>* McshEngl.BcmsLetrC.Љ-⟨Lj⟩!⇒BcmsLetrC.Љ_⟨Lj⟩,  (2 pointers to BcmsLetrC.Љ_⟨Lj⟩)
+  McshLag000034:608  <br>* McshEngl.BcmsLetrC.М-⟨M⟩!⇒BcmsLetrC.М_⟨M⟩,  (2 pointers to BcmsLetrC.М_⟨M⟩)
+  McshLag000034:622  <br>* McshEngl.BcmsLetrC.Н-⟨N⟩!⇒BcmsLetrC.Н_⟨N⟩,  (2 pointers to BcmsLetrC.Н_⟨N⟩)
+  McshLag000034:636  <br>* McshEngl.BcmsLetrC.Њ-⟨Nj⟩!⇒BcmsLetrC.Њ_⟨Nj⟩,  (2 pointers to BcmsLetrC.Њ_⟨Nj⟩)
+  McshLag000034:650  <br>* McshEngl.BcmsLetrC.О-⟨O⟩!⇒BcmsLetrC.О_⟨O⟩,  (2 pointers to BcmsLetrC.О_⟨O⟩)
+  McshLag000034:664  <br>* McshEngl.BcmsLetrC.П-⟨P⟩!⇒BcmsLetrC.П_⟨P⟩,  (2 pointers to BcmsLetrC.П_⟨P⟩)
+  McshLag000034:678  <br>* McshEngl.BcmsLetrC.Р-⟨R⟩!⇒BcmsLetrC.Р_⟨R⟩,  (2 pointers to BcmsLetrC.Р_⟨R⟩)
+  McshLag000034:692  <br>* McshEngl.BcmsLetrC.С-⟨S⟩!⇒BcmsLetrC.С_⟨S⟩,  (2 pointers to BcmsLetrC.С_⟨S⟩)
+  McshLag000034:706  <br>* McshEngl.BcmsLetrC.Т-⟨T⟩!⇒BcmsLetrC.Т_⟨T⟩,  (2 pointers to BcmsLetrC.Т_⟨T⟩)
+  McshLag000034:720  <br>* McshEngl.BcmsLetrC.Ћ-⟨Ć⟩-/cj/!⇒BcmsLetrC.Ћ_⟨Ć⟩_/cj/,  (2 pointers to BcmsLetrC.Ћ_⟨Ć⟩_/cj/)
+  McshLag000034:734  <br>* McshEngl.BcmsLetrC.У-⟨U⟩!⇒BcmsLetrC.У_⟨U⟩,  (2 pointers to BcmsLetrC.У_⟨U⟩)
+  McshLag000034:748  <br>* McshEngl.BcmsLetrC.Ф-⟨F⟩!⇒BcmsLetrC.Ф_⟨F⟩,  (2 pointers to BcmsLetrC.Ф_⟨F⟩)
+  McshLag000034:762  <br>* McshEngl.BcmsLetrC.Х-⟨H⟩-/H/!⇒BcmsLetrC.Х_⟨H⟩_/H/,  (2 pointers to BcmsLetrC.Х_⟨H⟩_/H/)
+  McshLag000034:776  <br>* McshEngl.BcmsLetrC.Ц-⟨C⟩-/c/!⇒BcmsLetrC.Ц_⟨C⟩_/c/,  (2 pointers to BcmsLetrC.Ц_⟨C⟩_/c/)
+  McshLag000034:790  <br>* McshEngl.BcmsLetrC.Ч-⟨Č⟩-/C/!⇒BcmsLetrC.Ч_⟨Č⟩_/C/,  (2 pointers to BcmsLetrC.Ч_⟨Č⟩_/C/)
+  McshLag000034:804  <br>* McshEngl.BcmsLetrC.Џ-⟨Dž⟩-/J/!⇒BcmsLetrC.Џ_⟨Dž⟩_/J/,  (2 pointers to BcmsLetrC.Џ_⟨Dž⟩_/J/)
+  McshLag000034:818  <br>* McshEngl.BcmsLetrC.Ш-⟨Š⟩-/S/!⇒BcmsLetrC.Ш_⟨Š⟩_/S/,  (2 pointers to BcmsLetrC.Ш_⟨Š⟩_/S/)
+  McshLag000034:832  <br>* McshEngl.BcmsLetrC.С́-⟨Ś⟩-/si/!⇒BcmsLetrC.С́_⟨Ś⟩_/si/,  (2 pointers to BcmsLetrC.С́_⟨Ś⟩_/si/)
+  McshLag000034:846  <br>* McshEngl.BcmsLetrC.З́-⟨Ź⟩-/zi/!⇒BcmsLetrC.З́_⟨Ź⟩_/zi/,  (2 pointers to BcmsLetrC.З́_⟨Ź⟩_/zi/)
+  McshLag000034:860  <br>* McshEngl.BcmsLetrL.A-⟨А⟩!⇒BcmsLetrL.A_⟨А⟩,  (2 pointers to BcmsLetrL.A_⟨А⟩)
+  McshLag000034:874  <br>* McshEngl.BcmsLetrL.B-⟨Б⟩!⇒BcmsLetrL.B_⟨Б⟩,  (2 pointers to BcmsLetrL.B_⟨Б⟩)
+  McshLag000034:888  <br>* McshEngl.BcmsLetrL.C-⟨Ц⟩-/c/!⇒BcmsLetrL.C_⟨Ц⟩_/c/,  (2 pointers to BcmsLetrL.C_⟨Ц⟩_/c/)
+  McshLag000034:902  <br>* McshEngl.BcmsLetrL.Č-⟨Ч⟩-/C/!⇒BcmsLetrL.Č_⟨Ч⟩_/C/,  (2 pointers to BcmsLetrL.Č_⟨Ч⟩_/C/)
+  McshLag000034:916  <br>* McshEngl.BcmsLetrL.Ć-⟨Ћ⟩-/cj/!⇒BcmsLetrL.Ć_⟨Ћ⟩_/cj/,  (2 pointers to BcmsLetrL.Ć_⟨Ћ⟩_/cj/)
+  McshLag000034:930  <br>* McshEngl.BcmsLetrL.D-⟨Д⟩!⇒BcmsLetrL.D_⟨Д⟩,  (2 pointers to BcmsLetrL.D_⟨Д⟩)
+  McshLag000034:944  <br>* McshEngl.BcmsLetrL.Dž-⟨Џ⟩-/J/!⇒BcmsLetrL.Dž_⟨Џ⟩_/J/,  (2 pointers to BcmsLetrL.Dž_⟨Џ⟩_/J/)
+  McshLag000034:958  <br>* McshEngl.BcmsLetrL.Đ-⟨Џ⟩-/ji/!⇒BcmsLetrL.Đ_⟨Џ⟩_/ji/,  (2 pointers to BcmsLetrL.Đ_⟨Џ⟩_/ji/)
+  McshLag000034:972  <br>* McshEngl.BcmsLetrL.E-⟨Е⟩!⇒BcmsLetrL.E_⟨Е⟩,  (2 pointers to BcmsLetrL.E_⟨Е⟩)
+  McshLag000034:986  <br>* McshEngl.BcmsLetrL.F-⟨Ф⟩!⇒BcmsLetrL.F_⟨Ф⟩,  (2 pointers to BcmsLetrL.F_⟨Ф⟩)
+  McshLag000034:1000  <br>* McshEngl.BcmsLetrL.G-⟨Г⟩!⇒BcmsLetrL.G_⟨Г⟩,  (2 pointers to BcmsLetrL.G_⟨Г⟩)
+  McshLag000034:1014  <br>* McshEngl.BcmsLetrL.H-/h/!⇒BcmsLetrL.H_/h/,  (2 pointers to BcmsLetrL.H_/h/)
+  McshLag000034:1028  <br>* McshEngl.BcmsLetrL.I-⟨И⟩!⇒BcmsLetrL.I_⟨И⟩,  (2 pointers to BcmsLetrL.I_⟨И⟩)
+  McshLag000034:1042  <br>* McshEngl.BcmsLetrL.J-⟨Ј⟩-/y/!⇒BcmsLetrL.J_⟨Ј⟩_/y/,  (2 pointers to BcmsLetrL.J_⟨Ј⟩_/y/)
+  McshLag000034:1056  <br>* McshEngl.BcmsLetrL.K-⟨К⟩!⇒BcmsLetrL.K_⟨К⟩,  (2 pointers to BcmsLetrL.K_⟨К⟩)
+  McshLag000034:1070  <br>* McshEngl.BcmsLetrL.L-⟨Л⟩!⇒BcmsLetrL.L_⟨Л⟩,  (2 pointers to BcmsLetrL.L_⟨Л⟩)
+  McshLag000034:1084  <br>* McshEngl.BcmsLetrL.Lj-⟨Љ⟩!⇒BcmsLetrL.Lj_⟨Љ⟩,  (2 pointers to BcmsLetrL.Lj_⟨Љ⟩)
+  McshLag000034:1098  <br>* McshEngl.BcmsLetrL.M-⟨М⟩!⇒BcmsLetrL.M_⟨М⟩,  (2 pointers to BcmsLetrL.M_⟨М⟩)
+  McshLag000034:1112  <br>* McshEngl.BcmsLetrL.N-⟨Н⟩!⇒BcmsLetrL.N_⟨Н⟩,  (2 pointers to BcmsLetrL.N_⟨Н⟩)
+  McshLag000034:1126  <br>* McshEngl.BcmsLetrL.Nj-⟨Њ⟩!⇒BcmsLetrL.Nj_⟨Њ⟩,  (2 pointers to BcmsLetrL.Nj_⟨Њ⟩)
+  McshLag000034:1140  <br>* McshEngl.BcmsLetrL.O-⟨О⟩!⇒BcmsLetrL.O_⟨О⟩,  (2 pointers to BcmsLetrL.O_⟨О⟩)
+  McshLag000034:1154  <br>* McshEngl.BcmsLetrL.P-⟨П⟩!⇒BcmsLetrL.P_⟨П⟩,  (2 pointers to BcmsLetrL.P_⟨П⟩)
+  McshLag000034:1168  <br>* McshEngl.BcmsLetrL.R-⟨Р⟩!⇒BcmsLetrL.R_⟨Р⟩,  (2 pointers to BcmsLetrL.R_⟨Р⟩)
+  McshLag000034:1182  <br>* McshEngl.BcmsLetrL.S-⟨С⟩!⇒BcmsLetrL.S_⟨С⟩,  (2 pointers to BcmsLetrL.S_⟨С⟩)
+  McshLag000034:1196  <br>* McshEngl.BcmsLetrL.Š-⟨Ш⟩-/S/!⇒BcmsLetrL.Š_⟨Ш⟩_/S/,  (2 pointers to BcmsLetrL.Š_⟨Ш⟩_/S/)
+  McshLag000034:1210  <br>* McshEngl.BcmsLetrL.Ś-⟨С́⟩-/si/!⇒BcmsLetrL.Ś_⟨С́⟩_/si/,  (2 pointers to BcmsLetrL.Ś_⟨С́⟩_/si/)
+  McshLag000034:1224  <br>* McshEngl.BcmsLetrL.T-⟨Т⟩!⇒BcmsLetrL.T_⟨Т⟩,  (2 pointers to BcmsLetrL.T_⟨Т⟩)
+  McshLag000034:1238  <br>* McshEngl.BcmsLetrL.U-⟨У⟩!⇒BcmsLetrL.U_⟨У⟩,  (2 pointers to BcmsLetrL.U_⟨У⟩)
+  McshLag000034:1252  <br>* McshEngl.BcmsLetrL.V-⟨В⟩!⇒BcmsLetrL.V_⟨В⟩,  (2 pointers to BcmsLetrL.V_⟨В⟩)
+  McshLag000034:1266  <br>* McshEngl.BcmsLetrL.Z-⟨З⟩!⇒BcmsLetrL.Z_⟨З⟩,  (2 pointers to BcmsLetrL.Z_⟨З⟩)
+  McshLag000034:1280  <br>* McshEngl.BcmsLetrL.Ž-⟨Ж⟩-/Z/!⇒BcmsLetrL.Ž_⟨Ж⟩_/Z/,  (2 pointers to BcmsLetrL.Ž_⟨Ж⟩_/Z/)
+  McshLag000034:1294  <br>* McshEngl.BcmsLetrL.Ź-⟨З́⟩-/zi/!⇒BcmsLetrL.Ź_⟨З́⟩_/zi/,  (2 pointers to BcmsLetrL.Ź_⟨З́⟩_/zi/)
+  McshLag000036:1315  <br>* McshEngl.ArabLetr.ARABIC-LIGATURE-LAM-WITH-ALEF-ISOLATED-FORM-ﻻ-65275!⇒ArabLetr.ARABIC_LIGATURE_LAM_WITH_ALEF_ISOLATED_FORM_ﻻ_65275,  (2 pointers to ArabLetr.ARABIC_LIGATURE_LAM_WITH_ALEF_ISOLATED_FORM_ﻻ_65275)
+  McshLag000036:1331  <br>* McshEngl.ArabLetr.1577-ة-TEH-MARBUTA!⇒ArabLetr.1577_ة_TEH_MARBUTA,  (2 pointers to ArabLetr.1577_ة_TEH_MARBUTA)
+  McshLag000037:433  <br>* McshEngl.HiurPhnm./a/-[ə]!⇒HiurPhnm./a/_[ə],  (2 pointers to HiurPhnm./a/_[ə])
+  McshLag000037:450  <br>* McshEngl.HiurPhnm./aa/-[aː]!⇒HiurPhnm./aa/_[aː],  (2 pointers to HiurPhnm./aa/_[aː])
+  McshLag000037:466  <br>* McshEngl.HiurPhnm./i/-[ɪ]!⇒HiurPhnm./i/_[ɪ],  (2 pointers to HiurPhnm./i/_[ɪ])
+  McshLag000037:482  <br>* McshEngl.HiurPhnm./ii/-[iː]!⇒HiurPhnm./ii/_[iː],  (2 pointers to HiurPhnm./ii/_[iː])
+  McshLag000037:498  <br>* McshEngl.HiurPhnm./u/-[ʊ]!⇒HiurPhnm./u/_[ʊ],  (2 pointers to HiurPhnm./u/_[ʊ])
+  McshLag000037:514  <br>* McshEngl.HiurPhnm./uu/-[uː]!⇒HiurPhnm./uu/_[uː],  (2 pointers to HiurPhnm./uu/_[uː])
+  McshLag000037:530  <br>* McshEngl.HiurPhnm./e/-[eː]!⇒HiurPhnm./e/_[eː],  (2 pointers to HiurPhnm./e/_[eː])
+  McshLag000037:546  <br>* McshEngl.HiurPhnm./ee/-[ɛː]!⇒HiurPhnm./ee/_[ɛː],  (2 pointers to HiurPhnm./ee/_[ɛː])
+  McshLag000037:562  <br>* McshEngl.HiurPhnm./o/-[oː]!⇒HiurPhnm./o/_[oː],  (2 pointers to HiurPhnm./o/_[oː])
+  McshLag000037:578  <br>* McshEngl.HiurPhnm./oo/-[ɔː]!⇒HiurPhnm./oo/_[ɔː],  (2 pointers to HiurPhnm./oo/_[ɔː])
+  McshLag000037:2934  <br>* McshEngl.halant-2381-⟨्⟩-removes-vowel-diacritic!⇒halant_2381_⟨्⟩_removes_vowel_diacritic,  (4 pointers to halant_2381_⟨्⟩_removes_vowel_diacritic)
+  McshLag000038:592  <br>* McshEngl.Cyrillic-alphabet!⇒Cyrillic_alphabet,  (2 pointers to Cyrillic_alphabet)
+  McshLag000039:1829  <br>* McshEngl.Germanic-languages!⇒Germanic_languages,  (2 pointers to Germanic_languages)
+  McshLag000043:1337  <br>* McshEngl.KoraChar.12593-ㄱ-gk-[k~ɡ]-[k̚]!⇒KoraChar.12593_ㄱ_gk_[k~ɡ]_[k̚],  (2 pointers to KoraChar.12593_ㄱ_gk_[k~ɡ]_[k̚])
+  McshLag000043:1358  <br>* McshEngl.KoraChar.12594-ㄲ-kk-[k͈]-[k̚]!⇒KoraChar.12594_ㄲ_kk_[k͈]_[k̚],  (2 pointers to KoraChar.12594_ㄲ_kk_[k͈]_[k̚])
+  McshLag000043:1378  <br>* McshEngl.KoraChar.12619-ㅋ-k-[kʰ]-[k̚]!⇒KoraChar.12619_ㅋ_k_[kʰ]_[k̚],  (2 pointers to KoraChar.12619_ㅋ_k_[kʰ]_[k̚])
+  McshLag000043:1400  <br>* McshEngl.KoraChar.12599-ㄷ-dt-[t~d]-[t̚]!⇒KoraChar.12599_ㄷ_dt_[t~d]_[t̚],  (2 pointers to KoraChar.12599_ㄷ_dt_[t~d]_[t̚])
+  McshLag000043:1421  <br>* McshEngl.KoraChar.12600-ㄸ-tt-[t͈]-[t̚]!⇒KoraChar.12600_ㄸ_tt_[t͈]_[t̚],  (2 pointers to KoraChar.12600_ㄸ_tt_[t͈]_[t̚])
+  McshLag000043:1441  <br>* McshEngl.KoraChar.12620-ㅌ-t-[tʰ]-[t̚]!⇒KoraChar.12620_ㅌ_t_[tʰ]_[t̚],  (2 pointers to KoraChar.12620_ㅌ_t_[tʰ]_[t̚])
+  McshLag000043:1462  <br>* McshEngl.KoraChar.12610-ㅂ-bp-[p~b]-[p̚]!⇒KoraChar.12610_ㅂ_bp_[p~b]_[p̚],  (2 pointers to KoraChar.12610_ㅂ_bp_[p~b]_[p̚])
+  McshLag000043:1484  <br>* McshEngl.KoraChar.12611-ㅃ-pp-[p͈]-[p̚]!⇒KoraChar.12611_ㅃ_pp_[p͈]_[p̚],  (2 pointers to KoraChar.12611_ㅃ_pp_[p͈]_[p̚])
+  McshLag000043:1504  <br>* McshEngl.KoraChar.12621-ㅍ-p-[pʰ]-[p̚]!⇒KoraChar.12621_ㅍ_p_[pʰ]_[p̚],  (2 pointers to KoraChar.12621_ㅍ_p_[pʰ]_[p̚])
+  McshLag000043:1526  <br>* McshEngl.KoraChar.12616-ㅈ-j-[tɕ~dʑ]-[t̚]!⇒KoraChar.12616_ㅈ_j_[tɕ~dʑ]_[t̚],  (2 pointers to KoraChar.12616_ㅈ_j_[tɕ~dʑ]_[t̚])
+  McshLag000043:1546  <br>* McshEngl.KoraChar.12617-ㅉ-jj-[tɕ͈]-[t̚]!⇒KoraChar.12617_ㅉ_jj_[tɕ͈]_[t̚],  (2 pointers to KoraChar.12617_ㅉ_jj_[tɕ͈]_[t̚])
+  McshLag000043:1566  <br>* McshEngl.KoraChar.12618-ㅊ-ch-[tɕʰ]-[t̚]!⇒KoraChar.12618_ㅊ_ch_[tɕʰ]_[t̚],  (2 pointers to KoraChar.12618_ㅊ_ch_[tɕʰ]_[t̚])
+  McshLag000043:1641  <br>* McshEngl.KoraChar.12596-ㄴ-n-[n]-[n]!⇒KoraChar.12596_ㄴ_n_[n]_[n],  (2 pointers to KoraChar.12596_ㄴ_n_[n]_[n])
+  McshLag000043:1661  <br>* McshEngl.KoraChar.12609-ㅁ-m-[m]-[m]!⇒KoraChar.12609_ㅁ_m_[m]_[m],  (2 pointers to KoraChar.12609_ㅁ_m_[m]_[m])
+  McshNtr000006:788  <br>* McshEngl.saltSodium-bicarbonate!⇒saltSodium_bicarbonate,  (11 pointers to saltSodium_bicarbonate)
+  McshNtr000007:453  <br>* McshEngl.periodic-table!⇒periodic_table,  (2 pointers to periodic_table)
+  McshNtr000017:137  <br>* McshEngl.outer-space!⇒outer_space,  (2 pointers to outer_space)
+  McshOgm000004:1236  <br>* McshEngl.atherogenic-index-of-plasma!⇒atherogenic_index_of_plasma,  (2 pointers to atherogenic_index_of_plasma)
+  McshOgm000006:350  <br>* McshEngl.BDNF-brain-derived-neurotrophic-factor-proteinHumn!⇒BDNF_brain_derived_neurotrophic_factor_proteinHumn,  (2 pointers to BDNF_brain_derived_neurotrophic_factor_proteinHumn)
+  McshOgm000007:810  <br>* McshEngl.extracellular-signalOgsm!⇒extracellular_signalOgsm,  (2 pointers to extracellular_signalOgsm)
+  McshOgm000007:825  <br>* McshEngl.intracellular-signalOgsm!⇒intracellular_signalOgsm,  (2 pointers to intracellular_signalOgsm)
+  McshOgm000007:842  <br>* McshEngl.chemical-signalOgsm!⇒chemical_signalOgsm,  (2 pointers to chemical_signalOgsm)
+  McshOgm000010:1780  <br>* McshEngl.plantHypericum-perforatum!⇒plantHypericum_perforatum,  (6 pointers to plantHypericum_perforatum)
+  McshStn000002:223  <br>* McshEngl.parasocial-relation!⇒parasocial_relation,  (2 pointers to parasocial_relation)
+  McshStn000008:412  <br>* McshEngl.financial-node--of-Ogzn!⇒financial_node__of_Ogzn,  (2 pointers to financial_node__of_Ogzn)
+  McshStn000008:430  <br>* McshEngl.accounting-vs-financing-of-Ogzn!⇒accounting_vs_financing_of_Ogzn,  (2 pointers to accounting_vs_financing_of_Ogzn)
+  McshStn000008:447  <br>* McshEngl.accounting-node--of-Ogzn!⇒accounting_node__of_Ogzn,  (2 pointers to accounting_node__of_Ogzn)
+  McshStn000008:739  <br>* McshEngl.financial-statement--of-Ogzn!⇒financial_statement__of_Ogzn,  (2 pointers to financial_statement__of_Ogzn)
+  McshStn000008:769  <br>* McshEngl.balance-sheet--of-Ogzn!⇒balance_sheet__of_Ogzn,  (2 pointers to balance_sheet__of_Ogzn)
+  McshStn000008:785  <br>* McshEngl.accounting-transaction!⇒accounting_transaction,  (2 pointers to accounting_transaction)
+  McshStn000008:800  <br>* McshEngl.accounting-record--of-Ogzn!⇒accounting_record__of_Ogzn,  (2 pointers to accounting_record__of_Ogzn)
+  McshStn000008:882  <br>* McshEngl.accounting-vs-bookkeeping-of-Ogzn!⇒accounting_vs_bookkeeping_of_Ogzn,  (2 pointers to accounting_vs_bookkeeping_of_Ogzn)
+  McshStn000008:955  <br>* McshEngl.info-node-of-Ogzn!⇒info_node_of_Ogzn,  (2 pointers to info_node_of_Ogzn)
+  McshStn000008:1025  <br>* McshEngl.quadratic-voting!⇒quadratic_voting,  (2 pointers to quadratic_voting)
+  McshStn000008:1080  <br>* McshEngl.organizational-theory!⇒organizational_theory,  (2 pointers to organizational_theory)
+  McshStn000008:1102  <br>* McshEngl.management-science!⇒management_science,  (2 pointers to management_science)
+  McshStn000008:1124  <br>* McshEngl.organizational-analysis!⇒organizational_analysis,  (2 pointers to organizational_analysis)
+  McshStn000009:544  <br>* McshEngl.International-inequalities-institute-Lse!⇒International_inequalities_institute_Lse,  (2 pointers to International_inequalities_institute_Lse)
+  McshStn000009:676  <br>* McshEngl.natural-disaster!⇒natural_disaster,  (3 pointers to natural_disaster)
+  McshStn000009:1654  <br>* McshEngl.criminal-justice-system!⇒criminal_justice_system,  (3 pointers to criminal_justice_system)
+  McshStn000009:1827  <br>* McshEngl.judicial-branch!⇒judicial_branch,  (4 pointers to judicial_branch)
+  McshStn000009:2517  <br>* McshEngl.statistics-department-of-Socadmn!⇒statistics_department_of_Socadmn,  (2 pointers to statistics_department_of_Socadmn)
+  McshStn000009:2616  <br>* McshEngl.accountability-of-Socadmn!⇒accountability_of_Socadmn,  (4 pointers to accountability_of_Socadmn)
+  McshStn000009:2635  <br>* McshEngl.interoperability-of-Socadmn!⇒interoperability_of_Socadmn,  (4 pointers to interoperability_of_Socadmn)
+  McshStn000009:3092  <br>* McshEngl.national-security!⇒national_security,  (4 pointers to national_security)
+  McshStn000009:4743  <br>* McshEngl.socialitation-system--of-society!⇒socialitation_system__of_society,  (2 pointers to socialitation_system__of_society)
+  McshStn000009:4948  <br>* McshEngl.phone-calling-of-society!⇒phone_calling_of_society,  (2 pointers to phone_calling_of_society)
+  McshStn000009:4965  <br>* McshEngl.calling-format-of-phone!⇒calling_format_of_phone,  (2 pointers to calling_format_of_phone)
+  McshStn000009:5863  <br>* McshEngl.forest-area--of-society!⇒forest_area__of_society,  (2 pointers to forest_area__of_society)
+  McshStn000009:6397  <br>* McshEngl.conservation-area!⇒conservation_area,  (2 pointers to conservation_area)
+  McshStn000009:6969  <br>* McshEngl.national-anthem!⇒national_anthem,  (4 pointers to national_anthem)
+  McshStn000010:270  <br>* McshEngl.plain-Sfrowner!⇒plain_Sfrowner,  (3 pointers to plain_Sfrowner)
+  McshStn000010:288  <br>* McshEngl.usage-Sfrowner!⇒usage_Sfrowner,  (4 pointers to usage_Sfrowner)
+  McshStn000010:431  <br>* McshEngl.subjective-theory-of-value!⇒subjective_theory_of_value,  (3 pointers to subjective_theory_of_value)
+  McshStn000010:494  <br>* McshEngl.abundance-scarcity--of-satisfier!⇒abundance_scarcity__of_satisfier,  (2 pointers to abundance_scarcity__of_satisfier)
+  McshStn000010:1810  <br>* McshEngl.IEC-CDD!⇒IEC_CDD,  (2 pointers to IEC_CDD)
+  McshStn000011:526  <br>* McshEngl.days-of-work!⇒days_of_work,  (2 pointers to days_of_work)
+  McshStn000011:854  <br>* McshEngl.commute-time--of-job!⇒commute_time__of_job,  (2 pointers to commute_time__of_job)
+  McshStn000012:2449  <br>* McshEngl.economic-complexity-index!⇒economic_complexity_index,  (6 pointers to economic_complexity_index)
+  McshStn000012:2941  <br>* McshEngl.consumer-price-inflation!⇒consumer_price_inflation,  (2 pointers to consumer_price_inflation)
+  McshStn000012:4014  <br>* McshEngl.agent-based-computational-macroeconomic-model!⇒agent_based_computational_macroeconomic_model,  (5 pointers to agent_based_computational_macroeconomic_model)
+  McshStn000012:4338  <br>* McshEngl.global-commons!⇒global_commons,  (2 pointers to global_commons)
+  McshStn000015:1051  <br>* McshEngl.DUNS-number-of-OgznPrdg!⇒DUNS_number_of_OgznPrdg,  (2 pointers to DUNS_number_of_OgznPrdg)
+  McshStn000015:1695  <br>* McshEngl.input-sector-product-of-sector!⇒input_sector_product_of_sector,  (2 pointers to input_sector_product_of_sector)
+  McshStn000015:1711  <br>* McshEngl.input-sector--of-sector!⇒input_sector__of_sector,  (2 pointers to input_sector__of_sector)
+  McshStn000015:1728  <br>* McshEngl.output-product--of-sector!⇒output_product__of_sector,  (2 pointers to output_product__of_sector)
+  McshStn000015:1742  <br>* McshEngl.output-sector-product--of-sector!⇒output_sector_product__of_sector,  (2 pointers to output_sector_product__of_sector)
+  McshStn000015:1757  <br>* McshEngl.output-sector--of-sector!⇒output_sector__of_sector,  (2 pointers to output_sector__of_sector)
+  McshStn000015:4979  <br>* McshEngl.ICA-International-Cooperative-Alliance!⇒ICA_International_Cooperative_Alliance,  (2 pointers to ICA_International_Cooperative_Alliance)
+  McshStn000015:5509  <br>* McshEngl.arms-control!⇒arms_control,  (2 pointers to arms_control)
+  McshStn000016:319  <br>* McshEngl.European-Day-of-Languages!⇒European_Day_of_Languages,  (2 pointers to European_Day_of_Languages)
+  McshStn000016:546  <br>* McshEngl.OgznRed-cross!⇒OgznRed_cross,  (4 pointers to OgznRed_cross)
+  McshStn000016:666  <br>* McshEngl.OgznWorld-bank!⇒OgznWorld_bank,  (4 pointers to OgznWorld_bank)
+  McshStn000020:89  <br>* McshEngl.association-agreement-of-Eu!⇒association_agreement_of_Eu,  (2 pointers to association_agreement_of_Eu)
+  McshStn000020:2351  <br>* McshEngl.European-Union-Civil-Service-Tribunal!⇒European_Union_Civil_Service_Tribunal,  (2 pointers to European_Union_Civil_Service_Tribunal)
+  McshStn000020:5734  <br>* McshEngl.DGINS-conference!⇒DGINS_conference,  (2 pointers to DGINS_conference)
+  McshStn000020:5926  <br>* McshEngl.CoP-of-European-statistical-system!⇒CoP_of_European_statistical_system,  (2 pointers to CoP_of_European_statistical_system)
+  McshStn000020:17853  <br>* McshEngl.geographical-info-of-Euzzinfsys!⇒geographical_info_of_Euzzinfsys,  (3 pointers to geographical_info_of_Euzzinfsys)
+  McshStn000020:17923  <br>* McshEngl.conference-of-European-statistics-stakeholders!⇒conference_of_European_statistics_stakeholders,  (2 pointers to conference_of_European_statistics_stakeholders)
+  McshStn000020:19343  <br>* McshEngl.Berlin-Declaration-of-Euzzesoc!⇒Berlin_Declaration_of_Euzzesoc,  (2 pointers to Berlin_Declaration_of_Euzzesoc)
+  McshStn000021:378  <br>* McshEngl.global-security-initiative!⇒global_security_initiative,  (4 pointers to global_security_initiative)
+  McshStn000022:335  <br>* McshEngl.toilet-paper!⇒toilet_paper,  (3 pointers to toilet_paper)
+  McshStn000026:523  <br>* McshEngl.travel-visa!⇒travel_visa,  (3 pointers to travel_visa)
+  McshStn000029:444  <br>* McshEngl.finStructured-note!⇒finStructured_note,  (5 pointers to finStructured_note)
+  McshStn000029:503  <br>* McshEngl.debt-based-derivativeNo!⇒debt_based_derivativeNo,  (2 pointers to debt_based_derivativeNo)
+  McshStn000029:521  <br>* McshEngl.equity-based-derivativeNo!⇒equity_based_derivativeNo,  (2 pointers to equity_based_derivativeNo)
+  McshStn000029:682  <br>* McshEngl.credit-card!⇒credit_card,  (3 pointers to credit_card)
+  McshStn000029:1720  <br>* McshEngl.fiat-maney!⇒fiat_maney,  (6 pointers to fiat_maney)
+  McshStn000029:2047  <br>* McshEngl.finInvestment-fund!⇒finInvestment_fund,  (4 pointers to finInvestment_fund)
+  McshStn000029:2067  <br>* McshEngl.finMutual-fund!⇒finMutual_fund,  (5 pointers to finMutual_fund)
+  McshStn000029:2090  <br>* McshEngl.finHedge-fund!⇒finHedge_fund,  (5 pointers to finHedge_fund)
+  McshStn000030:831  <br>* McshEngl.forest-of-Greece!⇒forest_of_Greece,  (2 pointers to forest_of_Greece)
+  McshStn000031:1871  <br>* McshEngl.CPPCC-NC!⇒CPPCC_NC,  (2 pointers to CPPCC_NC)
+  McshStn000031:1990  <br>* McshEngl.paramount-leader-of-China!⇒paramount_leader_of_China,  (5 pointers to paramount_leader_of_China)
+  McshStn000031:2386  <br>* McshEngl.Judgment-Documents-Network--of-PRC!⇒Judgment_Documents_Network__of_PRC,  (2 pointers to Judgment_Documents_Network__of_PRC)
+  McshStn000031:5637  <br>* McshEngl.one-country-two-systems!⇒one_country_two_systems,  (5 pointers to one_country_two_systems)
+  McshStn000031:6182  <br>* McshEngl.New-Confucianism!⇒New_Confucianism,  (5 pointers to New_Confucianism)
+  McshStn000031:6317  <br>* McshEngl.Chinese-dream!⇒Chinese_dream,  (2 pointers to Chinese_dream)
+  McshStn000031:8296  <br>* McshEngl.three-teachings!⇒three_teachings,  (6 pointers to three_teachings)
+  McshStn000031:8952  <br>* McshEngl.north-China!⇒north_China,  (2 pointers to north_China)
+  McshStn000031:8983  <br>* McshEngl.east-China!⇒east_China,  (2 pointers to east_China)
+  McshStn000031:9012  <br>* McshEngl.south-central-China!⇒south_central_China,  (2 pointers to south_central_China)
+  McshStn000031:9038  <br>* McshEngl.south-west-China!⇒south_west_China,  (2 pointers to south_west_China)
+  McshStn000031:9064  <br>* McshEngl.north-west-China!⇒north_west_China,  (2 pointers to north_west_China)
+  McshStn000031:9088  <br>* McshEngl.north-east-China!⇒north_east_China,  (2 pointers to north_east_China)
+  McshStn000031:9348  <br>* McshEngl.Chna-econ!⇒Chna_econ,  (5 pointers to Chna_econ)
+  McshStn000031:9470  <br>* McshEngl.socialist-market-economy!⇒socialist_market_economy,  (4 pointers to socialist_market_economy)
+  McshStn000031:9498  <br>* McshEngl.Beijing-consensus!⇒Beijing_consensus,  (6 pointers to Beijing_consensus)
+  McshStn000031:10886  <br>* McshEngl.the-Great-Wall!⇒the_Great_Wall,  (4 pointers to the_Great_Wall)
+  McshStn000031:11259  <br>* McshEngl.Chna_train.QinLingHao-秦岭号!⇒Chna_train.QinLingHao_秦岭号,  (2 pointers to Chna_train.QinLingHao_秦岭号)
+  McshStn000031:11283  <br>* McshEngl.Heart-to-Heart-Beijing-Tibet--train!⇒Heart_to_Heart_Beijing_Tibet__train,  (2 pointers to Heart_to_Heart_Beijing_Tibet__train)
+  McshStn000031:11569  <br>* McshEngl.ten-star-civilized-family!⇒ten_star_civilized_family,  (3 pointers to ten_star_civilized_family)
+  McshStn000031:12106  <br>* McshEngl.Central-Financial-Work-Conference--of-PRC!⇒Central_Financial_Work_Conference__of_PRC,  (2 pointers to Central_Financial_Work_Conference__of_PRC)
+  McshStn000031:12361  <br>* McshEngl.reform-and-opening-up-of-PRC!⇒reform_and_opening_up_of_PRC,  (5 pointers to reform_and_opening_up_of_PRC)
+  McshStn000031:13189  <br>* McshEngl.two-centenaries!⇒two_centenaries,  (3 pointers to two_centenaries)
+  McshStn000033:499  <br>* McshEngl.Ottoman-Empire!⇒Ottoman_Empire,  (2 pointers to Ottoman_Empire)
+  McshStn000034:2637  <br>* McshEngl.VnmaTone-a!⇒VnmaTone_a,  (4 pointers to VnmaTone_a)
+  McshStn000034:2664  <br>* McshEngl.VnmaTone-á!⇒VnmaTone_á,  (5 pointers to VnmaTone_á)
+  McshStn000034:2694  <br>* McshEngl.VnmaTone-ã!⇒VnmaTone_ã,  (6 pointers to VnmaTone_ã)
+  McshStn000034:2723  <br>* McshEngl.aVnmaTone-à!⇒aVnmaTone_à,  (5 pointers to aVnmaTone_à)
+  McshStn000034:2755  <br>* McshEngl.VnmaTone-ả!⇒VnmaTone_ả,  (5 pointers to VnmaTone_ả)
+  McshStn000034:2784  <br>* McshEngl.VnmaTone-ạ!⇒VnmaTone_ạ,  (5 pointers to VnmaTone_ạ)
+  McshStn000034:3999  <br>* McshEngl.Doi-Moi-reforms--of-Vietnam!⇒Doi_Moi_reforms__of_Vietnam,  (2 pointers to Doi_Moi_reforms__of_Vietnam)
+  McshStn000035:562  <br>* McshEngl.ItlnPhnm./e6/-/ɛ/ipa-(open)!⇒ItlnPhnm./e6/_/ɛ/ipa_(open),  (2 pointers to ItlnPhnm./e6/_/ɛ/ipa_(open))
+  McshStn000035:617  <br>* McshEngl.ItlnPhnm./o6/-/ɔ/ipa-(open)!⇒ItlnPhnm./o6/_/ɔ/ipa_(open),  (2 pointers to ItlnPhnm./o6/_/ɔ/ipa_(open))
+  McshStn000035:916  <br>* McshEngl.ItlnPhnm./S/-/ʃ/ipa!⇒ItlnPhnm./S/_/ʃ/ipa,  (2 pointers to ItlnPhnm./S/_/ʃ/ipa)
+  McshStn000035:966  <br>* McshEngl.ItlnPhnm./C/-/tʃ/ipa!⇒ItlnPhnm./C/_/tʃ/ipa,  (2 pointers to ItlnPhnm./C/_/tʃ/ipa)
+  McshStn000035:984  <br>* McshEngl.ItlnPhnm./J/-/dʒ/ipa!⇒ItlnPhnm./J/_/dʒ/ipa,  (2 pointers to ItlnPhnm./J/_/dʒ/ipa)
+  McshStn000035:1037  <br>* McshEngl.ItlnPhnm./nj/-/ɲ/ipa!⇒ItlnPhnm./nj/_/ɲ/ipa,  (2 pointers to ItlnPhnm./nj/_/ɲ/ipa)
+  McshStn000035:1071  <br>* McshEngl.ItlnPhnm./lj/-/ʎ/ipa!⇒ItlnPhnm./lj/_/ʎ/ipa,  (2 pointers to ItlnPhnm./lj/_/ʎ/ipa)
+  McshStn000035:2988  <br>* McshEngl.to-be!⇒to_be,  (2 pointers to to_be)
+  McshStn000035:3011  <br>* McshEngl.to-have!⇒to_have,  (2 pointers to to_have)
+  McshStn000037:551  <br>* McshEngl.FracPhnm./a9/-(nasal)-[ã]!⇒FracPhnm./a9/_(nasal)_[ã],  (2 pointers to FracPhnm./a9/_(nasal)_[ã])
+  McshStn000037:587  <br>* McshEngl.FracPhnm./e6/-(e-open)-[ɛ]!⇒FracPhnm./e6/_(e_open)_[ɛ],  (2 pointers to FracPhnm./e6/_(e_open)_[ɛ])
+  McshStn000037:606  <br>* McshEngl.FracPhnm./e69/-(e-open-round)-[œ]!⇒FracPhnm./e69/_(e_open_round)_[œ],  (2 pointers to FracPhnm./e69/_(e_open_round)_[œ])
+  McshStn000037:625  <br>* McshEngl.FracPhnm./e8/-(e-round)-[ø]!⇒FracPhnm./e8/_(e_round)_[ø],  (2 pointers to FracPhnm./e8/_(e_round)_[ø])
+  McshStn000037:682  <br>* McshEngl.FracPhnm./i8/-(i-round)-[y]!⇒FracPhnm./i8/_(i_round)_[y],  (2 pointers to FracPhnm./i8/_(i_round)_[y])
+  McshStn000037:718  <br>* McshEngl.FracPhnm./o6/-(o-open)-[ɔ]!⇒FracPhnm./o6/_(o_open)_[ɔ],  (2 pointers to FracPhnm./o6/_(o_open)_[ɔ])
+  McshStn000037:737  <br>* McshEngl.FracPhnm./o8/-(o-round)-[ø]!⇒FracPhnm./o8/_(o_round)_[ø],  (2 pointers to FracPhnm./o8/_(o_round)_[ø])
+  McshStn000037:756  <br>* McshEngl.FracPhnm./o9/-(o-nasal)-[ɔ̃]!⇒FracPhnm./o9/_(o_nasal)_[ɔ̃],  (2 pointers to FracPhnm./o9/_(o_nasal)_[ɔ̃])
+  McshStn000040:480  <br>* McshEngl.SmkdLetr./a/-А!⇒SmkdLetr./a/_А,  (2 pointers to SmkdLetr./a/_А)
+  McshStn000040:496  <br>* McshEngl.SmkdLetr./e/-Е!⇒SmkdLetr./e/_Е,  (2 pointers to SmkdLetr./e/_Е)
+  McshStn000040:512  <br>* McshEngl.SmkdLetr./i/-И!⇒SmkdLetr./i/_И,  (2 pointers to SmkdLetr./i/_И)
+  McshStn000040:528  <br>* McshEngl.SmkdLetr./o/-О!⇒SmkdLetr./o/_О,  (2 pointers to SmkdLetr./o/_О)
+  McshStn000040:544  <br>* McshEngl.SmkdLetr./u/-У!⇒SmkdLetr./u/_У,  (2 pointers to SmkdLetr./u/_У)
+  McshStn000040:560  <br>* McshEngl.SmkdLetr./ba/-Б!⇒SmkdLetr./ba/_Б,  (2 pointers to SmkdLetr./ba/_Б)
+  McshStn000040:576  <br>* McshEngl.SmkdLetr./va/-В!⇒SmkdLetr./va/_В,  (2 pointers to SmkdLetr./va/_В)
+  McshStn000040:592  <br>* McshEngl.SmkdLetr./ga/-Г!⇒SmkdLetr./ga/_Г,  (2 pointers to SmkdLetr./ga/_Г)
+  McshStn000040:608  <br>* McshEngl.SmkdLetr./gja/-Ѓ!⇒SmkdLetr./gja/_Ѓ,  (2 pointers to SmkdLetr./gja/_Ѓ)
+  McshStn000040:624  <br>* McshEngl.SmkdLetr./da/-Д!⇒SmkdLetr./da/_Д,  (2 pointers to SmkdLetr./da/_Д)
+  McshStn000040:640  <br>* McshEngl.SmkdLetr./za/-З!⇒SmkdLetr./za/_З,  (2 pointers to SmkdLetr./za/_З)
+  McshStn000040:657  <br>* McshEngl.SmkdLetr./Za/-Ж!⇒SmkdLetr./Za/_Ж,  (2 pointers to SmkdLetr./Za/_Ж)
+  McshStn000040:674  <br>* McshEngl.SmkdLetr./ja/-Ѕ!⇒SmkdLetr./ja/_Ѕ,  (2 pointers to SmkdLetr./ja/_Ѕ)
+  McshStn000040:691  <br>* McshEngl.SmkdLetr./Ja/-Џ!⇒SmkdLetr./Ja/_Џ,  (2 pointers to SmkdLetr./Ja/_Џ)
+  McshStn000040:707  <br>* McshEngl.SmkdLetr./yja/-Ј!⇒SmkdLetr./yja/_Ј,  (2 pointers to SmkdLetr./yja/_Ј)
+  McshStn000040:723  <br>* McshEngl.SmkdLetr./ka/-К!⇒SmkdLetr./ka/_К,  (2 pointers to SmkdLetr./ka/_К)
+  McshStn000040:739  <br>* McshEngl.SmkdLetr./kja/-Ќ!⇒SmkdLetr./kja/_Ќ,  (2 pointers to SmkdLetr./kja/_Ќ)
+  McshStn000040:755  <br>* McshEngl.SmkdLetr./la/-Л!⇒SmkdLetr./la/_Л,  (2 pointers to SmkdLetr./la/_Л)
+  McshStn000040:771  <br>* McshEngl.SmkdLetr./lja/-Љ!⇒SmkdLetr./lja/_Љ,  (2 pointers to SmkdLetr./lja/_Љ)
+  McshStn000040:787  <br>* McshEngl.SmkdLetr./ma/-М!⇒SmkdLetr./ma/_М,  (2 pointers to SmkdLetr./ma/_М)
+  McshStn000040:803  <br>* McshEngl.SmkdLetr./na/-Н!⇒SmkdLetr./na/_Н,  (2 pointers to SmkdLetr./na/_Н)
+  McshStn000040:819  <br>* McshEngl.SmkdLetr./nja/-Њ!⇒SmkdLetr./nja/_Њ,  (2 pointers to SmkdLetr./nja/_Њ)
+  McshStn000040:835  <br>* McshEngl.SmkdLetr./pa/-П!⇒SmkdLetr./pa/_П,  (2 pointers to SmkdLetr./pa/_П)
+  McshStn000040:851  <br>* McshEngl.SmkdLetr./ra/-Р!⇒SmkdLetr./ra/_Р,  (2 pointers to SmkdLetr./ra/_Р)
+  McshStn000040:867  <br>* McshEngl.SmkdLetr./sa/-С!⇒SmkdLetr./sa/_С,  (2 pointers to SmkdLetr./sa/_С)
+  McshStn000040:883  <br>* McshEngl.SmkdLetr./Sa/-Ш!⇒SmkdLetr./Sa/_Ш,  (2 pointers to SmkdLetr./Sa/_Ш)
+  McshStn000040:899  <br>* McshEngl.SmkdLetr./ta/-Т!⇒SmkdLetr./ta/_Т,  (2 pointers to SmkdLetr./ta/_Т)
+  McshStn000040:915  <br>* McshEngl.SmkdLetr./fa/-Ф!⇒SmkdLetr./fa/_Ф,  (2 pointers to SmkdLetr./fa/_Ф)
+  McshStn000040:931  <br>* McshEngl.SmkdLetr./Ha/-Х!⇒SmkdLetr./Ha/_Х,  (2 pointers to SmkdLetr./Ha/_Х)
+  McshStn000040:947  <br>* McshEngl.SmkdLetr./ca/-Ц!⇒SmkdLetr./ca/_Ц,  (2 pointers to SmkdLetr./ca/_Ц)
+  McshStn000040:963  <br>* McshEngl.SmkdLetr./Ca/-Ч!⇒SmkdLetr./Ca/_Ч,  (2 pointers to SmkdLetr./Ca/_Ч)
+  McshStn000042:498  <br>* McshEngl.primary-school!⇒primary_school,  (3 pointers to primary_school)
+  McshStn000042:530  <br>* McshEngl.junior-secondary-school!⇒junior_secondary_school,  (4 pointers to junior_secondary_school)
+  McshStn000042:550  <br>* McshEngl.senior-secondary-school!⇒senior_secondary_school,  (4 pointers to senior_secondary_school)
+  McshStn000042:3303  <br>* McshEngl.double-reduction-policy!⇒double_reduction_policy,  (3 pointers to double_reduction_policy)
+  McshStn000042:3431  <br>* McshEngl.National-Center-for-Educational-Technology!⇒National_Center_for_Educational_Technology,  (3 pointers to National_Center_for_Educational_Technology)
+  McshStn000042:4207  <br>* McshEngl.world-class-universities-and-first-class-disciplines!⇒world_class_universities_and_first_class_disciplines,  (5 pointers to world_class_universities_and_first_class_disciplines)
+  McshStn000042:4532  <br>* McshEngl.Higher-Education-Press--of-China!⇒Higher_Education_Press__of_China,  (2 pointers to Higher_Education_Press__of_China)
+  McshStn000042:5584  <br>* McshEngl.AI-education!⇒AI_education,  (2 pointers to AI_education)
+  McshStn000042:5837  <br>* McshEngl.gamified-learning!⇒gamified_learning,  (3 pointers to gamified_learning)
+  McshStn000043:490  <br>* McshEngl.SrusLetr.01./a/-А!⇒SrusLetr.01./a/_А,  (2 pointers to SrusLetr.01./a/_А)
+  McshStn000043:506  <br>* McshEngl.SrusLetr.02./be/-Б!⇒SrusLetr.02./be/_Б,  (2 pointers to SrusLetr.02./be/_Б)
+  McshStn000043:522  <br>* McshEngl.SrusLetr.03./ve/-В!⇒SrusLetr.03./ve/_В,  (2 pointers to SrusLetr.03./ve/_В)
+  McshStn000043:538  <br>* McshEngl.SrusLetr.04./ge/-Г!⇒SrusLetr.04./ge/_Г,  (2 pointers to SrusLetr.04./ge/_Г)
+  McshStn000043:554  <br>* McshEngl.SrusLetr.05./de/-Д!⇒SrusLetr.05./de/_Д,  (2 pointers to SrusLetr.05./de/_Д)
+  McshStn000043:571  <br>* McshEngl.SrusLetr.06./yje/-Е!⇒SrusLetr.06./yje/_Е,  (2 pointers to SrusLetr.06./yje/_Е)
+  McshStn000043:603  <br>* McshEngl.SrusLetr.08./Ze/-Ж!⇒SrusLetr.08./Ze/_Ж,  (2 pointers to SrusLetr.08./Ze/_Ж)
+  McshStn000043:619  <br>* McshEngl.SrusLetr.09./ze/-З!⇒SrusLetr.09./ze/_З,  (2 pointers to SrusLetr.09./ze/_З)
+  McshStn000043:635  <br>* McshEngl.SrusLetr.10./i/-И!⇒SrusLetr.10./i/_И,  (2 pointers to SrusLetr.10./i/_И)
+  McshStn000043:651  <br>* McshEngl.SrusLetr.11./yj/-Й!⇒SrusLetr.11./yj/_Й,  (2 pointers to SrusLetr.11./yj/_Й)
+  McshStn000043:669  <br>* McshEngl.SrusLetr.12./ka/-К!⇒SrusLetr.12./ka/_К,  (2 pointers to SrusLetr.12./ka/_К)
+  McshStn000043:685  <br>* McshEngl.SrusLetr.13./el/-Л!⇒SrusLetr.13./el/_Л,  (2 pointers to SrusLetr.13./el/_Л)
+  McshStn000043:701  <br>* McshEngl.SrusLetr.14./em/-М!⇒SrusLetr.14./em/_М,  (2 pointers to SrusLetr.14./em/_М)
+  McshStn000043:717  <br>* McshEngl.SrusLetr.15./en/-Н!⇒SrusLetr.15./en/_Н,  (2 pointers to SrusLetr.15./en/_Н)
+  McshStn000043:733  <br>* McshEngl.SrusLetr.16./o/-О!⇒SrusLetr.16./o/_О,  (2 pointers to SrusLetr.16./o/_О)
+  McshStn000043:749  <br>* McshEngl.SrusLetr.17./pe/-П!⇒SrusLetr.17./pe/_П,  (2 pointers to SrusLetr.17./pe/_П)
+  McshStn000043:765  <br>* McshEngl.SrusLetr.18./er/-Р!⇒SrusLetr.18./er/_Р,  (2 pointers to SrusLetr.18./er/_Р)
+  McshStn000043:781  <br>* McshEngl.SrusLetr.19./es/-С!⇒SrusLetr.19./es/_С,  (2 pointers to SrusLetr.19./es/_С)
+  McshStn000043:797  <br>* McshEngl.SrusLetr.20./te/-Т!⇒SrusLetr.20./te/_Т,  (2 pointers to SrusLetr.20./te/_Т)
+  McshStn000043:813  <br>* McshEngl.SrusLetr.21./u/-У!⇒SrusLetr.21./u/_У,  (2 pointers to SrusLetr.21./u/_У)
+  McshStn000043:829  <br>* McshEngl.SrusLetr.22./ef/-Ф!⇒SrusLetr.22./ef/_Ф,  (2 pointers to SrusLetr.22./ef/_Ф)
+  McshStn000043:845  <br>* McshEngl.SrusLetr.23./Ha/-Х!⇒SrusLetr.23./Ha/_Х,  (2 pointers to SrusLetr.23./Ha/_Х)
+  McshStn000043:861  <br>* McshEngl.SrusLetr.24./ce/-Ц!⇒SrusLetr.24./ce/_Ц,  (2 pointers to SrusLetr.24./ce/_Ц)
+  McshStn000043:877  <br>* McshEngl.SrusLetr.25./Ce/-Ч!⇒SrusLetr.25./Ce/_Ч,  (2 pointers to SrusLetr.25./Ce/_Ч)
+  McshStn000043:893  <br>* McshEngl.SrusLetr.26./Sa/-Ш!⇒SrusLetr.26./Sa/_Ш,  (2 pointers to SrusLetr.26./Sa/_Ш)
+  McshStn000043:909  <br>* McshEngl.SrusLetr.27./Sja/-Щ!⇒SrusLetr.27./Sja/_Щ,  (2 pointers to SrusLetr.27./Sja/_Щ)
+  McshStn000043:947  <br>* McshEngl.SrusLetr.29./i3/-(i-back)-Ы!⇒SrusLetr.29./i3/_(i_back)_Ы,  (2 pointers to SrusLetr.29./i3/_(i_back)_Ы)
+  McshStn000043:995  <br>* McshEngl.SrusLetr.32./yju/-Ю!⇒SrusLetr.32./yju/_Ю,  (2 pointers to SrusLetr.32./yju/_Ю)
+  McshStn000043:1011  <br>* McshEngl.SrusLetr.33./yja/-Я!⇒SrusLetr.33./yja/_Я,  (2 pointers to SrusLetr.33./yja/_Я)
+  McshStn000044:583  <br>* McshEngl.RomnPhnm./c/-[t͡s]!⇒RomnPhnm./c/_[t͡s],  (2 pointers to RomnPhnm./c/_[t͡s])
+  McshStn000044:598  <br>* McshEngl.RomnPhnm./C/-[t͡ʃ]!⇒RomnPhnm./C/_[t͡ʃ],  (2 pointers to RomnPhnm./C/_[t͡ʃ])
+  McshStn000044:613  <br>* McshEngl.RomnPhnm./J/-[d͡ʒ]!⇒RomnPhnm./J/_[d͡ʒ],  (2 pointers to RomnPhnm./J/_[d͡ʒ])
+  McshStn000044:676  <br>* McshEngl.RomnPhnm./S/-[ʃ]!⇒RomnPhnm./S/_[ʃ],  (2 pointers to RomnPhnm./S/_[ʃ])
+  McshStn000044:691  <br>* McshEngl.RomnPhnm./Z/-[ʒ]!⇒RomnPhnm./Z/_[ʒ],  (2 pointers to RomnPhnm./Z/_[ʒ])
+  McshStn000048:911  <br>* McshEngl.JpnsRmji.a-あ-Hiragana!⇒JpnsRmji.a_あ_Hiragana,  (2 pointers to JpnsRmji.a_あ_Hiragana)
+  McshStn000048:1004  <br>* McshEngl.JpnsRmji.ka-か-Hiragana!⇒JpnsRmji.ka_か_Hiragana,  (2 pointers to JpnsRmji.ka_か_Hiragana)
+  McshStn000048:1096  <br>* McshEngl.JpnsRmji.sa-さ-Hiragana!⇒JpnsRmji.sa_さ_Hiragana,  (2 pointers to JpnsRmji.sa_さ_Hiragana)
+  McshStn000048:1188  <br>* McshEngl.JpnsRmji.ta-た-Hiragana!⇒JpnsRmji.ta_た_Hiragana,  (2 pointers to JpnsRmji.ta_た_Hiragana)
+  McshStn000048:1280  <br>* McshEngl.JpnsRmji.na-な-Hiragana!⇒JpnsRmji.na_な_Hiragana,  (2 pointers to JpnsRmji.na_な_Hiragana)
+  McshStn000048:1372  <br>* McshEngl.JpnsRmji.ha-は-Hiragana!⇒JpnsRmji.ha_は_Hiragana,  (2 pointers to JpnsRmji.ha_は_Hiragana)
+  McshStn000048:1464  <br>* McshEngl.JpnsRmji.ma-ま-Hiragana!⇒JpnsRmji.ma_ま_Hiragana,  (2 pointers to JpnsRmji.ma_ま_Hiragana)
+  McshStn000048:1556  <br>* McshEngl.JpnsRmji.ya-や-Hiragana!⇒JpnsRmji.ya_や_Hiragana,  (2 pointers to JpnsRmji.ya_や_Hiragana)
+  McshStn000048:1614  <br>* McshEngl.JpnsRmji.ra-ら-Hiragana!⇒JpnsRmji.ra_ら_Hiragana,  (2 pointers to JpnsRmji.ra_ら_Hiragana)
+  McshStn000048:1706  <br>* McshEngl.JpnsRmji.wa-わ-Hiragana!⇒JpnsRmji.wa_わ_Hiragana,  (2 pointers to JpnsRmji.wa_わ_Hiragana)
+  McshStn000048:1747  <br>* McshEngl.JpnsRmji.n-ん-Hiragana!⇒JpnsRmji.n_ん_Hiragana,  (2 pointers to JpnsRmji.n_ん_Hiragana)
+  McshStn000048:1767  <br>* McshEngl.JpnsHrgn.Dakuten-Handakuten-〃-゜!⇒JpnsHrgn.Dakuten_Handakuten_〃_゜,  (2 pointers to JpnsHrgn.Dakuten_Handakuten_〃_゜)
+  McshStn000048:2890  <br>* McshEngl.JpnsHrgn.small-tsu-っ!⇒JpnsHrgn.small_tsu_っ,  (2 pointers to JpnsHrgn.small_tsu_っ)
+  McshStn000048:2989  <br>* McshEngl.JpnsRmji.a-ア-Katakana!⇒JpnsRmji.a_ア_Katakana,  (2 pointers to JpnsRmji.a_ア_Katakana)
+  McshStn000048:3076  <br>* McshEngl.JpnsRmji.ka-カ-Katakana!⇒JpnsRmji.ka_カ_Katakana,  (2 pointers to JpnsRmji.ka_カ_Katakana)
+  McshStn000048:3163  <br>* McshEngl.JpnsRmji.sa-サ-Katakana!⇒JpnsRmji.sa_サ_Katakana,  (2 pointers to JpnsRmji.sa_サ_Katakana)
+  McshStn000048:3250  <br>* McshEngl.JpnsRmji.ta-タ-Katakana!⇒JpnsRmji.ta_タ_Katakana,  (2 pointers to JpnsRmji.ta_タ_Katakana)
+  McshStn000048:3337  <br>* McshEngl.JpnsRmji.na-ナ-Katakana!⇒JpnsRmji.na_ナ_Katakana,  (2 pointers to JpnsRmji.na_ナ_Katakana)
+  McshStn000048:3424  <br>* McshEngl.JpnsRmji.ha-ハ-Katakana!⇒JpnsRmji.ha_ハ_Katakana,  (2 pointers to JpnsRmji.ha_ハ_Katakana)
+  McshStn000048:3511  <br>* McshEngl.JpnsRmji.ma-マ-Katakana!⇒JpnsRmji.ma_マ_Katakana,  (2 pointers to JpnsRmji.ma_マ_Katakana)
+  McshStn000048:3598  <br>* McshEngl.JpnsRmji.ya-ヤ-Katakana!⇒JpnsRmji.ya_ヤ_Katakana,  (2 pointers to JpnsRmji.ya_ヤ_Katakana)
+  McshStn000048:3651  <br>* McshEngl.JpnsRmji.ra-ラ-Katakana!⇒JpnsRmji.ra_ラ_Katakana,  (2 pointers to JpnsRmji.ra_ラ_Katakana)
+  McshStn000048:3738  <br>* McshEngl.JpnsRmji.wa-ワ-Katakana!⇒JpnsRmji.wa_ワ_Katakana,  (2 pointers to JpnsRmji.wa_ワ_Katakana)
+  McshStn000048:3774  <br>* McshEngl.JpnsRmji.n-ン-Katakana!⇒JpnsRmji.n_ン_Katakana,  (2 pointers to JpnsRmji.n_ン_Katakana)
+  McshStn000048:4430  <br>* McshEngl.Jpnsconj.は-wa-Topic!⇒Jpnsconj.は_wa_Topic,  (2 pointers to Jpnsconj.は_wa_Topic)
+  McshStn000048:4451  <br>* McshEngl.Jpnsconj.ga-が-Subject!⇒Jpnsconj.ga_が_Subject,  (2 pointers to Jpnsconj.ga_が_Subject)
+  McshStn000048:4489  <br>* McshEngl.Jpnsconj.mo-も-Also!⇒Jpnsconj.mo_も_Also,  (2 pointers to Jpnsconj.mo_も_Also)
+  McshStn000048:4507  <br>* McshEngl.de-で-LocationOfAction!⇒de_で_LocationOfAction,  (2 pointers to de_で_LocationOfAction)
+  McshStn000048:4528  <br>* McshEngl.Jpnsconj.ni-に-LocationOfExistence!⇒Jpnsconj.ni_に_LocationOfExistence,  (2 pointers to Jpnsconj.ni_に_LocationOfExistence)
+  McshStn000048:4546  <br>* McshEngl.Jpnsconj.e-へ-Direction!⇒Jpnsconj.e_へ_Direction,  (2 pointers to Jpnsconj.e_へ_Direction)
+  McshStn000048:4566  <br>* McshEngl.Jpnsconj.o-を-Through!⇒Jpnsconj.o_を_Through,  (2 pointers to Jpnsconj.o_を_Through)
+  McshStn000048:4585  <br>* McshEngl.Jpnsconj.no-の-Possession!⇒Jpnsconj.no_の_Possession,  (2 pointers to Jpnsconj.no_の_Possession)
+  McshStn000048:4605  <br>* McshEngl.Jpnsconj.to-と-And!⇒Jpnsconj.to_と_And,  (2 pointers to Jpnsconj.to_と_And)
+  McshStn000048:4623  <br>* McshEngl.Jpnsconj.ya-や-And!⇒Jpnsconj.ya_や_And,  (2 pointers to Jpnsconj.ya_や_And)
+  McshStnlaw000002:345  <br>* McshEngl.legality-of-entity!⇒legality_of_entity,  (6 pointers to legality_of_entity)
+  McshStnlaw000002:440  <br>* McshEngl.ethicality-of-entity!⇒ethicality_of_entity,  (3 pointers to ethicality_of_entity)
+  McshStnlaw000002:2454  <br>* McshEngl.legal-provision!⇒legal_provision,  (5 pointers to legal_provision)
+  McshStnlaw000003:731  <br>* McshEngl.Celex-nbr!⇒Celex_nbr,  (5 pointers to Celex_nbr)
+  McshStnlaw000004:732  <br>* McshEngl.international-crime//lawIntlCriminal!⇒international_crime//lawIntlCriminal,  (2 pointers to international_crime//lawIntlCriminal)
+  McshStnlaw000006:393  <br>* McshEngl.court-of-cassation--lawGrca!⇒court_of_cassation__lawGrca,  (3 pointers to court_of_cassation__lawGrca)
+  McshStnlaw000006:487  <br>* McshEngl.administrative-court--lawGrca!⇒administrative_court__lawGrca,  (2 pointers to administrative_court__lawGrca)
+  McshStnlaw000006:565  <br>* McshEngl.civil-court--lawGrca!⇒civil_court__lawGrca,  (2 pointers to civil_court__lawGrca)
+  McshStnlaw000006:583  <br>* McshEngl.commercial-court--lawGrca!⇒commercial_court__lawGrca,  (2 pointers to commercial_court__lawGrca)
+  McshStnlaw000006:599  <br>* McshEngl.juvenile-court--lawGrca!⇒juvenile_court__lawGrca,  (2 pointers to juvenile_court__lawGrca)
+  McshStnlaw000006:615  <br>* McshEngl.labor-court--lawGrca!⇒labor_court__lawGrca,  (2 pointers to labor_court__lawGrca)
+  McshStnlaw000006:644  <br>* McshEngl.Εθνική-Σχολή-Δικαστικών-Λειτουργών!⇒Εθνική_Σχολή_Δικαστικών_Λειτουργών,  (6 pointers to Εθνική_Σχολή_Δικαστικών_Λειτουργών)
+  McshTch000002:1028  <br>* McshEngl.automated-vs-autonomous!⇒automated_vs_autonomous,  (2 pointers to automated_vs_autonomous)
+  McshTch000003:267  <br>* McshEngl.air-conditioner!⇒air_conditioner,  (3 pointers to air_conditioner)
+  McshTch000005:96  <br>* McshEngl.Asimov-3-laws-of-robotics!⇒Asimov_3_laws_of_robotics,  (2 pointers to Asimov_3_laws_of_robotics)
+  McshTchInf000002:497  <br>* McshEngl.info-revolution!⇒info_revolution,  (2 pointers to info_revolution)
+  McshTchInf000003:214  <br>* McshEngl.techCmpr-processor!⇒techCmpr_processor,  (6 pointers to techCmpr_processor)
+  McshTchInf000003:234  <br>* McshEngl.techCmpr-Cpu!⇒techCmpr_Cpu,  (8 pointers to techCmpr_Cpu)
+  McshTchInf000003:266  <br>* McshEngl.techCmpr-microprocessor!⇒techCmpr_microprocessor,  (5 pointers to techCmpr_microprocessor)
+  McshTchInf000003:381  <br>* McshEngl.techCmpr-internal-memory!⇒techCmpr_internal_memory,  (4 pointers to techCmpr_internal_memory)
+  McshTchInf000003:525  <br>* McshEngl.techCmpr-input-hardware!⇒techCmpr_input_hardware,  (4 pointers to techCmpr_input_hardware)
+  McshTchInf000003:540  <br>* McshEngl.techCmpr-output-hardware!⇒techCmpr_output_hardware,  (4 pointers to techCmpr_output_hardware)
+  McshTchInf000003:581  <br>* McshEngl.techCmpr-software!⇒techCmpr_software,  (7 pointers to techCmpr_software)
+  McshTchInf000003:607  <br>* McshEngl.techCmpr-data!⇒techCmpr_data,  (6 pointers to techCmpr_data)
+  McshTchInf000003:711  <br>* McshEngl.cloning-system-disk-of-techCmpr!⇒cloning_system_disk_of_techCmpr,  (2 pointers to cloning_system_disk_of_techCmpr)
+  McshTchInf000003:1178  <br>* McshEngl.stored-program--programable-computer!⇒stored_program__programable_computer,  (2 pointers to stored_program__programable_computer)
+  McshTchInf000005:747  <br>* McshEngl.lagBnr-bit!⇒lagBnr_bit,  (5 pointers to lagBnr_bit)
+  McshTchInf000005:777  <br>* McshEngl.lagBnr-output!⇒lagBnr_output,  (2 pointers to lagBnr_output)
+  McshTchInf000005:790  <br>* McshEngl.binary-info--of-cmprBnr!⇒binary_info__of_cmprBnr,  (2 pointers to binary_info__of_cmprBnr)
+  McshTchInf000005:810  <br>* McshEngl.lagBnr-word!⇒lagBnr_word,  (4 pointers to lagBnr_word)
+  McshTchInf000005:825  <br>* McshEngl.lagBnr-byte!⇒lagBnr_byte,  (4 pointers to lagBnr_byte)
+  McshTchInf000005:841  <br>* McshEngl.lagBnr-Sunt!⇒lagBnr_Sunt,  (4 pointers to lagBnr_Sunt)
+  McshTchInf000006:418  <br>* McshEngl.data-structure!⇒data_structure,  (3 pointers to data_structure)
+  McshTchInf000006:720  <br>* McshEngl.Pgmglago-code!⇒Pgmglago_code,  (5 pointers to Pgmglago_code)
+  McshTchInf000006:1343  <br>* McshEngl.Pgmglago-doing!⇒Pgmglago_doing,  (2 pointers to Pgmglago_doing)
+  McshTchInf000006:1905  <br>* McshEngl.PgmglagoBnr-algo!⇒PgmglagoBnr_algo,  (5 pointers to PgmglagoBnr_algo)
+  McshTchInf000006:1968  <br>* McshEngl.lagAsm-algo!⇒lagAsm_algo,  (5 pointers to lagAsm_algo)
+  McshTchInf000006:2019  <br>* McshEngl.lagBtcd-algo!⇒lagBtcd_algo,  (3 pointers to lagBtcd_algo)
+  McshTchInf000006:2071  <br>* McshEngl.Srcdlago-node!⇒Srcdlago_node,  (5 pointers to Srcdlago_node)
+  McshTchInf000006:2179  <br>* McshEngl.Srcdlago-archetype!⇒Srcdlago_archetype,  (2 pointers to Srcdlago_archetype)
+  McshTchInf000006:2349  <br>* McshEngl.Srcdlago-identifier!⇒Srcdlago_identifier,  (5 pointers to Srcdlago_identifier)
+  McshTchInf000006:2366  <br>* McshEngl.Srcdlago-naming-convention!⇒Srcdlago_naming_convention,  (4 pointers to Srcdlago_naming_convention)
+  McshTchInf000006:2383  <br>* McshEngl.Hungarian--Srcdlago-naming-convention!⇒Hungarian__Srcdlago_naming_convention,  (2 pointers to Hungarian__Srcdlago_naming_convention)
+  McshTchInf000006:2400  <br>* McshEngl.camel-case--Srcdlago-naming-convention!⇒camel_case__Srcdlago_naming_convention,  (2 pointers to camel_case__Srcdlago_naming_convention)
+  McshTchInf000006:2514  <br>* McshEngl.Srcdlago-Sunt!⇒Srcdlago_Sunt,  (6 pointers to Srcdlago_Sunt)
+  McshTchInf000006:2532  <br>* McshEngl.Srcdlago-ch!⇒Srcdlago_ch,  (3 pointers to Srcdlago_ch)
+  McshTchInf000006:2568  <br>* McshEngl.Srcdlago-s!⇒Srcdlago_s,  (3 pointers to Srcdlago_s)
+  McshTchInf000006:2606  <br>* McshEngl.Srcdlago-b!⇒Srcdlago_b,  (3 pointers to Srcdlago_b)
+  McshTchInf000006:2621  <br>* McshEngl.Srcdlago-n!⇒Srcdlago_n,  (3 pointers to Srcdlago_n)
+  McshTchInf000006:2663  <br>* McshEngl.Srcdlago-f!⇒Srcdlago_f,  (3 pointers to Srcdlago_f)
+  McshTchInf000006:2698  <br>* McshEngl.Srcdlago-opr!⇒Srcdlago_opr,  (3 pointers to Srcdlago_opr)
+  McshTchInf000007:2956  <br>* McshEngl.xsd-compleType-element!⇒xsd_compleType_element,  (2 pointers to xsd_compleType_element)
+  McshTchInf000009:521  <br>* McshEngl.dirManager-file!⇒dirManager_file,  (2 pointers to dirManager_file)
+  McshTchInf000009:1675  <br>* McshEngl.Mcsh-text!⇒Mcsh_text,  (3 pointers to Mcsh_text)
+  McshTchInf000010:330  <br>* McshEngl.Jssut-name!⇒Jssut_name,  (5 pointers to Jssut_name)
+  McshTchInf000010:2421  <br>* McshEngl.arrow-function//JavaScript!⇒arrow_function//JavaScript,  (2 pointers to arrow_function//JavaScript)
+  McshTchInf000010:2455  <br>* McshEngl.async-function//JavaScript!⇒async_function//JavaScript,  (2 pointers to async_function//JavaScript)
+  McshTchInf000010:5566  <br>* McshEngl.Array-of-array.includes//JavaScript!⇒Array_of_array.includes//JavaScript,  (2 pointers to Array_of_array.includes//JavaScript)
+  McshTchInf000010:5597  <br>* McshEngl.Array-of-array-primitives.remove-duplicates//JavaScript!⇒Array_of_array_primitives.remove_duplicates//JavaScript,  (2 pointers to Array_of_array_primitives.remove_duplicates//JavaScript)
+  McshTchInf000010:5627  <br>* McshEngl.Array-of-array.sort//JavaScript!⇒Array_of_array.sort//JavaScript,  (2 pointers to Array_of_array.sort//JavaScript)
+  McshTchInf000010:6311  <br>* McshEngl.Jsgnlago-pkg!⇒Jsgnlago_pkg,  (6 pointers to Jsgnlago_pkg)
+  McshTchInf000010:6477  <br>* McshEngl.language-that-complile-to-JavaScript-of-Jsgnlago!⇒language_that_complile_to_JavaScript_of_Jsgnlago,  (2 pointers to language_that_complile_to_JavaScript_of_Jsgnlago)
+  McshTchInf000010:7280  <br>* McshEngl.drome--task-runner!⇒drome__task_runner,  (2 pointers to drome__task_runner)
+  McshTchInf000011:396  <br>* McshEngl.lagJsgn-b!⇒lagJsgn_b,  (4 pointers to lagJsgn_b)
+  McshTchInf000012:156  <br>* McshEngl.Jsndlago-code!⇒Jsndlago_code,  (3 pointers to Jsndlago_code)
+  McshTchInf000012:222  <br>* McshEngl.Jsndlago-unit!⇒Jsndlago_unit,  (3 pointers to Jsndlago_unit)
+  McshTchInf000012:306  <br>* McshEngl.Jsndlago-f!⇒Jsndlago_f,  (5 pointers to Jsndlago_f)
+  McshTchInf000012:685  <br>* McshEngl.__dirname-string-of-Node.js!⇒__dirname_string_of_Node.js,  (2 pointers to __dirname_string_of_Node.js)
+  McshTchInf000012:713  <br>* McshEngl.__filename-of-Node.js!⇒__filename_of_Node.js,  (2 pointers to __filename_of_Node.js)
+  McshTchInf000012:8366  <br>* McshEngl.Jsndlago-human!⇒Jsndlago_human,  (3 pointers to Jsndlago_human)
+  McshTchInf000012:8789  <br>* McshEngl.Jsndlago-editor!⇒Jsndlago_editor,  (4 pointers to Jsndlago_editor)
+  McshTchInf000012:10258  <br>* McshEngl.Jsndlago-Repl!⇒Jsndlago_Repl,  (5 pointers to Jsndlago_Repl)
+  McshTchInf000013:1512  <br>* McshEngl.Cheng-Zhao-human!⇒Cheng_Zhao_human,  (2 pointers to Cheng_Zhao_human)
+  McshTchInf000015:289  <br>* McshEngl.netAlgo-benefit!⇒netAlgo_benefit,  (10 pointers to netAlgo_benefit)
+  McshTchInf000015:405  <br>* McshEngl.netAlgo-benefitNo!⇒netAlgo_benefitNo,  (20 pointers to netAlgo_benefitNo)
+  McshTchInf000015:1086  <br>* McshEngl.Agnetchain-light-node!⇒Agnetchain_light_node,  (2 pointers to Agnetchain_light_node)
+  McshTchInf000015:1317  <br>* McshEngl.Dappender-operator!⇒Dappender_operator,  (12 pointers to Dappender_operator)
+  McshTchInf000015:1365  <br>* McshEngl.chain-user!⇒chain_user,  (11 pointers to chain_user)
+  McshTchInf000015:1390  <br>* McshEngl.chain-holder!⇒chain_holder,  (4 pointers to chain_holder)
+  McshTchInf000015:1563  <br>* McshEngl.chain-implementation-language!⇒chain_implementation_language,  (2 pointers to chain_implementation_language)
+  McshTchInf000015:1604  <br>* McshEngl.atomic-cross-chain-trading-of-Agnetchain-protocol!⇒atomic_cross_chain_trading_of_Agnetchain_protocol,  (2 pointers to atomic_cross_chain_trading_of_Agnetchain_protocol)
+  McshTchInf000015:1924  <br>* McshEngl.Agnetchain-appending-algo!⇒Agnetchain_appending_algo,  (17 pointers to Agnetchain_appending_algo)
+  McshTchInf000015:2109  <br>* McshEngl.Agnetchain-crypto!⇒Agnetchain_crypto,  (5 pointers to Agnetchain_crypto)
+  McshTchInf000015:2131  <br>* McshEngl.Agnetchain-cipher!⇒Agnetchain_cipher,  (14 pointers to Agnetchain_cipher)
+  McshTchInf000015:2171  <br>* McshEngl.Agnetchain-hash-function!⇒Agnetchain_hash_function,  (7 pointers to Agnetchain_hash_function)
+  McshTchInf000015:2313  <br>* McshEngl.public-key-crypto!⇒public_key_crypto,  (7 pointers to public_key_crypto)
+  McshTchInf000015:2675  <br>* McshEngl.Agntasset-price!⇒Agntasset_price,  (10 pointers to Agntasset_price)
+  McshTchInf000015:2980  <br>* McshEngl.exchange-organization--of-Agntasset!⇒exchange_organization__of_Agntasset,  (2 pointers to exchange_organization__of_Agntasset)
+  McshTchInf000015:4630  <br>* McshEngl.appending-Agntasset!⇒appending_Agntasset,  (13 pointers to appending_Agntasset)
+  McshTchInf000015:4685  <br>* McshEngl.appendingNo-chain-asset!⇒appendingNo_chain_asset,  (2 pointers to appendingNo_chain_asset)
+  McshTchInf000015:5429  <br>* McshEngl.community-Agntexvu!⇒community_Agntexvu,  (2 pointers to community_Agntexvu)
+  McshTchInf000015:5739  <br>* McshEngl.Agntasset.founder's-token!⇒Agntasset.founder's_token,  (2 pointers to Agntasset.founder's_token)
+  McshTchInf000015:7871  <br>* McshEngl.netAlgo-ozn!⇒netAlgo_ozn,  (11 pointers to netAlgo_ozn)
+  McshTchInf000015:8395  <br>* McshEngl.Agntasset-order!⇒Agntasset_order,  (5 pointers to Agntasset_order)
+  McshTchInf000015:10095  <br>* McshEngl.chain-industry!⇒chain_industry,  (6 pointers to chain_industry)
+  McshTchInf000015:10915  <br>* McshEngl.accommodation-sector-Agntsrvc!⇒accommodation_sector_Agntsrvc,  (2 pointers to accommodation_sector_Agntsrvc)
+  McshTchInf000015:11780  <br>* McshEngl.Provenance-ogn!⇒Provenance_ogn,  (2 pointers to Provenance_ogn)
+  McshTchInf000015:12953  <br>* McshEngl.Agnetchain-doing!⇒Agnetchain_doing,  (6 pointers to Agnetchain_doing)
+  McshTchInf000015:13124  <br>* McshEngl.cross-chain-interoperability!⇒cross_chain_interoperability,  (2 pointers to cross_chain_interoperability)
+  McshTchInf000015:13744  <br>* McshEngl.chain-hardfork!⇒chain_hardfork,  (5 pointers to chain_hardfork)
+  McshTchInf000015:13784  <br>* McshEngl.chain-softfork!⇒chain_softfork,  (5 pointers to chain_softfork)
+  McshTchInf000016:295  <br>* McshEngl.Bkcnchain-node!⇒Bkcnchain_node,  (7 pointers to Bkcnchain_node)
+  McshTchInf000016:611  <br>* McshEngl.Bkcnchain-human!⇒Bkcnchain_human,  (4 pointers to Bkcnchain_human)
+  McshTchInf000016:641  <br>* McshEngl.chain-developer!⇒chain_developer,  (7 pointers to chain_developer)
+  McshTchInf000016:731  <br>* McshEngl.chain-ogn!⇒chain_ogn,  (5 pointers to chain_ogn)
+  McshTchInf000016:776  <br>* McshEngl.Bkcnchain-protocol!⇒Bkcnchain_protocol,  (5 pointers to Bkcnchain_protocol)
+  McshTchInf000016:3260  <br>* McshEngl.Bkcnchain-program!⇒Bkcnchain_program,  (7 pointers to Bkcnchain_program)
+  McshTchInf000016:4727  <br>* McshEngl.Bkcnchain-appending-algo!⇒Bkcnchain_appending_algo,  (11 pointers to Bkcnchain_appending_algo)
+  McshTchInf000016:5082  <br>* McshEngl.Bkcnchain-tx!⇒Bkcnchain_tx,  (5 pointers to Bkcnchain_tx)
+  McshTchInf000016:5552  <br>* McshEngl.chain-service!⇒chain_service,  (6 pointers to chain_service)
+  McshTchInf000016:7263  <br>* McshEngl.Dae-program!⇒Dae_program,  (3 pointers to Dae_program)
+  McshTchInf000016:7284  <br>* McshEngl.Dae-contract!⇒Dae_contract,  (4 pointers to Dae_contract)
+  McshTchInf000016:12395  <br>* McshEngl.Ddash-masternode!⇒Ddash_masternode,  (3 pointers to Ddash_masternode)
+  McshTchInf000016:13112  <br>* McshEngl.Ddash-govc!⇒Ddash_govc,  (5 pointers to Ddash_govc)
+  McshTchInf000017:1845  <br>* McshEngl.Bitcoin-prcl!⇒Bitcoin_prcl,  (4 pointers to Bitcoin_prcl)
+  McshTchInf000017:4262  <br>* McshEngl.Large-Bitcoin-Collider!⇒Large_Bitcoin_Collider,  (2 pointers to Large_Bitcoin_Collider)
+  McshTchInf000017:4616  <br>* McshEngl.Cashila-ogn!⇒Cashila_ogn,  (2 pointers to Cashila_ogn)
+  McshTchInf000017:7284  <br>* McshEngl.Bitcoin-Scrit!⇒Bitcoin_Scrit,  (7 pointers to Bitcoin_Scrit)
+  McshTchInf000018:1354  <br>* McshEngl.AgntEthr-contract-account!⇒AgntEthr_contract_account,  (5 pointers to AgntEthr_contract_account)
+  McshTchInf000018:1497  <br>* McshEngl.AgntEthr-normal-account!⇒AgntEthr_normal_account,  (9 pointers to AgntEthr_normal_account)
+  McshTchInf000018:2948  <br>* McshEngl.Ether-exchange-rate!⇒Ether_exchange_rate,  (2 pointers to Ether_exchange_rate)
+  McshTchInf000018:4489  <br>* McshEngl.Ethereum-client!⇒Ethereum_client,  (6 pointers to Ethereum_client)
+  McshTchInf000018:5990  <br>* McshEngl.AgntEthr-contract-lang!⇒AgntEthr_contract_lang,  (5 pointers to AgntEthr_contract_lang)
+  McshTchInf000018:6159  <br>* McshEngl.Solxlago-asm!⇒Solxlago_asm,  (3 pointers to Solxlago_asm)
+  McshTchInf000018:8144  <br>* McshEngl.Solxlago-sentence!⇒Solxlago_sentence,  (3 pointers to Solxlago_sentence)
+  McshTchInf000018:8804  <br>* McshEngl.Solxlago-tool!⇒Solxlago_tool,  (2 pointers to Solxlago_tool)
+  McshTchInf000018:10712  <br>* McshEngl.Embark--Eth-Dapp-tool!⇒Embark__Eth_Dapp_tool,  (2 pointers to Embark__Eth_Dapp_tool)
+  McshTchInf000018:10984  <br>* McshEngl.Swarm-ethdap!⇒Swarm_ethdap,  (2 pointers to Swarm_ethdap)
+  McshTchInf000018:11003  <br>* McshEngl.WeiFund-dApp!⇒WeiFund_dApp,  (2 pointers to WeiFund_dApp)
+  McshTchInf000018:11050  <br>* McshEngl.AgntEthr-block!⇒AgntEthr_block,  (4 pointers to AgntEthr_block)
+  McshTchInf000018:11813  <br>* McshEngl.AgntEthr-tx!⇒AgntEthr_tx,  (7 pointers to AgntEthr_tx)
+  McshTchInf000018:12881  <br>* McshEngl.Morden-ethtestnet!⇒Morden_ethtestnet,  (2 pointers to Morden_ethtestnet)
+  McshTchInf000018:12896  <br>* McshEngl.Ropsten-ethtestnet!⇒Ropsten_ethtestnet,  (2 pointers to Ropsten_ethtestnet)
+  McshTchInf000019:193  <br>* McshEngl.OgznDao-product!⇒OgznDao_product,  (4 pointers to OgznDao_product)
+  McshTchInf000019:226  <br>* McshEngl.OgznDao-govc!⇒OgznDao_govc,  (5 pointers to OgznDao_govc)
+  McshTchInf000019:349  <br>* McshEngl.decentralization-of-Dorg!⇒decentralization_of_Dorg,  (2 pointers to decentralization_of_Dorg)
+  McshTchInf000019:627  <br>* McshEngl.OgznDao-benefit!⇒OgznDao_benefit,  (4 pointers to OgznDao_benefit)
+  McshTchInf000019:647  <br>* McshEngl.OgznDao-problem!⇒OgznDao_problem,  (4 pointers to OgznDao_problem)
+  McshTchInf000019:690  <br>* McshEngl.OgznDao-law!⇒OgznDao_law,  (2 pointers to OgznDao_law)
+  McshTchInf000019:955  <br>* McshEngl.OgznDao-member!⇒OgznDao_member,  (5 pointers to OgznDao_member)
+  McshTchInf000019:1236  <br>* McshEngl.OgznDao--main-function!⇒OgznDao__main_function,  (7 pointers to OgznDao__main_function)
+  McshTchInf000019:1364  <br>* McshEngl.Democracy-Earth-Foundation!⇒Democracy_Earth_Foundation,  (2 pointers to Democracy_Earth_Foundation)
+  McshTchInf000019:2530  <br>* McshEngl.The-DAO!⇒The_DAO,  (3 pointers to The_DAO)
+  McshTchInf000019:2807  <br>* McshEngl.Aragon-govc!⇒Aragon_govc,  (2 pointers to Aragon_govc)
+  McshTchInf000019:2822  <br>* McshEngl.Aragon-permission!⇒Aragon_permission,  (6 pointers to Aragon_permission)
+  McshTchInf000019:2870  <br>* McshEngl.Aragon-client!⇒Aragon_client,  (5 pointers to Aragon_client)
+  McshTchInf000019:2914  <br>* McshEngl.DoAragon-Dapp!⇒DoAragon_Dapp,  (3 pointers to DoAragon_Dapp)
+  McshTchInf000019:3059  <br>* McshEngl.DoAragon-template!⇒DoAragon_template,  (4 pointers to DoAragon_template)
+  McshTchInf000019:3147  <br>* McshEngl.Aragon-One!⇒Aragon_One,  (2 pointers to Aragon_One)
+  McshTchInf000019:3237  <br>* McshEngl.Aragon-Network!⇒Aragon_Network,  (2 pointers to Aragon_Network)
+  McshTchInf000019:3353  <br>* McshEngl.DAOstack-governor!⇒DAOstack_governor,  (3 pointers to DAOstack_governor)
+  McshTchInf000019:3385  <br>* McshEngl.DAOstack-reputation!⇒DAOstack_reputation,  (7 pointers to DAOstack_reputation)
+  McshTchInf000019:3571  <br>* McshEngl.DAOstack-govc!⇒DAOstack_govc,  (2 pointers to DAOstack_govc)
+  McshTchInf000019:3726  <br>* McshEngl.DAOstack-proposal!⇒DAOstack_proposal,  (4 pointers to DAOstack_proposal)
+  McshTchInf000019:4407  <br>* McshEngl.Genesis-DAO!⇒Genesis_DAO,  (2 pointers to Genesis_DAO)
+  McshTchInf000019:4464  <br>* McshEngl.DAOstack-dOrg!⇒DAOstack_dOrg,  (2 pointers to DAOstack_dOrg)
+  McshTchInf000019:4674  <br>* McshEngl.eosDAC-custodian!⇒eosDAC_custodian,  (3 pointers to eosDAC_custodian)
+  McshTchInf000019:4983  <br>* McshEngl.eosDAC-govc!⇒eosDAC_govc,  (2 pointers to eosDAC_govc)
+  McshTchInf000019:5852  <br>* McshEngl.eosDAC-board!⇒eosDAC_board,  (4 pointers to eosDAC_board)
+  McshTchInf000019:6138  <br>* McshEngl.DAC-Factory--of--eosDAC-Dong!⇒DAC_Factory__of__eosDAC_Dong,  (2 pointers to DAC_Factory__of__eosDAC_Dong)
+  McshTchInf000020:2341  <br>* McshEngl.Chtk-TimeX!⇒Chtk_TimeX,  (5 pointers to Chtk_TimeX)
+  McshTchInf000020:2490  <br>* McshEngl.Chtklaborx-worker!⇒Chtklaborx_worker,  (4 pointers to Chtklaborx_worker)
+  McshTchInf000020:2615  <br>* McshEngl.Chtklaborx-employer!⇒Chtklaborx_employer,  (3 pointers to Chtklaborx_employer)
+  McshTchInf000020:2799  <br>* McshEngl.Chtklaborx-job!⇒Chtklaborx_job,  (2 pointers to Chtklaborx_job)
+  McshTchInf000021:196  <br>* McshEngl.Agnteos-community!⇒Agnteos_community,  (2 pointers to Agnteos_community)
+  McshTchInf000021:210  <br>* McshEngl.Agnteos-block-producer-human!⇒Agnteos_block_producer_human,  (2 pointers to Agnteos_block_producer_human)
+  McshTchInf000021:234  <br>* McshEngl.Agnteos-account-owner!⇒Agnteos_account_owner,  (2 pointers to Agnteos_account_owner)
+  McshTchInf000021:1016  <br>* McshEngl.Agnteos-inflation!⇒Agnteos_inflation,  (2 pointers to Agnteos_inflation)
+  McshTchInf000021:2162  <br>* McshEngl.Agnteos-voting!⇒Agnteos_voting,  (3 pointers to Agnteos_voting)
+  McshTchInf000022:36  <br>* McshEngl.Faircoin-net!⇒Faircoin_net,  (7 pointers to Faircoin_net)
+  McshTchInf000022:344  <br>* McshEngl.Faircoin-currency!⇒Faircoin_currency,  (11 pointers to Faircoin_currency)
+  McshTchInf000024:33  <br>* McshEngl.Steem-net!⇒Steem_net,  (8 pointers to Steem_net)
+  McshTchInf000024:3577  <br>* McshEngl.Steemit-human!⇒Steemit_human,  (2 pointers to Steemit_human)
+  McshTchInf000024:3631  <br>* McshEngl.curator-reward--of-Steemit!⇒curator_reward__of_Steemit,  (2 pointers to curator_reward__of_Steemit)
+  McshTchInf000024:3992  <br>* McshEngl.Steem-block-explorer!⇒Steem_block_explorer,  (2 pointers to Steem_block_explorer)
+  McshTchInf000024:4021  <br>* McshEngl.proof-of-brain--consensus-algorithm!⇒proof_of_brain__consensus_algorithm,  (2 pointers to proof_of_brain__consensus_algorithm)
+  McshTchInf000026:39  <br>* McshEngl.Blockstack-net!⇒Blockstack_net,  (8 pointers to Blockstack_net)
+  McshTchInf000026:343  <br>* McshEngl.Namecoin-network-of-Blockstack-net!⇒Namecoin_network_of_Blockstack_net,  (2 pointers to Namecoin_network_of_Blockstack_net)
+  McshTchInf000026:966  <br>* McshEngl.Blockstack-Gaia!⇒Blockstack_Gaia,  (3 pointers to Blockstack_Gaia)
+  McshTchInf000026:1405  <br>* McshEngl.Blockstack-Dapp!⇒Blockstack_Dapp,  (4 pointers to Blockstack_Dapp)
+  McshTchInf000026:2026  <br>* McshEngl.design-goal-of-Blockstack-net!⇒design_goal_of_Blockstack_net,  (2 pointers to design_goal_of_Blockstack_net)
+  McshTchInf000027:38  <br>* McshEngl.Neo-net!⇒Neo_net,  (7 pointers to Neo_net)
+  McshTchInf000027:97  <br>* McshEngl.NEO-token!⇒NEO_token,  (2 pointers to NEO_token)
+  McshTchInf000028:85  <br>* McshEngl.DnDiem-problem!⇒DnDiem_problem,  (3 pointers to DnDiem_problem)
+  McshTchInf000028:154  <br>* McshEngl.DnDiem-node!⇒DnDiem_node,  (2 pointers to DnDiem_node)
+  McshTchInf000028:175  <br>* McshEngl.DnDiem-validator!⇒DnDiem_validator,  (4 pointers to DnDiem_validator)
+  McshTchInf000028:254  <br>* McshEngl.DnDiem-user!⇒DnDiem_user,  (4 pointers to DnDiem_user)
+  McshTchInf000028:269  <br>* McshEngl.DnDiem-developer!⇒DnDiem_developer,  (4 pointers to DnDiem_developer)
+  McshTchInf000028:550  <br>* McshEngl.Movelago-module!⇒Movelago_module,  (5 pointers to Movelago_module)
+  McshTchInf000028:760  <br>* McshEngl.Move-source-language!⇒Move_source_language,  (3 pointers to Move_source_language)
+  McshTchInf000028:792  <br>* McshEngl.Move-IR-language!⇒Move_IR_language,  (2 pointers to Move_IR_language)
+  McshTchInf000028:809  <br>* McshEngl.Movelago-Ircode!⇒Movelago_Ircode,  (5 pointers to Movelago_Ircode)
+  McshTchInf000028:839  <br>* McshEngl.Move-bytecode-language!⇒Move_bytecode_language,  (3 pointers to Move_bytecode_language)
+  McshTchInf000028:853  <br>* McshEngl.Movelago-bytcode!⇒Movelago_bytcode,  (5 pointers to Movelago_bytcode)
+  McshTchInf000028:907  <br>* McshEngl.Movelago-benefit!⇒Movelago_benefit,  (3 pointers to Movelago_benefit)
+  McshTchInf000028:1026  <br>* McshEngl.DnDiem-protocol!⇒DnDiem_protocol,  (3 pointers to DnDiem_protocol)
+  McshTchInf000028:1443  <br>* McshEngl.DnDiem-chain!⇒DnDiem_chain,  (4 pointers to DnDiem_chain)
+  McshTchInf000028:1462  <br>* McshEngl.DnDiem-history!⇒DnDiem_history,  (5 pointers to DnDiem_history)
+  McshTchInf000028:1503  <br>* McshEngl.DnDiem-state!⇒DnDiem_state,  (6 pointers to DnDiem_state)
+  McshTchInf000028:1583  <br>* McshEngl.DnDiem-tx!⇒DnDiem_tx,  (5 pointers to DnDiem_tx)
+  McshTchInf000028:1606  <br>* McshEngl.DnDiem-tx-script!⇒DnDiem_tx_script,  (6 pointers to DnDiem_tx_script)
+  McshTchInf000028:1666  <br>* McshEngl.DnDiem-event!⇒DnDiem_event,  (5 pointers to DnDiem_event)
+  McshTchInf000028:1703  <br>* McshEngl.DnDiem-version!⇒DnDiem_version,  (5 pointers to DnDiem_version)
+  McshTchInf000028:1792  <br>* McshEngl.DvLibra-minting!⇒DvLibra_minting,  (3 pointers to DvLibra_minting)
+  McshTchInf000028:1806  <br>* McshEngl.DvLibra-burning!⇒DvLibra_burning,  (3 pointers to DvLibra_burning)
+  McshTchInf000028:1869  <br>* McshEngl.DnDiem-reserve!⇒DnDiem_reserve,  (5 pointers to DnDiem_reserve)
+  McshTchInf000028:2009  <br>* McshEngl.DnDiem-govc!⇒DnDiem_govc,  (2 pointers to DnDiem_govc)
+  McshTchInf000028:2026  <br>* McshEngl.DnDiem-Association!⇒DnDiem_Association,  (5 pointers to DnDiem_Association)
+  McshTchInf000028:2143  <br>* McshEngl.DnDiem-Core!⇒DnDiem_Core,  (5 pointers to DnDiem_Core)
+  McshTchInf000028:2371  <br>* McshEngl.DnDiem-client!⇒DnDiem_client,  (4 pointers to DnDiem_client)
+  McshTchInf000028:2391  <br>* McshEngl.DnDiem-Cli!⇒DnDiem_Cli,  (5 pointers to DnDiem_Cli)
+  McshTchInf000028:2503  <br>* McshEngl.DnDiem-account!⇒DnDiem_account,  (3 pointers to DnDiem_account)
+  McshTchInf000028:2535  <br>* McshEngl.DnDiem-vk!⇒DnDiem_vk,  (3 pointers to DnDiem_vk)
+  McshTchInf000028:2552  <br>* McshEngl.DnDiem-sk!⇒DnDiem_sk,  (3 pointers to DnDiem_sk)
+  McshTchInf000030:95  <br>* McshEngl.Rustlago-machine!⇒Rustlago_machine,  (3 pointers to Rustlago_machine)
+  McshTchInf000030:216  <br>* McshEngl.Rustlago-att!⇒Rustlago_att,  (2 pointers to Rustlago_att)
+  McshTchInf000030:349  <br>* McshEngl.Rustlago-ch!⇒Rustlago_ch,  (3 pointers to Rustlago_ch)
+  McshTchInf000030:370  <br>* McshEngl.Rustlago-s!⇒Rustlago_s,  (3 pointers to Rustlago_s)
+  McshTchInf000030:799  <br>* McshEngl.Rustlago-f!⇒Rustlago_f,  (3 pointers to Rustlago_f)
+  McshTchInf000030:813  <br>* McshEngl.Rustlago-opr!⇒Rustlago_opr,  (4 pointers to Rustlago_opr)
+  McshTchInf000030:1558  <br>* McshEngl.Rustlago-struct!⇒Rustlago_struct,  (2 pointers to Rustlago_struct)
+  McshTchInf000030:1586  <br>* McshEngl.Rustlago-enum!⇒Rustlago_enum,  (2 pointers to Rustlago_enum)
+  McshTchInf000030:1602  <br>* McshEngl.Rustlago-trait!⇒Rustlago_trait,  (3 pointers to Rustlago_trait)
+  McshTchInf000030:1617  <br>* McshEngl.Rustlago-literal!⇒Rustlago_literal,  (2 pointers to Rustlago_literal)
+  McshTchInf000030:1631  <br>* McshEngl.Rustlago-type!⇒Rustlago_type,  (3 pointers to Rustlago_type)
+  McshTchInf000030:1683  <br>* McshEngl.Rustlago-var!⇒Rustlago_var,  (4 pointers to Rustlago_var)
+  McshTchInf000030:1702  <br>* McshEngl.Rustlago-cnst!⇒Rustlago_cnst,  (4 pointers to Rustlago_cnst)
+  McshTchInf000030:1908  <br>* McshEngl.Rustlago-sentence!⇒Rustlago_sentence,  (3 pointers to Rustlago_sentence)
+  McshTchInf000030:1925  <br>* McshEngl.Rustlago-loop-gnc!⇒Rustlago_loop_gnc,  (4 pointers to Rustlago_loop_gnc)
+  McshTchInf000030:2014  <br>* McshEngl.Rustlago-use!⇒Rustlago_use,  (4 pointers to Rustlago_use)
+  McshTchInf000030:2059  <br>* McshEngl.Rustlago-word!⇒Rustlago_word,  (3 pointers to Rustlago_word)
+  McshTchInf000030:2073  <br>* McshEngl.Rustlago-identifier!⇒Rustlago_identifier,  (4 pointers to Rustlago_identifier)
+  McshTchInf000030:2107  <br>* McshEngl.Rustlago-used-keyword!⇒Rustlago_used_keyword,  (4 pointers to Rustlago_used_keyword)
+  McshTchInf000030:2735  <br>* McshEngl.Rustlago-usedNo-keyword!⇒Rustlago_usedNo_keyword,  (4 pointers to Rustlago_usedNo_keyword)
+  McshTchInf000030:3095  <br>* McshEngl.Rustlago-mod!⇒Rustlago_mod,  (3 pointers to Rustlago_mod)
+  McshTchInf000030:3161  <br>* McshEngl.Rustlago-pkg!⇒Rustlago_pkg,  (4 pointers to Rustlago_pkg)
+  McshTchInf000030:3192  <br>* McshEngl.Rustlago-pgm!⇒Rustlago_pgm,  (4 pointers to Rustlago_pgm)
+  McshTchInf000030:3207  <br>* McshEngl.Rustlago-clip!⇒Rustlago_clip,  (3 pointers to Rustlago_clip)
+  McshTchInf000030:3236  <br>* McshEngl.Rustlago-guip!⇒Rustlago_guip,  (3 pointers to Rustlago_guip)
+  McshTchInf000030:3253  <br>* McshEngl.Rustlago-bin-algo!⇒Rustlago_bin_algo,  (2 pointers to Rustlago_bin_algo)
+  McshTchInf000030:3280  <br>* McshEngl.Rustlago-exe!⇒Rustlago_exe,  (5 pointers to Rustlago_exe)
+  McshTchInf000030:3404  <br>* McshEngl.Rustlago-crate!⇒Rustlago_crate,  (5 pointers to Rustlago_crate)
+  McshTchInf000030:3434  <br>* McshEngl.Rustlago-std!⇒Rustlago_std,  (4 pointers to Rustlago_std)
+  McshTchInf000030:3509  <br>* McshEngl.Rustlago-prelude!⇒Rustlago_prelude,  (5 pointers to Rustlago_prelude)
+  McshTchInf000030:3556  <br>* McshEngl.Rustlago-String!⇒Rustlago_String,  (5 pointers to Rustlago_String)
+  McshTchInf000030:3579  <br>* McshEngl.Rustlago-Vec!⇒Rustlago_Vec,  (5 pointers to Rustlago_Vec)
+  McshTchInf000030:3648  <br>* McshEngl.Rustlago-tool!⇒Rustlago_tool,  (2 pointers to Rustlago_tool)
+  McshTchInf000030:3661  <br>* McshEngl.Rustlago-rustc!⇒Rustlago_rustc,  (6 pointers to Rustlago_rustc)
+  McshTchInf000030:3715  <br>* McshEngl.Rustlago-Cargo!⇒Rustlago_Cargo,  (6 pointers to Rustlago_Cargo)
+  McshTchInf000030:3733  <br>* McshEngl.Rustlago-Cargo-cmd!⇒Rustlago_Cargo_cmd,  (4 pointers to Rustlago_Cargo_cmd)
+  McshTchInf000031:154  <br>* McshEngl.Cppzlago-word!⇒Cppzlago_word,  (3 pointers to Cppzlago_word)
+  McshTchInf000031:653  <br>* McshEngl.Cppzlago-f!⇒Cppzlago_f,  (9 pointers to Cppzlago_f)
+  McshTchInf000031:803  <br>* McshEngl.Cppzlago-operator!⇒Cppzlago_operator,  (7 pointers to Cppzlago_operator)
+  McshTchInf000031:1045  <br>* McshEngl.Cppzlago-class!⇒Cppzlago_class,  (5 pointers to Cppzlago_class)
+  McshTchInf000031:1090  <br>* McshEngl.Cppzlago-method!⇒Cppzlago_method,  (5 pointers to Cppzlago_method)
+  McshTchInf000031:1916  <br>* McshEngl.Cppzlago-section!⇒Cppzlago_section,  (4 pointers to Cppzlago_section)
+  McshTchInf000031:2329  <br>* McshEngl.LagCpp-bin-algo!⇒LagCpp_bin_algo,  (9 pointers to LagCpp_bin_algo)
+  McshTchInf000031:2514  <br>* McshEngl.Cppzlago-spec!⇒Cppzlago_spec,  (6 pointers to Cppzlago_spec)
+  McshTchInf000032:61  <br>* McshEngl.Git-project!⇒Git_project,  (2 pointers to Git_project)
+  McshTchInf000035:62  <br>* McshEngl.Html-doc!⇒Html_doc,  (5 pointers to Html_doc)
+  McshTchInf000036:252  <br>* McshEngl.AI-accelerator!⇒AI_accelerator,  (2 pointers to AI_accelerator)
+  McshTchInf000036:268  <br>* McshEngl.TPU-tensor-processing-unit!⇒TPU_tensor_processing_unit,  (2 pointers to TPU_tensor_processing_unit)
+  McshTchInf000036:4138  <br>* McshEngl.regression-task//TechMalr!⇒regression_task//TechMalr,  (2 pointers to regression_task//TechMalr)
+  McshTchInf000036:4591  <br>* McshEngl.reinforecment-learning!⇒reinforecment_learning,  (2 pointers to reinforecment_learning)
+  McshTchInf000036:5993  <br>* McshEngl.artificial-neuron!⇒artificial_neuron,  (2 pointers to artificial_neuron)
+  McshTchInf000038:137  <br>* McshEngl.knowledge-base-vs-language-model!⇒knowledge_base_vs_language_model,  (2 pointers to knowledge_base_vs_language_model)
+  McshTchInf000038:792  <br>* McshEngl.fine-tuning--techLlm!⇒fine_tuning__techLlm,  (2 pointers to fine_tuning__techLlm)
+  McshTchInf000038:1588  <br>* McshEngl.BART/T5-like--llmTransformer!⇒BART/T5_like__llmTransformer,  (2 pointers to BART/T5_like__llmTransformer)
+  McshTchInf000038:1843  <br>* McshEngl.Llama-2--Meta!⇒Llama_2__Meta,  (2 pointers to Llama_2__Meta)
+  McshTchInf000039:824  <br>* McshEngl.knowledge-engineering!⇒knowledge_engineering,  (2 pointers to knowledge_engineering)
+  McshTchInf000039:3426  <br>* McshEngl.concept-mining//lagoLgkl!⇒concept_mining//lagoLgkl,  (2 pointers to concept_mining//lagoLgkl)
+  McshTchInf000039:11886  <br>* McshEngl.Rdficlass-extension!⇒Rdficlass_extension,  (2 pointers to Rdficlass_extension)
+  McshTchInf000039:12679  <br>* McshEngl.IRI-relation-to-URL!⇒IRI_relation_to_URL,  (2 pointers to IRI_relation_to_URL)
+  McshTchInf000039:13785  <br>* McshEngl.N-Triple-Rdfzlago!⇒N_Triple_Rdfzlago,  (2 pointers to N_Triple_Rdfzlago)
+  McshTchInf000039:13914  <br>* McshEngl.N-Quads-Rdfzlago!⇒N_Quads_Rdfzlago,  (2 pointers to N_Quads_Rdfzlago)
+  McshTchInf000039:16365  <br>* McshEngl.Wolfram-Research!⇒Wolfram_Research,  (2 pointers to Wolfram_Research)
+  McshTchInf000040:331  <br>* McshEngl.e-mail!⇒e_mail,  (4 pointers to e_mail)
+  McshTchInf000040:389  <br>* McshEngl.social-network!⇒social_network,  (3 pointers to social_network)
+  McshTchPrgm000002:1014  <br>* McshEngl.APK-file!⇒APK_file,  (2 pointers to APK_file)
+  McshTchPrgm000003:117  <br>* McshEngl.Atomedtr-Uicmd!⇒Atomedtr_Uicmd,  (8 pointers to Atomedtr_Uicmd)
+  McshTchPrgm000003:279  <br>* McshEngl.Atomedtr-Api!⇒Atomedtr_Api,  (4 pointers to Atomedtr_Api)

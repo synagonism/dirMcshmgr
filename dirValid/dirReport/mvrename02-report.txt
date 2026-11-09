@@ -1,0 +1,32 @@
+MvreName02 name_comma — createMcsh --namecomma --fix, 2026-11-08
+
+=== NAMECOMMA (5) — a-name-line without a-comma: the-comma added at the-end (MvreName02)
+  McshHlth000011:10888  <br>* McshEngl.DissLeprosy'cause  ->  <br>* McshEngl.DissLeprosy'cause,
+  McshLag000007:30337  <br>* McshEngl.Semuoutp!=Hmmdsemuverbargt.output  ->  <br>* McshEngl.Semuoutp!=Hmmdsemuverbargt.output,
+  McshLag000042:1688  <br>* McshEngl.Asa0lago'child_tree  ->  <br>* McshEngl.Asa0lago'child_tree,
+  McshStn000042:1342  <br>* McshElln.διδακτικό-βιβλίο!το!=schoolbook  ->  <br>* McshElln.διδακτικό-βιβλίο!το!=schoolbook,
+  McshUcdU2200:944  <br>* McshElln.χρκτ.κενό-8709|U+2205|&#x2205;  ->  <br>* McshElln.χρκτ.κενό-8709|U+2205|&#x2205;,
+
+=== COMMA-IN-THE-MIDDLE (31) — by hand: after the-first comma all is a-comment
+  McshHlth000013:5409  <br>* McshEngl.food.060_rice,!⇒foodRice
+  McshHlth000019:486  <br>* McshElln.κινητικό-νεύρο,!=nerveMotor
+  McshHlth000019:3086  <br>* McshEngl.SystOgn.019_autonomic_nervous_sys,!⇒SystAutonomicNervous,
+  McshHlth000019:3087  <br>* McshEngl.SystOgn.autonomic_nervous_sys,!⇒SystAutonomicNervous,
+  
+  McshLag000024:3224  <br>* McshEngl.rest!~verbEnglA1-1rest;rests;rested;resting;rested,,
+  McshLag000033:1914  <br>* McshEngl.vowel-letter-of-Deutlago,!⇒DeutVowlLetr,
+  McshLag000033:1915  <br>* McshEngl.DeutVowlLetr!=vowel-letter-of-Deutlago,,
+  McshNtr000005:865  <br>* McshTurk.sarışın!~adjvTurk!=colorBlond,,
+  McshNtr000012:59  <br>* McshEngl.force'direction,!⇒Forcedire
+  McshOgm000007:941  <br>* McshEngl.cellOgsm'att041_receptor,!⇒cellOgsm_receptor
+  HitpStnStd000:35592  <br>* McshEngl.Sna8/entitlement-to-future-goods-and-services-on-an-exclusive-basis,,
+  McshStn000015:2340  <br>* McshEngl.sectorManufacturing,!⇒sectorManufa
+  McshStn000016:569  <br>* McshEngl.OgznIntl.OPEC,!⇒OgznOpec
+    <br>* McshEngl.eu-LISA'(European-Agency-for-the-operational-management-of-large-scale-IT-systems-in-the-area-of-freedom,-security-and-justice),
+    <br>* McshElln.ξοδεύω!-ω-ομαι!~verbElln!=ActgSpending,σς
+    <br>* McshEngl.domain-of-Pgmglago,Mchnalgo
+  McshTchInf000011:297  <br>* McshEngl.Jsbralgo'semantic_unit,!⇒Jsbrsut
+  McshTchInf000017:4323  <br>* McshEngl.AgntBtcncon.Double_spending,!⇒AgntBtcn'double_spending,
+  McshTchInf000018:3101  <br>* McshEngl.KWei-unit-of-Ether-(1/10^15-ETH),,
+    <br>* McshEngl.Rustlago'opr.,44,
+    <br>* McshEngl.Vsccmnd.workbench.action.openSettings,ctrl+&#44;,

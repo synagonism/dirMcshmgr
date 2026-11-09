@@ -1,0 +1,311 @@
+main-names with an-apostrophe ' (the-!⇒ targets, every McsLago) — 124 in 41 files
+line: the-main-name-line "McshLago.X," | "McshLago.X!=I," of X, else the-first "!⇒X"
+
+=== WORD (101) — the-word after the-last apostrophe (number prefix NN_ | attNNN_ dropped), by count
+    11  000
+     3  999
+     3  season
+     2  contraindication
+     2  dish
+     2  indication
+     2  manager
+     2  output
+     2  product
+     2  rate
+     2  room
+     2  window
+     1  05..09
+     1  09..11
+     1  11.13
+     1  13..19
+     1  19..24
+     1  accountability
+     1  active_ingredient
+     1  additive
+     1  administration
+     1  asset
+     1  auditing
+     1  axon
+     1  bcproperty
+     1  bpbtproperty
+     1  browserdoing
+     1  cadre
+     1  cfproperty
+     1  chain_admindoing
+     1  changeinfrsc
+     1  compalsoriness
+     1  consolidation
+     1  controlling
+     1  course
+     1  creating
+     1  csproperty
+     1  decl2010
+     1  declension
+     1  degree
+     1  dignity
+     1  dmproperty
+     1  door
+     1  dosage
+     1  dose
+     1  eawproperty
+     1  element
+     1  energy_certification
+     1  enforcement
+     1  evaluationinfrsc
+     1  evation
+     1  gdpevolg
+     1  governance_organization
+     1  hard
+     1  hiringinfrsc
+     1  infrscevolg
+     1  input
+     1  insertion
+     1  interaction
+     1  jgproperty
+     1  jtproperty
+     1  laborer
+     1  language
+     1  lower_leg
+     1  member
+     1  menu
+     1  necksrtr
+     1  neurite
+     1  notation
+     1  ntproperty
+     1  nucleus
+     1  origin
+     1  part
+     1  prescription
+     1  productdoing
+     1  productsrtr
+     1  property
+     1  proto2010
+     1  qualificationinfrsc
+     1  receptor
+     1  reputation
+     1  risk_factor
+     1  s_capsule
+     1  s_capsulesrtr
+     1  s_daily_of_socchna
+     1  s_democratic_dictatorship
+     1  scalabilityinfrsc
+     1  searching
+     1  searchingevolg
+     1  searchinginfrsc
+     1  sftpdcg
+     1  side_effect
+     1  subdomaininfrsc
+     1  syntax
+     1  systems_science
+     1  tax
+     1  transmition
+     1  transparency
+     1  transparencyinfrsc
+     1  votinginfrsc
+     1  worldview
+
+=== McshCor000002 (1)
+  McshCor000002:4759  McshElln.Mcs'notation
+
+=== McshCor000003 (1)
+  McshCor000003:1308  McshElln.DongCreating'output
+
+=== McshCor000004 (2)
+  McshCor000004:271  McshElln.doing'output
+  McshCor000004:327  McshElln.doing'input
+
+=== McshCor000006 (8)
+  McshCor000006:2533  McshZhon.year'season
+  McshCor000006:2536  McshEspo.year'season
+  McshCor000006:2538  McshElln.year'season
+  McshCor000006:3338  McshZhon.day'05..09
+  McshCor000006:3354  McshZhon.day'09..11
+  McshCor000006:3371  McshZhon.day'11.13
+  McshCor000006:3387  McshZhon.day'13..19
+  McshCor000006:3403  McshZhon.day'19..24
+
+=== McshCor000010 (14)
+  McshCor000010:1407  McshSngu.2'000
+  McshCor000010:1409  McshZhon.2'000
+  McshCor000010:1412  McshEspo.2'000
+  McshCor000010:1414  McshElln.2'000
+  McshCor000010:1431  McshSngu.10'000
+  McshCor000010:1433  McshZhon.10'000
+  McshCor000010:1453  McshSngu.999'999
+  McshCor000010:1455  McshEspo.999'999
+  McshCor000010:1457  McshElln.999'999
+  McshCor000010:1500  McshSngu.2'000'000
+  McshCor000010:1502  McshEspo.2'000'000
+  McshCor000010:1504  McshElln.2'000'000
+  McshCor000010:1522  McshSngu.100'000'000
+  McshCor000010:1524  McshZhon.100'000'000
+
+=== McshCor000011 (3)
+  McshCor000011:476  McshEngl.system'att001_systems_science
+  McshCor000011:719  McshSngu.sequence'element
+  McshCor000011:1794  McshEngl.Treenode'degree
+
+=== McshHlth000002 (4)
+  McshHlth000002:475  McshEngl.BodyHumn'necksrtr
+  McshHlth000002:1074  McshElln.body'lower_leg
+  McshHlth000002:11615  McshElln.Bowman's_capsule
+  McshHlth000002:11636  McshEngl.Bowman's_capsulesrtr
+
+=== McshHlth000004 (1)
+  McshHlth000004:844  McshElln.cell'nucleus
+
+=== McshHlth000005 (2)
+  McshHlth000005:244  McshElln.OganMuscle'origin
+  McshHlth000005:261  McshElln.OganMuscle'insertion
+
+=== McshHlth000011 (2)
+  McshHlth000011:154  McshElln.disease'risk_factor
+  McshHlth000011:1188  McshElln.disease'transmition
+
+=== McshHlth000013 (4)
+  McshHlth000013:402  McshElln.food'additive
+  McshHlth000013:994  McshZhon.meal'dish
+  McshHlth000013:997  McshElln.meal'dish
+  McshHlth000013:1014  McshElln.meal'course
+
+=== McshHlth000014 (9)
+  McshHlth000014:88  McshElln.medication'indication
+  McshHlth000014:106  McshElln.medication'contraindication
+  McshHlth000014:212  McshElln.medication'interaction
+  McshHlth000014:230  McshElln.medication'part
+  McshHlth000014:250  McshElln.medication'active_ingredient
+  McshHlth000014:310  McshElln.medication'dosage
+  McshHlth000014:326  McshElln.medication'dose
+  McshHlth000014:406  McshElln.medication'administration
+  McshHlth000014:426  McshElln.medication'prescription
+
+=== McshHlth000016 (3)
+  McshHlth000016:68  McshElln.therapy'indication
+  McshHlth000016:84  McshElln.therapy'contraindication
+  McshHlth000016:102  McshElln.therapy'side_effect
+
+=== McshHlth000019 (2)
+  McshHlth000019:777  McshElln.neuron'axon
+  McshHlth000019:1095  McshElln.neuron'neurite
+
+=== McshHmn000002 (2)
+  McshHmn000002:3496  McshEngl.Human'qualificationinfrsc
+  McshHmn000002:3529  McshElln.human'dignity
+
+=== McshLag000006 (10)
+  McshLag000006:412  McshEngl.Uncdchar'bcproperty
+  McshLag000006:513  McshEngl.Uncdchar'csproperty
+  McshLag000006:620  McshEngl.Uncdchar'cfproperty
+  McshLag000006:684  McshEngl.Uncdchar'bpbtproperty
+  McshLag000006:727  McshEngl.Uncdchar'dmproperty
+  McshLag000006:782  McshEngl.Uncdchar'eawproperty
+  McshLag000006:936  McshEngl.Uncdchar'jgproperty
+  McshLag000006:1080  McshEngl.Uncdchar'jtproperty
+  McshLag000006:1422  McshEngl.Uncdchar'ntproperty
+  McshLag000006:1483  McshEngl.Uncdchar'property
+
+=== McshLag000007 (3)
+  McshLag000007:4019  McshEngl.Hmmdterm'creating
+  McshLag000007:6626  McshElln.ondoname'declension
+  McshLag000007:31586  McshEngl.Hmmdlago'changeinfrsc
+
+=== McshLag000020 (2)
+  McshLag000020:2295  McshElln.Ellnnoun'member
+  McshLag000020:13003  McshElln.SciLangElln'syntax
+
+=== McshOgm000005 (4)
+  McshOgm000005:456  McshEngl.BodyHumn'product
+  McshOgm000005:465  McshElln.BodyHumn'product
+  McshOgm000005:493  McshEngl.BodyHumn'productsrtr
+  McshOgm000005:509  McshEngl.BodyHumn'productdoing
+
+=== McshOgm000007 (1)
+  McshOgm000007:932  McshElln.cellOgsm'receptor
+
+=== McshStn000004 (5)
+  McshStn000004:67  McshElln.AdmnSctn'transparency
+  McshStn000004:80  McshEngl.AdmnSctn'transparencyinfrsc
+  McshStn000004:100  McshElln.AdmnSctn'accountability
+  McshStn000004:267  McshElln.AdmnSctn'controlling
+  McshStn000004:969  McshElln.budge'auditing
+
+=== McshStn000007 (1)
+  McshStn000007:180  McshEngl.SoctOgsm'language
+
+=== McshStn000008 (2)
+  McshStn000008:709  McshElln.Ogzn'asset
+  McshStn000008:899  McshElln.Ogzn'tax
+
+=== McshStn000009 (1)
+  McshStn000009:747  McshElln.society'reputation
+
+=== McshStn000011 (2)
+  McshStn000011:1031  McshElln.job'searching
+  McshStn000011:1045  McshEngl.Job'searchinginfrsc
+
+=== McshStn000015 (7)
+  McshStn000015:588  McshEngl.OgznPrdg'hiringinfrsc
+  McshStn000015:663  McshZhon.OgznPrdg'manager
+  McshStn000015:666  McshElln.OgznPrdg'manager
+  McshStn000015:728  McshElln.OgznPrdg'laborer
+  McshStn000015:833  McshEngl.OgznPrd'sftpdcg
+  McshStn000015:3794  McshElln.tax'compalsoriness
+  McshStn000015:3831  McshElln.tax'evation
+
+=== McshStn000020 (2)
+  McshStn000020:1030  McshEngl.Euecon'Gdpevolg
+  McshStn000020:19778  McshEngl.SoctEuzz'Infrscevolg
+
+=== McshStn000022 (3)
+  McshStn000022:192  McshZhon.house'room
+  McshStn000022:195  McshElln.house'room
+  McshStn000022:364  McshElln.house'energy_certification
+
+=== McshStn000026 (1)
+  McshStn000026:972  McshZhon.OgznRestaurant'menu
+
+=== McshStn000027 (3)
+  McshStn000027:63  McshElln.sfrBuilding'door
+  McshStn000027:126  McshZhon.sfrBuilding'window
+  McshStn000027:129  McshElln.sfrBuilding'window
+
+=== McshStn000030 (1)
+  McshStn000030:436  McshEngl.GrcaAdmn'governance_organization
+
+=== McshStn000031 (5)
+  McshStn000031:466  McshZhon.people's_democratic_dictatorship
+  McshStn000031:594  McshZhon.Chnacp'worldview
+  McshStn000031:801  McshZhon.Chnacp'cadre
+  McshStn000031:10371  McshZhon.people's_daily_of_SocChna
+  McshStn000031:11218  McshEngl.Chna_train'hard
+
+=== McshStnlaw000002 (2)
+  McshStnlaw000002:1106  McshElln.law'consolidation
+  McshStnlaw000002:1123  McshElln.law'enforcement
+
+=== HitpStnlawEus002 (1)
+  HitpStnlawEus002:724  McshEngl.EulTeu'decl2010
+
+=== HitpStnlawEus003 (1)
+  HitpStnlawEus003:3930  McshEngl.EulTeu'proto2010
+
+=== McshTchInf000009 (1)
+  McshTchInf000009:4266  McshEngl.Mcshmgr'searchingevolg
+
+=== McshTchInf000015 (2)
+  McshTchInf000015:250  McshEngl.NetAlgo'evaluationinfrsc
+  McshTchInf000015:767  McshEngl.NetAlgo'scalabilityinfrsc
+
+=== McshTchInf000017 (1)
+  McshTchInf000017:1293  McshEngl.BtcexvuC'rate
+
+=== McshTchInf000021 (1)
+  McshTchInf000021:2266  McshEngl.Agnteos'votinginfrsc
+
+=== McshTchInf000022 (2)
+  McshTchInf000022:384  McshEngl.FrcnexvuC'rate
+  McshTchInf000022:1111  McshEngl.Faircoin_net'chain_admindoing
+
+=== McshTchInf000026 (2)
+  McshTchInf000026:789  McshEngl.Blockstack_net'subdomaininfrsc
+  McshTchInf000026:1250  McshEngl.Blockstack_net'browserdoing

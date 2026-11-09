@@ -1,0 +1,1009 @@
+section titles X'Y → "Y of X", X an-Mmn — FIXED: renamed 288 in 17 files, skipped 697 + 17 with " of "
+
+=== RENAMED (288)
+  McshCor000011:2349  Gstree'taxon  → taxon of Gstree
+  McshCor000011:2500  Wptree'meron  → meron of Wptree
+  McshLag000007:15219  grammar'relation_to_language  → relation_to_language of grammar
+  McshLag000013:15  info'resource  → resource of info
+  McshLag000018:15232  Zhon_post'type  → type of Zhon_post
+  McshLag000033:2286  Deutnoun'capitalization  → capitalization of Deutnoun
+  McshTchInf000007:2412  Xmlnamespace'name  → name of Xmlnamespace
+  McshTchInf000008:361  Hitphtml'Html5  → Html5 of Hitphtml
+  McshTchInf000008:375  Hitphtml'title-content-tree--document  → title-content-tree--document of Hitphtml
+  McshTchInf000008:592  Hitphtml'title  → title of Hitphtml
+  McshTchInf000008:612  Hitphtml'content  → content of Hitphtml
+  McshTchInf000008:627  Hitphtml'content-unit  → content-unit of Hitphtml
+  McshTchInf000008:737  Hitphtml'file  → file of Hitphtml
+  McshTchInf000008:759  Hitphtml'IDs  → IDs of Hitphtml
+  McshTchInf000008:828  Hitphtml'links  → links of Hitphtml
+  McshTchInf000008:846  Hitphtml'math-formulas  → math-formulas of Hitphtml
+  McshTchInf000008:1320  Hitpjsbr'file  → file of Hitpjsbr
+  McshTchInf000008:1341  Hitpjsbr'API  → API of Hitpjsbr
+  McshTchInf000008:2545  Hitpjsbr'table-of-contents  → table-of-contents of Hitpjsbr
+  McshTchInf000008:2613  Hitpjsbr'tree-info  → tree-info of Hitpjsbr
+  McshTchInf000008:3514  Hitparcho'title  → title of Hitparcho
+  McshTchInf000008:3567  Hitparcho'content  → content of Hitparcho
+  McshTchInf000008:3582  Hitparcho'content_unit  → content_unit of Hitparcho
+  McshTchInf000008:3600  Hitparcho'node  → node of Hitparcho
+  McshTchInf000008:3613  Hitp_archo_node'number  → number of Hitp_archo_node
+  McshTchInf000008:3744  Hitparcho'level  → level of Hitparcho
+  McshTchInf000008:3756  Hitparcho'depth|height  → depth|height of Hitparcho
+  McshTchInf000008:3769  Hitparcho'table_of_contents  → table_of_contents of Hitparcho
+  McshTchInf000010:116  Jsgnlago'benefit  → benefit of Jsgnlago
+  McshTchInf000010:120  Jsgnlago'simplicity  → simplicity of Jsgnlago
+  McshTchInf000010:127  Jsgnlago'inheritance  → inheritance of Jsgnlago
+  McshTchInf000010:151  Jsgnlago'problem  → problem of Jsgnlago
+  McshTchInf000010:155  Jsgnlago'naming-mechanism  → naming-mechanism of Jsgnlago
+  McshTchInf000010:164  Jsgnlago'instanceof  → instanceof of Jsgnlago
+  McshTchInf000010:194  Jsgnlago'object-scope  → object-scope of Jsgnlago
+  McshTchInf000010:213  Jsgnlago'todo  → todo of Jsgnlago
+  McshTchInf000010:1137  Jsa'element  → element of Jsa
+  McshTchInf000010:1152  Jsa'index  → index of Jsa
+  McshTchInf000010:1164  Jsa'member  → member of Jsa
+  McshTchInf000010:1188  Jsa'Array_function  → Array_function of Jsa
+  McshTchInf000010:1944  Jsa'creating  → creating of Jsa
+  McshTchInf000010:2091  Jsf'creation  → creation of Jsf
+  McshTchInf000010:2117  Jsf'call  → call of Jsf
+  McshTchInf000010:2137  Jsf'input  → input of Jsf
+  McshTchInf000010:2148  Jsf'parameter  → parameter of Jsf
+  McshTchInf000010:2163  Jsf'argument  → argument of Jsf
+  McshTchInf000010:2178  Jsf'output  → output of Jsf
+  McshTchInf000010:2207  Jsf'name  → name of Jsf
+  McshTchInf000010:2224  Jsf'member  → member of Jsf
+  McshTchInf000010:2237  Jsf'scope (  → scope of Jsf (
+  McshTchInf000010:2249  Jsf'a-function-is-an-object  → a-function-is-an-object of Jsf
+  McshTchInf000010:2327  Jsf'Function-function  → Function-function of Jsf
+  McshTchInf000010:4134  Jsmwo'member  → member of Jsmwo
+  McshTchInf000010:4173  Jsmwo'whole-part-tree  → whole-part-tree of Jsmwo
+  McshTchInf000010:4423  Jsgnlago'Error-function  → Error-function of Jsgnlago
+  McshTchInf000010:4472  Jsgnlago'JSON-object  → JSON-object of Jsgnlago
+  McshTchInf000010:4531  Jsgnlago'Math_object  → Math_object of Jsgnlago
+  McshTchInf000010:4558  Jsgnlago'Set-function  → Set-function of Jsgnlago
+  McshTchInf000010:4590  set'element-checking  → element-checking of set
+  McshTchInf000010:4605  set'element-adding  → element-adding of set
+  McshTchInf000010:4620  set'element-removing  → element-removing of set
+  McshTchInf000010:4636  set'convert-to-array  → convert-to-array of set
+  McshTchInf000010:4651  set'relation-to-array  → relation-to-array of set
+  McshTchInf000010:4666  Jsgnlago'console_object  → console_object of Jsgnlago
+  McshTchInf000010:4691  Jsgnlago'decodeURI_function  → decodeURI_function of Jsgnlago
+  McshTchInf000011:1537  Jsbrmwo'member  → member of Jsbrmwo
+  McshTchInf000011:2792  Jsbrlib'adding  → adding of Jsbrlib
+  McshTchInf000011:2885  Jsbrpgm'execution  → execution of Jsbrpgm
+  McshTchInf000011:3397  Jsbrevent'Event-object (oEvt)  → Event-object of Jsbrevent (oEvt)
+  McshTchInf000011:3467  Jsbrevent'EventListener-function (fEvtlnr)  → EventListener-function of Jsbrevent (fEvtlnr)
+  McshTchInf000011:3485  Jsbrevent'EventTarget-object (oEvttgt)  → EventTarget-object of Jsbrevent (oEvttgt)
+  McshTchInf000011:3546  Jsbrevent'Event-function  → Event-function of Jsbrevent
+  McshTchInf000011:3618  Jsbrevent'EventTarget-function  → EventTarget-function of Jsbrevent
+  McshTchInf000012:528  Jsndmc'caching  → caching of Jsndmc
+  McshTchInf000012:553  Jsndmc'member  → member of Jsndmc
+  McshTchInf000012:565  Jsndmmbr'exporting  → exporting of Jsndmmbr
+  McshTchInf000012:578  Jsndmmbr'importing  → importing of Jsndmmbr
+  McshTchInf000012:1208  Jsndmc'npm-tool (  → npm-tool of Jsndmc (
+  McshTchInf000012:1213  Jsndmc'repository  → repository of Jsndmc
+  McshTchInf000012:1225  Jsndmc'npm-registry (npmjs.org)  → npm-registry of Jsndmc (npmjs.org)
+  McshTchInf000012:1249  Jsndmc'node_modules-directory  → node_modules-directory of Jsndmc
+  McshTchInf000012:1321  Jsndmc'Infrsc  → Infrsc of Jsndmc
+  McshTchInf000012:1339  Jsndmc'Converting-AMD-to-NodeJs-modules  → Converting-AMD-to-NodeJs-modules of Jsndmc
+  McshTchInf000012:1357  Jsndmc'stability-index (0 - 3)  → stability-index of Jsndmc (0 - 3)
+  McshTchInf000012:1414  Jsndmc'wraper  → wraper of Jsndmc
+  McshTchInf000012:1805  Jsndlago'stream-object  → stream-object of Jsndlago
+  McshTchInf000012:3198  JsndAPI'most-whole-object (global)  → most-whole-object of JsndAPI (global)
+  McshTchInf000012:3256  JsndAPI'global-member  → global-member of JsndAPI
+  McshTchInf000012:3475  JsndAPI'most-generic-object (Object.prototype)  → most-generic-object of JsndAPI (Object.prototype)
+  McshTchInf000012:3587  JsndAPI'ArrayBuffer-function  → ArrayBuffer-function of JsndAPI
+  McshTchInf000012:3630  JsndAPI'Buffer-function (2.stable)  → Buffer-function of JsndAPI (2.stable)
+  McshTchInf000012:3655  JsndAPI'console-object  → console-object of JsndAPI
+  McshTchInf000012:3683  JsndAPI'module-object (  → module-object of JsndAPI (
+  McshTchInf000012:3688  JsndAPI'process-object  → process-object of JsndAPI
+  McshTchInf000012:3806  JsndAPI'require  → require of JsndAPI
+  McshTchInf000012:3811  JsndAPI'CORE-MODULES  → CORE-MODULES of JsndAPI
+  McshTchInf000012:3816  JsndAPI'TIMER-FUNCTIONS  → TIMER-FUNCTIONS of JsndAPI
+  McshTchInf000012:4549  Jsndpgm'Installing  → Installing of Jsndpgm
+  McshTchInf000012:4570  Jsndpgm'Executing  → Executing of Jsndpgm
+  McshTchInf000012:4594  Jsndpgm'Debugging (ljndbg)  → Debugging of Jsndpgm (ljndbg)
+  McshTchInf000012:4637  Jsndpgm'Dependency  → Dependency of Jsndpgm
+  McshTchInf000015:12203  AgntsrvcEcon'recruitmen-sector  → recruitmen-sector of AgntsrvcEcon
+  McshTchInf000015:12235  AgntsrvcEcon'sharing_economy  → sharing_economy of AgntsrvcEcon
+  McshTchInf000015:12276  AgntsrvcEcon'traditional-asset-tokenization  → traditional-asset-tokenization of AgntsrvcEcon
+  McshTchInf000015:12305  AgntsrvcEcon'resource  → resource of AgntsrvcEcon
+  McshTchInf000015:13408  netAlgo'2019  → 2019 of netAlgo
+  McshTchInf000015:13423  netAlgo'2018  → 2018 of netAlgo
+  McshTchInf000015:13445  netAlgo'2017  → 2017 of netAlgo
+  McshTchInf000015:13487  netAlgo'2016  → 2016 of netAlgo
+  McshTchInf000015:13509  netAlgo'2015  → 2015 of netAlgo
+  McshTchInf000015:13533  netAlgo'2014  → 2014 of netAlgo
+  McshTchInf000015:13555  netAlgo'2013  → 2013 of netAlgo
+  McshTchInf000015:13585  netAlgo'2012  → 2012 of netAlgo
+  McshTchInf000015:13606  netAlgo'2011  → 2011 of netAlgo
+  McshTchInf000015:13643  netAlgo'2010  → 2010 of netAlgo
+  McshTchInf000015:13664  netAlgo'2009  → 2009 of netAlgo
+  McshTchInf000016:505  Bkcnmnpl'fee  → fee of Bkcnmnpl
+  McshTchInf000016:510  Bkcnmnpl'token-supported  → token-supported of Bkcnmnpl
+  McshTchInf000016:1005  Bkcnasset'short-name  → short-name of Bkcnasset
+  McshTchInf000016:1019  Bkcnasset'icon  → icon of Bkcnasset
+  McshTchInf000016:1099  Bkcnasset'exchange-rate-volatility  → exchange-rate-volatility of Bkcnasset
+  McshTchInf000016:1458  Bkcnasset'acquiring  → acquiring of Bkcnasset
+  McshTchInf000016:1480  Bkcnasset'issuing  → issuing of Bkcnasset
+  McshTchInf000016:1496  Bkcnasset'rate-of-issuance  → rate-of-issuance of Bkcnasset
+  McshTchInf000016:9330  AgntDcrd'Protocol  → Protocol of AgntDcrd
+  McshTchInf000016:9428  AgntDcrd'node  → node of AgntDcrd
+  McshTchInf000016:9439  Dcrdnode'Peer  → Peer of Dcrdnode
+  McshTchInf000016:9482  AgntDcrd'Mining  → Mining of AgntDcrd
+  McshTchInf000016:9559  AgntDcrd'Blockchain (dcrbcn)  → Blockchain of AgntDcrd (dcrbcn)
+  McshTchInf000016:9829  AgntDcrd'Governance-system (dcrgov)  → Governance-system of AgntDcrd (dcrgov)
+  McshTchInf000016:9878  AgntDcrd'rogram  → rogram of AgntDcrd
+  McshTchInf000016:9889  Dcrpgm'AgntDcrd_development  → AgntDcrd_development of Dcrpgm
+  McshTchInf000016:9905  Dcrpgm'API  → API of Dcrpgm
+  McshTchInf000016:9937  Dcrpgm'File  → File of Dcrpgm
+  McshTchInf000016:10412  AgntDcrd'Wallet (dcrwlt)  → Wallet of AgntDcrd (dcrwlt)
+  McshTchInf000016:10648  AgntDcrd'Security  → Security of AgntDcrd
+  McshTchInf000016:10661  AgntDcrd'Resource  → Resource of AgntDcrd
+  McshTchInf000016:12069  XemevuC'OgnExchange  → OgnExchange of XemevuC
+  McshTchInf000016:12089  XemevuC'exchange-rate  → exchange-rate of XemevuC
+  McshTchInf000016:12104  XemevuC'Distribution  → Distribution of XemevuC
+  McshTchInf000016:12117  XemevuC'Issuance  → Issuance of XemevuC
+  McshTchInf000016:13157  Ddash_govc'owner_of_masternode  → owner_of_masternode of Ddash_govc
+  McshTchInf000016:14619  DvXRP'exchange-rate  → exchange-rate of DvXRP
+  McshTchInf000016:14630  DvXRP'OgnEXCANGE  → OgnEXCANGE of DvXRP
+  McshTchInf000016:14643  DvXRP'Resource  → Resource of DvXRP
+  McshTchInf000016:15426  AgntHmiq'Protocol  → Protocol of AgntHmiq
+  McshTchInf000016:15430  AgntHmiq'White-paper  → White-paper of AgntHmiq
+  McshTchInf000016:16056  AgntHmiq'exchange-value-unit (HMQevuCN)  → exchange-value-unit of AgntHmiq (HMQevuCN)
+  McshTchInf000016:16070  AgntHmiq'Resource  → Resource of AgntHmiq
+  McshTchInf000017:1238  BtcnexvuC'Adoption  → Adoption of BtcnexvuC
+  McshTchInf000017:1269  BtcnexvuC'Distribution  → Distribution of BtcnexvuC
+  McshTchInf000017:1282  BtcnexvuC'exchange-rate  → exchange-rate of BtcnexvuC
+  McshTchInf000017:1525  BtcnexvuC'Issuance (link)  → Issuance of BtcnexvuC (link)
+  McshTchInf000017:1530  BtcnexvuC'Law (  → Law of BtcnexvuC (
+  McshTchInf000017:1535  BtcnexvuC'Wallet (  → Wallet of BtcnexvuC (
+  McshTchInf000017:1540  BtcnexvuC'ATM  → ATM of BtcnexvuC
+  McshTchInf000017:1607  BtcnexvuC'Resource  → Resource of BtcnexvuC
+  McshTchInf000017:1622  BtcnexvuC'DOING  → DOING of BtcnexvuC
+  McshTchInf000017:1626  BtcnexvuC'Double-spending  → Double-spending of BtcnexvuC
+  McshTchInf000017:1643  BtcnexvuC'Mixing  → Mixing of BtcnexvuC
+  McshTchInf000017:2309  Bitcoin_prcl'lightning_network  → lightning_network of Bitcoin_prcl
+  McshTchInf000017:3213  Btcnwallet'Address (  → Address of Btcnwallet (
+  McshTchInf000017:3218  Btcnwallet'Security  → Security of Btcnwallet
+  McshTchInf000017:3248  Btcnwallet'Storage-medium  → Storage-medium of Btcnwallet
+  McshTchInf000017:3272  Btcnwallet'Key-pool  → Key-pool of Btcnwallet
+  McshTchInf000017:3291  Btcnwallet'Resource  → Resource of Btcnwallet
+  McshTchInf000017:3303  Btcnwallet'Doing  → Doing of Btcnwallet
+  McshTchInf000017:3449  Btcnwltpgm'doing  → doing of Btcnwltpgm
+  McshTchInf000017:4527  Btcnexch'Resource  → Resource of Btcnexch
+  McshTchInf000017:6700  Btcntx'PART  → PART of Btcntx
+  McshTchInf000017:7174  Btcntx'Bytes  → Bytes of Btcntx
+  McshTchInf000017:7187  Btcntx'Fee  → Fee of Btcntx
+  McshTchInf000017:7259  Btcntx'Script-language  → Script-language of Btcntx
+  McshTchInf000017:7681  Btcntx'Priority  → Priority of Btcntx
+  McshTchInf000017:7695  Btcntx'Time  → Time of Btcntx
+  McshTchInf000017:7703  Btcntx'Visibility  → Visibility of Btcntx
+  McshTchInf000017:7719  Btcntx'DOING  → DOING of Btcntx
+  McshTchInf000017:7723  Btcntx'Confirmation  → Confirmation of Btcntx
+  McshTchInf000017:7760  Btcntx'Resource  → Resource of Btcntx
+  McshTchInf000018:557  HumnBtrn1994'info-resource  → info-resource of HumnBtrn1994
+  McshTchInf000018:3242  EthrassetCN'Backness  → Backness of EthrassetCN
+  McshTchInf000018:3254  EthrassetCN'Contract-program  → Contract-program of EthrassetCN
+  McshTchInf000018:3259  EthrassetCN'Address-of-contract-account  → Address-of-contract-account of EthrassetCN
+  McshTchInf000018:3264  EthrassetCN'Holder  → Holder of EthrassetCN
+  McshTchInf000018:3276  EthrassetCN'Exchange-rate  → Exchange-rate of EthrassetCN
+  McshTchInf000018:3281  EthrassetCN'Transaction  → Transaction of EthrassetCN
+  McshTchInf000018:3302  EthrassetCN'Resource  → Resource of EthrassetCN
+  McshTchInf000018:3832  web3.js'transaction  → transaction of web3.js
+  McshTchInf000018:3861  web3.js'resource  → resource of web3.js
+  McshTchInf000018:3963  Algoethrvm'stack-area  → stack-area of Algoethrvm
+  McshTchInf000018:3991  Algoethrvm'storage-area (persistent)  → storage-area of Algoethrvm (persistent)
+  McshTchInf000018:4027  Algoethrvm'memory-area (non-persistent)  → memory-area of Algoethrvm (non-persistent)
+  McshTchInf000018:4053  Algoethrvm'calldata  → calldata of Algoethrvm
+  McshTchInf000018:4068  Algoethrvm'PC (Program-Counter)  → PC of Algoethrvm (Program-Counter)
+  McshTchInf000018:4073  Algoethrvm'ABI (App-Binary-Interface) (  → ABI of Algoethrvm (App-Binary-Interface) (
+  McshTchInf000018:4078  Algoethrvm'code  → code of Algoethrvm
+  McshTchInf000018:4163  Algoethropcode'argument  → argument of Algoethropcode
+  McshTchInf000018:4276  Algoethropcode'gas-cost (  → gas-cost of Algoethropcode (
+  McshTchInf000018:4409  Algoethrvm'compiler  → compiler of Algoethrvm
+  McshTchInf000018:4423  Algoethrvm'security  → security of Algoethrvm
+  McshTchInf000018:4446  Algoethrvm'resource  → resource of Algoethrvm
+  McshTchInf000018:4458  Algoethrvm'code-executing  → code-executing of Algoethrvm
+  McshTchInf000018:5734  DcontractEth'unit  → unit of DcontractEth
+  McshTchInf000018:5745  DcontractEth'semantic_unit  → semantic_unit of DcontractEth
+  McshTchInf000018:5800  DcontractEth'sentence  → sentence of DcontractEth
+  McshTchInf000018:5812  DcontractEth'paragraph  → paragraph of DcontractEth
+  McshTchInf000018:5824  DcontractEth'title-construction  → title-construction of DcontractEth
+  McshTchInf000018:5835  DcontractEth'contract-account (  → contract-account of DcontractEth (
+  McshTchInf000018:5840  DcontractEth'creator-account  → creator-account of DcontractEth
+  McshTchInf000018:5854  DcontractEth'party  → party of DcontractEth
+  McshTchInf000018:5870  DcontractEth'address  → address of DcontractEth
+  McshTchInf000018:5885  DcontractEth'store-of-data  → store-of-data of DcontractEth
+  McshTchInf000018:5897  DcontractEth'stack-area (  → stack-area of DcontractEth (
+  McshTchInf000018:5902  DcontractEth'storage-area (  → storage-area of DcontractEth (
+  McshTchInf000018:5907  DcontractEth'memory-area (  → memory-area of DcontractEth (
+  McshTchInf000018:5913  DcontractEth'message-call  → message-call of DcontractEth
+  McshTchInf000018:5983  DcontractEth'language  → language of DcontractEth
+  McshTchInf000018:6257  Solxsource'UNIT  → UNIT of Solxsource
+  McshTchInf000018:6269  Solxsource'SEMANTIC-UNIT  → SEMANTIC-UNIT of Solxsource
+  McshTchInf000018:6282  Solxsunt'location  → location of Solxsunt
+  McshTchInf000018:6301  Solxsunt'visibility  → visibility of Solxsunt
+  McshTchInf000018:6314  Solxsunt'Visibility-specifier  → Visibility-specifier of Solxsunt
+  McshTchInf000018:6325  Solxsunt'Public-vs  → Public-vs of Solxsunt
+  McshTchInf000018:6355  Solxsunt'Private-vs  → Private-vs of Solxsunt
+  McshTchInf000018:6374  Solxsunt'External-vs  → External-vs of Solxsunt
+  McshTchInf000018:6392  Solxsunt'Internal-vs  → Internal-vs of Solxsunt
+  McshTchInf000018:6408  Solxsunt'Indexed-visibility-attribute  → Indexed-visibility-attribute of Solxsunt
+  McshTchInf000018:6423  Solxsunt'Doing  → Doing of Solxsunt
+  McshTchInf000018:6427  Solxsunt'Checking  → Checking of Solxsunt
+  McshTchInf000018:6532  Solxsunt'Data-location  → Data-location of Solxsunt
+  McshTchInf000018:6635  Lsolad'balance-number  → balance-number of Lsolad
+  McshTchInf000018:6652  Lsolad'call  → call of Lsolad
+  McshTchInf000018:6670  Lsolad'callcode  → callcode of Lsolad
+  McshTchInf000018:6675  Lsolad'delegatecall  → delegatecall of Lsolad
+  McshTchInf000018:6680  Lsolad'send-function  → send-function of Lsolad
+  McshTchInf000018:6843  Solxc'Stage  → Stage of Solxc
+  McshTchInf000018:7070  Lsolf'Input  → Input of Lsolf
+  McshTchInf000018:7075  Lsolf'Output  → Output of Lsolf
+  McshTchInf000018:7095  Lsolf'Call  → Call of Lsolf
+  McshTchInf000018:7108  Lsolf'Interface  → Interface of Lsolf
+  McshTchInf000018:7540  Solxlago'int (ethsoln)  → int of Solxlago (ethsoln)
+  McshTchInf000018:7552  Solxlago'int8 (ethsoln8)  → int8 of Solxlago (ethsoln8)
+  McshTchInf000018:7563  Solxlago'uint (ethsolnu)  → uint of Solxlago (ethsolnu)
+  McshTchInf000018:7582  Solxlago'uint8 (ethsolnu8)  → uint8 of Solxlago (ethsolnu8)
+  McshTchInf000018:7717  Lsolv'value  → value of Lsolv
+  McshTchInf000018:8137  Solxsource'SENTENCE  → SENTENCE of Solxsource
+  McshTchInf000018:8414  Solxsource'error  → error of Solxsource
+  McshTchInf000018:8428  Solxsource'style  → style of Solxsource
+  McshTchInf000018:9550  DcontractEth'ABI  → ABI of DcontractEth
+  McshTchInf000018:9588  DcontractEth'security  → security of DcontractEth
+  McshTchInf000018:9633  DcontractEth'EVM (  → EVM of DcontractEth (
+  McshTchInf000018:9638  DcontractEth'tool  → tool of DcontractEth
+  McshTchInf000018:9652  DcontractEth'Etherscan-disassembler  → Etherscan-disassembler of DcontractEth
+  McshTchInf000018:9683  DcontractEth'organization  → organization of DcontractEth
+  McshTchInf000018:9702  DcontractEth'resource  → resource of DcontractEth
+  McshTchInf000018:9719  DcontractEth'STATE  → STATE of DcontractEth
+  McshTchInf000018:9732  DcontractEth'DOING  → DOING of DcontractEth
+  McshTchInf000018:10651  DappEth'backend (contract)  → backend of DappEth (contract)
+  McshTchInf000018:10663  DappEth'frontend  → frontend of DappEth
+  McshTchInf000018:10674  DappEth'structure  → structure of DappEth
+  McshTchInf000018:10689  DappEth'tool  → tool of DappEth
+  McshTchInf000018:10754  DappEth'resource  → resource of DappEth
+  McshTchInf000018:10776  DappEth'DOING  → DOING of DappEth
+  McshTchInf000018:10780  DappEth'service (  → service of DappEth (
+  McshTchInf000018:11038  Algoethrbkcn'Block  → Block of Algoethrbkcn
+  McshTchInf000018:11687  Algoethrbkcn'block-explorer  → block-explorer of Algoethrbkcn
+  McshTchInf000018:11704  Algoethrbkcn'consensus-algorithm  → consensus-algorithm of Algoethrbkcn
+  McshTchInf000018:11776  Algoethrbkcn'Size  → Size of Algoethrbkcn
+  McshTchInf000018:11791  Algoethrbkcn'transaction  → transaction of Algoethrbkcn
+  McshTchInf000018:12526  Ethrservice'Dapp (  → Dapp of Ethrservice (
+  McshTchInf000020:1973  EvuLH'Baker  → Baker of EvuLH
+  McshTchInf000020:1986  EvuLH'Smart-contract (  → Smart-contract of EvuLH (
+  McshTchInf000020:1991  EvuLH'Issuance  → Issuance of EvuLH
+  McshTchInf000020:2014  EvuLH'Exchange-rate  → Exchange-rate of EvuLH
+  McshTchInf000020:2105  ExvuTIME'exchange-rate  → exchange-rate of ExvuTIME
+  McshTchInf000020:2129  ExvuTIME'creator  → creator of ExvuTIME
+  McshTchInf000020:2138  ExvuTIME'address  → address of ExvuTIME
+  McshTchInf000020:2146  ExvuTIME'codeBinary  → codeBinary of ExvuTIME
+  McshTchInf000020:2155  ExvuTIME'codeAssembly  → codeAssembly of ExvuTIME
+  McshTchInf000020:2170  ExvuTIME'ognExchange  → ognExchange of ExvuTIME
+  McshTchInf000020:2210  ExvuTIME'similar  → similar of ExvuTIME
+  McshTchInf000020:2220  ExvuTIME'resource  → resource of ExvuTIME
+  McshTchInf000029:83  JsonDoc'unit  → unit of JsonDoc
+  McshTchInf000029:104  JsonDoc'semantic-unit  → semantic-unit of JsonDoc
+  McshTchInf000029:364  JsonOjt'grammar  → grammar of JsonOjt
+  McshTchInf000029:397  JsonDoc'syntax-tree  → syntax-tree of JsonDoc
+  McshTchInf000029:410  JsonDoc'schema  → schema of JsonDoc
+  McshTchInf000039:6362  lagFlr2'tech  → tech of lagFlr2
+
+=== SKIPPED: the-title has " of " already, by hand (17)
+  McshTchInf000006:2325  Srcdalgo'word of Srcdlago
+  McshTchInf000006:2505  Srcdalgo'semantic-unit of Srcdlago
+  McshTchInf000006:2864  Srcdalgo'phrase of Srcdlago
+  McshTchInf000006:2894  Srcdalgo'sentence of Srcdlago
+  McshTchInf000006:2974  Srcdalgo'section of Srcdlago
+  McshTchInf000006:3032  Srcdalgo'root of Srcdlago
+  McshTchInf000010:256  Jsalgo'WORD of Jsgnlago
+  McshTchInf000010:271  Jsalgo'SEMANTIC-UNIT of Jsgnlago
+  McshTchInf000010:4078  Jsalgo'API of Jsgnlago
+  McshTchInf000010:4984  Jsalgo'PHRASE of Jsgnlago
+  McshTchInf000010:5010  Jsalgo'SENTENCE of Jsgnlago
+  McshTchInf000010:5424  Jsalgo'SECTION of Jsgnlago
+  McshTchInf000010:5438  Jsalgo'ROOT of Jsgnlago
+  McshTchInf000016:4443  part'header of Bkcnblock
+  McshTchInf000016:4462  part'transaction-list of Bkcnblock
+  McshTchInf000028:403  Movealgo'resource-sunt of Movelago
+  McshTchInf000028:536  Movealgo'module-sut of Movelago
+
+=== SKIPPED: X is not an-Mmn (697)
+  Mcsh000000:370  Mws_viewDir.socialitation'law (  (Mws_viewDir.socialitation is not an-Mmn)
+  McshCor000002:4951  Mcs'searching'TODO  (Mcs'searching is not an-Mmn)
+  McshCor000010:1335  number.1'000  (1000^1)  (number.1 is not an-Mmn)
+  McshCor000010:1368  number.1'001  (number.1 is not an-Mmn)
+  McshCor000010:1394  number.2'000  (number.2 is not an-Mmn)
+  McshCor000010:1421  number.10'000  (number.10 is not an-Mmn)
+  McshCor000010:1441  number.999'999  (number.999 is not an-Mmn)
+  McshCor000010:1464  number.1'000'000  (1000^2)  (number.1'000 is not an-Mmn)
+  McshCor000010:1488  number.2'000'000  (number.2'000 is not an-Mmn)
+  McshCor000010:1511  number.100'000'000  (number.100'000 is not an-Mmn)
+  McshCor000010:1532  number.1'000'000'000 (1000^3)  (number.1'000'000 is not an-Mmn)
+  McshCor000010:1558  number.1'000'000'000'000 (1000^4)  (number.1'000'000'000 is not an-Mmn)
+  McshCor000010:1580  number.1'000'000'000'000'000 (1000^5)  (number.1'000'000'000'000 is not an-Mmn)
+  McshCor000011:1340  order.1'000th  (1000^1)  (order.1 is not an-Mmn)
+  McshCor000011:1362  order.1'001st  (order.1 is not an-Mmn)
+  McshCor000011:1408  order.999'999th  (order.999 is not an-Mmn)
+  McshCor000011:1429  order.1'000'000th  (1000^2)  (order.1'000 is not an-Mmn)
+  McshCor000011:1451  order.2'000'000th  (order.2'000 is not an-Mmn)
+  McshCor000011:1474  order.1'000'000'000th (1000^3)  (order.1'000'000 is not an-Mmn)
+  McshCor000011:1496  order.1'000'000'000'000th (1000^4)  (order.1'000'000'000 is not an-Mmn)
+  McshCor000011:1518  order.1'000'000'000'000'000th (1000^5)  (order.1'000'000'000'000 is not an-Mmn)
+  McshHlth000002:6504  weight'gain of bodyHumn  (weight is not an-Mmn)
+  McshHlth000002:6522  weight'loss of bodyHumn  (weight is not an-Mmn)
+  McshHlth000002:11622  bowman's-capsule of OganKidney  (bowman is not an-Mmn)
+  McshHlth000003:1789  Broca's-area of lobeFrontal  (Broca is not an-Mmn)
+  McshHlth000003:2132  Wernicke's-area of lobeTemporal  (Wernicke is not an-Mmn)
+  McshHlth000011:777  disease.Specsdiv.body'doing  (disease.Specsdiv.body is not an-Mmn)
+  McshLag000007:14995  section'title  (section is not an-Mmn)
+  McshLag000011:23146  EnglvmIndi.196-let's-write  (EnglvmIndi.196-let is not an-Mmn)
+  McshLag000020:11062  Ellnconj.έτσι'ώστε  (Ellnconj.έτσι is not an-Mmn)
+  McshStn000003:15  organism'satisfier  (organism is not an-Mmn)
+  McshStn000031:15  People's-Republic-of-China {1949..}  (People is not an-Mmn)
+  McshStn000031:427  people's-democratic-dictatorship of ChnaAdmn  (people is not an-Mmn)
+  McshStn000031:1778  Chinese-People's-Political-Consultative-Conference of Chnacpwf  (Chinese-People is not an-Mmn)
+  McshStn000031:2027  National-People's-Congress of ChnaAdmn  (National-People is not an-Mmn)
+  McshStn000031:6248  Chinese-People's-Political-Consultative-Conference (  (Chinese-People is not an-Mmn)
+  McshStn000031:10373  people's-daily of Chnammedia  (people is not an-Mmn)
+  McshStn000031:11158  ChnaTravelAgent.Xi'an_China_International_Travel_Service  (ChnaTravelAgent.Xi is not an-Mmn)
+  McshStn000031:11821  People's-Liberation-Army of ChnasectorPublic  (People is not an-Mmn)
+  McshStn000042:3693  People's-Education-Press of ChnaSchoolBook  (People is not an-Mmn)
+  HitpStnEcon000:7857  Mcs.Economy'FAULT  (Mcs.Economy is not an-Mmn)
+  HitpStnEcon000:7875  Mcs.Economy'TRADE-CYCLE  (Mcs.Economy is not an-Mmn)
+  HitpStnEcon000:8003  Mcs.ECONOMY'INDIVIDUAL  (Mcs.ECONOMY is not an-Mmn)
+  HitpStnEcon000:8053  Mcs.ECONOMY'WEALTH  (Mcs.ECONOMY is not an-Mmn)
+  HitpStnEcon000:8098  Mcs.Wealth'ABUNDANCE_OR_SCARCITY  (Mcs.Wealth is not an-Mmn)
+  HitpStnEcon000:8120  Mcs.Wealth'DISTRIBUTION  (Mcs.Wealth is not an-Mmn)
+  HitpStnEcon000:8384  Mcs.ECONOMY'MISC  (Mcs.ECONOMY is not an-Mmn)
+  HitpStnEcon000:8534  Mcs.ECONOMY'PRODUCTION-SYSTEM  (Mcs.ECONOMY is not an-Mmn)
+  HitpStnEcon000:8561  Mcs.Production'PERIOD  (Mcs.Production is not an-Mmn)
+  HitpStnEcon000:8677  Mcs.PRODUCTION'INDIVIDUAL  (Mcs.PRODUCTION is not an-Mmn)
+  HitpStnEcon000:8798  Mcs.PRODUCTION'WEALTH (Capital)  (Mcs.PRODUCTION is not an-Mmn)
+  HitpStnEcon000:8848  Mcs.Capital'DEMAND_PRICE  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8867  Mcs.Capital'MARGINAL_EFFICIENCY  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8884  Mcs.Capital'MARGINAL_EFFICIENCY_SCHEDULE  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8900  Mcs.Capital'INTEREST  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8914  Mcs.Capital'RATE_OF_INTEREST (r)  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8951  Mcs.Capital'RETURN  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:8972  Mcs.Capital'YIELD  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:9014  Mcs.Capital'SUPPLY_PRICE  (Mcs.Capital is not an-Mmn)
+  HitpStnEcon000:9084  Mcs.Asset'CARRYING_COST  (Mcs.Asset is not an-Mmn)
+  HitpStnEcon000:9104  Mcs.Asset'LIQUIDITY_PREMIUM  (Mcs.Asset is not an-Mmn)
+  HitpStnEcon000:9237  Mcs.CAPITAL'INCREASE  (Mcs.CAPITAL is not an-Mmn)
+  HitpStnEcon000:9449  Mcs.Investment'INDUCEMENT  (Mcs.Investment is not an-Mmn)
+  HitpStnEcon000:9764  Mcs.Income'DISTRIBUTION  (Mcs.Income is not an-Mmn)
+  HitpStnEcon000:10140  Mcs.PRODUCTION'MISC  (Mcs.PRODUCTION is not an-Mmn)
+  HitpStnEcon000:10311  Mcs.ECONOMY'CONSUMPTION-SYSTEM  (Mcs.ECONOMY is not an-Mmn)
+  HitpStnEcon000:10315  Mcs.CONSUMPTION'INDIVIDUAL (CONSUMER)  (Mcs.CONSUMPTION is not an-Mmn)
+  HitpStnEcon000:10376  Mcs.CONSUMPTION'WEALTH (CAPITAL.NO)  (Mcs.CONSUMPTION is not an-Mmn)
+  HitpStnEcon000:10456  Mcs.Consumption'PROPENSITY  (Mcs.Consumption is not an-Mmn)
+  HitpStnEcon000:10577  Mcs.Saving'ACT  (Mcs.Saving is not an-Mmn)
+  HitpStnEcon000:10593  Mcs.Saving'PROPENSITY  (Mcs.Saving is not an-Mmn)
+  HitpStnEcon000:10624  Mcs.CONSUMPTION'MISC  (Mcs.CONSUMPTION is not an-Mmn)
+  HitpStnEcon000:10743  Mcs.economics'CLASSICAL  (Mcs.economics is not an-Mmn)
+  HitpStnEcon000:10776  Mcs.economics'KEYNES  (Mcs.economics is not an-Mmn)
+  HitpStnEcon000:10858  Mcs.economics'MATHEMATICAL  (Mcs.economics is not an-Mmn)
+  HitpStnEcon000:11046  Mcs.Concept'NAME (Name)  (Mcs.Concept is not an-Mmn)
+  HitpStnEcon000:11088  Mcs.Concept'DEFINITION (Definition)  (Mcs.Concept is not an-Mmn)
+  McshStnlaw000003:1119  Eulaw.Specsdiv.Eu'part  (Eulaw.Specsdiv.Eu is not an-Mmn)
+  McshStnlaw000003:3097  Eulaw.citizen's-initiative-035  (Eulaw.citizen is not an-Mmn)
+  McshStnlaw000006:15  Greece's-law  (Greece is not an-Mmn)
+  McshTchInf000005:739  09_output'unit of lagBnr  (09_output is not an-Mmn)
+  McshTchInf000005:802  output'word of lagBnr  (output is not an-Mmn)
+  McshTchInf000005:834  output'Sunt of lagBnr  (output is not an-Mmn)
+  McshTchInf000006:2063  06_Srcdalgo'node of Srcdlago  (06_Srcdalgo is not an-Mmn)
+  McshTchInf000006:2140  09_Srcdalgo'unit of Srcdlago  (09_Srcdalgo is not an-Mmn)
+  McshTchInf000010:73  09_Jsalgo'UNIT of Jsgnlago  (09_Jsalgo is not an-Mmn)
+  McshTchInf000010:3216  Number.prototype'toLocaleString-function  (Number.prototype is not an-Mmn)
+  McshTchInf000010:3661  String.prototype'match-function (  (String.prototype is not an-Mmn)
+  McshTchInf000010:3666  String.prototype'replace-function (  (String.prototype is not an-Mmn)
+  McshTchInf000010:3671  String.prototype'split-function (  (String.prototype is not an-Mmn)
+  McshTchInf000010:3849  String.prototype'codePointAt_function  (String.prototype is not an-Mmn)
+  McshTchInf000010:3867  String.prototype'match_function  (String.prototype is not an-Mmn)
+  McshTchInf000010:3893  String.prototype'replace_function  (String.prototype is not an-Mmn)
+  McshTchInf000010:3930  String.prototype'split_function  (String.prototype is not an-Mmn)
+  McshTchInf000010:3963  String.prototype'substring_function  (String.prototype is not an-Mmn)
+  McshTchInf000010:4100  jsAPI'most-whole-object (global)  (jsAPI is not an-Mmn)
+  McshTchInf000010:4213  jsAPI'most-generic-object (Object.prototype)  (jsAPI is not an-Mmn)
+  McshTchInf000010:6256  pgm'Execution  (pgm is not an-Mmn)
+  McshTchInf000011:142  Jsbrlago-archo'HML  (Jsbrlago-archo is not an-Mmn)
+  McshTchInf000011:149  Jsbrlago-archo'CSS  (Jsbrlago-archo is not an-Mmn)
+  McshTchInf000011:3082  JsbralgoBrowser'Window-function  (JsbralgoBrowser is not an-Mmn)
+  McshTchInf000011:4094  'Html_'DOM  ('Html_ is not an-Mmn)
+  McshTchInf000011:4111  'Html_'document-object  ('Html_ is not an-Mmn)
+  McshTchInf000011:4771  Jsbr'fetch-Api  (Jsbr is not an-Mmn)
+  McshTchInf000011:4789  Jsbr'fetch-function  (Jsbr is not an-Mmn)
+  McshTchInf000011:4812  Jsbr'Response-function  (Jsbr is not an-Mmn)
+  McshTchInf000011:4832  Jsbr'XMLHttpRequest-function  (Jsbr is not an-Mmn)
+  McshTchInf000012:214  algo'UNIT  (algo is not an-Mmn)
+  McshTchInf000012:229  algo'WORD  (algo is not an-Mmn)
+  McshTchInf000012:242  algo'SEMANTIC-UNIT  (algo is not an-Mmn)
+  McshTchInf000012:750  Jsndmobt'member  (Jsndmobt is not an-Mmn)
+  McshTchInf000012:971  Jsndlago-require'Destructuring-assignment  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:988  Jsndlago-require'Import-core-module  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1006  Jsndlago-require'Import-member-of-module  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1019  Jsndlago-require'Import-from-relative-path  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1036  Jsndlago-require'Import-from-absolute-path  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1051  Jsndlago-require'Import-by-searching  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1073  Jsndlago-require'Import-JSON-file  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1087  Jsndlago-require'Member  (Jsndlago-require is not an-Mmn)
+  McshTchInf000012:1614  mfEvents'member  (mfEvents is not an-Mmn)
+  McshTchInf000012:1701  mfEvents'listener-function  (mfEvents is not an-Mmn)
+  McshTchInf000012:2222  moHttp'member  (moHttp is not an-Mmn)
+  McshTchInf000012:2932  lagJsndutil'member  (lagJsndutil is not an-Mmn)
+  McshTchInf000012:3181  algo'API  (algo is not an-Mmn)
+  McshTchInf000012:3716  Jsndlago-process'member  (Jsndlago-process is not an-Mmn)
+  McshTchInf000012:3733  Jsndlago-process'argv-array  (Jsndlago-process is not an-Mmn)
+  McshTchInf000012:3766  Jsndlago-process'versions-object  (Jsndlago-process is not an-Mmn)
+  McshTchInf000012:3871  algo'PHRASE  (algo is not an-Mmn)
+  McshTchInf000012:3885  algo'SENTENCE  (algo is not an-Mmn)
+  McshTchInf000012:4620  lagJsnddbg'debugger-statement  (lagJsnddbg is not an-Mmn)
+  McshTchInf000012:6390  ESLint'configuring  (ESLint is not an-Mmn)
+  McshTchInf000012:6407  ESLint'configuration-file  (ESLint is not an-Mmn)
+  McshTchInf000012:6438  ESLint'configuration-rule  (ESLint is not an-Mmn)
+  McshTchInf000012:7870  lagJsndexpress'API  (lagJsndexpress is not an-Mmn)
+  McshTchInf000012:7878  lagJsndexpress'Resource  (lagJsndexpress is not an-Mmn)
+  McshTchInf000012:7961  lagJsndjake'namespace  (lagJsndjake is not an-Mmn)
+  McshTchInf000012:7999  lagJsndjake'task  (lagJsndjake is not an-Mmn)
+  McshTchInf000012:8063  lagJsndjake'usage  (lagJsndjake is not an-Mmn)
+  McshTchInf000012:10281  Jsndlago-Repl'module (core 2.stable)  (Jsndlago-Repl is not an-Mmn)
+  McshTchInf000012:10339  runtime'Synopsis  (runtime is not an-Mmn)
+  McshTchInf000012:10351  runtime'option  (runtime is not an-Mmn)
+  McshTchInf000012:10767  runtime'argument  (runtime is not an-Mmn)
+  McshTchInf000012:10800  runtime'installing  (runtime is not an-Mmn)
+  McshTchInf000012:10858  runtime'environment-variables  (runtime is not an-Mmn)
+  McshTchInf000013:144  algo'API  (algo is not an-Mmn)
+  McshTchInf000013:159  Jselapi'process  (Jselapi is not an-Mmn)
+  McshTchInf000013:185  Jselapi'global_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:230  Jselapi'MAIN-PROCESS  (Jselapi is not an-Mmn)
+  McshTchInf000013:292  Jselapi'BrowserView_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:312  Jselapi'BrowserWindow_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:350  Jselapi'BrowserWindow-object  (Jselapi is not an-Mmn)
+  McshTchInf000013:373  Jselapi'Menu_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:392  Jselapi'Menu_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:415  Jselapi'MenuItem_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:430  Jselapi'MenuItem_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:489  Jselapi'TouchBar_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:502  Jselapi'Tray_function  (Jselapi is not an-Mmn)
+  McshTchInf000013:515  Jselapi'app_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:546  Jselapi'autoUpdater_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:572  Jselapi'clipboard_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:594  Jselapi'contentTracing_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:618  Jselapi'crashReporter_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:642  Jselapi'dialog_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:697  Jselapi'globalShortcut_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:723  Jselapi'ipcMain_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:748  Jselapi'nativeImage_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:771  Jselapi'net_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:804  Jselapi'powerMonitor_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:831  Jselapi'powerSaveBlocker_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:855  Jselapi'protocol_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:875  Jselapi'screen_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:916  Jselapi'session_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:940  Jselapi'shell_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:966  Jselapi'systemPreferences_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:996  Jselapi'webContents_object  (Jselapi is not an-Mmn)
+  McshTchInf000013:1051  Jselapi'RENDERER-PROCESS  (Jselapi is not an-Mmn)
+  McshTchInf000013:1088  Jselapi'desktopCapturer-object  (Jselapi is not an-Mmn)
+  McshTchInf000013:1101  Jselapi'ipcRenderer-object  (Jselapi is not an-Mmn)
+  McshTchInf000013:1124  Jselapi'remote-object  (Jselapi is not an-Mmn)
+  McshTchInf000013:1149  Jselapi'webFrame-object  (Jselapi is not an-Mmn)
+  McshTchInf000013:1292  Jselapppkgjson'name_string_member  (Jselapppkgjson is not an-Mmn)
+  McshTchInf000014:5239  bnr-algo'file of Wasmlago  (bnr-algo is not an-Mmn)
+  McshTchInf000015:5727  Agntasset.FOUNDER'S-TOKEN  (Agntasset.FOUNDER is not an-Mmn)
+  McshTchInf000015:8652  bitpay'Card  (bitpay is not an-Mmn)
+  McshTchInf000015:8692  bitstamp'office  (bitstamp is not an-Mmn)
+  McshTchInf000015:8792  ognChangelly'Fee  (ognChangelly is not an-Mmn)
+  McshTchInf000015:8806  ognChangelly'exchange-rate-chart  (ognChangelly is not an-Mmn)
+  McshTchInf000015:8867  coinbase'exchange  (coinbase is not an-Mmn)
+  McshTchInf000015:8880  coinbase'API  (coinbase is not an-Mmn)
+  McshTchInf000015:8962  lakebtc'security  (lakebtc is not an-Mmn)
+  McshTchInf000016:208  security'consensus-algorithm (  (security is not an-Mmn)
+  McshTchInf000016:213  security'51-percent-attack  (security is not an-Mmn)
+  McshTchInf000016:224  security'resource  (security is not an-Mmn)
+  McshTchInf000016:422  miner-node'mining  (miner-node is not an-Mmn)
+  McshTchInf000016:451  miner-node'Pre-mining  (miner-node is not an-Mmn)
+  McshTchInf000016:468  miner-node'CLOUD-MINING  (miner-node is not an-Mmn)
+  McshTchInf000016:488  miner-node'MINING-POOL  (miner-node is not an-Mmn)
+  McshTchInf000016:1817  bynevuC'exchange-rate  (bynevuC is not an-Mmn)
+  McshTchInf000016:3765  jaxwlt'exchange-value-unit  (jaxwlt is not an-Mmn)
+  McshTchInf000016:3787  jaxwlt'Fee  (jaxwlt is not an-Mmn)
+  McshTchInf000016:3807  jaxwlt'Doing  (jaxwlt is not an-Mmn)
+  McshTchInf000016:3827  jaxwlt'Updating  (jaxwlt is not an-Mmn)
+  McshTchInf000016:4198  Wings'organization  (Wings is not an-Mmn)
+  McshTchInf000016:4220  Dogn'managing  (Dogn is not an-Mmn)
+  McshTchInf000016:4263  Wings'resource  (Wings is not an-Mmn)
+  McshTchInf000016:6058  scnet'Resource  (scnet is not an-Mmn)
+  McshTchInf000016:8331  Tzs-net'Resource  (Tzs-net is not an-Mmn)
+  McshTchInf000016:8476  zecnet'Blockchain (zecbcn)  (zecnet is not an-Mmn)
+  McshTchInf000016:8480  zecnet'Block-explorer (zecber)  (zecnet is not an-Mmn)
+  McshTchInf000016:8489  zecnet'Consensus-algorithm  (zecnet is not an-Mmn)
+  McshTchInf000016:8529  zecnet'Resource  (zecnet is not an-Mmn)
+  McshTchInf000016:8589  ĐLisk'Protocol  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8597  ĐLisk'Node  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8605  lsknodeMnr'Mining  (lsknodeMnr is not an-Mmn)
+  McshTchInf000016:8626  ĐLisk'Blockchain  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8638  Lsk-bcn'Block-Explorer  (Lsk-bcn is not an-Mmn)
+  McshTchInf000016:8656  Lsk-bcn'Consensus-algorithm (lskcsa)  (Lsk-bcn is not an-Mmn)
+  McshTchInf000016:8698  LSK'exchange-rate  (LSK is not an-Mmn)
+  McshTchInf000016:8709  LSK'Organization  (LSK is not an-Mmn)
+  McshTchInf000016:8753  ĐLisk'Bapp  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8779  ĐLisk'Problem  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8798  ĐLisk'Human  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8807  ĐLisk'Relation-to-ethereum  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8827  ĐLisk'resource  (ĐLisk is not an-Mmn)
+  McshTchInf000016:8899  waves-net'Protocol (wavprl)  (waves-net is not an-Mmn)
+  McshTchInf000016:8903  wavprl'White-paper  (wavprl is not an-Mmn)
+  McshTchInf000016:9132  waves-net'Blockchain (wavbcn)  (waves-net is not an-Mmn)
+  McshTchInf000016:9136  wavbcn'Block-Explorer (wavbex)  (wavbcn is not an-Mmn)
+  McshTchInf000016:9145  wavbcn'Consenus-algorithm  (wavbcn is not an-Mmn)
+  McshTchInf000016:9186  wavesevuC'OgnExchange  (wavesevuC is not an-Mmn)
+  McshTchInf000016:9200  waves-net'Funding  (waves-net is not an-Mmn)
+  McshTchInf000016:9214  waves-net'Reletion-to-ethereum  (waves-net is not an-Mmn)
+  McshTchInf000016:9232  waves-net'Resource  (waves-net is not an-Mmn)
+  McshTchInf000016:9248  waves-net'Service (wavsvc)  (waves-net is not an-Mmn)
+  McshTchInf000016:9334  dcrprl'Constitution (dcrcttn)  (dcrprl is not an-Mmn)
+  McshTchInf000016:9563  dcrbcn'Block (dcrblk)  (dcrbcn is not an-Mmn)
+  McshTchInf000016:9573  dcrblk'Hash  (dcrblk is not an-Mmn)
+  McshTchInf000016:9580  dcrblk'Header  (dcrblk is not an-Mmn)
+  McshTchInf000016:9716  dcrbcn'Block-Explorer (dcrbex)  (dcrbcn is not an-Mmn)
+  McshTchInf000016:9725  dcrbcn'Consensus-algorithm  (dcrbcn is not an-Mmn)
+  McshTchInf000016:9774  dcrbcn'Address  (dcrbcn is not an-Mmn)
+  McshTchInf000016:9797  dcrbcn'Hash-rate  (dcrbcn is not an-Mmn)
+  McshTchInf000016:9846  dcrgov'Decred-Assembly (dcrasl)  (dcrgov is not an-Mmn)
+  McshTchInf000016:9980  dcrd'Option  (dcrd is not an-Mmn)
+  McshTchInf000016:10075  dcrctl'Command (dcrctl [command])  (dcrctl is not an-Mmn)
+  McshTchInf000016:10428  dcrwlt'Account  (dcrwlt is not an-Mmn)
+  McshTchInf000016:10469  dcrwltCli'Directory  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10474  dcrwltCli'File  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10541  dcrwltCli'Money  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10545  dcrwltCli'Sending-to-address  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10557  dcrwltCli'Ballance  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10566  dcrwltCli'Passphrase  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10578  dcrwltCli'Creating  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10592  dcrwltCli'Connecting-to-network  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10605  dcrwltCli'Deleting  (dcrwltCli is not an-Mmn)
+  McshTchInf000016:10822  pivxnet'Resource  (pivxnet is not an-Mmn)
+  McshTchInf000016:10893  btsnet'Protocol (btsprl)  (btsnet is not an-Mmn)
+  McshTchInf000016:11654  btsnet'Blockchain (btsbcn)  (btsnet is not an-Mmn)
+  McshTchInf000016:11658  btsbcn'Block (btsblk)  (btsbcn is not an-Mmn)
+  McshTchInf000016:11677  btsbcn'Block-Explorer (btsbex)  (btsbcn is not an-Mmn)
+  McshTchInf000016:11716  btsnet'Governance-system (btsgov)  (btsnet is not an-Mmn)
+  McshTchInf000016:11728  btsnet'Commitee  (btsnet is not an-Mmn)
+  McshTchInf000016:11744  btsnet'Human (btshmn)  (btsnet is not an-Mmn)
+  McshTchInf000016:11768  btsnet'Organization (btsogn)  (btsnet is not an-Mmn)
+  McshTchInf000016:11794  btsnet'Resource (btsrsc)  (btsnet is not an-Mmn)
+  McshTchInf000016:11903  xemnet'Protocol  (xemnet is not an-Mmn)
+  McshTchInf000016:11907  xemprl'Implementation-language  (xemprl is not an-Mmn)
+  McshTchInf000016:11921  xemprl'Resource  (xemprl is not an-Mmn)
+  McshTchInf000016:11936  xemnet'Node  (xemnet is not an-Mmn)
+  McshTchInf000016:11940  xemnod'Node-server (NIS)  (xemnod is not an-Mmn)
+  McshTchInf000016:11960  xemnet'Blockchain  (xemnet is not an-Mmn)
+  McshTchInf000016:11972  xembcn'Block (xemblk)  (xembcn is not an-Mmn)
+  McshTchInf000016:11976  xemblk'Block-time  (xemblk is not an-Mmn)
+  McshTchInf000016:11986  xembcn'Block-Explorer (xembex)  (xembcn is not an-Mmn)
+  McshTchInf000016:11997  xemnet'Consensus-algorithm  (xemnet is not an-Mmn)
+  McshTchInf000016:12012  xembcn'Address  (xembcn is not an-Mmn)
+  McshTchInf000016:12154  xemnet'Program  (xemnet is not an-Mmn)
+  McshTchInf000016:12179  xemnet'Wallet  (xemnet is not an-Mmn)
+  McshTchInf000016:12183  xemnet'Light-wallet  (xemnet is not an-Mmn)
+  McshTchInf000016:12188  xemnet'Mobile-wallet  (xemnet is not an-Mmn)
+  McshTchInf000016:12193  xemnet'Nanowallet  (xemnet is not an-Mmn)
+  McshTchInf000016:12199  xemnet'Organization  (xemnet is not an-Mmn)
+  McshTchInf000016:12203  xemnet'NEM-Foundation  (xemnet is not an-Mmn)
+  McshTchInf000016:12218  xemnet'Problem  (xemnet is not an-Mmn)
+  McshTchInf000016:12245  xemnet'Resource  (xemnet is not an-Mmn)
+  McshTchInf000016:12261  xemnet'DOING  (xemnet is not an-Mmn)
+  McshTchInf000016:12266  xemnet'Service  (xemnet is not an-Mmn)
+  McshTchInf000016:12278  xemnet'Namespace  (xemnet is not an-Mmn)
+  McshTchInf000016:12294  xemnet'Mosaic  (xemnet is not an-Mmn)
+  McshTchInf000016:12405  masternode'owner (  (masternode is not an-Mmn)
+  McshTchInf000016:13144  Ddash-govc'funding  (Ddash-govc is not an-Mmn)
+  McshTchInf000016:13173  Ddash-govc'proposal  (Ddash-govc is not an-Mmn)
+  McshTchInf000016:13277  Ddash-govc'vote  (Ddash-govc is not an-Mmn)
+  McshTchInf000016:13293  Ddash-govc'resource  (Ddash-govc is not an-Mmn)
+  McshTchInf000016:13375  dashbcn'Block-Explorer (dashbex)  (dashbcn is not an-Mmn)
+  McshTchInf000016:13432  Dash-net'v13  (Dash-net is not an-Mmn)
+  McshTchInf000016:13515  emcnet'Blockchain  (emcnet is not an-Mmn)
+  McshTchInf000016:13519  emcbcn'Block-explorer  (emcbcn is not an-Mmn)
+  McshTchInf000016:13543  emcevuC'exchange-rate (emcexr)  (emcevuC is not an-Mmn)
+  McshTchInf000016:13551  emcevuC'Geting  (emcevuC is not an-Mmn)
+  McshTchInf000016:13565  emcnet'Resource  (emcnet is not an-Mmn)
+  McshTchInf000016:13578  emcnet'DOING  (emcnet is not an-Mmn)
+  McshTchInf000016:13582  emcnet'Service  (emcnet is not an-Mmn)
+  McshTchInf000016:13641  Nxt-net'Blockchain (nxtbcn)  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13645  nxtbcn'Block-Explorer (nxtbex)  (nxtbcn is not an-Mmn)
+  McshTchInf000016:13657  Nxt-net'exchange-value-unit (Nxtzasset)  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13792  Nxt-net'Program  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13815  Nxt-net'Wallet  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13829  Nxt-net'Security  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13842  Nxt-net'Human  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13890  Nxt-net'Organization  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13924  Nxt-net'Resource  (Nxt-net is not an-Mmn)
+  McshTchInf000016:13939  Nxt-net'Doing  (Nxt-net is not an-Mmn)
+  McshTchInf000016:14060  ppcnet'Protocol  (ppcnet is not an-Mmn)
+  McshTchInf000016:14064  ppcprl'White-paper {2012}  (ppcprl is not an-Mmn)
+  McshTchInf000016:14286  ppcnet'Concensous-exval-tokent (PPCevuC)  (ppcnet is not an-Mmn)
+  McshTchInf000016:14344  ppcnet'Resource  (ppcnet is not an-Mmn)
+  McshTchInf000016:14410  Ripple-net'Protocol  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14424  Ripple-net'Node  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14428  xrpnod'UNL  (xrpnod is not an-Mmn)
+  McshTchInf000016:14501  Ripple-net'Blockchain  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14521  blockchain'Consensus-algorithm  (blockchain is not an-Mmn)
+  McshTchInf000016:14548  blockchain'Transaction  (blockchain is not an-Mmn)
+  McshTchInf000016:14586  Ripple-net'ExvuXRP  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14699  Ripple-net'Statistics  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14718  Ripple-net'Program  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14770  Ripple-net'Security  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14785  Ripple-net'Human  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14806  Ripple-net'Organization  (Ripple-net is not an-Mmn)
+  McshTchInf000016:14824  xrpogn'Gateway  (xrpogn is not an-Mmn)
+  McshTchInf000016:14843  Ripple-net'Resource  (Ripple-net is not an-Mmn)
+  McshTchInf000016:15000  ltcnet'Resource  (ltcnet is not an-Mmn)
+  McshTchInf000016:15032  nmcnet'Blockchain  (nmcnet is not an-Mmn)
+  McshTchInf000016:15036  nmcnet'Block-explorer  (nmcnet is not an-Mmn)
+  McshTchInf000016:15046  nmcnet'Concensus-evt (NMCevuC)  (nmcnet is not an-Mmn)
+  McshTchInf000016:15182  Dfn-net'Protocol  (Dfn-net is not an-Mmn)
+  McshTchInf000016:15192  Dfn-prl'Threshold-Relay  (Dfn-prl is not an-Mmn)
+  McshTchInf000016:15205  Dfn-prl'Validation-Tower  (Dfn-prl is not an-Mmn)
+  McshTchInf000016:15210  Dfn-prl'Validation-Tree  (Dfn-prl is not an-Mmn)
+  McshTchInf000016:15215  Dfn-prl'USCID (Unique State Copy IDs)  (Dfn-prl is not an-Mmn)
+  McshTchInf000016:15221  Dfn-net'Governance-system  (Dfn-net is not an-Mmn)
+  McshTchInf000016:15257  Dfn-gov'Neuron  (Dfn-gov is not an-Mmn)
+  McshTchInf000016:15261  dfnnrn'Controller  (dfnnrn is not an-Mmn)
+  McshTchInf000016:15272  dfnnrn'Creating  (dfnnrn is not an-Mmn)
+  McshTchInf000016:15277  dfnnrn'Voting  (dfnnrn is not an-Mmn)
+  McshTchInf000016:15284  Dfn-net'Resource  (Dfn-net is not an-Mmn)
+  McshTchInf000016:16130  snrnet'exchange-value-unit (AMPevu)  (snrnet is not an-Mmn)
+  McshTchInf000016:16172  snrnet'Resource  (snrnet is not an-Mmn)
+  McshTchInf000017:664  Bitcoin-hmn'mailing-list  (Bitcoin-hmn is not an-Mmn)
+  McshTchInf000017:688  Bitcoin-miner'reward (  (Bitcoin-miner is not an-Mmn)
+  McshTchInf000017:891  Bitcoin-node'Consensus  (Bitcoin-node is not an-Mmn)
+  McshTchInf000017:906  Bitcoin-node'Hardware  (Bitcoin-node is not an-Mmn)
+  McshTchInf000017:911  Bitcoin-node'Software  (Bitcoin-node is not an-Mmn)
+  McshTchInf000017:916  Bitcoin-node'Resource  (Bitcoin-node is not an-Mmn)
+  McshTchInf000017:980  Bitcoin-nodFul'Bitcoin-Core (  (Bitcoin-nodFul is not an-Mmn)
+  McshTchInf000017:985  Bitcoin-nodFul'requirements  (Bitcoin-nodFul is not an-Mmn)
+  McshTchInf000017:1081  Bitcoin-nodMnr'mining  (Bitcoin-nodMnr is not an-Mmn)
+  McshTchInf000017:1110  Bitcoin-nodMnr'Resource  (Bitcoin-nodMnr is not an-Mmn)
+  McshTchInf000017:1125  Bitcoin-nodMnr'CLOUD-MINING  (Bitcoin-nodMnr is not an-Mmn)
+  McshTchInf000017:1141  Bitcoin-nodMnr'COMPANY  (Bitcoin-nodMnr is not an-Mmn)
+  McshTchInf000017:1308  BtcnexvuC-rate'price  (BtcnexvuC-rate is not an-Mmn)
+  McshTchInf000017:1347  BtcnexvuC-rate'API  (BtcnexvuC-rate is not an-Mmn)
+  McshTchInf000017:1356  BtcnexvuC-rate'resource  (BtcnexvuC-rate is not an-Mmn)
+  McshTchInf000017:1855  Bitcoin-prcl'white-paper {2008}  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2227  Bitcoin-prcl'implementation  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2237  Bitcoin-prcl'reference-implementation (  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2243  Bitcoin-prcl'BIP (Bitcoin-Improvement-Proposals | btcbip)  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2274  Bitcoin-bip'Attribute  (Bitcoin-bip is not an-Mmn)
+  McshTchInf000017:2292  Bitcoin-prcl'sidechain  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2375  Bitcoin-prcl'Resource  (Bitcoin-prcl is not an-Mmn)
+  McshTchInf000017:2737  Bitcoin-bcr'application-directory  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2776  Bitcoin-bcr'bitcoind  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2797  Bitcoin-bcr'Bitcoin-cli  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2810  Bitcoin-bcr'Bitcoin-qt  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2823  Bitcoin-bcr'Internal-byte-order  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2839  Bitcoin-bcr'RPC  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:2852  Bitcoin-bcrrpc'Byte-order  (Bitcoin-bcrrpc is not an-Mmn)
+  McshTchInf000017:2874  Bitcoin-bcr'Resource  (Bitcoin-bcr is not an-Mmn)
+  McshTchInf000017:3865  bwlns'Resource  (bwlns is not an-Mmn)
+  McshTchInf000017:3928  Bitcoin-wltHd'HD-protocoll  (Bitcoin-wltHd is not an-Mmn)
+  McshTchInf000017:3948  Bitcoin-wltHd'chain-code  (Bitcoin-wltHd is not an-Mmn)
+  McshTchInf000017:3976  Bitcoin-wltHd'child-key  (Bitcoin-wltHd is not an-Mmn)
+  McshTchInf000017:3991  Bitcoin-wltHd'parent-key  (Bitcoin-wltHd is not an-Mmn)
+  McshTchInf000017:4005  Bitcoin-wltHd'Root-seed  (Bitcoin-wltHd is not an-Mmn)
+  McshTchInf000017:4868  Bitcoin-law'LEGAL  (Bitcoin-law is not an-Mmn)
+  McshTchInf000017:4908  Bitcoin-law'RESTRICTED  (Bitcoin-law is not an-Mmn)
+  McshTchInf000017:4923  Bitcoin-law'ILLEGAL  (Bitcoin-law is not an-Mmn)
+  McshTchInf000017:5039  blockchain'Block  (blockchain is not an-Mmn)
+  McshTchInf000017:5070  block'PART  (block is not an-Mmn)
+  McshTchInf000017:5386  block'number-of-transaction-entries  (block is not an-Mmn)
+  McshTchInf000017:5391  block'vector-of-transactions  (block is not an-Mmn)
+  McshTchInf000017:5397  block'Height  (block is not an-Mmn)
+  McshTchInf000017:5425  block'Miner (  (block is not an-Mmn)
+  McshTchInf000017:5430  block'Proof-of-work (  (block is not an-Mmn)
+  McshTchInf000017:5435  block'Reward  (block is not an-Mmn)
+  McshTchInf000017:5500  blockrwd'Transaction-fee (  (blockrwd is not an-Mmn)
+  McshTchInf000017:5505  blockrwd'Subsidy  (blockrwd is not an-Mmn)
+  McshTchInf000017:5525  blockrwd'Halving  (blockrwd is not an-Mmn)
+  McshTchInf000017:5558  block'Hash  (block is not an-Mmn)
+  McshTchInf000017:5593  block'Size  (block is not an-Mmn)
+  McshTchInf000017:5652  block'Depth  (block is not an-Mmn)
+  McshTchInf000017:5667  block'Blocktime  (block is not an-Mmn)
+  McshTchInf000017:5680  block'Validation-rule (  (block is not an-Mmn)
+  McshTchInf000017:5685  block'Explorer (  (block is not an-Mmn)
+  McshTchInf000017:5703  block'DOING  (block is not an-Mmn)
+  McshTchInf000017:5761  btc-mining'Mining-pool  (btc-mining is not an-Mmn)
+  McshTchInf000017:6059  blockchain'Block-explorer  (blockchain is not an-Mmn)
+  McshTchInf000017:6092  blockchain'Consensus-algorithm  (blockchain is not an-Mmn)
+  McshTchInf000017:6133  blockchain'Consensus-rule  (blockchain is not an-Mmn)
+  McshTchInf000017:6149  blockchaincsa'Proof-of-work (PoW)  (blockchaincsa is not an-Mmn)
+  McshTchInf000017:6190  blockchain'Address (Đbtc-ads)  (blockchain is not an-Mmn)
+  McshTchInf000017:6312  Bitcoin-ads'QR-code  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6327  Bitcoin-ads'Private-key  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6367  Bitcoin-ads'Public-key  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6392  Bitcoin-ads'Version-number  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6405  Bitcoin-ads'Public-key-hash  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6422  Bitcoin-ads'Hash160  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6439  Bitcoin-ads'Error-detection-checksum  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6464  Bitcoin-ads'Base58  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6480  Bitcoin-ads'Base58check  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6502  Bitcoin-ads'Explorer  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6510  Bitcoin-ads'Taint-analysis  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6524  Bitcoin-ads'DOING  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6528  Bitcoin-ads'Creating  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6540  Bitcoin-ads'Changing  (Bitcoin-ads is not an-Mmn)
+  McshTchInf000017:6649  blockchain'Transaction (btctx)  (blockchain is not an-Mmn)
+  McshTchInf000017:6815  btc-txinpt'id (32B)  (btc-txinpt is not an-Mmn)
+  McshTchInf000017:6835  btc-txinpt'vout (4B)  (btc-txinpt is not an-Mmn)
+  McshTchInf000017:6878  Bitcoin-txinpt'Coinbase  (Bitcoin-txinpt is not an-Mmn)
+  McshTchInf000017:6898  Bitcoin-txinpt'Hash-type  (Bitcoin-txinpt is not an-Mmn)
+  McshTchInf000017:7294  Script'script  (Script is not an-Mmn)
+  McshTchInf000017:7321  Script'script'Opcode  (Script'script is not an-Mmn)
+  McshTchInf000017:7457  btc-scriptSig'secp256k1-signature  (btc-scriptSig is not an-Mmn)
+  McshTchInf000017:7591  Script'evaluation  (Script is not an-Mmn)
+  McshTchInf000017:7623  Script'execution  (Script is not an-Mmn)
+  McshTchInf000017:7668  Script'resource  (Script is not an-Mmn)
+  McshTchInf000017:7925  Bitcoin-txCnbs'Extra-nonce  (Bitcoin-txCnbs is not an-Mmn)
+  McshTchInf000017:7941  Bitcoin-txCnbs'UTXO  (Bitcoin-txCnbs is not an-Mmn)
+  McshTchInf000017:8329  blockchain'Hashrate (btchhrt )  (blockchain is not an-Mmn)
+  McshTchInf000017:8361  Bitcoin-hhrt'Resource  (Bitcoin-hhrt is not an-Mmn)
+  McshTchInf000017:8488  blockchain'Crypto (btccrpt)  (blockchain is not an-Mmn)
+  McshTchInf000017:8498  Bitcoin-crpt'Hash-function  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8513  Bitcoin-crpt'To-hash  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8552  Bitcoin-crpt'Hash256  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8603  Bitcoin-crpt'Signature  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8625  Bitcoin-crpt'Elliptic-Curve-Arithmetic  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8645  Bitcoin-crpt'ECDSA  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8666  Bitcoin-crpt'CompactSize  (Bitcoin-crpt is not an-Mmn)
+  McshTchInf000017:8689  blockchain'Evaluation  (blockchain is not an-Mmn)
+  McshTchInf000017:8706  blockchain'Size  (blockchain is not an-Mmn)
+  McshTchInf000017:8719  blockchain'Resource  (blockchain is not an-Mmn)
+  McshTchInf000017:8732  blockchain'Doing  (blockchain is not an-Mmn)
+  McshTchInf000017:8740  blockchain'Changing  (blockchain is not an-Mmn)
+  McshTchInf000017:8748  blockchain'Synchronizing  (blockchain is not an-Mmn)
+  McshTchInf000017:8761  blockchain'Split  (blockchain is not an-Mmn)
+  McshTchInf000017:8784  blockchain'Service (  (blockchain is not an-Mmn)
+  McshTchInf000017:9406  Bitcoin-testnet'faucet-of-BTC  (Bitcoin-testnet is not an-Mmn)
+  McshTchInf000017:9414  Bitcoin-testnet'use  (Bitcoin-testnet is not an-Mmn)
+  McshTchInf000018:265  Deth-state'updating  (Deth-state is not an-Mmn)
+  McshTchInf000018:748  Deth-node'client-program (  (Deth-node is not an-Mmn)
+  McshTchInf000018:753  Deth-node'OS  (Deth-node is not an-Mmn)
+  McshTchInf000018:758  Deth-node'computer  (Deth-node is not an-Mmn)
+  McshTchInf000018:771  Deth-node'EVM (  (Deth-node is not an-Mmn)
+  McshTchInf000018:876  miner-node'Hardware  (miner-node is not an-Mmn)
+  McshTchInf000018:893  miner-node'mining  (miner-node is not an-Mmn)
+  McshTchInf000018:919  Deth-mining'Resource  (Deth-mining is not an-Mmn)
+  McshTchInf000018:994  Deth-account'Keypair  (Deth-account is not an-Mmn)
+  McshTchInf000018:1009  Deth-account'Keyfile  (Deth-account is not an-Mmn)
+  McshTchInf000018:1027  Deth-account'keystore  (Deth-account is not an-Mmn)
+  McshTchInf000018:1045  Deth-account'address (20-byte|160-bit|40-hex+2-0x)  (Deth-account is not an-Mmn)
+  McshTchInf000018:1076  address'Builtin-check  (address is not an-Mmn)
+  McshTchInf000018:1089  address'Resource  (address is not an-Mmn)
+  McshTchInf000018:1118  Deth-account'balance  (Deth-account is not an-Mmn)
+  McshTchInf000018:1143  Deth-account'Nonce  (Deth-account is not an-Mmn)
+  McshTchInf000018:1158  Deth-account'Code (  (Deth-account is not an-Mmn)
+  McshTchInf000018:1163  Deth-account'Location  (Deth-account is not an-Mmn)
+  McshTchInf000018:1176  Deth-account'Store-of-data  (Deth-account is not an-Mmn)
+  McshTchInf000018:1186  Deth-account'Stack-area (  (Deth-account is not an-Mmn)
+  McshTchInf000018:1191  Deth-account'Storage-area (  (Deth-account is not an-Mmn)
+  McshTchInf000018:1196  Deth-account'Memory-area (  (Deth-account is not an-Mmn)
+  McshTchInf000018:1202  Deth-account'Structure  (Deth-account is not an-Mmn)
+  McshTchInf000018:1215  Deth-account'Transaction  (Deth-account is not an-Mmn)
+  McshTchInf000018:1279  Deth-account'Resource  (Deth-account is not an-Mmn)
+  McshTchInf000018:1291  Deth-account'State  (Deth-account is not an-Mmn)
+  McshTchInf000018:1305  Deth-account'DOING  (Deth-account is not an-Mmn)
+  McshTchInf000018:1309  Deth-account'Controling  (Deth-account is not an-Mmn)
+  McshTchInf000018:1362  contract-account'address  (contract-account is not an-Mmn)
+  McshTchInf000018:1379  contract-account'transaction-created-by  (contract-account is not an-Mmn)
+  McshTchInf000018:1384  contract-account'balance  (contract-account is not an-Mmn)
+  McshTchInf000018:1389  contract-account'contract-name  (contract-account is not an-Mmn)
+  McshTchInf000018:1394  contract-account'contract-program (  (contract-account is not an-Mmn)
+  McshTchInf000018:1399  contract-account'transaction-sent  (contract-account is not an-Mmn)
+  McshTchInf000018:1419  contract-account'message-call  (contract-account is not an-Mmn)
+  McshTchInf000018:1431  contract-account'relation-to-normal-account  (contract-account is not an-Mmn)
+  McshTchInf000018:1450  contract-account'resource  (contract-account is not an-Mmn)
+  McshTchInf000018:1464  contract-account'creating  (contract-account is not an-Mmn)
+  McshTchInf000018:1509  normal-account'address  (normal-account is not an-Mmn)
+  McshTchInf000018:1526  normal-account'balance  (normal-account is not an-Mmn)
+  McshTchInf000018:1531  normal-account'trasactionReceived  (normal-account is not an-Mmn)
+  McshTchInf000018:1536  normal-account'TrasactionSend  (normal-account is not an-Mmn)
+  McshTchInf000018:1541  normal-account'relation-to-contract-account (  (normal-account is not an-Mmn)
+  McshTchInf000018:1546  normal-account'relation-to-wallet  (normal-account is not an-Mmn)
+  McshTchInf000018:1563  normal-account'resource  (normal-account is not an-Mmn)
+  McshTchInf000018:1577  normal-account'creating  (normal-account is not an-Mmn)
+  McshTchInf000018:1678  Deth-protocol'implementation-language  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:1693  Deth-protocol'resource  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:1705  Deth-protocol'white-paper  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:2638  Deth-protocol'Plasma  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:2653  Deth-protocol'yellow-paper  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:2667  Deth-protocol'Whisper  (Deth-protocol is not an-Mmn)
+  McshTchInf000018:2778  gas'price  (gas is not an-Mmn)
+  McshTchInf000018:2800  gas'fee  (gas is not an-Mmn)
+  McshTchInf000018:2817  gas'limit  (gas is not an-Mmn)
+  McshTchInf000018:2830  gas'refund  (gas is not an-Mmn)
+  McshTchInf000018:2843  gas'resource  (gas is not an-Mmn)
+  McshTchInf000018:3910  Ethpm'resource  (Ethpm is not an-Mmn)
+  McshTchInf000018:4557  geth'Synopsis  (geth is not an-Mmn)
+  McshTchInf000018:4691  geth'Console  (geth is not an-Mmn)
+  McshTchInf000018:4750  MetaMask'Resource  (MetaMask is not an-Mmn)
+  McshTchInf000018:4789  testrpc'Resource  (testrpc is not an-Mmn)
+  McshTchInf000018:4801  testrpc'Installing  (testrpc is not an-Mmn)
+  McshTchInf000018:4832  Mist'API  (Mist is not an-Mmn)
+  McshTchInf000018:4847  Mist'data-folder  (Mist is not an-Mmn)
+  McshTchInf000018:4858  Mist'resource  (Mist is not an-Mmn)
+  McshTchInf000018:4870  Mist'doing  (Mist is not an-Mmn)
+  McshTchInf000018:4877  Mist'updating  (Mist is not an-Mmn)
+  McshTchInf000018:4942  Parity'Server  (Parity is not an-Mmn)
+  McshTchInf000018:4955  Parity'Wallet  (Parity is not an-Mmn)
+  McshTchInf000018:4981  Parity'Directory  (Parity is not an-Mmn)
+  McshTchInf000018:4985  Parity'Dapps-dir  (Parity is not an-Mmn)
+  McshTchInf000018:5003  Parity'Proof-of-Authority  (Parity is not an-Mmn)
+  McshTchInf000018:5024  Parity'Problem  (Parity is not an-Mmn)
+  McshTchInf000018:5037  Parity'Resource  (Parity is not an-Mmn)
+  McshTchInf000018:5055  Parity'DOING  (Parity is not an-Mmn)
+  McshTchInf000018:5059  Parity'Installing  (Parity is not an-Mmn)
+  McshTchInf000018:5067  Parity'Configuring  (Parity is not an-Mmn)
+  McshTchInf000018:5153  Truffle'Synopsis  (Truffle is not an-Mmn)
+  McshTchInf000018:5185  Truffle'Command  (Truffle is not an-Mmn)
+  McshTchInf000018:5233  Truffle'Dapp  (Truffle is not an-Mmn)
+  McshTchInf000018:5237  Truffle'Dapp-structure  (Truffle is not an-Mmn)
+  McshTchInf000018:5251  Truffle'Directory  (Truffle is not an-Mmn)
+  McshTchInf000018:5255  Truffle'DirBuild  (Truffle is not an-Mmn)
+  McshTchInf000018:5259  eth-tfl'Artifact  (eth-tfl is not an-Mmn)
+  McshTchInf000018:5276  Truffle'DirContracts  (Truffle is not an-Mmn)
+  McshTchInf000018:5289  Truffle'DirMigrations  (Truffle is not an-Mmn)
+  McshTchInf000018:5302  Truffle'DirTests  (Truffle is not an-Mmn)
+  McshTchInf000018:5316  Truffle'File  (Truffle is not an-Mmn)
+  McshTchInf000018:5320  Truffle'FilMigration  (Truffle is not an-Mmn)
+  McshTchInf000018:5369  Truffle'Problem  (Truffle is not an-Mmn)
+  McshTchInf000018:5377  Truffle'Resource  (Truffle is not an-Mmn)
+  McshTchInf000018:5396  Truffle'doing  (Truffle is not an-Mmn)
+  McshTchInf000018:5400  Truffle'Installing-truffle  (Truffle is not an-Mmn)
+  McshTchInf000018:5424  Truffle'Compiling-project  (Truffle is not an-Mmn)
+  McshTchInf000018:5429  Truffle'Migrating-project  (Truffle is not an-Mmn)
+  McshTchInf000018:5434  Truffle'Testing-project  (Truffle is not an-Mmn)
+  McshTchInf000018:5555  walletMst'Backup  (walletMst is not an-Mmn)
+  McshTchInf000018:5560  walletMst'Data-folder  (walletMst is not an-Mmn)
+  McshTchInf000018:5571  walletMst'Resource  (walletMst is not an-Mmn)
+  McshTchInf000018:5584  walletMst'Installing  (walletMst is not an-Mmn)
+  McshTchInf000018:5589  walletMst'Updating  (walletMst is not an-Mmn)
+  McshTchInf000018:5597  walletMst'Deleting  (walletMst is not an-Mmn)
+  McshTchInf000018:6448  eth-sosut'Converting  (eth-sosut is not an-Mmn)
+  McshTchInf000018:8270  eth-sol'path-of-files  (eth-sol is not an-Mmn)
+  McshTchInf000018:9439  langLLL'Compiler  (langLLL is not an-Mmn)
+  McshTchInf000018:9455  langLLL'Resource  (langLLL is not an-Mmn)
+  McshTchInf000018:9516  langViper'resource  (langViper is not an-Mmn)
+  McshTchInf000018:9573  Deth-abi'Resource  (Deth-abi is not an-Mmn)
+  McshTchInf000018:10217  contract-bytecode'storage  (contract-bytecode is not an-Mmn)
+  McshTchInf000018:10566  Deth-core'Human  (Deth-core is not an-Mmn)
+  McshTchInf000018:10717  Embark'Dapp-structure  (Embark is not an-Mmn)
+  McshTchInf000018:10740  Embark'EmbarkJS  (Embark is not an-Mmn)
+  McshTchInf000018:11089  block'parentHash (ethblkHp)  (block is not an-Mmn)
+  McshTchInf000018:11104  block'ommersHash (ethblkHo)  (block is not an-Mmn)
+  McshTchInf000018:11119  block'beneficiary (ethblkHc)  (block is not an-Mmn)
+  McshTchInf000018:11140  block'stateRoot (ethblkHr)  (block is not an-Mmn)
+  McshTchInf000018:11154  block'transactionsRoot (ethblkHt)  (block is not an-Mmn)
+  McshTchInf000018:11168  block'receiptsRoot (ethblkHe)  (block is not an-Mmn)
+  McshTchInf000018:11182  block'logsBloom (ethblkHb)  (block is not an-Mmn)
+  McshTchInf000018:11196  block'difficulty (ethblkHd)  (block is not an-Mmn)
+  McshTchInf000018:11214  block'number (ethblkHi)  (block is not an-Mmn)
+  McshTchInf000018:11265  block'gasLimit (ethblkHl)  (block is not an-Mmn)
+  McshTchInf000018:11279  block'gasUsed (ethblkHg)  (block is not an-Mmn)
+  McshTchInf000018:11293  block'timestamp (ethblkHs)  (block is not an-Mmn)
+  McshTchInf000018:11310  block'extraData (ethblkHx)  (block is not an-Mmn)
+  McshTchInf000018:11328  block'mixHash (ethblkHm)  (block is not an-Mmn)
+  McshTchInf000018:11343  block'nonce (ethblkHn)  (block is not an-Mmn)
+  McshTchInf000018:11401  block'Hash  (block is not an-Mmn)
+  McshTchInf000018:11418  block'Gas  (block is not an-Mmn)
+  McshTchInf000018:11432  block'Merkle-tree  (block is not an-Mmn)
+  McshTchInf000018:11505  block'Time  (block is not an-Mmn)
+  McshTchInf000018:11515  block'Age  (block is not an-Mmn)
+  McshTchInf000018:11520  block'Timestamp (  (block is not an-Mmn)
+  McshTchInf000018:11525  block'Generation (Time-between-blocks)  (block is not an-Mmn)
+  McshTchInf000018:11541  block'Explorer (  (block is not an-Mmn)
+  McshTchInf000018:11546  block'Relation-to-bitcoin-block  (block is not an-Mmn)
+  McshTchInf000018:11999  tx'Hash  (tx is not an-Mmn)
+  McshTchInf000018:12006  tx'Block  (tx is not an-Mmn)
+  McshTchInf000018:12018  tx'age  (tx is not an-Mmn)
+  McshTchInf000018:12030  tx'sender-account  (tx is not an-Mmn)
+  McshTchInf000018:12051  tx'fee  (tx is not an-Mmn)
+  McshTchInf000018:12075  tx'gas-limit  (tx is not an-Mmn)
+  McshTchInf000018:12089  tx'log  (tx is not an-Mmn)
+  McshTchInf000018:12106  tx'security  (tx is not an-Mmn)
+  McshTchInf000018:12121  tx'resource  (tx is not an-Mmn)
+  McshTchInf000018:12136  tx'DOING  (tx is not an-Mmn)
+  McshTchInf000018:12150  tx'creating  (tx is not an-Mmn)
+  McshTchInf000018:12161  tx'submitting  (tx is not an-Mmn)
+  McshTchInf000018:12796  Deth-net'METROPOLIS  (Deth-net is not an-Mmn)
+  McshTchInf000018:12815  Deth-net'HOMESTEAD {2016-02-29},  (Deth-net is not an-Mmn)
+  McshTchInf000018:12837  Deth-net'FRONTIER (1-0.2015-07-26)  (Deth-net is not an-Mmn)
+  McshTchInf000018:12914  Etc-Net'resource  (Etc-Net is not an-Mmn)
+  McshTchInf000019:3394  proposal's-reputation (  (proposal is not an-Mmn)
+  McshTchInf000020:77  protocol'white-paper {2017-03-20},  (protocol is not an-Mmn)
+  McshTchInf000020:709  protocol'LaborX-white-paper (chblxw)  (protocol is not an-Mmn)
+  McshTchInf000020:1259  protocol'business-outline  (protocol is not an-Mmn)
+  McshTchInf000020:1309  program'Doing  (program is not an-Mmn)
+  McshTchInf000020:1313  program'Developing  (program is not an-Mmn)
+  McshTchInf000020:2395  LaborX'attribute  (LaborX is not an-Mmn)
+  McshTchInf000020:2405  LaborX'LaborX-Core  (LaborX is not an-Mmn)
+  McshTchInf000020:2433  LaborX'LaborX-DApp-frontend  (LaborX is not an-Mmn)
+  McshTchInf000020:2465  LaborX'canceling-job  (LaborX is not an-Mmn)
+  McshTchInf000020:2481  LaborX'worker (job-seeker | employee)  (LaborX is not an-Mmn)
+  McshTchInf000020:2497  worker'compensation-per-hour (rate)  (worker is not an-Mmn)
+  McshTchInf000020:2515  worker'evaluation  (worker is not an-Mmn)
+  McshTchInf000020:2538  worker'profile  (worker is not an-Mmn)
+  McshTchInf000020:2551  worker'rating  (worker is not an-Mmn)
+  McshTchInf000020:2605  LaborX'employer  (LaborX is not an-Mmn)
+  McshTchInf000020:2621  employer'evaluation  (employer is not an-Mmn)
+  McshTchInf000020:2643  employer'searching-for-worker  (employer is not an-Mmn)
+  McshTchInf000020:2657  employer'protection  (employer is not an-Mmn)
+  McshTchInf000020:2671  LaborX'provider (mediator)  (LaborX is not an-Mmn)
+  McshTchInf000020:2700  LaborX'Job-board  (LaborX is not an-Mmn)
+  McshTchInf000020:2733  LaborX'Trust-system  (LaborX is not an-Mmn)
+  McshTchInf000020:2746  LaborX'Recommender  (LaborX is not an-Mmn)
+  McshTchInf000020:2759  LaborX'evaluator  (LaborX is not an-Mmn)
+  McshTchInf000020:2772  LaborX'verifier  (LaborX is not an-Mmn)
+  McshTchInf000020:2785  LaborX'Job  (LaborX is not an-Mmn)
+  McshTchInf000020:2804  LaborX-job'work-description  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2815  LaborX-job'field-of-work  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2820  LaborX-job'skills  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2831  LaborX-job'time-due  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2844  LaborX-job'money-used (token)  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2856  LaborX-job'location  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2873  LaborX-job'provider-used  (LaborX-job is not an-Mmn)
+  McshTchInf000020:2885  LaborX'rating-system  (LaborX is not an-Mmn)
+  McshTchInf000020:2900  LaborX'Activity-points  (LaborX is not an-Mmn)
+  McshTchInf000020:2928  LaborX'Rating  (LaborX is not an-Mmn)
+  McshTchInf000020:2945  LaborX'Wallet  (LaborX is not an-Mmn)
+  McshTchInf000020:2963  LaborX'resource  (LaborX is not an-Mmn)
+  McshTchInf000020:2981  LaborX'White-paper (  (LaborX is not an-Mmn)
+  McshTchInf000020:2987  LaborX'DOING  (LaborX is not an-Mmn)
+  McshTchInf000020:2991  LaborX'messaging  (LaborX is not an-Mmn)
+  McshTchInf000020:3005  LaborX'searching  (LaborX is not an-Mmn)
+  McshTchInf000020:3024  LaborX'matching  (LaborX is not an-Mmn)
+  McshTchInf000020:3039  LaborX'EVOLUTING  (LaborX is not an-Mmn)
+  McshTchInf000026:1670  can't-be-evil  (can is not an-Mmn)
+  McshTchInf000029:199  Jsonlago-string'grammar  (Jsonlago-string is not an-Mmn)
+  McshTchInf000029:245  Jsonlago-number'grammar  (Jsonlago-number is not an-Mmn)
+  McshTchInf000029:307  JsonArr'grammar  (JsonArr is not an-Mmn)
+  McshTchInf000030:222  02_algo'node of Rustlago  (02_algo is not an-Mmn)
+  McshTchInf000030:303  03_algo'unit of Rustlago  (03_algo is not an-Mmn)
+  McshTchInf000030:325  algo'semantic-unit of Rustlago  (algo is not an-Mmn)
+  McshTchInf000030:1883  algo'phrase of Rustlago  (algo is not an-Mmn)
+  McshTchInf000030:1904  algo'sentence of Rustlago  (algo is not an-Mmn)
+  McshTchInf000030:2055  04_algo'word of Rustlago  (04_algo is not an-Mmn)
+  McshTchInf000030:3036  algo'root of Rustlago  (algo is not an-Mmn)
+  McshTchInf000030:3106  08_algo'section of Rustlago  (08_algo is not an-Mmn)
+  McshTchInf000030:3126  algo'titledNo-section of Rustlago  (algo is not an-Mmn)
+  McshTchInf000030:3140  algo'titled-section of Rustlago  (algo is not an-Mmn)
+  McshTchInf000031:49  09_algo'unit of Cppzlago  (09_algo is not an-Mmn)
+  McshTchInf000031:146  algo'word of Cppzlago  (algo is not an-Mmn)
+  McshTchInf000031:211  algo'semantic-unit of Cppzlago  (algo is not an-Mmn)
+  McshTchInf000031:1722  algo'sentence of Cppzlago  (algo is not an-Mmn)
+  McshTchInf000031:1909  algo'section of Cppzlago  (algo is not an-Mmn)
+  McshTchInf000031:2001  algo'DOING of Cppzlago  (algo is not an-Mmn)
+  McshTchInf000031:2014  algo'writing  (algo is not an-Mmn)
+  McshTchInf000031:2025  algo'building  (algo is not an-Mmn)
+  McshTchInf000031:2049  algo'pre-processing  (algo is not an-Mmn)
+  McshTchInf000031:2067  algo'compiling  (algo is not an-Mmn)
+  McshTchInf000031:2083  algo'linking  (algo is not an-Mmn)
+  McshTchInf000031:2409  algo'machine-memory  (algo is not an-Mmn)
+  McshTchInf000031:2428  algo'syntax-tree  (algo is not an-Mmn)
+  McshTchInf000031:2443  algo'file  (algo is not an-Mmn)
+  HitpTchInf002:284  McsEll.Κτμπ'Α::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:378  McsEll.Κτμπ'Γ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:459  McsEll.Κτμπ'Δ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:553  McsEll.Κτμπ'Ε::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:688  McsEll.Κτμπ'Κ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:884  McsEll.Κτμπ'Μ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:1149  McsEll.Κτμπ'Π::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:1319  McsEll.Κτμπ'Σ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:1609  McsEll.Κτμπ'Υ::  (McsEll.Κτμπ is not an-Mmn)
+  HitpTchInf002:1626  McsEll.Κτμπ'Φ::  (McsEll.Κτμπ is not an-Mmn)
+  McshUcdU1000:288  char.Extensions-for-S'gaw-Karen  (char.Extensions-for-S is not an-Mmn)
+  McshUcdU2D80:59  char.Syllables-for-Me'en  (char.Syllables-for-Me is not an-Mmn)
+  McshUcdUAA60:119  char.Pa'o-Karen-tone-mark  (char.Pa is not an-Mmn)
+  McshTchPrgm000003:289  API'atom-object  (API is not an-Mmn)

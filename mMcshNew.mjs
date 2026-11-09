@@ -350,7 +350,7 @@ s = s +
   '    <br>• email:\n' +
   '    <br> &nbsp;<img src="../../dirRsc/dirImg/mail.png" alt="mail">\n' +
   '    <br>• edit on github: https://github.com/synagonism/dirMcsh/blob/master/' + sDir +'/' + sNameFile + ',\n' +
-  '    <br>• comments on <a class="clsPreview" href="../' + sDir + '/Mcsh' + sDirShort + '000000.last.html#idComment">Disqus</a>,\n' +
+  '    <br>• comments on <a class="clsPreview" href="../' + sDir + '/Mcsh' + sDirShort + '000000.last.html#idComment">Giscus</a>,\n' +
   '    <br>• twitter: <a href="https://twitter.com/synagonism">@synagonism</a>,\n' +
   '    <a class="clsHide" href="#idFooterP1"></a></p>\n' +
   '  <p id="idMetaVersion">webpage-versions::\n' +
@@ -366,14 +366,6 @@ s = s +
   '\n' +
   '  <script type="module">\n' +
   '    import * as omMcsh from \'/dirMcshmgr/mMcsh2.js\'\n' +
-  '  </script>\n' +
-  '  <!-- Global site tag (gtag.js) - Google Analytics -->\n' +
-  '  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8T0MHWLS1"></script>\n' +
-  '  <script>\n' +
-  '    window.dataLayer = window.dataLayer || [];\n' +
-  '    function gtag(){dataLayer.push(arguments);}\n' +
-  '    gtag(\'js\', new Date());\n' +
-  '    gtag(\'config\', \'G-N8T0MHWLS1\');\n' +
   '  </script>\n' +
   '  <!--    -->\n' +
   '</body>\n' +

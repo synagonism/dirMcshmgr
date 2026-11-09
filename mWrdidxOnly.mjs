@@ -267,7 +267,7 @@ function fWrdidx(asWordsIn, sMethodIn) {
       '    <br>• email:\n' +
       '    <br> &nbsp;<img src="../../../dirRsc/dirImg/mail.png">\n' +
       '    <br>• edit on github: https://github.com/synagonism/McsWorld/blob/master/dirMcsh/' + sWiMcsFullIn + ',\n' +
-      '    <br>• comments on <a class="clsPreview" href="../../dirLag/McshLag000015.last.html#idOverview">Disqus</a>,\n' +
+      '    <br>• comments on <a class="clsPreview" href="../../dirLag/McshLag000015.last.html#idOverview">Giscus</a>,\n' +
       '    <br>• twitter: <a href="https://twitter.com/synagonism">@synagonism</a>,\n' +
       '    <a class="clsHide" href="#idFooterP1"></a></p>\n' +
       '  <p id="idMetaVersion">webpage-versions::\n' +
