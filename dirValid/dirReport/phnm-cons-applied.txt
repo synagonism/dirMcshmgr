@@ -1,0 +1,43 @@
+consonant-PHONEME SECTIONS -> CodephnmCons APPLIED — 2026-11-10
+rename: 32 | new pair: 0 | already: 1 | skipped: 0 | files written: 29
+
+=== RENAME (32)
+  McshLag000009:1798  phoneme.vowelNo of speech  Consphnm -> HmmdphnmCons  (1062 uses)
+  McshLag000010:620  Snguphnm.vowelNo of speech  Sngu_cons_phnm -> SnguphnmCons  (101 uses)
+  McshLag000011:757  Englphnm.vowelNo of speech  Engl_cons_phnm -> EnglphnmCons  (80 uses)
+  McshLag000012:554  Espophnm.vowelNo of speech  EspoConsphnm -> EspophnmCons  (80 uses)
+  McshLag000018:1277  Zhonphnm.vowelNo of speech  Zhon_cons_phnm -> ZhonphnmCons  (82 uses)
+  McshLag000020:521  Ellnphnm.consonant  Elln_cons_phnm -> EllnphnmCons  (83 uses)
+  McshLag000030:413  Turkphnm.vowelNo  TurkConsphnm -> TurkphnmCons  (69 uses)
+  McshLag000033:759  Deutphnm.consonant  DeutConsphnm -> DeutphnmCons  (88 uses)
+  McshLag000034:265  Bcmsphnm.vowelNo of speech  BcmsConsphnm -> BcmsphnmCons  (6 uses)
+  McshLag000035:339  Spanphnm.vowelNo of speech  SpanConsphnm -> SpanphnmCons  (6 uses)
+  McshLag000036:416  Arabphnm.vowelNo of speech  ArabConsphnm -> ArabphnmCons  (16 uses)
+  McshLag000037:603  Hiurphnm.vowelNo of speech  HiurConsphnm -> HiurphnmCons  (118 uses)
+  McshLag000037:2650  Hindphnm.consonant  HindConsphnm -> HindphnmCons  (2 uses)
+  McshLag000037:4775  Urduphnm.consonant  UrduConsphnm -> UrduphnmCons  (2 uses)
+  McshLag000038:401  Slv0phnm.vowelNo of speech  Slv0Consphnm -> Slv0phnmCons  (6 uses)
+  McshLag000039:313  Ide0phnm.vowelNo of speech  Ide0Consphnm -> Ide0phnmCons  (6 uses)
+  McshLag000039:1654  PtiePhnm.consonant  PtiePhnmConsonant -> PtiephnmCons  (3 uses)
+  McshLag000040:400  Afa0phnm.vowelNo of speech  Afa0Consphnm -> Afa0phnmCons  (6 uses)
+  McshLag000041:366  Tur0phnm.vowelNo of speech  Tur0Consphnm -> Tur0phnmCons  (6 uses)
+  McshLag000042:325  Asa0phnm.vowelNo of speech  Asa0Consphnm -> Asa0phnmCons  (6 uses)
+  McshLag000043:433  Koraphnm.vowelNo of speech  KoraConsphnm -> KoraphnmCons  (6 uses)
+  McshStn000034:1150  Vnmaphnm.consonant  VnmaConsphnm -> VnmaphnmCons  (73 uses)
+  McshStn000035:675  Itlnphnm.consonant  ItlnConsPhon -> ItlnphnmCons  (71 uses)
+  McshStn000037:807  Fracphnm.consonant  FracConsphnm -> FracphnmCons  (68 uses)
+  McshStn000038:508  Sbulphnm.consonant  SbulConsphnm -> SbulphnmCons  (69 uses)
+  McshStn000039:548  Sqipphnm.consonant  Sqipconsphnm -> SqipphnmCons  (95 uses)
+  McshStn000040:348  Smkdphnm.consonant  SmkdConsphnm -> SmkdphnmCons  (2 uses)
+  McshStn000041:404  Sslvphnm.consonant  SslvConsphnm -> SslvphnmCons  (2 uses)
+  McshStn000043:362  Srusphnm.consonant  SrusConsphnm -> SrusphnmCons  (2 uses)
+  McshStn000044:452  Romnphnm.consonant  RomnConsphnm -> RomnphnmCons  (66 uses)
+  McshStn000048:416  Jpnsphnm.consonant  JpnsConsphnm -> JpnsphnmCons  (2 uses)
+  McshStn000050:479  Khmrphnm.consonant  KhmrConsphnm -> KhmrphnmCons  (2 uses)
+
+=== NEW PAIR (0)
+
+=== ALREADY (1)
+  McshLag000027:594  Ellaphnm.consonant  EllaphnmCons
+
+=== SKIP (0)

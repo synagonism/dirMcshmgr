@@ -1,8 +1,8 @@
-GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-11-03
+GS-TREE REPORT — Mcsh worldview C:\dirNodews\dirMcsh, live pages Mcsh*.last.html — 2026-11-10
 
-GS-TREE sections: 2549   fully conforming: 2543   with issues: 6
-specific-tree ids: 2549 {whole}sptr, 0 old {whole}str
-heading levels: h1 557, h2 810, h3 616, h4 357, h5 164, h6 41, h7 4
+GS-TREE sections: 2560   fully conforming: 2478   with issues: 82
+specific-tree ids: 2560 {whole}sptr, 0 old {whole}str
+heading levels: h1 557, h2 809, h3 620, h4 366, h5 163, h6 41, h7 4
 
 Conforming GS-TREE = <section id="{whole}gstr"> at whole-level + 1, heading "GENERIC-SPECIFIC-TREE of X",
   {id}dsn with Mcsh-creation date, {id}nam with X'generic_specific_tree,
@@ -13,32 +13,110 @@ ISSUES (a GS-TREE can have several):
   OLD          0  old-style title (not "GENERIC-SPECIFIC-TREE of X")
   NOPARENT     0  top-level GS-TREE whose id does not end in gstr
   ID           0  section id is not {whole}gstr
-  LEVEL        1  heading level is not whole + 1
+  LEVEL        0  heading level is not whole + 1
   HID          0  heading id is not {id}H{level}
   DSN          0  no {id}dsn description:: (or no Mcsh-creation date)
-  NAM          1  name:: lacks X'generic_specific_tree
+  NAM         50  name:: lacks X'generic_specific_tree
   GTR          0  no {whole}gntr generic-tree:: paragraph
   GTRN         2  generic-tree:: does not start with McshEngl.X:generic,
   GTRE         0  generic-tree:: neither has "...entity:generic," nor ends at entity
   STR          0  no {whole}sptr specific-tree:: paragraph
-  STRN         0  specific-tree:: lacks McshEngl.X.specific,
-  XNAME        3  X differs from the whole's !⇒ main-name
-  EXTRA        0  other paragraphs / blocks inside the GS-TREE
+  STRN         1  specific-tree:: lacks McshEngl.X.specific,
+  XNAME       29  X differs from the whole's !⇒ main-name
+  EXTRA        1  other paragraphs / blocks inside the GS-TREE
   KIDS         0  GS-TREE has child sections that are not spec-div, specifics (X.name) or SPECIFIC-COMPLEMENT
   TWO          0  whole has more than one GS-TREE
   SELF         0  self-link does not match its paragraph id
 
-=== LEVEL (1) — heading level is not whole + 1
-  McshLag000011:24162  idLEnglverbauxNgstr  h2  "GENERIC-SPECIFIC-TREE of Englvf"  whole h3
-
-=== NAM (1) — name:: lacks X'generic_specific_tree
-  McshLag000011:24162  idLEnglverbauxNgstr  h2  "GENERIC-SPECIFIC-TREE of Englvf"
+=== NAM (50) — name:: lacks X'generic_specific_tree
+  McshCor000002:4982  idMcssrcggstr  h3  "GENERIC-SPECIFIC-TREE of Mcs_searching"
+  McshHlth000013:411  idFoodHmnatt001gstr  h2  "GENERIC-SPECIFIC-TREE of food_ingredient"
+  McshHlth000013:1046  idFoodHmnMealcrsgstr  h3  "GENERIC-SPECIFIC-TREE of meal_course"
+  McshHlth000014:280  idMedHmnatt008gstr  h2  "GENERIC-SPECIFIC-TREE of medication_part"
+  McshHlth000019:897  idSysNrvsatt076att005gstr  h4  "GENERIC-SPECIFIC-TREE of neuron_axon"
+  McshHlth000019:1115  idSysNrvsatt076att004gstr  h4  "GENERIC-SPECIFIC-TREE of neuron_neurite"
+  McshLag000002:107  idInfBrnBiodongCmtggstr  h3  "GENERIC-SPECIFIC-TREE of infoBrainBio_communicating"
+  McshLag000006:419  idCharUcdbdclsgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_bcproperty"
+  McshLag000006:584  idCharUcdcasegstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_csproperty"
+  McshLag000006:628  idCharUcdcsfggstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_cfproperty"
+  McshLag000006:694  idCharUcdbpbtpgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_bpbtproperty"
+  McshLag000006:737  idCharUcddnmggstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_dmproperty"
+  McshLag000006:795  idCharUcdeawgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_eawproperty"
+  McshLag000006:948  idCharUcdjggpgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_jgproperty"
+  McshLag000006:1093  idCharUcdjgtpgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_jtproperty"
+  McshLag000006:1436  idCharUcdnctpgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_ntproperty"
+  McshLag000006:1704  idCharUcdprptgstr  h3  "GENERIC-SPECIFIC-TREE of Uncdchar_property"
+  McshLag000006:2864  idCharUcdstdurtgstr  h4  "GENERIC-SPECIFIC-TREE of Unicode_report"
+  McshLag000011:23999  idLEnglverbauxNgstr  h4  "GENERIC-SPECIFIC-TREE of Englvf"
+  McshLag000011:31150  idLEnglknwrgstr  h3  "GENERIC-SPECIFIC-TREE of Engllago_knower"
+  McshLag000018:17665  idLZhonknwrgstr  h3  "GENERIC-SPECIFIC-TREE of Zhonlago_knower"
+  McshOgm000005:524  idSysMolsHmn004gstr  h3  "GENERIC-SPECIFIC-TREE of BodyHumn_product"
+  McshStn000013:115  idPjtatt004tulgstr  h3  "GENERIC-SPECIFIC-TREE of GvncProject_tool"
+  McshStn000015:295  idOznPdnatt012gstr  h2  "GENERIC-SPECIFIC-TREE of OgznPrdg_stakeholder"
+  McshStn000017:424  idOznW3cstdRecgstr  h4  "GENERIC-SPECIFIC-TREE of W3c_recommendation"
+  McshStn000017:4243  idOznW3cstdCdrdgstr  h4  "GENERIC-SPECIFIC-TREE of W3c_candidate_recommendation"
+  McshStn000020:5219  idEubdgtatt007gstr  h4  "GENERIC-SPECIFIC-TREE of Eubudget_output"
+  McshTchInf000006:498  idLCpgmalgsuntgstr  h3  "GENERIC-SPECIFIC-TREE of Pgmgalgo_Sunt"
+  McshTchInf000006:620  idLCpgmalgsctngstr  h3  "GENERIC-SPECIFIC-TREE of Pgmgalgo_section"
+  McshTchInf000007:886  idLCnkntmgrthkggstr  h4  "GENERIC-SPECIFIC-TREE of Cnknmngr_thinking"
+  McshTchInf000010:4201  idLJsgnapiwptrgstr  h4  "GENERIC-SPECIFIC-TREE of Jsmwo_whole_part_tree"
+  McshTchInf000012:4682  idLJsndpghostgstr  h3  "GENERIC-SPECIFIC-TREE of Jsndpgm_hosting"
+  McshTchInf000012:4872  idLJsndpgCmsgstr  h3  "GENERIC-SPECIFIC-TREE of Jsndlago_cms"
+  McshTchInf000012:6495  idLJsndpkgEslintcfgrulPslergstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.possible_error"
+  McshTchInf000012:6676  idLJsndpkgEslintcfgrulBstpkcgstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.best_practice"
+  McshTchInf000012:6996  idLJsndpkgEslintcfgrulSrtmdgstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.strict_mode"
+  McshTchInf000012:7034  idLJsndpkgEslintcfgrulVargstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.variable"
+  McshTchInf000012:7186  idLJsndpkgEslintcfgrulStcisgstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.stylistic_issue"
+  McshTchInf000012:7587  idLJsndpkgEslintcfgrulEs6gstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.ECMAScript_6"
+  McshTchInf000015:3188  idAlgntevusvcggstr  h3  "GENERIC-SPECIFIC-TREE of Agntasset_service"
+  McshTchInf000015:4977  idAlgntevuMoesvcggstr  h4  "GENERIC-SPECIFIC-TREE of Agntexvu_service"
+  McshTchInf000015:10159  idAlgntenvtgstr  h2  "GENERIC-SPECIFIC-TREE of netAlgo_environment"
+  McshTchInf000017:1484  idBtcevuCegrtgstr  h3  "GENERIC-SPECIFIC-TREE of BtcexvuC_rate"
+  McshTchInf000017:2513  idBtcpgmClntgstr  h3  "GENERIC-SPECIFIC-TREE of AgntBtcn_client_program"
+  McshTchInf000019:1124  idDeOznskhrSplrgstr  h4  "GENERIC-SPECIFIC-TREE of OgznDao_supplier"
+  McshTchInf000019:2766  idArgnhmngstr  h4  "GENERIC-SPECIFIC-TREE of DoAragon_human"
+  McshTchInf000019:3518  idDaostkskhrHmngstr  h4  "GENERIC-SPECIFIC-TREE of DAOstack_human"
+  McshTchInf000021:2312  idEosgovvtggstr  h3  "GENERIC-SPECIFIC-TREE of Agnteos_voting"
+  McshTchInf000024:3647  idSteemithmngstr  h3  "GENERIC-SPECIFIC-TREE of Steemit_human"
+  McshTchInf000031:2099  idLCppalgdonggstr  h2  "GENERIC-SPECIFIC-TREE of Cppzalgo_doing"
 
 === GTRN (2) — generic-tree:: does not start with McshEngl.X:generic,
-  McshHlth000002:5361  idBdyHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Hmbdnutrient"  <br>* McshEngl.nutrient:generic,
-  McshTchInf000007:2964  idLxmlgXsdgstr  h5  "GENERIC-SPECIFIC-TREE of xsd"  <br>* McshEngl.xsd&#58;generic,
+  McshHlth000002:5383  idBdyHmnatt015gstr  h2  "GENERIC-SPECIFIC-TREE of Hbnutrient"  <br>* McshEngl.nutrient:generic,
+  McshTchInf000007:2983  idLxmlgXsdgstr  h5  "GENERIC-SPECIFIC-TREE of xsd"  <br>* McshEngl.xsd&#58;generic,
 
-=== XNAME (3) — X differs from the whole's !⇒ main-name
-  McshHlth000013:10011  idFoodHmn186gstr  h2  "GENERIC-SPECIFIC-TREE of meatLiver"  main-name foodLiver
-  McshLag000007:4027  idLHmnmnameTrmcrtggstr  h5  "GENERIC-SPECIFIC-TREE of term'creating"  main-name Hmmdterm'creating
-  McshLag000007:4059  idLHmnmnameTrmgstr  h4  "GENERIC-SPECIFIC-TREE of term"  main-name Hmmdterm
+=== STRN (1) — specific-tree:: lacks McshEngl.X.specific,
+  McshLag000021:263  idLZhonsylbgstr  h2  "GENERIC-SPECIFIC-TREE of Zhonsylb"
+
+=== XNAME (29) — X differs from the whole's !⇒ main-name
+  McshCor000007:1159  idSpcNamedgstr  h3  "GENERIC-SPECIFIC-TREE of space.named"  main-name spaceNamed
+  McshEdu000005:5780  idSMath002gstr  h2  "GENERIC-SPECIFIC-TREE of mathAppliedNo"  main-name MathAppliedNo
+  McshEdu000014:405  idSEcon008gstr  h2  "GENERIC-SPECIFIC-TREE of SciEconCptl"  main-name EconsciCptl
+  McshEdu000014:749  idSEcon009gstr  h2  "GENERIC-SPECIFIC-TREE of SciEconCptlMeta"  main-name EconsciCptlMeta
+  McshEdu000014:1045  idSEcon001gstr  h2  "GENERIC-SPECIFIC-TREE of SciEconCmpl"  main-name EconsciCmpl
+  McshHlth000008:1571  idHlthHmnBdygstr  h2  "GENERIC-SPECIFIC-TREE of healthBody"  main-name HlthBody
+  McshHlth000008:1657  idHlthHmnSclgstr  h2  "GENERIC-SPECIFIC-TREE of healthSocial"  main-name HlthSocial
+  McshHlth000011:2559  idDssHmn047gstr  h3  "GENERIC-SPECIFIC-TREE of disease.heart"  main-name diseaseHeart
+  McshHlth000011:6405  idDssHmn106gstr  h3  "GENERIC-SPECIFIC-TREE of DissCancer.skin"  main-name DissCancerSkin
+  McshHlth000013:9923  idFoodHmn186gstr  h2  "GENERIC-SPECIFIC-TREE of meatLiver"  main-name foodLiver
+  McshLag000007:19417  idLHmnmnameTrmcrtggstr  h5  "GENERIC-SPECIFIC-TREE of term'creating"  main-name Hmmdterm_creating
+  McshLag000007:19449  idLHmnmnameTrmgstr  h4  "GENERIC-SPECIFIC-TREE of term"  main-name Hmmdterm
+  McshLag000011:30744  idLEnglsmsondombrMaingstr  h5  "GENERIC-SPECIFIC-TREE of Englsemuagm.main"  main-name EnglsemuagmMain
+  McshTchInf000009:1099  idMcsHitpnamegstr  h4  "GENERIC-SPECIFIC-TREE of Mcshname"  main-name Mcshcnptname
+  McshTchInf000009:1542  idMcsHitpdtgstr  h4  "GENERIC-SPECIFIC-TREE of Mcshdata"  main-name Mcshcnptdata
+  McshTchInf000012:7034  idLJsndpkgEslintcfgrulVargstr  h6  "GENERIC-SPECIFIC-TREE of ESLintrule.variable"  main-name ESLintruleVariable
+  McshTchInf000012:9208  idLJsndtolGlpgstr  h3  "GENERIC-SPECIFIC-TREE of Gulp.js"  main-name GulpJs
+  McshTchInf000014:2997  idLWasmstcBscgstr  h3  "GENERIC-SPECIFIC-TREE of Wasmcmnd.basic"  main-name WasmcmndBasic
+  McshTchInf000014:3041  idLWasmstcNmrcgstr  h3  "GENERIC-SPECIFIC-TREE of Wasmcmnd.numeric"  main-name WasmcmndNumeric
+  McshTchInf000014:3140  idLWasmstcPrmcgstr  h3  "GENERIC-SPECIFIC-TREE of Wasmcmnd.parametric"  main-name WasmcmndParametric
+  McshTchInf000017:9155  idBtcsvcPmntgstr  h3  "GENERIC-SPECIFIC-TREE of Btcnsrvc.PAYMENT"  main-name BtcnsrvcPAYMENT
+  McshTchInf000017:9220  idBtcsvcShpggstr  h3  "GENERIC-SPECIFIC-TREE of Btcnsrvc.shopping"  main-name BtcnsrvcShopping
+  McshTchInf000017:9314  idBtcsvcVotgstr  h3  "GENERIC-SPECIFIC-TREE of Btcnsrvc.voting"  main-name BtcnsrvcVoting
+  McshTchInf000018:935  idEthnodgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEthr_node"  main-name Ethrnode
+  McshTchInf000018:1640  idEthactgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEthr_account"  main-name Ethraccount
+  McshTchInf000018:2692  idEthprlgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEthr_protocol"  main-name Ethrprotocol
+  McshTchInf000018:3883  idEthpgmgstr  h2  "GENERIC-SPECIFIC-TREE of AgntEthr_program"  main-name Ethrprogram
+  McshTchInf000020:1723  idChbctpInfcgstr  h4  "GENERIC-SPECIFIC-TREE of Chrntechsc.interface"  main-name ChrntechscInterface
+  McshTchPrgm000003:2015  idAtmpkgCoregstr  h4  "GENERIC-SPECIFIC-TREE of Atompckg.core"  main-name AtompckgCore
+
+=== EXTRA (1) — other paragraphs / blocks inside the GS-TREE
+  McshTchInf000009:3601  idLMcshmngrvldgHitprulegstr  h6  "GENERIC-SPECIFIC-TREE of Hvrl"  idLMcshmngrvldgHitpruleE01(Hvre01-duplicate-id::), idLMcshmngrvldgHitpruleE02(Hvre02-heading-without-id::), idLMcshmngrvldgHitpruleE03(Hvre03-paragraph-without-id::), idLMcshmngrvldgHitpruleE04(Hvre04-section-without-id::) …

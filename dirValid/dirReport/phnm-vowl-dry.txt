@@ -1,0 +1,43 @@
+vowel-PHONEME SECTIONS -> CodephnmVowl DRY — 2026-11-10
+rename: 31 | new pair: 0 | already: 2 | skipped: 0 | files to write: 28
+
+=== RENAME (31)
+  McshLag000009:900  phoneme.vowel of speech  VowlPhnm -> HmmdphnmVowl  (659 uses)
+  McshLag000010:499  Snguphnm.vowel of speech  Sngu_vowl_phnm -> SnguphnmVowl  (32 uses)
+  McshLag000012:432  Espophnm.vowel of speech  EspoVowlPhnm -> EspophnmVowl  (32 uses)
+  McshLag000018:1017  Zhonphnm.vowel of speech  Zhon_vowl_phnm -> ZhonphnmVowl  (32 uses)
+  McshLag000020:340  Ellnphnm.vowel  Elln_vowl_phnm -> EllnphnmVowl  (23 uses)
+  McshLag000030:217  Turkphnm.vowel  TurkVowlPhnm -> TurkphnmVowl  (35 uses)
+  McshLag000033:336  Deutphnm.vowel  DeutVowlPhnm -> DeutphnmVowl  (57 uses)
+  McshLag000034:229  Bcmsphnm.vowel of speech  BcmsVowlPhnm -> BcmsphnmVowl  (7 uses)
+  McshLag000035:282  Spanphnm.vowel of speech  SpanVowlPhnm -> SpanphnmVowl  (7 uses)
+  McshLag000036:275  Arabphnm.vowel of speech  ArabVowlPhnm -> ArabphnmVowl  (17 uses)
+  McshLag000037:345  Hiurphnm.vowel of speech  HiurVowlPhnm -> HiurphnmVowl  (46 uses)
+  McshLag000037:2635  Hindphnm.vowel  HindVowlPhnm -> HindphnmVowl  (2 uses)
+  McshLag000037:4759  Urduphnm.vowel  UrduVowlPhnm -> UrduphnmVowl  (2 uses)
+  McshLag000038:319  Slv0phnm.vowel of speech  Slv0VowlPhnm -> Slv0phnmVowl  (7 uses)
+  McshLag000039:294  Ide0phnm.vowel of speech  Ide0VowlPhnm -> Ide0phnmVowl  (7 uses)
+  McshLag000039:1585  PtiePhnm.vowel  PtiePhnmVowel -> PtiephnmVowl  (3 uses)
+  McshLag000040:312  Afa0phnm.vowel of speech  Afa0VowlPhnm -> Afa0phnmVowl  (7 uses)
+  McshLag000041:305  Tur0phnm.vowel of speech  Tur0VowlPhnm -> Tur0phnmVowl  (7 uses)
+  McshLag000042:259  Asa0phnm.vowel of speech  Asa0VowlPhnm -> Asa0phnmVowl  (7 uses)
+  McshLag000043:355  Koraphnm.vowel of speech  KoraVowlPhnm -> KoraphnmVowl  (7 uses)
+  McshStn000034:738  Vnmaphnm.vowel  VnmaVowlPhnm -> VnmaphnmVowl  (76 uses)
+  McshStn000035:483  Itlnphnm.vowel  ItlnVowlPhnm -> ItlnphnmVowl  (30 uses)
+  McshStn000037:404  Fracphnm.vowel  FracVowlPhnm -> FracphnmVowl  (50 uses)
+  McshStn000038:380  Sbulphnm.vowel  SbulVowlPhnm -> SbulphnmVowl  (24 uses)
+  McshStn000039:390  Sqipphnm.vowel  SqipVowlPhnm -> SqipphnmVowl  (27 uses)
+  McshStn000040:317  Smkdphnm.vowel  SmkdVowlPhnm -> SmkdphnmVowl  (2 uses)
+  McshStn000041:354  Sslvphnm.vowel  SslvVowlPhnm -> SslvphnmVowl  (2 uses)
+  McshStn000043:317  Srusphnm.vowel  SrusVowlPhnm -> SrusphnmVowl  (2 uses)
+  McshStn000044:317  Romnphnm.vowel  RomnVowlPhnm -> RomnphnmVowl  (27 uses)
+  McshStn000048:340  Jpnsphnm.vowel  JpnsVowlPhnm -> JpnsphnmVowl  (2 uses)
+  McshStn000050:400  Khmrphnm.vowel  KhmrVowlPhnm -> KhmrphnmVowl  (2 uses)
+
+=== NEW PAIR (0)
+
+=== ALREADY (2)
+  McshLag000011:289  Englphnm.vowel of speech  EnglphnmVowl
+  McshLag000027:200  Ellaphnm.vowel  EllaphnmVowl
+
+=== SKIP (0)

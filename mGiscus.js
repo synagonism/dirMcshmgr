@@ -2,10 +2,11 @@
  * mGiscus.js - loads Giscus comments (GitHub Discussions of synagonism/comments)
  * into the <div class="giscus" data-term="..."> of a page.
  * Usage in a page:
- *   <div class="giscus" data-term="McsCorDisqus"></div>
+ *   <div class="giscus" data-term="McsCorGiscus"></div>
  *   <script src="/dirMcshmgr/mGiscus.js"></script>
- * mMcsh2.js rebuilds the body before DOMContentLoaded, so giscus is attached after it.
+ * mMcsh2.js rebuilds the body after DOMContentLoaded, so giscus is attached after it.
  * The giscus theme follows the site's clsDark class on <body>.
+ * No data-loading="lazy": the page scrolls inside idCnrMainContentDiv, so a lazy iframe never loads.
  */
 (function () {
   var sOrigin = 'https://giscus.app'
@@ -32,7 +33,6 @@
       'data-input-position': 'top',
       'data-theme': fTheme(),
       'data-lang': 'en',
-      'data-loading': 'lazy',
       'crossorigin': 'anonymous'
     }
     Object.keys(oAttr).forEach(function (sKey) {
@@ -63,9 +63,35 @@
     })
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fGiscusLoad)
-  } else {
-    fGiscusLoad()
+  // mMcsh2.js copies the body into idCnrMainContentDiv as html, after its
+  // top-level awaits, so AFTER DOMContentLoaded. A giscus iframe inserted
+  // before that copy becomes a dead copy. So load giscus only when the
+  // div.giscus is inside idCnrMainContentDiv.
+  var bStarted = false
+  function fStart() {
+    if (bStarted) return true
+    var oCnr = document.getElementById('idCnrMainContentDiv')
+    var oDiv = document.querySelector('div.giscus')
+    if (oCnr && oDiv && oCnr.contains(oDiv)) {
+      bStarted = true
+      fGiscusLoad()
+    }
+    return bStarted
+  }
+  if (!fStart()) {
+    var oObserver = new MutationObserver(function () {
+      if (fStart()) oObserver.disconnect()
+    })
+    oObserver.observe(document.documentElement, {childList: true, subtree: true})
+    // pages without mMcsh2.js: load anyway, some time after the load event
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        if (!bStarted) {
+          oObserver.disconnect()
+          bStarted = true
+          fGiscusLoad()
+        }
+      }, 5000)
+    })
   }
 })()

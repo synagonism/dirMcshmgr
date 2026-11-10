@@ -1,5 +1,10 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrwGstr01,MvrwGstr02: C:/dirNodews/dirMcsh
+  MvreName01,MvreMain01: c:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  593 Mcsh-files · 0 files with issues · 0 issues
-  codes with issues now: MvreMain01, MvrwId01, MvrwId04, MvrwId06, MvrwId13, MvrwMain03, MvrwMain05, MvrwSect01, MvrwSect03, MvrwSect04
+  593 Mcsh-files · 3 files with issues · 5 issues
+
+=== MvreName01 (5 issues in 3 files) — file:lines, the-biggest line first
+  McshStn000009:4979;4722;4684
+  McshStn000015:855
+  McshStn000020:18550
+

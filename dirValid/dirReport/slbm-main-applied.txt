@@ -1,0 +1,24 @@
+GENERIC SYLLABOGRAM MMN: syllabogram -> Hmmdslbm APPLIED — 2026-11-10
+main pair: 1 | pointer targets: 5 | formal names on the base: 1 | tree lines: 1 | headings: 0 | not changed: name lines starting with the word: 0 | report only: 0 | files written: 1
+
+=== MAIN PAIR (1)
+  McshLag000007:32700  <br>* McshEngl.syllabogram,  ->  <br>* McshEngl.syllabogram!⇒Hmmdslbm, ¶ <br>* McshEngl.Hmmdslbm!=syllabogram,
+
+=== POINTER TARGETS (5)
+  McshLag000007:32701  <br>* McshEngl.Sylblago'syllabogram!⇒syllabogram,  ->  <br>* McshEngl.Sylblago'syllabogram!⇒Hmmdslbm,
+  McshLag000007:32702  <br>* McshEngl.syllabogram-of-Sylblago!⇒syllabogram,  ->  <br>* McshEngl.syllabogram-of-Sylblago!⇒Hmmdslbm,
+  McshLag000007:32704  <br>* McshEngl.Hmmdunit.syllabogram!⇒syllabogram,  ->  <br>* McshEngl.Hmmdunit.syllabogram!⇒Hmmdslbm,
+  McshLag000007:32706  <br>* McshSngu.silbugramu!⇒syllabogram,  ->  <br>* McshSngu.silbugramu!⇒Hmmdslbm,
+  McshLag000007:32708  <br>* McshElln.συλλαβόγραμμα!⇒syllabogram,  ->  <br>* McshElln.συλλαβόγραμμα!⇒Hmmdslbm,
+
+=== FORMAL NAMES ON THE BASE (1)
+  McshLag000007:32703  <br>* McshEngl.syllabogram.lagoSngu!=silbugramu,  ->  <br>* McshEngl.Hmmdslbm.lagoSngu!=silbugramu,
+
+=== TREE LINES (1)
+  McshLag000007:32711  <br>* McshEngl.syllabogram:generic,  ->  <br>* McshEngl.Hmmdslbm:generic,
+
+=== HEADINGS (not applied unless approved) (0)
+
+=== NOT CHANGED: NAME LINES STARTING WITH THE WORD (0)
+
+=== REPORT ONLY (0)

@@ -1,0 +1,360 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --code MvrwMain01 --all --fix: C:/dirNodews/dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  6 files written · MvrwMain01: 143 issues · 250 fixed · 99 skipped
+  written, no backup: see git diff
+
+=== SKIP (99) — skipped, with why: fix by hand
+  McshCor000003:5296  "this" does not begin with the-concept's main-name "entity" + a-word: give the-main-name by hand
+  McshEdu000010:221  "formal_semantics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:347  "cognitive_semantics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:387  "computational_semantics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:429  "frame_semantics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:503  "lexical_semantics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:580  "SciPragmatics" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:596  "SciName" keeps its own prefix but needs an-alias beginning with "Lagosci": give the-main-name by hand
+  McshEdu000010:1277  "phonetics" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:1831  "ICL" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshEdu000010:1876  "corpus_data" does not begin with the-concept's main-name "SciLago" + a-word: give the-main-name by hand
+  McshHlth000002:890  "wrist" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:4906  "bodyMtrHumn" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:13315  "BMI" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14060  "biological_rhythm__of_bodyHumn" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14223  "DongSicking" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14293  "metabolism" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14386  "DongSleeping" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14685  "FctgExcreting" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14783  "FctgFooding" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000002:14933  "doingHmnExternal" does not begin with the-concept's main-name "bodyHumn" + a-word: give the-main-name by hand
+  McshHlth000008:54  "disorder" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:77  "disorderNo" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:478  "OgznHealth" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:1079  "HumnHealthy" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000008:1689  "socialNo_health" does not begin with the-concept's main-name "health" + a-word: give the-main-name by hand
+  McshHlth000011:4033  "drunknness" does not begin with the-concept's main-name "disease" + a-word: give the-main-name by hand
+  McshHlth000011:13736  "FctgPainingHead" does not begin with the-concept's main-name "disease" + a-word: give the-main-name by hand
+  McshHlth000011:15162  "stomach_pain" does not begin with the-concept's main-name "disease" + a-word: give the-main-name by hand
+  McshHmn000002:166  "Hmnsfr" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:624  "Hmnplace" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:754  "facial_symmetry_of_human" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:1637  "grandparent" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:1686  "parent" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:1710  "father" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:1739  "mother" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:1877  "cousin" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2337  "personality" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2368  "big_five_personality_traits" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2403  "conscientiousness" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2422  "extraversion" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2503  "identificationHumn" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2542  "Hmnname" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2985  "Hmnimg" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3041  "impersonation" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2571  "last_name" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2744  "first_name" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2808  "honorific_prefix_of_human" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:2826  "honorific_suffix_of_human" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3103  "skill" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3446  "curriculum_vitae" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3553  "diligence" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3686  "enthusiasm" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:3863  "DongBehaving" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4049  "sexing" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4111  "bulling" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4437  "adult" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4326  "infant" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4348  "toddler" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4364  "predolescence" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4378  "adolescence" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4392  "childMale" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4412  "childFemale" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4534  "RltnHumanblood" keeps its own prefix but needs an-alias beginning with "Humn": give the-main-name by hand
+  McshHmn000002:4941  "whose" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:4965  "whom" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshHmn000002:5307  "manwoman" does not begin with the-concept's main-name "human" + a-word: give the-main-name by hand
+  McshStn000007:179  "SoctOgsm_language" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000007:216  "SystGvcSocOgsm" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000007:318  "societyHmnN" does not begin with the-concept's main-name "societyOgsm" + a-word: give the-main-name by hand
+  McshStn000014:238  "admnHshd" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:416  "cscHousehold" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:523  "HFCE" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:855  "family_relation_to_ogznCsmg" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:1077  "sectorCsmg" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshStn000014:1181  "hshdCommune" does not begin with the-concept's main-name "OgznCsmg" + a-word: give the-main-name by hand
+  McshTchInf000005:624  "lagCpgmNo" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:670  "lagCpgmBo" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:687  "lagCdat" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:734  "lagBnr" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:858  "lagChar" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:874  "lagDtrp" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:908  "lagDsv" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:949  "Tdoclago" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:1353  "lagMrkp" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000005:1414  "lagFile" does not begin with the-concept's main-name "Cmprlago" + a-word: give the-main-name by hand
+  McshTchInf000018:5725  "DcontractEth" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:10644  "DappEth" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:11036  "Algoethrbkcn" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:12872  "DnEthTEST" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:12890  "Morden_ethtestnet" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000018:12905  "Ropsten_ethtestnet" does not begin with the-concept's main-name "AgntEthr" + a-word: give the-main-name by hand
+  McshTchInf000021:281  "HumnLarimerDaniel" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:331  "Deos_RAM" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:377  "Deos_CPU" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:694  "Deos_account" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:2561  "DcontractEos" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:2834  "Deos_Dapp" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+  McshTchInf000021:3468  "Deos_mainnet" does not begin with the-concept's main-name "Agnteos" + a-word: give the-main-name by hand
+
+=== MAINNAME (206) — a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)
+  McshEdu000010:84  McshEngl.SciLago_unsolved_problem  ->  Lagosciunsolved_problem
+  McshEdu000010:85  McshEngl.SciLago'unsolved_problem!⇒SciLago_unsolved_problem  ->  SciLago'unsolved_problem!⇒Lagosciunsolved_problem
+  McshEdu000010:86  McshEngl.SciLago'area_of_study'unsolved_problem!⇒SciLago_unsolved_problem  ->  SciLago'area_of_study'unsolved_problem!⇒Lagosciunsolved_problem
+  McshHlth000011:3941  McshEngl.disease.animal_cause  ->  Dissanimal_cause
+  McshHlth000011:3942  McshEngl.disease.061_animal_cause!⇒disease.animal_cause  ->  disease.061_animal_cause!⇒Dissanimal_cause
+  McshHlth000011:3943  McshEngl.disease.animal_cause_061!⇒disease.animal_cause  ->  disease.animal_cause_061!⇒Dissanimal_cause
+  McshHlth000011:3944  McshEngl.disease.cause.animal_061!⇒disease.animal_cause  ->  disease.cause.animal_061!⇒Dissanimal_cause
+  McshHlth000011:3960  McshEngl.disease.bite_cause  ->  Dissbite_cause
+  McshHlth000011:3961  McshEngl.disease.062_bite_cause!⇒disease.bite_cause  ->  disease.062_bite_cause!⇒Dissbite_cause
+  McshHlth000011:3962  McshEngl.disease.bite_cause_062!⇒disease.bite_cause  ->  disease.bite_cause_062!⇒Dissbite_cause
+  McshHlth000011:3963  McshEngl.bite-cause--disease!⇒disease.bite_cause  ->  bite-cause--disease!⇒Dissbite_cause
+  McshHlth000011:3964  McshEngl.disease.animal_cause.bite_cause_062!⇒disease.bite_cause  ->  disease.animal_cause.bite_cause_062!⇒Dissbite_cause
+  McshHlth000011:15035  McshEngl.diseaseStomack  ->  DissStomack
+  McshHlth000011:15036  McshEngl.disease.stomack!⇒diseaseStomack  ->  disease.stomack!⇒DissStomack
+  McshHlth000011:15037  McshEngl.disease.092_stomach!⇒diseaseStomack  ->  disease.092_stomach!⇒DissStomack
+  McshHlth000011:15038  McshEngl.disease.stomach_092!⇒diseaseStomack  ->  disease.stomach_092!⇒DissStomack
+  McshHlth000011:15039  McshEngl.stomach-disease!⇒diseaseStomack  ->  stomach-disease!⇒DissStomack
+  McshHlth000011:15053  McshEngl.diseaseGastritis  ->  DissGastritis
+  McshHlth000011:15054  McshEngl.disease.gastritis!⇒diseaseGastritis  ->  disease.gastritis!⇒DissGastritis
+  McshHlth000011:15055  McshEngl.disease.093_gastritis!⇒diseaseGastritis  ->  disease.093_gastritis!⇒DissGastritis
+  McshHlth000011:15056  McshEngl.disease.gastritis_093!⇒diseaseGastritis  ->  disease.gastritis_093!⇒DissGastritis
+  McshHlth000011:15057  McshEngl.gastritis-disease-093!⇒diseaseGastritis  ->  gastritis-disease-093!⇒DissGastritis
+  McshHlth000011:15058  McshEngl.disease.stomack.gastritis_093!⇒diseaseGastritis  ->  disease.stomack.gastritis_093!⇒DissGastritis
+  McshHlth000011:15119  McshEngl.diseaseHeartburn  ->  DissHeartburn
+  McshHlth000011:15120  McshEngl.disease.heartburn!⇒diseaseHeartburn  ->  disease.heartburn!⇒DissHeartburn
+  McshHlth000011:15121  McshEngl.disease.094_heartburn!⇒diseaseHeartburn  ->  disease.094_heartburn!⇒DissHeartburn
+  McshHlth000011:15122  McshEngl.disease.heartburn_094!⇒diseaseHeartburn  ->  disease.heartburn_094!⇒DissHeartburn
+  McshHlth000011:15123  McshEngl.heartburn-disease-094!⇒diseaseHeartburn  ->  heartburn-disease-094!⇒DissHeartburn
+  McshHlth000011:15124  McshEngl.disease.stomack.heartburn!⇒diseaseHeartburn  ->  disease.stomack.heartburn!⇒DissHeartburn
+  McshHmn000002:2385  McshEngl.human_att133_openness_to_experience  ->  Humnopenness_to_experience
+  McshHmn000002:2386  McshEngl.human'att133_openness_to_experience!⇒human_att133_openness_to_experience  ->  human'att133_openness_to_experience!⇒Humnopenness_to_experience
+  McshHmn000002:2387  McshEngl.human'openness_to_experience!⇒human_att133_openness_to_experience  ->  human'openness_to_experience!⇒Humnopenness_to_experience
+  McshHmn000002:3384  McshEngl.human_info  ->  Humninfo
+  McshHmn000002:3385  McshEngl.human'info!⇒human_info  ->  human'info!⇒Humninfo
+  McshHmn000002:3386  McshEngl.human'att002_info!⇒human_info  ->  human'att002_info!⇒Humninfo
+  McshHmn000002:3398  McshEngl.human_att060_qualification_doc  ->  Humnqualification_doc
+  McshHmn000002:3399  McshEngl.human'att060_qualification_doc!⇒human_att060_qualification_doc  ->  human'att060_qualification_doc!⇒Humnqualification_doc
+  McshHmn000002:3400  McshEngl.human'qualification_document!⇒human_att060_qualification_doc  ->  human'qualification_document!⇒Humnqualification_doc
+  McshHmn000002:3427  McshEngl.human_att111_educational_occupational_credential  ->  Humneducational_occupational_credential
+  McshHmn000002:3428  McshEngl.human'att111_educational_occupational_credential!⇒human_att111_educational_occupational_credential  ->  human'att111_educational_occupational_credential!⇒Humneducational_occupational_credential
+  McshHmn000002:3429  McshEngl.human'educational_occupational_credential!⇒human_att111_educational_occupational_credential  ->  human'educational_occupational_credential!⇒Humneducational_occupational_credential
+  McshHmn000002:3534  McshEngl.human_dignity  ->  Humndignity
+  McshHmn000002:3535  McshEngl.human'dignity!⇒human_dignity  ->  human'dignity!⇒Humndignity
+  McshHmn000002:3536  McshEngl.dignity-of-human!⇒human_dignity  ->  dignity-of-human!⇒Humndignity
+  McshHmn000002:3537  McshEngl.human'att064_dignity!⇒human_dignity  ->  human'att064_dignity!⇒Humndignity
+  McshHmn000002:3739  McshEngl.human_att123_subject_of_productInfo  ->  Humnsubject_of_productInfo
+  McshHmn000002:3740  McshEngl.human'att123_subject_of_productInfo!⇒human_att123_subject_of_productInfo  ->  human'att123_subject_of_productInfo!⇒Humnsubject_of_productInfo
+  McshHmn000002:3741  McshEngl.human'subject_of_productInfo!⇒human_att123_subject_of_productInfo  ->  human'subject_of_productInfo!⇒Humnsubject_of_productInfo
+  McshHmn000002:3754  McshEngl.human_att124_subject_of_eventHuman  ->  Humnsubject_of_eventHuman
+  McshHmn000002:3755  McshEngl.human'att124_subject_of_eventHuman!⇒human_att124_subject_of_eventHuman  ->  human'att124_subject_of_eventHuman!⇒Humnsubject_of_eventHuman
+  McshHmn000002:3756  McshEngl.human'subject_of_eventHuman!⇒human_att124_subject_of_eventHuman  ->  human'subject_of_eventHuman!⇒Humnsubject_of_eventHuman
+  McshHmn000002:3788  McshEngl.human_att146_studied_by  ->  Humnstudied_by
+  McshHmn000002:3789  McshEngl.human'att146_studied_by!⇒human_att146_studied_by  ->  human'att146_studied_by!⇒Humnstudied_by
+  McshHmn000002:3790  McshEngl.human'studied_by!⇒human_att146_studied_by  ->  human'studied_by!⇒Humnstudied_by
+  McshHmn000002:3809  McshEngl.human_att119_same_referent  ->  Humnsame_referent
+  McshHmn000002:3810  McshEngl.human'att119_same_referent!⇒human_att119_same_referent  ->  human'att119_same_referent!⇒Humnsame_referent
+  McshHmn000002:3811  McshEngl.human'same_referent!⇒human_att119_same_referent  ->  human'same_referent!⇒Humnsame_referent
+  McshHmn000002:3825  McshEngl.human_att122_similar_referent  ->  Humnsimilar_referent
+  McshHmn000002:3826  McshEngl.human'att122_similar_referent!⇒human_att122_similar_referent  ->  human'att122_similar_referent!⇒Humnsimilar_referent
+  McshHmn000002:3827  McshEngl.human'similar_referent!⇒human_att122_similar_referent  ->  human'similar_referent!⇒Humnsimilar_referent
+  McshHmn000002:3919  McshEngl.human_acting  ->  Humnacting
+  McshHmn000002:3920  McshEngl.human'acting!⇒human_acting  ->  human'acting!⇒Humnacting
+  McshHmn000002:3921  McshEngl.human'att039_acting!⇒human_acting  ->  human'att039_acting!⇒Humnacting
+  McshHmn000002:3922  McshEngl.human'doing'acting!⇒human_acting  ->  human'doing'acting!⇒Humnacting
+  McshHmn000002:3954  McshEngl.human_acting_vs_behaving  ->  Humnacting_vs_behaving
+  McshHmn000002:3955  McshEngl.human'acting_vs_behaving!⇒human_acting_vs_behaving  ->  human'acting_vs_behaving!⇒Humnacting_vs_behaving
+  McshHmn000002:4088  McshEngl.human_att037_self_actualization  ->  Humnself_actualization
+  McshHmn000002:4089  McshEngl.human'att037_self_actualization!⇒human_att037_self_actualization  ->  human'att037_self_actualization!⇒Humnself_actualization
+  McshHmn000002:4090  McshEngl.human'self_actualization!⇒human_att037_self_actualization  ->  human'self_actualization!⇒Humnself_actualization
+  McshHmn000002:4144  McshEngl.human_event  ->  Humnevent
+  McshHmn000002:4145  McshEngl.human'human_event!⇒human_event  ->  human'human_event!⇒Humnevent
+  McshHmn000002:4146  McshEngl.human-event!⇒human_event  ->  human-event!⇒Humnevent
+  McshHmn000002:4147  McshEngl.eventHuman-of-human!⇒human_event  ->  eventHuman-of-human!⇒Humnevent
+  McshHmn000002:4148  McshEngl.human'att120_human_event!⇒human_event  ->  human'att120_human_event!⇒Humnevent
+  McshHmn000002:4149  McshEngl.human-event--of-human!⇒human_event  ->  human-event--of-human!⇒Humnevent
+  McshHmn000002:4150  McshEngl.human'doing'human_event!⇒human_event  ->  human'doing'human_event!⇒Humnevent
+  McshHmn000002:4191  McshEngl.human_lifetime  ->  Humnlifetime
+  McshHmn000002:4192  McshEngl.human'lifetime!⇒human_lifetime  ->  human'lifetime!⇒Humnlifetime
+  McshHmn000002:4193  McshEngl.human'att021_lifetime!⇒human_lifetime  ->  human'att021_lifetime!⇒Humnlifetime
+  McshHmn000002:4194  McshEngl.human'time_of_life!⇒human_lifetime  ->  human'time_of_life!⇒Humnlifetime
+  McshHmn000002:4209  McshEngl.human_death_date  ->  Humndeath_date
+  McshHmn000002:4210  McshEngl.human'death_date!⇒human_death_date  ->  human'death_date!⇒Humndeath_date
+  McshHmn000002:4211  McshEngl.death-date--of-human!⇒human_death_date  ->  death-date--of-human!⇒Humndeath_date
+  McshHmn000002:4212  McshEngl.human'att078_death_date!⇒human_death_date  ->  human'att078_death_date!⇒Humndeath_date
+  McshHmn000002:4213  McshEngl.human'lifetime'death_date!⇒human_death_date  ->  human'lifetime'death_date!⇒Humndeath_date
+  McshHmn000002:4225  McshEngl.human_age  ->  Humnage
+  McshHmn000002:4226  McshEngl.human'age!⇒human_age  ->  human'age!⇒Humnage
+  McshHmn000002:4227  McshEngl.human'att027_age!⇒human_age  ->  human'att027_age!⇒Humnage
+  McshHmn000002:4228  McshEngl.age-of-human!⇒human_age  ->  age-of-human!⇒Humnage
+  McshHmn000002:4229  McshEngl.human'lifetime'age!⇒human_age  ->  human'lifetime'age!⇒Humnage
+  McshHmn000002:4245  McshEngl.human_birth_date  ->  Humnbirth_date
+  McshHmn000002:4246  McshEngl.human'birth_date!⇒human_birth_date  ->  human'birth_date!⇒Humnbirth_date
+  McshHmn000002:4247  McshEngl.human'att079_birth_date!⇒human_birth_date  ->  human'att079_birth_date!⇒Humnbirth_date
+  McshHmn000002:4248  McshEngl.human'birth'time!⇒human_birth_date  ->  human'birth'time!⇒Humnbirth_date
+  McshHmn000002:4249  McshEngl.human'born!⇒human_birth_date  ->  human'born!⇒Humnbirth_date
+  McshHmn000002:4250  McshEngl.human'lifetime'birth_date!⇒human_birth_date  ->  human'lifetime'birth_date!⇒Humnbirth_date
+  McshHmn000002:4898  McshEngl.who!⇒humanAsk  ->  who!⇒HumnAsk
+  McshHmn000002:4899  McshEngl.humanAsk!=who  ->  HumnAsk!=who
+  McshHmn000002:4900  McshEngl.askHuman!=who!⇒humanAsk  ->  askHuman!=who!⇒HumnAsk
+  McshHmn000002:4901  McshEngl.human.interrogative!⇒humanAsk  ->  human.interrogative!⇒HumnAsk
+  McshHmn000002:4902  McshEngl.human.reference.interrogative!⇒humanAsk  ->  human.reference.interrogative!⇒HumnAsk
+  McshHmn000002:4903  McshEngl.pronEngl.who:humanAsk!⇒humanAsk  ->  pronEngl.who:humanAsk!⇒HumnAsk
+  McshHmn000002:4904  McshEngl.pronEngl.whom:humanAsk!⇒humanAsk  ->  pronEngl.whom:humanAsk!⇒HumnAsk
+  McshHmn000002:4905  McshEngl.pronEngl.whose:humanAsk!⇒humanAsk  ->  pronEngl.whose:humanAsk!⇒HumnAsk
+  McshHmn000002:4906  McshEngl.pronAskEngl.who:humanAsk!⇒humanAsk  ->  pronAskEngl.who:humanAsk!⇒HumnAsk
+  McshHmn000002:4907  McshEngl.pronAskEngl.whom:humanAsk!⇒humanAsk  ->  pronAskEngl.whom:humanAsk!⇒HumnAsk
+  McshHmn000002:4908  McshEngl.pronAskEngl.whose:humanAsk!⇒humanAsk  ->  pronAskEngl.whose:humanAsk!⇒HumnAsk
+  McshHmn000002:4909  McshEngl.pronAskHuman!⇒humanAsk  ->  pronAskHuman!⇒HumnAsk
+  McshHmn000002:4910  McshEngl.which!⇒humanAsk  ->  which!⇒HumnAsk
+  McshHmn000002:4911  McshEngl.whom!~object!⇒humanAsk  ->  whom!~object!⇒HumnAsk
+  McshHmn000002:4912  McshEngl.whose!~possesive!⇒humanAsk  ->  whose!~possesive!⇒HumnAsk
+  McshHmn000002:4913  McshEngl.human.who!⇒humanAsk  ->  human.who!⇒HumnAsk
+  McshHmn000002:4914  McshEngl.human.who.lagoElln!=ποιος!-ος-α-ο!⇒humanAsk  ->  human.who.lagoElln!=ποιος!-ος-α-ο!⇒HumnAsk
+  McshHmn000002:4915  McshEngl.human.who.lagoZhon!=谁-shéi!⇒humanAsk  ->  human.who.lagoZhon!=谁-shéi!⇒HumnAsk
+  McshHmn000002:4984  McshEngl.humanDeictic  ->  HumnDeictic
+  McshHmn000002:4985  McshEngl.human.deictic!⇒humanDeictic  ->  human.deictic!⇒HumnDeictic
+  McshHmn000002:4986  McshEngl.human.reference.interrogativeNo!⇒humanDeictic  ->  human.reference.interrogativeNo!⇒HumnDeictic
+  McshHmn000002:4987  McshEngl.AdveEngl.that!⇒humanDeictic  ->  AdveEngl.that!⇒HumnDeictic
+  McshHmn000002:4988  McshEngl.that!~AdveEngl!⇒humanDeictic  ->  that!~AdveEngl!⇒HumnDeictic
+  McshHmn000002:4989  McshEngl.human.that.lagoElln!=αυτός!-ός-ή-ό!⇒humanDeictic  ->  human.that.lagoElln!=αυτός!-ός-ή-ό!⇒HumnDeictic
+  McshHmn000002:4990  McshEngl.human.that.lagoZhon!=那位-nàwèi(polite)|那个-nàge(casual)!⇒humanDeictic  ->  human.that.lagoZhon!=那位-nàwèi(polite)|那个-nàge(casual)!⇒HumnDeictic
+  McshHmn000002:5022  McshEngl.humanDefNone  ->  HumnDefNone
+  McshHmn000002:5023  McshEngl.human.definite.quantity_none!⇒humanDefNone  ->  human.definite.quantity_none!⇒HumnDefNone
+  McshHmn000002:5024  McshEngl.nobody!⇒humanDefNone  ->  nobody!⇒HumnDefNone
+  McshHmn000002:5025  McshEngl.human.nobody!⇒humanDefNone  ->  human.nobody!⇒HumnDefNone
+  McshHmn000002:5026  McshEngl.human.nobody.lagoElln!=κανείς!-είς-μία-ένα!⇒humanDefNone  ->  human.nobody.lagoElln!=κανείς!-είς-μία-ένα!⇒HumnDefNone
+  McshHmn000002:5027  McshEngl.human.nobody.lagoZhon!=没有人-méiyǒurén!⇒humanDefNone  ->  human.nobody.lagoZhon!=没有人-méiyǒurén!⇒HumnDefNone
+  McshHmn000002:5047  McshEngl.humanDefAll  ->  HumnDefAll
+  McshHmn000002:5048  McshEngl.human.all!⇒humanDefAll  ->  human.all!⇒HumnDefAll
+  McshHmn000002:5049  McshEngl.human.definite.quantity_all!⇒humanDefAll  ->  human.definite.quantity_all!⇒HumnDefAll
+  McshHmn000002:5050  McshEngl.everybody!⇒humanDefAll  ->  everybody!⇒HumnDefAll
+  McshHmn000002:5051  McshEngl.everyone!⇒humanDefAll  ->  everyone!⇒HumnDefAll
+  McshHmn000002:5052  McshEngl.human.everybody!⇒humanDefAll  ->  human.everybody!⇒HumnDefAll
+  McshHmn000002:5053  McshEngl.human.everybody.lagoElln!=όλοι!-οι-ες-α!⇒humanDefAll  ->  human.everybody.lagoElln!=όλοι!-οι-ες-α!⇒HumnDefAll
+  McshHmn000002:5054  McshEngl.human.everybody.lagoZhon!=大家-dàjiā!⇒humanDefAll  ->  human.everybody.lagoZhon!=大家-dàjiā!⇒HumnDefAll
+  McshHmn000002:5055  McshEngl.human.everyone!⇒humanDefAll  ->  human.everyone!⇒HumnDefAll
+  McshHmn000002:5056  McshEngl.human.everyone.lagoElln!=όλοι!-οι-ες-α!⇒humanDefAll  ->  human.everyone.lagoElln!=όλοι!-οι-ες-α!⇒HumnDefAll
+  McshHmn000002:5057  McshEngl.human.everyone.lagoZhon!=大家-dàjiā!⇒humanDefAll  ->  human.everyone.lagoZhon!=大家-dàjiā!⇒HumnDefAll
+  McshHmn000002:5058  McshEngl.human.002_aggregate!⇒humanDefAll  ->  human.002_aggregate!⇒HumnDefAll
+  McshHmn000002:5059  McshEngl.human.aggregate!⇒humanDefAll  ->  human.aggregate!⇒HumnDefAll
+  McshHmn000002:5060  McshEngl.humankind!⇒humanDefAll  ->  humankind!⇒HumnDefAll
+  McshHmn000002:5061  McshEngl.people!⇒humanDefAll  ->  people!⇒HumnDefAll
+  McshHmn000002:5094  McshEngl.humanDefNoOne  ->  HumnDefNoOne
+  McshHmn000002:5095  McshEngl.a-human!⇒humanDefNoOne  ->  a-human!⇒HumnDefNoOne
+  McshHmn000002:5096  McshEngl.anybody!⇒humanDefNoOne  ->  anybody!⇒HumnDefNoOne
+  McshHmn000002:5097  McshEngl.human.anybody!⇒humanDefNoOne  ->  human.anybody!⇒HumnDefNoOne
+  McshHmn000002:5098  McshEngl.human.anybody.lagoElln!=ο-καθένας--η-καθεμιά--το-καθένα!⇒humanDefNoOne  ->  human.anybody.lagoElln!=ο-καθένας--η-καθεμιά--το-καθένα!⇒HumnDefNoOne
+  McshHmn000002:5099  McshEngl.human.definiteNo.one!⇒humanDefNoOne  ->  human.definiteNo.one!⇒HumnDefNoOne
+  McshHmn000002:5100  McshEngl.somebody!⇒humanDefNoOne  ->  somebody!⇒HumnDefNoOne
+  McshHmn000002:5101  McshEngl.human.somebody!⇒humanDefNoOne  ->  human.somebody!⇒HumnDefNoOne
+  McshHmn000002:5102  McshEngl.human.somebody.lagoElln!=κάποιος!-ος-α-ο!⇒humanDefNoOne  ->  human.somebody.lagoElln!=κάποιος!-ος-α-ο!⇒HumnDefNoOne
+  McshHmn000002:5103  McshEngl.someone!⇒humanDefNoOne  ->  someone!⇒HumnDefNoOne
+  McshHmn000002:5120  McshEngl.humanDefNoOneNo  ->  HumnDefNoOneNo
+  McshHmn000002:5121  McshEngl.AdveEngl.some!⇒humanDefNoOneNo  ->  AdveEngl.some!⇒HumnDefNoOneNo
+  McshHmn000002:5122  McshEngl.some!~AdveEngl!⇒humanDefNoOneNo  ->  some!~AdveEngl!⇒HumnDefNoOneNo
+  McshHmn000002:5123  McshEngl.human.some!⇒humanDefNoOneNo  ->  human.some!⇒HumnDefNoOneNo
+  McshHmn000002:5124  McshEngl.human.some.lagoElln!=κάποιοι!-οι-ες-α!⇒humanDefNoOneNo  ->  human.some.lagoElln!=κάποιοι!-οι-ες-α!⇒HumnDefNoOneNo
+  McshHmn000002:5125  McshEngl.human.some.lagoZhon!=有些人-Yǒuxiērén!⇒humanDefNoOneNo  ->  human.some.lagoZhon!=有些人-Yǒuxiērén!⇒HumnDefNoOneNo
+  McshTchInf000005:497  McshEngl.Cmprlago_documentation  ->  Cmpldocumentation
+  McshTchInf000005:498  McshEngl.Cmprlago'documentation!⇒Cmprlago_documentation  ->  Cmprlago'documentation!⇒Cmpldocumentation
+  McshTchInf000005:499  McshEngl.Cmprlago'info_resource'documentation!⇒Cmprlago_documentation  ->  Cmprlago'info_resource'documentation!⇒Cmpldocumentation
+  McshTchInf000005:510  McshEngl.Cmprlago_specification  ->  Cmplspecification
+  McshTchInf000005:511  McshEngl.Cmprlago'specification!⇒Cmprlago_specification  ->  Cmprlago'specification!⇒Cmplspecification
+  McshTchInf000005:512  McshEngl.Cmprlago'info_resource'specification!⇒Cmprlago_specification  ->  Cmprlago'info_resource'specification!⇒Cmplspecification
+  McshTchInf000009:1583  McshEngl.Mcshdata.section!⇒Mcshsect  ->  Mcshdata.section!⇒Mcshcnptsect
+  McshTchInf000009:1584  McshEngl.Mcshsect!=Mcshdata.section  ->  Mcshcnptsect!=Mcshdata.section
+  McshTchInf000009:1585  McshEngl.Mcsh'section_element!⇒Mcshsect  ->  Mcsh'section_element!⇒Mcshcnptsect
+  McshTchInf000009:1586  McshEngl.section-element--of-Mcsh!⇒Mcshsect  ->  section-element--of-Mcsh!⇒Mcshcnptsect
+  McshTchInf000009:1587  McshEngl.section-data--of-Mcsh!⇒Mcshsect  ->  section-data--of-Mcsh!⇒Mcshcnptsect
+  McshTchInf000009:1614  McshEngl.Mcsh'para_data!⇒Mcshpara  ->  Mcsh'para_data!⇒Mcshcnptpara
+  McshTchInf000009:1615  McshEngl.Mcshpara!=Mcsh'para-data  ->  Mcshcnptpara!=Mcsh'para-data
+  McshTchInf000009:1616  McshEngl.Mcsh-para!⇒Mcshpara  ->  Mcsh-para!⇒Mcshcnptpara
+  McshTchInf000009:1617  McshEngl.Mcshdata.para!⇒Mcshpara  ->  Mcshdata.para!⇒Mcshcnptpara
+  McshTchInf000009:1618  McshEngl.para-data--of-Mcsh!⇒Mcshpara  ->  para-data--of-Mcsh!⇒Mcshcnptpara
+  McshTchInf000009:1663  McshEngl.Mcshdata.script!⇒Mcshscript  ->  Mcshdata.script!⇒Mcshcnptscript
+  McshTchInf000009:1664  McshEngl.Mcshscript!=Mcshdata.script  ->  Mcshcnptscript!=Mcshdata.script
+  McshTchInf000009:1677  McshEngl.Mcsh_text  ->  Mcshcnpttext
+  McshTchInf000009:1678  McshEngl.Mcsh-text!⇒Mcsh_text  ->  Mcsh-text!⇒Mcshcnpttext
+  McshTchInf000009:1679  McshEngl.Mcshdata.text!⇒Mcsh_text  ->  Mcshdata.text!⇒Mcshcnpttext
+  McshTchInf000009:1680  McshEngl.Mcsh'text_data!⇒Mcsh_text  ->  Mcsh'text_data!⇒Mcshcnpttext
+  McshTchInf000009:1697  McshEngl.Mcsh_list  ->  Mcshcnptlist
+  McshTchInf000009:1698  McshEngl.Mcsh'array_data!⇒Mcsh_list  ->  Mcsh'array_data!⇒Mcshcnptlist
+  McshTchInf000009:1699  McshEngl.Mcshdata.list!⇒Mcsh_list  ->  Mcshdata.list!⇒Mcshcnptlist
+  McshTchInf000009:1700  McshEngl.Mcsh'list_data!⇒Mcsh_list  ->  Mcsh'list_data!⇒Mcshcnptlist
+  McshTchInf000009:1718  McshEngl.name-value-data--of-Mcsh!⇒Mcshnmvl  ->  name-value-data--of-Mcsh!⇒Mcshcnptnmvl
+  McshTchInf000009:1719  McshEngl.Mcshnmvl!=name-value-data-of-Mcsh  ->  Mcshcnptnmvl!=name-value-data-of-Mcsh
+  McshTchInf000009:1720  McshEngl.Mcshdata.name_value!⇒Mcshnmvl  ->  Mcshdata.name_value!⇒Mcshcnptnmvl
+  McshTchInf000009:1721  McshEngl.Mcsh'name_value_data!⇒Mcshnmvl  ->  Mcsh'name_value_data!⇒Mcshcnptnmvl
+  McshTchInf000009:1748  McshEngl.Mcshtable  ->  Mcshcnpttable
+  McshTchInf000009:1749  McshEngl.Mcshdata.table!⇒Mcshtable  ->  Mcshdata.table!⇒Mcshcnpttable
+  McshTchInf000009:1750  McshEngl.Mcsh'table_data!⇒Mcshtable  ->  Mcsh'table_data!⇒Mcshcnpttable
+  McshTchInf000021:195  McshEngl.Agnteos_community  ->  Eoszcommunity
+  McshTchInf000021:196  McshEngl.Agnteos-community!⇒Agnteos_community  ->  Agnteos-community!⇒Eoszcommunity
+  McshTchInf000021:197  McshEngl.Agnteos'human.AGGREGATE!⇒Agnteos_community  ->  Agnteos'human.AGGREGATE!⇒Eoszcommunity
+  McshTchInf000021:209  McshEngl.Agnteos_block_producer_human  ->  Eoszblock_producer_human
+  McshTchInf000021:210  McshEngl.Agnteos-block-producer-human!⇒Agnteos_block_producer_human  ->  Agnteos-block-producer-human!⇒Eoszblock_producer_human
+  McshTchInf000021:211  McshEngl.Agnteos'human.BLOCK_PRODUCER!⇒Agnteos_block_producer_human  ->  Agnteos'human.BLOCK_PRODUCER!⇒Eoszblock_producer_human
+  McshTchInf000021:233  McshEngl.Agnteos_account_owner  ->  Eoszaccount_owner
+  McshTchInf000021:234  McshEngl.Agnteos-account-owner!⇒Agnteos_account_owner  ->  Agnteos-account-owner!⇒Eoszaccount_owner
+  McshTchInf000021:235  McshEngl.Agnteos'human.TOKEN_HOLDER!⇒Agnteos_account_owner  ->  Agnteos'human.TOKEN_HOLDER!⇒Eoszaccount_owner
+  McshTchInf000021:2795  McshEngl.Agnteos_relation_to__Ethereum_net  ->  Eoszrelation_to__Ethereum_net
+  McshTchInf000021:2796  McshEngl.Agnteos'relation_to__Ethereum_net!⇒Agnteos_relation_to__Ethereum_net  ->  Agnteos'relation_to__Ethereum_net!⇒Eoszrelation_to__Ethereum_net
+  McshTchInf000021:2797  McshEngl.Agnteos'environment'relation_to__Ethereum_net!⇒Agnteos_relation_to__Ethereum_net  ->  Agnteos'environment'relation_to__Ethereum_net!⇒Eoszrelation_to__Ethereum_net
+  McshTchInf000021:3269  McshEngl.Agnteos_finality  ->  Eoszfinality
+  McshTchInf000021:3270  McshEngl.Agnteos'finality!⇒Agnteos_finality  ->  Agnteos'finality!⇒Eoszfinality
+  McshTchInf000021:3271  McshEngl.Agnteos'block.irreversible'finality!⇒Agnteos_finality  ->  Agnteos'block.irreversible'finality!⇒Eoszfinality
+
+=== ADD (44) — the-old main-name kept as a-synonym: X!⇒X'
+  McshEdu000010:84  <br>* McshEngl.SciLago_unsolved_problem!⇒Lagosciunsolved_problem,
+  McshHlth000011:3941  <br>* McshEngl.disease.animal_cause!⇒Dissanimal_cause,
+  McshHlth000011:3960  <br>* McshEngl.disease.bite_cause!⇒Dissbite_cause,
+  McshHlth000011:15035  <br>* McshEngl.diseaseStomack!⇒DissStomack,
+  McshHlth000011:15053  <br>* McshEngl.diseaseGastritis!⇒DissGastritis,
+  McshHlth000011:15119  <br>* McshEngl.diseaseHeartburn!⇒DissHeartburn,
+  McshHmn000002:2385  <br>* McshEngl.human_att133_openness_to_experience!⇒Humnopenness_to_experience,
+  McshHmn000002:3384  <br>* McshEngl.human_info!⇒Humninfo,
+  McshHmn000002:3398  <br>* McshEngl.human_att060_qualification_doc!⇒Humnqualification_doc,
+  McshHmn000002:3427  <br>* McshEngl.human_att111_educational_occupational_credential!⇒Humneducational_occupational_credential,
+  McshHmn000002:3534  <br>* McshEngl.human_dignity!⇒Humndignity,
+  McshHmn000002:3739  <br>* McshEngl.human_att123_subject_of_productInfo!⇒Humnsubject_of_productInfo,
+  McshHmn000002:3754  <br>* McshEngl.human_att124_subject_of_eventHuman!⇒Humnsubject_of_eventHuman,
+  McshHmn000002:3788  <br>* McshEngl.human_att146_studied_by!⇒Humnstudied_by,
+  McshHmn000002:3809  <br>* McshEngl.human_att119_same_referent!⇒Humnsame_referent,
+  McshHmn000002:3825  <br>* McshEngl.human_att122_similar_referent!⇒Humnsimilar_referent,
+  McshHmn000002:3919  <br>* McshEngl.human_acting!⇒Humnacting,
+  McshHmn000002:3954  <br>* McshEngl.human_acting_vs_behaving!⇒Humnacting_vs_behaving,
+  McshHmn000002:4088  <br>* McshEngl.human_att037_self_actualization!⇒Humnself_actualization,
+  McshHmn000002:4144  <br>* McshEngl.human_event!⇒Humnevent,
+  McshHmn000002:4191  <br>* McshEngl.human_lifetime!⇒Humnlifetime,
+  McshHmn000002:4209  <br>* McshEngl.human_death_date!⇒Humndeath_date,
+  McshHmn000002:4225  <br>* McshEngl.human_age!⇒Humnage,
+  McshHmn000002:4245  <br>* McshEngl.human_birth_date!⇒Humnbirth_date,
+  McshHmn000002:4899  <br>* McshEngl.humanAsk!⇒HumnAsk,
+  McshHmn000002:4984  <br>* McshEngl.humanDeictic!⇒HumnDeictic,
+  McshHmn000002:5022  <br>* McshEngl.humanDefNone!⇒HumnDefNone,
+  McshHmn000002:5047  <br>* McshEngl.humanDefAll!⇒HumnDefAll,
+  McshHmn000002:5094  <br>* McshEngl.humanDefNoOne!⇒HumnDefNoOne,
+  McshHmn000002:5120  <br>* McshEngl.humanDefNoOneNo!⇒HumnDefNoOneNo,
+  McshTchInf000005:497  <br>* McshEngl.Cmprlago_documentation!⇒Cmpldocumentation,
+  McshTchInf000005:510  <br>* McshEngl.Cmprlago_specification!⇒Cmplspecification,
+  McshTchInf000009:1584  <br>* McshEngl.Mcshsect!⇒Mcshcnptsect,
+  McshTchInf000009:1615  <br>* McshEngl.Mcshpara!⇒Mcshcnptpara,
+  McshTchInf000009:1664  <br>* McshEngl.Mcshscript!⇒Mcshcnptscript,
+  McshTchInf000009:1677  <br>* McshEngl.Mcsh_text!⇒Mcshcnpttext,
+  McshTchInf000009:1697  <br>* McshEngl.Mcsh_list!⇒Mcshcnptlist,
+  McshTchInf000009:1719  <br>* McshEngl.Mcshnmvl!⇒Mcshcnptnmvl,
+  McshTchInf000009:1748  <br>* McshEngl.Mcshtable!⇒Mcshcnpttable,
+  McshTchInf000021:195  <br>* McshEngl.Agnteos_community!⇒Eoszcommunity,
+  McshTchInf000021:209  <br>* McshEngl.Agnteos_block_producer_human!⇒Eoszblock_producer_human,
+  McshTchInf000021:233  <br>* McshEngl.Agnteos_account_owner!⇒Eoszaccount_owner,
+  McshTchInf000021:2795  <br>* McshEngl.Agnteos_relation_to__Ethereum_net!⇒Eoszrelation_to__Ethereum_net,
+  McshTchInf000021:3269  <br>* McshEngl.Agnteos_finality!⇒Eoszfinality,

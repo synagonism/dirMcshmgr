@@ -112,6 +112,8 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-33-0.2026-11-10: MvrwId05 knows the-ending "evolg" (idXevolg -> idXevog); the-MvrwGstr01 guard skips the-head line',
+    'createMcsh.mjs.0-32-0.2026-11-09: --code MvrwGstr01 skips a-generic-tree:: with an-item Y:generic that is no head (an-old name)',
     'createMcsh.mjs.0-31-0.2026-11-08: --namecomma, the-fix of MvreName02: a-name-line without a-comma gets it at the-end',
     'createMcsh.mjs.0-30-0.2026-11-07: --mainname skips a-main-name without an-English start (όγδοος-η-ο): by hand',
     'createMcsh.mjs.0-29-0.2026-11-07: --code MvrwMain01 a-specific WRest → BRest (SystDynaSelf → DynaSelf)',
@@ -1207,7 +1209,7 @@ const ooFixCode = {
   MvrwId02: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'dong', ['dngFT', 'dngF', 'dng', 'doing']) },
   MvrwId03: { sKind: 'idmap', fIdNew: sId => sId.trim().replace(/\s+/g, '_') },
   MvrwId04: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'eval', ['evaluation', 'evaln', 'evln', 'eln']) },
-  MvrwId05: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evltg', 'evlg', 'evg', 'Evg']) },
+  MvrwId05: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evolg', 'evltg', 'evlg', 'evg', 'Evg']) },
   MvrwId06: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'irsc', ['resource', 'infrsc', 'ircs', 'rsc']) },
   MvrwId07: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'pntr', ['rtr']) },
   MvrwId08: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'chtr', ['ctr']) },
@@ -1829,11 +1831,18 @@ function fFindMainOfSect(aLineIn, sIdSectIn) {
  *   before "...entity:generic"; a-tree WITH a-generic gets a-new group "=== G:generic, ...entity:generic"
  *   at its end, before a-"=== label:" group (not generics).
  */
-function fPlanGntrList(aLineIn, sNameShortIn, oJobIn, sFromIn, aoEditIn, aoNoteIn) {
+function fPlanGntrList(aLineIn, sNameShortIn, oJobIn, sFromIn, aoEditIn, aoNoteIn, oSetHeadIn) {
   const nOpen = aLineIn.findIndex(sLine => sLine.includes(`<p id="${oJobIn.sIdGntr}">generic-tree::`));
   if (nOpen === -1) { aoNoteIn.push(`SKIP   ${sNameShortIn}  #${oJobIn.sIdGntr}: no <p> generic-tree:: with it ${sFromIn}`); return; }
   let nEnd = nOpen; while (nEnd < aLineIn.length - 1 && !aLineIn[nEnd].includes('</p>')) nEnd++;
   const sPara = aLineIn.slice(nOpen, nEnd + 1).join('\n');
+  // an-item "Y:generic" that is NO head: an-OLD name of a-renamed head (G may be there already): rename it first
+  const aOld = [...sPara.matchAll(/<br>\*\s*([^\s*,.][^\s*,]*:generic)(?=[,\s])/g)].map(aM => aM[1])
+    .filter(sY => !sY.startsWith('McshEngl.') && !oSetHeadIn.has(sY));   // the-head line is not an-item
+  if (aOld.length) {
+    aoNoteIn.push(`SKIP   ${sNameShortIn}:${nOpen + 1}  #${oJobIn.sIdGntr}: ${aOld.join(', ')} is no generic-tree:: head (an-old name?): rename it, G may be there already ${sFromIn}`);
+    return;
+  }
   const aItemG = oJobIn.aItemG.filter(sG => !new RegExp(`[\\s*>.]${sG.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[,\\s]`).test(sPara));
   if (!aItemG.length) return;
   const sIn = fFindIndentNext(aLineIn, nOpen, aLineIn[nOpen].match(/^( *)/)[1]);
@@ -1872,7 +1881,7 @@ function fPlanGntrNew(sRawIn, sNameShortIn, aoJobIn, oSetHeadIn) {
   const oSetId = new Set([...sRawIn.matchAll(/\bid="([^"]+)"/g)].map(aM => aM[1]));
   for (const oJob of aoJobIn) {
     const sFrom = `(specific of ${oJob.aItemG.join(', ')}, from ${oJob.aFrom.join(', ')})`;
-    if (oJob.sIdGntr) { fPlanGntrList(aLine, sNameShortIn, oJob, sFrom, aoEdit, aoNote); continue; }
+    if (oJob.sIdGntr) { fPlanGntrList(aLine, sNameShortIn, oJob, sFrom, aoEdit, aoNote, oSetHeadIn); continue; }
     const oMain = fFindMainOfSect(aLine, oJob.sIdS);
     if (!oMain) { aoNote.push(`SKIP   ${sNameShortIn}  #${oJob.sIdS}: no section or no name::-para ${sFrom}`); continue; }
     const sLoc = `${sNameShortIn}:${oMain.nName + 1}`;

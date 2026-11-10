@@ -1,0 +1,63 @@
+=== LANG (0) — language names: 4-char code + CapPart!⇒code + lowercase part (ItlnVerb!⇒Itlnverb); remove
+
+=== REMOVE (55) — X!⇒M where X differs from M only in letter case, and the same name:: has an M line; remove
+  McshCor000003:30  ENTITY!⇒entity
+  McshCor000006:687  timepoint!⇒timePoint
+  McshCor000008:50  WHOLE!⇒whole
+  McshCor000008:202  PART!⇒part
+  McshCor000008:824  SET!⇒set
+  McshCor000011:37  SYSTEM!⇒system
+  McshEdu000005:249  charTeX!⇒charTex
+  McshHlth000005:3066  SystSkeletalDoing!⇒SystSkeletaldoing
+  McshHlth000013:47  FOOD!⇒food
+  McshHlth000016:393  thrpMind!⇒ThrpMind
+  McshLag000006:32  CHAR!⇒char
+  McshLag000007:33161  glblLago!⇒Glbllago
+  McshStn000012:819  HumnRich!⇒humnRich
+  McshStn000017:58  STANDARD!⇒standard
+  McshStn000020:5107  Eubudget_input.VAT_based!⇒Eubudget_input.Vat_based
+  McshStn000020:18534  EuzzadmnDoing!⇒Euzzadmndoing
+  McshStn000031:2337  Chnalaw!⇒ChnaLaw
+  McshStn000042:1331  Schoolbook!⇒schoolbook
+  McshTch000002:33  TECH!⇒tech
+  McshTchInf000006:3173  Srcdlago.DYNAMICALLY_TYPED!⇒Srcdlago.dynamically_typed
+  McshTchInf000008:533  Hitp_tct_doc.FOOTER!⇒Hitp_tct_doc.footer
+  McshTchInf000008:562  Hitp_tct_doc.P!⇒Hitp_tct_doc.p
+  McshTchInf000008:691  Hitp_content_unit.Paragraph_with_sentences!⇒Hitp_content_unit.paragraph_with_sentences
+  McshTchInf000008:711  Hitp_content_unit.Paragraph_with_subparagraphs!⇒Hitp_content_unit.paragraph_with_subparagraphs
+  McshTchInf000011:5100  WEBPAGE!⇒Webpage
+  McshTchInf000012:6492  Eslintrule.POSSIBLE_ERROR!⇒ESLintrule.possible_error
+  McshTchInf000012:6673  Eslintrule.BEST_PRACTICE!⇒ESLintrule.best_practice
+  McshTchInf000012:6993  Eslintrule.STRICT_MODE!⇒ESLintrule.strict_mode
+  McshTchInf000012:7183  Eslintrule.STYLISTIC_ISSUE!⇒ESLintrule.stylistic_issue
+  McshTchInf000012:7584  Eslintrule.ECMAScript_6!⇒ESLintrule.ECMAScript_6
+  McshTchInf000012:8178  Jshint!⇒JSHint
+  McshTchInf000012:8207  Jslint!⇒JSLint
+  McshTchInf000015:380  netAlgo_benefit.DOUBLE_SPENDING_PROTECTION!⇒netAlgo_benefit.double_spending_protection
+  McshTchInf000015:2889  Agntasset_price.BID!⇒Agntasset_price.bid
+  McshTchInf000015:5143  Agntexvu.BACKED_WITH_COMMODITY!⇒Agntexvu.backed_with_commodity
+  McshTchInf000015:11707  Agntsrvc.sectorPrdn.TRADE!⇒Agntsrvc.sectorPrdn.trade
+  McshTchInf000015:11851  Agntsrvc.sectorPrdn.TRANSPORTATION!⇒Agntsrvc.sectorPrdn.transportation
+  McshTchInf000015:12512  Agntsrvc.COORDINATION.GLOBAL!⇒Agntsrvc.coordination.global
+  McshTchInf000015:12638  Agntsrvc.PROCESS_INTEGRITY!⇒Agntsrvc.process_integrity
+  McshTchInf000016:5190  Bkcnchain_tx.MICROTRANSACTION!⇒Bkcnchain_tx.microtransaction
+  McshTchInf000019:3093  DoAragon_template.DEMOCRACY!⇒DoAragon_template.Democracy
+  McshTchInf000019:3107  DoAragon_template.MULTISIG!⇒DoAragon_template.Multisig
+  McshTchInf000019:3940  DAOstack_proposal.SCHEME!⇒DAOstack_proposal.scheme
+  McshTchInf000019:3976  DAOstack_proposal.REGULAR!⇒DAOstack_proposal.regular
+  McshTchInf000019:3990  DAOstack_proposal.PENDING!⇒DAOstack_proposal.pending
+  McshTchInf000019:4037  DAOstack_proposal.BOOSTED!⇒DAOstack_proposal.boosted
+  McshTchInf000019:4071  DAOstack_proposal.PASSED!⇒DAOstack_proposal.passed
+  McshTchInf000019:4100  DAOstack_proposal.EXECUTED!⇒DAOstack_proposal.executed
+  McshTchInf000019:4112  DAOstack_proposal.EXAMPLE!⇒DAOstack_proposal.example
+  McshTchInf000026:1722  Blockstack_Dapp.HELLO_BLOCKSTACK!⇒Blockstack_Dapp.Hello_Blockstack
+  McshTchInf000026:1779  Blockstack_Dapp.TODO_LIST!⇒Blockstack_Dapp.todo_list
+  McshTchInf000028:1555  DnDiem_state.LATEST!⇒DnDiem_state.latest
+  McshTchInf000031:2302  Cppzlago_library.BOOST!⇒Cppzlago_library.Boost
+  McshTchInf000038:1208  llmCoding!⇒Llmcoding
+  McshTchInf000041:36  VSCode!⇒Vscode
+
+=== EXACT (0) — X!⇒X, the name points to itself exactly; remove
+
+=== NO_MAIN_LINE (0) — case-only self name, but no other line in the paragraph has M; kept, check
+

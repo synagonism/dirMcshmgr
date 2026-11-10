@@ -123,3 +123,83 @@ T68. {2026-11-05} DONE: createMcsh.mjs 0-25-0 "--code MvrwGstr01" also fixes "do
      a tree with no generic yet ("=== ...entity:generic") gets G before ...entity:generic; a tree with generics gets a new group
      "=== G:generic, ...entity:generic" at its end (before a "=== label:" group). Run: McshNtr000004 idMol013gntr MolePolymer
      "=== MoleMacro:generic, ...entity:generic". The new-group case tested on a sample. MvrwGstr01/02 now 0 + 0.
+
+T69. {2026-11-09} DONE: GS-TREE after its specifics -> right BEFORE the first one (user: "many GSTREE are at the end of specific attrs
+     (generic.specific) eg GENERIC-SPECIFIC-TREE of Dongargt put before the first"). A sibling is a specific when its title has the form
+     "generic.specific" (a dot in its first word) AND it is a specific of X: title "X.", or linked / named in X's specific-tree::.
+     Only GS-TREEs AFTER their first specific moved; nothing moved to "last". 98 moves in 33 files (scratchpad gstr-position2.js;
+     sections move whole, levels/ids/links kept; content guard: same lines). Parser now accepts <section id class>.
+     SKIPPED, unbalanced sections: McshLag000006, McshNtr000007, McshStn000009, McshStn000015. List: dirReport/gstr-position2-applied.txt.
+
+T70. {2026-11-09} DONE: MvrwGstr01 17 -> 0. createMcsh --code MvrwGstr01 --all --fix: 8 GNTRNEW (language adjectives Fracadje, Hindadje,
+     Urduadje, Jpnsadje, Smkdadje, Romnadje, Srusadje, Sslvadje <- Hmmdadje) + 9 GNTRADD. 8 of the GNTRADD were WRONG: the specific's
+     tree already had G under an OLD head name (user renames since 9a1e8703: attribute->Enttattr, discreteNo_entity->genericDiscreteNo,
+     FctgEvaluating->FctgEvalg, SystDynaSelf->DynasystSelf, mathLogic->Mathlogic, OganSense->Sensogan, SystNervousdoing->Nrvssystdoing):
+     their appended groups removed (scratchpad undo-gntradd.js), then 11 stale refs renamed in place (head-refs-fix.js, also
+     diagnosis->Dissdiagnosis). Kept: Dissdiagnosis "=== disease:generic" (disease's specific-tree lists disease.diagnosis!@…#idDssHmn003 —
+     diagnosis-doing looks like an ATTRIBUTE of disease: user to decide). createMcsh.mjs 0-32-0: the MvrwGstr01 fix SKIPS a tree with an
+     item Y:generic that is no head (old name). MvrwGstr02: 1 (Dissdiagnosis has generic doing, doing's specific-tree lacks it).
+     Seen: McshCor000009:1444-1445 the head McshEngl.genericDiscreteNo:generic, twice.
+
+T71. {2026-11-09} DONE: MvrwGstr02 1 -> 0. createMcsh --code MvrwGstr02 --all --fix: McshCor000004 idDngsptr += new === group
+     "doing.Dissdiagnosis!@McshHlth000011#idDssHmn003" (Dissdiagnosis has generic doing). MvrwGstr01/02 now 0 + 0.
+
+T72. {2026-11-09} DONE (user): "remove disease.diagnosis from disease specific-tree": McshHlth000011 idDssHmnsptr item
+     disease.diagnosis!@McshHlth000011#idDssHmn003 removed; the "=== disease:generic" group the T70 fix had added from it to
+     Dissdiagnosis's generic-tree (idDssHmn003gntr) removed too. MvrwGstr01/02 0 + 0.
+
+T73. {2026-11-10} REPORT: dirReport/division-report.txt (scratchpad division-report.js) — 186 division sections "X.Specsdiv.A"
+     (LIST 133 only the list, TEXT 53 with text), 0 X specific-trees with "=== on A:" groups, 2400 items (1852 plain names without link,
+     548 linked, 4 with the member-line X.A.v in the specific's name::), 6 specific titles with -NNNN (Hmmdlago). Plan (user's choice next):
+     member-line X.A.v in each specific's name::, divisions as "=== on A:" groups in X's specific-tree::, sections only for TEXT divisions.
+
+T74. {2026-11-10} DONE: division membership lines (scratchpad division-member.js): for the 548 LINKED items of the 186 "X.Specsdiv.A"
+     sections, the specific's name:: got "McshEngl.X.A.v!⇒M," (X, A from the division's name-line, v from the specific's title after "X." /
+     "X.A.", without -NNNN / NNN_ / (…), "-" -> "_"; M its one !⇒ main-name), after its last English name-line. 447 added in 24 files
+     (net +447 lines, nothing else changed), 9 existed, SKIPPED 92: no main-name 15, title not "X.…" 70 (mostly page overviews),
+     no name:: 7 — see dirReport/division-member-applied.txt. No validator issue names a new line. MvrwGstr01 97 (Hmmdlago & languages,
+     from specific-tree edits since T72), MvreName01 28, MvreName02 1.
+
+T75. {2026-11-10} DONE: division sections -> "=== on A!@file#idA:" groups in X's specific-tree:: (user: "convert both kinds"; choice
+     "convert 44, report 140"). scratchpad division-convert.js: 16 converted in 13 files (model evaluation/archetype/creator, ChmcElry symbol
+     119 items, AgntBkcn & Hmmdlago evoluting, disease cause, foodCooked cooking, ...): group with the items (linked -> member-line X.A.v!@…),
+     the division's names -> A's name:: as "!⇒MA", the section removed; none had text beyond the list; no link to a removed id remains.
+     KEPT 168: 140 without an A-section "A of X"; 28 skipped (A in another file 5, the "· on" link is a specific not an attribute
+     (Mcsattr.generic, Semuverbattr.time, doing.main-functing, ...), A without clear main-name, A/sptr inside the division, no items).
+     MvrwGstr01 97 -> 106: +9 division members now checked (fried, baked; 7 ChmcElry elements). Snapshot: scratchpad preDivConv/.
+     List: dirReport/division-convert-applied.txt.
+
+T76. {2026-11-10} DONE: MvrwGstr01 106 -> 10. createMcsh.mjs guard fixed (the head line McshEngl.X:generic was taken as an old-name item:
+     45 false skips -> 10 real ones). --code MvrwGstr01 --all --fix: 95 fixed in 26 files (60 GNTRNEW: Hmmdlago languages, fried/baked,
+     ...; 35 GNTRADD: language units Ellaphnm, FracLetr, ..., ChmcElry elements). Old name mapping-method:generic -> methodMapping:generic
+     in 10 language trees. LEFT 10: language trees (Arab, Bcms, Deut, Hiur, Span, Afa0, Asa0, Ide0, Tur0, Slv0) with the unknown old name
+     hmnmlago:generic (probably Hmmdlago: user to confirm). MvrwGstr02 0.
+     -> user: hmnmlago = Hmmdlago: hmnmlago:generic -> Hmmdlago:generic in the 10 language trees. MvrwGstr01/02 0 + 0.
+
+T77. {2026-11-10} DONE: MvreName01 28 -> 0. createMcsh --code MvreName01 (--dupname) --all --fix: 24 name-lines written twice in ONE para,
+     the second deleted (9 files: McsmgrAAj doings, Englsylb vowels, SoctEcon'GDP, the doubled genericDiscreteNo:generic head, ...).
+     4 year-names shared by Unicode versions (McshLag000006): Unicode.YYYY -> Unicode.YYYY.V (user's choice), e.g. Unicode.2000.3_2_0.
+
+T78. {2026-11-10} DONE: MvreName02 1 -> 0. createMcsh --code MvreName02 (--namecomma) --all --fix: McshLag000007:30689
+     "McshEngl.encoding-mapping-relation--of-Hmmdlago!⇒HmmdmapgrltnEncoding" got its end comma. Its name:: lacks the pair line
+     "HmmdmapgrltnEncoding!=…" (informal/main pair rule) — not changed.
+
+T79. {2026-11-10} DONE: MvreMain01 2 -> 0 (by hand; createMcsh --mainname fixes only "-").
+     McshStnlaw000002:396 LawcomplianceΝegative had a GREEK capital Nu: -> Latin N in its 4 lines (no other file used it).
+     McshNtr000007:279 ChmcElry'symbol became a main-name by MY T75 conversion (moved "ChmcElry.Specsdiv.symbol!⇒ChmcElry'symbol"; the
+     attribute had NO !⇒ main, like its siblings): the moved line is now plain "McshEngl.ChmcElry.Specsdiv.symbol,". The other 15
+     T75 conversions pointed at an existing main-name (checked).
+
+T80. {2026-11-10} DONE: MvrwId05 1 -> 0. createMcsh.mjs 0-33-0: MvrwId05 knows the bad ending "evolg" (it planned idMedHmn004evolgevog).
+     --code MvrwId05 --all --fix: McshHlth000014 idMedHmn004evolg -> idMedHmn004evog (+5 own ids: H2, dsn, nam, ...), links re-pointed.
+
+T81. {2026-11-10} DONE: MvrwMain01 143 -> 99. createMcsh --code MvrwMain01 --all --fix: 44 attribute/specific main-names now begin with
+     the Attrbase (e.g. disease.animal_cause -> Dissanimal_cause, diseaseStomack -> DissStomack, SciLago_unsolved_problem ->
+     Lagosciunsolved_problem), 206 lines changed, old main-names kept as synonyms X!⇒X' (44), 6 files. Other name/tree rules still 0.
+     LEFT 99 (by hand: no Attrbase-word derivable): human 37 (adult, infant, childMale, whom, ...), Cmprlago 10, bodyHumn 10 (wrist, BMI, ...),
+     SciLago 8 (+2 aliases Lagosci), Agnteos 7, AgntEthr 6, OgznCsmg 6, health 5, societyOgsm 3, disease 3, entity 1 ("this"), Humn alias 1.
+     List: dirReport/mvrwmain01-fix-applied.txt.
+
+T82. {2026-11-10} DONE: MvrwMain07 2 -> 0. McshCor000004: createMcsh --code MvrwMain07 --file McshCor000004 --fix moved
+     "Dong!Attrbase!⇒doing" right after "doing!@McshCor000004". McshHlth000011: NOT moved — its Attrbase line was already after the
+     file line, which had a typo "disease!@McsHlth000011" -> "disease!@McshHlth000011" (the fix would have put Attrbase before it).

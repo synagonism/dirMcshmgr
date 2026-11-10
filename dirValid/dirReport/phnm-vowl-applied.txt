@@ -1,0 +1,43 @@
+vowel-PHONEME SECTIONS -> CodephnmVowl APPLIED — 2026-11-10
+rename: 1 | new pair: 0 | already: 32 | skipped: 0 | files written: 1
+
+=== RENAME (1)
+  McshLag000009:900  phoneme.vowel of speech  VowlPhnm -> HmmdphnmVowl  (199 uses)
+
+=== NEW PAIR (0)
+
+=== ALREADY (32)
+  McshLag000010:499  Snguphnm.vowel of speech  SnguphnmVowl
+  McshLag000011:289  Englphnm.vowel of speech  EnglphnmVowl
+  McshLag000012:432  Espophnm.vowel of speech  EspophnmVowl
+  McshLag000018:1017  Zhonphnm.vowel of speech  ZhonphnmVowl
+  McshLag000020:340  Ellnphnm.vowel  EllnphnmVowl
+  McshLag000027:200  Ellaphnm.vowel  EllaphnmVowl
+  McshLag000030:217  Turkphnm.vowel  TurkphnmVowl
+  McshLag000033:336  Deutphnm.vowel  DeutphnmVowl
+  McshLag000034:229  Bcmsphnm.vowel of speech  BcmsphnmVowl
+  McshLag000035:282  Spanphnm.vowel of speech  SpanphnmVowl
+  McshLag000036:275  Arabphnm.vowel of speech  ArabphnmVowl
+  McshLag000037:345  Hiurphnm.vowel of speech  HiurphnmVowl
+  McshLag000037:2636  Hindphnm.vowel  HindphnmVowl
+  McshLag000037:4761  Urduphnm.vowel  UrduphnmVowl
+  McshLag000038:319  Slv0phnm.vowel of speech  Slv0phnmVowl
+  McshLag000039:294  Ide0phnm.vowel of speech  Ide0phnmVowl
+  McshLag000039:1586  PtiePhnm.vowel  PtiephnmVowl
+  McshLag000040:312  Afa0phnm.vowel of speech  Afa0phnmVowl
+  McshLag000041:305  Tur0phnm.vowel of speech  Tur0phnmVowl
+  McshLag000042:259  Asa0phnm.vowel of speech  Asa0phnmVowl
+  McshLag000043:355  Koraphnm.vowel of speech  KoraphnmVowl
+  McshStn000034:738  Vnmaphnm.vowel  VnmaphnmVowl
+  McshStn000035:483  Itlnphnm.vowel  ItlnphnmVowl
+  McshStn000037:404  Fracphnm.vowel  FracphnmVowl
+  McshStn000038:380  Sbulphnm.vowel  SbulphnmVowl
+  McshStn000039:390  Sqipphnm.vowel  SqipphnmVowl
+  McshStn000040:317  Smkdphnm.vowel  SmkdphnmVowl
+  McshStn000041:354  Sslvphnm.vowel  SslvphnmVowl
+  McshStn000043:317  Srusphnm.vowel  SrusphnmVowl
+  McshStn000044:317  Romnphnm.vowel  RomnphnmVowl
+  McshStn000048:340  Jpnsphnm.vowel  JpnsphnmVowl
+  McshStn000050:400  Khmrphnm.vowel  KhmrphnmVowl
+
+=== SKIP (0)

@@ -1,0 +1,193 @@
+division conversion (A-section exists) — 2026-11-10   DRY=false
+
+converted: 16 | no A-section (kept): 140 | skipped: 28 | links re-pointed: 0 | files written: 13
+
+=== CONVERTED (16)
+  McshCor000003:5081  idEntScdnDng "entity.Specsdiv.doing"  -> idEntsptr groups: === on DOING!@McshCor000003#idEntdong: 2; text 0 -> #idEntdongdsn; names 1 -> #idEntdongnam (!⇒Enttdoing)
+  McshCor000009:1324  idGnrcScdnmsrg "generic.Specsdiv.measuring"  -> idGnrcsptr groups: === on measuring!@McshCor000009#idGnrcmsrg: 2; text 0 -> #idGnrcmsrgdsn; names 1 -> #idGnrcmsrgnam (!⇒ActgMeasuring)
+  McshCor000012:476  idMdlatt012 "model.Specsdiv.evaluation"  -> idMdlsptr groups: === on evaluation!@McshCor000012#idMdleval: 7; text 0 -> #idMdlevaldsn; names 2 -> #idMdlevalnam (!⇒Modelevaln)
+  McshCor000012:534  idMdlatt015 "model.Specsdiv.archetype"  -> idMdlsptr groups: === on archetype!@McshCor000012#idMdlatt001: 8; text 0 -> #idMdlatt001dsn; names 1 -> #idMdlatt001nam (!⇒archo)
+  McshCor000012:544  idMdlatt019 "model.Specsdiv.creator"  -> idMdlsptr groups: === on creator!@McshCor000012#idMdlatt009: 2; text 0 -> #idMdlatt009dsn; names 2 -> #idMdlatt009nam (!⇒modeler)
+  McshHlth000011:744  idDssHmnScdnCaus "disease.Specsdiv.cause"  -> idDssHmnsptr groups: === on cause!@McshHlth000011#idDssHmn002F: 4; text 0 -> #idDssHmn002Fdsn; names 1 -> #idDssHmn002Fnam (!⇒Disscause)
+  McshHlth000013:1716  idFoodHmn050_2 "foodCooked.Specsdiv.cooking"  -> idFoodHmn050sptr groups: === on cooking!@McshHlth000013#idFoodHmnckng: 11; text 0 -> #idFoodHmnckngdsn; names 1 -> #idFoodHmnckngnam (!⇒ActgCooking)
+  McshHlth000014:662  idMedHmnScdvPspn "medication.Specsdiv.prescription"  -> idMedHmnsptr groups: === on prescription!@McshHlth000014#idMedHmnatt016: 2; text 0 -> #idMedHmnatt016dsn; names 1 -> #idMedHmnatt016nam (!⇒medication_prescription)
+  McshLag000007:19509  idLHmnmnameTrmScdnSmscpt "term.Specsdiv.semu-concept"  -> idLHmnmnameTrmsptr groups: === on semu-concept!@McshLag000007#idLHmnmsmscpt: 3; text 0 -> #idLHmnmsmscptdsn; names 1 -> #idLHmnmsmscptnam (!⇒Hmmdsemucnpt)
+  McshLag000007:32052  idLHmnmScdnEvtg "Hmmdlago.Specsdiv.evoluting"  -> idLHmnmsptr groups: === on evoluting!@McshLag000007#idLHmnmevog: 2; text 0 -> #idLHmnmevogdsn; names 1 -> #idLHmnmevognam (!⇒Hmmdevolg)
+  McshNtr000007:705  idChmElrScdnSbl "ChmcElry.Specsdiv.symbol"  -> idChmElrsptr groups: === on symbol!@McshNtr000007#idChmElrsbl: 119; text 0 -> #idChmElrsbldsn; names 1 -> #idChmElrsblnam (!⇒ChmcElry'symbol)
+  McshStn000009:8460  idSocHumnScdnGvcsm "society.Specsdiv.admin_system"  -> idSocHumnsptr groups: === on admin_system!@McshStn000009#idSocadmn: 4; text 0 -> #idSocadmndsn; names 2 -> #idSocadmnnam (!⇒Socadmn)
+  McshStn000010:3252  idSfrHmnSdev "satisfier.Specsdiv.exchange-value"  -> idSfrHmnsptr groups: === on exchange_value!@McshStn000010#idSfrHmnatt001: 2; text 0 -> #idSfrHmnatt001dsn; names 1 -> #idSfrHmnatt001nam (!⇒Sfrev)
+  McshTchInf000003:908  idCmrScdnHdwr "techCmpr.Specsdiv.hardware"  -> idCmrsptr groups: === on hardware!@McshTchInf000003#idCmratt001: 6; text 0 -> #idCmratt001dsn; names 1 -> #idCmratt001nam (!⇒Cmrhardware)
+  McshTchInf000006:1716  idLCpgmScdndmn "Pgmglago.Specsdiv.on-domain"  -> idLCpgmsptr groups: === on domain!@McshTchInf000006#idLCpgmarchdmn: 2; text 0 -> #idLCpgmarchdmndsn; names 1 -> #idLCpgmarchdmnnam (!⇒Pgmgarchdomain)
+  McshTchInf000016:5792  idDbcOnevg "AgntBkcn.Specsdiv.evoluting"  -> idDbcsptr groups: === on evoluting!@McshTchInf000016#idDbcevog: 13; text 0 -> #idDbcevogdsn; names 1 -> #idDbcevognam (!⇒Chainevolg)
+
+=== NO-A-SECTION (140)
+  McshCor000002:228  idMcsattScdnPrt "Mcsattr.Specsdiv.internal|external"  X=Mcsattr A=internal|external
+  McshCor000002:255  idMcsattScdnDng "Mcsattr.Specsdiv.doing-instance"  X=Mcsattr A=doing-instance
+  McshCor000002:283  idMcsattScdnIht "Mcsattr.Specsdiv.inherited-to"  X=Mcsattr A=inherited-to
+  McshCor000002:1036  idMcsattPrtNScdnWhl "McsattPartNo.Specsdiv.whole"  X=McsattPartNo A=whole
+  McshCor000003:5022  idEntScdnStrr "entity.Specsdiv.structure"  X=entity A=structure
+  McshCor000003:5037  idEntScdnHmn "entity.Specsdiv.human"  X=entity A=human
+  McshCor000003:5052  idEntScdnHnlg "entity.Specsdiv.human-language"  X=entity A=human-language
+  McshCor000003:5067  idEntScdnDpdc "entity.Specsdiv.dependance"  X=entity A=dependance
+  McshCor000003:5099  idEntScdnBdr "entity.Specsdiv.boundary"  X=entity A=boundary
+  McshCor000003:5112  idEntScdnBnif "entity.Specsdiv.brain-info"  X=entity A=brain-info
+  McshCor000003:5125  idEntScdnKnlg "entity.Specsdiv.knowledge"  X=entity A=knowledge
+  McshCor000008:621  idWhlScdnStcr "whole.Specsdiv.structure"  X=whole A=structure
+  McshCor000012:1229  idMdl021sdarch "modelCmpr.Specsdiv.on-archetype"  X=modelCmpr A=on-archetype
+  McshCor000013:138  idBrnginfScdnIarn "infoMindBio.Specsdiv.infoMindBio-archetype-relation"  X=infoMindBio A=infoMindBio-archetype-relation
+  McshCor000015:348  idMcshExmlsdvBdr "McshExml.Specsdiv.boundary"  X=McshExml A=boundary
+  McshEdu000002:1011  idSciScdnFos7 "science.Specsdiv.FOS_2007"  X=science A=FOS_2007
+  McshEdu000002:1054  idSciScdnWkpd "science.Specsdiv.wikipedia"  X=science A=wikipedia
+  McshHlth000002:15754  idBdyHmnSpcdvrs "bodyHumn.Specsdiv.reproductive-system"  X=bodyHumn A=reproductive-system
+  McshHlth000007:195  idHlthOgmScdnWlbg "healthOgsm.Specsdiv.well-being"  X=healthOgsm A=well-being
+  McshHlth000011:750  idDssHmnScdnMntl "disease.Specsdiv.mental-part"  X=disease A=mental-part
+  McshHlth000011:776  idDssHmnScdnBddg "disease.Specsdiv.body'doing"  X=disease A=body'doing
+  McshHlth000013:897  idFoodHmnScdnSom "food.Specsdiv.state-of-matter"  X=food A=state-of-matter
+  McshHlth000013:910  idFoodHmnScdnTst "food.Specsdiv.taste"  X=food A=taste
+  McshHlth000013:926  idFoodHmnScdnTime "food.Specsdiv.time"  X=food A=time
+  McshHlth000013:943  idFoodHmnScdnNtr "food.Specsdiv.nature"  X=food A=nature
+  McshHlth000013:1634  idFoodHmn050_1 "foodCooked.Specsdiv.ingredient"  X=foodCooked A=ingredient
+  McshHlth000013:4023  idFoodHmn153 "drinkWine.Specsdiv.law"  X=drinkWine A=law
+  McshHlth000013:4120  idFoodHmn154 "drinkWine.Specsdiv.color"  X=drinkWine A=color
+  McshHlth000013:4184  idFoodHmn155 "drinkWine.Specsdiv.sweetness"  X=drinkWine A=sweetness
+  McshHlth000013:4259  idFoodHmn078 "drinkWine.Specsdiv.carbon-dioxide"  X=drinkWine A=carbon-dioxide
+  McshHlth000013:4319  idFoodHmn156 "drinkWine.Specsdiv.oldness"  X=drinkWine A=oldness
+  McshHlth000013:4341  idFoodHmn152SpdvSopr "drinkWine.Specsdiv.society-producing"  X=wine A=society-producing
+  McshHlth000013:4374  idFoodHmn152SpdvSocs "drinkWine.Specsdiv.society-consuming"  X=wine A=society-consuming
+  McshHlth000016:325  idThrpHmnScdvSqc "therapy.Specsdiv.sequence"  X=theratpy A=sequence
+  McshHmn000002:4751  idHmnSpdnRdv "human.Specsdiv.HbsystReproductive"  X=human A=HbsystReproductive
+  McshHmn000002:4765  idHmnSpdnItgc "human.Specsdiv.intelligence"  X=human A=intelligence
+  McshHmn000002:4778  idHmnSpdnEcnm "human.Specsdiv.economy"  X=human A=economy
+  McshHmn000002:4809  idHmnSpdnGnrn "human.Specsdiv.generation"  X=human A=generation
+  McshLag000002:227  idInfBrnBioScdnIarn "infoBrainBio.Specsdiv.infoBrainBio-archetype-relation"  X=infoBrainBio A=infoBrainBio-archetype-relation
+  McshLag000006:3852  idCharUcdSdogc "charUncd.Specsdiv.general-category"  X=charUncd A=general-category
+  McshLag000007:2147  idLHmnmsmsondoScdnCnpt "Semuargu.Specsdiv.concept-denoted"  X=Semuargu A=concept-denoted
+  McshLag000007:19020  idLHmnmnameScdnMpg "Hmmdname.Specsdiv.denoting-relation"  X=Hmmdname A=denoting-relation
+  McshLag000007:19044  idLHmnmnameScdnUnt "Hmmdname.Specsdiv.unit"  X=Hmmdname A=unit
+  McshLag000007:19058  idLHmnmnameScdnIeus "Hmmdname.Specsdiv.internal_external_use"  X=Hmmdname A=internal_external_use
+  McshLag000007:19484  idLHmnmnameTrmScdnStxmng "term.Specsdiv.syntax_and_meaning"  X=term A=syntax_and_meaning
+  McshLag000007:31982  idLHmnmScdnSpkr "Hmmdlago.Specsdiv.speaker"  X=Hmmdlago A=speaker
+  McshLag000007:32056  idLHmnmScdnISO "Hmmdlago.Specsdiv.ISO"  X=Hmmdlago A=ISO
+  McshLag000009:695  idL0017phnmScdnLag "phoneme.Specsdiv.language of speech"  X=phoneme A=language
+  McshLag000009:720  idL0017phnmScdnObrn "phoneme.Specsdiv.obstruction of speech"  X=phoneme A=obstruction
+  McshNtr000002:567  idMtrlScdnShape "material.Specsdiv.shape"  X=material A=shape
+  McshNtr000002:580  idMtrlScdnCrtr "material.Specsdiv.creator"  X=material A=creator
+  McshNtr000007:443  idChmElrScdnPctl "ChmcElry.Specsdiv.periodic-table"  X=ChmcElry A=periodic-table
+  McshNtr000007:575  idChmElrScdnName "ChmcElry.Specsdiv.name"  X=ChmcElry A=name
+  McshNtr000007:972  idChmElrScdnNoaim "ChmcElry.Specsdiv.number-of-atoms-in-molecule"  X=ChmcElry A=number-of-atoms-in-molecule
+  McshOgm000003:1000  idOgmScdnEvlg "Ogsm.Specsdiv.evolution"  X=Ogsm A=evolution
+  McshOgm000003:1030  idOgmScdn2empr "Ogsm.Specsdiv.two-empire"  X=Ogsm A=two-empire
+  McshOgm000003:1056  idOgmScdn3dmn "Ogsm.Specsdiv.three-domain {1990}"  X=Ogsm A=three-domain
+  McshOgm000003:1194  idOgmScdnLns "Ogsm.Specsdiv.Linnaeus {1735}"  X=Ogsm A=Linnaeus
+  McshOgm000008:667  idOgmVrsatt021 "OgsmVirus.Specsdiv.Ictv"  X=OgsmVirus A=Ictv
+  McshOgm000010:246  idPlntScdnLftm "OgsmPlant.Specsdiv.lifetime"  X=OgsmPlant A=lifetime
+  McshOgm000010:931  idPlnt012scdnMdc "plantFlowering.Specsdiv.mono-di-cot"  X=plantFlowering A=mono-di-cot
+  McshStn000002:378  idStnOgmScdnSlt "SctnOgms.Specsdiv.sociality"  X=SctnOgms A=sociality
+  McshStn000009:8467  idSocHumnScdnBlad "society.Specsdiv.blood-relations"  X=society A=blood-relations
+  McshStn000009:9255  idSocHumnScdnTech "society.Specsdiv.technology"  X=society A=technology
+  McshStn000009:9763  idSocHumnScdnTime "society.Specsdiv.time"  X=society A=time
+  McshStn000009:9848  idSocHumnScdnSrtr "society.Specsdiv.structure"  X=society A=structure
+  McshStn000009:9953  idSocHumnScdnPlac "society.Specsdiv.place"  X=society A=place
+  McshStn000009:10113  idSocHumnScdnCode "society.Specsdiv.code"  X=society A=code
+  McshStn000009:11679  idSocHumnScdnGen "society.Specsdiv.generic"  X=society A=generic
+  McshStn000010:1864  idSfrHmnSdew "satisfier.Specsdiv.economic-work"  X=satisfier A=economic-work
+  McshStn000010:2712  idSfrHmnSdcstn "satisfier.Specsdiv.consumption"  X=satisfier A=consumption
+  McshStn000010:3088  idSfrHmnSdpdcn "satisfier.Specsdiv.production"  X=satisfier A=production
+  McshStn000010:3314  idSfrHmnSdTime "satisfier.Specsdiv.time"  X=satisfier A=time
+  McshStn000011:1377  idWkrScdvElmt "Wrkr.Specsdiv.employment"  X=Wrkr A=employment
+  McshStn000011:1703  idWkrScdvSkil "Wrkr.Specsdiv.skill"  X=Wrkr A=skill
+  McshStn000012:3163  idEconHmnScdvPlng "SoctEcon.Specsdiv.planning"  X=SoctEcon A=planning
+  McshStn000012:3376  idEconHmnScdvTech "SoctEcon.Specsdiv.tech"  X=SoctEcon A=tech
+  McshStn000012:3530  idEconHmnSpdvWrkr "SoctEcon.Specsdiv.worker"  X=SoctEcon A=worker
+  McshStn000012:3786  idEconHmnSpdvSctr "SoctEcon.Specsdiv.sector"  X=SoctEcon A=sector
+  McshStn000012:3844  idEconHmnSpdnModl "SoctEcon.Specsdiv.model"  X=SoctEcon A=model
+  McshStn000015:1420  idOznPdnScdnOnr "OgznPrdg.Specsdiv.owner"  X=OgznPrdg A=owner
+  McshStn000015:1970  idOznPdn004Spdn3sml "sector.Specsdiv.3_sector_model"  X=sector A=3_sector_model
+  McshStn000015:1990  idOznPdn004SpdnOnsp "sector.Specsdiv.ownership"  X=sector A=ownership
+  McshStnlaw000002:1301  idLawSdsorc "law.Specsdiv.on-source"  X=law A=on-source
+  McshStnlaw000002:1324  idLawSdsoct "law.Specsdiv.on-society"  X=law A=on-society
+  McshStnlaw000002:1338  idLawSdlang "law.Specsdiv.on-language"  X=law A=on-language
+  McshStnlaw000002:1351  idLawSdtopc "law.Specsdiv.on-topic"  X=law A=on-topic
+  McshStnlaw000002:2156  idLawSdpcdr "law.Specsdiv.on-procedure"  X=law A=on-procedure
+  McshStnlaw000003:1119  idLawEus008 "Eulaw.Specsdiv.Eu'part"  X=Eulaw A=Eu'part
+  McshStnlaw000003:2697  idLawEus007 "EulawInternal.Specsdiv.importance"  X=EulawInternal A=importance
+  McshStnlaw000003:2848  idLawEus005001 "EulawAct.Specsdiv.medium-001"  X=EulawAct A=medium-001
+  McshTch000002:593  idTchScdnActg "tech.Specsdiv.acting"  X=tech A=acting
+  McshTch000002:633  idTchScdnOzn "tech.Specsdiv.organization"  X=tech A=organization
+  McshTchInf000003:356  idCmrmmrScdnCpu "Cmrmemory.Specsdiv.Cpu"  X=Cmrmemory A=Cpu
+  McshTchInf000003:893  idCmrScdnDcd "techCmpr.Specsdiv.decade"  X=techCmpr A=decade
+  McshTchInf000003:916  idCmrScdnPgm "techCmpr.Specsdiv.program"  X=techCmpr A=program
+  McshTchInf000003:1010  idCmrScdnOs "techCmpr.Specsdiv.Os"  X=techCmpr A=Os
+  McshTchInf000003:1056  idCmrScdnDlif "techCmpr.Specsdiv.digital-info"  X=techCmpr A=digital-info
+  McshTchInf000003:1139  idCmrScdnRlt "techCmpr.Specsdiv.reality"  X=techCmpr A=reality
+  McshTchInf000003:1250  idCmrScdnSize "techCmpr.Specsdiv.size"  X=techCmpr A=size
+  McshTchInf000005:594  idLCmprScdnotfn "Cmprlago.Specsdiv.output-function"  X=Cmprlago A=output-function
+  McshTchInf000006:1602  idLCpgmScdnmcn "Pgmglago.Specsdiv.on-machine"  X=Pgmglago A=on-machine
+  McshTchInf000006:1621  idLCpgmScdntocn "Pgmglago.Specsdiv.on-time-of-creation"  X=Pgmglago A=on-time-of-creation
+  McshTchInf000007:965  idLCnkntmgrSdLcpt "Cnknmngr.Specsdiv.on-lagConcept"  X=Cnknmngr A=on-lagConcept
+  McshTchInf000007:981  idLCnkntmgrSdLprg "Cnknmngr.Specsdiv.on-lagPrograming"  X=Cnknmngr A=on-lagPrograming
+  McshTchInf000007:997  idLCnkntmgrSdInpt "Cnknmngr.Specsdiv.on-input-info"  X=Cnknmngr A=on-input-info
+  McshTchInf000007:1014  idLCnkntmgrSdCntr "Cnknmngr.Specsdiv.on-country"  X=Cnknmngr A=on-country
+  McshTchInf000010:536  idLJsgnsutSpcDlt "Jssut.Specsdiv.dialect"  X=Jssut A=dialect
+  McshTchInf000010:549  idLJsgnsutSpcObt "Jssut.Specsdiv.object-pm"  X=Jssut A=object-pm
+  McshTchInf000010:562  idLJsgnsutSpcCsm "Jssut.Specsdiv.creator"  X=Jssut A=creator
+  McshTchInf000010:673  idLJsgnsutSnam "Jssut.Specsdiv.reference"  X=Jssut A=reference
+  McshTchInf000012:1474  idLJsndmcOnpsu "Jsndmc.Specsdiv.public--semantic-unit"  X=Jsndmc A=public--semantic-unit
+  McshTchInf000015:3325  idAlgntevuSpcCnsa "Agntasset.Specsdiv.consensus-algorithm"  X=Agntasset A=consensus-algorithm
+  McshTchInf000015:3338  idAlgntevuSpcClm "Agntasset.Specsdiv.claim"  X=Agntasset A=claim
+  McshTchInf000015:3353  idAlgntevuSpcMoe "Agntasset.Specsdiv.chain-currency"  X=Agntasset A=chain-currency
+  McshTchInf000015:3366  idAlgntevuSpcCeo "Agntasset.Specsdiv.chain-exchange-orgnanization"  X=Agntasset A=chain-exchange-orgnanization
+  McshTchInf000015:3403  idAlgntevuSpcCmc "Agntasset.Specsdiv.CoinMarketCap"  X=Agntasset A=CoinMarketCap
+  McshTchInf000015:5124  idAlgntevuMoeSpcDmnc "Agntexvu.Specsdiv.dominancy"  X=Agntexvu A=dominancy
+  McshTchInf000015:6495  idAlgntgovDvsnOnchn "Agntgovc.Specsdiv.on-automation"  X=Agntgovc A=on-automation
+  McshTchInf000015:8752  idAlgntxSdVlm "exchange-ogn.Specsdiv.VOLUME"  X=AgntogznExch A=VOLUME
+  McshTchInf000015:10355  idAlgntsvcOninf "Agntsrvc.Specsdiv.info-stored"  X=Agntsrvc A=info-stored
+  McshTchInf000015:10379  idAlgntsvcOnsctr "Agntsrvc.Specsdiv.sector"  X=Agntsrvc A=sector
+  McshTchInf000016:1592  idDbcevuOncsa "Bkcnasset.Specsdiv.consensus-algorithm"  X=Bkcnasset A=consensus-algorithm
+  McshTchInf000016:1605  idDbcevuOngov "Bkcnasset.Specsdiv.governance"  X=Bkcnasset A=governance
+  McshTchInf000016:1618  idDbcevuOntog "Bkcnasset.Specsdiv.time-of-genesis"  X=Bkcnasset A=time-of-genesis
+  McshTchInf000016:1669  idDbcevuOnprl "Bkcnasset.Specsdiv.protocol"  X=Bkcnasset A=protocol
+  McshTchInf000016:2051  idBevuCknOnbtc "Bkcnasset.Specsdiv.bitcoin"  X=Bkcnasset A=bitcoin
+  McshTchInf000016:2126  idDbcevuMng "Bkcnasset.Specsdiv.mining"  X=Bkcnasset A=mining
+  McshTchInf000016:5726  idDbcOnbig "AgntBkcn.Specsdiv.builtin-governance"  X=AgntBkcn A=builtin-governance
+  McshTchInf000016:5739  idDbcOncsa "AgntBkcn.Specsdiv.consensus-algorithm"  X=AgntBkcn A=consensus-algorithm
+  McshTchInf000016:5753  idDbcNob "AgntBkcn.Specsdiv.number-of-blockchains"  X=AgntBkcn A=number-of-blockchains
+  McshTchInf000016:5766  idDbcOnbcn "AgntBkcn.Specsdiv.dependance"  X=AgntBkcn A=dependance
+  McshTchInf000016:5779  idDbcOnusr "AgntBkcn.Specsdiv.user"  X=AgntBkcn A=user
+  McshTchInf000016:6085  idDbcDvnsvc "AgntBkcn.Specsdiv.service"  X=AgntBkcn A=service
+  McshTchInf000016:6268  idDbcOntog "AgntBkcn.Specsdiv.time-of-genesis"  X=AgntBkcn A=time-of-genesis
+  McshTchInf000018:10136  idEthctpOncod "DcontractEth.Specsdiv.code"  X=DcontractEth A=code
+  McshTchInf000018:10150  idEthctpOnsvc "DcontractEth.Specsdiv.service"  X=DcontractEth A=service
+  McshTchInf000018:10161  idEthctpOn5tm "DcontractEth.Specsdiv.5-types-model"  X=DcontractEth A=5-types-model
+  McshTchInf000024:2761  idSteemactScdnSp "Stemacnt.Specsdiv.Steem_power"  X=Stemacnt A=Steem_power
+  McshTchPrgm000002:332  idCpgmScdnUsr "Cmprprgm.Specsdiv.user"  X=cmr_program A=user
+
+=== SKIPPED (28)
+  McshCor000002:241  idMcsattScdnGnc "Mcsattr.Specsdiv.generic"  the "on" target #idMcsattGnc "Mcsattr.generic" is not an-attribute section "a of X"
+  McshCor000002:269  idMcsattScdnIhf "Mcsattr.Specsdiv.inherited-from-instance"  the "on" target #idMcsattInhf "Mcsattr.inherited_from" is not an-attribute section "a of X"
+  McshCor000003:5085  idEntScdnScat "entity.Specsdiv.specific-attribute"  A-section McshCor000002#idMcsattWhlNsptr is in another file
+  McshCor000012:486  idMdlatt013 "model.Specsdiv.medium"  A-section #idMdlatt004 "17_medium of model" has no clear main-name
+  McshCor000012:509  idMdlatt014 "model.Specsdiv.mapping-method"  A-section #idMdlatt003 "15_mapping_method of model (link)" has no clear main-name
+  McshHlth000011:764  idDssHmnScdnSptm "disease.Specsdiv.symptom"  no items
+  McshHlth000016:311  idThrpHmnScdvDng "therapy.Specsdiv.doing"  A-section McshCor000004#idOverview is in another file
+  McshLag000007:22872  idLHmnmverbmbrScdnSmstns "Hmmdvbmb.Specsdiv.semu-tense"  the "on" target #idLHmnmsmsvrbattTmpl "Semuverbattr.time" is not an-attribute section "a of X"
+  McshLag000007:22887  idLHmnmverbmbrScdnSmsmod "Hmmdvbmb.Specsdiv.semu-mood"  the "on" target #idLHmnmsmsvrbattMod "Semuverbattr.modality" is not an-attribute section "a of X"
+  McshLag000007:32032  idLHmnmScdnMdt "Hmmdlago.Specsdiv.modality"  A-section #idLHmnmmdlt "medium of Hmmdlago" has no clear main-name
+  McshLag000018:16468  idLZhonsntcOnwo "Zhonsent.Specsdiv.word-order (link)"  no items
+  McshNtr000002:552  idMtrlScdnEye "material.Specsdiv.eye"  A-section McshHlth000002#idOgnHmn009 is in another file
+  McshNtr000007:826  idChmElrScdnZ "ChmcElry.Specsdiv.atomic-number"  A-section #idChmElratt005 "18_atomic_number_(Z) of ChmcElry" has no clear main-name
+  McshNtr000007:957  idChmElrScdnSom "ChmcElry.Specsdiv.state-of-matter"  A-section #idChmElratt010 "21_state_of_matter of ChmcElry" has no clear main-name
+  McshOgm000003:1208  idOgmScdnShp "Ogsm.Specsdiv.shape"  A-section #idOgmatt007 "28_shape of Ogsm" has no clear main-name
+  McshStn000008:1307  idOgznScdnSrpn "Ogzn.Specsdiv.satisfier-production"  A-section McshStn000015#idOznPdnatt015 is in another file
+  McshStn000008:1350  idOgznScdnAdmn "Ogzn.Specsdiv.admin-sys"  no items
+  McshStn000009:8516  idSocHumnScdnSfrsm "society.Specsdiv.economy"  A-section McshStn000012#idOverview is in another file
+  McshStn000009:10037  idSocHumnScdnIndp "society.Specsdiv.independence"  A-section #idSocHumnatt036 "40_independence of society" has no clear main-name
+  McshStn000010:1995  idSfrHmnSdwnsp "satisfier.Specsdiv.ownership"  A-section #idSfrHmn005orrn or idSfrHmnsptr is INSIDE the division section
+  McshStn000010:3256  idSfrHmnSduv "satisfier.Specsdiv.use-value"  A-section #idSfrHmnatt002 "04_use_value of satisfier" has no clear main-name
+  McshStnlaw000003:1133  idLawEusSdtopc "Eulaw.Specsdiv.topic"  no items
+  McshStnlaw000004:666  idLawInlSdtopc "lawIntl.Specsdiv.topic"  A-section #idLawInltopc "topic of lawIntl" has no clear main-name
+  McshTch000002:580  idTchScdnActr "tech.Specsdiv.actor"  A-section #idTchatt005 "actor of tech" has no clear main-name
+  McshTch000002:614  idTchScdnPwr "tech.Specsdiv.power"  A-section #idTchatt002 "power of tech" has no clear main-name
+  McshTchInf000003:1095  idCmrScdnmnfg "techCmpr.Specsdiv.main-functing"  the "on" target #idCmrdongMnfg "doing.main-functing of techCmpr" is not an-attribute section "a of X"
+  McshTchInf000015:5110  idAlgntevuMoeSpcAdpn "Agntexvu.Specsdiv.Adoption"  A-section #idAlgntevuMoeadpn "adoption of Agntexvu" has no clear main-name
+  McshTchInf000016:2088  idDbcevuSpdvActv "Bkcnasset.Specsdiv.activeness"  no items

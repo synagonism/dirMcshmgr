@@ -1,28 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --dupname --file McshHlth000002 --fix: C:\dirNodews\dirMcsh
+  createMcsh --code MvrwMain07 --file McshCor000004 --fix: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · 21 duplicate name-lines deleted · 0 skipped
+  1 files written · MvrwMain07: 1 issues · 1 fixed · 0 skipped
   written, no backup: see git diff
 
-=== DUPNAME (21) — a-name-line written twice in ONE para: the-second deleted (MvreName01)
-  McshHlth000002:15071  McshEngl.Hbstage.reproducing!⇒Hbreproducing,
-  McshHlth000002:15246  McshEngl.Hbstage.1st_month,
-  McshHlth000002:15247  McshEngl.Hbstage.1st_month,
-  McshHlth000002:15290  McshEngl.Hbstage.2nd_month,
-  McshHlth000002:15291  McshEngl.Hbstage.2nd_month,
-  McshHlth000002:15313  McshEngl.Hbstage.fetus!⇒HbstageFetus,
-  McshHlth000002:15325  McshEngl.Hbstage.3nd_month,
-  McshHlth000002:15326  McshEngl.Hbstage.3nd_month,
-  McshHlth000002:15342  McshEngl.Hbstage.4th_month,
-  McshHlth000002:15343  McshEngl.Hbstage.4th_month,
-  McshHlth000002:15359  McshEngl.Hbstage.5th_month,
-  McshHlth000002:15360  McshEngl.Hbstage.5th_month,
-  McshHlth000002:15377  McshEngl.Hbstage.6th_month,
-  McshHlth000002:15378  McshEngl.Hbstage.6th_month,
-  McshHlth000002:15393  McshEngl.Hbstage.7th_month,
-  McshHlth000002:15394  McshEngl.Hbstage.7th_month,
-  McshHlth000002:15409  McshEngl.Hbstage.8th_month,
-  McshHlth000002:15410  McshEngl.Hbstage.8th_month,
-  McshHlth000002:15425  McshEngl.Hbstage.9th_month,
-  McshHlth000002:15426  McshEngl.Hbstage.9th_month,
-  McshHlth000002:15450  McshEngl.Hbstage.birth!⇒Hbbirth,
+=== MOVE (1) — the-Attrbase-line moved after M!@McshXxx | M!=I (MvrwMain07)
+  McshCor000004:33  the-Attrbase-line goes after line 29
