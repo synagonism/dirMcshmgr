@@ -1,0 +1,19 @@
+MMN RENAME sectno APPLIED — 2026-11-10
+rename: 13 | skipped: 0 | files written: 13
+
+=== RENAME (13)
+  McshLag000007:30289  SystSentTitless -> HmmdsectNo  (18 lines in 1 pages)
+  McshLag000020:12691  SystSentTitlessElln -> EllnsectNo  (8 lines in 1 pages)
+  McshLag000010:5724  Sngulagu_sentence_system.titleNo -> SngusectNo  (3 lines in 1 pages)
+  McshLag000038:1409  Slv0Lago_sentence_system.titleNo -> Slv0sectNo  (3 lines in 1 pages)
+  McshLag000034:2394  BcmssentsystTitleNo -> BcmssectNo  (4 lines in 1 pages)
+  McshLag000035:2209  SpansentsystTitleNo -> SpansectNo  (4 lines in 1 pages)
+  McshLag000036:2628  ArabsentsystTitleNo -> ArabsectNo  (4 lines in 1 pages)
+  McshLag000037:1905  HiursentsystTitleNo -> HiursectNo  (4 lines in 1 pages)
+  McshLag000043:3346  KorasentsystTitleNo -> KorasectNo  (4 lines in 1 pages)
+  McshLag000039:1056  Ide0sentsyst.titleNo -> Ide0sectNo  (3 lines in 1 pages)
+  McshLag000040:1283  Afa0sentsyst.titleNo -> Afa0sectNo  (3 lines in 1 pages)
+  McshLag000041:1196  Tur0sentsyst.titleNo -> Tur0sectNo  (3 lines in 1 pages)
+  McshLag000042:1188  Asa0sentsyst.titleNo -> Asa0sectNo  (3 lines in 1 pages)
+
+=== SKIP (0)

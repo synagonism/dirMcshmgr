@@ -1,0 +1,22 @@
+MMN RENAME sect DRY — 2026-11-10
+rename: 16 | skipped: 0 | files to write: 16
+
+=== RENAME (16)
+  McshLag000007:30388  sectionHmnm -> Hmmdsect  (24 lines in 1 pages)
+  McshLag000010:5743  Sngu_sect -> Sngusect  (13 lines in 1 pages)
+  McshLag000011:30462  sectionEngl -> Englsect  (9 lines in 1 pages)
+  McshLag000012:4847  sectLogEspo -> Esposect  (9 lines in 1 pages)
+  McshLag000018:16972  sectionZhon -> Zhonsect  (9 lines in 1 pages)
+  McshLag000020:12730  sectionElln -> Ellnsect  (4 lines in 1 pages)
+  McshLag000034:2412  BcmsSect -> Bcmssect  (6 lines in 1 pages)
+  McshLag000035:2227  SpanSect -> Spansect  (6 lines in 1 pages)
+  McshLag000036:2646  ArabSect -> Arabsect  (6 lines in 1 pages)
+  McshLag000037:1923  HiurSect -> Hiursect  (6 lines in 1 pages)
+  McshLag000038:1426  Slv0Sect -> Slv0sect  (6 lines in 1 pages)
+  McshLag000039:1073  Ide0Sect -> Ide0sect  (6 lines in 1 pages)
+  McshLag000040:1300  Afa0Sect -> Afa0sect  (6 lines in 1 pages)
+  McshLag000041:1213  Tur0Sect -> Tur0sect  (6 lines in 1 pages)
+  McshLag000042:1205  Asa0Sect -> Asa0sect  (6 lines in 1 pages)
+  McshLag000043:3364  KoraSect -> Korasect  (6 lines in 1 pages)
+
+=== SKIP (0)

@@ -1,0 +1,15 @@
+MMN RENAME va8 APPLIED — 2026-11-10
+rename: 9 | skipped: 0 | files written: 2
+
+=== RENAME (9)
+  McshLag000007:28138  Hmmd_agen -> HmmdvaAgent  (8 lines in 1 pages)
+  McshLag000007:28182  Hmmd_space_VA -> HmmdvaSpace  (7 lines in 1 pages)
+  McshLag000007:28402  Hmmd_time_VA -> HmmdvaTime  (7 lines in 1 pages)
+  McshLag000007:28761  Hmmd_cause_VA -> HmmdvaCause  (8 lines in 1 pages)
+  McshLag000007:28783  Hmmd_with_VA -> HmmdvaWith  (9 lines in 1 pages)
+  McshLag000007:28826  Hmmd_goal_VA -> HmmdvaGoal  (6 lines in 1 pages)
+  McshLag000007:28845  Hmmd_quant_VA -> HmmdvaQuantity  (5 lines in 1 pages)
+  McshLag000007:28871  VerbargtSpeed -> HmmdvaSpeed  (15 lines in 1 pages)
+  McshLag000018:15735  Zhon_space_VA -> ZhonvaSpace  (12 lines in 1 pages)
+
+=== SKIP (0)

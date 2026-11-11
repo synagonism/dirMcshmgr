@@ -1,0 +1,8 @@
+MMN RENAME agntcurrency APPLIED — 2026-11-11
+rename: 2 | skipped: 0 | files written: 3
+
+=== RENAME (2)
+  McshTchInf000015:14394  netAlgoCurrency -> AgntCurrency  (24 lines in 3 pages)
+  McshTchInf000015:14475  netAlgoCurrencyNo -> AgntCurrencyNo  (14 lines in 1 pages)
+
+=== SKIP (0)

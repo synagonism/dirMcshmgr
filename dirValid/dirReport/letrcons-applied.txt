@@ -1,0 +1,21 @@
+MMN RENAME letrcons APPLIED — 2026-11-11
+rename: 15 | skipped: 0 | files written: 14
+
+=== RENAME (15)
+  McshLag000008:517  consLetr -> HmmdletrCons  (6 lines in 1 pages)
+  McshLag000033:1853  DeutConsLetr -> DeutletrCons  (4 lines in 1 pages)
+  McshLag000037:3404  HindConsLetr -> HindletrCons  (132 lines in 1 pages)
+  McshStn000050:1647  KhmrConsLetr -> KhmrletrCons  (8 lines in 1 pages)
+  McshStn000043:1073  SrusConsLetter -> SrusletrCons  (1 lines in 1 pages)
+  McshStn000044:1257  RomnConsLetter -> RomnletrCons  (1 lines in 1 pages)
+  McshLag000028:1097  consonantEll0 -> Ell0letrCons  (1 lines in 1 pages)
+  McshLag000037:4884  UrduConsonantLetter -> UrduletrCons  (1 lines in 1 pages)
+  McshStn000034:2165  VnmaConsonantLetter -> VnmaletrCons  (1 lines in 1 pages)
+  McshStn000035:1604  ItlnConsonantLetter -> ItlnletrCons  (1 lines in 1 pages)
+  McshStn000037:1826  FracConsonantLetter -> FracletrCons  (1 lines in 1 pages)
+  McshStn000038:930  SbulConsonantLetter -> SbulletrCons  (1 lines in 1 pages)
+  McshStn000039:1447  SqipConsonantLetter -> SqipletrCons  (1 lines in 1 pages)
+  McshStn000040:980  SmkdConsonantLetter -> SmkdletrCons  (1 lines in 1 pages)
+  McshStn000041:828  SslvConsonantLetter -> SslvletrCons  (1 lines in 1 pages)
+
+=== SKIP (0)

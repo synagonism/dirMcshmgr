@@ -1,0 +1,32 @@
+GENERIC GRAMMAR MMN: grammar -> Hmmdgrmr APPLIED — 2026-11-10
+main pair: 1 | pointer targets: 6 | formal names on the base: 3 | tree lines: 0 | headings: 4 | not changed: name lines starting with the word: 2 | report only: 0 | files written: 1
+
+=== MAIN PAIR (1)
+  McshLag000007:30617  <br>* McshEngl.grammar,  ->  <br>* McshEngl.grammar!⇒Hmmdgrmr, ¶ <br>* McshEngl.Hmmdgrmr!=grammar,
+
+=== POINTER TARGETS (6)
+  McshLag000007:30618  <br>* McshEngl.grammar//Hmmdlago!⇒grammar,  ->  <br>* McshEngl.grammar//Hmmdlago!⇒Hmmdgrmr,
+  McshLag000007:30621  <br>* McshEngl.Hmmdlago'07_grammar!⇒grammar,  ->  <br>* McshEngl.Hmmdlago'07_grammar!⇒Hmmdgrmr,
+  McshLag000007:30622  <br>* McshEngl.Hmmdlago'grammar!⇒grammar,  ->  <br>* McshEngl.Hmmdlago'grammar!⇒Hmmdgrmr,
+  McshLag000007:30624  <br>* McshZhon.yǔfǎ-语法!⇒grammar,  ->  <br>* McshZhon.yǔfǎ-语法!⇒Hmmdgrmr,
+  McshLag000007:30625  <br>* McshZhon.语法-yǔfǎ!⇒grammar,  ->  <br>* McshZhon.语法-yǔfǎ!⇒Hmmdgrmr,
+  McshLag000007:30627  <br>* McshElln.γραμματική!η!⇒grammar,  ->  <br>* McshElln.γραμματική!η!⇒Hmmdgrmr,
+
+=== FORMAL NAMES ON THE BASE (3)
+  McshLag000007:30619  <br>* McshEngl.grammar.lagoElln!=γραμματική!η,  ->  <br>* McshEngl.Hmmdgrmr.lagoElln!=γραμματική!η,
+  McshLag000007:30620  <br>* McshEngl.grammar.lagoZhon!=yǔfǎ-语法,  ->  <br>* McshEngl.Hmmdgrmr.lagoZhon!=yǔfǎ-语法,
+  McshLag000007:30666  <br>* McshEngl.grammar'relation_to_language,  ->  <br>* McshEngl.Hmmdgrmr'relation_to_language,
+
+=== TREE LINES (0)
+
+=== HEADINGS (not applied unless approved) (4)
+  McshLag000007:30635  relation_to_language of grammar  ->  relation_to_language of Hmmdgrmr
+  McshTchInf000014:5368  grammar.ABSTRACT  ->  Hmmdgrmr.ABSTRACT
+  McshTchInf000014:5460  grammar.BINARY  ->  Hmmdgrmr.BINARY
+  McshTchInf000014:5490  grammar.TEXT  ->  Hmmdgrmr.TEXT
+
+=== NOT CHANGED: NAME LINES STARTING WITH THE WORD (2)
+  McshLag000005:112  <br>* McshEngl.grammarOrgm//Ogmslago,
+  McshLag000020:12886  <br>* McshEngl.grammarElln,
+
+=== REPORT ONLY (0)

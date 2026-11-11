@@ -1,0 +1,13 @@
+MMN RENAME unit DRY — 2026-11-11
+rename: 3 | skipped: 4 | files to write: 3
+
+=== RENAME (3)
+  McshLag000008:585  Alfalago_unit.termNo -> Alfaunit.termNo  (2 lines in 1 pages)
+  McshLag000009:4088  Spchlago_unit.termNo -> Spchunit.termNo  (3 lines in 1 pages)
+  McshLag000009:240  unitSpch -> Spchunit  (12 lines in 2 pages)
+
+=== SKIP (4)
+  Sngulagu_unit.termNo -> Snguunit.termNo  (Snguunit.termNo exists)
+  Espolago_unit.termNo -> Espounit.termNo  (Espounit.termNo exists)
+  Sngulagu_unit.term -> Snguunit.term  (Snguunit.term exists)
+  Espolago_unit.term -> Espounit.term  (Espounit.term exists)

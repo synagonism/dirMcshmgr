@@ -1,0 +1,81 @@
+GENERIC PRONOUN MMN: pronoun -> Hmmdpron APPLIED — 2026-11-10
+main pair: 1 | pointer targets: 11 | formal names on the base: 25 | tree lines: 11 | headings: 13 | not changed: name lines starting with the word: 4 | report only: 0 | files written: 6
+
+=== MAIN PAIR (1)
+  McshLag000007:22133  <br>* McshEngl.pronoun,  ->  <br>* McshEngl.pronoun!⇒Hmmdpron, ¶ <br>* McshEngl.Hmmdpron!=pronoun,
+
+=== POINTER TARGETS (11)
+  McshLag000007:22134  <br>* McshEngl.Hmmdname.pronoun!⇒pronoun,  ->  <br>* McshEngl.Hmmdname.pronoun!⇒Hmmdpron,
+  McshLag000007:22135  <br>* McshEngl.name.pronoun!⇒pronoun,  ->  <br>* McshEngl.name.pronoun!⇒Hmmdpron,
+  McshLag000007:22136  <br>* McshEngl.Hmmdargu.pronoun!⇒pronoun,  ->  <br>* McshEngl.Hmmdargu.pronoun!⇒Hmmdpron,
+  McshLag000007:22137  <br>* McshEngl.Hmmdargu.reference!⇒pronoun,  ->  <br>* McshEngl.Hmmdargu.reference!⇒Hmmdpron,
+  McshLag000007:22138  <br>* McshEngl.Hmmdpron!⇒pronoun,  ->  <br>* McshEngl.Hmmdpron!⇒Hmmdpron,
+  McshLag000007:22139  <br>* McshEngl.nounReference!⇒pronoun,  ->  <br>* McshEngl.nounReference!⇒Hmmdpron,
+  McshLag000007:22140  <br>* McshEngl.pronHmnm!⇒pronoun,  ->  <br>* McshEngl.pronHmnm!⇒Hmmdpron,
+  McshLag000007:22144  <br>* McshZhon.dàicí-代词!~replace-word!⇒pronoun,  ->  <br>* McshZhon.dàicí-代词!~replace-word!⇒Hmmdpron,
+  McshLag000007:22145  <br>* McshZhon.代词-dàicí!~replace-word!⇒pronoun,  ->  <br>* McshZhon.代词-dàicí!~replace-word!⇒Hmmdpron,
+  McshLag000007:22147  <br>* McshElln.αντωνυμία!η!⇒pronoun,  ->  <br>* McshElln.αντωνυμία!η!⇒Hmmdpron,
+  McshLag000007:22149  <br>* McshTurk.zamir!⇒pronoun,  ->  <br>* McshTurk.zamir!⇒Hmmdpron,
+
+=== FORMAL NAMES ON THE BASE (25)
+  McshLag000007:22141  <br>* McshEngl.pronoun.lagoElln!=αντωνυμία!η,  ->  <br>* McshEngl.Hmmdpron.lagoElln!=αντωνυμία!η,
+  McshLag000007:22142  <br>* McshEngl.pronoun.lagoZhon!=代词-dàicí,  ->  <br>* McshEngl.Hmmdpron.lagoZhon!=代词-dàicí,
+  McshLag000007:22163  <br>* McshEngl.pronoun'complement,  ->  <br>* McshEngl.Hmmdpron'complement,
+  McshLag000007:22178  <br>* McshEngl.pronoun'relation_to_PoS!⇒part_of_speech_relation_to_pronoun,  ->  <br>* McshEngl.Hmmdpron'relation_to_PoS!⇒part_of_speech_relation_to_pronoun,
+  McshLag000007:22179  <br>* McshEngl.pronoun'relation_to_PoS,  ->  <br>* McshEngl.Hmmdpron'relation_to_PoS,
+  McshLag000007:22190  <br>* McshEngl.pronoun'generic_specific_tree,  ->  <br>* McshEngl.Hmmdpron'generic_specific_tree,
+  McshLag000007:22245  <br>* McshEngl.pronoun.ask!⇒pronAsk,  ->  <br>* McshEngl.Hmmdpron.ask!⇒pronAsk,
+  McshLag000007:22246  <br>* McshEngl.pronoun.interrogative!⇒pronAsk,  ->  <br>* McshEngl.Hmmdpron.interrogative!⇒pronAsk,
+  McshLag000007:22275  <br>* McshEngl.pronoun.deictic!⇒pronDeictic, {2021-07-26}  ->  <br>* McshEngl.Hmmdpron.deictic!⇒pronDeictic, {2021-07-26}
+  McshLag000007:22276  <br>* McshEngl.pronoun.askNo!⇒pronDeictic,  ->  <br>* McshEngl.Hmmdpron.askNo!⇒pronDeictic,
+  McshLag000007:22318  <br>* McshEngl.pronoun.anaphoric!⇒pronEsophoric,  ->  <br>* McshEngl.Hmmdpron.anaphoric!⇒pronEsophoric,
+  McshLag000007:22391  <br>* McshEngl.pronoun.exophoric!⇒pronExophoric,  ->  <br>* McshEngl.Hmmdpron.exophoric!⇒pronExophoric,
+  McshLag000007:22413  <br>* McshEngl.pronoun.personal!⇒pronPersonal,  ->  <br>* McshEngl.Hmmdpron.personal!⇒pronPersonal,
+  McshLag000007:22431  <br>* McshEngl.pronoun.human!⇒pronHuman,  ->  <br>* McshEngl.Hmmdpron.human!⇒pronHuman,
+  McshLag000007:22447  <br>* McshEngl.pronoun.humanNo,  ->  <br>* McshEngl.Hmmdpron.humanNo,
+  McshLag000007:22460  <br>* McshEngl.pronoun.space!⇒pronSpace,  ->  <br>* McshEngl.Hmmdpron.space!⇒pronSpace,
+  McshLag000007:22477  <br>* McshEngl.pronoun.time!⇒pronTime,  ->  <br>* McshEngl.Hmmdpron.time!⇒pronTime,
+  McshLag000007:22494  <br>* McshEngl.pronoun.quantity!⇒pronQuantity,  ->  <br>* McshEngl.Hmmdpron.quantity!⇒pronQuantity,
+  McshLag000007:22513  <br>* McshEngl.pronoun.manner!⇒pronManner,  ->  <br>* McshEngl.Hmmdpron.manner!⇒pronManner,
+  McshLag000007:22531  <br>* McshEngl.pronoun.cause!⇒pronCause,  ->  <br>* McshEngl.Hmmdpron.cause!⇒pronCause,
+  McshLag000011:15293  <br>* McshEngl.pronoun.English!⇒pronEngl,  ->  <br>* McshEngl.Hmmdpron.English!⇒pronEngl,
+  McshLag000012:2403  <br>* McshEngl.pronoun.Esperanto!⇒pronEspo,  ->  <br>* McshEngl.Hmmdpron.Esperanto!⇒pronEspo,
+  McshLag000018:11549  <br>* McshEngl.pronoun.Standard_Chinese!⇒Zhonpron,  ->  <br>* McshEngl.Hmmdpron.Standard_Chinese!⇒Zhonpron,
+  McshLag000020:9773  <br>* McshEngl.pronoun.Greek!⇒Ellnpron,  ->  <br>* McshEngl.Hmmdpron.Greek!⇒Ellnpron,
+  McshLag000030:2344  <br>* McshEngl.pronoun.Turkish!⇒pronTurk,  ->  <br>* McshEngl.Hmmdpron.Turkish!⇒pronTurk,
+
+=== TREE LINES (11)
+  McshLag000007:22193  <br>* McshEngl.pronoun:generic,  ->  <br>* McshEngl.Hmmdpron:generic,
+  McshLag000007:22198  <br>* McshEngl.pronoun.specific,  ->  <br>* McshEngl.Hmmdpron.specific,
+  McshLag000007:22201  <br>* pronoun.pronAsk!@McshLag000007#idLHmnmpronIgv,  ->  <br>* Hmmdpron.pronAsk!@McshLag000007#idLHmnmpronIgv,
+  McshLag000007:22203  <br>** pronoun.pronExophoric!@McshLag000007#idLHmnmpronExfc,  ->  <br>** Hmmdpron.pronExophoric!@McshLag000007#idLHmnmpronExfc,
+  McshLag000007:22204  <br>** pronoun.pronEsophoric!@McshLag000007#idLHmnmpronEsfc,  ->  <br>** Hmmdpron.pronEsophoric!@McshLag000007#idLHmnmpronEsfc,
+  McshLag000007:22207  <br>* pronoun.pronPersonal!@McshLag000007#idLHmnmpronPsl,  ->  <br>* Hmmdpron.pronPersonal!@McshLag000007#idLHmnmpronPsl,
+  McshLag000007:22224  <br>* pronoun.pronEngl!@McshLag000011#idLEnglpron,  ->  <br>* Hmmdpron.pronEngl!@McshLag000011#idLEnglpron,
+  McshLag000007:22228  <br>* pronoun.Zhonpron!@McshLag000018#idLZhonprn,  ->  <br>* Hmmdpron.Zhonpron!@McshLag000018#idLZhonprn,
+  McshLag000007:22336  <br>* pronoun:generic,  ->  <br>* Hmmdpron:generic,
+  McshLag000011:15310  <br>* pronoun:generic,  ->  <br>* Hmmdpron:generic,
+  McshLag000018:11569  <br>* pronoun:generic,  ->  <br>* Hmmdpron:generic,
+
+=== HEADINGS (changed) (13)
+  McshLag000007:22153  complement of pronoun  ->  complement of Hmmdpron
+  McshLag000007:22168  relation-to-PoS of pronoun  ->  relation-to-PoS of Hmmdpron
+  McshLag000007:22184  GENERIC-SPECIFIC-TREE of pronoun  ->  GENERIC-SPECIFIC-TREE of Hmmdpron
+  McshLag000007:22233  pronoun.interrogative  ->  Hmmdpron.interrogative
+  McshLag000007:22265  pronoun.deictic-(interrogativeNo)  ->  Hmmdpron.deictic-(interrogativeNo)
+  McshLag000007:22404  pronoun.personal  ->  Hmmdpron.personal
+  McshLag000007:22422  pronoun.human  ->  Hmmdpron.human
+  McshLag000007:22440  pronoun.humanNo  ->  Hmmdpron.humanNo
+  McshLag000007:22452  pronoun.space  ->  Hmmdpron.space
+  McshLag000007:22469  pronoun.time  ->  Hmmdpron.time
+  McshLag000007:22486  pronoun.quantity  ->  Hmmdpron.quantity
+  McshLag000007:22504  pronoun.manner  ->  Hmmdpron.manner
+  McshLag000007:22522  pronoun.cause  ->  Hmmdpron.cause
+
+=== NOT CHANGED: NAME LINES STARTING WITH THE WORD (4)
+  McshLag000007:19029  <br>* pronoun,
+  McshLag000011:5539  <br>* pronoun,
+  McshLag000018:8676  <br>* pronoun,
+  McshLag000020:2081  <br>* pronoun,
+
+=== REPORT ONLY (0)

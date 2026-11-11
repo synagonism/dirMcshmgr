@@ -1,0 +1,241 @@
+MvrwMain10 FIX McshTchInf000016 APPLIED — 2026-11-11
+fixed: 210 | left: 25
+
+=== FIXED (210)
+  idDbcMijin  "AgntBkcn.publicNo.Mijin" -> "BkcnPblcNo.Mijin" +  McshEngl.BkcnPblcNo.Mijin,
+  idAmprsc  "snrnet'Resource" -> "resource of AgntSynr" +  McshEngl.AgntSynr'resource,
+  idAmpevu  "snrnet'exchange-value-unit" -> "exchange-value-unit of AgntSynr" +  McshEngl.AgntSynr'exchange_value_unit!⇒SynrexvuC,
+  idHmqrsc  "Resource of AgntHmiq" -> "resource of AgntHmiq" +  McshEngl.AgntHmiq'resource,
+  idHmqevu  "exchange-value-unit of AgntHmiq" -> "exchange-value-unit of AgntHmiq" +  McshEngl.AgntHmiq'exchange_value_unit,
+  idHmqprl  "Protocol of AgntHmiq" -> "protocol of AgntHmiq" +  McshEngl.AgntHmiq'protocol, (new name::)
+  idDfnrsc  "Dfn-net'Resource" -> "resource of AgntDfnt" +  McshEngl.AgntDfnt'resource,
+  idDfngov  "Dfn-net'Governance-system" -> "governance-system of AgntDfnt" +  McshEngl.AgntDfnt'governance_system,
+  idDfnnetprl  "Dfn-net'Protocol" -> "protocol of AgntDfnt" +  McshEngl.AgntDfnt'protocol,
+  idNmcevuC  "nmcnet'Concensus-evt" -> "concensus-evt of AgntNmcn" +  McshEngl.AgntNmcn'concensus_evt!⇒NmcnexvuC,
+  idNmcbcn  "nmcnet'Blockchain" -> "blockchain of AgntNmcn" +  McshEngl.AgntNmcn'blockchain, (new name::)
+  idLtcrsc  "ltcnet'Resource" -> "resource of AgntLtcn" +  McshEngl.AgntLtcn'resource,
+  idXrpevuCrsc  "Resource of DvXRP" -> "resource of DvXRP" +  McshEngl.DvXRP'resource,
+  idXrpevuCexr  "exchange-rate of DvXRP" -> "exchange-rate of DvXRP" +  McshEngl.DvXRP'exchange_rate, (new name::)
+  idPpcevuCrsc  "ppcnet'Resource" -> "resource of AgntPrcn" +  McshEngl.AgntPrcn'resource,
+  idPpcevuC  "ppcnet'Concensous-exval-tokent" -> "concensous-exval-tokent of AgntPrcn" +  McshEngl.AgntPrcn'concensous_exval_tokent!⇒PrcnexvuC,
+  idPpcprl  "ppcnet'Protocol" -> "protocol of AgntPrcn" +  McshEngl.AgntPrcn'protocol, (new name::)
+  idNxtsvcAls  "nxtsvc.ALIAS-SYSTEM" -> "Nxt_netdoing.ALIAS-SYSTEM" +  McshEngl.Nxt_netdoing.ALIAS_SYSTEM!⇒nxtsvc.ALIAS_SYSTEM,
+  idNxtsvcStrg  "nxtsvc.STORAGE" -> "Nxt_netdoing.STORAGE" +  McshEngl.Nxt_netdoing.STORAGE!⇒nxtsvcSTORAGE,
+  idDbcsvcMktplc  "nxtsvc.MARKETPLACE" -> "Nxt_netdoing.MARKETPLACE" +  McshEngl.Nxt_netdoing.MARKETPLACE!⇒nxtsvcMARKETPLACE,
+  idNxtsvcExc  "nxtsvc.ASSET-EXCHANGE" -> "Nxt_netdoing.ASSET-EXCHANGE" +  McshEngl.Nxt_netdoing.ASSET_EXCHANGE!⇒nxtsvc.ASSET_EXCHANGE,
+  idNxtdong  "Nxt-net'Doing" -> "doing of AgntNxtz" +  McshEngl.AgntNxtz'doing!⇒Nxt_netdoing,
+  idNxtrsc  "Nxt-net'Resource" -> "resource of AgntNxtz" +  McshEngl.AgntNxtz'resource,
+  idNxtogn  "Nxt-net'Organization" -> "organization of AgntNxtz" +  McshEngl.AgntNxtz'organization, (new name::)
+  idNxthmn  "Nxt-net'Human" -> "human of AgntNxtz" +  McshEngl.AgntNxtz'human, (new name::)
+  idNxtscrt  "Nxt-net'Security" -> "security of AgntNxtz" +  McshEngl.AgntNxtz'security,
+  idNxtwlt  "Nxt-net'Wallet" -> "wallet of AgntNxtz" +  McshEngl.AgntNxtz'wallet,
+  idNxtpgm  "Nxt-net'Program" -> "program of AgntNxtz" +  McshEngl.AgntNxtz'program, (new name::)
+  idNxtevuCAgg  "nxtevuC.AGGREGATE" -> "NxtzexvuC.AGGREGATE" +  McshEngl.NxtzexvuC.AGGREGATE, (new name::)
+  idNxtevu  "Nxt-net'exchange-value-unit" -> "exchange-value-unit of AgntNxtz" +  McshEngl.AgntNxtz'exchange_value_unit,
+  idNxtbcn  "Nxt-net'Blockchain" -> "blockchain of AgntNxtz" +  McshEngl.AgntNxtz'blockchain, (new name::)
+  idEmcdong  "emcnet'DOING" -> "DOING of AgntEmcn" +  McshEngl.AgntEmcn'DOING, (new name::)
+  idEmcrsc  "emcnet'Resource" -> "resource of AgntEmcn" +  McshEngl.AgntEmcn'resource,
+  idEmcbcn  "emcnet'Blockchain" -> "blockchain of AgntEmcn" +  McshEngl.AgntEmcn'blockchain, (new name::)
+  idDashnetevog13  "Dash-net'v13" -> "v13 of Dashevolg" +  McshEngl.Dashevolg'v13,
+  idDashdgbbrsc  "Ddash-govc'resource" -> "resource of Ddash_govc" +  McshEngl.Ddash_govc'resource,
+  idDashdgbbvot  "Ddash-govc'vote" -> "vote of Ddash_govc"
+  idDashppl  "Ddash-govc'proposal" -> "proposal of Ddash_govc" +  McshEngl.Ddash_govc'proposal!⇒Dashproposal,
+  idDashnetfdg  "Ddash-govc'funding" -> "funding of Ddash_govc"
+  idDashevuCognX  "DashevuC_ogn.EXCHANGE" -> "DashevuC.EXCHANGE"
+  idXemnetEvg  "xemnet.EVOLUTING" -> "evoluting of AgntNemz" +  McshEngl.AgntNemz'evoluting, (new name::)
+  idXemsvc  "xemnet'Service" -> "service of AgntNemz" +  McshEngl.AgntNemz'service,
+  idXemdong  "xemnet'DOING" -> "DOING of AgntNemz" +  McshEngl.AgntNemz'DOING, (new name::)
+  idXemrsc  "xemnet'Resource" -> "resource of AgntNemz" +  McshEngl.AgntNemz'resource,
+  idXempblm  "xemnet'Problem" -> "problem of AgntNemz" +  McshEngl.AgntNemz'problem!⇒Nemzcon,
+  idXemogn  "xemnet'Organization" -> "organization of AgntNemz" +  McshEngl.AgntNemz'organization, (new name::)
+  idXemwlt  "xemnet'Wallet" -> "wallet of AgntNemz" +  McshEngl.AgntNemz'wallet, (new name::)
+  idXempgm  "xemnet'Program" -> "program of AgntNemz" +  McshEngl.AgntNemz'program, (new name::)
+  idXemevuCisng  "Issuance of XemevuC" -> "issuance of XemevuC" +  McshEngl.XemevuC'issuance,
+  idXemevuCdrbtn  "Distribution of XemevuC" -> "distribution of XemevuC" +  McshEngl.XemevuC'distribution,
+  idXemevuCexr  "exchange-rate of XemevuC" -> "exchange-rate of XemevuC" +  McshEngl.XemevuC'exchange_rate, (new name::)
+  idXembcn  "xemnet'Blockchain" -> "blockchain of AgntNemz" +  McshEngl.AgntNemz'blockchain,
+  idXemnod  "xemnet'Node" -> "node of AgntNemz" +  McshEngl.AgntNemz'node, (new name::)
+  idXemprl  "xemnet'Protocol" -> "protocol of AgntNemz" +  McshEngl.AgntNemz'protocol, (new name::)
+  idBtsevg  "btsnet.EVOLUTING" -> "evoluting of AgntBtsh" +  McshEngl.AgntBtsh'evoluting!⇒btsnetEVOLUTING,
+  idBtsrsc  "btsnet'Resource" -> "resource of AgntBtsh" +  McshEngl.AgntBtsh'resource,
+  idBtsogn  "btsnet'Organization" -> "organization of AgntBtsh" +  McshEngl.AgntBtsh'organization,
+  idBtshmn  "btsnet'Human" -> "human of AgntBtsh" +  McshEngl.AgntBtsh'human, (new name::)
+  idBtsgov  "btsnet'Governance-system" -> "governance-system of AgntBtsh" +  McshEngl.AgntBtsh'governance_system,
+  idBtsbcn  "btsnet'Blockchain" -> "blockchain of AgntBtsh" +  McshEngl.AgntBtsh'blockchain, (new name::)
+  idBtsprl  "btsnet'Protocol" -> "protocol of AgntBtsh" +  McshEngl.AgntBtsh'protocol, (new name::)
+  idPivxrsc  "pivxnet'Resource" -> "resource of AgntPivx" +  McshEngl.AgntPivx'resource,
+  idDcrrsc  "Resource of AgntDcrd" -> "resource of AgntDcrd" +  McshEngl.AgntDcrd'resource,
+  idDcrscrt  "Security of AgntDcrd" -> "security of AgntDcrd" +  McshEngl.AgntDcrd'security, (new name::)
+  idDcrwlt  "Wallet of AgntDcrd" -> "wallet of AgntDcrd" +  McshEngl.AgntDcrd'wallet,
+  idDcrpgmRPCS  "dcrpgm.RPCS" -> "Dcrpgm.RPCS" +  McshEngl.Dcrpgm.RPCS, (new name::)
+  idDcrpgmSRVR  "dcrpgm.SRVR" -> "Dcrpgm.SRVR" +  McshEngl.Dcrpgm.SRVR, (new name::)
+  idDcrpgmBMGR  "dcrpgm.BMGR" -> "Dcrpgm.BMGR" +  McshEngl.Dcrpgm.BMGR, (new name::)
+  idDcrpgmAMGR  "dcrpgm.AMGR" -> "Dcrpgm.AMGR" +  McshEngl.Dcrpgm.AMGR, (new name::)
+  idDcrctlcmd  "dcrctl'Command" -> "command of Dcrctl" +  McshEngl.Dcrctl'command, (new name::)
+  idDcrpgmDcrctl  "dcrpgm.dcrctl" -> "Dcrpgm.dcrctl"
+  idDcrpgmDcrdoptn  "dcrd'Option" -> "option of Dcrd" +  McshEngl.Dcrd'option, (new name::)
+  idDcrpgmDcrd  "dcrpgm.dcrd" -> "Dcrpgm.dcrd"
+  idDcrpgmCgm  "dcrpgm.cgminer" -> "Dcrpgm.cgminer"
+  idDcrpgmfil  "File of Dcrpgm" -> "file of Dcrpgm" +  McshEngl.Dcrpgm'file, (new name::)
+  idDcrpgmApi  "API of Dcrpgm" -> "API of Dcrpgm" +  McshEngl.Dcrpgm'API,
+  idDcrpgm  "rogram of AgntDcrd" -> "rogram of AgntDcrd" +  McshEngl.AgntDcrd'rogram!⇒Dcrpgm,
+  idDcrgov  "Governance-system of AgntDcrd" -> "governance-system of AgntDcrd"
+  idDcrbcn  "Blockchain of AgntDcrd" -> "blockchain of AgntDcrd" +  McshEngl.AgntDcrd'blockchain, (new name::)
+  idDcrnodper  "Peer of Dcrdnode" -> "peer of Dcrdnode" +  McshEngl.Dcrdnode'peer, (new name::)
+  idDcrnod  "node of AgntDcrd" -> "node of AgntDcrd" +  McshEngl.AgntDcrd'node!⇒Dcrdnode,
+  idDcrprl  "Protocol of AgntDcrd" -> "protocol of AgntDcrd" +  McshEngl.AgntDcrd'protocol, (new name::)
+  idWavesEvg  "waves-net.EVOLUTING" -> "evoluting of AgntWavs" +  McshEngl.AgntWavs'evoluting, (new name::)
+  idWavessvc  "waves-net'Service" -> "service of AgntWavs" +  McshEngl.AgntWavs'service,
+  idWavesrsc  "waves-net'Resource" -> "resource of AgntWavs" +  McshEngl.AgntWavs'resource,
+  idWavesrteth  "waves-net'Reletion-to-ethereum" -> "reletion-to-ethereum of AgntWavs" +  McshEngl.AgntWavs'reletion_to_ethereum,
+  idWavesfdg  "waves-net'Funding" -> "funding of AgntWavs" +  McshEngl.AgntWavs'funding,
+  idWavesbcn  "waves-net'Blockchain" -> "blockchain of AgntWavs" +  McshEngl.AgntWavs'blockchain, (new name::)
+  idWavesprl  "waves-net'Protocol" -> "protocol of AgntWavs" +  McshEngl.AgntWavs'protocol, (new name::)
+  idLskevg  "ĐLisk.EVOLUTING" -> "evoluting of AgntLisk" +  McshEngl.AgntLisk'evoluting, (new name::)
+  idLskrsc  "ĐLisk'resource" -> "resource of AgntLisk" +  McshEngl.AgntLisk'resource,
+  idLskrteth  "ĐLisk'Relation-to-ethereum" -> "relation-to-ethereum of AgntLisk" +  McshEngl.AgntLisk'relation_to_ethereum,
+  idLskhmn  "ĐLisk'Human" -> "human of AgntLisk" +  McshEngl.AgntLisk'human, (new name::)
+  idLskpbm  "ĐLisk'Problem" -> "problem of AgntLisk" +  McshEngl.AgntLisk'problem!⇒Liskcon,
+  idLskbap  "ĐLisk'Bapp" -> "bapp of AgntLisk" +  McshEngl.AgntLisk'bapp!⇒Liskdapp,
+  idLskevuCogn  "LSK'Organization" -> "organization of LiskexvuC" +  McshEngl.LiskexvuC'organization, (new name::)
+  idLskevuCexr  "LSK'exchange-rate" -> "exchange-rate of LiskexvuC" +  McshEngl.LiskexvuC'exchange_rate, (new name::)
+  idLskbcn  "ĐLisk'Blockchain" -> "blockchain of AgntLisk" +  McshEngl.AgntLisk'blockchain,
+  idLsknode  "ĐLisk'Node" -> "node of AgntLisk" +  McshEngl.AgntLisk'node, (new name::)
+  idLskprl  "ĐLisk'Protocol" -> "protocol of AgntLisk" +  McshEngl.AgntLisk'protocol, (new name::)
+  idZecrsc  "zecnet'Resource" -> "resource of AgntZcsh" +  McshEngl.AgntZcsh'resource,
+  idZecbcn  "zecnet'Blockchain" -> "blockchain of AgntZcsh" +  McshEngl.AgntZcsh'blockchain, (new name::)
+  idTzsevg  "Tzs-net.Evoluting" -> "evoluting of AgntTezs" +  McshEngl.AgntTezs'evoluting!⇒Tzs_net.Evoluting,
+  idTzsrsc  "Tzs-net'Resource" -> "resource of AgntTezs" +  McshEngl.AgntTezs'resource,
+  idBosrdmp  "bosnet.ROADMAP" -> "AgntBosc.ROADMAP"
+  idAepgmVm  "program.virtual-machine" -> "Dae_program.virtual-machine"
+  idAenetsmct  "program.smart-contract" -> "Dae_program.smart-contract"
+  idScnnet  "Đb-netDpt.SIDECHAIN" -> "BkcnDpdt.SIDECHAIN" +  McshEngl.BkcnDpdt.SIDECHAIN,
+  idRdnnet  "Đb-netDpt.Raiden-network" -> "BkcnDpdt.Raiden-network" +  McshEngl.BkcnDpdt.Raiden_network,
+  idOmninet  "Đb-netDpt.Omni-network" -> "BkcnDpdt.Omni-network" +  McshEngl.BkcnDpdt.Omni_network,
+  idXcpnet  "Đb-netDpt.Counterparty-network" -> "BkcnDpdt.Counterparty-network" +  McshEngl.BkcnDpdt.Counterparty_network,
+  idDbcsvc  "doing.SERVICE" -> "AgntBkcndoing.SERVICE" +  McshEngl.AgntBkcndoing.SERVICE!⇒chain_service,
+  idDbcdongFdg  "doing.FUNDING" -> "AgntBkcndoing.FUNDING" +  McshEngl.AgntBkcndoing.FUNDING,
+  idDbcdongUpg  "doing.UPGRADING" -> "AgntBkcndoing.UPGRADING" +  McshEngl.AgntBkcndoing.UPGRADING,
+  idDbcdongCrg  "doing.CREATING" -> "AgntBkcndoing.CREATING" +  McshEngl.AgntBkcndoing.CREATING,
+  idDbcrscBok  "resource.book" -> "Bkchinfrsc.book" +  McshEngl.Bkchinfrsc.book, (new name::)
+  idDbcrscUsgd  "resource.user-guide" -> "Bkchinfrsc.user-guide" +  McshEngl.Bkchinfrsc.user_guide,
+  idDbcdatdongApdg  "blockchain-doing.APPENDING" -> "Bkcnchaindoing.APPENDING" +  McshEngl.Bkcnchaindoing.APPENDING,
+  idDbctxMcr  "transaction.MICROTRANSACTION" -> "Bkcnchain_tx.MICROTRANSACTION"
+  idDbctxfee  "fee of transaction" -> "fee of Bkcnchain_tx"
+  idDbcpoi  "appending-algo.proof-of-importance" -> "Bkcnchain_appending_algo.proof-of-importance"
+  idDbcpos  "appending-algo.proof-of-stake" -> "Bkcnchain_appending_algo.proof-of-stake"
+  idDbcpowX11  "Pow.X11" -> "AgntBkcnpow.X11"
+  idDbcpowScrpt  "Pow.Scrypt" -> "AgntBkcnpow.Scrypt"
+  idDbcpowCptngt  "Pow.CryptoNight" -> "AgntBkcnpow.CryptoNight"
+  idDbcpow  "appending-algo.Proof-of-work" -> "Bkcnchain_appending_algo.Proof-of-work"
+  idDbccsaeval  "evaluation of appending-algo" -> "evaluation of Bkcnchain_appending_algo" +  McshEngl.Bkcnchain_appending_algo'evaluation!⇒Bkcnchain_appending_algoevaln,
+  idDbcblkGns  "block.GENESIS" -> "Bkcnblock.GENESIS" +  McshEngl.Bkcnblock.GENESIS,
+  idDbcblktimGnrt  "block-time.GENERATION" -> "Bkcnblcktime.GENERATION" +  McshEngl.Bkcnblcktime.GENERATION!⇒BkcnblcktimeGeneration,
+  idDbcblktimTsp  "block-time.TIMESTAMP" -> "Bkcnblcktime.TIMESTAMP" +  McshEngl.Bkcnblcktime.TIMESTAMP!⇒BkcnblcktimeStamp,
+  idDbcblktimAge  "block-time.AGE" -> "Bkcnblcktime.AGE" +  McshEngl.Bkcnblcktime.AGE!⇒BkcnblcktimeAge,
+  idWingsdaomng  "Dogn'managing" -> "managing of Wngsdao" +  McshEngl.Wngsdao'managing,
+  idJaxwltupdng  "jaxwlt'Updating" -> "updating of BcwtJaxx" +  McshEngl.BcwtJaxx'updating, (new name::)
+  idJaxwltdong  "jaxwlt'Doing" -> "doing of BcwtJaxx" +  McshEngl.BcwtJaxx'doing, (new name::)
+  idJaxwltfee  "jaxwlt'Fee" -> "fee of BcwtJaxx" +  McshEngl.BcwtJaxx'fee,
+  idJaxwlttkn  "jaxwlt'exchange-value-unit" -> "exchange-value-unit of BcwtJaxx" +  McshEngl.BcwtJaxx'exchange_value_unit,
+  idJaxwlt  "Bkcnwllt.Jaxx" -> "Bkcnchain_wallet.Jaxx" +  McshEngl.Bkcnchain_wallet.Jaxx!⇒BcwtJaxx,
+  idDbcwltMonN  "Bkcnwllt.MONO.NO" -> "Bkcnchain_wallet.MONO.NO" +  McshEngl.Bkcnchain_wallet.MONO.NO,
+  idDbcwltMon  "Bkcnwllt.MONO" -> "Bkcnchain_wallet.MONO"
+  idDbcwltWeb  "Bkcnwllt.WEB" -> "Bkcnchain_wallet.WEB"
+  idDbcwltOnln  "Bkcnwllt.ONLINE" -> "Bkcnchain_wallet.ONLINE"
+  idDbcwltDtmc  "Bkcnwllt.DETERMINISTIC" -> "Bkcnchain_wallet.DETERMINISTIC"
+  idDbcwltStcN  "Bkcnwllt.STATIC.NO" -> "Bkcnchain_wallet.STATIC.NO" +  McshEngl.Bkcnchain_wallet.STATIC.NO,
+  idDbcwltStc  "Bkcnwllt.STATIC" -> "Bkcnchain_wallet.STATIC"
+  idDbcwltHdw  "Bkcnwllt.HARDWARE" -> "Bkcnchain_wallet.HARDWARE"
+  idDbcwltPpr  "Bkcnwllt.PAPER" -> "Bkcnchain_wallet.PAPER"
+  idDbcwltBrn  "Bkcnwllt.BRAIN" -> "Bkcnchain_wallet.BRAIN"
+  idDbcwltPgm  "Bkcnwllt.PROGRAM" -> "Bkcnchain_wallet.PROGRAM"
+  idDbcads  "address of chainBlock-account" -> "address of Bkcnwlltaccount" +  McshEngl.Bkcnwlltaccount'address!⇒Bkcnadrs,
+  idDbcpgmScrt  "program.PROGRAMMABLE-CONTRACT" -> "Bkcnchain_program.PROGRAMMABLE-CONTRACT"
+  idDbcpgmClnt  "program.CLIENT" -> "Bkcnchain_program.CLIENT"
+  idFrcevuC  "Bkcnasset.Freicoin-FRC" -> "Bkcnasset.Freicoin-FRC" +  McshEngl.Bkcnasset.Freicoin_FRC,
+  idDogeevuC  "Bkcnasset.Dogecoin-DOGE" -> "Bkcnasset.Dogecoin-DOGE" +  McshEngl.Bkcnasset.Dogecoin_DOGE,
+  idAurevuC  "Bkcnasset.Auroracoin-AUR" -> "Bkcnasset.Auroracoin-AUR" +  McshEngl.Bkcnasset.Auroracoin_AUR,
+  idBlkevuC  "Bkcnasset.BlackCoin-BLK" -> "Bkcnasset.BlackCoin-BLK" +  McshEngl.Bkcnasset.BlackCoin_BLK,
+  idNlgevuC  "Bkcnasset.Gulden-NLG" -> "Bkcnasset.Gulden-NLG" +  McshEngl.Bkcnasset.Gulden_NLG,
+  idMAIDevuCN  "Bkcnasset.MaidSafeCoin-MAID" -> "Bkcnasset.MaidSafeCoin-MAID" +  McshEngl.Bkcnasset.MaidSafeCoin_MAID,
+  idUsnbtevuC  "Bkcnasset.NuBits-NBT" -> "Bkcnasset.NuBits-NBT" +  McshEngl.Bkcnasset.NuBits_NBT,
+  idRadsevuC  "Bkcnasset.Radium-RADS" -> "Bkcnasset.Radium-RADS" +  McshEngl.Bkcnasset.Radium_RADS,
+  idFctevuC  "Bkcnasset.Factom-FCT" -> "Bkcnasset.Factom-FCT" +  McshEngl.Bkcnasset.Factom_FCT,
+  idNavevuC  "Bkcnasset.NAV-Coin" -> "Bkcnasset.NAV-Coin" +  McshEngl.Bkcnasset.NAV_Coin,
+  idLbcevuC  "Bkcnasset.LBRY-Credits" -> "Bkcnasset.LBRY-Credits" +  McshEngl.Bkcnasset.LBRY_Credits,
+  idStratevuC  "Bkcnasset.Stratis" -> "Bkcnasset.Stratis" +  McshEngl.Bkcnasset.Stratis,
+  idDbcevuCNIco  "appendingNo-asset.ICO" -> "BkcnassetApdgNo.ICO"
+  idDbcevuCNCldcn  "appendingNo-asset.Colored-coin" -> "BkcnassetApdgNo.Colored-coin"
+  idDbcevuCegrt  "price of appending-asset" -> "price of BkcnassetApdg"
+  idDbcevuNtnl  "Bkcnasset.NATIONAL-CRYPTOCURRENCY" -> "Bkcnexvu.NATIONAL-CRYPTOCURRENCY"
+  idDbcevuMtcp  "Bkcnasset.market-cap" -> "BkcnassetAggt.market-cap"
+  idDbcevuisng  "issuing of Bkcnasset" -> "issuing of Bkcnchain_assetdoing" +  McshEngl.Bkcnchain_assetdoing'issuing,
+  idDbcevuacg  "acquiring of Bkcnasset" -> "acquiring of Bkcnchain_assetdoing" +  McshEngl.Bkcnchain_assetdoing'acquiring,
+  idDbcevudong  "DOING of blockchain-Dasset" -> "DOING of Bkcnasset" +  McshEngl.Bkcnasset'DOING!⇒Bkcnchain_assetdoing,
+  idDbcmnorv  "env.OTHER-VIEW of blockchain-Dasset" -> "env.OTHER-VIEW of Bkcnasset" +  McshEngl.Bkcnasset'env.OTHER_VIEW,
+  idDbcevuirsc  "info-resource of blockchain-Dasset" -> "info-resource of Bkcnasset"
+  idDbcevutim  "time of blockchain-Dasset" -> "time of Bkcnasset"
+  idDbcevuscrt  "security of blockchain-Dasset" -> "security of Bkcnasset"
+  idDbcevuognEdu  "asset-ogn.EDUCATING" -> "Bkcnchain_asset_organization.EDUCATING" +  McshEngl.Bkcnchain_asset_organization.EDUCATING!⇒asset_ogn.EDUCATING,
+  idDbcevuogn  "organization of blockchain-Dasset" -> "organization of Bkcnasset"
+  idDbcevulaw  "law of blockchain-Dasset" -> "law of Bkcnasset"
+  idDbcevuhmn  "human of blockchain-Dasset" -> "human of Bkcnasset"
+  idDbcevufgbl  "fungibility of blockchain-Dasset" -> "fungibility of Bkcnasset"
+  idDbcevueval  "evaluation of blockchain-Dasset" -> "evaluation of Bkcnasset"
+  idDbcevudbn  "distribution of blockchain-Dasset" -> "distribution of Bkcnasset"
+  idDbcevuacs  "activeness of blockchain-Dasset" -> "activeness of Bkcnasset"
+  idDbcevubkn  "BACKNESS of blockchain-Dasset" -> "BACKNESS of Bkcnasset" +  McshEngl.Bkcnasset'BACKNESS!⇒Bkcnchain_asset_backness,
+  idDbcexrvlt  "exchange-rate-volatility of Bkcnasset" -> "exchange-rate-volatility of Bkcnasset_price" +  McshEngl.Bkcnasset_price'exchange_rate_volatility,
+  idDbcexr  "exchange-rate of blockchain-Dasset" -> "exchange-rate of Bkcnasset_price" +  McshEngl.Bkcnasset_price'exchange_rate,
+  idDbcprc  "price of blockchain-Dasset" -> "price of Bkcnasset"
+  idDbcevukey  "key of blockchain-Dasset" -> "key of Bkcnasset"
+  idDbcevusbl  "icon of Bkcnasset" -> "icon of Bkcnasset" +  McshEngl.Bkcnasset'icon,
+  idDbcevusnm  "short-name of Bkcnasset" -> "short-name of Bkcnasset" +  McshEngl.Bkcnasset'short_name,
+  idDbcHumnWur  "human.WALLET-USER" -> "Bkcnchain_human.WALLET-USER"
+  idDbcHumnNor  "human.NODE-OPERATOR" -> "Bkcnchain_human.NODE-OPERATOR"
+  idDbcusr  "human.USER" -> "Bkcnchain_human.USER"
+  idDbcHumnDvr  "human.DEVELOPER" -> "Bkcnchain_human.DEVELOPER"
+  idDbchmnskil  "skill of human" -> "skill of Bkcnchain_human"
+  idDbcmngplMrgt  "Dccb-mgpl.MinerGate" -> "Bkcnmnpl.MinerGate"
+  idDbcmngpltnsd  "token-supported of Bkcnmnpl" -> "token-supported of Bkcnmnpl" +  McshEngl.Bkcnmnpl'token_supported, (new name::)
+  idDbcmngplfee  "fee of Bkcnmnpl" -> "fee of Bkcnmnpl" +  McshEngl.Bkcnmnpl'fee, (new name::)
+  idDbcmgpl  "miner-node'MINING-POOL" -> "MINING-POOL of Bkcnminer" +  McshEngl.Bkcnminer'MINING_POOL!⇒Bkcnmnpl,
+  idDbcmngCld  "miner-node'CLOUD-MINING" -> "CLOUD-MINING of Bkcnminer" +  McshEngl.Bkcnminer'CLOUD_MINING,
+  idDbcmnrprmg  "miner-node'Pre-mining" -> "pre-mining of Bkcnminer" +  McshEngl.Bkcnminer'pre_mining,
+  idDbcmng  "miner-node'mining" -> "mining of Bkcnminer" +  McshEngl.Bkcnminer'mining,
+  idDbcnodMnr  "node.MINER" -> "Bkcnchain_node.MINER"
+  idDbcnodApdr  "node.BLOCK-PRODUCER" -> "Bkcnchain_node.BLOCK-PRODUCER"
+  idDbcnodLgt  "node.LIGHT" -> "Bkcnchain_node.LIGHT"
+  idDbcnodFul  "node.FULL" -> "Bkcnchain_node.FULL"
+  idDbcscrrsc  "security'resource" -> "resource of BkcnconSecurity" +  McshEngl.BkcnconSecurity'resource,
+  idDbcscrt51pa  "security'51-percent-attack" -> "51-percent-attack of BkcnconSecurity" +  McshEngl.BkcnconSecurity'51_percent_attack,
+  idDbcpbm  "evaluation.CON" -> "Bkchevaln.CON" +  McshEngl.Bkchevaln.CON!⇒Bkcncon,
+  idDbcevalSpro  "evaluation.PRO" -> "Bkchevaln.PRO" +  McshEngl.Bkchevaln.PRO!⇒Bkcnpro,
+
+=== LEFT (25)
+  idLtcevuC  "ltcnet'exchange-value-unit.Consensus"  (title is not "x of AgntLtcn" (attribute) or "AgntLtcn.x" (specific))
+  idXrpevuCognExc  "OgnEXCANGE of DvXRP"  (x is not a plain word)
+  idNxtevuC  "Nxt-net'exchange-value-unit.Consensus"  (title is not "x of AgntNxtz" (attribute) or "AgntNxtz.x" (specific))
+  idEmcevuC  "emcnet'exchange-value-unit.Consensus"  (title is not "x of AgntEmcn" (attribute) or "AgntEmcn.x" (specific))
+  idDashevuC  "DevuDASH of AgntDash"  (x is not a plain word)
+  idXemevuCognExc  "OgnExchange of XemevuC"  (x is not a plain word)
+  idXemevuC  "xemnet'exchange-value-unit.Consensus"  (title is not "x of AgntNemz" (attribute) or "AgntNemz.x" (specific))
+  idBtsevuC  "btsnet'exchange-value-unit.Consensus"  (title is not "x of AgntBtsh" (attribute) or "AgntBtsh.x" (specific))
+  idBtsdac  "btsnet'whole.Dao"  (title is not "x of AgntBtsh" (attribute) or "AgntBtsh.x" (specific))
+  idPivxgov  "Đgovernance-of-Dpivxnet"  (title is not "x of AgntPivx" (attribute) or "AgntPivx.x" (specific))
+  idPivxevuC  "pivxnet'exchange-value-unit.Consensus"  (title is not "x of AgntPivx" (attribute) or "AgntPivx.x" (specific))
+  idDcrctlcmdwlt  "dcrctl'Command.wallet"  (title is not "x of Dcrctl" (attribute) or "Dcrctl.x" (specific))
+  idDcrpgmdev  "AgntDcrd_development of Dcrpgm"  (x is not a plain word)
+  idDcrevuC  "AgntDcrd'exchange-value-unit.Consensus"  (title is not "x of AgntDcrd" (attribute) or "AgntDcrd.x" (specific))
+  idWavesevuC  "waves-net'exchange-value-unit.Consensus"  (title is not "x of AgntWavs" (attribute) or "AgntWavs.x" (specific))
+  idLskevuC  "ĐLisk'exchange-value-unit.Consensus"  (title is not "x of AgntLisk" (attribute) or "AgntLisk.x" (specific))
+  idZecevuC  "zecnet'exchange-value-unit.Consensus"  (title is not "x of AgntZcsh" (attribute) or "AgntZcsh.x" (specific))
+  idBosters  "Trust-Engineering-Research-Center of AgntBosc"  (x is not a plain word)
+  idDbcntnpsec  "transaction-per-second"  (title is not "x of Bkcnchain_tx" (attribute) or "Bkcnchain_tx.x" (specific))
+  idDbctxcrtr  "creator"  (title ends "of transaction", not "of Bkcnchain_tx"; no name "McshEngl.Bkcnchain_tx'creator")
+  idDbcwltdltg  "deleting blockchain-wallet"  (title is not "x of Bkcnchain_wallet" (attribute) or "Bkcnchain_wallet.x" (specific))
+  idDbcwltbkpg  "backuping blockchain-wallet"  (title is not "x of Bkcnchain_wallet" (attribute) or "Bkcnchain_wallet.x" (specific))
+  idDbcwltcrtg  "creating blockchain-wallet"  (title is not "x of Bkcnchain_wallet" (attribute) or "Bkcnchain_wallet.x" (specific))
+  idDbcevutimRls  "Bkcnasset'time.release"  (title is not "x of Bkcnchain_asset_time" (attribute) or "Bkcnchain_asset_time.x" (specific))
+  idDbcmnr  "miner-node'human.miner"  (title is not "x of Bkcnminer" (attribute) or "Bkcnminer.x" (specific))

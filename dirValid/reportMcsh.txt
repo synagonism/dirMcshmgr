@@ -1,10 +1,20 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvreName01,MvreMain01: c:/dirNodews/dirMcsh
+  MvrwMain10,Hvre01,Hvre07,MvreName01,MvreMain01: c:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  593 Mcsh-files · 3 files with issues · 5 issues
+  623 files · 213 files with issues · 7944 issues
+
+=== MvrwMain10 (7886 issues in 202 files) — file:lines, the-biggest line first
+
+=== MvrwMain10 --line — every issue, its line and its message
+
+=== Hvre07 (53 issues in 25 files) — file:lines, the-biggest line first
+  McshNtr000007:136
+
+=== Hvre07 --line — every issue, its line and its message
+  McshNtr000007.last.html
+    136  Stray </section> — no matching <section> open
 
 === MvreName01 (5 issues in 3 files) — file:lines, the-biggest line first
-  McshStn000009:4979;4722;4684
-  McshStn000015:855
-  McshStn000020:18550
+
+=== MvreName01 --line — every issue, its line and its message
 

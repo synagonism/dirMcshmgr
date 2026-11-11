@@ -1,0 +1,20 @@
+MMN RENAME agphrs APPLIED — 2026-11-10
+rename: 14 | skipped: 0 | files written: 14
+
+=== RENAME (14)
+  McshLag000007:26944  phraseArgu -> Hmmdagphrs  (63 lines in 1 pages)
+  McshLag000018:15553  phraseArguZhon -> Zhonagphrs  (14 lines in 1 pages)
+  McshLag000011:30249  phraseArguEngl -> Englagphrs  (14 lines in 1 pages)
+  McshLag000020:12312  phraseArguElln -> Ellnagphrs  (2 lines in 1 pages)
+  McshLag000034:1900  BcmsPhrase -> Bcmsagphrs  (2 lines in 1 pages)
+  McshLag000035:1939  SpanPhrase -> Spanagphrs  (2 lines in 1 pages)
+  McshLag000036:2358  ArabPhrase -> Arabagphrs  (2 lines in 1 pages)
+  McshLag000037:1843  HiurPhrase -> Hiuragphrs  (2 lines in 1 pages)
+  McshLag000038:1347  Slv0Phrase -> Slv0agphrs  (2 lines in 1 pages)
+  McshLag000039:994  Ide0Phrase -> Ide0agphrs  (2 lines in 1 pages)
+  McshLag000040:1221  Afa0Phrase -> Afa0agphrs  (2 lines in 1 pages)
+  McshLag000041:1134  Tur0Phrase -> Tur0agphrs  (2 lines in 1 pages)
+  McshLag000042:1126  Asa0Phrase -> Asa0agphrs  (2 lines in 1 pages)
+  McshLag000043:3075  KoraPhrase -> Koraagphrs  (2 lines in 1 pages)
+
+=== SKIP (0)

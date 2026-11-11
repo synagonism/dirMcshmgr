@@ -40,6 +40,7 @@ import { pathToFileURL } from 'url'
 const
   // contains the-versions of parserMcsh.js
   aVersion = [
+    'parserMcsh.js.0-7-0.2026-11-07: sNameMainFrml sNameMainDrtv',
     'parserMcsh.js.0-6-1.2026-11-07: sNameMainFrml sNameMainIfml',
     'parserMcsh.js.0-6-0.2026-11-07: sNameMainFrml is the-Mmn (main-mind-name): the-first name with its own line that a-"!⇒" points to, ONE per concept, any McsLago, empty when none (fFindMmn)',
     'parserMcsh.js.0-5-0.2026-11-04: fReadFileMcsh sRawIn, the-text already read',
@@ -99,7 +100,7 @@ function fToPosix(sPathIn) {
  *   sCreation,      // {2026-08-17}
  *   aoRaw_sect,     // raw-section objects.
  *   aoTitlePara,    // [{sNameTitle, sPara}]
- *   ooNameLago,     // {oNameEngl:{sNameMainFrml,sNameMainIfml,aNoun,aVerb,...}, oNameZhon:{}}
+ *   ooNameLago,     // {oNameEngl:{sNameMainFrml,sNameMainDrtv,aNoun,aVerb,...}, oNameZhon:{}}
  *   sAttrGeneric,   // generic-concept of concept
  *   sAttrWhole,     // whole-concept of concept
  *   sAttrParent,    // parent-concept of concept
@@ -434,7 +435,7 @@ function fFindSect_overview(sRawSect) {
  * DOING: find the-McsLago-names: " <br>* McshEngl.McshExml'att001-attribute, {2026-04-23}"
  * INPUT: the-text of a-Mcsh_para, one name per line.
  * OUTPUT: an object of lagoName-objects
- *   { oLagoEngl: {sNameMainFrml, sNameMainIfml, aoName, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
+ *   { oLagoEngl: {sNameMainFrml, sNameMainDrtv, aoName, aNoun, aCase, aAdje, aAdve, aVerb, aConj} }
  *   aoName holds every name-line, duplicates kept, each one with its
  *   sNameFull: the-whole-line to the-comma, "young!~adjeEngl:animal".
  */
@@ -501,7 +502,7 @@ function fReadMcsLago_names(sTextIn) {
     const oLago = oLagoname['oLago' + oMmn.sLago];
     oLago.sNameMainFrml = oMmn.sName;
     // informal-Mmn: the-text after '!=' of the-Mmn line (pattern 1)
-    oLago.sNameMainIfml = oMmn.sNameTransl && !oMmn.sPos && !fIsName_id(oMmn.sNameTransl) ? oMmn.sNameTransl : '';
+    oLago.sNameMainDrtv = oMmn.sNameTransl && !oMmn.sPos && !fIsName_id(oMmn.sNameTransl) ? oMmn.sNameTransl : '';
   }
 
   return oLagoname;
@@ -513,7 +514,7 @@ function fReadMcsLago_names(sTextIn) {
 function fNewLago_name() {
   return {
     sNameMainFrml: '',
-    sNameMainIfml: '',
+    sNameMainDrtv: '',
     // every name-line of this McsLago in document-order, duplicates kept:
     // [{sLago, sName, sNameFull, sNameMainFrml, sNameTransl, sPos}]
     aoName: [],
@@ -860,7 +861,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     ];
     for (const [sText, sMmn, sInformal] of aoTest) {
       const ooNameLago = fReadMcsLago_names(sText);
-      const sInformalFound = Object.values(ooNameLago).find(o => o.sNameMainFrml)?.sNameMainIfml ?? '';
+      const sInformalFound = Object.values(ooNameLago).find(o => o.sNameMainFrml)?.sNameMainDrtv ?? '';
       console.log(`  Mmn = '${fFindMmn(ooNameLago)}' informal = '${sInformalFound}' ` +
         (fFindMmn(ooNameLago) === sMmn && sInformalFound === sInformal ? 'OK' : 'FAILED'));
     }

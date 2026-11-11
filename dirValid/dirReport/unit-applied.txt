@@ -1,0 +1,13 @@
+MMN RENAME unit APPLIED — 2026-11-11
+rename: 7 | skipped: 0 | files written: 5
+
+=== RENAME (7)
+  McshLag000008:585  Alfalago_unit.termNo -> Alfaunit.termNo  (2 lines in 1 pages)
+  McshLag000009:4088  Spchlago_unit.termNo -> Spchunit.termNo  (3 lines in 1 pages)
+  McshLag000010:371  Sngulagu_unit.termNo -> Snguunit.termNo  (2 lines in 1 pages)
+  McshLag000012:310  Espolago_unit.termNo -> Espounit.termNo  (2 lines in 1 pages)
+  McshLag000010:335  Sngulagu_unit.term -> Snguunit.term  (11 lines in 2 pages)
+  McshLag000012:274  Espolago_unit.term -> Espounit.term  (11 lines in 2 pages)
+  McshLag000009:240  unitSpch -> Spchunit  (12 lines in 2 pages)
+
+=== SKIP (0)

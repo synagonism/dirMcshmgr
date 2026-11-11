@@ -1,0 +1,55 @@
+name-form-list-dry {2026-11-11}
+English word-form names without ";" and ":"; 0 files, dirUcd excluded
+
+=== SUMMARY
+  spec             0  specific lines CLASS.a;b;c, -> CLASS.a!=a;b;c,
+  form             0  !~CLASS-N:list -> !~CLASS.base'N (CLASS.base specific line exists)
+  form-no-spec     0  !~CLASS-N:list -> !~CLASS.base'N (no CLASS.base specific line found)
+  skip-collision   12  not changed: two specific lines with the same CLASS.base and different lists
+  skip-spec-other  1  not changed: specific line with !⇒ / != / other notation after the list
+  skip-base        13  not changed: first form is not a plain word
+
+=== FILES (0)
+
+
+=== SPEC (0) — specific lines CLASS.a;b;c, -> CLASS.a!=a;b;c,
+
+
+=== FORM (0) — !~CLASS-N:list -> !~CLASS.base'N (CLASS.base specific line exists)
+
+
+=== FORM-NO-SPEC (0) — !~CLASS-N:list -> !~CLASS.base'N (no CLASS.base specific line found)
+
+
+=== SKIP-COLLISION (12) — not changed: two specific lines with the same CLASS.base and different lists
+  McshLag000024:949  <br>* McshEngl.nounEnglC1.cow;kine,  (cow;kine / cow;cattle)
+  McshLag000024:950  <br>* McshEngl.cow!~nounEnglC1-1:cow;kine,
+  McshLag000024:951  <br>* McshEngl.kine!~nounEnglC1-2:cow;kine,
+  McshLag000024:959  <br>* McshEngl.nounEnglC1.cow;cattle,  (cow;kine / cow;cattle)
+  McshLag000024:960  <br>* McshEngl.cow!~nounEnglC1-1:cow;cattle,
+  McshLag000024:961  <br>* McshEngl.cattle!~nounEnglC1-2:cow;cattle,
+  McshLag000024:1059  <br>* McshEngl.nounEnglC1.die;dice,  (die;dice / die;dies)
+  McshLag000024:1060  <br>* McshEngl.die!~nounEnglC1-1:die;dice,
+  McshLag000024:1061  <br>* McshEngl.dice!~nounEnglC1-2:die;dice,
+  McshLag000024:1069  <br>* McshEngl.nounEnglC1.die;dies,  (die;dice / die;dies)
+  McshLag000024:1070  <br>* McshEngl.die!~nounEnglC1-1:die;dies,
+  McshLag000024:1071  <br>* McshEngl.dies!~nounEnglC1-2:die;dies,
+
+=== SKIP-SPEC-OTHER (1) — not changed: specific line with !⇒ / != / other notation after the list
+  McshCor000004:4992  <br>* McshEngl.verbEnglB1.move;moves;moved;moving;moved!⇒DongMoving,
+
+=== SKIP-BASE (13) — not changed: first form is not a plain word
+  McshLag000011:7434  <br>* McshEngl.nounEnglC.?;-,
+  McshLag000011:7585  <br>* McshEngl.nounEnglC.-;s,
+  McshLag000024:3117  <br>* McshEngl.binoculars!~nounEnglC3-2:-;binoculars,
+  McshLag000024:3126  <br>* McshEngl.jeans!~nounEnglC3-2:-;jeans,
+  McshLag000024:3138  <br>* McshEngl.pants!~nounEnglC3-2:-;pants,
+  McshLag000024:3139  <br>* McshEngl.trousers!~nounEnglC3-2:-;trousers,
+  McshLag000024:3148  <br>* McshEngl.pliers!~nounEnglC3-2:-;pliers,
+  McshLag000024:3157  <br>* McshEngl.scissors!~nounEnglC3-2:-;scissors,
+  McshLag000024:3170  <br>* McshEngl.verbEngl.A1:∅;s;ed;ing;ed.specific,
+  McshLag000024:3870  <br>* McshEngl.verbEngl.A2:p;ps;pped;pping;pped.specific,
+  McshLag000024:4223  <br>* McshEngl.verbEngl.A3:ss;sses;ssed;ssing;ssed.specific,
+  McshLag000024:4316  <br>* McshEngl.verbEngl.B1:e;es;ed;ing;ed.specific,
+  McshLag000024:4847  <br>* McshEngl.verbEngl.B2:dy;dies;died;dying;died.specific,
+

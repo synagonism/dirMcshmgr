@@ -65,6 +65,11 @@
  *  MvrwMain08 mmn_attr: a-concept with attribute-sections has no Mmn (main-mind-name)
  *             (attribute-sections: its direct parts "Y of X" | "X'Y", not trees, links, clsText;
  *             Mmn: "Mmn," + "name!⇒Mmn" | "informal!⇒Mmn" + "Mmn!=informal")
+ *  MvrwMain09 human_main: the-formal-main-name of a-human (a-concept named "human.Surname.Given[.YYYY]" |
+ *             "Surname.Given.human" | "human.Name" with a-Humn/hmn main-name) is not "Humn" + birth-year + name
+ *             (Humn1959Sinagu) | "HumnB" + year for BCE (HumnB0384Arst), or is missing
+ *  MvrwMain10 attribute: a-direct part-section of a-concept with main-name M is not
+ *             "x of M" + name "M'x" (attribute, x small first unless short: BMI) or "M.x" + name "M.x" (specific)
  *
  *  MvrwGstr01 gnsp_then_spgn: generic G has specific S (a-linked item of G's "specific-tree::"),
  *             but S does NOT have G as generic (in its "generic-tree::", by nesting, or through its generic-chain)
@@ -81,6 +86,10 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-62-0.2026-11-11: MvrwMain10 skips the-Unicode char sections "char.…"',
+    'structuralMcsh.js.0-61-0.2026-11-11: MvrwMain10 checks the-file-concept too (top sections, not idOverview|idMeta|idSupport)',
+    'structuralMcsh.js.0-60-0.2026-11-11: MvrwMain10 attribute: "x of M" + M\'x | "M.x" + M.x',
+    'structuralMcsh.js.0-59-0.2026-11-11: MvrwMain09 human_main: Humn + birth-year + name, HumnB + year for BCE',
     'structuralMcsh.js.0-58-0.2026-11-09: fFindAttrDirect: a-level-1 section is NOT an-id-attribute of a-level-1 concept (siblings: idRfrtgPrvgDrct, idRfrtgPrvgDrctN)',
     'structuralMcsh.js.0-57-0.2026-11-08: MvreMain01 Mmn_form: ONLY English letters, digits, _ .',
     'structuralMcsh.js.0-56-0.2026-11-08: MvreName02 name_comma; sNameFormal → sNameMainFrml (parser 0-6-1)',
@@ -866,6 +875,108 @@ function fCheckMmnAttr(aoCnptFile) {
   return aoIssue;
 }
 
+// 🔶 [MvrwMain09] human_main: the-formal-main-name of a-human (an-individual person) is
+//   "Humn" + birth-year (4 digits) + name, capital first: Humn1959Sinagu;
+//   for a-human born BCE "HumnB" + year: HumnB0384Arst.
+//   A-human is a-concept with an-English name "human.Surname.Given[.YYYY]" | "human.YYYY.Surname…" |
+//   "Surname.Given.human" | "human.Name" when its main-name already starts with Humn | hmn
+//   (human.Aristotle!⇒hmnB0384Arst). NOT human.DEVELOPER | human.Reddit (groups).
+//   A-human without main-name is-reported too.
+const rMainHuman = /^HumnB?\d{4}[A-Z][A-Za-z0-9]*$/;
+const rYear = /^\{?B?\d{4}\}?$/, rWordCap = /^[A-Z][a-z]+$/;
+/** OUTPUT: true when an-English name sNameIn denotes an-individual human; sMainIn its concept's main-name. */
+function fIsNameHuman(sNameIn, sMainIn) {
+  const aPart = sNameIn.split('.');
+  let aWord;
+  if (aPart[0] === 'human') aWord = aPart.slice(1);
+  else if (aPart[aPart.length - 1] === 'human') aWord = aPart.slice(0, -1);
+  else return false;
+  if (!aWord.length || !aWord.every(sW => rWordCap.test(sW) || rYear.test(sW))) return false;
+  const nCap = aWord.filter(sW => rWordCap.test(sW)).length, bYear = aWord.some(sW => rYear.test(sW));
+  if (!nCap) return false;
+  return nCap >= 2 || bYear || /^(Humn|hmn)/.test(sMainIn);
+}
+function fCheckMainNameHuman(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
+      const sMain = oCnpt.sNameMainFrml ?? '';
+      const aName = (oCnpt.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => String(oName.sName ?? '').trim());
+      const sNameHuman = aName.find(sName => fIsNameHuman(sName, sMain));
+      if (!sNameHuman || rMainHuman.test(sMain)) continue;
+      const bFile = oCnpt.sType === 'CnptFile';
+      const oParaName = bFile ? null : fFindParaAll(oCnpt, 'name')[0];
+      const sIdPara = bFile ? oCnpt.sNameId : (oCnpt.sType === 'CnptPara' ? oCnpt.sNameId : oParaName?.sNameId ?? oCnpt.sNameId);
+      const nLinePara = oCnptFile.oMapIdLine.get(sIdPara) ?? null;
+      const aLinePara = String(bFile ? '' : oCnpt.sType === 'CnptPara' ? oCnpt.sPara : oParaName?.sPara ?? '').split('\n');
+      const nOffset = sMain ? aLinePara.findIndex(sLine => sLine.includes(`McshEngl.${sMain},`) || sLine.includes(`McshEngl.${sMain}!=`) || sLine.includes(`!⇒${sMain},`)) : -1;
+      const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset : nLinePara;
+      aoIssue.push(fIssue('WARN', 'MvrwMain09', oCnptFile.sNameFile, oCnpt,
+        `human_main: human "${sNameHuman}" ` + (sMain ? `has main-name "McshEngl.${sMain}"` : 'has no main-name') +
+        ': use Humn + birth-year + name (Humn1959Sinagu), HumnB + year for BCE (HumnB0384Arst)',
+        nLine));
+    }
+  }
+  return aoIssue;
+}
+
+// 🔶 [MvrwMain10] attribute: a-direct part-section of a-concept with main-name M is
+//   a) an-attribute: title "x of M" (NN_x of M), name "McshEngl.M'x," (- → _), both formal-names;
+//      x starts with a-small letter, unless it is a-short name (no small letter: BMI, UNL, DOING);
+//   b) an-attribute-specific: title "M.x", name "McshEngl.M.x,".
+//   Title and name are compared without "NN_", "(…)" and "{…}". NOT trees (…TREE…), links, clsText,
+//   UPPERCASE grouping titles (MISC-ATTRIBUTE of M). Example: "protocol of AgntRppl" + AgntRppl'protocol.
+//   The-file-concept is checked too: its direct parts are the-top sections, not idOverview, idMeta, idSupport;
+//   its issues say "of file-concept".
+const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+const fFormalMvrwMain10 = sIn => sIn.replace(/-+/g, '_').replace(/\s+/g, '_');
+function fCheckAttribute(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    const aoSect = fFindSectAll(oCnptFile);
+    // the-file-concept: its direct parts are the-top sections (NOT idOverview, idMeta, idSupport)
+    const sIdFile = '\u0000file';
+    const oMapChild = new Map();
+    for (const oSect of aoSect) {
+      let sW = oSect.sIdWhole_elmt ?? null;
+      if (!sW) { if (['idOverview', 'idMeta', 'idSupport'].includes(oSect.sNameId)) continue; sW = sIdFile; }
+      if (!oMapChild.has(sW)) oMapChild.set(sW, []); oMapChild.get(sW).push(oSect);
+    }
+    const aoWhole = aoSect.filter(oSect => oSect.sType === 'CnptSect' && oSect.sNameMainFrml && oSect.sNameId !== 'idOverview');
+    if (oCnptFile.sNameMainFrml) aoWhole.push({ sNameId: sIdFile, sNameMainFrml: oCnptFile.sNameMainFrml, bFile: true });
+    for (const oCnpt of aoWhole) {
+      const sM = oCnpt.sNameMainFrml;
+      for (const oChild of oMapChild.get(oCnpt.sNameId) ?? []) {
+        const sTitle = fNormMvrwMain10(oChild.sNameTitle);
+        if (!sTitle || rTitleTree.test(sTitle) || rSectLink.test(oChild.sNameTitle ?? '') || /^[^a-z]*ATTRIBUTE\b/.test(sTitle)) continue;
+        if (/^char\./.test(sTitle)) continue;   // a-Unicode char section "char.&#xA48C; 42124 U+A48C …" (dirUcd)
+        const aName = (oChild.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => String(oName.sName ?? '').trim());
+        const aProblem = [];
+        let mT;
+        if ((mT = /^(?:\d+_)?(.+?) of (\S+)$/.exec(sTitle))) {
+          const [, sX, sOf] = mT, sForm = fFormalMvrwMain10(sX);
+          if (sOf !== sM) aProblem.push(`title ends "of ${sOf}", not "of ${sM}"`);
+          if (/^[A-Z]/.test(sX) && /[a-z]/.test(sX)) aProblem.push(`"${sX}" starts with a-capital letter`);
+          const rName = new RegExp(`^${sM.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'(\\d+_)?${sForm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
+          if (!aName.some(sN => rName.test(sN))) aProblem.push(`no name "McshEngl.${sM}'${sForm}"`);
+        } else if (sTitle.startsWith(sM + '.')) {
+          const sForm = fFormalMvrwMain10(sTitle);
+          if (!aName.some(sN => sN === sForm || sN.replace(/\.\d+_/g, '.') === sForm.replace(/\.\d+_/g, '.'))) aProblem.push(`no name "McshEngl.${sForm}"`);
+        } else {
+          aProblem.push(`title is not "x of ${sM}" (attribute) or "${sM}.x" (specific)`);
+        }
+        if (!aProblem.length) continue;
+        aoIssue.push(fIssue('WARN', 'MvrwMain10', oCnptFile.sNameFile, oChild,
+          `attribute: "${sTitle}" (${oChild.sNameId}) of ${oCnpt.bFile ? 'file-concept ' : ''}"${sM}": ${aProblem.join('; ')}`,
+          oCnptFile.oMapIdLine.get(oChild.sNameId) ?? null));
+      }
+    }
+  }
+  return aoIssue;
+}
+
 // 🔶 [MvrwMain07] attrbase_line: the-main-names of the-attributes of a-concept are-created of
 //   a-base plus text, the-Attrbase. It is-denoted in the-name::-para of the-concept with
 //   "McshEngl.B!Attrbase," (B = the-main-name) or "McshEngl.B!Attrbase!⇒M," (B another name),
@@ -1223,6 +1334,8 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwMain06'], sLabel: '   MvrwMain06 Main-names srtr_structure... ', fCheck: () => fCheckMainNameSrtr(aoCnptFile) },
     { aCode: ['MvrwMain07'], sLabel: '   MvrwMain07 Main-names attrbase_line... ', fCheck: () => fCheckMainNameAttrbase(aoCnptFile) },
     { aCode: ['MvrwMain08'], sLabel: '   MvrwMain08 Main-names mmn_attr... ', fCheck: () => fCheckMmnAttr(aoCnptFile) },
+    { aCode: ['MvrwMain09'], sLabel: '   MvrwMain09 Main-names human_main... ', fCheck: () => fCheckMainNameHuman(aoCnptFile) },
+    { aCode: ['MvrwMain10'], sLabel: '   MvrwMain10 Main-names attribute... ', fCheck: () => fCheckAttribute(aoCnptFile) },
   ];
   for (const oCheck of aoCheck) {
     if (aCodeIn.length && !oCheck.aCode.some(sCode => aCodeIn.includes(sCode))) continue;

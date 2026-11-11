@@ -1,0 +1,26 @@
+MMN RENAME agnt-attr DRY — 2026-11-11
+rename: 20 | skipped: 0 | files to write: 14
+
+=== RENAME (20)
+  McshTchInf000015:13848  chain_softfork -> AgntSoftfork  (9 lines in 1 pages)
+  McshTchInf000015:13808  chain_hardfork -> AgntHardfork  (9 lines in 1 pages)
+  McshTchInf000015:13788  netAlgo_evoluting_main_net_launch -> AgntEvoluting_main_net_launch  (3 lines in 1 pages)
+  McshTchInf000015:13430  NetAlgoevolg -> Agntevolg  (13 lines in 2 pages)
+  McshTchInf000015:13235  AnLaw -> AgntLaw  (36 lines in 2 pages)
+  McshTchInf000015:13017  Agnetchain_doing -> Agntdoing  (49 lines in 4 pages)
+  McshTchInf000015:12935  netAlgo_zero_knowledge_proof -> AgntZero_knowledge_proof  (2 lines in 1 pages)
+  McshTchInf000015:12900  netAlgo_double_counting_of_assets_prevention -> AgntDouble_counting_of_assets_prevention  (4 lines in 1 pages)
+  McshTchInf000015:12880  netAlgo_crypto_economics -> AgntCrypto_economics  (2 lines in 1 pages)
+  McshTchInf000015:10136  chain_industry -> AgntIndustry  (10 lines in 1 pages)
+  McshTchInf000015:10109  netAlgo_environment -> AgntEnvironment  (8 lines in 2 pages)
+  McshTchInf000015:7907  netAlgo_ozn -> AgntOzn  (45 lines in 4 pages)
+  McshTchInf000015:7638  Agnetwllt -> AgntWllt  (44 lines in 5 pages)
+  McshTchInf000015:7257  DeApp -> AgntApp  (146 lines in 9 pages)
+  McshTchInf000015:2125  Agnetchain_crypto -> AgntCrypto  (27 lines in 1 pages)
+  McshTchInf000015:2075  Agnetchain_data -> AgntData  (3 lines in 1 pages)
+  McshTchInf000015:1938  Agnetchain_appending_algo -> AgntAppending_algo  (34 lines in 4 pages)
+  McshTchInf000015:1529  Dprotocol -> AgntProtocol  (38 lines in 3 pages)
+  McshTchInf000015:1119  Dstakeholder -> AgntStakeholder  (42 lines in 5 pages)
+  McshTchInf000015:1690  Agnetchain -> AgntChain  (239 lines in 8 pages)
+
+=== SKIP (0)

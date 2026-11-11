@@ -1,0 +1,26 @@
+WORD MAIN-NAMES OF McshStn000007 -> NEW APPLIED — 2026-11-11
+lines: 22 in 2 pages | societyHmnN>SocoHumanNo 7, SystGvcSocOgsm>Socogovernance_system 9, SoctOgsm_language>Socolanguage 6
+
+=== CHANGED (22)
+  McshStn000007:194  <br>* McshEngl.societyOgsm'09_language!⇒SoctOgsm_language,  ->  <br>* McshEngl.societyOgsm'09_language!⇒Socolanguage,
+  McshStn000007:195  <br>* McshEngl.SoctOgsm_language!=societyOgsm'09_language,  ->  <br>* McshEngl.Socolanguage!=societyOgsm'09_language, ¶ <br>* McshEngl.SoctOgsm_language!⇒Socolanguage,
+  McshStn000007:196  <br>* McshEngl.SoctOgsm'language!⇒SoctOgsm_language,  ->  <br>* McshEngl.SoctOgsm'language!⇒Socolanguage,
+  McshStn000007:197  <br>* McshEngl.societyOgsm'att009_language!⇒SoctOgsm_language,  ->  <br>* McshEngl.societyOgsm'att009_language!⇒Socolanguage,
+  McshStn000007:198  <br>* McshEngl.societyOgsm'language_att009!⇒SoctOgsm_language,  ->  <br>* McshEngl.societyOgsm'language_att009!⇒Socolanguage,
+  McshStn000007:201  <br>* McshEngl.SoctOgsm_language:generic,  ->  <br>* McshEngl.Socolanguage:generic,
+  McshStn000007:230  <br>* McshEngl.SystGvcSocOgsm,  ->  <br>* McshEngl.Socogovernance_system, ¶ <br>* McshEngl.SystGvcSocOgsm!⇒Socogovernance_system,
+  McshStn000007:231  <br>* McshEngl.governance-system-of-societyOgsm!⇒SystGvcSocOgsm,  ->  <br>* McshEngl.governance-system-of-societyOgsm!⇒Socogovernance_system,
+  McshStn000007:232  <br>* McshEngl.societyOgsm'04_governance_system!⇒SystGvcSocOgsm,  ->  <br>* McshEngl.societyOgsm'04_governance_system!⇒Socogovernance_system,
+  McshStn000007:233  <br>* McshEngl.societyOgsm'att006_governance_system!⇒SystGvcSocOgsm,  ->  <br>* McshEngl.societyOgsm'att006_governance_system!⇒Socogovernance_system,
+  McshStn000007:234  <br>* McshEngl.societyOgsm'governance_system_att006!⇒SystGvcSocOgsm,  ->  <br>* McshEngl.societyOgsm'governance_system_att006!⇒Socogovernance_system,
+  McshStn000007:237  <br>* McshEngl.SystGvcSocOgsm:generic,  ->  <br>* McshEngl.Socogovernance_system:generic,
+  McshStn000007:243  <br>* McshEngl.SystGvcSocOgsm.specific,  ->  <br>* McshEngl.Socogovernance_system.specific,
+  McshStn000007:245  <br>* SystGvcSocOgsm.Socadmn!@McshStn000009#idSocadmn,  ->  <br>* Socogovernance_system.Socadmn!@McshStn000009#idSocadmn,
+  McshStn000007:333  <br>* McshEngl.non-human--society!⇒societyHmnN,  ->  <br>* McshEngl.non-human--society!⇒SocoHumanNo,
+  McshStn000007:334  <br>* McshEngl.societyHmnN!=non-human--society,  ->  <br>* McshEngl.SocoHumanNo!=non-human--society, ¶ <br>* McshEngl.societyHmnN!⇒SocoHumanNo,
+  McshStn000007:335  <br>* McshEngl.societyOgsm.002_humanNo!⇒societyHmnN,  ->  <br>* McshEngl.societyOgsm.002_humanNo!⇒SocoHumanNo,
+  McshStn000007:336  <br>* McshEngl.societyOgsm.humanNo!⇒societyHmnN,  ->  <br>* McshEngl.societyOgsm.humanNo!⇒SocoHumanNo,
+  McshStn000007:348  <br>* McshEngl.societyHmnN.specific,  ->  <br>* McshEngl.SocoHumanNo.specific,
+  McshStn000007:380  <br>* McshEngl.societyHmnN.terrestrial,  ->  <br>* McshEngl.SocoHumanNo.terrestrial,
+  McshStn000007:408  <br>* McshEngl.societyHmnN.terrestrialNo!⇒societyHntn,  ->  <br>* McshEngl.SocoHumanNo.terrestrialNo!⇒societyHntn,
+  McshStn000009:3315  <br>* SystGvcSocOgsm:generic,  ->  <br>* Socogovernance_system:generic,

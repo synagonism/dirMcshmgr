@@ -1,0 +1,193 @@
+MvrwMain10 FIX McshTchInf000015 APPLIED — 2026-11-11
+fixed: 170 | left: 17
+
+=== FIXED (170)
+  idDcnetMoePetro  "currency-net.Petro" -> "AgntCurrency.Petro"
+  idAlgntevogirsc  "info-resource of netAlgo_evoluting" -> "info-resource of Agntevolg" +  McshEngl.Agntevolg'info_resource!⇒NetAlgo_evolutinginfrsc,
+  idAlgntevogstfkeval  "evaluation of softfork" -> "evaluation of AgntSoftfork"
+  idAlgntevogstfk  "softfork of Algonet" -> "softfork of Agntevolg" +  McshEngl.Agntevolg'softfork!⇒AgntSoftfork,
+  idAlgntevoghdfkeval  "evaluation of hardfork" -> "evaluation of AgntHardfork"
+  idAlgntevoghdfk  "hardfork of Algonet" -> "hardfork of Agntevolg" +  McshEngl.Agntevolg'hardfork!⇒AgntHardfork,
+  idAlgntevogmnl  "main-net-launch of Algonet" -> "main-net-launch of Agntevolg" +  McshEngl.Agntevolg'main_net_launch!⇒AgntEvoluting_main_net_launch,
+  idAlgntevogrdmp  "roadmap of Algonet" -> "roadmap of Agntevolg" +  McshEngl.Agntevolg'roadmap,
+  idAlgntevnt  "event of Algonet" -> "event of Agntinfrsc" +  McshEngl.Agntinfrsc'event,
+  idAlgntsvcBtnn  "Agntsrvc.Bitnation" -> "Dsociety.Bitnation"
+  idAlgntsvcEcmrsc  "resource of AgntsrvcEcon" -> "resource of AgntsrvcEcon" +  McshEngl.AgntsrvcEcon'resource,
+  idAlgntsvcRrt  "recruitmen-sector of AgntsrvcEcon" -> "recruitmen-sector of AgntsrvcEcon" +  McshEngl.AgntsrvcEcon'recruitmen_sector,
+  idAlgntsvcWlfrbft  "Agntsrvc.WELFARE-BENEFIT" -> "AgntserviceAdmgSoc.WELFARE-BENEFIT"
+  idAlgntsvcVtg  "Agntsrvc.VOTING" -> "AgntserviceAdmgSoc.VOTING"
+  idAlgntsvcSclscrt  "Agntsrvc.SOCIAL-SECURITY" -> "AgntserviceAdmgSoc.SOCIAL-SECURITY"
+  idAlgntsvcLdr  "Agntsrvc.LAND-REGISTRY" -> "AgntserviceAdmgSoc.LAND-REGISTRY"
+  idAlgntsvcGovSct  "AnsrvcGvng.SOCIETY" -> "Agntsrvc.SOCIETY" +  McshEngl.Agntsrvc.SOCIETY!⇒AgntserviceAdmgSoc,
+  idAlgntsvcPrvnpjt  "Agntsrvc.PROVENANCE-PROJECT" -> "AgntsrvcScmg.PROVENANCE-PROJECT"
+  idAlgntsvcrght  "Agntsrvc.FREIGHT" -> "AgntsrvcScmg.FREIGHT"
+  idAlgntsvcSplchn  "Agntsrvc.SUPPLY-CHAIN-MANAGING" -> "Agntsrvc.sectorPrdn.trade.SUPPLY-CHAIN-MANAGING" +  McshEngl.Agntsrvc.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING!⇒AgntsrvcScmg,
+  idAlgntsvcInvcmng  "Agntsrvc.INVOICE-MANAGING" -> "Agntsrvc.sectorPrdn.trade.INVOICE-MANAGING" +  McshEngl.Agntsrvc.sectorPrdn.trade.INVOICE_MANAGING,
+  idAlgntsvcAstexc  "Agntsrvc.ASSET-EXCHANGE" -> "Agntsrvc.sectorPrdn.trade.ASSET-EXCHANGE" +  McshEngl.Agntsrvc.sectorPrdn.trade.ASSET_EXCHANGE,
+  idAlgntsvcSclnet  "Agntsrvc.SOCIAL-NETWORK" -> "AgntserviceTchInf.SOCIAL-NETWORK"
+  idAlgntsvcScrt  "Agntsrvc.SECURITY" -> "AgntserviceTchInf.SECURITY"
+  idAlgntsvcSrcegn  "Agntsrvc.SEARCH-ENGINE" -> "AgntserviceTchInf.SEARCH-ENGINE"
+  idAlgntsvcWat  "Agntsrvc.WEDDING-AGREEMENT" -> "AgntsrvcRecord.WEDDING-AGREEMENT"
+  idAlgntsvcVrfdt  "Agntsrvc.VERIFICATION-OF-DATA" -> "AgntsrvcRecord.VERIFICATION-OF-DATA"
+  idAlgntsvcRgrcpn  "Agntsrvc.REGISTRY-OF-COMPANIES" -> "AgntsrvcRecord.REGISTRY-OF-COMPANIES"
+  idAlgntsvcIpt  "Agntsrvc.INTELLECTUAL-PROPERTY" -> "AgntsrvcRecord.INTELLECTUAL-PROPERTY"
+  idAlgntsvcCrdl  "Agntsrvc.CREDENTIAL" -> "AgntsrvcRecord.CREDENTIAL"
+  idAlgntsvcCrt  "Agntsrvc.CERTIFICATE-MANAGING" -> "AgntsrvcRecord.CERTIFICATE-MANAGING"
+  idAlgntsvcStdcrt  "Agntsrvc.ACADEMIC-CREDENTIAL" -> "AgntsrvcRecord.ACADEMIC-CREDENTIAL"
+  idAlgntsvcRkg  "Agntsrvc.RECORD-KEEPING" -> "AgntserviceTchInf.RECORD-KEEPING"
+  idAlgntsvcPgmcrt  "Agntsrvc.PROGRAMMABLE-CONTRACT" -> "AgntserviceTchInf.PROGRAMMABLE-CONTRACT"
+  idAlgntsvcNzn  "Agntsrvc.NOTARIZATION-service" -> "AgntserviceTchInf.NOTARIZATION-service"
+  idAlgntsvcNews  "Agntsrvc.NEWS" -> "AgntserviceTchInf.NEWS"
+  idAlgntsvcIoT  "Agntsrvc.IoT" -> "AgntserviceTchInf.IoT"
+  idAlgntsvcItcc  "Agntsrvc.INTERCHAIN-COMMUNICATION" -> "AgntserviceTchInf.INTERCHAIN-COMMUNICATION"
+  idAlgntsvcCmpg  "Agntsrvc.GENERAL-PURPOSE-COMPUTING" -> "AgntserviceTchInf.GENERAL-PURPOSE-COMPUTING"
+  idAlgntsvcEcpd  "Agntsrvc.ENCYCLOPEDIA" -> "AgntserviceTchInf.ENCYCLOPEDIA"
+  idAlgntsvcDinet  "Agntsrvc.DECENTRALIZED-INTERNET" -> "AgntserviceTchInf.DECENTRALIZED-INTERNET"
+  idAlgntsvcCntpvdg  "Agntsrvc.CONTENT-PROVIDING" -> "AgntserviceTchInf.CONTENT-PROVIDING"
+  idAlgntsvcCldstg  "Agntsrvc.CLOUD-STORAGE" -> "AgntserviceTchInf.CLOUD-STORAGE"
+  idAlgntsvcCldcmpg  "Agntsrvc.CLOUD-COMPUTING" -> "AgntserviceTchInf.CLOUD-COMPUTING"
+  idAlgntsvcBlg  "Agntsrvc.BLOGGING" -> "AgntserviceTchInf.BLOGGING"
+  idAlgntsvcAi  "Agntsrvc.ARTIFICIAL-INTELLIGENCE" -> "AgntserviceTchInf.ARTIFICIAL-INTELLIGENCE"
+  idAlgntsvc001  "Agntsrvc.arbitration-001" -> "AgntserviceTchInf.arbitration-001"
+  idAlgntsvcctg  "Agntsrvc.FORCASTING" -> "AgntsrvcInfo.FORCASTING"
+  idAlgntsvcEdu  "Agntsrvc.EDUCATION" -> "AgntsrvcInfo.EDUCATION"
+  idAlgntsvcStrtupfdg  "AnserviceFin.STARTUP-FUNDING" -> "AgntsrvcFunding.STARTUP-FUNDING"
+  idAlgntsvcCrdfnd  "AnserviceFin.CROWDFUNDING" -> "AgntsrvcFunding.CROWDFUNDING"
+  idAlgntwhlidtr  "industry of Algonet" -> "industry of AgntEnvironment" +  McshEngl.AgntEnvironment'industry!⇒AgntIndustry,
+  idAlgntwhlecsm  "ecosystem of Algonet" -> "ecosystem of AgntEnvironment" +  McshEngl.AgntEnvironment'ecosystem,
+  idAlgntorgINATBA  "Agntogzn.INATBA" -> "AgntOzn.INATBA"
+  idAlgntognHlp  "Agntogzn.HyperLedger-Project" -> "AgntOzn.HyperLedger-Project"
+  idAlgntgrdtm  "Agntogzn.Guardtime" -> "AgntOzn.Guardtime"
+  idAlgntGbbc  "Agntogzn.GBBC" -> "AgntOzn.GBBC"
+  idAlgntdlccgp  "Agntogzn.Digital-Currency-Group" -> "AgntOzn.Digital-Currency-Group"
+  idAlgntcndsk  "Agntogzn.CoinDesk" -> "AgntOzn.CoinDesk"
+  idAlgntcncntr  "Agntogzn.Coin_Center" -> "AgntOzn.Coin_Center"
+  idAlgntchncm  "Agntogzn.Chain.com" -> "AgntOzn.Chain.com" +  McshEngl.AgntOzn.Chain.com,
+  idtbcacntr  "Agntogzn.Accenture" -> "AgntOzn.Accenture"
+  idAlgntognVC  "Agntogzn.VENTURE-CAPITAL" -> "AgntOzn.VENTURE-CAPITAL"
+  idAlgntognMct  "Agntogzn.MERCHANT" -> "AgntOzn.MERCHANT"
+  idAlgntognFndn  "Agntogzn.FOUNDATION" -> "AgntOzn.FOUNDATION"
+  idAlgntxQdgcx  "exchange-ogn.QuadrigaCX" -> "AgntogznExch.QuadrigaCX"
+  idAlgntxPlnx  "exchange-ogn.Poloniex-exchange" -> "AgntogznExch.Poloniex-exchange" +  McshEngl.AgntogznExch.Poloniex_exchange,
+  idAlgntxOkex  "exchange-ogn.OKEx" -> "AgntogznExch.OKEx"
+  idLkxshr  "Lykke-coin of Lykke" -> "lykke-coin of Lykkasset" +  McshEngl.Lykkasset'lykke_coin!⇒DvLKK,
+  idLkx  "exchange-ogn.Lykke" -> "AgntogznExch.Lykke"
+  idAlgntxLtbt  "exchange-ogn.LiteBit-exchange" -> "AgntogznExch.LiteBit-exchange" +  McshEngl.AgntogznExch.LiteBit_exchange,
+  idAlgntxLqi  "exchange-ogn.Liqui" -> "AgntogznExch.Liqui"
+  idAlgntxLkbtc  "exchange-ogn.LakeBTC" -> "AgntogznExch.LakeBTC"
+  idAlgntxKcn  "exchange-ogn.KuCoin" -> "AgntogznExch.KuCoin"
+  idAlgntxKrkn  "exchange-ogn.Kraken-exchange" -> "AgntogznExch.Kraken-exchange" +  McshEngl.AgntogznExch.Kraken_exchange,
+  idAlgntxHbgl  "exchange-ogn.Huobi-Global" -> "AgntogznExch.Huobi-Global"
+  idAlgntxCnbs  "exchange-ogn.Coinbase" -> "AgntogznExch.Coinbase"
+  idAlgntxChgl  "exchange-ogn.Changenlly-exchange" -> "AgntogznExch.Changenlly-exchange" +  McshEngl.AgntogznExch.Changenlly_exchange,
+  idAlgntxBkcn  "exchange-ogn.Blockhain" -> "AgntogznExch.Blockhain" +  McshEngl.AgntogznExch.Blockhain,
+  idAlgntxBtrx  "exchange-ogn.Bittrex" -> "AgntogznExch.Bittrex"
+  idAlgntxBstmpofc  "bitstamp'office" -> "office of AgntogznExchBitstamp" +  McshEngl.AgntogznExchBitstamp'office, (new name::)
+  idAlgntxBstmp  "exchange-ogn.Bitstamp" -> "AgntogznExch.Bitstamp"
+  idAlgntxBpy  "exchange-ogn.BitPay" -> "AgntogznExch.BitPay"
+  idAlgntxBtfx  "exchange-ogn.Bitfinex" -> "AgntogznExch.Bitfinex"
+  idAlgntxBnnc  "exchange-ogn.Binance" -> "AgntogznExch.Binance"
+  idAlgntxCntrS  "exchange-ogn.CENTRALIZED.SEMI" -> "AgntogznExch.CENTRALIZED.SEMI" +  McshEngl.AgntogznExch.CENTRALIZED.SEMI,
+  idAlgntxCntrN  "exchange-ogn.CENTRALIZED.NO" -> "AgntogznExch.CENTRALIZED.NO" +  McshEngl.AgntogznExch.CENTRALIZED.NO!⇒AgntogznExchCentNo,
+  idAlgntxCntr  "exchange-ogn.CENTRALIZED" -> "AgntogznExch.CENTRALIZED" +  McshEngl.AgntogznExch.CENTRALIZED,
+  idAlgntxirsc  "info-resource of exchange-ogn" -> "info-resource of AgntogznExch"
+  idAlgntxeval  "evaluation of exchange-ogn" -> "evaluation of AgntogznExch"
+  idAlgntxbot  "trading-bot of exchange-ogn" -> "trading-bot of AgntogznExch"
+  idAlgntxodrbk  "order-book of exchange-ogn" -> "order-book of AgntogznExch"
+  idAlgntxordrLmt  "order.LIMIT" -> "Agntasset_order.LIMIT"
+  idAlgntxordrMrkt  "order.MARKET" -> "Agntasset_order.MARKET"
+  idAlgntxordr  "order of exchange-ogn" -> "order of AgntogznExch"
+  idAlgntxtkr  "taker of exchange-ogn" -> "taker of AgntogznExch"
+  idAlgntxmkr  "maker of exchange-ogn" -> "maker of AgntogznExch"
+  idAlgntxslr  "seller of exchange-ogn" -> "seller of AgntogznExch"
+  idAlgntxbyr  "buyer of exchange-ogn" -> "buyer of AgntogznExch"
+  idAlgntxevu  "asset of exchange-ogn" -> "asset of AgntogznExch"
+  idAlgntxfee  "fee of exchange-ogn" -> "fee of AgntogznExch"
+  idAlgntxwbst  "website of exchange-ogn" -> "website of AgntogznExch"
+  idAlgntxbase  "residence of exchange-ogn" -> "residence of AgntogznExch" +  McshEngl.AgntogznExch'residence,
+  idAlgntxIeo  "IEO of exchange-ogn" -> "IEO of AgntogznExch"
+  idAlgntx  "Agntogzn.EXCHANGE" -> "AgntOzn.EXCHANGE"
+  idDnoznEbp  "Agntogzn.EBP" -> "AgntOzn.EBP"
+  idAlgntbrdgShpsht  "bridge-ogn.ShapeShift" -> "AgntogznBridge.ShapeShift"
+  idAlgntbrdgBktd  "bridge-ogn.BlockTrades" -> "AgntogznBridge.BlockTrades"
+  idAlgntognBrdg  "Agntogzn.BRIDGE" -> "AgntOzn.BRIDGE"
+  idAlgntsctr  "Agntogzn.SECTOR" -> "AgntOzn.SECTOR"
+  idAlgntognirsc  "info-resource of Algonet-ozn" -> "info-resource of AgntOzn"
+  idDappsvc  "service of AgntApp" -> "service of AgntAppdoing" +  McshEngl.AgntAppdoing'service,
+  idDappcfdc  "confidence-of-user of AgntApp" -> "confidence-of-user of AgntApp_07_attMisc" +  McshEngl.AgntApp_07_attMisc'confidence_of_user,
+  idDappevalCon  "problem of AgntApp" -> "problem of AgntAppevaln" +  McshEngl.AgntAppevaln'problem, (new name::)
+  idDappevalPro  "benefit of AgntApp" -> "benefit of AgntAppevaln" +  McshEngl.AgntAppevaln'benefit, (new name::)
+  idDappatt002  "01_Agnetchain_net of AgntApp" -> "agnetchain_net of AgntApp" +  McshEngl.AgntApp'agnetchain_net,
+  idAlgntpgmSctrirsc  "info-resource of Scatter" -> "info-resource of AgntprgmScatter" +  McshEngl.AgntprgmScatter'info_resource!⇒Scatterinfrsc,
+  idAlgntpgmSctrCmen  "Chrome-extension of Scatter" -> "chrome-extension of AgntprgmScatter" +  McshEngl.AgntprgmScatter'chrome_extension,
+  idAlgntpgmSctrRidl  "RIDL of Scatter" -> "RIDL of AgntprgmScatter" +  McshEngl.AgntprgmScatter'RIDL,
+  idDcntrtpblmMnrd  "Ansccon.MACHINE_READABLE" -> "Ansccon.MACHINE_READABLE" +  McshEngl.Ansccon.MACHINE_READABLE,
+  idDcntrtpblmImbt  "Ansccon.IMMUTABILITY" -> "Ansccon.IMMUTABILITY" +  McshEngl.Ansccon.IMMUTABILITY,
+  idDcntrtpblmRsk  "Ansccon.RISK" -> "Ansccon.RISK" +  McshEngl.Ansccon.RISK,
+  idDcntrtpblm  "problem of Agntcontract" -> "problem of Agntcontractevaln" +  McshEngl.Agntcontractevaln'problem!⇒Ansccon,
+  idDcntrtbnft  "benefit of Agntcontract" -> "benefit of Agntcontractevaln" +  McshEngl.Agntcontractevaln'benefit,
+  idDcntrtatt003  "03_Dnet of Agntcontract" -> "dnet of Agntcontract" +  McshEngl.Agntcontract'dnet,
+  idDcntrtatt002  "02_Anasset of Agntcontract" -> "anasset of Agntcontract" +  McshEngl.Agntcontract'anasset,
+  idAlgntgovpblm  "problem of Agntgovc" -> "problem of NetAlgo_govcevaln" +  McshEngl.NetAlgo_govcevaln'problem,
+  idAlgntgovpatudg  "auto-updating of Agntgovc" -> "auto-updating of Agntgovc_entity_changing" +  McshEngl.Agntgovc_entity_changing'auto_updating!⇒Agntgovc_auto_updating,
+  idAlgntgovadtg  "adapting of Agntgovc" -> "adapting of Agntgovc_entity_changing" +  McshEngl.Agntgovc_entity_changing'adapting,
+  idAlgntevuMoemoc  "medium-of-control of Agntexvu" -> "medium-of-control of Agntexvu_service" +  McshEngl.Agntexvu_service'medium_of_control!⇒Agntexvu_medium_of_control__service,
+  idAlgntevuMoeuoa  "unit-of-account- of Agntexvu" -> "unit-of-account- of Agntexvu_service" +  McshEngl.Agntexvu_service'unit_of_account_!⇒Agntexvu_unit_of_account__service,
+  idAlgntevuMoeobjv  "objective of Agntexvu" -> "objective of Agntexvu_service" +  McshEngl.Agntexvu_service'objective,
+  idAlgntevuMoevlt  "volatility of Agntexvu" -> "volatility of Agntexvu_price" +  McshEngl.Agntexvu_price'volatility,
+  idAlgntevusovatt  "store-of-value-attribute of Agntasset" -> "store-of-value-attribute of Agntasset_service" +  McshEngl.Agntasset_service'store_of_value_attribute!⇒Agntassetsovalue,
+  idAlgntevuevalCon  "con of Agntasset" -> "con of Agntassetevaln" +  McshEngl.Agntassetevaln'con,
+  idAlgntevuprcBid  "price.BID" -> "Anasetprice.BID" +  McshEngl.Anasetprice.BID,
+  idAlgntevuprcAsk  "price.ASK" -> "Anasetprice.ASK"
+  idAlgntevuprcCmnt  "price.COMMUNITY" -> "Anasetprice.COMMUNITY"
+  idAlgntevuprcMkt  "price.MARKET" -> "Anasetprice.MARKET"
+  idAlgntevuspcltn  "speculation of Agntasset" -> "speculation of Agntasstvolatility" +  McshEngl.Agntasstvolatility'speculation,
+  idAlgntevuvltlt  "volatility of Agntasset" -> "volatility of Anasetprice"
+  idAlgntevubbl  "bubble of Agntasset" -> "bubble of Anasetprice"
+  idAlgntevumtcp  "market-capitalization of Agntasset" -> "market-capitalization of Anasetprice"
+  idAlgntevuexrate  "exchange-rate of Agntasset" -> "exchange-rate of Anasetprice"
+  idAlgntchntprc  "transparency of Algonet" -> "transparency of AgntChain"
+  idAlgntchntmns  "timeness of Algonet" -> "timeness of AgntChain"
+  idAlgntchnimtblt  "immutability of Algonet" -> "immutability of AgntChain"
+  idAlgntchncrpthshfcnhsg  "hashing of hash-function" -> "hashing of AgntCrypto"
+  idAlgntchncrpthshfcnotp  "output of hash-function" -> "output of AgntCrypto"
+  idAlgntchncrpthshfcninp  "input of hash-function" -> "input of AgntCrypto"
+  idAlgntchncrpt  "cryptography of Algonet" -> "cryptography of AgntChain"
+  idAlgntchnsiz  "size of Algonet" -> "size of AgntChain"
+  idAlgntchndata  "data of Algonet" -> "data of AgntChain"
+  idAlgntcsaPosp  "appending-algo.PROOF-OF-SPACE" -> "AgntAppending_algo.PROOF-OF-SPACE"
+  idAlgntcsaPod  "appending-algo.PROOF-OF-DEVOSION" -> "AgntAppending_algo.PROOF-OF-DEVOSION"
+  idAlgntcsaPob  "appending-algo.PROOF-OF-BURN" -> "AgntAppending_algo.PROOF-OF-BURN"
+  idAlgntcsaDpos  "appending-algo.DPOS" -> "AgntAppending_algo.DPOS"
+  idAlgntcsa  "appending-algorithm of Algonet" -> "appending-algorithm of AgntChain"
+  idAlgnttx  "transaction of Algonet" -> "transaction of AgntChain"
+  idAlgntHumnSzbNckirsc  "info-resource of Humn1964Szabo" -> "info-resource of Humn1964Szabo" +  McshEngl.Humn1964Szabo'info_resource!⇒Humn1964Szaboinfrsc,
+  idAlgntHumnCnhr  "Dhuman.ASSET-HOLDER" -> "chain_user.ASSET-HOLDER"
+  idAlgntnodFulApdrN  "full-node.APPENDER.NO" -> "AgntnodeFull.APPENDER.NO" +  McshEngl.AgntnodeFull.APPENDER.NO,
+  idAlgntipsn  "AgntevalnCon.IMPERSONATION" -> "AgntevalConSecurity.IMPERSONATION"
+  idAlgntfsak  "AgntevalnCon.PHISHING-ATTACK" -> "AgntevalConSecurity.PHISHING-ATTACK"
+  idAlgntscam  "AgntevalnCon.SCAMMER" -> "AgntevalConSecurity.SCAMMER"
+  idAlgntlsmn  "AgntevalnCon.LOSS-OF-MONEY" -> "AgntevalConSecurity.LOSS-OF-MONEY" +  McshEngl.AgntevalConSecurity.LOSS_OF_MONEY,
+  idAlgntevalScon  "Agntevaln.benefitNo" -> "NetAlgoevaln.benefitNo" +  McshEngl.NetAlgoevaln.benefitNo!⇒AgntevalnCon,
+  idAlgntevalSproDspn  "AgntevalnPro.DOUBLE_SPENDING_PROTECTION" -> "AgntevalnPro.DOUBLE_SPENDING_PROTECTION" +  McshEngl.AgntevalnPro.DOUBLE_SPENDING_PROTECTION,
+  idAlgntevalSpro  "Agntevaln.BENEFIT" -> "NetAlgoevaln.BENEFIT" +  McshEngl.NetAlgoevaln.BENEFIT!⇒AgntevalnPro,
+  idAlgntevalirsc  "info-resource of Agntevaln" -> "info-resource of NetAlgoevaln" +  McshEngl.NetAlgoevaln'info_resource!⇒NetAlgo_evaluationinfrsc,
+
+=== LEFT (17)
+  idDcnetcntlzdrtpcn  "relation to crypto-chain--net"  (title is not "x of AgntCtrl" (attribute) or "AgntCtrl.x" (specific))
+  idAlgntevog20012010  "Algonet'"  (title is not "x of Agntevolg" (attribute) or "Agntevolg.x" (specific))
+  idAlgntevog20112020  "Algonet'"  (title is not "x of Agntevolg" (attribute) or "Agntevolg.x" (specific))
+  idAlgntevog20212030  "Algonet'"  (title is not "x of Agntevolg" (attribute) or "Agntevolg.x" (specific))
+  idAlgntsvcMktplc  "AgntsrvcEcon_marketplace"  (title is not "x of AgntsrvcEcon" (attribute) or "AgntsrvcEcon.x" (specific))
+  idAlgntsvcNfndogn  "Neufund-organization"  (title is not "x of AgntsrvcStartup" (attribute) or "AgntsrvcStartup.x" (specific))
+  idAlgntsvcDapp  "AgntApp of Agntsrvc"  (x is not a plain word)
+  idLkxSlyci  "SmartLyCI of Lykke"  (x is not a plain word)
+  idLkxPlyci  "PayLyCI of Lykke"  (x is not a plain word)
+  idLkxLyci  "Lykklyci-Service-token of Lykke"  (x is not a plain word)
+  idLkxLycii  "Lykklyci-Index of Lykke"  (x is not a plain word)
+  idAlgntpgmSctrdldg  "downloading Scatter"  (title is not "x of AgntprgmScatter" (attribute) or "AgntprgmScatter.x" (specific))
+  idAlgntpgmSctrDapp  "AgntApp of Scatter"  (x is not a plain word)
+  idDcntrtatt010  "10_relation-of-Agntcontract-to-legal-contract"  (title is not "x of Agntcontract" (attribute) or "Agntcontract.x" (specific))
+  idAlgntevuAggmtcp  "Market-capitalization--of--Aggregate-Agntasset"  (title is not "x of AgntassetAggr" (attribute) or "AgntassetAggr.x" (specific))
+  idAlgntchnapdg  "appending transaction-chain"  (title is not "x of AgntChain" (attribute) or "AgntChain.x" (specific))
+  idAlgnttps  "transaction-per-second"  (title is not "x of Agnttx" (attribute) or "Agnttx.x" (specific))

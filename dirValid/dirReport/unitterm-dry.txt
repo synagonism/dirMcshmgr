@@ -1,0 +1,10 @@
+MMN RENAME unitterm DRY — 2026-11-11
+rename: 4 | skipped: 0 | files to write: 3
+
+=== RENAME (4)
+  McshLag000007:16828  unitNameMain -> HmmdunitTerm  (11 lines in 1 pages)
+  McshLag000010:335  Snguunit.term -> SnguunitTerm  (13 lines in 2 pages)
+  McshLag000010:373  Snguunit.termNo -> SnguunitTermNo  (4 lines in 1 pages)
+  McshLag000009:4090  Spchunit.termNo -> SpchunitTermNo  (4 lines in 1 pages)
+
+=== SKIP (0)

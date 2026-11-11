@@ -1,0 +1,15 @@
+MMN RENAME pron DRY — 2026-11-10
+rename: 8 | skipped: 1 | files to write: 14
+
+=== RENAME (8)
+  McshLag000011:15292  pronEngl -> Englpron  (90 lines in 7 pages)
+  McshLag000012:2402  pronEspo -> Espopron  (20 lines in 1 pages)
+  McshLag000030:2342  pronTurk -> Turkpron  (34 lines in 1 pages)
+  McshLag000038:1043  Slv0Pron -> Slv0pron  (21 lines in 1 pages)
+  McshLag000039:688  Ide0Pron -> Ide0pron  (21 lines in 1 pages)
+  McshLag000040:915  Afa0Pron -> Afa0pron  (21 lines in 1 pages)
+  McshLag000041:830  Tur0Pron -> Tur0pron  (21 lines in 1 pages)
+  McshLag000042:820  Asa0Pron -> Asa0pron  (21 lines in 1 pages)
+
+=== SKIP (1)
+  KhmrarguPronoun -> Khmrpron  (Khmrpron exists)

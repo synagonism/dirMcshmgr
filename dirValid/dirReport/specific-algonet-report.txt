@@ -1,0 +1,29 @@
+SPECIFICS OF Algonet (McshTchInf000015:13968) — 2026-11-11
+specific-tree items: 16 (linked, x.m form: 8, linked, old form (not x.m): 0, plain name (no link): 4, external link: 4) | concepts with Algonet:generic not in the specific-tree: 0
+entry: file:line  item  ->  target  mmn  | does the target list X:generic
+
+=== LINKED, X.M FORM (8)
+  McshTchInf000015:13970  Algonet.AgntBkcn  ->  McshTchInf000016  mmn AgntBkcn  | has X:generic
+  McshTchInf000015:13971  Algonet.AgntDgcn  ->  McshTchInf000015#idAlgntnDag  mmn AgntDgcn  | has X:generic
+  McshTchInf000015:13979  Algonet.AgntPblc  ->  McshTchInf000015#idAlgntnPbl  mmn AgntPblc  | has X:generic  [=== on appending-joining]
+  McshTchInf000015:13980  Algonet.AgntCtrl  ->  McshTchInf000015#idDcnetcntlzd  mmn AgntCtrl  | has X:generic  [=== on appending-joining]
+  McshTchInf000015:13982  Algonet.netAlgoCurrency  ->  McshTchInf000015#idDcnetMoe  mmn netAlgoCurrency  | has X:generic
+  McshTchInf000015:13983  Algonet.netAlgoCurrencyNo  ->  McshTchInf000015#idDcnetMoeN  mmn netAlgoCurrencyNo  | has X:generic
+  McshTchInf000015:13985  Algonet.AgntGrfn  ->  McshTchInf000015#idAlgntGrfn  mmn AgntGrfn  | has X:generic  [=== on client:]
+  McshTchInf000015:13987  Algonet.AgntGen3  ->  McshTchInf000015#idAlgntGen3  mmn AgntGen3  | has X:generic
+
+=== LINKED, OLD FORM (not X.M) (0)
+
+=== PLAIN NAME (no link) (4)
+  McshTchInf000015:13973   permision-to-append--Algonet,  [=== on appending]
+  McshTchInf000015:13974   permisionless-to-append--Algonet,  [=== on appending]
+  McshTchInf000015:13976   permision-to-join--Algonet,  [=== on joining]
+  McshTchInf000015:13977   permisionless-to-join--Algonet,  [=== on joining]
+
+=== EXTERNAL LINK (4)
+  McshTchInf000015:13989  Byteball-network,
+  McshTchInf000015:13990  HyperCash,
+  McshTchInf000015:13991  Iota-network,
+  McshTchInf000015:14025  {2017-10-14} Blockchain Project Ecosystem: https://medium.com/@josh_nussbaum/,  [=== addressWpg:]
+
+=== HAS Algonet:generic BUT NOT IN THE SPECIFIC-TREE (0)

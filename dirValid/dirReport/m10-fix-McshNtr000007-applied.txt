@@ -1,0 +1,10 @@
+MvrwMain10 FIX McshNtr000007 APPLIED — 2026-11-11
+fixed: 3 | left: 1
+
+=== FIXED (3)
+  idChmElrGroup2  "ChmcElry.generic.group2" -> "ChmcElry.generic.group2"
+  idChmElrScdnPctlgrp  "group of periodic_table" -> "group of periodic_table"
+  idChmElrScdnPctlprd  "period of periodic_table" -> "period of periodic_table"
+
+=== LEFT (1)
+  idChmElratt004  "27_mass-number"  (no name "McshEngl.ChmcElry'mass_number")
