@@ -1,0 +1,13 @@
+MMN RENAME vscd APPLIED — 2026-11-12
+rename: 7 | skipped: 0 | files written: 2
+
+=== RENAME (7)
+  McshTchInf000041:1567  Vsccmnd -> Vscdcmnd  (5629 lines in 2 pages)
+  McshTchInf000041:6063  Vscsetg -> Vscdsetg  (16 lines in 1 pages)
+  McshTchInf000041:6113  VscProfile -> Vscdprofile  (3 lines in 1 pages)
+  McshTchInf000041:6231  Vscodeinfrsc -> Vscdinfrsc  (3 lines in 1 pages)
+  McshTchInf000041:6245  Vscodedoing -> Vscddoing  (3 lines in 1 pages)
+  McshTchInf000041:6278  Vscodeevolg -> Vscdevolg  (3 lines in 1 pages)
+  McshTchInf000041:6212  Vscode_relation_to_atom -> Vscdrelation_to_atom  (3 lines in 1 pages)
+
+=== SKIP (0)

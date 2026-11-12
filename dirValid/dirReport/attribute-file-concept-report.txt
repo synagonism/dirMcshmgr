@@ -1,120 +1,7 @@
-MvrwMain10 FILE-CONCEPT ATTRIBUTE WARNINGS — 2026-11-11
-warnings: 878 in 145 pages (dirUcd: 1; the Unicode char sections "char.…" are skipped)
-formal name missing: 654 | title is neither x of M nor M.x: 113 | x starts with a capital: 77 | title ends of another name: 34
-rule: a top section of a page with main-name M is "x of M" + name M'x (x small first unless short) or "M.x" + name M.x
-
-=== McshNtr000007 (40)
-  McshNtr000007:7108  "ChmcElry.generic.transuranic" (idChmElrTransuranic) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.transuranic"
-  McshNtr000007:7095  "ChmcElry.generic.radioactive" (idChmElrRadioactive) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.radioactive"
-  McshNtr000007:7050  "ChmcElry.generic.isotope" (idChmElrIsotope) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.isotope"
-  McshNtr000007:7028  "ChmcElry.generic.dietry" (idChmElrDietry) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.dietry"
-  McshNtr000007:7012  "ChmcElry.generic.allotrope" (idChmElrAllotrope) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.allotrope"
-  McshNtr000007:6989  "ChmcElry.generic.metaloid" (idChmElrMetaloid) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.metaloid"
-  McshNtr000007:6961  "ChmcElry.generic.metalNo" (idChmElrMetalN) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.metalNo"
-  McshNtr000007:6947  "ChmcElry.generic.metal" (idChmElrMetal) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.metal"
-  McshNtr000007:6932  "ChmcElry.generic.period7" (idChmElrPeriod7) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period7"
-  McshNtr000007:6918  "ChmcElry.generic.period6" (idChmElrPeriod6) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period6"
-  McshNtr000007:6904  "ChmcElry.generic.period5" (idChmElrPeriod5) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period5"
-  McshNtr000007:6889  "ChmcElry.generic.period4" (idChmElrPeriod4) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period4"
-  McshNtr000007:6867  "ChmcElry.generic.period3" (idChmElrPeriod3) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period3"
-  McshNtr000007:6845  "ChmcElry.generic.period2" (idChmElrPeriod2) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period2"
-  McshNtr000007:6829  "ChmcElry.generic.period1" (idChmElrPeriod1) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.period1"
-  McshNtr000007:6811  "ChmcElry.generic.group18" (idChmElrGroup18) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group18"
-  McshNtr000007:6788  "ChmcElry.generic.group17" (idChmElrGroup17) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group17"
-  McshNtr000007:6770  "ChmcElry.generic.group16" (idChmElrGroup16) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group16"
-  McshNtr000007:6754  "ChmcElry.generic.group15" (idChmElrGroup15) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group15"
-  McshNtr000007:6738  "ChmcElry.generic.group14" (idChmElrGroup14) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group14"
-  McshNtr000007:6721  "ChmcElry.generic.group13" (idChmElrGroup13) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group13"
-  McshNtr000007:6706  "ChmcElry.generic.group12" (idChmElrGroup12) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group12"
-  McshNtr000007:6692  "ChmcElry.generic.group11" (idChmElrGroup11) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group11"
-  McshNtr000007:6676  "ChmcElry.generic.group10" (idChmElrGroup10) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group10"
-  McshNtr000007:6660  "ChmcElry.generic.group9" (idChmElrGroup9) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group9"
-  McshNtr000007:6643  "ChmcElry.generic.group8" (idChmElrGroup8) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group8"
-  McshNtr000007:6628  "ChmcElry.generic.group7" (idChmElrGroup7) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group7"
-  McshNtr000007:6607  "ChmcElry.generic.group6" (idChmElrGroup6) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group6"
-  McshNtr000007:6592  "ChmcElry.generic.group5" (idChmElrGroup5) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group5"
-  McshNtr000007:6577  "ChmcElry.generic.group4" (idChmElrGroup4) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group4"
-  McshNtr000007:6562  "ChmcElry.generic.group3" (idChmElrGroup3) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group3"
-  McshNtr000007:6545  "ChmcElry.generic.group2" (idChmElrGroup2) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group2"
-  McshNtr000007:6520  "ChmcElry.generic.group1" (idChmElrGroup1) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.group1"
-  McshNtr000007:6505  "ChmcElry.generic.blockS" (idChmElrBlockS) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.blockS"
-  McshNtr000007:6488  "ChmcElry.generic.blockP" (idChmElrBlockP) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.blockP"
-  McshNtr000007:6472  "ChmcElry.generic.blockF" (idChmElrBlockF) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.blockF"
-  McshNtr000007:6457  "ChmcElry.generic.blockD" (idChmElrBlockD) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.generic.blockD"
-  McshNtr000007:4554  "ChmcElry.Potassium-Κ19" (idChmElrPotassium) of file-concept "ChmcElry": no name "McshEngl.ChmcElry.Potassium_Κ19"
-  McshNtr000007:318  "27_mass_number_ of ChmcElry" (idChmElratt004) of file-concept "ChmcElry": no name "McshEngl.ChmcElry'mass_number_"
-  McshNtr000007:158  "18_atomic_number_ of ChmcElry" (idChmElratt005) of file-concept "ChmcElry": no name "McshEngl.ChmcElry'atomic_number_"
-
-=== McshLag000024 (37)
-  McshLag000024:6647  "Z of wordSetEngl" (idWrdrEnglZ) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'Z"
-  McshLag000024:6636  "Y of wordSetEngl" (idWrdrEnglY) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'Y"
-  McshLag000024:6625  "X of wordSetEngl" (idWrdrEnglX) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'X"
-  McshLag000024:6527  "W of wordSetEngl" (idWrdrEnglW) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'W"
-  McshLag000024:6516  "V of wordSetEngl" (idWrdrEnglV) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'V"
-  McshLag000024:6505  "U of wordSetEngl" (idWrdrEnglU) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'U"
-  McshLag000024:6494  "T of wordSetEngl" (idWrdrEnglT) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'T"
-  McshLag000024:6483  "S of wordSetEngl" (idWrdrEngles) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'S"
-  McshLag000024:6472  "R of wordSetEngl" (idWrdrEnglR) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'R"
-  McshLag000024:6461  "Q of wordSetEngl" (idWrdrEnglQ) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'Q"
-  McshLag000024:6450  "P of wordSetEngl" (idWrdrEnglP) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'P"
-  McshLag000024:6439  "O of wordSetEngl" (idWrdrEnglO) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'O"
-  McshLag000024:6428  "N of wordSetEngl" (idWrdrEnglN) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'N"
-  McshLag000024:6417  "M of wordSetEngl" (idWrdrEnglM) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'M"
-  McshLag000024:6406  "L of wordSetEngl" (idWrdrEnglL) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'L"
-  McshLag000024:6395  "K of wordSetEngl" (idWrdrEnglK) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'K"
-  McshLag000024:6384  "J of wordSetEngl" (idWrdrEnglJ) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'J"
-  McshLag000024:6373  "I of wordSetEngl" (idWrdrEnglI) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'I"
-  McshLag000024:6362  "H of wordSetEngl" (idWrdrEnglH) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'H"
-  McshLag000024:6351  "G of wordSetEngl" (idWrdrEnglG) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'G"
-  McshLag000024:6340  "F of wordSetEngl" (idWrdrEnglF) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'F"
-  McshLag000024:6329  "E of wordSetEngl" (idWrdrEnglE) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'E"
-  McshLag000024:6318  "D of wordSetEngl" (idWrdrEnglD) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'D"
-  McshLag000024:6307  "C of wordSetEngl" (idWrdrEnglC) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'C"
-  McshLag000024:6296  "B of wordSetEngl" (idWrdrEnglB) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'B"
-  McshLag000024:6285  "A of wordSetEngl" (idWrdrEnglA) of file-concept "wordSetEngl": no name "McshEngl.wordSetEngl'A"
-  McshLag000024:4940  "verbEnglC:irregular" (idWrdrEnglVerbC) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:4808  "verbEnglB2:dy;dies;died;dying;died" (idWrdrEnglVerbB2) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:4308  "verbEnglB1:e;es;ed;ing;ed" (idWrdrEnglVerbB1) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:4181  "verbEnglA3:ss;sses;ssed;ssing;ssed" (idWrdrEnglVerbA3) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:3815  "verbEnglA2:p;ps;pped;pping;pped" (idWrdrEnglVerbA2) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:3162  "verbEnglA1:∅;s;ed;ing;ed" (idWrdrEnglVerbA1) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:494  "nounEnglC.irregular" (idWrdrEnglNounC) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:482  "nounEnglB2:y;ies" (idWrdrEnglNounB2) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:370  "nounEnglB1:f|fe;ves" (idWrdrEnglNounB1) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:338  "nounEnglA2:∅;es" (idWrdrEnglNounA2) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-  McshLag000024:56  "nounEnglA1:∅;s" (idWrdrEnglNounA1) of file-concept "wordSetEngl": title is not "x of wordSetEngl" (attribute) or "wordSetEngl.x" (specific)
-
-=== McshTchInf000016 (30)
-  McshTchInf000016:16560  "AgntBkcn.appending-joining.PUBLIC.NO" (idDbcPbcN) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.appending_joining.PUBLIC.NO"
-  McshTchInf000016:16535  "AgntBkcn.appending-joining.PUBLIC" (idDbcPbc) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.appending_joining.PUBLIC"
-  McshTchInf000016:16517  "AgntBkcn.joining.PERMISSIONED.NO" (idDbcPmsjoinN) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.joining.PERMISSIONED.NO"
-  McshTchInf000016:16499  "AgntBkcn.joining.PERMISSIONED" (idDbcPmsjoin) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.joining.PERMISSIONED"
-  McshTchInf000016:16481  "AgntBkcn.appending.PERMISSIONED.NO" (idDbcPmsapdN) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.appending.PERMISSIONED.NO"
-  McshTchInf000016:16463  "AgntBkcn.appending.PERMISSIONED" (idDbcPmsapd) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.appending.PERMISSIONED"
-  McshTchInf000016:16384  "AgntBkcn.Synereo-AMP" (idAmpnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.Synereo_AMP"
-  McshTchInf000016:15593  "AgntBkcn.IBM-Blockchain" (idDbcIbm) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.IBM_Blockchain"
-  McshTchInf000016:15431  "AgntBkcn.Dfinity-DFN" (idDfnnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.Dfinity_DFN"
-  McshTchInf000016:15279  "AgntBkcn.time.Namecoin-NMC" (idNmcnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Namecoin_NMC"
-  McshTchInf000016:15197  "AgntBkcn.time.Litecoin-LTC" (idLtcnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Litecoin_LTC"
-  McshTchInf000016:14624  "AgntBkcn.time.Ripple-XRP" (idXrpnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Ripple_XRP"
-  McshTchInf000016:14275  "AgntBkcn.time.Peercoin-PPC" (idPpcnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Peercoin_PPC"
-  McshTchInf000016:13832  "AgntBkcn.time.Nxt" (idNxtnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Nxt"
-  McshTchInf000016:13691  "AgntBkcn.time.Emercoin-EMC" (idEmcnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Emercoin_EMC"
-  McshTchInf000016:12549  "AgntBkcn.time.Dash-DASH" (idDashnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Dash_DASH"
-  McshTchInf000016:12028  "AgntBkcn.time.NEM-XEM" (idXemnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.NEM_XEM"
-  McshTchInf000016:11022  "AgntBkcn.time.BitShares2-BTS" (idBtsnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.BitShares2_BTS"
-  McshTchInf000016:10893  "AgntBkcn.time.PIVX" (idPivxnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.PIVX"
-  McshTchInf000016:9430  "AgntBkcn.time.Decred-DCR" (idDcrnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Decred_DCR"
-  McshTchInf000016:8993  "AgntBkcn.time.Waves" (idWavesnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Waves"
-  McshTchInf000016:8658  "AgntBkcn.time.Lisk-LSK" (idLsknet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Lisk_LSK"
-  McshTchInf000016:8548  "AgntBkcn.time.Zcash-ZEC" (idZecnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Zcash_ZEC"
-  McshTchInf000016:8508  "AgntBkcn.time.Qtum-QTUM" (idQtmnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Qtum_QTUM"
-  McshTchInf000016:8475  "AgntBkcn.time.Rootstock-RSK" (idRsknet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Rootstock_RSK"
-  McshTchInf000016:8391  "AgntBkcn.time.Tezos-XTZ" (idTzsnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Tezos_XTZ"
-  McshTchInf000016:7458  "AgntBkcn.time.BOScoin-BOS" (idBosnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.BOScoin_BOS"
-  McshTchInf000016:6439  "AgntBkcn.time.Aeternity-AE" (idAenet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Aeternity_AE"
-  McshTchInf000016:6390  "AgntBkcn.time.Cosmos-network" (idCmsnet) of file-concept "AgntBkcn": no name "McshEngl.AgntBkcn.time.Cosmos_network"
-  McshTchInf000016:4172  "29_Dapp of AgntBkcn" (idDbcapp) of file-concept "AgntBkcn": "Dapp" starts with a-capital letter
+MvrwMain10 FILE-CONCEPT ATTRIBUTE WARNINGS — 2026-11-12
+warnings: 696 in 122 pages (dirUcd: 2; the Unicode char sections "char.…" are skipped)
+formal name missing: 560 | title is neither x of M nor M.x: 102 | title ends of another name: 34
+rule: a top section of a page with main-name M is "x of M" + name M'x or "M.x" + name M.x (small first letter not checked)
 
 === McshHlth000013 (29)
   McshHlth000013:12028  "food.porridge-237" (idFoodHmn237) of file-concept "food": no name "McshEngl.food.porridge_237"
@@ -280,24 +167,6 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStnlaw000003:1187  "Eulaw.gap-033" (idLawEus033) of file-concept "Eulaw": no name "McshEngl.Eulaw.gap_033"
   McshStnlaw000003:1166  "Eulaw.aggregate-032" (idLawEus032) of file-concept "Eulaw": no name "McshEngl.Eulaw.aggregate_032"
 
-=== McshOgm000009 (16)
-  McshOgm000009:1511  "ogsmAnimal.fish-022" (idOgmAnml022) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.fish_022"
-  McshOgm000009:1491  "ogsmAnimal.horse-021" (idOgmAnml021) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.horse_021"
-  McshOgm000009:1467  "ogsmAnimal.dog-020" (idOgmAnml020) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.dog_020"
-  McshOgm000009:1443  "ogsmAnimal.cat-019" (idOgmAnml019) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.cat_019"
-  McshOgm000009:1422  "ogsmAnimal.oxygenNo-018" (idOgmAnml018) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.oxygenNo_018"
-  McshOgm000009:1333  "ogsmAnimal.hominid-017" (idOgmAnml017) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.hominid_017"
-  McshOgm000009:1316  "ogsmAnimal.primate-016" (idOgmAnml016) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.primate_016"
-  McshOgm000009:1299  "ogsmAnimal.carnivora-015" (idOgmAnml015) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.carnivora_015"
-  McshOgm000009:1275  "ogsmAnimal.bird-014" (idOgmAnml014) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.bird_014"
-  McshOgm000009:1258  "ogsmAnimal.reptile-013" (idOgmAnml013) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.reptile_013"
-  McshOgm000009:1215  "ogsmAnimal.mammal-012" (idOgmAnml012) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.mammal_012"
-  McshOgm000009:1201  "ogsmAnimal.quandrupedal-011" (idOgmAnml011) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.quandrupedal_011"
-  McshOgm000009:1180  "ogsmAnimal.bipedal-010" (idOgmAnml010) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.bipedal_010"
-  McshOgm000009:772  "ogsmAnimal.brainNo-023" (idOgmAnml023) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.brainNo_023"
-  McshOgm000009:740  "ogsmAnimal.brain-009" (idOgmAnml009) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.brain_009"
-  McshOgm000009:479  "MISC-attribute of ogsmAnimal" (idOgmAnmlmisc) of file-concept "ogsmAnimal": "MISC-attribute" starts with a-capital letter
-
 === McshHmn000002 (15)
   McshHmn000002:5787  "human.asylum-seaker-027" (idHmn027) of file-concept "human": no name "McshEngl.human.asylum_seaker_027"
   McshHmn000002:5774  "human.criminalNo-026" (idHmn026) of file-concept "human": no name "McshEngl.human.criminalNo_026"
@@ -315,21 +184,22 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshHmn000002:5233  "human.individual-003" (idHmn003) of file-concept "human": no name "McshEngl.human.individual_003"
   McshHmn000002:5216  "human.set-006" (idHmn006) of file-concept "human": no name "McshEngl.human.set_006"
 
-=== McshTchInf000012 (14)
-  McshTchInf000012:10327  "Jsndtool.runtime" (idLJsndrtm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:10256  "Jsndtool.REPL" (idLJsndrpl) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:9229  "Jsndtool.npm" (idLJsndnpm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:8507  "relation-to--browser-JavaScript of Jsndlago" (idLJsndljb) of file-concept "Jsndlago": no name "McshEngl.Jsndlago'relation_to_browser_JavaScript"
-  McshTchInf000012:5136  "Jsndalgo.PACKAGE" (idLJsndpkg) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:4540  "Jsndalgo.PROGRAM" (idLJsndpgm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:4516  "Jsndalgo.LIBRARY" (idLJsndlbr) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:3895  "algo'SENTENCE" (idLJsndstc) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:3881  "algo'PHRASE" (idLJsndfrs) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:3190  "algo'API" (idLJsndapi) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:397  "algo'sut.MODULE" (idLJsndm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:256  "algo'SEMANTIC-UNIT" (idLJsndsut) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:243  "algo'WORD" (idLJsndwrd) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
-  McshTchInf000012:228  "algo'UNIT" (idLJsndunt) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+=== McshOgm000009 (15)
+  McshOgm000009:1511  "ogsmAnimal.fish-022" (idOgmAnml022) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.fish_022"
+  McshOgm000009:1491  "ogsmAnimal.horse-021" (idOgmAnml021) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.horse_021"
+  McshOgm000009:1467  "ogsmAnimal.dog-020" (idOgmAnml020) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.dog_020"
+  McshOgm000009:1443  "ogsmAnimal.cat-019" (idOgmAnml019) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.cat_019"
+  McshOgm000009:1422  "ogsmAnimal.oxygenNo-018" (idOgmAnml018) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.oxygenNo_018"
+  McshOgm000009:1333  "ogsmAnimal.hominid-017" (idOgmAnml017) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.hominid_017"
+  McshOgm000009:1316  "ogsmAnimal.primate-016" (idOgmAnml016) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.primate_016"
+  McshOgm000009:1299  "ogsmAnimal.carnivora-015" (idOgmAnml015) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.carnivora_015"
+  McshOgm000009:1275  "ogsmAnimal.bird-014" (idOgmAnml014) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.bird_014"
+  McshOgm000009:1258  "ogsmAnimal.reptile-013" (idOgmAnml013) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.reptile_013"
+  McshOgm000009:1215  "ogsmAnimal.mammal-012" (idOgmAnml012) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.mammal_012"
+  McshOgm000009:1201  "ogsmAnimal.quandrupedal-011" (idOgmAnml011) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.quandrupedal_011"
+  McshOgm000009:1180  "ogsmAnimal.bipedal-010" (idOgmAnml010) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.bipedal_010"
+  McshOgm000009:772  "ogsmAnimal.brainNo-023" (idOgmAnml023) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.brainNo_023"
+  McshOgm000009:740  "ogsmAnimal.brain-009" (idOgmAnml009) of file-concept "ogsmAnimal": no name "McshEngl.ogsmAnimal.brain_009"
 
 === McshStn000016 (14)
   McshStn000016:792  "OgznIntl.SCO!=Shanghai-Cooperation-Organisation" (idOgznIntl020) of file-concept "OgznIntl": no name "McshEngl.OgznIntl.SCO!=Shanghai_Cooperation_Organisation"
@@ -347,35 +217,37 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStn000016:341  "OgznIntl.OECD-" (idOgznIntl001) of file-concept "OgznIntl": no name "McshEngl.OgznIntl.OECD_"
   McshStn000016:194  "OgznIntl.Council-of-Europe-003-" (idOgznIntl003) of file-concept "OgznIntl": no name "McshEngl.OgznIntl.Council_of_Europe_003_"
 
-=== McshHlth000002 (13)
-  McshHlth000002:13159  "20_SystOgans.immune of bodyHumn" (idSysOgnHmn013) of file-concept "bodyHumn": "SystOgans.immune" starts with a-capital letter; no name "McshEngl.bodyHumn'SystOgans.immune"
-  McshHlth000002:13104  "19_SystOgans.neuroendocrine of bodyHumn" (idSysOgnHmn010) of file-concept "bodyHumn": "SystOgans.neuroendocrine" starts with a-capital letter; no name "McshEngl.bodyHumn'SystOgans.neuroendocrine"
-  McshHlth000002:13034  "Ognssyst.excretory" (idSysOgnHmn012) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:12717  "Ognssyst.reproductive.female" (idSysOgnHmn015) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:12404  "Ognssyst.reproductive.male" (idSysOgnHmn016) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:12234  "Ognssyst.009-reproductive" (idSysOgnHmn009) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:11297  "Ognssyst.008-urinary" (idSysOgnHmn008) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:9885  "Ognssyst.007-digestive" (idSysOgnHmn007) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:8986  "Ognssyst.006-respiratory" (idSysOgnHmn006) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:8884  "Ognssyst.005-endocrine" (idSysOgnHmn005) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:8351  "Ognssyst.004-integumentary" (idSysOgnHmn004) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:6589  "Ognssyst.002-circulatory" (idSysOgnHmn002) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
-  McshHlth000002:1118  "06_SystOrgans of bodyHumn" (idSysOgnHmn) of file-concept "bodyHumn": "SystOrgans" starts with a-capital letter
+=== McshTchInf000012 (14)
+  McshTchInf000012:10327  "Jsndtool.runtime" (idLJsndrtm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:10256  "Jsndtool.REPL" (idLJsndrpl) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:9229  "Jsndtool.npm" (idLJsndnpm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:8507  "relation-to--browser-JavaScript of Jsndlago" (idLJsndljb) of file-concept "Jsndlago": no name "McshEngl.Jsndlago'relation_to_browser_JavaScript"
+  McshTchInf000012:5136  "Jsndalgo.PACKAGE" (idLJsndpkg) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:4540  "Jsndalgo.PROGRAM" (idLJsndpgm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:4516  "Jsndalgo.LIBRARY" (idLJsndlbr) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:3895  "algo'SENTENCE" (idLJsndstc) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:3881  "algo'PHRASE" (idLJsndfrs) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:3190  "algo'API" (idLJsndapi) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:397  "algo'sut.MODULE" (idLJsndm) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:256  "algo'SEMANTIC-UNIT" (idLJsndsut) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:243  "algo'WORD" (idLJsndwrd) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
+  McshTchInf000012:228  "algo'UNIT" (idLJsndunt) of file-concept "Jsndlago": title is not "x of Jsndlago" (attribute) or "Jsndlago.x" (specific)
 
-=== McshTchInf000015 (13)
-  McshTchInf000015:14625  "Algonet.3rd-GENERATION" (idAlgntGen3) of file-concept "Algonet": no name "McshEngl.Algonet.3rd_GENERATION"
-  McshTchInf000015:14586  "Algonet.MULTI-CHAIN" (idAlgntMltc) of file-concept "Algonet": no name "McshEngl.Algonet.MULTI_CHAIN"
-  McshTchInf000015:14556  "Algonet.CURRENCY.NO" (idDcnetMoeN) of file-concept "Algonet": no name "McshEngl.Algonet.CURRENCY.NO"
-  McshTchInf000015:14475  "Algonet.CURRENCY" (idDcnetMoe) of file-concept "Algonet": no name "McshEngl.Algonet.CURRENCY"
-  McshTchInf000015:14412  "Algonet.DAGCHAIN" (idAlgntnDag) of file-concept "Algonet": no name "McshEngl.Algonet.DAGCHAIN"
-  McshTchInf000015:14381  "Algonet.appending-joining.PUBLIC.NO" (idAlgntnPblN) of file-concept "Algonet": no name "McshEngl.Algonet.appending_joining.PUBLIC.NO"
-  McshTchInf000015:14348  "Algonet.appending-joining.PUBLIC" (idAlgntnPbl) of file-concept "Algonet": no name "McshEngl.Algonet.appending_joining.PUBLIC"
-  McshTchInf000015:14322  "Algonet.joining.PERMISSIONED.NO" (idAlgntnPmsusrN) of file-concept "Algonet": no name "McshEngl.Algonet.joining.PERMISSIONED.NO"
-  McshTchInf000015:14292  "Algonet.joining.PERMISSIONED" (idAlgntnPmsusr) of file-concept "Algonet": no name "McshEngl.Algonet.joining.PERMISSIONED"
-  McshTchInf000015:14267  "Algonet.appending.PERMISSIONED.NO" (idAlgntnPmsapdN) of file-concept "Algonet": no name "McshEngl.Algonet.appending.PERMISSIONED.NO"
-  McshTchInf000015:14240  "Algonet.appending.PERMISSIONED" (idAlgntnPmsapd) of file-concept "Algonet": no name "McshEngl.Algonet.appending.PERMISSIONED"
-  McshTchInf000015:14224  "Algonet.control.CENTRAL.NO" (idDcnetcntlzdN) of file-concept "Algonet": no name "McshEngl.Algonet.control.CENTRAL.NO"
-  McshTchInf000015:14136  "Algonet.control.CENTRAL" (idDcnetcntlzd) of file-concept "Algonet": no name "McshEngl.Algonet.control.CENTRAL"
+=== McshTchInf000015 (14)
+  McshTchInf000015:14630  "Algonet.3rd-GENERATION" (idAlgntGen3) of file-concept "Algonet": no name "McshEngl.Algonet.3rd_GENERATION"
+  McshTchInf000015:14591  "Algonet.MULTI-CHAIN" (idAlgntMltc) of file-concept "Algonet": no name "McshEngl.Algonet.MULTI_CHAIN"
+  McshTchInf000015:14561  "Algonet.CURRENCY.NO" (idDcnetMoeN) of file-concept "Algonet": no name "McshEngl.Algonet.CURRENCY.NO"
+  McshTchInf000015:14480  "Algonet.CURRENCY" (idDcnetMoe) of file-concept "Algonet": no name "McshEngl.Algonet.CURRENCY"
+  McshTchInf000015:14417  "Algonet.DAGCHAIN" (idAlgntnDag) of file-concept "Algonet": no name "McshEngl.Algonet.DAGCHAIN"
+  McshTchInf000015:14386  "Algonet.appending-joining.PUBLIC.NO" (idAlgntnPblN) of file-concept "Algonet": no name "McshEngl.Algonet.appending_joining.PUBLIC.NO"
+  McshTchInf000015:14353  "Algonet.appending-joining.PUBLIC" (idAlgntnPbl) of file-concept "Algonet": no name "McshEngl.Algonet.appending_joining.PUBLIC"
+  McshTchInf000015:14327  "Algonet.joining.PERMISSIONED.NO" (idAlgntnPmsusrN) of file-concept "Algonet": no name "McshEngl.Algonet.joining.PERMISSIONED.NO"
+  McshTchInf000015:14297  "Algonet.joining.PERMISSIONED" (idAlgntnPmsusr) of file-concept "Algonet": no name "McshEngl.Algonet.joining.PERMISSIONED"
+  McshTchInf000015:14272  "Algonet.appending.PERMISSIONED.NO" (idAlgntnPmsapdN) of file-concept "Algonet": no name "McshEngl.Algonet.appending.PERMISSIONED.NO"
+  McshTchInf000015:14245  "Algonet.appending.PERMISSIONED" (idAlgntnPmsapd) of file-concept "Algonet": no name "McshEngl.Algonet.appending.PERMISSIONED"
+  McshTchInf000015:14229  "Algonet.control.CENTRAL.NO" (idDcnetcntlzdN) of file-concept "Algonet": no name "McshEngl.Algonet.control.CENTRAL.NO"
+  McshTchInf000015:14141  "Algonet.control.CENTRAL" (idDcnetcntlzd) of file-concept "Algonet": no name "McshEngl.Algonet.control.CENTRAL"
+  McshTchInf000015:7259  "22_Dapp of Algonet" (idDapp) of file-concept "Algonet": no name "McshEngl.Algonet'Dapp"
 
 === McshTchInf000002 (13)
   McshTchInf000002:1184  "techInfo.phone-023" (idTchInf023) of file-concept "techInfo": no name "McshEngl.techInfo.phone_023"
@@ -392,32 +264,19 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshTchInf000002:768  "techInfo.character-012" (idTchInf012) of file-concept "techInfo": no name "McshEngl.techInfo.character_012"
   McshTchInf000002:744  "techInfo.data-001" (idTchInf001) of file-concept "techInfo": no name "McshEngl.techInfo.data_001"
 
-=== McshTchInf000010 (12)
-  McshTchInf000010:7529  "Jsgnlago.desktop-JavaScript" (idLJsdt) of file-concept "Jsgnlago": no name "McshEngl.Jsgnlago.desktop_JavaScript"
-  McshTchInf000010:6330  "Jsalgo.PACKAGE of Jsgnlago" (idLJsgnpkg) of file-concept "Jsgnlago": "Jsalgo.PACKAGE" starts with a-capital letter
-  McshTchInf000010:6262  "Jsalgo.PROGRAM of Jsgnlago" (idLJsgnpgm) of file-concept "Jsgnlago": "Jsalgo.PROGRAM" starts with a-capital letter
-  McshTchInf000010:6146  "Jsalgo.LIBRARY of Jsgnlago" (idLJsgnlbr) of file-concept "Jsgnlago": "Jsalgo.LIBRARY" starts with a-capital letter
-  McshTchInf000010:5466  "Jsalgo'ROOT of Jsgnlago" (idLJsgnrot) of file-concept "Jsgnlago": "Jsalgo'ROOT" starts with a-capital letter
-  McshTchInf000010:5452  "Jsalgo'SECTION of Jsgnlago" (idLJsgnscn) of file-concept "Jsgnlago": "Jsalgo'SECTION" starts with a-capital letter
-  McshTchInf000010:5038  "Jsalgo'SENTENCE of Jsgnlago" (idLJsgnstc) of file-concept "Jsgnlago": "Jsalgo'SENTENCE" starts with a-capital letter
-  McshTchInf000010:5012  "Jsalgo'PHRASE of Jsgnlago" (idLJsgnfrs) of file-concept "Jsgnlago": "Jsalgo'PHRASE" starts with a-capital letter
-  McshTchInf000010:4105  "Jsalgo'API of Jsgnlago" (idLJsgnapi) of file-concept "Jsgnlago": "Jsalgo'API" starts with a-capital letter
-  McshTchInf000010:285  "Jsalgo'SEMANTIC-UNIT of Jsgnlago" (idLJsgnsut) of file-concept "Jsgnlago": "Jsalgo'SEMANTIC-UNIT" starts with a-capital letter
-  McshTchInf000010:270  "Jsalgo'WORD of Jsgnlago" (idLJsgnwrd) of file-concept "Jsgnlago": "Jsalgo'WORD" starts with a-capital letter
-  McshTchInf000010:87  "09_Jsalgo'UNIT of Jsgnlago" (idLJsgnunt) of file-concept "Jsgnlago": "Jsalgo'UNIT" starts with a-capital letter
-
-=== McshTchInf000020 (11)
-  McshTchInf000020:3255  "evoluting of Chrono.tech" (idChbevog) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'evoluting"
-  McshTchInf000020:3210  "info-resource of Chrono.tech" (idChbirsc) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'info_resource"
-  McshTchInf000020:3145  "organization of Chrono.tech" (idChbogn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'organization"
-  McshTchInf000020:3100  "05_human of Chrono.tech" (idChbhmn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'human"
-  McshTchInf000020:2387  "LaborX-Dapp of Chrono.tech" (idChblrx) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; "LaborX-Dapp" starts with a-capital letter; no name "McshEngl.ChronoTech'LaborX_Dapp"
-  McshTchInf000020:2347  "TimeX-Dapp of Chrono.tech" (idChbtmx) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; "TimeX-Dapp" starts with a-capital letter; no name "McshEngl.ChronoTech'TimeX_Dapp"
-  McshTchInf000020:2316  "ChronoWallet-Dapp of Chrono.tech" (idChbwlt) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; "ChronoWallet-Dapp" starts with a-capital letter; no name "McshEngl.ChronoTech'ChronoWallet_Dapp"
-  McshTchInf000020:1953  "exchange-value-unit of Chrono.tech" (idChbevu) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'exchange_value_unit"
-  McshTchInf000020:1314  "program of Chrono.tech" (idChbpgm) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'program"
-  McshTchInf000020:1289  "blockchain of Chrono.tech" (idChbbcn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'blockchain"
-  McshTchInf000020:82  "protocol of Chrono.tech" (idChbprl) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'protocol"
+=== McshHlth000002 (12)
+  McshHlth000002:13159  "20_SystOgans.immune of bodyHumn" (idSysOgnHmn013) of file-concept "bodyHumn": no name "McshEngl.bodyHumn'SystOgans.immune"
+  McshHlth000002:13104  "19_SystOgans.neuroendocrine of bodyHumn" (idSysOgnHmn010) of file-concept "bodyHumn": no name "McshEngl.bodyHumn'SystOgans.neuroendocrine"
+  McshHlth000002:13034  "Ognssyst.excretory" (idSysOgnHmn012) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:12717  "Ognssyst.reproductive.female" (idSysOgnHmn015) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:12404  "Ognssyst.reproductive.male" (idSysOgnHmn016) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:12234  "Ognssyst.009-reproductive" (idSysOgnHmn009) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:11297  "Ognssyst.008-urinary" (idSysOgnHmn008) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:9885  "Ognssyst.007-digestive" (idSysOgnHmn007) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:8986  "Ognssyst.006-respiratory" (idSysOgnHmn006) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:8884  "Ognssyst.005-endocrine" (idSysOgnHmn005) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:8351  "Ognssyst.004-integumentary" (idSysOgnHmn004) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
+  McshHlth000002:6589  "Ognssyst.002-circulatory" (idSysOgnHmn002) of file-concept "bodyHumn": title is not "x of bodyHumn" (attribute) or "bodyHumn.x" (specific)
 
 === McshHlth000014 (11)
   McshHlth000014:2661  "medication.ketamin-043" (idMedHmn043) of file-concept "medication": no name "McshEngl.medication.ketamin_043"
@@ -458,29 +317,18 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStn000029:276  "sfrFin.serviceNo-002" (idSfrFin002) of file-concept "sfrFin": no name "McshEngl.sfrFin.serviceNo_002"
   McshStn000029:228  "sfrFin.service-001" (idSfrFin001) of file-concept "sfrFin": no name "McshEngl.sfrFin.service_001"
 
-=== McshLag000034 (10)
-  McshLag000034:7141  "Bcmslago.Chakavian-Čakavian" (idLBcmsChak) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Chakavian_Čakavian"
-  McshLag000034:7079  "Bcmslago.Shtokavian-Štokavian" (idLBcmsShtk) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Shtokavian_Štokavian"
-  McshLag000034:7037  "Bcmslago.SlavoMolisano-" (idLSmls) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.SlavoMolisano_"
-  McshLag000034:6064  "Bcmslago.Serbian-" (idLSsrp) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Serbian_"
-  McshLag000034:5045  "Bcmslago.Montenegrin-" (idLScnr) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Montenegrin_"
-  McshLag000034:4533  "Bcmslago.Croatian-" (idLShrv) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Croatian_"
-  McshLag000034:3555  "Bcmslago.Bosnian-" (idLSbos) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Bosnian_"
-  McshLag000034:2528  "30_input3- of Bcmslago" (idLBcmsipt3) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input3_"
-  McshLag000034:2509  "29_input2- of Bcmslago" (idLBcmsipt2) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input2_"
-  McshLag000034:2489  "28_input1- of Bcmslago" (idLBcmsipt1) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input1_"
-
-=== McshTchInf000014 (10)
-  McshTchInf000014:6376  "Wasm.EVOLUTING" (idLWasmEvgFT) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:6357  "Wasm.BINARY-FORMAT" (idLWasmBnr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:6259  "Wasm.TEXT-FORMAT" (idLWasmTxt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:6238  "Wasm.ABSTRACT-FORMAT" (idLWasmAbt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:5812  "tool.RUNTIME-ENVIRONMENT" (idLWasmtoolRte) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:5237  "algo.BINARY" (idLWasmalgBnr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:5216  "algo.TEXT" (idLWasmalgTxt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:5194  "algo.LIBRARY" (idLWasmalgLbr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:4643  "algo.PROGRAM" (idLWasmpgm) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
-  McshTchInf000014:1542  "algo-sentence of Wasmlago" (idLWasmstc) of file-concept "Wasmlago": no name "McshEngl.Wasmlago'algo_sentence"
+=== McshTchInf000020 (11)
+  McshTchInf000020:3255  "evoluting of Chrono.tech" (idChbevog) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'evoluting"
+  McshTchInf000020:3210  "info-resource of Chrono.tech" (idChbirsc) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'info_resource"
+  McshTchInf000020:3145  "organization of Chrono.tech" (idChbogn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'organization"
+  McshTchInf000020:3100  "05_human of Chrono.tech" (idChbhmn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'human"
+  McshTchInf000020:2387  "LaborX-Dapp of Chrono.tech" (idChblrx) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'LaborX_Dapp"
+  McshTchInf000020:2347  "TimeX-Dapp of Chrono.tech" (idChbtmx) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'TimeX_Dapp"
+  McshTchInf000020:2316  "ChronoWallet-Dapp of Chrono.tech" (idChbwlt) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'ChronoWallet_Dapp"
+  McshTchInf000020:1953  "exchange-value-unit of Chrono.tech" (idChbevu) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'exchange_value_unit"
+  McshTchInf000020:1314  "program of Chrono.tech" (idChbpgm) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'program"
+  McshTchInf000020:1289  "blockchain of Chrono.tech" (idChbbcn) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'blockchain"
+  McshTchInf000020:82  "protocol of Chrono.tech" (idChbprl) of file-concept "ChronoTech": title ends "of Chrono.tech", not "of ChronoTech"; no name "McshEngl.ChronoTech'protocol"
 
 === McshCor000020 (10)
   McshCor000020:484  "DongProving.zero-knowledge-proof" (idRfrtgPrvgZkp) of file-concept "DongReferenting": title is not "x of DongReferenting" (attribute) or "DongReferenting.x" (specific)
@@ -506,17 +354,29 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshLag000002:277  "infoBrainBio.referent.true-strong" (idInfBrnBioTrsg) of file-concept "infoBrainBio": no name "McshEngl.infoBrainBio.referent.true_strong"
   McshLag000002:261  "infoBrainBio.referent.true" (idInfBrnBioTrue) of file-concept "infoBrainBio": no name "McshEngl.infoBrainBio.referent.true"
 
-=== McshHlth000018 (10)
-  McshHlth000018:515  "DongExercising.tennis-005" (idExcsD005) of file-concept "DongExercising": no name "McshEngl.DongExercising.tennis_005"
-  McshHlth000018:499  "DongExercising.jogging-004" (idExcsD004) of file-concept "DongExercising": no name "McshEngl.DongExercising.jogging_004"
-  McshHlth000018:481  "DongExercising.hiking-009" (idExcsD009) of file-concept "DongExercising": no name "McshEngl.DongExercising.hiking_009"
-  McshHlth000018:465  "DongExercising.endurance-003" (idExcsD003) of file-concept "DongExercising": no name "McshEngl.DongExercising.endurance_003"
-  McshHlth000018:452  "DongExercising.cycling-008" (idExcsD008) of file-concept "DongExercising": no name "McshEngl.DongExercising.cycling_008"
-  McshHlth000018:429  "DongExercising.anaerobic-002" (idExcsD002) of file-concept "DongExercising": no name "McshEngl.DongExercising.anaerobic_002"
-  McshHlth000018:383  "DongExercising.competitiveNo-007" (idExcsD007) of file-concept "DongExercising": no name "McshEngl.DongExercising.competitiveNo_007"
-  McshHlth000018:234  "DongExercising.competitive-006" (idExcsD006) of file-concept "DongExercising": no name "McshEngl.DongExercising.competitive_006"
-  McshHlth000018:190  "DongExercising.aerobic-001" (idExcsD001) of file-concept "DongExercising": no name "McshEngl.DongExercising.aerobic_001"
-  McshHlth000018:66  "VO2max of DongExercising" (idExcsDatt001) of file-concept "DongExercising": "VO2max" starts with a-capital letter
+=== McshLag000034 (10)
+  McshLag000034:7141  "Bcmslago.Chakavian-Čakavian" (idLBcmsChak) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Chakavian_Čakavian"
+  McshLag000034:7079  "Bcmslago.Shtokavian-Štokavian" (idLBcmsShtk) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Shtokavian_Štokavian"
+  McshLag000034:7037  "Bcmslago.SlavoMolisano-" (idLSmls) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.SlavoMolisano_"
+  McshLag000034:6064  "Bcmslago.Serbian-" (idLSsrp) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Serbian_"
+  McshLag000034:5045  "Bcmslago.Montenegrin-" (idLScnr) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Montenegrin_"
+  McshLag000034:4533  "Bcmslago.Croatian-" (idLShrv) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Croatian_"
+  McshLag000034:3555  "Bcmslago.Bosnian-" (idLSbos) of file-concept "Bcmslago": no name "McshEngl.Bcmslago.Bosnian_"
+  McshLag000034:2528  "30_input3- of Bcmslago" (idLBcmsipt3) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input3_"
+  McshLag000034:2509  "29_input2- of Bcmslago" (idLBcmsipt2) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input2_"
+  McshLag000034:2489  "28_input1- of Bcmslago" (idLBcmsipt1) of file-concept "Bcmslago": no name "McshEngl.Bcmslago'input1_"
+
+=== McshTchInf000014 (10)
+  McshTchInf000014:6376  "Wasm.EVOLUTING" (idLWasmEvgFT) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:6357  "Wasm.BINARY-FORMAT" (idLWasmBnr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:6259  "Wasm.TEXT-FORMAT" (idLWasmTxt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:6238  "Wasm.ABSTRACT-FORMAT" (idLWasmAbt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:5812  "tool.RUNTIME-ENVIRONMENT" (idLWasmtoolRte) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:5237  "algo.BINARY" (idLWasmalgBnr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:5216  "algo.TEXT" (idLWasmalgTxt) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:5194  "algo.LIBRARY" (idLWasmalgLbr) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:4643  "algo.PROGRAM" (idLWasmpgm) of file-concept "Wasmlago": title is not "x of Wasmlago" (attribute) or "Wasmlago.x" (specific)
+  McshTchInf000014:1542  "algo-sentence of Wasmlago" (idLWasmstc) of file-concept "Wasmlago": no name "McshEngl.Wasmlago'algo_sentence"
 
 === McshCor000018 (9)
   McshCor000018:5084  "FctgBraining.FctgCreating-009" (idBrngHmnFct009) of file-concept "FctgBraining": no name "McshEngl.FctgBraining.FctgCreating_009"
@@ -527,7 +387,18 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshCor000018:1093  "FctgBraining.FctgThinking-002" (idBrngHmnFct002) of file-concept "FctgBraining": no name "McshEngl.FctgBraining.FctgThinking_002"
   McshCor000018:1055  "FctgBraining.FctgMindingNo-008" (idBrngHmnFct008) of file-concept "FctgBraining": no name "McshEngl.FctgBraining.FctgMindingNo_008"
   McshCor000018:979  "FctgBraining.FctgMinding-007" (idBrngHmnFct007) of file-concept "FctgBraining": no name "McshEngl.FctgBraining.FctgMinding_007"
-  McshCor000018:172  "11_FctgBraining.FctgSensing-003 of bodyHumn" (idBrngHmnFct003) of file-concept "FctgBraining": title ends "of bodyHumn", not "of FctgBraining"; "FctgBraining.FctgSensing-003" starts with a-capital letter; no name "McshEngl.FctgBraining'FctgBraining.FctgSensing_003"
+  McshCor000018:172  "11_FctgBraining.FctgSensing-003 of bodyHumn" (idBrngHmnFct003) of file-concept "FctgBraining": title ends "of bodyHumn", not "of FctgBraining"; no name "McshEngl.FctgBraining'FctgBraining.FctgSensing_003"
+
+=== McshHlth000018 (9)
+  McshHlth000018:515  "DongExercising.tennis-005" (idExcsD005) of file-concept "DongExercising": no name "McshEngl.DongExercising.tennis_005"
+  McshHlth000018:499  "DongExercising.jogging-004" (idExcsD004) of file-concept "DongExercising": no name "McshEngl.DongExercising.jogging_004"
+  McshHlth000018:481  "DongExercising.hiking-009" (idExcsD009) of file-concept "DongExercising": no name "McshEngl.DongExercising.hiking_009"
+  McshHlth000018:465  "DongExercising.endurance-003" (idExcsD003) of file-concept "DongExercising": no name "McshEngl.DongExercising.endurance_003"
+  McshHlth000018:452  "DongExercising.cycling-008" (idExcsD008) of file-concept "DongExercising": no name "McshEngl.DongExercising.cycling_008"
+  McshHlth000018:429  "DongExercising.anaerobic-002" (idExcsD002) of file-concept "DongExercising": no name "McshEngl.DongExercising.anaerobic_002"
+  McshHlth000018:383  "DongExercising.competitiveNo-007" (idExcsD007) of file-concept "DongExercising": no name "McshEngl.DongExercising.competitiveNo_007"
+  McshHlth000018:234  "DongExercising.competitive-006" (idExcsD006) of file-concept "DongExercising": no name "McshEngl.DongExercising.competitive_006"
+  McshHlth000018:190  "DongExercising.aerobic-001" (idExcsD001) of file-concept "DongExercising": no name "McshEngl.DongExercising.aerobic_001"
 
 === McshOgm000003 (9)
   McshOgm000003:1923  "Ogsm.society-037" (idOgm037) of file-concept "Ogsm": no name "McshEngl.Ogsm.society_037"
@@ -540,16 +411,16 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshOgm000003:1559  "Ogsm.time.present-017" (idOgm017) of file-concept "Ogsm": no name "McshEngl.Ogsm.time.present_017"
   McshOgm000003:1502  "OgsmMicro.strain" (idOgm013Strn) of file-concept "Ogsm": title is not "x of Ogsm" (attribute) or "Ogsm.x" (specific)
 
-=== McshTchInf000032 (9)
-  McshTchInf000032:1102  "Github.com" (idGithubcom) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:1082  "collaborating Gitrepo" (idGitrepclbrg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:1068  "navigating Gitrepo" (idGitrepnavg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:1004  "informing Gitrepo" (idGitrepinfg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:973  "branching-merging Gitrepo" (idGitrepbrcmrgg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:889  "creating Gitrepo" (idGitrepcrtg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:871  "Gitrepoprgm.GitHub_desktop" (idGithubdkt) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:102  "Gitrepoprgm.Git" (idGit) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
-  McshTchInf000032:67  "Git-project of Gitrepo" (idGitreppjt) of file-concept "Gitrepo": "Git-project" starts with a-capital letter
+=== McshStn000005 (9)
+  McshStn000005:597  "groupOgsm.pack-009" (idGrpOgm009) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.pack_009"
+  McshStn000005:577  "groupOgsm.herd-008" (idGrpOgm008) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.herd_008"
+  McshStn000005:559  "groupOgsm.flock-007" (idGrpOgm007) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.flock_007"
+  McshStn000005:547  "groupOgsm.sameNo-species-006" (idGrpOgm006) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.sameNo_species_006"
+  McshStn000005:535  "groupOgsm.same-species-005" (idGrpOgm005) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.same_species_005"
+  McshStn000005:522  "groupOgsm.societyNo-004" (idGrpOgm004) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.societyNo_004"
+  McshStn000005:503  "groupOgsm.society-003" (idGrpOgm003) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.society_003"
+  McshStn000005:490  "groupOgsm.humanNo-002" (idGrpOgm002) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.humanNo_002"
+  McshStn000005:316  "groupOgsm.human-001" (idGrpOgm001) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.human_001"
 
 === McshStn000011 (9)
   McshStn000011:2434  "Wrkr.forwhom.employer" (idWkr030) of file-concept "Wrkr": no name "McshEngl.Wrkr.forwhom.employer"
@@ -573,27 +444,6 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshTch000003:272  "machine.air-conditioner-008" (idMchn008) of file-concept "machine": no name "McshEngl.machine.air_conditioner_008"
   McshTch000003:249  "machine.refrigerator-007" (idMchn007) of file-concept "machine": no name "McshEngl.machine.refrigerator_007"
 
-=== McshStn000005 (9)
-  McshStn000005:597  "groupOgsm.pack-009" (idGrpOgm009) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.pack_009"
-  McshStn000005:577  "groupOgsm.herd-008" (idGrpOgm008) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.herd_008"
-  McshStn000005:559  "groupOgsm.flock-007" (idGrpOgm007) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.flock_007"
-  McshStn000005:547  "groupOgsm.sameNo-species-006" (idGrpOgm006) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.sameNo_species_006"
-  McshStn000005:535  "groupOgsm.same-species-005" (idGrpOgm005) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.same_species_005"
-  McshStn000005:522  "groupOgsm.societyNo-004" (idGrpOgm004) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.societyNo_004"
-  McshStn000005:503  "groupOgsm.society-003" (idGrpOgm003) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.society_003"
-  McshStn000005:490  "groupOgsm.humanNo-002" (idGrpOgm002) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.humanNo_002"
-  McshStn000005:316  "groupOgsm.human-001" (idGrpOgm001) of file-concept "groupOgsm": no name "McshEngl.groupOgsm.human_001"
-
-=== McshTchInf000021 (8)
-  McshTchInf000021:3552  "Agnteos.SISTER-CHAIN" (idEosSrcn) of file-concept "Agnteos": no name "McshEngl.Agnteos.SISTER_CHAIN"
-  McshTchInf000021:3538  "Agnteos.SIDECHAIN" (idEosSdcn) of file-concept "Agnteos": no name "McshEngl.Agnteos.SIDECHAIN"
-  McshTchInf000021:3503  "Agnteos.PUBLIC-TESTNET" (idEosTtntPlc) of file-concept "Agnteos": no name "McshEngl.Agnteos.PUBLIC_TESTNET"
-  McshTchInf000021:3483  "Agnteos.MAINNET" (idEosMnet) of file-concept "Agnteos": no name "McshEngl.Agnteos.MAINNET"
-  McshTchInf000021:917  "Dasset of Agnteos" (idEosevuFT) of file-concept "Agnteos": "Dasset" starts with a-capital letter
-  McshTchInf000021:404  "NET|bandwidth-resource of Agnteos" (idEosbwth) of file-concept "Agnteos": "NET|bandwidth-resource" starts with a-capital letter
-  McshTchInf000021:380  "CPU-resource of Agnteos" (idEosCpu) of file-concept "Agnteos": "CPU-resource" starts with a-capital letter
-  McshTchInf000021:330  "RAM-resource of Agnteos" (idEosRam) of file-concept "Agnteos": "RAM-resource" starts with a-capital letter
-
 === McshStn000010 (8)
   McshStn000010:3548  "satisfier.furniture-047" (idSfrHmn047) of file-concept "satisfier": no name "McshEngl.satisfier.furniture_047"
   McshStn000010:3508  "satisfier.transport-042" (idSfrHmn042) of file-concept "satisfier": no name "McshEngl.satisfier.transport_042"
@@ -614,23 +464,15 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStnlaw000002:2334  "law.source.codified-001" (idLaw001) of file-concept "law": no name "McshEngl.law.source.codified_001"
   McshStnlaw000002:2244  "law.aggregate-006" (idLaw006) of file-concept "law": no name "McshEngl.law.aggregate_006"
 
-=== McshTchInf000007 (7)
-  McshTchInf000007:2206  "Cnptlago.XML-010" (idLxmlg) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.XML_010"
-  McshTchInf000007:1576  "Cnptlago.frame-037" (idLCcptt037) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.frame_037"
-  McshTchInf000007:1427  "Cnptlago.visual-034" (idLCcptt034) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.visual_034"
-  McshTchInf000007:1411  "Cnptlago.textual-033" (idLCcptt033) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.textual_033"
-  McshTchInf000007:1389  "Cnptlago.structure-and-doing-003" (idLCcptt003) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.structure_and_doing_003"
-  McshTchInf000007:1369  "Cnptlago.doing-002" (idLCcptt002) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.doing_002"
-  McshTchInf000007:1347  "Cnptlago.structure-001" (idLCcptt001) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.structure_001"
-
-=== McshLag000039 (7)
-  McshLag000039:1835  "Germanic-languages of Ide0lago" (idLIde0Gmnc) of file-concept "Ide0lago": "Germanic-languages" starts with a-capital letter
-  McshLag000039:1799  "Romance-languages of Ide0lago" (idLIde0Rmnc) of file-concept "Ide0lago": "Romance-languages" starts with a-capital letter
-  McshLag000039:1781  "Hittite-language of Ide0lago" (idLIde0httt) of file-concept "Ide0lago": "Hittite-language" starts with a-capital letter
-  McshLag000039:1523  "ProtoIndoEuropean of Ide0lago" (idLIdep) of file-concept "Ide0lago": "ProtoIndoEuropean" starts with a-capital letter
-  McshLag000039:1189  "30_input3- of Ide0lago" (idLIde0ipt3) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input3_"
-  McshLag000039:1170  "29_input2- of Ide0lago" (idLIde0ipt2) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input2_"
-  McshLag000039:1150  "28_input1- of Ide0lago" (idLIde0ipt1) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input1_"
+=== McshTchInf000032 (8)
+  McshTchInf000032:1102  "Github.com" (idGithubcom) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:1082  "collaborating Gitrepo" (idGitrepclbrg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:1068  "navigating Gitrepo" (idGitrepnavg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:1004  "informing Gitrepo" (idGitrepinfg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:973  "branching-merging Gitrepo" (idGitrepbrcmrgg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:889  "creating Gitrepo" (idGitrepcrtg) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:871  "Gitrepoprgm.GitHub_desktop" (idGithubdkt) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
+  McshTchInf000032:102  "Gitrepoprgm.Git" (idGit) of file-concept "Gitrepo": title is not "x of Gitrepo" (attribute) or "Gitrepo.x" (specific)
 
 === McshEdu000002 (7)
   McshEdu000002:1692  "science.engineering-010" (idSci010) of file-concept "science": no name "McshEngl.science.engineering_010"
@@ -640,24 +482,6 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshEdu000002:1160  "science.formal-013" (idSci013) of file-concept "science": no name "McshEngl.science.formal_013"
   McshEdu000002:1142  "science.natural-012" (idSci012) of file-concept "science": no name "McshEngl.science.natural_012"
   McshEdu000002:1125  "science.social-011" (idSci011) of file-concept "science": no name "McshEngl.science.social_011"
-
-=== McshOgm000006 (7)
-  McshOgm000006:1739  "MolProtein.hemoglobin-025" (idPrtnOgm025) of file-concept "MolProtein": no name "McshEngl.MolProtein.hemoglobin_025"
-  McshOgm000006:1707  "MolProtein.conjugated-024" (idPrtnOgm024) of file-concept "MolProtein": no name "McshEngl.MolProtein.conjugated_024"
-  McshOgm000006:1686  "MolProtein.hemoprotein-023" (idPrtnOgm023) of file-concept "MolProtein": no name "McshEngl.MolProtein.hemoprotein_023"
-  McshOgm000006:1549  "MolProtein.globular-015" (idPrtnOgm015) of file-concept "MolProtein": no name "McshEngl.MolProtein.globular_015"
-  McshOgm000006:1510  "MolProtein.enzyme-014" (idPrtnOgm014) of file-concept "MolProtein": no name "McshEngl.MolProtein.enzyme_014"
-  McshOgm000006:1492  "MolProtein.transporter-013" (idPrtnOgm013) of file-concept "MolProtein": no name "McshEngl.MolProtein.transporter_013"
-  McshOgm000006:266  "12_MolProtein.human-007 of bodyHumn" (idPrtnHmn) of file-concept "MolProtein": title ends "of bodyHumn", not "of MolProtein"; "MolProtein.human-007" starts with a-capital letter; no name "McshEngl.MolProtein'MolProtein.human_007"
-
-=== McshNtr000012 (7)
-  McshNtr000012:575  "force.pressure-012" (idFrc012) of file-concept "force": no name "McshEngl.force.pressure_012"
-  McshNtr000012:358  "force.fundamental.nuclear.weak-004" (idFrc004) of file-concept "force": no name "McshEngl.force.fundamental.nuclear.weak_004"
-  McshNtr000012:340  "force.fundamental.nuclear.strong-003" (idFrc003) of file-concept "force": no name "McshEngl.force.fundamental.nuclear.strong_003"
-  McshNtr000012:301  "force.fundamental.electromagnetic-002" (idFrc002) of file-concept "force": no name "McshEngl.force.fundamental.electromagnetic_002"
-  McshNtr000012:284  "force.fundamental.gravity-001" (idFrc001) of file-concept "force": no name "McshEngl.force.fundamental.gravity_001"
-  McshNtr000012:265  "force.fundamental-010" (idFrc010) of file-concept "force": no name "McshEngl.force.fundamental_010"
-  McshNtr000012:215  "force.contactNo-007" (idFrc007) of file-concept "force": no name "McshEngl.force.contactNo_007"
 
 === McshLag000014 (7)
   McshLag000014:341  "irBook..Bernal.Science-in-History-000004" (idBook000004) of file-concept "irBook": no name "McshEngl.irBook..Bernal.Science_in_History_000004"
@@ -677,6 +501,24 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshLag000029:140  "Eng0Lago;Middle-English" (idLEngm) of file-concept "Eng0Lago": title is not "x of Eng0Lago" (attribute) or "Eng0Lago.x" (specific)
   McshLag000029:118  "Eng0Lago;Old-English" (idLEngo) of file-concept "Eng0Lago": title is not "x of Eng0Lago" (attribute) or "Eng0Lago.x" (specific)
 
+=== McshNtr000012 (7)
+  McshNtr000012:575  "force.pressure-012" (idFrc012) of file-concept "force": no name "McshEngl.force.pressure_012"
+  McshNtr000012:358  "force.fundamental.nuclear.weak-004" (idFrc004) of file-concept "force": no name "McshEngl.force.fundamental.nuclear.weak_004"
+  McshNtr000012:340  "force.fundamental.nuclear.strong-003" (idFrc003) of file-concept "force": no name "McshEngl.force.fundamental.nuclear.strong_003"
+  McshNtr000012:301  "force.fundamental.electromagnetic-002" (idFrc002) of file-concept "force": no name "McshEngl.force.fundamental.electromagnetic_002"
+  McshNtr000012:284  "force.fundamental.gravity-001" (idFrc001) of file-concept "force": no name "McshEngl.force.fundamental.gravity_001"
+  McshNtr000012:265  "force.fundamental-010" (idFrc010) of file-concept "force": no name "McshEngl.force.fundamental_010"
+  McshNtr000012:215  "force.contactNo-007" (idFrc007) of file-concept "force": no name "McshEngl.force.contactNo_007"
+
+=== McshOgm000006 (7)
+  McshOgm000006:1739  "MolProtein.hemoglobin-025" (idPrtnOgm025) of file-concept "MolProtein": no name "McshEngl.MolProtein.hemoglobin_025"
+  McshOgm000006:1707  "MolProtein.conjugated-024" (idPrtnOgm024) of file-concept "MolProtein": no name "McshEngl.MolProtein.conjugated_024"
+  McshOgm000006:1686  "MolProtein.hemoprotein-023" (idPrtnOgm023) of file-concept "MolProtein": no name "McshEngl.MolProtein.hemoprotein_023"
+  McshOgm000006:1549  "MolProtein.globular-015" (idPrtnOgm015) of file-concept "MolProtein": no name "McshEngl.MolProtein.globular_015"
+  McshOgm000006:1510  "MolProtein.enzyme-014" (idPrtnOgm014) of file-concept "MolProtein": no name "McshEngl.MolProtein.enzyme_014"
+  McshOgm000006:1492  "MolProtein.transporter-013" (idPrtnOgm013) of file-concept "MolProtein": no name "McshEngl.MolProtein.transporter_013"
+  McshOgm000006:266  "12_MolProtein.human-007 of bodyHumn" (idPrtnHmn) of file-concept "MolProtein": title ends "of bodyHumn", not "of MolProtein"; no name "McshEngl.MolProtein'MolProtein.human_007"
+
 === McshStn000017 (7)
   McshStn000017:16292  "OgznStrd.ECMA-007" (idOznEcma) of file-concept "OgznStrd": no name "McshEngl.OgznStrd.ECMA_007"
   McshStn000017:16241  "OgznStrd.ISO-006" (idOznIso) of file-concept "OgznStrd": no name "McshEngl.OgznStrd.ISO_006"
@@ -686,37 +528,30 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStn000017:293  "OgznStrd.national-002" (idOznStd002) of file-concept "OgznStrd": no name "McshEngl.OgznStrd.national_002"
   McshStn000017:279  "OgznStrd.international-001" (idOznStd001) of file-concept "OgznStrd": no name "McshEngl.OgznStrd.international_001"
 
-=== McshTchInf000017 (6)
-  McshTchInf000017:9464  "AgntBtcn.EVOLUTING" (idBtcnetEvg) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.EVOLUTING"
-  McshTchInf000017:9450  "AgntBtcn.TESTNET3" (idBtcnetTst3) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.TESTNET3"
-  McshTchInf000017:9408  "AgntBtcn.TESTNET" (idBtcnetTst) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.TESTNET"
-  McshTchInf000017:9393  "AgntBtcn.REGTEST" (idBtcnetRgt) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.REGTEST"
-  McshTchInf000017:9374  "AgntBtcn.MAINET" (idBtcnetMain) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.MAINET"
-  McshTchInf000017:1186  "BTC-cryptocurrency of AgntBtcn" (idBtcevuC) of file-concept "AgntBtcn": "BTC-cryptocurrency" starts with a-capital letter
+=== McshTchInf000007 (7)
+  McshTchInf000007:2206  "Cnptlago.XML-010" (idLxmlg) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.XML_010"
+  McshTchInf000007:1576  "Cnptlago.frame-037" (idLCcptt037) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.frame_037"
+  McshTchInf000007:1427  "Cnptlago.visual-034" (idLCcptt034) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.visual_034"
+  McshTchInf000007:1411  "Cnptlago.textual-033" (idLCcptt033) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.textual_033"
+  McshTchInf000007:1389  "Cnptlago.structure-and-doing-003" (idLCcptt003) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.structure_and_doing_003"
+  McshTchInf000007:1369  "Cnptlago.doing-002" (idLCcptt002) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.doing_002"
+  McshTchInf000007:1347  "Cnptlago.structure-001" (idLCcptt001) of file-concept "Cnptlago": no name "McshEngl.Cnptlago.structure_001"
+
+=== McshLag000017 (6)
+  McshLag000017:32248  "lagoHmnm.letter4-0023" (idLHmnm0023) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+  McshLag000017:32233  "lagoHmnm.ISO.639-5" (idLHmnm0013) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+  McshLag000017:32216  "lagoHmnm.ISO.639-3m-0012" (idLHmnm0012) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+  McshLag000017:647  "lagoHmnm.ISO.639-3-0011-" (idLHmnm0011) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+  McshLag000017:631  "lagoHmnm.ISO.639-2-0010" (idLHmnm0010) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+  McshLag000017:57  "lagoHmnm.ISO.639-1" (idLHmnm0009) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
 
 === McshLag000028 (6)
-  McshLag000028:2051  "09_Proto-Greek- of Greek-family" (idLEllp) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; "Proto-Greek-" starts with a-capital letter; no name "McshEngl.Ell0lago'Proto_Greek_"
+  McshLag000028:2051  "09_Proto-Greek- of Greek-family" (idLEllp) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; no name "McshEngl.Ell0lago'Proto_Greek_"
   McshLag000028:2012  "lagElln.Linear-A" (idLEllr) of file-concept "Ell0lago": title is not "x of Ell0lago" (attribute) or "Ell0lago.x" (specific)
   McshLag000028:1955  "lagElln.Linear-B" (idLEllb) of file-concept "Ell0lago": title is not "x of Ell0lago" (attribute) or "Ell0lago.x" (specific)
-  McshLag000028:1915  "08_Mycenaean-Greek- of Greek-family" (idLEllc) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; "Mycenaean-Greek-" starts with a-capital letter; no name "McshEngl.Ell0lago'Mycenaean_Greek_"
-  McshLag000028:1598  "06_Koine-Greek- of Greek-family" (idLEllk) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; "Koine-Greek-" starts with a-capital letter; no name "McshEngl.Ell0lago'Koine_Greek_"
-  McshLag000028:1576  "05_Medieval-Greek- of Greek-family" (idLEllm) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; "Medieval-Greek-" starts with a-capital letter; no name "McshEngl.Ell0lago'Medieval_Greek_"
-
-=== McshTchInf000005 (6)
-  McshTchInf000005:1430  "Cmprlago.file-format-010" (idLfile) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.file_format_010"
-  McshTchInf000005:964  "Cmprlago.text-document-representation-007" (idLtdoc) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.text_document_representation_007"
-  McshTchInf000005:888  "Cmprlago.data-representation-006" (idLCmpr006) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.data_representation_006"
-  McshTchInf000005:870  "Cmprlago.binaryNo" (idLchr) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.binaryNo"
-  McshTchInf000005:745  "Cmprlago.binary-info" (idLbnr) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.binary_info"
-  McshTchInf000005:679  "Cmprlago.programingBoth" (idLCmpr003) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.programingBoth"
-
-=== McshTch000002 (6)
-  McshTch000002:1167  "tech.satellite-006" (idTch006) of file-concept "tech": no name "McshEngl.tech.satellite_006"
-  McshTch000002:984  "tech.automation-005" (idTch005) of file-concept "tech": no name "McshEngl.tech.automation_005"
-  McshTch000002:744  "tech.tool-003" (idTch003) of file-concept "tech": no name "McshEngl.tech.tool_003"
-  McshTch000002:732  "tech.humanNo-002" (idTch002) of file-concept "tech": no name "McshEngl.tech.humanNo_002"
-  McshTch000002:663  "tech.human-001" (idTch001) of file-concept "tech": no name "McshEngl.tech.human_001"
-  McshTch000002:198  "sociology-of-technology" (idTchsclg) of file-concept "tech": title is not "x of tech" (attribute) or "tech.x" (specific)
+  McshLag000028:1915  "08_Mycenaean-Greek- of Greek-family" (idLEllc) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; no name "McshEngl.Ell0lago'Mycenaean_Greek_"
+  McshLag000028:1598  "06_Koine-Greek- of Greek-family" (idLEllk) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; no name "McshEngl.Ell0lago'Koine_Greek_"
+  McshLag000028:1576  "05_Medieval-Greek- of Greek-family" (idLEllm) of file-concept "Ell0lago": title ends "of Greek-family", not "of Ell0lago"; no name "McshEngl.Ell0lago'Medieval_Greek_"
 
 === McshOgm000010 (6)
   McshOgm000010:1789  "OgsmPlant.hypericum-perforatum-039" (idPlnt039) of file-concept "OgsmPlant": no name "McshEngl.OgsmPlant.hypericum_perforatum_039"
@@ -734,21 +569,21 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStn000002:637  "SctnOgms.humanNo-002" (idStnOgm002) of file-concept "SctnOgms": no name "McshEngl.SctnOgms.humanNo_002"
   McshStn000002:409  "SctnOgms.human-001" (idStnHmn) of file-concept "SctnOgms": no name "McshEngl.SctnOgms.human_001"
 
-=== McshLag000017 (6)
-  McshLag000017:32248  "lagoHmnm.letter4-0023" (idLHmnm0023) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
-  McshLag000017:32233  "lagoHmnm.ISO.639-5" (idLHmnm0013) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
-  McshLag000017:32216  "lagoHmnm.ISO.639-3m-0012" (idLHmnm0012) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
-  McshLag000017:647  "lagoHmnm.ISO.639-3-0011-" (idLHmnm0011) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
-  McshLag000017:631  "lagoHmnm.ISO.639-2-0010" (idLHmnm0010) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
-  McshLag000017:57  "lagoHmnm.ISO.639-1" (idLHmnm0009) of file-concept "Isolago": title is not "x of Isolago" (attribute) or "Isolago.x" (specific)
+=== McshTch000002 (6)
+  McshTch000002:1167  "tech.satellite-006" (idTch006) of file-concept "tech": no name "McshEngl.tech.satellite_006"
+  McshTch000002:984  "tech.automation-005" (idTch005) of file-concept "tech": no name "McshEngl.tech.automation_005"
+  McshTch000002:744  "tech.tool-003" (idTch003) of file-concept "tech": no name "McshEngl.tech.tool_003"
+  McshTch000002:732  "tech.humanNo-002" (idTch002) of file-concept "tech": no name "McshEngl.tech.humanNo_002"
+  McshTch000002:663  "tech.human-001" (idTch001) of file-concept "tech": no name "McshEngl.tech.human_001"
+  McshTch000002:198  "sociology-of-technology" (idTchsclg) of file-concept "tech": title is not "x of tech" (attribute) or "tech.x" (specific)
 
-=== McshTchInf000040 (6)
-  McshTchInf000040:1300  "InetService.cloud-computing of Internet" (idIntntdongCdcp) of file-concept "Internet": "InetService.cloud-computing" starts with a-capital letter
-  McshTchInf000040:635  "InetService.Www of Internet" (idWww) of file-concept "Internet": "InetService.Www" starts with a-capital letter
-  McshTchInf000040:488  "InetService.payment of Internet" (idIntntdongPmnt) of file-concept "Internet": "InetService.payment" starts with a-capital letter
-  McshTchInf000040:378  "InetService.social-network of Internet" (idIntntdongSlnt) of file-concept "Internet": "InetService.social-network" starts with a-capital letter
-  McshTchInf000040:335  "InetService.email of Internet" (idIntntdongEmel) of file-concept "Internet": "InetService.email" starts with a-capital letter
-  McshTchInf000040:241  "AIoT of Internet" (idIntntaiot) of file-concept "Internet": "AIoT" starts with a-capital letter
+=== McshTchInf000005 (6)
+  McshTchInf000005:1430  "Cmprlago.file-format-010" (idLfile) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.file_format_010"
+  McshTchInf000005:964  "Cmprlago.text-document-representation-007" (idLtdoc) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.text_document_representation_007"
+  McshTchInf000005:888  "Cmprlago.data-representation-006" (idLCmpr006) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.data_representation_006"
+  McshTchInf000005:870  "Cmprlago.binaryNo" (idLchr) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.binaryNo"
+  McshTchInf000005:745  "Cmprlago.binary-info" (idLbnr) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.binary_info"
+  McshTchInf000005:679  "Cmprlago.programingBoth" (idLCmpr003) of file-concept "Cmprlago": no name "McshEngl.Cmprlago.programingBoth"
 
 === McshCor000002 (5)
   McshCor000002:5690  "Mcs.DeChain" (idMcsDctc) of file-concept "Mcs": no name "McshEngl.Mcs.DeChain"
@@ -757,47 +592,12 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshCor000002:5376  "Mcs.hypertext-" (idMcsHrtt) of file-concept "Mcs": no name "McshEngl.Mcs.hypertext_"
   McshCor000002:5353  "Mcs.papersheet-" (idMcsPrst) of file-concept "Mcs": no name "McshEngl.Mcs.papersheet_"
 
-=== McshTchInf000006 (5)
-  McshTchInf000006:3217  "Pgmglago.data-processing" (idLCpgmData) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.data_processing"
-  McshTchInf000006:2052  "Pgmglago.source-code" (idLSrcd) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.source_code"
-  McshTchInf000006:2001  "Pgmglago.virtual-codeAsmbalgo" (idLvtl) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.virtual_codeAsmbalgo"
-  McshTchInf000006:1939  "Pgmglago.assembly-code" (idLasm) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.assembly_code"
-  McshTchInf000006:1786  "Pgmglago.machine-code" (idLmchn) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.machine_code"
-
-=== McshTchInf000036 (5)
-  McshTchInf000036:5968  "techAI.Artificial-Neural-Network" (idTchNn) of file-concept "techAI": no name "McshEngl.techAI.Artificial_Neural_Network"
-  McshTchInf000036:5725  "techAI.statistical-connectionist" (idTechAiStcl) of file-concept "techAI": no name "McshEngl.techAI.statistical_connectionist"
-  McshTchInf000036:5583  "techAI.semantic-symbolic" (idTechAiSmtc) of file-concept "techAI": no name "McshEngl.techAI.semantic_symbolic"
-  McshTchInf000036:257  "AI-accelerator of techAI" (idTechAiaclr) of file-concept "techAI": "AI-accelerator" starts with a-capital letter
-  McshTchInf000036:128  "SoftCode of techAI" (idTechAistcd) of file-concept "techAI": "SoftCode" starts with a-capital letter
-
-=== McshLag000038 (5)
-  McshLag000038:1972  "ProtoSlavic of Slv0Lago" (idLSlv0ptsv) of file-concept "Slv0Lago": "ProtoSlavic" starts with a-capital letter
-  McshLag000038:1923  "BaltoSlavic of Slv0Lago" (idLSlv0btsv) of file-concept "Slv0Lago": "BaltoSlavic" starts with a-capital letter
-  McshLag000038:1542  "30_input3- of Slv0Lago" (idLSlv0ipt3) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input3_"
-  McshLag000038:1523  "29_input2- of Slv0Lago" (idLSlv0ipt2) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input2_"
-  McshLag000038:1503  "28_input1- of Slv0Lago" (idLSlv0ipt1) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input1_"
-
-=== McshLag000041 (5)
-  McshLag000041:1848  "Oghuz-languages of Tur0lago" (idLTur0oghz) of file-concept "Tur0lago": "Oghuz-languages" starts with a-capital letter
-  McshLag000041:1669  "ProtoTurkic of Tur0lago" (idLTur0wprto) of file-concept "Tur0lago": "ProtoTurkic" starts with a-capital letter
-  McshLag000041:1329  "30_input3- of Tur0lago" (idLTur0ipt3) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input3_"
-  McshLag000041:1310  "29_input2- of Tur0lago" (idLTur0ipt2) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input2_"
-  McshLag000041:1290  "28_input1- of Tur0lago" (idLTur0ipt1) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input1_"
-
 === McshLag000032 (5)
   McshLag000032:290  "decoding-relation- of lagoFrml" (idLFrmlrdcd) of file-concept "lagoFrml": no name "McshEngl.lagoFrml'decoding_relation_"
   McshLag000032:125  "output- of lagoFrml" (idLFrmlotpt) of file-concept "lagoFrml": no name "McshEngl.lagoFrml'output_"
   McshLag000032:110  "input3- of lagoFrml" (idLFrmlipt3) of file-concept "lagoFrml": no name "McshEngl.lagoFrml'input3_"
   McshLag000032:96  "input2- of lagoFrml" (idLFrmlipt2) of file-concept "lagoFrml": no name "McshEngl.lagoFrml'input2_"
   McshLag000032:66  "input1- of lagoFrml" (idLFrmlipt1) of file-concept "lagoFrml": no name "McshEngl.lagoFrml'input1_"
-
-=== McshTchInf000038 (5)
-  McshTchInf000038:2060  "techLlm.GALEN--Google-AI-" (idTchLlmGaln) of file-concept "techLlm": no name "McshEngl.techLlm.GALEN_Google_AI_"
-  McshTchInf000038:2040  "techLlm.GPT4All--Nomic-AI" (idTchLlmG4al) of file-concept "techLlm": no name "McshEngl.techLlm.GPT4All_Nomic_AI"
-  McshTchInf000038:2023  "techLlm.alpaca-Stanford" (idTchLlmAlpc) of file-concept "techLlm": no name "McshEngl.techLlm.alpaca_Stanford"
-  McshTchInf000038:1866  "techLlm.Grok-xAI" (idTchLlm001) of file-concept "techLlm": no name "McshEngl.techLlm.Grok_xAI"
-  McshTchInf000038:1760  "techLlm.Τ5-transformer--Google" (idTchLlmT5) of file-concept "techLlm": no name "McshEngl.techLlm.Τ5_transformer_Google"
 
 === McshNtr000002 (5)
   McshNtr000002:696  "material.naturalNo-008" (idMtrl008) of file-concept "material": no name "McshEngl.material.naturalNo_008"
@@ -813,66 +613,33 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshNtr000006:363  "ChmcCpd.organicNo-002" (idChmCpd002) of file-concept "ChmcCpd": no name "McshEngl.ChmcCpd.organicNo_002"
   McshNtr000006:174  "ChmcCpd.organic-001" (idChmOgc) of file-concept "ChmcCpd": no name "McshEngl.ChmcCpd.organic_001"
 
+=== McshTchInf000006 (5)
+  McshTchInf000006:3217  "Pgmglago.data-processing" (idLCpgmData) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.data_processing"
+  McshTchInf000006:2052  "Pgmglago.source-code" (idLSrcd) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.source_code"
+  McshTchInf000006:2001  "Pgmglago.virtual-codeAsmbalgo" (idLvtl) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.virtual_codeAsmbalgo"
+  McshTchInf000006:1939  "Pgmglago.assembly-code" (idLasm) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.assembly_code"
+  McshTchInf000006:1786  "Pgmglago.machine-code" (idLmchn) of file-concept "Pgmglago": no name "McshEngl.Pgmglago.machine_code"
+
+=== McshTchInf000017 (5)
+  McshTchInf000017:9509  "AgntBtcn.EVOLUTING" (idBtcnetEvg) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.EVOLUTING"
+  McshTchInf000017:9495  "AgntBtcn.TESTNET3" (idBtcnetTst3) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.TESTNET3"
+  McshTchInf000017:9453  "AgntBtcn.TESTNET" (idBtcnetTst) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.TESTNET"
+  McshTchInf000017:9438  "AgntBtcn.REGTEST" (idBtcnetRgt) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.REGTEST"
+  McshTchInf000017:9419  "AgntBtcn.MAINET" (idBtcnetMain) of file-concept "AgntBtcn": no name "McshEngl.AgntBtcn.MAINET"
+
 === McshTchInf000023 (5)
-  McshTchInf000023:157  "18_Dagchain of Iota-net" (idIotachnF) of file-concept "DnIota": title ends "of Iota-net", not "of DnIota"; "Dagchain" starts with a-capital letter; no name "McshEngl.DnIota'Dagchain"
-  McshTchInf000023:140  "02_human of Iota-net" (idIotahmnF) of file-concept "DnIota": title ends "of Iota-net", not "of DnIota"
-  McshTchInf000023:125  "data-marketplace of Iota-net" (idIotadtmpFNT) of file-concept "DnIota": title ends "of Iota-net", not "of DnIota"
-  McshTchInf000023:108  "IOTA-cryptocurrency of Iota-net" (idIotaIOTAF) of file-concept "DnIota": title ends "of Iota-net", not "of DnIota"; "IOTA-cryptocurrency" starts with a-capital letter
-  McshTchInf000023:63  "01_evaluation of Iota-net" (idIotaeval) of file-concept "DnIota": title ends "of Iota-net", not "of DnIota"
+  McshTchInf000023:161  "18_Dagchain of Iota-net" (idIotachnF) of file-concept "AgntIota": title ends "of Iota-net", not "of AgntIota"; no name "McshEngl.AgntIota'Dagchain"
+  McshTchInf000023:144  "02_human of Iota-net" (idIotahmnF) of file-concept "AgntIota": title ends "of Iota-net", not "of AgntIota"
+  McshTchInf000023:129  "data-marketplace of Iota-net" (idIotadtmpFNT) of file-concept "AgntIota": title ends "of Iota-net", not "of AgntIota"
+  McshTchInf000023:112  "IOTA-cryptocurrency of Iota-net" (idIotaIOTAF) of file-concept "AgntIota": title ends "of Iota-net", not "of AgntIota"
+  McshTchInf000023:66  "01_evaluation of Iota-net" (idIotaeval) of file-concept "AgntIota": title ends "of Iota-net", not "of AgntIota"
 
-=== McshTchInf000018 (4)
-  McshTchInf000018:12960  "DnEth.PUBLIC.NO" (idEthnetPbcN) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
-  McshTchInf000018:12934  "DnEth.CLASSIC" (idEtcnet) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
-  McshTchInf000018:12884  "DnEth.TEST" (idEthnetTst) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
-  McshTchInf000018:2877  "19_Dasset of AgntEthr" (idEthevu) of file-concept "AgntEthr": "Dasset" starts with a-capital letter
-
-=== McshHlth000005 (4)
-  McshHlth000005:5894  "OganFascia of SystSkeletal" (idOgnHmn043) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"; "OganFascia" starts with a-capital letter
-  McshHlth000005:5876  "OganLigament of SystSkeletal" (idOgnHmn042) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"; "OganLigament" starts with a-capital letter
-  McshHlth000005:3087  "orgBone of SystSkeletal" (idBoneHmn) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"
-  McshHlth000005:133  "organ.muscle-029 of SystMuscular" (idMsclHmn) of file-concept "SystMusculoskeletal": title ends "of SystMuscular", not "of SystMusculoskeletal"; no name "McshEngl.SystMusculoskeletal'organ.muscle_029"
-
-=== McshLag000027 (4)
-  McshLag000027:8135  "Ellalago.speech" (idLEllaSpch) of file-concept "Ellalago": no name "McshEngl.Ellalago.speech"
-  McshLag000027:8066  "Ellalago'Classical-" (idLEllac) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
-  McshLag000027:8048  "Ellalago'Archaic-" (idLEllaa) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
-  McshLag000027:8032  "Ellalago'Dark-" (idLEllad) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
-
-=== McshLag000020 (4)
-  McshLag000020:13087  "Ellnlago.speech" (idLEllnSpch) of file-concept "Ellnlago": no name "McshEngl.Ellnlago.speech"
-  McshLag000020:119  "07_input3- of Ellnlago" (idLEllnipt3) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input3_"
-  McshLag000020:100  "06_input2- of Ellnlago" (idLEllnipt2) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input2_"
-  McshLag000020:80  "05_input1- of Ellnlago" (idLEllnipt1) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input1_"
-
-=== McshOgm000007 (4)
-  McshOgm000007:2590  "cellOgsm.excitable-012" (idCellOgm012) of file-concept "cellOgsm": no name "McshEngl.cellOgsm.excitable_012"
-  McshOgm000007:2037  "cellOgsm.archeaon-007" (idOgm004) of file-concept "cellOgsm": no name "McshEngl.cellOgsm.archeaon_007"
-  McshOgm000007:284  "07_SystMolecules of cellOgsm" (idCellOgmatt014) of file-concept "cellOgsm": "SystMolecules" starts with a-capital letter
-  McshOgm000007:270  "06_SystMaterial of cellOgsm" (idCellOgmatt034) of file-concept "cellOgsm": "SystMaterial" starts with a-capital letter
-
-=== McshHlth000004 (4)
-  McshHlth000004:2740  "cell.chondrocyte-027" (idCellHmn027) of file-concept "cell": no name "McshEngl.cell.chondrocyte_027"
-  McshHlth000004:2582  "cell.Leydig-006" (idCellHmn006) of file-concept "cell": no name "McshEngl.cell.Leydig_006"
-  McshHlth000004:726  "07_SystMolecules of cell" (idCellHmnatt039) of file-concept "cell": "SystMolecules" starts with a-capital letter
-  McshHlth000004:711  "06_SystMaterial of cell" (idCellHmnatt043) of file-concept "cell": "SystMaterial" starts with a-capital letter
-
-=== McshStn000004 (4)
-  McshStn000004:641  "AdmnSctn.human" (idGvcHmn) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.human"
-  McshStn000004:625  "AdmnSctn.inclusivity.centralizedBoth-007" (idGvcOgm007) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralizedBoth_007"
-  McshStn000004:583  "AdmnSctn.inclusivity.centralizedNo-002" (idGvcOgm002) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralizedNo_002"
-  McshStn000004:515  "AdmnSctn.inclusivity.centralized-001" (idGvcOgm001) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralized_001"
-
-=== McshLag000040 (4)
-  McshLag000040:1749  "ProtoAfroAsiatic of Afa0lago" (idLAfa0proto) of file-concept "Afa0lago": "ProtoAfroAsiatic" starts with a-capital letter
-  McshLag000040:1416  "30_input3- of Afa0lago" (idLAfa0ipt3) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input3_"
-  McshLag000040:1397  "29_input2- of Afa0lago" (idLAfa0ipt2) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input2_"
-  McshLag000040:1377  "28_input1- of Afa0lago" (idLAfa0ipt1) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input1_"
-
-=== McshNtr000005 (4)
-  McshNtr000005:614  "MtrlSysMols.unit-of-measurement-007" (idSysMols007) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.unit_of_measurement_007"
-  McshNtr000005:593  "MtrlSysMols.fluid.plasma-006" (idSysMols006) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.plasma_006"
-  McshNtr000005:573  "MtrlSysMols.fluid.gas-005" (idSysMols005) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.gas_005"
-  McshNtr000005:423  "MtrlSysMols.fluid.liquid-004" (idSysMols004) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.liquid_004"
+=== McshTchInf000038 (5)
+  McshTchInf000038:2060  "techLlm.GALEN--Google-AI-" (idTchLlmGaln) of file-concept "techLlm": no name "McshEngl.techLlm.GALEN_Google_AI_"
+  McshTchInf000038:2040  "techLlm.GPT4All--Nomic-AI" (idTchLlmG4al) of file-concept "techLlm": no name "McshEngl.techLlm.GPT4All_Nomic_AI"
+  McshTchInf000038:2023  "techLlm.alpaca-Stanford" (idTchLlmAlpc) of file-concept "techLlm": no name "McshEngl.techLlm.alpaca_Stanford"
+  McshTchInf000038:1866  "techLlm.Grok-xAI" (idTchLlm001) of file-concept "techLlm": no name "McshEngl.techLlm.Grok_xAI"
+  McshTchInf000038:1760  "techLlm.Τ5-transformer--Google" (idTchLlmT5) of file-concept "techLlm": no name "McshEngl.techLlm.Τ5_transformer_Google"
 
 === McshCor000008 (4)
   McshCor000008:1071  "whole.bodyNo-004" (idWhl004) of file-concept "whole": no name "McshEngl.whole.bodyNo_004"
@@ -880,95 +647,61 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshCor000008:655  "whole.without-part-relations" (idWhl001) of file-concept "whole": no name "McshEngl.whole.without_part_relations"
   McshCor000008:428  "sympan of whole" (idWhlmtwh) of file-concept "whole": no name "McshEngl.whole'sympan"
 
-=== McshLag000018 (3)
-  McshLag000018:21570  "Zhonlago.text" (idLZhonText) of file-concept "Zhonlago": no name "McshEngl.Zhonlago.text"
-  McshLag000018:19682  "Zhonlago.speech" (idLZhonSpch) of file-concept "Zhonlago": no name "McshEngl.Zhonlago.speech"
-  McshLag000018:17062  "30_input3_ of Zhonlago" (idLZhonipt3) of file-concept "Zhonlago": no name "McshEngl.Zhonlago'input3_"
+=== McshHlth000005 (4)
+  McshHlth000005:5894  "OganFascia of SystSkeletal" (idOgnHmn043) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"
+  McshHlth000005:5876  "OganLigament of SystSkeletal" (idOgnHmn042) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"
+  McshHlth000005:3087  "orgBone of SystSkeletal" (idBoneHmn) of file-concept "SystMusculoskeletal": title ends "of SystSkeletal", not "of SystMusculoskeletal"
+  McshHlth000005:133  "organ.muscle-029 of SystMuscular" (idMsclHmn) of file-concept "SystMusculoskeletal": title ends "of SystMuscular", not "of SystMusculoskeletal"; no name "McshEngl.SystMusculoskeletal'organ.muscle_029"
 
-=== McshTchInf000019 (3)
-  McshTchInf000019:4580  "OgznDao.eosDAC" (idEosdac) of file-concept "OgznDao": no name "McshEngl.OgznDao.eosDAC"
-  McshTchInf000019:2723  "OgznDao.ARAGON" (idArgn) of file-concept "OgznDao": no name "McshEngl.OgznDao.ARAGON"
-  McshTchInf000019:1343  "OgznDao.BLOCKCHAIN" (idDeOznBchn) of file-concept "OgznDao": no name "McshEngl.OgznDao.BLOCKCHAIN"
+=== McshLag000020 (4)
+  McshLag000020:13087  "Ellnlago.speech" (idLEllnSpch) of file-concept "Ellnlago": no name "McshEngl.Ellnlago.speech"
+  McshLag000020:119  "07_input3- of Ellnlago" (idLEllnipt3) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input3_"
+  McshLag000020:100  "06_input2- of Ellnlago" (idLEllnipt2) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input2_"
+  McshLag000020:80  "05_input1- of Ellnlago" (idLEllnipt1) of file-concept "Ellnlago": no name "McshEngl.Ellnlago'input1_"
 
-=== McshLag000011 (3)
-  McshLag000011:31240  "Engllago.speech" (idLEnglSpch) of file-concept "Engllago": no name "McshEngl.Engllago.speech"
-  McshLag000011:30572  "30_input3- of Engllago" (idLEnglipt3) of file-concept "Engllago": no name "McshEngl.Engllago'input3_"
-  McshLag000011:30552  "28_input1- of Engllago" (idLEnglipt1) of file-concept "Engllago": no name "McshEngl.Engllago'input1_"
+=== McshLag000027 (4)
+  McshLag000027:8135  "Ellalago.speech" (idLEllaSpch) of file-concept "Ellalago": no name "McshEngl.Ellalago.speech"
+  McshLag000027:8066  "Ellalago'Classical-" (idLEllac) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
+  McshLag000027:8048  "Ellalago'Archaic-" (idLEllaa) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
+  McshLag000027:8032  "Ellalago'Dark-" (idLEllad) of file-concept "Ellalago": title is not "x of Ellalago" (attribute) or "Ellalago.x" (specific)
 
-=== McshLag000037 (3)
-  McshLag000037:2039  "30_input3- of Hiurlago" (idLHiuript3) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input3_"
-  McshLag000037:2020  "29_input2- of Hiurlago" (idLHiuript2) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input2_"
-  McshLag000037:2000  "28_input1- of Hiurlago" (idLHiuript1) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input1_"
+=== McshNtr000005 (4)
+  McshNtr000005:614  "MtrlSysMols.unit-of-measurement-007" (idSysMols007) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.unit_of_measurement_007"
+  McshNtr000005:593  "MtrlSysMols.fluid.plasma-006" (idSysMols006) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.plasma_006"
+  McshNtr000005:573  "MtrlSysMols.fluid.gas-005" (idSysMols005) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.gas_005"
+  McshNtr000005:423  "MtrlSysMols.fluid.liquid-004" (idSysMols004) of file-concept "MtrlSysMols": no name "McshEngl.MtrlSysMols.fluid.liquid_004"
 
-=== McshTchInf000024 (3)
-  McshTchInf000024:3538  "Steemit-app" (idSteemit) of file-concept "Steem_net": title is not "x of Steem_net" (attribute) or "Steem_net.x" (specific)
-  McshTchInf000024:3521  "cost of blogging" (idSteemcst) of file-concept "Steem_net": title ends "of blogging", not "of Steem_net"
-  McshTchInf000024:3457  "reward of blogging" (idSteemrwrd) of file-concept "Steem_net": title ends "of blogging", not "of Steem_net"
+=== McshStn000004 (4)
+  McshStn000004:641  "AdmnSctn.human" (idGvcHmn) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.human"
+  McshStn000004:625  "AdmnSctn.inclusivity.centralizedBoth-007" (idGvcOgm007) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralizedBoth_007"
+  McshStn000004:583  "AdmnSctn.inclusivity.centralizedNo-002" (idGvcOgm002) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralizedNo_002"
+  McshStn000004:515  "AdmnSctn.inclusivity.centralized-001" (idGvcOgm001) of file-concept "AdmnSctn": no name "McshEngl.AdmnSctn.inclusivity.centralized_001"
 
-=== McshCor000010 (3)
-  McshCor000010:1977  "quanto.relative-" (idQntRlv) of file-concept "quanto": no name "McshEngl.quanto.relative_"
-  McshCor000010:1690  "quanto.definiteNO" (idQntDftN) of file-concept "quanto": no name "McshEngl.quanto.definiteNO"
-  McshCor000010:505  "quanto.definite.number" (idQntNbr) of file-concept "quanto": no name "McshEngl.quanto.definite.number"
+=== McshTchInf000021 (4)
+  McshTchInf000021:3565  "Agnteos.SISTER-CHAIN" (idEosSrcn) of file-concept "Agnteos": no name "McshEngl.Agnteos.SISTER_CHAIN"
+  McshTchInf000021:3551  "Agnteos.SIDECHAIN" (idEosSdcn) of file-concept "Agnteos": no name "McshEngl.Agnteos.SIDECHAIN"
+  McshTchInf000021:3516  "Agnteos.PUBLIC-TESTNET" (idEosTtntPlc) of file-concept "Agnteos": no name "McshEngl.Agnteos.PUBLIC_TESTNET"
+  McshTchInf000021:3496  "Agnteos.MAINNET" (idEosMnet) of file-concept "Agnteos": no name "McshEngl.Agnteos.MAINNET"
 
 === McshCor000003 (3)
   McshCor000003:5934  "entity.bodyNo-" (idEntBodyN) of file-concept "entity": no name "McshEngl.entity.bodyNo_"
   McshCor000003:5174  "entity.nothingness-002" (idEnt002) of file-concept "entity": no name "McshEngl.entity.nothingness_002"
   McshCor000003:536  "unsequenced-relation-to-attribute of Entity" (idEntatrrln) of file-concept "entity": title ends "of Entity", not "of entity"; no name "McshEngl.entity'unsequenced_relation_to_attribute"
 
-=== McshOgm000005 (3)
-  McshOgm000005:4059  "SystMolsOgsm.cytokine-006" (idSysMolsOgm006) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.cytokine_006"
-  McshOgm000005:4038  "SystMolsOgsm.neurotransmitter-005" (idSysMolsOgm005) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.neurotransmitter_005"
-  McshOgm000005:3443  "SystMolsOgsm.blood-004" (idSysMolsOgm004) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.blood_004"
-
-=== McshTchInf000013 (3)
-  McshTchInf000013:1595  "relation-Jsellago-to-NW.js" (idLJselrtnw) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
-  McshTchInf000013:1210  "algo.PROGRAM" (idLJselpgm) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
-  McshTchInf000013:158  "algo'API" (idLJselapi) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
-
 === McshCor000005 (3)
   McshCor000005:3732  "relation.ALPHABETICALLY" (idRlnAlfa) of file-concept "relation": no name "McshEngl.relation.ALPHABETICALLY"
   McshCor000005:3665  "relation.parent-child-undirected" (idRlnPtcd) of file-concept "relation": no name "McshEngl.relation.parent_child_undirected"
   McshCor000005:553  "relation.argument.n" (idRlnArgN) of file-concept "relation": no name "McshEngl.relation.argument.n"
 
-=== McshHlth000016 (3)
-  McshHlth000016:1429  "therapy.phototherapy-005" (idThrpHmn005) of file-concept "therapy": no name "McshEngl.therapy.phototherapy_005"
-  McshHlth000016:1265  "therapy.ozon" (idThrpHmn217) of file-concept "therapy": no name "McshEngl.therapy.ozon"
-  McshHlth000016:398  "therapy.psycho-011" (idThrpHmnMnd) of file-concept "therapy": no name "McshEngl.therapy.psycho_011"
-
-=== McshTchInf000003 (3)
-  McshTchInf000003:1713  "techCmpr.quantum-002" (idCmrQtm) of file-concept "techCmpr": no name "McshEngl.techCmpr.quantum_002"
-  McshTchInf000003:1692  "techCmpr.binary-001" (idCmr001) of file-concept "techCmpr": no name "McshEngl.techCmpr.binary_001"
-  McshTchInf000003:1327  "techCmpr.abstract-003" (idCmr003) of file-concept "techCmpr": no name "McshEngl.techCmpr.abstract_003"
+=== McshCor000010 (3)
+  McshCor000010:1977  "quanto.relative-" (idQntRlv) of file-concept "quanto": no name "McshEngl.quanto.relative_"
+  McshCor000010:1690  "quanto.definiteNO" (idQntDftN) of file-concept "quanto": no name "McshEngl.quanto.definiteNO"
+  McshCor000010:505  "quanto.definite.number" (idQntNbr) of file-concept "quanto": no name "McshEngl.quanto.definite.number"
 
 === McshCor000011 (3)
   McshCor000011:2531  "system.graph-003" (idSys003) of file-concept "system": no name "McshEngl.system.graph_003"
   McshCor000011:1702  "system.tree-002" (idSys002) of file-concept "system": no name "McshEngl.system.tree_002"
   McshCor000011:593  "system.sequence-001" (idSys001) of file-concept "system": no name "McshEngl.system.sequence_001"
-
-=== McshLag000033 (3)
-  McshLag000033:3450  "30_input3- of Deutlago" (idLDeutipt3) of file-concept "Deutlago": no name "McshEngl.Deutlago'input3_"
-  McshLag000033:3431  "29_input2- of Deutlago" (idLDeutipt2) of file-concept "Deutlago": no name "McshEngl.Deutlago'input2_"
-  McshLag000033:3411  "28_input1- of Deutlago" (idLDeutipt1) of file-concept "Deutlago": no name "McshEngl.Deutlago'input1_"
-
-=== McshLag000035 (3)
-  McshLag000035:2778  "Spanlago.European" (idLSpanEurp) of file-concept "Spanlago": no name "McshEngl.Spanlago.European"
-  McshLag000035:2324  "30_input3- of Spanlago" (idLSpanipt3) of file-concept "Spanlago": no name "McshEngl.Spanlago'input3_"
-  McshLag000035:2304  "28_input1- of Spanlago" (idLSpanipt1) of file-concept "Spanlago": no name "McshEngl.Spanlago'input1_"
-
-=== McshLag000042 (3)
-  McshLag000042:1321  "30_input3- of Asa0lago" (idLAsa0ipt3) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input3_"
-  McshLag000042:1302  "29_input2- of Asa0lago" (idLAsa0ipt2) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input2_"
-  McshLag000042:1282  "28_input1- of Asa0lago" (idLAsa0ipt1) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input1_"
-
-=== McshStn000014 (3)
-  McshStn000014:1170  "OgznCsmg.kinship-basedNo-002" (idOznCsn002) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.kinship_basedNo_002"
-  McshStn000014:1156  "OgznCsmg.kinship-based-001" (idOznCsn001) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.kinship_based_001"
-  McshStn000014:1076  "OgznCsmg.sector" (idOznCsn006) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.sector"
-
-=== McshTchPrgm000002 (3)
-  McshTchPrgm000002:1037  "prgmOs.Linux" (idCpgm009) of file-concept "Cmprprgm": title is not "x of Cmprprgm" (attribute) or "Cmprprgm.x" (specific)
-  McshTchPrgm000002:780  "prgmOs.Android" (idCpgm008) of file-concept "Cmprprgm": title is not "x of Cmprprgm" (attribute) or "Cmprprgm.x" (specific)
-  McshTchPrgm000002:584  "Cmprprgm.app.web" (idCpgm006) of file-concept "Cmprprgm": no name "McshEngl.Cmprprgm.app.web"
 
 === McshHlth000012 (3)
   McshHlth000012:255  "foodBio.societyOgsm-006" (idFoodBio006) of file-concept "foodBio": no name "McshEngl.foodBio.societyOgsm_006"
@@ -980,46 +713,154 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshHlth000015:158  "drug.narcotic-003" (idDrgHmn003) of file-concept "drug": no name "McshEngl.drug.narcotic_003"
   McshHlth000015:122  "drug.medicationNo-002" (idDrgHmn002) of file-concept "drug": no name "McshEngl.drug.medicationNo_002"
 
+=== McshHlth000016 (3)
+  McshHlth000016:1429  "therapy.phototherapy-005" (idThrpHmn005) of file-concept "therapy": no name "McshEngl.therapy.phototherapy_005"
+  McshHlth000016:1265  "therapy.ozon" (idThrpHmn217) of file-concept "therapy": no name "McshEngl.therapy.ozon"
+  McshHlth000016:398  "therapy.psycho-011" (idThrpHmnMnd) of file-concept "therapy": no name "McshEngl.therapy.psycho_011"
+
+=== McshLag000011 (3)
+  McshLag000011:31240  "Engllago.speech" (idLEnglSpch) of file-concept "Engllago": no name "McshEngl.Engllago.speech"
+  McshLag000011:30572  "30_input3- of Engllago" (idLEnglipt3) of file-concept "Engllago": no name "McshEngl.Engllago'input3_"
+  McshLag000011:30552  "28_input1- of Engllago" (idLEnglipt1) of file-concept "Engllago": no name "McshEngl.Engllago'input1_"
+
+=== McshLag000018 (3)
+  McshLag000018:21570  "Zhonlago.text" (idLZhonText) of file-concept "Zhonlago": no name "McshEngl.Zhonlago.text"
+  McshLag000018:19682  "Zhonlago.speech" (idLZhonSpch) of file-concept "Zhonlago": no name "McshEngl.Zhonlago.speech"
+  McshLag000018:17062  "30_input3_ of Zhonlago" (idLZhonipt3) of file-concept "Zhonlago": no name "McshEngl.Zhonlago'input3_"
+
+=== McshLag000033 (3)
+  McshLag000033:3450  "30_input3- of Deutlago" (idLDeutipt3) of file-concept "Deutlago": no name "McshEngl.Deutlago'input3_"
+  McshLag000033:3431  "29_input2- of Deutlago" (idLDeutipt2) of file-concept "Deutlago": no name "McshEngl.Deutlago'input2_"
+  McshLag000033:3411  "28_input1- of Deutlago" (idLDeutipt1) of file-concept "Deutlago": no name "McshEngl.Deutlago'input1_"
+
+=== McshLag000035 (3)
+  McshLag000035:2778  "Spanlago.European" (idLSpanEurp) of file-concept "Spanlago": no name "McshEngl.Spanlago.European"
+  McshLag000035:2324  "30_input3- of Spanlago" (idLSpanipt3) of file-concept "Spanlago": no name "McshEngl.Spanlago'input3_"
+  McshLag000035:2304  "28_input1- of Spanlago" (idLSpanipt1) of file-concept "Spanlago": no name "McshEngl.Spanlago'input1_"
+
+=== McshLag000037 (3)
+  McshLag000037:2039  "30_input3- of Hiurlago" (idLHiuript3) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input3_"
+  McshLag000037:2020  "29_input2- of Hiurlago" (idLHiuript2) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input2_"
+  McshLag000037:2000  "28_input1- of Hiurlago" (idLHiuript1) of file-concept "Hiurlago": no name "McshEngl.Hiurlago'input1_"
+
+=== McshLag000038 (3)
+  McshLag000038:1542  "30_input3- of Slv0Lago" (idLSlv0ipt3) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input3_"
+  McshLag000038:1523  "29_input2- of Slv0Lago" (idLSlv0ipt2) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input2_"
+  McshLag000038:1503  "28_input1- of Slv0Lago" (idLSlv0ipt1) of file-concept "Slv0Lago": no name "McshEngl.Slv0Lago'input1_"
+
+=== McshLag000039 (3)
+  McshLag000039:1189  "30_input3- of Ide0lago" (idLIde0ipt3) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input3_"
+  McshLag000039:1170  "29_input2- of Ide0lago" (idLIde0ipt2) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input2_"
+  McshLag000039:1150  "28_input1- of Ide0lago" (idLIde0ipt1) of file-concept "Ide0lago": no name "McshEngl.Ide0lago'input1_"
+
+=== McshLag000040 (3)
+  McshLag000040:1416  "30_input3- of Afa0lago" (idLAfa0ipt3) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input3_"
+  McshLag000040:1397  "29_input2- of Afa0lago" (idLAfa0ipt2) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input2_"
+  McshLag000040:1377  "28_input1- of Afa0lago" (idLAfa0ipt1) of file-concept "Afa0lago": no name "McshEngl.Afa0lago'input1_"
+
+=== McshLag000041 (3)
+  McshLag000041:1329  "30_input3- of Tur0lago" (idLTur0ipt3) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input3_"
+  McshLag000041:1310  "29_input2- of Tur0lago" (idLTur0ipt2) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input2_"
+  McshLag000041:1290  "28_input1- of Tur0lago" (idLTur0ipt1) of file-concept "Tur0lago": no name "McshEngl.Tur0lago'input1_"
+
+=== McshLag000042 (3)
+  McshLag000042:1321  "30_input3- of Asa0lago" (idLAsa0ipt3) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input3_"
+  McshLag000042:1302  "29_input2- of Asa0lago" (idLAsa0ipt2) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input2_"
+  McshLag000042:1282  "28_input1- of Asa0lago" (idLAsa0ipt1) of file-concept "Asa0lago": no name "McshEngl.Asa0lago'input1_"
+
+=== McshOgm000005 (3)
+  McshOgm000005:4059  "SystMolsOgsm.cytokine-006" (idSysMolsOgm006) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.cytokine_006"
+  McshOgm000005:4038  "SystMolsOgsm.neurotransmitter-005" (idSysMolsOgm005) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.neurotransmitter_005"
+  McshOgm000005:3443  "SystMolsOgsm.blood-004" (idSysMolsOgm004) of file-concept "SystMolsOgsm": no name "McshEngl.SystMolsOgsm.blood_004"
+
 === McshStn000006 (3)
   McshStn000006:303  "OgznOgsm.societalNo-004" (idOznOgm004) of file-concept "OgznOgsm": no name "McshEngl.OgznOgsm.societalNo_004"
   McshStn000006:287  "OgznOgsm.societal-003" (idOznOgm003) of file-concept "OgznOgsm": no name "McshEngl.OgznOgsm.societal_003"
   McshStn000006:271  "OgznOgsm.humanNo-002" (idOznOgm002) of file-concept "OgznOgsm": no name "McshEngl.OgznOgsm.humanNo_002"
 
-=== McshTchInf000039 (2)
-  McshTchInf000039:3618  "Knlglago.controlled-natural-language-018" (idLKnlg003) of file-concept "Knlglago": no name "McshEngl.Knlglago.controlled_natural_language_018"
-  McshTchInf000039:3071  "evoluting of techKnlg" (idLKnlgevog) of file-concept "Knlglago": title ends "of techKnlg", not "of Knlglago"
+=== McshStn000014 (3)
+  McshStn000014:1170  "OgznCsmg.kinship-basedNo-002" (idOznCsn002) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.kinship_basedNo_002"
+  McshStn000014:1156  "OgznCsmg.kinship-based-001" (idOznCsn001) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.kinship_based_001"
+  McshStn000014:1076  "OgznCsmg.sector" (idOznCsn006) of file-concept "OgznCsmg": no name "McshEngl.OgznCsmg.sector"
 
-=== McshStn000020 (2)
-  McshStn000020:19457  "European-Free-Trade-Association of SoctEuzz" (idSocEuzztt035) of file-concept "SoctEuzz": "European-Free-Trade-Association" starts with a-capital letter
-  McshStn000020:19432  "European-Economic-Area of SoctEuzz" (idSocEuzztt034) of file-concept "SoctEuzz": "European-Economic-Area" starts with a-capital letter
+=== McshTchInf000003 (3)
+  McshTchInf000003:1713  "techCmpr.quantum-002" (idCmrQtm) of file-concept "techCmpr": no name "McshEngl.techCmpr.quantum_002"
+  McshTchInf000003:1692  "techCmpr.binary-001" (idCmr001) of file-concept "techCmpr": no name "McshEngl.techCmpr.binary_001"
+  McshTchInf000003:1327  "techCmpr.abstract-003" (idCmr003) of file-concept "techCmpr": no name "McshEngl.techCmpr.abstract_003"
 
-=== McshTchInf000028 (2)
-  McshTchInf000028:2760  "DnDiem.TESTNET" (idDnlbrTstnt) of file-concept "DnDiem": no name "McshEngl.DnDiem.TESTNET"
-  McshTchInf000028:364  "Move-language of DnDiem" (idLMove) of file-concept "DnDiem": "Move-language" starts with a-capital letter
+=== McshTchInf000013 (3)
+  McshTchInf000013:1595  "relation-Jsellago-to-NW.js" (idLJselrtnw) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
+  McshTchInf000013:1210  "algo.PROGRAM" (idLJselpgm) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
+  McshTchInf000013:158  "algo'API" (idLJselapi) of file-concept "Jsellago": title is not "x of Jsellago" (attribute) or "Jsellago.x" (specific)
 
-=== McshTchInf000026 (2)
-  McshTchInf000026:1406  "Dapp of Blockstack_net" (idBkskDap) of file-concept "Blockstack_net": "Dapp" starts with a-capital letter
-  McshTchInf000026:1038  "Atlas-network of Blockstack_net" (idBkskAtls) of file-concept "Blockstack_net": "Atlas-network" starts with a-capital letter
+=== McshTchInf000018 (3)
+  McshTchInf000018:12975  "DnEth.PUBLIC.NO" (idEthnetPbcN) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
+  McshTchInf000018:12949  "DnEth.CLASSIC" (idEtcnet) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
+  McshTchInf000018:12899  "DnEth.TEST" (idEthnetTst) of file-concept "AgntEthr": title is not "x of AgntEthr" (attribute) or "AgntEthr.x" (specific)
 
-=== McshLag000036 (2)
-  McshLag000036:2743  "30_input3- of Arablago" (idLArabipt3) of file-concept "Arablago": no name "McshEngl.Arablago'input3_"
-  McshLag000036:2723  "28_input1- of Arablago" (idLArabipt1) of file-concept "Arablago": no name "McshEngl.Arablago'input1_"
+=== McshTchInf000019 (3)
+  McshTchInf000019:4580  "OgznDao.eosDAC" (idEosdac) of file-concept "OgznDao": no name "McshEngl.OgznDao.eosDAC"
+  McshTchInf000019:2723  "OgznDao.ARAGON" (idArgn) of file-concept "OgznDao": no name "McshEngl.OgznDao.ARAGON"
+  McshTchInf000019:1343  "OgznDao.BLOCKCHAIN" (idDeOznBchn) of file-concept "OgznDao": no name "McshEngl.OgznDao.BLOCKCHAIN"
 
-=== McshTchInf000008 (2)
-  McshTchInf000008:3228  "35_Hitp_site of Hitplago" (idLHitpsite) of file-concept "Hitplago": "Hitp_site" starts with a-capital letter
-  McshTchInf000008:220  "20_web-app-doc of Hitplago" (idLHitpwbpg) of file-concept "Hitplago": no name "McshEngl.Hitplago'web_app_doc"
+=== McshTchInf000024 (3)
+  McshTchInf000024:3543  "Steemit-app" (idSteemit) of file-concept "Steem_net": title is not "x of Steem_net" (attribute) or "Steem_net.x" (specific)
+  McshTchInf000024:3526  "cost of blogging" (idSteemcst) of file-concept "Steem_net": title ends "of blogging", not "of Steem_net"
+  McshTchInf000024:3462  "reward of blogging" (idSteemrwrd) of file-concept "Steem_net": title ends "of blogging", not "of Steem_net"
+
+=== McshTchInf000036 (3)
+  McshTchInf000036:5968  "techAI.Artificial-Neural-Network" (idTchNn) of file-concept "techAI": no name "McshEngl.techAI.Artificial_Neural_Network"
+  McshTchInf000036:5725  "techAI.statistical-connectionist" (idTechAiStcl) of file-concept "techAI": no name "McshEngl.techAI.statistical_connectionist"
+  McshTchInf000036:5583  "techAI.semantic-symbolic" (idTechAiSmtc) of file-concept "techAI": no name "McshEngl.techAI.semantic_symbolic"
+
+=== McshTchPrgm000002 (3)
+  McshTchPrgm000002:1037  "prgmOs.Linux" (idCpgm009) of file-concept "Cmprprgm": title is not "x of Cmprprgm" (attribute) or "Cmprprgm.x" (specific)
+  McshTchPrgm000002:780  "prgmOs.Android" (idCpgm008) of file-concept "Cmprprgm": title is not "x of Cmprprgm" (attribute) or "Cmprprgm.x" (specific)
+  McshTchPrgm000002:584  "Cmprprgm.app.web" (idCpgm006) of file-concept "Cmprprgm": no name "McshEngl.Cmprprgm.app.web"
+
+=== McshCor000009 (2)
+  McshCor000009:1608  "generic.timepoint" (idGnrcTmpt) of file-concept "generic": no name "McshEngl.generic.timepoint"
+  McshCor000009:261  "generic-specific--sequencedNo-relation" (idGnrspcrln) of file-concept "generic": title is not "x of generic" (attribute) or "generic.x" (specific)
+
+=== McshCor000013 (2)
+  McshCor000013:2214  "FctgBrainingBio.feelingNo" (idBrngThkg) of file-concept "FctgBrainingBio": no name "McshEngl.FctgBrainingBio.feelingNo"
+  McshCor000013:2168  "FctgBrainingBio.feeling" (idBrngFlng) of file-concept "FctgBrainingBio": no name "McshEngl.FctgBrainingBio.feeling"
+
+=== McshEdu000003 (2)
+  McshEdu000003:294  "Mathgrph.bipartite-001" (idSMathgraph001) of file-concept "Mathgrph": no name "McshEngl.Mathgrph.bipartite_001"
+  McshEdu000003:212  "DOING of Mathgrph" (idSMathgraphdong) of file-concept "Mathgrph": no name "McshEngl.Mathgrph'DOING"
+
+=== McshHlth000004 (2)
+  McshHlth000004:2740  "cell.chondrocyte-027" (idCellHmn027) of file-concept "cell": no name "McshEngl.cell.chondrocyte_027"
+  McshHlth000004:2582  "cell.Leydig-006" (idCellHmn006) of file-concept "cell": no name "McshEngl.cell.Leydig_006"
+
+=== McshLag000010 (2)
+  McshLag000010:5869  "30_input3- of Sngulagu" (idL0014ipt3) of file-concept "Sngulagu": no name "McshEngl.Sngulagu'input3_"
+  McshLag000010:5837  "28_input1- of Sngulagu" (idL0014ipt1) of file-concept "Sngulagu": no name "McshEngl.Sngulagu'input1_"
 
 === McshLag000030 (2)
   McshLag000030:8272  "Turklago.alphabetic" (idLTurkAlph) of file-concept "Turklago": no name "McshEngl.Turklago.alphabetic"
   McshLag000030:7978  "30_input3_ of Turklago" (idLTurkipt3) of file-concept "Turklago": no name "McshEngl.Turklago'input3_"
 
-=== McshTchInf000022 (2)
-  McshTchInf000022:1592  "FairChains" (idFairnetFrcs) of file-concept "Faircoin_net": title is not "x of Faircoin_net" (attribute) or "Faircoin_net.x" (specific)
-  McshTchInf000022:332  "FAIR-cryptocurrency of Faircoin_net" (idFairnetevuC) of file-concept "Faircoin_net": "FAIR-cryptocurrency" starts with a-capital letter
+=== McshLag000036 (2)
+  McshLag000036:2743  "30_input3- of Arablago" (idLArabipt3) of file-concept "Arablago": no name "McshEngl.Arablago'input3_"
+  McshLag000036:2723  "28_input1- of Arablago" (idLArabipt1) of file-concept "Arablago": no name "McshEngl.Arablago'input1_"
 
-=== McshLag000010 (2)
-  McshLag000010:5869  "30_input3- of Sngulagu" (idL0014ipt3) of file-concept "Sngulagu": no name "McshEngl.Sngulagu'input3_"
-  McshLag000010:5837  "28_input1- of Sngulagu" (idL0014ipt1) of file-concept "Sngulagu": no name "McshEngl.Sngulagu'input1_"
+=== McshLag000043 (2)
+  McshLag000043:3461  "30_input3- of Koralago" (idLKoraipt3) of file-concept "Koralago": no name "McshEngl.Koralago'input3_"
+  McshLag000043:3441  "28_input1- of Koralago" (idLKoraipt1) of file-concept "Koralago": no name "McshEngl.Koralago'input1_"
+
+=== McshOgm000004 (2)
+  McshOgm000004:1532  "MoleOgsm.sterol-017" (idMolOgm017) of file-concept "MoleOgsm": no name "McshEngl.MoleOgsm.sterol_017"
+  McshOgm000004:1040  "MoleOgsm.cholesterol-016" (idMolOgm016) of file-concept "MoleOgsm": no name "McshEngl.MoleOgsm.cholesterol_016"
+
+=== McshOgm000007 (2)
+  McshOgm000007:2590  "cellOgsm.excitable-012" (idCellOgm012) of file-concept "cellOgsm": no name "McshEngl.cellOgsm.excitable_012"
+  McshOgm000007:2037  "cellOgsm.archeaon-007" (idOgm004) of file-concept "cellOgsm": no name "McshEngl.cellOgsm.archeaon_007"
+
+=== McshStn000007 (2)
+  McshStn000007:390  "societyHmnN.terrestrialNo" (idSoctOgsm004) of file-concept "societyOgsm": title is not "x of societyOgsm" (attribute) or "societyOgsm.x" (specific)
+  McshStn000007:356  "societyHmnN.terrestrial" (idSoctOgsm003) of file-concept "societyOgsm": title is not "x of societyOgsm" (attribute) or "societyOgsm.x" (specific)
 
 === McshStn000008 (2)
   McshStn000008:1685  "Ogzn.societyNo-007" (idOgzn007) of file-concept "Ogzn": no name "McshEngl.Ogzn.societyNo_007"
@@ -1029,144 +870,75 @@ rule: a top section of a page with main-name M is "x of M" + name M'x (x small f
   McshStn000012:4472  "SoctEcon.ecoNo-002" (idEconHmn002) of file-concept "SoctEcon": no name "McshEngl.SoctEcon.ecoNo_002"
   McshStn000012:4360  "SoctEcon.eco-001" (idEconHmn001) of file-concept "SoctEcon": no name "McshEngl.SoctEcon.eco_001"
 
-=== McshLag000043 (2)
-  McshLag000043:3461  "30_input3- of Koralago" (idLKoraipt3) of file-concept "Koralago": no name "McshEngl.Koralago'input3_"
-  McshLag000043:3441  "28_input1- of Koralago" (idLKoraipt1) of file-concept "Koralago": no name "McshEngl.Koralago'input1_"
-
-=== McshCor000009 (2)
-  McshCor000009:1608  "generic.timepoint" (idGnrcTmpt) of file-concept "generic": no name "McshEngl.generic.timepoint"
-  McshCor000009:261  "generic-specific--sequencedNo-relation" (idGnrspcrln) of file-concept "generic": title is not "x of generic" (attribute) or "generic.x" (specific)
+=== McshTchInf000027 (2)
+  McshTchInf000027:183  "info-resource of Neo-net--envt" (idNeoirsc) of file-concept "Neo_net": title ends "of Neo-net--envt", not "of Neo_net"
+  McshTchInf000027:149  "NEX of Neo-net--envt" (idNeonex) of file-concept "Neo_net": title ends "of Neo-net--envt", not "of Neo_net"
 
 === McshTchInf000029 (2)
   McshTchInf000029:759  "Jsonlago.JSON-stat" (idJnst) of file-concept "Jsonlago": no name "McshEngl.Jsonlago.JSON_stat"
   McshTchInf000029:636  "Jsonlago.JSON-LD" (idJnld) of file-concept "Jsonlago": no name "McshEngl.Jsonlago.JSON_LD"
 
-=== McshCor000013 (2)
-  McshCor000013:2214  "FctgBrainingBio.feelingNo" (idBrngThkg) of file-concept "FctgBrainingBio": no name "McshEngl.FctgBrainingBio.feelingNo"
-  McshCor000013:2168  "FctgBrainingBio.feeling" (idBrngFlng) of file-concept "FctgBrainingBio": no name "McshEngl.FctgBrainingBio.feeling"
+=== McshTchInf000039 (2)
+  McshTchInf000039:3618  "Knlglago.controlled-natural-language-018" (idLKnlg003) of file-concept "Knlglago": no name "McshEngl.Knlglago.controlled_natural_language_018"
+  McshTchInf000039:3071  "evoluting of techKnlg" (idLKnlgevog) of file-concept "Knlglago": title ends "of techKnlg", not "of Knlglago"
 
-=== McshOgm000004 (2)
-  McshOgm000004:1532  "MoleOgsm.sterol-017" (idMolOgm017) of file-concept "MoleOgsm": no name "McshEngl.MoleOgsm.sterol_017"
-  McshOgm000004:1040  "MoleOgsm.cholesterol-016" (idMolOgm016) of file-concept "MoleOgsm": no name "McshEngl.MoleOgsm.cholesterol_016"
-
-=== McshStn000007 (2)
-  McshStn000007:390  "societyHmnN.terrestrialNo" (idSoctOgsm004) of file-concept "societyOgsm": title is not "x of societyOgsm" (attribute) or "societyOgsm.x" (specific)
-  McshStn000007:356  "societyHmnN.terrestrial" (idSoctOgsm003) of file-concept "societyOgsm": title is not "x of societyOgsm" (attribute) or "societyOgsm.x" (specific)
-
-=== McshCor000000 (2)
-  McshCor000000:79  "Mcs.TODO of dirCor" (idMwsvdcrTodo) of file-concept "dirCor": "Mcs.TODO" starts with a-capital letter
-  McshCor000000:60  "Mcs.FILE of dirCor" (idMwsdirCorFile) of file-concept "dirCor": "Mcs.FILE" starts with a-capital letter
-
-=== McshEdu000000 (2)
-  McshEdu000000:78  "Mcs.TODO of dirEdu" (idMwsdirEduTodo) of file-concept "dirEdu": "Mcs.TODO" starts with a-capital letter
-  McshEdu000000:58  "Mcs.FILE of dirEdu" (idMwsdirEduFile) of file-concept "dirEdu": "Mcs.FILE" starts with a-capital letter
-
-=== McshEdu000003 (2)
-  McshEdu000003:294  "Mathgrph.bipartite-001" (idSMathgraph001) of file-concept "Mathgrph": no name "McshEngl.Mathgrph.bipartite_001"
-  McshEdu000003:212  "DOING of Mathgrph" (idSMathgraphdong) of file-concept "Mathgrph": no name "McshEngl.Mathgrph'DOING"
-
-=== McshHlth000000 (2)
-  McshHlth000000:76  "Mcs.TODO of dirHealth" (idMwsdirHlthTodo) of file-concept "dirHealth": "Mcs.TODO" starts with a-capital letter
-  McshHlth000000:58  "Mcs.FILE of dirHealth" (idMwsdirHlthFile) of file-concept "dirHealth": "Mcs.FILE" starts with a-capital letter
-
-=== McshHmn000000 (2)
-  McshHmn000000:77  "Mcs.todo of dirHmn" (idMwsdHumnTodo) of file-concept "dirHmn": "Mcs.todo" starts with a-capital letter
-  McshHmn000000:59  "Mcs.file of dirHmn" (idMwsdirHmnFile) of file-concept "dirHmn": "Mcs.file" starts with a-capital letter
-
-=== McshLag000000 (2)
-  McshLag000000:76  "Mcs.TODO of dirLag" (idMwsdirLagTodo) of file-concept "dirLag": "Mcs.TODO" starts with a-capital letter
-  McshLag000000:58  "Mcs.FILE of dirLag" (idMwsdirLagFile) of file-concept "dirLag": "Mcs.FILE" starts with a-capital letter
-
-=== McshNtr000000 (2)
-  McshNtr000000:76  "Mcs.TODO of dirNature" (idMwsdirNtrTodo) of file-concept "dirNature": "Mcs.TODO" starts with a-capital letter
-  McshNtr000000:58  "Mcs.FILE of dirNature" (idMwsdirNtrFile) of file-concept "dirNature": "Mcs.FILE" starts with a-capital letter
-
-=== McshOgm000000 (2)
-  McshOgm000000:76  "Mcs.TODO of dirOgm" (idMwsdirOgmTodo) of file-concept "dirOgm": "Mcs.TODO" starts with a-capital letter
-  McshOgm000000:58  "Mcs.FILE of dirOgm" (idMwsdirOgmFile) of file-concept "dirOgm": "Mcs.FILE" starts with a-capital letter
-
-=== McshStn000000 (2)
-  McshStn000000:77  "Mcs.TODO of dirStn" (idMwsdirStnTodo) of file-concept "dirStn": "Mcs.TODO" starts with a-capital letter
-  McshStn000000:59  "Mcs.FILE of dirStn" (idMwsdirStnFile) of file-concept "dirStn": "Mcs.FILE" starts with a-capital letter
-
-=== McshStnlaw000000 (2)
-  McshStnlaw000000:77  "Mcs.TODO of dirStnlaw" (idMwsdirStnlawTodo) of file-concept "dirStnlaw": "Mcs.TODO" starts with a-capital letter
-  McshStnlaw000000:59  "Mcs.FILE of dirStnlaw" (idMwsdirStnlawFile) of file-concept "dirStnlaw": "Mcs.FILE" starts with a-capital letter
-
-=== McshTch000000 (2)
-  McshTch000000:78  "Mcs.TODO of dirTech" (idMwsdirTchTodo) of file-concept "dirTech": "Mcs.TODO" starts with a-capital letter
-  McshTch000000:60  "Mcs.FILE of dirTech" (idMwsdirTchFile) of file-concept "dirTech": "Mcs.FILE" starts with a-capital letter
-
-=== McshTchInf000000 (2)
-  McshTchInf000000:79  "Mcs.TODO of dirTchInf" (idMwsdirTchInfTodo) of file-concept "dirTchInf": "Mcs.TODO" starts with a-capital letter
-  McshTchInf000000:58  "Mcs.FILE of dirTchInf" (idMwsdirTchInfFile) of file-concept "dirTchInf": "Mcs.FILE" starts with a-capital letter
-
-=== McshTchInf000027 (2)
-  McshTchInf000027:177  "info-resource of Neo-net--envt" (idNeoirsc) of file-concept "Neo_net": title ends "of Neo-net--envt", not "of Neo_net"
-  McshTchInf000027:143  "NEX of Neo-net--envt" (idNeonex) of file-concept "Neo_net": title ends "of Neo-net--envt", not "of Neo_net"
-
-=== McshTchInf000030 (1)
-  McshTchInf000030:72  "algo of Rustlago" (idLRustalg) of file-concept "Rustlago": no name "McshEngl.Rustlago'algo"
-
-=== McshStn000009 (1)
-  McshStn000009:11746  "society.hypocrite-017" (idSocHumn017) of file-concept "society": no name "McshEngl.society.hypocrite_017"
-
-=== McshTchInf000009 (1)
-  McshTchInf000009:684  "Mcsh-site of Mcshlago" (idLMcshsite) of file-concept "Mcshlago": "Mcsh-site" starts with a-capital letter
-
-=== McshCor000007 (1)
-  McshCor000007:2617  "space.pointNo" (idSpcPntN) of file-concept "space": no name "McshEngl.space.pointNo"
-
-=== McshTchInf000011 (1)
-  McshTchInf000011:4955  "06_Jsbrtool.browser" (idLJsbrbsr) of file-concept "Jsbrlago": title is not "x of Jsbrlago" (attribute) or "Jsbrlago.x" (specific)
+=== McshUcdU0000 (2)
+  McshUcdU0000:3873  "next-block of Ucbk.0..127" (idU0000nxt) of file-concept "Ucbk000000_000127": title ends "of Ucbk.0..127", not "of Ucbk000000_000127"; no name "McshEngl.Ucbk000000_000127'next_block"
+  McshUcdU0000:54  "Ώ|Ω|ω|ώ of McshWrdidxElln24oméya" (idWrdElln24omeya) of file-concept "McshWrdidxElln24omeya": title ends "of McshWrdidxElln24oméya", not "of McshWrdidxElln24omeya"; no name "McshEngl.McshWrdidxElln24omeya'Ώ|Ω|ω|ώ"
 
 === McshCor000004 (1)
   McshCor000004:4119  "doing.ALPHABETICALLY" (idDngAAA) of file-concept "doing": no name "McshEngl.doing.ALPHABETICALLY"
 
-=== McshLag000012 (1)
-  McshLag000012:4958  "30_input3- of Espolago" (idLEspoipt3) of file-concept "Espolago": no name "McshEngl.Espolago'input3_"
-
-=== McshHlth000003 (1)
-  McshHlth000003:1318  "10_memory-system of OganBrain" (idBrnHmnatt061) of file-concept "OganBrain": no name "McshEngl.OganBrain'memory_system"
-
-=== McshEdu000005 (1)
-  McshEdu000005:1120  "Softcode of SciMath" (idSMathstcd) of file-concept "SciMath": "Softcode" starts with a-capital letter
-
-=== McshLag000008 (1)
-  McshLag000008:128  "20_output- of Alfalago" (idL0016opt) of file-concept "Alfalago": no name "McshEngl.Alfalago'output_"
-
-=== McshLag000026 (1)
-  McshLag000026:1732  "Ellnverb.WordForms-" (idLEllnverbWf2001) of file-concept "Ellnverb": no name "McshEngl.Ellnverb.WordForms_"
-
-=== McshEdu000007 (1)
-  McshEdu000007:910  "SciCmpr.digital-disign" (idSCmpr009) of file-concept "SciCmpr": no name "McshEngl.SciCmpr.digital_disign"
-
-=== McshStnlaw000004 (1)
-  McshStnlaw000004:1600  "lawIntl.Universal-declaration-of-human-rights-" (idLawInl007) of file-concept "lawIntl": no name "McshEngl.lawIntl.Universal_declaration_of_human_rights_"
+=== McshCor000007 (1)
+  McshCor000007:2617  "space.pointNo" (idSpcPntN) of file-concept "space": no name "McshEngl.space.pointNo"
 
 === McshCor000019 (1)
   McshCor000019:164  "dancing.Greek" (idDncgElln) of file-concept "DongDancing": title is not "x of DongDancing" (attribute) or "DongDancing.x" (specific)
 
+=== McshEdu000007 (1)
+  McshEdu000007:910  "SciCmpr.digital-disign" (idSCmpr009) of file-concept "SciCmpr": no name "McshEngl.SciCmpr.digital_disign"
+
+=== McshHlth000003 (1)
+  McshHlth000003:1318  "10_memory-system of OganBrain" (idBrnHmnatt061) of file-concept "OganBrain": no name "McshEngl.OganBrain'memory_system"
+
 === McshLag000005 (1)
   McshLag000005:304  "Ogmslago.mind" (idLOgmsMind) of file-concept "Ogmslago": no name "McshEngl.Ogmslago.mind"
+
+=== McshLag000008 (1)
+  McshLag000008:128  "20_output- of Alfalago" (idL0016opt) of file-concept "Alfalago": no name "McshEngl.Alfalago'output_"
+
+=== McshLag000012 (1)
+  McshLag000012:4958  "30_input3- of Espolago" (idLEspoipt3) of file-concept "Espolago": no name "McshEngl.Espolago'input3_"
+
+=== McshLag000026 (1)
+  McshLag000026:1732  "Ellnverb.WordForms-" (idLEllnverbWf2001) of file-concept "Ellnverb": no name "McshEngl.Ellnverb.WordForms_"
 
 === McshNtr000004 (1)
   McshNtr000004:642  "MtrlMol.polymer-macromolecule-013" (idMol013) of file-concept "MtrlMol": no name "McshEngl.MtrlMol.polymer_macromolecule_013"
 
+=== McshStn000009 (1)
+  McshStn000009:11746  "society.hypocrite-017" (idSocHumn017) of file-concept "society": no name "McshEngl.society.hypocrite_017"
+
 === McshStn000023 (1)
   McshStn000023:11344  "property.instance of scmo" (idScmopptIntc) of file-concept "scmo": no name "McshEngl.scmo'property.instance"
 
-=== McshStn000024 (1)
-  McshStn000024:58  "Url of StndRfc" (idStdRfcurl) of file-concept "StndRfc": "Url" starts with a-capital letter
+=== McshStnlaw000004 (1)
+  McshStnlaw000004:1600  "lawIntl.Universal-declaration-of-human-rights-" (idLawInl007) of file-concept "lawIntl": no name "McshEngl.lawIntl.Universal_declaration_of_human_rights_"
 
-=== McshTch000005 (1)
-  McshTch000005:94  "Asimov-3-laws-of-robotics of techRobo" (idTRbtca3lr) of file-concept "techRobo": "Asimov-3-laws-of-robotics" starts with a-capital letter
+=== McshTchInf000008 (1)
+  McshTchInf000008:220  "20_web-app-doc of Hitplago" (idLHitpwbpg) of file-concept "Hitplago": no name "McshEngl.Hitplago'web_app_doc"
 
-=== McshTchPrgm000000 (1)
-  McshTchPrgm000000:59  "Mcs.file of dirTchPrgm" (idMwsdirTchPrgmFile) of file-concept "dirTchPrgm": "Mcs.file" starts with a-capital letter
+=== McshTchInf000010 (1)
+  McshTchInf000010:7529  "Jsgnlago.desktop-JavaScript" (idLJsdt) of file-concept "Jsgnlago": no name "McshEngl.Jsgnlago.desktop_JavaScript"
 
-=== McshUcdU0000 (1)
-  McshUcdU0000:3873  "next-block of Ucbk.0..127" (idU0000nxt) of file-concept "Ucbk000000_000127": title ends "of Ucbk.0..127", not "of Ucbk000000_000127"; no name "McshEngl.Ucbk000000_000127'next_block"
+=== McshTchInf000011 (1)
+  McshTchInf000011:4955  "06_Jsbrtool.browser" (idLJsbrbsr) of file-concept "Jsbrlago": title is not "x of Jsbrlago" (attribute) or "Jsbrlago.x" (specific)
 
-=== McshWrdidxElln24oméya (1)
-  McshWrdidxElln24oméya:54  "Ώ|Ω|ω|ώ of McshWrdidxElln24oméya" (idWrdElln24omeya) of file-concept "McshWrdidxElln24omeya": title ends "of McshWrdidxElln24oméya", not "of McshWrdidxElln24omeya"; no name "McshEngl.McshWrdidxElln24omeya'Ώ|Ω|ω|ώ"
+=== McshTchInf000022 (1)
+  McshTchInf000022:1597  "FairChains" (idFairnetFrcs) of file-concept "Faircoin_net": title is not "x of Faircoin_net" (attribute) or "Faircoin_net.x" (specific)
+
+=== McshTchInf000028 (1)
+  McshTchInf000028:2786  "DnDiem.TESTNET" (idDnlbrTstnt) of file-concept "DnDiem": no name "McshEngl.DnDiem.TESTNET"
+
+=== McshTchInf000030 (1)
+  McshTchInf000030:72  "algo of Rustlago" (idLRustalg) of file-concept "Rustlago": no name "McshEngl.Rustlago'algo"

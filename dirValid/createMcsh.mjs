@@ -89,6 +89,10 @@
  *   lists S as "G.S!@file#id" (a-dotted S itself, without NNN_): a-new "===" group at the-end of
  *   G's specific-tree::, or a-new {G}sptr para "McshEngl.G.specific, ===" right after G's generic-tree::.
  *
+ *   --code MvrwName01: a-formal-name (X'Y, X.Y, X:Y, X;Y, X/Y) of a-name:: or a-formal title with
+ *   a-space | hyphen gets "_" in place (X'a-b → X'a_b); an-old spelling "X'a-b!⇒X'a_b" and a-doubled
+ *   line are deleted. It SKIPS a-main-name (a "!⇒" target): --mainname renames those.
+ *
  *   --name: the-fix of MvrwSect03: a-section without name:: gets a-name::-para with
  *   McshEngl.<its heading>, after its description::. It SKIPS a-heading with "," or "!".
  *
@@ -105,13 +109,15 @@ import moPath from 'path'
 import { fileURLToPath } from 'url'
 import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
-import { fRunChecksMcsh } from './structuralMcsh.js'
+import { fRunChecksMcsh, fFormalMvrwName01 } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
 import { fReadListValidate } from './listValidate.js'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-35-0.2026-11-12: --code MvrwName01: a-formal-name | formal title with a-space | hyphen gets "_"',
+    'createMcsh.mjs.0-34-0.2026-11-12: --attribute (in --auto) and --code MvrwMain10: the-clear attribute | specific titles and their formal names',
     'createMcsh.mjs.0-33-0.2026-11-10: MvrwId05 knows the-ending "evolg" (idXevolg -> idXevog); the-MvrwGstr01 guard skips the-head line',
     'createMcsh.mjs.0-32-0.2026-11-09: --code MvrwGstr01 skips a-generic-tree:: with an-item Y:generic that is no head (an-old name)',
     'createMcsh.mjs.0-31-0.2026-11-08: --namecomma, the-fix of MvreName02: a-name-line without a-comma gets it at the-end',
@@ -147,8 +153,8 @@ const
     'creaMcsh.mjs.0-1-0.2026-10-04: creation'
   ],
   // the-modes, one per run; --auto runs aModeAuto in this order
-  aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'namecomma', 'auto'],
-  aModeAuto = ['namecomma', 'dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr'],
+  aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'namecomma', 'attribute', 'auto'],
+  aModeAuto = ['namecomma', 'dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr', 'attribute'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
     NODESC:   'idOverview without description::',
@@ -157,6 +163,8 @@ const
     BAD:      'the-file is NOT written: its check failed',
     DELETE:   'a-creation-para deleted, its date put in the-description::',
     CREATE:   'a-new description:: created',
+    ATTR:     'MvrwMain10: an-attribute | specific title set to "x of M" | "M.x" and its formal name M\x27x | M.x added',
+    FORMAL:   'MvrwName01: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted',
     NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name',
     NOFIX:    'no automatic fix for this rule: it needs you',
     NOISSUE:  'the-rule has no issue in the-file',
@@ -1239,6 +1247,8 @@ const ooFixCode = {
   MvrwMain05: { sKind: 'main', sSuffix: 'infrsc' },
   MvrwMain06: { sKind: 'main', sSuffix: 'srtr' },
   MvrwMain07: { sKind: 'line', fPlan: (...a) => fPlanAttrbase(...a) },
+  MvrwMain10: { sKind: 'line', fPlan: (...a) => fPlanAttribute(...a) },
+  MvrwName01: { sKind: 'line', fPlan: (...a) => fPlanFormal(...a) },
   MvrwMisc01: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
   MvreFile01: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
   MvrwSect02: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
@@ -1676,6 +1686,149 @@ function fPlanAttrbase(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
+ * DOING: MvrwMain10: the-CLEAR cases of an-attribute | attribute-specific section of a-concept with main-name M:
+ *   a) title "X'y" (X any, y without ".")       → "y of M" (an-attribute)
+ *   b) title "X.y", X a-name of M ("X!⇒M,")     → "M.y" (a-specific); "X.EVOLUTING" → "evoluting of M"
+ *   c) title "x of X", X a-name of M             → "x of M"
+ *   then its formal name M'x | M.y goes first in its name:: (a-pointer "!⇒Mmn" when the-section has a-main-name;
+ *   a-new name:: right after the-heading when it has none). The-"(…)" "{…}" "<a" tail of a-title is kept.
+ *   SKIPPED, a-decision by hand: a-title "of X" with X another concept (the-section may belong elsewhere),
+ *   an-attribute name M'x where the-title says specific M.x (or the-reverse), other title forms.
+ */
+function fPlanAttribute(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoNote = [];
+  const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const fForm = sIn => sIn.replace(/-+/g, '_').replace(/\s+/g, '_');
+  // the-English names of section sIdIn: { nName (line of name::), aName, sMain }
+  const fNamesOf = sIdIn => {
+    const nName = aLine.findIndex(sL => sL.includes(`<p id="${sIdIn}nam">name::`));
+    if (nName === -1) return { nName, aName: [], sMain: '' };
+    const aName = [], oSetMain = new Set();
+    for (let nL = nName + 1; nL < aLine.length && !aLine[nL].includes('</p>'); nL++) {
+      const aM = /^\s*<br>\*\s*McshEngl\.([^!,]+)(?:!=[^,!]*)?(?:!⇒([^,!\s]+))?,/.exec(aLine[nL]);
+      if (aM) { aName.push(aM[1]); if (aM[2]) oSetMain.add(aM[2]); }
+    }
+    return { nName, aName, sMain: oSetMain.size === 1 ? [...oSetMain][0] : '' };
+  };
+  // true: X is a-name of the-concept with main-name M (a-line "McshEngl.X!⇒M," in the-file)
+  const fIsNameOf = (sXIn, sMIn) => sXIn === sMIn || aLine.some(sL => new RegExp(`<br>\\*\\s*McshEngl\\.${fEsc(sXIn)}!⇒${fEsc(sMIn)},`).test(sL));
+  const aoEdit = [];
+  for (const oIssue of aoIssueIn) {
+    const aMsg = /attribute: "(.*)" \((id[^)]+)\) of (?:file-concept )?"([^"]+)": (.*)$/.exec(oIssue.sMessage ?? '');
+    const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
+    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain10: message not understood`); continue; }
+    const [, sTitleNorm, sId, sM] = aMsg;
+    const nH = aLine.findIndex(sL => new RegExp(`<h[1-7] id="${fEsc(sId)}H[1-7]">`).test(sL));
+    if (nH === -1) { aoNote.push(`SKIP   ${sLoc}  #${sId}: heading not found`); continue; }
+    const aH = /^(\s*<h[1-7] id="[^"]+">)(.*?)(\s*(?:\(|\{|<a).*)?(\r?)$/.exec(aLine[nH]);
+    const sTitle = aH[2].replace(/\s*,\s*$/, '').trim(), sTail = aH[3] ?? '', sCr = aH[4];
+    if (sTitle !== sTitleNorm) { aoNote.push(`SKIP   ${sLoc}  #${sId} "${sTitleNorm}": the-title has "(…)" or "{…}" inside, by hand`); continue; }
+    let sTitleNew = null, sNameNew = null, aM;
+    if ((aM = /^(\d+_)?(.+?) of (\S+)$/.exec(sTitle))) {                          // c)
+      if (!fIsNameOf(aM[3], sM)) { aoNote.push(`SKIP   ${sLoc}  #${sId} "${sTitle}": "${aM[3]}" is not a-name of ${sM}, the-section may belong to ${aM[3]}: by hand`); continue; }
+      sTitleNew = `${aM[1] ?? ''}${aM[2]} of ${sM}`; sNameNew = `${sM}'${fForm(aM[2])}`;
+    } else if ((aM = /^([^\s'.]+(?:\.[^\s'.]+)*)'([^'.]+)$/.exec(sTitle))) {      // a)
+      sTitleNew = `${aM[2]} of ${sM}`; sNameNew = `${sM}'${fForm(aM[2])}`;
+    } else if (sTitle.startsWith(sM + '.')) {                                      // b) title in form, name missing
+      sTitleNew = sTitle; sNameNew = fForm(sTitle);
+    } else if ((aM = /^([^\s'.]+)\.(.+)$/.exec(sTitle)) && fIsNameOf(aM[1], sM)) { // b)
+      if (/^EVOLUTING$/i.test(aM[2])) { sTitleNew = `evoluting of ${sM}`; sNameNew = `${sM}'evoluting`; }
+      else { sTitleNew = `${sM}.${aM[2]}`; sNameNew = fForm(sTitleNew); }
+    } else {
+      aoNote.push(`SKIP   ${sLoc}  #${sId} "${sTitle}": not "X'y", "X.y" or "x of X" with X a-name of ${sM}: by hand`); continue;
+    }
+    const oNames = fNamesOf(sId);
+    // the-other form of the-name is there: attribute M'x vs specific M.x — a-decision
+    const sOther = sNameNew.startsWith(sM + "'") ? `${sM}.${sNameNew.slice(sM.length + 1)}` : sNameNew.startsWith(sM + '.') ? `${sM}'${sNameNew.slice(sM.length + 1)}` : '';
+    if (sOther && oNames.aName.includes(sOther)) { aoNote.push(`SKIP   ${sLoc}  #${sId} "${sTitle}": its name is "${sOther}", the-title says "${sNameNew}": attribute or specific? by hand`); continue; }
+    if (sTitleNew !== sTitle) aoEdit.push({ nAt: nH, nDel: 1, aIns: [`${aH[1]}${sTitleNew}${sTail}${sCr}`] });
+    if (!oNames.aName.includes(sNameNew)) {
+      const sLineName = `    <br>* McshEngl.${sNameNew}${oNames.sMain ? '!⇒' + oNames.sMain : ''},${sCr}`;
+      if (oNames.nName !== -1) aoEdit.push({ nAt: oNames.nName + 1, nDel: 0, aIns: [sLineName] });
+      else {
+        let nE = nH; while (nE < aLine.length && !/<\/h[1-7]>/.test(aLine[nE])) nE++;
+        aoEdit.push({ nAt: nE + 1, nDel: 0, aIns: [`  <p id="${sId}nam">name::${sCr}`, sLineName, `    <a class="clsHide" href="#${sId}nam"></a></p>${sCr}`] });
+      }
+    }
+    aoNote.push(`ATTR   ${sLoc}  #${sId}  "${sTitle}"${sTitleNew !== sTitle ? ` → "${sTitleNew}"` : ''}  + McshEngl.${sNameNew}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: MvrwName01: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) with a-space | hyphen gets "_"
+ *   in their place (fFormalMvrwName01, outside "(…)" "{…}"), in the-file:
+ *   a) a-name-line of a-name::-para: the-name is renamed in place, its "!…" notations stay;
+ *      an-old spelling "X'a-b!⇒X'a_b," is deleted when its para has a-line of X'a_b;
+ *      a-renamed line equal to another line of its para is deleted;
+ *   b) a-formal title: renamed in its heading.
+ *   SKIPPED: a-name that is a-main-name (a "!⇒" target in the-file): it is the-work of --mainname;
+ *   an-old spelling without its "_" line; a-line | heading not found.
+ */
+function fPlanFormal(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoNote = [];
+  const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const oSetTarget = new Set([...sRawIn.matchAll(/!⇒([^,!\r\n]+)/g)].map(aM => aM[1].trim()));
+  // the-lines of the-<p> of line nIn
+  const fFindPara = nIn => {
+    let nFrom = nIn, nTo = nIn;
+    while (nFrom > 0 && !/<p[\s>]/.test(aLine[nFrom])) nFrom--;
+    while (nTo < aLine.length - 1 && !aLine[nTo].includes('</p>')) nTo++;
+    return [nFrom, nTo];
+  };
+  const oMapNew = new Map();   // line index → its new line, null: deleted
+  const aoRename = [];         // the-renamed name-lines, for the-duplicates
+  for (const oIssue of aoIssueIn) {
+    const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
+    const sMsg = oIssue.sMessage ?? '';
+    let aMsg;
+    if ((aMsg = /^formal: title "(.*)" has (?:space|hyphen)/.exec(sMsg))) {
+      const sTitle = aMsg[1], sTitleNew = fFormalMvrwName01(sTitle);
+      let nH = (oIssue.nLine ?? 0) - 1;
+      const nEnd = Math.min(aLine.length, nH + 6);
+      while (nH >= 0 && nH < nEnd && !(/<h[1-9] id="[^"]*">/.test(aLine[nH]) && aLine[nH].includes('>' + sTitle))) nH++;
+      if (nH < 0 || nH >= nEnd || oMapNew.has(nH)) { aoNote.push(`SKIP   ${sLoc}  title "${sTitle}": heading not found`); continue; }
+      oMapNew.set(nH, aLine[nH].replace('>' + sTitle, () => '>' + sTitleNew));
+      aoNote.push(`FORMAL ${sNameShortIn}:${nH + 1}  title "${sTitle}" → "${sTitleNew}"`);
+    } else if ((aMsg = /^formal: name "(Mcsh[A-Z][a-z]{3})\.(.*)" has (?:space|hyphen)/.exec(sMsg))) {
+      const [, sLago, sName] = aMsg, sNameNew = fFormalMvrwName01(sName), nL = (oIssue.nLine ?? 0) - 1;
+      const aL = nL >= 0 && nL < aLine.length && !oMapNew.has(nL)
+        ? new RegExp(`^(\\s*<br>\\*\\s*${sLago}\\.\\s*)${fEsc(sName)}(\\s*(?:[!,][\\s\\S]*)?)$`).exec(aLine[nL]) : null;
+      if (!aL) { aoNote.push(`SKIP   ${sLoc}  name "${sLago}.${sName}": name-line not found`); continue; }
+      if (oSetTarget.has(sName)) { aoNote.push(`SKIP   ${sLoc}  name "${sLago}.${sName}": it is a-main-name (a "!⇒" target): use --mainname`); continue; }
+      const sTarget = (/^\s*!⇒([^,!\r\n]+)/.exec(aL[2]) ?? [])[1]?.trim();
+      if (sTarget === sNameNew) {
+        // an-old spelling of the-"_" name
+        const [nFrom, nTo] = fFindPara(nL);
+        const rNew = new RegExp(`<br>\\*\\s*${sLago}\\.${fEsc(sNameNew)}\\s*[!,]`);
+        if (!aLine.slice(nFrom, nTo + 1).some(sL => rNew.test(sL))) { aoNote.push(`SKIP   ${sLoc}  name "${sLago}.${sName}": an-old spelling of "${sNameNew}", which has no line in its para: by hand`); continue; }
+        oMapNew.set(nL, null);
+        aoNote.push(`FORMAL ${sLoc}  name "${sLago}.${sName}!⇒${sNameNew}" deleted: an-old spelling`);
+        continue;
+      }
+      oMapNew.set(nL, aL[1] + sNameNew + aL[2]);
+      aoRename.push({ nL, sLoc, sText: `name "${sLago}.${sName}" → "${sNameNew}"` });
+    } else {
+      aoNote.push(`SKIP   ${sLoc}  MvrwName01: message not understood`);
+    }
+  }
+  // a-renamed line equal to another line of its para is deleted
+  const fNow = nIn => oMapNew.has(nIn) ? oMapNew.get(nIn) : aLine[nIn];
+  for (const { nL, sLoc, sText } of aoRename) {
+    const [nFrom, nTo] = fFindPara(nL);
+    const sNew = fNow(nL).trim();
+    let bDup = false;
+    for (let nK = nFrom; nK <= nTo && !bDup; nK++) bDup = nK !== nL && fNow(nK) !== null && fNow(nK).trim() === sNew;
+    if (bDup) oMapNew.set(nL, null);
+    aoNote.push(`FORMAL ${sLoc}  ${sText}${bDup ? ', deleted: its para has this line' : ''}`);
+  }
+  const aoEdit = [...oMapNew].map(([nAt, sNew]) => ({ nAt, nDel: 1, aIns: sNew === null ? [] : [sNew] }));
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
  * DOING: MvrwMisc01: a-date {2022-4-7} → {2022-04-07} (one digit month|day padded),
  *   everywhere in the-file; other forms are skipped.
  */
@@ -2009,7 +2162,7 @@ async function fMain() {
   const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
   // a-rule with its own mode runs that mode: --code MvreName01 = --dupname
   const ooModeOfCode = { MvreName01: 'dupname', MvreName02: 'namecomma', Hvrw08: 'nest', Hvrw07: 'headgap',
-    MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname' };
+    MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname', MvrwMain10: 'attribute' };
   if (sCodeOne) aModeGiven.push(ooModeOfCode[sCodeOne] ?? 'code');
   if (aModeGiven.length > 1) {
     console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')}, --code are separate runs: give one of them`);
@@ -2040,7 +2193,7 @@ async function fMain() {
     console.log('createMcsh.mjs - it puts the-Mcsh-creation-date in the-description:: of sections');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--namecomma|--name|--auto] [--file McshDir000000] [--fix]');
+    console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--namecomma|--attribute|--name|--auto] [--file McshDir000000] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
     console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
@@ -2060,7 +2213,8 @@ async function fMain() {
     console.log('  --srtr       MvrwId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
     console.log('  --dupname    MvreName01: a-name-line twice in ONE para, all but the-first deleted');
     console.log('  --namecomma  MvreName02: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
-    console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr in order');
+    console.log('  --attribute  MvrwMain10: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
+  console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
     console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt');
@@ -2524,6 +2678,15 @@ async function fMain() {
         fWriteFile(sPathFile, sRaw, sNameShort, fPlanName(sRaw, sNameShort, aoSect, fFindNameAll(sNameDir)));
       }
       sCount = `${oCount.NAME ?? 0} names created`;
+    } else if (sMode === 'attribute') {
+      // the-attribute issues are what the-VALIDATOR says: MvrwMain10, file by file
+      for (const oFile of fListMcshSome()) {
+        const sRaw = moFs.readFileSync(oFile.sPathFile, 'utf8');
+        const aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile), sRaw)], sNameDir, true, ['MvrwMain10'])
+          .filter(oIssue => oIssue.sCode === 'MvrwMain10' && oIssue.sNameFile === oFile.sNameFile);
+        if (aoIssue.length) fWriteFile(oFile.sPathFile, sRaw, fShort(oFile.sPathFile), fPlanAttribute(sRaw, fShort(oFile.sPathFile), aoIssue));
+      }
+      sCount = `${oCount.ATTR ?? 0} attribute titles|names fixed · ${oCount.SKIP ?? 0} by hand`;
     } else if (sMode === 'dupname') {
       for (const sPathFile of fFindFileAll(sNameDir)) {
         if (!moPath.basename(sPathFile).startsWith('Mcsh') || fSkipFile(sPathFile)) continue;

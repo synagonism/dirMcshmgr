@@ -64,12 +64,15 @@
  *             or is badly written
  *  MvrwMain08 mmn_attr: a-concept with attribute-sections has no Mmn (main-mind-name)
  *             (attribute-sections: its direct parts "Y of X" | "X'Y", not trees, links, clsText;
- *             Mmn: "Mmn," + "name!⇒Mmn" | "informal!⇒Mmn" + "Mmn!=informal")
+ *             Mmn: "descriptive!⇒Mmn" "Mmn!=descriptive")
  *  MvrwMain09 human_main: the-formal-main-name of a-human (a-concept named "human.Surname.Given[.YYYY]" |
  *             "Surname.Given.human" | "human.Name" with a-Humn/hmn main-name) is not "Humn" + birth-year + name
  *             (Humn1959Sinagu) | "HumnB" + year for BCE (HumnB0384Arst), or is missing
  *  MvrwMain10 attribute: a-direct part-section of a-concept with main-name M is not
  *             "x of M" + name "M'x" (attribute, x small first unless short: BMI) or "M.x" + name "M.x" (specific)
+ *
+ *  MvrwName01 formal: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) of a-name::-para or a-formal title
+ *             has no space and no hyphen; fix: "_" in their place (X'a-b → X'a_b); dirUcd is not checked
  *
  *  MvrwGstr01 gnsp_then_spgn: generic G has specific S (a-linked item of G's "specific-tree::"),
  *             but S does NOT have G as generic (in its "generic-tree::", by nesting, or through its generic-chain)
@@ -86,6 +89,12 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-68-0.2026-11-12: MvrwName01 skips dirUcd; fFormalMvrwName01 exported for createMcsh',
+    'structuralMcsh.js.0-67-0.2026-11-12: MvrwName01 formal: a-formal-name of name:: | a-formal title has no space, no hyphen',
+    'structuralMcsh.js.0-66-0.2026-11-12: MvrwMain10 no longer checks a-small first letter of x (an-open issue); lexicon removed',
+    'structuralMcsh.js.0-65-0.2026-11-12: MvrwMain10 keep-list: Html, Url keep their capital',
+    'structuralMcsh.js.0-64-0.2026-11-12: MvrwMain10 flags a-capital x only when it is an-English word of lexiconEngl.txt (lexiconMcsh.mjs)',
+    'structuralMcsh.js.0-63-0.2026-11-12: MvrwMain10 a-short name of up to 4 characters keeps its capital (Dapp)',
     'structuralMcsh.js.0-62-0.2026-11-11: MvrwMain10 skips the-Unicode char sections "char.…"',
     'structuralMcsh.js.0-61-0.2026-11-11: MvrwMain10 checks the-file-concept too (top sections, not idOverview|idMeta|idSupport)',
     'structuralMcsh.js.0-60-0.2026-11-11: MvrwMain10 attribute: "x of M" + M\'x | "M.x" + M.x',
@@ -764,7 +773,14 @@ function fFindAttrDirect(oIndexIn, oCnptIn) {
   // a) title
   const oSetName = new Set(Object.values(oCnptIn.ooNameLago ?? {}).flatMap(oLago => (oLago.aoName ?? []).map(o => fNormName(o.sName))));
   if (oCnptIn.sNameMainFrml) oSetName.add(fNormName(oCnptIn.sNameMainFrml));
-  for (const sName of oSetName) for (const oSect of oIndexIn.oMapKey.get(sName) ?? []) oSetAttr.add(oSect);
+  // NOT the-complement "N.NO" | "NNo" of the-concept N: it is a-sibling specific, not an-attribute
+  //   (Agntasset.TRADABLE, Agntasset.TRADABLE.NO; Agntskhd.authority, Agntskhd.authorityNo)
+  const fIsComplement = (oSect, sName) => {
+    if (oSect.sType !== 'CnptSect' || oCnptIn.sType === 'CnptFile' || fIsInside(oIndexIn.oMapIdWhole, oSect.sNameId, oCnptIn.sNameId)) return false;
+    const sWord = fNormName((oSect.sNameTitle ?? '').trim().split(/\s/)[0]);
+    return sWord === fNormName(sName + '.NO') || sWord === fNormName(sName + 'No');
+  };
+  for (const sName of oSetName) for (const oSect of oIndexIn.oMapKey.get(sName) ?? []) if (!fIsComplement(oSect, sName)) oSetAttr.add(oSect);
   // b) id: idBase + a-letter, the-shortest ones
   const sIdBase = oCnptIn.sType === 'CnptFile' ? '' : (oCnptIn.sNameId ?? '');
   if (sIdBase) {
@@ -842,7 +858,7 @@ function fCheckMainNameAttrbaseBegin(aoCnptFile) {
 
 // 🔶 [MvrwMain08] mmn_attr: a-concept WITH attribute-sections has an-Mmn (main-mind-name),
 //   the-base of the-main-names of its attributes. An-Mmn is-written:
-//   "informal-Mmn!⇒Mmn" + "Mmn!=informal-Mmn" | "Mmn," + "name!⇒Mmn".
+//   "descriptive!⇒Mmn" "Mmn!=descriptive".
 //   Many concepts have no Mmn: only one with attributes needs it.
 //   Its attribute-sections: fFindAttrDirect (title "Y of N" | "N'Y" | "N.Y", id "idBasename").
 //   A-tree-view | grouping (MISC-ATTRIBUTE of X) concept is not checked.
@@ -868,7 +884,7 @@ function fCheckMmnAttr(aoCnptFile) {
       aoIssue.push(fIssue('WARN', 'MvrwMain08', oCnptFile.sNameFile, oCnpt,
         `mmn_attr: concept "${String(sTitle).trim()}" has ${aTitleAttr.length} attribute-section(s) ` +
         `("${aTitleAttr.slice(0, 3).join('", "')}"${aTitleAttr.length > 3 ? ', …' : ''}) but no Mmn: ` +
-        `write "Mmn," + "name!⇒Mmn" | "informal!⇒Mmn" + "Mmn!=informal"`,
+        `write "descriptive!⇒Mmn" "Mmn!=descriptive"`,
         nLine));
     }
   }
@@ -923,7 +939,7 @@ function fCheckMainNameHuman(aoCnptFile) {
 
 // 🔶 [MvrwMain10] attribute: a-direct part-section of a-concept with main-name M is
 //   a) an-attribute: title "x of M" (NN_x of M), name "McshEngl.M'x," (- → _), both formal-names;
-//      x starts with a-small letter, unless it is a-short name (no small letter: BMI, UNL, DOING);
+//      (whether x starts with a-small letter is NOT checked: an-open issue, {2026-11-12});
 //   b) an-attribute-specific: title "M.x", name "McshEngl.M.x,".
 //   Title and name are compared without "NN_", "(…)" and "{…}". NOT trees (…TREE…), links, clsText,
 //   UPPERCASE grouping titles (MISC-ATTRIBUTE of M). Example: "protocol of AgntRppl" + AgntRppl'protocol.
@@ -958,7 +974,6 @@ function fCheckAttribute(aoCnptFile) {
         if ((mT = /^(?:\d+_)?(.+?) of (\S+)$/.exec(sTitle))) {
           const [, sX, sOf] = mT, sForm = fFormalMvrwMain10(sX);
           if (sOf !== sM) aProblem.push(`title ends "of ${sOf}", not "of ${sM}"`);
-          if (/^[A-Z]/.test(sX) && /[a-z]/.test(sX)) aProblem.push(`"${sX}" starts with a-capital letter`);
           const rName = new RegExp(`^${sM.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'(\\d+_)?${sForm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
           if (!aName.some(sN => rName.test(sN))) aProblem.push(`no name "McshEngl.${sM}'${sForm}"`);
         } else if (sTitle.startsWith(sM + '.')) {
@@ -972,6 +987,68 @@ function fCheckAttribute(aoCnptFile) {
           `attribute: "${sTitle}" (${oChild.sNameId}) of ${oCnpt.bFile ? 'file-concept ' : ''}"${sM}": ${aProblem.join('; ')}`,
           oCnptFile.oMapIdLine.get(oChild.sNameId) ?? null));
       }
+    }
+  }
+  return aoIssue;
+}
+
+// 🔶 [MvrwName01] formal: a-formal-name has NO space and NO hyphen; fix: "_" in their place
+//   (X'a-b → X'a_b, "--" → "__"). A-formal-name has a-separator:
+//   a) X'Y (attribute), b) X.Y (specific) | X:Y (generic), c) X;Y (child) | X;;Y (parent),
+//   d) X/Y (part) | X//Y (whole).
+//   Location: the-names of the-name::-paras (CnptFile, CnptSect) and the-titles that are formal
+//   (one word, after "(…)" "{…}" are removed). A-separator inside "(…)" | "{…}" does not count
+//   (attribute(')--Mcs-name-notation, {human'Bce0551..Bce0479}-Confucius); "'s" "'t" are English
+//   (entity's-attribute, don't); "&#32;" is a-space, the-";" of an-entity "&#44;" is not a-separator;
+//   a-link title "X ( link )" is not checked.
+//   NOT: the-files of dirUcd; Unicode char | block names "char.…" "Ucbk.…" (they keep their spaces),
+//   file names (…​.html …), urls.
+/** OUTPUT: the-fixed formal-name: space, "&#32;", hyphen → "_", outside "(…)" and "{…}" (createMcsh uses it). */
+const fFormalMvrwName01 = sIn => String(sIn ?? '').trim().split(/(\{[^}]*\}|\([^)]*\))/)
+  .map((sPart, nI) => nI % 2 ? sPart : sPart.replace(/&#32;|\s+/g, '_').replace(/-/g, '_')).join('');
+const fNormMvrwName01 = sIn => String(sIn ?? '').replace(/&#32;/g, ' ').replace(/&#?\w+;/g, 'x')
+  .replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/[A-Za-z]'[st](?=[-_\s]|$)/g, 'x').trim();
+const rSepMvrwName01 = /['.:;\/]/;
+const fSkipMvrwName01 = sIn => /^(char|Ucbk)\./.test(sIn) || /\.(html|txt|json|js|mjs|md|css)$/.test(sIn) || /^(https?:|www\.)/.test(sIn);
+/** OUTPUT: '' when sIn is not a-formal-name or has no space | hyphen, else the-reason. */
+function fFindFormalError(sIn) {
+  if (fSkipMvrwName01(sIn)) return '';
+  const sNorm = fNormMvrwName01(sIn);
+  if (!rSepMvrwName01.test(sNorm)) return '';
+  const aBad = [/\s/.test(sNorm) && 'space', /-/.test(sNorm) && 'hyphen'].filter(Boolean);
+  return aBad.length ? `has ${aBad.join(' and ')}: use "_" (${fFormalMvrwName01(sIn)})` : '';
+}
+function fCheckFormal(aoCnptFile) {
+  const aoIssue = [];
+  for (const oCnptFile of aoCnptFile) {
+    if (oCnptFile.sError) continue;
+    // NOT dirUcd: the-Unicode names keep their spaces and hyphens
+    if (/(^|\/)dirUcd\//.test(String(oCnptFile.sNameIdRela ?? '').replace(/\\/g, '/'))) continue;
+    // a) the-names of the-name::-paras
+    const aoParaName = [
+      { oCnpt: null, oPara: (oCnptFile.aoTitlePara ?? []).find(oPara => oPara.sNameTitle === 'name') },
+      ...fFindCnpt(oCnptFile, 'CnptSect').map(oCnpt => ({ oCnpt, oPara: fFindParaAll(oCnpt, 'name')[0] }))
+    ];
+    for (const { oCnpt, oPara } of aoParaName) {
+      if (!oPara?.sPara) continue;
+      const nLinePara = oCnptFile.oMapIdLine.get(oPara.sNameId) ?? null;
+      String(oPara.sPara).split('\n').forEach((sLine, nOffset) => {
+        const aM = /<br>\*\s*(Mcsh[A-Z][a-z]{3})\.([^!,]*)/.exec(sLine);
+        if (!aM) return;
+        const sName = aM[2].trim(), sError = sName && fFindFormalError(sName);
+        if (!sError) return;
+        aoIssue.push(fIssue('WARN', 'MvrwName01', oCnptFile.sNameFile, oCnpt,
+          `formal: name "${aM[1]}.${sName}" ${sError}`, nLinePara != null ? nLinePara + nOffset : null));
+      });
+    }
+    // b) the-titles that are formal
+    for (const oSect of fFindSectAll(oCnptFile)) {
+      const sTitle = String(oSect.sNameTitle ?? '').trim();
+      if (!sTitle || rSectLink.test(sTitle) || /\s/.test(fNormMvrwName01(sTitle))) continue;
+      const sError = fFindFormalError(sTitle);
+      if (!sError) continue;
+      aoIssue.push(fIssue('WARN', 'MvrwName01', oCnptFile.sNameFile, oSect,
+        `formal: title "${sTitle}" ${sError}`, oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
     }
   }
   return aoIssue;
@@ -1336,6 +1413,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwMain08'], sLabel: '   MvrwMain08 Main-names mmn_attr... ', fCheck: () => fCheckMmnAttr(aoCnptFile) },
     { aCode: ['MvrwMain09'], sLabel: '   MvrwMain09 Main-names human_main... ', fCheck: () => fCheckMainNameHuman(aoCnptFile) },
     { aCode: ['MvrwMain10'], sLabel: '   MvrwMain10 Main-names attribute... ', fCheck: () => fCheckAttribute(aoCnptFile) },
+    { aCode: ['MvrwName01'], sLabel: '   MvrwName01 Names formal... ', fCheck: () => fCheckFormal(aoCnptFile) },
   ];
   for (const oCheck of aoCheck) {
     if (aCodeIn.length && !oCheck.aCode.some(sCode => aCodeIn.includes(sCode))) continue;
@@ -1349,5 +1427,6 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
 
 export {
   fRunChecksMcsh,
+  fFormalMvrwName01,   // createMcsh.mjs fixes MvrwName01 with it
   fBuildMapName   // dupMcsh.mjs reports the-duplicate-names from this map
 }

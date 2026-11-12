@@ -30,7 +30,8 @@ Mcsh rules (`structuralMcsh.js`, Mcsh* files only):
 | MvrlMmn06 | (warning) main-name of a "structure of X" section is `Xsrtr`, capital first, no apostrophe |
 | MvrlMmn07 | (warning) the Attrbase line `B!Attrbase,` / `B!Attrbase!⇒M,` comes right after `M!=I` (3rd name line), or after `M!@McshXxx` (4th) in a file-concept |
 | MvrwMain09 | (warning) main-name of a human (`human.Surname.Given[.YYYY]`, `Surname.Given.human`) is `Humn` + birth-year + name (`Humn1959Sinagu`), `HumnB` + year for BCE (`HumnB0384Arst`) |
-| MvrwMain10 | (warning) a direct part-section of a concept with main-name M: attribute title `x of M` + name `M'x` (x small first unless short, e.g. BMI), or specific title `M.x` + name `M.x` |
+| MvrwMain10 | (warning) a direct part-section of a concept with main-name M: attribute title `x of M` + name `M'x`, or specific title `M.x` + name `M.x` |
+| MvrwName01 | (warning) a formal name (`X'Y`, `X.Y`, `X:Y`, `X;Y`, `X;;Y`, `X/Y`, `X//Y`) in a name:: or a formal title has no space and no hyphen: use `_` (`X'a-b` → `X'a_b`); dirUcd is not checked |
 
 Hitp rules (`structuralHitp.js`, every .last.html file):
 
@@ -100,7 +101,9 @@ the backup) or copy the affected files before running it.
 | MvreName01 kind-A duplicates (same name-line twice) | `node dirValid/dupMcsh.mjs <dir> --fix` (inspect first with `--summary` / `--line`) |
 | MvreName01 kind A, with no extra text after the comma | `node dirValid/createMcsh.mjs <dir> --dupname` |
 | MvrwId13 (structure id not ending in srtr) | `node dirValid/createMcsh.mjs <dir> --srtr` (re-points links in every `.last.html`) |
-| ALL of the above that apply, for ONE file | `node dirValid/createMcsh.mjs <dir> --auto --file McshDir000000` (`--dupname`, `--nest`, `--headgap`, `--missing`, `--mainname`, `--srtr` in order; = the visual's validate-file → fix) |
+| MvrwMain10 (attribute `x of M` / specific `M.x` title + formal name), the clear cases | `node dirValid/createMcsh.mjs <dir> --attribute --file McshDir000000` (or `--code MvrwMain10`); a title "of" another concept, or `M'x` vs `M.x` names, is a SKIP for you |
+| MvrwName01 (formal name or formal title with a space or hyphen) | `node dirValid/createMcsh.mjs <dir> --code MvrwName01 --file McshDir000000` (or `--dir dirCor`, `--all`); a name that is a main-name (a `!⇒` target) is a SKIP: use `--mainname` |
+| ALL of the above that apply, for ONE file | `node dirValid/createMcsh.mjs <dir> --auto --file McshDir000000` (`--namecomma`, `--dupname`, `--nest`, `--headgap`, `--missing`, `--mainname`, `--srtr`, `--attribute` in order; = the visual's validate-file → fix) |
 
 Every createMcsh mode takes `--file McshDir000000`: its fixes start in that file only
 (`--mainname`, `--srtr` still re-point the other files).
