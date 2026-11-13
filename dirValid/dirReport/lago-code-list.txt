@@ -1,0 +1,154 @@
+LAGO 4-LETTER CODE LIST — 2026-11-12
+scan: Mcsh*.last.html, main-names Xxxxlago | programing: 24 | other computer: 11 | organism/human: 95 | notes: 12
+
+=== PROGRAMING-LANGUAGE KINDS (13)
+  McshTchInf000006:29    Pgmglago  programing--computer-language
+  McshTchInf000006:1796  Mchnlago  machine-language
+  McshTchInf000006:1850  Trnrlago  trinary-programing-language
+  McshTchInf000006:1895  Binrlago  binary--programing-language
+  McshTchInf000006:1950  Asmblago  assembly-language
+  McshTchInf000006:2013  Btcdlago  bytecode-language
+  McshTchInf000006:2065  Srcdlago  source-code--Pgmglago
+  McshTchInf000006:3180  Scdtlago  Srcdlago.dynamically_typed
+  McshTchInf000006:3195  Scstlago  Srcdlago.statically_type
+  McshTchInf000006:3217  Dmsplago  domain-specific--Pgmglago
+  McshTchInf000006:3232  Dtprlago  data-processing--computer-language
+  McshTchInf000006:3295  Fctnlago  functional-language
+  McshTchInf000006:3345  Oolzlago  object-oriented--programing-language
+
+=== PROGRAMING-LANGUAGE INDIVIDUALS (11)
+  McshTchInf000010:39    Jsgnlago  JavaScript-language
+  McshTchInf000010:7556  Jsdtlago  desktop-JavaScript-language
+  McshTchInf000011:29    Jsbrlago  browser-JavaScript-language
+  McshTchInf000012:30    Jsndlago  Node--JavaScript-language
+  McshTchInf000013:30    Jsellago  Electron--desktop-Javascript-language
+  McshTchInf000014:34    Wasmlago  WebAssembly-language
+  McshTchInf000030:30    Rustlago  Rust-language
+  McshTchInf000031:32    Cppzlago  C++-programing-language
+  McshTchInf000018:6171  Solxlago  Solidity-language
+  McshTchInf000028:395   Movelago  Move-language
+  McshTchInf000039:14366 Wlfmlago  Wolfram-language
+
+=== OTHER COMPUTER-LANGUAGES (11)
+  McshTchInf000005:29    Cmprlago  computer-language
+  McshTchInf000007:33    Cnptlago  concept---knowledge-language
+  McshTchInf000039:29    Knlglago  KNowLedGe-language
+  McshTchInf000039:3820  Ppsllago  propositional-language
+  McshTchInf000039:11824 Rdfzlago  Resource-Description-FrameWork
+  McshTchInf000039:6434  Cycllago  
+  McshTchInf000007:2937  Xsdzlago  XML-Schema-language
+  McshTchInf000029:38    Jsonlago  JavaScript-Object-Nonation--language
+  McshTchInf000035:31    Htmllago  HyperText-Markup-Language
+  McshTchInf000008:44    Hitplago  Html5.Id.Toc.Preview--doc-webapp-language
+  McshTchInf000009:32    Mcshlago  Hitp_Mcs-language
+
+=== ORGANISM AND HUMAN LANGUAGES (95)
+  McshLag000005:32       Ogmslago  language-of-organisms
+  McshLag000005:234      Ogmtlago  trans-organismic--Ogmslago
+  McshLag000005:250      Ogmrlago  inter-organisms--Ogmslago
+  McshLag000005:266      Ogmulago  natural-Ogmslago
+  McshLag000005:297      Ogmclago  constructed-Ogmslago
+  McshLag000005:314      Ogmmlago  mind-Ogmslago
+  McshLag000005:368      Anmllago  animal--mind-language
+  McshLag000005:403      Ogmnlago  non-mind-Ogmslago
+  McshLag000005:418      Hmanlago  human-language
+  McshLag000005:531      Ogmilago  non-human--Ogmslago
+  McshLag000007:31       Hmmdlago  human-mind--language
+  McshLag000007:31859    Famllago  family
+  McshLag000007:32185    Visllago  visual-Hmmdlago
+  McshLag000007:32227    Hptclago  haptic-Hmmdlago
+  McshLag000007:32249    Ntrllago  natural--human-mind-language
+  McshLag000007:32274    Cnrdlago  constructed--human-mind-language
+  McshLag000007:32459    Textlago  written-language
+  McshLag000007:32764    Sylblago  syllabic-Hmmdlago
+  McshLag000007:32854    Cptglago  conceptographic-Hmmdlago
+  McshLag000007:33176    Dlctlago  dialect-of-Hmmdlago
+  McshLag000007:33304    Frmllago  formal-human-mind-language
+  McshLag000007:33362    Glbllago  global-language
+  McshLag000007:33505    Sovblago  Subject-Object-Verb--language
+  McshLag000008:33       Alfalago  alphabetic-language
+  McshLag000009:29       Spchlago  speech--human-mind-language
+  McshLag000009:4548     Tonllago  tonal-language
+  McshLag000011:36       Engllago  English-language
+  McshLag000012:30       Espolago  Esperanto-language
+  McshLag000018:31       Zhonlago  Standard-Chinese--language
+  McshLag000018:18153    Ptstlago  ProtoSinoTibetan-language
+  McshLag000018:18490    Zhollago  Literary-Chinese
+  McshLag000018:18953    Zhoolago  Old-Chinese
+  McshLag000018:19023    Zhomlago  Middle-Chinese
+  McshLag000018:19096    Zhodlago  Mandarin-language
+  McshLag000018:19236    Zhoylago  Yue-language
+  McshLag000018:19272    Zhowlago  Wu-language
+  McshLag000018:19358    Zhoilago  Min-language
+  McshLag000018:19447    Zhojlago  Jin-language
+  McshLag000018:19519    Zhohlago  Hakka-language
+  McshLag000018:19617    Zhoxlago  Xiang-language
+  McshLag000018:19703    Zhoglago  Gan-language
+  McshLag000020:29       Ellnlago  Modern-Greek-language-{1453}
+  McshLag000027:32       Ellalago  Ancient-Greek-language
+  McshLag000028:1587     Ellmlago  Medieval-Greek
+  McshLag000028:1613     Ellklago  Koine-Greek
+  McshLag000028:1928     Ellclago  Mycenaean/maisinían/-Greek
+  McshLag000028:1970     Ellblago  Linear-B
+  McshLag000028:2026     Ellrlago  Linear-A
+  McshLag000028:2112     Ellplago  Proto-Greek
+  McshLag000029:128      Engolago  Old-English-language
+  McshLag000029:150      Engmlago  Middle-English-language
+  McshLag000029:172      Engelago  Early-Modern-English
+  McshLag000029:243      Engslago  standard-English
+  McshLag000029:265      Engalago  American-English
+  McshLag000029:289      Engblago  British-English
+  McshLag000030:32       Turklago  Turkish-language
+  McshLag000031:31       Gstrlago  sign--human-mind-language
+  McshLag000033:74       Deutlago  German-language
+  McshLag000033:3876     Deuglago  German--Standard-German
+  McshLag000033:3934     Deualago  Austrian--Standard-German
+  McshLag000033:3988     Deuslago  Swiss--Standard-German
+  McshLag000034:33       Bcmslago  Bosnian-Croatian-Montenegrin-Serbian--SlavoLanguage
+  McshLag000034:3597     Sboslago  SlavoBosnian-Bosanski
+  McshLag000034:4585     Shrvlago  SlavoCroatian-Hrivatski
+  McshLag000034:5087     Scnrlago  SlavoMontenegrin-Tsirnogorski
+  McshLag000034:6117     Ssrplago  SlavoSerbian-Sripski
+  McshLag000034:7071     Smlslago  SlavoMolisano
+  McshLag000035:77       Spanlago  Spanish-language
+  McshLag000036:73       Arablago  Arabic-language
+  McshLag000036:3266     Araslago  Modern-Standard-Arabic
+  McshLag000036:3387     Araelago  Egyptian-Arabic
+  McshLag000036:3519     Araglago  Gulf-Arabic
+  McshLag000036:3555     Arailago  Iraqi-Arabic
+  McshLag000036:3618     Arallago  Levantine-Arabic
+  McshLag000036:3681     Aramlago  Maghrebi-Arabic
+  McshLag000037:55       Hiurlago  Hindi-Urdu--language
+  McshLag000037:2495     Hindlago  Hindi-language
+  McshLag000037:4675     Urdulago  
+  McshLag000039:1582     Ptielago  proto-Indo-European-language
+  McshLag000040:1813     Ptaalago  ProtoAfroAsiatic-language
+  McshLag000041:1733     Pttklago  ProtoTurkic
+  McshLag000043:64       Koralago  Korean-language
+  McshStn000020:565      Euzzlago  language-of-EU
+  McshStn000031:8106     Chnalago  SoctChna'language
+  McshStn000034:268      Vnmalago  Vietnamese-language
+  McshStn000037:171      Fraclago  French-language
+  McshStn000038:164      Sbullago  Slavo-Bulgarian-language
+  McshStn000039:166      Sqiplago  Albanian-language
+  McshStn000040:156      Smkdlago  SlavoMacedonian
+  McshStn000041:177      Sslvlago  Slovenian-language
+  McshStn000043:160      Sruslago  Russian-language
+  McshStn000044:163      Romnlago  Romanian-language
+  McshStn000048:184      Jpnslago  Japanese-language
+  McshStn000050:154      Khmrlago  Cambodia-language
+  McshStn000051:123      Sgprlago  Singapore-language
+
+=== NOTES (12)
+  McshTchInf000039:14366  Wlfmlago is defined under Knlglago, counted here as programing
+  McshTchInf000007:43     Cnkllago is an alias of Cnptlago
+  McshTchInf000005:978    Tdoclago is an alias of CmplTdoc
+  McshLag000037:2496      Hidilago is an alias of Hindlago
+  McshStn000040:158       Nmkdlago is an alias of Smkdlago
+  McshStn000038:168       Svbglago is an alias of Sbullago
+  McshStn000043:162       Svrulago is an alias of Sruslago
+  McshStn000041:180       Svsllago is an alias of Sslvlago
+  McshLag000010:78        Sngolago is an alias of Sngulagu
+  McshStn000041:1389      Hrvklago is used but never defined
+  McshLag000007:32205     Ogsmlago:generic is used but never defined (Ogmslago?)
+  McshTchInf000006:3486   languages without a 4-letter code: lagCscr, lagLean :3648, lagQury :3420, lagKngr McshTchInf000007:1966, lagCtmp McshTchInf000007:2216, lagWeb McshTchInf000040:792, lagEllt McshLag000020:13025

@@ -1,0 +1,298 @@
+CMPRLAGO SPECIFICS AND THEIR 4-LETTER CODE — 2026-11-12
+method: from Cmprlago follow specific-tree:: items, generic-tree:: claims, X.name sections and heading links (Cnptlago, Knlglago) | main LLLLlago: 13 | main lagLLLL or lagoLLLL: 37 | other main with code alias: 17 | no code: 40 | plain names, no concept: 170 + 80 file extensions | Pgmglago branch: see pgmglago-specific-code.txt
+
+=== MAIN-NAME LLLLlago (13)
+  McshTchInf000005:27     Cmprlago    root
+  McshTchInf000007:31     Cnptlago    root
+  McshTchInf000039:27     Knlglago    root
+  McshTchInf000006:27     Pgmglago    sptr item (of Cmprlago)
+  McshTchInf000008:42     Hitplago    sptr item (of Cmprlago)
+  McshTchInf000009:30     Mcshlago    sptr item (of Cnptlago)
+  McshTchInf000039:3818   Ppsllago    name Knlglago.004_propositional (of Knlglago)
+  McshTchInf000039:6433   Cycllago    name Knlglago.031_CycL (of Knlglago)
+  McshTchInf000039:11821  Rdfzlago    name Knlglago.014_RDF (of Knlglago)
+  McshTchInf000039:14364  Wlfmlago    name Knlglago.032_Wolfram_language (of Knlglago)
+  McshTchInf000006:3229   Dtprlago    gntr claim (of CmplCdat)
+  McshTchInf000029:36     Jsonlago    gntr claim (of CmplCdat)
+  McshTchInf000035:29     Htmllago    sptr item (of CmplTdoc)
+
+=== MAIN-NAME lagLLLL OR lagoLLLL (37)
+  McshTchInf000007:1500   lagUmlg     name Cnptlago.035_UML (of Cnptlago)
+  McshTchInf000007:1964   lagKngr     name Cnptlago.042_knowledge_graph (of Cnptlago)
+  McshTchInf000007:2214   lagCtmp     name Cnptlago.032_concept_map (of Cnptlago)
+  McshTchInf000039:3414   lagoLgkl    gntr claim (of Knlglago)
+  McshTchInf000039:3642   lagoCdnl    name Knlglago.controlled_natural_language_01 (of Knlglago)
+  McshTchInf000039:4070   lagoWkdt    name Knlglago.008_wikidata (of Knlglago)
+  McshTchInf000039:4716   lagoGlsh    name Knlglago.005_Gellish (of Knlglago)
+  McshTchInf000039:5039   lagoFolc    name Knlglago.015_first_order_logic (of Knlglago)
+  McshTchInf000039:5224   lagoHolc    name Knlglago.016_higher_order_logic (of Knlglago)
+  McshTchInf000039:5324   lagoCgaf    name Knlglago.017_conceptual_graphs (of Knlglago)
+  McshTchInf000039:5767   lagoDlgc    name Knlglago.018_description_logic (of Knlglago)
+  McshTchInf000039:5923   lagoFlgc    name Knlglago.019_frame_logic (of Knlglago)
+  McshTchInf000039:5971   lagoTlgc    name Knlglago.020_transaction_logic (of Knlglago)
+  McshTchInf000039:6046   lagoDtlg    name Knlglago.028_Datalog (of Knlglago)
+  McshTchInf000039:6065   lagoPrlg    name Knlglago.021_Prolog (of Knlglago)
+  McshTchInf000039:6209   lagoFnlc    name Knlglago.022_functional_logic (of Knlglago)
+  McshTchInf000039:6262   lagoCmlc    name Knlglago.023_common_logic (of Knlglago)
+  McshTchInf000039:6324   lagoXsbl    name Knlglago.024_XSB (of Knlglago)
+  McshTchInf000039:8279   lagoOntg    name Knlglago.010_ontology_language (of Knlglago)
+  McshTchInf000039:10872  lagoOwlg    name Knlglago.026_OWL (of Knlglago)
+  McshTchInf000039:11463  lagoRule    name Knlglago.011_rule (of Knlglago)
+  McshTchInf000039:11546  lagoRift    name Knlglago.027_RIF (of Knlglago)
+  McshTchInf000039:11616  lagoSweb    name Knlglago.012_semantic_web (of Knlglago)
+  McshTchInf000039:14217  lagoSprq    name Knlglago.013_SPARQL (of Knlglago)
+  McshTchInf000039:16599  lagoTels    name Knlglago.029_Telos (of Knlglago)
+  McshTchInf000005:731    lagDtpr     sptr item (of CmplCdat)
+  McshTchInf000005:1324   lagDpdf     name CmplTdoc.PDF (of CmplTdoc)
+  McshTchInf000005:1645   lagOdfo     sptr item (of CmplFileFormat)
+  McshTchInf000039:3736   lagoAcen    name lagoCdnl.ACE (of lagoCdnl)
+  McshTchInf000039:5199   lagoKift    sptr item (of lagoFolc)
+  McshTchInf000039:5708   lagoCgdf    sptr item (of lagoCgaf)
+  McshTchInf000039:5727   lagoCglf    sptr item (of lagoCgaf)
+  McshTchInf000039:5742   lagoCgif    sptr item (of lagoCgaf)
+  McshTchInf000039:11598  lagoSwrl    name lagoOntg.Swrl (of lagoOntg)
+  McshTchInf000039:11526  lagoRlml    name lagoRule.RuleML (of lagoRule)
+  McshTchInf000039:14077  lagoRdfs    name Rdfzlago.RDFS_ (of Rdfzlago)
+  McshTchInf000039:14094  lagoRdfr    name Rdfzlago.RDF_star_ (of Rdfzlago)
+
+=== OTHER MAIN-NAME, CODE ONLY AS ALIAS (17)
+  McshTchInf000005:639    CmplCpgmNo                  alias lagRptn | name Cmprlago.002_programingNo (of Cmprlago)
+  McshTchInf000005:705    CmplCdat                    alias lagCdat | name Cmprlago.013_data (of Cmprlago)
+  McshTchInf000005:879    CmplChar                    alias lagChar | name Cmprlago.binaryNo (of Cmprlago)
+  McshTchInf000005:898    CmplDtrp                    alias lagDtrp | name Cmprlago.data_representation_006 (of Cmprlago)
+  McshTchInf000005:975    CmplTdoc                    alias Tdoclago, lagTdoc, lagoTdoc | name Cmprlago.text_document_representation_0 (of Cmprlago)
+  McshTchInf000005:1381   CmplMrkp                    alias lagMrkp | name Cmprlago.011_markup_language (of Cmprlago)
+  McshTchInf000005:1443   CmplFileFormat              alias lagFile | name Cmprlago.file_format_010 (of Cmprlago)
+  McshTchInf000007:1372   CptlCtsr                    alias lagCtsr | name Cnptlago.structure_001 (of Cnptlago)
+  McshTchInf000007:1395   CptlCtdg                    alias lagCtdg | name Cnptlago.doing_002 (of Cnptlago)
+  McshTchInf000007:1416   CptlCsad                    alias lagCsad | name Cnptlago.structure_and_doing_003 (of Cnptlago)
+  McshTchInf000007:1439   CptlCtxt                    alias lagCtxt | name Cnptlago.textual_033 (of Cnptlago)
+  McshTchInf000007:1456   CptlCvkl                    alias lagCvkl | name Cnptlago.visual_034 (of Cnptlago)
+  McshTchInf000007:1634   CptlFram                    alias lagFram | name Cnptlago.frame_037 (of Cnptlago)
+  McshTchInf000007:1764   CptlSnet                    alias lagNtwk, lagSnet | name Cnptlago.022_semantic_network (of Cnptlago)
+  McshTchInf000007:2237   CptlXmlg                    alias lagXmlg | name Cnptlago.XML_010 (of Cnptlago)
+  McshTchInf000039:4768   lagoLogic                   alias lagoLgcp | name Knlglago.009_logic_programing (of Knlglago)
+  McshTchInf000039:14148  SKOS                        alias lagoSkos | name Knlglago.030_SKOS (of Knlglago)
+
+=== NO 4-LETTER CODE (40)
+  McshTchInf000005:686    CmplCpgmBo                            name Cmprlago.programingBoth (of Cmprlago)
+  McshTchInf000005:753    CmplBnr                               name Cmprlago.binary_info_ (of Cmprlago)
+  McshTchInf000005:917    data-serialization-format             name Cmprlago.008_data_serialization (of Cmprlago)
+  McshTchInf000005:933    CmplDsv                               name Cmprlago.009_delimiter_separated_values (of Cmprlago)
+  McshTchInf000007:1519   concept-mapping                       name Cnptlago.038_concept_mapping (of Cnptlago)
+  McshTchInf000007:1546   VUE                                   name Cnptlago.041_VUE (of Cnptlago)
+  McshTchInf000007:1564   concept--markup-language              name Cnptlago.039_markup (of Cnptlago)
+  McshTchInf000007:3399   Cnptlago.040_symbolic                 name Cnptlago.040_symbolic (of Cnptlago)
+  McshTchInf000039:4683   KnlglagoEntity_attribute_value_model  name Knlglago.007_entity_attribute_value_mod (of Knlglago)
+  McshTchInf000039:4700   KnlglagoAttribute_value_system        name Knlglago.006_attribute_value_system (of Knlglago)
+  McshTchInf000039:6391   lagFlr2                               name Knlglago.025_Flora_2_language (of Knlglago)
+  McshTchInf000039:16568  Knlglago.MISC                         name Knlglago.MISC (of Knlglago)
+  McshTchInf000005:1339   TdoclagoMrkp                          name CmplTdoc.markup (of CmplTdoc)
+  McshTchInf000005:1662   lagOoxml                              sptr item (of CmplFileFormat)
+  McshTchInf000007:1483   concept_mapping                       sptr item (of CptlCvkl)
+  McshTchInf000039:3559   AMR                                   name lagoLgkl.Abstract_Meaning_Representatio (of lagoLgkl)
+  McshTchInf000039:3595   Conceptual-Dependency-Theory          name lagoLgkl.Conceptual_Dependency_Theory (of lagoLgkl)
+  McshTchInf000039:3628   embeddings                            name lagoLgkl.embeddings (of lagoLgkl)
+  McshTchInf000039:3804   ClearTalk-lagoCdnl                    name lagoCdnl.ClearTalk (of lagoCdnl)
+  McshTchInf000039:6193   lagoLogic.HiLog_                      name lagoLogic.HiLog_ (of lagoLogic)
+  McshTchInf000039:8234   Cycllago.EL'(expressive-language)     name Cycllago.EL'(expressive-language) (of Cycllago)
+  McshTchInf000039:8257   Cycllago.HL'(heuristic-language)      name Cycllago.HL'(heuristic-language) (of Cycllago)
+  McshTchInf000039:10840  concept-lagoOntg                      name lagoOntg.concept (of lagoOntg)
+  McshTchInf000039:10857  lagoOntg.markup                       name lagoOntg.markup (of lagoOntg)
+  McshTchInf000039:11408  OBO--ontology-language                name lagoOntg.OBO (of lagoOntg)
+  McshTchInf000039:11445  SHOE                                  name lagoOntg.SHOE (of lagoOntg)
+  McshTchInf000039:13901  TTL-(turtle-format)--lagoOntg         name lagoOntg.TTL_(turtle-format) (of lagoOntg)
+  McshTchInf000039:11360  lagOwl2                               sptr item (of lagoOwlg)
+  McshTchInf000039:11805  SHACL-{2013}                          sptr item (of lagoSweb)
+  McshTchInf000039:11806  solid_project                         sptr item (of lagoSweb)
+  McshTchInf000039:14296  lagoSweb.SHACL_                       name lagoSweb.SHACL_ (of lagoSweb)
+  McshTchInf000039:14347  lagoSweb.solid_project_               name lagoSweb.solid_project_ (of lagoSweb)
+  McshTchInf000039:13806  Rdfzlago.concrete_RDF_syntax          name Rdfzlago.concrete_RDF_syntax (of Rdfzlago)
+  McshTchInf000039:13833  N_Triple_Rdfzlago                     name Rdfzlago.N_Triples (of Rdfzlago)
+  McshTchInf000039:13948  TriG-Rdfzlago                         name Rdfzlago.TriG (of Rdfzlago)
+  McshTchInf000039:13962  N_Quads_Rdfzlago                      name Rdfzlago.N_Quads (of Rdfzlago)
+  McshTchInf000039:14009  RDFa-Rdfzlago                         name Rdfzlago.RDFa (of Rdfzlago)
+  McshTchInf000039:14044  RDF/XML_Rdfzlago                      name Rdfzlago.RDF/XML (of Rdfzlago)
+  McshTchInf000029:648    Jnld                                  name Jsonlago.JSON_LD_ (of Jsonlago)
+  McshTchInf000029:772    Jnst                                  name Jsonlago.JSON_stat_ (of Jsonlago)
+
+=== PLAIN NAMES IN SPECIFIC-TREES, NO CONCEPT, NO CODE (170)
+  McshTchInf000007:1322   Cnptlago    processing-Cnptlago
+  McshTchInf000007:1323   Cnptlago    representation-Cnptlago
+  McshTchInf000007:1324   Cnptlago    processing-and-representation-Cnptlago
+  McshTchInf000007:1326   Cnptlago    general-purpose
+  McshTchInf000007:1327   Cnptlago    generalNo-purpose
+  McshTchInf000007:1329   Cnptlago    explicit-krl
+  McshTchInf000007:1330   Cnptlago    explicitNo
+  McshTchInf000007:1332   Cnptlago    uniform
+  McshTchInf000007:1333   Cnptlago    uniformNo
+  McshTchInf000007:1335   Cnptlago    common-logic
+  McshTchInf000007:1336   Cnptlago    concept-mapping
+  McshTchInf000007:1337   Cnptlago    conceptual-graph
+  McshTchInf000007:1338   Cnptlago    controlled-natural-language
+  McshTchInf000007:1339   Cnptlago    description-logics
+  McshTchInf000007:1340   Cnptlago    entity-attribute-value
+  McshTchInf000007:1341   Cnptlago    first-order-logic
+  McshTchInf000007:1342   Cnptlago    formal-concept-analysis
+  McshTchInf000007:1343   Cnptlago    frame-based
+  McshTchInf000007:1344   Cnptlago    knowledge-graph
+  McshTchInf000007:1345   Cnptlago    logic-krl
+  McshTchInf000007:1346   Cnptlago    ontology-krl
+  McshTchInf000007:1347   Cnptlago    propositional-Cnptlago
+  McshTchInf000007:1348   Cnptlago    semantic-network
+  McshTchInf000007:1349   Cnptlago    topic-maps
+  McshTchInf000007:1350   Cnptlago    visual
+  McshTchInf000007:1352   Cnptlago    Cycl
+  McshTchInf000007:1353   Cnptlago    KIF
+  McshTchInf000007:1354   Cnptlago    KL_ONE
+  McshTchInf000007:1355   Cnptlago    loom
+  McshTchInf000007:1356   Cnptlago    OWL
+  McshTchInf000007:1357   Cnptlago    RDF
+  McshTchInf000007:1358   Cnptlago    RIF
+  McshTchInf000007:1359   Cnptlago    SHOE
+  McshTchInf000039:3394   Knlglago    concept-Knlglago
+  McshTchInf000039:3395   Knlglago    logo-Knlglago
+  McshTchInf000005:671    CmplCpgmNo  data-representation-language
+  McshTchInf000005:672    CmplCpgmNo  knowledge-representation-language
+  McshTchInf000005:674    CmplCpgmNo  lagJson</
+  McshTchInf000005:1429   CmplMrkp    text-document-lagMrkp
+  McshTchInf000005:1430   CmplMrkp    concept-lagMrkp
+  McshTchInf000007:1748   CptlFram    CycL
+  McshTchInf000007:1749   CptlFram    KEE
+  McshTchInf000007:1750   CptlFram    KL-ONE
+  McshTchInf000007:1751   CptlFram    KRL
+  McshTchInf000007:1752   CptlFram    Loom
+  McshTchInf000039:3542   lagoLgkl    controlled-natural-language
+  McshTchInf000039:3543   lagoLgkl    language-model
+  McshTchInf000039:3544   lagoLgkl    logic
+  McshTchInf000039:3545   lagoLgkl    propositional
+  McshTchInf000039:3692   lagoCdnl    ACE'(attempto-controlled-English)-lagoCdnl
+  McshTchInf000039:3693   lagoCdnl    CLCE'(common-logic-controlled-English)-lagoCdnl
+  McshTchInf000039:3694   lagoCdnl    CLOnE-lagoCdnl
+  McshTchInf000039:3695   lagoCdnl    CPL'(computer-processable-language)-lagoCdnl
+  McshTchInf000039:3696   lagoCdnl    Formalized-English-lagoCdnl
+  McshTchInf000039:3697   lagoCdnl    Lite-Natural-Language-lagoCdnl
+  McshTchInf000039:3698   lagoCdnl    PENG'(processable-English)-lagoCdnl
+  McshTchInf000039:3699   lagoCdnl    Rabbit-lagoCdnl
+  McshTchInf000039:3700   lagoCdnl    SOS'(Sydney-OWL-Syntax)-lagoCdnl
+  McshTchInf000039:4033   Ppsllago    first-order-logic-language
+  McshTchInf000039:4034   Ppsllago    ontology-language
+  McshTchInf000039:4951   lagoLogic   Functional logic programming languages‎
+  McshTchInf000039:4952   lagoLogic   Prolog programming language family‎
+  McshTchInf000039:4953   lagoLogic   Absys
+  McshTchInf000039:4954   lagoLogic   Algebraic Logic Functional programming language
+  McshTchInf000039:4955   lagoLogic   Alice (programming language)
+  McshTchInf000039:4956   lagoLogic   Alma-0
+  McshTchInf000039:4957   lagoLogic   CHIP (programming language)
+  McshTchInf000039:4958   lagoLogic   Ciao (programming language)
+  McshTchInf000039:4959   lagoLogic   CLACL
+  McshTchInf000039:4960   lagoLogic   CycL
+  McshTchInf000039:4961   lagoLogic   Datalog
+  McshTchInf000039:4962   lagoLogic   Datomic
+  McshTchInf000039:4963   lagoLogic   DLV
+  McshTchInf000039:4964   lagoLogic   ECLiPSe
+  McshTchInf000039:4965   lagoLogic   F-logic
+  McshTchInf000039:4966   lagoLogic   Flix (programming language)
+  McshTchInf000039:4967   lagoLogic   Flora-2
+  McshTchInf000039:4968   lagoLogic   Fril
+  McshTchInf000039:4969   lagoLogic   FuzzyCLIPS
+  McshTchInf000039:4970   lagoLogic   Game Description Language
+  McshTchInf000039:4971   lagoLogic   Gφdel (programming language)
+  McshTchInf000039:4972   lagoLogic   HiLog
+  McshTchInf000039:4973   lagoLogic   Janus (concurrent constraint programming language)
+  McshTchInf000039:4974   lagoLogic   ΛProlog
+  McshTchInf000039:4975   lagoLogic   Logtalk
+  McshTchInf000039:4976   lagoLogic   Maude system
+  McshTchInf000039:4977   lagoLogic   Mercury (programming language)
+  McshTchInf000039:4978   lagoLogic   Oracle Policy Automation
+  McshTchInf000039:4979   lagoLogic   Oz (programming language)
+  McshTchInf000039:4980   lagoLogic   Parlog
+  McshTchInf000039:4981   lagoLogic   Planner (programming language)
+  McshTchInf000039:4982   lagoLogic   PROGOL
+  McshTchInf000039:4983   lagoLogic   Prolog
+  McshTchInf000039:4984   lagoLogic   Prolog++
+  McshTchInf000039:4985   lagoLogic   Prolog32
+  McshTchInf000039:4986   lagoLogic   Prova
+  McshTchInf000039:4987   lagoLogic   .QL
+  McshTchInf000039:4988   lagoLogic   Rebeca (programming language)
+  McshTchInf000039:4989   lagoLogic   ROOP (programming language)
+  McshTchInf000039:4990   lagoLogic   SWI-Prolog
+  McshTchInf000039:4991   lagoLogic   ToonTalk
+  McshTchInf000039:4992   lagoLogic   Transaction logic
+  McshTchInf000039:4993   lagoLogic   Twelf
+  McshTchInf000039:4994   lagoLogic   Visual Prolog
+  McshTchInf000039:4995   lagoLogic   XSB
+  McshTchInf000039:6145   lagoPrlg    Absys
+  McshTchInf000039:6146   lagoPrlg    B-Prolog
+  McshTchInf000039:6147   lagoPrlg    BNR Prolog
+  McshTchInf000039:6148   lagoPrlg    ECLiPSe
+  McshTchInf000039:6149   lagoPrlg    GNU Prolog
+  McshTchInf000039:6150   lagoPrlg    KL0
+  McshTchInf000039:6151   lagoPrlg    KL1
+  McshTchInf000039:6152   lagoPrlg    ΛProlog
+  McshTchInf000039:6153   lagoPrlg    Logtalk
+  McshTchInf000039:6154   lagoPrlg    Objlog
+  McshTchInf000039:6155   lagoPrlg    Prolog++
+  McshTchInf000039:6156   lagoPrlg    Prolog32
+  McshTchInf000039:6157   lagoPrlg    Strand (programming language)
+  McshTchInf000039:6158   lagoPrlg    SWI-Prolog
+  McshTchInf000039:6159   lagoPrlg    Visual Prolog
+  McshTchInf000039:6160   lagoPrlg    YAP (Prolog)
+  McshTchInf000039:6304   lagoCmlc    CLIF
+  McshTchInf000039:6305   lagoCmlc    XCL
+  McshTchInf000039:10770  lagoOntg    markup-lagoOntg
+  McshTchInf000039:10772  lagoOntg    description-logic-based-lagoOnt
+  McshTchInf000039:10773  lagoOntg    first-order-logic-based-lagoOnt
+  McshTchInf000039:10774  lagoOntg    frame-based-lagoOnt
+  McshTchInf000039:10776  lagoOntg    Common Logic
+  McshTchInf000039:10777  lagoOntg    CycL
+  McshTchInf000039:10778  lagoOntg    DAML+OIL
+  McshTchInf000039:10779  lagoOntg    DOGMA (Developing Ontology-Grounded Methods and Applications)
+  McshTchInf000039:10780  lagoOntg    F-Logic
+  McshTchInf000039:10781  lagoOntg    KIF
+  McshTchInf000039:10782  lagoOntg    KL-ONE
+  McshTchInf000039:10783  lagoOntg    KM
+  McshTchInf000039:10784  lagoOntg    LOOM
+  McshTchInf000039:10785  lagoOntg    OCML (Operational Conceptual Modelling Language)
+  McshTchInf000039:10786  lagoOntg    OIL (Ontology Inference Layer)
+  McshTchInf000039:10787  lagoOntg    OKBC
+  McshTchInf000039:10788  lagoOntg    OWL
+  McshTchInf000039:10789  lagoOntg    PLIB (Parts LIBrary)
+  McshTchInf000039:10790  lagoOntg    RACER
+  McshTchInf000039:10791  lagoOntg    RDF
+  McshTchInf000039:10792  lagoOntg    SHOE
+  McshTchInf000039:11497  lagoRule    RIF
+  McshTchInf000039:11498  lagoRule    RuleML
+  McshTchInf000039:11499  lagoRule    SWRL
+  McshTchInf000039:11502  lagoRule    awk
+  McshTchInf000039:11503  lagoRule    CLIPS
+  McshTchInf000039:11504  lagoRule    Constraint Handling Rules
+  McshTchInf000039:11505  lagoRule    Drools
+  McshTchInf000039:11506  lagoRule    GOAL agent programming language
+  McshTchInf000039:11507  lagoRule    Jess
+  McshTchInf000039:11508  lagoRule    OPS5
+  McshTchInf000039:11509  lagoRule    Prolog
+  McshTchInf000039:11510  lagoRule    ToonTalk – robots are rules
+  McshTchInf000039:11511  lagoRule    Mathematica
+  McshTchInf000039:11512  lagoRule    XSLT[citation needed]
+  McshTchInf000039:11513  lagoRule    Wolfram Language"
+  McshTchInf000039:13790  Rdfzlago    Turtle family of RDF languages (N-Triples, Turtle, TriG and N-Quads)
+  McshTchInf000039:13791  Rdfzlago    JSON-LD (JSON-based RDF syntax)
+  McshTchInf000039:13792  Rdfzlago    RDFa (for HTML and XML embedding)
+  McshTchInf000039:13793  Rdfzlago    RDF/XML (XML syntax for RDF)
+  McshTchInf000029:626    Jsonlago    GeoJSON
+  McshTchInf000029:627    Jsonlago    JSON-LD
+  McshTchInf000029:628    Jsonlago    JSON-RPC
+  McshTchInf000029:629    Jsonlago    JSON-stat
+  McshTchInf000029:630    Jsonlago    JsonML
+  McshTchInf000029:631    Jsonlago    Smile (data interchange format)
+  McshTchInf000029:632    Jsonlago    UBJSON
+
+=== NOTES (10)
+  McshTchInf000006:29     Pgmglago branch not repeated here: 21 LLLLlago, 4 lagLLLL, 8 without code (pgmglago-specific-code.txt)
+  McshTchInf000005:603    specific-tree of Cmprlago lists only Pgmglago and Hitplago; its 11 own sections Cmprlago.X are not listed
+  McshTchInf000005:737    Cmprlago.logo--knowledge-language and :742 Cmprlago.concept--knowledge-language are heading links only; Knlglago and Cnptlago do not claim Cmprlago as generic
+  McshTchInf000005:731    lagDtpr is a specific-tree item of CmplCdat with no definition (Dtprlago is at McshTchInf000006:3229)
+  McshTchInf000005:674    link in specific-tree of CmplCpgmNo has a broken href McsTchInf000010on.last.html (lagJson)
+  McshTchInf000005:1223   specific-tree of CmplTdoc holds 80 file-extension lines, not counted as languages
+  McshTchInf000039:6391   near-codes that miss the pattern: lagFlr2, lagOwl2 McshTchInf000039:11360 (digit), lagOoxml McshTchInf000005:1662 (5 letters), Jnld McshTchInf000029:648, Jnst :772 (no lag part)

@@ -56,7 +56,8 @@
  *  MvrwMain04 doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" CnptSect
  *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
  *  MvrwMain05 infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
- *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc)
+ *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc);
+ *             infrsc_info_resource_leaf: a-section without subsections has a-main-name (only X'info_resource is needed)
  *  MvrwMain06 srtr_structure_main: the-main-name of a "structure of X" | "X'structure" CnptSect
  *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
  *  MvrwMain07 attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
@@ -89,6 +90,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-69-0.2026-11-13: MvrwMain05 infrsc_info_resource_leaf: a-main-name ONLY in a-section with subsections',
     'structuralMcsh.js.0-68-0.2026-11-12: MvrwName01 skips dirUcd; fFormalMvrwName01 exported for createMcsh',
     'structuralMcsh.js.0-67-0.2026-11-12: MvrwName01 formal: a-formal-name of name:: | a-formal title has no space, no hyphen',
     'structuralMcsh.js.0-66-0.2026-11-12: MvrwMain10 no longer checks a-small first letter of x (an-open issue); lexicon removed',
@@ -656,15 +658,31 @@ function fCheckMainNameHyphen(aoCnptFile) {
  *   a-genericSpecific name starts with its small-letter word: foodGingerevaln (word "food" + "Ginger").
  * OUTPUT: array of WARN-issues with code sCode.
  */
-function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix) {
+function fCheckMainNameSuffix(aoCnptFile, sCode, sNameRule, rTitle, sSuffix, bLeafNoMain = false) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
+    // bLeafNoMain: the-ids of the-sections with subsections
+    const oSetIdWhole = bLeafNoMain
+      ? new Set(fFindSectAll(oCnptFile).map(oSectOne => oSectOne.sIdWhole_elmt ?? null)) : null;
     for (const oSect of fFindCnpt(oCnptFile, 'CnptSect')) {
       if (!rTitle.test((oSect.sNameTitle ?? '').trim())) continue;
       const sMain = oSect.sNameMainFrml ?? '';
       // no Mmn (main-mind-name): nothing to judge; an-Mmn is needed only by a-concept with attributes
       if (!sMain) continue;
+      // bLeafNoMain: a-section without subsections has NO main-name, only its formal-name X'info_resource
+      if (bLeafNoMain && !oSetIdWhole.has(oSect.sNameId)) {
+        const oParaLeaf = fFindParaAll(oSect, 'name')[0];
+        const nLineLeaf = oParaLeaf ? oCnptFile.oMapIdLine.get(oParaLeaf.sNameId) ?? null : null;
+        const nOffsetLeaf = String(oParaLeaf?.sPara ?? '').split('\n')
+          .findIndex(sLine => sLine.includes(`McshEngl.${sMain}`) || sLine.includes(`!⇒${sMain}`));
+        aoIssue.push(fIssue('WARN', sCode, oCnptFile.sNameFile, oSect,
+          `${sNameRule.replace(/_main$/, '_leaf')}: main-name "McshEngl.${sMain}" of "${oSect.sNameTitle}" ` +
+          'is not needed: the-section has no subsections',
+          nLineLeaf != null && nOffsetLeaf !== -1 ? nLineLeaf + nOffsetLeaf
+            : nLineLeaf ?? oCnptFile.oMapIdLine.get(oSect.sNameId) ?? null));
+        continue;
+      }
       // capital first, unless it starts with a-word of a-genericSpecific name: foodGingerevaln
       const bSuffix = sMain.endsWith(sSuffix) && !sMain.endsWith("'" + sSuffix),
         bCapital = /^[A-Z]/.test(sMain) || /^[a-z]+[A-Z]/.test(sMain);
@@ -720,9 +738,11 @@ function fCheckMainNameDoing(aoCnptFile) {
 // 🔶 [MvrwMain05] infrsc_info_resource_main: the-main-name of an-info-resource-concept
 //   ("info-resource of X", "NN_info-resource of X", "X'info-resource") is Xinfrsc, capital first,
 //   NOT X'info_resource | X'info-resource | info-resource-of-X | Xirsc | Xrsc.
+//   ONLY a-section with subsections has a-main-name: a-section without subsections
+//   has only "McshEngl.X'info_resource," (infrsc_info_resource_leaf).
 function fCheckMainNameInfrsc(aoCnptFile) {
   return fCheckMainNameSuffix(aoCnptFile, 'MvrwMain05', 'infrsc_info_resource_main',
-    /^(\d+_)?info-resource of |^[^\s.']+'info-resource$/i, 'infrsc');
+    /^(\d+_)?info-resource of |^[^\s.']+'info-resource$/i, 'infrsc', true);
 }
 
 // 🔶 [MvrwMain06] srtr_structure_main: the-main-name of a-structure-concept

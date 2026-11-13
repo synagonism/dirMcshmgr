@@ -1,0 +1,157 @@
+PGMGLAGO SPECIFICS AND THEIR 4-LETTER CODE — 2026-11-12
+method: from Pgmglago follow specific-tree:: items, generic-tree:: claims, X.name sections and description links | with code LLLLlago: 21 | with old code lagLLLL: 4 | concept, no code: 8 | plain names, no concept: see below | not connected: 3
+
+=== HAVE CODE LLLLlago (21)
+  McshTchInf000006:29     Pgmglago   root
+  McshTchInf000006:1794   Mchnlago   name Pgmglago.machine_code
+  McshTchInf000006:1857   Trnrlago   name Pgmglago.trinary (section sits under Mchnlago)
+  McshTchInf000006:1903   Binrlago   name Pgmglago.binary_code
+  McshTchInf000006:1948   Asmblago   name Pgmglago.assembly_code
+  McshTchInf000006:2011   Btcdlago   name Pgmglago.virtual_codeAsmbalgo
+  McshTchInf000006:2063   Srcdlago   name Pgmglago.source_code
+  McshTchInf000006:3178   Scdtlago   name Srcdlago.DYNAMICALLY_TYPED
+  McshTchInf000006:3200   Scstlago   generic-tree claims Srcdlago
+  McshTchInf000006:3219   Dmsplago   name Pgmglago.domain_specific
+  McshTchInf000006:3230   Dtprlago   name Pgmglago.data_processing
+  McshTchInf000006:3296   Fctnlago   name Pgmglago.002_functional
+  McshTchInf000006:3347   Oolzlago   name Pgmglago.003_object_oriented
+  McshTchInf000006:1557   Jsgnlago   specific-tree item of Pgmglago
+  McshTchInf000010:7579   Jsdtlago   generic-tree claims Pgmglago
+  McshTchInf000011:5219   Jsbrlago   generic-tree claims Pgmglago
+  McshTchInf000012:11161  Jsndlago   generic-tree claims Pgmglago
+  McshTchInf000010:7591   Jsellago   specific-tree item of Jsdtlago
+  McshTchInf000030:4530   Rustlago   generic-tree claims Pgmglago; item of SrcdCompiled McshTchInf000006:3150
+  McshTchInf000031:2965   Cppzlago   generic-tree claims Pgmglago
+  McshTchInf000006:1645   Wasmlago   only a description link in Specsdiv.on_time_of_creation
+
+=== HAVE OLD-FORM CODE lagLLLL (4)
+  McshTchInf000006:3427   lagQury    name Pgmglago.query
+  McshTchInf000006:3486   lagCscr    name Pgmglago.scripting
+  McshTchInf000006:3648   lagLean    name Pgmglago.Lean
+  McshTchInf000010:7592   lagJsnw    plain item "NW.js-(lagJsnw)" of Jsdtlago, no section
+  McshTchInf000006:2037   lagVtl     3-letter old code still in the heading of Btcdlago's virtual-code
+
+=== CONCEPT WITH SECTION, NO 4-LETTER CODE (8)
+  McshTchInf000006:3588   declarative-Pgmglago    name Pgmglago.declarative
+  McshTchInf000006:3621   imperative-Pgmglago     name Pgmglago.imperative
+  McshTchInf000006:3138   SrcdCompiled            name Srcdlago.COMPILED
+  McshTchInf000006:3162   SrcdlagoInterpreted     name Srcdlago.INTERPRETED
+  McshTchInf000010:7613   Jsgnlago.strict_mode    strict-mode-JavaScript
+  McshTchInf000031:2993   Cppzlago.embedded       EC++
+  McshTchInf000012:11071  Jsndlago.version        version section, not a language kind
+  McshTchInf000006:1782   Pgmglago.used           usage list, not a language kind
+
+=== PLAIN NAMES IN SPECIFIC-TREES, NO CONCEPT, NO CODE (60)
+  McshTchInf000006:1555   high-level--Pgmglago
+  McshTchInf000006:1556   low-level--Pgmglago
+  McshTchInf000006:1559   declarative-Pgmglago
+  McshTchInf000006:1560   imperative-Pgmglago
+  McshTchInf000006:1562   functional-Pgmglago
+  McshTchInf000006:1563   object-oriented--Pgmglago
+  McshTchInf000006:1564   procedural-Pgmglago
+  McshTchInf000006:1566   actor-based
+  McshTchInf000006:1567   array
+  McshTchInf000006:1568   aspect-oriented
+  McshTchInf000006:1569   class-based
+  McshTchInf000006:1570   concatenative
+  McshTchInf000006:1571   concurrent
+  McshTchInf000006:1572   dataflow
+  McshTchInf000006:1573   declarative
+  McshTchInf000006:1574   domain-specific
+  McshTchInf000006:1575   dynamic
+  McshTchInf000006:1576   esoteric
+  McshTchInf000006:1577   event-driven
+  McshTchInf000006:1578   extensible
+  McshTchInf000006:1579   functional
+  McshTchInf000006:1580   imperative
+  McshTchInf000006:1581   logic
+  McshTchInf000006:1582   macro
+  McshTchInf000006:1583   metaprogramming
+  McshTchInf000006:1584   multi-paradigm
+  McshTchInf000006:1585   object-based
+  McshTchInf000006:1586   object-oriented
+  McshTchInf000006:1587   pipeline
+  McshTchInf000006:1588   procedural
+  McshTchInf000006:1589   prototype-based
+  McshTchInf000006:1590   reflective
+  McshTchInf000006:1591   rule-based
+  McshTchInf000006:1592   scripting
+  McshTchInf000006:1593   stack-based
+  McshTchInf000006:1594   synchronous
+  McshTchInf000006:1595   tactile
+  McshTchInf000006:1596   templating
+  McshTchInf000006:1598   assembly
+  McshTchInf000006:1599   compiled
+  McshTchInf000006:1600   interpreted
+  McshTchInf000006:1601   machine
+  McshTchInf000006:1603   low-level
+  McshTchInf000006:1604   high-level
+  McshTchInf000006:1605   very-high-level
+  McshTchInf000006:1607   first-generation
+  McshTchInf000006:1608   second-generation
+  McshTchInf000006:1609   third-generation
+  McshTchInf000006:1610   fourth-generation
+  McshTchInf000006:1611   fifth-generation
+  McshTchInf000006:1613   non-English-based
+  McshTchInf000006:1614   visual
+  McshTchInf000006:1617   domain-specific--Pgmglago
+  McshTchInf000006:1618   general-purpose--Pgmglago
+  McshTchInf000010:7519   BrowserNo-JavaScript
+  McshTchInf000010:7520   Desktop-JavaScript
+  McshTchInf000010:7522   Server-JavaScript
+  McshTchInf000010:7523   ServerNo-JavaScript
+  McshTchInf000010:7524   Strict-JavaScript
+  McshTchInf000010:7525   StrictNo-JavaScript
+
+=== LANGUAGES IN Specsdiv.on_time_of_creation WITHOUT CONCEPT (38)
+  McshTchInf000006:1646    {2012} TypeScript
+  McshTchInf000006:1647    {2011} Dart
+  McshTchInf000006:1648    {2011} Opa
+  McshTchInf000006:1649    {2011} Roy
+  McshTchInf000006:1651    {2009} CoffeeScript
+  McshTchInf000006:1652    {2009} Go
+  McshTchInf000006:1653    {2007} Clojure
+  McshTchInf000006:1654    {2005} Haxe
+  McshTchInf000006:1655    {2003} Scala
+  McshTchInf000006:1656    {2000} XL
+  McshTchInf000006:1657    {1996} OCaml
+  McshTchInf000006:1658    {1995} Java
+  McshTchInf000006:1660    {1995} Mercury
+  McshTchInf000006:1661    {1995} PHP
+  McshTchInf000006:1662    {1995} Ruby
+  McshTchInf000006:1663    {1993} Lua
+  McshTchInf000006:1664    {1993} R
+  McshTchInf000006:1665    {1991} Python
+  McshTchInf000006:1666    {1991} Qbasic
+  McshTchInf000006:1667    {1987} Perl
+  McshTchInf000006:1668    {1987} Self
+  McshTchInf000006:1669    {1985} Cool
+  McshTchInf000006:1671    {1979} Rexx
+  McshTchInf000006:1672    {1977} Awk
+  McshTchInf000006:1673    {1974} SQL
+  McshTchInf000006:1674    {1973} ML
+  McshTchInf000006:1675    {1972} C
+  McshTchInf000006:1676    {1972} Prolog
+  McshTchInf000006:1677    {1972} Smalltalk
+  McshTchInf000006:1678    {1970} Pascal
+  McshTchInf000006:1679    {1967} Logo
+  McshTchInf000006:1680    {1965} Simula
+  McshTchInf000006:1681    {1964} Apl
+  McshTchInf000006:1682    {1964} Basic
+  McshTchInf000006:1683    {1959} Cobol
+  McshTchInf000006:1684    {1958} Lisp
+  McshTchInf000006:1685    {1957} Fortran
+  McshTchInf000006:1686    {1954} IPL
+
+=== PROGRAMING-LANGUAGES NOT CONNECTED TO Pgmglago (3)
+  McshTchInf000018:9511   Solxlago   generic-tree names LanguageComputerPrograming (no such concept)
+  McshTchInf000028:1022   Movelago   generic-tree names DnChain--programing-language (no such concept)
+  McshTchInf000014:6411   Wasmlago   generic-tree names web-programing-language (no such concept)
+
+=== NOTES (6)
+  McshTchInf000006:1552   specific-tree of Pgmglago has 1 linked item (Jsgnlago); the 12 own sections Pgmglago.X are not listed in it
+  McshTchInf000006:3123   specific-tree of Srcdlago is empty; its 4 sections are not listed
+  McshTchInf000006:3245   Pgmglago.concept links McshTchInf000007#idLCnpt002, which is now Cnptlago.doing_002
+  McshTchInf000006:1796   Mchnlago, Btcdlago, Fctnlago have no generic-tree; Srcdlago, Oolzlago, Dtprlago do not claim Pgmglago
+  McshTchInf000010:7518   specific-tree of Jsgnlago uses descriptive names with #idDescription refs, not X.M!@file format
+  McshTchInf000039:14366  Wlfmlago is a specific of Knlglago, not of Pgmglago; left out

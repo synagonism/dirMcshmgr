@@ -26,7 +26,7 @@ Mcsh rules (`structuralMcsh.js`, Mcsh* files only):
 | MvrlMmn02 | (warning) main-name of a "evoluting of X" section is `Xevolg`, capital first, no apostrophe |
 | MvrlMmn03 | (warning) main-name of a "evaluation/evaluating of X" section is `Xevalg`, capital first, no apostrophe |
 | MvrlMmn04 | (warning) main-name of a "DOING of X" section is `Xdoing`, capital first, no apostrophe |
-| MvrlMmn05 | (warning) main-name of a "info-resource of X" section is `Xinfrsc`, capital first, no apostrophe |
+| MvrlMmn05 | (warning) main-name of a "info-resource of X" section is `Xinfrsc`, capital first, no apostrophe; only a section with subsections has a main-name, a section without subsections has only `X'info_resource` |
 | MvrlMmn06 | (warning) main-name of a "structure of X" section is `Xsrtr`, capital first, no apostrophe |
 | MvrlMmn07 | (warning) the Attrbase line `B!Attrbase,` / `B!Attrbase!⇒M,` comes right after `M!=I` (3rd name line), or after `M!@McshXxx` (4th) in a file-concept |
 | MvrwMain09 | (warning) main-name of a human (`human.Surname.Given[.YYYY]`, `Surname.Given.human`) is `Humn` + birth-year + name (`Humn1959Sinagu`), `HumnB` + year for BCE (`HumnB0384Arst`) |

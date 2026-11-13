@@ -116,6 +116,7 @@ import { fReadListValidate } from './listValidate.js'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-36-0.2026-11-13: --dupname (MvreName01): of a-name-line written twice, the-line with a-date | info stays, the-line without is deleted',
     'createMcsh.mjs.0-35-0.2026-11-12: --code MvrwName01: a-formal-name | formal title with a-space | hyphen gets "_"',
     'createMcsh.mjs.0-34-0.2026-11-12: --attribute (in --auto) and --code MvrwMain10: the-clear attribute | specific titles and their formal names',
     'createMcsh.mjs.0-33-0.2026-11-10: MvrwId05 knows the-ending "evolg" (idXevolg -> idXevog); the-MvrwGstr01 guard skips the-head line',
@@ -188,7 +189,7 @@ const
     RENAME:   'the-name::-para id renamed to idName',
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
-    DUPNAME:  'a-name-line written twice in ONE para: the-second deleted (MvreName01)',
+    DUPNAME:  'a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01)',
     NAMECOMMA: 'a-name-line without a-comma: the-comma added at the-end (MvreName02)',
     MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
@@ -1107,31 +1108,48 @@ function fPlanSrtrApply(sRawIn, sNameShortIn, sNameFileIn, ooMapIdIn) {
 }
 
 /**
- * DOING: --dupname mode, the-fix of MvreName01 kind A: a-name-line that is written
- *   again in the-SAME para is deleted, the-first stays (as mModel.js fRemoveNameDup,
- *   dupMcsh.mjs --fix). The-whole line is compared, so a-line with other text after
- *   its comma is kept.
+ * DOING: --dupname mode, the-fix of MvreName01 kind A: a-name-line (the-line to its comma)
+ *   that is written again in the-SAME para.
+ *   - the-same whole line: the-first stays, the-others are deleted.
+ *   - one line with a-date | info after its comma, the-others without: the-lines without
+ *     are deleted ("lagoTdoc!⇒CmplTdoc, {2021-01-04}" stays, "lagoTdoc!⇒CmplTdoc," goes).
+ *   - 2+ lines with different info: SKIP, by hand.
  * OUTPUT: { aoEdit, aoNote, sRawNew }
  */
 function fPlanDupName(sRawIn, sNameShortIn) {
   const aLine = sRawIn.split('\n');
   const aoEdit = [];
   const aoNote = [];
-  let oSetSeen = null;   // the-name-lines of the-open para, null outside a-para
-  for (let nL = 0; nL < aLine.length; nL++) {
-    const sLine = fLineClean(aLine[nL]);
-    if (/<p\b/.test(sLine)) oSetSeen = new Set();
-    if (oSetSeen && rNameLine.test(sLine)) {
-      const sKey = sLine.trim();
-      if (oSetSeen.has(sKey)) {
-        aoEdit.push({ nAt: nL, nDel: 1, aIns: [] });
-        aoNote.push(`DUPNAME ${sNameShortIn}:${nL + 1}  ${sKey.replace(/^<br>\*\s*/, '')}`);
-      } else {
-        oSetSeen.add(sKey);
+  let oMapSeen = null;   // key (the-line to its comma) -> [{nL, sInfo}] of the-open para, null outside a-para
+  const fClose = () => {
+    for (const [sKey, aoOcc] of oMapSeen ?? []) {
+      if (aoOcc.length < 2) continue;
+      const sName = sKey.replace(/^<br>\*\s*/, '');
+      const aInfo = [...new Set(aoOcc.map(o => o.sInfo).filter(Boolean))];
+      if (aInfo.length > 1) { aoNote.push(`SKIP   ${sNameShortIn}:${aoOcc[0].nL + 1}  ${sName}: ${aInfo.length} lines with different info (${aInfo.join(' | ')}), by hand`); continue; }
+      // the-line that stays: the-first with info, else the-first
+      const oKeep = aoOcc.find(o => o.sInfo) ?? aoOcc[0];
+      for (const oOcc of aoOcc) {
+        if (oOcc === oKeep) continue;
+        aoEdit.push({ nAt: oOcc.nL, nDel: 1, aIns: [] });
+        aoNote.push(`DUPNAME ${sNameShortIn}:${oOcc.nL + 1}  ${sName}${oKeep.sInfo ? '  (stays: ' + oKeep.sInfo + ')' : ''}`);
       }
     }
-    if (sLine.includes('</p>')) oSetSeen = null;
+    oMapSeen = null;
+  };
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const sLine = fLineClean(aLine[nL]);
+    if (/<p\b/.test(sLine)) { fClose(); oMapSeen = new Map(); }
+    if (oMapSeen && rNameLine.test(sLine)) {
+      const sTrim = sLine.trim(), nComma = sTrim.indexOf(',');
+      const sKey = nComma < 0 ? sTrim : sTrim.slice(0, nComma), sInfo = nComma < 0 ? '' : sTrim.slice(nComma + 1).trim();
+      if (!oMapSeen.has(sKey)) oMapSeen.set(sKey, []);
+      oMapSeen.get(sKey).push({ nL, sInfo });
+    }
+    if (sLine.includes('</p>')) fClose();
   }
+  fClose();
+  aoEdit.sort((oA, oB) => oA.nAt - oB.nAt);
   return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
 }
 
@@ -2211,7 +2229,7 @@ async function fMain() {
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
     console.log('  --mainname   MvreMain01: English main-names (after !⇒) with "-" get "_", the-old form kept as synonym; a-non-English one is skipped');
     console.log('  --srtr       MvrwId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
-    console.log('  --dupname    MvreName01: a-name-line twice in ONE para, all but the-first deleted');
+    console.log('  --dupname    MvreName01: a-name-line twice in ONE para, the-line without date | info deleted');
     console.log('  --namecomma  MvreName02: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
     console.log('  --attribute  MvrwMain10: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
   console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
@@ -2549,6 +2567,11 @@ async function fMain() {
             }
             oSetMainAlways.add(`Engl|${sMain}`);
             oMapMain.set(`Engl|${sMain}`, sMainNew);
+            continue;
+          }
+          // MvrwMain05 leaf: the-main-name is removed, not renamed
+          if (oIssue.sMessage.startsWith('infrsc_info_resource_leaf')) {
+            fSkipMain(oIssue, `"${sMain}" of a-section without subsections is not needed`);
             continue;
           }
           const sSuffix = oIssue.sMessage.split('_')[0];

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Report 18:58:23</title>
+<title>Report 13:13:39</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -21,15 +21,15 @@
 </head>
 <body>
 <h1>Hitp|Mcsh Consistency Report</h1>
-<p>Generated: 11/12/2026, 6:58:23 PM</p>
+<p>Generated: 11/13/2026, 1:13:39 PM</p>
 <pre class="log">📂 Scanning: C:\dirNodews\dirMcsh
-🔎 Rule: MvreMain01
+🔎 Rule: MvreName01
    Found 623 .last.html files
 
 🔍 Running Mcsh checks (593 Mcsh files)...
-   MvreMain01 Main-names Mmn_form... 0 issues</pre>
+   MvreName01    Duplicate names (every McsLago)... 9 issues</pre>
 <div class="summary">
-  <span style="color:#c00">🔴 0 errors</span>
+  <span style="color:#c00">🔴 9 errors</span>
   <span style="color:#c60">🔶 0 warnings</span>
   <span style="color:#069">🔵 0 info</span>
 </div>
@@ -39,7 +39,69 @@
     <tr><th>Level</th><th>Code</th><th>File:line</th><th>Message</th><th>Concept</th></tr>
   </thead>
   <tbody id="tbody">
-    
+    <tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000029:36</td>
+        <td>Duplicate name-line "McshEngl.lagoJson!⇒Jsonlago" appears 2 times in McshTchInf000029.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000013:28</td>
+        <td>Duplicate name-line "McshEngl.lagoJsel!⇒Jsellago" appears 2 times in McshTchInf000013.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000012:28</td>
+        <td>Duplicate name-line "McshEngl.lagoJsnd!⇒Jsndlago" appears 2 times in McshTchInf000012.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000011:27</td>
+        <td>Duplicate name-line "McshEngl.lagoJsbr!⇒Jsbrlago" appears 2 times in McshTchInf000011.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000010:37</td>
+        <td>Duplicate name-line "McshEngl.lagoJsgn!⇒Jsgnlago" appears 2 times in McshTchInf000010.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000009:30</td>
+        <td>Duplicate name-line "McshEngl.lagoMcsh!⇒Mcshlago" appears 2 times in McshTchInf000009.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshTchInf000005:970</td>
+        <td>Duplicate name-line "McshEngl.lagoTdoc!⇒CmplTdoc" appears 2 times in McshTchInf000005.last.html#idLtdoc</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshLag000029:31</td>
+        <td>Duplicate name-line "McshEngl.lagoEngl0!⇒Eng0Lago" appears 2 times in McshLag000029.last.html#idName</td>
+        <td></td>
+      </tr>
+<tr class="err">
+        <td>🔴ERROR</td>
+        <td>MvreName01</td>
+        <td>McshLag000007:29</td>
+        <td>Duplicate name-line "McshEngl.lagoHmnm!⇒Hmmdlago" appears 2 times in McshLag000007.last.html#idName</td>
+        <td></td>
+      </tr>
   </tbody>
 </table>
 <script>
@@ -50,5 +112,51 @@ function filterRows(q) {
   });
 }
 </script>
+<h2 id="idFix">the fix: createMcsh.txt</h2>
+<pre class="log">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --dupname --all --fix: C:\dirNodews\dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  16 files written · 38 duplicate name-lines deleted · 0 skipped
+  written, no backup: see git diff
+
+=== DUPNAME (38) — a-name-line written twice in ONE para: the-second deleted (MvreName01)
+  McshCor000002:1965  McshEngl.Mcsnotn.!=&amp;#32;translation!⇒McsnotnTranslation,
+  McshLag000011:57  McshEngl.lagoEngl!⇒Engllago,
+  McshLag000018:52  McshEngl.lagoZhon!⇒Zhonlago,
+  McshLag000018:12418  McshEngl.Zhonverbauxi.jiāng_将!=will|shall,
+  McshLag000018:12613  McshEngl.Zhonverbauxi.ne_呢!=question,
+  McshLag000018:12655  McshEngl.Zhonverbauxi.yīnggāi_应该!=should,
+  McshStn000009:4717  McshEngl.society'SoctHuman.ethnic_group,
+  McshStn000009:4754  McshEngl.Sochumnview'sociality_relation,
+  McshStn000009:5008  McshEngl.phone'inside_calling,
+  McshStn000015:877  McshEngl.OgznPrdg'node.sfr_creating,
+  McshStn000020:18556  McshEngl.Euzzadmn'EuzzadmnDoing.decision_making,
+  McshTchInf000005:760  McshEngl.Cmprlago.binary!⇒Binclago,
+  McshTchInf000008:73  McshEngl.lagoHitp!⇒Hitplago, {2019-07-05}
+  McshTchInf000010:7552  McshEngl.lagoJsdt!⇒Jsdtlago,
+  McshTchInf000011:2983  McshEngl.Jsbrpgm.Hello_World!,
+  McshTchInf000015:7281  McshEngl.Dapp!⇒Agntdapp,
+  McshTchInf000017:3165  McshEngl.Btcnprgm.specific,
+  McshTchInf000017:4292  McshEngl.BtcnevalnCon.energy_consumption,
+  McshTchInf000018:786  McshEngl.Ethrnode'computer,
+  McshTchInf000018:3742  McshEngl.Ethrprgm.JavaScript!⇒web3js,
+  McshTchInf000018:3990  McshEngl.Ethrprgm.specific,
+  McshTchInf000018:4033  McshEngl.Ethrprgm.Ethpm,
+  McshTchInf000018:5241  McshEngl.Ethrprgm.Token_client,
+  McshTchInf000018:10359  McshEngl.Ethrcontract.binary_code!⇒EthrctrcBinr,
+  McshTchInf000021:477  McshEngl.Eoszbp'votes!⇒AgntEosz_BP_vote,
+  McshTchInf000021:519  McshEngl.Eoszbp'jurisdiction!⇒AgntEosz_BP_jurisdiction,
+  McshTchInf000021:533  McshEngl.Eoszbp'server!⇒AgntEosz_BP_server,
+  McshTchInf000021:547  McshEngl.Eoszbp'unpaid_block!⇒AgntEosz_BP_unpaid_block,
+  McshTchInf000021:561  McshEngl.Eoszbp'reward!⇒AgntEosz_BP_reward,
+  McshTchInf000021:575  McshEngl.Eoszbp'Url!⇒AgntEosz_BP_Url,
+  McshTchInf000021:591  McshEngl.Eoszbp'evaluation!⇒AgntEosz_BPevaln,
+  McshTchInf000023:104  McshEngl.AgntIota'evaluation!⇒Iotaevaln,
+  McshTchInf000023:156  McshEngl.AgntIota'human,
+  McshTchInf000023:178  McshEngl.AgntIota'chain!⇒Iotachain,
+  McshTchInf000023:179  McshEngl.AgntIota'tangle!⇒Iotachain,
+  McshTchInf000023:200  McshEngl.AgntIota'consensus_algorithm,
+  McshTchInf000023:227  McshEngl.AgntIota'resource,
+  McshTchInf000039:14122  McshEngl.Sweblago.SKOS!⇒Skoslago,</pre>
 </body>
 </html>
