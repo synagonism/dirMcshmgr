@@ -43,7 +43,7 @@
  *  MvrwId12 sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
  *  MvrwId13 srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
  *
- *  MvreMain01 Mmn_form: an-Mmn (main-mind-name) has ONLY English letters, digits, _ and . (no - space, no other-language letters)
+ *  MvreMain01 Mmn_char: an-Mmn (main-mind-name) has ONLY English letters, digits and _ (no . - space, no other-language letters)
  *  MvrwMain01 Attrbase: the-main-names of the-attributes of a-concept with Attrbase B begin with B
  *             (Attrbase "McshEngl.B!Attrbase,"; attributes: its direct parts with a-main-name, "Y of X" and "X.Y");
  *             exempt: an-alias that begins with B ("McshEngl.Systsector!⇒sector_vs_system,") keeps its own
@@ -90,6 +90,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-70-0.2026-11-13: MvreMain01 Mmn_char (was Mmn_form): a-dot is not allowed, ONLY English letters, digits, _',
     'structuralMcsh.js.0-69-0.2026-11-13: MvrwMain05 infrsc_info_resource_leaf: a-main-name ONLY in a-section with subsections',
     'structuralMcsh.js.0-68-0.2026-11-12: MvrwName01 skips dirUcd; fFormalMvrwName01 exported for createMcsh',
     'structuralMcsh.js.0-67-0.2026-11-12: MvrwName01 formal: a-formal-name of name:: | a-formal title has no space, no hyphen',
@@ -613,15 +614,15 @@ function fCheckIdSrtr(aoCnptFile) {
   return fCheckIdSuffix(aoCnptFile, 'MvrwId13', 'srtr_structure_suffix', 'structure', 'srtr');
 }
 
-// 🔴 [MvreMain01] Mmn_form: an-Mmn (main-mind-name) has ONLY English letters, digits, _ and .
-//   (no - space, no other-language letters): rltnAttributeThenEntity.
+// 🔴 [MvreMain01] Mmn_char: an-Mmn (main-mind-name) has ONLY English letters, digits and _
+//   (no . - space, no other-language letters): rltnAttributeThenEntity.
 //   ONE issue per concept, on the-line of its Mmn.
-const rMmnForm = /^[A-Za-z0-9_.]+$/;
+const rMmnForm = /^[A-Za-z0-9_]+$/;
 /** OUTPUT: '' when sMmnIn is a-valid Mmn, else the-reason. */
 function fFindMmnFormError(sMmnIn) {
   if (rMmnForm.test(sMmnIn)) return '';
-  const aBad = [...new Set(sMmnIn.replace(/[A-Za-z0-9_.]/g, ''))].map(sC => sC === ' ' ? 'space' : sC);
-  return `has ${aBad.map(sC => '"' + sC + '"').join(' ')}: only English letters, digits, _ .`;
+  const aBad = [...new Set(sMmnIn.replace(/[A-Za-z0-9_]/g, ''))].map(sC => sC === ' ' ? 'space' : sC);
+  return `has ${aBad.map(sC => '"' + sC + '"').join(' ')}: only English letters, digits, _`;
 }
 function fCheckMainNameHyphen(aoCnptFile) {
   const aoIssue = [];
@@ -646,7 +647,7 @@ function fCheckMainNameHyphen(aoCnptFile) {
       const nOffset = aLinePara.findIndex(sLine => new RegExp(`Mcsh${sLago}\\.${sMmn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[,!]`).test(sLine));
       const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset : nLinePara;
       aoIssue.push(fIssue('ERROR', 'MvreMain01', oCnptFile.sNameFile, oCnpt,
-        `Mmn_form: Mmn "Mcsh${sLago}.${sMmn}" ${sError}`, nLine));
+        `Mmn_char: Mmn "Mcsh${sLago}.${sMmn}" ${sError}`, nLine));
     }
   }
   return aoIssue;
@@ -1404,7 +1405,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvreFile01'], sLabel: '   MvreFile01    File-Mcsh (idOverview)... ', fCheck: () => fCheckCnptFile(aoCnptFile) },
     { aCode: ['MvreName01'], sLabel: '   MvreName01    Duplicate names (every McsLago)... ', fCheck: () => fCheckDuplicateName(aoCnptFile) },
     { aCode: ['MvreName02'], sLabel: '   MvreName02    Name-line comma... ', fCheck: () => fCheckNameComma(aoCnptFile) },
-    { aCode: ['MvreMain01'], sLabel: '   MvreMain01 Main-names Mmn_form... ', fCheck: () => fCheckMainNameHyphen(aoCnptFile) },
+    { aCode: ['MvreMain01'], sLabel: '   MvreMain01 Main-names Mmn_char... ', fCheck: () => fCheckMainNameHyphen(aoCnptFile) },
     { aCode: ['MvrwSect01', 'MvrwSect02'], sLabel: '   MvrwSect01/MvrwSect02 Section descriptions... ', fCheck: () => fCheckDescription(aoCnptFile) },
     { aCode: ['MvrwSect03', 'MvrwSect04'], sLabel: '   MvrwSect03/MvrwSect04 Section names... ', fCheck: () => fCheckName(aoCnptFile) },
     { aCode: ['MvrwMisc01'], sLabel: '   MvrwMisc01    Dates... ', fCheck: () => fCheckDate(aoCnptFile) },

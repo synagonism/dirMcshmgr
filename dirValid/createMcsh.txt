@@ -1,8 +1,5 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code MvrwName01 --all dry-run: C:/dirNodews/dirMcsh
+  createMcsh --mainname --all --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files to write · MvrwName01: 0 issues · 0 fixed · 0 skipped
-  nothing written: add --fix to write
-
-=== NOISSUE (1) — the-rule has no issue in the-file
-  worldview  MvrwName01: nothing to fix in 623 files
+  0 files written · 0 main-names with underscores · 0 lines changed · 0 old forms kept as synonyms · 0 skipped
+  written, no backup: see git diff
