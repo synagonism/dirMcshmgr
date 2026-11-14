@@ -58,6 +58,9 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-7-0.2026-11-14: X:generic listing keeps an-already-baked Y:generic!@ref line as-is (no re-resolve); generic-trees now carry baked refs',
+    'mMcsh2.js.27-6-0.2026-11-14: X:generic listing links the-concept (!@<stem>#<id>, generic-tree anchor minus gntr; #idOverview when concept is the-file) and omits ...entity:generic',
+    'mMcsh2.js.27-5-0.2026-11-14: dblclick on a-non-head X:generic lists ITS generic-tree generics in !@ format (preview/go-to), like X.specific',
     'mMcsh2.js.27-4-0.2026-11-05: dblclick on see_by_dbclick:X. searches X (prefix removed like articles)',
     'mMcsh2.js.27-3-0.2026-11-02: dblclick on the-head McshEngl.X:generic lists the-generics of its own generic-tree (links from the-name-index), no X:Y names',
     'mMcsh2.js.27-2-0.2026-11-02: dblclick on search_for:X. searches X',
@@ -1601,7 +1604,8 @@ let fContainersInsert = function () {
     let sMmn = '', sMark = '.', sWord = 'specific', bHoldOpp = false, aM = null
     // a-trigger-line is '* <Mmn><mark><word>,' (a-legacy 'McshEngl.' prefix is-optional)
     for (let n = 0; n < aoRel.length; n++) {
-      aM = sTxt.match(new RegExp('\\*\\s*(?:McshEngl\\.)?(.+?)' + fEscMark(aoRel[n].sMark) + aoRel[n].sWord + '(?=[,!\\s]|$)'))
+      // a-trailing '!' is excluded: '<word>!@<ref>' is a-reference-line (preview), not a-trigger
+      aM = sTxt.match(new RegExp('\\*\\s*(?:McshEngl\\.)?(.+?)' + fEscMark(aoRel[n].sMark) + aoRel[n].sWord + '(?=[,\\s]|$)'))
       if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
     }
     if (!sMmn) return false
@@ -1617,13 +1621,8 @@ let fContainersInsert = function () {
       const sUrlName = await fNameUrl(sMmn.replace(/^\.\.\./, '') + ':generic')
       const oGntr = sUrlName ? await fGntrOfUrl(sUrlName) : null
       if (!oGntr) return false // unknown name: the-caller searches it
-      const aL = fLines(oGntr.oGntr).map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim())
-      // the-lines after the-first '===', up to a-labeled group ('=== label:' is NOT generics)
-      for (let n = aL.indexOf('===') + 1; n > 0 && n < aL.length; n++) {
-        if (aL[n].startsWith('===') && aL[n] !== '===') break
-        if (aL[n].startsWith('*') || aL[n] === '===') aGeneric.push(aL[n])
-      }
-      while (aGeneric[aGeneric.length - 1] === '===') aGeneric.pop()
+      // list ITS direct-generics in '!@' format (preview-able / go-to), like the-head does
+      aGeneric = await fGenericOwn(oGntr.oGntr)
     }
     oSel.removeAllRanges()
 
@@ -1673,27 +1672,33 @@ let fContainersInsert = function () {
       return aoOut
     }
 
-    // the-head 'McshEngl.X:generic' lists the-generics of its OWN generic-tree (the-lines after
-    // the-first '===', up to a-labeled group): a-'Y:generic' item gets its link from the-name-index,
-    // any other item (a-link, a-name!@ref) is-kept as-is. NO 'X:Y' names are-needed.
+    // lists the-direct-generics of a-generic-tree (the-lines after the-first '===', up to a-labeled
+    // group), each 'Y:generic' as a-concept-link 'Y:generic!@<stem>#<id>' where <id> is the-name-index
+    // generic-tree anchor without its 'gntr' suffix (or '#idOverview' when that concept IS the-whole
+    // file). '...entity:generic' chain-markers are-NOT listed.
     async function fGenericOwn(oPIn) {
       const
         aL = fLines(oPIn).map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim()),
         aOut = []
       for (let n = aL.indexOf('===') + 1; n > 0 && n < aL.length; n++) {
         if (aL[n].startsWith('===') && aL[n] !== '===') break
-        if (aL[n] === '===') { aOut.push('==='); continue }
+        if (aL[n] === '===') { if (aOut[aOut.length - 1] !== '===') aOut.push('==='); continue }
         if (!aL[n].startsWith('*')) continue
-        // '...entity:generic' is the-chain trigger: kept as-is
-        const aG = /^\*\s*\.\.\./.test(aL[n]) ? null : aL[n].match(/^\*\s*([^\s,<!*]+):generic(?=[,!\s]|$)/)
+        if (/^\*\s*\.\.\./.test(aL[n])) continue // '...entity:generic' chain-marker: NOT listed
+        // an-already-baked 'Y:generic!@ref' line (trailing '!') is-kept as-is below; only a-bare
+        // 'Y:generic,' still needs resolving. so the-lookahead excludes '!'.
+        const aG = aL[n].match(/^\*\s*([^\s,<!*]+):generic(?=[,\s]|$)/)
         if (!aG) { aOut.push(aL[n]); continue }
         const sUrl = await fNameUrl(aG[1] + ':generic')
         if (!sUrl) { aOut.push(aL[n]); continue }
         const
           sFile = sUrl.split('#')[0],
           sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
-          sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : ''
-        // the-rest of the-line stays: 'entity:generic (the-most-generic),'
+          sId = sUrl.includes('#') ? sUrl.split('#')[1].replace(/gntr$/, '') : ''
+        // the-concept anchor = the-generic-tree anchor minus 'gntr'; but when that id does NOT
+        // exist in the-target page the-concept IS the-whole file => no fragment (link the-page)
+        let sHash = '#idOverview' // a-file-concept (no such section) links its page overview
+        if (sId) { try { if ((await fDoc(sUrl)).getElementById(sId)) sHash = '#' + sId } catch (oErr) { console.warn(oErr) } }
         aOut.push('* ' + aG[1] + ':generic!@' + sStem + sHash + aL[n].slice(aG[0].length))
       }
       while (aOut[aOut.length - 1] === '===') aOut.pop()

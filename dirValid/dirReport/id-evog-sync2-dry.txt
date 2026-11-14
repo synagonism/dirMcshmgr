@@ -1,0 +1,78 @@
+=== id-evog-sync2 DRY-RUN {2026-11-13} — MvrwId05 evoluting ids -> …evog
+  files changed: 4, bases: 9, ids renamed: 61, dangling links before/after: 528/528
+=== BASE (9)
+  idXrpEvg -> idXrpevog
+  idXemnetEvg -> idXemnetevog
+  idBtsevg -> idBtsevog
+  idWavesEvg -> idWavesevog
+  idLskevg -> idLskevog
+  idTzsevg -> idTzsevog
+  idAlgntxCnbsevolg -> idAlgntxCnbsevog
+  idBtcrateEvg -> idBtcrateevog
+  idEthctpEvg -> idEthctpevog
+=== LEFT (0) — start with a-base, NOT a-part-id
+
+=== RENAMED (61)
+  idAlgntxCnbsevolg -> idAlgntxCnbsevog
+  idAlgntxCnbsevolgH4 -> idAlgntxCnbsevogH4
+  idAlgntxCnbsevolgP1 -> idAlgntxCnbsevogP1
+  idAlgntxCnbsevolgdsn -> idAlgntxCnbsevogdsn
+  idAlgntxCnbsevolgnam -> idAlgntxCnbsevognam
+  idBtcrateEvg -> idBtcrateevog
+  idBtcrateEvgH3 -> idBtcrateevogH3
+  idBtcrateEvgP1 -> idBtcrateevogP1
+  idBtcrateEvgP2 -> idBtcrateevogP2
+  idBtcrateEvgP3 -> idBtcrateevogP3
+  idBtcrateEvgP4 -> idBtcrateevogP4
+  idBtcrateEvgP5 -> idBtcrateevogP5
+  idBtcrateEvgP6 -> idBtcrateevogP6
+  idBtcrateEvgP7 -> idBtcrateevogP7
+  idBtcrateEvgP8 -> idBtcrateevogP8
+  idBtcrateEvgP9 -> idBtcrateevogP9
+  idBtcrateEvgdsn -> idBtcrateevogdsn
+  idBtcrateEvgnam -> idBtcrateevognam
+  idBtsevg -> idBtsevog
+  idBtsevgH2 -> idBtsevogH2
+  idBtsevgP1 -> idBtsevogP1
+  idBtsevgdsn -> idBtsevogdsn
+  idBtsevgnam -> idBtsevognam
+  idEthctpEvg -> idEthctpevog
+  idEthctpEvgH2 -> idEthctpevogH2
+  idEthctpEvgP1 -> idEthctpevogP1
+  idEthctpEvgdsn -> idEthctpevogdsn
+  idEthctpEvgnam -> idEthctpevognam
+  idLskevg -> idLskevog
+  idLskevgH2 -> idLskevogH2
+  idLskevgP1 -> idLskevogP1
+  idLskevgdsn -> idLskevogdsn
+  idLskevgnam -> idLskevognam
+  idTzsevg -> idTzsevog
+  idTzsevgH2 -> idTzsevogH2
+  idTzsevgP1 -> idTzsevogP1
+  idTzsevgdsn -> idTzsevogdsn
+  idTzsevgnam -> idTzsevognam
+  idWavesEvg -> idWavesevog
+  idWavesEvgH2 -> idWavesevogH2
+  idWavesEvgP1 -> idWavesevogP1
+  idWavesEvgdsn -> idWavesevogdsn
+  idWavesEvgnam -> idWavesevognam
+  idXemnetEvg -> idXemnetevog
+  idXemnetEvgH2 -> idXemnetevogH2
+  idXemnetEvgP1 -> idXemnetevogP1
+  idXemnetEvgP2 -> idXemnetevogP2
+  idXemnetEvgdsn -> idXemnetevogdsn
+  idXemnetEvgnam -> idXemnetevognam
+  idXrpEvg -> idXrpevog
+  idXrpEvgH2 -> idXrpevogH2
+  idXrpEvgP1 -> idXrpevogP1
+  idXrpEvgP2 -> idXrpevogP2
+  idXrpEvgP3 -> idXrpevogP3
+  idXrpEvgP4 -> idXrpevogP4
+  idXrpEvgP5 -> idXrpevogP5
+  idXrpEvgP6 -> idXrpevogP6
+  idXrpEvgP7 -> idXrpevogP7
+  idXrpEvgP8 -> idXrpevogP8
+  idXrpEvgdsn -> idXrpevogdsn
+  idXrpEvgnam -> idXrpevognam
+=== NOT-SYNCED (1) — waits for the-user
+  McshTchInf000014:6370  idLWasmEvgFT  two name:: paras (idLWasmEvgFTnam, idLWasmEvgnam), idLWasmEvg taken by a-commented para

@@ -1,0 +1,157 @@
+=== id-smallF {2026-11-13} — Mcsh*.last.html only, id="..." definitions
+=== END-xFT (0) — id ends in a-small-letter + FT
+
+=== END-xF (0) — id ends in a-small-letter + F, the-F looks like the-old variant
+
+=== END-xF-REAL (35) — id ends in xF, but the-title has an-F of its own (letter F, /f/, function (f) ...)
+  McshCor000004:7479  idDngWshgF  <section> idDngWshgFH3 | doing.washing_functing
+  McshLag000009:2819  idL0017phnmF  <section> idL0017phnmFH5 | HmmdphnmCons./f/
+  McshLag000010:2853  idL0014wrdF  <section> idL0014wrdFH4 | Sngu_word.f
+  McshLag000010:4085  idL0014sylbF  <section> idL0014sylbFH4 | Sngu_sylb.f
+  McshLag000011:1314  idLEnglltrF  <section> idLEnglltrFH4 | Englletr.F_/ef/
+  McshLag000011:2513  idLEnglsylbF  <section> idLEnglsylbFH4 | Englsylb.f
+  McshLag000016:152  idAbnEnglF  <section> idAbnEnglFH1 | abrn.englF
+  McshLag000018:20433  idLZhonpnynF  <section> idLZhonpnynFH3 | pinyin.f
+  McshLag000020:640  idLEllncsntF  <section> idLEllncsntFH5 | EllnphnmCons./f/
+  McshLag000020:1335  idLEllnphgmF  <section> idLEllnphgmFH4 | Ellnletr.Φ_/fi_f/
+  McshLag000024:6043  idWrdrEnglF  <section> idWrdrEnglFH1 | F of wordSetEngl
+  McshLag000030:603  idLTurkphnmCnstF  <section> idLTurkphnmCnstFH5 | TurkphnmCons./f/
+  McshLag000033:1007  idLDeutunitPhnmCsntF  <section> idLDeutunitPhnmCsntFH5 | DeutphnmCons./f/
+  McshLag000033:1532  idLDeutunitLttrF  <section> idLDeutunitLttrFH4 | Deutletr.F_/ef/
+  McshLag000035:644  idLSpanunitLttrF  <section> idLSpanunitLttrFH4 | Spanletr.F
+  McshLag000036:1158  idLArabltrF  <section> idLArabltrFH4 | Arabletr.20_/f/_⟨ف⟩⟨فـفـف⟩_1601
+  McshLag000037:3916  idLHindunitLttrCsntF  <section> idLHindunitLttrCsntFH6 | HindletrCons./f/_⟨फ़⟩_[f]
+  McshNtr000007:6578  idChmElrBlockF  <section> idChmElrBlockFH1 | ChmcElry.generic.blockF
+  McshStn000023:3007  idScmoEUEnergyEfficiencyCategoryF  <p> EUEnergyEfficiencyCategoryF::
+  McshStn000034:1257  idLVnmaunitPhnmCsntF  <section> idLVnmaunitPhnmCsntFH6 | VnmaphnmCons./f/_⟨PH⟩_[f]
+  McshStn000035:889  idLItlnunitPhnmCsntF  <section> idLItlnunitPhnmCsntFH6 | ItlnphnmCons./f/
+  McshStn000035:1315  idLItlnunitLttrF  <section> idLItlnunitLttrFH5 | Itlnletr.F_/éfe/
+  McshStn000037:1149  idLFracunitPhnmCsntF  <section> idLFracunitPhnmCsntFH6 | FracphnmCons./f/
+  McshStn000037:1596  idLFracunitLttrF  <section> idLFracunitLttrFH5 | Fracletr.F_/ef/
+  McshStn000038:688  idSbulunitPhnmCsntF  <section> idSbulunitPhnmCsntFH6 | SbulphnmCons./f/_⟨Ф⟩
+  McshStn000039:722  idLSqipunitPhnmCsntF  <section> idLSqipunitPhnmCsntFH6 | SqipphnmCons./f/_⟨F⟩
+  McshStn000039:1167  idLSqipunitLttrF  <section> idLSqipunitLttrFH5 | Sqipletr.F_/f/
+  McshStn000041:626  idLSslvunitLttrF  <section> idLSslvunitLttrFH5 | Sslvletr.F
+  McshStn000044:660  idLRomnunitPhnmCsntF  <section> idLRomnunitPhnmCsntFH6 | RomnphnmCons./f/
+  McshStn000044:987  idLRomnunitLttrF  <section> idLRomnunitLttrFH5 | Romnletr.F
+  McshStnlaw000004:5325  idLawInl017PrtXIScn4SsnF  <section> idLawInl017PrtXIScn4SsnFH4 | SUBSECTION XI.4.F: FINANCIAL ARRANGEMENTS
+  McshTchInf000006:494  idLCpgmalgsuntF  <section> idLCpgmalgsuntFH3 | Sunt.function (f) of Pgmglago
+  McshTchInf000006:2661  idLSrcdsuntF  <section> idLSrcdsuntFH3 | Sunt.function (f) of Srcdlago
+  McshTchInf000010:5267  idLJsgnstcDfnF  <section> idLJsgnstcDfnFH3 | Jsgndef.FUNCTION
+  McshTchInf000030:805  idLRustsuntF  <section> idLRustsuntFH2 | Sunt.function (f) of Rustlago
+=== PART-xFT (0) — xFT then only a-part-suffix (H1, dsn, nam, trees ...)
+
+=== PART-xF (113) — xF then only a-part-suffix (H1, dsn, nam, trees ...)
+  McshCor000004:7480  idDngWshgFH3  <h3> doing.washing_functing
+  McshCor000004:7482  idDngWshgFdsn  <p> description::
+  McshCor000004:7486  idDngWshgFnam  <p> name::
+  McshLag000009:2820  idL0017phnmFH5  <h5> HmmdphnmCons./f/
+  McshLag000009:2822  idL0017phnmFdsn  <p> description::
+  McshLag000009:2828  idL0017phnmFnam  <p> name::
+  McshLag000010:2854  idL0014wrdFH4  <h4> Sngu_word.f
+  McshLag000010:2856  idL0014wrdFdsn  <p> description::
+  McshLag000010:2879  idL0014wrdFnam  <p> name::
+  McshLag000010:4086  idL0014sylbFH4  <h4> Sngu_sylb.f
+  McshLag000010:4088  idL0014sylbFdsn  <p> description::
+  McshLag000010:4105  idL0014sylbFnam  <p> name::
+  McshLag000011:1315  idLEnglltrFH4  <h4> Englletr.F_/ef/
+  McshLag000011:1317  idLEnglltrFdsn  <p> description::
+  McshLag000011:1323  idLEnglltrFnam  <p> name::
+  McshLag000011:2514  idLEnglsylbFH4  <h4> Englsylb.f
+  McshLag000011:2516  idLEnglsylbFdsn  <p> description::
+  McshLag000011:2519  idLEnglsylbFnam  <p> name::
+  McshLag000016:153  idAbnEnglFH1  <h1> abrn.englF
+  McshLag000016:155  idAbnEnglFdsn  <p> description::
+  McshLag000016:158  idAbnEnglFnam  <p> name::
+  McshLag000018:20434  idLZhonpnynFH3  <h3> pinyin.f
+  McshLag000018:20436  idLZhonpnynFdsn  <p> description::
+  McshLag000018:20441  idLZhonpnynFnam  <p> name::
+  McshLag000018:20448  idLZhonpnynFgntr  <p> generic-tree::
+  McshLag000020:641  idLEllncsntFH5  <h5> EllnphnmCons./f/
+  McshLag000020:643  idLEllncsntFdsn  <p> description::
+  McshLag000020:648  idLEllncsntFnam  <p> name::
+  McshLag000020:1336  idLEllnphgmFH4  <h4> Ellnletr.Φ_/fi_f/
+  McshLag000020:1338  idLEllnphgmFdsn  <p> description::
+  McshLag000020:1342  idLEllnphgmFnam  <p> name::
+  McshLag000024:6044  idWrdrEnglFH1  <h1> F of wordSetEngl
+  McshLag000024:6046  idWrdrEnglFdsn  <p> description::
+  McshLag000024:6049  idWrdrEnglFnam  <p> name::
+  McshLag000030:604  idLTurkphnmCnstFH5  <h5> TurkphnmCons./f/
+  McshLag000030:606  idLTurkphnmCnstFdsn  <p> description::
+  McshLag000030:610  idLTurkphnmCnstFnam  <p> name::
+  McshLag000033:1008  idLDeutunitPhnmCsntFH5  <h5> DeutphnmCons./f/
+  McshLag000033:1010  idLDeutunitPhnmCsntFdsn  <p> description::
+  McshLag000033:1017  idLDeutunitPhnmCsntFnam  <p> name::
+  McshLag000033:1533  idLDeutunitLttrFH4  <h4> Deutletr.F_/ef/
+  McshLag000033:1535  idLDeutunitLttrFdsn  <p> description::
+  McshLag000033:1538  idLDeutunitLttrFnam  <p> name::
+  McshLag000035:645  idLSpanunitLttrFH4  <h4> Spanletr.F
+  McshLag000035:647  idLSpanunitLttrFdsn  <p> description::
+  McshLag000035:650  idLSpanunitLttrFnam  <p> name::
+  McshLag000036:1159  idLArabltrFH4  <h4> Arabletr.20_/f/_⟨ف⟩⟨فـفـف⟩_1601
+  McshLag000036:1161  idLArabltrFdsn  <p> description::
+  McshLag000036:1165  idLArabltrFnam  <p> name::
+  McshLag000037:3917  idLHindunitLttrCsntFH6  <h6> HindletrCons./f/_⟨फ़⟩_[f]
+  McshLag000037:3919  idLHindunitLttrCsntFdsn  <p> description::
+  McshLag000037:3923  idLHindunitLttrCsntFnam  <p> name::
+  McshNtr000007:6579  idChmElrBlockFH1  <h1> ChmcElry.generic.blockF
+  McshNtr000007:6581  idChmElrBlockFdsn  <p> description::
+  McshNtr000007:6589  idChmElrBlockFnam  <p> name::
+  McshStn000034:1258  idLVnmaunitPhnmCsntFH6  <h6> VnmaphnmCons./f/_⟨PH⟩_[f]
+  McshStn000034:1260  idLVnmaunitPhnmCsntFdsn  <p> description::
+  McshStn000034:1263  idLVnmaunitPhnmCsntFnam  <p> name::
+  McshStn000035:890  idLItlnunitPhnmCsntFH6  <h6> ItlnphnmCons./f/
+  McshStn000035:892  idLItlnunitPhnmCsntFdsn  <p> description::
+  McshStn000035:899  idLItlnunitPhnmCsntFnam  <p> name::
+  McshStn000035:1316  idLItlnunitLttrFH5  <h5> Itlnletr.F_/éfe/
+  McshStn000035:1318  idLItlnunitLttrFdsn  <p> description::
+  McshStn000035:1322  idLItlnunitLttrFnam  <p> name::
+  McshStn000037:1150  idLFracunitPhnmCsntFH6  <h6> FracphnmCons./f/
+  McshStn000037:1152  idLFracunitPhnmCsntFdsn  <p> description::
+  McshStn000037:1160  idLFracunitPhnmCsntFnam  <p> name::
+  McshStn000037:1597  idLFracunitLttrFH5  <h5> Fracletr.F_/ef/
+  McshStn000037:1599  idLFracunitLttrFdsn  <p> description::
+  McshStn000037:1602  idLFracunitLttrFnam  <p> name::
+  McshStn000038:689  idSbulunitPhnmCsntFH6  <h6> SbulphnmCons./f/_⟨Ф⟩
+  McshStn000038:691  idSbulunitPhnmCsntFdsn  <p> description::
+  McshStn000038:695  idSbulunitPhnmCsntFnam  <p> name::
+  McshStn000039:723  idLSqipunitPhnmCsntFH6  <h6> SqipphnmCons./f/_⟨F⟩
+  McshStn000039:725  idLSqipunitPhnmCsntFdsn  <p> description::
+  McshStn000039:728  idLSqipunitPhnmCsntFnam  <p> name::
+  McshStn000039:1168  idLSqipunitLttrFH5  <h5> Sqipletr.F_/f/
+  McshStn000039:1170  idLSqipunitLttrFdsn  <p> description::
+  McshStn000039:1173  idLSqipunitLttrFnam  <p> name::
+  McshStn000041:627  idLSslvunitLttrFH5  <h5> Sslvletr.F
+  McshStn000041:629  idLSslvunitLttrFdsn  <p> description::
+  McshStn000041:632  idLSslvunitLttrFnam  <p> name::
+  McshStn000044:661  idLRomnunitPhnmCsntFH6  <h6> RomnphnmCons./f/
+  McshStn000044:663  idLRomnunitPhnmCsntFdsn  <p> description::
+  McshStn000044:666  idLRomnunitPhnmCsntFnam  <p> name::
+  McshStn000044:988  idLRomnunitLttrFH5  <h5> Romnletr.F
+  McshStn000044:990  idLRomnunitLttrFdsn  <p> description::
+  McshStn000044:993  idLRomnunitLttrFnam  <p> name::
+  McshStnlaw000004:5326  idLawInl017PrtXIScn4SsnFH4  <h4> SUBSECTION XI.4.F: FINANCIAL ARRANGEMENTS OF THE AUTHORITY
+  McshTchInf000006:495  idLCpgmalgsuntFH3  <h3> Sunt.function (f) of Pgmglago
+  McshTchInf000006:497  idLCpgmalgsuntFdsn  <p> description::
+  McshTchInf000006:504  idLCpgmalgsuntFnam  <p> name::
+  McshTchInf000006:2662  idLSrcdsuntFH3  <h3> Sunt.function (f) of Srcdlago
+  McshTchInf000006:2664  idLSrcdsuntFdsn  <p> description::
+  McshTchInf000006:2668  idLSrcdsuntFnam  <p> name::
+  McshTchInf000006:2675  idLSrcdsuntFgstr  <section> idLSrcdsuntFgstrH4 | GENERIC-SPECIFIC-TREE of Srcdlago_f
+  McshTchInf000006:2676  idLSrcdsuntFgstrH4  <h4> GENERIC-SPECIFIC-TREE of Srcdlago_f
+  McshTchInf000006:2678  idLSrcdsuntFgstrdsn  <p> description::
+  McshTchInf000006:2681  idLSrcdsuntFgstrnam  <p> name::
+  McshTchInf000006:2684  idLSrcdsuntFgntr  <p> generic-tree::
+  McshTchInf000006:2689  idLSrcdsuntFsptr  <p> specific-tree::
+  McshTchInf000010:5268  idLJsgnstcDfnFH3  <h3> Jsgndef.FUNCTION
+  McshTchInf000010:5270  idLJsgnstcDfnFdsn  <p> description::
+  McshTchInf000010:5278  idLJsgnstcDfnFnam  <p> name::
+  McshTchInf000030:806  idLRustsuntFH2  <h2> Sunt.function (f) of Rustlago
+  McshTchInf000030:808  idLRustsuntFdsn  <p> description::
+  McshTchInf000030:812  idLRustsuntFnam  <p> name::
+  McshTchInf000030:1505  idLRustsuntFgstr  <section> idLRustsuntFgstrH3 | GENERIC-SPECIFIC-TREE of Rustlago_f
+  McshTchInf000030:1506  idLRustsuntFgstrH3  <h3> GENERIC-SPECIFIC-TREE of Rustlago_f
+  McshTchInf000030:1508  idLRustsuntFgstrdsn  <p> description::
+  McshTchInf000030:1511  idLRustsuntFgstrnam  <p> name::
+  McshTchInf000030:1514  idLRustsuntFgntr  <p> generic-tree::
+  McshTchInf000030:1521  idLRustsuntFsptr  <p> specific-tree::

@@ -1,0 +1,257 @@
+=== id-smallF-strip DRY-RUN {2026-11-13} — drop the-old F|FT of END-xFT, END-xF, PART-xFT
+  files changed: 26, bases: 52, ids renamed: 197, dangling links before/after: 237/237
+=== BASE (52) — old -> new
+  McshLag000008:68  idL0016attFT -> idL0016att
+  McshLag000009:84  idL0017attFT -> idL0017att
+  McshLag000010:110  idL0014attFT -> idL0014att
+  McshTchInf000021:89  idEosevalProFT -> idEosevalPro
+  McshTchInf000021:128  idEosevalConFT -> idEosevalCon
+  McshTchInf000021:429  idEosnodFT -> idEosnod
+  McshTchInf000021:904  idEosevuFT -> idEosevu
+  McshTchInf000021:1082  idEosprlFT -> idEosprl
+  McshTchInf000021:1961  idEosgovFT -> idEosgov
+  McshTchInf000021:2697  idEoswltFT -> idEoswlt
+  McshTchInf000021:2728  idEosognFT -> idEosogn
+  McshTchInf000021:3154  idEoschnFT -> idEoschn
+  McshTchInf000021:3554  idEosEvgFT -> idEosEvg
+  McshTchInf000022:1630  idFairnetEvgFT -> idFairnetEvg
+  McshTchInf000024:4296  idSteemEvgFT -> idSteemEvg
+  McshTchInf000025:1055  idErpdevalConFT -> idErpdevalCon
+  McshTchInf000026:1856  idBkskhmnFT -> idBkskhmn
+  McshTchInf000026:1909  idBkskognFT -> idBkskogn
+  McshTchInf000026:2016  idBkskattFT -> idBkskatt
+  McshTchInf000026:2047  idBkskenvtFT -> idBkskenvt
+  McshTchInf000026:2090  idBkskugdgFT -> idBkskugdg
+  McshTchInf000026:2105  idBkskdrngFT -> idBkskdrng
+  McshTchInf000026:2119  idBksklrngFT -> idBksklrng
+  McshTchInf000027:81  idNeoprlFT -> idNeoprl
+  McshTchInf000027:95  idNeoastFT -> idNeoast
+  McshTchInf000027:164  idNeogovFT -> idNeogov
+  McshTchInf000028:2689  idDnlbrmfcnFT -> idDnlbrmfcn
+  McshTchInf000030:220  idLRustattFT -> idLRustatt
+  McshHlth000007:116  idHlthOgmenvF -> idHlthOgmenv
+  McshHlth000010:75  idDssOgmeftF -> idDssOgmeft
+  McshHlth000010:90  idDssOgmcasF -> idDssOgmcas
+  McshHlth000010:104  idDssOgmdgnsF -> idDssOgmdgns
+  McshHlth000010:120  idDssOgmthrpF -> idDssOgmthrp
+  McshHlth000010:161  idDssOgmprtnF -> idDssOgmprtn
+  McshHlth000010:174  idDssOgmfoodF -> idDssOgmfood
+  McshHlth000011:160  idDssHmnrkfrF -> idDssHmnrkfr
+  McshHlth000013:770  idFoodHmnsciF -> idFoodHmnsci
+  McshHlth000014:538  idMedHmnognF -> idMedHmnogn
+  McshHmn000002:3554  idHmnattF -> idHmnatt
+  McshLag000011:31059  idLEnglattMscF -> idLEnglattMsc
+  McshLag000012:67  idLEspoattF -> idLEspoatt
+  McshLag000017:4441  idLHmnm0011sptrF -> idLHmnm0011sptr
+  McshLag000018:17704  idLZhonattMscF -> idLZhonattMsc
+  McshNtr000007:362  idChmElrpdgF -> idChmElrpdg
+  McshNtr000007:1352  idChmElrAstatineocrcF -> idChmElrAstatineocrc
+  McshStn000009:6781  idSocHumnatt024sptrF -> idSocHumnatt024sptr
+  McshTchInf000019:119  idDeOznenvtF -> idDeOznenvt
+  McshTchInf000023:143  idIotahmnF -> idIotahmn
+  McshTchInf000023:159  idIotachnF -> idIotachn
+  McshTchInf000023:181  idIotacsaF -> idIotacsa
+  McshTchInf000025:1029  idErpdevalProF -> idErpdevalPro
+  McshTchInf000025:1071  idErpdattF -> idErpdatt
+=== SKIPPED (1) — a-new id exists already, left as it is
+  idLWasmEvgFT -> idLWasmEvg  TAKEN: idLWasmEvg, idLWasmEvgnam
+=== LEFT (0) — start with a-base, but NOT a-part-id, left as they are
+
+=== RENAMED (197)
+  idBkskattFT -> idBkskatt
+  idBkskattFTH1 -> idBkskattH1
+  idBkskattFTdsn -> idBkskattdsn
+  idBkskattFTnam -> idBkskattnam
+  idBkskdrngFT -> idBkskdrng
+  idBkskdrngFTH2 -> idBkskdrngH2
+  idBkskenvtFT -> idBkskenvt
+  idBkskenvtFTH1 -> idBkskenvtH1
+  idBkskenvtFTdsn -> idBkskenvtdsn
+  idBkskhmnFT -> idBkskhmn
+  idBkskhmnFTH1 -> idBkskhmnH1
+  idBkskhmnFTdsn -> idBkskhmndsn
+  idBkskhmnFTgntr -> idBkskhmngntr
+  idBkskhmnFTgstr -> idBkskhmngstr
+  idBkskhmnFTgstrH2 -> idBkskhmngstrH2
+  idBkskhmnFTgstrdsn -> idBkskhmngstrdsn
+  idBkskhmnFTgstrnam -> idBkskhmngstrnam
+  idBkskhmnFTsptr -> idBkskhmnsptr
+  idBksklrngFT -> idBksklrng
+  idBksklrngFTH2 -> idBksklrngH2
+  idBksklrngFTdsn -> idBksklrngdsn
+  idBkskognFT -> idBkskogn
+  idBkskognFTH1 -> idBkskognH1
+  idBkskognFTdsn -> idBkskogndsn
+  idBkskognFTnam -> idBkskognnam
+  idBkskognFTwpa -> idBkskognwpa
+  idBkskugdgFT -> idBkskugdg
+  idBkskugdgFTH2 -> idBkskugdgH2
+  idBkskugdgFTdsn -> idBkskugdgdsn
+  idBkskugdgFTnam -> idBkskugdgnam
+  idChmElrAstatineocrcF -> idChmElrAstatineocrc
+  idChmElrAstatineocrcFH2 -> idChmElrAstatineocrcH2
+  idChmElrAstatineocrcFdsn -> idChmElrAstatineocrcdsn
+  idChmElrAstatineocrcFnam -> idChmElrAstatineocrcnam
+  idChmElrpdgF -> idChmElrpdg
+  idChmElrpdgFH2 -> idChmElrpdgH2
+  idChmElrpdgFdsn -> idChmElrpdgdsn
+  idChmElrpdgFnam -> idChmElrpdgnam
+  idDeOznenvtF -> idDeOznenvt
+  idDeOznenvtFH1 -> idDeOznenvtH1
+  idDeOznenvtFdsn -> idDeOznenvtdsn
+  idDeOznenvtFnam -> idDeOznenvtnam
+  idDnlbrmfcnFT -> idDnlbrmfcn
+  idDnlbrmfcnFTH2 -> idDnlbrmfcnH2
+  idDnlbrmfcnFTdsn -> idDnlbrmfcndsn
+  idDnlbrmfcnFTnam -> idDnlbrmfcnnam
+  idDssHmnrkfrF -> idDssHmnrkfr
+  idDssHmnrkfrFH2 -> idDssHmnrkfrH2
+  idDssHmnrkfrFdsn -> idDssHmnrkfrdsn
+  idDssHmnrkfrFnam -> idDssHmnrkfrnam
+  idDssOgmcasF -> idDssOgmcas
+  idDssOgmcasFH1 -> idDssOgmcasH1
+  idDssOgmcasFdsn -> idDssOgmcasdsn
+  idDssOgmcasFnam -> idDssOgmcasnam
+  idDssOgmdgnsF -> idDssOgmdgns
+  idDssOgmdgnsFH1 -> idDssOgmdgnsH1
+  idDssOgmdgnsFdsn -> idDssOgmdgnsdsn
+  idDssOgmdgnsFnam -> idDssOgmdgnsnam
+  idDssOgmeftF -> idDssOgmeft
+  idDssOgmeftFH1 -> idDssOgmeftH1
+  idDssOgmeftFdsn -> idDssOgmeftdsn
+  idDssOgmeftFnam -> idDssOgmeftnam
+  idDssOgmfoodF -> idDssOgmfood
+  idDssOgmfoodFH1 -> idDssOgmfoodH1
+  idDssOgmfoodFdsn -> idDssOgmfooddsn
+  idDssOgmfoodFnam -> idDssOgmfoodnam
+  idDssOgmprtnF -> idDssOgmprtn
+  idDssOgmprtnFH1 -> idDssOgmprtnH1
+  idDssOgmprtnFdsn -> idDssOgmprtndsn
+  idDssOgmprtnFnam -> idDssOgmprtnnam
+  idDssOgmthrpF -> idDssOgmthrp
+  idDssOgmthrpFH1 -> idDssOgmthrpH1
+  idDssOgmthrpFdsn -> idDssOgmthrpdsn
+  idDssOgmthrpFgntr -> idDssOgmthrpgntr
+  idDssOgmthrpFgstr -> idDssOgmthrpgstr
+  idDssOgmthrpFgstrH2 -> idDssOgmthrpgstrH2
+  idDssOgmthrpFgstrdsn -> idDssOgmthrpgstrdsn
+  idDssOgmthrpFgstrnam -> idDssOgmthrpgstrnam
+  idDssOgmthrpFnam -> idDssOgmthrpnam
+  idDssOgmthrpFsptr -> idDssOgmthrpsptr
+  idEosEvgFT -> idEosEvg
+  idEosEvgFTH1 -> idEosEvgH1
+  idEosEvgFTdsn -> idEosEvgdsn
+  idEoschnFT -> idEoschn
+  idEoschnFTH1 -> idEoschnH1
+  idEoschnFTdsn -> idEoschndsn
+  idEoschnFTnam -> idEoschnnam
+  idEosevalConFT -> idEosevalCon
+  idEosevalConFTH2 -> idEosevalConH2
+  idEosevalConFTdsn -> idEosevalCondsn
+  idEosevalConFTwpa -> idEosevalConwpa
+  idEosevalProFT -> idEosevalPro
+  idEosevalProFTH2 -> idEosevalProH2
+  idEosevalProFTwpa -> idEosevalProwpa
+  idEosevuFT -> idEosevu
+  idEosevuFTH1 -> idEosevuH1
+  idEosevuFTdsn -> idEosevudsn
+  idEosevuFTnam -> idEosevunam
+  idEosgovFT -> idEosgov
+  idEosgovFTH1 -> idEosgovH1
+  idEosgovFTdsn -> idEosgovdsn
+  idEosgovFTnam -> idEosgovnam
+  idEosnodFT -> idEosnod
+  idEosnodFTH1 -> idEosnodH1
+  idEosnodFTdsn -> idEosnoddsn
+  idEosognFT -> idEosogn
+  idEosognFTH1 -> idEosognH1
+  idEosognFTdsn -> idEosogndsn
+  idEosprlFT -> idEosprl
+  idEosprlFTH1 -> idEosprlH1
+  idEosprlFTdsn -> idEosprldsn
+  idEoswltFT -> idEoswlt
+  idEoswltFTH1 -> idEoswltH1
+  idEoswltFTdsn -> idEoswltdsn
+  idEoswltFTnam -> idEoswltnam
+  idEoswltFTwpa -> idEoswltwpa
+  idErpdattF -> idErpdatt
+  idErpdattFH1 -> idErpdattH1
+  idErpdattFdsn -> idErpdattdsn
+  idErpdattFnam -> idErpdattnam
+  idErpdevalConFT -> idErpdevalCon
+  idErpdevalConFTH2 -> idErpdevalConH2
+  idErpdevalConFTnam -> idErpdevalConnam
+  idErpdevalProF -> idErpdevalPro
+  idErpdevalProFH2 -> idErpdevalProH2
+  idErpdevalProFdsn -> idErpdevalProdsn
+  idErpdevalProFnam -> idErpdevalPronam
+  idFairnetEvgFT -> idFairnetEvg
+  idFairnetEvgFTH1 -> idFairnetEvgH1
+  idFairnetEvgFTdsn -> idFairnetEvgdsn
+  idFoodHmnsciF -> idFoodHmnsci
+  idFoodHmnsciFH2 -> idFoodHmnsciH2
+  idFoodHmnsciFdsn -> idFoodHmnscidsn
+  idFoodHmnsciFnam -> idFoodHmnscinam
+  idHlthOgmenvF -> idHlthOgmenv
+  idHlthOgmenvFH1 -> idHlthOgmenvH1
+  idHlthOgmenvFdsn -> idHlthOgmenvdsn
+  idHlthOgmenvFnam -> idHlthOgmenvnam
+  idHmnattF -> idHmnatt
+  idHmnattFH1 -> idHmnattH1
+  idHmnattFdsn -> idHmnattdsn
+  idHmnattFnam -> idHmnattnam
+  idIotachnF -> idIotachn
+  idIotachnFH1 -> idIotachnH1
+  idIotachnFdsn -> idIotachndsn
+  idIotacsaF -> idIotacsa
+  idIotacsaFH2 -> idIotacsaH2
+  idIotahmnF -> idIotahmn
+  idIotahmnFH1 -> idIotahmnH1
+  idL0014attFT -> idL0014att
+  idL0014attFTH1 -> idL0014attH1
+  idL0014attFTdsn -> idL0014attdsn
+  idL0014attFTnam -> idL0014attnam
+  idL0016attFT -> idL0016att
+  idL0016attFTH1 -> idL0016attH1
+  idL0016attFTdsn -> idL0016attdsn
+  idL0016attFTnam -> idL0016attnam
+  idL0017attFT -> idL0017att
+  idL0017attFTH1 -> idL0017attH1
+  idL0017attFTdsn -> idL0017attdsn
+  idL0017attFTnam -> idL0017attnam
+  idLEnglattMscF -> idLEnglattMsc
+  idLEnglattMscFH1 -> idLEnglattMscH1
+  idLEnglattMscFdsn -> idLEnglattMscdsn
+  idLEnglattMscFnam -> idLEnglattMscnam
+  idLEspoattF -> idLEspoatt
+  idLEspoattFH1 -> idLEspoattH1
+  idLEspoattFdsn -> idLEspoattdsn
+  idLEspoattFnam -> idLEspoattnam
+  idLHmnm0011sptrF -> idLHmnm0011sptr
+  idLRustattFT -> idLRustatt
+  idLRustattFTH1 -> idLRustattH1
+  idLRustattFTdsn -> idLRustattdsn
+  idLRustattFTnam -> idLRustattnam
+  idLZhonattMscF -> idLZhonattMsc
+  idLZhonattMscFH1 -> idLZhonattMscH1
+  idLZhonattMscFdsn -> idLZhonattMscdsn
+  idLZhonattMscFnam -> idLZhonattMscnam
+  idMedHmnognF -> idMedHmnogn
+  idMedHmnognFH1 -> idMedHmnognH1
+  idMedHmnognFdsn -> idMedHmnogndsn
+  idMedHmnognFgntr -> idMedHmnogngntr
+  idMedHmnognFnam -> idMedHmnognnam
+  idNeoastFT -> idNeoast
+  idNeoastFTH1 -> idNeoastH1
+  idNeoastFTdsn -> idNeoastdsn
+  idNeoastFTnam -> idNeoastnam
+  idNeogovFT -> idNeogov
+  idNeogovFTH1 -> idNeogovH1
+  idNeoprlFT -> idNeoprl
+  idNeoprlFTH1 -> idNeoprlH1
+  idNeoprlFTdsn -> idNeoprldsn
+  idSocHumnatt024sptrF -> idSocHumnatt024sptr
+  idSteemEvgFT -> idSteemEvg
+  idSteemEvgFTH1 -> idSteemEvgH1
+  idSteemEvgFTdsn -> idSteemEvgdsn
+  idSteemEvgFTwpa -> idSteemEvgwpa

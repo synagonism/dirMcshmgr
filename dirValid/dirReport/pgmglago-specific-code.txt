@@ -25,11 +25,6 @@ method: from Pgmglago follow specific-tree:: items, generic-tree:: claims, X.nam
   McshTchInf000006:1645   Wasmlago   only a description link in Specsdiv.on_time_of_creation
 
 === HAVE OLD-FORM CODE lagLLLL (4)
-  McshTchInf000006:3427   lagQury    name Pgmglago.query
-  McshTchInf000006:3486   lagCscr    name Pgmglago.scripting
-  McshTchInf000006:3648   lagLean    name Pgmglago.Lean
-  McshTchInf000010:7592   lagJsnw    plain item "NW.js-(lagJsnw)" of Jsdtlago, no section
-  McshTchInf000006:2037   lagVtl     3-letter old code still in the heading of Btcdlago's virtual-code
 
 === CONCEPT WITH SECTION, NO 4-LETTER CODE (8)
   McshTchInf000006:3588   declarative-Pgmglago    name Pgmglago.declarative
@@ -144,14 +139,5 @@ method: from Pgmglago follow specific-tree:: items, generic-tree:: claims, X.nam
   McshTchInf000006:1686    {1954} IPL
 
 === PROGRAMING-LANGUAGES NOT CONNECTED TO Pgmglago (3)
-  McshTchInf000018:9511   Solxlago   generic-tree names LanguageComputerPrograming (no such concept)
-  McshTchInf000028:1022   Movelago   generic-tree names DnChain--programing-language (no such concept)
-  McshTchInf000014:6411   Wasmlago   generic-tree names web-programing-language (no such concept)
 
 === NOTES (6)
-  McshTchInf000006:1552   specific-tree of Pgmglago has 1 linked item (Jsgnlago); the 12 own sections Pgmglago.X are not listed in it
-  McshTchInf000006:3123   specific-tree of Srcdlago is empty; its 4 sections are not listed
-  McshTchInf000006:3245   Pgmglago.concept links McshTchInf000007#idLCnpt002, which is now Cnptlago.doing_002
-  McshTchInf000006:1796   Mchnlago, Btcdlago, Fctnlago have no generic-tree; Srcdlago, Oolzlago, Dtprlago do not claim Pgmglago
-  McshTchInf000010:7518   specific-tree of Jsgnlago uses descriptive names with #idDescription refs, not X.M!@file format
-  McshTchInf000039:14366  Wlfmlago is a specific of Knlglago, not of Pgmglago; left out

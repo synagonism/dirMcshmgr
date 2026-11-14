@@ -1,0 +1,147 @@
+=== id-smallF-part APPLIED {2026-11-13} — drop F|FT of the-pasted part-ids
+  pasted: 139, renamed: 68, tokens: 135, files: 61, dangling links before/after: 528/528
+=== RENAMED (68)
+  McshCor000003:729  idEntevogFdsn -> idEntevogdsn
+  McshCor000015:278  idMcshExmlevogFdsn -> idMcshExmlevogdsn
+  McshEdu000002:723  idScievogFdsn -> idScievogdsn
+  McshEdu000006:381  idSSophypctrFdsn -> idSSophypctrdsn
+  McshEdu000007:223  idSCmprpctrFdsn -> idSCmprpctrdsn
+  McshEdu000008:146  idSInfopctrFdsn -> idSInfopctrdsn
+  McshEdu000009:120  idSMindpctrFdsn -> idSMindpctrdsn
+  McshEdu000010:2099  idSLangpctrFdsn -> idSLangpctrdsn
+  McshEdu000010:2102  idSLangpctrFnam -> idSLangpctrnam
+  McshEdu000011:269  idArtpctrFdsn -> idArtpctrdsn
+  McshEdu000011:272  idArtpctrFnam -> idArtpctrnam
+  McshEdu000012:130  idSGvncpctrFdsn -> idSGvncpctrdsn
+  McshEdu000012:133  idSGvncpctrFnam -> idSGvncpctrnam
+  McshEdu000013:155  idSPhyspctrFdsn -> idSPhyspctrdsn
+  McshEdu000013:158  idSPhyspctrFnam -> idSPhyspctrnam
+  McshEdu000014:267  idSEconevogFdsn -> idSEconevogdsn
+  McshHlth000002:14974  idBdyHmnevogFdsn -> idBdyHmnevogdsn
+  McshHlth000003:3624  idBrnHmnevogFnam -> idBrnHmnevognam
+  McshHlth000019:6045  idSysNrvsevogFwpa -> idSysNrvsevogwpa
+  McshLag000007:31538  idLHmnmevogFdsn -> idLHmnmevogdsn
+  McshLag000012:5226  idLEspoevogFwpa -> idLEspoevogwpa
+  McshLag000018:17784  idLZhonevogFdsn -> idLZhonevogdsn
+  McshLag000018:17849  idLZhonevogFwpa -> idLZhonevogwpa
+  McshLag000026:1610  idLEllnverbevogFdsn -> idLEllnverbevogdsn
+  McshLag000027:7948  idLEllaevogFdsn -> idLEllaevogdsn
+  McshLag000029:92  idLEng0evogFwpa -> idLEng0evogwpa
+  McshLag000030:8121  idLTurkevogFdsn -> idLTurkevogdsn
+  McshNtr000017:185  idSkyevogFdsn -> idSkyevogdsn
+  McshOgm000009:463  idOgmAnmlevogFdsn -> idOgmAnmlevogdsn
+  McshStn000009:7157  idSocHumnevogFdsn -> idSocHumnevogdsn
+  McshStn000012:3078  idEconHmnevogFdsn -> idEconHmnevogdsn
+  McshStn000014:941  idOznCsnevogFdsn -> idOznCsnevogdsn
+  McshStn000019:806  idSocAlgoevogFdsn -> idSocAlgoevogdsn
+  McshStn000020:19825  idSocEusevogFwpa -> idSocEusevogwpa
+  McshStn000030:881  idSocGrcaevogFdsn -> idSocGrcaevogdsn
+  McshStn000031:13203  idSocChnaevogFdsn -> idSocChnaevogdsn
+  McshStn000034:4157  idSocVtnmevogFdsn -> idSocVtnmevogdsn
+  McshStn000035:3699  idSocItlaevogFdsn -> idSocItlaevogdsn
+  McshStn000036:159  idSocDeutevogFdsn -> idSocDeutevogdsn
+  McshStn000037:2236  idSocFracevogFdsn -> idSocFracevogdsn
+  McshStn000038:1904  idSocBgraevogFdsn -> idSocBgraevogdsn
+  McshStn000039:2362  idSocAlbaevogFdsn -> idSocAlbaevogdsn
+  McshStn000040:1709  idSocNmkdevogFdsn -> idSocNmkdevogdsn
+  McshStn000041:1633  idSocSvnaevogFdsn -> idSocSvnaevogdsn
+  McshStn000042:2654  idSctrEduevgFdsn -> idSctrEduevgdsn
+  McshStn000043:1753  idSocRusaevogFdsn -> idSocRusaevogdsn
+  McshStn000044:1964  idSocRouaevogFdsn -> idSocRouaevogdsn
+  McshStn000045:264  idSocSsssevogFdsn -> idSocSsssevogdsn
+  McshStn000046:248  idSocMneaevogFdsn -> idSocMneaevogdsn
+  McshStn000047:264  idSocHrvaevogFdsn -> idSocHrvaevogdsn
+  McshStn000048:5374  idSocJpnaevogFdsn -> idSocJpnaevogdsn
+  McshStn000049:467  idSocKorsevogFdsn -> idSocKorsevogdsn
+  McshStn000050:3921  idSocKhmaevogFdsn -> idSocKhmaevogdsn
+  McshStn000051:388  idSocSgprevogFdsn -> idSocSgprevogdsn
+  McshStnlaw000004:483  idLawInlevogFdsn -> idLawInlevogdsn
+  McshTch000002:302  idTchevogFdsn -> idTchevogdsn
+  McshTchInf000002:425  idTchInfevogFdsn -> idTchInfevogdsn
+  McshTchInf000002:494  idTchInfevogFwpa -> idTchInfevogwpa
+  McshTchInf000005:537  idLCmprdongFdsn -> idLCmprdongdsn
+  McshTchInf000005:541  idLCmprdongFnam -> idLCmprdongnam
+  McshTchInf000006:1487  idLCpgmevogFdsn -> idLCpgmevogdsn
+  McshTchInf000009:4362  idLMcshmngrsrcgrnfifFH4 -> idLMcshmngrsrcgrnfifH4
+  McshTchInf000035:412  idLHtmlevogFdsn -> idLHtmlevogdsn
+  McshTchInf000036:4824  idTechAievogFdsn -> idTechAievogdsn
+  McshTchInf000038:1240  idTchLlmevogFdsn -> idTchLlmevogdsn
+  McshTchInf000039:3120  idLKnlgevogFdsn -> idLKnlgevogdsn
+  McshTchInf000040:1343  idIntntevogFdsn -> idIntntevogdsn
+  McshTchInf000041:6258  idVscodeevogFdsn -> idVscodeevogdsn
+=== SKIPPED (0) — the-new id exists already in the-file
+
+=== GONE (71) — not in the-files any more (renamed before)
+  idLWasmEvgFTH1
+  idLWasmEvgFTnam
+  idLWasmEvgFTdsn
+  idHlthOgmenvFH1
+  idHlthOgmenvFdsn
+  idHlthOgmenvFnam
+  idDssOgmeftFH1
+  idDssOgmeftFdsn
+  idDssOgmeftFnam
+  idDssOgmcasFH1
+  idDssOgmcasFdsn
+  idDssOgmcasFnam
+  idDssOgmdgnsFH1
+  idDssOgmdgnsFdsn
+  idDssOgmdgnsFnam
+  idDssOgmthrpFH1
+  idDssOgmthrpFdsn
+  idDssOgmthrpFnam
+  idDssOgmthrpFgstr
+  idDssOgmthrpFgstrH2
+  idDssOgmthrpFgstrdsn
+  idDssOgmthrpFgstrnam
+  idDssOgmthrpFgntr
+  idDssOgmthrpFsptr
+  idDssOgmprtnFH1
+  idDssOgmprtnFdsn
+  idDssOgmprtnFnam
+  idDssOgmfoodFH1
+  idDssOgmfoodFdsn
+  idDssOgmfoodFnam
+  idDssHmnrkfrFH2
+  idDssHmnrkfrFdsn
+  idDssHmnrkfrFnam
+  idFoodHmnsciFH2
+  idFoodHmnsciFdsn
+  idFoodHmnsciFnam
+  idMedHmnognFH1
+  idMedHmnognFdsn
+  idMedHmnognFnam
+  idMedHmnognFgntr
+  idHmnattFH1
+  idHmnattFdsn
+  idHmnattFnam
+  idLEnglattMscFH1
+  idLEnglattMscFdsn
+  idLEnglattMscFnam
+  idLEspoattFH1
+  idLEspoattFdsn
+  idLEspoattFnam
+  idLZhonattMscFH1
+  idLZhonattMscFdsn
+  idLZhonattMscFnam
+  idChmElrpdgFH2
+  idChmElrpdgFdsn
+  idChmElrpdgFnam
+  idChmElrAstatineocrcFH2
+  idChmElrAstatineocrcFdsn
+  idChmElrAstatineocrcFnam
+  idDeOznenvtFH1
+  idDeOznenvtFdsn
+  idDeOznenvtFnam
+  idIotahmnFH1
+  idIotachnFH1
+  idIotachnFdsn
+  idIotacsaFH2
+  idErpdevalProFH2
+  idErpdevalProFdsn
+  idErpdevalProFnam
+  idErpdattFH1
+  idErpdattFdsn
+  idErpdattFnam
+=== NO-RULE (0)
+
