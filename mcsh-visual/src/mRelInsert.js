@@ -292,8 +292,7 @@ function fFindRelated(sRootIn, oTrigIn) {
     sMarkChar = oTrigIn.sMark[0], // primary char; a-repeat of it is the-nested variant (/ vs //, ; vs ;;)
     // other relation-markers: a-child starting with one belongs to another relation
     rSep = new RegExp('^[' + ".'/:;@".replace(sMarkChar, '') + ']'),
-    aoOut = [],
-    oSeen = new Set();
+    oByKey = new Map(); // sKey -> { sInformal, sRef, bOpp }: one entry per target-concept
   fSearchName(sRootIn, fEsc(oTrigIn.sMmn) + fEsc(oTrigIn.sMark), 'lagEngl').forEach(function (aNu) {
     const sName = aNu[0], sUrl = aNu[1];
     if (!sName.startsWith(sPrefix)) return;
@@ -310,13 +309,18 @@ function fFindRelated(sRootIn, oTrigIn) {
       sRef = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, '') + sHash,
       // full relation-name (only a-leading NNN_ ordering-number removed)
       sClean = sPrefix + sChild.replace(/^\d+_/, ''),
-      // one line per target-concept; opposite-holding relations keep an X/XNo pair
+      // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite
+      // 'logo' written 'conceptNo' then '(logo)'; keep that opposite visible in the-list
+      bOpp = /\([^)]+\)/.test(sChild),
+      // one line per target-concept; opposite-holding relations keep an X/XNo pair. among
+      // same-concept aliases prefer the-canonical opposite-bearing name over an-ordered/plain one
       sKey = oTrigIn.bHoldOpp ? (sRef + (sClean.endsWith('No') ? '#No' : '#')) : sRef;
-    if (oSeen.has(sKey)) return;
-    oSeen.add(sKey);
-    aoOut.push({ sInformal: sClean, sRef });
+    const oPrev = oByKey.get(sKey);
+    if (!oPrev || (bOpp && !oPrev.bOpp)) oByKey.set(sKey, { sInformal: sClean, sRef, bOpp });
   });
-  return aoOut.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal));
+  return [...oByKey.values()]
+    .map(oV => ({ sInformal: oV.sInformal, sRef: oV.sRef }))
+    .sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal));
 }
 
 /**

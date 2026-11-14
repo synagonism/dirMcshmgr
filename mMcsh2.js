@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-8-0.2026-11-14: X.specific (and other relation) listing prefers the-canonical opposite-bearing name conceptNo(logo) over an-ordered/plain alias of the-same concept, so the-opposite stays visible',
     'mMcsh2.js.27-7-0.2026-11-14: X:generic listing keeps an-already-baked Y:generic!@ref line as-is (no re-resolve); generic-trees now carry baked refs',
     'mMcsh2.js.27-6-0.2026-11-14: X:generic listing links the-concept (!@<stem>#<id>, generic-tree anchor minus gntr; #idOverview when concept is the-file) and omits ...entity:generic',
     'mMcsh2.js.27-5-0.2026-11-14: dblclick on a-non-head X:generic lists ITS generic-tree generics in !@ format (preview/go-to), like X.specific',
@@ -1642,8 +1643,7 @@ let fContainersInsert = function () {
       const
         // other relation-markers: a-child starting with one belongs to another relation
         rSep = new RegExp('^[' + ".'/:;@".replace(sMarkChar, '') + ']'),
-        aoOut = [],
-        oSeen = new Set()
+        oByKey = new Map() // sKey -> { sInformal, sRef, bOpp }: one entry per target-concept
       aaNu.forEach(function (aNu) {
         const sName = aNu[0], sUrl = aNu[1]
         if (!sName.startsWith(sPrefix)) return
@@ -1661,15 +1661,17 @@ let fContainersInsert = function () {
           sRef = sStem + sHash
         // full relation-name '<Mmn><mark><child>' (only a-leading NNN_ ordering-number removed)
         const sClean = sPrefix + sChild.replace(/^\d+_/, '')
-        // dedupe by target-concept (one line per concept); for opposite-holding
-        // relations split each concept into a-positive and a-'No'-negated bucket, so an
-        // X/XNo pair (open/openNo) survives while other same-concept aliases collapse
+        // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite
+        // 'logo' written 'conceptNo' then '(logo)'; keep that opposite visible in the-list
+        const bOpp = /\([^)]+\)/.test(sChild)
+        // one line per target-concept; for opposite-holding relations split each concept into
+        // a-positive and a-'No'-negated bucket so an X/XNo pair (open/openNo) survives. among
+        // same-concept aliases prefer the-canonical opposite-bearing name over an-ordered/plain one
         const sKey = bHoldOppIn ? (sRef + (sClean.endsWith('No') ? '#No' : '#')) : sRef
-        if (oSeen.has(sKey)) return
-        oSeen.add(sKey)
-        aoOut.push({ sInformal: sClean, sRef: sRef })
+        const oPrev = oByKey.get(sKey)
+        if (!oPrev || (bOpp && !oPrev.bOpp)) oByKey.set(sKey, { sInformal: sClean, sRef: sRef, bOpp: bOpp })
       })
-      return aoOut
+      return [...oByKey.values()].map(oV => ({ sInformal: oV.sInformal, sRef: oV.sRef }))
     }
 
     // lists the-direct-generics of a-generic-tree (the-lines after the-first '===', up to a-labeled
