@@ -1,287 +1,779 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — dry run: ../dirMcsh
+  INHERITANCE SYNC — dry run: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29889 sections · 4854 specifics under a-numbered generic · 3607 of their attributes · 1086 match a-numbered generic-attribute
+  258 files · 29869 sections · 5017 specifics under a-numbered generic · 4207 of their attributes · 1244 match a-numbered generic-attribute
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
-  INH-NONUM        14  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  INH-WRONGNUM     15  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
-  INH-EMPTY        30  an-inherited attribute that says nothing new (no info, no link): delete?
-  INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL       106  an-attribute in 3+ specifics, not in the-generic: lift it up?
-  INH-REFBROKEN    10  a-text-reference name!@File#id whose file or id does NOT exist
-  INH-GNTRTEXT     17  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  INH-NONUM       193  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM     80  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-ORDER        15  the-attributes of a-specific are not in the-NN order of its generic
+  INH-EMPTY       180  an-inherited attribute that says nothing new (no info, no link): delete?
+  INH-GENDUP        1  a-numbered generic gives the-same NN_ to two attributes: renumber
+  INH-LOCAL       123  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-REFBROKEN     9  a-text-reference name!@File#id whose file or id does NOT exist
+  INH-GNTRTEXT     87  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
 
-=== INH-NONUM (14) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  McshCor000009:1149  "relation of ActgMeasuring"  → 08_ ✗ own numbering of the-specific: by hand  ← FctgEvaluating'08_relation@McshCor000018#idBrngHmnFct002Evalgrln
-  McshCor000009:586  "argument of ActgMeasuring"  → 06_ ✗ own numbering of the-specific: by hand  ← FctgEvaluating'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
-  McshCor000011:2231  "structure of SystTree"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
-  McshCor000011:1712  "structure of sequence"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshCor000023:72  "structure of SystDyna"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshLag000003:1200  "structure of worldview"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
-  McshLag000003:668  "structure of cnptMind"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshLag000007:15810  "syntax-tree of HmnmviewSemu"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshLag000007:1135  "syntax-tree of HmnmviewLogo"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshLag000018:17335  "evaluation of Zhon_lago"  → 12_ ✗ own numbering of the-specific: by hand  ← model'12_evaluation@McshCor000012#idMdleval
-  McshStn000021:497  "technology of SocGlbl"  → 30_ ✗ own numbering of the-specific: by hand  ← societyOgsm'30_technology@McshStn000007#idSoctOgsmatt010
-  McshStn000021:474  "place of SocGlbl"  → 24_ ✗ own numbering of the-specific: by hand  ← SctnOgms'24_place@McshStn000002#idStnOgmatt010
-  McshTchInf000013:1327  "structure of Jselapp"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
-  McshTchPrgm000002:187  "structure of Cmprprgm"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
+=== INH-NONUM (193) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  McshCor000009:1166  "relation of ActgMeasuring"  → 08_ ✗ own numbering of the-specific: by hand  ← FctgEvalg'08_relation@McshCor000018#idBrngHmnFct002Evalgrln
+  McshCor000009:602  "argument of ActgMeasuring"  → 06_ ✗ own numbering of the-specific: by hand  ← FctgEvalg'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
+  McshCor000011:2181  "structure of Treesyst"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
+  McshCor000011:1667  "structure of sequence"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+  McshCor000023:87  "structure of SystDyna"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+  McshHlth000002:10064  "disease of OganTooth"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshHlth000019:5342  "disease of Seegsyst"  → 01_  ← Senssyst'01_disease@McshHlth000019#idSysNrvsatt016disease
+  McshHlth000019:4734  "disease of OganEar"  → 01_  ← organ'01_disease@McshHlth000002#idOgnHmnatt004
+  McshLag000003:1187  "structure of worldview"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
+  McshLag000003:670  "structure of cnptMind"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+  McshLag000003:536  "referent of preconcept"  → 13_  ← infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
+  McshLag000007:16545  "syntax-tree of Hmmdlogo"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+  McshLag000007:1125  "syntax-tree of HmmdviewSemu"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+  McshLag000012:5061  "sms-attribute of Esposemuargu"  → 01_  ← Hmmdsemuargu'01_attribute@McshLag000007#idLHmnmsmsondosmat
+  McshLag000018:17514  "evaluation of Zhonlago"  → 12_ ✗ own numbering of the-specific: by hand  ← model'12_evaluation@McshCor000012#idMdleval
+  McshNtr000007:6541  "atom of ChmcElrZr40"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6499  "atom of ChmcElrZn30"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6457  "atom of ChmcElrY39"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6416  "atom of ChmcElrYb70"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6374  "atom of ChmcElrXe54"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6332  "atom of ChmcElrV23"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6291  "atom of ChmcElrU92"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6250  "atom of ChmcElrUuu111"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6209  "atom of ChmcElrUut113"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6151  "atom of ChmcElrUus117"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6110  "atom of ChmcElrUuq114"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6069  "atom of ChmcElrUup115"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6028  "atom of ChmcElrUuo118"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5989  "atom of ChmcElrUuh116"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5948  "atom of ChmcElrUub112"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5907  "atom of ChmcElrW74"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5866  "atom of ChmcElrTi22"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5824  "atom of ChmcElrSn50"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5782  "atom of ChmcElrTm69"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5740  "atom of ChmcElrTh90"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5698  "atom of ChmcElrTl81"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5656  "atom of ChmcElrTb65"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5614  "atom of ChmcElrTe52"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5572  "atom of ChmcElrTc43"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5530  "atom of ChmcElrTa73"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5488  "atom of ChmcElrS16"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5447  "atom of ChmcElrSr38"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5405  "atom of ChmcElrNa11"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5363  "atom of ChmcElrAg47"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5321  "atom of ChmcElrSi14"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5279  "atom of ChmcElrSe34"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5237  "atom of ChmcElrSg106"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5195  "atom of ChmcElrSc21"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5153  "atom of ChmcElrSm62"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5111  "atom of ChmcElrRf104"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5069  "atom of ChmcElrRu44"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5027  "atom of ChmcElrRb37"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4985  "atom of ChmcElrRh45"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4943  "atom of ChmcElrRe75"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4901  "atom of ChmcElrRn86"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4798  "atom of ChmcElrPa91"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4756  "atom of ChmcElrPm61"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4714  "atom of ChmcElrPr59"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4595  "atom of ChmcElrPo84"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4553  "atom of ChmcElrPu94"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4511  "atom of ChmcElrPt78"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4469  "atom of ChmcElrP15"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4411  "atom of ChmcElrPd46"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4319  "atom of ChmcElrO8"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4244  "atom of ChmcElrOs76"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4202  "atom of ChmcElrNo102"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4160  "atom of ChmcElrN7"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4109  "atom of ChmcElrNb41"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4067  "atom of ChmcElrNi28"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4025  "atom of ChmcElrNp93"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3983  "atom of ChmcElrNe10"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3941  "atom of ChmcElrNd60"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3899  "atom of ChmcElrMo42"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3857  "atom of ChmcElrHg80"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3815  "atom of ChmcElrMd101"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3773  "atom of ChmcElrMt109"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3731  "atom of ChmcElrMn25"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3689  "atom of ChmcElrMg12"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3603  "atom of ChmcElrLu71"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3561  "atom of ChmcElrLi3"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3462  "atom of ChmcElrLr103"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3420  "atom of ChmcElrLa57"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3378  "atom of ChmcElrKr36"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3310  "atom of ChmcElrFe26"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3268  "atom of ChmcElrIr77"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3226  "atom of ChmcElrI53"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3185  "atom of ChmcElrIn49"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3078  "atom of ChmcElrH1"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3026  "atom of ChmcElrHo67"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2967  "atom of ChmcElrHe2"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2923  "atom of ChmcElrHs108"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2881  "atom of ChmcElrHf72"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2839  "atom of ChmcElrAu79"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2752  "atom of ChmcElrGe32"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2710  "atom of ChmcElrGa31"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2668  "atom of ChmcElrGd64"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2603  "atom of ChmcElrFr87"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2561  "atom of ChmcElrF9"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2520  "atom of ChmcElrFm100"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2478  "atom of ChmcElrEu63"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2436  "atom of ChmcElrEr68"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2394  "atom of ChmcElrEs99"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2352  "atom of ChmcElrDy66"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2310  "atom of ChmcElrDb105"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2268  "atom of ChmcElrDs110"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2226  "atom of ChmcElrCm96"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2184  "atom of ChmcElrCn112"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2145  "atom of ChmcElrCu29"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2090  "atom of ChmcElrCo27"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2048  "atom of ChmcElrCr24"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2006  "atom of ChmcElrCl17"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1964  "atom of ChmcElrCe58"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1922  "atom of ChmcElrC6"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1870  "atom of ChmcElrCf98"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1725  "atom of ChmcElrCs55"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1682  "atom of ChmcElrCd48"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1640  "atom of ChmcElrBr35"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1598  "atom of ChmcElrB5"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1557  "atom of ChmcElrBh107"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1515  "atom of ChmcElrBi83"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1473  "atom of ChmcElrBe4"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1431  "atom of ChmcElrBk97"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1389  "atom of ChmcElrBa56"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1332  "atom of ChmcElrAt85"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1290  "atom of ChmcElrAs33"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1248  "atom of ChmcElrAr18"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1206  "atom of ChmcElrSb51"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1164  "atom of ChmcElrAm95"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1122  "atom of ChmcElrAl13"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1076  "atom of ChmcElrAc89"  → 02_  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshStn000021:517  "technology of SoctGlbl"  → 30_ ✗ own numbering of the-specific: by hand  ← societyOgsm'30_technology@McshStn000007#idSoctOgsmatt010
+  McshStn000021:494  "place of SoctGlbl"  → 33_ ✗ own numbering of the-specific: by hand  ← human'33_place@McshHmn000002#idHmnatt015
+  McshTchInf000006:1974  "algo (output) of Triplago"  → 20_  ← Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
+  McshTchInf000006:71  "user of Prgmlago"  → 01_ ✗ own numbering of the-specific: by hand  ← Cmprlago'01_user@McshTchInf000005#Cmpluser
+  McshTchInf000007:265  "output of Cnptlago"  → 03_ ✗ own numbering of the-specific: by hand  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
+  McshTchInf000012:8193  "usage of NpmpkgJake"  → 13_  ← Jsndlago'13_archetype@McshTchInf000012#idLJsndarc
+  McshTchInf000012:229  "UNIT of Jsndlago"  → 09_  ← Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
+  McshTchInf000014:6389  "grammar of binary-Wasm"  → 21_  ← Ogsmlago'21_grammar@McshLag000005#idLOgsmgrmr
+  McshTchInf000014:6297  "grammar of text-Wasm"  → 21_  ← Ogsmlago'21_grammar@McshLag000005#idLOgsmgrmr
+  McshTchInf000014:6275  "grammar of abstract-format"  → 21_  ← Ogsmlago'21_grammar@McshLag000005#idLOgsmgrmr
+  McshTchInf000014:5581  "tool of Wasmlago"  → 35_  ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
+  McshTchInf000016:17063  "asset of AgntSynr"  → 19_  ← AgntBkcn'19_asset@McshTchInf000016#idDbcevu
+  McshTchInf000016:16983  "asset of AgntHmiq"  → 19_  ← AgntBkcn'19_asset@McshTchInf000016#idDbcevu
+  McshTchInf000016:16346  "protocol of AgntHmiq"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:16123  "governance-system of AgntDfnt"  → 20_  ← Algonet'20_governance_system@McshTchInf000015#idAlgntgov
+  McshTchInf000016:16062  "protocol of AgntDfnt"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:15898  "blockchain of AgntNmcn"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:15659  "organization of AgntRppl"  → 25_  ← Algonet'25_organization@McshTchInf000015#idAlgntogn
+  McshTchInf000016:15560  "program of AgntRppl"  → 21_  ← AgntBkcn'21_program@McshTchInf000016#idDbcpgm
+  McshTchInf000016:15534  "statistics of AgntRppl"  → 24_  ← AgntBkcn'24_statistics@McshTchInf000016#idDbcstat
+  McshTchInf000016:15308  "blockchain of AgntRppl"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:15218  "node of AgntRppl"  → 06_  ← AgntBkcn'06_node@McshTchInf000016#idDbcnod
+  McshTchInf000016:15201  "protocol of AgntRppl"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:14842  "protocol of AgntPrcn"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:14651  "organization of AgntNxtz"  → 25_  ← Algonet'25_organization@McshTchInf000015#idAlgntogn
+  McshTchInf000016:14565  "wallet of AgntNxtz"  → 23_  ← AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000016:14533  "program of AgntNxtz"  → 21_  ← AgntBkcn'21_program@McshTchInf000016#idDbcpgm
+  McshTchInf000016:14391  "asset of AgntNxtz"  → 19_  ← AgntBkcn'19_asset@McshTchInf000016#idDbcevu
+  McshTchInf000016:14361  "blockchain of AgntNxtz (nxtbcn)"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:14207  "blockchain of AgntEmcn"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:12930  "service of AgntNemz"  → 27_  ← Algonet'27_service@McshTchInf000015#idAlgntsvc
+  McshTchInf000016:12846  "organization of AgntNemz"  → 25_  ← Algonet'25_organization@McshTchInf000015#idAlgntogn
+  McshTchInf000016:12793  "wallet of AgntNemz"  → 23_  ← AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000016:12753  "program of AgntNemz"  → 21_  ← AgntBkcn'21_program@McshTchInf000016#idDbcpgm
+  McshTchInf000016:12523  "blockchain of AgntNemz"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:12490  "node of AgntNemz"  → 06_  ← AgntBkcn'06_node@McshTchInf000016#idDbcnod
+  McshTchInf000016:12447  "protocol of AgntNemz"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:12305  "organization of AgntBtsh (btsogn)"  → 25_  ← Algonet'25_organization@McshTchInf000015#idAlgntogn
+  McshTchInf000016:12241  "governance-system of AgntBtsh (btsgov)"  → 20_  ← Algonet'20_governance_system@McshTchInf000015#idAlgntgov
+  McshTchInf000016:12159  "blockchain of AgntBtsh (btsbcn)"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:11391  "protocol of AgntBtsh (btsprl)"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:10837  "wallet of AgntDcrd (dcrwlt)"  → 23_  ← AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
+  McshTchInf000016:10259  "rogram of AgntDcrd"  → 21_  ← AgntBkcn'21_program@McshTchInf000016#idDbcpgm
+  McshTchInf000016:10210  "governance-system of AgntDcrd (dcrgov)"  → 20_  ← Algonet'20_governance_system@McshTchInf000015#idAlgntgov
+  McshTchInf000016:9905  "blockchain of AgntDcrd (dcrbcn)"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:9734  "node of AgntDcrd"  → 06_  ← AgntBkcn'06_node@McshTchInf000016#idDbcnod
+  McshTchInf000016:9598  "protocol of AgntDcrd"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:9501  "service of AgntWavs (Wavssrvc)"  → 27_  ← Algonet'27_service@McshTchInf000015#idAlgntsvc
+  McshTchInf000016:9367  "blockchain of AgntWavs (wavbcn)"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:9127  "protocol of AgntWavs (wavprl)"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:8965  "bapp of AgntLisk"  → 29_  ← AgntBkcn'29_Dapp@McshTchInf000016#idDbcapp
+  McshTchInf000016:8913  "organization of LiskexvuC"  → 25_  ← Algonet'25_organization@McshTchInf000015#idAlgntogn
+  McshTchInf000016:8819  "blockchain of AgntLisk"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000016:8776  "node of AgntLisk"  → 06_  ← AgntBkcn'06_node@McshTchInf000016#idDbcnod
+  McshTchInf000016:8760  "protocol of AgntLisk"  → 17_  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchInf000016:8630  "blockchain of AgntZcsh (zecbcn)"  → 30_  ← AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+  McshTchInf000017:1611  "Law of Btcncevu"  → 06_  ← sfrFin'06_law@McshStn000029#idLaw045011
+  McshTchInf000018:9200  "tool of Solxlago"  → 35_  ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
+  McshTchInf000018:7452  "Output of Lsolf"  → 20_  ← Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
+  McshTchInf000030:55  "archetype (input) of Rustlago"  → 13_ ✗ own numbering of the-specific: by hand  ← Srcdlago'13_archetype (input)@McshTchInf000006#idLSrcdarch
+  McshTchInf000039:14576  "tech of Wlfmlago"  → 26_ ✗ own numbering of the-specific: by hand  ← Prgmlago'26_tech@McshTchInf000006#idLPrgmtech
+  McshTchInf000039:8204  "organization of Cycllago"  → 34_  ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
+  McshTchPrgm000002:204  "structure of Cmprprgm"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
 
-=== INH-WRONGNUM (15) — its NN_ differs from the-generic-attribute (own numbering? by hand)
-  McshCor000002:4486  "04_environment of Mcs"  → 02_  ← whole'02_environment@McshCor000008#idWhlenvt
-  McshCor000008:720  "02_element of collection"  → 01_  ← whole'01_part@McshCor000008#idWhlprt
-  McshCor000011:2659  "06_node of SystBody"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshCor000011:2621  "07_edge-(node-relation) of SystGraph"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
-  McshCor000011:2605  "06_vertex-(node) of SystGraph"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshCor000011:2147  "07_node_relation of SystTree"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
-  McshCor000011:1773  "06_node of SystTree"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshCor000012:60  "07_node_relation of model"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
-  McshCor000012:46  "06_node of model"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshCor000014:38  "06_node of SystNet"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshEdu000002:165  "14_rlnReferent of science"  → 12_  ← model'12_evaluation@McshCor000012#idMdleval
-  McshStn000002:54  "06_node of SctnOgms"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshStn000005:41  "06_node of groupOgsm"  → 01_  ← system'01_node@McshCor000011#idSyspart
-  McshTchInf000002:63  "02_human of techInfo"  → 01_  ← satisfier'01_human@McshStn000010#idSfrHmnatt008
-  McshTchInf000006:2059  "06_Srcdalgo'node of Srcd_lago"  → 03_  ← system'03_structure@McshCor000011#idSyssrtr
+=== INH-WRONGNUM (80) — its NN_ differs from the-generic-attribute (own numbering? by hand)
+  McshCor000004:88  "06_argument of doing"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000005:157  "06_argument of relation"  → 01_  ← bodyNo'01_argument@McshCor000003#idEntBodyNarg
+  McshCor000008:766  "02_element of collection"  → 01_  ← whole'01_part@McshCor000008#idWhlprt
+  McshCor000011:2612  "06_node of SystBody"  → 01_  ← system'01_node@McshCor000011#idSyspart
+  McshCor000011:2574  "07_edge-(node-relation) of SystGraph"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
+  McshCor000011:2557  "06_vertex-(node) of SystGraph"  → 01_  ← system'01_node@McshCor000011#idSyspart
+  McshCor000011:2099  "07_node_relation of Treesyst"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
+  McshCor000011:1729  "06_node of Treesyst"  → 01_  ← system'01_node@McshCor000011#idSyspart
+  McshCor000012:75  "07_node_relation of model"  → 02_  ← system'02_node_relation@McshCor000011#idSysndrn
+  McshCor000012:61  "06_node of model"  → 01_  ← system'01_node@McshCor000011#idSyspart
+  McshCor000014:53  "06_node of SystNet"  → 01_  ← system'01_node@McshCor000011#idSyspart
+  McshCor000018:238  "14_argument of FctgSensing"  → 06_  ← FctgFeeling'06_argument@McshCor000018#idBrngHmnFct001arg
+  McshEdu000002:180  "14_rlnReferent of science"  → 12_  ← model'12_evaluation@McshCor000012#idMdleval
+  McshLag000018:18514  "04_output (view-logo) of Zhollago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshLag000018:17714  "33_input1_(mind_view) of Zhonlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshLag000020:162  "04_output (logo-view) of Ellnlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshLag000020:119  "07_input3-(semu-view) of Ellnlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshLag000020:100  "06_input2-(senso-mind--view) of Ellnlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000020:80  "05_input1-(mind-view) of Ellnlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshLag000027:63  "04_output (logo-view) of Ellalago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshLag000028:55  "04_output (logo-view) of Ell0lago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshNtr000007:137  "11_chemical_property of ChmcElry"  → 05_  ← MtrlSysMols'05_chemical_property@McshNtr000005#idSysMolsatt005
+  McshOgm000007:319  "09_atom of Ogsmcell"  → 02_  ← MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
+  McshOgm000007:302  "08_molecule of Ogsmcell"  → 01_  ← MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
+  McshStn000034:342  "04_output_(logo_view) of Vnmalago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000034:323  "03_input3_(semu_view) of Vnmalago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000034:306  "02_input2_(senso_mind_view) of Vnmalago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000034:289  "01_input1_(mind_view) of Vnmalago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000035:188  "04_output_(logo_view) of lagoItln"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000035:169  "03_input3_(semu_view) of lagoItln"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000035:152  "02_input2_(senso_mind_view) of lagoItln"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000035:135  "01_input1_(mind_view) of lagoItln"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000037:237  "04_output_(logo_view) of Fraclago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000037:218  "03_input3_(semu_view) of Fraclago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000037:201  "02_input2_(senso_mind_view) of Fraclago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000037:184  "01_input1_(mind_view) of Fraclago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000038:238  "04_output_(logo_view) of Sbullago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000038:219  "03_input3_(semu_view) of Sbullago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000038:202  "02_input2_(senso_mind_view) of Sbullago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000038:185  "01_input1_(mind_view) of Sbullago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000039:238  "04_output_(logo_view) of Sqiplago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000039:219  "03_input3_(semu_view) of Sqiplago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000039:202  "02_input2_(senso_mind_view) of Sqiplago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000039:185  "01_input1_(mind_view) of Sqiplago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000040:229  "04_output_(logo_view) of Smkdlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000040:210  "03_input3_(semu_view) of Smkdlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000040:193  "02_input2_(senso_mind_view) of Smkdlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000040:176  "01_input1_(mind_view) of Smkdlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000041:247  "04_output_(logo_view) of Sslvlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000041:228  "03_input3_(semu_view) of Sslvlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000041:211  "02_input2_(senso_mind_view) of Sslvlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000041:194  "01_input1_(mind_view) of Sslvlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000043:229  "04_output_(logo_view) of Sruslago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000043:210  "03_input3_(semu_view) of Sruslago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000043:193  "02_input2_(senso_mind_view) of Sruslago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000043:176  "01_input1_(mind_view) of Sruslago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000044:229  "04_output_(logo_view) of Romnlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000044:210  "03_input3_(semu_view) of Romnlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000044:193  "02_input2_(senso_mind_view) of Romnlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000044:176  "01_input1_(mind_view) of Romnlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000048:252  "04_output_(logo_view) of Jpnslago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000048:233  "03_input3_(semu_view) of Jpnslago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000048:216  "02_input2_(senso_mind_view) of Jpnslago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000048:199  "01_input1_(mind_view) of Jpnslago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000050:221  "04_output_(logo_view) of Khmrlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+  McshStn000050:202  "03_input3_(semu_view) of Khmrlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000050:185  "02_input2_(senso_mind_view) of Khmrlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000050:168  "01_input1_(mind_view) of Khmrlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshTchInf000002:78  "02_human of techInfo"  → 01_  ← satisfier'01_human@McshStn000010#idSfrHmnatt008
+  McshTchInf000007:1776  "20_output of CptlSnet"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
+  McshTchInf000007:1654  "20_output of CptlFram"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
+  McshTchInf000007:366  "24_manager of Cnptlago"  → 04_  ← Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
+  McshTchInf000007:161  "13_input of Cnptlago"  → 02_  ← Knlglago'02_input@McshTchInf000039#idLKnlginpt
+  McshTchInf000007:70  "11_user of Cnptlago"  → 01_  ← Knlglago'01_user@McshTchInf000039#idLKnlguser
+  McshTchInf000009:847  "20_output of Mcshlago"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
+  McshTchInf000016:4218  "29_Dapp of AgntBkcn"  → 22_  ← Algonet'22_Dapp@McshTchInf000015#idDapp
+  McshTchInf000030:325  "03_algo'unit of Rustlago"  → 09_  ← Srcdlago'09_Srcdalgo'unit@McshTchInf000006#idLSrcdunt
+  McshTchInf000030:246  "02_algo'node of Rustlago"  → 06_  ← Srcdlago'06_Srcdalgo'node@McshTchInf000006#idLSrcdalgnode
+  McshTchInf000039:15071  "03_output of Wlfmlago"  → 20_  ← Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
+  McshTchInf000039:84  "03_output of Knlglago"  → 20_  ← Cmprlago'20_output@McshTchInf000005#idLCmpropt
 
-=== INH-EMPTY (30) — an-inherited attribute that says nothing new (no info, no link): delete?
-  McshEdu000005:2105  "20_scientist of SciMath"  ← science'20_scientist@McshEdu000002#idSciatt005
-  McshLag000007:29689  "05_logo-relation of Semuconj"  ← bodyNo'05_logo-relation@McshCor000003#idEntBodyNlgln
-  McshLag000007:29422  "05_logo-relation of Semuverb"  ← bodyNo'05_logo-relation@McshCor000003#idEntBodyNlgln
-  McshLag000018:17264  "05_logo-relation of Zhonsemuverb"  ← Hmnmsemuverb'05_logo-relation@McshLag000007#idLHmnmsmsvrblgrn
-  McshLag000033:3424  "29_input2-(senso-mind--view) of Deut_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000034:2524  "29_input2-(senso-mind--view) of Bcms_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000037:5034  "30_input3_(semu_view) of Urdu_lago"  ← Hiur_lago'30_input3-(semu-view)@McshLag000037#idLHiuript3
-  McshLag000037:5017  "29_input2_(senso_mind_view) of Urdu_lago"  ← Hiur_lago'29_input2-(senso-mind--view)@McshLag000037#idLHiuript2
-  McshLag000037:5000  "28_input1_(mind_view) of Urdu_lago"  ← Hiur_lago'28_input1-(mind-view)@McshLag000037#idLHiuript1
-  McshLag000037:4535  "30_input3_(semu_view) of Hind_lago"  ← Hiur_lago'30_input3-(semu-view)@McshLag000037#idLHiuript3
-  McshLag000037:4518  "29_input2_(senso_mind_view) of Hind_lago"  ← Hiur_lago'29_input2-(senso-mind--view)@McshLag000037#idLHiuript2
-  McshLag000037:4501  "28_input1_(mind_view) of Hind_lago"  ← Hiur_lago'28_input1-(mind-view)@McshLag000037#idLHiuript1
-  McshLag000037:2043  "29_input2-(senso-mind--view) of Hiur_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000038:1509  "29_input2-(senso-mind--view) of Slv0Lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000039:1155  "29_input2-(senso-mind--view) of Ide0_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000040:1382  "29_input2-(senso-mind--view) of Afa0_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000041:1295  "29_input2-(senso-mind--view) of Tur0_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshLag000042:1287  "29_input2-(senso-mind--view) of Asa0_lago"  ← Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-  McshNtr000012:94  "09_risk of force"  ← acting'09_risk@McshCor000004#idDngActgrsk
-  McshOgm000004:77  "05_size of MoleOgsm"  ← MtrlMol'05_size@McshNtr000004#idMolatt006
-  McshOgm000004:64  "03_shape of MoleOgsm"  ← MtrlMol'03_shape@McshNtr000004#idMolatt004
-  McshOgm000010:49  "19_health of ogmPlant (link)"  ← Ogsm'19_health@McshOgm000003#idOgmatt010
-  McshStn000015:3969  "03_balance of bdgtPblc"  ← budget'03_balance@McshStn000004#idBdgtatt003
-  McshStn000036:123  "44_economic-view of SoctDeut"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
-  McshStn000037:2149  "44_economic-view of SoctFrac"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
-  McshTchInf000011:223  "09_unit-node of Jsbralgo"  ← Jsgn_lago'09_Jsalgo'UNIT@McshTchInf000010#idLJsgnunt
-  McshTchInf000011:212  "06_node of Jsbralgo"  ← model'06_node@McshCor000012#idMdlatt005
-  McshTchInf000013:57  "13_archetype of Jsel_lago"  ← Jsgn_lago'13_archetype (input)@McshTchInf000010#idLJsgnarc
-  McshTchInf000027:66  "17_protocol of Neo_net"  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
-  McshTchPrgm000002:79  "12_evaluation of Cmprprgm"  ← model'12_evaluation@McshCor000012#idMdleval
+=== INH-EMPTY (180) — an-inherited attribute that says nothing new (no info, no link): delete?
+  McshEdu000005:2127  "20_scientist of SciMath"  ← science'20_scientist@McshEdu000002#idSciatt005
+  McshLag000007:15058  "05_logo-relation of Hmmdsemuconj"  ← bodyNo'05_logo_relation@McshCor000003#idEntBodyNlgln
+  McshLag000007:14792  "05_logo-relation of Hmmdsemuverb"  ← bodyNo'05_logo_relation@McshCor000003#idEntBodyNlgln
+  McshLag000018:17447  "05_logo-relation of Zhonsemuverb"  ← Hmmdsemuverb'05_logo-relation@McshLag000007#idLHmnmsmsvrblgrn
+  McshLag000020:100  "06_input2-(senso-mind--view) of Ellnlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000033:3419  "29_input2-(senso-mind--view) of Deutlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000034:2509  "29_input2-(senso-mind--view) of Bcmslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000037:5203  "30_input3_(semu_view) of Urdulago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshLag000037:5186  "29_input2_(senso_mind_view) of Urdulago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000037:5169  "28_input1_(mind_view) of Urdulago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshLag000037:4618  "30_input3_(semu_view) of Hindlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshLag000037:4601  "29_input2_(senso_mind_view) of Hindlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000037:4584  "28_input1_(mind_view) of Hindlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshLag000037:2012  "29_input2-(senso-mind--view) of Hiurlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000038:1525  "29_input2-(senso-mind--view) of Slv0Lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000039:1172  "29_input2-(senso-mind--view) of Ide0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000040:1399  "29_input2-(senso-mind--view) of Afa0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000041:1312  "29_input2-(senso-mind--view) of Tur0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshLag000042:1304  "29_input2-(senso-mind--view) of Asa0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshNtr000007:6541  "atom of ChmcElrZr40"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6499  "atom of ChmcElrZn30"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6457  "atom of ChmcElrY39"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6416  "atom of ChmcElrYb70"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6374  "atom of ChmcElrXe54"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6332  "atom of ChmcElrV23"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6291  "atom of ChmcElrU92"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6250  "atom of ChmcElrUuu111"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6209  "atom of ChmcElrUut113"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6151  "atom of ChmcElrUus117"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6110  "atom of ChmcElrUuq114"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6069  "atom of ChmcElrUup115"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:6028  "atom of ChmcElrUuo118"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5989  "atom of ChmcElrUuh116"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5948  "atom of ChmcElrUub112"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5907  "atom of ChmcElrW74"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5866  "atom of ChmcElrTi22"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5824  "atom of ChmcElrSn50"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5782  "atom of ChmcElrTm69"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5740  "atom of ChmcElrTh90"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5698  "atom of ChmcElrTl81"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5656  "atom of ChmcElrTb65"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5614  "atom of ChmcElrTe52"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5572  "atom of ChmcElrTc43"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5530  "atom of ChmcElrTa73"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5488  "atom of ChmcElrS16"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5447  "atom of ChmcElrSr38"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5405  "atom of ChmcElrNa11"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5363  "atom of ChmcElrAg47"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5321  "atom of ChmcElrSi14"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5279  "atom of ChmcElrSe34"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5237  "atom of ChmcElrSg106"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5195  "atom of ChmcElrSc21"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5153  "atom of ChmcElrSm62"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5111  "atom of ChmcElrRf104"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5069  "atom of ChmcElrRu44"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:5027  "atom of ChmcElrRb37"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4985  "atom of ChmcElrRh45"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4943  "atom of ChmcElrRe75"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4901  "atom of ChmcElrRn86"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4798  "atom of ChmcElrPa91"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4756  "atom of ChmcElrPm61"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4714  "atom of ChmcElrPr59"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4595  "atom of ChmcElrPo84"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4553  "atom of ChmcElrPu94"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4511  "atom of ChmcElrPt78"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4469  "atom of ChmcElrP15"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4411  "atom of ChmcElrPd46"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4319  "atom of ChmcElrO8"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4244  "atom of ChmcElrOs76"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4202  "atom of ChmcElrNo102"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4160  "atom of ChmcElrN7"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4109  "atom of ChmcElrNb41"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4067  "atom of ChmcElrNi28"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:4025  "atom of ChmcElrNp93"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3983  "atom of ChmcElrNe10"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3941  "atom of ChmcElrNd60"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3899  "atom of ChmcElrMo42"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3857  "atom of ChmcElrHg80"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3815  "atom of ChmcElrMd101"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3773  "atom of ChmcElrMt109"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3731  "atom of ChmcElrMn25"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3689  "atom of ChmcElrMg12"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3603  "atom of ChmcElrLu71"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3561  "atom of ChmcElrLi3"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3462  "atom of ChmcElrLr103"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3420  "atom of ChmcElrLa57"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3378  "atom of ChmcElrKr36"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3310  "atom of ChmcElrFe26"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3268  "atom of ChmcElrIr77"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3226  "atom of ChmcElrI53"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3185  "atom of ChmcElrIn49"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3078  "atom of ChmcElrH1"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:3026  "atom of ChmcElrHo67"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2967  "atom of ChmcElrHe2"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2923  "atom of ChmcElrHs108"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2881  "atom of ChmcElrHf72"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2839  "atom of ChmcElrAu79"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2752  "atom of ChmcElrGe32"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2710  "atom of ChmcElrGa31"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2668  "atom of ChmcElrGd64"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2603  "atom of ChmcElrFr87"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2561  "atom of ChmcElrF9"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2520  "atom of ChmcElrFm100"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2478  "atom of ChmcElrEu63"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2436  "atom of ChmcElrEr68"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2394  "atom of ChmcElrEs99"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2352  "atom of ChmcElrDy66"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2310  "atom of ChmcElrDb105"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2268  "atom of ChmcElrDs110"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2226  "atom of ChmcElrCm96"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2184  "atom of ChmcElrCn112"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2145  "atom of ChmcElrCu29"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2090  "atom of ChmcElrCo27"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2048  "atom of ChmcElrCr24"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:2006  "atom of ChmcElrCl17"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1964  "atom of ChmcElrCe58"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1922  "atom of ChmcElrC6"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1870  "atom of ChmcElrCf98"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1725  "atom of ChmcElrCs55"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1682  "atom of ChmcElrCd48"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1640  "atom of ChmcElrBr35"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1598  "atom of ChmcElrB5"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1557  "atom of ChmcElrBh107"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1515  "atom of ChmcElrBi83"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1473  "atom of ChmcElrBe4"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1431  "atom of ChmcElrBk97"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1389  "atom of ChmcElrBa56"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1332  "atom of ChmcElrAt85"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1290  "atom of ChmcElrAs33"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1248  "atom of ChmcElrAr18"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1206  "atom of ChmcElrSb51"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1164  "atom of ChmcElrAm95"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1122  "atom of ChmcElrAl13"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000007:1076  "atom of ChmcElrAc89"  ← ChmcElry'02_atom@McshNtr000007#idChmElratt003
+  McshNtr000012:109  "09_risk of force"  ← acting'09_risk@McshCor000004#idDngActgrsk
+  McshOgm000004:92  "05_size of MoleOgsm"  ← MtrlMole'05_size@McshNtr000004#idMolatt006
+  McshOgm000004:79  "03_shape of MoleOgsm"  ← MtrlMole'03_shape@McshNtr000004#idMolatt004
+  McshOgm000007:302  "08_molecule of Ogsmcell"  ← MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
+  McshOgm000010:64  "19_health of OgsmPlant (link)"  ← Ogsm'19_health@McshOgm000003#idOgmatt010
+  McshStn000015:4004  "03_balance of bdgtPblc"  ← budget'03_balance@McshStn000004#idBdgtatt003
+  McshStn000034:323  "03_input3_(semu_view) of Vnmalago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000034:306  "02_input2_(senso_mind_view) of Vnmalago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000034:289  "01_input1_(mind_view) of Vnmalago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000035:169  "03_input3_(semu_view) of lagoItln"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000035:152  "02_input2_(senso_mind_view) of lagoItln"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000035:135  "01_input1_(mind_view) of lagoItln"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000036:143  "44_economic-view of SoctDeut"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
+  McshStn000037:2221  "44_economic-view of SoctFrac"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
+  McshStn000037:218  "03_input3_(semu_view) of Fraclago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000037:201  "02_input2_(senso_mind_view) of Fraclago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000037:184  "01_input1_(mind_view) of Fraclago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000038:219  "03_input3_(semu_view) of Sbullago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000038:202  "02_input2_(senso_mind_view) of Sbullago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000038:185  "01_input1_(mind_view) of Sbullago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000039:219  "03_input3_(semu_view) of Sqiplago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000039:202  "02_input2_(senso_mind_view) of Sqiplago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000039:185  "01_input1_(mind_view) of Sqiplago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000040:210  "03_input3_(semu_view) of Smkdlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000040:193  "02_input2_(senso_mind_view) of Smkdlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000040:176  "01_input1_(mind_view) of Smkdlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000041:228  "03_input3_(semu_view) of Sslvlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000041:211  "02_input2_(senso_mind_view) of Sslvlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000041:194  "01_input1_(mind_view) of Sslvlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000043:210  "03_input3_(semu_view) of Sruslago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000043:193  "02_input2_(senso_mind_view) of Sruslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000043:176  "01_input1_(mind_view) of Sruslago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000044:210  "03_input3_(semu_view) of Romnlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000044:193  "02_input2_(senso_mind_view) of Romnlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000044:176  "01_input1_(mind_view) of Romnlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000048:233  "03_input3_(semu_view) of Jpnslago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000048:216  "02_input2_(senso_mind_view) of Jpnslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000048:199  "01_input1_(mind_view) of Jpnslago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshStn000050:202  "03_input3_(semu_view) of Khmrlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+  McshStn000050:185  "02_input2_(senso_mind_view) of Khmrlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+  McshStn000050:168  "01_input1_(mind_view) of Khmrlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+  McshTchInf000012:229  "UNIT of Jsndlago"  ← Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
+  McshTchInf000013:71  "13_archetype of Jsellago"  ← Jsgnlago'13_archetype (input)@McshTchInf000010#idLJsgnarc
+  McshTchInf000016:16983  "asset of AgntHmiq"  ← AgntBkcn'19_asset@McshTchInf000016#idDbcevu
+  McshTchInf000027:81  "17_protocol of AgntNeox"  ← AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
+  McshTchPrgm000002:94  "12_evaluation of Cmprprgm"  ← model'12_evaluation@McshCor000012#idMdleval
 
-=== INH-ORDER (0) — the-attributes of a-specific are not in the-NN order of its generic
+=== INH-ORDER (15) — the-attributes of a-specific are not in the-NN order of its generic
+  McshCor000004:20  "overview of doing"  order: 06 02 07 08 09 10
+  McshLag000007:20  "overview of Hmmdlago"  order: 11 28 29 30 20 21 24 25 26
+  McshLag000020:20  "overview of Ellnlago"  order: 05 06 07 04 08
+  McshNtr000007:3624  "ChmcElry.Magnesium_Mg12"  order: 23 02
+  McshNtr000007:2111  "ChmcElry.Copper_Cu29"  order: 24 02
+  McshTchInf000006:2272  "Prgmlago.source_code"  order: 13 20 06 09
+  McshTchInf000010:20  "overview of Jsgnlago"  order: 20 09 12 13 33 34 35
+  McshTchInf000012:20  "overview of Jsndlago"  order: 13 20 09 33 34 35
+  McshTchInf000016:15170  "AgntBkcn.time.Ripple_XRP_{2012}"  order: 17 06 30 24 21 25
+  McshTchInf000016:14338  "AgntBkcn.time.Nxt {2013-11-24}"  order: 30 19 21 23 25
+  McshTchInf000016:12396  "AgntBkcn.time.NEM_XEM_{2015-03-29}"  order: 17 06 30 21 23 25 27
+  McshTchInf000016:11355  "AgntBkcn.time.BitShares2_BTS_{2015-10-13}"  order: 17 30 20 25
+  McshTchInf000016:9569  "AgntBkcn.time.Decred_DCR_{2016-02-08}"  order: 17 06 30 20 21 23
+  McshTchInf000016:9106  "AgntBkcn.time.Waves {2016-04-15}"  order: 17 30 27
+  McshTchInf000016:8736  "AgntBkcn.time.Lisk_LSK_{2016-05-24}"  order: 17 06 30 29
 
-=== INH-GNTRTEXT (17) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  McshCor000002:1576  #idMcsattNamcvngstr  convention:generic: not defined, no concept named convention
-  McshCor000007:822  #idSpcegstr  Entitysrtr:generic: not defined, no concept named Entitysrtr
-  McshCor000014:226  #idNetBiolgstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshCor000014:177  #idNetgstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshLag000007:32502  #idLTextgstr  Ogsm_lago:generic: not defined, no concept named Ogsm_lago
-  McshLag000007:32214  #idLntrlNgstr  Ogsm_lago:generic: not defined, no concept named Ogsm_lago
-  McshLag000007:31998  #idLvslgstr  Ogsm_lago:generic: not defined, no concept named Ogsm_lago
-  McshLag000011:25705  #idLEnglverbcjgr  Hmnmverbmbrr:generic: not defined, no concept named Hmnmverbmbrr
-  McshLag000018:12922  #idLZhonverbmrfdr  Hmnmverbmbrr:generic: not defined, no concept named Hmnmverbmbrr
-  McshStn000005:264  #idGrpOgmgstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshStn000007:172  #idSoctOgsmatt009  Ogsm_lago:generic: not defined, no concept named Ogsm_lago
-  McshStn000009:8352  #idSocHumngstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshTchInf000015:14411  #idDcnetMoegstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshTchInf000015:14333  #idAlgntnDaggstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshTchInf000015:14083  #idDcnetcntlzdgstr  SystDynamic:generic: not defined, no concept named SystDynamic
-  McshTchInf000016:16317  #idDbcPbcN  AlgonetCentral:generic: not defined, no concept named AlgonetCentral
-  McshTchInf000016:5658  #idDbcgstr  SystDynamic:generic: not defined, no concept named SystDynamic
+=== INH-GNTRTEXT (87) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  McshCor000003:4970  #idEntgstr  none (plain name): not defined; 2 concepts named none
+  McshCor000006:397  #idTimegstr  doing-of-Universe (plain name): not defined, no concept named doing-of-Universe
+  McshCor000010:217  #idQntgstr  information (plain name): not defined, no concept named information
+  McshCor000013:71  #idBrngstx  syntax-of-functing (plain name): not defined, no concept named syntax-of-functing
+  McshCor000018:347  #idBrngHmnFct003gstr  feeling (plain name): not defined, no concept named feeling
+  McshCor000019:135  #idDncggstr  performing-art (plain name): not defined, no concept named performing-art
+  McshHlth000002:15724  #idBdyHmngstr  bodyVertebrate (plain name): not defined, no concept named bodyVertebrate
+  McshHlth000002:5991  #idBdyHmnatt015020  magnesiumAtom (plain name): not defined, no concept named magnesiumAtom
+  McshHlth000002:5965  #idBdyHmnatt015019  sodium (plain name): not defined, no concept named sodium
+  McshHlth000002:5927  #idBdyHmnatt015018  potassium (plain name): not defined, no concept named potassium
+  McshHlth000002:5901  #idBdyHmnatt015017  phosphorus (plain name): not defined, no concept named phosphorus
+  McshHlth000002:5844  #idBdyHmnatt015005  essential-nutrient (plain name): not defined, no concept named essential-nutrient
+  McshHlth000002:5719  #idBdyHmnatt015015  iodine (plain name): not defined, no concept named iodine
+  McshHlth000002:5688  #idBdyHmnatt015014  zinc-atom (plain name): not defined, no concept named zinc-atom
+  McshHlth000002:5663  #idBdyHmnatt015013  selenium (plain name): not defined, no concept named selenium
+  McshHlth000002:5637  #idBdyHmnatt015012  molybdenum (plain name): not defined, no concept named molybdenum
+  McshHlth000002:5611  #idBdyHmnatt015011  manganese (plain name): not defined, no concept named manganese
+  McshHlth000002:5534  #idBdyHmnatt015009  copper (plain name): not defined, no concept named copper
+  McshHlth000002:5506  #idBdyHmnatt015008  cobalt (plain name): not defined, no concept named cobalt
+  McshHlth000002:5482  #idBdyHmnatt015007  chlorine (plain name): not defined, no concept named chlorine
+  McshHlth000002:5459  #idBdyHmnatt015006  sulfur (plain name): not defined, no concept named sulfur
+  McshHlth000002:366  #idBdyHmnatt007gstr  head-of-vertebrate (plain name): not defined, no concept named head-of-vertebrate
+  McshHlth000010:249  #idDssOgmgstr  disorder-of-organism (plain name): not defined, no concept named disorder-of-organism
+  McshHlth000013:3771  #idFoodHmn032gstr  water-general (plain name): not defined, no concept named water-general
+  McshHlth000013:2576  #idFoodHmn022  drink-food (plain name): not defined, no concept named drink-food
+  McshHlth000014:912  #idMedHmn029gstr  antimicrobial-medication (plain name): not defined, no concept named antimicrobial-medication
+  McshHlth000014:541  #idMedHmnogn  drug-organization (plain name): not defined, no concept named drug-organization
+  McshHlth000019:854  #idSysNrvsatt076att005nrtmr  signaling-molecule-of-cell (plain name): not defined, no concept named signaling-molecule-of-cell
+  McshLag000006:116  #iidChargstr  written-language-attribute (plain name): not defined, no concept named written-language-attribute
+  McshLag000010:2140  #idL0014sylbn  lagoHmnm-syllabication (plain name): not defined, no concept named lagoHmnm-syllabication
+  McshLag000011:1990  #idLEnglsylbatt001  lagoHmnm-syllabication (plain name): not defined, no concept named lagoHmnm-syllabication
+  McshLag000012:1544  #idLEspowrdsylbn  lagoHmnm-syllabication (plain name): not defined, no concept named lagoHmnm-syllabication
+  McshLag000018:489  #idLZhonuntNamegstr  Hmmdlago-name-unit (plain name): not defined, no concept named Hmmdlago-name-unit
+  McshLag000021:244  #idLZhonsylbslbcn  lagoHmnm-syllabication (plain name): not defined, no concept named lagoHmnm-syllabication
+  McshNtr000002:317  #idMtrlatt007  material'physical_property (plain name): not defined, no concept named material'physical_property
+  McshNtr000003:398  #idAtmgstr  body-node (plain name): not defined, no concept named body-node
+  McshNtr000005:110  #idSysMolsatt004gstr  attribute-of-MtrlSysMols (plain name): not defined, no concept named attribute-of-MtrlSysMols
+  McshNtr000007:3139  #idChmElrHydrogengstr  group1-ChmcElry (plain name): not defined, no concept named group1-ChmcElry
+  McshNtr000007:1745  #idChmElrCaesiumgstr  group1-ChmcElry (plain name): not defined, no concept named group1-ChmcElry
+  McshOgm000004:750  #idMolOgm003  polymer (plain name): not defined, no concept named polymer
+  McshOgm000005:3133  #idHrmnHmn003gstr  hormoneSex-steroid (plain name): not defined, no concept named hormoneSex-steroid
+  McshOgm000005:1718  #idHrmnHmn032gstr  hormone (plain name): not defined, no concept named hormone
+  McshOgm000005:1521  #idHrmnHmngstr  animal-hormone (plain name): not defined, no concept named animal-hormone
+  McshOgm000005:302  #idSysMolsHmn027gstr  substanceMcshNtr000005#idSysMols008 (plain name): not defined, no concept named substanceMcshNtr000005#idSysMols008
+  McshOgm000006:745  #idPrtnOgmgstr  biomaterial (plain name): not defined, no concept named biomaterial
+  McshOgm000008:988  #idOgmVrs003  coronavirus (plain name): not defined, no concept named coronavirus
+  McshOgm000008:669  #idOgmVrsgstr  pathogen (plain name): not defined, no concept named pathogen
+  McshOgm000011:101  #idOgmMmlgstr  vertebrate-animal (plain name): not defined, no concept named vertebrate-animal
+  McshStn000005:281  #idGrpOgmgstr  governance-system (plain name): not defined, no concept named governance-system
+  McshStn000005:281  #idGrpOgmgstr  resource (plain name): not defined, no concept named resource
+  McshStn000007:222  #idSoctOgsmatt006  goverance-system (plain name): not defined, no concept named goverance-system
+  McshStn000008:161  #idOgznatt018  OgznOgnm'node (plain name): not defined, no concept named OgznOgnm'node
+  McshStn000009:8429  #idSocHumngstr  governace-system (plain name): not defined, no concept named governace-system
+  McshStn000009:8429  #idSocHumngstr  satisfier-system (plain name): not defined, no concept named satisfier-system
+  McshStn000010:1504  #idSfrHmngstr  economic-entity (plain name): not defined, no concept named economic-entity
+  McshStn000019:933  #idSocAlgogstr  classless-society (plain name): not defined, no concept named classless-society
+  McshStn000019:933  #idSocAlgogstr  metacapitalist-society (plain name): not defined, no concept named metacapitalist-society
+  McshStn000019:933  #idSocAlgogstr  info-network-society (plain name): not defined, no concept named info-network-society
+  McshStn000021:720  #idSocGlblgstr  material-body--systemMcshCor000011#idSys004 (plain name): not defined, no concept named material-body--systemMcshCor000011#idSys004
+  McshTchInf000003:877  #idCmrgstr  info-machine (plain name): not defined, no concept named info-machine
+  McshTchInf000005:1149  #idLCmpr007otptgstr  digital-document (plain name): not defined, no concept named digital-document
+  McshTchInf000010:5354  #idLJsgndefRefgstr  Definition-sentence (plain name): not defined, no concept named Definition-sentence
+  McshTchInf000010:3578  #idLJsgnogstr  objectX (plain name): not defined, no concept named objectX
+  McshTchInf000010:2155  #idLJsgnbgstr  Boolean.prototype (plain name): not defined, no concept named Boolean.prototype
+  McshTchInf000011:3545  #idLJsbroEvttgt  .. (plain name): not defined, no concept named ..
+  McshTchInf000012:8240  #idLJsndpkgJakegstr  Jsgn-based-task-runner (plain name): not defined, no concept named Jsgn-based-task-runner
+  McshTchInf000015:14084  #idAlgntgstr  product-satisfier (plain name): not defined, no concept named product-satisfier
+  McshTchInf000015:14084  #idAlgntgstr  human-economic-entity (plain name): not defined, no concept named human-economic-entity
+  McshTchInf000015:14084  #idAlgntgstr  human-entity (plain name): not defined, no concept named human-entity
+  McshTchInf000015:7600  #idDappgstr  application (plain name): not defined, no concept named application
+  McshTchInf000015:1646  #idAlgntprlgstr  p2p-network-protocol (plain name): not defined, no concept named p2p-network-protocol
+  McshTchInf000017:6254  #idBtcblkgstr  file (plain name): not defined, no concept named file
+  McshTchInf000017:1764  #idBtcexvuCgstr  global-digital-currency (plain name): not defined, no concept named global-digital-currency
+  McshTchInf000021:3353  #idEostx  blockchain-net'transaction (plain name): not defined, no concept named blockchain-net'transaction
+  McshTchInf000021:922  #idEosevuognX  exchange-organization--of--blockchain-asset (plain name): not defined, no concept named exchange-organization--of--blockchain-asset
+  McshTchInf000022:1608  #idFairnetgstr  Bitcoin-based-network (plain name): not defined, no concept named Bitcoin-based-network
+  McshTchInf000024:3748  #idSteemitgstr  blogging-platform (plain name): not defined, no concept named blogging-platform
+  McshTchInf000024:2568  #idSteemactpst  post-of--Steem-net (plain name): not defined, no concept named post-of--Steem-net
+  McshTchInf000025:781  #idEvrpastIqt  Eos-net--asset (plain name): not defined, no concept named Eos-net--asset
+  McshTchInf000026:2227  #idBkskgstr  decentralized-network (plain name): not defined, no concept named decentralized-network
+  McshTchInf000026:1462  #idBkskDapgstr  web-app (plain name): not defined, no concept named web-app
+  McshTchInf000030:1512  #idLRustsuntFgstr  source-function--of-Srcdlago (plain name): not defined, no concept named source-function--of-Srcdlago
+  McshTchInf000031:2965  #idLCppgstr  middle-level--programing-language (plain name): not defined, no concept named middle-level--programing-language
+  McshTchInf000031:2965  #idLCppgstr  general-purpose--programing-language (plain name): not defined, no concept named general-purpose--programing-language
+  McshTchInf000031:2965  #idLCppgstr  procedural--programing-language (plain name): not defined, no concept named procedural--programing-language
+  McshTchInf000031:2965  #idLCppgstr  generic-programing--programing-language (plain name): not defined, no concept named generic-programing--programing-language
+  McshTchInf000039:980  #idLKnlgmngrgstr  hard-soft-system (plain name): not defined, no concept named hard-soft-system
 
-=== INH-REFBROKEN (10) — a-text-reference name!@File#id whose file or id does NOT exist
-  McshCor000003:658  "!@McshCor000008#idWhlprtrln1"  no #idWhlprtrln1 in McshCor000008
-  McshCor000005:3079  "!@McshCor000008#idWhlprtrln"  no #idWhlprtrln in McshCor000008
-  McshLag000005:207  "!@McshStn000007#idSoctOgmsatt009"  no #idSoctOgmsatt009 in McshStn000007
-  McshTchInf000010:3473  "!@McshTchInf000010#idLJsgnoCsr)"  no #idLJsgnoCsr) in McshTchInf000010
-  McshTchInf000016:13499  "!@McshTchInf000016#idDbcEvtkn"  no #idDbcEvtkn in McshTchInf000016
-  McshTchInf000016:11870  "!@McshTchInf000016#idDbcEvtkn"  no #idDbcEvtkn in McshTchInf000016
-  McshTchInf000016:5962  "!@McshTchInf000016#idDbcomnl"  no #idDbcomnl in McshTchInf000016
-  McshTchInf000016:173  "!@McshTchInf000015#idAlgntelnScon"  no #idAlgntelnScon in McshTchInf000015
-  McshTchInf000017:8501  "!@McshTchInf000016#idDbccrptchf"  no #idDbccrptchf in McshTchInf000016
-  McshTchInf000021:3146  "!@McshTchInf000016#idDbddat"  no #idDbddat in McshTchInf000016
+=== INH-REFBROKEN (9) — a-text-reference name!@File#id whose file or id does NOT exist
+  McshCor000003:673  "!@McshCor000008#idWhlprtrltn1"  no #idWhlprtrltn1 in McshCor000008
+  McshLag000005:231  "!@McshStn000007#idSoctOgmsatt009"  no #idSoctOgmsatt009 in McshStn000007
+  McshStn000019:945  "!@McshStn000009#idSocHumn026"  no #idSocHumn026 in McshStn000009
+  McshTchInf000010:3601  "!@McshTchInf000010#idLJsgnoCsr)"  no #idLJsgnoCsr) in McshTchInf000010
+  McshTchInf000016:14159  "!@McshTchInf000016#idDbcEvtkn"  no #idDbcEvtkn in McshTchInf000016
+  McshTchInf000016:12385  "!@McshTchInf000016#idDbcEvtkn"  no #idDbcEvtkn in McshTchInf000016
+  McshTchInf000016:6081  "!@McshTchInf000016#idDbcomnl"  no #idDbcomnl in McshTchInf000016
+  McshTchInf000017:8819  "!@McshTchInf000016#idDbccrptchf"  no #idDbccrptchf in McshTchInf000016
+  McshTchInf000021:3176  "!@McshTchInf000016#idDbddat"  no #idDbddat in McshTchInf000016
 
-=== INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
+=== INH-GENDUP (1) — a-numbered generic gives the-same NN_ to two attributes: renumber
+  McshTchInf000006:778  "12_evaluation of Prgmlago"  12_ also "12_evaluation of Pgmlalgo" :763
 
-=== INH-LOCAL (106) — an-attribute in 3+ specifics, not in the-generic: lift it up?
-  structure of organ@McshHlth000002  ×28  McshHlth000002:1979 McshHlth000002:2243 McshHlth000002:2375 McshHlth000002:2605 McshHlth000002:2750 McshHlth000002:3099 McshHlth000002:3239 McshHlth000002:3387 …
-  evoluting of society@McshStn000009  ×26  McshStn000009:9035 McshStn000009:9364 McshStn000009:10109 McshStn000009:10298 McshStn000009:10360 McshStn000009:10436 McshStn000009:10502 McshStn000019:792 …
-  doing of organ@McshHlth000002  ×24  McshHlth000002:1995 McshHlth000002:2622 McshHlth000002:2720 McshHlth000002:3590 McshHlth000002:3676 McshHlth000002:7233 McshHlth000002:8241 McshHlth000002:8773 …
-  structure of OganBone@McshHlth000005  ×18  McshHlth000005:3547 McshHlth000005:3893 McshHlth000005:4431 McshHlth000005:4491 McshHlth000005:5146 McshHlth000005:5761 McshHlth000005:3936 McshHlth000005:3976 …
-  secretory-product of organ@McshHlth000002  ×16  McshHlth000002:1940 McshHlth000002:2133 McshHlth000002:2209 McshHlth000002:2593 McshHlth000002:2735 McshHlth000002:2834 McshHlth000002:2879 McshHlth000002:3087 …
-  evoluting of SciMath@McshEdu000005  ×15  McshEdu000005:5900 McshEdu000005:6128 McshEdu000005:6649 McshEdu000005:6808 McshEdu000005:6988 McshEdu000005:7131 McshEdu000005:7354 McshEdu000005:7420 …
-  info-resource of disease@McshHlth000011  ×15  McshHlth000011:1161 McshHlth000011:1468 McshHlth000011:1797 McshHlth000011:2028 McshHlth000011:2156 McshHlth000011:5996 McshHlth000011:8550 McshHlth000011:8692 …
-  evoluting of science@McshEdu000002  ×14  McshEdu000002:1171 McshEdu000005:5466 McshEdu000009:90 McshEdu000010:1936 McshEdu000014:252 McshEdu000014:666 McshEdu000014:894 McshEdu000014:987 …
-  info-resource of Hmnm_lago@McshLag000007  ×14  McshLag000007:32095 McshLag000007:32836 McshLag000031:124 McshLag000033:3645 McshLag000034:2764 McshLag000035:2498 McshLag000036:2920 McshLag000037:2283 …
-  evoluting of Hmnm_lago@McshLag000007  ×13  McshLag000007:32142 McshLag000031:150 McshLag000033:3659 McshLag000034:2778 McshLag000035:2511 McshLag000036:2937 McshLag000037:2296 McshLag000038:1764 …
-  info-resource of model@McshCor000012  ×11  McshCor000002:4759 McshCor000012:873 McshCor000012:1168 McshLag000002:68 McshLag000003:232 McshLag000003:647 McshLag000003:863 McshLag000003:1182 …
-  info-resource of AgntBkcn@McshTchInf000016  ×11  McshTchInf000016:6352 McshTchInf000016:7329 McshTchInf000016:8228 McshTchInf000016:13414 McshTchInf000016:15397 McshTchInf000017:8882 McshTchInf000018:12388 McshTchInf000021:3082 …
-  info-resource of science@McshEdu000002  ×9  McshEdu000002:1578 McshEdu000005:5435 McshEdu000009:64 McshEdu000010:1906 McshEdu000014:223 McshEdu000014:844 McshEdu000014:973 McshEdu000014:1089 …
-  evoluting of lagoLogic@McshTchInf000039  ×9  McshTchInf000039:5073 McshTchInf000039:5197 McshTchInf000039:5585 McshTchInf000039:5796 McshTchInf000039:5937 McshTchInf000039:6038 McshTchInf000039:6173 McshTchInf000039:6293 …
-  info-resource of system@McshCor000011  ×8  McshCor000011:2215 McshCor000011:2703 McshCor000011:2832 McshCor000012:240 McshCor000023:102 McshNtr000008:41 McshNtr000010:172 McshOgm000002:135
-  doing of cell@McshHlth000004  ×8  McshHlth000004:1597 McshHlth000004:1678 McshHlth000004:2032 McshHlth000004:2175 McshHlth000004:2453 McshHlth000004:2643 McshHlth000019:1137 McshHlth000019:1703
-  evoluting of disease@McshHlth000011  ×8  McshHlth000011:6028 McshHlth000011:6932 McshHlth000011:8567 McshHlth000011:9786 McshHlth000011:9961 McshHlth000011:10541 McshHlth000011:11787 McshHlth000011:12296
-  evoluting of techAI@McshTchInf000036  ×8  McshTchInf000036:4144 McshTchInf000036:5085 McshTchInf000036:5205 McshTchInf000036:5319 McshTchInf000036:5410 McshTchInf000036:5492 McshTchInf000036:5865 McshTchInf000036:6090
-  doing of model@McshCor000012  ×7  McshCor000002:4845 McshCor000012:1184 McshLag000002:81 McshLag000003:237 McshLag000003:689 McshStnlaw000002:1030 McshTchPrgm000002:221
-  evoluting of model@McshCor000012  ×7  McshCor000002:5112 McshLag000002:157 McshLag000003:255 McshLag000003:1215 McshNtr000011:71 McshStnlaw000002:1146 McshTchPrgm000002:290
-  manager of Mcs@McshCor000002  ×7  McshCor000002:2844 McshCor000002:5328 McshCor000002:5357 McshCor000002:5486 McshCor000002:5595 McshCor000002:5618 McshCor000002:5637
-  doing of techInfo@McshTchInf000002  ×7  McshCor000002:3128 McshCor000002:4025 McshTchInf000003:666 McshTchInf000004:52 McshTchInf000007:458 McshTchInf000009:3433 McshTch000005:115
-  structure of SystOgans@McshHlth000002  ×7  McshHlth000002:8300 McshHlth000002:9864 McshHlth000002:11248 McshHlth000002:12217 McshHlth000002:13119 McshHlth000005:3028 McshHlth000019:2930
-  doing of SystOgans@McshHlth000002  ×7  McshHlth000002:8323 McshHlth000002:9890 McshHlth000002:12243 McshHlth000002:12362 McshHlth000005:3054 McshHlth000019:5672 McshHlth000019:2962
-  structure of OganVessel@McshHlth000002  ×7  McshHlth000002:7574 McshHlth000002:7706 McshHlth000002:7820 McshHlth000002:7854 McshHlth000002:7906 McshHlth000002:7956 McshHlth000002:8014
-  structure of cell@McshHlth000004  ×7  McshHlth000004:1663 McshHlth000004:1835 McshHlth000004:1964 McshHlth000004:2016 McshHlth000004:2153 McshHlth000004:2311 McshHlth000004:2438
-  info-resource of satisfier@McshStn000010  ×7  McshHlth000013:737 McshStn000010:3030 McshStn000029:103 McshTchInf000002:364 McshTch000002:223 McshTch000002:1251 McshTch000003:54
-  doing of SystMolsOgsm@McshOgm000005  ×7  McshOgm000005:1362 McshOgm000005:1749 McshOgm000005:1811 McshOgm000005:2039 McshOgm000005:2747 McshOgm000005:2994 McshOgm000005:3496
-  info-resource of DeApp@McshTchInf000015  ×7  McshTchInf000020:3197 McshTchInf000021:2826 McshTchInf000021:3061 McshTchInf000024:3665 McshTchInf000025:1092 McshTchInf000026:1508 McshTchInf000026:1783
-  evoluting of Knlg_lago@McshTchInf000039  ×7  McshTchInf000039:4850 McshTchInf000039:8124 McshTchInf000039:10570 McshTchInf000039:11623 McshTchInf000039:14000 McshTchInf000039:16342 McshTchInf000039:16449
-  evoluting of techInfo@McshTchInf000002  ×6  McshCor000002:3592 McshCor000002:4281 McshTchInf000002:1030 McshTchInf000003:753 McshTchInf000004:65 McshTch000005:128
-  mcs of techInfo@McshTchInf000002  ×6  McshCor000002:3697 McshCor000002:3726 McshCor000002:3759 McshCor000002:3798 McshCor000002:4430 McshCor000002:4474
-  evoluting of system@McshCor000011  ×6  McshCor000011:2267 McshCor000012:388 McshCor000014:144 McshCor000023:173 McshNtr000010:190 McshNtr000010:317
-  evoluting of organ@McshHlth000002  ×6  McshHlth000002:3494 McshHlth000002:3742 McshHlth000002:7428 McshHlth000003:3609 McshHlth000005:470 McshHlth000005:3347
-  evoluting of cell@McshHlth000004  ×6  McshHlth000004:1890 McshHlth000004:2049 McshHlth000004:2207 McshHlth000004:2331 McshHlth000004:2390 McshHlth000004:2470
-  info-resource of society@McshStn000009  ×6  McshStn000009:9750 McshStn000009:9967 McshStn000009:10234 McshStn000019:755 McshStn000021:502 McshStn000031:12837
-  info-resource of Cmprprgm@McshTchPrgm000002  ×6  McshTchPrgm000002:373 McshTchPrgm000002:724 McshTchPrgm000002:2346 McshTchPrgm000002:2380 McshTchPrgm000003:2328 McshTchPrgm000005:634
-  info-resource of techInfo@McshTchInf000002  ×5  McshCor000002:3851 McshTchInf000003:651 McshTchInf000004:39 McshTchInf000007:428 McshTch000005:102
-  evoluting of doing@McshCor000004  ×5  McshCor000004:7359 McshCor000006:370 McshCor000018:869 McshHlth000002:14515 McshNtr000013:75
-  doing of system@McshCor000011  ×5  McshCor000011:2253 McshCor000012:253 McshCor000023:153 McshNtr000010:185 McshOgm000002:149
-  doing of science@McshEdu000002  ×5  McshEdu000005:5453 McshEdu000009:77 McshEdu000010:1922 McshEdu000014:238 McshTchInf000036:4745
-  doing of satisfier@McshStn000010  ×5  McshHlth000013:783 McshStn000029:116 McshTchInf000002:380 McshTch000002:237 McshTch000003:67
-  evoluting of satisfier@McshStn000010  ×5  McshHlth000013:829 McshStn000029:129 McshTchInf000002:410 McshTch000002:285 McshTch000003:80
-  info-resource of food@McshHlth000013  ×5  McshHlth000013:1381 McshHlth000013:2043 McshHlth000013:3487 McshHlth000013:5286 McshHlth000013:8919
-  mainno-food of foodCooked@McshHlth000013  ×5  McshHlth000013:4058 McshHlth000013:8615 McshHlth000013:8666 McshHlth000013:9200 McshHlth000013:9373
-  referent of model@McshCor000012  ×5  McshLag000003:47 McshLag000003:334 McshLag000003:528 McshLag000003:603 McshNtr000011:45
-  info-resource of word@McshLag000007  ×5  McshLag000020:1703 McshLag000022:49359 McshLag000023:670 McshLag000024:5940 McshLag000025:380
-  info-resource of Admn@McshStn000004  ×5  McshStn000004:1271 McshStn000008:957 McshStn000009:2713 McshStn000019:421 McshStn000019:581
-  info-resource of OgznPrdg@McshStn000015  ×5  McshStn000015:1465 McshStn000015:5051 McshStn000015:5351 McshStn000015:5693 McshStn000028:51
-  info-resource of Cmpr_lago@McshTchInf000005  ×5  McshTchInf000005:1372 McshTchInf000006:1289 McshTchInf000029:536 McshTchInf000029:713 McshTchInf000029:1891
-  evoluting of Cmpr_lago@McshTchInf000005  ×5  McshTchInf000006:1466 McshTchInf000008:3788 McshTchInf000029:570 McshTchInf000029:728 McshTchInf000029:1910
-  evoluting of AgntBkcn@McshTchInf000016  ×5  McshTchInf000016:7350 McshTchInf000016:8248 McshTchInf000016:13448 McshTchInf000018:12692 McshTchInf000027:182
-  info-resource of OgznDao@McshTchInf000019  ×5  McshTchInf000019:1357 McshTchInf000019:1545 McshTchInf000019:2633 McshTchInf000019:4268 McshTchInf000019:6166
-  info-resource of Knlg_lago@McshTchInf000039  ×5  McshTchInf000039:3620 McshTchInf000039:3737 McshTchInf000039:8109 McshTchInf000039:10554 McshTchInf000039:16323
-  doing of OganVessel@McshHlth000002  ×4  McshHlth000002:7722 McshHlth000002:7803 McshHlth000002:7998 McshHlth000003:3234
-  info-resource of SystOgans@McshHlth000002  ×4  McshHlth000002:12202 McshHlth000005:5917 McshHlth000005:3014 McshHlth000019:5645
-  info-resource of Hmnmsemuconj@McshLag000007  ×4  McshLag000009:4235 McshLag000030:8093 McshLag000043:3649 McshTchInf000005:478
-  evoluting of Hmnmsemuconj@McshLag000007  ×4  McshLag000009:4356 McshLag000030:8129 McshLag000043:3662 McshTchInf000005:549
-  info-resource of Alfa_lago@McshLag000008  ×4  McshLag000010:5815 McshLag000011:30530 McshLag000012:4980 McshLag000018:17387
-  evoluting of Alfa_lago@McshLag000008  ×4  McshLag000010:6054 McshLag000011:30684 McshLag000012:5256 McshLag000018:17617
-  evoluting of word@McshLag000007  ×4  McshLag000022:49390 McshLag000023:698 McshLag000024:5967 McshLag000025:411
-  letter of Bcms_lago@McshLag000034  ×4  McshLag000034:3620 McshLag000034:4594 McshLag000034:5088 McshLag000034:6108
-  disease of SystMolsOgsm@McshOgm000005  ×4  McshOgm000005:1314 McshOgm000005:1732 McshOgm000005:2972 McshOgm000005:3300
-  algo (output) of Pgmg_lago@McshTchInf000006  ×4  McshTchInf000006:1796 McshTchInf000006:1851 McshTchInf000006:1894 McshTchInf000006:1957
-  evoluting of Pgmg_lago@McshTchInf000006  ×4  McshTchInf000006:3348 McshTchInf000006:3483 McshTchInf000010:7340 McshTchInf000031:2877
-  evoluting of Cnkn_lago@McshTchInf000007  ×4  McshTchInf000007:1638 McshTchInf000007:1731 McshTchInf000007:3228 McshTchInf000009:4110
-  member of HumnSngu@McshHmn000003  ×4  McshTchInf000010:424 McshTchInf000010:3288 McshTchInf000011:1113 McshTchInf000011:2365
-  scope of HumnSngu@McshHmn000003  ×4  McshTchInf000010:439 McshTchInf000010:3044 McshTchInf000010:3408 McshTchInf000011:1098
-  info-resource of Jsgn_lago@McshTchInf000010  ×4  McshTchInf000011:5147 McshTchInf000012:8501 McshTchInf000013:1604 McshTchInf000041:6035
-  doing of AgntBkcn@McshTchInf000016  ×4  McshTchInf000017:8949 McshTchInf000018:12492 McshTchInf000021:3113 McshTchInf000024:4193
-  info-resource of techAI@McshTchInf000036  ×4  McshTchInf000036:4079 McshTchInf000036:5304 McshTchInf000036:5396 McshTchInf000036:6076
-  evaluation of Knlg_lago@McshTchInf000039  ×4  McshTchInf000039:3955 McshTchInf000039:8094 McshTchInf000039:11575 McshTchInf000039:16236
-  doing of Mnggsyst@McshCor000011  ×3  McshCor000011:3131 McshStn000004:212 McshStn000004:1047
-  evoluting of FctgSensing@McshCor000018  ×3  McshCor000018:390 McshCor000018:563 McshCor000018:631
-  info-resource of RltnMapping@McshCor000005  ×3  McshEdu000005:1861 McshLag000005:132 McshLag000007:15637
-  evoluting of SciLago@McshEdu000010  ×3  McshEdu000010:2220 McshEdu000010:2372 McshEdu000010:2969
-  time of foodCooked@McshHlth000013  ×3  McshHlth000013:8358 McshHlth000013:8484 McshHlth000013:11214
-  info-resource of SystBody@McshCor000011  ×3  McshHlth000014:555 McshHlth000015:195 McshNtr000002:318
-  doing of medication@McshHlth000014  ×3  McshHlth000014:752 McshHlth000014:2086 McshOgm000005:2896
-  evoluting of therapy@McshHlth000016  ×3  McshHlth000016:900 McshHlth000016:1526 McshHlth000018:120
-  semu-concept of infoBrainBio@McshLag000002  ×3  McshLag000007:15897 McshLag000010:5847 McshLag000012:5013
-  stress of word@McshLag000007  ×3  McshLag000009:4079 McshLag000010:2174 McshLag000012:1607
-  doing of word@McshLag000007  ×3  McshLag000023:685 McshLag000024:5954 McshLag000025:398
-  evoluting of ChmcElry@McshNtr000007  ×3  McshNtr000007:528 McshNtr000007:4161 McshNtr000007:4539
-  info-resource of Sctn@McshStn000002  ×3  McshStn000008:1050 McshStn000014:863 McshStn000015:1052
-  doing of Sctn@McshStn000002  ×3  McshStn000008:1127 McshStn000014:878 McshStn000015:1070
-  evoluting of Sctn@McshStn000002  ×3  McshStn000008:1169 McshStn000014:918 McshStn000015:1179
-  info-resource of Ogzn@McshStn000008  ×3  McshStn000008:1527 McshStn000018:2739 McshTchInf000019:728
-  evaluation of SoctEcon@McshStn000012  ×3  McshStn000012:3201 McshStn000012:3268 McshStn000012:3575
-  info-resource of SoctEcon@McshStn000012  ×3  McshStn000012:3649 McshStn000012:4360 McshStn000012:4423
-  doing of society@McshStn000009  ×3  McshStn000019:774 McshStn000021:522 McshStn000031:12870
-  info-resource of law@McshStnlaw000002  ×3  McshStnlaw000002:2024 McshStnlaw000002:2360 McshTchInf000015:13240
-  info-resource of lawEus@McshStnlaw000003  ×3  McshStnlaw000003:1283 McshStnlaw000003:1994 McshStnlaw000003:3089
-  celex-sector-number of lawEus@McshStnlaw000003  ×3  McshStnlaw000003:2576 McshStnlaw000003:2925 McshStnlaw000003:3041
-  evoluting of techCmpr@McshTchInf000003  ×3  McshTchInf000003:999 McshTchInf000003:2191 McshTchInf000003:2414
-  tool of Cmpr_lago@McshTchInf000005  ×3  McshTchInf000005:1168 McshTchInf000029:468 McshTchInf000029:1806
-  info-resource of Cnkn_lago@McshTchInf000007  ×3  McshTchInf000007:1625 McshTchInf000007:3166 McshTchInf000009:4082
-  evoluting of Jsgn_lago@McshTchInf000010  ×3  McshTchInf000012:10909 McshTchInf000013:1629 McshTchInf000041:6065
-  info-resource of Jsnd_lago@McshTchInf000012  ×3  McshTchInf000012:397 McshTchInf000012:451 McshTchInf000012:10090
-  info-resource of money@McshStn000029  ×3  McshTchInf000015:4898 McshTchInf000015:5255 McshTchInf000015:5487
-  info-resource of netAlgo@McshTchInf000015  ×3  McshTchInf000016:5408 McshTchInf000023:200 McshTchInf000028:2614
-  evoluting of netAlgo@McshTchInf000015  ×3  McshTchInf000016:5612 McshTchInf000023:234 McshTchInf000028:2670
-  account of AgntBkcn@McshTchInf000016  ×3  McshTchInf000018:957 McshTchInf000021:671 McshTchInf000024:2107
-  program.smart-contract of AgntBkcn@McshTchInf000016  ×3  McshTchInf000018:5689 McshTchInf000021:2532 McshTchInf000027:109
-  info-resource of DAOstack@McshTchInf000019  ×3  McshTchInf000019:4378 McshTchInf000019:4466 McshTchInf000019:4498
-  info-resource of lagoLogic@McshTchInf000039  ×3  McshTchInf000039:5515 McshTchInf000039:6227 McshTchInf000039:13544
+=== INH-LOCAL (123) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  structure of organ@McshHlth000002  ×33  McshHlth000002:1997 McshHlth000002:2259 McshHlth000002:2394 McshHlth000002:2621 McshHlth000002:2764 McshHlth000002:3109 McshHlth000002:3250 McshHlth000002:3396 …
+  info-resource of Hmmdlago@McshLag000007  ×32  McshLag000007:32375 McshLag000007:33118 McshLag000010:5860 McshLag000012:4963 McshLag000018:17566 McshLag000020:12805 McshLag000027:7202 McshLag000028:1408 …
+  evoluting of Hmmdlago@McshLag000007  ×31  McshLag000007:32420 McshLag000010:6095 McshLag000012:5240 McshLag000018:17796 McshLag000018:18293 McshLag000018:19116 McshLag000020:12982 McshLag000027:7946 …
+  info-resource of AgntBkcn@McshTchInf000016  ×29  McshTchInf000016:4387 McshTchInf000016:6202 McshTchInf000016:6478 McshTchInf000016:7462 McshTchInf000016:8363 McshTchInf000016:8485 McshTchInf000016:8698 McshTchInf000016:9049 …
+  doing of organ@McshHlth000002  ×27  McshHlth000002:2013 McshHlth000002:2638 McshHlth000002:2734 McshHlth000002:3598 McshHlth000002:3678 McshHlth000002:7204 McshHlth000002:8212 McshHlth000002:8742 …
+  doing of SystMolsOgsm@McshOgm000005  ×26  McshOgm000005:1424 McshOgm000005:1811 McshOgm000005:1873 McshOgm000005:1923 McshOgm000005:1980 McshOgm000005:2026 McshOgm000005:2071 McshOgm000005:2126 …
+  evoluting of society@McshStn000009  ×25  McshStn000009:8609 McshStn000009:9353 McshStn000009:9540 McshStn000009:9602 McshStn000009:9678 McshStn000009:9744 McshStn000019:807 McshStn000021:572 …
+  structure of OganBone@McshHlth000005  ×18  McshHlth000005:3565 McshHlth000005:3893 McshHlth000005:4423 McshHlth000005:4483 McshHlth000005:5111 McshHlth000005:5708 McshHlth000005:3936 McshHlth000005:3976 …
+  secretory-product of organ@McshHlth000002  ×17  McshHlth000002:1957 McshHlth000002:2150 McshHlth000002:2225 McshHlth000002:2609 McshHlth000002:2749 McshHlth000002:2850 McshHlth000002:2894 McshHlth000002:3097 …
+  evoluting of SciMath@McshEdu000005  ×15  McshEdu000005:5917 McshEdu000005:6141 McshEdu000005:6656 McshEdu000005:6813 McshEdu000005:6995 McshEdu000005:7139 McshEdu000005:7372 McshEdu000005:7440 …
+  evoluting of science@McshEdu000002  ×14  McshEdu000002:1193 McshEdu000005:5486 McshEdu000009:103 McshEdu000010:1982 McshEdu000014:264 McshEdu000014:679 McshEdu000014:907 McshEdu000014:1001 …
+  info-resource of disease@McshHlth000011  ×14  McshHlth000011:1176 McshHlth000011:1492 McshHlth000011:1823 McshHlth000011:2051 McshHlth000011:2178 McshHlth000011:6018 McshHlth000011:8552 McshHlth000011:8694 …
+  info-resource of model@McshCor000012  ×11  McshCor000002:4844 McshCor000012:873 McshCor000012:1169 McshLag000002:83 McshLag000003:247 McshLag000003:651 McshLag000003:862 McshLag000003:1171 …
+  member of Humn1959Sinagu@McshHmn000003  ×11  McshTchInf000010:532 McshTchInf000010:1281 McshTchInf000010:2341 McshTchInf000010:3418 McshTchInf000011:1145 McshTchInf000011:2403 McshTchInf000012:2280 McshTchInf000012:3015 …
+  evoluting of AgntBkcn@McshTchInf000016  ×11  McshTchInf000016:7481 McshTchInf000016:8381 McshTchInf000016:8503 McshTchInf000016:9068 McshTchInf000016:9550 McshTchInf000016:12354 McshTchInf000016:13001 McshTchInf000016:14108 …
+  info-resource of science@McshEdu000002  ×9  McshEdu000002:1599 McshEdu000005:5457 McshEdu000009:79 McshEdu000010:1955 McshEdu000014:238 McshEdu000014:858 McshEdu000014:988 McshEdu000014:1104 …
+  evoluting of Logclago@McshTchInf000039  ×9  McshTchInf000039:5234 McshTchInf000039:5357 McshTchInf000039:5749 McshTchInf000039:5962 McshTchInf000039:6104 McshTchInf000039:6207 McshTchInf000039:6342 McshTchInf000039:6460 …
+  evoluting of model@McshCor000012  ×8  McshCor000002:5205 McshLag000002:169 McshLag000003:270 McshLag000003:1202 McshLag000007:1440 McshNtr000011:84 McshStnlaw000002:1169 McshTchPrgm000002:309
+  doing of techInfo@McshTchInf000002  ×8  McshCor000002:3159 McshCor000002:4079 McshTchInf000003:674 McshTchInf000004:65 McshTchInf000007:484 McshTchInf000008:3226 McshTchInf000009:3562 McshTch000005:128
+  info-resource of system@McshCor000011  ×8  McshCor000011:2167 McshCor000011:2656 McshCor000011:2783 McshCor000012:260 McshCor000023:118 McshNtr000004:163 McshNtr000008:56 McshNtr000010:187
+  doing of cell@McshHlth000004  ×8  McshHlth000004:1620 McshHlth000004:1700 McshHlth000004:2054 McshHlth000004:2197 McshHlth000004:2479 McshHlth000004:2671 McshHlth000019:1152 McshHlth000019:1728
+  structure of Senssyst@McshHlth000019  ×8  McshHlth000019:5159 McshHlth000019:5219 McshHlth000019:5291 McshHlth000019:5383 McshHlth000019:5552 McshHlth000019:5634 McshHlth000019:5680 McshHlth000019:5734
+  evoluting of Prgmlago@McshTchInf000006  ×8  McshTchInf000006:3612 McshTchInf000006:3773 McshTchInf000010:7424 McshTchInf000014:6395 McshTchInf000018:9398 McshTchInf000030:4449 McshTchInf000031:2890 McshTchInf000039:16625
+  info-resource of Agntdapp@McshTchInf000015  ×8  McshTchInf000018:11205 McshTchInf000020:3302 McshTchInf000021:2864 McshTchInf000021:3093 McshTchInf000024:3708 McshTchInf000025:1127 McshTchInf000026:1577 McshTchInf000026:1893
+  evoluting of techAI@McshTchInf000036  ×8  McshTchInf000036:4166 McshTchInf000036:5119 McshTchInf000036:5239 McshTchInf000036:5352 McshTchInf000036:5441 McshTchInf000036:5523 McshTchInf000036:5897 McshTchInf000036:6121
+  doing of model@McshCor000012  ×7  McshCor000002:4935 McshCor000012:1183 McshLag000002:94 McshLag000003:252 McshLag000003:691 McshStnlaw000002:1046 McshTchPrgm000002:240
+  evoluting of system@McshCor000011  ×7  McshCor000011:2217 McshCor000012:409 McshCor000014:160 McshCor000023:188 McshNtr000004:188 McshNtr000010:203 McshNtr000010:331
+  evoluting of organ@McshHlth000002  ×7  McshHlth000002:3503 McshHlth000002:3743 McshHlth000002:7404 McshHlth000002:10262 McshHlth000003:3624 McshHlth000005:494 McshHlth000005:3366
+  structure of Ognssyst@McshHlth000002  ×7  McshHlth000002:8269 McshHlth000002:9821 McshHlth000002:11201 McshHlth000002:12158 McshHlth000002:13049 McshHlth000005:3049 McshHlth000019:2980
+  doing of Ognssyst@McshHlth000002  ×7  McshHlth000002:8293 McshHlth000002:9848 McshHlth000002:12185 McshHlth000002:12304 McshHlth000005:3075 McshHlth000019:5963 McshHlth000019:3012
+  structure of OganVessel@McshHlth000002  ×7  McshHlth000002:7550 McshHlth000002:7682 McshHlth000002:7793 McshHlth000002:7827 McshHlth000002:7879 McshHlth000002:7929 McshHlth000002:7987
+  structure of cell@McshHlth000004  ×7  McshHlth000004:1685 McshHlth000004:1858 McshHlth000004:1987 McshHlth000004:2038 McshHlth000004:2176 McshHlth000004:2339 McshHlth000004:2464
+  evoluting of disease@McshHlth000011  ×7  McshHlth000011:6048 McshHlth000011:6940 McshHlth000011:8567 McshHlth000011:10516 McshHlth000011:10717 McshHlth000011:11773 McshHlth000011:12284
+  info-resource of satisfier@McshStn000010  ×7  McshHlth000013:760 McshStn000010:3035 McshStn000029:118 McshTchInf000002:378 McshTch000002:238 McshTch000002:1284 McshTch000003:70
+  disease of SystMolsOgsm@McshOgm000005  ×7  McshOgm000005:1375 McshOgm000005:1794 McshOgm000005:2171 McshOgm000005:2669 McshOgm000005:2806 McshOgm000005:3204 McshOgm000005:3502
+  info-resource of Prgmlago@McshTchInf000006  ×7  McshTchInf000006:3303 McshTchInf000014:6217 McshTchInf000014:6349 McshTchInf000018:9375 McshTchInf000030:3624 McshTchInf000031:2839 McshTchInf000039:16608
+  evoluting of Knlglago@McshTchInf000039  ×7  McshTchInf000007:1182 McshTchInf000039:5012 McshTchInf000039:8287 McshTchInf000039:10814 McshTchInf000039:11866 McshTchInf000039:14292 McshTchInf000039:16756
+  doing of AgntBkcn@McshTchInf000016  ×7  McshTchInf000016:12919 McshTchInf000016:14291 McshTchInf000016:14716 McshTchInf000017:9284 McshTchInf000018:12976 McshTchInf000021:3141 McshTchInf000024:4229
+  info-resource of Cmprprgm@McshTchPrgm000002  ×7  McshTchInf000038:1098 McshTchInf000038:1161 McshTchPrgm000002:390 McshTchPrgm000002:739 McshTchPrgm000002:2605 McshTchPrgm000002:2637 McshTchPrgm000005:744
+  evoluting of techInfo@McshTchInf000002  ×6  McshCor000002:3639 McshCor000002:4354 McshTchInf000002:1053 McshTchInf000003:760 McshTchInf000004:78 McshTch000005:141
+  mcs of techInfo@McshTchInf000002  ×6  McshCor000002:3746 McshCor000002:3775 McshCor000002:3809 McshCor000002:3849 McshCor000002:4504 McshCor000002:4550
+  manager of Mcs@McshCor000002  ×6  McshCor000002:5432 McshCor000002:5462 McshCor000002:5592 McshCor000002:5700 McshCor000002:5723 McshCor000002:5742
+  evoluting of cell@McshHlth000004  ×6  McshHlth000004:1912 McshHlth000004:2071 McshHlth000004:2228 McshHlth000004:2359 McshHlth000004:2417 McshHlth000004:2496
+  preconcept of Senssyst@McshHlth000019  ×6  McshHlth000019:5208 McshHlth000019:5280 McshHlth000019:5370 McshHlth000019:5541 McshHlth000019:5623 McshHlth000019:5722
+  info-resource of society@McshStn000009  ×6  McshStn000009:8998 McshStn000009:9214 McshStn000009:9478 McshStn000019:772 McshStn000021:522 McshStn000031:13146
+  info-resource of Cmprlago@McshTchInf000005  ×6  McshTchInf000005:1530 McshTchInf000006:1343 McshTchInf000029:560 McshTchInf000029:740 McshTchInf000029:1916 McshTchInf000039:3105
+  evoluting of Cmprlago@McshTchInf000005  ×6  McshTchInf000006:1531 McshTchInf000008:3881 McshTchInf000029:596 McshTchInf000029:753 McshTchInf000029:1933 McshTchInf000039:3130
+  info-resource of techInfo@McshTchInf000002  ×5  McshCor000002:3902 McshTchInf000003:661 McshTchInf000004:54 McshTchInf000007:456 McshTch000005:117
+  doing of system@McshCor000011  ×5  McshCor000011:2203 McshCor000012:271 McshCor000023:168 McshNtr000004:175 McshNtr000010:198
+  doing of science@McshEdu000002  ×5  McshEdu000005:5473 McshEdu000009:90 McshEdu000010:1968 McshEdu000014:250 McshTchInf000036:4767
+  doing of satisfier@McshStn000010  ×5  McshHlth000013:808 McshStn000029:129 McshTchInf000002:392 McshTch000002:250 McshTch000003:81
+  evoluting of satisfier@McshStn000010  ×5  McshHlth000013:857 McshStn000029:142 McshTchInf000002:423 McshTch000002:301 McshTch000003:94
+  info-resource of food@McshHlth000013  ×5  McshHlth000013:1419 McshHlth000013:1983 McshHlth000013:3447 McshHlth000013:5298 McshHlth000013:8929
+  mainno-food of foodCooked@McshHlth000013  ×5  McshHlth000013:4016 McshHlth000013:8631 McshHlth000013:8680 McshHlth000013:9280 McshHlth000013:9459
+  info-resource of word@McshLag000007  ×5  McshLag000020:1711 McshLag000022:52458 McshLag000023:692 McshLag000024:6361 McshLag000025:395
+  structure of material@McshNtr000002  ×5  McshOgm000005:502 McshOgm000005:942 McshOgm000005:987 McshOgm000005:1056 McshOgm000005:1169
+  info-resource of Admn@McshStn000004  ×5  McshStn000004:1296 McshStn000008:984 McshStn000009:2736 McshStn000019:441 McshStn000019:601
+  info-resource of OgznPrdg@McshStn000015  ×5  McshStn000015:1499 McshStn000015:5097 McshStn000015:5393 McshStn000015:5736 McshStn000028:66
+  info-resource of Knlglago@McshTchInf000039  ×5  McshTchInf000007:1068 McshTchInf000039:3782 McshTchInf000039:3896 McshTchInf000039:8274 McshTchInf000039:10800
+  scope of Humn1959Sinagu@McshHmn000003  ×5  McshTchInf000010:547 McshTchInf000010:2354 McshTchInf000010:3179 McshTchInf000010:3537 McshTchInf000011:1130
+  info-resource of OgznDao@McshTchInf000019  ×5  McshTchInf000019:1387 McshTchInf000019:1573 McshTchInf000019:2707 McshTchInf000019:4324 McshTchInf000019:6229
+  evoluting of doing@McshCor000004  ×4  McshCor000004:7375 McshCor000018:933 McshHlth000002:14511 McshNtr000013:88
+  doing of OganVessel@McshHlth000002  ×4  McshHlth000002:7698 McshHlth000002:7776 McshHlth000002:7971 McshHlth000003:3250
+  info-resource of organ@McshHlth000002  ×4  McshHlth000002:10208 McshHlth000002:12763 McshHlth000003:3538 McshHlth000019:382
+  info-resource of Ognssyst@McshHlth000002  ×4  McshHlth000002:12145 McshHlth000005:5864 McshHlth000005:3037 McshHlth000019:5936
+  doing of medication@McshHlth000014  ×4  McshHlth000014:767 McshHlth000014:2119 McshHlth000014:2475 McshOgm000005:3093
+  doing of Senssyst@McshHlth000019  ×4  McshHlth000019:5239 McshHlth000019:5356 McshHlth000019:5521 McshHlth000019:5604
+  referent of model@McshCor000012  ×4  McshLag000003:62 McshLag000003:349 McshLag000003:608 McshNtr000011:60
+  semu-concept of infoBrainBio@McshLag000002  ×4  McshLag000007:1211 McshLag000010:5890 McshLag000012:4994 McshLag000018:17176
+  info-resource of Hmmdsemuconj@McshLag000007  ×4  McshLag000009:4311 McshLag000030:8078 McshLag000031:147 McshLag000043:3675
+  evoluting of Hmmdsemuconj@McshLag000007  ×4  McshLag000009:4430 McshLag000030:8115 McshLag000031:171 McshLag000043:3686
+  verb of Hmmdlago@McshLag000007  ×4  McshLag000018:18170 McshLag000039:1694 McshLag000040:1826 McshLag000041:1745
+  doing of Hmmdlago@McshLag000007  ×4  McshLag000020:12969 McshLag000027:7933 McshLag000028:1421 McshLag000029:66
+  evoluting of word@McshLag000007  ×4  McshLag000022:52489 McshLag000023:718 McshLag000024:6386 McshLag000025:424
+  letter of Hmmdlago@McshLag000007  ×4  McshLag000034:3611 McshLag000034:4593 McshLag000034:5095 McshLag000034:6123
+  doing of material@McshNtr000002  ×4  McshOgm000002:162 McshOgm000005:520 McshOgm000005:925 McshOgm000005:1154
+  algo (output) of Prgmlago@McshTchInf000006  ×4  McshTchInf000006:1852 McshTchInf000006:2049 McshTchInf000006:2139 McshTchInf000030:72
+  evoluting of Cnptlago@McshTchInf000007  ×4  McshTchInf000007:1713 McshTchInf000007:1808 McshTchInf000007:3319 McshTchInf000009:4459
+  info-resource of Jsndlago@McshTchInf000012  ×4  McshTchInf000012:421 McshTchInf000012:472 McshTchInf000012:8003 McshTchInf000012:10245
+  info-resource of money@McshStn000029  ×4  McshTchInf000015:4903 McshTchInf000015:5268 McshTchInf000015:5506 McshTchInf000017:1689
+  human of AgntBkcn@McshTchInf000016  ×4  McshTchInf000016:9013 McshTchInf000016:12270 McshTchInf000016:14597 McshTchInf000016:15637
+  info-resource of DAOstack@McshTchInf000019  ×4  McshTchInf000019:4432 McshTchInf000019:4486 McshTchInf000019:4516 McshTchInf000019:4546
+  info-resource of techAI@McshTchInf000036  ×4  McshTchInf000036:4102 McshTchInf000036:5339 McshTchInf000036:5429 McshTchInf000036:6109
+  doing of Mnggsyst@McshCor000011  ×3  McshCor000011:3078 McshStn000004:228 McshStn000004:1073
+  evoluting of FctgSensing@McshCor000018  ×3  McshCor000018:463 McshCor000018:632 McshCor000018:699
+  evoluting of SciLago@McshEdu000010  ×3  McshEdu000010:2270 McshEdu000010:2426 McshEdu000010:3021
+  protection of organ@McshHlth000002  ×3  McshHlth000002:2538 McshHlth000002:7468 McshHlth000002:10128
+  time of foodCooked@McshHlth000013  ×3  McshHlth000013:8382 McshHlth000013:8504 McshHlth000013:11229
+  info-resource of SystBody@McshCor000011  ×3  McshHlth000014:581 McshHlth000015:212 McshNtr000002:337
+  evoluting of therapy@McshHlth000016  ×3  McshHlth000016:914 McshHlth000016:1547 McshHlth000018:133
+  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:332 McshLag000007:31355 McshTchInf000005:566
+  senso-mind-relation of Hmmdsemucnpt@McshLag000007  ×3  McshLag000007:2108 McshLag000007:14804 McshLag000007:15071
+  stress of word@McshLag000007  ×3  McshLag000009:4156 McshLag000010:2160 McshLag000012:1567
+  doing of word@McshLag000007  ×3  McshLag000023:705 McshLag000024:6373 McshLag000025:411
+  unit of Hmmdlago@McshLag000007  ×3  McshLag000028:1628 McshLag000028:1983 McshLag000028:2038
+  phoneme of Hmmdlago@McshLag000007  ×3  McshLag000036:3271 McshLag000036:3391 McshLag000039:1599
+  evoluting of ChmcElry@McshNtr000007  ×3  McshNtr000007:662 McshNtr000007:4452 McshNtr000007:4860
+  info-resource of Sctn@McshStn000002  ×3  McshStn000008:1076 McshStn000014:884 McshStn000015:1072
+  doing of Sctn@McshStn000002  ×3  McshStn000008:1156 McshStn000014:897 McshStn000015:1088
+  evoluting of Sctn@McshStn000002  ×3  McshStn000008:1199 McshStn000014:939 McshStn000015:1200
+  info-resource of Ogzn@McshStn000008  ×3  McshStn000008:1562 McshStn000018:2665 McshTchInf000019:748
+  evaluation of SoctEcon@McshStn000012  ×3  McshStn000012:3207 McshStn000012:3278 McshStn000012:3588
+  info-resource of SoctEcon@McshStn000012  ×3  McshStn000012:3662 McshStn000012:4372 McshStn000012:4432
+  doing of society@McshStn000009  ×3  McshStn000019:789 McshStn000021:540 McshStn000031:13181
+  info-resource of law@McshStnlaw000002  ×3  McshStnlaw000002:2054 McshStnlaw000002:2390 McshTchInf000015:13405
+  celex-sector-number of Eulaw@McshStnlaw000003  ×3  McshStnlaw000003:2618 McshStnlaw000003:2970 McshStnlaw000003:3092
+  tool of Cmprlago@McshTchInf000005  ×3  McshTchInf000005:1326 McshTchInf000029:492 McshTchInf000029:1831
+  doing of Cmprlago@McshTchInf000005  ×3  McshTchInf000006:1393 McshTchInf000008:3840 McshTchInf000039:3116
+  info-resource of Cnptlago@McshTchInf000007  ×3  McshTchInf000007:1701 McshTchInf000007:3253 McshTchInf000009:4433
+  name of Humn1959Sinagu@McshHmn000003  ×3  McshTchInf000010:422 McshTchInf000010:930 McshTchInf000010:2324
+  info-resource of Jsgnlago@McshTchInf000010  ×3  McshTchInf000011:5206 McshTchInf000012:8666 McshTchInf000013:1641
+  evaluation of Prgmlago@McshTchInf000006  ×3  McshTchInf000014:5304 McshTchInf000028:903 McshTchInf000039:16520
+  doing of money@McshStn000029  ×3  McshTchInf000015:5292 McshTchInf000017:1704 McshTchInf000028:1799
+  info-resource of Algonet@McshTchInf000015  ×3  McshTchInf000016:5530 McshTchInf000023:213 McshTchInf000028:2657
+  evoluting of Algonet@McshTchInf000015  ×3  McshTchInf000016:5742 McshTchInf000023:244 McshTchInf000028:2713
+  problem of AgntBkcn@McshTchInf000016  ×3  McshTchInf000016:8992 McshTchInf000016:12873 McshTchInf000017:4215
+  security of AgntBkcn@McshTchInf000016  ×3  McshTchInf000016:11136 McshTchInf000016:14583 McshTchInf000016:15621
+  exchange-rate of money@McshStn000029  ×3  McshTchInf000017:1354 McshTchInf000018:3101 McshTchInf000020:2071
+  account of AgntBkcn@McshTchInf000016  ×3  McshTchInf000018:995 McshTchInf000021:684 McshTchInf000024:2112
+  doing of Agntdapp@McshTchInf000015  ×3  McshTchInf000018:11227 McshTchInf000025:1163 McshTchInf000026:1629
+  command of Cmprprgm@McshTchPrgm000002  ×3  McshTchInf000038:1047 McshTchPrgm000002:1155 McshTchPrgm000005:55
+  evaluation of Knlglago@McshTchInf000039  ×3  McshTchInf000039:4115 McshTchInf000039:8259 McshTchInf000039:11818
+  info-resource of Logclago@McshTchInf000039  ×3  McshTchInf000039:5677 McshTchInf000039:6396 McshTchInf000039:13830
 
-=== INFO (336) — how many specifics refine each numbered generic-attribute
-     63  disease'04_therapy@McshHlth000011#idDssHmn004F
-     53  disease'05_protection@McshHlth000011#idDssHmn005F
+=== INFO (316) — how many specifics refine each numbered generic-attribute
+    115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
+     60  disease'04_therapy@McshHlth000011#idDssHmn004F
      50  disease'01_symptom@McshHlth000011#idDssHmn001F
      45  disease'02_cause@McshHlth000011#idDssHmn002F
+     45  disease'05_protection@McshHlth000011#idDssHmn005F
      42  foodCooked'27_recipe@McshHlth000013#idFoodHmn050att001
+     31  Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmnmopt
+     27  Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
      26  food'24_ingredient@McshHlth000013#idFoodHmnatt001
-     22  model'12_evaluation@McshCor000012#idMdleval
+     26  Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
+     22  Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
+     19  organ'01_disease@McshHlth000002#idOgnHmnatt004
      18  society'43_human_view@McshStn000009#idSocHumnatt021
-     17  organ'01_disease@McshHlth000002#idOgnHmnatt004
+     18  AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
      17  societyOgsm'29_language@McshStn000007#idSoctOgsmatt009
      17  society'44_economic_view@McshStn000009#idSocHumnatt007
-     16  Hmnm_lago'20_output_(logo_view)@McshLag000007#idLHmnmopt
-     14  Hmnm_lago'28_input1_(mind_view)@McshLag000007#idLHmnmipt1
-     14  Hmnm_lago'30_input3_(semu_view)@McshLag000007#idLHmnmipt3
+     16  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
      12  food'03_evaluation@McshHlth000013#idFoodHmneval
+     11  model'12_evaluation@McshCor000012#idMdleval
      11  doing'06_argument@McshCor000004#idDngatt001
-     11  SystOgans'02_organ@McshHlth000002#idSysOgnHmnatt001
+     11  Ognssyst'02_organ@McshHlth000002#idSysOgnHmnatt001
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
+     11  Algonet'20_governance_system@McshTchInf000015#idAlgntgov
      10  relation'06_argument@McshCor000005#idRlnarg
-     10  system'03_structure@McshCor000011#idSyssrtr
-     10  SystOgans'01_disease@McshHlth000002#idSysOgnHmnatt002
-      9  AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
-      8  Hmnm_lago'29_input2_(senso_mind__view)@McshLag000007#idLHmnmipt2
-      8  netAlgo'20_governance_system@McshTchInf000015#idAlgntgov
-      7  doing'08_relation@McshCor000004#idDngatt008
-      7  system'01_node@McshCor000011#idSyspart
-      7  techInfo'02_human@McshTchInf000002#idTchInfatt002
-      7  Knlg_lago'03_output@McshTchInf000039#idLKnlgotpt
-      6  model'09_unit@McshCor000012#idMdlatt008
-      6  Cmpr_lago'20_output@McshTchInf000005#idLCmpropt
-      6  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
-      6  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
+     10  Ognssyst'01_disease@McshHlth000002#idSysOgnHmnatt002
+     10  Knlglago'03_output@McshTchInf000039#idLKnlgotpt
+     10  Algonet'25_organization@McshTchInf000015#idAlgntogn
+      9  AgntBkcn'21_program@McshTchInf000016#idDbcpgm
+      9  AgntBkcn'06_node@McshTchInf000016#idDbcnod
+      9  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
+      8  system'03_structure@McshCor000011#idSyssrtr
+      8  DissInfectiousViral'05_protection@McshHlth000011#idDssHmn162protection
+      7  Cmprlago'20_output@McshTchInf000005#idLCmpropt
+      7  Knlglago'02_input@McshTchInf000039#idLKnlginpt
+      6  doing'08_relation@McshCor000004#idDngatt008
+      6  Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
+      6  Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
+      6  AgntBkcn'19_asset@McshTchInf000016#idDbcevu
       6  AgntBkcn'01_evaluation@McshTchInf000016#idDbceval
-      6  Knlg_lago'02_input@McshTchInf000039#idLKnlginpt
+      5  system'01_node@McshCor000011#idSyspart
       5  FctgBraining'06_argument@McshCor000018#idBrngHmnFctarg
       5  FctgEmoting'16_emotion@McshCor000018#idBrngHmnFct004emn
-      5  Hmnmsemucnpt'01_attribute@McshLag000007#idLHmnmsmscptatt
-      5  AgntBkcn'21_program@McshTchInf000016#idDbcpgm
-      5  AgntBkcn'06_node@McshTchInf000016#idDbcnod
-      5  netAlgo'25_organization@McshTchInf000015#idAlgntogn
-      5  Knlg_lago'04_manager@McshTchInf000039#idLKnlgmngr
+      5  Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
+      5  AgntBkcn'24_statistics@McshTchInf000016#idDbcstat
       4  doing'07_syntax@McshCor000004#idDngstx
-      4  model'13_archetype@McshCor000012#idMdlatt001
       4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis_doing@McshHlth000011#idDssHmn003
       4  satisfier'06_law@McshStn000010#idSfrHmnatt011
-      4  Alfa_lago'20_output-(text-view)@McshLag000008#idL0016opt
-      4  Alfa_lago'30_input3-(semu-view)@McshLag000008#idL0016ipt3
+      4  Ogsmlago'21_grammar@McshLag000005#idLOgsmgrmr
       4  ChmcElry'23_usage@McshNtr000007#idChmElratt012
-      4  SctnOgms'19_health@McshStn000002#idStnOgmatt003
-      4  SctnOgms'26_node_of_satisfiers@McshStn000002#idStnOgmatt007
-      4  oznOgsm'32_member@McshStn000006#idOznOgmatt003
-      4  Pgmg_lago'13_input|archetype@McshTchInf000006#idLCpgmarch
-      4  Cnkn_lago'20_output@McshTchInf000007#idLCnkntopt
-      4  AgntBkcn'24_statistics@McshTchInf000016#idDbcstat
+      4  OgznOgsm'32_member@McshStn000006#idOznOgmatt003
       3  bodyNo'02_valence@McshCor000003#idEntBodyNvlc
-      3  bodyNo'06_argument@McshCor000003#idEntBodyNarg
       3  system'02_node_relation@McshCor000011#idSysndrn
+      3  model'13_archetype@McshCor000012#idMdlatt001
       3  FctgBrainingBio'06_argument@McshCor000013#idBrngarg
       3  creatingInfoMindBio'06_argument@McshCor000013#idBrngInfcrtarg
       3  FctgSensingBio'06_argument@McshCor000013#idBrngSnsgarg
@@ -291,46 +783,47 @@ SUMMARY
       3  science'21_organization@McshEdu000002#idSciatt006
       3  organ'03_cell@McshHlth000002#idOgnHmnatt012
       3  organ'08_size@McshHlth000002#idOgnHmnatt009
-      3  DissOgsm'03_diagnosis@McshHlth000010#idDssOgmdgnsF
-      3  DissSystCirculatory'02_cause@McshHlth000011#idDssHmn032cause
+      3  DissOgsm'03_diagnosis@McshHlth000010#idDssOgmdgns
+      3  DissHbsystCirculatory'02_cause@McshHlth000011#idDssHmn032cause
       3  DissMental'04_therapy@McshHlth000011#idDssHmn108therapy
+      3  DissInfectiousViral'04_therapy@McshHlth000011#idDssHmn162therapy
       3  food'25_calorie@McshHlth000013#idFoodHmnatt006
       3  therapy'01_indication@McshHlth000016#idThrpHmnatt001
-      3  model'06_node@McshCor000012#idMdlatt005
-      3  Alfa_lago'28_input1-(mind-view)@McshLag000008#idL0016ipt1
+      3  Hmmdsemucnpt'01_attribute@McshLag000007#idLHmnmsmscptatt
+      3  Hmmdsemuargu'01_attribute@McshLag000007#idLHmnmsmsondosmat
       3  ChmcElry'20_occurance@McshNtr000007#idChmElratt009
-      3  SctnOgms'24_place@McshStn000002#idStnOgmatt010
+      3  SctnOgms'06_node@McshStn000002#idStnOgmatt004
+      3  SctnOgms'19_health@McshStn000002#idStnOgmatt003
+      3  SctnOgms'26_node_of_satisfiers@McshStn000002#idStnOgmatt007
       3  Sctn'06_node@McshStn000002#idStnHmnatt001
       3  Sctn'19_health@McshStn000002#idStnHmnatt005
       3  Ogzn'33_stakeholder_node@McshStn000008#idOgznatt024
       3  Ogzn'35_admin_sys@McshStn000008#idOgznatt001
-      3  Cmpr_lago'13_input@McshTchInf000005#idLCmpript
-      3  Cmpr_lago'26_computer@McshTchInf000005#idLCmpruser
-      3  Pgmg_lago'20_output|algo@McshTchInf000006#idLCpgmalg
-      3  Cnkn_lago'12_evaluation@McshTchInf000007#idLCnknteval
-      3  Pgmg_lago'35_tool@McshTchInf000006#idLCpgmtool
-      3  Jsgn_lago'13_archetype (input)@McshTchInf000010#idLJsgnarc
-      3  Jsgn_lago'20_algorithm (output)@McshTchInf000010#idLJsgnalg
-      3  Jsgn_lago'35_tool@McshTchInf000010#idLJsgntol
-      3  netAlgo'19_asset@McshTchInf000015#idAlgntevu
-      3  netAlgo'01_evaluation@McshTchInf000015#idAlgnteval
-      3  netAlgo'28_law@McshTchInf000015#idAlgntlaw
-      3  AgntBkcn'19_asset@McshTchInf000016#idDbcevu
+      3  Cnptlago'12_evaluation@McshTchInf000007#idLCnpteval
+      3  Jsgnlago'13_archetype (input)@McshTchInf000010#idLJsgnarc
+      3  Jsgnlago'20_algorithm (output)@McshTchInf000010#idLJsgnalg
+      3  Jsgnlago'35_tool@McshTchInf000010#idLJsgntol
+      3  Algonet'19_asset@McshTchInf000015#idAlgntevu
+      3  Algonet'01_evaluation@McshTchInf000015#idAlgnteval
+      3  AgntBkcn'29_Dapp@McshTchInf000016#idDbcapp
+      3  Algonet'28_law@McshTchInf000015#idAlgntlaw
       3  OgznDao'33_stakeholder@McshTchInf000019#idDeOznskhr
-      3  DeApp'05_human@McshTchInf000015#idDappatt005
+      3  Agntdapp'05_human@McshTchInf000015#idDappatt005
+      2  bodyNo'01_argument@McshCor000003#idEntBodyNarg
       2  doing'02_valence@McshCor000004#idDngatt002
       2  doing'09_risk@McshCor000004#idDngatt004
       2  bodyNo'03_sequence@McshCor000003#idEntBodyNdrn
       2  FctgEmoting'17_stimulus@McshCor000018#idBrngHmnFct004stml
       2  FctgEmoting'15_human@McshCor000018#idBrngHmnFct004hmn
+      2  infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
       2  SciLago'13_area-of-study@McshEdu000010#idSLangaos
-      2  cellOgsm'02_membrane@McshOgm000007#idCellOgmatt001
+      2  Ogsmcell'02_membrane@McshOgm000007#idCellOgmatt001
       2  organ'02_tissue@McshHlth000002#idOgnHmnatt010
-      2  DissOgsm'01_symptom@McshHlth000010#idDssOgmeftF
-      2  DissOgsm'02_cause@McshHlth000010#idDssOgmcasF
-      2  DissOgsm'04_therapy@McshHlth000010#idDssOgmthrpF
-      2  DissOgsm'05_protection@McshHlth000010#idDssOgmprtnF
-      2  DissOgsm'06_food@McshHlth000010#idDssOgmfoodF
+      2  DissOgsm'01_symptom@McshHlth000010#idDssOgmeft
+      2  DissOgsm'02_cause@McshHlth000010#idDssOgmcas
+      2  DissOgsm'04_therapy@McshHlth000010#idDssOgmthrp
+      2  DissOgsm'05_protection@McshHlth000010#idDssOgmprtn
+      2  DissOgsm'06_food@McshHlth000010#idDssOgmfood
       2  DissOgsm'07_stats@McshHlth000010#idDssHmn008
       2  DissCancer'05_protection@McshHlth000011#idDssHmn052protection
       2  DissMental'02_cause@McshHlth000011#idDssHmn108cause
@@ -338,51 +831,52 @@ SUMMARY
       2  food'21_price@McshHlth000013#idFoodHmnatt012
       2  satisfier'01_human@McshStn000010#idSfrHmnatt008
       2  medication'17_indication@McshHlth000014#idMedHmnatt002
-      2  bodyNo'05_logo-relation@McshCor000003#idEntBodyNlgln
-      2  HmnmviewLogo'09_unit@McshLag000007#idLHmnmunt
-      2  HmnmviewLogo'06_node@McshLag000007#idLHmnmnode
-      2  Alfa_lago'01_ATTRIBUTE@McshLag000008#idL0016attFT
+      2  bodyNo'05_logo_relation@McshCor000003#idEntBodyNlgln
+      2  model'06_node@McshCor000012#idMdlatt005
+      2  model'09_unit@McshCor000012#idMdlatt008
+      2  Hmmdlogo'09_unit@McshLag000007#idLHmnmunt
+      2  Hmmdlogo'06_node@McshLag000007#idLHmnmnode
       2  word'07_syllable@McshLag000007#idLHmnmwrdsylb
       2  word'08_syllabication@McshLag000007#idLHmnmwrdslbn
-      2  Hmnmsemuargu'01_attribute@McshLag000007#idLHmnmsmsondosmat
       2  Infrsc'07_citation_format@McshLag000013#idInfrscfrmt
       2  word'03_pronunciation@McshLag000007#idLHmnmwrdspch
-      2  Hmnm_lago'11_human@McshLag000007#idLHmnmhmn
-      2  Hiur_lago'20_output (logo-view)@McshLag000037#idLHiuropt
-      2  Hiur_lago'28_input1-(mind-view)@McshLag000037#idLHiuript1
-      2  Hiur_lago'29_input2-(senso-mind--view)@McshLag000037#idLHiuript2
-      2  Hiur_lago'30_input3-(semu-view)@McshLag000037#idLHiuript3
+      2  MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
+      2  MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
       2  ChmcElry'24_toxicity@McshNtr000007#idChmElratt014
       2  bio'16_size@McshOgm000002#idBioatt008
       2  bio'19_health@McshOgm000002#idBioatt003
       2  SctnOgms'25_node_of_organisms@McshStn000002#idStnOgmatt011
       2  SctnOgms'27_admin_system@McshStn000002#idStnOgmatt005
-      2  society'31_admin_system@McshStn000009#idSocadmn
-      2  society'05_evaluation@McshStn000009#idSocHumnatt077
+      2  society'05_evaluation@McshStn000009#idSocHumneval
       2  Ogzn'24_place@McshStn000008#idOgznatt007
+      2  societyOgsm'26_node_of_satisfiers@McshStn000007#idSoctOgsmatt007
       2  societyOgsm'30_technology@McshStn000007#idSoctOgsmatt010
-      2  Hmnm_lago'24_manager@McshLag000007#idLHmnmmngr
-      2  Cnkn_lago'24_manager@McshTchInf000007#idLCnkntmgr
-      2  Cnkn_lago'13_input@McshTchInf000007#idLCnkntipt
-      2  Pgmg_lago'12_evaluation@McshTchInf000006#idLCpgmeval
-      2  Jsgn_lago'33_human@McshTchInf000010#idLJsgnhmn
-      2  netAlgo'06_node@McshTchInf000015#idAlgntnod
-      2  netAlgo'16_stakeholder@McshTchInf000015#idAlgntskhr
-      2  netAlgo'17_protocol@McshTchInf000015#idAlgntprl
-      2  netAlgo'21_program@McshTchInf000015#idAlgntpgm
-      2  netAlgo'23_wallet@McshTchInf000015#idAlgntwlt
-      2  AgntBkcn'29_Dapp@McshTchInf000016#idDbcapp
+      2  sfrFin'06_law@McshStn000029#idLaw045011
+      2  Cmprlago'01_user@McshTchInf000005#Cmpluser
+      2  Cnptlago'24_manager@McshTchInf000007#idLCnptmgr
+      2  Cnptlago'13_input@McshTchInf000007#idLCnptipt
+      2  Tdoclago'20_output@McshTchInf000005#idLCmpr007otpt
+      2  Tdoclago'26_machine@McshTchInf000005#idLCmpr007mchn
+      2  Cmprlago'34_organization@McshTchInf000005#idLCmprozn
+      2  Jsgnlago'33_human@McshTchInf000010#idLJsgnhmn
+      2  Algonet'06_node@McshTchInf000015#idAlgntnod
+      2  Algonet'16_stakeholder@McshTchInf000015#idAlgntskhr
+      2  Algonet'17_protocol@McshTchInf000015#idAlgntprl
+      2  Algonet'21_program@McshTchInf000015#idAlgntpgm
+      2  Algonet'23_wallet@McshTchInf000015#idAlgntwlt
+      2  Algonet'27_service@McshTchInf000015#idAlgntsvc
       2  DoEth'33_stakeholder@McshTchInf000019#idEthdaoskhr
-      2  DeApp'06_evaluation@McshTchInf000015#idDappeval
-      2  netAlgo'18_chain@McshTchInf000015#idAlgntchn
-      2  Ppsl_lago'03_output@McshTchInf000039#idLKnlg004oupt
+      2  Agntdapp'06_evaluation@McshTchInf000015#idDappeval
+      2  Algonet'18_chain@McshTchInf000015#idAlgntchn
+      2  Srcdlago'13_archetype (input)@McshTchInf000006#idLSrcdarch
+      2  Srcdlago'09_Srcdalgo'unit@McshTchInf000006#idLSrcdunt
+      2  Ppsllago'03_output@McshTchInf000039#idLKnlg004oupt
       1  worldview'20_view@McshLag000003#idWldvatt004
       1  worldview'21_management_tool@McshLag000003#idWldvatt002
-      1  whole'02_environment@McshCor000008#idWhlenvt
       1  worldview'22_human@McshLag000003#idWldvatt001
       1  whole'01_part@McshCor000008#idWhlprt
-      1  FctgEvaluating'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
-      1  FctgEvaluating'08_relation@McshCor000018#idBrngHmnFct002Evalgrln
+      1  FctgEvalg'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
+      1  FctgEvalg'08_relation@McshCor000018#idBrngHmnFct002Evalgrln
       1  model'15_mapping_method@McshCor000012#idMdlatt003
       1  functing'06_argument@McshCor000004#idDngFctgarg
       1  functing'07_syntax@McshCor000004#idDngFctgstx
@@ -390,44 +884,40 @@ SUMMARY
       1  FctgEmotingBio'13_brain_entity@McshCor000013#idBrngEmtgbnet
       1  FctgEmotingBio'06_argument@McshCor000013#idBrngEmtgarg
       1  FctgEmotingBio'08_relation@McshCor000013#idBrngEmtgrln
+      1  FctgFeeling'06_argument@McshCor000018#idBrngHmnFct001arg
       1  FctgBraining'13_sleeping-relation@McshCor000018#idBrngHmnFctslprn
       1  FctgEmoting'06_argument@McshCor000018#idBrngHmnFct004arg
       1  FctgWantingBio'06_argument@McshCor000013#idBrngWntgarg
-      1  infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
       1  SciMind'13_area-of-study@McshEdu000009#idSMindaos
       1  science'22_conference@McshEdu000002#idSciatt016
       1  SciLago'20_scientist@McshEdu000010#idSLangwkr
       1  material'09_mass@McshNtr000002#idMtrlatt006
-      1  Hmbdnutrient'16_food_source@McshHlth000002#idBdyHmnatt015att004
-      1  Hmbdnutrient'17_disease@McshHlth000002#idBdyHmnatt015att001
-      1  Hmbdnutrient'18_indication@McshHlth000002#idBdyHmnatt015att005
-      1  Hmbdnutrient'19_dietary_recommendation@McshHlth000002#idBdyHmnatt015att003
+      1  Hbnutrient'16_food_source@McshHlth000002#idBdyHmnatt015att004
+      1  Hbnutrient'17_disease@McshHlth000002#idBdyHmnatt015att001
+      1  Hbnutrient'18_indication@McshHlth000002#idBdyHmnatt015att005
+      1  Hbnutrient'19_dietary_recommendation@McshHlth000002#idBdyHmnatt015att003
       1  organ'04_artery@McshHlth000002#idOgnHmnatt005
       1  organ'05_vein@McshHlth000002#idOgnHmnatt006
       1  organ'06_nerve@McshHlth000002#idOgnHmnatt007
       1  OganGland'01_disease@McshHlth000002#idGlndHmnatt001
       1  OganVessel'01_disease@McshHlth000002#idOgnHmn013disease
-      1  cellOgsm'01_disease@McshOgm000007#idCellOgmatt013
-      1  cellOgsm'03_cytoplasm@McshOgm000007#idCellOgmatt012
-      1  cellOgsm'04_organelle@McshOgm000007#idCellOgmatt003
-      1  cellOgsm'05_genetic_material@McshOgm000007#idCellOgmatt002
-      1  cellOgsm'06_SystMaterial@McshOgm000007#idCellOgmatt034
-      1  cellOgsm'07_SystMolecules@McshOgm000007#idCellOgmatt014
-      1  cellOgsm'08_molecule@McshOgm000007#idCellOgmatt015
-      1  cellOgsm'09_atom@McshOgm000007#idCellOgmatt016
-      1  cellOgsm'10_size@McshOgm000007#idCellOgmatt011
-      1  cellOgsm'11_shape@McshOgm000007#idCellOgmatt017
+      1  Ogsmcell'01_disease@McshOgm000007#idCellOgmatt013
+      1  Ogsmcell'03_cytoplasm@McshOgm000007#idCellOgmatt012
+      1  Ogsmcell'04_organelle@McshOgm000007#idCellOgmatt003
+      1  Ogsmcell'05_genetic_material@McshOgm000007#idCellOgmatt002
+      1  Ogsmcell'06_SystMaterial@McshOgm000007#idCellOgmatt034
+      1  Ogsmcell'07_SystMolecules@McshOgm000007#idCellOgmatt014
+      1  Ogsmcell'08_molecule@McshOgm000007#idCellOgmatt015
+      1  Ogsmcell'09_atom@McshOgm000007#idCellOgmatt016
+      1  Ogsmcell'10_size@McshOgm000007#idCellOgmatt011
+      1  Ogsmcell'11_shape@McshOgm000007#idCellOgmatt017
       1  cell'10_size@McshHlth000004#idCellHmnatt040
       1  OganMuscle'01_disease@McshHlth000005#idMsclHmnatt001
       1  OganBone'01_disease@McshHlth000005#idBoneHmnatt001
-      1  healthBio'02_disorder@McshHlth000006#idDsdr
-      1  healthBio'03_disorderNo@McshHlth000006#idHlthBioatt003
-      1  healthBio'04_material@McshHlth000006#idHlthBioatt004
-      1  healthBio'06_environment@McshHlth000006#idHlthBioatt005
       1  healthOgsm'02_disorder@McshHlth000007#idHlthOgmatt002
       1  healthOgsm'03_disorderNo@McshHlth000007#idHlthOgmatt003
       1  healthOgsm'04_material@McshHlth000007#idHlthOgmatt004
-      1  healthOgsm'06_environment@McshHlth000007#idHlthOgmenvF
+      1  healthOgsm'06_environment@McshHlth000007#idHlthOgmenv
       1  disorderBio'01_symptom@McshHlth000006#idDsdrsptm
       1  disorderBio'02_cause@McshHlth000006#idDsdrcaus
       1  disorderBio'03_diagnosis@McshHlth000006#idDsdrdgns
@@ -438,7 +928,7 @@ SUMMARY
       1  DissPlnt'04_therapy@McshHlth000010#idDssPlntatt004
       1  DissPlnt'05_protection@McshHlth000010#idDssPlntatt005
       1  DissSkeletal_system'02_cause@McshHlth000011#idDssHmn005_1cause
-      1  disease.heart'05_protection@McshHlth000011#idDssHmn047protection
+      1  diseaseHeart'05_protection@McshHlth000011#idDssHmn047protection
       1  DissAnaemia'04_therapy@McshHlth000011#idDssHmn058therapy
       1  DissCancer'01_symptom@McshHlth000011#idDssHmn052smptm
       1  DissCancer'04_therapy@McshHlth000011#idDssHmn052therapy
@@ -449,7 +939,7 @@ SUMMARY
       1  DissDiarrhea'04_therapy@McshHlth000011#idDssHmn128therapy
       1  DissReproduction'02_cause@McshHlth000011#idDssHmn211cause
       1  DissTooth'05_protection@McshHlth000011#idDssHmn215protection
-      1  FctgPainingHead'04_therapy@McshHlth000011#idDssHmn138therapy
+      1  DissHeadache'04_therapy@McshHlth000011#idDssHmn138therapy
       1  food'22_sector@McshHlth000013#idFoodHmnatt013
       1  food'23_popularity@McshHlth000013#idFoodHmnatt014
       1  food'26_flavor@McshHlth000013#idFoodHmnatt009
@@ -460,25 +950,22 @@ SUMMARY
       1  medication'19_side_effect@McshHlth000014#idMedHmnatt004
       1  therapy'06_therapist@McshHlth000016#idThrpHmnatt006
       1  cell'01_disease@McshHlth000004#idCellHmnatt001
-      1  bio'18_managing_system@McshOgm000002#idBioatt002
-      1  Ogsm'25_satisfier@McshOgm000003#idOgmatt023
+      1  Senssyst'01_disease@McshHlth000019#idSysNrvsatt016disease
       1  worldview'19_concept@McshLag000003#idWldvatt003
-      1  model'11_user@McshCor000012#idMdlatt018
-      1  Ogmslago'20_output__logo_view@McshLag000005#idLOgmsotpt
-      1  Ogmslago'21_grammar@McshLag000005#idLOgmsgrmr
+      1  Ogsmlago'20_output__logo_view@McshLag000005#idLOgsmotpt
       1  model'17_medium@McshCor000012#idMdlatt004
-      1  Text_lago'20_output@McshLag000007#idLTextopt
+      1  Textlago'20_output@McshLag000007#idLTextopt
       1  text'09_unit@McshLag000007#idLTextoptunit
       1  word'12_creating@McshLag000007#idLHmnmwrdcrtg
-      1  Spch_lago'08_science@McshLag000009#idL0017sci
-      1  Hmnmsemuverb'05_logo-relation@McshLag000007#idLHmnmsmsvrblgrn
+      1  Alfalago'20_output-(text-view)@McshLag000008#idL0016opt
+      1  Alfalago'28_input1-(mind-view)@McshLag000008#idL0016ipt1
+      1  Alfalago'30_input3-(semu-view)@McshLag000008#idL0016ipt3
+      1  Hmmdsemuverb'05_logo-relation@McshLag000007#idLHmnmsmsvrblgrn
       1  word'01_functionality@McshLag000007#idLHmnmwrdfcnt
       1  word'02_meaning@McshLag000007#idLHmnmwrdmeng
       1  word'06_name_entirety@McshLag000007#idLHmnmwrdnmet
-      1  Hiur_lago'12_evaluation@McshLag000037#idLHiureval
-      1  MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
-      1  MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
-      1  material'11_chemical_property@McshNtr000002#idMtrlatt009
+      1  Hiurlago'12_evaluation@McshLag000037#idLHiureval
+      1  MtrlSysMols'05_chemical_property@McshNtr000005#idSysMolsatt005
       1  acting'02_valence@McshCor000004#idDngActgvlc
       1  acting'06_argument@McshCor000004#idDngActgarg
       1  acting'07_syntax@McshCor000004#idDngActgstx
@@ -487,19 +974,19 @@ SUMMARY
       1  bio'21_material@McshOgm000002#idBioatt005
       1  bio'22_genome@McshOgm000002#idBioatt006
       1  Ogsm'32_tissue@McshOgm000003#idOgmatt029
-      1  MtrlMol'01_atom@McshNtr000004#idMolatt001
-      1  MtrlMol'03_shape@McshNtr000004#idMolatt004
-      1  MtrlMol'05_size@McshNtr000004#idMolatt006
+      1  MtrlMole'01_atom@McshNtr000004#idMolatt001
+      1  MtrlMole'03_shape@McshNtr000004#idMolatt004
+      1  MtrlMole'05_size@McshNtr000004#idMolatt006
       1  MoleOgsm'03_shape@McshOgm000004#idMolOgmatt004
-      1  MoleOgsm'05_size@McshOgm000004#idMolOgmatt005
-      1  ogmCellNo'08_size@McshOgm000008#idOgmCllNatt008
-      1  ogsmAnimal'13_food@McshOgm000009#idOgmAnmlatt013
+      1  MoleOgsm'05_size@McshOgm000004#idMolOgmatt006
+      1  OgsmCellNo'08_size@McshOgm000008#idOgmCllNatt008
+      1  OgsmAnimal'13_food@McshOgm000009#idOgmAnmlatt013
       1  Ogsm'19_health@McshOgm000003#idOgmatt010
       1  Ogsm'21_material@McshOgm000003#idOgmatt005
       1  Ogsm'26_disease@McshOgm000003#idOgmatt008
-      1  SctnOgms'06_node@McshStn000002#idStnOgmatt004
       1  SystBody'06_node@McshCor000011#idSys004nod
-      1  oznOgsm'24_place@McshStn000006#idOznOgmatt007
+      1  SctnOgms'24_place@McshStn000002#idStnOgmatt010
+      1  OgznOgsm'24_place@McshStn000006#idOznOgmatt007
       1  societyOgsm'06_node@McshStn000007#idSoctOgsmatt011
       1  societyOgsm'31_governance_system@McshStn000007#idSoctOgsmatt006
       1  Admn'15_budget@McshStn000004#idBdgt
@@ -516,47 +1003,36 @@ SUMMARY
       1  Ogzn'19_health@McshStn000008#idOgznatt005
       1  Sctn'26_node_of_satisfiers@McshStn000002#idStnHmnatt003
       1  Sctn'28_node_of_humans@McshStn000002#idStnHmnatt002
-      1  societyOgsm'26_node_of_satisfiers@McshStn000007#idSoctOgsmatt007
       1  human'37_identification@McshHmn000002#idHmnatt010
       1  society'06_node@McshStn000009#idSocHumnatt020
-      1  sfrFin'06_law@McshStn000029#idLaw045011
-      1  lawEus'05_time_in_force@McshStnlaw000003#idLawEuzztt011
-      1  lawEus'02_jurisdiction@McshStnlaw000003#idLawEuzztt004
+      1  societyOgsm'19_health@McshStn000007#idSoctOgsmatt003
+      1  human'33_place@McshHmn000002#idHmnatt015
+      1  society'31_admin_system@McshStn000009#idSocadmn
+      1  Eulaw'05_time_in_force@McshStnlaw000003#idLawEuzzatt011
+      1  Eulaw'02_jurisdiction@McshStnlaw000003#idLawEuzzatt004
       1  techCmpr'12_health_issue@McshTchInf000003#idCmratt003
-      1  Hmnm_lago'26_tech@McshLag000007#idLHmnmtech
-      1  Cmpr_lago'33_human@McshTchInf000005#idLCmprhmn
-      1  lagSnet'20_output@McshTchInf000007#idLCnknt022otpt
-      1  Tdoc_lago'26_machine@McshTchInf000005#idLtdocmchn
-      1  Cnkn_lago'11_user@McshTchInf000007#idLCnkntuser
-      1  Pgmg_lago'33_human@McshTchInf000006#idLCpgmhmn
-      1  Cmpr_lago'34_organization@McshTchInf000005#idLCmprozn
-      1  Jsgn_lago'12_evaluation@McshTchInf000010#idLJsgneval
-      1  Jsgn_lago'09_Jsalgo'UNIT@McshTchInf000010#idLJsgnunt
-      1  Jsgn_lago'34_organization@McshTchInf000010#idLJsgnogn
-      1  Jsnd_lago'33_human@McshTchInf000012#idLJsndhmn
-      1  techInfo'01_evaluation@McshTchInf000002#idTchInfeval
+      1  Knlglago'01_user@McshTchInf000039#idLKnlguser
+      1  CptlSnet'20_output@McshTchInf000007#idLCnpt022otpt
+      1  Cnptlago'11_user@McshTchInf000007#idLCnptuser
+      1  Jsgnlago'12_evaluation@McshTchInf000010#idLJsgneval
+      1  Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
+      1  Jsgnlago'34_organization@McshTchInf000010#idLJsgnogn
+      1  Jsndlago'13_archetype@McshTchInf000012#idLJsndarc
+      1  Jsndlago'33_human@McshTchInf000012#idLJsndhmn
       1  SystNet'06_node@McshCor000014#idNetatt002
-      1  netAlgo'24_statistics@McshTchInf000015#idAlgntstat
-      1  netAlgo'26_environment@McshTchInf000015#idAlgntenvt
+      1  Algonet'24_statistics@McshTchInf000015#idAlgntstat
+      1  Algonet'26_environment@McshTchInf000015#idAlgntenvt
+      1  Algonet'22_Dapp@McshTchInf000015#idDapp
       1  AgntBtcn'06_node@McshTchInf000017#idBtcnod
       1  material'12_space@McshNtr000002#idMtrlatt002
       1  AgntBkcn'26_environment@McshTchInf000016#idDbcenvt
-      1  Pgmgalgo'02_node@McshTchInf000006#idLCpgmalgnode
-      1  Pgmgalgo'03_unit_node@McshTchInf000006#idLCpgmalgunt
-      1  Pgmgalgo'04_word_node@McshTchInf000006#idLCpgmalgwrd
-      1  Pgmgalgo'08_section_node@McshTchInf000006#idLCpgmalgsctn
-      1  Pgmgalgo'11_human@McshTchInf000006#idLCpgmalghmn
-      1  Pgmgalgo'12_evaluation@McshTchInf000006#idLCpgmalgeval
-      1  Pgmgalgo'18_Pgmgalgo.LIBRARY@McshTchInf000006#idLCpgmalgLbr
-      1  Tdoc_lago'20_output@McshTchInf000005#idLtdocotpt
+      1  Srcdlago'06_Srcdalgo'node@McshTchInf000006#idLSrcdalgnode
       1  techAI'21_organization@McshTchInf000036#idTechAiozn
       1  techAI'14_evaluation@McshTchInf000036#idTechAieval
       1  techNn'14_evaluation@McshTchInf000036#idTchNneval
-      1  Ppsl_lago'02_input@McshTchInf000039#idLKnlg004inpt
-      1  lagoLogic'04_manager@McshTchInf000039#idLKnlg009mngr
+      1  Ppsllago'02_input@McshTchInf000039#idLKnlg004inpt
+      1  Logclago'04_manager@McshTchInf000039#idLKnlg009mngr
       1  lagoOntg'02_input@McshTchInf000039#idLKnlg010inpt
       1  lagoOntg'03_output|ontology@McshTchInf000039#idLKnlg010otpt
       1  lagoOntg'04_manager@McshTchInf000039#idLKnlg010mngr
-      1  Cmprprgm'19_using@McshTchPrgm000002#idCpgmatt008
-      1  Cmprprgm'20_developing@McshTchPrgm000002#idCpgmatt009
-      1  Cmprprgm'26_installing@McshTchPrgm000002#idCpgmatt007
+      1  Prgmlago'26_tech@McshTchInf000006#idLPrgmtech

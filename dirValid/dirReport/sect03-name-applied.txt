@@ -1,0 +1,134 @@
+MvrwSect03 — name:: added to sections without one {2026-11-16}: APPLIED (createMcsh --name --fix, then OF/FORMAL renamed)
+
+=== WRITTEN (107)
+  McshTchInf000008  #idLHitpoldcodenam  McshEngl.oHitp'old_code,   (heading "old-code of oHitp")
+  McshTchInf000010  #idLJsgnevalPronam  McshEngl.Jsgnlago'benefit,   (heading "benefit of Jsgnlago")
+  McshTchInf000010  #idLJsgnevalConnam  McshEngl.Jsgnlago'problem,   (heading "problem of Jsgnlago")
+  McshTchInf000010  #idLJsgnevalTodonam  McshEngl.Jsgnlago'todo,   (heading "todo of Jsgnlago")
+  McshTchInf000010  #idLJsgnevalProSimplenam  McshEngl.Jsgnlago'simplicity,   (heading "simplicity of Jsgnlago")
+  McshTchInf000010  #idLJsgnevalConNamingnam  McshEngl.Jsgnlago'naming_mechanism,   (heading "naming-mechanism of Jsgnlago")
+  McshTchInf000014  #idLWasmpgmBnrwhlnam  McshEngl.Wasmprgm'WHOLE,   (heading "WHOLE of Wasmprgm")
+  McshTchInf000014  #idLWasmrtewajombrnam  McshEngl.WebAssembly-object'member,   (heading "member of WebAssembly-object")
+  McshTchInf000016  #idDcrmnngnam  McshEngl.AgntDcrd'Mining,   (heading "Mining of AgntDcrd")
+  McshTchInf000018  #idEthctpersndslrnam  McshEngl.Ethrcontract'Etherscan_disassembler,   (heading "Etherscan-disassembler of Ethrcontract")
+  McshTchInf000019  #idEthdaomngnam  McshEngl.DoEth'managing,   (heading "managing of DoEth")
+  McshTchInf000019  #idEthdaovtgnam  McshEngl.DoEth'voting,   (heading "voting of DoEth")
+  McshTchInf000019  #idEthdaosvcnam  McshEngl.DoEth'main_function,   (heading "main-function of DoEth")
+  McshTchInf000021  #idEoscttntxtnam  McshEngl.Eos-constitution'text,   (heading "text of Eos-constitution")
+  McshTchInf000024  #idSteempstattnam  McshEngl.post'attribute,   (heading "attribute of post")
+  McshTchInf000026  #idBkskBtcnetnam  McshEngl.AgntBksk'Bitcoin_network,   (heading "Bitcoin-network of AgntBksk")
+  McshTchInf000026  #idBkskDapGftdbdnam  McshEngl.Graphite'dashboard,   (heading "dashboard of Graphite")
+  McshTchInf000026  #idBkskDapGftdocnam  McshEngl.Graphite'document,   (heading "document of Graphite")
+  McshTchInf000026  #idBkskDapGftshtnam  McshEngl.Graphite'sheet,   (heading "sheet of Graphite")
+  McshTchInf000026  #idBkskDapGftvltnam  McshEngl.Graphite'vault,   (heading "vault of Graphite")
+  McshTchInf000026  #idBkskDapGftcttnam  McshEngl.Graphite'contact,   (heading "contact of Graphite")
+  McshTchInf000026  #idBkskDapGftavrnam  McshEngl.Graphite'avatar,   (heading "avatar of Graphite")
+  McshTchInf000008  #idLHitpTodoDonenam  McshEngl.todo.DONE,
+  McshTchInf000011  #idLJsbralgBsrapinam  McshEngl.JsbralgoBrowser'API,   (heading "JsbralgoBrowser' API")
+  McshTchInf000011  #idLJsbralgEvtapinam  McshEngl.Jsbrevent'API,   (heading "Jsbrevent' API")
+  McshTchInf000011  #idLJsbrwptChromenam  McshEngl.JsbrApi'whole_part_tree.Chrome,
+  McshTchInf000012  #idLJsndpkgexpressAPInam  McshEngl.lagoJsndexpress'API,
+  McshTchInf000014  #idLWasmstcImprtTxtnam  McshEngl.import.TEXT,
+  McshTchInf000016  #idByncentexrnam  McshEngl.bynexvuC'exchange_rate,
+  McshTchInf000016  #idWingsognnam  McshEngl.Wings'organization,
+  McshTchInf000016  #idDcrmngPolnam  McshEngl.AgntDcrd'mining.POOL,
+  McshTchInf000016  #idDcrmngsolnam  McshEngl.AgntDcrd'mining.SOLO,
+  McshTchInf000016  #idDcrblkhshnam  McshEngl.dcrblk'Hash,
+  McshTchInf000016  #idDcrblkhdrnam  McshEngl.dcrblk'Header,
+  McshTchInf000016  #idDcrwltCliwdbnam  McshEngl.dcrwltCli'wallet.db,
+  McshTchInf000016  #idDcrwltClistadsnam  McshEngl.dcrwltCli'Sending_to_address,
+  McshTchInf000016  #idDcrwltCliblncnam  McshEngl.dcrwltCli'Ballance,
+  McshTchInf000016  #idBtshdrnam  McshEngl.btshmn.DEVELOPER_(btshdr),   (heading "btshmn.DEVELOPER (btshdr)")
+  McshTchInf000016  #idXemblktimnam  McshEngl.xemblk'Block_time,
+  McshTchInf000016  #idEmcexrnam  McshEngl.emcexvuC'exchange_rate_(emcexr),
+  McshTchInf000016  #idNxtognFdtnnam  McshEngl.Nxtzogzn.NXT_Foundation,
+  McshTchInf000016  #idXrptxFrdlntnam  McshEngl.xrptx.FRAUDELENT,
+  McshTchInf000016  #idDfnnrnnam  McshEngl.Dfn_gov'Neuron,
+  McshTchInf000016  #idDfnnrncrgnam  McshEngl.dfnnrn'Creating,
+  McshTchInf000016  #idDfnvtnnam  McshEngl.dfnnrn'Voting,
+  McshTchInf000017  #idBtcexvuCAggmtcpnam  McshEngl.Btcncevu.Market_cap,
+  McshTchInf000017  #idBtcbcrEvgnam  McshEngl.Bitcoin_bcr.EVOLUTING,
+  McshTchInf000017  #idBtcnetilglnam  McshEngl.Bitcoin_law'ILLEGAL,
+  McshTchInf000017  #idBtcadsexplrnam  McshEngl.Bitcoin_ads'Explorer,
+  McshTchInf000017  #idBtcbcnchngnam  McshEngl.blockchain'Changing,
+  McshTchInf000017  #idBtcblkpldnoenam  McshEngl.block'number_of_transaction_entries,
+  McshTchInf000017  #idBtcblkpldvotnam  McshEngl.block'vector_of_transactions,
+  McshTchInf000017  #idBtctxAggScdnam  McshEngl.Btcntx.aggregate.SECOND,
+  McshTchInf000017  #idBtcsvcPmntCtynam  McshEngl.Btcnsrvc.payment.city,
+  McshTchInf000017  #idBtcnetTstfctnam  McshEngl.Bitcoin_testnet'faucet_of_BTC,
+  McshTchInf000018  #idEthstateFnlnam  McshEngl.Deth_state.FINAL,
+  McshTchInf000018  #idEthstateGnsnam  McshEngl.Deth_state.GENESIS,
+  McshTchInf000018  #idEthexvuCNMtcpnam  McshEngl.EthrasetCN.Market_cap,
+  McshTchInf000018  #idEthexvuCNSplTtlnam  McshEngl.EthrasetCN.Total_supply,
+  McshTchInf000018  #idEthgthsnpsnam  McshEngl.geth'Synopsis,
+  McshTchInf000018  #idEthgthcnslnam  McshEngl.geth'Console,
+  McshTchInf000018  #idEthtrpcinstgnam  McshEngl.testrpc'Installing,
+  McshTchInf000018  #idEthmstapinam  McshEngl.Mist'API,
+  McshTchInf000018  #idEthmstdtfrnam  McshEngl.Mist'data_folder,
+  McshTchInf000018  #idEthmstEvgnam  McshEngl.Deth_mst.EVOLUTING,
+  McshTchInf000018  #idEthpritdirnam  McshEngl.Parity'Directory,
+  McshTchInf000018  #idEthpritevgnam  McshEngl.Deth_parity.EVOLUTING,
+  McshTchInf000018  #idEthtfldapnam  McshEngl.Truffle'Dapp,
+  McshTchInf000018  #idEthtfldirnam  McshEngl.Truffle'Directory,
+  McshTchInf000018  #idEthtflfilnam  McshEngl.Truffle'File,
+  McshTchInf000018  #idEthtflpblnam  McshEngl.Truffle'Problem,
+  McshTchInf000018  #idEthtfldrbdnam  McshEngl.Truffle'DirBuild,
+  McshTchInf000018  #idEthtflcplptnam  McshEngl.Truffle'Compiling_project,
+  McshTchInf000018  #idEthtflmtgptnam  McshEngl.Truffle'Migrating_project,
+  McshTchInf000018  #idEthtfltstptnam  McshEngl.Truffle'Testing_project,
+  McshTchInf000018  #idEthwltMstbkupnam  McshEngl.walletMst'Backup,
+  McshTchInf000018  #idEthwltMstdtfrnam  McshEngl.walletMst'Data_folder,
+  McshTchInf000018  #idEthwltMstInstgnam  McshEngl.walletMst'Installing,
+  McshTchInf000018  #idEthwltMstUpdtgnam  McshEngl.walletMst'Updating,
+  McshTchInf000018  #idEthwltMstDltgnam  McshEngl.walletMst'Deleting,
+  McshTchInf000018  #idEthwltMstEvgnam  McshEngl.walletMst.EVOLUTING,
+  McshTchInf000018  #idEthsolapiMsgnam  McshEngl.Lsolapi.msg,
+  McshTchInf000018  #idEthsolapiTxnam  McshEngl.Lsolapi.tx,
+  McshTchInf000018  #idEthognEcrhmnnam  McshEngl.Deth_core'Human,
+  McshTchInf000018  #idEthblktimAgenam  McshEngl.block'Age,
+  McshTchInf000020  #idChblxwnam  McshEngl.protocol'LaborX_white_paper_(chblxw),
+  McshTchInf000020  #idChblrxjobwrkdsnfownam  McshEngl.LaborX_job'field_of_work,
+  McshTchInf000029  #idLJsonsutStggmrnam  McshEngl.Jsonlago_string'grammar,
+  McshTchInf000029  #idLJsonsutNbrgmrnam  McshEngl.Jsonlago_number'grammar,
+  McshTchInf000030  #idLRustalgfileRsnam  McshEngl.file.rs,
+  McshTchInf000030  #idLRustalgfileCgTmnam  McshEngl.file.Cargo.toml,
+  McshTchInf000012  #idLJsndgblRequirenam  McshEngl.require of JsndAPI function,
+  McshTchInf000016  #idDbcwltcrtgnam  McshEngl.creating blockchain-wallet,
+  McshTchInf000016  #idDbcwltbkpgnam  McshEngl.backuping blockchain-wallet,
+  McshTchInf000016  #idDbcwltdltgnam  McshEngl.deleting blockchain-wallet,
+  McshTchInf000024  #idSteemSbdcvtgnam  McshEngl.converting STEEM-Dollar,
+  McshTchInf000024  #idSteempstcrtgnam  McshEngl.creating a post,
+  McshTchInf000032  #idGitInstallationnam  McshEngl.installing Git,
+  McshTchInf000008  #idLHitpprblmFfxnam  McshEngl.Firefox,
+  McshTchInf000012  #idLJsndfrom_sourcenam  McshEngl.From-source,
+  McshTchInf000016  #idDcrcttnpclnam  McshEngl.Principles,
+  McshTchInf000016  #idDcrcttnfdgnam  McshEngl.Funding,
+  McshTchInf000017  #idBtcexvuCadpncpnnam  McshEngl.company,
+  McshTchInf000018  #idEthblkmltrrthhnam  McshEngl.Merkle-root-hash,
+  McshTchInf000026  #idBkskStxnetwltnam  McshEngl.Stacks-wallet,
+  McshTchInf000031  #idLCppsuntBoolLrlnam  McshEngl.bool-literal,
+  McshTchInf000031  #idLCppsuntChrtrCharltrlnam  McshEngl.char-literal,
+
+=== PROBLEM (0)
+
+=== BY-HAND (10) — the fixer skips these: attribute headings whose main-name has a rule (Xdoing, Xinfrsc ...), or "{date}" in the title
+  McshTchInf000012:7994  #idLJsndpkgexpressirsc heading "info-resource of lagoJsndexpress" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000016:4156  #idDbccfc2016 heading "{2016-05-02-04} CONSENSUS-2016" has "{": give the-name by hand
+  McshTchInf000016:4168  #idDbccfc2015 heading "{2015} CONSENSUS-2015" has "{": give the-name by hand
+  McshTchInf000017:6731  #idBtcadsdong heading "Bitcoin_ads'DOING" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000017:8588  #idBtchhrtirsc heading "info-resource of Bitcoin_hhrt" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000018:5082  #idEthmstdong heading "Mist'doing" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000018:5274  #idEthpritdong heading "Parity'DOING" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000018:5632  #idEthtfldong heading "Truffle'doing" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000020:1330  #idChbpgmdong heading "program'Doing" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+  McshTchInf000026:1868  #idBkskDapGftirsc heading "info-resource of Graphite" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+
+=== SECOND-PASS {2026-11-16} — after the first names, child sections came into view
+  McshTchInf000021 idEoscttntxt  marked <section class="clsText"> (text of Eos-constitution: its 20 Articles are text, not concepts)
+  McshTchInf000020 idChblxw  marked <section class="clsText"> (LaborX white paper: its 13 chapters are text, not concepts)
+  McshTchInf000016  #idDcrmngPolmnplnam  McshEngl.Mining-pool,
+  McshTchInf000016  #idDcrmngPolPownam  McshEngl.PoW-Mining,
+  McshTchInf000016  #idDcrmngPolPosnam  McshEngl.PoS-Mining,
+  McshTchInf000018  #idEthpritdpdrnam  McshEngl.Parity'Dapps_dir,   (title fixed to Parity'Dapps_dir)
+  McshTchInf000018  #idEthtfldpstrnam  McshEngl.Truffle'Dapp_structure,   (title fixed to Truffle'Dapp_structure)
+  MvrwName01: WebAssembly-object'member → WebAssembly_object'member, Eos-constitution'text → Eos_constitution'text

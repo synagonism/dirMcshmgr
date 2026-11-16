@@ -1,0 +1,68 @@
+MvrwMain10 round 3 {2026-11-16}: APPLIED — a name of the whole is in the heading; heading → "x of M" | "M.x", formal name added
+
+=== OF (10) — "x of <name of the whole>" → "x of M" (+ M'x)
+  McshHlth000002  #idOgnHmn020glts  "glottis of vocal-cord" → "glottis of vocal_fold"  + McshEngl.vocal_fold'glottis
+  McshHlth000002  #idSysOgnHmn002att006iskm  "ischemia of coronary-circulation" → "ischemia of HbsystCirculatory_coronary_circulation"  + McshEngl.HbsystCirculatory_coronary_circulation'ischemia
+  McshTchInf000039  #idLKnlgmngr020evog  "evoluting of klmrDss" → "evoluting of DSS"  + McshEngl.DSS'evoluting
+  McshTchInf000039  #idLKnlgmngr020reskm  "relation-to-klmrEs of klmrDss" → "relation-to-klmrEs of DSS"  + McshEngl.DSS'relation_to_klmrEs
+  McshHlth000003  #idBrnHmnvascular-network  "vascular-network of OganBrainsrtr" → "vascular-network of OganBrainsrtr"
+  McshHlth000003  #idBrnHmnatt001srtr  "structure of forebrain" → "structure of OganBrain_forebrain"  + McshEngl.OganBrain_forebrain'structure
+  McshHlth000013  #idFoodHmn147mnfd  "mainNo-food of foodMeat_with_lemon" → "mainNo-food of foodMeat_with_lemon"
+  McshStn000042  #idSctrEduAieduirsc  "info-resource of AiEducation" → "info-resource of AI_education"  + McshEngl.AI_education'info_resource
+  McshEdu000007  #idSCmpr002cas  "computer-algebra-system of SciComputer_algebra" → "computer-algebra-system of SciCmprComputer_algebra"  + McshEngl.SciCmprComputer_algebra'computer_algebra_system
+  McshStn000050  #idKhmaeconsctrEduMoed  "ministry-of-education of KhmaEduSector" → "ministry-of-education of KhmaEcon_education_sector"  + McshEngl.KhmaEcon_education_sector'ministry_of_education
+
+=== DOT (17) — "<name of the whole>.x" → "M.x" (+ M.x)
+  McshTchInf000018  #idEthsolnigr  "Solxsunt.number.INTEGER" → "Lsoln.INTEGER"  + McshEngl.Lsoln.INTEGER
+  McshTchInf000017  #idBtcscrtdlsd  "BtcnevalnCon.Double_spending," → "BtcnevalnCon.Double_spending,"  + McshEngl.BtcnevalnCon.Double_spending,
+  McshTchInf000016  #idDashexvuCognX  "DashexvuC.EXCHANGE" → "DashexvuC.EXCHANGE"  + McshEngl.DashexvuC.EXCHANGE
+  McshTchInf000016  #idDbcevutimRls  "Bkcnasset'time.release" → "Bkcnasset_time.release"  + McshEngl.Bkcnasset_time.release
+  McshCor000002  #idMcsattNamcvnOrwv  "Mcsnotn.@&#32;other-worldview" → "Mcsnotn.@&#32;other-worldview"  + McshEngl.Mcsnotn.@&#32;other_worldview
+  McshTchInf000011  #idLJsbrwptChrome  "JsbrApi'whole_part_tree.Chrome" → "Jsbrwptr.Chrome"  + McshEngl.Jsbrwptr.Chrome
+  McshCor000018  #idBrngHmnFct002EvalgargMthd  "FctgEvalgargt.method" → "FctEvalgargt.method"  + McshEngl.FctEvalgargt.method
+  McshCor000018  #idBrngHmnFct002EvalgargAttr  "FctgEvalgargt.attribute" → "FctEvalgargt.attribute"  + McshEngl.FctEvalgargt.attribute
+  McshCor000018  #idBrngHmnFct002EvalgargEnt2  "FctgEvalgargt.entity2" → "FctEvalgargt.entity2"  + McshEngl.FctEvalgargt.entity2
+  McshCor000018  #idBrngHmnFct002EvalgargEntt  "FctgEvalgargt.entity" → "FctEvalgargt.entity"  + McshEngl.FctEvalgargt.entity
+  McshCor000018  #idBrngHmnFct002EvalgargEvtr  "FctgEvalgargt.evaluator" → "FctEvalgargt.evaluator"  + McshEngl.FctEvalgargt.evaluator
+  McshCor000018  #idBrngHmnFct002EvalgargOtpt  "FctgEvalgargt.output" → "FctEvalgargt.output"  + McshEngl.FctEvalgargt.output
+  McshTchInf000008  #idLHitparcttlRot  "Hitparcho'title.Root" → "Hitparchotitle.Root"  + McshEngl.Hitparchotitle.Root
+  McshLag000011  #idLEnglnounmbrPosv2  "EnglnnmCase.2_cars'" → "English_case.2_cars'"  + McshEngl.English_case.2_cars'
+  McshHlth000008  #idHlthHmnatt001Hlthy  "health'human.healthy" → "Hlthhuman.healthy"  + McshEngl.Hlthhuman.healthy
+  McshCor000008  #idWhl001SetdongIsn  "set'doing.intersection" → "Setdoing.intersection"  + McshEngl.Setdoing.intersection
+  McshCor000008  #idWhl001SetdongUnn  "set'doing.union" → "Setdoing.union"  + McshEngl.Setdoing.union
+
+=== SKIP (33) — left
+  McshTchInf000030  #idLRustalg  "algo of Rustlago": heading or name:: not found
+  McshLag000007  #idLHmnmsctn  "title-sentence-system of Hmmdlogo": heading or name:: not found
+  McshTchInf000014  #idLWasmstc  "algo-sentence of Wasmlago": heading or name:: not found
+  McshTchInf000018  #idEthmtnlag  "Ethrcontract'language.Mutan": heading or name:: not found
+  McshCor000002  #idMcsattNamcvnAttGnc  "Mcsnotn.attribute.generic": heading or name:: not found
+  McshCor000002  #idMcsattNamcvnAttstr  "Mcsnotn.attribute.specific": heading or name:: not found
+  McshCor000002  #idMcsattNamcvnAttWhl  "Mcsnotn.attribute.whole": heading or name:: not found
+  McshCor000002  #idMcsattNamcvnAttPrt  "Mcsnotn.attribute.part": heading or name:: not found
+  McshTchInf000006  #idLSrcdalg  "20_algorithm of Srcdlago": heading or name:: not found
+  McshTchInf000006  #idLBtcdalg  "algo of Btcdlago": heading or name:: not found
+  McshTchInf000006  #idLAsmbalg  "algo of Asmblago": heading or name:: not found
+  McshTchInf000006  #idLBinpalg  "algo of Binplago": heading or name:: not found
+  McshTchInf000006  #idLTripalg  "algo of Triplago": heading or name:: not found
+  McshTchInf000006  #idLMchnalg  "algo of Mchplago": heading or name:: not found
+  McshTchInf000008  #idLHitpwbpg  "20_web-app-doc of Hitplago": heading or name:: not found
+  McshLag000011  #idLEnglverb197  "EnglvmIndi.197_dare__write?": heading or name:: not found
+  McshLag000030  #idLTurkAlphotabrtra  "relation of runic-alphabet of old-Turkic-alphabet": x is "relation of runic-alphabet"
+  McshLag000030  #idLTurkverbmbrRprt  "Turkvbmb.reported__": heading or name:: not found
+  McshLag000043  #idLKoracharHgctH  "KoraConsChar.ㅎ-h-[h] -[t̚/ or ∅": heading or name:: not found
+  McshLag000043  #idLKoracharHgctS  "KoraConsChar.ㅅ-s-[s] -[t̚]": heading or name:: not found
+  McshStnlaw000003  #idLawEus005  "Eulaw.written__005": heading or name:: not found
+  McshStnlaw000003  #idLawEus001Fdg1958Feu  "EulawTreaty._on_the_functioning_of_the_EU": heading or name:: not found
+  McshStnlaw000003  #idLawEus001Fdg1993  "EulawTreaty._on_European_Union|Maastricht": heading or name:: not found
+  McshStnlaw000003  #idLawEus0011999  "EulawTreaty._of_Amsterdam": heading or name:: not found
+  McshStnlaw000003  #idLawEus0012003  "EulawTreaty._of_Nice": heading or name:: not found
+  McshStnlaw000003  #idLawEus0012009  "EulawTreaty._of_Lisbon": heading or name:: not found
+  McshLag000014  #idBook000004  "irBook..Bernal.Science_in_History_000004": heading or name:: not found
+  McshLag000014  #idBook000005  "irBook..Richardson.Fundamental_of_mathematics_000005": heading or name:: not found
+  McshLag000014  #idBook000003  "irBook..Meadows_et_al.The_Limits_to_Growth_000003": heading or name:: not found
+  McshLag000014  #idBook000009  "irBook..Jakobson.Τα_Μεγάλα_Ρέματα..._000009": heading or name:: not found
+  McshLag000014  #idBook000008  "irBook..Tikhomirov.The_psychology_of_thinking_000008": heading or name:: not found
+  McshLag000014  #idBook000006  "irBook..Getmanova.Logic_000006": heading or name:: not found
+  McshStn000023  #idScmopptIntc  "property.instance of scmo": x is "property.instance"
+

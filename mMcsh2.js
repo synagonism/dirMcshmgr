@@ -58,6 +58,11 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-13-0.2026-11-16: attributeChain walks EVERY === group (all generics), breadth-first, entity last',
+    'mMcsh2.js.27-12-0.2026-11-16: the-generic-chain stops at entity ALONE, NOT at entity.bodyNo!@.. (attributeChain, ...entity:generic)',
+    'mMcsh2.js.27-11-0.2026-11-16: attributeChain shows the-overridden inherited attributes as G\'NN_x → S\'NN_y',
+    'mMcsh2.js.27-10-0.2026-11-16: attributeChain: NO own, only numbered direct attributes, per level only the-numbers it adds (key = number: a-specific overrides the-name, not the-number)',
+    'mMcsh2.js.27-9-0.2026-11-16: dblclick on Mmn\'attributeChain inserts own + inherited attributes per generic up to entity (nearer wins)',
     'mMcsh2.js.27-8-0.2026-11-14: X.specific (and other relation) listing prefers the-canonical opposite-bearing name conceptNo(logo) over an-ordered/plain alias of the-same concept, so the-opposite stays visible',
     'mMcsh2.js.27-7-0.2026-11-14: X:generic listing keeps an-already-baked Y:generic!@ref line as-is (no re-resolve); generic-trees now carry baked refs',
     'mMcsh2.js.27-6-0.2026-11-14: X:generic listing links the-concept (!@<stem>#<id>, generic-tree anchor minus gntr; #idOverview when concept is the-file) and omits ...entity:generic',
@@ -1515,7 +1520,8 @@ let fContainersInsert = function () {
 
     // the-entity line ends the-chain
     function fIsEntity(sLineIn) {
-      return /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(sLineIn)
+      // 'entity' ALONE ('entity,', 'entity!@..', '...entity:generic'), NOT 'entity.bodyNo!@..'
+      return /^\*\s*(\.\.\.\s*)?entity(:generic)?(?=[,!\s]|$)/.test(sLineIn)
     }
     function fAddLine(sHtmlIn) {
       oSpan.appendChild(document.createElement('br'))
@@ -1577,7 +1583,8 @@ let fContainersInsert = function () {
    *   '* <Mmn><mark><child>!@file#id,' lines (page-only). Triggers:
    *   '<Mmn>.specific' (.), "<Mmn>'attribute" ('), '<Mmn>:generic' (:),
    *   '<Mmn>/part' (/), '<Mmn>//whole' (//), '<Mmn>;child' (;), '<Mmn>;;parent' (;;)
-   *   find from the-English name-index. Attribute-opposites (open/openNo) that point
+   *   find from the-English name-index. "<Mmn>'attributeChain" lists the-own attributes
+   *   and, per generic up to entity, the-inherited ones (fAttrChain). Attribute-opposites (open/openNo) that point
    *   the-same concept are-both kept.
    *   A-second double-click on the-line removes the-inserted list.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
@@ -1594,6 +1601,8 @@ let fContainersInsert = function () {
       sTxt = oNode.textContent,
       fEscMark = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
       aoRel = [
+        // BEFORE 'attribute': '<Mmn>'attributeChain' lists own + inherited attributes
+        { sWord: 'attributeChain', sMark: "'" },
         { sWord: 'specific', sMark: '.' },
         { sWord: 'attribute', sMark: "'", bHoldOpp: true }, // opposites (open/openNo) kept
         { sWord: 'generic', sMark: ':' },
@@ -1633,7 +1642,8 @@ let fContainersInsert = function () {
     // ONE level only. sWordIn is the-trigger keyword on the-line (such as 'specific'),
     // skipped in results. bHoldOppIn: keep a-positive and a-'No'-negated value per
     // target-concept, so an X/XNo pair (open/openNo) survives while same-concept aliases collapse.
-    async function fSpecNamidx(sMmnIn, sMarkIn, sWordIn, bHoldOppIn) {
+    // bKeepNumIn: keep the-leading NN_ of the-child (attributeChain shows the-numbers)
+    async function fSpecNamidx(sMmnIn, sMarkIn, sWordIn, bHoldOppIn, bKeepNumIn) {
       const
         fEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'),
         sPrefix = sMmnIn + sMarkIn,
@@ -1660,7 +1670,7 @@ let fContainersInsert = function () {
           sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
           sRef = sStem + sHash
         // full relation-name '<Mmn><mark><child>' (only a-leading NNN_ ordering-number removed)
-        const sClean = sPrefix + sChild.replace(/^\d+_/, '')
+        const sClean = sPrefix + (bKeepNumIn ? sChild : sChild.replace(/^\d+_/, ''))
         // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite
         // 'logo' written 'conceptNo' then '(logo)'; keep that opposite visible in the-list
         const bOpp = /\([^)]+\)/.test(sChild)
@@ -1669,7 +1679,10 @@ let fContainersInsert = function () {
         // same-concept aliases prefer the-canonical opposite-bearing name over an-ordered/plain one
         const sKey = bHoldOppIn ? (sRef + (sClean.endsWith('No') ? '#No' : '#')) : sRef
         const oPrev = oByKey.get(sKey)
-        if (!oPrev || (bOpp && !oPrev.bOpp)) oByKey.set(sKey, { sInformal: sClean, sRef: sRef, bOpp: bOpp })
+        // with bKeepNumIn, among same-concept aliases the-numbered one (X'03_y) beats the-plain one (X'y)
+        const bNumBetter = bKeepNumIn && oPrev && bOpp === oPrev.bOpp &&
+          /^\d+_/.test(sChild) && !/^\d+_/.test(oPrev.sInformal.slice(sPrefix.length))
+        if (!oPrev || (bOpp && !oPrev.bOpp) || bNumBetter) oByKey.set(sKey, { sInformal: sClean, sRef: sRef, bOpp: bOpp })
       })
       return [...oByKey.values()].map(oV => ({ sInformal: oV.sInformal, sRef: oV.sRef }))
     }
@@ -1706,8 +1719,122 @@ let fContainersInsert = function () {
       while (aOut[aOut.length - 1] === '===') aOut.pop()
       return aOut
     }
+    /**
+     * created: {2026-11-16}
+     * DOING: the-lines of '<Mmn>'attributeChain': per generic up ALL its generic-chains (every
+     *   '===' group of each generic-tree, breadth-first, entity last), the-NUMBERED direct
+     *   attributes it ADDS.
+     *   - the-own attributes are-not shown (they are on the-page), but they override;
+     *   - the-key of an-attribute is its NUMBER (NN_, not the-id-like attNNN_), NOT its name: a-specific
+     *     can override the-name but not the-number (system'01_node overrides whole'01_part);
+     *   - nearer wins: a-number already given by the-concept or a-nearer generic is-not added
+     *     again, but shown as an-override '* G'NN_x!@ref → S'NN_y,' (the-renaming, or a-numbering
+     *     that does-not really match, is visible);
+     *   - X'y.z (a-specific of an-attribute) and unnumbered attributes are-not listed.
+     */
+    async function fAttrChain(sMmnIn) {
+      const
+        aoLevel = [],          // { sHead, aoAttr: [{ sInformal, sRef, nNum, oBy }] }
+        oMapNum = new Map()    // nNum -> the-attribute of the-concept or a-nearer generic that gives it
+      // the-numbered direct attributes of a-name, sorted by number
+      async function fAttrOf(sNameIn) {
+        const sPrefix = sNameIn + "'"
+        return (await fSpecNamidx(sNameIn, "'", 'attribute', true, true))
+          .map(function (oA) {
+            // the-number NN_; NOT attNNN_ (entity'att001_id): that mirrors the-id, it is-not an-order
+            const sChild = oA.sInformal.slice(sPrefix.length), aN = sChild.match(/^(\d+)_/)
+            return { sInformal: oA.sInformal, sRef: oA.sRef, sChild: sChild, nNum: aN ? Number(aN[1]) : NaN }
+          })
+          // X'y.z is a-specific of the-attribute X'y, NOT a-direct attribute; only numbered ones inherit
+          .filter(oA => oA.sChild.indexOf('.') < 0 && !isNaN(oA.nNum))
+          .sort((oA, oB) => oA.nNum - oB.nNum || oA.sInformal.localeCompare(oB.sInformal))
+      }
+      // a-level shows the-numbers it adds, and its attributes a-nearer level overrides (oBy);
+      //   the-numbers it adds are then given for the-farther levels
+      function fAddLevel(sHeadIn, aoAttrIn) {
+        const aoKeep = [], aoAdd = []
+        aoAttrIn.forEach(function (oA) {
+          const oBy = oMapNum.get(oA.nNum)
+          if (!oBy) { aoAdd.push(oA); aoKeep.push(oA); return }
+          // the-same concept under another name is-not an-override
+          if (oBy.sRef !== oA.sRef) aoKeep.push(Object.assign({}, oA, { oBy: oBy }))
+        })
+        aoAdd.forEach(oA => { if (!oMapNum.has(oA.nNum)) oMapNum.set(oA.nNum, oA) })
+        if (sHeadIn) aoLevel.push({ sHead: sHeadIn, aoAttr: aoKeep })
+      }
+
+      // the-own numbers override, NOT shown
+      fAddLevel('', await fAttrOf(sMmnIn))
+      // the-generic-chain, as fGntrChainInsert walks it
+      const
+        sUrlName = await fNameUrl(sMmnIn + ':generic'),
+        oStart = sUrlName ? await fGntrOfUrl(sUrlName) : null,
+        aTail = []           // a-'??' line that ends the-chain
+      // the-first generic line of EVERY '===' group of a-generic-tree (a-concept with several
+      //   generics has one group per generic); a-labeled '=== sibling..:' group ends them
+      function fGroups(oGntrIn) {
+        const aL = fLines(oGntrIn).map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim()), aOut = []
+        let bInGroup = false
+        for (const sL of aL) {
+          if (sL.startsWith('===')) { if (sL !== '===') break; bInGroup = true; continue }
+          if (bInGroup && sL.startsWith('*')) { aOut.push(sL); bInGroup = false }
+        }
+        return aOut
+      }
+      // 'entity' ALONE ('entity,', 'entity!@..', '...entity:generic'), NOT 'entity.bodyNo!@..'
+      const fIsEnt = sL => /^\*\s*(\.\.\.\s*)?entity(:generic)?(?=[,!\s]|$)/.test(sL)
+      // the-level of a-reached generic-tree: its name is its first line '* McshEngl.X:generic,'
+      async function fAddGntr(oGIn) {
+        const aN = (fLines(oGIn.oGntr).find(s => /McshEngl\.\S+:generic/.test(s)) || '').match(/McshEngl\.(\S+):generic/)
+        if (aN) {
+          fAddLevel('=== inherited from <a class="clsPreview" href="' + oGIn.sUrl + '">' + aN[1] + ':generic</a>',
+            await fAttrOf(aN[1]))
+        }
+      }
+
+      if (!oStart) aTail.push('* ?? (no generic-tree for ' + sMmnIn + ')')
+      else {
+        // breadth-first over ALL the-generics (every '===' group), so nearer levels come first and
+        //   win the-numbers; a-generic reached twice is shown once; entity is shown LAST
+        const oSetSeen = new Set([oStart.sUrl])
+        let
+          aoCurrent = fGroups(oStart.oGntr).map(sL => ({ sLine: sL, sUrlBase: oStart.sUrl })),
+          bEntity = false
+        for (let n = 0; n < 30 && aoCurrent.length; n++) {
+          const aoNext = []
+          for (const oItem of aoCurrent) {
+            if (fIsEnt(oItem.sLine)) { bEntity = true; continue }
+            const oG = await fGntrOfLine(oItem.sLine, oItem.sUrlBase)
+            if (!oG) { aTail.push('* ?? (no generic-tree for ' + oItem.sLine.replace(/^\*\s*/, '').replace(/,\s*$/, '') + ')'); continue }
+            if (oSetSeen.has(oG.sUrl)) continue
+            oSetSeen.add(oG.sUrl)
+            await fAddGntr(oG)
+            fGroups(oG.oGntr).forEach(sL => aoNext.push({ sLine: sL, sUrlBase: oG.sUrl }))
+          }
+          aoCurrent = aoNext
+        }
+        if (bEntity) {
+          const sUrlEnt = await fNameUrl('entity:generic')
+          const oEnt = sUrlEnt ? await fGntrOfUrl(sUrlEnt) : null
+          if (oEnt && !oSetSeen.has(oEnt.sUrl)) await fAddGntr(oEnt)
+        }
+      }
+
+      const aOut = []
+      aoLevel.forEach(function (oL) {
+        aOut.push(oL.sHead)
+        if (oL.aoAttr.length === 0) aOut.push('* (nothing added)')
+        oL.aoAttr.forEach(function (oA) {
+          aOut.push('* ' + oA.sInformal + '!@' + oA.sRef + (oA.oBy ? ' → ' + oA.oBy.sInformal : '') + ',')
+        })
+      })
+      return aOut.concat(aTail)
+    }
+
+    if (sWord === 'attributeChain') aGeneric = await fAttrChain(sMmn)
     if (sWord === 'generic' && !bGeneric) aGeneric = await fGenericOwn(oP)
-    const aoSpec = (bGeneric || sWord === 'generic') ? [] : await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
+    const aoSpec = (bGeneric || sWord === 'generic' || sWord === 'attributeChain') ? [] :
+      await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
     // build the-findings-list and insert it right under THIS trigger-line, below a-'---'
     const oSpan = document.createElement('span')

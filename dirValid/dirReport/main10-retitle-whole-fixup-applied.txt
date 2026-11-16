@@ -1,0 +1,69 @@
+MvrwMain10 fix-up {2026-11-16}: multi-dot headings of the retitle round 1
+
+=== FIX (23) — the whole's dotted name replaced as one piece
+  McshLag000007  #idLHmnmsmsvrbattTmuc  "VerbCptAttTime.time.utterance" → "VerbCptAttTime.utterance"   (old "Hmmdsmvbatt.time.utterance")
+  McshLag000007  #idLHmnmsmsvrbattTmRc  "VerbCptAttTime.time.reference" → "VerbCptAttTime.reference"   (old "Hmmdsmvbatt.time.reference")
+  McshLag000007  #idLHmnmsmsvrbattTmSn  "VerbCptAttTime.time.situation" → "VerbCptAttTime.situation"   (old "Hmmdsmvbatt.time.situation")
+  McshLag000011  #idLEnglsmsondombrMain6  "EnglsmagmbMain.main.6_dftNo_plu" → "EnglsmagmbMain.6_dftNo_plu"   (old "Englsmagmb.main.6_dftNo_plu")
+  McshLag000011  #idLEnglsmsondombrMain5  "EnglsmagmbMain.main.5_dftNo_sin" → "EnglsmagmbMain.5_dftNo_sin"   (old "Englsmagmb.main.5_dftNo_sin")
+  McshLag000011  #idLEnglsmsondombrMain4  "EnglsmagmbMain.main.4_dft_plu" → "EnglsmagmbMain.4_dft_plu"   (old "Englsmagmb.main.4_dft_plu")
+  McshLag000011  #idLEnglsmsondombrMain3  "EnglsmagmbMain.main.3_dft_sin" → "EnglsmagmbMain.3_dft_sin"   (old "Englsmagmb.main.3_dft_sin")
+  McshLag000011  #idLEnglsmsondombrMain2  "EnglsmagmbMain.main.2_gnc_plu" → "EnglsmagmbMain.2_gnc_plu"   (old "Englsmagmb.main.2_gnc_plu")
+  McshLag000011  #idLEnglsmsondombrMain1  "EnglsmagmbMain.main.1_gnc_sin" → "EnglsmagmbMain.1_gnc_sin"   (old "Englsmagmb.main.1_gnc_sin")
+  McshLag000011  #idLEnglondombrOrdRln  "ArgumebrRltnEngl.relation.specialNo" → "ArgumebrRltnEngl.specialNo"   (old "Englagmb.relation.specialNo")
+  McshCor000002  #idMcsattNamcvnAttPrnt  "McsnotnAttr.attribute.parent" → "McsnotnAttr.parent"   (old "Mcsnotn.attribute.parent")
+  McshCor000002  #idMcsattNamcvnAttChld  "McsnotnAttr.attribute.child" → "McsnotnAttr.child"   (old "Mcsnotn.attribute.child")
+  McshHlth000005  #idMsclHmn076  "musclePharyngeal_constrictor.pharyngeal_constrictor.superior_076" → "musclePharyngeal_constrictor.superior_076"   (old "OganMuscle.pharyngeal_constrictor.superior_076")
+  McshHlth000005  #idMsclHmn075  "musclePharyngeal_constrictor.pharyngeal_constrictor.middle_075" → "musclePharyngeal_constrictor.middle_075"   (old "OganMuscle.pharyngeal_constrictor.middle_075")
+  McshHlth000005  #idMsclHmn074  "musclePharyngeal_constrictor.pharyngeal_constrictor.inferior_074" → "musclePharyngeal_constrictor.inferior_074"   (old "OganMuscle.pharyngeal_constrictor.inferior_074")
+  McshTchInf000015  #idAlgntsvcSplchn  "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING" → "AgntsrvcSectorPrdnTrade.SUPPLY_CHAIN_MANAGING"   (old "Agntsrvc.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING")
+  McshTchInf000015  #idAlgntsvcInvcmng  "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.INVOICE_MANAGING" → "AgntsrvcSectorPrdnTrade.INVOICE_MANAGING"   (old "Agntsrvc.sectorPrdn.trade.INVOICE_MANAGING")
+  McshTchInf000015  #idAlgntsvcAstexc  "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.ASSET_EXCHANGE" → "AgntsrvcSectorPrdnTrade.ASSET_EXCHANGE"   (old "Agntsrvc.sectorPrdn.trade.ASSET_EXCHANGE")
+  McshLag000026  #idLEllnverbmbrInstFutu  "EllnvmInstant.instant.future" → "EllnvmInstant.future"   (old "Ellnvbmb.instant.future")
+  McshLag000026  #idLEllnverbmbrInstPast  "EllnvmInstant.instant.past" → "EllnvmInstant.past"   (old "Ellnvbmb.instant.past")
+  McshLag000026  #idLEllnverbmbrProgFutu  "EllnvmContinuous.continuous.future" → "EllnvmContinuous.future"   (old "Ellnvbmb.continuous.future")
+  McshLag000026  #idLEllnverbmbrProgPast  "EllnvmContinuous.continuous.past" → "EllnvmContinuous.past"   (old "Ellnvbmb.continuous.past")
+  McshLag000026  #idLEllnverbmbrProgPres  "EllnvmContinuous.continuous.present" → "EllnvmContinuous.present"   (old "Ellnvbmb.continuous.present")
+
+=== BACK (39) — no name of the whole starts the old heading: old heading restored, added name removed
+  McshLag000007  #idLHmnmsmsvrbmbr081  "VerbSmsatom.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3" → back to "Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3", removed McshEngl.VerbSmsatom.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3
+  McshTchInf000014  #idLWasmstcStoreI64  "WasmcmndStore.i64.store" → back to "Wasmcmnd.i64.store", removed McshEngl.WasmcmndStore.i64.store
+  McshTchInf000014  #idLWasmstcStoreI6432  "WasmcmndStore.i64.store32" → back to "Wasmcmnd.i64.store32", removed McshEngl.WasmcmndStore.i64.store32
+  McshTchInf000014  #idLWasmstcStoreI6416  "WasmcmndStore.i64.store16" → back to "Wasmcmnd.i64.store16", removed McshEngl.WasmcmndStore.i64.store16
+  McshTchInf000014  #idLWasmstcStoreI648  "WasmcmndStore.i64.store8" → back to "Wasmcmnd.i64.store8", removed McshEngl.WasmcmndStore.i64.store8
+  McshTchInf000014  #idLWasmstcStoreI32  "WasmcmndStore.i32.store" → back to "Wasmcmnd.i32.store", removed McshEngl.WasmcmndStore.i32.store
+  McshTchInf000014  #idLWasmstcStoreI3216  "WasmcmndStore.i32.store16" → back to "Wasmcmnd.i32.store16", removed McshEngl.WasmcmndStore.i32.store16
+  McshTchInf000014  #idLWasmstcStoreI328  "WasmcmndStore.i32.store8" → back to "Wasmcmnd.i32.store8", removed McshEngl.WasmcmndStore.i32.store8
+  McshTchInf000014  #idLWasmstcStoreF64  "WasmcmndStore.f64.store" → back to "Wasmcmnd.f64.store", removed McshEngl.WasmcmndStore.f64.store
+  McshTchInf000014  #idLWasmstcStoreF32  "WasmcmndStore.f32.store" → back to "Wasmcmnd.f32.store", removed McshEngl.WasmcmndStore.f32.store
+  McshTchInf000014  #idLWasmstcLoadI64ld  "WasmcmndLoad.i64.load" → back to "Wasmcmnd.i64.load", removed McshEngl.WasmcmndLoad.i64.load
+  McshTchInf000014  #idLWasmstcLoadI6432u  "WasmcmndLoad.i64.load32_u" → back to "Wasmcmnd.i64.load32_u", removed McshEngl.WasmcmndLoad.i64.load32_u
+  McshTchInf000014  #idLWasmstcLoadI6432s  "WasmcmndLoad.i64.load32_s" → back to "Wasmcmnd.i64.load32_s", removed McshEngl.WasmcmndLoad.i64.load32_s
+  McshTchInf000014  #idLWasmstcLoadI6416u  "WasmcmndLoad.i64.load16_u" → back to "Wasmcmnd.i64.load16_u", removed McshEngl.WasmcmndLoad.i64.load16_u
+  McshTchInf000014  #idLWasmstcLoadI6416s  "WasmcmndLoad.i64.load16_s" → back to "Wasmcmnd.i64.load16_s", removed McshEngl.WasmcmndLoad.i64.load16_s
+  McshTchInf000014  #idLWasmstcLoadI648u  "WasmcmndLoad.i64.load8_u" → back to "Wasmcmnd.i64.load8_u", removed McshEngl.WasmcmndLoad.i64.load8_u
+  McshTchInf000014  #idLWasmstcLoadI648s  "WasmcmndLoad.i64.load8_s" → back to "Wasmcmnd.i64.load8_s", removed McshEngl.WasmcmndLoad.i64.load8_s
+  McshTchInf000014  #idLWasmstcLoadI32ld  "WasmcmndLoad.i32.load" → back to "Wasmcmnd.i32.load", removed McshEngl.WasmcmndLoad.i32.load
+  McshTchInf000014  #idLWasmstcLoadI3216u  "WasmcmndLoad.i32.load16_u" → back to "Wasmcmnd.i32.load16_u", removed McshEngl.WasmcmndLoad.i32.load16_u
+  McshTchInf000014  #idLWasmstcLoadI3216s  "WasmcmndLoad.i32.load16_s" → back to "Wasmcmnd.i32.load16_s", removed McshEngl.WasmcmndLoad.i32.load16_s
+  McshTchInf000014  #idLWasmstcLoadI328u  "WasmcmndLoad.i32.load8_u" → back to "Wasmcmnd.i32.load8_u", removed McshEngl.WasmcmndLoad.i32.load8_u
+  McshTchInf000014  #idLWasmstcLoadI32  "WasmcmndLoad.i32.load8_s" → back to "Wasmcmnd.i32.load8_s", removed McshEngl.WasmcmndLoad.i32.load8_s
+  McshTchInf000014  #idLWasmstcLoadF64  "WasmcmndLoad.f64.load" → back to "Wasmcmnd.f64.load", removed McshEngl.WasmcmndLoad.f64.load
+  McshTchInf000014  #idLWasmstcLoadF32  "WasmcmndLoad.f32.load" → back to "Wasmcmnd.f32.load", removed McshEngl.WasmcmndLoad.f32.load
+  McshTchInf000014  #idLWasmstcI32mul  "WasmcmndFlowNo.i32.mul" → back to "Wasmcmnd.i32.mul", removed McshEngl.WasmcmndFlowNo.i32.mul
+  McshTchInf000014  #idLWasmstcI32cnst  "WasmcmndFlowNo.i32.const" → back to "Wasmcmnd.i32.const", removed McshEngl.WasmcmndFlowNo.i32.const
+  McshTchInf000014  #idLWasmstcI32add  "WasmcmndFlowNo.i32.add" → back to "Wasmcmnd.i32.add", removed McshEngl.WasmcmndFlowNo.i32.add
+  McshCor000010  #idQntRlvAlmst  "RltnQuantLess.less.almost" → back to "quantoRela.less.almost", removed McshEngl.RltnQuantLess.less.almost
+  McshHlth000013  #idFoodHmn019  "drinkAlchoholic.alcoholic.tsipuro" → back to "drink.alcoholic.tsipuro", removed McshEngl.drinkAlchoholic.alcoholic.tsipuro
+  McshHlth000013  #idFoodHmn023  "drinkAlchoholic.alcoholic.beer" → back to "drink.alcoholic.beer", removed McshEngl.drinkAlchoholic.alcoholic.beer
+  McshHlth000013  #idFoodHmn229  "drinkAlchoholic.alcoholic.baijiu" → back to "drink.alcoholic.baijiu", removed McshEngl.drinkAlchoholic.alcoholic.baijiu
+  McshTchInf000020  #idChbctpExci  "ChrntechscInterface.ExchangeInterface.sol" → back to "Chrntechsc.ExchangeInterface.sol", removed McshEngl.ChrntechscInterface.ExchangeInterface.sol
+  McshTchInf000020  #idChbctpErc20i  "ChrntechscInterface.ERC20Interface.sol" → back to "Chrntechsc.ERC20Interface.sol", removed McshEngl.ChrntechscInterface.ERC20Interface.sol
+  McshTchInf000020  #idChbctpChbpi  "ChrntechscInterface.ChronoBankPlatformInterface.sol" → back to "Chrntechsc.ChronoBankPlatformInterface.sol", removed McshEngl.ChrntechscInterface.ChronoBankPlatformInterface.sol
+  McshTchInf000020  #idChbctpChbapi  "ChrntechscInterface.ChronoBankAssetProxyInterface.sol" → back to "Chrntechsc.ChronoBankAssetProxyInterface.sol", removed McshEngl.ChrntechscInterface.ChronoBankAssetProxyInterface.sol
+  McshTchInf000020  #idChbctpChbai  "ChrntechscInterface.ChronoBankAssetInterface.sol" → back to "Chrntechsc.ChronoBankAssetInterface.sol", removed McshEngl.ChrntechscInterface.ChronoBankAssetInterface.sol
+  McshTchInf000020  #idChbctpCnfgbl  "ChrntechscOwned.Configurable.sol" → back to "Chrntechsc.Configurable.sol", removed McshEngl.ChrntechscOwned.Configurable.sol
+  McshTchInf000020  #idChbctpTime  "ChrntechscChronoBankAsset.TIME.sol" → back to "Chrntechsc.TIME.sol", removed McshEngl.ChrntechscChronoBankAsset.TIME.sol
+  McshTchInf000020  #idChbctpAstWfe  "ChrntechscChronoBankAsset.ChronoBankAssetWithFee.sol" → back to "Chrntechsc.ChronoBankAssetWithFee.sol", removed McshEngl.ChrntechscChronoBankAsset.ChronoBankAssetWithFee.sol
+
+=== SKIP (0)

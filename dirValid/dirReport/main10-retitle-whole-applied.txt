@@ -1,0 +1,788 @@
+MvrwMain10 retitle to the direct whole {2026-11-16}: APPLIED
+
+The heading names an ancestor (grandparent or higher) of the section; it is set to the DIRECT whole M: "x of M" + name M'x, or "M.x" + name M.x.
+
+=== OF (270) — "x of <ancestor>" → "x of M"
+  McshTchInf000030  #idLRustalgmchnstk  "stack of machine-memory of Rustalgo" → "stack of machine-memory of Rustlago_machine"  + McshEngl.Rustlago_machine'stack_of_machine_memory
+  McshTchInf000030  #idLRustalgmchnhp  "heap of machine-memory of Rustalgo" → "heap of machine-memory of Rustlago_machine"  + McshEngl.Rustlago_machine'heap_of_machine_memory
+  McshLag000018  #idLZhonSpchphtrRmzn  "romanization of Zhon_Spchlago" → "romanization of Zhon_Spchlago_phonetic_transcription"  + McshEngl.Zhon_Spchlago_phonetic_transcription'romanization
+  McshHlth000002  #idOgnHmn026urnp  "urine-production of OganKidney" → "urine-production of OganKidneydoing"  + McshEngl.OganKidneydoing'urine_production
+  McshHlth000002  #idHrtHmnatt033  "cardiac-action-potential of OganHeart" → "cardiac-action-potential of OganHeartdoing"  + McshEngl.OganHeartdoing'cardiac_action_potential
+  McshHlth000002  #idHrtHmnatt008  "beat of OganHeart" → "beat of OganHeart_cardiac_cycle"  + McshEngl.OganHeart_cardiac_cycle'beat
+  McshHlth000002  #idHrtHmnatt027  "systole of OganHeart" → "systole of OganHeart_cardiac_cycle"  + McshEngl.OganHeart_cardiac_cycle'systole
+  McshHlth000002  #idHrtHmnatt026  "diastole of OganHeart" → "diastole of OganHeart_cardiac_cycle"  + McshEngl.OganHeart_cardiac_cycle'diastole
+  McshHlth000002  #idHrtHmnatt018  "cardiac-cycle of OganHeart" → "cardiac-cycle of OganHeartdoing"  + McshEngl.OganHeartdoing'cardiac_cycle
+  McshHlth000002  #idBdyHmnatt015att002  "safety of Hbnutrient" → "safety of Hbnutri_recommendation"  + McshEngl.Hbnutri_recommendation'safety
+  McshHlth000002  #idBdyHmnatt015att003att009  "recomended-dietary-allowances-RDA-1968-system of Hbnutrient" → "recomended-dietary-allowances-RDA-1968-system of Hbnutri_recommendation"  + McshEngl.Hbnutri_recommendation'recomended_dietary_allowances_RDA_1968_system
+  McshHlth000002  #idBdyHmnatt015att003att006  "dietary-reference-intake-DRI-1997-system of Hbnutrient" → "dietary-reference-intake-DRI-1997-system of Hbnutri_recommendation"  + McshEngl.Hbnutri_recommendation'dietary_reference_intake_DRI_1997_system
+  McshHlth000002  #idGlndHmnatt005  "secretion-process of OganGland" → "secretion-process of OganGlanddoing"  + McshEngl.OganGlanddoing'secretion_process
+  McshHlth000002  #idOgnHmnatt003  "managing of organ" → "managing of Organdoing"  + McshEngl.Organdoing'managing
+  McshHlth000002  #idOgnHmnatt002  "11_transplant of organ" → "11_transplant of Organdoing"  + McshEngl.Organdoing'transplant
+  McshHlth000002  #idOgnHmnatt001  "10_procedure of organ" → "10_procedure of Organdoing"  + McshEngl.Organdoing'procedure
+  McshHlth000002  #idOgnHmnatt011  "09_function of organ" → "09_function of Organdoing"  + McshEngl.Organdoing'function
+  McshHlth000002  #idSysOgnHmnftg  "functing of Ognssyst" → "functing of SystOgansdoing"  + McshEngl.SystOgansdoing'functing
+  McshTchInf000012  #idLJsndmwombr  "global-member of JsndAPI" → "global-member of Jsndmwo"  + McshEngl.Jsndmwo'global_member
+  McshTchInf000012  #idLJsndnode_modules  "node_modules-directory of Jsndmc" → "node_modules-directory of Jsndmcrepo"  + McshEngl.Jsndmcrepo'node_modules_directory
+  McshStn000020  #idEuzzadmninfsysccsr  "conference-of-stakeholders of Euzzinfsys" → "conference-of-stakeholders of Euzzinfsysdoing"  + McshEngl.Euzzinfsysdoing'conference_of_stakeholders
+  McshStn000020  #idEuzzadmninfsysrgr  "register of Euzzinfsys" → "register of Euzzinfsysinfrsc"  + McshEngl.Euzzinfsysinfrsc'register
+  McshStn000020  #idEuzzadmninfsysmrdt  "microdata of Euzzinfsys" → "microdata of Euzzinfsysinfrsc"  + McshEngl.Euzzinfsysinfrsc'microdata
+  McshStn000020  #Euzzadmninfsysgeoinf  "geographical-info of Euzzinfsys" → "geographical-info of Euzzinfsysinfrsc"  + McshEngl.Euzzinfsysinfrsc'geographical_info
+  McshStn000020  #Euzzadmninfsysstainf  "statistical-info of Euzzinfsys" → "statistical-info of Euzzinfsysinfrsc"  + McshEngl.Euzzinfsysinfrsc'statistical_info
+  McshStn000020  #Euzzadmninfsysssed  "statistics-explained of Euzzinfsys" → "statistics-explained of Euzzinfsysinfrsc"  + McshEngl.Euzzinfsysinfrsc'statistics_explained
+  McshStn000020  #idEuoEssgoal  "goal of EuoEss" → "goal of EuoEssdoing"  + McshEngl.EuoEssdoing'goal
+  McshStn000020  #idEubdgtatt007clg  "ceilings of output of Euzzbdgt" → "ceilings of output of Euzzbdgt_output"  + McshEngl.Euzzbdgt_output'ceilings_of_output
+  McshStn000020  #idEuoComcmnrirsc  "info-resource of EuwCommissioner of EuoCom" → "info-resource of EuwCommissioner of EuwCommissioner"  + McshEngl.EuwCommissioner'info_resource_of_EuwCommissioner
+  McshStn000020  #idEuoComcmnrcpsn  "compensation of EuwCommissioner of EuoCom" → "compensation of EuwCommissioner of EuwCommissioner"  + McshEngl.EuwCommissioner'compensation_of_EuwCommissioner
+  McshStn000020  #idEueconNace  "NACE of Euecon" → "NACE of Eueconinfrsc"  + McshEngl.Eueconinfrsc'NACE
+  McshTchInf000024  #idSteemitcrtr  "curator of Steemit" → "curator of Steemit_human"  + McshEngl.Steemit_human'curator
+  McshTchInf000024  #idSteemitathr  "author of Steemit" → "author of Steemit_human"  + McshEngl.Steemit_human'author
+  McshCor000002  #idMcsmAajaskg  "asking of McsmgrAAj" → "asking of McsmgrAAjdoingNavigating"  + McshEngl.McsmgrAAjdoingNavigating'asking
+  McshCor000002  #idMcsmAajschg  "searching of McsmgrAAj" → "searching of McsmgrAAjdoingNavigating"  + McshEngl.McsmgrAAjdoingNavigating'searching
+  McshCor000002  #idMcsmAajuric  "user-interface of McsmgrAAj" → "user-interface of McsmgrAAjdoingNavigating"  + McshEngl.McsmgrAAjdoingNavigating'user_interface
+  McshCor000002  #idMcsmAajbrsr  "browser of McsmgrAAj" → "browser of McsmgrAAjsrtr"  + McshEngl.McsmgrAAjsrtr'browser
+  McshCor000002  #idMcsmAajedtr  "editor of McsmgrAAj" → "editor of McsmgrAAjsrtr"  + McshEngl.McsmgrAAjsrtr'editor
+  McshCor000002  #idMcsmAajviwr  "viewer of McsmgrAAj" → "viewer of McsmgrAAjsrtr"  + McshEngl.McsmgrAAjsrtr'viewer
+  McshCor000002  #idMcsmatt023  "evoluting-managing of Mcsmgr" → "evoluting-managing of Mcsmgrdoing"  + McshEngl.Mcsmgrdoing'evoluting_managing
+  McshCor000002  #idMcsmatt014  "computing of Mcsmgr" → "computing of Mcsmgrdoing"  + McshEngl.Mcsmgrdoing'computing
+  McshCor000002  #idMcsmatt008  "questioning of Mcsmgr" → "questioning of Mcsmgr_retrieving_base"  + McshEngl.Mcsmgr_retrieving_base'questioning
+  McshCor000002  #idMcsmatt007  "translating of Mcsmgr" → "translating of Mcsmgr_retrieving_base"  + McshEngl.Mcsmgr_retrieving_base'translating
+  McshCor000002  #idMcsmatt012  "navigating of Mcsmgr" → "navigating of Mcsmgr_retrieving_base"  + McshEngl.Mcsmgr_retrieving_base'navigating
+  McshCor000002  #idMcsmatt011  "presenting of Mcsmgr" → "presenting of Mcsmgr_retrieving_base"  + McshEngl.Mcsmgr_retrieving_base'presenting
+  McshCor000002  #idMcsmatt002  "retrieving-base of Mcsmgr" → "retrieving-base of Mcsmgrdoing"  + McshEngl.Mcsmgrdoing'retrieving_base
+  McshCor000002  #idMcsmatt010  "name-managing of Mcsmgr" → "name-managing of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'name_managing
+  McshCor000002  #idMcsmatt009  "validating of Mcsmgr" → "validating of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'validating
+  McshCor000002  #idMcsmatt005  "whole-part-managing of Mcsmgr" → "whole-part-managing of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'whole_part_managing
+  McshCor000002  #idMcsmatt004  "generic-specific-managing of Mcsmgr" → "generic-specific-managing of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'generic_specific_managing
+  McshCor000002  #idMcsmatt003  "formating of Mcsmgr" → "formating of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'formating
+  McshCor000002  #idMcsmatt026  "changing-info of Mcsmgr" → "changing-info of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'changing_info
+  McshCor000002  #idMcsmatt024  "acquiring-base of Mcsmgr" → "acquiring-base of Mcsmgr_building_base"  + McshEngl.Mcsmgr_building_base'acquiring_base
+  McshCor000002  #idMcsmatt001  "building-base of Mcsmgr" → "building-base of Mcsmgrdoing"  + McshEngl.Mcsmgrdoing'building_base
+  McshTchInf000010  #idLJsgnprmspdgN  "pendingNo of Jspromise" → "pendingNo of Jspromisedoing"  + McshEngl.Jspromisedoing'pendingNo
+  McshTchInf000010  #idLJsgnprmspdg  "pending of Jspromise" → "pending of Jspromisedoing"  + McshEngl.Jspromisedoing'pending
+  McshLag000006  #idCharUcdcaseCsd  "Cased-property of charUncd" → "Cased-property of Uncdchar_csproperty"  + McshEngl.Uncdchar_csproperty'Cased_property
+  McshLag000006  #idCharUcdcaseTtl  "Titlecase-property of charUncd" → "Titlecase-property of Uncdchar_csproperty"  + McshEngl.Uncdchar_csproperty'Titlecase_property
+  McshLag000006  #idCharUcdcaseUpr  "Uppercase-property of charUncd" → "Uppercase-property of Uncdchar_csproperty"  + McshEngl.Uncdchar_csproperty'Uppercase_property
+  McshLag000006  #idCharUcdcaseLwr  "Lowercase-property of charUncd" → "Lowercase-property of Uncdchar_csproperty"  + McshEngl.Uncdchar_csproperty'Lowercase_property
+  McshTchInf000039  #idLWlfmoptnusg  "usage of Wlfmlpn" → "usage of Wlfmlpndoing"  + McshEngl.Wlfmlpndoing'usage
+  McshTchInf000039  #idLWlfmofnclng  "calling of Wlfmlfn" → "calling of Wlfmlfndoing"  + McshEngl.Wlfmlfndoing'calling
+  McshTchInf000039  #idLWlfmofncrtg  "creating of Wlfmlfn" → "creating of Wlfmlfndoing"  + McshEngl.Wlfmlfndoing'creating
+  McshTchInf000039  #idLWlfmoexntstg  "testing of Wlfmlen" → "testing of Wlfmlendoing"  + McshEngl.Wlfmlendoing'testing
+  McshTchInf000039  #idLWlfmoexnusg  "usage of Wlfmlen" → "usage of Wlfmlendoing"  + McshEngl.Wlfmlendoing'usage
+  McshTchInf000039  #idLKnlg010otptalgn  "alignment of kbOnto" → "alignment of KbOntodoing"  + McshEngl.KbOntodoing'alignment
+  McshTchInf000039  #idLKnlg010otptcrtg  "creation of kbOnto" → "creation of KbOntodoing"  + McshEngl.KbOntodoing'creation
+  McshTchInf000039  #idLCyclkgbs  "knowledge-base of Cycllago" → "knowledge-base of Cyclcode"  + McshEngl.Cyclcode'knowledge_base
+  McshTchInf000039  #idLCyclmrth  "microtheory of Cycllago" → "microtheory of Cyclcode"  + McshEngl.Cyclcode'microtheory
+  McshTchInf000039  #idLCyclasrn  "assertion of Cycllago" → "assertion of Cyclcode"  + McshEngl.Cyclcode'assertion
+  McshTchInf000039  #idLCyclexrn  "expression of Cycllago" → "expression of Cyclcode"  + McshEngl.Cyclcode'expression
+  McshTchInf000039  #idLCyclterm  "term of Cycllago" → "term of Cyclcode"  + McshEngl.Cyclcode'term
+  McshTchInf000039  #idLKnlg017bibl  "bibliography of lagoCgaf" → "bibliography of LagoCgafinfrsc"  + McshEngl.LagoCgafinfrsc'bibliography
+  McshTchInf000039  #idLKnlgmngrdongPbsv  "problem-solving of KnlgMngr" → "problem-solving of Klmrcomputing"  + McshEngl.Klmrcomputing'problem_solving
+  McshTchInf000039  #idLKnlgmngrdongExplc  "explaining-computations of KnlgMngr" → "explaining-computations of Klmrcomputing"  + McshEngl.Klmrcomputing'explaining_computations
+  McshTchInf000018  #idEthsolsutdtln  "Data-location of Solxsunt" → "Data-location of Solxlago_reference_type"  + McshEngl.Solxlago_reference_type'Data_location
+  McshCor000003  #idEntcycle  "cycle of Enttevlg" → "cycle of Enttstage"  + McshEngl.Enttstage'cycle
+  McshStn000009  #idSocHumnatt018eezn  "exclusive-economic-zone of society" → "exclusive-economic-zone of society_water_area"  + McshEngl.society_water_area'exclusive_economic_zone
+  McshStn000009  #idSocHumnatt018tlwr  "territorial-waters of society" → "territorial-waters of society_water_area"  + McshEngl.society_water_area'territorial_waters
+  McshStn000009  #idSocHumnatt018frst  "forest-area of society" → "forest-area of society_land_area"  + McshEngl.society_land_area'forest_area
+  McshStn000009  #idSocHumnatt048  "mobile-cellular-subscription of society" → "mobile-cellular-subscription of phone_calling_of_society"  + McshEngl.phone_calling_of_society'mobile_cellular_subscription
+  McshStn000009  #idSocHumnatt047  "telephone-line of society" → "telephone-line of phone_calling_of_society"  + McshEngl.phone_calling_of_society'telephone_line
+  McshStn000031  #idChnaEconatt077  "consumer of Chna_econ" → "consumer of Chna_econ_att003_consuming_sys"  + McshEngl.Chna_econ_att003_consuming_sys'consumer
+  McshStn000031  #idChnaEconatt006  "household of Chna_econ" → "household of Chna_econ_att003_consuming_sys"  + McshEngl.Chna_econ_att003_consuming_sys'household
+  McshStn000031  #idChnaEconatt016  "sectorTourism of Chna_econ" → "sectorTourism of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorTourism
+  McshStn000031  #idChnaEconatt051  "sectorTransportation of Chna_econ" → "sectorTransportation of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorTransportation
+  McshStn000031  #idChnaEconatt013  "sectorTrade of Chna_econ" → "sectorTrade of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorTrade
+  McshStn000031  #idChnaEconatt012  "sectorAgriculture of Chna_econ" → "sectorAgriculture of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorAgriculture
+  McshStn000031  #idChnaEconatt029  "sectorService of Chna_econ" → "sectorService of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorService
+  McshStn000031  #idChnaEconatt052  "sectorEnergy of Chna_econ" → "sectorEnergy of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorEnergy
+  McshStn000031  #idChnaEconatt015  "sectorHealth of Chna_econ" → "sectorHealth of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorHealth
+  McshStn000031  #idChnaEconatt022  "sectorICT of Chna_econ" → "sectorICT of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorICT
+  McshStn000031  #idChnaEconatt065  "sectorScitech of Chna_econ" → "sectorScitech of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorScitech
+  McshStn000031  #idChnaEconatt018  "sectorStrategic of Chna_econ" → "sectorStrategic of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorStrategic
+  McshStn000031  #idChnaEconatt075  "sectorInformal of Chna_econ" → "sectorInformal of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'sectorInformal
+  McshStn000031  #idChnaEconatt036  "workerNo of Chna_econ" → "workerNo of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'workerNo
+  McshStn000031  #idChnaEconatt005  "worker of Chna_econ" → "worker of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'worker
+  McshStn000031  #idChnaEconatt004  "company of Chna_econ" → "company of Chna_econ_att002_producing_sys"  + McshEngl.Chna_econ_att002_producing_sys'company
+  McshStn000031  #idChnaEconatt071  "economic-info-network of Chna_econ" → "economic-info-network of Chna_econ_att014_visible_hand"  + McshEngl.Chna_econ_att014_visible_hand'economic_info_network
+  McshStn000031  #idChnaEconatt072  "state-information-center of Chna_econ" → "state-information-center of Chna_econ_att014_visible_hand"  + McshEngl.Chna_econ_att014_visible_hand'state_information_center
+  McshStn000031  #idChnaEconatt001ndrc  "National-Development-and-Reform-Commission of Chna_econ" → "National-Development-and-Reform-Commission of Chna_econ_att014_visible_hand"  + McshEngl.Chna_econ_att014_visible_hand'National_Development_and_Reform_Commission
+  McshStn000031  #idChnaadmnatt022  "Chinese-dream of ChnaAdmn" → "Chinese-dream of ChnaAdmndoing"  + McshEngl.ChnaAdmndoing'Chinese_dream
+  McshStn000031  #idChnaadmnatt011  "national-security of ChnaAdmn" → "national-security of ChnaAdmndoing"  + McshEngl.ChnaAdmndoing'national_security
+  McshStn000031  #idChnaadmnatt034  "policy-making-process of ChnaAdmn" → "policy-making-process of ChnaAdmndoing"  + McshEngl.ChnaAdmndoing'policy_making_process
+  McshStn000031  #idChnaadmnatt033  "New-Confucianism of ChnaAdmn" → "New-Confucianism of ChnaAdmninfrsc"  + McshEngl.ChnaAdmninfrsc'New_Confucianism
+  McshStn000031  #idChnaadmnatt032  "Neoauthoritarianism of ChnaAdmn" → "Neoauthoritarianism of ChnaAdmninfrsc"  + McshEngl.ChnaAdmninfrsc'Neoauthoritarianism
+  McshStn000031  #idChnaadmnatt031  "Fajia of ChnaAdmn" → "Fajia of ChnaAdmninfrsc"  + McshEngl.ChnaAdmninfrsc'Fajia
+  McshStn000031  #idChnaadmnatt028  "New-Left of ChnaAdmn" → "New-Left of ChnaAdmninfrsc"  + McshEngl.ChnaAdmninfrsc'New_Left
+  McshStn000031  #idChnaadmnatt027  "Xi-Jinping-thought of Chnacp" → "Xi-Jinping-thought of Chnacp_worldview"  + McshEngl.Chnacp_worldview'Xi_Jinping_thought
+  McshStn000031  #idChnaadmnatt026  "scientific-outlook-on-development of Chnacp" → "scientific-outlook-on-development of Chnacp_worldview"  + McshEngl.Chnacp_worldview'scientific_outlook_on_development
+  McshStn000031  #idChnaadmnatt025  "theory-of-three-represents of Chnacp" → "theory-of-three-represents of Chnacp_worldview"  + McshEngl.Chnacp_worldview'theory_of_three_represents
+  McshStn000031  #idChnaadmnatt024  "Deng-Xiaoping-theory of Chnacp" → "Deng-Xiaoping-theory of Chnacp_worldview"  + McshEngl.Chnacp_worldview'Deng_Xiaoping_theory
+  McshStn000031  #idChnaadmnatt023  "Mao-Zedong-thought of Chnacp" → "Mao-Zedong-thought of Chnacp_worldview"  + McshEngl.Chnacp_worldview'Mao_Zedong_thought
+  McshTchInf000009  #idLMcshodongSlcp  "selection-codepoints of Mcshapp" → "selection-codepoints of Mcshappdoing"  + McshEngl.Mcshappdoing'selection_codepoints
+  McshTchInf000009  #idLMcshodongQrsl  "query-selection of Mcshapp" → "query-selection of Mcshappdoing"  + McshEngl.Mcshappdoing'query_selection
+  McshTchInf000009  #idLMcshodongDbck  "DoubleClicking of Mcshapp" → "DoubleClicking of Mcshappdoing"  + McshEngl.Mcshappdoing'DoubleClicking
+  McshTchInf000009  #idLMcshodongNmsc  "name-search of Mcshapp" → "name-search of Mcshappdoing"  + McshEngl.Mcshappdoing'name_search
+  McshTchInf000009  #idLMcshodongCmd  "command of Mcshapp" → "command of Mcshappdoing"  + McshEngl.Mcshappdoing'command
+  McshStn000050  #idLKhmrsentbcex  "basic-expression of Khmrlogo" → "basic-expression of Khmrsent"  + McshEngl.Khmrsent'basic_expression
+  McshStn000050  #idLKhmrword  "word of Khmrlogo" → "word of Khmrunitsyst"  + McshEngl.Khmrunitsyst'word
+  McshStn000050  #idLKhmrsylb  "syllable of Khmrlogo" → "syllable of Khmrunitsyst"  + McshEngl.Khmrunitsyst'syllable
+  McshStnlaw000003  #idLawEus001amdg  "amending of EulawTreaty" → "amending of EulawTreatydoing"  + McshEngl.EulawTreatydoing'amending
+  McshStnlaw000003  #idLawEus001srp  "simplified-revision-procedure of EulawTreaty" → "simplified-revision-procedure of EulawTreatydoing"  + McshEngl.EulawTreatydoing'simplified_revision_procedure
+  McshStnlaw000003  #idLawEus001orp  "ordinary-revision-procedure of EulawTreaty" → "ordinary-revision-procedure of EulawTreatydoing"  + McshEngl.EulawTreatydoing'ordinary_revision_procedure
+  McshTchInf000019  #idEosdactodo  "todo of eosDAC" → "todo of EosDACdoing"  + McshEngl.EosDACdoing'todo
+  McshTchInf000019  #idEosdacwbst  "website of eosDAC" → "website of EosDACinfrsc"  + McshEngl.EosDACinfrsc'website
+  McshTchInf000019  #idEosdacdcci  "DAC-Chain-Initiative of eosDAC" → "DAC-Chain-Initiative of DAC_Factory__of__eosDAC_Dong"  + McshEngl.DAC_Factory__of__eosDAC_Dong'DAC_Chain_Initiative
+  McshTchInf000019  #idEosdacstct  "smart-contract of eosDAC" → "smart-contract of DAC_Factory__of__eosDAC_Dong"  + McshEngl.DAC_Factory__of__eosDAC_Dong'smart_contract
+  McshTchInf000019  #idEosdacppsldtv  "proposal-directive of eosDAC" → "proposal-directive of eosDAC_proposal"  + McshEngl.eosDAC_proposal'proposal_directive
+  McshTchInf000019  #idEosdachdrRgr  "member of eosDAC" → "member of eosDAC_holder"  + McshEngl.eosDAC_holder'member
+  McshTchInf000019  #idEosdacgsmr  "genesis-member of eosDAC" → "genesis-member of eosDAC_holder"  + McshEngl.eosDAC_holder'genesis_member
+  McshTchInf000019  #idDaostkgovcrnsm  "reputation-system of DAOstack" → "reputation-system of DAOstack_holographic_consensus"  + McshEngl.DAOstack_holographic_consensus'reputation_system
+  McshTchInf000019  #idDaostkgovcgnpn  "GEN-prediction of DAOstack" → "GEN-prediction of DAOstack_holographic_consensus"  + McshEngl.DAOstack_holographic_consensus'GEN_prediction
+  McshTchInf000019  #idEthdaosvc  "main-function of DoEth" → "main-function of DoEthdoing"  + McshEngl.DoEthdoing'main_function
+  McshTchInf000019  #idEthdaovtg  "voting of DoEth" → "voting of DoEthdoing"  + McshEngl.DoEthdoing'voting
+  McshTchInf000019  #idEthdaomng  "managing of DoEth" → "managing of DoEthdoing"  + McshEngl.DoEthdoing'managing
+  McshTchInf000019  #idEthdaocrtg  "creating of DoEth" → "creating of DoEthdoing"  + McshEngl.DoEthdoing'creating
+  McshHlth000019  #idOgnHmn008cleaning  "cleaning of OganEar" → "cleaning of OganEardoing"  + McshEngl.OganEardoing'cleaning
+  McshHlth000019  #idSysNrvsatt076att011  "neurotransmission of cellNeuron" → "neurotransmission of CellNeurondoing"  + McshEngl.CellNeurondoing'neurotransmission
+  McshHlth000019  #idSysNrvsatt076att009  "neurogenesis of cellNeuron" → "neurogenesis of CellNeurondoing"  + McshEngl.CellNeurondoing'neurogenesis
+  McshHlth000019  #idSysNrvsatt076att008  "nerve-impulse of cellNeuron" → "nerve-impulse of CellNeurondoing"  + McshEngl.CellNeurondoing'nerve_impulse
+  McshHlth000019  #idSysNrvsatt076att010  "nervous-stimulation of cellNeuron" → "nervous-stimulation of CellNeurondoing"  + McshEngl.CellNeurondoing'nervous_stimulation
+  McshOgm000005  #idFldHmn001att012  "test of bloodHumn" → "test of BloodHumndoing"  + McshEngl.BloodHumndoing'test
+  McshOgm000005  #idFldHmn001att011  "coagulation of bloodHumn" → "coagulation of BloodHumndoing"  + McshEngl.BloodHumndoing'coagulation
+  McshOgm000005  #idFldHmn001att002  "pulmonary-circulation of bloodHumn" → "pulmonary-circulation of BloodHumndoing"  + McshEngl.BloodHumndoing'pulmonary_circulation
+  McshOgm000005  #idFldHmn001att004  "transfusion of bloodHumn" → "transfusion of BloodHumndoing"  + McshEngl.BloodHumndoing'transfusion
+  McshOgm000005  #idFldHmn001att003  "collection of bloodHumn" → "collection of BloodHumndoing"  + McshEngl.BloodHumndoing'collection
+  McshOgm000005  #idHrmnHmnatt007  "managing of hormoneHumn" → "managing of HormoneHumndoing"  + McshEngl.HormoneHumndoing'managing
+  McshOgm000005  #idHrmnHmnatt006  "production of hormoneHumn" → "production of HormoneHumndoing"  + McshEngl.HormoneHumndoing'production
+  McshOgm000005  #idHrmnHmndongfctg  "function of hormoneHumn" → "function of HormoneHumndoing"  + McshEngl.HormoneHumndoing'function
+  McshCor000006  #idTimeUomDayltmn  "late-morning of day" → "late-morning of morning"  + McshEngl.morning'late_morning
+  McshCor000006  #idTimeUomDayelmn  "early-morning of day" → "early-morning of morning"  + McshEngl.morning'early_morning
+  McshCor000006  #idTimeUomDaydwn  "dawn of day" → "dawn of morning"  + McshEngl.morning'dawn
+  McshTchInf000036  #idTchInf008dongRgrn  "regression-task of TechMalr" → "regression-task of TechMalrdoing"  + McshEngl.TechMalrdoing'regression_task
+  McshLag000037  #idLUrduword  "word of Urdulogo" → "word of Urduunitsyst"  + McshEngl.Urduunitsyst'word
+  McshLag000037  #idLUrdusylb  "syllable of Urdulogo" → "syllable of Urduunitsyst"  + McshEngl.Urduunitsyst'syllable
+  McshLag000037  #idLHindsntcbcex  "basic-expression of Hindlogo" → "basic-expression of Hindsent"  + McshEngl.Hindsent'basic_expression
+  McshLag000037  #idLHindword  "word of Hindlogo" → "word of Hindunitsyst"  + McshEngl.Hindunitsyst'word
+  McshLag000037  #idLHindsylb  "syllable of Hindlogo" → "syllable of Hindunitsyst"  + McshEngl.Hindunitsyst'syllable
+  McshTchInf000006  #idLSrcdarchdmn  "domain of archetype of Srcdlago" → "domain of archetype of Srcdlago_archetype"  + McshEngl.Srcdlago_archetype'domain_of_archetype
+  McshTchInf000006  #idLSrcdarchcd  "archo-code of archetype of Srcdlago" → "archo-code of archetype of Srcdlago_archetype"  + McshEngl.Srcdlago_archetype'archo_code_of_archetype
+  McshTchInf000006  #idLPrgmalgsxtr  "syntax-tree of Pgmlalgo" → "syntax-tree of Pgmlalgosrtr"  + McshEngl.Pgmlalgosrtr'syntax_tree
+  McshOgm000007  #idCellOgm009att007  "nerve-impulse of neuronOgsm" → "nerve-impulse of NeuronOgsmdoing"  + McshEngl.NeuronOgsmdoing'nerve_impulse
+  McshTchInf000028  #idDnlbrcorelcns  "license of AgntDiem_Core" → "license of AgntDiem_Core_open_source"  + McshEngl.AgntDiem_Core_open_source'license
+  McshTchInf000028  #idDnlbrtkndtrg  "destroying of DvLibra" → "destroying of DvLibradoing"  + McshEngl.DvLibradoing'destroying
+  McshTchInf000028  #idDnlbrtkncrtg  "creating of DvLibra" → "creating of DvLibradoing"  + McshEngl.DvLibradoing'creating
+  McshTchInf000028  #idLMovepblm  "problem of Movelago" → "problem of Moveevaln"  + McshEngl.Moveevaln'problem
+  McshTchInf000028  #idLMovebnft  "benefit of Movelago" → "benefit of Moveevaln"  + McshEngl.Moveevaln'benefit
+  McshHlth000005  #idMsclHmnatt008  "myogenesis of OganMuscle" → "myogenesis of OganMuscleevolg"  + McshEngl.OganMuscleevolg'myogenesis
+  McshHlth000005  #idMsclHmnatt009  "12_exercising of OganMuscle" → "12_exercising of OganMuscledoing"  + McshEngl.OganMuscledoing'exercising
+  McshHlth000005  #idMsclHmnatt012  "fatigue of OganMuscle" → "fatigue of OganMuscledoing"  + McshEngl.OganMuscledoing'fatigue
+  McshHlth000005  #idMsclHmnatt004  "tone of OganMuscle" → "tone of OganMuscledoing"  + McshEngl.OganMuscledoing'tone
+  McshHlth000005  #idMsclHmnatt020  "irrigation of OganMuscle" → "irrigation of OganMuscledoing"  + McshEngl.OganMuscledoing'irrigation
+  McshHlth000005  #idMsclHmnatt019  "innervation of OganMuscle" → "innervation of OganMuscledoing"  + McshEngl.OganMuscledoing'innervation
+  McshHlth000005  #idMsclHmnatt018  "relaxation of OganMuscle" → "relaxation of OganMuscledoing"  + McshEngl.OganMuscledoing'relaxation
+  McshHlth000005  #idMsclHmnatt007  "11_contraction of OganMuscle" → "11_contraction of OganMuscledoing"  + McshEngl.OganMuscledoing'contraction
+  McshStn000015  #idSctrPblcatt003  "welfare-program of sectorPblc" → "welfare-program of sectorPblc_att004_social_safety"  + McshEngl.sectorPblc_att004_social_safety'welfare_program
+  McshStn000015  #idSctrPblcatt005  "social-security-program of sectorPblc" → "social-security-program of sectorPblc_att004_social_safety"  + McshEngl.sectorPblc_att004_social_safety'social_security_program
+  McshStn000015  #idSctrPblcatt002att001avdc  "avoidance of tax" → "avoidance of tax_compalsoriness"  + McshEngl.tax_compalsoriness'avoidance
+  McshStn000015  #idSctrPblcatt002att001evtn  "evation of tax" → "evation of tax_compalsoriness"  + McshEngl.tax_compalsoriness'evation
+  McshStn000015  #idOznPdn004otsr  "output-sector of sector" → "output-sector of output_product__of_sector"  + McshEngl.output_product__of_sector'output_sector
+  McshStn000015  #idOznPdn004ospt  "output-sector-product of sector" → "output-sector-product of output_product__of_sector"  + McshEngl.output_product__of_sector'output_sector_product
+  McshTchInf000015  #idLkxSlyci  "SmartLyCI of Lykke" → "SmartLyCI of Lykkasset"  + McshEngl.Lykkasset'SmartLyCI
+  McshTchInf000015  #idLkxPlyci  "PayLyCI of Lykke" → "PayLyCI of Lykkasset"  + McshEngl.Lykkasset'PayLyCI
+  McshTchInf000015  #idLkxLyci  "Lykklyci-Service-token of Lykke" → "Lykklyci-Service-token of Lykkasset"  + McshEngl.Lykkasset'Lykklyci_Service_token
+  McshTchInf000015  #idLkxLycii  "Lykklyci-Index of Lykke" → "Lykklyci-Index of Lykkasset"  + McshEngl.Lykkasset'Lykklyci_Index
+  McshTchInf000011  #idLJsbrexcg  "executing of Jsesm" → "executing of Jsesmdoing"  + McshEngl.Jsesmdoing'executing
+  McshCor000018  #idBrngHmnFct005_5  "mysteries of FctgMemorizing" → "mysteries of FctgMemorizinginfrsc"  + McshEngl.FctgMemorizinginfrsc'mysteries
+  McshHlth000004  #idCellHmn019evoglifetime  "lifetime of cellLeucocyte" → "lifetime of CellLeucocyteevolg"  + McshEngl.CellLeucocyteevolg'lifetime
+  McshHlth000004  #idCellHmn019evoggenesis  "genesis of cellLeucocyte" → "genesis of CellLeucocyteevolg"  + McshEngl.CellLeucocyteevolg'genesis
+  McshHlth000004  #idCellHmn009evoglifetime  "lifetime of red-blood-cell" → "lifetime of Red_blood_cellevolg"  + McshEngl.Red_blood_cellevolg'lifetime
+  McshHlth000004  #idCellHmn009evoggenesis  "genesis of red-blood-cell" → "genesis of Red_blood_cellevolg"  + McshEngl.Red_blood_cellevolg'genesis
+  McshHlth000004  #idCellHmn009evogdeath  "death of red-blood-cell" → "death of Red_blood_cellevolg"  + McshEngl.Red_blood_cellevolg'death
+  McshStn000037  #idLFracword  "word of Fraclogo" → "word of Fracunitsyst"  + McshEngl.Fracunitsyst'word
+  McshStn000037  #idLFracsylb  "syllable of Fraclogo" → "syllable of Fracunitsyst"  + McshEngl.Fracunitsyst'syllable
+  McshStn000042  #idSctrEduSmrtAiln  "AI-learning of Smed" → "AI-learning of AI_education"  + McshEngl.AI_education'AI_learning
+  McshStn000042  #idSctrEduSmrtAitc  "AI-teaching of Smed" → "AI-teaching of AI_education"  + McshEngl.AI_education'AI_teaching
+  McshStn000042  #idSctrEduChnaCeta  "China-Educational-Technology-Association of Chnaeduc" → "China-Educational-Technology-Association of Chnaeduc_system"  + McshEngl.Chnaeduc_system'China_Educational_Technology_Association
+  McshStn000042  #idSctrEduChnaNouv  "National-Open-University of Chnaeduc" → "National-Open-University of Chnaeduc_system"  + McshEngl.Chnaeduc_system'National_Open_University
+  McshStn000042  #idSctrEduChnaNies  "China-National-Academy-of-Education-Sciences of Chnaeduc" → "China-National-Academy-of-Education-Sciences of Chnaeduc_system"  + McshEngl.Chnaeduc_system'China_National_Academy_of_Education_Sciences
+  McshStn000042  #idSctrEduChnaNcet  "National-Center-for-Educational-Technology of Chnaeduc" → "National-Center-for-Educational-Technology of Chnaeduc_system"  + McshEngl.Chnaeduc_system'National_Center_for_Educational_Technology
+  McshStn000042  #idSctrEduChnaMoe  "ministry-of-education of Chnaeduc" → "ministry-of-education of Chnaeduc_system"  + McshEngl.Chnaeduc_system'ministry_of_education
+  McshStn000034  #idLVnmaword  "word of Vnmalogo" → "word of Vnmaunitsyst"  + McshEngl.Vnmaunitsyst'word
+  McshStn000034  #idLVnmatone  "tone-of-syllable of Vnmalogo" → "tone-of-syllable of Vnmaunitsyst"  + McshEngl.Vnmaunitsyst'tone_of_syllable
+  McshStn000034  #idLVnmasylb  "syllable of Vnmalogo" → "syllable of Vnmaunitsyst"  + McshEngl.Vnmaunitsyst'syllable
+  McshTchInf000003  #idCmrQtmqinf  "quantum-information of cmprQntm" → "quantum-information of QIT"  + McshEngl.QIT'quantum_information
+  McshLag000033  #idLDeutsntcbcex  "basic-expression of Deutlogo" → "basic-expression of Deutsent"  + McshEngl.Deutsent'basic_expression
+  McshOgm000008  #idOgmVrs003lftm  "lifetime of VirsSarsc2" → "lifetime of VrsSarsc2evolg"  + McshEngl.VrsSarsc2evolg'lifetime
+  McshOgm000008  #idOgmVrsatt019  "latency of OgsmVirus" → "latency of OgmVirusevolg"  + McshEngl.OgmVirusevolg'latency
+  McshOgm000008  #idOgmVrsatt016  "6_release of OgsmVirus" → "6_release of OgmVirusevolg"  + McshEngl.OgmVirusevolg'release
+  McshOgm000008  #idOgmVrsatt015  "5_assembly of OgsmVirus" → "5_assembly of OgmVirusevolg"  + McshEngl.OgmVirusevolg'assembly
+  McshOgm000008  #idOgmVrsatt007  "4_replication of OgsmVirus" → "4_replication of OgmVirusevolg"  + McshEngl.OgmVirusevolg'replication
+  McshOgm000008  #idOgmVrsatt014  "3_uncoating of OgsmVirus" → "3_uncoating of OgmVirusevolg"  + McshEngl.OgmVirusevolg'uncoating
+  McshOgm000008  #idOgmVrsatt013  "2_penetration of OgsmVirus" → "2_penetration of OgmVirusevolg"  + McshEngl.OgmVirusevolg'penetration
+  McshOgm000008  #idOgmVrsatt012  "1_attachment of OgsmVirus" → "1_attachment of OgmVirusevolg"  + McshEngl.OgmVirusevolg'attachment
+  McshOgm000008  #idOgmVrsatt001  "life-cicle of OgsmVirus" → "life-cicle of OgmVirusevolg"  + McshEngl.OgmVirusevolg'life_cicle
+  McshOgm000008  #idOgmVrsatt018  "culture of OgsmVirus" → "culture of OgmVirusdoing"  + McshEngl.OgmVirusdoing'culture
+  McshOgm000008  #idOgmVrsatt003  "transmission of OgsmVirus" → "transmission of OgmVirusdoing"  + McshEngl.OgmVirusdoing'transmission
+  McshOgm000008  #idOgmVrssci  "science of OgsmVirus" → "science of OgmVirusinfrsc"  + McshEngl.OgmVirusinfrsc'science
+  McshStn000038  #idSbulrnmldfrc  "differencies-to-NorthMacedoniaLango of Sbullago" → "differencies-to-NorthMacedoniaLango of Sbullago_relation_to_NorthMacedoniaLango"  + McshEngl.Sbullago_relation_to_NorthMacedoniaLango'differencies_to_NorthMacedoniaLango
+  McshStn000038  #idSbulrnmlsmlr  "similarities-to-NorthMacedoniaLango of Sbullago" → "similarities-to-NorthMacedoniaLango of Sbullago_relation_to_NorthMacedoniaLango"  + McshEngl.Sbullago_relation_to_NorthMacedoniaLango'similarities_to_NorthMacedoniaLango
+  McshStn000038  #idSbulsentBcex  "basic-expression of Sbullogo" → "basic-expression of Sbulsent"  + McshEngl.Sbulsent'basic_expression
+  McshStn000038  #idSbulword  "word of Sbullogo" → "word of Sbulunitsyst"  + McshEngl.Sbulunitsyst'word
+  McshStn000038  #idSbulsylb  "syllable of Sbullogo" → "syllable of Sbulunitsyst"  + McshEngl.Sbulunitsyst'syllable
+  McshStn000044  #idLRomnsentbcex  "basic-expression of Romnlogo" → "basic-expression of Romnsent"  + McshEngl.Romnsent'basic_expression
+  McshStn000044  #idLRomnword  "word of Romnlogo" → "word of Romnunitsyst"  + McshEngl.Romnunitsyst'word
+  McshStn000044  #idLRomnsylb  "syllable of Romnlogo" → "syllable of Romnunitsyst"  + McshEngl.Romnunitsyst'syllable
+  McshTch000002  #idTch005evog  "evoluting of techAutomation" → "evoluting of TechAutomationevaln"  + McshEngl.TechAutomationevaln'evoluting
+  McshTch000002  #idTch005evalBnftN  "benefitNo of techAutomation" → "benefitNo of TechAutomationevaln"  + McshEngl.TechAutomationevaln'benefitNo
+  McshTch000002  #idTch005evalBnft  "benefit of techAutomation" → "benefit of TechAutomationevaln"  + McshEngl.TechAutomationevaln'benefit
+  McshHlth000014  #idMedHmn004evog  "evoluting of MdtnAntibiotic" → "evoluting of Atbtcdoing"  + McshEngl.Atbtcdoing'evoluting
+  McshStn000040  #idLSmkdsentbcex  "basic-expression of Smkdlogo" → "basic-expression of Smkdsent"  + McshEngl.Smkdsent'basic_expression
+  McshStn000040  #idLSmkdword  "word of Smkdlogo" → "word of Smkdunitsyst"  + McshEngl.Smkdunitsyst'word
+  McshStn000040  #idLSmkdsylb  "syllable of Smkdlogo" → "syllable of Smkdunitsyst"  + McshEngl.Smkdunitsyst'syllable
+  McshTchInf000007  #idLxmlgvldg  "validating of lagoXmlg" → "validating of LagXmlgdoing"  + McshEngl.LagXmlgdoing'validating
+  McshTchInf000007  #idLxmlgspec  "specification of lagoXmlg" → "specification of LagXmlginfrsc"  + McshEngl.LagXmlginfrsc'specification
+  McshTchInf000007  #idLxmlgrthl  "relation-to-lagoHtml of lagoXmlg" → "relation-to-lagoHtml of LagXmlgevaln"  + McshEngl.LagXmlgevaln'relation_to_lagoHtml
+  McshStn000035  #idLItlnword  "word of Itlnlogo" → "word of Itlnunitsyst"  + McshEngl.Itlnunitsyst'word
+  McshStn000035  #idLItlnsylb  "syllable of Itlnlogo" → "syllable of Itlnunitsyst"  + McshEngl.Itlnunitsyst'syllable
+  McshStn000039  #idLSqipword  "word of Sqiplogo" → "word of Sqipunitsyst"  + McshEngl.Sqipunitsyst'word
+  McshStn000039  #idLSqipsylb  "syllable of Sqiplogo" → "syllable of Sqipunitsyst"  + McshEngl.Sqipunitsyst'syllable
+  McshStn000041  #idLSslvsntcbcex  "basic-expression of Sslvlogo" → "basic-expression of Sslvsent"  + McshEngl.Sslvsent'basic_expression
+  McshStn000041  #idLSslvword  "word of Sslvlogo" → "word of Sslvunitsyst"  + McshEngl.Sslvunitsyst'word
+  McshStn000041  #idLSslvsylb  "syllable of Sslvlogo" → "syllable of Sslvunitsyst"  + McshEngl.Sslvunitsyst'syllable
+  McshStn000043  #idLSrussentbcex  "basic-expression of Sruslogo" → "basic-expression of Srussent"  + McshEngl.Srussent'basic_expression
+  McshStn000043  #idLSrusword  "word of Sruslogo" → "word of Srusunitsyst"  + McshEngl.Srusunitsyst'word
+  McshStn000043  #idLSrussylb  "syllable of Sruslogo" → "syllable of Srusunitsyst"  + McshEngl.Srusunitsyst'syllable
+  McshStn000048  #idLJpnssentbcex  "basic-expression of Jpnslogo" → "basic-expression of Jpnssent"  + McshEngl.Jpnssent'basic_expression
+  McshStn000048  #idLJpnsword  "word of Jpnslogo" → "word of Jpnsunitsyst"  + McshEngl.Jpnsunitsyst'word
+  McshStn000048  #idLJpnssylb  "syllable of Jpnslogo" → "syllable of Jpnsunitsyst"  + McshEngl.Jpnsunitsyst'syllable
+  McshStn000012  #idEconHmn023evalBnftN  "benefitNo of econPlnd" → "benefitNo of EconPlndevaln"  + McshEngl.EconPlndevaln'benefitNo
+  McshStn000012  #idEconHmn023evalBnft  "benefit of econPlnd" → "benefit of EconPlndevaln"  + McshEngl.EconPlndevaln'benefit
+  McshStn000012  #idEconHmn022evalBnftN  "benefitNo of econMrkt" → "benefitNo of EconMrktevaln"  + McshEngl.EconMrktevaln'benefitNo
+  McshStn000012  #idEconHmn022evalBnft  "benefit of econMrkt" → "benefit of EconMrktevaln"  + McshEngl.EconMrktevaln'benefit
+  McshCor000005  #idRlnOpsncplt  "complement-of-Argt of RltnOpposition" → "complement-of-Argt of opposite"  + McshEngl.opposite'complement_of_Argt
+  McshCor000012  #idMdl021vldg  "validating of modelCmpr" → "validating of ModelCmprdoing"  + McshEngl.ModelCmprdoing'validating
+  McshCor000012  #idMdl021smlg  "simulating of modelCmpr" → "simulating of ModelCmprdoing"  + McshEngl.ModelCmprdoing'simulating
+  McshTchInf000038  #idTchLlmTrfmcrtm  "criticism of llmTransformer" → "criticism of LlmTransformerevaln"  + McshEngl.LlmTransformerevaln'criticism
+  McshCor000011  #idSys002nodehght  "height of Treenode" → "height of Treenode_level_number"  + McshEngl.Treenode_level_number'height
+  McshCor000011  #idSys002nodedpth  "depth of Treenode" → "depth of Treenode_level_number"  + McshEngl.Treenode_level_number'depth
+  McshStn000030  #idGrcaeconatt007  "sectorPrivate of Grcaecon" → "sectorPrivate of Grcaecon_att001_producing_system"  + McshEngl.Grcaecon_att001_producing_system'sectorPrivate
+  McshStn000030  #idGrcaeconatt006  "sectorPublic of Grcaecon" → "sectorPublic of Grcaecon_att001_producing_system"  + McshEngl.Grcaecon_att001_producing_system'sectorPublic
+  McshStn000030  #idGrcaeconatt005  "worker of Grcaecon" → "worker of Grcaecon_att001_producing_system"  + McshEngl.Grcaecon_att001_producing_system'worker
+  McshStn000030  #idGrcaeconatt003  "company of Grcaecon" → "company of Grcaecon_att001_producing_system"  + McshEngl.Grcaecon_att001_producing_system'company
+  McshLag000003  #idInfHmnBrn007orvw  "other-view of knowledge" → "other-view of Knowledgeinfrsc"  + McshEngl.Knowledgeinfrsc'other_view
+  McshHlth000010  #idDssPlntatt011  "phytopathology of DissPlnt" → "phytopathology of DissPlntinfrsc"  + McshEngl.DissPlntinfrsc'phytopathology
+  McshNtr000010  #idBrnBioNtrlatt004  "cephalization of brainNatural" → "cephalization of BrainNaturalevolg"  + McshEngl.BrainNaturalevolg'cephalization
+  McshStn000019  #idAlgoeconatt006  "autonomous-household of Algoecon" → "autonomous-household of Algocsmgsyst"  + McshEngl.Algocsmgsyst'autonomous_household
+  McshStn000019  #idAlgoeconatt007  "autonomous-company of Algoecon" → "autonomous-company of Algoprdgsyst"  + McshEngl.Algoprdgsyst'autonomous_company
+  McshStn000032  #idUsazadmnatt004  "national-security of Usazadmn" → "national-security of Usazadmndoing"  + McshEngl.Usazadmndoing'national_security
+
+=== DOT (364) — "<ancestor>.x" → "M.x"
+  McshLag000007  #idLHmnmtsscsmPara  "HmmdsectNo.paragraph of Hmmdlogo" → "HmmdsectNo.paragraph"  (name exists)
+  McshLag000007  #idLHmnmtsscsmCmpd  "HmmdsectNo.compound of Hmmdlogo" → "HmmdsectNo.compound"  (name exists)
+  McshLag000007  #idLHmnmvbatSpd  "Hmmdvbat.speed of Hmmdlogo" → "Hmmdvbat.speed"  (name exists)
+  McshLag000007  #idLHmnmvbatMsr  "Hmmdvbat.quantity of Hmmdlogo" → "Hmmdvbat.quantity"  (name exists)
+  McshLag000007  #idLHmnmvbatGoal  "Hmmdvbat.goal of Hmmdlogo" → "Hmmdvbat.goal"  (name exists)
+  McshLag000007  #idLHmnmvbatMnr  "Hmmdvbat.manner of Hmmdlogo" → "Hmmdvbat.manner"  (name exists)
+  McshLag000007  #idLHmnmvbatWhy  "Hmmdvbat.cause of Hmmdlogo" → "Hmmdvbat.cause"  (name exists)
+  McshLag000007  #idLHmnmvbatTime  "Hmmdvbat.time of Hmmdlogo" → "Hmmdvbat.time"  (name exists)
+  McshLag000007  #idLHmnmvbatSpace  "Hmmdvbat.space of Hmmdlogo" → "Hmmdvbat.space"  (name exists)
+  McshLag000007  #idLHmnmvbatAgt  "Hmmdvbat.agent of Hmmdlogo" → "Hmmdvbat.agent"  (name exists)
+  McshLag000007  #idLHmnmvbatOtpt  "Hmmdvbat.output of Hmmdlogo" → "Hmmdvbat.output"  (name exists)
+  McshLag000007  #idLHmnmvbatOthr  "Hmmdvbat.subject-other of Hmmdlogo" → "Hmmdvbat.subject-other"  (name exists)
+  McshLag000007  #idLHmnmsbjt  "Hmmdvbat.subject-target of Hmmdlogo" → "Hmmdvbat.subject-target"  (name exists)
+  McshLag000007  #idLHmnmsbt  "Hmmdvbat.subject of Hmmdlogo" → "Hmmdvbat.subject"  (name exists)
+  McshLag000007  #idLHmnmvbatSent  "Hmmdvbat.sentence of Hmmdlogo" → "Hmmdvbat.sentence"  (name exists)
+  McshLag000007  #idLHmnmvbatNnsm  "Hmmdvbat.noun-phrase of Hmmdlogo" → "Hmmdvbat.noun-phrase"  (name exists)
+  McshLag000007  #idLHmnmvbatCnsm  "Hmmdvbat.conj_phrase of Hmmdlogo" → "Hmmdvbat.conj_phrase"  + McshEngl.Hmmdvbat.conj_phrase
+  McshLag000007  #idLHmnmvbatOndo  "Hmmdvbat.argu of Hmmdlogo" → "Hmmdvbat.argu"  (name exists)
+  McshLag000007  #idLHmnmvbatRln  "Hmmdvbat.relation of Hmmdlogo" → "Hmmdvbat.relation"  (name exists)
+  McshLag000007  #idLHmnmvbatDng  "Hmmdvbat.doing of Hmmdlogo" → "Hmmdvbat.doing"  (name exists)
+  McshLag000007  #idLHmnmnameSnmnd  "Hmmdname.synomind" → "Hmmdsynoname.synomind"  + McshEngl.Hmmdsynoname.synomind
+  McshLag000007  #idLHmnmnameSnsms  "Hmmdname.synosemu" → "Hmmdsynoname.synosemu"  + McshEngl.Hmmdsynoname.synosemu
+  McshLag000007  #idLHmnmnameTrmwrdAuxN  "TermWord.auxiliaryNo of Hmmdlogo" → "TermWord.auxiliaryNo"  (name exists)
+  McshLag000007  #idLHmnmnameTrmwrdAux  "TermWord.auxiliary of Hmmdlogo" → "TermWord.auxiliary"  (name exists)
+  McshLag000007  #idLHmnmuntLgnmNPnkn  "Hmmdunit.punctuation" → "HmmdunitNameNo.punctuation"  + McshEngl.HmmdunitNameNo.punctuation
+  McshLag000007  #idLHmnmsmsvrbDngStdn  "HmmdsmvbDong.subject_acton" → "HmmdsmvbActg.subject_acton"  + McshEngl.HmmdsmvbActg.subject_acton
+  McshLag000007  #idLHmnmsmsvrbDngStdr  "HmmdsmvbDong.subject_actor" → "HmmdsmvbActg.subject_actor"  + McshEngl.HmmdsmvbActg.subject_actor
+  McshLag000007  #idLHmnmsmsvrbmbr081  "Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3" → "VerbSmsatom.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3"  + McshEngl.VerbSmsatom.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3
+  McshLag000007  #idLHmnmsmsvrbattPrsnC  "Hmmdsmvbatt.third_person" → "VerbCptAttPerson.third_person"  + McshEngl.VerbCptAttPerson.third_person
+  McshLag000007  #idLHmnmsmsvrbattPrsnB  "Hmmdsmvbatt.second_person" → "VerbCptAttPerson.second_person"  + McshEngl.VerbCptAttPerson.second_person
+  McshLag000007  #idLHmnmsmsvrbattPrsnA  "Hmmdsmvbatt.first_person" → "VerbCptAttPerson.first_person"  + McshEngl.VerbCptAttPerson.first_person
+  McshLag000007  #idLHmnmsmsvrbattNbrTwo  "Hmmdsmvbatt.two_number" → "VerbCptAttNumber.two_number"  + McshEngl.VerbCptAttNumber.two_number
+  McshLag000007  #idLHmnmsmsvrbattNbrOneN  "Hmmdsmvbatt.oneNo_number" → "VerbCptAttNumber.oneNo_number"  + McshEngl.VerbCptAttNumber.oneNo_number
+  McshLag000007  #idLHmnmsmsvrbattNbrOne  "Hmmdsmvbatt.one_number" → "VerbCptAttNumber.one_number"  + McshEngl.VerbCptAttNumber.one_number
+  McshLag000007  #idLHmnmsmsvrbattAfmnN  "Hmmdsmvbatt.affirmativeNo" → "VerbCptAttAfrm.affirmativeNo"  + McshEngl.VerbCptAttAfrm.affirmativeNo
+  McshLag000007  #idLHmnmsmsvrbattAfmnY  "Hmmdsmvbatt.affirmative" → "VerbCptAttAfrm.affirmative"  + McshEngl.VerbCptAttAfrm.affirmative
+  McshLag000007  #idLHmnmsmsvrbattItgnN  "Hmmdsmvbatt.interrogativeNo" → "VerbCptAttAsk.interrogativeNo"  + McshEngl.VerbCptAttAsk.interrogativeNo
+  McshLag000007  #idLHmnmsmsvrbattItgnY  "Hmmdsmvbatt.interrogative" → "VerbCptAttAsk.interrogative"  + McshEngl.VerbCptAttAsk.interrogative
+  McshLag000007  #idLHmnmsmsvrbattDircRela  "Hmmdsmvbatt.relational_direction" → "VerbCptAttDirection.relational_direction"  + McshEngl.VerbCptAttDirection.relational_direction
+  McshLag000007  #idLHmnmsmsvrbattDircFunc  "Hmmdsmvbatt.functive_direction" → "VerbCptAttDirection.functive_direction"  + McshEngl.VerbCptAttDirection.functive_direction
+  McshLag000007  #idLHmnmsmsvrbattDircAcpa  "Hmmdsmvbatt.active_and_passive_direction" → "VerbCptAttDirection.active_and_passive_direction"  + McshEngl.VerbCptAttDirection.active_and_passive_direction
+  McshLag000007  #idLHmnmsmsvrbattDircPass  "Hmmdsmvbatt.passive_direction" → "VerbCptAttDirection.passive_direction"  + McshEngl.VerbCptAttDirection.passive_direction
+  McshLag000007  #idLHmnmsmsvrbattDircActi  "Hmmdsmvbatt.active_direction" → "VerbCptAttDirection.active_direction"  + McshEngl.VerbCptAttDirection.active_direction
+  McshLag000007  #idLHmnmsmsvrbattTmuc  "Hmmdsmvbatt.time.utterance" → "VerbCptAttTime.time.utterance"  + McshEngl.VerbCptAttTime.time.utterance
+  McshLag000007  #idLHmnmsmsvrbattTmRc  "Hmmdsmvbatt.time.reference" → "VerbCptAttTime.time.reference"  + McshEngl.VerbCptAttTime.time.reference
+  McshLag000007  #idLHmnmsmsvrbattTmSn  "Hmmdsmvbatt.time.situation" → "VerbCptAttTime.time.situation"  + McshEngl.VerbCptAttTime.time.situation
+  McshLag000007  #idLHmnmsmscptattIdvlN  "Hmmdsmcptatt.individualNo of Hmmdsemucnpt" → "Hmmdsmcptatt.individualNo"  (name exists)
+  McshLag000007  #idLHmnmsmscptattIdvl  "Hmmdsmcptatt.individual of Hmmdsemucnpt" → "Hmmdsmcptatt.individual"  (name exists)
+  McshLag000011  #idLEnglsmsondombrMain6  "Englsmagmb.main.6_dftNo_plu" → "EnglsmagmbMain.main.6_dftNo_plu"  + McshEngl.EnglsmagmbMain.main.6_dftNo_plu
+  McshLag000011  #idLEnglsmsondombrMain5  "Englsmagmb.main.5_dftNo_sin" → "EnglsmagmbMain.main.5_dftNo_sin"  + McshEngl.EnglsmagmbMain.main.5_dftNo_sin
+  McshLag000011  #idLEnglsmsondombrMain4  "Englsmagmb.main.4_dft_plu" → "EnglsmagmbMain.main.4_dft_plu"  + McshEngl.EnglsmagmbMain.main.4_dft_plu
+  McshLag000011  #idLEnglsmsondombrMain3  "Englsmagmb.main.3_dft_sin" → "EnglsmagmbMain.main.3_dft_sin"  + McshEngl.EnglsmagmbMain.main.3_dft_sin
+  McshLag000011  #idLEnglsmsondombrMain2  "Englsmagmb.main.2_gnc_plu" → "EnglsmagmbMain.main.2_gnc_plu"  + McshEngl.EnglsmagmbMain.main.2_gnc_plu
+  McshLag000011  #idLEnglsmsondombrMain1  "Englsmagmb.main.1_gnc_sin" → "EnglsmagmbMain.main.1_gnc_sin"  + McshEngl.EnglsmagmbMain.main.1_gnc_sin
+  McshLag000011  #idLEnglverbauxN5  "Englvbmbform.5-written of Englverb" → "Englvbmbform.5-written"  + McshEngl.Englvbmbform.5_written
+  McshLag000011  #idLEnglverbauxN4  "Englvbmbform.4-writing of Englverb" → "Englvbmbform.4-writing"  + McshEngl.Englvbmbform.4_writing
+  McshLag000011  #idLEnglverbauxN3  "Englvbmbform.3-wrote of Englverb" → "Englvbmbform.3-wrote"  + McshEngl.Englvbmbform.3_wrote
+  McshLag000011  #idLEnglverbauxN2  "Englvbmbform.2-writes of Englverb" → "Englvbmbform.2-writes"  + McshEngl.Englvbmbform.2_writes
+  McshLag000011  #idLEnglverbauxN1  "Englvbmbform.1-write of Englverb" → "Englvbmbform.1-write"  + McshEngl.Englvbmbform.1_write
+  McshLag000011  #idLEnglondombrOrdRln  "Englagmb.relation.specialNo" → "ArgumebrRltnEngl.relation.specialNo"  + McshEngl.ArgumebrRltnEngl.relation.specialNo
+  McshLag000018  #idLZhonchar140mu  "Zhon_char.140_Most_Used_Chinese_Characters" → "List_of_Commonly_Used_Standard_Chinese_Characters.140_Most_Used_Chinese_Characters"  + McshEngl.List_of_Commonly_Used_Standard_Chinese_Characters.140_Most_Used_Chinese_Characters
+  McshHlth000002  #idHrtHmnatt025  "atrium.left of OganHeart" → "atrium.left"  + McshEngl.atrium.left
+  McshHlth000002  #idHrtHmnatt024  "atrium.right of OganHeart" → "atrium.right"  + McshEngl.atrium.right
+  McshTchPrgm000003  #idAtmpkgOpenterminalhere  "Atompckg.open_terminal_here" → "AtompckgCommunity.open_terminal_here"  + McshEngl.AtompckgCommunity.open_terminal_here
+  McshTchPrgm000003  #idAtmpkgLinter  "Atompckg.linter" → "AtompckgCommunity.linter"  + McshEngl.AtompckgCommunity.linter
+  McshTchPrgm000003  #idAtmpkgIntentions  "Atompckg.intentions" → "AtompckgCommunity.intentions"  + McshEngl.AtompckgCommunity.intentions
+  McshTchPrgm000003  #idAtmpkgCoffeecompile  "Atompckg.coffee_compile" → "AtompckgCommunity.coffee_compile"  + McshEngl.AtompckgCommunity.coffee_compile
+  McshTchPrgm000003  #idAtmpkgcharcodedisplay  "Atompckg.charcode_display" → "AtompckgCommunity.charcode_display"  + McshEngl.AtompckgCommunity.charcode_display
+  McshTchPrgm000003  #idAtmpkgCharactertable  "Atompckg.character_table" → "AtompckgCommunity.character_table"  + McshEngl.AtompckgCommunity.character_table
+  McshTchPrgm000003  #idAtmpkgBusysignal  "Atompckg.busy_signal" → "AtompckgCommunity.busy_signal"  + McshEngl.AtompckgCommunity.busy_signal
+  McshTchPrgm000003  #idAtmpkgAtomkeyboardmacros  "Atompckg.atom_keyboard_macros" → "AtompckgCommunity.atom_keyboard_macros"  + McshEngl.AtompckgCommunity.atom_keyboard_macros
+  McshTchPrgm000003  #idAtmpkgWrapguide  "Atompckg.Wrap_guide" → "AtompckgCore.Wrap_guide"  + McshEngl.AtompckgCore.Wrap_guide
+  McshTchPrgm000003  #idAtmpkgWhitespace  "Atompckg.Whitespace" → "AtompckgCore.Whitespace"  + McshEngl.AtompckgCore.Whitespace
+  McshTchPrgm000003  #idAtmpkgWelcome  "Atompckg.Welcome" → "AtompckgCore.Welcome"  + McshEngl.AtompckgCore.Welcome
+  McshTchPrgm000003  #idAtmpkgUpdatepackagedependencies  "Atompckg.Update_package_dependencies" → "AtompckgCore.Update_package_dependencies"  + McshEngl.AtompckgCore.Update_package_dependencies
+  McshTchPrgm000003  #idAtmpkgTreeview  "Atompckg.Tree_view" → "AtompckgCore.Tree_view"  + McshEngl.AtompckgCore.Tree_view
+  McshTchPrgm000003  #idAtmpkgTimecop  "Atompckg.Timecop" → "AtompckgCore.Timecop"  + McshEngl.AtompckgCore.Timecop
+  McshTchPrgm000003  #idAtmpkgTabs  "Atompckg.Tabs" → "AtompckgCore.Tabs"  + McshEngl.AtompckgCore.Tabs
+  McshTchPrgm000003  #idAtmpkgSymbolsview  "Atompckg.Symbols_view" → "AtompckgCore.Symbols_view"  + McshEngl.AtompckgCore.Symbols_view
+  McshTchPrgm000003  #idAtmpkgStyleguide  "Atompckg.Styleguide" → "AtompckgCore.Styleguide"  + McshEngl.AtompckgCore.Styleguide
+  McshTchPrgm000003  #idAtmpkgStatusbar  "Atompckg.Status_bar" → "AtompckgCore.Status_bar"  + McshEngl.AtompckgCore.Status_bar
+  McshTchPrgm000003  #idAtmpkgSpellcheck  "Atompckg.Spell_check" → "AtompckgCore.Spell_check"  + McshEngl.AtompckgCore.Spell_check
+  McshTchPrgm000003  #idAtmpkgSnippets  "Atompckg.Snippets" → "AtompckgCore.Snippets"  + McshEngl.AtompckgCore.Snippets
+  McshTchPrgm000003  #idAtmpkgPackagegenerator  "Atompckg.Package_generator" → "AtompckgCore.Package_generator"  + McshEngl.AtompckgCore.Package_generator
+  McshTchPrgm000003  #idAtmpkgOpenongithub  "Atompckg.Open_on_github" → "AtompckgCore.Open_on_github"  + McshEngl.AtompckgCore.Open_on_github
+  McshTchPrgm000003  #idAtmpkgNotifications  "Atompckg.Notifications" → "AtompckgCore.Notifications"  + McshEngl.AtompckgCore.Notifications
+  McshTchPrgm000003  #idAtmpkgMetrics  "Atompckg.Metrics" → "AtompckgCore.Metrics"  + McshEngl.AtompckgCore.Metrics
+  McshTchPrgm000003  #idAtmpkgMarkdownpreview  "Atompckg.Markdown_preview" → "AtompckgCore.Markdown_preview"  + McshEngl.AtompckgCore.Markdown_preview
+  McshTchPrgm000003  #idAtmpkgLineendingselector  "Atompckg.Line_ending_selector" → "AtompckgCore.Line_ending_selector"  + McshEngl.AtompckgCore.Line_ending_selector
+  McshTchPrgm000003  #idAtmpkgLanguageyaml  "Atompckg.Language_yaml" → "AtompckgCore.Language_yaml"  + McshEngl.AtompckgCore.Language_yaml
+  McshTchPrgm000003  #idAtmpkgLanguagexml  "Atompckg.Language_xml" → "AtompckgCore.Language_xml"  + McshEngl.AtompckgCore.Language_xml
+  McshTchPrgm000003  #idAtmpkgLanguagetypescript  "Atompckg.Language_typescript" → "AtompckgCore.Language_typescript"  + McshEngl.AtompckgCore.Language_typescript
+  McshTchPrgm000003  #idAtmpkgLanguagetoml  "Atompckg.Language_toml" → "AtompckgCore.Language_toml"  + McshEngl.AtompckgCore.Language_toml
+  McshTchPrgm000003  #idAtmpkgLanguagetodo  "Atompckg.Language_todo" → "AtompckgCore.Language_todo"  + McshEngl.AtompckgCore.Language_todo
+  McshTchPrgm000003  #idAtmpkgLanguagetext  "Atompckg.Language_text" → "AtompckgCore.Language_text"  + McshEngl.AtompckgCore.Language_text
+  McshTchPrgm000003  #idAtmpkgLanguagesql  "Atompckg.Language_sql" → "AtompckgCore.Language_sql"  + McshEngl.AtompckgCore.Language_sql
+  McshTchPrgm000003  #idAtmpkgLanguagesource  "Atompckg.Language_source" → "AtompckgCore.Language_source"  + McshEngl.AtompckgCore.Language_source
+  McshTchPrgm000003  #idAtmpkgLanguageshellscript  "Atompckg.Language_shellscript" → "AtompckgCore.Language_shellscript"  + McshEngl.AtompckgCore.Language_shellscript
+  McshTchPrgm000003  #idAtmpkgLanguagesass  "Atompckg.Language_sass" → "AtompckgCore.Language_sass"  + McshEngl.AtompckgCore.Language_sass
+  McshTchPrgm000003  #idAtmpkgLanguagerubyonrails  "Atompckg.Language_ruby_on_rails" → "AtompckgCore.Language_ruby_on_rails"  + McshEngl.AtompckgCore.Language_ruby_on_rails
+  McshTchPrgm000003  #idAtmpkgLanguageruby  "Atompckg.Language_ruby" → "AtompckgCore.Language_ruby"  + McshEngl.AtompckgCore.Language_ruby
+  McshTchPrgm000003  #idAtmpkgLanguagepython  "Atompckg.Language_python" → "AtompckgCore.Language_python"  + McshEngl.AtompckgCore.Language_python
+  McshTchPrgm000003  #idAtmpkgLanguagepropertylist  "Atompckg.Language_property_list" → "AtompckgCore.Language_property_list"  + McshEngl.AtompckgCore.Language_property_list
+  McshTchPrgm000003  #idAtmpkgLanguagephp  "Atompckg.Language_php" → "AtompckgCore.Language_php"  + McshEngl.AtompckgCore.Language_php
+  McshTchPrgm000003  #idAtmpkgLanguageperl  "Atompckg.Language_perl" → "AtompckgCore.Language_perl"  + McshEngl.AtompckgCore.Language_perl
+  McshTchPrgm000003  #idAtmpkgLanguagepegjs  "Atompckg.Language_pegjs" → "AtompckgCore.Language_pegjs"  + McshEngl.AtompckgCore.Language_pegjs
+  McshTchPrgm000003  #idAtmpkgLanguageobjectivec  "Atompckg.Language_objective_c" → "AtompckgCore.Language_objective_c"  + McshEngl.AtompckgCore.Language_objective_c
+  McshTchPrgm000003  #idAtmpkgLanguagemustache  "Atompckg.Language_mustache" → "AtompckgCore.Language_mustache"  + McshEngl.AtompckgCore.Language_mustache
+  McshTchPrgm000003  #idAtmpkgLanguagemake  "Atompckg.Language_make" → "AtompckgCore.Language_make"  + McshEngl.AtompckgCore.Language_make
+  McshTchPrgm000003  #idAtmpkgLanguageless  "Atompckg.Language_less" → "AtompckgCore.Language_less"  + McshEngl.AtompckgCore.Language_less
+  McshTchPrgm000003  #idAtmpkgLanguagejson  "Atompckg.Language_json" → "AtompckgCore.Language_json"  + McshEngl.AtompckgCore.Language_json
+  McshTchPrgm000003  #idAtmpkgLanguagejavascript  "Atompckg.Language_javascript" → "AtompckgCore.Language_javascript"  + McshEngl.AtompckgCore.Language_javascript
+  McshTchPrgm000003  #idAtmpkgLanguagejava  "Atompckg.Language_java" → "AtompckgCore.Language_java"  + McshEngl.AtompckgCore.Language_java
+  McshTchPrgm000003  #idAtmpkgLanguagehyperlink  "Atompckg.Language_hyperlink" → "AtompckgCore.Language_hyperlink"  + McshEngl.AtompckgCore.Language_hyperlink
+  McshTchPrgm000003  #idAtmpkgLanguagehtml  "Atompckg.Language_html" → "AtompckgCore.Language_html"  + McshEngl.AtompckgCore.Language_html
+  McshTchPrgm000003  #idAtmpkgLanguagego  "Atompckg.Language_go" → "AtompckgCore.Language_go"  + McshEngl.AtompckgCore.Language_go
+  McshTchPrgm000003  #idAtmpkgLanguagegit  "Atompckg.Language_git" → "AtompckgCore.Language_git"  + McshEngl.AtompckgCore.Language_git
+  McshTchPrgm000003  #idAtmpkgLanguagegfm  "Atompckg.Language_gfm" → "AtompckgCore.Language_gfm"  + McshEngl.AtompckgCore.Language_gfm
+  McshTchPrgm000003  #idAtmpkgLanguagecss  "Atompckg.Language_css" → "AtompckgCore.Language_css"  + McshEngl.AtompckgCore.Language_css
+  McshTchPrgm000003  #idAtmpkgLanguagecsharp  "Atompckg.Language_csharp" → "AtompckgCore.Language_csharp"  + McshEngl.AtompckgCore.Language_csharp
+  McshTchPrgm000003  #idAtmpkgLanguagecoffeescript  "Atompckg.Language_coffee_script" → "AtompckgCore.Language_coffee_script"  + McshEngl.AtompckgCore.Language_coffee_script
+  McshTchPrgm000003  #idAtmpkgLanguageclojure  "Atompckg.Language_clojure" → "AtompckgCore.Language_clojure"  + McshEngl.AtompckgCore.Language_clojure
+  McshTchPrgm000003  #idAtmpkgLanguagec  "Atompckg.Language_c" → "AtompckgCore.Language_c"  + McshEngl.AtompckgCore.Language_c
+  McshTchPrgm000003  #idAtmpkgKeybindingresolver  "Atompckg.Keybinding_resolver" → "AtompckgCore.Keybinding_resolver"  + McshEngl.AtompckgCore.Keybinding_resolver
+  McshTchPrgm000003  #idAtmpkgIncompatiblepackages  "Atompckg.Incompatible_packages" → "AtompckgCore.Incompatible_packages"  + McshEngl.AtompckgCore.Incompatible_packages
+  McshTchPrgm000003  #idAtmpkgImageview  "Atompckg.Image_view" → "AtompckgCore.Image_view"  + McshEngl.AtompckgCore.Image_view
+  McshTchPrgm000003  #idAtmpkgGrammarselector  "Atompckg.Grammar_selector" → "AtompckgCore.Grammar_selector"  + McshEngl.AtompckgCore.Grammar_selector
+  McshTchPrgm000003  #idAtmpkgGotoline  "Atompckg.Go_to_line" → "AtompckgCore.Go_to_line"  + McshEngl.AtompckgCore.Go_to_line
+  McshTchPrgm000003  #idAtmpkgGithub  "Atompckg.Github" → "AtompckgCore.Github"  + McshEngl.AtompckgCore.Github
+  McshTchPrgm000003  #idAtmpkgGitdiff  "Atompckg.Git_diff" → "AtompckgCore.Git_diff"  + McshEngl.AtompckgCore.Git_diff
+  McshTchPrgm000003  #idAtmpkgFuzzyfinder  "Atompckg.Fuzzy_finder" → "AtompckgCore.Fuzzy_finder"  + McshEngl.AtompckgCore.Fuzzy_finder
+  McshTchPrgm000003  #idAtmpkgFindandreplace  "Atompckg.Find_and_replace" → "AtompckgCore.Find_and_replace"  + McshEngl.AtompckgCore.Find_and_replace
+  McshTchPrgm000003  #idAtmpkgExceptionreporting  "Atompckg.Exception_reporting" → "AtompckgCore.Exception_reporting"  + McshEngl.AtompckgCore.Exception_reporting
+  McshTchPrgm000003  #idAtmpkgEncodingselector  "Atompckg.Encoding_selector" → "AtompckgCore.Encoding_selector"  + McshEngl.AtompckgCore.Encoding_selector
+  McshTchPrgm000003  #idAtmpkgDevlivereload  "Atompckg.Dev_live_reload" → "AtompckgCore.Dev_live_reload"  + McshEngl.AtompckgCore.Dev_live_reload
+  McshTchPrgm000003  #idAtmpkgDeprecationcop  "Atompckg.Deprecation_cop" → "AtompckgCore.Deprecation_cop"  + McshEngl.AtompckgCore.Deprecation_cop
+  McshTchPrgm000003  #idAtmpkgDalek  "Atompckg.Dalek" → "AtompckgCore.Dalek"  + McshEngl.AtompckgCore.Dalek
+  McshTchPrgm000003  #idAtmpkgCommandpalette  "Atompckg.Command_palette" → "AtompckgCore.Command_palette"  + McshEngl.AtompckgCore.Command_palette
+  McshTchPrgm000003  #idAtmpkgBracketmatcher  "Atompckg.Bracket_matcher" → "AtompckgCore.Bracket_matcher"  + McshEngl.AtompckgCore.Bracket_matcher
+  McshTchPrgm000003  #idAtmpkgBookmarks  "Atompckg.Bookmarks" → "AtompckgCore.Bookmarks"  + McshEngl.AtompckgCore.Bookmarks
+  McshTchPrgm000003  #idAtmpkgBackgroundtips  "Atompckg.Background_tips" → "AtompckgCore.Background_tips"  + McshEngl.AtompckgCore.Background_tips
+  McshTchPrgm000003  #idAtmpkgAutosave  "Atompckg.Autosave" → "AtompckgCore.Autosave"  + McshEngl.AtompckgCore.Autosave
+  McshTchPrgm000003  #idAtmpkgAutoflow  "Atompckg.Autoflow" → "AtompckgCore.Autoflow"  + McshEngl.AtompckgCore.Autoflow
+  McshTchPrgm000003  #idAtmpkgAutocompletesnippets  "Atompckg.Autocomplete_snippets" → "AtompckgCore.Autocomplete_snippets"  + McshEngl.AtompckgCore.Autocomplete_snippets
+  McshTchPrgm000003  #idAtmpkgAutocompleteplus  "Atompckg.Autocomplete_plus" → "AtompckgCore.Autocomplete_plus"  + McshEngl.AtompckgCore.Autocomplete_plus
+  McshTchPrgm000003  #idAtmpkgAutocompletehtml  "Atompckg.Autocomplete_html" → "AtompckgCore.Autocomplete_html"  + McshEngl.AtompckgCore.Autocomplete_html
+  McshTchPrgm000003  #idAtmpkgAutocompletecss  "Atompckg.Autocomplete_css" → "AtompckgCore.Autocomplete_css"  + McshEngl.AtompckgCore.Autocomplete_css
+  McshTchPrgm000003  #idAtmpkgAutocompleteatomapi  "Atompckg.Autocomplete_atom_api" → "AtompckgCore.Autocomplete_atom_api"  + McshEngl.AtompckgCore.Autocomplete_atom_api
+  McshTchPrgm000003  #idAtmpkgArchiveview  "Atompckg.Archive_view" → "AtompckgCore.Archive_view"  + McshEngl.AtompckgCore.Archive_view
+  McshTchPrgm000003  #idAtmpkgAbout  "Atompckg.About" → "AtompckgCore.About"  + McshEngl.AtompckgCore.About
+  McshTchInf000014  #idLWasmstcTelcl  "Wasmcmnd.tee_local" → "WasmcmndFlowNo.tee_local"  + McshEngl.WasmcmndFlowNo.tee_local
+  McshTchInf000014  #idLWasmstcStoreI64  "Wasmcmnd.i64.store" → "WasmcmndStore.i64.store"  + McshEngl.WasmcmndStore.i64.store
+  McshTchInf000014  #idLWasmstcStoreI6432  "Wasmcmnd.i64.store32" → "WasmcmndStore.i64.store32"  + McshEngl.WasmcmndStore.i64.store32
+  McshTchInf000014  #idLWasmstcStoreI6416  "Wasmcmnd.i64.store16" → "WasmcmndStore.i64.store16"  + McshEngl.WasmcmndStore.i64.store16
+  McshTchInf000014  #idLWasmstcStoreI648  "Wasmcmnd.i64.store8" → "WasmcmndStore.i64.store8"  + McshEngl.WasmcmndStore.i64.store8
+  McshTchInf000014  #idLWasmstcStoreI32  "Wasmcmnd.i32.store" → "WasmcmndStore.i32.store"  + McshEngl.WasmcmndStore.i32.store
+  McshTchInf000014  #idLWasmstcStoreI3216  "Wasmcmnd.i32.store16" → "WasmcmndStore.i32.store16"  + McshEngl.WasmcmndStore.i32.store16
+  McshTchInf000014  #idLWasmstcStoreI328  "Wasmcmnd.i32.store8" → "WasmcmndStore.i32.store8"  + McshEngl.WasmcmndStore.i32.store8
+  McshTchInf000014  #idLWasmstcStoreF64  "Wasmcmnd.f64.store" → "WasmcmndStore.f64.store"  + McshEngl.WasmcmndStore.f64.store
+  McshTchInf000014  #idLWasmstcStoreF32  "Wasmcmnd.f32.store" → "WasmcmndStore.f32.store"  + McshEngl.WasmcmndStore.f32.store
+  McshTchInf000014  #idLWasmstcStore  "Wasmcmnd.store" → "WasmcmndFlowNo.store"  + McshEngl.WasmcmndFlowNo.store
+  McshTchInf000014  #idLWasmstcStlcl  "Wasmcmnd.set_local" → "WasmcmndFlowNo.set_local"  + McshEngl.WasmcmndFlowNo.set_local
+  McshTchInf000014  #idLWasmstcStgbl  "Wasmcmnd.set_global" → "WasmcmndFlowNo.set_global"  + McshEngl.WasmcmndFlowNo.set_global
+  McshTchInf000014  #idLWasmstcPrmcSlct  "Wasmcmnd.select" → "WasmcmndFlowNo.select"  + McshEngl.WasmcmndFlowNo.select
+  McshTchInf000014  #idLWasmstcLoadI64ld  "Wasmcmnd.i64.load" → "WasmcmndLoad.i64.load"  + McshEngl.WasmcmndLoad.i64.load
+  McshTchInf000014  #idLWasmstcLoadI6432u  "Wasmcmnd.i64.load32_u" → "WasmcmndLoad.i64.load32_u"  + McshEngl.WasmcmndLoad.i64.load32_u
+  McshTchInf000014  #idLWasmstcLoadI6432s  "Wasmcmnd.i64.load32_s" → "WasmcmndLoad.i64.load32_s"  + McshEngl.WasmcmndLoad.i64.load32_s
+  McshTchInf000014  #idLWasmstcLoadI6416u  "Wasmcmnd.i64.load16_u" → "WasmcmndLoad.i64.load16_u"  + McshEngl.WasmcmndLoad.i64.load16_u
+  McshTchInf000014  #idLWasmstcLoadI6416s  "Wasmcmnd.i64.load16_s" → "WasmcmndLoad.i64.load16_s"  + McshEngl.WasmcmndLoad.i64.load16_s
+  McshTchInf000014  #idLWasmstcLoadI648u  "Wasmcmnd.i64.load8_u" → "WasmcmndLoad.i64.load8_u"  + McshEngl.WasmcmndLoad.i64.load8_u
+  McshTchInf000014  #idLWasmstcLoadI648s  "Wasmcmnd.i64.load8_s" → "WasmcmndLoad.i64.load8_s"  + McshEngl.WasmcmndLoad.i64.load8_s
+  McshTchInf000014  #idLWasmstcLoadI32ld  "Wasmcmnd.i32.load" → "WasmcmndLoad.i32.load"  + McshEngl.WasmcmndLoad.i32.load
+  McshTchInf000014  #idLWasmstcLoadI3216u  "Wasmcmnd.i32.load16_u" → "WasmcmndLoad.i32.load16_u"  + McshEngl.WasmcmndLoad.i32.load16_u
+  McshTchInf000014  #idLWasmstcLoadI3216s  "Wasmcmnd.i32.load16_s" → "WasmcmndLoad.i32.load16_s"  + McshEngl.WasmcmndLoad.i32.load16_s
+  McshTchInf000014  #idLWasmstcLoadI328u  "Wasmcmnd.i32.load8_u" → "WasmcmndLoad.i32.load8_u"  + McshEngl.WasmcmndLoad.i32.load8_u
+  McshTchInf000014  #idLWasmstcLoadI32  "Wasmcmnd.i32.load8_s" → "WasmcmndLoad.i32.load8_s"  + McshEngl.WasmcmndLoad.i32.load8_s
+  McshTchInf000014  #idLWasmstcLoadF64  "Wasmcmnd.f64.load" → "WasmcmndLoad.f64.load"  + McshEngl.WasmcmndLoad.f64.load
+  McshTchInf000014  #idLWasmstcLoadF32  "Wasmcmnd.f32.load" → "WasmcmndLoad.f32.load"  + McshEngl.WasmcmndLoad.f32.load
+  McshTchInf000014  #idLWasmstcLoad  "Wasmcmnd.load" → "WasmcmndFlowNo.load"  + McshEngl.WasmcmndFlowNo.load
+  McshTchInf000014  #idLWasmstcI32mul  "Wasmcmnd.i32.mul" → "WasmcmndFlowNo.i32.mul"  + McshEngl.WasmcmndFlowNo.i32.mul
+  McshTchInf000014  #idLWasmstcI32cnst  "Wasmcmnd.i32.const" → "WasmcmndFlowNo.i32.const"  + McshEngl.WasmcmndFlowNo.i32.const
+  McshTchInf000014  #idLWasmstcI32add  "Wasmcmnd.i32.add" → "WasmcmndFlowNo.i32.add"  + McshEngl.WasmcmndFlowNo.i32.add
+  McshTchInf000014  #idLWasmstcGrwmmr  "Wasmcmnd.grow_memory" → "WasmcmndFlowNo.grow_memory"  + McshEngl.WasmcmndFlowNo.grow_memory
+  McshTchInf000014  #idLWasmstcGtlcl  "Wasmcmnd.get_local" → "WasmcmndFlowNo.get_local"  + McshEngl.WasmcmndFlowNo.get_local
+  McshTchInf000014  #idLWasmstcGtgbl  "Wasmcmnd.get_global" → "WasmcmndFlowNo.get_global"  + McshEngl.WasmcmndFlowNo.get_global
+  McshTchInf000014  #idLWasmstcPrmcDrp  "Wasmcmnd.drop" → "WasmcmndFlowNo.drop"  + McshEngl.WasmcmndFlowNo.drop
+  McshTchInf000014  #idLWasmstcCrtmmr  "Wasmcmnd.current_memory" → "WasmcmndFlowNo.current_memory"  + McshEngl.WasmcmndFlowNo.current_memory
+  McshTchInf000014  #idLWasmstcCall  "Wasmcmnd.call" → "WasmcmndFlowNo.call"  + McshEngl.WasmcmndFlowNo.call
+  McshCor000002  #idMcsattNamcvnAttPrnt  "Mcsnotn.attribute.parent" → "McsnotnAttr.attribute.parent"  + McshEngl.McsnotnAttr.attribute.parent
+  McshCor000002  #idMcsattNamcvnAttChld  "Mcsnotn.attribute.child" → "McsnotnAttr.attribute.child"  + McshEngl.McsnotnAttr.attribute.child
+  McshCor000002  #idMcsattWhlNSpcdvn  "Mcsattr.specifics_division" → "McsattSpecific.specifics_division"  + McshEngl.McsattSpecific.specifics_division
+  McshCor000002  #idMcsattIdvl  "Mcsattr.individual" → "McsattSpecific.individual"  + McshEngl.McsattSpecific.individual
+  McshCor000002  #idMcsattEvlg  "Mcsattr.evoluting" → "McsattDoing.evoluting"  + McshEngl.McsattDoing.evoluting
+  McshCor000002  #idMcsattWhlNAthr  "Mcsattr.author" → "McsattSupporter.author"  + McshEngl.McsattSupporter.author
+  McshCor000010  #idQntRlvAlmst  "quantoRela.less.almost" → "RltnQuantLess.less.almost"  + McshEngl.RltnQuantLess.less.almost
+  McshCor000010  #idQntNbrK2100  "number.100'000'000" → "numberIndividual.100'000'000"  + McshEngl.numberIndividual.100'000'000
+  McshCor000010  #idQntNbrK22  "number.2'000'000" → "numberIndividual.2'000'000"  + McshEngl.numberIndividual.2'000'000
+  McshCor000010  #idQntNbr999  "number.999" → "numberIndividual.999"  + McshEngl.numberIndividual.999
+  McshCor000010  #idQntNbr200  "number.200" → "numberIndividual.200"  + McshEngl.numberIndividual.200
+  McshCor000010  #idQntNbr101  "number.101" → "numberIndividual.101"  + McshEngl.numberIndividual.101
+  McshCor000010  #idQntNbr100  "number.100" → "numberIndividual.100"  + McshEngl.numberIndividual.100
+  McshCor000010  #idQntNbr99  "number.99" → "numberIndividual.99"  + McshEngl.numberIndividual.99
+  McshCor000010  #idQntNbr21  "number.21" → "numberIndividual.21"  + McshEngl.numberIndividual.21
+  McshCor000010  #idQntNbr20  "number.20" → "numberIndividual.20"  + McshEngl.numberIndividual.20
+  McshCor000010  #idQntNbr13  "number.13" → "numberIndividual.13"  + McshEngl.numberIndividual.13
+  McshCor000010  #idQntNbr12  "number.12" → "numberIndividual.12"  + McshEngl.numberIndividual.12
+  McshCor000010  #idQntNbr11  "number.11" → "numberIndividual.11"  + McshEngl.numberIndividual.11
+  McshCor000010  #idQntNbr10  "number.10" → "numberIndividual.10"  + McshEngl.numberIndividual.10
+  McshCor000010  #idQntNbr9  "number.9" → "numberIndividual.9"  + McshEngl.numberIndividual.9
+  McshCor000010  #idQntNbr8  "number.8" → "numberIndividual.8"  + McshEngl.numberIndividual.8
+  McshCor000010  #idQntNbr7  "number.7" → "numberIndividual.7"  + McshEngl.numberIndividual.7
+  McshCor000010  #idQntNbr6  "number.6" → "numberIndividual.6"  + McshEngl.numberIndividual.6
+  McshCor000010  #idQntNbr5  "number.5" → "numberIndividual.5"  + McshEngl.numberIndividual.5
+  McshCor000010  #idQntNbr4  "number.4" → "numberIndividual.4"  + McshEngl.numberIndividual.4
+  McshCor000010  #idQntNbr3  "number.3" → "numberIndividual.3"  + McshEngl.numberIndividual.3
+  McshCor000010  #idQntNbr2  "number.2" → "numberIndividual.2"  + McshEngl.numberIndividual.2
+  McshCor000010  #idQntNbr0  "number.0" → "numberIndividual.0"  + McshEngl.numberIndividual.0
+  McshTchInf000010  #idLJsgnfAsncawt  "Jsf.async_await" → "async_function.async_await"  + McshEngl.async_function.async_await
+  McshLag000009  #idL0017phnmVwlB  "Hmmdphnm.vowelBo of speech" → "Hmmdphnm.vowelBo"  (name exists)
+  McshLag000009  #idL0017phnmVwlNBrth  "HmmdphnmCons.breathy" → "ConsphnmDivMode.breathy"  + McshEngl.ConsphnmDivMode.breathy
+  McshLag000009  #idL0017phnmVwlNAspd  "HmmdphnmCons.aspirated" → "ConsphnmDivMode.aspirated"  + McshEngl.ConsphnmDivMode.aspirated
+  McshLag000009  #idL0017phnmVwlNTril  "HmmdphnmCons.trill" → "ConsphnmDivMode.trill"  + McshEngl.ConsphnmDivMode.trill
+  McshLag000009  #idL0017phnmVwlNLqid  "HmmdphnmCons.liquid" → "ConsphnmDivMode.liquid"  + McshEngl.ConsphnmDivMode.liquid
+  McshLag000009  #idL0017phnmVwlNSnrt  "HmmdphnmCons.sonorant" → "ConsphnmDivMode.sonorant"  + McshEngl.ConsphnmDivMode.sonorant
+  McshLag000009  #idL0017phnmVwlNObrt  "HmmdphnmCons.obstruent" → "ConsphnmDivMode.obstruent"  + McshEngl.ConsphnmDivMode.obstruent
+  McshLag000009  #idL0017phnmVwlNLtrl  "HmmdphnmCons.lateral" → "ConsphnmDivMode.lateral"  + McshEngl.ConsphnmDivMode.lateral
+  McshLag000009  #idL0017phnmVwlNSblt  "HmmdphnmCons.sibilant" → "ConsphnmDivMode.sibilant"  + McshEngl.ConsphnmDivMode.sibilant
+  McshLag000009  #idL0017phnmFrtv  "HmmdphnmCons.fricative" → "ConsphnmDivMode.fricative"  + McshEngl.ConsphnmDivMode.fricative
+  McshLag000009  #idL0017phnmAfrt  "HmmdphnmCons.affricat" → "ConsphnmDivMode.affricat"  + McshEngl.ConsphnmDivMode.affricat
+  McshLag000009  #idL0017phnmApxt  "HmmdphnmCons.approximant" → "ConsphnmDivMode.approximant"  + McshEngl.ConsphnmDivMode.approximant
+  McshLag000009  #idL0017phnmStp  "HmmdphnmCons.stop" → "ConsphnmDivMode.stop"  + McshEngl.ConsphnmDivMode.stop
+  McshLag000009  #idL0017phnmVwlNNasl  "HmmdphnmCons.nasal" → "ConsphnmDivPlace.nasal"  + McshEngl.ConsphnmDivPlace.nasal
+  McshLag000009  #idL0017phnmVwlNOral  "HmmdphnmCons.oral" → "ConsphnmDivPlace.oral"  + McshEngl.ConsphnmDivPlace.oral
+  McshLag000009  #idL0017phnmVwlNVelr  "HmmdphnmCons.velar" → "ConsphnmDivPlace.velar"  + McshEngl.ConsphnmDivPlace.velar
+  McshLag000009  #idL0017phnmVwlNPltl  "HmmdphnmCons.palatal" → "ConsphnmDivPlace.palatal"  + McshEngl.ConsphnmDivPlace.palatal
+  McshLag000009  #idL0017phnmVwlNRtfx  "HmmdphnmCons.retroflex" → "ConsphnmDivPlace.retroflex"  + McshEngl.ConsphnmDivPlace.retroflex
+  McshLag000009  #idL0017phnmVwlNPavr  "HmmdphnmCons.post_alveolar" → "ConsphnmDivPlace.post_alveolar"  + McshEngl.ConsphnmDivPlace.post_alveolar
+  McshLag000009  #idL0017phnmVwlNAlvr  "HmmdphnmCons.alveolar" → "ConsphnmDivPlace.alveolar"  + McshEngl.ConsphnmDivPlace.alveolar
+  McshLag000009  #idL0017phnmVwlNDntl  "HmmdphnmCons.dental" → "ConsphnmDivPlace.dental"  + McshEngl.ConsphnmDivPlace.dental
+  McshLag000009  #idL0017phnmVwlNApcl  "HmmdphnmCons.apical" → "ConsphnmDivPlace.apical"  + McshEngl.ConsphnmDivPlace.apical
+  McshLag000009  #idL0017phnmVwlNBlbl  "HmmdphnmCons.bilabial" → "ConsphnmDivPlace.bilabial"  + McshEngl.ConsphnmDivPlace.bilabial
+  McshLag000009  #idL0017phnmVwlNGltl  "ConsphnmDivPlace.glottal" → "PhnmPharygeal.glottal"  + McshEngl.PhnmPharygeal.glottal
+  McshLag000009  #idL0017phnmVwlN  "Hmmdphnm.vowelNo of speech" → "Hmmdphnm.vowelNo"  (name exists)
+  McshLag000009  #idL0017phnmVwl  "Hmmdphnm.vowel of speech" → "Hmmdphnm.vowel"  (name exists)
+  McshLag000009  #idL0017phnmPhn  "Hmmdphnm.phone of speech" → "Hmmdphnm.phone"  (name exists)
+  McshLag000009  #idL0017phnmAlfn  "Hmmdphnm.allophone of speech" → "Hmmdphnm.allophone"  (name exists)
+  McshLag000009  #idL0017phnmAgg  "Hmmdphnm.aggregate of speech" → "Hmmdphnm.aggregate"  (name exists)
+  McshLag000006  #idCharUcdstdcpBlk  "Uccp.block of Unicode" → "Uccp.block"  + McshEngl.Uccp.block
+  McshLag000006  #idCharUcdstdcpPln  "Uccp.plane of Unicode" → "Uccp.plane"  + McshEngl.Uccp.plane
+  McshTchInf000039  #idLKnlg010mngrWprtg  "klmrOntology.WebProtégé of lagoOntg" → "klmrOntology.WebProtégé"  (name exists)
+  McshTchInf000039  #idLCyclappdngAsk  "Cycdoing.ASK of klmrCyc" → "Cycdoing.ASK"  (name exists)
+  McshHlth000013  #idFoodHmn175  "drinkWine.αφρώδης" → "wineCorbon_dioxide_division.αφρώδης"  + McshEngl.wineCorbon_dioxide_division.αφρώδης
+  McshHlth000013  #idFoodHmn174  "drinkWine.ημιαφρώδης" → "wineCorbon_dioxide_division.ημιαφρώδης"  + McshEngl.wineCorbon_dioxide_division.ημιαφρώδης
+  McshHlth000013  #idFoodHmn173  "drinkWine.ήσυχο" → "wineCorbon_dioxide_division.ήσυχο"  + McshEngl.wineCorbon_dioxide_division.ήσυχο
+  McshHlth000013  #idFoodHmn172  "drinkWine.γλυκό" → "wineSweetness.γλυκό"  + McshEngl.wineSweetness.γλυκό
+  McshHlth000013  #idFoodHmn171  "drinkWine.ημίγλυκο" → "wineSweetness.ημίγλυκο"  + McshEngl.wineSweetness.ημίγλυκο
+  McshHlth000013  #idFoodHmn170  "drinkWine.ημίξηρο" → "wineSweetness.ημίξηρο"  + McshEngl.wineSweetness.ημίξηρο
+  McshHlth000013  #idFoodHmn169  "drinkWine.ξηρό" → "wineSweetness.ξηρό"  + McshEngl.wineSweetness.ξηρό
+  McshHlth000013  #idFoodHmn168  "drinkWine.κόκκινο" → "wineColor_division.κόκκινο"  + McshEngl.wineColor_division.κόκκινο
+  McshHlth000013  #idFoodHmn167  "drinkWine.ροζέ" → "wineColor_division.ροζέ"  + McshEngl.wineColor_division.ροζέ
+  McshHlth000013  #idFoodHmn166  "drinkWine.λευκό" → "wineColor_division.λευκό"  + McshEngl.wineColor_division.λευκό
+  McshHlth000013  #idFoodHmn165  "drinkWine.μάρκας" → "wineTable.μάρκας"  + McshEngl.wineTable.μάρκας
+  McshHlth000013  #idFoodHmn164  "drinkWine.ονομασία_κατά_παράδοση" → "wineTable.ονομασία_κατά_παράδοση"  + McshEngl.wineTable.ονομασία_κατά_παράδοση
+  McshHlth000013  #idFoodHmn163  "drinkWine.τοπικός" → "wineTable.τοπικός"  + McshEngl.wineTable.τοπικός
+  McshHlth000013  #idFoodHmn162  "drinkWine.επιτραπέζιος_οίνος" → "wineLaw_division.επιτραπέζιος_οίνος"  + McshEngl.wineLaw_division.επιτραπέζιος_οίνος
+  McshHlth000013  #idFoodHmn161  "drinkWine.προέλευσης_οίνος" → "wineLaw_division.προέλευσης_οίνος"  + McshEngl.wineLaw_division.προέλευσης_οίνος
+  McshHlth000013  #idFoodHmn025  "drink.7_up" → "foodSoft_drink.7_up"  + McshEngl.foodSoft_drink.7_up
+  McshHlth000013  #idFoodHmn019  "drink.alcoholic.tsipuro" → "drinkAlchoholic.alcoholic.tsipuro"  + McshEngl.drinkAlchoholic.alcoholic.tsipuro
+  McshHlth000013  #idFoodHmn023  "drink.alcoholic.beer" → "drinkAlchoholic.alcoholic.beer"  + McshEngl.drinkAlchoholic.alcoholic.beer
+  McshHlth000013  #idFoodHmn229  "drink.alcoholic.baijiu" → "drinkAlchoholic.alcoholic.baijiu"  + McshEngl.drinkAlchoholic.alcoholic.baijiu
+  McshTchInf000018  #idEthctpSccSol  "Ethrcontract.solidity" → "EthrcontractSourcecode.solidity"  + McshEngl.EthrcontractSourcecode.solidity
+  McshTchInf000021  #idEosevuEOSRfnd  "DvEOS.REFUND" → "DvEOSUnstaked.REFUND"  + McshEngl.DvEOSUnstaked.REFUND
+  McshTchInf000021  #idEosHumnTnhrWhl  "AgntEosz'human.WHALE" → "Eoszaccount_owner.WHALE"  + McshEngl.Eoszaccount_owner.WHALE
+  McshTchInf000021  #idEosHumnTnhrVtr  "AgntEosz'human.VOTER" → "Eoszaccount_owner.VOTER"  + McshEngl.Eoszaccount_owner.VOTER
+  McshStn000009  #idSocHumnatt009OfclN  "Soclang.officialN of society" → "Soclang.officialN"  + McshEngl.Soclang.officialN
+  McshStn000009  #idSocHumnatt009Ofcl  "Soclang.official of society" → "Soclang.official"  (name exists)
+  McshStn000009  #idSocHumnatt009Aggr  "Soclang.aggregate of society" → "Soclang.aggregate"  (name exists)
+  McshStn000009  #idSocHumnatt041  "SoctHuman.ethnic-group of society" → "SoctHuman.ethnic-group"  (name exists)
+  McshStn000009  #idSocHumnatt038  "SoctHuman.resident of society" → "SoctHuman.resident"  (name exists)
+  McshStn000009  #idSocHumnatt033  "Socforeigner.tourist of society" → "Socforeigner.tourist"  (name exists)
+  McshStn000009  #idSocHumnatt037  "Socforeigner.resident of society" → "Socforeigner.resident"  + McshEngl.Socforeigner.resident
+  McshStn000009  #idSocHumnatt032  "Socforeigner.immigrant of society" → "Socforeigner.immigrant"  (name exists)
+  McshStn000009  #idSocHumnatt031  "Socforeigner.refugee of society" → "Socforeigner.refugee"  + McshEngl.Socforeigner.refugee
+  McshStn000009  #idSocHumnatt030  "SoctHuman.citizenNo of society" → "SoctHuman.citizenNo"  (name exists)
+  McshStn000009  #idSocctzn  "SoctHuman.citizen of society" → "SoctHuman.citizen"  (name exists)
+  McshStn000050  #idLKhmrunitLttrVwel6085  "Khmrletr.6085- ៅ-[aw-ɨw]-AU" → "KhmrletrVowl.6085- ៅ-[aw-ɨw]-AU"  + McshEngl.KhmrletrVowl.6085__ៅ_[aw_ɨw]_AU
+  McshStn000050  #idLKhmrunitLttrVwel6084  "Khmrletr.6084- ោ-[ao-ɔɔ]-OO" → "KhmrletrVowl.6084- ោ-[ao-ɔɔ]-OO"  + McshEngl.KhmrletrVowl.6084__ោ_[ao_ɔɔ]_OO
+  McshStn000050  #idLKhmrunitLttrVwel6083  "Khmrletr.6083- ៃ-[aj-əj]-AI" → "KhmrletrVowl.6083- ៃ-[aj-əj]-AI"  + McshEngl.KhmrletrVowl.6083__ៃ_[aj_əj]_AI
+  McshStn000050  #idLKhmrunitLttrVwel6082  "Khmrletr.6082- ែ-[ae-ɛɛ]-AE" → "KhmrletrVowl.6082- ែ-[ae-ɛɛ]-AE"  + McshEngl.KhmrletrVowl.6082__ែ_[ae_ɛɛ]_AE
+  McshStn000050  #idLKhmrunitLttrVwel6081  "Khmrletr.6081- េ-[ei-ii]-E" → "KhmrletrVowl.6081- េ-[ei-ii]-E"  + McshEngl.KhmrletrVowl.6081__េ_[ei_ii]_E
+  McshStn000050  #idLKhmrunitLttrVwel6080  "Khmrletr.6080- ៀ-[iə]-IE" → "KhmrletrVowl.6080- ៀ-[iə]-IE"  + McshEngl.KhmrletrVowl.6080__ៀ_[iə]_IE
+  McshStn000050  #idLKhmrunitLttrVwel6079  "Khmrletr.6079- ឿ-[ɨə]-YA" → "KhmrletrVowl.6079- ឿ-[ɨə]-YA"  + McshEngl.KhmrletrVowl.6079__ឿ_[ɨə]_YA
+  McshStn000050  #idLKhmrunitLttrVwel6078  "Khmrletr.6078- ើ-[aə-əə]-OE" → "KhmrletrVowl.6078- ើ-[aə-əə]-OE"  + McshEngl.KhmrletrVowl.6078__ើ_[aə_əə]_OE
+  McshStn000050  #idLKhmrunitLttrVwel6077  "Khmrletr.6077- ួ-UA" → "KhmrletrVowl.6077- ួ-UA"  + McshEngl.KhmrletrVowl.6077__ួ_UA
+  McshStn000050  #idLKhmrunitLttrVwel6076  "Khmrletr.6076- ូ-[ou-uu]-UU" → "KhmrletrVowl.6076- ូ-[ou-uu]-UU"  + McshEngl.KhmrletrVowl.6076__ូ_[ou_uu]_UU
+  McshStn000050  #idLKhmrunitLttrVwel6075  "Khmrletr.6075- ុ-[o-u]-U" → "KhmrletrVowl.6075- ុ-[o-u]-U"  + McshEngl.KhmrletrVowl.6075__ុ_[o_u]_U
+  McshStn000050  #idLKhmrunitLttrVwel6074  "Khmrletr.6074_ឺ_YY" → "KhmrletrVowl.6074_ឺ_YY"  + McshEngl.KhmrletrVowl.6074_ឺ_YY
+  McshStn000050  #idLKhmrunitLttrVwel6073  "Khmrletr.6073_ឹ_Y" → "KhmrletrVowl.6073_ឹ_Y"  + McshEngl.KhmrletrVowl.6073_ឹ_Y
+  McshStn000050  #idLKhmrunitLttrVwel6072  "Khmrletr.6072- ី-[əj-ɨj]-II" → "KhmrletrVowl.6072- ី-[əj-ɨj]-II"  + McshEngl.KhmrletrVowl.6072__ី_[əj_ɨj]_II
+  McshStn000050  #idLKhmrunitLttrVwel6071  "Khmrletr.6071- ិ-[e-ə]-I" → "KhmrletrVowl.6071- ិ-[e-ə]-I"  + McshEngl.KhmrletrVowl.6071__ិ_[e_ə]_I
+  McshStn000050  #idLKhmrunitLttrVwel6070  "Khmrletr.6070- ា-[aː-iə]-AA" → "KhmrletrVowl.6070- ា-[aː-iə]-AA"  + McshEngl.KhmrletrVowl.6070__ា_[aː_iə]_AA
+  McshStn000050  #idLKhmrunitLttrVwel6067  "Khmrletr.6067_ឳ_QAU" → "KhmrletrVowl.6067_ឳ_QAU"  + McshEngl.KhmrletrVowl.6067_ឳ_QAU
+  McshStn000050  #idLKhmrunitLttrVwel6065  "Khmrletr.6065_ឱ_QOO" → "KhmrletrVowl.6065_ឱ_QOO"  + McshEngl.KhmrletrVowl.6065_ឱ_QOO
+  McshStn000050  #idLKhmrunitLttrVwel6064  "Khmrletr.6064_ឰ_QAI" → "KhmrletrVowl.6064_ឰ_QAI"  + McshEngl.KhmrletrVowl.6064_ឰ_QAI
+  McshStn000050  #idLKhmrunitLttrVwel6063  "Khmrletr.6063_ឯ_QE" → "KhmrletrVowl.6063_ឯ_QE"  + McshEngl.KhmrletrVowl.6063_ឯ_QE
+  McshStn000050  #idLKhmrunitLttrVwel6060  "Khmrletr.6060_ឬ_RYY" → "KhmrletrVowl.6060_ឬ_RYY"  + McshEngl.KhmrletrVowl.6060_ឬ_RYY
+  McshStn000050  #idLKhmrunitLttrVwel6059  "Khmrletr.6059_ឫ_RY" → "KhmrletrVowl.6059_ឫ_RY"  + McshEngl.KhmrletrVowl.6059_ឫ_RY
+  McshStn000050  #idLKhmrunitLttrVwel6058  "Khmrletr.6058_ឪ_QUUV" → "KhmrletrVowl.6058_ឪ_QUUV"  + McshEngl.KhmrletrVowl.6058_ឪ_QUUV
+  McshStn000050  #idLKhmrunitLttrVwel6055  "Khmrletr.6055_ឧ_QU" → "KhmrletrVowl.6055_ឧ_QU"  + McshEngl.KhmrletrVowl.6055_ឧ_QU
+  McshStn000050  #idLKhmrunitLttrVwel6053  "Khmrletr.6053_ឥ_QI" → "KhmrletrVowl.6053_ឥ_QI"  + McshEngl.KhmrletrVowl.6053_ឥ_QI
+  McshOgm000005  #idHrmnHmn021  "hormoneHumn.progesterone" → "HrmnHumnFemale.progesterone"  + McshEngl.HrmnHumnFemale.progesterone
+  McshOgm000005  #idHrmnHmn019  "hormoneHumn.estrogen" → "HrmnHumnFemale.estrogen"  + McshEngl.HrmnHumnFemale.estrogen
+  McshCor000006  #idTimeUomEra  "timeUom.geologic_era" → "timeUomGeologic.geologic_era"  + McshEngl.timeUomGeologic.geologic_era
+  McshOgm000007  #idCellOgmatt043001  "signalOgsm.biochemical_001" → "chemical_signalOgsm.biochemical_001"  + McshEngl.chemical_signalOgsm.biochemical_001
+  McshHlth000005  #idMsclHmn048  "OganMuscle.hyoid_048" → "muscleNeck.hyoid_048"  + McshEngl.muscleNeck.hyoid_048
+  McshHlth000005  #idMsclHmn041  "OganMuscle.splenius_capitis_041" → "muscleNeck.splenius_capitis_041"  + McshEngl.muscleNeck.splenius_capitis_041
+  McshHlth000005  #idMsclHmn040  "OganMuscle.splenius_cervicis_040" → "muscleNeck.splenius_cervicis_040"  + McshEngl.muscleNeck.splenius_cervicis_040
+  McshHlth000005  #idMsclHmn058  "OganMuscle.scalene_058" → "muscleNeck.scalene_058"  + McshEngl.muscleNeck.scalene_058
+  McshHlth000005  #idMsclHmn011  "OganMuscle.sternocleidomastoid_011" → "muscleNeck.sternocleidomastoid_011"  + McshEngl.muscleNeck.sternocleidomastoid_011
+  McshHlth000005  #idMsclHmn076  "OganMuscle.pharyngeal_constrictor.superior_076" → "musclePharyngeal_constrictor.pharyngeal_constrictor.superior_076"  + McshEngl.musclePharyngeal_constrictor.pharyngeal_constrictor.superior_076
+  McshHlth000005  #idMsclHmn075  "OganMuscle.pharyngeal_constrictor.middle_075" → "musclePharyngeal_constrictor.pharyngeal_constrictor.middle_075"  + McshEngl.musclePharyngeal_constrictor.pharyngeal_constrictor.middle_075
+  McshHlth000005  #idMsclHmn074  "OganMuscle.pharyngeal_constrictor.inferior_074" → "musclePharyngeal_constrictor.pharyngeal_constrictor.inferior_074"  + McshEngl.musclePharyngeal_constrictor.pharyngeal_constrictor.inferior_074
+  McshTchInf000015  #idAlgntsvcSplchn  "Agntsrvc.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING" → "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING"  + McshEngl.AgntsrvcSectorPrdnTrade.sectorPrdn.trade.SUPPLY_CHAIN_MANAGING
+  McshTchInf000015  #idAlgntsvcInvcmng  "Agntsrvc.sectorPrdn.trade.INVOICE_MANAGING" → "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.INVOICE_MANAGING"  + McshEngl.AgntsrvcSectorPrdnTrade.sectorPrdn.trade.INVOICE_MANAGING
+  McshTchInf000015  #idAlgntsvcAstexc  "Agntsrvc.sectorPrdn.trade.ASSET_EXCHANGE" → "AgntsrvcSectorPrdnTrade.sectorPrdn.trade.ASSET_EXCHANGE"  + McshEngl.AgntsrvcSectorPrdnTrade.sectorPrdn.trade.ASSET_EXCHANGE
+  McshTchInf000032  #idGitcmdStash  "Gitcmd.stash" → "GitcmdBranmerg.stash"  + McshEngl.GitcmdBranmerg.stash
+  McshTchInf000032  #idGitcmdTag  "Gitcmd.tag" → "GitcmdBranmerg.tag"  + McshEngl.GitcmdBranmerg.tag
+  McshTchInf000032  #idGitcmdLog  "Gitcmd.log" → "GitcmdBranmerg.log"  + McshEngl.GitcmdBranmerg.log
+  McshTchInf000032  #idGitcmdCheckout  "Gitcmd.checkout" → "GitcmdBranmerg.checkout"  + McshEngl.GitcmdBranmerg.checkout
+  McshTchInf000032  #idGitcmdMerge  "Gitcmd.merge" → "GitcmdBranmerg.merge"  + McshEngl.GitcmdBranmerg.merge
+  McshTchInf000032  #idGitcmdBranch  "Gitcmd.branch" → "GitcmdBranmerg.branch"  + McshEngl.GitcmdBranmerg.branch
+  McshTchInf000007  #idLxmlgoenttPrsdN  "Xmlentity.unparsed of XmlDoc" → "Xmlentity.unparsed"  (name exists)
+  McshTchInf000007  #idLxmlgoenttPrsd  "Xmlentity.parsed of XmlDoc" → "Xmlentity.parsed"  (name exists)
+  McshTchInf000007  #idLxmlgoenttDoc  "Xmlentity.root of XmlDoc" → "Xmlentity.root"  (name exists)
+  McshLag000008  #idL0016untTrmN  "Alfaunit.termNo of AlfaviewText" → "Alfaunit.termNo"  (name exists)
+  McshLag000008  #idL0016ltrSml  "Hmmdletr.small of AlfaviewText" → "Hmmdletr.small"  (name exists)
+  McshLag000008  #idL0016ltrCptl  "Hmmdletr.capital of AlfaviewText" → "Hmmdletr.capital"  (name exists)
+  McshLag000008  #idL0016ltrVwl  "Hmmdletr.vowel of AlfaviewText" → "Hmmdletr.vowel"  (name exists)
+  McshLag000008  #idL0016ltrVwlN  "Hmmdletr.consonant of AlfaviewText" → "Hmmdletr.consonant"  (name exists)
+  McshLag000008  #idL0016ltr  "Alfaunit.term of AlfaviewText" → "Alfaunit.term"  (name exists)
+  McshStn000012  #idEconHmnatt036  "Econproducer.workerNo of Econprdgsys" → "Econproducer.workerNo"  (name exists)
+  McshTchInf000020  #idChbctpExci  "Chrntechsc.ExchangeInterface.sol" → "ChrntechscInterface.ExchangeInterface.sol"  + McshEngl.ChrntechscInterface.ExchangeInterface.sol
+  McshTchInf000020  #idChbctpErc20i  "Chrntechsc.ERC20Interface.sol" → "ChrntechscInterface.ERC20Interface.sol"  + McshEngl.ChrntechscInterface.ERC20Interface.sol
+  McshTchInf000020  #idChbctpChbpi  "Chrntechsc.ChronoBankPlatformInterface.sol" → "ChrntechscInterface.ChronoBankPlatformInterface.sol"  + McshEngl.ChrntechscInterface.ChronoBankPlatformInterface.sol
+  McshTchInf000020  #idChbctpChbapi  "Chrntechsc.ChronoBankAssetProxyInterface.sol" → "ChrntechscInterface.ChronoBankAssetProxyInterface.sol"  + McshEngl.ChrntechscInterface.ChronoBankAssetProxyInterface.sol
+  McshTchInf000020  #idChbctpChbai  "Chrntechsc.ChronoBankAssetInterface.sol" → "ChrntechscInterface.ChronoBankAssetInterface.sol"  + McshEngl.ChrntechscInterface.ChronoBankAssetInterface.sol
+  McshTchInf000020  #idChbctpCnfgbl  "Chrntechsc.Configurable.sol" → "ChrntechscOwned.Configurable.sol"  + McshEngl.ChrntechscOwned.Configurable.sol
+  McshTchInf000020  #idChbctpTime  "Chrntechsc.TIME.sol" → "ChrntechscChronoBankAsset.TIME.sol"  + McshEngl.ChrntechscChronoBankAsset.TIME.sol
+  McshTchInf000020  #idChbctpAstWfe  "Chrntechsc.ChronoBankAssetWithFee.sol" → "ChrntechscChronoBankAsset.ChronoBankAssetWithFee.sol"  + McshEngl.ChrntechscChronoBankAsset.ChronoBankAssetWithFee.sol
+  McshCor000005  #idRlnEfct  "causality.cause_then_effect" → "causalityReal.cause_then_effect"  + McshEngl.causalityReal.cause_then_effect
+  McshCor000005  #idRlnCause  "causality.effect_then_cause" → "causalityReal.effect_then_cause"  + McshEngl.causalityReal.effect_then_cause
+  McshLag000020  #idLEllnnounMibrP  "Ellnnoun.numberPlural" → "EllnnounCaseSome.numberPlural"  + McshEngl.EllnnounCaseSome.numberPlural
+  McshLag000020  #idLEllnnounMibrS  "Ellnnoun.numberSingular" → "EllnnounCaseSome.numberSingular"  + McshEngl.EllnnounCaseSome.numberSingular
+  McshLag000020  #idLEllnnounRglrIflN  "Ellnnoun.inflectionNo" → "EllnnounCaseSome.inflectionNo"  + McshEngl.EllnnounCaseSome.inflectionNo
+  McshOgm000006  #idBdyHmnatt015Bcaa  "acidAminHumn.BCAA" → "acidAminEsntHumn.BCAA"  + McshEngl.acidAminEsntHumn.BCAA
+  McshLag000026  #idLEllnverbmbrInstFutu  "Ellnvbmb.instant.future" → "EllnvmInstant.instant.future"  + McshEngl.EllnvmInstant.instant.future
+  McshLag000026  #idLEllnverbmbrInstPast  "Ellnvbmb.instant.past" → "EllnvmInstant.instant.past"  + McshEngl.EllnvmInstant.instant.past
+  McshLag000026  #idLEllnverbmbrProgFutu  "Ellnvbmb.continuous.future" → "EllnvmContinuous.continuous.future"  + McshEngl.EllnvmContinuous.continuous.future
+  McshLag000026  #idLEllnverbmbrProgPast  "Ellnvbmb.continuous.past" → "EllnvmContinuous.continuous.past"  + McshEngl.EllnvmContinuous.continuous.past
+  McshLag000026  #idLEllnverbmbrProgPres  "Ellnvbmb.continuous.present" → "EllnvmContinuous.continuous.present"  + McshEngl.EllnvmContinuous.continuous.present
+  McshLag000026  #idLEllnverbmbrPasv  "Ellnvbmb.passive_voice" → "voiceElln.passive_voice"  + McshEngl.voiceElln.passive_voice
+  McshLag000026  #idLEllnverbmbrActv  "Ellnvbmb.active_voice" → "voiceElln.active_voice"  + McshEngl.voiceElln.active_voice
+  McshLag000028  #idLEll0phgmDabl  "Ell0letr.double" → "Ell0letrCons.double"  + McshEngl.Ell0letrCons.double
+  McshCor000013  #idBrngEmtgDsgt  "FctgEmotingBio.disgusting" → "disliking_emoting.disgusting"  + McshEngl.disliking_emoting.disgusting
+
+=== SKIP (144) — left
+  McshLag000007  #idLHmnmvbatWithwhat  "Hmmdvbat.with-what- of Hmmdlogo": heading not found as expected
+  McshLag000007  #idLHmnmvbatSdtn  "Hmmdvbat.space-direction of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmobt2  "Hmmd_sbjt.indirect-object of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmobt  "Hmmd_sbjt.object of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjc  "Hmmd_sbjt.subject-complement of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjtPnt  "Hmmd_sbjt.patient of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjtThm  "Hmmd_sbjt.theme of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPCP  "future.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFCP  "future.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPC  "future.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFC  "future.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPP  "future.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFSP  "future.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFP  "future.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFS  "future.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPCP  "past.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPCP  "past.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPC  "past.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPC  "past.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPP  "past.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPSP  "past.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPP  "past.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPS  "past.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPCP  "present.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPCP  "present.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPC  "present.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPC  "present.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPP  "present.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPSP  "present.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPP  "present.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPS  "present.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmnameTrmwrdstr  "TermWord.specific of Hmmdlogo": heading not found as expected
+  McshLag000007  #idLHmnmsmsvrbattTmplFtrN  "Hmmdsmvbatt.futureΝο of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmplFtr  "Hmmdsmvbatt.future of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmplPrtN  "Hmmdsmvbatt.presentNo of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPrt  "Hmmdsmvbatt.present of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPstN  "Hmmdsmvbatt.pastNo of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPst  "Hmmdsmvbatt.past of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEngladjesnmrsIty  "syno_members.ity of Engladje": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEngladjesnmrsNess  "syno_members.ness of Engladje": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn031time-period  "time-period of menstruation": no name:: paragraph
+  McshHlth000002  #idBdyHmnatt015att003att008  "daily-value- of Hbnutrient": heading not found as expected
+  McshHlth000002  #idBdyHmnatt015att003att007  "reference-daily-intake- of Hbnutrient": heading not found as expected
+  McshHlth000002  #idBdyHmn548substance-produced  "secretory-product of GlndTesticle": no name:: paragraph
+  McshTchInf000012  #idLJsndnpmjs_org  "npm-registry of Jsndmc": heading not found as expected
+  McshStn000020  #idEuzzadmnlbg  "EuzzadmnDoing.lobbying of Euzzadmn": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEuzzadmndmp  "EuzzadmnDoing.decision-making of Euzzadmn": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt010  "doing.auditing of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Trln  "output.translation of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Frmg  "output.agriculture of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Gvc  "output.governance of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Ctzn  "input.citizen of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Othr  "input.other of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Vat  "input.VAT-based of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Tdnon  "input.traditional-own of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Gni  "input.GNI-based of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEuoCom1985  "EuoCom._Delors": heading not found as expected
+  McshStn000020  #idEuoCom1988  "EuoCom._Delors": heading not found as expected
+  McshStn000020  #idEuoCom1992  "EuoCom.1__Delors": heading not found as expected
+  McshStn000020  #idEuoCom2004  "EuoCom.4__Barroso": heading not found as expected
+  McshStn000020  #idEuoCom2009  "EuoCom.5__Barroso": heading not found as expected
+  McshCor000002  #idMcsmatt022  "validating.relation of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt021  "validating.definition of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt020  "validating.complement of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt019  "validating.sibling of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt018  "validating.specific of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt017  "validating.generic of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt016  "validating.whole of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt015  "validating.part of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsattNamcvnAttGnc  "Mcsnotn.attribute.generic": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttstr  "Mcsnotn.attribute.specific": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttWhl  "Mcsnotn.attribute.whole": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttPrt  "Mcsnotn.attribute.part": heading not found as expected
+  McshCor000010  #idQntNbrK51  "number.1'000'000'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK41  "number.1'000'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK31  "number.1'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK21  "number.1'000'000": heading not found as expected
+  McshCor000010  #idQntNbr1  "number.1": heading not found as expected
+  McshTchInf000010  #idLJsgnfOprAdd  "Jsoptr.ADDITION": heading not found as expected
+  McshLag000006  #idCharUcdprptMisc  "property.MISC of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptNmrc  "property.NUMERIC of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptStrg  "property.STRING of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptEnmn  "property.ENUMERATION of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptCtlg  "property.CATALOG of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptBnr  "property.BINARY of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptDrvd  "property.DERIVED of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptSmpl  "property.SIMPLE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptPvsl  "property.PROVISIONAL of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptCrbr  "property.CONTRIBUTORY of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptInfv  "property.INFORMATIVE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptOvrl  "property.OVERRIDABLE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptNrmv  "property.NORMATIVE of charUncd": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg014optYago  "output.YAGO of Rdfzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptRnodg  "concept.relation-or-doing of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptIstc  "concept.instance of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptGnc  "concept.generic of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongKbem  "doing.Knlgbase-evoluting-managing of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongCmpg  "doing.computing-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongRtrg  "doing.retrieving-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongBldg  "doing.building-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000018  #idEthsolnu8  "uint8 of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsolnu  "uint of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsoln8  "int8 of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsoln  "int of Solxlago": heading not found as expected
+  McshTchInf000009  #idLMcshmngranlg  "doing.add-new-language of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrsrcg  "doing.searching of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrvldg  "doing.validating of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrtodo  "doing.TODO of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtTabl  "Mcshdata.table of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtNmvl  "Mcshdata.name-value of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtList  "Mcshdata.list of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtTxt  "Mcshdata.text of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtSrpt  "Mcshdata.script of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtPara  "Mcshdata.para of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtSect  "Mcshdata.section of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000017  #idBtcwlns  "Btcnwallet.Ledger_nano_s_": heading not found as expected
+  McshTchInf000036  #idTchNlp001lgmlevalMmlu  "benchmark.MMLU of techNlplm": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN12  "partA.12-skribu of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN11  "partA.11-skribus of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN10  "partA.10-skribota of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN9  "partA.9-skribata of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN8  "partA.8-skribita of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN7  "partA.7-skribonta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN6  "partA.6-skribanta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN5  "partA.5-skribinta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN4  "partA.4-skribos of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN3  "partA.3-skribas of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN2  "partA.2-skribis of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN1  "partA.1-skribi of Espovbmb": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdSctnBlk  "section.block of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdsntcDef  "sentence.definition of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdsuntF  "Srcdsunt.function of Srcdlago": heading not found as expected
+  McshTchInf000006  #idLSrcdwrdRsvd  "word.keyword of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdwrdIdfr  "word.identifier of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshHlth000005  #idBoneHmn049  "OganBone.metacarpal_049_": heading not found as expected
+  McshLag000010  #idL0014ondoprtA2  "form.2-langos of Snguargu": "x" is itself dotted (not of M): by hand
+  McshLag000010  #idL0014ondoprtA1  "form.1-lango of Snguargu": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt048  "lobe.limbic of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt047  "lobe.central of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt052  "lobe.temporal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt051  "lobe.occipital of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt049  "lobe.parietal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt050  "lobe.frontal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshStn000004  #idBdgtatt004  "doing.auditing of budget": "x" is itself dotted (not of M): by hand
+

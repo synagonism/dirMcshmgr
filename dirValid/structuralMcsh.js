@@ -43,30 +43,30 @@
  *  MvrwId12 sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
  *  MvrwId13 srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
  *
- *  MvreMain01 Mmn_char: an-Mmn (main-mind-name) has ONLY English letters, digits and _ (no . - space, no other-language letters)
- *  MvrwMain01 Attrbase: the-main-names of the-attributes of a-concept with Attrbase B begin with B
+ *  MvreMain01 chars: an-main-mind-name has ONLY English letters, digits and _ (no . - space, no other-language letters)
+ *  MvrwMain01 Attrbase: main-names of attributes begin with Attrbase of concept
  *             (Attrbase "McshEngl.B!Attrbase,"; attributes: its direct parts with a-main-name, "Y of X" and "X.Y");
  *             exempt: an-alias that begins with B ("McshEngl.Systsector!⇒sector_vs_system,") keeps its own
  *             main-name; SciX | DissX | RltnX need such an-alias; createMcsh fixes the-rest
- *  MvrwMain02 evolg_evoluting_main: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
+ *  MvrwMain02 evolg_evoluting: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
  *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
- *  MvrwMain03 evaln_evaluation_main | evalg_evaluating_main: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
+ *  MvrwMain03 evaln_evaluation|evalg_evaluating: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
  *             is not Xevaln, of an "evaluating of X" | "X'evaluating" CnptSect is not Xevalg (capital first, no apostrophe;
  *             a-genericSpecific X starts with its small-letter word: foodGingerevaln)
- *  MvrwMain04 doing_DOING_main: the-main-name of a "DOING of X" | "X'DOING" CnptSect
+ *  MvrwMain04 doing_DOING: the-main-name of a "DOING of X" | "X'DOING" CnptSect
  *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
- *  MvrwMain05 infrsc_info_resource_main: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
+ *  MvrwMain05 infrsc_info_resource: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
  *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc);
  *             infrsc_info_resource_leaf: a-section without subsections has a-main-name (only X'info_resource is needed)
- *  MvrwMain06 srtr_structure_main: the-main-name of a "structure of X" | "X'structure" CnptSect
+ *  MvrwMain06 srtr_structure: the-main-name of a "structure of X" | "X'structure" CnptSect
  *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
  *  MvrwMain07 attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
  *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
  *             or is badly written
- *  MvrwMain08 mmn_attr: a-concept with attribute-sections has no Mmn (main-mind-name)
+ *  MvrwMain08 miss: a-concept with attribute-sections has no main-mind-name
  *             (attribute-sections: its direct parts "Y of X" | "X'Y", not trees, links, clsText;
  *             Mmn: "descriptive!⇒Mmn" "Mmn!=descriptive")
- *  MvrwMain09 human_main: the-formal-main-name of a-human (a-concept named "human.Surname.Given[.YYYY]" |
+ *  MvrwMain09 human: the-formal-main-name of a-human (a-concept named "human.Surname.Given[.YYYY]" |
  *             "Surname.Given.human" | "human.Name" with a-Humn/hmn main-name) is not "Humn" + birth-year + name
  *             (Humn1959Sinagu) | "HumnB" + year for BCE (HumnB0384Arst), or is missing
  *  MvrwMain10 attribute: a-direct part-section of a-concept with main-name M is not
@@ -90,6 +90,9 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-61-0.2026-11-16: MvrwMain10 compares the-names like the-title, without (…) and {…}',
+    'structuralMcsh.js.0-60-0.2026-11-16: fRefs reads every Mcsh file-stem (word-index pages McshWrdidxElln01alfa_1)',
+    'structuralMcsh.js.0-59-0.2026-11-16: MvrwGstr01 names G by its specific-tree head "X.specific" (was "X:generic")',
     'structuralMcsh.js.0-70-0.2026-11-13: MvreMain01 Mmn_char (was Mmn_form): a-dot is not allowed, ONLY English letters, digits, _',
     'structuralMcsh.js.0-69-0.2026-11-13: MvrwMain05 infrsc_info_resource_leaf: a-main-name ONLY in a-section with subsections',
     'structuralMcsh.js.0-68-0.2026-11-12: MvrwName01 skips dirUcd; fFormalMvrwName01 exported for createMcsh',
@@ -989,7 +992,8 @@ function fCheckAttribute(aoCnptFile) {
         const sTitle = fNormMvrwMain10(oChild.sNameTitle);
         if (!sTitle || rTitleTree.test(sTitle) || rSectLink.test(oChild.sNameTitle ?? '') || /^[^a-z]*ATTRIBUTE\b/.test(sTitle)) continue;
         if (/^char\./.test(sTitle)) continue;   // a-Unicode char section "char.&#xA48C; 42124 U+A48C …" (dirUcd)
-        const aName = (oChild.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => String(oName.sName ?? '').trim());
+        // the-names are compared like the-title: without "(…)" and "{…}"
+        const aName = (oChild.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => fNormMvrwMain10(String(oName.sName ?? '')));
         const aProblem = [];
         let mT;
         if ((mT = /^(?:\d+_)?(.+?) of (\S+)$/.exec(sTitle))) {
@@ -1170,16 +1174,17 @@ function fGstrIndex(aoCnptFile) {
     return oP && oP.sNameTitle === 'generic-tree' ? { sFile, oP } : null;
   };
   // the-links of an-item-line: <a href>, name!@McshDir000000#id
+  //   a-file-stem is any "Mcsh…" name, also a-word-index page: McshWrdidxElln01alfa_1, McshWrdidxElln24oméya
   const fRefs = (sFile, sLine) => {
     const aoRef = [];
     for (const aA of sLine.matchAll(/<a\b([^>]*)>([^<]*)<\/a>/g)) {
       if (/clsHide/.test(aA[1])) continue;
       const sHref = (/href="([^"]*)"/.exec(aA[1]) ?? [])[1] ?? '';
       if (sHref.startsWith('#')) { aoRef.push({ sFile, sId: sHref.slice(1), sText: aA[2] }); continue; }
-      const aF = /(?:^|\/)(Mcsh[A-Za-z0-9]+)\.last\.html(?:#(.*))?$/.exec(sHref);
+      const aF = /(?:^|\/)(Mcsh[^\/#."\s]+)\.last\.html(?:#(.*))?$/.exec(sHref);
       if (aF) aoRef.push({ sFile: aF[1], sId: aF[2] ?? null, sText: aA[2] });
     }
-    for (const aR of sLine.matchAll(/([^\s*,]+?)!@(Mcsh[A-Za-z]*\d{6})?(?:#([^\s,<"':]+))?(?=[,\s]|$)/g))
+    for (const aR of sLine.matchAll(/([^\s*,]+?)!@(Mcsh[^\s,#<"':!]+)?(?:#([^\s,<"':]+))?(?=[,\s]|$)/g))
       aoRef.push({ sFile: aR[2] ?? sFile, sId: aR[3] ?? null, sText: aR[1] });
     return aoRef;
   };
@@ -1295,8 +1300,10 @@ function fCheckGstrSpecificGeneric(aoCnptFile) {
       const sB = sIdPara.replace(/sptr[A-Z0-9]?$/, '');
       const sKeyG = oF.ooSect[sB] ? fKey(sFile, sB) : fKey(sFile, sIdPara);
       if (!sKeyG) continue;
+      // G by the-head of this specific-tree:: "McshEngl.X.specific", else of its generic-tree:: "X:generic"
       const oGntrG = fGntr(sKeyG);
-      const sNameG = (oGntrG && fHead(oGntrG.oP.sPara)) || sKeyG;
+      const sNameG = (/<br>\*\s*McshEngl\.(\S+?\.specific)(?=[,\s<]|$)/.exec(oP.sPara ?? '') ?? [])[1]
+        || (oGntrG && fHead(oGntrG.oP.sPara)) || sKeyG;
       const oSectG = oF.ooSect[sKeyG.split('#')[1]] ?? null;
       let bAfter = false, bWeb = false;
       for (const sLine of (oP.sPara ?? '').split('\n').map(s => s.trim())) {

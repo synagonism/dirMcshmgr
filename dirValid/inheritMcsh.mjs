@@ -50,6 +50,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-5-0.2026-11-16: a-plain-name generic "* X," resolves as X:generic, else reported in INH-GNTRTEXT',
     'inheritMcsh.mjs.0-4-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'inheritMcsh.mjs.0-3-0.2026-10-19: generic-tree names X_Gntr (was X-Gntr), ":" ends a-text-reference',
     'inheritMcsh.mjs.0-2-0.2026-10-18: --delete-empty, --fix-order, own-numbering, INH-GENDUP',
@@ -70,7 +71,9 @@ const
   // the-name of a-generic-tree, in its own generic-tree::  "<br>* McshEngl.system:generic,"
   rGntrDef = /<br>\*\s*McshEngl\.([^\s,<!]+:generic)[,!]/g,
   // a-text-entry of a-generic: "<br>* system:generic,"; NOT "McshEngl.…", NOT "...entity:generic"
-  rGntrUse = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*]+:generic),/g
+  rGntrUse = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*]+:generic),/g,
+  // a-plain-name entry of a-generic: "<br>* head-of-vertebrate,"; NOT a-link, NOT !@, NOT ⧺cpt..⧺
+  rGntrPlain = /<br>\*\s*(?!McshEngl\.|\.\.\.)([^\s,<!*:⧺?]+),/g
 
 /**
  * OUTPUT: the-file-name without its '.last.html', as McshDir000000.
@@ -327,6 +330,12 @@ function fCheck(aoFileIn, nLocalMinIn) {
         const oResolved = fResolveGntr(aUse[1]);
         if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode);
         else aoGntrText.push({ oAttr: oNode, sLabel: `${aUse[1]}: ${oResolved.sWhy}` });
+      }
+      // a-plain-name "* X," resolves as "X:generic": its generic-tree, else the-ONE concept named X
+      for (const aUse of sGtr.matchAll(rGntrPlain)) {
+        const oResolved = fResolveGntr(aUse[1] + ':generic');
+        if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode);
+        else aoGntrText.push({ oAttr: oNode, sLabel: `${aUse[1]} (plain name): ${oResolved.sWhy}` });
       }
     }
     // specific-tree:: links: each target has the-owner as generic

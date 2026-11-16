@@ -1,0 +1,102 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --code MvrwMain01 --all --fix: ../dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  2 files written · MvrwMain01: 48 issues · 56 fixed · 35 skipped
+  written, no backup: see git diff
+
+=== SKIP (35) — skipped, with why: fix by hand
+  McshTchInf000006:565  "Cpgmf" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:1158  "Pgmgtool" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:1900  "Mchhlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:1939  "Triplago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:2014  "Binplago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:2093  "Asmblago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:2180  "Btcdlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:2255  "Srcdlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3401  "Dmsplago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3415  "Dtpglago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3500  "Fctnlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3572  "Oolzlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3672  "Qurylago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3731  "Scrglago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3835  "Decllago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3870  "Impelago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3898  "Leanlago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3914  "Wbpglago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000006:3954  "Anpglago" does not begin with the-concept's main-name "Prgmlago" + a-word: give the-main-name by hand
+  McshTchInf000021:302  "HumnLarimerDaniel" does not begin with the-concept's main-name "AgntEosz" + a-word: give the-main-name by hand
+  McshTchInf000039:109  "KnlgMngr" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3034  "lagoCpgm_relation_to_knowledge_language" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3092  "techKnlg" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3453  "Lgkglago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3683  "Kpcglago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3697  "Krsnlago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3736  "Kparlago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3750  "lagoCdnl" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:3922  "Ppsllago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:4870  "Logclago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:6540  "Cycllago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:8385  "lagoOntg" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:11569  "lagoRule" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:11719  "Sweblago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+  McshTchInf000039:14471  "Wlfmlago" does not begin with the-concept's main-name "Knlglago" + a-word: give the-main-name by hand
+
+=== MAINNAME (43) — a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)
+  McshTchInf000006:787  McshEngl.evaluation-of-Prgmlago!⇒Prgmlagoevaln  ->  evaluation-of-Prgmlago!⇒Pgmlevaln
+  McshTchInf000006:788  McshEngl.Prgmlagoevaln!=evaluation-of-Prgmlago  ->  Pgmlevaln!=evaluation-of-Prgmlago
+  McshTchInf000006:789  McshEngl.Prgmlagoevalg!⇒Prgmlagoevaln  ->  Prgmlagoevalg!⇒Pgmlevaln
+  McshTchInf000006:790  McshEngl.Prgmlagoeval!⇒Prgmlagoevaln  ->  Prgmlagoeval!⇒Pgmlevaln
+  McshTchInf000006:791  McshEngl.Prgmlago'04_evaluation!⇒Prgmlagoevaln  ->  Prgmlago'04_evaluation!⇒Pgmlevaln
+  McshTchInf000006:792  McshEngl.Prgmlago'evaluation!⇒Prgmlagoevaln  ->  Prgmlago'evaluation!⇒Pgmlevaln
+  McshTchInf000006:1286  McshEngl.Prgmlago_cross_platform_support  ->  Pgmlcross_platform_support
+  McshTchInf000006:1287  McshEngl.Prgmlago'cross_platform_support!⇒Prgmlago_cross_platform_support  ->  Prgmlago'cross_platform_support!⇒Pgmlcross_platform_support
+  McshTchInf000006:1288  McshEngl.Prgmlago'misc'cross_platform_support!⇒Prgmlago_cross_platform_support  ->  Prgmlago'misc'cross_platform_support!⇒Pgmlcross_platform_support
+  McshTchInf000006:1300  McshEngl.Prgmlago_expressivity  ->  Pgmlexpressivity
+  McshTchInf000006:1301  McshEngl.Prgmlago'expressivity!⇒Prgmlago_expressivity  ->  Prgmlago'expressivity!⇒Pgmlexpressivity
+  McshTchInf000006:1302  McshEngl.Prgmlago'misc'expressivity!⇒Prgmlago_expressivity  ->  Prgmlago'misc'expressivity!⇒Pgmlexpressivity
+  McshTchInf000006:1313  McshEngl.Prgmlago_safty  ->  Pgmlsafty
+  McshTchInf000006:1314  McshEngl.Prgmlago'safty!⇒Prgmlago_safty  ->  Prgmlago'safty!⇒Pgmlsafty
+  McshTchInf000006:1315  McshEngl.Prgmlago'misc'safty!⇒Prgmlago_safty  ->  Prgmlago'misc'safty!⇒Pgmlsafty
+  McshTchInf000006:1326  McshEngl.Prgmlago_speed  ->  Pgmlspeed
+  McshTchInf000006:1327  McshEngl.Prgmlago'speed!⇒Prgmlago_speed  ->  Prgmlago'speed!⇒Pgmlspeed
+  McshTchInf000006:1328  McshEngl.Prgmlago'misc'speed!⇒Prgmlago_speed  ->  Prgmlago'misc'speed!⇒Pgmlspeed
+  McshTchInf000006:1342  McshEngl.Pgmginfrsc!=Prgmlago'info-resource  ->  Pgmlinfrsc!=Prgmlago'info-resource
+  McshTchInf000006:1343  McshEngl.Prgmlago'info_resource!⇒Pgmginfrsc  ->  Prgmlago'info_resource!⇒Pgmlinfrsc
+  McshTchInf000006:1358  McshEngl.Prgmlago_documentation  ->  Pgmldocumentation
+  McshTchInf000006:1359  McshEngl.Prgmlago'documentation!⇒Prgmlago_documentation  ->  Prgmlago'documentation!⇒Pgmldocumentation
+  McshTchInf000006:1360  McshEngl.Prgmlago'info_resource'documentation!⇒Prgmlago_documentation  ->  Prgmlago'info_resource'documentation!⇒Pgmldocumentation
+  McshTchInf000006:1371  McshEngl.Prgmlago_specification  ->  Pgmlspecification
+  McshTchInf000006:1372  McshEngl.Prgmlago'specification!⇒Prgmlago_specification  ->  Prgmlago'specification!⇒Pgmlspecification
+  McshTchInf000006:1373  McshEngl.Prgmlago'info_resource'specification!⇒Prgmlago_specification  ->  Prgmlago'info_resource'specification!⇒Pgmlspecification
+  McshTchInf000006:1385  McshEngl.Prgmlago_doing  ->  Pgmldoing
+  McshTchInf000006:1386  McshEngl.Prgmlago-doing!⇒Prgmlago_doing  ->  Prgmlago-doing!⇒Pgmldoing
+  McshTchInf000006:1387  McshEngl.Prgmlago'doing!⇒Prgmlago_doing  ->  Prgmlago'doing!⇒Pgmldoing
+  McshTchInf000006:1550  McshEngl.evoluting-of-Prgmlago!⇒Pgmgevolg  ->  evoluting-of-Prgmlago!⇒Pgmlevolg
+  McshTchInf000006:1551  McshEngl.Pgmgevolg!=evoluting-of-Prgmlago  ->  Pgmlevolg!=evoluting-of-Prgmlago
+  McshTchInf000006:1552  McshEngl.Prgmlago'evoluting!⇒Pgmgevolg  ->  Prgmlago'evoluting!⇒Pgmlevolg
+  McshTchInf000039:3116  McshEngl.doing-of-Knlglago!⇒Knlgdoing  ->  doing-of-Knlglago!⇒Kngldoing
+  McshTchInf000039:3117  McshEngl.Knlgdoing!=doing-of-Knlglago  ->  Kngldoing!=doing-of-Knlglago
+  McshTchInf000039:3118  McshEngl.Knlglago'doing!⇒Knlgdoing  ->  Knlglago'doing!⇒Kngldoing
+  McshTchInf000039:3196  McshEngl.evoluting-of-Knlglago!⇒Knlgevolg  ->  evoluting-of-Knlglago!⇒Knglevolg
+  McshTchInf000039:3197  McshEngl.Knlgevolg!=evoluting-of-Knlglago  ->  Knglevolg!=evoluting-of-Knlglago
+  McshTchInf000039:3198  McshEngl.Knlglago'evoluting!⇒Knlgevolg  ->  Knlglago'evoluting!⇒Knglevolg
+  McshTchInf000039:3199  McshEngl.evoluting-of-techKnlg!⇒Knlgevolg  ->  evoluting-of-techKnlg!⇒Knglevolg
+  McshTchInf000039:3200  McshEngl.techKnlg'evoluting!⇒Knlgevolg  ->  techKnlg'evoluting!⇒Knglevolg
+  McshTchInf000039:14301  McshEngl.evoluting-of-lagoSkos!⇒LagoSkosevolg  ->  evoluting-of-lagoSkos!⇒Skosevolg
+  McshTchInf000039:14302  McshEngl.LagoSkosevolg!=evoluting-of-lagoSkos  ->  Skosevolg!=evoluting-of-lagoSkos
+  McshTchInf000039:14303  McshEngl.lagoSkos'evoluting!⇒LagoSkosevolg  ->  lagoSkos'evoluting!⇒Skosevolg
+
+=== ADD (13) — the-old main-name kept as a-synonym: X!⇒X'
+  McshTchInf000006:788  <br>* McshEngl.Prgmlagoevaln!⇒Pgmlevaln,
+  McshTchInf000006:1286  <br>* McshEngl.Prgmlago_cross_platform_support!⇒Pgmlcross_platform_support,
+  McshTchInf000006:1300  <br>* McshEngl.Prgmlago_expressivity!⇒Pgmlexpressivity,
+  McshTchInf000006:1313  <br>* McshEngl.Prgmlago_safty!⇒Pgmlsafty,
+  McshTchInf000006:1326  <br>* McshEngl.Prgmlago_speed!⇒Pgmlspeed,
+  McshTchInf000006:1342  <br>* McshEngl.Pgmginfrsc!⇒Pgmlinfrsc,
+  McshTchInf000006:1358  <br>* McshEngl.Prgmlago_documentation!⇒Pgmldocumentation,
+  McshTchInf000006:1371  <br>* McshEngl.Prgmlago_specification!⇒Pgmlspecification,
+  McshTchInf000006:1385  <br>* McshEngl.Prgmlago_doing!⇒Pgmldoing,
+  McshTchInf000006:1551  <br>* McshEngl.Pgmgevolg!⇒Pgmlevolg,
+  McshTchInf000039:3117  <br>* McshEngl.Knlgdoing!⇒Kngldoing,
+  McshTchInf000039:3197  <br>* McshEngl.Knlgevolg!⇒Knglevolg,
+  McshTchInf000039:14302  <br>* McshEngl.LagoSkosevolg!⇒Skosevolg,

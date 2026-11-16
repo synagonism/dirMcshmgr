@@ -1,0 +1,13 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --dupname --fix: ../dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  4 files written · 6 duplicate name-lines deleted · 0 skipped
+  written, no backup: see git diff
+
+=== DUPNAME (6) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01)
+  McshCor000003:5959  McshEngl.entity.bodyNo!⇒bodyNo
+  McshTchInf000006:1946  McshEngl.Mchplago.trinary!⇒Triplago
+  McshTchInf000006:2185  McshEngl.Prgmlago.bytecode!⇒Btcdlago
+  McshTchInf000007:1377  McshEngl.Cnptlago.processing!⇒CptlPrcg
+  McshTchInf000007:1400  McshEngl.Cnptlago.representation!⇒CptlRstn
+  McshTchInf000039:3461  McshEngl.Knlglago.conceptNo(logo)!⇒Lgkglago

@@ -1,0 +1,1077 @@
+MvrwMain10 retitle to the direct whole {2026-11-16}: APPLIED
+
+The heading names an ancestor (grandparent or higher) of the section; it is set to the DIRECT whole M: "x of M" + name M'x, or "M.x" + name M.x.
+
+=== OF (360) — "x of <ancestor>" → "x of M"
+  McshTchInf000030  #idLRustedtn  "edition of Rustlago" → "edition of Rustevolg"  + McshEngl.Rustevolg'edition
+  McshTchInf000030  #idLRustrls  "release of Rustlago" → "release of Rustevolg"  + McshEngl.Rustevolg'release
+  McshTchInf000030  #idLRustuintg  "uninstalling of Rustlago" → "uninstalling of Rustdoing"  + McshEngl.Rustdoing'uninstalling
+  McshTchInf000030  #idLRustupdg  "updating of Rustlago" → "updating of Rustdoing"  + McshEngl.Rustdoing'updating
+  McshTchInf000030  #idLRustmfcg  "main-functing of Rustlago" → "main-functing of Rustdoing"  + McshEngl.Rustdoing'main_functing
+  McshTchInf000030  #idLRustbnftN  "benefitNo of Rustlago" → "benefitNo of Rustevaln"  + McshEngl.Rustevaln'benefitNo
+  McshTchInf000030  #idLRustbnft  "benefit of Rustlago" → "benefit of Rustevaln"  + McshEngl.Rustevaln'benefit
+  McshTchInf000030  #idLRustttld  "algo'titled-section of Rustlago" → "algo'titled-section of Rustalgo_section"  + McshEngl.Rustalgo_section'algo'titled_section
+  McshTchInf000030  #idLRustttldN  "algo'titledNo-section of Rustlago" → "algo'titledNo-section of Rustalgo_section"  + McshEngl.Rustalgo_section'algo'titledNo_section
+  McshLag000018  #idLZhonstdn  "standardization of Zhonlago" → "standardization of Zhonevolg"  + McshEngl.Zhonevolg'standardization
+  McshLag000007  #idLHmnmptlg  "ProtoLanguage of Hmmdlago" → "ProtoLanguage of Hmmdevolg"  + McshEngl.Hmmdevolg'ProtoLanguage
+  McshLag000007  #idLHmnmdeth  "death of Hmmdlago" → "death of Hmmdevolg"  + McshEngl.Hmmdevolg'death
+  McshLag000007  #idLHmnmchng  "change of Hmmdlago" → "change of Hmmdevolg"  + McshEngl.Hmmdevolg'change
+  McshLag000007  #idLHmnmgnss  "genesis of Hmmdlago" → "genesis of Hmmdevolg"  + McshEngl.Hmmdevolg'genesis
+  McshLag000007  #idLHmnmdongMngg  "managing of Hmmdlago" → "managing of HmmdviewLogodoing"  + McshEngl.HmmdviewLogodoing'managing
+  McshLag000007  #idLHmnmdongTrlg  "translating of Hmmdlago" → "translating of HmmdviewLogodoing"  + McshEngl.HmmdviewLogodoing'translating
+  McshLag000007  #idLHmnmdongImpn  "implementation of Hmmdlago" → "implementation of HmmdviewLogodoing"  + McshEngl.HmmdviewLogodoing'implementation
+  McshLag000007  #idLHmnmdongMnfng  "main-functing of Hmmdlago" → "main-functing of HmmdviewLogodoing"  + McshEngl.HmmdviewLogodoing'main_functing
+  McshLag000007  #idLHmnmcrps  "corpus of Hmmdlago" → "corpus of Hmmdinfrsc"  + McshEngl.Hmmdinfrsc'corpus
+  McshLag000007  #idLHmnmhmnlrngcEfoffl  "Common-European-Framework-of-Reference-for-Languages of Hmmdlago" → "Common-European-Framework-of-Reference-for-Languages of Hmmdlago_acquisition"  + McshEngl.Hmmdlago_acquisition'Common_European_Framework_of_Reference_for_Languages
+  McshLag000007  #idLHmnmhmnlrngScnd  "second-language-acquisition of Hmmdlago" → "second-language-acquisition of Hmmdlago_acquisition"  + McshEngl.Hmmdlago_acquisition'second_language_acquisition
+  McshLag000007  #idLHmnmhmnlrngFrst  "first-language-acquisition of Hmmdlago" → "first-language-acquisition of Hmmdlago_acquisition"  + McshEngl.Hmmdlago_acquisition'first_language_acquisition
+  McshLag000007  #idLHmnmhmnlrngerrUext  "underextention of Hmmdlago" → "underextention of developmental_error_in_Hmnmlago"  + McshEngl.developmental_error_in_Hmnmlago'underextention
+  McshLag000007  #idLHmnmhmnlrngerrOext  "overextention of Hmmdlago" → "overextention of developmental_error_in_Hmnmlago"  + McshEngl.developmental_error_in_Hmnmlago'overextention
+  McshLag000007  #idLHmnmhmnlrngerrOrgn  "overregulation of Hmmdlago" → "overregulation of developmental_error_in_Hmnmlago"  + McshEngl.developmental_error_in_Hmnmlago'overregulation
+  McshLag000007  #idLHmnmhmnlrngerr  "developmental-error of Hmmdlago" → "developmental-error of Hmmdlago_acquisition"  + McshEngl.Hmmdlago_acquisition'developmental_error
+  McshHlth000002  #idBdyHmnevogcnar  "common-ancestor of bodyHumn" → "common-ancestor of Hbevolg"  + McshEngl.Hbevolg'common_ancestor
+  McshHlth000002  #idBdyHmnatt042  "lower-limbs of bodyHumn" → "lower-limbs of Hblimbs"  + McshEngl.Hblimbs'lower_limbs
+  McshHlth000002  #idBdyHmnatt045  "hand of bodyHumn" → "hand of Hbupper_limbs"  + McshEngl.Hbupper_limbs'hand
+  McshHlth000002  #idBdyHmnatt051  "wrist of bodyHumn" → "wrist of Hbupper_limbs"  + McshEngl.Hbupper_limbs'wrist
+  McshHlth000002  #idBdyHmnatt041  "upper-limbs of bodyHumn" → "upper-limbs of Hblimbs"  + McshEngl.Hblimbs'upper_limbs
+  McshTchInf000012  #idLJsndoStream  "stream-object of Jsndlago" → "stream-object of JsndmcCoreFStream"  + McshEngl.JsndmcCoreFStream'stream_object
+  McshTchInf000024  #idSteemblgg  "blogging of Steem_net" → "blogging of Steem_netdoing"  + McshEngl.Steem_netdoing'blogging
+  McshTchInf000010  #idLJsgnfDecodeURI  "decodeURI_function of Jsgnlago" → "decodeURI_function of JsapiNative"  + McshEngl.JsapiNative'decodeURI_function
+  McshTchInf000010  #idLJsgnoconsole  "console_object of Jsgnlago" → "console_object of JsapiNative"  + McshEngl.JsapiNative'console_object
+  McshTchInf000010  #idLJsgnfSet  "Set-function of Jsgnlago" → "Set-function of JsapiNative"  + McshEngl.JsapiNative'Set_function
+  McshTchInf000010  #idLJsgnoMath  "Math_object of Jsgnlago" → "Math_object of JsapiNative"  + McshEngl.JsapiNative'Math_object
+  McshTchInf000010  #idLJsgnoJSON  "JSON-object of Jsgnlago" → "JSON-object of JsapiNative"  + McshEngl.JsapiNative'JSON_object
+  McshTchInf000010  #idLJsgnError  "Error-function of Jsgnlago" → "Error-function of JsapiNative"  + McshEngl.JsapiNative'Error_function
+  McshTchInf000010  #idLJsgnevalTodo  "todo of Jsgnlago" → "todo of Jsgnevaln"  + McshEngl.Jsgnevaln'todo
+  McshTchInf000010  #idLJsgnevalCon  "problem of Jsgnlago" → "problem of Jsgnevaln"  + McshEngl.Jsgnevaln'problem
+  McshTchInf000010  #idLJsgnevalPro  "benefit of Jsgnlago" → "benefit of Jsgnevaln"  + McshEngl.Jsgnevaln'benefit
+  McshHmn000002  #idHmnatt079  "birth-date of human" → "birth-date of Humnlifetime"  + McshEngl.Humnlifetime'birth_date
+  McshHmn000002  #idHmnatt027  "age of human" → "age of Humnlifetime"  + McshEngl.Humnlifetime'age
+  McshHmn000002  #idHmnatt078  "death-date of human" → "death-date of Humnlifetime"  + McshEngl.Humnlifetime'death_date
+  McshHmn000002  #idHmnatt021  "lifetime of human" → "lifetime of Humnevolg"  + McshEngl.Humnevolg'lifetime
+  McshHmn000002  #idHmnatt120  "human-event of human" → "human-event of Humndoing"  + McshEngl.Humndoing'human_event
+  McshHmn000002  #idHmnatt029  "bulling of human" → "bulling of Humndoing"  + McshEngl.Humndoing'bulling
+  McshHmn000002  #idHmnatt037  "self-actualization of human" → "self-actualization of Humndoing"  + McshEngl.Humndoing'self_actualization
+  McshHmn000002  #idHmnatt058  "sexual-activity of human" → "sexual-activity of Humndoing"  + McshEngl.Humndoing'sexual_activity
+  McshHmn000002  #idHmnatt056  "temperament of human" → "temperament of Humndoing"  + McshEngl.Humndoing'temperament
+  McshHmn000002  #idHmnatt170  "creativity of human" → "creativity of Humndoing"  + McshEngl.Humndoing'creativity
+  McshHmn000002  #idHmnatt039avb  "acting-vs-behaving of human" → "acting-vs-behaving of Humnacting"  + McshEngl.Humnacting'acting_vs_behaving
+  McshHmn000002  #idHmnatt039  "acting of human" → "acting of Humndoing"  + McshEngl.Humndoing'acting
+  McshHmn000002  #idHmnatt167  "behaving of human" → "behaving of Humndoing"  + McshEngl.Humndoing'behaving
+  McshHmn000002  #idHmnatt122  "similar-referent of human" → "similar-referent of Humninfrsc"  + McshEngl.Humninfrsc'similar_referent
+  McshHmn000002  #idHmnatt119  "same-referent of human" → "same-referent of Humninfrsc"  + McshEngl.Humninfrsc'same_referent
+  McshHmn000002  #idHmnatt146  "studied-by of human" → "studied-by of Humninfrsc"  + McshEngl.Humninfrsc'studied_by
+  McshHmn000002  #idHmnatt063  "biodata of human" → "biodata of Humnqualification_doc"  + McshEngl.Humnqualification_doc'biodata
+  McshHmn000002  #idHmnatt062  "resume of human" → "resume of Humnqualification_doc"  + McshEngl.Humnqualification_doc'resume
+  McshHmn000002  #idHmnatt061  "curriculum-vitae of human" → "curriculum-vitae of Humnqualification_doc"  + McshEngl.Humnqualification_doc'curriculum_vitae
+  McshHmn000002  #idHmnatt111  "educational-occupational-credential of human" → "educational-occupational-credential of Humnqualification_doc"  + McshEngl.Humnqualification_doc'educational_occupational_credential
+  McshHmn000002  #idHmnatt077  "award of human" → "award of Humnqualification_doc"  + McshEngl.Humnqualification_doc'award
+  McshHmn000002  #idHmnatt134  "neuroticism of human" → "neuroticism of HumnBig_five_personality_traits"  + McshEngl.HumnBig_five_personality_traits'neuroticism
+  McshHmn000002  #idHmnatt136  "agreableness of human" → "agreableness of HumnBig_five_personality_traits"  + McshEngl.HumnBig_five_personality_traits'agreableness
+  McshHmn000002  #idHmnatt135  "extraversion of human" → "extraversion of HumnBig_five_personality_traits"  + McshEngl.HumnBig_five_personality_traits'extraversion
+  McshHmn000002  #idHmnatt016  "conscientiousness of human" → "conscientiousness of HumnBig_five_personality_traits"  + McshEngl.HumnBig_five_personality_traits'conscientiousness
+  McshHmn000002  #idHmnatt133  "openness-to-experience of human" → "openness-to-experience of HumnBig_five_personality_traits"  + McshEngl.HumnBig_five_personality_traits'openness_to_experience
+  McshHmn000002  #idHmnatt033  "right of human" → "right of human_duty"  + McshEngl.human_duty'right
+  McshHmn000002  #idHmnatt053  "facial-symmetry of human" → "facial-symmetry of Humnappearance"  + McshEngl.Humnappearance'facial_symmetry
+  McshStn000020  #idEudoc  "document of SoctEuzz" → "document of SoctEuzzinfrsc"  + McshEngl.SoctEuzzinfrsc'document
+  McshStn000020  #idSocEuzztt031  "Open-data-portal of SoctEuzz" → "Open-data-portal of SoctEuzzinfrsc"  + McshEngl.SoctEuzzinfrsc'Open_data_portal
+  McshStn000020  #idSocEuzztt042  "Eu-vocabularies of SoctEuzz" → "Eu-vocabularies of SoctEuzzinfrsc"  + McshEngl.SoctEuzzinfrsc'Eu_vocabularies
+  McshStn000020  #idSocEuzztt032  "Publications-office of SoctEuzz" → "Publications-office of SoctEuzzinfrsc"  + McshEngl.SoctEuzzinfrsc'Publications_office
+  McshHlth000011  #idDssHmnptlg  "pathology of disease" → "pathology of Dissinfrsc"  + McshEngl.Dissinfrsc'pathology
+  McshHlth000011  #idDssHmnSci  "science of disease" → "science of Dissinfrsc"  + McshEngl.Dissinfrsc'science
+  McshHlth000011  #idDssHmnFrqc  "frequency of disease" → "frequency of Dissstat"  + McshEngl.Dissstat'frequency
+  McshTchInf000014  #idLWasmrscTtrl  "tutorial of Wasmlago" → "tutorial of WebAssemblyinfrsc"  + McshEngl.WebAssemblyinfrsc'tutorial
+  McshTchInf000014  #idLWasmrtjs  "relation-to-javascript of Wasmlago" → "relation-to-javascript of Wasmevaln"  + McshEngl.Wasmevaln'relation_to_javascript
+  McshTchInf000014  #idLWasmalgBnrfile  "bnr-algo'file of Wasmlago" → "bnr-algo'file of WasmagoBinary"  + McshEngl.WasmagoBinary'bnr_algo'file
+  McshTchInf000031  #idLCpprscTtrl  "tutorial of Cppzlago" → "tutorial of Cppzinfrsc"  + McshEngl.Cppzinfrsc'tutorial
+  McshTchInf000018  #idEthpbm  "problem of AgntEthr" → "problem of Ethrevaln"  + McshEngl.Ethrevaln'problem
+  McshTchInf000021  #idEosorcl  "oracle of AgntEosz" → "oracle of Eoszenvt"  + McshEngl.Eoszenvt'oracle
+  McshTchInf000021  #idEosrtethnet  "relation-to--Ethereum-net of AgntEosz" → "relation-to--Ethereum-net of Eoszenvt"  + McshEngl.Eoszenvt'relation_to_Ethereum_net
+  McshTchInf000021  #idEoscttn  "constitution of AgntEosz" → "constitution of Eoszgvnc"  + McshEngl.Eoszgvnc'constitution
+  McshTchInf000026  #idBkskID  "ID of AgntBksk" → "ID of AgntBksk_blockchain_name_system"  + McshEngl.AgntBksk_blockchain_name_system'ID
+  McshStnlaw000003  #idLawEuzzatt015  "codificating of Eulaw" → "codificating of LawEusdoing"  + McshEngl.LawEusdoing'codificating
+  McshStnlaw000003  #idLawEuzzatt013  "consolidating of Eulaw" → "consolidating of LawEusdoing"  + McshEngl.LawEusdoing'consolidating
+  McshStnlaw000003  #idLawEuzzatt017  "improving of Eulaw" → "improving of LawEusdoing"  + McshEngl.LawEusdoing'improving
+  McshStnlaw000003  #idLawEuzzatt016  "managing of Eulaw" → "managing of LawEusdoing"  + McshEngl.LawEusdoing'managing
+  McshStnlaw000003  #idLawEuzzatt012  "legislative-procedure of Eulaw" → "legislative-procedure of LawEusdoing"  + McshEngl.LawEusdoing'legislative_procedure
+  McshStnlaw000003  #idLawEuzzatt014  "ELI of Eulaw" → "ELI of LawEusinfrsc"  + McshEngl.LawEusinfrsc'ELI
+  McshStnlaw000003  #idLawEuzzatt002  "EUR-Lex of Eulaw" → "EUR-Lex of LawEusinfrsc"  + McshEngl.LawEusinfrsc'EUR_Lex
+  McshStnlaw000003  #idLawEuzzatt001  "Official-Journal of Eulaw" → "Official-Journal of LawEusinfrsc"  + McshEngl.LawEusinfrsc'Official_Journal
+  McshCor000002  #idMcssrrt  "similar-referent of Mcs" → "similar-referent of Mcsinfrsc"  + McshEngl.Mcsinfrsc'similar_referent
+  McshCor000002  #idMcssmrtmv  "same-referent-same-view of Mcs" → "same-referent-same-view of Mcs_same_referent"  + McshEngl.Mcs_same_referent'same_referent_same_view
+  McshCor000002  #idMcssmrtrv  "same-referent-similar-view of Mcs" → "same-referent-similar-view of Mcs_same_referent"  + McshEngl.Mcs_same_referent'same_referent_similar_view
+  McshCor000002  #idMcssmrtov  "same-referent-other-view of Mcs" → "same-referent-other-view of Mcs_same_referent"  + McshEngl.Mcs_same_referent'same_referent_other_view
+  McshCor000002  #idMcssmrt  "same-referent of Mcs" → "same-referent of Mcsinfrsc"  + McshEngl.Mcsinfrsc'same_referent
+  McshCor000002  #idMcsevaluos  "unity-of-science of Mcs" → "unity-of-science of Mcsevaln"  + McshEngl.Mcsevaln'unity_of_science
+  McshCor000002  #idMcsevalsbvt  "subjectivity of Mcs" → "subjectivity of Mcsevaln"  + McshEngl.Mcsevaln'subjectivity
+  McshCor000002  #idMcsevalcmplt  "completeness of Mcs" → "completeness of Mcsevaln"  + McshEngl.Mcsevaln'completeness
+  McshCor000002  #idMcsevalcnsc  "consistency of Mcs" → "consistency of Mcsevaln"  + McshEngl.Mcsevaln'consistency
+  McshCor000002  #idMcsevalmsmt  "monosemanticity of Mcs" → "monosemanticity of Mcsevaln"  + McshEngl.Mcsevaln'monosemanticity
+  McshCor000002  #idMcstrth  "truthness of Mcs" → "truthness of Mcsevaln"  + McshEngl.Mcsevaln'truthness
+  McshHlth000013  #idFoodHmnpckg  "packaging of food" → "packaging of Fooddoing"  + McshEngl.Fooddoing'packaging
+  McshHlth000013  #idFoodHmnftfn  "fortification of food" → "fortification of Fooddoing"  + McshEngl.Fooddoing'fortification
+  McshHlth000013  #idFoodHmnchem  "chemistry of food" → "chemistry of Foodinfrsc"  + McshEngl.Foodinfrsc'chemistry
+  McshHlth000013  #idFoodHmnsci  "science of food" → "science of Foodinfrsc"  + McshEngl.Foodinfrsc'science
+  McshHlth000013  #idFoodHmnatt005  "additive of food" → "additive of food_ingredient"  + McshEngl.food_ingredient'additive
+  McshHlth000013  #idFoodHmnatt003  "nutrient of food" → "nutrient of food_ingredient"  + McshEngl.food_ingredient'nutrient
+  McshHlth000013  #idFoodHmnatt002  "food-composition-data of food" → "food-composition-data of food_ingredient"  + McshEngl.food_ingredient'food_composition_data
+  McshHlth000013  #idFoodHmnatt008  "nutritional-rating-system of food" → "nutritional-rating-system of Foodevaln"  + McshEngl.Foodevaln'nutritional_rating_system
+  McshTchInf000016  #idDbcrocs  "relation-to-other-computer-systems of AgntBkcn" → "relation-to-other-computer-systems of Bkcnenvt"  + McshEngl.Bkcnenvt'relation_to_other_computer_systems
+  McshTchInf000036  #idTechAievogwntr  "winter of techAI" → "winter of TechAIevolg"  + McshEngl.TechAIevolg'winter
+  McshTchInf000036  #idTechAiprmpt  "prompting of techAI" → "prompting of TechAIdoing"  + McshEngl.TechAIdoing'prompting
+  McshTchInf000036  #idTechAialnt  "alignment of techAI" → "alignment of TechAIevaln"  + McshEngl.TechAIevaln'alignment
+  McshTchInf000036  #idTechAicprt  "copyright of techAI" → "copyright of TechAIevaln"  + McshEngl.TechAIevaln'copyright
+  McshTchInf000036  #idTechAiexlr  "existential-risk of techAI" → "existential-risk of TechAIevaln"  + McshEngl.TechAIevaln'existential_risk
+  McshTchInf000036  #idTechAiuelmt  "technological-unemployment of techAI" → "technological-unemployment of TechAIevaln"  + McshEngl.TechAIevaln'technological_unemployment
+  McshTchInf000036  #idTechAisvlc  "surveillance of techAI" → "surveillance of TechAIevaln"  + McshEngl.TechAIevaln'surveillance
+  McshTchInf000036  #idTechAifocs  "failure-of-critical-systems of techAI" → "failure-of-critical-systems of TechAIevaln"  + McshEngl.TechAIevaln'failure_of_critical_systems
+  McshTchInf000036  #idTechAiwpnz  "weaponization of techAI" → "weaponization of TechAIevaln"  + McshEngl.TechAIevaln'weaponization
+  McshTchInf000036  #idTechAibias  "bias of techAI" → "bias of TechAIevaln"  + McshEngl.TechAIevaln'bias
+  McshTchInf000036  #idTechAietcs  "ethics of techAI" → "ethics of TechAIevaln"  + McshEngl.TechAIevaln'ethics
+  McshTchInf000036  #idTechAisfty  "safty of techAI" → "safty of TechAIevaln"  + McshEngl.TechAIevaln'safty
+  McshStn000009  #idSocHumnatt057  "dissolution of society" → "dissolution of Soctevolg"  + McshEngl.Soctevolg'dissolution
+  McshStn000009  #idSocHumnatt056  "creation of society" → "creation of Soctevolg"  + McshEngl.Soctevolg'creation
+  McshStn000009  #idSocHumnatt083  "goal of society" → "goal of Societydoing"  + McshEngl.Societydoing'goal
+  McshEdu000010  #idSLangpgmc  "science-of-context of SciLago" → "science-of-context of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'science_of_context
+  McshEdu000010  #idSLangsmsl  "semasiology of SciLago" → "semasiology of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'semasiology
+  McshEdu000010  #idSLangatt002  "lexical-semantics of SciLago" → "lexical-semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'lexical_semantics
+  McshEdu000010  #idSLangatt003  "frame-semantics of SciLago" → "frame-semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'frame_semantics
+  McshEdu000010  #idSLangatt004  "computational-semantics of SciLago" → "computational-semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'computational_semantics
+  McshEdu000010  #idSLang037  "cognitive-semantics of SciLago" → "cognitive-semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'cognitive_semantics
+  McshEdu000010  #idSLang035  "formal-semantics of SciLago" → "formal-semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'formal_semantics
+  McshEdu000010  #idSLangatt001  "semantics of SciLago" → "semantics of LagoscirltnDecoding"  + McshEngl.LagoscirltnDecoding'semantics
+  McshTchInf000006  #idLPrgmspec  "specification of Prgmlago" → "specification of Pgmlinfrsc"  + McshEngl.Pgmlinfrsc'specification
+  McshTchInf000006  #idLPrgmdcmn  "documentation of Prgmlago" → "documentation of Pgmlinfrsc"  + McshEngl.Pgmlinfrsc'documentation
+  McshTchInf000019  #idDeOznactg  "accounting of OgznDao" → "accounting of OgznDaodoing"  + McshEngl.OgznDaodoing'accounting
+  McshTchInf000019  #idDeOznsrvc  "main-function of OgznDao" → "main-function of OgznDaodoing"  + McshEngl.OgznDaodoing'main_function
+  McshTchInf000019  #idDeOznctcl  "community-channel of OgznDao" → "community-channel of OgznDaoinfrsc"  + McshEngl.OgznDaoinfrsc'community_channel
+  McshTchInf000019  #idDeOznwbst  "website of OgznDao" → "website of OgznDaoinfrsc"  + McshEngl.OgznDaoinfrsc'website
+  McshTchInf000019  #idDeOznevalPblm  "problem of OgznDao" → "problem of OgznDaoevaln"  + McshEngl.OgznDaoevaln'problem
+  McshTchInf000019  #idDeOznevalBnft  "benefit of OgznDao" → "benefit of OgznDaoevaln"  + McshEngl.OgznDaoevaln'benefit
+  McshTchInf000022  #idFairnetlawTax  "taxes of Faircoin_net" → "taxes of Frcnlaww"  + McshEngl.Frcnlaww'taxes
+  McshOgm000007  #idCellOgmatt027  "death of Ogsmcell" → "death of CellOgsmevolg"  + McshEngl.CellOgsmevolg'death
+  McshOgm000007  #idCellOgmatt008  "reproduction of Ogsmcell" → "reproduction of CellOgsmevolg"  + McshEngl.CellOgsmevolg'reproduction
+  McshOgm000007  #idCellOgmatt033  "life-cycle of Ogsmcell" → "life-cycle of CellOgsmevolg"  + McshEngl.CellOgsmevolg'life_cycle
+  McshOgm000007  #idCellOgmatt040  "signaling of Ogsmcell" → "signaling of CellOgsmdoing"  + McshEngl.CellOgsmdoing'signaling
+  McshOgm000007  #idCellOgmatt020  "exocytosis of Ogsmcell" → "exocytosis of CellOgsmdoing"  + McshEngl.CellOgsmdoing'exocytosis
+  McshOgm000007  #idCellOgmatt019  "endocytosis of Ogsmcell" → "endocytosis of CellOgsmdoing"  + McshEngl.CellOgsmdoing'endocytosis
+  McshOgm000007  #idCellOgmatt006  "motility of Ogsmcell" → "motility of CellOgsmdoing"  + McshEngl.CellOgsmdoing'motility
+  McshOgm000007  #idCellOgmatt007  "protein-synthesis of Ogsmcell" → "protein-synthesis of CellOgsmdoing"  + McshEngl.CellOgsmdoing'protein_synthesis
+  McshOgm000007  #idCellOgmatt009  "metabolism of Ogsmcell" → "metabolism of CellOgsmdoing"  + McshEngl.CellOgsmdoing'metabolism
+  McshOgm000007  #idCellOgmatt010  "DNA-repair of Ogsmcell" → "DNA-repair of CellOgsmdoing"  + McshEngl.CellOgsmdoing'DNA_repair
+  McshOgm000007  #idCellOgmatt035  "cell-to-cell-interaction of Ogsmcell" → "cell-to-cell-interaction of CellOgsmdoing"  + McshEngl.CellOgsmdoing'cell_to_cell_interaction
+  McshOgm000007  #idCellOgmatt036  "migration of Ogsmcell" → "migration of CellOgsmdoing"  + McshEngl.CellOgsmdoing'migration
+  McshOgm000007  #idCellOgmatt037  "adhetion of Ogsmcell" → "adhetion of CellOgsmdoing"  + McshEngl.CellOgsmdoing'adhetion
+  McshOgm000007  #idCellOgmatt018  "mechanobiology of Ogsmcell" → "mechanobiology of CellOgsminfrsc"  + McshEngl.CellOgsminfrsc'mechanobiology
+  McshOgm000007  #idCellOgmatt004  "cell-theory of Ogsmcell" → "cell-theory of CellOgsminfrsc"  + McshEngl.CellOgsminfrsc'cell_theory
+  McshOgm000007  #idCellOgmatt005  "cell-biology of Ogsmcell" → "cell-biology of CellOgsminfrsc"  + McshEngl.CellOgsminfrsc'cell_biology
+  McshStn000008  #idOgznatt011  "dissolution of Ogzn" → "dissolution of Ogznevolg"  + McshEngl.Ogznevolg'dissolution
+  McshStn000008  #idOgznatt015  "closure of Ogzn" → "closure of Ogznevolg"  + McshEngl.Ogznevolg'closure
+  McshStn000008  #idOgznatt014  "operation of Ogzn" → "operation of Ogznevolg"  + McshEngl.Ogznevolg'operation
+  McshStn000008  #idOgznatt010  "creation of Ogzn" → "creation of Ogznevolg"  + McshEngl.Ogznevolg'creation
+  McshStn000008  #idOgznatt003  "10_goal of Ogzn" → "10_goal of Ogzndoing"  + McshEngl.Ogzndoing'goal
+  McshStn000008  #idOgznatt026  "organizational-analysis of Ogzn" → "organizational-analysis of Ogzninfrsc"  + McshEngl.Ogzninfrsc'organizational_analysis
+  McshStn000008  #idOgznatt020  "management-science of Ogzn" → "management-science of Ogzninfrsc"  + McshEngl.Ogzninfrsc'management_science
+  McshStn000008  #idOgznatt021  "organizational-theory of Ogzn" → "organizational-theory of Ogzninfrsc"  + McshEngl.Ogzninfrsc'organizational_theory
+  McshStn000008  #idOgznatt030  "accounting-vs-bookkeeping of Ogzn" → "accounting-vs-bookkeeping of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'accounting_vs_bookkeeping
+  McshStn000008  #idOgznatt037  "budget of Ogzn" → "budget of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'budget
+  McshStn000008  #idOgznatt019  "accounting-record of Ogzn" → "accounting-record of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'accounting_record
+  McshStn000008  #idOgznatt031  "accounting-transaction of Ogzn" → "accounting-transaction of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'accounting_transaction
+  McshStn000008  #idOgznatt036  "balance-sheet of Ogzn" → "balance-sheet of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'balance_sheet
+  McshStn000008  #idOgznatt027  "financial-statement of Ogzn" → "financial-statement of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'financial_statement
+  McshStn000008  #idOgznatt035  "asset of Ogzn" → "asset of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'asset
+  McshStn000008  #idOgznatt029  "accounting-conceptual-model of Ogzn" → "accounting-conceptual-model of accounting_node__of_Ogzn"  + McshEngl.accounting_node__of_Ogzn'accounting_conceptual_model
+  McshStn000008  #idOgznatt009fgvag  "financing-vs-accounting of Ogzn" → "financing-vs-accounting of financial_node__of_Ogzn"  + McshEngl.financial_node__of_Ogzn'financing_vs_accounting
+  McshTchInf000008  #idLHitpTodo  "todo of Hitplago" → "todo of Hitpevolg"  + McshEngl.Hitpevolg'todo
+  McshTchInf000008  #idLHitpVsn  "versioning of Hitplago" → "versioning of Hitpevolg"  + McshEngl.Hitpevolg'versioning
+  McshTchInf000008  #idLHitpprblm  "problem of Hitplago" → "problem of Hitpevaln"  + McshEngl.Hitpevaln'problem
+  McshHlth000003  #idBrnHmnatt003  "embryonic-hindbrain of OganBrain" → "embryonic-hindbrain of OganBrainevolg"  + McshEngl.OganBrainevolg'embryonic_hindbrain
+  McshHlth000003  #idBrnHmnatt043  "embryonic-midbrain of OganBrain" → "embryonic-midbrain of OganBrainevolg"  + McshEngl.OganBrainevolg'embryonic_midbrain
+  McshHlth000003  #idBrnHmnatt001  "embryonic-forebrain of OganBrain" → "embryonic-forebrain of OganBrainevolg"  + McshEngl.OganBrainevolg'embryonic_forebrain
+  McshHlth000003  #idBrnHmnatt040  "embryonic-brain of OganBrain" → "embryonic-brain of OganBrainevolg"  + McshEngl.OganBrainevolg'embryonic_brain
+  McshHlth000003  #idBrnHmnatt014  "relation-to-videogame of OganBrain" → "relation-to-videogame of OganBrain_att013_caudate_nucleus"  + McshEngl.OganBrain_att013_caudate_nucleus'relation_to_videogame
+  McshTchInf000028  #idDnlbrtodo  "todo of AgntDiem" → "todo of AgntDiemevolg"  + McshEngl.AgntDiemevolg'todo
+  McshTchInf000028  #idDnlbrmfcn  "main-function of AgntDiem" → "main-function of AgntDiemdoing"  + McshEngl.AgntDiemdoing'main_function
+  McshTchInf000028  #idDnlbrgovOnchn  "on-chain-governance of AgntDiem" → "on-chain-governance of AgntDiem_govc"  + McshEngl.AgntDiem_govc'on_chain_governance
+  McshTchInf000028  #idDnlbrprbm  "problem of AgntDiem" → "problem of Diemevaln"  + McshEngl.Diemevaln'problem
+  McshTchInf000028  #idDnlbrbnft  "benefit of AgntDiem" → "benefit of Diemevaln"  + McshEngl.Diemevaln'benefit
+  McshLag000030  #idLTurkdict  "dictionary of Turklago" → "dictionary of Turkinfrsc"  + McshEngl.Turkinfrsc'dictionary
+  McshStn000037  #idSocFracatt002  "tourist-attraction of SoctFrac" → "tourist-attraction of SoctFrac_att001_human_view"  + McshEngl.SoctFrac_att001_human_view'tourist_attraction
+  McshStn000037  #idSocFracatt005  "time-zone of SoctFrac" → "time-zone of SoctFrac_att001_human_view"  + McshEngl.SoctFrac_att001_human_view'time_zone
+  McshStn000015  #idOznPdnatt022  "dissolution-stage of OgznPrdg" → "dissolution-stage of OgznPrdgevolg"  + McshEngl.OgznPrdgevolg'dissolution_stage
+  McshStn000015  #idOznPdnatt021  "closure-stage of OgznPrdg" → "closure-stage of OgznPrdgevolg"  + McshEngl.OgznPrdgevolg'closure_stage
+  McshStn000015  #idOznPdnatt020  "operation-stage of OgznPrdg" → "operation-stage of OgznPrdgevolg"  + McshEngl.OgznPrdgevolg'operation_stage
+  McshStn000015  #idOznPdnatt019  "creation-stage of OgznPrdg" → "creation-stage of OgznPrdgevolg"  + McshEngl.OgznPrdgevolg'creation_stage
+  McshStn000015  #idOznPdnatt016  "satisfier-producingNo of OgznPrdg" → "satisfier-producingNo of OgznPrdgdoing"  + McshEngl.OgznPrdgdoing'satisfier_producingNo
+  McshStn000015  #idOznPdnatt004  "10_goal of OgznPrdg" → "10_goal of OgznPrdgdoing"  + McshEngl.OgznPrdgdoing'goal
+  McshStn000015  #idOznPdnesg  "ESG of OgznPrdg" → "ESG of OgznPrdgevaln"  + McshEngl.OgznPrdgevaln'ESG
+  McshStn000015  #idOznPdnatt033  "tax of OgznPrdg" → "tax of Cmpnstfr"  + McshEngl.Cmpnstfr'tax
+  McshHlth000004  #idCellHmnatt005  "lifetime of cell" → "lifetime of Cellevolg"  + McshEngl.Cellevolg'lifetime
+  McshHlth000004  #idCellHmnatt034  "death of cell" → "death of Cellevolg"  + McshEngl.Cellevolg'death
+  McshHlth000004  #idCellHmnatt033  "genesis of cell" → "genesis of Cellevolg"  + McshEngl.Cellevolg'genesis
+  McshHlth000004  #idCellHmnatt036  "reproduction of cell" → "reproduction of Cellevolg"  + McshEngl.Cellevolg'reproduction
+  McshHlth000004  #idCellHmnatt032  "life-cycle of cell" → "life-cycle of Cellevolg"  + McshEngl.Cellevolg'life_cycle
+  McshHlth000004  #idCellHmnatt031  "transformation of cell" → "transformation of Celldoing"  + McshEngl.Celldoing'transformation
+  McshHlth000004  #idCellHmnatt035  "communicating of cell" → "communicating of Celldoing"  + McshEngl.Celldoing'communicating
+  McshHlth000004  #idCellHmnatt042  "replicating of cell" → "replicating of Celldoing"  + McshEngl.Celldoing'replicating
+  McshLag000032  #idLFrmlfrul  "formation-rule of lagoFrml" → "formation-rule of lagoFrml_formal_grammar"  + McshEngl.lagoFrml_formal_grammar'formation_rule
+  McshLag000032  #idLFrmlmeng  "meaning of lagoFrml" → "meaning of lagoFrml_decoding_relation"  + McshEngl.lagoFrml_decoding_relation'meaning
+  McshLag000032  #idLFrmldomn  "domain of lagoFrml" → "domain of lagoFrml_output"  + McshEngl.lagoFrml_output'domain
+  McshLag000032  #idLFrmlthry  "theory of lagoFrml" → "theory of lagoFrml_output"  + McshEngl.lagoFrml_output'theory
+  McshLag000032  #idLFrmlwffl  "well-formed-formula of lagoFrml" → "well-formed-formula of lagoFrml_output"  + McshEngl.lagoFrml_output'well_formed_formula
+  McshLag000032  #idLFrmlword  "word of lagoFrml" → "word of lagoFrml_output"  + McshEngl.lagoFrml_output'word
+  McshLag000032  #idLFrmlsmbl  "symbol of lagoFrml" → "symbol of lagoFrml_output"  + McshEngl.lagoFrml_output'symbol
+  McshLag000032  #idLFrmlipt1domn  "mind-domain of lagoFrml" → "mind-domain of lagoFrml_mind_view"  + McshEngl.lagoFrml_mind_view'mind_domain
+  McshTchInf000015  #idAlgntstatadpn  "adoption of Algonet" → "adoption of Agntstat"  + McshEngl.Agntstat'adoption
+  McshStn000034  #idSocVtnmatt002  "tourist-attraction of SoctVtnm" → "tourist-attraction of SoctVtnm_att001_human_view"  + McshEngl.SoctVtnm_att001_human_view'tourist_attraction
+  McshStn000034  #idSocVtnmatt005  "time-zone of SoctVtnm" → "time-zone of SoctVtnm_att001_human_view"  + McshEngl.SoctVtnm_att001_human_view'time_zone
+  McshHlth000016  #idThrpHmnevogFur  "future of therapy" → "future of Therapyevolg"  + McshEngl.Therapyevolg'future
+  McshHlth000016  #idThrpHmneval  "evaluation of therapy" → "evaluation of Therapyinfrsc"  + McshEngl.Therapyinfrsc'evaluation
+  McshOgm000003  #idOgm038  "last-universal-common-ancestor of Ogsm" → "last-universal-common-ancestor of Ogsmevolg"  + McshEngl.Ogsmevolg'last_universal_common_ancestor
+  McshOgm000003  #idOgmatt012  "lifetime of Ogsm" → "lifetime of Ogsmevolg"  + McshEngl.Ogsmevolg'lifetime
+  McshOgm000003  #idOgmatt017  "life-cycle of Ogsm" → "life-cycle of Ogsmevolg"  + McshEngl.Ogsmevolg'life_cycle
+  McshOgm000003  #idOgmatt019  "photosynthesis of Ogsm" → "photosynthesis of Ogsmdoing"  + McshEngl.Ogsmdoing'photosynthesis
+  McshOgm000003  #idOgmatt016  "metabolism of Ogsm" → "metabolism of Ogsmdoing"  + McshEngl.Ogsmdoing'metabolism
+  McshOgm000003  #idOgmatt022  "biosynthesis of Ogsm" → "biosynthesis of Ogsmdoing"  + McshEngl.Ogsmdoing'biosynthesis
+  McshOgm000003  #idOgmatt025  "reproduction of Ogsm" → "reproduction of Ogsmdoing"  + McshEngl.Ogsmdoing'reproduction
+  McshOgm000003  #idOgmatt024  "action of Ogsm" → "action of Ogsmdoing"  + McshEngl.Ogsmdoing'action
+  McshOgm000003  #idOgmatt015  "function of Ogsm" → "function of Ogsmdoing"  + McshEngl.Ogsmdoing'function
+  McshTchInf000002  #idTInforvlg  "info-revolution of techInfo" → "info-revolution of TechInfoevolg"  + McshEngl.TechInfoevolg'info_revolution
+  McshTchInf000002  #idTchInfappl  "application-process of techInfo" → "application-process of TechInfodoing"  + McshEngl.TechInfodoing'application_process
+  McshHlth000014  #idMedHmnaprvl  "14_approval of medication" → "14_approval of Medicationdoing"  + McshEngl.Medicationdoing'approval
+  McshHlth000014  #idMedHmnatt014  "overdose of medication" → "overdose of medication_dosage"  + McshEngl.medication_dosage'overdose
+  McshHlth000014  #idMedHmnatt013  "dosage-form of medication" → "dosage-form of medication_dosage"  + McshEngl.medication_dosage'dosage_form
+  McshHlth000014  #idMedHmnatt012  "dose of medication" → "dose of medication_dosage"  + McshEngl.medication_dosage'dose
+  McshLag000027  #idLEllarscLexk  "ΛΕΞΙΚΟ of Ellalago" → "ΛΕΞΙΚΟ of Ellainfrsc"  + McshEngl.Ellainfrsc'ΛΕΞΙΚΟ
+  McshLag000027  #idLEllarscSntx  "ΣΥΝΤΑΚΤΙΚΟ of Ellalago" → "ΣΥΝΤΑΚΤΙΚΟ of Ellainfrsc"  + McshEngl.Ellainfrsc'ΣΥΝΤΑΚΤΙΚΟ
+  McshLag000027  #idLEllarscGrmr  "ΓΡΑΜΜΑΤΙΚΗ of Ellalago" → "ΓΡΑΜΜΑΤΙΚΗ of Ellainfrsc"  + McshEngl.Ellainfrsc'ΓΡΑΜΜΑΤΙΚΗ
+  McshStn000042  #idSctrEdudnmk  "decision-making of sectorEdu" → "decision-making of SectorEdudoing"  + McshEngl.SectorEdudoing'decision_making
+  McshStn000044  #idSocRouaatt002  "tourist-attraction of SoctRoua" → "tourist-attraction of SoctRoua_att001_human_view"  + McshEngl.SoctRoua_att001_human_view'tourist_attraction
+  McshStn000044  #idSocRouaatt006  "calling-code of SoctRoua" → "calling-code of SoctRoua_att001_human_view"  + McshEngl.SoctRoua_att001_human_view'calling_code
+  McshStn000044  #idSocRouaatt005  "time-zone of SoctRoua" → "time-zone of SoctRoua_att001_human_view"  + McshEngl.SoctRoua_att001_human_view'time_zone
+  McshTch000002  #idTchatt012  "fifth-industrial-revolution of tech" → "fifth-industrial-revolution of Techevolg"  + McshEngl.Techevolg'fifth_industrial_revolution
+  McshTch000002  #idTchatt009  "forth-industrial-revolution of tech" → "forth-industrial-revolution of Techevolg"  + McshEngl.Techevolg'forth_industrial_revolution
+  McshTch000002  #idTchatt008  "third-industrial-revolution of tech" → "third-industrial-revolution of Techevolg"  + McshEngl.Techevolg'third_industrial_revolution
+  McshTch000002  #idTchatt007  "second-industrial-revolution of tech" → "second-industrial-revolution of Techevolg"  + McshEngl.Techevolg'second_industrial_revolution
+  McshTch000002  #idTchatt006  "first-industrial-revolution of tech" → "first-industrial-revolution of Techevolg"  + McshEngl.Techevolg'first_industrial_revolution
+  McshTch000002  #idTchrvlg  "revolution of tech" → "revolution of Techevolg"  + McshEngl.Techevolg'revolution
+  McshTch000002  #idTchatt003  "engineering of tech" → "engineering of Techdoing"  + McshEngl.Techdoing'engineering
+  McshTch000002  #idTchatt010  "application-process of tech" → "application-process of Techdoing"  + McshEngl.Techdoing'application_process
+  McshTchInf000025  #idErpddongLgin  "logging-in of Everipedia" → "logging-in of Everipediadoing"  + McshEngl.Everipediadoing'logging_in
+  McshTchInf000025  #idErpddongSvc  "service of Everipedia" → "service of Everipediadoing"  + McshEngl.Everipediadoing'service
+  McshStn000035  #idSocItlaatt002  "tourist-attraction of SoctItla" → "tourist-attraction of SoctItla_att001_human_view"  + McshEngl.SoctItla_att001_human_view'tourist_attraction
+  McshStn000035  #idSocItlaatt005  "time-zone of SoctItla" → "time-zone of SoctItla_att001_human_view"  + McshEngl.SoctItla_att001_human_view'time_zone
+  McshStn000039  #idSocAlbaatt002  "tourist-attraction of SoctAlba" → "tourist-attraction of SoctAlba_att001_human_view"  + McshEngl.SoctAlba_att001_human_view'tourist_attraction
+  McshStn000039  #idSocAlbaatt005  "time-zone of SoctAlba" → "time-zone of SoctAlba_att001_human_view"  + McshEngl.SoctAlba_att001_human_view'time_zone
+  McshStn000040  #idSocNmkdatt002  "tourist-attraction of SoctNmkd" → "tourist-attraction of SoctNmkd_att001_human_view"  + McshEngl.SoctNmkd_att001_human_view'tourist_attraction
+  McshStn000040  #idSocNmkdatt006  "calling-code of SoctNmkd" → "calling-code of SoctNmkd_att001_human_view"  + McshEngl.SoctNmkd_att001_human_view'calling_code
+  McshStn000040  #idSocNmkdatt005  "time-zone of SoctNmkd" → "time-zone of SoctNmkd_att001_human_view"  + McshEngl.SoctNmkd_att001_human_view'time_zone
+  McshStn000040  #idSocNmkdatt007  "languages of SoctNmkd" → "languages of SoctNmkd_att001_human_view"  + McshEngl.SoctNmkd_att001_human_view'languages
+  McshStn000050  #idSocKhmaatt002  "tourist-attraction of SoctKhma" → "tourist-attraction of SoctKhma_att001_human_view"  + McshEngl.SoctKhma_att001_human_view'tourist_attraction
+  McshStn000050  #idSocKhmaatt006  "calling-code of SoctKhma" → "calling-code of SoctKhma_att001_human_view"  + McshEngl.SoctKhma_att001_human_view'calling_code
+  McshStn000050  #idSocKhmaatt005  "time-zone of SoctKhma" → "time-zone of SoctKhma_att001_human_view"  + McshEngl.SoctKhma_att001_human_view'time_zone
+  McshLag000014  #idBookatt003  "edition of irBook" → "edition of IrBookevolg"  + McshEngl.IrBookevolg'edition
+  McshOgm000006  #idPrtnOgmatt012  "katabolism of MoleProtein" → "katabolism of MoleProteindoing"  + McshEngl.MoleProteindoing'katabolism
+  McshOgm000006  #idPrtnOgmatt011  "anabolism of MoleProtein" → "anabolism of MoleProteindoing"  + McshEngl.MoleProteindoing'anabolism
+  McshOgm000006  #idPrtnOgmatt010  "metabolism of MoleProtein" → "metabolism of MoleProteindoing"  + McshEngl.MoleProteindoing'metabolism
+  McshOgm000006  #idPrtnOgmatt014  "synthesis of MoleProtein" → "synthesis of MoleProteindoing"  + McshEngl.MoleProteindoing'synthesis
+  McshOgm000006  #idPrtnOgmatt001  "proteomics of MoleProtein" → "proteomics of MoleProteininfrsc"  + McshEngl.MoleProteininfrsc'proteomics
+  McshOgm000006  #idPrtnOgmatt018  "PDB of MoleProtein" → "PDB of MoleProteininfrsc"  + McshEngl.MoleProteininfrsc'PDB
+  McshStn000031  #idSocChnaatt034  "goal of SoctChna" → "goal of SoctChnadoing"  + McshEngl.SoctChnadoing'goal
+  McshStn000031  #idSocChna24hr  "Twenty-Four-Histories of SoctChna" → "Twenty-Four-Histories of SoctChnainfrsc"  + McshEngl.SoctChnainfrsc'Twenty_Four_Histories
+  McshStn000038  #idSocBgraatt002  "tourist-attraction of SoctBgra" → "tourist-attraction of SoctBgra_att001_human_view"  + McshEngl.SoctBgra_att001_human_view'tourist_attraction
+  McshStn000038  #idSocBgraatt005  "time-zone of SoctBgra" → "time-zone of SoctBgra_att001_human_view"  + McshEngl.SoctBgra_att001_human_view'time_zone
+  McshStn000041  #idSocSvnaatt002  "tourist-attraction of SoctSvna" → "tourist-attraction of SoctSvna_att001_human_view"  + McshEngl.SoctSvna_att001_human_view'tourist_attraction
+  McshStn000041  #idSocSvnaatt006  "calling-code of SoctSvna" → "calling-code of SoctSvna_att001_human_view"  + McshEngl.SoctSvna_att001_human_view'calling_code
+  McshStn000041  #idSocSvnaatt005  "time-zone of SoctSvna" → "time-zone of SoctSvna_att001_human_view"  + McshEngl.SoctSvna_att001_human_view'time_zone
+  McshStn000043  #idSocRusaatt002  "tourist-attraction of SoctRusa" → "tourist-attraction of SoctRusa_att001_human_view"  + McshEngl.SoctRusa_att001_human_view'tourist_attraction
+  McshStn000043  #idSocRusaatt006  "calling-code of SoctRusa" → "calling-code of SoctRusa_att001_human_view"  + McshEngl.SoctRusa_att001_human_view'calling_code
+  McshStn000043  #idSocRusaatt005  "time-zone of SoctRusa" → "time-zone of SoctRusa_att001_human_view"  + McshEngl.SoctRusa_att001_human_view'time_zone
+  McshStn000048  #idSocJpnaatt002  "tourist-attraction of SoctJpna" → "tourist-attraction of SoctJpna_att001_human_view"  + McshEngl.SoctJpna_att001_human_view'tourist_attraction
+  McshStn000048  #idSocJpnaatt006  "calling-code of SoctJpna" → "calling-code of SoctJpna_att001_human_view"  + McshEngl.SoctJpna_att001_human_view'calling_code
+  McshStn000048  #idSocJpnaatt005  "time-zone of SoctJpna" → "time-zone of SoctJpna_att001_human_view"  + McshEngl.SoctJpna_att001_human_view'time_zone
+  McshTchInf000038  #idTchLlmfntn  "fine-tuning of techLlm" → "fine-tuning of TechLlmdoing"  + McshEngl.TechLlmdoing'fine_tuning
+  McshTchInf000038  #idTchLlmprtng  "pretraining of techLlm" → "pretraining of TechLlmdoing"  + McshEngl.TechLlmdoing'pretraining
+  McshTchInf000038  #idTchLlmrag  "Retrieval-Augmented Generation of techLlm" → "Retrieval-Augmented Generation of TechLlmdoing"  + McshEngl.TechLlmdoing'Retrieval_Augmented_Generation
+  McshTchInf000038  #idTchLlmevalMmlu  "MMLU of techLlm" → "MMLU of TechLlmevaln"  + McshEngl.TechLlmevaln'MMLU
+  McshTchInf000038  #idTchLlmevalHumn  "HumanEval of techLlm" → "HumanEval of TechLlmevaln"  + McshEngl.TechLlmevaln'HumanEval
+  McshTchInf000038  #idTchLlmevalIssu  "issue of techLlm" → "issue of TechLlmevaln"  + McshEngl.TechLlmevaln'issue
+  McshCor000012  #idMdlevoglfcl  "life-cycle of model" → "life-cycle of Modelevolg"  + McshEngl.Modelevolg'life_cycle
+  McshCor000012  #idMdlatt017  "using of model" → "using of Modeldoing"  + McshEngl.Modeldoing'using
+  McshCor000012  #idMdlatt016  "evaluating of model" → "evaluating of Modeldoing"  + McshEngl.Modeldoing'evaluating
+  McshCor000012  #idMdlatt010  "creating of model" → "creating of Modeldoing"  + McshEngl.Modeldoing'creating
+  McshEdu000002  #idScirvlg  "revolution of science" → "revolution of Scienceevolg"  + McshEngl.Scienceevolg'revolution
+  McshStn000004  #idGvcOgmatt003  "sociocracy of AdmnSctn" → "sociocracy of AdmnSctninfrsc"  + McshEngl.AdmnSctninfrsc'sociocracy
+  McshCor000015  #idMcshExmlrscsci  "science of McshExml" → "science of McshExmlinfrsc"  + McshEngl.McshExmlinfrsc'science
+  McshCor000015  #idMcshExmlrsceval  "evaluation of McshExml" → "evaluation of McshExmlinfrsc"  + McshEngl.McshExmlinfrsc'evaluation
+  McshCor000015  #idMcshExmlatt005b  "heading5 of McshExml" → "heading5 of McshExml_heading4"  + McshEngl.McshExml_heading4'heading5
+  McshCor000015  #idMcshExmlatt006  "heading6 of McshExml" → "heading6 of McshExml_heading5"  + McshEngl.McshExml_heading5'heading6
+  McshStn000010  #idSfrHmnatt001theo  "theory-of-value of satisfier" → "theory-of-value of Sfrev"  + McshEngl.Sfrev'theory_of_value
+  McshStnlaw000002  #idLawatt011  "impact of law" → "impact of Lawdoing"  + McshEngl.Lawdoing'impact
+  McshStnlaw000002  #idLawatt002  "enforcement of law" → "enforcement of Lawdoing"  + McshEngl.Lawdoing'enforcement
+  McshStnlaw000002  #idLawatt004  "consolidation of law" → "consolidation of Lawdoing"  + McshEngl.Lawdoing'consolidation
+  McshStnlaw000002  #idLawatt008  "interpretation of law" → "interpretation of Lawdoing"  + McshEngl.Lawdoing'interpretation
+  McshStnlaw000002  #idLawatt013  "creation of law" → "creation of Lawdoing"  + McshEngl.Lawdoing'creation
+  McshTchInf000007  #idLCnptoptschm  "output-schema of Cnptlago" → "output-schema of Cptlcode"  + McshEngl.Cptlcode'output_schema
+  McshTchInf000007  #idLCnptexpveff  "expressiveness-vs-efficiency of Cnptlago" → "expressiveness-vs-efficiency of Cptlevaln"  + McshEngl.Cptlevaln'expressiveness_vs_efficiency
+  McshCor000004  #idDngatt007  "timespan of doing" → "timespan of Dongevolg"  + McshEngl.Dongevolg'timespan
+  McshCor000004  #idDngatt006  "stage of doing" → "stage of Dongevolg"  + McshEngl.Dongevolg'stage
+  McshCor000004  #idDngatt005  "state of doing" → "state of Dongevolg"  + McshEngl.Dongevolg'state
+  McshHlth000008  #idHlthHmnatt012  "indicator of health" → "indicator of Hlthevaln"  + McshEngl.Hlthevaln'indicator
+  McshStn000011  #idWkratt001  "working of Wrkr" → "working of Wrkrdoing"  + McshEngl.Wrkrdoing'working
+  McshStn000012  #idEconHmnatt031  "planning of SoctEcon" → "planning of SoctEcondoing"  + McshEngl.SoctEcondoing'planning
+  McshStnlaw000006  #idLawGrcjdcr  "judiciary of lawGrca" → "judiciary of lawGrca_legal_system"  + McshEngl.lawGrca_legal_system'judiciary
+  McshOgm000004  #idMolOgmatt002  "modification of MoleOgsm" → "modification of MoleOgsmdoing"  + McshEngl.MoleOgsmdoing'modification
+  McshOgm000004  #idMolOgmatt005  "production of MoleOgsm" → "production of MoleOgsmdoing"  + McshEngl.MoleOgsmdoing'production
+  McshOgm000009  #idOgmAnmldongDfct  "defecating of OgsmAnimal" → "defecating of OgsmAnimaldoing"  + McshEngl.OgsmAnimaldoing'defecating
+  McshOgm000010  #idPlntatt016  "harvesting of OgsmPlant" → "harvesting of OgmPlantdoing"  + McshEngl.OgmPlantdoing'harvesting
+  McshOgm000010  #idPlntatt017  "12_use of OgsmPlant" → "12_use of OgmPlantdoing"  + McshEngl.OgmPlantdoing'use
+  McshOgm000010  #idPlntatt018  "11_communication of OgsmPlant" → "11_communication of OgmPlantdoing"  + McshEngl.OgmPlantdoing'communication
+  McshStn000002  #idStnOgmatt014  "organizing of SctnOgms" → "organizing of SctnOgmsdoing"  + McshEngl.SctnOgmsdoing'organizing
+  McshStn000002  #idStnOgmatt009  "goal of SctnOgms" → "goal of SctnOgmsdoing"  + McshEngl.SctnOgmsdoing'goal
+  McshStn000002  #idStnOgmatt008  "disorder of SctnOgms" → "disorder of SctnOgms_health"  + McshEngl.SctnOgms_health'disorder
+  McshStn000045  #idSocSsssatt002  "tourist-attraction of SoctBiha" → "tourist-attraction of SoctBiha_att001_human_view"  + McshEngl.SoctBiha_att001_human_view'tourist_attraction
+  McshStn000045  #idSocSsssatt006  "calling-code of SoctBiha" → "calling-code of SoctBiha_att001_human_view"  + McshEngl.SoctBiha_att001_human_view'calling_code
+  McshStn000045  #idSocSsssatt005  "time-zone of SoctBiha" → "time-zone of SoctBiha_att001_human_view"  + McshEngl.SoctBiha_att001_human_view'time_zone
+  McshStn000046  #idSocMneaatt002  "tourist-attraction of SoctMnea" → "tourist-attraction of SoctMnea_att001_human_view"  + McshEngl.SoctMnea_att001_human_view'tourist_attraction
+  McshStn000046  #idSocMneaatt006  "calling-code of SoctMnea" → "calling-code of SoctMnea_att001_human_view"  + McshEngl.SoctMnea_att001_human_view'calling_code
+  McshStn000046  #idSocMneaatt005  "time-zone of SoctMnea" → "time-zone of SoctMnea_att001_human_view"  + McshEngl.SoctMnea_att001_human_view'time_zone
+  McshStn000047  #idSocHrvaatt002  "tourist-attraction of SoctHrva" → "tourist-attraction of SoctHrva_att001_human_view"  + McshEngl.SoctHrva_att001_human_view'tourist_attraction
+  McshStn000047  #idSocHrvaatt006  "calling-code of SoctHrva" → "calling-code of SoctHrva_att001_human_view"  + McshEngl.SoctHrva_att001_human_view'calling_code
+  McshStn000047  #idSocHrvaatt005  "time-zone of SoctHrva" → "time-zone of SoctHrva_att001_human_view"  + McshEngl.SoctHrva_att001_human_view'time_zone
+  McshStn000049  #idSocKorsatt002  "tourist-attraction of SoctKors" → "tourist-attraction of SoctKors_att001_human_view"  + McshEngl.SoctKors_att001_human_view'tourist_attraction
+  McshStn000049  #idSocKorsatt006  "calling-code of SoctKors" → "calling-code of SoctKors_att001_human_view"  + McshEngl.SoctKors_att001_human_view'calling_code
+  McshStn000049  #idSocKorsatt005  "time-zone of SoctKors" → "time-zone of SoctKors_att001_human_view"  + McshEngl.SoctKors_att001_human_view'time_zone
+  McshStn000051  #idSocSgpratt002  "tourist-attraction of SoctSgpr" → "tourist-attraction of SoctSgpr_att001_human_view"  + McshEngl.SoctSgpr_att001_human_view'tourist_attraction
+  McshStn000051  #idSocSgpratt006  "calling-code of SoctSgpr" → "calling-code of SoctSgpr_att001_human_view"  + McshEngl.SoctSgpr_att001_human_view'calling_code
+  McshStn000051  #idSocSgpratt005  "time-zone of SoctSgpr" → "time-zone of SoctSgpr_att001_human_view"  + McshEngl.SoctSgpr_att001_human_view'time_zone
+  McshTchPrgm000002  #idCpgmatt005  "syntax-tree of Cmprprgm" → "syntax-tree of Cmprprgmsrtr"  + McshEngl.Cmprprgmsrtr'syntax_tree
+  McshTchPrgm000002  #idCpgmatt004  "documentation of Cmprprgm" → "documentation of Cmprprgminfrsc"  + McshEngl.Cmprprgminfrsc'documentation
+  McshCor000023  #idSys009att002  "state of SystDyna" → "state of Dynasystsrtr"  + McshEngl.Dynasystsrtr'state
+  McshEdu000005  #idSMath20012100  "21st-century of SciMath" → "21st-century of SciMathevolg"  + McshEngl.SciMathevolg'21st_century
+  McshStn000018  #idOznUnatt009  "2015_Millennium_Development_Goals of OgznUn" → "2015_Millennium_Development_Goals of OgznUndoing"  + McshEngl.OgznUndoing'Millennium_Development_Goals
+  McshStn000018  #idOznUnatt008  "2030_Agenda_for_Sustainable_Development of OgznUn" → "2030_Agenda_for_Sustainable_Development of OgznUndoing"  + McshEngl.OgznUndoing'Agenda_for_Sustainable_Development
+  McshStn000036  #idSocDeutatt002  "tourist-attraction of SoctDeut" → "tourist-attraction of SoctDeut_att001_human_view"  + McshEngl.SoctDeut_att001_human_view'tourist_attraction
+  McshStn000036  #idSocDeutatt005  "time-zone of SoctDeut" → "time-zone of SoctDeut_att001_human_view"  + McshEngl.SoctDeut_att001_human_view'time_zone
+  McshHmn000003  #idHmnSngoatt021  "lifetime of Humn1959Sinagu" → "lifetime of Humn1959Sinaguevolg"  + McshEngl.Humn1959Sinaguevolg'lifetime
+  McshLag000004  #idLagCmnratt005  "communication of lagoCmnr" → "communication of LagoCmnrdoing"  + McshEngl.LagoCmnrdoing'communication
+  McshLag000019  #idPaperatt003  "edition of irPaper" → "edition of IrPaperevolg"  + McshEngl.IrPaperevolg'edition
+  McshNtr000002  #idMtrlatt005  "matter-relation-to-mass of material" → "matter-relation-to-mass of mass"  + McshEngl.mass'matter_relation_to_mass
+  McshStn000006  #idOznOgmatt001  "01_goal of OgznOgsm" → "01_goal of OznOgsmdoing"  + McshEngl.OznOgsmdoing'goal
+  McshStn000014  #idOznCsnatt001  "10_goal of OgznCsmg" → "10_goal of Hshddoing"  + McshEngl.Hshddoing'goal
+  McshStn000021  #idSocGlblgbzn  "globalization of SoctGlbl" → "globalization of SoctGlbldoing"  + McshEngl.SoctGlbldoing'globalization
+  McshStn000033  #idSocTurkatt008  "Ottoman-Empire of SoctTurk" → "Ottoman-Empire of SoctTurkevolg"  + McshEngl.SoctTurkevolg'Ottoman_Empire
+  McshStnlaw000004  #idLawInlenfm  "enforcement of lawIntl" → "enforcement of LawIntldoing"  + McshEngl.LawIntldoing'enforcement
+  McshTchInf000029  #idLJsonspfn  "specification of Jsonlago" → "specification of Jsoninfrsc"  + McshEngl.Jsoninfrsc'specification
+
+=== DOT (96) — "<ancestor>.x" → "M.x"
+  McshLag000007  #idLHmnmmprnDecd  "Hmmdmapgrltn.decoding of Hmmdlago" → "Hmmdmapgrltn.decoding"  (name exists)
+  McshLag000007  #idLHmnmmprnEncd  "Hmmdmapgrltn.encoding of Hmmdlago" → "Hmmdmapgrltn.encoding"  (name exists)
+  McshLag000007  #idLHmnmprsnC  "personLago.third of Hmmdlago" → "personLago.third"  (name exists)
+  McshLag000007  #idLHmnmprsnB  "personLago.second of Hmmdlago" → "personLago.second"  (name exists)
+  McshLag000007  #idLHmnmprsnA  "personLago.first of Hmmdlago" → "personLago.first"  (name exists)
+  McshTchInf000012  #idLJsndVrn  "Jsndlago.version" → "Jsndevolg.version"  + McshEngl.Jsndevolg.version
+  McshHmn000002  #idHmn001IrgvOjt  "human.interrogative_object" → "HumnAsk.interrogative_object"  + McshEngl.HumnAsk.interrogative_object
+  McshHmn000002  #idHmn001IrgvPsv  "human.interrogative_possesive" → "HumnAsk.interrogative_possesive"  + McshEngl.HumnAsk.interrogative_possesive
+  McshHmn000002  #idHmn020  "human.blood_family_tree" → "Humnevolg.blood_family_tree"  + McshEngl.Humnevolg.blood_family_tree
+  McshHmn000002  #idHmnatt125  "Humnid.TIN of human" → "Humnid.TIN"  + McshEngl.Humnid.TIN
+  McshHmn000002  #idHmnatt101Gln  "Humnid.global-location-number of human" → "Humnid.global-location-number"  + McshEngl.Humnid.global_location_number
+  McshHmn000002  #idHmnatt103  "Humnid.global-identifier of human" → "Humnid.global-identifier"  + McshEngl.Humnid.global_identifier
+  McshHmn000002  #idHmnatt102  "Humnid.national-identifier of human" → "Humnid.national-identifier"  + McshEngl.Humnid.national_identifier
+  McshHlth000011  #idDssHmn246  "disease.iron_excess_246" → "DissIron_imbalance.iron_excess_246"  + McshEngl.DissIron_imbalance.iron_excess_246
+  McshHlth000011  #idDssHmn243  "disease.iron_deficiency_243" → "DissIron_imbalance.iron_deficiency_243"  + McshEngl.DissIron_imbalance.iron_deficiency_243
+  McshHlth000011  #idDssHmn023  "disease.back_neck_pain_023" → "DissBoneVertebral_column.back_neck_pain_023"  + McshEngl.DissBoneVertebral_column.back_neck_pain_023
+  McshHlth000011  #idDssHmn250  "disease.androgenExcess" → "DissAndrogen.androgenExcess"  + McshEngl.DissAndrogen.androgenExcess
+  McshHlth000011  #idDssHmn249  "disease.androgenDeficiency" → "DissAndrogen.androgenDeficiency"  + McshEngl.DissAndrogen.androgenDeficiency
+  McshHlth000011  #idDssHmn095  "disease.stomach_pain_095" → "DissStomack.stomach_pain_095"  + McshEngl.DissStomack.stomach_pain_095
+  McshHlth000011  #idDssHmn094  "disease.heartburn" → "DissStomack.heartburn"  + McshEngl.DissStomack.heartburn
+  McshHlth000011  #idDssHmn093  "disease.gastritis_093" → "DissStomack.gastritis_093"  + McshEngl.DissStomack.gastritis_093
+  McshHlth000011  #idDssHmn091  "disease.blood_circulation_091" → "DissInfo_tech.blood_circulation_091"  + McshEngl.DissInfo_tech.blood_circulation_091
+  McshHlth000011  #idDssHmn090  "disease.Rsi_090" → "DissInfo_tech.Rsi_090"  + McshEngl.DissInfo_tech.Rsi_090
+  McshHlth000011  #idDssHmn122  "disease.obstructive_jaundice_122" → "DissJaundice.obstructive_jaundice_122"  + McshEngl.DissJaundice.obstructive_jaundice_122
+  McshHlth000011  #idDssHmn213  "disease.food_poisoning_213" → "DissFood.food_poisoning_213"  + McshEngl.DissFood.food_poisoning_213
+  McshHlth000011  #idDssHmn217  "disease.sexual_desire_217" → "DissReproduction.sexual_desire_217"  + McshEngl.DissReproduction.sexual_desire_217
+  McshHlth000011  #idDssHmn076  "disease.mole_076" → "DissSkin.mole_076"  + McshEngl.DissSkin.mole_076
+  McshHlth000011  #idDssHmn075  "disease.dermatitis_075" → "DissSkin.dermatitis_075"  + McshEngl.DissSkin.dermatitis_075
+  McshHlth000011  #idDssHmn062  "disease.bite_cause_062" → "DissCauseAnimal.bite_cause_062"  + McshEngl.DissCauseAnimal.bite_cause_062
+  McshHlth000011  #idDssHmn060  "disease.overactive_bladder_060" → "DissUrinary_system.overactive_bladder_060"  + McshEngl.DissUrinary_system.overactive_bladder_060
+  McshHlth000011  #idDssHmn059  "disease.involuntary_urination_059" → "DissUrinary_system.involuntary_urination_059"  + McshEngl.DissUrinary_system.involuntary_urination_059
+  McshHlth000011  #idDssHmn165  "disease.nephritis_165" → "DissUrinary_system.nephritis_165"  + McshEngl.DissUrinary_system.nephritis_165
+  McshHlth000011  #idDssHmn218  "disease.kidney_stone_218" → "DissUrinary_system.kidney_stone_218"  + McshEngl.DissUrinary_system.kidney_stone_218
+  McshHlth000011  #idDssHmn263  "disease.kidney_263" → "DissUrinary_system.kidney_263"  + McshEngl.DissUrinary_system.kidney_263
+  McshHlth000011  #idDssHmn278  "disease.low_back_pain_278" → "DissMusculoskeletal_system.low_back_pain_278"  + McshEngl.DissMusculoskeletal_system.low_back_pain_278
+  McshHlth000011  #idDssHmn194  "disease.sprain_194" → "DissMusculoskeletal_system.sprain_194"  + McshEngl.DissMusculoskeletal_system.sprain_194
+  McshHlth000011  #idDssHmn193  "disease.fracture_193" → "DissMusculoskeletal_system.fracture_193"  + McshEngl.DissMusculoskeletal_system.fracture_193
+  McshHlth000011  #idDssHmn192  "disease.rachitis_192" → "DissMusculoskeletal_system.rachitis_192"  + McshEngl.DissMusculoskeletal_system.rachitis_192
+  McshHlth000011  #idDssHmn191  "disease.osteoporosis_191" → "DissMusculoskeletal_system.osteoporosis_191"  + McshEngl.DissMusculoskeletal_system.osteoporosis_191
+  McshHlth000011  #idDssHmn005_1  "disease.skeletal_system_104" → "DissMusculoskeletal_system.skeletal_system_104"  + McshEngl.DissMusculoskeletal_system.skeletal_system_104
+  McshHlth000011  #idDssHmn248  "disease.excess_of_bodyMaterial_248" → "DissInternal_cause.excess_of_bodyMaterial_248"  + McshEngl.DissInternal_cause.excess_of_bodyMaterial_248
+  McshHlth000011  #idDssHmn247  "disease.lack_bodyMaterial_247" → "DissInternal_cause.lack_bodyMaterial_247"  + McshEngl.DissInternal_cause.lack_bodyMaterial_247
+  McshHlth000011  #idDssHmn226  "disease.imbalance_226" → "DissInternal_cause.imbalance_226"  + McshEngl.DissInternal_cause.imbalance_226
+  McshHlth000011  #idDssHmn203  "disease.wound_203" → "DissExternal_cause.wound_203"  + McshEngl.DissExternal_cause.wound_203
+  McshHlth000011  #idDssHmn070  "disease.black_death_070" → "DissPandemic.black_death_070"  + McshEngl.DissPandemic.black_death_070
+  McshTchInf000031  #idLCppsuntPrcsB  "Cppzsunt.process-and-processNo of Cppzlago" → "Cppzsunt.process-and-processNo"  (name exists)
+  McshTchInf000031  #idLCppsuntPrcsN  "Cppzsunt.processNo of Cppzlago" → "Cppzsunt.processNo"  (name exists)
+  McshTchInf000031  #idLCppsuntPrcs  "Cppzsunt.process of Cppzlago" → "Cppzsunt.process"  (name exists)
+  McshTchInf000031  #idLCppsuntNmdN  "Cppzsunt.namedNo of Cppzlago" → "Cppzsunt.namedNo"  (name exists)
+  McshTchInf000031  #idLCppsuntNmd  "Cppzsunt.named of Cppzlago" → "Cppzsunt.named"  (name exists)
+  McshTchInf000031  #idLCppsuntVoid  "Cppzsunt.void of Cppzlago" → "Cppzsunt.void"  (name exists)
+  McshCor000007  #idSpcNrNpb  "space.deictic.nearNo_personB" → "spaceDeictic.nearNo_personB"  + McshEngl.spaceDeictic.nearNo_personB
+  McshCor000007  #idSpcNrpb  "space.deictic.near_personB" → "spaceDeictic.near_personB"  + McshEngl.spaceDeictic.near_personB
+  McshCor000007  #idSpcNrNpa  "space.deictic.nearNo_personA" → "spaceDeictic.nearNo_personA"  + McshEngl.spaceDeictic.nearNo_personA
+  McshCor000007  #idSpcNrpa  "space.deictic.near_personA" → "spaceDeictic.near_personA"  + McshEngl.spaceDeictic.near_personA
+  McshTchInf000018  #idEthnetRpstn  "DnEth.ROPSTEN" → "EthrTest.ROPSTEN"  + McshEngl.EthrTest.ROPSTEN
+  McshTchInf000018  #idEthnetMrdn  "DnEth.MORDEN" → "EthrTest.MORDEN"  + McshEngl.EthrTest.MORDEN
+  McshCor000003  #idEntSmsDfnNAny  "entity.definiteNo.quantity.any" → "definiteNo.quantity.any"  + McshEngl.definiteNo.quantity.any
+  McshCor000003  #idEntSmsDfnNOneN  "entity.definiteNo.quantity.oneNo" → "definiteNo.quantity.oneNo"  + McshEngl.definiteNo.quantity.oneNo
+  McshCor000003  #idEntSmsDfnNOne  "entity.definiteNo.quantity.one" → "definiteNo.quantity.one"  + McshEngl.definiteNo.quantity.one
+  McshCor000003  #idEntDefOne  "entity.definite.quantity.one" → "definite.quantity.one"  + McshEngl.definite.quantity.one
+  McshCor000003  #idEntDefAll  "entity.definite.quantity.all" → "definite.quantity.all"  + McshEngl.definite.quantity.all
+  McshCor000003  #idEntSmsNone  "entity.definite.quantity.none" → "definite.quantity.none"  + McshEngl.definite.quantity.none
+  McshCor000003  #idEntDctcNra1N  "entity.deictic.nearA.oneNo" → "EnttDeicticNearA.oneNo"  + McshEngl.EnttDeicticNearA.oneNo
+  McshCor000003  #idEntDctcNra1  "entity.deictic.nearA.one" → "EnttDeicticNearA.one"  + McshEngl.EnttDeicticNearA.one
+  McshCor000010  #idQntDfntAll  "quanto.definite.all" → "quantoDfnt.all"  + McshEngl.quantoDfnt.all
+  McshHlth000013  #idFoodHmn135  "food.souffle_spaghetti_135" → "foodSpaghetti.souffle_spaghetti_135"  + McshEngl.foodSpaghetti.souffle_spaghetti_135
+  McshHlth000013  #idFoodHmn228  "food.sugar_228" → "foodCondiment.sugar_228"  + McshEngl.foodCondiment.sugar_228
+  McshHlth000013  #idFoodHmn088  "food.spice_088" → "foodCondiment.spice_088"  + McshEngl.foodCondiment.spice_088
+  McshHlth000013  #idFoodHmn085  "food.salt_085" → "foodCondiment.salt_085"  + McshEngl.foodCondiment.salt_085
+  McshHlth000013  #idFoodHmn084  "food.ketchup_084" → "foodCondiment.ketchup_084"  + McshEngl.foodCondiment.ketchup_084
+  McshHlth000013  #idFoodHmn083  "food.honey_083" → "foodCondiment.honey_083"  + McshEngl.foodCondiment.honey_083
+  McshHlth000013  #idFoodHmn057  "food.potato_chips_057" → "foodPotato.potato_chips_057"  + McshEngl.foodPotato.potato_chips_057
+  McshHlth000013  #idFoodHmn056  "food.french_fries_056" → "foodPotato.french_fries_056"  + McshEngl.foodPotato.french_fries_056
+  McshHlth000013  #idFoodHmn013  "food.corn_flakes_013" → "foodCereal.corn_flakes_013"  + McshEngl.foodCereal.corn_flakes_013
+  McshHlth000013  #idFoodHmn002  "food.exported_002" → "foodAggregate.exported_002"  + McshEngl.foodAggregate.exported_002
+  McshCor000006  #idTimeSmsDftDtcFutr  "time.deictic.future" → "timeDeictic.future"  + McshEngl.timeDeictic.future
+  McshCor000006  #idTimeSmsDftDtcCrtN  "time.deictic.currentNo" → "timeDeictic.currentNo"  + McshEngl.timeDeictic.currentNo
+  McshCor000006  #idTimeSmsDftDtcCrt  "time.deictic.current" → "timeDeictic.current"  + McshEngl.timeDeictic.current
+  McshCor000006  #idTimeSmsDftDtcPastJust  "time.deictic.past.just" → "timeDeicticPast.just"  + McshEngl.timeDeicticPast.just
+  McshCor000006  #idTimeSmsDftDtcPastRecent  "time.deictic.past.recent" → "timeDeicticPast.recent"  + McshEngl.timeDeicticPast.recent
+  McshCor000006  #idTimeSmsDftDtcPast  "time.deictic.past" → "timeDeictic.past"  + McshEngl.timeDeictic.past
+  McshEdu000010  #idSLang021  "SciLago.sociology_of_language" → "Lagosciscience_of_language_and_society.sociology_of_language"  + McshEngl.Lagosciscience_of_language_and_society.sociology_of_language
+  McshTchInf000006  #idLPrgmalgLbr  "18_Pgmlalgo.LIBRARY of Prgmlago" → "Pgmlalgo.LIBRARY"  + McshEngl.Pgmlalgo.LIBRARY
+  McshTchInf000006  #idLPrgmalgFmwk  "17_Pgmlalgo.FRAMEWORK of Prgmlago" → "Pgmlalgo.FRAMEWORK"  + McshEngl.Pgmlalgo.FRAMEWORK
+  McshStn000008  #idOgzn008  "Ogzn.minimum_economic_size" → "OgznSpdvSfrpdg.minimum_economic_size"  + McshEngl.OgznSpdvSfrpdg.minimum_economic_size
+  McshStn000015  #idOznPdn032  "OgznPrdg.unicorn_032" → "OgznStartup.unicorn_032"  + McshEngl.OgznStartup.unicorn_032
+  McshTchInf000003  #idCmrmmrInlN  "Cmrmemory.internalNo of techCmpr" → "Cmrmemory.internalNo"  (name exists)
+  McshTchInf000003  #idCmrmmrInl  "Cmrmemory.internal of techCmpr" → "Cmrmemory.internal"  (name exists)
+  McshHlth000014  #idMedAsktc  "medication.antipsychotic" → "MdtnPsychiatric.antipsychotic"  + McshEngl.MdtnPsychiatric.antipsychotic
+  McshHlth000014  #idMedHmn001  "medication.antidepressant_001" → "MdtnPsychiatric.antidepressant_001"  + McshEngl.MdtnPsychiatric.antidepressant_001
+  McshStn000004  #idGvcOgm003  "AdmnSctn.voting_by_all_003" → "admnCntrN.voting_by_all_003"  + McshEngl.admnCntrN.voting_by_all_003
+  McshStn000004  #idGvcOgm006  "AdmnSctn.controlling_by_one_006" → "admnCntr.controlling_by_one_006"  + McshEngl.admnCntr.controlling_by_one_006
+  McshStn000004  #idGvcOgm005  "AdmnSctn.controlling_by_few_005" → "admnCntr.controlling_by_few_005"  + McshEngl.admnCntr.controlling_by_few_005
+  McshStn000004  #idGvcOgm004  "AdmnSctn.controlling_by_many_004" → "admnCntr.controlling_by_many_004"  + McshEngl.admnCntr.controlling_by_many_004
+  McshStn000007  #idSoctOgsm002str  "societyOgsm.humanNo" → "SocoHumanNo.humanNo"  + McshEngl.SocoHumanNo.humanNo
+
+=== SKIP (611) — left
+  McshTchInf000030  #idLRustcrgcmdmiri  "Cargo-cmd.miri of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdfmt  "Cargo-cmd.fmt of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdclippy  "Cargo-cmd.clippy of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdyank  "Cargo-cmd.yank of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdversion  "Cargo-cmd.version of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdverify  "Cargo-cmd.verify-project of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdupdate  "Cargo-cmd.update of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmduninstall  "Cargo-cmd.uninstall of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdtest  "Cargo-cmd.test of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdsearch  "Cargo-cmd.search of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdrustdoc  "Cargo-cmd.rustdoc of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdrustc  "Cargo-cmd.rustc of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdrun  "Cargo-cmd.run of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdread  "Cargo-cmd.read-manifest of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdpublish  "Cargo-cmd.publish of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdpkgid  "Cargo-cmd.pkgid of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdpackage  "Cargo-cmd.package of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdowner  "Cargo-cmd.owner of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdnew  "Cargo-cmd.new of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdmetadata  "Cargo-cmd.metadata of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdlogin  "Cargo-cmd.login of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdlocate  "Cargo-cmd.locate-project of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdinstall  "Cargo-cmd.install of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdinit  "Cargo-cmd.init of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdgit  "Cargo-cmd.git-checkout of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdgenerate  "Cargo-cmd.generate-lockfile of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdfix  "Cargo-cmd.fix of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdfetch  "Cargo-cmd.fetch of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmddoc  "Cargo-cmd.doc of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdclippypv  "Cargo-cmd.clippy-preview of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdclean  "Cargo-cmd.clean of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdcheck  "Cargo-cmd.check of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdbuild  "Cargo-cmd.build of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustcrgcmdbench  "Cargo-cmd.bench of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgStdpldVec  "std::vec::Vec-struct of prelude of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustalgStdpldString  "std::string::String-struct of prelude of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustalgCrtStdpldprt  "part of prelude of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustalgCrtStd  "crate.standard of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgCrtmnmdl  "main-module of crate of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustbalgoPgm  "bin-algo.program of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustbalgocode  "bin-code of bin-algo of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustalgPgmGui  "program.command-line.no of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgPgmClirsc  "info-resource of clip of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustalgPgmCli  "program.command-line of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgPkgCgtf  "Cargo.toml-file of package of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNyield  "usedNo-keyword.yield of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNvirtual  "usedNo-keyword.virtual of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNunsized  "usedNo-keyword.unsized of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNtypeof  "usedNo-keyword.typeof of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNtry  "usedNo-keyword.try of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNpriv  "usedNo-keyword.priv of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNoverride  "usedNo-keyword.override of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNmacro  "usedNo-keyword.macro of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNfinal  "usedNo-keyword.final of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNdo  "usedNo-keyword.do of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNbox  "usedNo-keyword.box of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNbecome  "usedNo-keyword.become of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNasync  "usedNo-keyword.async of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdNabstract  "usedNo-keyword.abstract of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdN  "keyword.usedNo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdwhile  "used-keyword.while of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdwhere  "used-keyword.where of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsduse  "used-keyword.use of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdunsafe  "used-keyword.unsafe of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdtype  "used-keyword.type of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdtrue  "used-keyword.true of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdtrait  "used-keyword.trait of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdsuper  "used-keyword.super of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdstruct  "used-keyword.struct of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdstatic  "used-keyword.static of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdself  "used-keyword.self of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdSelf  "used-keyword.Self of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdreturn  "used-keyword.return of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdref  "used-keyword.ref of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdpub  "used-keyword.pub of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdmut  "used-keyword.mut of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdmove  "used-keyword.move of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdmod  "used-keyword.mod of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdmatch  "used-keyword.match of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdloop  "used-keyword.loop of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdlet  "used-keyword.let of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdin  "used-keyword.in of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdimpl  "used-keyword.impl of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdif  "used-keyword.if of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdfor  "used-keyword.for of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdfn  "used-keyword.fn of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdfalse  "used-keyword.false of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdextern  "used-keyword.extern of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdenum  "used-keyword.enum of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdelse  "used-keyword.else of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsddyn  "used-keyword.dyn of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdcrate  "used-keyword.crate of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdcontinue  "used-keyword.continue of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdconst  "used-keyword.const of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdbreak  "used-keyword.break of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsdas  "used-keyword.as of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwdUsd  "keyword.used of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustkwd  "word.keyword of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustwrdIdr  "word.identifier of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsntcUse  "sentence.use of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsntcLoopgWhl  "loop-gnc.while of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsntcLoopgLp  "loop-gnc.loop of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsntcLoopgFr  "loop-gnc.for of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsntcLoopg  "sentence.loop-gnc of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntCpdN  "Sunt.compoundNo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntCpd  "Sunt.compound of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntStk  "Sunt.stack of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntHp  "Sunt.heap of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntNmdN  "Sunt.namedNo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntNmd  "Sunt.named of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntIstcN  "Sunt.instanceNo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntIstc  "Sunt.instance of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntTrt  "Sunt.trait of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntEnm  "Sunt.enum of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntSrt  "Sunt.struct of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntTpl  "Sunt.tuple of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntArr  "Sunt.array of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr63  "opr.?63 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr124124  "opr.||124124 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr12461  "opr.|=12461 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr124  "opr.|124 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr9461  "opr.^=9461 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr94  "opr.^94 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr64  "opr.@64 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr626261  "opr.>>=626261 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6262  "opr.>>6262 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6261  "opr.>=6261 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr62  "opr.>62 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6162  "opr.=>6162 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6161  "opr.==6161 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr61  "opr.=61 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6061  "opr.;6061 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr60  "opr.;60 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr606061  "opr.;606061 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr6060  "opr.;6060 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr59  "opr.;59 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr58  "opr.:58 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4761  "opr./=4761 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr47  "opr./47 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr464646  "opr....464646 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr464661  "opr...=464661 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4646  "opr...4646 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr46  "opr..46 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4562  "opr.->4562 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4561  "opr.=4561 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr45  "opr.-45 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr44  "opr.,44 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4361  "opr.+=4361 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr43  "opr.+43 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr4261  "opr.*=4261 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr42  "opr.*42 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr3838  "opr.&&3838 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr3861  "opr.&=3861 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr38  "opr.&38 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr3761  "opr.%=3761 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr37  "opr.%37 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr3361  "opr.!=3361 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustopr33  "opr.!33 of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustoprovlg  "overloading of opr of Rustlago": "x" has " of " itself: by hand
+  McshTchInf000030  #idLRustsuntF  "Sunt.function of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntN  "Sunt.number of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntBln  "Sunt.boolean of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntSll  "string.literal of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntS  "Sunt.string of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustsuntCh  "Sunt.character of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgnodeNmdN  "node.namedNo of algo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000030  #idLRustalgnodeNmd  "node.named of algo of Rustlago": "x" is itself dotted (not of M): by hand
+  McshLag000018  #idLZhonknwrLsnr  "knower.listener of Zhonlago": "x" is itself dotted (not of M): by hand
+  McshLag000018  #idLZhonknwrSpkr  "knower.speaker of Zhonlago": "x" is itself dotted (not of M): by hand
+  McshLag000018  #idLZhonrscClsc  "Infrsc.Chinese-Classics of Zhonlago": "x" is itself dotted (not of M): by hand
+  McshLag000018  #idLZhonrscLrng  "Infrsc.learning of Zhonlago": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEnglknwrLsnr  "knower.listener of Engllago": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEnglknwrSpkr  "knower.speaker of Engllago": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEnglknwrAggr  "knower.aggregate of Engllago": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEngladjesnmrsIty  "syno_members.ity of Engladje": "x" is itself dotted (not of M): by hand
+  McshLag000011  #idLEngladjesnmrsNess  "syno_members.ness of Engladje": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmdongDcdg  "doing.decoding of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmdongEcdg  "doing.encoding of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmknwrNtvN  "knower.nativeNo of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmknwrNtv  "knower.native of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmknwrDcdr  "knower.decoder of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmknwrEcdr  "knower.encoder of Hmmdlago": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmvbatWithwhat  "Hmmdvbat.with-what- of Hmmdlogo": heading not found as expected
+  McshLag000007  #idLHmnmvbatSdtn  "Hmmdvbat.space-direction of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmobt2  "Hmmd_sbjt.indirect-object of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmobt  "Hmmd_sbjt.object of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjc  "Hmmd_sbjt.subject-complement of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjtPnt  "Hmmd_sbjt.patient of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsbjtThm  "Hmmd_sbjt.theme of Hmmdlogo": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPCP  "future.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFCP  "future.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPC  "future.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFC  "future.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFPP  "future.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFSP  "future.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFP  "future.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrFutrFS  "future.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPCP  "past.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPCP  "past.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPC  "past.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPC  "past.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPPP  "past.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPSP  "past.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPP  "past.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPastPS  "past.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPCP  "present.perfect-progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPCP  "present.progressive-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPC  "present.perfect-progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPC  "present.progressive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPPP  "present.perfect-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPSP  "present.simple-passive of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPP  "present.perfect of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmverbmbrPrstPS  "present.simple of Hmmdverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmnameTrmwrdstr  "TermWord.specific of Hmmdlogo": heading not found as expected
+  McshLag000007  #idLHmnmsmsvrbmbr081  "Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3": more than one "." and no name of VerbSmsatom starts it: by hand
+  McshLag000007  #idLHmnmsmsvrbattTmplFtrN  "Hmmdsmvbatt.futureΝο of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmplFtr  "Hmmdsmvbatt.future of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmplPrtN  "Hmmdsmvbatt.presentNo of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPrt  "Hmmdsmvbatt.present of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPstN  "Hmmdsmvbatt.pastNo of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshLag000007  #idLHmnmsmsvrbattTmucPst  "Hmmdsmvbatt.past of Hmmdsemuverb": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt038  "Hbstage.death of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt037  "Hbstage.birth of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt030  "Hbstage.9th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt029  "Hbstage.8th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt028  "Hbstage.7th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt027  "Hbstage.6th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt031  "Hbstage.5th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt026  "Hbstage.4th-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt032  "Hbstage.3nd-month of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt036  "Hbstage.fetus of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt078  "doing.external of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn333  "doing.fooding of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn145  "doing.excreting of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn334  "doing.digesting of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn298  "doing.communicating of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn148  "doing.breathing of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmndong_3  "doing.washing of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmndong_2  "doing.lauphing of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmndong_1  "doing.sleeping of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmndngClng  "doing.cleaning of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn144  "doing.metabolism of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn377  "doing.homeostasis of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmndongGtgsck  "doing.getting-sick of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt071  "doing.physical-activity of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt085  "doing.biological-rhythm of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmn031time-period  "time-period of menstruation": no name:: paragraph
+  McshHlth000002  #idBdyHmnatt015020  "mineral.magnesium-Mg- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015019  "mineral.sodium-Na- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015018  "mineral.potassium-K- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015017  "mineral.phosphorus-P- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015016  "mineral.calcium-Ca- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015015  "trace-atom.iodine-I of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015014  "trace-atom.zinc-Zn of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015013  "trace-atom.selenium-Se of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015012  "trace-atom.molybdenum-Mo of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015011  "trace-atom.manganese-Mn of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015010  "trace-atom.iron-Fe of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015009  "trace-atom.copper-Cu of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015008  "trace-atom.cobalt-Co of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015007  "trace-atom.chlorine-Cl- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015006  "trace-atom.sulfur-S- of bodyHumn": "x" is itself dotted (not of M): by hand
+  McshHlth000002  #idBdyHmnatt015att003att008  "daily-value- of Hbnutrient": heading not found as expected
+  McshHlth000002  #idBdyHmnatt015att003att007  "reference-daily-intake- of Hbnutrient": heading not found as expected
+  McshHlth000002  #idBdyHmn548substance-produced  "secretory-product of GlndTesticle": no name:: paragraph
+  McshTchInf000012  #idLJsndnpmjs_org  "npm-registry of Jsndmc": heading not found as expected
+  McshTchInf000010  #idLJsgnfOprAdd  "Jsoptr.ADDITION": heading not found as expected
+  McshHmn000002  #idHmnatt020  "stage.adult of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt161  "stage.girl of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt160  "stage.boy of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt026  "stage.adolescence of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt025  "stage.predolescence of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt024  "stage.toddler of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt023  "stage.infant of human": "x" is itself dotted (not of M): by hand
+  McshHmn000002  #idHmnatt022  "stage.child of human": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idSocEusevogD1960  "decade-1960- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD1970  "decade-1970- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD1980  "decade-1980- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD1990  "decade-1990- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD2000  "decade-2000- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD2010  "decade-2010- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD2020  "decade-2020- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEusevogD2030  "decade-2030- of SoctEuzz": heading not found as expected
+  McshStn000020  #idSocEuzztt016  "europa.eu of SoctEuzz": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEuzzadmnlbg  "EuzzadmnDoing.lobbying of Euzzadmn": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEuzzadmndmp  "EuzzadmnDoing.decision-making of Euzzadmn": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt010  "doing.auditing of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Trln  "output.translation of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Frmg  "output.agriculture of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt007Gvc  "output.governance of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Ctzn  "input.citizen of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Othr  "input.other of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Vat  "input.VAT-based of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Tdnon  "input.traditional-own of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEubdgtatt006Gni  "input.GNI-based of Euzzbdgt": "x" is itself dotted (not of M): by hand
+  McshStn000020  #idEuoCom1985  "EuoCom._Delors": heading not found as expected
+  McshStn000020  #idEuoCom1988  "EuoCom._Delors": heading not found as expected
+  McshStn000020  #idEuoCom1992  "EuoCom.1__Delors": heading not found as expected
+  McshStn000020  #idEuoCom2004  "EuoCom.4__Barroso": heading not found as expected
+  McshStn000020  #idEuoCom2009  "EuoCom.5__Barroso": heading not found as expected
+  McshTchInf000014  #idLWasmstcStoreI64  "Wasmcmnd.i64.store": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI6432  "Wasmcmnd.i64.store32": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI6416  "Wasmcmnd.i64.store16": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI648  "Wasmcmnd.i64.store8": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI32  "Wasmcmnd.i32.store": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI3216  "Wasmcmnd.i32.store16": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreI328  "Wasmcmnd.i32.store8": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreF64  "Wasmcmnd.f64.store": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcStoreF32  "Wasmcmnd.f32.store": more than one "." and no name of WasmcmndStore starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI64ld  "Wasmcmnd.i64.load": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI6432u  "Wasmcmnd.i64.load32_u": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI6432s  "Wasmcmnd.i64.load32_s": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI6416u  "Wasmcmnd.i64.load16_u": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI6416s  "Wasmcmnd.i64.load16_s": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI648u  "Wasmcmnd.i64.load8_u": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI648s  "Wasmcmnd.i64.load8_s": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI32ld  "Wasmcmnd.i32.load": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI3216u  "Wasmcmnd.i32.load16_u": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI3216s  "Wasmcmnd.i32.load16_s": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI328u  "Wasmcmnd.i32.load8_u": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadI32  "Wasmcmnd.i32.load8_s": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadF64  "Wasmcmnd.f64.load": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcLoadF32  "Wasmcmnd.f32.load": more than one "." and no name of WasmcmndLoad starts it: by hand
+  McshTchInf000014  #idLWasmstcI32mul  "Wasmcmnd.i32.mul": more than one "." and no name of WasmcmndFlowNo starts it: by hand
+  McshTchInf000014  #idLWasmstcI32cnst  "Wasmcmnd.i32.const": more than one "." and no name of WasmcmndFlowNo starts it: by hand
+  McshTchInf000014  #idLWasmstcI32add  "Wasmcmnd.i32.add": more than one "." and no name of WasmcmndFlowNo starts it: by hand
+  McshLag000006  #idCharUcdprptMisc  "property.MISC of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptNmrc  "property.NUMERIC of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptStrg  "property.STRING of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptEnmn  "property.ENUMERATION of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptCtlg  "property.CATALOG of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptBnr  "property.BINARY of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptDrvd  "property.DERIVED of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptSmpl  "property.SIMPLE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptPvsl  "property.PROVISIONAL of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptCrbr  "property.CONTRIBUTORY of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptInfv  "property.INFORMATIVE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptOvrl  "property.OVERRIDABLE of charUncd": "x" is itself dotted (not of M): by hand
+  McshLag000006  #idCharUcdprptNrmv  "property.NORMATIVE of charUncd": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntType  "Cppzsunt.instanceNo of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntLtrl  "Cppzsunt.instance of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntTlt  "Cppzsunt.template of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntStrct  "Cppzsunt.structure of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntEnum  "Cppzsunt.enumeration of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntCls  "Cppzsunt.class of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntArr  "Cppzsunt.array of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntFcnOprSizeof  "operator.sizeof of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprRlt  "operator.relational of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprLgc  "operator.logical of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprArth  "operator.arithmetic of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprTnr  "operator.ternary of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprBnr  "operator.binary of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOprUnr  "operator.unary of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntFcnOpropd  "operand of operator of Cppzlago": "x" has " of " itself: by hand
+  McshTchInf000031  #idLCppsuntFcn  "Cppzsunt.function of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntNbr  "Cppzsunt.number of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntBool  "Cppzsunt.boolean of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntStrg  "Cppzsunt.string of Cppzlago": heading not found as expected
+  McshTchInf000031  #idLCppsuntChrtrWchar  "Cppzsunt.wchar_t of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntChrtrChar  "Cppzsunt.char of Cppzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000031  #idLCppsuntChrtr  "Cppzsunt.character of Cppzlago": heading not found as expected
+  McshCor000007  #idSpcDrcnOpst  "space.rela.dire.opposite": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnLeft  "space.rela.dire.leftward": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnDown  "space.rela.dire.downward": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnTwrdSpkr  "space.rela.dire.towards_speaker": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnTwrd  "space.rela.dire.towards": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcTrgh  "space.rela.dire.through": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnFrmSpkr  "space.rela.dire.from_speaker": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnFmto  "space.rela.dire.from..to": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnAyfm  "space.rela.dire.away_from": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcnAcrs  "space.rela.dire.across": more than one "." and no name of space_direction starts it: by hand
+  McshCor000007  #idSpcDrcn  "space.rela.direction": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcSouth  "space.rela.current.south": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcNorth  "space.rela.current.north": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcWest  "space.rela.current.west": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcEast  "space.rela.current.east": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcRight  "space.rela.current.right": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcLeft  "space.rela.current.left": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcEswr  "space.rela.current.elsewhere": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcIn  "space.rela.space.in": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcOtsd  "space.rela.space.outside": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcInsd  "space.rela.space.inside": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcFafm  "space.rela.space.far_from": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcNear  "space.rela.space.near": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcByd  "space.rela.space.beyond": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcBsd  "space.rela.space.beside": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcBhnd  "space.rela.space.behind": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcIfof  "space.rela.space.in_front_of": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcArnd  "space.rela.space.around": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcAmng  "space.rela.space.among": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcOpst  "space.rela.space.opposite": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcAgst  "space.rela.space.against": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcUdr  "space.rela.space.under": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcOn  "space.rela.space.on": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcBlw  "space.rela.space.below": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcAbv  "space.rela.space.above": more than one "." and no name of spaceRela starts it: by hand
+  McshCor000007  #idSpcRlvAcrs  "space.rela.space.across": more than one "." and no name of spaceRela starts it: by hand
+  McshTchInf000018  #idEthsolnu8  "uint8 of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsolnu  "uint of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsoln8  "int8 of Solxlago": heading not found as expected
+  McshTchInf000018  #idEthsoln  "int of Solxlago": heading not found as expected
+  McshCor000003  #idEntevogIk3BpK3x005  "gigannium.BpK3x005!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk3BpK3x004  "gigannium.BpK3x004!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk3BpK3x003  "gigannium.BpK3x003!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk3BpK3x002  "gigannium.BpK3x002!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk3BpK3x001  "gigannium.BpK3x001!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk2BpK2x002  "megannium.BpK2x002!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk2BpK2x001  "megannium.BpK2x001!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1BpK1x014  "millennium.Bce12000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1BpK1x013  "millennium.Bce11000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1BpK1x012  "millennium.Bce10000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce9000  "millennium.Bce9000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce8000  "millennium.Bce8000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce7000  "millennium.Bce7000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce6000  "millennium.Bce6000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce5000  "millennium.Bce5000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce4000  "millennium.Bce4000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce3000  "millennium.Bce3000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce2000  "millennium.Bce2000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk1Bce1000  "millennium.Bce1000- of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk11000  "millennium.1000!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk12000  "millennium.2000!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000003  #idEntevogIk13000  "millennium.3000!= of entity": "x" is itself dotted (not of M): by hand
+  McshCor000010  #idQntRlvAlmst  "quantoRela.less.almost": more than one "." and no name of RltnQuantLess starts it: by hand
+  McshCor000010  #idQntRlvMlplBnr  "quanto.multiple.binary": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl20M  "quanto.multiple.20M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl19M  "quanto.multiple.19M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl18M  "quanto.multiple.18M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl17M  "quanto.multiple.17M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl16M  "quanto.multiple.16M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl15M  "quanto.multiple.15M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl14M  "quanto.multiple.14M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl13M  "quanto.multiple.13M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl12M  "quanto.multiple.12M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl11M  "quanto.multiple.11M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl10M  "quanto.multiple.10M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl9M  "quanto.multiple.9M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl8M  "quanto.multiple.8M": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplYota  "quanto.multiple.7M_yotta_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplZeta  "quanto.multiple.6M_zeta_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplExa  "quanto.multiple.5M_exa_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplPeta  "quanto.multiple.4M_peta_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplTera  "quanto.multiple.3M_tera_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplGiga  "quanto.multiple.2M_giga_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplMega  "quanto.multiple.1M_mega_": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplKilo  "quanto.multiple.kilo": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplHcto  "quanto.multiple.hecto": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlplDeca  "quanto.multiple.deca": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl5  "quanto.multiple.5": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl4  "quanto.multiple.4": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl3  "quanto.multiple.3": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntRlvMlpl2  "quanto.multiple.2": more than one "." and no name of multiple starts it: by hand
+  McshCor000010  #idQntNbrK51  "number.1'000'000'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK41  "number.1'000'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK31  "number.1'000'000'000": heading not found as expected
+  McshCor000010  #idQntNbrK21  "number.1'000'000": heading not found as expected
+  McshCor000010  #idQntNbr1  "number.1": heading not found as expected
+  McshTchInf000017  #idBtcwlns  "Btcnwallet.Ledger_nano_s_": heading not found as expected
+  McshTchInf000009  #idLMcshmngranlg  "doing.add-new-language of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrsrcg  "doing.searching of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrvldg  "doing.validating of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idLMcshmngrtodo  "doing.TODO of Mcshmgr": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtTabl  "Mcshdata.table of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtNmvl  "Mcshdata.name-value of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtList  "Mcshdata.list of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtTxt  "Mcshdata.text of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtSrpt  "Mcshdata.script of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtPara  "Mcshdata.para of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000009  #idMcsHitpdtSect  "Mcshdata.section of Mcshcnpt": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg014optYago  "output.YAGO of Rdfzlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptRnodg  "concept.relation-or-doing of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptIstc  "concept.instance of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlg004cptGnc  "concept.generic of Ppsllago": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongKbem  "doing.Knlgbase-evoluting-managing of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongCmpg  "doing.computing-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongRtrg  "doing.retrieving-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshTchInf000039  #idLKnlgmngrdongBldg  "doing.building-Knlgbase of KnlgMngr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt022  "validating.relation of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt021  "validating.definition of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt020  "validating.complement of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt019  "validating.sibling of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt018  "validating.specific of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt017  "validating.generic of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt016  "validating.whole of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsmatt015  "validating.part of Mcsmgr": "x" is itself dotted (not of M): by hand
+  McshCor000002  #idMcsattNamcvnAttGnc  "Mcsnotn.attribute.generic": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttstr  "Mcsnotn.attribute.specific": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttWhl  "Mcsnotn.attribute.whole": heading not found as expected
+  McshCor000002  #idMcsattNamcvnAttPrt  "Mcsnotn.attribute.part": heading not found as expected
+  McshHlth000013  #idFoodHmn019  "drink.alcoholic.tsipuro": more than one "." and no name of drinkAlchoholic starts it: by hand
+  McshHlth000013  #idFoodHmn023  "drink.alcoholic.beer": more than one "." and no name of drinkAlchoholic starts it: by hand
+  McshHlth000013  #idFoodHmn229  "drink.alcoholic.baijiu": more than one "." and no name of drinkAlchoholic starts it: by hand
+  McshHlth000013  #idFoodHmnfrng  "cooking.frying of food": "x" is itself dotted (not of M): by hand
+  McshHlth000013  #idFoodHmnbkng  "cooking.baking of food": "x" is itself dotted (not of M): by hand
+  McshTchInf000016  #idDbccfc  "conference of AgntBkcn": heading not found as expected
+  McshTchInf000036  #idTchNlp001lgmlevalMmlu  "benchmark.MMLU of techNlplm": "x" is itself dotted (not of M): by hand
+  McshCor000006  #idTimeRltvEnd  "time.rela.interval.end": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvStart  "time.rela.interval.start": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvBig  "time.rela.quantity.big": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvSmll  "time.rela.quantity.small": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvExpdAftr  "time.rela.expected.after": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvExpdSame  "time.rela.expected.same": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvExpdBefr  "time.rela.expected.before": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvSqc  "time.rela.sequence": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvAfrcN  "time.rela.current.afterNo": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvAfrc  "time.rela.current.after": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvBfrc  "time.rela.current.before": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvSamec  "time.rela.current": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvBtn  "time.rela.time.between": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvArd  "time.rela.time.around": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvAftImdl  "time.rela.time.after.immediately": more than one "." and no name of timeAfterTime starts it: by hand
+  McshCor000006  #idTimeRltvAft  "time.rela.time.after": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvSeim  "time.rela.time.same": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeRltvBfrImdt  "time.rela.time.before.immediate": more than one "." and no name of timeBeforeTime starts it: by hand
+  McshCor000006  #idTimeRltvBfr  "time.rela.time.before": more than one "." and no name of timeRela starts it: by hand
+  McshCor000006  #idTimeSmsDftDtcCrtJst  "time.deictic.current.just": more than one "." and no name of timeDeicticNow starts it: by hand
+  McshLag000012  #idLEspoverbauxN12  "partA.12-skribu of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN11  "partA.11-skribus of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN10  "partA.10-skribota of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN9  "partA.9-skribata of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN8  "partA.8-skribita of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN7  "partA.7-skribonta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN6  "partA.6-skribanta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN5  "partA.5-skribinta of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN4  "partA.4-skribos of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN3  "partA.3-skribas of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN2  "partA.2-skribis of Espoverb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoverbauxN1  "partA.1-skribi of Espovbmb": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoknwrLsnr  "knower.listener of Espolago": "x" is itself dotted (not of M): by hand
+  McshLag000012  #idLEspoknwrSpkr  "knower.speaker of Espolago": "x" is itself dotted (not of M): by hand
+  McshLag000009  #idL0017prcn  "doing.speaking of Spchlago": "x" is itself dotted (not of M): by hand
+  McshLag000009  #idL0017lstg  "doing.listening of Spchlago": "x" is itself dotted (not of M): by hand
+  McshLag000009  #idL0017knwrLsnr  "knower.listener of Spchlago": "x" is itself dotted (not of M): by hand
+  McshLag000009  #idL0017knwrSpkr  "knower.speaker of Spchlago": "x" is itself dotted (not of M): by hand
+  McshStn000009  #idSocHumnevogMBce4000  "millennium-Bce4000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogMBce3000  "millennium-Bce3000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogMBce2000  "millennium-Bce2000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogMBce1000  "millennium-Bce1000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogM1000  "millennium-1000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogM2000  "millennium-2000- of society": heading not found as expected
+  McshStn000009  #idSocHumnevogM3000  "millennium-3000- of society": heading not found as expected
+  McshTchInf000006  #idLSrcdSctnBlk  "section.block of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdsntcDef  "sentence.definition of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdsuntF  "Srcdsunt.function of Srcdlago": heading not found as expected
+  McshTchInf000006  #idLSrcdwrdRsvd  "word.keyword of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLSrcdwrdIdfr  "word.identifier of Srcdlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLPrgmeval  "12_evaluation of Prgmlago": the name Pgmlalgo'evaluation is already used by another concept
+  McshTchInf000006  #idLPrgmalgttldN  "section.TITLED.NO of Prgmlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLPrgmalgttld  "section.TITLED of Prgmlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000006  #idLPrgmalgsuntF  "Pgmgsunt.function of Prgmlago": heading not found as expected
+  McshTchInf000019  #idDeOznlawirsc  "info-resource of law of OgznDao": "x" has " of " itself: by hand
+  McshOgm000007  #idCellOgmatt039  "interaction.transient of Ogsmcell": "x" is itself dotted (not of M): by hand
+  McshLag000010  #idL0014ondoprtA2  "form.2-langos of Snguargu": "x" is itself dotted (not of M): by hand
+  McshLag000010  #idL0014ondoprtA1  "form.1-lango of Snguargu": "x" is itself dotted (not of M): by hand
+  McshLag000010  #idL0014knwrLsnr  "knower.listener of Sngulagu": "x" is itself dotted (not of M): by hand
+  McshLag000010  #idL0014knwrSpkr  "knower.speaker of Sngulagu": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt048  "lobe.limbic of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt047  "lobe.central of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt052  "lobe.temporal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt051  "lobe.occipital of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt049  "lobe.parietal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshHlth000003  #idBrnHmnatt050  "lobe.frontal of cerebrum": "x" is itself dotted (not of M): by hand
+  McshStn000015  #idOznPdnatt037  "R&D of OgznPrdg": heading not found as expected
+  McshStn000015  #idOznPdnatt024  "node.accounting of OgznPrdg": "x" is itself dotted (not of M): by hand
+  McshStn000015  #idOznPdnatt014  "node.financing of OgznPrdg": "x" is itself dotted (not of M): by hand
+  McshStn000015  #idOznPdnatt027  "node.sfr-transacting of OgznPrdg": "x" is itself dotted (not of M): by hand
+  McshStn000015  #idOznPdnatt030  "node.sfr-creating of OgznPrdg": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrdongClsd  "doing.cloning-system-disk of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrdongMnfg  "doing.main-functing of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmratt002Data  "software.data of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrhdwrOut  "hardware.output of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrhdwrIn  "hardware.input of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrstrg  "hardware.storage of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrmmrInlRgr  "interal--Cpu-storage.register of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrmmrInlCch  "interal--Cpu-storage.cache of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrmmr  "hardware.memory of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrpcsrMcr  "processor.microprocessor of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrpcsrCpu  "processor.CPU of techCmpr": "x" is itself dotted (not of M): by hand
+  McshTchInf000003  #idCmrpcsr  "hardware.processor of techCmpr": "x" is itself dotted (not of M): by hand
+  McshHlth000004  #idCellHmnother-view  "other-view of cell": no name:: paragraph
+  McshHlth000014  #idMedHmnatt006  "side-effect.therapeutic of medication": "x" is itself dotted (not of M): by hand
+  McshHlth000014  #idMedHmnatt005  "side-effect.adverse of medication": "x" is itself dotted (not of M): by hand
+  McshTchInf000020  #idChbctpExci  "Chrntechsc.ExchangeInterface.sol": more than one "." and no name of ChrntechscInterface starts it: by hand
+  McshTchInf000020  #idChbctpErc20i  "Chrntechsc.ERC20Interface.sol": more than one "." and no name of ChrntechscInterface starts it: by hand
+  McshTchInf000020  #idChbctpChbpi  "Chrntechsc.ChronoBankPlatformInterface.sol": more than one "." and no name of ChrntechscInterface starts it: by hand
+  McshTchInf000020  #idChbctpChbapi  "Chrntechsc.ChronoBankAssetProxyInterface.sol": more than one "." and no name of ChrntechscInterface starts it: by hand
+  McshTchInf000020  #idChbctpChbai  "Chrntechsc.ChronoBankAssetInterface.sol": more than one "." and no name of ChrntechscInterface starts it: by hand
+  McshTchInf000020  #idChbctpCnfgbl  "Chrntechsc.Configurable.sol": more than one "." and no name of ChrntechscOwned starts it: by hand
+  McshTchInf000020  #idChbctpTime  "Chrntechsc.TIME.sol": more than one "." and no name of ChrntechscChronoBankAsset starts it: by hand
+  McshTchInf000020  #idChbctpAstWfe  "Chrntechsc.ChronoBankAssetWithFee.sol": more than one "." and no name of ChrntechscChronoBankAsset starts it: by hand
+  McshStn000031  #idSocChnaBf1949  "before- of SoctChna": heading not found as expected
+  McshCor000012  #idMdl020  "model.medium.physical_020": more than one "." and no name of modelInfoBioNo starts it: by hand
+  McshStn000004  #idBdgtatt004  "doing.auditing of budget": "x" is itself dotted (not of M): by hand
+  McshCor000015  #idMcshExmlatt005  "heading5 of McshExml": the name McshExml_heading4'heading5 is already used by another concept
+  McshTchInf000007  #idLCnptHumnRdr  "human.reader of Cnptlago": "x" is itself dotted (not of M): by hand
+  McshTchInf000007  #idLCnptHumnAthr  "human.author of Cnptlago": "x" is itself dotted (not of M): by hand
+  McshHlth000005  #idBoneHmn049  "OganBone.metacarpal_049_": heading not found as expected
+  McshLag000008  #idL0016knwrLsnr  "knower.reader of Alfalago": "x" is itself dotted (not of M): by hand
+  McshLag000008  #idL0016knwrSpkr  "knower.writer of Alfalago": "x" is itself dotted (not of M): by hand
+  McshStn000011  #idWkr017  "Wrkr.employeeNo.employerNo_017": more than one "." and no name of WrkrEmployeeNo starts it: by hand
+  McshStn000011  #idWkr001  "Wrkr.employeeNo.employer_001": more than one "." and no name of WrkrEmployeeNo starts it: by hand
+  McshStn000013  #idPjtiintg  "stage.initiating of project": "x" is itself dotted (not of M): by hand
+  McshStn000013  #idPjtiplng  "stage.planning of project": "x" is itself dotted (not of M): by hand
+  McshStn000013  #idPjtimpg  "stage.implementing of project": "x" is itself dotted (not of M): by hand
+  McshStn000013  #idPjtdsg  "stage.dissoluting of project": "x" is itself dotted (not of M): by hand
+  McshStnlaw000006  #idLawGrccost  "Council-of-State of lawGrca": heading not found as expected
+  McshStnlaw000006  #idLawGrccoar  "Court-of-Auditors of lawGrca": heading not found as expected
+  McshStnlaw000006  #idLawCrcsccc  "Supreme-Civil-and-Criminal-Court-of-Greece of lawGrca": heading not found as expected
+  McshOgm000009  #idOgmAnmlatt014Fat  "shape.fat of OgsmAnimal": "x" is itself dotted (not of M): by hand
+  McshOgm000009  #idOgmAnmlatt014Thin  "shape.thin of OgsmAnimal": "x" is itself dotted (not of M): by hand
+  Mcsh000000  #idMwspdvnDir  "parts-division.directory of Mws": "x" is itself dotted (not of M): by hand
+

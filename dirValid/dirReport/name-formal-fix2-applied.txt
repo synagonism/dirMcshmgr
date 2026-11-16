@@ -1,0 +1,46 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --code MvrwName01 --all --fix: ../dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  16 files written · MvrwName01: 39 issues · 39 fixed · 0 skipped
+  written, no backup: see git diff
+
+=== FORMAL (39) — MvrwName01: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted
+  McshCor000002:1977  name "McshEngl.Mcsnotn.@&#32;other_worldview" → "Mcsnotn.@_other_worldview"
+  McshEdu000002:1501  name "McshEngl.open-access'info_resource" → "open_access'info_resource", deleted: its para has this line
+  McshLag000007:18096  name "McshEngl.wordary'specific-generic-tree" → "wordary'specific_generic_tree"
+  McshStn000015:603  name "McshEngl.hiring of OgznPrdg'info_resource" → "hiring_of_OgznPrdg'info_resource"
+  McshStn000020:2620  name "McshEngl.EuwCommissioner of EuoCom'info_resource" → "EuwCommissioner_of_EuoCom'info_resource"
+  McshStn000031:11430  name "McshEngl.Chna-tourism'info_resource" → "Chna_tourism'info_resource"
+  McshTchInf000006:1875  name "McshEngl.Mchnexpn'specific-generic-tree" → "Mchnexpn'specific_generic_tree"
+  McshTchInf000006:1913  name "McshEngl.Mchhlago'specific-generic-tree" → "Mchhlago'specific_generic_tree"
+  McshTchInf000006:2069  name "McshEngl.Binpalgo'specific-generic-tree" → "Binpalgo'specific_generic_tree"
+  McshTchInf000006:2156  name "McshEngl.Asmbalgo'specific-generic-tree" → "Asmbalgo'specific_generic_tree"
+  McshTchInf000006:2232  name "McshEngl.Btcdalgo'specific-generic-tree" → "Btcdalgo'specific_generic_tree"
+  McshTchInf000006:3512  name "McshEngl.Fctnlago'specific-generic-tree" → "Fctnlago'specific_generic_tree"
+  McshTchInf000006:3647  name "McshEngl.Oolzevolg'specific-generic-tree" → "Oolzevolg'specific_generic_tree"
+  McshTchInf000006:3896  name "McshEngl.Prgmlago.Lean-functional-language" → "Prgmlago.Lean_functional_language"
+  McshTchInf000006:3926  name "McshEngl.Wbpglago'specific-generic-tree" → "Wbpglago'specific_generic_tree"
+  McshTchInf000006:3966  name "McshEngl.Anpglago'specific-generic-tree" → "Anpglago'specific_generic_tree"
+  McshTchInf000014:6324  name "McshEngl.text-Wasm'info_resource" → "text_Wasm'info_resource", deleted: its para has this line
+  McshTchInf000018:5250  name "McshEngl.Token-client'info_resource" → "Token_client'info_resource", deleted: its para has this line
+  McshTchInf000019:714  name "McshEngl.law of OgznDao'info_resource" → "law_of_OgznDao'info_resource"
+  McshTchInf000019:3703  name "McshEngl.GEN-token'info_resource" → "GEN_token'info_resource"
+  McshTchInf000024:876  name "McshEngl.STEEM-Dollar'info_resource" → "STEEM_Dollar'info_resource", deleted: its para has this line
+  McshTchInf000024:2942  name "McshEngl.witness-account'info_resource" → "witness_account'info_resource"
+  McshTchInf000024:3758  name "McshEngl.Steem-net'wallet" → "Steem_net'wallet", deleted: its para has this line
+  McshTchInf000026:322  name "McshEngl.Stacks-net'info_resource" → "Stacks_net'info_resource"
+  McshTchInf000026:1558  name "McshEngl.app-mining'info_resource" → "app_mining'info_resource"
+  McshTchInf000027:135  name "McshEngl.program.smart-contract-of-AgntNeox" → "program.smart_contract_of_AgntNeox"
+  McshTchInf000027:188  name "McshEngl.Neo-net--envt'info_resource" → "Neo_net__envt'info_resource"
+  McshTchInf000030:3169  name "McshEngl.Cargo.toml-file-of-package-of-Rustlago" → "Cargo.toml_file_of_package_of_Rustlago"
+  McshTchInf000030:3214  name "McshEngl.clip of Rustlago'info_resource" → "clip_of_Rustlago'info_resource", deleted: its para has this line
+  McshTchInf000030:3790  name "McshEngl.Cargo-cmd.clippy-preview-of-Rustlago" → "Cargo_cmd.clippy_preview_of_Rustlago"
+  McshTchInf000030:3851  name "McshEngl.Cargo-cmd.generate-lockfile-of-Rustlago" → "Cargo_cmd.generate_lockfile_of_Rustlago"
+  McshTchInf000030:3867  name "McshEngl.Cargo-cmd.git-checkout-of-Rustlago" → "Cargo_cmd.git_checkout_of_Rustlago"
+  McshTchInf000030:3913  name "McshEngl.Cargo-cmd.locate-project-of-Rustlago" → "Cargo_cmd.locate_project_of_Rustlago"
+  McshTchInf000030:4035  name "McshEngl.Cargo-cmd.read-manifest-of-Rustlago" → "Cargo_cmd.read_manifest_of_Rustlago"
+  McshTchInf000030:4156  name "McshEngl.Cargo-cmd.verify-project-of-Rustlago" → "Cargo_cmd.verify_project_of_Rustlago"
+  McshTchInf000031:1709  name "McshEngl.Cppzsunt.process-and-processNo-of-Cppzlago" → "Cppzsunt.process_and_processNo_of_Cppzlago"
+  McshTchInf000039:394  name "McshEngl.doing.building-Knlgbase-of-KnlgMngr" → "doing.building_Knlgbase_of_KnlgMngr"
+  McshTchInf000039:669  name "McshEngl.doing.retrieving-Knlgbase-of-KnlgMngr" → "doing.retrieving_Knlgbase_of_KnlgMngr"
+  McshTchInf000039:832  name "McshEngl.doing.Knlgbase-evoluting-managing-of-KnlgMngr" → "doing.Knlgbase_evoluting_managing_of_KnlgMngr"
