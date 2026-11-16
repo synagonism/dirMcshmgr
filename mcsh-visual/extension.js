@@ -1310,8 +1310,8 @@ function fRunShellWait(sNameIn, aArgIn, sCwdIn) {
 // the-rules with their own createMcsh.mjs mode (see its --help; the-same modes --auto runs);
 // every other rule is fixed by createMcsh.mjs --code <rule> (its ooFixCode: a-fix, or why none)
 const oModeFixByCode = {
-  MvreName01: 'dupname', Hvrw08: 'nest', Hvrw07: 'headgap',
-  MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname', MvrwId13: 'srtr'
+  MvreName01_duplicate_line: 'dupname', Hvrw08: 'nest', Hvrw07: 'headgap',
+  MvrwSect01_description_miss: 'missing', MvrwSect03_name_miss: 'name', MvreMain01_char: 'mainname', MvrwId13_suffix_srtr: 'srtr'
 };
 // OUTPUT: the-createMcsh.mjs arguments that fix a-rule
 const fArgFix = (sCodeIn) => oModeFixByCode[sCodeIn] ? ['--' + oModeFixByCode[sCodeIn]] : ['--code', sCodeIn];
@@ -1320,7 +1320,7 @@ let sCodeLast = '';
 
 /**
  * OUTPUT: [{sCode, sDesc}] the-validator rules, from the-header comments of
- *   structuralMcsh.js (Mvr..) and structuralHitp.js (Hvr..): " *  MvrwSect01  CnptSect ...".
+ *   structuralMcsh.js (Mvr..) and structuralHitp.js (Hvr..): " *  MvrwSect01_description_miss  CnptSect ...".
  */
 function fReadRuleAll(sDirValidIn) {
   const aoRule = [];
@@ -1328,7 +1328,8 @@ function fReadRuleAll(sDirValidIn) {
     let sText = '';
     try { sText = fs.readFileSync(path.join(sDirValidIn, sName), 'utf8'); } catch (oErr) { continue; }
     const sHead = sText.slice(0, sText.indexOf('*/'));
-    for (const aM of sHead.matchAll(/^ \*\s+((?:Mvr|Hvr)[A-Za-z]*\d+)\s+(.+)$/gm)) {
+    // a-code is "MvrwId13_suffix_srtr" (Mcsh, with its name) or "Hvre06" (Hitp)
+    for (const aM of sHead.matchAll(/^ \*\s+((?:Mvr|Hvr)[A-Za-z]*\d+(?:_\w+)?)\s+(.+)$/gm)) {
       if (!aoRule.some((oRule) => oRule.sCode === aM[1])) aoRule.push({ sCode: aM[1], sDesc: aM[2].trim() });
     }
   }

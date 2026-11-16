@@ -1,56 +1,13 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrwId01: C:/dirNodews/dirMcsh
+  MvrwSect03_name_miss: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  593 Mcsh-files · 5 files with issues · 37 issues
+  593 Mcsh-files · 6 files with issues · 9 issues
 
-=== MvrwId01 (37 issues in 5 files) — file:lines, the-biggest line first
-  McshTchInf000012:3053;3035;3034;3032;3031;3029;3027;3026;2303;2299;2298;2296;2295;2293;2291;2290;1691;1672;1671;1669;1668;1666;1664;1663
-  McshHlth000011:9588;9582;9580;9579;9401;9400
-  McshStn000020:17350;15628;15082;11698
-  McshTchInf000017:307;305
-  McshTchInf000019:4668
-
-=== MvrwId01 --line — every issue, its line and its message
-  McshTchInf000012.last.html
-    3053  id_char: ['] in href="#idLJsndutil'memberP1", only A-Z a-z 0-9 _
-    3035  id_char: ['] in id="idLJsndutil'memberP1", only A-Z a-z 0-9 _
-    3034  id_char: ['] in href="#idLJsndutil'membernam", only A-Z a-z 0-9 _
-    3032  id_char: ['] in id="idLJsndutil'membernam", only A-Z a-z 0-9 _
-    3031  id_char: ['] in href="#idLJsndutil'memberdsn", only A-Z a-z 0-9 _
-    3029  id_char: ['] in id="idLJsndutil'memberdsn", only A-Z a-z 0-9 _
-    3027  id_char: ['] in id="idLJsndutil'memberH4", only A-Z a-z 0-9 _
-    3026  id_char: ['] in id="idLJsndutil'member", only A-Z a-z 0-9 _
-    2303  id_char: ['] in href="#idLJsndhttp'memberP1", only A-Z a-z 0-9 _
-    2299  id_char: ['] in id="idLJsndhttp'memberP1", only A-Z a-z 0-9 _
-    2298  id_char: ['] in href="#idLJsndhttp'membernam", only A-Z a-z 0-9 _
-    2296  id_char: ['] in id="idLJsndhttp'membernam", only A-Z a-z 0-9 _
-    2295  id_char: ['] in href="#idLJsndhttp'memberdsn", only A-Z a-z 0-9 _
-    2293  id_char: ['] in id="idLJsndhttp'memberdsn", only A-Z a-z 0-9 _
-    2291  id_char: ['] in id="idLJsndhttp'memberH4", only A-Z a-z 0-9 _
-    2290  id_char: ['] in id="idLJsndhttp'member", only A-Z a-z 0-9 _
-    1691  id_char: ['] in href="#idLJsndevents'memberP1", only A-Z a-z 0-9 _
-    1672  id_char: ['] in id="idLJsndevents'memberP1", only A-Z a-z 0-9 _
-    1671  id_char: ['] in href="#idLJsndevents'membernam", only A-Z a-z 0-9 _
-    1669  id_char: ['] in id="idLJsndevents'membernam", only A-Z a-z 0-9 _
-    1668  id_char: ['] in href="#idLJsndevents'memberdsn", only A-Z a-z 0-9 _
-    1666  id_char: ['] in id="idLJsndevents'memberdsn", only A-Z a-z 0-9 _
-    1664  id_char: ['] in id="idLJsndevents'memberH4", only A-Z a-z 0-9 _
-    1663  id_char: ['] in id="idLJsndevents'member", only A-Z a-z 0-9 _
-  McshHlth000011.last.html
-    9588  id_char: [.] in href="#idDssHmn127flu.1918dsn", only A-Z a-z 0-9 _
-    9582  id_char: [.] in id="idDssHmn127flu.1918dsn", only A-Z a-z 0-9 _
-    9580  id_char: [.] in id="idDssHmn127flu.1918H2", only A-Z a-z 0-9 _
-    9579  id_char: [.] in id="idDssHmn127flu.1918", only A-Z a-z 0-9 _
-    9401  id_char: [.] in id="idDssHmn127symptomin.grH3", only A-Z a-z 0-9 _
-    9400  id_char: [.] in id="idDssHmn127symptomin.gr", only A-Z a-z 0-9 _
-  McshStn000020.last.html
-    17350  id_char: ['] in id="idEuoStatglsrUnited_Nations_Children's_Fund_UNICEF", only A-Z a-z 0-9 _
-    15628  id_char: [.] in id="idEuoStatglsrRolling_vs._recursive", only A-Z a-z 0-9 _
-    15082  id_char: ['] in id="idEuoStatglsrPurchaser's_price", only A-Z a-z 0-9 _
-    11698  id_char: [.] in id="idEuoStatglsrIn_sample_vs._out_of_sample_forecasts", only A-Z a-z 0-9 _
-  McshTchInf000017.last.html
-    307  id_char: [.] in href="#idBtcattOaCoinbase.com", only A-Z a-z 0-9 _
-    305  id_char: [.] in id="idBtcattOaCoinbase.com", only A-Z a-z 0-9 _
-  McshTchInf000019.last.html
-    4668  id_char: [-] in href="#idEosdacctn4P1-8-3", only A-Z a-z 0-9 _
+=== MvrwSect03_name_miss (9 issues in 6 files) — file:lines, the-biggest line first
+  McshTchInf000018:5716;5334;5130
+  McshTchInf000016:4187;4175
+  McshTchInf000012:8014
+  McshTchInf000017:8645
+  McshTchInf000020:1336
+  McshTchInf000026:1898
 

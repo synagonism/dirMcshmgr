@@ -11,7 +11,7 @@
  *   node validator.js <dirMcsh-path>          # fast structural checks only
  *   node validator.js <dirMcsh-path> --file McsXxx000001.last.html  # single file
  *   node validator.js <dirMcsh-path> --ai     # + DeepSeek AI semantic checks (Mcsh)
- *   node validator.js <dirMcsh-path> --file McsXxx000001.last.html --code MvreName01[,Hvrw07]
+ *   node validator.js <dirMcsh-path> --file McsXxx000001.last.html --code MvreName01_duplicate_line[,Hvrw07]
  *                                             # the-report keeps ONLY these rules
  */
 
@@ -19,7 +19,7 @@ import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly, fReadFileAllHitpI
   fReadFileHitpPathOnly, fReadFileAllHitpPathOnly } from './parserHitp.js';
 import { fRunChecksHitp } from './structuralHitp.js';
 import { fReadFileMcsh } from './parserMcsh.js';
-import { fRunChecksMcsh } from './structuralMcsh.js';
+import { fRunChecksMcsh, fCodeFull } from './structuralMcsh.js';
 import { fRunChecksAi } from './ai-checks.js';
 import { fReporter } from './reporter.js';
 import { fReadListValidate } from './listValidate.js';
@@ -31,6 +31,7 @@ const sDirScript = path.dirname(fileURLToPath(import.meta.url));
 
 const
   aVersion = [
+    'validatorMcsh.js.0-10-0.2026-11-16: --code MvrwId13 = MvrwId13_suffix_srtr (fCodeFull); the-log reads the-codes with their name',
     'validatorMcsh.js.0-9-0.2026-11-04: --code with Mcsh rules alone does NOT parse the-files as Hitp (fReadFileHitpPathOnly)',
     'validatorMcsh.js.0-8-0.2026-11-04: --code Hvre01 alone reads only the-ids (fReadFileHitpIdOnly), ~5 s for the-worldview, not ~24 s',
     'validatorMcsh.js.0-7-0.2026-11-04: --code runs ONLY the-checks of its rules; a-Hitp rule does not read the-Mcsh files',
@@ -44,7 +45,7 @@ const
   aArg = process.argv.slice(2);
 
 if (aArg.length === 0) {
-  console.error('Usage: node validator <sNameDir> <sNameIdRela> [--ai] [--code MvreName01[,Hvrw07]] [--list dirManager/validate.txt]');
+  console.error('Usage: node validator <sNameDir> <sNameIdRela> [--ai] [--code MvreName01_duplicate_line[,Hvrw07]] [--list dirManager/validate.txt]');
   process.exit(1);
 }
 
@@ -52,7 +53,7 @@ const bUseAi       = aArg.includes('--ai');
 const nIdxCode     = aArg.indexOf('--code');
 // the-rules to report; empty: all
 const aCode        = nIdxCode === -1 ? []
-  : String(aArg[nIdxCode + 1] ?? '').split(',').map(sCode => sCode.trim()).filter(Boolean);
+  : String(aArg[nIdxCode + 1] ?? '').split(',').map(sCode => sCode.trim()).filter(Boolean).map(fCodeFull);
 // --list dirManager/validate.txt: the-files and dirs of that list only (listValidate.js)
 const nIdxList     = aArg.indexOf('--list');
 const sPathList    = nIdxList === -1 ? '' : String(aArg[nIdxList + 1] ?? '');
@@ -89,7 +90,8 @@ function fLogOfCode(sLogIn) {
   let sHead = null;
   for (const sLine of sLogIn.split('\n')) {
     if (/^\s*🔍 Running/.test(sLine)) { sHead = sLine; continue; }
-    const aRule = sLine.match(/^(\s+)((?:Mvr|Hvr)[A-Za-z]*\d+(?:\/(?:Mvr|Hvr)[A-Za-z]*\d+)*)(\s+.*?)\d+ issues\s*$/);
+    // a-code is "MvrwId13_suffix_srtr" (Mcsh, with its name) or "Hvre06" (Hitp)
+    const aRule = sLine.match(/^(\s+)((?:Mvr|Hvr)[A-Za-z]*\d+(?:_\w+)?(?:\/(?:Mvr|Hvr)[A-Za-z]*\d+(?:_\w+)?)*)(\s+.*?)\d+ issues\s*$/);
     if (!aRule) { if (!/^\s+(Mvr|Hvr)/.test(sLine)) aOut.push(sLine); continue; }
     const aCodeLine = aRule[2].split('/').filter(sCode => aCode.includes(sCode));
     if (aCodeLine.length === 0) continue;

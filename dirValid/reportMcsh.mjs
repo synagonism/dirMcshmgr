@@ -38,7 +38,7 @@
  * OUTPUT: the-report in dirValid/reportMcsh.txt, overwritten on every run;
  *   the-console shows its header and the-path.
  * RUN:
- *   node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07]
+ *   node dirValid/reportMcsh.mjs <sNameDir> --code MvrwId13[,Hvrw07]
  *                                [--line] [--file McshDir000000]
  */
 
@@ -47,12 +47,13 @@ import moPath from 'path'
 import { fileURLToPath } from 'url'
 import { fReadFileAllHitp } from './parserHitp.js'
 import { fReadFileMcsh } from './parserMcsh.js'
-import { fRunChecksMcsh } from './structuralMcsh.js'
+import { fRunChecksMcsh, fCodeFull, aCodeMcsh } from './structuralMcsh.js'
 import { fRunChecksHitp } from './structuralHitp.js'
 
 const
   // contains the-versions of reportMcsh.mjs
   aVersion = [
+    'reportMcsh.mjs.0-18-0.2026-11-16: rule codes with their name; --code MvrwId13 still works (fCodeFull); usage from aCodeMcsh',
     'reportMcsh.mjs.0-17-0.2026-11-16: usage lists MvrwMain11',
     'reportMcsh.mjs.0-16-0.2026-11-16: usage lists MvrwGstr03',
     'reportMcsh.mjs.0-15-0.2026-11-12: usage lists MvrwName01',
@@ -96,17 +97,17 @@ async function fMain() {
   const sNameDir = aArgPath[0];
   const nIdxCode = aArg.indexOf('--code');
   const aCode = nIdxCode !== -1
-    ? (aArg[nIdxCode + 1] ?? '').split(',').map(sCode => sCode.trim()).filter(Boolean)
+    ? (aArg[nIdxCode + 1] ?? '').split(',').map(sCode => sCode.trim()).filter(Boolean).map(fCodeFull)
     : [];
 
   if (!sNameDir || aCode.length === 0) {
     console.log('reportMcsh.mjs - it reports the-issues of one validator-code (Mcsh or Hitp), per file');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code Mvrw01[,Hvrw07] [--line] [--file McshDir000000]');
+    console.log('USAGE: node dirValid/reportMcsh.mjs <sNameDir> --code MvrwId13[,Hvrw07] [--line] [--file McshDir000000]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --code       one or more codes, comma-separated:');
-    console.log('                 Mcsh: Mvre01 Mvre02 Mvrw01 Mvrw02 Mvrw03 Mvrw04 Mvrw06 MvrlId01 MvrlId02 MvrlId03 MvrlId04 MvrlId05 MvrlId06 MvrlId07 MvrlId08 MvrlId09 MvrlId10 MvrlId11 MvrlId12 MvrlId13 MvrlGstr01 MvrlGstr02 MvrlMmn01 MvrlMmn02 MvrlMmn03 MvrlMmn04 MvrlMmn05 MvrlMmn06 MvrlMmn07 MvrwMain09 MvrwMain10 MvrwName01 MvrwGstr03 MvrwMain11');
+    console.log('                 Mcsh: ' + aCodeMcsh.join(' ') + '  (the-short code MvrwId13 is enough)');
     console.log('                 Hitp: Hvre01 ... Hvre07  Hvrw01 ... Hvrw08');
     console.log('  --line       per file, every issue: its line and its message');
     console.log('  --file       one file only, given as McshDir000000');

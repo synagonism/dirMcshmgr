@@ -71,32 +71,32 @@
  *   --mainname: the-fix of MvrlMmn01: a-main-name (after "!⇒") with "-" gets "_",
  *   in every "!⇒X" and in its main-name-line; the-old form stays as a-synonym X!⇒X'.
  *
- *   --srtr: the-fix of MvrwId13: a-structure-concept's id gets the-suffix srtr
+ *   --srtr: the-fix of MvrwId13_suffix_srtr: a-structure-concept's id gets the-suffix srtr
  *   (idXsrtrF → idXsrtr, idXstcr → idXsrtr, idX → idXsrtr), with its own ids that
  *   start with it, and every link to them in every .last.html file (json index files are NOT touched).
  *
  *   --code <rule> --file <file>: the-fix of ONE validator rule in one file, for EVERY
  *   rule (ooFixCode): it changes only the-clear cases and SKIPs the-rest with why; a-rule
- *   that needs you (MvreFile01, MvrwSect02) gets NOFIX with why. A-rule
- *   with its own mode runs it (--code MvreName01 = --dupname).
- *   --code MvrwGstr01: a-specific S WITHOUT generic-tree:: that HAS a-main-name M (one !⇒ target
+ *   that needs you (MvreFile01_overview, MvrwSect02_description_empty) gets NOFIX with why. A-rule
+ *   with its own mode runs it (--code MvreName01_duplicate_line = --dupname).
+ *   --code MvrwGstr01_gnsp_then_spgn: a-specific S WITHOUT generic-tree:: that HAS a-main-name M (one !⇒ target
  *   in its name::) gets the-para {S}gntr "McshEngl.M:generic, === G:generic, ...entity:generic"
  *   right after its name::, in S's file (any file); G = the-generic whose specific-tree lists S.
  *   The-worldview is checked ONCE (S can be in another file). "does not list it": S's generic-tree::
  *   gets G: a-tree with no generic yet ("=== ...entity:generic") gets G before ...entity:generic,
  *   a-tree with generics gets a-new group "=== G:generic, ...entity:generic" at its end.
- *   --code MvrwGstr02: a-generic G (X:generic, the-first item of a-"===" group of S's generic-tree::)
+ *   --code MvrwGstr02_spgn_then_gnsp: a-generic G (X:generic, the-first item of a-"===" group of S's generic-tree::)
  *   lists S as "G.S!@file#id" (a-dotted S itself, without NNN_): a-new "===" group at the-end of
  *   G's specific-tree::, or a-new {G}sptr para "McshEngl.G.specific, ===" right after G's generic-tree::.
  *
- *   --code MvrwName01: a-formal-name (X'Y, X.Y, X:Y, X;Y, X/Y) of a-name:: or a-formal title with
+ *   --code MvrwName01_formal: a-formal-name (X'Y, X.Y, X:Y, X;Y, X/Y) of a-name:: or a-formal title with
  *   a-space | hyphen gets "_" in place (X'a-b → X'a_b); an-old spelling "X'a-b!⇒X'a_b" and a-doubled
  *   line are deleted. It SKIPS a-main-name (a "!⇒" target): --mainname renames those.
  *
- *   --code MvrwMain11: the-Mmn M goes on the-first line of its name::: "M," | "D!⇒M," then "M!=D,"
+ *   --code MvrwMain11_line: the-Mmn M goes on the-first line of its name::: "M," | "D!⇒M," then "M!=D,"
  *   ("D!⇒M," is written when missing); the-other lines keep their order.
  *
- *   --name: the-fix of MvrwSect03: a-section without name:: gets a-name::-para with
+ *   --name: the-fix of MvrwSect03_name_miss: a-section without name:: gets a-name::-para with
  *   McshEngl.<its heading>, after its description::. It SKIPS a-heading with "," or "!".
  *
  * INPUT: the-path of a-dirMcsh-worldview.
@@ -112,7 +112,7 @@ import moPath from 'path'
 import { fileURLToPath } from 'url'
 import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
-import { fRunChecksMcsh, fFormalMvrwName01 } from './structuralMcsh.js'
+import { fRunChecksMcsh, fFormalMvrwName01, fCodeFull } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
 import { fReadListValidate } from './listValidate.js'
 import { execFileSync } from 'child_process'
@@ -121,6 +121,7 @@ import { fFindInheritAttr } from './inheritMcsh.mjs'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-41-0.2026-11-16: rule codes with their name; --code MvrwId13 still works (fCodeFull)',
     'createMcsh.mjs.0-40-0.2026-11-16: MvrwId01 fix: space \' - . to "_"',
     'createMcsh.mjs.0-39-0.2026-11-16: MvrwId01 id_char fix (look-alike letters, space and "-" to "_"), MvrwId03 removed',
     'createMcsh.mjs.0-38-0.2026-11-16: --code MvrwGstr03 runs inheritMcsh.mjs ONCE (--fix --fix-order --fix-name), not per file',
@@ -173,10 +174,10 @@ const
     BAD:      'the-file is NOT written: its check failed',
     DELETE:   'a-creation-para deleted, its date put in the-description::',
     CREATE:   'a-new description:: created',
-    ATTR:     'MvrwMain10: an-attribute | specific title set to "x of M" | "M.x" and its formal name M\x27x | M.x added',
-    FORMAL:   'MvrwName01: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted',
-    NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name',
-    INHERIT:  'MvrwGstr03: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary',
+    ATTR:     'MvrwMain10_attribute: an-attribute | specific title set to "x of M" | "M.x" and its formal name M\x27x | M.x added',
+    FORMAL:   'MvrwName01_formal: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted',
+    NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03_name_miss, MvrwSect04_name_empty): check the-name',
+    INHERIT:  'MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary',
     NOFIX:    'no automatic fix for this rule: it needs you',
     NOISSUE:  'the-rule has no issue in the-file',
     IDNEW:    'an-id renamed (MvrwId01..13), with its own ids; links re-pointed in every file',
@@ -187,23 +188,23 @@ const
     QUOTE:    'an-attribute value double-quoted (Hvrw06)',
     CLOSE:    'a-</p> added where the-browser closes the-<p> (Hvre07)',
     TITLE:    'the-<title> got the-version of idMetaVersion (Hvrw01, Hvrw02)',
-    MOVE:     'the-Attrbase-line moved after M!@McshXxx | M!=I (MvrwMain07)',
-    DATE:     'a-date padded to {YYYY-MM-DD} (MvrwMisc01)',
+    MOVE:     'the-Attrbase-line moved after M!@McshXxx | M!=I (MvrwMain07_Attrbase_line)',
+    DATE:     'a-date padded to {YYYY-MM-DD} (MvrwMisc01_date)',
     LINKFX:   'a-broken link re-pointed to its ONE certain target (Hvre05, Hvre06)',
-    GNTRNEW:  'a-specific without generic-tree:: got its {S}gntr para, its generic G first (MvrwGstr01)',
-    GNTRADD:  'a-specific\'s generic-tree:: got its generic G: in its empty group, else a-new === group (MvrwGstr01)',
-    SPTRADD:  'a-generic\'s specific-tree:: got its specific S "G.S!@file#id" in a-new === group (MvrwGstr02)',
-    SPTRNEW:  'a-generic without specific-tree:: got its {G}sptr para after its generic-tree:: (MvrwGstr02)',
+    GNTRNEW:  'a-specific without generic-tree:: got its {S}gntr para, its generic G first (MvrwGstr01_gnsp_then_spgn)',
+    GNTRADD:  'a-specific\'s generic-tree:: got its generic G: in its empty group, else a-new === group (MvrwGstr01_gnsp_then_spgn)',
+    SPTRADD:  'a-generic\'s specific-tree:: got its specific S "G.S!@file#id" in a-new === group (MvrwGstr02_spgn_then_gnsp)',
+    SPTRNEW:  'a-generic without specific-tree:: got its {G}sptr para after its generic-tree:: (MvrwGstr02_spgn_then_gnsp)',
     INSERT:   'a-creation-date inserted in a-description::',
     FIXTITLE: 'a-typo description-title fixed',
     RENAME:   'the-name::-para id renamed to idName',
     HEADING:  'a-heading moved up (Hvrw07 gap)',
     NEST:     'a-</section> moved up (Hvrw08 nesting)',
-    DUPNAME:  'a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01)',
-    NAMECOMMA: 'a-name-line without a-comma: the-comma added at the-end (MvreName02)',
-    MAINNAME: 'a-name-line whose main-name changed (MvreMain01 underscores, MvrwMain01 Attrbase, MvrwMain02..06 suffix)',
+    DUPNAME:  'a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01_duplicate_line)',
+    NAMECOMMA: 'a-name-line without a-comma: the-comma added at the-end (MvreName02_comma)',
+    MAINNAME: 'a-name-line whose main-name changed (MvreMain01_char underscores, MvrwMain01_Attrbase Attrbase, MvrwMain02..06 suffix)',
     ADD:      "the-old main-name kept as a-synonym: X!⇒X'",
-    IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13), with its own ids',
+    IDSRTR:   'a-structure-concept id renamed to end in srtr (MvrwId13_suffix_srtr), with its own ids',
     LINK:     'a-line whose ids or links to a-renamed id changed'
   },
   // the-dir of this script: the-report goes next to IT
@@ -507,17 +508,17 @@ function fPlanMissing(sRawIn, sNameShortIn, aIdSectIn, sDateIn) {
 }
 
 /**
- * DOING: --name mode, the-fix of MvrwSect03: a-section without name:: gets
+ * DOING: --name mode, the-fix of MvrwSect03_name_miss: a-section without name:: gets
  *     <p id="<section-id>nam">name::
  *       <br>* McshEngl.<its heading>,
  *   right after its description:: (else after its heading), with the-indentation of
  *   the-section's own lines.
  *   It SKIPS and reports: a-section-id not unique, no heading, a-taken <section-id>nam,
  *   a-heading with "," or "!" (they end a-name-line or mark a-relation).
- * INPUT: aoSectIn: [{sIdSect, sTitle}] the-sections the-validator reports as MvrwSect03.
+ * INPUT: aoSectIn: [{sIdSect, sTitle}] the-sections the-validator reports as MvrwSect03_name_miss.
  * OUTPUT: { aoEdit, aoNote, sRawNew }
  */
-// the-name-lines of the-worldview, read once: a-new name must not be one of them (MvreName01)
+// the-name-lines of the-worldview, read once: a-new name must not be one of them (MvreName01_duplicate_line)
 let oSetNameAllCache = null;
 function fFindNameAll(sNameDirIn) {
   if (oSetNameAllCache) return oSetNameAllCache;
@@ -542,7 +543,7 @@ function fFindNameBad(sNameIn, oSetNameAllIn) {
   if (/^(\d+_)?(DOING|doing|evoluting|evaluation|evaluating|info-resource|structure) of |'(doing|evoluting|evaluation|evaluating|info-resource|structure)$/i.test(sNameIn)) {
     return 'is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...)';
   }
-  if (oSetNameAllIn.has('McshEngl.' + sNameIn)) return 'is a-name already in the-worldview (MvreName01)';
+  if (oSetNameAllIn.has('McshEngl.' + sNameIn)) return 'is a-name already in the-worldview (MvreName01_duplicate_line)';
   oSetNameAllIn.add('McshEngl.' + sNameIn);
   return '';
 }
@@ -1031,7 +1032,7 @@ function fPlanMainName(sRawIn, sNameShortIn, oMapMainIn, oSetMainAlwaysIn = new 
 }
 
 /**
- * OUTPUT: the-new id of a-structure-concept (MvrwId13), ending in "srtr":
+ * OUTPUT: the-new id of a-structure-concept (MvrwId13_suffix_srtr), ending in "srtr":
  *   idBdyHmnsrtrF → idBdyHmnsrtr, idSys002stcr | strr | sctr | structure → idSys002srtr,
  *   anything else gets srtr appended: idGlndHmnatt006 → idGlndHmnatt006srtr.
  */
@@ -1044,12 +1045,12 @@ function fFindIdSrtr(sIdIn) {
 }
 
 /**
- * DOING: --srtr mode, the-fix of MvrwId13: it plans the-renames of ONE file's
+ * DOING: --srtr mode, the-fix of MvrwId13_suffix_srtr: it plans the-renames of ONE file's
  *   structure-concepts. A-section's own ids that START with its id (its heading
  *   ...H1, ...dsn, ...nam, a-child ...gstr) get the-new start too.
  *   It SKIPS a-section whose id is not unique, whose <section> is not found, or
  *   whose new ids are taken.
- * INPUT: aIdSectIn: the-section-ids the-validator reports as MvrwId13.
+ * INPUT: aIdSectIn: the-section-ids the-validator reports as MvrwId13_suffix_srtr.
  * OUTPUT: { oMapId: old → new, aoNote }
  */
 function fPlanSrtrMap(sRawIn, sNameShortIn, aIdSectIn) {
@@ -1118,7 +1119,7 @@ function fPlanSrtrApply(sRawIn, sNameShortIn, sNameFileIn, ooMapIdIn) {
 }
 
 /**
- * DOING: --dupname mode, the-fix of MvreName01 kind A: a-name-line (the-line to its comma)
+ * DOING: --dupname mode, the-fix of MvreName01_duplicate_line kind A: a-name-line (the-line to its comma)
  *   that is written again in the-SAME para.
  *   - the-same whole line: the-first stays, the-others are deleted.
  *   - one line with a-date | info after its comma, the-others without: the-lines without
@@ -1164,7 +1165,7 @@ function fPlanDupName(sRawIn, sNameShortIn) {
 }
 
 /**
- * DOING: --namecomma mode, the-fix of MvreName02: a-name-line "<br>* McshLago.name" without
+ * DOING: --namecomma mode, the-fix of MvreName02_comma: a-name-line "<br>* McshLago.name" without
  *   a-comma gets it at the-end: "<br>* McshLago.name,". A-comma in the-middle
  *   ("food.060_rice,!⇒foodRice") is reported (SKIP), by hand: after the-comma all is comment.
  * OUTPUT: { aoEdit, aoNote, sRawNew }
@@ -1231,7 +1232,7 @@ function fFindIdSuffix(sIdIn, sSuffixIn, aBadIn) {
   return sIdIn + sSuffixIn;
 }
 
-// the-look-alike letters of MvrwId01: Greek and Cyrillic → Latin
+// the-look-alike letters of MvrwId01_char: Greek and Cyrillic → Latin
 const oLetterLatin = {
   'ο': 'o', 'α': 'a', 'ε': 'e', 'ι': 'i', 'κ': 'k', 'ν': 'v', 'ρ': 'p', 'τ': 't', 'υ': 'u', 'χ': 'x',
   'Ο': 'O', 'Α': 'A', 'Ε': 'E', 'Ι': 'I', 'Κ': 'K', 'Ν': 'N', 'Ρ': 'P', 'Τ': 'T', 'Χ': 'X', 'Β': 'B', 'Η': 'H', 'Μ': 'M', 'Ζ': 'Z',
@@ -1241,23 +1242,23 @@ const oLetterLatin = {
 // the-fix of each rule: sKind idmap (rename ids, re-point links in every file), line
 // (edits in the-file), main (rename main-names), none (sWhy: it needs you)
 const ooFixCode = {
-  // MvrwId01 id_char: look-alike letters to Latin; space ' - . to "_" ("vs._out" → "vs_out",
+  // MvrwId01_char id_char: look-alike letters to Latin; space ' - . to "_" ("vs._out" → "vs_out",
   //   a-"__" made by IT becomes "_"); any other character needs you
-  MvrwId01: { sKind: 'idmap', fIdNew: sId => {
+  MvrwId01_char: { sKind: 'idmap', fIdNew: sId => {
     let s = [...sId.trim()].map(sC => oLetterLatin[sC] ?? sC).join('').replace(/[\s'.-]+/g, '_');
     if (!sId.includes('__')) s = s.replace(/_{2,}/g, '_');
     return /^[A-Za-z0-9_]+$/.test(s) ? s : null; } },
-  MvrwId02: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'dong', ['dngFT', 'dngF', 'dng', 'doing']) },
-  MvrwId04: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'eval', ['evaluation', 'evaln', 'evln', 'eln']) },
-  MvrwId05: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evolg', 'evltg', 'evlg', 'evg', 'Evg']) },
-  MvrwId06: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'irsc', ['resource', 'infrsc', 'ircs', 'rsc']) },
-  MvrwId07: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'pntr', ['rtr']) },
-  MvrwId08: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'chtr', ['ctr']) },
-  MvrwId09: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'wltr', ['whlchn', 'whl', 'wtr', 'P1']) },
-  MvrwId10: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'prtr', ['prt', 'ptr', 'rtr']) },
-  MvrwId11: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'gntr', ['gtr']) },
-  MvrwId12: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'sptr', ['str']) },
-  MvrwId13: { sKind: 'idmap', fIdNew: sId => fFindIdSrtr(sId) },
+  MvrwId02_suffix_dong: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'dong', ['dngFT', 'dngF', 'dng', 'doing']) },
+  MvrwId04_suffix_eval: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'eval', ['evaluation', 'evaln', 'evln', 'eln']) },
+  MvrwId05_suffix_evog: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evolg', 'evltg', 'evlg', 'evg', 'Evg']) },
+  MvrwId06_suffix_irsc: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'irsc', ['resource', 'infrsc', 'ircs', 'rsc']) },
+  MvrwId07_suffix_pntr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'pntr', ['rtr']) },
+  MvrwId08_suffix_chtr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'chtr', ['ctr']) },
+  MvrwId09_suffix_wltr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'wltr', ['whlchn', 'whl', 'wtr', 'P1']) },
+  MvrwId10_suffix_prtr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'prtr', ['prt', 'ptr', 'rtr']) },
+  MvrwId11_suffix_gntr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'gntr', ['gtr']) },
+  MvrwId12_suffix_sptr: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'sptr', ['str']) },
+  MvrwId13_suffix_srtr: { sKind: 'idmap', fIdNew: sId => fFindIdSrtr(sId) },
   Hvre01:   { sKind: 'line', fPlan: (...a) => fPlanIdDup(...a) },
   Hvre02:   { sKind: 'line', fPlan: (sRaw, sName, aoIssue) => fPlanIdAdd(sRaw, sName, aoIssue, 'head') },
   Hvre03:   { sKind: 'line', fPlan: (sRaw, sName, aoIssue) => fPlanIdAdd(sRaw, sName, aoIssue, 'para') },
@@ -1271,23 +1272,23 @@ const ooFixCode = {
   Hvrw04:   { sKind: 'line', fPlan: (...a) => fPlanSelfAnchor(...a) },
   Hvrw05:   { sKind: 'line', fPlan: (...a) => fPlanTagCase(...a) },
   Hvrw06:   { sKind: 'line', fPlan: (...a) => fPlanAttrQuote(...a) },
-  MvrwSect04: { sKind: 'line', fPlan: (...a) => fPlanNameEmpty(...a) },
-  MvrwMain01: { sKind: 'main' },
-  MvrwMain02: { sKind: 'main', sSuffix: 'evolg' },
-  MvrwMain03: { sKind: 'main' },
-  MvrwMain04: { sKind: 'main', sSuffix: 'doing' },
-  MvrwMain05: { sKind: 'main', sSuffix: 'infrsc' },
-  MvrwMain06: { sKind: 'main', sSuffix: 'srtr' },
-  MvrwMain07: { sKind: 'line', fPlan: (...a) => fPlanAttrbase(...a) },
-  MvrwMain10: { sKind: 'line', fPlan: (...a) => fPlanAttribute(...a) },
-  MvrwMain11: { sKind: 'line', fPlan: (...a) => fPlanMainLine(...a) },
-  MvrwName01: { sKind: 'line', fPlan: (...a) => fPlanFormal(...a) },
-  MvrwMisc01: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
-  MvreFile01: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
-  MvrwSect02: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
-  MvrwGstr01: { sKind: 'gstr01', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
-  MvrwGstr02: { sKind: 'gstr02', sWhy: 'its generic is not a-generic-tree:: name (X:generic) or not found: add it by hand' },
-  MvrwGstr03: { sKind: 'inherit', sWhy: 'left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::' }
+  MvrwSect04_name_empty: { sKind: 'line', fPlan: (...a) => fPlanNameEmpty(...a) },
+  MvrwMain01_Attrbase: { sKind: 'main' },
+  MvrwMain02_evolg: { sKind: 'main', sSuffix: 'evolg' },
+  MvrwMain03_eval: { sKind: 'main' },
+  MvrwMain04_doing: { sKind: 'main', sSuffix: 'doing' },
+  MvrwMain05_infrsc: { sKind: 'main', sSuffix: 'infrsc' },
+  MvrwMain06_srtr: { sKind: 'main', sSuffix: 'srtr' },
+  MvrwMain07_Attrbase_line: { sKind: 'line', fPlan: (...a) => fPlanAttrbase(...a) },
+  MvrwMain10_attribute: { sKind: 'line', fPlan: (...a) => fPlanAttribute(...a) },
+  MvrwMain11_line: { sKind: 'line', fPlan: (...a) => fPlanMainLine(...a) },
+  MvrwName01_formal: { sKind: 'line', fPlan: (...a) => fPlanFormal(...a) },
+  MvrwMisc01_date: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
+  MvreFile01_overview: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
+  MvrwSect02_description_empty: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
+  MvrwGstr01_gnsp_then_spgn: { sKind: 'gstr01', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
+  MvrwGstr02_spgn_then_gnsp: { sKind: 'gstr02', sWhy: 'its generic is not a-generic-tree:: name (X:generic) or not found: add it by hand' },
+  MvrwGstr03_inherited_attr: { sKind: 'inherit', sWhy: 'left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::' }
 };
 
 /**
@@ -1663,7 +1664,7 @@ function fPlanVersion(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: MvrwSect04: a-name::-para without a-valid Mcsh-name gets "<br>* McshEngl.<heading>,"
+ * DOING: MvrwSect04_name_empty: a-name::-para without a-valid Mcsh-name gets "<br>* McshEngl.<heading>,"
  *   as its first line. A-heading with "," or "!" is skipped.
  */
 function fPlanNameEmpty(sRawIn, sNameShortIn, aoIssueIn, sNameDirIn) {
@@ -1689,7 +1690,7 @@ function fPlanNameEmpty(sRawIn, sNameShortIn, aoIssueIn, sNameDirIn) {
 }
 
 /**
- * DOING: MvrwMain07: a-misplaced Attrbase-line "McshEngl.B!Attrbase[!⇒M]," moves right after
+ * DOING: MvrwMain07_Attrbase_line: a-misplaced Attrbase-line "McshEngl.B!Attrbase[!⇒M]," moves right after
  *   "M!@McshXxx" (a-file-concept) or "M!=I" of its name::-para. A-badly written line is skipped.
  */
 function fPlanAttrbase(sRawIn, sNameShortIn, aoIssueIn) {
@@ -1720,7 +1721,7 @@ function fPlanAttrbase(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: MvrwMain10: the-CLEAR cases of an-attribute | attribute-specific section of a-concept with main-name M:
+ * DOING: MvrwMain10_attribute: the-CLEAR cases of an-attribute | attribute-specific section of a-concept with main-name M:
  *   a) title "X'y" (X any, y without ".")       → "y of M" (an-attribute)
  *   b) title "X.y", X a-name of M ("X!⇒M,")     → "M.y" (a-specific); "X.EVOLUTING" → "evoluting of M"
  *   c) title "x of X", X a-name of M             → "x of M"
@@ -1751,7 +1752,7 @@ function fPlanAttribute(sRawIn, sNameShortIn, aoIssueIn) {
   for (const oIssue of aoIssueIn) {
     const aMsg = /attribute: "(.*)" \((id[^)]+)\) of (?:file-concept )?"([^"]+)": (.*)$/.exec(oIssue.sMessage ?? '');
     const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
-    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain10: message not understood`); continue; }
+    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain10_attribute: message not understood`); continue; }
     const [, sTitleNorm, sId, sM] = aMsg;
     const nH = aLine.findIndex(sL => new RegExp(`<h[1-7] id="${fEsc(sId)}H[1-7]">`).test(sL));
     if (nH === -1) { aoNote.push(`SKIP   ${sLoc}  #${sId}: heading not found`); continue; }
@@ -1791,7 +1792,7 @@ function fPlanAttribute(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: MvrwMain11: the-Mmn M goes on the-FIRST line of its name::-para:
+ * DOING: MvrwMain11_line: the-Mmn M goes on the-FIRST line of its name::-para:
  *   a) "M," (no descriptive-name): its line moves first;
  *   b) "M!=D,": the-line "D!⇒M," moves first (it is written when missing) and the-M line second.
  *   The-other lines keep their order. SKIPPED: a-message not understood, a-line not found.
@@ -1805,7 +1806,7 @@ function fPlanMainLine(sRawIn, sNameShortIn, aoIssueIn) {
   for (const oIssue of aoIssueIn) {
     const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
     const aMsg = /^line: the-Mmn "(.+?)" is NOT on the-first name-line \(now: .*\): the-first name-line is "(.+?)"(?:, the-second "(.+?)")?$/.exec(oIssue.sMessage ?? '');
-    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain11: message not understood`); continue; }
+    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain11_line: message not understood`); continue; }
     const [, sMmn, sFirst, sSecond] = aMsg;
     const nL = (oIssue.nLine ?? 0) - 1;
     // the-name-lines of its para
@@ -1830,7 +1831,7 @@ function fPlanMainLine(sRawIn, sNameShortIn, aoIssueIn) {
       aMove.push(aLine[oMmn.nN]);
     } else {
       const sCr = /\r$/.test(aLine[oMmn.nN]) ? '\r' : '';
-      // a-formal D (X'y, X.y …) as a-name gets "_" for space | hyphen (MvrwName01), in "M!=D" too
+      // a-formal D (X'y, X.y …) as a-name gets "_" for space | hyphen (MvrwName01_formal), in "M!=D" too
       const sDesc = sFirst.slice(0, -('!⇒' + sMmn).length);
       const sDescNew = /['.:;\/]/.test(sDesc.replace(/\{[^}]*\}|\([^)]*\)/g, '')) ? fFormalMvrwName01(sDesc) : sDesc;
       // its line "D!⇒M" (or "D," that gets "!⇒M"), else a-new one
@@ -1853,7 +1854,7 @@ function fPlanMainLine(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: MvrwName01: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) with a-space | hyphen gets "_"
+ * DOING: MvrwName01_formal: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) with a-space | hyphen gets "_"
  *   in their place (fFormalMvrwName01, outside "(…)" "{…}"), in the-file:
  *   a) a-name-line of a-name::-para: the-name is renamed in place, its "!…" notations stay;
  *      an-old spelling "X'a-b!⇒X'a_b," is deleted when its para has a-line of X'a_b;
@@ -1907,7 +1908,7 @@ function fPlanFormal(sRawIn, sNameShortIn, aoIssueIn) {
       oMapNew.set(nL, aL[1] + sNameNew + aL[2]);
       aoRename.push({ nL, sLoc, sText: `name "${sLago}.${sName}" → "${sNameNew}"` });
     } else {
-      aoNote.push(`SKIP   ${sLoc}  MvrwName01: message not understood`);
+      aoNote.push(`SKIP   ${sLoc}  MvrwName01_formal: message not understood`);
     }
   }
   // a-renamed line equal to another line of its para is deleted
@@ -1925,7 +1926,7 @@ function fPlanFormal(sRawIn, sNameShortIn, aoIssueIn) {
 }
 
 /**
- * DOING: MvrwMisc01: a-date {2022-4-7} → {2022-04-07} (one digit month|day padded),
+ * DOING: MvrwMisc01_date: a-date {2022-4-7} → {2022-04-07} (one digit month|day padded),
  *   everywhere in the-file; other forms are skipped.
  */
 function fPlanDate(sRawIn, sNameShortIn, aoIssueIn) {
@@ -2075,7 +2076,7 @@ function fFindMainOfSect(aLineIn, sIdSectIn) {
 }
 
 /**
- * DOING: MvrwGstr01 "does not list it": S's generic-tree:: (oJobIn.sIdGntr) gets its generics G
+ * DOING: MvrwGstr01_gnsp_then_spgn "does not list it": S's generic-tree:: (oJobIn.sIdGntr) gets its generics G
  *   (user {2026-11-05}): a-tree with NO generic yet ("=== ...entity:generic") gets G in that group,
  *   before "...entity:generic"; a-tree WITH a-generic gets a-new group "=== G:generic, ...entity:generic"
  *   at its end, before a-"=== label:" group (not generics).
@@ -2117,7 +2118,7 @@ function fPlanGntrList(aLineIn, sNameShortIn, oJobIn, sFromIn, aoEditIn, aoNoteI
 }
 
 /**
- * DOING: MvrwGstr01: each specific S of ONE file (aoJobIn: { sIdS, aItemG, aFrom }) that has
+ * DOING: MvrwGstr01_gnsp_then_spgn: each specific S of ONE file (aoJobIn: { sIdS, aItemG, aFrom }) that has
  *   no generic-tree:: gets "{S}gntr" right after its name::-para:
  *     generic-tree::  McshEngl.M:generic,  ===  G:generic,  [===  G2:generic,]  ...entity:generic,
  *   M = S's main-name (the-ONE !⇒ target). It SKIPS: no name::, no or several main-names,
@@ -2167,7 +2168,7 @@ function fFindItemSptr(sMainGIn, sMainSIn, sFileSIn, sIdSIn) {
 }
 
 /**
- * DOING: MvrwGstr02: each generic G of ONE file (aoJobIn: { sIdG, sMainG, aItem, aFrom }) lists
+ * DOING: MvrwGstr02_spgn_then_gnsp: each generic G of ONE file (aoJobIn: { sIdG, sMainG, aItem, aFrom }) lists
  *   its specifics S: a-new "===" group at the-end of G's specific-tree:: (before an-"=== address" part),
  *   or, when G has none, a-new "{G}sptr" para "McshEngl.G.specific, === items" right after G's generic-tree::.
  *   An-item whose link is in the-para already is not added. A-<div> specific-tree is SKIPPED.
@@ -2235,7 +2236,7 @@ async function fMain() {
   const sNameFileOnly = nIdxFile === -1 ? '' : String(aArg[nIdxFile + 1] ?? '').replace(/\.last\.html$/, '');
   // --code <rule>: the-fix of ONE validator rule (ooFixCode), with --file
   const nIdxCode = aArg.indexOf('--code');
-  const sCodeOne = nIdxCode === -1 ? '' : String(aArg[nIdxCode + 1] ?? '');
+  const sCodeOne = nIdxCode === -1 ? '' : fCodeFull(aArg[nIdxCode + 1] ?? '');   // MvrwId13 = MvrwId13_suffix_srtr
   // --dir dirCor (relative to the-worldview): the-fixes START in the-files of that dir and its sub-dirs
   const nIdxDir = aArg.indexOf('--dir');
   const sDirOnly = nIdxDir === -1 ? '' : String(aArg[nIdxDir + 1] ?? '').replace(/\\/g, '/').replace(/\/+$/, '');
@@ -2256,9 +2257,9 @@ async function fMain() {
   }
   const bFix = aArg.includes('--fix');
   const aModeGiven = aModeAll.filter(sMode => aArg.includes('--' + sMode));
-  // a-rule with its own mode runs that mode: --code MvreName01 = --dupname
-  const ooModeOfCode = { MvreName01: 'dupname', MvreName02: 'namecomma', Hvrw08: 'nest', Hvrw07: 'headgap',
-    MvrwSect01: 'missing', MvrwSect03: 'name', MvreMain01: 'mainname', MvrwMain10: 'attribute' };
+  // a-rule with its own mode runs that mode: --code MvreName01_duplicate_line = --dupname
+  const ooModeOfCode = { MvreName01_duplicate_line: 'dupname', MvreName02_comma: 'namecomma', Hvrw08: 'nest', Hvrw07: 'headgap',
+    MvrwSect01_description_miss: 'missing', MvrwSect03_name_miss: 'name', MvreMain01_char: 'mainname', MvrwMain10_attribute: 'attribute' };
   if (sCodeOne) aModeGiven.push(ooModeOfCode[sCodeOne] ?? 'code');
   if (aModeGiven.length > 1) {
     console.error(`${aModeAll.map(sMode => '--' + sMode).join(', ')}, --code are separate runs: give one of them`);
@@ -2292,12 +2293,12 @@ async function fMain() {
     console.log('USAGE: node dirValid/createMcsh.mjs <sNameDir> [--missing|--overview|--undated|--nameid|--headgap|--nest|--mainname|--srtr|--dupname|--namecomma|--attribute|--name|--auto] [--file McshDir000000] [--fix]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  (default)    the-creation-para of evoluting-sections -> their description::');
-    console.log('  --missing    a-description:: with the-run-date for every MvrwSect01-section');
+    console.log('  --missing    a-description:: with the-run-date for every MvrwSect01_description_miss-section');
     console.log('  --code X     with --file or --dir: the-fix of validator rule X (every rule), or NOFIX with why');
     console.log('  --dir D      the-fixes START in the-files of dir D of the-worldview (dirCor), and its sub-dirs');
     console.log('  --all        with --code: every file of the-worldview');
     console.log('  --list L     the-fixes START in the-files and dirs of list L (dirManager/validate.txt)');
-    console.log('  --name       MvrwSect03: a-name:: McshEngl.<heading> for every section without name::');
+    console.log('  --name       MvrwSect03_name_miss: a-name:: McshEngl.<heading> for every section without name::');
     console.log('  --overview   idOverview description:: without × Mcsh-creation gets the-date');
     console.log('               of version.0-1-0 (else the-earliest version) from the-file\'s end');
     console.log('  --undated    EVERY description:: without × Mcsh-creation gets the-run-date');
@@ -2305,11 +2306,11 @@ async function fMain() {
     console.log('  --headgap    the-obvious Hvrw07 heading-gaps (h1 → h3) of Mcsh* and dirStnlaw files;');
     console.log('               law-articles keep their level');
     console.log('  --nest       the-obvious Hvrw08 nesting-errors: a-</section> moved up, same files');
-    console.log('  --mainname   MvreMain01: English main-names (after !⇒) with "-" get "_", the-old form kept as synonym; a-non-English one is skipped');
-    console.log('  --srtr       MvrwId13: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
-    console.log('  --dupname    MvreName01: a-name-line twice in ONE para, the-line without date | info deleted');
-    console.log('  --namecomma  MvreName02: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
-    console.log('  --attribute  MvrwMain10: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
+    console.log('  --mainname   MvreMain01_char: English main-names (after !⇒) with "-" get "_", the-old form kept as synonym; a-non-English one is skipped');
+    console.log('  --srtr       MvrwId13_suffix_srtr: structure-ids get the-suffix srtr, links re-pointed (.last.html only)');
+    console.log('  --dupname    MvreName01_duplicate_line: a-name-line twice in ONE para, the-line without date | info deleted');
+    console.log('  --namecomma  MvreName02_comma: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
+    console.log('  --attribute  MvrwMain10_attribute: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
   console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
     console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
@@ -2348,13 +2349,13 @@ async function fMain() {
     let sCount;
     const nNoteBefore = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length;
     if (sMode === 'srtr') {
-      // the-structure-concepts are what the-VALIDATOR says: MvrwId13
+      // the-structure-concepts are what the-VALIDATOR says: MvrwId13_suffix_srtr
       const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooIdSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwId13'])) {
-        if (oIssue.sCode === 'MvrwId13') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwId13_suffix_srtr'])) {
+        if (oIssue.sCode === 'MvrwId13_suffix_srtr') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
       }
       // 1. the-renames per file
       const ooMapId = {};
@@ -2494,14 +2495,14 @@ async function fMain() {
       sCount = `${nCreate + nInsert + nDelete} paras deleted · ${nCreate} descriptions created · ` +
         `${nInsert} lines inserted`;
     } else if (sMode === 'missing') {
-      // the-sections without description:: are what the-VALIDATOR says: MvrwSect01
+      // the-sections without description:: are what the-VALIDATOR says: MvrwSect01_description_miss
       const sDate = fFindDateLocal();
       const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooIdSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect01'])) {
-        if (oIssue.sCode === 'MvrwSect01') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect01_description_miss'])) {
+        if (oIssue.sCode === 'MvrwSect01_description_miss') (ooIdSect[oIssue.sNameFile] ??= []).push(oIssue.sIdConcept);
       }
       const oPathFile = Object.fromEntries(aoFileHitp.map(oFile => [oFile.sNameFile, oFile.sPathFile]));
       for (const [sNameFile, aIdSect] of Object.entries(ooIdSect).sort()) {
@@ -2520,7 +2521,7 @@ async function fMain() {
       if (!aPathFile.length) throw new Error(`--file ${sNameFileOnly} --dir ${sDirOnly}: no such .last.html file`);
       let aoFileHitpAll = null, aoIssueAll = null, sInheritDone = '';
       if (oFix.sKind === 'inherit') {
-        // MvrwGstr03: the-fixes of inheritMcsh.mjs, ONCE for the-whole worldview (a-generic can be in any file):
+        // MvrwGstr03_inherited_attr: the-fixes of inheritMcsh.mjs, ONCE for the-whole worldview (a-generic can be in any file):
         //   --fix (NN_ of an-inherited attribute), --fix-order (NN order), --fix-name (the-title as name)
         const aArgInherit = [moPath.join(sDirScript, 'inheritMcsh.mjs'), sNameDir,
           ...(bFix ? ['--fix', '--fix-order', '--fix-name'] : []), ...(sNameFileOnly ? ['--file', sNameFileOnly] : [])];
@@ -2532,14 +2533,14 @@ async function fMain() {
         sInheritDone = bFix ? sOut.split('\n').filter(sL => /changed:/.test(sL)).map(sL => sL.trim()).join(' · ') : 'dry-run';
         aLineOut.push(`INHERIT ${bFix ? 'written' : 'dry-run, with --fix it writes'}: see dirValid/inheritMcsh.txt`);
         // the-issues left, ONCE (NOT per file): the-loop below lists them per file
-        aoIssueAll = fFindInheritAttr(sNameDir).map(oI => ({ sCode: 'MvrwGstr03', sNameFile: oI.sNameShort + '.last.html', nLine: oI.nLine, sMessage: oI.sMessage }));
+        aoIssueAll = fFindInheritAttr(sNameDir).map(oI => ({ sCode: 'MvrwGstr03_inherited_attr', sNameFile: oI.sNameShort + '.last.html', nLine: oI.nLine, sMessage: oI.sMessage }));
       }
       if (oFix.sKind === 'link') {
         // a-link's target can be any file: the-whole worldview is parsed ONCE (~40 s)
         aoFileHitpAll = fReadFileAllHitp(sNameDir);
         aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true, [sCodeOne]);
       }
-      // MvrwGstr01: a-specific S can be in any file: every Mcsh file is parsed ONCE and checked together;
+      // MvrwGstr01_gnsp_then_spgn: a-specific S can be in any file: every Mcsh file is parsed ONCE and checked together;
       //   the-jobs are collected per S-file (ooJobGstr) and written after the-files of the-scope
       let ooRawAll = null, oSetHead = null, ooJobGstr = null, oMapHead = null;
       if (['gstr01', 'gstr02'].includes(oFix.sKind)) {
@@ -2550,7 +2551,7 @@ async function fMain() {
         aoIssueAll = fRunChecksMcsh(aoCnptFile, sNameDir, true, [sCodeOne]);
         // the-heads of every generic-tree:: (a-new head must not be one of them)
         oSetHead = new Set();
-        // MvrwGstr02: the-head X:generic → { sFile, sIdB } of its "{B}gntr" para
+        // MvrwGstr02_spgn_then_gnsp: the-head X:generic → { sFile, sIdB } of its "{B}gntr" para
         oMapHead = new Map();
         for (const [sFile, { sRaw }] of ooRawAll)
           for (const aM of sRaw.matchAll(/<p id="([^"]+)gntr">generic-tree::\r?\n\s*<br>\*\s*McshEngl\.(\S+?:generic),/g)) {
@@ -2622,7 +2623,7 @@ async function fMain() {
           }
           return nInPara > 0 && nAll === nInPara;
         };
-        // MvrwMain01: every file's text, read once, for "is X' a-name already"
+        // MvrwMain01_Attrbase: every file's text, read once, for "is X' a-name already"
         let oMapRawAll = null;
         const fIsNameFree = (sNameIn, sIdSectIn) => {
           oMapRawAll ??= new Map(fFindFileAll(sNameDir).map(sPath => [sPath, sPath === sPathFile ? sRaw : moFs.readFileSync(sPath, 'utf8')]));
@@ -2634,9 +2635,9 @@ async function fMain() {
           return nAll === nInPara;
         };
         for (const oIssue of aoIssue) {
-          // MvrwMain02..06: main-name "McshEngl.X"; MvrwMain01: main-name "X"
+          // MvrwMain02..06: main-name "McshEngl.X"; MvrwMain01_Attrbase: main-name "X"
           const sMain = oIssue.sMessage.match(/main-name "(?:McshEngl\.)?([^"]+)"/)?.[1];
-          if (sCodeOne === 'MvrwMain01') {
+          if (sCodeOne === 'MvrwMain01_Attrbase') {
             // B + the-rest after the-concept's main-name W: bodyHumn'16_weight (W bodyHumn, B Hmbd) → Hmbdweight
             const [, sBase, sMainCnpt] = oIssue.sMessage.match(/the-Attrbase "([^"]+)" of concept "([^"]*)"/) ?? [];
             if (!sMain || !sBase || oIssue.sMessage.includes('has no alias')) {
@@ -2662,7 +2663,7 @@ async function fMain() {
             oMapMain.set(`Engl|${sMain}`, sMainNew);
             continue;
           }
-          // MvrwMain05 leaf: the-main-name is removed, not renamed
+          // MvrwMain05_infrsc leaf: the-main-name is removed, not renamed
           if (oIssue.sMessage.startsWith('infrsc_info_resource_leaf')) {
             fSkipMain(oIssue, `"${sMain}" of a-section without subsections is not needed`);
             continue;
@@ -2758,7 +2759,7 @@ async function fMain() {
         }
       }
       }   // the-files
-      // MvrwGstr01: each S-file, MvrwGstr02: each G-file, read as it is now (an-earlier write of this run included)
+      // MvrwGstr01_gnsp_then_spgn: each S-file, MvrwGstr02_spgn_then_gnsp: each G-file, read as it is now (an-earlier write of this run included)
       for (const [sFileOne, aJob] of ooJobGstr ?? []) {
         const oOne = ooRawAll.get(sFileOne);
         if (!oOne) { aLineOut.push(`SKIP   ${sFileOne}  no such Mcsh file`); oCount.SKIP = (oCount.SKIP ?? 0) + 1; continue; }
@@ -2777,13 +2778,13 @@ async function fMain() {
         (oCount.NOFIX ? ' · no automatic fix' : '');
       if (oFix.sKind === 'inherit') sCount = `${sCodeOne}: inheritMcsh ${sInheritDone} · ${nIssue} issues left, by hand`;
     } else if (sMode === 'name') {
-      // the-sections without name:: are what the-VALIDATOR says: MvrwSect03
+      // the-sections without name:: are what the-VALIDATOR says: MvrwSect03_name_miss
       const aoFileHitp = fListMcshSome();
       const aoCnptFile = await Promise.all(aoFileHitp.map(oFile =>
         fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile))));
       const ooSect = {};
-      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect03'])) {
-        if (oIssue.sCode === 'MvrwSect03') {
+      for (const oIssue of fRunChecksMcsh(aoCnptFile, sNameDir, true, ['MvrwSect03_name_miss'])) {
+        if (oIssue.sCode === 'MvrwSect03_name_miss') {
           (ooSect[oIssue.sNameFile] ??= []).push({ sIdSect: oIssue.sIdConcept, sTitle: oIssue.sConcept });
         }
       }
@@ -2796,11 +2797,11 @@ async function fMain() {
       }
       sCount = `${oCount.NAME ?? 0} names created`;
     } else if (sMode === 'attribute') {
-      // the-attribute issues are what the-VALIDATOR says: MvrwMain10, file by file
+      // the-attribute issues are what the-VALIDATOR says: MvrwMain10_attribute, file by file
       for (const oFile of fListMcshSome()) {
         const sRaw = moFs.readFileSync(oFile.sPathFile, 'utf8');
-        const aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile), sRaw)], sNameDir, true, ['MvrwMain10'])
-          .filter(oIssue => oIssue.sCode === 'MvrwMain10' && oIssue.sNameFile === oFile.sNameFile);
+        const aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, oFile.sPathFile), sRaw)], sNameDir, true, ['MvrwMain10_attribute'])
+          .filter(oIssue => oIssue.sCode === 'MvrwMain10_attribute' && oIssue.sNameFile === oFile.sNameFile);
         if (aoIssue.length) fWriteFile(oFile.sPathFile, sRaw, fShort(oFile.sPathFile), fPlanAttribute(sRaw, fShort(oFile.sPathFile), aoIssue));
       }
       sCount = `${oCount.ATTR ?? 0} attribute titles|names fixed · ${oCount.SKIP ?? 0} by hand`;

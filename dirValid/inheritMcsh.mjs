@@ -666,7 +666,7 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
       if (!/^[^\s,!<>~()'"]+$/.test(sWord) || !/^[^\s,!<>~()'"]+$/.test(sOf)) {
         aoHand.push({ oNode, sWhy: 'the-title is NOT a-name' }); continue;
       }
-      // a-formal-name has "_" for space and hyphen (MvrwName01)
+      // a-formal-name has "_" for space and hyphen (MvrwName01_formal)
       const fFormal = fFormalMvrwName01;
       const sOfF = fFormal(sOf), sWordF = fFormal(sWord);
       const sTn = `${sOfF}'${oNode.sNum}_${sWordF}`, sPlain = `${sOfF}'${sWordF}`;
@@ -754,14 +754,14 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
           sPara = sPara.replace(oMainNow.sRaw, sRawNew);
           aChange.push(`${sMain} !=${sTn}` + (sDescOld ? ` (was !=${sDescOld})` : ''));
           // the-old description stays a-name
-          // a-formal old description (X'y, X.y …) as a-name gets "_" for hyphen (MvrwName01)
+          // a-formal old description (X'y, X.y …) as a-name gets "_" for hyphen (MvrwName01_formal)
           const sDescName = /['.:;\/]/.test(sDescOld.replace(/\{[^}]*\}|\([^)]*\)/g, ''))
             ? fFormal(sDescOld) : sDescOld;
           if (sDescName && !fFind(sDescName) && sDescName !== sTn) fInsert(`${sDescName}!⇒${sMain}`, sRawNew);
         }
         // the-plain attr-name
         if (!fFind(sPlain) && fFree(sPlain)) fInsert(`${sPlain}!⇒${sMain}`, fFind(sTn).sRaw);
-        // MvrwMain11: "X'NN_y!⇒Main" first, "Main!=X'NN_y" second
+        // MvrwMain11_line: "X'NN_y!⇒Main" first, "Main!=X'NN_y" second
         const aoNow = fLines();
         const oTnL = fFind(sTn), oMainL = fFind(sMain);
         if (aoNow[0] !== undefined && (aoNow[0].sRaw !== oTnL.sRaw || aoNow[1]?.sRaw !== oMainL.sRaw)) {
@@ -1018,7 +1018,7 @@ function fMain() {
 }
 
 /**
- * DOING: MvrwGstr03 inherited_attr of structuralMcsh.js: the-issues of the-inheritance-rules
+ * DOING: MvrwGstr03_inherited_attr inherited_attr of structuralMcsh.js: the-issues of the-inheritance-rules
  *   (INH-NONUM, INH-WRONGNUM, INH-OWNNUM, INH-TITLENAME, INH-TITLEHAND) of a-worldview.
  * OUTPUT: [{ sNameShort, nLine, sTitle, sMessage }]
  */
