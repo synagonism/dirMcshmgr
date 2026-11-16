@@ -93,6 +93,9 @@
  *   a-space | hyphen gets "_" in place (X'a-b → X'a_b); an-old spelling "X'a-b!⇒X'a_b" and a-doubled
  *   line are deleted. It SKIPS a-main-name (a "!⇒" target): --mainname renames those.
  *
+ *   --code MvrwMain11: the-Mmn M goes on the-first line of its name::: "M," | "D!⇒M," then "M!=D,"
+ *   ("D!⇒M," is written when missing); the-other lines keep their order.
+ *
  *   --name: the-fix of MvrwSect03: a-section without name:: gets a-name::-para with
  *   McshEngl.<its heading>, after its description::. It SKIPS a-heading with "," or "!".
  *
@@ -112,10 +115,16 @@ import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh, fFormalMvrwName01 } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
 import { fReadListValidate } from './listValidate.js'
+import { execFileSync } from 'child_process'
+import { fFindInheritAttr } from './inheritMcsh.mjs'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-40-0.2026-11-16: MvrwId01 fix: space \' - . to "_"',
+    'createMcsh.mjs.0-39-0.2026-11-16: MvrwId01 id_char fix (look-alike letters, space and "-" to "_"), MvrwId03 removed',
+    'createMcsh.mjs.0-38-0.2026-11-16: --code MvrwGstr03 runs inheritMcsh.mjs ONCE (--fix --fix-order --fix-name), not per file',
+    'createMcsh.mjs.0-37-0.2026-11-16: --code MvrwMain11: the-Mmn on the-first name-line (M, or D!⇒M then M!=D)',
     'createMcsh.mjs.0-36-0.2026-11-13: --dupname (MvreName01): of a-name-line written twice, the-line with a-date | info stays, the-line without is deleted',
     'createMcsh.mjs.0-35-0.2026-11-12: --code MvrwName01: a-formal-name | formal title with a-space | hyphen gets "_"',
     'createMcsh.mjs.0-34-0.2026-11-12: --attribute (in --auto) and --code MvrwMain10: the-clear attribute | specific titles and their formal names',
@@ -167,6 +176,7 @@ const
     ATTR:     'MvrwMain10: an-attribute | specific title set to "x of M" | "M.x" and its formal name M\x27x | M.x added',
     FORMAL:   'MvrwName01: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted',
     NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03, MvrwSect04): check the-name',
+    INHERIT:  'MvrwGstr03: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary',
     NOFIX:    'no automatic fix for this rule: it needs you',
     NOISSUE:  'the-rule has no issue in the-file',
     IDNEW:    'an-id renamed (MvrwId01..13), with its own ids; links re-pointed in every file',
@@ -1231,9 +1241,13 @@ const oLetterLatin = {
 // the-fix of each rule: sKind idmap (rename ids, re-point links in every file), line
 // (edits in the-file), main (rename main-names), none (sWhy: it needs you)
 const ooFixCode = {
-  MvrwId01: { sKind: 'idmap', fIdNew: sId => { const s = [...sId].map(sC => oLetterLatin[sC] ?? sC).join(''); return /^[A-Za-z0-9_:.-]+$/.test(s) ? s : null; } },
+  // MvrwId01 id_char: look-alike letters to Latin; space ' - . to "_" ("vs._out" → "vs_out",
+  //   a-"__" made by IT becomes "_"); any other character needs you
+  MvrwId01: { sKind: 'idmap', fIdNew: sId => {
+    let s = [...sId.trim()].map(sC => oLetterLatin[sC] ?? sC).join('').replace(/[\s'.-]+/g, '_');
+    if (!sId.includes('__')) s = s.replace(/_{2,}/g, '_');
+    return /^[A-Za-z0-9_]+$/.test(s) ? s : null; } },
   MvrwId02: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'dong', ['dngFT', 'dngF', 'dng', 'doing']) },
-  MvrwId03: { sKind: 'idmap', fIdNew: sId => sId.trim().replace(/\s+/g, '_') },
   MvrwId04: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'eval', ['evaluation', 'evaln', 'evln', 'eln']) },
   MvrwId05: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'evog', ['evoluting', 'evolg', 'evltg', 'evlg', 'evg', 'Evg']) },
   MvrwId06: { sKind: 'idmap', fIdNew: sId => fFindIdSuffix(sId, 'irsc', ['resource', 'infrsc', 'ircs', 'rsc']) },
@@ -1266,12 +1280,14 @@ const ooFixCode = {
   MvrwMain06: { sKind: 'main', sSuffix: 'srtr' },
   MvrwMain07: { sKind: 'line', fPlan: (...a) => fPlanAttrbase(...a) },
   MvrwMain10: { sKind: 'line', fPlan: (...a) => fPlanAttribute(...a) },
+  MvrwMain11: { sKind: 'line', fPlan: (...a) => fPlanMainLine(...a) },
   MvrwName01: { sKind: 'line', fPlan: (...a) => fPlanFormal(...a) },
   MvrwMisc01: { sKind: 'line', fPlan: (...a) => fPlanDate(...a) },
   MvreFile01: { sKind: 'none', sWhy: 'a-file without <section id="idOverview">: write its overview, description:: and name::, by hand' },
   MvrwSect02: { sKind: 'none', sWhy: 'an-empty description:: needs its text: write it by hand' },
   MvrwGstr01: { sKind: 'gstr01', sWhy: 'which generic-chain the-specific belongs to is a-choice: add it to its generic-tree:: by hand' },
-  MvrwGstr02: { sKind: 'gstr02', sWhy: 'its generic is not a-generic-tree:: name (X:generic) or not found: add it by hand' }
+  MvrwGstr02: { sKind: 'gstr02', sWhy: 'its generic is not a-generic-tree:: name (X:generic) or not found: add it by hand' },
+  MvrwGstr03: { sKind: 'inherit', sWhy: 'left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::' }
 };
 
 /**
@@ -1770,6 +1786,68 @@ function fPlanAttribute(sRawIn, sNameShortIn, aoIssueIn) {
       }
     }
     aoNote.push(`ATTR   ${sLoc}  #${sId}  "${sTitle}"${sTitleNew !== sTitle ? ` → "${sTitleNew}"` : ''}  + McshEngl.${sNameNew}`);
+  }
+  return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
+}
+
+/**
+ * DOING: MvrwMain11: the-Mmn M goes on the-FIRST line of its name::-para:
+ *   a) "M," (no descriptive-name): its line moves first;
+ *   b) "M!=D,": the-line "D!⇒M," moves first (it is written when missing) and the-M line second.
+ *   The-other lines keep their order. SKIPPED: a-message not understood, a-line not found.
+ */
+function fPlanMainLine(sRawIn, sNameShortIn, aoIssueIn) {
+  const aLine = sRawIn.split('\n');
+  const aoEdit = [];
+  const aoNote = [];
+  const rLineName = /^(\s*)<br>\*\s*(Mcsh[A-Z][a-z]+)\.([^,]*),/;
+  const oSetPara = new Set();
+  for (const oIssue of aoIssueIn) {
+    const sLoc = `${sNameShortIn}:${oIssue.nLine ?? '?'}`;
+    const aMsg = /^line: the-Mmn "(.+?)" is NOT on the-first name-line \(now: .*\): the-first name-line is "(.+?)"(?:, the-second "(.+?)")?$/.exec(oIssue.sMessage ?? '');
+    if (!aMsg) { aoNote.push(`SKIP   ${sLoc}  MvrwMain11: message not understood`); continue; }
+    const [, sMmn, sFirst, sSecond] = aMsg;
+    const nL = (oIssue.nLine ?? 0) - 1;
+    // the-name-lines of its para
+    let nOpen = nL; while (nOpen > 0 && !/name::/.test(aLine[nOpen])) nOpen--;
+    let nClose = nL; while (nClose < aLine.length - 1 && !aLine[nClose].includes('</p>')) nClose++;
+    if (nL < 0 || !/name::/.test(aLine[nOpen] ?? '') || oSetPara.has(nOpen)) { aoNote.push(`SKIP   ${sLoc}  ${sMmn}: its name::-para not found`); continue; }
+    const aoName = [];
+    for (let nN = nOpen; nN <= nClose; nN++) {
+      const aM = rLineName.exec(aLine[nN].replace(/^.*?name::/, ''));
+      if (aM) aoName.push({ nN, sIndent: aM[1], sLago: aM[2], sBody: aM[3].trim() });
+    }
+    if (!aoName.length) { aoNote.push(`SKIP   ${sLoc}  ${sMmn}: no name-line`); continue; }
+    const nFirst = aoName[0].nN;
+    if (nFirst === nOpen) { aoNote.push(`SKIP   ${sLoc}  ${sMmn}: a-name-line on the-name:: line itself: by hand`); continue; }
+    // the-M line: its body is M, or starts "M!" without "!⇒"
+    const fIsMmn = o => o.sBody.split('!')[0].trim() === sMmn && !/!⇒/.test(o.sBody);
+    const oMmn = aoName.find(fIsMmn);
+    if (!oMmn) { aoNote.push(`SKIP   ${sLoc}  ${sMmn}: its line not found`); continue; }
+    const aMove = [];   // the-new first lines, as text
+    const oSetDel = new Set([oMmn.nN]);
+    if (!sSecond) {
+      aMove.push(aLine[oMmn.nN]);
+    } else {
+      const sCr = /\r$/.test(aLine[oMmn.nN]) ? '\r' : '';
+      // a-formal D (X'y, X.y …) as a-name gets "_" for space | hyphen (MvrwName01), in "M!=D" too
+      const sDesc = sFirst.slice(0, -('!⇒' + sMmn).length);
+      const sDescNew = /['.:;\/]/.test(sDesc.replace(/\{[^}]*\}|\([^)]*\)/g, '')) ? fFormalMvrwName01(sDesc) : sDesc;
+      // its line "D!⇒M" (or "D," that gets "!⇒M"), else a-new one
+      const oDesc = aoName.find(o => o.sBody === `${sDescNew}!⇒${sMmn}`)
+        ?? aoName.find(o => o.sBody === sDescNew && o !== oMmn);
+      if (oDesc) {
+        aMove.push(oDesc.sBody === sDescNew ? aLine[oDesc.nN].replace(`.${sDescNew},`, () => `.${sDescNew}!⇒${sMmn},`) : aLine[oDesc.nN]);
+        oSetDel.add(oDesc.nN);
+      } else aMove.push(`${aoName[0].sIndent}<br>* ${oMmn.sLago}.${sDescNew}!⇒${sMmn},${sCr}`);
+      aMove.push(aLine[oMmn.nN].replace(`!=${sDesc}`, () => `!=${sDescNew}`));
+    }
+    const nLast = Math.max(...oSetDel);
+    const aBlock = [];
+    for (let nN = nFirst; nN <= nLast; nN++) if (!oSetDel.has(nN)) aBlock.push(aLine[nN]);
+    aoEdit.push({ nAt: nFirst, nDel: nLast - nFirst + 1, aIns: [...aMove, ...aBlock] });
+    oSetPara.add(nOpen);
+    aoNote.push(`MAIN   ${sNameShortIn}:${nFirst + 1}  ${sMmn}: first "${sFirst}"${sSecond ? `, second "${sSecond}"` : ''}`);
   }
   return { aoEdit, aoNote, sRawNew: fApplyEdit(aLine, aoEdit) };
 }
@@ -2440,7 +2518,22 @@ async function fMain() {
       const nNoteFix = aLineOut.length;
       const aPathFile = fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath));
       if (!aPathFile.length) throw new Error(`--file ${sNameFileOnly} --dir ${sDirOnly}: no such .last.html file`);
-      let aoFileHitpAll = null, aoIssueAll = null;
+      let aoFileHitpAll = null, aoIssueAll = null, sInheritDone = '';
+      if (oFix.sKind === 'inherit') {
+        // MvrwGstr03: the-fixes of inheritMcsh.mjs, ONCE for the-whole worldview (a-generic can be in any file):
+        //   --fix (NN_ of an-inherited attribute), --fix-order (NN order), --fix-name (the-title as name)
+        const aArgInherit = [moPath.join(sDirScript, 'inheritMcsh.mjs'), sNameDir,
+          ...(bFix ? ['--fix', '--fix-order', '--fix-name'] : []), ...(sNameFileOnly ? ['--file', sNameFileOnly] : [])];
+        const sOut = execFileSync(process.execPath, aArgInherit, { encoding: 'utf8', maxBuffer: 1 << 26 });
+        for (const sLine of sOut.split('\n')) {
+          if (/titles changed|paragraphs changed|INH-(NONUM|WRONGNUM|OWNNUM|ORDER|TITLENAME|TITLEHAND) /.test(sLine))
+            aLineOut.push(`INHERIT ${sLine.trim()}`);
+        }
+        sInheritDone = bFix ? sOut.split('\n').filter(sL => /changed:/.test(sL)).map(sL => sL.trim()).join(' · ') : 'dry-run';
+        aLineOut.push(`INHERIT ${bFix ? 'written' : 'dry-run, with --fix it writes'}: see dirValid/inheritMcsh.txt`);
+        // the-issues left, ONCE (NOT per file): the-loop below lists them per file
+        aoIssueAll = fFindInheritAttr(sNameDir).map(oI => ({ sCode: 'MvrwGstr03', sNameFile: oI.sNameShort + '.last.html', nLine: oI.nLine, sMessage: oI.sMessage }));
+      }
       if (oFix.sKind === 'link') {
         // a-link's target can be any file: the-whole worldview is parsed ONCE (~40 s)
         aoFileHitpAll = fReadFileAllHitp(sNameDir);
@@ -2489,7 +2582,7 @@ async function fMain() {
 
       if (aoIssue.length === 0) {
         aLineOut.push(`NOISSUE ${sNameShort}  ${sCodeOne}: nothing to fix`);
-      } else if (oFix.sKind === 'none') {
+      } else if (oFix.sKind === 'none' || oFix.sKind === 'inherit') {
         aLineOut.push(`NOFIX  ${sNameShort}  ${sCodeOne} (${aoIssue.length}): ${oFix.sWhy}`);
       } else if (oFix.sKind === 'line') {
         fWriteFile(sPathFile, sRaw, sNameShort, oFix.fPlan(sRaw, sNameShort, aoIssue, sNameDir));
@@ -2679,9 +2772,10 @@ async function fMain() {
         const sKind = sNote.split(' ')[0];
         if (['NOISSUE', 'NOFIX'].includes(sKind)) oCount[sKind] = (oCount[sKind] ?? 0) + 1;
       }
-      const nChange = aLineOut.slice(nNoteFix).filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|LINK )/.test(sLine)).length;
+      const nChange = aLineOut.slice(nNoteFix).filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|LINK |INHERIT )/.test(sLine)).length;
       sCount = `${sCodeOne}: ${nIssue} issues · ${nChange} fixed` +
         (oCount.NOFIX ? ' · no automatic fix' : '');
+      if (oFix.sKind === 'inherit') sCount = `${sCodeOne}: inheritMcsh ${sInheritDone} · ${nIssue} issues left, by hand`;
     } else if (sMode === 'name') {
       // the-sections without name:: are what the-VALIDATOR says: MvrwSect03
       const aoFileHitp = fListMcshSome();

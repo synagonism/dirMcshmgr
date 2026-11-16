@@ -29,9 +29,8 @@
  *  MvreName02  name_comma: a-name-line ends its name with a-comma (ERROR without one, createMcsh adds it;
  *              WARN with a-comma in the-middle: after the-comma all is a-comment)
  *
- *  MvrwId01 non-english-letters: id="..." has a letter outside A-Z a-z
+ *  MvrwId01 id_char: id="..." or href="...#..." has a character outside A-Z a-z 0-9 _
  *  MvrwId02 dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" CnptSect does not end in "dong"
- *  MvrwId03 space_in_id: id="..." or href="#..." has a space
  *  MvrwId04 eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" CnptSect does not end in "eval"
  *  MvrwId05 evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" CnptSect does not end in "evog"
  *  MvrwId06 irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" CnptSect does not end in "irsc"
@@ -72,6 +71,9 @@
  *  MvrwMain10 attribute: a-direct part-section of a-concept with main-name M is not
  *             "x of M" + name "M'x" (attribute, x small first unless short: BMI) or "M.x" + name "M.x" (specific)
  *
+ *  MvrwMain11 line: the-Mmn (main-mind-name) is on the-FIRST line of name::, "M," alone, or
+ *             "D!⇒M," first and "M!=D," second (D the-descriptive-name)
+ *
  *  MvrwName01 formal: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) of a-name::-para or a-formal title
  *             has no space and no hyphen; fix: "_" in their place (X'a-b → X'a_b); dirUcd is not checked
  *
@@ -81,15 +83,22 @@
  *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
  *             In "generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
  *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
- * 
+ *  MvrwGstr03 inherited_attr: inherited-attributes are numbered-attributes; own attributes are numbered
+ *             AFTER the-last number of the-inherited-attr-chain; a-chain-attribute can change its name
+ *             but not its number; the-title "NN_x of M" is the-descriptive-name "M'NN_x" (inheritMcsh.mjs)
+ *
  *  MvrwMisc01  dates not in {YYYY-MM-DD} format
  */
 
 import { fStripTags } from './parserMcsh.js';
+import { fFindInheritAttr } from './inheritMcsh.mjs';
 import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-73-0.2026-11-16: MvrwId01 id_char (only A-Z a-z 0-9 _, ids and links), MvrwId03 removed',
+    'structuralMcsh.js.0-72-0.2026-11-16: MvrwMain11 line: the-Mmn on the-first name-line (M, or D!⇒M then M!=D)',
+    'structuralMcsh.js.0-71-0.2026-11-16: MvrwGstr03 inherited_attr (inheritMcsh.mjs fFindInheritAttr)',
     'structuralMcsh.js.0-61-0.2026-11-16: MvrwMain10 compares the-names like the-title, without (…) and {…}',
     'structuralMcsh.js.0-60-0.2026-11-16: fRefs reads every Mcsh file-stem (word-index pages McshWrdidxElln01alfa_1)',
     'structuralMcsh.js.0-59-0.2026-11-16: MvrwGstr01 names G by its specific-tree head "X.specific" (was "X:generic")',
@@ -491,19 +500,24 @@ function fCheckDate(aoCnptFile) {
   return aoIssue;
 }
 
-// 🔶 [MvrwId01] non-english-letters: an-id has a-letter outside A-Z a-z (Greek Η, é, µ ...)
+// 🔶 [MvrwId01] id_char: an-id="..." or the-#id of a-link href="...#..." (NOT http) has
+//   a-character outside A-Z a-z 0-9 _ (a-dash, a-space, Greek Η, é, ', . ...).
 //   a-Greek Η looks like a-Latin H, but it is another id, so links to IT break silently.
-//   only letters are judged, NOT punctuation.
-function fCheckIdLetter(aoCnptFile) {
+function fCheckIdChar(aoCnptFile) {
   const aoIssue = [];
-  const rLetterNoEngl = /[^\P{L}A-Za-z]/gu;
+  const rCharNo = /[^A-Za-z0-9_]/g;
+  const fShow = aChar => [...new Set(aChar)].map(sC => /\s/.test(sC) ? 'SPACE' : sC).join('');
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
     for (const [sId, nLine] of oCnptFile.oMapIdLine ?? []) {
-      const aLetter = sId.match(rLetterNoEngl);
-      if (!aLetter) continue;
-      aoIssue.push(fIssue('WARN', 'MvrwId01', oCnptFile.sNameFile, null,
-        `non-english-letters [${[...new Set(aLetter)].join('')}] in id="${sId}"`, nLine));
+      const aChar = sId.match(rCharNo);
+      if (aChar) aoIssue.push(fIssue('WARN', 'MvrwId01', oCnptFile.sNameFile, null,
+        `id_char: [${fShow(aChar)}] in id="${sId}", only A-Z a-z 0-9 _`, nLine));
+    }
+    for (const [sId, nLine] of oCnptFile.oMapLinkLine ?? []) {
+      const aChar = sId.match(rCharNo);
+      if (aChar) aoIssue.push(fIssue('WARN', 'MvrwId01', oCnptFile.sNameFile, null,
+        `id_char: [${fShow(aChar)}] in href="#${sId}", only A-Z a-z 0-9 _`, nLine));
     }
   }
   return aoIssue;
@@ -1384,22 +1398,61 @@ function fCheckGstrGenericSpecific(aoCnptFile) {
   return aoIssue;
 }
 
-// 🔶 [MvrwId03] space_in_id: an-id="..." or a-link href="...#..." (NOT http) has a-space
-//   (any whitespace), the-browser can-not reach IT.
-function fCheckIdSpace(aoCnptFile) {
+// 🔶 [MvrwMain11] line: the-Mmn (main-mind-name) is on the-FIRST line of name::
+//   a) "M," : the-main-name only (no descriptive-name), first;
+//   b) "D!⇒M," first and "M!=D," second (D the-descriptive-name).
+//   A-concept without Mmn is skipped.
+function fCheckMainNameLine(aoCnptFile) {
   const aoIssue = [];
+  const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   for (const oCnptFile of aoCnptFile) {
     if (oCnptFile.sError) continue;
-    for (const [sId, nLine] of oCnptFile.oMapIdLine ?? []) {
-      if (/\s/.test(sId)) aoIssue.push(fIssue('WARN', 'MvrwId03', oCnptFile.sNameFile, null,
-        `space_in_id: id="${sId}" has a-space`, nLine));
-    }
-    for (const [sId, nLine] of oCnptFile.oMapLinkLine ?? []) {
-      if (/\s/.test(sId)) aoIssue.push(fIssue('WARN', 'MvrwId03', oCnptFile.sNameFile, null,
-        `space_in_id: href="#${sId}" has a-space`, nLine));
+    for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
+      const sMmn = oCnpt?.sNameMainFrml;
+      if (!sMmn) continue;
+      const oParaName = oCnpt.sType === 'CnptFile'
+        ? (oCnptFile.aoTitlePara ?? []).find(oPara => oPara.sNameTitle === 'name')
+        : fFindParaAll(oCnpt, 'name')[0];
+      if (!oParaName) continue;
+      const nLinePara = oCnptFile.oMapIdLine.get(oParaName.sNameId) ?? null;
+      // the-name-lines "<br>* McshXxxx.body,", body without the-final comma
+      const aoLineName = String(oParaName.sPara ?? '').split('\n')
+        .map((sLine, nOffset) => ({ aM: /^<br>\*\s*Mcsh[A-Z][a-z]+\.([^,]*),/.exec(sLine.trim()), nOffset }))
+        .filter(o => o.aM).map(o => ({ sBody: o.aM[1].trim(), nOffset: o.nOffset }));
+      if (!aoLineName.length) continue;
+      const fBase = sBody => sBody.split('!')[0].trim();
+      const oLineMmn = aoLineName.find(o => fBase(o.sBody) === sMmn && !/!⇒/.test(o.sBody));
+      if (!oLineMmn) continue;
+      const sDesc = (/!=([^!]+)/.exec(oLineMmn.sBody) ?? [])[1]?.trim() ?? '';
+      const [oL1, oL2] = aoLineName;
+      let sWant = '';
+      if (!sDesc) {
+        if (oL1 !== oLineMmn) sWant = `the-first name-line is "${sMmn}"`;
+      } else {
+        const bL1 = new RegExp(`^${fEsc(sDesc)}!⇒${fEsc(sMmn)}$`).test(oL1.sBody);
+        if (!bL1 || oL2 !== oLineMmn) sWant = `the-first name-line is "${sDesc}!⇒${sMmn}", the-second "${sMmn}!=${sDesc}"`;
+      }
+      if (!sWant) continue;
+      aoIssue.push(fIssue('WARN', 'MvrwMain11', oCnptFile.sNameFile, oCnpt,
+        `line: the-Mmn "${sMmn}" is NOT on the-first name-line (now: "${oL1.sBody}"): ${sWant}`,
+        nLinePara != null ? nLinePara + oL1.nOffset : null));
     }
   }
   return aoIssue;
+}
+
+// 🔶 [MvrwGstr03] inherited_attr: the-inheritance of numbered attributes (inheritMcsh.mjs):
+//   - an-inherited attribute is numbered: it takes the-NN_ of the-chain-attribute it refines;
+//   - an-own attribute is numbered AFTER the-last number of the-inherited-attr-chain;
+//   - a-chain-attribute can change its name, NOT its number;
+//   - the-title "02_valence of relation" is the-descriptive-name "relation'02_valence" of the-attribute.
+//   It reads the-whole worldview (a-generic may be in another file), reports on aoCnptFile only.
+function fCheckInheritAttr(aoCnptFile, sPathDir) {
+  if (!sPathDir) return [];
+  const oSetFile = new Set(aoCnptFile.filter(o => !o.sError).map(o => o.sNameFile));
+  return fFindInheritAttr(sPathDir)
+    .filter(oI => oSetFile.has(oI.sNameShort + '.last.html'))
+    .map(oI => fIssue('WARN', 'MvrwGstr03', oI.sNameShort + '.last.html', null, oI.sMessage, oI.nLine));
 }
 
 function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
@@ -1416,9 +1469,8 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwSect01', 'MvrwSect02'], sLabel: '   MvrwSect01/MvrwSect02 Section descriptions... ', fCheck: () => fCheckDescription(aoCnptFile) },
     { aCode: ['MvrwSect03', 'MvrwSect04'], sLabel: '   MvrwSect03/MvrwSect04 Section names... ', fCheck: () => fCheckName(aoCnptFile) },
     { aCode: ['MvrwMisc01'], sLabel: '   MvrwMisc01    Dates... ', fCheck: () => fCheckDate(aoCnptFile) },
-    { aCode: ['MvrwId01'], sLabel: '   MvrwId01  Ids non-english-letters... ', fCheck: () => fCheckIdLetter(aoCnptFile) },
+    { aCode: ['MvrwId01'], sLabel: '   MvrwId01  Ids id_char... ', fCheck: () => fCheckIdChar(aoCnptFile) },
     { aCode: ['MvrwId02'], sLabel: '   MvrwId02  Ids dong_DOING_suffix... ', fCheck: () => fCheckIdDong(aoCnptFile) },
-    { aCode: ['MvrwId03'], sLabel: '   MvrwId03  Ids space_in_id... ', fCheck: () => fCheckIdSpace(aoCnptFile) },
     { aCode: ['MvrwId04'], sLabel: '   MvrwId04  Ids eval_evaluation_suffix... ', fCheck: () => fCheckIdEval(aoCnptFile) },
     { aCode: ['MvrwId05'], sLabel: '   MvrwId05  Ids evog_evoluting_suffix... ', fCheck: () => fCheckIdEvog(aoCnptFile) },
     { aCode: ['MvrwId06'], sLabel: '   MvrwId06  Ids irsc_info_resource_suffix... ', fCheck: () => fCheckIdIrsc(aoCnptFile) },
@@ -1431,6 +1483,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwId13'], sLabel: '   MvrwId13  Ids srtr_structure_suffix... ', fCheck: () => fCheckIdSrtr(aoCnptFile) },
     { aCode: ['MvrwGstr01'], sLabel: '   MvrwGstr01 gnsp_then_spgn... ', fCheck: () => fCheckGstrSpecificGeneric(aoCnptFile) },
     { aCode: ['MvrwGstr02'], sLabel: '   MvrwGstr02 spgn_then_gnsp... ', fCheck: () => fCheckGstrGenericSpecific(aoCnptFile) },
+    { aCode: ['MvrwGstr03'], sLabel: '   MvrwGstr03 inherited_attr... ', fCheck: () => fCheckInheritAttr(aoCnptFile, sPathDir) },
     { aCode: ['MvrwMain01'], sLabel: '   MvrwMain01 Main-names Attrbase... ', fCheck: () => fCheckMainNameAttrbaseBegin(aoCnptFile) },
     { aCode: ['MvrwMain02'], sLabel: '   MvrwMain02 Main-names evolg_evoluting... ', fCheck: () => fCheckMainNameEvolg(aoCnptFile) },
     { aCode: ['MvrwMain03'], sLabel: '   MvrwMain03 Main-names evaln_evaluation, evalg_evaluating... ', fCheck: () => fCheckMainNameEvalg(aoCnptFile) },
@@ -1441,6 +1494,7 @@ function fRunChecksMcsh(aoCnptFile, sPathDir, bQuietIn = false, aCodeIn = []) {
     { aCode: ['MvrwMain08'], sLabel: '   MvrwMain08 Main-names mmn_attr... ', fCheck: () => fCheckMmnAttr(aoCnptFile) },
     { aCode: ['MvrwMain09'], sLabel: '   MvrwMain09 Main-names human_main... ', fCheck: () => fCheckMainNameHuman(aoCnptFile) },
     { aCode: ['MvrwMain10'], sLabel: '   MvrwMain10 Main-names attribute... ', fCheck: () => fCheckAttribute(aoCnptFile) },
+    { aCode: ['MvrwMain11'], sLabel: '   MvrwMain11 Main-names line... ', fCheck: () => fCheckMainNameLine(aoCnptFile) },
     { aCode: ['MvrwName01'], sLabel: '   MvrwName01 Names formal... ', fCheck: () => fCheckFormal(aoCnptFile) },
   ];
   for (const oCheck of aoCheck) {

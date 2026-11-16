@@ -1,0 +1,73 @@
+=== id-dash APPLIED {2026-11-16} — "-" -> "_" in ids, their hrefs and !@ references
+  ids: 49035, files changed: 68, replaced: 49036 id="", 48747 href, 3 !@ref
+  broken before: 580 hrefs, 206 !@refs; after: 580 hrefs, 206 !@refs
+=== SKIPPED (0) — the-new id exists already in the-file, left with "-"
+
+=== BROKEN-ID (0) — id with space or < >, left as it is
+
+=== PER-FILE (65)
+  McshCor000018: 8
+  McshEdu000005: 1
+  McshHlth000002: 4
+  McshHlth000003: 9
+  McshHlth000004: 2
+  McshHlth000011: 11
+  McshHlth000013: 2
+  McshLag000010: 46
+  McshLag000011: 70
+  McshLag000022: 2873
+  McshLag000024: 625
+  McshLag000034: 68
+  McshOgm000004: 4
+  McshStn000018: 169
+  McshStn000020: 236
+  McshStn000031: 233
+  McshTchInf000008: 1
+  McshTchInf000012: 70
+  McshTchInf000019: 136
+  McshTchInf000028: 10
+  McshTchInf000036: 6
+  McshTchInf000041: 169
+  McshTchInf000042: 5197
+  McshTchPrgm000002: 249
+  McshTchPrgm000005: 9
+  McshWrdidxElln01alfa_1: 747
+  McshWrdidxElln01alfa_2: 1439
+  McshWrdidxElln01alfa_3: 1139
+  McshWrdidxElln01alfa_4: 1192
+  McshWrdidxElln01alfa_5: 1242
+  McshWrdidxElln02vita: 1376
+  McshWrdidxElln03yama: 1284
+  McshWrdidxElln04dhelta: 1639
+  McshWrdidxElln05epsilon_1: 290
+  McshWrdidxElln05epsilon_2: 1158
+  McshWrdidxElln05epsilon_3: 1362
+  McshWrdidxElln06zita: 362
+  McshWrdidxElln07ita: 300
+  McshWrdidxElln08thita: 558
+  McshWrdidxElln09yxota: 566
+  McshWrdidxElln10kapa_1: 371
+  McshWrdidxElln10kapa_2: 2004
+  McshWrdidxElln10kapa_3: 1751
+  McshWrdidxElln11lamdha: 1136
+  McshWrdidxElln12mi_1: 285
+  McshWrdidxElln12mi_2: 616
+  McshWrdidxElln12mi_3: 736
+  McshWrdidxElln12mi_4: 699
+  McshWrdidxElln12mi_5: 638
+  McshWrdidxElln13ni: 897
+  McshWrdidxElln14ksi: 494
+  McshWrdidxElln15omikron: 1105
+  McshWrdidxElln16pi_1: 242
+  McshWrdidxElln16pi_2: 1625
+  McshWrdidxElln16pi_3: 1750
+  McshWrdidxElln17ro: 707
+  McshWrdidxElln18siyma_1: 261
+  McshWrdidxElln18siyma_2: 1563
+  McshWrdidxElln18siyma_3: 1443
+  McshWrdidxElln19taf: 2087
+  McshWrdidxElln20ipsilon: 846
+  McshWrdidxElln21fi: 1286
+  McshWrdidxElln22hxi: 1116
+  McshWrdidxElln23psi: 403
+  McshWrdidxElln24oméya: 112

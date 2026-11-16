@@ -38,18 +38,22 @@
  * OUTPUT: the-report in dirValid/inheritMcsh.txt, overwritten on every run;
  *   with --fix it writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free.
  * RUN:
- *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--file McshDir000000] [--local 3]
+ *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--file McshDir000000] [--local 3]
  */
 
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
+import { fFormalMvrwName01 } from './structuralMcsh.js'
 import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractContentHrefs }
   from './parserMcsh.js'
 
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-8-0.2026-11-16: fFindInheritAttr remembers its result while the-files are unchanged',
+    'inheritMcsh.mjs.0-7-0.2026-11-16: INH-OWNNUM; fFindInheritAttr exported for MvrwGstr03 inherited_attr of structuralMcsh.js',
+    'inheritMcsh.mjs.0-6-0.2026-11-16: INH-TITLENAME, --fix-name: a-numbered attribute has its title "relation\'02_valence" as name',
     'inheritMcsh.mjs.0-5-0.2026-11-16: a-plain-name generic "* X," resolves as X:generic, else reported in INH-GNTRTEXT',
     'inheritMcsh.mjs.0-4-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'inheritMcsh.mjs.0-3-0.2026-10-19: generic-tree names X_Gntr (was X-Gntr), ":" ends a-text-reference',
@@ -414,7 +418,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
     return sDsn.trim() === '';
   }
 
-  const ooIssue = { 'INH-NONUM': [], 'INH-WRONGNUM': [], 'INH-ORDER': [], 'INH-EMPTY': [], 'INH-GENDUP': [], 'INH-LOCAL': [], 'INH-REFBROKEN': [],
+  const ooIssue = { 'INH-NONUM': [], 'INH-WRONGNUM': [], 'INH-OWNNUM': [], 'INH-ORDER': [], 'INH-EMPTY': [], 'INH-GENDUP': [], 'INH-LOCAL': [], 'INH-REFBROKEN': [],
     'INH-GNTRTEXT': aoGntrText };
   const oCountLocal = {};   // sKeyGen|attr → { oGen, sAttr, aoAttr }
   const oCountRefine = {};  // sKeyGenAttr → { label, nCount }
@@ -426,6 +430,9 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const oGenNum = aoChain.find(fIsNumbered);
     if (!oGenNum) continue;
     const aoSpace = fFindNumSpace(aoChain);
+    // the-last number of the-inherited-attr-chain
+    const oSpaceLast = aoSpace.reduce((oMax, oS) => !oMax || Number(oS.oGenAttr.sNum) > Number(oMax.oGenAttr.sNum) ? oS : oMax, null);
+    const nNumLast = oSpaceLast ? Number(oSpaceLast.oGenAttr.sNum) : 0;
     nSpecific++;
     // the-order key of an-attribute: its OWN NN as the-reader sees it, else its generic's NN
     const aoOrder = [];
@@ -445,7 +452,12 @@ function fCheck(aoFileIn, nLocalMinIn) {
       nAttrSpec++;
       const oMatch = fMatchAttr(oAttr, aoSpace);
       if (!oMatch) {
-        if (oAttr.sNum) { aoOrder.push({ oAttr, sNum: oAttr.sNum }); continue; }   // own number: the-author decided
+        if (oAttr.sNum) {
+          // an-own attribute is numbered AFTER the-last number of the-inherited-attr-chain
+          if (Number(oAttr.sNum) <= nNumLast) ooIssue['INH-OWNNUM'].push({ oAttr, sNumLast: String(nNumLast).padStart(2, '0'),
+            sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) });
+          aoOrder.push({ oAttr, sNum: oAttr.sNum }); continue;   // own number: the-author decided
+        }
         const sKeyLocal = oGenNum.sKey + '|' + fNormAttr(oAttr.sAttrWord);
         (oCountLocal[sKeyLocal] ??= { oGen: oGenNum, sAttr: fNormAttr(oAttr.sAttrWord), aoAttr: [] })
           .aoAttr.push(oAttr);
@@ -623,6 +635,180 @@ function fApplyFix(aoFileIn, aoIssueIn) {
   return nChanged;
 }
 
+/**
+ * DOING: it checks that a-numbered attribute "02_valence of relation" has its title as name:
+ *   - with a-main-name (a-target of !⇒):
+ *       * McshEngl.relation'02_valence!⇒Rltnvalence,
+ *       * McshEngl.Rltnvalence!=relation'02_valence,
+ *       * McshEngl.relation'valence!⇒Rltnvalence,
+ *   - without:
+ *       * McshEngl.relation'02_valence,
+ *       * McshEngl.relation'valence,
+ *   a-name "relation'06_valence" of an-old number is renamed; an-old "Main!=desc" keeps desc as "desc!⇒Main".
+ * OUTPUT: { aoPlan: [{ oFile, oNode, nPos, sParaOld, sParaNew, aChange }], aoHand: [{ oNode, sWhy }] }
+ */
+function fCheckTitleName(aoFileIn, fInFileIn) {
+  // the-English-names of the-worldview (without !… and ~plural) → count, to avoid a-new duplicate
+  const oCountName = new Map();
+  for (const oFile of aoFileIn) for (const oNode of oFile.aoNode) for (const sName of oNode.aName) {
+    const sBase = sName.split('~')[0];
+    oCountName.set(sBase, (oCountName.get(sBase) ?? 0) + 1);
+  }
+  const rNamePara = /<p\b[^>]*\bid="[^"]+"[^>]*>\s*name::[\s\S]*?<\/p>/;
+  const rLine = /<br>\*\s*McshEngl\.([^\n,]+),/g;
+  const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const aoPlan = [], aoHand = [];
+  for (const oFile of aoFileIn) {
+    for (const oNode of oFile.aoNode) {
+      if (!oNode.bAttr || !oNode.sNum || !fInFileIn(oNode)) continue;
+      const aTitle = oNode.sTitle.match(rTitleAttr);
+      const sOf = aTitle[3].trim(), sWord = aTitle[2].trim();
+      if (!/^[^\s,!<>~()'"]+$/.test(sWord) || !/^[^\s,!<>~()'"]+$/.test(sOf)) {
+        aoHand.push({ oNode, sWhy: 'the-title is NOT a-name' }); continue;
+      }
+      // a-formal-name has "_" for space and hyphen (MvrwName01)
+      const fFormal = fFormalMvrwName01;
+      const sOfF = fFormal(sOf), sWordF = fFormal(sWord);
+      const sTn = `${sOfF}'${oNode.sNum}_${sWordF}`, sPlain = `${sOfF}'${sWordF}`;
+      // the-name:: paragraph of the-section itself, before its first sub-section
+      const sSect = oFile.sText.slice(oNode.nStart, oNode.nEnd);
+      const nSub = sSect.indexOf('<section', 1);
+      const aPara = (nSub > 0 ? sSect.slice(0, nSub) : sSect).match(rNamePara);
+      if (!aPara) { aoHand.push({ oNode, sWhy: 'no name:: paragraph' }); continue; }
+      const sParaOld = aPara[0];
+      let sPara = sParaOld;
+      const aChange = [];
+      // the-lines: { sRaw, sBody (between McshEngl. and ,), sBase }
+      const fLines = () => [...sPara.matchAll(rLine)].map(aL =>
+        ({ sRaw: aL[0], sBody: aL[1], sBase: aL[1].split('!')[0].split('~')[0].trim() }));
+      // 1. an-old number or spelling: relation'06_valence → relation'02_valence;
+      //    when relation'02_valence is already a-line, the-old line is deleted
+      const rOld = new RegExp(`^${fEsc(sOfF)}'(\\d{2})_${fEsc(sWordF)}$`);
+      for (const oL of fLines()) {
+        if (oL.sBase === sTn || !rOld.test(fFormal(oL.sBase))) continue;
+        const bHave = fLines().some(oL2 => oL2.sBase === sTn);
+        if (bHave) {
+          const nAt = sPara.indexOf(oL.sRaw);
+          const nLineStart = sPara.lastIndexOf('\n', nAt);
+          sPara = sPara.slice(0, nLineStart) + sPara.slice(nAt + oL.sRaw.length);
+          aChange.push(`deleted ${oL.sBase}`);
+        } else {
+          sPara = sPara.split(`McshEngl.${oL.sBase}!`).join(`McshEngl.${sTn}!`)
+            .split(`McshEngl.${oL.sBase},`).join(`McshEngl.${sTn},`);
+          aChange.push(`renamed ${oL.sBase} → ${sTn}`);
+        }
+        sPara = sPara.split(`!=${oL.sBase},`).join(`!=${sTn},`).split(`!⇒${oL.sBase},`).join(`!⇒${sTn},`);
+      }
+      // the-main-name: the-most frequent target of !⇒
+      const oCountTarget = new Map();
+      for (const oL of fLines()) {
+        const aT = oL.sBody.match(/!⇒([^!]+)/);
+        if (aT) oCountTarget.set(aT[1].trim(), (oCountTarget.get(aT[1].trim()) ?? 0) + 1);
+      }
+      const sMain = [...oCountTarget.entries()].sort((aA, aB) => aB[1] - aA[1])[0]?.[0] ?? '';
+      const aoL = fLines();
+      const nFirst = sPara.indexOf(aoL[0]?.sRaw ?? '\u0000');
+      // it inserts a-line before the-first English name, or after a-given line
+      const fInsert = (sLineNew, sAfterIn) => {
+        const sNew = `<br>* McshEngl.${sLineNew},`;
+        if (sAfterIn) {
+          const nAt = sPara.indexOf(sAfterIn) + sAfterIn.length;
+          const sIndent = (sPara.slice(0, sPara.indexOf(sAfterIn)).match(/\n([ \t]*)$/) ?? ['', '    '])[1];
+          sPara = sPara.slice(0, nAt) + '\n' + sIndent + sNew + sPara.slice(nAt);
+        } else {
+          const sIndent = (sPara.slice(0, nFirst).match(/\n([ \t]*)$/) ?? ['', '    '])[1];
+          sPara = sPara.slice(0, nFirst) + sNew + '\n' + sIndent + sPara.slice(nFirst);
+        }
+        aChange.push(`added ${sLineNew}`);
+      };
+      const fFind = sBaseIn => fLines().find(oL => oL.sBase === sBaseIn);
+      // a-new name must NOT be a-name of another concept
+      const fFree = sBaseIn => !oCountName.has(sBaseIn);
+      if (nFirst < 0) { aoHand.push({ oNode, sWhy: 'no McshEngl name' }); continue; }
+
+      if (sMain && sMain !== sTn) {
+        const oMain = fFind(sMain);
+        if (!oMain) { aoHand.push({ oNode, sWhy: `the-main-name ${sMain} is NOT in this name::` }); continue; }
+        if (/!⇒/.test(oMain.sBody) || (oMain.sBody.match(/!=/g) ?? []).length > 1) {
+          aoHand.push({ oNode, sWhy: `the-main-name line "${oMain.sBody}" is NOT simple` }); continue;
+        }
+        // the-title-name points to the-main
+        const oTn = fFind(sTn);
+        if (!oTn) {
+          if (!fFree(sTn)) { aoHand.push({ oNode, sWhy: `${sTn} is a-name of another concept` }); continue; }
+          fInsert(`${sTn}!⇒${sMain}`);
+        } else if (!/!⇒/.test(oTn.sBody) && !/!=/.test(oTn.sBody)) {
+          sPara = sPara.replace(oTn.sRaw, oTn.sRaw.replace(/,$/, `!⇒${sMain},`));
+          aChange.push(`${sTn} → !⇒${sMain}`);
+        } else if (!new RegExp(`!⇒${fEsc(sMain)}(!|$)`).test(oTn.sBody)) {
+          aoHand.push({ oNode, sWhy: `${sTn} is "${oTn.sBody}", NOT !⇒${sMain}` }); continue;
+        }
+        // the-main is described by the-title-name
+        const oMainNow = fFind(sMain);
+        const aDesc = oMainNow.sBody.match(/!=([^!]+)$/);
+        const sDescOld = aDesc ? aDesc[1].trim() : '';
+        if (sDescOld !== sTn) {
+          const sRawNew = aDesc
+            ? oMainNow.sRaw.replace(`!=${aDesc[1]},`, `!=${sTn},`)
+            : oMainNow.sRaw.replace(/,$/, `!=${sTn},`);
+          sPara = sPara.replace(oMainNow.sRaw, sRawNew);
+          aChange.push(`${sMain} !=${sTn}` + (sDescOld ? ` (was !=${sDescOld})` : ''));
+          // the-old description stays a-name
+          // a-formal old description (X'y, X.y …) as a-name gets "_" for hyphen (MvrwName01)
+          const sDescName = /['.:;\/]/.test(sDescOld.replace(/\{[^}]*\}|\([^)]*\)/g, ''))
+            ? fFormal(sDescOld) : sDescOld;
+          if (sDescName && !fFind(sDescName) && sDescName !== sTn) fInsert(`${sDescName}!⇒${sMain}`, sRawNew);
+        }
+        // the-plain attr-name
+        if (!fFind(sPlain) && fFree(sPlain)) fInsert(`${sPlain}!⇒${sMain}`, fFind(sTn).sRaw);
+        // MvrwMain11: "X'NN_y!⇒Main" first, "Main!=X'NN_y" second
+        const aoNow = fLines();
+        const oTnL = fFind(sTn), oMainL = fFind(sMain);
+        if (aoNow[0] !== undefined && (aoNow[0].sRaw !== oTnL.sRaw || aoNow[1]?.sRaw !== oMainL.sRaw)) {
+          for (const oL of [oTnL, oMainL]) sPara = sPara.replace(new RegExp(`\\n[ \\t]*${fEsc(oL.sRaw)}`), '');
+          const sFirstRaw = fLines()[0].sRaw, nAt = sPara.indexOf(sFirstRaw);
+          const sIndent = (sPara.slice(0, nAt).match(/\n([ \t]*)$/) ?? ['', '    '])[1];
+          sPara = sPara.slice(0, nAt) + oTnL.sRaw + '\n' + sIndent + oMainL.sRaw + '\n' + sIndent + sPara.slice(nAt);
+          aChange.push(`${sTn}, ${sMain} moved first`);
+        }
+      } else {
+        if (!fFind(sTn)) {
+          if (!fFree(sTn)) { aoHand.push({ oNode, sWhy: `${sTn} is a-name of another concept` }); continue; }
+          fInsert(sTn);
+        }
+        if (!fFind(sPlain) && fFree(sPlain)) fInsert(sPlain, fFind(sTn).sRaw);
+      }
+      if (sPara !== sParaOld) {
+        aoPlan.push({ oFile, oNode, nPos: oNode.nStart + sSect.indexOf(sParaOld), sParaOld, sParaNew: sPara, aChange });
+      }
+    }
+  }
+  return { aoPlan, aoHand };
+}
+
+/**
+ * DOING: it writes the-name:: paragraphs of fCheckTitleName, from the-end of each file.
+ * OUTPUT: the-number of paragraphs changed.
+ */
+function fApplyTitleName(aoPlanIn) {
+  const ooPlanFile = new Map();
+  for (const oPlan of aoPlanIn) {
+    if (!ooPlanFile.has(oPlan.oFile)) ooPlanFile.set(oPlan.oFile, []);
+    ooPlanFile.get(oPlan.oFile).push(oPlan);
+  }
+  let nChanged = 0;
+  for (const [oFile, aoPlanFile] of ooPlanFile) {
+    let sText = oFile.sText;
+    for (const oPlan of aoPlanFile.sort((oA, oB) => oB.nPos - oA.nPos)) {
+      if (sText.slice(oPlan.nPos, oPlan.nPos + oPlan.sParaOld.length) !== oPlan.sParaOld) continue;
+      sText = sText.slice(0, oPlan.nPos) + oPlan.sParaNew + sText.slice(oPlan.nPos + oPlan.sParaOld.length);
+      nChanged++;
+    }
+    moFs.writeFileSync(oFile.sPath, sText);
+  }
+  return nChanged;
+}
+
 function fMain() {
   const aArg = process.argv.slice(2);
   const aArgPath = aArg.filter((sArg, nI) =>
@@ -632,11 +818,12 @@ function fMain() {
     console.log('inheritMcsh.mjs - it checks the-inheritance of attributes from generic to specific concepts');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--file McshDir000000] [--local 3]');
+    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--file McshDir000000] [--local 3]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --fix        writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free');
     console.log('  --delete-empty  deletes the-INH-EMPTY sections: NOT linked, English names only');
     console.log('  --fix-order  puts the-attribute-sections of INH-ORDER specifics in NN order');
+    console.log("  --fix-name   writes the-title X'NN_attr of a-numbered attribute as its name (INH-TITLENAME)");
     console.log('  --file       report (and fix) one file only, given as McshDir000000');
     console.log('  --local      the-min count of specifics for INH-LOCAL (default 3)');
     console.log('  OUTPUT: dirValid/inheritMcsh.txt, overwritten on every run');
@@ -645,6 +832,7 @@ function fMain() {
   const bFix = aArg.includes('--fix');
   const bDelete = aArg.includes('--delete-empty');
   const bFixOrder = aArg.includes('--fix-order');
+  const bFixName = aArg.includes('--fix-name');
   const nIdxFile = aArg.indexOf('--file');
   const sNameFileOnly = nIdxFile !== -1 ? fFindNameShort(aArg[nIdxFile + 1] ?? '') : '';
   const nIdxLocal = aArg.indexOf('--local');
@@ -688,7 +876,16 @@ function fMain() {
     aoOrdered.push(...aoDone);
     ({ aoFileRead: aoFile, oResult } = fReadCheck());
   }
+  // --fix-name: the-title of a-numbered attribute as its name
+  let { aoPlan: aoTitleName, aoHand: aoTitleHand } = fCheckTitleName(aoFile, fInFile);
+  let nTitleName = 0;
+  if (bFixName && aoTitleName.length) {
+    nTitleName = fApplyTitleName(aoTitleName);
+    ({ aoFileRead: aoFile, oResult } = fReadCheck());
+  }
   const { ooIssue, oCountRefine, nSpecific, nAttrSpec, nMatch, nNode } = oResult;
+  ooIssue['INH-TITLENAME'] = bFixName ? [] : aoTitleName.map(oPlan => ({ oAttr: oPlan.oNode, oPlan }));
+  ooIssue['INH-TITLEHAND'] = aoTitleHand.map(oHand => ({ oAttr: oHand.oNode, sLabel: oHand.sWhy }));
 
   // ── the-report ────────────────────────────────────────────────────────────
   const aLineOut = [];
@@ -698,12 +895,13 @@ function fMain() {
     oA.oAttr.sNameShort.localeCompare(oB.oAttr.sNameShort) || oB.oAttr.nLine - oA.oAttr.nLine);
 
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
+  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
     (sNameFileOnly ? ` (file ${sNameFileOnly})` : ''));
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   fOut(`  ${aoFile.length} files · ${nNode} sections · ${nSpecific} specifics under a-numbered generic · ` +
     `${nAttrSpec} of their attributes · ${nMatch} match a-numbered generic-attribute`);
   if (bFix) fOut(`  titles changed: ${nChanged}`);
+  if (bFixName) fOut(`  name:: paragraphs changed: ${nTitleName}`);
   fOut('  Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;');
   fOut('        a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.');
   fOut('');
@@ -711,11 +909,14 @@ function fMain() {
   const ooDesc = {
     'INH-NONUM': 'matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)',
     'INH-WRONGNUM': 'its NN_ differs from the-generic-attribute (own numbering? by hand)',
+    'INH-OWNNUM': 'an-own numbered attribute NOT after the-last number of the-inherited-attr-chain',
     'INH-ORDER': 'the-attributes of a-specific are not in the-NN order of its generic',
     'INH-EMPTY': 'an-inherited attribute that says nothing new (no info, no link): delete?',
     'INH-GENDUP': 'a-numbered generic gives the-same NN_ to two attributes: renumber',
     'INH-REFBROKEN': 'a-text-reference name!@File#id whose file or id does NOT exist',
     'INH-GNTRTEXT': 'a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept',
+    'INH-TITLENAME': "a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)",
+    'INH-TITLEHAND': 'a-numbered attribute whose title-name needs a-hand',
     'INH-LOCAL': `an-attribute in ${nLocalMin}+ specifics, not in the-generic: lift it up?`
   };
   for (const sCode of Object.keys(ooIssue)) {
@@ -762,6 +963,11 @@ function fMain() {
     }
     fOut('');
   }
+  fOut(`=== INH-OWNNUM (${ooIssue['INH-OWNNUM'].length}) — ${ooDesc['INH-OWNNUM']}`);
+  for (const oIssue of fSortIssue(ooIssue['INH-OWNNUM'])) {
+    fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  last ${oIssue.sNumLast}_ ← ${oIssue.sLabel}`);
+  }
+  fOut('');
   fOut(`=== INH-ORDER (${ooIssue['INH-ORDER'].length}) — ${ooDesc['INH-ORDER']}`);
   for (const oIssue of fSortIssue(ooIssue['INH-ORDER'])) {
     fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  order: ${oIssue.sLabel}`);
@@ -770,6 +976,18 @@ function fMain() {
   fOut(`=== INH-GNTRTEXT (${ooIssue['INH-GNTRTEXT'].length}) — ${ooDesc['INH-GNTRTEXT']}`);
   for (const oIssue of fSortIssue(ooIssue['INH-GNTRTEXT'])) {
     fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  #${oIssue.oAttr.sId}  ${oIssue.sLabel}`);
+  }
+  fOut('');
+  // --fix-name: the-changes written; else the-changes it would write
+  const aoTitleShow = bFixName ? aoTitleName.map(oPlan => ({ oAttr: oPlan.oNode, oPlan })) : ooIssue['INH-TITLENAME'];
+  fOut(`=== ${bFixName ? 'TITLENAME-APPLIED' : 'INH-TITLENAME'} (${aoTitleShow.length}) — ${ooDesc['INH-TITLENAME']}`);
+  for (const oIssue of fSortIssue(aoTitleShow)) {
+    fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  ${oIssue.oPlan.aChange.join('; ')}`);
+  }
+  fOut('');
+  fOut(`=== INH-TITLEHAND (${ooIssue['INH-TITLEHAND'].length}) — ${ooDesc['INH-TITLEHAND']}`);
+  for (const oIssue of fSortIssue(ooIssue['INH-TITLEHAND'])) {
+    fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  ${oIssue.sLabel}`);
   }
   fOut('');
   fOut(`=== INH-REFBROKEN (${ooIssue['INH-REFBROKEN'].length}) — ${ooDesc['INH-REFBROKEN']}`);
@@ -795,13 +1013,53 @@ function fMain() {
 
   const sPathOut = moPath.join(sDirScript, 'inheritMcsh.txt');
   moFs.writeFileSync(sPathOut, aLineOut.join('\n') + '\n');
-  for (const sLine of aLineOut.slice(0, 14)) console.log(sLine);
+  for (const sLine of aLineOut.slice(0, 22)) console.log(sLine);
   console.log(`📄 report written: ${sPathOut} (${aLineOut.length} lines)`);
 }
 
-try {
-  fMain();
-} catch (oErr) {
-  console.error('\n❌ Fatal error:', oErr.stack);
-  process.exit(1);
+/**
+ * DOING: MvrwGstr03 inherited_attr of structuralMcsh.js: the-issues of the-inheritance-rules
+ *   (INH-NONUM, INH-WRONGNUM, INH-OWNNUM, INH-TITLENAME, INH-TITLEHAND) of a-worldview.
+ * OUTPUT: [{ sNameShort, nLine, sTitle, sMessage }]
+ */
+// the-last result of fFindInheritAttr: { sKey, aoOut }; createMcsh calls it once per file
+let oMemoInherit = null;
+function fFindInheritAttr(sNameDirIn) {
+  // the-key: the-paths, sizes and times of the-files; a-written file makes a-new key
+  const aPath = fFindFile_all(sNameDirIn);
+  const sKey = aPath.map(sPath => { const oS = moFs.statSync(sPath); return `${sPath}|${oS.size}|${oS.mtimeMs}`; }).join('\n');
+  if (oMemoInherit?.sKey === sKey) return oMemoInherit.aoOut;
+  const aoOut = fFindInheritAttrRead(aPath);
+  oMemoInherit = { sKey, aoOut };
+  return aoOut;
+}
+function fFindInheritAttrRead(aPathIn) {
+  const aoFile = aPathIn.map(fReadFile);
+  const { ooIssue } = fCheck(aoFile, 3);
+  const { aoPlan, aoHand } = fCheckTitleName(aoFile, () => true);
+  const aoOut = [];
+  const fPush = (oAttr, sMessage) => aoOut.push({ sNameShort: oAttr.sNameShort, nLine: oAttr.nLine, sTitle: oAttr.sTitle, sMessage });
+  for (const oI of ooIssue['INH-NONUM']) fPush(oI.oAttr,
+    `inherited_attr: "${oI.oAttr.sTitle}" is an-inherited attribute of ${oI.sLabel}: number it ${oI.sNumNew}_`);
+  for (const oI of ooIssue['INH-WRONGNUM']) fPush(oI.oAttr,
+    `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_`);
+  for (const oI of ooIssue['INH-OWNNUM']) fPush(oI.oAttr,
+    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel})`);
+  for (const oP of aoPlan) fPush(oP.oNode,
+    `inherited_attr: the-title of "${oP.oNode.sTitle}" is NOT its descriptive-name (inheritMcsh --fix-name: ${oP.aChange.join('; ')})`);
+  for (const oH of aoHand) fPush(oH.oNode,
+    `inherited_attr: the-title of "${oH.oNode.sTitle}" is NOT its descriptive-name: ${oH.sWhy}`);
+  return aoOut;
+}
+
+export { fFindInheritAttr };
+
+// run as a-program only, NOT when imported by structuralMcsh.js
+if (process.argv[1] && moPath.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  try {
+    fMain();
+  } catch (oErr) {
+    console.error('\n❌ Fatal error:', oErr.stack);
+    process.exit(1);
+  }
 }

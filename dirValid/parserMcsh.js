@@ -40,6 +40,7 @@ import { pathToFileURL } from 'url'
 const
   // contains the-versions of parserMcsh.js
   aVersion = [
+    'parserMcsh.js.0-7-1.2026-11-16: oMapLinkLine only links to Mcsh-pages (for MvrwId01)',
     'parserMcsh.js.0-7-0.2026-11-07: sNameMainFrml sNameMainDrtv',
     'parserMcsh.js.0-6-1.2026-11-07: sNameMainFrml sNameMainIfml',
     'parserMcsh.js.0-6-0.2026-11-07: sNameMainFrml is the-Mmn (main-mind-name): the-first name with its own line that a-"!⇒" points to, ONE per concept, any McsLago, empty when none (fFindMmn)',
@@ -138,8 +139,9 @@ async function fReadFileMcsh(sNameDirIn, sNameIdRelaIn, sRawIn = null) {
   const oCtxFile = { sNameIdAbso, sNameIdRela };
 
   const oMapIdLine   = fBuildMapLine(sFileRaw, /\bid="([^"]+)"/g);
-  // the-#id of every NOT-http link, "#idX" or "../dirLag/McshLag000002.last.html#idX"
-  const oMapLinkLine = fBuildMapLine(sFileRaw, /href="(?!https?:)[^"#]*#([^"]*)"/g);
+  // the-#id of every link to a-Mcsh-page, "#idX" or "../dirLag/McshLag000002.last.html#idX";
+  // links to other documents (Hitp, FolioViews, standards, http) are NOT Mcsh ids
+  const oMapLinkLine = fBuildMapLine(sFileRaw, /href="(?:(?:[^"#:]*\/)?Mcsh[^"#\/:]*)?#([^"]*)"/g);
   
   // ── <title> ──────────────────────────────────────────────────────────────
   const aTitleMatch = sFileRaw.match(/<title[^>]*>([\s\S]*?)<\/title>/i);

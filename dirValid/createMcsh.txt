@@ -1,8 +1,58 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --dupname --fix: ../dirMcsh
+  createMcsh --code MvrwId01 --all --fix: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · 1 duplicate name-lines deleted · 0 skipped
+  4 files written · MvrwId01: 37 issues · 10 fixed · 1 skipped
   written, no backup: see git diff
 
-=== DUPNAME (1) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01)
-  McshTchInf000017:4481  McshEngl.BtcnevalnCon.Double_spending  (stays: ,)
+=== SKIP (1) — skipped, with why: fix by hand
+  McshTchInf000019:4668  #idEosdacctn4P1-8-3: its id occurs 0 times
+
+=== IDNEW (10) — an-id renamed (MvrwId01..13), with its own ids; links re-pointed in every file
+  McshHlth000011:9400  #idDssHmn127symptomin.gr -> #idDssHmn127symptomin_gr  (+1 own ids)
+  McshHlth000011:9579  #idDssHmn127flu.1918 -> #idDssHmn127flu_1918  (+2 own ids)
+  McshStn000020:11698  #idEuoStatglsrIn_sample_vs._out_of_sample_forecasts -> #idEuoStatglsrIn_sample_vs_out_of_sample_forecasts
+  McshStn000020:15082  #idEuoStatglsrPurchaser's_price -> #idEuoStatglsrPurchaser_s_price
+  McshStn000020:15628  #idEuoStatglsrRolling_vs._recursive -> #idEuoStatglsrRolling_vs_recursive
+  McshStn000020:17350  #idEuoStatglsrUnited_Nations_Children's_Fund_UNICEF -> #idEuoStatglsrUnited_Nations_Children_s_Fund_UNICEF
+  McshTchInf000012:1663  #idLJsndevents'member -> #idLJsndevents_member  (+4 own ids)
+  McshTchInf000012:2290  #idLJsndhttp'member -> #idLJsndhttp_member  (+4 own ids)
+  McshTchInf000012:3026  #idLJsndutil'member -> #idLJsndutil_member  (+4 own ids)
+  McshTchInf000017:305  #idBtcattOaCoinbase.com -> #idBtcattOaCoinbase_com
+
+=== LINK (36) — a-line whose ids or links to a-renamed id changed
+  McshHlth000011:9400
+  McshHlth000011:9401
+  McshHlth000011:9579
+  McshHlth000011:9580
+  McshHlth000011:9582
+  McshHlth000011:9588
+  McshStn000020:11698
+  McshStn000020:15082
+  McshStn000020:15628
+  McshStn000020:17350
+  McshTchInf000012:1663
+  McshTchInf000012:1664
+  McshTchInf000012:1666
+  McshTchInf000012:1668
+  McshTchInf000012:1669
+  McshTchInf000012:1671
+  McshTchInf000012:1672
+  McshTchInf000012:1691
+  McshTchInf000012:2290
+  McshTchInf000012:2291
+  McshTchInf000012:2293
+  McshTchInf000012:2295
+  McshTchInf000012:2296
+  McshTchInf000012:2298
+  McshTchInf000012:2299
+  McshTchInf000012:2303
+  McshTchInf000012:3026
+  McshTchInf000012:3027
+  McshTchInf000012:3029
+  McshTchInf000012:3031
+  McshTchInf000012:3032
+  McshTchInf000012:3034
+  McshTchInf000012:3035
+  McshTchInf000012:3053
+  McshTchInf000017:305
+  McshTchInf000017:307
