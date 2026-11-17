@@ -40,10 +40,10 @@
  *  MvrwId10_suffix_prtr prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
  *  MvrwId11_suffix_gntr gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
  *  MvrwId12_suffix_sptr sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
- *  MvrwId13_suffix_srtr srtr_structure_suffix: the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
+ *  MvrwId13_suffix_srtr the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
  *
- *  MvreMain01_char chars: an-main-mind-name has ONLY English letters, digits and _ (no . - space, no other-language letters)
- *  MvrwMain01_Attrbase Attrbase: main-names of attributes begin with Attrbase of concept
+ *  MvreMain01_char a-main-mind-name has ONLY English letters, digits and undersoce.
+ *  MvrwMain01_Attrbase main-names of attributes begin with Attrbase of concept
  *             (Attrbase "McshEngl.B!Attrbase,"; attributes: its direct parts with a-main-name, "Y of X" and "X.Y");
  *             exempt: an-alias that begins with B ("McshEngl.Systsector!⇒sector_vs_system,") keeps its own
  *             main-name; SciX | DissX | RltnX need such an-alias; createMcsh fixes the-rest

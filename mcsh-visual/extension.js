@@ -34,6 +34,14 @@ const oSetUriSaving = new Set();
 let oShortcutsCache = { path: '', mtimeMs: -1, list: [] };
 /** fsPath of the file currently shown in the active Mcsh-visual-manager editor (for ${command:mcshv.currentFile}). */
 let sVisualFile = '';
+/** The-#id of the-URL bar of the-active Mcsh-visual-manager editor ('' = none): the-concept of validate-concept. */
+let sHashVisual = '';
+/** OUTPUT: the-#id of a-URL, without '#', decoded; '' when none. */
+const fHashOfHref = (sHrefIn) => {
+  const nHash = String(sHrefIn || '').indexOf('#');
+  if (nHash < 0) return '';
+  try { return decodeURIComponent(sHrefIn.slice(nHash + 1)); } catch (oErr) { return sHrefIn.slice(nHash + 1); }
+};
 /** Navigate fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fNavigateVisual = null;
 /** Make-sect-file fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
@@ -304,16 +312,26 @@ function fActivate(context) {
       await fRevealSource(vscode.Uri.file(sPath), nLine);   // nLine 0 → opens at top
     })
   );
-  // Ctrl+Alt+P V V from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
+  // Ctrl+Alt+V F F from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
   context.subscriptions.push(
+    vscode.commands.registerCommand('mcshv.validConcept', () =>
+      fRunValidConcept((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
+    vscode.commands.registerCommand('mcshv.validConceptRule', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'concept')),
     vscode.commands.registerCommand('mcshv.validCurrent', () =>
       fRunValidCurrent((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
     vscode.commands.registerCommand('mcshv.validRule', () =>
       fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
+    vscode.commands.registerCommand('mcshv.validDir', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'dir', false)),
     vscode.commands.registerCommand('mcshv.validDirRule', () =>
       fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'dir')),
+    vscode.commands.registerCommand('mcshv.validWorld', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'worldview', false)),
     vscode.commands.registerCommand('mcshv.validWorldRule', () =>
       fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'worldview')),
+    vscode.commands.registerCommand('mcshv.validList', () =>
+      fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'list', false)),
     vscode.commands.registerCommand('mcshv.validListRule', () =>
       fRunValidRule((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000), 'list'))
   );
@@ -379,7 +397,7 @@ function fCreateProvider(context) {
     // page now shown, so edits/saves follow. `null` = a view-only page.
     let oActiveDoc = document;
     sVisualFile = document.uri.fsPath;           // seed ${command:mcshv.currentFile}
-    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; fNavigateVisual = fNavigate; fMakeSectVisual = fMakeSect; } });
+    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; sHashVisual = fHashOfHref(sHrefCurrent); fNavigateVisual = fNavigate; fMakeSectVisual = fMakeSect; } });
     const oSetAddedKeys = new Set();             // docs we added to `oSetUriManaged` (cleanup on dispose)
     const sDocRootBase = fDocRootBase(document);
 
@@ -511,20 +529,31 @@ function fCreateProvider(context) {
       return bOk;
     };
 
-    // Valid → Validate-current (and Ctrl+Alt+P V V from the iframe)
+    // Valid → validate-concept (and Ctrl+Alt+V C C from the iframe)
+    const fValidConcept = () => fRunValidConcept(fStatus);
+    // Valid → validate-concept-with-rule (and Ctrl+Alt+V C R from the iframe)
+    const fValidConceptRule = () => fRunValidRule(fStatus, 'concept');
+    // Valid → Validate-current (and Ctrl+Alt+V F F from the iframe)
     const fValidCurrent = () => fRunValidCurrent(fStatus);
     // Valid → validate-file-with-rule
     const fValidRule = () => fRunValidRule(fStatus);
+    // Valid → validate-directory (every rule)
+    const fValidDir = () => fRunValidRule(fStatus, 'dir', false);
     // Valid → validate-directory-with-rule
     const fValidDirRule = () => fRunValidRule(fStatus, 'dir');
+    // Valid → validate-worldview (every rule)
+    const fValidWorld = () => fRunValidRule(fStatus, 'worldview', false);
     // Valid → validate-worldview-with-rule
     const fValidWorldRule = () => fRunValidRule(fStatus, 'worldview');
+    // Valid → validate-list (every rule)
+    const fValidList = () => fRunValidRule(fStatus, 'list', false);
     // Valid → validate-list-with-rule
     const fValidListRule = () => fRunValidRule(fStatus, 'list');
 
     // Retarget the edit file when the page navigates (bridge `nav` message).
     const fOnNavigate = async (href) => {
       sHrefCurrent = href || '';
+      sHashVisual = fHashOfHref(sHrefCurrent);
       fToChrome({ type: 'setUrl', url: href });               // address bar
       const oUri = fPathFromUrl(href, sDocRootBase);
       if (oUri && fs.existsSync(oUri.fsPath)) {
@@ -625,10 +654,15 @@ function fCreateProvider(context) {
             case 'indexOnly': fIndexOnly(); break;
             case 'newFile': fNewFile(); break;
             case 'makeSectFile': fMakeSect(); break;
+            case 'validConcept': await fValidConcept(); break;
+            case 'validConceptRule': await fValidConceptRule(); break;
             case 'validCurrent': await fValidCurrent(); break;
             case 'validRule': await fValidRule(); break;
+            case 'validDir': await fValidDir(); break;
             case 'validDirRule': await fValidDirRule(); break;
+            case 'validWorld': await fValidWorld(); break;
             case 'validWorldRule': await fValidWorldRule(); break;
+            case 'validList': await fValidList(); break;
             case 'validListRule': await fValidListRule(); break;
             case 'cmd': fToChrome({ type: 'cmd', cmd: msg.cmd }); break; // relay to bridge
             case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P
@@ -646,15 +680,20 @@ function fCreateProvider(context) {
           case 'indexOnly': fIndexOnly(); break;                       // Ctrl+Alt+P X O from the iframe
           case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K N from the iframe
           case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K M from the iframe
-          case 'validCurrent': await fValidCurrent(); break;           // Ctrl+Alt+P V V from the iframe
-          case 'validRule': await fValidRule(); break;                 // Ctrl+Alt+V V R from the iframe
+          case 'validConcept': await fValidConcept(); break;           // Ctrl+Alt+V C C from the iframe
+          case 'validConceptRule': await fValidConceptRule(); break;   // Ctrl+Alt+V C R from the iframe
+          case 'validCurrent': await fValidCurrent(); break;           // Ctrl+Alt+V F F from the iframe
+          case 'validRule': await fValidRule(); break;                 // Ctrl+Alt+V F R from the iframe
+          case 'validDir': await fValidDir(); break;                   // Ctrl+Alt+V D D from the iframe
           case 'validDirRule': await fValidDirRule(); break;           // Ctrl+Alt+V D R from the iframe
+          case 'validWorld': await fValidWorld(); break;               // Ctrl+Alt+V W W from the iframe
           case 'validWorldRule': await fValidWorldRule(); break;       // Ctrl+Alt+V W R from the iframe
+          case 'validList': await fValidList(); break;                 // Ctrl+Alt+V L L from the iframe
           case 'validListRule': await fValidListRule(); break;         // Ctrl+Alt+V L R from the iframe
           case 'maximizeGroup': vscode.commands.executeCommand('workbench.action.toggleMaximizeEditorGroup'); break; // Ctrl+K Ctrl+M
           case 'cmdPalette': vscode.commands.executeCommand('workbench.action.showCommands'); break; // Ctrl+Shift+P from the iframe
           case 'nav': await fOnNavigate(msg.href); break;
-          case 'url': sHrefCurrent = msg.href || ''; fToChrome({ type: 'setUrl', url: msg.href }); break; // hash jump: address bar only
+          case 'url': sHrefCurrent = msg.href || ''; sHashVisual = fHashOfHref(sHrefCurrent); fToChrome({ type: 'setUrl', url: msg.href }); break; // hash jump: address bar only
 
           case 'edit': {
             const sPlain = String(msg.text == null ? '' : msg.text).replace(/\r?\n/g, ' ');
@@ -808,6 +847,36 @@ function fPathForCode(sRoot, sCode) {
   if (!sCat) return null;
   const sSub = bHitp ? path.join('dir' + sCat, 'dirHitp') : 'dir' + sCat;
   return path.join(sRoot, sSub, sCode + '.last.html');
+}
+
+/**
+ * DOING: it resolves a-file written in the-validate-file prompt:
+ *   "descr!@file#id" | "file#id" | "McshLag000005.last.html#idOverview" |
+ *   "dirLag/McshLag000005.last.html#idOverview" | "McshLag000005".
+ * OUTPUT: fResolveFileIdValid: { sFile, sId }, sFile the-absolute path of the-.last.html file
+ *   ('' unknown), sId the-#id ('' none); fResolveFileValid: sFile.
+ */
+function fResolveFileIdValid(sInputIn, sRootIn) {
+  let sRaw = String(sInputIn ?? '');
+  const nRef = sRaw.lastIndexOf('!@');
+  if (nRef >= 0) sRaw = sRaw.slice(nRef + 2);
+  sRaw = sRaw.trim().replace(/,\s*$/, '');
+  sRaw = sRaw.replace(/:\d+\s*$/, '');
+  const aId = sRaw.match(/#([^#\s]*)\s*$/);
+  const sId = aId ? aId[1] : '';
+  if (aId) sRaw = sRaw.slice(0, aId.index);
+  sRaw = sRaw.replace(/\\/g, '/').replace(/\.last\.html$/i, '').replace(/^\.\//, '');
+  if (!sRaw) return { sFile: '', sId };
+  if (sRaw.includes('/')) {
+    const sPath = path.join(sRootIn, sRaw + '.last.html');
+    return { sFile: fs.existsSync(sPath) ? sPath : '', sId };
+  }
+  const sPath = fPathForCode(sRootIn, sRaw);
+  if (sPath && fs.existsSync(sPath)) return { sFile: sPath, sId };
+  return { sFile: fSearchByCode(sRootIn, sRaw) || '', sId };
+}
+function fResolveFileValid(sInputIn, sRootIn) {
+  return fResolveFileIdValid(sInputIn, sRootIn).sFile;
 }
 
 /** Fallback: recursively find <code>.last.html under root (skipping *.files asset dirs). */
@@ -990,10 +1059,15 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+P V V</span></div>
-          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">Ctrl+Alt+V V R</span></div>
+          <div class="clsItem" title="validate the concept of the URL bar (or another): report, or fix unambiguous inside it and report" data-cmd="cmdValidConcept">validate-concept<span class="clsKbd">Ctrl+Alt+V C C</span></div>
+          <div class="clsItem" title="validate the concept of the URL bar (or another) with one rule: report, or fix inside it and report" data-cmd="cmdValidConceptRule">validate-concept-with-rule<span class="clsKbd">Ctrl+Alt+V C R</span></div>
+          <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+V F F</span></div>
+          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">Ctrl+Alt+V F R</span></div>
+          <div class="clsItem" title="validate a directory (the current one, or chosen), every rule: report, or fix unambiguous and report" data-cmd="cmdValidDir">validate-directory<span class="clsKbd">Ctrl+Alt+V D D</span></div>
           <div class="clsItem" title="validate a directory (the current one, or chosen) with one rule: report, or fix and report" data-cmd="cmdValidDirRule">validate-directory-with-rule<span class="clsKbd">Ctrl+Alt+V D R</span></div>
+          <div class="clsItem" title="validate the whole worldview, every rule: report, or fix unambiguous and report" data-cmd="cmdValidWorld">validate-worldview<span class="clsKbd">Ctrl+Alt+V W W</span></div>
           <div class="clsItem" title="validate the whole worldview with one rule: report, or fix and report" data-cmd="cmdValidWorldRule">validate-worldview-with-rule<span class="clsKbd">Ctrl+Alt+V W R</span></div>
+          <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt, every rule: report, or fix unambiguous and report" data-cmd="cmdValidList">validate-list<span class="clsKbd">Ctrl+Alt+V L L</span></div>
           <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt with one rule: report, or fix and report" data-cmd="cmdValidListRule">validate-list-with-rule<span class="clsKbd">Ctrl+Alt+V L R</span></div>
         </div>
       </div>
@@ -1073,10 +1147,15 @@ function fBuildShell(webview, url) {
     else if(sCmd==='cmdOpen') fToChrome({type:'open'});
     else if(sCmd==='cmdNewFile') fToChrome({type:'newFile'});
     else if(sCmd==='cmdMakeSectFile') fToChrome({type:'makeSectFile'});
+    else if(sCmd==='cmdValidConcept') fToChrome({type:'validConcept'});
+    else if(sCmd==='cmdValidConceptRule') fToChrome({type:'validConceptRule'});
     else if(sCmd==='cmdValidCurrent') fToChrome({type:'validCurrent'});
     else if(sCmd==='cmdValidRule') fToChrome({type:'validRule'});
+    else if(sCmd==='cmdValidDir') fToChrome({type:'validDir'});
     else if(sCmd==='cmdValidDirRule') fToChrome({type:'validDirRule'});
+    else if(sCmd==='cmdValidWorld') fToChrome({type:'validWorld'});
     else if(sCmd==='cmdValidWorldRule') fToChrome({type:'validWorldRule'});
+    else if(sCmd==='cmdValidList') fToChrome({type:'validList'});
     else if(sCmd==='cmdValidListRule') fToChrome({type:'validListRule'});
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
@@ -1224,7 +1303,69 @@ function fRunTaskWait(sLabelIn) {
 }
 
 /**
- * DOING: validate-file: it saves the-current file and asks
+ * DOING: it asks the-file to validate: the-current one prefilled (relative to the-worldview),
+ *   any other can be written (fResolveFileValid).
+ * OUTPUT: the-absolute path, or '' (Escape, or no such file: a-message).
+ */
+async function fPromptFileValid(sRootIn, sCmdIn, fStatusIn) {
+  const sFileCur = await vscode.commands.executeCommand('mcshv.currentFile');
+  const sFileCurRel = sFileCur ? path.relative(sRootIn, sFileCur).split(path.sep).join('/') : '';
+  const sInput = await vscode.window.showInputBox({
+    prompt: sCmdIn + ': the current file, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html | McshLag000005',
+    value: sFileCurRel,
+    valueSelection: sFileCurRel ? [0, sFileCurRel.length] : undefined,
+    ignoreFocusOut: true
+  });
+  if (!sInput) return '';                                 // Escape: nothing
+  const sFile = fResolveFileValid(sInput, sRootIn);
+  if (!sFile) fStatusIn('no file for "' + sInput.trim() + '"');
+  return sFile;
+}
+
+/** OUTPUT: the-worldview of a-path: the-nearest folder (itself or above) that holds a-dirNamidx, or ''. */
+function fFindWorldview(sPathIn) {
+  let sDir = sPathIn;
+  for (let nGuard = 0; sDir && nGuard < 50; nGuard++) {
+    try { if (fs.existsSync(path.join(sDir, 'dirNamidx'))) return sDir; } catch (oErr) { /* skip */ }
+    const sUp = path.dirname(sDir);
+    if (sUp === sDir) break;
+    sDir = sUp;
+  }
+  return '';
+}
+
+/**
+ * DOING: it asks the-worldview to validate: the-current one prefilled (its folder name);
+ *   any other as a-folder name next to it (dirMcsh), a-path, or a-file of it in any form of
+ *   fResolveFileValid (McshLag000005, dirLag/McshLag000005.last.html#id, descr!@file#id).
+ * OUTPUT: the-absolute path of the-worldview, or '' (Escape, or none: a-message).
+ */
+async function fPromptWorldviewValid(sRootIn, sCmdIn, fStatusIn) {
+  const sName = path.basename(sRootIn);
+  const sInput = await vscode.window.showInputBox({
+    prompt: sCmdIn + ': the current worldview, or another: dirMcsh | C:/dirNodews/dirMcsh | a file of it (McshLag000005, descr!@file#id)',
+    value: sName,
+    valueSelection: [0, sName.length],
+    ignoreFocusOut: true
+  });
+  if (!sInput) return '';                                 // Escape: nothing
+  const sIn = sInput.trim().replace(/[\\/]+$/, '');
+  // a-folder: a-path, or a-name next to the-current worldview
+  for (const sDir of [path.isAbsolute(sIn) ? sIn : '', path.join(path.dirname(sRootIn), sIn), path.join(sRootIn, sIn)]) {
+    if (!sDir) continue;
+    try { if (fs.existsSync(path.join(sDir, 'dirNamidx'))) return sDir; } catch (oErr) { /* skip */ }
+  }
+  // a-file: its worldview
+  const sFile = fResolveFileValid(sIn, sRootIn);
+  const sRoot = sFile ? fFindWorldview(path.dirname(sFile)) : '';
+  if (!sRoot) fStatusIn('no worldview for "' + sInput.trim() + '"');
+  return sRoot;
+}
+
+/**
+ * DOING: validate-file: it asks the-file (the-current one prefilled; any other as
+ *   "descr!@file#id" | "file#id" | "dirLag/McshLag000005.last.html#id" | "McshLag000005"),
+ *   saves it and asks
  *   a) report: only report,
  *   b) fix: the-task 'fix current-FILE' (createMcsh.mjs --auto --file: the-unambiguous
  *      fixes), then report.
@@ -1238,18 +1379,73 @@ function fRunTaskWait(sLabelIn) {
 async function fRunValidCurrent(fStatusIn) {
   const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
   if (!sRoot) return fStatusIn('no current file to validate');
-  const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
+  const sFile = await fPromptFileValid(sRoot, 'validate-file', fStatusIn);
+  if (!sFile) return;
+  await fRunValidFile(fStatusIn, sRoot, sFile, '');
+}
+
+/**
+ * DOING: validate-concept: it asks the-concept (the-one of the-URL bar prefilled,
+ *   dirLag/McshLag000005.last.html#idX; any other as validate-file, with its #id), then as
+ *   validate-file, ONLY for that concept (its section | paragraph):
+ *   a) report: validatorMcsh --id,
+ *   b) fix: createMcsh --auto --id (the-unambiguous fixes inside it), then report.
+ *   No #id, or #idOverview: the-same as validate-file.
+ * INPUT: fStatusIn: it shows a-message.
+ */
+async function fRunValidConcept(fStatusIn) {
+  const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
+  if (!sRoot) return fStatusIn('no current concept to validate');
+  const oConcept = await fPromptConceptValid(sRoot, 'validate-concept', fStatusIn);
+  if (!oConcept) return;
+  await fRunValidFile(fStatusIn, sRoot, oConcept.sFile, oConcept.sId);
+}
+
+/**
+ * DOING: it asks the-concept to validate: the-one of the-URL bar prefilled
+ *   (dirLag/McshLag000005.last.html#idX, when the-visual editor shows the-current file; else the-current
+ *   file alone); any other as validate-file, with its #id.
+ * OUTPUT: { sFile, sId } (sId '' = the-whole file: no #id, or #idOverview), or null (Escape, or no file: a-message).
+ */
+async function fPromptConceptValid(sRootIn, sCmdIn, fStatusIn) {
+  const sFileCur = await vscode.commands.executeCommand('mcshv.currentFile');
+  const fNorm = (sIn) => String(sIn || '').replace(/\\/g, '/').toLowerCase();
+  const sHash = sHashVisual && fNorm(sFileCur) === fNorm(sVisualFile) ? '#' + sHashVisual : '';
+  const sValue = sFileCur ? path.relative(sRootIn, sFileCur).split(path.sep).join('/') + sHash : '';
+  const sInput = await vscode.window.showInputBox({
+    prompt: sCmdIn + ': the concept of the URL bar, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html#id',
+    value: sValue,
+    valueSelection: sValue ? [0, sValue.length] : undefined,
+    ignoreFocusOut: true
+  });
+  if (!sInput) return null;                               // Escape: nothing
+  const { sFile, sId } = fResolveFileIdValid(sInput, sRootIn);
+  if (!sFile) { fStatusIn('no file for "' + sInput.trim() + '"'); return null; }
+  return { sFile, sId: sId === 'idOverview' ? '' : sId };
+}
+
+/**
+ * DOING: it validates sFileIn, or only its concept sIdIn ('' = the-whole file): it asks
+ *   report | fix, saves the-file, fixes (createMcsh --auto [--id]) and reports (validatorMcsh [--id]).
+ */
+async function fRunValidFile(fStatusIn, sRootIn, sFileIn, sIdIn) {
+  const sBase = path.basename(sFileIn);
+  const sWhat = sIdIn ? sBase + '#' + sIdIn : sBase;
+  const sCmd = sIdIn ? 'validate-concept' : 'validate-file';
   const oPick = await vscode.window.showQuickPick([
-    { label: 'report', description: 'only report', sMode: 'report' },
-    { label: 'fix', description: 'fix unambiguous, then report', sMode: 'fix' }
-  ], { placeHolder: 'validate-file: ' + path.basename(sFile || '') });
+    { label: 'report', description: 'only report' + (sIdIn ? ' the concept' : ''), sMode: 'report' },
+    { label: 'fix', description: sIdIn ? 'fix unambiguous inside #' + sIdIn + ', then report' : 'fix unambiguous, then report', sMode: 'fix' }
+  ], { placeHolder: sCmd + ': ' + sWhat });
   if (!oPick) return;                                     // Escape: nothing
-  const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath === sFile);
+  const oDoc = vscode.workspace.textDocuments.find((oIn) => oIn.isDirty && oIn.uri.fsPath.toLowerCase() === sFileIn.toLowerCase());
   if (oDoc) await oDoc.save();
-  const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
+  const sDirValid = path.join(path.dirname(sRootIn), 'dirMcshmgr', 'dirValid');
+  const aArgId = sIdIn ? ['--id', sIdIn] : [];
 
   if (oPick.sMode === 'fix') {
-    const nExit = await fRunTaskWait('fix current-FILE');
+    // the-arguments of the-task 'fix current-FILE', for any file (and concept)
+    const nExit = await fRunShellWait('fix ' + sWhat,
+      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRootIn, '--auto', '--file', sBase, ...aArgId, '--fix'], sRootIn);
     if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
     // createMcsh.txt line 4: "  N files written · dupname 3 · nest 0 · …"
     let sTotal = '';
@@ -1258,7 +1454,9 @@ async function fRunValidCurrent(fStatusIn) {
   }
 
   const nStart = Date.now();
-  await fRunTaskWait('validate current-FILE');
+  // the-arguments of the-task 'validate current-FILE', for any file (and concept)
+  await fRunShellWait('validate ' + sWhat,
+    ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFileIn), '--file', sBase, ...aArgId], sRootIn);
   await fOpenReport(sDirValid, nStart, fStatusIn, oPick.sMode === 'fix');
 }
 
@@ -1368,16 +1566,35 @@ let sDirLast = '';
  *   The-report is validatorMcsh --code <rule> on the-current file | the-dir | the-worldview,
  *   in a-new browser tab.
  *   The-dir: the-current file's dir is highlighted, any dir of the-worldview can be chosen.
- * INPUT: fStatusIn: it shows a-message; sScopeIn: 'file' | 'dir' | 'worldview'.
+ *   validate-concept-with-rule: as validate-file-with-rule, with --id: the-concept of the-URL bar (asked),
+ *   fixed and reported only inside it.
+ *   validate-directory | validate-worldview | validate-list (bRuleIn false): every rule, no rule
+ *   asked; the-fix is createMcsh --auto (the-unambiguous fixes).
+ * INPUT: fStatusIn: it shows a-message; sScopeIn: 'concept' | 'file' | 'dir' | 'worldview' | 'list';
+ *   bRuleIn: one rule (asked) | every rule.
  */
-async function fRunValidRule(fStatusIn, sScopeIn = 'file') {
-  const sRoot = await vscode.commands.executeCommand('mcshv.currentWorldview');
-  if (!sRoot) return fStatusIn('no current file to validate');
-  const sFile = await vscode.commands.executeCommand('mcshv.currentFile');
+async function fRunValidRule(fStatusIn, sScopeIn = 'file', bRuleIn = true) {
+  const sRootCur = await vscode.commands.executeCommand('mcshv.currentWorldview');
+  if (!sRootCur) return fStatusIn('no current file to validate');
+  // concept | file | directory | list | worldview, -with-rule or not
+  const sCmd = `validate-${sScopeIn === 'dir' ? 'directory' : sScopeIn}${bRuleIn ? '-with-rule' : ''}`;
+  // the-worldview: asked for validate-worldview(-with-rule), the-current one prefilled
+  const sRoot = sScopeIn === 'worldview'
+    ? await fPromptWorldviewValid(sRootCur, sCmd, fStatusIn)
+    : sRootCur;
+  if (!sRoot) return;
   const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
-  const sCmd = `validate-${sScopeIn === 'dir' ? 'directory' : sScopeIn}-with-rule`;   // file | directory | list | worldview
+  // the-concept: asked, the-one of the-URL bar prefilled ('' id = the-whole file)
+  const oConcept = sScopeIn === 'concept' ? await fPromptConceptValid(sRoot, sCmd, fStatusIn) : null;
+  if (sScopeIn === 'concept' && !oConcept) return;
+  const aArgId = oConcept && oConcept.sId ? ['--id', oConcept.sId] : [];
+  // the-file: asked, the-current one prefilled; the-other scopes use the-current file
+  const sFile = oConcept ? oConcept.sFile
+    : sScopeIn === 'file' ? await fPromptFileValid(sRoot, sCmd, fStatusIn)
+    : await vscode.commands.executeCommand('mcshv.currentFile');
+  if (sScopeIn === 'file' && !sFile) return;
   // the-worldview is the-dir '' of itself: the-same report and save as a-dir
-  const bDirIn = sScopeIn !== 'file';
+  const bDirIn = sScopeIn !== 'file' && sScopeIn !== 'concept';
 
   // the-dir: current file's dir first highlighted (else the-last chosen), any other can be chosen
   let sDirRel = '';
@@ -1418,17 +1635,67 @@ async function fRunValidRule(fStatusIn, sScopeIn = 'file') {
   // what the-run is on: the-file, the-dir, the-list or the-worldview
   const sBase = sScopeIn === 'worldview' ? path.basename(sRoot)
     : sScopeIn === 'list' ? `${sListRel} (${nListEntry} entries)`
-    : bDirIn ? sDirRel : path.basename(sFile || '');
+    : bDirIn ? sDirRel : path.basename(sFile || '') + (aArgId.length ? '#' + aArgId[1] : '');
 
+  // every rule (bRuleIn false): no rule asked, the-fix is --auto
+  const oRule = bRuleIn ? await fPickRuleValid(sDirValid, sCmd + ': ' + sBase, fStatusIn) : { sCode: '' };
+  if (!oRule) return;                                     // Escape | no rules: nothing
+  const sWhatRule = oRule.sCode || 'every rule';
+  const aArgFix = bRuleIn ? fArgFix(oRule.sCode) : ['--auto'];
+  const aArgCode = bRuleIn ? ['--code', oRule.sCode] : [];
+  const aoPick = [
+    { label: 'report', description: 'only report ' + sWhatRule, bFix: false },
+    { label: 'fix and report', description: 'createMcsh ' + aArgFix.join(' ') + (bRuleIn ? '' : ' (unambiguous)') + ', then report' +
+      (sScopeIn === 'worldview' ? ' · EVERY file of the worldview' : '') +
+      (aArgId.length ? ' · only inside #' + aArgId[1] : ''), bFix: true }
+  ];
+  if (sScopeIn === 'list') aoPick.push({ label: 'edit list', description: 'open ' + sListRel, bEdit: true });
+  const oPick = await vscode.window.showQuickPick(aoPick, { placeHolder: sCmd + ': ' + sWhatRule + ': ' + sBase });
+  if (!oPick) return;
+  if (oPick.bEdit) return fOpenList();
+
+  // save what the-run reads: the-file, or every open file of the-dir
+  const sDirAbs = path.join(sRoot, sDirRel);
+  for (const oDoc of vscode.workspace.textDocuments.filter((oIn) => oIn.isDirty)) {
+    const bIn = bDirIn ? (oDoc.uri.fsPath + path.sep).toLowerCase().startsWith((sDirAbs + path.sep).toLowerCase())
+      : oDoc.uri.fsPath.toLowerCase() === sFile.toLowerCase();
+    if (bIn) await oDoc.save();
+  }
+  const aArgWhere = sScopeIn === 'worldview' ? ['--all'] : sScopeIn === 'list' ? ['--list', sListRel]
+    : bDirIn ? ['--dir', sDirRel] : ['--file', path.basename(sFile), ...aArgId];
+
+  if (oPick.bFix) {
+    const nExit = await fRunShellWait('fix ' + sWhatRule + ' ' + sBase,
+      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRoot, ...aArgFix, ...aArgWhere, '--fix'], sRoot);
+    if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
+    // createMcsh.txt line 4: "  N files written · …"
+    let sTotal = '';
+    try { sTotal = fs.readFileSync(path.join(sDirValid, 'createMcsh.txt'), 'utf8').split('\n')[3].trim(); } catch (oErr) { /* no report */ }
+    fStatusIn('fix ' + sWhatRule + ': ' + (sTotal || 'done') + ' (createMcsh.txt)');
+  }
+
+  const nStart = Date.now();
+  await fRunShellWait('validate ' + sWhatRule + ' ' + sBase, sScopeIn === 'list'
+    ? ['../dirMcshmgr/dirValid/validatorMcsh', sRoot, '--list', sListRel, ...aArgCode]
+    : bDirIn
+    ? ['../dirMcshmgr/dirValid/validatorMcsh', sDirAbs, ...aArgCode]
+    : ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', path.basename(sFile), ...aArgId, ...aArgCode], sRoot);
+  await fOpenReport(sDirValid, nStart, fStatusIn, oPick.bFix);
+}
+
+/**
+ * DOING: it asks a-rule of the-validator: alphabetically by code, the-last chosen highlighted, not moved.
+ * OUTPUT: { sCode, … } | null (Escape, or no rules: a-message).
+ */
+async function fPickRuleValid(sDirValid, sWhatIn, fStatusIn) {
   const aoRule = fReadRuleAll(sDirValid);
-  if (!aoRule.length) return fStatusIn('no rules found in dirValid/structural*.js');
-  // alphabetically by code; the-last chosen is highlighted, not moved
+  if (!aoRule.length) { fStatusIn('no rules found in dirValid/structural*.js'); return null; }
   aoRule.sort((oA, oB) => oA.sCode.localeCompare(oB.sCode, 'en'));
   const oQp = vscode.window.createQuickPick();
   oQp.items = aoRule.map((oIn) => ({
     label: oIn.sCode, description: oIn.sDesc, sCode: oIn.sCode
   }));
-  oQp.placeholder = sCmd + ': ' + sBase + ': choose rule';
+  oQp.placeholder = sWhatIn + ': choose rule';
   oQp.matchOnDescription = true;
   const nItemLast = oQp.items.findIndex((oIn) => oIn.sCode === sCodeLast);
   const oRule = await new Promise((fResolve) => {
@@ -1443,46 +1710,9 @@ async function fRunValidRule(fStatusIn, sScopeIn = 'file') {
     oQp.activeItems = [oQp.items[Math.min(nItemLast + nRowHalf, oQp.items.length - 1)]];
     setTimeout(() => { oQp.activeItems = [oQp.items[nItemLast]]; }, 50);
   });
-  if (!oRule) return;                                     // Escape: nothing
+  if (!oRule) return null;                                // Escape: nothing
   sCodeLast = oRule.sCode;
-  const aArgFix = fArgFix(oRule.sCode);
-  const aoPick = [
-    { label: 'report', description: 'only report ' + oRule.sCode, bFix: false },
-    { label: 'fix and report', description: 'createMcsh ' + aArgFix.join(' ') + ', then report' +
-      (sScopeIn === 'worldview' ? ' · EVERY file of the worldview' : ''), bFix: true }
-  ];
-  if (sScopeIn === 'list') aoPick.push({ label: 'edit list', description: 'open ' + sListRel, bEdit: true });
-  const oPick = await vscode.window.showQuickPick(aoPick, { placeHolder: oRule.sCode + ': ' + sBase });
-  if (!oPick) return;
-  if (oPick.bEdit) return fOpenList();
-
-  // save what the-run reads: the-file, or every open file of the-dir
-  const sDirAbs = path.join(sRoot, sDirRel);
-  for (const oDoc of vscode.workspace.textDocuments.filter((oIn) => oIn.isDirty)) {
-    const bIn = bDirIn ? (oDoc.uri.fsPath + path.sep).toLowerCase().startsWith((sDirAbs + path.sep).toLowerCase())
-      : oDoc.uri.fsPath === sFile;
-    if (bIn) await oDoc.save();
-  }
-  const aArgWhere = sScopeIn === 'worldview' ? ['--all'] : sScopeIn === 'list' ? ['--list', sListRel]
-    : bDirIn ? ['--dir', sDirRel] : ['--file', sBase];
-
-  if (oPick.bFix) {
-    const nExit = await fRunShellWait('fix ' + oRule.sCode,
-      ['../dirMcshmgr/dirValid/createMcsh.mjs', sRoot, ...aArgFix, ...aArgWhere, '--fix'], sRoot);
-    if (nExit !== 0) return fStatusIn('fix failed, see the terminal');
-    // createMcsh.txt line 4: "  N files written · …"
-    let sTotal = '';
-    try { sTotal = fs.readFileSync(path.join(sDirValid, 'createMcsh.txt'), 'utf8').split('\n')[3].trim(); } catch (oErr) { /* no report */ }
-    fStatusIn('fix ' + oRule.sCode + ': ' + (sTotal || 'done') + ' (createMcsh.txt)');
-  }
-
-  const nStart = Date.now();
-  await fRunShellWait('validate ' + oRule.sCode, sScopeIn === 'list'
-    ? ['../dirMcshmgr/dirValid/validatorMcsh', sRoot, '--list', sListRel, '--code', oRule.sCode]
-    : bDirIn
-    ? ['../dirMcshmgr/dirValid/validatorMcsh', sDirAbs, '--code', oRule.sCode]
-    : ['../dirMcshmgr/dirValid/validatorMcsh', path.dirname(sFile), '--file', sBase, '--code', oRule.sCode], sRoot);
-  await fOpenReport(sDirValid, nStart, fStatusIn, oPick.bFix);
+  return oRule;
 }
 
 function fDeactivate() {}

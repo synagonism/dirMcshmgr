@@ -115,12 +115,15 @@ import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh, fFormalMvrwName01, fCodeFull } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
 import { fReadListValidate } from './listValidate.js'
+import { fFindConceptRange } from './conceptRange.js'
 import { execFileSync } from 'child_process'
 import { fFindInheritAttr } from './inheritMcsh.mjs'
 
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-43-0.2026-11-17: --auto also with --dir, --list, --all (validate-directory | -list | -worldview)',
+    'createMcsh.mjs.0-42-0.2026-11-17: --id idX with --file: only the-edits inside concept idX (its section | paragraph, conceptRange.js); other files are not written',
     'createMcsh.mjs.0-41-0.2026-11-16: rule codes with their name; --code MvrwId13 still works (fCodeFull)',
     'createMcsh.mjs.0-40-0.2026-11-16: MvrwId01 fix: space \' - . to "_"',
     'createMcsh.mjs.0-39-0.2026-11-16: MvrwId01 id_char fix (look-alike letters, space and "-" to "_"), MvrwId03 removed',
@@ -2245,9 +2248,17 @@ async function fMain() {
   // --list dirManager/validate.txt: the-files and dirs of that list (listValidate.js)
   const nIdxList = aArg.indexOf('--list');
   const sPathList = nIdxList === -1 ? '' : String(aArg[nIdxList + 1] ?? '');
+  // --id idX (with --file): only the-edits inside concept idX, its section | paragraph (conceptRange.js)
+  const nIdxId = aArg.indexOf('--id');
+  const sIdConcept = nIdxId === -1 ? '' : String(aArg[nIdxId + 1] ?? '').replace(/^#/, '');
   const sNameDir = aArg.find((sArg, nI) => !sArg.startsWith('--') &&
     (nIdxFile === -1 || nI !== nIdxFile + 1) && (nIdxCode === -1 || nI !== nIdxCode + 1) &&
-    (nIdxDir === -1 || nI !== nIdxDir + 1) && (nIdxList === -1 || nI !== nIdxList + 1));
+    (nIdxDir === -1 || nI !== nIdxDir + 1) && (nIdxList === -1 || nI !== nIdxList + 1) &&
+    (nIdxId === -1 || nI !== nIdxId + 1));
+  if (sIdConcept && !sNameFileOnly) {
+    console.error('--id needs --file McshDir000000');
+    process.exit(1);
+  }
   // the-files of the-list, as lower-case absolute paths
   let oSetPathList = null;
   if (sPathList && sNameDir) {
@@ -2271,8 +2282,8 @@ async function fMain() {
   }
   // no mode: the-creation-paras of evoluting-sections
   const sModeOne = aModeGiven[0] ?? 'evoluting';
-  if (sModeOne === 'auto' && !sNameFileOnly) {
-    console.error('--auto needs --file McshDir000000');
+  if (sModeOne === 'auto' && !(sNameFileOnly || sDirOnly || oSetPathList || bAll)) {
+    console.error('--auto needs --file McshDir000000, --dir dirXxx, --list dirManager/validate.txt or --all');
     process.exit(1);
   }
   const aMode = sModeOne === 'auto' ? aModeAuto : [sModeOne];
@@ -2311,8 +2322,9 @@ async function fMain() {
     console.log('  --dupname    MvreName01_duplicate_line: a-name-line twice in ONE para, the-line without date | info deleted');
     console.log('  --namecomma  MvreName02_comma: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
     console.log('  --attribute  MvrwMain10_attribute: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
-  console.log('  --auto       with --file: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
+  console.log('  --auto       with --file | --dir | --list | --all: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
     console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
+    console.log('  --id X       with --file: only the-edits inside concept X (its section | paragraph); other files are not written');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
     console.log('  OUTPUT: dirValid/createMcsh.txt');
     process.exit(1);
@@ -2326,6 +2338,22 @@ async function fMain() {
    * DOING: it counts the-notes of a-file, checks its new text and writes it.
    */
   function fWriteFile(sPathFileIn, sRawIn, sNameShortIn, oPlanIn) {
+    // --id: only the-edits inside the-concept, in its file; the-range from THIS text (an-earlier step moved lines)
+    if (sIdConcept) {
+      const oRange = sNameShortIn === sNameFileOnly ? fFindConceptRange(sRawIn, sIdConcept) : undefined;
+      if (oRange !== null) {
+        const fIn = nLineIn => oRange !== undefined && nLineIn >= oRange.nLineFrom && nLineIn <= oRange.nLineTo;
+        const aoKeep = oPlanIn.aoEdit.filter(oEdit => fIn(oEdit.nAt + 1) && fIn(oEdit.nAt + Math.max(oEdit.nDel, 1)));
+        // a-note "KIND  File:line  …" of this file outside the-concept is dropped; a-note without a-line stays
+        const aoNoteKeep = oPlanIn.aoNote.filter(sNote => {
+          const aM = sNote.match(/\s(\S+?):(\d+)\b/);
+          return !aM || aM[1] !== sNameShortIn || fIn(Number(aM[2]));
+        });
+        const nOut = oPlanIn.aoEdit.length - aoKeep.length;
+        if (nOut) aLineOut.push(`OUTSIDE ${sNameShortIn}  ${nOut} edit(s) outside #${sIdConcept} NOT written`);
+        oPlanIn = { aoEdit: aoKeep, aoNote: aoNoteKeep, sRawNew: nOut ? fApplyEdit(sRawIn.split('\n'), aoKeep) : oPlanIn.sRawNew };
+      }
+    }
     aLineOut.push(...oPlanIn.aoNote);
     for (const sNote of oPlanIn.aoNote) {
       const sKind = sNote.split(' ')[0];
