@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-11-0.2026-11-17: INH-TITLENAME: an-old number of another word X\x27KK_y (title NN_) loses it: X\x27y',
     'inheritMcsh.mjs.0-10-0.2026-11-17: INH-LAST: a-generic has the-name Mmn\'NN_last; --fix writes it',
     'inheritMcsh.mjs.0-9-0.2026-11-17: INH-OWNNONUM: an-own attribute without number gets the-next NN after the-chain; --fix writes it',
     'inheritMcsh.mjs.0-8-0.2026-11-16: fFindInheritAttr remembers its result while the-files are unchanged',
@@ -671,7 +672,7 @@ function fApplyFix(aoFileIn, aoIssueIn) {
  *   - without:
  *       * McshEngl.relation'02_valence,
  *       * McshEngl.relation'valence,
- *   a-name "relation'06_valence" of an-old number is renamed; an-old "Main!=desc" keeps desc as "desc!⇒Main".
+ *   a-name "relation'06_valence" of an-old number is renamed; "relation'04_other" (another word) loses it: relation'other; an-old "Main!=desc" keeps desc as "desc!⇒Main".
  * OUTPUT: { aoPlan: [{ oFile, oNode, nPos, sParaOld, sParaNew, aChange }], aoHand: [{ oNode, sWhy }] }
  */
 function fCheckTitleName(aoFileIn, fInFileIn) {
@@ -726,6 +727,31 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
         }
         sPara = sPara.split(`!=${oL.sBase},`).join(`!=${sTn},`).split(`!⇒${oL.sBase},`).join(`!⇒${sTn},`);
       }
+      // 1b. an-old number of ANOTHER word: Ogsmlago'04_grammarOrgm (title 09_grammar) → Ogsmlago'grammarOrgm;
+      //     when Ogsmlago'grammarOrgm is already a-line, the-old line is deleted
+      const rOldOther = new RegExp(`^${fEsc(sOfF)}'(\\d{2})_(.+)$`);
+      let bHandOld = false;
+      for (const oL of fLines()) {
+        const aOld = oL.sBase.match(rOldOther);
+        // NOT a-double number: title "01_05_skill of recipe" has the-names recipe'05_skill, foodCooked'01_00_recipe
+        if (!aOld || aOld[1] === oNode.sNum || oL.sBase === sTn || oL.sBase === sPlain || /^\d{2}_/.test(aOld[2])) continue;
+        const sNoNum = `${sOfF}'${aOld[2]}`;
+        if (fLines().some(oL2 => oL2.sBase === sNoNum)) {
+          const nAt = sPara.indexOf(oL.sRaw);
+          const nLineStart = sPara.lastIndexOf('\n', nAt);
+          sPara = sPara.slice(0, nLineStart) + sPara.slice(nAt + oL.sRaw.length);
+          aChange.push(`deleted ${oL.sBase} (old number)`);
+        } else if (oCountName.has(sNoNum)) {
+          aoHand.push({ oNode, sWhy: `the-old number ${oL.sBase}: ${sNoNum} is a-name of another concept` });
+          bHandOld = true; break;
+        } else {
+          sPara = sPara.split(`McshEngl.${oL.sBase}!`).join(`McshEngl.${sNoNum}!`)
+            .split(`McshEngl.${oL.sBase},`).join(`McshEngl.${sNoNum},`);
+          aChange.push(`renamed ${oL.sBase} → ${sNoNum} (old number)`);
+        }
+        sPara = sPara.split(`!=${oL.sBase},`).join(`!=${sNoNum},`).split(`!⇒${oL.sBase},`).join(`!⇒${sNoNum},`);
+      }
+      if (bHandOld) continue;
       // the-main-name: the-most frequent target of !⇒
       const oCountTarget = new Map();
       for (const oL of fLines()) {

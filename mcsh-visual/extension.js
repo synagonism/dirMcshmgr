@@ -1303,6 +1303,34 @@ function fRunTaskWait(sLabelIn) {
 }
 
 /**
+ * DOING: an-input box of the-valid commands that ALSO accepts with a-mouse click: a-quick-pick
+ *   whose one line shows the-value as typed and the-explanation; a-click on it = Enter.
+ * INPUT: oOptIn: { prompt, value } (as showInputBox).
+ * OUTPUT: the-value, or undefined (Escape).
+ */
+function fInputClickValid(oOptIn) {
+  const sPrompt = oOptIn.prompt || '';
+  const oQp = vscode.window.createQuickPick();
+  const fItem = (sIn) => [{
+    label: '$(check) ' + (sIn.trim() || '(empty)'),
+    detail: sPrompt + ' · click or Enter',
+    alwaysShow: true
+  }];
+  oQp.placeholder = sPrompt;
+  oQp.value = oOptIn.value || '';
+  if (oQp.value) oQp.valueSelection = [0, oQp.value.length];
+  oQp.items = fItem(oQp.value);
+  oQp.ignoreFocusOut = true;
+  oQp.onDidChangeValue((sIn) => { oQp.items = fItem(sIn); });
+  return new Promise((fResolve) => {
+    let bDone = false;
+    oQp.onDidAccept(() => { bDone = true; fResolve(oQp.value); oQp.hide(); });
+    oQp.onDidHide(() => { if (!bDone) fResolve(undefined); oQp.dispose(); });
+    oQp.show();
+  });
+}
+
+/**
  * DOING: it asks the-file to validate: the-current one prefilled (relative to the-worldview),
  *   any other can be written (fResolveFileValid).
  * OUTPUT: the-absolute path, or '' (Escape, or no such file: a-message).
@@ -1310,7 +1338,7 @@ function fRunTaskWait(sLabelIn) {
 async function fPromptFileValid(sRootIn, sCmdIn, fStatusIn) {
   const sFileCur = await vscode.commands.executeCommand('mcshv.currentFile');
   const sFileCurRel = sFileCur ? path.relative(sRootIn, sFileCur).split(path.sep).join('/') : '';
-  const sInput = await vscode.window.showInputBox({
+  const sInput = await fInputClickValid({
     prompt: sCmdIn + ': the current file, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html | McshLag000005',
     value: sFileCurRel,
     valueSelection: sFileCurRel ? [0, sFileCurRel.length] : undefined,
@@ -1342,7 +1370,7 @@ function fFindWorldview(sPathIn) {
  */
 async function fPromptWorldviewValid(sRootIn, sCmdIn, fStatusIn) {
   const sName = path.basename(sRootIn);
-  const sInput = await vscode.window.showInputBox({
+  const sInput = await fInputClickValid({
     prompt: sCmdIn + ': the current worldview, or another: dirMcsh | C:/dirNodews/dirMcsh | a file of it (McshLag000005, descr!@file#id)',
     value: sName,
     valueSelection: [0, sName.length],
@@ -1412,7 +1440,7 @@ async function fPromptConceptValid(sRootIn, sCmdIn, fStatusIn) {
   const fNorm = (sIn) => String(sIn || '').replace(/\\/g, '/').toLowerCase();
   const sHash = sHashVisual && fNorm(sFileCur) === fNorm(sVisualFile) ? '#' + sHashVisual : '';
   const sValue = sFileCur ? path.relative(sRootIn, sFileCur).split(path.sep).join('/') + sHash : '';
-  const sInput = await vscode.window.showInputBox({
+  const sInput = await fInputClickValid({
     prompt: sCmdIn + ': the concept of the URL bar, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html#id',
     value: sValue,
     valueSelection: sValue ? [0, sValue.length] : undefined,

@@ -1,10 +1,20 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --name MvrwSect03_name_miss --file McshTchInf000018 dry-run: C:/dirNodews/dirMcsh
+  createMcsh --code MvrwGstr03_inherited_attr --file McshLag000005 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files to write · 0 names created · 3 skipped
-  nothing written: add --fix to write
+  0 files written · MvrwGstr03_inherited_attr: inheritMcsh titles changed: 0 · name:: paragraphs changed: 0 · NN_last names changed: 0 · 0 issues left, by hand · 0 skipped
+  written, no backup: see git diff
 
-=== SKIP (3) — skipped, with why: fix by hand
-  McshTchInf000018:5130  #idEthmstdong heading "Mist'doing" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
-  McshTchInf000018:5334  #idEthpritdong heading "Parity'DOING" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
-  McshTchInf000018:5716  #idEthtfldong heading "Truffle'doing" is an-attribute heading: its main-name follows a-rule (Xdoing, Xevolg, Xsrtr ...): give the-name by hand
+=== INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary
+  titles changed: 0
+  name:: paragraphs changed: 0
+  NN_last names changed: 0
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
+  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
+  written: see dirValid/inheritMcsh.txt
+
+=== NOISSUE (1) — the-rule has no issue in the-file
+  McshLag000005  MvrwGstr03_inherited_attr: nothing to fix
