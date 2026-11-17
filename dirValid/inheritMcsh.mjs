@@ -38,7 +38,7 @@
  * OUTPUT: the-report in dirValid/inheritMcsh.txt, overwritten on every run;
  *   with --fix it writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free.
  * RUN:
- *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--file McshDir000000] [--local 3]
+ *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--fix-num] [--sub Mmn] [--chain Mmn] [--file McshDir000000] [--local 3]
  */
 
 import moFs from 'fs'
@@ -51,6 +51,10 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-15-0.2026-11-17: INH-OWNNUM --fix-num shifts ALL own numbers of the-specific (order kept); a-shift follows down',
+    'inheritMcsh.mjs.0-14-0.2026-11-17: MvrwGstr03 WRONGNUM, OWNNUM messages give the-fix: --concept Mmn --fix-num --fix-name',
+    'inheritMcsh.mjs.0-13-0.2026-11-17: the-attributes inside an-evoluting section are NOT numbered (no NONUM, OWNNONUM, ...)',
+    'inheritMcsh.mjs.0-12-0.2026-11-17: --chain Mmn (inheritChain.txt); --fix-num WRONGNUM+OWNNUM; --sub Mmn a-concept-tree only',
     'inheritMcsh.mjs.0-11-0.2026-11-17: INH-TITLENAME: an-old number of another word X\x27KK_y (title NN_) loses it: X\x27y',
     'inheritMcsh.mjs.0-10-0.2026-11-17: INH-LAST: a-generic has the-name Mmn\'NN_last; --fix writes it',
     'inheritMcsh.mjs.0-9-0.2026-11-17: INH-OWNNONUM: an-own attribute without number gets the-next NN after the-chain; --fix writes it',
@@ -229,7 +233,7 @@ function fReadFile(sPathIn) {
   }
   for (const oNode of aoNode) {
     const oWhole = oNode.sIdWhole ? oNodeById[oNode.sIdWhole] : null;
-    if (oWhole && oWhole !== oNode) oWhole.aoChild.push(oNode);
+    if (oWhole && oWhole !== oNode) { oWhole.aoChild.push(oNode); oNode.oWholeNode = oWhole; }
   }
   // the-text-references "name!@McshCor000012#idMdl014" (or "name!@#idMdl014" in the-same file)
   const aoRef = [];
@@ -428,8 +432,15 @@ function fCheck(aoFileIn, nLocalMinIn) {
   const oCountRefine = {};  // sKeyGenAttr → { label, nCount }
   let nSpecific = 0, nAttrSpec = 0, nMatch = 0;
 
+  // a-node inside an-"evoluting of X" section (itself included): its attributes are NOT numbered
+  function fInEvoluting(oNodeIn) {
+    for (let oN = oNodeIn, nI = 0; oN && nI < 30; oN = oN.oWholeNode, nI++) {
+      if (oN.bAttr && /^evoluting$/i.test(oN.sAttrWord.trim())) return true;
+    }
+    return false;
+  }
   for (const oNode of aoNodeAll) {
-    if (oNode.bTree || oNode.aoGeneric.length === 0) continue;
+    if (oNode.bTree || oNode.aoGeneric.length === 0 || fInEvoluting(oNode)) continue;
     const aoChain = fFindChain(oNode);
     const oGenNum = aoChain.find(fIsNumbered);
     if (!oGenNum) continue;
@@ -453,6 +464,8 @@ function fCheck(aoFileIn, nLocalMinIn) {
       const oM = fMatchAttr(oC, aoSpace);
       return !oM || oM.oGenAttr.sNum !== oC.sNum;
     });
+    // the-own numbered attributes; those NOT after the-chain's last number (INH-OWNNUM)
+    const aoOwnNum = [], aoOwnNumIssue = [];
     for (const oAttr of oNode.aoChild) {
       if (!oAttr.bAttr || oAttr.bTree) continue;
       nAttrSpec++;
@@ -460,8 +473,9 @@ function fCheck(aoFileIn, nLocalMinIn) {
       if (!oMatch) {
         if (oAttr.sNum) {
           // an-own attribute is numbered AFTER the-last number of the-inherited-attr-chain
-          if (Number(oAttr.sNum) <= nNumLast) ooIssue['INH-OWNNUM'].push({ oAttr, sNumLast: String(nNumLast).padStart(2, '0'),
-            sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) });
+          aoOwnNum.push(oAttr);
+          if (Number(oAttr.sNum) <= nNumLast) aoOwnNumIssue.push({ oAttr, sNumLast: String(nNumLast).padStart(2, '0'),
+            sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr), sKeyGen: oSpaceLast.oGenAttr.sKey });
           aoOrder.push({ oAttr, sNum: oAttr.sNum }); continue;   // own number: the-author decided
         }
         // an-own attribute without number gets the-next number AFTER the-chain and the-own numbers;
@@ -480,7 +494,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
       const { oGen, oGenAttr } = oMatch;
       const sLabel = fLabel(oGen, oGenAttr);
       (oCountRefine[oGenAttr.sKey] ??= { sLabel, nCount: 0 }).nCount++;
-      const oIssue = { oAttr, sNumNew: oGenAttr.sNum, sLabel };
+      const oIssue = { oAttr, sNumNew: oGenAttr.sNum, sLabel, sKeyGen: oGenAttr.sKey };
       if (!oAttr.sNum) {
         // the-NN is taken by another attribute of the-specific: --fix skips it
         const oTaken = oNumTaken[oGenAttr.sNum];
@@ -493,6 +507,19 @@ function fCheck(aoFileIn, nLocalMinIn) {
       if (fIsEmpty(oAttr)) ooIssue['INH-EMPTY'].push(oIssue);
       // a-taken NN will NOT be its number: no key, it stays where it is
       if (!oIssue.sTaken && !oIssue.bOwn) aoOrder.push({ oAttr, sNum: oAttr.sNum ?? oGenAttr.sNum });
+    }
+    // INH-OWNNUM: ALL own numbers of the-specific shift by the-same amount, so their order stays:
+    //   the-smallest becomes the-chain's last + 1 (06_input 07_output .. 10_method, last 07 → 08 .. 12)
+    if (aoOwnNumIssue.length) {
+      const nShift = nNumLast + 1 - Math.min(...aoOwnNum.map(oA => Number(oA.sNum)));
+      const aoShift = aoOwnNum.map(oA => ({ oAttr: oA, sNumNew: String(Number(oA.sNum) + nShift).padStart(2, '0'),
+        sLabel: aoOwnNumIssue[0].sLabel, sKeyGen: aoOwnNumIssue[0].sKeyGen }));
+      for (const oIssue of aoOwnNumIssue) {
+        oIssue.sNumNew = aoShift.find(oS => oS.oAttr === oIssue.oAttr).sNumNew;
+        oIssue.nShift = nShift;
+        oIssue.aoShift = aoShift;
+        ooIssue['INH-OWNNUM'].push(oIssue);
+      }
     }
     for (let nI = 1; nI < aoOrder.length; nI++) {
       if (aoOrder[nI].sNum < aoOrder[nI - 1].sNum) {
@@ -545,7 +572,87 @@ function fCheck(aoFileIn, nLocalMinIn) {
         nLine: oRef.nLine, sTitle: oRef.sRaw }, sLabel: sWhy });
     }
   }
-  return { ooIssue, oCountRefine, nSpecific, nAttrSpec, nMatch, nNode: aoNodeAll.length };
+  return { ooIssue, oCountRefine, nSpecific, nAttrSpec, nMatch, nNode: aoNodeAll.length,
+    fFindChain, oNodeByMain, oNodeByName };
+}
+
+/**
+ * DOING: the-inheritance-chain of a-concept, per generic per number, farthest generic first:
+ *   "=== bodyNo:" then its numbered attributes as links, down to the-concept itself.
+ *   - new: a-number the-chain gives first;
+ *   - "~ ... overrides NN": a-number a-farther generic gave, renamed | refined here;
+ *   - "?? word → NN_": an-own attribute without number, the-number it gets.
+ * INPUT: sChainIn: a-main-name (Hmmdlago), an-English-name, or McshDir000000#idX.
+ * OUTPUT: the-lines of the-report.
+ */
+function fChainReport(aoFileIn, oResultIn, sChainIn, sNameDirIn, sUrlBaseIn) {
+  const { fFindChain, oNodeByMain, oNodeByName } = oResultIn;
+  const ooFile = {};
+  for (const oFile of aoFileIn) ooFile[oFile.sNameShort] = oFile;
+  const aLine = [];
+  // the-concepts the-input names
+  let aoNode;
+  const aRef = sChainIn.match(/^(Mcsh[A-Za-z]*\d{6})(?:\.last\.html)?#(id\S+)$/);
+  if (aRef) aoNode = ooFile[aRef[1]]?.oNodeById[aRef[2]] ? [ooFile[aRef[1]].oNodeById[aRef[2]]] : [];
+  else aoNode = oNodeByMain[sChainIn] ?? oNodeByName[sChainIn] ?? [];
+  aoNode = aoNode.filter(oN => !oN.bTree && !oN.bAttr);
+  if (aoNode.length === 0) return [`inheritance-chain: NO concept named "${sChainIn}"`];
+  const fUrl = oN => sUrlBaseIn + moPath.relative(sNameDirIn, ooFile[oN.sNameShort].sPath).replace(/\\/g, '/') + '#' + oN.sId;
+  // the-title-name X'NN_word of an-attribute "NN_word of X"
+  const fTitleName = oA => {
+    const aT = oA.sTitle.match(rTitleAttr);
+    return `${fFormalMvrwName01(aT[3].trim())}'${oA.sNum ? oA.sNum + '_' : ''}${fFormalMvrwName01(aT[2].trim())}`;
+  };
+  const fName = oN => oN.sMain || oN.sTitle;
+
+  for (const oNode of aoNode) {
+    // farthest first; the-concept last
+    const aoLevel = [...fFindChain(oNode).reverse(), oNode];
+    const nFirst = aoLevel.findIndex(oL => oL.aoChild.some(oC => oC.bAttr && oC.sNum && !oC.bTree));
+    aLine.push(`inheritance-chain of ${fName(oNode)} (${oNode.sNameShort}:${oNode.nLine} #${oNode.sId})`);
+    aLine.push(`  [${fName(oNode)}](${fUrl(oNode)})`);
+    aLine.push(`  chain: ${aoLevel.map(fName).join(' → ')}`);
+    if (nFirst === -1) { aLine.push('  NO numbered attributes in the-chain', ''); continue; }
+    if (nFirst > 0) aLine.push(`  without numbers: ${aoLevel.slice(0, nFirst).map(fName).join(', ')}`);
+    // the-numbers and attr-keys given so far → their title-name
+    const oNumBy = {};
+    const oKeyBy = {};
+    // the-attribute of the-NEAREST level with a-key of oA, as fMatchAttr
+    const fKeyNear = oA => [...oA.oSetAttrKey].map(sK => oKeyBy[sK]).filter(Boolean)
+      .sort((oX, oY) => oY.nLevel - oX.nLevel)[0]?.sName;
+    for (const [nLevel, oLevel] of aoLevel.slice(nFirst).entries()) {
+      aLine.push(`=== ${fName(oLevel)}:`);
+      const aoAttr = oLevel.aoChild.filter(oC => oC.bAttr && !oC.bTree);
+      const aoNum = aoAttr.filter(oA => oA.sNum).sort((oA, oB) => oA.sNum.localeCompare(oB.sNum));
+      const aOut = [];
+      const aoAdd = [];
+      for (const oA of aoNum) {
+        const sOver = oNumBy[oA.sNum] ?? fKeyNear(oA);
+        // a-chain attribute can change its name, NOT its number
+        const sNumOver = (sOver ?? '').match(/'(\d{2})_/)?.[1];
+        aOut.push(`  ${sOver ? '~ ' : ''}[${fTitleName(oA)}](${fUrl(oA)})${sOver ? `  overrides ${sOver}` : ''}` +
+          (sNumOver && sNumOver !== oA.sNum ? `  ✗ number must be ${sNumOver}_` : ''));
+        aoAdd.push(oA);
+      }
+      // one level at once: its numbers do NOT override each other
+      for (const oA of aoAdd) {
+        oNumBy[oA.sNum] = fTitleName(oA);
+        for (const sK of oA.oSetAttrKey) oKeyBy[sK] = { sName: fTitleName(oA), nLevel };
+      }
+      // own attributes without number: the-next numbers after the-chain and this level
+      let nNext = Math.max(0, ...Object.keys(oNumBy).map(Number));
+      for (const oA of aoAttr.filter(oA => !oA.sNum)) {
+        const sOver = fKeyNear(oA);
+        if (sOver) aOut.push(`  ?? [${fTitleName(oA)}](${fUrl(oA)})  inherits ${sOver}: its number`);
+        else if (/^(info[-_ ]?resource|doing|evoluting)$/i.test(oA.sAttrWord.trim()))
+          aOut.push(`  .. [${fTitleName(oA)}](${fUrl(oA)})`);
+        else aOut.push(`  ?? [${fTitleName(oA)}](${fUrl(oA)})  → ${String(++nNext).padStart(2, '0')}_`);
+      }
+      aLine.push(...(aOut.length ? aOut : ['  (empty)']));
+    }
+    aLine.push(`  last: ${Math.max(0, ...Object.keys(oNumBy).map(Number)).toString().padStart(2, '0')}_`, '');
+  }
+  return aLine;
 }
 
 /**
@@ -638,6 +745,33 @@ function fApplyOrder(aoFileIn, aoIssueIn) {
     if (sTextNew !== sText) moFs.writeFileSync(oFile.sPath, sTextNew);
   }
   return aoDone;
+}
+
+/**
+ * DOING: the-number-fixes of one pass that do NOT collide: a-new NN that another attribute of
+ *   the-same concept keeps (it does NOT move in this pass), or that two fixes give, waits.
+ * OUTPUT: the-issues to apply.
+ */
+function fFixableNum(aoIssueIn) {
+  const ooByWhole = new Map();
+  for (const oIssue of aoIssueIn) {
+    const sKey = oIssue.oAttr.sNameShort + '#' + oIssue.oAttr.sIdWhole;
+    if (!ooByWhole.has(sKey)) ooByWhole.set(sKey, []);
+    ooByWhole.get(sKey).push(oIssue);
+  }
+  const aoOut = [];
+  for (const aoIssue of ooByWhole.values()) {
+    const oSetMove = new Set(aoIssue.map(oI => oI.oAttr));
+    const aoSib = aoIssue[0].oAttr.oWholeNode?.aoChild ?? [];
+    const oSetKeep = new Set(aoSib.filter(oC => oC.bAttr && oC.sNum && !oSetMove.has(oC)).map(oC => oC.sNum));
+    const oSetNew = new Set();
+    for (const oIssue of aoIssue) {
+      if (oSetKeep.has(oIssue.sNumNew) || oSetNew.has(oIssue.sNumNew)) continue;
+      oSetNew.add(oIssue.sNumNew);
+      aoOut.push(oIssue);
+    }
+  }
+  return aoOut;
 }
 
 /**
@@ -907,21 +1041,28 @@ function fApplyLast(aoFileIn, aoIssueIn) {
 function fMain() {
   const aArg = process.argv.slice(2);
   const aArgPath = aArg.filter((sArg, nI) =>
-    !sArg.startsWith('--') && !['--file', '--local'].includes(aArg[nI - 1]));
+    !sArg.startsWith('--') && !['--file', '--local', '--chain', '--url', '--sub', '--concept'].includes(aArg[nI - 1]));
   const sNameDir = aArgPath[0];
   if (!sNameDir) {
     console.log('inheritMcsh.mjs - it checks the-inheritance of attributes from generic to specific concepts');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--file McshDir000000] [--local 3]');
+    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--fix-num] [--sub Mmn] [--chain Mmn] [--file McshDir000000] [--local 3]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --fix        writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free');
     console.log('  --delete-empty  deletes the-INH-EMPTY sections: NOT linked, English names only');
     console.log('  --fix-order  puts the-attribute-sections of INH-ORDER specifics in NN order');
     console.log("  --fix-name   writes the-title X'NN_attr of a-numbered attribute as its name (INH-TITLENAME)");
     console.log("  --fix-last   writes only the-name Mmn'NN_last of every generic (INH-LAST); --fix writes it too");
+    console.log('  --fix-num    renumbers INH-WRONGNUM (the-number of the-chain) and INH-OWNNUM (after the-chain)');
+    console.log('  --sub Mmn    report and fix ONLY concept Mmn, its specifics down the-tree and their attributes');
+    console.log('  --concept Mmn  report and fix ONLY concept Mmn and its attributes; with --fix-num an-attribute');
+    console.log('               that had the-old number of a-renumbered one follows it (anywhere)');
     console.log('  --file       report (and fix) one file only, given as McshDir000000');
     console.log('  --local      the-min count of specifics for INH-LOCAL (default 3)');
+    console.log('  --chain Mmn  ONLY the-inheritance-chain of a-concept, per generic per number (Hmmdlago,');
+    console.log('               RltnMapping or McshCor000005#idX), into dirValid/inheritChain.txt; NO fix');
+    console.log('  --url        the-base of its links (default http://localhost/dirMcsh/)');
     console.log('  OUTPUT: dirValid/inheritMcsh.txt, overwritten on every run');
     process.exit(1);
   }
@@ -935,11 +1076,45 @@ function fMain() {
   const nIdxLocal = aArg.indexOf('--local');
   const nLocalMin = nIdxLocal !== -1 ? Number(aArg[nIdxLocal + 1]) || 3 : 3;
 
+  const bFixNum = aArg.includes('--fix-num');
+  const nIdxSub = aArg.indexOf('--sub');
+  const aSub = nIdxSub !== -1 ? String(aArg[nIdxSub + 1] ?? '').split(',').map(sS => sS.trim()).filter(Boolean) : [];
+  // --concept Mmn: as --sub, WITHOUT its specifics
+  const nIdxConcept = aArg.indexOf('--concept');
+  if (nIdxConcept !== -1) aSub.push(...String(aArg[nIdxConcept + 1] ?? '').split(',').map(sS => sS.trim()).filter(Boolean));
+  const bSubTree = nIdxSub !== -1;
+  // --fix-num: the-attributes renumbered in this run, file#id → old NN; their followers too
+  const oMoved = new Map();
+
   // ── read ALL files: a-generic may live in another file than its specific ─
-  const fInFile = oNode => !sNameFileOnly || oNode.sNameShort === sNameFileOnly;
+  // --sub: ONLY the-concepts named and their specifics, down the-whole tree, with their attributes
+  let oSetSub = null;
+  // an-attribute renumbered in this run is in, wherever it is (its name:: follows)
+  const fInFile = oNode => oMoved.has(oNode.sKey) || ((!sNameFileOnly || oNode.sNameShort === sNameFileOnly) &&
+    (!oSetSub || oSetSub.has(oNode) || (oNode.bAttr && oSetSub.has(oNode.oWholeNode))));
   function fReadCheck() {
     const aoFileRead = fFindFile_all(sNameDir).map(fReadFile);
     const oResult = fCheck(aoFileRead, nLocalMin);
+    if (aSub.length) {
+      const aoNodeAll = aoFileRead.flatMap(oFile => oFile.aoNode);
+      const ooSpec = new Map();
+      for (const oNode of aoNodeAll) {
+        for (const oGen of oNode.aoGeneric) { if (!ooSpec.has(oGen)) ooSpec.set(oGen, []); ooSpec.get(oGen).push(oNode); }
+      }
+      oSetSub = new Set();
+      const aoTodo = aSub.flatMap(sS => oResult.oNodeByMain[sS] ?? oResult.oNodeByName[sS] ?? []);
+      if (aoTodo.length === 0) throw new Error(`--sub: NO concept named ${aSub.join(',')}`);
+      while (aoTodo.length) {
+        const oN = aoTodo.pop();
+        if (oSetSub.has(oN)) continue;
+        oSetSub.add(oN);
+        if (bSubTree) aoTodo.push(...(ooSpec.get(oN) ?? []));
+      }
+    }
+    // a-follower: an-attribute that had the-old number of a-renumbered generic-attribute (it was right)
+    oResult.aoFollow = oResult.ooIssue['INH-WRONGNUM'].filter(oI => oMoved.get(oI.sKeyGen) === oI.oAttr.sNum);
+    // an-own number of a-specific that collides now, because its chain's last attribute moved up
+    oResult.aoFollowOwn = oResult.ooIssue['INH-OWNNUM'].filter(oI => oMoved.has(oI.sKeyGen));
     for (const sCode of Object.keys(oResult.ooIssue)) {
       oResult.ooIssue[sCode] = oResult.ooIssue[sCode].filter(oIssue =>
         oIssue.aoAttr ? oIssue.aoAttr.some(fInFile) : fInFile(oIssue.oAttr));
@@ -951,9 +1126,28 @@ function fMain() {
   let nChanged = 0;
   const aoApplied = [];
   let { aoFileRead: aoFile, oResult } = fReadCheck();
-  for (let nPass = 0; bFix && nPass < 5; nPass++) {
-    const aoFixable = [...oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn), ...oResult.ooIssue['INH-OWNNONUM']];
+  // --chain: the-inheritance-chain of concepts, nothing else
+  const nIdxChain = aArg.indexOf('--chain');
+  if (nIdxChain !== -1) {
+    const nIdxUrl = aArg.indexOf('--url');
+    const sUrlBase = nIdxUrl !== -1 ? aArg[nIdxUrl + 1] : 'http://localhost/dirMcsh/';
+    const aLineChain = String(aArg[nIdxChain + 1] ?? '').split(',').filter(Boolean)
+      .flatMap(sChain => fChainReport(aoFile, oResult, sChain.trim(), sNameDir, sUrlBase));
+    const sPathChain = moPath.join(sDirScript, 'inheritChain.txt');
+    moFs.writeFileSync(sPathChain, aLineChain.join('\n') + '\n');
+    console.log(aLineChain.join('\n'));
+    console.log(`📄 report written: ${sPathChain}`);
+    return;
+  }
+  for (let nPass = 0; (bFix || bFixNum) && nPass < 8; nPass++) {
+    const aoFixable = fFixableNum([
+      ...(bFix ? oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn) : []),
+      ...(bFix ? oResult.ooIssue['INH-OWNNONUM'] : []),
+      ...(bFixNum ? [...oResult.ooIssue['INH-WRONGNUM'],
+        ...oResult.aoFollow.filter(oI => !oResult.ooIssue['INH-WRONGNUM'].includes(oI)),
+        ...[...new Set([...oResult.ooIssue['INH-OWNNUM'], ...oResult.aoFollowOwn].flatMap(oI => oI.aoShift))]] : [])]);
     const nPassChanged = fApplyFix(aoFile, aoFixable);
+    for (const oIssue of aoFixable) if (oIssue.bApplied && oIssue.oAttr.sNum) oMoved.set(oIssue.oAttr.sKey, oIssue.oAttr.sNum);
     if (nPassChanged === 0) break;
     nChanged += nPassChanged;
     aoApplied.push(...aoFixable.filter(oIssue => oIssue.bApplied));
@@ -975,7 +1169,7 @@ function fMain() {
   }
   // --fix: the-name Mmn'NN_last of every generic, after the-numbers are final
   let nLastChanged = 0;
-  if ((bFix || bFixLast) && oResult.ooIssue['INH-LAST'].length) {
+  if ((bFix || bFixLast || bFixNum) &&oResult.ooIssue['INH-LAST'].length) {
     nLastChanged = fApplyLast(aoFile, oResult.ooIssue['INH-LAST']);
     if (nLastChanged) ({ aoFileRead: aoFile, oResult } = fReadCheck());
   }
@@ -998,12 +1192,12 @@ function fMain() {
     oA.oAttr.sNameShort.localeCompare(oB.oAttr.sNameShort) || oB.oAttr.nLine - oA.oAttr.nLine);
 
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName || bFixLast ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
-    (sNameFileOnly ? ` (file ${sNameFileOnly})` : ''));
+  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName || bFixLast || bFixNum ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
+    (sNameFileOnly ? ` (file ${sNameFileOnly})` : '') + (aSub.length ? ` (sub ${aSub.join(',')}: ${oSetSub.size} concepts)` : ''));
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   fOut(`  ${aoFile.length} files · ${nNode} sections · ${nSpecific} specifics under a-numbered generic · ` +
     `${nAttrSpec} of their attributes · ${nMatch} match a-numbered generic-attribute`);
-  if (bFix) fOut(`  titles changed: ${nChanged}`);
+  if (bFix || bFixNum) fOut(`  titles changed: ${nChanged}`);
   if (bFixName) fOut(`  name:: paragraphs changed: ${nTitleName}`);
   if (bFix || bFixLast) fOut(`  NN_last names changed: ${nLastChanged}`);
   fOut('  Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;');
@@ -1155,13 +1349,15 @@ function fFindInheritAttrRead(aPathIn) {
   const { ooIssue } = fCheck(aoFile, 3);
   const { aoPlan, aoHand } = fCheckTitleName(aoFile, () => true);
   const aoOut = [];
+  // the-command that renumbers it, and its specifics with the-old number
+  const fFixNum = oI => ` (inheritMcsh --concept ${oI.oAttr.oWholeNode?.sMain || '?'} --fix-num --fix-name)`;
   const fPush = (oAttr, sMessage) => aoOut.push({ sNameShort: oAttr.sNameShort, nLine: oAttr.nLine, sTitle: oAttr.sTitle, sMessage });
   for (const oI of ooIssue['INH-NONUM']) fPush(oI.oAttr,
     `inherited_attr: "${oI.oAttr.sTitle}" is an-inherited attribute of ${oI.sLabel}: number it ${oI.sNumNew}_`);
   for (const oI of ooIssue['INH-WRONGNUM']) fPush(oI.oAttr,
-    `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_`);
+    `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_` + fFixNum(oI));
   for (const oI of ooIssue['INH-OWNNUM']) fPush(oI.oAttr,
-    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel})`);
+    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel}): it gets ${oI.sNumNew}_, all own numbers +${oI.nShift}` + fFixNum(oI));
   for (const oI of ooIssue['INH-LAST']) fPush(oI.oAttr,
     `inherited_attr: generic "${oI.oAttr.sTitle}" ` + (oI.sLastNew
       ? `has NOT the-name "${oI.sLastNew}" (its specifics number their own attributes after it)`

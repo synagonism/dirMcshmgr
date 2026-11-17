@@ -1,0 +1,66 @@
+inheritance-chain of Hmmdlago (McshLag000007:20 #idOverview)
+  [Hmmdlago](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idOverview)
+  chain: Enttattr → entity → doingNo → bodyNo → relation → RltnSameness → RltnMapping → Ogsmlago → Hmanlago → Ogmmlago → Hmmdlago
+=== Enttattr:
+  [attribute'03_naming_acting](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntattnamg)
+=== entity:
+  [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
+  [Entity'02_attribute_relation](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatrrln)
+  .. [entity'info_resource](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntirsc)
+  .. [entity'DOING](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntdong)
+  .. [entity'evoluting](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntevog)
+=== doingNo:
+  (empty)
+=== bodyNo:
+  ~ [bodyNo'03_argument](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntBodyNarg)  overrides attribute'03_naming_acting
+  [bodyNo'04_valence](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntBodyNvlc)
+  [bodyNo'05_sequence](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntBodyNdrn)
+  [bodyNo'06_semu_relation](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntBodyNsmsln)
+  [bodyNo'07_logo_relation](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntBodyNlgln)
+=== relation:
+  ~ [relation'01_argument](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnarg)  overrides entity'01_attribute
+  ~ [relation'02_valence](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnvlc)  overrides Entity'02_attribute_relation
+  ~ [relation'03_sequence](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlndrn)  overrides bodyNo'03_argument
+  .. [relation'info_resource](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnirsc)
+  .. [relation'evoluting](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnevog)
+=== RltnSameness:
+  (empty)
+=== RltnMapping:
+  ~ [RltnMapping'01_argument](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgarg)  overrides relation'01_argument
+  ~ [RltnMapping'06_input](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgarch)  overrides bodyNo'06_semu_relation
+  ~ [RltnMapping'07_output](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmdl)  overrides bodyNo'07_logo_relation
+  [RltnMapping'08_domain](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgdomn)
+  [RltnMapping'09_codomain](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgcdmn)
+  [RltnMapping'10_method](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmthd)
+  .. [RltnMapping'DOING](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgdong)
+=== Ogsmlago:
+  [Ogsmlago'11_user](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmentt)
+  [Ogsmlago'12_input|infoview](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsminpt)
+  [Ogsmlago'13_output|logoview](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmotpt)
+  [Ogsmlago'14_grammar](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmgrmr)
+  .. [Ogsmlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmirsc)
+  .. [Ogsmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmdong)
+  .. [Ogsmlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmevog)
+=== Hmanlago:
+  (empty)
+=== Ogmmlago:
+  .. [Ogmmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmMinddong)
+=== Hmmdlago:
+  ~ [Hmmdlago'11_user](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmduser)  overrides Ogsmlago'11_user
+  ~ [Hmmdlago'20_output_(logo_view)](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdopt)  overrides Ogsmlago'13_output|logoview  ✗ number must be 13_
+  ~ [Hmmdlago'21_grammar](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdgrmr)  overrides Ogsmlago'14_grammar  ✗ number must be 14_
+  [Hmmdlago'24_manager](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmngr)
+  [Hmmdlago'25_channel](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdchnl)
+  [Hmmdlago'26_tech](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdtech)
+  [Hmmdlago'28_input1_(mind_view)](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdipt1)
+  [Hmmdlago'29_input2_(senso_mind__view)](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdipt2)
+  [Hmmdlago'30_input3_(semu_view)](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdipt3)
+  ?? [Hmmdlago'mapping_relations](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmprn)  → 31_
+  ?? [Hmmdlago'modality](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmdlt)  → 32_
+  ?? [Hmmdlago'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdattMsc)  → 33_
+  .. [Hmmdlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdirsc)
+  ?? [Hmmdlago'linguistics](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdlgcs)  → 34_
+  .. [Hmmdlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmddong)
+  .. [Hmmdlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdevog)
+  last: 30_
+

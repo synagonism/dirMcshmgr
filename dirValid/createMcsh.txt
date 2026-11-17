@@ -1,20 +1,20 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code MvrwGstr03_inherited_attr --file McshLag000005 --fix: C:\dirNodews\dirMcsh
+  createMcsh --code MvrwGstr03_inherited_attr --file McshCor000005 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · MvrwGstr03_inherited_attr: inheritMcsh titles changed: 0 · name:: paragraphs changed: 0 · NN_last names changed: 0 · 0 issues left, by hand · 0 skipped
+  0 files written · MvrwGstr03_inherited_attr: inheritMcsh titles changed: 0 · name:: paragraphs changed: 0 · NN_last names changed: 9 · 18 issues left, by hand · 0 skipped
   written, no backup: see git diff
 
 === INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary
   titles changed: 0
   name:: paragraphs changed: 0
-  NN_last names changed: 0
+  NN_last names changed: 9
   INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-WRONGNUM      3  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM       11  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
   INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
   written: see dirValid/inheritMcsh.txt
 
-=== NOISSUE (1) — the-rule has no issue in the-file
-  McshLag000005  MvrwGstr03_inherited_attr: nothing to fix
+=== NOFIX (1) — no automatic fix for this rule: it needs you
+  McshCor000005  MvrwGstr03_inherited_attr (18): left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::

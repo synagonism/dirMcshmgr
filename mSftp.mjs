@@ -8,6 +8,7 @@
  *   WITHOUT a-key-file we ask the-password, as before.
  *   To-revoke the-key: remove its line from authorized_keys on the-server.
  *
+ * modified: {2026-11-17} zlib-compression on the-upload: 6.5 times faster on a-slow line
  * modified: {2026-11-01} ssh-agent first, then the-ssh-key-file (fAuthSftp): no password to type
  * modified: {2026-09-09} single persistent connection + sequential upload with retry (fixes ECONNRESET); numbered progress
  * modified: {2021-04-29}
@@ -22,7 +23,13 @@ import { stdin as input, stdout as output } from 'node:process'
 var oSftp = {
   host: 'linux1087.grserver.gr',
   port: 2234,
-  username: 'kaseluri160933'
+  username: 'kaseluri160933',
+  // COMPRESSION: ssh2 offers 'none' FIRST, so by-default NOTHING is-compressed.
+  // Our files are text (html, json) and compress 4-14 times, and the-line
+  // uploads much slower than it downloads, so we ask for zlib first.
+  // 'none' stays LAST, to connect to a-server that offers no compression.
+  // measured on a-3.84MB-page: 69.2s -> 10.6s (6.5 times faster).
+  algorithms: {compress: ['zlib@openssh.com', 'zlib', 'none']}
 }
 
 /**
