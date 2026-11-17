@@ -38,7 +38,7 @@
  * OUTPUT: the-report in dirValid/inheritMcsh.txt, overwritten on every run;
  *   with --fix it writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free.
  * RUN:
- *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--file McshDir000000] [--local 3]
+ *   node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--file McshDir000000] [--local 3]
  */
 
 import moFs from 'fs'
@@ -51,6 +51,8 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-10-0.2026-11-17: INH-LAST: a-generic has the-name Mmn\'NN_last; --fix writes it',
+    'inheritMcsh.mjs.0-9-0.2026-11-17: INH-OWNNONUM: an-own attribute without number gets the-next NN after the-chain; --fix writes it',
     'inheritMcsh.mjs.0-8-0.2026-11-16: fFindInheritAttr remembers its result while the-files are unchanged',
     'inheritMcsh.mjs.0-7-0.2026-11-16: INH-OWNNUM; fFindInheritAttr exported for MvrwGstr03 inherited_attr of structuralMcsh.js',
     'inheritMcsh.mjs.0-6-0.2026-11-16: INH-TITLENAME, --fix-name: a-numbered attribute has its title "relation\'02_valence" as name',
@@ -131,7 +133,7 @@ function fReadNameEngl(sNamParaIn) {
   }
   const aoTarget = Object.entries(oCountTarget).sort((aA, aB) => aB[1] - aA[1]);
   const sMain = aoTarget.length ? aoTarget[0][0] : (aName[0] ?? '');
-  return { aName, sMain };
+  return { aName, sMain, bMainTarget: aoTarget.length > 0 };
 }
 
 /**
@@ -178,7 +180,7 @@ function fReadFile(sPathIn) {
     }
 
     const aAttr = sTitle.match(rTitleAttr);
-    const { aName, sMain } = fReadNameEngl(ooPara.name ?? '');
+    const { aName, sMain, bMainTarget } = fReadNameEngl(ooPara.name ?? '');
     const bTree = /^[A-Z-]*TREE\b/.test(sTitle);
     const oNode = {
       sNameShort,
@@ -196,6 +198,7 @@ function fReadFile(sPathIn) {
       bSpecific: !aAttr && /\./.test(sTitle),
       aName,
       sMain,
+      bMainTarget,
       sGenericTree: ooPara['generic-tree'] ?? '',
       sSpecificTree: ooPara['specific-tree'] ?? '',
       sDescription: ooPara.description ?? '',
@@ -418,7 +421,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
     return sDsn.trim() === '';
   }
 
-  const ooIssue = { 'INH-NONUM': [], 'INH-WRONGNUM': [], 'INH-OWNNUM': [], 'INH-ORDER': [], 'INH-EMPTY': [], 'INH-GENDUP': [], 'INH-LOCAL': [], 'INH-REFBROKEN': [],
+  const ooIssue = { 'INH-NONUM': [], 'INH-WRONGNUM': [], 'INH-OWNNUM': [], 'INH-OWNNONUM': [], 'INH-LAST': [], 'INH-ORDER': [], 'INH-EMPTY': [], 'INH-GENDUP': [], 'INH-LOCAL': [], 'INH-REFBROKEN': [],
     'INH-GNTRTEXT': aoGntrText };
   const oCountLocal = {};   // sKeyGen|attr → { oGen, sAttr, aoAttr }
   const oCountRefine = {};  // sKeyGenAttr → { label, nCount }
@@ -439,6 +442,8 @@ function fCheck(aoFileIn, nLocalMinIn) {
     // the-NNs the-specific already uses: a-new NN_ must NOT repeat one
     const oNumTaken = {};
     for (const oC of oNode.aoChild) if (oC.bAttr && oC.sNum) oNumTaken[oC.sNum] = oC;
+    // the-last number used: the-chain's and the-specific's own; a-new own number comes after it
+    let nNumOwnNext = Math.max(nNumLast, ...Object.keys(oNumTaken).map(Number));
     // own numbering: a-numbered attribute NOT as the-generic numbers it (ChmcElry 01..12).
     //   then ONLY its own numbers count: its unnumbered attributes (info-resource, DOING,
     //   evoluting at the-end) get NO generic NN and NO order key.
@@ -457,6 +462,13 @@ function fCheck(aoFileIn, nLocalMinIn) {
           if (Number(oAttr.sNum) <= nNumLast) ooIssue['INH-OWNNUM'].push({ oAttr, sNumLast: String(nNumLast).padStart(2, '0'),
             sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) });
           aoOrder.push({ oAttr, sNum: oAttr.sNum }); continue;   // own number: the-author decided
+        }
+        // an-own attribute without number gets the-next number AFTER the-chain and the-own numbers;
+        //   NOT the-standard end-sections info-resource, DOING, evoluting
+        if (!/^(info[-_ ]?resource|doing|evoluting)$/i.test(oAttr.sAttrWord.trim())) {
+          const sNumNew = String(++nNumOwnNext).padStart(2, '0');
+          ooIssue['INH-OWNNONUM'].push({ oAttr, sNumNew, sNumLast: String(nNumLast).padStart(2, '0'),
+            sLabel: oSpaceLast ? fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) : '' });
         }
         const sKeyLocal = oGenNum.sKey + '|' + fNormAttr(oAttr.sAttrWord);
         (oCountLocal[sKeyLocal] ??= { oGen: oGenNum, sAttr: fNormAttr(oAttr.sAttrWord), aoAttr: [] })
@@ -489,6 +501,21 @@ function fCheck(aoFileIn, nLocalMinIn) {
       }
     }
   }
+  // INH-LAST: a-generic has the-name "Mmn'NN_last": NN the-last number of its chain and of its own
+  //   attributes, so its specifics number their own attributes from NN+1 (a-search of "Mmn'" shows it)
+  const oSetGen = new Set();
+  for (const oNode of aoNodeAll) for (const oGen of oNode.aoGeneric) oSetGen.add(oGen);
+  for (const oGen of oSetGen) {
+    if (oGen.bTree || oGen.bAttr || !oGen.sMain || !oGen.bMainTarget) continue;   // a-real main-name: a-!⇒ target
+    const nOwnMax = Math.max(0, ...oGen.aoChild.filter(oC => oC.bAttr && oC.sNum && !oC.bTree).map(oC => Number(oC.sNum)));
+    const nChainMax = Math.max(0, ...fFindNumSpace(fFindChain(oGen)).map(oS => Number(oS.oGenAttr.sNum)));
+    const nLast = Math.max(nOwnMax, nChainMax);
+    const aLastNow = oGen.aName.filter(sName => /'\d{2}_last$/.test(sName));
+    const sLastNew = nLast ? `${oGen.sMain}'${String(nLast).padStart(2, '0')}_last` : '';
+    if (aLastNow.length === (sLastNew ? 1 : 0) && (!sLastNew || aLastNow[0] === sLastNew)) continue;
+    ooIssue['INH-LAST'].push({ oAttr: oGen, sLastNew, aLastNow });
+  }
+
   // a-generic that gives numbers must give each NN once
   const oSetGenNum = new Set();
   for (const oNode of aoNodeAll) {
@@ -809,6 +836,48 @@ function fApplyTitleName(aoPlanIn) {
   return nChanged;
 }
 
+/**
+ * DOING: INH-LAST: it writes the-name "Mmn'NN_last," as the-last English name of a-generic's name::
+ *   (an-old "X'NN_last" line is deleted). A-generic without name:: is skipped.
+ * OUTPUT: the-number of paragraphs changed.
+ */
+function fApplyLast(aoFileIn, aoIssueIn) {
+  const ooIssueFile = new Map();
+  for (const oIssue of aoIssueIn) {
+    const oFile = aoFileIn.find(oF => oF.sNameShort === oIssue.oAttr.sNameShort);
+    if (!ooIssueFile.has(oFile)) ooIssueFile.set(oFile, []);
+    ooIssueFile.get(oFile).push(oIssue);
+  }
+  let nChanged = 0;
+  for (const [oFile, aoIssueFile] of ooIssueFile) {
+    let sText = oFile.sText;
+    // from the-end of the-file, the-positions before stay right
+    for (const oIssue of aoIssueFile.sort((oA, oB) => oB.oAttr.nStart - oA.oAttr.nStart)) {
+      const oNode = oIssue.oAttr;
+      const sSect = sText.slice(oNode.nStart, oNode.nEnd);
+      const nSub = sSect.indexOf('<section', 1);
+      const aPara = (nSub > 0 ? sSect.slice(0, nSub) : sSect).match(/<p\b[^>]*\bid="[^"]+"[^>]*>\s*name::[\s\S]*?<\/p>/);
+      if (!aPara) { oIssue.sSkip = 'no name:: paragraph'; continue; }
+      let sPara = aPara[0].replace(/\r?\n[ \t]*<br>\*\s*McshEngl\.[^\n,!]*'\d{2}_last,[^\n]*/g, '');
+      if (oIssue.sLastNew) {
+        // the-last English name of the-first block, before the-first "====== lagoX:" line
+        const nBlock = sPara.search(/<br>======/);
+        const aoLine = [...(nBlock > 0 ? sPara.slice(0, nBlock) : sPara).matchAll(/(\r?\n)([ \t]*)<br>\*\s*McshEngl\.[^\n]*/g)];
+        if (!aoLine.length) { oIssue.sSkip = 'no McshEngl name'; continue; }
+        const aL = aoLine[aoLine.length - 1];
+        const nAt = aL.index + aL[0].length;
+        sPara = sPara.slice(0, nAt) + `${aL[1]}${aL[2]}<br>* McshEngl.${oIssue.sLastNew},` + sPara.slice(nAt);
+      }
+      const nPos = oNode.nStart + sSect.indexOf(aPara[0]);
+      sText = sText.slice(0, nPos) + sPara + sText.slice(nPos + aPara[0].length);
+      oIssue.bApplied = true;
+      nChanged++;
+    }
+    if (sText !== oFile.sText) moFs.writeFileSync(oFile.sPath, sText);
+  }
+  return nChanged;
+}
+
 function fMain() {
   const aArg = process.argv.slice(2);
   const aArgPath = aArg.filter((sArg, nI) =>
@@ -818,12 +887,13 @@ function fMain() {
     console.log('inheritMcsh.mjs - it checks the-inheritance of attributes from generic to specific concepts');
     console.log('  ' + aVersion[0]);
     console.log('');
-    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--file McshDir000000] [--local 3]');
+    console.log('USAGE: node dirValid/inheritMcsh.mjs <sNameDir> [--fix] [--delete-empty] [--fix-order] [--fix-name] [--fix-last] [--file McshDir000000] [--local 3]');
     console.log('  sNameDir     the-path of the-dirMcsh-worldview');
     console.log('  --fix        writes the-NN_ of INH-NONUM into the-h-titles, when the-NN is free');
     console.log('  --delete-empty  deletes the-INH-EMPTY sections: NOT linked, English names only');
     console.log('  --fix-order  puts the-attribute-sections of INH-ORDER specifics in NN order');
     console.log("  --fix-name   writes the-title X'NN_attr of a-numbered attribute as its name (INH-TITLENAME)");
+    console.log("  --fix-last   writes only the-name Mmn'NN_last of every generic (INH-LAST); --fix writes it too");
     console.log('  --file       report (and fix) one file only, given as McshDir000000');
     console.log('  --local      the-min count of specifics for INH-LOCAL (default 3)');
     console.log('  OUTPUT: dirValid/inheritMcsh.txt, overwritten on every run');
@@ -833,6 +903,7 @@ function fMain() {
   const bDelete = aArg.includes('--delete-empty');
   const bFixOrder = aArg.includes('--fix-order');
   const bFixName = aArg.includes('--fix-name');
+  const bFixLast = aArg.includes('--fix-last');
   const nIdxFile = aArg.indexOf('--file');
   const sNameFileOnly = nIdxFile !== -1 ? fFindNameShort(aArg[nIdxFile + 1] ?? '') : '';
   const nIdxLocal = aArg.indexOf('--local');
@@ -855,7 +926,7 @@ function fMain() {
   const aoApplied = [];
   let { aoFileRead: aoFile, oResult } = fReadCheck();
   for (let nPass = 0; bFix && nPass < 5; nPass++) {
-    const aoFixable = oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn);
+    const aoFixable = [...oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn), ...oResult.ooIssue['INH-OWNNONUM']];
     const nPassChanged = fApplyFix(aoFile, aoFixable);
     if (nPassChanged === 0) break;
     nChanged += nPassChanged;
@@ -876,6 +947,12 @@ function fMain() {
     aoOrdered.push(...aoDone);
     ({ aoFileRead: aoFile, oResult } = fReadCheck());
   }
+  // --fix: the-name Mmn'NN_last of every generic, after the-numbers are final
+  let nLastChanged = 0;
+  if ((bFix || bFixLast) && oResult.ooIssue['INH-LAST'].length) {
+    nLastChanged = fApplyLast(aoFile, oResult.ooIssue['INH-LAST']);
+    if (nLastChanged) ({ aoFileRead: aoFile, oResult } = fReadCheck());
+  }
   // --fix-name: the-title of a-numbered attribute as its name
   let { aoPlan: aoTitleName, aoHand: aoTitleHand } = fCheckTitleName(aoFile, fInFile);
   let nTitleName = 0;
@@ -895,13 +972,14 @@ function fMain() {
     oA.oAttr.sNameShort.localeCompare(oB.oAttr.sNameShort) || oB.oAttr.nLine - oA.oAttr.nLine);
 
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
+  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName || bFixLast ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
     (sNameFileOnly ? ` (file ${sNameFileOnly})` : ''));
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   fOut(`  ${aoFile.length} files · ${nNode} sections · ${nSpecific} specifics under a-numbered generic · ` +
     `${nAttrSpec} of their attributes · ${nMatch} match a-numbered generic-attribute`);
   if (bFix) fOut(`  titles changed: ${nChanged}`);
   if (bFixName) fOut(`  name:: paragraphs changed: ${nTitleName}`);
+  if (bFix || bFixLast) fOut(`  NN_last names changed: ${nLastChanged}`);
   fOut('  Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;');
   fOut('        a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.');
   fOut('');
@@ -910,6 +988,8 @@ function fMain() {
     'INH-NONUM': 'matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)',
     'INH-WRONGNUM': 'its NN_ differs from the-generic-attribute (own numbering? by hand)',
     'INH-OWNNUM': 'an-own numbered attribute NOT after the-last number of the-inherited-attr-chain',
+    'INH-OWNNONUM': 'an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)',
+    'INH-LAST': "a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)",
     'INH-ORDER': 'the-attributes of a-specific are not in the-NN order of its generic',
     'INH-EMPTY': 'an-inherited attribute that says nothing new (no info, no link): delete?',
     'INH-GENDUP': 'a-numbered generic gives the-same NN_ to two attributes: renumber',
@@ -966,6 +1046,17 @@ function fMain() {
   fOut(`=== INH-OWNNUM (${ooIssue['INH-OWNNUM'].length}) — ${ooDesc['INH-OWNNUM']}`);
   for (const oIssue of fSortIssue(ooIssue['INH-OWNNUM'])) {
     fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  last ${oIssue.sNumLast}_ ← ${oIssue.sLabel}`);
+  }
+  fOut('');
+  fOut(`=== INH-LAST (${ooIssue['INH-LAST'].length}) — ${ooDesc['INH-LAST']}`);
+  for (const oIssue of fSortIssue(ooIssue['INH-LAST'])) {
+    fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  ` +
+      `${oIssue.aLastNow.join(' ') || '(none)'} → ${oIssue.sLastNew || '(delete)'}`);
+  }
+  fOut('');
+  fOut(`=== INH-OWNNONUM (${ooIssue['INH-OWNNONUM'].length}) — ${ooDesc['INH-OWNNONUM']}`);
+  for (const oIssue of fSortIssue(ooIssue['INH-OWNNONUM'])) {
+    fOut(`  ${oIssue.oAttr.sNameShort}:${oIssue.oAttr.nLine}  "${oIssue.oAttr.sTitle}"  → ${oIssue.sNumNew}_  (last ${oIssue.sNumLast}_ ← ${oIssue.sLabel})`);
   }
   fOut('');
   fOut(`=== INH-ORDER (${ooIssue['INH-ORDER'].length}) — ${ooDesc['INH-ORDER']}`);
@@ -1045,6 +1136,13 @@ function fFindInheritAttrRead(aPathIn) {
     `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_`);
   for (const oI of ooIssue['INH-OWNNUM']) fPush(oI.oAttr,
     `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel})`);
+  for (const oI of ooIssue['INH-LAST']) fPush(oI.oAttr,
+    `inherited_attr: generic "${oI.oAttr.sTitle}" ` + (oI.sLastNew
+      ? `has NOT the-name "${oI.sLastNew}" (its specifics number their own attributes after it)`
+      : `has an-old name "${oI.aLastNow.join(', ')}": no numbers`) + ' (inheritMcsh --fix)');
+  for (const oI of ooIssue['INH-OWNNONUM']) fPush(oI.oAttr,
+    `inherited_attr: own attribute "${oI.oAttr.sTitle}" has no number: it gets ${oI.sNumNew}_, AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain` +
+    (oI.sLabel ? ` (${oI.sLabel})` : '') + ' (inheritMcsh --fix)');
   for (const oP of aoPlan) fPush(oP.oNode,
     `inherited_attr: the-title of "${oP.oNode.sTitle}" is NOT its descriptive-name (inheritMcsh --fix-name: ${oP.aChange.join('; ')})`);
   for (const oH of aoHand) fPush(oH.oNode,

@@ -20,70 +20,61 @@
  * 
  *  MvreFile01_overview  CnptFile missing idOverview section
  * 
- *  MvrwSect01_description_miss  CnptSect missing description::-paragraph (MvrwSect01..04: not a <section class="clsText"> or inside one)
- *  MvrwSect02_description_empty  CnptSect has description:: but it is empty (only placeholder "·")
- *  MvrwSect03_name_miss  CnptSect missing name::-paragraph
- *  MvrwSect04_name_empty  CnptSect name:: has zero valid Mcsh* entries
+ *  MvrwSect01_description_miss  description:: is-missing (MvrwSect01..04: not a <section class="clsText"> or inside one)
+ *  MvrwSect02_description_empty  description:: is empty (only placeholder "·")
+ *  MvrwSect03_name_miss  name:: is-missing
+ *  MvrwSect04_name_empty  name:: has zero valid Mcsh* entries
  * 
  *  MvreName01_duplicate_line  Duplicate name-line, in every McsLago (the-whole-line to the-comma) in the-worldview
- *  MvreName02_comma  name_comma: a-name-line ends its name with a-comma (ERROR without one, createMcsh adds it;
- *              WARN with a-comma in the-middle: after the-comma all is a-comment)
+ *  MvreName02_comma  a-name-line without a-comma or in the-middle: after the-comma all is a-comment
  *
- *  MvrwId01_char id_char: id="..." or href="...#..." has a character outside A-Z a-z 0-9 _
- *  MvrwId02_suffix_dong dong_DOING_suffix: the-id of a "DOING of X" | "X'DOING" CnptSect does not end in "dong"
- *  MvrwId04_suffix_eval eval_evaluation_suffix: the-id of an "evaluation of X" | "X'evaluation" CnptSect does not end in "eval"
- *  MvrwId05_suffix_evog evog_evoluting_suffix: the-id of an "evoluting of X" | "X'evoluting" CnptSect does not end in "evog"
- *  MvrwId06_suffix_irsc irsc_info_resource_suffix: the-id of an "info-resource of X" | "X'info-resource" CnptSect does not end in "irsc"
- *  MvrwId07_suffix_pntr pntr_parent_tree_suffix: the-id of a "parent-tree::" para does not end in "pntr"
- *  MvrwId08_suffix_chtr chtr_child_tree_suffix: the-id of a "child-tree::" para does not end in "chtr"
- *  MvrwId09_suffix_wltr wltr_whole_tree_suffix: the-id of a "whole-tree::" para does not end in "wltr"
- *  MvrwId10_suffix_prtr prtr_part_tree_suffix: the-id of a "part-tree::" para does not end in "prtr"
- *  MvrwId11_suffix_gntr gntr_generic_tree_suffix: the-id of a "generic-tree::" para does not end in "gntr"
- *  MvrwId12_suffix_sptr sptr_specific_tree_suffix: the-id of a "specific-tree::" para does not end in "sptr" (or sptrA, sptr2 of a-list)
- *  MvrwId13_suffix_srtr the-id of a "structure of X" | "X'structure" CnptSect does not end in "srtr"
+ *  MvrwId01_char id_char: allowed only A-Z a-z 0-9 _ in id="..." or href="...#..."
+ *  MvrwId02_suffix_dong "DOING of X" id does-not-end in "dong"
+ *  MvrwId04_suffix_eval "evaluation of X" id does-not-end in "eval"
+ *  MvrwId05_suffix_evog "evoluting of X" id does-not-end in "evog"
+ *  MvrwId06_suffix_irsc "info-resource of X" id does-not-end in "irsc"
+ *  MvrwId07_suffix_pntr "parent-tree::" id does-not-end in "pntr"
+ *  MvrwId08_suffix_chtr "child-tree::" id does-not-end in "chtr"
+ *  MvrwId09_suffix_wltr "whole-tree::" id does-not-end in "wltr"
+ *  MvrwId10_suffix_prtr "part-tree::" id does-not-end in "prtr"
+ *  MvrwId11_suffix_gntr "generic-tree::" id does-not-end in "gntr"
+ *  MvrwId12_suffix_sptr "specific-tree::" id does-not-end in "sptr" (or sptrA, sptr2 of a-list)
+ *  MvrwId13_suffix_srtr "structure of X" id does-not-end in "srtr"
  *
  *  MvreMain01_char a-main-mind-name has ONLY English letters, digits and undersoce.
  *  MvrwMain01_Attrbase main-names of attributes begin with Attrbase of concept
  *             (Attrbase "McshEngl.B!Attrbase,"; attributes: its direct parts with a-main-name, "Y of X" and "X.Y");
  *             exempt: an-alias that begins with B ("McshEngl.Systsector!⇒sector_vs_system,") keeps its own
  *             main-name; SciX | DissX | RltnX need such an-alias; createMcsh fixes the-rest
- *  MvrwMain02_evolg evolg_evoluting: the-main-name of an "evoluting of X" | "X'evoluting" CnptSect
- *             does not end in "evolg" or does not start with a-capital letter (Xevolg, a-multiword attribute)
- *  MvrwMain03_eval evaln_evaluation|evalg_evaluating: the-main-name of an "evaluation of X" | "X'evaluation" CnptSect
- *             is not Xevaln, of an "evaluating of X" | "X'evaluating" CnptSect is not Xevalg (capital first, no apostrophe;
- *             a-genericSpecific X starts with its small-letter word: foodGingerevaln)
- *  MvrwMain04_doing doing_DOING: the-main-name of a "DOING of X" | "X'DOING" CnptSect
- *             does not end in "doing" (no apostrophe before it) or does not start with a-capital letter (Xdoing)
- *  MvrwMain05_infrsc infrsc_info_resource: the-main-name of an "info-resource of X" | "X'info-resource" CnptSect
- *             does not end in "infrsc" (no apostrophe before it) or does not start with a-capital letter (Xinfrsc);
- *             infrsc_info_resource_leaf: a-section without subsections has a-main-name (only X'info_resource is needed)
- *  MvrwMain06_srtr srtr_structure: the-main-name of a "structure of X" | "X'structure" CnptSect
- *             does not end in "srtr" (no apostrophe before it) or does not start with a-capital letter (Xsrtr)
- *  MvrwMain07_Attrbase_line attrbase_line: the-Attrbase line "McshEngl.B!Attrbase," | "McshEngl.B!Attrbase!⇒M,"
- *             is not the-3rd name-line (after "M!=I") or the-4th (after "M!@McshXxx" of a-file-concept),
+ *  MvrwMain02_evolg the-main-name of "evoluting of X" ends in "Xevolg"
+ *  MvrwMain03_eval the-main-name of "evaluation of X" ends in "Xevaln"
+ *  MvrwMain04_doing the-main-name of "DOING of X" ends in "Xdoing"
+ *  MvrwMain05_infrsc the-main-name of "info-resource of X" "Xinfrsc"
+ *             infrsc_leaf: has only name X'info_resource
+ *  MvrwMain06_srtr the-main-name of "structure of X" ends in "Xsrtr"
+ *  MvrwMain07_Attrbase_line the-Attrbase "McshEngl.B!Attrbase!⇒M," is not the-3rd or 4-th
+ *             (after "M!=I") or (after "M!@McshXxx" of a-file-concept),
  *             or is badly written
- *  MvrwMain08_need miss: a-concept with attribute-sections has no main-mind-name
+ *  MvrwMain08_need a-concept with attribute-sections has no main-mind-name
  *             (attribute-sections: its direct parts "Y of X" | "X'Y", not trees, links, clsText;
  *             Mmn: "descriptive!⇒Mmn" "Mmn!=descriptive")
- *  MvrwMain09_human human: the-formal-main-name of a-human (a-concept named "human.Surname.Given[.YYYY]" |
- *             "Surname.Given.human" | "human.Name" with a-Humn/hmn main-name) is not "Humn" + birth-year + name
+ *  MvrwMain09_human the-formal-main-name of a-human is not "Humn" + birth-year + name
  *             (Humn1959Sinagu) | "HumnB" + year for BCE (HumnB0384Arst), or is missing
- *  MvrwMain10_attribute attribute: a-direct part-section of a-concept with main-name M is not
- *             "x of M" + name "M'x" (attribute, x small first unless short: BMI) or "M.x" + name "M.x" (specific)
- *
- *  MvrwMain11_line line: the-Mmn (main-mind-name) is on the-FIRST line of name::, "M," alone, or
+ *  MvrwMain10_attribute a-direct part-section of a-concept with main-name M is not
+ *             "x of M" + name "M'x" or "M.x" + name "M.x" (specific)
+ *  MvrwMain11_line the-main-mind-name is on the-FIRST line of name::, "M," alone, or
  *             "D!⇒M," first and "M!=D," second (D the-descriptive-name)
  *
- *  MvrwName01_formal formal: a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) of a-name::-para or a-formal title
- *             has no space and no hyphen; fix: "_" in their place (X'a-b → X'a_b); dirUcd is not checked
+ *  MvrwName01_formal a-formal-name (X'Y, X.Y, X:Y, X;Y, X;;Y, X/Y, X//Y) of a-name:: or a-formal title
+ *             has no space and no hyphen; fix: (X'a-b → X'a_b); dirUcd is not checked
  *
- *  MvrwGstr01_gnsp_then_spgn gnsp_then_spgn: generic G has specific S (a-linked item of G's "specific-tree::"),
+ *  MvrwGstr01_gnsp_then_spgn generic-G has specific-S (in G's "specific-tree::"),
  *             but S does NOT have G as generic (in its "generic-tree::", by nesting, or through its generic-chain)
- *  MvrwGstr02_spgn_then_gnsp spgn_then_gnsp: specific S has generic G (first item of a-"===" group of its "generic-tree::"),
- *             but G does NOT list S in its "specific-tree::" (link or name), and S is NOT a-part-section of G
- *             In "generic-tree::" only plain "===" groups hold generics; the-items of a-"=== label:" group
+ *  MvrwGstr02_spgn_then_gnsp specific-S has generic-G (in S's "generic-tree::"),
+ *             but G does NOT list S in its "specific-tree::" and S is NOT a-part-section of G
+ *             In "generic-tree::" only plain "===" groups hold generics; the-"=== label:" group
  *             (sibling-of-X:, att-tree-of-X:, inherited-from-att::) are NOT generics.
- *  MvrwGstr03_inherited_attr inherited_attr: inherited-attributes are numbered-attributes; own attributes are numbered
+ *  MvrwGstr03_inherited_attr inherited-attributes are numbered-attributes; own attributes are numbered
  *             AFTER the-last number of the-inherited-attr-chain; a-chain-attribute can change its name
  *             but not its number; the-title "NN_x of M" is the-descriptive-name "M'NN_x" (inheritMcsh.mjs)
  *

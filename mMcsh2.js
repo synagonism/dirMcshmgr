@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-14-0.2026-11-17: dblclick on "X\'NN_last" (name::) and on the-head "McshEngl.X:generic" (generic-tree::) inserts X\'attributeChain',
     'mMcsh2.js.27-13-0.2026-11-16: attributeChain walks EVERY === group (all generics), breadth-first, entity last',
     'mMcsh2.js.27-12-0.2026-11-16: the-generic-chain stops at entity ALONE, NOT at entity.bodyNo!@.. (attributeChain, ...entity:generic)',
     'mMcsh2.js.27-11-0.2026-11-16: attributeChain shows the-overridden inherited attributes as G\'NN_x → S\'NN_y',
@@ -1584,7 +1585,8 @@ let fContainersInsert = function () {
    *   '<Mmn>.specific' (.), "<Mmn>'attribute" ('), '<Mmn>:generic' (:),
    *   '<Mmn>/part' (/), '<Mmn>//whole' (//), '<Mmn>;child' (;), '<Mmn>;;parent' (;;)
    *   find from the-English name-index. "<Mmn>'attributeChain" lists the-own attributes
-   *   and, per generic up to entity, the-inherited ones (fAttrChain). Attribute-opposites (open/openNo) that point
+   *   and, per generic up to entity, the-inherited ones (fAttrChain); "X'NN_last" of name:: and the-head
+   *   "McshEngl.X:generic" of generic-tree:: do the-same. Attribute-opposites (open/openNo) that point
    *   the-same concept are-both kept.
    *   A-second double-click on the-line removes the-inserted list.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
@@ -1618,6 +1620,11 @@ let fContainersInsert = function () {
       aM = sTxt.match(new RegExp('\\*\\s*(?:McshEngl\\.)?(.+?)' + fEscMark(aoRel[n].sMark) + aoRel[n].sWord + '(?=[,\\s]|$)'))
       if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
     }
+    // "* McshEngl.X'NN_last," (name:: of a-generic) and the-head "* McshEngl.X:generic," of a-generic-tree::
+    //   are triggers of X'attributeChain too: every section-concept has them, NOT an-attribute:: para
+    const aLast = sTxt.match(/\*\s*(?:McshEngl\.)?(.+?)'\d{2}_last(?=[,\s]|$)/)
+    if (aLast) { sMmn = aLast[1]; sMark = "'"; sWord = 'attributeChain' }
+    else if (sWord === 'generic' && /\*\s*McshEngl\./.test(sTxt) && oP.id.endsWith('gntr')) sWord = 'attributeChain'
     if (!sMmn) return false
     const
       // '* X:generic,' is a-generic: insert the-generics of ITS generic-tree;

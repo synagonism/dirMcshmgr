@@ -2555,7 +2555,7 @@ async function fMain() {
           ...(bFix ? ['--fix', '--fix-order', '--fix-name'] : []), ...(sNameFileOnly ? ['--file', sNameFileOnly] : [])];
         const sOut = execFileSync(process.execPath, aArgInherit, { encoding: 'utf8', maxBuffer: 1 << 26 });
         for (const sLine of sOut.split('\n')) {
-          if (/titles changed|paragraphs changed|INH-(NONUM|WRONGNUM|OWNNUM|ORDER|TITLENAME|TITLEHAND) /.test(sLine))
+          if (/changed:|INH-(NONUM|WRONGNUM|OWNNUM|OWNNONUM|LAST|ORDER|TITLENAME|TITLEHAND) /.test(sLine))
             aLineOut.push(`INHERIT ${sLine.trim()}`);
         }
         sInheritDone = bFix ? sOut.split('\n').filter(sL => /changed:/.test(sL)).map(sL => sL.trim()).join(' · ') : 'dry-run';
