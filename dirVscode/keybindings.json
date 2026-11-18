@@ -1,5 +1,5 @@
 [
-// {2026-10-09}
+// {2026-11-18}
 // Place your key bindings in this file to override the defaults
 // ctrl+k ctrl+2 folds them and shows shortcuts
 
@@ -296,18 +296,35 @@
   "when": "kb-macro.playing"
 },
 
+// O:: VOICE
+// v t:: Voice Talk: start dictating into the editor (was v d: v d r is validate-directory-with-rule)
+{
+  "key": "ctrl+alt+o t",
+  "command": "workbench.action.editorDictation.start",
+  "when": "editorTextFocus"
+},
+// v s:: Voice Stop: stop editor dictation
+{
+  "key": "ctrl+alt+o s",
+  "command": "workbench.action.editorDictation.stop"
+},
+// v c:: Voice Chat: start talking to the chat panel
+{
+  "key": "ctrl+alt+o c",
+  "command": "workbench.action.chat.startVoiceChat"
+},
+// v x:: Voice eXit: stop listening and submit the chat prompt
+{
+  "key": "ctrl+alt+o x",
+  "command": "workbench.action.chat.stopListeningAndSubmit"
+},
+
 // HITP
 
 // p b o:: hitP Browser Open current .last.html in local server (integrated browser, zero-click)
 {
   "key": "ctrl+alt+p b o",
   "command": "mcs.openInLocalServer",
-  "when": "resourceFilename =~ /\\.last\\.html$/"
-},
-// p b v:: hitP Browser Validate current .last.html & show report in Simple Browser (only if errors/warnings)
-{
-  "key": "ctrl+alt+p b v",
-  "command": "mcs.validateAndReport",
   "when": "resourceFilename =~ /\\.last\\.html$/"
 },
 // HITP COLOR
@@ -1392,7 +1409,7 @@
       "editor.action.insertLineAfter",
       "cursorLineStartSelect",
       { "command": "editor.action.insertSnippet",
-        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic-specific-tree,\n    <br>* McshEngl.mainmain'specific-generic-tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain:generic,\n    <br>===\n    <br>* ...entity:generic,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
+        "args": { "snippet": "$0\n  <section id=\"idididgstr\">\n  <hlvlvlv id=\"idididgstrHlvlvlv\">GENERIC-SPECIFIC-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididgstrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididgstrdsn\"></a></p>\n  <p id=\"idididgstrnam\">name::\n    <br>* McshEngl.mainmain'generic_specific_tree,\n    <a class=\"clsHide\" href=\"#idididgstrnam\"></a></p>\n  <p id=\"idididgntr\">generic-tree::\n    <br>* McshEngl.mainmain:generic,\n    <br>===\n    <br>* ...entity:generic,\n    <a class=\"clsHide\" href=\"#idididgntr\"></a></p>\n  <p id=\"idididsptr\">specific-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididsptr\"></a></p>\n  </section>" } },
       // id: of previous section, into every ididid
       { "command": "editor.actions.findWithArgs",
         "args": {
@@ -1495,8 +1512,7 @@
   },
   "when": "editorTextFocus"
 },
-
-// HITP SAVE
+// HITP VERSIONING
 // p v 1:: hitP saVe major versioning
 // p v 2:: hitP saVe minor versioning
 {
@@ -1620,28 +1636,58 @@
   }
 },
 
-// V:: VOICE
-// v d:: Voice Dictation: start dictating into the editor
+// V:: VALIDATE (Mcsh-visual-manager, valid menu)
+// v c c:: Validate Concept: the-concept of the-URL bar (or another), every rule, report or fix unambiguous and report
 {
-  "key": "ctrl+alt+v d",
-  "command": "workbench.action.editorDictation.start",
-  "when": "editorTextFocus"
+  "key": "ctrl+alt+v c c",
+  "command": "mcshv.validConcept"
 },
-// v s:: Voice Stop: stop editor dictation
+// v c r:: Validate Concept with Rule: the-concept of the-URL bar (or another), a-rule, report or fix and report
 {
-  "key": "ctrl+alt+v s",
-  "command": "workbench.action.editorDictation.stop"
+  "key": "ctrl+alt+v c r",
+  "command": "mcshv.validConceptRule"
 },
-// v c:: Voice Chat: start talking to the chat panel
+// v f f:: hitP Validate current File, focus the report in the browser (same as visual Valid → Validate-current)
 {
-  "key": "ctrl+alt+v c",
-  "command": "workbench.action.chat.startVoiceChat"
+  "key": "ctrl+alt+v f f",
+  "command": "mcshv.validCurrent",
+  "when": "resourceFilename =~ /\\.last\\.html$/"
 },
-// v x:: Voice eXit: stop listening and submit the chat prompt
+// v f r:: Validate File with Rule: choose a-rule, report or fix and report
 {
-  "key": "ctrl+alt+v x",
-  "command": "workbench.action.chat.stopListeningAndSubmit"
+  "key": "ctrl+alt+v f r",
+  "command": "mcshv.validRule"
+},
+// v d d:: Validate Directory: the-current dir (or choose one), every rule, report or fix unambiguous and report
+{
+  "key": "ctrl+alt+v d d",
+  "command": "mcshv.validDir"
+},
+// v d r:: Validate Directory with Rule: the-current dir (or choose one), a-rule, report or fix and report
+{
+  "key": "ctrl+alt+v d r",
+  "command": "mcshv.validDirRule"
+},
+// v w w:: Validate Worldview: the-current worldview prefilled, every rule, report or fix unambiguous and report
+{
+  "key": "ctrl+alt+v w w",
+  "command": "mcshv.validWorld"
+},
+// v w r:: Validate Worldview with Rule: every file, a-rule, report or fix and report
+{
+  "key": "ctrl+alt+v w r",
+  "command": "mcshv.validWorldRule"
+},
+// v l l:: Validate List: the-files and dirs of dirManager/validate.txt, every rule, report or fix unambiguous and report
+{
+  "key": "ctrl+alt+v l l",
+  "command": "mcshv.validList"
 }
+// v l r:: Validate List with Rule: the-files and dirs of dirManager/validate.txt, a-rule, report or fix and report
+{
+  "key": "ctrl+alt+v l r",
+  "command": "mcshv.validListRule"
+},
 ]
 
 /*

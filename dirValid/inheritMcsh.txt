@@ -1,738 +1,67 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:/dirNodews/dirMcsh (sub relation: 762 concepts)
+  INHERITANCE SYNC — APPLIED: C:/dirNodews/dirMcsh (file McshCor000003)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29869 sections · 5298 specifics under a-numbered generic · 4281 of their attributes · 1262 match a-numbered generic-attribute
-  NN_last names changed: 5
+  258 files · 29872 sections · 5336 specifics under a-numbered generic · 4293 of their attributes · 1252 match a-numbered generic-attribute
+  NN_last names changed: 4
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
-  INH-NONUM        16  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  INH-WRONGNUM     72  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-OWNNUM       52  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
-  INH-OWNNONUM    285  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-OWNNONUM      3  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
-  INH-EMPTY        54  an-inherited attribute that says nothing new (no info, no link): delete?
+  INH-EMPTY         0  an-inherited attribute that says nothing new (no info, no link): delete?
   INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL        33  an-attribute in 3+ specifics, not in the-generic: lift it up?
-  INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
-  INH-GNTRTEXT     11  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  INH-TITLENAME     0  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  INH-TITLEHAND   162  a-numbered attribute whose title-name needs a-hand
+  INH-LOCAL         2  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-REFBROKEN     2  a-text-reference name!@File#id whose file or id does NOT exist
+  INH-GNTRTEXT      1  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  INH-TITLENAME     2  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+  INH-TITLEHAND     4  a-numbered attribute whose title-name needs a-hand
 
-=== INH-NONUM (16) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  McshEdu000005:1708  "method of Mathfn"  → 12_  ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd
-  McshEdu000005:1629  "codomain of Mathfn"  → 11_  ← RltnMapping'11_codomain@McshCor000005#idRlnMpgcdmn
-  McshEdu000005:1513  "domain of Mathfn"  → 10_  ← RltnMapping'10_domain@McshCor000005#idRlnMpgdomn
-  McshLag000018:17522  "evaluation of Zhonlago"  → 12_ ✗ own numbering of the-specific: by hand  ← model'12_evaluation@McshCor000012#idMdleval
-  McshStn000021:520  "technology of SoctGlbl"  → 30_ ✗ own numbering of the-specific: by hand  ← societyOgsm'30_technology@McshStn000007#idSoctOgsmatt010
-  McshStn000021:497  "place of SoctGlbl"  → 33_ ✗ own numbering of the-specific: by hand  ← human'33_place@McshHmn000002#idHmnatt015
-  McshTchInf000005:120  "input of Cmprlago"  → 08_ ✗ own numbering of the-specific: by hand  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
-  McshTchInf000006:139  "input|archetype of Prgmlago"  → 08_ ✗ own numbering of the-specific: by hand  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
-  McshTchInf000006:75  "user of Prgmlago"  → 01_ ✗ own numbering of the-specific: by hand  ← Cmprlago'01_user@McshTchInf000005#Cmpluser
-  McshTchInf000007:269  "output of Cnptlago"  → 03_ ✗ own numbering of the-specific: by hand  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000014:6394  "grammar of binary-Wasm"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
-  McshTchInf000014:6302  "grammar of text-Wasm"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
-  McshTchInf000014:6280  "grammar of abstract-format"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
-  McshTchInf000018:7459  "Input of Lsolf"  → 08_  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
-  McshTchInf000030:58  "archetype (input) of Rustlago"  → 13_ ✗ own numbering of the-specific: by hand  ← Srcdlago'13_archetype (input)@McshTchInf000006#idLSrcdarch
-  McshTchInf000039:14620  "tech of Wlfmlago"  → 26_ ✗ own numbering of the-specific: by hand  ← Prgmlago'26_tech@McshTchInf000006#idLPrgmtech
+=== INH-NONUM (0) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
 
-=== INH-WRONGNUM (72) — its NN_ differs from the-generic-attribute (own numbering? by hand)
-  McshLag000007:29819  "06_argument of Hmmdsemuconj"  → 03_  ← relation'03_argument@McshCor000005#idRlnarg
-  McshLag000007:29792  "05_logo-relation of Hmmdsemuconj"  → 07_  ← bodyNo'07_logo_relation@McshCor000003#idEntBodyNlgln
-  McshLag000007:15383  "21_grammar of Hmmdlago"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
-  McshLag000007:898  "20_output_(logo_view) of Hmmdlago"  → 15_  ← Ogsmlago'15_output|logoview@McshLag000005#idLOgsmotpt
-  McshLag000018:18522  "04_output (view-logo) of Zhollago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshLag000018:17722  "33_input1_(mind_view) of Zhonlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshLag000020:12768  "07_input3-(semu-view) of Ellnlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000020:12749  "06_input2-(senso-mind--view) of Ellnlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000020:12729  "05_input1-(mind-view) of Ellnlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshLag000020:84  "04_output (logo-view) of Ellnlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshLag000027:67  "04_output (logo-view) of Ellalago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshLag000028:59  "04_output (logo-view) of Ell0lago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000034:345  "04_output_(logo_view) of Vnmalago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000034:326  "03_input3_(semu_view) of Vnmalago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000034:309  "02_input2_(senso_mind_view) of Vnmalago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000034:292  "01_input1_(mind_view) of Vnmalago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000035:192  "04_output_(logo_view) of lagoItln"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000035:173  "03_input3_(semu_view) of lagoItln"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000035:156  "02_input2_(senso_mind_view) of lagoItln"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000035:139  "01_input1_(mind_view) of lagoItln"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000037:241  "04_output_(logo_view) of Fraclago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000037:222  "03_input3_(semu_view) of Fraclago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000037:205  "02_input2_(senso_mind_view) of Fraclago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000037:188  "01_input1_(mind_view) of Fraclago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000038:242  "04_output_(logo_view) of Sbullago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000038:223  "03_input3_(semu_view) of Sbullago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000038:206  "02_input2_(senso_mind_view) of Sbullago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000038:189  "01_input1_(mind_view) of Sbullago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000039:242  "04_output_(logo_view) of Sqiplago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000039:223  "03_input3_(semu_view) of Sqiplago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000039:206  "02_input2_(senso_mind_view) of Sqiplago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000039:189  "01_input1_(mind_view) of Sqiplago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000040:233  "04_output_(logo_view) of Smkdlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000040:214  "03_input3_(semu_view) of Smkdlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000040:197  "02_input2_(senso_mind_view) of Smkdlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000040:180  "01_input1_(mind_view) of Smkdlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000041:251  "04_output_(logo_view) of Sslvlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000041:232  "03_input3_(semu_view) of Sslvlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000041:215  "02_input2_(senso_mind_view) of Sslvlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000041:198  "01_input1_(mind_view) of Sslvlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000043:233  "04_output_(logo_view) of Sruslago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000043:214  "03_input3_(semu_view) of Sruslago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000043:197  "02_input2_(senso_mind_view) of Sruslago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000043:180  "01_input1_(mind_view) of Sruslago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000044:233  "04_output_(logo_view) of Romnlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000044:214  "03_input3_(semu_view) of Romnlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000044:197  "02_input2_(senso_mind_view) of Romnlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000044:180  "01_input1_(mind_view) of Romnlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000048:256  "04_output_(logo_view) of Jpnslago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000048:237  "03_input3_(semu_view) of Jpnslago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000048:220  "02_input2_(senso_mind_view) of Jpnslago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000048:203  "01_input1_(mind_view) of Jpnslago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000050:225  "04_output_(logo_view) of Khmrlago"  → 20_  ← Hmmdlago'20_output_(logo_view)@McshLag000007#idLHmmdopt
-  McshStn000050:206  "03_input3_(semu_view) of Khmrlago"  → 30_  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000050:189  "02_input2_(senso_mind_view) of Khmrlago"  → 29_  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000050:172  "01_input1_(mind_view) of Khmrlago"  → 28_  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshTchInf000005:982  "13_input of Binrlago"  → 08_  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
-  McshTchInf000005:493  "32_method of Cmprlago"  → 12_  ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd
-  McshTchInf000005:135  "20_output of Cmprlago"  → 09_  ← RltnMapping'09_output@McshCor000005#idRlnMpgmdl
-  McshTchInf000005:73  "01_user of Cmprlago"  → 13_  ← Ogsmlago'13_user@McshLag000005#idLOgsmentt
-  McshTchInf000007:1785  "20_output of CptlSnet"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000007:1660  "20_output of CptlFram"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000007:370  "24_manager of Cnptlago"  → 04_  ← Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
-  McshTchInf000007:165  "13_input of Cnptlago"  → 02_  ← Knlglago'02_input@McshTchInf000039#idLKnlginpt
-  McshTchInf000007:74  "11_user of Cnptlago"  → 01_  ← Knlglago'01_user@McshTchInf000039#idLKnlguser
-  McshTchInf000009:854  "20_output of Mcshlago"  → 03_  ← Knlglago'03_output@McshTchInf000039#idLKnlgotpt
-  McshTchInf000029:797  "13_archetype of Jnst"  → 08_  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
-  McshTchInf000030:330  "03_algo'unit of Rustlago"  → 09_  ← Srcdlago'09_Srcdalgo'unit@McshTchInf000006#idLSrcdunt
-  McshTchInf000030:251  "02_algo'node of Rustlago"  → 06_  ← Srcdlago'06_Srcdalgo'node@McshTchInf000006#idLSrcdalgnode
-  McshTchInf000039:15116  "03_output of Wlfmlago"  → 20_  ← Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
-  McshTchInf000039:88  "03_output of Knlglago"  → 20_  ← Cmprlago'20_output@McshTchInf000005#idLCmpropt
-  McshTchInf000039:75  "02_input of Knlglago"  → 08_  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
+=== INH-WRONGNUM (0) — its NN_ differs from the-generic-attribute (own numbering? by hand)
 
-=== INH-EMPTY (54) — an-inherited attribute that says nothing new (no info, no link): delete?
-  McshLag000007:29792  "05_logo-relation of Hmmdsemuconj"  ← bodyNo'07_logo_relation@McshCor000003#idEntBodyNlgln
-  McshLag000020:12749  "06_input2-(senso-mind--view) of Ellnlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000033:3425  "29_input2-(senso-mind--view) of Deutlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000034:2515  "29_input2-(senso-mind--view) of Bcmslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000037:5212  "30_input3_(semu_view) of Urdulago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000037:5195  "29_input2_(senso_mind_view) of Urdulago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000037:5178  "28_input1_(mind_view) of Urdulago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshLag000037:4626  "30_input3_(semu_view) of Hindlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000037:4609  "29_input2_(senso_mind_view) of Hindlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000037:4592  "28_input1_(mind_view) of Hindlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshLag000037:2018  "29_input2-(senso-mind--view) of Hiurlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000038:1531  "29_input2-(senso-mind--view) of Slv0Lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000039:1178  "29_input2-(senso-mind--view) of Ide0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000040:1405  "29_input2-(senso-mind--view) of Afa0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000041:1318  "29_input2-(senso-mind--view) of Tur0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshLag000042:1310  "29_input2-(senso-mind--view) of Asa0lago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000034:326  "03_input3_(semu_view) of Vnmalago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000034:309  "02_input2_(senso_mind_view) of Vnmalago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000034:292  "01_input1_(mind_view) of Vnmalago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000035:173  "03_input3_(semu_view) of lagoItln"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000035:156  "02_input2_(senso_mind_view) of lagoItln"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000035:139  "01_input1_(mind_view) of lagoItln"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000036:147  "44_economic-view of SoctDeut"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
-  McshStn000037:2227  "44_economic-view of SoctFrac"  ← society'44_economic_view@McshStn000009#idSocHumnatt007
-  McshStn000037:222  "03_input3_(semu_view) of Fraclago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000037:205  "02_input2_(senso_mind_view) of Fraclago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000037:188  "01_input1_(mind_view) of Fraclago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000038:223  "03_input3_(semu_view) of Sbullago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000038:206  "02_input2_(senso_mind_view) of Sbullago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000038:189  "01_input1_(mind_view) of Sbullago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000039:223  "03_input3_(semu_view) of Sqiplago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000039:206  "02_input2_(senso_mind_view) of Sqiplago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000039:189  "01_input1_(mind_view) of Sqiplago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000040:214  "03_input3_(semu_view) of Smkdlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000040:197  "02_input2_(senso_mind_view) of Smkdlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000040:180  "01_input1_(mind_view) of Smkdlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000041:232  "03_input3_(semu_view) of Sslvlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000041:215  "02_input2_(senso_mind_view) of Sslvlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000041:198  "01_input1_(mind_view) of Sslvlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000043:214  "03_input3_(semu_view) of Sruslago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000043:197  "02_input2_(senso_mind_view) of Sruslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000043:180  "01_input1_(mind_view) of Sruslago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000044:214  "03_input3_(semu_view) of Romnlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000044:197  "02_input2_(senso_mind_view) of Romnlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000044:180  "01_input1_(mind_view) of Romnlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000048:237  "03_input3_(semu_view) of Jpnslago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000048:220  "02_input2_(senso_mind_view) of Jpnslago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000048:203  "01_input1_(mind_view) of Jpnslago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshStn000050:206  "03_input3_(semu_view) of Khmrlago"  ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000050:189  "02_input2_(senso_mind_view) of Khmrlago"  ← Hmmdlago'29_input2_(senso_mind__view)@McshLag000007#idLHmmdipt2
-  McshStn000050:172  "01_input1_(mind_view) of Khmrlago"  ← Hmmdlago'28_input1_(mind_view)@McshLag000007#idLHmmdipt1
-  McshTchInf000012:129  "09_UNIT of Jsndlago"  ← Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
-  McshTchInf000013:75  "13_archetype of Jsellago"  ← Jsgnlago'13_archetype (input)@McshTchInf000010#idLJsgnarc
-  McshTchInf000018:7459  "Input of Lsolf"  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
+=== INH-EMPTY (0) — an-inherited attribute that says nothing new (no info, no link): delete?
 
-=== INH-OWNNUM (52) — an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
-  McshCor000008:317  "02_whole_part_relation of whole"  last 02_ ← entity'02_attribute_relation@McshCor000003#idEntatrrln
-  McshLag000008:829  "30_input3-(semu-view) of Alfalago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000008:812  "28_input1-(mind-view) of Alfalago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000009:151  "08_science of Spchlago"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
-  McshLag000010:114  "01_ATTRIBUTE of Sngulagu"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000012:4968  "28_input1-(mind-view) of Espolago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000012:71  "01_ATTRIBUTE of Espolago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000018:211  "08_science of Zhonlago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000020:12841  "08_linguistics of Ellnlago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000027:7888  "05_relation-to-BaltoSlavic of Ellalago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000028:2062  "09_Proto-Greek-{cBce2000} of Greek-family"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000028:1924  "08_Mycenaean-Greek-{cBce1600..Bce1100} of Greek-family"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000028:1919  "07_Ancient-Greek-{Bce1100..Bce0300} of Greek-family"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000028:1603  "06_Koine-Greek-{cBce300..c300} of Greek-family"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000028:1579  "05_Medieval-Greek-{c300..1453} of Greek-family"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000031:71  "11_human of Gstrlago"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
-  McshLag000033:102  "12_evaluation of Deutlago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000034:65  "12_evaluation of Bcmslago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000035:110  "12_evaluation of Spanlago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000036:107  "12_evaluation of Arablago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000037:87  "12_evaluation of Hiurlago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000038:119  "12_evaluation of Slv0Lago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000039:115  "12_evaluation of Ide0lago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000040:131  "12_evaluation of Afa0lago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000041:121  "12_evaluation of Tur0lago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshLag000042:94  "12_evaluation of Asa0lago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshStn000009:824  "08_science of society"  last 39_ ← human'39_qualification@McshHmn000002#idHmnatt035
-  McshStn000009:116  "05_evaluation of society"  last 39_ ← human'39_qualification@McshHmn000002#idHmnatt035
-  McshStn000034:3706  "05_info-resource of Vnmalago"  last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3
-  McshTchInf000005:1331  "26_machine of Tdoclago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000006:2411  "13_archetype (input) of Srcdlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000006:2381  "09_Srcdalgo'unit of Srcdlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000006:2304  "06_Srcdalgo'node of Srcdlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000006:2138  "13_archetype (input) of Asmblago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000006:1149  "26_tech of Prgmlago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000007:133  "12_evaluation of Cnptlago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000008:3179  "24_manager of Hitplago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000008:97  "12_evaluation of Hitplago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000010:6518  "33_human of Jsgnlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000010:90  "09_Jsgnalgo'UNIT of Jsgnlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:3411  "18_algo.crate of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:3370  "12_evaluation of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:3323  "11_human of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:3115  "08_algo'section of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:2071  "04_algo'word of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000030:235  "01_ATTRIBUTE of Rustlago"  last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-  McshTchInf000039:3098  "06_knowledge-tech of Knlglago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000039:3005  "05_relation-to-programing-language of Knlglago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchInf000039:105  "04_manager of Knlglago"  last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn
-  McshTchPrgm000003:2406  "26_installing of Atomedtr"  last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul
-  McshTchPrgm000003:211  "20_developing of Atomedtr"  last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul
-  McshTchPrgm000003:65  "19_using of Atomedtr"  last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul
+=== INH-OWNNUM (0) — an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
 
 === INH-LAST (0) — a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
 
-=== INH-OWNNONUM (285) — an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
-  McshCor000006:199  "syntax of RltnTime"  → 08_  (last 07_ ← bodyNo'07_logo_relation@McshCor000003#idEntBodyNlgln)
-  McshCor000007:190  "relation of space"  → 05_  (last 02_ ← entity'02_attribute_relation@McshCor000003#idEntatrrln)
-  McshCor000009:284  "ActgNaming of RltnGenericSpecific"  → 09_  (last 08_ ← RltnDialectic'08_complement-Argt@McshCor000005#idRlnDcascpltarg)
-  McshEdu000005:1987  "operand of operator"  → 13_  (last 12_ ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd)
-  McshEdu000005:1880  "ActgMapping of Mathfn"  → 15_  (last 12_ ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd)
-  McshEdu000005:1779  "notation of Mathfn"  → 14_  (last 12_ ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd)
-  McshEdu000005:1499  "referent of Mathfn"  → 13_  (last 12_ ← RltnMapping'12_method@McshCor000005#idRlnMpgmthd)
-  McshEdu000005:1470  "function of SciMath"  → 34_  (last 27_ ← science'27_researching@McshEdu000002#idSciatt007)
-  McshLag000003:84  "relation-to-referent of info"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:33502  "organization of Glbllago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:33318  "relation-to-Hmmdlago of Dlctlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:32905  "syllabogram of Sylblago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:32783  "writing of Textlago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:32737  "reading of Textlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:32439  "Language-Creation-Society of Cnrdlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000007:31398  "linguistics of Hmmdlago"  → 34_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:31001  "MISC-ATTRIBUTE of Hmmdlago"  → 33_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:29806  "senso-mind-relation of Hmmdsemuconj"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:29744  "Semuconj of HmmdviewSemu"  → 23_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:15655  "modality of Hmmdlago"  → 32_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:15506  "mapping_relations of Hmmdlago"  → 31_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000008:129  "input2-(senso--mind-view) of Alfalago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000009:146  "input2-(sensorial--mind-view) of Spchlago"  → 31_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000010:6053  "Conj-cnpt of SnguviewSemu"  → 22_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000011:31090  "MISC-ATTRIBUTE of Engllago"  → 31_  (last 30_ ← Alfalago'30_input3-(semu-view)@McshLag000008#idL0016ipt3)
-  McshLag000012:168  "input2-(senso--mind-view) of Espolago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000018:21804  "Small-Seal-Script of Zhon_textlago"  → 35_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:21750  "TTS of Zhon_textlago"  → 34_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:21551  "accent of Zhon_Spchlago"  → 39_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:21340  "tone of Zhon_Spchlago"  → 38_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:20686  "final-sound of Zhon_Spchlago"  → 37_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:20627  "initial-sound of Zhon_Spchlago"  → 36_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:19829  "pinyin of Zhon_Spchlago"  → 35_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:19797  "phonetic-transcription of Zhon_Spchlago"  → 34_  (last 33_ ← Zhonlago'33_input1_(mind_view)@McshLag000018#idLZhonipt1)
-  McshLag000018:19173  "dialect of Zhodlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000018:18178  "verb of Ptstlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000018:17727  "MISC-ATTRIBUTE of Zhonlago"  → 34_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000020:13112  "relation-to-lagoSpchElln of lagoAlfaElln"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000020:12912  "MISC-ATTRIBUTE of Ellnlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8511  "wordary of EllaHomeric"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8321  "double-consonant of lagoSpchElla"  → 35_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8234  "pitch-accent of lagoSpchElla"  → 34_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8217  "long-short-vowel of lagoSpchElla"  → 33_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8200  "three-way-stops of lagoSpchElla"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8175  "classical-letter-phoneme-mapping of lagoSpchElla"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8084  "Classical_ of Ellalago{Bce0500..Bce0300}"  → 34_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8065  "Archaic_ of Ellalago{Bce0800..Bce0500}"  → 33_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:8048  "Dark_ of Ellalago{Bce1100..Bce0800}"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000027:7155  "evaluation of Ellalago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000028:2048  "unit of Ellrlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000028:2006  "ambiguity of Ellblago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000028:1993  "unit of Ellblago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000028:1950  "noun of Ellclago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000028:1636  "unit of Ellklago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000029:300  "received-pronunciation of Engblago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000030:8299  "old-Turkic-alphabet of lagoAlfaTurk"  → 33_  (last 32_ ← Turklago'32_input2_(senso_mind_view)@McshLag000030#idLTurkipt2)
-  McshLag000030:8263  "phoneme of lagoSpchTurk"  → 33_  (last 32_ ← Turklago'32_input2_(senso_mind_view)@McshLag000030#idLTurkipt2)
-  McshLag000034:6129  "letter of Ssrplago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000034:5101  "letter of Scnrlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000034:4599  "letter of Shrvlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000034:3617  "letter of Sboslago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000036:3397  "phoneme of Araelago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000036:3277  "phoneme of Araslago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000038:1978  "ProtoSlavic of Slv0Lago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000038:1929  "BaltoSlavic of Slv0Lago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1841  "Germanic-languages of Ide0lago"  → 34_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1805  "Romance-languages of Ide0lago"  → 33_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1787  "Hittite-language of Ide0lago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1700  "verb of Ptielago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1605  "phoneme of Ptielago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000039:1529  "ProtoIndoEuropean of Ide0lago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000040:1832  "verb of Ptaalago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000040:1755  "ProtoAfroAsiatic of Afa0lago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000041:1854  "Oghuz-languages of Tur0lago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000041:1751  "verb of Pttklago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshLag000041:1675  "ProtoTurkic of Tur0lago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshStn000009:8973  "economy of SoctCptl"  → 46_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000009:8848  "industrial-revolution of SoctIndu"  → 46_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000009:7055  "MISC-ATTRIBUTE of society"  → 46_  (last 39_ ← human'39_qualification@McshHmn000002#idHmnatt035)
-  McshStn000019:757  "algo-house of SoctAlgo"  → 52_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:729  "algo-village of SoctAlgo"  → 51_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:696  "algo-city of SoctAlgo"  → 50_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:570  "algo-organization of SoctAlgo"  → 49_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:565  "algo-science of SoctAlgo"  → 48_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:332  "algo-administration of SoctAlgo"  → 47_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000019:96  "prerequisite of SoctAlgo"  → 46_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000021:492  "organization of SoctGlbl"  → 48_  (last 45_ ← society'45_name.individual@McshStn000009#idSocHumnatt054)
-  McshStn000038:1662  "relation-to-NorthMacedoniaLango of Sbullago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshStn000039:2177  "ProtoAlbanian of Sqiplago"  → 33_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshStn000039:2139  "parent-tree of Sqiplago"  → 32_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshStn000039:2015  "evaluation of Sqiplago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshStn000041:1350  "relation to Croatian of Sslvlago"  → 31_  (last 30_ ← Hmmdlago'30_input3_(semu_view)@McshLag000007#idLHmmdipt3)
-  McshTchInf000005:1610  "input-info of Flftlago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000005:1344  "tool of Tdoclago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000005:1189  "input-doc of Tdoclago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000005:508  "tool of Cmprlago"  → 35_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshTchInf000006:3264  "Srcdalgo'root of Srcdlago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:3207  "Srcdalgo'section of Srcdlago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:3128  "Srcdalgo'sentence of Srcdlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:3099  "Srcdalgo'phrase of Srcdlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:2743  "Srcdalgo'semantic-unit of Srcdlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:2567  "Srcdalgo'word of Srcdlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:2226  "algo (input) of Btcdlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:2150  "algo (output) of Asmblago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:2060  "algo (output) of Binplago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:1862  "algo (output) of Mchplago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000006:1283  "MISC-ATTRIBUTE of Prgmlago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000007:3257  "tool of CptlXmlg"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000009:690  "Mcsh-site of Mcshlago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000009:172  "worldview of Mcshlago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000010:6623  "specification of Jsgnlago"  → 48_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:6593  "learning of Jsgnlago"  → 47_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:6577  "language-that-complile-to-JavaScript of Jsgnlago"  → 46_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:6468  "Jsgnalgo.PACKAGE of Jsgnlago"  → 45_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:6399  "Jsgnalgo.PROGRAM of Jsgnlago"  → 44_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:6283  "Jsgnalgo.LIBRARY of Jsgnlago"  → 43_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:5600  "Jsgnalgo'ROOT of Jsgnlago"  → 42_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:5586  "Jsgnalgo'SECTION of Jsgnlago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:5172  "Jsgnalgo'SENTENCE of Jsgnlago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:5146  "Jsgnalgo'PHRASE of Jsgnlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:4231  "Jsgnalgo'API of Jsgnlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:380  "Jsgnalgo'SEMANTIC-UNIT of Jsgnlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000010:365  "Jsgnalgo'WORD of Jsgnlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000011:5169  "web-page of appBrowser"  → 40_  (last 36_ ← Jsbrlago'36_specification@McshTchInf000011#idLJsbrspec)
-  McshTchInf000011:5108  "JavaScript-engine of appBrowser"  → 39_  (last 36_ ← Jsbrlago'36_specification@McshTchInf000011#idLJsbrspec)
-  McshTchInf000011:5064  "layout-engine of appBrowser"  → 38_  (last 36_ ← Jsbrlago'36_specification@McshTchInf000011#idLJsbrspec)
-  McshTchInf000011:5053  "address-bar of appBrowser"  → 37_  (last 36_ ← Jsbrlago'36_specification@McshTchInf000011#idLJsbrspec)
-  McshTchInf000012:11067  "learning of Jsndlago"  → 44_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:11014  "environment_variables of Jsndrt"  → 38_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10950  "installing of Jsndrt"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10504  "Synopsis of Jsndrt"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10446  "module_ of Jsndlago_Repl(core 2.stable)"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10294  "semver of npm"  → 39_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10268  "package.json-file of npm"  → 38_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:10263  "package of npm"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:9429  "command of npm"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:8791  "security of Jsndlago"  → 43_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:8677  "relation-to-PHP of Jsndlago"  → 42_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:8663  "relation-to--browser-JavaScript of Jsndlago"  → 41_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:8151  "task of NpmpkgJake"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:8112  "namespace of NpmpkgJake"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:6535  "configuring of NpmpkgEslint"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:6313  "unpkg.com of Npmpkg"  → 38_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:5335  "package.json-file of Npmpkg"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:5330  "npm-tool of Npmpkg"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:4779  "Dependency of Jsndpgm"  → 39_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:4735  "Debugging of Jsndpgm (ljndbg)"  → 38_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:4711  "Executing of Jsndpgm"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:4690  "Installing of Jsndpgm"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:4024  "SENTENCE of Jsndlago"  → 40_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:4009  "PHRASE of Jsndlago"  → 39_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:3292  "API of Jsndlago"  → 38_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:3035  "member of JsndmcCoreUtil"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:2299  "member of JsndmcCoreHttp"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1871  "stream-object of JsndmcCoreFStream"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1764  "listener_function of JsndmcCoreFEvents"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1671  "member of JsndmcCoreFEvents"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1464  "wraper of Jsndmc"  → 42_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1406  "stability-index of Jsndmc (0 - 3)"  → 41_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1369  "Infrsc of Jsndmc"  → 40_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1260  "repository of Jsndmc"  → 39_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:1255  "npm-tool of Jsndmc"  → 38_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:582  "member of Jsndmc"  → 37_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:557  "caching of Jsndmc"  → 36_  (last 35_ ← Jsndlago'35_tool@McshTchInf000012#idLJsndtol)
-  McshTchInf000012:266  "SEMANTIC_UNIT of Jsndlago"  → 37_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000012:252  "WORD of Jsndlago"  → 36_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000013:1374  "structure of Jselapp"  → 39_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000013:1311  "package.json-file of Jselapp"  → 38_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000013:1277  "renderer.html-file of Jselapp"  → 37_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000013:1262  "main.js-file of Jselapp"  → 36_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000013:163  "API of Jsellago"  → 36_  (last 35_ ← Jsgnlago'35_tool@McshTchInf000010#idLJsgntol)
-  McshTchInf000014:6337  "converting-to-binary-format of text-Wasm"  → 38_  (last 35_ ← Wasmlago'35_tool@McshTchInf000014#idLWasmtool)
-  McshTchInf000014:6324  "file of text-Wasm"  → 37_  (last 35_ ← Wasmlago'35_tool@McshTchInf000014#idLWasmtool)
-  McshTchInf000014:6307  "S-expression of text-Wasm"  → 36_  (last 35_ ← Wasmlago'35_tool@McshTchInf000014#idLWasmtool)
-  McshTchInf000014:5351  "specification of Wasmlago"  → 45_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:5308  "evaluation of Wasmlago"  → 44_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:5269  "bnr-algo'file of WasmagoBinary"  → 36_  (last 35_ ← Wasmlago'35_tool@McshTchInf000014#idLWasmtool)
-  McshTchInf000014:4710  "WHOLE of Wasmprgm"  → 36_  (last 35_ ← Wasmlago'35_tool@McshTchInf000014#idLWasmtool)
-  McshTchInf000014:4493  "algo-module of Wasmlago"  → 43_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:3435  "algo-section of Wasmlago"  → 42_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:1537  "algo-sentence (instruction) of Wasmlago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:304  "algo-sem-unit of Wasmlago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:184  "algo-unit of Wasmlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:127  "algo-machine of Wasmlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:107  "algorithm (output-doc) of Wasmlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000014:66  "archetype (input-doc) of Wasmlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000018:9394  "relation-to-Move of Solxlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000018:9208  "human of Solxlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000018:8851  "style of Solxsource"  → 40_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:8836  "error of Solxsource"  → 39_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:8558  "SENTENCE of Solxsource"  → 38_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:8122  "value of Lsolv"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7986  "uint8 of Solxlago (ethsolnu8)"  → 39_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7967  "uint of Solxlago (ethsolnu)"  → 38_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7956  "int8 of Solxlago (ethsoln8)"  → 37_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7944  "int of Solxlago (ethsoln)"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7504  "Interface of Lsolf"  → 37_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7491  "Call of Lsolf"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7225  "Stage of Solxc"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7061  "send-function of Lsolad"  → 40_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7050  "delegatecall of Lsolad"  → 39_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7039  "callcode of Lsolad"  → 38_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7021  "call of Lsolad"  → 37_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:7004  "balance-number of Lsolad"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:6628  "SEMANTIC-UNIT of Solxsource"  → 37_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:6615  "UNIT of Solxsource"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:6489  "location of Solxprgm"  → 36_  (last 35_ ← Solxlago'35_tool@McshTchInf000018#idEthsoltul)
-  McshTchInf000018:6432  "algorithm of Solxlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000018:6418  "archetype of Solxlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:982  "attribute of Movelago"  → 46_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:967  "resource-reference of Movelago"  → 45_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:954  "relation-to-Solidity of Movelago"  → 44_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:910  "evaluation of Movelago"  → 43_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:845  "Movealgo.BYTECODE of Movelago"  → 42_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:793  "Movealgo.IRCODE of Movelago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:763  "Movealgo.SOURCECODE of Movelago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:569  "Movealgo'module-sut of Movelago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:436  "Movealgo'resource-sunt of Movelago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:422  "Movealgorithm of Movelago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:409  "archetype of Movelago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000028:383  "Move-language of AgntDiem"  → 29_  (last 28_ ← Algonet'28_law@McshTchInf000015#idAlgntlaw)
-  McshTchInf000029:1883  "usage of Jnst"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:1837  "tool of Jnst"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:692  "document|output of Jnldlago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:675  "archetype|input of Jnldlago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:549  "relation-to-XML of Jsonlago"  → 40_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:528  "relation-to-YAML of Jsonlago"  → 39_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:514  "relation-to-Javascript of Jsonlago"  → 38_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:496  "tool of Jsonlago"  → 37_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:85  "document (output) of Jsonlago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000029:72  "archetype (input) of Jsonlago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000030:3256  "binary-algo of Rustlago"  → 44_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:3199  "algo.program of Rustlago"  → 43_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:3164  "algo.package of Rustlago"  → 42_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:3094  "algo.module of Rustlago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:3050  "algo'root of Rustlago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:1922  "algo'sentence of Rustlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:1903  "algo'phrase of Rustlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:350  "algo'semantic-unit of Rustlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000030:75  "algo (output) of Rustlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:2359  "binary-algo of Cppzlago"  → 41_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:2310  "header-file of STL"  → 36_  (last 35_ ← Cppzlago'35_tool@McshTchInf000031#idLCpptool)
-  McshTchInf000031:2243  "header-file of standard-library"  → 37_  (last 35_ ← Cppzlago'35_tool@McshTchInf000031#idLCpptool)
-  McshTchInf000031:2229  "namespace of standard-library"  → 36_  (last 35_ ← Cppzlago'35_tool@McshTchInf000031#idLCpptool)
-  McshTchInf000031:2193  "relation-to-header-files of Cppzlago_library"  → 36_  (last 35_ ← Cppzlago'35_tool@McshTchInf000031#idLCpptool)
-  McshTchInf000031:2036  "algo'DOING of Cppzlago"  → 40_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:1944  "algo'section of Cppzlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:1757  "algo'sentence of Cppzlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:230  "algo'semantic-unit of Cppzlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000031:165  "algo'word of Cppzlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000035:372  "standard of Htmllago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000035:58  "input-doc of Htmllago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:16596  "MISC-ATTRIBUTE of Wlfmlago"  → 39_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000039:16580  "Wolfram-Research of Wlfmlago"  → 38_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000039:16566  "evaluation of Wlfmlago"  → 37_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000039:16521  "human of Wlfmlago"  → 36_  (last 35_ ← Prgmlago'35_tool@McshTchInf000006#idLPrgmtool)
-  McshTchInf000039:11893  "inference of Sweblago"  → 39_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:11875  "query of Sweblago"  → 38_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:11859  "evaluation of Sweblago"  → 37_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:11842  "ontology of Sweblago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:11802  "linked-data of Sweblago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:11726  "relation-to-RuleML of lagoRift"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:8291  "evaluation of Cycllago"  → 39_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:8278  "project of Cycllago"  → 38_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:8148  "human of Cycllago"  → 37_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:8125  "SubL of Cycllago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:6602  "tech of Cycllago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:6555  "tech of lagFlr2"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:6094  "relation-to-description-logic of lagoFlgc"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:5689  "relation-to-discourse-representation-structures of lagoCgaf"  → 37_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:5657  "relation-to-existential-graphs of lagoCgaf"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:5639  "evaluation of lagoCgaf"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:5228  "evaluation of lagoFolc"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:5014  "relation-to-natural-language of Logclago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:4711  "evaluation of lagoWkdt"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:4130  "evaluation of Ppsllago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:3891  "lexicon of lagoAcen"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:3528  "semantic-parsing of Lgkglago"  → 36_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000039:3491  "concept-mining of Lgkglago"  → 35_  (last 34_ ← Cmprlago'34_organization@McshTchInf000005#idLCmprozn)
-  McshTchInf000041:6158  "relation-to-Atom of Vscode"  → 41_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000041:6055  "settings of Vscode"  → 40_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000041:1550  "command of Vscode"  → 39_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000041:1201  "extension of Vscode"  → 38_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000041:268  "AI of Vscode"  → 37_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
-  McshTchInf000041:62  "user-interface of Vscode"  → 36_  (last 35_ ← Jsellago'35_tool@McshTchInf000013#idLJseltul)
+=== INH-OWNNONUM (3) — an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  McshCor000003:6186  "syntax of bodyNoargt"  → 05_  (last 03_ ← entity'03_expression@McshCor000003#idEntexrn)
+  McshCor000003:6169  "sequence of bodyNoargt"  → 04_  (last 03_ ← entity'03_expression@McshCor000003#idEntexrn)
+  McshCor000003:362  "naming-acting of attribute"  → 04_  (last 03_ ← entity'03_expression@McshCor000003#idEntexrn)
 
 === INH-ORDER (0) — the-attributes of a-specific are not in the-NN order of its generic
 
-=== INH-GNTRTEXT (11) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  McshStn000009:8437  #idSocHumngstr  governace-system (plain name): not defined, no concept named governace-system
-  McshStn000009:8437  #idSocHumngstr  satisfier-system (plain name): not defined, no concept named satisfier-system
-  McshStn000019:941  #idSocAlgogstr  classless-society (plain name): not defined, no concept named classless-society
-  McshStn000019:941  #idSocAlgogstr  metacapitalist-society (plain name): not defined, no concept named metacapitalist-society
-  McshStn000019:941  #idSocAlgogstr  info-network-society (plain name): not defined, no concept named info-network-society
-  McshStn000021:723  #idSocGlblgstr  material-body--systemMcshCor000011#idSys004 (plain name): not defined, no concept named material-body--systemMcshCor000011#idSys004
-  McshTchInf000012:8264  #idLJsndpkgJakegstr  Jsgn-based-task-runner (plain name): not defined, no concept named Jsgn-based-task-runner
-  McshTchInf000031:2972  #idLCppgstr  middle-level--programing-language (plain name): not defined, no concept named middle-level--programing-language
-  McshTchInf000031:2972  #idLCppgstr  general-purpose--programing-language (plain name): not defined, no concept named general-purpose--programing-language
-  McshTchInf000031:2972  #idLCppgstr  procedural--programing-language (plain name): not defined, no concept named procedural--programing-language
-  McshTchInf000031:2972  #idLCppgstr  generic-programing--programing-language (plain name): not defined, no concept named generic-programing--programing-language
+=== INH-GNTRTEXT (1) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  McshCor000003:5024  #idEntgstr  none (plain name): not defined; 2 concepts named none
 
-=== INH-TITLENAME (0) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+=== INH-TITLENAME (2) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+  McshCor000003:6072  "03_expression of bodyNo"  added bodyNo'expression!⇒BodyNoexpression; bodyNo'03_expression, BodyNoexpression moved first
+  McshCor000003:6012  "03_expression of body"  added body'expression
 
-=== INH-TITLEHAND (162) — a-numbered attribute whose title-name needs a-hand
-  McshCor000005:3507  "08_thinking of RltnProbability"  no name:: paragraph
-  McshCor000005:3314  "08_thought of RltnInfoPossessor"  no name:: paragraph
-  McshCor000005:1657  "09_output of RltnMapping"  no name:: paragraph
-  McshCor000005:1652  "08_input of RltnMapping"  no name:: paragraph
-  McshLag000007:15748  "30_input3_(semu_view) of Hmmdlago"  the-title is NOT a-name
-  McshLag000007:15676  "29_input2_(senso_mind__view) of Hmmdlago"  the-title is NOT a-name
-  McshLag000007:15580  "28_input1_(mind_view) of Hmmdlago"  the-title is NOT a-name
-  McshLag000007:898  "20_output_(logo_view) of Hmmdlago"  the-title is NOT a-name
-  McshLag000008:829  "30_input3-(semu-view) of Alfalago"  the-title is NOT a-name
-  McshLag000008:812  "28_input1-(mind-view) of Alfalago"  the-title is NOT a-name
-  McshLag000008:134  "20_output-(text-view) of Alfalago"  the-title is NOT a-name
-  McshLag000009:4342  "30_input3-(semu-view) of Spchlago"  the-title is NOT a-name
-  McshLag000009:4337  "28_input1-(mind-view) of Spchlago"  the-title is NOT a-name
-  McshLag000009:151  "08_science of Spchlago"  no name:: paragraph
-  McshLag000010:5883  "30_input3-(semu-view) of Sngulagu"  the-title is NOT a-name
-  McshLag000010:5853  "28_input1-(mind-view) of Sngulagu"  the-title is NOT a-name
-  McshLag000010:247  "20_output (logu-view) of Sngulagu"  the-title is NOT a-name
-  McshLag000011:30575  "30_input3-(semu-view) of Engllago"  the-title is NOT a-name
-  McshLag000011:30555  "28_input1-(mind-view) of Engllago"  the-title is NOT a-name
-  McshLag000011:90  "20_output (logo-view) of Engllago"  the-title is NOT a-name
-  McshLag000012:4988  "30_input3-(semu-view) of Espolago"  the-title is NOT a-name
-  McshLag000012:4968  "28_input1-(mind-view) of Espolago"  the-title is NOT a-name
-  McshLag000012:189  "20_output (logo-view) of Espolago"  the-title is NOT a-name
-  McshLag000018:18522  "04_output (view-logo) of Zhollago"  the-title is NOT a-name
-  McshLag000018:17722  "33_input1_(mind_view) of Zhonlago"  the-title is NOT a-name
-  McshLag000018:17517  "32_input2_(senso_mind_view) of Zhonlago"  the-title is NOT a-name
-  McshLag000018:17163  "30_input3_(semu_view) of Zhonlago"  the-title is NOT a-name
-  McshLag000018:369  "20_output (logo-view) of Zhonlago"  the-title is NOT a-name
-  McshLag000020:12768  "07_input3-(semu-view) of Ellnlago"  the-title is NOT a-name
-  McshLag000020:12749  "06_input2-(senso-mind--view) of Ellnlago"  the-title is NOT a-name
-  McshLag000020:12729  "05_input1-(mind-view) of Ellnlago"  the-title is NOT a-name
-  McshLag000020:84  "04_output (logo-view) of Ellnlago"  the-title is NOT a-name
-  McshLag000027:67  "04_output (logo-view) of Ellalago"  the-title is NOT a-name
-  McshLag000028:1919  "07_Ancient-Greek-{Bce1100..Bce0300} of Greek-family"  no name:: paragraph
-  McshLag000028:59  "04_output (logo-view) of Ell0lago"  the-title is NOT a-name
-  McshLag000030:8077  "32_input2_(senso_mind_view) of Turklago"  the-title is NOT a-name
-  McshLag000030:7976  "30_input3_(semu_view) of Turklago"  the-title is NOT a-name
-  McshLag000030:7971  "28_input1_(mind_view) of Turklago"  the-title is NOT a-name
-  McshLag000030:69  "20_output (logo-view) of Turklago"  the-title is NOT a-name
-  McshLag000031:101  "32_output (view-logo) of Gstrlago"  the-title is NOT a-name
-  McshLag000033:3444  "30_input3-(semu-view) of Deutlago"  the-title is NOT a-name
-  McshLag000033:3425  "29_input2-(senso-mind--view) of Deutlago"  the-title is NOT a-name
-  McshLag000033:3405  "28_input1-(mind-view) of Deutlago"  the-title is NOT a-name
-  McshLag000033:166  "20_output (logo-view) of Deutlago"  the-title is NOT a-name
-  McshLag000034:2534  "30_input3-(semu-view) of Bcmslago"  the-title is NOT a-name
-  McshLag000034:2515  "29_input2-(senso-mind--view) of Bcmslago"  the-title is NOT a-name
-  McshLag000034:2495  "28_input1-(mind-view) of Bcmslago"  the-title is NOT a-name
-  McshLag000034:115  "20_output (logo-view) of Bcmslago"  the-title is NOT a-name
-  McshLag000035:2330  "30_input3-(semu-view) of Spanlago"  the-title is NOT a-name
-  McshLag000035:2310  "28_input1-(mind-view) of Spanlago"  the-title is NOT a-name
-  McshLag000035:168  "20_output (logo-view) of Spanlago"  the-title is NOT a-name
-  McshLag000036:2747  "30_input3-(semu-view) of Arablago"  the-title is NOT a-name
-  McshLag000036:2727  "28_input1-(mind-view) of Arablago"  the-title is NOT a-name
-  McshLag000036:161  "20_output (logo-view) of Arablago"  the-title is NOT a-name
-  McshLag000037:5212  "30_input3_(semu_view) of Urdulago"  the-title is NOT a-name
-  McshLag000037:5195  "29_input2_(senso_mind_view) of Urdulago"  the-title is NOT a-name
-  McshLag000037:5178  "28_input1_(mind_view) of Urdulago"  the-title is NOT a-name
-  McshLag000037:4689  "20_output_(logo_view) of Urdulago"  the-title is NOT a-name
-  McshLag000037:4626  "30_input3_(semu_view) of Hindlago"  the-title is NOT a-name
-  McshLag000037:4609  "29_input2_(senso_mind_view) of Hindlago"  the-title is NOT a-name
-  McshLag000037:4592  "28_input1_(mind_view) of Hindlago"  the-title is NOT a-name
-  McshLag000037:2547  "20_output_(logo_view) of Hindlago"  the-title is NOT a-name
-  McshLag000037:2037  "30_input3-(semu-view) of Hiurlago"  the-title is NOT a-name
-  McshLag000037:2018  "29_input2-(senso-mind--view) of Hiurlago"  the-title is NOT a-name
-  McshLag000037:1998  "28_input1-(mind-view) of Hiurlago"  the-title is NOT a-name
-  McshLag000037:160  "20_output (logo-view) of Hiurlago"  the-title is NOT a-name
-  McshLag000038:1550  "30_input3-(semu-view) of Slv0Lago"  the-title is NOT a-name
-  McshLag000038:1531  "29_input2-(senso-mind--view) of Slv0Lago"  the-title is NOT a-name
-  McshLag000038:1511  "28_input1-(mind-view) of Slv0Lago"  the-title is NOT a-name
-  McshLag000038:205  "20_output (logo-view) of Slv0Lago"  the-title is NOT a-name
-  McshLag000039:1197  "30_input3-(semu-view) of Ide0lago"  the-title is NOT a-name
-  McshLag000039:1178  "29_input2-(senso-mind--view) of Ide0lago"  the-title is NOT a-name
-  McshLag000039:1158  "28_input1-(mind-view) of Ide0lago"  the-title is NOT a-name
-  McshLag000039:180  "20_output (logo-view) of Ide0lago"  the-title is NOT a-name
-  McshLag000040:1424  "30_input3-(semu-view) of Afa0lago"  the-title is NOT a-name
-  McshLag000040:1405  "29_input2-(senso-mind--view) of Afa0lago"  the-title is NOT a-name
-  McshLag000040:1385  "28_input1-(mind-view) of Afa0lago"  the-title is NOT a-name
-  McshLag000040:198  "20_output (logo-view) of Afa0lago"  the-title is NOT a-name
-  McshLag000041:1337  "30_input3-(semu-view) of Tur0lago"  the-title is NOT a-name
-  McshLag000041:1318  "29_input2-(senso-mind--view) of Tur0lago"  the-title is NOT a-name
-  McshLag000041:1298  "28_input1-(mind-view) of Tur0lago"  the-title is NOT a-name
-  McshLag000041:191  "20_output (logo-view) of Tur0lago"  the-title is NOT a-name
-  McshLag000042:1329  "30_input3-(semu-view) of Asa0lago"  the-title is NOT a-name
-  McshLag000042:1310  "29_input2-(senso-mind--view) of Asa0lago"  the-title is NOT a-name
-  McshLag000042:1290  "28_input1-(mind-view) of Asa0lago"  the-title is NOT a-name
-  McshLag000042:145  "20_output (logo-view) of Asa0lago"  the-title is NOT a-name
-  McshLag000043:3456  "30_input3-(semu-view) of Koralago"  the-title is NOT a-name
-  McshLag000043:3436  "28_input1-(mind-view) of Koralago"  the-title is NOT a-name
-  McshLag000043:239  "20_output (logo-view) of Koralago"  the-title is NOT a-name
-  McshStn000009:7040  "44_economic_view of society"  no name:: paragraph
-  McshStn000009:3745  "41_ecosystem of society"  no name:: paragraph
-  McshStn000021:237  "26_node_of_satisfiers of SoctGlbl"  no name:: paragraph
-  McshStn000034:345  "04_output_(logo_view) of Vnmalago"  the-title is NOT a-name
-  McshStn000034:326  "03_input3_(semu_view) of Vnmalago"  the-title is NOT a-name
-  McshStn000034:309  "02_input2_(senso_mind_view) of Vnmalago"  the-title is NOT a-name
-  McshStn000034:292  "01_input1_(mind_view) of Vnmalago"  the-title is NOT a-name
-  McshStn000035:192  "04_output_(logo_view) of lagoItln"  the-title is NOT a-name
-  McshStn000035:173  "03_input3_(semu_view) of lagoItln"  the-title is NOT a-name
-  McshStn000035:156  "02_input2_(senso_mind_view) of lagoItln"  the-title is NOT a-name
-  McshStn000035:139  "01_input1_(mind_view) of lagoItln"  the-title is NOT a-name
-  McshStn000036:93  "29_language of SoctDeut"  no name:: paragraph
-  McshStn000037:241  "04_output_(logo_view) of Fraclago"  the-title is NOT a-name
-  McshStn000037:222  "03_input3_(semu_view) of Fraclago"  the-title is NOT a-name
-  McshStn000037:205  "02_input2_(senso_mind_view) of Fraclago"  the-title is NOT a-name
-  McshStn000037:188  "01_input1_(mind_view) of Fraclago"  the-title is NOT a-name
-  McshStn000038:242  "04_output_(logo_view) of Sbullago"  the-title is NOT a-name
-  McshStn000038:223  "03_input3_(semu_view) of Sbullago"  the-title is NOT a-name
-  McshStn000038:206  "02_input2_(senso_mind_view) of Sbullago"  the-title is NOT a-name
-  McshStn000038:189  "01_input1_(mind_view) of Sbullago"  the-title is NOT a-name
-  McshStn000039:242  "04_output_(logo_view) of Sqiplago"  the-title is NOT a-name
-  McshStn000039:223  "03_input3_(semu_view) of Sqiplago"  the-title is NOT a-name
-  McshStn000039:206  "02_input2_(senso_mind_view) of Sqiplago"  the-title is NOT a-name
-  McshStn000039:189  "01_input1_(mind_view) of Sqiplago"  the-title is NOT a-name
-  McshStn000040:233  "04_output_(logo_view) of Smkdlago"  the-title is NOT a-name
-  McshStn000040:214  "03_input3_(semu_view) of Smkdlago"  the-title is NOT a-name
-  McshStn000040:197  "02_input2_(senso_mind_view) of Smkdlago"  the-title is NOT a-name
-  McshStn000040:180  "01_input1_(mind_view) of Smkdlago"  the-title is NOT a-name
-  McshStn000041:251  "04_output_(logo_view) of Sslvlago"  the-title is NOT a-name
-  McshStn000041:232  "03_input3_(semu_view) of Sslvlago"  the-title is NOT a-name
-  McshStn000041:215  "02_input2_(senso_mind_view) of Sslvlago"  the-title is NOT a-name
-  McshStn000041:198  "01_input1_(mind_view) of Sslvlago"  the-title is NOT a-name
-  McshStn000043:233  "04_output_(logo_view) of Sruslago"  the-title is NOT a-name
-  McshStn000043:214  "03_input3_(semu_view) of Sruslago"  the-title is NOT a-name
-  McshStn000043:197  "02_input2_(senso_mind_view) of Sruslago"  the-title is NOT a-name
-  McshStn000043:180  "01_input1_(mind_view) of Sruslago"  the-title is NOT a-name
-  McshStn000044:233  "04_output_(logo_view) of Romnlago"  the-title is NOT a-name
-  McshStn000044:214  "03_input3_(semu_view) of Romnlago"  the-title is NOT a-name
-  McshStn000044:197  "02_input2_(senso_mind_view) of Romnlago"  the-title is NOT a-name
-  McshStn000044:180  "01_input1_(mind_view) of Romnlago"  the-title is NOT a-name
-  McshStn000045:113  "29_language of SoctBiha"  no name:: paragraph
-  McshStn000046:105  "29_language of SoctMnea"  no name:: paragraph
-  McshStn000047:113  "29_language of SoctHrva"  no name:: paragraph
-  McshStn000048:256  "04_output_(logo_view) of Jpnslago"  the-title is NOT a-name
-  McshStn000048:237  "03_input3_(semu_view) of Jpnslago"  the-title is NOT a-name
-  McshStn000048:220  "02_input2_(senso_mind_view) of Jpnslago"  the-title is NOT a-name
-  McshStn000048:203  "01_input1_(mind_view) of Jpnslago"  the-title is NOT a-name
-  McshStn000049:133  "29_language of SoctKors"  no name:: paragraph
-  McshStn000050:225  "04_output_(logo_view) of Khmrlago"  the-title is NOT a-name
-  McshStn000050:206  "03_input3_(semu_view) of Khmrlago"  the-title is NOT a-name
-  McshStn000050:189  "02_input2_(senso_mind_view) of Khmrlago"  the-title is NOT a-name
-  McshStn000050:172  "01_input1_(mind_view) of Khmrlago"  the-title is NOT a-name
-  McshTchInf000006:2475  "20_algorithm (output) of Srcdlago"  the-title is NOT a-name
-  McshTchInf000006:2411  "13_archetype (input) of Srcdlago"  the-title is NOT a-name
-  McshTchInf000006:2381  "09_Srcdalgo'unit of Srcdlago"  the-title is NOT a-name
-  McshTchInf000006:2304  "06_Srcdalgo'node of Srcdlago"  the-title is NOT a-name
-  McshTchInf000006:2138  "13_archetype (input) of Asmblago"  the-title is NOT a-name
-  McshTchInf000006:1985  "20_algo (output) of Triplago"  the-title is NOT a-name
-  McshTchInf000008:3529  "38_archetype (input) of Hitplago"  the-title is NOT a-name
-  McshTchInf000008:230  "20_web-app-doc (output) of Hitplago"  the-title is NOT a-name
-  McshTchInf000010:306  "20_algorithm (output) of Jsgnlago"  the-title is NOT a-name
-  McshTchInf000010:277  "13_archetype (input) of Jsgnlago"  the-title is NOT a-name
-  McshTchInf000010:90  "09_Jsgnalgo'UNIT of Jsgnlago"  the-title is NOT a-name
-  McshTchInf000030:3115  "08_algo'section of Rustlago"  the-title is NOT a-name
-  McshTchInf000030:2071  "04_algo'word of Rustlago"  the-title is NOT a-name
-  McshTchInf000030:330  "03_algo'unit of Rustlago"  the-title is NOT a-name
-  McshTchInf000030:251  "02_algo'node of Rustlago"  the-title is NOT a-name
-  McshTchInf000031:2432  "20_algorithm (output) of Cppzlago"  the-title is NOT a-name
-  McshTchInf000031:152  "13_archetype (input) of Cppzlago"  the-title is NOT a-name
-  McshTchInf000031:67  "09_algo'unit of Cppzlago"  the-title is NOT a-name
-  McshTchInf000035:70  "20_output-doc(webpage) of Htmllago"  the-title is NOT a-name
-  McshTchInf000039:11646  "04_manager of lagoRule"  no name:: paragraph
-  McshTchInf000039:11056  "02_input of Owlzlago"  the-main-name Owlzarcho is NOT in this name::
+=== INH-TITLEHAND (4) — a-numbered attribute whose title-name needs a-hand
+  McshCor000003:6342  "07_subject-target of reldoSequenced"  no name:: paragraph
+  McshCor000003:6337  "06_subject of reldoSequenced"  no name:: paragraph
+  McshCor000003:576  "02_attribute_relation of entity"  the-main-name RltnEnttAttr is NOT in this name::
+  McshCor000003:169  "01_attribute of entity"  the-main-name Enttattr is NOT in this name::
 
-=== INH-REFBROKEN (0) — a-text-reference name!@File#id whose file or id does NOT exist
+=== INH-REFBROKEN (2) — a-text-reference name!@File#id whose file or id does NOT exist
+  McshCor000003:6001  "!@McshCor000003#idOverivew"  no #idOverivew in McshCor000003
+  McshCor000003:712  "!@McshCor000008#idWhlprtrltn1"  no #idWhlprtrltn1 in McshCor000008
 
 === INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
 
-=== INH-LOCAL (33) — an-attribute in 3+ specifics, not in the-generic: lift it up?
-  info-resource of Hmmdlago@McshLag000007  ×32  McshLag000007:32424 McshLag000007:33173 McshLag000010:5871 McshLag000012:4973 McshLag000018:17574 McshLag000020:12811 McshLag000027:7207 McshLag000028:1412 …
-  evoluting of Hmmdlago@McshLag000007  ×31  McshLag000007:32469 McshLag000010:6107 McshLag000012:5252 McshLag000018:17804 McshLag000018:18301 McshLag000018:19124 McshLag000020:12989 McshLag000027:7952 …
-  evoluting of society@McshStn000009  ×25  McshStn000009:8617 McshStn000009:9365 McshStn000009:9552 McshStn000009:9614 McshStn000009:9690 McshStn000009:9756 McshStn000019:815 McshStn000021:575 …
-  member of Humn1959Sinagu@McshHmn000003  ×11  McshTchInf000010:537 McshTchInf000010:1289 McshTchInf000010:2353 McshTchInf000010:3440 McshTchInf000011:1156 McshTchInf000011:2415 McshTchInf000012:2299 McshTchInf000012:3035 …
-  evoluting of Logclago@McshTchInf000039  ×9  McshTchInf000039:5256 McshTchInf000039:5379 McshTchInf000039:5775 McshTchInf000039:5989 McshTchInf000039:6131 McshTchInf000039:6234 McshTchInf000039:6369 McshTchInf000039:6488 …
-  evoluting of Prgmlago@McshTchInf000006  ×8  McshTchInf000006:3629 McshTchInf000006:3790 McshTchInf000010:7456 McshTchInf000014:6400 McshTchInf000018:9422 McshTchInf000030:4458 McshTchInf000031:2897 McshTchInf000039:16671
-  evoluting of Knlglago@McshTchInf000039  ×7  McshTchInf000007:1186 McshTchInf000039:5033 McshTchInf000039:8319 McshTchInf000039:10850 McshTchInf000039:11907 McshTchInf000039:14336 McshTchInf000039:16802
-  info-resource of society@McshStn000009  ×6  McshStn000009:9008 McshStn000009:9225 McshStn000009:9490 McshStn000019:780 McshStn000021:525 McshStn000031:13154
-  info-resource of Cmprlago@McshTchInf000005  ×6  McshTchInf000005:1549 McshTchInf000006:1352 McshTchInf000029:564 McshTchInf000029:744 McshTchInf000029:1922 McshTchInf000039:3114
-  evoluting of Cmprlago@McshTchInf000005  ×6  McshTchInf000006:1540 McshTchInf000008:3886 McshTchInf000029:600 McshTchInf000029:757 McshTchInf000029:1939 McshTchInf000039:3139
-  info-resource of Prgmlago@McshTchInf000006  ×6  McshTchInf000006:3316 McshTchInf000014:6222 McshTchInf000018:9399 McshTchInf000030:3632 McshTchInf000031:2846 McshTchInf000039:16654
-  info-resource of Knlglago@McshTchInf000039  ×5  McshTchInf000007:1072 McshTchInf000039:3794 McshTchInf000039:3908 McshTchInf000039:8306 McshTchInf000039:10836
-  info-resource of Hmmdsemuconj@McshLag000007  ×4  McshLag000009:4325 McshLag000030:8082 McshLag000031:153 McshLag000043:3681
-  evoluting of Hmmdsemuconj@McshLag000007  ×4  McshLag000009:4444 McshLag000030:8119 McshLag000031:177 McshLag000043:3692
-  verb of Hmmdlago@McshLag000007  ×4  McshLag000018:18178 McshLag000039:1700 McshLag000040:1832 McshLag000041:1751
-  doing of Hmmdlago@McshLag000007  ×4  McshLag000020:12976 McshLag000027:7939 McshLag000028:1425 McshLag000029:69
-  letter of Hmmdlago@McshLag000007  ×4  McshLag000034:3617 McshLag000034:4599 McshLag000034:5101 McshLag000034:6129
-  algo (output) of Prgmlago@McshTchInf000006  ×4  McshTchInf000006:1862 McshTchInf000006:2060 McshTchInf000006:2150 McshTchInf000030:75
-  evoluting of Cnptlago@McshTchInf000007  ×4  McshTchInf000007:1721 McshTchInf000007:1818 McshTchInf000007:3334 McshTchInf000009:4494
-  info-resource of Jsndlago@McshTchInf000012  ×4  McshTchInf000012:431 McshTchInf000012:482 McshTchInf000012:8026 McshTchInf000012:10273
-  relation of entity@McshCor000003  ×3  McshCor000007:190 McshCor000007:2209 McshCor000013:114
-  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:338 McshLag000007:31403 McshTchInf000005:574
-  senso-mind-relation of Hmmdsemucnpt@McshLag000007  ×3  McshLag000007:16831 McshLag000007:29536 McshLag000007:29806
-  unit of Hmmdlago@McshLag000007  ×3  McshLag000028:1636 McshLag000028:1993 McshLag000028:2048
-  phoneme of Hmmdlago@McshLag000007  ×3  McshLag000036:3277 McshLag000036:3397 McshLag000039:1605
-  doing of society@McshStn000009  ×3  McshStn000019:797 McshStn000021:543 McshStn000031:13189
-  tool of Cmprlago@McshTchInf000005  ×3  McshTchInf000005:1344 McshTchInf000029:496 McshTchInf000029:1837
-  doing of Cmprlago@McshTchInf000005  ×3  McshTchInf000006:1402 McshTchInf000008:3845 McshTchInf000039:3125
-  info-resource of Cnptlago@McshTchInf000007  ×3  McshTchInf000007:1709 McshTchInf000007:3268 McshTchInf000009:4468
-  info-resource of Jsgnlago@McshTchInf000010  ×3  McshTchInf000011:5226 McshTchInf000012:8692 McshTchInf000013:1650
-  evaluation of Prgmlago@McshTchInf000006  ×3  McshTchInf000014:5308 McshTchInf000028:910 McshTchInf000039:16566
-  evaluation of Knlglago@McshTchInf000039  ×3  McshTchInf000039:4130 McshTchInf000039:8291 McshTchInf000039:11859
-  info-resource of Logclago@McshTchInf000039  ×3  McshTchInf000039:5703 McshTchInf000039:6424 McshTchInf000039:13874
+=== INH-LOCAL (2) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  syntax of entity@McshCor000003  ×4  McshCor000003:6186 McshCor000004:189 McshCor000004:615 McshCor000007:792
+  sequence of entity@McshCor000003  ×3  McshCor000003:6169 McshCor000004:208 McshCor000005:267
 
-=== INFO (324) — how many specifics refine each numbered generic-attribute
+=== INFO (321) — how many specifics refine each numbered generic-attribute
     115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
      60  disease'04_therapy@McshHlth000011#idDssHmn004F
      50  disease'01_symptom@McshHlth000011#idDssHmn001F
@@ -752,43 +81,41 @@ SUMMARY
      16  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
      12  food'03_evaluation@McshHlth000013#idFoodHmneval
      11  model'12_evaluation@McshCor000012#idMdleval
-     11  doing'06_argument@McshCor000004#idDngatt001
+     11  doing'04_argument@McshCor000004#idDngatt001
      11  Ognssyst'02_organ@McshHlth000002#idSysOgnHmnatt001
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
      11  Algonet'20_governance_system@McshTchInf000015#idAlgntgov
-     10  relation'03_argument@McshCor000005#idRlnarg
+     10  relation'04_argument@McshCor000005#idRlnarg
      10  Ognssyst'01_disease@McshHlth000002#idSysOgnHmnatt002
      10  Knlglago'03_output@McshTchInf000039#idLKnlgotpt
      10  Algonet'25_organization@McshTchInf000015#idAlgntogn
       9  AgntBkcn'21_program@McshTchInf000016#idDbcpgm
       9  AgntBkcn'06_node@McshTchInf000016#idDbcnod
       9  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
-      8  system'03_structure@McshCor000011#idSyssrtr
+      8  entity'01_attribute@McshCor000003#idEntatt
       8  DissInfectiousViral'05_protection@McshHlth000011#idDssHmn162protection
       7  Cmprlago'20_output@McshTchInf000005#idLCmpropt
       7  Knlglago'02_input@McshTchInf000039#idLKnlginpt
-      6  doing'08_relation@McshCor000004#idDngatt008
       6  RltnMapping'08_input@McshCor000005#idRlnMpgarch
       6  Prgmlago'20_output|algo@McshTchInf000006#idLPrgmalg
       6  Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
       6  AgntBkcn'19_asset@McshTchInf000016#idDbcevu
       6  AgntBkcn'01_evaluation@McshTchInf000016#idDbceval
-      5  system'01_node@McshCor000011#idSyspart
       5  FctgBraining'06_argument@McshCor000018#idBrngHmnFctarg
       5  FctgEmoting'16_emotion@McshCor000018#idBrngHmnFct004emn
       5  Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
       5  AgntBkcn'24_statistics@McshTchInf000016#idDbcstat
+      4  entity'03_expression@McshCor000003#idEntexrn
+      4  system'01_node@McshCor000011#idSyspart
       4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis_doing@McshHlth000011#idDssHmn003
       4  satisfier'06_law@McshStn000010#idSfrHmnatt011
       4  Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
       4  ChmcElry'23_usage@McshNtr000007#idChmElratt012
       4  OgznOgsm'32_member@McshStn000006#idOznOgmatt003
-      3  bodyNo'04_valence@McshCor000003#idEntBodyNvlc
-      3  bodyNo'03_argument@McshCor000003#idEntBodyNarg
-      3  doing'07_syntax@McshCor000004#idDngstx
-      3  entity'01_attribute@McshCor000003#idEntatt
-      3  system'02_node_relation@McshCor000011#idSysndrn
+      3  bodyNo'04_argument@McshCor000003#idEntBodyNarg
+      3  bodyNo'05_valence@McshCor000003#idEntBodyNvlc
+      3  system'03_structure@McshCor000011#idSyssrtr
       3  model'13_archetype@McshCor000012#idMdlatt001
       3  FctgBrainingBio'06_argument@McshCor000013#idBrngarg
       3  creatingInfoMindBio'06_argument@McshCor000013#idBrngInfcrtarg
@@ -825,13 +152,14 @@ SUMMARY
       3  Algonet'28_law@McshTchInf000015#idAlgntlaw
       3  OgznDao'33_stakeholder@McshTchInf000019#idDeOznskhr
       3  Agntdapp'05_human@McshTchInf000015#idDappatt005
-      2  doing'02_valence@McshCor000004#idDngatt002
-      2  doing'09_risk@McshCor000004#idDngatt004
-      2  bodyNo'05_sequence@McshCor000003#idEntBodyNdrn
+      2  bodyNo'03_expression@McshCor000003#idEntBodyNexrn
+      2  doing'05_valence@McshCor000004#idDngatt002
+      2  doing'06_risk@McshCor000004#idDngatt004
+      2  system'02_node_relation@McshCor000011#idSysndrn
       2  FctgEmoting'17_stimulus@McshCor000018#idBrngHmnFct004stml
       2  FctgEmoting'15_human@McshCor000018#idBrngHmnFct004hmn
       2  infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
-      2  RltnMapping'12_method@McshCor000005#idRlnMpgmthd
+      2  RltnMapping'10_method@McshCor000005#idRlnMpgmthd
       2  SciLago'13_area-of-study@McshEdu000010#idSLangaos
       2  Ogsmcell'02_membrane@McshOgm000007#idCellOgmatt001
       2  organ'02_tissue@McshHlth000002#idOgnHmnatt010
@@ -850,7 +178,6 @@ SUMMARY
       2  Ogsmlago'13_user@McshLag000005#idLOgsmentt
       2  model'06_node@McshCor000012#idMdlatt005
       2  model'09_unit@McshCor000012#idMdlatt008
-      2  bodyNo'07_logo_relation@McshCor000003#idEntBodyNlgln
       2  Hmmdlogo'09_unit@McshLag000007#idLHmmdunt
       2  Hmmdlogo'03_syntax-tree@McshLag000007#idLHmmdsxtr
       2  Hmmdlogo'06_node@McshLag000007#idLHmmdnode
@@ -891,6 +218,7 @@ SUMMARY
       2  Ppsllago'03_output@McshTchInf000039#idLKnlg004oupt
       1  worldview'20_view@McshLag000003#idWldvatt004
       1  worldview'21_management_tool@McshLag000003#idWldvatt002
+      1  entity'02_attribute_relation@McshCor000003#idEntatrrln
       1  worldview'22_human@McshLag000003#idWldvatt001
       1  whole'01_part@McshCor000008#idWhlprt
       1  FctgEvalg'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
@@ -906,8 +234,6 @@ SUMMARY
       1  FctgBraining'13_sleeping-relation@McshCor000018#idBrngHmnFctslprn
       1  FctgEmoting'06_argument@McshCor000018#idBrngHmnFct004arg
       1  FctgWantingBio'06_argument@McshCor000013#idBrngWntgarg
-      1  RltnMapping'10_domain@McshCor000005#idRlnMpgdomn
-      1  RltnMapping'11_codomain@McshCor000005#idRlnMpgcdmn
       1  SciMind'13_area-of-study@McshEdu000009#idSMindaos
       1  science'22_conference@McshEdu000002#idSciatt016
       1  SciLago'20_scientist@McshEdu000010#idSLangwkr

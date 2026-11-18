@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-16-0.2026-11-18: INH-LAST --fix keeps a-right X\'NN_last line (also X\'NN_last!⇒M), deletes the-old ones',
     'inheritMcsh.mjs.0-15-0.2026-11-17: INH-OWNNUM --fix-num shifts ALL own numbers of the-specific (order kept); a-shift follows down',
     'inheritMcsh.mjs.0-14-0.2026-11-17: MvrwGstr03 WRONGNUM, OWNNUM messages give the-fix: --concept Mmn --fix-num --fix-name',
     'inheritMcsh.mjs.0-13-0.2026-11-17: the-attributes inside an-evoluting section are NOT numbered (no NONUM, OWNNONUM, ...)',
@@ -1018,8 +1019,13 @@ function fApplyLast(aoFileIn, aoIssueIn) {
       const nSub = sSect.indexOf('<section', 1);
       const aPara = (nSub > 0 ? sSect.slice(0, nSub) : sSect).match(/<p\b[^>]*\bid="[^"]+"[^>]*>\s*name::[\s\S]*?<\/p>/);
       if (!aPara) { oIssue.sSkip = 'no name:: paragraph'; continue; }
-      let sPara = aPara[0].replace(/\r?\n[ \t]*<br>\*\s*McshEngl\.[^\n,!]*'\d{2}_last,[^\n]*/g, '');
-      if (oIssue.sLastNew) {
+      // an-old "X'NN_last" line goes (with any !⇒.. suffix); the-right one stays where the-author put it
+      let bKeep = false;
+      let sPara = aPara[0].replace(/\r?\n[ \t]*<br>\*\s*McshEngl\.([^\n,!]*'\d{2}_last)[,!][^\n]*/g, (sLine, sName) => {
+        if (sName === oIssue.sLastNew && !bKeep) { bKeep = true; return sLine; }
+        return '';
+      });
+      if (oIssue.sLastNew && !bKeep) {
         // the-last English name of the-first block, before the-first "====== lagoX:" line
         const nBlock = sPara.search(/<br>======/);
         const aoLine = [...(nBlock > 0 ? sPara.slice(0, nBlock) : sPara).matchAll(/(\r?\n)([ \t]*)<br>\*\s*McshEngl\.[^\n]*/g)];

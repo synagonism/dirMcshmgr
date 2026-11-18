@@ -1,20 +1,35 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code MvrwGstr03_inherited_attr --file McshCor000005 --fix: C:\dirNodews\dirMcsh
+  createMcsh --auto --file McshCor000003 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · MvrwGstr03_inherited_attr: inheritMcsh titles changed: 0 · name:: paragraphs changed: 0 · NN_last names changed: 9 · 18 issues left, by hand · 0 skipped
+  0 files written · namecomma 0 · dupname 0 · nest 0 · headgap 0 · missing 0 · mainname 0 · srtr 0 · attribute 0 · 28 skipped
   written, no backup: see git diff
 
-=== INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary
-  titles changed: 0
-  name:: paragraphs changed: 0
-  NN_last names changed: 9
-  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
-  INH-WRONGNUM      3  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-OWNNUM       11  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
-  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
-  INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
-  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
-  written: see dirValid/inheritMcsh.txt
-
-=== NOFIX (1) — no automatic fix for this rule: it needs you
-  McshCor000005  MvrwGstr03_inherited_attr (18): left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::
+=== SKIP (28) — skipped, with why: fix by hand
+  McshCor000003:1917  #idEntevogIk13000 "millennium.3000!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:2228  #idEntevogIk12000 "millennium.2000!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:3332  #idEntevogIk11000 "millennium.1000!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:3801  #idEntevogIk1Bce1000 "millennium.Bce1000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4227  #idEntevogIk1Bce2000 "millennium.Bce2000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4349  #idEntevogIk1Bce3000 "millennium.Bce3000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4400  #idEntevogIk1Bce4000 "millennium.Bce4000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4452  #idEntevogIk1Bce5000 "millennium.Bce5000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4499  #idEntevogIk1Bce6000 "millennium.Bce6000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4538  #idEntevogIk1Bce7000 "millennium.Bce7000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4582  #idEntevogIk1Bce8000 "millennium.Bce8000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4629  #idEntevogIk1Bce9000 "millennium.Bce9000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4666  #idEntevogIk1BpK1x012 "millennium.Bce10000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4703  #idEntevogIk1BpK1x013 "millennium.Bce11000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4737  #idEntevogIk1BpK1x014 "millennium.Bce12000- of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4785  #idEntevogIk2BpK2x001 "megannium.BpK2x001!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4821  #idEntevogIk2BpK2x002 "megannium.BpK2x002!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4836  #idEntevogIk3BpK3x001 "gigannium.BpK3x001!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4941  #idEntevogIk3BpK3x002 "gigannium.BpK3x002!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4956  #idEntevogIk3BpK3x003 "gigannium.BpK3x003!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4971  #idEntevogIk3BpK3x004 "gigannium.BpK3x004!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4986  #idEntevogIk3BpK3x005 "gigannium.BpK3x005!= of entity": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:936  #idEntevogsmrdbp "summarized-before-present-": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:963  #idEntevogsmrdbce "summarized-before-current-era": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:995  #idEntevogsmrd1ml "summarized-1st-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:1051  #idEntevogsmrd2ml "summarized-2nd-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:1132  #idEntevogsmrd3ml "summarized-3nd-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:6676  #idEntYangNattold "04_old-attribute of entityΥoungNo": "entityΥoungNo" is not a-name of EnttYoungNo, the-section may belong to entityΥoungNo: by hand
