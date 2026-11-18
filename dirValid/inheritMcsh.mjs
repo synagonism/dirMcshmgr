@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-17-0.2026-11-18: the-marker X\'NN_last is NOT an-attr-key (04_argument of bodyNo matched entity\'01_attribute by "last")',
     'inheritMcsh.mjs.0-16-0.2026-11-18: INH-LAST --fix keeps a-right X\'NN_last line (also X\'NN_last!⇒M), deletes the-old ones',
     'inheritMcsh.mjs.0-15-0.2026-11-17: INH-OWNNUM --fix-num shifts ALL own numbers of the-specific (order kept); a-shift follows down',
     'inheritMcsh.mjs.0-14-0.2026-11-17: MvrwGstr03 WRONGNUM, OWNNUM messages give the-fix: --concept Mmn --fix-num --fix-name',
@@ -223,6 +224,8 @@ function fReadFile(sPathIn) {
     if (oNode.bAttr) {
       oNode.oSetAttrKey.add(fNormAttr(oNode.sAttrWord));
       for (const sName of aName) {
+        // the-marker "X'NN_last" is NOT an-attribute-name: every generic has one (key "last")
+        if (/'\d{2}_last$/.test(sName)) continue;
         const nQ = sName.lastIndexOf("'");
         if (nQ > 0) oNode.oSetAttrKey.add(fNormAttr(sName.slice(nQ + 1)));
       }

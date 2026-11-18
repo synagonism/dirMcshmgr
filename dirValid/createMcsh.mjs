@@ -110,7 +110,7 @@
 import moFs from 'fs'
 import moPath from 'path'
 import { fileURLToPath } from 'url'
-import { fReadFileHitp, fReadFileAllHitp, fReadFileHitpIdOnly } from './parserHitp.js'
+import { fReadFileHitp, fReadFileHitpIdOnly } from './parserHitp.js'
 import { fReadFileMcsh, fStripTags, rNameLine } from './parserMcsh.js'
 import { fRunChecksMcsh, fFormalMvrwName01, fCodeFull } from './structuralMcsh.js'
 import { rHeadArticle, fRunChecksHitp } from './structuralHitp.js'
@@ -122,6 +122,7 @@ import { fFindInheritAttr } from './inheritMcsh.mjs'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-44-0.2026-11-18: link fixes parse the-other files for their ids only; --auto also runs the-rule fixes of MvrwId01..12, Hvre05/06, MvrwMain01..07, MvrwName01, MvrwSect04, MvrwMisc01, MvrwMain11 (steps code:<rule>)',
     'createMcsh.mjs.0-43-0.2026-11-17: --auto also with --dir, --list, --all (validate-directory | -list | -worldview)',
     'createMcsh.mjs.0-42-0.2026-11-17: --id idX with --file: only the-edits inside concept idX (its section | paragraph, conceptRange.js); other files are not written',
     'createMcsh.mjs.0-41-0.2026-11-16: rule codes with their name; --code MvrwId13 still works (fCodeFull)',
@@ -168,7 +169,34 @@ const
   ],
   // the-modes, one per run; --auto runs aModeAuto in this order
   aModeAll = ['missing', 'name', 'overview', 'undated', 'nameid', 'headgap', 'nest', 'mainname', 'srtr', 'dupname', 'namecomma', 'attribute', 'auto'],
-  aModeAuto = ['namecomma', 'dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr', 'attribute'],
+  // 'code:<rule>': the-fix of that rule (as --code <rule>)
+  // then the-unambiguous rule fixes, 'code:<rule>' as --code <rule>: the-ids (and their links),
+  // the-broken links, the-main-names and names; MvrwMain11_line last: it orders the-name-lines
+  aModeAuto = ['namecomma', 'dupname', 'nest', 'headgap', 'missing', 'mainname', 'srtr', 'attribute',
+    'code:MvrwId01_char',
+    'code:MvrwId02_suffix_dong',
+    'code:MvrwId04_suffix_eval',
+    'code:MvrwId05_suffix_evog',
+    'code:MvrwId06_suffix_irsc',
+    'code:MvrwId07_suffix_pntr',
+    'code:MvrwId08_suffix_chtr',
+    'code:MvrwId09_suffix_wltr',
+    'code:MvrwId10_suffix_prtr',
+    'code:MvrwId11_suffix_gntr',
+    'code:MvrwId12_suffix_sptr',
+    'code:Hvre05',
+    'code:Hvre06',
+    'code:MvrwMain01_Attrbase',
+    'code:MvrwMain02_evolg',
+    'code:MvrwMain03_eval',
+    'code:MvrwMain04_doing',
+    'code:MvrwMain05_infrsc',
+    'code:MvrwMain06_srtr',
+    'code:MvrwMain07_Attrbase_line',
+    'code:MvrwName01_formal',
+    'code:MvrwSect04_name_empty',
+    'code:MvrwMisc01_date',
+    'code:MvrwMain11_line'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
     NODESC:   'idOverview without description::',
@@ -523,6 +551,8 @@ function fPlanMissing(sRawIn, sNameShortIn, aIdSectIn, sDateIn) {
  */
 // the-name-lines of the-worldview, read once: a-new name must not be one of them (MvreName01_duplicate_line)
 let oSetNameAllCache = null;
+// the-ids-only parse of the-files OUTSIDE the-scope, for the-link fixes (Hvre05, Hvre06) of one run
+const oMapIdOnly = new Map();
 function fFindNameAll(sNameDirIn) {
   if (oSetNameAllCache) return oSetNameAllCache;
   oSetNameAllCache = new Set();
@@ -2322,7 +2352,7 @@ async function fMain() {
     console.log('  --dupname    MvreName01_duplicate_line: a-name-line twice in ONE para, the-line without date | info deleted');
     console.log('  --namecomma  MvreName02_comma: a-name-line without a-comma gets it at the-end; a-comma in the-middle is reported');
     console.log('  --attribute  MvrwMain10_attribute: the-clear attribute ("X\x27y" → "y of M") | specific ("X.y" → "M.y") titles + their formal names; "of" another concept is reported');
-  console.log('  --auto       with --file | --dir | --list | --all: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute in order');
+  console.log('  --auto       with --file | --dir | --list | --all: --namecomma, --dupname, --nest, --headgap, --missing, --mainname, --srtr, --attribute, then --code of MvrwId01..12, Hvre05/06, MvrwMain01..07, MvrwName01, MvrwSect04, MvrwMisc01, MvrwMain11');
     console.log('  --file       the-fixes START in one file (--mainname, --srtr still re-point other files)');
     console.log('  --id X       with --file: only the-edits inside concept X (its section | paragraph); other files are not written');
     console.log('  --fix        it WRITES the-files; without it a-dry-run');
@@ -2375,7 +2405,7 @@ async function fMain() {
   const aStep = [];
   for (const sMode of aMode) {
     let sCount;
-    const nNoteBefore = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length;
+    const nNoteBefore = aLineOut.filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|OUTSIDE)/.test(sLine)).length;
     if (sMode === 'srtr') {
       // the-structure-concepts are what the-VALIDATOR says: MvrwId13_suffix_srtr
       const aoFileHitp = fListMcshSome();
@@ -2541,9 +2571,11 @@ async function fMain() {
       }
       sCount = `${oCount.CREATE ?? 0} descriptions created · ${oCount.FIXTITLE ?? 0} titles fixed · ` +
         `date {${sDate}}`;
-    } else if (sMode === 'code') {
+    } else if (sMode === 'code' || sMode.startsWith('code:')) {
+      // --code <rule>, or a-step 'code:<rule>' of --auto
+      const sCodeRun = sMode === 'code' ? sCodeOne : sMode.slice('code:'.length);
       // the-issues of ONE rule in each file (--file: one, --dir: every file there), as the-VALIDATOR reports them
-      const oFix = ooFixCode[sCodeOne];
+      const oFix = ooFixCode[sCodeRun];
       const nNoteFix = aLineOut.length;
       const aPathFile = fFindFileAll(sNameDir).filter(sPath => !fSkipFile(sPath));
       if (!aPathFile.length) throw new Error(`--file ${sNameFileOnly} --dir ${sDirOnly}: no such .last.html file`);
@@ -2564,9 +2596,15 @@ async function fMain() {
         aoIssueAll = fFindInheritAttr(sNameDir).map(oI => ({ sCode: 'MvrwGstr03_inherited_attr', sNameFile: oI.sNameShort + '.last.html', nLine: oI.nLine, sMessage: oI.sMessage }));
       }
       if (oFix.sKind === 'link') {
-        // a-link's target can be any file: the-whole worldview is parsed ONCE (~40 s)
-        aoFileHitpAll = fReadFileAllHitp(sNameDir);
-        aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true, [sCodeOne]);
+        // a-link's target can be any file: the-files to fix are parsed in full, every other file
+        //   for its ids only (~5 s, NOT ~40 s), kept for the-next link step of --auto (Hvre05, Hvre06):
+        //   an-other file's ids do not change in a-run that fixes the-files of its scope
+        aoFileHitpAll = fFindFileAll(sNameDir).map(sPath => {
+          if (!fSkipFile(sPath)) return fReadFileHitp(sPath);
+          if (!oMapIdOnly.has(sPath)) oMapIdOnly.set(sPath, fReadFileHitpIdOnly(sPath));
+          return oMapIdOnly.get(sPath);
+        });
+        aoIssueAll = fRunChecksHitp(aoFileHitpAll, sNameDir, true, [sCodeRun]);
       }
       // MvrwGstr01_gnsp_then_spgn: a-specific S can be in any file: every Mcsh file is parsed ONCE and checked together;
       //   the-jobs are collected per S-file (ooJobGstr) and written after the-files of the-scope
@@ -2576,7 +2614,7 @@ async function fMain() {
         ooRawAll = new Map(aPathMcsh.map(sPath => [fShort(sPath), { sPath, sRaw: moFs.readFileSync(sPath, 'utf8') }]));
         const aoCnptFile = await Promise.all([...ooRawAll.values()].map(o =>
           fReadFileMcsh(sNameDir, moPath.relative(sNameDir, o.sPath), o.sRaw)));
-        aoIssueAll = fRunChecksMcsh(aoCnptFile, sNameDir, true, [sCodeOne]);
+        aoIssueAll = fRunChecksMcsh(aoCnptFile, sNameDir, true, [sCodeRun]);
         // the-heads of every generic-tree:: (a-new head must not be one of them)
         oSetHead = new Set();
         // MvrwGstr02_spgn_then_gnsp: the-head X:generic → { sFile, sIdB } of its "{B}gntr" para
@@ -2597,22 +2635,22 @@ async function fMain() {
       let aoIssue = [];
       if (aoIssueAll) {
         aoIssue = aoIssueAll;
-      } else if (sCodeOne.startsWith('H')) {
+      } else if (sCodeRun.startsWith('H')) {
         // the-text read above is parsed, not read again; Hvre01 needs only the-ids
-        const fReadOne = sCodeOne === 'Hvre01' ? fReadFileHitpIdOnly : fReadFileHitp;
-        aoIssue = fRunChecksHitp([fReadOne(sPathFile, sRaw)], sNameDir, true, [sCodeOne]);
+        const fReadOne = sCodeRun === 'Hvre01' ? fReadFileHitpIdOnly : fReadFileHitp;
+        aoIssue = fRunChecksHitp([fReadOne(sPathFile, sRaw)], sNameDir, true, [sCodeRun]);
       } else if (sNameFile.startsWith('Mcsh')) {
-        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile), sRaw)], sNameDir, true, [sCodeOne]);
+        aoIssue = fRunChecksMcsh([await fReadFileMcsh(sNameDir, moPath.relative(sNameDir, sPathFile), sRaw)], sNameDir, true, [sCodeRun]);
       }
-      aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeOne && oIssue.sNameFile === sNameFile);
+      aoIssue = aoIssue.filter(oIssue => oIssue.sCode === sCodeRun && oIssue.sNameFile === sNameFile);
       nIssue += aoIssue.length;
       // with --dir a-file without issues is not noted: only what was found
       if (aoIssue.length === 0 && aPathFile.length > 1) continue;
 
       if (aoIssue.length === 0) {
-        aLineOut.push(`NOISSUE ${sNameShort}  ${sCodeOne}: nothing to fix`);
+        aLineOut.push(`NOISSUE ${sNameShort}  ${sCodeRun}: nothing to fix`);
       } else if (oFix.sKind === 'none' || oFix.sKind === 'inherit') {
-        aLineOut.push(`NOFIX  ${sNameShort}  ${sCodeOne} (${aoIssue.length}): ${oFix.sWhy}`);
+        aLineOut.push(`NOFIX  ${sNameShort}  ${sCodeRun} (${aoIssue.length}): ${oFix.sWhy}`);
       } else if (oFix.sKind === 'line') {
         fWriteFile(sPathFile, sRaw, sNameShort, oFix.fPlan(sRaw, sNameShort, aoIssue, sNameDir));
       } else if (oFix.sKind === 'idmap') {
@@ -2665,7 +2703,7 @@ async function fMain() {
         for (const oIssue of aoIssue) {
           // MvrwMain02..06: main-name "McshEngl.X"; MvrwMain01_Attrbase: main-name "X"
           const sMain = oIssue.sMessage.match(/main-name "(?:McshEngl\.)?([^"]+)"/)?.[1];
-          if (sCodeOne === 'MvrwMain01_Attrbase') {
+          if (sCodeRun === 'MvrwMain01_Attrbase') {
             // B + the-rest after the-concept's main-name W: bodyHumn'16_weight (W bodyHumn, B Hmbd) → Hmbdweight
             const [, sBase, sMainCnpt] = oIssue.sMessage.match(/the-Attrbase "([^"]+)" of concept "([^"]*)"/) ?? [];
             if (!sMain || !sBase || oIssue.sMessage.includes('has no alias')) {
@@ -2796,15 +2834,15 @@ async function fMain() {
           ? fPlanGntrNew(sRawOne, sFileOne, aJob, oSetHead)
           : fPlanSptrAdd(sRawOne, sFileOne, aJob));
       }
-      if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly || (sPathList ? 'list' : 'worldview')}  ${sCodeOne}: nothing to fix in ${aPathFile.length} files`);
+      if (nIssue === 0 && aPathFile.length > 1) aLineOut.push(`NOISSUE ${sDirOnly || (sPathList ? 'list' : 'worldview')}  ${sCodeRun}: nothing to fix in ${aPathFile.length} files`);
       for (const sNote of aLineOut.slice(nNoteFix)) {
         const sKind = sNote.split(' ')[0];
         if (['NOISSUE', 'NOFIX'].includes(sKind)) oCount[sKind] = (oCount[sKind] ?? 0) + 1;
       }
       const nChange = aLineOut.slice(nNoteFix).filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|LINK |INHERIT )/.test(sLine)).length;
-      sCount = `${sCodeOne}: ${nIssue} issues · ${nChange} fixed` +
+      sCount = `${sCodeRun}: ${nIssue} issues · ${nChange} fixed` +
         (oCount.NOFIX ? ' · no automatic fix' : '');
-      if (oFix.sKind === 'inherit') sCount = `${sCodeOne}: inheritMcsh ${sInheritDone} · ${nIssue} issues left, by hand`;
+      if (oFix.sKind === 'inherit') sCount = `${sCodeRun}: inheritMcsh ${sInheritDone} · ${nIssue} issues left, by hand`;
     } else if (sMode === 'name') {
       // the-sections without name:: are what the-VALIDATOR says: MvrwSect03_name_miss
       const aoFileHitp = fListMcshSome();
@@ -2850,8 +2888,10 @@ async function fMain() {
       sCount = `${oCount.NAMECOMMA ?? 0} name-lines got their comma · ${oCount.SKIP ?? 0} with a-comma in the-middle, by hand`;
     }
     // --auto: per step only its count of changes, the-detail is in createMcsh.txt
-    const nNote = aLineOut.filter(sLine => !/^(SKIP|BAD)/.test(sLine)).length - nNoteBefore;
-    aStep.push(aMode.length > 1 ? `${sMode} ${nNote}` : sCount);
+    const nNote = aLineOut.filter(sLine => !/^(SKIP|BAD|NOISSUE|NOFIX|OUTSIDE)/.test(sLine)).length - nNoteBefore;
+    // --auto: only the-steps that changed something, with their count (the-detail is in createMcsh.txt)
+    if (aMode.length === 1) aStep.push(sCount);
+    else if (nNote > 0) aStep.push(`${sMode.replace(/^code:/, '')} ${nNote}`);
   }
 
   const aHead = [
@@ -2860,7 +2900,7 @@ async function fMain() {
       `${sModeOne === 'evoluting' ? '' : ' --' + sModeOne}${sCodeOne ? ' ' + sCodeOne : ''}${sNameFileOnly ? ' --file ' + sNameFileOnly : ''}${sDirOnly ? ' --dir ' + sDirOnly : ''}${bAll ? ' --all' : ''}${sPathList ? " --list " + sPathList : ""} ` +
       `${bFix ? '--fix' : 'dry-run'}: ${sNameDir}`,
     '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
-    `  ${oSetPathWritten.size} files ${bFix ? 'written' : 'to write'} · ${aStep.join(' · ')} · ` +
+    `  ${oSetPathWritten.size} files ${bFix ? 'written' : 'to write'} · ${aStep.join(' · ') || 'nothing to fix'} · ` +
       `${oCount.SKIP ?? 0} skipped` + (oCount.nBad ? ` · ${oCount.nBad} BAD` : ''),
     bFix ? '  written, no backup: see git diff' : '  nothing written: add --fix to write',
     ''

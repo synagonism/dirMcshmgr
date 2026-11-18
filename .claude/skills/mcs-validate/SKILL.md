@@ -103,7 +103,7 @@ the backup) or copy the affected files before running it.
 | MvrwId13_suffix_srtr (structure id not ending in srtr) | `node dirValid/createMcsh.mjs <dir> --srtr` (re-points links in every `.last.html`) |
 | MvrwMain10_attribute (attribute `x of M` / specific `M.x` title + formal name), the clear cases | `node dirValid/createMcsh.mjs <dir> --attribute --file McshDir000000` (or `--code MvrwMain10_attribute`); a title "of" another concept, or `M'x` vs `M.x` names, is a SKIP for you |
 | MvrwName01_formal (formal name or formal title with a space or hyphen) | `node dirValid/createMcsh.mjs <dir> --code MvrwName01_formal --file McshDir000000` (or `--dir dirCor`, `--all`); a name that is a main-name (a `!⇒` target) is a SKIP: use `--mainname` |
-| ALL of the above that apply, for ONE file | `node dirValid/createMcsh.mjs <dir> --auto --file McshDir000000` (`--namecomma`, `--dupname`, `--nest`, `--headgap`, `--missing`, `--mainname`, `--srtr`, `--attribute` in order; = the visual's validate-file → fix) |
+| ALL of the above that apply, for ONE file | `node dirValid/createMcsh.mjs <dir> --auto --file McshDir000000` (`--namecomma`, `--dupname`, `--nest`, `--headgap`, `--missing`, `--mainname`, `--srtr`, `--attribute`, then the `--code` fixes of MvrwId01..12, Hvre05/06, MvrwMain01..07, MvrwName01, MvrwSect04, MvrwMisc01, MvrwMain11, in order; = the visual's validate-file → fix) |
 
 Every createMcsh mode takes `--file McshDir000000`: its fixes start in that file only
 (`--mainname`, `--srtr` still re-point the other files).
