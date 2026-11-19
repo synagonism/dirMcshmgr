@@ -58,7 +58,9 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
-    'mMcsh2.js.27-16-0.2026-11-19: attributeChain is-ordered by number 01, 02, .. (the-generics by their smallest number, entity first)',
+    'mMcsh2.js.27-18-0.2026-11-19: dblclick on "X\'NN_last" (name::) gives X\'attribute, NOT X\'attributeChain (the-head of generic-tree:: still gives it)',
+    'mMcsh2.js.27-17-0.2026-11-19: dblclick on Mmn\'attribute: the-numbered attributes, own and inherited, 01, 02, .. (nearer wins), then the-others',
+    'mMcsh2.js.27-16-0.2026-11-19: attributeChain is-ordered 01, 02, ..: the-generics from entity to the-nearest; a-closing ===; no arrow for the-same NN_name',
     'mMcsh2.js.27-15-0.2026-11-19: attributeChain skips the X\'NN_last markers (system\'06_last no longer overrides whole\'06_environment)',
     'mMcsh2.js.27-14-0.2026-11-17: dblclick on "X\'NN_last" (name::) and on the-head "McshEngl.X:generic" (generic-tree::) inserts X\'attributeChain',
     'mMcsh2.js.27-13-0.2026-11-16: attributeChain walks EVERY === group (all generics), breadth-first, entity last',
@@ -1587,8 +1589,8 @@ let fContainersInsert = function () {
    *   '<Mmn>.specific' (.), "<Mmn>'attribute" ('), '<Mmn>:generic' (:),
    *   '<Mmn>/part' (/), '<Mmn>//whole' (//), '<Mmn>;child' (;), '<Mmn>;;parent' (;;)
    *   find from the-English name-index. "<Mmn>'attributeChain" lists the-own attributes
-   *   and, per generic up to entity, the-inherited ones (fAttrChain); "X'NN_last" of name:: and the-head
-   *   "McshEngl.X:generic" of generic-tree:: do the-same. Attribute-opposites (open/openNo) that point
+   *   and, per generic up to entity, the-inherited ones (fAttrChain); the-head "McshEngl.X:generic"
+   *   of generic-tree:: does the-same. "X'NN_last" of name:: gives "X'attribute". Attribute-opposites (open/openNo) that point
    *   the-same concept are-both kept.
    *   A-second double-click on the-line removes the-inserted list.
    * OUTPUT: promise of true if it handled the-double-click, else false (caller searches)
@@ -1623,9 +1625,10 @@ let fContainersInsert = function () {
       if (aM) { sMmn = aM[1]; sMark = aoRel[n].sMark; sWord = aoRel[n].sWord; bHoldOpp = !!aoRel[n].bHoldOpp; break }
     }
     // "* McshEngl.X'NN_last," (name:: of a-generic) and the-head "* McshEngl.X:generic," of a-generic-tree::
-    //   are triggers of X'attributeChain too: every section-concept has them, NOT an-attribute:: para
+    //   are triggers too (X'attribute, X'attributeChain): every section-concept has them, NOT an-attribute:: para
     const aLast = sTxt.match(/\*\s*(?:McshEngl\.)?(.+?)'\d{2}_last(?=[,\s]|$)/)
-    if (aLast) { sMmn = aLast[1]; sMark = "'"; sWord = 'attributeChain' }
+    // X'NN_last gives X'attribute (numbered own + inherited, then the-others); the-head gives X'attributeChain
+    if (aLast) { sMmn = aLast[1]; sMark = "'"; sWord = 'attribute'; bHoldOpp = true }
     else if (sWord === 'generic' && /\*\s*McshEngl\./.test(sTxt) && oP.id.endsWith('gntr')) sWord = 'attributeChain'
     if (!sMmn) return false
     const
@@ -1741,7 +1744,7 @@ let fContainersInsert = function () {
      *     that does-not really match, is visible);
      *   - X'y.z (a-specific of an-attribute) and unnumbered attributes are-not listed.
      */
-    async function fAttrChain(sMmnIn) {
+    async function fAttrChain(sMmnIn, bFlatIn) {
       const
         aoLevel = [],          // { sHead, aoAttr: [{ sInformal, sRef, nNum, oBy }] }
         oMapNum = new Map()    // nNum -> the-attribute of the-concept or a-nearer generic that gives it
@@ -1830,23 +1833,38 @@ let fContainersInsert = function () {
         }
       }
 
-      // ordered by number, 01, 02, ..: the-levels by their smallest number (entity first), each
-      //   level by number; a-level with nothing (Infinity) last; equal ones keep nearest-first
-      const fMin = oL => oL.aoAttr.length ? Math.min(...oL.aoAttr.map(oA => oA.nNum)) : Infinity
+      // bFlatIn (Mmn'attribute): ONE list of the-numbered attributes, own and inherited, 01, 02, ..
+      //   (per number the-nearer wins); then the-other own attributes, alphabetical
+      if (bFlatIn) {
+        const
+          aoNum = [...oMapNum.values()].sort((oA, oB) => oA.nNum - oB.nNum),
+          oSetRefNum = new Set(aoNum.map(oA => oA.sRef)),
+          aoOther = (await fSpecNamidx(sMmnIn, "'", 'attribute', true))
+            .filter(oA => !oSetRefNum.has(oA.sRef) && !/'(attributeChain|last)$/.test(oA.sInformal))
+            .sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)),
+          fLine = oA => '* ' + oA.sInformal + '!@' + oA.sRef + ','
+        return aoNum.map(fLine).concat(aTail, aoOther.map(fLine))
+      }
+      // ordered 01, 02, ..: the-generics from the-farthest (entity) to the-nearest, the-reverse of
+      //   the-walk (entity, bodyNo, relation); each level by number. a-closing '===' ends the-list
       const aOut = []
-      aoLevel.slice().sort((oA, oB) => fMin(oA) - fMin(oB)).forEach(function (oL) {
+      aoLevel.slice().reverse().forEach(function (oL) {
         aOut.push(oL.sHead)
         if (oL.aoAttr.length === 0) aOut.push('* (nothing added)')
         oL.aoAttr.forEach(function (oA) {
-          aOut.push('* ' + oA.sInformal + '!@' + oA.sRef + (oA.oBy ? ' → ' + oA.oBy.sInformal : '') + ',')
+          // the-arrow only when the-nearer one renames it (NOT for the-same NN_name: entity'03_expression, relation'03_expression)
+          const bRename = oA.oBy && oA.oBy.sChild !== oA.sChild
+          aOut.push('* ' + oA.sInformal + '!@' + oA.sRef + (bRename ? ' → ' + oA.oBy.sInformal : '') + ',')
         })
       })
-      return aOut.concat(aTail)
+      return aOut.concat(aTail, ['==='])
     }
 
     if (sWord === 'attributeChain') aGeneric = await fAttrChain(sMmn)
+    // Mmn'attribute: the-numbered ones (own + inherited) 01, 02, .., then the-others
+    if (sWord === 'attribute') aGeneric = await fAttrChain(sMmn, true)
     if (sWord === 'generic' && !bGeneric) aGeneric = await fGenericOwn(oP)
-    const aoSpec = (bGeneric || sWord === 'generic' || sWord === 'attributeChain') ? [] :
+    const aoSpec = (bGeneric || sWord === 'generic' || sWord === 'attributeChain' || sWord === 'attribute') ? [] :
       await fSpecNamidx(sMmn, sMark, sWord, bHoldOpp)
     aoSpec.sort((oA, oB) => oA.sInformal.localeCompare(oB.sInformal)) // alphabetical
     // build the-findings-list and insert it right under THIS trigger-line, below a-'---'

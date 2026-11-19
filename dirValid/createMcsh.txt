@@ -1,43 +1,53 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --auto --file McshCor000011 --fix: C:\dirNodews\dirMcsh
+  createMcsh --auto --file McshCor000005 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · MvrwGstr03_inherited_attr 10 · 0 skipped
+  1 files written · dupname 1 · MvrwGstr03_inherited_attr 10 · 6 skipped
   written, no backup: see git diff
 
-=== NOISSUE (25) — the-rule has no issue in the-file
-  McshCor000011  MvrwId01_char: nothing to fix
-  McshCor000011  MvrwId02_suffix_dong: nothing to fix
-  McshCor000011  MvrwId04_suffix_eval: nothing to fix
-  McshCor000011  MvrwId05_suffix_evog: nothing to fix
-  McshCor000011  MvrwId06_suffix_irsc: nothing to fix
-  McshCor000011  MvrwId07_suffix_pntr: nothing to fix
-  McshCor000011  MvrwId08_suffix_chtr: nothing to fix
-  McshCor000011  MvrwId09_suffix_wltr: nothing to fix
-  McshCor000011  MvrwId10_suffix_prtr: nothing to fix
-  McshCor000011  MvrwId11_suffix_gntr: nothing to fix
-  McshCor000011  MvrwId12_suffix_sptr: nothing to fix
-  McshCor000011  Hvre05: nothing to fix
-  McshCor000011  Hvre06: nothing to fix
-  McshCor000011  MvrwMain01_Attrbase: nothing to fix
-  McshCor000011  MvrwMain02_evolg: nothing to fix
-  McshCor000011  MvrwMain03_eval: nothing to fix
-  McshCor000011  MvrwMain04_doing: nothing to fix
-  McshCor000011  MvrwMain05_infrsc: nothing to fix
-  McshCor000011  MvrwMain06_srtr: nothing to fix
-  McshCor000011  MvrwMain07_Attrbase_line: nothing to fix
-  McshCor000011  MvrwName01_formal: nothing to fix
-  McshCor000011  MvrwSect04_name_empty: nothing to fix
-  McshCor000011  MvrwMisc01_date: nothing to fix
-  McshCor000011  MvrwGstr03_inherited_attr: nothing to fix
-  McshCor000011  MvrwMain11_line: nothing to fix
+=== SKIP (6) — skipped, with why: fix by hand
+  McshCor000005:3399  #idRlnInfBlfoentstxEngbebi "_SntxEngl:_SntxSubj=brain_entity:[...]_SntxVerb:_SntxOther=belief:[in": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000005:3414  #idRlnInfBlfoentstxEngbeba "_SntxEngl:_SntxSubj=brain_entity:[...]_SntxVerb:_SntxObj1=arhetype:[...]": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000005:3427  #idRlnInfBlfoentstxEngbebbe "_SntxEngl:_SntxSubj=brain_entity:[..]_SntxVerb:_SntxObj1=brain_entity2:[...]": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000005:3748  #idRlnChild "parent-then-child relation": not "X'y", "X.y" or "x of X" with X a-name of RltnParentChild: by hand
+  McshCor000005:3768  #idRlnParent "child-then-parent relation": not "X'y", "X.y" or "x of X" with X a-name of RltnParentChild: by hand
+  McshCor000005:500  #idSMathrln in dirEdu/McshEdu000005.last.html: 0 ids differ only in case, fix by hand
+
+=== DUPNAME (1) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01_duplicate_line)
+  McshCor000005:190  McshEngl.relation'sequence
+
+=== NOISSUE (24) — the-rule has no issue in the-file
+  McshCor000005  MvrwId01_char: nothing to fix
+  McshCor000005  MvrwId02_suffix_dong: nothing to fix
+  McshCor000005  MvrwId04_suffix_eval: nothing to fix
+  McshCor000005  MvrwId05_suffix_evog: nothing to fix
+  McshCor000005  MvrwId06_suffix_irsc: nothing to fix
+  McshCor000005  MvrwId07_suffix_pntr: nothing to fix
+  McshCor000005  MvrwId08_suffix_chtr: nothing to fix
+  McshCor000005  MvrwId09_suffix_wltr: nothing to fix
+  McshCor000005  MvrwId10_suffix_prtr: nothing to fix
+  McshCor000005  MvrwId11_suffix_gntr: nothing to fix
+  McshCor000005  MvrwId12_suffix_sptr: nothing to fix
+  McshCor000005  Hvre05: nothing to fix
+  McshCor000005  MvrwMain01_Attrbase: nothing to fix
+  McshCor000005  MvrwMain02_evolg: nothing to fix
+  McshCor000005  MvrwMain03_eval: nothing to fix
+  McshCor000005  MvrwMain04_doing: nothing to fix
+  McshCor000005  MvrwMain05_infrsc: nothing to fix
+  McshCor000005  MvrwMain06_srtr: nothing to fix
+  McshCor000005  MvrwMain07_Attrbase_line: nothing to fix
+  McshCor000005  MvrwName01_formal: nothing to fix
+  McshCor000005  MvrwSect04_name_empty: nothing to fix
+  McshCor000005  MvrwMisc01_date: nothing to fix
+  McshCor000005  MvrwGstr03_inherited_attr: nothing to fix
+  McshCor000005  MvrwMain11_line: nothing to fix
 
 === INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
-  titles changed: 76
-  name:: paragraphs changed: 47
-  NN_last names changed: 7
+  titles changed: 9
+  name:: paragraphs changed: 7
+  NN_last names changed: 4
   INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
   INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic

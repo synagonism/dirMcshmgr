@@ -1,108 +1,40 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:\dirNodews\dirMcsh (file McshCor000011)
+  INHERITANCE SYNC — APPLIED: C:\dirNodews\dirMcsh (file McshCor000005)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29874 sections · 5339 specifics under a-numbered generic · 4289 of their attributes · 1196 match a-numbered generic-attribute
-  titles changed: 76
-  name:: paragraphs changed: 47
-  NN_last names changed: 7
+  258 files · 29876 sections · 5339 specifics under a-numbered generic · 4291 of their attributes · 1192 match a-numbered generic-attribute
+  titles changed: 9
+  name:: paragraphs changed: 7
+  NN_last names changed: 4
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
   INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
-  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
   INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
   INH-EMPTY         0  an-inherited attribute that says nothing new (no info, no link): delete?
   INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL         3  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-LOCAL         0  an-attribute in 3+ specifics, not in the-generic: lift it up?
   INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
-  INH-GNTRTEXT      1  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  INH-GNTRTEXT      0  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
   INH-TITLENAME     0  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
   INH-TITLEHAND     0  a-numbered attribute whose title-name needs a-hand
 
-=== ORDER-FIXED (1) — attribute-sections moved into NN order
-  McshCor000011:600  "system.sequence_001"  12 13 09 → 09 12 13
+=== ORDER-FIXED (0) — attribute-sections moved into NN order
 
-=== APPLIED (76) — NN_ written into the-h-title
-  McshCor000011:3314  "quorum-sensing of SystCentralNo"  → 11_  ← system'10_science@McshCor000011#idSyssci
-  McshCor000011:3314  "11_quorum-sensing of SystCentralNo"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3245  "perception of Plantmngt"  → 12_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3245  "12_perception of Plantmngt"  → 14_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3211  "Infosyst of Plantmngt"  → 11_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3211  "11_Infosyst of Plantmngt"  → 13_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3180  "sensory-sys of Plantmngt"  → 10_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3180  "10_sensory-sys of Plantmngt"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3089  "Infosyst of SystMnggOgsm"  → 11_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3089  "11_Infosyst of SystMnggOgsm"  → 13_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3074  "sensory-sys of SystMnggOgsm"  → 10_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3074  "10_sensory-sys of SystMnggOgsm"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3040  "info of Biomnggsyst"  → 11_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3040  "11_info of Biomnggsyst"  → 13_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:3026  "sensory-system of Biomnggsyst"  → 10_  ← system'09_structure@McshCor000011#idSyssrtr
-  McshCor000011:3026  "10_sensory-system of Biomnggsyst"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:2804  "08_science of Mnggsyst"  → 10_  ← system'10_science@McshCor000011#idSyssci
-  McshCor000011:2629  "06_node of SystBody"  → 07_  ← system'07_node@McshCor000011#idSyspart
-  McshCor000011:2516  "namingActg of Pctree"  → 15_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2516  "15_namingActg of Pctree"  → 16_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2480  "meron of Wptree"  → 15_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2480  "15_meron of Wptree"  → 16_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2437  "specific-tree of Gstree"  → 18_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2437  "18_specific-tree of Gstree"  → 19_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2411  "generic-tree of Gstree"  → 17_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2411  "17_generic-tree of Gstree"  → 18_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2362  "relation-to-ontology of Gstree"  → 16_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2362  "16_relation-to-ontology of Gstree"  → 17_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2329  "taxon of Gstree"  → 15_  ← Treesyst'14_degree@McshCor000011#idSys002dgr
-  McshCor000011:2329  "15_taxon of Gstree"  → 16_  ← Treesyst'15_degree@McshCor000011#idSys002dgr
-  McshCor000011:2191  "14_degree of Treesyst"  → 15_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:2186  "13_level of Treesyst"  → 14_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:2171  "12_breadth of Treesyst"  → 13_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:2156  "11_size of Treesyst"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:734  "08_order-relation of sequence"  → 12_  ← system'10_science@McshCor000011#idSyssci
-  McshCor000011:734  "12_order-relation of sequence"  → 13_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:716  "07_element of sequence"  → 11_  ← system'10_science@McshCor000011#idSyssci
-  McshCor000011:716  "11_element of sequence"  → 12_  ← system'11_relation-to-sector@McshCor000011#idSysatt002
-  McshCor000011:476  "relation-to-sector of system"  → 11_  ← whole'06_environment@McshCor000008#idWhlenvt
-  McshHlth000019:5806  "18_organSpinal_cord of Nrvssyst"  → 23_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:5806  "23_organSpinal_cord of Nrvssyst"  → 27_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:5801  "17_organBrain of Nrvssyst"  → 22_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:5801  "22_organBrain of Nrvssyst"  → 26_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:5784  "16_neural_circuit of Nrvssyst"  → 21_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:5784  "21_neural_circuit of Nrvssyst"  → 25_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:3051  "14_peripheral_nervous_system of Nrvssyst"  → 19_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:3051  "19_peripheral_nervous_system of Nrvssyst"  → 23_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:2005  "13_central_nervous_system of Nrvssyst"  → 18_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:2005  "18_central_nervous_system of Nrvssyst"  → 22_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:657  "12_cell of Nrvssyst"  → 17_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:657  "17_cell of Nrvssyst"  → 21_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:596  "11_tissue of Nrvssyst"  → 16_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:596  "16_tissue of Nrvssyst"  → 20_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:591  "10_organSense of Nrvssyst"  → 14_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:195  "09_organNerve of Nrvssyst"  → 14_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshHlth000019:195  "14_organNerve of Nrvssyst"  → 18_  ← SystMnggOgsm'13_Infosyst@McshCor000011#idSysMng001att002
-  McshStn000002:465  "06_node of Sctn"  → 07_  ← Ogsmsyst'07_node@McshStn000002#idStnOgmatt004
-  McshStn000002:74  "06_node of Ogsmsyst"  → 07_  ← SystBody'07_node@McshCor000011#idSys004nod
-  McshStn000004:1035  "16_tech of Admn"  → 21_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:891  "15_budget of Admn"  → 20_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:809  "14_law of Admn"  → 19_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:794  "13_responsiveness of Admn"  → 18_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:779  "12_effectiveness of Admn"  → 17_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:764  "11_inclusivity of Admn"  → 16_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:749  "10_accountability of Admn"  → 15_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000004:734  "09_transparency of Admn"  → 14_  ← Biomnggsyst'13_info@McshCor000011#idSysMng004att002
-  McshStn000005:60  "06_node of groupOgsm"  → 07_  ← Ogsmsyst'07_node@McshStn000002#idStnOgmatt004
-  McshStn000007:73  "06_node of societyOgsm"  → 07_  ← Ogsmsyst'07_node@McshStn000002#idStnOgmatt004
-  McshStn000008:165  "06_node of Ogzn"  → 07_  ← Sctn'07_node@McshStn000002#idStnHmnatt001
-  McshStn000009:2302  "15_budget of Socadmn"  → 20_  ← Admn'20_budget@McshStn000004#idBdgt
-  McshStn000009:778  "06_node of society"  → 07_  ← societyOgsm'07_node@McshStn000007#idSoctOgsmatt011
-  McshStn000014:138  "06_node of OgznCsmg"  → 07_  ← Sctn'07_node@McshStn000002#idStnHmnatt001
-  McshStn000015:441  "14_law of Cmpnadmn"  → 19_  ← Admn'19_law@McshStn000004#idGvcHmnatt006
-  McshStn000015:107  "06_node of OgznPrdg"  → 07_  ← Sctn'07_node@McshStn000002#idStnHmnatt001
-  McshStn000018:65  "06_node of OgznUn"  → 07_  ← Ogzn'07_node@McshStn000008#idOgznatt018
-  McshStn000021:86  "06_node of SoctGlbl"  → 07_  ← society'07_node@McshStn000009#idSocHumnatt020
+=== APPLIED (9) — NN_ written into the-h-title
+  McshCor000005:3593  "09_possessum of RltnPossession"  → 07_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:3575  "08_possessor of RltnPossession"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:3518  "08_thinking of RltnProbability"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:3381  "08_belief of RltnBelief"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:3325  "08_thought of RltnInfoPossessor"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:3104  "08_complement-Argt of RltnDialectic"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
+  McshCor000005:2623  "11_relation-to-corelation of RltnCausality"  → 09_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
+  McshCor000005:2596  "10_effect of RltnCausality"  → 08_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
+  McshCor000005:2395  "09_cause of RltnCausality"  → 07_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
 
 === INH-NONUM (0) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
 
@@ -110,7 +42,7 @@ SUMMARY
 
 === INH-EMPTY (0) — an-inherited attribute that says nothing new (no info, no link): delete?
 
-=== INH-OWNNUM (0) — an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+=== INH-OWNNUM (0) — an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
 
 === INH-LAST (0) — a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
 
@@ -118,57 +50,16 @@ SUMMARY
 
 === INH-ORDER (0) — the-attributes of a-specific are not in the-NN order of its generic
 
-=== INH-GNTRTEXT (1) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  McshStn000008:165  #idOgznatt018  OgznOgnm'node (plain name): not defined, no concept named OgznOgnm'node
+=== INH-GNTRTEXT (0) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
 
-=== TITLENAME-APPLIED (47) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  McshCor000011:3314  "12_quorum-sensing of SystCentralNo"  added SystCentralNo'12_quorum_sensing!⇒Dsys_quorum_sensing; Dsys_quorum_sensing !=SystCentralNo'12_quorum_sensing
-  McshCor000011:3245  "14_perception of Plantmngt"  added Plantmngt'14_perception
-  McshCor000011:3211  "13_Infosyst of Plantmngt"  added Plantmngt'13_Infosyst!⇒Plantinfosyst; Plantinfosyst !=Plantmngt'13_Infosyst (was !=Plantmngt'Infosyst); Plantmngt'13_Infosyst, Plantinfosyst moved first
-  McshCor000011:3180  "12_sensory-sys of Plantmngt"  added Plantmngt'12_sensory_sys!⇒sensory_sys_of_plant; sensory_sys_of_plant !=Plantmngt'12_sensory_sys
-  McshCor000011:3089  "13_Infosyst of SystMnggOgsm"  added SystMnggOgsm'13_Infosyst!⇒SystMnggOgsminfsys; SystMnggOgsminfsys !=SystMnggOgsm'13_Infosyst (was !=Infosyst-of-SystMnggOgsm); SystMnggOgsm'13_Infosyst, SystMnggOgsminfsys moved first
-  McshCor000011:3074  "12_sensory-sys of SystMnggOgsm"  added SystMnggOgsm'12_sensory_sys!⇒SystMnggOgsm_att001_sensory_sys; SystMnggOgsm_att001_sensory_sys !=SystMnggOgsm'12_sensory_sys
-  McshCor000011:3026  "12_sensory-system of Biomnggsyst"  added Biomnggsyst'12_sensory_system!⇒Biosenssyst; Biosenssyst !=Biomnggsyst'12_sensory_system (was !=Biomnggsyst'sensory_system); Biomnggsyst'12_sensory_system, Biosenssyst moved first
-  McshCor000011:2804  "10_science of Mnggsyst"  renamed Mnggsyst'08_science → Mnggsyst'10_science
-  McshCor000011:2629  "07_node of SystBody"  renamed SystBody'06_node → SystBody'07_node
-  McshCor000011:2516  "16_namingActg of Pctree"  added Pctree'16_namingActg
-  McshCor000011:2480  "16_meron of Wptree"  added Wptree'16_meron
-  McshCor000011:2437  "19_specific-tree of Gstree"  added Gstree'19_specific_tree!⇒Gnspsptree; Gnspsptree !=Gstree'19_specific_tree (was !=specific-tree-of-Gstree); Gstree'19_specific_tree, Gnspsptree moved first
-  McshCor000011:2411  "18_generic-tree of Gstree"  added Gstree'18_generic_tree!⇒Gnspgntree; Gnspgntree !=Gstree'18_generic_tree (was !=generic-tree-of-Gstree); Gstree'18_generic_tree, Gnspgntree moved first
-  McshCor000011:2362  "17_relation-to-ontology of Gstree"  added Gstree'17_relation_to_ontology!⇒ontology_relation_to_taxonomy; ontology_relation_to_taxonomy !=Gstree'17_relation_to_ontology
-  McshCor000011:2329  "16_taxon of Gstree"  added Gstree'16_taxon!⇒Gnsptaxon; Gnsptaxon !=Gstree'16_taxon (was !=taxon-of-Gstree); Gstree'16_taxon, Gnsptaxon moved first
-  McshCor000011:2191  "15_degree of Treesyst"  renamed Treesyst'12_degree → Treesyst'15_degree
-  McshCor000011:2171  "13_breadth of Treesyst"  renamed Treesyst'12_breadth → Treesyst'13_breadth
-  McshCor000011:2156  "12_size of Treesyst"  renamed Treesyst'11_size → Treesyst'12_size
-  McshCor000011:750  "13_order-relation of sequence"  renamed sequence'08_order_relation → sequence'13_order_relation
-  McshCor000011:732  "12_element of sequence"  renamed sequence'07_element → sequence'12_element
-  McshCor000011:476  "11_relation-to-sector of system"  added system'11_relation_to_sector!⇒Systrtsector; Systrtsector !=system'11_relation_to_sector (was !=relation-to-sector--of-system); system'11_relation_to_sector, Systrtsector moved first
-  McshHlth000019:5806  "27_organSpinal_cord of Nrvssyst"  renamed Nrvssyst'18_organSpinal_cord → Nrvssyst'27_organSpinal_cord
-  McshHlth000019:5784  "25_neural_circuit of Nrvssyst"  renamed Nrvssyst'16_neural_circuit → Nrvssyst'25_neural_circuit
-  McshHlth000019:3051  "23_peripheral_nervous_system of Nrvssyst"  renamed Nrvssyst'14_peripheral_nervous_system → Nrvssyst'23_peripheral_nervous_system
-  McshHlth000019:2005  "22_central_nervous_system of Nrvssyst"  renamed Nrvssyst'13_central_nervous_system → Nrvssyst'22_central_nervous_system
-  McshHlth000019:657  "21_cell of Nrvssyst"  renamed Nrvssyst'12_cell → Nrvssyst'21_cell
-  McshHlth000019:596  "20_tissue of Nrvssyst"  renamed Nrvssyst'11_tissue → Nrvssyst'20_tissue
-  McshHlth000019:195  "18_organNerve of Nrvssyst"  renamed Nrvssyst'09_organNerve → Nrvssyst'18_organNerve
-  McshStn000002:465  "07_node of Sctn"  renamed Sctn'06_node → Sctn'07_node
-  McshStn000002:74  "07_node of Ogsmsyst"  renamed Ogsmsyst'06_node → Ogsmsyst'07_node
-  McshStn000004:1035  "21_tech of Admn"  renamed Admn'16_tech → Admn'21_tech
-  McshStn000004:891  "20_budget of Admn"  renamed Admn'15_budget → Admn'20_budget
-  McshStn000004:809  "19_law of Admn"  renamed Admn'14_law → Admn'19_law
-  McshStn000004:794  "18_responsiveness of Admn"  renamed Admn'13_responsiveness → Admn'18_responsiveness
-  McshStn000004:779  "17_effectiveness of Admn"  renamed Admn'12_effectiveness → Admn'17_effectiveness
-  McshStn000004:764  "16_inclusivity of Admn"  renamed Admn'11_inclusivity → Admn'16_inclusivity
-  McshStn000004:749  "15_accountability of Admn"  renamed Admn'10_accountability → Admn'15_accountability
-  McshStn000004:734  "14_transparency of Admn"  renamed Admn'09_transparency → Admn'14_transparency
-  McshStn000005:60  "07_node of groupOgsm"  renamed groupOgsm'06_node → groupOgsm'07_node
-  McshStn000007:73  "07_node of societyOgsm"  renamed societyOgsm'06_node → societyOgsm'07_node
-  McshStn000008:165  "07_node of Ogzn"  renamed Ogzn'06_node → Ogzn'07_node
-  McshStn000009:778  "07_node of society"  renamed society'06_node → society'07_node
-  McshStn000014:138  "07_node of OgznCsmg"  renamed OgznCsmg'06_node → OgznCsmg'07_node
-  McshStn000015:441  "19_law of Cmpnadmn"  renamed Cmpnadmn'14_law → Cmpnadmn'19_law
-  McshStn000015:107  "07_node of OgznPrdg"  renamed OgznPrdg'06_node → OgznPrdg'07_node
-  McshStn000018:65  "07_node of OgznUn"  renamed OgznUn'06_node → OgznUn'07_node
-  McshStn000021:86  "07_node of SoctGlbl"  renamed SoctGlbl'06_node → SoctGlbl'07_node
+=== TITLENAME-APPLIED (7) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+  McshCor000005:3593  "07_possessum of RltnPossession"  renamed RltnPossession'09_possessum → RltnPossession'07_possessum
+  McshCor000005:3575  "06_possessor of RltnPossession"  renamed RltnPossession'08_possessor → RltnPossession'06_possessor
+  McshCor000005:3381  "06_belief of RltnBelief"  renamed RltnBelief'08_belief → RltnBelief'06_belief
+  McshCor000005:3104  "06_complement-Argt of RltnDialectic"  renamed RltnDialectic'08_complement_Argt → RltnDialectic'06_complement_Argt
+  McshCor000005:2623  "09_relation-to-corelation of RltnCausality"  renamed RltnCausality'11_relation_to_corelation → RltnCausality'09_relation_to_corelation
+  McshCor000005:2596  "08_effect of RltnCausality"  renamed RltnCausality'10_effect → RltnCausality'08_effect
+  McshCor000005:2395  "07_cause of RltnCausality"  renamed RltnCausality'09_cause → RltnCausality'07_cause
 
 === INH-TITLEHAND (0) — a-numbered attribute whose title-name needs a-hand
 
@@ -176,10 +67,7 @@ SUMMARY
 
 === INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
 
-=== INH-LOCAL (3) — an-attribute in 3+ specifics, not in the-generic: lift it up?
-  info-resource of system@McshCor000011  ×6  McshCor000011:2207 McshCor000011:2681 McshCor000011:2799 McshCor000023:124 McshNtr000008:59 McshNtr000010:191
-  evoluting of system@McshCor000011  ×4  McshCor000011:2235 McshCor000023:194 McshNtr000010:207 McshNtr000010:336
-  doing of system@McshCor000011  ×3  McshCor000011:2221 McshCor000023:174 McshNtr000010:202
+=== INH-LOCAL (0) — an-attribute in 3+ specifics, not in the-generic: lift it up?
 
 === INFO (328) — how many specifics refine each numbered generic-attribute
     115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
@@ -192,13 +80,12 @@ SUMMARY
      19  organ'01_disease@McshHlth000002#idOgnHmnatt004
      18  society'43_human_view@McshStn000009#idSocHumnatt021
      18  AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
-     17  RltnMapping'09_output@McshCor000005#idRlnMpgmdl
+     17  RltnMapping'07_output@McshCor000005#idRlnMpgmdl
      17  societyOgsm'29_language@McshStn000007#idSoctOgsmatt009
      17  society'44_economic_view@McshStn000009#idSocHumnatt007
      16  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
      12  food'03_evaluation@McshHlth000013#idFoodHmneval
-     12  Ogsmlago'15_output|logoview@McshLag000005#idLOgsmotpt
-     11  model'12_evaluation@McshCor000012#idMdleval
+     12  Ogsmlago'13_output|logoview@McshLag000005#idLOgsmotpt
      11  doing'04_argument@McshCor000004#idDngatt001
      11  Ognssyst'02_organ@McshHlth000002#idSysOgnHmnatt001
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
@@ -213,7 +100,8 @@ SUMMARY
       9  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
       8  entity'01_attribute@McshCor000003#idEntatt
       8  DissInfectiousViral'05_protection@McshHlth000011#idDssHmn162protection
-      7  RltnMapping'08_input@McshCor000005#idRlnMpgarch
+      7  model'12_evaluation@McshCor000012#idMdleval
+      7  RltnMapping'06_input@McshCor000005#idRlnMpgarch
       7  Cmprlago'20_output@McshTchInf000005#idLCmpropt
       7  Knlglago'02_input@McshTchInf000039#idLKnlginpt
       6  Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
@@ -227,7 +115,7 @@ SUMMARY
       4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis_doing@McshHlth000011#idDssHmn003
       4  satisfier'06_law@McshStn000010#idSfrHmnatt011
-      4  Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
+      4  Ogsmlago'14_grammar@McshLag000005#idLOgsmgrmr
       4  ChmcElry'23_usage@McshNtr000007#idChmElratt012
       4  OgznOgsm'32_member@McshStn000006#idOznOgmatt003
       3  entity'03_expression@McshCor000003#idEntexrn
@@ -280,7 +168,7 @@ SUMMARY
       2  FctgEmoting'17_stimulus@McshCor000018#idBrngHmnFct004stml
       2  FctgEmoting'15_human@McshCor000018#idBrngHmnFct004hmn
       2  infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
-      2  RltnMapping'10_method@McshCor000005#idRlnMpgmthd
+      2  RltnMapping'08_method@McshCor000005#idRlnMpgmthd
       2  SciLago'13_area-of-study@McshEdu000010#idSLangaos
       2  Ogsmcell'02_membrane@McshOgm000007#idCellOgmatt001
       2  organ'02_tissue@McshHlth000002#idOgnHmnatt010
@@ -296,7 +184,7 @@ SUMMARY
       2  food'21_price@McshHlth000013#idFoodHmnatt012
       2  satisfier'01_human@McshStn000010#idSfrHmnatt008
       2  medication'17_indication@McshHlth000014#idMedHmnatt002
-      2  Ogsmlago'13_user@McshLag000005#idLOgsmentt
+      2  Ogsmlago'11_user@McshLag000005#idLOgsmentt
       2  model'06_node@McshCor000012#idMdlatt005
       2  model'09_unit@McshCor000012#idMdlatt008
       2  Hmmdlogo'09_unit@McshLag000007#idLHmmdunt
@@ -327,7 +215,7 @@ SUMMARY
       2  Cnptlago'13_input@McshTchInf000007#idLCnptipt
       2  Tdoclago'20_output@McshTchInf000005#idLCmpr007otpt
       2  Tdoclago'26_machine@McshTchInf000005#idLCmpr007mchn
-      2  Cmprlago'34_organization@McshTchInf000005#idLCmprozn
+      2  Cmprlago'15_organization@McshTchInf000005#idLCmprozn
       2  Jsgnlago'33_human@McshTchInf000010#idLJsgnhmn
       2  Algonet'06_node@McshTchInf000015#idAlgntnod
       2  Algonet'16_stakeholder@McshTchInf000015#idAlgntskhr
@@ -489,7 +377,7 @@ SUMMARY
       1  Cnptlago'11_user@McshTchInf000007#idLCnptuser
       1  Jsgnlago'12_evaluation@McshTchInf000010#idLJsgneval
       1  Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
-      1  Jsgnlago'34_organization@McshTchInf000010#idLJsgnogn
+      1  Jsgnlago'15_organization@McshTchInf000010#idLJsgnogn
       1  Jsndlago'13_archetype@McshTchInf000012#idLJsndarc
       1  Jsndlago'33_human@McshTchInf000012#idLJsndhmn
       1  SystNet'06_node@McshCor000014#idNetatt002

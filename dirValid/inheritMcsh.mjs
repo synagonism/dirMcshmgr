@@ -51,6 +51,9 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-21-1.2026-11-19: --fix-stub: ONLY the-names at the-link-targets of link-stubs',
+    'inheritMcsh.mjs.0-21-0.2026-11-19: --fix-name: a-link-stub "06_input of M (link)" gets its name at the-link target (M\'08_input → M\'06_input, or M\'06_input next to M\'input)',
+    'inheritMcsh.mjs.0-20-0.2026-11-19: INH-OWNNUM also a-GAP: the-own numbers start RIGHT after the-chain (last 05, 08_input → 06_input)',
     'inheritMcsh.mjs.0-19-0.2026-11-19: a-title "x (N) of M" (N a-new name) is the-attribute "x of M"',
     'inheritMcsh.mjs.0-18-0.2026-11-19: INH-TITLEHAND: a-link-stub "NN_x of M (link)" without name:: is OK',
     'inheritMcsh.mjs.0-17-0.2026-11-18: the-marker X\'NN_last is NOT an-attr-key (04_argument of bodyNo matched entity\'01_attribute by "last")',
@@ -202,6 +205,8 @@ function fReadFile(sPathIn) {
       sTitle,
       nLine,
       bLinkStub,
+      // the-href of a-link-stub "06_input of M (link)": its names are at that target
+      sHrefStub: bLinkStub ? ((sHeadHtml.match(/href="([^"]+)"/) ?? [])[1] ?? null) : null,
       bTree,
       bAttr: !!aAttr && !/^overview$/i.test(aAttr[2]),
       sNum: aAttr ? (aAttr[1] ?? null) : null,
@@ -518,6 +523,13 @@ function fCheck(aoFileIn, nLocalMinIn) {
     }
     // INH-OWNNUM: ALL own numbers of the-specific shift by the-same amount, so their order stays:
     //   the-smallest becomes the-chain's last + 1 (06_input 07_output .. 10_method, last 07 → 08 .. 12)
+    // a-GAP is an-issue too: the-own numbers start right after the-chain (last 05, 08_input → 06_input)
+    if (!aoOwnNumIssue.length && aoOwnNum.length && oSpaceLast) {
+      const nMin = Math.min(...aoOwnNum.map(oA => Number(oA.sNum)));
+      if (nMin > nNumLast + 1) aoOwnNumIssue.push({ oAttr: aoOwnNum.find(oA => Number(oA.sNum) === nMin),
+        sNumLast: String(nNumLast).padStart(2, '0'), sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr),
+        sKeyGen: oSpaceLast.oGenAttr.sKey, bGap: true });
+    }
     if (aoOwnNumIssue.length) {
       const nShift = nNumLast + 1 - Math.min(...aoOwnNum.map(oA => Number(oA.sNum)));
       const aoShift = aoOwnNum.map(oA => ({ oAttr: oA, sNumNew: String(Number(oA.sNum) + nShift).padStart(2, '0'),
@@ -828,6 +840,42 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
   const rLine = /<br>\*\s*McshEngl\.([^\n,]+),/g;
   const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const aoPlan = [], aoHand = [];
+  // the-name:: plan at the-target of a-link-stub: null (nothing to do), { sWhy } (by hand), or a-plan
+  const fStubName = (oNodeIn, sTnIn, sOfIn, sWordIn, sPlainIn) => {
+    const aHref = (oNodeIn.sHrefStub ?? '').match(/^(?:.*?\/)?(?:([^/#]+)\.last\.html)?#([^#]+)$/);
+    if (!aHref) return { sWhy: `link-stub: its href "${oNodeIn.sHrefStub}" is NOT file#id` };
+    const sStem = aHref[1] ?? oNodeIn.sNameShort, sIdTarget = aHref[2];
+    const oFileT = aoFileIn.find(oF => oF.sNameShort === sStem);
+    const oNodeT = oFileT?.aoNode.find(oN => oN.sId === sIdTarget);
+    if (!oNodeT) return { sWhy: `link-stub: its target ${sStem}#${sIdTarget} is NOT found` };
+    const sSectT = oFileT.sText.slice(oNodeT.nStart, oNodeT.nEnd);
+    const nSubT = sSectT.indexOf('<section', 1);
+    const aParaT = (nSubT > 0 ? sSectT.slice(0, nSubT) : sSectT).match(rNamePara);
+    if (!aParaT) return { sWhy: `link-stub: its target ${sStem}#${sIdTarget} has no name::` };
+    let sPara = aParaT[0];
+    const aChange = [];
+    const fLinesT = () => [...sPara.matchAll(rLine)].map(aL =>
+      ({ sRaw: aL[0], sBody: aL[1], sBase: aL[1].split('!')[0].split('~')[0].trim() }));
+    if (!fLinesT().some(oL => oL.sBase === sTnIn)) {
+      // an-old number of the-same word is renamed: M'08_input → M'06_input
+      const rOld = new RegExp(`^${fEsc(sOfIn)}'\\d{2}_${fEsc(sWordIn)}$`);
+      const oOld = fLinesT().find(oL => rOld.test(fFormalMvrwName01(oL.sBase)));
+      if (oOld) {
+        sPara = sPara.replace(oOld.sRaw, oOld.sRaw.replace(`McshEngl.${oOld.sBase}`, `McshEngl.${sTnIn}`));
+        aChange.push(`renamed ${oOld.sBase} → ${sTnIn} (link target)`);
+      } else {
+        // M'input!⇒Target gets M'06_input!⇒Target before it
+        const oPlain = fLinesT().find(oL => oL.sBase === sPlainIn);
+        if (!oPlain) return null; // the-target does NOT name it M'input: nothing to number
+        if (oCountName.has(sTnIn)) return { sWhy: `${sTnIn} is a-name of another concept` };
+        const sIndent = (sPara.slice(0, sPara.indexOf(oPlain.sRaw)).match(/\n([ \t]*)$/) ?? ['', '    '])[1];
+        sPara = sPara.replace(oPlain.sRaw, oPlain.sRaw.replace(`McshEngl.${sPlainIn}`, `McshEngl.${sTnIn}`) + '\n' + sIndent + oPlain.sRaw);
+        aChange.push(`added ${sTnIn} (link target)`);
+      }
+    }
+    if (!aChange.length) return null;
+    return { oFile: oFileT, oNode: oNodeIn, nPos: oNodeT.nStart + sSectT.indexOf(aParaT[0]), sParaOld: aParaT[0], sParaNew: sPara, aChange };
+  };
   for (const oFile of aoFileIn) {
     for (const oNode of oFile.aoNode) {
       if (!oNode.bAttr || !oNode.sNum || !fInFileIn(oNode)) continue;
@@ -844,8 +892,14 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
       const sSect = oFile.sText.slice(oNode.nStart, oNode.nEnd);
       const nSub = sSect.indexOf('<section', 1);
       const aPara = (nSub > 0 ? sSect.slice(0, nSub) : sSect).match(rNamePara);
-      // a-link-stub "06_subject of M (link)": its names are at the-link's target, NOT here
-      if (!aPara && oNode.bLinkStub) continue;
+      // a-link-stub "06_input of M (link)": its names are at the-link's target, NOT here:
+      //   there M'08_input → M'06_input, or M'06_input!⇒Target is added next to M'input!⇒Target
+      if (!aPara && oNode.bLinkStub) {
+        const oPlanStub = fStubName(oNode, sTn, sOfF, sWordF, sPlain);
+        if (oPlanStub?.sWhy) aoHand.push({ oNode, sWhy: oPlanStub.sWhy });
+        else if (oPlanStub) aoPlan.push(oPlanStub);
+        continue;
+      }
       if (!aPara) { aoHand.push({ oNode, sWhy: 'no name:: paragraph' }); continue; }
       const sParaOld = aPara[0];
       let sPara = sParaOld;
@@ -1191,6 +1245,15 @@ function fMain() {
   // --fix-name: the-title of a-numbered attribute as its name
   let { aoPlan: aoTitleName, aoHand: aoTitleHand } = fCheckTitleName(aoFile, fInFile);
   let nTitleName = 0;
+  // --fix-stub: ONLY the-names at the-targets of link-stubs (written into the-report below)
+  const aStubLine = [];
+  if (aArg.includes('--fix-stub')) {
+    const aoStub = aoTitleName.filter(oPlan => oPlan.aChange.every(sC => sC.endsWith('(link target)')));
+    aStubLine.push(`  link-stub target names changed: ${fApplyTitleName(aoStub)}`);
+    for (const oPlan of aoStub) aStubLine.push(`    ${oPlan.oNode.sNameShort}:${oPlan.oNode.nLine}  ${oPlan.aChange.join('; ')}`);
+    ({ aoFileRead: aoFile, oResult } = fReadCheck());
+    ({ aoPlan: aoTitleName, aoHand: aoTitleHand } = fCheckTitleName(aoFile, fInFile));
+  }
   if (bFixName && aoTitleName.length) {
     nTitleName = fApplyTitleName(aoTitleName);
     ({ aoFileRead: aoFile, oResult } = fReadCheck());
@@ -1215,6 +1278,7 @@ function fMain() {
   if (bFix || bFixNum) fOut(`  titles changed: ${nChanged}`);
   if (bFixName) fOut(`  name:: paragraphs changed: ${nTitleName}`);
   if (bFix || bFixLast) fOut(`  NN_last names changed: ${nLastChanged}`);
+  aStubLine.forEach(fOut);
   fOut('  Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;');
   fOut('        a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.');
   fOut('');
@@ -1222,7 +1286,7 @@ function fMain() {
   const ooDesc = {
     'INH-NONUM': 'matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)',
     'INH-WRONGNUM': 'its NN_ differs from the-generic-attribute (own numbering? by hand)',
-    'INH-OWNNUM': 'an-own numbered attribute NOT after the-last number of the-inherited-attr-chain',
+    'INH-OWNNUM': 'an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain',
     'INH-OWNNONUM': 'an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)',
     'INH-LAST': "a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)",
     'INH-ORDER': 'the-attributes of a-specific are not in the-NN order of its generic',
@@ -1372,7 +1436,7 @@ function fFindInheritAttrRead(aPathIn) {
   for (const oI of ooIssue['INH-WRONGNUM']) fPush(oI.oAttr,
     `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_` + fFixNum(oI));
   for (const oI of ooIssue['INH-OWNNUM']) fPush(oI.oAttr,
-    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel}): it gets ${oI.sNumNew}_, all own numbers +${oI.nShift}` + fFixNum(oI));
+    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered ${oI.bGap ? 'RIGHT ' : ''}AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel}): it gets ${oI.sNumNew}_, all own numbers ${oI.nShift > 0 ? '+' : ''}${oI.nShift}` + fFixNum(oI));
   for (const oI of ooIssue['INH-LAST']) fPush(oI.oAttr,
     `inherited_attr: generic "${oI.oAttr.sTitle}" ` + (oI.sLastNew
       ? `has NOT the-name "${oI.sLastNew}" (its specifics number their own attributes after it)`
