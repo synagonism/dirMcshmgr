@@ -103,9 +103,9 @@
   "args": {"text": "!⇒"},
   "when": "editorTextFocus"
 },
-// c p s:: Char hitP Sentence: <br>·
+// c s:: Char hitp Sentence: <br>·
 {
-  "key": "ctrl+alt+c p s", 
+  "key": "ctrl+alt+c s", 
   "command": "runCommands",
   "args": {
     "commands": [
@@ -1512,6 +1512,120 @@
   },
   "when": "editorTextFocus"
 },
+// p t w :: hitP section Tree Whole-part
+{
+  "key": "ctrl+alt+p t w",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      "cursorUp",
+      "cursorEnd",
+      "editor.action.insertLineAfter",
+      "cursorLineStartSelect",
+      { "command": "editor.action.insertSnippet",
+        "args": { "snippet": "$0\n  <section id=\"idididwptr\">\n  <hlvlvlv id=\"idididwptrHlvlvlv\">WHOLE-PART-TREE of mainmain\n    </hlvlvlv>\n  <p id=\"idididwptrdsn\">description::\n    <br>× Mcsh-creation: {${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}}\n    <a class=\"clsHide\" href=\"#idididwptrdsn\"></a></p>\n  <p id=\"idididwptrnam\">name::\n    <br>* McshEngl.mainmain'whole_part_tree,\n    <a class=\"clsHide\" href=\"#idididwptrnam\"></a></p>\n  <p id=\"idididwltr\">whole-tree::\n    <br>* McshEngl.mainmain:generic,\n    <br>===\n    <br>* ...sympan,\n    <a class=\"clsHide\" href=\"#idididwltr\"></a></p>\n  <p id=\"idididprtr\">part-tree::\n    <br>* McshEngl.mainmain.specific,\n    <br>===\n    <a class=\"clsHide\" href=\"#idididprtr\"></a></p>\n  </section>" } },
+      // id: of previous section, into every ididid
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<section", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorWordEndRight" },
+      { "command": "cursorWordEndRight" },
+      { "command": "cursorWordEndRightSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "ididid", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "removeSecondaryCursors" },
+      // mainname: after previous "!⇒", into every mainmain
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "!⇒", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorEndSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "mainmain", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "deleteLeft" },
+      { "command": "removeSecondaryCursors" },
+      // heading: previous heading level + 1, into every lvlvlv
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<h\\d", "isRegex": true, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.previousMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorRight" },
+      { "command": "cursorLeftSelect" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "lvlvlv", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "cursorLeftSelect" },
+      { "command": "editor.action.inPlaceReplace.up" },
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      { "command": "cursorRight" },
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "lvlvlv", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": true, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "editor.action.selectHighlights" },
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      { "command": "removeSecondaryCursors" },
+      // cursor: end of generic-tree "===" line
+      { "command": "editor.actions.findWithArgs",
+        "args": {
+          "searchString": "<br>===", "isRegex": false, "matchWholeWord": false,
+          "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      { "command": "editor.action.nextMatchFindAction" },
+      { "command": "closeFindWidget" },
+      { "command": "cursorEnd" }
+    ]
+  },
+  "when": "editorTextFocus"
+},
 // HITP VERSIONING
 // p v 1:: hitP saVe major versioning
 // p v 2:: hitP saVe minor versioning
@@ -1609,33 +1723,6 @@
   "command": "editor.gotoNextFold"
 },
 
-// ============ misc test ===========
-// F6
-{
-  "key": "F6",
-  "command": "runCommands",
-  "args": {
-    "commands": [
-        { "command": "cursorHome" },
-        { "command": "cursorWordEndRight" },
-        { "command": "cursorRight" },
-        { "command": "cursorWordEndRightSelect" },
-        { "command": "cursorWordEndRightSelect" },
-        { "command": "cursorRightSelect" },
-      { "command": "type", "args": {"text": "· _sntxEngl: "} },
-        { "command": "cursorDown" }
-
-  /*
-      // set break in line
-      "cursorHome",
-      "cursorHome",
-      { "command": "type", "args": {"text": "    <br>"} },
-      "cursorDown",
-  */
-    ]
-  }
-},
-
 // V:: VALIDATE (Mcsh-visual-manager, valid menu)
 // v c c:: Validate Concept: the-concept of the-URL bar (or another), every rule, report or fix unambiguous and report
 {
@@ -1688,6 +1775,51 @@
   "key": "ctrl+alt+v l r",
   "command": "mcshv.validListRule"
 },
+
+
+// ============ misc test ===========
+// F6
+{
+  "key": "F6",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      { "command": "editor.actions.findWithArgs",
+        "args": { 
+          "searchString": "<h", "isRegex": false,
+          "matchWholeWord": false, "isCaseSensitive": false, "findInSelection": false
+         }
+      },
+      "editor.action.nextMatchFindAction",
+      "closeFindWidget",
+      "cursorRight",
+      "cursorRightSelect",
+      "editor.emmet.action.incrementNumberByOne",
+      { "command": "editor.action.clipboardCopyAction", "await": "clipboard" },
+      "cursorWordEndRight",
+      "cursorWordEndRight",
+      "cursorWordEndRight",
+      "deleteLeft",
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      "cursorDown",
+      "cursorEnd",
+      "cursorLeft",
+      "deleteLeft",
+      { "command": "editor.action.clipboardPasteAction", "await": "document selection" },
+      "cursorEnd"
+    ]
+  },
+  "when": "editorTextFocus"
+},
+
+  /*
+      // set break in line
+      "cursorHome",
+      "cursorHome",
+      { "command": "type", "args": {"text": "    <br>"} },
+      "cursorDown",
+  */
+
 ]
 
 /*

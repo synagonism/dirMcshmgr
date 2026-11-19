@@ -122,6 +122,7 @@ import { fFindInheritAttr } from './inheritMcsh.mjs'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-45-0.2026-11-19: --auto (validate-file fix) runs the-MvrwGstr03 fix too, and it passes --fix-num to inheritMcsh: WRONGNUM, OWNNUM renumbered',
     'createMcsh.mjs.0-44-0.2026-11-18: link fixes parse the-other files for their ids only; --auto also runs the-rule fixes of MvrwId01..12, Hvre05/06, MvrwMain01..07, MvrwName01, MvrwSect04, MvrwMisc01, MvrwMain11 (steps code:<rule>)',
     'createMcsh.mjs.0-43-0.2026-11-17: --auto also with --dir, --list, --all (validate-directory | -list | -worldview)',
     'createMcsh.mjs.0-42-0.2026-11-17: --id idX with --file: only the-edits inside concept idX (its section | paragraph, conceptRange.js); other files are not written',
@@ -196,6 +197,9 @@ const
     'code:MvrwName01_formal',
     'code:MvrwSect04_name_empty',
     'code:MvrwMisc01_date',
+    // the-inheritance numbers (inheritMcsh --fix --fix-num --fix-order --fix-name), BEFORE
+    //   MvrwMain11_line: it writes name-lines that MvrwMain11 then orders
+    'code:MvrwGstr03_inherited_attr',
     'code:MvrwMain11_line'],
   // the-kinds of notes in createMcsh.txt, one === heading each
   ooKindDesc = {
@@ -208,7 +212,7 @@ const
     ATTR:     'MvrwMain10_attribute: an-attribute | specific title set to "x of M" | "M.x" and its formal name M\x27x | M.x added',
     FORMAL:   'MvrwName01_formal: a-formal-name | formal title with a-space | hyphen got "_"; an-old spelling or a-doubled line deleted',
     NAME:     'a-new name:: (or name-line) from the-heading (MvrwSect03_name_miss, MvrwSect04_name_empty): check the-name',
-    INHERIT:  'MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-order --fix-name), its summary',
+    INHERIT:  'MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary',
     NOFIX:    'no automatic fix for this rule: it needs you',
     NOISSUE:  'the-rule has no issue in the-file',
     IDNEW:    'an-id renamed (MvrwId01..13), with its own ids; links re-pointed in every file',
@@ -2582,9 +2586,10 @@ async function fMain() {
       let aoFileHitpAll = null, aoIssueAll = null, sInheritDone = '';
       if (oFix.sKind === 'inherit') {
         // MvrwGstr03_inherited_attr: the-fixes of inheritMcsh.mjs, ONCE for the-whole worldview (a-generic can be in any file):
-        //   --fix (NN_ of an-inherited attribute), --fix-order (NN order), --fix-name (the-title as name)
+        //   --fix (NN_ of an-inherited attribute), --fix-num (a-wrong NN_: WRONGNUM, OWNNUM),
+        //   --fix-order (NN order), --fix-name (the-title as name)
         const aArgInherit = [moPath.join(sDirScript, 'inheritMcsh.mjs'), sNameDir,
-          ...(bFix ? ['--fix', '--fix-order', '--fix-name'] : []), ...(sNameFileOnly ? ['--file', sNameFileOnly] : [])];
+          ...(bFix ? ['--fix', '--fix-num', '--fix-order', '--fix-name'] : []), ...(sNameFileOnly ? ['--file', sNameFileOnly] : [])];
         const sOut = execFileSync(process.execPath, aArgInherit, { encoding: 'utf8', maxBuffer: 1 << 26 });
         for (const sLine of sOut.split('\n')) {
           if (/changed:|INH-(NONUM|WRONGNUM|OWNNUM|OWNNONUM|LAST|ORDER|TITLENAME|TITLEHAND) /.test(sLine))

@@ -1,14 +1,10 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   createMcsh --auto --file McshCor000011 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · nothing to fix · 2 skipped
+  0 files written · MvrwGstr03_inherited_attr 10 · 0 skipped
   written, no backup: see git diff
 
-=== SKIP (2) — skipped, with why: fix by hand
-  McshCor000011:2507  #idSys002Evlrnmga "namingActg Pctree": not "X'y", "X.y" or "x of X" with X a-name of Pctree: by hand
-  McshCor000011:2335  #idSys002GcsctxnMntc "taxon.monotypic": not "X'y", "X.y" or "x of X" with X a-name of Gnsptaxon: by hand
-
-=== NOISSUE (24) — the-rule has no issue in the-file
+=== NOISSUE (25) — the-rule has no issue in the-file
   McshCor000011  MvrwId01_char: nothing to fix
   McshCor000011  MvrwId02_suffix_dong: nothing to fix
   McshCor000011  MvrwId04_suffix_eval: nothing to fix
@@ -32,4 +28,17 @@
   McshCor000011  MvrwName01_formal: nothing to fix
   McshCor000011  MvrwSect04_name_empty: nothing to fix
   McshCor000011  MvrwMisc01_date: nothing to fix
+  McshCor000011  MvrwGstr03_inherited_attr: nothing to fix
   McshCor000011  MvrwMain11_line: nothing to fix
+
+=== INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
+  titles changed: 76
+  name:: paragraphs changed: 47
+  NN_last names changed: 7
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM        0  an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
+  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
+  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
+  written: see dirValid/inheritMcsh.txt
