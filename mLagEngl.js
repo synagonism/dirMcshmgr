@@ -31,6 +31,7 @@ import * as omMcsh from './mMcsh2.js'
 const
   // contains the-versions of mLagEngl.js
   aVersion = [
+    'mLagEngl.js.2-4-0.2026-11-19: verbEngl all-forms line',
     'mLagEngl.js.2-3-0.2026-08-09: play',
     'mLagEngl.js.2-2-0.2026-07-11: nounEngl, verbEngl',
     'mLagEngl.js.2-1-0.2025-11-07: fFindVerbForms-ing',
@@ -239,6 +240,23 @@ async function fFindVerbForms (sFormIn) {
     aFormsOut.push('SITE EXISTING FORMS:')
     for (n = 0; n < aOut.length; n++) {
       aFormsOut.push(aOut[n])
+    }
+    // add the-all-forms lines, from 'write!~verbEnglC.write'1' find
+    // 'verbEnglC.write!=write;writes;wrote;writing;written'
+    const
+      oSetVerb = new Set(),
+      rVerbForm = /!~(verbEngl[A-Za-z0-9]*\.[^']+)'\d+$/
+    for (n = 0; n < aOut.length; n++) {
+      const aMatch = aOut[n].match(rVerbForm)
+      if (aMatch) oSetVerb.add(aMatch[1])
+    }
+    for (const sVerb of oSetVerb) {
+      const aaAll = await omMcsh.fSearchName(sVerb + '!=', 'lagEngl')
+      for (const aName of aaAll) {
+        let sAll = aName[0]
+        if (!sAll.endsWith(',')) sAll = sAll + ','
+        aFormsOut.push(sAll)
+      }
     }
     return aFormsOut
   } else {
