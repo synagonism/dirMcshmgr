@@ -58,6 +58,8 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-16-0.2026-11-19: attributeChain is-ordered by number 01, 02, .. (the-generics by their smallest number, entity first)',
+    'mMcsh2.js.27-15-0.2026-11-19: attributeChain skips the X\'NN_last markers (system\'06_last no longer overrides whole\'06_environment)',
     'mMcsh2.js.27-14-0.2026-11-17: dblclick on "X\'NN_last" (name::) and on the-head "McshEngl.X:generic" (generic-tree::) inserts X\'attributeChain',
     'mMcsh2.js.27-13-0.2026-11-16: attributeChain walks EVERY === group (all generics), breadth-first, entity last',
     'mMcsh2.js.27-12-0.2026-11-16: the-generic-chain stops at entity ALONE, NOT at entity.bodyNo!@.. (attributeChain, ...entity:generic)',
@@ -1753,7 +1755,8 @@ let fContainersInsert = function () {
             return { sInformal: oA.sInformal, sRef: oA.sRef, sChild: sChild, nNum: aN ? Number(aN[1]) : NaN }
           })
           // X'y.z is a-specific of the-attribute X'y, NOT a-direct attribute; only numbered ones inherit
-          .filter(oA => oA.sChild.indexOf('.') < 0 && !isNaN(oA.nNum))
+          // X'NN_last is the-marker of the-last number, NOT an-attribute: it neither overrides nor inherits
+          .filter(oA => oA.sChild.indexOf('.') < 0 && !isNaN(oA.nNum) && !/^\d+_last$/.test(oA.sChild))
           .sort((oA, oB) => oA.nNum - oB.nNum || oA.sInformal.localeCompare(oB.sInformal))
       }
       // a-level shows the-numbers it adds, and its attributes a-nearer level overrides (oBy);
@@ -1827,8 +1830,11 @@ let fContainersInsert = function () {
         }
       }
 
+      // ordered by number, 01, 02, ..: the-levels by their smallest number (entity first), each
+      //   level by number; a-level with nothing (Infinity) last; equal ones keep nearest-first
+      const fMin = oL => oL.aoAttr.length ? Math.min(...oL.aoAttr.map(oA => oA.nNum)) : Infinity
       const aOut = []
-      aoLevel.forEach(function (oL) {
+      aoLevel.slice().sort((oA, oB) => fMin(oA) - fMin(oB)).forEach(function (oL) {
         aOut.push(oL.sHead)
         if (oL.aoAttr.length === 0) aOut.push('* (nothing added)')
         oL.aoAttr.forEach(function (oA) {
