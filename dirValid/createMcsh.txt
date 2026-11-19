@@ -1,107 +1,75 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --auto --file McshTchInf000008 dry-run: C:/Users/synag/AppData/Local/Temp/claude/c6f75e5c7e869728/0136656a-1344-47dc-8941-9572cf6f06dd/scratchpad/auto2-copy
+  createMcsh --auto --file McshCor000003 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files to write · nothing to fix · 76 skipped
-  nothing written: add --fix to write
+  1 files written · dupname 11 · 30 skipped
+  written, no backup: see git diff
 
-=== SKIP (76) — skipped, with why: fix by hand
-  McshTchInf000008:2639  #idPreview "Hitpjsbr'link_preview": the-title has "(…)" or "{…}" inside, by hand
-  McshTchInf000008:2979  #idLHitpwbpgpth "page-wholepath of Hitplago-meta": "Hitplago-meta" is not a-name of Hitplago_meta_info, the-section may belong to Hitplago-meta: by hand
-  McshTchInf000008:670  #idLHitpstlTxtLine2 "line-through in Hitp_content_unit": not "X'y", "X.y" or "x of X" with X a-name of Hitp_content_unit: by hand
-  McshTchInf000008:1860  #idLHitpfCnrsIsrtoEPinfPathP "whole-path-container of info-container": "info-container" is not a-name of containerHitpInfo, the-section may belong to info-container: by hand
-  McshTchInf000008:1883  #idLHitpfCnrsIsrtoEPinfTabs "tabs of info-container": "info-container" is not a-name of containerHitpInfo, the-section may belong to info-container: by hand
-  McshTchInf000008:1952  #idLHitpfCnrsIsrtoEPinfTabToc "Toc-tab of info-container": "info-container" is not a-name of containerHitpInfo, the-section may belong to info-container: by hand
-  McshTchInf000008:2066  #idLHitpfCnrsIsrtoEPinfTabSrch "search-tab of info-container": "info-container" is not a-name of containerHitpInfo, the-section may belong to info-container: by hand
-  McshTchInf000008:3359  #idLHitpsiteistlg "creating Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:3406  #idLHitpsitecfg "configuring Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:3426  #idLHitpscg "searching Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:3455  #idLHitpsiteadnl "add-new-language Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:3475  #idLHitpsitesplif "splitting-index-file Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:3492  #idLHitpsiternfif "removing-names-from-index-files Hitpsite": not "X'y", "X.y" or "x of X" with X a-name of Hitpsite: by hand
-  McshTchInf000008:230  #idLHitpwbpg "20_web-app-doc of Hitplago": the-title has "(…)" or "{…}" inside, by hand
-  McshTchInf000008:36  ../dirMcsh/dirTchInf/McsTchInf000010.html: 0 files with its name, fix by hand
-  McshTchInf000008:299  ../../hitp/hitp.20.2025-05-29.zip: 0 files with its name, fix by hand
-  McshTchInf000008:300  ../../hitp/hitp.20.2025-05-25.zip: 0 files with its name, fix by hand
-  McshTchInf000008:301  ../../hitp/hitp.19.2025-05-25.zip: 0 files with its name, fix by hand
-  McshTchInf000008:302  ../../hitp/hitp.18.2021-05-25.zip: 0 files with its name, fix by hand
-  McshTchInf000008:303  ../../hitp/hitp.17.2018-09-15.zip: 0 files with its name, fix by hand
-  McshTchInf000008:304  ../../hitp/hitp.16.2017-06-05.zip: 0 files with its name, fix by hand
-  McshTchInf000008:305  ../../hitp/hitp.15.2016-10-27.zip: 0 files with its name, fix by hand
-  McshTchInf000008:306  ../../hitp/hitp.14.2016-06-09.title-content-tree.zip: 0 files with its name, fix by hand
-  McshTchInf000008:307  ../../hitp/hitp.12.2016-01-24.zip: 0 files with its name, fix by hand
-  McshTchInf000008:308  ../../hitp/hitp.11.2015-10-26.zip: 0 files with its name, fix by hand
-  McshTchInf000008:309  ../../hitp/hitp.10.2014-08-05.zip: 0 files with its name, fix by hand
-  McshTchInf000008:310  ../../hitp/hitp.08.2014-01-09.zip: 0 files with its name, fix by hand
-  McshTchInf000008:311  ../../hitp/hitp.07.2013-11-06.zip: 0 files with its name, fix by hand
-  McshTchInf000008:312  ../../hitp/hitp.05.2013-07-15.zip: 0 files with its name, fix by hand
-  McshTchInf000008:313  ../../hitp/hitp.04.2013-06-27.zip: 0 files with its name, fix by hand
-  McshTchInf000008:314  ../../hitp/hitp.03.2013-04-14.zip: 0 files with its name, fix by hand
-  McshTchInf000008:315  ../../hitp/hitp.02.2013-04-01.zip: 0 files with its name, fix by hand
-  McshTchInf000008:316  ../../hitp/hitp.01.2011-02-17.zip: 0 files with its name, fix by hand
-  McshTchInf000008:771  ../../dirHitp/dirMisc/HitpMisc000.last.html: 0 files with its name, fix by hand
-  McshTchInf000008:1330  ../dirMcsh/dirTchInf/McsTchInf000010.html: 0 files with its name, fix by hand
-  McshTchInf000008:2944  ../../dirHitp/dirMisc/HitpMisc001.last.html: 0 files with its name, fix by hand
-  McshTchInf000008:3023  ../../dirHitp/: 0 files with its name, fix by hand
-  McshTchInf000008:3169  ../../standard/techInfo/ecma.262.51.2011.html: 0 files with its name, fix by hand
-  McshTchInf000008:3369  ../../dirHitp/hitp.20.2025-05-29.zip: 0 files with its name, fix by hand
-  McshTchInf000008:3912  ../../dirHitp/mHitp.18.2021-05-25.html: 0 files with its name, fix by hand
-  McshTchInf000008:3926  ../../dirHitp/hitp.17.2018-09-15.html: 0 files with its name, fix by hand
-  McshTchInf000008:3935  ../../dirHitp/hitp.16.2017-06-05.html: 0 files with its name, fix by hand
-  McshTchInf000008:3944  ../../dirHitp/hitp.15.2016-10-27.html: 0 files with its name, fix by hand
-  McshTchInf000008:3958  ../../dirHitp/hitp.14.2016-06-09.html: 0 files with its name, fix by hand
-  McshTchInf000008:3974  ../../dirHitp/hitp.12.2016-01-24.html: 0 files with its name, fix by hand
-  McshTchInf000008:3981  ../../dirHitp/hitp.11.2015-10-26.html: 0 files with its name, fix by hand
-  McshTchInf000008:3990  ../../dirHitp/hitp.10.2014-08-05.html: 0 files with its name, fix by hand
-  McshTchInf000008:4017  ../../dirHitp/hitp.08.2014-01-09.html: 0 files with its name, fix by hand
-  McshTchInf000008:4026  ../../dirHitp/hitp.07.2013-11-06.html: 0 files with its name, fix by hand
-  McshTchInf000008:4033  ../../dirHitp/hitp.06.2013-08-21.html: 0 files with its name, fix by hand
-  McshTchInf000008:4040  ../../dirHitp/hitp.05.2013-07-15.html: 0 files with its name, fix by hand
-  McshTchInf000008:4050  ../../dirHitp/hitp.04.2013-06-27.html: 0 files with its name, fix by hand
-  McshTchInf000008:4059  ../../dirHitp/hitp.03.2013-04-14.html: 0 files with its name, fix by hand
-  McshTchInf000008:4067  ../../dirHitp/hitp.02.2013-04-01.html: 0 files with its name, fix by hand
-  McshTchInf000008:4076  ../../dirHitp/hitp.01.2011-02-17.html: 0 files with its name, fix by hand
-  McshTchInf000008:4214  ../../index.html: 0 files with its name, fix by hand
-  McshTchInf000008:4225  ../../dirMcs/dirTchInf/McsTchInf000008.last.html: 0 files with its name, fix by hand
-  McshTchInf000008:4230  ../dirTchInf/McshTchInf000008.20-0-0.2025-05-25.html: 0 files with its name, fix by hand
-  McshTchInf000008:4231  ../../dirMiwMcs/dirTchInf/filMcsLagHitp.17-38-0.2021-04-02.html: 0 files with its name, fix by hand
-  McshTchInf000008:4232  ../../dirMiwMcs/dirTchInf/FilMcsHitp.17-0-0.2017-11-27.html: 0 files with its name, fix by hand
-  McshTchInf000008:4233  ../../hitp/index.16.2016-06-09.html: 0 files with its name, fix by hand
-  McshTchInf000008:4234  ../../hitp/index.2016.01.25.15.html: 0 files with its name, fix by hand
-  McshTchInf000008:4235  ../../hitp/index.2013.08.23.14.html: 0 files with its name, fix by hand
-  McshTchInf000008:4236  ../../hitp/index.2013.08.20.13.html: 0 files with its name, fix by hand
-  McshTchInf000008:4237  ../../hitp/index.2013.06.29.12.html: 0 files with its name, fix by hand
-  McshTchInf000008:4238  ../../hit/index.2013.06.26.html: 0 files with its name, fix by hand
-  McshTchInf000008:4239  ../../hit/index.2013.06.18.html: 0 files with its name, fix by hand
-  McshTchInf000008:4240  ../../hit/index.2013.06.01.html: 0 files with its name, fix by hand
-  McshTchInf000008:404  #idLHitparctre in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:481  #idLHitparctreStr in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:570  #idLHitparctreLef in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:1499  #idLHitpsitedirNmixlrfl in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:1640  #idLMcshmngrfileNilgRf in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:2123  #idMcsattNamIstc in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:2529  #idLMcshmngrfileNilagjn in dirTchInf/McshTchInf000009.last.html: 0 ids differ only in case, fix by hand
-  McshTchInf000008:3417  #idLHitpsitedirSrvr in dirTchInf/McshTchInf000008.last.html: 0 ids differ only in case, fix by hand
+=== SKIP (30) — skipped, with why: fix by hand
+  McshCor000003:1912  #idEntevogIk13000 "millennium.3000!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:2223  #idEntevogIk12000 "millennium.2000!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:3327  #idEntevogIk11000 "millennium.1000!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:3796  #idEntevogIk1Bce1000 "millennium.Bce1000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4222  #idEntevogIk1Bce2000 "millennium.Bce2000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4344  #idEntevogIk1Bce3000 "millennium.Bce3000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4395  #idEntevogIk1Bce4000 "millennium.Bce4000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4447  #idEntevogIk1Bce5000 "millennium.Bce5000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4494  #idEntevogIk1Bce6000 "millennium.Bce6000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4533  #idEntevogIk1Bce7000 "millennium.Bce7000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4577  #idEntevogIk1Bce8000 "millennium.Bce8000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4624  #idEntevogIk1Bce9000 "millennium.Bce9000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4661  #idEntevogIk1BpK1x012 "millennium.Bce10000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4698  #idEntevogIk1BpK1x013 "millennium.Bce11000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4732  #idEntevogIk1BpK1x014 "millennium.Bce12000- of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4780  #idEntevogIk2BpK2x001 "megannium.BpK2x001!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4816  #idEntevogIk2BpK2x002 "megannium.BpK2x002!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4831  #idEntevogIk3BpK3x001 "gigannium.BpK3x001!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4936  #idEntevogIk3BpK3x002 "gigannium.BpK3x002!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4951  #idEntevogIk3BpK3x003 "gigannium.BpK3x003!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4966  #idEntevogIk3BpK3x004 "gigannium.BpK3x004!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:4981  #idEntevogIk3BpK3x005 "gigannium.BpK3x005!= of Enttevolg": the-title has "(…)" or "{…}" inside, by hand
+  McshCor000003:941  #idEntevogsmrdbp "summarized-before-present-": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:968  #idEntevogsmrdbce "summarized-before-current-era": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:1000  #idEntevogsmrd1ml "summarized-1st-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:1056  #idEntevogsmrd2ml "summarized-2nd-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:1137  #idEntevogsmrd3ml "summarized-3nd-millennium": not "X'y", "X.y" or "x of X" with X a-name of evolutingSummarized: by hand
+  McshCor000003:6681  #idEntYangNattold "04_old-attribute of entityΥoungNo": "entityΥoungNo" is not a-name of EnttYoungNo, the-section may belong to entityΥoungNo: by hand
+  McshCor000003:2377  #idOznUnatt006Spcmbr in dirStn/McshStn000018.last.html: 0 ids differ only in case, fix by hand
+  McshCor000003:3060  #idBookB003 in dirLag/McshLag000014.last.html: 0 ids differ only in case, fix by hand
 
-=== NOISSUE (22) — the-rule has no issue in the-file
-  McshTchInf000008  MvrwId01_char: nothing to fix
-  McshTchInf000008  MvrwId02_suffix_dong: nothing to fix
-  McshTchInf000008  MvrwId04_suffix_eval: nothing to fix
-  McshTchInf000008  MvrwId05_suffix_evog: nothing to fix
-  McshTchInf000008  MvrwId06_suffix_irsc: nothing to fix
-  McshTchInf000008  MvrwId07_suffix_pntr: nothing to fix
-  McshTchInf000008  MvrwId08_suffix_chtr: nothing to fix
-  McshTchInf000008  MvrwId09_suffix_wltr: nothing to fix
-  McshTchInf000008  MvrwId10_suffix_prtr: nothing to fix
-  McshTchInf000008  MvrwId11_suffix_gntr: nothing to fix
-  McshTchInf000008  MvrwId12_suffix_sptr: nothing to fix
-  McshTchInf000008  MvrwMain01_Attrbase: nothing to fix
-  McshTchInf000008  MvrwMain02_evolg: nothing to fix
-  McshTchInf000008  MvrwMain03_eval: nothing to fix
-  McshTchInf000008  MvrwMain04_doing: nothing to fix
-  McshTchInf000008  MvrwMain05_infrsc: nothing to fix
-  McshTchInf000008  MvrwMain06_srtr: nothing to fix
-  McshTchInf000008  MvrwMain07_Attrbase_line: nothing to fix
-  McshTchInf000008  MvrwName01_formal: nothing to fix
-  McshTchInf000008  MvrwSect04_name_empty: nothing to fix
-  McshTchInf000008  MvrwMisc01_date: nothing to fix
-  McshTchInf000008  MvrwMain11_line: nothing to fix
+=== DUPNAME (11) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01_duplicate_line)
+  McshCor000003:932  McshEngl.Enttevolg'summarized_global_history!⇒evolutingSummarized
+  McshCor000003:1181  McshEngl.Enttevolg'parent!⇒parent_of_entity
+  McshCor000003:1203  McshEngl.Enttevolg'child!⇒child
+  McshCor000003:1220  McshEngl.Enttevolg'timespan
+  McshCor000003:1243  McshEngl.Enttevolg'timepoint|state!⇒Enttstate
+  McshCor000003:1290  McshEngl.Enttevolg'timeinterval|stage!⇒Enttstage
+  McshCor000003:1841  McshEngl.Enttevolg.concept
+  McshCor000003:1865  McshEngl.Enttevolg.referent
+  McshCor000003:1880  McshEngl.Enttevolg.phylo
+  McshCor000003:1895  McshEngl.Enttevolg.onto
+  McshCor000003:1917  McshEngl.Enttevolg.era_vs_age
+
+=== NOISSUE (23) — the-rule has no issue in the-file
+  McshCor000003  MvrwId01_char: nothing to fix
+  McshCor000003  MvrwId02_suffix_dong: nothing to fix
+  McshCor000003  MvrwId04_suffix_eval: nothing to fix
+  McshCor000003  MvrwId05_suffix_evog: nothing to fix
+  McshCor000003  MvrwId06_suffix_irsc: nothing to fix
+  McshCor000003  MvrwId07_suffix_pntr: nothing to fix
+  McshCor000003  MvrwId08_suffix_chtr: nothing to fix
+  McshCor000003  MvrwId09_suffix_wltr: nothing to fix
+  McshCor000003  MvrwId10_suffix_prtr: nothing to fix
+  McshCor000003  MvrwId11_suffix_gntr: nothing to fix
+  McshCor000003  MvrwId12_suffix_sptr: nothing to fix
+  McshCor000003  Hvre05: nothing to fix
+  McshCor000003  MvrwMain01_Attrbase: nothing to fix
+  McshCor000003  MvrwMain02_evolg: nothing to fix
+  McshCor000003  MvrwMain03_eval: nothing to fix
+  McshCor000003  MvrwMain04_doing: nothing to fix
+  McshCor000003  MvrwMain05_infrsc: nothing to fix
+  McshCor000003  MvrwMain06_srtr: nothing to fix
+  McshCor000003  MvrwMain07_Attrbase_line: nothing to fix
+  McshCor000003  MvrwName01_formal: nothing to fix
+  McshCor000003  MvrwSect04_name_empty: nothing to fix
+  McshCor000003  MvrwMisc01_date: nothing to fix
+  McshCor000003  MvrwMain11_line: nothing to fix

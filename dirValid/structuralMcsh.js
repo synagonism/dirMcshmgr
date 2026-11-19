@@ -87,6 +87,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-75-0.2026-11-19: MvrwMain10 drops a-"!={…}" of the-title whole ("millennium.3000!={2001..3000} of Enttevolg")',
     'structuralMcsh.js.0-74-0.2026-11-16: rule codes with their name (MvrwId13_suffix_srtr), aCodeMcsh, fCodeFull',
     'structuralMcsh.js.0-73-0.2026-11-16: MvrwId01 id_char (only A-Z a-z 0-9 _, ids and links), MvrwId03 removed',
     'structuralMcsh.js.0-72-0.2026-11-16: MvrwMain11 line: the-Mmn on the-first name-line (M, or D!⇒M then M!=D)',
@@ -1024,7 +1025,8 @@ function fCheckMainNameHuman(aoCnptFile) {
 //   UPPERCASE grouping titles (MISC-ATTRIBUTE of M). Example: "protocol of AgntRppl" + AgntRppl'protocol.
 //   The-file-concept is checked too: its direct parts are the-top sections, not idOverview, idMeta, idSupport;
 //   its issues say "of file-concept".
-const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+// "millennium.3000!={2001..3000}": the-"!={…}" (an-equality note) goes whole, NOT only its {…}
+const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/!=\{[^}]*\}/g, '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
 const fFormalMvrwMain10 = sIn => sIn.replace(/-+/g, '_').replace(/\s+/g, '_');
 function fCheckAttribute(aoCnptFile) {
   const aoIssue = [];

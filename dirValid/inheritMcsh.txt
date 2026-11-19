@@ -1,8 +1,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:/dirNodews/dirMcsh
+  INHERITANCE SYNC — dry run: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   258 files · 29874 sections · 5337 specifics under a-numbered generic · 4295 of their attributes · 1187 match a-numbered generic-attribute
-  NN_last names changed: 73
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
@@ -19,7 +18,7 @@ SUMMARY
   INH-REFBROKEN    11  a-text-reference name!@File#id whose file or id does NOT exist
   INH-GNTRTEXT     86  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
   INH-TITLENAME     1  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  INH-TITLEHAND   284  a-numbered attribute whose title-name needs a-hand
+  INH-TITLEHAND   173  a-numbered attribute whose title-name needs a-hand
 
 === INH-NONUM (29) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   McshCor000002:145  "relation of Mcsattr"  → 02_  ← entity'02_attribute_relation@McshCor000003#idEntatrrln
@@ -34,8 +33,8 @@ SUMMARY
   McshCor000009:78  "attribute of generic"  → 01_  ← entity'01_attribute@McshCor000003#idEntatt
   McshCor000011:2190  "structure of Treesyst"  → 03_ ✗ own numbering of the-specific: by hand  ← system'03_structure@McshCor000011#idSyssrtr
   McshEdu000005:1708  "method of Mathfn"  → 10_  ← RltnMapping'10_method@McshCor000005#idRlnMpgmthd
-  McshLag000007:16354  "expression of Hmmdlogo"  → 03_ ✗ own numbering of the-specific: by hand  ← entity'03_expression@McshCor000003#idEntexrn
-  McshLag000007:16314  "output_(logo_view) of Hmmdlago"  → 15_ ✗ own numbering of the-specific: by hand  ← Ogsmlago'15_output|logoview@McshLag000005#idLOgsmotpt
+  McshLag000007:16358  "expression of Hmmdlogo"  → 03_ ✗ own numbering of the-specific: by hand  ← entity'03_expression@McshCor000003#idEntexrn
+  McshLag000007:16318  "output_(logo_view) of Hmmdlago"  → 15_ ✗ own numbering of the-specific: by hand  ← Ogsmlago'15_output|logoview@McshLag000005#idLOgsmotpt
   McshLag000007:898  "input of Hmmdlago"  → 08_ ✗ own numbering of the-specific: by hand  ← RltnMapping'08_input@McshCor000005#idRlnMpgarch
   McshLag000007:86  "user of Hmmdlago"  → 13_ ✗ own numbering of the-specific: by hand  ← Ogsmlago'13_user@McshLag000005#idLOgsmentt
   McshLag000018:17522  "evaluation of Zhonlago"  → 12_ ✗ own numbering of the-specific: by hand  ← model'12_evaluation@McshCor000012#idMdleval
@@ -88,8 +87,8 @@ SUMMARY
   McshEdu000002:184  "14_rlnReferent of science"  → 12_  ← model'12_evaluation@McshCor000012#idMdleval
   McshHlth000002:14770  "06_argument of Hbexcreting"  → 04_  ← doing'04_argument@McshCor000004#idDngatt001
   McshLag000002:68  "13_referent of infoBrainBio"  → 04_  ← model'04_archetype@McshCor000012#idMdlatt001
-  McshLag000007:32625  "20_output of Textlago"  → 09_  ← RltnMapping'09_output@McshCor000005#idRlnMpgmdl
-  McshLag000007:30801  "21_grammar of Hmmdlago"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
+  McshLag000007:32629  "20_output of Textlago"  → 09_  ← RltnMapping'09_output@McshCor000005#idRlnMpgmdl
+  McshLag000007:30805  "21_grammar of Hmmdlago"  → 16_  ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr
   McshLag000007:15131  "06_argument of Hmmdsemuconj"  → 04_  ← relation'04_argument@McshCor000005#idRlnarg
   McshLag000007:14860  "06_argument of Hmmdsemuverb"  → 04_  ← bodyNo'04_argument@McshCor000003#idEntBodyNarg
   McshLag000007:14821  "02_valence of Hmmdsemuverb"  → 05_  ← bodyNo'05_valence@McshCor000003#idEntBodyNvlc
@@ -285,7 +284,7 @@ SUMMARY
 === INH-OWNNUM (142) — an-own numbered attribute NOT after the-last number of the-inherited-attr-chain
   McshCor000002:4590  "04_environment of Mcs"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
   McshCor000002:641  "03_relation of McsattPart"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
-  McshCor000004:1459  "07_syntax of DongSequenced"  last 08_ ← BodyNoSequ'08_togetherness@McshCor000003#idEntBodyNSqcdtgtrn
+  McshCor000004:1459  "07_syntax of DongSequenced"  last 08_ ← bodyNoSequ'08_togetherness@McshCor000003#idEntBodyNSqcdtgtrn
   McshCor000011:261  "03_structure of system"  last 06_ ← whole'06_environment@McshCor000008#idWhlenvt
   McshCor000011:238  "02_node_relation of system"  last 06_ ← whole'06_environment@McshCor000008#idWhlenvt
   McshCor000011:197  "01_node of system"  last 06_ ← whole'06_environment@McshCor000008#idWhlenvt
@@ -303,7 +302,7 @@ SUMMARY
   McshHlth000013:92  "03_evaluation of food"  last 19_ ← Hbnutrient'19_dietary_recommendation@McshHlth000002#idBdyHmnatt015att003
   McshHmn000002:172  "18_managing_system of human"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
   McshLag000003:679  "03_structure of cnptMind"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
-  McshLag000007:16596  "03_syntax-tree of Hmmdlogo"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:16600  "03_syntax-tree of Hmmdlogo"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
   McshLag000007:15104  "05_logo-relation of Hmmdsemuconj"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
   McshLag000007:14835  "05_logo-relation of Hmmdsemuverb"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
   McshLag000007:1153  "03_syntax-tree of HmmdviewSemu"  last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007
@@ -1087,39 +1086,39 @@ SUMMARY
   McshLag000003:355  "referent of infoBrain"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
   McshLag000003:84  "relation-to-referent of info"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
   McshLag000003:66  "referent of info"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:33520  "organization of Glbllago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:33336  "relation-to-Hmmdlago of Dlctlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:32923  "syllabogram of Sylblago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:32801  "writing of Textlago"  → 28_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:32755  "reading of Textlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:32457  "Language-Creation-Society of Cnrdlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
-  McshLag000007:31416  "linguistics of Hmmdlago"  → 30_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:31019  "MISC-ATTRIBUTE of Hmmdlago"  → 29_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:30998  "modality of Hmmdlago"  → 28_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:30924  "mapping_relations of Hmmdlago"  → 27_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
-  McshLag000007:30750  "semu-view-relation of Hmmdlogo"  → 34_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:30725  "root-node of Hmmdlogo"  → 33_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:30639  "figure-of-speech of Hmmdlogo"  → 32_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:30574  "title-sentence-system (section) of Hmmdlogo"  → 31_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:30471  "titless-sentence-system of Hmmdlogo"  → 30_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:29104  "sentence of Hmmdlogo"  → 29_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:29078  "conjunction-phrase of Hmmdlogo"  → 28_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:27390  "verb-argument of Hmmdsent"  → 27_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:27121  "argu-phrase of Hmmdlogo"  → 26_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:25338  "Conj-name of Hmmdlogo"  → 25_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:22742  "verb-name of Hmmdlogo"  → 24_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:20851  "argu-name of Hmmdlogo"  → 23_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:18713  "name-(decoding-unit) of Hmmdlogo"  → 22_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:17383  "unit-system of Hmmdlogo"  → 21_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16770  "context of Hmmdlogo"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16582  "codomain of Hmmdlogo"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16399  "denotation of Hmmdexpn"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16378  "denoting-relation of Hmmdexpn"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16268  "relation-to-logo of HmmdviewSemu"  → 30_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16251  "relation-to--senso-mind of HmmdviewSemu"  → 29_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16226  "semu-root of HmmdviewSemu"  → 28_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16143  "semu-sentence--system of HmmdviewSemu"  → 27_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
-  McshLag000007:16057  "semu-sentence of HmmdviewSemu"  → 26_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:33524  "organization of Glbllago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:33340  "relation-to-Hmmdlago of Dlctlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:32927  "syllabogram of Sylblago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:32805  "writing of Textlago"  → 28_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:32759  "reading of Textlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:32461  "Language-Creation-Society of Cnrdlago"  → 27_  (last 26_ ← Hmmdlago'26_tech@McshLag000007#idLHmmdtech)
+  McshLag000007:31420  "linguistics of Hmmdlago"  → 30_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
+  McshLag000007:31023  "MISC-ATTRIBUTE of Hmmdlago"  → 29_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
+  McshLag000007:31002  "modality of Hmmdlago"  → 28_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
+  McshLag000007:30928  "mapping_relations of Hmmdlago"  → 27_  (last 16_ ← Ogsmlago'16_grammar@McshLag000005#idLOgsmgrmr)
+  McshLag000007:30754  "semu-view-relation of Hmmdlogo"  → 34_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:30729  "root-node of Hmmdlogo"  → 33_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:30643  "figure-of-speech of Hmmdlogo"  → 32_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:30578  "title-sentence-system (section) of Hmmdlogo"  → 31_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:30475  "titless-sentence-system of Hmmdlogo"  → 30_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:29108  "sentence of Hmmdlogo"  → 29_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:29082  "conjunction-phrase of Hmmdlogo"  → 28_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:27394  "verb-argument of Hmmdsent"  → 27_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:27125  "argu-phrase of Hmmdlogo"  → 26_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:25342  "Conj-name of Hmmdlogo"  → 25_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:22746  "verb-name of Hmmdlogo"  → 24_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:20855  "argu-name of Hmmdlogo"  → 23_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:18717  "name-(decoding-unit) of Hmmdlogo"  → 22_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:17387  "unit-system of Hmmdlogo"  → 21_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16774  "context of Hmmdlogo"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16586  "codomain of Hmmdlogo"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16403  "denotation of Hmmdexpn"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16382  "denoting-relation of Hmmdexpn"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16272  "relation-to-logo of HmmdviewSemu"  → 30_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16255  "relation-to--senso-mind of HmmdviewSemu"  → 29_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16230  "semu-root of HmmdviewSemu"  → 28_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16147  "semu-sentence--system of HmmdviewSemu"  → 27_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000007:16061  "semu-sentence of HmmdviewSemu"  → 26_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
   McshLag000007:15569  "Semuverb-argument of HmmdviewSemu"  → 25_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
   McshLag000007:15547  "Semuargu-system of HmmdviewSemu"  → 24_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
   McshLag000007:15118  "senso-mind-relation of Hmmdsemuconj"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
@@ -2113,7 +2112,7 @@ SUMMARY
   McshCor000004:113  "04_argument of doing"  order: 05 04
 
 === INH-GNTRTEXT (86) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  McshCor000003:5028  #idEntgstr  none (plain name): not defined; 2 concepts named none
+  McshCor000003:5030  #idEntgstr  none (plain name): not defined; 2 concepts named none
   McshCor000006:402  #idTimegstr  doing-of-Universe (plain name): not defined, no concept named doing-of-Universe
   McshCor000010:220  #idQntgstr  information (plain name): not defined, no concept named information
   McshCor000013:75  #idBrngstx  syntax-of-functing (plain name): not defined, no concept named syntax-of-functing
@@ -2203,82 +2202,10 @@ SUMMARY
 === INH-TITLENAME (1) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
   McshCor000005:1673  "10_method of RltnMapping"  renamed RltnMapping'12_method → RltnMapping'10_method
 
-=== INH-TITLEHAND (284) — a-numbered attribute whose title-name needs a-hand
-  Mcsh000000:230  "29_McsHitp_lag of Mws"  no name:: paragraph
-  Mcsh000000:169  "25_sensorial_concept_Mcs of Mws"  no name:: paragraph
-  McshCor000003:6353  "07_subject-target of reldoSequenced"  no name:: paragraph
-  McshCor000003:6348  "06_subject of reldoSequenced"  no name:: paragraph
-  McshCor000003:580  "02_attribute_relation of entity"  the-main-name RltnEnttAttr is NOT in this name::
-  McshCor000004:5040  "12_space-direction of DongMoving"  no name:: paragraph
-  McshCor000004:5035  "11_location of DongMoving"  no name:: paragraph
-  McshCor000004:4020  "08_relation of math-division"  no name:: paragraph
-  McshCor000004:4015  "06_argument of math-division"  no name:: paragraph
-  McshCor000004:3929  "06_argument of subtracting"  no name:: paragraph
-  McshCor000004:2882  "11_suggestion of ActgSuggesting"  no name:: paragraph
-  McshCor000004:2002  "11_question of ActgAsking"  no name:: paragraph
-  McshCor000005:3489  "08_thinking of RltnProbability"  no name:: paragraph
-  McshCor000005:3296  "08_thought of RltnInfoPossessor"  no name:: paragraph
-  McshCor000005:1668  "09_output of RltnMapping"  no name:: paragraph
-  McshCor000005:1663  "08_input of RltnMapping"  no name:: paragraph
-  McshCor000009:899  "18_abstract_measure of ActgMeasuring"  no name:: paragraph
+=== INH-TITLEHAND (173) — a-numbered attribute whose title-name needs a-hand
   McshCor000011:2583  "07_edge-(node-relation) of SystGraph"  the-title is NOT a-name
   McshCor000011:2566  "06_vertex-(node) of SystGraph"  the-title is NOT a-name
-  McshCor000011:2156  "11_level of Treesyst"  no name:: paragraph
-  McshCor000012:246  "16_mapping_doing of model"  no name:: paragraph
-  McshCor000012:241  "15_mapping_method of model"  no name:: paragraph
-  McshCor000012:236  "14_mapping_relation of model"  no name:: paragraph
-  McshCor000018:311  "16_sensation of FctgSensing"  no name:: paragraph
-  McshCor000018:306  "15_sensory_system of FctgSensing"  no name:: paragraph
-  McshCor000023:87  "08_managing_system of Dynasyst"  no name:: paragraph
-  McshEdu000003:202  "08_relation-to-network of Mathgrph"  no name:: paragraph
-  McshHlth000002:12547  "01_disease of GlndProstate"  no name:: paragraph
-  McshHlth000002:12310  "01_disease of HbsystReproductive"  no name:: paragraph
-  McshHlth000002:11449  "01_disease of OganKidney"  no name:: paragraph
-  McshHlth000002:11397  "01_disease of HbsystUrinary"  no name:: paragraph
-  McshHlth000002:9967  "01_disease of HbsystDigestive"  no name:: paragraph
-  McshHlth000002:9371  "01_disease of OganLarynx"  no name:: paragraph
-  McshHlth000002:9059  "01_disease of HbsystRespiratory"  no name:: paragraph
-  McshHlth000002:8954  "01_disease of HbsystEndocrine"  no name:: paragraph
-  McshHlth000002:8415  "01_disease of HbsystIntegumentary"  no name:: paragraph
-  McshHlth000002:6760  "01_disease of OganHeart"  no name:: paragraph
-  McshHlth000002:6654  "01_disease of HbsystCirculatory"  no name:: paragraph
-  McshHlth000002:6500  "14_health of bodyHumn"  no name:: paragraph
-  McshHlth000002:6495  "13_food of bodyHumn"  no name:: paragraph
-  McshHlth000002:6108  "17_disease of vitamin"  no name:: paragraph
-  McshHlth000002:5182  "17_disease of Hbnutrient"  no name:: paragraph
-  McshHlth000002:4877  "09_cell of bodyHumn"  no name:: paragraph
-  McshHlth000003:164  "03_cell of OganBrain"  no name:: paragraph
-  McshHlth000005:4091  "01_disease of skeletonVertebra"  no name:: paragraph
-  McshHlth000005:3165  "02_tissue of OganBone"  no name:: paragraph
-  McshHlth000005:3160  "01_disease of OganBone"  no name:: paragraph
-  McshHlth000005:2947  "01_disease of SystSkeletal"  no name:: paragraph
-  McshHlth000005:178  "03_cell of OganMuscle"  no name:: paragraph
-  McshHlth000005:173  "02_tissue of OganMuscle"  no name:: paragraph
-  McshHlth000005:168  "01_disease of OganMuscle"  no name:: paragraph
-  McshHlth000005:61  "01_disease of SystMusculoskeletal"  no name:: paragraph
-  McshHlth000011:1150  "02_cause of DissInfectious"  no name:: paragraph
   McshHlth000011:569  "09_worker of disease"  the-main-name Dissworker is NOT in this name::
-  McshHlth000011:564  "08_patient of disease"  no name:: paragraph
-  McshHlth000011:433  "04_therapy of disease"  no name:: paragraph
-  McshHlth000013:7093  "28_fruit_plant of foodFruit"  no name:: paragraph
-  McshHlth000019:5801  "17_organBrain of Nrvssyst"  no name:: paragraph
-  McshHlth000019:5110  "09_sensing of Senssyst"  no name:: paragraph
-  McshHlth000019:5062  "06_stimulus of Senssyst"  no name:: paragraph
-  McshHlth000019:5057  "05_sensation of Senssyst"  no name:: paragraph
-  McshHlth000019:5040  "03_sensory_cortex of Senssyst"  no name:: paragraph
-  McshHlth000019:4571  "01_disease of OganEye"  no name:: paragraph
-  McshHlth000019:3343  "01_disease of Senssyst"  no name:: paragraph
-  McshHlth000019:591  "10_organSense of Nrvssyst"  no name:: paragraph
-  McshHlth000019:110  "01_disease of Nrvssyst"  no name:: paragraph
-  McshHmn000002:3110  "38_body of human"  no name:: paragraph
-  McshHmn000002:341  "31_job of human"  no name:: paragraph
-  McshHmn000002:172  "18_managing_system of human"  no name:: paragraph
-  McshLag000007:32688  "09_unit of text"  no name:: paragraph
-  McshLag000007:17937  "13_science of word"  no name:: paragraph
-  McshLag000007:17897  "11_semiword of word"  no name:: paragraph
-  McshLag000007:17892  "10_affix of word"  no name:: paragraph
-  McshLag000007:17802  "07_syllable of word"  no name:: paragraph
-  McshLag000007:14860  "06_argument of Hmmdsemuverb"  no name:: paragraph
   McshLag000007:1056  "30_input3_(semu_view) of Hmmdlago"  the-title is NOT a-name
   McshLag000007:984  "29_input2_(senso_mind__view) of Hmmdlago"  the-title is NOT a-name
   McshLag000007:909  "28_input1_(mind_view) of Hmmdlago"  the-title is NOT a-name
@@ -2291,17 +2218,14 @@ SUMMARY
   McshLag000009:1009  "13_07-08) unround-round-1-2 of HmmdphnmVowl"  the-title is NOT a-name
   McshLag000009:975  "12_04-05-06) closed-mid-opened|vertical of HmmdphnmVowl"  the-title is NOT a-name
   McshLag000009:948  "11_01-02-03) front-central-back|horizontal-1-2-3 of HmmdphnmVowl"  the-title is NOT a-name
-  McshLag000009:151  "08_science of Spchlago"  no name:: paragraph
   McshLag000010:5883  "30_input3-(semu-view) of Sngulagu"  the-title is NOT a-name
   McshLag000010:5853  "28_input1-(mind-view) of Sngulagu"  the-title is NOT a-name
-  McshLag000010:2144  "07_syllable of Sngu_word"  no name:: paragraph
   McshLag000010:247  "20_output (logu-view) of Sngulagu"  the-title is NOT a-name
   McshLag000011:30575  "30_input3-(semu-view) of Engllago"  the-title is NOT a-name
   McshLag000011:30555  "28_input1-(mind-view) of Engllago"  the-title is NOT a-name
   McshLag000011:90  "20_output (logo-view) of Engllago"  the-title is NOT a-name
   McshLag000012:4988  "30_input3-(semu-view) of Espolago"  the-title is NOT a-name
   McshLag000012:4968  "28_input1-(mind-view) of Espolago"  the-title is NOT a-name
-  McshLag000012:1548  "07_syllable of wordEspo"  no name:: paragraph
   McshLag000012:189  "20_output (logo-view) of Espolago"  the-title is NOT a-name
   McshLag000018:18522  "04_output (view-logo) of Zhollago"  the-title is NOT a-name
   McshLag000018:17722  "33_input1_(mind_view) of Zhonlago"  the-title is NOT a-name
@@ -2313,7 +2237,6 @@ SUMMARY
   McshLag000020:12729  "05_input1-(mind-view) of Ellnlago"  the-title is NOT a-name
   McshLag000020:84  "04_output (logo-view) of Ellnlago"  the-title is NOT a-name
   McshLag000027:67  "04_output (logo-view) of Ellalago"  the-title is NOT a-name
-  McshLag000028:1919  "07_Ancient-Greek-{Bce1100..Bce0300} of Greek-family"  no name:: paragraph
   McshLag000028:59  "04_output (logo-view) of Ell0lago"  the-title is NOT a-name
   McshLag000030:8077  "32_input2_(senso_mind_view) of Turklago"  the-title is NOT a-name
   McshLag000030:7976  "30_input3_(semu_view) of Turklago"  the-title is NOT a-name
@@ -2369,35 +2292,9 @@ SUMMARY
   McshLag000043:3456  "30_input3-(semu-view) of Koralago"  the-title is NOT a-name
   McshLag000043:3436  "28_input1-(mind-view) of Koralago"  the-title is NOT a-name
   McshLag000043:239  "20_output (logo-view) of Koralago"  the-title is NOT a-name
-  McshNtr000002:358  "14_physics of material"  no name:: paragraph
-  McshNtr000004:83  "02_intramolecular_bond of MtrlMole"  no name:: paragraph
-  McshNtr000005:92  "03_intermolecular_force of MtrlSysMols"  no name:: paragraph
   McshNtr000007:331  "27_mass-number (A) of ChmcElry"  the-title is NOT a-name
   McshNtr000007:164  "18_atomic-number (Z) of ChmcElry"  the-title is NOT a-name
-  McshOgm000002:95  "19_health of bio"  no name:: paragraph
-  McshOgm000002:90  "18_managing_system of bio"  no name:: paragraph
-  McshOgm000002:85  "17_disorder of bio"  no name:: paragraph
-  McshOgm000003:553  "32_tissue of Ogsm"  no name:: paragraph
-  McshOgm000003:450  "27_managing_sys of Ogsm"  no name:: paragraph
-  McshOgm000003:445  "26_disease of Ogsm"  no name:: paragraph
-  McshOgm000003:440  "25_satisfier of Ogsm"  no name:: paragraph
-  McshOgm000003:435  "24_cell of Ogsm"  no name:: paragraph
-  McshOgm000003:157  "19_health of Ogsm"  no name:: paragraph
-  McshOgm000009:1566  "13_food of OgsmFish"  no name:: paragraph
-  McshOgm000010:130  "34_food of OgsmPlant"  no name:: paragraph
-  McshOgm000010:125  "33_governance_system of OgsmPlant"  no name:: paragraph
-  McshOgm000010:120  "26_disease of OgsmPlant"  no name:: paragraph
   McshOgm000010:68  "19_health of OgsmPlant (link)"  the-title is NOT a-name
-  McshStn000002:521  "29_node_of_governance of Sctn"  no name:: paragraph
-  McshStn000002:270  "27_admin_system of Ogsmsyst"  no name:: paragraph
-  McshStn000002:264  "06_satisfier of Ogsmsyst"  no name:: paragraph
-  McshStn000009:7040  "44_economic_view of society"  no name:: paragraph
-  McshStn000009:3745  "41_ecosystem of society"  no name:: paragraph
-  McshStn000009:2302  "15_budget of Socadmn"  no name:: paragraph
-  McshStn000010:2057  "03_owner of sfrProperty"  no name:: paragraph
-  McshStn000012:1629  "09_admin_sys of SoctEcon"  no name:: paragraph
-  McshStn000012:127  "02_satisfier of SoctEcon"  no name:: paragraph
-  McshStn000021:237  "26_node_of_satisfiers of SoctGlbl"  no name:: paragraph
   McshStn000034:345  "04_output_(logo_view) of Vnmalago"  the-title is NOT a-name
   McshStn000034:326  "03_input3_(semu_view) of Vnmalago"  the-title is NOT a-name
   McshStn000034:309  "02_input2_(senso_mind_view) of Vnmalago"  the-title is NOT a-name
@@ -2406,7 +2303,6 @@ SUMMARY
   McshStn000035:173  "03_input3_(semu_view) of lagoItln"  the-title is NOT a-name
   McshStn000035:156  "02_input2_(senso_mind_view) of lagoItln"  the-title is NOT a-name
   McshStn000035:139  "01_input1_(mind_view) of lagoItln"  the-title is NOT a-name
-  McshStn000036:93  "29_language of SoctDeut"  no name:: paragraph
   McshStn000037:241  "04_output_(logo_view) of Fraclago"  the-title is NOT a-name
   McshStn000037:222  "03_input3_(semu_view) of Fraclago"  the-title is NOT a-name
   McshStn000037:205  "02_input2_(senso_mind_view) of Fraclago"  the-title is NOT a-name
@@ -2435,19 +2331,14 @@ SUMMARY
   McshStn000044:214  "03_input3_(semu_view) of Romnlago"  the-title is NOT a-name
   McshStn000044:197  "02_input2_(senso_mind_view) of Romnlago"  the-title is NOT a-name
   McshStn000044:180  "01_input1_(mind_view) of Romnlago"  the-title is NOT a-name
-  McshStn000045:113  "29_language of SoctBiha"  no name:: paragraph
-  McshStn000046:105  "29_language of SoctMnea"  no name:: paragraph
-  McshStn000047:113  "29_language of SoctHrva"  no name:: paragraph
   McshStn000048:256  "04_output_(logo_view) of Jpnslago"  the-title is NOT a-name
   McshStn000048:237  "03_input3_(semu_view) of Jpnslago"  the-title is NOT a-name
   McshStn000048:220  "02_input2_(senso_mind_view) of Jpnslago"  the-title is NOT a-name
   McshStn000048:203  "01_input1_(mind_view) of Jpnslago"  the-title is NOT a-name
-  McshStn000049:133  "29_language of SoctKors"  no name:: paragraph
   McshStn000050:225  "04_output_(logo_view) of Khmrlago"  the-title is NOT a-name
   McshStn000050:206  "03_input3_(semu_view) of Khmrlago"  the-title is NOT a-name
   McshStn000050:189  "02_input2_(senso_mind_view) of Khmrlago"  the-title is NOT a-name
   McshStn000050:172  "01_input1_(mind_view) of Khmrlago"  the-title is NOT a-name
-  McshStnlaw000002:1051  "28_legal-system of law"  no name:: paragraph
   McshStnlaw000003:842  "04_docnbr_(4_digits) of Celex_nbr"  the-title is NOT a-name
   McshStnlaw000003:809  "03_doctype_(1|2_letters) of Celex_nbr"  the-title is NOT a-name
   McshStnlaw000003:792  "02_year_(4_digits) of Celex_nbr"  the-title is NOT a-name
@@ -2458,7 +2349,6 @@ SUMMARY
   McshTchInf000006:2304  "06_Srcdalgo'node of Srcdlago"  the-title is NOT a-name
   McshTchInf000006:2138  "13_archetype (input) of Asmblago"  the-title is NOT a-name
   McshTchInf000006:1985  "20_algo (output) of Triplago"  the-title is NOT a-name
-  McshTchInf000006:1143  "19_Pgmlalgo.PROGRAM of Prgmlago"  no name:: paragraph
   McshTchInf000008:3529  "38_archetype (input) of Hitplago"  the-title is NOT a-name
   McshTchInf000008:230  "20_web-app-doc (output) of Hitplago"  the-title is NOT a-name
   McshTchInf000010:306  "20_algorithm (output) of Jsgnlago"  the-title is NOT a-name
@@ -2476,7 +2366,6 @@ SUMMARY
   McshTchInf000016:9395  "27_service of AgntWavs (Wavssrvc)"  the-title is NOT a-name
   McshTchInf000016:9155  "17_protocol of AgntWavs (wavprl)"  the-title is NOT a-name
   McshTchInf000016:8651  "30_blockchain of AgntZcsh (zecbcn)"  the-title is NOT a-name
-  McshTchInf000017:1618  "06_Law of Btcncevu"  no name:: paragraph
   McshTchInf000023:164  "18_Dagchain of Iota-net (tangle)"  the-title is NOT a-name
   McshTchInf000030:3115  "08_algo'section of Rustlago"  the-title is NOT a-name
   McshTchInf000030:2071  "04_algo'word of Rustlago"  the-title is NOT a-name
@@ -2486,12 +2375,11 @@ SUMMARY
   McshTchInf000031:152  "13_archetype (input) of Cppzlago"  the-title is NOT a-name
   McshTchInf000031:67  "09_algo'unit of Cppzlago"  the-title is NOT a-name
   McshTchInf000035:70  "20_output-doc(webpage) of Htmllago"  the-title is NOT a-name
-  McshTchInf000039:11646  "04_manager of lagoRule"  no name:: paragraph
   McshTchInf000039:11056  "02_input of Owlzlago"  the-main-name Owlzarcho is NOT in this name::
 
 === INH-REFBROKEN (11) — a-text-reference name!@File#id whose file or id does NOT exist
-  McshCor000003:6005  "!@McshCor000003#idOverivew"  no #idOverivew in McshCor000003
-  McshCor000003:716  "!@McshCor000008#idWhlprtrltn1"  no #idWhlprtrltn1 in McshCor000008
+  McshCor000003:6007  "!@McshCor000003#idOverivew"  no #idOverivew in McshCor000003
+  McshCor000003:718  "!@McshCor000008#idWhlprtrltn1"  no #idWhlprtrltn1 in McshCor000008
   McshHlth000011:9609  "!@McshHlth000011#idDssHmn127flu.1918"  no #idDssHmn127flu.1918 in McshHlth000011
   McshLag000005:234  "!@McshStn000007#idSoctOgmsatt009"  no #idSoctOgmsatt009 in McshStn000007
   McshStn000019:953  "!@McshStn000009#idSocHumn026"  no #idSocHumn026 in McshStn000009
@@ -2507,8 +2395,8 @@ SUMMARY
 
 === INH-LOCAL (130) — an-attribute in 3+ specifics, not in the-generic: lift it up?
   structure of organ@McshHlth000002  ×33  McshHlth000002:2017 McshHlth000002:2281 McshHlth000002:2417 McshHlth000002:2645 McshHlth000002:2788 McshHlth000002:3135 McshHlth000002:3277 McshHlth000002:3423 …
-  info-resource of Hmmdlago@McshLag000007  ×32  McshLag000007:32442 McshLag000007:33191 McshLag000010:5871 McshLag000012:4973 McshLag000018:17574 McshLag000020:12811 McshLag000027:7207 McshLag000028:1412 …
-  evoluting of Hmmdlago@McshLag000007  ×31  McshLag000007:32487 McshLag000010:6107 McshLag000012:5252 McshLag000018:17804 McshLag000018:18301 McshLag000018:19124 McshLag000020:12989 McshLag000027:7952 …
+  info-resource of Hmmdlago@McshLag000007  ×32  McshLag000007:32446 McshLag000007:33195 McshLag000010:5871 McshLag000012:4973 McshLag000018:17574 McshLag000020:12811 McshLag000027:7207 McshLag000028:1412 …
+  evoluting of Hmmdlago@McshLag000007  ×31  McshLag000007:32491 McshLag000010:6107 McshLag000012:5252 McshLag000018:17804 McshLag000018:18301 McshLag000018:19124 McshLag000020:12989 McshLag000027:7952 …
   info-resource of AgntBkcn@McshTchInf000016  ×29  McshTchInf000016:4394 McshTchInf000016:6213 McshTchInf000016:6492 McshTchInf000016:7479 McshTchInf000016:8383 McshTchInf000016:8505 McshTchInf000016:8719 McshTchInf000016:9076 …
   doing of organ@McshHlth000002  ×27  McshHlth000002:2033 McshHlth000002:2662 McshHlth000002:2758 McshHlth000002:3626 McshHlth000002:3706 McshHlth000002:7255 McshHlth000002:8267 McshHlth000002:8798 …
   doing of SystMolsOgsm@McshOgm000005  ×26  McshOgm000005:1434 McshOgm000005:1823 McshOgm000005:1885 McshOgm000005:1935 McshOgm000005:1992 McshOgm000005:2038 McshOgm000005:2083 McshOgm000005:2138 …
@@ -2602,7 +2490,7 @@ SUMMARY
   protection of organ@McshHlth000002  ×3  McshHlth000002:2562 McshHlth000002:7520 McshHlth000002:10191
   time of foodCooked@McshHlth000013  ×3  McshHlth000013:8476 McshHlth000013:8602 McshHlth000013:11376
   evoluting of therapy@McshHlth000016  ×3  McshHlth000016:924 McshHlth000016:1560 McshHlth000018:137
-  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:338 McshLag000007:31421 McshTchInf000005:574
+  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:338 McshLag000007:31425 McshTchInf000005:574
   senso-mind-relation of Hmmdsemucnpt@McshLag000007  ×3  McshLag000007:2140 McshLag000007:14848 McshLag000007:15118
   stress of word@McshLag000007  ×3  McshLag000009:4170 McshLag000010:2170 McshLag000012:1577
   semu-concept of HmmdviewSemu@McshLag000007  ×3  McshLag000010:5901 McshLag000012:5004 McshLag000018:17182

@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-18-0.2026-11-19: INH-TITLEHAND: a-link-stub "NN_x of M (link)" without name:: is OK',
     'inheritMcsh.mjs.0-17-0.2026-11-18: the-marker X\'NN_last is NOT an-attr-key (04_argument of bodyNo matched entity\'01_attribute by "last")',
     'inheritMcsh.mjs.0-16-0.2026-11-18: INH-LAST --fix keeps a-right X\'NN_last line (also X\'NN_last!⇒M), deletes the-old ones',
     'inheritMcsh.mjs.0-15-0.2026-11-17: INH-OWNNUM --fix-num shifts ALL own numbers of the-specific (order kept); a-shift follows down',
@@ -840,6 +841,8 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
       const sSect = oFile.sText.slice(oNode.nStart, oNode.nEnd);
       const nSub = sSect.indexOf('<section', 1);
       const aPara = (nSub > 0 ? sSect.slice(0, nSub) : sSect).match(rNamePara);
+      // a-link-stub "06_subject of M (link)": its names are at the-link's target, NOT here
+      if (!aPara && oNode.bLinkStub) continue;
       if (!aPara) { aoHand.push({ oNode, sWhy: 'no name:: paragraph' }); continue; }
       const sParaOld = aPara[0];
       let sPara = sParaOld;
