@@ -62,6 +62,7 @@
  *             (Humn1959Sinagu) | "HumnB" + year for BCE (HumnB0384Arst), or is missing
  *  MvrwMain10_attribute a-direct part-section of a-concept with main-name M is not
  *             "x of M" + name "M'x" or "M.x" + name "M.x" (specific)
+ *             or "M//x" "M/x" "M;;x" "M;x" | "x//M" "x/M" "x;;M" "x;M" + the-same name (tree titles)
  *  MvrwMain11_line the-main-mind-name is on the-FIRST line of name::, "M," alone, or
  *             "D!⇒M," first and "M!=D," second (D the-descriptive-name)
  *
@@ -87,6 +88,10 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-79-0.2026-11-19: MvrwMain10 a-new name is written "x (N)" (dropped like every "(…)"); "|" is "or" | content, NOT a-new name',
+    'structuralMcsh.js.0-78-0.2026-11-19: MvrwMain10 title "x|N" (N the-new name): the-whole title is tried, then "x"',
+    'structuralMcsh.js.0-77-0.2026-11-19: MvrwMain10 tree titles with M at either end: x//M (x part of whole M), x/M, x;;M, x;M',
+    'structuralMcsh.js.0-76-0.2026-11-19: MvrwMain10 accepts tree titles M//x (whole), M/x (part), M;;x (parent), M;x (child) + the-same name; drops a-"|mmn" tail',
     'structuralMcsh.js.0-75-0.2026-11-19: MvrwMain10 drops a-"!={…}" of the-title whole ("millennium.3000!={2001..3000} of Enttevolg")',
     'structuralMcsh.js.0-74-0.2026-11-16: rule codes with their name (MvrwId13_suffix_srtr), aCodeMcsh, fCodeFull',
     'structuralMcsh.js.0-73-0.2026-11-16: MvrwId01 id_char (only A-Z a-z 0-9 _, ids and links), MvrwId03 removed',
@@ -1020,13 +1025,20 @@ function fCheckMainNameHuman(aoCnptFile) {
 // 🔶 [MvrwMain10_attribute] attribute: a-direct part-section of a-concept with main-name M is
 //   a) an-attribute: title "x of M" (NN_x of M), name "McshEngl.M'x," (- → _), both formal-names;
 //      (whether x starts with a-small letter is NOT checked: an-open issue, {2026-11-12});
-//   b) an-attribute-specific: title "M.x", name "McshEngl.M.x,".
+//   b) an-attribute-specific: title "M.x", name "McshEngl.M.x,";
+//   c) a-tree title with M at either end: "M//x" | "x//M" (x part of whole M), "M/x" | "x/M",
+//      "M;;x" | "x;;M" (x child of parent M), "M;x" | "x;M"; the-name is the-title (McshEngl.x//M,);
+//      a-"|mmn" tail of the-title is dropped ("whole//the_most_whole|sympan").
 //   Title and name are compared without "NN_", "(…)" and "{…}". NOT trees (…TREE…), links, clsText,
 //   UPPERCASE grouping titles (MISC-ATTRIBUTE of M). Example: "protocol of AgntRppl" + AgntRppl'protocol.
 //   The-file-concept is checked too: its direct parts are the-top sections, not idOverview, idMeta, idSupport;
 //   its issues say "of file-concept".
 // "millennium.3000!={2001..3000}": the-"!={…}" (an-equality note) goes whole, NOT only its {…}
 const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/!=\{[^}]*\}/g, '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+// a-tree title after M: "//x" whole, "/x" part, ";;x" parent, ";x" child
+const rTreeTitleMvrwMain10 = /^(\/\/|\/|;;|;)[^\s\/;]/;
+// a-tree title before M: "x//" (x part of whole M), "x/", "x;;" (x child of parent M), "x;"
+const rTreeTitleEndMvrwMain10 = /[^\s\/;](\/\/|\/|;;|;)$/;
 const fFormalMvrwMain10 = sIn => sIn.replace(/-+/g, '_').replace(/\s+/g, '_');
 function fCheckAttribute(aoCnptFile) {
   const aoIssue = [];
@@ -1046,11 +1058,14 @@ function fCheckAttribute(aoCnptFile) {
     for (const oCnpt of aoWhole) {
       const sM = oCnpt.sNameMainFrml;
       for (const oChild of oMapChild.get(oCnpt.sNameId) ?? []) {
-        const sTitle = fNormMvrwMain10(oChild.sNameTitle);
-        if (!sTitle || rTitleTree.test(sTitle) || rSectLink.test(oChild.sNameTitle ?? '') || /^[^a-z]*ATTRIBUTE\b/.test(sTitle)) continue;
-        if (/^char\./.test(sTitle)) continue;   // a-Unicode char section "char.&#xA48C; 42124 U+A48C …" (dirUcd)
+        const sTitleAll = fNormMvrwMain10(oChild.sNameTitle);
+        if (!sTitleAll || rTitleTree.test(sTitleAll) || rSectLink.test(oChild.sNameTitle ?? '') || /^[^a-z]*ATTRIBUTE\b/.test(sTitleAll)) continue;
+        if (/^char\./.test(sTitleAll)) continue;   // a-Unicode char section "char.&#xA48C; 42124 U+A48C …" (dirUcd)
         // the-names are compared like the-title: without "(…)" and "{…}"
         const aName = (oChild.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => fNormMvrwMain10(String(oName.sName ?? '')));
+        // a-new name N is written "x (N)" ("whole//the_most_whole (sympan)", "20_output (algo) of Prgmlago"):
+        // fNormMvrwMain10 drops every "(…)", so the-title is "x"; a-"|" is "or" | content
+        const fProblem = sTitle => {
         const aProblem = [];
         let mT;
         if ((mT = /^(?:\d+_)?(.+?) of (\S+)$/.exec(sTitle))) {
@@ -1061,9 +1076,18 @@ function fCheckAttribute(aoCnptFile) {
         } else if (sTitle.startsWith(sM + '.')) {
           const sForm = fFormalMvrwMain10(sTitle);
           if (!aName.some(sN => sN === sForm || sN.replace(/\.\d+_/g, '.') === sForm.replace(/\.\d+_/g, '.'))) aProblem.push(`no name "McshEngl.${sForm}"`);
+        } else if ((sTitle.startsWith(sM) && rTreeTitleMvrwMain10.test(sTitle.slice(sM.length)))
+            || (sTitle.endsWith(sM) && rTreeTitleEndMvrwMain10.test(sTitle.slice(0, -sM.length)))) {
+          // a-tree title with M at either end: "M//x" | "x//M" (x part of whole M), "M/x" | "x/M",
+          // "M;;x" | "x;;M" (x child of parent M), "M;x" | "x;M"
+          const sForm = fFormalMvrwMain10(sTitle);
+          if (!aName.includes(sForm)) aProblem.push(`no name "McshEngl.${sForm}"`);
         } else {
-          aProblem.push(`title is not "x of ${sM}" (attribute) or "${sM}.x" (specific)`);
+          aProblem.push(`title is not "x of ${sM}" (attribute), "${sM}.x" (specific), or "${sM}//x" "${sM}/x" "${sM};;x" "${sM};x" (whole, part, parent, child)`);
         }
+        return aProblem;
+        };
+        const sTitle = sTitleAll, aProblem = fProblem(sTitle);
         if (!aProblem.length) continue;
         aoIssue.push(fIssue('WARN', 'MvrwMain10_attribute', oCnptFile.sNameFile, oChild,
           `attribute: "${sTitle}" (${oChild.sNameId}) of ${oCnpt.bFile ? 'file-concept ' : ''}"${sM}": ${aProblem.join('; ')}`,

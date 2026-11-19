@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-19-0.2026-11-19: a-title "x (N) of M" (N a-new name) is the-attribute "x of M"',
     'inheritMcsh.mjs.0-18-0.2026-11-19: INH-TITLEHAND: a-link-stub "NN_x of M (link)" without name:: is OK',
     'inheritMcsh.mjs.0-17-0.2026-11-18: the-marker X\'NN_last is NOT an-attr-key (04_argument of bodyNo matched entity\'01_attribute by "last")',
     'inheritMcsh.mjs.0-16-0.2026-11-18: INH-LAST --fix keeps a-right X\'NN_last line (also X\'NN_last!⇒M), deletes the-old ones',
@@ -74,6 +75,8 @@ const
   sDirScript = moPath.dirname(fileURLToPath(import.meta.url)),
   // an-attribute-title: "02_cause of DssInfectious"
   rTitleAttr = /^(?:(\d{2})_)?(.+?) of (\S.*)$/,
+  // a-new name N in a-title "x (N) of M": the-attribute is "x of M" (" (" + a-letter; "03_doctype_(1|2_letters)" is NOT one)
+  rNewNameTitle = /\s+\([A-Za-zͰ-Ͽ][^\s()]*\)/g,
   // a-heading of a-section, first in its own html
   rHeading = /<h([1-6])\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/,
   // a-paragraph with its id
@@ -187,7 +190,7 @@ function fReadFile(sPathIn) {
       } else aoParaOther.push(sBody);
     }
 
-    const aAttr = sTitle.match(rTitleAttr);
+    const aAttr = sTitle.replace(rNewNameTitle, "").match(rTitleAttr);
     const { aName, sMain, bMainTarget } = fReadNameEngl(ooPara.name ?? '');
     const bTree = /^[A-Z-]*TREE\b/.test(sTitle);
     const oNode = {
@@ -605,7 +608,7 @@ function fChainReport(aoFileIn, oResultIn, sChainIn, sNameDirIn, sUrlBaseIn) {
   const fUrl = oN => sUrlBaseIn + moPath.relative(sNameDirIn, ooFile[oN.sNameShort].sPath).replace(/\\/g, '/') + '#' + oN.sId;
   // the-title-name X'NN_word of an-attribute "NN_word of X"
   const fTitleName = oA => {
-    const aT = oA.sTitle.match(rTitleAttr);
+    const aT = oA.sTitle.replace(rNewNameTitle, "").match(rTitleAttr);
     return `${fFormalMvrwName01(aT[3].trim())}'${oA.sNum ? oA.sNum + '_' : ''}${fFormalMvrwName01(aT[2].trim())}`;
   };
   const fName = oN => oN.sMain || oN.sTitle;
@@ -828,7 +831,7 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
   for (const oFile of aoFileIn) {
     for (const oNode of oFile.aoNode) {
       if (!oNode.bAttr || !oNode.sNum || !fInFileIn(oNode)) continue;
-      const aTitle = oNode.sTitle.match(rTitleAttr);
+      const aTitle = oNode.sTitle.replace(rNewNameTitle, "").match(rTitleAttr);
       const sOf = aTitle[3].trim(), sWord = aTitle[2].trim();
       if (!/^[^\s,!<>~()'"]+$/.test(sWord) || !/^[^\s,!<>~()'"]+$/.test(sOf)) {
         aoHand.push({ oNode, sWhy: 'the-title is NOT a-name' }); continue;

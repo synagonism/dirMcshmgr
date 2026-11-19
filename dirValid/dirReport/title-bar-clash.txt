@@ -1,0 +1,206 @@
+titles with "|" (x|N: N the new name of the attribute) and the rules that read titles — 2026-11-19
+DONE 2026-11-19: a-new name is now written "x (N)" (not "|N" or "||N"); 8 titles changed (McshCor000003, McshCor000008, McshStn000030, McshTchInf000006, McshTchInf000039); inheritMcsh reads "x (N) of M" as "x of M"
+
+=== CLASH: inheritMcsh (MvrwGstr03) takes the whole "x|N" as the attribute word (9)
+  McshLag000024:346  inherited_attr: own attribute "nounEnglB1_f|fe_ves of wordSetEngl" has no number: it gets 16_, AFTER the-last number 13_ of its inherited-attr-chain (word'13_science@McshLag000007#idLHmmdwrdsci) (inheritMcsh --fix)
+  McshTchInf000006:139  inherited_attr: "input|archetype of Prgmlago" is an-inherited attribute of RltnMapping'08_input@McshCor000005#idRlnMpgarch: number it 08_
+  McshStnlaw000003:809  inherited_attr: the-title of "03_doctype_(1|2_letters) of Celex_nbr" is NOT its descriptive-name: the-title is NOT a-name
+  McshStnlaw000003:763  inherited_attr: the-title of "01_sector_(1_digit|letter) of Celex_nbr" is NOT its descriptive-name: the-title is NOT a-name
+  McshLag000009:975  inherited_attr: the-title of "12_04-05-06) closed-mid-opened|vertical of HmmdphnmVowl" is NOT its descriptive-name: the-title is NOT a-name
+  McshLag000009:948  inherited_attr: the-title of "11_01-02-03) front-central-back|horizontal-1-2-3 of HmmdphnmVowl" is NOT its descriptive-name: the-title is NOT a-name
+  McshTchInf000021:414  inherited_attr: own attribute "NET|bandwidth-resource of AgntEosz" has no number: it gets 33_, AFTER the-last number 30_ of its inherited-attr-chain (AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat) (inheritMcsh --fix)
+  McshTchInf000029:692  inherited_attr: own attribute "document|output of Jnldlago" has no number: it gets 36_, AFTER the-last number 34_ of its inherited-attr-chain (Cmprlago'34_organization@McshTchInf000005#idLCmprozn) (inheritMcsh --fix)
+  McshTchInf000029:675  inherited_attr: own attribute "archetype|input of Jnldlago" has no number: it gets 35_, AFTER the-last number 34_ of its inherited-attr-chain (Cmprlago'34_organization@McshTchInf000005#idLCmprozn) (inheritMcsh --fix)
+
+=== CLASH: MvrwMain08 lists "x|N" sections as concepts without Mmn (N not read as the main-name) (4)
+  McshTchInf000017:2832  mmn_attr: concept "Btcnprgm.Bitcoin_Core_(btcbcr|btcbqt)" has 8 attribute-section(s) ("Bitcoin_bcr.EVOLUTING", "Bitcoin_bcr'application_directory", "Bitcoin_bcr'bitcoin.conf", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000017:2373  mmn_attr: concept "BIP_ of Btcnproto(Bitcoin-Improvement-Proposals | btcbip)" has 1 attribute-section(s) ("Bitcoin_bip'Attribute") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000006:146  mmn_attr: concept "input|archetype of Prgmlago" has 2 attribute-section(s) ("code of archetype", "domain of archetype") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000030:553  mmn_attr: concept "Εαψι|Nada of govgr" has 2 attribute-section(s) ("ψηφιακός-πολίτης στην Εαψι", "μαθήματα στην Εαψι") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+
+=== TITLES: N is the main-name (3)
+  McshCor000008:428 "whole//the_most_whole|sympan" N=sympan mmn=sympan
+  McshCor000008:658 "whole.without_part_relations|collection" N=collection mmn=collection
+  McshStn000030:542 "Εαψι|Nada of govgr" N=Nada mmn=Nada
+=== TITLES: N is a name, not the main-name (3)
+  McshCor000003:1228 "timepoint|state of Enttevolg" N=state mmn=Enttstate
+  McshTchInf000006:223 "20_output|algo of Prgmlago" N=algo mmn=Pgmlalgo
+  McshTchInf000039:8512 "03_output|ontology of lagoOntg" N=ontology mmn=kbOnto
+=== TITLES: N is not a name ("|" means "or", or is content) (176)
+  McshCor000002:233 "Mcsattr.Specsdiv.internal|external" N=external mmn=-
+  McshCor000002:4501 "Mcsmgr.FolioViews_{1992..today|2025}" N= mmn=FvMcsmgr
+  McshCor000002:5674 "McsHtml.Sfi|HtmlMgr {2010}" N=HtmlMgr mmn=McsSfi
+  McshCor000003:1273 "timeinterval|stage of Enttevolg" N=stage mmn=Enttstage
+  McshCor000005:2876 "RltnCausality.condition|hypothetic" N=hypothetic mmn=-
+  McshCor000005:3003 "RltnCausality.goal|intend" N=intend mmn=RltnGoal
+  McshCor000008:653 "whole.with_part_relations|system (" N=system mmn=-
+  McshCor000013:2177 "FctgBrainingBio.feeling (sensing|emoting)" N= mmn=-
+  McshCor000018:1604 "evaluation.similarity|difference" N=difference mmn=degree
+  McshEdu000005:1542 "argument|parameter of Mathfn" N=parameter mmn=-
+  McshHlth000002:15261 "Hbstage.intrauterine_life_(0 to 40-weeks|9-months)" N= mmn=-
+  McshHmn000005:991 "Arstproduct.on-psyche|Ψυχολογικά [402a..435b]" N=Ψυχολογικά mmn=-
+  McshHmn000005:1008 "Arstproduct.on-bio|Βιολογικά [486a..778a]" N=Βιολογικά mmn=-
+  McshHmn000005:1025 "Arstproduct.on-metaphysics|Μεταφυσικά [974a..1093a]" N=Μεταφυσικά mmn=-
+  McshHmn000005:1042 "Arstproduct.on-ethics|Ηθικά [1094a..1249b]" N=Ηθικά mmn=-
+  McshHmn000005:1057 "Arstproduct.on_politics|Πολιτικά" N=Πολιτικά mmn=-
+  McshHmn000005:1073 "Arstproduct.politics|Πολιτικά [1252a..1342b]" N=Πολιτικά mmn=-
+  McshHmn000005:1102 "Arstproduct.retorics|Ρητορικά [1354a-1420a]" N=Ρητορικά mmn=-
+  McshHmn000005:1117 "Arstproduct.technical|Τεχνικά" N=Τεχνικά mmn=-
+  McshHmn000005:1135 "Arstproduct.problem|Προβλήματα" N=Προβλήματα mmn=-
+  McshHmn000005:1150 "Arstproduct.mail|Επιστολαί" N=Επιστολαί mmn=-
+  McshHmn000005:1165 "Arstproduct.poem|Ποιήματα" N=Ποιήματα mmn=-
+  McshHmn000005:1180 "Arstproduct.fragment|Αποσπάσματα" N=Αποσπάσματα mmn=-
+  McshHmn000005:1195 "Arstproduct.spurious|πλαστό" N=πλαστό mmn=-
+  McshHmn000005:1224 "Arstproduct.disputed|αμφισβητούμενο" N=αμφισβητούμενο mmn=-
+  McshLag000005:110 "14_input|infoview of Ogsmlago" N=infoview mmn=-
+  McshLag000005:125 "15_output|logoview of Ogsmlago" N=logoview mmn=-
+  McshLag000006:1909 "plane.00|x00 (BMP) (0|x000000..65535|x00ffff)" N=x00 mmn=-
+  McshLag000006:1927 "plane.01|x01 (SMP) (65536|010000..131,071|01ffff)" N=x01 mmn=-
+  McshLag000006:1943 "plane.02|x02 (SIP) (131,072|020000..196,607|02ffff)" N=x02 mmn=-
+  McshLag000006:1965 "plane.03|x03 (196,608|030000..262,143|03ffff)" N=x03 mmn=-
+  McshLag000006:1976 "plane.04|x04 (262,144|040000..327,679|04ffff)" N=x04 mmn=-
+  McshLag000006:1987 "plane.05|x05 (327,680|050000..393,215|05ffff)" N=x05 mmn=-
+  McshLag000006:1998 "plane.06|x06 (393,216|060000..458,751|06ffff)" N=x06 mmn=-
+  McshLag000006:2009 "plane.07|x07 (458,752|070000..524,287|07ffff)" N=x07 mmn=-
+  McshLag000006:2020 "plane.08|x08 (524,288|080000..589,823|08ffff)" N=x08 mmn=-
+  McshLag000006:2031 "plane.09|x0e (589,824|090000..655,359|09ffff)" N=x0e mmn=-
+  McshLag000006:2042 "plane.10|x0a (655,360|0a0000..720,895|0affff)" N=x0a mmn=-
+  McshLag000006:2053 "plane.11|x0b (720,896|0b0000..786,431|0bffff)" N=x0b mmn=-
+  McshLag000006:2064 "plane.12|x0c (786,432|0c0000..851,967|0cffff)" N=x0c mmn=-
+  McshLag000006:2075 "plane.13|x0d (851,968|0d0000..917,503|0dffff)" N=x0d mmn=-
+  McshLag000006:2086 "plane.14|x0e (SSP) (917,504|0e0000..983,039|0effff)" N=x0e mmn=-
+  McshLag000006:2103 "plane.15|x0f (983,040|0f0000..1,048,575|0fffff)" N=x0f mmn=-
+  McshLag000006:2115 "plane.16|x10 (1,048,576|100000..1,114,111|10ffff)" N=x10 mmn=-
+  McshLag000007:18334 "part1|onset of HmmdSylb" N=onset mmn=-
+  McshLag000007:18350 "part2|nucleus of HmmdSylb" N=nucleus mmn=-
+  McshLag000007:18367 "part3|coda of HmmdSylb" N=coda mmn=-
+  McshLag000007:20809 "Hmmdname.phrasal|compound_021" N=compound_021 mmn=-
+  McshLag000007:20838 "Hmmdname.phrasalNo|compoundNo_022" N=compoundNo_022 mmn=-
+  McshLag000007:25284 "Hmmdverb.modal|auxiliary" N=auxiliary mmn=-
+  McshLag000009:949 "11_01-02-03) front-central-back|horizontal-1-2-3 of HmmdphnmVowl" N=horizontal-1-2-3 mmn=-
+  McshLag000009:976 "12_04-05-06) closed-mid-opened|vertical of HmmdphnmVowl" N=vertical mmn=-
+  McshLag000009:3177 "HmmdphnmCons./y/_[j|γ]" N= mmn=-
+  McshLag000010:1094 "SnguphnmCons./y/_[ɣ|j]" N= mmn=-
+  McshLag000011:6775 "Englnoun.B1_f|fe;ves" N=fe;ves mmn=nounEnglB1
+  McshLag000012:949 "EspophnmCons./y/_[j]_j|ǔ" N= mmn=-
+  McshLag000012:1250 "Espoletr.13_j_/yyo|i/" N=i/ mmn=-
+  McshLag000013:221 "format.short|link" N=link mmn=-
+  McshLag000014:382 "irBook.{1867|1887}.Marx.Capital-00002 (" N= mmn=-
+  McshLag000018:1231 "ZhonphnmVowl./i8/_⟨ü|u⟩" N=u⟩ mmn=-
+  McshLag000018:6519 "Zhonradi.阜|阝_fù_208_mound" N=阝_fù_208_mound mmn=mound
+  McshLag000018:12423 "Zhonvbmbauxi.jiāng_将!=will|shall" N=shall mmn=Zhonvbmbauxi.jiāng_将
+  McshLag000018:14636 "Zhonconj.pángbiān_旁边!=beside|next_to" N=next_to mmn=Zhonconj.pángbiān_旁边
+  McshLag000018:14656 "Zhonconj.qián_前!=in_front_of|before" N=before mmn=Zhonconj.qián_前
+  McshLag000018:14676 "Zhonconj.què_却!=but|however" N=however mmn=Zhonconj.què_却
+  McshLag000018:14695 "Zhonconj.ránér_然而!=but|however" N=however mmn=Zhonconj.ránér_然而
+  McshLag000018:14734 "Zhonconj.shàng_上!=on|upon|in(abstract)" N=upon|in mmn=Zhonconj.shàng_上
+  McshLag000018:14894 "Zhonconj.xià_下!=under|below|under(circumstances)" N=below|under mmn=Zhonconj.xià_下
+  McshLag000018:14914 "Zhonconj.xiàng_向!=toward|to" N=to mmn=Zhonconj.xiàng_向
+  McshLag000018:14952 "Zhonconj.yǐhòu_以后!=behind|after" N=after mmn=Zhonconj.yǐhòu_以后
+  McshLag000018:20547 "pinyin.r/r/[ɻ|ʐ]" N= mmn=-
+  McshLag000018:20576 "pinyin.y/yy/[j|ɥ]" N= mmn=-
+  McshLag000018:20894 "Zhonfinal.iou|iu" N=iu mmn=-
+  McshLag000018:20973 "Zhonfinal.uei|ui" N=ui mmn=-
+  McshLag000020:2049 "gender.masculine|feminine of Ellnnoun" N=feminine mmn=-
+  McshLag000020:2984 "αρσ-ας-παρ-μήν-ας-α|ός-ες-ών" N=ός-ες-ών mmn=-
+  McshLag000020:3024 "αρσ-ας-παρ-αμφορ-έας-α|έως-είς-έων" N=έως-είς-έων mmn=-
+  McshLag000020:3210 "αρσ-ας-παρ-αέρ-ας-α-ες|ηδες-ων|ηδων" N=ηδες-ων|ηδων mmn=-
+  McshLag000020:3249 "αρσ-ας-παρ-πατ-έρας-έρα|ρός-έρα|ερ-εράδες|έρες-εράδων|έρων" N=ρός-έρα|ερ-εράδες|έρες-εράδων|έρων mmn=-
+  McshLag000020:3289 "αρσ-ας-παρ-Γρίβ-ας-α-ηδες|αίοι-ηδων|αίων-ηδες|αίους" N=αίοι-ηδων|αίων-ηδες|αίους mmn=-
+  McshLag000020:3507 "αρσ-ας-προ-τσέλιγκ-ας-α-ες|άδες-άδων" N=άδες-άδων mmn=-
+  McshLag000020:3825 "αρσ-ης-οξυ-Περικλ-ής-ή|έους-ή-είς|ήδες-έων|ήδων" N=έους-ή-είς|ήδες-έων|ήδων mmn=-
+  McshLag000020:3877 "αρσ-ης-οξυ-πραματευτ-ής-ή-ές|άδες-ών|άδων" N=άδες-ών|άδων mmn=-
+  McshLag000020:3924 "αρσ-ης-οξυ-καθηγητ-ής-ή|ού-ή|ά-ές|άδες-ών|άδων" N=ού-ή|ά-ές|άδες-ών|άδων mmn=-
+  McshLag000020:3963 "αρσ-ης-οξυ-Σαρρ-ής-ή-ήδες|αίοι-ήδων|αίων-ήδες|αίους" N=αίοι-ήδων|αίων-ήδες|αίους mmn=-
+  McshLag000020:4126 "αρσ-ης-παρ-λαχειοπώλ-ης-η-ες|ηδες-ών|ηδων" N=ηδες-ών|ηδων mmn=-
+  McshLag000020:4170 "αρσ-ης-παρ-ράφτ-ης-η-ες|ηδες|άδες-ών|ηδων|άδων" N=ηδες|άδες-ών|ηδων|άδων mmn=-
+  McshLag000020:4212 "αρσ-ης-παρ-νοικοκύρ-ης-η-ηδες|αίοι-ηδων|αίων-ηδες|αίους" N=αίοι-ηδων|αίων-ηδες|αίους mmn=-
+  McshLag000020:4256 "αρσ-ης-παρ-τσοπάν-ης-η-ηδες|αραίοι-ηδων|αραίων-ηδες|αραίους" N=αραίοι-ηδων|αραίων-ηδες|αραίους mmn=-
+  McshLag000020:4345 "αρσ_ης_προ_πρύταν_ης_η|'εως_η_'εις_'εων" N='εως_η_'εις_'εων mmn=-
+  McshLag000020:4386 "αρσ_ις_προ_ρίψασπ_ις_'ιδος_ι|ιν_'ιδες_ίδων|'ιδων" N=ιν_'ιδες_ίδων|'ιδων mmn=-
+  McshLag000020:4617 "αρσ-ος-παρ-μούτσ-ος-ου-ο-ε|ο-οι-ων-ους" N=ο-οι-ων-ους mmn=-
+  McshLag000020:4698 "αρσ-ος-παρ-Σαρακατσάν-ος-ου-ο-ε-οι|αίοι|ηδες-ων|αίων|ηδων-ους|αίους|ηδες" N=αίοι|ηδες-ων|αίων|ηδων-ους|αίους|ηδες mmn=-
+  McshLag000020:4737 "αρσ-ος-παρ-καπετάν-ιος-ιου-ιο-ιε-ιοι|αίων-ιων|αίων-ιους|αίους" N=αίων-ιων|αίων-ιους|αίους mmn=-
+  McshLag000020:4932 "αρσ_ος_προ_όροφ_ος_'ου|ου_ο_ε_οι_'ων_ους" N=ου_ο_ε_οι_'ων_ους mmn=-
+  McshLag000020:4985 "αρσ_ος_προ_δάσκαλ_ος_'ου|ου_ο_ε_οι_'ων_'ους|ους" N=ου_ο_ε_οι_'ων_'ους|ους mmn=-
+  McshLag000020:5042 "αρσ_ος_προ_καρδινάλι_ος_ου|'ου_ο_ε_οι_ων|'ων_ους|'ους" N='ου_ο_ε_οι_ων|'ων_ους|'ους mmn=-
+  McshLag000020:5103 "αρσ_ος_προ_Παπαδόπουλ_ος_ου|'ου_ο_ε_οι|αίοι_ων|αίων_ους|αίους" N='ου_ο_ε_οι|αίοι_ων|αίων_ους|αίους mmn=-
+  McshLag000020:5189 "αρσ-ους-οξυ-ν-ους-ου|οός-ου-όες-όων" N=οός-ου-όες-όων mmn=-
+  McshLag000020:5427 "θηλ-α-οξυ-γιαγι-ά-άς-ές|άδες-άδων" N=άδες-άδων mmn=-
+  McshLag000020:5972 "θηλ-η-οξυ-αδερφ-ή-ής-ές|άδες-ών|άδων" N=άδες-ών|άδων mmn=-
+  McshLag000020:6218 "θηλ-η-παρ-λύσ-η-ης|εως-εις-εων" N=εως-εις-εων mmn=-
+  McshLag000020:6278 "θηλ-η-παρ-νύφ-η-ης-ες|άδες-άδων" N=άδες-άδων mmn=-
+  McshLag000020:6408 "θηλ_η_προ_διανοούμεν_η_ης_ες_ων|'ων" N='ων mmn=-
+  McshLag000020:6451 "θηλ_η_προ_δύναμ_η_ης|'εως_'εις_'εων" N='εως_'εις_'εων mmn=-
+  McshLag000020:6572 "θηλ-ις-παρ-συνεργάτ-ις-ιδος|ιδας-ιδα-ι-ιδες-ίδων|ιδων" N=ιδας-ιδα-ι-ιδες-ίδων|ιδων mmn=-
+  McshLag000020:6679 "θηλ-ος-παρ-διχοτόμ-ος-ου-ο-ε|ο-οι-ων-ους" N=ο-οι-ων-ους mmn=-
+  McshLag000020:6829 "θηλ_ος_προ_ήπειρ_ος_'ου_ο_ε|ο_οι_'ων_'ους" N=ο_οι_'ων_'ους mmn=-
+  McshLag000020:6876 "θηλ_ος_προ_διάμετρ_ος_'ου_ο_ε|ο_οι|ες_'ων_'ους|ες" N=ο_οι|ες_'ων_'ους|ες mmn=-
+  McshLag000020:6927 "θηλ_ος_προ_πανσέλην_ος_ου|'ου_ο_ε|ο_οι_ων|'ων_ους|'ους" N='ου_ο_ε|ο_οι_ων|'ων_ους|'ους mmn=-
+  McshLag000020:7662 "ουδ-ι-παρ-καράτ-ι-ιού|ίου-ια-ιών|ίων" N=ίου-ια-ιών|ίων mmn=-
+  McshLag000020:8119 "ουδ_ο_προ_πρόσωπ_ο_'ου|ου_α_'ων" N=ου_α_'ων mmn=-
+  McshLag000020:8180 "ουδ_ο_προ_βούτυρ_ο_ου|'ου_α_ων|'ων" N='ου_α_ων|'ων mmn=-
+  McshLag000020:10315 "Ellnconj.αντί|αντίς" N=αντίς mmn=-
+  McshLag000020:10346 "Ellnconj.από|απ" N=απ mmn=-
+  McshLag000020:10473 "Ellnconj.για|γι" N=γι mmn=-
+  McshLag000020:10990 "Ellnconj.ίσαμε|ισαμ" N=ισαμ mmn=-
+  McshLag000020:11053 "Ellnconj.και|κι" N=κι mmn=-
+  McshLag000020:11118 "Ellnconj.κατά|κατ" N=κατ mmn=-
+  McshLag000020:11213 "Ellnconj.με|μ" N=μ mmn=-
+  McshLag000020:11309 "Ellnconj.μη|μην" N=μην mmn=-
+  McshLag000020:11927 "Ellnconj.σε|σ" N=σ mmn=-
+  McshLag000022:15 "wordary|nameary-of-Ancient-Greek" N=nameary-of-Ancient-Greek mmn=-
+  McshLag000023:15 "wordary|nameary-of--Standard-Chinese" N=nameary-of--Standard-Chinese mmn=-
+  McshLag000023:502 "Zhon_particle.嗎_mā|ma_(21966)" N=ma_ mmn=-
+  McshLag000023:581 "Zhon_particle.的_dè|de_(30340)" N=de_ mmn=-
+  McshLag000024:15 "wordary|nameary-of-English-language" N=nameary-of-English-language mmn=-
+  McshLag000024:347 "nounEnglB1_f|fe_ves of wordSetEngl" N=fe_ves mmn=-
+  McshLag000025:15 "wordary|nameary-of-Greek-language" N=nameary-of-Greek-language mmn=-
+  McshLag000027:387 "EllaphnmVowl./aai/_⟨ΑΙ|ᾳ⟩" N=ᾳ⟩ mmn=-
+  McshLag000027:452 "EllaphnmVowl./eei/_⟨ΗΙ|ῃ⟩" N=ῃ⟩ mmn=-
+  McshLag000027:582 "EllaphnmVowl./ooi/_⟨ΩΙ|ῳ⟩" N=ῳ⟩ mmn=-
+  McshLag000027:881 "EllaphnmCons./dz|zd/_⟨Ζ⟩" N=zd/_⟨Ζ⟩ mmn=-
+  McshLag000027:2016 "αρσ-ῆς-ληγ-Ερμ-ῆς|έας-οῦ|έου-ῇ|έᾳ-ῆν|έαν-ῆ|έα-αῖ|έαι-ῶν|εῶν-αῖς|έαις-ᾶς|έας-ᾶ|έα-αῖν|έαιν" N=έας-οῦ|έου-ῇ|έᾳ-ῆν|έαν-ῆ|έα-αῖ|έαι-ῶν|εῶν-αῖς|έαις-ᾶς|έας-ᾶ|έα-αῖν|έαιν mmn=-
+  McshLag000033:665 "DeutphnmVowl./ee/_/eː|ɛː/ipa" N=ɛː/ipa mmn=-
+  McshStn000010:2588 "sfrProperty.owner.all|commons" N=commons mmn=-
+  McshStn000016:347 "OgznIntl.OECD_{1948|1961}" N= mmn=OgznOecd
+  McshStn000030:603 "IAPR|Ααδε of GrcaAdmn" N=Ααδε mmn=IAPR
+  McshStn000030:691 "tax-office|ΔΟΥ of IAPR|Ααδε" N=ΔΟΥ mmn=Grcato
+  McshStn000030:730 "income-tax-report|φορολογική-δήλωση of IAPR" N=φορολογική-δήλωση mmn=-
+  McshStn000031:11244 "hard|soft-sleeper (硬卧 | 软卧) of Chna_train" N=soft-sleeper mmn=Chna_train_hard|soft_sleeper
+  McshStn000034:935 "VnmaphnmVowl./i/_⟨i|y⟩_[i]" N=y⟩_ mmn=-
+  McshStn000034:1013 "VnmaphnmVowl./ia5/_⟨ia|iê⟩_[iə̯]" N=iê⟩_ mmn=-
+  McshStn000034:1026 "VnmaphnmVowl./ua5/_⟨ua|uô⟩_[uə̯]" N=uô⟩_ mmn=-
+  McshStn000034:1039 "VnmaphnmVowl./u7a5/_⟨ưa|ươ⟩_[ɯə̯]" N=ươ⟩_ mmn=-
+  McshStn000034:1287 "VnmaphnmCons./k/_⟨C|K|Q]_[k]" N=K|Q]_ mmn=-
+  McshStn000034:1335 "VnmaphnmCons./ng/_⟨NG|NGH⟩_[ŋ]" N=NGH⟩_ mmn=-
+  McshStn000034:1431 "VnmaphnmCons./z/_⟨D|GI|R⟩_[z]" N=GI|R⟩_ mmn=-
+  McshStn000034:1443 "VnmaphnmCons./y/_⟨G|GH⟩_[ɣ]" N=GH⟩_ mmn=-
+  McshStn000034:2733 "VnmaTone.tilda|perispomeni" N=perispomeni mmn=-
+  McshStn000035:2621 "Itlnvbmb.present_perfect|simple_past" N=simple_past mmn=-
+  McshStn000037:680 "FracphnmVowl./e9/_(e-nasal)_[ẽ|œ̃]" N= mmn=-
+  McshStn000037:1306 "FracphnmCons./y/_[j|w]" N= mmn=-
+  McshStn000044:434 "RomnphnmVowl./i2/_(central)_⟨Â|Î⟩" N= mmn=-
+  McshStn000048:4471 "Jpnsconj.を_o|wo_DirectObject" N=wo_DirectObject mmn=-
+  McshStnlaw000003:764 "01_sector_(1_digit|letter) of Celex_nbr" N= mmn=-
+  McshStnlaw000003:810 "03_doctype_(1|2_letters) of Celex_nbr" N= mmn=-
+  McshStnlaw000003:1662 "EulawTreaty.{1993}_on_European_Union|Maastricht" N= mmn=EulawTeu
+  McshStnlaw000003:1786 "EulawTreaty.{1967}_Merger|Brussels" N= mmn=-
+  McshStnlaw000003:1808 "EulawTreaty.{1958|1993|2009}_on_the_functioning_of_the_EU" N= mmn=EulawTfeu
+  dirUcd/McshUcdU0080:15 "block.U+0080|128..U+00FF|255|&#x00FF; senso-concept-Mcs" N=128..U+00FF|255|&#x00FF; senso-concept-Mcs mmn=-
+  McshTchInf000006:140 "input|archetype of Prgmlago" N=archetype mmn=-
+  McshTchInf000008:3818 "depth|height of Hitparcho" N=height mmn=-
+  McshTchInf000017:2355 "BIP_ of Btcnproto(Bitcoin-Improvement-Proposals | btcbip)" N= mmn=-
+  McshTchInf000017:2813 "Btcnprgm.Bitcoin_Core_(btcbcr|btcbqt)" N= mmn=-
+  McshTchInf000017:4207 "Btcnwallet.ONLINE.NO (cold | offline)" N= mmn=-
+  McshTchInf000017:7277 "Bitcoin-txout'part.PUBKEY|OUTPUT-SCRIPT (" N=OUTPUT-SCRIPT mmn=-
+  McshTchInf000018:1093 "address of Ethraccount(20-byte|160-bit|40-hex+2-0x)" N= mmn=Ethraddress
+  McshTchInf000020:2579 "worker of Chtklaborx (job-seeker | employee)" N= mmn=-
+  McshTchInf000021:415 "NET|bandwidth-resource of AgntEosz" N=bandwidth-resource mmn=-
+  McshTchInf000029:676 "archetype|input of Jnldlago" N=input mmn=-
+  McshTchInf000029:693 "document|output of Jnldlago" N=output mmn=-
+  McshTchInf000030:1432 "opr.|124 of Rustlago" N=124 mmn=-
+  McshTchInf000030:1448 "opr.|=12461 of Rustlago" N==12461 mmn=-
+  McshTchInf000030:1463 "opr.||124124 of Rustlago" N=|124124 mmn=-
+  McshTchInf000039:14992 "Wolfram|Alpha of Wlfmltech" N=Alpha mmn=-
+

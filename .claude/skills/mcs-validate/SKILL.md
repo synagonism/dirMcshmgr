@@ -30,7 +30,7 @@ Mcsh rules (`structuralMcsh.js`, Mcsh* files only):
 | MvrlMmn06 | (warning) main-name of a "structure of X" section is `Xsrtr`, capital first, no apostrophe |
 | MvrlMmn07 | (warning) the Attrbase line `B!Attrbase,` / `B!Attrbase!⇒M,` comes right after `M!=I` (3rd name line), or after `M!@McshXxx` (4th) in a file-concept |
 | MvrwMain09_human | (warning) main-name of a human (`human.Surname.Given[.YYYY]`, `Surname.Given.human`) is `Humn` + birth-year + name (`Humn1959Sinagu`), `HumnB` + year for BCE (`HumnB0384Arst`) |
-| MvrwMain10_attribute | (warning) a direct part-section of a concept with main-name M: attribute title `x of M` + name `M'x`, or specific title `M.x` + name `M.x` |
+| MvrwMain10_attribute | (warning) a direct part-section of a concept with main-name M: attribute title `x of M` + name `M'x`, or specific title `M.x` + name `M.x`, or tree title with M at either end: `M//x` / `x//M` (x part of whole M), `M/x` / `x/M`, `M;;x` / `x;;M` (x child of parent M), `M;x` / `x;M` + the same name (a new name N is written `x (N)` in a title — `whole//the_most_whole (sympan)`, `20_output (algo) of Prgmlago` — and the check drops it like every `(…)`; a `|` is "or" or content) |
 | MvrwName01_formal | (warning) a formal name (`X'Y`, `X.Y`, `X:Y`, `X;Y`, `X;;Y`, `X/Y`, `X//Y`) in a name:: or a formal title has no space and no hyphen: use `_` (`X'a-b` → `X'a_b`); dirUcd is not checked |
 
 Hitp rules (`structuralHitp.js`, every .last.html file):
