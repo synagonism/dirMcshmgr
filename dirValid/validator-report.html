@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Report 08:16:24</title>
+<title>Report 18:04:40</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -21,8 +21,8 @@
 </head>
 <body>
 <h1>Hitp|Mcsh Consistency Report</h1>
-<p>Generated: 11/20/2026, 8:16:24 AM</p>
-<pre class="log">📄 Single-file mode: McshLag000005.last.html
+<p>Generated: 11/20/2026, 6:04:40 PM</p>
+<pre class="log">📄 Single-file mode: McshLag000007.last.html
 🔍 Running Hitp checks...
    Hvre01    Duplicate ids... 0 issues
    Hvre02/Hvre03/Hvre04 Missing ids... 0 issues
@@ -56,7 +56,7 @@
    MvrwId13_suffix_srtr  Ids srtr_structure_suffix... 0 issues
    MvrwGstr01_gnsp_then_spgn gnsp_then_spgn... 0 issues
    MvrwGstr02_spgn_then_gnsp spgn_then_gnsp... 0 issues
-   MvrwGstr03_inherited_attr inherited_attr... 0 issues
+   MvrwGstr03_inherited_attr inherited_attr... 2 issues
    MvrwMain01_Attrbase Main-names Attrbase... 0 issues
    MvrwMain02_evolg Main-names evolg_evoluting... 0 issues
    MvrwMain03_eval Main-names evaln_evaluation, evalg_evaluating... 0 issues
@@ -64,14 +64,14 @@
    MvrwMain05_infrsc Main-names infrsc_info_resource... 0 issues
    MvrwMain06_srtr Main-names srtr_structure... 0 issues
    MvrwMain07_Attrbase_line Main-names attrbase_line... 0 issues
-   MvrwMain08_need Main-names mmn_attr... 0 issues
+   MvrwMain08_need Main-names mmn_attr... 12 issues
    MvrwMain09_human Main-names human_main... 0 issues
-   MvrwMain10_attribute Main-names attribute... 0 issues
+   MvrwMain10_attribute Main-names attribute... 55 issues
    MvrwMain11_line Main-names line... 0 issues
    MvrwName01_formal Names formal... 0 issues</pre>
 <div class="summary">
   <span style="color:#c00">🔴 0 errors</span>
-  <span style="color:#c60">🔶 0 warnings</span>
+  <span style="color:#c60">🔶 69 warnings</span>
   <span style="color:#069">🔵 0 info</span>
 </div>
 <input type="text" id="filter" placeholder="Filter by file or message..." oninput="filterRows(this.value)">
@@ -80,7 +80,489 @@
     <tr><th>Level</th><th>Code</th><th>File:line</th><th>Message</th><th>Concept</th></tr>
   </thead>
   <tbody id="tbody">
-    
+    <tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwGstr03_inherited_attr</td>
+        <td>McshLag000007:15567</td>
+        <td>inherited_attr: "info of Hmmdlogo" is an-inherited attribute of entity'02_expression@McshCor000003#idEntexrn: number it 02_</td>
+        <td></td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwGstr03_inherited_attr</td>
+        <td>McshLag000007:17936</td>
+        <td>inherited_attr: the-title of "38_name-(decoding-unit) of Hmmdlogo" is NOT its descriptive-name: the-title is NOT a-name</td>
+        <td></td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:14117</td>
+        <td>mmn_attr: concept "Hmmdsemuverb.doing" has 4 attribute-section(s) ("HmmdsmvbDong.acting", "HmmdsmvbDong.functing", "HmmdsmvbActg.subject_acton", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdsemuverb.doing</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:2852</td>
+        <td>mmn_attr: concept "Hmmdsmvbatt.past of Hmmdsemuverb" has 1 attribute-section(s) ("future-in-past of VerbCptAttTimePast") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdsmvbatt.past of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:2936</td>
+        <td>mmn_attr: concept "Hmmdsmvbatt.future of Hmmdsemuverb" has 2 attribute-section(s) ("VerbCptAttTimeFuture.near", "VerbCptAttTimeFuture.remote") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdsmvbatt.future of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:16388</td>
+        <td>mmn_attr: concept "Hmmdunit.conceptogram" has 1 attribute-section(s) ("Hmmdcptm.pictogram") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdunit.conceptogram</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:25894</td>
+        <td>mmn_attr: concept "Hmmdconj.coordinating" has 1 attribute-section(s) ("ambiguity of ConjCoordinating") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdconj.coordinating</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:29444</td>
+        <td>mmn_attr: concept "Hmmdsent.semu.many" has 2 attribute-section(s) ("sentencePolysemous.semantic", "sentencePolysemous.syntactic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>Hmmdsent.semu.many</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:17129</td>
+        <td>mmn_attr: concept "12_creating of word" has 1 attribute-section(s) ("GWCreator-applet") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>12_creating of word</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:16915</td>
+        <td>mmn_attr: concept "accent of word" has 2 attribute-section(s) ("accent.dynamic", "accent.tonal") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>accent of word</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:30517</td>
+        <td>mmn_attr: concept "DissLango.speech" has 8 attribute-section(s) ("DissLango.auditory_processing_disorder", "DissLango.apraxia_of_speech", "DissLango.aprosodia", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>DissLango.speech</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:30747</td>
+        <td>mmn_attr: concept "DissLango.aphasia" has 1 attribute-section(s) ("DissLango.anomic_aphasia") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>DissLango.aphasia</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:31782</td>
+        <td>mmn_attr: concept "change of Hmmdevolg" has 1 attribute-section(s) ("info-resource of Hmmdlago'change") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>change of Hmmdevolg</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain08_need</td>
+        <td>McshLag000007:32747</td>
+        <td>mmn_attr: concept "17_medium of text" has 1 attribute-section(s) ("medium.clay_tablet") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"</td>
+        <td>17_medium of text</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:100</td>
+        <td>attribute: "input1 of Hmmdinptview" (idLHmmdipt1) of "Hmmdinptview": no name "McshEngl.Hmmdinptview'input1"</td>
+        <td>input1 (mindview) of Hmmdinptview</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:175</td>
+        <td>attribute: "input2 of Hmmdinptview" (idLHmmdipt2) of "Hmmdinptview": no name "McshEngl.Hmmdinptview'input2"</td>
+        <td>input2 (senso_mindview) of Hmmdinptview</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:247</td>
+        <td>attribute: "input3 of Hmmdinptview" (idLHmmdipt3) of "Hmmdinptview": no name "McshEngl.Hmmdinptview'input3"</td>
+        <td>input3 (semuview) of Hmmdinptview</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:5093</td>
+        <td>attribute: "Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3" (idLHmmdsmsvrbmbr081) of "VerbSmsatom": title is not "x of VerbSmsatom" (attribute), "VerbSmsatom.x" (specific), or "VerbSmsatom//x" "VerbSmsatom/x" "VerbSmsatom;;x" "VerbSmsatom;x" (whole, part, parent, child)</td>
+        <td>Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2845</td>
+        <td>attribute: "Hmmdsmvbatt.past of Hmmdsemuverb" (idLHmmdsmsvrbattTmucPst) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.past"</td>
+        <td>Hmmdsmvbatt.past of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2880</td>
+        <td>attribute: "Hmmdsmvbatt.pastNo of Hmmdsemuverb" (idLHmmdsmsvrbattTmucPstN) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.pastNo"</td>
+        <td>Hmmdsmvbatt.pastNo of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2896</td>
+        <td>attribute: "Hmmdsmvbatt.present of Hmmdsemuverb" (idLHmmdsmsvrbattTmucPrt) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.present"</td>
+        <td>Hmmdsmvbatt.present of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2913</td>
+        <td>attribute: "Hmmdsmvbatt.presentNo of Hmmdsemuverb" (idLHmmdsmsvrbattTmplPrtN) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.presentNo"</td>
+        <td>Hmmdsmvbatt.presentNo of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2929</td>
+        <td>attribute: "Hmmdsmvbatt.future of Hmmdsemuverb" (idLHmmdsmsvrbattTmplFtr) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.future"</td>
+        <td>Hmmdsmvbatt.future of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:2973</td>
+        <td>attribute: "Hmmdsmvbatt.futureΝο of Hmmdsemuverb" (idLHmmdsmsvrbattTmplFtrN) of "VerbSmstense": title ends "of Hmmdsemuverb", not "of VerbSmstense"; no name "McshEngl.VerbSmstense'Hmmdsmvbatt.futureΝο"</td>
+        <td>Hmmdsmvbatt.futureΝο of Hmmdsemuverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:26617</td>
+        <td>attribute: "43_verb-argument of Hmmdsent" (idLHmmdvbat) of "Hmmdlogo": title ends "of Hmmdsent", not "of Hmmdlogo"; no name "McshEngl.Hmmdlogo'verb_argument"</td>
+        <td>43_verb-argument of Hmmdsent</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23606</td>
+        <td>attribute: "form-part of Hmmdvbmb" (idLHmmdverbmbrprtA) of "Hmmdverb": title ends "of Hmmdvbmb", not "of Hmmdverb"; no name "McshEngl.Hmmdverb'form_part"</td>
+        <td>form-part of Hmmdvbmb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:28187</td>
+        <td>attribute: "Hmmdvbat.with-what- of Hmmdlogo" (idLHmmdvbatWithwhat) of "Hmmdvbat": title ends "of Hmmdlogo", not "of Hmmdvbat"; no name "McshEngl.Hmmdvbat'Hmmdvbat.with_what_"</td>
+        <td>Hmmdvbat.with-what-(instrument) of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:17730</td>
+        <td>attribute: "HmmdSylb.start of word" (idLHmmdsylbStrt) of "HmmdSylb": title ends "of word", not "of HmmdSylb"; no name "McshEngl.HmmdSylb'HmmdSylb.start"</td>
+        <td>HmmdSylb.start of word</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:17744</td>
+        <td>attribute: "HmmdSylb.middle of word" (idLHmmdsylbMdl) of "HmmdSylb": title ends "of word", not "of HmmdSylb"; no name "McshEngl.HmmdSylb'HmmdSylb.middle"</td>
+        <td>HmmdSylb.middle of word</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:17758</td>
+        <td>attribute: "HmmdSylb.end of word" (idLHmmdsylbEnd) of "HmmdSylb": title ends "of word", not "of HmmdSylb"; no name "McshEngl.HmmdSylb'HmmdSylb.end"</td>
+        <td>HmmdSylb.end of word</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:19972</td>
+        <td>attribute: "ActgNaming diminutive" (idLHmmdname019nmga) of "diminutive": title is not "x of diminutive" (attribute), "diminutive.x" (specific), or "diminutive//x" "diminutive/x" "diminutive;;x" "diminutive;x" (whole, part, parent, child)</td>
+        <td>ActgNaming diminutive</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:20012</td>
+        <td>attribute: "ActgNaming augmentative" (idLHmmdname020nmga) of "augmentative": title is not "x of augmentative" (attribute), "augmentative.x" (specific), or "augmentative//x" "augmentative/x" "augmentative;;x" "augmentative;x" (whole, part, parent, child)</td>
+        <td>ActgNaming augmentative</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:25658</td>
+        <td>attribute: "adposition.preposition" (idLHmmdConjPrep) of "HmmdconjAdposition": title is not "x of HmmdconjAdposition" (attribute), "HmmdconjAdposition.x" (specific), or "HmmdconjAdposition//x" "HmmdconjAdposition/x" "HmmdconjAdposition;;x" "HmmdconjAdposition;x" (whole, part, parent, child)</td>
+        <td>adposition.preposition</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:25714</td>
+        <td>attribute: "adposition.postposition" (idLHmmdConjPost) of "HmmdconjAdposition": title is not "x of HmmdconjAdposition" (attribute), "HmmdconjAdposition.x" (specific), or "HmmdconjAdposition//x" "HmmdconjAdposition/x" "HmmdconjAdposition;;x" "HmmdconjAdposition;x" (whole, part, parent, child)</td>
+        <td>adposition.postposition</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:25779</td>
+        <td>attribute: "adposition.circuposition" (idLHmmdConjCirc) of "HmmdconjAdposition": title is not "x of HmmdconjAdposition" (attribute), "HmmdconjAdposition.x" (specific), or "HmmdconjAdposition//x" "HmmdconjAdposition/x" "HmmdconjAdposition;;x" "HmmdconjAdposition;x" (whole, part, parent, child)</td>
+        <td>adposition.circuposition</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27145</td>
+        <td>attribute: "Hmmd_sbjt.theme of Hmmdlogo" (idLHmmdsbjtThm) of "VerbargtSbjt": title ends "of Hmmdlogo", not "of VerbargtSbjt"; no name "McshEngl.VerbargtSbjt'Hmmd_sbjt.theme"</td>
+        <td>Hmmd_sbjt.theme of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27163</td>
+        <td>attribute: "Hmmd_sbjt.patient of Hmmdlogo" (idLHmmdsbjtPnt) of "VerbargtSbjt": title ends "of Hmmdlogo", not "of VerbargtSbjt"; no name "McshEngl.VerbargtSbjt'Hmmd_sbjt.patient"</td>
+        <td>Hmmd_sbjt.patient of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27181</td>
+        <td>attribute: "Hmmd_sbjt.subject-complement of Hmmdlogo" (idLHmmdsbjc) of "VerbargtSbjt": title ends "of Hmmdlogo", not "of VerbargtSbjt"; no name "McshEngl.VerbargtSbjt'Hmmd_sbjt.subject_complement"</td>
+        <td>Hmmd_sbjt.subject-complement of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27302</td>
+        <td>attribute: "Hmmd_sbjt.object of Hmmdlogo" (idLHmmdobt) of "VerbargtSbjt": title ends "of Hmmdlogo", not "of VerbargtSbjt"; no name "McshEngl.VerbargtSbjt'Hmmd_sbjt.object"</td>
+        <td>Hmmd_sbjt.object of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27446</td>
+        <td>attribute: "Hmmd_sbjt.indirect-object of Hmmdlogo" (idLHmmdobt2) of "VerbargtSbjt": title ends "of Hmmdlogo", not "of VerbargtSbjt"; no name "McshEngl.VerbargtSbjt'Hmmd_sbjt.indirect_object"</td>
+        <td>Hmmd_sbjt.indirect-object of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:27782</td>
+        <td>attribute: "Hmmdvbat.space-direction of Hmmdlogo" (idLHmmdvbatSdtn) of "HmmdvaSpace": title ends "of Hmmdlogo", not "of HmmdvaSpace"; no name "McshEngl.HmmdvaSpace'Hmmdvbat.space_direction"</td>
+        <td>Hmmdvbat.space-direction of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:29049</td>
+        <td>attribute: "answer" (idLHmmdansr) of "sentenceAsk": title is not "x of sentenceAsk" (attribute), "sentenceAsk.x" (specific), or "sentenceAsk//x" "sentenceAsk/x" "sentenceAsk;;x" "sentenceAsk;x" (whole, part, parent, child)</td>
+        <td>answer</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:18645</td>
+        <td>attribute: "TermWord.specific of Hmmdlogo" (idLHmmdnameTrmwrdstr) of "TermWord": title ends "of Hmmdlogo", not "of TermWord"; no name "McshEngl.TermWord'TermWord.specific"</td>
+        <td>TermWord.specific of Hmmdlogo</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22603</td>
+        <td>attribute: "present.simple of Hmmdverb" (idLHmmdverbmbrPrstPS) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.simple"</td>
+        <td>present.simple of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22636</td>
+        <td>attribute: "present.perfect of Hmmdverb" (idLHmmdverbmbrPrstPP) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.perfect"</td>
+        <td>present.perfect of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22667</td>
+        <td>attribute: "present.simple-passive of Hmmdverb" (idLHmmdverbmbrPrstPSP) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.simple_passive"</td>
+        <td>present.simple-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22699</td>
+        <td>attribute: "present.perfect-passive of Hmmdverb" (idLHmmdverbmbrPrstPPP) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.perfect_passive"</td>
+        <td>present.perfect-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22730</td>
+        <td>attribute: "present.progressive of Hmmdverb" (idLHmmdverbmbrPrstPC) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.progressive"</td>
+        <td>present.progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22762</td>
+        <td>attribute: "present.perfect-progressive of Hmmdverb" (idLHmmdverbmbrPrstPPC) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.perfect_progressive"</td>
+        <td>present.perfect-progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22794</td>
+        <td>attribute: "present.progressive-passive of Hmmdverb" (idLHmmdverbmbrPrstPCP) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.progressive_passive"</td>
+        <td>present.progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22826</td>
+        <td>attribute: "present.perfect-progressive-passive of Hmmdverb" (idLHmmdverbmbrPrstPPCP) of "Hmmdverb_present": title ends "of Hmmdverb", not "of Hmmdverb_present"; no name "McshEngl.Hmmdverb_present'present.perfect_progressive_passive"</td>
+        <td>present.perfect-progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22913</td>
+        <td>attribute: "past.simple of Hmmdverb" (idLHmmdverbmbrPastPS) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.simple"</td>
+        <td>past.simple of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22942</td>
+        <td>attribute: "past.perfect of Hmmdverb" (idLHmmdverbmbrPastPP) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.perfect"</td>
+        <td>past.perfect of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:22975</td>
+        <td>attribute: "past.simple-passive of Hmmdverb" (idLHmmdverbmbrPastPSP) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.simple_passive"</td>
+        <td>past.simple-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23006</td>
+        <td>attribute: "past.perfect-passive of Hmmdverb" (idLHmmdverbmbrPastPPP) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.perfect_passive"</td>
+        <td>past.perfect-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23035</td>
+        <td>attribute: "past.progressive of Hmmdverb" (idLHmmdverbmbrPastPC) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.progressive"</td>
+        <td>past.progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23063</td>
+        <td>attribute: "past.perfect-progressive of Hmmdverb" (idLHmmdverbmbrPastPPC) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.perfect_progressive"</td>
+        <td>past.perfect-progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23093</td>
+        <td>attribute: "past.progressive-passive of Hmmdverb" (idLHmmdverbmbrPastPCP) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.progressive_passive"</td>
+        <td>past.progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23123</td>
+        <td>attribute: "past.perfect-progressive-passive of Hmmdverb" (idLHmmdverbmbrPastPPCP) of "VerbmebrPast": title ends "of Hmmdverb", not "of VerbmebrPast"; no name "McshEngl.VerbmebrPast'past.perfect_progressive_passive"</td>
+        <td>past.perfect-progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23205</td>
+        <td>attribute: "future.simple of Hmmdverb" (idLHmmdverbmbrFutrFS) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.simple"</td>
+        <td>future.simple of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23234</td>
+        <td>attribute: "future.perfect of Hmmdverb" (idLHmmdverbmbrFutrFP) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.perfect"</td>
+        <td>future.perfect of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23261</td>
+        <td>attribute: "future.simple-passive of Hmmdverb" (idLHmmdverbmbrFutrFSP) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.simple_passive"</td>
+        <td>future.simple-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23292</td>
+        <td>attribute: "future.perfect-passive of Hmmdverb" (idLHmmdverbmbrFutrFPP) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.perfect_passive"</td>
+        <td>future.perfect-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23321</td>
+        <td>attribute: "future.progressive of Hmmdverb" (idLHmmdverbmbrFutrFC) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.progressive"</td>
+        <td>future.progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23347</td>
+        <td>attribute: "future.perfect-progressive of Hmmdverb" (idLHmmdverbmbrFutrFPC) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.perfect_progressive"</td>
+        <td>future.perfect-progressive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23377</td>
+        <td>attribute: "future.progressive-passive of Hmmdverb" (idLHmmdverbmbrFutrFCP) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.progressive_passive"</td>
+        <td>future.progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:23406</td>
+        <td>attribute: "future.perfect-progressive-passive of Hmmdverb" (idLHmmdverbmbrFutrFPCP) of "VerbmebrFuture": title ends "of Hmmdverb", not "of VerbmebrFuture"; no name "McshEngl.VerbmebrFuture'future.perfect_progressive_passive"</td>
+        <td>future.perfect-progressive-passive of Hmmdverb</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:31073</td>
+        <td>attribute: "knower.native" (idLHmmdknwrNtv) of "Hmmdhumn": title is not "x of Hmmdhumn" (attribute), "Hmmdhumn.x" (specific), or "Hmmdhumn//x" "Hmmdhumn/x" "Hmmdhumn;;x" "Hmmdhumn;x" (whole, part, parent, child)</td>
+        <td>knower.native</td>
+      </tr>
+<tr class="wrn">
+        <td>🔶WARN</td>
+        <td>MvrwMain10_attribute</td>
+        <td>McshLag000007:31094</td>
+        <td>attribute: "knower.nativeNo" (idLHmmdknwrNtvN) of "Hmmdhumn": title is not "x of Hmmdhumn" (attribute), "Hmmdhumn.x" (specific), or "Hmmdhumn//x" "Hmmdhumn/x" "Hmmdhumn;;x" "Hmmdhumn;x" (whole, part, parent, child)</td>
+        <td>knower.nativeNo</td>
+      </tr>
   </tbody>
 </table>
 <script>

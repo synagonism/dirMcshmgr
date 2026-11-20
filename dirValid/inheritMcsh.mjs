@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-22-0.2026-11-20: MISC-ATTRIBUTE (or MISC) of X and the-attributes inside it get NO number (like evoluting): no NONUM, OWNNONUM, OWNNUM, no shift',
     'inheritMcsh.mjs.0-21-3.2026-11-20: fFindInheritAttr reads the-WHOLE worldview (the-dir with dirNamidx), also when validate-file gives a-sub-dir',
     'inheritMcsh.mjs.0-21-2.2026-11-19: a-link-stub whose target is NOT read (or broken: Hvre06) is skipped, NOT a-TITLEHAND',
     'inheritMcsh.mjs.0-21-1.2026-11-19: --fix-stub: ONLY the-names at the-link-targets of link-stubs',
@@ -80,6 +81,10 @@ const
   sDirScript = moPath.dirname(fileURLToPath(import.meta.url)),
   // an-attribute-title: "02_cause of DssInfectious"
   rTitleAttr = /^(?:(\d{2})_)?(.+?) of (\S.*)$/,
+  // the-attributes that get NO number: the-end-sections and MISC-ATTRIBUTE
+  rAttrNoNum = /^(info[-_ ]?resource|doing|evoluting|misc([-_ ]?attribute)?)$/i,
+  // the-sections whose attributes inside get NO number either
+  rAttrNoNumInside = /^(evoluting|misc([-_ ]?attribute)?)$/i,
   // a-new name N in a-title "x (N) of M": the-attribute is "x of M" (" (" + a-letter; "03_doctype_(1|2_letters)" is NOT one)
   rNewNameTitle = /\s+\([A-Za-zͰ-Ͽ][^\s()]*\)/g,
   // a-heading of a-section, first in its own html
@@ -447,10 +452,11 @@ function fCheck(aoFileIn, nLocalMinIn) {
   const oCountRefine = {};  // sKeyGenAttr → { label, nCount }
   let nSpecific = 0, nAttrSpec = 0, nMatch = 0;
 
-  // a-node inside an-"evoluting of X" section (itself included): its attributes are NOT numbered
+  // a-node inside an-"evoluting of X" or "MISC-ATTRIBUTE of X" section (itself included):
+  //   its attributes are NOT numbered
   function fInEvoluting(oNodeIn) {
     for (let oN = oNodeIn, nI = 0; oN && nI < 30; oN = oN.oWholeNode, nI++) {
-      if (oN.bAttr && /^evoluting$/i.test(oN.sAttrWord.trim())) return true;
+      if (oN.bAttr && rAttrNoNumInside.test(oN.sAttrWord.trim())) return true;
     }
     return false;
   }
@@ -483,6 +489,8 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const aoOwnNum = [], aoOwnNumIssue = [];
     for (const oAttr of oNode.aoChild) {
       if (!oAttr.bAttr || oAttr.bTree) continue;
+      // MISC-ATTRIBUTE: the-place of the-attributes that get NO number, itself too
+      if (/^misc([-_ ]?attribute)?$/i.test(oAttr.sAttrWord.trim())) continue;
       nAttrSpec++;
       const oMatch = fMatchAttr(oAttr, aoSpace);
       if (!oMatch) {
@@ -495,7 +503,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
         }
         // an-own attribute without number gets the-next number AFTER the-chain and the-own numbers;
         //   NOT the-standard end-sections info-resource, DOING, evoluting
-        if (!/^(info[-_ ]?resource|doing|evoluting)$/i.test(oAttr.sAttrWord.trim())) {
+        if (!rAttrNoNum.test(oAttr.sAttrWord.trim())) {
           const sNumNew = String(++nNumOwnNext).padStart(2, '0');
           ooIssue['INH-OWNNONUM'].push({ oAttr, sNumNew, sNumLast: String(nNumLast).padStart(2, '0'),
             sLabel: oSpaceLast ? fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) : '' });
@@ -666,7 +674,7 @@ function fChainReport(aoFileIn, oResultIn, sChainIn, sNameDirIn, sUrlBaseIn) {
       for (const oA of aoAttr.filter(oA => !oA.sNum)) {
         const sOver = fKeyNear(oA);
         if (sOver) aOut.push(`  ?? [${fTitleName(oA)}](${fUrl(oA)})  inherits ${sOver}: its number`);
-        else if (/^(info[-_ ]?resource|doing|evoluting)$/i.test(oA.sAttrWord.trim()))
+        else if (rAttrNoNum.test(oA.sAttrWord.trim()))
           aOut.push(`  .. [${fTitleName(oA)}](${fUrl(oA)})`);
         else aOut.push(`  ?? [${fTitleName(oA)}](${fUrl(oA)})  → ${String(++nNext).padStart(2, '0')}_`);
       }

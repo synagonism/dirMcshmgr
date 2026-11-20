@@ -1,30 +1,169 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — dry run: C:/dirNodews/dirMcsh (file McshLag000005)
+  INHERITANCE SYNC — APPLIED: C:\dirNodews\dirMcsh (file McshLag000007)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29876 sections · 5341 specifics under a-numbered generic · 4291 of their attributes · 1199 match a-numbered generic-attribute
+  258 files · 29876 sections · 5348 specifics under a-numbered generic · 4275 of their attributes · 1234 match a-numbered generic-attribute
+  titles changed: 121
+  name:: paragraphs changed: 76
+  NN_last names changed: 16
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
-  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-NONUM         1  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
   INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
   INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
-  INH-EMPTY         0  an-inherited attribute that says nothing new (no info, no link): delete?
+  INH-EMPTY         5  an-inherited attribute that says nothing new (no info, no link): delete?
   INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL         1  an-attribute in 3+ specifics, not in the-generic: lift it up?
-  INH-REFBROKEN     1  a-text-reference name!@File#id whose file or id does NOT exist
+  INH-LOCAL         4  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
   INH-GNTRTEXT      0  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
   INH-TITLENAME     0  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  INH-TITLEHAND     1  a-numbered attribute whose title-name needs a-hand
+  INH-TITLEHAND     8  a-numbered attribute whose title-name needs a-hand
 
-=== INH-NONUM (0) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+=== ORDER-FIXED (5) — attribute-sections moved into NN order
+  McshLag000007:15499  "05_output (logoview) of Hmmdlago"  35 19 06 36 09 37 38 39 40 41 42 43 44 45 46 47 48 49 50 → 06 09 19 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+  McshLag000007:14236  "39_Semuconj of HmmdviewSemu"  22 21 03 → 03 21 22
+  McshLag000007:2072  "38_Semuverb of HmmdviewSemu"  01 19 23 22 21 03 29 → 01 03 19 21 22 23 29
+  McshLag000007:243  "input3 (semuview) of Hmmdinfoview"  35 19 36 37 38 39 40 41 42 43 44 45 46 → 19 35 36 37 38 39 40 41 42 43 44 45 46
+  McshLag000009:156  "35_output of Spchlago"  19 06 09 38 45 47 49 → 06 09 19 38 45 47 49
+
+=== APPLIED (121) — NN_ written into the-h-title
+  McshHmn000002:3135  "39_qualification of human"  → 44_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:3110  "38_body of human"  → 43_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:2539  "37_identification of human"  → 42_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:2363  "36_personality of human"  → 41_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:789  "35_socialitation of human"  → 40_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:744  "34_physical_appearance of human"  → 39_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:637  "33_place of human"  → 38_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:346  "32_product of human"  → 37_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:341  "31_job of human"  → 36_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:177  "25_satisfier of human"  → 30_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshHmn000002:172  "18_managing_system of human"  → 23_  ← Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+  McshLag000007:33483  "organization of Glbllago"  → 12_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:33299  "relation-to-Hmmdlago of Dlctlago"  → 12_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:32886  "syllabogram of Sylblago"  → 12_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:32886  "12_syllabogram of Sylblago"  → 14_  ← Textlago'13_writing@McshLag000007#idLTextwrtg
+  McshLag000007:32764  "writing of Textlago"  → 13_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:32718  "reading of Textlago"  → 12_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:32420  "Language-Creation-Society of Cnrdlago"  → 12_  ← Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
+  McshLag000007:30698  "language-learning of Hmmdhumn"  → 05_  ← entity'02_expression@McshCor000003#idEntexrn
+  McshLag000007:30227  "language-disorder of Hmmdhumn"  → 04_  ← entity'02_expression@McshCor000003#idEntexrn
+  McshLag000007:30222  "language-brain-center of Hmmdhumn"  → 03_  ← entity'02_expression@McshCor000003#idEntexrn
+  McshLag000007:29937  "semu-view-relation of Hmmdlogo"  → 34_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29937  "34_semu-view-relation of Hmmdlogo"  → 50_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29912  "root-node of Hmmdlogo"  → 33_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29912  "33_root-node of Hmmdlogo"  → 49_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29826  "figure-of-speech of Hmmdlogo"  → 32_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29826  "32_figure-of-speech of Hmmdlogo"  → 48_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29761  "title-sentence-system (section) of Hmmdlogo"  → 31_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29761  "31_title-sentence-system (section) of Hmmdlogo"  → 47_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29658  "titless-sentence-system of Hmmdlogo"  → 30_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:29658  "30_titless-sentence-system of Hmmdlogo"  → 46_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:28291  "sentence of Hmmdlogo"  → 29_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:28291  "29_sentence of Hmmdlogo"  → 45_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:28265  "conjunction-phrase of Hmmdlogo"  → 28_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:28265  "28_conjunction-phrase of Hmmdlogo"  → 44_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:26577  "verb-argument of Hmmdsent"  → 27_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:26577  "27_verb-argument of Hmmdsent"  → 43_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:26308  "argu-phrase of Hmmdlogo"  → 26_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:26308  "26_argu-phrase of Hmmdlogo"  → 42_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:24525  "Conj-name of Hmmdlogo"  → 25_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:24525  "25_Conj-name of Hmmdlogo"  → 41_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:21929  "verb-name of Hmmdlogo"  → 24_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:21929  "24_verb-name of Hmmdlogo"  → 40_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:20038  "argu-name of Hmmdlogo"  → 23_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:20038  "23_argu-name of Hmmdlogo"  → 39_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:17900  "name-(decoding-unit) of Hmmdlogo"  → 22_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:17900  "22_name-(decoding-unit) of Hmmdlogo"  → 38_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:16567  "unit-system of Hmmdlogo"  → 21_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:16567  "21_unit-system of Hmmdlogo"  → 37_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15954  "context of Hmmdlogo"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15954  "20_context of Hmmdlogo"  → 36_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15780  "03_syntax-tree of Hmmdlogo"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15766  "codomain of Hmmdlogo"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15766  "19_codomain of Hmmdlogo"  → 35_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15583  "denotation of Hmmdexpn"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15562  "denoting-relation of Hmmdexpn"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15453  "relation-to-logo of HmmdviewSemu"  → 30_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15453  "30_relation-to-logo of HmmdviewSemu"  → 46_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15436  "relation-to--senso-mind of HmmdviewSemu"  → 29_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15436  "29_relation-to--senso-mind of HmmdviewSemu"  → 45_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15411  "semu-root of HmmdviewSemu"  → 28_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15411  "28_semu-root of HmmdviewSemu"  → 44_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15328  "semu-sentence--system of HmmdviewSemu"  → 27_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15328  "27_semu-sentence--system of HmmdviewSemu"  → 43_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15242  "semu-sentence of HmmdviewSemu"  → 26_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:15242  "26_semu-sentence of HmmdviewSemu"  → 42_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14749  "Semuverb-argument of HmmdviewSemu"  → 25_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14749  "25_Semuverb-argument of HmmdviewSemu"  → 41_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14727  "Semuargu-system of HmmdviewSemu"  → 24_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14727  "24_Semuargu-system of HmmdviewSemu"  → 40_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14298  "senso-mind-relation of Hmmdsemuconj"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14298  "20_senso-mind-relation of Hmmdsemuconj"  → 21_  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+  McshLag000007:14284  "19_logo-relation of Hmmdsemuconj"  → 22_  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:14236  "Semuconj of HmmdviewSemu"  → 23_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14236  "23_Semuconj of HmmdviewSemu"  → 39_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14045  "WHOLE of Hmmdsemuverb"  → 25_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14045  "25_WHOLE of Hmmdsemuverb"  → 29_  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:14028  "senso-mind-relation of Hmmdsemuverb"  → 24_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:14028  "24_senso-mind-relation of Hmmdsemuverb"  → 21_  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+  McshLag000007:14001  "19_valence of Hmmdsemuverb"  → 23_  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:3569  "member of Hmmdsemuverb"  → 23_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:3569  "23_member of Hmmdsemuverb"  → 19_  ← Hmmdsemucnpt'19_member@McshLag000007#idLHmmdsmscptmbr
+  McshLag000007:2072  "Semuverb of HmmdviewSemu"  → 22_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:2072  "22_Semuverb of HmmdviewSemu"  → 38_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:1337  "logo-relation of Hmmdsemuargu"  → 21_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:1337  "21_logo-relation of Hmmdsemuargu"  → 22_  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:1324  "senso-mind-relation of Hmmdsemuargu"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:1324  "20_senso-mind-relation of Hmmdsemuargu"  → 21_  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+  McshLag000007:1130  "member of Hmmdsemuargu"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:792  "Semuargu of HmmdviewSemu"  → 21_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:792  "21_Semuargu of HmmdviewSemu"  → 37_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:638  "relation-to-logo of Hmmdsemucnpt"  → 22_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:621  "relation-to-senso-mind of Hmmdsemucnpt"  → 21_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:603  "relation-to--mind-concept of Hmmdsemucnpt"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:585  "member of Hmmdsemucnpt"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:425  "semu-concept of HmmdviewSemu"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:425  "20_semu-concept of HmmdviewSemu"  → 36_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:338  "03_syntax-tree of HmmdviewSemu"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:299  "info of HmmdviewSemu"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:299  "19_info of HmmdviewSemu"  → 35_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:226  "senso_mind-semu-relation of HmmdviewMindSenso"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:213  "info of HmmdviewMindSenso"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:158  "domain of HmmdviewMind"  → 20_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000007:141  "mind-info of HmmdviewMind"  → 19_  ← model'18_mapping_unit@McshCor000012#idMdlatt007
+  McshLag000008:167  "03_syntax-tree of AlfaviewText"  → 19_  ← Hmmdlogo'19_syntax-tree@McshLag000007#idLHmmdsxtr
+  McshLag000009:4342  "42_input3-(semu-view) of Spchlago"  → 45_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000009:4337  "40_input1-(mind-view) of Spchlago"  → 43_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000009:218  "03_syntax-tree of speech"  → 19_  ← Hmmdlogo'19_syntax-tree@McshLag000007#idLHmmdsxtr
+  McshLag000009:156  "32_output of Spchlago"  → 35_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000009:151  "20_science of Spchlago"  → 23_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000030:8078  "32_input2_(senso_mind_view) of Turklago"  → 35_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000030:7977  "30_input3_(semu_view) of Turklago"  → 33_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000030:7972  "28_input1_(mind_view) of Turklago"  → 31_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000030:69  "20_output (logo-view) of Turklago"  → 23_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000031:136  "42_relation-to-speech-language of Gstrlago"  → 45_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000031:101  "41_output (view-logo) of Gstrlago"  → 44_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000031:71  "20_human of Gstrlago"  → 23_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000043:3457  "30_input3-(semu-view) of Koralago"  → 33_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000043:3437  "28_input1-(mind-view) of Koralago"  → 31_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshLag000043:239  "20_output (logo-view) of Koralago"  → 23_  ← Hmmdsemuconj'22_logo-relation@McshLag000007#idLHmmdsmscnjlgrn
+  McshStn000020:201  "37_identification of HumnElln"  → 42_  ← human'42_identification@McshHmn000002#idHmnatt010
+
+=== INH-NONUM (1) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  McshLag000007:15566  "expression of Hmmdlogo"  → 02_ ✗ own numbering of the-specific: by hand  ← entity'02_expression@McshCor000003#idEntexrn
 
 === INH-WRONGNUM (0) — its NN_ differs from the-generic-attribute (own numbering? by hand)
 
-=== INH-EMPTY (0) — an-inherited attribute that says nothing new (no info, no link): delete?
+=== INH-EMPTY (5) — an-inherited attribute that says nothing new (no info, no link): delete?
+  McshLag000007:14333  "22_logo-relation of Hmmdsemuconj"  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:14319  "21_senso-mind-relation of Hmmdsemuconj"  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+  McshLag000007:14035  "22_logo-relation of Hmmdsemuverb"  ← Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+  McshLag000007:14022  "21_senso-mind-relation of Hmmdsemuverb"  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+  McshLag000007:1336  "21_senso-mind-relation of Hmmdsemuargu"  ← Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
 
 === INH-OWNNUM (0) — an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
 
@@ -36,74 +175,159 @@ SUMMARY
 
 === INH-GNTRTEXT (0) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
 
-=== INH-TITLENAME (0) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+=== TITLENAME-APPLIED (76) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
+  McshHmn000002:3135  "44_qualification of human"  renamed human'39_qualification → human'44_qualification
+  McshHmn000002:3110  "43_body of human"  renamed human'38_body → human'43_body (link target)
+  McshHmn000002:2539  "42_identification of human"  renamed human'37_identification → human'42_identification
+  McshHmn000002:2363  "41_personality of human"  renamed human'36_personality → human'41_personality
+  McshHmn000002:789  "40_socialitation of human"  renamed human'35_socialitation → human'40_socialitation
+  McshHmn000002:744  "39_physical_appearance of human"  renamed human'34_physical_appearance → human'39_physical_appearance
+  McshHmn000002:637  "38_place of human"  renamed human'33_place → human'38_place
+  McshHmn000002:346  "37_product of human"  renamed human'32_product → human'37_product
+  McshHmn000002:341  "36_job of human"  renamed human'31_job → human'36_job (link target)
+  McshHmn000002:177  "30_satisfier of human"  renamed human'25_satisfier → human'30_satisfier
+  McshHmn000002:172  "23_managing_system of human"  renamed human'18_managing_system → human'23_managing_system (link target)
+  McshLag000007:33484  "12_organization of Glbllago"  added Glbllago'12_organization
+  McshLag000007:33300  "12_relation-to-Hmmdlago of Dlctlago"  added Dlctlago'12_relation_to_Hmmdlago!⇒Dlctlago_relation_to_Hmnmlago; Dlctlago_relation_to_Hmnmlago !=Dlctlago'12_relation_to_Hmmdlago
+  McshLag000007:32887  "14_syllabogram of Sylblago"  added Sylblago'14_syllabogram!⇒Hmmdslbm; Hmmdslbm !=Sylblago'14_syllabogram (was !=syllabogram); Sylblago'14_syllabogram, Hmmdslbm moved first
+  McshLag000007:32765  "13_writing of Textlago"  added Textlago'13_writing!⇒ActgWriting; ActgWriting !=Textlago'13_writing
+  McshLag000007:32719  "12_reading of Textlago"  added Textlago'12_reading!⇒FctgReading; FctgReading !=Textlago'12_reading
+  McshLag000007:32421  "12_Language-Creation-Society of Cnrdlago"  added Cnrdlago'12_Language_Creation_Society!⇒LCS; LCS !=Cnrdlago'12_Language_Creation_Society (was !=Language-Creation-Society); Cnrdlago'12_Language_Creation_Society, LCS moved first
+  McshLag000007:30699  "05_language-learning of Hmmdhumn"  added Hmmdhumn'05_language_learning!⇒Hmmdlago_acquisition; Hmmdlago_acquisition !=Hmmdhumn'05_language_learning
+  McshLag000007:30228  "04_language-disorder of Hmmdhumn"  added Hmmdhumn'04_language_disorder!⇒DissLango; DissLango !=Hmmdhumn'04_language_disorder
+  McshLag000007:29937  "50_semu-view-relation of Hmmdlogo"  added Hmmdlogo'50_semu_view_relation!⇒RltnLogoSemo; RltnLogoSemo !=Hmmdlogo'50_semu_view_relation
+  McshLag000007:29912  "49_root-node of Hmmdlogo"  added Hmmdlogo'49_root_node!⇒rootHmnm; rootHmnm !=Hmmdlogo'49_root_node
+  McshLag000007:29826  "48_figure-of-speech of Hmmdlogo"  added Hmmdlogo'48_figure_of_speech!⇒Hmmd_figu; Hmmd_figu !=Hmmdlogo'48_figure_of_speech (was !=figure-of-speech); Hmmdlogo'48_figure_of_speech, Hmmd_figu moved first
+  McshLag000007:29761  "47_title-sentence-system (section) of Hmmdlogo"  added Hmmdlogo'47_title_sentence_system!⇒Hmmdsect; Hmmdsect !=Hmmdlogo'47_title_sentence_system; added Hmmdlogo'title_sentence_system!⇒Hmmdsect; Hmmdlogo'47_title_sentence_system, Hmmdsect moved first
+  McshLag000007:29658  "46_titless-sentence-system of Hmmdlogo"  added Hmmdlogo'46_titless_sentence_system!⇒HmmdsectNo; HmmdsectNo !=Hmmdlogo'46_titless_sentence_system
+  McshLag000007:28291  "45_sentence of Hmmdlogo"  added Hmmdlogo'45_sentence!⇒Hmmdsent; Hmmdsent !=Hmmdlogo'45_sentence (was !=human-mind-language--sentence); Hmmdlogo'45_sentence, Hmmdsent moved first
+  McshLag000007:28265  "44_conjunction-phrase of Hmmdlogo"  added Hmmdlogo'44_conjunction_phrase!⇒Hmmdcjphrs; Hmmdcjphrs !=Hmmdlogo'44_conjunction_phrase (was !=conjunction-phrase-of-Hmmdlogo); Hmmdlogo'44_conjunction_phrase, Hmmdcjphrs moved first
+  McshLag000007:26577  "43_verb-argument of Hmmdsent"  added Hmmdsent'43_verb_argument!⇒Hmmdvbat; Hmmdvbat !=Hmmdsent'43_verb_argument (was !=verb-argument); Hmmdsent'43_verb_argument, Hmmdvbat moved first
+  McshLag000007:26308  "42_argu-phrase of Hmmdlogo"  added Hmmdlogo'42_argu_phrase!⇒Hmmdagphrs; Hmmdagphrs !=Hmmdlogo'42_argu_phrase (was !=argu-phrase); Hmmdlogo'42_argu_phrase, Hmmdagphrs moved first
+  McshLag000007:24525  "41_Conj-name of Hmmdlogo"  added Hmmdlogo'41_Conj_name!⇒Hmmdconj; Hmmdconj !=Hmmdlogo'41_Conj_name (was !=human-mind-language--conjunction); Hmmdlogo'41_Conj_name, Hmmdconj moved first
+  McshLag000007:21929  "40_verb-name of Hmmdlogo"  added Hmmdlogo'40_verb_name!⇒Hmmdverb; Hmmdverb !=Hmmdlogo'40_verb_name (was !=human-mind-language--verb); Hmmdlogo'40_verb_name, Hmmdverb moved first
+  McshLag000007:20038  "39_argu-name of Hmmdlogo"  added Hmmdlogo'39_argu_name!⇒Hmmdargu; Hmmdargu !=Hmmdlogo'39_argu_name (was !=human-mind-language--argu); Hmmdlogo'39_argu_name, Hmmdargu moved first
+  McshLag000007:16567  "37_unit-system of Hmmdlogo"  added Hmmdlogo'37_unit_system!⇒Hmmdunitsyst; Hmmdunitsyst !=Hmmdlogo'37_unit_system (was !=logo-unit-system--of-Hmmdlago); Hmmdlogo'37_unit_system, Hmmdunitsyst moved first
+  McshLag000007:16541  "36_context of Hmmdlogo"  added Hmmdlogo'36_context!⇒context; context !=Hmmdlogo'36_context (was !=context//lagnHmnm); Hmmdlogo'36_context, context moved first
+  McshLag000007:16527  "35_codomain of Hmmdlogo"  added Hmmdlogo'35_codomain
+  McshLag000007:16411  "19_syntax-tree of Hmmdlogo"  renamed Hmmdlogo'03_syntax_tree → Hmmdlogo'19_syntax_tree
+  McshLag000007:15583  "20_denotation of Hmmdexpn"  added Hmmdexpn'20_denotation
+  McshLag000007:15562  "19_denoting-relation of Hmmdexpn"  added Hmmdexpn'19_denoting_relation!⇒decoding_relation_of_expression__of_Hmnmlago; decoding_relation_of_expression__of_Hmnmlago !=Hmmdexpn'19_denoting_relation
+  McshLag000007:15453  "46_relation-to-logo of HmmdviewSemu"  added HmmdviewSemu'46_relation_to_logo!⇒encoding_relation__of_Hmnm_semu_view; encoding_relation__of_Hmnm_semu_view !=HmmdviewSemu'46_relation_to_logo
+  McshLag000007:15436  "45_relation-to--senso-mind of HmmdviewSemu"  added HmmdviewSemu'45_relation_to__senso_mind
+  McshLag000007:15411  "44_semu-root of HmmdviewSemu"  added HmmdviewSemu'44_semu_root!⇒semo_root; semo_root !=HmmdviewSemu'44_semu_root (was !=root-of-semu-view); HmmdviewSemu'44_semu_root, semo_root moved first
+  McshLag000007:15328  "43_semu-sentence--system of HmmdviewSemu"  added HmmdviewSemu'43_semu_sentence__system!⇒semo_sent_syst; semo_sent_syst !=HmmdviewSemu'43_semu_sentence__system
+  McshLag000007:15242  "42_semu-sentence of HmmdviewSemu"  added HmmdviewSemu'42_semu_sentence!⇒Hmmdsemusent; Hmmdsemusent !=HmmdviewSemu'42_semu_sentence (was !=semu-sentence--of-Hmmdlago); HmmdviewSemu'42_semu_sentence, Hmmdsemusent moved first
+  McshLag000007:14749  "41_Semuverb-argument of HmmdviewSemu"  added HmmdviewSemu'41_Semuverb_argument!⇒Hmmdsmvbargt; Hmmdsmvbargt !=HmmdviewSemu'41_Semuverb_argument (was !=semu-verb-argument--of-Hmmdlago); HmmdviewSemu'41_Semuverb_argument, Hmmdsmvbargt moved first
+  McshLag000007:14727  "40_Semuargu-system of HmmdviewSemu"  added HmmdviewSemu'40_Semuargu_system!⇒Hmmdsemuargusyst; Hmmdsemuargusyst !=HmmdviewSemu'40_Semuargu_system (was !=semu-argu-system--of-Hmmdlago); HmmdviewSemu'40_Semuargu_system, Hmmdsemuargusyst moved first
+  McshLag000007:14312  "22_logo-relation of Hmmdsemuconj"  renamed Hmmdsemuconj'19_logo_relation → Hmmdsemuconj'22_logo_relation
+  McshLag000007:14299  "21_senso-mind-relation of Hmmdsemuconj"  added Hmmdsemuconj'21_senso_mind_relation
+  McshLag000007:14236  "39_Semuconj of HmmdviewSemu"  added HmmdviewSemu'39_Semuconj!⇒Hmmdsemuconj; Hmmdsemuconj !=HmmdviewSemu'39_Semuconj (was !=semu-conjunction--of-Hmmdlago); HmmdviewSemu'39_Semuconj, Hmmdsemuconj moved first
+  McshLag000007:14045  "29_WHOLE of Hmmdsemuverb"  added Hmmdsemuverb'29_WHOLE; added Hmmdsemuverb'WHOLE
+  McshLag000007:14031  "23_valence of Hmmdsemuverb"  renamed Hmmdsemuverb'19_valence → Hmmdsemuverb'23_valence
+  McshLag000007:14006  "21_senso-mind-relation of Hmmdsemuverb"  added Hmmdsemuverb'21_senso_mind_relation
+  McshLag000007:3574  "19_member of Hmmdsemuverb"  added Hmmdsemuverb'19_member!⇒Hmmdsmvbmb; Hmmdsmvbmb !=Hmmdsemuverb'19_member (was !=member-of-Semuverb); Hmmdsemuverb'19_member, Hmmdsmvbmb moved first
+  McshLag000007:2072  "38_Semuverb of HmmdviewSemu"  added HmmdviewSemu'38_Semuverb!⇒Hmmdsemuverb; Hmmdsemuverb !=HmmdviewSemu'38_Semuverb (was !=semu-verb--of-Hmmdlago); HmmdviewSemu'38_Semuverb, Hmmdsemuverb moved first
+  McshLag000007:1337  "22_logo-relation of Hmmdsemuargu"  added Hmmdsemuargu'22_logo_relation
+  McshLag000007:1324  "21_senso-mind-relation of Hmmdsemuargu"  added Hmmdsemuargu'21_senso_mind_relation
+  McshLag000007:1130  "19_member of Hmmdsemuargu"  added Hmmdsemuargu'19_member!⇒Hmmdsmagmb; Hmmdsmagmb !=Hmmdsemuargu'19_member (was !=member-of-Semuargu); Hmmdsemuargu'19_member, Hmmdsmagmb moved first
+  McshLag000007:792  "37_Semuargu of HmmdviewSemu"  added HmmdviewSemu'37_Semuargu!⇒Hmmdsemuargu; Hmmdsemuargu !=HmmdviewSemu'37_Semuargu (was !=semu-argu--of-Hmmdlago); HmmdviewSemu'37_Semuargu, Hmmdsemuargu moved first
+  McshLag000007:638  "22_relation-to-logo of Hmmdsemucnpt"  added Hmmdsemucnpt'22_relation_to_logo!⇒Hmmdsemucnpt_encoding_relation; Hmmdsemucnpt_encoding_relation !=Hmmdsemucnpt'22_relation_to_logo
+  McshLag000007:621  "21_relation-to-senso-mind of Hmmdsemucnpt"  added Hmmdsemucnpt'21_relation_to_senso_mind!⇒Hmmdsemucnpt_decoding_relation; Hmmdsemucnpt_decoding_relation !=Hmmdsemucnpt'21_relation_to_senso_mind
+  McshLag000007:603  "20_relation-to--mind-concept of Hmmdsemucnpt"  added Hmmdsemucnpt'20_relation_to__mind_concept
+  McshLag000007:585  "19_member of Hmmdsemucnpt"  added Hmmdsemucnpt'19_member!⇒Hmmdsmcptmb; Hmmdsmcptmb !=Hmmdsemucnpt'19_member (was !=member-of-Hmmdsemucnpt); Hmmdsemucnpt'19_member, Hmmdsmcptmb moved first
+  McshLag000007:425  "36_semu-concept of HmmdviewSemu"  added HmmdviewSemu'36_semu_concept!⇒Hmmdsemucnpt; Hmmdsemucnpt !=HmmdviewSemu'36_semu_concept (was !=semu-concept--of-Hmmdlago); HmmdviewSemu'36_semu_concept, Hmmdsemucnpt moved first
+  McshLag000007:386  "35_info of HmmdviewSemu"  added HmmdviewSemu'35_info!⇒Hmmdsemuinfo; Hmmdsemuinfo !=HmmdviewSemu'35_info (was !=semu-info--of-Hmmdlago); HmmdviewSemu'35_info, Hmmdsemuinfo moved first
+  McshLag000007:299  "19_syntax-tree of HmmdviewSemu"  renamed HmmdviewSemu'03_syntax_tree → HmmdviewSemu'19_syntax_tree
+  McshLag000007:226  "20_senso_mind-semu-relation of HmmdviewMindSenso"  added HmmdviewMindSenso'20_senso_mind_semu_relation!⇒senso_mind_semu_relation; senso_mind_semu_relation !=HmmdviewMindSenso'20_senso_mind_semu_relation
+  McshLag000007:213  "19_info of HmmdviewMindSenso"  added HmmdviewMindSenso'19_info
+  McshLag000007:158  "20_domain of HmmdviewMind"  added HmmdviewMind'20_domain!⇒Hmmdlago_domain; Hmmdlago_domain !=HmmdviewMind'20_domain
+  McshLag000007:141  "19_mind-info of HmmdviewMind"  added HmmdviewMind'19_mind_info!⇒meaningMindHmnm; meaningMindHmnm !=HmmdviewMind'19_mind_info
+  McshLag000008:167  "19_syntax-tree of AlfaviewText"  renamed AlfaviewText'03_syntax_tree → AlfaviewText'19_syntax_tree
+  McshLag000009:4109  "19_syntax-tree of speech"  renamed speech'03_syntax_tree → speech'19_syntax_tree
+  McshLag000009:156  "35_output of Spchlago"  renamed Spchlago'32_output → Spchlago'35_output
+  McshLag000030:69  "23_output (logo-view) of Turklago"  renamed Turklago'20_output → Turklago'23_output
+  McshLag000031:136  "45_relation-to-speech-language of Gstrlago"  renamed Gstrlago'42_relation_to_speech_language → Gstrlago'45_relation_to_speech_language
+  McshLag000031:101  "44_output (view-logo) of Gstrlago"  renamed Gstrlago'41_output → Gstrlago'44_output
+  McshLag000031:71  "23_human of Gstrlago"  renamed Gstrlago'20_human → Gstrlago'23_human
+  McshLag000043:239  "23_output (logo-view) of Koralago"  renamed Koralago'20_output → Koralago'23_output
+  McshStn000020:201  "42_identification of HumnElln"  renamed HumnElln'37_identification → HumnElln'42_identification
 
-=== INH-TITLEHAND (1) — a-numbered attribute whose title-name needs a-hand
-  McshLag000005:126  "09_implementor of Ogsmlago"  the-main-name Ogmlimpler is NOT in this name::
+=== INH-TITLEHAND (8) — a-numbered attribute whose title-name needs a-hand
+  McshLag000007:17900  "38_name-(decoding-unit) of Hmmdlogo"  the-title is NOT a-name
+  McshLag000009:4342  "45_input3-(semu-view) of Spchlago"  the-title is NOT a-name
+  McshLag000009:4337  "43_input1-(mind-view) of Spchlago"  the-title is NOT a-name
+  McshLag000030:8078  "35_input2_(senso_mind_view) of Turklago"  the-title is NOT a-name
+  McshLag000030:7977  "33_input3_(semu_view) of Turklago"  the-title is NOT a-name
+  McshLag000030:7972  "31_input1_(mind_view) of Turklago"  the-title is NOT a-name
+  McshLag000043:3457  "33_input3-(semu-view) of Koralago"  the-title is NOT a-name
+  McshLag000043:3437  "31_input1-(mind-view) of Koralago"  the-title is NOT a-name
 
-=== INH-REFBROKEN (1) — a-text-reference name!@File#id whose file or id does NOT exist
-  McshLag000005:237  "!@McshStn000007#idSoctOgmsatt009"  no #idSoctOgmsatt009 in McshStn000007
+=== INH-REFBROKEN (0) — a-text-reference name!@File#id whose file or id does NOT exist
 
 === INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
 
-=== INH-LOCAL (1) — an-attribute in 3+ specifics, not in the-generic: lift it up?
-  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:341 McshLag000007:31429 McshTchInf000005:574
+=== INH-LOCAL (4) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  info-resource of Hmmdlago@McshLag000007  ×30  McshLag000007:32454 McshLag000007:33207 McshLag000018:17575 McshLag000020:12812 McshLag000027:7208 McshLag000028:1413 McshLag000028:1674 McshLag000029:58 …
+  evoluting of Hmmdlago@McshLag000007  ×29  McshLag000007:32500 McshLag000018:17805 McshLag000018:18302 McshLag000018:19126 McshLag000020:12990 McshLag000027:7953 McshLag000028:1439 McshLag000029:82 …
+  evoluting of model@McshCor000012  ×8  McshCor000002:5235 McshLag000002:174 McshLag000003:275 McshLag000003:1218 McshLag000007:665 McshNtr000011:89 McshStnlaw000002:1179 McshTchPrgm000002:323
+  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:343 McshLag000007:31491 McshTchInf000005:574
 
-=== INFO (330) — how many specifics refine each numbered generic-attribute
+=== INFO (343) — how many specifics refine each numbered generic-attribute
     115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
      60  disease'04_therapy@McshHlth000011#idDssHmn004F
      50  disease'01_symptom@McshHlth000011#idDssHmn001F
      45  disease'02_cause@McshHlth000011#idDssHmn002F
      45  disease'05_protection@McshHlth000011#idDssHmn005F
-     42  foodCooked'27_recipe@McshHlth000013#idFoodHmn050att001
-     31  Ogsmlago'07_output@McshLag000005#idLOgsmotpt
-     26  food'24_ingredient@McshHlth000013#idFoodHmnatt001
+     42  foodCooked'46_recipe@McshHlth000013#idFoodHmn050att001
+     31  Hmmdlago'05_output@McshLag000007#idLHmmdopt
+     26  food'43_ingredient@McshHlth000013#idFoodHmnatt001
      19  organ'01_disease@McshHlth000002#idOgnHmnatt004
-     18  society'43_human_view@McshStn000009#idSocHumnatt021
-     18  AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
-     17  societyOgsm'29_language@McshStn000007#idSoctOgsmatt009
-     17  society'44_economic_view@McshStn000009#idSocHumnatt007
-     16  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
-     12  food'03_evaluation@McshHlth000013#idFoodHmneval
-     11  model'12_evaluation@McshCor000012#idMdleval
-     11  doing'04_argument@McshCor000004#idDngatt001
+     18  society'88_human_view@McshStn000009#idSocHumnatt021
+     18  AgntBkcn'34_protocol@McshTchInf000016#idDbcprl
+     17  societyOgsm'43_language@McshStn000007#idSoctOgsmatt009
+     17  society'89_economic_view@McshStn000009#idSocHumnatt007
+     16  AgntBkcn'46_blockchain@McshTchInf000016#idDbcdat
+     12  entity'01_attribute@McshCor000003#idEntatt
+     12  food'22_evaluation@McshHlth000013#idFoodHmneval
+     11  doing'03_argument@McshCor000004#idDngatt001
      11  Ognssyst'02_organ@McshHlth000002#idSysOgnHmnatt001
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
-     11  Prgmlago'20_output@McshTchInf000006#idLPrgmalg
-     11  Algonet'20_governance_system@McshTchInf000015#idAlgntgov
-     10  relation'04_argument@McshCor000005#idRlnarg
+     11  Prgmlago'05_output@McshTchInf000006#idLPrgmalg
+     11  Algonet'37_governance_system@McshTchInf000015#idAlgntgov
+     10  relation'03_argument@McshCor000005#idRlnarg
+     10  system'07_structure@McshCor000011#idSyssrtr
      10  Ognssyst'01_disease@McshHlth000002#idSysOgnHmnatt002
-     10  Knlglago'03_output@McshTchInf000039#idLKnlgotpt
-     10  Algonet'25_organization@McshTchInf000015#idAlgntogn
-      9  AgntBkcn'21_program@McshTchInf000016#idDbcpgm
-      9  AgntBkcn'06_node@McshTchInf000016#idDbcnod
-      9  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
-      8  entity'01_attribute@McshCor000003#idEntatt
+     10  Knlglago'05_output@McshTchInf000039#idLKnlgotpt
+     10  Algonet'42_organization@McshTchInf000015#idAlgntogn
+      9  AgntBkcn'38_program@McshTchInf000016#idDbcpgm
+      9  AgntBkcn'05_node@McshTchInf000016#idDbcnod
+      9  AgntBkcn'40_wallet@McshTchInf000016#idDbcwlt
       8  DissInfectiousViral'05_protection@McshHlth000011#idDssHmn162protection
-      7  Ogsmlago'06_input@McshLag000005#idLOgsminpt
-      7  Cmprlago'20_output@McshTchInf000005#idLCmpropt
-      7  Knlglago'02_input@McshTchInf000039#idLKnlginpt
-      6  Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
-      6  AgntBkcn'19_asset@McshTchInf000016#idDbcevu
-      6  AgntBkcn'01_evaluation@McshTchInf000016#idDbceval
-      5  FctgBraining'06_argument@McshCor000018#idBrngHmnFctarg
-      5  FctgEmoting'16_emotion@McshCor000018#idBrngHmnFct004emn
-      5  Prgmlago'35_tool@McshTchInf000006#idLPrgmtool
-      5  AgntBkcn'24_statistics@McshTchInf000016#idDbcstat
-      4  system'09_structure@McshCor000011#idSyssrtr
+      7  model'12_evaluation@McshCor000012#idMdleval
+      7  Ogsmlago'04_input@McshLag000005#idLOgsminpt
+      7  Cmprlago'05_output@McshTchInf000005#idLCmpropt
+      7  Knlglago'04_input@McshTchInf000039#idLKnlginpt
+      6  Knlglago'11_manager@McshTchInf000039#idLKnlgmngr
+      6  Prgmlago'11_evaluation@McshTchInf000006#idLPrgmeval
+      6  AgntBkcn'36_asset@McshTchInf000016#idDbcevu
+      6  AgntBkcn'18_evaluation@McshTchInf000016#idDbceval
+      5  FctgBraining'03_argument@McshCor000018#idBrngHmnFctarg
+      5  FctgEmoting'17_emotion@McshCor000018#idBrngHmnFct004emn
+      5  Prgmlago'13_tool@McshTchInf000006#idLPrgmtool
+      5  AgntBkcn'41_statistics@McshTchInf000016#idDbcstat
+      4  system'05_node@McshCor000011#idSyspart
       4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis_doing@McshHlth000011#idDssHmn003
       4  satisfier'06_law@McshStn000010#idSfrHmnatt011
       4  ChmcElry'23_usage@McshNtr000007#idChmElratt012
-      4  OgznOgsm'32_member@McshStn000006#idOznOgmatt003
-      3  entity'03_expression@McshCor000003#idEntexrn
-      3  bodyNo'04_argument@McshCor000003#idEntBodyNarg
-      3  bodyNo'05_valence@McshCor000003#idEntBodyNvlc
+      4  OgznOgsm'46_member@McshStn000006#idOznOgmatt003
+      3  entity'02_expression@McshCor000003#idEntexrn
+      3  bodyNo'03_argument@McshCor000003#idEntBodyNarg
       3  BodyNoargt'05_syntax@McshCor000003#idEntBodyNstx
-      3  system'07_node@McshCor000011#idSyspart
-      3  FctgBrainingBio'06_argument@McshCor000013#idBrngarg
-      3  creatingInfoMindBio'06_argument@McshCor000013#idBrngInfcrtarg
-      3  FctgSensingBio'06_argument@McshCor000013#idBrngSnsgarg
+      3  FctgBrainingBio'03_argument@McshCor000013#idBrngarg
+      3  creatingInfoMindBio'03_argument@McshCor000013#idBrngInfcrtarg
+      3  FctgSensingBio'03_argument@McshCor000013#idBrngSnsgarg
       3  science'14_rlnReferent@McshEdu000002#idSciatt020
       3  science'13_area_of_study@McshEdu000002#idSciatt001
       3  science'20_scientist@McshEdu000002#idSciatt005
@@ -114,40 +338,43 @@ SUMMARY
       3  DissHbsystCirculatory'02_cause@McshHlth000011#idDssHmn032cause
       3  DissMental'04_therapy@McshHlth000011#idDssHmn108therapy
       3  DissInfectiousViral'04_therapy@McshHlth000011#idDssHmn162therapy
-      3  food'25_calorie@McshHlth000013#idFoodHmnatt006
+      3  food'44_calorie@McshHlth000013#idFoodHmnatt006
       3  therapy'01_indication@McshHlth000016#idThrpHmnatt001
       3  Hmmdsemucnpt'01_attribute@McshLag000007#idLHmmdsmscptatt
+      3  Hmmdsemucnpt'21_relation-to-senso-mind@McshLag000007#idLHmmdsmscptmdrn
+      3  Hmmdsemucnpt'22_relation-to-logo@McshLag000007#idLHmmdsmscptlgrn
+      3  HmmdviewSemu'36_semu-concept@McshLag000007#idLHmmdsmscpt
       3  Hmmdsemuargu'01_attribute@McshLag000007#idLHmmdsmsondosmat
       3  ChmcElry'20_occurance@McshNtr000007#idChmElratt009
-      3  Ogsmsyst'07_node@McshStn000002#idStnOgmatt004
-      3  Ogsmsyst'19_health@McshStn000002#idStnOgmatt003
-      3  Ogsmsyst'26_node_of_satisfiers@McshStn000002#idStnOgmatt007
-      3  Sctn'07_node@McshStn000002#idStnHmnatt001
-      3  Sctn'19_health@McshStn000002#idStnHmnatt005
-      3  Ogzn'33_stakeholder_node@McshStn000008#idOgznatt024
-      3  Ogzn'35_admin_sys@McshStn000008#idOgznatt001
-      3  Cnptlago'12_evaluation@McshTchInf000007#idLCnpteval
-      3  Jsgnlago'13_archetype@McshTchInf000010#idLJsgnarc
-      3  Jsgnlago'20_algorithm@McshTchInf000010#idLJsgnalg
-      3  Jsgnlago'35_tool@McshTchInf000010#idLJsgntol
-      3  Algonet'19_asset@McshTchInf000015#idAlgntevu
-      3  Algonet'01_evaluation@McshTchInf000015#idAlgnteval
+      3  Ogsmsyst'27_node@McshStn000002#idStnOgmatt004
+      3  Ogsmsyst'18_health@McshStn000002#idStnOgmatt003
+      3  Ogsmsyst'40_node_of_satisfiers@McshStn000002#idStnOgmatt007
+      3  Sctn'27_node@McshStn000002#idStnHmnatt001
+      3  Sctn'18_health@McshStn000002#idStnHmnatt005
+      3  Ogzn'47_stakeholder_node@McshStn000008#idOgznatt024
+      3  Ogzn'49_admin_sys@McshStn000008#idOgznatt001
+      3  Cnptlago'14_evaluation@McshTchInf000007#idLCnpteval
+      3  Jsgnlago'57_archetype@McshTchInf000010#idLJsgnarc
+      3  Jsgnlago'05_algorithm@McshTchInf000010#idLJsgnalg
+      3  Jsgnlago'21_tool@McshTchInf000010#idLJsgntol
+      3  Algonet'36_asset@McshTchInf000015#idAlgntevu
+      3  Algonet'18_evaluation@McshTchInf000015#idAlgnteval
       3  AgntBkcn'29_Dapp@McshTchInf000016#idDbcapp
-      3  Algonet'28_law@McshTchInf000015#idAlgntlaw
-      3  OgznDao'33_stakeholder@McshTchInf000019#idDeOznskhr
+      3  Algonet'45_law@McshTchInf000015#idAlgntlaw
+      3  OgznDao'47_stakeholder@McshTchInf000019#idDeOznskhr
       3  Agntdapp'06_evaluation@McshTchInf000015#idDappeval
       3  Agntdapp'05_human@McshTchInf000015#idDappatt005
-      2  bodyNo'03_expression@McshCor000003#idEntBodyNexrn
+      2  bodyNo'02_expression@McshCor000003#idEntBodyNexrn
       2  BodyNoargt'04_sequence@McshCor000003#idEntBodyNdrn
-      2  doing'05_valence@McshCor000004#idDngatt002
-      2  doing'06_risk@McshCor000004#idDngatt004
-      2  system'08_node_relation@McshCor000011#idSysndrn
+      2  doing'04_valence@McshCor000004#idDngatt002
+      2  doing'05_risk@McshCor000004#idDngatt004
+      2  system'06_node_relation@McshCor000011#idSysndrn
       2  model'04_archetype@McshCor000012#idMdlatt001
-      2  FctgEmoting'17_stimulus@McshCor000018#idBrngHmnFct004stml
-      2  FctgEmoting'15_human@McshCor000018#idBrngHmnFct004hmn
+      2  FctgEmoting'18_stimulus@McshCor000018#idBrngHmnFct004stml
+      2  FctgEmoting'16_human@McshCor000018#idBrngHmnFct004hmn
       2  infoBrainBio'13_referent@McshLag000002#idInfBrnBiorfrt
-      2  RltnMapping'08_method@McshCor000005#idRlnMpgmthd
-      2  SciLago'13_area-of-study@McshEdu000010#idSLangaos
+      2  RltnMapping'06_method@McshCor000005#idRlnMpgmthd
+      2  Hmmdsci'13_area-of-study@McshEdu000010#idSLangaos
       2  Ogsmcell'02_membrane@McshOgm000007#idCellOgmatt001
       2  organ'02_tissue@McshHlth000002#idOgnHmnatt010
       2  DissOgsm'01_symptom@McshHlth000010#idDssOgmeft
@@ -159,81 +386,87 @@ SUMMARY
       2  DissCancer'05_protection@McshHlth000011#idDssHmn052protection
       2  DissMental'02_cause@McshHlth000011#idDssHmn108cause
       2  DissInfectious'02_cause@McshHlth000011#idDssHmn001cause
-      2  food'21_price@McshHlth000013#idFoodHmnatt012
+      2  food'40_price@McshHlth000013#idFoodHmnatt012
       2  satisfier'01_human@McshStn000010#idSfrHmnatt008
-      2  medication'17_indication@McshHlth000014#idMedHmnatt002
-      2  Ogsmlago'09_implementor@McshLag000005#idLOgsmentt
-      2  Ogsmlago'08_method@McshLag000005#idLOgsmgrmr
+      2  medication'19_indication@McshHlth000014#idMedHmnatt002
+      2  Ogsmlago'05_output@McshLag000005#idLOgsmotpt
+      2  Ogsmlago'06_method@McshLag000005#idLOgsmgrmr
+      2  Ogsmlago'07_implementor@McshLag000005#idLOgsmentt
+      2  Hmmdsemucnpt'19_member@McshLag000007#idLHmmdsmscptmbr
       2  model'06_node@McshCor000012#idMdlatt005
       2  model'09_unit@McshCor000012#idMdlatt008
       2  Hmmdlogo'09_unit@McshLag000007#idLHmmdunt
-      2  Hmmdlogo'03_syntax-tree@McshLag000007#idLHmmdsxtr
+      2  Hmmdlogo'19_syntax-tree@McshLag000007#idLHmmdsxtr
       2  Hmmdlogo'06_node@McshLag000007#idLHmmdnode
+      2  Hmmdlogo'38_name-(decoding-unit)@McshLag000007#idLHmmdname
+      2  Hmmdlogo'45_sentence@McshLag000007#idLHmmdsntc
+      2  Hmmdlogo'47_title-sentence-system@McshLag000007#idLHmmdsctn
+      2  Hmmdlogo'49_root-node@McshLag000007#idLHmmdroot
       2  word'07_syllable@McshLag000007#idLHmmdwrdsylb
       2  word'08_syllabication@McshLag000007#idLHmmdwrdslbn
+      2  Hmmdsemuargu'19_member@McshLag000007#idLHmmdsmsondombr
       2  Infrsc'07_citation_format@McshLag000013#idInfrscfrmt
       2  word'03_pronunciation@McshLag000007#idLHmmdwrdspch
-      2  Hiurlago'20_output@McshLag000037#idLHiuropt
-      2  Hiurlago'28_input1-(mind-view)@McshLag000037#idLHiuript1
-      2  Hiurlago'29_input2-(senso-mind--view)@McshLag000037#idLHiuript2
-      2  Hiurlago'30_input3-(semu-view)@McshLag000037#idLHiuript3
+      2  Hiurlago'27_input1-(mind-view)@McshLag000037#idLHiuript1
+      2  Hiurlago'28_input2-(senso-mind--view)@McshLag000037#idLHiuript2
+      2  Hiurlago'29_input3-(semu-view)@McshLag000037#idLHiuript3
       2  MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
       2  MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
       2  ChmcElry'24_toxicity@McshNtr000007#idChmElratt014
-      2  bio'16_size@McshOgm000002#idBioatt008
-      2  bio'19_health@McshOgm000002#idBioatt003
-      2  Ogsmsyst'25_node_of_organisms@McshStn000002#idStnOgmatt011
-      2  Ogsmsyst'27_admin_system@McshStn000002#idStnOgmatt005
-      2  society'05_evaluation@McshStn000009#idSocHumneval
-      2  Ogzn'24_place@McshStn000008#idOgznatt007
-      2  societyOgsm'26_node_of_satisfiers@McshStn000007#idSoctOgsmatt007
-      2  societyOgsm'30_technology@McshStn000007#idSoctOgsmatt010
+      2  bio'30_size@McshOgm000002#idBioatt008
+      2  bio'18_health@McshOgm000002#idBioatt003
+      2  Ogsmsyst'39_node_of_organisms@McshStn000002#idStnOgmatt011
+      2  Ogsmsyst'41_admin_system@McshStn000002#idStnOgmatt005
+      2  society'50_evaluation@McshStn000009#idSocHumneval
+      2  Ogzn'38_place@McshStn000008#idOgznatt007
+      2  societyOgsm'40_node_of_satisfiers@McshStn000007#idSoctOgsmatt007
+      2  societyOgsm'44_technology@McshStn000007#idSoctOgsmatt010
       2  sfrFin'06_law@McshStn000029#idLaw045011
-      2  Cmprlago'01_user@McshTchInf000005#Cmpluser
-      2  Cnptlago'24_manager@McshTchInf000007#idLCnptmgr
-      2  Cnptlago'13_input@McshTchInf000007#idLCnptipt
-      2  Tdoclago'20_output@McshTchInf000005#idLCmpr007otpt
-      2  Tdoclago'26_machine@McshTchInf000005#idLCmpr007mchn
-      2  Cmprlago'15_organization@McshTchInf000005#idLCmprozn
-      2  Jsgnlago'33_human@McshTchInf000010#idLJsgnhmn
-      2  Algonet'06_node@McshTchInf000015#idAlgntnod
-      2  Algonet'16_stakeholder@McshTchInf000015#idAlgntskhr
-      2  Algonet'17_protocol@McshTchInf000015#idAlgntprl
-      2  Algonet'21_program@McshTchInf000015#idAlgntpgm
-      2  Algonet'23_wallet@McshTchInf000015#idAlgntwlt
-      2  Algonet'27_service@McshTchInf000015#idAlgntsvc
-      2  DoEth'33_stakeholder@McshTchInf000019#idEthdaoskhr
-      2  Algonet'18_chain@McshTchInf000015#idAlgntchn
-      2  Srcdlago'13_archetype@McshTchInf000006#idLSrcdarch
-      2  Srcdlago'09_Srcdalgo'unit@McshTchInf000006#idLSrcdunt
-      2  Ppsllago'03_output@McshTchInf000039#idLKnlg004oupt
+      2  Cmprlago'07_user@McshTchInf000005#Cmpluser
+      2  Cnptlago'11_manager@McshTchInf000007#idLCnptmgr
+      2  Cnptlago'04_input@McshTchInf000007#idLCnptipt
+      2  Tdoclago'05_output@McshTchInf000005#idLCmpr007otpt
+      2  Cmprlago'10_organization@McshTchInf000005#idLCmprozn
+      2  Jsgnlago'77_human@McshTchInf000010#idLJsgnhmn
+      2  whole'04_environment@McshCor000008#idWhlenvt
+      2  Algonet'05_node@McshTchInf000015#idAlgntnod
+      2  Algonet'33_stakeholder@McshTchInf000015#idAlgntskhr
+      2  Algonet'34_protocol@McshTchInf000015#idAlgntprl
+      2  Algonet'38_program@McshTchInf000015#idAlgntpgm
+      2  Algonet'40_wallet@McshTchInf000015#idAlgntwlt
+      2  Algonet'44_service@McshTchInf000015#idAlgntsvc
+      2  DoEth'53_stakeholder@McshTchInf000019#idEthdaoskhr
+      2  Algonet'35_chain@McshTchInf000015#idAlgntchn
+      2  Srcdlago'21_archetype@McshTchInf000006#idLSrcdarch
+      2  Srcdlago'17_Srcdalgo'unit@McshTchInf000006#idLSrcdunt
+      2  Ppsllago'05_output@McshTchInf000039#idLKnlg004oupt
       1  worldview'20_view@McshLag000003#idWldvatt004
       1  worldview'21_management_tool@McshLag000003#idWldvatt002
-      1  entity'02_attribute_relation@McshCor000003#idEntatrrln
       1  worldview'22_human@McshLag000003#idWldvatt001
-      1  whole'04_part@McshCor000008#idWhlprt
-      1  FctgEvalg'06_argument@McshCor000018#idBrngHmnFct002Evalgarg
-      1  FctgEvalg'08_relation@McshCor000018#idBrngHmnFct002Evalgrln
-      1  system'10_science@McshCor000011#idSyssci
+      1  BodyNoargt'03_valence@McshCor000003#idEntBodyNvlc
+      1  whole'03_part@McshCor000008#idWhlprt
+      1  FctgEvalg'03_argument@McshCor000018#idBrngHmnFct002Evalgarg
+      1  FctgEvalg'10_relation@McshCor000018#idBrngHmnFct002Evalgrln
+      1  system'08_science@McshCor000011#idSyssci
       1  model'15_mapping_method@McshCor000012#idMdlatt003
-      1  functing'06_argument@McshCor000004#idDngFctgarg
-      1  functing'07_syntax@McshCor000004#idDngFctgstx
-      1  FctgBrainingBio'13_brain_entity@McshCor000013#idBrngent
-      1  FctgEmotingBio'13_brain_entity@McshCor000013#idBrngEmtgbnet
-      1  FctgEmotingBio'06_argument@McshCor000013#idBrngEmtgarg
-      1  FctgEmotingBio'08_relation@McshCor000013#idBrngEmtgrln
-      1  FctgFeeling'06_argument@McshCor000018#idBrngHmnFct001arg
-      1  FctgBraining'13_sleeping-relation@McshCor000018#idBrngHmnFctslprn
-      1  FctgEmoting'06_argument@McshCor000018#idBrngHmnFct004arg
-      1  FctgWantingBio'06_argument@McshCor000013#idBrngWntgarg
+      1  functing'03_argument@McshCor000004#idDngFctgarg
+      1  functing'06_syntax@McshCor000004#idDngFctgstx
+      1  FctgBrainingBio'09_brain_entity@McshCor000013#idBrngent
+      1  FctgEmotingBio'09_brain_entity@McshCor000013#idBrngEmtgbnet
+      1  FctgEmotingBio'03_argument@McshCor000013#idBrngEmtgarg
+      1  FctgEmotingBio'10_relation@McshCor000013#idBrngEmtgrln
+      1  FctgFeeling'03_argument@McshCor000018#idBrngHmnFct001arg
+      1  FctgBraining'08_sleeping-relation@McshCor000018#idBrngHmnFctslprn
+      1  FctgEmoting'03_argument@McshCor000018#idBrngHmnFct004arg
+      1  FctgWantingBio'03_argument@McshCor000013#idBrngWntgarg
       1  SciMind'13_area-of-study@McshEdu000009#idSMindaos
       1  science'22_conference@McshEdu000002#idSciatt016
-      1  SciLago'20_scientist@McshEdu000010#idSLangwkr
-      1  material'09_mass@McshNtr000002#idMtrlatt006
-      1  Hbnutrient'16_food_source@McshHlth000002#idBdyHmnatt015att004
-      1  Hbnutrient'17_disease@McshHlth000002#idBdyHmnatt015att001
-      1  Hbnutrient'18_indication@McshHlth000002#idBdyHmnatt015att005
-      1  Hbnutrient'19_dietary_recommendation@McshHlth000002#idBdyHmnatt015att003
+      1  Hmmdsci'20_scientist@McshEdu000010#idSLangwkr
+      1  material'11_mass@McshNtr000002#idMtrlatt006
+      1  Hbnutrient'18_food_source@McshHlth000002#idBdyHmnatt015att004
+      1  Hbnutrient'19_disease@McshHlth000002#idBdyHmnatt015att001
+      1  Hbnutrient'20_indication@McshHlth000002#idBdyHmnatt015att005
+      1  Hbnutrient'21_dietary_recommendation@McshHlth000002#idBdyHmnatt015att003
       1  organ'04_artery@McshHlth000002#idOgnHmnatt005
       1  organ'05_vein@McshHlth000002#idOgnHmnatt006
       1  organ'06_nerve@McshHlth000002#idOgnHmnatt007
@@ -278,105 +511,109 @@ SUMMARY
       1  DissReproduction'02_cause@McshHlth000011#idDssHmn211cause
       1  DissTooth'05_protection@McshHlth000011#idDssHmn215protection
       1  DissHeadache'04_therapy@McshHlth000011#idDssHmn138therapy
-      1  food'22_sector@McshHlth000013#idFoodHmnatt013
-      1  food'23_popularity@McshHlth000013#idFoodHmnatt014
-      1  food'26_flavor@McshHlth000013#idFoodHmnatt009
-      1  foodFruit'24_ingredient@McshHlth000013#idFoodHmn106att001
-      1  foodFruit'03_evaluation@McshHlth000013#idFoodHmn106eval
-      1  foodDessert'24_ingredient@McshHlth000013#idFoodHmn201ingredient
-      1  medication'16_brand_name@McshHlth000014#idMedHmnatt001
-      1  medication'19_side_effect@McshHlth000014#idMedHmnatt004
+      1  food'41_sector@McshHlth000013#idFoodHmnatt013
+      1  food'42_popularity@McshHlth000013#idFoodHmnatt014
+      1  food'45_flavor@McshHlth000013#idFoodHmnatt009
+      1  foodFruit'43_ingredient@McshHlth000013#idFoodHmn106att001
+      1  foodFruit'22_evaluation@McshHlth000013#idFoodHmn106eval
+      1  foodDessert'43_ingredient@McshHlth000013#idFoodHmn201ingredient
+      1  medication'18_brand_name@McshHlth000014#idMedHmnatt001
+      1  medication'21_side_effect@McshHlth000014#idMedHmnatt004
       1  therapy'06_therapist@McshHlth000016#idThrpHmnatt006
-      1  SystMnggOgsm'12_sensory-sys@McshCor000011#idSysMng001att001
+      1  SystMnggOgsm'09_sensory-sys@McshCor000011#idSysMng001att001
       1  cell'01_disease@McshHlth000004#idCellHmnatt001
       1  Senssyst'01_disease@McshHlth000019#idSysNrvsatt016disease
       1  worldview'19_concept@McshLag000003#idWldvatt003
-      1  RltnMapping'06_input@McshCor000005#idRlnMpgarch
-      1  RltnMapping'07_output@McshCor000005#idRlnMpgmdl
-      1  RltnMapping'09_implementor@McshCor000005#idRlnMpgiplr
+      1  RltnMapping'04_input@McshCor000005#idRlnMpgarch
+      1  RltnMapping'05_output@McshCor000005#idRlnMpgmdl
+      1  RltnMapping'07_implementor@McshCor000005#idRlnMpgiplr
+      1  RltnMapping'08_implementation@McshCor000005#idRlnMpgipln
+      1  RltnMapping'09_modality@McshCor000005#idRlnMpgmdlt
       1  model'17_medium@McshCor000012#idMdlatt004
-      1  Textlago'20_output@McshLag000007#idLTextopt
+      1  Textlago'05_output@McshLag000007#idLTextopt
       1  text'09_unit@McshLag000007#idLTextoptunit
       1  word'12_creating@McshLag000007#idLHmmdwrdcrtg
-      1  Alfalago'20_output-(text-view)@McshLag000008#idL0016opt
-      1  Alfalago'28_input1-(mind-view)@McshLag000008#idL0016ipt1
-      1  Alfalago'30_input3-(semu-view)@McshLag000008#idL0016ipt3
-      1  Hmmdsemuverb'05_logo-relation@McshLag000007#idLHmmdsmsvrblgrn
+      1  HmmdviewSemu'37_Semuargu@McshLag000007#idLHmmdsmsondo
+      1  HmmdviewSemu'38_Semuverb@McshLag000007#idLHmmdsmsvrb
+      1  Alfalago'05_output-(text-view)@McshLag000008#idL0016opt
+      1  Alfalago'11_input1-(mind-view)@McshLag000008#idL0016ipt1
+      1  Alfalago'13_input3-(semu-view)@McshLag000008#idL0016ipt3
+      1  Hmmdsemuargu'22_logo-relation@McshLag000007#idLHmmdsmsondolgrn
+      1  Hmmdsemuverb'21_senso-mind-relation@McshLag000007#idLHmmdsmsvrbsmdrn
+      1  Hmmdsemuverb'22_logo-relation@McshLag000007#idLHmmdsmsvrblgrn
+      1  Hmmdlago'11_linguistics@McshLag000007#idLHmmdlgcs
       1  word'01_functionality@McshLag000007#idLHmmdwrdfcnt
       1  word'02_meaning@McshLag000007#idLHmmdwrdmeng
       1  word'06_name_entirety@McshLag000007#idLHmmdwrdnmet
-      1  Hiurlago'12_evaluation@McshLag000037#idLHiureval
       1  MtrlSysMols'05_chemical_property@McshNtr000005#idSysMolsatt005
-      1  acting'02_valence@McshCor000004#idDngActgvlc
-      1  acting'06_argument@McshCor000004#idDngActgarg
-      1  acting'07_syntax@McshCor000004#idDngActgstx
-      1  acting'09_risk@McshCor000004#idDngActgrsk
-      1  Dynasyst'08_managing_system@McshCor000023#idSys009att001
-      1  Dynasyst'07_health@McshCor000023#idSys009att005
-      1  bio'20_material_system@McshOgm000002#idBioatt004
-      1  bio'21_material@McshOgm000002#idBioatt005
-      1  bio'22_genome@McshOgm000002#idBioatt006
-      1  Ogsm'32_tissue@McshOgm000003#idOgmatt029
-      1  MtrlMole'01_atom@McshNtr000004#idMolatt001
-      1  MtrlMole'03_shape@McshNtr000004#idMolatt004
-      1  MtrlMole'05_size@McshNtr000004#idMolatt006
-      1  MoleOgsm'03_shape@McshOgm000004#idMolOgmatt004
-      1  MoleOgsm'05_size@McshOgm000004#idMolOgmatt006
+      1  acting'04_valence@McshCor000004#idDngActgvlc
+      1  acting'03_argument@McshCor000004#idDngActgarg
+      1  acting'06_syntax@McshCor000004#idDngActgstx
+      1  acting'05_risk@McshCor000004#idDngActgrsk
+      1  bio'34_material_system@McshOgm000002#idBioatt004
+      1  bio'35_material@McshOgm000002#idBioatt005
+      1  bio'36_genome@McshOgm000002#idBioatt006
+      1  Ogsm'46_tissue@McshOgm000003#idOgmatt029
+      1  MtrlMole'13_atom@McshNtr000004#idMolatt001
+      1  MtrlMole'15_shape@McshNtr000004#idMolatt004
+      1  MtrlMole'17_size@McshNtr000004#idMolatt006
+      1  MoleOgsm'15_shape@McshOgm000004#idMolOgmatt004
+      1  MoleOgsm'17_size@McshOgm000004#idMolOgmatt006
       1  OgsmCellNo'08_size@McshOgm000008#idOgmCllNatt008
       1  OgsmAnimal'13_food@McshOgm000009#idOgmAnmlatt013
-      1  Ogsm'19_health@McshOgm000003#idOgmatt010
-      1  Ogsm'21_material@McshOgm000003#idOgmatt005
-      1  Ogsm'26_disease@McshOgm000003#idOgmatt008
-      1  SystBody'07_node@McshCor000011#idSys004nod
-      1  Ogsmsyst'24_place@McshStn000002#idStnOgmatt010
-      1  OgznOgsm'24_place@McshStn000006#idOznOgmatt007
-      1  societyOgsm'07_node@McshStn000007#idSoctOgsmatt011
-      1  societyOgsm'31_governance_system@McshStn000007#idSoctOgsmatt006
-      1  Admn'20_budget@McshStn000004#idBdgt
+      1  Ogsm'18_health@McshOgm000003#idOgmatt010
+      1  Ogsm'35_material@McshOgm000003#idOgmatt005
+      1  Ogsm'40_disease@McshOgm000003#idOgmatt008
+      1  SystBody'05_node@McshCor000011#idSys004nod
+      1  Ogsmsyst'38_place@McshStn000002#idStnOgmatt010
+      1  OgznOgsm'38_place@McshStn000006#idOznOgmatt007
+      1  societyOgsm'27_node@McshStn000007#idSoctOgsmatt011
+      1  societyOgsm'45_governance_system@McshStn000007#idSoctOgsmatt006
+      1  Admn'17_budget@McshStn000004#idBdgt
       1  satisfier'03_owner@McshStn000010#idSfrHmnatt010
       1  sfrProperty'03_owner@McshStn000010#idSfrHmn005ownr
       1  Wrkr'03_compensation@McshStn000011#idWkratt004
-      1  Admn'19_law@McshStn000004#idGvcHmnatt006
+      1  Admn'16_law@McshStn000004#idGvcHmnatt006
       1  budget'01_input@McshStn000004#idBdgtatt001
       1  budget'02_output@McshStn000004#idBdgtatt002
       1  budget'03_balance@McshStn000004#idBdgtatt003
-      1  OgznPrdg'33_stakeholder@McshStn000015#idOznPdnatt012
-      1  OgznPrdg'35_admin_system@McshStn000015#idOznPdnatt002
-      1  Ogzn'07_node@McshStn000008#idOgznatt018
-      1  Ogzn'19_health@McshStn000008#idOgznatt005
-      1  Sctn'26_node_of_satisfiers@McshStn000002#idStnHmnatt003
-      1  Sctn'28_node_of_humans@McshStn000002#idStnHmnatt002
-      1  human'37_identification@McshHmn000002#idHmnatt010
-      1  society'07_node@McshStn000009#idSocHumnatt020
-      1  societyOgsm'19_health@McshStn000007#idSoctOgsmatt003
-      1  human'33_place@McshHmn000002#idHmnatt015
-      1  society'31_admin_system@McshStn000009#idSocadmn
+      1  OgznPrdg'47_stakeholder@McshStn000015#idOznPdnatt012
+      1  OgznPrdg'49_admin_system@McshStn000015#idOznPdnatt002
+      1  Ogzn'27_node@McshStn000008#idOgznatt018
+      1  Ogzn'18_health@McshStn000008#idOgznatt005
+      1  Sctn'40_node_of_satisfiers@McshStn000002#idStnHmnatt003
+      1  Sctn'42_node_of_humans@McshStn000002#idStnHmnatt002
+      1  human'42_identification@McshHmn000002#idHmnatt010
+      1  society'27_node@McshStn000009#idSocHumnatt020
+      1  societyOgsm'18_health@McshStn000007#idSoctOgsmatt003
+      1  human'38_place@McshHmn000002#idHmnatt015
+      1  society'45_admin_system@McshStn000009#idSocadmn
       1  Eulaw'05_time_in_force@McshStnlaw000003#idLawEuzzatt011
       1  Eulaw'02_jurisdiction@McshStnlaw000003#idLawEuzzatt004
       1  techCmpr'12_health_issue@McshTchInf000003#idCmratt003
-      1  Knlglago'01_user@McshTchInf000039#idLKnlguser
-      1  CptlSnet'20_output@McshTchInf000007#idLCnpt022otpt
-      1  Cnptlago'11_user@McshTchInf000007#idLCnptuser
-      1  Jsgnlago'12_evaluation@McshTchInf000010#idLJsgneval
-      1  Jsgnlago'09_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
-      1  Jsgnlago'15_organization@McshTchInf000010#idLJsgnogn
-      1  Jsndlago'13_archetype@McshTchInf000012#idLJsndarc
-      1  Jsndlago'33_human@McshTchInf000012#idLJsndhmn
-      1  SystNet'06_node@McshCor000014#idNetatt002
-      1  Algonet'24_statistics@McshTchInf000015#idAlgntstat
+      1  Knlglago'07_user@McshTchInf000039#idLKnlguser
+      1  CptlSnet'05_output@McshTchInf000007#idLCnpt022otpt
+      1  Tdoclago'11_machine@McshTchInf000005#idLCmpr007mchn
+      1  Cnptlago'07_user@McshTchInf000007#idLCnptuser
+      1  Jsgnlago'22_evaluation@McshTchInf000010#idLJsgneval
+      1  Jsgnlago'53_Jsgnalgo'UNIT@McshTchInf000010#idLJsgnunt
+      1  Jsgnlago'10_organization@McshTchInf000010#idLJsgnogn
+      1  Jsndlago'57_archetype@McshTchInf000012#idLJsndarc
+      1  Jsndlago'77_human@McshTchInf000012#idLJsndhmn
+      1  SystNet'05_node@McshCor000014#idNetatt002
+      1  Algonet'41_statistics@McshTchInf000015#idAlgntstat
       1  Algonet'26_environment@McshTchInf000015#idAlgntenvt
-      1  Algonet'22_Dapp@McshTchInf000015#idDapp
-      1  AgntBtcn'06_node@McshTchInf000017#idBtcnod
-      1  whole'06_environment@McshCor000008#idWhlenvt
-      1  material'12_space@McshNtr000002#idMtrlatt002
+      1  Algonet'39_Dapp@McshTchInf000015#idDapp
+      1  AgntBtcn'05_node@McshTchInf000017#idBtcnod
+      1  material'14_space@McshNtr000002#idMtrlatt002
       1  AgntBkcn'26_environment@McshTchInf000016#idDbcenvt
-      1  Srcdlago'06_Srcdalgo'node@McshTchInf000006#idLSrcdalgnode
+      1  Srcdlago'14_Srcdalgo'node@McshTchInf000006#idLSrcdalgnode
       1  techAI'21_organization@McshTchInf000036#idTechAiozn
       1  techAI'14_evaluation@McshTchInf000036#idTechAieval
       1  techNn'14_evaluation@McshTchInf000036#idTchNneval
-      1  Ppsllago'02_input@McshTchInf000039#idLKnlg004inpt
-      1  Logclago'04_manager@McshTchInf000039#idLKnlg009mngr
-      1  lagoOntg'02_input@McshTchInf000039#idLKnlg010inpt
-      1  lagoOntg'03_output@McshTchInf000039#idLKnlg010otpt
-      1  lagoOntg'04_manager@McshTchInf000039#idLKnlg010mngr
-      1  Prgmlago'26_tech@McshTchInf000006#idLPrgmtech
+      1  Ppsllago'04_input@McshTchInf000039#idLKnlg004inpt
+      1  Logclago'11_manager@McshTchInf000039#idLKnlg009mngr
+      1  lagoOntg'04_input@McshTchInf000039#idLKnlg010inpt
+      1  lagoOntg'05_output@McshTchInf000039#idLKnlg010otpt
+      1  lagoOntg'11_manager@McshTchInf000039#idLKnlg010mngr
+      1  Prgmlago'12_tech@McshTchInf000006#idLPrgmtech

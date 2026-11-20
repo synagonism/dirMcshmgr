@@ -1059,8 +1059,8 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate the concept of the URL bar (or another): report, or fix unambiguous inside it and report" data-cmd="cmdValidConcept">validate-concept<span class="clsKbd">Ctrl+Alt+V C C</span></div>
-          <div class="clsItem" title="validate the concept of the URL bar (or another) with one rule: report, or fix inside it and report" data-cmd="cmdValidConceptRule">validate-concept-with-rule<span class="clsKbd">Ctrl+Alt+V C R</span></div>
+          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another): report, or fix unambiguous inside it and report" data-cmd="cmdValidConcept">validate-concept<span class="clsKbd">Ctrl+Alt+V C C</span></div>
+          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another) with one rule: report, or fix inside it and report" data-cmd="cmdValidConceptRule">validate-concept-with-rule<span class="clsKbd">Ctrl+Alt+V C R</span></div>
           <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+V F F</span></div>
           <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">Ctrl+Alt+V F R</span></div>
           <div class="clsItem" title="validate a directory (the current one, or chosen), every rule: report, or fix unambiguous and report" data-cmd="cmdValidDir">validate-directory<span class="clsKbd">Ctrl+Alt+V D D</span></div>
@@ -1413,7 +1413,7 @@ async function fRunValidCurrent(fStatusIn) {
 }
 
 /**
- * DOING: validate-concept: it asks the-concept (the-one of the-URL bar prefilled,
+ * DOING: validate-concept: it asks the-concept (the-one of the-cursor (text editor: its para-concept, else its section) | of the-URL bar prefilled,
  *   dirLag/McshLag000005.last.html#idX; any other as validate-file, with its #id), then as
  *   validate-file, ONLY for that concept (its section | paragraph):
  *   a) report: validatorMcsh --id,
@@ -1430,7 +1430,7 @@ async function fRunValidConcept(fStatusIn) {
 }
 
 /**
- * DOING: it asks the-concept to validate: the-one of the-URL bar prefilled
+ * DOING: it asks the-concept to validate: the-one of the-cursor (text editor) | of the-URL bar prefilled
  *   (dirLag/McshLag000005.last.html#idX, when the-visual editor shows the-current file; else the-current
  *   file alone); any other as validate-file, with its #id.
  * OUTPUT: { sFile, sId } (sId '' = the-whole file: no #id, or #idOverview), or null (Escape, or no file: a-message).
@@ -1438,10 +1438,16 @@ async function fRunValidConcept(fStatusIn) {
 async function fPromptConceptValid(sRootIn, sCmdIn, fStatusIn) {
   const sFileCur = await vscode.commands.executeCommand('mcshv.currentFile');
   const fNorm = (sIn) => String(sIn || '').replace(/\\/g, '/').toLowerCase();
-  const sHash = sHashVisual && fNorm(sFileCur) === fNorm(sVisualFile) ? '#' + sHashVisual : '';
+  let sHash = sHashVisual && fNorm(sFileCur) === fNorm(sVisualFile) ? '#' + sHashVisual : '';
+  // a-text editor of the-file (a-focused visual editor has none): the-concept of the-cursor
+  const oEd = vscode.window.activeTextEditor;
+  if (oEd && oEd.document.uri.scheme === 'file' && fNorm(oEd.document.uri.fsPath) === fNorm(sFileCur)) {
+    const sId = await fConceptIdAtCursor(sRootIn, oEd);
+    if (sId !== null) sHash = sId ? '#' + sId : '';
+  }
   const sValue = sFileCur ? path.relative(sRootIn, sFileCur).split(path.sep).join('/') + sHash : '';
   const sInput = await fInputClickValid({
-    prompt: sCmdIn + ': the concept of the URL bar, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html#id',
+    prompt: sCmdIn + ': the concept of the cursor | URL bar, or another: descr!@file#id | file#id | dirLag/McshLag000005.last.html#id',
     value: sValue,
     valueSelection: sValue ? [0, sValue.length] : undefined,
     ignoreFocusOut: true
@@ -1450,6 +1456,21 @@ async function fPromptConceptValid(sRootIn, sCmdIn, fStatusIn) {
   const { sFile, sId } = fResolveFileIdValid(sInput, sRootIn);
   if (!sFile) { fStatusIn('no file for "' + sInput.trim() + '"'); return null; }
   return { sFile, sId: sId === 'idOverview' ? '' : sId };
+}
+
+/**
+ * DOING: the-concept at the-cursor of a-text editor, by dirMcshmgr/dirValid/conceptRange.js
+ *   (the-same rule as validatorMcsh --id): a-para-concept (para with name), else its section.
+ * OUTPUT: the-id, '' (the-file-concept), or null (conceptRange.js not loaded).
+ */
+async function fConceptIdAtCursor(sRootIn, oEdIn) {
+  try {
+    const sPath = path.join(path.dirname(sRootIn), 'dirMcshmgr', 'dirValid', 'conceptRange.js');
+    const oMod = await import(require('url').pathToFileURL(sPath).href);
+    return oMod.fFindConceptIdAt(oEdIn.document.getText(), oEdIn.selection.active.line);
+  } catch (oErr) {
+    return null;
+  }
 }
 
 /**
@@ -1594,7 +1615,7 @@ let sDirLast = '';
  *   The-report is validatorMcsh --code <rule> on the-current file | the-dir | the-worldview,
  *   in a-new browser tab.
  *   The-dir: the-current file's dir is highlighted, any dir of the-worldview can be chosen.
- *   validate-concept-with-rule: as validate-file-with-rule, with --id: the-concept of the-URL bar (asked),
+ *   validate-concept-with-rule: as validate-file-with-rule, with --id: the-concept of the-cursor | URL bar (asked),
  *   fixed and reported only inside it.
  *   validate-directory | validate-worldview | validate-list (bRuleIn false): every rule, no rule
  *   asked; the-fix is createMcsh --auto (the-unambiguous fixes).
@@ -1612,7 +1633,7 @@ async function fRunValidRule(fStatusIn, sScopeIn = 'file', bRuleIn = true) {
     : sRootCur;
   if (!sRoot) return;
   const sDirValid = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid');
-  // the-concept: asked, the-one of the-URL bar prefilled ('' id = the-whole file)
+  // the-concept: asked, the-one of the-cursor | URL bar prefilled ('' id = the-whole file)
   const oConcept = sScopeIn === 'concept' ? await fPromptConceptValid(sRoot, sCmd, fStatusIn) : null;
   if (sScopeIn === 'concept' && !oConcept) return;
   const aArgId = oConcept && oConcept.sId ? ['--id', oConcept.sId] : [];

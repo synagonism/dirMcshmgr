@@ -10,9 +10,12 @@
  *   - a-<p> | <div> para-concept (a-title "Y::" that is NOT a-section's own: name, description,
  *     X-tree, addressWpg, attribute, example ...; and McsLago names "<br>* McshXxxx."):
  *     that paragraph; any other para: its enclosing section.
+ * fFindConceptIdAt(sRawIn, nLineIn) → the-id of the-concept at a-0-based line (the-cursor):
+ *   the-para-concept holding it, else its enclosing section; '' = the-file-concept.
  */
 
 const aVersion = [
+  'conceptRange.js.0-2-0.2026-11-20: fFindConceptIdAt, the-concept at a-line (validate-concept from the-cursor); fIsCnptPara',
   'conceptRange.js.0-1-0.2026-11-17: creation, fFindConceptRange'
 ];
 
@@ -48,6 +51,52 @@ function fFindSectionOpen(aLineIn, nLineIn) {
   return -1;
 }
 
+/**
+ * OUTPUT: { bCnptPara, nClose }: is the-<p|div> sTagIn opened at line nAtIn (0-based) a-para-concept
+ *   (a-title "Y::" that is NOT a-section's own, with McsLago names), and its 0-based closing line (-1 none).
+ */
+function fIsCnptPara(aLineIn, nAtIn, sTagIn) {
+  const nClose = fFindClose(aLineIn, nAtIn, sTagIn);
+  if (nClose === -1) return { bCnptPara: false, nClose };
+  const sLineOpen = aLineIn[nAtIn];
+  const sPara = [sLineOpen.slice(sLineOpen.search(new RegExp(`<${sTagIn}\\b`))), ...aLineIn.slice(nAtIn + 1, nClose + 1)].join('\n');
+  const aTitle = sPara.match(new RegExp(`^<${sTagIn}\\b[^>]*>([^:\\n<]+)::`));
+  const bCnptPara = !!aTitle && !rTitleOfSect.test(aTitle[1].trim()) && rName.test(sPara);
+  return { bCnptPara, nClose };
+}
+
+/**
+ * OUTPUT: the-id of the-concept at line nLineIn (0-based) of a-Mcsh file, for validate-concept
+ *   from the-cursor: the-para-concept that holds the-line, else its enclosing section;
+ *   '' = the-file-concept (idOverview, or outside any section).
+ */
+function fFindConceptIdAt(sRawIn, nLineIn) {
+  const aLine = String(sRawIn ?? '').split('\n');
+  const nLine = Math.max(0, Math.min(Number(nLineIn) || 0, aLine.length - 1));
+  // a-para-concept: a-<p|div id> that is open at the-line, within the-same section
+  const rOpenPara = /<(p|div)\b[^>]*\bid="([^"]+)"/;
+  for (let nL = nLine; nL >= 0; nL--) {
+    const sLine = aLine[nL];
+    const aM = sLine.match(rOpenPara);
+    if (aM) {
+      const { bCnptPara, nClose } = fIsCnptPara(aLine, nL, aM[1].toLowerCase());
+      if (nClose >= nLine) {
+        if (bCnptPara) return aM[2];
+        break;                                    // inside a-section's own para
+      }
+    }
+    if (/<\/?section\b/.test(sLine)) break;
+
+  }
+  // the-section: on its </section> line, that section itself
+  const nFrom = /^\s*<\/section>/.test(aLine[nLine]) && nLine > 0 ? nLine - 1 : nLine;
+  const nOpen = fFindSectionOpen(aLine, nFrom);
+  if (nOpen === -1) return '';
+  const aId = aLine[nOpen].match(/<section\b[^>]*\bid="([^"]+)"/);
+  if (!aId || aId[1] === 'idOverview') return '';
+  return aId[1];
+}
+
 function fFindConceptRange(sRawIn, sIdIn) {
   const sId = String(sIdIn ?? '').trim();
   if (!sId || sId === 'idOverview') return null;
@@ -63,10 +112,7 @@ function fFindConceptRange(sRawIn, sIdIn) {
 
   let nFrom = -1, nTo = -1;
   if (sTag === 'p' || sTag === 'div') {
-    const nClose = fFindClose(aLine, nAt, sTag);
-    const sPara = nClose === -1 ? '' : aLine.slice(nAt, nClose + 1).join('\n');
-    const aTitle = sPara.match(new RegExp(`<${sTag}\\b[^>]*\\bid="${sIdEsc}"[^>]*>([^:\\n<]+)::`));
-    const bCnptPara = !!aTitle && !rTitleOfSect.test(aTitle[1].trim()) && rName.test(sPara);
+    const { bCnptPara, nClose } = fIsCnptPara(aLine, nAt, sTag);
     if (bCnptPara) { nFrom = nAt; nTo = nClose; }
   }
   if (nFrom === -1) {
@@ -83,4 +129,4 @@ function fFindConceptRange(sRawIn, sIdIn) {
   return { nLineFrom: nFrom + 1, nLineTo: nTo + 1, oSetId };
 }
 
-export { fFindConceptRange, aVersion as aVersionConceptRange };
+export { fFindConceptRange, fFindConceptIdAt, aVersion as aVersionConceptRange };

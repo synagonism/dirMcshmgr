@@ -2,8 +2,8 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.7.1",
-  "date": "2026-11-17",
+  "version": "0.8.0",
+  "date": "2026-11-20",
   "publisher": "synagonism",
   "private": true,
   "license": "MIT",
@@ -66,12 +66,12 @@
       },
       {
         "command": "mcshv.validConcept",
-        "title": "validate-concept: the concept of the URL bar (or another), report, or fix unambiguous inside it and report",
+        "title": "validate-concept: the concept of the cursor or URL bar (or another), report, or fix unambiguous inside it and report",
         "category": "Mcs"
       },
       {
         "command": "mcshv.validConceptRule",
-        "title": "validate-concept-with-rule: the concept of the URL bar (or another), report, or fix inside it and report, one rule",
+        "title": "validate-concept-with-rule: the concept of the cursor or URL bar (or another), report, or fix inside it and report, one rule",
         "category": "Mcs"
       },
       {

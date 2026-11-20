@@ -1724,12 +1724,12 @@
 },
 
 // V:: VALIDATE (Mcsh-visual-manager, valid menu)
-// v c c:: Validate Concept: the-concept of the-URL bar (or another), every rule, report or fix unambiguous and report
+// v c c:: Validate Concept: the-concept of the-cursor (para-concept, else section) | URL bar (or another), every rule, report or fix unambiguous and report
 {
   "key": "ctrl+alt+v c c",
   "command": "mcshv.validConcept"
 },
-// v c r:: Validate Concept with Rule: the-concept of the-URL bar (or another), a-rule, report or fix and report
+// v c r:: Validate Concept with Rule: the-concept of the-cursor | URL bar (or another), a-rule, report or fix and report
 {
   "key": "ctrl+alt+v c r",
   "command": "mcshv.validConceptRule"
