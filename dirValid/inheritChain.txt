@@ -1,6 +1,6 @@
-inheritance-chain of Hmmdlago (McshLag000007:20 #idOverview)
-  [Hmmdlago](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idOverview)
-  chain: entity → bodyNo → relation → RltnSameness → RltnMapping → Ogsmlago → Hmanlago → Ogmmlago → Hmmdlago
+inheritance-chain of Ogmulago (McshLag000005:273 #idLOgsmNtrl)
+  [Ogmulago](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmNtrl)
+  chain: entity → bodyNo → relation → RltnSameness → RltnMapping → Ogsmlago → Ogmulago
 === entity:
   [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
   [entity'02_attribute_relation](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatrrln)
@@ -29,31 +29,14 @@ inheritance-chain of Hmmdlago (McshLag000007:20 #idOverview)
   [RltnMapping'10_implementation](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgipln)
   .. [RltnMapping'DOING](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgdong)
 === Ogsmlago:
-  [Ogsmlago'11_user](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmentt)
-  [Ogsmlago'12_input|infoview](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsminpt)
-  [Ogsmlago'13_output|logoview](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmotpt)
-  [Ogsmlago'14_grammar](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmgrmr)
+  ~ [Ogsmlago'06_input](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsminpt)  overrides RltnMapping'06_input
+  ~ [Ogsmlago'07_output](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmotpt)  overrides RltnMapping'07_output
+  ~ [Ogsmlago'08_method](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmgrmr)  overrides RltnMapping'08_method
+  ~ [Ogsmlago'09_implementor](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmentt)  overrides RltnMapping'09_implementor
   .. [Ogsmlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmirsc)
   .. [Ogsmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmdong)
   .. [Ogsmlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmevog)
-=== Hmanlago:
-  (empty)
-=== Ogmmlago:
-  .. [Ogmmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmMinddong)
-=== Hmmdlago:
-  [Hmmdlago'15_manager](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmngr)
-  [Hmmdlago'16_channel](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdchnl)
-  [Hmmdlago'17_tech](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdtech)
-  ~ [Hmmdlago'21_grammar](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdgrmr)  overrides Ogsmlago'14_grammar  ✗ number must be 14_
-  ?? [Hmmdlago'user](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmduser)  inherits Ogsmlago'11_user: its number
-  ?? [Hmmdlago'input](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdinpt)  inherits RltnMapping'06_input: its number
-  ?? [Hmmdlago'output_(logo_view)](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdopt)  inherits Ogsmlago'13_output|logoview: its number
-  ?? [Hmmdlago'mapping_relations](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmprn)  → 22_
-  ?? [Hmmdlago'modality](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdmdlt)  → 23_
-  ?? [Hmmdlago'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdattMsc)  → 24_
-  .. [Hmmdlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdirsc)
-  ?? [Hmmdlago'linguistics](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdlgcs)  → 25_
-  .. [Hmmdlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmddong)
-  .. [Hmmdlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHmmdevog)
-  last: 21_
+=== Ogmulago:
+  [Ogmulago'11_inconsistency](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmNtrlicstc)
+  last: 11_
 

@@ -1,10 +1,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:\dirNodews\dirMcsh (file McshCor000005)
+  INHERITANCE SYNC — dry run: C:/dirNodews/dirMcsh (file McshLag000005)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29876 sections · 5339 specifics under a-numbered generic · 4291 of their attributes · 1192 match a-numbered generic-attribute
-  titles changed: 9
-  name:: paragraphs changed: 7
-  NN_last names changed: 4
+  258 files · 29876 sections · 5341 specifics under a-numbered generic · 4291 of their attributes · 1199 match a-numbered generic-attribute
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
@@ -17,24 +14,11 @@ SUMMARY
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
   INH-EMPTY         0  an-inherited attribute that says nothing new (no info, no link): delete?
   INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL         0  an-attribute in 3+ specifics, not in the-generic: lift it up?
-  INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
+  INH-LOCAL         1  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-REFBROKEN     1  a-text-reference name!@File#id whose file or id does NOT exist
   INH-GNTRTEXT      0  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
   INH-TITLENAME     0  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  INH-TITLEHAND     0  a-numbered attribute whose title-name needs a-hand
-
-=== ORDER-FIXED (0) — attribute-sections moved into NN order
-
-=== APPLIED (9) — NN_ written into the-h-title
-  McshCor000005:3593  "09_possessum of RltnPossession"  → 07_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:3575  "08_possessor of RltnPossession"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:3518  "08_thinking of RltnProbability"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:3381  "08_belief of RltnBelief"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:3325  "08_thought of RltnInfoPossessor"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:3104  "08_complement-Argt of RltnDialectic"  → 06_  ← relation'05_valence@McshCor000005#idRlnvlc
-  McshCor000005:2623  "11_relation-to-corelation of RltnCausality"  → 09_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
-  McshCor000005:2596  "10_effect of RltnCausality"  → 08_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
-  McshCor000005:2395  "09_cause of RltnCausality"  → 07_  ← RltnDialectic'06_complement-Argt@McshCor000005#idRlnDcascpltarg
+  INH-TITLEHAND     1  a-numbered attribute whose title-name needs a-hand
 
 === INH-NONUM (0) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
 
@@ -52,40 +36,36 @@ SUMMARY
 
 === INH-GNTRTEXT (0) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
 
-=== TITLENAME-APPLIED (7) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  McshCor000005:3593  "07_possessum of RltnPossession"  renamed RltnPossession'09_possessum → RltnPossession'07_possessum
-  McshCor000005:3575  "06_possessor of RltnPossession"  renamed RltnPossession'08_possessor → RltnPossession'06_possessor
-  McshCor000005:3381  "06_belief of RltnBelief"  renamed RltnBelief'08_belief → RltnBelief'06_belief
-  McshCor000005:3104  "06_complement-Argt of RltnDialectic"  renamed RltnDialectic'08_complement_Argt → RltnDialectic'06_complement_Argt
-  McshCor000005:2623  "09_relation-to-corelation of RltnCausality"  renamed RltnCausality'11_relation_to_corelation → RltnCausality'09_relation_to_corelation
-  McshCor000005:2596  "08_effect of RltnCausality"  renamed RltnCausality'10_effect → RltnCausality'08_effect
-  McshCor000005:2395  "07_cause of RltnCausality"  renamed RltnCausality'09_cause → RltnCausality'07_cause
+=== INH-TITLENAME (0) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
 
-=== INH-TITLEHAND (0) — a-numbered attribute whose title-name needs a-hand
+=== INH-TITLEHAND (1) — a-numbered attribute whose title-name needs a-hand
+  McshLag000005:126  "09_implementor of Ogsmlago"  the-main-name Ogmlimpler is NOT in this name::
 
-=== INH-REFBROKEN (0) — a-text-reference name!@File#id whose file or id does NOT exist
+=== INH-REFBROKEN (1) — a-text-reference name!@File#id whose file or id does NOT exist
+  McshLag000005:237  "!@McshStn000007#idSoctOgmsatt009"  no #idSoctOgmsatt009 in McshStn000007
 
 === INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
 
-=== INH-LOCAL (0) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+=== INH-LOCAL (1) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  doing of Ogsmlago@McshLag000005  ×3  McshLag000005:341 McshLag000007:31429 McshTchInf000005:574
 
-=== INFO (328) — how many specifics refine each numbered generic-attribute
+=== INFO (330) — how many specifics refine each numbered generic-attribute
     115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
      60  disease'04_therapy@McshHlth000011#idDssHmn004F
      50  disease'01_symptom@McshHlth000011#idDssHmn001F
      45  disease'02_cause@McshHlth000011#idDssHmn002F
      45  disease'05_protection@McshHlth000011#idDssHmn005F
      42  foodCooked'27_recipe@McshHlth000013#idFoodHmn050att001
+     31  Ogsmlago'07_output@McshLag000005#idLOgsmotpt
      26  food'24_ingredient@McshHlth000013#idFoodHmnatt001
      19  organ'01_disease@McshHlth000002#idOgnHmnatt004
      18  society'43_human_view@McshStn000009#idSocHumnatt021
      18  AgntBkcn'17_protocol@McshTchInf000016#idDbcprl
-     17  RltnMapping'07_output@McshCor000005#idRlnMpgmdl
      17  societyOgsm'29_language@McshStn000007#idSoctOgsmatt009
      17  society'44_economic_view@McshStn000009#idSocHumnatt007
      16  AgntBkcn'30_blockchain@McshTchInf000016#idDbcdat
      12  food'03_evaluation@McshHlth000013#idFoodHmneval
-     12  Ogsmlago'13_output|logoview@McshLag000005#idLOgsmotpt
+     11  model'12_evaluation@McshCor000012#idMdleval
      11  doing'04_argument@McshCor000004#idDngatt001
      11  Ognssyst'02_organ@McshHlth000002#idSysOgnHmnatt001
      11  disease'07_stats@McshHlth000011#idDssHmnatt008
@@ -100,8 +80,7 @@ SUMMARY
       9  AgntBkcn'23_wallet@McshTchInf000016#idDbcwlt
       8  entity'01_attribute@McshCor000003#idEntatt
       8  DissInfectiousViral'05_protection@McshHlth000011#idDssHmn162protection
-      7  model'12_evaluation@McshCor000012#idMdleval
-      7  RltnMapping'06_input@McshCor000005#idRlnMpgarch
+      7  Ogsmlago'06_input@McshLag000005#idLOgsminpt
       7  Cmprlago'20_output@McshTchInf000005#idLCmpropt
       7  Knlglago'02_input@McshTchInf000039#idLKnlginpt
       6  Knlglago'04_manager@McshTchInf000039#idLKnlgmngr
@@ -115,7 +94,6 @@ SUMMARY
       4  organ'07_shape@McshHlth000002#idOgnHmnatt008
       4  disease'03_diagnosis_doing@McshHlth000011#idDssHmn003
       4  satisfier'06_law@McshStn000010#idSfrHmnatt011
-      4  Ogsmlago'14_grammar@McshLag000005#idLOgsmgrmr
       4  ChmcElry'23_usage@McshNtr000007#idChmElratt012
       4  OgznOgsm'32_member@McshStn000006#idOznOgmatt003
       3  entity'03_expression@McshCor000003#idEntexrn
@@ -184,7 +162,8 @@ SUMMARY
       2  food'21_price@McshHlth000013#idFoodHmnatt012
       2  satisfier'01_human@McshStn000010#idSfrHmnatt008
       2  medication'17_indication@McshHlth000014#idMedHmnatt002
-      2  Ogsmlago'11_user@McshLag000005#idLOgsmentt
+      2  Ogsmlago'09_implementor@McshLag000005#idLOgsmentt
+      2  Ogsmlago'08_method@McshLag000005#idLOgsmgrmr
       2  model'06_node@McshCor000012#idMdlatt005
       2  model'09_unit@McshCor000012#idMdlatt008
       2  Hmmdlogo'09_unit@McshLag000007#idLHmmdunt
@@ -312,6 +291,9 @@ SUMMARY
       1  cell'01_disease@McshHlth000004#idCellHmnatt001
       1  Senssyst'01_disease@McshHlth000019#idSysNrvsatt016disease
       1  worldview'19_concept@McshLag000003#idWldvatt003
+      1  RltnMapping'06_input@McshCor000005#idRlnMpgarch
+      1  RltnMapping'07_output@McshCor000005#idRlnMpgmdl
+      1  RltnMapping'09_implementor@McshCor000005#idRlnMpgiplr
       1  model'17_medium@McshCor000012#idMdlatt004
       1  Textlago'20_output@McshLag000007#idLTextopt
       1  text'09_unit@McshLag000007#idLTextoptunit

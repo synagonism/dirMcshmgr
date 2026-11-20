@@ -51,6 +51,8 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-21-3.2026-11-20: fFindInheritAttr reads the-WHOLE worldview (the-dir with dirNamidx), also when validate-file gives a-sub-dir',
+    'inheritMcsh.mjs.0-21-2.2026-11-19: a-link-stub whose target is NOT read (or broken: Hvre06) is skipped, NOT a-TITLEHAND',
     'inheritMcsh.mjs.0-21-1.2026-11-19: --fix-stub: ONLY the-names at the-link-targets of link-stubs',
     'inheritMcsh.mjs.0-21-0.2026-11-19: --fix-name: a-link-stub "06_input of M (link)" gets its name at the-link target (M\'08_input → M\'06_input, or M\'06_input next to M\'input)',
     'inheritMcsh.mjs.0-20-0.2026-11-19: INH-OWNNUM also a-GAP: the-own numbers start RIGHT after the-chain (last 05, 08_input → 06_input)',
@@ -843,11 +845,12 @@ function fCheckTitleName(aoFileIn, fInFileIn) {
   // the-name:: plan at the-target of a-link-stub: null (nothing to do), { sWhy } (by hand), or a-plan
   const fStubName = (oNodeIn, sTnIn, sOfIn, sWordIn, sPlainIn) => {
     const aHref = (oNodeIn.sHrefStub ?? '').match(/^(?:.*?\/)?(?:([^/#]+)\.last\.html)?#([^#]+)$/);
-    if (!aHref) return { sWhy: `link-stub: its href "${oNodeIn.sHrefStub}" is NOT file#id` };
+    // a-target NOT read here (another file set, a-broken link: Hvre06 reports it) is skipped, NOT an-issue
+    if (!aHref) return null;
     const sStem = aHref[1] ?? oNodeIn.sNameShort, sIdTarget = aHref[2];
     const oFileT = aoFileIn.find(oF => oF.sNameShort === sStem);
     const oNodeT = oFileT?.aoNode.find(oN => oN.sId === sIdTarget);
-    if (!oNodeT) return { sWhy: `link-stub: its target ${sStem}#${sIdTarget} is NOT found` };
+    if (!oNodeT) return null;
     const sSectT = oFileT.sText.slice(oNodeT.nStart, oNodeT.nEnd);
     const nSubT = sSectT.indexOf('<section', 1);
     const aParaT = (nSubT > 0 ? sSectT.slice(0, nSubT) : sSectT).match(rNamePara);
@@ -1415,8 +1418,17 @@ function fMain() {
 // the-last result of fFindInheritAttr: { sKey, aoOut }; createMcsh calls it once per file
 let oMemoInherit = null;
 function fFindInheritAttr(sNameDirIn) {
+  // the-WHOLE worldview, also when the-validator is given a-sub-dir (validate-file gives dirLag):
+  //   a-generic may be in another dir (RltnMapping of Ogsmlago is in dirCor). the-root has dirNamidx.
+  let sRoot = moPath.resolve(sNameDirIn);
+  for (let sDir = sRoot, nI = 0; nI < 6; nI++) {
+    if (moFs.existsSync(moPath.join(sDir, 'dirNamidx'))) { sRoot = sDir; break; }
+    const sUp = moPath.dirname(sDir);
+    if (sUp === sDir) break;
+    sDir = sUp;
+  }
   // the-key: the-paths, sizes and times of the-files; a-written file makes a-new key
-  const aPath = fFindFile_all(sNameDirIn);
+  const aPath = fFindFile_all(sRoot);
   const sKey = aPath.map(sPath => { const oS = moFs.statSync(sPath); return `${sPath}|${oS.size}|${oS.mtimeMs}`; }).join('\n');
   if (oMemoInherit?.sKey === sKey) return oMemoInherit.aoOut;
   const aoOut = fFindInheritAttrRead(aPath);
