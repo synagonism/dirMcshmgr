@@ -201,6 +201,8 @@ export function fInitMcshv_bridge() {
     // line + scroll first so we land back where we were.
     cmdAddLine: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'lineAfter', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
     cmdRemoveLine: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'lineDelete', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
+    // edit/insert/para/description-and-name (Ctrl+Alt+P P P): before the-paragraph of the-clicked line
+    cmdInsertParaDsnNam: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'paraDsnNam', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
     // Character inserts (also on chords ctrl+alt+c …) — insert verbatim at the caret.
     cmdCharArrow1: function () { fInsertChar('⭢'); },
     cmdCharArrow2: function () { fInsertChar('⇒'); },
@@ -290,8 +292,13 @@ export function fInitMcshv_bridge() {
         }; })(oE.text);
       }
     });
+    // the-chords of the-viewer's own commands: NOT in keybindings.json as type/insertSnippet
+    for (var sChord in oLocalChords) o[sChord] = oCommands[oLocalChords[sChord]];
     oChordCmds = o;
   }
+  // Ctrl+Alt+P P P: a-runCommands keybinding in VS Code, here the-viewer's command
+  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam' };
+  fSetChords([]);
 
   // Built-in fallback — used until (and if) the extension pushes the map it
   // parsed from keybindings.json (see the `shortcuts` message below).

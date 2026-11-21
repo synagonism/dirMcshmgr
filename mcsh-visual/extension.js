@@ -314,6 +314,7 @@ function fActivate(context) {
   );
   // Ctrl+Alt+V F F from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
   context.subscriptions.push(
+    vscode.commands.registerCommand('mcshv.insertParaDsnNam', fInsertParaDsnNam),
     vscode.commands.registerCommand('mcshv.validConcept', () =>
       fRunValidConcept((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
     vscode.commands.registerCommand('mcshv.validConceptRule', () =>
@@ -597,6 +598,12 @@ function fCreateProvider(context) {
       } else if (msg.op === 'lineDelete') {
         const r = omModel.fBuildLineDelete(sText, nOff);
         if (r) oEdit = { s: r.removeS, e: r.removeE, text: '' };
+      } else if (msg.op === 'paraDsnNam') {
+        // before the-line of the-clicked line's <p>
+        const nP = sText.lastIndexOf('<p', nOff);
+        const oPara = omModel.fBuildParaDsnNam(sText, sText.lastIndexOf('\n', nP) + 1, fDateToday());
+        if (!oPara) { fStatus('no section above the clicked line'); return true; }
+        oEdit = { s: oPara.nAt, e: oPara.nAt, text: oPara.sInsert };
       }
       if (!oEdit) return false;
       const oRange = new vscode.Range(oActiveDoc.positionAt(oEdit.s), oActiveDoc.positionAt(oEdit.e));
@@ -993,14 +1000,14 @@ function fBuildShell(webview, url) {
   #idUrl{flex:1 1 auto;min-width:120px;align-self:stretch;box-sizing:border-box;border:1px solid var(--line);border-radius:4px;background:#1e1e1e;color:var(--fg);padding:0 8px;font:12px ui-monospace,monospace;outline:none}
   #idUrl:focus{border-color:var(--accent)}
   #idMenuWrap{position:relative;display:flex}
-  #idMenu{position:absolute;left:0;top:calc(100% + 2px);min-width:150px;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none;z-index:20}
+  #idMenu{position:absolute;left:0;top:calc(100% + 2px);width:max-content;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none;z-index:20}
   #idMenu.clsOpen{display:block}
   .clsGrp{font:600 10px system-ui;text-transform:uppercase;letter-spacing:.04em;opacity:.55;padding:6px 10px 2px}
-  .clsItem{position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:2px 10px;border-radius:4px;color:var(--fg);cursor:pointer;white-space:nowrap}
+  .clsItem{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:2px 10px;border-radius:4px;color:var(--fg);cursor:pointer;white-space:nowrap}
   .clsItem:hover{background:var(--accent);color:#fff}
-  .clsItem .clsKbd{opacity:.5;font:11px ui-monospace,monospace}
+  .clsItem .clsKbd{opacity:.5;font:11px ui-monospace,monospace;white-space:nowrap;flex:none}
   .clsItem.clsHasSub>.clsCaret{opacity:.6}
-  .clsSubmenu{position:absolute;left:100%;top:-5px;min-width:120px;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none}
+  .clsSubmenu{position:absolute;left:100%;top:-5px;width:max-content;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none}
   .clsItem.clsHasSub:hover>.clsSubmenu{display:block}
   .clsSep{height:1px;background:var(--line);margin:4px 2px}
   #idStatus{position:absolute;left:8px;bottom:6px;font:11px system-ui;color:#bbb;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:10px;z-index:15;pointer-events:none;opacity:0;transition:opacity .2s}
@@ -1039,6 +1046,15 @@ function fBuildShell(webview, url) {
               <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
               <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
               <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">Ctrl+Alt+C P M</span></div>
+            </div>
+          </div>
+          <div class="clsItem clsHasSub">insert<span class="clsCaret">&#9656;</span>
+            <div class="clsSubmenu">
+              <div class="clsItem clsHasSub">para<span class="clsCaret">&#9656;</span>
+                <div class="clsSubmenu">
+                  <div class="clsItem" title="before the para of the clicked line: the description:: and name:: of its section" data-cmd="cmdInsertParaDsnNam">description-and-name<span class="clsKbd">Ctrl+Alt+P P P</span></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="clsItem" data-cmd="cmdAddLine">add line</div>
@@ -1762,6 +1778,33 @@ async function fPickRuleValid(sDirValid, sWhatIn, fStatusIn) {
   if (!oRule) return null;                                // Escape: nothing
   sCodeLast = oRule.sCode;
   return oRule;
+}
+
+/** OUTPUT: today as YYYY-MM-DD, local time (as the-snippet ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}). */
+function fDateToday() {
+  const oNow = new Date();
+  const fTwo = (nIn) => String(nIn).padStart(2, '0');
+  return `${oNow.getFullYear()}-${fTwo(oNow.getMonth() + 1)}-${fTwo(oNow.getDate())}`;
+}
+
+/**
+ * DOING: edit/insert/para/description-and-name (Ctrl+Alt+P P P) in a-source tab: before the-cursor
+ *   line, the-description:: and name:: paragraphs of its section (omModel.fBuildParaDsnNam), in one edit,
+ *   no clipboard; the-cursor after "<br>· " to write the-description.
+ *   The-visual editor does it by its bridge (structure op paraDsnNam).
+ */
+async function fInsertParaDsnNam() {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  const oDoc = oEd.document;
+  const nOffLine = oDoc.offsetAt(new vscode.Position(oEd.selection.active.line, 0));
+  const oPara = omModel.fBuildParaDsnNam(oDoc.getText(), nOffLine, fDateToday());
+  if (!oPara) return vscode.window.setStatusBarMessage('Mcs: no section above the cursor', 4000);
+  const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oPara.nAt), oPara.sInsert));
+  if (!bOk) return;
+  const oPos = oDoc.positionAt(oPara.nAt + oPara.nCursor);
+  oEd.selection = new vscode.Selection(oPos, oPos);
+  oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
 }
 
 function fDeactivate() {}

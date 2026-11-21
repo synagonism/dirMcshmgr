@@ -1,86 +1,86 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   createMcsh --auto --file McshLag000007 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1 files written · dupname 1 · attribute 1 · MvrwGstr03_inherited_attr 10 · MvrwMain11_line 2 · 70 skipped
+  1 files written · dupname 5 · attribute 3 · MvrwGstr03_inherited_attr 10 · MvrwMain11_line 2 · 64 skipped
   written, no backup: see git diff
 
-=== SKIP (70) — skipped, with why: fix by hand
-  McshLag000007:995  #idLHmmdsmsondosmatCps1 has no description:: and id idLHmmdsmsondosmatCps1dsn is taken
-  McshLag000007:4280  #idLHmmdsmsvrbmbr037 has no description:: and id idLHmmdsmsvrbmbr037dsn is taken
-  McshLag000007:4298  #idLHmmdsmsvrbmbr038 has no description:: and id idLHmmdsmsvrbmbr038dsn is taken
-  McshLag000007:100  #idLHmmdipt1 "input1 of Hmmdinfoview": the-title has "(…)" or "{…}" inside, by hand
-  McshLag000007:173  #idLHmmdipt2 "input2 of Hmmdinfoview": the-title has "(…)" or "{…}" inside, by hand
-  McshLag000007:243  #idLHmmdipt3 "input3 of Hmmdinfoview": the-title has "(…)" or "{…}" inside, by hand
-  McshLag000007:5072  #idLHmmdsmsvrbmbr081 "Hmmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3": not "X'y", "X.y" or "x of X" with X a-name of VerbSmsatom: by hand
-  McshLag000007:2830  #idLHmmdsmsvrbattTmucPst "Hmmdsmvbatt.past of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:2865  #idLHmmdsmsvrbattTmucPstN "Hmmdsmvbatt.pastNo of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:2881  #idLHmmdsmsvrbattTmucPrt "Hmmdsmvbatt.present of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:2898  #idLHmmdsmsvrbattTmplPrtN "Hmmdsmvbatt.presentNo of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:2914  #idLHmmdsmsvrbattTmplFtr "Hmmdsmvbatt.future of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:2958  #idLHmmdsmsvrbattTmplFtrN "Hmmdsmvbatt.futureΝο of Hmmdsemuverb": "Hmmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hmmdsemuverb: by hand
-  McshLag000007:26577  #idLHmmdvbat "verb-argument of Hmmdsent": "Hmmdsent" is not a-name of Hmmdlogo, the-section may belong to Hmmdsent: by hand
-  McshLag000007:29761  #idLHmmdsctn "title-sentence-system of Hmmdlogo": the-title has "(…)" or "{…}" inside, by hand
-  McshLag000007:23568  #idLHmmdverbmbrprtA "form-part of Hmmdvbmb": "Hmmdvbmb" is not a-name of Hmmdverb, the-section may belong to Hmmdvbmb: by hand
-  McshLag000007:28146  #idLHmmdvbatWithwhat "Hmmdvbat.with-what- of Hmmdlogo": the-title has "(…)" or "{…}" inside, by hand
-  McshLag000007:17694  #idLHmmdsylbStrt "HmmdSylb.start of word": "word" is not a-name of HmmdSylb, the-section may belong to word: by hand
-  McshLag000007:17708  #idLHmmdsylbMdl "HmmdSylb.middle of word": "word" is not a-name of HmmdSylb, the-section may belong to word: by hand
-  McshLag000007:17722  #idLHmmdsylbEnd "HmmdSylb.end of word": "word" is not a-name of HmmdSylb, the-section may belong to word: by hand
-  McshLag000007:19936  #idLHmmdname019nmga "ActgNaming diminutive": not "X'y", "X.y" or "x of X" with X a-name of diminutive: by hand
-  McshLag000007:19976  #idLHmmdname020nmga "ActgNaming augmentative": not "X'y", "X.y" or "x of X" with X a-name of augmentative: by hand
-  McshLag000007:25619  #idLHmmdConjPrep "adposition.preposition": not "X'y", "X.y" or "x of X" with X a-name of HmmdconjAdposition: by hand
-  McshLag000007:25675  #idLHmmdConjPost "adposition.postposition": not "X'y", "X.y" or "x of X" with X a-name of HmmdconjAdposition: by hand
-  McshLag000007:25740  #idLHmmdConjCirc "adposition.circuposition": not "X'y", "X.y" or "x of X" with X a-name of HmmdconjAdposition: by hand
-  McshLag000007:27104  #idLHmmdsbjtThm "Hmmd_sbjt.theme of Hmmdlogo": "Hmmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:27122  #idLHmmdsbjtPnt "Hmmd_sbjt.patient of Hmmdlogo": "Hmmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:27140  #idLHmmdsbjc "Hmmd_sbjt.subject-complement of Hmmdlogo": "Hmmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:27261  #idLHmmdobt "Hmmd_sbjt.object of Hmmdlogo": "Hmmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:27405  #idLHmmdobt2 "Hmmd_sbjt.indirect-object of Hmmdlogo": "Hmmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:27741  #idLHmmdvbatSdtn "Hmmdvbat.space-direction of Hmmdlogo": "Hmmdlogo" is not a-name of HmmdvaSpace, the-section may belong to Hmmdlogo: by hand
-  McshLag000007:29006  #idLHmmdansr "answer": not "X'y", "X.y" or "x of X" with X a-name of sentenceAsk: by hand
-  McshLag000007:18609  #idLHmmdnameTrmwrdstr: heading not found
-  McshLag000007:22565  #idLHmmdverbmbrPrstPS "present.simple of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22598  #idLHmmdverbmbrPrstPP "present.perfect of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22629  #idLHmmdverbmbrPrstPSP "present.simple-passive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22661  #idLHmmdverbmbrPrstPPP "present.perfect-passive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22692  #idLHmmdverbmbrPrstPC "present.progressive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22724  #idLHmmdverbmbrPrstPPC "present.perfect-progressive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22756  #idLHmmdverbmbrPrstPCP "present.progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22788  #idLHmmdverbmbrPrstPPCP "present.perfect-progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of Hmmdverb_present, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22875  #idLHmmdverbmbrPastPS "past.simple of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22904  #idLHmmdverbmbrPastPP "past.perfect of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22937  #idLHmmdverbmbrPastPSP "past.simple-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22968  #idLHmmdverbmbrPastPPP "past.perfect-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:22997  #idLHmmdverbmbrPastPC "past.progressive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23025  #idLHmmdverbmbrPastPPC "past.perfect-progressive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23055  #idLHmmdverbmbrPastPCP "past.progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23085  #idLHmmdverbmbrPastPPCP "past.perfect-progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrPast, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23167  #idLHmmdverbmbrFutrFS "future.simple of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23196  #idLHmmdverbmbrFutrFP "future.perfect of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23223  #idLHmmdverbmbrFutrFSP "future.simple-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23254  #idLHmmdverbmbrFutrFPP "future.perfect-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23283  #idLHmmdverbmbrFutrFC "future.progressive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23309  #idLHmmdverbmbrFutrFPC "future.perfect-progressive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23339  #idLHmmdverbmbrFutrFCP "future.progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:23368  #idLHmmdverbmbrFutrFPCP "future.perfect-progressive-passive of Hmmdverb": "Hmmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hmmdverb: by hand
-  McshLag000007:30997  #idLHmmdknwrNtv "knower.native": not "X'y", "X.y" or "x of X" with X a-name of Hmmdhumn: by hand
-  McshLag000007:31018  #idLHmmdknwrNtvN "knower.nativeNo": not "X'y", "X.y" or "x of X" with X a-name of Hmmdhumn: by hand
-  McshLag000007:1230  #idEntSmsDfntOne in dirCor/McshCor000003.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:1235  #idEntSmsDfntOneN in dirCor/McshCor000003.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:1636  #idLHmmdknwrEcdr in dirLag/McshLag000007.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:1866  #idLHmmdknwrDcdr in dirLag/McshLag000007.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:15082  #idDngatt001Drnstr in dirCor/McshCor000004.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:15146  #idDngatt001With in dirCor/McshCor000004.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:15786  #idSys002Wlpt in dirCor/McshCor000008.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:19163  #idMcsattNamDzrCnptr in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:28130  #idRlnCausestx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:28194  #idRlnGoalstx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:31488  #idBrngHmnFct011 in dirCor/McshCor000018.last.html: 0 ids differ only in case, fix by hand
+=== SKIP (64) — skipped, with why: fix by hand
+  McshLag000007:100  #idLHnmdipt1 "input1 of Hnmdinptview": the-title has "(…)" or "{…}" inside, by hand
+  McshLag000007:175  #idLHnmdipt2 "input2 of Hnmdinptview": the-title has "(…)" or "{…}" inside, by hand
+  McshLag000007:247  #idLHnmdipt3 "input3 of Hnmdinptview": the-title has "(…)" or "{…}" inside, by hand
+  McshLag000007:5093  #idLHnmdsmsvrbmbr081 "Hnmdsmvbmb.081_real_prst_ins_actN_prf_irgN_afmN_VerbCnptmbr.081_real_prst_ins_actN_prf_irgN_afmN_sin_3sin_3": not "X'y", "X.y" or "x of X" with X a-name of VerbSmsatom: by hand
+  McshLag000007:2845  #idLHnmdsmsvrbattTmucPst "Hnmdsmvbatt.past of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:2880  #idLHnmdsmsvrbattTmucPstN "Hnmdsmvbatt.pastNo of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:2896  #idLHnmdsmsvrbattTmucPrt "Hnmdsmvbatt.present of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:2913  #idLHnmdsmsvrbattTmplPrtN "Hnmdsmvbatt.presentNo of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:2929  #idLHnmdsmsvrbattTmplFtr "Hnmdsmvbatt.future of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:2973  #idLHnmdsmsvrbattTmplFtrN "Hnmdsmvbatt.futureΝο of Hnmdsemuverb": "Hnmdsemuverb" is not a-name of VerbSmstense, the-section may belong to Hnmdsemuverb: by hand
+  McshLag000007:26410  #idLHnmdvbat "43_verb-argument of Hnmdsent": "Hnmdsent" is not a-name of Hnmdlogo, the-section may belong to Hnmdsent: by hand
+  McshLag000007:23399  #idLHnmdverbmbrprtA "form-part of Hnmdvbmb": "Hnmdvbmb" is not a-name of Hnmdverb, the-section may belong to Hnmdvbmb: by hand
+  McshLag000007:27980  #idLHnmdvbatWithwhat "Hnmdvbat.with-what- of Hnmdlogo": the-title has "(…)" or "{…}" inside, by hand
+  McshLag000007:17523  #idLHnmdsylbStrt "HnmdSylb.start of word": "word" is not a-name of HnmdSylb, the-section may belong to word: by hand
+  McshLag000007:17537  #idLHnmdsylbMdl "HnmdSylb.middle of word": "word" is not a-name of HnmdSylb, the-section may belong to word: by hand
+  McshLag000007:17551  #idLHnmdsylbEnd "HnmdSylb.end of word": "word" is not a-name of HnmdSylb, the-section may belong to word: by hand
+  McshLag000007:19765  #idLHnmdname019nmga "ActgNaming diminutive": not "X'y", "X.y" or "x of X" with X a-name of diminutive: by hand
+  McshLag000007:19805  #idLHnmdname020nmga "ActgNaming augmentative": not "X'y", "X.y" or "x of X" with X a-name of augmentative: by hand
+  McshLag000007:25451  #idLHnmdConjPrep "adposition.preposition": not "X'y", "X.y" or "x of X" with X a-name of HnmdconjAdposition: by hand
+  McshLag000007:25507  #idLHnmdConjPost "adposition.postposition": not "X'y", "X.y" or "x of X" with X a-name of HnmdconjAdposition: by hand
+  McshLag000007:25572  #idLHnmdConjCirc "adposition.circuposition": not "X'y", "X.y" or "x of X" with X a-name of HnmdconjAdposition: by hand
+  McshLag000007:26938  #idLHnmdsbjtThm "Hnmd_sbjt.theme of Hnmdlogo": "Hnmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:26956  #idLHnmdsbjtPnt "Hnmd_sbjt.patient of Hnmdlogo": "Hnmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:26974  #idLHnmdsbjc "Hnmd_sbjt.subject-complement of Hnmdlogo": "Hnmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:27095  #idLHnmdobt "Hnmd_sbjt.object of Hnmdlogo": "Hnmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:27239  #idLHnmdobt2 "Hnmd_sbjt.indirect-object of Hnmdlogo": "Hnmdlogo" is not a-name of VerbargtSbjt, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:27575  #idLHnmdvbatSdtn "Hnmdvbat.space-direction of Hnmdlogo": "Hnmdlogo" is not a-name of HnmdvaSpace, the-section may belong to Hnmdlogo: by hand
+  McshLag000007:28842  #idLHnmdansr "answer": not "X'y", "X.y" or "x of X" with X a-name of sentenceAsk: by hand
+  McshLag000007:18438  #idLHnmdnameTrmwrdstr: heading not found
+  McshLag000007:22396  #idLHnmdverbmbrPrstPS "present.simple of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22429  #idLHnmdverbmbrPrstPP "present.perfect of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22460  #idLHnmdverbmbrPrstPSP "present.simple-passive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22492  #idLHnmdverbmbrPrstPPP "present.perfect-passive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22523  #idLHnmdverbmbrPrstPC "present.progressive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22555  #idLHnmdverbmbrPrstPPC "present.perfect-progressive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22587  #idLHnmdverbmbrPrstPCP "present.progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22619  #idLHnmdverbmbrPrstPPCP "present.perfect-progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of Hnmdverb_present, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22706  #idLHnmdverbmbrPastPS "past.simple of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22735  #idLHnmdverbmbrPastPP "past.perfect of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22768  #idLHnmdverbmbrPastPSP "past.simple-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22799  #idLHnmdverbmbrPastPPP "past.perfect-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22828  #idLHnmdverbmbrPastPC "past.progressive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22856  #idLHnmdverbmbrPastPPC "past.perfect-progressive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22886  #idLHnmdverbmbrPastPCP "past.progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22916  #idLHnmdverbmbrPastPPCP "past.perfect-progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrPast, the-section may belong to Hnmdverb: by hand
+  McshLag000007:22998  #idLHnmdverbmbrFutrFS "future.simple of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23027  #idLHnmdverbmbrFutrFP "future.perfect of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23054  #idLHnmdverbmbrFutrFSP "future.simple-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23085  #idLHnmdverbmbrFutrFPP "future.perfect-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23114  #idLHnmdverbmbrFutrFC "future.progressive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23140  #idLHnmdverbmbrFutrFPC "future.perfect-progressive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23170  #idLHnmdverbmbrFutrFCP "future.progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:23199  #idLHnmdverbmbrFutrFPCP "future.perfect-progressive-passive of Hnmdverb": "Hnmdverb" is not a-name of VerbmebrFuture, the-section may belong to Hnmdverb: by hand
+  McshLag000007:31034  #idLHnmdknwrNtv "knower.native": not "X'y", "X.y" or "x of X" with X a-name of Hnmdhumn: by hand
+  McshLag000007:31055  #idLHnmdknwrNtvN "knower.nativeNo": not "X'y", "X.y" or "x of X" with X a-name of Hnmdhumn: by hand
+  McshLag000007:1242  #idEntSmsDfntOne in dirCor/McshCor000003.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:1247  #idEntSmsDfntOneN in dirCor/McshCor000003.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:15105  #idDngatt001Drnstr in dirCor/McshCor000004.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:15169  #idDngatt001With in dirCor/McshCor000004.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:16243  #idSys002Wlpt in dirCor/McshCor000008.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:18992  #idMcsattNamDzrCnptr in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:27967  #idRlnCausestx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:28031  #idRlnGoalstx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:31527  #idBrngHmnFct011 in dirCor/McshCor000018.last.html: 0 ids differ only in case, fix by hand
 
-=== DUPNAME (1) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01_duplicate_line)
-  McshLag000007:31225  McshEngl.Hmmdlago'tech!⇒Hmmdtech
+=== DUPNAME (5) — a-name-line written twice in ONE para: the-line without date | info deleted (MvreName01_duplicate_line)
+  McshLag000007:15547  McshEngl.Hnmdlago'logoview!⇒Hnmdlogo
+  McshLag000007:15581  McshEngl.info-of-Hnmdlogo!⇒Hnmdinfo
+  McshLag000007:29798  McshEngl.Hnmdlogo'semuview_relation!⇒Hnmdlogotosemurltn
+  McshLag000007:29811  McshEngl.Hnmdinfo'denoting_relation
+  McshLag000007:29815  McshEngl.Hnmdinfo'denoting_relation
 
-=== ATTR (1) — MvrwMain10_attribute: an-attribute | specific title set to "x of M" | "M.x" and its formal name M'x | M.x added
-  McshLag000007:30054  #idLHmmdmprn  "mapping_relations of Hmmdgrmr"  + McshEngl.Hmmdgrmr'mapping_relations
+=== ATTR (3) — MvrwMain10_attribute: an-attribute | specific title set to "x of M" | "M.x" and its formal name M'x | M.x added
+  McshLag000007:21139  #idLHnmdargosmsrn  "relation-to--semu-view of Hnmdargu"  + McshEngl.Hnmdargu'relation_to_semu_view
+  McshLag000007:23557  #idLHnmdverbsmsrn  "semu-view-relation of Hnmdverb"  + McshEngl.Hnmdverb'semu_view_relation
+  McshLag000007:24689  #idLHnmdconjddrn  "semu-view-relation of Hnmdconj"  + McshEngl.Hnmdconj'semu_view_relation
 
 === NOISSUE (22) — the-rule has no issue in the-file
   McshLag000007  MvrwId01_char: nothing to fix
@@ -107,10 +107,10 @@
   McshLag000007  MvrwMisc01_date: nothing to fix
 
 === INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
-  titles changed: 121
-  name:: paragraphs changed: 76
-  NN_last names changed: 16
-  INH-NONUM         1  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  titles changed: 1
+  name:: paragraphs changed: 2
+  NN_last names changed: 1
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
   INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
   INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
@@ -119,8 +119,8 @@
   written: see dirValid/inheritMcsh.txt
 
 === NOFIX (1) — no automatic fix for this rule: it needs you
-  McshLag000007  MvrwGstr03_inherited_attr (2): left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::
+  McshLag000007  MvrwGstr03_inherited_attr (1): left by hand: own numbering, NN taken, a-title that is NOT a-name, no name::
 
 === MAIN (2) — 
-  McshLag000007:30108  Hmmdmapgrltn: first "mapping-relations-of-Hmmdlago!⇒Hmmdmapgrltn", second "Hmmdmapgrltn!=mapping-relations-of-Hmmdlago"
-  McshLag000007:31269  Hmmdtech: first "Hmmdlago'tech!⇒Hmmdtech", second "Hmmdtech!=Hmmdlago'tech"
+  McshLag000007:23542  Hnmdverb_semu_relation: first "Hnmdverb_semu_relation"
+  McshLag000007:24675  Hnmdconj_decoding_relation: first "Hnmdconj_decoding_relation"

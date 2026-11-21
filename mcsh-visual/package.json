@@ -2,8 +2,8 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.8.0",
-  "date": "2026-11-20",
+  "version": "0.9.3",
+  "date": "2026-11-21",
   "publisher": "synagonism",
   "private": true,
   "license": "MIT",
@@ -62,6 +62,11 @@
       {
         "command": "mcshv.makeSectFile",
         "title": "Make current-sect-concept McshFile-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertParaDsnNam",
+        "title": "insert-para-description-and-name: before the cursor line, the description:: and name:: of its section",
         "category": "Mcs"
       },
       {

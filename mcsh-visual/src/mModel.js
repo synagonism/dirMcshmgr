@@ -239,8 +239,47 @@ function fParseNameFirst(sName) {
   return { sInformal: '', sMain: '' };
 }
 
+/**
+ * DOING: the-description:: and name:: paragraphs of the-section above nOffLineIn, to insert
+ *   at the-start of that line (edit/insert/para/description-and-name, Ctrl+Alt+P P P).
+ *   The-section: the-nearest `<section id="X">` before it; the-ids Xdsn, Xnam.
+ *   The-first name, from the-heading of the-section: "x of y" → y'x ("_" for space and
+ *   hyphen: "09_grammar of Ogsmlago" → Ogsmlago'09_grammar), else the-heading as is.
+ * INPUT: sTextIn: the-file; nOffLineIn: the-offset of a-line start; sDateIn: YYYY-MM-DD.
+ * OUTPUT: { nAt, sInsert, nCursor } (nCursor: in sInsert, after "<br>· "), or null (no section above).
+ */
+function fBuildParaDsnNam(sTextIn, nOffLineIn, sDateIn) {
+  // the-ENCLOSING section: a-sub-section closed above the-line does not count
+  const rSect = /<section\b[^>]*\bid="([^"]+)"|<\/section>/g;
+  const aoOpen = [];
+  for (const aM of sTextIn.slice(0, nOffLineIn).matchAll(rSect)) {
+    if (aM[1] !== undefined) aoOpen.push(aM); else aoOpen.pop();
+  }
+  const aSect = aoOpen[aoOpen.length - 1];
+  if (!aSect) return null;
+  const sId = aSect[1];
+  // the-heading: the-first <hN> after the-section tag, its first line
+  const aHead = /<h([1-6])\b[^>]*>([^\n]*?)(?:\n|<\/h\1>)/.exec(sTextIn.slice(aSect.index));
+  const sHead = aHead ? aHead[2].replace(/<[^>]*>/g, '').trim() : '';
+  // a-formal-name has "_" for space and hyphen (MvrwName01_formal), NOT inside {…} (…)
+  const fFormal = (sIn) => sIn.trim().split(/(\{[^}]*\}|\([^)]*\))/)
+    .map((sPart, nI) => nI % 2 ? sPart : sPart.replace(/&#32;|\s+/g, '_').replace(/-/g, '_')).join('');
+  const aOf = sHead.match(/^(.+?) of (\S.*)$/);
+  const sName = aOf ? fFormal(aOf[2]) + "'" + fFormal(aOf[1]) : sHead;
+  const sDsn = `  <p id="${sId}dsn">description::\n` +
+    `    <br>× Mcsh-creation: {${sDateIn}}\n` +
+    `    <br>· `;
+  const sInsert = sDsn + '\n' +
+    `    <a class="clsHide" href="#${sId}dsn"></a></p>\n` +
+    `  <p id="${sId}nam">name::\n` +
+    `    <br>* McshEngl.${sName},\n` +
+    `    <a class="clsHide" href="#${sId}nam"></a></p>\n`;
+  return { nAt: nOffLineIn, sInsert, nCursor: sDsn.length };
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
   fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
+  fBuildParaDsnNam,
 };
