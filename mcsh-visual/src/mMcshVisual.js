@@ -203,6 +203,10 @@ export function fInitMcshv_bridge() {
     cmdRemoveLine: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'lineDelete', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
     // edit/insert/para/description-and-name (Ctrl+Alt+P P P): before the-paragraph of the-clicked line
     cmdInsertParaDsnNam: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'paraDsnNam', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
+    // edit/insert/sect/tree-… (Ctrl+Alt+P T G|W|P): the-tree of the-clicked line's concept, at its place
+    cmdInsertTreeGenSpe: function () { fInsertTree('gs'); },
+    cmdInsertTreeWholePart: function () { fInsertTree('wp'); },
+    cmdInsertTreeParentChild: function () { fInsertTree('pc'); },
     // Character inserts (also on chords ctrl+alt+c …) — insert verbatim at the caret.
     cmdCharArrow1: function () { fInsertChar('⭢'); },
     cmdCharArrow2: function () { fInsertChar('⇒'); },
@@ -296,8 +300,14 @@ export function fInitMcshv_bridge() {
     for (var sChord in oLocalChords) o[sChord] = oCommands[oLocalChords[sChord]];
     oChordCmds = o;
   }
-  // Ctrl+Alt+P P P: a-runCommands keybinding in VS Code, here the-viewer's command
-  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam' };
+  // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
+  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe',
+    'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild' };
+  function fInsertTree(sKindIn) {
+    if (!oLastSpan) return fNotify('click a line first');
+    fSaveState(oLastSpan);
+    fPost({ type: 'structure', op: 'tree', sKind: sKindIn, id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord });
+  }
   fSetChords([]);
 
   // Built-in fallback — used until (and if) the extension pushes the map it
@@ -640,6 +650,8 @@ export function fInitMcshv_bridge() {
     if (d.type === 'ids') fDoAnnotate(new Set(d.ids || []));
     else if (d.type === 'shortcuts') { if (Array.isArray(d.list) && d.list.length) fSetChords(d.list); } // auto-synced from keybindings.json
     else if (d.type === 'cmd') { if (oCommands[d.cmd]) oCommands[d.cmd](); }
+    // the-host: go to a-section (a-tree that exists already)
+    else if (d.type === 'gotoId') { if (d.id) location.hash = d.id; }
     // Host returned the href from its input box (cmdUrl) → wrap the stashed selection.
     else if (d.type === 'applyUrl') {
       var oSel = oPendingUrlSel; oPendingUrlSel = null;

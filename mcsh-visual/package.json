@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.9.3",
+  "version": "0.10.0",
   "date": "2026-11-21",
   "publisher": "synagonism",
   "private": true,
@@ -67,6 +67,21 @@
       {
         "command": "mcshv.insertParaDsnNam",
         "title": "insert-para-description-and-name: before the cursor line, the description:: and name:: of its section",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertTreeGenSpe",
+        "title": "insert-sect-tree-gen-spe: before the cursor line, the GENERIC-SPECIFIC-TREE section of its concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertTreeWholePart",
+        "title": "insert-sect-tree-whole-part: before the cursor line, the WHOLE-PART-TREE section of its concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertTreeParentChild",
+        "title": "insert-sect-tree-parent-child: before the cursor line, the PARENT-CHILD-TREE section of its concept",
         "category": "Mcs"
       },
       {

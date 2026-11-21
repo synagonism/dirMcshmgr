@@ -315,6 +315,9 @@ function fActivate(context) {
   // Ctrl+Alt+V F F from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.insertParaDsnNam', fInsertParaDsnNam),
+    vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
+    vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
+    vscode.commands.registerCommand('mcshv.insertTreeParentChild', () => fInsertTree('pc')),
     vscode.commands.registerCommand('mcshv.validConcept', () =>
       fRunValidConcept((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
     vscode.commands.registerCommand('mcshv.validConceptRule', () =>
@@ -602,8 +605,19 @@ function fCreateProvider(context) {
         // before the-line of the-clicked line's <p>
         const nP = sText.lastIndexOf('<p', nOff);
         const oPara = omModel.fBuildParaDsnNam(sText, sText.lastIndexOf('\n', nP) + 1, fDateToday());
-        if (!oPara) { fStatus('no section above the clicked line'); return true; }
+        if (!oPara) { fStatus('no section above the clicked line'); return 'none'; }
         oEdit = { s: oPara.nAt, e: oPara.nAt, text: oPara.sInsert };
+      } else if (msg.op === 'tree') {
+        // the-automatic place in the-clicked line's concept (omModel.fBuildTree)
+        const oTree = omModel.fBuildTree(sText, nOff, msg.sKind, fDateToday(), true);
+        if (oTree.sWhy) { fStatus(oTree.sWhy); return 'none'; }
+        if (oTree.nAtExist != null) {
+          const sIdExist = (sText.slice(oTree.nAtExist).match(/id="([^"]+)"/) || [])[1];
+          fStatus('the tree exists: #' + sIdExist);
+          fToChrome({ type: 'gotoId', id: sIdExist });
+          return 'none';
+        }
+        oEdit = { s: oTree.nAt, e: oTree.nAt, text: oTree.sInsert };
       }
       if (!oEdit) return false;
       const oRange = new vscode.Range(oActiveDoc.positionAt(oEdit.s), oActiveDoc.positionAt(oEdit.e));
@@ -717,6 +731,7 @@ function fCreateProvider(context) {
           }
           case 'structure': {
             const bOk = await fApplyStructure(msg);
+            if (bOk === 'none') break;      // nothing to insert (a-message is shown): no save
             if (bOk) await document.save(); // format + write + reload via onDidSave
             else { fStatus('line op out of sync — reloading'); fReloadFrame(); }
             break;
@@ -1053,6 +1068,13 @@ function fBuildShell(webview, url) {
               <div class="clsItem clsHasSub">para<span class="clsCaret">&#9656;</span>
                 <div class="clsSubmenu">
                   <div class="clsItem" title="before the para of the clicked line: the description:: and name:: of its section" data-cmd="cmdInsertParaDsnNam">description-and-name<span class="clsKbd">Ctrl+Alt+P P P</span></div>
+                </div>
+              </div>
+              <div class="clsItem clsHasSub">sect<span class="clsCaret">&#9656;</span>
+                <div class="clsSubmenu">
+                  <div class="clsItem" title="the GENERIC-SPECIFIC-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeGenSpe">tree-gen-spe<span class="clsKbd">Ctrl+Alt+P T G</span></div>
+                  <div class="clsItem" title="the WHOLE-PART-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeWholePart">tree-whole-part<span class="clsKbd">Ctrl+Alt+P T W</span></div>
+                  <div class="clsItem" title="the PARENT-CHILD-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeParentChild">tree-parent-child<span class="clsKbd">Ctrl+Alt+P T P</span></div>
                 </div>
               </div>
             </div>
@@ -1805,6 +1827,34 @@ async function fInsertParaDsnNam() {
   const oPos = oDoc.positionAt(oPara.nAt + oPara.nCursor);
   oEd.selection = new vscode.Selection(oPos, oPos);
   oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
+}
+
+/**
+ * DOING: edit/insert/sect/tree-gen-spe | tree-whole-part | tree-parent-child (Ctrl+Alt+P T G|W|P) in
+ *   a-source tab: before the-cursor line, the-tree section of the-cursor's concept (omModel.fBuildTree),
+ *   in one edit, no clipboard; the-cursor at the-end of its first "<br>===" line.
+ *   The-tree exists: the-cursor goes to it. No main-name: a-message, nothing inserted.
+ *   The-visual editor does it by its bridge (structure op tree, the-automatic place).
+ * INPUT: sKindIn: 'gs' | 'wp' | 'pc'.
+ */
+async function fInsertTree(sKindIn) {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  const oDoc = oEd.document;
+  const nOffLine = oDoc.offsetAt(new vscode.Position(oEd.selection.active.line, 0));
+  const oTree = omModel.fBuildTree(oDoc.getText(), nOffLine, sKindIn, fDateToday(), false);
+  if (oTree.sWhy) return vscode.window.setStatusBarMessage('Mcs: ' + oTree.sWhy, 6000);
+  const fGo = (nIn) => {
+    const oPos = oDoc.positionAt(nIn);
+    oEd.selection = new vscode.Selection(oPos, oPos);
+    oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
+  };
+  if (oTree.nAtExist != null) {
+    vscode.window.setStatusBarMessage('Mcs: the tree exists', 4000);
+    return fGo(oTree.nAtExist);
+  }
+  const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oTree.nAt), oTree.sInsert));
+  if (bOk) fGo(oTree.nAt + oTree.nCursor);
 }
 
 function fDeactivate() {}

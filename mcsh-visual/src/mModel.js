@@ -277,9 +277,165 @@ function fBuildParaDsnNam(sTextIn, nOffLineIn, sDateIn) {
   return { nAt: nOffLineIn, sInsert, nCursor: sDsn.length };
 }
 
+// the-3 tree sections of a-concept X with main-name M (edit/insert/sect/tree-…); as the-worldview's
+const ooTreeKind = {
+  gs: { sSect: 'gstr', sTitle: 'GENERIC-SPECIFIC-TREE', sName: 'generic_specific_tree', aoPara: [
+    { sId: 'gntr', sLabel: 'generic-tree', sFirst: ':generic', aRest: ['* ...entity:generic,'] },
+    { sId: 'sptr', sLabel: 'specific-tree', sFirst: '.specific', aRest: [] }] },
+  wp: { sSect: 'wptr', sTitle: 'WHOLE-PART-TREE', sName: 'whole_part_tree', aoPara: [
+    { sId: 'wltr', sLabel: 'whole-tree', sFirst: '//whole', aRest: ['* ...sympan//whole,'] },
+    { sId: 'prtr', sLabel: 'part-tree', sFirst: '/part', aRest: [] }] },
+  pc: { sSect: 'pctr', sTitle: 'PARENT-CHILD-TREE', sName: 'parent_child_tree', aoPara: [
+    { sId: 'pntr', sLabel: 'parent-tree', sFirst: ';;parent', aRest: [] },
+    { sId: 'chtr', sLabel: 'child-tree', sFirst: ';child', aRest: [] }] }
+};
+
+/** OUTPUT: the-index of the-</section> that closes the-<section at nOpenIn, or -1. */
+function fFindSectClose(sTextIn, nOpenIn) {
+  const rTag = /<section\b|<\/section>/g;
+  rTag.lastIndex = nOpenIn;
+  let nDepth = 0, aM;
+  while ((aM = rTag.exec(sTextIn)) !== null) {
+    nDepth += aM[0] === '</section>' ? -1 : 1;
+    if (nDepth === 0) return aM.index;
+  }
+  return -1;
+}
+
+/**
+ * OUTPUT: the-concept section enclosing nOffIn: the-innermost open section with a-name:: para in
+ *   its own text (before its first sub-section), NOT a-tree section (…-TREE of): { sId, nOpen, nClose,
+ *   nLevel, sOwn }, or null.
+ */
+function fFindSectConceptAt(sTextIn, nOffIn) {
+  const rSect = /<section\b[^>]*\bid="([^"]+)"|<\/section>/g;
+  const aoOpen = [];
+  for (const aM of sTextIn.slice(0, nOffIn).matchAll(rSect)) {
+    if (aM[1] !== undefined) aoOpen.push(aM); else aoOpen.pop();
+  }
+  for (let nI = aoOpen.length - 1; nI >= 0; nI--) {
+    const nOpen = aoOpen[nI].index;
+    const nClose = fFindSectClose(sTextIn, nOpen);
+    if (nClose < 0) continue;
+    const nSub = sTextIn.indexOf('<section', nOpen + 8);
+    const sOwn = sTextIn.slice(nOpen, nSub > 0 && nSub < nClose ? nSub : nClose);
+    const aHead = sOwn.match(/<h([1-6])\b[^>]*>([^\n]*)/);
+    if (!aHead || /-TREE of /.test(aHead[2]) || !/<p\b[^>]*>name::/.test(sOwn)) continue;
+    return { sId: aoOpen[nI][1], nOpen, nClose, nLevel: Number(aHead[1]), sOwn };
+  }
+  return null;
+}
+
+/**
+ * OUTPUT: the-main-name of a-concept: the-most frequent "!⇒" target of its own name:: that is ALSO
+ *   a-name-line of it; and the-set of its English names. { sMain ('' = none), oSetName }.
+ */
+function fFindMainName(sOwnIn) {
+  const aPara = sOwnIn.match(/<p\b[^>]*>name::[\s\S]*?<\/p>/);
+  const oSetName = new Set();
+  const oCountTarget = new Map();
+  for (const aL of (aPara ? aPara[0] : '').matchAll(/<br>\*\s*McshEngl\.([^\n,]+),/g)) {
+    oSetName.add(aL[1].split('!')[0].split('~')[0].trim());
+    const aT = aL[1].match(/!⇒([^!]+)/);
+    if (aT) oCountTarget.set(aT[1].trim(), (oCountTarget.get(aT[1].trim()) || 0) + 1);
+  }
+  const aTarget = [...oCountTarget.entries()].sort((aA, aB) => aB[1] - aA[1]).map((aE) => aE[0]);
+  return { sMain: aTarget.find((sT) => oSetName.has(sT)) || '', oSetName };
+}
+
+/**
+ * DOING: a-tree section (edit/insert/sect/tree-gen-spe | tree-whole-part | tree-parent-child,
+ *   Ctrl+Alt+P T G|W|P) of the-concept at nOffIn.
+ *   Its place: bAutoIn false = the-start of the-line of nOffIn (a-source tab, before the-cursor line);
+ *   true (the-visual editor) = among the-concept's sub-sections: parent-child, whole-part, gen-spe, in this
+ *   order, before the-first specific "N.y" (N a-name of the-concept), else before its </section>.
+ * INPUT: sKindIn: 'gs' | 'wp' | 'pc'; sDateIn: YYYY-MM-DD.
+ * OUTPUT: { nAt, sInsert, nCursor (in sInsert: the-end of the-first "<br>===" line) }
+ *   | { nAtExist: the-offset of the-existing tree section } | { sWhy }.
+ */
+function fBuildTree(sTextIn, nOffIn, sKindIn, sDateIn, bAutoIn) {
+  const oKind = ooTreeKind[sKindIn];
+  const oCnpt = fFindSectConceptAt(sTextIn, nOffIn);
+  if (!oCnpt) return { sWhy: 'no concept section (with name::) here' };
+  const sX = oCnpt.sId;
+  const { sMain, oSetName } = fFindMainName(oCnpt.sOwn);
+  if (!sMain) return { sWhy: `#${sX} has no main-name (x!⇒Main): add it first` };
+  // it exists: by its id, or by its heading (the-file concept's trees are top-level: idEntgstr of idOverview)
+  let nExist = sTextIn.indexOf(`<section id="${sX}${oKind.sSect}"`);
+  if (nExist < 0) {
+    const aH = new RegExp(`<h[1-6]\\b[^>]*>${oKind.sTitle} of ${sMain.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*\\n`).exec(sTextIn);
+    if (aH) nExist = sTextIn.lastIndexOf('<section', aH.index);
+  }
+  if (nExist >= 0) return { nAtExist: nExist };
+  if (sX === 'idOverview') return { sWhy: 'the trees of the file concept are top-level sections: write them by hand' };
+
+  const fLineStart = (nIn) => sTextIn.lastIndexOf('\n', nIn - 1) + 1;
+  let nAt;
+  if (!bAutoIn) {
+    nAt = fLineStart(nOffIn);
+  } else {
+    // the-direct sub-sections of the-concept: { sId, sTitle, nStart (line), nEnd (after its </section> line) }
+    const aoChild = [];
+    const rTag = /<section\b[^>]*\bid="([^"]+)"|<\/section>/g;
+    rTag.lastIndex = oCnpt.nOpen + 8;
+    let nDepth = 0, aM, oCur = null;
+    while ((aM = rTag.exec(sTextIn)) !== null && aM.index < oCnpt.nClose) {
+      if (aM[1] !== undefined) {
+        if (nDepth === 0) {
+          const aHead = sTextIn.slice(aM.index, aM.index + 400).match(/<h[1-6]\b[^>]*>([^\n<]*)/);
+          oCur = { sId: aM[1], sTitle: aHead ? aHead[1].trim() : '', nStart: fLineStart(aM.index) };
+          aoChild.push(oCur);
+        }
+        nDepth++;
+      } else if (--nDepth === 0 && oCur) {
+        oCur.nEnd = sTextIn.indexOf('\n', aM.index) + 1;
+      }
+    }
+    const fChild = (sSuffixIn) => aoChild.find((oC) => oC.sId === sX + sSuffixIn);
+    const oSpec = aoChild.find((oC) => {
+      const aS = oC.sTitle.match(/^([^\s.]+)\.\S/);
+      return aS && !/ of /.test(oC.sTitle) && oSetName.has(aS[1]);
+    });
+    const oPc = fChild('pctr'), oWp = fChild('wptr'), oGs = fChild('gstr');
+    const nBefore = (sKindIn === 'pc' ? (oWp || oGs || oSpec) : sKindIn === 'wp' ? (oGs || oSpec) : oSpec)?.nStart
+      ?? fLineStart(oCnpt.nClose);
+    // NOT before an-earlier tree: whole-part after parent-child, gen-spe after both
+    const aoAfter = sKindIn === 'gs' ? [oPc, oWp] : sKindIn === 'wp' ? [oPc] : [];
+    nAt = Math.max(nBefore, ...aoAfter.filter(Boolean).map((oC) => oC.nEnd + (sTextIn[oC.nEnd] === '\n' ? 1 : 0)));
+  }
+
+  const nLevel = Math.min(oCnpt.nLevel + 1, 6);
+  const sS = sX + oKind.sSect;
+  const aLine = [
+    `  <section id="${sS}">`,
+    `  <h${nLevel} id="${sS}H${nLevel}">${oKind.sTitle} of ${sMain}`,
+    `    </h${nLevel}>`,
+    `  <p id="${sS}dsn">description::`,
+    `    <br>× Mcsh-creation: {${sDateIn}}`,
+    `    <a class="clsHide" href="#${sS}dsn"></a></p>`,
+    `  <p id="${sS}nam">name::`,
+    `    <br>* McshEngl.${sMain}'${oKind.sName},`,
+    `    <a class="clsHide" href="#${sS}nam"></a></p>`
+  ];
+  for (const oPara of oKind.aoPara) {
+    aLine.push(`  <p id="${sX}${oPara.sId}">${oPara.sLabel}::`,
+      `    <br>* McshEngl.${sMain}${oPara.sFirst},`,
+      '    <br>===',
+      ...oPara.aRest.map((sR) => `    <br>${sR}`),
+      `    <a class="clsHide" href="#${sX}${oPara.sId}"></a></p>`);
+  }
+  aLine.push('  </section>');
+  // a-blank line between sections; a-source insert is preceded by one (as the-keybindings)
+  const sBody = aLine.join('\n') + '\n';
+  const sBlank = !bAutoIn || sTextIn.slice(fLineStart(nAt - 1), nAt).trim() !== '' ? '\n' : '';
+  const sInsert = bAutoIn && nAt !== fLineStart(oCnpt.nClose) ? sBody + '\n' : sBlank + sBody;
+  const nEq = sInsert.indexOf('<br>===');
+  return { nAt, sInsert, nCursor: nEq + '<br>==='.length };
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
   fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
-  fBuildParaDsnNam,
+  fBuildParaDsnNam, fBuildTree,
 };
