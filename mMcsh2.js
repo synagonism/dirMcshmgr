@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-19-0.2026-11-22: a-generic X!@File#idOverview uses the-generic-tree of the-TOP "GENERIC-SPECIFIC-TREE of M" section, NOT the-first gntr of the-file',
     'mMcsh2.js.27-18-0.2026-11-19: dblclick on "X\'NN_last" (name::) gives X\'attribute, NOT X\'attributeChain (the-head of generic-tree:: still gives it)',
     'mMcsh2.js.27-17-0.2026-11-19: dblclick on Mmn\'attribute: the-numbered attributes, own and inherited, 01, 02, .. (nearer wins), then the-others',
     'mMcsh2.js.27-16-0.2026-11-19: attributeChain is-ordered 01, 02, ..: the-generics from entity to the-nearest; a-closing ===; no arrow for the-same NN_name',
@@ -1446,8 +1447,15 @@ let fContainersInsert = function () {
     if (!oGntr && sId.endsWith('nam')) oGntr = oDoc.getElementById(sId.slice(0, -3) + 'gntr')
     if (!oGntr) oGntr = oDoc.getElementById(sId + 'gntr')
     if (!oGntr && sId === 'idOverview') {
-      oGntr = [...oDoc.querySelectorAll('p[id$="gntr"]')]
-        .find(oPIn => !oDoc.getElementById(oPIn.id.slice(0, -4) + 'nam')) || null
+      const aoP = [...oDoc.querySelectorAll('p[id$="gntr"]')]
+      // the-file-concept's generic-tree is in the-TOP "GENERIC-SPECIFIC-TREE of M" section (h1),
+      //   NOT the-first gntr of the-file (McshLag000007: input1 of Hnmdlago comes first)
+      oGntr = aoP.find(function (oPIn) {
+        const oSect = oPIn.closest('section')
+        if (!oSect || (oSect.parentElement && oSect.parentElement.closest('section'))) return false
+        const oH = oSect.querySelector('h1')
+        return !!oH && /^\s*GENERIC-SPECIFIC-TREE\b/.test(oH.textContent)
+      }) || aoP.find(oPIn => !oDoc.getElementById(oPIn.id.slice(0, -4) + 'nam')) || null
     }
     return oGntr ? {oGntr: oGntr, sUrl: sUrlIn.split('#')[0] + '#' + oGntr.id} : null
   }

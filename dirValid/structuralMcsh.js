@@ -88,6 +88,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-80-0.2026-11-22: MvrwMain10 a-question title "M.x?" has the-name "M.x" (the-final "?" dropped)',
     'structuralMcsh.js.0-79-0.2026-11-19: MvrwMain10 a-new name is written "x (N)" (dropped like every "(…)"); "|" is "or" | content, NOT a-new name',
     'structuralMcsh.js.0-78-0.2026-11-19: MvrwMain10 title "x|N" (N the-new name): the-whole title is tried, then "x"',
     'structuralMcsh.js.0-77-0.2026-11-19: MvrwMain10 tree titles with M at either end: x//M (x part of whole M), x/M, x;;M, x;M',
@@ -1034,7 +1035,8 @@ function fCheckMainNameHuman(aoCnptFile) {
 //   The-file-concept is checked too: its direct parts are the-top sections, not idOverview, idMeta, idSupport;
 //   its issues say "of file-concept".
 // "millennium.3000!={2001..3000}": the-"!={…}" (an-equality note) goes whole, NOT only its {…}
-const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/!=\{[^}]*\}/g, '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+// a-question title "EnglvmIndi.197_dare_(he)_write?": its final "?" is NOT in the-name
+const fNormMvrwMain10 = sIn => String(sIn ?? '').replace(/!=\{[^}]*\}/g, '').replace(/\{[^}]*\}|\([^)]*\)/g, '').replace(/\s+/g, ' ').trim().replace(/\?$/, '');
 // a-tree title after M: "//x" whole, "/x" part, ";;x" parent, ";x" child
 const rTreeTitleMvrwMain10 = /^(\/\/|\/|;;|;)[^\s\/;]/;
 // a-tree title before M: "x//" (x part of whole M), "x/", "x;;" (x child of parent M), "x;"

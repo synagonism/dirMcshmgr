@@ -1,35 +1,27 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INHERITANCE SYNC — APPLIED: C:\dirNodews\dirMcsh (file McshLag000011)
+  INHERITANCE SYNC — dry run: C:/dirNodews/dirMcsh (sub Hnmdlago: 183 concepts)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  258 files · 29884 sections · 5350 specifics under a-numbered generic · 4281 of their attributes · 1254 match a-numbered generic-attribute
-  titles changed: 2
-  name:: paragraphs changed: 2
-  NN_last names changed: 1
+  258 files · 29915 sections · 5350 specifics under a-numbered generic · 4225 of their attributes · 1281 match a-numbered generic-attribute
   Rule: a-specific-attribute takes the-NN_ of the-generic-attribute it refines;
         a-specific WITHOUT an-attribute inherits it, it is NOT an-issue.
 
 SUMMARY
-  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-NONUM         1  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
   INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
-  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-OWNNONUM     59  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
   INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
   INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
   INH-EMPTY         0  an-inherited attribute that says nothing new (no info, no link): delete?
   INH-GENDUP        0  a-numbered generic gives the-same NN_ to two attributes: renumber
-  INH-LOCAL         0  an-attribute in 3+ specifics, not in the-generic: lift it up?
+  INH-LOCAL        12  an-attribute in 3+ specifics, not in the-generic: lift it up?
   INH-REFBROKEN     0  a-text-reference name!@File#id whose file or id does NOT exist
-  INH-GNTRTEXT      1  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
+  INH-GNTRTEXT      0  a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
   INH-TITLENAME     0  a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  INH-TITLEHAND     2  a-numbered attribute whose title-name needs a-hand
+  INH-TITLEHAND    14  a-numbered attribute whose title-name needs a-hand
 
-=== ORDER-FIXED (0) — attribute-sections moved into NN order
-
-=== APPLIED (2) — NN_ written into the-h-title
-  McshLag000011:30714  "member of Englsemuargu"  → 19_  ← Hnmdsemuargu'19_member@McshLag000007#idLHnmdsmsondombr
-  McshLag000011:1764  "phonemes of Engl_word"  → 14_  ← word'13_science@McshLag000007#idLHnmdwrdsci
-
-=== INH-NONUM (0) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+=== INH-NONUM (1) — matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  McshTchInf000007:939  "output of Cnptlago"  → 05_ ✗ own numbering of the-specific: by hand  ← Knlglago'05_output@McshTchInf000039#idLKnlgotpt
 
 === INH-WRONGNUM (0) — its NN_ differs from the-generic-attribute (own numbering? by hand)
 
@@ -39,35 +31,116 @@ SUMMARY
 
 === INH-LAST (0) — a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
 
-=== INH-OWNNONUM (0) — an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+=== INH-OWNNONUM (59) — an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  McshLag000011:31325  "relation-to-lagoSpchEngl of lagoAlfaEngl"  → 15_  (last 14_ ← Textlago'14_writing@McshLag000007#idLTextwrtg)
+  McshLag000011:31275  "relation-to-lagoAlfaEngl of lagoSpchEngl"  → 15_  (last 14_ ← Textlago'14_writing@McshLag000007#idLTextwrtg)
+  McshLag000018:21810  "Small-Seal-Script of Zhon_textlago"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:21756  "TTS of Zhon_textlago"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:21557  "accent of Zhon_Spchlago"  → 24_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:21346  "tone of Zhon_Spchlago"  → 23_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:20692  "final-sound of Zhon_Spchlago"  → 22_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:20633  "initial-sound of Zhon_Spchlago"  → 21_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:19835  "pinyin of Zhon_Spchlago"  → 20_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:19803  "phonetic-transcription of Zhon_Spchlago"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000018:19179  "dialect of Zhodlago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000018:18183  "verb of Ptstlago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000018:17532  "evaluation of Zhonlago"  → 19_  (last 18_ ← model'18_mapping_unit@McshCor000012#idMdlatt007)
+  McshLag000020:13129  "relation-to-lagoSpchElln of lagoAlfaElln"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000027:8512  "wordary of EllaHomeric"  → 14_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8322  "double-consonant of lagoSpchElla"  → 18_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8235  "pitch-accent of lagoSpchElla"  → 17_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8218  "long-short-vowel of lagoSpchElla"  → 16_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8201  "three-way-stops of lagoSpchElla"  → 15_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8176  "classical-letter-phoneme-mapping of lagoSpchElla"  → 14_  (last 13_ ← Ellalago'13_relation-to-BaltoSlavic@McshLag000027#idLEllarlbs)
+  McshLag000027:8085  "Classical_ of Ellalago{Bce0500..Bce0300}"  → 17_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000027:8066  "Archaic_ of Ellalago{Bce0800..Bce0500}"  → 16_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000027:8049  "Dark_ of Ellalago{Bce1100..Bce0800}"  → 15_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000027:7156  "evaluation of Ellalago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000028:2049  "unit of Ellrlago"  → 18_  (last 17_ ← Ell0lago'17_Proto-Greek-{cBce2000}@McshLag000028#idLEllp)
+  McshLag000028:2007  "ambiguity of Ellblago"  → 19_  (last 17_ ← Ell0lago'17_Proto-Greek-{cBce2000}@McshLag000028#idLEllp)
+  McshLag000028:1994  "unit of Ellblago"  → 18_  (last 17_ ← Ell0lago'17_Proto-Greek-{cBce2000}@McshLag000028#idLEllp)
+  McshLag000028:1951  "noun of Ellclago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000028:1637  "unit of Ellklago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000029:300  "received-pronunciation of Engblago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000030:8309  "old-Turkic-alphabet of lagoAlfaTurk"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000030:8273  "phoneme of lagoSpchTurk"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000034:6148  "letter of Ssrplago"  → 14_  (last 13_ ← Bcmslago'13_evaluation@McshLag000034#idLBcmseval)
+  McshLag000034:5120  "letter of Scnrlago"  → 14_  (last 13_ ← Bcmslago'13_evaluation@McshLag000034#idLBcmseval)
+  McshLag000034:4617  "letter of Shrvlago"  → 14_  (last 13_ ← Bcmslago'13_evaluation@McshLag000034#idLBcmseval)
+  McshLag000034:3634  "letter of Sboslago"  → 14_  (last 13_ ← Bcmslago'13_evaluation@McshLag000034#idLBcmseval)
+  McshLag000036:3413  "phoneme of Araelago"  → 14_  (last 13_ ← Arablago'13_evaluation@McshLag000036#idLArabeval)
+  McshLag000036:3293  "phoneme of Araslago"  → 14_  (last 13_ ← Arablago'13_evaluation@McshLag000036#idLArabeval)
+  McshLag000038:1994  "ProtoSlavic of Slv0Lago"  → 15_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000038:1945  "BaltoSlavic of Slv0Lago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1857  "Germanic-languages of Ide0lago"  → 17_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1821  "Romance-languages of Ide0lago"  → 16_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1803  "Hittite-language of Ide0lago"  → 15_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1716  "verb of Ptielago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1621  "phoneme of Ptielago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000039:1545  "ProtoIndoEuropean of Ide0lago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000040:1848  "verb of Ptaalago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000040:1771  "ProtoAfroAsiatic of Afa0lago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000041:1870  "Oghuz-languages of Tur0lago"  → 15_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000041:1767  "verb of Pttklago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshLag000041:1691  "ProtoTurkic of Tur0lago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshStn000038:1671  "relation-to-NorthMacedoniaLango of Sbullago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshStn000039:2186  "ProtoAlbanian of Sqiplago"  → 15_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshStn000039:2148  "parent-tree of Sqiplago"  → 14_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshStn000039:2024  "evaluation of Sqiplago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshStn000041:1359  "relation to Croatian of Sslvlago"  → 13_  (last 12_ ← Hnmdlago'12_organization@McshLag000007#idLHnmdogzn)
+  McshTchInf000007:3257  "tool of CptlXmlg"  → 17_  (last 15_ ← Cnptlago'15_evaluation@McshTchInf000007#idLCnpteval)
+  McshTchInf000009:2186  "Mcsh-site of Mcshlago"  → 17_  (last 15_ ← Cnptlago'15_evaluation@McshTchInf000007#idLCnpteval)
+  McshTchInf000009:1668  "worldview of Mcshlago"  → 16_  (last 15_ ← Cnptlago'15_evaluation@McshTchInf000007#idLCnpteval)
 
 === INH-ORDER (0) — the-attributes of a-specific are not in the-NN order of its generic
 
-=== INH-GNTRTEXT (1) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
-  McshLag000011:1996  #idLEnglsylbatt001  lagoHmnm-syllabication (plain name): not defined, no concept named lagoHmnm-syllabication
+=== INH-GNTRTEXT (0) — a-generic "X:generic" in generic-tree:: that does NOT resolve to one concept
 
-=== TITLENAME-APPLIED (2) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
-  McshLag000011:30714  "19_member of Englsemuargu"  added Englsemuargu'19_member!⇒Englsmagmb; Englsmagmb !=Englsemuargu'19_member (was !=member-of-Englsemuargu); Englsemuargu'19_member, Englsmagmb moved first
-  McshLag000011:1764  "14_phonemes of Engl_word"  added Engl_word'14_phonemes!⇒word_phonemes; word_phonemes !=Engl_word'14_phonemes
+=== INH-TITLENAME (0) — a-numbered attribute without its title X'NN_attr as name (--fix-name writes it)
 
-=== INH-TITLEHAND (2) — a-numbered attribute whose title-name needs a-hand
-  McshLag000011:30573  "17_input3-(semu-view) of Engllago"  the-title is NOT a-name
-  McshLag000011:30553  "15_input1-(mind-view) of Engllago"  the-title is NOT a-name
+=== INH-TITLEHAND (14) — a-numbered attribute whose title-name needs a-hand
+  McshLag000008:159  "05_output-(text-view) of Alfalago"  the-title is NOT a-name
+  McshLag000037:4776  "05_output_(logoview) of Urdulago"  the-title is NOT a-name
+  McshLag000037:2590  "05_output_(logoview) of Hindlago"  the-title is NOT a-name
+  McshStn000034:354  "05_output_(logoview) of Vnmalago"  the-title is NOT a-name
+  McshStn000035:201  "05_output_(logoview) of lagoItln"  the-title is NOT a-name
+  McshStn000037:250  "05_output_(logoview) of Fraclago"  the-title is NOT a-name
+  McshStn000038:251  "05_output_(logoview) of Sbullago"  the-title is NOT a-name
+  McshStn000039:251  "05_output_(logoview) of Sqiplago"  the-title is NOT a-name
+  McshStn000040:242  "05_output_(logoview) of Smkdlago"  the-title is NOT a-name
+  McshStn000041:260  "05_output_(logoview) of Sslvlago"  the-title is NOT a-name
+  McshStn000043:242  "05_output_(logoview) of Sruslago"  the-title is NOT a-name
+  McshStn000044:242  "05_output_(logoview) of Romnlago"  the-title is NOT a-name
+  McshStn000048:265  "05_output_(logoview) of Jpnslago"  the-title is NOT a-name
+  McshStn000050:234  "05_output_(logoview) of Khmrlago"  the-title is NOT a-name
 
 === INH-REFBROKEN (0) — a-text-reference name!@File#id whose file or id does NOT exist
 
 === INH-GENDUP (0) — a-numbered generic gives the-same NN_ to two attributes: renumber
 
-=== INH-LOCAL (0) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+=== INH-LOCAL (12) — an-attribute in 3+ specifics, not in the-generic: lift it up?
+  info-resource of Hnmdlago@McshLag000007  ×34  McshLag000007:32630 McshLag000007:33384 McshLag000009:4350 McshLag000018:17584 McshLag000020:12899 McshLag000027:7208 McshLag000028:1413 McshLag000028:1674 …
+  evoluting of Hnmdlago@McshLag000007  ×33  McshLag000007:32676 McshLag000009:4459 McshLag000018:17809 McshLag000018:18306 McshLag000018:19130 McshLag000020:13006 McshLag000027:7953 McshLag000028:1439 …
+  evoluting of Knlglago@McshTchInf000039  ×7  McshTchInf000007:1186 McshTchInf000039:5033 McshTchInf000039:8319 McshTchInf000039:10850 McshTchInf000039:11907 McshTchInf000039:14336 McshTchInf000039:16802
+  doing of Hnmdlago@McshLag000007  ×6  McshLag000009:4362 McshLag000020:12993 McshLag000027:7940 McshLag000028:1426 McshLag000029:69 McshLag000031:165
+  info-resource of Knlglago@McshTchInf000039  ×5  McshTchInf000007:1072 McshTchInf000039:3794 McshTchInf000039:3908 McshTchInf000039:8306 McshTchInf000039:10836
+  verb of Hnmdlago@McshLag000007  ×4  McshLag000018:18183 McshLag000039:1716 McshLag000040:1848 McshLag000041:1767
+  letter of Hnmdlago@McshLag000007  ×4  McshLag000034:3634 McshLag000034:4617 McshLag000034:5120 McshLag000034:6148
+  evoluting of Cnptlago@McshTchInf000007  ×4  McshTchInf000007:1721 McshTchInf000007:1818 McshTchInf000007:3334 McshTchInf000009:4507
+  evaluation of Hnmdlago@McshLag000007  ×3  McshLag000018:17532 McshLag000027:7156 McshStn000039:2024
+  unit of Hnmdlago@McshLag000007  ×3  McshLag000028:1637 McshLag000028:1994 McshLag000028:2049
+  phoneme of Hnmdlago@McshLag000007  ×3  McshLag000036:3293 McshLag000036:3413 McshLag000039:1621
+  info-resource of Cnptlago@McshTchInf000007  ×3  McshTchInf000007:1709 McshTchInf000007:3268 McshTchInf000009:4481
 
-=== INFO (352) — how many specifics refine each numbered generic-attribute
+=== INFO (349) — how many specifics refine each numbered generic-attribute
     115  ChmcElry'02_atom@McshNtr000007#idChmElratt003
      60  disease'04_therapy@McshHlth000011#idDssHmn004F
      50  disease'01_symptom@McshHlth000011#idDssHmn001F
      45  disease'02_cause@McshHlth000011#idDssHmn002F
      45  disease'05_protection@McshHlth000011#idDssHmn005F
      42  foodCooked'46_recipe@McshHlth000013#idFoodHmn050att001
-     32  Hnmdlago'05_output@McshLag000007#idLHnmdopt
+     35  Hnmdlago'05_output@McshLag000007#idLHnmdopt
+     31  Hnmdlago'04_input@McshLag000007#idLHnmdinpt
      26  food'43_ingredient@McshHlth000013#idFoodHmnatt001
      19  Hborgan'01_disease@McshHlth000002#idOgnHmnatt004
      18  society'88_human_view@McshStn000009#idSocHumnatt021
@@ -94,11 +167,11 @@ SUMMARY
       7  Cmprlago'04_input@McshTchInf000005#idLCmpript
       7  Cmprlago'05_output@McshTchInf000005#idLCmpropt
       7  Knlglago'04_input@McshTchInf000039#idLKnlginpt
-      6  model'12_evaluation@McshCor000012#idMdleval
       6  Knlglago'11_manager@McshTchInf000039#idLKnlgmngr
       6  Prgmlago'13_evaluation@McshTchInf000006#idLPrgmeval
       6  AgntBkcn'36_asset@McshTchInf000016#idDbcevu
       6  AgntBkcn'18_evaluation@McshTchInf000016#idDbceval
+      5  model'12_evaluation@McshCor000012#idMdleval
       5  FctgBraining'03_argument@McshCor000018#idBrngHmnFctarg
       5  FctgEmoting'17_emotion@McshCor000018#idBrngHmnFct004emn
       5  Prgmlago'15_tool@McshTchInf000006#idLPrgmtool
@@ -199,12 +272,10 @@ SUMMARY
       2  Hnmdlogo'49_root-node@McshLag000007#idLHnmdroot
       2  word'07_syllable@McshLag000007#idLHnmdwrdsylb
       2  word'08_syllabication@McshLag000007#idLHnmdwrdslbn
+      2  word'12_creating@McshLag000007#idLHnmdwrdcrtg
       2  Hnmdsemuargu'19_member@McshLag000007#idLHnmdsmsondombr
       2  Infrsc'07_citation_format@McshLag000013#idInfrscfrmt
       2  word'03_pronunciation@McshLag000007#idLHnmdwrdspch
-      2  Hiurlago'29_input1-(mind-view)@McshLag000037#idLHiuript1
-      2  Hiurlago'30_input2-(senso-mind--view)@McshLag000037#idLHiuript2
-      2  Hiurlago'31_input3-(semu-view)@McshLag000037#idLHiuript3
       2  MtrlSysMols'01_molecule@McshNtr000005#idSysMolsatt001
       2  MtrlSysMols'02_atom@McshNtr000005#idSysMolsatt002
       2  ChmcElry'24_toxicity@McshNtr000007#idChmElratt014
@@ -328,12 +399,10 @@ SUMMARY
       1  Textlago'05_output@McshLag000007#idLTextopt
       1  text'09_unit@McshLag000007#idLTextoptunit
       1  Hnmdlogo'51_info@McshLag000007#idLHnmdoptinf
-      1  word'12_creating@McshLag000007#idLHnmdwrdcrtg
       1  Hnmdsemuview'37_Semuargu@McshLag000007#idLHnmdsmsondo
       1  Hnmdsemuview'38_Semuverb@McshLag000007#idLHnmdsmsvrb
+      1  Alfalago'04_input@McshLag000008#idL0016inpt
       1  Alfalago'05_output-(text-view)@McshLag000008#idL0016opt
-      1  Alfalago'15_input1-(mind-view)@McshLag000008#idL0016ipt1
-      1  Alfalago'17_input3-(semu-view)@McshLag000008#idL0016ipt3
       1  Hnmdsemuargu'22_logo-relation@McshLag000007#idLHnmdsmsondolgrn
       1  Hnmdsemuverb'21_senso-mind-relation@McshLag000007#idLHnmdsmsvrbsmdrn
       1  Hnmdsemuverb'22_logo-relation@McshLag000007#idLHnmdsmsvrblgrn
