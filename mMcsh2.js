@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-20-0.2026-11-22: 3rd info-page tab "Ask" - an-English question returns the-worldview concepts it is about (mAsk.js, first-form name-finding, no LLM)',
     'mMcsh2.js.27-19-0.2026-11-22: a-generic X!@File#idOverview uses the-generic-tree of the-TOP "GENERIC-SPECIFIC-TREE of M" section, NOT the-first gntr of the-file',
     'mMcsh2.js.27-18-0.2026-11-19: dblclick on "X\'NN_last" (name::) gives X\'attribute, NOT X\'attributeChain (the-head of generic-tree:: still gives it)',
     'mMcsh2.js.27-17-0.2026-11-19: dblclick on Mmn\'attribute: the-numbered attributes, own and inherited, 01, 02, .. (nearer wins), then the-others',
@@ -315,6 +316,13 @@ let fContainersInsert = function () {
     oEltTabTocCpsBtn = document.createElement('input'),
     oEltTabTocPrfDiv = document.createElement('div'),
     oEltTabTocNotP = document.createElement('p'),
+    // Ask-tab: an-English question -> the-worldview concepts it is about
+    oEltTabAskDiv = document.createElement('div'),
+    oEltTabAskIpt = document.createElement('textarea'),
+    oEltTabAskBtn = document.createElement('input'),
+    oEltTabAskStatusP = document.createElement('p'),
+    oEltTabAskResultsDiv = document.createElement('div'),
+    oAskModuleP = null, // lazy dynamic-import promise of mAsk.js (avoids an-import-cycle)
     oEltTabSearchDiv,
     oEltTabSearchLbl,
     oEltTabSearchSlct,
@@ -329,15 +337,15 @@ let fContainersInsert = function () {
     sIdTabActive
 
   function fCnrSearchShow() {
-    // Remove active-class from first-child-elt of PginfTabHeaders
-    document.getElementById('idPginfTabHeadersUl')
-      .firstElementChild.classList.remove('clsTabActive')
+    // Remove active-class from whichever header currently holds it (3+ tabs safe)
+    const oActiveS = document.querySelector('#idPginfTabHeadersUl .clsTabActive')
+    if (oActiveS) oActiveS.classList.remove('clsTabActive')
     // Add active-class on second-child-element of PginfTabHeaders
     document.getElementById('idPginfTabHeadersUl')
       .childNodes[1].classList.add('clsTabActive')
-    // Hide tab-content from TabCntToc
-    document.getElementById('idTabCntTocDiv').style.display = 'none'
-    // Show tab-content on TabCntSrch
+    // Hide all tab-contents, then show TabCntSrch
+    Array.prototype.slice.call(document.getElementsByClassName('clsTabCnt'))
+      .forEach(function (oEltCnt) { oEltCnt.style.display = 'none' })
     document.getElementById('idTabCntSrchDiv').style.display = 'block'
     // on TabCntSrch focus input-element
     oEltTabSearchIpt.focus()
@@ -442,15 +450,15 @@ let fContainersInsert = function () {
 
   // show toc-tab
   function fCnrTocShow() {
-    // Remove active-class from second-child-elt of TabHeaders
-    document.getElementById('idPginfTabHeadersUl')
-      .childNodes[1].classList.remove('clsTabActive')
-    // Add active-class on second-child-element of TabHeaders
+    // Remove active-class from whichever header currently holds it (3+ tabs safe)
+    const oActiveT = document.querySelector('#idPginfTabHeadersUl .clsTabActive')
+    if (oActiveT) oActiveT.classList.remove('clsTabActive')
+    // Add active-class on first-child-element of TabHeaders
     document.getElementById('idPginfTabHeadersUl')
       .childNodes[0].classList.add('clsTabActive')
-    // Hide tab-search-content
-    document.getElementById('idTabCntSrchDiv').style.display = 'none'
-    // Show tab-toc-content
+    // Hide all tab-contents, then show TabCntToc
+    Array.prototype.slice.call(document.getElementsByClassName('clsTabCnt'))
+      .forEach(function (oEltCnt) { oEltCnt.style.display = 'none' })
     document.getElementById('idTabCntTocDiv').style.display = 'block'
   }
 
@@ -1028,7 +1036,8 @@ let fContainersInsert = function () {
   oEltTabHeaderUl.id = 'idPginfTabHeadersUl'
   oEltTabHeaderUl.innerHTML =
     '<li class="clsTabActive"><a href="#idTabCntTocDiv">page-Toc</a></li>' +
-    '<li><a href="#idTabCntSrchDiv">name-search</a></li>'
+    '<li><a href="#idTabCntSrchDiv">name-search</a></li>' +
+    '<li><a href="#idTabCntAskDiv">Ask</a></li>'
   oEltCnrMainInfoDiv.insertBefore(oEltTabHeaderUl, oEltCnrMainInfoDiv.firstChild)
 
   // insert page-path-elt IN page-info-cnr
@@ -1963,6 +1972,77 @@ let fContainersInsert = function () {
   oEltTabSearchDiv.appendChild(oEltTabSearchOl)
   oEltTabContentDiv.appendChild(oEltTabSearchDiv)
 
+  // ===== Ask-tab: an-English question -> the-worldview concepts it is about =====
+  oEltTabAskDiv.id = 'idTabCntAskDiv'
+  oEltTabAskDiv.setAttribute('class', 'clsTabCnt')
+  oEltTabAskDiv.appendChild(document.createElement('p')).innerHTML =
+    '<span class="clsColorGreen clsB">Ask (experimental)</span> a-question (English only, hyphenate your names). ' +
+    'It finds the-concepts of your question.'
+  oEltTabAskIpt.id = 'idTabCntAskIpt'
+  oEltTabAskIpt.setAttribute('rows', '3')
+  oEltTabAskIpt.setAttribute('placeholder', 'example: how do concepts relate to programming-languages?')
+  oEltTabAskIpt.style.width = '98%'
+  oEltTabAskBtn.id = 'idTabCntAskBtn'
+  oEltTabAskBtn.setAttribute('type', 'button')
+  oEltTabAskBtn.setAttribute('value', 'Ask')
+  oEltTabAskBtn.setAttribute('class', 'clsBtn')
+  oEltTabAskStatusP.id = 'idTabCntAskStatusP'
+  oEltTabAskResultsDiv.id = 'idTabCntAskResultsDiv'
+  oEltTabAskDiv.appendChild(oEltTabAskIpt)
+  oEltTabAskDiv.appendChild(oEltTabAskBtn)
+  oEltTabAskDiv.appendChild(oEltTabAskStatusP)
+  oEltTabAskDiv.appendChild(oEltTabAskResultsDiv)
+  oEltTabContentDiv.appendChild(oEltTabAskDiv)
+
+  // lazy-load mAsk.js on first use: dynamic import runs AFTER this module is
+  // fully initialized, so mLagEngl.js reads a-defined sPathSite (no import-cycle).
+  function fAskModule () {
+    if (!oAskModuleP) oAskModuleP = import('./mAsk.js')
+    return oAskModuleP
+  }
+
+  async function fAskRun () {
+    const sQuestion = oEltTabAskIpt.value.trim()
+    oEltTabAskResultsDiv.innerHTML = ''
+    if (!sQuestion) { oEltTabAskStatusP.innerHTML = 'type a-question first.'; return }
+    oEltTabAskStatusP.innerHTML = 'analysing…'
+    let oRes
+    try {
+      const oMod = await fAskModule()
+      oRes = await oMod.fAskAnswer(sQuestion, fSearchName)
+    } catch (oErr) {
+      console.warn(oErr)
+      oEltTabAskStatusP.innerHTML = 'could not analyse the-question.'
+      return
+    }
+    oEltTabAskStatusP.innerHTML = oRes.aoName.length +
+      ' concept' + (oRes.aoName.length === 1 ? '' : 's') + ' found.'
+    let sHtml
+    if (oRes.aoName.length) {
+      sHtml = '<p><span class="clsColorGreen clsB">concepts your question is about</span>:</p><ol>' +
+        oRes.aoName.map(function (oName) {
+          return '<li><a class="clsPreview" href="' +
+            sPathSite + sWorldview + '/' + oName.sUrl + '">' + oName.sName + '</a></li>'
+        }).join('') + '</ol>'
+    } else {
+      sHtml = '<p>no worldview names recognised — try naming a-concept ' +
+        '(a term shown in <strong>bold</strong> on a page).</p>'
+    }
+    if (oRes.aWordUnmatched.length) {
+      sHtml += '<p class="clsColorGrey">not recognised as names: ' +
+        oRes.aWordUnmatched.join(', ') + '</p>'
+    }
+    oEltTabAskResultsDiv.innerHTML = sHtml
+    // wire the-preview on the-result links (reuse the-content link-event)
+    Array.prototype.slice.call(oEltTabAskResultsDiv.querySelectorAll('a.clsPreview'))
+      .forEach(function (oEltA) { fEvtLink(oEltA) })
+  }
+  oEltTabAskBtn.addEventListener('click', fAskRun)
+  oEltTabAskIpt.addEventListener('keydown', function (oEvtIn) {
+    // Enter runs; Shift+Enter keeps a-newline
+    if (oEvtIn.key === 'Enter' && !oEvtIn.shiftKey) { oEvtIn.preventDefault(); fAskRun() }
+  })
+
   /**
    * DOING: returns the-text with the-number of names found in search-tab
    */
@@ -2240,6 +2320,7 @@ let fContainersInsert = function () {
     })
   })
   document.getElementById('idTabCntSrchDiv').style.display = 'none'
+  document.getElementById('idTabCntAskDiv').style.display = 'none'
 
   // insert popup-container
   oEltCnrPreviewDiv.id = 'idCnrPreviewDiv'

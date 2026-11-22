@@ -1156,7 +1156,7 @@ ul#idPginfTabHeadersUl li {
   margin-left: 3px;
   padding: 0;
   height: 26px;
-  width: 45%;
+  width: 31%;
   line-height: 26px;
   overflow: hidden;
 }
@@ -1167,7 +1167,7 @@ ul#idPginfTabHeadersUl li a {
   font-weight: bold;
   padding: 0 0 0 4px;
   outline: none;
-  width: 110px;
+  width: 100%;
 }
 ul#idPginfTabHeadersUl li a:hover {
   text-decoration: underline;
