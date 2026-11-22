@@ -33,6 +33,8 @@ import * as omLagEngl from './mLagEngl.js'
 const
   // contains the-versions of mAsk.js
   aVersion = [
+    'mAsk.js.0-2-1.2026-11-22: strip a hyphen-attached article from each question-word (the-concepts -> concepts, an-organization -> organization)',
+    'mAsk.js.0-2-0.2026-11-22: dedupe results by NAME and by URL (same name, or a-concept and its own inflection = one concept)',
     'mAsk.js.0-1-0.2026-11-22: creation - finds the-worldview names in an-English question (first-form reduction, no LLM)'
   ],
   // small English stopword-set: dropped before name-lookup
@@ -47,13 +49,16 @@ const
   ]),
   // a-clean word-form: lowercase letters, inner hyphens (so 'tree-system' survives)
   rForm = /^[a-z][a-z-]*$/,
+  // a-hyphen-attached article at a-word-start: 'the-concepts' / 'an-organization' / 'a-concept'
+  rArticleHyphen = /^(?:the|an|a)-/,
   // lemma inside a-surface form-line 'leaf!~nounEnglB1.leaf'1'  -> 'leaf'
   rLemmaSurface = /!~[a-z]+\d*\.([a-z][a-z-]*)/i,
   // lemma inside a-method/all-forms line 'nounEnglB1.leaf;leaves' | 'verbEnglC.write!=write;..' -> 1st form
   rLemmaMethod = /^[a-z]+\d*\.([a-z][a-z-]*)/i
 
 /**
- * DOING: lowercases, drops non-letters (keeps inner hyphens) and stopwords.
+ * DOING: lowercases, drops non-letters (keeps inner hyphens), strips a
+ *   hyphen-attached article ('the-concepts' -> 'concepts') and drops stopwords.
  * OUTPUT: array of question-words.
  */
 function fTokenize (sQuestionIn) {
@@ -62,6 +67,7 @@ function fTokenize (sQuestionIn) {
     .replace(/[^a-z\s-]+/g, ' ')
     .split(/\s+/)
     .map(s => s.replace(/^-+|-+$/g, '')) // trim stray edge-hyphens
+    .map(s => s.replace(rArticleHyphen, '')) // 'the-concepts' -> 'concepts', 'an-organization' -> 'organization'
     .filter(s => s.length >= 2 && !oSetStop.has(s))
     .slice(0, 12) // bound the-work per question
 }
@@ -126,19 +132,31 @@ async function fNamesForForm (sFormIn, fSearchNameIn) {
 async function fAskAnswer (sQuestionIn, fSearchNameIn) {
   const
     aWord = fTokenize(sQuestionIn),
-    oByUrl = new Map(),      // sUrl -> { sName, sUrl, oWordHit:Set }
+    oByKey = new Map(),      // 'n:<name>' | 'u:<url>' -> a-shared concept-record
     oWordHitAny = new Set()
 
-  // a-matched concept is recorded once per url; each contributing word is tracked
+  // record a-concept once, merging by NAME (same name via noun/verb/redirect) AND by
+  // URL (a-concept and its own inflection 'name'/'names' hit the-same page), so the-same
+  // concept collapses to one. the-first name/url is kept; each contributing word tracked.
   function fRecord (oNameIn, sWordIn) {
     oWordHitAny.add(sWordIn)
-    const oPrev = oByUrl.get(oNameIn.sUrl)
-    if (oPrev) {
-      oPrev.oWordHit.add(sWordIn)
-      if (oNameIn.sName.length < oPrev.sName.length) oPrev.sName = oNameIn.sName
-    } else {
-      oByUrl.set(oNameIn.sUrl, { sName: oNameIn.sName, sUrl: oNameIn.sUrl, oWordHit: new Set([sWordIn]) })
+    const
+      sNameKey = 'n:' + oNameIn.sName.toLowerCase(),
+      sUrlKey = 'u:' + oNameIn.sUrl,
+      oByN = oByKey.get(sNameKey),
+      oByU = oByKey.get(sUrlKey)
+    let oRec = oByN || oByU || { sName: oNameIn.sName, sUrl: oNameIn.sUrl, sNameKey: sNameKey, oWordHit: new Set() }
+    // name and url already point at two different records: fold the-url-one into the-name-one
+    if (oByN && oByU && oByN !== oByU) {
+      oByU.oWordHit.forEach(s => oByN.oWordHit.add(s))
+      oByKey.set(oByU.sNameKey, oByN)
+      oRec = oByN
     }
+    oRec.oWordHit.add(sWordIn)
+    // show the-shorter name (usually the-first-form: 'leaf' over 'leaves', 'name' over 'names')
+    if (oNameIn.sName.length < oRec.sName.length) oRec.sName = oNameIn.sName
+    oByKey.set(sNameKey, oRec)
+    oByKey.set(sUrlKey, oRec)
   }
 
   // single words, reduced to first-forms
@@ -157,7 +175,7 @@ async function fAskAnswer (sQuestionIn, fSearchNameIn) {
     }
   }
 
-  const aoName = [...oByUrl.values()]
+  const aoName = [...new Set(oByKey.values())] // unique shared records
     .sort((oA, oB) =>
       oB.oWordHit.size - oA.oWordHit.size ||
       oA.sName.length - oB.sName.length ||

@@ -88,6 +88,8 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-82-0.2026-11-22: MvrwMain09_human: a-person also by its generic (a-group of humans: Algonet\'human); HumnLastFirst (HumnNakaSato) without birth-year is right',
+    'structuralMcsh.js.0-81-0.2026-11-22: MvrwMain09_human: "X.human" is a-person only when its main-name is Humn + year (NOT Ogsmlago.human!⇒Humnlago)',
     'structuralMcsh.js.0-80-0.2026-11-22: MvrwMain10 a-question title "M.x?" has the-name "M.x" (the-final "?" dropped)',
     'structuralMcsh.js.0-79-0.2026-11-19: MvrwMain10 a-new name is written "x (N)" (dropped like every "(…)"); "|" is "or" | content, NOT a-new name',
     'structuralMcsh.js.0-78-0.2026-11-19: MvrwMain10 title "x|N" (N the-new name): the-whole title is tried, then "x"',
@@ -979,12 +981,19 @@ function fCheckMmnAttr(aoCnptFile) {
 
 // 🔶 [MvrwMain09_human] human_main: the-formal-main-name of a-human (an-individual person) is
 //   "Humn" + birth-year (4 digits) + name, capital first: Humn1959Sinagu;
-//   for a-human born BCE "HumnB" + year: HumnB0384Arst.
-//   A-human is a-concept with an-English name "human.Surname.Given[.YYYY]" | "human.YYYY.Surname…" |
-//   "Surname.Given.human" | "human.Name" when its main-name already starts with Humn | hmn
-//   (human.Aristotle!⇒hmnB0384Arst). NOT human.DEVELOPER | human.Reddit (groups).
-//   A-human without main-name is-reported too.
-const rMainHuman = /^HumnB?\d{4}[A-Z][A-Za-z0-9]*$/;
+//   for a-human born BCE "HumnB" + year: HumnB0384Arst;
+//   without a-known birth-year "Humn" + Last + First: HumnNakaSato, HumnLarimerDaniel.
+//   A-human (an-individual) is a-concept
+//   a) with an-English name "human.Surname.Given[.YYYY]" | "human.YYYY.Surname…" | "Surname.Given.human" |
+//      "human.Name" when its main-name already is a-human one (human.Aristotle!⇒hmnB0384Arst), OR
+//   b) whose generic-tree:: has a-generic that is a-group of humans, written X'human | X--human
+//      (Algonet'human, Steem-net--human), and which has NO specific-tree:: items of its own (a-group has);
+//      a-GENERIC-SPECIFIC-TREE section is skipped (its generic-tree:: is its whole's).
+//   NOT human.DEVELOPER | human.Reddit (groups), NOT Ogsmlago.human!⇒Humnlago (a-language of humans:
+//   "Humn" + a-small letter is no person). A-human without main-name is-reported too.
+const rMainHuman = /^HumnB?\d{4}[A-Z][A-Za-z0-9]*$|^Humn[A-Z][a-z]+[A-Z][A-Za-z0-9]*$/;
+// a-generic that is a-group of humans: Algonet'human, Steem-net--human; NOT human, X-of-human, X.human
+const rGenericHuman = /.(?:'|--)human$/;
 const rYear = /^\{?B?\d{4}\}?$/, rWordCap = /^[A-Z][a-z]+$/;
 /** OUTPUT: true when an-English name sNameIn denotes an-individual human; sMainIn its concept's main-name. */
 function fIsNameHuman(sNameIn, sMainIn) {
@@ -996,7 +1005,27 @@ function fIsNameHuman(sNameIn, sMainIn) {
   if (!aWord.length || !aWord.every(sW => rWordCap.test(sW) || rYear.test(sW))) return false;
   const nCap = aWord.filter(sW => rWordCap.test(sW)).length, bYear = aWord.some(sW => rYear.test(sW));
   if (!nCap) return false;
-  return nCap >= 2 || bYear || /^(Humn|hmn)/.test(sMainIn);
+  return nCap >= 2 || bYear || /^(Humn|hmn)(B?\d{4}|[A-Z])/.test(sMainIn);
+}
+/**
+ * OUTPUT: the-generic of a-concept that is a-group of humans (Algonet'human), from its
+ *   generic-tree:: (its items after "===", NOT its X:generic head | ...entity:generic), or ''.
+ */
+function fFindGenericHuman(oCnptIn, oCnptFileIn) {
+  if (/GENERIC-SPECIFIC-TREE/i.test(oCnptIn.sNameTitle ?? '')) return '';
+  const aoPara = oCnptIn.sType === 'CnptFile' ? oCnptFileIn.aoTitlePara : oCnptIn.aoTitlePara;
+  // a-concept with specifics of its own is a-group, NOT a-person
+  const bSpecific = (aoPara ?? []).some(oP => oP.sNameTitle === 'specific-tree' &&
+    String(oP.sPara ?? '').split('\n').some(sL => /<br>\*/.test(sL) && !/McshEngl\./.test(sL)));
+  if (bSpecific) return '';
+  for (const oPara of (aoPara ?? []).filter(oP => oP.sNameTitle === 'generic-tree')) {
+    for (const sLine of String(oPara.sPara ?? '').split('\n')) {
+      if (!/<br>\*/.test(sLine) || /:generic\b|McshEngl\./.test(sLine)) continue;
+      const sName = fStripTags(sLine).replace(/^\s*\*\s*/, '').split('!@')[0].replace(/,\s*$/, '').trim();
+      if (rGenericHuman.test(sName)) return sName;
+    }
+  }
+  return '';
 }
 function fCheckMainNameHuman(aoCnptFile) {
   const aoIssue = [];
@@ -1005,8 +1034,13 @@ function fCheckMainNameHuman(aoCnptFile) {
     for (const oCnpt of [fFindCnptOfFile(oCnptFile), ...fFindCnpt(oCnptFile)]) {
       const sMain = oCnpt.sNameMainFrml ?? '';
       const aName = (oCnpt.ooNameLago?.oLagoEngl?.aoName ?? []).map(oName => String(oName.sName ?? '').trim());
-      const sNameHuman = aName.find(sName => fIsNameHuman(sName, sMain));
-      if (!sNameHuman || rMainHuman.test(sMain)) continue;
+      if (rMainHuman.test(sMain)) continue;
+      // a-person by its name, else by its generic (a-group of humans)
+      const sGenericHuman = oCnpt.sType === 'CnptPara' ? '' : fFindGenericHuman(oCnpt, oCnptFile);
+      const sNameByName = aName.find(sName => fIsNameHuman(sName, sMain));
+      const sWho = sNameByName ? `"${sNameByName}"`
+        : sGenericHuman ? `"${aName[0] ?? oCnpt.sNameTitle}" (a-${sGenericHuman})` : '';
+      if (!sWho) continue;
       const bFile = oCnpt.sType === 'CnptFile';
       const oParaName = bFile ? null : fFindParaAll(oCnpt, 'name')[0];
       const sIdPara = bFile ? oCnpt.sNameId : (oCnpt.sType === 'CnptPara' ? oCnpt.sNameId : oParaName?.sNameId ?? oCnpt.sNameId);
@@ -1015,8 +1049,9 @@ function fCheckMainNameHuman(aoCnptFile) {
       const nOffset = sMain ? aLinePara.findIndex(sLine => sLine.includes(`McshEngl.${sMain},`) || sLine.includes(`McshEngl.${sMain}!=`) || sLine.includes(`!⇒${sMain},`)) : -1;
       const nLine = nLinePara != null && nOffset !== -1 ? nLinePara + nOffset : nLinePara;
       aoIssue.push(fIssue('WARN', 'MvrwMain09_human', oCnptFile.sNameFile, oCnpt,
-        `human_main: human "${sNameHuman}" ` + (sMain ? `has main-name "McshEngl.${sMain}"` : 'has no main-name') +
-        ': use Humn + birth-year + name (Humn1959Sinagu), HumnB + year for BCE (HumnB0384Arst)',
+        `human_main: human ${sWho} ` + (sMain ? `has main-name "McshEngl.${sMain}"` : 'has no main-name') +
+        ': use Humn + birth-year + name (Humn1959Sinagu), HumnB + year for BCE (HumnB0384Arst), ' +
+        'Humn + Last + First without birth-year (HumnNakaSato)',
         nLine));
     }
   }

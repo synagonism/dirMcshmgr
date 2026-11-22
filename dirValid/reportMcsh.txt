@@ -1,15 +1,17 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvrwMain11_line: c:/dirNodews/dirMcsh
+  MvreName01_duplicate_line,MvrwMain11_line,MvrwName01_formal,MvrwMain09_human: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  593 Mcsh-files · 2 files with issues · 2 issues
+  593 Mcsh-files · 12 files with issues · 23 issues
 
-=== MvrwMain11_line (2 issues in 2 files) — file:lines, the-biggest line first
-  McshCor000010:33
-  McshStn000030:554
+=== MvreName01_duplicate_line (15 issues in 5 files) — file:lines, the-biggest line first
+
+=== MvreName01_duplicate_line --line — every issue, its line and its message
+
+=== MvrwMain11_line (3 issues in 3 files) — file:lines, the-biggest line first
 
 === MvrwMain11_line --line — every issue, its line and its message
-  McshCor000010.last.html
-    33  line: the-Mmn "quanto" is NOT on the-first name-line (now: "ActgMeasuring'15_abstract_measure!⇒quanto"): the-first name-line is "ActgMeasuring'04_abstract_measure!⇒quanto", the-second "quanto!=ActgMeasuring'04_abstract_measure"
-  McshStn000030.last.html
-    554  line: the-Mmn "Nada" is NOT on the-first name-line (now: "Nada!=national-academy-of-digital-abilites@govgr"): the-first name-line is "national-academy-of-digital-abilites@govgr!⇒Nada", the-second "Nada!=national-academy-of-digital-abilites@govgr"
+
+=== MvrwMain09_human (5 issues in 4 files) — file:lines, the-biggest line first
+
+=== MvrwMain09_human --line — every issue, its line and its message
 
