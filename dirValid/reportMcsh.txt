@@ -1,17 +1,638 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  MvreName01_duplicate_line,MvrwMain11_line,MvrwName01_formal,MvrwMain09_human: C:/dirNodews/dirMcsh
+  MvrwMain08_need: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  593 Mcsh-files · 12 files with issues · 23 issues
+  593 Mcsh-files · 98 files with issues · 433 issues
 
-=== MvreName01_duplicate_line (15 issues in 5 files) — file:lines, the-biggest line first
+=== MvrwMain08_need (433 issues in 98 files) — file:lines, the-biggest line first
+  McshTchInf000014:6296;5871;5523;5363;4705;4554;4539;4421;4355;4288;4208;4113;4019;3959;3893;3829;3719;3621;3491;1897;1489;1359;1228;1157;1065;1050;1038;891;709;629;352;209
+  McshTchInf000017:9937;9877;9724;9128;8783;8624;8204;8102;7689;7214;7079;7060;5959;5656;5579;5440;5320;5288;5028;4871;4089;4024;3438;2967;2832;2373;1823;1717;1396;1319;1036
+  McshTchInf000018:13444;12799;12714;12597;12010;11936;11738;11577;11030;10188;10077;9998;8688;6671;6114;5888;5432;5395;5074;5026;4988;4779;4126;3835;1280;1176;948;916;276
+  McshTchInf000039:16802;15262;12992;12354;9185;9017;8850;8274;7824;6836;4628;2928;2798;2514;2432;2296;2179;2083;1970;1833;1765;1586;1503;1435;1379
+  McshHlth000002:13556;13161;12807;10868;10833;10199;10107;9625;9216;8514;7716;7701;7414;6536;6041;4688;939
+  McshTchInf000016:16245;15734;15339;14303;10712;10247;9951;9822;9709;9698;9465;8916;6207;5649;5585;2712;2185
+  McshHlth000011:15907;15051;14420;12253;11748;9430;9020;7385;7220;6317;6257;5303;2969;397
+  McshHlth000004:2454;2395;2332;2164;2131;1979;1892;1849;1608;976;572;405
+  McshTchInf000015:13276;9203;9093;9013;8862;8685;8468;8324;7467;7387;6554
+  McshHmn000002:5192;5122;4985;4935;4628;3142;2747;2236;1819;950
+  McshTchInf000009:4361;3467;3133;2939;2696;2632;2440;1993;1802;1753
+  McshTchInf000031:2513;2428;2035;2007;1786;1754;1669;1364;575;137
+  McshStn000042:5242;4539;4403;3571;3094;1634;1050;596;532
+  McshTchInf000010:6014;5516;4682;4234;704;484;353;258;210
+  McshTchInf000036:5752;5607;5526;5342;4495;3580;3176;1717;157
+  McshCor000004:6132;5628;1452;1060;1027;581
+  McshCor000006:3079;2703;1923;1022;918;443
+  McshLag000030:5919;4699;4560;3977;3619;2103
+  McshTchInf000012:9034;8834;8214;8003;6600;890
+  McshTchInf000020:3247;3134;2910;2778;2557;1578
+  McshTchInf000024:3658;3629;3572;1097;828;780
+  McshCor000010:2795;2674;2060;1732;250
+  McshLag000018:21445;18838;13807;13757;8704
+  McshStn000009:7085;4088;3184;2823;2471
+  McshTchInf000008:4117;3213;2255;1416;1250
+  McshTchInf000025:999;877;775;415;80
+  McshTchInf000026:1826;1661;1335;1156;832
+  McshEdu000010:2751;2499;1021;911
+  McshStnlaw000006:688;204;187;141
+  McshEdu000007:995;441;345
+  McshLag000006:2741;155;70
+  McshLag000026:12391;2002;1450
+  McshLag000037:4871;2803;2685
+  McshNtr000007:7344;4721;1053
+  McshOgm000007:1816;1030;981
+  McshStnlaw000004:1280;725;159
+  McshTchInf000006:2646;1469;82
+  McshTchInf000019:4787;3355;2757
+  McshTchInf000022:1294;1095;225
+  McshTchInf000029:326;262;210
+  McshCor000007:3016;879
+  McshCor000012:407;321
+  McshEdu000009:1219;215
+  McshEdu000014:1102;676
+  McshHlth000013:3513;3119
+  McshLag000020:11013;9262
+  McshNtr000012:590;277
+  McshNtr000015:443;239
+  McshOgm000003:1094;269
+  McshStn000010:2491;722
+  McshStn000011:925;410
+  McshStn000015:5028;595
+  McshStn000020:1024;208
+  McshStn000023:11320;80
+  McshStnlaw000002:511;286
+  McshStnlaw000003:448;93
+  McshTch000003:408;192
+  McshTchInf000011:1106;997
+  McshTchInf000013:1559;690
+  McshTchInf000021:2370;165
+  McshTchInf000030:2426;225
+  McshTchInf000037:430;234
+  McshTchInf000038:1158;1045
+  McshCor000002:3155
+  McshEdu000002:1380
+  McshEdu000006:97
+  McshEdu000011:480
+  McshHlth000005:437
+  McshHlth000008:957
+  McshHlth000016:972
+  McshHlth000019:5751
+  McshLag000003:1119
+  McshLag000010:2684
+  McshLag000013:180
+  McshLag000028:1643
+  McshLag000036:1619
+  McshLag000043:887
+  McshNtr000002:159
+  McshNtr000005:631
+  McshOgm000005:3633
+  McshStn000004:209
+  McshStn000008:291
+  McshStn000012:2069
+  McshStn000022:75
+  McshStn000026:618
+  McshStn000031:6532
+  McshStn000040:337
+  McshStn000041:374
+  McshStn000043:337
+  McshStn000044:337
+  McshStn000048:360
+  McshStn000050:420
+  McshTch000002:1234
+  McshTchInf000002:1052
+  McshTchInf000003:140
+  McshTchInf000028:2525
+  McshTchPrgm000002:151
+  McshTchPrgm000003:714
 
-=== MvreName01_duplicate_line --line — every issue, its line and its message
-
-=== MvrwMain11_line (3 issues in 3 files) — file:lines, the-biggest line first
-
-=== MvrwMain11_line --line — every issue, its line and its message
-
-=== MvrwMain09_human (5 issues in 4 files) — file:lines, the-biggest line first
-
-=== MvrwMain09_human --line — every issue, its line and its message
+=== MvrwMain08_need --line — every issue, its line and its message
+  McshTchInf000014.last.html
+    6296  mmn_attr: concept "Wasmlago.TEXT_FORMAT" has 4 attribute-section(s) ("S-expression of text-Wasm", "file of text-Wasm", "converting-to-binary-format of text-Wasm", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5871  mmn_attr: concept "WebAssembly--javascript-object" has 13 attribute-section(s) ("WebAssembly.compile_function", "WebAssembly.compileStreaming_function", "WebAssembly.CompileError_function", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5523  mmn_attr: concept "grammar.TEXT" has 1 attribute-section(s) ("identifier-context of text-grammar") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5363  mmn_attr: concept "specification of Wasmlago" has 1 attribute-section(s) ("WebAssembly-working-group") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4705  mmn_attr: concept "Wasmprgm.BINARY" has 1 attribute-section(s) ("WHOLE of Wasmprgm") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4554  mmn_attr: concept "header of binary-module" has 2 attribute-section(s) ("magic_cookie of header", "version of header") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4539  mmn_attr: concept "Wasmmodule.BINARY" has 1 attribute-section(s) ("header of binary-module") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4421  mmn_attr: concept "Wasmsection.11_DATA" has 2 attribute-section(s) ("data_section.BINARY", "data_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4355  mmn_attr: concept "Wasmsection.10_CODE" has 2 attribute-section(s) ("code_section.BINARY", "code_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4288  mmn_attr: concept "Wasmsection.09_ELEMENT" has 2 attribute-section(s) ("element_section.BINARY", "element_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4208  mmn_attr: concept "Wasmsection.08_START" has 2 attribute-section(s) ("start_section.BINARY", "start_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4113  mmn_attr: concept "Wasmsection.07_EXPORT" has 2 attribute-section(s) ("export_section.BINARY", "export_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4019  mmn_attr: concept "Wasmsection.06_GLOBAL" has 2 attribute-section(s) ("global_section.BINARY", "global_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3959  mmn_attr: concept "Wasmsection.05_LINEAR_MEMORY" has 2 attribute-section(s) ("memory_section.BINARY", "memory_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3893  mmn_attr: concept "Wasmsection.04_TABLE" has 2 attribute-section(s) ("table_section.BINARY", "table_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3829  mmn_attr: concept "Wasmsection.03_FUNCTION" has 2 attribute-section(s) ("function_section.BINARY", "function_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3719  mmn_attr: concept "Wasmsection.02_IMPORT" has 2 attribute-section(s) ("import_section.BINARY", "import_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3621  mmn_attr: concept "Wasmsection.01_TYPE" has 2 attribute-section(s) ("type_section.BINARY", "type_section.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3491  mmn_attr: concept "Wasmsection.BINARY" has 3 attribute-section(s) ("content of binary-section", "opcode of binary-section", "size of binary-section") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1897  mmn_attr: concept "WasmcmndFlow.STRUCTURED" has 1 attribute-section(s) ("label of structured-control-instruction") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1489  mmn_attr: concept "Wasmsunt.NAMED" has 2 attribute-section(s) ("identifier of named-sem-unit", "index of named-sem-unit") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1359  mmn_attr: concept "Wasmsunt.MEMORY" has 5 attribute-section(s) ("memory_declaration.BINARY", "memory_declaration.TEXT", "declaration of memory", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1228  mmn_attr: concept "declaration of table" has 2 attribute-section(s) ("table_declaration.BINARY", "table_declaration.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1157  mmn_attr: concept "variable.LOCAL" has 2 attribute-section(s) ("declaration of local", "index-space of local") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1065  mmn_attr: concept "declaration of global-variable" has 2 attribute-section(s) ("global_declaration.BINARY", "global_declaration.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1050  mmn_attr: concept "variable.GLOBAL" has 3 attribute-section(s) ("declaration of global-variable", "index-space of global", "mutability of global") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1038  mmn_attr: concept "Wasmsunt.VARIABLE" has 1 attribute-section(s) ("variable.LOCAL") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     891  mmn_attr: concept "function.START" has 2 attribute-section(s) ("start_function.BINARY", "start_function.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     709  mmn_attr: concept "Wasmsunt.FUNCTION" has 9 attribute-section(s) ("function.ADD", "function.START", "function.UPPER_CASE", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     629  mmn_attr: concept "Wasmvalue.LIMIT" has 2 attribute-section(s) ("limit.BINARY", "limit.TEXT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     352  mmn_attr: concept "Wasmsunt.TEXT" has 1 attribute-section(s) ("text_sem_unit.STRING") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     209  mmn_attr: concept "Wasmlago_unit_of_algo.TEXT" has 4 attribute-section(s) ("text_unit.CHARACTER", "text_unit.COMMENT", "text_unit.TOKEN", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000017.last.html
+    9937  mmn_attr: concept "AgntBtcn.Bitcoin_cash__hardfork_(Block 478,558)" has 1 attribute-section(s) ("05_node of Bitcoin-cash") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    9877  mmn_attr: concept "AgntBtcn.Bitcoin_Gold__hardfork_(Block 491,407)" has 1 attribute-section(s) ("BTG-of-Btg-net (BTG)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    9724  mmn_attr: concept "AgntBtcn.TESTNET" has 2 attribute-section(s) ("Bitcoin_testnet'faucet_of_BTC", "Bitcoin_testnet'use") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    9128  mmn_attr: concept "Btcnchain.FORK" has 2 attribute-section(s) ("blockchain'fork.HARD", "blockchain'fork.SOFT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8783  mmn_attr: concept "crypto of Btcnchain" has 7 attribute-section(s) ("Btcncrypto'hash_function", "Btcncrypto'Hash256", "Btcncrypto'Signature", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8624  mmn_attr: concept "Hashrate of Btcnchain (btchhrt )" has 6 attribute-section(s) ("Bitcoin_hhrt.EXAHASH/SEC_(1000^6)", "Bitcoin_hhrt.GIGAHASH/SEC_(1000^3)", "Bitcoin_hhrt.KILOHASH/SEC_(1000^1)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8204  mmn_attr: concept "Btcntx.COINBASE (new bitcoin)" has 2 attribute-section(s) ("Bitcoin_txCnbs'Extra_nonce", "Bitcoin_txCnbs'UTXO") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8102  mmn_attr: concept "Btcntx.AGGREGATE" has 2 attribute-section(s) ("Btcntx.aggregate.DAY", "Btcntx.aggregate.SECOND") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    7689  mmn_attr: concept "Bcsralgo.Pubkey_script_(output)" has 3 attribute-section(s) ("btc_scriptPubKey.multisig", "btc_scriptPubKey.P2PKH_address", "btc_scriptSig'secp256k1_signature") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    7214  mmn_attr: concept "Btcntxpart.OUTPUT (btctxout)" has 7 attribute-section(s) ("Bitcoin_txout'part.INDEX_implied", "Bitcoin_txout'part.AMOUNT", "Bitcoin_txout.CHANGE", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    7079  mmn_attr: concept "Bitcoin_txinpt'part.OUTPOINT_(32B+4B)" has 2 attribute-section(s) ("btc_txinpt'id_(32B)", "btc_txinpt'vout_(4B)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    7060  mmn_attr: concept "Btcntx.INPUT" has 3 attribute-section(s) ("Bitcoin_txinpt'Hash_type", "Bitcoin_txinpt'part.OUTPOINT_(32B+4B)", "Bitcoin_txinpt'part.SEQUENCE_NUMBER") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5959  mmn_attr: concept "Bitcoin_dng.CREATING" has 3 attribute-section(s) ("btc_mining.POOLED", "btc_mining'Mining_pool", "btc_mining.SOLO") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5656  mmn_attr: concept "Reward of Btcnblock" has 3 attribute-section(s) ("blockrwd'Halving", "blockrwd'Subsidy", "blockrwd.VIRGIN_BITCOIN") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5579  mmn_attr: concept "Btcnblock.PAYLOAD" has 2 attribute-section(s) ("block'number_of_transaction_entries", "block'vector_of_transactions") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5440  mmn_attr: concept "nBits (4B)" has 1 attribute-section(s) ("Difficulty") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5320  mmn_attr: concept "block'part.HEADER (80B)" has 8 attribute-section(s) ("header-chain", "HashMerkleRoot (32B)", "HashPrevBlock (32B)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5288  mmn_attr: concept "PART of Btcnblock" has 1 attribute-section(s) ("block'part.HEADER (80B)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5028  mmn_attr: concept "45_law of AgntBtcn" has 3 attribute-section(s) ("Bitcoin_law'LEGAL", "Bitcoin_law'RESTRICTED", "Bitcoin_law'ILLEGAL") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4871  mmn_attr: concept "Btcnogzn.WALLET" has 1 attribute-section(s) ("ognBtc.Blocktrail") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4089  mmn_attr: concept "Btcnwallet.HD (Hierarchical-Deterministic)" has 1 attribute-section(s) ("Bitcoin_wltHd'child_key") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4024  mmn_attr: concept "Btcnwallet.Ledger_nano_s_(bhwlns)" has 1 attribute-section(s) ("info-resource of bwlns") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3438  mmn_attr: concept "Doing of Btcnwallet" has 1 attribute-section(s) ("Bitcoin_wltdng.SERVICE") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2967  mmn_attr: concept "Bitcoin_bcr'RPC" has 1 attribute-section(s) ("Bitcoin_bcrrpc'Byte_order") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2832  mmn_attr: concept "Btcnprgm.Bitcoin_Core_(btcbcr|btcbqt)" has 8 attribute-section(s) ("Bitcoin_bcr.EVOLUTING", "Bitcoin_bcr'application_directory", "Bitcoin_bcr'bitcoin.conf", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2373  mmn_attr: concept "BIP_ of Btcnproto(Bitcoin-Improvement-Proposals | btcbip)" has 1 attribute-section(s) ("Bitcoin_bip'Attribute") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1823  mmn_attr: concept "Btcncevu.AGGREGATE" has 1 attribute-section(s) ("Btcncevu.Market_cap") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1717  mmn_attr: concept "DOING of Btcncevu" has 1 attribute-section(s) ("Mixing of Btcncevu") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1396  mmn_attr: concept "price of Btcnexrate" has 1 attribute-section(s) ("Btcncevu_price.lowest") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1319  mmn_attr: concept "adoption of Btcncevu" has 1 attribute-section(s) ("company") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1036  mmn_attr: concept "Btcnnode.FULL" has 1 attribute-section(s) ("Bitcoin_nodFul'requirements") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000018.last.html
+    13444  mmn_attr: concept "AgntEthr.CLASSIC (Etc-Net)" has 1 attribute-section(s) ("info-resource of Etc_Net") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12799  mmn_attr: concept "Ethrtx.CONTRACT_ACOUNT_CREATION" has 1 attribute-section(s) ("Deth_txCac'part.init_(ethtxTi)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12714  mmn_attr: concept "Ethrtx.MESSAGE_CALL" has 3 attribute-section(s) ("Deth_txMc.CONTRACT_PROGRAM_CALLING", "Deth_txMc.ETHER_TRANSFER", "Deth_txMc'part.data_(ethtxTd)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12597  mmn_attr: concept "fee of Ethrtx" has 1 attribute-section(s) ("tx'gas_limit") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12010  mmn_attr: concept "Time of Ethrblock" has 2 attribute-section(s) ("block'Age", "block'Generation (Time-between-blocks)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    11936  mmn_attr: concept "Merkle_tree of Ethrblock" has 3 attribute-section(s) ("Merkle-application", "Merkle-proof", "Merkle-root-hash") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    11738  mmn_attr: concept "block'number (ethblkHi)" has 1 attribute-section(s) ("eth_blkHi.Homestead") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    11577  mmn_attr: concept "Ethrblock.Header" has 15 attribute-section(s) ("block'logsBloom (ethblkHb)", "block'beneficiary (ethblkHc)", "block'difficulty (ethblkHd)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    11030  mmn_attr: concept "organization.ETHCORE" has 1 attribute-section(s) ("Deth_core'Human") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10188  mmn_attr: concept "DOING of Ethrcontract" has 10 attribute-section(s) ("Ethrcontract'doing.EXECUTING", "Ethrcontract'doing.DEVELOPING", "Ethrcontract'doing.CREATING", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10077  mmn_attr: concept "tool of Ethrcontract" has 1 attribute-section(s) ("Ethrcontract'tool.DISASSEMBLER") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9998  mmn_attr: concept "ABI of Ethrcontract" has 1 attribute-section(s) ("info-resource of Deth_abi") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8688  mmn_attr: concept "Solxlago_sentence.import" has 1 attribute-section(s) ("eth_sol'path_of_files") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6671  mmn_attr: concept "visibility of Solxsunt" has 1 attribute-section(s) ("Visibility-specifier of Solxsunt") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6114  mmn_attr: concept "smart_contractsut.Function_(ethctpf)" has 1 attribute-section(s) ("smart_contractf.Constant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5888  mmn_attr: concept "wallet.Mist_ethereum_wallet_(ethwltMst)" has 8 attribute-section(s) ("walletMst'Deleting", "walletMst.EVOLUTING", "walletMst'Installing", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5432  mmn_attr: concept "Ethrprgm.TRUFFLE" has 15 attribute-section(s) ("eth_tfl'Artifact", "Truffle'Command", "Truffle'Dapp", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5395  mmn_attr: concept "Ethrprgm.Token_client" has 1 attribute-section(s) ("info-resource of Token-client") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5074  mmn_attr: concept "Ethrprgm.Mist_client" has 4 attribute-section(s) ("Deth_mst.EVOLUTING", "Mist'API", "Mist'data_folder", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5026  mmn_attr: concept "Ethrprgm.TESTRPC" has 2 attribute-section(s) ("testrpc'Installing", "info-resource of testrpc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     4988  mmn_attr: concept "Ethrprgm.METAMASK" has 1 attribute-section(s) ("info-resource of MetaMask") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     4779  mmn_attr: concept "Ethrprgm.GO_ETHEREUM" has 2 attribute-section(s) ("geth'Console", "geth'Synopsis") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     4126  mmn_attr: concept "Ethrprgm.Ethpm" has 1 attribute-section(s) ("info-resource of Ethpm") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     3835  mmn_attr: concept "Ethrprgm.JavaScript" has 3 attribute-section(s) ("transaction of web3.js", "info-resource of web3.js", "web3js_oWeb3") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1280  mmn_attr: concept "Transaction of Ethraccount" has 2 attribute-section(s) ("Ethraccount'transaction.IN", "Ethraccount'transaction.OUT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1176  mmn_attr: concept "balance of Ethraccount" has 1 attribute-section(s) ("Ethraccount'balance.Subtoken") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      948  mmn_attr: concept "miner_node'mining" has 1 attribute-section(s) ("info-resource of Deth_mining") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      916  mmn_attr: concept "Ethrnode.MINER" has 1 attribute-section(s) ("miner_node'Hardware") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      276  mmn_attr: concept "state of AgntEthr" has 3 attribute-section(s) ("Deth_state.FINAL", "Deth_state.GENESIS", "Deth_state'updating") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000039.last.html
+    16802  mmn_attr: concept "Knlglago.Telos" has 1 attribute-section(s) ("evoluting of lagoTels") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    15262  mmn_attr: concept "individual-name of Wlfmlsl" has 2 attribute-section(s) ("full-name of Wlfmlsl", "short-name of Wlfmlsl") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12992  mmn_attr: concept "datatype of datatype-IRI" has 3 attribute-section(s) ("lexical-space of datatype of datatype-IRI", "lexical-to-value-mapping of datatype of datatype-IRI", "value-space of datatype of datatype-IRI") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12354  mmn_attr: concept "Rdficlass.rdf:List" has 1 attribute-section(s) ("Rdfilist.rdf:nil") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9185  mmn_attr: concept "kbOnto.biomedical" has 1 attribute-section(s) ("BioPortal of ontology.biomedical") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9017  mmn_attr: concept "kbOnto.upperNo" has 2 attribute-section(s) ("ontologyUpperNo.disease_ontology", "ontologyUpperNo.gist") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8850  mmn_attr: concept "ontologyUpper.SUMO_{2004-2007}" has 1 attribute-section(s) ("info-resource of SUMO") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8274  mmn_attr: concept "13_organization of Cycllago" has 2 attribute-section(s) ("Cyclozn.Cycorp", "Cyclozn.MCC") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7824  mmn_attr: concept "Cyclassertion.complexNo" has 2 attribute-section(s) ("Cyclassertion.complexNo.variableNo (Gaf)", "Cyclassertion.complexNo.variable") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6836  mmn_attr: concept "OpenCyc of klmrCyc" has 1 attribute-section(s) ("Infrsc OpenCyc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     4628  mmn_attr: concept "11_manager of lagoWkdt" has 3 attribute-section(s) ("Wikibase of Wkdtmanager", "query-service of Wkdtmanager", "Api of Wkdtmanager") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2928  mmn_attr: concept "KnlgMngr.IKARUS" has 1 attribute-section(s) ("info-resource of klmrIkarus") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2798  mmn_attr: concept "KnlgMngr.MYCIN_{1974..1990s}" has 1 attribute-section(s) ("evoluting of klmrMycin") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2514  mmn_attr: concept "KnlgMngr.ConceptBase_{1987-2013..}" has 2 attribute-section(s) ("info-resource of klmrConceptbase", "evoluting of klmrConceptbase") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2432  mmn_attr: concept "KnlgMngr.GALEN_{1991-2020}" has 1 attribute-section(s) ("evoluting of klmrGalen") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2296  mmn_attr: concept "KnlgMngr.PowerLoom_{1993-2015}" has 1 attribute-section(s) ("evoluting of klmrPowerloom") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2179  mmn_attr: concept "KnlgMngr.Ontolingua_{1993-2005-2023}" has 1 attribute-section(s) ("evoluting of klmrOntolingua") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2083  mmn_attr: concept "KnlgMngr.ThoughtTreasure_{1995-2006-2023..}" has 1 attribute-section(s) ("evoluting of klmrThoughttreasure") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1970  mmn_attr: concept "KnlgMngr.CLASSIC_{1990s}" has 1 attribute-section(s) ("evoluting of klmrClassic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1833  mmn_attr: concept "KnlgMngr.FrameNet_{2000-2023..}" has 3 attribute-section(s) ("evaluation of klmrFramenet", "info-resource of klmrFramenet", "evoluting of klmrFramenet") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1765  mmn_attr: concept "KnlgMngr.ConceptNet_{2001-2019..}" has 1 attribute-section(s) ("evoluting klmrConceptnet") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1586  mmn_attr: concept "KnlgMngr.IBM_Watson_{2011-2015..}" has 1 attribute-section(s) ("evoluting of klmrIbmwatson") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1503  mmn_attr: concept "KnlgMngr.ROSS_{2015..2020}" has 1 attribute-section(s) ("evoluting of klmrRoss") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1435  mmn_attr: concept "KnlgMngr.ReVerb_{2016-2020..}" has 1 attribute-section(s) ("evoluting of klmrReverb") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1379  mmn_attr: concept "KnlgMngr.RBS_Rule_Based_System" has 1 attribute-section(s) ("evoluting of klmrRule") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000002.last.html
+    13556  mmn_attr: concept "OgsmHstHumn of Humnbody" has 5 attribute-section(s) ("OgsmHstHumn.microbiome", "OgsmHstHumn.bacterium", "OgsmHstHumn.archeon", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    13161  mmn_attr: concept "19_SystOgans.neuroendocrine of Humnbody" has 2 attribute-section(s) ("info-resource of HbsystNeuroendocrine", "science.neuroendocrinology") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12807  mmn_attr: concept "HbsystReproductiveFemale.vulva_014" has 2 attribute-section(s) ("mutilation of OganVulva", "info-resource of OganVulva") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10868  mmn_attr: concept "Hborgan.small_intestine.033" has 2 attribute-section(s) ("structure of OganIntestineSmall", "DOING of OganIntestineSmall") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10833  mmn_attr: concept "HbsystDigestive.intestine_030" has 2 attribute-section(s) ("anus of OganIntestine", "structure of OganIntestine") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10199  mmn_attr: concept "protection of OganTooth" has 1 attribute-section(s) ("toothpaste of OganTooth") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10107  mmn_attr: concept "node.tooth of OganMouth" has 14 attribute-section(s) ("01_disease of OganTooth", "tooth-mill of OganTooth", "tooth-root of OganTooth", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9625  mmn_attr: concept "alveoli of OganLung" has 2 attribute-section(s) ("DOING of alveoli", "alveoli.aggregate") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9216  mmn_attr: concept "disease of OganThroat" has 1 attribute-section(s) ("04_therapy of DissThroatSore") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8514  mmn_attr: concept "cortex of epidermis" has 2 attribute-section(s) ("structure of epidermis-cortex", "functing of epidermis-cortex") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7716  mmn_attr: concept "measuring of pulse" has 1 attribute-section(s) ("measure of pulse") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7701  mmn_attr: concept "pulse of vesselArtery" has 2 attribute-section(s) ("measuring of pulse", "measure of pulse") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7414  mmn_attr: concept "rate" has 1 attribute-section(s) ("heart_rate.resting") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6536  mmn_attr: concept "16_weight of Humnbody" has 2 attribute-section(s) ("weight'gain of Humnbody", "weight'loss of Humnbody") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6041  mmn_attr: concept "mineral.magnesium-Mg-(0.1%) of Humnbody" has 1 attribute-section(s) ("food-source of HbnutrientMagnesium") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     4688  mmn_attr: concept "osteoid of TissBone" has 1 attribute-section(s) ("structure of osteoid") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      939  mmn_attr: concept "hand of Hbupper_limbs" has 2 attribute-section(s) ("palm of hand", "finger of hand") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000016.last.html
+    16245  mmn_attr: concept "Dfn_gov'Neuron" has 2 attribute-section(s) ("dfnnrn'Controller", "dfnnrn'Creating") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    15734  mmn_attr: concept "transaction of Rpplchain" has 1 attribute-section(s) ("xrptx.FRAUDELENT") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    15339  mmn_attr: concept "Rpplnode.SERVER" has 1 attribute-section(s) ("Rpplnode.server.PROPOSER") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    14303  mmn_attr: concept "emcnet'exchange_value_unit.Consensus_(EMCexvuC)" has 1 attribute-section(s) ("emcexvuC'Geting") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10712  mmn_attr: concept "private_key of DcrdwalletCli" has 1 attribute-section(s) ("dcrseedhextowords") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    10247  mmn_attr: concept "command of Dcrctl (dcrctl [command])" has 1 attribute-section(s) ("dcrctl'Command.wallet (dcrctl --wallet [command])") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9951  mmn_attr: concept "37_governance-system of AgntDcrd (dcrgov)" has 1 attribute-section(s) ("dcrgov'Decred_Assembly_(dcrasl)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9822  mmn_attr: concept "constitution of Dcrdproto (dcrcttn)" has 1 attribute-section(s) ("Principles") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9709  mmn_attr: concept "AgntDcrd'mining.POOL" has 3 attribute-section(s) ("PoS-Mining", "PoW-Mining", "Mining-pool") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9698  mmn_attr: concept "Mining of AgntDcrd" has 2 attribute-section(s) ("AgntDcrd'mining.POOL", "AgntDcrd'mining.SOLO") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9465  mmn_attr: concept "waves_net'exchange_value_unit.Consensus_(WAVESexvuC)" has 1 attribute-section(s) ("wavesexvuC'OgnExchange") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8916  mmn_attr: concept "42_organization of LiskexvuC" has 1 attribute-section(s) ("LSKogn.EXCHANGE") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6207  mmn_attr: concept "BkcnDpdt.SIDECHAIN" has 1 attribute-section(s) ("info-resource of scnet") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5649  mmn_attr: concept "Bkcndoing.UPGRADING" has 1 attribute-section(s) ("info-resource of upgrading") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5585  mmn_attr: concept "Bkchinfrsc.book" has 1 attribute-section(s) ("resource.book.Mastering_Bitcoin") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2712  mmn_attr: concept "BkcnasetCN.Colored_coin" has 1 attribute-section(s) ("appendingNo_asset.Bitcoin_colored_coin") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2185  mmn_attr: concept "Bkcnasset.MINABLE" has 1 attribute-section(s) ("Bkcnasset.MINABLE.SIGNIFICANTLY_PREMINED") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000011.last.html
+    15907  mmn_attr: concept "CholesterolTherapy.statin" has 4 attribute-section(s) ("relation-to-diabetes of statin", "statin.pitavastatin", "relation-to-memory of statin", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    15051  mmn_attr: concept "05_protection of DissInfo_tech" has 5 attribute-section(s) ("InfoTechProtection.fingure", "InfoTechProtection.chair", "InfoTechProtection.hand_wrist", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    14420  mmn_attr: concept "02_cause of DissBronchiolitis" has 1 attribute-section(s) ("risk-factor of DissBronchiolitis") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    12253  mmn_attr: concept "04_therapy of DissContraception" has 3 attribute-section(s) ("ContraceptionTherapy.vasectomy", "ContraceptionTherapy.castration", "ContraceptionTherapy.ru_486") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    11748  mmn_attr: concept "04_therapy of DissMultisclero" has 4 attribute-section(s) ("MultipleSclerosisTherapy.baf312", "MultipleSclerosisTherapy.alemtuzumab", "cladribine", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9430  mmn_attr: concept "01_symptom of DissFlu" has 1 attribute-section(s) ("FluSymptom.in.gr") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9020  mmn_attr: concept "04_therapy of DissCommon_cold" has 2 attribute-section(s) ("CommonColdTherapy.zinc", "CommonColdTherapy.food") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7385  mmn_attr: concept "04_therapy of DissAnxiety" has 4 attribute-section(s) ("exams of AnxietyTherapy", "food of AnxietyTherapy", "medication of AnxietyTherapy", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7220  mmn_attr: concept "01_symptom of DissAnxiety" has 1 attribute-section(s) ("AnxietySymptom.gagging") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6317  mmn_attr: concept "DissCancer.lung.102" has 1 attribute-section(s) ("05_protection of DissCancerLung") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6257  mmn_attr: concept "BreastCancerTherapy.mastectomy" has 1 attribute-section(s) ("info-resource of mastectomy") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     5303  mmn_attr: concept "03_diagnosis of DissCancer" has 4 attribute-section(s) ("CancerDiagnosis.computer_program", "CancerDiagnosis.medical_test", "CancerDiagnosis.cancer_index", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2969  mmn_attr: concept "DissAnaemia.thalassemia" has 2 attribute-section(s) ("statistics of DissThalassemia", "04_therapy of DissThalassemia") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      397  mmn_attr: concept "Dissdiagnosis.MRI" has 1 attribute-section(s) ("MRI-vs-CT-scan") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000004.last.html
+    2454  mmn_attr: concept "Hbcell.leucocyte_019" has 4 attribute-section(s) ("structure of cellLeucocyte", "DOING of cellLeucocyte", "evoluting of cellLeucocyte", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2395  mmn_attr: concept "Hbcell.taste_receptor_018" has 1 attribute-section(s) ("evoluting of taste-receptor-cell") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2332  mmn_attr: concept "Hbcell.spermatozoon_017" has 2 attribute-section(s) ("evoluting of spermatozoon", "structure of spermatozoon") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2164  mmn_attr: concept "haemoglobin of red-blood-cell" has 1 attribute-section(s) ("DOING of haemoglobin") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2131  mmn_attr: concept "Hbcell.red_009" has 6 attribute-section(s) ("haemoglobin of red-blood-cell", "structure of red-blood-cell", "DOING of red-blood-cell", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1979  mmn_attr: concept "Hbcell.photoreceptor_015" has 1 attribute-section(s) ("structure of photoreceptor-cell") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1892  mmn_attr: concept "Hbcell.ovum_014" has 2 attribute-section(s) ("10_size of cellOvum", "evoluting of cellOvum") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1849  mmn_attr: concept "cellMuscle.cardiac" has 1 attribute-section(s) ("structure of cardiac-muscle-cell") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1608  mmn_attr: concept "Hbcell.lymph_012" has 1 attribute-section(s) ("DOING of lymph-cell") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     976  mmn_attr: concept "19_chromosome of Hbcell" has 5 attribute-section(s) ("structure of chromosome", "chromosome.aggregate", "chromosome.1", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     572  mmn_attr: concept "gene of Dna" has 5 attribute-section(s) ("structure of DnaGene", "DOING of DnaGene", "evoluting of gene", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     405  mmn_attr: concept "base of Dna" has 1 attribute-section(s) ("DnaBase.aggregate") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000015.last.html
+    13276  mmn_attr: concept "Agntdoing.UPGRADING" has 1 attribute-section(s) ("Resource") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9203  mmn_attr: concept "Agntexchange.LakeBTC (CHINA)" has 1 attribute-section(s) ("lakebtc'security") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9093  mmn_attr: concept "Agntexchange.Coinbase (USA {2012})" has 3 attribute-section(s) ("coinbase'Api", "evoluting of coinbase", "coinbase'exchange") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9013  mmn_attr: concept "Agntexchange.Changenlly_exchange_{2016}" has 2 attribute-section(s) ("ognChangelly'exchange_rate_chart", "ognChangelly'Fee") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8862  mmn_attr: concept "Agntexchange.BitPay {2011}" has 1 attribute-section(s) ("bitpay'card") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8685  mmn_attr: concept "Agntexchange.CENTRALIZED" has 1 attribute-section(s) ("Agntexchange.CENTRALIZED.SEMI") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8468  mmn_attr: concept "asset of Agntexchange" has 1 attribute-section(s) ("liquidity of asset of exchange-ogn") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8324  mmn_attr: concept "AgntogznBridge.ShapeShift" has 2 attribute-section(s) ("exchange-rate of ShapeShift", "fee of ShapeShift") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7467  mmn_attr: concept "benefit of AgntAppevaln" has 1 attribute-section(s) ("benefit.DECENTRALIZATION") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     7387  mmn_attr: concept "05_human of Agntdapp" has 3 attribute-section(s) ("Agntdapp'human.DEVELOPER", "human.DAILY-ACTIVE-USER of Agntdapp", "human.END-USER of Agntdapp") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     6554  mmn_attr: concept "Agntgovc.ON_CHAIN" has 2 attribute-section(s) ("Agntgovc.ON_CHAIN.YES_AND_NO", "voter-apathy of on-chain-govc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHmn000002.last.html
+    5192  mmn_attr: concept "human.definiteNo" has 2 attribute-section(s) ("human.definiteNo.one", "human.definiteNo.oneNo") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5122  mmn_attr: concept "human.definite" has 2 attribute-section(s) ("human.definite.quantity_none", "human.definite.quantity_all") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4985  mmn_attr: concept "human.reference" has 2 attribute-section(s) ("human.reference.interrogative", "human.reference.interrogativeNo") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4935  mmn_attr: concept "human.Specsdiv.generation" has 1 attribute-section(s) ("generation.Z") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4628  mmn_attr: concept "Humnevolg.blood_family_tree" has 1 attribute-section(s) ("blood-relation of human") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3142  mmn_attr: concept "44_qualification of human" has 1 attribute-section(s) ("info-resource of qualification") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2747  mmn_attr: concept "HumnLast_name.toponymic" has 1 attribute-section(s) ("ActgNaming.last_name.toponymic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2236  mmn_attr: concept "Humnsltn.relative" has 1 attribute-section(s) ("kinship of human") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1819  mmn_attr: concept "brother of human" has 2 attribute-section(s) ("brother.elder", "brother.younger") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     950  mmn_attr: concept "organization of Humnright" has 5 attribute-section(s) ("Ogzn.HRMI", "Ogzn.United_Nations_Commission_on_Human_Rights", "Ogzn.United_Nations_Human_Rights_Council", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000009.last.html
+    4361  mmn_attr: concept "doing.searching of Mcshmgr" has 3 attribute-section(s) ("evoluting of Mcshmgr'searching", "removing-names-from-index-files of Mcshmgr", "splitting-index-files of Mcshmgr") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3467  mmn_attr: concept "Mhvmmenu.valid" has 1 attribute-section(s) ("Mhvmmenu.validate_file") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3133  mmn_attr: concept "mUtil.mjs" has 1 attribute-section(s) ("fDateYMD of mUtil.mjs") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2939  mmn_attr: concept "mSftp.mjs" has 1 attribute-section(s) ("Mcshmgrfile.mSftpOnly.mjs") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2696  mmn_attr: concept "TabContent:mcshcntrInfo" has 2 attribute-section(s) ("Search:TabContent:mcshcntrInfo", "Toc:TabContent:mcshcntrInfo") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2632  mmn_attr: concept "Mcsh_ctnr.main" has 2 attribute-section(s) ("Mcsh_ctnr.main.content", "Mcsh_ctnr.main.info") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2440  mmn_attr: concept "dir of Mcshmgr" has 4 attribute-section(s) ("mcsh-visual of Mcshmgr", "dirMcshmgr(root) of Mcshmgr", "dirValid of Mcshmgr", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1993  mmn_attr: concept "namidx.lagoRoot.json of dirNamidx" has 1 attribute-section(s) ("namidx.lagoRoot.start.json of dirNamidx") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1802  mmn_attr: concept "dirNamidx of Mcshwv" has 5 attribute-section(s) ("dirLagLlll of dirNamidx", "file of dirNamidx", "namidx.lagoLlllNumber.json of dirNamidx", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1753  mmn_attr: concept "dirSubject of Mcshwv" has 1 attribute-section(s) ("file of dirSubject") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000031.last.html
+    2513  mmn_attr: concept "Cppzlago_library.STANDARD_TEMPLATE_LIBRARY_STL" has 1 attribute-section(s) ("header-file of STL") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2428  mmn_attr: concept "Cppzlago_library.STANDARD_STD" has 2 attribute-section(s) ("header-file of standard-library", "namespace of standard-library") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2035  mmn_attr: concept "sentence.ASSIGNMENT" has 1 attribute-section(s) ("operator of src-assignment") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2007  mmn_attr: concept "sentence.DEFINITION" has 1 attribute-section(s) ("sentence.DECLARATION") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1786  mmn_attr: concept "named_Sunt.REFERENCE_(rf)" has 1 attribute-section(s) ("definition of src-reference") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1754  mmn_attr: concept "named_Sunt.POINTER_(p)" has 1 attribute-section(s) ("definition of src-pointer") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1669  mmn_attr: concept "CppzsuntNamed.VARIABLE" has 4 attribute-section(s) ("address of src-variable", "name of src-variable", "type of src-variable", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1364  mmn_attr: concept "Cppzsunt.class (c) of Cppzlago" has 3 attribute-section(s) ("src_class.object", "definition of Cppzc", "member of Cppzc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     575  mmn_attr: concept "Cppzsunt.char of Cppzlago" has 1 attribute-section(s) ("char-literal") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     137  mmn_attr: concept "file of Cppzalgo" has 2 attribute-section(s) ("src_file.IMPLEMENTATION_(.cpp)", "src_file.HEADER_(.h)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000042.last.html
+    5242  mmn_attr: concept "sectorEdu.digital" has 7 attribute-section(s) ("organization of DgtlEdu", "DgtlEdu.smart", "DgtlEdu.online", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4539  mmn_attr: concept "publisher of ChnaESchoolBook" has 1 attribute-section(s) ("publisher.Higher_Education_Press") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4403  mmn_attr: concept "Chnaeduc.digital" has 1 attribute-section(s) ("strategy of ChnaDgtlEduSector") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3571  mmn_attr: concept "student of Chnaeduc" has 1 attribute-section(s) ("STEM-student of Chnaeduc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3094  mmn_attr: concept "policy of ChnaMOE" has 6 attribute-section(s) ("Digital_Education_2.0_policy", "Double-Reduction-Policy", "Education-Digitalization-Strategy", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1634  mmn_attr: concept "organization of SchlbookDigi" has 1 attribute-section(s) ("Ogzn.World_Digital_Education_Alliance") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1050  mmn_attr: concept "curriculum of sectorEdu" has 1 attribute-section(s) ("integration of curriculum") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     596  mmn_attr: concept "OgznEdu.tertiary" has 1 attribute-section(s) ("student of OgznEduTertiary") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     532  mmn_attr: concept "OgznEdu.secondary" has 2 attribute-section(s) ("OgznEdu.secondary.junior", "OgznEdu.secondary.senior") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000010.last.html
+    6014  mmn_attr: concept "Jsgnalgo.MATH_MANAGING" has 2 attribute-section(s) ("Jsgnalgo.HEX_TO_INT", "Jsgnalgo.INT_TO_HEX") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5516  mmn_attr: concept "Jsloop.for" has 2 attribute-section(s) ("Jsloop.for..in_object", "Jsloop.for..of") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4682  mmn_attr: concept "JSON-object of JsapiNative" has 2 attribute-section(s) ("Jsgnlago'JSON.parse_function", "Jsgnlago'JSON.stringify_function") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4234  mmn_attr: concept "Jssut.undefined" has 1 attribute-section(s) ("19_Jsgnalgo'UNIT of Jsgnlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     704  mmn_attr: concept "Jssut.Custom" has 2 attribute-section(s) ("Jssut.custom.OWN (dependencyNo)", "Jssut.custom.OWN.NO (dependency)") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     484  mmn_attr: concept "Jssut_name.EXTERNAL (reference)" has 1 attribute-section(s) ("Jssut_name.external.TYPENAME") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     353  mmn_attr: concept "13_organization of Jsgnlago" has 1 attribute-section(s) ("ogn.OpenJS_Foundation") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     258  mmn_attr: concept "problem of Jsgnevaln" has 3 attribute-section(s) ("instanceof of Jsgnlago", "naming-mechanism of Jsgnlago", "object-scope of Jsgnlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     210  mmn_attr: concept "benefit of Jsgnevaln" has 2 attribute-section(s) ("inheritance of Jsgnlago", "simplicity of Jsgnlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000036.last.html
+    5752  mmn_attr: concept "techAI.statistical_connectionist" has 1 attribute-section(s) ("techAI.statistical_vs_connectionist") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5607  mmn_attr: concept "techAI.semantic_symbolic" has 1 attribute-section(s) ("semantic-vs-symbolic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5526  mmn_attr: concept "techAI.supper" has 1 attribute-section(s) ("evoluting of techAISupper") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5342  mmn_attr: concept "techAI.responsible" has 2 attribute-section(s) ("info-resource of techAIResponsible", "evoluting of techAIResponsible") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4495  mmn_attr: concept "TechMalr.supervised_learning" has 1 attribute-section(s) ("backpropagation-algorithm") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3580  mmn_attr: concept "techSpsn.eSpeak" has 1 attribute-section(s) ("language-files of eSpeak") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3176  mmn_attr: concept "building espeakng" has 3 attribute-section(s) ("cmake-build espeakng", "make-build espeakng", "uninstalling espeakng") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1717  mmn_attr: concept "Aiagent.OpenClaw" has 1 attribute-section(s) ("architecture of OpenClaw") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     157  mmn_attr: concept "AiSoftCode.TensorFlow_library" has 1 attribute-section(s) ("relation-to-PyTorch of TensorFlow") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000004.last.html
+    6132  mmn_attr: concept "movingDown.in_water" has 2 attribute-section(s) ("movingDownWater.acting", "movingDownWater.functing") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    5628  mmn_attr: concept "movingTo.acting" has 3 attribute-section(s) ("ActgMovingTo.bringing", "ActgMovingTo.going", "ActgMovingTo.receiving") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1452  mmn_attr: concept "doing.sequenced" has 1 attribute-section(s) ("07_syntax of DongSequenced") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1060  mmn_attr: concept "speed.specific" has 3 attribute-section(s) ("speed.slow", "speed.slowNo", "speed.very_fast") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1027  mmn_attr: concept "Dongargt.speed" has 5 attribute-section(s) ("speed.slowNo", "speed.slow", "speed.very_fast", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     581  mmn_attr: concept "Dongargt.manner" has 14 attribute-section(s) ("relation of manner", "syntax of manner", "manner.reference", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000006.last.html
+    3079  mmn_attr: concept "timeUom.week" has 2 attribute-section(s) ("inception of timeWeek", "timeWeek.last") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2703  mmn_attr: concept "timeUom.month" has 12 attribute-section(s) ("month.January", "month.February", "month.March", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1923  mmn_attr: concept "Timecalendar.Gregorian" has 1 attribute-section(s) ("adoption of Gregorian-calendar") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1022  mmn_attr: concept "time.definiteNo" has 5 attribute-section(s) ("time.defiNo.quanto.any", "time.defiNo.quanto.big", "time.defiNo.quanto.one", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     918  mmn_attr: concept "time.definite" has 2 attribute-section(s) ("time.defi.quanto.all", "time.defi.quanto.none") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     443  mmn_attr: concept "time.reference" has 2 attribute-section(s) ("time.reference.interrogative", "time.reference.deictic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000030.last.html
+    5919  mmn_attr: concept "suffix of Turkverb" has 3 attribute-section(s) ("order of suffixVerbTurk", "harmony of suffixVerbTurk", "suffixForming of Turkverb") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4699  mmn_attr: concept "mVTurkReported.past.simple" has 5 attribute-section(s) ("mVTurkReported.past.continuous", "mVTurkReported.past.doubtful", "mVTurkReported.past.perfect", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4560  mmn_attr: concept "Turkvbmb.reported_(mIş)_(it is said)" has 9 attribute-section(s) ("mVTurkReported.aorist", "mVTurkReported.past.continuous", "mVTurkReported.future", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3977  mmn_attr: concept "mVTurkPast.perfect" has 1 attribute-section(s) ("mVTurkPast.perfect.dubitative") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3619  mmn_attr: concept "mVTurkPres.perfect" has 1 attribute-section(s) ("mVTurkPres.perfect.continuous") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2103  mmn_attr: concept "suffix of Turknoun" has 2 attribute-section(s) ("suffixForming of Turknoun", "suffixInflectional of Turknoun") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000012.last.html
+    9034  mmn_attr: concept "Task of GulpJs" has 2 attribute-section(s) ("gulpjs_task.Copy_files", "gulpjs_task.Minify_Jsgn_files") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8834  mmn_attr: concept "API of GulpJs" has 4 attribute-section(s) ("dest-function- of GulpJs", "src-function- of GulpJs", "task-function- of GulpJs", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8214  mmn_attr: concept "task of NpmpkgJake" has 2 attribute-section(s) ("lagoJsndjake'task.DIRECTORY", "lagoJsndjake'task.FILE") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    8003  mmn_attr: concept "Npmpkg.express" has 2 attribute-section(s) ("lagoJsndexpress'API", "lagoJsndexpress'app.SERVER") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    6600  mmn_attr: concept "configuring of NpmpkgEslint" has 2 attribute-section(s) ("ESLint'configuration_file", "ESLint'configuration_rule") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     890  mmn_attr: concept "Jsndmobt'member.module.exports_object" has 2 attribute-section(s) ("Exporting-MANY-MEMBERS", "Exporting-SINGLE-MEMBER") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000020.last.html
+    3247  mmn_attr: concept "organization of ChronoTech" has 3 attribute-section(s) ("organization.Edway_Group", "organization.Merchant", "organization.Exchange") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3134  mmn_attr: concept "LaborX'searching" has 1 attribute-section(s) ("LaborX'matching") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2910  mmn_attr: concept "work_description of Chtklaborx_job" has 4 attribute-section(s) ("LaborX_job'field_of_work", "LaborX_job'skills", "LaborX_job'money_used_(token)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2778  mmn_attr: concept "provider of Chtklaborx (mediator)" has 2 attribute-section(s) ("Compensation", "LaborX'Job_board") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2557  mmn_attr: concept "LaborX_DApp_frontend of Chtklaborx" has 1 attribute-section(s) ("LaborX'canceling_job") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1578  mmn_attr: concept "Chrntechsc.ChronoBankAssetProxy.sol" has 1 attribute-section(s) ("Chrntechsc.ChronoBankAssetWithFeeProxy.sol") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000024.last.html
+    3658  mmn_attr: concept "curator of Steemit_human" has 1 attribute-section(s) ("curator-reward of Steemit") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3629  mmn_attr: concept "author of Steemit_human" has 1 attribute-section(s) ("author-reward of Steemit") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3572  mmn_attr: concept "Steemit-app" has 9 attribute-section(s) ("account of Steemit", "05_human of Steemit", "law of Steemit", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1097  mmn_attr: concept "steem-js official-library of Steem-client" has 6 attribute-section(s) ("steem.api object", "steem.auth object", "steem.broadcast object", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     828  mmn_attr: concept "Stemasset.STEEM_Dollar" has 4 attribute-section(s) ("creating STEEM-Dollar", "converting STEEM-Dollar", "destroying STEEM-Dollar", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     780  mmn_attr: concept "Stemasset.STEEM_Power" has 1 attribute-section(s) ("STEEM_Power.VESTS") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000010.last.html
+    2795  mmn_attr: concept "quantoRela.fraction" has 7 attribute-section(s) ("quanto.fraction.centi (x1/100)", "quanto.fraction.deci (x1/10)", "quanto.fraction.half", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2674  mmn_attr: concept "quanto.multiple.binary" has 8 attribute-section(s) ("quanto.multiple.binary.exbi (1024^6)", "quanto.multiple.binary.gibi (1024^3)", "quanto.multiple.binary.kibi (1024^1)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2060  mmn_attr: concept "quantoRela.average" has 6 attribute-section(s) ("quanto.average.big", "quanto.average.less", "quanto.average.more", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1732  mmn_attr: concept "quanto.definiteNO" has 7 attribute-section(s) ("quantoDefiNo.one", "quantoDefiNo.oneNo", "quantoDefiNo.any (one-or-some)", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     250  mmn_attr: concept "quanto.reference" has 2 attribute-section(s) ("quanto.reference.interrogative", "quanto.reference.deictic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000018.last.html
+    21445  mmn_attr: concept "Zhontone.first_ā_macron" has 1 attribute-section(s) ("Zhontone.1_x") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    18838  mmn_attr: concept "InfoResource of Zhollago" has 2 attribute-section(s) ("The-Analects of Zhollago", "Chinese-Text-Project of Zhollago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    13807  mmn_attr: concept "Zhonverb.charTwo" has 1 attribute-section(s) ("Zhonverb.yuǎnlí_远离!=to_stay_away_from") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    13757  mmn_attr: concept "Zhonverb.charOne" has 1 attribute-section(s) ("Zhonverb.shì_是") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     8704  mmn_attr: concept "Zhon_char.traditional" has 1 attribute-section(s) ("traditional-relation-to-simplified") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000009.last.html
+    7085  mmn_attr: concept "55_name.individual of society" has 1 attribute-section(s) ("ISO-3166 of society") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4088  mmn_attr: concept "Socctzn.single" has 1 attribute-section(s) ("Socctzn.single.SoctChina_India") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3184  mmn_attr: concept "servicePblc.social_order" has 1 attribute-section(s) ("social-control") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2823  mmn_attr: concept "SoctAdmndoing.elections" has 2 attribute-section(s) ("elections.method", "elections.postal") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2471  mmn_attr: concept "worldview of Socadmn" has 1 attribute-section(s) ("statistics-department of Socadmn") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000008.last.html
+    4117  mmn_attr: concept "todo of Hitpevolg" has 1 attribute-section(s) ("todo.DONE") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3213  mmn_attr: concept "problem of Hitpevaln" has 1 attribute-section(s) ("Firefox") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2255  mmn_attr: concept "oTreeUl of oHitp" has 5 attribute-section(s) ("oTreeUl.fTreeUlCreate", "oTreeUl.fTreeUlCollapseAll", "oTreeUl.fTreeUlExpandAll", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1416  mmn_attr: concept "fContainersInsert of oHitp" has 24 attribute-section(s) ("fEvtClickContent of fContainersInsert", "fEvtLink of fContainersInsert", "fEvtMouseoverContent of fContainersInsert", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1250  mmn_attr: concept "API of Hitpjsbr" has 1 attribute-section(s) ("oHitp of HitpAPI") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000025.last.html
+    999  mmn_attr: concept "organization of Everipedia" has 1 attribute-section(s) ("organization.Everipedia_Inc") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    877  mmn_attr: concept "asset.Brainpower_token" has 1 attribute-section(s) ("getting Brainpower") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    775  mmn_attr: concept "asset of Everipedia" has 2 attribute-section(s) ("asset.Brainpower_token", "asset.IQ_token") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    415  mmn_attr: concept "program of Everipedia" has 4 attribute-section(s) ("IQ-token-module of Everipedia", "article-module of Everipedia", "error-message of Everipedia", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     80  mmn_attr: concept "article of Everipedia" has 16 attribute-section(s) ("article.AGGREGATE", "address of article", "blurb of article", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000026.last.html
+    1826  mmn_attr: concept "Bkskdapp.GRAPHITE" has 6 attribute-section(s) ("avatar of Graphite", "contact of Graphite", "dashboard of Graphite", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1661  mmn_attr: concept "running Dapp" has 1 attribute-section(s) ("problem running Dapp") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1335  mmn_attr: concept "Blockstack_browser.WEB" has 2 attribute-section(s) ("using-on-public-computers of web-browser", "updating web-browser") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1156  mmn_attr: concept "program.blockstack.js" has 5 attribute-section(s) ("member of blockstack.js", "deleteFile() of blockstack.js", "getFile() of blockstack.js", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     832  mmn_attr: concept "name.OFF_CHAIN_(subdomain)" has 2 attribute-section(s) ("info-resource of subdomain", "price of subdomain") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000010.last.html
+    2751  mmn_attr: concept "Hnmdsci.descriptive_linguistics" has 1 attribute-section(s) ("relation-to-prescription of descriptive-linguistics") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2499  mmn_attr: concept "Hnmdsci.computational_linguistics" has 2 attribute-section(s) ("13_area-of-study of HnmdsciComputational", "info-resource of HnmdsciComputational") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1021  mmn_attr: concept "anthroponomastics of HnmdsciName" has 1 attribute-section(s) ("info-resource of anthroponomastics") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     911  mmn_attr: concept "nomenclature of HnmdsciName" has 1 attribute-section(s) ("nomenclature.chemical") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStnlaw000006.last.html
+    688  mmn_attr: concept "worker of lawGrca" has 3 attribute-section(s) ("WrkrLawGrc.judge", "WrkrLawGrc.prosecutor", "WrkrLawGrc.lawyer") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    204  mmn_attr: concept "Court of First Instance (Πρωτοδικείο) of lawGrca" has 2 attribute-section(s) ("irinodikio of lawGrca", "protodikio of lawGrca") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    187  mmn_attr: concept "court of lawGrca" has 3 attribute-section(s) ("commercial-court of lawGrca", "juvenile-court of lawGrca", "labor-court of lawGrca") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    141  mmn_attr: concept "judiciary of lawGrca_legal_system" has 1 attribute-section(s) ("independence of Grcjudi") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000007.last.html
+    995  mmn_attr: concept "SciCmpr.quantum_computing" has 1 attribute-section(s) ("evoluting of quantum-computing") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    441  mmn_attr: concept "SciCmpr.automata_theory" has 1 attribute-section(s) ("evoluting of automata-theory") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    345  mmn_attr: concept "SciCmpr.theoritical_computer_science" has 1 attribute-section(s) ("evoluting of theoritical-computer-science") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000006.last.html
+    2741  mmn_attr: concept "Uccp.surrogate" has 1 attribute-section(s) ("char.surrogate") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     155  mmn_attr: concept "char.computer" has 1 attribute-section(s) ("encoding of computer-char") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      70  mmn_attr: concept "glyph of char" has 1 attribute-section(s) ("glyph.font") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000026.last.html
+    12391  mmn_attr: concept "Ellnverb.siziyia_B" has 2 attribute-section(s) ("Ellnverb.siziyia_B.taksi_A", "Ellnverb.siziyia_B.taksi_B") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     2002  mmn_attr: concept "Ellnverb.suffix" has 3 attribute-section(s) ("Ellnverb.suffix_/me/", "Ellnverb.suffix_misc", "Ellnverb.suffix_/o/") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     1450  mmn_attr: concept "Ellnvbmb.perfect" has 3 attribute-section(s) ("Ellnvbmb.perfect.present", "Ellnvbmb.perfect.past", "Ellnvbmb.perfect.future") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000037.last.html
+    4871  mmn_attr: concept "Urduunit.phoneme" has 2 attribute-section(s) ("Urduphnm.vowel", "Urduphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2803  mmn_attr: concept "diacritic of Hindletr" has 14 attribute-section(s) ("HindDiac.2305_⟨ँ⟩_strong_nasalization", "HindDiac.2306_⟨ं⟩_nasalization", "HindDiac.2307_⟨ः⟩_sanscrit_words", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2685  mmn_attr: concept "Hindunit.phoneme" has 2 attribute-section(s) ("Hindphnm.vowel", "Hindphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshNtr000007.last.html
+    7344  mmn_attr: concept "ChmcElry.generic.isotope" has 1 attribute-section(s) ("AZE-notation of ChmcElrIsotope") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    4721  mmn_attr: concept "ChmcElry.Potassium_Κ19" has 3 attribute-section(s) ("20_occurance of ChmcElrΚ19", "23_usage of ChmcElrΚ19", "nutritional-value of ChmcElrΚ19") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1053  mmn_attr: concept "ChmcElry.individualNo" has 1 attribute-section(s) ("info-resource of individualNo") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshOgm000007.last.html
+    1816  mmn_attr: concept "Ogsmcell.animal_004" has 3 attribute-section(s) ("lysosome of cellAnimal", "cellAnimal.brain_002", "cellAnimal.phagocyte_001") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1030  mmn_attr: concept "Ogmcelreceptor.surface_002" has 1 attribute-section(s) ("OgmcelrctrSurface.co_receptor") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     981  mmn_attr: concept "receptor of signalingOgsm" has 8 attribute-section(s) ("Ogmcelreceptor.external_006", "Ogmcelreceptor.internal_007", "Ogmcelreceptor.surface_002", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStnlaw000004.last.html
+    1280  mmn_attr: concept "lawIntl.treaty" has 2 attribute-section(s) ("lawIntlTreaty.aggregate", "UN-Treaty-Collection") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     725  mmn_attr: concept "lawIntl.criminal" has 2 attribute-section(s) ("international-crime of lawIntlCriminal", "source of lawIntlCriminal") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     159  mmn_attr: concept "organization of lawIntl" has 3 attribute-section(s) ("OgznLawIntl.ICC!=International_Criminal_Court", "OgznLawIntl.ICJ!=International_Court_of_Justice", "OgznLawIntl.UNOLA!=UN_Office_of_Legal_Affairs") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000006.last.html
+    2646  mmn_attr: concept "naming-convention of Srcdlago_identifier" has 3 attribute-section(s) ("Srcdnaming.camel_case", "Srcdnaming.Hungarian", "Srcdnaming.snake_case") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1469  mmn_attr: concept "programing of Pgmldoing" has 1 attribute-section(s) ("programing.TDD of Prgmlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+      82  mmn_attr: concept "04_input|archetype of Prgmlago" has 2 attribute-section(s) ("code of archetype", "domain of archetype") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000019.last.html
+    4787  mmn_attr: concept "eosDAC_custodian.Stokes.Luke" has 2 attribute-section(s) ("account of Stokes.Luke", "info-resource of Stokes.Luke") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3355  mmn_attr: concept "53_stakeholder of DAOstack" has 4 attribute-section(s) ("stakeholder.GOVERNOR", "stakeholder.HUMAN", "stakeholder.PREDICTOR", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    2757  mmn_attr: concept "OgznDao.ARAGON (Ethereum)" has 27 attribute-section(s) ("Aragon-Court of Aragon_Network", "DaoAragon.Aragon_Network", "Aragon-Association", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000022.last.html
+    1294  mmn_attr: concept "FairCoop" has 2 attribute-section(s) ("local-node of FairCoop", "info-resource of FairCoop") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1095  mmn_attr: concept "chain-admin" has 2 attribute-section(s) ("DOING of chain-admin", "power of chain-admin") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     225  mmn_attr: concept "Faircoin_node.CVN" has 7 attribute-section(s) ("CVN.ACTIVE", "CVN.AGGREGATE", "FASITO of CVN", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000029.last.html
+    326  mmn_attr: concept "JsonSunt.array" has 1 attribute-section(s) ("JsonArr'grammar") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    262  mmn_attr: concept "JsonSunt.number" has 1 attribute-section(s) ("Jsonlago_number'grammar") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    210  mmn_attr: concept "JsonSunt.string" has 1 attribute-section(s) ("Jsonlago_string'grammar") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000007.last.html
+    3016  mmn_attr: concept "surface.Earth" has 1 attribute-section(s) ("address of Earth-surface") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     879  mmn_attr: concept "space.reference" has 2 attribute-section(s) ("space.reference.interrogative", "space.reference.deictic") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000012.last.html
+    407  mmn_attr: concept "using of Modeldoing" has 1 attribute-section(s) ("using.learning of model") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    321  mmn_attr: concept "creating of Modeldoing" has 1 attribute-section(s) ("argument of Mappingdoing") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000009.last.html
+    1219  mmn_attr: concept "SciLogic.classical" has 1 attribute-section(s) ("validity of logicClassical") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     215  mmn_attr: concept "SciMind.data_science" has 2 attribute-section(s) ("dataset of SciMindData", "evolution of SciMindData") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000014.last.html
+    1102  mmn_attr: concept "EconsciCmpl.agent_based" has 1 attribute-section(s) ("info-resource of SciEconCmplAb") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     676  mmn_attr: concept "EconsciCptl.neoliberalism" has 1 attribute-section(s) ("evoluting of neoliberalism") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000013.last.html
+    3513  mmn_attr: concept "drinkWater.bottled" has 1 attribute-section(s) ("bottle") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    3119  mmn_attr: concept "measure of drinkCocoa" has 3 attribute-section(s) ("calorie of drinkCocoa", "dish of drinkCocoa", "time of drinkCocoa") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000020.last.html
+    11013  mmn_attr: concept "Ellnconj.έτσι" has 1 attribute-section(s) ("Ellnconj.έτσι'ώστε") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     9262  mmn_attr: concept "Ellnnoun.regular" has 6 attribute-section(s) ("Ellnnoun.methodAncient", "Ellnnoun.formMany", "EllnnounCaseSome.inflectionNo", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshNtr000012.last.html
+    590  mmn_attr: concept "force.pressure_012" has 1 attribute-section(s) ("UOM of pressure") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    277  mmn_attr: concept "force.fundamental_010" has 4 attribute-section(s) ("force.fundamental.gravity_001", "force.fundamental.electromagnetic_002", "force.fundamental.nuclear.strong_003", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshNtr000015.last.html
+    443  mmn_attr: concept "atmosphere of Earth" has 2 attribute-section(s) ("wind of atmosphere", "weather of atmosphere") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    239  mmn_attr: concept "continent.Asia" has 1 attribute-section(s) ("Anatolia of Asia") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshOgm000003.last.html
+    1094  mmn_attr: concept "Ogsm.Specsdiv.three_domain_{1990}" has 8 attribute-section(s) ("class of three-domain-system", "domain of three-domain-system", "family of three-domain-system", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     269  mmn_attr: concept "lipoprotein.HDL" has 1 attribute-section(s) ("relation-to-memory of HDL") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000010.last.html
+    2491  mmn_attr: concept "satisfier.organization_029" has 1 attribute-section(s) ("satisfierOgzn.income") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     722  mmn_attr: concept "argument of ActgSfrtransacting" has 1 attribute-section(s) ("argument.gift") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000011.last.html
+    925  mmn_attr: concept "09_sponsor of job" has 1 attribute-section(s) ("funder of job") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    410  mmn_attr: concept "05_age of Wrkr" has 1 attribute-section(s) ("ageRetirement of Wrkr") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000015.last.html
+    5028  mmn_attr: concept "organization of OgznCoop" has 1 attribute-section(s) ("International-Cooperative-Alliance of OgznCoop") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     595  mmn_attr: concept "hiring of OgznPrdg" has 1 attribute-section(s) ("info-resource of hiring of OgznPrdg") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000020.last.html
+    1024  mmn_attr: concept "Gdp of Euecon" has 1 attribute-section(s) ("evoluting of Gdp of Euecon") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     208  mmn_attr: concept "42_identification of HumnElln" has 5 attribute-section(s) ("ΑΦΜ of HumnElln", "ΑΜΑ of HumnElln", "ΑΜΚΑ of HumnElln", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000023.last.html
+    11320  mmn_attr: concept "property of scmo" has 1 attribute-section(s) ("attribute of property of scmo") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+       80  mmn_attr: concept "class of scmo" has 2 attribute-section(s) ("class.datatype", "attribute of class") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStnlaw000002.last.html
+    511  mmn_attr: concept "OgznLaw.court" has 1 attribute-section(s) ("OgznCourt.tribunal") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    286  mmn_attr: concept "22_time_of_validation of law" has 2 attribute-section(s) ("end-time-of-validation of law", "start-time-of-validation of law") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStnlaw000003.last.html
+    448  mmn_attr: concept "series of Euoj" has 2 attribute-section(s) ("Euoj'series.L", "Euoj'series.C") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     93  mmn_attr: concept "02_jurisdiction of Eulaw" has 1 attribute-section(s) ("opt-out of Eulaw") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTch000003.last.html
+    408  mmn_attr: concept "vehicle.air" has 1 attribute-section(s) ("aircraft.UAV") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    192  mmn_attr: concept "machine.motor" has 1 attribute-section(s) ("motor.electric") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000011.last.html
+    1106  mmn_attr: concept "member.export of Jsesm" has 2 attribute-section(s) ("export.default", "export.named") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     997  mmn_attr: concept "Jsbrsut.STRING (Jsbr-s)" has 1 attribute-section(s) ("44_specification of Jsbrlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000013.last.html
+    1559  mmn_attr: concept "Jseltool.RUNTIME (Jsellago-rt)" has 1 attribute-section(s) ("Jsellago.js") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     690  mmn_attr: concept "dialog_object of JseloElectron" has 1 attribute-section(s) ("Jselapi'dialog.showOpenDialog_function") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000021.last.html
+    2370  mmn_attr: concept "arbitration of Eos-governance" has 1 attribute-section(s) ("ECAF of Eos-governance") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     165  mmn_attr: concept "47_human of AgntEosz" has 4 attribute-section(s) ("AgntEosz'human.AGGREGATE", "AgntEosz'human.BLOCK_PRODUCER", "AgntEosz'human.TOKEN_HOLDER", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000030.last.html
+    2426  mmn_attr: concept "Sunt.heap of Rustlago" has 3 attribute-section(s) ("capacity of heap-Sunt of Rustlago", "length of heap-Sunt of Rustlago", "pointer of heap-Sunt of Rustlago") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+     225  mmn_attr: concept "file of Rustalgo" has 2 attribute-section(s) ("file.Cargo.toml", "file.rs") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000037.last.html
+    430  mmn_attr: concept "Softapi.REST" has 1 attribute-section(s) ("Softapi.RESTfull") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    234  mmn_attr: concept "Softapi.public" has 1 attribute-section(s) ("challenge of Publicapi") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000038.last.html
+    1158  mmn_attr: concept "Llmapp.LangChain" has 1 attribute-section(s) ("info-resource of LangChain") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+    1045  mmn_attr: concept "Llmapp.ollama" has 3 attribute-section(s) ("command of ollama", "LLM of ollama", "info-resource of ollama") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshCor000002.last.html
+    3155  mmn_attr: concept "user of Mcsmgr" has 2 attribute-section(s) ("user.author of Mcsmgr", "user.reader of Mcsmgr") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000002.last.html
+    1380  mmn_attr: concept "repository of open-access" has 6 attribute-section(s) ("open_repository.arXiv", "open_repository.bioRxiv", "open_repository.Figshare", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000006.last.html
+    97  mmn_attr: concept "04_scientist of SciSophy" has 2 attribute-section(s) ("SophyWrkr.{1927..1925}_Μπιτσάκης.Ευτύχης", "SophyWrkr.{Bce0551..Bce0479}_Confucius") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshEdu000011.last.html
+    480  mmn_attr: concept "art.entertainment" has 1 attribute-section(s) ("relation-to-art of entertainment") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000005.last.html
+    437  mmn_attr: concept "tone of OganMuscledoing" has 1 attribute-section(s) ("evaluation of MuscleTone") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000008.last.html
+    957  mmn_attr: concept "11_education of health" has 2 attribute-section(s) ("citizen-education-on-health", "healthy--education-system") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000016.last.html
+    972  mmn_attr: concept "ThrpAlt.homeopathy" has 1 attribute-section(s) ("substance of homeopathy") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshHlth000019.last.html
+    5751  mmn_attr: concept "preconcept of Tchgsyst" has 2 attribute-section(s) ("structure of Tchgsyst", "touching of Tchgsyst") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000003.last.html
+    1119  mmn_attr: concept "19_concept of worldview" has 1 attribute-section(s) ("name of concept") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000010.last.html
+    2684  mmn_attr: concept "Sngu_word.compound" has 2 attribute-section(s) ("wordCompoundSngo.attribute", "wordCompoundSngo.specific") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000013.last.html
+    180  mmn_attr: concept "07_citation_format of Infrsc" has 1 attribute-section(s) ("format.lagoHitp") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000028.last.html
+    1643  mmn_attr: concept "unit of Ellklago" has 1 attribute-section(s) ("phoneme of unitEllk") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000036.last.html
+    1619  mmn_attr: concept "Arabunit.punctuation of text" has 1 attribute-section(s) ("Arabunit.tatweel of text") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshLag000043.last.html
+    887  mmn_attr: concept "KoraChar.Hangeul_vowel" has 17 attribute-section(s) ("KoraVowlChar.ㅏ-a-[a]-a as in father", "KoraVowlChar.diphthong (이중모음)", "KoraVowlChar.ㅔ-e-[e]-e in bed", …) but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshNtr000002.last.html
+    159  mmn_attr: concept "12_physical_property of material" has 1 attribute-section(s) ("physical_property.temperature") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshNtr000005.last.html
+    631  mmn_attr: concept "MtrlSysMols.unit_of_measurement_007" has 1 attribute-section(s) ("SystMoleculesUom.IU") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshOgm000005.last.html
+    3633  mmn_attr: concept "pressure of bloodHumn" has 3 attribute-section(s) ("disease of bloodHumn", "measure of bloodHumn", "measuring of bloodHumn") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000004.last.html
+    209  mmn_attr: concept "sociocracy of AdmnSctninfrsc" has 1 attribute-section(s) ("info-resource of sociocracy") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000008.last.html
+    291  mmn_attr: concept "47_stakeholder_node of Ogzn" has 3 attribute-section(s) ("sociality of OgznStakeholder", "OgznStakeholder.human", "OgznStakeholder.HumnMember") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000012.last.html
+    2069  mmn_attr: concept "Econevaln.GDP" has 1 attribute-section(s) ("evaluation of GDP") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000022.last.html
+    75  mmn_attr: concept "human of house" has 1 attribute-section(s) ("homeless-people") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000026.last.html
+    618  mmn_attr: concept "sectorTourism.roadtrip" has 2 attribute-section(s) ("vignette of roadtrip", "docs of roadtrip") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000031.last.html
+    6532  mmn_attr: concept "name of ChnaHumn" has 1 attribute-section(s) ("family-name of ChnaHumn") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000040.last.html
+    337  mmn_attr: concept "Smkdunit.phoneme" has 2 attribute-section(s) ("Smkdphnm.vowel", "Smkdphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000041.last.html
+    374  mmn_attr: concept "Sslvunit.phoneme" has 2 attribute-section(s) ("Sslvphnm.vowel", "Sslvphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000043.last.html
+    337  mmn_attr: concept "Srusunit.phoneme" has 2 attribute-section(s) ("Srusphnm.vowel", "Srusphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000044.last.html
+    337  mmn_attr: concept "Romnunit.phoneme" has 2 attribute-section(s) ("Romnphnm.vowel", "Romnphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000048.last.html
+    360  mmn_attr: concept "Jpnsunit.phoneme" has 2 attribute-section(s) ("Jpnsphnm.vowel", "Jpnsphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshStn000050.last.html
+    420  mmn_attr: concept "Khmrunit.phoneme" has 2 attribute-section(s) ("Khmrphnm.vowel", "Khmrphnm.consonant") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTch000002.last.html
+    1234  mmn_attr: concept "GNSS of techSatellite" has 1 attribute-section(s) ("GNSS.BeiDou") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000002.last.html
+    1052  mmn_attr: concept "techInfoSoft.big_data" has 1 attribute-section(s) ("evoluting of Softbigdata") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000003.last.html
+    140  mmn_attr: concept "Cmrinterface.software" has 1 attribute-section(s) ("Softinterface.ABI") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchInf000028.last.html
+    2525  mmn_attr: concept "40_wallet of AgntDiem" has 1 attribute-section(s) ("wallet.Calibra of AgntDiem") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchPrgm000002.last.html
+    151  mmn_attr: concept "21_machine of Cmprprgm" has 1 attribute-section(s) ("prgmOs of Cmprprgm") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
+  McshTchPrgm000003.last.html
+    714  mmn_attr: concept "file of Atompckg" has 1 attribute-section(s) ("main-file of Atompckg") but no Mmn: write "descriptive!⇒Mmn" "Mmn!=descriptive"
 

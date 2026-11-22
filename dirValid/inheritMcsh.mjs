@@ -51,6 +51,8 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-23-1.2026-11-22: own numbering (NONUM by hand) only when a-number collides with the-chain, NOT for own numbers after it',
+    'inheritMcsh.mjs.0-23-0.2026-11-22: --fix-nonum: ONLY INH-NONUM gets the-NN_ of its generic-attribute (NOT OWNNONUM)',
     'inheritMcsh.mjs.0-22-0.2026-11-20: MISC-ATTRIBUTE (or MISC) of X and the-attributes inside it get NO number (like evoluting): no NONUM, OWNNONUM, OWNNUM, no shift',
     'inheritMcsh.mjs.0-21-3.2026-11-20: fFindInheritAttr reads the-WHOLE worldview (the-dir with dirNamidx), also when validate-file gives a-sub-dir',
     'inheritMcsh.mjs.0-21-2.2026-11-19: a-link-stub whose target is NOT read (or broken: Hvre06) is skipped, NOT a-TITLEHAND',
@@ -483,7 +485,8 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const bOwnNumbering = oNode.aoChild.some(oC => {
       if (!oC.bAttr || oC.bTree || !oC.sNum) return false;
       const oM = fMatchAttr(oC, aoSpace);
-      return !oM || oM.oGenAttr.sNum !== oC.sNum;
+      // an-own attribute numbered AFTER the-chain is the-rule, NOT own numbering
+      return oM ? oM.oGenAttr.sNum !== oC.sNum : Number(oC.sNum) <= nNumLast;
     });
     // the-own numbered attributes; those NOT after the-chain's last number (INH-OWNNUM)
     const aoOwnNum = [], aoOwnNumIssue = [];
@@ -1134,6 +1137,7 @@ function fMain() {
     console.log('  --fix-order  puts the-attribute-sections of INH-ORDER specifics in NN order');
     console.log("  --fix-name   writes the-title X'NN_attr of a-numbered attribute as its name (INH-TITLENAME)");
     console.log("  --fix-last   writes only the-name Mmn'NN_last of every generic (INH-LAST); --fix writes it too");
+    console.log('  --fix-nonum  numbers ONLY INH-NONUM: an-inherited attribute gets the-NN_ of its generic');
     console.log('  --fix-num    renumbers INH-WRONGNUM (the-number of the-chain) and INH-OWNNUM (after the-chain)');
     console.log('  --sub Mmn    report and fix ONLY concept Mmn, its specifics down the-tree and their attributes');
     console.log('  --concept Mmn  report and fix ONLY concept Mmn and its attributes; with --fix-num an-attribute');
@@ -1157,6 +1161,8 @@ function fMain() {
   const nLocalMin = nIdxLocal !== -1 ? Number(aArg[nIdxLocal + 1]) || 3 : 3;
 
   const bFixNum = aArg.includes('--fix-num');
+  // --fix-nonum: ONLY INH-NONUM (an-inherited attribute gets the-NN_ of its generic), NOT the-own OWNNONUM
+  const bFixNonum = aArg.includes('--fix-nonum');
   const nIdxSub = aArg.indexOf('--sub');
   const aSub = nIdxSub !== -1 ? String(aArg[nIdxSub + 1] ?? '').split(',').map(sS => sS.trim()).filter(Boolean) : [];
   // --concept Mmn: as --sub, WITHOUT its specifics
@@ -1219,9 +1225,9 @@ function fMain() {
     console.log(`📄 report written: ${sPathChain}`);
     return;
   }
-  for (let nPass = 0; (bFix || bFixNum) && nPass < 8; nPass++) {
+  for (let nPass = 0; (bFix || bFixNum || bFixNonum) && nPass < 8; nPass++) {
     const aoFixable = fFixableNum([
-      ...(bFix ? oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn) : []),
+      ...(bFix || bFixNonum ? oResult.ooIssue['INH-NONUM'].filter(oIssue => !oIssue.sTaken && !oIssue.bOwn) : []),
       ...(bFix ? oResult.ooIssue['INH-OWNNONUM'] : []),
       ...(bFixNum ? [...oResult.ooIssue['INH-WRONGNUM'],
         ...oResult.aoFollow.filter(oI => !oResult.ooIssue['INH-WRONGNUM'].includes(oI)),
@@ -1281,12 +1287,12 @@ function fMain() {
     oA.oAttr.sNameShort.localeCompare(oB.oAttr.sNameShort) || oB.oAttr.nLine - oA.oAttr.nLine);
 
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName || bFixLast || bFixNum ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
+  fOut(`  INHERITANCE SYNC${bFix || bDelete || bFixOrder || bFixName || bFixLast || bFixNum || bFixNonum ? ' — APPLIED' : ' — dry run'}: ${sNameDir}` +
     (sNameFileOnly ? ` (file ${sNameFileOnly})` : '') + (aSub.length ? ` (sub ${aSub.join(',')}: ${oSetSub.size} concepts)` : ''));
   fOut('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   fOut(`  ${aoFile.length} files · ${nNode} sections · ${nSpecific} specifics under a-numbered generic · ` +
     `${nAttrSpec} of their attributes · ${nMatch} match a-numbered generic-attribute`);
-  if (bFix || bFixNum) fOut(`  titles changed: ${nChanged}`);
+  if (bFix || bFixNum || bFixNonum) fOut(`  titles changed: ${nChanged}`);
   if (bFixName) fOut(`  name:: paragraphs changed: ${nTitleName}`);
   if (bFix || bFixLast) fOut(`  NN_last names changed: ${nLastChanged}`);
   aStubLine.forEach(fOut);

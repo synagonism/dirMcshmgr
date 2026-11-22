@@ -112,6 +112,29 @@ function fPageMap(sRootIn) {
 }
 
 /**
+ * OUTPUT: the-id of the-gntr-paragraph of the-TOP-level section whose <h1> is
+ *   "GENERIC-SPECIFIC-TREE of M" (the-file-concept's generic-tree), or ''.
+ */
+function fGntrOfTopGstr(sTextIn) {
+  const aLine = sTextIn.split(/\r?\n/);
+  let nDepth = 0, nSectTop = -1;
+  for (let nL = 0; nL < aLine.length; nL++) {
+    const sLine = aLine[nL];
+    const nOpen = (sLine.match(/<section\b/g) || []).length;
+    if (nOpen) { if (nDepth === 0) nSectTop = nL; nDepth += nOpen; }
+    // its own gntr: inside the-top section, NOT in a-nested one
+    if (nDepth === 1 && nSectTop >= 0 && /<h1\b[^>]*>\s*GENERIC-SPECIFIC-TREE\b/.test(sLine)) {
+      for (let nP = nL + 1; nP < aLine.length && !/<\/?section\b/.test(aLine[nP]); nP++) {
+        const aM = aLine[nP].match(/<p\s[^>]*id="([^"]+gntr)"/);
+        if (aM) return aM[1];
+      }
+    }
+    nDepth -= (sLine.match(/<\/section>/g) || []).length;
+  }
+  return '';
+}
+
+/**
  * DOING: it computes the-generic-chain of a-'...entity:generic' line up to entity:
  *   Node port of fGntrChainInsert of Mcsmgr/mMcsh2.js, lines to write in the-source.
  * INPUT:
@@ -150,8 +173,14 @@ function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
     else if (sId.endsWith('nam') && fHas(sId.slice(0, -3) + 'gntr')) sG = sId.slice(0, -3) + 'gntr';
     else if (fHas(sId + 'gntr')) sG = sId + 'gntr';
     else if (sId === 'idOverview') {
-      for (const aM of sText.matchAll(/<p\s[^>]*id="([^"]+gntr)"/g)) {
-        if (!fHas(aM[1].slice(0, -4) + 'nam')) { sG = aM[1]; break; }
+      // the-file-concept's generic-tree is in the-TOP "GENERIC-SPECIFIC-TREE of M" section (h1),
+      //   NOT the-first gntr of the-file (McshLag000007: input1 of Hnmdlago comes first),
+      //   as mMcsh2.js.27-19-0 fGntrOfUrl
+      sG = fGntrOfTopGstr(sText);
+      if (!sG) {
+        for (const aM of sText.matchAll(/<p\s[^>]*id="([^"]+gntr)"/g)) {
+          if (!fHas(aM[1].slice(0, -4) + 'nam')) { sG = aM[1]; break; }
+        }
       }
     }
     return sG ? { sStem, sId: sG, aLine: fParaLines(sText, sG) } : null;

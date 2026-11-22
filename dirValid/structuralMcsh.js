@@ -88,6 +88,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-83-0.2026-11-22: MvrwMain08_need: a-MISC-ATTRIBUTE section and its direct parts do NOT make the-whole need an-Mmn',
     'structuralMcsh.js.0-82-0.2026-11-22: MvrwMain09_human: a-person also by its generic (a-group of humans: Algonet\'human); HumnLastFirst (HumnNakaSato) without birth-year is right',
     'structuralMcsh.js.0-81-0.2026-11-22: MvrwMain09_human: "X.human" is a-person only when its main-name is Humn + year (NOT Ogsmlago.human!⇒Humnlago)',
     'structuralMcsh.js.0-80-0.2026-11-22: MvrwMain10 a-question title "M.x?" has the-name "M.x" (the-final "?" dropped)',
@@ -950,6 +951,11 @@ function fCheckMainNameAttrbaseBegin(aoCnptFile) {
 //   Many concepts have no Mmn: only one with attributes needs it.
 //   Its attribute-sections: fFindAttrDirect (title "Y of N" | "N'Y" | "N.Y", id "idBasename").
 //   A-tree-view | grouping (MISC-ATTRIBUTE of X) concept is not checked.
+//   A-MISC-ATTRIBUTE section holds the-NOT inherited attributes of its whole, titled "x of whole":
+//   it and its direct parts need no main-name, so they do NOT make the-whole need an-Mmn (a-concept
+//   deeper inside, with attributes of its own, is checked as any concept).
+// a-grouping title: MISC-ATTRIBUTE of X (upper-case before ATTRIBUTE)
+const rTitleGroupAttr = /^[^a-z]*ATTRIBUTE\b/;
 function fCheckMmnAttr(aoCnptFile) {
   const aoIssue = [];
   for (const oCnptFile of aoCnptFile) {
@@ -957,12 +963,17 @@ function fCheckMmnAttr(aoCnptFile) {
     const aoSect = fFindSectAll(oCnptFile).filter(oSect => oSect.sType === 'CnptSect');
     const oIndex = fBuildAttrIndex(aoSect);
     const aoCnpt = [fFindCnptOfFile(oCnptFile), ...aoSect.filter(oSect => oSect.sNameId !== 'idOverview')];
+    // the-MISC-ATTRIBUTE sections of the-file: their attributes are NOT inherited, they need no Mmn
+    const aIdGroup = aoSect.filter(oSect => rTitleGroupAttr.test((oSect.sNameTitle ?? '').trim())).map(oSect => oSect.sNameId);
     for (const oCnpt of aoCnpt) {
       if (oCnpt.sNameMainFrml) continue;
       const bFile = oCnpt.sType === 'CnptFile';
       // a-tree-view | a-grouping (MISC-ATTRIBUTE of X): it holds the-attributes of another concept
-      if (!bFile && (rTitleTree.test((oCnpt.sNameTitle ?? '').trim()) || /^[^a-z]*ATTRIBUTE\b/.test((oCnpt.sNameTitle ?? '').trim()))) continue;
-      const aTitleAttr = fFindAttrDirect(oIndex, oCnpt).map(oSect => oSect.sNameTitle.trim());
+      if (!bFile && (rTitleTree.test((oCnpt.sNameTitle ?? '').trim()) || rTitleGroupAttr.test((oCnpt.sNameTitle ?? '').trim()))) continue;
+      const aTitleAttr = fFindAttrDirect(oIndex, oCnpt)
+        .filter(oSect => !rTitleGroupAttr.test((oSect.sNameTitle ?? '').trim()) &&
+          !aIdGroup.includes(oIndex.oMapIdWhole.get(oSect.sNameId)))   // a-DIRECT part of MISC-ATTRIBUTE
+        .map(oSect => oSect.sNameTitle.trim());
       if (!aTitleAttr.length) continue;
       const oParaName = bFile ? null : fFindParaAll(oCnpt, 'name')[0];
       const nLine = bFile
