@@ -1,6 +1,6 @@
-inheritance-chain of Prgmlago (McshTchInf000006:20 #idOverview)
-  [Prgmlago](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idOverview)
-  chain: entity → bodyNo → relation → RltnSameness → RltnMapping → Ogsmlago → Hmanlago → Cmprlago → Prgmlago
+inheritance-chain of Spchlago (McshLag000009:20 #idOverview)
+  [Spchlago](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idOverview)
+  chain: entity → bodyNo → relation → RltnSameness → RltnMapping → Ogsmlago → Hmanlago → Ogmmlago → Hnmdlago → Spchlago
 === entity:
   [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
   [entity'02_expression](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntexrn)
@@ -13,50 +13,56 @@ inheritance-chain of Prgmlago (McshTchInf000006:20 #idOverview)
 === relation:
   ~ [relation'02_expression](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnexrn)  overrides bodyNo'02_expression
   ~ [relation'03_argument](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnarg)  overrides bodyNo'03_argument
-  [relation'04_valence](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnvlc)
   .. [relation'info_resource](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnirsc)
   .. [relation'evoluting](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnevog)
 === RltnSameness:
   (empty)
 === RltnMapping:
   ~ [RltnMapping'03_argument](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgarg)  overrides relation'03_argument
-  [RltnMapping'05_input](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgarch)
-  [RltnMapping'06_output](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmdl)
-  [RltnMapping'07_method](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmthd)
-  [RltnMapping'08_implementor](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgiplr)
-  [RltnMapping'09_implementation](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgipln)
-  [RltnMapping'10_modality](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmdlt)
+  [RltnMapping'04_input](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgarch)
+  [RltnMapping'05_output](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmdl)
+  [RltnMapping'06_method](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmthd)
+  [RltnMapping'07_implementor](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgiplr)
+  [RltnMapping'08_implementation](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgipln)
+  [RltnMapping'09_modality](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgmdlt)
   .. [RltnMapping'DOING](http://localhost/dirMcsh/dirCor/McshCor000005.last.html#idRlnMpgdong)
 === Ogsmlago:
-  ~ [Ogsmlago'05_input](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsminpt)  overrides RltnMapping'05_input
-  ~ [Ogsmlago'06_output](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmotpt)  overrides RltnMapping'06_output
-  ~ [Ogsmlago'07_method](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmgrmr)  overrides RltnMapping'07_method
-  ~ [Ogsmlago'08_implementor](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmentt)  overrides RltnMapping'08_implementor
+  ~ [Ogsmlago'04_input](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsminpt)  overrides RltnMapping'04_input
+  ~ [Ogsmlago'05_output](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmotpt)  overrides RltnMapping'05_output
+  ~ [Ogsmlago'06_method](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmgrmr)  overrides RltnMapping'06_method
+  ~ [Ogsmlago'07_implementor](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmentt)  overrides RltnMapping'07_implementor
+  [Ogsmlago'10_science](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmsci)
   .. [Ogsmlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmirsc)
   .. [Ogsmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmdong)
   .. [Ogsmlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmevog)
 === Hmanlago:
-  (empty)
-=== Cmprlago:
-  ~ [Cmprlago'06_output](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmpropt)  overrides Ogsmlago'06_output
-  ~ [Cmprlago'07_method](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprmthd)  overrides Ogsmlago'07_method
-  ~ [Cmprlago'08_user](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#Cmpluser)  overrides Ogsmlago'08_implementor
-  [Cmprlago'11_organization](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprozn)
-  ?? [Cmprlago'input](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmpript)  inherits Ogsmlago'05_input: its number
-  ?? [Cmprlago'tool](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprtool)  → 12_
-  .. [Cmprlago'info_resource](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprirsc)
-  .. [Cmprlago'DOING](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprdong)
-  .. [Cmprlago'evoluting](http://localhost/dirMcsh/dirTchInf/McshTchInf000005.last.html#idLCmprevog)
-=== Prgmlago:
-  ~ [Prgmlago'06_output](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmalg)  overrides Cmprlago'06_output
-  [Prgmlago'12_evaluation](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmeval)
-  [Prgmlago'13_tech](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmtech)
-  [Prgmlago'14_tool](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmtool)
-  ?? [Prgmlago'user](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmuser)  inherits Cmprlago'08_user: its number
-  ?? [Prgmlago'input|archetype](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmarch)  inherits Ogsmlago'05_input: its number
-  .. [Prgmlago'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmattMsc)
-  .. [Prgmlago'info_resource](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmirsc)
-  .. [Prgmlago'DOING](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmdong)
-  .. [Prgmlago'evoluting](http://localhost/dirMcsh/dirTchInf/McshTchInf000006.last.html#idLPrgmevog)
-  last: 14_
+  ~ [Hmanlago'10_science](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLHmansci)  overrides Ogsmlago'10_science
+  [Hmanlago'11_manager](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLHmanmngr)
+  [Hmanlago'12_organization](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLHmanogzn)
+=== Ogmmlago:
+  .. [Ogmmlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000005.last.html#idLOgsmMinddong)
+=== Hnmdlago:
+  ~ [Hnmdlago'04_input](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdinpt)  overrides Ogsmlago'04_input
+  ~ [Hnmdlago'05_output](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdopt)  overrides Ogsmlago'05_output
+  ~ [Hnmdlago'06_method](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdgrmr)  overrides Ogsmlago'06_method
+  ~ [Hnmdlago'07_implementor](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdiplr)  overrides Ogsmlago'07_implementor
+  ~ [Hnmdlago'08_implementation](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmddongImpn)  overrides RltnMapping'08_implementation
+  ~ [Hnmdlago'09_modality](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdmdlt)  overrides RltnMapping'09_modality
+  ~ [Hnmdlago'10_science](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdlgcs)  overrides Hmanlago'10_science
+  ~ [Hnmdlago'11_manager](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdmngr)  overrides Hmanlago'11_manager
+  .. [Hnmdlago'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdattMsc)
+  .. [Hnmdlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdirsc)
+  .. [Hnmdlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmddong)
+  .. [Hnmdlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000007.last.html#idLHnmdevog)
+=== Spchlago:
+  ~ [Spchlago'01_ATTRIBUTE](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017att)  overrides entity'01_attribute
+  ~ [Spchlago'05_output](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017opt)  overrides Hnmdlago'05_output
+  ~ [Spchlago'10_science](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017sci)  overrides Hnmdlago'10_science
+  [Spchlago'13_input1_(mind-view)](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017ipt1)
+  [Spchlago'15_input3_(semu-view)](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017ipt3)
+  ?? [Spchlago'input2_(sensorial--mind-view)](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017ipt2)  → 16_
+  .. [Spchlago'info_resource](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017irsc)
+  .. [Spchlago'DOING](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017dong)
+  .. [Spchlago'evoluting](http://localhost/dirMcsh/dirLag/McshLag000009.last.html#idL0017evog)
+  last: 15_
 

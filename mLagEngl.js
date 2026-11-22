@@ -31,6 +31,7 @@ import * as omMcsh from './mMcsh2.js'
 const
   // contains the-versions of mLagEngl.js
   aVersion = [
+    'mLagEngl.js.2-5-0.2026-11-22: nounEngl all-forms line (leaf!~nounEnglB1.leaf\'1 adds nounEnglB1.leaf!=leaf;leaves)',
     'mLagEngl.js.2-4-0.2026-11-19: verbEngl all-forms line',
     'mLagEngl.js.2-3-0.2026-08-09: play',
     'mLagEngl.js.2-2-0.2026-07-11: nounEngl, verbEngl',
@@ -155,6 +156,23 @@ async function fFindNounForms (sFormIn) {
     aFormsOut.push('SITE EXISTING FORMS:')
     for (n = 0; n < aOut.length; n++) {
       aFormsOut.push(aOut[n])
+    }
+    // add the-all-forms lines, from 'leaf!~nounEnglB1.leaf'1' find
+    // 'nounEnglB1.leaf!=leaf;leaves'
+    const
+      oSetNoun = new Set(),
+      rNounForm = /!~(nounEngl[A-Za-z0-9]*\.[^']+)'\d+$/
+    for (n = 0; n < aOut.length; n++) {
+      const aMatch = aOut[n].match(rNounForm)
+      if (aMatch) oSetNoun.add(aMatch[1])
+    }
+    for (const sNoun of oSetNoun) {
+      const aaAll = await omMcsh.fSearchName(sNoun + '!=', 'lagEngl')
+      for (const aName of aaAll) {
+        let sAll = aName[0]
+        if (!sAll.endsWith(',')) sAll = sAll + ','
+        aFormsOut.push(sAll)
+      }
     }
     return aFormsOut
   } else {
