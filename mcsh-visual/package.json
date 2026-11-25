@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.12.4",
+  "version": "0.18.1",
   "date": "2026-11-22",
   "publisher": "synagonism",
   "private": true,
@@ -82,6 +82,36 @@
       {
         "command": "mcshv.insertTreeParentChild",
         "title": "insert-sect-tree-parent-child: before the cursor line, the PARENT-CHILD-TREE section of its concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertGeneric",
+        "title": "insert-concept-generic: a generic (asked: McshX#idY) of the cursor's concept: in its generic-tree, or Γ— generic of a para-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertSpecific",
+        "title": "insert-concept-specific: a specific (asked: McshX#idY) of the cursor's concept: in its specific-tree, or × specific of a para-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertWhole",
+        "title": "insert-concept-whole: a whole (asked: McshX#idY) of the cursor's concept: in its whole-tree, or × whole of a para-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertPart",
+        "title": "insert-concept-part: a part (asked: McshX#idY) of the cursor's concept: in its part-tree, or × part of a para-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertParent",
+        "title": "insert-concept-parent: a parent (asked: McshX#idY) of the cursor's concept: in its parent-tree, or × parent of a para-concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.insertChild",
+        "title": "insert-concept-child: a child (asked: McshX#idY) of the cursor's concept: in its child-tree, or × child of a para-concept",
         "category": "Mcs"
       },
       {

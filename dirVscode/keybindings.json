@@ -328,23 +328,23 @@
   "when": "resourceFilename =~ /\\.last\\.html$/"
 },
 // HITP COLOR
-// p c b:: hitP Color Blue
+// p f c b:: hitP Format Color Blue
 {
-  "key": "ctrl+alt+p c b", 
+  "key": "ctrl+alt+p f c b", 
   "command": "editor.action.insertSnippet",
   "args": {"snippet": "<span class=\"clsColorBlue\">${TM_SELECTED_TEXT}</span>"},
   "when": "editorTextFocus && editorHasSelection"
 },
-// p c g:: hitP Color Green
+// p f c g:: hitP Format Color Green
 {
-  "key": "ctrl+alt+p c g", 
+  "key": "ctrl+alt+p f c g", 
   "command": "editor.action.insertSnippet",
   "args": {"snippet": "<span class=\"clsColorGreen\">${TM_SELECTED_TEXT}</span>"},
   "when": "editorTextFocus && editorHasSelection"
 },
-// p c r:: hitP Color Red
+// p f c r:: hitP Format Color Red
 {
-  "key": "ctrl+alt+p c r", 
+  "key": "ctrl+alt+p f c r", 
   "command": "editor.action.insertSnippet",
   "args": {"snippet": "<span class=\"clsColorRed\">${TM_SELECTED_TEXT}</span>"},
   "when": "editorTextFocus && editorHasSelection"
@@ -469,9 +469,9 @@
   "command": "workbench.action.tasks.runTask",
   "args": "Create new McsHitp file"
 },
-// p k m:: hitP (K)Make current-sect-concept McshFile-concept
+// p k f:: hitP (K)make-sect-(F)ile current-sect-concept McshFile-concept
 {
-  "key": "ctrl+alt+p k m",
+  "key": "ctrl+alt+p k f",
   "command": "mcshv.makeSectFile"
 },
 
@@ -1342,6 +1342,42 @@
 {
   "key": "ctrl+alt+p t p",
   "command": "mcshv.insertTreeParentChild",
+  "when": "editorTextFocus"
+},
+// p c g :: hitP Concept Generic (asks McshX#idY: in the generic-tree, or × generic of a para-concept)
+{
+  "key": "ctrl+alt+p c g",
+  "command": "mcshv.insertGeneric",
+  "when": "editorTextFocus"
+},
+// p c s :: hitP Concept Specific (asks McshX#idY: in the specific-tree, or × specific of a para-concept)
+{
+  "key": "ctrl+alt+p c s",
+  "command": "mcshv.insertSpecific",
+  "when": "editorTextFocus"
+},
+// p c w :: hitP Concept Whole (asks McshX#idY: in the whole-tree, or × whole of a para-concept)
+{
+  "key": "ctrl+alt+p c w",
+  "command": "mcshv.insertWhole",
+  "when": "editorTextFocus"
+},
+// p c p :: hitP Concept Part (asks McshX#idY: in the part-tree, or × part of a para-concept)
+{
+  "key": "ctrl+alt+p c p",
+  "command": "mcshv.insertPart",
+  "when": "editorTextFocus"
+},
+// p c n :: hitP Concept parent (asks McshX#idY: in the parent-tree, or × parent of a para-concept)
+{
+  "key": "ctrl+alt+p c n",
+  "command": "mcshv.insertParent",
+  "when": "editorTextFocus"
+},
+// p c c :: hitP Concept Child (asks McshX#idY: in the child-tree, or × child of a para-concept)
+{
+  "key": "ctrl+alt+p c c",
+  "command": "mcshv.insertChild",
   "when": "editorTextFocus"
 },
 // HITP VERSIONING

@@ -332,6 +332,12 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
     vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
     vscode.commands.registerCommand('mcshv.insertTreeParentChild', () => fInsertTree('pc')),
+    vscode.commands.registerCommand('mcshv.insertGeneric', () => fInsertGenSpeSource('gen')),
+    vscode.commands.registerCommand('mcshv.insertSpecific', () => fInsertGenSpeSource('spe')),
+    vscode.commands.registerCommand('mcshv.insertWhole', () => fInsertGenSpeSource('whl')),
+    vscode.commands.registerCommand('mcshv.insertPart', () => fInsertGenSpeSource('prt')),
+    vscode.commands.registerCommand('mcshv.insertParent', () => fInsertGenSpeSource('prn')),
+    vscode.commands.registerCommand('mcshv.insertChild', () => fInsertGenSpeSource('chd')),
     vscode.commands.registerCommand('mcshv.validConcept', () =>
       fRunValidConcept((sIn) => vscode.window.setStatusBarMessage('Mcs: ' + sIn, 6000))),
     vscode.commands.registerCommand('mcshv.validConceptRule', () =>
@@ -448,7 +454,7 @@ function fCreateProvider(context) {
     const fNewFile = () => vscode.commands.executeCommand('workbench.action.tasks.runTask', 'Create new McsHitp file');
     // The address bar's URL, as the bridge last reported it (`nav` and `url` messages).
     let sHrefCurrent = '';
-    // File → Make-sect-file (and Ctrl+Alt+P K M): the sect-concept of the address bar
+    // File → Make-sect-file (and Ctrl+Alt+P K F): the sect-concept of the address bar
     // becomes a new McshFile-concept. Asks like the 'Create new McsHitp file' task, runs
     // mMcshNew.mjs with the section to move, then navigates to the new file.
     const fMakeSect = async () => {
@@ -715,7 +721,7 @@ function fCreateProvider(context) {
           case 'indexUpload': fIndexUpload(); break;                   // Ctrl+Alt+P X U from the iframe
           case 'indexOnly': fIndexOnly(); break;                       // Ctrl+Alt+P X O from the iframe
           case 'newFile': fNewFile(); break;                           // Ctrl+Alt+P K N from the iframe
-          case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K M from the iframe
+          case 'makeSectFile': fMakeSect(); break;                     // Ctrl+Alt+P K F from the iframe
           case 'validConcept': await fValidConcept(); break;           // Ctrl+Alt+V C C from the iframe
           case 'validConceptRule': await fValidConceptRule(); break;   // Ctrl+Alt+V C R from the iframe
           case 'validCurrent': await fValidCurrent(); break;           // Ctrl+Alt+V F F from the iframe
@@ -755,6 +761,27 @@ function fCreateProvider(context) {
             if (nOffInh == null) { vscode.window.showWarningMessage('Mcs inheritance: click a line of the concept first (or open it by #id)'); break; }
             try { await fRunInherit(msg.sOp, oActiveDoc, nOffInh, true); }
             catch (oErrInh) { vscode.window.showErrorMessage('Mcs inheritance: ' + (oErrInh && oErrInh.message || oErrInh)); }
+            break;
+          }
+          case 'insertGeneric': {      // edit/insert/concept/generic | specific (msg.sKind) from the-visual: the-clicked line, else the-URL bar's #id
+            if (!oActiveDoc) { vscode.window.showWarningMessage('Mcs insert-generic: the visual shows no editable file'); break; }
+            const sTextGen = oActiveDoc.getText();
+            let nOffGen = msg.id ? omModel.fCoreStart(sTextGen, msg) : null;
+            if (nOffGen == null && sHashVisual) {
+              const nAtHash = sTextGen.indexOf(`id="${sHashVisual}"`);
+              if (nAtHash >= 0) nOffGen = nAtHash + 1;
+            }
+            if (nOffGen == null) { vscode.window.showWarningMessage('Mcs insert-generic: click a line of the concept first'); break; }
+            try {
+              const oGen = await fBuildGenSpeAt(oActiveDoc, nOffGen, ['spe', 'whl', 'prt', 'prn', 'chd'].includes(msg.sKind) ? msg.sKind : 'gen');
+              if (!oGen) break;
+              const oWe = new vscode.WorkspaceEdit();
+              oWe.insert(oActiveDoc.uri, oActiveDoc.positionAt(oGen.nAt), oGen.sInsert);
+              bSelfEditing = true;
+              const bOkGen = await vscode.workspace.applyEdit(oWe);
+              bSelfEditing = false;
+              if (bOkGen) { fStatus(oGen.sHow); await document.save(); }
+            } catch (oErrGen) { bSelfEditing = false; vscode.window.showErrorMessage('Mcs insert-generic: ' + (oErrGen && oErrGen.message || oErrGen)); }
             break;
           }
           case 'structure': {
@@ -1070,59 +1097,69 @@ function fBuildShell(webview, url) {
     <div id="idMenu">
       <div class="clsItem clsHasSub">file<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="create new McshFile-concept" data-cmd="cmdNewFile">new-McsHitp<span class="clsKbd">Ctrl+Alt+P K N</span></div>
-          <div class="clsItem" title="transform current-McshSect-concept to McshFile" data-cmd="cmdMakeSectFile">make-McshSect-to-McshFile<span class="clsKbd">Ctrl+Alt+P K M</span></div>
-          <div class="clsItem" title="open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">open<span class="clsKbd">Ctrl+Alt+P O</span></div>
+          <div class="clsItem" title="create new McshFile-concept" data-cmd="cmdNewFile">new-McsHitp<span class="clsKbd">CA+P K N</span></div>
+          <div class="clsItem" title="transform current-McshSect-concept to McshFile" data-cmd="cmdMakeSectFile">make-McshSect-to-McshFile<span class="clsKbd">CA+P K F</span></div>
+          <div class="clsItem" title="open file by name" data-cmd="cmdOpen" data-kind="mcs" style="display:none">open<span class="clsKbd">CA+P O</span></div>
           <div class="clsItem" data-cmd="cmdSave">save<span class="clsKbd">Ctrl+S</span></div>
           <div class="clsItem" data-cmd="cmdOpenRaw">open-in-source</div>
-          <div class="clsItem" title="index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">index-and-upload<span class="clsKbd">Ctrl+Alt+P X U</span></div>
-          <div class="clsItem" title="index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">index-only<span class="clsKbd">Ctrl+Alt+P X O</span></div>
+          <div class="clsItem" title="index names of current file and upload" data-cmd="cmdIndexUpload" data-kind="edit" style="display:none">index-and-upload<span class="clsKbd">CA+P X U</span></div>
+          <div class="clsItem" title="index names ONLY of current file (no upload)" data-cmd="cmdIndexOnly" data-kind="edit" style="display:none">index-only<span class="clsKbd">CA+P X O</span></div>
         </div>
       </div>
       <div class="clsItem clsHasSub">edit<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
           <div class="clsItem clsHasSub">insert<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
+              <div class="clsItem clsHasSub">concept<span class="clsCaret">&#9656;</span>
+                <div class="clsSubmenu">
+                  <div class="clsItem" title="a generic (asked: McshX#idY) of the clicked line's concept: in its generic-tree, or × generic of a para-concept" data-cmd="cmdInsertGeneric">generic<span class="clsKbd">CA+P C G</span></div>
+                  <div class="clsItem" title="a specific (asked: McshX#idY) of the clicked line's concept: in its specific-tree, or × specific of a para-concept" data-cmd="cmdInsertSpecific">specific<span class="clsKbd">CA+P C S</span></div>
+                  <div class="clsItem" title="a whole (asked: McshX#idY) of the clicked line's concept: in its whole-tree, or × whole of a para-concept" data-cmd="cmdInsertWhole">whole<span class="clsKbd">CA+P C W</span></div>
+                  <div class="clsItem" title="a part (asked: McshX#idY) of the clicked line's concept: in its part-tree, or × part of a para-concept" data-cmd="cmdInsertPart">part<span class="clsKbd">CA+P C P</span></div>
+                  <div class="clsItem" title="a parent (asked: McshX#idY) of the clicked line's concept: in its parent-tree, or × parent of a para-concept" data-cmd="cmdInsertParent">parent<span class="clsKbd">CA+P C N</span></div>
+                  <div class="clsItem" title="a child (asked: McshX#idY) of the clicked line's concept: in its child-tree, or × child of a para-concept" data-cmd="cmdInsertChild">child<span class="clsKbd">CA+P C C</span></div>
+                </div>
+              </div>
               <div class="clsItem clsHasSub">para<span class="clsCaret">&#9656;</span>
                 <div class="clsSubmenu">
-                  <div class="clsItem" title="before the para of the clicked line: the description:: and name:: of its section" data-cmd="cmdInsertParaDsnNam">description-and-name<span class="clsKbd">Ctrl+Alt+P P P</span></div>
+                  <div class="clsItem" title="before the para of the clicked line: the description:: and name:: of its section" data-cmd="cmdInsertParaDsnNam">description-and-name<span class="clsKbd">CA+P P P</span></div>
                 </div>
               </div>
               <div class="clsItem clsHasSub">sect<span class="clsCaret">&#9656;</span>
                 <div class="clsSubmenu">
-                  <div class="clsItem" title="the GENERIC-SPECIFIC-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeGenSpe">tree-gen-spe<span class="clsKbd">Ctrl+Alt+P T G</span></div>
-                  <div class="clsItem" title="the WHOLE-PART-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeWholePart">tree-whole-part<span class="clsKbd">Ctrl+Alt+P T W</span></div>
-                  <div class="clsItem" title="the PARENT-CHILD-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeParentChild">tree-parent-child<span class="clsKbd">Ctrl+Alt+P T P</span></div>
+                  <div class="clsItem" title="the GENERIC-SPECIFIC-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeGenSpe">tree-gen-spe<span class="clsKbd">CA+P T G</span></div>
+                  <div class="clsItem" title="the WHOLE-PART-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeWholePart">tree-whole-part<span class="clsKbd">CA+P T W</span></div>
+                  <div class="clsItem" title="the PARENT-CHILD-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeParentChild">tree-parent-child<span class="clsKbd">CA+P T P</span></div>
                 </div>
               </div>
               <div class="clsItem clsHasSub">character<span class="clsCaret">&#9656;</span>
                 <div class="clsSubmenu">
-                  <div class="clsItem" data-cmd="cmdCharArrow1">arrow 1 &#11106;<span class="clsKbd">Ctrl+Alt+C A 1</span></div>
-                  <div class="clsItem" data-cmd="cmdCharArrow2">arrow 2 &#8658;<span class="clsKbd">Ctrl+Alt+C A 2</span></div>
-                  <div class="clsItem" data-cmd="cmdCharHtmlGt">html &amp;gt;<span class="clsKbd">Ctrl+Alt+C H G</span></div>
-                  <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
-                  <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
-                  <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">Ctrl+Alt+C P M</span></div>
+                  <div class="clsItem" data-cmd="cmdCharArrow1">arrow 1 &#11106;<span class="clsKbd">CA+C A 1</span></div>
+                  <div class="clsItem" data-cmd="cmdCharArrow2">arrow 2 &#8658;<span class="clsKbd">CA+C A 2</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlGt">html &amp;gt;<span class="clsKbd">CA+C H G</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">CA+C H L</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">CA+C H S</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">CA+C P M</span></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="clsItem clsHasSub">inheritance<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
-              <div class="clsItem" title="the numbered attribute gets another number, the others shift, its specifics follow" data-cmd="cmdInhRenumber">renumber<span class="clsKbd">Ctrl+Alt+P I N R</span></div>
-              <div class="clsItem" title="the own attributes of the concept get their numbers after the chain" data-cmd="cmdInhNumberOwn">number-own<span class="clsKbd">Ctrl+Alt+P I N W</span></div>
-              <div class="clsItem" title="the inherited attributes of the concept get the numbers of their generic" data-cmd="cmdInhNumberGen">number-from-generic<span class="clsKbd">Ctrl+Alt+P I N F</span></div>
-              <div class="clsItem" title="the name Mmn'NN_last of the concept" data-cmd="cmdInhLast">last-update<span class="clsKbd">Ctrl+Alt+P I N L</span></div>
-              <div class="clsItem" title="the attribute sections of the concept in number order" data-cmd="cmdInhReorder">reorder<span class="clsKbd">Ctrl+Alt+P I N O</span></div>
+              <div class="clsItem" title="the numbered attribute gets another number, the others shift, its specifics follow" data-cmd="cmdInhRenumber">renumber<span class="clsKbd">CA+P I N R</span></div>
+              <div class="clsItem" title="the own attributes of the concept get their numbers after the chain" data-cmd="cmdInhNumberOwn">number-own<span class="clsKbd">CA+P I N W</span></div>
+              <div class="clsItem" title="the inherited attributes of the concept get the numbers of their generic" data-cmd="cmdInhNumberGen">number-from-generic<span class="clsKbd">CA+P I N F</span></div>
+              <div class="clsItem" title="the name Mmn'NN_last of the concept" data-cmd="cmdInhLast">last-update<span class="clsKbd">CA+P I N L</span></div>
+              <div class="clsItem" title="the attribute sections of the concept in number order" data-cmd="cmdInhReorder">reorder<span class="clsKbd">CA+P I N O</span></div>
               <div class="clsSep"></div>
-              <div class="clsItem" title="the attribute is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">Ctrl+Alt+P I D G</span></div>
-              <div class="clsItem" title="an inherited attribute (chosen) is written into the concept as NN_x of C" data-cmd="cmdInhSpecialize">specialize<span class="clsKbd">Ctrl+Alt+P I D S</span></div>
-              <div class="clsItem" title="the inherited attributes of the concept that say nothing are deleted" data-cmd="cmdInhDeleteEmpty">delete-empty<span class="clsKbd">Ctrl+Alt+P I D D</span></div>
-              <div class="clsItem" title="the word of the attribute, here and in the specifics that inherit it" data-cmd="cmdInhRename">rename<span class="clsKbd">Ctrl+Alt+P I D M</span></div>
+              <div class="clsItem" title="the attribute is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">CA+P I D G</span></div>
+              <div class="clsItem" title="an inherited attribute (chosen) is written into the concept as NN_x of C" data-cmd="cmdInhSpecialize">specialize<span class="clsKbd">CA+P I D S</span></div>
+              <div class="clsItem" title="the inherited attributes of the concept that say nothing are deleted" data-cmd="cmdInhDeleteEmpty">delete-empty<span class="clsKbd">CA+P I D D</span></div>
+              <div class="clsItem" title="the word of the attribute, here and in the specifics that inherit it" data-cmd="cmdInhRename">rename<span class="clsKbd">CA+P I D M</span></div>
               <div class="clsSep"></div>
-              <div class="clsItem" title="the generic attribute (or generic concept)" data-cmd="cmdInhGoGeneric">go-generic<span class="clsKbd">Ctrl+Alt+P I G G</span></div>
-              <div class="clsItem" title="the same attribute in the specifics (or the specific concepts)" data-cmd="cmdInhGoSpecific">go-specific<span class="clsKbd">Ctrl+Alt+P I G S</span></div>
-              <div class="clsItem" title="the attributes the concept inherits, and which it writes" data-cmd="cmdInhShow">list-inherited<span class="clsKbd">Ctrl+Alt+P I G L</span></div>
+              <div class="clsItem" title="the generic attribute (or generic concept)" data-cmd="cmdInhGoGeneric">go-generic<span class="clsKbd">CA+P I G G</span></div>
+              <div class="clsItem" title="the same attribute in the specifics (or the specific concepts)" data-cmd="cmdInhGoSpecific">go-specific<span class="clsKbd">CA+P I G S</span></div>
+              <div class="clsItem" title="the attributes the concept inherits, and which it writes" data-cmd="cmdInhShow">list-inherited<span class="clsKbd">CA+P I G L</span></div>
             </div>
           </div>
           <div class="clsItem" data-cmd="cmdAddLine">add line</div>
@@ -1134,8 +1171,9 @@ function fBuildShell(webview, url) {
           <div class="clsItem" data-cmd="cmdBold"><b>bold</b></div>
           <div class="clsItem clsHasSub">color<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
-              <div class="clsItem" data-cmd="cmdRed"><span style="color:#e06">red</span></div>
-              <div class="clsItem" data-cmd="cmdGreen"><span style="color:#3c3">green</span></div>
+              <div class="clsItem" data-cmd="cmdBlue"><span style="color:#4af">blue</span><span class="clsKbd">CA+P F C B</span></div>
+              <div class="clsItem" data-cmd="cmdGreen"><span style="color:#3c3">green</span><span class="clsKbd">CA+P F C G</span></div>
+              <div class="clsItem" data-cmd="cmdRed"><span style="color:#e06">red</span><span class="clsKbd">CA+P F C R</span></div>
             </div>
           </div>
           <div class="clsItem" data-cmd="cmdUrl">url&#8230;</div>
@@ -1143,16 +1181,16 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">valid<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another): report, or fix unambiguous inside it and report" data-cmd="cmdValidConcept">validate-concept<span class="clsKbd">Ctrl+Alt+V C C</span></div>
-          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another) with one rule: report, or fix inside it and report" data-cmd="cmdValidConceptRule">validate-concept-with-rule<span class="clsKbd">Ctrl+Alt+V C R</span></div>
-          <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">Ctrl+Alt+V F F</span></div>
-          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">Ctrl+Alt+V F R</span></div>
-          <div class="clsItem" title="validate a directory (the current one, or chosen), every rule: report, or fix unambiguous and report" data-cmd="cmdValidDir">validate-directory<span class="clsKbd">Ctrl+Alt+V D D</span></div>
-          <div class="clsItem" title="validate a directory (the current one, or chosen) with one rule: report, or fix and report" data-cmd="cmdValidDirRule">validate-directory-with-rule<span class="clsKbd">Ctrl+Alt+V D R</span></div>
-          <div class="clsItem" title="validate the whole worldview, every rule: report, or fix unambiguous and report" data-cmd="cmdValidWorld">validate-worldview<span class="clsKbd">Ctrl+Alt+V W W</span></div>
-          <div class="clsItem" title="validate the whole worldview with one rule: report, or fix and report" data-cmd="cmdValidWorldRule">validate-worldview-with-rule<span class="clsKbd">Ctrl+Alt+V W R</span></div>
-          <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt, every rule: report, or fix unambiguous and report" data-cmd="cmdValidList">validate-list<span class="clsKbd">Ctrl+Alt+V L L</span></div>
-          <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt with one rule: report, or fix and report" data-cmd="cmdValidListRule">validate-list-with-rule<span class="clsKbd">Ctrl+Alt+V L R</span></div>
+          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another): report, or fix unambiguous inside it and report" data-cmd="cmdValidConcept">validate-concept<span class="clsKbd">CA+V C C</span></div>
+          <div class="clsItem" title="validate the concept of the cursor | URL bar (or another) with one rule: report, or fix inside it and report" data-cmd="cmdValidConceptRule">validate-concept-with-rule<span class="clsKbd">CA+V C R</span></div>
+          <div class="clsItem" title="validate current file: report, or fix unambiguous and report" data-cmd="cmdValidCurrent">validate-file<span class="clsKbd">CA+V F F</span></div>
+          <div class="clsItem" title="validate current file with one rule: report, or fix and report" data-cmd="cmdValidRule">validate-file-with-rule<span class="clsKbd">CA+V F R</span></div>
+          <div class="clsItem" title="validate a directory (the current one, or chosen), every rule: report, or fix unambiguous and report" data-cmd="cmdValidDir">validate-directory<span class="clsKbd">CA+V D D</span></div>
+          <div class="clsItem" title="validate a directory (the current one, or chosen) with one rule: report, or fix and report" data-cmd="cmdValidDirRule">validate-directory-with-rule<span class="clsKbd">CA+V D R</span></div>
+          <div class="clsItem" title="validate the whole worldview, every rule: report, or fix unambiguous and report" data-cmd="cmdValidWorld">validate-worldview<span class="clsKbd">CA+V W W</span></div>
+          <div class="clsItem" title="validate the whole worldview with one rule: report, or fix and report" data-cmd="cmdValidWorldRule">validate-worldview-with-rule<span class="clsKbd">CA+V W R</span></div>
+          <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt, every rule: report, or fix unambiguous and report" data-cmd="cmdValidList">validate-list<span class="clsKbd">CA+V L L</span></div>
+          <div class="clsItem" title="validate the files and dirs of dirManager/validate.txt with one rule: report, or fix and report" data-cmd="cmdValidListRule">validate-list-with-rule<span class="clsKbd">CA+V L R</span></div>
         </div>
       </div>
     </div>
@@ -1245,7 +1283,7 @@ function fBuildShell(webview, url) {
     else if(sCmd==='cmdIndexUpload') fToChrome({type:'indexUpload'});
     else if(sCmd==='cmdIndexOnly') fToChrome({type:'indexOnly'});
     else if(sCmd==='cmdOpenRaw') fToChrome({type:'openRaw'});
-    else fToChrome({type:'cmd', cmd: sCmd});      // cmdBold / cmdRed / cmdGreen / cmdUrl -> bridge
+    else fToChrome({type:'cmd', cmd: sCmd});      // cmdBold / cmdBlue / cmdRed / cmdGreen / cmdUrl -> bridge
   });
 
   // relay: iframe(bridge) <-> extension
@@ -1902,6 +1940,56 @@ async function fInsertTree(sKindIn) {
   }
   const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oTree.nAt), oTree.sInsert));
   if (bOk) fGo(oTree.nAt + oTree.nCursor);
+}
+
+const oLastGenSpe = { gen: '', spe: '', whl: '', prt: '', prn: '', chd: '' };                  // the-last generic | specific asked (edit/insert/concept/…)
+
+/**
+ * DOING: edit/insert/concept/generic | specific (Ctrl+Alt+P C G | S): it asks the-generic | specific
+ *   (McshTchInf000009#idLMcshuser, McshTchInf000009.last.html#idLMcshuser, dirTchInf/…, name!@file#id), reads its
+ *   names (descriptive-main-name) and builds the-insert at nOffIn of oDocIn (omModel.fBuildGenSpe).
+ * INPUT: sKindIn: 'gen' | 'spe' | 'whl' | 'prt' | 'prn' | 'chd'.
+ * OUTPUT: { nAt, sInsert, nCursor, sHow }, or null (Escape, or a-message shown).
+ */
+async function fBuildGenSpeAt(oDocIn, nOffIn, sKindIn) {
+  const sWord = { spe: 'specific', whl: 'whole', prt: 'part', prn: 'parent', chd: 'child' }[sKindIn] || 'generic';
+  const fWarn = (sIn) => { vscode.window.showWarningMessage('Mcs insert-' + sWord + ': ' + sIn); return null; };
+  const sRoot = fFindWorldview(path.dirname(oDocIn.uri.fsPath));
+  if (!sRoot) return fWarn('the file is not in a worldview (no dirNamidx above it)');
+  const sInput = await fInputClickValid({
+    prompt: 'insert-' + sWord + ': the ' + sWord + ' concept: McshTchInf000009#idLMcshuser | McshTchInf000009.last.html#idLMcshuser',
+    value: oLastGenSpe[sKindIn]
+  });
+  if (!sInput || !sInput.trim()) return null;              // Escape: nothing
+  oLastGenSpe[sKindIn] = sInput.trim();
+  const { sFile, sId } = fResolveFileIdValid(sInput, sRoot);
+  if (!sFile) return fWarn('no file for "' + sInput.trim() + '"');
+  if (!sId) return fWarn('write the #id of the ' + sWord + ': ' + path.basename(sFile) + '#idX');
+  const oDocGen = vscode.workspace.textDocuments.find((oIn) => oIn.uri.fsPath.toLowerCase() === sFile.toLowerCase());
+  const sTextGen = oDocGen ? oDocGen.getText() : fs.readFileSync(sFile, 'utf8');
+  const { sName, sDescr, sWhy } = omModel.fFindNameOfConcept(sTextGen, sId);
+  if (sWhy) return fWarn(sWhy);
+  const bSame = sFile.toLowerCase() === oDocIn.uri.fsPath.toLowerCase();
+  const sHref = (bSame ? '' : path.relative(path.dirname(oDocIn.uri.fsPath), sFile).split(path.sep).join('/')) + '#' + sId;
+  const oGen = omModel.fBuildGenSpe(oDocIn.getText(), nOffIn,
+    { sName, sDescr, sCode: path.basename(sFile).replace(/\.last\.html$/i, ''), sId, sHref }, fDateToday(), sKindIn);
+  if (oGen.sWhy) return fWarn(oGen.sWhy);
+  return oGen;
+}
+
+/** DOING: edit/insert/concept/generic | specific (sKindIn 'gen' | 'spe') in a-source tab: the-concept of the-cursor; the-cursor at the-end of the-new line. */
+async function fInsertGenSpeSource(sKindIn) {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  const oDoc = oEd.document;
+  const oGen = await fBuildGenSpeAt(oDoc, oDoc.offsetAt(oEd.selection.active), sKindIn);
+  if (!oGen) return;
+  const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oGen.nAt), oGen.sInsert));
+  if (!bOk) return;
+  const oPos = oDoc.positionAt(oGen.nAt + oGen.nCursor);
+  oEd.selection = new vscode.Selection(oPos, oPos);
+  oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
+  vscode.window.setStatusBarMessage('Mcs: ' + oGen.sHow, 5000);
 }
 
 /**

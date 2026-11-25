@@ -442,9 +442,204 @@ function fFindSectIdAt(sTextIn, nOffIn) {
   return aoOpen[aoOpen.length - 1] || '';
 }
 
+// the-paragraphs OF a-section (its attributes), never a-para-concept (as dirValid/conceptRange.js)
+const rTitleOfSect = /^(\[?name|description.*|.*-tree|addressWpg|attribute|webpage-versions|footer|SEARCH|example|definition)$/;
+
+/** OUTPUT: the-index just after the-element `<p|div` opened at nOpenIn closes (nesting counted for div), or -1. */
+function fFindParaEnd(sTextIn, nOpenIn, sTagIn) {
+  const rTag = new RegExp(`<${sTagIn}\\b|</${sTagIn}>`, 'g');
+  rTag.lastIndex = nOpenIn;
+  let nDepth = 0, aM;
+  while ((aM = rTag.exec(sTextIn)) !== null) {
+    nDepth += aM[0][1] === '/' ? -1 : 1;
+    if (nDepth === 0) return aM.index + aM[0].length;
+  }
+  return -1;
+}
+
+/**
+ * OUTPUT: the-para-concept that holds nOffIn (a-<p|div id> titled "Y::", NOT a-section's own para,
+ *   with McsLago names "<br>* McshXxxx."): { sId, nOpen, nEnd }, or null (a-section's own para, or none).
+ */
+function fFindParaConceptAt(sTextIn, nOffIn) {
+  const sBefore = sTextIn.slice(0, nOffIn);
+  const nSect = Math.max(sBefore.lastIndexOf('<section'), sBefore.lastIndexOf('</section>'));
+  const aoOpen = [...sBefore.slice(nSect < 0 ? 0 : nSect).matchAll(/<(p|div)\b[^>]*\bid="([^"]+)"[^>]*>/g)];
+  for (let nI = aoOpen.length - 1; nI >= 0; nI--) {
+    const aM = aoOpen[nI];
+    const nOpen = (nSect < 0 ? 0 : nSect) + aM.index;
+    const nEnd = fFindParaEnd(sTextIn, nOpen, aM[1]);
+    if (nEnd < nOffIn) continue;                                   // closed above the-cursor
+    const sPara = sTextIn.slice(nOpen, nEnd);
+    const aTitle = sPara.slice(aM[0].length).match(/^([^:\n<]+)::/);
+    if (aTitle && !rTitleOfSect.test(aTitle[1].trim()) && /<br>\*\s*Mcsh[A-Z][a-z]{3}\./.test(sPara)) {
+      return { sId: aM[2], nOpen, nEnd };
+    }
+    if (aM[1] === 'p') return null;                                // inside a-section's own para
+  }
+  return null;
+}
+
+/**
+ * OUTPUT: the-name of the-concept sIdIn of sTextIn, to name it as a-generic: its main-name, else its
+ *   first English name; { sName, sWhy } (sWhy '' when found).
+ */
+function fFindNameOfConcept(sTextIn, sIdIn) {
+  const aEl = new RegExp(`<(section|p|div)\\b[^>]*\\bid="${sIdIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`).exec(sTextIn);
+  if (!aEl) return { sName: '', sWhy: `no #${sIdIn} in the generic's file` };
+  let sOwn;
+  if (aEl[1] === 'section') {
+    const nClose = fFindSectClose(sTextIn, aEl.index);
+    const nSub = sTextIn.indexOf('<section', aEl.index + 8);
+    sOwn = sTextIn.slice(aEl.index, nSub > 0 && (nClose < 0 || nSub < nClose) ? nSub : nClose);
+    const aPara = sOwn.match(/<p\b[^>]*>name::[\s\S]*?<\/p>/);
+    if (!aPara) return { sName: '', sWhy: `#${sIdIn} has no name:: para` };
+    sOwn = aPara[0];
+  } else {
+    sOwn = sTextIn.slice(aEl.index, fFindParaEnd(sTextIn, aEl.index, aEl[1]));
+  }
+  const aFirst = sOwn.match(/<br>\*\s*McshEngl\.([^\n,]+),/);
+  if (!aFirst) return { sName: '', sWhy: `#${sIdIn} has no English name` };
+  const { sMain } = fFindMainName(/<p\b[^>]*>name::/.test(sOwn) ? sOwn : '<p>name::' + sOwn + '</p>');
+  const sName = sMain || aFirst[1].split('!')[0].split('~')[0].trim();
+  // the-descriptive-main-name: "Main!=Descr", else the-first "Descr!⇒Main", else the-name
+  let sDescr = '';
+  if (sMain) {
+    const sMainEsc = sMain.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const aEq = sOwn.match(new RegExp(`<br>\\*\\s*McshEngl\\.${sMainEsc}!=([^\\n,!{]+)`));
+    const aTo = sOwn.match(new RegExp(`<br>\\*\\s*McshEngl\\.([^\\n,!]+)!⇒${sMainEsc}\\s*[,{]`));
+    sDescr = aEq ? aEq[1].trim() : aTo ? aTo[1].trim() : '';
+  }
+  return { sName, sDescr: sDescr || sName, sWhy: '' };
+}
+
+// the-relations of edit/insert/concept/…: the-word, its tree para, the-tree section (ooTreeKind), the-place in the-para
+//   (bLast: at its end, else first after "<br>==="), the-paras a-new para goes after (besides name::)
+const ooGenSpeKind = {
+  gen: { sWord: 'generic', sTree: 'gntr', sKindTree: 'gs', bLast: false, aAfter: [] },
+  spe: { sWord: 'specific', sTree: 'sptr', sKindTree: 'gs', bLast: true, aAfter: [['gntr', 'generic-tree']] },
+  whl: { sWord: 'whole', sTree: 'wltr', sKindTree: 'wp', bLast: false, aAfter: [] },
+  prt: { sWord: 'part', sTree: 'prtr', sKindTree: 'wp', bLast: true, aAfter: [['wltr', 'whole-tree']] },
+  prn: { sWord: 'parent', sTree: 'pntr', sKindTree: 'pc', bLast: false, aAfter: [] },
+  chd: { sWord: 'child', sTree: 'chtr', sKindTree: 'pc', bLast: true, aAfter: [['pntr', 'parent-tree']] }
+};
+
+/**
+ * DOING: edit/insert/concept/generic | specific | whole | part | parent | child (Ctrl+Alt+P C G | S | W | P | N | C):
+ *   a-generic | specific | whole | part | parent | child of the-concept at nOffIn (whole | part: in the-WHOLE-PART-TREE,
+ *   parent | child: in the-PARENT-CHILD-TREE, as generic | specific).
+ *   - a-para-concept: after its "<br>× Mcsh-creation:" line and the "<br>× " lines that follow it (else its
+ *     title line): "<br>× generic: DESCR" | "<br>× specific: DESCR" (descriptive-main-name, plain text);
+ *   - a-sect-concept: "<br>* DESCR!@CODE#ID," in its generic-tree:: (after its "<br>===") | specific-tree::
+ *     (at its end); none: with a-main-name, a-new GENERIC-SPECIFIC-TREE section (fBuildTree, its automatic
+ *     place) with it; without, a-new generic-tree:: | specific-tree:: para after its name:: (| generic-tree::) para.
+ * INPUT: oGenIn: { sName, sDescr (descriptive-main-name), sCode (McshTchInf000009), sId, sHref (relative, with #id) };
+ *   sKindIn: 'gen' | 'spe' | 'whl' | 'prt' | 'prn' | 'chd' (ooGenSpeKind).
+ * OUTPUT: { nAt, sInsert, nCursor (in sInsert), sHow } | { sWhy }.
+ */
+function fBuildGenSpe(sTextIn, nOffIn, oGenIn, sDateIn, sKindIn) {
+  const oKind = ooGenSpeKind[sKindIn] || ooGenSpeKind.gen;
+  const sWord = oKind.sWord, sTree = oKind.sTree;
+  const sTitleTree = ooTreeKind[oKind.sKindTree].sTitle;
+  const fEsc = (sIn) => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const fLineEnd = (nIn) => { const nE = sTextIn.indexOf('\n', nIn); return nE < 0 ? sTextIn.length : nE + 1; };
+  const sDescr = oGenIn.sDescr || oGenIn.sName;
+  const sRefAt = `!@${oGenIn.sCode}#${oGenIn.sId}`;
+  const oPara = fFindParaConceptAt(sTextIn, nOffIn);
+  if (oPara) {
+    const sPara = sTextIn.slice(oPara.nOpen, oPara.nEnd);
+    if (sPara.includes(`href="${oGenIn.sHref}"`) || sPara.includes(sRefAt) ||
+      new RegExp(`<br>× ${sWord}: ${fEsc(sDescr)}\\s*(\\n|$)`).test(sPara)) {
+      return { sWhy: `#${oPara.sId} has this ${sWord} already` };
+    }
+    // after the-date line and the-"<br>× " lines that follow it
+    const aDate = /<br>× Mcsh-creation:[^\n]*\n(?:[ \t]*<br>× [^\n]*\n)*/.exec(sPara);
+    const nAt = aDate ? oPara.nOpen + aDate.index + aDate[0].length : fLineEnd(oPara.nOpen);
+    const sLine = `    <br>× ${sWord}: ${sDescr}`;
+    return { nAt, sInsert: sLine + '\n', nCursor: sLine.length, sHow: `#${oPara.sId}: × ${sWord}` };
+  }
+
+  const sLine = `    <br>* ${sDescr}${sRefAt},`;
+  // the-line into an-existing X-tree:: para at nTreeIn of the-concept sXIn
+  const fIntoPara = (nTreeIn, sXIn) => {
+    const sPara = sTextIn.slice(nTreeIn, fFindParaEnd(sTextIn, nTreeIn, 'p'));
+    if (sPara.includes(sRefAt)) return { sWhy: `#${sXIn} has this ${sWord} already` };
+    const aEq = /<br>===[^\n]*/.exec(sPara);
+    // a-generic | whole | parent: first after "<br>==="; a-specific | part | child: last, before the-clsHide
+    //   line, and before a-trailing "<br>* ..." (more-to-come) line
+    const aHide = /\n[ \t]*<br>\*\s*\.\.\.,?[ \t]*\n[ \t]*<a class="clsHide"/.exec(sPara) || /\n[ \t]*<a class="clsHide"/.exec(sPara);
+    const nAt = !oKind.bLast && aEq ? fLineEnd(nTreeIn + aEq.index) : aHide ? nTreeIn + aHide.index + 1 : fLineEnd(nTreeIn);
+    return { nAt, sInsert: sLine + '\n', nCursor: sLine.length, sHow: `#${sXIn}: ${sWord}-tree` };
+  };
+
+  const oCnpt = fFindSectConceptAt(sTextIn, nOffIn);
+  if (!oCnpt) {
+    // the-file concept: its trees are top-level sections "X-TREE of Main" (Main of idOverview's name::);
+    //   the-cursor in such a-tree section, or in idOverview
+    const sSect = fFindSectIdAt(sTextIn, nOffIn);
+    const nSect = sSect ? sTextIn.indexOf(`<section id="${sSect}"`) : -1;
+    let nTreeSect = -1;
+    if (nSect >= 0 && new RegExp(`^<section[^>]*>\\s*<h[1-6]\\b[^>]*>${sTitleTree} of `).test(sTextIn.slice(nSect, nSect + 300))) nTreeSect = nSect;
+    if (nTreeSect < 0) {
+      const nOv = sTextIn.indexOf('<section id="idOverview"');
+      const nOvSub = nOv < 0 ? -1 : sTextIn.indexOf('<section', nOv + 8);
+      const sMainOv = nOv < 0 ? '' : fFindMainName(sTextIn.slice(nOv, nOvSub < 0 ? undefined : nOvSub)).sMain;
+      const bFileCnpt = !sSect || sSect === 'idOverview' ||
+        (nSect >= 0 && /^<section[^>]*>\s*<h[1-6]\b[^>]*>[A-Z-]+-TREE of /.test(sTextIn.slice(nSect, nSect + 300)));
+      const aH = sMainOv && bFileCnpt &&
+        new RegExp(`<h[1-6]\\b[^>]*>${sTitleTree} of ${fEsc(sMainOv)}\\s*\\n`).exec(sTextIn);
+      if (aH) nTreeSect = sTextIn.lastIndexOf('<section', aH.index);
+    }
+    if (nTreeSect < 0) return { sWhy: 'no concept here (a section with name::, or a para-concept)' };
+    const aG = new RegExp(`<p\\b[^>]*>${sWord}-tree::`).exec(sTextIn.slice(nTreeSect, fFindSectClose(sTextIn, nTreeSect)));
+    if (!aG) return { sWhy: `the file concept's ${sTitleTree} has no ${sWord}-tree:: para` };
+    return fIntoPara(nTreeSect + aG.index, 'idOverview');
+  }
+  const sX = oCnpt.sId;
+  const { sMain } = fFindMainName(oCnpt.sOwn);
+  // its X-tree:: para: XNNtr; else one in its own text; else in its tree section (by heading)
+  const fFindTreePara = (sTreeIn, sLabelIn) => {
+    let nAt = sTextIn.indexOf(`<p id="${sX}${sTreeIn}">`);
+    if (nAt < 0) {
+      const aOwn = new RegExp(`<p\\b[^>]*>${sLabelIn}::`).exec(oCnpt.sOwn);
+      if (aOwn) nAt = oCnpt.nOpen + aOwn.index;
+    }
+    if (nAt < 0 && sMain) {
+      const aH = new RegExp(`<h[1-6]\\b[^>]*>${sTitleTree} of ${fEsc(sMain)}\\s*\\n`).exec(sTextIn);
+      if (aH) {
+        const nGs = sTextIn.lastIndexOf('<section', aH.index);
+        const aG = new RegExp(`<p\\b[^>]*>${sLabelIn}::`).exec(sTextIn.slice(nGs, fFindSectClose(sTextIn, nGs)));
+        if (aG) nAt = nGs + aG.index;
+      }
+    }
+    return nAt;
+  };
+  const nTree = fFindTreePara(sTree, sWord + '-tree');
+  if (nTree >= 0) return fIntoPara(nTree, sX);
+  if (sMain) {
+    const oTree = fBuildTree(sTextIn, nOffIn, oKind.sKindTree, sDateIn, true);
+    if (oTree.sWhy) return oTree;
+    if (oTree.nAtExist != null) return { sWhy: `#${sX}: its ${sTitleTree} has no ${sWord}-tree:: para` };
+    // the-end of the-"<br>===" line of the-generic-tree:: | specific-tree:: para of the-new section
+    const nEq = oTree.sInsert.indexOf('<br>===', oTree.sInsert.indexOf(`>${sWord}-tree::`)) + '<br>==='.length;
+    const sInsert = oTree.sInsert.slice(0, nEq) + '\n' + sLine + oTree.sInsert.slice(nEq);
+    return { nAt: oTree.nAt, sInsert, nCursor: nEq + 1 + sLine.length, sHow: `#${sX}: new ${sTitleTree}` };
+  }
+  // no main-name: a-new X-tree:: para after its name:: para (a-specific-tree:: after its generic-tree:: too)
+  const aNam = /<p\b[^>]*>name::[\s\S]*?<\/p>[^\n]*\n?/.exec(oCnpt.sOwn);
+  let nAt = oCnpt.nOpen + aNam.index + aNam[0].length;
+  for (const [sTreeAfter, sLabelAfter] of oKind.aAfter) {
+    const nAfter = fFindTreePara(sTreeAfter, sLabelAfter);
+    if (nAfter >= 0 && nAfter < oCnpt.nOpen + oCnpt.sOwn.length) nAt = fLineEnd(fFindParaEnd(sTextIn, nAfter, 'p') - 1);
+  }
+  const sInsert = `  <p id="${sX}${sTree}">${sWord}-tree::\n${sLine}\n    <a class="clsHide" href="#${sX}${sTree}"></a></p>\n`;
+  return { nAt, sInsert, nCursor: sInsert.indexOf(sLine) + sLine.length, sHow: `#${sX}: new ${sWord}-tree:: para` };
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
   fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
   fBuildParaDsnNam, fBuildTree, fFindSectIdAt,
+  fFindParaConceptAt, fFindNameOfConcept, fBuildGenSpe,
 };

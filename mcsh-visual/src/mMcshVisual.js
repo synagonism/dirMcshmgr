@@ -189,6 +189,7 @@ export function fInitMcshv_bridge() {
 
   var oCommands = {
     cmdBold: function () { var s = fGetSel(); if (!s) return fNotify('select some text first'); fReplaceCore(s.host, s.before, '<strong>' + fEsc(s.sel) + '</strong>', s.after); },
+    cmdBlue: function () { var s = fGetSel(); if (!s) return fNotify('select some text first'); fReplaceCore(s.host, s.before, '<span class="clsColorBlue">' + fEsc(s.sel) + '</span>', s.after); },
     cmdRed: function () { var s = fGetSel(); if (!s) return fNotify('select some text first'); fReplaceCore(s.host, s.before, '<span class="clsColorRed">' + fEsc(s.sel) + '</span>', s.after); },
     cmdGreen: function () { var s = fGetSel(); if (!s) return fNotify('select some text first'); fReplaceCore(s.host, s.before, '<span class="clsColorGreen">' + fEsc(s.sel) + '</span>', s.after); },
     cmdUrl: function () {
@@ -218,6 +219,12 @@ export function fInitMcshv_bridge() {
     cmdInhGoSpecific: function () { fInherit('go-specific'); },
     cmdInhShow: function () { fInherit('show'); },
     cmdInsertTreeGenSpe: function () { fInsertTree('gs'); },
+    cmdInsertGeneric: function () { fPost({ type: 'insertGeneric', sKind: 'gen', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
+    cmdInsertChild: function () { fPost({ type: 'insertGeneric', sKind: 'chd', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
+    cmdInsertParent: function () { fPost({ type: 'insertGeneric', sKind: 'prn', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
+    cmdInsertPart: function () { fPost({ type: 'insertGeneric', sKind: 'prt', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
+    cmdInsertWhole: function () { fPost({ type: 'insertGeneric', sKind: 'whl', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
+    cmdInsertSpecific: function () { fPost({ type: 'insertGeneric', sKind: 'spe', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
     cmdInsertTreeWholePart: function () { fInsertTree('wp'); },
     cmdInsertTreeParentChild: function () { fInsertTree('pc'); },
     // Character inserts (also on chords ctrl+alt+c …) — insert verbatim at the caret.
@@ -290,7 +297,7 @@ export function fInitMcshv_bridge() {
   // Chords that relay a command to the host (extension) instead of editing text.
   // The iframe swallows VS Code keybindings, so these are reproduced here and
   // posted up; not derivable from keybindings.json (non-type/insertSnippet cmds).
-  var oHostChords = { 'ctrl+alt+v c c': 'validConcept', 'ctrl+alt+v c r': 'validConceptRule', 'ctrl+alt+v f f': 'validCurrent', 'ctrl+alt+v f r': 'validRule', 'ctrl+alt+v d d': 'validDir', 'ctrl+alt+v w w': 'validWorld', 'ctrl+alt+v l l': 'validList', 'ctrl+alt+v d r': 'validDirRule', 'ctrl+alt+v w r': 'validWorldRule', 'ctrl+alt+v l r': 'validListRule', 'ctrl+alt+p o': 'open', 'ctrl+alt+p x u': 'indexUpload', 'ctrl+alt+p x o': 'indexOnly', 'ctrl+alt+p k n': 'newFile', 'ctrl+alt+p k m': 'makeSectFile' };   // relayed to the host
+  var oHostChords = { 'ctrl+alt+v c c': 'validConcept', 'ctrl+alt+v c r': 'validConceptRule', 'ctrl+alt+v f f': 'validCurrent', 'ctrl+alt+v f r': 'validRule', 'ctrl+alt+v d d': 'validDir', 'ctrl+alt+v w w': 'validWorld', 'ctrl+alt+v l l': 'validList', 'ctrl+alt+v d r': 'validDirRule', 'ctrl+alt+v w r': 'validWorldRule', 'ctrl+alt+v l r': 'validListRule', 'ctrl+alt+p o': 'open', 'ctrl+alt+p x u': 'indexUpload', 'ctrl+alt+p x o': 'indexOnly', 'ctrl+alt+p k n': 'newFile', 'ctrl+alt+p k f': 'makeSectFile' };   // relayed to the host
   function fSetChords(aList) {
     var o = {};
     (aList || []).forEach(function (oE) {
@@ -314,7 +321,7 @@ export function fInitMcshv_bridge() {
     oChordCmds = o;
   }
   // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
-  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe',
+  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe', 'ctrl+alt+p c g': 'cmdInsertGeneric', 'ctrl+alt+p c s': 'cmdInsertSpecific', 'ctrl+alt+p c w': 'cmdInsertWhole', 'ctrl+alt+p c p': 'cmdInsertPart', 'ctrl+alt+p c n': 'cmdInsertParent', 'ctrl+alt+p c c': 'cmdInsertChild',
     'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
     'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i n w': 'cmdInhNumberOwn', 'ctrl+alt+p i n f': 'cmdInhNumberGen',
     'ctrl+alt+p i n l': 'cmdInhLast', 'ctrl+alt+p i n o': 'cmdInhReorder', 'ctrl+alt+p i d g': 'cmdInhGeneralize',
@@ -336,9 +343,9 @@ export function fInitMcshv_bridge() {
   fSetChords([
     { chord: 'ctrl+alt+h b', kind: 'wrap', tpl: '<strong>${TM_SELECTED_TEXT}</strong>' },
     { chord: 'ctrl+alt+h c d', kind: 'wrap', tpl: '<code>${TM_SELECTED_TEXT}</code>' },
-    { chord: 'ctrl+alt+p c b', kind: 'wrap', tpl: '<span class="clsColorBlue">${TM_SELECTED_TEXT}</span>' },
-    { chord: 'ctrl+alt+p c g', kind: 'wrap', tpl: '<span class="clsColorGreen">${TM_SELECTED_TEXT}</span>' },
-    { chord: 'ctrl+alt+p c r', kind: 'wrap', tpl: '<span class="clsColorRed">${TM_SELECTED_TEXT}</span>' },
+    { chord: 'ctrl+alt+p f c b', kind: 'wrap', tpl: '<span class="clsColorBlue">${TM_SELECTED_TEXT}</span>' },
+    { chord: 'ctrl+alt+p f c g', kind: 'wrap', tpl: '<span class="clsColorGreen">${TM_SELECTED_TEXT}</span>' },
+    { chord: 'ctrl+alt+p f c r', kind: 'wrap', tpl: '<span class="clsColorRed">${TM_SELECTED_TEXT}</span>' },
     { chord: 'ctrl+alt+p f u', kind: 'wrap', tpl: '<span class="clsU">${TM_SELECTED_TEXT}</span>' },
     { chord: 'ctrl+alt+c l', kind: 'wrap', tpl: '⟨${TM_SELECTED_TEXT}⟩' },
     { chord: 'ctrl+alt+p s a', kind: 'wrap', tpl: '_sntxArgt:[${TM_SELECTED_TEXT}]' },
