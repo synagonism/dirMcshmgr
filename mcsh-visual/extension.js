@@ -773,14 +773,17 @@ function fCreateProvider(context) {
             }
             if (nOffGen == null) { vscode.window.showWarningMessage('Mcs insert-generic: click a line of the concept first'); break; }
             try {
-              const oGen = await fBuildGenSpeAt(oActiveDoc, nOffGen, ['spe', 'whl', 'prt', 'prn', 'chd'].includes(msg.sKind) ? msg.sKind : 'gen');
+              const sKindGen = ['spe', 'whl', 'prt', 'prn', 'chd'].includes(msg.sKind) ? msg.sKind : 'gen';
+              const oGen = await fBuildGenSpeAt(oActiveDoc, nOffGen, sKindGen);
               if (!oGen) break;
               const oWe = new vscode.WorkspaceEdit();
               oWe.insert(oActiveDoc.uri, oActiveDoc.positionAt(oGen.nAt), oGen.sInsert);
               bSelfEditing = true;
               const bOkGen = await vscode.workspace.applyEdit(oWe);
+              // the-generic | whole | parent gets the-current concept as specific | part | child (in this file too: still self-editing)
+              const sAlso = bOkGen && ooReverseKind[sKindGen] ? await fAddReverseInOther(oActiveDoc, oGen, sKindGen) : '';
               bSelfEditing = false;
-              if (bOkGen) { fStatus(oGen.sHow); await document.save(); }
+              if (bOkGen) { fStatus(oGen.sHow + (sAlso ? '; ' + sAlso : '')); await document.save(); }
             } catch (oErrGen) { bSelfEditing = false; vscode.window.showErrorMessage('Mcs insert-generic: ' + (oErrGen && oErrGen.message || oErrGen)); }
             break;
           }
@@ -1974,7 +1977,49 @@ async function fBuildGenSpeAt(oDocIn, nOffIn, sKindIn) {
   const oGen = omModel.fBuildGenSpe(oDocIn.getText(), nOffIn,
     { sName, sDescr, sCode: path.basename(sFile).replace(/\.last\.html$/i, ''), sId, sHref }, fDateToday(), sKindIn);
   if (oGen.sWhy) return fWarn(oGen.sWhy);
-  return oGen;
+  return { ...oGen, sFileOther: sFile, sIdOther: sId };
+}
+
+// the-reverse relation written in the-other concept: a-generic gets the-current as specific (and back), a-whole
+//   as part (and back), a-parent as child (and back)
+const ooReverseKind = {
+  gen: { sKind: 'spe', sWord: 'specific' }, spe: { sKind: 'gen', sWord: 'generic' },
+  whl: { sKind: 'prt', sWord: 'part' }, prt: { sKind: 'whl', sWord: 'whole' },
+  prn: { sKind: 'chd', sWord: 'child' }, chd: { sKind: 'prn', sWord: 'parent' }
+};
+
+/**
+ * DOING: after edit/insert/concept/…: the-current concept (its id from oGenIn.sHow "#id: …")
+ *   is written as the-reverse relation (ooReverseKind) of the-other concept (omModel.fBuildGenSpe at its element); it is there
+ *   already: nothing. The-other in another file: that file is saved (unless it had unsaved changes before); in the-same file: not.
+ * INPUT: oDocCurIn: the-current document, AFTER the-first insert; oGenIn: of fBuildGenSpeAt; sKindIn: a-key of ooReverseKind.
+ * OUTPUT: a-message of what happened.
+ */
+async function fAddReverseInOther(oDocCurIn, oGenIn, sKindIn) {
+  const { sKind: sKindRev, sWord: sWordRev } = ooReverseKind[sKindIn];
+  const sIdCur = (oGenIn.sHow.match(/^#([^\s:]+):/) || [])[1];
+  if (!sIdCur) return '';
+  const sFileCur = oDocCurIn.uri.fsPath;
+  const sCodeOther = path.basename(oGenIn.sFileOther).replace(/\.last\.html$/i, '');
+  const sWhere = sCodeOther + '#' + oGenIn.sIdOther;
+  const oName = omModel.fFindNameOfConcept(oDocCurIn.getText(), sIdCur);
+  if (oName.sWhy) return 'not a ' + sWordRev + ' in ' + sWhere + ': ' + oName.sWhy;
+  const bSame = oGenIn.sFileOther.toLowerCase() === sFileCur.toLowerCase();
+  const oDocGen = bSame ? oDocCurIn : await vscode.workspace.openTextDocument(vscode.Uri.file(oGenIn.sFileOther));
+  const sTextGen = oDocGen.getText();
+  const nAtId = sTextGen.indexOf(`id="${oGenIn.sIdOther}"`);
+  if (nAtId < 0) return 'not a ' + sWordRev + ': no #' + oGenIn.sIdOther + ' in ' + sCodeOther;
+  const sHref = (bSame ? '' : path.relative(path.dirname(oGenIn.sFileOther), sFileCur).split(path.sep).join('/')) + '#' + sIdCur;
+  const oSpe = omModel.fBuildGenSpe(sTextGen, sTextGen.indexOf('>', nAtId) + 1,
+    { sName: oName.sName, sDescr: oName.sDescr, sCode: path.basename(sFileCur).replace(/\.last\.html$/i, ''), sId: sIdCur, sHref },
+    fDateToday(), sKindRev);
+  if (oSpe.sWhy) return /already/.test(oSpe.sWhy) ? 'already a ' + sWordRev + ' in ' + sWhere : 'not a ' + sWordRev + ' in ' + sWhere + ': ' + oSpe.sWhy;
+  const bDirtyBefore = oDocGen.isDirty;
+  const oWe = new vscode.WorkspaceEdit();
+  oWe.insert(oDocGen.uri, oDocGen.positionAt(oSpe.nAt), oSpe.sInsert);
+  if (!await vscode.workspace.applyEdit(oWe)) return 'not a ' + sWordRev + ' in ' + sWhere + ': the edit failed';
+  if (!bSame && !bDirtyBefore) await oDocGen.save();
+  return sWordRev + ' in ' + sWhere + (!bSame && bDirtyBefore ? ' (unsaved)' : '');
 }
 
 /** DOING: edit/insert/concept/generic | specific (sKindIn 'gen' | 'spe') in a-source tab: the-concept of the-cursor; the-cursor at the-end of the-new line. */
@@ -1989,7 +2034,8 @@ async function fInsertGenSpeSource(sKindIn) {
   const oPos = oDoc.positionAt(oGen.nAt + oGen.nCursor);
   oEd.selection = new vscode.Selection(oPos, oPos);
   oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
-  vscode.window.setStatusBarMessage('Mcs: ' + oGen.sHow, 5000);
+  const sAlso = ooReverseKind[sKindIn] ? await fAddReverseInOther(oDoc, oGen, sKindIn) : '';
+  vscode.window.setStatusBarMessage('Mcs: ' + oGen.sHow + (sAlso ? '; ' + sAlso : ''), 8000);
 }
 
 /**
