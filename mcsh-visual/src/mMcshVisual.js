@@ -476,6 +476,9 @@ export function fInitMcshv_bridge() {
     var oInfo = document.getElementById('idCnrMainInfoDiv');
     var oContent = document.getElementById('idCnrMainContentDiv');
     if (!oMain || !oInfo || !oContent) return;
+    var oSplit = document.getElementById('idCnrSplitDiv');
+    // the-user drags the-splitter (mMcsh2 pointer-drag): leave the-widths to it
+    if (oSplit && oSplit.classList.contains('clsSplitActive')) return;
     var nFrame = oMain.clientWidth; if (!nFrame) return;
     var nPct;
     if (oMcshMod && typeof oMcshMod.nCfgPageinfoWidth === 'number') nPct = oMcshMod.nCfgPageinfoWidth;
@@ -485,6 +488,7 @@ export function fInitMcshv_bridge() {
     if (oInfo.style.width !== sIwS) oInfo.style.width = sIwS;
     if (oContent.style.width !== sCwS) oContent.style.width = sCwS;
     if (oContent.style.left !== sIwS) oContent.style.left = sIwS;
+    if (oSplit && oSplit.style.left !== sIwS) oSplit.style.left = sIwS;
   }
   function fWatchSplit() {
     var oInfo = document.getElementById('idCnrMainInfoDiv');
