@@ -44,6 +44,8 @@ const fHashOfHref = (sHrefIn) => {
 };
 /** Navigate fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fNavigateVisual = null;
+// it reloads the-active visual editor (after files are written on disk, e.g. edit/inheritance)
+let fReloadVisual = null;
 /** Make-sect-file fn of the most-recently-active open Mcsh-visual-manager editor (null = none open). */
 let fMakeSectVisual = null;
 
@@ -413,7 +415,7 @@ function fCreateProvider(context) {
     // page now shown, so edits/saves follow. `null` = a view-only page.
     let oActiveDoc = document;
     sVisualFile = document.uri.fsPath;           // seed ${command:mcshv.currentFile}
-    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; sHashVisual = fHashOfHref(sHrefCurrent); fNavigateVisual = fNavigate; fMakeSectVisual = fMakeSect; } });
+    panel.onDidChangeViewState(() => { if (panel.active) { if (oActiveDoc) sVisualFile = oActiveDoc.uri.fsPath; sHashVisual = fHashOfHref(sHrefCurrent); fNavigateVisual = fNavigate; fReloadVisual = fReloadFrame; fMakeSectVisual = fMakeSect; } });
     const oSetAddedKeys = new Set();             // docs we added to `oSetUriManaged` (cleanup on dispose)
     const sDocRootBase = fDocRootBase(document);
 
@@ -433,6 +435,7 @@ function fCreateProvider(context) {
     // resulting bridge `nav` retargets oActiveDoc + the source pane (fOnNavigate).
     const fNavigate = (sUrl) => { if (sUrl) fToChrome({ type: 'navigate', url: sUrl }); };
     fNavigateVisual = fNavigate;                 // this editor is the active one at resolve time
+    fReloadVisual = () => fReloadFrame();
 
     // File → Open (and the Ctrl+Alt+P O chord): open a McsHitp page by code.
     const fOpenByCode = () => vscode.commands.executeCommand('mcshv.openByCode');
@@ -788,7 +791,7 @@ function fCreateProvider(context) {
     });
 
     panel.onDidDispose(() => {
-      if (fNavigateVisual === fNavigate) fNavigateVisual = null;   // no visual reuse target once closed
+      if (fNavigateVisual === fNavigate) { fNavigateVisual = null; fReloadVisual = null; }   // no visual reuse target once closed
       if (fMakeSectVisual === fMakeSect) fMakeSectVisual = null;
       oSetUriManaged.delete(sKey); oSetUriSaving.delete(sKey);
       oSetAddedKeys.forEach((k) => { oSetUriManaged.delete(k); oSetUriSaving.delete(k); }); // files we retargeted to while browsing
@@ -1030,7 +1033,7 @@ function fBuildShell(webview, url) {
   return `<!DOCTYPE html><html><head><meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; frame-src ${sFrameSrc}; style-src 'unsafe-inline'; script-src 'nonce-${sNonce}';">
 <style>
-  :root{--bar:#2d2d2d;--bar2:#3a3a3a;--line:#1a1a1a;--fg:#ddd;--accent:#2b6cb0}
+  :root{--bar:#2d2d2d;--bar2:#3a3a3a;--line:#1a1a1a;--fg:#ddd;--accent:#2b6cb0;--menu:#2b313c;--menuLine:#7a8496;--menuSep:#545c6c}
   html,body{margin:0 !important;padding:0 !important;height:100%;background:#1e1e1e;overflow:hidden;font:13px system-ui}
   #idChrome{display:flex;align-items:stretch;gap:1px;height:26px;padding:2px 0;background:var(--bar);border-bottom:1px solid var(--line);box-sizing:border-box}
   .clsNavbtn{width:22px;border:0;border-radius:4px;background:transparent;color:var(--fg);cursor:pointer;font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center}
@@ -1040,16 +1043,16 @@ function fBuildShell(webview, url) {
   #idUrl{flex:1 1 auto;min-width:120px;align-self:stretch;box-sizing:border-box;border:1px solid var(--line);border-radius:4px;background:#1e1e1e;color:var(--fg);padding:0 8px;font:12px ui-monospace,monospace;outline:none}
   #idUrl:focus{border-color:var(--accent)}
   #idMenuWrap{position:relative;display:flex}
-  #idMenu{position:absolute;left:0;top:calc(100% + 2px);width:max-content;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none;z-index:20}
+  #idMenu{position:absolute;left:0;top:calc(100% + 2px);width:max-content;background:var(--menu);border:1px solid var(--menuLine);border-radius:6px;box-shadow:0 6px 24px rgba(0,0,0,.75);padding:4px;display:none;z-index:20}
   #idMenu.clsOpen{display:block}
   .clsGrp{font:600 10px system-ui;text-transform:uppercase;letter-spacing:.04em;opacity:.55;padding:6px 10px 2px}
   .clsItem{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:2px 10px;border-radius:4px;color:var(--fg);cursor:pointer;white-space:nowrap}
   .clsItem:hover{background:var(--accent);color:#fff}
-  .clsItem .clsKbd{opacity:.5;font:11px ui-monospace,monospace;white-space:nowrap;flex:none}
+  .clsItem .clsKbd{opacity:.65;font:11px ui-monospace,monospace;white-space:nowrap;flex:none}
   .clsItem.clsHasSub>.clsCaret{opacity:.6}
-  .clsSubmenu{position:absolute;left:100%;top:-5px;width:max-content;background:#252526;border:1px solid var(--line);border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.5);padding:4px;display:none}
+  .clsSubmenu{position:absolute;left:100%;top:-5px;width:max-content;background:var(--menu);border:1px solid var(--menuLine);border-radius:6px;box-shadow:0 6px 24px rgba(0,0,0,.75);padding:4px;display:none}
   .clsItem.clsHasSub:hover>.clsSubmenu{display:block}
-  .clsSep{height:1px;background:var(--line);margin:4px 2px}
+  .clsSep{height:1px;background:var(--menuSep);margin:4px 2px}
   #idStatus{position:absolute;left:8px;bottom:6px;font:11px system-ui;color:#bbb;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:10px;z-index:15;pointer-events:none;opacity:0;transition:opacity .2s}
   #idStatus.clsShow{opacity:1}
   #idHint{position:absolute;left:0;right:0;bottom:0;font:12px system-ui;color:#eee;background:#5a1e1e;padding:8px 12px;display:none;z-index:16}
@@ -2034,8 +2037,9 @@ async function fRunInherit(sOpIn, oDocIn, nOffIn, bVisualIn = false) {
   if (sAnswer !== sYes) return;
   const oOut = await fRunInheritEdit(sFile, ['--op', sOpIn, ...aArgId, ...aArgOp]);
   if (!oOut.bOk) return fWarn(oOut.sWhy);
-  // specialize: to the-new section
+  // specialize: to the-new section (a-load shows the-edit); else the-visual reloads: the-files changed on disk
   if (sOpIn === 'specialize' && oOut.sId) await fGo(oOut.sPath, oOut.sId);
+  else if (fReloadVisual) fReloadVisual();
   const nFile = new Set((oOut.aLine || []).map((sL) => (sL.match(/\s(Mcsh\w+)[: ]/) || [])[1]).filter(Boolean)).size;
   const sOpen = 'Open the list';
   const sDone = await vscode.window.showInformationMessage(`${sLabel}: ${(oOut.aLine || []).length} changes in ${nFile} files (inheritEdit.txt)`, sOpen);
