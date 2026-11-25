@@ -432,6 +432,8 @@ export function fInitMcshv_bridge() {
     }
   }
   var sHashToc = '';
+  // a-#hash change WITHOUT a-load (a-go to the-same file): the-toc follows too
+  window.addEventListener('hashchange', function () { try { fScrollHash(); } catch (e) {} });
   // Decide ONCE per load where to land, then re-apply it a few times because the
   // font-scale (0/250/800ms) and split-fix reflow the page after the first pass:
   //  - 'anchor' : structural/Save reload → the edited line (fSaveState wrote it). Wins over #hash.
