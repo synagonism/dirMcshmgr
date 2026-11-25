@@ -1053,16 +1053,6 @@ function fBuildShell(webview, url) {
       </div>
       <div class="clsItem clsHasSub">edit<span class="clsCaret">&#9656;</span>
         <div class="clsSubmenu">
-          <div class="clsItem clsHasSub">character<span class="clsCaret">&#9656;</span>
-            <div class="clsSubmenu">
-              <div class="clsItem" data-cmd="cmdCharArrow1">arrow 1 &#11106;<span class="clsKbd">Ctrl+Alt+C A 1</span></div>
-              <div class="clsItem" data-cmd="cmdCharArrow2">arrow 2 &#8658;<span class="clsKbd">Ctrl+Alt+C A 2</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlGt">html &amp;gt;<span class="clsKbd">Ctrl+Alt+C H G</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
-              <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
-              <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">Ctrl+Alt+C P M</span></div>
-            </div>
-          </div>
           <div class="clsItem clsHasSub">insert<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
               <div class="clsItem clsHasSub">para<span class="clsCaret">&#9656;</span>
@@ -1075,6 +1065,16 @@ function fBuildShell(webview, url) {
                   <div class="clsItem" title="the GENERIC-SPECIFIC-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeGenSpe">tree-gen-spe<span class="clsKbd">Ctrl+Alt+P T G</span></div>
                   <div class="clsItem" title="the WHOLE-PART-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeWholePart">tree-whole-part<span class="clsKbd">Ctrl+Alt+P T W</span></div>
                   <div class="clsItem" title="the PARENT-CHILD-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeParentChild">tree-parent-child<span class="clsKbd">Ctrl+Alt+P T P</span></div>
+                </div>
+              </div>
+              <div class="clsItem clsHasSub">character<span class="clsCaret">&#9656;</span>
+                <div class="clsSubmenu">
+                  <div class="clsItem" data-cmd="cmdCharArrow1">arrow 1 &#11106;<span class="clsKbd">Ctrl+Alt+C A 1</span></div>
+                  <div class="clsItem" data-cmd="cmdCharArrow2">arrow 2 &#8658;<span class="clsKbd">Ctrl+Alt+C A 2</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlGt">html &amp;gt;<span class="clsKbd">Ctrl+Alt+C H G</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlLt">html &amp;lt;<span class="clsKbd">Ctrl+Alt+C H L</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHtmlNbsp">html &amp;nbsp;<span class="clsKbd">Ctrl+Alt+C H S</span></div>
+                  <div class="clsItem" data-cmd="cmdCharHitpMain">hitP Main !&#8658;<span class="clsKbd">Ctrl+Alt+C P M</span></div>
                 </div>
               </div>
             </div>

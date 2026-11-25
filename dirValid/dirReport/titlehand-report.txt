@@ -1,0 +1,71 @@
+INH-TITLEHAND: the 37 numbered attributes whose title-name needs a hand — {2026-11-25}
+source: node dirValid/inheritMcsh.mjs C:/dirNodews/dirMcsh (dirValid/inheritMcsh.txt, === INH-TITLEHAND)
+rule: a numbered attribute "NN_x of M" has its title as name "M'NN_x" (--fix-name writes it),
+  only when x and M are names (no space, "(", ")", "'", "!", ...).
+
+=== A. "NN_output_(logoview) of X": a "_(...)" part glued to the attribute word (13)
+  why: "output_(logoview)" with "_(" is NOT a name; the form "05_output (logoview) of X" (space before "(") is:
+    the "(logoview)" then is a new name and the attribute is "output of X" (like "04_input (inptview) of X").
+  fix: "05_output_(logoview)" → "05_output (logoview)"; then --fix-name writes X'05_output.
+  McshLag000037:2590  "05_output_(logoview) of Hindlago"
+  McshLag000037:4776  "05_output_(logoview) of Urdulago"
+  McshStn000034:354  "05_output_(logoview) of Vnmalago"
+  McshStn000035:201  "05_output_(logoview) of lagoItln"
+  McshStn000037:250  "05_output_(logoview) of Fraclago"
+  McshStn000038:251  "05_output_(logoview) of Sbullago"
+  McshStn000039:251  "05_output_(logoview) of Sqiplago"
+  McshStn000040:242  "05_output_(logoview) of Smkdlago"
+  McshStn000041:260  "05_output_(logoview) of Sslvlago"
+  McshStn000043:242  "05_output_(logoview) of Sruslago"
+  McshStn000044:242  "05_output_(logoview) of Romnlago"
+  McshStn000048:265  "05_output_(logoview) of Jpnslago"
+  McshStn000050:234  "05_output_(logoview) of Khmrlago"
+
+=== B. "-(...)" glued with a hyphen (4)
+  fix: "x-(y)" → "x (y)" (a space): the attribute is "x of M", the "(y)" a new name.
+  McshLag000008:116  "05_output-(text-view) of Alfalago"
+  McshLag000008:614  "17_mapping-unit-(text-name) of AlfaviewText"
+  McshLag000009:4190  "17_mapping-unit-(speech-name) of SpchviewSpeech"
+  McshTchInf000035:71  "05_output-doc(webpage) of Htmllago"     ("output-doc (webpage)"?)
+
+=== C. "G'x of M": an attribute of an attribute in the title (8)
+  why: "Srcdalgo'unit" has "'": the title says x is the attribute "unit" of Srcdalgo, NOT a name x of Srcdlago.
+  fix: by your choice:
+    - "16_node of Srcdlago" (the attribute of the language), with the name Srcdalgo'node kept as an other name; or
+    - put it under the algo (its output) section as "node of Srcdalgo".
+  McshTchInf000006:2475  "16_Srcdalgo'node of Srcdlago"
+  McshTchInf000006:2552  "17_Srcdalgo'unit of Srcdlago"
+  McshTchInf000010:7377  "16_Jsgnalgo'UNIT of Jsgnlago"
+  McshTchInf000030:2737  "16_algo'node of Rustlago"
+  McshTchInf000030:2881  "17_algo'unit of Rustlago"
+  McshTchInf000030:3060  "18_algo'word of Rustlago"
+  McshTchInf000030:4039  "19_algo'section of Rustlago"
+  McshTchInf000031:2787  "17_algo'unit of Cppzlago"
+
+=== D. numbered lists inside the title (4)
+  why: "01-02-03) front-central-back|horizontal-1-2-3" has ")" and "|": NOT a name.
+  fix: a short word as title, the list into the description, eg "11_horizontal (front-central-back) of HnmdphnmVowl".
+  McshLag000009:908  "11_01-02-03) front-central-back|horizontal-1-2-3 of HnmdphnmVowl"
+  McshLag000009:935  "12_04-05-06) closed-mid-opened|vertical of HnmdphnmVowl"
+  McshLag000009:969  "13_07-08) unround-round-1-2 of HnmdphnmVowl"
+  McshLag000009:1032  "14_11-12) short-long of HnmdphnmVowl"
+
+=== E. "x_(N_y)" a format note in the title (4)
+  why: "docnbr_(4_digits)" glued "_(": NOT a name.
+  fix: "04_docnbr (4_digits) of Celex_nbr" (a space), or "04_docnbr of Celex_nbr" with "4 digits" in the description.
+  McshStnlaw000003:763  "01_sector_(1_digit|letter) of Celex_nbr"
+  McshStnlaw000003:792  "02_year_(4_digits) of Celex_nbr"
+  McshStnlaw000003:809  "03_doctype_(1|2_letters) of Celex_nbr"
+  McshStnlaw000003:842  "04_docnbr_(4_digits) of Celex_nbr"
+
+=== F. the main-name is NOT in this name:: (3)
+  why: its names point "!⇒Main" but there is no line "Main!=..." (or "Main,") in the same name::.
+  fix: add "* McshEngl.Main!=M'NN_x," (the main-name line), or point the names to the main that is there.
+  McshHlth000011:570  "09_worker of disease"            (Dissworker)
+  McshTchInf000006:75  "04_input|archetype of Prgmlago"  (Pgmlarcho; also "input|archetype" has "|")
+  McshTchInf000039:11061  "04_input of Owlzlago"        (Owlzarcho)
+
+=== G. no name:: paragraph (1)
+  why: "(link)" in the title text, NOT a link-stub (no <a> in the heading).
+  fix: make "(link)" a real link to its target, or add a name:: paragraph.
+  McshOgm000010:68  "16_health of OgsmPlant (link)"

@@ -51,6 +51,11 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-24-1.2026-11-25: a-title note "x (4_digits) of M" (a-space, then any (…)) is dropped like a-new name',
+    'inheritMcsh.mjs.0-24-0.2026-11-25: INH-OWNNUM: the-own numbers run WITHOUT gaps from the-chain last + 1, in their order (inner gaps and twice-given numbers too)',
+    'inheritMcsh.mjs.0-23-4.2026-11-25: MvrwGstr03 reports INH-GENDUP (two attributes with the-same NN_ in a-concept)',
+    'inheritMcsh.mjs.0-23-3.2026-11-25: --fix-num: a-concept with ONE colliding new number waits whole (no half-done shift)',
+    'inheritMcsh.mjs.0-23-2.2026-11-25: INH-OWNNONUM numbers come after the-own numbers AS SHIFTED (02_x 03_y + z left 03_x 03_y)',
     'inheritMcsh.mjs.0-23-1.2026-11-22: own numbering (NONUM by hand) only when a-number collides with the-chain, NOT for own numbers after it',
     'inheritMcsh.mjs.0-23-0.2026-11-22: --fix-nonum: ONLY INH-NONUM gets the-NN_ of its generic-attribute (NOT OWNNONUM)',
     'inheritMcsh.mjs.0-22-0.2026-11-20: MISC-ATTRIBUTE (or MISC) of X and the-attributes inside it get NO number (like evoluting): no NONUM, OWNNONUM, OWNNUM, no shift',
@@ -87,8 +92,9 @@ const
   rAttrNoNum = /^(info[-_ ]?resource|doing|evoluting|misc([-_ ]?attribute)?)$/i,
   // the-sections whose attributes inside get NO number either
   rAttrNoNumInside = /^(evoluting|misc([-_ ]?attribute)?)$/i,
-  // a-new name N in a-title "x (N) of M": the-attribute is "x of M" (" (" + a-letter; "03_doctype_(1|2_letters)" is NOT one)
-  rNewNameTitle = /\s+\([A-Za-zͰ-Ͽ][^\s()]*\)/g,
+  // a-new name or a-note N in a-title "x (N) of M": the-attribute is "x of M" (a-space before "(";
+  //   "03_doctype (1|2_letters)" too; glued "03_doctype_(1|2_letters)" is NOT one)
+  rNewNameTitle = /\s+\([^\s()]+\)/g,
   // a-heading of a-section, first in its own html
   rHeading = /<h([1-6])\b[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/,
   // a-paragraph with its id
@@ -477,8 +483,6 @@ function fCheck(aoFileIn, nLocalMinIn) {
     // the-NNs the-specific already uses: a-new NN_ must NOT repeat one
     const oNumTaken = {};
     for (const oC of oNode.aoChild) if (oC.bAttr && oC.sNum) oNumTaken[oC.sNum] = oC;
-    // the-last number used: the-chain's and the-specific's own; a-new own number comes after it
-    let nNumOwnNext = Math.max(nNumLast, ...Object.keys(oNumTaken).map(Number));
     // own numbering: a-numbered attribute NOT as the-generic numbers it (ChmcElry 01..12).
     //   then ONLY its own numbers count: its unnumbered attributes (info-resource, DOING,
     //   evoluting at the-end) get NO generic NN and NO order key.
@@ -489,7 +493,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
       return oM ? oM.oGenAttr.sNum !== oC.sNum : Number(oC.sNum) <= nNumLast;
     });
     // the-own numbered attributes; those NOT after the-chain's last number (INH-OWNNUM)
-    const aoOwnNum = [], aoOwnNumIssue = [];
+    const aoOwnNum = [], aoOwnNoNum = [];
     for (const oAttr of oNode.aoChild) {
       if (!oAttr.bAttr || oAttr.bTree) continue;
       // MISC-ATTRIBUTE: the-place of the-attributes that get NO number, itself too
@@ -500,17 +504,12 @@ function fCheck(aoFileIn, nLocalMinIn) {
         if (oAttr.sNum) {
           // an-own attribute is numbered AFTER the-last number of the-inherited-attr-chain
           aoOwnNum.push(oAttr);
-          if (Number(oAttr.sNum) <= nNumLast) aoOwnNumIssue.push({ oAttr, sNumLast: String(nNumLast).padStart(2, '0'),
-            sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr), sKeyGen: oSpaceLast.oGenAttr.sKey });
           aoOrder.push({ oAttr, sNum: oAttr.sNum }); continue;   // own number: the-author decided
         }
         // an-own attribute without number gets the-next number AFTER the-chain and the-own numbers;
         //   NOT the-standard end-sections info-resource, DOING, evoluting
-        if (!rAttrNoNum.test(oAttr.sAttrWord.trim())) {
-          const sNumNew = String(++nNumOwnNext).padStart(2, '0');
-          ooIssue['INH-OWNNONUM'].push({ oAttr, sNumNew, sNumLast: String(nNumLast).padStart(2, '0'),
-            sLabel: oSpaceLast ? fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) : '' });
-        }
+        //   its number is given below, AFTER the-own numbers are shifted (INH-OWNNUM)
+        if (!rAttrNoNum.test(oAttr.sAttrWord.trim())) aoOwnNoNum.push(oAttr);
         const sKeyLocal = oGenNum.sKey + '|' + fNormAttr(oAttr.sAttrWord);
         (oCountLocal[sKeyLocal] ??= { oGen: oGenNum, sAttr: fNormAttr(oAttr.sAttrWord), aoAttr: [] })
           .aoAttr.push(oAttr);
@@ -534,25 +533,31 @@ function fCheck(aoFileIn, nLocalMinIn) {
       // a-taken NN will NOT be its number: no key, it stays where it is
       if (!oIssue.sTaken && !oIssue.bOwn) aoOrder.push({ oAttr, sNum: oAttr.sNum ?? oGenAttr.sNum });
     }
-    // INH-OWNNUM: ALL own numbers of the-specific shift by the-same amount, so their order stays:
-    //   the-smallest becomes the-chain's last + 1 (06_input 07_output .. 10_method, last 07 → 08 .. 12)
-    // a-GAP is an-issue too: the-own numbers start right after the-chain (last 05, 08_input → 06_input)
-    if (!aoOwnNumIssue.length && aoOwnNum.length && oSpaceLast) {
-      const nMin = Math.min(...aoOwnNum.map(oA => Number(oA.sNum)));
-      if (nMin > nNumLast + 1) aoOwnNumIssue.push({ oAttr: aoOwnNum.find(oA => Number(oA.sNum) === nMin),
-        sNumLast: String(nNumLast).padStart(2, '0'), sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr),
-        sKeyGen: oSpaceLast.oGenAttr.sKey, bGap: true });
-    }
-    if (aoOwnNumIssue.length) {
-      const nShift = nNumLast + 1 - Math.min(...aoOwnNum.map(oA => Number(oA.sNum)));
-      const aoShift = aoOwnNum.map(oA => ({ oAttr: oA, sNumNew: String(Number(oA.sNum) + nShift).padStart(2, '0'),
-        sLabel: aoOwnNumIssue[0].sLabel, sKeyGen: aoOwnNumIssue[0].sKeyGen }));
-      for (const oIssue of aoOwnNumIssue) {
-        oIssue.sNumNew = aoShift.find(oS => oS.oAttr === oIssue.oAttr).sNumNew;
-        oIssue.nShift = nShift;
-        oIssue.aoShift = aoShift;
-        ooIssue['INH-OWNNUM'].push(oIssue);
+    // INH-OWNNUM: the-own numbers run WITHOUT gaps right after the-chain's last number, in their
+    //   order (number, then place): last 02, 14_x 15_y 04_z 12_w → 03_z 04_w 05_x 06_y. a-number before
+    //   the-last, a-gap at the-start or inside, a-twice-given number are-all fixed by the-same renumbering
+    if (aoOwnNum.length && oSpaceLast) {
+      const aoSorted = aoOwnNum.map((oA, nI) => ({ oA, nI }))
+        .sort((o1, o2) => Number(o1.oA.sNum) - Number(o2.oA.sNum) || o1.nI - o2.nI);
+      const aoShift = aoSorted.map(({ oA }, nI) => ({ oAttr: oA, sNumNew: String(nNumLast + 1 + nI).padStart(2, '0'),
+        sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr), sKeyGen: oSpaceLast.oGenAttr.sKey }));
+      const aoMove = aoShift.filter(oS => oS.sNumNew !== oS.oAttr.sNum);
+      const sRange = aoShift[0].sNumNew + '..' + aoShift[aoShift.length - 1].sNumNew;
+      for (const oS of aoMove) {
+        ooIssue['INH-OWNNUM'].push({ oAttr: oS.oAttr, sNumNew: oS.sNumNew, sNumLast: String(nNumLast).padStart(2, '0'),
+          sLabel: oS.sLabel, sKeyGen: oS.sKeyGen, bGap: Number(oS.oAttr.sNum) > nNumLast,
+          nShift: Number(oS.sNumNew) - Number(oS.oAttr.sNum), aoShift: aoMove, sRange });
       }
+    }
+    // INH-OWNNONUM: the-next numbers after the-chain and the-own numbers AS THEY WILL BE (renumbered):
+    //   numbered before the-shift, 02_x 03_y + unnumbered z gave z 04_ while y shifted to 04_ too,
+    //   the-collision skipped y and left 03_x 03_y (model {2026-11-25})
+    let nNumOwnNext = Math.max(nNumLast,
+      ...(oSpaceLast ? [nNumLast + aoOwnNum.length] : aoOwnNum.map(oA => Number(oA.sNum))),
+      ...Object.entries(oNumTaken).filter(([, oA]) => !aoOwnNum.includes(oA)).map(([sN]) => Number(sN)));
+    for (const oAttr of aoOwnNoNum) {
+      ooIssue['INH-OWNNONUM'].push({ oAttr, sNumNew: String(++nNumOwnNext).padStart(2, '0'), sNumLast: String(nNumLast).padStart(2, '0'),
+        sLabel: oSpaceLast ? fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) : '' });
     }
     for (let nI = 1; nI < aoOrder.length; nI++) {
       if (aoOrder[nI].sNum < aoOrder[nI - 1].sNum) {
@@ -798,11 +803,13 @@ function fFixableNum(aoIssueIn) {
     const aoSib = aoIssue[0].oAttr.oWholeNode?.aoChild ?? [];
     const oSetKeep = new Set(aoSib.filter(oC => oC.bAttr && oC.sNum && !oSetMove.has(oC)).map(oC => oC.sNum));
     const oSetNew = new Set();
+    // ONE collision and the-concept waits WHOLE: a-half-done shift left two equal numbers (model 03_ 03_)
+    let bCollide = false;
     for (const oIssue of aoIssue) {
-      if (oSetKeep.has(oIssue.sNumNew) || oSetNew.has(oIssue.sNumNew)) continue;
+      if (oSetKeep.has(oIssue.sNumNew) || oSetNew.has(oIssue.sNumNew)) { bCollide = true; break; }
       oSetNew.add(oIssue.sNumNew);
-      aoOut.push(oIssue);
     }
+    if (!bCollide) aoOut.push(...aoIssue);
   }
   return aoOut;
 }
@@ -1462,7 +1469,10 @@ function fFindInheritAttrRead(aPathIn) {
   for (const oI of ooIssue['INH-WRONGNUM']) fPush(oI.oAttr,
     `inherited_attr: "${oI.oAttr.sTitle}" inherits ${oI.sLabel}: its name can change, NOT its number ${oI.sNumNew}_` + fFixNum(oI));
   for (const oI of ooIssue['INH-OWNNUM']) fPush(oI.oAttr,
-    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered ${oI.bGap ? 'RIGHT ' : ''}AFTER the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel}): it gets ${oI.sNumNew}_, all own numbers ${oI.nShift > 0 ? '+' : ''}${oI.nShift}` + fFixNum(oI));
+    `inherited_attr: own attribute "${oI.oAttr.sTitle}" must be numbered RIGHT AFTER (no gaps) the-last number ${oI.sNumLast}_ of its inherited-attr-chain (${oI.sLabel}): it gets ${oI.sNumNew}_, the-own numbers become ${oI.sRange}` + fFixNum(oI));
+  // two attributes with the-same NN_ in one concept: by hand (the-fix waits)
+  for (const oI of ooIssue['INH-GENDUP']) fPush(oI.oAttr,
+    `inherited_attr: "${oI.oAttr.sTitle}" has the-same number as another attribute: ${oI.sLabel}; renumber by hand`);
   for (const oI of ooIssue['INH-LAST']) fPush(oI.oAttr,
     `inherited_attr: generic "${oI.oAttr.sTitle}" ` + (oI.sLastNew
       ? `has NOT the-name "${oI.sLastNew}" (its specifics number their own attributes after it)`
