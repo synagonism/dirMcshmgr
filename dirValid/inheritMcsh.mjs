@@ -611,7 +611,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
     }
   }
   return { ooIssue, oCountRefine, nSpecific, nAttrSpec, nMatch, nNode: aoNodeAll.length,
-    fFindChain, oNodeByMain, oNodeByName };
+    fFindChain, fFindNumSpace, fMatchAttr, oNodeByMain, oNodeByName };
 }
 
 /**
@@ -1487,7 +1487,9 @@ function fFindInheritAttrRead(aPathIn) {
   return aoOut;
 }
 
-export { fFindInheritAttr };
+// fFindInheritAttr for structuralMcsh.js; the-rest for inheritEdit.mjs (edit/inheritance of mcsh-visual)
+export { fFindInheritAttr, fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, fApplyLast,
+  fCheckTitleName, fApplyTitleName, fFindBlock, fNormAttr };
 
 // run as a-program only, NOT when imported by structuralMcsh.js
 if (process.argv[1] && moPath.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

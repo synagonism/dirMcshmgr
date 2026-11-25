@@ -1,0 +1,338 @@
+#!/usr/bin/env node
+/*
+ * inheritEdit.mjs - the-edits of edit/inheritance (mcsh-visual): renumber, generalize, show-inherited
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2026 Kaseluris.Nikos.1959 (humnSngu)
+ * kaseluris.nikos@gmail.com
+ * https://synagonism.net/
+ *
+ * DOING: it uses the-inheritance model of inheritMcsh.mjs (the-generic chains, the-number space,
+ *   the-matching of attributes) and its fixes (titles, followers, order, names, NN_last):
+ *   - show: the-numbered attributes a-concept inherits, and which it writes itself;
+ *   - renumber: "05_x of M" → 03: x takes 03, the-old 03 04 shift to 04 05 (a-move), the-sections
+ *     go in the-new order, the-specifics that inherit these numbers follow;
+ *   - generalize: "x of S" is COPIED to a-generic G of S as "NN_x of G" (the-next number of G);
+ *     S keeps its section, numbered NN_ (its own refinement); the-own numbers of G's specifics shift.
+ *   The-plan-… ops write nothing: they say what the-edit will do.
+ * INPUT: <sNameDir> --op show|plan-renumber|renumber|plan-generalize|generalize --file McshDir000000
+ *   --id idX (a-section or an-element of it) [--to NN] [--gen file#id]
+ * OUTPUT: one JSON line on stdout { bOk, sWhy?, … }; the-edits also in dirValid/inheritEdit.txt.
+ */
+
+import moFs from 'fs'
+import moPath from 'path'
+import { fileURLToPath } from 'url'
+import { fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, fApplyLast,
+  fCheckTitleName, fApplyTitleName, fFindBlock } from './inheritMcsh.mjs'
+
+const
+  aVersion = [
+    'inheritEdit.mjs.0-1-0.2026-11-25: creation: show, renumber (a-move, specifics follow), generalize (a-copy to the-generic)'
+  ],
+  sDirScript = moPath.dirname(fileURLToPath(import.meta.url))
+
+const fNum2 = nIn => String(nIn).padStart(2, '0');
+// a-formal-name has "_" for space and hyphen (MvrwName01_formal), NOT inside {…} (…)
+const fFormal = sIn => String(sIn).trim().split(/(\{[^}]*\}|\([^)]*\))/)
+  .map((sPart, nI) => nI % 2 ? sPart : sPart.replace(/&#32;|\s+/g, '_').replace(/-/g, '_')).join('');
+const fEsc = sIn => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/** OUTPUT: { aoFile, oRes, ooFile } the-whole worldview read and checked. */
+function fRead(sRootIn) {
+  const aoFile = fFindFile_all(sRootIn).map(fReadFile);
+  const oRes = fCheck(aoFile, 3);
+  const ooFile = {};
+  for (const oFile of aoFile) ooFile[oFile.sNameShort] = oFile;
+  return { aoFile, oRes, ooFile };
+}
+
+/** OUTPUT: the-node of a-section (or of the-section of an-element) of a-file, or null. */
+function fFindNode(ooFileIn, sFileIn, sIdIn) {
+  const oFile = ooFileIn[String(sFileIn).replace(/\.last\.html$/, '')];
+  if (!oFile) return null;
+  const sIdSect = oFile.oNodeById[sIdIn] ? sIdIn : oFile.oSectByElmtId[sIdIn];
+  return sIdSect ? oFile.oNodeById[sIdSect] : null;
+}
+
+/** OUTPUT: the-attribute section at a-node: itself or its innermost whole that is one (NOT a-tree). */
+function fFindAttr(oNodeIn) {
+  for (let oN = oNodeIn, nI = 0; oN && nI < 30; oN = oN.oWholeNode, nI++) {
+    if (oN.bAttr && !oN.bTree) return oN;
+  }
+  return null;
+}
+
+/** OUTPUT: the-concept at a-node: a-tree → its whole; an-attribute → its whole (the-concept it describes). */
+function fFindConcept(oNodeIn) {
+  let oN = oNodeIn;
+  while (oN && oN.bTree && oN.oWholeNode) oN = oN.oWholeNode;
+  if (oN && oN.bAttr && oN.oWholeNode) oN = oN.oWholeNode;
+  return oN;
+}
+
+const fLabelNode = oN => `${oN.sNameShort}:${oN.nLine} "${oN.sTitle}"`;
+const fNumbered = oC => oC.bAttr && oC.sNum && !oC.bTree;
+
+// ── show ─────────────────────────────────────────────────────────────────────
+function fShow(oW, oNodeIn) {
+  const oC = fFindConcept(oNodeIn);
+  const aoChain = oW.oRes.fFindChain(oC);
+  const aoSpace = oW.oRes.fFindNumSpace(aoChain);
+  const fPath = oN => oW.ooFile[oN.sNameShort].sPath;
+  const oSetOwnMatched = new Set();
+  const aoItem = aoSpace.map(({ oGen, oGenAttr }) => {
+    const oOwn = oC.aoChild.find(oA => oA.bAttr && !oA.bTree && oW.oRes.fMatchAttr(oA, [{ oGen, oGenAttr }]));
+    if (oOwn) oSetOwnMatched.add(oOwn);
+    return { sNum: oGenAttr.sNum, sWord: oGenAttr.sAttrWord, sGen: oGen.sMain || oGen.sTitle,
+      sPathGen: fPath(oGenAttr), sIdGen: oGenAttr.sId,
+      sPathOwn: oOwn ? fPath(oOwn) : '', sIdOwn: oOwn ? oOwn.sId : '', sTitleOwn: oOwn ? oOwn.sTitle : '' };
+  });
+  // the-own attributes of the-concept, NOT inherited
+  for (const oA of oC.aoChild) {
+    if (!oA.bAttr || oA.bTree || oSetOwnMatched.has(oA)) continue;
+    aoItem.push({ sNum: oA.sNum ?? '', sWord: oA.sAttrWord, sGen: '', sPathGen: '', sIdGen: '',
+      sPathOwn: fPath(oA), sIdOwn: oA.sId, sTitleOwn: oA.sTitle });
+  }
+  aoItem.sort((oA, oB) => (oA.sNum || '99') .localeCompare(oB.sNum || '99'));
+  return { bOk: true, sConcept: oC.sMain || oC.sTitle, aChain: aoChain.map(oG => oG.sMain || oG.sTitle), aoItem };
+}
+
+// ── renumber ─────────────────────────────────────────────────────────────────
+/**
+ * OUTPUT: { oAttr, oConcept, aoShift [{oAttr, sNumNew}] } | { sWhy }.
+ *   ONLY the-own numbers of a-concept move (after its chain's last): an-inherited number is its generic's.
+ */
+function fPlanRenumber(oW, oNodeIn, sToIn) {
+  const oAttr = fFindAttr(oNodeIn);
+  if (!oAttr || !oAttr.sNum) return { sWhy: 'no numbered attribute "NN_x of M" here' };
+  const oC = oAttr.oWholeNode;
+  const aoSpace = oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oC));
+  const oInh = oW.oRes.fMatchAttr(oAttr, aoSpace);
+  if (oInh) return { sWhy: `"${oAttr.sTitle}" is inherited: its number is of ${oInh.oGen.sMain || oInh.oGen.sTitle}'${oInh.oGenAttr.sNum}_${oInh.oGenAttr.sAttrWord} (${oInh.oGenAttr.sNameShort}): renumber it there` };
+  const nChainLast = Math.max(0, ...aoSpace.map(oS => Number(oS.oGenAttr.sNum)));
+  // the-own numbered attributes: NOT the-inherited ones
+  const aoNum = oC.aoChild.filter(oA => fNumbered(oA) && !oW.oRes.fMatchAttr(oA, aoSpace));
+  const nMax = Math.max(...aoNum.map(oA => Number(oA.sNum)));
+  const nFrom = Number(oAttr.sNum), nTo = Number(sToIn);
+  if (!(nTo > nChainLast && nTo <= Math.max(nMax, 1))) {
+    return { sWhy: `the-number must be ${fNum2(nChainLast + 1)}..${fNum2(nMax)}` + (nChainLast ? ` (01..${fNum2(nChainLast)} are inherited)` : '') };
+  }
+  if (nTo === nFrom) return { sWhy: `"${oAttr.sTitle}" has ${fNum2(nTo)} already` };
+  const aoShift = [{ oAttr, sNumNew: fNum2(nTo) }];
+  for (const oA of aoNum) {
+    if (oA === oAttr) continue;
+    const nN = Number(oA.sNum);
+    if (nTo < nFrom && nN >= nTo && nN < nFrom) aoShift.push({ oAttr: oA, sNumNew: fNum2(nN + 1) });
+    if (nTo > nFrom && nN > nFrom && nN <= nTo) aoShift.push({ oAttr: oA, sNumNew: fNum2(nN - 1) });
+  }
+  return { oAttr, oConcept: oC, aoShift };
+}
+
+/**
+ * DOING: after the-first titles are written (oMovedIn: file#id → old NN), the-followers pass after pass:
+ *   an-attribute that had the-old number of a-moved generic-attribute (WRONGNUM), the-own numbers
+ *   that collide now (OWNNUM), and with fExtraIn more; then the-order, the-names, NN_last of the-touched.
+ * OUTPUT: the-change lines.
+ */
+function fFollow(sRootIn, oMovedIn, oSetTouchIn, fExtraIn = () => []) {
+  const aLine = [];
+  let oW = fRead(sRootIn);
+  for (let nPass = 0; nPass < 8; nPass++) {
+    const aoFollow = oW.oRes.ooIssue['INH-WRONGNUM'].filter(oI => oMovedIn.get(oI.sKeyGen) === oI.oAttr.sNum);
+    const aoFollowOwn = [...new Set(oW.oRes.ooIssue['INH-OWNNUM'].filter(oI => oMovedIn.has(oI.sKeyGen)).flatMap(oI => oI.aoShift))];
+    const aoFix = fFixableNum([...aoFollow, ...aoFollowOwn, ...fExtraIn(oW)]);
+    if (aoFix.length === 0) break;
+    for (const oI of aoFix) oMovedIn.set(oI.oAttr.sKey, oI.oAttr.sNum ?? '');
+    if (fApplyFix(oW.aoFile, aoFix) === 0) break;
+    for (const oI of aoFix.filter(oI2 => oI2.bApplied)) {
+      aLine.push(`FOLLOW  ${fLabelNode(oI.oAttr)} → ${oI.sNumNew}_`);
+      oSetTouchIn.add(oI.oAttr.sNameShort + '#' + oI.oAttr.sIdWhole);
+    }
+    oW = fRead(sRootIn);
+  }
+  // the-order of the-touched concepts
+  for (let nPass = 0; nPass < 5; nPass++) {
+    const aoDone = fApplyOrder(oW.aoFile, oW.oRes.ooIssue['INH-ORDER'].filter(oI => oSetTouchIn.has(oI.oAttr.sKey)));
+    if (aoDone.length === 0) break;
+    for (const oI of aoDone) aLine.push(`ORDER   ${fLabelNode(oI.oAttr)}: ${oI.sLabelNew}`);
+    oW = fRead(sRootIn);
+  }
+  // the-names of the-moved attributes: the-title X'NN_y as name, the-old numbers renamed
+  const { aoPlan } = fCheckTitleName(oW.aoFile, oN => oMovedIn.has(oN.sKey));
+  if (aoPlan.length) {
+    fApplyTitleName(aoPlan);
+    for (const oP of aoPlan) aLine.push(`NAME    ${fLabelNode(oP.oNode)}: ${oP.aChange.join('; ')}`);
+    oW = fRead(sRootIn);
+  }
+  // NN_last of the-touched concepts
+  const aoLast = oW.oRes.ooIssue['INH-LAST'].filter(oI => oSetTouchIn.has(oI.oAttr.sKey));
+  if (aoLast.length) {
+    fApplyLast(oW.aoFile, aoLast);
+    for (const oI of aoLast) aLine.push(`LAST    ${fLabelNode(oI.oAttr)}: ${oI.sLastNew}`);
+  }
+  return aLine;
+}
+
+function fRenumber(sRootIn, oW, oNodeIn, sToIn, bWriteIn) {
+  const oPlan = fPlanRenumber(oW, oNodeIn, sToIn);
+  if (oPlan.sWhy) return { bOk: false, sWhy: oPlan.sWhy };
+  const aChange = oPlan.aoShift.map(oS => `"${oS.oAttr.sTitle}" → ${oS.sNumNew}_`);
+  if (!bWriteIn) return { bOk: true, sConcept: oPlan.oConcept.sMain || oPlan.oConcept.sTitle, aChange };
+  const oMoved = new Map(oPlan.aoShift.map(oS => [oS.oAttr.sKey, oS.oAttr.sNum]));
+  const oSetTouch = new Set([oPlan.oConcept.sKey]);
+  fApplyFix(oW.aoFile, oPlan.aoShift);
+  const aLine = oPlan.aoShift.map(oS => `NUMBER  ${fLabelNode(oS.oAttr)} → ${oS.sNumNew}_`);
+  aLine.push(...fFollow(sRootIn, oMoved, oSetTouch));
+  return { bOk: true, aLine };
+}
+
+// ── generalize ───────────────────────────────────────────────────────────────
+/** OUTPUT: { oAttr, oSpec, oGen, sNum, aoGen } | { sWhy } | { aoGen } (more than one generic: choose). */
+function fPlanGeneralize(oW, oNodeIn, sGenIn) {
+  const oAttr = fFindAttr(oNodeIn);
+  if (!oAttr) return { sWhy: 'no attribute "x of S" here' };
+  const oSpec = oAttr.oWholeNode;
+  const aoGen = oSpec.aoGeneric.filter(oG => !oG.bTree);
+  if (aoGen.length === 0) return { sWhy: `"${oSpec.sMain || oSpec.sTitle}" has no generic` };
+  const oSpaceSpec = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oSpec)));
+  if (oSpaceSpec) return { sWhy: `"${oAttr.sTitle}" is inherited already: ${oSpaceSpec.oGen.sMain}'${oSpaceSpec.oGenAttr.sNum}_${oSpaceSpec.oGenAttr.sAttrWord}` };
+  const oGen = sGenIn ? aoGen.find(oG => oG.sKey === sGenIn) : aoGen.length === 1 ? aoGen[0] : null;
+  if (!oGen) return { aoGen };
+  if (!oGen.sMain) return { sWhy: `the generic "${oGen.sTitle}" has no main-name` };
+  // the-next number of G: after its own numbers and its chain's
+  const nOwn = Math.max(0, ...oGen.aoChild.filter(fNumbered).map(oA => Number(oA.sNum)));
+  const nChain = Math.max(0, ...oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oGen)).map(oS => Number(oS.oGenAttr.sNum)));
+  return { oAttr, oSpec, oGen, sNum: fNum2(Math.max(nOwn, nChain) + 1) };
+}
+
+/**
+ * OUTPUT: the-id stem of a-concept's parts: its id, or for the-file concept (idOverview) the-common
+ *   start of its sub-section ids (idLOgsmsci, idLOgsmgrmr → idLOgsm).
+ */
+function fFindStem(oNodeIn) {
+  if (oNodeIn.sId !== 'idOverview') return oNodeIn.sId;
+  const aId = oNodeIn.aoChild.filter(oC => oC.bAttr && !oC.bTree).map(oC => oC.sId);
+  if (aId.length < 2) return 'id';
+  let sStem = aId[0];
+  for (const sId of aId) while (!sId.startsWith(sStem)) sStem = sStem.slice(0, -1);
+  return sStem.length > 2 ? sStem : 'id';
+}
+
+/** OUTPUT: the-text of the-copy of oAttrIn for G, and its section id. */
+function fBuildCopy(oW, oAttrIn, oGenIn, sNumIn) {
+  const oFileS = oW.ooFile[oAttrIn.sNameShort], oFileG = oW.ooFile[oGenIn.sNameShort];
+  const { nFrom, nTo } = fFindBlock(oFileS.sText, oAttrIn);
+  let sBlock = oFileS.sText.slice(nFrom, nTo);
+  // the-ids: the-stem of S → the-stem of G (idLOgsmsci → idRlnMpgsci), unique in G's file
+  const sIdS = fFindStem(oAttrIn.oWholeNode), sIdG = fFindStem(oGenIn);
+  const oMapId = new Map();
+  const oSetUsed = new Set(oFileG.oSetId);
+  for (const sId of oAttrIn.oSetIdElmt) {
+    let sNew = sId.startsWith(sIdS) ? sIdG + sId.slice(sIdS.length) : sIdG + sId.replace(/^id/, '');
+    while (oSetUsed.has(sNew)) sNew += 'G';
+    oSetUsed.add(sNew);
+    oMapId.set(sId, sNew);
+  }
+  sBlock = sBlock.replace(/\b(id="|href="#)([^"]+)"/g, (sAll, sPre, sId) => oMapId.has(sId) ? `${sPre}${oMapId.get(sId)}"` : sAll);
+  // a-link to the-rest of S's file, from G's file
+  if (oFileS !== oFileG) {
+    const sRel = moPath.relative(moPath.dirname(oFileG.sPath), oFileS.sPath).split(moPath.sep).join('/');
+    sBlock = sBlock.replace(/href="#([^"]+)"/g, (sAll, sId) => [...oMapId.values()].includes(sId) ? sAll : `href="${sRel}#${sId}"`);
+  }
+  // the-heading levels: the-attribute is one level under G
+  const nLevelG = Number((oFileG.sText.slice(oGenIn.nStart).match(/<h([1-6])\b/) ?? [])[1] ?? 1);
+  const nLevelA = Number((sBlock.match(/<h([1-6])\b/) ?? [])[1] ?? 2);
+  const nShift = nLevelG + 1 - nLevelA;
+  sBlock = sBlock.replace(/<(\/?)h([1-6])\b/g, (sAll, sSlash, sN) => `<${sSlash}h${Math.min(6, Math.max(1, Number(sN) + nShift))}`)
+    .replace(/(id="[^"]*H)([1-6])"/g, (sAll, sPre, sN) => `${sPre}${Math.min(6, Math.max(1, Number(sN) + nShift))}"`);
+  // the-title "NN_x of G"; its names: G'NN_x, G'x (the-names of S's attribute stay with it)
+  const sWord = oAttrIn.sAttrWord.trim();
+  sBlock = sBlock.replace(/(<h[1-6]\b[^>]*>)[^\n]*/, `$1${sNumIn}_${sWord} of ${oGenIn.sMain}`);
+  const sGm = fFormal(oGenIn.sMain), sWm = fFormal(sWord);
+  sBlock = sBlock.replace(/(<p\b[^>]*>name::\n)((?:[ \t]*<br>[^\n]*\n)*)/, (sAll, sHead, sLines) => {
+    const sIndent = (sLines.match(/^([ \t]*)<br>/) ?? ['', '    '])[1];
+    return `${sHead}${sIndent}<br>* McshEngl.${sGm}'${sNumIn}_${sWm},\n${sIndent}<br>* McshEngl.${sGm}'${sWm},\n`;
+  });
+  const sIdSect = oMapId.get(oAttrIn.sId);
+  return { sBlock, sIdSect };
+}
+
+/** OUTPUT: the-offset in G's file where its new attribute goes: after its last numbered attribute. */
+function fFindPlaceInGen(oW, oGenIn) {
+  const oFileG = oW.ooFile[oGenIn.sNameShort];
+  const aoAttr = oGenIn.aoChild.filter(oA => oA.bAttr && !oA.bTree);
+  const aoNum = aoAttr.filter(oA => oA.sNum);
+  const oAfter = aoNum.length ? aoNum.reduce((oM, oA) => Number(oA.sNum) > Number(oM.sNum) ? oA : oM) : null;
+  if (oAfter) return fFindBlock(oFileG.sText, oAfter).nTo;
+  // no numbered attribute: before G's first sub-section, else before its </section>
+  if (oGenIn.aoChild.length) return fFindBlock(oFileG.sText, oGenIn.aoChild[0]).nFrom;
+  const nClose = oGenIn.nEnd - '</section>'.length;
+  return oFileG.sText.lastIndexOf('\n', nClose) + 1;
+}
+
+function fGeneralize(sRootIn, oW, oNodeIn, sGenIn, bWriteIn) {
+  const oPlan = fPlanGeneralize(oW, oNodeIn, sGenIn);
+  if (oPlan.sWhy) return { bOk: false, sWhy: oPlan.sWhy };
+  if (!oPlan.oGen) {
+    return { bOk: true, aoGen: oPlan.aoGen.map(oG => ({ sKey: oG.sKey, sMain: oG.sMain || oG.sTitle, sFile: oG.sNameShort })) };
+  }
+  const { oAttr, oSpec, oGen, sNum } = oPlan;
+  const sMainS = oSpec.sMain || oSpec.sTitle;
+  const aChange = [
+    `"${oAttr.sTitle}" is copied to ${oGen.sMain} (${oGen.sNameShort}) as "${sNum}_${oAttr.sAttrWord} of ${oGen.sMain}"`,
+    `${sMainS} keeps it, numbered ${sNum}_ (and every specific of ${oGen.sMain} with the same attribute)`,
+    `the own numbers ${sNum}.. of the specifics of ${oGen.sMain} shift up`];
+  if (!bWriteIn) return { bOk: true, sGen: oGen.sMain, sNum, aChange };
+  // 1. the-copy into G's file
+  const oFileG = oW.ooFile[oGen.sNameShort];
+  const { sBlock, sIdSect } = fBuildCopy(oW, oAttr, oGen, sNum);
+  const nAt = fFindPlaceInGen(oW, oGen);
+  moFs.writeFileSync(oFileG.sPath, oFileG.sText.slice(0, nAt) + sBlock + oFileG.sText.slice(nAt));
+  const sKeyNew = oGen.sNameShort + '#' + sIdSect;
+  const aLine = [`COPY    ${fLabelNode(oAttr)} → ${oGen.sNameShort} #${sIdSect} "${sNum}_${oAttr.sAttrWord} of ${oGen.sMain}"`];
+  // 2. the-specifics: their x gets NN_ (NONUM of the-new attribute), their own numbers shift (OWNNUM)
+  const oMoved = new Map([[sKeyNew, '']]);
+  // touched: G, S and every concept under G (their NN_last grows with G's)
+  const oSetTouch = new Set([oGen.sKey, oSpec.sKey]);
+  for (const oFile of oW.aoFile) for (const oN of oFile.aoNode) {
+    if (oN.aoGeneric.length && oW.oRes.fFindChain(oN).includes(oGen)) oSetTouch.add(oN.sKey);
+  }
+  const fExtra = oWNow => oWNow.oRes.ooIssue['INH-NONUM'].filter(oI => oI.sKeyGen === sKeyNew && !oI.bOwn);
+  aLine.push(...fFollow(sRootIn, oMoved, oSetTouch, fExtra));
+  return { bOk: true, aLine };
+}
+
+// ── main ─────────────────────────────────────────────────────────────────────
+function fMain() {
+  const aArg = process.argv.slice(2);
+  const fArg = sName => { const nI = aArg.indexOf(sName); return nI === -1 ? '' : String(aArg[nI + 1] ?? ''); };
+  const sRoot = aArg.find((sA, nI) => !sA.startsWith('--') && (nI === 0 || !aArg[nI - 1].startsWith('--')));
+  const sOp = fArg('--op');
+  if (!sRoot || !sOp) {
+    console.log('inheritEdit.mjs - ' + aVersion[0]);
+    console.log('USAGE: node dirValid/inheritEdit.mjs <sNameDir> --op show|plan-renumber|renumber|plan-generalize|generalize --file McshDir000000 --id idX [--to NN] [--gen file#id]');
+    process.exit(1);
+  }
+  const oW = fRead(sRoot);
+  const oNode = fFindNode(oW.ooFile, fArg('--file'), fArg('--id'));
+  let oOut;
+  if (!oNode) oOut = { bOk: false, sWhy: `no section #${fArg('--id')} in ${fArg('--file')}` };
+  else if (sOp === 'show') oOut = fShow(oW, oNode);
+  else if (sOp === 'plan-renumber' || sOp === 'renumber') oOut = fRenumber(sRoot, oW, oNode, fArg('--to'), sOp === 'renumber');
+  else if (sOp === 'plan-generalize' || sOp === 'generalize') oOut = fGeneralize(sRoot, oW, oNode, fArg('--gen'), sOp === 'generalize');
+  else oOut = { bOk: false, sWhy: 'unknown --op ' + sOp };
+  if (oOut.aLine) {
+    moFs.writeFileSync(moPath.join(sDirScript, 'inheritEdit.txt'),
+      `inheritEdit ${sOp} ${fArg('--file')}#${fArg('--id')}${fArg('--to') ? ' --to ' + fArg('--to') : ''}\n` +
+      oOut.aLine.map(sL => '  ' + sL).join('\n') + '\n');
+  }
+  process.stdout.write(JSON.stringify(oOut) + '\n');
+}
+
+try {
+  fMain();
+} catch (oErr) {
+  process.stdout.write(JSON.stringify({ bOk: false, sWhy: String(oErr && oErr.stack || oErr) }) + '\n');
+  process.exit(1);
+}

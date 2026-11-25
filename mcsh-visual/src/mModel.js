@@ -433,9 +433,18 @@ function fBuildTree(sTextIn, nOffIn, sKindIn, sDateIn, bAutoIn) {
   return { nAt, sInsert, nCursor: nEq + '<br>==='.length };
 }
 
+/** OUTPUT: the-id of the-innermost section open at nOffIn, or ''. */
+function fFindSectIdAt(sTextIn, nOffIn) {
+  const aoOpen = [];
+  for (const aM of sTextIn.slice(0, nOffIn).matchAll(/<section\b[^>]*\bid="([^"]+)"|<\/section>/g)) {
+    if (aM[1] !== undefined) aoOpen.push(aM[1]); else aoOpen.pop();
+  }
+  return aoOpen[aoOpen.length - 1] || '';
+}
+
 module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
   fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
-  fBuildParaDsnNam, fBuildTree,
+  fBuildParaDsnNam, fBuildTree, fFindSectIdAt,
 };

@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.10.1",
+  "version": "0.11.4",
   "date": "2026-11-22",
   "publisher": "synagonism",
   "private": true,
@@ -82,6 +82,21 @@
       {
         "command": "mcshv.insertTreeParentChild",
         "title": "insert-sect-tree-parent-child: before the cursor line, the PARENT-CHILD-TREE section of its concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhRenumber",
+        "title": "inheritance-renumber: the numbered attribute of the cursor gets another number, the others shift, its specifics follow",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhGeneralize",
+        "title": "inheritance-generalize: the attribute of the cursor is copied to a generic as NN_x of G",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhShow",
+        "title": "inheritance-show-inherited: the attributes the concept of the cursor inherits",
         "category": "Mcs"
       },
       {

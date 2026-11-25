@@ -315,6 +315,9 @@ function fActivate(context) {
   // Ctrl+Alt+V F F from a-source tab or the-visual's chrome: the-same as Valid → Validate-current.
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.insertParaDsnNam', fInsertParaDsnNam),
+    vscode.commands.registerCommand('mcshv.inhRenumber', () => fRunInheritSource('renumber')),
+    vscode.commands.registerCommand('mcshv.inhGeneralize', () => fRunInheritSource('generalize')),
+    vscode.commands.registerCommand('mcshv.inhShow', () => fRunInheritSource('show')),
     vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
     vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
     vscode.commands.registerCommand('mcshv.insertTreeParentChild', () => fInsertTree('pc')),
@@ -729,6 +732,19 @@ function fCreateProvider(context) {
             else fStatus('formatted · unsaved');
             break;
           }
+          case 'inherit': {            // edit/inheritance/… from the-visual: the-clicked line, else the-URL bar's #id
+            if (!oActiveDoc) { vscode.window.showWarningMessage('Mcs inheritance: the visual shows no editable file'); break; }
+            const sTextInh = oActiveDoc.getText();
+            let nOffInh = msg.id ? omModel.fCoreStart(sTextInh, msg) : null;
+            if (nOffInh == null && sHashVisual) {
+              const nAtHash = sTextInh.indexOf(`id="${sHashVisual}"`);
+              if (nAtHash >= 0) nOffInh = nAtHash + 1;
+            }
+            if (nOffInh == null) { vscode.window.showWarningMessage('Mcs inheritance: click a line of the concept first (or open it by #id)'); break; }
+            try { await fRunInherit(msg.sOp, oActiveDoc, nOffInh, true); }
+            catch (oErrInh) { vscode.window.showErrorMessage('Mcs inheritance: ' + (oErrInh && oErrInh.message || oErrInh)); }
+            break;
+          }
           case 'structure': {
             const bOk = await fApplyStructure(msg);
             if (bOk === 'none') break;      // nothing to insert (a-message is shown): no save
@@ -1079,6 +1095,13 @@ function fBuildShell(webview, url) {
               </div>
             </div>
           </div>
+          <div class="clsItem clsHasSub">inheritance<span class="clsCaret">&#9656;</span>
+            <div class="clsSubmenu">
+              <div class="clsItem" title="the numbered attribute of the clicked line gets another number; the others shift; its specifics follow" data-cmd="cmdInhRenumber">renumber<span class="clsKbd">Ctrl+Alt+P I N R</span></div>
+              <div class="clsItem" title="the attribute of the clicked line is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">Ctrl+Alt+P I D G</span></div>
+              <div class="clsItem" title="the attributes the concept of the clicked line inherits; a choice goes to it" data-cmd="cmdInhShow">show-inherited<span class="clsKbd">Ctrl+Alt+P I G L</span></div>
+            </div>
+          </div>
           <div class="clsItem" data-cmd="cmdAddLine">add line</div>
           <div class="clsItem" data-cmd="cmdRemoveLine">remove line</div>
         </div>
@@ -1140,7 +1163,8 @@ function fBuildShell(webview, url) {
     });
   }
   function fShowStatus(m){ oStatusEl.textContent=m||''; oStatusEl.classList.add('clsShow'); if(nStatusT)clearTimeout(nStatusT); nStatusT=setTimeout(()=>oStatusEl.classList.remove('clsShow'),2600); }
-  function fLoadUrl(u){ if(!u)return; if(!/[?&]mcshv=/.test(u)) u += (u.indexOf('?')<0?'?':'&')+'mcshv=1'; f.src=u; }
+  // the-flag ?mcshv=1 goes BEFORE the-#hash: after it, the-hash "idX?mcshv=1" names no element
+  function fLoadUrl(u){ if(!u)return; var h='',i=u.indexOf('#'); if(i>=0){h=u.slice(i);u=u.slice(0,i);} if(!/[?&]mcshv=/.test(u)) u += (u.indexOf('?')<0?'?':'&')+'mcshv=1'; f.src=u+h; }
   // Fresh cache-buster (keeps ?mcshv=1, strips old _r, preserves #hash) so a load that
   // failed while the server was down is never re-served from cache.
   function bust(u){ var h='',i=u.indexOf('#'); if(i>=0){h=u.slice(i);u=u.slice(0,i);} u=u.replace(/[?&]_r=\d+/g,''); if(!/[?&]mcshv=/.test(u)) u+=(u.indexOf('?')<0?'?':'&')+'mcshv=1'; u+=(u.indexOf('?')<0?'?':'&')+'_r='+Date.now(); return u+h; }
@@ -1855,6 +1879,116 @@ async function fInsertTree(sKindIn) {
   }
   const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oTree.nAt), oTree.sInsert));
   if (bOk) fGo(oTree.nAt + oTree.nCursor);
+}
+
+/**
+ * DOING: it runs dirValid/inheritEdit.mjs on the-worldview of sFileIn (it reads the-whole worldview, ~5 s).
+ * OUTPUT: its JSON { bOk, sWhy?, … }.
+ */
+function fRunInheritEdit(sFileIn, aArgIn) {
+  const sRoot = fFindWorldview(path.dirname(sFileIn));
+  const sScript = path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'inheritEdit.mjs');
+  const aArg = [sScript, sRoot, '--file', path.basename(sFileIn).replace(/\.last\.html$/, ''), ...aArgIn];
+  return vscode.window.withProgress({ location: vscode.ProgressLocation.Notification, title: 'Mcs inheritance: reading the worldview…' },
+    () => new Promise((fResolve) => {
+      require('child_process').execFile('node', aArg,
+        { cwd: sRoot, maxBuffer: 1 << 26, windowsHide: true }, (oErr, sOut) => {
+          const sLast = String(sOut || '').trim().split('\n').pop();
+          try { fResolve(JSON.parse(sLast)); } catch (oErrJson) { fResolve({ bOk: false, sWhy: String(oErr ? oErr.message : sLast).slice(0, 300) }); }
+        });
+    }));
+}
+
+/** DOING: it opens a-file in the-source column at the-element with id sIdIn (bKeepFocusIn: the-focus stays, on the-visual). */
+async function fOpenAtId(sPathIn, sIdIn, bKeepFocusIn = false) {
+  const oDoc = await vscode.workspace.openTextDocument(vscode.Uri.file(sPathIn));
+  const oEd = await vscode.window.showTextDocument(oDoc, { viewColumn: vscode.ViewColumn.One, preview: false, preserveFocus: bKeepFocusIn });
+  const nAt = oDoc.getText().indexOf(`id="${sIdIn}"`);
+  if (nAt < 0) return;
+  const oPos = oDoc.positionAt(nAt);
+  oEd.selection = new vscode.Selection(oPos, oPos);
+  oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.AtTop);
+}
+
+/**
+ * DOING: edit/inheritance/… (Ctrl+Alt+P I N R | I D G | I G L), on the-section at nOffIn of oDocIn
+ *   (the-cursor of a-source tab, the-clicked line of the-visual editor), by dirValid/inheritEdit.mjs:
+ *   - 'renumber': "05_x of M" → the-number asked: a-move (03 04 → 04 05), its specifics follow;
+ *     ONLY own numbers (an-inherited number is its generic's: the-message says where);
+ *   - 'generalize': "x of S" copied to a-generic G of S as "NN_x of G" (asked when S has several);
+ *     S keeps it numbered NN_; the-own numbers of G's specifics shift;
+ *   - 'show': the-attributes the-concept inherits (and which it writes): a-choice goes to it.
+ *   The-edits write the-files (all the-worldview) after a-confirmation; the-list in dirValid/inheritEdit.txt.
+ * INPUT: sOpIn: 'renumber' | 'generalize' | 'show'; bVisualIn: from the-visual editor (show goes there too).
+ */
+async function fRunInherit(sOpIn, oDocIn, nOffIn, bVisualIn = false) {
+  const fMsg = (sIn) => vscode.window.showWarningMessage('Mcs inheritance: ' + sIn);
+  const sId = omModel.fFindSectIdAt(oDocIn.getText(), nOffIn);
+  if (!sId) return fMsg('no section here');
+  if (oDocIn.isDirty) await oDocIn.save();
+  const sFile = oDocIn.uri.fsPath;
+  const aArgId = ['--id', sId];
+
+  if (sOpIn === 'show') {
+    const oOut = await fRunInheritEdit(sFile, ['--op', 'show', ...aArgId]);
+    if (!oOut.bOk) return vscode.window.showWarningMessage('show-inherited: ' + oOut.sWhy);
+    const oPick = await vscode.window.showQuickPick(oOut.aoItem.map((oI) => ({
+      label: `${oI.sNum || '··'} ${oI.sWord}`,
+      description: oI.sGen ? '← ' + oI.sGen : 'own',
+      detail: oI.sIdOwn ? '✓ ' + oI.sTitleOwn : 'inherited, not written here: goes to the generic',
+      oI
+    })), { placeHolder: `show-inherited: ${oOut.sConcept}${oOut.aChain.length ? ' · chain ' + oOut.aChain.join(' > ') : ''}`, matchOnDescription: true });
+    if (!oPick) return;
+    const sPathGo = oPick.oI.sIdOwn ? oPick.oI.sPathOwn : oPick.oI.sPathGen, sIdGo = oPick.oI.sIdOwn || oPick.oI.sIdGen;
+    // from the-visual: the-visual goes there (as open-by-code), the-source pane follows; else the-source tab
+    const sUrlGo = bVisualIn && fNavigateVisual ? fDisplayUrlForPath(sPathGo) : '';
+    if (sUrlGo) fNavigateVisual(sUrlGo + '#' + sIdGo);
+    await fOpenAtId(sPathGo, sIdGo, !!sUrlGo);
+    return;
+  }
+
+  let aArgOp;
+  let oPlan;
+  if (sOpIn === 'renumber') {
+    const sTo = await fInputClickValid({ prompt: 'renumber: the new number (NN) of this attribute; the others shift', value: '' });
+    if (!sTo) return;
+    aArgOp = ['--to', String(sTo).trim().padStart(2, '0')];
+    oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-renumber', ...aArgId, ...aArgOp]);
+  } else {
+    aArgOp = [];
+    oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-generalize', ...aArgId]);
+    if (oPlan.bOk && oPlan.aoGen) {
+      const oGen = await vscode.window.showQuickPick(oPlan.aoGen.map((oG) => ({ label: oG.sMain, description: oG.sFile, oG })),
+        { placeHolder: 'generalize: to which generic?' });
+      if (!oGen) return;
+      aArgOp = ['--gen', oGen.oG.sKey];
+      oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-generalize', ...aArgId, ...aArgOp]);
+    }
+  }
+  if (!oPlan.bOk) return vscode.window.showWarningMessage(sOpIn + ': ' + oPlan.sWhy);
+  const sYes = 'Write';
+  const sAnswer = await vscode.window.showInformationMessage(sOpIn + ':', {
+    modal: true,
+    detail: oPlan.aChange.join('\n') + '\n\nThe specifics that inherit these numbers follow, in every file of the worldview.'
+  }, sYes);
+  if (sAnswer !== sYes) return;
+  const oOut = await fRunInheritEdit(sFile, ['--op', sOpIn, ...aArgId, ...aArgOp]);
+  if (!oOut.bOk) return vscode.window.showWarningMessage(sOpIn + ': ' + oOut.sWhy);
+  const nFile = new Set((oOut.aLine || []).map((sL) => (sL.match(/\s(Mcsh\w+):/) || [])[1]).filter(Boolean)).size;
+  const sOpen = 'Open the list';
+  const sDone = await vscode.window.showInformationMessage(`${sOpIn}: ${(oOut.aLine || []).length} changes in ${nFile} files (inheritEdit.txt)`, sOpen);
+  if (sDone === sOpen) {
+    const sRoot = fFindWorldview(path.dirname(sFile));
+    await vscode.window.showTextDocument(vscode.Uri.file(path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'inheritEdit.txt')), { preview: false });
+  }
+}
+
+/** DOING: edit/inheritance/… from a-source tab: the-cursor's section. */
+function fRunInheritSource(sOpIn) {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  return fRunInherit(sOpIn, oEd.document, oEd.document.offsetAt(oEd.selection.active))
+    .catch((oErr) => vscode.window.showErrorMessage('Mcs inheritance: ' + (oErr && oErr.message || oErr)));
 }
 
 function fDeactivate() {}

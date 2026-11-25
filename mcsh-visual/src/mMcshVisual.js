@@ -204,6 +204,10 @@ export function fInitMcshv_bridge() {
     // edit/insert/para/description-and-name (Ctrl+Alt+P P P): before the-paragraph of the-clicked line
     cmdInsertParaDsnNam: function () { if (!oLastSpan) return fNotify('click a line first'); fSaveState(oLastSpan); fPost({ type: 'structure', op: 'paraDsnNam', id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord }); },
     // edit/insert/sect/tree-… (Ctrl+Alt+P T G|W|P): the-tree of the-clicked line's concept, at its place
+    // edit/inheritance/… (Ctrl+Alt+P I N R | I D G | I G L): on the-clicked line's section, by the-host
+    cmdInhRenumber: function () { fInherit('renumber'); },
+    cmdInhGeneralize: function () { fInherit('generalize'); },
+    cmdInhShow: function () { fInherit('show'); },
     cmdInsertTreeGenSpe: function () { fInsertTree('gs'); },
     cmdInsertTreeWholePart: function () { fInsertTree('wp'); },
     cmdInsertTreeParentChild: function () { fInsertTree('pc'); },
@@ -302,7 +306,12 @@ export function fInitMcshv_bridge() {
   }
   // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
   var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe',
-    'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild' };
+    'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
+    'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i d g': 'cmdInhGeneralize', 'ctrl+alt+p i g l': 'cmdInhShow' };
+  // the-clicked line, else the-host takes the-section of the-URL bar's #id
+  function fInherit(sOpIn) {
+    fPost({ type: 'inherit', sOp: sOpIn, id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 });
+  }
   function fInsertTree(sKindIn) {
     if (!oLastSpan) return fNotify('click a line first');
     fSaveState(oLastSpan);
@@ -400,8 +409,17 @@ export function fInitMcshv_bridge() {
     var sId = location.hash.slice(1);
     try { sId = decodeURIComponent(sId); } catch (e) {}
     var oEl = document.getElementById(sId);
-    if (oEl) oEl.scrollIntoView(true);
+    if (!oEl) return;
+    oEl.scrollIntoView(true);
+    // the-toc highlights its title as on a-click in the-content (mMcsh2 fEvtContentClick): once per hash;
+    //   NOT bubbling, so only the-element's own listener runs
+    if (sHashToc !== location.hash && document.querySelector('#idTocTri a')) {   // the-toc (and its listeners) built
+      sHashToc = location.hash;
+      try { oEl.dispatchEvent(new MouseEvent('click', { bubbles: false })); } catch (e) {}
+      oEl.scrollIntoView(true);
+    }
   }
+  var sHashToc = '';
   // Decide ONCE per load where to land, then re-apply it a few times because the
   // font-scale (0/250/800ms) and split-fix reflow the page after the first pass:
   //  - 'anchor' : structural/Save reload → the edited line (fSaveState wrote it). Wins over #hash.
