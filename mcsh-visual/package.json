@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.11.4",
+  "version": "0.12.0",
   "date": "2026-11-22",
   "publisher": "synagonism",
   "private": true,
@@ -86,17 +86,62 @@
       },
       {
         "command": "mcshv.inhRenumber",
-        "title": "inheritance-renumber: the numbered attribute of the cursor gets another number, the others shift, its specifics follow",
+        "title": "inheritance-renumber: the numbered attribute gets another number, the others shift, its specifics follow",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhNumberOwn",
+        "title": "inheritance-number-own: the own attributes of the concept get their numbers after the chain",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhNumberGen",
+        "title": "inheritance-number-from-generic: the inherited attributes of the concept get the numbers of their generic",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhLast",
+        "title": "inheritance-last-update: the name Mmn'NN_last of the concept",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhReorder",
+        "title": "inheritance-reorder: the attribute sections of the concept in number order",
         "category": "Mcs"
       },
       {
         "command": "mcshv.inhGeneralize",
-        "title": "inheritance-generalize: the attribute of the cursor is copied to a generic as NN_x of G",
+        "title": "inheritance-generalize: the attribute is copied to a generic as NN_x of G; this one is numbered NN_",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhSpecialize",
+        "title": "inheritance-specialize: an inherited attribute (chosen) is written into the concept as NN_x of C",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhDeleteEmpty",
+        "title": "inheritance-delete-empty: the inherited attributes of the concept that say nothing are deleted",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhRename",
+        "title": "inheritance-rename: the word of the attribute, here and in the specifics that inherit it",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhGoGeneric",
+        "title": "inheritance-go-generic: the generic attribute (or generic concept)",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhGoSpecific",
+        "title": "inheritance-go-specific: the same attribute in the specifics (or the specific concepts)",
         "category": "Mcs"
       },
       {
         "command": "mcshv.inhShow",
-        "title": "inheritance-show-inherited: the attributes the concept of the cursor inherits",
+        "title": "inheritance-list-inherited: the attributes the concept inherits, and which it writes",
         "category": "Mcs"
       },
       {

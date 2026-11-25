@@ -316,7 +316,16 @@ function fActivate(context) {
   context.subscriptions.push(
     vscode.commands.registerCommand('mcshv.insertParaDsnNam', fInsertParaDsnNam),
     vscode.commands.registerCommand('mcshv.inhRenumber', () => fRunInheritSource('renumber')),
+    vscode.commands.registerCommand('mcshv.inhNumberOwn', () => fRunInheritSource('number-own')),
+    vscode.commands.registerCommand('mcshv.inhNumberGen', () => fRunInheritSource('number-generic')),
+    vscode.commands.registerCommand('mcshv.inhLast', () => fRunInheritSource('last')),
+    vscode.commands.registerCommand('mcshv.inhReorder', () => fRunInheritSource('reorder')),
     vscode.commands.registerCommand('mcshv.inhGeneralize', () => fRunInheritSource('generalize')),
+    vscode.commands.registerCommand('mcshv.inhSpecialize', () => fRunInheritSource('specialize')),
+    vscode.commands.registerCommand('mcshv.inhDeleteEmpty', () => fRunInheritSource('delete-empty')),
+    vscode.commands.registerCommand('mcshv.inhRename', () => fRunInheritSource('rename')),
+    vscode.commands.registerCommand('mcshv.inhGoGeneric', () => fRunInheritSource('go-generic')),
+    vscode.commands.registerCommand('mcshv.inhGoSpecific', () => fRunInheritSource('go-specific')),
     vscode.commands.registerCommand('mcshv.inhShow', () => fRunInheritSource('show')),
     vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
     vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
@@ -1097,9 +1106,20 @@ function fBuildShell(webview, url) {
           </div>
           <div class="clsItem clsHasSub">inheritance<span class="clsCaret">&#9656;</span>
             <div class="clsSubmenu">
-              <div class="clsItem" title="the numbered attribute of the clicked line gets another number; the others shift; its specifics follow" data-cmd="cmdInhRenumber">renumber<span class="clsKbd">Ctrl+Alt+P I N R</span></div>
-              <div class="clsItem" title="the attribute of the clicked line is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">Ctrl+Alt+P I D G</span></div>
-              <div class="clsItem" title="the attributes the concept of the clicked line inherits; a choice goes to it" data-cmd="cmdInhShow">show-inherited<span class="clsKbd">Ctrl+Alt+P I G L</span></div>
+              <div class="clsItem" title="the numbered attribute gets another number, the others shift, its specifics follow" data-cmd="cmdInhRenumber">renumber<span class="clsKbd">Ctrl+Alt+P I N R</span></div>
+              <div class="clsItem" title="the own attributes of the concept get their numbers after the chain" data-cmd="cmdInhNumberOwn">number-own<span class="clsKbd">Ctrl+Alt+P I N W</span></div>
+              <div class="clsItem" title="the inherited attributes of the concept get the numbers of their generic" data-cmd="cmdInhNumberGen">number-from-generic<span class="clsKbd">Ctrl+Alt+P I N F</span></div>
+              <div class="clsItem" title="the name Mmn'NN_last of the concept" data-cmd="cmdInhLast">last-update<span class="clsKbd">Ctrl+Alt+P I N L</span></div>
+              <div class="clsItem" title="the attribute sections of the concept in number order" data-cmd="cmdInhReorder">reorder<span class="clsKbd">Ctrl+Alt+P I N O</span></div>
+              <div class="clsSep"></div>
+              <div class="clsItem" title="the attribute is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">Ctrl+Alt+P I D G</span></div>
+              <div class="clsItem" title="an inherited attribute (chosen) is written into the concept as NN_x of C" data-cmd="cmdInhSpecialize">specialize<span class="clsKbd">Ctrl+Alt+P I D S</span></div>
+              <div class="clsItem" title="the inherited attributes of the concept that say nothing are deleted" data-cmd="cmdInhDeleteEmpty">delete-empty<span class="clsKbd">Ctrl+Alt+P I D D</span></div>
+              <div class="clsItem" title="the word of the attribute, here and in the specifics that inherit it" data-cmd="cmdInhRename">rename<span class="clsKbd">Ctrl+Alt+P I D M</span></div>
+              <div class="clsSep"></div>
+              <div class="clsItem" title="the generic attribute (or generic concept)" data-cmd="cmdInhGoGeneric">go-generic<span class="clsKbd">Ctrl+Alt+P I G G</span></div>
+              <div class="clsItem" title="the same attribute in the specifics (or the specific concepts)" data-cmd="cmdInhGoSpecific">go-specific<span class="clsKbd">Ctrl+Alt+P I G S</span></div>
+              <div class="clsItem" title="the attributes the concept inherits, and which it writes" data-cmd="cmdInhShow">list-inherited<span class="clsKbd">Ctrl+Alt+P I G L</span></div>
             </div>
           </div>
           <div class="clsItem" data-cmd="cmdAddLine">add line</div>
@@ -1910,73 +1930,115 @@ async function fOpenAtId(sPathIn, sIdIn, bKeepFocusIn = false) {
   oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.AtTop);
 }
 
+// the-ops of edit/inheritance: the-op of inheritEdit.mjs, its menu label, what its confirmation adds
+const ooInhOp = {
+  renumber: { sLabel: 'renumber', sNote: 'The specifics that inherit these numbers follow, in every file of the worldview.' },
+  'number-own': { sLabel: 'number-own', sNote: 'The specifics that inherit these numbers follow, in every file of the worldview.' },
+  'number-generic': { sLabel: 'number-from-generic', sNote: 'The specifics that inherit these numbers follow, in every file of the worldview.' },
+  last: { sLabel: 'last-update', sNote: '' },
+  reorder: { sLabel: 'reorder', sNote: '' },
+  generalize: { sLabel: 'generalize', sNote: 'The own numbers of the specifics of the generic shift up, in every file of the worldview.' },
+  specialize: { sLabel: 'specialize', sNote: '' },
+  'delete-empty': { sLabel: 'delete-empty', sNote: 'A linked section, or one with names of another McsLago, is kept.' },
+  rename: { sLabel: 'rename', sNote: 'Its titles and names, in every specific that inherits it.' },
+  'go-generic': { sLabel: 'go-generic' },
+  'go-specific': { sLabel: 'go-specific' },
+  show: { sLabel: 'list-inherited' }
+};
+
 /**
- * DOING: edit/inheritance/… (Ctrl+Alt+P I N R | I D G | I G L), on the-section at nOffIn of oDocIn
- *   (the-cursor of a-source tab, the-clicked line of the-visual editor), by dirValid/inheritEdit.mjs:
- *   - 'renumber': "05_x of M" → the-number asked: a-move (03 04 → 04 05), its specifics follow;
- *     ONLY own numbers (an-inherited number is its generic's: the-message says where);
- *   - 'generalize': "x of S" copied to a-generic G of S as "NN_x of G" (asked when S has several);
- *     S keeps it numbered NN_; the-own numbers of G's specifics shift;
- *   - 'show': the-attributes the-concept inherits (and which it writes): a-choice goes to it.
- *   The-edits write the-files (all the-worldview) after a-confirmation; the-list in dirValid/inheritEdit.txt.
- * INPUT: sOpIn: 'renumber' | 'generalize' | 'show'; bVisualIn: from the-visual editor (show goes there too).
+ * DOING: edit/inheritance/… on the-section at nOffIn of oDocIn (the-cursor of a-source tab, the-clicked line
+ *   of the-visual editor), by dirValid/inheritEdit.mjs (it reads the-whole worldview):
+ *   - number: renumber (the-number asked: a-move), number-own, number-generic (from the-generic), last
+ *     (Mmn'NN_last), reorder: the-specifics follow a-moved number;
+ *   - do: generalize (copy to a-generic), specialize (an-inherited attribute chosen, written here),
+ *     delete-empty, rename (the-word asked: here and in the-specifics);
+ *   - go: go-generic, go-specific, show (list-inherited): a-choice goes to it.
+ *   An-edit shows its changes and writes (all the-worldview) after "Write"; the-list in dirValid/inheritEdit.txt.
+ *   An-inherited number or word is changed at its generic: the-message says where.
+ * INPUT: sOpIn: a-key of ooInhOp; bVisualIn: from the-visual editor (a-go moves the-visual too).
  */
 async function fRunInherit(sOpIn, oDocIn, nOffIn, bVisualIn = false) {
-  const fMsg = (sIn) => vscode.window.showWarningMessage('Mcs inheritance: ' + sIn);
+  const sLabel = ooInhOp[sOpIn].sLabel;
+  const fWarn = (sIn) => vscode.window.showWarningMessage(`${sLabel}: ${sIn}`);
   const sId = omModel.fFindSectIdAt(oDocIn.getText(), nOffIn);
-  if (!sId) return fMsg('no section here');
+  if (!sId) return fWarn('no section here');
   if (oDocIn.isDirty) await oDocIn.save();
   const sFile = oDocIn.uri.fsPath;
   const aArgId = ['--id', sId];
+  // from the-visual: the-visual goes there too (as open-by-code), the-source pane follows; else the-source tab
+  const fGo = async (sPathIn, sIdIn) => {
+    const sPathAbs = path.isAbsolute(sPathIn) ? sPathIn : path.join(fFindWorldview(path.dirname(sFile)), sPathIn);
+    const sUrlGo = bVisualIn && fNavigateVisual ? fDisplayUrlForPath(sPathAbs) : '';
+    if (sUrlGo) fNavigateVisual(sUrlGo + '#' + sIdIn);
+    await fOpenAtId(sPathAbs, sIdIn, !!sUrlGo);
+  };
 
+  // ── go: list-inherited, go-generic, go-specific ──
   if (sOpIn === 'show') {
     const oOut = await fRunInheritEdit(sFile, ['--op', 'show', ...aArgId]);
-    if (!oOut.bOk) return vscode.window.showWarningMessage('show-inherited: ' + oOut.sWhy);
+    if (!oOut.bOk) return fWarn(oOut.sWhy);
     const oPick = await vscode.window.showQuickPick(oOut.aoItem.map((oI) => ({
       label: `${oI.sNum || '··'} ${oI.sWord}`,
       description: oI.sGen ? '← ' + oI.sGen : 'own',
       detail: oI.sIdOwn ? '✓ ' + oI.sTitleOwn : 'inherited, not written here: goes to the generic',
       oI
-    })), { placeHolder: `show-inherited: ${oOut.sConcept}${oOut.aChain.length ? ' · chain ' + oOut.aChain.join(' > ') : ''}`, matchOnDescription: true });
-    if (!oPick) return;
-    const sPathGo = oPick.oI.sIdOwn ? oPick.oI.sPathOwn : oPick.oI.sPathGen, sIdGo = oPick.oI.sIdOwn || oPick.oI.sIdGen;
-    // from the-visual: the-visual goes there (as open-by-code), the-source pane follows; else the-source tab
-    const sUrlGo = bVisualIn && fNavigateVisual ? fDisplayUrlForPath(sPathGo) : '';
-    if (sUrlGo) fNavigateVisual(sUrlGo + '#' + sIdGo);
-    await fOpenAtId(sPathGo, sIdGo, !!sUrlGo);
+    })), { placeHolder: `list-inherited: ${oOut.sConcept}${oOut.aChain.length ? ' · chain ' + oOut.aChain.join(' > ') : ''}`, matchOnDescription: true });
+    if (oPick) await fGo(oPick.oI.sIdOwn ? oPick.oI.sPathOwn : oPick.oI.sPathGen, oPick.oI.sIdOwn || oPick.oI.sIdGen);
+    return;
+  }
+  if (sOpIn === 'go-generic' || sOpIn === 'go-specific') {
+    const oOut = await fRunInheritEdit(sFile, ['--op', sOpIn, ...aArgId]);
+    if (!oOut.bOk) return fWarn(oOut.sWhy);
+    const oT = oOut.aoTarget.length === 1 ? oOut.aoTarget[0]
+      : (await vscode.window.showQuickPick(oOut.aoTarget.map((oI) => ({ label: oI.sLabel, description: oI.sDetail, oI })),
+        { placeHolder: `${sLabel}: ${oOut.aoTarget.length} — choose` }) || {}).oI;
+    if (oT) await fGo(oT.sPath, oT.sId);
     return;
   }
 
-  let aArgOp;
-  let oPlan;
+  // ── edits: the-input they need, the-plan, "Write", the-edit ──
+  let aArgOp = [];
   if (sOpIn === 'renumber') {
     const sTo = await fInputClickValid({ prompt: 'renumber: the new number (NN) of this attribute; the others shift', value: '' });
     if (!sTo) return;
     aArgOp = ['--to', String(sTo).trim().padStart(2, '0')];
-    oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-renumber', ...aArgId, ...aArgOp]);
-  } else {
-    aArgOp = [];
-    oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-generalize', ...aArgId]);
-    if (oPlan.bOk && oPlan.aoGen) {
-      const oGen = await vscode.window.showQuickPick(oPlan.aoGen.map((oG) => ({ label: oG.sMain, description: oG.sFile, oG })),
-        { placeHolder: 'generalize: to which generic?' });
-      if (!oGen) return;
-      aArgOp = ['--gen', oGen.oG.sKey];
-      oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-generalize', ...aArgId, ...aArgOp]);
-    }
+  } else if (sOpIn === 'rename') {
+    const sWord = await fInputClickValid({ prompt: 'rename: the new word of this attribute (here and in its specifics)', value: '' });
+    if (!sWord) return;
+    aArgOp = ['--word', String(sWord).trim()];
+  } else if (sOpIn === 'specialize') {
+    // the-inherited attributes this concept does NOT write
+    const oShow = await fRunInheritEdit(sFile, ['--op', 'show', ...aArgId]);
+    if (!oShow.bOk) return fWarn(oShow.sWhy);
+    const aoFree = oShow.aoItem.filter((oI) => oI.sGen && !oI.sIdOwn);
+    if (!aoFree.length) return fWarn(`${oShow.sConcept} writes every attribute it inherits`);
+    const oPick = await vscode.window.showQuickPick(aoFree.map((oI) => ({ label: `${oI.sNum} ${oI.sWord}`, description: '← ' + oI.sGen, oI })),
+      { placeHolder: `specialize: which inherited attribute to write into ${oShow.sConcept}?` });
+    if (!oPick) return;
+    aArgOp = ['--gen', path.basename(oPick.oI.sPathGen).replace(/\.last\.html$/, '') + '#' + oPick.oI.sIdGen];
   }
-  if (!oPlan.bOk) return vscode.window.showWarningMessage(sOpIn + ': ' + oPlan.sWhy);
+  let oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-' + sOpIn, ...aArgId, ...aArgOp]);
+  if (sOpIn === 'generalize' && oPlan.bOk && oPlan.aoGen) {
+    const oGen = await vscode.window.showQuickPick(oPlan.aoGen.map((oG) => ({ label: oG.sMain, description: oG.sFile, oG })),
+      { placeHolder: 'generalize: to which generic?' });
+    if (!oGen) return;
+    aArgOp = ['--gen', oGen.oG.sKey];
+    oPlan = await fRunInheritEdit(sFile, ['--op', 'plan-generalize', ...aArgId, ...aArgOp]);
+  }
+  if (!oPlan.bOk) return fWarn(oPlan.sWhy);
   const sYes = 'Write';
-  const sAnswer = await vscode.window.showInformationMessage(sOpIn + ':', {
-    modal: true,
-    detail: oPlan.aChange.join('\n') + '\n\nThe specifics that inherit these numbers follow, in every file of the worldview.'
+  const sAnswer = await vscode.window.showInformationMessage(sLabel + ':', {
+    modal: true, detail: oPlan.aChange.join('\n') + (ooInhOp[sOpIn].sNote ? '\n\n' + ooInhOp[sOpIn].sNote : '')
   }, sYes);
   if (sAnswer !== sYes) return;
   const oOut = await fRunInheritEdit(sFile, ['--op', sOpIn, ...aArgId, ...aArgOp]);
-  if (!oOut.bOk) return vscode.window.showWarningMessage(sOpIn + ': ' + oOut.sWhy);
-  const nFile = new Set((oOut.aLine || []).map((sL) => (sL.match(/\s(Mcsh\w+):/) || [])[1]).filter(Boolean)).size;
+  if (!oOut.bOk) return fWarn(oOut.sWhy);
+  // specialize: to the-new section
+  if (sOpIn === 'specialize' && oOut.sId) await fGo(oOut.sPath, oOut.sId);
+  const nFile = new Set((oOut.aLine || []).map((sL) => (sL.match(/\s(Mcsh\w+)[: ]/) || [])[1]).filter(Boolean)).size;
   const sOpen = 'Open the list';
-  const sDone = await vscode.window.showInformationMessage(`${sOpIn}: ${(oOut.aLine || []).length} changes in ${nFile} files (inheritEdit.txt)`, sOpen);
+  const sDone = await vscode.window.showInformationMessage(`${sLabel}: ${(oOut.aLine || []).length} changes in ${nFile} files (inheritEdit.txt)`, sOpen);
   if (sDone === sOpen) {
     const sRoot = fFindWorldview(path.dirname(sFile));
     await vscode.window.showTextDocument(vscode.Uri.file(path.join(path.dirname(sRoot), 'dirMcshmgr', 'dirValid', 'inheritEdit.txt')), { preview: false });

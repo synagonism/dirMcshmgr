@@ -1488,7 +1488,7 @@ function fFindInheritAttrRead(aPathIn) {
 }
 
 // fFindInheritAttr for structuralMcsh.js; the-rest for inheritEdit.mjs (edit/inheritance of mcsh-visual)
-export { fFindInheritAttr, fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, fApplyLast,
+export { fFindInheritAttr, fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, fApplyLast, fDeleteEmpty,
   fCheckTitleName, fApplyTitleName, fFindBlock, fNormAttr };
 
 // run as a-program only, NOT when imported by structuralMcsh.js

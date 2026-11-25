@@ -206,7 +206,16 @@ export function fInitMcshv_bridge() {
     // edit/insert/sect/tree-… (Ctrl+Alt+P T G|W|P): the-tree of the-clicked line's concept, at its place
     // edit/inheritance/… (Ctrl+Alt+P I N R | I D G | I G L): on the-clicked line's section, by the-host
     cmdInhRenumber: function () { fInherit('renumber'); },
+    cmdInhNumberOwn: function () { fInherit('number-own'); },
+    cmdInhNumberGen: function () { fInherit('number-generic'); },
+    cmdInhLast: function () { fInherit('last'); },
+    cmdInhReorder: function () { fInherit('reorder'); },
     cmdInhGeneralize: function () { fInherit('generalize'); },
+    cmdInhSpecialize: function () { fInherit('specialize'); },
+    cmdInhDeleteEmpty: function () { fInherit('delete-empty'); },
+    cmdInhRename: function () { fInherit('rename'); },
+    cmdInhGoGeneric: function () { fInherit('go-generic'); },
+    cmdInhGoSpecific: function () { fInherit('go-specific'); },
     cmdInhShow: function () { fInherit('show'); },
     cmdInsertTreeGenSpe: function () { fInsertTree('gs'); },
     cmdInsertTreeWholePart: function () { fInsertTree('wp'); },
@@ -307,7 +316,10 @@ export function fInitMcshv_bridge() {
   // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
   var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe',
     'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
-    'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i d g': 'cmdInhGeneralize', 'ctrl+alt+p i g l': 'cmdInhShow' };
+    'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i n w': 'cmdInhNumberOwn', 'ctrl+alt+p i n f': 'cmdInhNumberGen',
+    'ctrl+alt+p i n l': 'cmdInhLast', 'ctrl+alt+p i n o': 'cmdInhReorder', 'ctrl+alt+p i d g': 'cmdInhGeneralize',
+    'ctrl+alt+p i d s': 'cmdInhSpecialize', 'ctrl+alt+p i d d': 'cmdInhDeleteEmpty', 'ctrl+alt+p i d m': 'cmdInhRename',
+    'ctrl+alt+p i g g': 'cmdInhGoGeneric', 'ctrl+alt+p i g s': 'cmdInhGoSpecific', 'ctrl+alt+p i g l': 'cmdInhShow' };
   // the-clicked line, else the-host takes the-section of the-URL bar's #id
   function fInherit(sOpIn) {
     fPost({ type: 'inherit', sOp: sOpIn, id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 });
