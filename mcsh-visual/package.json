@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.22.0",
+  "version": "0.23.2",
   "date": "2026-11-22",
   "publisher": "synagonism",
   "private": true,
@@ -85,8 +85,13 @@
         "category": "Mcs"
       },
       {
+        "command": "mcshv.insertAttribute",
+        "title": "insert-concept-attribute: an attribute (asked: own-numbered | unnumbered | specific, and its name) of the cursor's concept: after its last numbered, in its MISC-ATTRIBUTE, or at its end",
+        "category": "Mcs"
+      },
+      {
         "command": "mcshv.insertGeneric",
-        "title": "insert-concept-generic: a generic (asked: McshX#idY) of the cursor's concept: in its generic-tree, or Γ— generic of a para-concept",
+        "title": "insert-concept-generic: a generic (asked: McshX#idY) of the cursor's concept: in its generic-tree, or × generic of a para-concept",
         "category": "Mcs"
       },
       {
@@ -136,7 +141,7 @@
       },
       {
         "command": "mcshv.inhReorder",
-        "title": "inheritance-reorder: the attribute sections of the concept in number order",
+        "title": "inheritance-reorder: the numbers of the concept without duplicates or gaps, its names as its titles, its sections in number order, its NN_last",
         "category": "Mcs"
       },
       {

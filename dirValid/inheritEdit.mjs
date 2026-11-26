@@ -33,6 +33,8 @@ import { fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, 
 
 const
   aVersion = [
+    'inheritEdit.mjs.0-6-0.2026-11-26: reorder: the-numbers the-same or with gaps → consecutive; a-name with another number than its title → renamed; then the-order and NN_last',
+    'inheritEdit.mjs.0-5-0.2026-11-26: renumber in a-join: ALL its numbers are its own (inherited too); an-inherited attribute it does NOT write in the-shift is written (specialize) at its new number',
     'inheritEdit.mjs.0-4-0.2026-11-26: specialize-join: every renumbered attribute of a-join it does NOT write, written (specialize), then its Mmn\'NN_last',
     'inheritEdit.mjs.0-3-0.2026-11-26: the-number-space of a-concept (oRes.fFindNumSpace(oNode)): a-join of 2+ generics loses nothing; the-numbers are oSpace.sNum',
     'inheritEdit.mjs.0-2-0.2026-11-25: number-own, number-generic, last, reorder, delete-empty (one concept), specialize, rename, go-generic, go-specific',
@@ -116,6 +118,7 @@ function fPlanRenumber(oW, oNodeIn, sToIn) {
   if (!oAttr || !oAttr.sNum) return { sWhy: 'no numbered attribute "NN_x of M" here' };
   const oC = oAttr.oWholeNode;
   const aoSpace = oW.oRes.fFindNumSpace(oC);
+  if (aoSpace.bJoin) return fPlanRenumberJoin(oW, oAttr, oC, aoSpace, sToIn);
   const oInh = oW.oRes.fMatchAttr(oAttr, aoSpace);
   if (oInh) return { sWhy: `"${oAttr.sTitle}" is inherited: its number is of ${oInh.oGen.sMain || oInh.oGen.sTitle}'${oInh.oGenAttr.sNum}_${oInh.oGenAttr.sAttrWord} (${oInh.oGenAttr.sNameShort}): renumber it there` };
   const nChainLast = Math.max(0, ...aoSpace.map(oS => Number(oS.sNum)));
@@ -135,6 +138,33 @@ function fPlanRenumber(oW, oNodeIn, sToIn) {
     if (nTo > nFrom && nN > nFrom && nN <= nTo) aoShift.push({ oAttr: oA, sNumNew: fNum2(nN - 1) });
   }
   return { oAttr, oConcept: oC, aoShift };
+}
+
+/**
+ * OUTPUT: as fPlanRenumber, for a-join: its numbers 01..last are ALL its own (it numbers its union), so any of
+ *   its attributes moves to any of them; the-others in between shift by one; aoWrite [{ oE, sNumNew }]: the-inherited
+ *   ones in the-shift it does NOT write: they are written (specialize) at their new number.
+ */
+function fPlanRenumberJoin(oW, oAttr, oC, aoSpace, sToIn) {
+  const fWritten = oE => oC.aoChild.find(oA => fNumbered(oA) && oW.oRes.fMatchAttr(oA, [oE]));
+  // the-numbers of the-join: its numbered attributes, and the-inherited ones it does NOT write
+  const aoItem = oC.aoChild.filter(fNumbered).map(oA => ({ oA, nNum: Number(oA.sNum) }));
+  for (const oE of aoSpace) if (!fWritten(oE)) aoItem.push({ oE, nNum: Number(oE.sNum) });
+  const nLast = Math.max(...aoItem.map(oI => oI.nNum));
+  const nFrom = Number(oAttr.sNum), nTo = Number(sToIn);
+  if (!(nTo >= 1 && nTo <= nLast)) return { sWhy: `the-number must be 01..${fNum2(nLast)} (the-numbers of the-join ${oC.sMain || oC.sTitle})` };
+  if (nTo === nFrom) return { sWhy: `"${oAttr.sTitle}" has ${fNum2(nTo)} already` };
+  const aoShift = [{ oAttr, sNumNew: fNum2(nTo) }], aoWrite = [];
+  for (const oI of aoItem) {
+    if (oI.oA === oAttr) continue;
+    let nNew = 0;
+    if (nTo < nFrom && oI.nNum >= nTo && oI.nNum < nFrom) nNew = oI.nNum + 1;
+    if (nTo > nFrom && oI.nNum > nFrom && oI.nNum <= nTo) nNew = oI.nNum - 1;
+    if (!nNew) continue;
+    if (oI.oA) aoShift.push({ oAttr: oI.oA, sNumNew: fNum2(nNew) });
+    else aoWrite.push({ oE: oI.oE, sNumNew: fNum2(nNew) });
+  }
+  return { oAttr, oConcept: oC, aoShift, aoWrite };
 }
 
 /**
@@ -185,12 +215,24 @@ function fFollow(sRootIn, oMovedIn, oSetTouchIn, fExtraIn = () => []) {
 function fRenumber(sRootIn, oW, oNodeIn, sToIn, bWriteIn) {
   const oPlan = fPlanRenumber(oW, oNodeIn, sToIn);
   if (oPlan.sWhy) return { bOk: false, sWhy: oPlan.sWhy };
-  const aChange = oPlan.aoShift.map(oS => `"${oS.oAttr.sTitle}" → ${oS.sNumNew}_`);
-  if (!bWriteIn) return { bOk: true, sConcept: oPlan.oConcept.sMain || oPlan.oConcept.sTitle, aChange };
+  const oC = oPlan.oConcept, sName = oC.sMain || oC.sTitle;
+  const aoWrite = oPlan.aoWrite ?? [];
+  const aChange = [...oPlan.aoShift.map(oS => `"${oS.oAttr.sTitle}" → ${oS.sNumNew}_`),
+    ...aoWrite.map(oW2 => `"${oW2.sNumNew}_${oW2.oE.oGenAttr.sAttrWord.trim()} of ${sName}" written (inherited ${oW2.oE.oGen.sMain || oW2.oE.oGen.sTitle}'${oW2.oE.oGenAttr.sNum}_${oW2.oE.oGenAttr.sAttrWord.trim()}, was ${oW2.oE.sNum}_ here)`)];
+  if (!bWriteIn) return { bOk: true, sConcept: sName, aChange };
   const oMoved = new Map(oPlan.aoShift.map(oS => [oS.oAttr.sKey, oS.oAttr.sNum]));
-  const oSetTouch = new Set([oPlan.oConcept.sKey]);
+  const oSetTouch = new Set([oC.sKey]);
   fApplyFix(oW.aoFile, oPlan.aoShift);
   const aLine = oPlan.aoShift.map(oS => `NUMBER  ${fLabelNode(oS.oAttr)} → ${oS.sNumNew}_`);
+  // a-join: the-inherited ones in the-shift are written at their new number (the-specifics that wrote
+  //   their old number follow, as a-moved attribute)
+  for (const { oE, sNumNew } of aoWrite) {
+    const oWNow = fRead(sRootIn);
+    const oOut = fSpecialize(oWNow, fNodeByKey(oWNow, oC.sKey), oE.oGenAttr.sKey, true, sNumNew);
+    if (!oOut.bOk) { aLine.push(`SKIP    ${oE.oGenAttr.sKey}: ${oOut.sWhy}`); continue; }
+    aLine.push(...oOut.aLine);
+    oMoved.set(oC.sNameShort + '#' + oOut.sId, oE.sNum);
+  }
   aLine.push(...fFollow(sRootIn, oMoved, oSetTouch));
   return { bOk: true, aLine };
 }
@@ -338,6 +380,35 @@ const ooNumIssue = {
 };
 
 /**
+ * OUTPUT: reorder: the-numbers of the-numbered attributes of oCIn, consecutive, in their order (by number, then
+ *   by place): [{ oAttr, sNumNew }] of the-ones that change.
+ *   - a-concept: the-inherited ones keep the-number of their generic; the-own ones are chain-last+1, +2, …
+ *     (system: 05_node 06_unit 07_unit_system 07_structure 08_science → 05 06 07 08 09);
+ *   - a-join: ALL its numbers are its own: the-written ones fill 01, 02, … around the-numbers of the-inherited
+ *     ones it does NOT write.
+ */
+function fPlanReorderNum(oW, oCIn) {
+  const aoSpace = oW.oRes.fFindNumSpace(oCIn);
+  const aoNum = oCIn.aoChild.filter(fNumbered)
+    .map((oA, nI) => ({ oA, nI })).sort((oX, oY) => Number(oX.oA.sNum) - Number(oY.oA.sNum) || oX.nI - oY.nI)
+    .map(oX => oX.oA);
+  const aoShift = [];
+  const fSet = (oA, nNew) => { if (Number(oA.sNum) !== nNew) aoShift.push({ oAttr: oA, sNumNew: fNum2(nNew) }); };
+  if (aoSpace.bJoin) {
+    const oSetFixed = new Set(aoSpace.filter(oE => !aoNum.some(oA => oW.oRes.fMatchAttr(oA, [oE]))).map(oE => Number(oE.sNum)));
+    let nNext = 1;
+    for (const oA of aoNum) {
+      while (oSetFixed.has(nNext)) nNext++;
+      fSet(oA, nNext++);
+    }
+    return aoShift;
+  }
+  let nNext = Math.max(0, ...aoSpace.map(oS => Number(oS.sNum))) + 1;
+  for (const oA of aoNum) if (!oW.oRes.fMatchAttr(oA, aoSpace)) fSet(oA, nNext++);
+  return aoShift;
+}
+
+/**
  * DOING: number-own | number-generic | last | reorder | delete-empty of the-concept at oNodeIn:
  *   the-fixes of inheritMcsh for it alone; with bWriteIn, written, and the-specifics follow a-moved number.
  */
@@ -369,16 +440,53 @@ function fFixConcept(sRootIn, oW, oNodeIn, sOpIn, bWriteIn) {
     return { bOk: true, aLine: aoIssue.map(oI => `LAST    ${fLabelNode(oI.oAttr)}: ${oI.sLastNew}`) };
   }
   if (sOpIn === 'reorder') {
-    const aoIssue = fIssueSelf(oW, 'INH-ORDER', sK);
-    if (!aoIssue.length) return { bOk: false, sWhy: `${sName}: its attributes are in order` };
-    if (!bWriteIn) return { bOk: true, sConcept: sName, aChange: [`the order ${aoIssue[0].sLabel} → by number`] };
+    // 1. the-numbers: the-same or with gaps → consecutive; 2. a-name with another number than its title →
+    //   renamed; 3. the-sections in number order; 4. its NN_last
+    const aoShift = fPlanReorderNum(oW, oC);
+    const fInCnpt = oN => oN.oWholeNode?.sKey === sK;
+    const aoOrder = fIssueSelf(oW, 'INH-ORDER', sK);
+    const aoName = fCheckTitleName(oW.aoFile, fInCnpt).aoPlan;
+    const aoLast = fIssueSelf(oW, 'INH-LAST', sK);
+    if (!aoShift.length && !aoOrder.length && !aoName.length && !aoLast.length) {
+      return { bOk: false, sWhy: `${sName}: its attributes are in order, numbered without gaps, named by their titles` };
+    }
+    if (!bWriteIn) {
+      const aChange = aoShift.map(oS => `"${oS.oAttr.sTitle}" → ${oS.sNumNew}_`);
+      if (!aoShift.length) {
+        aChange.push(...aoName.map(oP => `"${oP.oNode.sTitle}": ${oP.aChange.join('; ')}`));
+        if (aoOrder.length) aChange.push(`the order ${aoOrder[0].sLabel} → by number`);
+        aChange.push(...aoLast.map(oI => `${oI.aLastNow.join(', ') || '(no NN_last)'} → ${oI.sLastNew || '(removed)'}`));
+      } else {
+        aChange.push('then: the names of the renumbered, the order by number, the specifics that follow, the NN_last');
+      }
+      return { bOk: true, sConcept: sName, aChange };
+    }
     const aLine = [];
-    let oWNow = oW;
+    const oSetTouch = new Set([sK]);
+    if (aoShift.length) {
+      const oMoved = new Map(aoShift.map(oS => [oS.oAttr.sKey, oS.oAttr.sNum]));
+      fApplyFix(oW.aoFile, aoShift);
+      aLine.push(...aoShift.map(oS => `NUMBER  ${fLabelNode(oS.oAttr)} → ${oS.sNumNew}_`));
+      aLine.push(...fFollow(sRootIn, oMoved, oSetTouch));
+    }
+    // the-names NOT moved (a-title 07_x, a-name M'05_x), the-order and NN_last left
+    let oWNow = fRead(sRootIn);
+    const aoNameLeft = fCheckTitleName(oWNow.aoFile, fInCnpt).aoPlan;
+    if (aoNameLeft.length) {
+      fApplyTitleName(aoNameLeft);
+      for (const oP of aoNameLeft) aLine.push(`NAME    ${fLabelNode(oP.oNode)}: ${oP.aChange.join('; ')}`);
+      oWNow = fRead(sRootIn);
+    }
     for (let nPass = 0; nPass < 5; nPass++) {
       const aoDone = fApplyOrder(oWNow.aoFile, fIssueSelf(oWNow, 'INH-ORDER', sK));
       if (!aoDone.length) break;
       for (const oI of aoDone) aLine.push(`ORDER   ${fLabelNode(oI.oAttr)}: ${oI.sLabelNew}`);
       oWNow = fRead(sRootIn);
+    }
+    const aoLastLeft = fIssueSelf(oWNow, 'INH-LAST', sK);
+    if (aoLastLeft.length) {
+      fApplyLast(oWNow.aoFile, aoLastLeft);
+      for (const oI of aoLastLeft) aLine.push(`LAST    ${fLabelNode(oI.oAttr)}: ${oI.sLastNew}`);
     }
     return { bOk: true, aLine };
   }
@@ -398,7 +506,7 @@ function fFixConcept(sRootIn, oW, oNodeIn, sOpIn, bWriteIn) {
  * DOING: an-inherited attribute G'NN_x (sKeyGenIn) the-concept does NOT write is written into it:
  *   "NN_x of C" with its names C'NN_x, C'x and a-description:: with the-date, at its number's place.
  */
-function fSpecialize(oW, oNodeIn, sKeyGenIn, bWriteIn) {
+function fSpecialize(oW, oNodeIn, sKeyGenIn, bWriteIn, sNumIn = '') {
   const oC = fFindConcept(oNodeIn);
   if (!oC.sMain) return { bOk: false, sWhy: `"${oC.sTitle}" has no main-name` };
   const aoSpace = oW.oRes.fFindNumSpace(oC);
@@ -407,7 +515,7 @@ function fSpecialize(oW, oNodeIn, sKeyGenIn, bWriteIn) {
   const oOwn = oC.aoChild.find(oA => oA.bAttr && !oA.bTree && oW.oRes.fMatchAttr(oA, [oSpace]));
   if (oOwn) return { bOk: false, sWhy: `${oC.sMain} writes it already: "${oOwn.sTitle}"` };
   const { oGen, oGenAttr } = oSpace;
-  const sNum = oSpace.sNum, sWord = oGenAttr.sAttrWord.trim();
+  const sNum = sNumIn || oSpace.sNum, sWord = oGenAttr.sAttrWord.trim();
   const sTitle = `${sNum}_${sWord} of ${oC.sMain}`;
   if (!bWriteIn) return { bOk: true, sConcept: oC.sMain, aChange: [`"${sTitle}" written into ${oC.sMain} (${oC.sNameShort}), from ${oGen.sMain}'${oGenAttr.sNum}_${sWord}`] };
   const oFile = oW.ooFile[oC.sNameShort];

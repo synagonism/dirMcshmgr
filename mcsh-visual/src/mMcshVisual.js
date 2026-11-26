@@ -220,6 +220,7 @@ export function fInitMcshv_bridge() {
     cmdInhGoSpecific: function () { fInherit('go-specific'); },
     cmdInhShow: function () { fInherit('show'); },
     cmdInsertTreeGenSpe: function () { fInsertTree('gs'); },
+    cmdInsertAttribute: function () { fPost({ type: 'insertAttr', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
     cmdInsertGeneric: function () { fPost({ type: 'insertGeneric', sKind: 'gen', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
     cmdInsertChild: function () { fPost({ type: 'insertGeneric', sKind: 'chd', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
     cmdInsertParent: function () { fPost({ type: 'insertGeneric', sKind: 'prn', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
@@ -322,7 +323,7 @@ export function fInitMcshv_bridge() {
     oChordCmds = o;
   }
   // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
-  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe', 'ctrl+alt+p c g': 'cmdInsertGeneric', 'ctrl+alt+p c s': 'cmdInsertSpecific', 'ctrl+alt+p c w': 'cmdInsertWhole', 'ctrl+alt+p c p': 'cmdInsertPart', 'ctrl+alt+p c n': 'cmdInsertParent', 'ctrl+alt+p c c': 'cmdInsertChild',
+  var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe', 'ctrl+alt+p c a': 'cmdInsertAttribute', 'ctrl+alt+p c g': 'cmdInsertGeneric', 'ctrl+alt+p c s': 'cmdInsertSpecific', 'ctrl+alt+p c w': 'cmdInsertWhole', 'ctrl+alt+p c p': 'cmdInsertPart', 'ctrl+alt+p c n': 'cmdInsertParent', 'ctrl+alt+p c c': 'cmdInsertChild',
     'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
     'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i n w': 'cmdInhNumberOwn', 'ctrl+alt+p i n f': 'cmdInhNumberGen',
     'ctrl+alt+p i n l': 'cmdInhLast', 'ctrl+alt+p i n o': 'cmdInhReorder', 'ctrl+alt+p i d g': 'cmdInhGeneralize',

@@ -333,6 +333,7 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
     vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
     vscode.commands.registerCommand('mcshv.insertTreeParentChild', () => fInsertTree('pc')),
+    vscode.commands.registerCommand('mcshv.insertAttribute', fInsertAttrSource),
     vscode.commands.registerCommand('mcshv.insertGeneric', () => fInsertGenSpeSource('gen')),
     vscode.commands.registerCommand('mcshv.insertSpecific', () => fInsertGenSpeSource('spe')),
     vscode.commands.registerCommand('mcshv.insertWhole', () => fInsertGenSpeSource('whl')),
@@ -788,6 +789,27 @@ function fCreateProvider(context) {
             } catch (oErrGen) { bSelfEditing = false; vscode.window.showErrorMessage('Mcs insert-generic: ' + (oErrGen && oErrGen.message || oErrGen)); }
             break;
           }
+          case 'insertAttr': {         // edit/insert/concept/attribute from the-visual: the-clicked line, else the-URL bar's #id
+            if (!oActiveDoc) { vscode.window.showWarningMessage('Mcs insert-attribute: the visual shows no editable file'); break; }
+            const sTextAttr = oActiveDoc.getText();
+            let nOffAttr = msg.id ? omModel.fCoreStart(sTextAttr, msg) : null;
+            if (nOffAttr == null && sHashVisual) {
+              const nAtHash = sTextAttr.indexOf(`id="${sHashVisual}"`);
+              if (nAtHash >= 0) nOffAttr = sTextAttr.indexOf('>', nAtHash) + 1;
+            }
+            if (nOffAttr == null) { vscode.window.showWarningMessage('Mcs insert-attribute: click a line of the concept first'); break; }
+            try {
+              const oAttr = await fBuildAttrAt(oActiveDoc, nOffAttr);
+              if (!oAttr) break;
+              const oWe = new vscode.WorkspaceEdit();
+              for (const oE of oAttr.aoEdit) oWe.replace(oActiveDoc.uri, new vscode.Range(oActiveDoc.positionAt(oE.nStart), oActiveDoc.positionAt(oE.nEnd)), oE.sText);
+              bSelfEditing = true;
+              const bOkAttr = await vscode.workspace.applyEdit(oWe);
+              bSelfEditing = false;
+              if (bOkAttr) { fStatus(oAttr.sHow); await document.save(); }
+            } catch (oErrAttr) { bSelfEditing = false; vscode.window.showErrorMessage('Mcs insert-attribute: ' + (oErrAttr && oErrAttr.message || oErrAttr)); }
+            break;
+          }
           case 'structure': {
             const bOk = await fApplyStructure(msg);
             if (bOk === 'none') break;      // nothing to insert (a-message is shown): no save
@@ -1116,6 +1138,7 @@ function fBuildShell(webview, url) {
             <div class="clsSubmenu">
               <div class="clsItem clsHasSub">concept<span class="clsCaret">&#9656;</span>
                 <div class="clsSubmenu">
+                  <div class="clsItem" title="an attribute (asked: own-numbered | unnumbered | specific, and its name) of the clicked line's concept: after its last numbered, in its MISC-ATTRIBUTE, or at its end" data-cmd="cmdInsertAttribute">attribute<span class="clsKbd">CA+P C A</span></div>
                   <div class="clsItem" title="a generic (asked: McshX#idY) of the clicked line's concept: in its generic-tree, or × generic of a para-concept" data-cmd="cmdInsertGeneric">generic<span class="clsKbd">CA+P C G</span></div>
                   <div class="clsItem" title="a specific (asked: McshX#idY) of the clicked line's concept: in its specific-tree, or × specific of a para-concept" data-cmd="cmdInsertSpecific">specific<span class="clsKbd">CA+P C S</span></div>
                   <div class="clsItem" title="a whole (asked: McshX#idY) of the clicked line's concept: in its whole-tree, or × whole of a para-concept" data-cmd="cmdInsertWhole">whole<span class="clsKbd">CA+P C W</span></div>
@@ -1154,7 +1177,7 @@ function fBuildShell(webview, url) {
               <div class="clsItem" title="the own attributes of the concept get their numbers after the chain" data-cmd="cmdInhNumberOwn">number-own<span class="clsKbd">CA+P I N W</span></div>
               <div class="clsItem" title="the inherited attributes of the concept get the numbers of their generic" data-cmd="cmdInhNumberGen">number-from-generic<span class="clsKbd">CA+P I N F</span></div>
               <div class="clsItem" title="the name Mmn'NN_last of the concept" data-cmd="cmdInhLast">last-update<span class="clsKbd">CA+P I N L</span></div>
-              <div class="clsItem" title="the attribute sections of the concept in number order" data-cmd="cmdInhReorder">reorder<span class="clsKbd">CA+P I N O</span></div>
+              <div class="clsItem" title="the numbers of the concept without duplicates or gaps, its names as its titles, its sections in number order, its NN_last (the specifics follow)" data-cmd="cmdInhReorder">reorder<span class="clsKbd">CA+P I N O</span></div>
               <div class="clsSep"></div>
               <div class="clsItem" title="the attribute is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">CA+P I D G</span></div>
               <div class="clsItem" title="an inherited attribute (chosen) is written into the concept as NN_x of C" data-cmd="cmdInhSpecialize">specialize<span class="clsKbd">CA+P I D S</span></div>
@@ -2040,6 +2063,52 @@ async function fInsertGenSpeSource(sKindIn) {
   vscode.window.setStatusBarMessage('Mcs: ' + oGen.sHow + (sAlso ? '; ' + sAlso : ''), 8000);
 }
 
+let sLastAttrKind = 'num';                                    // the-last kind of edit/insert/concept/attribute
+
+/**
+ * DOING: edit/insert/concept/attribute (Ctrl+Alt+P C A): it asks the-kind (own-numbered | unnumbered | specific)
+ *   and the-name, and builds the-edits for the-concept at nOffIn of oDocIn (omModel.fBuildAttr).
+ * OUTPUT: { aoEdit, sIdNew, sHow }, or null (Escape, or a-message shown).
+ */
+async function fBuildAttrAt(oDocIn, nOffIn) {
+  const aoPick = [
+    { label: 'own-numbered', description: 'NN_word of Main: after its last numbered attribute; NN = its NN_last + 1', sKind: 'num' },
+    { label: 'unnumbered', description: 'word of Main: at the end of its MISC-ATTRIBUTE (created if missing)', sKind: 'misc' },
+    { label: 'specific', description: 'Main.word: at the end of the concept, and in its specific-tree', sKind: 'spe' }
+  ].sort((oA, oB) => (oB.sKind === sLastAttrKind) - (oA.sKind === sLastAttrKind));
+  const oPick = await vscode.window.showQuickPick(aoPick, { placeHolder: 'insert-attribute: own-numbered | unnumbered | specific' });
+  if (!oPick) return null;
+  sLastAttrKind = oPick.sKind;
+  const sWord = await vscode.window.showInputBox({ prompt: 'insert-attribute (' + oPick.label + '): its name, e.g. mapping relation' });
+  if (!sWord || !sWord.trim()) return null;
+  const oOut = omModel.fBuildAttr(oDocIn.getText(), nOffIn, oPick.sKind, sWord, fDateToday(),
+    path.basename(oDocIn.uri.fsPath).replace(/\.last\.html$/i, ''));
+  if (oOut.sWhy) { vscode.window.showWarningMessage('Mcs insert-attribute: ' + oOut.sWhy); return null; }
+  return oOut;
+}
+
+/** DOING: edit/insert/concept/attribute in a-source tab: the-concept of the-cursor; the-cursor after the-"<br>· " of the-new description. */
+async function fInsertAttrSource() {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  const oDoc = oEd.document;
+  const oAttr = await fBuildAttrAt(oDoc, oDoc.offsetAt(oEd.selection.active));
+  if (!oAttr) return;
+  const bOk = await oEd.edit((oBuilder) => {
+    for (const oE of oAttr.aoEdit) oBuilder.replace(new vscode.Range(oDoc.positionAt(oE.nStart), oDoc.positionAt(oE.nEnd)), oE.sText);
+  });
+  if (!bOk) return;
+  const sText = oDoc.getText();
+  const nDsn = sText.indexOf(`id="${oAttr.sIdNew}dsn"`);
+  const nDot = nDsn < 0 ? -1 : sText.indexOf('<br>· ', nDsn);
+  if (nDot >= 0) {
+    const oPos = oDoc.positionAt(nDot + '<br>· '.length);
+    oEd.selection = new vscode.Selection(oPos, oPos);
+    oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
+  }
+  vscode.window.setStatusBarMessage('Mcs: ' + oAttr.sHow, 8000);
+}
+
 /**
  * DOING: it runs dirValid/inheritEdit.mjs on the-worldview of sFileIn (it reads the-whole worldview, ~5 s).
  * OUTPUT: its JSON { bOk, sWhy?, … }.
@@ -2075,7 +2144,7 @@ const ooInhOp = {
   'number-own': { sLabel: 'number-own', sNote: 'The specifics that inherit these numbers follow, in every file of the worldview.' },
   'number-generic': { sLabel: 'number-from-generic', sNote: 'The specifics that inherit these numbers follow, in every file of the worldview.' },
   last: { sLabel: 'last-update', sNote: '' },
-  reorder: { sLabel: 'reorder', sNote: '' },
+  reorder: { sLabel: 'reorder', sNote: 'Duplicate or gap numbers become consecutive; the specifics that inherit them follow.' },
   generalize: { sLabel: 'generalize', sNote: 'The own numbers of the specifics of the generic shift up, in every file of the worldview.' },
   specialize: { sLabel: 'specialize', sNote: '' },
   'specialize-join': { sLabel: 'specialize-join', sNote: 'Each attribute gets a description:: with today\'s date and its names; then the NN_last of the concept.' },

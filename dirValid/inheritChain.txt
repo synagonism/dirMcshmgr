@@ -1,6 +1,6 @@
-inheritance-chain of modelSyst (McshCor000012:986 #idMdl034)
-  [modelSyst](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034)
-  chain: entity → whole → model → system → modelSyst
+inheritance-chain of system (McshCor000011:20 #idOverview)
+  [system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idOverview)
+  chain: entity → whole → system
 === entity:
   [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
   [entity'02_expression](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntexrn)
@@ -13,56 +13,15 @@ inheritance-chain of modelSyst (McshCor000012:986 #idMdl034)
   .. [whole'info_resource](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlirsc)
   .. [whole'DOING](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhldong)
   .. [whole'evoluting](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlevog)
-=== model:
-  ~ [model'03_archetype](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt001)  overrides whole'03_part
-  ~ [model'04_mapping_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt002)  overrides whole'04_environment
-  [model'05_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt003)
-  [model'06_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt009)
-  [model'07_mapping_doing](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlmpgdong)
-  [model'08_medium](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt004)
-  [model'09_evaluation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdleval)
-  [model'10_user](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt018)
-  .. [model'info_resource](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlirsc)
-  .. [model'DOING](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdldong)
-  .. [model'evoluting](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlevog)
 === system:
-  ~ [system'05_node](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyspart)  overrides model'05_mapping_method
-  ~ [system'06_node_relation](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysndrn)  overrides model'06_implementor
-  ~ [system'07_structure](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssrtr)  overrides model'07_mapping_doing
-  ~ [system'08_science](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssci)  overrides model'08_medium
+  [system'05_node](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyspart)
+  [system'06_unit](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt003)
+  [system'07_unit_system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt004)
+  [system'07_structure](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssrtr)
+  [system'08_science](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssci)
   .. [system'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysmisc)
   .. [system'info_resource](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysirsc)
   .. [system'DOING](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysdong)
   .. [system'evoluting](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysevog)
-=== modelSyst:
-  ~ [modelSyst'05_node](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt005)  overrides system'05_node
-  ~ [modelSyst'06_node_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt006)  overrides system'06_node_relation
-  [modelSyst'11_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt008)
-  [modelSyst'12_mapping_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt007)
-  ~ [modelSyst'13_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att003)  overrides model'05_mapping_method  ✗ number must be 05_
-  ~ [modelSyst'14_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att009)  overrides model'06_implementor  ✗ number must be 06_
-  ~ [modelSyst'15_structure](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034srtr)  overrides system'07_structure  ✗ number must be 07_
-  ~ [modelSyst'16_science](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034sci)  overrides system'08_science  ✗ number must be 08_
-  ~ [modelSyst'17_part](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034prt)  overrides whole'03_part  ✗ number must be 03_
-  ~ [modelSyst'18_environment](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034envt)  overrides whole'04_environment  ✗ number must be 04_
-=== join modelSyst: the-union of model + system, nothing lost:
-  01  entity'01_attribute  (not written: inherited)
-  02  entity'02_expression  (not written: inherited)
-  03  model'03_archetype  (not written: inherited)
-  04  model'04_mapping_relation  (not written: inherited)
-  05  system'05_node  = [modelSyst'05_node](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt005)
-  06  system'06_node_relation  = [modelSyst'06_node_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt006)
-  07  model'07_mapping_doing  (not written: inherited)
-  08  model'08_medium  (not written: inherited)
-  09  model'09_evaluation  (not written: inherited)
-  10  model'10_user  (not written: inherited)
-  13  model'05_mapping_method  = [modelSyst'13_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att003)
-  14  model'06_implementor  = [modelSyst'14_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att009)
-  15  system'07_structure  = [modelSyst'15_structure](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034srtr)
-  16  system'08_science  = [modelSyst'16_science](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034sci)
-  17  whole'03_part  = [modelSyst'17_part](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034prt)
-  18  whole'04_environment  = [modelSyst'18_environment](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034envt)
-  11  own [modelSyst'11_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt008)
-  12  own [modelSyst'12_mapping_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt007)
-  last: 18_
+  last: 08_
 

@@ -1344,6 +1344,12 @@
   "command": "mcshv.insertTreeParentChild",
   "when": "editorTextFocus"
 },
+// p c a :: hitP Concept Attribute (asks own-numbered | unnumbered | specific, and its name)
+{
+  "key": "ctrl+alt+p c a",
+  "command": "mcshv.insertAttribute",
+  "when": "editorTextFocus"
+},
 // p c g :: hitP Concept Generic (asks McshX#idY: in the generic-tree, or × generic of a para-concept)
 {
   "key": "ctrl+alt+p c g",
