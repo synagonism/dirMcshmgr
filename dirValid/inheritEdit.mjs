@@ -33,6 +33,8 @@ import { fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, 
 
 const
   aVersion = [
+    'inheritEdit.mjs.0-4-0.2026-11-26: specialize-join: every renumbered attribute of a-join it does NOT write, written (specialize), then its Mmn\'NN_last',
+    'inheritEdit.mjs.0-3-0.2026-11-26: the-number-space of a-concept (oRes.fFindNumSpace(oNode)): a-join of 2+ generics loses nothing; the-numbers are oSpace.sNum',
     'inheritEdit.mjs.0-2-0.2026-11-25: number-own, number-generic, last, reorder, delete-empty (one concept), specialize, rename, go-generic, go-specific',
     'inheritEdit.mjs.0-1-0.2026-11-25: creation: show, renumber (a-move, specifics follow), generalize (a-copy to the-generic)'
   ],
@@ -84,13 +86,13 @@ const fNumbered = oC => oC.bAttr && oC.sNum && !oC.bTree;
 function fShow(oW, oNodeIn) {
   const oC = fFindConcept(oNodeIn);
   const aoChain = oW.oRes.fFindChain(oC);
-  const aoSpace = oW.oRes.fFindNumSpace(aoChain);
+  const aoSpace = oW.oRes.fFindNumSpace(oC);
   const fPath = oN => oW.ooFile[oN.sNameShort].sPath;
   const oSetOwnMatched = new Set();
-  const aoItem = aoSpace.map(({ oGen, oGenAttr }) => {
+  const aoItem = aoSpace.map(({ oGen, oGenAttr, sNum }) => {
     const oOwn = oC.aoChild.find(oA => oA.bAttr && !oA.bTree && oW.oRes.fMatchAttr(oA, [{ oGen, oGenAttr }]));
     if (oOwn) oSetOwnMatched.add(oOwn);
-    return { sNum: oGenAttr.sNum, sWord: oGenAttr.sAttrWord, sGen: oGen.sMain || oGen.sTitle,
+    return { sNum, sWord: oGenAttr.sAttrWord, sGen: oGen.sMain || oGen.sTitle,
       sPathGen: fPath(oGenAttr), sIdGen: oGenAttr.sId,
       sPathOwn: oOwn ? fPath(oOwn) : '', sIdOwn: oOwn ? oOwn.sId : '', sTitleOwn: oOwn ? oOwn.sTitle : '' };
   });
@@ -113,10 +115,10 @@ function fPlanRenumber(oW, oNodeIn, sToIn) {
   const oAttr = fFindAttr(oNodeIn);
   if (!oAttr || !oAttr.sNum) return { sWhy: 'no numbered attribute "NN_x of M" here' };
   const oC = oAttr.oWholeNode;
-  const aoSpace = oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oC));
+  const aoSpace = oW.oRes.fFindNumSpace(oC);
   const oInh = oW.oRes.fMatchAttr(oAttr, aoSpace);
   if (oInh) return { sWhy: `"${oAttr.sTitle}" is inherited: its number is of ${oInh.oGen.sMain || oInh.oGen.sTitle}'${oInh.oGenAttr.sNum}_${oInh.oGenAttr.sAttrWord} (${oInh.oGenAttr.sNameShort}): renumber it there` };
-  const nChainLast = Math.max(0, ...aoSpace.map(oS => Number(oS.oGenAttr.sNum)));
+  const nChainLast = Math.max(0, ...aoSpace.map(oS => Number(oS.sNum)));
   // the-own numbered attributes: NOT the-inherited ones
   const aoNum = oC.aoChild.filter(oA => fNumbered(oA) && !oW.oRes.fMatchAttr(oA, aoSpace));
   const nMax = Math.max(...aoNum.map(oA => Number(oA.sNum)));
@@ -201,14 +203,14 @@ function fPlanGeneralize(oW, oNodeIn, sGenIn) {
   const oSpec = oAttr.oWholeNode;
   const aoGen = oSpec.aoGeneric.filter(oG => !oG.bTree);
   if (aoGen.length === 0) return { sWhy: `"${oSpec.sMain || oSpec.sTitle}" has no generic` };
-  const oSpaceSpec = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oSpec)));
+  const oSpaceSpec = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oSpec));
   if (oSpaceSpec) return { sWhy: `"${oAttr.sTitle}" is inherited already: ${oSpaceSpec.oGen.sMain}'${oSpaceSpec.oGenAttr.sNum}_${oSpaceSpec.oGenAttr.sAttrWord}` };
   const oGen = sGenIn ? aoGen.find(oG => oG.sKey === sGenIn) : aoGen.length === 1 ? aoGen[0] : null;
   if (!oGen) return { aoGen };
   if (!oGen.sMain) return { sWhy: `the generic "${oGen.sTitle}" has no main-name` };
   // the-next number of G: after its own numbers and its chain's
   const nOwn = Math.max(0, ...oGen.aoChild.filter(fNumbered).map(oA => Number(oA.sNum)));
-  const nChain = Math.max(0, ...oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oGen)).map(oS => Number(oS.oGenAttr.sNum)));
+  const nChain = Math.max(0, ...oW.oRes.fFindNumSpace(oGen).map(oS => Number(oS.sNum)));
   return { oAttr, oSpec, oGen, sNum: fNum2(Math.max(nOwn, nChain) + 1) };
 }
 
@@ -399,15 +401,15 @@ function fFixConcept(sRootIn, oW, oNodeIn, sOpIn, bWriteIn) {
 function fSpecialize(oW, oNodeIn, sKeyGenIn, bWriteIn) {
   const oC = fFindConcept(oNodeIn);
   if (!oC.sMain) return { bOk: false, sWhy: `"${oC.sTitle}" has no main-name` };
-  const aoSpace = oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oC));
+  const aoSpace = oW.oRes.fFindNumSpace(oC);
   const oSpace = aoSpace.find(oS => oS.oGenAttr.sKey === sKeyGenIn);
   if (!oSpace) return { bOk: false, sWhy: `${sKeyGenIn} is not an inherited attribute of ${oC.sMain}` };
   const oOwn = oC.aoChild.find(oA => oA.bAttr && !oA.bTree && oW.oRes.fMatchAttr(oA, [oSpace]));
   if (oOwn) return { bOk: false, sWhy: `${oC.sMain} writes it already: "${oOwn.sTitle}"` };
   const { oGen, oGenAttr } = oSpace;
-  const sNum = oGenAttr.sNum, sWord = oGenAttr.sAttrWord.trim();
+  const sNum = oSpace.sNum, sWord = oGenAttr.sAttrWord.trim();
   const sTitle = `${sNum}_${sWord} of ${oC.sMain}`;
-  if (!bWriteIn) return { bOk: true, sConcept: oC.sMain, aChange: [`"${sTitle}" written into ${oC.sMain} (${oC.sNameShort}), from ${oGen.sMain}'${sNum}_${sWord}`] };
+  if (!bWriteIn) return { bOk: true, sConcept: oC.sMain, aChange: [`"${sTitle}" written into ${oC.sMain} (${oC.sNameShort}), from ${oGen.sMain}'${oGenAttr.sNum}_${sWord}`] };
   const oFile = oW.ooFile[oC.sNameShort];
   const sText = oFile.sText;
   // the-id: the-stem of C + the-ending of G's attribute id (idRlnMpgmthd → idLOgsmmthd), unique
@@ -441,7 +443,41 @@ function fSpecialize(oW, oNodeIn, sKeyGenIn, bWriteIn) {
   // a-blank line before a-next section; none before the-concept's </section>
   const sBlockAt = /^\s*<section\b/.test(sText.slice(nAt, nAt + 40)) ? sBlock : sBlock.replace(/\n\n$/, '\n');
   moFs.writeFileSync(oFile.sPath, sText.slice(0, nAt) + sBlockAt + sText.slice(nAt));
-  return { bOk: true, aLine: [`WRITE   ${oC.sNameShort} #${sId} "${sTitle}" (from ${oGen.sMain}'${sNum}_${sWord})`], sId, sPath: oFile.sPath };
+  return { bOk: true, aLine: [`WRITE   ${oC.sNameShort} #${sId} "${sTitle}" (from ${oGen.sMain}'${oGenAttr.sNum}_${sWord})`], sId, sPath: oFile.sPath };
+}
+
+// ── specialize-join ──────────────────────────────────────────────────────────
+/**
+ * DOING: a-join (a-concept whose generic-tree:: joins 2+ numbered generics) writes every attribute it
+ *   inherits with ANOTHER number than its generic's (model'05_mapping_method → 13_mapping_method of modelSyst),
+ *   that it does NOT write yet: specialize each; then its Mmn'NN_last.
+ */
+function fSpecializeJoin(sRootIn, oW, oNodeIn, bWriteIn) {
+  const oC = fFindConcept(oNodeIn);
+  const sName = oC.sMain || oC.sTitle;
+  if (!oC.sMain) return { bOk: false, sWhy: `"${oC.sTitle}" has no main-name` };
+  const aoSpace = oW.oRes.fFindNumSpace(oC);
+  if (!aoSpace.bJoin) return { bOk: false, sWhy: `${sName} is not a join (its generic-tree:: has fewer than 2 numbered generics)` };
+  const fWritten = oE => oC.aoChild.some(oA => oA.bAttr && !oA.bTree && oW.oRes.fMatchAttr(oA, [oE]));
+  const aoTodo = aoSpace.filter(oE => oE.sNum !== oE.sNumGen && !fWritten(oE));
+  if (!aoTodo.length) return { bOk: false, sWhy: `${sName} writes every renumbered attribute of its join` };
+  const aKeyGen = aoTodo.map(oE => oE.oGenAttr.sKey);
+  if (!bWriteIn) return { bOk: true, sConcept: sName, aChange: [...aoTodo.map(oE =>
+    `"${oE.sNum}_${oE.oGenAttr.sAttrWord.trim()} of ${sName}" from ${oE.oGen.sMain || oE.oGen.sTitle}'${oE.sNumGen}_${oE.oGenAttr.sAttrWord.trim()}`),
+    `${sName}'NN_last updated`] };
+  const aLine = [];
+  let oWNow = oW, sIdFirst = '', sPath = '';
+  for (const sKeyGen of aKeyGen) {
+    const oNodeNow = fNodeByKey(oWNow, oC.sKey);
+    const oOut = fSpecialize(oWNow, oNodeNow, sKeyGen, true);
+    if (!oOut.bOk) { aLine.push(`SKIP    ${sKeyGen}: ${oOut.sWhy}`); continue; }
+    aLine.push(...oOut.aLine);
+    sIdFirst ||= oOut.sId; sPath ||= oOut.sPath;
+    oWNow = fRead(sRootIn);
+  }
+  const oLast = fFixConcept(sRootIn, oWNow, fNodeByKey(oWNow, oC.sKey), 'last', true);
+  if (oLast.bOk) aLine.push(...oLast.aLine);
+  return { bOk: true, aLine, sId: sIdFirst, sPath };
 }
 
 // ── rename ───────────────────────────────────────────────────────────────────
@@ -456,7 +492,7 @@ function fRename(sRootIn, oW, oNodeIn, sWordIn, bWriteIn) {
   const sWordNew = String(sWordIn).trim();
   if (!/^[^\s,!<>'"]+( [^\s,!<>'"]+)*$/.test(sWordNew)) return { bOk: false, sWhy: `"${sWordNew}" is not a name` };
   const oC = oAttr.oWholeNode;
-  const oInh = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oC)));
+  const oInh = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oC));
   if (oInh) return { bOk: false, sWhy: `"${oAttr.sTitle}" is inherited from ${oInh.oGen.sMain}'${oInh.oGenAttr.sNum}_${oInh.oGenAttr.sAttrWord}: rename it there` };
   const sWordOld = oAttr.sAttrWord.trim().replace(/\s+\([^)]*\)$/, '');
   const fNorm = sIn => sIn.toLowerCase().replace(/\s+\([^)]*\)$/, '').trim();
@@ -506,7 +542,7 @@ function fGo(oW, oNodeIn, sOpIn) {
   let aoTarget;
   if (sOpIn === 'go-generic') {
     if (bOnAttr) {
-      const oInh = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oW.oRes.fFindChain(oAttr.oWholeNode)));
+      const oInh = oW.oRes.fMatchAttr(oAttr, oW.oRes.fFindNumSpace(oAttr.oWholeNode));
       if (!oInh) return { bOk: false, sWhy: `"${oAttr.sTitle}" is not inherited` };
       aoTarget = [fT(oInh.oGenAttr)];
     } else {
@@ -554,6 +590,7 @@ function fMain() {
   else if (/^(plan-)?(number-own|number-generic|last|reorder|delete-empty)$/.test(sOp)) {
     oOut = fFixConcept(sRoot, oW, oNode, sOp.replace(/^plan-/, ''), !sOp.startsWith('plan-'));
   }
+  else if (sOp === 'plan-specialize-join' || sOp === 'specialize-join') oOut = fSpecializeJoin(sRoot, oW, oNode, sOp === 'specialize-join');
   else if (sOp === 'plan-specialize' || sOp === 'specialize') oOut = fSpecialize(oW, oNode, fArg('--gen'), sOp === 'specialize');
   else if (sOp === 'plan-rename' || sOp === 'rename') oOut = fRename(sRoot, oW, oNode, fArg('--word'), sOp === 'rename');
   else if (sOp === 'go-generic' || sOp === 'go-specific') oOut = fGo(oW, oNode, sOp);

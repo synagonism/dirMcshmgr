@@ -2,7 +2,7 @@
   "name": "mcsh-visual",
   "displayName": "Mcsh-visual-manager",
   "description": "Visual-editor for dirMcsh Mcs*/Hitp*.last.html files. Renders the live local-server page, lets you edit the whole page, and on Save re-serializes the WHOLE document to the canonical 2/4-space Mcsh format.",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "date": "2026-11-22",
   "publisher": "synagonism",
   "private": true,
@@ -147,6 +147,11 @@
       {
         "command": "mcshv.inhSpecialize",
         "title": "inheritance-specialize: an inherited attribute (chosen) is written into the concept as NN_x of C",
+        "category": "Mcs"
+      },
+      {
+        "command": "mcshv.inhSpecializeJoin",
+        "title": "inheritance-specialize-join: a join (generic-tree with 2+ numbered generics) writes every attribute it renumbers, then its NN_last",
         "category": "Mcs"
       },
       {

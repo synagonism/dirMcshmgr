@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Report 19:43:28</title>
+<title>Report 08:41:53</title>
 <style>
   body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
   h1 { font-size: 1.4rem; }
@@ -21,8 +21,9 @@
 </head>
 <body>
 <h1>Hitp|Mcsh Consistency Report</h1>
-<p>Generated: 11/25/2026, 7:43:28 PM</p>
-<pre class="log">📄 Single-file mode: McshCor000012.last.html
+<p>Generated: 11/26/2026, 8:41:53 AM</p>
+<pre class="log">📄 Single-file mode: McshLag000007.last.html
+🎯 Concept: #idLHnmdopt (lines 15546-30057)
 🔍 Running Hitp checks...
    Hvre01    Duplicate ids... 0 issues
    Hvre02/Hvre03/Hvre04 Missing ids... 0 issues
@@ -56,7 +57,7 @@
    MvrwId13_suffix_srtr  Ids srtr_structure_suffix... 0 issues
    MvrwGstr01_gnsp_then_spgn gnsp_then_spgn... 0 issues
    MvrwGstr02_spgn_then_gnsp spgn_then_gnsp... 0 issues
-   MvrwGstr03_inherited_attr inherited_attr... 1 issues
+   MvrwGstr03_inherited_attr inherited_attr... 0 issues
    MvrwMain01_Attrbase Main-names Attrbase... 0 issues
    MvrwMain02_evolg Main-names evolg_evoluting... 0 issues
    MvrwMain03_eval Main-names evaln_evaluation, evalg_evaluating... 0 issues
@@ -71,7 +72,7 @@
    MvrwName01_formal Names formal... 0 issues</pre>
 <div class="summary">
   <span style="color:#c00">🔴 0 errors</span>
-  <span style="color:#c60">🔶 1 warnings</span>
+  <span style="color:#c60">🔶 0 warnings</span>
   <span style="color:#069">🔵 0 info</span>
 </div>
 <input type="text" id="filter" placeholder="Filter by file or message..." oninput="filterRows(this.value)">
@@ -80,13 +81,7 @@
     <tr><th>Level</th><th>Code</th><th>File:line</th><th>Message</th><th>Concept</th></tr>
   </thead>
   <tbody id="tbody">
-    <tr class="wrn">
-        <td>🔶WARN</td>
-        <td>MvrwGstr03_inherited_attr</td>
-        <td>McshCor000012:818</td>
-        <td>inherited_attr: own attribute "all-models-are-wrong of modelStat" has no number: it gets 11_, AFTER the-last number 10_ of its inherited-attr-chain (model'10_user@McshCor000012#idMdlatt018) (inheritMcsh --fix)</td>
-        <td></td>
-      </tr>
+    
   </tbody>
 </table>
 <script>
@@ -97,5 +92,74 @@ function filterRows(q) {
   });
 }
 </script>
+<h2 id="idFix">the fix: createMcsh.txt</h2>
+<pre class="log">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  createMcsh --auto --file McshLag000007 --fix: C:\dirNodews\dirMcsh
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1 files written · attribute 7 · MvrwGstr03_inherited_attr 10 · MvrwMain11_line 6 · 4 skipped
+  written, no backup: see git diff
+
+=== SKIP (4) — skipped, with why: fix by hand
+  McshLag000007:16239  #idSys002Wlpt in dirCor/McshCor000008.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:18991  #idMcsattNamDzrCnptr in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:27993  #idRlnCausestx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:28057  #idRlnGoalstx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+
+=== OUTSIDE (1) — 
+  McshLag000007  3 edit(s) outside #idLHnmdopt NOT written
+
+=== ATTR (7) — MvrwMain10_attribute: an-attribute | specific title set to "x of M" | "M.x" and its formal name M'x | M.x added
+  McshLag000007:19693  #idLHnmdname014  "Hnmdname.systematicNo"  + McshEngl.Hnmdname.systematicNo
+  McshLag000007:19821  #idLHnmdname021  "Hnmdname.phrasal|compound"  + McshEngl.Hnmdname.phrasal|compound
+  McshLag000007:19850  #idLHnmdname022  "Hnmdname.phrasalNo|compoundNo"  + McshEngl.Hnmdname.phrasalNo|compoundNo
+  McshLag000007:19118  #idLHnmdname005  "Hnmdterm.wordOne"  + McshEngl.Hnmdterm.wordOne
+  McshLag000007:19145  #idLHnmdname017  "Hnmdterm.wordTwo"  + McshEngl.Hnmdterm.wordTwo
+  McshLag000007:19164  #idLHnmdname018  "Hnmdterm.wordThree"  + McshEngl.Hnmdterm.wordThree
+  McshLag000007:19183  #idLHnmdname006  "Hnmdterm.wordMany"  + McshEngl.Hnmdterm.wordMany
+
+=== NOISSUE (23) — the-rule has no issue in the-file
+  McshLag000007  MvrwId01_char: nothing to fix
+  McshLag000007  MvrwId02_suffix_dong: nothing to fix
+  McshLag000007  MvrwId04_suffix_eval: nothing to fix
+  McshLag000007  MvrwId05_suffix_evog: nothing to fix
+  McshLag000007  MvrwId06_suffix_irsc: nothing to fix
+  McshLag000007  MvrwId07_suffix_pntr: nothing to fix
+  McshLag000007  MvrwId08_suffix_chtr: nothing to fix
+  McshLag000007  MvrwId09_suffix_wltr: nothing to fix
+  McshLag000007  MvrwId10_suffix_prtr: nothing to fix
+  McshLag000007  MvrwId11_suffix_gntr: nothing to fix
+  McshLag000007  MvrwId12_suffix_sptr: nothing to fix
+  McshLag000007  Hvre05: nothing to fix
+  McshLag000007  MvrwMain01_Attrbase: nothing to fix
+  McshLag000007  MvrwMain02_evolg: nothing to fix
+  McshLag000007  MvrwMain03_eval: nothing to fix
+  McshLag000007  MvrwMain04_doing: nothing to fix
+  McshLag000007  MvrwMain05_infrsc: nothing to fix
+  McshLag000007  MvrwMain06_srtr: nothing to fix
+  McshLag000007  MvrwMain07_Attrbase_line: nothing to fix
+  McshLag000007  MvrwName01_formal: nothing to fix
+  McshLag000007  MvrwSect04_name_empty: nothing to fix
+  McshLag000007  MvrwMisc01_date: nothing to fix
+  McshLag000007  MvrwGstr03_inherited_attr: nothing to fix
+
+=== INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
+  titles changed: 34
+  name:: paragraphs changed: 33
+  NN_last names changed: 1
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
+  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
+  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
+  written: see dirValid/inheritMcsh.txt
+
+=== MAIN (6) — 
+  McshLag000007:19705  nameSystematicNo: first "nameSystematicNo"
+  McshLag000007:19834  namePhrasal: first "namePhrasal"
+  McshLag000007:19126  termOne: first "termOne"
+  McshLag000007:19154  termTwo: first "termTwo"
+  McshLag000007:19174  termThree: first "termThree"
+  McshLag000007:19196  termMany: first "termMany"</pre>
 </body>
 </html>

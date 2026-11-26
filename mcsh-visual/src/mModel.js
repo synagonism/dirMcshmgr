@@ -502,13 +502,16 @@ function fFindNameOfConcept(sTextIn, sIdIn) {
   if (!aFirst) return { sName: '', sWhy: `#${sIdIn} has no English name` };
   const { sMain } = fFindMainName(/<p\b[^>]*>name::/.test(sOwn) ? sOwn : '<p>name::' + sOwn + '</p>');
   const sName = sMain || aFirst[1].split('!')[0].split('~')[0].trim();
-  // the-descriptive-main-name: "Main!=Descr", else the-first "Descr!⇒Main", else the-name
+  // the-descriptive-main-name: the-first "Main!=Descr" LONGER than the-main-name (entity!=Entt is an-abbreviation:
+  //   the-main-name "entity" is descriptive itself); no "Main!=": the-first "Descr!⇒Main" longer, not a-file path;
+  //   none: the-name
   let sDescr = '';
   if (sMain) {
     const sMainEsc = sMain.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const aEq = sOwn.match(new RegExp(`<br>\\*\\s*McshEngl\\.${sMainEsc}!=([^\\n,!{]+)`));
-    const aTo = sOwn.match(new RegExp(`<br>\\*\\s*McshEngl\\.([^\\n,!]+)!⇒${sMainEsc}\\s*[,{]`));
-    sDescr = aEq ? aEq[1].trim() : aTo ? aTo[1].trim() : '';
+    const aEq = [...sOwn.matchAll(new RegExp(`<br>\\*\\s*McshEngl\\.${sMainEsc}!=([^\\n,!{]+)`, 'g'))].map((aM) => aM[1].trim());
+    const aTo = [...sOwn.matchAll(new RegExp(`<br>\\*\\s*McshEngl\\.([^\\n,!]+)!⇒${sMainEsc}\\s*[,{]`, 'g'))].map((aM) => aM[1].trim());
+    const fLonger = (sD) => sD.length > sMain.length && !/\.last\.html|\/\/dir|^dir/.test(sD);
+    sDescr = (aEq.length ? aEq : aTo).find(fLonger) || '';
   }
   return { sName, sDescr: sDescr || sName, sWhy: '' };
 }

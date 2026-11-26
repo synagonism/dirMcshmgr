@@ -51,6 +51,8 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-25-1.2026-11-26: INH-EMPTY: NOT an-attribute of a-join with another number than its generic\'s (it says its number)',
+    'inheritMcsh.mjs.0-25-0.2026-11-26: a-JOIN (a-concept with 2+ numbered generics) loses nothing: its space is the-union of its generics\' spaces, numbered by the-join (its written numbers, then the-generic\'s if free, then after the-last); its specifics inherit the-joined numbers',
     'inheritMcsh.mjs.0-24-1.2026-11-25: a-title note "x (4_digits) of M" (a-space, then any (…)) is dropped like a-new name',
     'inheritMcsh.mjs.0-24-0.2026-11-25: INH-OWNNUM: the-own numbers run WITHOUT gaps from the-chain last + 1, in their order (inner gaps and twice-given numbers too)',
     'inheritMcsh.mjs.0-23-4.2026-11-25: MvrwGstr03 reports INH-GENDUP (two attributes with the-same NN_ in a-concept)',
@@ -312,8 +314,11 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const sIdSect = oFile.oNodeById[aMatch[2]] ? aMatch[2] : oFile.oSectByElmtId[aMatch[2]];
     return sIdSect ? fOwner(oFile.oNodeById[sIdSect]) : null;
   }
-  function fAddGeneric(oSpec, oGen) {
-    if (!oSpec || !oGen || oSpec === oGen || oSpec.aoGeneric.includes(oGen)) return;
+  function fAddGeneric(oSpec, oGen, bTreeIn) {
+    if (!oSpec || !oGen || oSpec === oGen) return;
+    // the-order of its generic-tree:: (the-order of a-join), NOT the-order the-files are read
+    if (bTreeIn && !(oSpec.aoGenTree ??= []).includes(oGen)) oSpec.aoGenTree.push(oGen);
+    if (oSpec.aoGeneric.includes(oGen)) return;
     oSpec.aoGeneric.push(oGen);
   }
 
@@ -363,18 +368,18 @@ function fCheck(aoFileIn, nLocalMinIn) {
     if (oNode.sGenericTree) {
       const sGtr = oNode.sGenericTree.split(/<br>===\s*(?:sibling|att)/)[0];
       for (const sHref of [...fExtractContentHrefs(sGtr), ...fExtractRefs(sGtr)]) {
-        fAddGeneric(oOwner, fResolveHref(sHref, oNode));
+        fAddGeneric(oOwner, fResolveHref(sHref, oNode), true);
       }
       // the-text-entries "* system:generic," — the-standard way to denote the-generic
       for (const aUse of sGtr.matchAll(rGntrUse)) {
         const oResolved = fResolveGntr(aUse[1]);
-        if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode);
+        if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode, true);
         else aoGntrText.push({ oAttr: oNode, sLabel: `${aUse[1]}: ${oResolved.sWhy}` });
       }
       // a-plain-name "* X," resolves as "X:generic": its generic-tree, else the-ONE concept named X
       for (const aUse of sGtr.matchAll(rGntrPlain)) {
         const oResolved = fResolveGntr(aUse[1] + ':generic');
-        if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode);
+        if (oResolved.oNode) fAddGeneric(oOwner, oResolved.oNode, true);
         else aoGntrText.push({ oAttr: oNode, sLabel: `${aUse[1]} (plain name): ${oResolved.sWhy}` });
       }
     }
@@ -408,28 +413,117 @@ function fCheck(aoFileIn, nLocalMinIn) {
   function fIsNumbered(oGenIn) {
     return oGenIn.aoChild.some(oC => oC.bAttr && oC.sNum);
   }
-  // the-number-space of a-specific: the-numbered attributes of its generic-chain, as
-  //   inheritance: a-nearer generic wins; a-farther attribute enters ONLY if its NN and
-  //   its attr-words are still free (disorderBio'08_resource vs disease'08_patient: out).
-  function fFindNumSpace(aoChainIn) {
-    const aoSpace = [];
-    const oSetNum = new Set();
-    const oSetKey = new Set();
-    for (const oGen of aoChainIn) {
-      const aoAdd = [];
-      for (const oGenAttr of oGen.aoChild) {
-        if (!oGenAttr.bAttr || !oGenAttr.sNum || oGenAttr.bTree) continue;
-        if (oSetNum.has(oGenAttr.sNum)) continue;
-        if ([...oGenAttr.oSetAttrKey].some(sKey => oSetKey.has(sKey))) continue;
-        aoAdd.push({ oGen, oGenAttr });
+  // the-number-space of a-concept: the-numbered attributes it inherits, [{ oGen, oGenAttr, sNum }],
+  //   sNum its number IN this space. as inheritance: a-nearer generic wins; a-farther attribute enters
+  //   ONLY if its NN and its attr-words are still free (disorderBio'08_resource vs disease'08_patient: out).
+  //   a-JOIN (2+ generics with numbers, modelSyst = model + system) loses NOTHING: the-union of their
+  //   spaces (one entry per attribute, by attr-key), numbered by the-join: the-number it writes, else
+  //   the-generic's if free, else the-next after the-last (generic-tree:: order). aoSpace.bJoin.
+  const ooSpaceMemo = new Map();
+  // the-own numbered attributes of a-generic, as space entries
+  const fOwnEntry = oGen => oGen.aoChild.filter(oA => oA.bAttr && oA.sNum && !oA.bTree)
+    .map(oGenAttr => ({ oGen, oGenAttr, sNum: oGenAttr.sNum }));
+  // the-generics of a-join: those its generic-tree:: names, with numbers in them or their chain, NOT one
+  //   in the-chain of another (HbsystDigestive: Hbsyst, Humnbody); fewer than 2: NOT a-join.
+  //   the-generics of the-structure (a-section in its whole) or of a-specific-tree:: do NOT make a-join
+  const ooJoinGen = new Map();
+  function fFindJoinGen(oNodeIn) {
+    if (ooJoinGen.has(oNodeIn)) return ooJoinGen.get(oNodeIn);
+    const aoTree = (oNodeIn.aoGenTree ?? []).filter(oG => oNodeIn.aoGeneric.includes(oG) && !oG.bTree &&
+      (fIsNumbered(oG) || fFindChain(oG).some(fIsNumbered)));
+    const aoGen = aoTree.filter(oG => !aoTree.some(oH => oH !== oG && fFindChain(oH).includes(oG)));
+    const aoOut = aoGen.length >= 2 ? aoGen : null;
+    ooJoinGen.set(oNodeIn, aoOut);
+    return aoOut;
+  }
+  function fFindNumSpace(oNodeIn) {
+    if (ooSpaceMemo.has(oNodeIn)) return ooSpaceMemo.get(oNodeIn) ?? [];
+    ooSpaceMemo.set(oNodeIn, null);   // a-cycle: empty
+    const aoJoinGen = fFindJoinGen(oNodeIn);
+    const aoSpace = aoJoinGen ? fFindNumSpaceJoin(oNodeIn, aoJoinGen) : fFindNumSpaceChain(oNodeIn);
+    ooSpaceMemo.set(oNodeIn, aoSpace);
+    return aoSpace;
+  }
+  // NO join: the-generic-chain, nearest first, a-level at once: a-nearer generic wins; a-farther attribute
+  //   enters ONLY if its NN and its attr-words are still free (disorderBio'08_resource vs disease'08_patient: out).
+  //   a-join on the-chain gives its joined space (its own attributes, then its union), its generics NOT walked.
+  function fFindNumSpaceChain(oNodeIn) {
+    const aoSpace = [], oSetNum = new Set(), oSetKey = new Set();
+    const oSetSeen = new Set([oNodeIn]);
+    let aoLevel = oNodeIn.aoGeneric.slice();
+    while (aoLevel.length) {
+      const aoNext = [];
+      for (const oGen of aoLevel) {
+        if (oSetSeen.has(oGen)) continue;
+        oSetSeen.add(oGen);
+        const bJoinGen = !!fFindJoinGen(oGen);
+        const aoAdd = [];
+        for (const oE of bJoinGen ? [...fOwnEntry(oGen), ...fFindNumSpace(oGen)] : fOwnEntry(oGen)) {
+          if (oE.oGenAttr.bTree || oSetNum.has(oE.sNum)) continue;
+          if ([...oE.oGenAttr.oSetAttrKey].some(sKey => oSetKey.has(sKey))) continue;
+          // the-own attributes of a-join over its union (a-key once)
+          if (aoAdd.some(oA => [...oA.oGenAttr.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK)))) continue;
+          aoAdd.push(oE);
+        }
+        // one level at once: a-generic's own NN-duplicates are INH-GENDUP, not shadowing
+        for (const oAdd of aoAdd) {
+          oSetNum.add(oAdd.sNum);
+          for (const sKey of oAdd.oGenAttr.oSetAttrKey) oSetKey.add(sKey);
+          aoSpace.push(oAdd);
+        }
+        if (!bJoinGen) aoNext.push(...oGen.aoGeneric);
       }
-      // one level at once: a-generic's own NN-duplicates are INH-GENDUP, not shadowing
-      for (const oAdd of aoAdd) {
-        oSetNum.add(oAdd.oGenAttr.sNum);
-        for (const sKey of oAdd.oGenAttr.oSetAttrKey) oSetKey.add(sKey);
-        aoSpace.push(oAdd);
-      }
+      aoLevel = aoNext;
     }
+    return aoSpace;
+  }
+  // a-JOIN (modelSyst = model + system) loses NOTHING: the-union of the-full spaces of its generics (each
+  //   generic's own numbered attributes over its space), an-attribute once (entity'01 through model and
+  //   system), a-key once; numbered by the-join: 1. the-number it writes (its own numbers kept too),
+  //   2. the-generic's number if free, 3. the-next after the-last, in generic-tree:: order. aoSpace.bJoin.
+  function fFindNumSpaceJoin(oNodeIn, aoGenIn) {
+    const fFull = oGen => {
+      const aoFull = fOwnEntry(oGen), oSetNum = new Set(), oSetKey = new Set();
+      for (const oE of aoFull) { oSetNum.add(oE.sNum); for (const sK of oE.oGenAttr.oSetAttrKey) oSetKey.add(sK); }
+      for (const oE of fFindNumSpace(oGen)) {
+        if (oSetNum.has(oE.sNum) || [...oE.oGenAttr.oSetAttrKey].some(sK => oSetKey.has(sK))) continue;
+        aoFull.push(oE); oSetNum.add(oE.sNum);
+        for (const sK of oE.oGenAttr.oSetAttrKey) oSetKey.add(sK);
+      }
+      return aoFull;
+    };
+    const aoUnion = [], oSetAttr = new Set(), oSetKey = new Set();
+    for (const oGen of aoGenIn) for (const oE of fFull(oGen)) {
+      if (oSetAttr.has(oE.oGenAttr) || [...oE.oGenAttr.oSetAttrKey].some(sK => oSetKey.has(sK))) continue;
+      oSetAttr.add(oE.oGenAttr);
+      for (const sK of oE.oGenAttr.oSetAttrKey) oSetKey.add(sK);
+      aoUnion.push(oE);
+    }
+    // 1. the-numbers the-join writes: of its attributes that match an-entry, and its own ones (kept)
+    const oSetUsed = new Set(), aoOut = new Array(aoUnion.length), oSetMatched = new Set();
+    const aoOwnNum = oNodeIn.aoChild.filter(oC => oC.bAttr && oC.sNum && !oC.bTree);
+    aoUnion.forEach((oE, nI) => {
+      const oOwn = aoOwnNum.find(oA => !oSetMatched.has(oA) && [...oA.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK)));
+      if (oOwn && !oSetUsed.has(oOwn.sNum)) {
+        oSetMatched.add(oOwn); oSetUsed.add(oOwn.sNum);
+        aoOut[nI] = { ...oE, sNum: oOwn.sNum, sNumGen: oE.sNum, bJoin: true };
+      }
+    });
+    for (const oA of aoOwnNum) if (!oSetMatched.has(oA)) oSetUsed.add(oA.sNum);
+    // 2. the-generic's number, if free
+    aoUnion.forEach((oE, nI) => {
+      if (aoOut[nI] || oSetUsed.has(oE.sNum)) return;
+      oSetUsed.add(oE.sNum);
+      aoOut[nI] = { ...oE, sNumGen: oE.sNum, bJoin: true };
+    });
+    // 3. the-next numbers after the-last
+    let nNext = Math.max(0, ...[...oSetUsed].map(Number));
+    aoUnion.forEach((oE, nI) => {
+      if (!aoOut[nI]) aoOut[nI] = { ...oE, sNum: String(++nNext).padStart(2, '0'), sNumGen: oE.sNum, bJoin: true };
+    });
+    const aoSpace = aoOut.sort((oA, oB) => Number(oA.sNum) - Number(oB.sNum));
+    aoSpace.bJoin = true;
+    aoSpace.aoJoinGen = aoGenIn;
     return aoSpace;
   }
   // the-numbered generic-attribute of the-number-space that matches an-attribute-node
@@ -446,6 +540,8 @@ function fCheck(aoFileIn, nLocalMinIn) {
     return `${oGen.sMain || oGen.sTitle}'${oGenAttr.sNum}_${oGenAttr.sAttrWord}` +
       `@${oGenAttr.sNameShort}#${oGenAttr.sId}`;
   }
+  // the-label of a-space entry: a-joined number too
+  const fLabelSpace = oS => fLabel(oS.oGen, oS.oGenAttr) + (oS.sNum !== oS.oGenAttr.sNum ? ` (joined as ${oS.sNum}_)` : '');
   // an-attribute that says nothing: no link, no part, no other para, description:: only a-date
   function fIsEmpty(oAttrIn) {
     if (oAttrIn.bLinkStub || oAttrIn.bHasChildSect || oAttrIn.nParaOther > 0) return false;
@@ -473,10 +569,10 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const aoChain = fFindChain(oNode);
     const oGenNum = aoChain.find(fIsNumbered);
     if (!oGenNum) continue;
-    const aoSpace = fFindNumSpace(aoChain);
+    const aoSpace = fFindNumSpace(oNode);
     // the-last number of the-inherited-attr-chain
-    const oSpaceLast = aoSpace.reduce((oMax, oS) => !oMax || Number(oS.oGenAttr.sNum) > Number(oMax.oGenAttr.sNum) ? oS : oMax, null);
-    const nNumLast = oSpaceLast ? Number(oSpaceLast.oGenAttr.sNum) : 0;
+    const oSpaceLast = aoSpace.reduce((oMax, oS) => !oMax || Number(oS.sNum) > Number(oMax.sNum) ? oS : oMax, null);
+    const nNumLast = oSpaceLast ? Number(oSpaceLast.sNum) : 0;
     nSpecific++;
     // the-order key of an-attribute: its OWN NN as the-reader sees it, else its generic's NN
     const aoOrder = [];
@@ -486,11 +582,12 @@ function fCheck(aoFileIn, nLocalMinIn) {
     // own numbering: a-numbered attribute NOT as the-generic numbers it (ChmcElry 01..12).
     //   then ONLY its own numbers count: its unnumbered attributes (info-resource, DOING,
     //   evoluting at the-end) get NO generic NN and NO order key.
-    const bOwnNumbering = oNode.aoChild.some(oC => {
+    //   a-join numbers its space itself: NO own numbering
+    const bOwnNumbering = !aoSpace.bJoin && oNode.aoChild.some(oC => {
       if (!oC.bAttr || oC.bTree || !oC.sNum) return false;
       const oM = fMatchAttr(oC, aoSpace);
       // an-own attribute numbered AFTER the-chain is the-rule, NOT own numbering
-      return oM ? oM.oGenAttr.sNum !== oC.sNum : Number(oC.sNum) <= nNumLast;
+      return oM ? oM.sNum !== oC.sNum : Number(oC.sNum) <= nNumLast;
     });
     // the-own numbered attributes; those NOT after the-chain's last number (INH-OWNNUM)
     const aoOwnNum = [], aoOwnNoNum = [];
@@ -516,31 +613,32 @@ function fCheck(aoFileIn, nLocalMinIn) {
         continue;
       }
       nMatch++;
-      const { oGen, oGenAttr } = oMatch;
-      const sLabel = fLabel(oGen, oGenAttr);
+      const { oGen, oGenAttr, sNum: sNumSpace } = oMatch;
+      const sLabel = fLabelSpace(oMatch);
       (oCountRefine[oGenAttr.sKey] ??= { sLabel, nCount: 0 }).nCount++;
-      const oIssue = { oAttr, sNumNew: oGenAttr.sNum, sLabel, sKeyGen: oGenAttr.sKey };
+      const oIssue = { oAttr, sNumNew: sNumSpace, sLabel, sKeyGen: oGenAttr.sKey };
       if (!oAttr.sNum) {
         // the-NN is taken by another attribute of the-specific: --fix skips it
-        const oTaken = oNumTaken[oGenAttr.sNum];
+        const oTaken = oNumTaken[sNumSpace];
         if (bOwnNumbering) oIssue.bOwn = true;
         else if (oTaken && oTaken !== oAttr) oIssue.sTaken = oTaken.sTitle;
-        else oNumTaken[oGenAttr.sNum] = oAttr;
+        else oNumTaken[sNumSpace] = oAttr;
         ooIssue['INH-NONUM'].push(oIssue);
       }
-      else if (oAttr.sNum !== oGenAttr.sNum) ooIssue['INH-WRONGNUM'].push(oIssue);
-      if (fIsEmpty(oAttr)) ooIssue['INH-EMPTY'].push(oIssue);
+      else if (oAttr.sNum !== sNumSpace) ooIssue['INH-WRONGNUM'].push(oIssue);
+      // a-join's attribute with another number than its generic's says its number: NOT empty
+      if (fIsEmpty(oAttr) && sNumSpace === oGenAttr.sNum) ooIssue['INH-EMPTY'].push(oIssue);
       // a-taken NN will NOT be its number: no key, it stays where it is
-      if (!oIssue.sTaken && !oIssue.bOwn) aoOrder.push({ oAttr, sNum: oAttr.sNum ?? oGenAttr.sNum });
+      if (!oIssue.sTaken && !oIssue.bOwn) aoOrder.push({ oAttr, sNum: oAttr.sNum ?? sNumSpace });
     }
     // INH-OWNNUM: the-own numbers run WITHOUT gaps right after the-chain's last number, in their
     //   order (number, then place): last 02, 14_x 15_y 04_z 12_w → 03_z 04_w 05_x 06_y. a-number before
     //   the-last, a-gap at the-start or inside, a-twice-given number are-all fixed by the-same renumbering
-    if (aoOwnNum.length && oSpaceLast) {
+    if (aoOwnNum.length && oSpaceLast && !aoSpace.bJoin) {
       const aoSorted = aoOwnNum.map((oA, nI) => ({ oA, nI }))
         .sort((o1, o2) => Number(o1.oA.sNum) - Number(o2.oA.sNum) || o1.nI - o2.nI);
       const aoShift = aoSorted.map(({ oA }, nI) => ({ oAttr: oA, sNumNew: String(nNumLast + 1 + nI).padStart(2, '0'),
-        sLabel: fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr), sKeyGen: oSpaceLast.oGenAttr.sKey }));
+        sLabel: fLabelSpace(oSpaceLast), sKeyGen: oSpaceLast.oGenAttr.sKey }));
       const aoMove = aoShift.filter(oS => oS.sNumNew !== oS.oAttr.sNum);
       const sRange = aoShift[0].sNumNew + '..' + aoShift[aoShift.length - 1].sNumNew;
       for (const oS of aoMove) {
@@ -553,11 +651,11 @@ function fCheck(aoFileIn, nLocalMinIn) {
     //   numbered before the-shift, 02_x 03_y + unnumbered z gave z 04_ while y shifted to 04_ too,
     //   the-collision skipped y and left 03_x 03_y (model {2026-11-25})
     let nNumOwnNext = Math.max(nNumLast,
-      ...(oSpaceLast ? [nNumLast + aoOwnNum.length] : aoOwnNum.map(oA => Number(oA.sNum))),
+      ...(oSpaceLast && !aoSpace.bJoin ? [nNumLast + aoOwnNum.length] : aoOwnNum.map(oA => Number(oA.sNum))),
       ...Object.entries(oNumTaken).filter(([, oA]) => !aoOwnNum.includes(oA)).map(([sN]) => Number(sN)));
     for (const oAttr of aoOwnNoNum) {
       ooIssue['INH-OWNNONUM'].push({ oAttr, sNumNew: String(++nNumOwnNext).padStart(2, '0'), sNumLast: String(nNumLast).padStart(2, '0'),
-        sLabel: oSpaceLast ? fLabel(oSpaceLast.oGen, oSpaceLast.oGenAttr) : '' });
+        sLabel: oSpaceLast ? fLabelSpace(oSpaceLast) : '' });
     }
     for (let nI = 1; nI < aoOrder.length; nI++) {
       if (aoOrder[nI].sNum < aoOrder[nI - 1].sNum) {
@@ -574,7 +672,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
   for (const oGen of oSetGen) {
     if (oGen.bTree || oGen.bAttr || !oGen.sMain || !oGen.bMainTarget) continue;   // a-real main-name: a-!⇒ target
     const nOwnMax = Math.max(0, ...oGen.aoChild.filter(oC => oC.bAttr && oC.sNum && !oC.bTree).map(oC => Number(oC.sNum)));
-    const nChainMax = Math.max(0, ...fFindNumSpace(fFindChain(oGen)).map(oS => Number(oS.oGenAttr.sNum)));
+    const nChainMax = Math.max(0, ...fFindNumSpace(oGen).map(oS => Number(oS.sNum)));
     const nLast = Math.max(nOwnMax, nChainMax);
     const aLastNow = oGen.aName.filter(sName => /'\d{2}_last$/.test(sName));
     const sLastNew = nLast ? `${oGen.sMain}'${String(nLast).padStart(2, '0')}_last` : '';
@@ -624,7 +722,7 @@ function fCheck(aoFileIn, nLocalMinIn) {
  * OUTPUT: the-lines of the-report.
  */
 function fChainReport(aoFileIn, oResultIn, sChainIn, sNameDirIn, sUrlBaseIn) {
-  const { fFindChain, oNodeByMain, oNodeByName } = oResultIn;
+  const { fFindChain, fFindNumSpace, oNodeByMain, oNodeByName } = oResultIn;
   const ooFile = {};
   for (const oFile of aoFileIn) ooFile[oFile.sNameShort] = oFile;
   const aLine = [];
@@ -688,7 +786,26 @@ function fChainReport(aoFileIn, oResultIn, sChainIn, sNameDirIn, sUrlBaseIn) {
       }
       aLine.push(...(aOut.length ? aOut : ['  (empty)']));
     }
-    aLine.push(`  last: ${Math.max(0, ...Object.keys(oNumBy).map(Number)).toString().padStart(2, '0')}_`, '');
+    // a-join numbers the-union of its generics: its numbers are those the-specifics inherit
+    for (const oLevel of aoLevel.slice(0, -1)) {
+      const aoJoin = fFindNumSpace(oLevel);
+      if (!aoJoin.bJoin) continue;
+      aLine.push(`=== join ${fName(oLevel)} (the-numbers its specifics inherit):`);
+      for (const oE of aoJoin) aLine.push(`  ${oE.sNum}  [${fName(oE.oGen)}'${oE.sNumGen}_${oE.oGenAttr.sAttrWord}](${fUrl(oE.oGenAttr)})`);
+    }
+    const aoSpaceNode = fFindNumSpace(oNode);
+    if (aoSpaceNode.bJoin) {
+      aLine.push(`=== join ${fName(oNode)}: the-union of ${aoSpaceNode.aoJoinGen.map(fName).join(' + ')}, nothing lost:`);
+      for (const oE of aoSpaceNode) {
+        const oOwn = oNode.aoChild.find(oA => oA.bAttr && !oA.bTree && [...oA.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK)));
+        aLine.push(`  ${oE.sNum}  ${fName(oE.oGen)}'${oE.sNumGen}_${oE.oGenAttr.sAttrWord}` +
+          (oOwn ? `  = [${fTitleName(oOwn)}](${fUrl(oOwn)})` + (oOwn.sNum && oOwn.sNum !== oE.sNum ? `  ✗ number must be ${oE.sNum}_` : '') : '  (not written: inherited)'));
+      }
+      const aoOwn = oNode.aoChild.filter(oA => oA.bAttr && !oA.bTree && !aoSpaceNode.some(oE => [...oA.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK))));
+      for (const oA of aoOwn) aLine.push(`  ${oA.sNum ?? '..'}  own [${fTitleName(oA)}](${fUrl(oA)})`);
+    }
+    const nLastSpace = Math.max(0, ...fFindNumSpace(oNode).map(oE => Number(oE.sNum)), ...oNode.aoChild.filter(oA => oA.bAttr && oA.sNum && !oA.bTree).map(oA => Number(oA.sNum)));
+    aLine.push(`  last: ${(aoSpaceNode.bJoin ? nLastSpace : Math.max(0, ...Object.keys(oNumBy).map(Number))).toString().padStart(2, '0')}_`, '');
   }
   return aLine;
 }

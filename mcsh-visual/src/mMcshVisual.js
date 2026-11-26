@@ -213,6 +213,7 @@ export function fInitMcshv_bridge() {
     cmdInhReorder: function () { fInherit('reorder'); },
     cmdInhGeneralize: function () { fInherit('generalize'); },
     cmdInhSpecialize: function () { fInherit('specialize'); },
+    cmdInhSpecializeJoin: function () { fInherit('specialize-join'); },
     cmdInhDeleteEmpty: function () { fInherit('delete-empty'); },
     cmdInhRename: function () { fInherit('rename'); },
     cmdInhGoGeneric: function () { fInherit('go-generic'); },
@@ -325,7 +326,7 @@ export function fInitMcshv_bridge() {
     'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
     'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i n w': 'cmdInhNumberOwn', 'ctrl+alt+p i n f': 'cmdInhNumberGen',
     'ctrl+alt+p i n l': 'cmdInhLast', 'ctrl+alt+p i n o': 'cmdInhReorder', 'ctrl+alt+p i d g': 'cmdInhGeneralize',
-    'ctrl+alt+p i d s': 'cmdInhSpecialize', 'ctrl+alt+p i d d': 'cmdInhDeleteEmpty', 'ctrl+alt+p i d m': 'cmdInhRename',
+    'ctrl+alt+p i d s': 'cmdInhSpecialize', 'ctrl+alt+p i d j': 'cmdInhSpecializeJoin', 'ctrl+alt+p i d d': 'cmdInhDeleteEmpty', 'ctrl+alt+p i d m': 'cmdInhRename',
     'ctrl+alt+p i g g': 'cmdInhGoGeneric', 'ctrl+alt+p i g s': 'cmdInhGoSpecific', 'ctrl+alt+p i g l': 'cmdInhShow' };
   // the-clicked line, else the-host takes the-section of the-URL bar's #id
   function fInherit(sOpIn) {

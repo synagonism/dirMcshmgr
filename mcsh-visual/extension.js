@@ -324,6 +324,7 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.inhReorder', () => fRunInheritSource('reorder')),
     vscode.commands.registerCommand('mcshv.inhGeneralize', () => fRunInheritSource('generalize')),
     vscode.commands.registerCommand('mcshv.inhSpecialize', () => fRunInheritSource('specialize')),
+    vscode.commands.registerCommand('mcshv.inhSpecializeJoin', () => fRunInheritSource('specialize-join')),
     vscode.commands.registerCommand('mcshv.inhDeleteEmpty', () => fRunInheritSource('delete-empty')),
     vscode.commands.registerCommand('mcshv.inhRename', () => fRunInheritSource('rename')),
     vscode.commands.registerCommand('mcshv.inhGoGeneric', () => fRunInheritSource('go-generic')),
@@ -1157,6 +1158,7 @@ function fBuildShell(webview, url) {
               <div class="clsSep"></div>
               <div class="clsItem" title="the attribute is copied to a generic as NN_x of G; this one is numbered NN_" data-cmd="cmdInhGeneralize">generalize<span class="clsKbd">CA+P I D G</span></div>
               <div class="clsItem" title="an inherited attribute (chosen) is written into the concept as NN_x of C" data-cmd="cmdInhSpecialize">specialize<span class="clsKbd">CA+P I D S</span></div>
+              <div class="clsItem" title="a join (generic-tree with 2+ numbered generics) writes every attribute it renumbers, then its NN_last" data-cmd="cmdInhSpecializeJoin">specialize-join<span class="clsKbd">CA+P I D J</span></div>
               <div class="clsItem" title="the inherited attributes of the concept that say nothing are deleted" data-cmd="cmdInhDeleteEmpty">delete-empty<span class="clsKbd">CA+P I D D</span></div>
               <div class="clsItem" title="the word of the attribute, here and in the specifics that inherit it" data-cmd="cmdInhRename">rename<span class="clsKbd">CA+P I D M</span></div>
               <div class="clsSep"></div>
@@ -1960,14 +1962,14 @@ async function fBuildGenSpeAt(oDocIn, nOffIn, sKindIn) {
   const sRoot = fFindWorldview(path.dirname(oDocIn.uri.fsPath));
   if (!sRoot) return fWarn('the file is not in a worldview (no dirNamidx above it)');
   const sInput = await fInputClickValid({
-    prompt: 'insert-' + sWord + ': the ' + sWord + ' concept: McshTchInf000009#idLMcshuser | McshTchInf000009.last.html#idLMcshuser',
+    prompt: 'insert-' + sWord + ': the ' + sWord + ' concept: McshTchInf000009#idLMcshuser | McshTchInf000009.last.html#idLMcshuser | McshTchInf000009 (= #idOverview)',
     value: oLastGenSpe[sKindIn]
   });
   if (!sInput || !sInput.trim()) return null;              // Escape: nothing
   oLastGenSpe[sKindIn] = sInput.trim();
-  const { sFile, sId } = fResolveFileIdValid(sInput, sRoot);
+  const { sFile, sId: sIdIn } = fResolveFileIdValid(sInput, sRoot);
   if (!sFile) return fWarn('no file for "' + sInput.trim() + '"');
-  if (!sId) return fWarn('write the #id of the ' + sWord + ': ' + path.basename(sFile) + '#idX');
+  const sId = sIdIn || 'idOverview';                        // no #id: the-file concept
   const oDocGen = vscode.workspace.textDocuments.find((oIn) => oIn.uri.fsPath.toLowerCase() === sFile.toLowerCase());
   const sTextGen = oDocGen ? oDocGen.getText() : fs.readFileSync(sFile, 'utf8');
   const { sName, sDescr, sWhy } = omModel.fFindNameOfConcept(sTextGen, sId);
@@ -2076,6 +2078,7 @@ const ooInhOp = {
   reorder: { sLabel: 'reorder', sNote: '' },
   generalize: { sLabel: 'generalize', sNote: 'The own numbers of the specifics of the generic shift up, in every file of the worldview.' },
   specialize: { sLabel: 'specialize', sNote: '' },
+  'specialize-join': { sLabel: 'specialize-join', sNote: 'Each attribute gets a description:: with today\'s date and its names; then the NN_last of the concept.' },
   'delete-empty': { sLabel: 'delete-empty', sNote: 'A linked section, or one with names of another McsLago, is kept.' },
   rename: { sLabel: 'rename', sNote: 'Its titles and names, in every specific that inherits it.' },
   'go-generic': { sLabel: 'go-generic' },
@@ -2172,7 +2175,7 @@ async function fRunInherit(sOpIn, oDocIn, nOffIn, bVisualIn = false) {
   const oOut = await fRunInheritEdit(sFile, ['--op', sOpIn, ...aArgId, ...aArgOp]);
   if (!oOut.bOk) return fWarn(oOut.sWhy);
   // specialize: to the-new section (a-load shows the-edit); else the-visual reloads: the-files changed on disk
-  if (sOpIn === 'specialize' && oOut.sId) await fGo(oOut.sPath, oOut.sId);
+  if ((sOpIn === 'specialize' || sOpIn === 'specialize-join') && oOut.sId) await fGo(oOut.sPath, oOut.sId);
   else if (fReloadVisual) fReloadVisual();
   const nFile = new Set((oOut.aLine || []).map((sL) => (sL.match(/\s(Mcsh\w+)[: ]/) || [])[1]).filter(Boolean)).size;
   const sOpen = 'Open the list';
