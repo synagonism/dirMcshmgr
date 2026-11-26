@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-25-2.2026-11-26: a-link-stub has as attr-keys the-names Whole\'word of its target (Hnmdlogo\'user at Hnmdimpler: 22_implementor IS the-inherited user); INH-LAST: an-attribute with its own attributes is a-generic too',
     'inheritMcsh.mjs.0-25-1.2026-11-26: INH-EMPTY: NOT an-attribute of a-join with another number than its generic\'s (it says its number)',
     'inheritMcsh.mjs.0-25-0.2026-11-26: a-JOIN (a-concept with 2+ numbered generics) loses nothing: its space is the-union of its generics\' spaces, numbered by the-join (its written numbers, then the-generic\'s if free, then after the-last); its specifics inherit the-joined numbers',
     'inheritMcsh.mjs.0-24-1.2026-11-25: a-title note "x (4_digits) of M" (a-space, then any (…)) is dropped like a-new name',
@@ -324,6 +325,22 @@ function fCheck(aoFileIn, nLocalMinIn) {
 
   const aoNodeAll = aoFileIn.flatMap(oFile => oFile.aoNode);
 
+  // a-link-stub "22_implementor of Hnmdlogo (link)" has its names at its target: the-names "Whole'word"
+  //   there (Hnmdlogo'user!⇒Hnmdimpler) are attr-keys of the-stub too: it IS the-inherited user (no 28_user)
+  for (const oNode of aoNodeAll) {
+    if (!oNode.bLinkStub || !oNode.bAttr || !oNode.oWholeNode?.sMain) continue;
+    const aHref = (oNode.sHrefStub ?? '').match(/^(?:.*?\/)?(?:([^/#]+)\.last\.html)?#([^#]+)$/);
+    if (!aHref) continue;
+    const oNodeT = aoFileIn.find(oF => oF.sNameShort === (aHref[1] ?? oNode.sNameShort))?.oNodeById[aHref[2]];
+    if (!oNodeT) continue;
+    const sPre = oNode.oWholeNode.sMain + "'";
+    for (const sName of oNodeT.aName) {
+      if (!sName.startsWith(sPre) || /'\d{2}_last$/.test(sName)) continue;
+      const sKey = fNormAttr(sName.slice(sPre.length));
+      if (sKey) oNode.oSetAttrKey.add(sKey);
+    }
+  }
+
   // the-names of the-generic-trees: "McshEngl.system:generic" in system's generic-tree:: → system.
   //   a-name defined twice is ambiguous: NOT used, reported.
   const ooGntrDef = {};   // sNameLower → [{ oNode, sDef }]
@@ -503,8 +520,11 @@ function fCheck(aoFileIn, nLocalMinIn) {
     const oSetUsed = new Set(), aoOut = new Array(aoUnion.length), oSetMatched = new Set();
     const aoOwnNum = oNodeIn.aoChild.filter(oC => oC.bAttr && oC.sNum && !oC.bTree);
     aoUnion.forEach((oE, nI) => {
-      const oOwn = aoOwnNum.find(oA => !oSetMatched.has(oA) && [...oA.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK)));
-      if (oOwn && !oSetUsed.has(oOwn.sNum)) {
+      // an-own attribute may BE several entries at its number: 22_implementor with the-name Hnmdlogo'user
+      //   is modelSyst'12_implementor and modelSyst'16_user (both 22_ here)
+      const fKeyOf = oA => [...oA.oSetAttrKey].some(sK => oE.oGenAttr.oSetAttrKey.has(sK));
+      const oOwn = aoOwnNum.find(oA => !oSetMatched.has(oA) && fKeyOf(oA)) ?? aoOwnNum.find(oA => oSetMatched.has(oA) && fKeyOf(oA));
+      if (oOwn && (!oSetUsed.has(oOwn.sNum) || oSetMatched.has(oOwn))) {
         oSetMatched.add(oOwn); oSetUsed.add(oOwn.sNum);
         aoOut[nI] = { ...oE, sNum: oOwn.sNum, sNumGen: oE.sNum, bJoin: true };
       }
@@ -670,7 +690,9 @@ function fCheck(aoFileIn, nLocalMinIn) {
   const oSetGen = new Set();
   for (const oNode of aoNodeAll) for (const oGen of oNode.aoGeneric) oSetGen.add(oGen);
   for (const oGen of oSetGen) {
-    if (oGen.bTree || oGen.bAttr || !oGen.sMain || !oGen.bMainTarget) continue;   // a-real main-name: a-!⇒ target
+    // an-attribute with its own attributes is a-concept too (05_output of Hnmdlago = Hnmdlogo)
+    const bAttrOnly = oGen.bAttr && !oGen.aoChild.some(oC => oC.bAttr && !oC.bTree);
+    if (oGen.bTree || bAttrOnly || !oGen.sMain || !oGen.bMainTarget) continue;   // a-real main-name: a-!⇒ target
     const nOwnMax = Math.max(0, ...oGen.aoChild.filter(oC => oC.bAttr && oC.sNum && !oC.bTree).map(oC => Number(oC.sNum)));
     const nChainMax = Math.max(0, ...fFindNumSpace(oGen).map(oS => Number(oS.sNum)));
     const nLast = Math.max(nOwnMax, nChainMax);

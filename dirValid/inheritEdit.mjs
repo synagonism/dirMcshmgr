@@ -33,6 +33,7 @@ import { fFindFile_all, fReadFile, fCheck, fFixableNum, fApplyFix, fApplyOrder, 
 
 const
   aVersion = [
+    'inheritEdit.mjs.0-6-1.2026-11-26: the-concept of an-attribute with its own attributes is itself (Hnmdlogo, NOT its whole Hnmdlago)',
     'inheritEdit.mjs.0-6-0.2026-11-26: reorder: the-numbers the-same or with gaps → consecutive; a-name with another number than its title → renamed; then the-order and NN_last',
     'inheritEdit.mjs.0-5-0.2026-11-26: renumber in a-join: ALL its numbers are its own (inherited too); an-inherited attribute it does NOT write in the-shift is written (specialize) at its new number',
     'inheritEdit.mjs.0-4-0.2026-11-26: specialize-join: every renumbered attribute of a-join it does NOT write, written (specialize), then its Mmn\'NN_last',
@@ -77,7 +78,9 @@ function fFindAttr(oNodeIn) {
 function fFindConcept(oNodeIn) {
   let oN = oNodeIn;
   while (oN && oN.bTree && oN.oWholeNode) oN = oN.oWholeNode;
-  if (oN && oN.bAttr && oN.oWholeNode) oN = oN.oWholeNode;
+  // an-attribute that has its own attributes is a-concept too (05_output of Hnmdlago = Hnmdlogo, with
+  //   04_part of Hnmdlogo …): it stays; else its whole
+  if (oN && oN.bAttr && oN.oWholeNode && !oN.aoChild.some(oA => oA.bAttr && !oA.bTree)) oN = oN.oWholeNode;
   return oN;
 }
 

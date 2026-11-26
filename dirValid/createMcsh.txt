@@ -5,13 +5,13 @@
   written, no backup: see git diff
 
 === SKIP (4) — skipped, with why: fix by hand
-  McshLag000007:16237  #idSys002Wlpt in dirCor/McshCor000008.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:18989  #idMcsattNamDzrCnptr in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:27991  #idRlnCausestx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
-  McshLag000007:28055  #idRlnGoalstx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:15677  #idSys002Wlpt in dirCor/McshCor000008.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:18976  #idMcsattNamDzrCnptr in dirCor/McshCor000002.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:27978  #idRlnCausestx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
+  McshLag000007:28042  #idRlnGoalstx in dirCor/McshCor000005.last.html: 0 ids differ only in case, fix by hand
 
 === OUTSIDE (1) — 
-  McshLag000007  3 edit(s) outside #idLHnmdopt NOT written
+  McshLag000007  3 edit(s) outside #idLHnmdotpt NOT written
 
 === NOISSUE (24) — the-rule has no issue in the-file
   McshLag000007  MvrwId01_char: nothing to fix
@@ -42,7 +42,7 @@
 === INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
   titles changed: 0
   name:: paragraphs changed: 0
-  NN_last names changed: 5
+  NN_last names changed: 6
   INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
   INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
   INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
