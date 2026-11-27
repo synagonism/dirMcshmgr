@@ -38,6 +38,25 @@
       },
       "problemMatcher": []
     },
+    // Index names of current-FILE and upload ALL
+    // re-indexes ALL the-names of the-file, not only the-changed ones
+    {
+      "label": "Index names of current-FILE and upload ALL",
+      "type": "shell",
+      "command": "node",
+      "args": [
+        "../dirMcshmgr/mNamidxFileAll.mjs",
+        "${command:mcshv.currentFile}"
+      ],
+      "options": {
+        "cwd": "${command:mcshv.currentWorldview}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
     // Index names ONLY of current-FILE
     {
       "label": "Index names ONLY of current-FILE",

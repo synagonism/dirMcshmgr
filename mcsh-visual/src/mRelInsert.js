@@ -15,6 +15,8 @@ const path = require('path');
 const fEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 const aoRel = [
+  // BEFORE 'attribute': '<Mmn>'attributeChain' lists own + inherited attributes
+  { sWord: 'attributeChain', sMark: "'" },
   { sWord: 'specific', sMark: '.' },
   { sWord: 'attribute', sMark: "'", bHoldOpp: true }, // opposites (open/openNo) kept
   { sWord: 'generic', sMark: ':' },
@@ -25,16 +27,33 @@ const aoRel = [
 ];
 
 /**
- * DOING: it parses a-source-line as a-trigger-line
- * INPUT: sLineIn: "    <br>* Mcs'attribute,"
+ * DOING: it parses a-source-line as a-trigger-line, as fSptrInsert of mMcsh2.js:
+ *   "X'NN_last" (name::) gives X'attribute; the-head "McshEngl.X:generic" of a-generic-tree::
+ *   (sParaIdIn ends with 'gntr') gives X'attributeChain.
+ * INPUT: sLineIn: "    <br>* Mcs'attribute,", sParaIdIn: the-id of its paragraph ('' unknown)
  * OUTPUT: { sMmn, sMark, sWord, bHoldOpp } or null
  */
-function fTrigger(sLineIn) {
+function fTrigger(sLineIn, sParaIdIn = '') {
+  const aLast = sLineIn.match(/^\s*(?:<br>)?\s*\*\s*(?:McshEngl\.)?(.+?)'\d{2}_last(?=[,\s]|$)/);
+  if (aLast) return { sMmn: aLast[1], sMark: "'", sWord: 'attribute', bHoldOpp: true };
   for (const oRel of aoRel) {
     const aM = sLineIn.match(new RegExp('^\\s*(?:<br>)?\\s*\\*\\s*(?:McshEngl\\.)?(.+?)' + fEsc(oRel.sMark) + oRel.sWord + '(?=[,!\\s]|$)'));
-    if (aM) return { sMmn: aM[1], sMark: oRel.sMark, sWord: oRel.sWord, bHoldOpp: !!oRel.bHoldOpp };
+    if (!aM) continue;
+    const bHead = oRel.sWord === 'generic' && /^\s*(?:<br>)?\s*\*\s*McshEngl\./.test(sLineIn) && sParaIdIn.endsWith('gntr');
+    if (bHead) return { sMmn: aM[1], sMark: "'", sWord: 'attributeChain', bHoldOpp: false };
+    return { sMmn: aM[1], sMark: oRel.sMark, sWord: oRel.sWord, bHoldOpp: !!oRel.bHoldOpp };
   }
   return null;
+}
+
+/** OUTPUT: the-id of the-<p id> paragraph that holds line nLineIn (0-based) of aLineIn, or ''. */
+function fParaIdAt(aLineIn, nLineIn) {
+  for (let nL = nLineIn; nL >= 0; nL--) {
+    const aM = aLineIn[nL].match(/<p\s[^>]*id="([^"]+)"/);
+    if (aM) return aM[1];
+    if (nL < nLineIn && /<\/p>|<\/?section\b/.test(aLineIn[nL])) return '';
+  }
+  return '';
 }
 
 /**
@@ -143,24 +162,16 @@ function fGntrOfTopGstr(sTextIn) {
  *  - fTextIn: path -> text of a-page (an-open document may hold unsaved text)
  * OUTPUT: array of lines without indent and <br>; null if the-line is not in a-generic-tree
  */
-function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
-  const sEntTop = 'entity:generic (the-most-generic)';
-  // the-paragraph and the-'===' above the-clicked line
-  let nSep = -1, nP = nLineIn;
-  for (; nP >= 0 && !/<p\s[^>]*id="/.test(aLineIn[nP]); nP--) {
-    if (nSep < 0 && /^\s*<br>===\s*$/.test(aLineIn[nP])) nSep = nP;
-  }
-  const aMP = nP >= 0 ? aLineIn[nP].match(/<p\s[^>]*id="([^"]+)"/) : null;
-  if (!aMP || !aMP[1].endsWith('gntr')) return null;
-
+/**
+ * DOING: the-generic-tree lookups of a-worldview (fGntrOfUrl / fGntrOfLine of mMcsh2.js).
+ * INPUT: sRootIn: worldview-root, fTextIn: path -> text of a-page
+ * OUTPUT: { fPageText, fGntrOfRef(sStem, sId), fGntrOfLine(sLine, sStemBase) };
+ *   a-gntr is { sStem, sId, aLine } or null
+ */
+function fGntrFinder(sRootIn, fTextIn) {
   const
     oPage = fPageMap(sRootIn),
-    fPageText = sStem => oPage[sStem] ? fTextIn(oPage[sStem]) : null,
-    fClean = s => s.replace(/^\*\s*/, '').replace(/,\s*$/, ''),
-    fIsEntity = s => /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(s),
-    oSeen = new Set([sStemIn + '#' + aMP[1]]),
-    aOut = ['* ==='];
-  const fAdd = s => aOut.push('* ' + s + ',');
+    fPageText = sStem => oPage[sStem] ? fTextIn(oPage[sStem]) : null;
 
   // the-gntr-paragraph a-page#id points to: #id..gntr, #id..nam -> ..gntr, #section -> section+gntr,
   // #idOverview -> the-root gntr (the-gntr whose concept has no ..nam paragraph)
@@ -201,6 +212,27 @@ function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
     const aR = sRef.split('#');
     return fGntrOfRef(aR[0], aR[1] || 'idOverview');
   }
+  return { fPageText, fGntrOfRef, fGntrOfLine };
+}
+
+function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
+  const sEntTop = 'entity:generic (the-most-generic)';
+  // the-paragraph and the-'===' above the-clicked line
+  let nSep = -1, nP = nLineIn;
+  for (; nP >= 0 && !/<p\s[^>]*id="/.test(aLineIn[nP]); nP--) {
+    if (nSep < 0 && /^\s*<br>===\s*$/.test(aLineIn[nP])) nSep = nP;
+  }
+  const aMP = nP >= 0 ? aLineIn[nP].match(/<p\s[^>]*id="([^"]+)"/) : null;
+  if (!aMP || !aMP[1].endsWith('gntr')) return null;
+
+  const
+    { fGntrOfLine } = fGntrFinder(sRootIn, fTextIn),
+    fClean = s => s.replace(/^\*\s*/, '').replace(/,\s*$/, ''),
+    fIsEntity = s => /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(s),
+    oSeen = new Set([sStemIn + '#' + aMP[1]]),
+    aOut = ['* ==='];
+  const fAdd = s => aOut.push('* ' + s + ',');
+
   // the-first generic line after '===' of a-gntr-paragraph
   function fLevel1(aLine) {
     const n = aLine.indexOf('===');
@@ -229,6 +261,130 @@ function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
   }
   if (fIsEntity(sLine) || sLine === '===') fAdd(sEntTop);
   return aOut;
+}
+
+/**
+ * DOING: the-lines of "<Mmn>'attributeChain" (bFlatIn false) or of "<Mmn>'attribute" (bFlatIn true):
+ *   Node port of fAttrChain of mMcsh2.js. Per generic up ALL its generic-chains (every '==='
+ *   group, breadth-first, entity last), the-NUMBERED direct attributes it ADDS:
+ *   - the-own attributes are-not shown, but they override;
+ *   - the-key of an-attribute is its NUMBER (NN_), NOT its name; nearer wins: an-overridden one
+ *     is shown as '* G'NN_x!@ref → S'NN_y,' when the-name differs;
+ *   - X'y.z (a-specific of an-attribute), unnumbered attributes and X'NN_last are-not listed.
+ *   bFlatIn: ONE list of the-numbered attributes, own and inherited, 01, 02, .. (nearer wins),
+ *   then the-other own attributes, alphabetical.
+ * INPUT: sRootIn: worldview-root, sMmnIn: 'Mindview', fTextIn: path -> text of a-page
+ * OUTPUT: array of lines without indent and <br> (under a-'---' the-caller writes)
+ */
+function fAttrChain(sRootIn, sMmnIn, bFlatIn, fTextIn) {
+  const
+    { fPageText, fGntrOfRef, fGntrOfLine } = fGntrFinder(sRootIn, fTextIn),
+    aoLevel = [],          // { sHead, aoAttr: [{ sInformal, sRef, sChild, nNum, oBy }] }
+    oMapNum = new Map(),   // nNum -> the-attribute of the-concept or a-nearer generic that gives it
+    aTail = [];            // '??' lines
+  // the-numbered direct attributes of a-name, sorted by number
+  function fAttrOf(sNameIn) {
+    const sPrefix = sNameIn + "'";
+    return fFindRelated(sRootIn, { sMmn: sNameIn, sMark: "'", sWord: 'attribute', bHoldOpp: true }, true)
+      .map(function (oA) {
+        // the-number NN_; NOT attNNN_ (entity'att001_id): that mirrors the-id, it is-not an-order
+        const sChild = oA.sInformal.slice(sPrefix.length), aN = sChild.match(/^(\d+)_/);
+        return { sInformal: oA.sInformal, sRef: oA.sRef, sChild, nNum: aN ? Number(aN[1]) : NaN };
+      })
+      .filter(oA => oA.sChild.indexOf('.') < 0 && !isNaN(oA.nNum) && !/^\d+_last$/.test(oA.sChild))
+      .sort((oA, oB) => oA.nNum - oB.nNum || oA.sInformal.localeCompare(oB.sInformal));
+  }
+  // a-level shows the-numbers it adds, and its attributes a-nearer level overrides (oBy)
+  function fAddLevel(sHeadIn, aoAttrIn) {
+    const aoKeep = [], aoAdd = [];
+    aoAttrIn.forEach(function (oA) {
+      const oBy = oMapNum.get(oA.nNum);
+      if (!oBy) { aoAdd.push(oA); aoKeep.push(oA); return; }
+      // the-same concept under another name is-not an-override
+      if (oBy.sRef !== oA.sRef) aoKeep.push(Object.assign({}, oA, { oBy }));
+    });
+    aoAdd.forEach(oA => { if (!oMapNum.has(oA.nNum)) oMapNum.set(oA.nNum, oA); });
+    if (sHeadIn) aoLevel.push({ sHead: sHeadIn, aoAttr: aoKeep });
+  }
+  // the-concept of a-gntr, as a-'!@' ref: the-gntr id minus 'gntr', or idOverview (a-file-concept)
+  function fRefOfGntr(oGIn) {
+    const sId = oGIn.sId.replace(/gntr$/, ''), sText = fPageText(oGIn.sStem) || '';
+    return oGIn.sStem + (sId && sText.indexOf('id="' + sId + '"') >= 0 ? '#' + sId : '#idOverview');
+  }
+  // the-first generic line of EVERY '===' group; a-labeled '=== sibling..:' group ends them
+  function fGroups(aLineGntrIn) {
+    const aOut = [];
+    let bInGroup = false;
+    for (const sL of aLineGntrIn.map(s => s.replace(/<a class="clsHide"[\s\S]*$/, '').trim())) {
+      if (sL.startsWith('===')) { if (sL !== '===') break; bInGroup = true; continue; }
+      if (bInGroup && sL.startsWith('*')) { aOut.push(sL); bInGroup = false; }
+    }
+    return aOut;
+  }
+  // 'entity' ALONE ('entity,', 'entity!@..', '...entity:generic'), NOT 'entity.bodyNo!@..'
+  const fIsEnt = sL => /^\*\s*(\.\.\.\s*)?entity(:generic)?(?=[,!\s]|$)/.test(sL);
+  // the-level of a-reached generic-tree: its name is its first line '* McshEngl.X:generic,'
+  function fAddGntr(oGIn) {
+    const aN = ((oGIn.aLine || []).find(s => /McshEngl\.\S+:generic/.test(s)) || '').match(/McshEngl\.(\S+):generic/);
+    if (aN) fAddLevel('=== inherited from ' + aN[1] + ':generic!@' + fRefOfGntr(oGIn), fAttrOf(aN[1]));
+  }
+  const fGntrOfName = (sNameIn) => {
+    const sRef = fNameRef(sRootIn, sNameIn);
+    if (!sRef) return null;
+    const aR = sRef.split('#');
+    return fGntrOfRef(aR[0], aR[1] || 'idOverview');
+  };
+
+  // the-own numbers override, NOT shown
+  fAddLevel('', fAttrOf(sMmnIn));
+  const oStart = fGntrOfName(sMmnIn + ':generic');
+  if (!oStart) aTail.push('* ?? (no generic-tree for ' + sMmnIn + ')');
+  else {
+    // breadth-first over ALL the-generics, so nearer levels come first and win the-numbers;
+    //   a-generic reached twice is shown once; entity is shown LAST
+    const oSetSeen = new Set([oStart.sStem + '#' + oStart.sId]);
+    let aoCurrent = fGroups(oStart.aLine || []).map(sL => ({ sLine: sL, sStemBase: oStart.sStem })), bEntity = false;
+    for (let n = 0; n < 30 && aoCurrent.length; n++) {
+      const aoNext = [];
+      for (const oItem of aoCurrent) {
+        if (fIsEnt(oItem.sLine)) { bEntity = true; continue; }
+        const oG = fGntrOfLine(oItem.sLine, oItem.sStemBase);
+        if (!oG) { aTail.push('* ?? (no generic-tree for ' + oItem.sLine.replace(/^\*\s*/, '').replace(/,\s*$/, '') + ')'); continue; }
+        const sKey = oG.sStem + '#' + oG.sId;
+        if (oSetSeen.has(sKey)) continue;
+        oSetSeen.add(sKey);
+        fAddGntr(oG);
+        fGroups(oG.aLine || []).forEach(sL => aoNext.push({ sLine: sL, sStemBase: oG.sStem }));
+      }
+      aoCurrent = aoNext;
+    }
+    if (bEntity) {
+      const oEnt = fGntrOfName('entity:generic');
+      if (oEnt && !oSetSeen.has(oEnt.sStem + '#' + oEnt.sId)) fAddGntr(oEnt);
+    }
+  }
+
+  const fLine = oA => '* ' + oA.sInformal + '!@' + oA.sRef + ',';
+  if (bFlatIn) {
+    const
+      aoNum = [...oMapNum.values()].sort((oA, oB) => oA.nNum - oB.nNum),
+      oSetRefNum = new Set(aoNum.map(oA => oA.sRef)),
+      aoOther = fFindRelated(sRootIn, { sMmn: sMmnIn, sMark: "'", sWord: 'attribute', bHoldOpp: true })
+        .filter(oA => !oSetRefNum.has(oA.sRef) && !/'(attributeChain|last)$/.test(oA.sInformal));
+    return aoNum.map(fLine).concat(aTail, aoOther.map(fLine));
+  }
+  // ordered 01, 02, ..: the-generics from the-farthest (entity) to the-nearest; a-closing '==='
+  const aOut = [];
+  aoLevel.slice().reverse().forEach(function (oL) {
+    aOut.push(oL.sHead);
+    if (oL.aoAttr.length === 0) aOut.push('* (nothing added)');
+    oL.aoAttr.forEach(function (oA) {
+      // the-arrow only when the-nearer one renames it (NOT for the-same NN_name)
+      const bRename = oA.oBy && oA.oBy.sChild !== oA.sChild;
+      aOut.push('* ' + oA.sInformal + '!@' + oA.sRef + (bRename ? ' → ' + oA.oBy.sInformal : '') + ',');
+    });
+  });
+  return aOut.concat(aTail, ['===']);
 }
 
 /**
@@ -312,10 +468,11 @@ function fSearchName(sRootIn, sNameIn, sLagIn) {
 
 /**
  * DOING: it finds the-names '<Mmn><mark><child>' of a-relation, ONE level only
- * INPUT: sRootIn: worldview-root, oTrigIn: output of fTrigger
+ * INPUT: sRootIn: worldview-root, oTrigIn: output of fTrigger,
+ *   bKeepNumIn: keep the-leading NN_ of the-child (attributeChain shows the-numbers)
  * OUTPUT: array of { sInformal, sRef }, alphabetical
  */
-function fFindRelated(sRootIn, oTrigIn) {
+function fFindRelated(sRootIn, oTrigIn, bKeepNumIn = false) {
   const
     sPrefix = oTrigIn.sMmn + oTrigIn.sMark,
     sMarkChar = oTrigIn.sMark[0], // primary char; a-repeat of it is the-nested variant (/ vs //, ; vs ;;)
@@ -337,7 +494,7 @@ function fFindRelated(sRootIn, oTrigIn) {
       sFile = sUrl.split('#')[0],
       sRef = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, '') + sHash,
       // full relation-name (only a-leading NNN_ ordering-number removed)
-      sClean = sPrefix + sChild.replace(/^\d+_/, ''),
+      sClean = sPrefix + (bKeepNumIn ? sChild : sChild.replace(/^\d+_/, '')),
       // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite
       // 'logo' written 'conceptNo' then '(logo)'; keep that opposite visible in the-list
       bOpp = /\([^)]+\)/.test(sChild),
@@ -345,7 +502,10 @@ function fFindRelated(sRootIn, oTrigIn) {
       // same-concept aliases prefer the-canonical opposite-bearing name over an-ordered/plain one
       sKey = oTrigIn.bHoldOpp ? (sRef + (sClean.endsWith('No') ? '#No' : '#')) : sRef;
     const oPrev = oByKey.get(sKey);
-    if (!oPrev || (bOpp && !oPrev.bOpp)) oByKey.set(sKey, { sInformal: sClean, sRef, bOpp });
+    // with bKeepNumIn, among same-concept aliases the-numbered one (X'03_y) beats the-plain one (X'y)
+    const bNumBetter = bKeepNumIn && oPrev && bOpp === oPrev.bOpp &&
+      /^\d+_/.test(sChild) && !/^\d+_/.test(oPrev.sInformal.slice(sPrefix.length));
+    if (!oPrev || (bOpp && !oPrev.bOpp) || bNumBetter) oByKey.set(sKey, { sInformal: sClean, sRef, bOpp });
   });
   return [...oByKey.values()]
     .map(oV => ({ sInformal: oV.sInformal, sRef: oV.sRef }))
@@ -361,4 +521,4 @@ function fFormatLines(aoIn, sIndentIn) {
   return ['---'].concat(aBody).map(s => sIndentIn + '<br>' + s);
 }
 
-module.exports = { fSearchFor, fSearchLines, fTrigger, fRefOfLine, fGenericName, fNameRef, fGenericsOfTree, fGntrChain, fFindRelated, fFormatLines };
+module.exports = { fSearchFor, fSearchLines, fTrigger, fParaIdAt, fRefOfLine, fGenericName, fNameRef, fGenericsOfTree, fGntrChain, fAttrChain, fFindRelated, fFormatLines };

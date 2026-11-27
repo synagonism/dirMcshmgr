@@ -181,7 +181,9 @@ function fActivate(context) {
       if (sPath) setTimeout(() => fRevealSource(vscode.Uri.file(sPath), nLine), 300);
       return;
     }
-    const oTrig = omRelInsert.fTrigger(oLine.text);
+    // the-paragraph: the-head 'McshEngl.X:generic' of a-generic-tree:: gives X'attributeChain
+    const sParaId = omRelInsert.fParaIdAt(oDoc.getText().split(/\r?\n/), oLine.lineNumber);
+    const oTrig = omRelInsert.fTrigger(oLine.text, sParaId);
     if (!oTrig) return;
     const sGeneric = omRelInsert.fGenericName(oLine.text);
     if (oLine.lineNumber + 1 < oDoc.lineCount && /^\s*<br>(---|\* ===)/.test(oDoc.lineAt(oLine.lineNumber + 1).text)) {
@@ -209,6 +211,11 @@ function fActivate(context) {
         : null;
       if (aChain) {
         aLine = aChain.map(s => sIndent + '<br>' + s);
+      } else if (oTrig.sWord === 'attributeChain' || oTrig.sWord === 'attribute') {
+        // X'attributeChain (and the-head of generic-tree::): own + inherited per generic up to entity;
+        // X'attribute (and X'NN_last of name::): the-numbered ones 01, 02, .., then the-others
+        const aBody = omRelInsert.fAttrChain(sRoot, oTrig.sMmn, oTrig.sWord === 'attribute', fPageText);
+        aLine = ['---'].concat(aBody.length ? aBody : ['* ?? (no finding)']).map(s => sIndent + '<br>' + s);
       } else if (sGeneric) {
         // '* X:generic,' is a-generic: insert the-generics of its generic-tree;
         // only the-head 'McshEngl.X:generic' lists from the-name-index

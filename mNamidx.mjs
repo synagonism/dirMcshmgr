@@ -55,6 +55,7 @@ import {fDateYMD, fWriteJsonArray} from './mUtil.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mNamidx.mjs.1-1-0.2026-11-27: bFullIn, full re-index of the-input-files',
     'mNamidx.mjs.1-0-0.2026-09-30: incremental re-index, dirManager/dirNamurl-records',
     'mNamidx.mjs.0-9-0.2026-09-24: auto-add + sort new DIRS in Mcshqnt.root.json',
     'mNamidx.mjs.0-8-0.2026-08-30: dirMcshmgr',
@@ -87,7 +88,10 @@ const
     'namidx: {2017-06-01} created'
   ]
 
-function fNamidx(fileIn, fSftpIn) {
+function fNamidx(aFileIn, fSftpIn, bFullIn) {
+  // aFileIn: an-array of Mcs-files, or ONE Mcs-file as string.
+  // bFullIn true: we IGNORE the-namurl-records of the-input-files and re-index ALL
+  // their names with the-full-scan (then write new records), not only the-changed ones.
   let
     bExtra = false, // extra names, added manually on namidx.lagLagoExtra.json to-be removed!
     bNamurl = true,
@@ -136,10 +140,10 @@ function fNamidx(fileIn, fSftpIn) {
     sLn,
     n
 
-  if (typeof fileIn === 'string') {
-    aFileMcsIn = [fileIn]
+  if (typeof aFileIn === 'string') {
+    aFileMcsIn = [aFileIn]
   } else {
-    aFileMcsIn = fileIn
+    aFileMcsIn = aFileIn
   }
 
   /**
@@ -185,9 +189,9 @@ function fNamidx(fileIn, fSftpIn) {
     oSetFileUp.add(sFileMcs)
 
     // READ the-namurl-record of this file: the-name-Urls it gave on the-previous-run.
-    // oNamurl = null means we have NO record, so we do the-old full-scan and write one.
+    // oNamurl = null means we have NO record (or bFullIn), so we do the-old full-scan and write one.
     let
-      oNamurl = bNamurl ? fReadNamurl(sFileMcs) : null,
+      oNamurl = (bNamurl && !bFullIn) ? fReadNamurl(sFileMcs) : null,
       aoNamurlNew = []
       // the-new namurl-record: [[lag, fileIdx, name, Url]]
 
