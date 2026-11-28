@@ -1,6 +1,7 @@
-inheritance-chain of system (McshCor000011:20 #idOverview)
-  [system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idOverview)
-  chain: entity → whole → system
+inheritance-chain of Mcs (McshCor000002:20 #idOverview)
+  [Mcs](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idOverview)
+  chain: Bioinfo → entity → whole → info → model → system → infoSenso → concept → modelSyst → Mcs
+  without numbers: Bioinfo
 === entity:
   [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
   [entity'02_expression](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntexrn)
@@ -13,15 +14,128 @@ inheritance-chain of system (McshCor000011:20 #idOverview)
   .. [whole'info_resource](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlirsc)
   .. [whole'DOING](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhldong)
   .. [whole'evoluting](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlevog)
+=== info:
+  [info'11_referent](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmnatt001)
+  [info'12_relation_to_referent](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmnatt002)
+  .. [info'info_resource](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmnirsc)
+  .. [info'DOING](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmndong)
+  .. [info'evoluting](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmnevog)
+=== model:
+  ~ [model'03_archetype](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt001)  overrides whole'03_part
+  ~ [model'04_mapping_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt002)  overrides whole'04_environment
+  [model'05_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt003)
+  [model'06_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt009)
+  [model'07_mapping_doing](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlmpgdong)
+  [model'08_medium](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt004)
+  [model'09_evaluation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdleval)
+  [model'10_user](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt018)
+  .. [model'info_resource](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlirsc)
+  .. [model'DOING](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdldong)
+  .. [model'evoluting](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlevog)
 === system:
-  [system'05_node](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyspart)
-  [system'06_unit](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt003)
-  [system'07_unit_system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt004)
-  [system'07_structure](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssrtr)
-  [system'08_science](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssci)
+  ~ [system'05_node](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyspart)  overrides model'05_mapping_method
+  ~ [system'06_unit](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt003)  overrides model'06_implementor
+  ~ [system'07_unit_system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt004)  overrides model'07_mapping_doing
+  ~ [system'08_structure](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssrtr)  overrides model'08_medium
+  ~ [system'09_science](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssci)  overrides model'09_evaluation
   .. [system'MISC_ATTRIBUTE](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysmisc)
   .. [system'info_resource](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysirsc)
   .. [system'DOING](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysdong)
   .. [system'evoluting](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysevog)
-  last: 08_
+=== infoSenso:
+  (empty)
+=== concept:
+  [concept'13_name](http://localhost/dirMcsh/dirLag/McshLag000003.last.html#idInfHmnBrn004name)
+=== modelSyst:
+  ~ [modelSyst'04_part](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att004)  overrides model'04_mapping_relation
+  ~ [modelSyst'05_node](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att005)  overrides system'05_node
+  ~ [modelSyst'06_structure](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034srtr)  overrides system'06_unit
+  ~ [modelSyst'07_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att007)  overrides system'07_unit_system
+  ~ [modelSyst'08_unit_system](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att008)  overrides system'08_structure
+  ~ [modelSyst'09_mapping_unit](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att009)  overrides system'09_science
+  ~ [modelSyst'10_mapping_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att010)  overrides model'10_user
+  ~ [modelSyst'11_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att011)  overrides info'11_referent
+  ~ [modelSyst'12_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att012)  overrides info'12_relation_to_referent
+  ~ [modelSyst'13_mapping_doing](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034mpgdong)  overrides concept'13_name
+  ~ [modelSyst'14_medium](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att014)  overrides model'08_medium  ✗ number must be 08_
+  ~ [modelSyst'15_evaluation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034eval)  overrides model'09_evaluation  ✗ number must be 09_
+  ~ [modelSyst'16_user](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att016)  overrides model'10_user  ✗ number must be 10_
+  ~ [modelSyst'17_science](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att017)  overrides system'09_science  ✗ number must be 09_
+  ~ [modelSyst'18_environment](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdl034att018)  overrides whole'04_environment  ✗ number must be 04_
+=== Mcs:
+  ~ [Mcs'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsatt)  overrides entity'01_attribute
+  ~ [Mcs'09_evaluation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcseval)  overrides modelSyst'09_mapping_unit
+  ~ [Mcs'11_environment](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsenvt)  overrides modelSyst'11_mapping_method
+  ?? [Mcs'title](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsttl)  → 19_
+  ?? [Mcs'name](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsattNam)  inherits concept'13_name: its number
+  ?? [Mcs'text](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcstxt)  → 20_
+  ?? [Mcs'view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsv)  → 21_
+  ?? [Mcs'dir_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsvDir)  → 22_
+  ?? [Mcs'world_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcswv)  → 23_
+  ?? [Mcs'base_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsbv)  → 24_
+  ?? [Mcs'mind_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsmndrn)  → 25_
+  ?? [Mcs'semu_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcssmsrn)  → 26_
+  ?? [Mcs'logo_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcslogrn)  → 27_
+  ?? [Mcs'language](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcslag)  → 28_
+  ?? [Mcs'manager](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsm)  → 29_
+  ?? [Mcs'notation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsnttn)  → 30_
+  .. [Mcs'info_resource](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsirsc)
+  .. [Mcs'DOING](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsdong)
+  .. [Mcs'evoluting](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsevog)
+=== join modelSyst (the-numbers its specifics inherit):
+  01  [entity'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntatt)
+  02  [entity'02_expression](http://localhost/dirMcsh/dirCor/McshCor000003.last.html#idEntexrn)
+  03  [model'03_archetype](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt001)
+  04  [whole'03_part](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlprt)
+  05  [system'05_node](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyspart)
+  06  [system'08_structure](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssrtr)
+  07  [system'06_unit](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt003)
+  08  [system'07_unit_system](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSysatt004)
+  10  [model'04_mapping_relation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt002)
+  11  [model'05_mapping_method](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt003)
+  12  [model'06_implementor](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt009)
+  13  [model'07_mapping_doing](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlmpgdong)
+  14  [model'08_medium](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt004)
+  15  [model'09_evaluation](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdleval)
+  16  [model'10_user](http://localhost/dirMcsh/dirCor/McshCor000012.last.html#idMdlatt018)
+  17  [system'09_science](http://localhost/dirMcsh/dirCor/McshCor000011.last.html#idSyssci)
+  18  [whole'04_environment](http://localhost/dirMcsh/dirCor/McshCor000008.last.html#idWhlenvt)
+=== join Mcs: the-union of modelSyst + concept + infoSenso, nothing lost:
+  01  entity'01_attribute  = [Mcs'01_attribute](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsatt)
+  02  entity'02_expression  (not written: inherited)
+  03  model'03_archetype  (not written: inherited)
+  04  modelSyst'04_part  (not written: inherited)
+  05  modelSyst'05_node  (not written: inherited)
+  06  modelSyst'06_structure  (not written: inherited)
+  07  modelSyst'07_unit  (not written: inherited)
+  08  modelSyst'08_unit_system  (not written: inherited)
+  09  modelSyst'15_evaluation  = [Mcs'09_evaluation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcseval)
+  10  modelSyst'10_mapping_relation  (not written: inherited)
+  11  modelSyst'18_environment  = [Mcs'11_environment](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsenvt)
+  12  modelSyst'12_implementor  (not written: inherited)
+  13  modelSyst'13_mapping_doing  (not written: inherited)
+  14  modelSyst'14_medium  (not written: inherited)
+  16  modelSyst'16_user  (not written: inherited)
+  17  modelSyst'17_science  (not written: inherited)
+  18  modelSyst'09_mapping_unit  (not written: inherited)
+  19  modelSyst'11_mapping_method  (not written: inherited)
+  20  concept'13_name  = [Mcs'name](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsattNam)
+  21  info'11_referent  (not written: inherited)
+  22  info'12_relation-to-referent  (not written: inherited)
+  ..  own [Mcs'title](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsttl)
+  ..  own [Mcs'text](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcstxt)
+  ..  own [Mcs'view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsv)
+  ..  own [Mcs'dir_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsvDir)
+  ..  own [Mcs'world_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcswv)
+  ..  own [Mcs'base_view](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsbv)
+  ..  own [Mcs'mind_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsmndrn)
+  ..  own [Mcs'semu_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcssmsrn)
+  ..  own [Mcs'logo_relation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcslogrn)
+  ..  own [Mcs'language](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcslag)
+  ..  own [Mcs'manager](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsm)
+  ..  own [Mcs'notation](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsnttn)
+  ..  own [Mcs'info_resource](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsirsc)
+  ..  own [Mcs'DOING](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsdong)
+  ..  own [Mcs'evoluting](http://localhost/dirMcsh/dirCor/McshCor000002.last.html#idMcsevog)
+  last: 22_
 

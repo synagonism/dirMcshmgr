@@ -1,5 +1,8 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --nest --file McshTchInf000009 dry-run: ../dirMcsh
+  createMcsh --code MvrwMain11_line --file McshTchInf000039 --fix: C:/dirNodews/dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files to write · 0 </section> moved · 0 skipped
-  nothing written: add --fix to write
+  0 files written · MvrwMain11_line: 0 issues · 0 fixed · 0 skipped
+  written, no backup: see git diff
+
+=== NOISSUE (1) — the-rule has no issue in the-file
+  McshTchInf000039  MvrwMain11_line: nothing to fix

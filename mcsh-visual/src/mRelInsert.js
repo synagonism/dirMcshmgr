@@ -228,7 +228,8 @@ function fGntrChain(sRootIn, sStemIn, aLineIn, nLineIn, fTextIn) {
   const
     { fGntrOfLine } = fGntrFinder(sRootIn, fTextIn),
     fClean = s => s.replace(/^\*\s*/, '').replace(/,\s*$/, ''),
-    fIsEntity = s => /^\*\s*(\.\.\.\s*)?entity(:generic)?\b/.test(s),
+    // 'entity' ALONE ('entity,', 'entity!@..', '...entity:generic'), NOT 'entity.model!@..' (mMcsh2.js.27-12-0)
+    fIsEntity = s => /^\*\s*(\.\.\.\s*)?entity(:generic)?(?=[,!\s]|$)/.test(s),
     oSeen = new Set([sStemIn + '#' + aMP[1]]),
     aOut = ['* ==='];
   const fAdd = s => aOut.push('* ' + s + ',');

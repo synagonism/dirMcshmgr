@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-20-1.2026-11-27: no idSearch',
     'mMcsh2.js.27-20-0.2026-11-22: 3rd info-page tab "Ask" - an-English question returns the-worldview concepts it is about (mAsk.js, first-form name-finding, no LLM)',
     'mMcsh2.js.27-19-0.2026-11-22: a-generic X!@File#idOverview uses the-generic-tree of the-TOP "GENERIC-SPECIFIC-TREE of M" section, NOT the-first gntr of the-file',
     'mMcsh2.js.27-18-0.2026-11-19: dblclick on "X\'NN_last" (name::) gives X\'attribute, NOT X\'attributeChain (the-head of generic-tree:: still gives it)',
@@ -2370,18 +2371,6 @@ let fContainersInsert = function () {
     })
   })
 
-  // event on double-clicking id
-  // searches the-text inside id
-  Array.prototype.slice.call(document.querySelectorAll('#idSearch')).forEach(function (oEltIn) {
-    let sSearch = oEltIn.innerHTML.trim()
-    oEltIn.style.cursor = 'pointer'
-    oEltIn.addEventListener('dblclick', function (oEvtIn) {
-      oEvtIn.preventDefault()
-      oEltTabSearchIpt.value = sSearch
-      fSearchSuggest()
-      fCnrSearchShow()
-    })
-  })
   // insert no keyboard chars
   Array.prototype.slice.call(document.querySelectorAll('.clsSrchpnm')).forEach(function (oEltIn) {
     let sSearch = oEltIn.innerHTML.trim()
