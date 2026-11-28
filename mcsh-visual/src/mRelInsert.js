@@ -204,7 +204,8 @@ function fGntrFinder(sRootIn, fTextIn) {
       const aU = aM[1].replace(/&amp;/g, '&').split('#'), sFile = aU[0].slice(aU[0].lastIndexOf('/') + 1);
       return fGntrOfRef(sFile ? sFile.replace(/\.last\.html$/, '') : sStemBase, aU[1] || 'idOverview');
     }
-    aM = sL.match(/!@(Mcsh\w+)(?:#(\w+))?/);
+    // '!@McshCor000002.last.html#idX' (written) | '!@McshCor000002#idX' (short)
+    aM = sL.match(/!@(Mcsh\w+)(?:\.last\.html)?(?:#(\w+))?/);
     if (aM) return fGntrOfRef(aM[1], aM[2] || 'idOverview');
     const sName = sL.replace(/,.*$/, '').trim();
     const sRef = sName ? fNameRef(sRootIn, sName) : '';
@@ -310,7 +311,7 @@ function fAttrChain(sRootIn, sMmnIn, bFlatIn, fTextIn) {
   // the-concept of a-gntr, as a-'!@' ref: the-gntr id minus 'gntr', or idOverview (a-file-concept)
   function fRefOfGntr(oGIn) {
     const sId = oGIn.sId.replace(/gntr$/, ''), sText = fPageText(oGIn.sStem) || '';
-    return oGIn.sStem + (sId && sText.indexOf('id="' + sId + '"') >= 0 ? '#' + sId : '#idOverview');
+    return oGIn.sStem + '.last.html' + (sId && sText.indexOf('id="' + sId + '"') >= 0 ? '#' + sId : '#idOverview');
   }
   // the-first generic line of EVERY '===' group; a-labeled '=== sibling..:' group ends them
   function fGroups(aLineGntrIn) {
@@ -404,7 +405,7 @@ function fSearchFor(sLineIn) {
 function fSearchLines(sRootIn, sTermIn) {
   const aOut = fSearchName(sRootIn, fEsc(sTermIn), 'lagEngl').map(function (aNu) {
     const sName = aNu[0].split('!')[0], sUrl = aNu[1];
-    return '* ' + sName + '!@' + sUrl.slice(sUrl.lastIndexOf('/') + 1).replace('.last.html', '') + ',';
+    return '* ' + sName + '!@' + sUrl.slice(sUrl.lastIndexOf('/') + 1) + ',';
   });
   return aOut.length ? aOut : ['* ?? (no finding)'];
 }
@@ -493,7 +494,8 @@ function fFindRelated(sRootIn, oTrigIn, bKeepNumIn = false) {
     const
       sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : '',
       sFile = sUrl.split('#')[0],
-      sRef = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, '') + sHash,
+      // the-!@ reference as written: 'McshCor000002.last.html#idX'
+      sRef = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, '') + '.last.html' + sHash,
       // full relation-name (only a-leading NNN_ ordering-number removed)
       sClean = sPrefix + (bKeepNumIn ? sChild : sChild.replace(/^\d+_/, '')),
       // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite

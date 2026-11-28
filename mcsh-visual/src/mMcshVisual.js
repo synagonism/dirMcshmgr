@@ -229,6 +229,7 @@ export function fInitMcshv_bridge() {
     cmdInsertSpecific: function () { fPost({ type: 'insertGeneric', sKind: 'spe', id: oLastSpan ? oLastSpan.dataset.id : '', ord: oLastSpan ? +oLastSpan.dataset.ord : 0 }); },
     cmdInsertTreeWholePart: function () { fInsertTree('wp'); },
     cmdInsertTreeParentChild: function () { fInsertTree('pc'); },
+    cmdInsertDoing: function () { fInsertTree('doing'); },
     // Character inserts (also on chords ctrl+alt+c …) — insert verbatim at the caret.
     cmdCharArrow1: function () { fInsertChar('⭢'); },
     cmdCharArrow2: function () { fInsertChar('⇒'); },
@@ -324,7 +325,7 @@ export function fInitMcshv_bridge() {
   }
   // Ctrl+Alt+P P P, T G|W|P: runCommands keybindings in VS Code, here the-viewer's commands
   var oLocalChords = { 'ctrl+alt+p p p': 'cmdInsertParaDsnNam', 'ctrl+alt+p t g': 'cmdInsertTreeGenSpe', 'ctrl+alt+p c a': 'cmdInsertAttribute', 'ctrl+alt+p c g': 'cmdInsertGeneric', 'ctrl+alt+p c s': 'cmdInsertSpecific', 'ctrl+alt+p c w': 'cmdInsertWhole', 'ctrl+alt+p c p': 'cmdInsertPart', 'ctrl+alt+p c n': 'cmdInsertParent', 'ctrl+alt+p c c': 'cmdInsertChild',
-    'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild',
+    'ctrl+alt+p t w': 'cmdInsertTreeWholePart', 'ctrl+alt+p t p': 'cmdInsertTreeParentChild', 'ctrl+alt+p t d': 'cmdInsertDoing',
     'ctrl+alt+p i n r': 'cmdInhRenumber', 'ctrl+alt+p i n w': 'cmdInhNumberOwn', 'ctrl+alt+p i n f': 'cmdInhNumberGen',
     'ctrl+alt+p i n l': 'cmdInhLast', 'ctrl+alt+p i n o': 'cmdInhReorder', 'ctrl+alt+p i d g': 'cmdInhGeneralize',
     'ctrl+alt+p i d s': 'cmdInhSpecialize', 'ctrl+alt+p i d j': 'cmdInhSpecializeJoin', 'ctrl+alt+p i d d': 'cmdInhDeleteEmpty', 'ctrl+alt+p i d m': 'cmdInhRename',
@@ -336,7 +337,7 @@ export function fInitMcshv_bridge() {
   function fInsertTree(sKindIn) {
     if (!oLastSpan) return fNotify('click a line first');
     fSaveState(oLastSpan);
-    fPost({ type: 'structure', op: 'tree', sKind: sKindIn, id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord });
+    fPost({ type: 'structure', op: sKindIn === 'doing' ? 'doing' : 'tree', sKind: sKindIn, id: oLastSpan.dataset.id, ord: +oLastSpan.dataset.ord });
   }
   fSetChords([]);
 

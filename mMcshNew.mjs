@@ -51,6 +51,7 @@ import {fPlanSectMove, fReadRawOther} from './mMcshSectMove.mjs'
 const
   // contains the-versions of mHitp.js
   aVersion = [
+    'mMcshNew.mjs.1-15-0.2026-11-28: the-file-concept name-line is-written "M!@McshXxx.last.html" (was "M!@McshXxx")',
     'mMcshNew.mjs.1-14-0.2026-11-01: SFTP ssh-key, password only as fallback',
     'mMcshNew.mjs.1-12-0.2026-10-31: generic-tree names X:generic (was X_Gntr)',
     'mMcshNew.mjs.1-13-0.2026-10-30: SFTP password from env MCSH_SFTP_PASSWORD, not argv',
@@ -195,7 +196,7 @@ s =
   '  <p id="idName">name::\n' +
   '    <br>* McshEngl.' + sNameInformal + '!⇒' + sNameMain + ',\n' +
   '    <br>* McshEngl.' + sNameMain + '!=' + sNameInformal + ',\n' +
-  '    <br>* McshEngl.' + sNameMain + '!@' + sNameFileNaked + ',\n' +
+  '    <br>* McshEngl.' + sNameMain + '!@' + sNameFileNaked + '.last.html,\n' +
   '    <br>* McshEngl.' + (sAttrbase === sNameMain ? sNameMain + '!Attrbase' : sAttrbase + '!Attrbase!⇒' + sNameMain) + ',\n' +
   '    <br>* McshEngl.' + sNameFile + '//' + sDir + '//dirMcsh!⇒' + sNameMain + ',\n' +
   '    <br>* McshEngl.' + sDir +'/' + sNameFile + '!⇒' + sNameMain + ',\n' +

@@ -51,6 +51,7 @@ import { fSplit_sections, fFindSect_overview, fStripTags, fExtractId, fExtractCo
 const
   // contains the-versions of inheritMcsh.mjs
   aVersion = [
+    'inheritMcsh.mjs.0-26-0.2026-11-28: a-text-reference is-read "!@File.last.html#id" (written form) and "!@File#id" (short)',
     'inheritMcsh.mjs.0-25-2.2026-11-26: a-link-stub has as attr-keys the-names Whole\'word of its target (Hnmdlogo\'user at Hnmdimpler: 22_implementor IS the-inherited user); INH-LAST: an-attribute with its own attributes is a-generic too',
     'inheritMcsh.mjs.0-25-1.2026-11-26: INH-EMPTY: NOT an-attribute of a-join with another number than its generic\'s (it says its number)',
     'inheritMcsh.mjs.0-25-0.2026-11-26: a-JOIN (a-concept with 2+ numbered generics) loses nothing: its space is the-union of its generics\' spaces, numbered by the-join (its written numbers, then the-generic\'s if free, then after the-last); its specifics inherit the-joined numbers',
@@ -105,7 +106,8 @@ const
   // an-English-name-line
   rNameEngl = /<br>\*\s*McshEngl\.([^\n,]+),/g,
   // a-text-reference: "name!@McshCor000012#idMdl014", "name!@#idMdl014" (same file)
-  rRef = /!@(Mcsh[A-Za-z]*\d{6})?#(id[^\s,<"':]+)/g,
+  //   written "name!@McshCor000012.last.html#idMdl014" (the-short "!@McshCor000012#idMdl014" is read too)
+  rRef = /!@(Mcsh[A-Za-z]*\d{6})?(?:\.last\.html)?#(id[^\s,<"':]+)/g,
   // the-name of a-generic-tree, in its own generic-tree::  "<br>* McshEngl.system:generic,"
   rGntrDef = /<br>\*\s*McshEngl\.([^\s,<!]+:generic)[,!]/g,
   // a-text-entry of a-generic: "<br>* system:generic,"; NOT "McshEngl.…", NOT "...entity:generic"

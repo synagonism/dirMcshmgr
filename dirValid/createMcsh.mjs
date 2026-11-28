@@ -122,6 +122,7 @@ import { fFindInheritAttr } from './inheritMcsh.mjs'
 const
   // contains the-versions of createMcsh.mjs
   aVersion = [
+    'createMcsh.mjs.0-46-0.2026-11-28: the-!@ items are-written "G.S!@File.last.html#id" (was "!@File#id"); an-item already there in either form is-not added',
     'createMcsh.mjs.0-45-0.2026-11-19: --auto (validate-file fix) runs the-MvrwGstr03 fix too, and it passes --fix-num to inheritMcsh: WRONGNUM, OWNNUM renumbered',
     'createMcsh.mjs.0-44-0.2026-11-18: link fixes parse the-other files for their ids only; --auto also runs the-rule fixes of MvrwId01..12, Hvre05/06, MvrwMain01..07, MvrwName01, MvrwSect04, MvrwMisc01, MvrwMain11 (steps code:<rule>)',
     'createMcsh.mjs.0-43-0.2026-11-17: --auto also with --dir, --list, --all (validate-directory | -list | -worldview)',
@@ -2196,12 +2197,12 @@ function fPlanGntrNew(sRawIn, sNameShortIn, aoJobIn, oSetHeadIn) {
 }
 
 /**
- * OUTPUT: the-item of specific S in G's specific-tree:: "G.S!@file#id" (user {2026-11-03}):
+ * OUTPUT: the-item of specific S in G's specific-tree:: "G.S!@file.last.html#id" (user {2026-11-03}):
  *   a-dotted main-name S (Hmbdnutrient.010_iron_Fe) is written itself, without its NNN_ numbers.
  */
 function fFindItemSptr(sMainGIn, sMainSIn, sFileSIn, sIdSIn) {
   const sName = sMainSIn.includes('.') ? sMainSIn.replace(/\.\d+_/g, '.') : `${sMainGIn}.${sMainSIn}`;
-  return `${sName}!@${sFileSIn}#${sIdSIn}`;
+  return `${sName}!@${sFileSIn}.last.html#${sIdSIn}`;
 }
 
 /**
@@ -2225,7 +2226,8 @@ function fPlanSptrAdd(sRawIn, sNameShortIn, aoJobIn) {
     if (nSptr !== -1) {
       let nEnd = nSptr; while (nEnd < aLine.length - 1 && !aLine[nEnd].includes('</p>')) nEnd++;
       const sPara = aLine.slice(nSptr, nEnd + 1).join('\n');
-      const aItem = oJob.aItem.filter(sItem => !sPara.includes(sItem.slice(sItem.indexOf('!@'))));
+      // its link, as written (!@F.last.html#id) or short (!@F#id)
+      const aItem = oJob.aItem.filter(sItem => { const sRef = sItem.slice(sItem.indexOf('!@')); return !sPara.includes(sRef) && !sPara.includes(sRef.replace('.last.html#', '#')); });
       if (!aItem.length) continue;
       // before an-"=== addressWpg" part, else before the-clsHide line
       let nAt = nEnd;
@@ -2795,7 +2797,7 @@ async function fMain() {
             const oG = ooRawAll.get(sFileG);
             const oMainG = oG && sIdG ? fFindMainOfSect(oG.sRaw.split('\n'), sIdG) : null;
             if (!oMainG?.sMain) { fSkipGstr(sLoc, `"${sTextS}": its generic ${sNameG} has no generic-tree:: name and no main-name`); continue; }
-            sItemG = `${oMainG.sMain}!@${sFileG}#${sIdG}`;
+            sItemG = `${oMainG.sMain}!@${sFileG}.last.html#${sIdG}`;
           }
           if (!ooJobGstr.has(sFileS)) ooJobGstr.set(sFileS, []);
           const aJob = ooJobGstr.get(sFileS);

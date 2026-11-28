@@ -163,10 +163,11 @@ function fRewriteLink(sTextIn, fHrefIn, sFileNakedIn, fIdNewIn, sFileNakedNewIn)
     const sHrefNew = fHrefIn(sPath, sFragment)
     return sHrefNew === null ? sAll : `href="${sHrefNew}"`
   })
-  if (sText.includes(`!@${sFileNakedIn}#`)) {
-    sText = sText.replace(new RegExp(`!@${sFileNakedIn}#([^\\s,<"':]+)`, 'g'), (sAll, sId) => {
+  // written "!@McshCor000012.last.html#idX", or the-short "!@McshCor000012#idX": the-new one is written
+  if (sText.includes(`!@${sFileNakedIn}#`) || sText.includes(`!@${sFileNakedIn}.last.html#`)) {
+    sText = sText.replace(new RegExp(`!@${sFileNakedIn}(?:\\.last\\.html)?#([^\\s,<"':]+)`, 'g'), (sAll, sId) => {
       const sIdNew = fIdNewIn(sId)
-      return sIdNew ? `!@${sFileNakedNewIn}#${sIdNew}` : sAll
+      return sIdNew ? `!@${sFileNakedNewIn}.last.html#${sIdNew}` : sAll
     })
   }
   return sText

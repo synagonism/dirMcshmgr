@@ -1,8 +1,43 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  createMcsh --code MvrwMain11_line --file McshTchInf000039 --fix: C:/dirNodews/dirMcsh
+  createMcsh --auto --file McshLag000002 --fix: C:\dirNodews\dirMcsh
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  0 files written · MvrwMain11_line: 0 issues · 0 fixed · 0 skipped
+  0 files written · MvrwGstr03_inherited_attr 10 · 0 skipped
   written, no backup: see git diff
 
-=== NOISSUE (1) — the-rule has no issue in the-file
-  McshTchInf000039  MvrwMain11_line: nothing to fix
+=== NOISSUE (24) — the-rule has no issue in the-file
+  McshLag000002  MvrwId01_char: nothing to fix
+  McshLag000002  MvrwId02_suffix_dong: nothing to fix
+  McshLag000002  MvrwId04_suffix_eval: nothing to fix
+  McshLag000002  MvrwId05_suffix_evog: nothing to fix
+  McshLag000002  MvrwId06_suffix_irsc: nothing to fix
+  McshLag000002  MvrwId07_suffix_pntr: nothing to fix
+  McshLag000002  MvrwId08_suffix_chtr: nothing to fix
+  McshLag000002  MvrwId09_suffix_wltr: nothing to fix
+  McshLag000002  MvrwId10_suffix_prtr: nothing to fix
+  McshLag000002  MvrwId11_suffix_gntr: nothing to fix
+  McshLag000002  MvrwId12_suffix_sptr: nothing to fix
+  McshLag000002  Hvre05: nothing to fix
+  McshLag000002  MvrwMain01_Attrbase: nothing to fix
+  McshLag000002  MvrwMain02_evolg: nothing to fix
+  McshLag000002  MvrwMain03_eval: nothing to fix
+  McshLag000002  MvrwMain04_doing: nothing to fix
+  McshLag000002  MvrwMain05_infrsc: nothing to fix
+  McshLag000002  MvrwMain06_srtr: nothing to fix
+  McshLag000002  MvrwMain07_Attrbase_line: nothing to fix
+  McshLag000002  MvrwName01_formal: nothing to fix
+  McshLag000002  MvrwSect04_name_empty: nothing to fix
+  McshLag000002  MvrwMisc01_date: nothing to fix
+  McshLag000002  MvrwGstr03_inherited_attr: nothing to fix
+  McshLag000002  MvrwMain11_line: nothing to fix
+
+=== INHERIT (10) — MvrwGstr03_inherited_attr: inheritMcsh.mjs ran ONCE (with --fix: --fix --fix-num --fix-order --fix-name), its summary
+  titles changed: 0
+  name:: paragraphs changed: 0
+  NN_last names changed: 5
+  INH-NONUM         0  matches a-numbered generic-attribute, has no NN_ (--fix adds it, if NN free)
+  INH-WRONGNUM      0  its NN_ differs from the-generic-attribute (own numbering? by hand)
+  INH-OWNNUM        0  an-own numbered attribute NOT right after the-last number of the-inherited-attr-chain
+  INH-OWNNONUM      0  an-own attribute without number: it gets the-next NN after the-chain (--fix writes it)
+  INH-LAST          0  a-generic without (or with an-old) name Mmn'NN_last: NN the-last number its specifics continue from (--fix writes it)
+  INH-ORDER         0  the-attributes of a-specific are not in the-NN order of its generic
+  written: see dirValid/inheritMcsh.txt

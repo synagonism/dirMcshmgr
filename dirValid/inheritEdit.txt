@@ -1,83 +1,189 @@
-inheritEdit number-own McshLag000002#idInfBrnBiolag
-  NUMBER  McshLag000002:98 "language of Biobraininfo" → 11_
-  FOLLOW  McshEdu000002:207 "11_knowledge of science" → 12_
-  FOLLOW  McshEdu000002:338 "12_scientist of science" → 13_
-  FOLLOW  McshEdu000002:440 "13_organization of science" → 14_
-  FOLLOW  McshEdu000002:512 "14_conference of science" → 15_
-  FOLLOW  McshEdu000002:526 "15_scientific-method of science" → 16_
-  FOLLOW  McshEdu000002:550 "16_relation-to-other-sciences of science" → 17_
-  FOLLOW  McshEdu000002:563 "17_relation-to-society of science" → 18_
-  FOLLOW  McshEdu000002:582 "18_relation-to-religion of science" → 19_
-  FOLLOW  McshEdu000002:692 "19_researching of science" → 20_
-  FOLLOW  McshLag000007:342 "11_syntax-tree of Hnmdsemuview" → 12_
-  FOLLOW  McshLag000007:429 "12_info of Hnmdsemuview" → 13_
-  FOLLOW  McshLag000007:469 "13_semu-concept of Hnmdsemuview" → 14_
-  FOLLOW  McshLag000007:842 "14_Semuargu of Hnmdsemuview" → 15_
-  FOLLOW  McshLag000007:2127 "15_Semuverb of Hnmdsemuview" → 16_
-  FOLLOW  McshLag000007:14313 "16_Semuconj of Hnmdsemuview" → 17_
-  FOLLOW  McshLag000007:14807 "17_Semuargu-system of Hnmdsemuview" → 18_
-  FOLLOW  McshLag000007:14830 "18_Semuverb-argument of Hnmdsemuview" → 19_
-  FOLLOW  McshLag000007:15324 "19_semu-sentence of Hnmdsemuview" → 20_
-  FOLLOW  McshLag000007:15411 "20_semu-sentence--system of Hnmdsemuview" → 21_
-  FOLLOW  McshLag000007:15495 "21_semu-root of Hnmdsemuview" → 22_
-  FOLLOW  McshLag000007:15521 "22_relation-to--senso-mind of Hnmdsemuview" → 23_
-  FOLLOW  McshLag000007:15539 "23_relation-to-logo of Hnmdsemuview" → 24_
-  FOLLOW  McshEdu000005:2137 "12_scientist of SciMath" → 13_
-  FOLLOW  McshEdu000009:469 "12_scientist of SciCognitive" → 13_
-  FOLLOW  McshEdu000009:503 "13_organization of SciCognitive" → 14_
-  FOLLOW  McshEdu000010:1675 "12_scientist of Hnmdsci" → 13_
-  FOLLOW  McshEdu000010:1774 "13_organization of Hnmdsci" → 14_
-  FOLLOW  McshEdu000010:1844 "14_conference of Hnmdsci" → 15_
-  FOLLOW  McshLag000010:197 "13_semu-concept of SnguviewSemu" → 14_
-  FOLLOW  McshLag000010:252 "14_Semuargu of SnguviewSemu" → 15_
-  FOLLOW  McshLag000010:319 "15_Semuverb of SnguviewSemu" → 16_
-  FOLLOW  McshLag000012:141 "13_semu-concept of EspoviewSemu" → 14_
-  FOLLOW  McshLag000018:253 "13_semu-concept of ZhonviewSemu" → 14_
-  FOLLOW  McshTchInf000036:459 "13_organization of techAI" → 14_
-  FOLLOW  McshTchInf000036:744 "20_science of techAI" → 21_
-  FOLLOW  McshEdu000010:2411 "12_scientist of HnmdsciCognitive" → 13_
-  FOLLOW  McshTchInf000036:4098 "13_organization of TechMalr" → 14_
-  NAME    McshEdu000002:207 "12_knowledge of science": renamed science'11_knowledge → science'12_knowledge
-  NAME    McshEdu000002:338 "13_scientist of science": renamed science'12_scientist → science'13_scientist
-  NAME    McshEdu000002:440 "14_organization of science": renamed science'13_organization → science'14_organization
-  NAME    McshEdu000002:512 "15_conference of science": renamed science'14_conference → science'15_conference
-  NAME    McshEdu000002:526 "16_scientific-method of science": renamed science'15_scientific_method → science'16_scientific_method
-  NAME    McshEdu000002:550 "17_relation-to-other-sciences of science": renamed science'16_relation_to_other_sciences → science'17_relation_to_other_sciences
-  NAME    McshEdu000002:563 "18_relation-to-society of science": renamed science'17_relation_to_society → science'18_relation_to_society
-  NAME    McshEdu000002:582 "19_relation-to-religion of science": renamed science'18_relation_to_religion → science'19_relation_to_religion
-  NAME    McshEdu000002:692 "20_researching of science": renamed science'19_researching → science'20_researching
-  NAME    McshEdu000005:2137 "13_scientist of SciMath": renamed SciMath'12_scientist → SciMath'13_scientist
-  NAME    McshEdu000009:469 "13_scientist of SciCognitive": renamed SciCognitive'12_scientist → SciCognitive'13_scientist
-  NAME    McshEdu000009:503 "14_organization of SciCognitive": renamed SciCognitive'13_organization → SciCognitive'14_organization
-  NAME    McshEdu000010:1675 "13_scientist of Hnmdsci": renamed Hnmdsci'12_scientist → Hnmdsci'13_scientist
-  NAME    McshEdu000010:1774 "14_organization of Hnmdsci": renamed Hnmdsci'13_organization → Hnmdsci'14_organization
-  NAME    McshEdu000010:1844 "15_conference of Hnmdsci": renamed Hnmdsci'14_conference → Hnmdsci'15_conference
-  NAME    McshEdu000010:2411 "13_scientist of HnmdsciCognitive": renamed HnmdsciCognitive'12_scientist → HnmdsciCognitive'13_scientist
-  NAME    McshLag000007:342 "12_syntax-tree of Hnmdsemuview": renamed Hnmdsemuview'11_syntax_tree → Hnmdsemuview'12_syntax_tree
-  NAME    McshLag000007:429 "13_info of Hnmdsemuview": renamed Hnmdsemuview'12_info → Hnmdsemuview'13_info
-  NAME    McshLag000007:469 "14_semu-concept of Hnmdsemuview": renamed Hnmdsemuview'13_semu_concept → Hnmdsemuview'14_semu_concept
-  NAME    McshLag000007:842 "15_Semuargu of Hnmdsemuview": renamed Hnmdsemuview'14_Semuargu → Hnmdsemuview'15_Semuargu
-  NAME    McshLag000007:2127 "16_Semuverb of Hnmdsemuview": renamed Hnmdsemuview'15_Semuverb → Hnmdsemuview'16_Semuverb
-  NAME    McshLag000007:14313 "17_Semuconj of Hnmdsemuview": renamed Hnmdsemuview'16_Semuconj → Hnmdsemuview'17_Semuconj
-  NAME    McshLag000007:14807 "18_Semuargu-system of Hnmdsemuview": renamed Hnmdsemuview'17_Semuargu_system → Hnmdsemuview'18_Semuargu_system
-  NAME    McshLag000007:14830 "19_Semuverb-argument of Hnmdsemuview": renamed Hnmdsemuview'18_Semuverb_argument → Hnmdsemuview'19_Semuverb_argument
-  NAME    McshLag000007:15324 "20_semu-sentence of Hnmdsemuview": renamed Hnmdsemuview'19_semu_sentence → Hnmdsemuview'20_semu_sentence
-  NAME    McshLag000007:15411 "21_semu-sentence--system of Hnmdsemuview": renamed Hnmdsemuview'20_semu_sentence__system → Hnmdsemuview'21_semu_sentence__system
-  NAME    McshLag000007:15495 "22_semu-root of Hnmdsemuview": renamed Hnmdsemuview'21_semu_root → Hnmdsemuview'22_semu_root
-  NAME    McshLag000007:15521 "23_relation-to--senso-mind of Hnmdsemuview": renamed Hnmdsemuview'22_relation_to__senso_mind → Hnmdsemuview'23_relation_to__senso_mind
-  NAME    McshLag000007:15539 "24_relation-to-logo of Hnmdsemuview": renamed Hnmdsemuview'23_relation_to_logo → Hnmdsemuview'24_relation_to_logo
-  NAME    McshLag000010:197 "14_semu-concept of SnguviewSemu": renamed SnguviewSemu'13_semu_concept → SnguviewSemu'14_semu_concept
-  NAME    McshLag000010:252 "15_Semuargu of SnguviewSemu": renamed SnguviewSemu'14_Semuargu → SnguviewSemu'15_Semuargu
-  NAME    McshLag000010:319 "16_Semuverb of SnguviewSemu": renamed SnguviewSemu'15_Semuverb → SnguviewSemu'16_Semuverb
-  NAME    McshLag000012:141 "14_semu-concept of EspoviewSemu": renamed EspoviewSemu'13_semu_concept → EspoviewSemu'14_semu_concept
-  NAME    McshLag000018:253 "14_semu-concept of ZhonviewSemu": renamed ZhonviewSemu'13_semu_concept → ZhonviewSemu'14_semu_concept
-  NAME    McshTchInf000036:459 "14_organization of techAI": renamed techAI'13_organization → techAI'14_organization
-  NAME    McshTchInf000036:744 "21_science of techAI": renamed techAI'20_science → techAI'21_science
-  NAME    McshTchInf000036:4098 "14_organization of TechMalr": renamed TechMalr'13_organization → TechMalr'14_organization
-  LAST    McshLag000002:20 "overview of Biobraininfo": Biobraininfo'11_last
-  LAST    McshEdu000002:20 "overview of science": science'20_last
-  LAST    McshEdu000005:24 "overview of SciMath": SciMath'20_last
-  LAST    McshEdu000010:20 "overview of Hnmdsci": Hnmdsci'20_last
-  LAST    McshLag000007:283 "input3 (Semuview) of Hnmdinptview": Hnmdsemuview'24_last
-  LAST    McshTchInf000036:20 "overview of techAI": techAI'21_last
-  LAST    McshTchInf000036:3970 "Aiapp.machine_learning": TechMalr'21_last
+inheritEdit reorder McshCor000012#idMdl034
+  NUMBER  McshCor000012:1099 "10_mapping_relation of modelSyst" → 11_
+  NUMBER  McshCor000012:1113 "11_mapping_method of modelSyst" → 12_
+  NUMBER  McshCor000012:1127 "12_implementor of modelSyst" → 13_
+  NUMBER  McshCor000012:1141 "13_mapping_doing of modelSyst" → 14_
+  NUMBER  McshCor000012:1154 "14_medium of modelSyst" → 15_
+  NUMBER  McshCor000012:1168 "15_evaluation of modelSyst" → 16_
+  NUMBER  McshCor000012:1181 "16_user of modelSyst" → 17_
+  NUMBER  McshCor000012:1195 "17_science of modelSyst" → 18_
+  NUMBER  McshCor000012:1209 "18_environment of modelSyst" → 19_
+  FOLLOW  McshLag000002:79 "12_implementor (brain-entity) of Biobraininfo" → 13_
+  FOLLOW  McshLag000002:98 "19_language of Biobraininfo" → 20_
+  FOLLOW  McshLag000003:85 "10_mapping_relation of info" → 11_
+  FOLLOW  McshLag000003:1221 "12_implementor (human) of worldview" → 13_
+  FOLLOW  McshLag000003:1188 "21_view of worldview" → 20_
+  FOLLOW  McshLag000003:1203 "22_management_tool of worldview" → 21_
+  FOLLOW  McshNtr000011:81 "14_medium of Bioinfo" → 15_
+  FOLLOW  McshHmn000002:5299 "42_name of HumnIdvl" → 51_
+  FOLLOW  McshStnlaw000002:71 "07_legality-of-entity of law" → 20_
+  FOLLOW  McshStnlaw000002:296 "12_topic of law" → 21_
+  FOLLOW  McshStnlaw000002:364 "13_jurisdiction of law" → 22_
+  FOLLOW  McshStnlaw000002:383 "14_time_of_validation of law" → 23_
+  FOLLOW  McshStnlaw000002:425 "15_ethicality-of-entity of law" → 24_
+  FOLLOW  McshStnlaw000002:472 "16_organization of law" → 25_
+  FOLLOW  McshStnlaw000002:889 "17_worker of law" → 26_
+  FOLLOW  McshStnlaw000002:989 "18_tech of law" → 27_
+  FOLLOW  McshStnlaw000002:1053 "19_legal-system of law" → 28_
+  FOLLOW  McshTchInf000005:1231 "12_title of Tdocinpt" → 20_
+  FOLLOW  McshTchInf000005:1245 "13_paragraph of Tdocinpt" → 21_
+  FOLLOW  McshTchInf000005:1259 "14_list of Tdocinpt" → 22_
+  FOLLOW  McshTchInf000005:1273 "15_table of Tdocinpt" → 23_
+  FOLLOW  McshTchInf000005:1287 "16_tree of Tdocinpt" → 24_
+  FOLLOW  McshTchInf000005:1301 "17_section of Tdocinpt" → 25_
+  FOLLOW  McshTchInf000005:1747 "11_extention of Cmplfile" → 20_
+  FOLLOW  McshTchInf000005:1760 "12_renaming of Cmplfile" → 21_
+  FOLLOW  McshTchInf000011:4999 "24_specification of Jsbrlago" → 30_
+  FOLLOW  McshTchPrgm000002:116 "12_using of Cmprprgm" → 20_
+  FOLLOW  McshTchPrgm000002:130 "13_developing of Cmprprgm" → 21_
+  FOLLOW  McshTchPrgm000002:144 "14_machine of Cmprprgm" → 22_
+  FOLLOW  McshTchPrgm000002:172 "15_lagPrograming of Cmprprgm" → 23_
+  FOLLOW  McshTchPrgm000002:263 "16_license of Cmprprgm" → 24_
+  FOLLOW  McshTchPrgm000002:277 "17_human of Cmprprgm" → 25_
+  FOLLOW  McshTchPrgm000002:293 "18_service of Cmprprgm" → 26_
+  FOLLOW  McshTchPrgm000002:308 "19_installing of Cmprprgm" → 27_
+  FOLLOW  McshTchPrgm000003:65 "24_using of Atomedtr" → 30_
+  FOLLOW  McshTchPrgm000003:211 "25_developing of Atomedtr" → 31_
+  FOLLOW  McshTchPrgm000003:2406 "26_installing of Atomedtr" → 32_
+  FOLLOW  McshLag000002:84 "14_medium of Biobraininfo" → 15_
+  FOLLOW  McshEdu000002:207 "20_knowledge of science" → 21_
+  FOLLOW  McshEdu000002:338 "21_scientist of science" → 22_
+  FOLLOW  McshEdu000002:440 "22_organization of science" → 23_
+  FOLLOW  McshEdu000002:512 "23_conference of science" → 24_
+  FOLLOW  McshEdu000002:526 "24_scientific-method of science" → 25_
+  FOLLOW  McshEdu000002:550 "25_relation-to-other-sciences of science" → 26_
+  FOLLOW  McshEdu000002:563 "26_relation-to-society of science" → 27_
+  FOLLOW  McshEdu000002:582 "27_relation-to-religion of science" → 28_
+  FOLLOW  McshEdu000002:692 "28_researching of science" → 29_
+  FOLLOW  McshLag000003:528 "20_stimulous of sensation" → 21_
+  FOLLOW  McshLag000003:533 "21_sensing of sensation" → 22_
+  FOLLOW  McshLag000007:429 "20_info of Hnmdsemuview" → 21_
+  FOLLOW  McshLag000007:469 "21_semu-concept of Hnmdsemuview" → 22_
+  FOLLOW  McshLag000007:842 "22_Semuargu of Hnmdsemuview" → 23_
+  FOLLOW  McshLag000007:2133 "23_Semuverb of Hnmdsemuview" → 24_
+  FOLLOW  McshLag000007:14321 "24_Semuconj of Hnmdsemuview" → 25_
+  FOLLOW  McshLag000007:14816 "25_Semuargu-system of Hnmdsemuview" → 26_
+  FOLLOW  McshLag000007:14839 "26_Semuverb-argument of Hnmdsemuview" → 27_
+  FOLLOW  McshLag000007:15333 "27_semu-sentence of Hnmdsemuview" → 28_
+  FOLLOW  McshLag000007:15420 "28_semu-sentence--system of Hnmdsemuview" → 29_
+  FOLLOW  McshLag000007:15504 "29_semu-root of Hnmdsemuview" → 30_
+  FOLLOW  McshLag000007:15530 "30_relation-to--senso-mind of Hnmdsemuview" → 31_
+  FOLLOW  McshLag000007:15548 "31_relation-to-logo of Hnmdsemuview" → 32_
+  FOLLOW  McshTchInf000011:4999 "30_specification of Jsbrlago" → 32_
+  FOLLOW  McshTchPrgm000003:65 "30_using of Atomedtr" → 32_
+  FOLLOW  McshTchPrgm000003:211 "31_developing of Atomedtr" → 33_
+  FOLLOW  McshTchPrgm000003:2406 "32_installing of Atomedtr" → 34_
+  FOLLOW  McshEdu000005:2137 "21_scientist of SciMath" → 22_
+  FOLLOW  McshEdu000009:469 "21_scientist of SciCognitive" → 22_
+  FOLLOW  McshEdu000009:503 "22_organization of SciCognitive" → 23_
+  FOLLOW  McshEdu000010:1675 "21_scientist of Hnmdsci" → 22_
+  FOLLOW  McshEdu000010:1774 "22_organization of Hnmdsci" → 23_
+  FOLLOW  McshEdu000010:1844 "23_conference of Hnmdsci" → 24_
+  FOLLOW  McshLag000010:197 "21_semu-concept of SnguviewSemu" → 22_
+  FOLLOW  McshLag000010:252 "22_Semuargu of SnguviewSemu" → 23_
+  FOLLOW  McshLag000010:319 "23_Semuverb of SnguviewSemu" → 24_
+  FOLLOW  McshLag000012:141 "21_semu-concept of EspoviewSemu" → 22_
+  FOLLOW  McshLag000018:253 "21_semu-concept of ZhonviewSemu" → 22_
+  FOLLOW  McshTchInf000036:459 "22_organization of techAI" → 23_
+  FOLLOW  McshEdu000010:2411 "21_scientist of HnmdsciCognitive" → 22_
+  FOLLOW  McshTchInf000036:4103 "22_organization of TechMalr" → 23_
+  ORDER   McshLag000003:1112 "infoBrain.worldview": 06 09 13 20 21
+  ORDER   McshStnlaw000002:20 "overview of law": 11 20 21 22 23 24 25 26 27 28
+  ORDER   McshTchInf000036:20 "overview of techAI": 04 21 23
+  NAME    McshCor000012:1099 "11_mapping_relation of modelSyst": renamed modelSyst'10_mapping_relation → modelSyst'11_mapping_relation
+  NAME    McshCor000012:1113 "12_mapping_method of modelSyst": renamed modelSyst'11_mapping_method → modelSyst'12_mapping_method
+  NAME    McshCor000012:1127 "13_implementor of modelSyst": renamed modelSyst'12_implementor → modelSyst'13_implementor
+  NAME    McshCor000012:1141 "14_mapping_doing of modelSyst": renamed modelSyst'13_mapping_doing → modelSyst'14_mapping_doing
+  NAME    McshCor000012:1154 "15_medium of modelSyst": renamed modelSyst'14_medium → modelSyst'15_medium
+  NAME    McshCor000012:1168 "16_evaluation of modelSyst": renamed modelSyst'15_evaluation → modelSyst'16_evaluation
+  NAME    McshCor000012:1181 "17_user of modelSyst": renamed modelSyst'16_user → modelSyst'17_user
+  NAME    McshCor000012:1195 "18_science of modelSyst": renamed modelSyst'17_science → modelSyst'18_science
+  NAME    McshCor000012:1209 "19_environment of modelSyst": renamed modelSyst'18_environment → modelSyst'19_environment
+  NAME    McshEdu000002:207 "21_knowledge of science": renamed science'20_knowledge → science'21_knowledge
+  NAME    McshEdu000002:338 "22_scientist of science": renamed science'21_scientist → science'22_scientist
+  NAME    McshEdu000002:440 "23_organization of science": renamed science'22_organization → science'23_organization
+  NAME    McshEdu000002:512 "24_conference of science": renamed science'23_conference → science'24_conference
+  NAME    McshEdu000002:526 "25_scientific-method of science": renamed science'24_scientific_method → science'25_scientific_method
+  NAME    McshEdu000002:550 "26_relation-to-other-sciences of science": renamed science'25_relation_to_other_sciences → science'26_relation_to_other_sciences
+  NAME    McshEdu000002:563 "27_relation-to-society of science": renamed science'26_relation_to_society → science'27_relation_to_society
+  NAME    McshEdu000002:582 "28_relation-to-religion of science": renamed science'27_relation_to_religion → science'28_relation_to_religion
+  NAME    McshEdu000002:692 "29_researching of science": renamed science'28_researching → science'29_researching
+  NAME    McshEdu000005:2137 "22_scientist of SciMath": renamed SciMath'21_scientist → SciMath'22_scientist
+  NAME    McshEdu000009:469 "22_scientist of SciCognitive": renamed SciCognitive'21_scientist → SciCognitive'22_scientist
+  NAME    McshEdu000009:503 "23_organization of SciCognitive": renamed SciCognitive'22_organization → SciCognitive'23_organization
+  NAME    McshEdu000010:1675 "22_scientist of Hnmdsci": renamed Hnmdsci'21_scientist → Hnmdsci'22_scientist
+  NAME    McshEdu000010:1774 "23_organization of Hnmdsci": renamed Hnmdsci'22_organization → Hnmdsci'23_organization
+  NAME    McshEdu000010:1844 "24_conference of Hnmdsci": renamed Hnmdsci'23_conference → Hnmdsci'24_conference
+  NAME    McshEdu000010:2411 "22_scientist of HnmdsciCognitive": renamed HnmdsciCognitive'21_scientist → HnmdsciCognitive'22_scientist
+  NAME    McshHmn000002:5299 "51_name of HumnIdvl": renamed HumnIdvl'42_name → HumnIdvl'51_name
+  NAME    McshLag000002:79 "13_implementor (brain-entity) of Biobraininfo": renamed Biobraininfo'12_implementor → Biobraininfo'13_implementor (link target)
+  NAME    McshLag000002:84 "15_medium of Biobraininfo": renamed Biobraininfo'14_medium → Biobraininfo'15_medium
+  NAME    McshLag000002:98 "20_language of Biobraininfo": renamed Biobraininfo'19_language → Biobraininfo'20_language (link target)
+  NAME    McshLag000003:85 "11_mapping_relation of info": renamed info'10_mapping_relation → info'11_mapping_relation
+  NAME    McshLag000003:1188 "13_implementor (human) of worldview": deleted worldview'23_human (old number); added worldview'13_implementor; added worldview'implementor
+  NAME    McshLag000003:1202 "20_view of worldview": renamed worldview'21_view → worldview'20_view
+  NAME    McshLag000003:1217 "21_management_tool of worldview": renamed worldview'22_management_tool → worldview'21_management_tool
+  NAME    McshLag000003:533 "22_sensing of sensation": renamed sensation'21_sensing → sensation'22_sensing (link target)
+  NAME    McshLag000007:429 "21_info of Hnmdsemuview": renamed Hnmdsemuview'20_info → Hnmdsemuview'21_info
+  NAME    McshLag000007:469 "22_semu-concept of Hnmdsemuview": renamed Hnmdsemuview'21_semu_concept → Hnmdsemuview'22_semu_concept
+  NAME    McshLag000007:842 "23_Semuargu of Hnmdsemuview": renamed Hnmdsemuview'22_Semuargu → Hnmdsemuview'23_Semuargu
+  NAME    McshLag000007:2133 "24_Semuverb of Hnmdsemuview": renamed Hnmdsemuview'23_Semuverb → Hnmdsemuview'24_Semuverb
+  NAME    McshLag000007:14321 "25_Semuconj of Hnmdsemuview": renamed Hnmdsemuview'24_Semuconj → Hnmdsemuview'25_Semuconj
+  NAME    McshLag000007:14816 "26_Semuargu-system of Hnmdsemuview": renamed Hnmdsemuview'25_Semuargu_system → Hnmdsemuview'26_Semuargu_system
+  NAME    McshLag000007:14839 "27_Semuverb-argument of Hnmdsemuview": renamed Hnmdsemuview'26_Semuverb_argument → Hnmdsemuview'27_Semuverb_argument
+  NAME    McshLag000007:15333 "28_semu-sentence of Hnmdsemuview": renamed Hnmdsemuview'27_semu_sentence → Hnmdsemuview'28_semu_sentence
+  NAME    McshLag000007:15420 "29_semu-sentence--system of Hnmdsemuview": renamed Hnmdsemuview'28_semu_sentence__system → Hnmdsemuview'29_semu_sentence__system
+  NAME    McshLag000007:15504 "30_semu-root of Hnmdsemuview": renamed Hnmdsemuview'29_semu_root → Hnmdsemuview'30_semu_root
+  NAME    McshLag000007:15530 "31_relation-to--senso-mind of Hnmdsemuview": renamed Hnmdsemuview'30_relation_to__senso_mind → Hnmdsemuview'31_relation_to__senso_mind
+  NAME    McshLag000007:15548 "32_relation-to-logo of Hnmdsemuview": renamed Hnmdsemuview'31_relation_to_logo → Hnmdsemuview'32_relation_to_logo
+  NAME    McshLag000010:197 "22_semu-concept of SnguviewSemu": renamed SnguviewSemu'21_semu_concept → SnguviewSemu'22_semu_concept
+  NAME    McshLag000010:252 "23_Semuargu of SnguviewSemu": renamed SnguviewSemu'22_Semuargu → SnguviewSemu'23_Semuargu
+  NAME    McshLag000010:319 "24_Semuverb of SnguviewSemu": renamed SnguviewSemu'23_Semuverb → SnguviewSemu'24_Semuverb
+  NAME    McshLag000012:141 "22_semu-concept of EspoviewSemu": renamed EspoviewSemu'21_semu_concept → EspoviewSemu'22_semu_concept
+  NAME    McshLag000018:253 "22_semu-concept of ZhonviewSemu": renamed ZhonviewSemu'21_semu_concept → ZhonviewSemu'22_semu_concept
+  NAME    McshNtr000011:81 "15_medium of Bioinfo": renamed Bioinfo'14_medium → Bioinfo'15_medium
+  NAME    McshStnlaw000002:192 "20_legality-of-entity of law": renamed law'07_legality_of_entity → law'20_legality_of_entity
+  NAME    McshStnlaw000002:296 "21_topic of law": renamed law'12_topic → law'21_topic
+  NAME    McshStnlaw000002:364 "22_jurisdiction of law": renamed law'13_jurisdiction → law'22_jurisdiction
+  NAME    McshStnlaw000002:383 "23_time_of_validation of law": renamed law'14_time_of_validation → law'23_time_of_validation
+  NAME    McshStnlaw000002:425 "24_ethicality-of-entity of law": renamed law'15_ethicality_of_entity → law'24_ethicality_of_entity
+  NAME    McshStnlaw000002:472 "25_organization of law": renamed law'16_organization → law'25_organization
+  NAME    McshStnlaw000002:889 "26_worker of law": renamed law'17_worker → law'26_worker
+  NAME    McshStnlaw000002:989 "27_tech of law": renamed law'18_tech → law'27_tech
+  NAME    McshStnlaw000002:1053 "28_legal-system of law": renamed law'19_legal_system → law'28_legal_system (link target)
+  NAME    McshTchInf000005:1231 "20_title of Tdocinpt": renamed Tdocinpt'12_title → Tdocinpt'20_title
+  NAME    McshTchInf000005:1245 "21_paragraph of Tdocinpt": renamed Tdocinpt'13_paragraph → Tdocinpt'21_paragraph
+  NAME    McshTchInf000005:1259 "22_list of Tdocinpt": renamed Tdocinpt'14_list → Tdocinpt'22_list
+  NAME    McshTchInf000005:1273 "23_table of Tdocinpt": renamed Tdocinpt'15_table → Tdocinpt'23_table
+  NAME    McshTchInf000005:1287 "24_tree of Tdocinpt": renamed Tdocinpt'16_tree → Tdocinpt'24_tree
+  NAME    McshTchInf000005:1301 "25_section of Tdocinpt": renamed Tdocinpt'17_section → Tdocinpt'25_section
+  NAME    McshTchInf000005:1747 "20_extention of Cmplfile": renamed Cmplfile'11_extention → Cmplfile'20_extention
+  NAME    McshTchInf000005:1760 "21_renaming of Cmplfile": renamed Cmplfile'12_renaming → Cmplfile'21_renaming
+  NAME    McshTchInf000011:4999 "32_specification of Jsbrlago": renamed Jsbrlago'24_specification → Jsbrlago'32_specification
+  NAME    McshTchInf000036:622 "23_organization of techAI": renamed techAI'22_organization → techAI'23_organization
+  NAME    McshTchInf000036:4103 "23_organization of TechMalr": renamed TechMalr'22_organization → TechMalr'23_organization
+  NAME    McshTchPrgm000002:116 "20_using of Cmprprgm": renamed Cmprprgm'12_using → Cmprprgm'20_using
+  NAME    McshTchPrgm000002:130 "21_developing of Cmprprgm": renamed Cmprprgm'13_developing → Cmprprgm'21_developing
+  NAME    McshTchPrgm000002:144 "22_machine of Cmprprgm": renamed Cmprprgm'14_machine → Cmprprgm'22_machine
+  NAME    McshTchPrgm000002:172 "23_lagPrograming of Cmprprgm": renamed Cmprprgm'15_lagPrograming → Cmprprgm'23_lagPrograming
+  NAME    McshTchPrgm000002:263 "24_license of Cmprprgm": renamed Cmprprgm'16_license → Cmprprgm'24_license
+  NAME    McshTchPrgm000002:277 "25_human of Cmprprgm": renamed Cmprprgm'17_human → Cmprprgm'25_human
+  NAME    McshTchPrgm000002:293 "26_service of Cmprprgm": renamed Cmprprgm'18_service → Cmprprgm'26_service
+  NAME    McshTchPrgm000002:308 "27_installing of Cmprprgm": renamed Cmprprgm'19_installing → Cmprprgm'27_installing
+  NAME    McshTchPrgm000003:65 "32_using of Atomedtr": renamed Atomedtr'24_using → Atomedtr'32_using
+  NAME    McshTchPrgm000003:211 "33_developing of Atomedtr": renamed Atomedtr'25_developing → Atomedtr'33_developing
+  NAME    McshTchPrgm000003:2406 "34_installing of Atomedtr": renamed Atomedtr'26_installing → Atomedtr'34_installing
+  LAST    McshLag000003:1112 "infoBrain.worldview": worldview'21_last
+  LAST    McshLag000002:20 "overview of Biobraininfo": Biobraininfo'20_last
+  LAST    McshEdu000002:20 "overview of science": science'29_last
+  LAST    McshEdu000005:24 "overview of SciMath": SciMath'29_last
+  LAST    McshEdu000010:20 "overview of Hnmdsci": Hnmdsci'29_last
+  LAST    McshNtr000011:20 "overview of Bioinfo": Bioinfo'19_last
+  LAST    McshLag000003:20 "overview of info": info'19_last
+  LAST    McshLag000007:283 "input3 (Semuview) of Hnmdinptview": Hnmdsemuview'32_last
+  LAST    McshStnlaw000002:20 "overview of law": law'28_last
+  LAST    McshTchInf000005:1191 "04_input of Tdoclago": Tdocinpt'25_last
+  LAST    McshTchInf000011:20 "overview of Jsbrlago": Jsbrlago'32_last
+  LAST    McshTchInf000036:20 "overview of techAI": techAI'29_last
+  LAST    McshTchInf000036:3975 "Aiapp.machine_learning": TechMalr'29_last
+  LAST    McshTchPrgm000002:20 "overview of Cmprprgm": Cmprprgm'27_last

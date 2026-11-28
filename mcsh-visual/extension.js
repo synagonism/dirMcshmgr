@@ -340,6 +340,7 @@ function fActivate(context) {
     vscode.commands.registerCommand('mcshv.insertTreeGenSpe', () => fInsertTree('gs')),
     vscode.commands.registerCommand('mcshv.insertTreeWholePart', () => fInsertTree('wp')),
     vscode.commands.registerCommand('mcshv.insertTreeParentChild', () => fInsertTree('pc')),
+    vscode.commands.registerCommand('mcshv.insertDoing', fInsertDoing),
     vscode.commands.registerCommand('mcshv.insertAttribute', fInsertAttrSource),
     vscode.commands.registerCommand('mcshv.insertGeneric', () => fInsertGenSpeSource('gen')),
     vscode.commands.registerCommand('mcshv.insertSpecific', () => fInsertGenSpeSource('spe')),
@@ -648,6 +649,17 @@ function fCreateProvider(context) {
           return 'none';
         }
         oEdit = { s: oTree.nAt, e: oTree.nAt, text: oTree.sInsert };
+      } else if (msg.op === 'doing') {
+        // the-DOING section of the-clicked line's concept (omModel.fBuildDoing)
+        const oDoing = omModel.fBuildDoing(sText, nOff, fDateToday());
+        if (oDoing.sWhy) { fStatus(oDoing.sWhy); return 'none'; }
+        if (oDoing.nAtExist != null) {
+          const sIdExist = (sText.slice(oDoing.nAtExist).match(/id="([^"]+)"/) || [])[1];
+          fStatus('the DOING section exists: #' + sIdExist);
+          fToChrome({ type: 'gotoId', id: sIdExist });
+          return 'none';
+        }
+        oEdit = { s: oDoing.nAt, e: oDoing.nAt, text: oDoing.sInsert };
       }
       if (!oEdit) return false;
       const oRange = new vscode.Range(oActiveDoc.positionAt(oEdit.s), oActiveDoc.positionAt(oEdit.e));
@@ -1164,6 +1176,7 @@ function fBuildShell(webview, url) {
                   <div class="clsItem" title="the GENERIC-SPECIFIC-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeGenSpe">tree-gen-spe<span class="clsKbd">CA+P T G</span></div>
                   <div class="clsItem" title="the WHOLE-PART-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeWholePart">tree-whole-part<span class="clsKbd">CA+P T W</span></div>
                   <div class="clsItem" title="the PARENT-CHILD-TREE section of the clicked line's concept, at its place" data-cmd="cmdInsertTreeParentChild">tree-parent-child<span class="clsKbd">CA+P T P</span></div>
+                  <div class="clsItem" title="the DOING section of the clicked line's concept: after its info-resource, before its evoluting" data-cmd="cmdInsertDoing">doing<span class="clsKbd">CA+P T D</span></div>
                 </div>
               </div>
               <div class="clsItem clsHasSub">character<span class="clsCaret">&#9656;</span>
@@ -1975,6 +1988,30 @@ async function fInsertTree(sKindIn) {
   }
   const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oTree.nAt), oTree.sInsert));
   if (bOk) fGo(oTree.nAt + oTree.nCursor);
+}
+
+/**
+ * DOING: edit/insert/sect/doing (Ctrl+Alt+P T D) in a-source tab: the-DOING section of the-cursor's concept,
+ *   after its info-resource, before its evoluting (omModel.fBuildDoing); the-cursor at the-end of its date line.
+ *   It exists: the-cursor goes to it.
+ */
+async function fInsertDoing() {
+  const oEd = vscode.window.activeTextEditor;
+  if (!oEd) return vscode.window.setStatusBarMessage('Mcs: no text editor', 4000);
+  const oDoc = oEd.document;
+  const oDoing = omModel.fBuildDoing(oDoc.getText(), oDoc.offsetAt(oEd.selection.active), fDateToday());
+  if (oDoing.sWhy) return vscode.window.setStatusBarMessage('Mcs: ' + oDoing.sWhy, 6000);
+  const fGo = (nIn) => {
+    const oPos = oDoc.positionAt(nIn);
+    oEd.selection = new vscode.Selection(oPos, oPos);
+    oEd.revealRange(new vscode.Range(oPos, oPos), vscode.TextEditorRevealType.InCenterIfOutsideViewport);
+  };
+  if (oDoing.nAtExist != null) {
+    vscode.window.setStatusBarMessage('Mcs: the DOING section exists', 4000);
+    return fGo(oDoing.nAtExist);
+  }
+  const bOk = await oEd.edit((oBuilder) => oBuilder.insert(oDoc.positionAt(oDoing.nAt), oDoing.sInsert));
+  if (bOk) { fGo(oDoing.nAt + oDoing.nCursor); vscode.window.setStatusBarMessage('Mcs: DOING #' + oDoing.sId, 6000); }
 }
 
 const oLastGenSpe = { gen: '', spe: '', whl: '', prt: '', prn: '', chd: '' };                  // the-last generic | specific asked (edit/insert/concept/…)

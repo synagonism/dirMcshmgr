@@ -88,6 +88,7 @@ import moFs from 'fs';
 
 const
   aVersion = [
+    'structuralMcsh.js.0-84-0.2026-11-28: an-item link "name!@File.last.html#id" (written form) is-read as "name!@File#id"',
     'structuralMcsh.js.0-83-0.2026-11-22: MvrwMain08_need: a-MISC-ATTRIBUTE section and its direct parts do NOT make the-whole need an-Mmn',
     'structuralMcsh.js.0-82-0.2026-11-22: MvrwMain09_human: a-person also by its generic (a-group of humans: Algonet\'human); HumnLastFirst (HumnNakaSato) without birth-year is right',
     'structuralMcsh.js.0-81-0.2026-11-22: MvrwMain09_human: "X.human" is a-person only when its main-name is Humn + year (NOT Ogsmlago.human!⇒Humnlago)',
@@ -1302,7 +1303,7 @@ function fGstrIndex(aoCnptFile) {
     const oP = sB ? oF.ooPara[sB + 'gntr'] : null;
     return oP && oP.sNameTitle === 'generic-tree' ? { sFile, oP } : null;
   };
-  // the-links of an-item-line: <a href>, name!@McshDir000000#id
+  // the-links of an-item-line: <a href>, name!@McshDir000000.last.html#id (or the-short name!@McshDir000000#id)
   //   a-file-stem is any "Mcsh…" name, also a-word-index page: McshWrdidxElln01alfa_1, McshWrdidxElln24oméya
   const fRefs = (sFile, sLine) => {
     const aoRef = [];
@@ -1313,7 +1314,7 @@ function fGstrIndex(aoCnptFile) {
       const aF = /(?:^|\/)(Mcsh[^\/#."\s]+)\.last\.html(?:#(.*))?$/.exec(sHref);
       if (aF) aoRef.push({ sFile: aF[1], sId: aF[2] ?? null, sText: aA[2] });
     }
-    for (const aR of sLine.matchAll(/([^\s*,]+?)!@(Mcsh[^\s,#<"':!]+)?(?:#([^\s,<"':]+))?(?=[,\s]|$)/g))
+    for (const aR of sLine.matchAll(/([^\s*,]+?)!@(Mcsh[^\s,#<"':!.]+)?(?:\.last\.html)?(?:#([^\s,<"':]+))?(?=[,\s]|$)/g))
       aoRef.push({ sFile: aR[2] ?? sFile, sId: aR[3] ?? null, sText: aR[1] });
     return aoRef;
   };

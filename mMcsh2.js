@@ -58,6 +58,7 @@
 const
   // contains the-versions of mMcsh2.js
   aVersion = [
+    'mMcsh2.js.27-21-0.2026-11-28: !@ references are-written "!@McshCor000002.last.html#idX" (was "!@McshCor000002#idX"); both are-read',
     'mMcsh2.js.27-20-1.2026-11-27: no idSearch',
     'mMcsh2.js.27-20-0.2026-11-22: 3rd info-page tab "Ask" - an-English question returns the-worldview concepts it is about (mAsk.js, first-form name-finding, no LLM)',
     'mMcsh2.js.27-19-0.2026-11-22: a-generic X!@File#idOverview uses the-generic-tree of the-TOP "GENERIC-SPECIFIC-TREE of M" section, NOT the-first gntr of the-file',
@@ -1381,7 +1382,7 @@ let fContainersInsert = function () {
   /**
    * DOING: turns a-'!@'-reference into a-full-preview-url, resolving nested dirs
    *   and hex file-numbers (McshUcdU2B00) by matching known dir-codes.
-   * INPUT: sRefIn = 'McshDir000000#id' or 'McshDir000000' (then #idOverview)
+   * INPUT: sRefIn = 'McshDir000000.last.html#id' | 'McshDir000000#id' | 'McshDir000000' (then #idOverview)
    * OUTPUT: promise of full-url, or '' if the-stem is-not resolvable
    */
   async function fRefToUrl(sRefIn) {
@@ -1393,6 +1394,7 @@ let fContainersInsert = function () {
       sStem = sRefIn.substring(0, nH)
       if (sRefIn.substring(nH + 1)) sHash = sRefIn.substring(nH)
     }
+    sStem = sStem.replace(/\.last\.html$/, '') // the-written form has it, the-short one not
     const sWvPrefix = sWorldview.substring(3) // 'dirMcsh' -> 'Mcsh'
     if (!sStem.startsWith(sWvPrefix)) return ''
     // The dir-code is the-letters after the-prefix, BUT a file-number can itself
@@ -1474,7 +1476,7 @@ let fContainersInsert = function () {
     const sL = sLineIn.replace(/^\*\s*/, '')
     let aM = sL.match(/href="([^"]+)"/)
     if (aM) return fGntrOfUrl(new URL(aM[1].replace(/&amp;/g, '&'), sUrlBaseIn).href)
-    aM = sL.match(/!@(Mcsh\w+(#\w+)?)/)
+    aM = sL.match(/!@(Mcsh\w+(?:\.last\.html)?(#\w+)?)/)
     if (aM) {
       const sUrl = await fRefToUrl(aM[1])
       return sUrl ? fGntrOfUrl(sUrl) : null
@@ -1698,7 +1700,8 @@ let fContainersInsert = function () {
           sHash = sUrl.indexOf('#') >= 0 ? sUrl.slice(sUrl.indexOf('#')) : '',
           sFile = sUrl.split('#')[0],
           sStem = sFile.slice(sFile.lastIndexOf('/') + 1).replace(/\.last\.html$/, ''),
-          sRef = sStem + sHash
+          // the-!@ reference as written: 'McshCor000002.last.html#idX'
+          sRef = sStem + '.last.html' + sHash
         // full relation-name '<Mmn><mark><child>' (only a-leading NNN_ ordering-number removed)
         const sClean = sPrefix + (bKeepNumIn ? sChild : sChild.replace(/^\d+_/, ''))
         // a-parenthetical in the-child names the-opposite, such as 'conceptNo' with opposite
@@ -1744,7 +1747,7 @@ let fContainersInsert = function () {
         // exist in the-target page the-concept IS the-whole file => no fragment (link the-page)
         let sHash = '#idOverview' // a-file-concept (no such section) links its page overview
         if (sId) { try { if ((await fDoc(sUrl)).getElementById(sId)) sHash = '#' + sId } catch (oErr) { console.warn(oErr) } }
-        aOut.push('* ' + aG[1] + ':generic!@' + sStem + sHash + aL[n].slice(aG[0].length))
+        aOut.push('* ' + aG[1] + ':generic!@' + sStem + '.last.html' + sHash + aL[n].slice(aG[0].length))
       }
       while (aOut[aOut.length - 1] === '===') aOut.pop()
       return aOut

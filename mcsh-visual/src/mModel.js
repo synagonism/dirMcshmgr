@@ -547,11 +547,14 @@ function fBuildGenSpe(sTextIn, nOffIn, oGenIn, sDateIn, sKindIn) {
   const fEsc = (sIn) => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const fLineEnd = (nIn) => { const nE = sTextIn.indexOf('\n', nIn); return nE < 0 ? sTextIn.length : nE + 1; };
   const sDescr = oGenIn.sDescr || oGenIn.sName;
-  const sRefAt = `!@${oGenIn.sCode}#${oGenIn.sId}`;
+  // the-!@ reference as written: '!@McshCor000002.last.html#idX'; an-old short one '!@McshCor000002#idX' is the-same
+  const sRefAt = `!@${oGenIn.sCode}.last.html#${oGenIn.sId}`;
+  const sRefAtShort = `!@${oGenIn.sCode}#${oGenIn.sId}`;
+  const fHasRef = (sIn) => sIn.includes(sRefAt) || sIn.includes(sRefAtShort);
   const oPara = fFindParaConceptAt(sTextIn, nOffIn);
   if (oPara) {
     const sPara = sTextIn.slice(oPara.nOpen, oPara.nEnd);
-    if (sPara.includes(`href="${oGenIn.sHref}"`) || sPara.includes(sRefAt) ||
+    if (sPara.includes(`href="${oGenIn.sHref}"`) || fHasRef(sPara) ||
       new RegExp(`<br>× ${sWord}: ${fEsc(sDescr)}\\s*(\\n|$)`).test(sPara)) {
       return { sWhy: `#${oPara.sId} has this ${sWord} already` };
     }
@@ -566,7 +569,7 @@ function fBuildGenSpe(sTextIn, nOffIn, oGenIn, sDateIn, sKindIn) {
   // the-line into an-existing X-tree:: para at nTreeIn of the-concept sXIn
   const fIntoPara = (nTreeIn, sXIn) => {
     const sPara = sTextIn.slice(nTreeIn, fFindParaEnd(sTextIn, nTreeIn, 'p'));
-    if (sPara.includes(sRefAt)) return { sWhy: `#${sXIn} has this ${sWord} already` };
+    if (fHasRef(sPara)) return { sWhy: `#${sXIn} has this ${sWord} already` };
     const aEq = /<br>===[^\n]*/.exec(sPara);
     // a-generic | whole | parent: first after "<br>==="; a-specific | part | child: last, before the-clsHide
     //   line, and before a-trailing "<br>* ..." (more-to-come) line
@@ -640,6 +643,118 @@ function fBuildGenSpe(sTextIn, nOffIn, oGenIn, sDateIn, sKindIn) {
 }
 
 /**
+ * OUTPUT: the-sub-sections of the-concept oCnptIn (the-file concept idOverview: the-top-level sections after it,
+ *   before idMeta | idSupport): { bFile, aoChild [{ sId, sTitle, nLevel, nStart, nCloseAt, nEnd }], nLevelSub, nEndScope }.
+ */
+function fFindConceptScope(sTextIn, oCnptIn) {
+  const fLineStart = (nIn) => sTextIn.lastIndexOf('\n', nIn - 1) + 1;
+  const fLineEnd = (nIn) => { const nE = sTextIn.indexOf('\n', nIn); return nE < 0 ? sTextIn.length : nE + 1; };
+  const bFile = oCnptIn.sId === 'idOverview';
+  const nFrom = bFile ? oCnptIn.nClose : oCnptIn.nOpen + 8;
+  const nMeta = sTextIn.search(/<section id="(idMeta|idSupport)"/);
+  const nTo = bFile ? (nMeta < 0 ? sTextIn.length : nMeta) : oCnptIn.nClose;
+  const aoChild = [];
+  const rTag = /<section\b[^>]*\bid="([^"]+)"|<\/section>/g;
+  rTag.lastIndex = nFrom;
+  let nDepth = 0, aM, oCur = null;
+  while ((aM = rTag.exec(sTextIn)) !== null && aM.index < nTo) {
+    if (aM[1] !== undefined) {
+      if (nDepth === 0) {
+        const aHead = sTextIn.slice(aM.index, aM.index + 400).match(/<h([1-6])\b[^>]*>([^\n<]*)/);
+        oCur = { sId: aM[1], sTitle: aHead ? aHead[2].trim() : '', nLevel: aHead ? Number(aHead[1]) : 0, nStart: fLineStart(aM.index), nCloseAt: -1 };
+        aoChild.push(oCur);
+      }
+      nDepth++;
+    } else if (nDepth === 0) {
+      if (!bFile) break;                                      // the-concept's own </section>
+    } else if (--nDepth === 0 && oCur) {
+      oCur.nCloseAt = fLineStart(aM.index);
+      oCur.nEnd = fLineEnd(aM.index);
+    }
+  }
+  const nLevelSub = bFile ? 1 : Math.min(oCnptIn.nLevel + 1, 6);
+  const nEndScope = bFile ? (nMeta < 0 ? sTextIn.length : fLineStart(nMeta)) : fLineStart(oCnptIn.nClose);
+  return { bFile, aoChild, nLevelSub, nEndScope };
+}
+
+/** OUTPUT: the-id prefix of the-file concept: of its GENERIC-SPECIFIC-TREE, else the-most common of its specifics, or ''. */
+function fFindFileBase(sTextIn, sMainIn, aoChildIn) {
+  const fEsc = (sIn) => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const aGs = new RegExp(`<section id="(\\w+)gstr">\\s*<h1\\b[^>]*>GENERIC-SPECIFIC-TREE of ${fEsc(sMainIn)}\\s*\\n`).exec(sTextIn);
+  if (aGs) return aGs[1];
+  const oCount = new Map();
+  for (const oC of aoChildIn) {
+    const aB = oC.sId.match(/^(id[A-Za-z]+?)\d+$/);
+    if (aB) oCount.set(aB[1], (oCount.get(aB[1]) || 0) + 1);
+  }
+  return ([...oCount.entries()].sort((aA, aB) => aB[1] - aA[1])[0] || [])[0] || '';
+}
+
+/**
+ * DOING: edit/insert/sect/doing (Ctrl+Alt+P T D): the-section "DOING of Main" of the-concept at nOffIn
+ *   (a-MISC-ATTRIBUTE section or an-attribute without main-name: its enclosing concept), as:
+ *     <section id="Xdong"> <hN>DOING of Main</hN> description:: (the-date) name:: Main'doing </section>
+ *   its place: after its info-resource, else before its evoluting, else before its first tree
+ *   (PARENT-CHILD | WHOLE-PART | GENERIC-SPECIFIC), else before its first specific "Main.x", else at its end.
+ *   Its id: the-stem of its info-resource | evoluting (idSysirsc → idSysdong), else the-concept id + dong.
+ * OUTPUT: { nAt, sInsert, nCursor (in sInsert: the-end of its Mcsh-creation line), sId } | { nAtExist } | { sWhy }.
+ */
+function fBuildDoing(sTextIn, nOffIn, sDateIn) {
+  const fEsc = (sIn) => sIn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const fLineStart = (nIn) => sTextIn.lastIndexOf('\n', nIn - 1) + 1;
+  const fLineEnd = (nIn) => { const nE = sTextIn.indexOf('\n', nIn); return nE < 0 ? sTextIn.length : nE + 1; };
+  let oCnpt = fFindSectConceptAt(sTextIn, nOffIn);
+  const sIdFirst = oCnpt ? oCnpt.sId : '';
+  while (oCnpt && (/^MISC-ATTRIBUTE of /.test((oCnpt.sOwn.match(/<h[1-6]\b[^>]*>([^\n]*)/) || [])[1] || '') ||
+    !fFindMainName(oCnpt.sOwn).sMain)) {
+    oCnpt = fFindSectConceptAt(sTextIn, oCnpt.nOpen);
+  }
+  // a-top-level section (info-resource of the-file concept): the-file concept idOverview
+  const nOverview = sTextIn.indexOf('<section id="idOverview"');
+  if (!oCnpt && nOverview >= 0) {
+    oCnpt = fFindSectConceptAt(sTextIn, sTextIn.indexOf('>', nOverview) + 1);
+    if (oCnpt && !fFindMainName(oCnpt.sOwn).sMain) oCnpt = null;
+  }
+  if (!oCnpt) return { sWhy: sIdFirst ? `#${sIdFirst} and its enclosing concepts have no main-name (x!⇒Main): add it first` : 'no concept section (with name::) here' };
+  const { sMain } = fFindMainName(oCnpt.sOwn);
+  const { bFile, aoChild, nLevelSub, nEndScope } = fFindConceptScope(sTextIn, oCnpt);
+  const fTitle = (sKindIn) => aoChild.find((oC) => oC.sTitle === `${sKindIn} of ${sMain}`);
+  const oDong = fTitle('DOING');
+  if (oDong) return { nAtExist: oDong.nStart };
+  const oIrsc = fTitle('info-resource'), oEvog = fTitle('evoluting');
+  // the-id: the-stem of its info-resource | evoluting, else of the-concept (the-file concept: its prefix)
+  let sStem = oIrsc && /irsc$/.test(oIrsc.sId) ? oIrsc.sId.slice(0, -4)
+    : oEvog && /evog$/.test(oEvog.sId) ? oEvog.sId.slice(0, -4)
+    : bFile ? fFindFileBase(sTextIn, sMain, aoChild) : oCnpt.sId;
+  if (!sStem) return { sWhy: 'the file concept: no id prefix found (no info-resource, evoluting, GENERIC-SPECIFIC-TREE, specifics): write it by hand' };
+  let sId = sStem + 'dong';
+  while (new RegExp(`\\bid="${fEsc(sId)}(H\\d|dsn|nam)?"`).test(sTextIn)) sId += 'D';
+  // the-place
+  const oTree = aoChild.find((oC) => /^(PARENT-CHILD|WHOLE-PART|GENERIC-SPECIFIC)-TREE of /.test(oC.sTitle));
+  const oSpec = aoChild.find((oC) => oC.sTitle.startsWith(sMain + '.'));
+  const nAt = oIrsc ? oIrsc.nEnd : (oEvog || oTree || oSpec || { nStart: nEndScope }).nStart;
+  const nL = oIrsc ? oIrsc.nLevel || nLevelSub : nLevelSub;
+  const aLine = [
+    `  <section id="${sId}">`,
+    `  <h${nL} id="${sId}H${nL}">DOING of ${sMain}`,
+    `    </h${nL}>`,
+    `  <p id="${sId}dsn">description::`,
+    `    <br>× Mcsh-creation: {${sDateIn}}`,
+    `    <a class="clsHide" href="#${sId}dsn"></a></p>`,
+    `  <p id="${sId}nam">name::`,
+    `    <br>* McshEngl.${sMain}'doing,`,
+    `    <a class="clsHide" href="#${sId}nam"></a></p>`,
+    '  </section>'];
+  // a-blank line between sections
+  const bPrevBlank = nAt === 0 || sTextIn.slice(fLineStart(nAt - 1), nAt).trim() === '';
+  const bNextSect = /^[ \t]*<section\b/.test(sTextIn.slice(nAt, fLineEnd(nAt)));
+  const sPre = bPrevBlank ? '' : '\n';
+  const sInsert = sPre + aLine.join('\n') + '\n' + (bNextSect ? '\n' : '');
+  const nCursor = sInsert.indexOf(`{${sDateIn}}`) + sDateIn.length + 2;
+  return { nAt, sInsert, nCursor, sId };
+}
+
+/**
  * DOING: edit/insert/concept/attribute (Ctrl+Alt+P C A): a-new attribute section of the-concept at nOffIn
  *   (a-MISC-ATTRIBUTE section counts as its concept; the-file concept idOverview: its top-level sections):
  *   - 'num' own-numbered "NN_word of Main": NN = its Main'NN_last (or its biggest own number) + 1, after its
@@ -672,48 +787,13 @@ function fBuildAttr(sTextIn, nOffIn, sKindIn, sWordIn, sDateIn, sCodeIn) {
   }
   if (!oCnpt) return { sWhy: sIdFirst ? `#${sIdFirst} and its enclosing concepts have no main-name (x!⇒Main): add it first` : 'no concept section (with name::) here' };
   const { sMain } = fFindMainName(oCnpt.sOwn);
-  const bFile = oCnpt.sId === 'idOverview';
-
-  // the-sub-sections of the-concept (the-file concept: the-top-level sections after idOverview, before idMeta)
-  const nFrom = bFile ? oCnpt.nClose : oCnpt.nOpen + 8;
-  const nMeta = sTextIn.search(/<section id="(idMeta|idSupport)"/);
-  const nTo = bFile ? (nMeta < 0 ? sTextIn.length : nMeta) : oCnpt.nClose;
-  const aoChild = [];
-  const rTag = /<section\b[^>]*\bid="([^"]+)"|<\/section>/g;
-  rTag.lastIndex = nFrom;
-  let nDepth = 0, aM, oCur = null;
-  while ((aM = rTag.exec(sTextIn)) !== null && aM.index < nTo) {
-    if (aM[1] !== undefined) {
-      if (nDepth === 0) {
-        const aHead = sTextIn.slice(aM.index, aM.index + 400).match(/<h([1-6])\b[^>]*>([^\n<]*)/);
-        oCur = { sId: aM[1], sTitle: aHead ? aHead[2].trim() : '', nLevel: aHead ? Number(aHead[1]) : 0, nStart: fLineStart(aM.index), nCloseAt: -1 };
-        aoChild.push(oCur);
-      }
-      nDepth++;
-    } else if (nDepth === 0) {
-      if (!bFile) break;                                      // the-concept's own </section>
-    } else if (--nDepth === 0 && oCur) {
-      oCur.nCloseAt = fLineStart(aM.index);
-      oCur.nEnd = fLineEnd(aM.index);
-    }
-  }
-  const nLevelSub = bFile ? 1 : Math.min(oCnpt.nLevel + 1, 6);
-  const nEndScope = bFile ? (nMeta < 0 ? sTextIn.length : fLineStart(nMeta)) : fLineStart(oCnpt.nClose);
+  const { bFile, aoChild, nLevelSub, nEndScope } = fFindConceptScope(sTextIn, oCnpt);
   const aoNum = aoChild.filter((oC) => /^\d{2,}_\S.* of /.test(oC.sTitle));
   const oMisc = aoChild.find((oC) => /^MISC-ATTRIBUTE of /.test(oC.sTitle));
 
   // the-id prefix of the-concept: X; the-file concept: the-prefix of its GENERIC-SPECIFIC-TREE | its specifics
-  let sBase = oCnpt.sId;
-  if (bFile) {
-    const aGs = new RegExp(`<section id="(\\w+)gstr">\\s*<h1\\b[^>]*>GENERIC-SPECIFIC-TREE of ${fEsc(sMain)}\\s*\\n`).exec(sTextIn);
-    const oCount = new Map();
-    for (const oC of aoChild) {
-      const aB = oC.sId.match(/^(id[A-Za-z]+?)\d+$/);
-      if (aB) oCount.set(aB[1], (oCount.get(aB[1]) || 0) + 1);
-    }
-    sBase = aGs ? aGs[1] : ([...oCount.entries()].sort((aA, aB) => aB[1] - aA[1])[0] || [])[0];
-    if (!sBase) return { sWhy: 'the file concept: no id prefix found (no GENERIC-SPECIFIC-TREE, no specifics): write it by hand' };
-  }
+  const sBase = bFile ? fFindFileBase(sTextIn, sMain, aoChild) : oCnpt.sId;
+  if (!sBase) return { sWhy: 'the file concept: no id prefix found (no GENERIC-SPECIFIC-TREE, no specifics): write it by hand' };
   // the-next 3-digit number of the-file after sPrefixIn: "idMdl" → idMdl035 (NOT after idMdl021008, a-specific of idMdl021)
   const fNextId = (sPrefixIn) => {
     let nMax = 0;
@@ -814,6 +894,6 @@ module.exports = {
   fCollectCoresById, fCollectIds, fLocate, fEscapeText,
   fGetLineContext, fBuildLineAfter, fBuildLineDelete, fCoreStart,
   fFlattenCores, fCoreAtOffset, fFindSectConcept, fParseNameFirst,
-  fBuildParaDsnNam, fBuildTree, fFindSectIdAt,
+  fBuildParaDsnNam, fBuildTree, fBuildDoing, fFindSectIdAt,
   fFindParaConceptAt, fFindNameOfConcept, fBuildGenSpe, fBuildAttr,
 };
